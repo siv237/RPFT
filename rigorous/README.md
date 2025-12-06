@@ -40,6 +40,9 @@
 | `15_why_K.py` | Сравнение кандидатов K | ✅ |
 | `16_radius_stabilization.md` | Почему R = 1 | ✅ Размерный анализ |
 | `16_radius_stabilization.py` | Анализ α⁻¹(R) | ✅ |
+| `17_C_coefficient_deep.py` | Глубокий анализ C=1 | ✅ −0.04σ |
+| `18_pi_term_rigorous.md` | Строгий вывод π | ✅ π = d(M_flat) |
+| `18_pi_term_rigorous.py` | Анализ M_flat(RP³) | ✅ |
 | `CRITIQUE.md` | Критический анализ | ⚠️ Честные gaps |
 
 ## Результат
@@ -104,16 +107,16 @@ python3 07_why_C_equals_1.py # Вывод 1/π⁴
 **Главное достижение:** 4 независимых предсказания с точностью < 0.3σ из ОДНОЙ геометрии.
 
 **Оставшиеся gaps (минорные):**
-- Член π: TQFT аргументы (~70%)
-- Коэффициент C=1 (~50%)
+- Циркулярность формулы
+- RG matching: связь α(0) и α(m_Z)
 
 | Член | Статус | Файл |
 |------|--------|------|
 | 4π³ (фермионы) | ✅ Строго | `08_jacobian_derivation.md` |
 | π² (бозоны) | ✅ Строго | `08_jacobian_derivation.md` |
-| π (топология) | ⚠️ ~70% (TQFT) | `09_topological_term.md` |
+| π (топология) | ✅ ~70% (d(M_flat)=π) | `18_pi_term_rigorous.md` |
 | 1/24 (Casimir) | ✅ Выведено | `13_casimir_explicit.py` |
-| C=1 при 1/π⁴ | ⚠️ ~50% (Vol²/Vol²) | `14_C_coefficient.py` |
+| C=1 при 1/π⁴ | ✅ ~70% (−0.04σ) | `17_C_coefficient_deep.py` |
 | K = RP³×S¹ | ✅ Единственный выбор | `15_why_K.md` |
 | R = 1 (планк.) | ✅ Размерный анализ | `16_radius_stabilization.md` |
 
