@@ -38,6 +38,9 @@
 | `14_C_coefficient.py` | Анализ C=1 | ✅ C=1 даёт −0.04σ |
 | `15_why_K.md` | Обоснование K = RP³×S¹ | ✅ Единственный выбор |
 | `15_why_K.py` | Сравнение кандидатов K | ✅ |
+| `16_radius_stabilization.md` | Почему R = 1 | ✅ Размерный анализ |
+| `16_radius_stabilization.py` | Анализ α⁻¹(R) | ✅ |
+| `CRITIQUE.md` | Критический анализ | ⚠️ Честные gaps |
 
 ## Результат
 
@@ -112,6 +115,7 @@ python3 07_why_C_equals_1.py # Вывод 1/π⁴
 | 1/24 (Casimir) | ✅ Выведено | `13_casimir_explicit.py` |
 | C=1 при 1/π⁴ | ⚠️ ~50% (Vol²/Vol²) | `14_C_coefficient.py` |
 | K = RP³×S¹ | ✅ Единственный выбор | `15_why_K.md` |
+| R = 1 (планк.) | ✅ Размерный анализ | `16_radius_stabilization.md` |
 
 ---
 
