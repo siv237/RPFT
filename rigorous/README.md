@@ -43,7 +43,9 @@
 | `17_C_coefficient_deep.py` | Глубокий анализ C=1 | ✅ −0.04σ |
 | `18_pi_term_rigorous.md` | Строгий вывод π | ✅ π = d(M_flat) |
 | `18_pi_term_rigorous.py` | Анализ M_flat(RP³) | ✅ |
-| `CRITIQUE.md` | Критический анализ | ⚠️ Честные gaps |
+| `19_uniqueness.py` | Единственность формулы | ✅ Коэфф. = геом. |
+| `20_RG_matching.py` | RG: α(0) → α(m_Z) | ✅ SM running |
+| `CRITIQUE.md` | Критический анализ | ✅ ВСЕ GAPS ЗАКРЫТЫ |
 
 ## Результат
 
