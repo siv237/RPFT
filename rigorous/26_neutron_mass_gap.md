@@ -52,9 +52,9 @@ $$\Delta_{np} = \sqrt{2\pi} + \frac{10}{3 S_{vac}}, \qquad \mu_n = \mu_p + \Delt
 
 ### 3.1 Теорема о Jacobian нормировках (уже выведено)
 
-В `08_jacobian_derivation.md` строго выведено:
+В `08_jacobian_derivation.md` выведено:
 
-- $$Z_A = \mathrm{Vol}(\mathbb{RP}^3) = \pi^2,$$
+- $$Z_A = \mathrm{Vol}(\mathbb{RP}^3) = \pi^2 \quad (\text{при } g_5^2 = \mathrm{Vol}(S^1)),$$
 - $$Z_\Psi = \mathrm{Vol}(S^3\times S^1) = 4\pi^3.$$
 
 Отсюда следует отношение нормировок (см. также `00_main.md`, Теорема 3.1):
@@ -73,7 +73,7 @@ $$\ln\left(\frac{Z_\Psi}{Z_A}\right) = \ln(4\pi)$$
 
 является геометрически фиксированным логарифмическим инвариантом, построенным из уже строгих Jacobian.
 
-**Статус:** происхождение \(\ln(4\pi)\) как \(\ln(Z_\Psi/Z_A)\) — ✅ строго.
+**Статус:** происхождение \(\ln(4\pi)\) как \(\ln(Z_\Psi/Z_A)\) — ⚠️ условно строго (зависит от принципа $g_5^2/\mathrm{Vol}(S^1)=1$, см. `08_jacobian_derivation.md`, §8.1).
 
 ---
 

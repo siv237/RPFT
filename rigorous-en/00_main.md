@@ -184,12 +184,11 @@ Odd modes ($\iota f = -f$): need the cover $S^3$.
 
 **Theorem 5.2 (Jacobian split):**
 $$Z_\Psi = \text{Vol}(S^3 \times S^1) = 4\pi^3 \quad \text{(fermions)}$$
-$$Z_A = \text{Vol}(\mathbb{RP}^3) = \pi^2 \quad \text{(bosons)}$$
+$$Z_A = \text{Vol}(\mathbb{RP}^3) = \pi^2 \quad (\text{with } g_5^2/\mathrm{Vol}(S^1)=1) \quad \text{(bosons)}$$
 
 *Proof:*  
 - Spinors require odd modes → integrate over the cover $S^3 \times S^1$ → $2\pi^2 \cdot 2\pi = 4\pi^3$  
-- Gauge fields (even modes) → integrate over the quotient $\mathbb{RP}^3$ → $\pi^2$  
-- Zero KK mode along $S^1$ for bosons gives trivial factor (Wilson line = 1) ∎
+- For gauge fields the normalization enters via $1/g_4^2 = \mathrm{Vol}(K)/g_5^2$; since $g_5^2$ is dimensionful we define $\tilde g_5^2 = g_5^2/\mathrm{Vol}(S^1)$ and fix $\tilde g_5^2=1$ (no free dimensionless constants in the 5D gauge sector). Then $Z_A = \mathrm{Vol}(\mathbb{RP}^3)=\pi^2$ (see `08_jacobian_derivation.md`, §8.1). ∎
 
 ### 5.5 Topological term: holonomy and systole
 

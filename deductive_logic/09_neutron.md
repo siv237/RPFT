@@ -100,7 +100,7 @@ $$\Delta_n = \ln(4\pi) - \frac{2}{3 S_{vac}^2}.$$
 
 Статус в дедуктивной ветке:
 
-- часть **строгая**: происхождение $\ln(4\pi)$ как $\ln(Z_\Psi/Z_A)$ при $Z_\Psi/Z_A = 4\pi$ (KK-нормировки; см. `rigorous/08_jacobian_derivation.md`, `rigorous/26_neutron_mass_gap.md`)
+- часть **условно строгая**: происхождение $\ln(4\pi)$ как $\ln(Z_\Psi/Z_A)$ при $Z_\Psi/Z_A = 4\pi$ (KK-нормировки; зависит от принципа $g_5^2/\mathrm{Vol}(S^1)=1$, см. `rigorous/08_jacobian_derivation.md`, §8.1 и `rigorous/26_neutron_mass_gap.md`)
 - часть **строгая**: коэффициент $2/3$ как $\langle \sin^2\theta\rangle_{S^2}=2/3$ (см. `rigorous/27_spherical_average_2over3.md`)
 - часть **условно строгая**: порядок $S_{vac}^{-2}=\alpha^2$ как ведущий вклад из разложения $-\mathrm{Tr}\,\log(D_0+\alpha V)$ при занулении линейного члена (см. `rigorous/29_chiral_order_alpha2.md`)
 - часть **постулат/модель**: почему именно угловая структура поправки задаётся $\sin^2\theta$ (формализация CG1 и сборка результата: `rigorous/28_chiral_gap_derivation.md`)

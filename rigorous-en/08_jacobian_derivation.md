@@ -24,8 +24,23 @@ After KK reduction:
 $$S_A = \frac{\text{Vol}(K)}{g_{4+k}^2} \int_{M_4} F^2\, d^4x = \frac{1}{g_4^2} \int_{M_4} F^2\, d^4x$$
 Hence:
 $$\frac{1}{g_4^2} = \frac{\text{Vol}(K)}{g_{4+k}^2}$$
-With $g_{4+k} = 1$ (Planck units):
-$$\boxed{\frac{1}{g_4^2} = \text{Vol}(K)}$$
+
+**Important (dimension):** for $k\neq 0$ the higher-dimensional coupling $g_{4+k}$ is **dimensionful**.
+In particular, for $k=1$ (5D) we have $[g_5^2]=\text{length}$, so writing “$g_{4+k}=1$” without specifying the normalization can hide an extra numerical factor.
+
+In RPFT the natural length scale of the extra circle is
+$$\mathrm{Vol}(S^1)=2\pi R.$$
+
+**Independent principle (no free dimensionless constants):**
+since $g_5^2$ has dimension of length, the only dimensionless combination in the $S^1$ sector is
+$$\tilde g_5^2 \equiv \frac{g_5^2}{\mathrm{Vol}(S^1)}.$$
+Assuming the fundamental theory introduces no additional dimensionless parameters, we take the minimal choice
+$$\tilde g_5^2 = 1,$$
+so
+$$\boxed{g_5^2 = \mathrm{Vol}(S^1) = 2\pi R.}$$
+
+Then for the zero mode along $S^1$ one gets
+$$\boxed{\frac{1}{g_4^2} = \frac{\mathrm{Vol}(\mathbb{RP}^3\times S^1)}{g_5^2} = \frac{\pi^2\cdot 2\pi R}{2\pi R} = \pi^2.}$$
 
 ---
 
@@ -58,7 +73,7 @@ $$\iota Y_\ell^{(m)} = (-1)^\ell Y_\ell^{(m)}$$
   Normalization:
   $$\int_{L(2,1)} |Y_\ell|^2 d\text{vol} = 1 \quad (\text{normalized harmonics})$$
   Jacobian:
-  $$Z_A = \int_{L(2,1)} d\text{vol} = \text{Vol}(L(2,1)) = \pi^2$$
+  $$Z_A = \frac{\mathrm{Vol}(\mathbb{RP}^3\times S^1)}{\mathrm{Vol}(S^1)} = \mathrm{Vol}(\mathbb{RP}^3) = \pi^2$$
 
 - **Spinors (fermions)** use odd modes (spin structure):
   $$\Psi(x,y) = \sum_{\ell \text{ odd}} \psi^{(\ell)}(x) \chi_\ell(y)$$
@@ -73,7 +88,7 @@ $$\iota Y_\ell^{(m)} = (-1)^\ell Y_\ell^{(m)}$$
 
 ### Theorem 8.1 (Jacobian split)
 For KK reduction of QED on $K = L(2,1) \times S^1$ with trivial spin structure:
-$$Z_A = \int_{L(2,1)} d\text{vol} = \pi^2$$
+$$Z_A = \frac{\mathrm{Vol}(L(2,1)\times S^1)}{\mathrm{Vol}(S^1)} = \pi^2$$
 $$Z_\Psi = \int_{S^3 \times S^1} d\text{vol} = 4\pi^3$$
 
 *Proof.*  
@@ -111,7 +126,7 @@ $$\tfrac{1}{2}\log\det(\Delta_A) = -\tfrac{1}{2}\zeta'_A(0) \sim \text{Vol}(L(2,
 
 | Claim | Status | Comment |
 |-------|--------|---------|
-| $Z_A = \text{Vol}(L(2,1)) = \pi^2$ | ✅ Derived | KK of even modes |
+| $Z_A = \pi^2$ | ⚠️ Conditional | Requires an explicit 5D normalization (e.g. $g_5^2 = \mathrm{Vol}(S^1)$) |
 | $Z_\Psi = \text{Vol}(S^3\times S^1) = 4\pi^3$ | ✅ Derived | Spin structure → odd modes → cover |
 | Sum valid | ✅ Derived | log det₁ + log det₂ |
 | Link to ζ′(0) | ⚠️ Partial | Leading term ∼ Vol; corrections needed |
@@ -135,4 +150,4 @@ $$\tfrac{1}{2}\log\det(\Delta_A) = -\tfrac{1}{2}\zeta'_A(0) \sim \text{Vol}(L(2,
 
 ---
 
-*Status: ✅ Gap #1 closed — Jacobian = Vol derived from KK theory*
+*Status: ⚠️ Gap #1 partially closed — $Z_A = \pi^2$ is conditional on the bosonic-sector normalization*
