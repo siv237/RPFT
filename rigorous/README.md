@@ -11,6 +11,8 @@
 |------|----------|-------|------|
 | **4π³** | 124.025 | Vol(S³×S¹) = Jacobian фермионов (Ikeda 1978) | `08_jacobian_derivation.md` |
 | **π²** | 9.870 | Vol(RP³) = Jacobian бозонов (Ikeda 1978) | `08_jacobian_derivation.md` |
+| **2/3** | 0.666… | ⟨sin²θ⟩ на S² = 2/3 (изотропное усреднение) | `27_spherical_average_2over3.md` |
+| **ln(4π)** | 2.531 | ln(Z_Ψ/Z_A) при Z_Ψ/Z_A = 4π | `26_neutron_mass_gap.md` |
 | **1/24** | — | −ζ_R(−1)/2 через heat kernel (Gilkey) | `03_casimir_derivation.md` |
 | **Сумма** | — | log det(O₁·O₂) = log det O₁ + log det O₂ | `00_main.md` §5.4 |
 | **m_p/m_e** | 1836.15 | Geo of SU(3) (6π⁵) | `23_proton_electron_mass_ratio.md` |
@@ -94,9 +96,14 @@
 | `20_RG_matching.py` | ⭐ **RG: α(0) → α(m_Z)** | ⭐ **ИТОГОВЫЙ** | Gap: SM running |
 | `23_proton_electron_mass_ratio.md` | **Вывод μ = m_p/m_e** | ✅ Строго | Gap: спектр масс |
 | `23_proton_electron_mass_ratio.py` | Численная проверка μ | ✅ <1ppb | |
+| `26_neutron_mass_gap.md` | **Нейтрон: ln(4π) из Jacobian, проверка гипотез** | ⚠️ Частично строго | Нейтронный зазор |
+| `26_neutron_mass_gap.py` | Численная проверка нейтронного зазора | ✅ Воспроизводимо | |
+| `27_spherical_average_2over3.md` | **Лемма: ⟨sin²θ⟩=2/3** | ✅ Строго | Коэффициент 2/3 |
+| `28_chiral_gap_derivation.md` | **Киральная поправка нейтрона: (2/3)·S_vac^{-2} при CG1 + порядке α²** | ⚠️ Условно строго | Нейтронный киральный зазор |
+| `29_chiral_order_alpha2.md` | **Почему киральная поправка начинается с α² (зануление линейного члена)** | ⚠️ Условно строго | Порядок α² |
 | `24_quarks_as_topology.md` | **Протон: кварки vs топология** | ✅ Анализ | Интерпретация 6π⁵ |
 | `24_proton_form_factor.py` | Сравнение форм-факторов | ✅ Тест | Трефойль vs дипольный |
-| `24_high_Q2_test.py` | Тест при Q² > 2 GeV² | ✅ Выполнен | Осцилляций нет |
+| `24_high_Q2_test.py` | Тест осцилляций при Q² > 2 GeV² | ✅ Выполнен | Осцилляций нет |
 | `24_skyrmion_model.py` | **Скирмион (hedgehog)** | ✅ Согласуется | 6π⁵ = Vol(S³)×Vol(S⁵)×3 |
 | `25_response_to_leech_critique.md` | **Ответ: Плотность упаковки** | ✅ ВЫВОД | Критика метафор |
 
@@ -240,6 +247,7 @@ python3 17_C_coefficient_deep.py   # Анализ C=1
 python3 19_uniqueness.py          # Проверка единственности
 python3 20_RG_matching.py         # SM running
 python3 23_proton_electron_mass_ratio.py # Проверка массы протона
+python3 26_neutron_mass_gap.py          # Нейтронный зазор (сравнение гипотез)
 python3 24_proton_form_factor.py        # Кварки vs узел (форм-фактор)
 python3 24_high_Q2_test.py              # Тест осцилляций при Q² > 2 GeV²
 python3 24_skyrmion_model.py            # Скирмион: 6π⁵ = Vol(S³)×Vol(S⁵)×3
