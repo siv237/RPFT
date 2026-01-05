@@ -84,14 +84,14 @@ def zeta_vector_L21(s, N_max=None):
         return sum(term(k) for k in range(1, N_max+1))
     return nsum(term, [1, inf])
 
-def zeta_dirac_L21(s, N_max=None):
+def zeta_dirac_L21(s, N_max=None, rp3_trivial_spin=True):
     """
     ζ_Dirac(s) на L(2,1).
     λ_n = (n+3/2)², d_n = 2(n+1)(n+2) для нечётных n.
     """
     s = mp.mpf(s)
     def term(k):
-        n = 2*k + 1  # только нечётные n
+        n = (2*k + 1) if rp3_trivial_spin else (2*k)
         d_n = 2 * (n + 1) * (n + 2)
         lam_n = (n + mp.mpf('1.5'))**2
         return d_n / lam_n**s
@@ -339,11 +339,11 @@ print(f"  E_scalar(λ_RP³=0) = {float(E0):+.15f}  -> κ0 = {-float(E0)/2:.15f}"
 print(f"  κ_massive_residual = {float(kmass):+.15e}")
 print(f"  κ_total = {float(k0 + kmass):.15f}")
 
-def dirac_casimir_like_KK_RP3_S1(k_max=12, M_max=50, L=2*pi, antiperiodic=False):
+def dirac_casimir_like_KK_RP3_S1(k_max=12, M_max=50, L=2*pi, antiperiodic=False, rp3_trivial_spin=True):
     L = mp.mpf(L)
     E_dirac = mp.mpf(0)
     for k in range(0, k_max):
-        n = 2 * k + 1
+        n = (2 * k + 1) if rp3_trivial_spin else (2 * k)
         d = 2 * (n + 1) * (n + 2)
         a = n + mp.mpf('1.5')
         E_dirac += d * casimir_energy_S1_massive(a, L=L, M_max=M_max, antiperiodic=antiperiodic)
@@ -359,11 +359,11 @@ def kk_logdet_remainder_S1(a, L=2*pi, antiperiodic=False):
         return 2 * log(1 + x)
     return 2 * log(1 - x)
 
-def dirac_logdet_remainder_KK_RP3_S1(k_max=80, L=2*pi, antiperiodic=False):
+def dirac_logdet_remainder_KK_RP3_S1(k_max=80, L=2*pi, antiperiodic=False, rp3_trivial_spin=True):
     L = mp.mpf(L)
     total = mp.mpf(0)
     for k in range(0, k_max):
-        n = 2 * k + 1
+        n = (2 * k + 1) if rp3_trivial_spin else (2 * k)
         d = 2 * (n + 1) * (n + 2)
         a = n + mp.mpf('1.5')
         total += d * kk_logdet_remainder_S1(a, L=L, antiperiodic=antiperiodic)
@@ -382,8 +382,8 @@ print(f"    E_dirac(AP) (boson-like)= {float(E_dirac_AP):+.15e}")
 print(f"    |E_dirac(AP)|/(1/24)    = {float(abs(E_dirac_AP) / (mp.mpf(1)/24)):.3e}")
 print(f"  κ_proxy(P) = κ_gauge + E_dirac(P, fermion-like) = {float(kappa_cas_gauge_KK_RP3_S1(30, 50) - E_dirac_P):.15f}")
 
-F_dirac_P = dirac_logdet_remainder_KK_RP3_S1(k_max=80, L=2*pi, antiperiodic=False)
-F_dirac_AP = dirac_logdet_remainder_KK_RP3_S1(k_max=80, L=2*pi, antiperiodic=True)
+F_dirac_P = dirac_logdet_remainder_KK_RP3_S1(k_max=80, L=2*pi, antiperiodic=False, rp3_trivial_spin=True)
+F_dirac_AP = dirac_logdet_remainder_KK_RP3_S1(k_max=80, L=2*pi, antiperiodic=True, rp3_trivial_spin=True)
 print("Dirac (RP³×S¹) проверка в ζ-det-духе: KK-остаток суммы Σ_m log((2πm/L)^2+a^2) после вычитания локального члена")
 print(f"  F_dirac(P)  = {float(F_dirac_P):+.15e}")
 print(f"  F_dirac(AP) = {float(F_dirac_AP):+.15e}")
@@ -400,8 +400,8 @@ print(f"  κ_QED(AP)   = {float(kappa_qed_AP):.15f},  Δ от 1/24 = {float(kapp
 
 print("Сходимость F_dirac по k_max (должно быстро стабилизироваться из-за exp(-L a))")
 for K in [20, 40, 80, 120]:
-    Fp = dirac_logdet_remainder_KK_RP3_S1(k_max=K, L=2*pi, antiperiodic=False)
-    Fap = dirac_logdet_remainder_KK_RP3_S1(k_max=K, L=2*pi, antiperiodic=True)
+    Fp = dirac_logdet_remainder_KK_RP3_S1(k_max=K, L=2*pi, antiperiodic=False, rp3_trivial_spin=True)
+    Fap = dirac_logdet_remainder_KK_RP3_S1(k_max=K, L=2*pi, antiperiodic=True, rp3_trivial_spin=True)
     print(f"  k_max={K:>3}: F_dirac(P)={float(Fp):+.15e}, F_dirac(AP)={float(Fap):+.15e}")
 
 S_geo_tmp = 4*pi**3 + pi**2 + pi
@@ -443,6 +443,40 @@ sigma = diff_val / uncertainty
 
 print(f"\nΔ               = {diff_val:.2e}")
 print(f"Отклонение      = {sigma:.4f}σ")
+
+print("\n§KILL-SHOT. Таблица дискретных выборов (spin(RP³) × BC(S¹))")
+print("-"*70)
+
+def _alpha_inv_from_S_and_kappa(S_val, kappa_val):
+    return S_val - (kappa_val / S_val) - (1 / (pi**4 * S_val**2))
+
+codata = mp.mpf('137.035999177')
+sigma_codata = mp.mpf('0.000000085')
+
+S_geo_base = 4*pi**3 + pi**2 + pi
+S_geo_alt_spin = 2*pi**3 + pi**2 + pi
+
+print("Принято: Z_A = π² (требует нормировки g5²=Vol(S¹) из §8.1), Z_top=π")
+print("Проверка: используем κ_total = 1/24 + F_Dirac (как прокси чувствительности)")
+print("\nCase | spin(RP³) | BC(S¹) | S_geo | F_Dirac | α⁻¹ | Δσ")
+
+for rp3_trivial_spin, S_val in [(True, S_geo_base), (False, S_geo_alt_spin)]:
+    for antiperiodic in [False, True]:
+        F = dirac_logdet_remainder_KK_RP3_S1(k_max=120, L=2*pi, antiperiodic=antiperiodic, rp3_trivial_spin=rp3_trivial_spin)
+        kappa_total = (mp.mpf(1) / 24) + F
+        a_inv = _alpha_inv_from_S_and_kappa(S_val, kappa_total)
+        ds = (a_inv - codata) / sigma_codata
+        spin_tag = "trivial" if rp3_trivial_spin else "nontrivial"
+        bc_tag = "P" if not antiperiodic else "AP"
+        print(f"  -  | {spin_tag:>10} | {bc_tag:>4} | {float(S_val):.6f} | {float(F):+.3e} | {float(a_inv):.12f} | {float(ds):+.3f}")
+
+print("\nКонтроль Kill-shot №1: если НЕ делить на Vol(S¹), то Z_A → Vol(RP³×S¹)=2π³")
+S_geo_alt_ZA = 4*pi**3 + 2*pi**3 + pi
+a_inv_alt_ZA = _alpha_inv_from_S_and_kappa(S_geo_alt_ZA, mp.mpf(1)/24)
+ds_alt_ZA = (a_inv_alt_ZA - codata) / sigma_codata
+print(f"  S_geo_alt(Z_A=2π³) = {float(S_geo_alt_ZA):.12f}")
+print(f"  α⁻¹_alt            = {float(a_inv_alt_ZA):.12f}")
+print(f"  Δσ_alt             = {float(ds_alt_ZA):+.3e}")
 
 # =============================================================================
 # §6. РАЗБОР ЧЛЕНОВ

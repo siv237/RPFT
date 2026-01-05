@@ -10,9 +10,9 @@
 | Член | Значение | Вывод | Файл |
 |------|----------|-------|------|
 | **4π³** | 124.025 | Vol(S³×S¹) = Jacobian фермионов (Ikeda 1978) | `08_jacobian_derivation.md` |
-| **π²** | 9.870 | Vol(RP³) = Jacobian бозонов (Ikeda 1978) | `08_jacobian_derivation.md` |
+| **π²** | 9.870 | Vol(RP³) = Jacobian бозонов (Ikeda 1978), при нормировке $g_5^2/\mathrm{Vol}(S^1)=1$ | `08_jacobian_derivation.md` |
 | **2/3** | 0.666… | ⟨sin²θ⟩ на S² = 2/3 (изотропное усреднение) | `27_spherical_average_2over3.md` |
-| **ln(4π)** | 2.531 | ln(Z_Ψ/Z_A) при Z_Ψ/Z_A = 4π | `26_neutron_mass_gap.md` |
+| **ln(4π)** | 2.531 | ln(Z_Ψ/Z_A) при Z_Ψ/Z_A = 4π (требует $Z_A=\pi^2$ при $g_5^2/\mathrm{Vol}(S^1)=1$) | `26_neutron_mass_gap.md` |
 | **1/24** | — | −ζ_R(−1)/2 через heat kernel (Gilkey) | `03_casimir_derivation.md` |
 | **Сумма** | — | log det(O₁·O₂) = log det O₁ + log det O₂ | `00_main.md` §5.4 |
 | **m_p/m_e** | 1836.15 | Geo of SU(3) (6π⁵) | `23_proton_electron_mass_ratio.md` |
@@ -137,7 +137,7 @@ $$\alpha^{-1} = \underbrace{(4\pi^3 + \pi^2 + \pi)}_{S_{geo}} - \underbrace{\fra
 | Член | Значение | Происхождение | Статус |
 |------|----------|---------------|--------|
 | **4π³** | 124.025 | Vol(S³×S¹), Jacobian фермионов | ✅ Строго (Ikeda) |
-| **π²** | 9.870 | Vol(RP³), Jacobian бозонов | ✅ Строго (Ikeda) |
+| **π²** | 9.870 | Vol(RP³), Jacobian бозонов | ⚠️ Условно (требует $g_5^2/\mathrm{Vol}(S^1)=1$) |
 | **π** | 3.142 | d(M_flat), топология | ✅ Аргумент |
 | **1/24** | — | −ζ_R(−1)/2, heat kernel | ✅ Строго (Gilkey) |
 | **1/π⁴** | — | (Vol RP³)² | ✅ Строго |
