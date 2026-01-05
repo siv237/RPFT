@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Строгое вычисление спектральных сумм на L(2,1).
-Цель: показать откуда берётся каждый член в α⁻¹.
+Воспроизводимая проверка спектральных/геометрических сумм на L(2,1).
+Цель: зафиксировать численную проверку формулы для α⁻¹ и места, где требуется строгая нормировка (например, κ_Cas).
 
 Навигация:
   ← 01_spectral.md | 03_casimir_derivation.md →
@@ -14,7 +14,7 @@ import numpy as np
 mp.dps = 80  # 80 знаков точности
 
 print("="*70)
-print("СТРОГОЕ ВЫЧИСЛЕНИЕ: Спектральные суммы на L(2,1)")
+print("ВОСПРОИЗВОДИМАЯ ПРОВЕРКА: спектральные/геометрические суммы на L(2,1)")
 print("="*70)
 
 # =============================================================================
@@ -105,6 +105,99 @@ print(f"ζ_scalar(2) = {float(zeta_scalar_L21(2)):.10f}")
 print(f"ζ_vector(2) = {float(zeta_vector_L21(2)):.10f}")
 print(f"ζ_Dirac(2)  = {float(zeta_dirac_L21(2)):.10f}")
 
+def zeta_prime_scalar_L21_twisted_at_zero(N_max=50000):
+    total = mp.mpf(0)
+    H2 = mp.mpf(0)
+    H4 = mp.mpf(0)
+    H6 = mp.mpf(0)
+    H8 = mp.mpf(0)
+    for m in range(1, N_max + 1):
+        mm = mp.mpf(m)
+        inv2 = 1 / (mm**2)
+        H2 += inv2
+        H4 += inv2**2
+        H6 += inv2**3
+        H8 += inv2**4
+        total += -4 * mm**2 * log(1 - 1 / (4 * mm**2)) - 1
+    tail = (
+        (1 / (2 * 4)) * (mp.zeta(2) - H2)
+        + (1 / (3 * 4**2)) * (mp.zeta(4) - H4)
+        + (1 / (4 * 4**3)) * (mp.zeta(6) - H6)
+        + (1 / (5 * 4**4)) * (mp.zeta(8) - H8)
+    )
+    A_prime = -2 * mp.zeta(3) / (pi**2)
+    B_prime = mp.zeta(0)
+    return total + tail + A_prime + B_prime
+
+print("\n§2b. Twisted (acyclic) сектор для скаляра на RP³: проверка Nash–O’Connor")
+print("-"*40)
+zeta_prime_twisted = zeta_prime_scalar_L21_twisted_at_zero(50000)
+ln_det_twisted = -zeta_prime_twisted
+tau_pred = (3 / (pi**2)) * mp.zeta(3) - 2 * log(2)
+ln_det_pred = -tau_pred / 2
+print(f"ζ'_scalar_twisted(0) = {float(zeta_prime_twisted):.10f}")
+print(f"ln Det_scalar_twisted = {-float(zeta_prime_twisted):.10f}")
+print(f"ln Det_pred (Nash–O’Connor) = {float(ln_det_pred):.10f}")
+print(f"Δ = {float(ln_det_twisted - ln_det_pred):.3e}")
+
+print("\n§2c. Скалярный det′ на S³ и восстановление untwisted сектора на RP³")
+print("-"*40)
+ln_det_scalar_S3 = log(pi) + mp.zeta(3) / (2 * pi**2)
+ln_det_scalar_RP3_untwisted = ln_det_scalar_S3 - ln_det_twisted
+print(f"ln Det'_scalar(S³) (candidate) = {float(ln_det_scalar_S3):.10f}")
+print(f"ln Det'_scalar(RP³, untwisted) = {float(ln_det_scalar_RP3_untwisted):.10f}")
+candidate = log(pi / 2) + 2 * mp.zeta(3) / (pi**2)
+print(f"Closed form candidate: ln(π/2) + 2·ζ(3)/π² = {float(candidate):.10f}")
+print(f"Δ = {float(ln_det_scalar_RP3_untwisted - candidate):.3e}")
+
+print("\n§2d. Проверка det′ скаляра на S³ без внешних формул")
+print("-"*40)
+def ln_det_scalar_S3_from_convergent_sum(N_max=200000):
+    total = mp.mpf(0)
+    H2 = mp.mpf(0)
+    H4 = mp.mpf(0)
+    H6 = mp.mpf(0)
+    H8 = mp.mpf(0)
+    for m in range(2, N_max + 1):
+        mm = mp.mpf(m)
+        inv2 = 1 / (mm**2)
+        H2 += inv2
+        H4 += inv2**2
+        H6 += inv2**3
+        H8 += inv2**4
+        total += mm**2 * log(1 - inv2) + 1
+    tail = (
+        -(1 / 2) * (mp.zeta(2) - 1 - H2)
+        -(1 / 3) * (mp.zeta(4) - 1 - H4)
+        -(1 / 4) * (mp.zeta(6) - 1 - H6)
+        -(1 / 5) * (mp.zeta(8) - 1 - H8)
+    )
+    return mp.zeta(3) / (2 * pi**2) + total + tail - mp.zeta(0) + 1
+
+ln_det_S3_num = ln_det_scalar_S3_from_convergent_sum(200000)
+print(f"ln Det'_scalar(S³) (num) = {float(ln_det_S3_num):.10f}")
+print(f"ln Det'_scalar(S³) (candidate) = {float(ln_det_scalar_S3):.10f}")
+print(f"Δ = {float(ln_det_S3_num - ln_det_scalar_S3):.3e}")
+
+print("\n§2e. Коэкзактные 1-формы: ζ'(0) и ln det (аналитически)")
+print("-"*40)
+zeta_prime_vector_S3 = -(mp.zeta(3) / (pi**2)) + 2 * log(2 * pi)
+ln_det_vector_S3 = -zeta_prime_vector_S3
+print(f"ζ'_vector(S³, coexact)(0) = {float(zeta_prime_vector_S3):.10f}")
+print(f"ln Det_vector(S³, coexact) = {float(ln_det_vector_S3):.10f}")
+
+zeta_prime_vector_RP3_untwisted = (3 * mp.zeta(3) / (pi**2)) + 2 * log(2)
+ln_det_vector_RP3_untwisted = -zeta_prime_vector_RP3_untwisted
+print(f"ζ'_vector(RP³, untwisted, coexact)(0) = {float(zeta_prime_vector_RP3_untwisted):.10f}")
+print(f"ln Det_vector(RP³, untwisted, coexact) = {float(ln_det_vector_RP3_untwisted):.10f}")
+
+zeta_prime_vector_RP3_twisted = (-4 * mp.zeta(3) / (pi**2)) + 2 * log(pi)
+ln_det_vector_RP3_twisted = -zeta_prime_vector_RP3_twisted
+print(f"ζ'_vector(RP³, twisted, coexact)(0) = {float(zeta_prime_vector_RP3_twisted):.10f}")
+print(f"ln Det_vector(RP³, twisted, coexact) = {float(ln_det_vector_RP3_twisted):.10f}")
+
+print(f"Check S³ = twisted + untwisted: Δ = {float((ln_det_vector_RP3_twisted + ln_det_vector_RP3_untwisted) - ln_det_vector_S3):.3e}")
+
 # =============================================================================
 # §3. ПРОИЗВОДНЫЕ В НУЛЕ (регуляризованные)
 # =============================================================================
@@ -159,6 +252,166 @@ print(f"  Tr(e^{{-tΔ}})  = {float(heat_val):.6f}")
 print(f"  Weyl approx   = {float(weyl_approx):.6f}")
 print(f"  Ratio         = {float(heat_val/weyl_approx):.6f}")
 
+print("\n§4b. κ_Cas как 1D остаток на S¹ (Abel/heat-kernel)")
+print("-"*40)
+
+def kappa_cas_half_from_abel(t):
+    t = mp.mpf(t)
+    q = exp(-t)
+    S = q / (1 - q)**2
+    return -(S - 1 / t**2) / 2
+
+_t_kappa = mp.mpf('0.005')
+kappa_Cas_num = kappa_cas_half_from_abel(_t_kappa)
+kappa_Cas_exact = -mp.zeta(-1) / 2
+print(f"t = {_t_kappa}")
+print(f"κ_Cas(num)   = {float(kappa_Cas_num):.15f}")
+print(f"κ_Cas(exact) = {float(kappa_Cas_exact):.15f}   (= 1/24)")
+print(f"Δ = {float(kappa_Cas_num - kappa_Cas_exact):+.3e}")
+
+print("\n§4c. Прототип KK: Casimir-константа калибровочного сектора на RP³×S¹")
+print("-"*40)
+
+def casimir_energy_S1_massive(a, L=2*pi, M_max=50, antiperiodic=False):
+    a = mp.mpf(a)
+    L = mp.mpf(L)
+    if a == 0:
+        return -pi / (6 * L)
+    total = mp.mpf(0)
+    for m in range(1, M_max + 1):
+        sgn = -1 if (antiperiodic and (m % 2 == 1)) else 1
+        total += sgn * mp.besselk(1, L * a * m) / m
+    return -(a / pi) * total
+
+def kappa_cas_gauge_KK_RP3_S1(k_max=25, M_max=50, L=2*pi, include_scalar_lambda0_level=True):
+    L = mp.mpf(L)
+    E_scalar = mp.mpf(0)
+    if include_scalar_lambda0_level:
+        E_scalar += casimir_energy_S1_massive(mp.mpf(0), L=L, M_max=M_max)
+    for k in range(1, k_max + 1):
+        n = 2 * k
+        d = (n + 1)**2
+        a = sqrt(n * (n + 2))
+        E_scalar += d * casimir_energy_S1_massive(a, L=L, M_max=M_max)
+
+    E_vector = mp.mpf(0)
+    for k in range(1, k_max + 1):
+        n = 2 * k
+        d = 2 * n * (n + 2)
+        a = n + 1
+        E_vector += d * casimir_energy_S1_massive(a, L=L, M_max=M_max)
+
+    return mp.mpf('0.5') * (E_vector - E_scalar)
+
+def kappa_cas_gauge_KK_RP3_S1_components(k_max=25, M_max=50, L=2*pi):
+    L = mp.mpf(L)
+    E_scalar_lambda0 = casimir_energy_S1_massive(mp.mpf(0), L=L, M_max=M_max)
+    E_scalar_massive = mp.mpf(0)
+    for k in range(1, k_max + 1):
+        n = 2 * k
+        d = (n + 1)**2
+        a = sqrt(n * (n + 2))
+        E_scalar_massive += d * casimir_energy_S1_massive(a, L=L, M_max=M_max)
+
+    E_vector = mp.mpf(0)
+    for k in range(1, k_max + 1):
+        n = 2 * k
+        d = 2 * n * (n + 2)
+        a = n + 1
+        E_vector += d * casimir_energy_S1_massive(a, L=L, M_max=M_max)
+
+    kappa_from_lambda0_level = -mp.mpf('0.5') * E_scalar_lambda0
+    kappa_massive_residual = mp.mpf('0.5') * (E_vector - E_scalar_massive)
+    return E_scalar_lambda0, E_scalar_massive, E_vector, kappa_from_lambda0_level, kappa_massive_residual
+
+target = mp.mpf(1) / 24
+for k_max in [5, 10, 20, 30]:
+    kappa_kk = kappa_cas_gauge_KK_RP3_S1(k_max=k_max, M_max=50, L=2*pi, include_scalar_lambda0_level=True)
+    print(f"k_max={k_max:>2}: κ_Cas(gauge, KK) = {float(kappa_kk):.15f}, Δ = {float(kappa_kk - target):+.3e}")
+
+kappa_kk_nozero = kappa_cas_gauge_KK_RP3_S1(k_max=30, M_max=50, L=2*pi, include_scalar_lambda0_level=False)
+print(f"Без уровня λ_RP³=0 (убираем весь KK-ряд константы на RP³): κ_Cas(gauge, KK) = {float(kappa_kk_nozero):.15f}")
+print(f"Сравнение с Abel κ_Cas(num): κ_KK - κ_Abel = {float((kappa_cas_gauge_KK_RP3_S1(30, 50) - kappa_Cas_num)):+.3e}")
+
+E0, E_scal_mass, E_vec, k0, kmass = kappa_cas_gauge_KK_RP3_S1_components(k_max=30, M_max=50, L=2*pi)
+print("Разложение κ_Cas(gauge, KK) = κ(λ_RP³=0 уровень) + κ(остаток массивных уровней):")
+print(f"  E_scalar(λ_RP³=0) = {float(E0):+.15f}  -> κ0 = {-float(E0)/2:.15f}")
+print(f"  κ_massive_residual = {float(kmass):+.15e}")
+print(f"  κ_total = {float(k0 + kmass):.15f}")
+
+def dirac_casimir_like_KK_RP3_S1(k_max=12, M_max=50, L=2*pi, antiperiodic=False):
+    L = mp.mpf(L)
+    E_dirac = mp.mpf(0)
+    for k in range(0, k_max):
+        n = 2 * k + 1
+        d = 2 * (n + 1) * (n + 2)
+        a = n + mp.mpf('1.5')
+        E_dirac += d * casimir_energy_S1_massive(a, L=L, M_max=M_max, antiperiodic=antiperiodic)
+    return E_dirac
+
+def kk_logdet_remainder_S1(a, L=2*pi, antiperiodic=False):
+    L = mp.mpf(L)
+    a = mp.mpf(a)
+    if a <= 0:
+        return mp.ninf
+    x = exp(-a * L)
+    if antiperiodic:
+        return 2 * log(1 + x)
+    return 2 * log(1 - x)
+
+def dirac_logdet_remainder_KK_RP3_S1(k_max=80, L=2*pi, antiperiodic=False):
+    L = mp.mpf(L)
+    total = mp.mpf(0)
+    for k in range(0, k_max):
+        n = 2 * k + 1
+        d = 2 * (n + 1) * (n + 2)
+        a = n + mp.mpf('1.5')
+        total += d * kk_logdet_remainder_S1(a, L=L, antiperiodic=antiperiodic)
+    return -mp.mpf('0.5') * total
+
+E_dirac_P = dirac_casimir_like_KK_RP3_S1(k_max=12, M_max=50, L=2*pi, antiperiodic=False)
+E_dirac_AP = dirac_casimir_like_KK_RP3_S1(k_max=12, M_max=50, L=2*pi, antiperiodic=True)
+E_dirac_boson_like = E_dirac_P
+E_dirac_fermion_like = -E_dirac_boson_like
+print("Dirac (RP³×S¹) в KK-прототипе: из-за спектрального зазора |λ|≥3/2 вклад мал по сравнению с 1/24")
+print("  (P)  периодические BC на S¹ (m∈Z)")
+print(f"    E_dirac(P) (boson-like) = {float(E_dirac_P):+.15e}")
+print(f"    |E_dirac(P)|/(1/24)     = {float(abs(E_dirac_P) / (mp.mpf(1)/24)):.3e}")
+print("  (AP) антипериодические BC на S¹ (m∈Z+1/2, proxy через (-1)^m)")
+print(f"    E_dirac(AP) (boson-like)= {float(E_dirac_AP):+.15e}")
+print(f"    |E_dirac(AP)|/(1/24)    = {float(abs(E_dirac_AP) / (mp.mpf(1)/24)):.3e}")
+print(f"  κ_proxy(P) = κ_gauge + E_dirac(P, fermion-like) = {float(kappa_cas_gauge_KK_RP3_S1(30, 50) - E_dirac_P):.15f}")
+
+F_dirac_P = dirac_logdet_remainder_KK_RP3_S1(k_max=80, L=2*pi, antiperiodic=False)
+F_dirac_AP = dirac_logdet_remainder_KK_RP3_S1(k_max=80, L=2*pi, antiperiodic=True)
+print("Dirac (RP³×S¹) проверка в ζ-det-духе: KK-остаток суммы Σ_m log((2πm/L)^2+a^2) после вычитания локального члена")
+print(f"  F_dirac(P)  = {float(F_dirac_P):+.15e}")
+print(f"  F_dirac(AP) = {float(F_dirac_AP):+.15e}")
+print(f"  |F_dirac(P)|/(1/24)  = {float(abs(F_dirac_P) / (mp.mpf(1)/24)):.3e}")
+print(f"  |F_dirac(AP)|/(1/24) = {float(abs(F_dirac_AP) / (mp.mpf(1)/24)):.3e}")
+
+kappa_gauge_KK = kappa_cas_gauge_KK_RP3_S1(k_max=30, M_max=50, L=2*pi, include_scalar_lambda0_level=True)
+kappa_qed_P = kappa_gauge_KK + F_dirac_P
+kappa_qed_AP = kappa_gauge_KK + F_dirac_AP
+print("Полная 1-loop QED-комбинация в KK-прототипе: κ_total = κ_gauge + F_Dirac (не-локальный остаток)")
+print(f"  κ_gauge(KK) = {float(kappa_gauge_KK):.15f}")
+print(f"  κ_QED(P)    = {float(kappa_qed_P):.15f},  Δ от 1/24 = {float(kappa_qed_P - mp.mpf(1)/24):+.3e}")
+print(f"  κ_QED(AP)   = {float(kappa_qed_AP):.15f},  Δ от 1/24 = {float(kappa_qed_AP - mp.mpf(1)/24):+.3e}")
+
+print("Сходимость F_dirac по k_max (должно быстро стабилизироваться из-за exp(-L a))")
+for K in [20, 40, 80, 120]:
+    Fp = dirac_logdet_remainder_KK_RP3_S1(k_max=K, L=2*pi, antiperiodic=False)
+    Fap = dirac_logdet_remainder_KK_RP3_S1(k_max=K, L=2*pi, antiperiodic=True)
+    print(f"  k_max={K:>3}: F_dirac(P)={float(Fp):+.15e}, F_dirac(AP)={float(Fap):+.15e}")
+
+S_geo_tmp = 4*pi**3 + pi**2 + pi
+sigma_codata = mp.mpf('0.000000085')
+d_alpha_P = -F_dirac_P / S_geo_tmp
+d_alpha_AP = -F_dirac_AP / S_geo_tmp
+print("Оценка влияния Dirac-остатка на α⁻¹, если добавлять его в κ (только чувствительность):")
+print(f"  Δα⁻¹(P)  ≈ {float(d_alpha_P):+.3e}  (~{float(d_alpha_P/sigma_codata):+.3f}σ)")
+print(f"  Δα⁻¹(AP) ≈ {float(d_alpha_AP):+.3e}  (~{float(d_alpha_AP/sigma_codata):+.3f}σ)")
+
 # =============================================================================
 # §5. КАНОНИЧЕСКАЯ ФОРМУЛА
 # =============================================================================
@@ -170,14 +423,16 @@ print("-"*40)
 S_geo = 4*pi**3 + pi**2 + pi
 
 # Поправки
-delta_Lattice = 1 / (24 * S_geo)
+kappa_Cas = kappa_Cas_num
+delta_Cas = kappa_Cas / S_geo
 delta_BlackBody = 1 / (pi**4 * S_geo**2)
 
 # Результат
-alpha_inv = S_geo - delta_Lattice - delta_BlackBody
+alpha_inv = S_geo - delta_Cas - delta_BlackBody
 
 print(f"S_geo           = {float(S_geo):.12f}")
-print(f"δ_Lattice       = {float(delta_Lattice):.15f}")
+print(f"κ_Cas           = {float(kappa_Cas):.15f}")
+print(f"δ_Cas           = {float(delta_Cas):.15f}")
 print(f"δ_BlackBody     = {float(delta_BlackBody):.15f}")
 print(f"\nα⁻¹ (theory)    = {float(alpha_inv):.12f}")
 print(f"α⁻¹ (CODATA)    = 137.035999177")
@@ -206,7 +461,7 @@ print(f"""
 ├─────────────────────────────────────────────────────────────────┤
 │  S_geo         │  {float(S_geo):.10f}  │  СУММА                      │
 ├─────────────────────────────────────────────────────────────────┤
-│  -1/(24·S)     │  {float(-delta_Lattice):.12f}│  Casimir/Leech          │
+│  -κ_Cas/S      │  {float(-delta_Cas):.12f}│  Casimir-поправка       │
 │  -1/(π⁴·S²)    │  {float(-delta_BlackBody):.12f}│  Stefan-Boltzmann       │
 ├─────────────────────────────────────────────────────────────────┤
 │  α⁻¹           │  {float(alpha_inv):.10f}  │  ИТОГО                      │
@@ -216,5 +471,5 @@ print(f"""
 """)
 
 print("="*70)
-print("ВЫВОД: Точность 0.04σ следует из геометрии L(2,1)×S¹")
+print("СТАТУС: численное совпадение воспроизводимо; строгая нормировка κ_Cas и других констант вынесена в отдельные файлы")
 print("="*70)
