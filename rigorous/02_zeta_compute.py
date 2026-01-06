@@ -456,7 +456,7 @@ sigma_codata = mp.mpf('0.000000085')
 S_geo_base = 4*pi**3 + pi**2 + pi
 S_geo_alt_spin = 2*pi**3 + pi**2 + pi
 
-print("Принято: Z_A = π² (требует нормировки g5²=Vol(S¹) из §8.1), Z_top=π")
+print("Принято: Z_A = π² (g5²/Vol(S¹)=1 фиксируется нормировкой U(1) и единицей заряда; см. 30_qed_one_loop_proof.md §30.4), Z_top=π")
 print("Проверка: используем κ_total = 1/24 + F_Dirac (как прокси чувствительности)")
 print("\nCase | spin(RP³) | BC(S¹) | S_geo | F_Dirac | α⁻¹ | Δσ")
 
