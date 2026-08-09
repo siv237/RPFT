@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-09",
+  "version": "S2T-II",
+  "status": "internal_research_cycle_closed",
+  "R_sci": "4/10",
+  "N_closed_physical": 0,
+  "scope": {
+    "closed": "declared minimal classical carrier class and explicitly tested extensions",
+    "not_claimed": [
+      "all compact manifolds",
+      "all gauge bundles",
+      "all noncommutative geometries",
+      "all possible parent actions"
+    ]
+  },
+  "exploratory_menu": {
+    "binary_tetrahedral_direct_carrier": "closed",
+    "nontrivial_circle_bundle_for_C6": "closed",
+    "higher_form_extension": "archived",
+    "NCG_spectral_triple": "version_III",
+    "canonical_trace_Hodge_incompatibility": "accepted_in_restricted_class"
+  },
+  "review_status": {
+    "classification": "collaborative external-origin red-team audit",
+    "independent_computational_replication": false,
+    "independent_mathematical_replication": false
+  },
+  "allowed_next_steps": [
+    "independent reproduction of the frozen mathematical core",
+    "separate version III with a predeclared parent action"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "status": "n3_tangent_projection_removes_normal_component_on_sphere_but_not_coexact_gate",
+  "source": "s2t_c6_l21_n3_coexact_gate_results.json",
+  "projection": "V_tan = V - (x·V)x on |x|=1; polynomial x·V_tan may be proportional to 1-|x|^2 and is tested by sphere norm",
+  "raw_tangency_max_coeff": 16.0,
+  "tangent_projected_tangency_max_coeff_ambient_polynomial": 24.0,
+  "tangent_projected_tangency_norm_on_sphere": 0.0,
+  "tangent_projected_ambient_divergence_max_coeff": 96.0,
+  "raw_gram_summary": {
+    "trace": 96.0,
+    "rank": 6,
+    "eigenvalues": [
+      12.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      20.0
+    ]
+  },
+  "tangent_projected_gram_summary": {
+    "trace": 85.33333333333334,
+    "rank": 6,
+    "eigenvalues": [
+      12.0,
+      14.666666666666664,
+      14.666666666666668,
+      14.666666666666668,
+      14.666666666666668,
+      14.666666666666668
+    ]
+  },
+  "interpretation": [
+    {
+      "claim": "normal component explains all cubic leakage",
+      "verdict": "fails",
+      "reason": "after tangent projection the Gram trace remains nonzero."
+    },
+    {
+      "claim": "tangent projection is already coexact",
+      "verdict": "not_yet",
+      "reason": "ambient divergence of the tangent-projected representative is nonzero; intrinsic divergence/coexact projection must be computed."
+    }
+  ],
+  "verdict": "The normal component is not the whole story: tangent projection removes x·V on the unit sphere and leaves a nonzero tangent cubic signal. However the tangent-projected ambient divergence is nonzero, so this is still not a completed coexact n=3 projection. Next step: compute intrinsic divergence/coexact projection on S3/RP3."
+}

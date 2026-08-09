@@ -1,0 +1,116 @@
+\chapter{Конформная мода и Majorana-rank: тест критерия Ф.3}
+
+После отрицательного phase-to-mass gate остаётся проверить вторую часть
+предложенной 4D-интерпретации: может ли удаление одной conformal/gauge mode
+превратить полный Majorana-модуль размерности \(24\) в физический rank \(23\)?
+
+\section{Diffeomorphism gauge complex}
+
+В четырёх измерениях metric fluctuation имеет десять локальных компонент,
+а линейное действие diffeomorphism задаётся
+\begin{equation}
+ \delta_\xi h_{\mu\nu}=\nabla_\mu\xi_\nu+\nabla_\nu\xi_\mu.
+\end{equation}
+На Fourier-level с momentum \(k\) его symbol равен
+\begin{equation}
+ G_k(\xi)_{\mu\nu}=k_\mu\xi_\nu+k_\nu\xi_\mu.
+\end{equation}
+Для \(k\neq0\) этот map имеет rank \(4\), но pure trace tensor
+\(h_{\mu\nu}=c g_{\mu\nu}\) не принадлежит его image. Для constant mode
+\(k=0\) symbol вообще равен нулю. Глобально тот же факт следует из
+\begin{equation}
+ \delta_\xi\Vol(K)
+ =\int_K\nabla_\mu\xi^\mu\,d\Vol=0
+\end{equation}
+на компактном manifold без границы. Следовательно, constant volume mode не
+является diffeomorphism gauge direction.
+
+\section{Почему gauge volume не действует на \texorpdfstring{\(\mathbb R^{24}\)}{R24}}
+
+Минимальное поле конфигураций имеет direct-sum структуру
+\begin{equation}
+ \operatorname{Sym}^2(T^*K)\oplus\mathcal M_{Maj},
+ \qquad \dim_{\mathbb R}\mathcal M_{Maj}=24.
+\end{equation}
+В замороженной постановке BRST/diffeomorphism map действует в первом блоке:
+\begin{equation}
+ \xi\longmapsto(G\xi,0).
+\end{equation}
+Поэтому quotient по \(\operatorname{Diff}(K)\), ghost determinant и
+gauge-volume factor не меняют rank второго summand:
+\begin{equation}
+ \dim\mathcal M_{Maj}^{physical}=24,
+\end{equation}
+если отсутствует отдельный constraint или projector внутри самого
+Majorana-модуля.
+
+\section{Weyl и wrong-sign не спасают подсчёт}
+
+Pure trace становится gauge direction только при дополнительной локальной
+Weyl symmetry
+\begin{equation}
+ \delta_\sigma g_{\mu\nu}=2\sigma g_{\mu\nu}.
+\end{equation}
+Такая symmetry отсутствует в текущем massive parent action: фиксированные
+радиусы, Majorana/Yukawa scales и dimensionful defect couplings нарушают её.
+Даже если формально добавить Weyl quotient, он rescale-ит поля по их Weyl
+weights, но не выбирает одну вещественную polarization внутри
+\(\mathbb R^{24}\). На zero-field background линейный gauge map в
+Majorana-блок равен нулю.
+
+Также «неправильный знак» Euclidean conformal factor означает выбор или
+rotation integration contour. Это не gauge quotient и не уменьшение
+конечномерного rank.
+
+Наконец, коэффициент \(1/24\) в
+\begin{equation}
+ \widehat A=1-\frac{p_1}{24}+\cdots
+\end{equation}
+является нормировкой characteristic class, а не числом Majorana degrees of
+freedom. Из него не следует операция \(24-1\).
+
+\begin{theorem}[Conformal-rank no-go]
+В 4D parent architecture без точной локальной Weyl gauge symmetry
+обработка conformal factor и деление на gravitational gauge volume не
+превращают \(\mathcal M_{Maj}\simeq\mathbb R^{24}\) в rank-\(23\) модуль.
+Для такого сокращения необходим rank-one operator, действующий внутри
+Majorana fiber.
+\end{theorem}
+
+\section{Сравнение с defect-route}
+
+Предыдущий dimension gate уже доказал, что удаление generation singlet
+вычитает полный внутренний spinor module, а не одну вещественную компоненту.
+Но class-D defect на систолической геодезической даёт условный обход этого
+no-go: transverse mod-two kernel, longitudinal periodic real mode,
+generation singlet и self-dual cycle line имеют combined rank \(1\). Внутри
+этой defect-модели дополнение в \(\mathbb R^{24}\) действительно имеет rank
+\(23\).
+
+Различие принципиально. Conformal factor находится в metric field space и
+не действует на Majorana fiber. Defect zero mode является собственным
+вектором Majorana/BdG operator и потому способен определить настоящий
+rank-one projector. Его оставшийся gap --- вывод odd-winding mass order
+parameter и restriction map из общего S2T action.
+
+\begin{protocol}[Условие переоткрытия Ф.3]
+Конформная ветвь может быть переоткрыта только если:
+\begin{enumerate}
+ \item полное massive действие обладает точной Weyl gauge symmetry;
+ \item построен её BRST-complex вместе с diffeomorphism ghosts;
+ \item mixed gauge map имеет rank-one image внутри \(\mathcal M_{Maj}\);
+ \item quotient удаляет ровно одну реальную Majorana direction, а не общий
+ scale или полный internal multiplet;
+ \item тот же complex независимо фиксирует relative trace--Hodge weight.
+\end{enumerate}
+Альтернативный допустимый путь --- вывести уже построенный class-D defect из
+parent action без нового выбранного order parameter.
+\end{protocol}
+
+Текущий вердикт Ф.3 отрицателен для conformal/gauge-volume объяснения.
+Число \(23\) не выводится из \(\widehat A\)-знаменателя и не возникает при
+удалении gravitational conformal mode. Оно сохраняет условный статус только
+через явный rank-one Majorana defect либо иной operator в \(\mathbb R^{24}\).
+
+Машинный протокол сохранён в
+\texttt{s2t\_conformal\_majorana\_rank\_gate\_results.json}.

@@ -1,0 +1,209 @@
+{
+  "status": "chiral_doubling_repairs_the_grading_but_does_not_select_Yukawa_blocks_and_the_physical_menu_remains_highly_underdetermined",
+  "date": "2026-08-06",
+  "blind_protocol": {
+    "observed_quark_masses_loaded": false,
+    "observed_CKM_loaded": false,
+    "input_menu": "the previously declared L, S, A_n and i[S,A_n] operators",
+    "coefficient_menu": "(a,b,d) in {-1,0,1}^3 independently per sector"
+  },
+  "chiral_embedding_gate": {
+    "family_space": "V3_left direct_sum V3_right",
+    "grading": "Gamma=diag(-I3,+I3)",
+    "Dirac_operator": "D(Y)=[[0,Y],[Y^dagger,0]]",
+    "Dirac_square": "D(Y)^2=diag(Y Y^dagger,Y^dagger Y)",
+    "maximum_grading_anticommutator_error": 0.0,
+    "maximum_selfadjoint_error": 0.0,
+    "finding": "The chiral doubling is a valid odd self-adjoint embedding for every complex 3x3 Yukawa block Y; grading alone imposes no family texture."
+  },
+  "physical_readout_correction": {
+    "left_squared_mass_operator": "H=Y Y^dagger",
+    "independent_SVD_check": {
+      "squared_mass_error": 5.329070518200751e-15,
+      "left_singular_vector_overlap_error": 6.661338147750939e-16
+    },
+    "previous_menu_diagonalized_Hermitian_M_directly": true,
+    "finding": "The physical rescan orders states by squared singular values; all declared menu candidates remain nondegenerate in squared mass."
+  },
+  "discrete_menu_scan": {
+    "rows": [
+      {
+        "normalization": "raw",
+        "kernel": "inverse_length",
+        "sector_candidates_before_deduplication": 54,
+        "unique_yukawa_blocks": 51,
+        "squared_mass_nondegenerate_candidates": 54,
+        "squared_mass_degenerate_candidates": 0,
+        "ordered_physical_sector_pairs": 2916,
+        "full_mixing_pairs": 2748,
+        "nonzero_CP_pairs": 2352,
+        "same_coefficient_CP_pairs": 0,
+        "commutator_free_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "maximum_abs_J": 0.09517165777444511
+      },
+      {
+        "normalization": "raw",
+        "kernel": "inverse_square",
+        "sector_candidates_before_deduplication": 54,
+        "unique_yukawa_blocks": 51,
+        "squared_mass_nondegenerate_candidates": 54,
+        "squared_mass_degenerate_candidates": 0,
+        "ordered_physical_sector_pairs": 2916,
+        "full_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_coefficient_CP_pairs": 0,
+        "commutator_free_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "maximum_abs_J": 0.09557194521501405
+      },
+      {
+        "normalization": "raw",
+        "kernel": "tunneling",
+        "sector_candidates_before_deduplication": 54,
+        "unique_yukawa_blocks": 51,
+        "squared_mass_nondegenerate_candidates": 54,
+        "squared_mass_degenerate_candidates": 0,
+        "ordered_physical_sector_pairs": 2916,
+        "full_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_coefficient_CP_pairs": 0,
+        "commutator_free_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "maximum_abs_J": 0.09608424559186189
+      },
+      {
+        "normalization": "spectral",
+        "kernel": "inverse_length",
+        "sector_candidates_before_deduplication": 54,
+        "unique_yukawa_blocks": 51,
+        "squared_mass_nondegenerate_candidates": 54,
+        "squared_mass_degenerate_candidates": 0,
+        "ordered_physical_sector_pairs": 2916,
+        "full_mixing_pairs": 2748,
+        "nonzero_CP_pairs": 2352,
+        "same_coefficient_CP_pairs": 0,
+        "commutator_free_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 533,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "maximum_abs_J": 0.09073817688660527
+      },
+      {
+        "normalization": "spectral",
+        "kernel": "inverse_square",
+        "sector_candidates_before_deduplication": 54,
+        "unique_yukawa_blocks": 51,
+        "squared_mass_nondegenerate_candidates": 54,
+        "squared_mass_degenerate_candidates": 0,
+        "ordered_physical_sector_pairs": 2916,
+        "full_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_coefficient_CP_pairs": 0,
+        "commutator_free_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "maximum_abs_J": 0.09464186243540909
+      },
+      {
+        "normalization": "spectral",
+        "kernel": "tunneling",
+        "sector_candidates_before_deduplication": 54,
+        "unique_yukawa_blocks": 51,
+        "squared_mass_nondegenerate_candidates": 54,
+        "squared_mass_degenerate_candidates": 0,
+        "ordered_physical_sector_pairs": 2916,
+        "full_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_coefficient_CP_pairs": 0,
+        "commutator_free_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "maximum_abs_J": 0.09588154059783892
+      },
+      {
+        "normalization": "frobenius",
+        "kernel": "inverse_length",
+        "sector_candidates_before_deduplication": 54,
+        "unique_yukawa_blocks": 51,
+        "squared_mass_nondegenerate_candidates": 54,
+        "squared_mass_degenerate_candidates": 0,
+        "ordered_physical_sector_pairs": 2916,
+        "full_mixing_pairs": 2748,
+        "nonzero_CP_pairs": 2352,
+        "same_coefficient_CP_pairs": 0,
+        "commutator_free_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 533,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "maximum_abs_J": 0.08622061716154168
+      },
+      {
+        "normalization": "frobenius",
+        "kernel": "inverse_square",
+        "sector_candidates_before_deduplication": 54,
+        "unique_yukawa_blocks": 51,
+        "squared_mass_nondegenerate_candidates": 54,
+        "squared_mass_degenerate_candidates": 0,
+        "ordered_physical_sector_pairs": 2916,
+        "full_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_coefficient_CP_pairs": 0,
+        "commutator_free_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "maximum_abs_J": 0.09310182111995888
+      },
+      {
+        "normalization": "frobenius",
+        "kernel": "tunneling",
+        "sector_candidates_before_deduplication": 54,
+        "unique_yukawa_blocks": 51,
+        "squared_mass_nondegenerate_candidates": 54,
+        "squared_mass_degenerate_candidates": 0,
+        "ordered_physical_sector_pairs": 2916,
+        "full_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_coefficient_CP_pairs": 0,
+        "commutator_free_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "maximum_abs_J": 0.09554007900089648
+      }
+    ],
+    "representative_raw_inverse_length": {
+      "normalization": "raw",
+      "kernel": "inverse_length",
+      "sector_candidates_before_deduplication": 54,
+      "unique_yukawa_blocks": 51,
+      "squared_mass_nondegenerate_candidates": 54,
+      "squared_mass_degenerate_candidates": 0,
+      "ordered_physical_sector_pairs": 2916,
+      "full_mixing_pairs": 2748,
+      "nonzero_CP_pairs": 2352,
+      "same_coefficient_CP_pairs": 0,
+      "commutator_free_CP_pairs": 0,
+      "unique_absolute_CP_signatures": 534,
+      "minimum_nonzero_coefficient_support_for_CP": 1,
+      "maximum_abs_J": 0.09517165777444511
+    },
+    "previous_direct_matrix_result": {
+      "ordered_sector_pairs": 2916,
+      "nonzero_CP_pairs": 2352,
+      "unique_absolute_CP_signatures": 533
+    }
+  },
+  "selector_gate": {
+    "primitive_real_linear_span_rank": 5,
+    "general_complex_Y_real_dimension": 18,
+    "two_sector_general_real_dimension_before_basis_quotients": 36,
+    "same_sector_block_consequence": "Y_u=Y_d gives identity CKM",
+    "finding": "Chiral doubling supplies the correct left-right architecture but neither chooses distinct up/down blocks nor fixes their discrete coefficients, normalization or CP orientation."
+  },
+  "scientific_verdict": {
+    "positive": "The canonical affine triplet is preserved and the finite Dirac operator is strictly odd without adding or eliminating a fourth family mode.",
+    "negative": "Every complex 3x3 Yukawa matrix is compatible with the grading. Restricting to the existing discrete menu still leaves many physical CP candidates, so the construction repairs consistency but adds no selector.",
+    "next_gate": "Specify the represented finite algebra, real structure and first-order condition, then classify which Yukawa blocks survive. Without those data, the doubled-triplet route is a kinematic container rather than a prediction."
+  }
+}

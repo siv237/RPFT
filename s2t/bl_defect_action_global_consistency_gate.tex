@@ -1,0 +1,140 @@
+\chapter{Global-consistency gate для предложенного
+\texorpdfstring{\(B-L\)}{B-L} defect action}
+
+Предложенное действие объединяет root-связность, torsion-twisted
+charge-two pairing field, Majorana Yukawa vertex и half-shifted
+неоднородное седло. До динамического kill-gate необходимо проверить,
+являются ли эти четыре элемента глобально совместимыми.
+
+\section{Bundle gate Majorana-вершины}
+
+На generator \(y\) sterile line имеет holonomy
+\begin{equation}
+ r=i,
+ \qquad
+ r^2=-1.
+\end{equation}
+Обычное charge-minus-two pairing field имеет holonomy
+\(\phi=-1\). Поэтому
+\begin{equation}
+ \phi r^2=+1:
+\end{equation}
+Majorana vertex \(\Phi N^cN^c\) является scalar, но nowhere-zero parallel
+condensate запрещён.
+
+Для предложенного twisted field
+\begin{equation}
+ \Phi_{\rm tw}\in
+ \Gamma(L_{\rm tor}\otimes L_{B-L}^{-2})
+\end{equation}
+полный holonomy равен
+\begin{equation}
+ \phi_{\rm tw}=(-1)(-1)=+1.
+\end{equation}
+Parallel condensate теперь допустим, но
+\begin{equation}
+ \phi_{\rm tw}r^2=-1.
+\end{equation}
+Следовательно, записанный член
+\(y_N\Phi_{\rm tw}N^cN^c\) является torsion-odd и не задаёт глобальный
+scalar functional. Это ровно ранее доказанная
+root--mass--condensate trilemma.
+
+\section{Двойной учёт holonomy в спектре}
+
+Если torsion и charge-two holonomies сокращаются, полный holonomy pairing
+bundle равен \(+1\). Тогда spectrum ковариантного оператора имеет
+integer-shifted вид
+\begin{equation}
+ k_n=\frac{2\pi n}{L}
+\end{equation}
+и содержит нулевую моду. Half-shifted spectrum
+\begin{equation}
+ k_n=\frac{2\pi n+\pi}{L}
+\end{equation}
+принадлежит ordinary untwisted charge-two field с total holonomy \(-1\).
+Использование total holonomy \(+1\) и half-shift одновременно дважды
+учитывает один и тот же знак.
+
+Поэтому предложенное twisted действие не выводит заявленные
+\(n=0,-1\) branches и порог \(1-\lambda v^2\). Эти результаты относятся к
+ordinary nonuniform defect branch, в которой Yukawa vertex глобально
+инвариантен, но condensate не parallel.
+
+\section{Оставшиеся derivation gates}
+
+Даже после выбора правильной ordinary defect branch остаются:
+\begin{enumerate}
+ \item Maxwell term при \(f=0\) не выбирает Wilson holonomy
+ \(\oint a=\pi/2\) из непрерывного пространства flat connections;
+ \item отрицательный mass-square введён определением
+ \(m_\Phi^2=-\lambda v^2\), а не получен gap equation;
+ \item профиль \(\tanh x\) и \(S_{\rm core}\) не выведены решением
+ предъявленного действия;
+ \item внешний rank-24 Majorana module не построен из перечисленных полей;
+ \item равные kernel/quotient weights остаются выбором canonical metric.
+\end{enumerate}
+
+Коэффициент kinetic mixing
+\(\sum Y(B-L)=8/3\) является корректным trace identity, но не второй
+предсказанной величиной. Физическое mixing требует boundary value, gauge
+couplings, thresholds и running, отсутствующих в предъявленном
+core-complement action.
+
+\begin{proposition}[Вердикт global-consistency gate]
+Предложенное действие проваливается раньше собственного динамического
+kill-gate:
+\begin{equation}
+ \text{twisted parallel condensate}
+ \quad\Longrightarrow\quad
+ \text{torsion-odd Yukawa vertex},
+\end{equation}
+а заявленный half-shift несовместим с total holonomy \(+1\).
+Следовательно, action в записанном виде не является глобально определённым
+parent action.
+
+Выживает только ordinary nonuniform charge-two defect texture с holonomy
+\(-1\). Для неё mod-2 kernel остаётся условно согласованным, но
+конденсация, core profile, rank-24 embedding и relative metric должны быть
+выведены заново.
+\end{proposition}
+
+\section{Follow-up: строгий выбор ordinary ветви A}
+
+Последующий ответ корректно выбрал ordinary charge-minus-two field без
+torsion twist. В этой ветви scalar Yukawa vertex глобально определена, а
+holonomy \(-1\) даёт half-shifted spectrum и conjugate lowest modes.
+При заранее заданных root Wilson sector и broken-symmetry potential
+получается
+\begin{equation}
+ \rho^2=v^2-\frac{\pi^2}{\lambda L^2},
+ \qquad
+ \lambda v^2>\frac{\pi^2}{L^2}.
+\end{equation}
+Это закрывает bundle-consistency и circle-saddle gates.
+
+Однако статус «одно действие замкнуто при данном SSB» требует ещё четырёх
+уточнений:
+\begin{enumerate}
+ \item Maxwell term на flat connection не выбирает
+ \(\oint a=\pi/2\); root Wilson sector остаётся boundary/topological input;
+ \item circle plane-wave с постоянной амплитудой не выводит transverse
+ radial kink \(\tanh x\) или \(\operatorname{sech}x\) zero mode; необходимо
+ решить tubular vortex profile и core boundary problem;
+ \item mod-2 index фиксирует нечётность числа real zero modes, но ровно один
+ kernel требует minimality/gap theorem, исключающей дополнительные пары;
+ \item rank \(24\) и относительный canonical вес quotient/kernel не следуют
+ из предъявленного \(B-L\) action, поэтому \(23+\pi^{-1}\) остаётся
+ conditional metric readout.
+\end{enumerate}
+
+\begin{remark}[Исправленный статус ветви A]
+Ветвь A является единственной глобально согласованной минимальной ветвью и
+условно выводит nonuniform circle texture. Она не является полностью
+замкнутой даже после задания SSB: дополнительно требуются вывод root Wilson
+sector, radial core solution, exact-one kernel theorem и parent-derived
+rank-24 metric.
+\end{remark}
+
+Машинный протокол сохранён в
+\texttt{s2t\_bl\_defect\_action\_global\_consistency\_results.json}.

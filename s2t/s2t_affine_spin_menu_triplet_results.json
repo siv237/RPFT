@@ -1,0 +1,123 @@
+{
+  "status": "affine_spin_menu_has_canonical_one_plus_three_split_and_can_host_three_SU5_generations",
+  "date": "2026-08-04",
+  "menu": {
+    "spin_torsor": "F2^2 with four points",
+    "affine_group": "AGL(2,2)=F2^2 semidirect GL(2,2)",
+    "group_order": 24,
+    "isomorphic_permutation_group": "S4",
+    "interpretation": "Unlike geometric automorphisms of K, the intrinsic relabeling group of the abstract four-state affine menu is the full symmetric group on four points."
+  },
+  "canonical_decomposition": {
+    "permutation_representation_dimension": 4,
+    "singlet_projector": [
+      [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ]
+    ],
+    "singlet_rank": 1,
+    "triplet_projector": [
+      [
+        0.75,
+        -0.25,
+        -0.25,
+        -0.25
+      ],
+      [
+        -0.25,
+        0.75,
+        -0.25,
+        -0.25
+      ],
+      [
+        -0.25,
+        -0.25,
+        0.75,
+        -0.25
+      ],
+      [
+        -0.25,
+        -0.25,
+        -0.25,
+        0.75
+      ]
+    ],
+    "triplet_rank": 3,
+    "decomposition": "C4 = 1_uniform + 3_sum_zero",
+    "max_singlet_invariance_error": 0.0,
+    "max_triplet_invariance_error": 0.0
+  },
+  "invariant_operator_algebra": {
+    "commutant_dimension": 2,
+    "basis": "span{I,J}",
+    "consequence": "Every fully affine-invariant Hermitian transition operator has form a I + b J and therefore preserves the same one-plus-three decomposition.",
+    "complete_graph_laplacian": "L=4I-J",
+    "laplacian_eigenvalues": [
+      1.1102230246251565e-16,
+      3.9999999999999982,
+      4.0,
+      4.0
+    ],
+    "heavy_singlet_operator": "M=J",
+    "heavy_singlet_eigenvalues": [
+      -4.242728817663776e-16,
+      1.2053399157949556e-33,
+      6.18338162432522e-17,
+      3.999999999999999
+    ],
+    "interpretation": "L has one zero uniform mode and a triply degenerate excited sector; J instead gives mass only to the uniform singlet and leaves a rank-three kernel."
+  },
+  "SU5_tensor_product": {
+    "one_generation_representation": "10 + bar5",
+    "single_generation_dimension": 15,
+    "family_space": "triplet projector image",
+    "three_generation_dimension": 45,
+    "SU5_cubic_anomaly_single": 0,
+    "SU5_cubic_anomaly_three_copies": 0,
+    "finding": "Tensoring the anomaly-free SU5 package with the canonical triplet produces three identical anomaly-free families without selecting three individual spin structures."
+  },
+  "gates": {
+    "generation_count": {
+      "passes": true,
+      "finding": "the affine permutation representation canonically contains a rank-three sector"
+    },
+    "generation_equivalence": {
+      "passes": true,
+      "finding": "the triplet is an invariant irreducible standard S4 representation"
+    },
+    "origin_from_bare_geometry": {
+      "passes": false,
+      "finding": "full AGL(2,2) is a symmetry of the abstract menu, not the diffeomorphism-induced symmetry of K; treating it as physical is the defining new III.0 postulate"
+    },
+    "mass_hierarchy_and_mixing": {
+      "passes": false,
+      "finding": "exact affine symmetry makes the three families degenerate; observed hierarchy requires a derived symmetry-breaking operator"
+    }
+  },
+  "scientific_verdict": {
+    "positive": "The menu interpretation supplies a canonical family-space decomposition 1+3. Combined with the SU5 fiber, it yields a mathematically clean three-generation carrier.",
+    "caveat": "This is a new model principle, not evidence that nature uses the affine menu. The full affine symmetry must be justified dynamically, and exact symmetry gives no hierarchy.",
+    "next_gate": "Use only the previously derived geometric subgroup that splits the three labels as 1+2 to construct a parameter-free first family-symmetry breaking operator, then test whether its eigenvalue pattern can support one heavy family and two lighter families."
+  }
+}

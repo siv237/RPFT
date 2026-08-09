@@ -1,0 +1,112 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{geometry}
+\usepackage{microtype}
+\geometry{margin=2.3cm}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{nogocriterion}{Критерий провала}
+\DeclareMathOperator{\Spec}{Spec}
+
+\title{Spin-menu Dirac и determinant-line gate:\\
+последняя спектральная попытка вывести family-selector}
+\author{}
+\date{5 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Внешний математический контроль}
+
+Теория determinant line для семейств операторов Дирака связывает
+экспоненцированную $\eta$-инварианту с элементом determinant line, а её
+глобальное изменение --- с голономией естественной связи. Зависимость
+$\eta$-инварианты от spin-структуры также является реальным спектральным
+эффектом. Поэтому остаётся законный вопрос: может ли семейство четырёх Dirac-
+операторов на spin-меню породить недостающие off-diagonal family-переходы.
+
+Однако отдельные determinant- или $\eta$-значения прикреплены к различным
+spin-структурам как скаляры/фазы. Без дополнительного parallel transport они
+задают только диагональный оператор. Чтобы получить incidence matrix, необходимо
+ввести связь между determinant fibers.
+
+\section{Минимальный cellular Dirac}
+
+Четыре spin-состояния образуют квадрат $F_2^2$. Его две группы рёбер
+соответствуют переключению $\mathbb{RP}^3$- и $S^1$-spin-структур. Для
+ориентированной incidence matrix $B$ естественный дискретный оператор равен
+\begin{equation}
+ D_{cell}=\begin{pmatrix}0&B\\ B^*&0\end{pmatrix},
+ \qquad \Delta_0=BB^*.
+\end{equation}
+При весах $w_3=\pi^{-1}$ и $w_1=(2\pi)^{-1}$ получаем
+\begin{equation}
+ \Spec(\Delta_0)=
+ \left\{0,\frac1\pi,\frac2\pi,\frac3\pi\right\}.
+\end{equation}
+Оператор точно коммутирует с обеими факторными трансляциями. Следовательно,
+cellular Dirac square возвращает уже проверенный факторный лапласиан: он
+различает семейные метки, но не создаёт mixing.
+
+\section{Связь на determinant line}
+
+После vertex rephasing физической характеристикой связи на квадрате остаётся
+голономия вокруг plaquette. Для projective representation группы
+$\mathbb Z_2^2$ существуют два топологических класса:
+\begin{equation}
+ \operatorname{Hol}_{\square}=+1
+ \quad\text{или}\quad
+ \operatorname{Hol}_{\square}=-1.
+\end{equation}
+Первый класс gauge-эквивалентен тривиальной commuting connection. Второй даёт
+\begin{equation}
+ UV=-VU
+\end{equation}
+и совпадает с ранее исследованным $\pi$-flux.
+
+В явном weighted cellular расчёте $\pi$-flux даёт две собственные величины
+\begin{equation}
+ 0.1215835576,\qquad 0.8333461010,
+\end{equation}
+каждую с кратностью два. Кроме того, magnetic Laplacian смешивает uniform-
+синглет и триплет. Поэтому determinant-line transport не создаёт нового
+третьего маршрута: он возвращает либо commuting case, либо even-multiplicity
+projective case.
+
+\begin{proposition}[Spectral-selector dichotomy]
+Для минимального квадратного spin-меню canonical Dirac/determinant construction
+имеет только три формы чтения: диагональные determinant/$\eta$-веса,
+тривиальная commuting connection или нетривиальный $\pi$-flux. Ни одна из них
+не выбирает outside-$D_8$ incidence-оператор, порождающий полную $M_3$-алгебру.
+\end{proposition}
+
+\section{Финальный семейный gate текущего носителя}
+
+Spectral flow способен присвоить ориентированному пути целое число или фазу,
+но сам граф путей и его edge magnitudes являются дополнительными данными.
+После факторизации vertex gauge остаётся только уже учтённая plaquette-
+голономия. Следовательно, ни cellular Dirac, ни $\eta$-инварианты, ни
+determinant-line holonomy не выводят искомый selector из текущего носителя.
+
+\begin{nogocriterion}[Закрытие intrinsic-selector ветви]
+В пределах данных $\mathbb{RP}^3\times S^1$, четырёх spin-структур, их
+cohomology ring, product metric и canonical determinant line недостающий
+full-$M_3$ incidence-оператор не выводится. Переоткрытие требует новой
+неплоской boundary connection, заранее фиксирующей граф, edge magnitudes и
+различное назначение up/down-секторам.
+\end{nogocriterion}
+
+Этот результат закрывает не все возможные flavour-теории, а intrinsic-
+selector программу текущего конечного носителя. Двенадцать algebraically
+рабочих операторов существуют, но ни один не выделяется имеющимися
+геометрическими и спектральными данными.
+
+Машинный протокол сохранён в
+\texttt{s2t\_spin\_menu\_dirac\_determinant\_line\_audit.py} и
+\texttt{s2t\_spin\_menu\_dirac\_determinant\_line\_results.json}.
+
+\end{document}

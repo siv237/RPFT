@@ -1,0 +1,25 @@
+{
+  "release": "S2T-IIA-IIB-FREEZE-2026-08-07",
+  "freeze_date": "2026-08-07",
+  "status": {
+    "R_sci": "4/10",
+    "N_closed_physical": 0,
+    "supersedes_intermediate_ledgers": true
+  },
+  "sealed_expected_results": {
+    "filename": "expected_results.json",
+    "sha256": "562eb8cf22941e0ca3317ccb99ca4ee7d7d1a5b69ec218a2cb09346b2f6facaa",
+    "committed_to_release": false,
+    "release_condition": "after independent code and results hashes are frozen"
+  },
+  "files": {
+    "final_freeze_reproduction_protocol.tex": "7d04bb37f4631f47cf05fab8fff7e4860aaf4aaed8a46c284c5f8f4b1881260e",
+    "wiki/syntheses/final-freeze-and-reproduction-package-2026-08-07.md": "87a6301ffeccdb75b7ed40e438443c44198ce2837cdcb62bf1fdbf9722c337a9",
+    "reproduction_package/REPRODUCTION_PROTOCOL.md": "a72d0471a5a0ddc74035ca9c8fd4a3607f28d55e70075384d60f921c537c61fd",
+    "reproduction_package/THEOREM_STATUS_LEDGER.json": "4a54e298137efbdd7029195de51654e9f613ccaab6e0d35f1a3f7b0873021e7b",
+    "reproduction_package/DEPENDENCY_GRAPH.json": "bb56c4c673419ed41b2d0a0ca1e4bc042c8e0dc9ba6f3650300afc3b97427142",
+    "reproduction_package/specification/statements.md": "b35e068a97509b0c9c415effe67dbbf2bb8e75781bf3df9305702d1aa3e5ed49",
+    "reproduction_package/specification/allowed_inputs.json": "5e97f1e5c4058fce607c474a7c3b02ecf585b77f3d439f225c18c9517b92bf50",
+    "reproduction_package/specification/failure_criteria.json": "535cce0bf57c2f082cfe30e45fc7839e6042096e617382eb90a999265ac43aa3"
+  }
+}

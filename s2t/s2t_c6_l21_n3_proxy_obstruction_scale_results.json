@@ -1,0 +1,35 @@
+{
+  "status": "n3_proxy_obstruction_scale_large_relative_to_rank10_route",
+  "sources": [
+    "s2t_c6_l21_n3_hodge_projection_results.json",
+    "s2t_c6_l21_n1_principal_symbol_results.json"
+  ],
+  "scale_comparison": {
+    "coexact_trace_proxy_n1_to_n3": 64.0,
+    "second_order_denominator_proxy": 0.4444444444444444,
+    "p02_rank_target": 10,
+    "ratio_coexact_trace_to_rank10": 6.4,
+    "n1_principal_warning_trace_square": 0.11111111111111113,
+    "ratio_coexact_trace_to_n1_principal_warning": 575.9999999999999,
+    "ratio_second_order_proxy_to_n1_principal_warning": 3.999999999999999
+  },
+  "interpretation": [
+    {
+      "claim": "the n=1<->3 proxy can be ignored as a tiny leakage",
+      "verdict": "fails",
+      "reason": "The coexact trace proxy is 64, which is 6.4 times the rank-10 P02 count and much larger than the n=1 principal warning trace-square."
+    },
+    {
+      "claim": "the proxy alone proves final C6 failure",
+      "verdict": "not_yet",
+      "reason": "The explicit orthonormal n=3 coexact projection and determinant sign/normalization are still missing; this is a scale warning, not the final theorem."
+    }
+  ],
+  "next_required_audit": {
+    "name": "explicit_n3_coexact_basis_or_no_go_downgrade",
+    "task": "confirm whether the trace-level residue 64 survives in an explicit coexact n=3 basis",
+    "pass_for_rescue": "show exact cancellation with projection/Hilbert terms or absorption into the existing pi^-4/P02 residue without a tunable coefficient",
+    "fail_for_rescue": "nonzero explicit residue remains as an independent low-shell finite determinant contribution"
+  },
+  "verdict": "The proxy residue is not small in the internal C6 bookkeeping. A coexact trace proxy of 64 is 6.4 times the rank-10 P02 route and gives a second-order denominator proxy 4/9. Therefore, if explicit n=3 projection confirms it, C6 cannot remain a clean rank-10 absorption theorem without a new cancellation or paired sector."
+}

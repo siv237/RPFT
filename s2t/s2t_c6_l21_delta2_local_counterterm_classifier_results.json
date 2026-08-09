@@ -1,0 +1,89 @@
+{
+  "status": "delta2_local_counterterm_classifier_skeleton_fixed_finite_residual_proof_missing",
+  "inputs": [
+    "s2t_c6_l21_delta2_delta_gate_results.json",
+    "s2t_c6_l21_n3_finite_counterterm_gate_results.json",
+    "s2t_c6_l21_delta2_operator_decomposition_results.json"
+  ],
+  "classifier_scope": {
+    "question": "Which pieces of Tr(Delta^-1 delta2 Delta) may be removed by a predetermined local subtraction scheme?",
+    "allowed_local_data": [
+      "UV heat-kernel/asymptotic coefficients fixed before low-shell matrix evaluation",
+      "local curvature, metric-strain, and volume counterterms with coefficients fixed by the chosen Maxwell--ghost scheme",
+      "scheme constants that do not depend on the finite n=1 or n=3 projection values"
+    ],
+    "forbidden_subtractions": [
+      "post-hoc removal of finite low-shell spectral traces",
+      "direction-dependent subtraction tuned after seeing C_delta2[A,B]",
+      "erasing the trace80 n=1<->n=3 obstruction by declaring it local",
+      "using a finite counterterm to force N_need to equal 10"
+    ]
+  },
+  "classification_slots": {
+    "local_heat_kernel_part": {
+      "role": "predetermined UV/local subtraction candidate",
+      "required_proof": "show dependence only on local invariants of the ambient path and fixed scheme coefficients",
+      "status": "not_proven"
+    },
+    "finite_low_shell_part": {
+      "role": "quotient-normalized spectral data from n=1 and n=3 diagonal C_delta2 blocks",
+      "required_proof": "compute or prove exact compensation; not removable by local counterterms",
+      "status": "not_evaluated"
+    },
+    "scheme_compensation_part": {
+      "role": "possible cancellation against ghost/exact/normalization blocks inside the same determinant scheme",
+      "required_proof": "derive coefficient-level compensation before comparing with alpha",
+      "status": "not_derived"
+    }
+  },
+  "decision_rule": [
+    {
+      "if": "a term is a predetermined local heat-kernel coefficient",
+      "then": "it may be subtracted only according to the declared scheme"
+    },
+    {
+      "if": "a term depends on finite low-shell projections or C_delta2 matrix entries",
+      "then": "it must remain in the determinant trace unless exact compensation is derived"
+    },
+    {
+      "if": "the local/nonlocal split cannot be proven",
+      "then": "compute the finite C_delta2 diagonal blocks and keep the residual in the master matrix"
+    }
+  ],
+  "links_to_existing_gates": {
+    "delta2_gate_status": "delta2_delta_gate_fixed_locality_or_finite_block_required",
+    "finite_counterterm_status": "n3_finite_low_shell_trace_not_rescuable_by_local_counterterm",
+    "delta2_subblocks": [
+      "principal_second_symbol",
+      "second_connection_terms",
+      "second_ricci_curvature_terms",
+      "coexact_projector_second_variation",
+      "hilbert_basis_second_variation",
+      "local_counterterm_classifier"
+    ]
+  },
+  "pass_fail": [
+    {
+      "test": "classifier_slots_written",
+      "status": "pass",
+      "meaning": "The local, finite-low-shell, and scheme-compensation buckets are now separated."
+    },
+    {
+      "test": "local_heat_kernel_proof",
+      "status": "not_yet",
+      "meaning": "No proof yet that delta2 Delta contributes only predetermined local heat-kernel data."
+    },
+    {
+      "test": "finite_residual_table",
+      "status": "not_yet",
+      "meaning": "No C_delta2 finite residual table has been computed."
+    },
+    {
+      "test": "same_scheme_compensation",
+      "status": "not_yet",
+      "meaning": "No ghost/exact/normalization compensation has been derived in the same Maxwell--ghost scheme."
+    }
+  ],
+  "plain_language": "The sixth gear is the trash sorter. It says what is harmless local dust and what is a real low-shell stone that cannot be swept away after we see it.",
+  "verdict": "The local-counterterm classifier for delta2 Delta_1 is now fixed at skeleton level. Predetermined heat-kernel/local pieces may be subtracted only by a declared scheme, while finite low-shell C_delta2 data and the trace80-type obstruction cannot be removed by post-hoc finite counterterms. This does not prove locality or compensation; it fixes the rule that missing finite residuals must be computed and kept unless exact same-scheme cancellation is derived."
+}

@@ -1,0 +1,126 @@
+{
+  "status": "delta2_C11_setup_fixed_inputs_ready_matrix_not_evaluated",
+  "inputs": [
+    "s2t_c6_l21_delta2_trace_phase_priority_results.json",
+    "s2t_c6_l21_delta2_finite_block_spec_results.json",
+    "s2t_c6_l21_coexact_basis_results.json",
+    "s2t_c6_l21_normalization_results.json",
+    "s2t_c6_l21_delta2_ambient_path_formula_results.json",
+    "s2t_c6_l21_delta2_principal_second_symbol_formula_results.json",
+    "s2t_c6_l21_delta2_second_connection_formula_results.json",
+    "s2t_c6_l21_delta2_second_ricci_formula_results.json",
+    "s2t_c6_l21_delta2_second_projector_formula_results.json",
+    "s2t_c6_l21_delta2_second_hilbert_formula_results.json",
+    "s2t_c6_l21_delta2_local_counterterm_classifier_results.json"
+  ],
+  "target_block": {
+    "name": "C_delta2[1,1]",
+    "shell": "n=1 coexact Killing one-forms on L(2,1)",
+    "degeneracy": 6,
+    "lambda": 4,
+    "matrix_shape_per_symmetric_deformation_pair": [
+      6,
+      6
+    ],
+    "entries_per_pair": 36,
+    "trace_weight_lambda_inverse": 0.25,
+    "deformation_pairs": 55,
+    "raw_entries_all_pairs": 1980
+  },
+  "locked_conventions": {
+    "ambient_path": {
+      "path_id": "ambient_linear_embedding_strain",
+      "map": "F_eps(x)=(I+eps A)x, A=A^T, x in S3 subset R4, descended to L(2,1)",
+      "metric": "g_eps = F_eps^* <.,.>_R4 on the fixed S3/RP3 parameter manifold",
+      "reason": "This is the same first ambient strain route that supplies P02=Sym^2(R4)=1+9 in earlier audits.",
+      "selection_status": "fixed_for_theorem_route_before_C_delta2_numbers"
+    },
+    "metric_derivatives": {
+      "first_derivative_same_A": "g'_A(u,v)=2 <u,A v>",
+      "second_derivative_same_A": "g''_A(u,v)=2 <A u,A v>",
+      "mixed_second_derivative_A_B": "partial_A partial_B g(u,v)=<A u,B v>+<B u,A v>",
+      "expansion_same_A": "g_eps(u,v)=g(u,v)+eps*2<u,A v>+eps^2<Au,Av>",
+      "tangent_vectors": "u,v in T_x S3 with <u,x>=<v,x>=0"
+    },
+    "normalization_status": "L21_normalization_fixed_no_global_cover_factor_in_trace",
+    "normalization_rule": "quotient-orthonormal states; no extra global cover factor in trace",
+    "basis_labels_expected": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ]
+  },
+  "required_operator_pieces": [
+    {
+      "piece": "principal_second_symbol",
+      "source": "s2t_c6_l21_delta2_principal_second_symbol_formula_results.json",
+      "status": "delta2_principal_second_symbol_formula_fixed_matrix_missing",
+      "C11_ready": true
+    },
+    {
+      "piece": "second_connection",
+      "source": "s2t_c6_l21_delta2_second_connection_formula_results.json",
+      "status": "delta2_second_connection_formula_skeleton_fixed_delta2Gamma_expansion_missing",
+      "C11_ready": false
+    },
+    {
+      "piece": "second_ricci_curvature",
+      "source": "s2t_c6_l21_delta2_second_ricci_formula_results.json",
+      "status": "delta2_second_ricci_formula_skeleton_fixed_delta2Ricci_expansion_missing",
+      "C11_ready": false
+    },
+    {
+      "piece": "second_coexact_projector",
+      "source": "s2t_c6_l21_delta2_second_projector_formula_results.json",
+      "status": "delta2_second_projector_formula_skeleton_fixed_delta2Pi_expansion_missing",
+      "C11_ready": false
+    },
+    {
+      "piece": "second_hilbert_basis",
+      "source": "s2t_c6_l21_delta2_second_hilbert_formula_results.json",
+      "status": "delta2_second_hilbert_formula_skeleton_fixed_basis_expansion_missing",
+      "C11_ready": false
+    },
+    {
+      "piece": "local_counterterm_classifier",
+      "source": "s2t_c6_l21_delta2_local_counterterm_classifier_results.json",
+      "status": "delta2_local_counterterm_classifier_skeleton_fixed_finite_residual_proof_missing",
+      "C11_ready": false
+    }
+  ],
+  "assembly_formula_schematic": "C_delta2[1,1]_{ij}(A,B)=<e_i, (delta2_principal+delta2_connection+delta2_Ricci+delta2_projector+delta2_Hilbert/basis)_AB e_j> plus allowed same-scheme local bookkeeping, in quotient-orthonormal n=1 basis",
+  "blocked_by": [
+    "full delta2 Gamma_AB expansion missing",
+    "full delta2 Ricci_AB expansion missing",
+    "delta2 Pi_coex expansion and self-adjoint reduced representation missing",
+    "Hilbert basis transport / second Gram correction missing",
+    "local heat-kernel or same-scheme compensation proof missing"
+  ],
+  "pass_fail": [
+    {
+      "test": "target_block_identified",
+      "status": "pass",
+      "meaning": "C_delta2[1,1] is the first trace-phase block and has 36 entries per deformation pair."
+    },
+    {
+      "test": "basis_and_normalization_locked",
+      "status": "pass",
+      "meaning": "n=1 has six quotient-normalized coexact Killing states and no extra cover factor."
+    },
+    {
+      "test": "all_operator_pieces_matrix_ready",
+      "status": "fail_open",
+      "meaning": "Only the principal second-symbol has formula-level readiness; other pieces remain skeleton-level."
+    },
+    {
+      "test": "C11_values_evaluated",
+      "status": "not_yet",
+      "meaning": "No C_delta2[1,1] matrix entries or trace values have been computed."
+    }
+  ],
+  "plain_language": "The first box is on the table. We know its size, labels, weights, and ruler, but most tools needed to fill the numbers are still missing.",
+  "verdict": "The C_delta2[1,1] setup is fixed: use the six quotient-normalized n=1 Killing one-forms, the locked ambient linear embedding path, and 55 symmetric deformation pairs, giving 1,980 raw entries before reductions. This is a setup gate, not a computation. The C11 matrix cannot be evaluated until second connection, Ricci, projector, Hilbert/basis, and local/compensation pieces are expanded in the same convention."
+}

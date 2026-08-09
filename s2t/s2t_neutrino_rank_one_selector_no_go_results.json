@@ -1,0 +1,176 @@
+{
+  "status": "symmetry_protected_rank_one_selector_not_available_minimal_covariant_rank_is_four",
+  "date": "2026-08-03",
+  "module": {
+    "factorization": "R3_generation tensor R4_lowest_RP3_spinor tensor R2_cycle",
+    "full_real_dimension": 24,
+    "generation_singlet_rank": 1,
+    "lowest_RP3_spinor_real_rank": 4,
+    "self_dual_cycle_rank": 1,
+    "joint_canonical_rank": 4
+  },
+  "spin_covariance_test": {
+    "finite_exact_subgroup": "Q8 acting by left quaternion multiplication on R4",
+    "reason": "Q8 is sufficient for the obstruction: left multiplication by i squares to -I, so it has no invariant real line. A rank-one real projector cannot commute with it.",
+    "reynolds_average_of_rank_one_seed": [
+      [
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.25,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.25,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.25
+      ]
+    ],
+    "expected_average": [
+      [
+        0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.25,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.25,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.25
+      ]
+    ],
+    "average_error": 0.0,
+    "support_rank_after_symmetry_average": 4,
+    "commutator_errors": {
+      "left_i": 0.0,
+      "left_j": 0.0,
+      "left_k": 0.0
+    }
+  },
+  "RP3_dirac_spectrum": {
+    "generating_functions": {
+      "tau_plus": {
+        "F_plus": "(1-z)^(-3)-(1+z)^(-3)",
+        "F_minus": "(1-z)^(-3)+(1+z)^(-3)"
+      },
+      "tau_minus": "positive and negative branches exchanged"
+    },
+    "low_shells": [
+      {
+        "spin_structure": "tau_plus",
+        "k": 0,
+        "absolute_eigenvalue": 1.5,
+        "positive_complex_multiplicity": 0,
+        "negative_complex_multiplicity": 2
+      },
+      {
+        "spin_structure": "tau_plus",
+        "k": 1,
+        "absolute_eigenvalue": 2.5,
+        "positive_complex_multiplicity": 6,
+        "negative_complex_multiplicity": 0
+      },
+      {
+        "spin_structure": "tau_plus",
+        "k": 2,
+        "absolute_eigenvalue": 3.5,
+        "positive_complex_multiplicity": 0,
+        "negative_complex_multiplicity": 12
+      },
+      {
+        "spin_structure": "tau_plus",
+        "k": 3,
+        "absolute_eigenvalue": 4.5,
+        "positive_complex_multiplicity": 20,
+        "negative_complex_multiplicity": 0
+      },
+      {
+        "spin_structure": "tau_minus",
+        "k": 0,
+        "absolute_eigenvalue": 1.5,
+        "positive_complex_multiplicity": 2,
+        "negative_complex_multiplicity": 0
+      },
+      {
+        "spin_structure": "tau_minus",
+        "k": 1,
+        "absolute_eigenvalue": 2.5,
+        "positive_complex_multiplicity": 0,
+        "negative_complex_multiplicity": 6
+      },
+      {
+        "spin_structure": "tau_minus",
+        "k": 2,
+        "absolute_eigenvalue": 3.5,
+        "positive_complex_multiplicity": 12,
+        "negative_complex_multiplicity": 0
+      },
+      {
+        "spin_structure": "tau_minus",
+        "k": 3,
+        "absolute_eigenvalue": 4.5,
+        "positive_complex_multiplicity": 0,
+        "negative_complex_multiplicity": 20
+      }
+    ],
+    "lowest_absolute_eigenvalue": 1.5,
+    "lowest_nonzero_complex_multiplicity": 2,
+    "lowest_nonzero_real_rank": 4,
+    "consequence": "Choosing a spin structure selects the sign of the lowest branch but not a single spinor polarization. The lowest covariant eigenspace remains four-dimensional over R."
+  },
+  "dimension_options": {
+    "remove_full_generation_singlet_spinor_cycle_module": {
+      "removed_rank": 8,
+      "remaining_rank": 16
+    },
+    "remove_generation_singlet_self_dual_lowest_spinor_module": {
+      "removed_rank": 4,
+      "remaining_rank": 20
+    },
+    "remove_one_vector": {
+      "removed_rank": 1,
+      "remaining_rank": 23,
+      "symmetry_status": "requires explicit spin-polarization breaking or extra structure"
+    }
+  },
+  "no_go_statement": "The declared exact data S3 generation symmetry, the RP3 Dirac operator and spin/isometry covariance, and cycle self-duality do not select a real line in R24. They select at best generation-singlet tensor lowest-spinor tensor self-dual-cycle, whose real rank is four. A rank-one projector therefore cannot be symmetry-protected without adding a new spinor polarization, boundary/defect datum, condensate, or explicit symmetry breaking.",
+  "theory_effect": {
+    "rank_23_denominator": "no_go_under_current_exact_symmetries",
+    "smallest_current_covariant_removed_block": 4,
+    "conditional_remaining_rank_if_that_block_is_removed": 20,
+    "Qcycle": "retained",
+    "cycle_seesaw_contraction": "retained",
+    "neutrino_mass_prediction": "open"
+  },
+  "next_steps": [
+    "do not search for rank one inside the unchanged symmetric module",
+    "either derive a physical defect or condensate that selects a spinor polarization",
+    "or rebuild the denominator using a covariant removed block of rank four or eight",
+    "treat any choice of a single Killing spinor as new symmetry-breaking input"
+  ]
+}

@@ -1,0 +1,100 @@
+\chapter{Финальная заморозка II.A/II.B и протокол внешнего воспроизведения}
+
+Настоящая глава имеет приоритет над прежними промежуточными scorecard и
+status-ledger формулировками. Она фиксирует состояние программы на
+7 августа 2026 года и запрещает ретроактивное повышение статуса закрытых
+ветвей.
+
+\section{Итоговый научный статус}
+
+До полного внешнего воспроизведения математического пакета фиксируется
+\begin{equation}
+ R_{\rm sci}=4/10,
+ \qquad
+ N_{\rm closed\ physical}=0.
+\end{equation}
+Прежнее значение \(5/10\) трактуется только как внутренний milestone
+повторного вычисления. Повышение до \(5/10\) разрешено после двух независимых
+этапов: computational reproduction и mathematical replication.
+
+\begin{equation}
+ \boxed{
+ \begin{gathered}
+ \text{математическое ядро предъявлено к внешней проверке},\\
+ \text{единая физическая теория не построена},\\
+ N_{\rm closed\ physical}=0.
+ \end{gathered}}
+\end{equation}
+
+\section{Окончательное закрытие количественной нейтринной ветви}
+
+Поколенчески-слепой defect даёт
+\begin{equation}
+ P_{\ker}^{(3)}=I_3^{gen}\otimes|u\rangle\langle u|,
+ \qquad
+ \operatorname{rank}P_{\ker}^{(3)}=3,
+ \qquad
+ \operatorname{rank}P_H^{(3)}=21.
+\end{equation}
+При ordinary Hilbert--Schmidt/Hodge мере алгебраическая норма равна
+\begin{equation}
+ \|\Xi^{(3)}\|^2=21+\frac3\pi.
+\end{equation}
+Это тождество является поколенчески-ковариантным, но не универсальным
+физическим mass denominator. Его blind-подстановка даёт
+\begin{equation}
+ \Delta m_{21}^2\simeq8.30\times10^{-5}\ {\rm eV}^2,
+ \qquad
+ \Delta m_{31}^2\simeq2.70\times10^{-3}\ {\rm eV}^2,
+\end{equation}
+что не проходит объявленные наблюдаемые контроли. Прежняя ветвь
+\(23+\pi^{-1}\) численно ближе, но требует невыведенного rank-one selector и
+отвергается по инвариантности.
+
+\begin{nogocriterion}[Финальное закрытие neutrino denominator]
+В версии II.A/II.B запрещено использовать \(23+\pi^{-1}\),
+\(21+3\pi^{-1}\) или иную замену как физическое предсказание. Количественные
+формулы абсолютных нейтринных масс, \(R_\nu\) и mass splittings переводятся в
+исторический аудит. Сохраняются только partial результаты: rank-three kernel,
+нечётный mod-two index, anomaly-free \(B-L\), условный odd winding и
+дискретный Pfaffian/eta sign.
+\end{nogocriterion}
+
+Переоткрытие возможно только как новая модель после предварительного вывода
+из одного действия invariant rank-one projector, общей stiffness и второго
+normalization-sensitive сектора.
+
+\section{Frozen theorem-status ledger}
+
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}p{0.70\textwidth}}
+\toprule
+Категория & Результаты \\
+\midrule
+proved & объёмы, систола и \(S_{geo}\); объявленные scalar/Dirac/coexact spectra и parity projection; \(\zeta(4,1/2)=\pi^4/6\); six-channel Gaussian identity только как тождество; \(Q_{cycle}\) Gram identity; \(Q_8\)-, conformal-rank-, phase-to-mass-, family-selector-, mixing-, sign-, threshold- и two-sector no-go; \(B-L\) anomaly cancellation; root--mass--condensate trilemma; GL threshold \\
+conditional & выбор \(\mathbb{RP}^3\times S^1\) в минимальном классе; spin/half-shift branch; periodic \(1/24\); nonuniform saddle; reciprocal vacuum selection; counterfactual metric identities \(23+\pi^{-1}\) и \(21+3\pi^{-1}\) \\
+failed physical & exact C6 absorption; minimal EW/QCD closure; six-channel physical carrier in standard BV; charged-lepton seed/loop; CKM/CP textures; quantitative neutrino masses and splittings; minimal unified parent action \\
+open & новый parent action; symmetry-protected family selector; CKM/PMNS; strong dynamics; gravity; cosmology \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Протокол воспроизведения}
+
+Frozen package делится на модули геометрии, спектров, zeta/heat-kernel,
+Gram/projector identities, \(B-L\) anomalies и no-go map. Экспериментальные
+данные не входят в математический пакет. Численные expected outputs должны
+быть запечатаны до фиксации независимой реализации.
+
+Обязательны два уровня проверки:
+\begin{enumerate}
+ \item \emph{computational reproduction}: новая реализация без использования
+ внутренних скриптов проекта;
+ \item \emph{mathematical replication}: независимая проверка аналитических
+ доказательств, областей операторов, кратностей и схем регуляризации.
+\end{enumerate}
+
+Машиночитаемый пакет расположен в каталоге
+\texttt{reproduction\_package/}. Любое изменение frozen-файлов создаёт новую
+версию пакета и не изменяет задним числом статус II.A/II.B.

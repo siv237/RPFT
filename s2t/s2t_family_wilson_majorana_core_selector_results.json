@@ -1,0 +1,106 @@
+{
+  "status": "algebraic_generation_selector_pass_parent_action_conditional",
+  "date": "2026-08-07",
+  "input": {
+    "core_majorana_multiplicity": 3,
+    "wilson_cosine": "(26-9*sqrt(15))/11",
+    "wilson_angle": 2.5067553477766635,
+    "geometrically_minimal_axis_count": 2
+  },
+  "construction": {
+    "core_action": "S_core,fam=(i/2) integral_gamma chi^T K_n chi",
+    "generator": "K_n=theta_* [n]_cross=Log R_n(theta_*)"
+  },
+  "checks": {
+    "all_selected_axes_rank_two": true,
+    "all_selected_axes_nullity_one": true,
+    "orientation_reversal_preserves_kernel_projector": true,
+    "core_zero_modes_before_coupling": 3,
+    "core_zero_modes_after_coupling": 1,
+    "ambient_complement_rank_if_restriction_map_exists": 23
+  },
+  "rows": [
+    {
+      "axis": [
+        0.9811480430862917,
+        -0.19325764550966812,
+        5.760682210525997e-18
+      ],
+      "generator": [
+        [
+          0.0,
+          -1.4440620938077935e-17,
+          -0.48444963638008726
+        ],
+        [
+          1.4440620938077935e-17,
+          0.0,
+          -2.45949810396717
+        ],
+        [
+          0.48444963638008726,
+          2.45949810396717,
+          0.0
+        ]
+      ],
+      "antisymmetric_error": 0.0,
+      "rank": 2,
+      "nullity": 1,
+      "singular_values": [
+        2.5067553477766635,
+        2.506755347776663,
+        2.7381491073319772e-18
+      ],
+      "i_generator_eigenvalues": [
+        -2.5067553477766635,
+        -4.114035133384871e-18,
+        2.5067553477766635
+      ],
+      "kernel_residual": 2.5987758695909886e-17,
+      "orientation_reversal_projector_error": 0.0
+    },
+    {
+      "axis": [
+        0.11157735365796015,
+        0.566466086790745,
+        0.8164965809277261
+      ],
+      "generator": [
+        [
+          0.0,
+          -2.0467571706819387,
+          1.4199918923968196
+        ],
+        [
+          2.0467571706819387,
+          0.0,
+          -0.27969712797285967
+        ],
+        [
+          -1.4199918923968196,
+          0.27969712797285967,
+          0.0
+        ]
+      ],
+      "antisymmetric_error": 0.0,
+      "rank": 2,
+      "nullity": 1,
+      "singular_values": [
+        2.5067553477766635,
+        2.5067553477766635,
+        7.999227819156282e-17
+      ],
+      "i_generator_eigenvalues": [
+        -2.5067553477766635,
+        1.1102230246251565e-16,
+        2.5067553477766635
+      ],
+      "kernel_residual": 2.1377386394291797e-17,
+      "orientation_reversal_projector_error": 0.0
+    }
+  ],
+  "verdict": {
+    "positive": "The existing oriented SO(3) Wilson generator gives a rank-two antisymmetric coupling on three vortex Majorana modes and leaves one real core mode for either symmetry-related minimum.",
+    "open": "A common action must still derive the restriction of the family Wilson connection to the B-L core, the ambient-to-core map and the 23+pi^-1 stiffness."
+  }
+}

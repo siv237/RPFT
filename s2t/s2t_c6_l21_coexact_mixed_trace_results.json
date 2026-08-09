@@ -1,0 +1,196 @@
+{
+  "status": "L21_coexact_mixed_trace_not_computed_root_obligation_is_explicit_operator_matrix_elements",
+  "numbers": {
+    "S_geo": 137.0363037758784,
+    "pi4_term": 5.466750295392699e-07,
+    "T_coex_RP3": 1.5227161455271536e-05,
+    "base_volume_half_absorption": 5.483439627824377e-07,
+    "N_need": 10.009970022402527,
+    "P02_rank": 10,
+    "N_need_minus_P02": 0.009970022402526979,
+    "P02_absorption": 5.466766918121624e-07,
+    "P02_relative_error_vs_pi4": 3.040696579678917e-06
+  },
+  "first_coexact_shells": [
+    {
+      "n": 1,
+      "rho": 2,
+      "lambda_one_form_unit_s3": 4,
+      "degeneracy_s3_coexact_candidate": 6,
+      "rp3_projection_rule_used_in_prior_audit": "keep odd n only",
+      "degeneracy_rp3_candidate": 6,
+      "kept_on_rp3": true
+    },
+    {
+      "n": 2,
+      "rho": 3,
+      "lambda_one_form_unit_s3": 9,
+      "degeneracy_s3_coexact_candidate": 16,
+      "rp3_projection_rule_used_in_prior_audit": "keep odd n only",
+      "degeneracy_rp3_candidate": 0,
+      "kept_on_rp3": false
+    },
+    {
+      "n": 3,
+      "rho": 4,
+      "lambda_one_form_unit_s3": 16,
+      "degeneracy_s3_coexact_candidate": 30,
+      "rp3_projection_rule_used_in_prior_audit": "keep odd n only",
+      "degeneracy_rp3_candidate": 30,
+      "kept_on_rp3": true
+    },
+    {
+      "n": 4,
+      "rho": 5,
+      "lambda_one_form_unit_s3": 25,
+      "degeneracy_s3_coexact_candidate": 48,
+      "rp3_projection_rule_used_in_prior_audit": "keep odd n only",
+      "degeneracy_rp3_candidate": 0,
+      "kept_on_rp3": false
+    },
+    {
+      "n": 5,
+      "rho": 6,
+      "lambda_one_form_unit_s3": 36,
+      "degeneracy_s3_coexact_candidate": 70,
+      "rp3_projection_rule_used_in_prior_audit": "keep odd n only",
+      "degeneracy_rp3_candidate": 70,
+      "kept_on_rp3": true
+    },
+    {
+      "n": 6,
+      "rho": 7,
+      "lambda_one_form_unit_s3": 49,
+      "degeneracy_s3_coexact_candidate": 96,
+      "rp3_projection_rule_used_in_prior_audit": "keep odd n only",
+      "degeneracy_rp3_candidate": 0,
+      "kept_on_rp3": false
+    },
+    {
+      "n": 7,
+      "rho": 8,
+      "lambda_one_form_unit_s3": 64,
+      "degeneracy_s3_coexact_candidate": 126,
+      "rp3_projection_rule_used_in_prior_audit": "keep odd n only",
+      "degeneracy_rp3_candidate": 126,
+      "kept_on_rp3": true
+    },
+    {
+      "n": 8,
+      "rho": 9,
+      "lambda_one_form_unit_s3": 81,
+      "degeneracy_s3_coexact_candidate": 160,
+      "rp3_projection_rule_used_in_prior_audit": "keep odd n only",
+      "degeneracy_rp3_candidate": 0,
+      "kept_on_rp3": false
+    },
+    {
+      "n": 9,
+      "rho": 10,
+      "lambda_one_form_unit_s3": 100,
+      "degeneracy_s3_coexact_candidate": 198,
+      "rp3_projection_rule_used_in_prior_audit": "keep odd n only",
+      "degeneracy_rp3_candidate": 198,
+      "kept_on_rp3": true
+    }
+  ],
+  "required_operator_formula": {
+    "physical_determinant": "Gamma_EM^phys[g] = 1/2 log det' Delta_1,coex[g] + Gamma_zero/gauge[g] + Gamma_local[g]",
+    "first_variation": "delta_A Delta_1,coex must be written for A in Sym^2(R4) restricted to RP3",
+    "mixed_trace": "C_AA = Tr_coex(Delta_1,coex^{-1} delta_A Delta_1,coex Delta_1,coex^{-1} delta_A Delta_1,coex)",
+    "rank_reduction_needed": "sum_A C_AA must reduce to a universal constant times Tr(P02)=10, not to a full coexact tower-dependent tensor"
+  },
+  "already_supported": [
+    {
+      "claim": "coexact domain removes nonzero scalar residual by definition",
+      "status": "supported_if_physical_quotient_is_primary",
+      "reason": "The scalar tower is not part of the coexact one-form determinant domain."
+    },
+    {
+      "claim": "second variation has the right bosonic sign",
+      "status": "formally_supported",
+      "reason": "For a real bosonic 1/2 log determinant, the trace-square term carries the needed negative sign after expansion."
+    },
+    {
+      "claim": "P02 has natural rank 10",
+      "status": "supported_as_first_ambient_strain_space",
+      "reason": "Sym^2(R4)=1+9 gives the trace plus traceless quadratic deformations."
+    },
+    {
+      "claim": "coexact tower is not zero",
+      "status": "supported_by_prior_positive_tail_audit",
+      "reason": "Positive coexact Bessel contributions cannot disappear by sign cancellation inside a single ordinary coexact sector."
+    }
+  ],
+  "blocking_unknowns": [
+    {
+      "unknown": "explicit_coexact_eigenform_matrix_elements",
+      "needed": "Matrix elements of delta_A Delta_1,coex between coexact vector harmonics on L(2,1)",
+      "current_status": "not_computed",
+      "consequence": "No theorem-level mixed trace yet."
+    },
+    {
+      "unknown": "projection_of_first_ambient_strain_on_coexact_forms",
+      "needed": "Proof that only P02 enters the finite mixed residue and higher shells are outside the II.A insertion",
+      "current_status": "conditional_selection_rule",
+      "consequence": "Rank 10 remains a structural selection, not an operator trace result."
+    },
+    {
+      "unknown": "normalization_of_volume_half_factor",
+      "needed": "Derive pi^2/2 from normalized L(2,1) eigenforms and the real bosonic determinant power",
+      "current_status": "plausible_not_derived_here",
+      "consequence": "Overall C6 coefficient is not yet a theorem."
+    },
+    {
+      "unknown": "small_gap_N_need_minus_10",
+      "needed": "Explain 0.0099700224 as a finite scheme residue or prove it below target precision",
+      "current_status": "open",
+      "consequence": "Even rank 10 gives a near miss, not exact equality."
+    }
+  ],
+  "possible_outcomes": [
+    {
+      "outcome": "operator_trace_equals_P02_rank_with_allowed_scheme_gap",
+      "C6_status": "promote_to_conditional_theorem_candidate",
+      "meaning": "The physical coexact route survives and the remaining gap can be treated as a derived finite normalization issue."
+    },
+    {
+      "outcome": "operator_trace_contains_full_coexact_tower_tensor",
+      "C6_status": "blocked_as_theorem",
+      "meaning": "The rank-10 story is only a compression, because the real coexact trace does not collapse to P02."
+    },
+    {
+      "outcome": "operator_trace_has_wrong_sign_or_volume_power",
+      "C6_status": "failed_route",
+      "meaning": "The physical quotient does not reproduce the pi^-4 subtraction structure."
+    },
+    {
+      "outcome": "operator_trace_requires_new_finite_counterterm",
+      "C6_status": "downgrade_unless_counterterm_is_derived",
+      "meaning": "A new finite term is allowed only if forced by geometry or regularization, not chosen after seeing the target number."
+    }
+  ],
+  "work_plan": [
+    {
+      "step": 1,
+      "task": "choose_coexact_vector_harmonic_basis_on_L21",
+      "deliverable": "Explicit basis and multiplicities for the first shells, with RP3 parity rule fixed."
+    },
+    {
+      "step": 2,
+      "task": "write_metric_first_variation_of_Hodge_Laplacian_on_one_forms",
+      "deliverable": "Formula for delta_A Delta_1 acting on coexact forms before projection back to coexact slice."
+    },
+    {
+      "step": 3,
+      "task": "compute_shell_matrix_elements",
+      "deliverable": "Finite-shell table for Tr(Delta^-1 delta Delta Delta^-1 delta Delta) over A in Sym^2(R4)."
+    },
+    {
+      "step": 4,
+      "task": "test_rank_collapse",
+      "deliverable": "Decision whether the trace collapses to rank 10 or contains the full tower structure."
+    }
+  ],
+  "verdict": "The physical coexact route has reached the real theorem bottleneck: explicit L(2,1) coexact eigenform matrix elements of the first metric variation are missing. Current evidence supports the domain choice, the bosonic sign, and the natural P02 rank, but it does not yet prove that the actual coexact mixed trace collapses to rank 10. Therefore C6 remains a sharply posed calculation, not a theorem. The next step is to compute coexact vector-harmonic matrix elements shell by shell."
+}

@@ -1,0 +1,115 @@
+{
+  "status": "collective_stiffness_recovers_Dnu_with_common_unweighted_metric_relative_weight_derivation_open",
+  "date": "2026-08-03",
+  "collective_tangent": {
+    "definition": "Xi=(P_heavy,e1_dual) in End(R24) direct_sum Omega1(gamma)",
+    "heavy_projector_rank": 23,
+    "Hilbert_Schmidt_norm_squared": 23.0,
+    "dual_cycle_Hodge_norm_squared": 0.3183098861837907,
+    "common_product_norm_squared": 23.31830988618379,
+    "target": 23.31830988618379,
+    "error": 0.0
+  },
+  "auxiliary_collective_action": {
+    "action": "S[a]=(M_*/2)||Xi||^2 a^2 + y_cycle a J_nu",
+    "interpretation": "a is the non-propagating collective amplitude of the Majorana pairing deformation, not an additional fitted particle.",
+    "stiffness_MeV": 2463.7747419797693,
+    "coupling_MeV": 0.004596931373583115,
+    "stationary_amplitude": -1.865808304329496e-06,
+    "effective_action_coefficient": -4.288496365632087e-09,
+    "integrated_out_rule": "Delta S_eff=-(y_cycle^2/(2 M_* ||Xi||^2)) J_nu^2"
+  },
+  "normalization_mechanism": {
+    "normalized_collective_overlap": 0.20708634605394713,
+    "two_vertex_factor": 0.042884754721975143,
+    "effective_inverse_stiffness_per_MeV": 0.00040588126136744497,
+    "consequence": "The rank enters through canonical normalization of one collective deformation. It is neither a heavy mass eigenvalue nor an unnormalized sum over 23 propagators."
+  },
+  "neutrino_scale": {
+    "Qcycle_factor": 3.4599025397735836,
+    "base_Dirac_scale_MeV": 0.0024713604233512093,
+    "heavy_base_scale_MeV": 105.6583755,
+    "D_nu": 23.31830988618379,
+    "mu_nu_eV": 0.008576992731264175,
+    "dm21_eV2": 7.356480431215849e-05,
+    "R_nu": 33.85458095393981,
+    "dm31_eV2": 0.00249050562294671
+  },
+  "field_rescaling_test": {
+    "reference_effective_action": -4.288496365632087e-09,
+    "checks": [
+      {
+        "field_rescaling": 0.25,
+        "effective_action": -4.288496365632087e-09,
+        "difference": 0.0
+      },
+      {
+        "field_rescaling": 0.5,
+        "effective_action": -4.288496365632087e-09,
+        "difference": 0.0
+      },
+      {
+        "field_rescaling": 2.0,
+        "effective_action": -4.288496365632087e-09,
+        "difference": 0.0
+      },
+      {
+        "field_rescaling": 4.0,
+        "effective_action": -4.288496365632087e-09,
+        "difference": 0.0
+      }
+    ],
+    "max_error": 0.0,
+    "interpretation": "Rescaling the auxiliary coordinate changes stiffness and coupling together but leaves the induced operator invariant. The denominator is not a coordinate-normalization artifact."
+  },
+  "relative_metric_weight_gate": {
+    "scenarios": [
+      {
+        "heavy_weight": 1.0,
+        "cycle_weight": 1.0,
+        "D_effective": 23.31830988618379,
+        "mu_nu_eV": 0.008576992731264175
+      },
+      {
+        "heavy_weight": 2.0,
+        "cycle_weight": 1.0,
+        "D_effective": 46.31830988618379,
+        "mu_nu_eV": 0.0043179678811817316
+      },
+      {
+        "heavy_weight": 1.0,
+        "cycle_weight": 2.0,
+        "D_effective": 23.63661977236758,
+        "mu_nu_eV": 0.00846148799300716
+      },
+      {
+        "heavy_weight": 0.5,
+        "cycle_weight": 1.0,
+        "D_effective": 11.81830988618379,
+        "mu_nu_eV": 0.01692297598601432
+      },
+      {
+        "heavy_weight": 1.0,
+        "cycle_weight": 0.5,
+        "D_effective": 23.159154943091895,
+        "mu_nu_eV": 0.008635935762363463
+      }
+    ],
+    "canonical_choice": "heavy_weight=cycle_weight=1",
+    "open_issue": "A general product metric alpha*Tr(delta M^2)+beta*||delta A||^2 contains a relative weight alpha/beta. Exact D_nu follows only if the same spectral trace fixes alpha=beta.",
+    "no_fit_requirement": "derive the common unweighted metric from a single superconnection/spectral-action trace; do not select equal weights from the neutrino data"
+  },
+  "comparison_with_previous_gate": {
+    "previous_no_go": "rank 23 does not become a tree-level mass eigenvalue and does not belong directly in M_H",
+    "resolution": "use the Hilbert-Schmidt plus Hodge norm of the collective pairing deformation, so two normalized vertices supply 1/(23+pi^-1)",
+    "compatibility": "the previous no-go is retained rather than contradicted"
+  },
+  "theory_effect": {
+    "D_nu": "recovered_conditionally_as_collective_stiffness_norm",
+    "rank23": "used_as_Hilbert_Schmidt_norm_of_P_heavy",
+    "inverse_pi": "used_as_Hodge_norm_of_the_dual_cycle_generator",
+    "continuous_fit_parameter_added": false,
+    "remaining_gate": "derive equal relative weights from one S2T superconnection trace"
+  },
+  "verdict": "A non-tautological action-level route to D_nu exists. The canonical collective deformation Xi=(P_heavy,e1_dual) has squared product norm Tr(P_heavy^2)+||e1||^2=23+pi^-1. Integrating out its auxiliary amplitude, or equivalently normalizing its single collective mode, gives the desired inverse denominator while respecting the earlier tree-level no-go. The remaining structural obligation is to derive the equal Hilbert-Schmidt/Hodge weighting from a single spectral or superconnection action rather than assume it."
+}

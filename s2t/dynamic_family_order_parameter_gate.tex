@@ -1,0 +1,186 @@
+\chapter{Динамический family-order parameter и rank-one defect selector}
+
+Постоянная антисимметричная форма на family triplet запрещена остаточной
+группой, но динамическое поле
+\begin{equation}
+ \Sigma\in V=\chi_1\oplus\chi_2\oplus\chi_3
+\end{equation}
+обходит этот no-go. Поскольку \(\chi_1\chi_2\chi_3=1\), взаимодействие
+\begin{equation}
+ S_{\Sigma\chi}
+ =\frac{ig}{2}\int_\gamma
+ \epsilon_{ijk}\Sigma_k\chi_i\chi_j
+\end{equation}
+является \(G_{res}\)-инвариантным. Для \(\Sigma\ne0\) оператор
+\begin{equation}
+ A_{ij}(\Sigma)=g\epsilon_{ijk}\Sigma_k
+\end{equation}
+имеет rank (2) и kernel \(\mathbb R\Sigma\). Поэтому три локальные
+Majorana-моды редуцируются к одной без ручной вставки rank-one projector.
+
+\section{Исправление анализа потенциала}
+
+Для изотропного тестового потенциала
+\begin{equation}
+ V(\Sigma)=m^2|\Sigma|^2+\frac u4|\Sigma|^4
+ +v\Sigma_1\Sigma_2\Sigma_3,
+ \qquad u>0,
+\end{equation}
+диагональные stationary points имеют
+\begin{equation}
+ \Sigma=s(\varepsilon_1,\varepsilon_2,\varepsilon_3),
+ \qquad
+ q=\varepsilon_1\varepsilon_2\varepsilon_3,
+\end{equation}
+где
+\begin{equation}
+ 3us^2+qvs+2m^2=0.
+\end{equation}
+Следовательно, радиус не равен просто \(2|m^2|/u\) при \(v\ne0\).
+Угловой Hessian положителен для \(qv<0\), поэтому знак \(v\) оставляет
+четыре, а не восемь, энергетически предпочтительных ориентаций.
+
+Более того, отрицательное bare \(m^2\) не является необходимым условием.
+Для предпочтительной ветви первый порядок возникает при
+\begin{equation}
+ m^2=\frac{v^2}{27u},
+\end{equation}
+а ненулевой global minimum существует уже при
+\begin{equation}
+ m^2<\frac{v^2}{27u}.
+\end{equation}
+Таким образом, symmetry-allowed cubic term способен вызвать конденсацию даже
+при положительной квадратичной массе. Главный динамический gate состоит не
+только в доказательстве \(m^2<0\), а в выводе полного отношения
+\((m^2,u,v)\) из parent action.
+
+\section{Факторный quadratic selector}
+
+Остаточная \(\mathbb Z_2\times\mathbb Z_2\) симметрия сама по себе разрешает
+три независимых инварианта \(\Sigma_i^2\). Поэтому полностью изотропная
+квадратичная масса является дополнительным предположением. Уже существующий
+factor Laplacian даёт канонический кандидат
+\begin{equation}
+ M_\Sigma^2=m_0^2I+\kappa L(w_3,w_1),
+\end{equation}
+со спектром
+\begin{equation}
+ m_0^2+2\kappa w_3,
+ \quad
+ m_0^2+2\kappa w_1,
+ \quad
+ m_0^2+2\kappa(w_3+w_1).
+\end{equation}
+При \(w_1<w_3\) и \(\kappa>0\) первой теряет устойчивость уникальная
+\(S^1\)-характерная компонента. Это геометрический mass selector, а не
+ручной выбор оси. Открытым остаётся вывод коэффициента \(\kappa\) и его знака
+из того же действия, которое создаёт defect.
+
+\section{Вклад core Majorana pair}
+
+Две моды, спаренные оператором \(A(\Sigma)\), имеют gap
+\(g|\Sigma|\). Если разрешено минимизировать по обеим parity-ветвям
+двухмодового core Hamiltonian, его zero-temperature ground-state energy
+содержит
+\begin{equation}
+ \Delta E_f=-\frac12|g\Sigma|,
+\end{equation}
+а при конечном обратном температурном размере \(\beta\)
+\begin{equation}
+ \Delta F_f
+ =-\frac1\beta\log\left[2\cosh
+ \left(\frac{\beta g|\Sigma|}{2}\right)\right]
+ =\mathrm{const}-\frac{\beta g^2}{8}|\Sigma|^2+O(|\Sigma|^4).
+\end{equation}
+Знак квадратичного вклада благоприятствует конденсации. Однако cusp
+\(-|g\Sigma|/2\) не является автоматическим свойством полного defect.
+При фиксированной глобальной fermion parity система может быть обязана
+оставаться на одной ветви \(\pm g|\Sigma|/2\), а нечётное число локальных
+Majorana operators требует bulk или удалённого parity completion. Кроме того,
+при конечном \(\beta\) конденсация следует только после проверки знака полной
+renormalized quadratic mass. Поэтому фермионный вклад создаёт реальный
+механизм неустойчивости, но ещё не доказывает \(\Sigma\ne0\) при произвольном
+bare \(m^2\).
+
+Этот детерминант зависит только от \(|\Sigma|\) и не генерирует
+\(\Sigma_1\Sigma_2\Sigma_3\); ориентационный cubic coefficient должен прийти
+из Wilson/factor или другого bosonic boundary sector.
+
+\section{Bulk--core compatibility gate}
+
+Инвариант \(\epsilon_{ijk}\Sigma_k\chi_i\chi_j\) корректен как взаимодействие
+уже спроецированных вещественных core Majorana operators. Его нельзя без
+дополнительного вывода заменить bulk Yukawa-членом того же family-типа.
+Для четырёхмерных Weyl/Majorana fields лоренц-скалярный bilinear
+\(N_iN_j\) симметричен по family indices, поэтому contraction с
+\(\epsilon_{ijk}\Sigma_k\) тождественно исчезает. Следовательно parent action
+должен породить антисимметричный оператор либо после контролируемой
+zero-mode projection, либо через family connection, derivative coupling или
+иной bulk operator, чья core restriction равна \(A(\Sigma)\).
+
+Это устраняет потенциальную circularity: локальные \(\chi_i\) нельзя считать
+независимым фундаментальным входом до вывода самого defect spectrum.
+
+\section{Точная граница ориентационной устойчивости}
+
+Пусть эффективный радиальный cusp допустим и
+\begin{equation}
+ V_{\mathrm{eff}}=
+ \sum_{i=1}^{3}\mu_i\Sigma_i^2+
+ \frac u4|\Sigma|^4+v\Sigma_1\Sigma_2\Sigma_3-h|\Sigma|,
+ \qquad h=\frac{|g|}{2}.
+\end{equation}
+Для осевого stationary point \(\Sigma=(0,s,0)\), \(s>0\), имеем
+\begin{equation}
+ 2\mu_2s+us^3-h=0.
+\end{equation}
+Поперечный Hessian равен
+\begin{equation}
+ H_\perp=
+ \begin{pmatrix}
+ 2(\mu_1-\mu_2) & vs\\
+ vs & 2(\mu_3-\mu_2)
+ \end{pmatrix}.
+\end{equation}
+Поэтому геометрически выбранная \(S^1\)-ось является локальным минимумом
+точно при
+\begin{equation}
+ \mu_1>\mu_2,
+ \qquad
+ \mu_3>\mu_2,
+ \qquad
+ 4(\mu_1-\mu_2)(\mu_3-\mu_2)>v^2s^2.
+\end{equation}
+Если последнее неравенство нарушено, cubic term уводит минимум в
+многокомпонентную ветвь. Тем самым выражение ``анизотропия доминирует''
+заменяется проверяемым условием.
+
+\section{Статус rank-one утверждения}
+
+В трёхмерном projected core subspace при любом \(\Sigma\ne0\) утверждение
+точно: \(\operatorname{rank}A=2\) и \(\dim\ker A=1\). Для полного BdG operator
+этого недостаточно. Нужен gap/Feshbach--Schur аргумент, исключающий
+дополнительные bulk и core zero pairs и доказывающий, что coupling к высшим
+модам не закрывает spectral gap. До такого доказательства rank-one является
+exact projected result, но conditional full-spectrum result.
+
+\begin{protocol}[Следующий parent-action gate]
+Нужно вывести из одного действия \(m_0^2\), \(\kappa\), \(u\), разрешённые
+анизотропные quartic coefficients, \(v\) и \(g\); получить антисимметричную
+core coupling из допустимого bulk operator; зафиксировать global parity
+completion; проверить поперечный Hessian; затем доказать full BdG gap.
+Положительный исход допускает два механизма конденсации: отрицательный
+fermionic mass shift или cubic-driven first-order transition. После
+доказательства \(\Sigma\ne0\) rank-one kernel автоматически следует только
+в projected core subspace.
+\end{protocol}
+
+\begin{nogocriterion}[Запрет ручного order parameter]
+Если \(\Sigma\), знак \(\kappa\), cubic coefficient \(v\) или coupling
+\(g\) назначаются после просмотра flavour/neutrino data, конструкция остаётся
+новой EFT-гипотезой. Алгебраический selector при этом корректен, но физическая
+ветвь не замкнута.
+\end{nogocriterion}
+
+Машинный аудит сохранён в
+\texttt{s2t\_dynamic\_family\_order\_parameter\_results.json}.

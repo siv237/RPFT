@@ -1,0 +1,200 @@
+{
+  "status": "retrospective_common_base_compression_not_pi_uniqueness",
+  "scope": {
+    "claim_count": 11,
+    "base_interval": [
+      2.0,
+      4.0
+    ],
+    "metric": "RMS natural-log relative error",
+    "warning": "Targets and formula shapes were assembled retrospectively; this is not a blind test."
+  },
+  "best_grid_base": 3.1642200000000003,
+  "best_grid_score": 0.015879651534315985,
+  "pi_score": 0.018278930328733373,
+  "pi_low_error_percentile": 2.2699886500567494,
+  "named_base_scores": {
+    "pi": {
+      "base": 3.141592653589793,
+      "score": 0.018278930328733373
+    },
+    "sqrt_10": {
+      "base": 3.1622776601683795,
+      "score": 0.015898454086480905
+    },
+    "22_over_7": {
+      "base": 3.142857142857143,
+      "score": 0.018032882464761632
+    },
+    "three": {
+      "base": 3.0,
+      "score": 0.06906295297458433
+    },
+    "e": {
+      "base": 2.718281828459045,
+      "score": 0.19219746127132947
+    }
+  },
+  "claims_at_pi": [
+    {
+      "name": "alpha_s",
+      "target": 0.1181,
+      "prediction": 0.11809999173983109,
+      "log_error": -6.994216084423687e-08
+    },
+    {
+      "name": "sin2_theta_w",
+      "target": 0.2312,
+      "prediction": 0.23122153045768992,
+      "log_error": 9.312048115138e-05
+    },
+    {
+      "name": "bottom_over_proton",
+      "target": 4.454997713930502,
+      "prediction": 4.474925986923126,
+      "log_error": 0.0044632645792606705
+    },
+    {
+      "name": "strange_over_proton",
+      "target": 0.09954468576103083,
+      "prediction": 0.09801098723029525,
+      "log_error": -0.015527059492809877
+    },
+    {
+      "name": "down_over_electron",
+      "target": 9.138962027221387,
+      "prediction": 8.869604401089358,
+      "log_error": -0.0299166195806833
+    },
+    {
+      "name": "up_over_electron",
+      "target": 4.227014556487837,
+      "prediction": 4.141592653589793,
+      "log_error": -0.02041555247684536
+    },
+    {
+      "name": "tau_over_mu",
+      "target": 16.81702933242618,
+      "prediction": 16.82432127664847,
+      "log_error": 0.00043351079575986915
+    },
+    {
+      "name": "V_cb",
+      "target": 0.041,
+      "prediction": 0.04222671588023977,
+      "log_error": 0.029481031759288134
+    },
+    {
+      "name": "Omega_Lambda",
+      "target": 0.685,
+      "prediction": 0.6816901138162093,
+      "log_error": -0.004843662248594185
+    },
+    {
+      "name": "Omega_dm",
+      "target": 0.265,
+      "prediction": 0.2676492943626218,
+      "log_error": 0.009947694431317154
+    },
+    {
+      "name": "Omega_b",
+      "target": 0.049,
+      "prediction": 0.05066059182116889,
+      "log_error": 0.033328028612764855
+    }
+  ],
+  "leave_one_out": [
+    {
+      "removed": "alpha_s",
+      "best_base": 3.16465,
+      "best_score": 0.01660052516879048,
+      "pi_score": 0.01917110386384854,
+      "pi_low_error_percentile": 2.317442063948401
+    },
+    {
+      "removed": "sin2_theta_w",
+      "best_base": 3.1643499999999998,
+      "best_score": 0.016637599899154334,
+      "pi_score": 0.019171081247977555,
+      "pi_low_error_percentile": 2.2849428764280892
+    },
+    {
+      "removed": "bottom_over_proton",
+      "best_base": 3.16545,
+      "best_score": 0.016373161329673133,
+      "pi_score": 0.019119078175699508,
+      "pi_low_error_percentile": 2.3974400639984
+    },
+    {
+      "removed": "strange_over_proton",
+      "best_base": 3.17735,
+      "best_score": 0.012935461457961631,
+      "pi_score": 0.01853165577355763,
+      "pi_low_error_percentile": 3.594910127246819
+    },
+    {
+      "removed": "down_over_electron",
+      "best_base": 3.1564,
+      "best_score": 0.015818693217176435,
+      "pi_score": 0.016674255924790923,
+      "pi_low_error_percentile": 1.484962875928102
+    },
+    {
+      "removed": "up_over_electron",
+      "best_base": 3.1621,
+      "best_score": 0.015944017603120274,
+      "pi_score": 0.018051364077694376,
+      "pi_low_error_percentile": 2.0574485637859055
+    },
+    {
+      "removed": "tau_over_mu",
+      "best_base": 3.1679500000000003,
+      "best_score": 0.016184791841784705,
+      "pi_score": 0.01917061371469243,
+      "pi_low_error_percentile": 2.6499337516562087
+    },
+    {
+      "removed": "V_cb",
+      "best_base": 3.1641500000000002,
+      "best_score": 0.013821408600112012,
+      "pi_score": 0.01675165961926585,
+      "pi_low_error_percentile": 2.2649433764155895
+    },
+    {
+      "removed": "Omega_Lambda",
+      "best_base": 3.1641000000000004,
+      "best_score": 0.01664778147325452,
+      "pi_score": 0.019109817292719256,
+      "pi_low_error_percentile": 2.2574435639109023
+    },
+    {
+      "removed": "Omega_dm",
+      "best_base": 3.1635999999999997,
+      "best_score": 0.016601557327292238,
+      "pi_score": 0.018911254873991618,
+      "pi_low_error_percentile": 2.207444813879653
+    },
+    {
+      "removed": "Omega_b",
+      "best_base": 3.1553500000000003,
+      "best_score": 0.015188935956425832,
+      "pi_score": 0.016014227244473277,
+      "pi_low_error_percentile": 1.377465563360916
+    }
+  ],
+  "preregistration": {
+    "frozen_formula_count": 11,
+    "frozen_score": "RMS natural-log relative error with equal claim weights",
+    "frozen_base_interval": [
+      2.0,
+      4.0
+    ],
+    "forbidden_after_freeze": [
+      "changing coefficients",
+      "changing formula-to-observable assignments",
+      "dropping failed claims",
+      "adding a new base-dependent correction after seeing a target"
+    ],
+    "blocking_condition": "A prospective test still needs observable assignments derived independently of their measured values."
+  }
+}

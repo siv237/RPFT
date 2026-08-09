@@ -1,0 +1,126 @@
+{
+  "status": "external_RP3xS1_winding_objects_separated_internal_T_reproduced",
+  "date": "2026-08-03",
+  "conventions": {
+    "circle_length": "2*pi*R1",
+    "radius_ratio": "R1/R3=1",
+    "untwisted_RP3_coexact_spectrum": "rho=2m, multiplicity=8m^2-2, m>=1",
+    "local_subtraction": "zero-winding/Weyl term removed"
+  },
+  "derived_objects": {
+    "positive_Bessel_sum_T": "sum d*rho*sum_{q>=1} K1(2*pi*q*rho)/q",
+    "casimir_energy_nonlocal": "E_nonlocal=-T/pi for E(s)=1/2 sum_Z (m^2+rho^2)^(1/2-s)",
+    "logdet_winding": "2 sum d*log(1-exp(-2*pi*rho))",
+    "bosonic_effective_action_winding": "Gamma_winding=1/2 logdet_winding"
+  },
+  "numbers": {
+    "internal_T_coex_RP3": 1.5227161455271536e-05,
+    "independent_T_coex_RP3": 1.5227161455271526e-05,
+    "T_absolute_difference": 1.0385980120708467e-20,
+    "casimir_energy_nonlocal": -4.846956029729683e-06,
+    "logdet_winding": -4.184891094335807e-05,
+    "bosonic_Gamma_winding": -2.0924455471679034e-05,
+    "abs_Gamma_over_T": 1.3741533859178428,
+    "first_mode_fraction_T": 0.9999756862947792,
+    "first_mode_fraction_logdet": 0.9999825634807749
+  },
+  "controls": {
+    "first_mode_product_identity_relative_error": 2.844516171870247e-61,
+    "T_reproduced_within_1e_18": true,
+    "Bessel_and_logdet_are_not_same_object": true
+  },
+  "first_modes": [
+    {
+      "m": 1,
+      "n": 1,
+      "rho": 2.0,
+      "multiplicity": 6,
+      "q_used": 10,
+      "positive_Bessel_T_contribution": 1.5226791226556553e-05,
+      "logdet_winding_contribution": -4.184818124401785e-05
+    },
+    {
+      "m": 2,
+      "n": 3,
+      "rho": 4.0,
+      "multiplicity": 30,
+      "q_used": 5,
+      "positive_Bessel_T_contribution": 3.7022504304163085e-10,
+      "logdet_winding_contribution": -7.296934025689957e-10
+    },
+    {
+      "m": 3,
+      "n": 5,
+      "rho": 6.0,
+      "multiplicity": 70,
+      "q_used": 4,
+      "positive_Bessel_T_contribution": 3.671904869770363e-15,
+      "logdet_winding_contribution": -5.937611656222508e-15
+    },
+    {
+      "m": 4,
+      "n": 7,
+      "rho": 8.0,
+      "multiplicity": 126,
+      "q_used": 3,
+      "positive_Bessel_T_contribution": 2.6550469486869165e-20,
+      "logdet_winding_contribution": -3.7271672322237e-20
+    },
+    {
+      "m": 5,
+      "n": 9,
+      "rho": 10.0,
+      "multiplicity": 198,
+      "q_used": 2,
+      "positive_Bessel_T_contribution": 1.6243506143738446e-25,
+      "logdet_winding_contribution": -2.0425284247669647e-25
+    },
+    {
+      "m": 6,
+      "n": 11,
+      "rho": 12.0,
+      "multiplicity": 286,
+      "q_used": 2,
+      "positive_Bessel_T_contribution": 8.954472588396427e-31,
+      "logdet_winding_contribution": -1.0288771840317642e-30
+    },
+    {
+      "m": 7,
+      "n": 13,
+      "rho": 14.0,
+      "multiplicity": 390,
+      "q_used": 2,
+      "positive_Bessel_T_contribution": 4.596229784071917e-36,
+      "logdet_winding_contribution": -4.8927913407422845e-36
+    },
+    {
+      "m": 8,
+      "n": 15,
+      "rho": 16.0,
+      "multiplicity": 510,
+      "q_used": 2,
+      "positive_Bessel_T_contribution": 2.2395917731377266e-41,
+      "logdet_winding_contribution": -2.2312942631174914e-41
+    }
+  ],
+  "interpretation": {
+    "positive_result": "The internal T_coex value is numerically correct for the declared positive K1 Bessel sum.",
+    "normalization_correction": "For the Epstein Casimir-energy continuation the physical nonlocal contribution is -T/pi, not T itself.",
+    "determinant_distinction": "The finite winding part of log det(-d_tau^2+rho^2) is instead 2 log(1-exp(-2*pi*rho)) per mode. Its bosonic half is about 1.374 times T in magnitude.",
+    "theory_effect": "The old Bessel number remains a valid Casimir-energy diagnostic, but it cannot be called the RP3xS1 determinant residue without an additional derivation connecting the energy functional to S_vac."
+  },
+  "theory_status": {
+    "coexact_nonlocal_tail": "independently_confirmed_nonzero",
+    "internal_T_numeric_value": "confirmed",
+    "T_as_direct_logdet_residue": "not_confirmed_objects_differ",
+    "pi4_absorption_normalization": "further_weakened_requires_new_bridge",
+    "S_vac": "remains_conditional"
+  },
+  "next_steps": [
+    "state whether S_vac is defined from Casimir energy or from the Euclidean one-loop effective action",
+    "derive the exact dimensional prefactor and sign from that chosen functional",
+    "include the scalar half-determinant winding tower in the same convention",
+    "only then compare the full Maxwell-FP result with the pi^-4 term"
+  ],
+  "verdict": "The internal value T_coex^RP3=1.5227161455e-5 is independently reproduced with the untwisted spectrum and high-precision Bessel functions. However, T is the positive kernel used in a Casimir-energy Epstein continuation. The corresponding nonlocal energy is -T/pi. The finite winding part of the Euclidean log determinant is a different quantity, 2 sum d log(1-exp(-2*pi*rho)), whose bosonic half equals -2.0924455472e-5. Therefore the nonzero coexact obstruction is robust, but the prior identification of T with a determinant residue requires a new functional and normalization bridge and cannot support exact pi^-4."
+}

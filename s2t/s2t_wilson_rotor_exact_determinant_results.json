@@ -1,0 +1,46 @@
+{
+  "status": "exact_weight_determinant_rejects_the_2Vhalf_plus_3Vthreehalf_completion_and_leaves_a_trace_charge_mismatch",
+  "date": "2026-08-06",
+  "circle_operator": {
+    "operator": "-D_theta^2 on S1",
+    "zeta_determinant_per_real_rotation_plane": "2-2*cos(q*theta)",
+    "fundamental_factor": "2 - 2*c",
+    "charge_three_factor": "2 - 2*cos(3*acos(c))",
+    "ratio_lambda3_over_lambda1": "(cos(3*acos(c)) - 1)/(c - 1)"
+  },
+  "reducible_candidate": {
+    "representation": "2 V_(1/2) plus 3 V_(3/2)",
+    "positive_charge_plane_multiplicities": {
+      "q=1": 5,
+      "q=3": 3
+    },
+    "normalized_log_determinant": "5*log(2 - 2*c)/3 + log(2 - 2*cos(3*acos(c)))",
+    "target_log_term": "8*log(2 - 2*c)/3",
+    "difference": "-log(1 - c) + log(1 - cos(3*acos(c)))",
+    "difference_at_target": -0.9874900469495557,
+    "derivative_at_target": -6.553762974406593,
+    "exact_match": false,
+    "verdict": "The average Casimir matches only the quadratic expansion. The q=3 weights add the nonconstant term log(lambda_3/lambda_1), so the full determinant is wrong."
+  },
+  "fundamental_only_candidate": {
+    "representation": "four complex SU2 doublets, real dimension 16",
+    "real_charge_planes": 8,
+    "normalized_log_determinant": "8*log(2 - 2*c)/3",
+    "exact_log_match": true,
+    "fixed_charge_gate": {
+      "required_mean_q_squared": "6",
+      "axial_q_squared": 1,
+      "inverse_coefficient_with_axial_charge": "4/3",
+      "required_inverse_coefficient": "8",
+      "axial_shortfall_factor": "6",
+      "casimir_substitution_is_admissible": false,
+      "reason": "The circle determinant and the fixed-charge Routhian use the same Cartan generator. Replacing its axial charge q^2=1 by the full SU2 Casimir C2=3 mixes inequivalent normalizations."
+    },
+    "verdict": "The fundamental-only spectrum gives the exact logarithmic function, but with the same normalized trace its canonical fixed-charge term is too small."
+  },
+  "scientific_verdict": {
+    "positive": "The exact determinant audit identifies the unique simple weight pattern needed for the logarithm: eight equal unit-charge rotation planes.",
+    "negative": "The previously proposed reducible representation fails beyond the Casimir approximation. Four fundamental doublets repair the determinant but require mean axial charge norm six for the inverse term, while the canonical axial norm is one. The full Casimir cannot replace this axial charge.",
+    "next_gate": "Separate the unit holonomy weight that fixes the determinant from the conserved rotor momentum that fixes the Routhian, and test all quantized momentum sectors."
+  }
+}

@@ -1,0 +1,137 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2.3cm}
+\setlength{\emergencystretch}{2em}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{nogocriterion}{Критерий провала}
+
+\title{Аффинное меню spin-состояний и поколенческий триплет}
+\author{}
+\date{4 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Смена принципа}
+
+Геометрические автоморфизмы \(K=\mathbb{RP}^3\times S^1\) не делают три nonreference spin-сектора эквивалентными. Но исходная сумасбродная гипотеза утверждает, что \(K\) следует читать не буквально как пространство, а как меню состояний. Тогда естественной симметрией является не только группа диффеоморфизмов носителя, а полная группа аффинных relabelings spin-torsor.
+
+Множество spin-структур является аффинной плоскостью
+\[
+\mathcal S_{spin}\cong\mathbb F_2^2
+\]
+из четырёх точек. Её полная affine group равна
+\[
+AGL(2,2)=\mathbb F_2^2\rtimes GL(2,2),
+\qquad
+|AGL(2,2)|=4\cdot6=24.
+\]
+Она действует верно на четырёх точках и изоморфна \(S_4\).
+
+\section{Каноническое разложение \(1+3\)}
+
+Рассмотрим комплексное пространство амплитуд четырёх menu-состояний:
+\[
+\mathcal H_{menu}=\mathbb C^4.
+\]
+Permutation representation \(S_4\) имеет каноническое разложение
+\[
+\mathbb C^4
+=\mathbb C\mathbf 1
+\oplus
+\left\{v\in\mathbb C^4:\sum_{i=1}^4v_i=0\right\}.
+\]
+Первое слагаемое имеет размерность один, второе --- три. Соответствующие проекторы равны
+\[
+P_1=\frac14J,
+\qquad
+P_3=I-\frac14J,
+\]
+где \(J\) --- матрица из единиц.
+
+\begin{proposition}[Канонический поколенческий carrier]
+Полная affine symmetry четырёх spin-menu состояний единственным образом выделяет uniform singlet и трёхмерный sum-zero sector. Выбор одной конкретной spin-структуры не требуется.
+\end{proposition}
+
+\section{Уникальность invariant transition algebra}
+
+Коммутант permutation representation имеет размерность два:
+\[
+\operatorname{End}_{S_4}(\mathbb C^4)
+=\operatorname{span}\{I,J\}.
+\]
+Поэтому всякий fully affine-invariant Hermitian operator имеет вид
+\[
+T=aI+bJ
+\]
+и сохраняет то же разложение \(1+3\).
+
+Два особенно простых оператора имеют ясный смысл. Laplacian полного графа
+\[
+L=4I-J
+\]
+имеет spectrum
+\[
+\operatorname{Spec}L=\{0,4,4,4\}.
+\]
+Uniform mode является нулевой, а triplet --- вырожденным excited sector. Наоборот, rank-one operator
+\[
+M=J
+\]
+имеет spectrum
+\[
+\operatorname{Spec}M=\{0,0,0,4\}
+\]
+и делает тяжёлым только uniform singlet, оставляя canonical rank-three kernel.
+
+\section{Соединение с \(SU(5)\)}
+
+Предыдущий gate построил одно anomaly-free поколение как
+\[
+\mathbf{10}\oplus\overline{\mathbf5}.
+\]
+Теперь внутреннее matter space можно записать как
+\[
+\mathcal H_{matter}
+=\operatorname{im}P_3
+\otimes
+\left(\mathbf{10}\oplus\overline{\mathbf5}\right).
+\]
+Его размерность равна
+\[
+3\cdot(10+5)=45,
+\]
+то есть оно содержит три одинаковых chiral поколения. Поскольку anomaly одного package равна нулю, anomaly трёх копий также равна нулю.
+
+\begin{proposition}[Три поколения без выбора трёх точек]
+Если полная affine group spin-menu является физической symmetry переходов, то tensor product её canonical triplet с одним \(SU(5)\) chiral package даёт три эквивалентных anomaly-free поколения.
+\end{proposition}
+
+\section{Что здесь действительно новое}
+
+Механизм не использует формулу \(4-1=3\) и не выбирает одну spin-структуру как лишнюю. Поколения являются не тремя отдельными точками меню, а тремя независимыми sum-zero superpositions четырёх spin-состояний. Uniform superposition играет роль singlet/reference mode.
+
+Это устраняет прежнюю проблему affine torsor: reference определяется как invariant vector, а не как выбранный origin.
+
+\section{Новый no-go}
+
+Полная affine symmetry не следует из диффеоморфизмов исходного \(K\). Она является новым принципом именно menu-интерпретации. Кроме того, точная \(S_4\)-симметрия делает три поколения вырожденными и не объясняет mass hierarchy или mixing.
+
+\begin{nogocriterion}[Провал завершённой family theory]
+Разложение \(1+3\) выводит число и эквивалентность поколений, но не их разные массы. Физическая версия должна вывести symmetry-breaking operator из уже существующего различия между torsion- и circle-направлениями, не вводя произвольную Yukawa matrix.
+\end{nogocriterion}
+
+\section{Следующий gate}
+
+Геометрическая subgroup, сохраняющая integral decomposition \(\mathbb Z_2\times\mathbb Z\), уже разбивает три labels по схеме \(1+2\). Следующий тест должен спроецировать этот единственный доступный breaking operator на canonical triplet \(\operatorname{im}P_3\) и вычислить его spectrum.
+
+Если получится фиксированный singlet--doublet family pattern, menu-модель впервые даст не только число поколений, но и форму первого mass splitting. Если же projected operator содержит свободные коэффициенты или не различает family modes, ветвь закроется на уровне красивой групповой конструкции.
+
+\end{document}

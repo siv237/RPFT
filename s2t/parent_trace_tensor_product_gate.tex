@@ -1,0 +1,136 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2.3cm}
+\setlength{\emergencystretch}{2em}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{nogocriterion}{Критерий провала}
+
+\title{Единый parent trace для gauge- и family-секторов}
+\author{}
+\date{4 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Общий carrier}
+
+Объединим affine spin-menu и одно anomaly-free \(SU(5)\)-поколение:
+\[
+\mathcal H_{parent}
+=\mathbb C^4_{menu}
+\otimes
+\left(\mathbf{10}\oplus\overline{\mathbf5}\right).
+\]
+Его размерность равна
+\[
+4\cdot15=60,
+\]
+а полная operator algebra есть
+\[
+\mathcal A_{parent}=M_{60}(\mathbb C).
+\]
+Полная матричная algebra имеет единственный normalized trace
+\[
+\tau_{60}(X)=\frac1{60}\operatorname{Tr}_{60}X.
+\]
+Следовательно, central relative weights отсутствуют.
+
+\section{Физический family sector}
+
+Canonical affine-triplet projector равен
+\[
+P_{phys}=P_3\otimes I_{15},
+\qquad
+\operatorname{rank}P_{phys}=3\cdot15=45.
+\]
+Projected algebra изоморфна \(M_{45}(\mathbb C)\) и снова имеет единственный normalized conditional trace
+\[
+\tau_{phys}(X)
+=\frac1{45}\operatorname{Tr}(P_{phys}XP_{phys}).
+\]
+
+\section{Family operator в том же trace}
+
+Геометрический odd projector задаёт
+\[
+P_{heavy}=P_-\otimes I_{15}.
+\]
+Поскольку \(P_-\leq P_3\), имеем
+\[
+P_{phys}P_{heavy}=P_{heavy}.
+\]
+Его ранг равен
+\[
+\operatorname{rank}P_{heavy}=1\cdot15=15.
+\]
+Поэтому один parent trace фиксирует conditional family weight
+\[
+\tau_{phys}(P_{heavy})
+=\frac{15}{45}
+=\frac13.
+\]
+
+Это число не является коэффициентом старой \(\tau\)-формулы. Оно имеет другой и строгий смысл: доля heavy-family channel внутри трёхпоколенческого matter sector.
+
+\section{Gauge trace}
+
+Для одного \(\mathbf{10}\oplus\overline{\mathbf5}\) package нормированные subgroup indices равны
+\[
+I_{SU(3)}=I_{SU(2)}=I_{U(1)}=2.
+\]
+Family-triplet projector умножает каждый loop trace на один и тот же rank:
+\[
+I_{SU(3)}^{(3fam)}
+=I_{SU(2)}^{(3fam)}
+=I_{U(1)}^{(3fam)}
+=3\cdot2=6.
+\]
+
+\begin{proposition}[Совместимость gauge и family reductions]
+Rank-one family operator и равные \(SU(5)\)-нормированные gauge indices получаются из одного matrix trace на \(M_{60}(\mathbb C)\) и его единственного conditional trace на physical rank-45 sector. Независимый relative trace coefficient не требуется.
+\end{proposition}
+
+\section{Что именно закрыто}
+
+Вторая сумасбродная гипотеза теперь имеет конкретное положительное содержание. Разные эффективные меры действительно могут быть тенями одного parent state:
+\begin{itemize}
+    \item gauge loop суммирует все три family copies;
+    \item family mass operator использует spectrum rank-one projector;
+    \item нормированная particle state имеет единичную норму;
+    \item все эти операции совместимы с одним trace, а не выбираются независимо.
+\end{itemize}
+
+\section{Что не закрыто}
+
+Trace фиксирует относительные multiplicities, но не задаёт action coefficients. В частности, он не определяет:
+\begin{itemize}
+    \item масштаб heavy-family eigenvalue;
+    \item Higgs representation и vacuum expectation;
+    \item коэффициент geometric shear term относительно gauge kinetic term;
+    \item массы двух light families и mixing.
+\end{itemize}
+
+\begin{nogocriterion}[Action-level gate]
+Алгебраическое единство trace не считается единством физического действия, пока наиболее общий \(SU(5)\times AGL(2,2)\)-инвариантный action не фиксирует относительный коэффициент family-breaking term. Если этот коэффициент свободен, гипотеза остаётся правильным bookkeeping, но не предсказательной динамикой.
+\end{nogocriterion}
+
+\section{Вердикт}
+
+Вторая идея оказалась содержательнее простой фразы о разных мерах. В minimal tensor-product model parent trace действительно единственен и одновременно поддерживает:
+\[
+\text{три anomaly-free поколения},
+\qquad
+\text{равные gauge indices},
+\qquad
+\text{rank-one family channel}.
+\]
+Следующий решающий вопрос снова относится к действию, а не к числам: фиксирует ли symmetry относительную жёсткость gauge- и family-направлений или оставляет новую непрерывную ручку.
+
+\end{document}

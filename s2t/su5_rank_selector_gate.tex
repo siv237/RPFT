@@ -1,0 +1,128 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{geometry}
+\usepackage{microtype}
+\geometry{margin=2.3cm}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{protocol}{Протокол}
+\newtheorem{nogocriterion}{Критерий провала}
+
+\title{SU(5)-селектор рангов для $\alpha_s$ и угла Вайнберга}
+\author{}
+\date{4 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Каноническое разложение пространства размерности 24}
+
+Пусть
+\begin{equation}
+ P=\operatorname{diag}(1,1,1,-1,-1)
+\end{equation}
+задаёт $\mathbb Z_2$-инволюцию в $SU(5)$, а гиперзаряд нормирован как
+\begin{equation}
+ Y=\operatorname{diag}\left(-\frac13,-\frac13,-\frac13,
+ \frac12,\frac12\right).
+\end{equation}
+Тогда комплексированное присоединённое представление раскладывается в
+\begin{equation}
+ \mathbf{24}
+ =({\bf8},{\bf1})_0
+ \oplus({\bf1},{\bf3})_0
+ \oplus({\bf1},{\bf1})_0
+ \oplus({\bf3},{\bf2})_{-5/6}
+ \oplus(\overline{\bf3},{\bf2})_{+5/6}.
+\end{equation}
+Размерности блоков равны
+\begin{equation}
+ 24=8+3+1+6+6.
+\end{equation}
+Первые три блока имеют чётность $P=+1$, два смешанных блока --- $P=-1$;
+получается точное разбиение $12+12$.
+
+\section{Сильная связь}
+
+Для атомарного проектора $Q$ введём минимальный функционал
+\begin{equation}
+ \alpha_s(Q)
+ =\frac{1}{\operatorname{rank}Q+pi^2
+ \operatorname{rank}Q/24}.
+\end{equation}
+На рангах $8,3,1,6,6$ только смешанная орбита $X/\overline X$ попадает в
+округлённое атласом значение $0.1181$:
+\begin{equation}
+ \alpha_s(X)
+ =\frac{1}{6+\pi^2/4}
+ =0.1180999917\ldots
+\end{equation}
+Здесь число $6$ и коэффициент $1/4$ не выбираются независимо: они являются
+обычным и нормированным следами одного rank-$6$ проектора.
+
+\section{Угол Вайнберга}
+
+Обозначим ранги цветового, слабого, гиперзарядного и смешанного блоков через
+$r_C,r_W,r_Y,r_X$. Атласная формула допускает rank-запись
+\begin{equation}
+ \sin^2\theta_W
+ =\frac{r_C-r_W(r_X/24)\pi^{-1}}
+ {(24-r_W)+(r_W+r_Y)\pi}.
+\end{equation}
+Каноническое назначение
+\begin{equation}
+ (r_C,r_W,r_Y,r_X)=(8,3,1,6)
+\end{equation}
+даёт
+\begin{equation}
+ \sin^2\theta_W
+ =\frac{8-3/(4\pi)}{21+4\pi}
+ =0.2312215305\ldots
+\end{equation}
+
+Проверены все $120$ назначения четырёх различных ролей пяти блокам. Физическое
+назначение занимает первое место; единственная ничья получается при замене
+$X\leftrightarrow\overline X$. После факторизации зарядового сопряжения
+победитель единственен. Следующий неэквивалентный вариант даёт $0.2226941$ и
+не попадает в интервал округления $0.2312\pm0.00005$.
+
+\begin{proposition}[Rank-selector gate]
+Все целые и дробные коэффициенты двух атласных формул восстанавливаются из
+канонических рангов блоков присоединённого представления $SU(5)$. В полном
+перестановочном контроле оба физических назначения уникальны с точностью до
+зарядового сопряжения.
+\end{proposition}
+
+\section{Что найдено и чего ещё нет}
+
+Результат существенно сильнее наблюдения ``дроби делят 24'': один rank-$6$
+проектор одновременно объясняет $6$ и $1/4$ в $\alpha_s$, а формула Вайнберга
+использует именно физические блоки $C,W,Y,X$ в их физических ролях.
+
+Однако функциональные формы были прочитаны из атласа до rank-реконструкции.
+Представления объясняют коэффициенты, но пока не объясняют, почему действие
+должно собрать их именно как
+\begin{equation}
+ r+\pi^2r/24
+ \quad\text{и}\quad
+ \frac{r_C-r_W(r_X/24)\pi^{-1}}
+ {(24-r_W)+(r_W+r_Y)\pi}.
+\end{equation}
+
+\begin{nogocriterion}[Граница повышения статуса]
+Текущий результат является уникальной representation-theoretic
+реконструкцией, но не blind-предсказанием. Для повышения статуса оба
+функционала должны следовать из одного заранее заданного gauge-fixed action.
+После этого то же правило обязано вычислить скрытую третью связь или порог без
+изменения грамматики.
+\end{nogocriterion}
+
+Машинный аудит сохранён в
+\texttt{s2t\_su5\_rank\_selector\_results.json} и воспроизводится программой
+\texttt{s2t\_su5\_rank\_selector\_audit.py}.
+
+\end{document}

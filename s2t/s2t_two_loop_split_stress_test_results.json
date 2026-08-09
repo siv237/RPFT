@@ -1,0 +1,279 @@
+{
+  "status": "two_loop_stress_test_closes_intermediate_running_route_negative_sign_and_anchor_failure",
+  "date": "2026-08-04",
+  "conventions": {
+    "normalization": "gY, g2, g3 with sin2_thetaW(Lambda)=3/8 and g3(Lambda)=g2(Lambda)",
+    "train_anchor": "alpha_em_inverse(MZ)=137.035999177",
+    "total_log_interval": 29.919805079547,
+    "split_log_interval": 10.028759344181253,
+    "split_scale_GeV": 39674283534.7878,
+    "two_loop_scope": "MS-like gauge two-loop beta functions; split fields have no declared Yukawa couplings"
+  },
+  "beta_coefficients": {
+    "SM_one_loop": [
+      "41/6",
+      "-19/6",
+      "-7"
+    ],
+    "SM_two_loop": [
+      [
+        "199/18",
+        "9/2",
+        "44/3"
+      ],
+      [
+        "3/2",
+        "35/6",
+        "12"
+      ],
+      [
+        "11/6",
+        "9/2",
+        "-26"
+      ]
+    ],
+    "split_one_loop_increment": [
+      "17/6",
+      "1/6",
+      "2"
+    ],
+    "split_two_loop_increment": [
+      [
+        "19/6",
+        "3/2",
+        "32/3"
+      ],
+      [
+        "1/2",
+        "13/6",
+        "0"
+      ],
+      [
+        "4/3",
+        "0",
+        "38"
+      ]
+    ],
+    "SM_matrix_reproduction": "exactly reproduces [[199/18,9/2,44/3],[3/2,35/6,12],[11/6,9/2,-26]]"
+  },
+  "alpha_anchored_results": {
+    "one_loop_no_threshold": {
+      "high_scale_g2": 0.5293802478790742,
+      "couplings_gY_g2_g3": [
+        0.34226059303576384,
+        0.6497955777226945,
+        1.0449858375992884
+      ],
+      "inverse_couplings_alphaY_alpha2_alpha3": [
+        107.27439329180696,
+        29.76160588519288,
+        11.507713865230237
+      ],
+      "predictions": {
+        "M_W_GeV": 79.92271474339762,
+        "M_Z_GeV": 90.33156387531645,
+        "sin2_thetaW_on_shell_proxy": 0.21718093102493374,
+        "alpha_s_MZ": 0.08689823293412177,
+        "alpha_em_inverse": 137.03599917699984
+      },
+      "relative_residuals": {
+        "M_W_GeV": -0.005555427410032565,
+        "M_Z_GeV": -0.00939198276838571,
+        "sin2_thetaW_on_shell_proxy": -0.027008536875884115,
+        "alpha_s_MZ": -0.2635742971684595,
+        "alpha_em_inverse": -1.2212453270876722e-15
+      }
+    },
+    "one_loop_with_split": {
+      "high_scale_g2": 0.5403090431562464,
+      "couplings_gY_g2_g3": [
+        0.33984624201997266,
+        0.6671664954354913,
+        0.9868185201722308
+      ],
+      "inverse_couplings_alphaY_alpha2_alpha3": [
+        108.8040146385282,
+        28.23198453847189,
+        12.904324660145967
+      ],
+      "predictions": {
+        "M_W_GeV": 82.05928037848014,
+        "M_Z_GeV": 92.09214303324731,
+        "sin2_thetaW_on_shell_proxy": 0.20601874476798288,
+        "alpha_s_MZ": 0.07749340057201325,
+        "alpha_em_inverse": 137.0359991770001
+      },
+      "relative_residuals": {
+        "M_W_GeV": 0.021028956098606555,
+        "M_Z_GeV": 0.00991515367424789,
+        "sin2_thetaW_on_shell_proxy": -0.07701620507474471,
+        "alpha_s_MZ": -0.34327626633887076,
+        "alpha_em_inverse": 6.661338147750939e-16
+      }
+    },
+    "two_loop_no_threshold_gauge_only": {
+      "high_scale_g2": 0.5306703397567498,
+      "couplings_gY_g2_g3": [
+        0.3423216384987707,
+        0.6493783450350981,
+        1.0720641598712572
+      ],
+      "inverse_couplings_alphaY_alpha2_alpha3": [
+        107.23613669116695,
+        29.79986248583304,
+        10.9337290974207
+      ],
+      "predictions": {
+        "M_W_GeV": 79.87139649775911,
+        "M_Z_GeV": 90.28966328108858,
+        "sin2_thetaW_on_shell_proxy": 0.21746010292771759,
+        "alpha_s_MZ": 0.09146010396726428,
+        "alpha_em_inverse": 137.035999177
+      },
+      "relative_residuals": {
+        "M_W_GeV": -0.006193958658800902,
+        "M_Z_GeV": -0.00985147956870891,
+        "sin2_thetaW_on_shell_proxy": -0.025757819895940726,
+        "alpha_s_MZ": -0.22491437315877727,
+        "alpha_em_inverse": 0.0
+      }
+    },
+    "two_loop_with_split_gauge_only": {
+      "high_scale_g2": 0.5417552486153584,
+      "couplings_gY_g2_g3": [
+        0.33988574492791296,
+        0.6668678767617499,
+        1.0037594230136506
+      ],
+      "inverse_couplings_alphaY_alpha2_alpha3": [
+        108.7787248152977,
+        28.257274361702425,
+        12.47241616173283
+      ],
+      "predictions": {
+        "M_W_GeV": 82.02255126566878,
+        "M_Z_GeV": 92.06162306447321,
+        "sin2_thetaW_on_shell_proxy": 0.20620329352438563,
+        "alpha_s_MZ": 0.08017692699095016,
+        "alpha_em_inverse": 137.03599917700012
+      },
+      "relative_residuals": {
+        "M_W_GeV": 0.020571951265768273,
+        "M_Z_GeV": 0.009580460855301176,
+        "sin2_thetaW_on_shell_proxy": -0.07618940889304204,
+        "alpha_s_MZ": -0.320534517025846,
+        "alpha_em_inverse": 8.881784197001252e-16
+      }
+    }
+  },
+  "top_yukawa_sensitivity_not_blind": {
+    "0.94": {
+      "solver_success": true,
+      "high_scale_g2": 0.5415972630072209,
+      "high_scale_top_yukawa": 0.5692815643047712,
+      "low_scale_top_yukawa": 0.9399999794987159,
+      "couplings_gY_g2_g3": [
+        0.3398887299955309,
+        0.6668453319327778,
+        1.0039876188474457
+      ],
+      "inverse_couplings_alphaY_alpha2_alpha3": [
+        108.77681412868517,
+        28.259185048202085,
+        12.46674710784877
+      ],
+      "predictions": {
+        "M_W_GeV": 82.01977832599877,
+        "M_Z_GeV": 92.05931924303907,
+        "sin2_thetaW_on_shell_proxy": 0.20621723647758344,
+        "alpha_s_MZ": 0.08021338616634194,
+        "alpha_em_inverse": 137.03599917688726
+      },
+      "relative_residuals": {
+        "M_W_GeV": 0.02053744874900798,
+        "M_Z_GeV": 0.009555196331086035,
+        "sin2_thetaW_on_shell_proxy": -0.07612694312144697,
+        "alpha_s_MZ": -0.3202255409632039,
+        "alpha_em_inverse": -8.227862835497035e-13
+      }
+    },
+    "1.0": {
+      "solver_success": true,
+      "high_scale_g2": 0.5415607617324519,
+      "high_scale_top_yukawa": 0.6695270777095248,
+      "low_scale_top_yukawa": 1.0000000007825847,
+      "couplings_gY_g2_g3": [
+        0.3398894218439978,
+        0.6668401071307046,
+        1.0040409385515425
+      ],
+      "inverse_couplings_alphaY_alpha2_alpha3": [
+        108.7763712964541,
+        28.25962788067564,
+        12.465423047063563
+      ],
+      "predictions": {
+        "M_W_GeV": 82.01913569256142,
+        "M_Z_GeV": 92.05878533546152,
+        "sin2_thetaW_on_shell_proxy": 0.206220467981905,
+        "alpha_s_MZ": 0.08022190632636142,
+        "alpha_em_inverse": 137.03599917712972
+      },
+      "relative_residuals": {
+        "M_W_GeV": 0.020529452732656495,
+        "M_Z_GeV": 0.009549341310934878,
+        "sin2_thetaW_on_shell_proxy": -0.07611246567122576,
+        "alpha_s_MZ": -0.32015333621727604,
+        "alpha_em_inverse": 9.465761507954085e-13
+      }
+    }
+  },
+  "frozen_uv_normalization_test": {
+    "policy": "calibrate the UV coupling in the two-loop no-threshold theory, then add the split sector without recalibration",
+    "couplings_gY_g2_g3": [
+      0.33530822279228667,
+      0.6466935345976002,
+      0.9374209484275046
+    ],
+    "inverse_couplings_alphaY_alpha2_alpha3": [
+      111.76902344953105,
+      30.047810102101614,
+      14.30014875571967
+    ],
+    "predictions": {
+      "M_W_GeV": 79.54117366138915,
+      "M_Z_GeV": 89.5973487653593,
+      "sin2_thetaW_on_shell_proxy": 0.21187759837524373,
+      "alpha_s_MZ": 0.069929342490233,
+      "alpha_em_inverse": 141.81683355163267
+    },
+    "relative_residuals": {
+      "M_W_GeV": -0.01030278189419398,
+      "M_Z_GeV": -0.017443646473666474,
+      "sin2_thetaW_on_shell_proxy": -0.05076797731065863,
+      "alpha_s_MZ": -0.4073784534726017,
+      "alpha_em_inverse": 0.034887433983369576
+    }
+  },
+  "legacy_shortcut_audit": {
+    "legacy_rule": "alpha_inverse_after=alpha_inverse_before-(S_split/2pi) Delta b",
+    "correct_one_loop_running_sign": "alpha_inverse_low=alpha_inverse_high+(b/2pi) log(Lambda/low)",
+    "legacy_inverse_shift": [
+      -4.522358764332196,
+      -0.26602110378424726,
+      -3.192253245410962
+    ],
+    "expected_split_running_shift_sign": "positive for every positive component of Delta b",
+    "legacy_alpha_em_inverse": 132.2453975051458,
+    "train_alpha_em_inverse": 137.035999177,
+    "relative_anchor_violation": -0.03495870939479573,
+    "verdict": "the apparent four-row improvement used the opposite RG sign and changed the alpha_em train anchor"
+  },
+  "scientific_verdict": {
+    "primary": "the U+2D+H intermediate-running repair fails before finite matching: correct-sign matter running moves inverse couplings in the opposite direction from the reconstructed residual",
+    "two_loop": "with alpha_em preserved, the gauge-only two-loop split result gives approximately MW=82.02 GeV, MZ=92.06 GeV, sin2=0.2062 and alpha_s=0.08018",
+    "yukawa_sensitivity": "varying y_t(MZ) from 0.94 to 1.00 changes alpha_s only at the 1e-5 level and cannot rescue the result",
+    "theory_effect": "retain the anomaly-free projection and geometric saddle as mathematical constructions, but remove the claim that ordinary intermediate running repairs the gauge scorecard",
+    "next_gate": "only a finite threshold with the required negative sign or a different high-scale normalization derived independently of alpha_em can reopen the gauge branch"
+  }
+}

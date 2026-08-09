@@ -1,0 +1,100 @@
+{
+  "status": "square_root_flux_forces_odd_winding_conditionally_but_the_existing_S2T_action_does_not_force_pairing_condensation",
+  "date": "2026-08-06",
+  "minimal_tubular_action": {
+    "bosonic_sector": "S_B=int_Ngamma [Z_Phi |(d-2 i a)Phi|^2 + m_Phi^2 |Phi|^2 + lambda_Phi |Phi|^4 + (1/4 e_root^2)|f_a|^2]",
+    "fermionic_sector": "S_F=(1/2) int_Ngamma Psi^T C [D_a + Re(Phi) Gamma1 + Im(Phi) Gamma2] Psi",
+    "topological_boundary_sector": "integral_meridian a = pi mod 2pi",
+    "continuous_coefficients": [
+      "Z_Phi",
+      "m_Phi_squared",
+      "lambda_Phi",
+      "e_root",
+      "Majorana_Yukawa_normalization"
+    ]
+  },
+  "topological_winding_gate": {
+    "meridian_flux": 3.141592653589793,
+    "pair_charge": 2,
+    "finite_energy_condition": "integral(d arg Phi - 2 a)=0",
+    "forced_pair_phase_change": 6.283185307179586,
+    "forced_winding": 1.0,
+    "mod_two_index": 1,
+    "matches_existing_torsion_audit": true,
+    "finding": "Once a nonzero charge-two pairing field and the square-root pi flux are present, finite energy forces unit winding without a fitted integer."
+  },
+  "condensation_gate": {
+    "potential": "V=m_Phi^2 |Phi|^2 + lambda_Phi |Phi|^4",
+    "controls": {
+      "positive_mass_squared": {
+        "stable": true,
+        "condensed": false,
+        "vacuum_amplitude_squared": 0.0
+      },
+      "zero_mass_squared": {
+        "stable": true,
+        "condensed": false,
+        "vacuum_amplitude_squared": 0.0
+      },
+      "negative_mass_squared": {
+        "stable": true,
+        "condensed": true,
+        "vacuum_amplitude_squared": 0.5
+      },
+      "unstable_quartic": {
+        "stable": false,
+        "condensed": null,
+        "vacuum_amplitude_squared": null
+      }
+    },
+    "finding": "Topology fixes the winding class but not whether |Phi| is nonzero. For nonnegative m_Phi^2 the vacuum is Phi=0 and no gapped class-D defect exists. Condensation requires a negative quadratic term or an independently derived attractive gap equation.",
+    "sign_derived_in_existing_S2T_action": false,
+    "vacuum_amplitude_derived": false
+  },
+  "square_root_connection_gate": {
+    "smooth_ambient_Z2_meridian_holonomy": [
+      1.0,
+      -2.4492935982947064e-16
+    ],
+    "root_meridian_holonomy": [
+      -1.0,
+      1.2246467991473532e-16
+    ],
+    "extends_across_core": false,
+    "finding": "The smooth ambient Z2 line is locally trivial on the meridian. Its square root has holonomy -1 and cannot extend through the core. A local parent theory must therefore contain a new dynamical Z4/U1 connection or an explicit disorder/defect sector.",
+    "existing_quarter_branch_match": "The beta=1/4 charge doublet is exactly the conjugate pair -i,+i whose squares are the nontrivial Z2 holonomy.",
+    "sector_identification_derived": false
+  },
+  "rank_one_saddle_gate": {
+    "local_core_gluing_rank": 1,
+    "complement_rank": 23,
+    "global_tubular_EFT_status": "constructed_conditionally",
+    "parent_restriction_status": "closed",
+    "finding": "If the square-root flux and condensed pairing saddle are admitted, the local zero mode, core gluing, R24 embedding and tubular restriction are mutually consistent. The obstruction is dynamical existence, not the index calculation."
+  },
+  "parent_action_gate": {
+    "topology_alone_forces_defect": false,
+    "conditional_statement": "pi flux plus nonzero charge-two pairing implies odd vortex and rank one",
+    "missing_derivations": [
+      "why the square-root connection is a dynamical or summed sector of S2T",
+      "why the pairing quadratic coefficient is negative or the gap equation condenses",
+      "why the quarter-holonomy gauge branch couples to the Majorana pair field",
+      "why the resulting heavy scale and Yukawa normalization equal the frozen neutrino inputs"
+    ],
+    "new_model_if_added_by_hand": true
+  },
+  "no_go": {
+    "statement": "The ambient Z2 topology does not by itself create the class-D defect. It fixes an odd winding only after adding a singular square-root flux sector and a nonzero charge-two pairing condensate. Without a parent gap equation these are structural additions, not consequences of II.A.",
+    "reopening_conditions": [
+      "derive a Z4/U1 root connection or disorder sector from the existing finite algebra",
+      "derive a negative pairing Hessian or attractive four-fermion gap equation",
+      "show the selected saddle is energetically preferred over Phi=0",
+      "retain the mod-two kernel and rank-23 complement under the full fluctuation complex"
+    ]
+  },
+  "scientific_verdict": {
+    "positive": "The topological part is strong: the square-root pi flux forces winding one, and the resulting rank-one Majorana kernel is internally consistent.",
+    "negative": "The current action does not force the root flux sector or the pairing condensate. Therefore the defect is a well-defined conditional submodel, not yet a derived saddle.",
+    "next_target": "Search the existing finite algebra/superconnection for a mandatory Z4 root connection and compute the pairing Hessian before introducing any new coupling."
+  }
+}

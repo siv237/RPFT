@@ -1,0 +1,1890 @@
+{
+  "status": "principal_plus_connection_C11_table_raw_basis",
+  "inputs": [
+    "s2t_c6_l21_delta2_connection_full_C11_table_data.json",
+    "s2t_c6_l21_delta2_principal_C11_moment_table_data.json"
+  ],
+  "rot_labels": [
+    "E01",
+    "E02",
+    "E03",
+    "E12",
+    "E13",
+    "E23"
+  ],
+  "strain_labels_raw_trace_basis": [
+    "D00",
+    "D11",
+    "D22",
+    "D33",
+    "S01",
+    "S02",
+    "S03",
+    "S12",
+    "S13",
+    "S23"
+  ],
+  "formula": "C_principal_plus_connection[1,1]=C_principal[1,1]+C_conn2[1,1] in shared raw Sym^2(R4) basis",
+  "symmetric_pair_count": 55,
+  "rank_distribution": {
+    "6": 16,
+    "4": 39
+  },
+  "all_pairs_nonzero": true,
+  "zero_pairs": [],
+  "nonzero_entries_total": 252,
+  "component_rank_distributions": {
+    "connection": {
+      "6": 10,
+      "4": 39,
+      "2": 6
+    },
+    "principal": {
+      "6": 16,
+      "4": 39
+    }
+  },
+  "cancellation_diagnostics_sample": [
+    {
+      "pair": "D00,D00",
+      "rank": 6,
+      "combined_l1": "16",
+      "connection_l1": "13",
+      "principal_l1": "14"
+    },
+    {
+      "pair": "D00,D11",
+      "rank": 6,
+      "combined_l1": "14/3",
+      "connection_l1": "10/3",
+      "principal_l1": "5/3"
+    },
+    {
+      "pair": "D00,D22",
+      "rank": 6,
+      "combined_l1": "14/3",
+      "connection_l1": "10/3",
+      "principal_l1": "5/3"
+    },
+    {
+      "pair": "D00,D33",
+      "rank": 6,
+      "combined_l1": "14/3",
+      "connection_l1": "10/3",
+      "principal_l1": "5/3"
+    },
+    {
+      "pair": "D00,S01",
+      "rank": 4,
+      "combined_l1": "4/3",
+      "connection_l1": "26/3",
+      "principal_l1": "22/3"
+    },
+    {
+      "pair": "D00,S02",
+      "rank": 4,
+      "combined_l1": "4/3",
+      "connection_l1": "26/3",
+      "principal_l1": "22/3"
+    },
+    {
+      "pair": "D00,S03",
+      "rank": 4,
+      "combined_l1": "4/3",
+      "connection_l1": "26/3",
+      "principal_l1": "22/3"
+    },
+    {
+      "pair": "D00,S12",
+      "rank": 4,
+      "combined_l1": "20/3",
+      "connection_l1": "16/3",
+      "principal_l1": "4/3"
+    },
+    {
+      "pair": "D00,S13",
+      "rank": 4,
+      "combined_l1": "20/3",
+      "connection_l1": "16/3",
+      "principal_l1": "4/3"
+    },
+    {
+      "pair": "D00,S23",
+      "rank": 4,
+      "combined_l1": "20/3",
+      "connection_l1": "16/3",
+      "principal_l1": "4/3"
+    },
+    {
+      "pair": "D11,D11",
+      "rank": 6,
+      "combined_l1": "16",
+      "connection_l1": "13",
+      "principal_l1": "14"
+    },
+    {
+      "pair": "D11,D22",
+      "rank": 6,
+      "combined_l1": "14/3",
+      "connection_l1": "10/3",
+      "principal_l1": "5/3"
+    }
+  ],
+  "pairs": [
+    {
+      "A": "D00",
+      "B": "D00",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "3"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "3"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "7/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "7/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "7/3"
+        }
+      ],
+      "connection_rank": 6,
+      "principal_rank": 6
+    },
+    {
+      "A": "D00",
+      "B": "D11",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "-4/3"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "2/3"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "2/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "2/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "2/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "-2/3"
+        }
+      ],
+      "connection_rank": 6,
+      "principal_rank": 6
+    },
+    {
+      "A": "D00",
+      "B": "D22",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "2/3"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "-4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "2/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "2/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "-2/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "2/3"
+        }
+      ],
+      "connection_rank": 6,
+      "principal_rank": 6
+    },
+    {
+      "A": "D00",
+      "B": "D33",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "2/3"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "2/3"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "-4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "-2/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "2/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "2/3"
+        }
+      ],
+      "connection_rank": 6,
+      "principal_rank": 6
+    },
+    {
+      "A": "D00",
+      "B": "S01",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D00",
+      "B": "S02",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "-1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "-1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D00",
+      "B": "S03",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "-1/3"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "-1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "-1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "-1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D00",
+      "B": "S12",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "-2"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "-2"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "4/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D00",
+      "B": "S13",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "-2"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "-2"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "-4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "-4/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D00",
+      "B": "S23",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "-2"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "-2"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "4/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D11",
+      "B": "D11",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "3"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "7/3"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "7/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "7/3"
+        }
+      ],
+      "connection_rank": 6,
+      "principal_rank": 6
+    },
+    {
+      "A": "D11",
+      "B": "D22",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "2/3"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "2/3"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "-2/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "-4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "2/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "2/3"
+        }
+      ],
+      "connection_rank": 6,
+      "principal_rank": 6
+    },
+    {
+      "A": "D11",
+      "B": "D33",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "2/3"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "-2/3"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "2/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "2/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "-4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "2/3"
+        }
+      ],
+      "connection_rank": 6,
+      "principal_rank": 6
+    },
+    {
+      "A": "D11",
+      "B": "S01",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D11",
+      "B": "S02",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "2"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "2"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "4/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D11",
+      "B": "S03",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "2"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "-4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "2"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "-4/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D11",
+      "B": "S12",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "1/3"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D11",
+      "B": "S13",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "-1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "-1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D11",
+      "B": "S23",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "-2"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "-2"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D22",
+      "B": "D22",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "7/3"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "3"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "7/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "7/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "3"
+        }
+      ],
+      "connection_rank": 6,
+      "principal_rank": 6
+    },
+    {
+      "A": "D22",
+      "B": "D33",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "-2/3"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "2/3"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "2/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "2/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "2/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "-4/3"
+        }
+      ],
+      "connection_rank": 6,
+      "principal_rank": 6
+    },
+    {
+      "A": "D22",
+      "B": "S01",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "-2"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "-2"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "4/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D22",
+      "B": "S02",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "-1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "-1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D22",
+      "B": "S03",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "-4/3"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "2"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "-4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "2"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D22",
+      "B": "S12",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "1/3"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D22",
+      "B": "S13",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "2"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "2"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D22",
+      "B": "S23",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D33",
+      "B": "D33",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "7/3"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "7/3"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "7/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "3"
+        }
+      ],
+      "connection_rank": 6,
+      "principal_rank": 6
+    },
+    {
+      "A": "D33",
+      "B": "S01",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "-2"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "-2"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D33",
+      "B": "S02",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "-4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "-2"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "-4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "-2"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D33",
+      "B": "S03",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "-1/3"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "-1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "-1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "-1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D33",
+      "B": "S12",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "4/3"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "-2"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "-2"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D33",
+      "B": "S13",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "-1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "-1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "D33",
+      "B": "S23",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "1/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S01",
+      "B": "S01",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "26/3"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "4"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "4"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "4"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "4"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "6"
+        }
+      ],
+      "connection_rank": 2,
+      "principal_rank": 6
+    },
+    {
+      "A": "S01",
+      "B": "S02",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "7/3"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "7/3"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "-1"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "-1"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S01",
+      "B": "S03",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "7/3"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "7/3"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "1"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "1"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S01",
+      "B": "S12",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "-7/3"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "-1"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "-7/3"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "-1"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S01",
+      "B": "S13",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "-7/3"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "1"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "-7/3"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "1"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S01",
+      "B": "S23",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E13",
+          "value": "-10/3"
+        },
+        {
+          "row": "E03",
+          "col": "E12",
+          "value": "-10/3"
+        },
+        {
+          "row": "E12",
+          "col": "E03",
+          "value": "-10/3"
+        },
+        {
+          "row": "E13",
+          "col": "E02",
+          "value": "-10/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S02",
+      "B": "S02",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "4"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "26/3"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "4"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "4"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "6"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "4"
+        }
+      ],
+      "connection_rank": 2,
+      "principal_rank": 6
+    },
+    {
+      "A": "S02",
+      "B": "S03",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "7/3"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "7/3"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "-1"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "-1"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S02",
+      "B": "S12",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "7/3"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "-1"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "7/3"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "-1"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S02",
+      "B": "S13",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E23",
+          "value": "-10/3"
+        },
+        {
+          "row": "E03",
+          "col": "E12",
+          "value": "10/3"
+        },
+        {
+          "row": "E12",
+          "col": "E03",
+          "value": "10/3"
+        },
+        {
+          "row": "E23",
+          "col": "E01",
+          "value": "-10/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S02",
+      "B": "S23",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "1"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "-7/3"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "1"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "-7/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S03",
+      "B": "S03",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "4"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "4"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "26/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "6"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "4"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "4"
+        }
+      ],
+      "connection_rank": 2,
+      "principal_rank": 6
+    },
+    {
+      "A": "S03",
+      "B": "S12",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E23",
+          "value": "10/3"
+        },
+        {
+          "row": "E02",
+          "col": "E13",
+          "value": "10/3"
+        },
+        {
+          "row": "E13",
+          "col": "E02",
+          "value": "10/3"
+        },
+        {
+          "row": "E23",
+          "col": "E01",
+          "value": "10/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S03",
+      "B": "S13",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "-1"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "7/3"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "-1"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "7/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S03",
+      "B": "S23",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "1"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "7/3"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "1"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "7/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S12",
+      "B": "S12",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "4"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "4"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "6"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "26/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "4"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "4"
+        }
+      ],
+      "connection_rank": 2,
+      "principal_rank": 6
+    },
+    {
+      "A": "S12",
+      "B": "S13",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "-1"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "-1"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "7/3"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "7/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S12",
+      "B": "S23",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "-1"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "-1"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "-7/3"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "-7/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S13",
+      "B": "S13",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "4"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "6"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "4"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "4"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "26/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "4"
+        }
+      ],
+      "connection_rank": 2,
+      "principal_rank": 6
+    },
+    {
+      "A": "S13",
+      "B": "S23",
+      "rank": 4,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "-1"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "-1"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "7/3"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "7/3"
+        }
+      ],
+      "connection_rank": 4,
+      "principal_rank": 4
+    },
+    {
+      "A": "S23",
+      "B": "S23",
+      "rank": 6,
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "6"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "4"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "4"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "4"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "4"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "26/3"
+        }
+      ],
+      "connection_rank": 2,
+      "principal_rank": 6
+    }
+  ]
+}

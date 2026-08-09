@@ -1,0 +1,139 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{geometry}
+\usepackage{microtype}
+\geometry{margin=2.3cm}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{nogocriterion}{Критерий провала}
+\DeclareMathOperator{\Tr}{Tr}
+
+\title{Hurwitz--Hessian gate для $\pi^{-4}$:\\
+прямой отклик против обратной susceptibility}
+\author{}
+\date{5 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Что уже присутствовало в проекте}
+
+Направление с half-integer Hurwitz zeta не было потеряно. В Tome II уже
+зафиксирована точная тождественность
+\begin{equation}
+ \zeta\left(4,\frac12\right)
+ =(2^4-1)\zeta(4)=\frac{\pi^4}{6}
+\end{equation}
+как шаблон четвёртого дзета-остатка. Однако там же честно отмечено, что переход
+от этого шаблона к $\pi^{-4}$ остаётся выбранной нормировкой, а не полным
+Maxwell--ghost determinant theorem.
+
+Настоящий gate проверяет более сильную формулировку: может ли именно Hessian по
+радиусу или конформному масштабу автоматически обратить степень $\pi^4$.
+
+\section{Прямой scale-Hessian}
+
+Для half-shifted tower
+\begin{equation}
+ \lambda_n(R)=\frac{(n+1/2)^2}{R^2}
+\end{equation}
+спектральная дзета равна
+\begin{equation}
+ Z_A(s;R)=R^{2s}\zeta(2s,1/2).
+\end{equation}
+Поскольку
+\begin{equation}
+ \zeta(0,1/2)=0,
+\end{equation}
+дзета-регуляризованный $\log\det A_R=-Z_A'(0;R)$ не имеет ни наклона, ни
+Hessian по $\log R$. Поэтому $\zeta(4,1/2)$ не возникает из второй производной
+этого determinant.
+
+Первый стандартный функционал, действительно содержащий четвёртый момент,
+имеет вид
+\begin{equation}
+ F(R)=\Tr A_R^{-2}=R^4\zeta(4,1/2).
+\end{equation}
+Для $t=\log R$
+\begin{equation}
+ \frac{d^2F}{dt^2}\bigg|_{R=1}
+ =16\zeta(4,1/2)=\frac{8\pi^4}{3}.
+\end{equation}
+Следовательно, прямой moment/Hessian даёт положительную степень $\pi^4$, а не
+$\pi^{-4}$. Уже сам момент превышает требуемый коэффициент $1/\pi^4$ в
+$1581.42$ раза.
+
+Кроме того, при замене координаты деформации $x=c\log R$ Hessian меняется как
+$c^{-2}$. Его численный коэффициент не является инвариантом, пока parent action
+не фиксирует норму деформации.
+
+\begin{nogocriterion}[Провал прямого Hessian-объяснения]
+Утверждение ``$\zeta(4,1/2)$ появляется в Hessian и поэтому даёт
+$1/\pi^4$'' меняет степень $\pi$ без математической операции, выполняющей
+обращение. Ни scale-Hessian $\log\det$, ни прямой Hessian $\Tr A^{-2}$ этого не
+делают.
+\end{nogocriterion}
+
+\section{Шесть-канальная inverse susceptibility}
+
+Тем не менее возникает точная и более интересная конструкция:
+\begin{equation}
+ \left[6\zeta\left(4,\frac12\right)\right]^{-1}
+ =\frac1{\pi^4}.
+\end{equation}
+Если parent theory порождает шесть равноправных unit-normalized каналов с
+коллективной жёсткостью
+\begin{equation}
+ H_{coll}=6\zeta(4,1/2)=\pi^4
+\end{equation}
+и физическая поправка определяется не самим Hessian, а его обратной
+susceptibility, то требуемый член получается точно:
+\begin{equation}
+ \Delta S=-\frac{H_{coll}^{-1}}{S_{geo}^2}
+ =-\frac1{\pi^4S_{geo}^2}.
+\end{equation}
+
+Число шесть не обязано быть феноменологическим: в проекте имеются raw rank-six
+структуры, например один mixed $SU(5)$-блок $({\bf3},{\bf2})$. Но предыдущий
+gauge-action аудит показывает, что физический Hessian считает не голую
+размерность, а квадраты генераторов: индексы одного mixed-блока равны
+$(5/2,3/2,1)$, а не универсальному числу $6$. Пара блока и сопряжённого блока
+имеет raw rank $12$. Аналогично, пространство симметричных трёхмерных strains
+имеет размерность $6$, но constant conformal deformation является только одной
+trace-direction.
+
+\begin{proposition}[Точный II.B-кандидат]
+Формула $\pi^{-4}$ эквивалентна inverse susceptibility шести half-shifted
+каналов. Это точная структурная идентичность, но не результат текущего
+EM-сектора: необходимо независимо вывести равенство весов шести каналов,
+обратный характер response и норму deformation coordinate.
+\end{proposition}
+
+\section{Отношение к C6}
+
+Если под Hessian по-прежнему понимается gauge-fixed Maxwell--ghost
+$\log\det$, новый язык не отменяет C6: требуется тот же same-scheme операторный
+расчёт, уже закрытый отрицательно для exact $\pi^{-4}$-absorption.
+
+Если же используется inverse susceptibility нового spectral functional, это
+не ремонт II.A, а новая модель II.B. Она должна единым parent action объяснить:
+\begin{enumerate}
+ \item почему существуют ровно шесть равновесных каналов;
+ \item почему наблюдаемая использует $H^{-1}$, а не $H$;
+ \item почему response делится на $S_{geo}^2$;
+ \item почему этот блок складывается с независимой periodic ветвью $1/24$.
+\end{enumerate}
+
+Таким образом, предложенная идея не закрывает формулу автоматически, но
+выделяет новый узкий и проверяемый механизм. Его нельзя объявлять найденным по
+численному совпадению; зато теперь условие успеха записано без тумана.
+
+Машинный протокол сохранён в
+\texttt{s2t\_hurwitz\_hessian\_pi4\_audit.py} и
+\texttt{s2t\_hurwitz\_hessian\_pi4\_results.json}.
+
+\end{document}

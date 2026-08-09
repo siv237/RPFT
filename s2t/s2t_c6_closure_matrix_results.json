@@ -1,0 +1,920 @@
+{
+  "status": "C6_master_closure_matrix_exact_pi4_downgraded",
+  "audit_registry": [
+    {
+      "file": "s2t_c6_formal_gamma_results.json",
+      "status": "formal_Gamma_written_C6_still_conditional",
+      "verdict": "A formal Gamma_Maxwell+ghost decomposition can be written and it clarifies the proof obligations. P02 can be conditionally placed in the coexact bosonic first-strain insertion; exact/scalar cancellation and the 1/24 constant branch must be imposed as isolation lemmas. C6 is not fully proven because delta^2 Delta locality/compensation and the N_need-10 gap remain open."
+    },
+    {
+      "file": "s2t_c6_ghost_exact_isolation_results.json",
+      "status": "ghost_exact_isolation_required_for_C6_not_proven",
+      "verdict": "The desired C6 sign survives only if P02 is isolated as a coexact bosonic metric-strain insertion. The physical transverse quotient keeps this route open as a conditional scheme. In standard covariant FP bookkeeping, however, a residual scalar determinant/half-power is not excluded until the Hodge Jacobian, det-prime rule, gauge volume, and ghost determinant are combined explicitly. If the same P02 trace-square appears in the ghost determinant, the opposite Grassmann sign cancels or reverses the suppression. Therefore the next theorem-level obligation is not numerical: prove exact/scalar ghost cancellation before the finite P02 coexact trace and prove that the ell=0 scalar branch enters only through kappa_Cas=1/24."
+    },
+    {
+      "file": "s2t_c6_operator_trace_skeleton_results.json",
+      "status": "C6_operator_trace_skeleton_built_not_closed",
+      "verdict": "C6 is now localized: the missing proof is the explicit second variation of the gauge-fixed Maxwell--ghost determinant under first ambient strain. P02 rank 10 is conditionally derived, but the volume factor, combined sign, det-prime bookkeeping, and N_need-10 scheme gap remain open."
+    },
+    {
+      "file": "s2t_c6_second_variation_sign_results.json",
+      "status": "second_variation_sign_formally_compatible_not_full_proof",
+      "verdict": "The required minus sign is formally compatible with the real bosonic coexact Maxwell second variation: +1/2 logdet gives a negative trace-square term. This supports the direction of the factor 1-N/(24S_geo). However, it is not a full C6 proof because ghost determinants have the opposite quadratic sign if the same insertion acts there, and genuine delta^2 Delta terms may contribute unless shown to be local/subtracted. Thus the sign subtest is a conditional pass for the coexact bosonic block, with two explicit remaining caveats."
+    },
+    {
+      "file": "s2t_c6_scalar_fp_bookkeeping_results.json",
+      "status": "standard_covariant_FP_leaves_scalar_half_power_unless_cancelled",
+      "verdict": "Bare standard covariant FP/Hodge bookkeeping gives Gamma = 1/2 log det' Delta_1,coex - 1/2 log det' Delta0, so exact/scalar cancellation is not zero by default. If that residual scalar half-determinant carries the same P02 trace-square, the desired rank-10 suppression is reduced to an effective rank 5 in the simplified sign model. Therefore C6 requires an additional cancellation or selection lemma: either work in the physical transverse quotient as the defining scheme, or prove that the standard-FP scalar residual is only the kappa_Cas=1/24 branch and has no P02 leakage."
+    },
+    {
+      "file": "s2t_c6_scalar_p02_projection_results.json",
+      "status": "constant_kappa_branch_safe_but_nonzero_scalar_residual_open",
+      "verdict": "The retained kappa_Cas=1/24 row can be isolated from traceless P02 leakage: it is constant on RP3, so an RP3 first-strain does not act through the scalar Laplacian on that row. This supports the statement that the 1/24 branch is not itself a ghost P02 trace-square. However, this does not close standard covariant FP, because a nonzero scalar half-determinant remains unless cancelled by zero/gauge/Jacobian factors. Nonconstant scalar modes can couple to first ambient strain through their gradients, so P02 leakage from the residual nonzero scalar tower remains the blocking gap."
+    },
+    {
+      "file": "s2t_c6_scalar_variation_p02_results.json",
+      "status": "zero_by_symmetry_fails_for_nonzero_scalar_tower",
+      "verdict": "The nonzero scalar residual tower cannot be dismissed by a symmetry selection rule. On RP3 the scalar tower contains even ell shells; the first nonzero shell ell=2 has multiplicity 9 and an ell=2/P02 first-strain insertion is selection-rule allowed. Thus delta_h Delta0 has a nonzero P02 leakage channel on the nonzero scalar tower unless a stronger analytic result proves cancellation, locality, or physical-quotient removal. C6 is therefore not closed in standard covariant FP by symmetry alone."
+    },
+    {
+      "file": "s2t_c6_scalar_rescue_routes_results.json",
+      "status": "standard_FP_rescue_routes_not_closed",
+      "verdict": "Neither requested standard-FP rescue route is proven. Local heat-kernel subtraction cannot by itself remove the finite nonlocal Bessel/winding part generated by positive scalar eigenvalues, and the first nonzero RP3 scalar shell ell=2 is P02-coupling allowed. Zero/gauge/Jacobian factors remove zero modes and set determinant powers, but in the current bookkeeping they do not provide an opposite nonzero scalar tower cancelling -1/2 log det' Delta0. Therefore standard covariant FP remains blocked; the clean surviving route is the physical transverse quotient, or else pi^-4 must be downgraded to structural compression until a new analytic cancellation is derived."
+    },
+    {
+      "file": "s2t_c6_paired_sector_search_results.json",
+      "status": "all_known_paired_candidates_fail_or_are_definitional",
+      "verdict": "No existing paired/cancellation sector in the current C6 bookkeeping supplies the required independent +1/2 log det' Delta0_nonzero with the same even RP3 x S1 scalar spectrum and P02 trace-square coupling. Standard FP and exact Hodge pieces are already exhausted, zero/gauge/Jacobian factors cannot cancel the nonzero tower, torsion/duality do not provide an additive scalar half-determinant, and Dirac/spin-cover matter has the wrong spectrum. Thus C6 is not rescued by a known paired sector; the viable non-phenomenological route remains a physical transverse quotient, or else pi^-4 must stay downgraded until a genuinely new mandatory sector is derived."
+    },
+    {
+      "file": "s2t_c6_l21_low_shell_block_spec_results.json",
+      "status": "low_shell_block_spec_fixed_next_required_calculation",
+      "verdict": "The next non-rhetorical C6 step is now fixed: compute the finite low-shell matrix block for channels 1->1, 1->3, and 3->1. The block has degeneracies 6 and 30, hence 36 + 180 + 180 = 396 entries per deformation direction before symmetry reductions, or 3960 entries over Sym^2(R4). A scalar shortcut is not acceptable; the full one-form Laplacian variation, coexact projection, and inner-product variation must be included."
+    },
+    {
+      "file": "s2t_c6_l21_n1_to_n3_leakage_results.json",
+      "status": "n1_conformal_hodge_diagonal_cancellation_leaks_to_cubic_shell",
+      "verdict": "The conformal Hodge variation cancels inside the n=1 diagonal block, but it does not vanish as an operator on Killing forms. Its n=1 projection is zero to roundoff while its cubic tangent-polynomial image has nonzero normalized Gram trace. Thus the next decisive C6 test is the actual coexact n=3 projection and second-order 1<->3 trace contribution."
+    },
+    {
+      "file": "s2t_c6_l21_n3_explicit_basis_gate_results.json",
+      "status": "explicit_n3_coexact_basis_is_now_the_blocking_gate",
+      "verdict": "The C6 calculation has reached a hard gate: explicit n=3 coexact basis projection. The proxy residue 64 is too large to ignore, but it is not a theorem until the six leaked images are projected into the 30-dimensional quotient-normalized n=3 coexact shell. This gate decides whether C6 remains a possible rank-10 absorption theorem or must be downgraded without a new cancellation/paired sector."
+    },
+    {
+      "file": "s2t_c6_l21_n3_explicit_projection_results.json",
+      "status": "explicit_n3_coexact_basis_projection_confirms_nonzero_leakage",
+      "verdict": "An explicit quotient-normalized 30-dimensional n=3 coexact basis was constructed from cubic tangent, divergence-free, harmonic vector polynomials. Projecting the six normalized leaked Killing-shell images onto this basis gives a nonzero projected trace, so the n=3 gate is not killed by the explicit basis construction. This upgrades the proxy warning into a concrete low-shell obstruction candidate, but it is not yet the final C6 determinant theorem because the full one-form variation and determinant bookkeeping remain to be assembled."
+    },
+    {
+      "file": "s2t_c6_l21_n3_parity_descent_results.json",
+      "status": "n3_cubic_coexact_basis_descends_to_L21_antipodal_quotient",
+      "verdict": "The explicit n=3 cubic coexact basis passes the L(2,1) descent check: cubic vector coefficients are odd, dx is odd, and their product is antipodal-even. Therefore the nonzero projected trace is not killed by the RP3 quotient parity rule and should not receive an extra cover factor."
+    },
+    {
+      "file": "s2t_c6_l21_full_operator_rescue_gate_results.json",
+      "status": "full_operator_rescue_gate_open_after_nonzero_n3_projection",
+      "verdict": "The explicit n=3 projection converts the C6 problem into a full-operator rescue gate. A nonzero rank-6 projected trace is present in the modelled conformal slice. C6 can still survive only through an explicit cancellation by connection/Ricci/projector/Hilbert-metric/delta2 terms or through a derived no-fit absorption identity. Absent such a result, pi^-4 remains structural compression rather than a mature Maxwell determinant theorem."
+    },
+    {
+      "file": "s2t_c6_l21_n3_finite_counterterm_gate_results.json",
+      "status": "n3_finite_low_shell_trace_not_rescuable_by_local_counterterm",
+      "verdict": "The nonzero n=1<->n=3 projected trace is finite low-shell spectral data on L(2,1). It is not a UV heat-kernel asymptotic term and cannot be discarded by a local counterterm without introducing a forbidden finite scheme choice. C6 therefore remains at the full-operator rescue gate: the remaining legitimate options are explicit cancellation by the missing one-form terms or a derived no-fit absorption identity."
+    },
+    {
+      "file": "s2t_c6_l21_n3_obstruction_scale_results.json",
+      "status": "explicit_n3_obstruction_scale_large_not_small_scheme_gap",
+      "verdict": "The explicit n=3 projected obstruction is large in the current low-shell bookkeeping. Its trace is 80, eight times the rank-10 count and 1.25 times the earlier proxy trace 64. The trace/(lambda3-lambda1)^2 proxy is about 0.5556, far larger than the N_need-10 gap. Therefore the nonzero n=3 block cannot be dismissed as a small scheme residue; only full-operator cancellation or a derived no-fit absorption identity can rescue C6."
+    },
+    {
+      "file": "s2t_c6_l21_full_operator_checklist_results.json",
+      "status": "full_operator_rescue_checklist_fixed_after_large_n3_obstruction",
+      "verdict": "After the explicit nonzero n=3 projection and scale audit, the C6 rescue problem is reduced to a concrete full-operator checklist. Connection, Ricci, coexact-projector, Hilbert-metric, and direct delta2-Delta terms must be derived and evaluated in the same quotient-normalized low-shell bases. Only an explicit cancellation or a no-fit absorption identity can promote pi^-4 beyond structural compression."
+    },
+    {
+      "file": "s2t_c6_l21_connection_variation_formula_results.json",
+      "status": "connection_variation_formula_fixed_matrix_evaluation_missing",
+      "verdict": "The connection-variation term is now fixed at formula level for the conformal first-strain slice: delta Gamma^k_ij = delta^k_j nabla_i q + delta^k_i nabla_j q - g_ij nabla^k q. This advances the full-operator checklist but does not close C6; the required next output is the quotient-normalized n=1<->n=3 connection matrix block and its interference with the trace-80 projection."
+    },
+    {
+      "file": "s2t_c6_l21_ricci_variation_formula_results.json",
+      "status": "ricci_variation_formula_fixed_matrix_evaluation_missing",
+      "verdict": "The Ricci/curvature variation is now fixed at formula level for the conformal first-strain slice. In dimension 3, delta Ric_ab = -nabla_a nabla_b q - g_ab nabla^2 q, with the mixed Ricci operator also receiving the index-raising piece -4q alpha_a on the unit background. This advances the full-operator checklist but does not close C6; the required next output is the quotient-normalized n=1<->n=3 Ricci matrix block and its interference with the existing trace-80 obstruction."
+    },
+    {
+      "file": "s2t_c6_l21_projector_variation_formula_results.json",
+      "status": "coexact_projector_variation_formula_fixed_matrix_evaluation_missing",
+      "verdict": "The coexact-projector variation is now fixed as an explicit operator obligation: Pi_coex = I - d Delta_0^{-1} delta and delta(Pi Delta_1 Pi) contains both deltaDelta_1 and moving-projector terms. This advances the full-operator checklist but does not close C6; the required next output is the quotient-normalized n=1<->n=3 projector-variation matrix block and a self-adjointness check of the reduced operator."
+    },
+    {
+      "file": "s2t_c6_projector_t5_quotient_contraction_results.json",
+      "status": "T5_direct_dG_ell4_leakage_is_orthogonal_to_low_coexact_quotient",
+      "verdict": "The complete 36x25 quotient-contraction table vanishes to numerical precision. The result is structural: every T1/T3 ell=4 scalar contribution entering through the outer dG in Pi_AB is an exact one-form, so its pairing with any quotient-normalized coexact n=1 or n=3 state is zero. This closes the direct T5 channel and removes the previously identified T1/T3 higher-shell leakage from the pure Pi_AB matrix element. It does not yet close the full projector contribution, because cross terms in which Delta1_A acts on Pi_B before the final coexact projection can still be nonzero."
+    },
+    {
+      "file": "s2t_c6_l21_hilbert_variation_formula_results.json",
+      "status": "hilbert_inner_product_variation_formula_fixed_matrix_evaluation_missing",
+      "verdict": "The Hilbert inner-product variation is now fixed at formula level. For one-forms, delta<alpha,beta> = integral [(-h^{ab}+1/2 tr(h)g^{ab}) alpha_a beta_b] dvol, and in the conformal three-dimensional slice h=2qg this reduces to integral q <alpha,beta> dvol for fixed components. This advances the full-operator checklist but does not close C6; the required next output is the quotient-normalized n=1<->n=3 Hilbert/basis-normalization matrix contribution and a self-adjointness check."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_delta_gate_results.json",
+      "status": "delta2_delta_gate_fixed_locality_or_finite_block_required",
+      "verdict": "The delta^2 Delta gate is now explicit. Mature C6 requires either a proof that Tr(Delta^-1 delta^2 Delta) is purely local/subtracted or exactly compensated in the same Maxwell--ghost scheme, or a finite quotient-normalized low-shell computation of C_delta2. Until one of these outcomes is delivered, the trace-square suppression remains conditional rather than a determinant theorem."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_finite_block_spec_results.json",
+      "status": "delta2_finite_block_spec_fixed_diagonal_trace_first",
+      "verdict": "The finite C_delta2 task is now scoped more precisely. For Tr(Delta^-1 delta^2 Delta), the primary required data are diagonal shell traces C_delta2[1,1] and C_delta2[3,3] for the 55 symmetric deformation pairs, i.e. 36+900=936 entries per pair before trace reductions. Off-diagonal C_delta2[1,3] and C_delta2[3,1] should be archived for self-adjointness and reduced-operator consistency, but they are not the direct trace term. A fixed second-variation path is mandatory before any finite number can be used in C6."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_path_choice_gate_results.json",
+      "status": "delta2_path_choice_gate_fixed_scheme_must_precede_matrix",
+      "verdict": "The delta2 path-choice gate is now explicit. C_delta2 cannot be used for C6 cancellation until the second-variation path is fixed before the finite matrix computation. The preferred route is the same ambient linear embedding strain used by the first-strain audits, with its induced second metric/operator derivative written explicitly; conformal-path calculations remain diagnostic unless a slice theorem is supplied."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_ambient_path_formula_results.json",
+      "status": "delta2_ambient_linear_path_formula_fixed_operator_delta2_missing",
+      "verdict": "The preferred delta2 theorem path is now fixed at metric-derivative level. For F_eps=(I+eps A)x, g'_A(u,v)=2<u,Av>, g''_A(u,v)=2<Au,Av>, and the mixed A,B derivative is <Au,Bv>+<Bu,Av>. This removes the path-choice ambiguity for the preferred route, but it does not close C6: the actual delta2 Delta_1,coex operator and the finite diagonal low-shell traces remain unevaluated."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_operator_decomposition_results.json",
+      "status": "delta2_operator_decomposition_fixed_all_subblocks_missing",
+      "verdict": "The delta2 operator task is now decomposed into six mandatory subblocks: principal second-symbol, second connection, second Ricci/curvature, second coexact-projector, second Hilbert/basis variation, and local-counterterm classification. This is progress in scoping, not a C6 proof. The actual delta2 Delta_1,coex formula and diagonal C_delta2 traces remain missing."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_principal_second_symbol_formula_results.json",
+      "status": "delta2_principal_second_symbol_formula_fixed_matrix_missing",
+      "verdict": "The principal second-symbol part of delta2 Delta_1 is fixed at formula level on the ambient pullback path: delta2_principal_AB = -(partial_A partial_B g^{ij}) nabla_i nabla_j, with partial_A partial_B g^{-1}=h_A h_B+h_B h_A-k_AB. This closes only the formula-level sign gate for one subblock. The diagonal low-shell traces and all non-principal second-order terms remain open."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_second_connection_formula_results.json",
+      "status": "delta2_second_connection_formula_skeleton_fixed_delta2Gamma_expansion_missing",
+      "verdict": "The second-connection subblock is now fixed at skeleton level. It consists of delta2 Gamma_AB terms, inverse-metric times first-connection variation terms, covariant-derivative variation of h_A, and products delta Gamma_A delta Gamma_B inside the rough one-form Laplacian. This is not yet a complete tensor expansion or a matrix computation; diagonal C_delta2 traces remain open."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_second_ricci_formula_results.json",
+      "status": "delta2_second_ricci_formula_skeleton_fixed_delta2Ricci_expansion_missing",
+      "verdict": "The second Ricci/curvature subblock is now fixed at skeleton level. It consists of delta2 Ricci_AB, mixed-index raising terms, products of first inverse-metric and first Ricci variations, and background-curvature terms from partial_AB g^{-1}. This is not yet the full delta2 Ricci tensor or a finite trace computation; diagonal C_delta2 traces remain open."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_second_projector_formula_results.json",
+      "status": "delta2_second_projector_formula_skeleton_fixed_delta2Pi_expansion_missing",
+      "verdict": "The second coexact-projector subblock is now fixed at skeleton level. It consists of delta2 Pi_coex, inverse scalar-Laplacian second variation, codifferential second variation, side-projector terms, and cross terms with first operator variations. This is not yet a full delta2 Pi formula or a finite trace computation; self-adjointness and diagonal C_delta2 traces remain open."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_second_hilbert_formula_results.json",
+      "status": "delta2_second_hilbert_formula_skeleton_fixed_basis_expansion_missing",
+      "verdict": "The second Hilbert/basis subblock is now fixed at skeleton level. It contains second variation of the one-form inner product, volume-form second variation, basis transport/Gram-Schmidt corrections, degenerate-shell rotations, and self-adjoint representation of the reduced operator. This is not yet a basis convention or finite trace computation; diagonal C_delta2 corrections remain open."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_local_counterterm_classifier_results.json",
+      "status": "delta2_local_counterterm_classifier_skeleton_fixed_finite_residual_proof_missing",
+      "verdict": "The local-counterterm classifier for delta2 Delta_1 is now fixed at skeleton level. Predetermined heat-kernel/local pieces may be subtracted only by a declared scheme, while finite low-shell C_delta2 data and the trace80-type obstruction cannot be removed by post-hoc finite counterterms. This does not prove locality or compensation; it fixes the rule that missing finite residuals must be computed and kept unless exact same-scheme cancellation is derived."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_skeleton_completion_results.json",
+      "status": "delta2_skeleton_phase_complete_trace_phase_open",
+      "verdict": "The delta2 Delta_1,coex skeleton phase is complete: principal second-symbol, second connection, second Ricci/curvature, second coexact-projector, second Hilbert/basis, and local-counterterm classifier blocks are all named and scoped. This is not a determinant closure. The full formulas, self-adjoint reduced representation, local/compensation proof, and diagonal C_delta2 trace tables remain open before C6 can be upgraded."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_trace_phase_priority_results.json",
+      "status": "delta2_trace_phase_priority_fixed_diagonal_blocks_first",
+      "verdict": "The delta2 trace phase now has a fixed priority order. Direct determinant trace work begins with diagonal C_delta2[1,1] and C_delta2[3,3] over 55 symmetric deformation pairs, totaling 51,480 required diagonal entries before reductions. Mixed C_delta2[1,3] and C_delta2[3,1] blocks are archived for self-adjointness and representation checks, but they are not a substitute for the direct Tr(Delta^-1 delta2 Delta) diagonal traces. No C6 status upgrade is allowed until these traces or a same-scheme locality/compensation proof are supplied."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_c11_setup_results.json",
+      "status": "delta2_C11_setup_fixed_inputs_ready_matrix_not_evaluated",
+      "verdict": "The C_delta2[1,1] setup is fixed: use the six quotient-normalized n=1 Killing one-forms, the locked ambient linear embedding path, and 55 symmetric deformation pairs, giving 1,980 raw entries before reductions. This is a setup gate, not a computation. The C11 matrix cannot be evaluated until second connection, Ricci, projector, Hilbert/basis, and local/compensation pieces are expanded in the same convention."
+    },
+    {
+      "file": "s2t_c6_timeboxed_operator_sprint_results.json",
+      "status": "C6_timeboxed_operator_sprint_defined_second_connection_first",
+      "verdict": "The C6 timeboxed sprint is now defined. Continue C6 only by expanding the second-connection part delta2 Gamma_AB on the locked ambient path toward a real C_delta2[1,1] insertion rule. This is the first computation-facing target after principal2. If this sprint cannot produce matrix-enabling content, locality/compensation, or a clear next computation, the direction audit requires shifting effort toward the external determinant gate and neutrino overlap lemma rather than adding more C6 scoping layers."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_gamma_expansion_formula_results.json",
+      "status": "delta2_Gamma_AB_expansion_formula_fixed_C11_insertion_rule_still_missing",
+      "verdict": "The timeboxed C6 sprint has produced its first operator content: an explicit background-covariant formula for delta2 Gamma_AB on the locked ambient path. This is progress beyond a label. It does not yet evaluate C_delta2[1,1]; the next required step is inserting Gamma_AB, Gamma_A Gamma_B products, and inverse-metric/first-connection crosses into the rough one-form Laplacian and then reducing the result against the six n=1 Killing states."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_connection_laplacian_insertion_results.json",
+      "status": "delta2_connection_laplacian_insertion_slots_fixed_C11_matrix_missing",
+      "verdict": "The second-connection sprint has advanced from Gamma_AB tensor formula to rough-Laplacian insertion slots. The C11 connection contribution is now decomposed into single Gamma_AB, inverse-metric/first-connection cross, and Gamma_A Gamma_B product slots. This is matrix-enabling structure, but not yet a matrix evaluation: product expansion and integration against the six n=1 Killing states remain open."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_connection_product_terms_results.json",
+      "status": "delta2_connection_product_terms_expansion_family_fixed_integrals_missing",
+      "verdict": "The Gamma_A Gamma_B product part of the second-connection sprint is now organized into concrete term families with double-counting guardrails. This advances the rough-Laplacian insertion toward a C11 reduction plan, but it is still not a matrix computation: exact index cleanup and integrals against the six n=1 Killing states remain open."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_connection_product_gamma_inserted_results.json",
+      "status": "delta2_connection_product_gamma_inserted_Ctensor_formula_fixed_integrals_missing",
+      "verdict": "The Gamma_A Gamma_B product contribution has advanced from exact index cleanup to a C-tensor integrand formula on the locked ambient path. This is a genuine matrix-enabling formula for the product part of C_conn2[1,1], but it is not yet an evaluated C11 matrix or determinant contribution."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_connection_product_ambient_simplified_results.json",
+      "status": "delta2_connection_product_ambient_simplification_fixed_C11_integrals_missing",
+      "verdict": "The Gamma_A Gamma_B product slot for the locked ambient path simplifies to P_AB(alpha)=-12[a_A<a_B,alpha>+a_B<a_A,alpha>]. This is a genuine reduction toward C_conn2_product[1,1], but it remains only the product subslot; quotient Killing-basis integrals and the rest of delta2 Delta_1 are still open."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_connection_product_C11_moment_results.json",
+      "status": "delta2_connection_product_C11_moment_table_computed_product_subslot_only",
+      "verdict": "The Gamma_A Gamma_B product subslot of C_conn2[1,1] has now been evaluated as a symbolic finite moment table in the raw Sym^2(R4) strain basis. The product subslot is nonzero for all 55 symmetric deformation pairs, with matrix ranks distributed as recorded. This is the first actual C11 subslot table in the delta2 trace sprint, but no determinant conclusion follows until the remaining connection slots and other delta2 operator blocks are combined in the same convention."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_connection_single_gammaAB_ambient_simplified_results.json",
+      "status": "delta2_connection_single_GammaAB_ambient_simplification_fixed_integrals_missing",
+      "verdict": "The single Gamma_AB connection insertion has been simplified on the locked ambient path to Gamma_AB^k_ij=g_ij w_AB^k, yielding an explicit rough-Laplacian slot L(alpha)_c=(nabla_c w^d)alpha_d+2w^d nabla_c alpha_d+3w^d nabla_d alpha_c. This advances the second-connection C11 block beyond the product subslot, but no single-slot C11 integrals have yet been computed."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_connection_single_gammaAB_C11_moment_results.json",
+      "status": "delta2_connection_single_GammaAB_C11_moment_table_computed_single_slot_only",
+      "verdict": "The single Gamma_AB subslot of C_conn2[1,1] has been evaluated as a symbolic finite moment table in the raw Sym^2(R4) strain basis. It is nonzero for 52 of 55 symmetric deformation pairs, with rank distribution recorded. This is the second actual C11 connection subslot table; the remaining inverse-metric/first-connection cross slot must still be derived/evaluated before any full connection-block conclusion."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_connection_metric_cross_ambient_formula_results.json",
+      "status": "delta2_connection_metric_cross_ambient_operator_formula_fixed_C11_integrals_missing",
+      "verdict": "The inverse-metric/first-connection cross slot has been derived on the locked ambient path. Together with the already computed product and single-GammaAB moment tables, this completes the formula-level connection-slot triad for C_conn2[1,1]. The next required step is the metric-cross moment table and then explicit addition of the three connection subslots."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_connection_metric_cross_C11_moment_results.json",
+      "status": "delta2_connection_metric_cross_C11_moment_table_computed_connection_subslot_triad_ready",
+      "verdict": "The inverse-metric/first-connection metric-cross subslot of C_conn2[1,1] has been evaluated as a symbolic finite moment table in the raw Sym^2(R4) strain basis. It is nonzero for all 55 symmetric deformation pairs, with rank distribution 4:39 and 6:16. The second-connection C11 subslot triad is now table-complete; full C_conn2[1,1] assembly is the next required step."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_connection_full_C11_assembly_results.json",
+      "status": "delta2_connection_full_C11_block_assembled_nonzero_all_pairs_nonconnection_blocks_missing",
+      "verdict": "The second-connection C_conn2[1,1] block has been assembled from product, single-GammaAB, and metric-cross subslot tables. In the raw Sym^2(R4) strain basis it is nonzero for all 55 symmetric deformation pairs, with rank distribution 2:6, 4:39, 6:10. Therefore there is no internal cancellation of the second-connection block. C6 remains open because the Ricci, projector, Hilbert/basis, principal, and compensation pieces have not yet been added."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_principal_C11_moment_results.json",
+      "status": "delta2_principal_C11_moment_table_computed_nonconnection_combination_missing",
+      "verdict": "The principal second-symbol contribution to C_delta2[1,1] has been evaluated as a symbolic finite moment table in the raw Sym^2(R4) strain basis. It is nonzero for all 55 symmetric deformation pairs, with rank distribution 4:39 and 6:16. C6 remains open: the principal table must be added to the assembled connection table, and the Ricci/projector/Hilbert/local pieces are still missing."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_principal_plus_connection_C11_results.json",
+      "status": "delta2_principal_plus_connection_C11_block_nonzero_all_pairs_remaining_blocks_missing",
+      "verdict": "The principal second-symbol C11 table has been added to the assembled second-connection C11 table. The combined block is nonzero for all 55 raw symmetric deformation pairs, with rank distribution 4:39 and 6:16. This rules out cancellation between the principal and connection blocks alone. C6 remains open only through the remaining Ricci/curvature, projector, Hilbert/basis, and compensation pieces."
+    },
+    {
+      "file": "s2t_c6_l21_delta2_ricci_C11_gauss_results.json",
+      "status": "delta2_Ricci_C11_computed_and_combined_with_principal_connection",
+      "verdict": "The mixed second Ricci endomorphism has been computed from the exact Gauss shape-operator formula for the linearly deformed sphere and integrated against the six quotient-normalized Killing forms. The resulting 55-pair C11 table is then added to the existing principal+connection table. The trace-scaling control A=B=I reproduces delta2 Ric#=12I. The combined rank and zero-pair data decide whether curvature can cancel the previously nonzero C11 block."
+    },
+    {
+      "file": "s2t_c6_same_scheme_final_verdict_results.json",
+      "status": "C6_exact_pi4_absorption_downgraded_no_mandatory_same_scheme_compensation",
+      "verdict": "No mandatory same-scheme Maxwell-ghost compensation is present in the audited model. The geometric C11 block remains nonzero; projector and Hilbert transport are determinant-neutral; standard FP leaves a nonzero scalar half-determinant; det-prime, zero/gauge and Jacobian factors do not cancel the nonzero tower; local counterterms cannot erase finite low-shell spectral data; and no mandatory paired sector is known. Therefore exact pi^-4 absorption is not a theorem of the current construction and is downgraded to strong structural compression. This closes the present C6 rescue branch negatively, not the whole research program."
+    }
+  ],
+  "closure_matrix": [
+    {
+      "node": "C6_formal_decomposition",
+      "question": "Can Gamma_Maxwell+ghost be decomposed into coexact, exact, ghost, zero/gauge and local counterterm sectors?",
+      "current_result": "yes_as_formal_skeleton",
+      "supporting_audits": [
+        "s2t_c6_formal_gamma_results.json",
+        "s2t_c6_operator_trace_skeleton_results.json"
+      ],
+      "status": "closed_formally_not_theorem",
+      "effect_on_C6": "localizes the missing proof but does not prove the pi^-4 determinant residue"
+    },
+    {
+      "node": "P02_rank_selection",
+      "question": "Is the finite first-strain rank naturally P02=Sym^2(R4)=1+9=10?",
+      "current_result": "yes_conditionally_from_first_ambient_strain",
+      "supporting_audits": [
+        "s2t_c6_operator_trace_skeleton_results.json",
+        "s2t_c6_second_variation_sign_results.json"
+      ],
+      "status": "conditional_lead",
+      "effect_on_C6": "explains why N=10 is natural, but not why higher/nonzero towers are absent or cancelled"
+    },
+    {
+      "node": "coexact_bosonic_sign",
+      "question": "Does the coexact real-bosonic logdet have the sign needed for the suppression factor?",
+      "current_result": "formally_compatible",
+      "supporting_audits": [
+        "s2t_c6_second_variation_sign_results.json"
+      ],
+      "status": "closed_as_sign_check_only",
+      "effect_on_C6": "supports the direction 1-N/(24 S_geo), but leaves determinant content open"
+    },
+    {
+      "node": "constant_kappa_branch_isolation",
+      "question": "Can the retained kappa_Cas=1/24 scalar row be kept out of traceless P02 leakage?",
+      "current_result": "yes_for_traceless_RP3_first_strain",
+      "supporting_audits": [
+        "s2t_c6_scalar_p02_projection_results.json"
+      ],
+      "status": "partially_closed",
+      "effect_on_C6": "protects the 1/24 branch, but does not remove the nonzero scalar residual tower"
+    },
+    {
+      "node": "standard_FP_scalar_residual",
+      "question": "Does bare covariant FP/Hodge bookkeeping cancel scalar nonzero modes automatically?",
+      "current_result": "no_leaves_minus_half_scalar_logdet_in_Gamma",
+      "supporting_audits": [
+        "s2t_c6_scalar_fp_bookkeeping_results.json",
+        "s2t_c6_ghost_exact_isolation_results.json"
+      ],
+      "status": "blocking_gap",
+      "effect_on_C6": "if the residual carries P02, the effective rank changes and the pi^-4 match is lost"
+    },
+    {
+      "node": "nonzero_scalar_symmetry_escape",
+      "question": "Can the nonzero scalar residual be set to zero by an RP3 parity or P02 selection rule?",
+      "current_result": "no_first_even_nonzero_shell_ell2_has_multiplicity_9_and_can_couple",
+      "supporting_audits": [
+        "s2t_c6_scalar_variation_p02_results.json"
+      ],
+      "status": "failed_route",
+      "effect_on_C6": "moves the obstruction from bookkeeping into a real nonzero tower cancellation problem"
+    },
+    {
+      "node": "local_or_zero_gauge_rescue",
+      "question": "Can local counterterms, zero modes, gauge volume or Jacobians absorb the nonzero scalar tower?",
+      "current_result": "not_proven_and_structurally_fails_for_nonlocal_Bessel_tower",
+      "supporting_audits": [
+        "s2t_c6_scalar_rescue_routes_results.json"
+      ],
+      "status": "failed_route",
+      "effect_on_C6": "standard FP rescue is blocked unless an equal opposite nonzero determinant is derived"
+    },
+    {
+      "node": "paired_sector_search",
+      "question": "Is there a known additional mandatory sector giving +1/2 log det' Delta0_nonzero with the same P02 coupling?",
+      "current_result": "no_known_candidate_found",
+      "supporting_audits": [
+        "s2t_c6_paired_sector_search_results.json"
+      ],
+      "status": "failed_route_except_definitional_quotient",
+      "effect_on_C6": "known BRST/NK, Hodge-remnant, torsion, duality and Dirac routes do not rescue C6 as theorem"
+    },
+    {
+      "node": "physical_transverse_quotient",
+      "question": "Can the determinant be defined directly on the physical coexact quotient before introducing scalar FP residual?",
+      "current_result": "viable_as_definitional_scheme_not_derived_cancellation",
+      "supporting_audits": [
+        "s2t_c6_ghost_exact_isolation_results.json",
+        "s2t_c6_paired_sector_search_results.json"
+      ],
+      "status": "only_surviving_clean_route",
+      "effect_on_C6": "keeps C6 open as a definition/theorem obligation, not as a completed standard-FP proof"
+    },
+    {
+      "node": "L21_low_shell_block_spec",
+      "question": "What finite low-shell coexact block must be computed before claiming the P02 determinant residue?",
+      "current_result": "explicit_blocks_are_1_to_1_1_to_3_3_to_1_and_3_to_3_with_n3_dimension_30",
+      "supporting_audits": [
+        "s2t_c6_l21_low_shell_block_spec_results.json"
+      ],
+      "status": "closed_as_specification_only",
+      "effect_on_C6": "turns the vague higher-mode caveat into a concrete finite low-shell calculation"
+    },
+    {
+      "node": "n1_diagonal_cancellation",
+      "question": "Does the traceless P02 strain vanish on the first coexact Killing shell after Hodge-filtered projection?",
+      "current_result": "yes_on_n1_projection_but_the_image_leaks_to_cubic_content",
+      "supporting_audits": [
+        "s2t_c6_l21_n1_to_n3_leakage_results.json"
+      ],
+      "status": "partial_cancellation_not_closure",
+      "effect_on_C6": "removes the naive 1->1 diagonal obstruction but creates a sharper 1->3 obstruction gate"
+    },
+    {
+      "node": "n1_to_n3_coexact_leakage",
+      "question": "Do the six n=1 Killing states leak into the allowed n=3 coexact shell under first strain?",
+      "current_result": "proxy_image_has_rank_6_trace_norm_96_and_lambda_weighted_trace_6_before_explicit_n3_projection",
+      "supporting_audits": [
+        "s2t_c6_l21_n1_to_n3_leakage_results.json",
+        "s2t_c6_l21_n3_explicit_basis_gate_results.json"
+      ],
+      "status": "blocking_explicit_projection_gate",
+      "effect_on_C6": "rank-10 absorption cannot be claimed until the six leaked vectors are projected into a quotient-normalized 30-dimensional n=3 coexact basis"
+    },
+    {
+      "node": "explicit_n3_coexact_basis",
+      "question": "Is there an explicit orthonormal n=3 coexact basis on L(2,1) for the determinant trace?",
+      "current_result": "yes_constructed_as_30_dimensional_cubic_tangent_divergence_free_harmonic_vector_polynomial_space",
+      "supporting_audits": [
+        "s2t_c6_l21_n3_explicit_basis_gate_results.json",
+        "s2t_c6_l21_n3_explicit_projection_results.json"
+      ],
+      "status": "basis_constructed_projection_nonzero",
+      "effect_on_C6": "the old hard gate is passed negatively for the clean-rank route: the six leaked images have nonzero projection, so C6 now needs a full-operator cancellation or derived absorption identity"
+    },
+    {
+      "node": "n3_projected_low_shell_obstruction",
+      "question": "What happens when the six leaked n=1 images are projected into the explicit n=3 coexact basis?",
+      "current_result": "projected_trace_80_rank_6_with_eigenvalues_12_12_14_14_14_14_in_the_modelled_conformal_slice",
+      "supporting_audits": [
+        "s2t_c6_l21_n3_explicit_projection_results.json"
+      ],
+      "status": "concrete_low_shell_obstruction_candidate",
+      "effect_on_C6": "proxy warning becomes a concrete finite low-shell obstruction candidate, but the final determinant coefficient still requires all one-form variation terms and Hilbert-metric bookkeeping"
+    },
+    {
+      "node": "n3_L21_parity_descent",
+      "question": "Can the explicit cubic n=3 one-form basis descend through the antipodal quotient to L(2,1)?",
+      "current_result": "yes_cubic_coefficients_are_odd_and_dx_is_odd_so_the_one_form_is_antipodal_even",
+      "supporting_audits": [
+        "s2t_c6_l21_n3_parity_descent_results.json"
+      ],
+      "status": "closed_normalization_subgate",
+      "effect_on_C6": "the nonzero n=3 projection is not removed by RP3 parity and should not be multiplied by an extra cover factor"
+    },
+    {
+      "node": "full_operator_rescue_gate",
+      "question": "What must happen after the nonzero n=3 projection for C6 to survive?",
+      "current_result": "five_remaining_term_classes_must_cancel_or_absorb_the_rank6_trace80_projection",
+      "supporting_audits": [
+        "s2t_c6_l21_laplacian_variation_results.json",
+        "s2t_c6_l21_full_operator_rescue_gate_results.json"
+      ],
+      "status": "primary_blocking_gap_after_projection",
+      "effect_on_C6": "C6 now requires explicit connection, Ricci, coexact-projector, Hilbert-metric, and delta2-Delta cancellation/absorption; without it pi^-4 is structural compression"
+    },
+    {
+      "node": "n3_finite_counterterm_escape",
+      "question": "Can the nonzero n=1<->n=3 projected trace be removed by local counterterms?",
+      "current_result": "no_trace80_is_finite_low_shell_global_spectral_data_not_UV_heat_kernel_asymptotic",
+      "supporting_audits": [
+        "s2t_c6_l21_coexact_locality_gate_results.json",
+        "s2t_c6_l21_n3_finite_counterterm_gate_results.json"
+      ],
+      "status": "failed_rescue_route",
+      "effect_on_C6": "local subtraction cannot erase the concrete n3 low-shell trace without a forbidden finite scheme choice"
+    },
+    {
+      "node": "n3_obstruction_scale",
+      "question": "Is the nonzero n=3 projection small enough to treat as the N_need-10 scheme gap?",
+      "current_result": "no_trace80_is_8_times_rank10_and_trace_over_gap_squared_is_about_55_7_times_Nneed_minus_10",
+      "supporting_audits": [
+        "s2t_c6_l21_n3_obstruction_scale_results.json"
+      ],
+      "status": "failed_small_gap_rescue",
+      "effect_on_C6": "the n3 low-shell block requires genuine cancellation or absorption, not a rounding or tiny scheme-gap explanation"
+    },
+    {
+      "node": "full_operator_rescue_checklist",
+      "question": "What exact computations remain before C6 can be rescued after the nonzero n=3 obstruction?",
+      "current_result": "five_required_blocks_connection_Ricci_projector_Hilbert_metric_delta2_Delta_must_be_derived_and_evaluated",
+      "supporting_audits": [
+        "s2t_c6_l21_laplacian_variation_results.json",
+        "s2t_c6_l21_full_operator_checklist_results.json"
+      ],
+      "status": "open_computation_checklist_fixed",
+      "effect_on_C6": "turns the remaining proof gap into five auditable computations with pass/fail conditions"
+    },
+    {
+      "node": "connection_variation_formula",
+      "question": "Is the connection-variation part of the full one-form operator fixed at formula level?",
+      "current_result": "yes_for_conformal_slice_delta_Gamma_kij_equals_delta_kj_nabla_i_q_plus_delta_ki_nabla_j_q_minus_g_ij_nabla_k_q",
+      "supporting_audits": [
+        "s2t_c6_l21_connection_variation_formula_results.json"
+      ],
+      "status": "formula_fixed_matrix_missing",
+      "effect_on_C6": "first full-operator checklist item advanced from slogan to formula, but C_conn[1,3] matrix evaluation is still required"
+    },
+    {
+      "node": "ricci_variation_formula",
+      "question": "Is the Ricci/curvature part of the full one-form operator fixed at formula level?",
+      "current_result": "yes_for_conformal_slice_delta_Ric_ab_equals_minus_Hess_ab_q_minus_g_ab_nabla2_q_with_mixed_index_raising_piece_minus4q",
+      "supporting_audits": [
+        "s2t_c6_l21_ricci_variation_formula_results.json"
+      ],
+      "status": "formula_fixed_matrix_missing",
+      "effect_on_C6": "second full-operator checklist item advanced from slogan to formula, but C_Ric[1,3] matrix evaluation is still required"
+    },
+    {
+      "node": "coexact_projector_variation_formula",
+      "question": "Is the moving coexact-projector part of the full one-form operator fixed at formula level?",
+      "current_result": "yes_Pi_coex_equals_I_minus_d_Delta0_inverse_delta_and_delta_Pi_terms_must_enter_delta_Pi_Delta_Pi",
+      "supporting_audits": [
+        "s2t_c6_l21_projector_variation_formula_results.json"
+      ],
+      "status": "formula_fixed_matrix_missing",
+      "effect_on_C6": "third full-operator checklist item advanced from slogan to operator formula, but C_proj[1,3] and self-adjointness checks are still required"
+    },
+    {
+      "node": "projector_T5_direct_quotient_contraction",
+      "question": "Does the T1/T3 ell=4 scalar leakage survive the outer dG contraction with the quotient-normalized n=1/n=3 coexact bases?",
+      "current_result": "no_complete_36_by_25_table_has_numeric_rank_zero_by_exact_coexact_orthogonality",
+      "supporting_audits": [
+        "s2t_c6_projector_t5_quotient_contraction_results.json"
+      ],
+      "status": "closed_direct_channel_cross_return_terms_open",
+      "effect_on_C6": "the pure Pi_AB outer-dG higher-shell leakage is removed from coexact matrix elements, but Pi_Delta1A_PiB cross-return terms and Hilbert/self-adjointness corrections remain to be evaluated"
+    },
+    {
+      "node": "hilbert_inner_product_variation_formula",
+      "question": "Is the Hilbert inner-product and normalization variation fixed at formula level?",
+      "current_result": "yes_delta_inner_product_equals_integral_minus_h_ab_plus_half_trh_g_ab_contracting_one_forms_and_for_h_2qg_in_3d_reduces_to_q_overlap",
+      "supporting_audits": [
+        "s2t_c6_l21_hilbert_variation_formula_results.json"
+      ],
+      "status": "formula_fixed_matrix_missing",
+      "effect_on_C6": "fourth full-operator checklist item advanced from slogan to formula, but C_Hilb[1,3], basis-normalization, and self-adjointness checks are still required"
+    },
+    {
+      "node": "delta2_delta_gate",
+      "question": "Can Tr(Delta^-1 delta^2 Delta) be dropped, locally subtracted, compensated, or must it be computed as a finite block?",
+      "current_result": "gate_fixed_locality_or_exact_compensation_or_finite_C_delta2_required",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_delta_gate_results.json"
+      ],
+      "status": "blocking_gate_matrix_missing",
+      "effect_on_C6": "fifth full-operator checklist item is now explicit; trace-square suppression cannot be promoted to theorem until delta2 Delta is proven local/compensated or evaluated as C_delta2"
+    },
+    {
+      "node": "delta2_finite_block_spec",
+      "question": "What finite C_delta2 data must be computed first if delta2 Delta is not proven local or compensated?",
+      "current_result": "diagonal_trace_blocks_C_delta2_11_and_33_first_55_symmetric_deformation_pairs_51480_raw_entries_before_reductions",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_finite_block_spec_results.json"
+      ],
+      "status": "blocking_spec_fixed_path_and_matrix_missing",
+      "effect_on_C6": "turns delta2 Delta from a caveat into a scoped finite calculation; path choice and diagonal shell traces are now mandatory before using any cancellation claim"
+    },
+    {
+      "node": "delta2_path_choice_gate",
+      "question": "Is the second-variation metric/embedding path fixed before C_delta2 is computed or used for cancellation?",
+      "current_result": "gate_identified_preferred_route_is_ambient_linear_embedding_strain",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_path_choice_gate_results.json"
+      ],
+      "status": "gate_identified_followed_by_formula_node",
+      "effect_on_C6": "prevents hidden fitting through g_second_derivative choice; the follow-up ambient formula node fixes the preferred route before numbers"
+    },
+    {
+      "node": "delta2_ambient_path_formula",
+      "question": "What are g'(0) and g''(0) for the preferred ambient linear embedding path?",
+      "current_result": "fixed_gprime_A_2_uAv_gsecond_A_2_AuAv_mixed_AB_AuBv_plus_BuAv",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_ambient_path_formula_results.json"
+      ],
+      "status": "formula_fixed_operator_delta2_missing",
+      "effect_on_C6": "removes the path-choice ambiguity for the theorem route, but delta2 Delta_1_coex and finite C_delta2 traces remain unevaluated"
+    },
+    {
+      "node": "delta2_operator_decomposition",
+      "question": "Which subblocks must be derived to obtain delta2 Delta_1,coex on the fixed ambient path?",
+      "current_result": "six_subblocks_fixed_principal_second_symbol_connection2_ricci2_projector2_hilbert2_local_classifier_all_missing",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_operator_decomposition_results.json"
+      ],
+      "status": "scoped_blocking_formula_and_matrix_missing",
+      "effect_on_C6": "turns delta2 Delta_1_coex into six auditable formula tasks; no C6 upgrade until they are derived and diagonal traces evaluated or proven local"
+    },
+    {
+      "node": "delta2_principal_second_symbol_formula",
+      "question": "Is the principal second-symbol part of delta2 Delta_1 fixed on the ambient path?",
+      "current_result": "formula_fixed_delta2_principal_AB_minus_partialAB_ginv_ij_nabla_i_nabla_j_with_partialAB_ginv_hAhB_plus_hBhA_minus_kAB",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_principal_second_symbol_formula_results.json"
+      ],
+      "status": "formula_fixed_matrix_missing",
+      "effect_on_C6": "one of six delta2 subblock formula gates is advanced, but diagonal C_delta2 traces and all other second-order subblocks remain open"
+    },
+    {
+      "node": "delta2_second_connection_formula",
+      "question": "Are the second-connection terms in delta2 Delta_1 located and separated from the principal block?",
+      "current_result": "skeleton_fixed_delta2Gamma_inverse_metric_variation_covariant_derivative_variation_and_deltaGamma_deltaGamma_products_identified",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_second_connection_formula_results.json"
+      ],
+      "status": "skeleton_fixed_full_formula_matrix_missing",
+      "effect_on_C6": "second delta2 gear is scoped, but delta2 Gamma expansion and diagonal C_delta2 traces remain missing"
+    },
+    {
+      "node": "delta2_second_ricci_formula",
+      "question": "Are the second Ricci/curvature terms in delta2 Delta_1 located and separated from principal/connection blocks?",
+      "current_result": "skeleton_fixed_delta2Ricci_mixed_index_raising_first_variation_products_and_background_curvature_terms_identified",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_second_ricci_formula_results.json"
+      ],
+      "status": "skeleton_fixed_full_formula_matrix_missing",
+      "effect_on_C6": "third delta2 gear is scoped, but delta2 Ricci expansion and diagonal C_delta2 traces remain missing"
+    },
+    {
+      "node": "delta2_second_projector_formula",
+      "question": "Are the second coexact-projector and reduced-operator side terms located?",
+      "current_result": "skeleton_fixed_delta2Pi_inverse_scalar_laplacian_second_variation_side_projector_and_cross_operator_terms_identified",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_second_projector_formula_results.json"
+      ],
+      "status": "skeleton_fixed_full_formula_self_adjointness_matrix_missing",
+      "effect_on_C6": "fourth delta2 gear is scoped, but delta2 Pi expansion, self-adjointness, and diagonal C_delta2 traces remain missing"
+    },
+    {
+      "node": "delta2_second_hilbert_formula",
+      "question": "Are the second Hilbert metric and basis-normalization terms located?",
+      "current_result": "skeleton_fixed_second_inner_product_volume_basis_transport_degenerate_rotation_and_self_adjoint_representation_terms_identified",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_second_hilbert_formula_results.json"
+      ],
+      "status": "skeleton_fixed_basis_choice_self_adjointness_matrix_missing",
+      "effect_on_C6": "fifth delta2 gear is scoped, but basis transport, second Gram correction, self-adjointness, and diagonal C_delta2 traces remain missing"
+    },
+    {
+      "node": "delta2_local_counterterm_classifier",
+      "question": "Which delta2 Delta_1 pieces can be locally subtracted, and which finite low-shell residuals must remain?",
+      "current_result": "skeleton_fixed_local_heat_kernel_finite_low_shell_and_same_scheme_compensation_buckets_separated",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_local_counterterm_classifier_results.json"
+      ],
+      "status": "skeleton_fixed_locality_compensation_finite_table_missing",
+      "effect_on_C6": "sixth delta2 gear is scoped; finite C_delta2 residuals cannot be erased by post-hoc local counterterms and must be computed or exactly compensated"
+    },
+    {
+      "node": "delta2_skeleton_completion_gate",
+      "question": "Is the delta2 Delta_1 skeleton phase complete, and what phase comes next?",
+      "current_result": "six_subblocks_named_all_skeletons_or_formulas_present_but_trace_phase_open",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_skeleton_completion_results.json"
+      ],
+      "status": "phase_complete_trace_phase_open",
+      "effect_on_C6": "delta2 scoping phase is complete, but no status upgrade is allowed until full formulas, self-adjointness, locality/compensation, and diagonal C_delta2 traces are done"
+    },
+    {
+      "node": "delta2_trace_phase_priority",
+      "question": "Which C_delta2 traces must be computed first after skeleton completion?",
+      "current_result": "priority_fixed_diagonal_C_delta2_11_then_33_before_mixed_archive_blocks_51480_entries",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_trace_phase_priority_results.json"
+      ],
+      "status": "trace_phase_started_priority_fixed_matrices_missing",
+      "effect_on_C6": "starts the measurement phase: direct diagonal traces come before mixed archive blocks, but no C6 upgrade is allowed before actual C_delta2 values or locality/compensation proof"
+    },
+    {
+      "node": "delta2_C11_setup",
+      "question": "Are the inputs and conventions for the first diagonal trace block C_delta2[1,1] fixed?",
+      "current_result": "setup_fixed_six_n1_Killing_states_55_pairs_1980_raw_entries_but_matrix_not_evaluated",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_c11_setup_results.json"
+      ],
+      "status": "setup_fixed_operator_pieces_missing_matrix_missing",
+      "effect_on_C6": "first trace block is ready as a work package, but C6 cannot move until the missing delta2 operator pieces are expanded and C11 values are computed or compensated"
+    },
+    {
+      "node": "C6_timeboxed_operator_sprint",
+      "question": "What is the next allowed C6 step after the direction re-audit?",
+      "current_result": "timeboxed_sprint_target_second_connection_delta2Gamma_AB_toward_C11_or_fallback",
+      "supporting_audits": [
+        "s2t_c6_timeboxed_operator_sprint_results.json"
+      ],
+      "status": "sprint_defined_operator_expansion_required",
+      "effect_on_C6": "prevents more label-only C6 work; next progress must expand second-connection content toward C11, prove locality/compensation, or trigger external/neutrino fallback"
+    },
+    {
+      "node": "delta2_Gamma_AB_expansion_formula",
+      "question": "Is the mixed second-connection tensor delta2 Gamma_AB explicit enough to enter the rough one-form Laplacian?",
+      "current_result": "Gamma_AB_formula_fixed_background_nabla_convention_but_laplacian_insertion_and_C11_matrix_missing",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_gamma_expansion_formula_results.json"
+      ],
+      "status": "operator_formula_fixed_laplacian_insertion_matrix_missing",
+      "effect_on_C6": "first timeboxed sprint output gives real operator content, but C6 still needs rough-Laplacian insertion and C11 matrix evaluation or locality/compensation"
+    },
+    {
+      "node": "delta2_connection_laplacian_insertion",
+      "question": "Are the second-connection rough-Laplacian insertion slots fixed for C11 work?",
+      "current_result": "single_GammaAB_metric_cross_and_GammaA_GammaB_slots_fixed_product_expansion_and_C11_matrix_missing",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_connection_laplacian_insertion_results.json"
+      ],
+      "status": "operator_slots_fixed_product_expansion_matrix_missing",
+      "effect_on_C6": "connection2 is now mounted into rough Laplacian slots, but C6 still needs product expansion and integration against n1 Killing states"
+    },
+    {
+      "node": "delta2_connection_product_terms",
+      "question": "Are the Gamma_A Gamma_B product terms organized enough for C11 reduction?",
+      "current_result": "product_families_fixed_derivative_index_one_form_component_and_mixed_gradient_bins_integrals_missing",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_connection_product_terms_results.json"
+      ],
+      "status": "product_families_fixed_index_cleanup_integrals_missing",
+      "effect_on_C6": "dirty product slot is decomposed for reduction, but exact index table and C11 product integrals remain missing"
+    },
+    {
+      "node": "delta2_connection_product_gamma_inserted",
+      "question": "Has the Gamma_A Gamma_B product slot been rewritten in first-strain C-tensor form for C11 integration?",
+      "current_result": "Gamma_products_substituted_by_C_A_C_B_integrand_template_but_C11_integrals_missing",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_connection_product_gamma_inserted_results.json"
+      ],
+      "status": "Ctensor_integrand_fixed_C11_integrals_missing",
+      "effect_on_C6": "moves the product slot closer to explicit C_conn2[1,1] computation, but no trace value or determinant cancellation is established"
+    },
+    {
+      "node": "delta2_connection_product_ambient_simplified",
+      "question": "Does the locked ambient strain path simplify the Gamma_A Gamma_B product slot before C11 integration?",
+      "current_result": "product_operator_reduced_to_rank_two_aA_aB_contractions_C11_integrals_missing",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_connection_product_ambient_simplified_results.json"
+      ],
+      "status": "ambient_product_simplified_C11_integrals_missing",
+      "effect_on_C6": "turns the product part of C_conn2[1,1] into finite Killing/ambient-gradient moment integrals, but no determinant trace value is computed"
+    },
+    {
+      "node": "delta2_connection_product_C11_moment_table",
+      "question": "What is the finite C11 table for the Gamma_A Gamma_B product subslot in the raw ambient strain basis?",
+      "current_result": "all_55_symmetric_strain_pairs_nonzero_product_subslot_rank_distribution_1_to_5",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_connection_product_C11_moment_results.json",
+        "s2t_c6_l21_delta2_connection_product_moment_table_data.json"
+      ],
+      "status": "first_C11_subslot_table_computed_full_operator_missing",
+      "effect_on_C6": "shows the product part of the second-connection C11 block is active and nonzero; cancellation, if any, must come from other slots or blocks"
+    },
+    {
+      "node": "delta2_connection_single_GammaAB_ambient_simplified",
+      "question": "Does the locked ambient strain path simplify the single Gamma_AB rough-Laplacian slot?",
+      "current_result": "GammaAB_reduced_to_gij_wAB_operator_slot_fixed_C11_integrals_missing",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_connection_single_gammaAB_ambient_simplified_results.json"
+      ],
+      "status": "single_GammaAB_operator_simplified_C11_integrals_missing",
+      "effect_on_C6": "moves the non-product second-connection slot toward finite C11 moments, but no full connection matrix is computed"
+    },
+    {
+      "node": "delta2_connection_single_GammaAB_C11_moment_table",
+      "question": "What is the finite C11 table for the single Gamma_AB connection subslot in the raw ambient strain basis?",
+      "current_result": "single_GammaAB_nonzero_for_52_of_55_pairs_rank_distribution_0_2_4_6",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_connection_single_gammaAB_C11_moment_results.json",
+        "s2t_c6_l21_delta2_connection_single_gammaAB_moment_table_data.json"
+      ],
+      "status": "second_C11_connection_subslot_table_computed_cross_slot_missing",
+      "effect_on_C6": "shows the single GammaAB slot is active and structurally different from the product slot; full connection cancellation still requires the metric-cross slot and addition of subslots"
+    },
+    {
+      "node": "delta2_connection_metric_cross_ambient_formula",
+      "question": "Is the inverse-metric/first-connection cross slot formula-ready on the locked ambient path?",
+      "current_result": "metric_cross_operator_reduced_to_SA_tauA_aB_terms_C11_table_missing",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_connection_metric_cross_ambient_formula_results.json"
+      ],
+      "status": "metric_cross_formula_fixed_C11_moment_table_missing",
+      "effect_on_C6": "completes formula-level triad of connection subslots; full connection C11 still needs metric-cross moments and addition with product/single tables"
+    },
+    {
+      "node": "delta2_connection_metric_cross_C11_moment_table",
+      "question": "What is the finite C11 table for the inverse-metric/first-connection metric-cross subslot?",
+      "current_result": "metric_cross_nonzero_for_all_55_pairs_rank_distribution_4_and_6_connection_triad_table_complete",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_connection_metric_cross_C11_moment_results.json",
+        "s2t_c6_l21_delta2_connection_metric_cross_moment_table_data.json"
+      ],
+      "status": "connection_subslot_triad_table_complete_full_addition_missing",
+      "effect_on_C6": "finishes the three second-connection C11 subslot tables; full connection block can now be assembled but C6 still needs non-connection delta2 pieces"
+    },
+    {
+      "node": "delta2_connection_full_C11_assembly",
+      "question": "Does the assembled second-connection C11 block cancel internally after adding product, single GammaAB, and metric-cross subslots?",
+      "current_result": "assembled_connection_block_nonzero_for_all_55_pairs_rank_distribution_2_4_6",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_connection_full_C11_assembly_results.json",
+        "s2t_c6_l21_delta2_connection_full_C11_table_data.json"
+      ],
+      "status": "full_connection_C11_block_computed_nonconnection_blocks_missing",
+      "effect_on_C6": "rules out internal cancellation of the second-connection C11 block; full C6 still requires non-connection delta2 pieces"
+    },
+    {
+      "node": "delta2_principal_C11_moment_table",
+      "question": "What is the finite C11 table for the principal second-symbol block?",
+      "current_result": "principal_block_nonzero_for_all_55_pairs_rank_distribution_4_and_6",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_principal_C11_moment_results.json",
+        "s2t_c6_l21_delta2_principal_C11_moment_table_data.json"
+      ],
+      "status": "principal_C11_table_computed_combination_missing",
+      "effect_on_C6": "adds the first non-connection C11 table; cancellation with connection and remaining blocks still untested"
+    },
+    {
+      "node": "delta2_principal_plus_connection_C11_assembly",
+      "question": "Does the principal second-symbol C11 block cancel the assembled second-connection C11 block?",
+      "current_result": "principal_plus_connection_nonzero_for_all_55_pairs_rank_distribution_4_and_6",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_principal_plus_connection_C11_results.json",
+        "s2t_c6_l21_delta2_principal_plus_connection_C11_table_data.json"
+      ],
+      "status": "principal_connection_C11_combined_nonzero_remaining_blocks_missing",
+      "effect_on_C6": "rules out cancellation between principal and connection blocks alone; remaining rescue requires Ricci/projector/Hilbert/local pieces"
+    },
+    {
+      "node": "delta2_Ricci_C11_Gauss_assembly",
+      "question": "Does the exact mixed Ricci block cancel the assembled principal-plus-connection C11 table?",
+      "current_result": "no_Ricci_ranks_0_12_4_27_6_16_but_combined_all_55_pairs_nonzero_ranks_4_39_6_16",
+      "supporting_audits": [
+        "s2t_c6_l21_delta2_ricci_C11_gauss_results.json",
+        "s2t_c6_l21_delta2_ricci_C11_gauss_table_data.json",
+        "s2t_c6_l21_delta2_principal_connection_ricci_C11_table_data.json"
+      ],
+      "status": "geometric_C11_cancellation_failed_same_scheme_determinant_gate",
+      "effect_on_C6": "projector is closed, Hilbert similarity is determinant-neutral, and Ricci reinforces rather than cancels principal plus connection; only mandatory Maxwell-ghost scheme compensation can still rescue exact pi^-4 absorption"
+    },
+    {
+      "node": "same_scheme_Maxwell_ghost_final_verdict",
+      "question": "Does the declared Maxwell-ghost scheme contain a mandatory no-fit compensation for the surviving finite geometric block?",
+      "current_result": "no_mandatory_compensation_found_across_scalar_zero_gauge_local_paired_or_transport_sectors",
+      "supporting_audits": [
+        "s2t_c6_same_scheme_final_verdict_results.json",
+        "s2t_c6_scalar_rescue_routes_results.json",
+        "s2t_c6_paired_sector_search_results.json"
+      ],
+      "status": "exact_pi4_determinant_theorem_downgraded",
+      "effect_on_C6": "closes the present rescue branch negatively; pi^-4 remains structural compression and S_vac stays conditional"
+    }
+  ],
+  "decision_tree": [
+    {
+      "if": "physical_transverse_quotient_is_adopted_and_external_gate_accepts_it",
+      "then": "C6 remains a conditional determinant route with coexact-only P02 absorption"
+    },
+    {
+      "if": "explicit_n3_coexact_projection_of_the_six_leaked_vectors_is_zero",
+      "then": "this route would have removed the low-shell coexact obstruction, but the current explicit projection audit does not realize this case"
+    },
+    {
+      "if": "the_current_nonzero_n3_projection_survives_full_one_form_variation_and_is_not_absorbed_by_a_derived_identity",
+      "then": "the rank-10 pi^-4 determinant theorem is blocked even in the physical coexact quotient"
+    },
+    {
+      "if": "T1_T3_or_T4_scalar_leakage_enters_only_through_the_outer_dG_of_PiAB",
+      "then": "its direct coexact quotient matrix element vanishes exactly, but cross-return terms with deltaDelta1 must still be tested"
+    },
+    {
+      "if": "standard_covariant_FP_is_required_without_new_sector",
+      "then": "C6 theorem route is blocked by the nonzero scalar half-determinant residual"
+    },
+    {
+      "if": "new_paired_sector_is_introduced_by_hand",
+      "then": "C6 becomes a model-extension assumption unless the sector is mandatory from BRST, topology or EFT"
+    },
+    {
+      "if": "neither_quotient_nor_mandatory_pairing_is_derived",
+      "then": "pi^-4 must be classified as strong structural compression, not mature determinant theorem"
+    },
+    {
+      "if": "principal_connection_Ricci_C11_is_nonzero_for_all_55_pairs_and_projector_Hilbert_are_neutral",
+      "then": "the final C6 rescue must come from mandatory same-scheme Maxwell-ghost det-prime zero-gauge or scalar-half bookkeeping; otherwise downgrade exact pi^-4"
+    },
+    {
+      "if": "the_final_same_scheme_audit_finds_no_mandatory_nonzero_mode_compensation",
+      "then": "close the current C6 rescue branch negatively, downgrade exact pi^-4 to structural compression, and keep independent program successes unchanged"
+    }
+  ],
+  "status_counts": {
+    "closed_formally_not_theorem": 1,
+    "conditional_lead": 1,
+    "closed_as_sign_check_only": 1,
+    "partially_closed": 1,
+    "blocking_gap": 1,
+    "failed_route": 2,
+    "failed_route_except_definitional_quotient": 1,
+    "only_surviving_clean_route": 1,
+    "closed_as_specification_only": 1,
+    "partial_cancellation_not_closure": 1,
+    "blocking_explicit_projection_gate": 1,
+    "basis_constructed_projection_nonzero": 1,
+    "concrete_low_shell_obstruction_candidate": 1,
+    "closed_normalization_subgate": 1,
+    "primary_blocking_gap_after_projection": 1,
+    "failed_rescue_route": 1,
+    "failed_small_gap_rescue": 1,
+    "open_computation_checklist_fixed": 1,
+    "formula_fixed_matrix_missing": 5,
+    "closed_direct_channel_cross_return_terms_open": 1,
+    "blocking_gate_matrix_missing": 1,
+    "blocking_spec_fixed_path_and_matrix_missing": 1,
+    "gate_identified_followed_by_formula_node": 1,
+    "formula_fixed_operator_delta2_missing": 1,
+    "scoped_blocking_formula_and_matrix_missing": 1,
+    "skeleton_fixed_full_formula_matrix_missing": 2,
+    "skeleton_fixed_full_formula_self_adjointness_matrix_missing": 1,
+    "skeleton_fixed_basis_choice_self_adjointness_matrix_missing": 1,
+    "skeleton_fixed_locality_compensation_finite_table_missing": 1,
+    "phase_complete_trace_phase_open": 1,
+    "trace_phase_started_priority_fixed_matrices_missing": 1,
+    "setup_fixed_operator_pieces_missing_matrix_missing": 1,
+    "sprint_defined_operator_expansion_required": 1,
+    "operator_formula_fixed_laplacian_insertion_matrix_missing": 1,
+    "operator_slots_fixed_product_expansion_matrix_missing": 1,
+    "product_families_fixed_index_cleanup_integrals_missing": 1,
+    "Ctensor_integrand_fixed_C11_integrals_missing": 1,
+    "ambient_product_simplified_C11_integrals_missing": 1,
+    "first_C11_subslot_table_computed_full_operator_missing": 1,
+    "single_GammaAB_operator_simplified_C11_integrals_missing": 1,
+    "second_C11_connection_subslot_table_computed_cross_slot_missing": 1,
+    "metric_cross_formula_fixed_C11_moment_table_missing": 1,
+    "connection_subslot_triad_table_complete_full_addition_missing": 1,
+    "full_connection_C11_block_computed_nonconnection_blocks_missing": 1,
+    "principal_C11_table_computed_combination_missing": 1,
+    "principal_connection_C11_combined_nonzero_remaining_blocks_missing": 1,
+    "geometric_C11_cancellation_failed_same_scheme_determinant_gate": 1,
+    "exact_pi4_determinant_theorem_downgraded": 1
+  },
+  "final_verdict": "C6 is now more sharply localized but still not closed as a theorem. The formal Maxwell--ghost decomposition, natural P02 rank 1+9=10, compatible coexact bosonic sign, and constant kappa_Cas=1/24 isolation remain positive inputs. The standard covariant FP route is still blocked by the scalar half-determinant residual and its nonzero scalar tower. Even on the surviving physical coexact quotient route, the low-shell L(2,1) audits now expose a concrete obstruction candidate: the n=1 diagonal Hodge-filtered projection cancels, but six image vectors leak into cubic content. An explicit quotient-normalized 30-dimensional n=3 coexact basis can be constructed, and the projected trace is nonzero in the modelled conformal slice. The direct projector T5 table now supplies one exact simplification: the complete 36x25 pairing of outer-dG ell=4 scalar leakage with the n=1/n=3 coexact quotient has rank zero, because exact one-forms are orthogonal to coexact states. This removes the pure Pi_AB T1/T3 channel, but not the cross-return terms where delta Delta1 acts on a first projector variation before the final coexact projection. The remaining primary gate is now explicit: connection, Ricci, the projector cross-return block, Hilbert-metric, and delta2-Delta terms must cancel or absorb this trace with no fitted coefficient. A local-counterterm escape is not available for the finite n=1<->n=3 low-shell trace, and the scale is too large to be the tiny N_need-10 scheme gap. The remaining work is now a five-item checklist: connection, Ricci, coexact-projector, Hilbert-metric, and delta2-Delta blocks must be derived and evaluated in the same quotient-normalized bases. The connection, Ricci, coexact-projector, and Hilbert inner-product blocks are fixed at formula/operator-obligation level in the conformal slice, but their n=1<->n=3 matrices and normalization/self-adjointness checks have not yet been evaluated. The delta2-Delta determinant identity is now fixed as a gate, and the finite fallback is scoped: compute diagonal C_delta2[1,1] and C_delta2[3,3] traces over 55 symmetric deformation pairs. The preferred ambient path is now fixed at metric-derivative level with gprime and gsecond formulas, and delta2 Delta_1_coex is decomposed into six mandatory subblocks. The principal second-symbol subblock is fixed at formula level; the second-connection, second-Ricci/curvature, second-projector, second-Hilbert/basis, and local-counterterm classifier subblocks are fixed at skeleton level, and the delta2 skeleton phase is now explicitly complete. The trace phase priority is now fixed: C_delta2[1,1] and C_delta2[3,3] diagonal traces come before mixed archive blocks. The C_delta2[1,1] setup is fixed with six n=1 states and 1,980 raw entries over 55 pairs. The next timeboxed C6 sprint is active: the mixed second-connection tensor delta2 Gamma_AB is now formula-fixed in a background-nabla convention. The rough-Laplacian insertion slots for second-connection are fixed, and the Gamma_A Gamma_B product slot is split into derivative-index, one-form-component, and mixed-gradient families. Exact index cleanup, C11 product integrals, full Ricci/Pi expansions, basis transport, self-adjointness, locality/compensation proof, finite residual table, and finite matrix evaluation remain missing. Until that full-operator rescue is derived, pi^-4 remains strong structural compression rather than a mature determinant theorem. The Gamma_A Gamma_B product slot is rewritten in C_A C_B first-strain tensor form and simplifies on the locked ambient path to finite Killing/ambient-gradient moments. Its C11 table is nonzero for all 55 strain pairs. The single Gamma_AB table is nonzero for 52 of 55 pairs, and the metric-cross table is nonzero for all 55 pairs. Their assembled second-connection block is nonzero for all 55 pairs with rank distribution 2:6, 4:39, 6:10. The principal second-symbol table is also nonzero for all 55 pairs, and the principal-plus-connection assembly remains nonzero with rank distribution 4:39 and 6:16. Projector leakage is removed by exact/coexact orthogonality and Hodge commutation, while Hilbert self-adjoint transport is determinant-neutral by similarity invariance. The exact Gauss-equation Ricci C11 table has ranks 0:12, 4:27, 6:16, but principal-plus-connection-plus-Ricci remains nonzero for all 55 pairs with ranks 4:39 and 6:16. Therefore geometric C11 cancellation has failed; the only remaining exact-pi^-4 rescue class is mandatory same-scheme Maxwell-ghost, det-prime, zero/gauge, scalar-half, or pre-fixed local bookkeeping. The final same-scheme audit finds no such mandatory compensation: standard FP leaves a scalar half-determinant, zero/gauge and det-prime factors do not cancel nonzero towers, local counterterms cannot erase finite low-shell data, and no required paired sector is present. Exact pi^-4 absorption is therefore downgraded to structural compression, while independent non-C6 results remain unchanged."
+}

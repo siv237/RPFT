@@ -1,0 +1,90 @@
+{
+  "status": "positive_pi4_logdet_Hessian_exists_only_in_ghostlike_blocks_not_present_as_BRST_complete_current_sector",
+  "date": "2026-08-05",
+  "spectral_model": {
+    "operator": "K_n=(n+1/2)^2",
+    "deformation": "K(q)=K+q I",
+    "effective_action": "Gamma(q)=c Tr log K(q)",
+    "Hessian": "Gamma''(0)=-c Tr K^-2",
+    "full_trace_per_component": 32.46969701133414,
+    "identity": "sum_{n in Z}(n+1/2)^-4=pi^4/3"
+  },
+  "determinant_blocks": [
+    {
+      "block": "real_bosonic_full_two_form",
+      "rank": 6,
+      "c_logdet": 0.5,
+      "Hessian": -97.40909103400242,
+      "statistics": "bosonic",
+      "matches_positive_pi4": false
+    },
+    {
+      "block": "complex_bosonic_selfdual_two_form",
+      "rank": 3,
+      "c_logdet": 1.0,
+      "Hessian": -97.40909103400242,
+      "statistics": "bosonic",
+      "matches_positive_pi4": false
+    },
+    {
+      "block": "real_Grassmann_full_two_form",
+      "rank": 6,
+      "c_logdet": -0.5,
+      "Hessian": 97.40909103400242,
+      "statistics": "Grassmann/Pfaffian",
+      "matches_positive_pi4": true
+    },
+    {
+      "block": "complex_Grassmann_selfdual_two_form",
+      "rank": 3,
+      "c_logdet": -1.0,
+      "Hessian": 97.40909103400242,
+      "statistics": "complex Grassmann",
+      "matches_positive_pi4": true
+    }
+  ],
+  "exact_positive_candidates": [
+    "real_Grassmann_full_two_form",
+    "complex_Grassmann_selfdual_two_form"
+  ],
+  "sign_gate": {
+    "finding": "Bosonic determinant blocks give negative curvature -pi^4 for the natural rank-six/rank-three choices. Positive stable curvature +pi^4 requires the opposite Grassmann determinant sign."
+  },
+  "BRST_completeness_gate": {
+    "previous_isolated_ghost_result": "A bosonic two-form gauge field has a reducible gauge symmetry. Its one-form Grassmann ghost is accompanied by the two-form determinant and scalar ghost-for-ghost factors. Keeping only the favorable one-form determinant is not a BRST-complete partition function.",
+    "previous_full_two_form_factor": "Z_2 proportional to det'(Delta_2^T)^(-1/2) det'(Delta_1^T)^(+1/2) det'(Delta_0)^(-1/2)",
+    "previous_NK_result": "The ordinary one-form ghost of a two-form gauge symmetry is not by itself an extra Nielsen-Kallosh sector. A Nielsen-Kallosh third ghost depends on the chosen differential gauge-fixing metric and cannot be inserted as a universal duplicate of the Maxwell coexact tower.",
+    "finding": "Neither a real Grassmann two-form nor an isolated complex selfdual tensor ghost is a mandatory member of the standard two-form BRST tower. Adding only the favorable determinant repeats the previously rejected isolated-ghost move.",
+    "common_spectrum_controls": {
+      "raw_bundle_rank_effective_c": 0.5,
+      "raw_bundle_rank_Hessian": -16.23484850566707,
+      "transverse_rank_effective_c": 0.5,
+      "transverse_rank_Hessian": -16.23484850566707,
+      "interpretation": "The full-rank and transverse determinant representations agree when their correct exponents are used. Both reduce the six components to one physical scalar degree of freedom and give negative bosonic curvature -pi^4/6."
+    }
+  },
+  "boundary_gate": {
+    "required": "antiperiodic tensor-ghost modes along S1",
+    "current": "periodic Maxwell/FP gauge complex",
+    "finding": "The half-shift must be supplied by a new Z2-twisted tensor bundle; it is not inherited from the existing periodic gauge symmetry."
+  },
+  "inverse_response": {
+    "Hessian": 97.40909103400242,
+    "inverse_Hessian": 0.010265982254684338,
+    "target": 0.010265982254684338,
+    "auxiliary_action": "Gamma(q)=H q^2/2 + J q/S_geo",
+    "on_shell_shift": "-J^2/(2 H S_geo^2)",
+    "J_required_for_exact_formula": 1.4142135623730951,
+    "finding": "Even after H=pi^4 is induced, Gaussian elimination gives the exact S2T coefficient only if the linear source is fixed to sqrt(2), or if an equivalent two-source/variance readout is derived."
+  },
+  "comparison_with_C6": {
+    "not_same_object": "This q-mass Hessian is a new global tensor-ghost susceptibility. It is not the ambient metric Hessian of the existing Maxwell coexact determinant audited in C6.",
+    "consequence": "A success would define new II.B field content and requires recomputing the 1/24 branch, local heat coefficients and ghost cancellations."
+  },
+  "scientific_verdict": {
+    "positive": "There is an explicit determinant whose second derivative is exactly +pi^4 without a numerical multiplier: a half-shifted ghostlike rank-six/full or rank-three/selfdual block.",
+    "negative": "The required block is not BRST-mandatory, has the wrong boundary condition for the current gauge complex, and still needs a fixed source map to produce -1/(pi^4 S^2).",
+    "status": "explicit_new_model_seed_not_current_theory_rescue",
+    "reopening_condition": "Derive the twisted tensor ghost from a complete reducible gauge symmetry and show that the full BV determinant leaves H=pi^4 and fixes the source normalization."
+  }
+}

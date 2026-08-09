@@ -1,0 +1,62 @@
+{
+  "status": "projected_line_determinant_fail_orientation_even_full_bundle",
+  "date": "2026-08-07",
+  "projected_line_gate": {
+    "u_transpose_K_u": -1.0358260646537819e-17,
+    "K_u_norm": 1.0618390292399581e-16,
+    "continuous_real_line_connection_dimension": 0,
+    "finding": "For a real antisymmetric SO(3) connection and its kernel axis, u^T K u=0 and K u=0. A real one-dimensional Majorana line has structure group O(1), whose Lie algebra is zero, so it carries no continuous projected U(1) holonomy."
+  },
+  "determinant_sign_gate": {
+    "complex_periodic_abs_det": "2*abs(sin(phi/2))",
+    "complex_effective_action": "-log(2*abs(sin(phi/2)))",
+    "majorana_effective_action": "-(1/2)*log(2*abs(sin(phi/2)))",
+    "minimum_on_0_to_2pi": "phi=pi",
+    "not_a_minimum": "phi=pi/2",
+    "rows": [
+      {
+        "phase": 0.1,
+        "log_abs_det": -2.303001794388447,
+        "fermion_effective_action": 2.303001794388447
+      },
+      {
+        "phase": 1.5707963267948966,
+        "log_abs_det": 0.3465735902799726,
+        "fermion_effective_action": -0.3465735902799726
+      },
+      {
+        "phase": 3.141592653589793,
+        "log_abs_det": 0.6931471805599453,
+        "fermion_effective_action": -0.6931471805599453
+      },
+      {
+        "phase": 4.71238898038469,
+        "log_abs_det": 0.3465735902799727,
+        "fermion_effective_action": -0.3465735902799727
+      }
+    ]
+  },
+  "full_three_mode_gate": {
+    "spectrum_for_k_plus": [
+      -2.5067553477766635,
+      4.440892098500626e-16,
+      2.506755347776663
+    ],
+    "spectrum_for_k_minus": [
+      -2.5067553477766635,
+      4.440892098500626e-16,
+      2.506755347776663
+    ],
+    "spectra_equal_as_sets": true,
+    "periodic_axis_zero_mode_present": true,
+    "primed_nonzero_pair_abs_det": 3.610336384703046,
+    "orientation_even": true,
+    "finding": "After removing the persistent axis zero mode, the nonzero pair contributes 4*sin(theta/2)^2. It is even under k->-k and cannot lock vortex and Wilson orientations."
+  },
+  "verdict": {
+    "mixed_term_derived": false,
+    "rank_23_promoted": false,
+    "two_sector_gate_passed": false,
+    "next_possible_route": "Only an orientation-odd Pfaffian phase or anomaly-inflow term could distinguish the joint orientation. Its coefficient and reality properties must be derived from a bulk-boundary system; an absolute determinant cannot do so."
+  }
+}

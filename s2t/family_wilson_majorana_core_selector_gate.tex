@@ -1,0 +1,95 @@
+\chapter{Вильсоновский селектор трёх Majorana-core мод}
+
+Полярный аудит ordinary \(B-L\)-ветви исправил важный подсчёт: если vortex
+поколенчески-слеп, то до дополнительных family-взаимодействий он создаёт
+три вещественные core-моды
+\begin{equation}
+ \chi=(\chi_1,\chi_2,\chi_3)^T\in\mathbb R^3_{gen},
+\end{equation}
+а не одну. Это закрывает прежнюю попытку получить \(24-1\) одним лишь
+проектированием pairing-матрицы, но открывает механизм, уже присутствующий
+в части II.B.
+
+\section{Антисимметричная связь на core}
+
+Непрерывная вильсоновская ветвь построила правильное вращение
+\(R_n(\theta_*)\in SO(3)\) на family triplet, где
+\begin{equation}
+ \cos\theta_*=\frac{26-9\sqrt{15}}{11}.
+\end{equation}
+Его главный генератор имеет вид
+\begin{equation}
+ K_n=\operatorname{Log}R_n(\theta_*)
+     =\theta_*[n]_\times,
+ \qquad
+ ([n]_\times)_{ab}=\epsilon_{abc}n_c.
+\end{equation}
+Он вещественен, антисимметричен и при \(\theta_*\ne0\) имеет
+\begin{equation}
+ \operatorname{rank}K_n=2,
+ \qquad
+ \ker K_n=\mathbb R n.
+\end{equation}
+
+Поэтому Majorana boundary term
+\begin{equation}
+ S_{\rm core,fam}
+ =\frac{i}{2}\int_\gamma \chi^T K_n\chi
+\end{equation}
+спаривает две из трёх core-мод в одну ненулевую fermionic пару и оставляет
+ровно одну вещественную нулевую моду вдоль оси \(n\). Это не требует
+rank-one Yukawa matrix \(uu^T\): selector возникает как kernel уже
+существующего ориентированного family generator.
+
+\section{Независимость ранга от выбора вакуума}
+
+Factor-axis functional сокращает восемь совместных осей до двух
+симметрийно-связанных минимумов. Машинная проверка для обеих осей даёт
+\begin{equation}
+ \Spec(iK_n)=\{-\theta_*,0,+\theta_*\},
+ \qquad
+ \dim\ker K_n=1.
+\end{equation}
+Замена ориентации \(n\mapsto-n\) меняет \(K_n\mapsto-K_n\), но сохраняет
+kernel projector \(P_n=nn^T\). Следовательно, знак ориентированного
+вакуумного выбора не влияет на число surviving Majorana modes.
+
+\begin{proposition}[Условное снятие generation multiplicity]
+Если family Wilson connection ограничивается на defect core именно через
+\(K_n\), то поколенчески-слепой vortex сначала создаёт три локальные
+Majorana-моды, после чего антисимметричная family-связь оставляет одну:
+\begin{equation}
+ 3\longrightarrow1.
+\end{equation}
+При наличии ambient-to-core restriction map это восстанавливает кандидат на
+rank-one kernel и complement rank \(24-1=23\) без ручной вставки \(uu^T\).
+\end{proposition}
+
+\section{Оставшийся parent-action gate}
+
+Положительный алгебраический результат ещё не является полным замыканием.
+Текущее действие не выводит в одном функционале:
+\begin{enumerate}
+ \item ограничение той же \(SO(3)\) family connection на \(B-L\) defect core;
+ \item коэффициент и знак \(S_{\rm core,fam}\) вместе с vortex action;
+ \item ambient-to-core map из \(\mathbb R^{24}\) в три локальные моды;
+ \item collective stiffness, превращающую complement rank в
+ \(23+\pi^{-1}\), а не только в кратность determinant.
+\end{enumerate}
+
+\begin{nogocriterion}[Wilson--defect bridge gate]
+Если \(S_{\rm core,fam}\) добавляется как независимый boundary term, не
+следующий из того же graded action, что и root vortex и Wilson gap-functional,
+то rank-one selector имеет статус конструктивного механизма, но не вывода
+S2T. Положительное закрытие требует одного covariant derivative или одного
+boundary superconnection, чья редукция одновременно даёт vortex BdG operator
+и \(K_n\)-связь на его трёхмерном kernel bundle.
+\end{nogocriterion}
+
+Таким образом, проблема больше не состоит в отсутствии возможного generation
+selector. Конкретный selector найден внутри уже построенной Wilson-ветви.
+Открытым остаётся мост между family Wilson connection и \(B-L\) defect
+parent action.
+
+Машинный аудит сохранён в
+\texttt{s2t\_family\_wilson\_majorana\_core\_selector\_results.json}.

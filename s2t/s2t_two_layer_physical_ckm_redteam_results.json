@@ -1,0 +1,141 @@
+{
+  "status": "redteam_correction_confirms_the_texture_failure_but_replaces_the_auxiliary_mass_commutator_by_the_physical_squared_mass_invariant_and_rejects_the_superconnection_overclaim",
+  "date": "2026-08-06",
+  "blind_stage": {
+    "CKM_control_loaded": false,
+    "odd_weight": 1.0,
+    "chord_weight": 2.0,
+    "cos_flux": -0.8051681923515233,
+    "flux_radians": 2.5067553477766635,
+    "gap_transfer_status": "conditional hypothesis, not a parent-action derivation",
+    "curvature_in_flux": 0.6688177640454205,
+    "prediction": {
+      "upper_mass_squared": [
+        0.05572809000084167,
+        3.999999999999999,
+        17.94427190999916
+      ],
+      "lower_mass_squared": [
+        0.07179676972449155,
+        3.9999999999999987,
+        13.928203230275514
+      ],
+      "upper_singular_values": [
+        0.23606797749979067,
+        1.9999999999999998,
+        4.23606797749979
+      ],
+      "lower_singular_values": [
+        0.26794919243112403,
+        1.9999999999999996,
+        3.732050807568878
+      ],
+      "trace_squared_mass_commutator_cube": {
+        "real": -3.524344996671429e-12,
+        "imaginary": 162826.8541842804
+      },
+      "jarlskog_identity_rhs": {
+        "real": 0.0,
+        "imaginary": 162826.85418428027
+      },
+      "jarlskog_identity_absolute_error": 1.4556182428443617e-10,
+      "absolute_mixing": [
+        [
+          0.7631907793172181,
+          0.30541538677269625,
+          0.5694394400528131
+        ],
+        [
+          0.5773502691896254,
+          0.5773502691896256,
+          0.5773502691896258
+        ],
+        [
+          0.29018356437235376,
+          0.7572239485047677,
+          0.5851541598408108
+        ]
+      ],
+      "Jarlskog": 0.05104131819566343,
+      "sin_theta_12": 0.3715365202222497,
+      "sin_theta_23": 0.7023441491627866,
+      "sin_theta_13": 0.5694394400528131,
+      "theta_12_degrees": 21.810409713027237,
+      "theta_23_degrees": 44.615379287536996,
+      "theta_13_degrees": 34.71114544925356,
+      "delta_radians": 0.8775333151591649,
+      "delta_degrees": 50.27895534074369
+    }
+  },
+  "physical_invariant_gate": {
+    "auxiliary_mass_commutator": "12*i*p^2*q*(q^2+1)*sin(Phi)",
+    "physical_squared_mass_commutator": "192*i*p^2*q*(2*p^2-15)*(q^2-15)*(q^2+1)*sin(Phi)",
+    "physical_degeneracy_zeros": [
+      "p^2=15/2",
+      "q^2=15"
+    ],
+    "standard_object": "H_u=M_u M_u^dagger and H_d=M_d M_d^dagger",
+    "numerical_Jarlskog_identity_error": 1.4556182428443617e-10,
+    "finding": "The earlier trace of [M_u,M_d]^3 is only an auxiliary Hermitian-matrix invariant. The physical CKM test uses the squared-mass commutator; it remains nonzero for p=1,q=2 but has additional degeneracy zeros."
+  },
+  "grading_and_superconnection_gate": {
+    "odd_chain_anticommutator_norm": 0.0,
+    "even_chord_commutator_norm": 0.0,
+    "even_chord_anticommutator_norm": 2.8284271247461903,
+    "interpretation": "The chain is grading-odd, while the chord is grading-even. The chord is not a zero-form odd Higgs component of a Quillen superconnection on this unchanged grading."
+  },
+  "basis_rephasing_gate": {
+    "absolute_mixing_invariant": true,
+    "Jarlskog_invariant": true
+  },
+  "independent_diagonalization_gate": {
+    "absolute_mixing_max_error": 3.3306690738754696e-16,
+    "Jarlskog_absolute_error": 0.0
+  },
+  "random_exact_formula_gate": {
+    "seed": 20260806,
+    "sample_count": 25,
+    "maximum_absolute_error": 2.9892083881616733e-09
+  },
+  "CP_conjugation_gate": {
+    "absolute_mixing_equal": true,
+    "Jarlskog_sign_reversed": true
+  },
+  "post_blind_PDG_2024_control": {
+    "source": "Particle Data Group 2024 CKM review, Eqs. (12.27)-(12.28)",
+    "sin_theta_12": 0.22501,
+    "sin_theta_23": 0.04183,
+    "sin_theta_13": 0.003732,
+    "delta_radians": 1.147,
+    "Jarlskog": 3.12e-05,
+    "control_angles_degrees": [
+      13.003466199369875,
+      2.397381940018274,
+      0.21382834550537572
+    ],
+    "prediction_angles_degrees": [
+      21.810409713027237,
+      44.615379287536996,
+      34.71114544925356
+    ],
+    "finding": "The corrected physical diagonalization still predicts large, non-hierarchical mixing and a Jarlskog invariant over three orders of magnitude too large."
+  },
+  "equal_odd_edge_diagnostic": {
+    "fit_performed_only_after_blind_prediction": true,
+    "best_odd_weight": 0.13608115044284066,
+    "best_chord_weight": 0.00033546262794758105,
+    "best_angles_degrees": [
+      7.678633999997376,
+      7.679677480288776,
+      0.523914495309774
+    ],
+    "objective_radians_squared": 0.017165995047601485,
+    "finding": "A common odd-edge weight cannot separate theta_12 and theta_23; edge asymmetry remains necessary."
+  },
+  "scientific_verdict": {
+    "survives": "The A3 tree no-go, the need for a cycle, the existence of CP-conjugate flux choices, and the failure of symmetric odd-edge weights all survive the red-team audit.",
+    "corrected": "The physical invariant is Tr([H_u,H_d]^3), not merely Tr([M_u,M_d]^3). The even chord is not by itself a standard odd Higgs zero-form in a Quillen superconnection.",
+    "status": "physical_CP_mechanism_exists_but_superconnection_parent_action_and_CKM_texture_both_fail",
+    "next_gate": "Enlarge the graded space or derive an even curvature layer and unequal odd-edge metrics from the RP3 and S1 factors before any further CKM comparison."
+  }
+}

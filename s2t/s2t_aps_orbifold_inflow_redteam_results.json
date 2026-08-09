@@ -1,0 +1,132 @@
+{
+  "status": "APS_orbifold_inflow_reframing_contains_useful_candidates_but_does_not_close_the_operator_and_parent_action_gates",
+  "date": "2026-08-06",
+  "exact_checks": {
+    "arithmetic_one_third": {
+      "one_quarter_plus_abs_zeta_minus_one": "1/3",
+      "passes": true,
+      "scope": "arithmetic identity only"
+    },
+    "proposed_SU5_parity": {
+      "matrix": [
+        -1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "determinant": -1,
+      "belongs_to_SU5": false
+    },
+    "corrected_SU5_parity": {
+      "matrix": [
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "determinant": 1,
+      "belongs_to_SU5": true,
+      "matches_existing_gate": true
+    },
+    "form_degree": {
+      "proposed_integrand_degrees": {
+        "A_wedge_dA": 3,
+        "A_cubed": 3
+      },
+      "is_five_form": false,
+      "correct_CS5_monomial_degrees": {
+        "A_F_F": 5,
+        "A3_F": 5,
+        "A5": 5
+      },
+      "correct_template_is_five_form": true
+    },
+    "existing_split_projection": {
+      "beta_vector_Y_2_3": [
+        2.833333333333333,
+        0.16666666666666666,
+        2.0
+      ],
+      "target": [
+        2.8333333333333335,
+        0.16666666666666666,
+        2.0
+      ],
+      "max_error": 4.440892098500626e-16,
+      "passes": true,
+      "required_structure": "RP3 Z2 parity plus S1 Z4 holonomy plus multiplet flat characters"
+    },
+    "six_channel_identity": {
+      "inverse_collective_hessian": 0.010265982254684338,
+      "target_one_over_pi4": 0.010265982254684338,
+      "passes": true
+    }
+  },
+  "APS_mu_tau_gate": {
+    "pi1_product": "pi1(RP3 x S1)=Z2 x Z",
+    "finding": "The torsion holonomy and the circle spin sign belong to independent generators. Their product is the holonomy of a chosen diagonal loop, not an automatic total compact holonomy.",
+    "project_eta_values_for_untwisted_RP3_spin_structures": [
+      -0.25,
+      0.25
+    ],
+    "corresponding_APS_terms_if_h_zero": [
+      "1/8",
+      "-1/8"
+    ],
+    "claimed_eta_minus_one_half_is_derived": false,
+    "zeta_gate": "zeta(-1) regularizes a linear mode sum; det-prime is controlled by a spectral-zeta derivative. Taking an absolute value and adding the two quantities requires one common relative mass operator.",
+    "family_assignment": "Assigning the nontrivial torsion line to mu but not tau is a family selector and remains underived.",
+    "passes": false
+  },
+  "majorana_23_gate": {
+    "dimension_identity": "24-1=23",
+    "finding": "Gauge fixing quotients field configurations by a gauge orbit; it is not automatically subtraction of one vector from a 24-dimensional Majorana module. The conformal factor, an S1 isometry zero mode, and a finite Majorana component are different complexes.",
+    "Ahat_denominator_implication": false,
+    "required_calculation": "Write the quadratic Majorana/gravity or gauge complex on RP3 x S1, identify kernels and ghosts, and compute the physical index/rank.",
+    "passes": false
+  },
+  "orbifold_gate": {
+    "simple_claim_status": "incorrect_as_written",
+    "reasons": [
+      "diag(-1,-1,-1,+1,+1) has determinant -1 and is not an SU5 element",
+      "one parity matrix fixes adjoint breaking but not all fundamental multiplet intrinsic parities",
+      "the displayed simple table does not itself yield one vectorlike U plus two vectorlike D"
+    ],
+    "existing_stronger_candidate": "An anomaly-free parent realization of the inverse U+2D+H hint exists. The combined RP3 Z2 parity, quarter hypercharge holonomy and conjugate flat characters retain exactly the desired vectorlike zero sector while projecting Q, L, E and the colored Higgs triplet. This upgrades the split ray from a bare representation guess to a consistent projection candidate. It is not yet a successful gauge prediction: the multiplet character assignment and the finite KK determinant sum remain to be derived.",
+    "remaining_gaps": [
+      "The different flat characters must be derived from S2T sector attribution rather than declared ad hoc.",
+      "The construction closes representation content and anomaly consistency, not threshold magnitude.",
+      "Localized anomalies require a separate check if the projection is realized by boundaries rather than smooth flat bundles."
+    ],
+    "passes_representation_direction": true,
+    "passes_threshold_magnitude": false
+  },
+  "inflow_gate": {
+    "proposed_action_status": "dimensionally_invalid",
+    "correct_gauge_CS5_template": "omega5(A)=Tr(A F^2 - 1/2 A^3 F + 1/10 A^5), up to convention and exact forms",
+    "APS_dimension_issue": "If the APS filling has boundary RP3, it is four-dimensional. If the boundary is RP3 x S1, the boundary eta operator and index problem must be specified in the corresponding five-dimensional setup; eta_D(RP3) cannot simply be inserted unchanged.",
+    "anomaly_polynomial_required": true,
+    "vectorlike_warning": "The existing U+2D fermion survivors are vectorlike, so their four-dimensional gauge anomaly cancels and does not by itself fix a nonzero inflow level.",
+    "real_response_warning": "Anomaly inflow fixes anomalous variations/phases. It does not by itself fix the real finite coefficients 1/(24 Sgeo) or 1/(pi^4 Sgeo^2).",
+    "passes": false
+  },
+  "revised_verdict": {
+    "retained": [
+      "APS eta data are a legitimate candidate discriminator of spin/twist sectors",
+      "the anomaly-free Z2/Z4 SU5 projection exactly realizes the U+2D+H beta direction",
+      "the selfdual six-channel half-shifted inverse susceptibility exactly equals pi^-4",
+      "a bulk-boundary-defect formulation is a legitimate II.B search class"
+    ],
+    "not_closed": [
+      "the coefficient one third as one relative mass correction",
+      "the muon/tau family holonomy assignment",
+      "the subtraction 24-1 as a physical Majorana rank",
+      "the absolute EW/QCD threshold magnitude and sign",
+      "the anomaly polynomial and a correctly normalized five-dimensional parent action",
+      "the seed rho0 and the CKM/PMNS/confinement sectors"
+    ],
+    "classification": "constructive_reframing_not_resolution"
+  }
+}

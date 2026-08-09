@@ -1,0 +1,88 @@
+\chapter{Consistency gate для
+\texorpdfstring{\(B-L\)}{B-L}-root и pairing condensate}
+
+Предыдущий gate показал, что \(U(1)_{B-L}\) даёт правильную sterile phase
+\(+i\) и сокращает continuous anomalies. Однако этого недостаточно:
+необходимо проверить, может ли charge-two pairing field иметь ненулевой
+condensate на всём complement носителя.
+
+\section{Обструкция обычного charge-two scalar}
+
+Для complement
+\[
+ H_1(\mathbb{RP}^3\setminus\gamma;\mathbb Z)=\mathbb Z\langle y\rangle,
+ \qquad \mu_\gamma=2y.
+\]
+Root connection имеет
+\[
+ \operatorname{Hol}_{N^c}(y)=i,
+ \qquad
+ \oint_y a_{BL}=\frac{\pi}{2}.
+\]
+Поэтому обычный scalar \(\Phi_{BL}\) с charge \(-2\) видит
+\[
+ \operatorname{Hol}_{\Phi_{BL}}(y)
+ =\exp\left(-2i\oint_y a_{BL}\right)=-1.
+\]
+Ненулевой covariantly constant section на замкнутом цикле требует
+holonomy \(+1\). Следовательно, обычный nowhere-zero \(B-L\) condensate
+несовместим с order-four root на generator \(y\). На meridian обструкция
+исчезает, поскольку
+\[
+ \operatorname{Hol}_{\Phi_{BL}}(\mu_\gamma)=(-1)^2=+1,
+\]
+но этого недостаточно для глобального condensate на complement.
+
+Та же проблема видна из symmetry breaking. Charge-two VEV оставляет
+\(Z_2\), а элемент с parameter \(\pi/2\) действует на VEV как \(-1\) и не
+принадлежит unbroken subgroup. Charge-four VEV оставил бы \(Z_4\), но scalar
+charge \(-4\) не допускает линейный Majorana vertex
+\(\Phi N^cN^c\).
+
+\section{Torsion-twisted rescue}
+
+На носителе уже имеется ambient torsion line \(L_{\mathrm{tor}}\) с
+\[
+ \operatorname{Hol}_{L_{\mathrm{tor}}}(y)=-1,
+ \qquad
+ \operatorname{Hol}_{L_{\mathrm{tor}}}(\mu_\gamma)=+1.
+\]
+Поэтому pairing field следует рассматривать не как обычный scalar, а как
+section
+\begin{equation}
+ \Phi_{\mathrm{pair}}\in
+ \Gamma\!\left(
+ L_{\mathrm{tor}}\otimes L_{B-L}^{-2}
+ \right).
+\end{equation}
+Его полный holonomy равен
+\[
+ (-1)\times(-1)=+1
+\]
+на \(y\) и также \(+1\) на meridian. Это устраняет обструкцию для
+parallel condensate. Однако следующий полный vertex gate показывает, что
+bilinear \(N^cN^c\) всё ещё имеет holonomy \(i^2=-1\): torsion twist
+переносит знак в Yukawa map и потому не является завершённым rescue.
+
+\begin{proposition}[Уточнённый статус \(B-L\)-ветви]
+Обычный \(U(1)_{B-L}\) Higgs charge \(-2\) не может одновременно
+поддерживать nonzero condensate на всём complement и сохранять sterile
+root holonomy \(i\). Минимальный consistency rescue существует, если
+pairing field скручен ambient \(\mathbb Z_2\)-torsion line, но этот rescue
+совместим только с condensate и не закрывает scalar Yukawa vertex. Полный
+статус устанавливается следующим trilemma gate.
+\end{proposition}
+
+\begin{protocol}[Definition of Done twisted \(B-L\)-ветви]
+\begin{enumerate}
+ \item вывести \(L_{\mathrm{tor}}\otimes L_{B-L}^{-2}\) как representation
+ finite algebra, а не назначить после обнаружения обструкции;
+ \item построить global pairing potential для twisted section;
+ \item проверить core boundary condition и fluctuation determinant;
+ \item показать, что twisted condensate сохраняет rank-one kernel;
+ \item связать breaking scale и kinetic mixing с независимым сектором.
+\end{enumerate}
+\end{protocol}
+
+Машинный протокол сохранён в
+\texttt{s2t\_bl\_root\_condensate\_consistency\_results.json}.

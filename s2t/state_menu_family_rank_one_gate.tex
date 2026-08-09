@@ -1,0 +1,112 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2.3cm}
+\setlength{\emergencystretch}{2em}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{nogocriterion}{Критерий провала}
+
+\title{Первое нарушение family symmetry\\
+Rank-one texture из геометрического \(\mathbb Z_2\)}
+\author{}
+\date{4 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Исходный triplet}
+
+Полная affine symmetry четырёх spin-menu состояний задаёт canonical decomposition
+\[
+\mathbb C^4=\mathbf1\oplus\mathbf3.
+\]
+Поколенческое пространство определяется как
+\[
+\mathcal H_{fam}=\operatorname{im}P_3,
+\qquad
+P_3=I-\frac14J.
+\]
+При точной \(S_4\)-симметрии три family directions полностью вырождены.
+
+\section{Геометрический involution}
+
+Исходная integral topology различает torsion- и circle-направления. Единственное нетривиальное действие, индуцированное автоморфизмом
+\[
+\mathbb Z_2\times\mathbb Z,
+\]
+на mod-two spin labels имеет вид
+\[
+S:(p,q)\longmapsto(p,q+p).
+\]
+На четырёх menu-точках оно переставляет два состояния и фиксирует два. Поэтому
+\[
+S^2=I,
+\qquad
+\operatorname{Spec}_{\mathbb C^4}S=(-1,1,1,1).
+\]
+Uniform singlet является чётным, а на canonical triplet остаётся
+\[
+\operatorname{Spec}_{\mathbf3}S=(-1,1,1).
+\]
+
+\section{Rank-one projector}
+
+Нечётный projector равен
+\[
+P_- =\frac{I-S}{2}.
+\]
+После ограничения на family triplet он имеет spectrum
+\[
+\operatorname{Spec}_{\mathbf3}P_-=(0,0,1)
+\]
+и ранг один.
+
+\begin{proposition}[Каноническая ведущая family texture]
+Если первый Yukawa или mass operator пропорционален единственному нечётному projector геометрического involution, то его поколенческий spectrum имеет вид
+\[
+(m_1,m_2,m_3)=m_*(0,0,1)
+\]
+с точностью до перестановки поколений.
+\end{proposition}
+
+Это означает: одно поколение получает массу ведущего порядка, а два остаются безмассовыми до следующего нарушения symmetry. Overall scale \(m_*\) не выводится этим gate, но rank и относительная texture фиксированы.
+
+\section{Связь с наблюдаемой иерархией}
+
+Полученная структура качественно похожа на фермионный мир: третье поколение существенно тяжелее первых двух. Однако gate пока не утверждает количественного совпадения. Он выводит только leading-order rank-one pattern.
+
+Если один и тот же \(P_-\) действует в up- и down-секторах, их diagonalization bases совпадают и
+\[
+V_{CKM}^{(0)}=I.
+\]
+Малые mixing angles должны появиться только из subleading symmetry breaking. Это качественно допустимо, но ещё не является расчётом CKM.
+
+\section{Окончательная граница текущего шага}
+
+Внутри уже имеющихся menu- и geometric-симметрий отсутствует второй канонический оператор, который расщеплял бы оставшийся even doublet. Поэтому нельзя получать массы первого и второго поколений добавлением произвольной \(2\times2\)-матрицы: это немедленно вернуло бы hidden fit.
+
+\begin{nogocriterion}[Запрет произвольной Yukawa perturbation]
+Rank-one texture считается положительным структурным результатом только до ведущего порядка. Полная phenomenology закрыта, пока другой уже существующий дискретный оператор не расщепит even family doublet и не задаст misalignment разных fermion sectors без свободной матрицы.
+\end{nogocriterion}
+
+\section{Вердикт}
+
+Новая menu-ветвь последовательно дала:
+\[
+\text{четыре spin states}
+\longrightarrow
+\mathbf1\oplus\mathbf3
+\longrightarrow
+\mathbf2_{light}\oplus\mathbf1_{heavy}.
+\]
+Первый переход следует из полной affine symmetry, второй --- из реального различия torsion- и circle-направлений исходного \(K\). В результате число поколений и leading rank-one hierarchy возникают без выбора численных масс.
+
+Это пока не новая физическая теория, но уже не просто игра с совпадениями: получена параметрически независимая форма family space и его первого symmetry breaking.
+
+\end{document}

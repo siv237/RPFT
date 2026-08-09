@@ -1,0 +1,184 @@
+{
+  "status": "dual_completed_relative_functional_selects_unit_radius_conditionally",
+  "date": "2026-08-03",
+  "definition": {
+    "single_response": "G_beta(r)=Delta Gamma_rel(beta;r)",
+    "dual_completion": "F_beta(r)=G_beta(r)+G_beta(1/r)",
+    "log_radius_coordinate": "x=log(r), so F_beta(x)=F_beta(-x)",
+    "equal_weights": "The two terms have unit relative weight because they are exchanged by the declared reciprocal involution; no continuous coefficient is introduced."
+  },
+  "analytic_result": {
+    "duality": "F(r)=F(1/r)",
+    "stationarity": "dF/d(log r)=0 at r=1 follows exactly from evenness in log r",
+    "stability_status": "positive curvature and global minimum are numerical spectral results, not yet an analytic convexity theorem"
+  },
+  "continuous_holonomy_sectors": [
+    {
+      "beta": 0.125,
+      "dual_action_at_unit_radius": 1.2156410294340358e-05,
+      "log_radius_first_derivative_at_1": 0.0,
+      "log_radius_second_derivative_at_1": 0.0017503034147780183,
+      "grid_minimum": {
+        "radius_ratio": 1.0,
+        "dual_action": 1.2156410294340358e-05
+      },
+      "duality_error_max": 0.0,
+      "sample": [
+        {
+          "radius_ratio": 0.5,
+          "dual_action": 0.0029567413902091564
+        },
+        {
+          "radius_ratio": 0.75,
+          "dual_action": 0.00013769755499078295
+        },
+        {
+          "radius_ratio": 1.0,
+          "dual_action": 1.2156410294340358e-05
+        },
+        {
+          "radius_ratio": 1.25,
+          "dual_action": 7.41802204915476e-05
+        },
+        {
+          "radius_ratio": 2.0,
+          "dual_action": 0.0029567413902091564
+        }
+      ]
+    },
+    {
+      "beta": 0.25,
+      "dual_action_at_unit_radius": 4.1504477710051524e-05,
+      "log_radius_first_derivative_at_1": 0.0,
+      "log_radius_second_derivative_at_1": 0.005980127814654308,
+      "grid_minimum": {
+        "radius_ratio": 1.0,
+        "dual_action": 4.1504477710051524e-05
+      },
+      "duality_error_max": 0.0,
+      "sample": [
+        {
+          "radius_ratio": 0.5,
+          "dual_action": 0.010080209581849285
+        },
+        {
+          "radius_ratio": 0.75,
+          "dual_action": 0.0004701012417114689
+        },
+        {
+          "radius_ratio": 1.0,
+          "dual_action": 4.1504477710051524e-05
+        },
+        {
+          "radius_ratio": 1.25,
+          "dual_action": 0.0002532592531068898
+        },
+        {
+          "radius_ratio": 2.0,
+          "dual_action": 0.010080209581849285
+        }
+      ]
+    },
+    {
+      "beta": 0.375,
+      "dual_action_at_unit_radius": 7.085239919256546e-05,
+      "log_radius_first_derivative_at_1": 0.0,
+      "log_radius_second_derivative_at_1": 0.010207976323495065,
+      "grid_minimum": {
+        "radius_ratio": 1.0,
+        "dual_action": 7.085239919256546e-05
+      },
+      "duality_error_max": 0.0,
+      "sample": [
+        {
+          "radius_ratio": 0.5,
+          "dual_action": 0.017182925680566705
+        },
+        {
+          "radius_ratio": 0.75,
+          "dual_action": 0.0008024658777612813
+        },
+        {
+          "radius_ratio": 1.0,
+          "dual_action": 7.085239919256546e-05
+        },
+        {
+          "radius_ratio": 1.25,
+          "dual_action": 0.0004323271686507991
+        },
+        {
+          "radius_ratio": 2.0,
+          "dual_action": 0.017182925680566705
+        }
+      ]
+    },
+    {
+      "beta": 0.5,
+      "dual_action_at_unit_radius": 8.300866355726126e-05,
+      "log_radius_first_derivative_at_1": 0.0,
+      "log_radius_second_derivative_at_1": 0.011959812158094003,
+      "grid_minimum": {
+        "radius_ratio": 1.0,
+        "dual_action": 8.300866355726126e-05
+      },
+      "duality_error_max": 0.0,
+      "sample": [
+        {
+          "radius_ratio": 0.5,
+          "dual_action": 0.020118914831919295
+        },
+        {
+          "radius_ratio": 0.75,
+          "dual_action": 0.0009401243821016652
+        },
+        {
+          "radius_ratio": 1.0,
+          "dual_action": 8.300866355726126e-05
+        },
+        {
+          "radius_ratio": 1.25,
+          "dual_action": 0.0005064962720648773
+        },
+        {
+          "radius_ratio": 2.0,
+          "dual_action": 0.020118914831919295
+        }
+      ]
+    }
+  ],
+  "quarter_sector": {
+    "topologically_available_without_fit": true,
+    "dual_action_at_unit_radius": 4.1504477710051524e-05,
+    "log_radius_curvature_at_1": 0.005980127814654308,
+    "grid_minimum_radius_ratio": 1.0,
+    "interpretation": "The torsion square-root defect fixes beta=1/4 as a discrete sector label. Conditioned on that sector, reciprocal completion selects r=1 as a stable minimum."
+  },
+  "RP3_Z2_flat_bundle_dual_completion": {
+    "dual_action_at_unit_radius": 0.00019152654690948384,
+    "log_radius_first_derivative_at_1": 0.0,
+    "log_radius_second_derivative_at_1": 0.02206874324668477,
+    "grid_minimum": {
+      "radius_ratio": 1.0,
+      "dual_action": 0.00019152654690948384
+    },
+    "duality_error_max": 0.0
+  },
+  "source_checks": {
+    "quarter_holonomy_is_discrete_defect_sector": true,
+    "Qcycle_has_determinant_one_reciprocal_structure": true
+  },
+  "checks": {
+    "all_duality_errors_below_1e_14": true,
+    "all_log_derivatives_at_1_below_1e_10": true,
+    "all_curvatures_positive": true,
+    "all_grid_minima_at_1": true,
+    "flat_bundle_minimum_at_1": true
+  },
+  "theory_gate": {
+    "positive": "A no-fit reciprocal completion converts the previously monotone relative response into a stable unit-radius functional in every tested nontrivial phase sector.",
+    "remaining_bridge": "The reciprocal involution is established for the intrinsic cycle Gram complex, but it has not yet been derived as an exact symmetry pairing the full Maxwell--FP determinant at r and 1/r.",
+    "zero_mode_gap": "The true scalar zero-mode and gauge-volume measure remain outside the massive audit.",
+    "no_alpha_claim": "The functional selects a shape ratio only. It is not normalized to alpha and must not be fitted to alpha before the reciprocal bridge and zero-mode measure are derived."
+  },
+  "verdict": "The reciprocal completion is the first post-C6 construction that produces a stable r=1 configuration without a fitted coefficient. The stationarity is exact by duality, and the positive curvature/global minimum are robust numerically. This is a conditional structural success: the missing theorem is an ambient duality bridge from Qcycle to the full Maxwell--FP relative determinant, plus the scalar zero-mode measure."
+}

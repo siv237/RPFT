@@ -1,0 +1,48 @@
+{
+  "status": "tree_level_fermi_constant_blind_prediction_fails_precision_matching_gate_open",
+  "date": "2026-08-04",
+  "frozen_prediction": {
+    "input_result_file": "s2t_tome2_results.json",
+    "v_S2T_GeV": 245.99340926110546,
+    "relation": "G_F=1/(sqrt(2) v_S2T^2)",
+    "G_F_prediction_GeV_minus_2": 1.1685251367965192e-05,
+    "target_not_used_in_construction": true
+  },
+  "experimental_comparison": {
+    "source": "PDG 2024 Physical Constants, rpp2024-rev-phys-constants.pdf",
+    "G_F_experiment_GeV_minus_2": 1.1663788e-05,
+    "G_F_experiment_sigma_GeV_minus_2": 6e-12,
+    "absolute_difference_GeV_minus_2": 2.146336796519184e-08,
+    "relative_difference": 0.001840171303284305,
+    "difference_ppm": 1840.171303284305,
+    "experimental_sigma_pull_if_theory_matching_is_zero": 3577.22799419864,
+    "v_from_G_F_GeV": 246.21964023926205,
+    "v_difference_GeV": -0.2262309781565932,
+    "v_relative_difference": -0.0009188177593662106
+  },
+  "required_matching": {
+    "multiplicative_G_F_factor": 0.9981632087073425,
+    "fractional_G_F_correction": -0.001836791292657458,
+    "multiplicative_v_factor": 1.0009196627618444,
+    "fractional_v_correction": 0.0009196627618444086,
+    "interpretation": "A finite electroweak matching correction of this fixed size must be derived before v_S2T can be identified with the measured charged-current weak scale."
+  },
+  "single_scale_stress_test": {
+    "rule": "rescale all masses proportional to v by the factor fixed from G_F",
+    "M_W_before_GeV": 79.923,
+    "M_W_after_GeV": 79.9965022069149,
+    "M_W_experiment_GeV": 80.3692,
+    "M_W_relative_difference_after": -0.004637321176335078,
+    "M_Z_before_GeV": 90.332,
+    "M_Z_after_GeV": 90.41507497660292,
+    "M_Z_experiment_GeV": 91.188,
+    "M_Z_relative_difference_after": -0.008476170366682884,
+    "verdict": "The universal scale correction fixed by G_F does not simultaneously close the existing one-loop W and Z mass residuals. Additional independently derived gauge/threshold matching is required."
+  },
+  "scientific_verdict": {
+    "tree_level_standard_EFT_identification": "fails_at_0.184_percent",
+    "full_model_status": "not a final no-go because electroweak matching and renormalization scheme are not yet derived",
+    "admissible_rescue": "derive the correction from the frozen particle/KK/defect spectrum and test G_F, M_W, M_Z and sin^2(theta_W) together",
+    "inadmissible_rescue": "fit one finite factor to G_F and count it as a prediction"
+  }
+}

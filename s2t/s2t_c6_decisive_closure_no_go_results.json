@@ -1,0 +1,44 @@
+{
+  "status": "C6_closed_negatively_for_the_declared_Maxwell_FP_absorption_model",
+  "date": "2026-08-03",
+  "scope": "The no-go applies to the current first-ambient-strain, Maxwell--ghost, rank-10 absorption construction. It does not prohibit a future theory with a newly derived mandatory sector or a different primary functional.",
+  "input_checks": {
+    "external_L21_spectrum_reproduced": true,
+    "casimir_kernel_is_not_logdet_winding": true,
+    "principal_connection_Ricci_C11_all_pairs_nonzero": true,
+    "standard_FP_scalar_half_residual_nonzero": true,
+    "mandatory_same_scheme_compensation_absent": true
+  },
+  "numerical_witnesses": {
+    "casimir_Bessel_sum_T": 1.5227161455271536e-05,
+    "bosonic_logdet_winding": -2.0924455471679034e-05,
+    "absolute_logdet_to_T_ratio": 1.3741533859178428,
+    "standard_FP_Gamma_nonzero_unit_RP3": -1.2487274102605546,
+    "geometric_zero_pair_count": 0,
+    "geometric_rank_distribution": {
+      "4": 39,
+      "6": 16
+    }
+  },
+  "decision": {
+    "positive_exact_pi4_determinant_closure": false,
+    "negative_no_go_closure": true,
+    "pi4_status": "strong_structural_compression_not_determinant_theorem",
+    "S_vac_status": "conditional_not_closed_input",
+    "maturity_effect": "C6_no_longer_an_open_calculation_inside_version_II_A"
+  },
+  "logic": [
+    "The lens-space spectrum and standard FP determinant powers are independently reproduced.",
+    "The positive Bessel kernel used by the absorption ansatz is a Casimir-energy object, whereas the Euclidean winding determinant is a logarithmic product; no identity equates them.",
+    "The completed principal+connection+Ricci C11 block is nonzero for every symmetric strain pair.",
+    "Projector and Hilbert transport are determinant-neutral, while standard FP retains a nonzero scalar half-determinant.",
+    "No mandatory same-spectrum opposite-sign sector exists in the declared model.",
+    "Therefore the exact pi^-4 absorption claim cannot be derived by completing another omitted block within the same construction."
+  ],
+  "reopen_only_if": [
+    "a new mandatory BRST, topological or EFT sector is derived before comparison with the target",
+    "an exact spectral identity is proved between the relevant Casimir and log-determinant functionals",
+    "a different primary physical functional is postulated and all previous pi^-4 numerics are recomputed within it"
+  ],
+  "verdict": "C6 is closed negatively for Tome II.A. The external spectral gate confirms the lens-space spectrum but rejects the functional bridge from the Casimir Bessel kernel to the Euclidean Maxwell determinant. The same-scheme operator audit also leaves nonzero geometric and scalar residues with no mandatory compensation. Accordingly pi^-4 remains a strong structural compression, not a determinant theorem."
+}

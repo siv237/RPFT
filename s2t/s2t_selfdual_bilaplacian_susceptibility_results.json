@@ -1,0 +1,89 @@
+{
+  "status": "selfdual_rank_three_full_half_integer_bilaplacian_has_exact_pi4_susceptibility_but_requires_new_twisted_fourth_order_sector",
+  "date": "2026-08-05",
+  "geometric_count": {
+    "four_dimensional_two_form_rank": 6,
+    "Hodge_split": "Lambda2=Lambda2_plus direct_sum Lambda2_minus",
+    "selfdual_rank": 3,
+    "interpretation": "On an oriented Euclidean four-manifold the Hodge star canonically splits two-forms into two rank-three bundles."
+  },
+  "full_half_integer_tower": {
+    "one_sided_zeta4_half": 16.234848505667074,
+    "full_Z_sum": 32.46969701133415,
+    "identity": "sum_{n in Z}(n+1/2)^-4=2 zeta(4,1/2)=pi^4/3",
+    "three_selfdual_channels": 97.40909103400244,
+    "target_pi4": 97.40909103400244,
+    "absolute_error": 1.349401336733507e-79,
+    "inverse": 0.010265982254684336,
+    "target_inverse_pi4": 0.010265982254684336,
+    "convergence": [
+      {
+        "cutoff": 2,
+        "three_channel_partial_sum": 97.26198518518518,
+        "absolute_error_vs_pi4": 0.14710584881725206
+      },
+      {
+        "cutoff": 5,
+        "three_channel_partial_sum": 97.39667890591231,
+        "absolute_error_vs_pi4": 0.01241212809013048
+      },
+      {
+        "cutoff": 10,
+        "three_channel_partial_sum": 97.40734775850773,
+        "absolute_error_vs_pi4": 0.0017432754947067897
+      },
+      {
+        "cutoff": 25,
+        "three_channel_partial_sum": 97.40897023139229,
+        "absolute_error_vs_pi4": 0.00012080261015075552
+      },
+      {
+        "cutoff": 100,
+        "three_channel_partial_sum": 97.40908906350985,
+        "absolute_error_vs_pi4": 1.9704925830976696e-06
+      },
+      {
+        "cutoff": 500,
+        "three_channel_partial_sum": 97.40909101805028,
+        "absolute_error_vs_pi4": 1.595215952107032e-08
+      }
+    ]
+  },
+  "kinetic_order_gate": {
+    "second_order_full_sum_per_channel": 9.869604401089358,
+    "three_channel_second_order_total": 29.608813203268078,
+    "second_order_closed_form": "3 pi^2",
+    "fourth_order_operator": "K=(-partial_S1^2)^2 on an antiperiodic real line bundle",
+    "fourth_order_covariance_trace": "Tr K^-1=pi^4 for three selfdual components",
+    "finding": "The exact pi^4 requires a bi-Laplacian/fourth-order kinetic operator. An ordinary second-order Maxwell or scalar Hessian gives 3 pi^2 instead."
+  },
+  "trace_normalization_gate": {
+    "ordinary_component_trace": 97.40909103400244,
+    "normalized_rank_three_trace": 32.46969701133415,
+    "inverse_ordinary_trace": 0.010265982254684336,
+    "inverse_normalized_trace": 0.030797946764053005,
+    "normalized_to_target_ratio": 3.0,
+    "finding": "The exact coefficient uses the ordinary trace over the rank-three bundle. A normalized trace gives 3/pi^4 after inversion."
+  },
+  "boundary_condition_gate": {
+    "required": "B_plus(theta+2pi)=-B_plus(theta)",
+    "mathematical_realization": "sections of a nontrivial real Z2 line bundle over S1",
+    "current_EM_condition": "periodic Maxwell and Faddeev-Popov sectors",
+    "finding": "The antiperiodic bosonic twist is mathematically consistent but is not part of the frozen II.A electromagnetic field content."
+  },
+  "gauge_and_reality_gate": {
+    "selfdual_choice": "Selecting Lambda2_plus rather than both chiralities is an orientation-dependent chiral choice. Ordinary real Maxwell contains both electric/magnetic sectors and is constrained by F=dA and dF=0.",
+    "auxiliary_interpretation": "The clean realization is a new selfdual auxiliary two-form sector, not a recounting of the existing Maxwell coexact determinant."
+  },
+  "inverse_response_gate": {
+    "susceptibility": "chi=Tr K^-1=pi^4",
+    "desired_readout": "Delta S=-chi^-1/S_geo^2",
+    "open_map": "The parent action must explain why the physical correction uses the inverse of the integrated susceptibility and why its quadratic readout has unit coefficient."
+  },
+  "scientific_verdict": {
+    "positive": "The factor six now has a canonical geometric decomposition: rank three selfdual two-forms times the two-sided half-integer spectrum. No arbitrary multiplicity is needed.",
+    "negative": "The construction requires three ingredients absent from II.A: a chiral selfdual auxiliary sector, antiperiodic bosonic holonomy, and a fourth-order kinetic operator.",
+    "status": "precise_new_II_B_parent_action_candidate",
+    "next_gate": "Construct the minimal local quadratic action for a twisted selfdual two-form, derive its determinant/constraint tower, and test whether integrating it out produces -chi^-1/S_geo^2 without an adjustable source coefficient."
+  }
+}

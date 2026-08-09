@@ -1,0 +1,73 @@
+{
+  "status": "first_ambient_metric_strain_tensor_fixed_modulo_diffeomorphism_choice_open",
+  "ambient_deformation": {
+    "map": "F_eps(x) = x + eps A x, x in S3 subset R4, A=A^T after removing rotations",
+    "tangent_vectors": "u,v in T_x S3, with <u,x>=<v,x>=0",
+    "quadratic_function": "q_A(x)=<x,A x>",
+    "descends_to_L21": "q_A(-x)=q_A(x), so the deformation is compatible with S3/{±1}"
+  },
+  "metric_strain_formulas": [
+    {
+      "name": "full_induced_metric_variation",
+      "formula": "h_A(u,v)= d/d eps <dF_eps u,dF_eps v>|0 = 2 <u,A v>",
+      "meaning": "This is the raw first variation of the induced metric on the deformed ellipsoid.",
+      "status": "primary_formula"
+    },
+    {
+      "name": "quadratic_function_gradient",
+      "formula": "grad q_A = 2(Ax - q_A x)",
+      "meaning": "The tangential part of A x is half the gradient of q_A.",
+      "status": "derived_identity"
+    },
+    {
+      "name": "hessian_identity_on_unit_sphere",
+      "formula": "Hess(q_A)(u,v)=2 <u,A v> - 2 q_A g(u,v)",
+      "meaning": "The raw strain splits into a coordinate-change part plus a conformal normal part.",
+      "status": "derived_identity"
+    },
+    {
+      "name": "split_modulo_diffeomorphism",
+      "formula": "h_A = Hess(q_A) + 2 q_A g = L_{grad(q_A)/2} g + 2 q_A g",
+      "meaning": "Modulo infinitesimal reparametrization, the geometric strain can be represented by 2 q_A g.",
+      "status": "gauge_split"
+    }
+  ],
+  "trace_traceless_decomposition": [
+    {
+      "part": "trace_A",
+      "q_A_on_S3": "constant proportional to Tr(A)",
+      "metric_role": "global conformal/volume direction",
+      "rank": 1
+    },
+    {
+      "part": "traceless_A",
+      "q_A_on_S3": "quadratic harmonic of degree 2",
+      "metric_role": "nine-dimensional first nontrivial strain channel",
+      "rank": 9
+    }
+  ],
+  "consequences_for_laplacian_variation": [
+    {
+      "point": "raw_vs_reduced_operator",
+      "consequence": "Using h_A=2<u,A v> or the reduced representative h_A=2 q_A g differs by a Lie derivative term; determinants should be invariant under pure coordinate changes only after zero/gauge/local bookkeeping is consistent."
+    },
+    {
+      "point": "matrix_elements_must_state_gauge",
+      "consequence": "The matrix-element calculation must declare whether it uses the raw induced strain or the conformal representative modulo reparametrization."
+    },
+    {
+      "point": "rank_10_origin",
+      "consequence": "The rank 10 comes from A in Sym^2(R4), while q_A splits into ell=0 plus ell=2 on S3/RP3."
+    },
+    {
+      "point": "danger_of_overcounting",
+      "consequence": "Counting both Hess(q_A) and 2 q_A g as independent would double-count the same ambient strain; the Hessian part is the coordinate-change component of the same deformation."
+    }
+  ],
+  "required_next_choice": {
+    "choice": "raw_induced_strain_vs_conformal_representative",
+    "recommended_for_next_audit": "compute both formula paths symbolically for first shells, or prove the Hess(q_A) Lie-derivative part drops from the physical determinant trace",
+    "failure_if_ignored": "C6 matrix elements become gauge/slice dependent and cannot be claimed as theorem-level evidence."
+  },
+  "verdict": "The first ambient strain is now fixed at tensor level. The raw induced metric variation is h_A(u,v)=2<u,A v>. Equivalently, with q_A=<x,A x>, h_A=Hess(q_A)+2 q_A g, so modulo infinitesimal reparametrization the strain is represented by 2 q_A g. The next matrix-element calculation must choose and justify this slice; otherwise the coexact trace may be contaminated by coordinate-change terms."
+}

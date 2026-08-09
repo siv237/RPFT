@@ -1,0 +1,22 @@
+{
+  "mathematical_constants": ["pi", "integers", "rational_numbers"],
+  "geometry": {
+    "carrier": "L(2,1) times S1",
+    "cover": "S3 times S1",
+    "radii": [1, 1],
+    "quotient_order": 2
+  },
+  "allowed_discrete_data": [
+    "declared spin structure",
+    "declared flat character",
+    "form degree",
+    "boundary condition"
+  ],
+  "forbidden_inputs": [
+    "experimental particle masses",
+    "gauge couplings",
+    "neutrino splittings",
+    "project numerical audit outputs",
+    "post-hoc continuous normalization factors"
+  ]
+}

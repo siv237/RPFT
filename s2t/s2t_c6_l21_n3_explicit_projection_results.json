@@ -1,0 +1,166 @@
+{
+  "status": "explicit_n3_coexact_basis_projection_confirms_nonzero_leakage",
+  "construction": {
+    "ambient_space": "homogeneous cubic vector polynomials in R4",
+    "ambient_dimension": 80,
+    "constraints": {
+      "tangency_x_dot_V_zero": 35,
+      "ambient_divergence_zero": 10,
+      "component_harmonic_laplacian_zero": 16,
+      "constraint_rank": 50,
+      "nullity": 30
+    },
+    "basis_dimension": 30,
+    "inner_product": "L2 on L(2,1), using quotient volume pi^2",
+    "basis_constraint_max_abs": 5.569452123193617e-15,
+    "basis_orthonormality_max_abs_error": 1.887379141862766e-15
+  },
+  "projection": {
+    "source_images": "cubic part of the six tangent-projected n=1 Killing-shell leakage images, normalized by the L(2,1) Killing norm",
+    "discarded_non_cubic_terms_total": 90,
+    "discarded_non_cubic_coeff_square_proxy": 2336.0,
+    "basis_labels": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ],
+    "image_constraint_max_abs_before_projection": 43.21518317554109,
+    "image_gram_trace": 240.0,
+    "projected_gram_trace": 79.99999999999999,
+    "residual_gram_trace": 160.0,
+    "projected_rank_numeric": 6,
+    "projected_eigenvalues": [
+      11.999999999999986,
+      12.000000000000005,
+      13.999999999999977,
+      13.999999999999996,
+      14.000000000000014,
+      14.000000000000016
+    ],
+    "max_abs_residual_gram_entry": 72.0,
+    "projected_gram_matrix": [
+      [
+        12.000000000000004,
+        3.3120578952955763e-15,
+        -1.0273684621861577e-14,
+        -1.866876523104575e-15,
+        -4.923259142658296e-15,
+        6.8170701707043346e-15
+      ],
+      [
+        3.3120578952955763e-15,
+        13.999999999999982,
+        -5.175377618526132e-15,
+        1.819122453019185e-16,
+        -9.82053171069215e-15,
+        9.764020363546604e-16
+      ],
+      [
+        -1.0273684621861577e-14,
+        -5.175377618526132e-15,
+        14.000000000000004,
+        -6.480309722970063e-15,
+        8.295497878977408e-16,
+        -1.0375901616563175e-15
+      ],
+      [
+        -1.866876523104575e-15,
+        1.819122453019185e-16,
+        -6.480309722970063e-15,
+        14.000000000000004,
+        2.768741118283836e-15,
+        -4.781509303817153e-15
+      ],
+      [
+        -4.923259142658296e-15,
+        -9.82053171069215e-15,
+        8.295497878977408e-16,
+        2.768741118283836e-15,
+        14.000000000000014,
+        3.4143271807698455e-15
+      ],
+      [
+        6.8170701707043346e-15,
+        9.764020363546604e-16,
+        -1.0375901616563175e-15,
+        -4.781509303817153e-15,
+        3.4143271807698455e-15,
+        11.999999999999991
+      ]
+    ],
+    "residual_gram_matrix": [
+      [
+        72.0,
+        -3.3120578952955763e-15,
+        1.0273684621861577e-14,
+        1.866876523104575e-15,
+        4.923259142658296e-15,
+        -6.8170701707043346e-15
+      ],
+      [
+        -3.3120578952955763e-15,
+        22.000000000000018,
+        5.175377618526132e-15,
+        -1.819122453019185e-16,
+        9.82053171069215e-15,
+        -9.764020363546604e-16
+      ],
+      [
+        1.0273684621861577e-14,
+        5.175377618526132e-15,
+        21.999999999999996,
+        6.480309722970063e-15,
+        -8.295497878977408e-16,
+        1.0375901616563175e-15
+      ],
+      [
+        1.866876523104575e-15,
+        -1.819122453019185e-16,
+        6.480309722970063e-15,
+        21.999999999999996,
+        -2.768741118283836e-15,
+        4.781509303817153e-15
+      ],
+      [
+        4.923259142658296e-15,
+        9.82053171069215e-15,
+        -8.295497878977408e-16,
+        -2.768741118283836e-15,
+        21.999999999999986,
+        -3.4143271807698455e-15
+      ],
+      [
+        -6.8170701707043346e-15,
+        -9.764020363546604e-16,
+        1.0375901616563175e-15,
+        4.781509303817153e-15,
+        -3.4143271807698455e-15,
+        8.881784197001252e-15
+      ]
+    ]
+  },
+  "second_order_bookkeeping_proxy": {
+    "lambda_1": 4,
+    "lambda_3": 16,
+    "lambda_gap": 12,
+    "trace_over_gap": 6.666666666666665,
+    "trace_over_gap_squared": 0.5555555555555555,
+    "note": "This is still bookkeeping-level; the final determinant sign and whether one or two gap denominators enter must be fixed in the full operator formula."
+  },
+  "interpretation": [
+    {
+      "claim": "the proxy residue was an artifact of not having an explicit n=3 basis",
+      "verdict": "fails_for_this_modelled_operator_slice",
+      "reason": "Projection onto the explicit 30-dimensional cubic coexact basis leaves a nonzero trace rather than killing the six images."
+    },
+    {
+      "claim": "this is already the final C6 determinant coefficient",
+      "verdict": "not_yet",
+      "reason": "The calculation covers the conformal Hodge-filtered low-shell slice and explicit coexact projection. Full C6 still needs all one-form operator terms, Hilbert-metric variation, determinant sign, and tower bookkeeping."
+    }
+  ],
+  "verdict": "An explicit quotient-normalized 30-dimensional n=3 coexact basis was constructed from cubic tangent, divergence-free, harmonic vector polynomials. Projecting the six normalized leaked Killing-shell images onto this basis gives a nonzero projected trace, so the n=3 gate is not killed by the explicit basis construction. This upgrades the proxy warning into a concrete low-shell obstruction candidate, but it is not yet the final C6 determinant theorem because the full one-form variation and determinant bookkeeping remain to be assembled."
+}

@@ -1,0 +1,111 @@
+{
+  "status": "minimal_SU5_fiber_passes_SM_group_and_one_generation_gate_generation_count_and_masses_open",
+  "date": "2026-08-04",
+  "input_menu": {
+    "base": "two-circle flat-character menu over K=RP3 x S1",
+    "torsion_generator": "Z2",
+    "fiber_requirement": "one compact connected simple group containing SM rank four"
+  },
+  "minimality": {
+    "SM_rank": 4,
+    "rank_four_simple_group_dimensions": {
+      "SU(5) / A4": 24,
+      "SO(8) / D4": 28,
+      "SO(9) / B4": 36,
+      "Sp(8) / C4": 36,
+      "F4": 52
+    },
+    "minimal_group": "SU(5) / A4",
+    "interpretation": "Rank below four cannot contain SU3 x SU2 x U1. In the rank-four census, SU(5) has the smallest Lie-algebra dimension."
+  },
+  "z2_holonomy": {
+    "P": "diag(1,1,1,-1,-1)",
+    "determinant": [
+      1.0,
+      0.0
+    ],
+    "order_two_error": 0.0,
+    "centralizer": "S(U3 x U2)=(SU3 x SU2 x U1)/Z6",
+    "centralizer_dimension": 12,
+    "unbroken_dimension_check": "8+3+1=12",
+    "broken_dimension": 12,
+    "SU5_dimension": 24
+  },
+  "hypercharge": {
+    "Y_fundamental": [
+      -0.3333333333333333,
+      -0.3333333333333333,
+      -0.3333333333333333,
+      0.5,
+      0.5
+    ],
+    "trace": 5.551115123125783e-17
+  },
+  "one_generation": {
+    "representation": "10 + bar5",
+    "branching_multiplicities": {
+      "10": {
+        "Q_(3,2)_1/6": 6,
+        "u_c_(bar3,1)_-2/3": 3,
+        "e_c_(1,1)_1": 1
+      },
+      "bar5": {
+        "d_c_(bar3,1)_1/3": 3,
+        "L_(1,2)_-1/2": 2
+      }
+    },
+    "weak_doublet_parities": [
+      -1
+    ],
+    "weak_singlet_parities": [
+      1
+    ],
+    "interpretation": "All weak doublet states are Z2-odd and all weak singlets are Z2-even under P."
+  },
+  "anomaly_checks": {
+    "SU5_cubic_A10": 1,
+    "SU5_cubic_Abar5": -1,
+    "SU5_total": 0,
+    "gravitational_U1": 1.6653345369377348e-16,
+    "U1_cubic": 1.97758476261356e-16,
+    "SU3_squared_U1": 0.0,
+    "SU2_squared_U1": 0.0
+  },
+  "generation_temptation": {
+    "spin_structure_count": 4,
+    "nonreference_count": 3,
+    "status": "numerically_tempting_but_not_canonical",
+    "obstruction": "The set of spin structures is affine; no reference element is preferred without extra data. The equation 4-1=3 is therefore not yet a derivation."
+  },
+  "gates": {
+    "single_simple_fiber": {
+      "passes": true,
+      "finding": "SU(5) is the smallest-dimensional compact simple rank-four group in the standard Lie-family census and can contain the full SM-rank subgroup."
+    },
+    "z2_breaking_to_sm": {
+      "passes": true,
+      "finding": "P=diag(1,1,1,-1,-1) is an order-two SU(5) element with centralizer S(U3 x U2)=(SU3 x SU2 x U1)/Z6."
+    },
+    "one_generation_branching": {
+      "passes": true,
+      "finding": "The anomaly-free chiral package 10 + bar5 branches into exactly Q, u_c, e_c, d_c and L with standard hypercharges."
+    },
+    "weak_doublet_parity_selector": {
+      "passes": true,
+      "finding": "The same torsion holonomy makes Q and L odd while every weak singlet is even."
+    },
+    "three_generations": {
+      "passes": false,
+      "finding": "Four spin structures minus one chosen reference gives three, but spin structures form a torsor with no canonical zero. Selecting the excluded sector requires an independent geometric or dynamical rule."
+    },
+    "masses_and_yukawa": {
+      "passes": false,
+      "finding": "The construction fixes representation content and parity, not Yukawa matrices, symmetry-breaking scales or observed masses."
+    }
+  },
+  "scientific_verdict": {
+    "new_positive_result": "A single minimal SU(5) fiber plus the existing Z2 torsion branch produces the SM gauge subgroup, one anomaly-free chiral generation, and a clean weak-doublet parity split without separate SU3/SU2 sector choices.",
+    "remaining_gaps": "The choice 10+bar5 is not yet derived from the menu, three generations are not canonically selected, and no masses or Yukawa couplings follow.",
+    "next_gate": "Search for a geometric invariant of the four spin structures that uniquely selects one reference sector and leaves three equivalent nonreference sectors, without using the observed generation count."
+  }
+}

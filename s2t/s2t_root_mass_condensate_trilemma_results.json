@@ -1,0 +1,63 @@
+{
+  "status": "root_mass_uniform_condensate_trilemma_the_torsion_twist_moves_rather_than_removes_the_obstruction",
+  "date": "2026-08-06",
+  "closed_generator_phase_table": {
+    "root": "+i",
+    "bilinear": "-1",
+    "ordinary_pair": "-1",
+    "twisted_pair": "+1",
+    "ordinary_vertex": "+1",
+    "twisted_vertex": "-1",
+    "torsion_yukawa": "-1",
+    "fully_twisted_vertex": "+1"
+  },
+  "three_requirements": {
+    "order_four_sterile_root": {
+      "condition": "r=+i",
+      "passes": true
+    },
+    "ordinary_linear_Majorana_vertex": {
+      "condition": "phi*r^2=+1",
+      "required_pair_phase": "-1",
+      "passes": true
+    },
+    "uniform_parallel_pairing_vacuum": {
+      "condition": "phi=+1 on the closed complement generator",
+      "ordinary_pair_passes": false,
+      "torsion_twisted_pair_passes": true
+    }
+  },
+  "trilemma": {
+    "ordinary_pairing": {
+      "Yukawa_vertex_invariant": true,
+      "uniform_parallel_condensate": false,
+      "finding": "The ordinary charge-minus-two field makes Phi N_c N_c invariant but carries holonomy -1, so it cannot be a uniform parallel vacuum."
+    },
+    "torsion_twisted_pairing": {
+      "uniform_parallel_condensate": true,
+      "Yukawa_vertex_invariant_with_scalar_coupling": false,
+      "finding": "The ambient torsion twist makes the pairing field parallel, but the linear vertex then carries the residual torsion sign -1."
+    },
+    "torsion_twisted_yukawa_spurion": {
+      "vertex_invariant": true,
+      "spurion_parallel_and_nonzero": false,
+      "finding": "A torsion-odd Yukawa coefficient restores the vertex algebraically but is itself nontrivial on the closed generator. The obstruction is moved into a new defect, zero, or chosen trivialization."
+    }
+  },
+  "logical_no_go": {
+    "simultaneously_possible_with_scalar_Yukawa": false,
+    "statement": "For r=i, vertex invariance requires phi=r^(-2)=-1, whereas a uniform parallel condensate requires phi=+1. No ordinary scalar assignment satisfies both.",
+    "allowed_nonuniform_route": "Retain phi=-1 as a section with forced gradient/defect texture; the Majorana mass is then localized or spatially varying rather than a homogeneous bulk parameter."
+  },
+  "revision_of_torsion_rescue": {
+    "previous_total_pair_holonomy": "+1",
+    "condensate_compatibility_retained": true,
+    "vertex_invariance_claim_retained": false,
+    "corrected_status": "The torsion twist solves the condensate holonomy only by transferring the nontrivial sign to the Yukawa map. It is not a complete rescue."
+  },
+  "scientific_verdict": {
+    "negative": "Minimal B-L plus a single ordinary or torsion-twisted charge-two field cannot provide all three of: an order-four sterile root, a scalar linear Majorana vertex, and a uniform parallel condensate.",
+    "surviving_branch": "The root can still support a nonuniform class-D defect pairing texture, which is consistent with the earlier rank-one route but not with a homogeneous Majorana mass.",
+    "next_gate": "Construct the lowest-action nonuniform twisted section and test whether its BdG kernel and fluctuation determinant remain rank one without a fitted Yukawa spurion."
+  }
+}

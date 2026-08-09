@@ -1,0 +1,121 @@
+{
+  "status": "geometric_shear_projects_to_canonical_rank_one_family_texture_one_heavy_two_massless",
+  "date": "2026-08-04",
+  "input": {
+    "family_space": "canonical S4 triplet im(I-J/4)",
+    "geometric_subgroup": "Z2 shear induced by Aut(Z2 x Z)",
+    "shear_action": "(p,q)->(p,q+p)"
+  },
+  "four_state_action": {
+    "shear_matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "shear_eigenvalues": [
+      -1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "odd_projector": "P_minus=(I-S)/2",
+    "odd_projector_rank_in_C4": 1,
+    "uniform_singlet_is_even": true
+  },
+  "triplet_restriction": {
+    "restricted_shear_eigenvalues": [
+      -0.9999999999999998,
+      0.9999999999999999,
+      1.0000000000000002
+    ],
+    "restricted_odd_projector_eigenvalues": [
+      0.0,
+      0.0,
+      0.9999999999999998
+    ],
+    "triplet_odd_projector_full_C4_eigenvalues": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "rank": 1,
+    "pattern": "2 even family directions + 1 odd family direction"
+  },
+  "leading_family_texture": {
+    "operator": "Y_family proportional to P_minus restricted to triplet",
+    "eigenvalues_up_to_overall_scale": [
+      0.0,
+      0.0,
+      0.9999999999999998
+    ],
+    "rank": 1,
+    "mass_pattern": "(0,0,1) up to permutation and overall scale",
+    "interpretation": "At exact geometric-subgroup order, one family can be massive while two remain massless. This is a canonical rank-one leading texture, not a fitted hierarchy."
+  },
+  "mixing": {
+    "universal_projector_assumption": "the same P_minus acts in up, down and charged-lepton family spaces",
+    "leading_CKM": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "interpretation": "Aligned rank-one textures give identity CKM at leading order; observed small mixing would require controlled subleading breaking."
+  },
+  "gates": {
+    "one_heavy_family": {
+      "passes": true,
+      "finding": "the unique odd projector has rank one on the canonical triplet"
+    },
+    "two_light_families": {
+      "passes": true,
+      "finding": "the even eigenspace has dimension two and is massless at leading order"
+    },
+    "full_hierarchy": {
+      "passes": false,
+      "finding": "no second parameter-free geometric operator splits the even doublet"
+    },
+    "realistic_mixing": {
+      "passes": false,
+      "finding": "the universal leading projector predicts exact alignment"
+    }
+  },
+  "scientific_verdict": {
+    "positive": "The menu construction now derives a standard qualitative flavor pattern: one heavy family and two light families from a canonical rank-one projector.",
+    "limit": "It does not derive nonzero first/second-family masses, their ratio, CKM angles or different textures across fermion sectors.",
+    "stop_rule": "Do not fit a generic perturbation matrix. Reopen only if another discrete operator already present in the menu or SU5 fiber splits the even two-dimensional subspace."
+  }
+}

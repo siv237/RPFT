@@ -1,0 +1,321 @@
+{
+  "status": "factor_translations_supply_second_family_operator_but_kernel_and_mixing_remain_underived",
+  "date": "2026-08-05",
+  "canonical_operators": {
+    "T_RP3": "(p,q)->(p+1,q)",
+    "T_S1": "(p,q)->(p,q+1)",
+    "shear": "(p,q)->(p,q+p)",
+    "translations_commute": true,
+    "restricted_T_RP3": [
+      [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "restricted_T_S1": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ]
+    ],
+    "restricted_shear": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "joint_character_basis": [
+      "chi_RP3",
+      "chi_S1",
+      "chi_RP3+S1"
+    ]
+  },
+  "geometric_group": {
+    "generated_order": 8,
+    "triplet_commutant_dimension": 2,
+    "interpretation": "Translations plus the geometric shear generate a D8-type order-eight action. Full invariance decomposes the triplet as 1+2 and therefore retains a light-family degeneracy."
+  },
+  "factor_laplacian": {
+    "general_operator": "L(w3,w1)=w3(I-T_RP3)+w1(I-T_S1)",
+    "exact_triplet_eigenvalues": "{2w3,2w1,2(w3+w1)}",
+    "factor_lengths_at_unit_radii": {
+      "RP3_systole": 3.141592653589793,
+      "S1_circle": 6.283185307179586
+    },
+    "kernel_tests": [
+      {
+        "kernel": "inverse_length_laplacian",
+        "weight_rp3": 0.3183098861837907,
+        "weight_s1": 0.15915494309189535,
+        "eigenvalues": [
+          0.3183098861837906,
+          0.6366197723675814,
+          0.9549296585513724
+        ],
+        "normalized_pattern": [
+          0.3333333333333331,
+          0.6666666666666665,
+          1.0
+        ]
+      },
+      {
+        "kernel": "inverse_square_laplacian",
+        "weight_rp3": 0.10132118364233778,
+        "weight_s1": 0.025330295910584444,
+        "eigenvalues": [
+          0.05066059182116889,
+          0.20264236728467555,
+          0.25330295910584444
+        ],
+        "normalized_pattern": [
+          0.2,
+          0.8,
+          1.0
+        ]
+      },
+      {
+        "kernel": "tunneling_laplacian",
+        "weight_rp3": 0.04321391826377226,
+        "weight_s1": 0.0018674427317079893,
+        "eigenvalues": [
+          0.0037348854634159795,
+          0.08642783652754452,
+          0.0901627219909605
+        ],
+        "normalized_pattern": [
+          0.04142383216636284,
+          0.9585761678336372,
+          1.0
+        ]
+      }
+    ],
+    "finding": "The factorization supplies enough commuting operators to split all three family directions, but topology does not choose the map from cycle length to Yukawa weight."
+  },
+  "winding_candidate": {
+    "rule": "mass_chi proportional to exp[-pi*p-2pi*q] for nonzero (p,q)",
+    "normalized_pattern": [
+      0.001867442731707989,
+      0.04321391826377225,
+      1.0
+    ],
+    "interpretation": "Independent additive winding actions produce a parameter-free hierarchy approximately (e^-2pi,e^-pi,1). It is a candidate kernel, not a derived Yukawa theorem."
+  },
+  "hierarchy_comparison": {
+    "charged_leptons": {
+      "target": [
+        0.00028757404624830463,
+        0.0594611917745775,
+        1.0
+      ],
+      "candidates": {
+        "inverse_length_laplacian": {
+          "pattern": [
+            0.3333333333333331,
+            0.6666666666666665,
+            1.0
+          ],
+          "log_RMS": 5.273549456861526,
+          "multiplicative_errors": [
+            1159.1217555339392,
+            11.211794563318833
+          ]
+        },
+        "inverse_square_laplacian": {
+          "pattern": [
+            0.2,
+            0.8,
+            1.0
+          ],
+          "log_RMS": 4.979356652593608,
+          "multiplicative_errors": [
+            695.4730533203641,
+            13.454153475982602
+          ]
+        },
+        "tunneling_laplacian": {
+          "pattern": [
+            0.04142383216636284,
+            0.9585761678336372,
+            1.0
+          ],
+          "log_RMS": 4.026866075597026,
+          "multiplicative_errors": [
+            144.04579518485338,
+            16.121038600566266
+          ]
+        },
+        "additive_winding_amplitudes": {
+          "pattern": [
+            0.001867442731707989,
+            0.04321391826377225,
+            1.0
+          ],
+          "log_RMS": 1.3419993344765409,
+          "multiplicative_errors": [
+            6.493780492609383,
+            0.7267583607741993
+          ]
+        }
+      }
+    },
+    "down_quarks_at_declared_scales": {
+      "target": [
+        0.0011172248803827751,
+        0.022344497607655504,
+        1.0
+      ],
+      "candidates": {
+        "inverse_length_laplacian": {
+          "pattern": [
+            0.3333333333333331,
+            0.6666666666666665,
+            1.0
+          ],
+          "log_RMS": 4.690491162110582,
+          "multiplicative_errors": [
+            298.3583154889362,
+            29.83583154889364
+          ]
+        },
+        "inverse_square_laplacian": {
+          "pattern": [
+            0.2,
+            0.8,
+            1.0
+          ],
+          "log_RMS": 4.456015629511492,
+          "multiplicative_errors": [
+            179.01498929336188,
+            35.80299785867238
+          ]
+        },
+        "tunneling_laplacian": {
+          "pattern": [
+            0.04142383216636284,
+            0.9585761678336372,
+            1.0
+          ],
+          "log_RMS": 3.6866601660796428,
+          "multiplicative_errors": [
+            37.077434358757316,
+            42.899875605402606
+          ]
+        },
+        "additive_winding_amplitudes": {
+          "pattern": [
+            0.001867442731707989,
+            0.04321391826377225,
+            1.0
+          ],
+          "log_RMS": 0.5911681459143605,
+          "multiplicative_errors": [
+            1.6715012031133607,
+            1.933984778828351
+          ]
+        }
+      }
+    },
+    "up_quarks_at_declared_scales": {
+      "target": [
+        1.2521739130434784e-05,
+        0.0073623188405797105,
+        1.0
+      ],
+      "candidates": {
+        "inverse_length_laplacian": {
+          "pattern": [
+            0.3333333333333331,
+            0.6666666666666665,
+            1.0
+          ],
+          "log_RMS": 7.878064376079168,
+          "multiplicative_errors": [
+            26620.370370370347,
+            90.55118110236218
+          ]
+        },
+        "inverse_square_laplacian": {
+          "pattern": [
+            0.2,
+            0.8,
+            1.0
+          ],
+          "log_RMS": 7.604439020528836,
+          "multiplicative_errors": [
+            15972.22222222222,
+            108.66141732283465
+          ]
+        },
+        "tunneling_laplacian": {
+          "pattern": [
+            0.04142383216636284,
+            0.9585761678336372,
+            1.0
+          ],
+          "log_RMS": 6.685246998289609,
+          "multiplicative_errors": [
+            3308.153263285921,
+            130.20030626086805
+          ]
+        },
+        "additive_winding_amplitudes": {
+          "pattern": [
+            0.001867442731707989,
+            0.04321391826377225,
+            1.0
+          ],
+          "log_RMS": 3.7537156203116666,
+          "multiplicative_errors": [
+            149.13605149056855,
+            5.869607008268278
+          ]
+        }
+      }
+    }
+  },
+  "mixing_gate": {
+    "commuting_factor_algebra": true,
+    "consequence": "Every up/down Yukawa that is a function only of T_RP3 and T_S1 is diagonal in the same character basis, so CKM is exactly the identity.",
+    "SU5_parity_effect": "Weak-doublet/singlet parity changes eigenvalues but not the common left family eigenbasis; it does not generate CKM mixing.",
+    "required_new_structure": "A sector-dependent noncommuting shear coefficient or another transition operator derived from the action."
+  },
+  "scientific_verdict": {
+    "positive": "A genuine second canonical operator exists: the two factor translations jointly resolve the three family directions without continuous angles.",
+    "negative": "The physical kernel f(length) and the noncommuting source of CKM mixing are not fixed. Natural kernels do not reproduce all three observed hierarchies, especially the up sector.",
+    "status": "three-family carrier plus parameter-free hierarchy candidate, not a flavor prediction",
+    "next_gate": "derive the tunneling kernel and a sector-dependent shear insertion from one menu-SU5 action before comparing another mass ratio"
+  }
+}

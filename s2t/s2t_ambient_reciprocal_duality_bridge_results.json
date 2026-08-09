@@ -1,0 +1,566 @@
+{
+  "status": "ambient_reciprocal_duality_bridge_fails_in_current_Maxwell_FP_model",
+  "date": "2026-08-03",
+  "bridge_claim_tested": "The intrinsic Qcycle involution should force equal-weight pairing of the full ambient Maxwell--FP relative determinants at r and 1/r.",
+  "tests": {
+    "low_coexact_product_spectra": [
+      {
+        "radius_ratio": 0.5,
+        "inverse_radius_ratio": 2.0,
+        "compared_levels": 30,
+        "exact_position_matches": 0,
+        "multiplicity_position_matches": 10,
+        "mean_relative_eigenvalue_difference": 0.6571855163813374,
+        "max_relative_eigenvalue_difference": 0.7243852459016393,
+        "first_direct_levels": [
+          {
+            "eigenvalue": 4.25,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 6.25,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -1
+          },
+          {
+            "eigenvalue": 10.25,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 1
+          },
+          {
+            "eigenvalue": 16.25,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -2
+          },
+          {
+            "eigenvalue": 16.25,
+            "multiplicity": 30,
+            "n": 3,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 18.25,
+            "multiplicity": 30,
+            "n": 3,
+            "momentum": -1
+          },
+          {
+            "eigenvalue": 22.25,
+            "multiplicity": 30,
+            "n": 3,
+            "momentum": 1
+          },
+          {
+            "eigenvalue": 24.25,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 2
+          }
+        ],
+        "first_inverse_levels": [
+          {
+            "eigenvalue": 4.015625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 4.140625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -1
+          },
+          {
+            "eigenvalue": 4.390625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 1
+          },
+          {
+            "eigenvalue": 4.765625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -2
+          },
+          {
+            "eigenvalue": 5.265625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 2
+          },
+          {
+            "eigenvalue": 5.890625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -3
+          },
+          {
+            "eigenvalue": 6.640625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 3
+          },
+          {
+            "eigenvalue": 7.515625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -4
+          }
+        ]
+      },
+      {
+        "radius_ratio": 0.75,
+        "inverse_radius_ratio": 1.3333333333333333,
+        "compared_levels": 30,
+        "exact_position_matches": 0,
+        "multiplicity_position_matches": 13,
+        "mean_relative_eigenvalue_difference": 0.3616980627224213,
+        "max_relative_eigenvalue_difference": 0.4876885775862069,
+        "first_direct_levels": [
+          {
+            "eigenvalue": 4.111111111111111,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 5.0,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -1
+          },
+          {
+            "eigenvalue": 6.777777777777779,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 1
+          },
+          {
+            "eigenvalue": 9.444444444444446,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -2
+          },
+          {
+            "eigenvalue": 13.0,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 2
+          },
+          {
+            "eigenvalue": 16.11111111111111,
+            "multiplicity": 30,
+            "n": 3,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 17.0,
+            "multiplicity": 30,
+            "n": 3,
+            "momentum": -1
+          },
+          {
+            "eigenvalue": 17.444444444444443,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -3
+          }
+        ],
+        "first_inverse_levels": [
+          {
+            "eigenvalue": 4.03515625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 4.31640625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -1
+          },
+          {
+            "eigenvalue": 4.87890625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 1
+          },
+          {
+            "eigenvalue": 5.72265625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -2
+          },
+          {
+            "eigenvalue": 6.84765625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 2
+          },
+          {
+            "eigenvalue": 8.25390625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -3
+          },
+          {
+            "eigenvalue": 9.94140625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 3
+          },
+          {
+            "eigenvalue": 11.91015625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -4
+          }
+        ]
+      },
+      {
+        "radius_ratio": 1.25,
+        "inverse_radius_ratio": 0.8,
+        "compared_levels": 30,
+        "exact_position_matches": 0,
+        "multiplicity_position_matches": 12,
+        "mean_relative_eigenvalue_difference": 0.291946012626912,
+        "max_relative_eigenvalue_difference": 0.44108668807112866,
+        "first_direct_levels": [
+          {
+            "eigenvalue": 4.04,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 4.36,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -1
+          },
+          {
+            "eigenvalue": 5.0,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 1
+          },
+          {
+            "eigenvalue": 5.96,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -2
+          },
+          {
+            "eigenvalue": 7.24,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 2
+          },
+          {
+            "eigenvalue": 8.84,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -3
+          },
+          {
+            "eigenvalue": 10.760000000000002,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 3
+          },
+          {
+            "eigenvalue": 13.0,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -4
+          }
+        ],
+        "first_inverse_levels": [
+          {
+            "eigenvalue": 4.09765625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 4.87890625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -1
+          },
+          {
+            "eigenvalue": 6.44140625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 1
+          },
+          {
+            "eigenvalue": 8.78515625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -2
+          },
+          {
+            "eigenvalue": 11.91015625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 2
+          },
+          {
+            "eigenvalue": 15.81640625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -3
+          },
+          {
+            "eigenvalue": 16.09765625,
+            "multiplicity": 30,
+            "n": 3,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 16.87890625,
+            "multiplicity": 30,
+            "n": 3,
+            "momentum": -1
+          }
+        ]
+      },
+      {
+        "radius_ratio": 2.0,
+        "inverse_radius_ratio": 0.5,
+        "compared_levels": 30,
+        "exact_position_matches": 0,
+        "multiplicity_position_matches": 10,
+        "mean_relative_eigenvalue_difference": 0.6571855163813374,
+        "max_relative_eigenvalue_difference": 0.7243852459016393,
+        "first_direct_levels": [
+          {
+            "eigenvalue": 4.015625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 4.140625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -1
+          },
+          {
+            "eigenvalue": 4.390625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 1
+          },
+          {
+            "eigenvalue": 4.765625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -2
+          },
+          {
+            "eigenvalue": 5.265625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 2
+          },
+          {
+            "eigenvalue": 5.890625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -3
+          },
+          {
+            "eigenvalue": 6.640625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 3
+          },
+          {
+            "eigenvalue": 7.515625,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -4
+          }
+        ],
+        "first_inverse_levels": [
+          {
+            "eigenvalue": 4.25,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 6.25,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -1
+          },
+          {
+            "eigenvalue": 10.25,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 1
+          },
+          {
+            "eigenvalue": 16.25,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": -2
+          },
+          {
+            "eigenvalue": 16.25,
+            "multiplicity": 30,
+            "n": 3,
+            "momentum": 0
+          },
+          {
+            "eigenvalue": 18.25,
+            "multiplicity": 30,
+            "n": 3,
+            "momentum": -1
+          },
+          {
+            "eigenvalue": 22.25,
+            "multiplicity": 30,
+            "n": 3,
+            "momentum": 1
+          },
+          {
+            "eigenvalue": 24.25,
+            "multiplicity": 6,
+            "n": 1,
+            "momentum": 2
+          }
+        ]
+      }
+    ],
+    "single_relative_response": [
+      {
+        "radius_ratio": 0.4,
+        "G_r": 0.03345700465304299,
+        "G_inverse_r": 1.3655743202889115e-13,
+        "absolute_difference": 0.033457004652906436,
+        "relative_difference": 0.9999999999959184
+      },
+      {
+        "radius_ratio": 0.5,
+        "G_r": 0.010080209508882653,
+        "G_inverse_r": 7.296663273503942e-11,
+        "absolute_difference": 0.01008020943591602,
+        "relative_difference": 0.9999999927613972
+      },
+      {
+        "radius_ratio": 0.75,
+        "G_r": 0.00046978439704009633,
+        "G_inverse_r": 3.1684467137253793e-07,
+        "absolute_difference": 0.0004694675523687238,
+        "relative_difference": 0.9993255530124695
+      },
+      {
+        "radius_ratio": 1.25,
+        "G_r": 9.021851588717516e-07,
+        "G_inverse_r": 0.00025235706794801807,
+        "absolute_difference": 0.00025145488278914633,
+        "relative_difference": 0.9964249657590031
+      },
+      {
+        "radius_ratio": 2.0,
+        "G_r": 7.296663273503942e-11,
+        "G_inverse_r": 0.010080209508882653,
+        "absolute_difference": 0.01008020943591602,
+        "relative_difference": 0.9999999927613972
+      },
+      {
+        "radius_ratio": 2.5,
+        "G_r": 1.3655743202889115e-13,
+        "G_inverse_r": 0.03345700465304299,
+        "absolute_difference": 0.033457004652906436,
+        "relative_difference": 0.9999999999959184
+      }
+    ],
+    "scalar_zero_mode_measure_scaling": [
+      {
+        "radius_ratio": 0.5,
+        "logdet_prime_circle_scalar": 2.2894597716988003,
+        "logdet_prime_at_inverse_radius": 5.0620484939385815,
+        "difference": -2.772588722239781,
+        "expected_4_log_r": -2.772588722239781,
+        "identity_error": 0.0
+      },
+      {
+        "radius_ratio": 0.75,
+        "logdet_prime_circle_scalar": 3.100389987915129,
+        "logdet_prime_at_inverse_radius": 4.251118277722252,
+        "difference": -1.1507282898071232,
+        "expected_4_log_r": -1.1507282898071236,
+        "identity_error": 4.440892098500626e-16
+      },
+      {
+        "radius_ratio": 1.25,
+        "logdet_prime_circle_scalar": 4.12204123544711,
+        "logdet_prime_at_inverse_radius": 3.2294670301902713,
+        "difference": 0.8925742052568388,
+        "expected_4_log_r": 0.8925742052568391,
+        "identity_error": 2.220446049250313e-16
+      },
+      {
+        "radius_ratio": 2.0,
+        "logdet_prime_circle_scalar": 5.0620484939385815,
+        "logdet_prime_at_inverse_radius": 2.2894597716988003,
+        "difference": 2.772588722239781,
+        "expected_4_log_r": 2.772588722239781,
+        "identity_error": 0.0
+      }
+    ],
+    "known_Maxwell_duality_candidate": {
+      "candidate_sector": "Maxwell_scalar_duality_sector",
+      "required_gamma_scalar_power": 0.5,
+      "actual_gamma_scalar_power_available": "duality_rewrites_physical_modes_not_adds_modes",
+      "spectrum_match": "partial_dimension_dependent_dual_description",
+      "sign_match": "not_an_extra_opposite_sign_determinant",
+      "P02_coupling_match": "unproven_and_risks_double_counting",
+      "new_parameter": false,
+      "status": "fail_duality_not_additive",
+      "verdict": "Duality can reformulate the physical determinant but does not add an independent compensating determinant without doubling degrees of freedom."
+    }
+  },
+  "source_domains": {
+    "Qcycle": {
+      "space": "H0(gamma;Z) direct_sum H1(gamma;Z)",
+      "duality": "J exchanges e0 and e1 while ell maps to ell^-1",
+      "scope": "intrinsic H0(gamma) direct_sum H1(gamma) Gram complex"
+    },
+    "ambient_Maxwell_FP": {
+      "space": "coexact one-forms and nonzero scalars on RP3 x S1 with KK momentum",
+      "radius_action": "r inversion rescales circle KK eigenvalues but does not exchange them with RP3 p-form shells or their multiplicities"
+    }
+  },
+  "checks": {
+    "ambient_low_spectra_isospectral_under_r_inversion": false,
+    "single_relative_response_is_dual": false,
+    "zero_mode_measure_is_dual": false,
+    "Maxwell_duality_supplies_additive_inverse_radius_sector": false,
+    "zero_mode_scaling_identity_verified": true
+  },
+  "interpretation": {
+    "spectral_failure": "The product spectra at r and 1/r are not isospectral away from r=1. Circle KK momentum is not exchanged with RP3 coexact/scalar shells.",
+    "response_failure": "The computed single determinant response G(r) is strongly asymmetric; G(r)+G(1/r) becomes dual only because the second term is appended.",
+    "zero_mode_failure": "For the constant scalar circle branch, det'(-d^2)= (2*pi*R1)^2, so radius inversion produces the nonzero shift 4 log r before gauge-volume bookkeeping.",
+    "duality_failure": "Ordinary Maxwell duality rewrites physical modes; it does not add a second inverse-radius determinant with equal positive weight.",
+    "category_warning": "Qcycle duality is an intrinsic primal/dual Hodge relation on the defect cycle. No ambient operator intertwiner from that complex to the Maxwell--FP Hilbert space is defined."
+  },
+  "decision": {
+    "reciprocal_completion_mandatory_in_current_model": false,
+    "unit_radius_minimum_status": "symmetrized_candidate_not_derived_vacuum_selection",
+    "new_model_required": "a genuine winding sector, string-like T-duality, or an explicit ambient operator involution with the zero-mode measure included",
+    "alpha_status": "no_claim"
+  },
+  "verdict": "The ambient reciprocal bridge fails for the current Maxwell--FP field content. The intrinsic Qcycle involution does not make the RP3 x S1 product spectrum, the single relative determinant, or the scalar zero-mode measure invariant under r -> 1/r. The stable r=1 minimum of the dual-completed functional is therefore a property of an imposed symmetrization, not yet a consequence of Tome II.A. It can be revived only by deriving a genuinely new mandatory dual sector or ambient intertwiner."
+}

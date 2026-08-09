@@ -1,0 +1,127 @@
+{
+  "status": "tau_seed_gram_constructed_rank9_quotient_trace_candidate_predicts_tau_conditionally",
+  "date": "2026-08-04",
+  "epistemic_status": {
+    "classification": "post_audit_zero_parameter_operator_candidate",
+    "warning": "the rank9 quotient-trace identification was proposed after the missing Jacobian magnitude was known and is not blind evidence"
+  },
+  "charged_lepton_gram_seed": {
+    "space": "L2(RP3) direct_sum L2(S1) direct_sum normalized transverse angular channel on S2",
+    "vector": "Xi_tau=(1_RP3,1_S1,P_perp n)",
+    "components": {
+      "RP3_constant_norm_squared": 9.869604401089358,
+      "S1_constant_norm_squared": 6.283185307179586,
+      "normalized_transverse_average": 0.6666666666666667
+    },
+    "norm_squared": 16.819456374935612,
+    "declared_rho0": 16.819456374935612,
+    "identity_error": 0.0,
+    "primitive_lattice_rule": "all three channels present with nonzero primitive integer coefficients",
+    "minimum_norm_squared": 16.819456374935612,
+    "minimum_sign_degeneracy": 8,
+    "minimum_coefficients": [
+      [
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "conditionality": "the direct-sum metric is canonical once the three channels are declared, but their common coupling to the charged-lepton transition operator is not yet derived"
+  },
+  "projection_trace_candidate": {
+    "traceless_space": "Sym^2_0(R4)",
+    "rank": 9,
+    "quotient_volume_ratio_RP3_over_S3": 0.5,
+    "candidate_J_RP3": 4.5,
+    "rule": "J_candidate=(Vol(RP3)/Vol(S3))*Tr(P_traceless)=9/2",
+    "motivation": "the Tome already states that the relative lepton operator retains a traceless RP3 component; rank9 and the quotient factor are pre-existing geometric data",
+    "open_operator_gate": "prove that the compact self-energy uses the unnormalized quotient trace over all nine strain channels rather than a normalized per-channel trace"
+  },
+  "predictions": {
+    "normalized_single_channel": {
+      "jacobian": 1.0,
+      "alpha_coefficient": 0.061696937539545534,
+      "factor": 16.819006150630248,
+      "prediction_MeV": 1777.0688674001003,
+      "pull": 1.542971112225031
+    },
+    "quotient_measure_only": {
+      "jacobian": 0.5,
+      "alpha_coefficient": 0.030848468769772767,
+      "factor": 16.819231262782928,
+      "prediction_MeV": 1777.0926523844578,
+      "pull": 1.8072487161968336
+    },
+    "traceless_rank9_quotient_trace": {
+      "jacobian": 4.5,
+      "alpha_coefficient": 0.2776362189279549,
+      "factor": 16.817430365561467,
+      "prediction_MeV": 1776.9023725095958,
+      "pull": -0.3069721156028512
+    },
+    "full_rank10_quotient_trace": {
+      "jacobian": 5.0,
+      "alpha_coefficient": 0.3084846876977277,
+      "factor": 16.817205253408783,
+      "prediction_MeV": 1776.878587525238,
+      "pull": -0.5712497195797066
+    },
+    "rank10_plus_holonomy_line": {
+      "jacobian": 5.5,
+      "alpha_coefficient": 0.33933315646750045,
+      "factor": 16.816980141256103,
+      "prediction_MeV": 1776.8548025408804,
+      "pull": -0.8355273235515092
+    }
+  },
+  "comparison_to_claimed_one_third": {
+    "claimed_alpha_coefficient": 0.3333333333333333,
+    "rank9_alpha_coefficient": 0.2776362189279549,
+    "relative_coefficient_difference": -0.16709134321613517,
+    "claimed_prediction_MeV": 1776.8594285630165,
+    "rank9_prediction_MeV": 1776.9023725095958,
+    "mass_difference_MeV": 0.04294394657927114
+  },
+  "scientific_verdict": {
+    "positive": "rho0 has an exact minimal Gram-norm realization and the pre-existing traceless rank9 plus quotient volume supplies a zero-parameter Jacobian candidate",
+    "prediction": "the resulting revised tau mass is 1776.90237 MeV, about -0.31 current experimental sigma",
+    "negative": "neither the common charged-lepton coupling of the three Gram channels nor the use of an unnormalized nine-channel trace has been derived from the EFT vertex",
+    "theory_effect": "this is the first explicit operator-level completion candidate for both tau gaps, but it remains exploratory rather than restoring theorem status",
+    "next_gate": "construct the ambient charged-lepton superconnection and calculate its one-loop projection trace to decide between J=1, 1/2, or 9/2 without using m_tau"
+  }
+}

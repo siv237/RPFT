@@ -1,0 +1,697 @@
+\chapter{Family-connection bridge и exact-one BdG kernel}
+
+Предыдущий gate показал, что антисимметричный family selector нельзя
+реализовать четырёхмерным scalar Majorana Yukawa term. Однако такой оператор
+естественно возникает из ковариантной производной вещественного
+\(SO(3)\)-triplet. Это даёт локальный bulk--core bridge без ручного
+boundary mass.
+
+\section{Допустимый tubular operator}
+
+Пусть family-blind vortex operator на поперечном диске имеет вид
+\(D_\perp\) и обладает единственной нормированной вещественной zero mode
+\(\psi_0\), отделённой от остального спектра gap \(\Delta_\perp>0\).
+Три поколения до включения family connection образуют
+\begin{equation}
+ \ker(D_\perp\otimes I_3)
+ =\operatorname{span}\{\psi_0\}\otimes\mathbb R^3.
+\end{equation}
+
+На трубке \(N(\gamma)\simeq D^2\times S^1_L\) введём вещественную
+\(SO(3)\)-связность
+\begin{equation}
+ \mathcal A_s=\frac1L K_n,
+ \qquad
+ K_n=\theta_*[n]_\times,
+ \qquad
+ \operatorname{Hol}_\gamma(\mathcal A)=e^{K_n}=R_n(\theta_*).
+\end{equation}
+Она входит не как scalar bilinear, а через разрешённую covariant derivative
+triplet Majorana field:
+\begin{equation}
+ S_F=\frac12\int_{N(\gamma)}
+ \Psi^TC\left[
+ D_{a,\Phi}\otimes I_3+
+ \Gamma^s\otimes(\partial_s+\mathcal A_s)
+ \right]\Psi.
+\end{equation}
+Поскольку \(K_n^T=-K_n\), это стандартная реальная gauge coupling. После
+проекции на \(\psi_0\) она даёт
+\begin{equation}
+ P_0S_FP_0
+ =\frac12\int_\gamma
+ \chi^T(\partial_s+L^{-1}K_n)\chi,
+\end{equation}
+то есть прежний антисимметричный core operator теперь следует из bulk
+covariant derivative.
+
+\section{Точный separable spectrum}
+
+Для product metric, постоянной longitudinal connection, family-blind
+vortex profile и ранее выведенной полной periodic longitudinal branch
+квадрат BdG operator разделяется:
+\begin{equation}
+ \mathcal D^2
+ =D_\perp^2\otimes I_3+
+ I\otimes\left[-i\partial_s+\frac{iK_n}{L}\right]^2.
+\end{equation}
+Так как
+\begin{equation}
+ \operatorname{Spec}(iK_n)=\{-\theta_*,0,+\theta_*\},
+\end{equation}
+полный спектр квадратов имеет вид
+\begin{equation}
+ \lambda_{j,k,\sigma}^2
+ =\varepsilon_j^2+
+ \left(\frac{2\pi k+\sigma\theta_*}{L}\right)^2,
+ \qquad
+ k\in\mathbb Z,
+ \quad
+ \sigma\in\{-1,0,+1\}.
+\end{equation}
+Здесь \(\varepsilon_0=0\), а \(|\varepsilon_j|\geq\Delta_\perp\) для
+\(j\ne0\). Поскольку
+\begin{equation}
+ 0<\theta_*=\arccos\!\left(\frac{26-9\sqrt{15}}{11}\right)<\pi,
+\end{equation}
+нулевое значение возможно только при
+\begin{equation}
+ j=0,
+ \qquad k=0,
+ \qquad \sigma=0.
+\end{equation}
+
+\begin{theorem}[Exact-one separable kernel]
+В separable tubular model с unit transverse Majorana index и family Wilson
+holonomy \(R_n(\theta_*)\) полный BdG operator \(\mathcal D\) имеет ровно одну вещественную
+zero mode:
+\begin{equation}
+ \dim\ker\mathcal D=1.
+\end{equation}
+Она равна \(\psi_0\otimes n\). Gap над ней ограничен снизу величиной
+\begin{equation}
+ \delta_{\rm sep}
+ =\min\left\{\Delta_\perp,\frac{\theta_*}{L}\right\}.
+\end{equation}
+Для систолического core \(L=\pi\) family contribution равен
+\begin{equation}
+ \frac{\theta_*}{\pi}=0.7979250094\ldots.
+\end{equation}
+\end{theorem}
+
+Это локальная теорема на tubular neighborhood. Она не утверждает, что
+постоянная связность с данным углом продолжается на весь
+\(\mathbb{RP}^3\) как плоская связность.
+
+Таким образом, в этом классе моделей не требуется ни scalar order parameter
+\(\Sigma\), ни отдельный core Yukawa coefficient \(g\): selector является
+longitudinal Wilson splitting того же real triplet bundle.
+
+\section{Устойчивость вне точного product ansatz}
+
+Пусть \(\mathcal D_E=\mathcal D+E\), где \(E\) сохраняет class-D reality,
+тот же mod-two defect sector и имеет operator norm
+\begin{equation}
+ \|E\|<\frac12\delta_{\rm sep}.
+\end{equation}
+Тогда spectral projection на интервал
+\((-\delta_{\rm sep}/2,\delta_{\rm sep}/2)\) сохраняет rank one. Particle--hole
+symmetry не позволяет единственной непарной eigenvalue уйти от нуля, поэтому
+exact-one kernel устойчив, а новый gap не меньше
+\begin{equation}
+ \delta_E\geq\delta_{\rm sep}-\|E\|>\frac12\delta_{\rm sep}.
+\end{equation}
+
+Для perturbation, контролируемой блоками, достаточно более локального
+Feshbach-критерия. Если \(P\) проектирует на три исходные core modes,
+\(Q=I-P\),
+\begin{equation}
+ q=\|QEQ\|<\Delta_\perp,
+ \qquad
+ b=\|PEQ\|,
+\end{equation}
+то две поперечные family modes остаются обратимыми при
+\begin{equation}
+ \frac{\theta_*}{L}>
+ \frac{b^2}{\Delta_\perp-q}.
+\end{equation}
+Осевая mode остаётся точной, если perturbation ковариантна относительно той
+же connection и annihilates \(n\).
+
+\section{Что закрыто и что осталось}
+
+Закрыты два локальных разрыва:
+\begin{enumerate}
+ \item антисимметричный core operator получен из допустимой bulk gauge
+ coupling, а не из исчезающего scalar bilinear;
+ \item для separable tube доказан full-spectrum exact-one kernel, а для
+ малых class-D perturbations дана явная область устойчивости.
+\end{enumerate}
+
+\section{Торсионное препятствие для плоского ambient extension}
+
+Систолическая геодезическая представляет элемент порядка два в
+\begin{equation}
+ \pi_1(\mathbb{RP}^3\times S^1)=\mathbb Z_2\times\mathbb Z.
+\end{equation}
+Поэтому holonomy любой плоской ambient connection обязана удовлетворять
+\begin{equation}
+ W_\gamma^2=I.
+\end{equation}
+В \(SO(3)\) это допускает только углы \(0\) и \(\pi\), тогда как
+\(0<\theta_*<\pi\) и \(\theta_*\ne\pi\). Следовательно, tubular connection
+\(K_n/L\) не имеет плоского ambient extension вдоль систолического core.
+
+\begin{nogocriterion}[Flat torsion Wilson obstruction]
+Нельзя одновременно считать \(V_{\rm gap}\) потенциалом плоской ambient
+Wilson-моды и помещать её holonomy \(R_n(\theta_*)\) на торсионный
+систолический цикл. Такое чтение несовместимо с fundamental-group relation.
+\end{nogocriterion}
+
+\section{Два согласованных продолжения}
+
+Первый маршрут использует неторсионный внешний фактор \(S^1\). Тогда defect
+в полном carrier читается как \(\gamma\times S^1\): систолическая
+\(\gamma\) несёт vortex topology и periodic longitudinal zero mode, а
+family Wilson connection живёт на дополнительном круге длины
+\(L_1=2\pi R_1\). Separable spectrum становится
+\begin{equation}
+ \lambda_{j,\ell,k,\sigma}^2
+ =\varepsilon_j^2+
+ \left(\frac{2\pi\ell}{L_\gamma}\right)^2+
+ \left(\frac{2\pi k+\sigma\theta_*}{L_1}\right)^2.
+\end{equation}
+При periodic total spin branch на дополнительном круге единственный ноль
+снова имеет индексы \((j,\ell,k,\sigma)=(0,0,0,0)\), а
+\begin{equation}
+ \delta_{S^1}
+ =\min\left\{
+ \Delta_\perp,
+ \frac{2\pi}{L_\gamma},
+ \frac{\theta_*}{L_1}
+ \right\}.
+\end{equation}
+Для \(L_\gamma=\pi\), \(R_1=1\) family gap равен
+\begin{equation}
+ \frac{\theta_*}{2\pi}=a_*=0.3989625047\ldots.
+\end{equation}
+Однако anti-periodic spin branch на внешнем \(S^1\) уничтожает осевую
+нулевую моду. Поэтому этот маршрут требует periodic defect sector либо
+дополнительной компенсирующей holonomy, выведенной до данных.
+
+\section{Компенсированная spin-ветвь из charge-two Higgs sector}
+
+Компенсация не требует нового непрерывного поля. Пусть геометрическая
+spin-структура на внешнем \(S^1\) anti-periodic и \(\eta=1/2\). Для
+fermion нечётного \(B-L\)-заряда \(q\) при flat gauge holonomy
+\(\alpha=\oint_{S^1}a\) полный momentum равен
+\begin{equation}
+ p_{k,\sigma}
+ =\frac{2\pi(k+\eta)+q\alpha+\sigma\theta_*}{L_1}.
+\end{equation}
+После конденсации charge-two field gauge group содержит residual
+\(\mathbb Z_2\)-holonomy
+\begin{equation}
+ \alpha=0\quad\text{или}\quad\alpha=\pi.
+\end{equation}
+Для нечётного \(q\) ветвь \(\alpha=\pi\) сокращает anti-periodic spin sign:
+\begin{equation}
+ e^{2\pi i\eta}e^{iq\alpha}=(-1)(-1)=+1.
+\end{equation}
+При этом charge-two condensate однозначен, поскольку
+\begin{equation}
+ e^{2i\alpha}=+1.
+\end{equation}
+После целочисленной перенумерации \(k\) спектр возвращается к periodic
+формуле, и осевая \(\sigma=0\) zero mode восстанавливается. Следовательно,
+compensated branch совместима с уже введённым \(B-L\) field content и не
+вводит непрерывного fit-параметра.
+
+Локальное charge-two Higgs action, однако, не различает две residual flat
+ветви \(\alpha=0\) и \(\alpha=\pi\). Поэтому закрыта доступность требуемой
+spin\(^{G}\)-структуры, но не её динамический выбор. Для полного вывода нужен
+topological term, boundary condition или determinant sign, выбирающий
+\(\alpha=\pi\) до обращения к neutrino data.
+
+Действительно, для любого минимального локального функционала, зависящего от
+\(F_a\), \(|D_a\Phi|^2\) и \(V(|\Phi|)\), две конфигурации
+\begin{equation}
+ (a,\Phi)=(0,v)
+ \quad\text{и}\quad
+ (a,\Phi)=\left(\frac{\pi}{L_1}ds,
+ ve^{2\pi is/L_1}\right)
+\end{equation}
+имеют \(F_a=0\), \(D_a\Phi=0\) и одинаковый potential energy. Они не
+связаны допустимым gauge transformation при наличии unit-charge fermions,
+поскольку требуемое преобразование меняет знак после обхода круга.
+
+\begin{nogocriterion}[Residual-holonomy degeneracy]
+Минимальный local charge-two Higgs action не способен динамически выбрать
+compensating branch \(\alpha=\pi\) вместо \(\alpha=0\). Выбор требует
+nonlocal Wilson functional, topological coupling или квантового вклада
+odd-charge sector. Простое объявление condensate не закрывает spin gate.
+\end{nogocriterion}
+
+\section{Однопетлевой Hosotani sign gate}
+
+Для massive mode с \(\rho>0\) введём конечную holonomy-dependent часть
+\begin{equation}
+ I_\rho(\beta)=
+ \log\frac{\cosh(2\pi\rho)-\cos(2\pi\beta)}
+ {\cosh(2\pi\rho)-1}.
+\end{equation}
+На фундаментальном интервале \(0\leq\beta\leq1/2\) она монотонно возрастает,
+поскольку
+\begin{equation}
+ \frac{dI_\rho}{d\beta}
+ =\frac{2\pi\sin(2\pi\beta)}
+ {\cosh(2\pi\rho)-\cos(2\pi\beta)}\geq0.
+\end{equation}
+Bosonic mode даёт \(+dI_\rho/2\), fermionic mode --- \(-dI_\rho/2\).
+
+Для anti-periodic odd-charge fermion переход \(\alpha:0\to\pi\) меняет
+\(\beta:1/2\to0\), поэтому
+\begin{equation}
+ \Delta V_f
+ =V_f(\pi)-V_f(0)
+ =\frac d2 I_\rho(1/2)>0.
+\end{equation}
+Для anti-periodic fermion с \(q=1/3\) конечная фаза равна
+\(\beta=2/3\sim1/3\), и
+\begin{equation}
+ \Delta V_f
+ =\frac d2\left[I_\rho(1/2)-I_\rho(1/3)\right]>0.
+\end{equation}
+Для periodic boson с \(q=1/3\) правильный shift равен \(q/2=1/6\), а не
+\(1/3\), но знак остаётся тем же:
+\begin{equation}
+ \Delta V_b=\frac d2I_\rho(1/6)>0.
+\end{equation}
+Charge-two boson не различает ветви. Следовательно, минимальный набор
+anti-periodic fermions и periodic bosons действительно выбирает
+\(\alpha=0\), а compensated branch \(\alpha=\pi\) является более высокой
+stationary branch.
+
+При \(\rho\gg1\) правильная асимптотика равна
+\begin{equation}
+ I_\rho(\beta)
+ =2\left[1-\cos(2\pi\beta)\right]e^{-2\pi\rho}
+ +O(e^{-4\pi\rho}).
+\end{equation}
+В частности,
+\begin{equation}
+ I_\rho(1/2)\sim4e^{-2\pi\rho},
+ \qquad
+ I_\rho(1/3)\sim3e^{-2\pi\rho},
+ \qquad
+ I_\rho(1/6)\sim e^{-2\pi\rho}.
+\end{equation}
+Ранее предложенные коэффициенты \(2\) и \(1/2\) были занижены вдвое;
+отношение \(I(1/2):I(1/6)=4:1\) при этом сохраняется.
+
+\section{Geometric versus total periodicity}
+
+Sterile \(N^c\) в compensated construction имеет geometric spin shift
+\(\eta=1/2\). При \(\alpha=\pi\) её \emph{total} phase становится
+periodic, \(\beta=0\), но Hosotani determinant сравнивает две ветви при
+фиксированной geometric \(\eta\):
+\begin{equation}
+ \beta(0)=\frac12,
+ \qquad
+ \beta(\pi)=0,
+ \qquad
+ \Delta V_{N^c}=+\frac d2I_\rho(1/2)>0.
+\end{equation}
+Следовательно, такая \(N^c\) усиливает выбор \(\alpha=0\), а не создаёт
+требуемый отрицательный вклад. Периодичность defect mode вдоль
+систолической \(\gamma\), полученная сокращением spin- и torsion-знаков, также
+не меняет geometric spin structure на независимом внешнем \(S^1\).
+
+Отрицательный вклад
+\(-dI_\rho(1/2)/2\) требует поля с geometric \(\eta=0\), для которого
+\(\beta:0\to1/2\). Такого поля существующая compensated \(N^c\)-ветвь не
+предоставляет.
+
+Для минимального \(B-L\)-контента одного поколения имеются двенадцать
+anti-periodic Weyl components с \(|q|=1/3\) и четыре с нечётным целым
+зарядом, включая \(N^c\). При общей \(rho\) их вклад равен
+\begin{equation}
+ \Delta V_{gen}
+ =2I_\rho(1/2)+6\left[I_\rho(1/2)-I_\rho(1/3)\right]
+ =8I_\rho(1/2)-6I_\rho(1/3)>0.
+\end{equation}
+Даже если искусственно перевести одну \(N^c\) на geometric periodic branch,
+получается
+\begin{equation}
+ \Delta V_{gen}^{\rm retwist}
+ =7I_\rho(1/2)-6I_\rho(1/3)>0.
+\end{equation}
+В large-mass limit эти коэффициенты пропорциональны соответственно
+\(14e^{-2\pi\rho}\) и \(10e^{-2\pi\rho}\). Поэтому три retwisted \(N^c\)
+при одинаковых masses не проходят magnitude gate.
+
+Для существующего минимального контента common-\(\rho\) assumption не
+нужна. При произвольных положительных \(\rho_i\) каждый отдельный вклад имеет
+положительный знак:
+\begin{align}
+ \Delta V_{odd,i}
+ &=\frac{d_i}{2}I_{\rho_i}(1/2)>0,\\
+ \Delta V_{1/3,i}
+ &=\frac{d_i}{2}\left[
+ I_{\rho_i}(1/2)-I_{\rho_i}(1/3)
+ \right]>0,\\
+ \Delta V_{b,1/3,i}
+ &=\frac{d_i}{2}I_{\rho_i}(1/6)>0.
+\end{align}
+Charge-two bosons дают ноль. Следовательно, сумма положительна при любом
+mass spectrum существующих anti-periodic fermions и periodic bosons.
+
+\begin{theorem}[Minimal-content multi-mass Hosotani no-go]
+При фиксированных geometric spin structures минимальный \(B-L\)-контент
+выбирает \(\alpha=0\) для любых \(\rho_i>0\). Полный mass spectrum не может
+изменить знак, поскольку отрицательных summands в этом field content нет.
+Multi-mass gate остаётся открытым только после добавления нового
+geometric-periodic odd-charge sector.
+\end{theorem}
+
+\begin{nogocriterion}[Total-periodicity sign no-go]
+Нельзя использовать zero mode, которая становится total-periodic только в
+ветви \(\alpha=\pi\), как periodic-spin determinant, стабилизирующий эту же
+ветвь. Это меняет fixed boundary problem между концами сравнения и обращает
+знак Hosotani contribution. Для отрицательного вклада нужен независимо
+выведенный geometric-periodic odd-charge sector.
+\end{nogocriterion}
+
+\section{Почему обычный CS/theta term не стабилизирует ветвь}
+
+Квантованный topological term различает сектора на уровне фазы. В евклидовой
+сигнатуре
+\begin{equation}
+ S_{CS,E}=\frac{ik}{4\pi}\int a\wedge da,
+ \qquad
+ S_{\theta,E}=\frac{i\theta}{8\pi^2}\int F\wedge F.
+\end{equation}
+На полностью flat configuration оба локальных density равны нулю. При
+добавлении фиксированного magnetic flux \(m\) Chern--Simons term может дать
+\begin{equation}
+ \Delta S_{CS,E}=ikm\alpha,
+\end{equation}
+то есть относительную фазу unit modulus, но не отрицательный вклад в
+\(\operatorname{Re}V_{eff}\). Его real Hessian по \(\alpha\) равен нулю.
+Discrete theta term аналогично меняет знак или фазу веса topological sector,
+но сам по себе не превращает Hosotani maximum в энергетический minimum.
+
+\begin{nogocriterion}[Topological-phase stabilization no-go]
+Обычный квантованный CS/theta term без дополнительного constraint sector не
+может стабилизировать \(\alpha=\pi\) против положительного real Hosotani
+splitting. Он способен изменить interference секторов или, в расширенной
+TQFT, спроецировать часть Hilbert space, но это не эквивалентно минимуму
+вещественного effective potential.
+\end{nogocriterion}
+
+Для реального выбора \(\alpha=\pi\) требуется дополнительный вклад
+\begin{equation}
+ \Delta V_{min}:=V_{min}(\pi)-V_{min}(0)>0,
+ \qquad
+ \Delta V_{new}(\pi)-\Delta V_{new}(0)<-\Delta V_{min}.
+\end{equation}
+Минимальный знаково подходящий пример --- periodic odd-charge fermion: он
+даёт
+\begin{equation}
+ \Delta V_{per\,f}=-\frac d2I_\rho(1/2)<0.
+\end{equation}
+Его multiplicity и mass должны быть выведены из parent action и превысить
+положительный вклад исходного spectrum. Альтернатива --- явная TQFT
+projection, удаляющая \(\alpha=0\) sector, но тогда это новый дискретный
+сектор модели, а не Hosotani stabilization.
+
+\section{Минимальный geometric-periodic selector sector}
+
+Минимальный anomaly-safe кандидат состоит из двух left-handed singlet Weyl
+fields
+\begin{equation}
+ X_+:(B-L)=+1,
+ \qquad
+ X_-:(B-L)=-1.
+\end{equation}
+Они образуют vectorlike Dirac pair. Чтобы при общей anti-periodic spin
+structure получить effective geometric periodicity только для этой пары,
+введём flat \(\mathbb Z_4^X\)-line с charges
+\begin{equation}
+ z(X_+)=+1,
+ \qquad
+ z(X_-)=-1\pmod4,
+\end{equation}
+и holonomy \(-1\) на внешнем \(S^1\). Тогда spin sign и \(\mathbb Z_4^X\)
+sign сокращаются, а B--L holonomy переводит
+\begin{equation}
+ \beta:0\longrightarrow\frac12
+ \qquad (\alpha:0\longrightarrow\pi).
+\end{equation}
+Пара даёт требуемый real contribution
+\begin{equation}
+ \Delta V_X=-I_{\rho_X}(1/2)<0.
+\end{equation}
+
+Непрерывные anomaly sums сокращаются попарно:
+\begin{equation}
+ \sum q=\sum q^3=0.
+\end{equation}
+То же происходит для elementary mixed discrete sums при представлении
+\(z=\pm1\):
+\begin{equation}
+ \sum z=\sum z^3=\sum zq^2=\sum z^2q=0.
+\end{equation}
+Разрешённая симметрийная Dirac mass непрерывно переводит изолированную пару
+в тривиально gapped phase без нарушения \(B-L\) или \(\mathbb Z_4^X\).
+Следовательно, pair не несёт остаточной discrete 't Hooft anomaly: anomaly
+gate для самого нового fermionic content закрыт.
+
+Более того, Dirac mass \(M_XX_+X_-\) разрешена, тогда как
+\begin{equation}
+ \Phi X_+X_+,
+ \qquad
+ \Phi^\dagger X_-X_-,
+ \qquad
+ N^cX_-
+\end{equation}
+имеют ненулевой \(\mathbb Z_4^X\)-charge и запрещены. Поэтому новая пара не
+участвует в vortex pairing operator и не добавляет defect zero modes;
+исходный exact-one kernel сохраняется.
+
+Пусть для benchmark все три минимальных поколения имеют \(\rho=1\). Их
+положительный вклад равен
+\begin{equation}
+ \Delta V_{min}^{(3)}
+ =3\left[8I_1(1/2)-6I_1(1/3)\right]
+ =0.0783386447\ldots.
+\end{equation}
+Одна vectorlike pair выбирает \(\alpha=\pi\), если
+\begin{equation}
+ I_{\rho_X}(1/2)>\Delta V_{min}^{(3)},
+\end{equation}
+что даёт
+\begin{equation}
+ \rho_X<0.6259781084\ldots.
+\end{equation}
+При одинаковой массе \(\rho_X=1\) требуется не менее одиннадцати таких
+pairs. В выбранной \(\alpha=\pi\)-ветви даже bare-light pair получает
+Wilson gap; при одной паре на threshold
+\begin{equation}
+ m_{phys}R_1\geq
+ \sqrt{\rho_X^2+\frac14}=0.801\ldots,
+\end{equation}
+поэтому determinant leverage не обязательно создаёт massless spectator в
+физическом вакууме.
+
+Порог существенно зависит от объявленной reference normalization. В общем
+виде \(\rho_X^{crit}(\rho_{ref})\) определяется уравнением
+\begin{equation}
+ I_{\rho_X^{crit}}(1/2)
+ =3\left[
+ 8I_{\rho_{ref}}(1/2)-6I_{\rho_{ref}}(1/3)
+ \right].
+\end{equation}
+Для двух используемых benchmark получаем
+\begin{align}
+ \rho_{ref}=1:
+ &\quad \rho_X^{crit}=0.6259781084\ldots,
+ &&m_{phys}R_1=0.8011545371\ldots,\\
+ \rho_{ref}=\frac12:
+ &\quad \rho_X^{crit}=0.1399290937\ldots,
+ &&m_{phys}R_1=0.5192110855\ldots.
+\end{align}
+При уменьшении \(\rho_{ref}\) положительный minimal-content determinant
+растёт, поэтому допустимый \(\rho_X\) должен уменьшаться. Значение около
+\(0.74\) не удовлетворяет threshold equation для \(\rho_{ref}=1/2\).
+
+\section{Stiffness embedding и точное \(\delta_X=0\)}
+
+Расширенная Hilbert space имеет block form
+\begin{equation}
+ \mathcal H_{ext}=\mathcal H_{24}\oplus\mathcal H_X.
+\end{equation}
+Защитная \(\mathbb Z_4^X\) запрещает mixing между blocks. Поэтому neutrino
+collective tangent продолжается нулём:
+\begin{equation}
+ \Xi_{ext}=\Xi\oplus0_X.
+\end{equation}
+Для canonical product metric
+\begin{equation}
+ \|\Xi_{ext}\|^2
+ =\|\Xi\|^2+\|0_X\|^2
+ =23+\pi^{-1},
+\end{equation}
+то есть
+\begin{equation}
+ \boxed{\delta_X=0.}
+\end{equation}
+Тот же вывод следует для determinant Hessian по neutrino collective
+coordinate \(t\): при фиксированном выбранном \(\alpha=\pi\)
+\begin{equation}
+ \frac{\partial^2\Gamma_X}{\partial t^2}=0,
+\end{equation}
+поскольку \(D_X\) не зависит от \(t\). Если же отождествить \(t\) с Wilson
+angle \(\alpha\), появляется \(\rho_X\)-dependent Hessian и denominator
+теряет каноническую форму. Поэтому X-sector допустим только как orthogonal
+vacuum selector, а \(\pi^{-1}\) по-прежнему приходит из исходной cycle line,
+не из X determinant.
+
+\section{Kinetic-mixing и EW/QCD second-sector gate}
+
+Пара \(X_\pm\) является Standard-Model singlet:
+\begin{equation}
+ (SU(3),SU(2))_Y=(\mathbf1,\mathbf1)_0.
+\end{equation}
+Поэтому
+\begin{equation}
+ \Delta\sum Y(B-L)=0,
+ \qquad
+ \Delta b_1=\Delta b_2=\Delta b_3=0.
+\end{equation}
+При отсутствии portal couplings её one-loop logarithmic и finite
+nonlogarithmic matching vector для Standard-Model gauge couplings равен
+\begin{equation}
+ \Delta_X^{EW/QCD}=(0,0,0),
+\end{equation}
+что не может воспроизвести corrected target direction
+\begin{equation}
+ (1,-1,-6.68221\ldots).
+\end{equation}
+Двухпетлевая передача через \(B-L\) kinetic mixing возможна только после
+задания \(g_{B-L}\), mixing boundary value и portal structure; она не
+является parameter-free вторым сектором.
+
+\begin{nogocriterion}[SM-singlet second-sector no-go]
+Минимальная vectorlike \(X_\pm\)-пара проходит vacuum-selection и сохраняет
+neutrino stiffness, но не даёт независимого EW/QCD normalization-sensitive
+следа. Поэтому она остаётся самосогласованным vacuum-selector extension и не
+проходит two-sector gate версии III.
+\end{nogocriterion}
+
+Здесь необходимы две статусные оговорки. Во-первых, determinant пары выбирает
+Wilson branch \(\alpha=\pi\), но не family axis \(n\). Ось по-прежнему должна
+быть выведена из residual-orbit dynamics или boundary equations. Во-вторых,
+условие на \(\rho_X=M_XR_1\) использует непрерывную массу. Пока \(M_XR_1\) не
+получена из parent action, неверно говорить, что селектор не вводит
+непрерывных данных: он не требует нового fitting coefficient в stiffness, но
+его determinant strength остаётся mass-dependent input.
+
+Следовательно, консолидированный статус имеет вид
+\begin{equation}
+ \boxed{
+ \begin{gathered}
+ X_\pm:\ \text{условный динамический selector ветви }\alpha=\pi,\\
+ \delta_X=0,\qquad
+ \text{family-axis gate открыт},\\
+ \text{EW/QCD two-sector gate закрыт отрицательно},\\
+ N_{\rm closed\ physical}=0.
+ \end{gathered}}
+\end{equation}
+Положительный результат состоит в существовании anomaly-safe знакового
+механизма. Он не является физическим предсказанием и не повышает научный
+ledger до вывода \(M_X\), происхождения \(\mathbb Z_4^X\)-line и общего
+parent action.
+
+\begin{protocol}[Periodic selector compatibility gate]
+Кандидат проходит continuous/discrete anomaly, determinant-sign и
+projected-kernel tests. Для физического статуса ещё необходимо:
+\begin{enumerate}
+ \item вывести \(\mathbb Z_4^X\)-line и её holonomy \(-1\) из finite algebra
+ или обязательного topological sector;
+ \item вычислить \(M_XR_1\), а не выбирать его ниже threshold;
+ \item расширить механизм так, чтобы второй normalization-sensitive sector
+ возникал без назначения Standard-Model charges или portals после просмотра
+ target.
+\end{enumerate}
+До этого это минимальная согласованная новая модель, а не восстановление
+версии II.A.
+\end{protocol}
+
+\section{Collective stiffness на маршруте A}
+
+Пусть \(U_A\) отображает каждый внутренний eigenchannel в соответствующую
+нормированную plane wave на внешнем \(S^1\). Для всех spin-, gauge- и
+family-shifts
+\begin{equation}
+ U_A^\dagger U_A=I_{24},
+ \qquad
+ \|\varphi_{k,\sigma}\|_{L^2(S^1)}=1.
+\end{equation}
+Поэтому Hilbert--Schmidt traces проекторов не меняются:
+\begin{equation}
+ \operatorname{Tr}\!\left[(U_AP_{ker}U_A^\dagger)^2\right]=1,
+ \qquad
+ \operatorname{Tr}\!\left[(U_AP_HU_A^\dagger)^2\right]=23.
+\end{equation}
+Дополнительный круг даёт единичный множитель нормы и не меняет intrinsic
+cycle Gram metric на \(\gamma\):
+\begin{equation}
+ \|\widehat e_0\|^2=1,
+ \qquad
+ \|e_1\|^2=L_\gamma^{-1}=\pi^{-1}.
+\end{equation}
+Следовательно, в canonical product trace--Hodge metric
+\begin{equation}
+ \boxed{\|\Xi_A\|^2=23+\pi^{-1}.}
+\end{equation}
+Результат не зависит от \(\theta_*\), spin shift или компенсирующей
+\(\mathbb Z_2\)-holonomy: они меняют phases нормированных eigenfunctions, но
+не их нормы и не ranks проекторов.
+
+Тем самым collective-stiffness gate маршрута A закрыт как точное
+кинематическое тождество canonical metric. Он ещё не возвращает
+\(23+\pi^{-1}\) статус физического neutrino denominator: для этого та же
+parent action должна выбрать compensated branch, вывести относительную
+trace--Hodge metric и пройти второй normalization-sensitive sector.
+
+Второй маршрут сохраняет holonomy на \(\gamma\), но ambient connection
+должна иметь кривизну или singular defect source. Если \(2\gamma=\partial
+\Sigma_2\) и curvature редуцирована к abelian subgroup с осью \(n\), то
+\begin{equation}
+ \exp(2\theta_*[n]_\times)
+ =\exp\left([n]_\times\int_{\Sigma_2}F_n\right),
+\end{equation}
+то есть требуется
+\begin{equation}
+ \int_{\Sigma_2}F_n=2\theta_*\pmod{2\pi}.
+\end{equation}
+В principal branch это flux
+\begin{equation}
+ 2\theta_*-2\pi=-1.2696746116\ldots.
+\end{equation}
+Его величина и совпадение оси с factor-selected \(n\) должны следовать из
+уравнений движения; иначе это два новых boundary inputs.
+
+Итак, плоский систолический bridge закрыт отрицательно. Положительный
+family-selector route теперь имеет две точные версии: плоская связь на
+неторсионном \(S^1\), где compensated branch существует и сохраняет
+\(23+\pi^{-1}\), а новый \(X_\pm\)-sector может условно выбрать нужную ветвь,
+но не выводит axis, mass или второй сектор; либо curved/singular
+connection на \(\gamma\) с flux-and-axis dynamical gate. Маршрут A является
+алгебраически минимальным, но его минимальный SM-singlet selector закрыт как
+two-sector extension. Дальнейшее замыкание требует единого parent action, а
+не ещё одного независимого selector-а. Маршрут B остаётся резервным.
+
+Машинный аудит сохранён в
+\texttt{s2t\_family\_connection\_defect\_gap\_results.json}.

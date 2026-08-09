@@ -1,0 +1,138 @@
+{
+  "status": "minimal_unified_parent_action_gate_negative_only_neutrino_metric_survives",
+  "date": "2026-08-04",
+  "frozen_parent_model": {
+    "carrier": "K=RP3 x S1",
+    "Hilbert_space": "L2(K,S_K) tensor H_F tensor H_Nambu",
+    "superconnection": "A=D_K tensor I + Gamma_K tensor D_F + Phi + A^(1)",
+    "single_metric": "<X,Y>=integral_K Str(X^dagger wedge star Y)",
+    "quadratic_action": "S_parent^(2)=1/2 <delta A,delta A> + <Psi,D_A Psi>",
+    "no_hidden_weights": "No independent coefficients multiplying zero-form, one-form, lepton, Higgs, or defect summands are allowed."
+  },
+  "regular_spectral_kernel_equal_weight_theorem": {
+    "condition": "2 f'(x)+4x f''(x)=2 f'(0) for every x>=0",
+    "reduced_ode": "g(x)+2x g'(x)=g(0), where g=f'",
+    "general_solution_away_from_zero": "g(x)=g(0)+C/sqrt(x)",
+    "regularity_at_zero": "C=0",
+    "conclusion": "f is affine; no nontrivial regular cutoff kernel forces equal weights at all backgrounds",
+    "sample_kernels": [
+      {
+        "kind": "affine",
+        "parameter": null,
+        "kernel_weight": 2.0,
+        "massive_weight": 2.0,
+        "difference": 0.0,
+        "equal_weights": true
+      },
+      {
+        "kind": "heat",
+        "parameter": 1.0,
+        "kernel_weight": -2.0,
+        "massive_weight": 0.7357588823428847,
+        "difference": 2.7357588823428847,
+        "equal_weights": false
+      },
+      {
+        "kind": "heat",
+        "parameter": 2.0,
+        "kernel_weight": -4.0,
+        "massive_weight": 1.6240233988393524,
+        "difference": 5.624023398839352,
+        "equal_weights": false
+      },
+      {
+        "kind": "resolvent",
+        "parameter": 3.0,
+        "kernel_weight": -6.0,
+        "massive_weight": 1.125,
+        "difference": 7.125,
+        "equal_weights": false
+      },
+      {
+        "kind": "resolvent",
+        "parameter": 4.0,
+        "kernel_weight": -8.0,
+        "massive_weight": 1.0,
+        "difference": 9.0,
+        "equal_weights": false
+      }
+    ]
+  },
+  "normalization_data": {
+    "Vol_RP3": 9.869604401089358,
+    "Length_S1": 6.283185307179586,
+    "raw_tau_seed": 16.819456374935612,
+    "canonical_tau_seed": 2.6666666666666665,
+    "seed_loss_under_canonical_normalization": 14.152789708268946,
+    "bessel_sum": -0.19382664572322458,
+    "canonical_loop_coefficient": 0.061696937539545534,
+    "required_projection_weight_for_one_third": 5.4027533071585365,
+    "neutrino_canonical_norm": 23.31830988618379
+  },
+  "tau_controls": {
+    "published_relation": {
+      "seed": 16.819456374935612,
+      "loop_coefficient": 0.3333333333333333,
+      "prediction_MeV": 1776.8594285630165,
+      "pull": -0.7841270775947528
+    },
+    "raw_seed_with_canonical_loop": {
+      "seed": 16.819456374935612,
+      "loop_coefficient": 0.061696937539545534,
+      "prediction_MeV": 1777.0688674001003,
+      "pull": 1.542971112225031
+    },
+    "fully_canonical_minimal_parent": {
+      "seed": 2.6666666666666665,
+      "loop_coefficient": 0.061696937539545534,
+      "prediction_MeV": 281.70809803128446,
+      "pull": -16613.576688541285
+    }
+  },
+  "sector_gates": {
+    "neutrino_collective_stiffness": {
+      "target": "23+pi^-1",
+      "parent_action_value": 23.31830988618379,
+      "passes_canonical_configuration_metric": true,
+      "passes_generic_spectral_kernel": false,
+      "reason": "The rank-23 normalized zero-form and the unit-period kernel one-form are orthogonal in one trace-Hodge norm, but generic Tr f(D^2) Hessians split their weights around a nonzero heavy background."
+    },
+    "charged_lepton_seed": {
+      "target": 16.819456374935612,
+      "canonical_parent_value": 2.6666666666666665,
+      "passes": false,
+      "reason": "For normalized constant lepton modes, the RP3 and S1 volume factors cancel from quadratic matrix elements; their contributions are 1 and 1 rather than pi^2 and 2pi."
+    },
+    "charged_lepton_loop": {
+      "target_coefficient": 0.3333333333333333,
+      "canonical_single_vertex_coefficient": 0.061696937539545534,
+      "required_extra_weight": 5.4027533071585365,
+      "passes": false,
+      "reason": "A canonically normalized collective vertex supplies unit trace. The displayed Bessel integral therefore gives |I_tau|/pi, while 1/3 requires an additional noncanonical projection weight."
+    },
+    "electromagnetic_exact_closure": {
+      "passes": false,
+      "reason": "The already completed same-scheme Maxwell-ghost audit does not derive the exact pi^-4 absorption term from the canonical Hessian."
+    },
+    "higgs_absolute_bridge": {
+      "passes": false,
+      "reason": "Its absolute scale inherits the conditional tau seed and electromagnetic vacuum normalization, so it is not an independent second parent-action sector."
+    }
+  },
+  "predictive_sector_count": 1,
+  "passed_predictive_sectors": [
+    "neutrino_collective_stiffness"
+  ],
+  "two_sector_gate": {
+    "required_count": 2,
+    "observed_count": 1,
+    "passes": false
+  },
+  "scientific_verdict": {
+    "minimal_parent_action": "closed negatively as a unified predictive action",
+    "surviving_result": "The canonical trace-Hodge configuration metric still derives the neutrino collective norm 23+pi^-1.",
+    "failed_unification": "The same normalization removes the raw volume factors needed by the tau seed, does not generate the coefficient 1/3, and does not repair the independently failed exact electromagnetic determinant closure.",
+    "reopen_condition": "Derive from a prior symmetry or boundary principle one noncanonical measure or stiffness operator that fixes all sector weights before comparison with lepton, Higgs, or electromagnetic data.",
+    "program_effect": "The geometric/topological research program is not disproved, but the current collection of numerical bridges is not generated by one minimal normalized action."
+  }
+}

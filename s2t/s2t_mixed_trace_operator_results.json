@@ -1,0 +1,198 @@
+{
+  "status": "mixed_trace_operator_proof_attempt_failed_selection_rule",
+  "numbers": {
+    "S_geo": 137.0363037758784,
+    "T_RP3": 1.5227161455271536e-05,
+    "pi4_term": 5.466750295392699e-07,
+    "base_tower": 5.483439627824377e-07,
+    "epsilon_needed": 0.0030435882519781465,
+    "N_need": 10.009970022402527,
+    "nearest_integer": 10
+  },
+  "scalar_even_modes": [
+    {
+      "ell": 0,
+      "lambda_scalar": 0,
+      "degeneracy": 1,
+      "cumulative_degeneracy": 1,
+      "exact_one_form_inherits_if_ell_gt_0": false,
+      "constant_mode_is_gauge_zero_mode": true
+    },
+    {
+      "ell": 2,
+      "lambda_scalar": 8,
+      "degeneracy": 9,
+      "cumulative_degeneracy": 10,
+      "exact_one_form_inherits_if_ell_gt_0": true,
+      "constant_mode_is_gauge_zero_mode": false
+    },
+    {
+      "ell": 4,
+      "lambda_scalar": 24,
+      "degeneracy": 25,
+      "cumulative_degeneracy": 35,
+      "exact_one_form_inherits_if_ell_gt_0": true,
+      "constant_mode_is_gauge_zero_mode": false
+    },
+    {
+      "ell": 6,
+      "lambda_scalar": 48,
+      "degeneracy": 49,
+      "cumulative_degeneracy": 84,
+      "exact_one_form_inherits_if_ell_gt_0": true,
+      "constant_mode_is_gauge_zero_mode": false
+    },
+    {
+      "ell": 8,
+      "lambda_scalar": 80,
+      "degeneracy": 81,
+      "cumulative_degeneracy": 165,
+      "exact_one_form_inherits_if_ell_gt_0": true,
+      "constant_mode_is_gauge_zero_mode": false
+    },
+    {
+      "ell": 10,
+      "lambda_scalar": 120,
+      "degeneracy": 121,
+      "cumulative_degeneracy": 286,
+      "exact_one_form_inherits_if_ell_gt_0": true,
+      "constant_mode_is_gauge_zero_mode": false
+    },
+    {
+      "ell": 12,
+      "lambda_scalar": 168,
+      "degeneracy": 169,
+      "cumulative_degeneracy": 455,
+      "exact_one_form_inherits_if_ell_gt_0": true,
+      "constant_mode_is_gauge_zero_mode": false
+    }
+  ],
+  "determinant_bookkeeping": {
+    "hodge_split": "Omega^1 = d Omega^0_nonzero ⊕ Omega^1_coexact ⊕ H^1",
+    "rp3_b1": 0,
+    "exact_nonzero_spectrum": "lambda_exact(ell)=lambda_scalar(ell) for ell>0, with same degeneracy",
+    "constant_scalar_ell0": "zero mode/gauge volume; not an exact one-form because d(constant)=0",
+    "standard_fp_risk": "Nonzero scalar/exact modes cancel or survive as a full det' Delta_0 factor depending on normalization, but not as a finite ell=2-only projector."
+  },
+  "ranked_selection_candidates": [
+    {
+      "selection": "scalar_cumulative_through_ell_2",
+      "rank": 10,
+      "epsilon": 0.003040556810026934,
+      "term": 5.466766918121624e-07,
+      "relative_error_vs_pi4": 3.040696579678917e-06,
+      "relative_error_vs_N_need": -0.0009960092168322038
+    },
+    {
+      "selection": "constant_plus_first_nonzero_even_shell_ell0_ell2",
+      "rank": 10,
+      "epsilon": 0.003040556810026934,
+      "term": 5.466766918121624e-07,
+      "relative_error_vs_pi4": 3.040696579678917e-06,
+      "relative_error_vs_N_need": -0.0009960092168322038
+    },
+    {
+      "selection": "first_nonzero_even_exact_shell_only_ell2",
+      "rank": 9,
+      "epsilon": 0.0027365011290242406,
+      "term": 5.4684341890919e-07,
+      "relative_error_vs_pi4": 0.0003080246230781201,
+      "relative_error_vs_N_need": -0.10089640829514898
+    },
+    {
+      "selection": "scalar_cumulative_through_ell_0",
+      "rank": 1,
+      "epsilon": 0.0003040556810026934,
+      "term": 5.481772356854102e-07,
+      "relative_error_vs_pi4": 0.002747896035065456,
+      "relative_error_vs_N_need": -0.9000996009216832
+    },
+    {
+      "selection": "scalar_constant_gauge_volume_only",
+      "rank": 1,
+      "epsilon": 0.0003040556810026934,
+      "term": 5.481772356854102e-07,
+      "relative_error_vs_pi4": 0.002747896035065456,
+      "relative_error_vs_N_need": -0.9000996009216832
+    },
+    {
+      "selection": "standard_maxwell_fp_nonzero_scalar_exact_cancelled",
+      "rank": 0,
+      "epsilon": 0.0,
+      "term": 5.483439627824377e-07,
+      "relative_error_vs_pi4": 0.0030528799615638967,
+      "relative_error_vs_N_need": -1.0
+    },
+    {
+      "selection": "scalar_cumulative_through_ell_4",
+      "rank": 35,
+      "epsilon": 0.010641948835094268,
+      "term": 5.425085143864742e-07,
+      "relative_error_vs_pi4": -0.007621557465880963,
+      "relative_error_vs_N_need": 2.4965139677410875
+    },
+    {
+      "selection": "through_ell4_control",
+      "rank": 35,
+      "epsilon": 0.010641948835094268,
+      "term": 5.425085143864742e-07,
+      "relative_error_vs_pi4": -0.007621557465880963,
+      "relative_error_vs_N_need": 2.4965139677410875
+    },
+    {
+      "selection": "scalar_cumulative_through_ell_6",
+      "rank": 84,
+      "epsilon": 0.025540677204226245,
+      "term": 5.343388866321252e-07,
+      "relative_error_vs_pi4": -0.022565769864304,
+      "relative_error_vs_N_need": 7.391633522578609
+    },
+    {
+      "selection": "scalar_cumulative_through_ell_8",
+      "rank": 165,
+      "epsilon": 0.05016918736544441,
+      "term": 5.208339917728953e-07,
+      "relative_error_vs_pi4": -0.04726946791067638,
+      "relative_error_vs_N_need": 15.48356584792227
+    },
+    {
+      "selection": "scalar_cumulative_through_ell_10",
+      "rank": 286,
+      "epsilon": 0.08695992476677031,
+      "term": 5.006600130325642e-07,
+      "relative_error_vs_pi4": -0.08417252301698601,
+      "relative_error_vs_N_need": 27.5715141363986
+    },
+    {
+      "selection": "scalar_cumulative_through_ell_12",
+      "rank": 455,
+      "epsilon": 0.1383453348562255,
+      "term": 4.7248313363491175e-07,
+      "relative_error_vs_pi4": -0.13571480659521995,
+      "relative_error_vs_N_need": 44.45468158063414
+    }
+  ],
+  "proof_obligations": [
+    {
+      "obligation": "derive_projector_P_0_2",
+      "status": "failed_in_standard_hodge_fp_route",
+      "reason": "Standard Hodge/FP bookkeeping supplies full scalar/exact towers or cancellation, not a natural finite projector onto ell=0,2."
+    },
+    {
+      "obligation": "include_constant_mode_d0",
+      "status": "not_standard_exact_mode",
+      "reason": "ell=0 scalar is a gauge zero mode and does not generate a nonzero exact one-form."
+    },
+    {
+      "obligation": "exclude_higher_even_shells",
+      "status": "failed_in_standard_hodge_fp_route",
+      "reason": "If ell=2 enters by ordinary scalar/exact inheritance, ell=4,6,... enter by the same mechanism."
+    },
+    {
+      "obligation": "second_order_sign",
+      "status": "conditionally_ok",
+      "reason": "The formal expansion log det(A+xB) contains -x^2 Tr((A^-1B)^2)/2, but determinant-power conventions still need operator-level verification."
+    }
+  ],
+  "verdict": "The standard Maxwell--Faddeev-Popov/Hodge route does not naturally produce finite rank d0+d2=10. The nonzero exact spectrum inherits the scalar spectrum for all ell>0; ell=0 is a gauge zero mode. Therefore a separate finite-rank projector or quadratic-strain mechanism is required."
+}

@@ -1,0 +1,849 @@
+{
+  "status": "natural_finite_algebra_normalizations_can_match_J_alone_but_no_candidate_reproduces_the_full_CKM_hierarchy_and_masses_remain_centrally_unidentified",
+  "date": "2026-08-06",
+  "blind_protocol": {
+    "normalization_menu_frozen_before_CKM": true,
+    "candidate_matrices_generated_before_control": true,
+    "menu_origin": "inverse dimensions from chiral doubling, normalized traces, incidence channels and S4 orbit averages",
+    "CKM_use": "post-blind scoring only"
+  },
+  "scan": {
+    "normalization_menu": {
+      "raw": 1.0,
+      "chiral_projector": 0.5,
+      "family_normalized_trace": 0.3333333333333333,
+      "four_state_normalized_trace": 0.25,
+      "chiral_family_trace": 0.16666666666666666,
+      "doubled_four_state_trace": 0.125,
+      "incidence_channel_average": 0.08333333333333333,
+      "S4_orbit_average": 0.041666666666666664,
+      "signed_chiral_S4_average": 0.020833333333333332
+    },
+    "candidate_count": 432,
+    "permutation_controls_per_candidate": 36,
+    "aggregate_by_normalization": {
+      "raw": {
+        "coefficient": 1.0,
+        "minimum_absolute_J": 0.001208504515459974,
+        "maximum_absolute_J": 0.03431369731948625,
+        "closest_J_ratio": 38.73411908525558,
+        "best_permuted_matrix_score": 0.8385976573523694
+      },
+      "chiral_projector": {
+        "coefficient": 0.5,
+        "minimum_absolute_J": 0.00034370745612432446,
+        "maximum_absolute_J": 0.011095386016114789,
+        "closest_J_ratio": 11.016264619369373,
+        "best_permuted_matrix_score": 0.8227618022119443
+      },
+      "family_normalized_trace": {
+        "coefficient": 0.3333333333333333,
+        "minimum_absolute_J": 0.0001061729574438168,
+        "maximum_absolute_J": 0.00425681107080127,
+        "closest_J_ratio": 3.4029794052505387,
+        "best_permuted_matrix_score": 0.8195965723346277
+      },
+      "four_state_normalized_trace": {
+        "coefficient": 0.25,
+        "minimum_absolute_J": 4.546265439041991e-05,
+        "maximum_absolute_J": 0.0019890310211088374,
+        "closest_J_ratio": 1.4571363586673047,
+        "best_permuted_matrix_score": 0.8185390292701368
+      },
+      "chiral_family_trace": {
+        "coefficient": 0.16666666666666666,
+        "minimum_absolute_J": 1.3615491770192084e-05,
+        "maximum_absolute_J": 0.0006371105374719774,
+        "closest_J_ratio": 1.0271073060424323,
+        "best_permuted_matrix_score": 0.8178015953803235
+      },
+      "doubled_four_state_trace": {
+        "coefficient": 0.125,
+        "minimum_absolute_J": 5.765718560420824e-06,
+        "maximum_absolute_J": 0.0002765277516353303,
+        "closest_J_ratio": 0.9869994861972274,
+        "best_permuted_matrix_score": 0.8175471912513802
+      },
+      "incidence_channel_average": {
+        "coefficient": 0.08333333333333333,
+        "minimum_absolute_J": 1.712974989253463e-06,
+        "maximum_absolute_J": 8.364738433751001e-05,
+        "closest_J_ratio": 0.9888282967561144,
+        "best_permuted_matrix_score": 0.8173666772151215
+      },
+      "S4_orbit_average": {
+        "coefficient": 0.041666666666666664,
+        "minimum_absolute_J": 2.144691739792981e-07,
+        "maximum_absolute_J": 1.0588332590072413e-05,
+        "closest_J_ratio": 0.33936963429719275,
+        "best_permuted_matrix_score": 0.8172588554609077
+      },
+      "signed_chiral_S4_average": {
+        "coefficient": 0.020833333333333332,
+        "minimum_absolute_J": 2.6819518338799808e-08,
+        "maximum_absolute_J": 1.3277388708494552e-06,
+        "closest_J_ratio": 0.042555733040046645,
+        "best_permuted_matrix_score": 0.8172319574182912
+      }
+    }
+  },
+  "post_blind_CKM_gate": {
+    "control": {
+      "source": "Particle Data Group 2024 CKM review, Eqs. (12.27)-(12.28)",
+      "sin_theta_12": 0.22501,
+      "sin_theta_23": 0.04183,
+      "sin_theta_13": 0.003732,
+      "delta_radians": 1.147,
+      "Jarlskog": 3.12e-05,
+      "control_angles_degrees": [
+        13.003466199369875,
+        2.397381940018274,
+        0.21382834550537572
+      ],
+      "prediction_angles_degrees": [
+        21.810409713027237,
+        44.615379287536996,
+        34.71114544925356
+      ],
+      "finding": "The corrected physical diagonalization still predicts large, non-hierarchical mixing and a Jarlskog invariant over three orders of magnitude too large."
+    },
+    "J_within_factor_two_count": 52,
+    "all_three_angles_within_factor_two_count": 0,
+    "closest_J_candidates": [
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "normalization": "incidence_channel_average",
+        "coefficient": 0.08333333333333333,
+        "side": "up_only",
+        "absolute_Jarlskog": 3.085144285879077e-05,
+        "Jarlskog_ratio_to_control": 0.9888282967561144,
+        "best_permutation": {
+          "matrix_score": 1.1847011811522765,
+          "angle_log_rms": 1.7283944463554326,
+          "row_permutation": [
+            1,
+            2,
+            0
+          ],
+          "column_permutation": [
+            0,
+            2,
+            1
+          ],
+          "angles": [
+            0.6759637513592652,
+            0.6761163230044015,
+            0.004089065372720453
+          ]
+        }
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "normalization": "incidence_channel_average",
+        "coefficient": 0.08333333333333333,
+        "side": "down_only",
+        "absolute_Jarlskog": 3.0851442858781256e-05,
+        "Jarlskog_ratio_to_control": 0.9888282967558095,
+        "best_permutation": {
+          "matrix_score": 1.1846426765083788,
+          "angle_log_rms": 1.7283212128895686,
+          "row_permutation": [
+            1,
+            2,
+            0
+          ],
+          "column_permutation": [
+            0,
+            2,
+            1
+          ],
+          "angles": [
+            0.6761163230044013,
+            0.6759637513592652,
+            0.004089065372720219
+          ]
+        }
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "normalization": "incidence_channel_average",
+        "coefficient": 0.08333333333333333,
+        "side": "up_only",
+        "absolute_Jarlskog": 3.085144285877244e-05,
+        "Jarlskog_ratio_to_control": 0.988828296755527,
+        "best_permutation": {
+          "matrix_score": 1.1847011811522763,
+          "angle_log_rms": 1.7283944463554317,
+          "row_permutation": [
+            1,
+            2,
+            0
+          ],
+          "column_permutation": [
+            0,
+            2,
+            1
+          ],
+          "angles": [
+            0.6759637513592648,
+            0.6761163230044009,
+            0.004089065372720384
+          ]
+        }
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "normalization": "incidence_channel_average",
+        "coefficient": 0.08333333333333333,
+        "side": "down_only",
+        "absolute_Jarlskog": 3.0851442858764776e-05,
+        "Jarlskog_ratio_to_control": 0.9888282967552813,
+        "best_permutation": {
+          "matrix_score": 1.1846426765083788,
+          "angle_log_rms": 1.7283212128895684,
+          "row_permutation": [
+            1,
+            2,
+            0
+          ],
+          "column_permutation": [
+            0,
+            2,
+            1
+          ],
+          "angles": [
+            0.6761163230044015,
+            0.6759637513592652,
+            0.00408906537272007
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "normalization": "doubled_four_state_trace",
+        "coefficient": 0.125,
+        "side": "up_only",
+        "absolute_Jarlskog": 3.0794383969353495e-05,
+        "Jarlskog_ratio_to_control": 0.9869994861972274,
+        "best_permutation": {
+          "matrix_score": 1.22246316126361,
+          "angle_log_rms": 2.5443737913614357,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.6788940639435925,
+            0.6798167510545926,
+            0.09427036519405078
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "normalization": "doubled_four_state_trace",
+        "coefficient": 0.125,
+        "side": "down_only",
+        "absolute_Jarlskog": 3.0794383969343087e-05,
+        "Jarlskog_ratio_to_control": 0.9869994861968938,
+        "best_permutation": {
+          "matrix_score": 1.2221370459520755,
+          "angle_log_rms": 2.544074396764501,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.6798167510545926,
+            0.6788940639435919,
+            0.09427036519405059
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "normalization": "doubled_four_state_trace",
+        "coefficient": 0.125,
+        "side": "up_only",
+        "absolute_Jarlskog": 3.079438396932921e-05,
+        "Jarlskog_ratio_to_control": 0.9869994861964491,
+        "best_permutation": {
+          "matrix_score": 1.22246316126361,
+          "angle_log_rms": 2.5443737913614357,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.6788940639435923,
+            0.6798167510545926,
+            0.09427036519405081
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "normalization": "doubled_four_state_trace",
+        "coefficient": 0.125,
+        "side": "down_only",
+        "absolute_Jarlskog": 3.07943839693188e-05,
+        "Jarlskog_ratio_to_control": 0.9869994861961154,
+        "best_permutation": {
+          "matrix_score": 1.2221370459520762,
+          "angle_log_rms": 2.5440743967645023,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.6798167510545926,
+            0.6788940639435924,
+            0.09427036519405081
+          ]
+        }
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "normalization": "chiral_family_trace",
+        "coefficient": 0.16666666666666666,
+        "side": "down_only",
+        "absolute_Jarlskog": 3.2045747948523885e-05,
+        "Jarlskog_ratio_to_control": 1.0271073060424323,
+        "best_permutation": {
+          "matrix_score": 1.238045087702228,
+          "angle_log_rms": 2.2418343906565408,
+          "row_permutation": [
+            1,
+            0,
+            2
+          ],
+          "column_permutation": [
+            2,
+            0,
+            1
+          ],
+          "angles": [
+            0.6986416140782086,
+            0.6988393591686948,
+            0.0003312650959233379
+          ]
+        }
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "normalization": "chiral_family_trace",
+        "coefficient": 0.16666666666666666,
+        "side": "down_only",
+        "absolute_Jarlskog": 3.204574794852882e-05,
+        "Jarlskog_ratio_to_control": 1.0271073060425904,
+        "best_permutation": {
+          "matrix_score": 1.238045087702228,
+          "angle_log_rms": 2.241834390656519,
+          "row_permutation": [
+            1,
+            0,
+            2
+          ],
+          "column_permutation": [
+            2,
+            0,
+            1
+          ],
+          "angles": [
+            0.6986416140782084,
+            0.6988393591686947,
+            0.00033126509592335804
+          ]
+        }
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "normalization": "chiral_family_trace",
+        "coefficient": 0.16666666666666666,
+        "side": "up_only",
+        "absolute_Jarlskog": 3.204574794852971e-05,
+        "Jarlskog_ratio_to_control": 1.027107306042619,
+        "best_permutation": {
+          "matrix_score": 1.2379709209659473,
+          "angle_log_rms": 2.2417635903773374,
+          "row_permutation": [
+            1,
+            0,
+            2
+          ],
+          "column_permutation": [
+            2,
+            0,
+            1
+          ],
+          "angles": [
+            0.6988393591686951,
+            0.698641614078209,
+            0.0003312650959232404
+          ]
+        }
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "normalization": "chiral_family_trace",
+        "coefficient": 0.16666666666666666,
+        "side": "up_only",
+        "absolute_Jarlskog": 3.204574794853331e-05,
+        "Jarlskog_ratio_to_control": 1.0271073060427343,
+        "best_permutation": {
+          "matrix_score": 1.2379709209659473,
+          "angle_log_rms": 2.241763590377278,
+          "row_permutation": [
+            1,
+            0,
+            2
+          ],
+          "column_permutation": [
+            2,
+            0,
+            1
+          ],
+          "angles": [
+            0.6988393591686951,
+            0.6986416140782091,
+            0.00033126509592329553
+          ]
+        }
+      }
+    ],
+    "best_full_matrix_candidates_among_J_factor_two": [
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "normalization": "doubled_four_state_trace",
+        "coefficient": 0.125,
+        "side": "down_only",
+        "absolute_Jarlskog": 2.3915054494613036e-05,
+        "Jarlskog_ratio_to_control": 0.766508156878623,
+        "best_permutation": {
+          "matrix_score": 0.8175471912513802,
+          "angle_log_rms": 2.759124544937994,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.5103484229884891,
+            0.5086504558223384,
+            0.20190449622822798
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "normalization": "doubled_four_state_trace",
+        "coefficient": 0.125,
+        "side": "down_only",
+        "absolute_Jarlskog": 2.3915054494609567e-05,
+        "Jarlskog_ratio_to_control": 0.7665081568785118,
+        "best_permutation": {
+          "matrix_score": 0.8175471912513803,
+          "angle_log_rms": 2.759124544937994,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.5103484229884893,
+            0.5086504558223384,
+            0.20190449622822798
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "normalization": "chiral_family_trace",
+        "coefficient": 0.16666666666666666,
+        "side": "down_only",
+        "absolute_Jarlskog": 5.6222324909808996e-05,
+        "Jarlskog_ratio_to_control": 1.801997593263109,
+        "best_permutation": {
+          "matrix_score": 0.8178015953803235,
+          "angle_log_rms": 2.7631602830064304,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.5110478645756213,
+            0.5080514965207298,
+            0.20369376691093327
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "normalization": "chiral_family_trace",
+        "coefficient": 0.16666666666666666,
+        "side": "down_only",
+        "absolute_Jarlskog": 5.622232490983675e-05,
+        "Jarlskog_ratio_to_control": 1.8019975932639984,
+        "best_permutation": {
+          "matrix_score": 0.8178015953803236,
+          "angle_log_rms": 2.7631602830064304,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.5110478645756215,
+            0.5080514965207298,
+            0.20369376691093324
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "normalization": "doubled_four_state_trace",
+        "coefficient": 0.125,
+        "side": "up_only",
+        "absolute_Jarlskog": 2.3915054494616506e-05,
+        "Jarlskog_ratio_to_control": 0.7665081568787342,
+        "best_permutation": {
+          "matrix_score": 0.8184822063833772,
+          "angle_log_rms": 2.759801879452582,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.508650455822338,
+            0.5103484229884895,
+            0.20190449622822798
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "normalization": "doubled_four_state_trace",
+        "coefficient": 0.125,
+        "side": "up_only",
+        "absolute_Jarlskog": 2.391505449459569e-05,
+        "Jarlskog_ratio_to_control": 0.766508156878067,
+        "best_permutation": {
+          "matrix_score": 0.8184822063833774,
+          "angle_log_rms": 2.759801879452582,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.5086504558223379,
+            0.5103484229884895,
+            0.20190449622822798
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "normalization": "chiral_family_trace",
+        "coefficient": 0.16666666666666666,
+        "side": "up_only",
+        "absolute_Jarlskog": 5.6222324909812466e-05,
+        "Jarlskog_ratio_to_control": 1.8019975932632202,
+        "best_permutation": {
+          "matrix_score": 0.8191834083076244,
+          "angle_log_rms": 3.014255930165919,
+          "row_permutation": [
+            0,
+            1,
+            2
+          ],
+          "column_permutation": [
+            2,
+            1,
+            0
+          ],
+          "angles": [
+            0.3851654701149918,
+            0.3805687403238488,
+            0.4104442861100868
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "normalization": "chiral_family_trace",
+        "coefficient": 0.16666666666666666,
+        "side": "up_only",
+        "absolute_Jarlskog": 5.6222324909812466e-05,
+        "Jarlskog_ratio_to_control": 1.8019975932632202,
+        "best_permutation": {
+          "matrix_score": 0.8191834083076247,
+          "angle_log_rms": 3.0142559301659193,
+          "row_permutation": [
+            0,
+            1,
+            2
+          ],
+          "column_permutation": [
+            2,
+            1,
+            0
+          ],
+          "angles": [
+            0.38516547011499186,
+            0.38056874032384874,
+            0.41044428611008704
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "normalization": "four_state_normalized_trace",
+        "coefficient": 0.25,
+        "side": "down_only",
+        "absolute_Jarlskog": 4.546265439041991e-05,
+        "Jarlskog_ratio_to_control": 1.4571363586673047,
+        "best_permutation": {
+          "matrix_score": 1.059238470497518,
+          "angle_log_rms": 2.824167514007282,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.5883230955757551,
+            0.587985120996365,
+            0.2042211689550615
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "normalization": "four_state_normalized_trace",
+        "coefficient": 0.25,
+        "side": "down_only",
+        "absolute_Jarlskog": 4.546265439042685e-05,
+        "Jarlskog_ratio_to_control": 1.4571363586675272,
+        "best_permutation": {
+          "matrix_score": 1.0592384704975182,
+          "angle_log_rms": 2.8241675140072826,
+          "row_permutation": [
+            2,
+            1,
+            0
+          ],
+          "column_permutation": [
+            0,
+            1,
+            2
+          ],
+          "angles": [
+            0.5883230955757554,
+            0.5879851209963654,
+            0.20422116895506154
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "normalization": "four_state_normalized_trace",
+        "coefficient": 0.25,
+        "side": "up_only",
+        "absolute_Jarlskog": 4.5462654390451135e-05,
+        "Jarlskog_ratio_to_control": 1.4571363586683057,
+        "best_permutation": {
+          "matrix_score": 1.0592780678921057,
+          "angle_log_rms": 2.841212770955498,
+          "row_permutation": [
+            0,
+            1,
+            2
+          ],
+          "column_permutation": [
+            2,
+            1,
+            0
+          ],
+          "angles": [
+            0.5863492906602569,
+            0.5860089749054634,
+            0.2123494442377346
+          ]
+        }
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "normalization": "four_state_normalized_trace",
+        "coefficient": 0.25,
+        "side": "up_only",
+        "absolute_Jarlskog": 4.546265439042685e-05,
+        "Jarlskog_ratio_to_control": 1.4571363586675272,
+        "best_permutation": {
+          "matrix_score": 1.0592780678921059,
+          "angle_log_rms": 2.841212770955498,
+          "row_permutation": [
+            0,
+            1,
+            2
+          ],
+          "column_permutation": [
+            2,
+            1,
+            0
+          ],
+          "angles": [
+            0.5863492906602571,
+            0.5860089749054637,
+            0.21234944423773458
+          ]
+        }
+      }
+    ],
+    "best_angle_log_rms_among_J_factor_two": 1.7283212128895684,
+    "best_matrix_score_among_J_factor_two": 0.8175471912513802,
+    "finding": "Dimension-derived coefficients can reproduce J at percent level, but after all generation permutations no candidate reproduces the hierarchical three-angle CKM pattern."
+  },
+  "mass_hierarchy_gate": {
+    "theorem": "H_u to H_u+c_u I and H_d to H_d+c_d I leave eigenvectors, mixing and J unchanged while continuously changing every eigenvalue ratio.",
+    "consequence": "Mass hierarchies are not identified until a parent action fixes central offsets and a positive Yukawa readout."
+  },
+  "scientific_verdict": {
+    "positive": "Finite-algebra dimensions naturally reach the suppression scale of the observed Jarlskog invariant.",
+    "negative": "Matching J alone fails the full CKM gate, and masses remain nonidentifiable under central shifts.",
+    "next_gate": "Derive unequal family-edge metrics or a noncentral Yukawa readout that fixes central offsets and all three mixing angles."
+  }
+}

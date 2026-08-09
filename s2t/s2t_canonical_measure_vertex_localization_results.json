@@ -1,0 +1,59 @@
+{
+  "status": "HM_compatibility_pass_measure_derivation_and_two_sector_prediction_fail_single_vertex_no_go_unproved",
+  "date": "2026-08-07",
+  "targets_and_controls": {
+    "raw_tau_seed": 16.819456374935612,
+    "canonical_tau_control": 2.6666666666666665,
+    "neutrino_norm": 23.31830988618379,
+    "canonical_loop_coefficient": 0.061696937539545534,
+    "required_loop_weight": 5.4027533071585365
+  },
+  "H_M_gate": {
+    "measure_statement": "Identity weight relative to the frozen graded trace-Hodge metric.",
+    "important_language_correction": "Identity weight does not make every component Euclidean-unit; the integral cycle one-form already has geometric norm pi^-1.",
+    "neutrino_output": 23.31830988618379,
+    "tau_canonical_output": 2.6666666666666665,
+    "neutrino_compatibility_pass": true,
+    "tau_canonical_compatibility_pass": true,
+    "measure_derived_from_parent_action": false,
+    "reason_measure_not_derived": "The canonical graded metric is frozen as the hypothesis; no symmetry, Hessian or quantum measure uniquely selects it."
+  },
+  "physical_two_sector_gate": {
+    "neutrino_is_normalization_sensitive_model_sector": true,
+    "tau_8_over_3_is_independent_empirical_sector": false,
+    "tau_role": "8/3 is the canonical control that removed the raw tau seed, not the observed charged-lepton relation.",
+    "independent_predictive_sector_count": 1,
+    "required_count": 2,
+    "passes": false
+  },
+  "raw_seed_relocation_gate": {
+    "raw_tau_seed": 16.819456374935612,
+    "excluded_from_kinetic_measure": true,
+    "vertex_derivation_supplied": false,
+    "required_loop_weight": 5.4027533071585365,
+    "finding": "Moving the seed to a vertex is consistent bookkeeping, but relocates rather than derives the volume and projection factors."
+  },
+  "single_vertex_gate": {
+    "minimal_Qcycle_candidate": {
+      "trace": 3.4599025397735836,
+      "target_raw_volume_part": 16.152789708268944,
+      "passes": false
+    },
+    "admissible_vertex_class_declared": false,
+    "single_operator_versus_single_scalar_readout_distinguished": false,
+    "unrestricted_counterexample": {
+      "space": "H_volume direct_sum H_winding",
+      "operator": "V=diag(raw_tau_seed,J_required)",
+      "interpretation": "This target-loaded construction is not physical. It shows only that a universal no-go needs a preregistered vertex algebra and readout."
+    },
+    "exact_no_go_proved": false,
+    "valid_negative_scope": "The specific Qcycle trace fails; no broader single-vertex theorem follows."
+  },
+  "scientific_verdict": {
+    "positive": "One frozen canonical graded metric is compatible with the neutrino norm and canonical tau control.",
+    "negative": "Compatibility does not derive the measure, 8/3 is not an independent physical prediction, and the raw seed plus J remain underived.",
+    "single_vertex_status": "specific_Qcycle_fails_general_no_go_open",
+    "closed_physical_predictions_added": 0,
+    "next_gate": "Declare a finite vertex algebra and one covariant readout, derive it before tau data, and test both volume and winding coefficients."
+  }
+}

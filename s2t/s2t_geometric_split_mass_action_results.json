@@ -1,0 +1,161 @@
+{
+  "status": "minimal_geometric_split_action_improves_all_gauge_rows_precision_closure_still_fails",
+  "date": "2026-08-04",
+  "epistemic_status": {
+    "classification": "post_scorecard_zero_parameter_hypothesis",
+    "warning": "the action form was proposed after the required split exponent was known; numerical success is exploratory, not blind evidence"
+  },
+  "action_candidates": {
+    "volume_only": 9.869604401089358,
+    "half_cycle_term": 0.15915494309189535,
+    "minimal_preexisting_invariants": {
+      "formula": "S_split=Vol(RP3)+(1/2)||e1||^2=pi^2+1/(2pi)",
+      "value": 10.028759344181253,
+      "difference_from_reconstructed_action": -0.03564662717238676,
+      "split_scale_relative_error": 0.036289585200392604
+    },
+    "qed_dressed_candidate_rejected_as_underived": {
+      "formula": "pi^2+1/(2pi)+alpha*pi^2/2",
+      "extra_term": 0.03601099149261307,
+      "value": 10.064770335673867,
+      "reason": "the alpha/2 dressing coefficient was not fixed by an existing S2T action before this comparison"
+    },
+    "reconstructed_required_action": 10.06440597135364
+  },
+  "minimal_action_fully_blind_v_S2T": {
+    "action": 10.028759344181253,
+    "running_amplitude_action_over_2pi": 1.5961266227054811,
+    "inverse_couplings_after_Y_2_3": [
+      102.75002517020255,
+      29.495372334943266,
+      8.315491466780342
+    ],
+    "couplings_after_gY_g2_g3": [
+      0.3497147608780477,
+      0.6527216088438655,
+      1.2293087444365032
+    ],
+    "split_scale_GeV": 39674283534.7878,
+    "comparisons": {
+      "M_W_GeV": {
+        "prediction": 80.2826069289481,
+        "control": 80.3692,
+        "relative_difference": -0.0010774409979433422,
+        "experimental_pull_if_theory_uncertainty_is_zero": -6.510757221947975
+      },
+      "M_Z_GeV": {
+        "prediction": 91.07953005762133,
+        "control": 91.188,
+        "relative_difference": -0.001189519919053778,
+        "experimental_pull_if_theory_uncertainty_is_zero": -54.234971189337955
+      },
+      "sin2_thetaW_on_shell_proxy": {
+        "prediction": 0.22303515200818666,
+        "control": 0.22320949284344327,
+        "relative_difference": -0.0007810637129975906,
+        "experimental_pull_if_theory_uncertainty_is_zero": -0.6722364135861222
+      },
+      "alpha_s_MZ": {
+        "prediction": 0.12025747413666553,
+        "control": 0.118,
+        "relative_difference": 0.019131136751402843,
+        "experimental_pull_if_theory_uncertainty_is_zero": 2.5083045962950394
+      }
+    }
+  },
+  "minimal_action_conditional_v_from_G_F": {
+    "action": 10.028759344181253,
+    "running_amplitude_action_over_2pi": 1.5961266227054811,
+    "inverse_couplings_after_Y_2_3": [
+      102.75002517020255,
+      29.495372334943266,
+      8.315491466780342
+    ],
+    "couplings_after_gY_g2_g3": [
+      0.3497147608780477,
+      0.6527216088438655,
+      1.2293087444365032
+    ],
+    "split_scale_GeV": 39674283534.7878,
+    "comparisons": {
+      "M_W_GeV": {
+        "prediction": 80.35643985296446,
+        "control": 80.3692,
+        "relative_difference": -0.00015876911846267054,
+        "experimental_pull_if_theory_uncertainty_is_zero": -0.9594095515451175
+      },
+      "M_Z_GeV": {
+        "prediction": 91.16329250978161,
+        "control": 91.188,
+        "relative_difference": -0.0002709511143833585,
+        "experimental_pull_if_theory_uncertainty_is_zero": -12.353745109194847
+      },
+      "sin2_thetaW_on_shell_proxy": {
+        "prediction": 0.22303515200818666,
+        "control": 0.22320949284344327,
+        "relative_difference": -0.0007810637129975906,
+        "experimental_pull_if_theory_uncertainty_is_zero": -0.6722364135861222
+      },
+      "alpha_s_MZ": {
+        "prediction": 0.12025747413666553,
+        "control": 0.118,
+        "relative_difference": 0.019131136751402843,
+        "experimental_pull_if_theory_uncertainty_is_zero": 2.5083045962950394
+      }
+    }
+  },
+  "rejected_dressed_control_v_S2T": {
+    "action": 10.064770335673867,
+    "running_amplitude_action_over_2pi": 1.6018579500071706,
+    "inverse_couplings_after_Y_2_3": [
+      102.73378640951442,
+      29.494417113726318,
+      8.304028812176963
+    ],
+    "couplings_after_gY_g2_g3": [
+      0.3497423988641232,
+      0.6527321784455465,
+      1.2301569039536226
+    ],
+    "split_scale_GeV": 38270991855.09424,
+    "comparisons": {
+      "M_W_GeV": {
+        "prediction": 80.28390695512412,
+        "control": 80.3692,
+        "relative_difference": -0.0010612653214898571,
+        "experimental_pull_if_theory_uncertainty_is_zero": -6.413010892923507
+      },
+      "M_Z_GeV": {
+        "prediction": 91.0822814168618,
+        "control": 91.188,
+        "relative_difference": -0.001159347536278881,
+        "experimental_pull_if_theory_uncertainty_is_zero": -52.8592915690993
+      },
+      "sin2_thetaW_on_shell_proxy": {
+        "prediction": 0.22305692982164965,
+        "control": 0.22320949284344327,
+        "relative_difference": -0.0006834970137252315,
+        "experimental_pull_if_theory_uncertainty_is_zero": -0.5882638939147484
+      },
+      "alpha_s_MZ": {
+        "prediction": 0.12042347426993606,
+        "control": 0.118,
+        "relative_difference": 0.02053791754183109,
+        "experimental_pull_if_theory_uncertainty_is_zero": 2.692749188817854
+      }
+    }
+  },
+  "improvement_over_no_threshold_absolute_relative_error": {
+    "M_W_GeV": 5.152837225654357,
+    "M_Z_GeV": 7.8915871183157345,
+    "sin2_thetaW_on_shell_proxy": 34.57877688018434,
+    "alpha_s_MZ": 13.777344995827974
+  },
+  "diagnosis": {
+    "positive": "the minimal action improves M_W, M_Z, the weak-angle proxy and alpha_s simultaneously with no fitted continuous coefficient",
+    "remaining_precision": "using v_S2T, relative residuals are about -0.108 percent, -0.119 percent, -0.078 percent and +1.91 percent respectively",
+    "dominant_remaining_gap": "QCD is still high by about 1.9 percent, while M_Z remains many experimental sigmas away despite a small relative error",
+    "next_gate": "derive S_split from an explicit defect or tunneling action and compute two-loop plus finite electroweak matching before any further coefficient is added"
+  },
+  "verdict": "The independently available geometric combination pi^2+1/(2pi) lands within 3.63 percent in the split mass scale and improves every gauge observable by factors between about 5 and 35 relative to the no-threshold scorecard. This is the strongest constructive lead in the gauge sector. It is not confirmation because the combination was proposed after the residual scale was known and its interpretation as a vectorlike mass action is not derived. The alpha-dressed variant matches the reconstructed exponent strikingly well but is rejected from the evidence ledger because its coefficient is underived."
+}

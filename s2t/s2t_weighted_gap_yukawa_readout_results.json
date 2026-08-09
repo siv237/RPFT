@@ -1,0 +1,414 @@
+{
+  "status": "gap_derived_unequal_edges_plus_exponential_readout_close_four_quark_ratios_within_factor_five_but_mass_selected_candidate_fails_blind_CKM",
+  "date": "2026-08-06",
+  "protocol": {
+    "edge_rule": "affinely normalize each factor spectrum to [0,1], use adjacent gap fractions as A3 edge weights, and use their product for the composed E21 E10 = E20 chord",
+    "beta_menu": {
+      "unit": 1.0,
+      "RP3_length": 3.141592653589793,
+      "S1_length": 6.283185307179586
+    },
+    "train": "four light up/down quark hierarchy ratios",
+    "blind": "CKM angles and Jarlskog invariant",
+    "continuous_fit": false
+  },
+  "scan": {
+    "structural_candidates": 12,
+    "mass_readout_candidates": 108,
+    "within_factor_five_count": 1,
+    "best_rows": [
+      {
+        "kernel": "inverse_square_laplacian",
+        "levels": [
+          0.0,
+          0.75,
+          1.0
+        ],
+        "orientation": "forward",
+        "edge_10": 0.75,
+        "edge_21": 0.25,
+        "chord_weight": 0.1875,
+        "assignment": "chain_up",
+        "beta_up": "S1_length",
+        "beta_down": "S1_length",
+        "up_pattern": [
+          4.6016488586582286e-05,
+          0.0325832618892675,
+          1.0
+        ],
+        "down_pattern": [
+          0.0012181221228763704,
+          0.02939213160149095,
+          1.0
+        ],
+        "up_log_RMS": 1.3975727131925386,
+        "down_log_RMS": 0.20326375558179113,
+        "combined_log_RMS": 0.9986304729462164
+      },
+      {
+        "kernel": "tunneling_laplacian",
+        "levels": [
+          0.0,
+          0.9567860817362277,
+          1.0
+        ],
+        "orientation": "forward",
+        "edge_10": 0.9567860817362277,
+        "edge_21": 0.0432139182637723,
+        "chord_weight": 0.04134647553206431,
+        "assignment": "chain_up",
+        "beta_up": "S1_length",
+        "beta_down": "S1_length",
+        "up_pattern": [
+          2.4806688963060216e-06,
+          0.017300811596279084,
+          1.0
+        ],
+        "down_pattern": [
+          0.0018278199477597503,
+          0.0031768714626194358,
+          1.0
+        ],
+        "up_log_RMS": 1.2943961713628356,
+        "down_log_RMS": 1.4225858080282578,
+        "combined_log_RMS": 1.3600021745648385
+      },
+      {
+        "kernel": "tunneling_laplacian",
+        "levels": [
+          0.0,
+          0.9567860817362277,
+          1.0
+        ],
+        "orientation": "forward",
+        "edge_10": 0.9567860817362277,
+        "edge_21": 0.0432139182637723,
+        "chord_weight": 0.04134647553206431,
+        "assignment": "chain_up",
+        "beta_up": "S1_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          2.4806688963060216e-06,
+          0.017300811596279084,
+          1.0
+        ],
+        "down_pattern": [
+          0.042753010978874344,
+          0.05636374244689077,
+          1.0
+        ],
+        "up_log_RMS": 1.2943961713628356,
+        "down_log_RMS": 2.6588653151539545,
+        "combined_log_RMS": 2.091055500526888
+      },
+      {
+        "kernel": "inverse_square_laplacian",
+        "levels": [
+          0.0,
+          0.75,
+          1.0
+        ],
+        "orientation": "forward",
+        "edge_10": 0.75,
+        "edge_21": 0.25,
+        "chord_weight": 0.1875,
+        "assignment": "chain_up",
+        "beta_up": "S1_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          4.6016488586582286e-05,
+          0.0325832618892675,
+          1.0
+        ],
+        "down_pattern": [
+          0.034901606307967695,
+          0.17144133574342843,
+          1.0
+        ],
+        "up_log_RMS": 1.3975727131925386,
+        "down_log_RMS": 2.828184786061778,
+        "combined_log_RMS": 2.2306768785249536
+      },
+      {
+        "kernel": "inverse_length_laplacian",
+        "levels": [
+          0.0,
+          0.4999999999999999,
+          1.0
+        ],
+        "orientation": "reverse",
+        "edge_10": 0.5000000000000001,
+        "edge_21": 0.4999999999999999,
+        "chord_weight": 0.25,
+        "assignment": "chain_up",
+        "beta_up": "S1_length",
+        "beta_down": "S1_length",
+        "up_pattern": [
+          1.877853331634256e-05,
+          0.4823867444337011,
+          1.0
+        ],
+        "down_pattern": [
+          0.0008895323070644962,
+          0.21247903442238752,
+          1.0
+        ],
+        "up_log_RMS": 2.9712333366814385,
+        "down_log_RMS": 1.6007234854651133,
+        "combined_log_RMS": 2.386476819280537
+      },
+      {
+        "kernel": "inverse_length_laplacian",
+        "levels": [
+          0.0,
+          0.4999999999999999,
+          1.0
+        ],
+        "orientation": "forward",
+        "edge_10": 0.4999999999999999,
+        "edge_21": 0.5000000000000001,
+        "chord_weight": 0.25,
+        "assignment": "chain_up",
+        "beta_up": "S1_length",
+        "beta_down": "S1_length",
+        "up_pattern": [
+          1.877853331634256e-05,
+          0.48238674443370244,
+          1.0
+        ],
+        "down_pattern": [
+          0.0008895323070644962,
+          0.21247903442238752,
+          1.0
+        ],
+        "up_log_RMS": 2.9712333366814403,
+        "down_log_RMS": 1.6007234854651133,
+        "combined_log_RMS": 2.3864768192805377
+      },
+      {
+        "kernel": "tunneling_laplacian",
+        "levels": [
+          0.0,
+          0.9567860817362277,
+          1.0
+        ],
+        "orientation": "reverse",
+        "edge_10": 0.0432139182637723,
+        "edge_21": 0.9567860817362277,
+        "chord_weight": 0.04134647553206431,
+        "assignment": "chain_up",
+        "beta_up": "RP3_length",
+        "beta_down": "S1_length",
+        "up_pattern": [
+          7.716547088656741e-06,
+          0.9957079233525367,
+          1.0
+        ],
+        "down_pattern": [
+          0.0018278199477597503,
+          0.0031768714626194358,
+          1.0
+        ],
+        "up_log_RMS": 3.4866729578115208,
+        "down_log_RMS": 1.4225858080282578,
+        "combined_log_RMS": 2.66276535728719
+      },
+      {
+        "kernel": "tunneling_laplacian",
+        "levels": [
+          0.0,
+          0.9567860817362277,
+          1.0
+        ],
+        "orientation": "forward",
+        "edge_10": 0.9567860817362277,
+        "edge_21": 0.0432139182637723,
+        "chord_weight": 0.04134647553206431,
+        "assignment": "chord_up",
+        "beta_up": "S1_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.0018278199477597503,
+          0.0031768714626194358,
+          1.0
+        ],
+        "down_pattern": [
+          0.0015750139352735967,
+          0.13153254956959926,
+          1.0
+        ],
+        "up_log_RMS": 3.5735702272373095,
+        "down_log_RMS": 1.276774987902305,
+        "combined_log_RMS": 2.683333611268812
+      },
+      {
+        "kernel": "inverse_square_laplacian",
+        "levels": [
+          0.0,
+          0.75,
+          1.0
+        ],
+        "orientation": "forward",
+        "edge_10": 0.75,
+        "edge_21": 0.25,
+        "chord_weight": 0.1875,
+        "assignment": "chord_up",
+        "beta_up": "S1_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.0012181221228763704,
+          0.02939213160149095,
+          1.0
+        ],
+        "down_pattern": [
+          0.006783545428946598,
+          0.18050834299075347,
+          1.0
+        ],
+        "up_log_RMS": 3.3816303246374453,
+        "down_log_RMS": 1.9516537161893561,
+        "combined_log_RMS": 2.760831023480365
+      },
+      {
+        "kernel": "inverse_square_laplacian",
+        "levels": [
+          0.0,
+          0.75,
+          1.0
+        ],
+        "orientation": "reverse",
+        "edge_10": 0.25,
+        "edge_21": 0.75,
+        "chord_weight": 0.1875,
+        "assignment": "chain_up",
+        "beta_up": "RP3_length",
+        "beta_down": "S1_length",
+        "up_pattern": [
+          0.00020441055758998203,
+          0.8830710062425797,
+          1.0
+        ],
+        "down_pattern": [
+          0.0012181221228763704,
+          0.02939213160149095,
+          1.0
+        ],
+        "up_log_RMS": 3.9188414237788853,
+        "down_log_RMS": 0.20326375558179113,
+        "combined_log_RMS": 2.774764337656311
+      },
+      {
+        "kernel": "inverse_square_laplacian",
+        "levels": [
+          0.0,
+          0.75,
+          1.0
+        ],
+        "orientation": "forward",
+        "edge_10": 0.75,
+        "edge_21": 0.25,
+        "chord_weight": 0.1875,
+        "assignment": "chord_up",
+        "beta_up": "S1_length",
+        "beta_down": "S1_length",
+        "up_pattern": [
+          0.0012181221228763704,
+          0.02939213160149095,
+          1.0
+        ],
+        "down_pattern": [
+          4.6016488586582286e-05,
+          0.0325832618892675,
+          1.0
+        ],
+        "up_log_RMS": 3.3816303246374453,
+        "down_log_RMS": 2.2711080173535385,
+        "combined_log_RMS": 2.8803953963818123
+      },
+      {
+        "kernel": "tunneling_laplacian",
+        "levels": [
+          0.0,
+          0.9567860817362277,
+          1.0
+        ],
+        "orientation": "forward",
+        "edge_10": 0.9567860817362277,
+        "edge_21": 0.0432139182637723,
+        "chord_weight": 0.04134647553206431,
+        "assignment": "chain_up",
+        "beta_up": "RP3_length",
+        "beta_down": "S1_length",
+        "up_pattern": [
+          0.0015750139352735967,
+          0.13153254956959926,
+          1.0
+        ],
+        "down_pattern": [
+          0.0018278199477597503,
+          0.0031768714626194358,
+          1.0
+        ],
+        "up_log_RMS": 3.9801945723142054,
+        "down_log_RMS": 1.4225858080282578,
+        "combined_log_RMS": 2.988787313835067
+      }
+    ],
+    "equal_gap_ablation_best_log_RMS": 2.386476819280537
+  },
+  "mass_selected_candidate": {
+    "kernel": "inverse_square_laplacian",
+    "levels": [
+      0.0,
+      0.75,
+      1.0
+    ],
+    "orientation": "forward",
+    "edge_10": 0.75,
+    "edge_21": 0.25,
+    "chord_weight": 0.1875,
+    "assignment": "chain_up",
+    "beta_up": "S1_length",
+    "beta_down": "S1_length",
+    "up_pattern": [
+      4.6016488586582286e-05,
+      0.0325832618892675,
+      1.0
+    ],
+    "down_pattern": [
+      0.0012181221228763704,
+      0.02939213160149095,
+      1.0
+    ],
+    "up_log_RMS": 1.3975727131925386,
+    "down_log_RMS": 0.20326375558179113,
+    "combined_log_RMS": 0.9986304729462164,
+    "multiplicative_errors": [
+      3.674927907956224,
+      4.425679272361137,
+      1.0903105939236035,
+      1.3154080309874963
+    ],
+    "improvement_over_equal_gap": 2.389749646072603
+  },
+  "blind_CKM_gate": {
+    "angles": [
+      0.8457494244757786,
+      0.2757556096207849,
+      0.48487745802190557
+    ],
+    "angle_ratios": [
+      3.75871927681338,
+      6.592292842954456,
+      129.9242920744656
+    ],
+    "absolute_Jarlskog": 0.016859107386847323,
+    "Jarlskog_ratio": 540.3560059886962,
+    "finding": "The weighted edge metric improves mass hierarchy but predicts large nonhierarchical CKM mixing."
+  },
+  "scientific_verdict": {
+    "positive": "A source-derived unequal edge metric is the first tested noncommuting insertion to place all four light quark ratios within factor five without continuous fitting.",
+    "negative": "The same mass-selected candidate fails every blind CKM scale.",
+    "next_gate": "The edge metric must become sector-relative rather than one chain-versus-chord split; derive two correlated noncommuting Yukawa graphs from one finite action."
+  }
+}

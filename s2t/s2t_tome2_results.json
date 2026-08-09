@@ -1,0 +1,31 @@
+{
+  "inputs": {
+    "alpha_inv": 137.035999177,
+    "m_e_MeV": 0.51099895069,
+    "m_mu_MeV": 105.6583755
+  },
+  "closed_rows": {
+    "S_geo": 137.0363037758784,
+    "S_vac": 137.03599917352236,
+    "tau_factor": 16.817023924080836,
+    "m_tau_MeV": 1776.8594285630165,
+    "v_S2T_GeV": 245.99340926110546,
+    "lambda_H_S2T": 0.1292217159850974,
+    "M_H_GeV": 125.05648603895122
+  },
+  "reference_checks": {
+    "alpha_inv_reference": 137.035999177,
+    "S_vac_minus_alpha_inv": -3.477651944194804e-09,
+    "m_tau_reference_MeV": 1776.86,
+    "m_tau_relative_error": -3.2159932879576196e-07
+  },
+  "status": {
+    "S_vac": "closed_train_anchor_reproduction",
+    "m_tau": "strong_conditional_relation_seed_and_projection_normalization_open",
+    "v_S2T": "conditional_higgs_scale_inherits_tau_and_Svac",
+    "lambda_H_S2T": "closed_spectral_scalar_normalization",
+    "M_H": "conditional_higgs_mass_bridge_inherits_absolute_scale",
+    "parent_action": "minimal_unified_two_sector_normalization_gate_failed",
+    "global_physical_status": "IIA_rejected_zero_closed_independent_empirical_predictions"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "status": "dynamic_selector_algebra_pass_condensation_coefficients_open",
+  "date": "2026-08-08",
+  "representation_gate": {
+    "constant_antisymmetric_invariant_dimension": 0,
+    "dynamic_epsilon_terms_all_invariant": true,
+    "finding": "Lambda^2(V) has no invariant vector, but V tensor Lambda^2(V) contains the invariant epsilon_ijk Sigma_k chi_i chi_j."
+  },
+  "rank_gate": {
+    "sample_sigma": [
+      1.0,
+      2.0,
+      4.0
+    ],
+    "rank_A_sigma": 2,
+    "kernel_residual": 0.0
+  },
+  "isotropic_potential": {
+    "potential": "m2*|Sigma|^2+(u/4)*|Sigma|^4+v*Sigma1*Sigma2*Sigma3",
+    "favored_diagonal_stationarity": "3*u*s^2-|v|*s+2*m2=0",
+    "spinodal_condition": "m2 <= v^2/(24*u)",
+    "degenerate_first_order_transition": "m2 = v^2/(27*u)",
+    "nonzero_global_minimum_condition": "m2 < v^2/(27*u)",
+    "favored_orientation_count": 4,
+    "correction": "The cubic invariant changes the radial minimum. There are four favored sign orientations, not eight minima, and condensation can occur for positive m2 through a first-order transition."
+  },
+  "factor_mass_selector": {
+    "quadratic_operator": "M2=m0^2*I+kappa*L(w3,w1)",
+    "inverse_square_eigenvalues": [
+      0.20264236728467555,
+      0.05066059182116889,
+      0.25330295910584444
+    ],
+    "unique_lowest_character_index": 1,
+    "finding": "The existing product-factor Laplacian gives a canonical anisotropic quadratic term and selects the S1 character as the first instability for positive kappa in the inverse-square branch."
+  },
+  "fermion_gate": {
+    "zero_temperature_pair_energy_if_parity_branches_available": "Delta E=-|g Sigma|/2",
+    "finite_temperature_free_energy": "-(1/beta) log(2 cosh(beta*g*|Sigma|/2))",
+    "small_field_quadratic_shift": "-beta*g^2*|Sigma|^2/8",
+    "unconditional_condensation": false,
+    "parity_completion_required": true,
+    "cubic_generated_by_core_pair": false,
+    "finding": "The cusp requires access to the lower parity branch. Fixed global fermion parity and the completion of an odd local Majorana system must be specified before claiming unconditional condensation."
+  },
+  "bulk_core_gate": {
+    "projected_core_epsilon_bilinear_nonzero": true,
+    "bulk_lorentz_scalar_antisymmetric_family_bilinear_nonzero": false,
+    "finding": "The antisymmetric family operator is valid after core projection, but a scalar bulk Weyl/Majorana bilinear is flavor symmetric. Its epsilon contraction vanishes, so a connection or derivative origin must be derived."
+  },
+  "axis_stability_gate": {
+    "condition": "mu1>mu2, mu3>mu2, 4*(mu1-mu2)*(mu3-mu2)>v^2*s^2",
+    "sample_transverse_hessian": [
+      [
+        4.0,
+        1.0
+      ],
+      [
+        1.0,
+        6.0
+      ]
+    ],
+    "sample_eigenvalues": [
+      3.585786437626905,
+      6.414213562373095
+    ],
+    "sample_stable": true
+  },
+  "full_bdg_gate": {
+    "projected_core_kernel_dimension": 1,
+    "full_spectrum_kernel_dimension_proved": false,
+    "required_argument": "bulk gap control or Feshbach-Schur reduction"
+  },
+  "next_gate": "Derive the antisymmetric core operator from an allowed bulk action, fix global fermion parity completion, derive all Sigma coefficients, verify the transverse Hessian, and prove the full BdG gap."
+}

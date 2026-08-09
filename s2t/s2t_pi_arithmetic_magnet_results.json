@@ -1,0 +1,349 @@
+{
+  "status": "pi_is_an_arithmetic_magnet_inside_the_posthoc_grammar",
+  "date": "2026-08-04",
+  "hypothesis": "Short expressions involving pi, small rationals and alpha form a dense arithmetic net, so a unique best formula can arise without physics.",
+  "frozen_grammar": {
+    "expression": "x^2+n*x+p/q+c*alpha",
+    "n": "0..4",
+    "rational_rule": "reduced |p|<=4 and q<=6",
+    "alpha_coefficients": "0,+/-1,+/-1/2,+/-1/3,+/-2/3",
+    "candidate_count": 1485,
+    "distinct_value_count": 1485,
+    "claimed_complexity": 12,
+    "restricted_candidate_count": 931,
+    "no_alpha_candidate_count": 165
+  },
+  "tau_target": {
+    "ratio": 16.817691844978253,
+    "ratio_sigma": 0.0008518018526605114,
+    "claimed_value": 16.817023924080836,
+    "observed_absolute_error": 0.0006679208974169626,
+    "observed_error_in_sigma": 0.7841270775953157,
+    "pi_best_error": 0.0006679208974169626,
+    "pi_restricted_best_error": 0.0006679208974169626
+  },
+  "exact_target_coverage": {
+    "interpretation": "Probability that a uniformly chosen target in the declared interval lies within the stated tolerance of at least one grammar value.",
+    "domains": {
+      "full_grammar_support": {
+        "lower": 5.862307048525026,
+        "upper": 26.443272368012863
+      },
+      "tau_centered_width_10": {
+        "lower": 11.817691844978253,
+        "upper": 21.817691844978253
+      },
+      "tau_centered_width_4": {
+        "lower": 14.817691844978253,
+        "upper": 18.817691844978253
+      },
+      "tau_centered_width_2": {
+        "lower": 15.817691844978253,
+        "upper": 17.817691844978253
+      },
+      "tau_centered_width_1": {
+        "lower": 16.317691844978253,
+        "upper": 17.317691844978253
+      }
+    },
+    "coverage_fractions": {
+      "full_grammar_support": {
+        "observed_error": {
+          "all_grammar": 0.09248557545633207,
+          "complexity_at_most_claimed": 0.058642848170439764,
+          "without_alpha_term": 0.010709599512268296
+        },
+        "one_sigma": {
+          "all_grammar": 0.10720965712779323,
+          "complexity_at_most_claimed": 0.0699718139225005,
+          "without_alpha_term": 0.013657989652791473
+        },
+        "two_sigma": {
+          "all_grammar": 0.1441578815919427,
+          "complexity_at_most_claimed": 0.10843243986250473,
+          "without_alpha_term": 0.027315979305567412
+        }
+      },
+      "tau_centered_width_10": {
+        "observed_error": {
+          "all_grammar": 0.12005875111072939,
+          "complexity_at_most_claimed": 0.07443848677694867,
+          "without_alpha_term": 0.013892754666272822
+        },
+        "one_sigma": {
+          "all_grammar": 0.1391823704560835,
+          "complexity_at_most_claimed": 0.08903863462329653,
+          "without_alpha_term": 0.017717478535343646
+        },
+        "two_sigma": {
+          "all_grammar": 0.1872198904087668,
+          "complexity_at_most_claimed": 0.1395159863412779,
+          "without_alpha_term": 0.03543495707066242
+        }
+      },
+      "tau_centered_width_4": {
+        "observed_error": {
+          "all_grammar": 0.11993712856798622,
+          "complexity_at_most_claimed": 0.07243970181541926,
+          "without_alpha_term": 0.014026338845756214
+        },
+        "one_sigma": {
+          "all_grammar": 0.1391067181521719,
+          "complexity_at_most_claimed": 0.08669047584682765,
+          "without_alpha_term": 0.01788783890587986
+        },
+        "two_sigma": {
+          "all_grammar": 0.1872109750846236,
+          "complexity_at_most_claimed": 0.13613425797824874,
+          "without_alpha_term": 0.03577567781172242
+        }
+      },
+      "tau_centered_width_2": {
+        "observed_error": {
+          "all_grammar": 0.1302052056405918,
+          "complexity_at_most_claimed": 0.08710907290496106,
+          "without_alpha_term": 0.01536218064059014
+        },
+        "one_sigma": {
+          "all_grammar": 0.15107569406081733,
+          "complexity_at_most_claimed": 0.10448582317554322,
+          "without_alpha_term": 0.019591442611208265
+        },
+        "two_sigma": {
+          "all_grammar": 0.20340378104585444,
+          "complexity_at_most_claimed": 0.164998588856613,
+          "without_alpha_term": 0.039182885222356134
+        }
+      },
+      "tau_centered_width_1": {
+        "observed_error": {
+          "all_grammar": 0.14496930444394707,
+          "complexity_at_most_claimed": 0.09464565820417903,
+          "without_alpha_term": 0.017365943332841027
+        },
+        "one_sigma": {
+          "all_grammar": 0.16832218576000813,
+          "complexity_at_most_claimed": 0.1126659918181474,
+          "without_alpha_term": 0.022146848169199984
+        },
+        "two_sigma": {
+          "all_grammar": 0.22678843669866566,
+          "complexity_at_most_claimed": 0.17274841603796176,
+          "without_alpha_term": 0.0442936963383076
+        }
+      }
+    },
+    "headline_full_support_observed": 0.09248557545633207,
+    "headline_local_width_2_observed": 0.1302052056405918
+  },
+  "random_base_control": {
+    "base_distribution": "uniform x in [2,4]",
+    "sample_size": 500000,
+    "seed": 20260804,
+    "fraction_with_best_error_at_most_pi": 0.09052,
+    "exact_fraction_of_base_interval_beating_pi": 0.0908282920173018,
+    "pi_percentile_as_small_error": 0.0908282920173018,
+    "restricted_fraction_with_best_error_at_most_pi": 0.05373,
+    "exact_restricted_fraction_of_base_interval_beating_pi": 0.05402789254562257,
+    "error_quantiles": {
+      "0.01": 6.997921768452292e-05,
+      "0.05": 0.0003515950243395627,
+      "0.1": 0.0007897565312756122,
+      "0.25": 0.009080318852724284,
+      "0.5": 0.03169554635525096,
+      "0.9": 0.2236479498686831
+    },
+    "named_constants": [
+      {
+        "name": "sqrt(2)",
+        "base": 1.4142135623730951,
+        "best_error": 5.15354024292154,
+        "beats_pi_tolerance": false,
+        "best_formula": {
+          "linear_coefficient": 4,
+          "rational": "4",
+          "alpha_coefficient": "1",
+          "complexity": 12,
+          "value": 11.664151602056712
+        },
+        "restricted_best_error": 5.15354024292154,
+        "restricted_best_formula": {
+          "linear_coefficient": 4,
+          "rational": "4",
+          "alpha_coefficient": "1",
+          "complexity": 12,
+          "value": 11.664151602056712
+        }
+      },
+      {
+        "name": "golden_ratio",
+        "base": 1.618033988749895,
+        "best_error": 3.720224548664447,
+        "beats_pi_tolerance": false,
+        "best_formula": {
+          "linear_coefficient": 4,
+          "rational": "4",
+          "alpha_coefficient": "1",
+          "complexity": 12,
+          "value": 13.097467296313805
+        },
+        "restricted_best_error": 3.720224548664447,
+        "restricted_best_formula": {
+          "linear_coefficient": 4,
+          "rational": "4",
+          "alpha_coefficient": "1",
+          "complexity": 12,
+          "value": 13.097467296313805
+        }
+      },
+      {
+        "name": "sqrt(3)",
+        "base": 1.7320508075688772,
+        "best_error": 2.882191262138413,
+        "beats_pi_tolerance": false,
+        "best_formula": {
+          "linear_coefficient": 4,
+          "rational": "4",
+          "alpha_coefficient": "1",
+          "complexity": 12,
+          "value": 13.93550058283984
+        },
+        "restricted_best_error": 2.882191262138413,
+        "restricted_best_formula": {
+          "linear_coefficient": 4,
+          "rational": "4",
+          "alpha_coefficient": "1",
+          "complexity": 12,
+          "value": 13.93550058283984
+        }
+      },
+      {
+        "name": "e",
+        "base": 2.718281828459045,
+        "best_error": 0.0006305583061561038,
+        "beats_pi_tolerance": true,
+        "best_formula": {
+          "linear_coefficient": 2,
+          "rational": "4",
+          "alpha_coefficient": "-1",
+          "complexity": 10,
+          "value": 16.81832240328441
+        },
+        "restricted_best_error": 0.0006305583061561038,
+        "restricted_best_formula": {
+          "linear_coefficient": 2,
+          "rational": "4",
+          "alpha_coefficient": "-1",
+          "complexity": 10,
+          "value": 16.81832240328441
+        }
+      },
+      {
+        "name": "pi",
+        "base": 3.141592653589793,
+        "best_error": 0.0006679208974169626,
+        "beats_pi_tolerance": true,
+        "best_formula": {
+          "linear_coefficient": 2,
+          "rational": "2/3",
+          "alpha_coefficient": "-1/3",
+          "complexity": 12,
+          "value": 16.817023924080836
+        },
+        "restricted_best_error": 0.0006679208974169626,
+        "restricted_best_formula": {
+          "linear_coefficient": 2,
+          "rational": "2/3",
+          "alpha_coefficient": "-1/3",
+          "complexity": 12,
+          "value": 16.817023924080836
+        }
+      },
+      {
+        "name": "sqrt(10)",
+        "base": 3.1622776601683795,
+        "best_error": 0.0004338772058254392,
+        "beats_pi_tolerance": true,
+        "best_formula": {
+          "linear_coefficient": 2,
+          "rational": "1/2",
+          "alpha_coefficient": "-1",
+          "complexity": 8,
+          "value": 16.817257967772427
+        },
+        "restricted_best_error": 0.0004338772058254392,
+        "restricted_best_formula": {
+          "linear_coefficient": 2,
+          "rational": "1/2",
+          "alpha_coefficient": "-1",
+          "complexity": 8,
+          "value": 16.817257967772427
+        }
+      }
+    ]
+  },
+  "local_pi_neighborhood": [
+    {
+      "value": 16.76008706083328,
+      "signed_offset": -0.057604784144974275,
+      "absolute_offset": 0.057604784144974275
+    },
+    {
+      "value": 16.81215902237128,
+      "signed_offset": -0.005532822606973298,
+      "absolute_offset": 0.005532822606973298
+    },
+    {
+      "value": 16.81459147322606,
+      "signed_offset": -0.003100371752193354,
+      "absolute_offset": 0.003100371752193354
+    },
+    {
+      "value": 16.815807698653447,
+      "signed_offset": -0.0018841463248051582,
+      "absolute_offset": 0.0018841463248051582
+    },
+    {
+      "value": 16.817023924080836,
+      "signed_offset": -0.0006679208974169626,
+      "absolute_offset": 0.0006679208974169626
+    },
+    {
+      "value": 16.819456374935612,
+      "signed_offset": 0.0017645299573594286,
+      "absolute_offset": 0.0017645299573594286
+    },
+    {
+      "value": 16.82188882579039,
+      "signed_offset": 0.00419698081213582,
+      "absolute_offset": 0.00419698081213582
+    },
+    {
+      "value": 16.823105051217777,
+      "signed_offset": 0.0054132062395240155,
+      "absolute_offset": 0.0054132062395240155
+    },
+    {
+      "value": 16.824321276645165,
+      "signed_offset": 0.006629431666912211,
+      "absolute_offset": 0.006629431666912211
+    },
+    {
+      "value": 16.826753727499945,
+      "signed_offset": 0.009061882521692155,
+      "absolute_offset": 0.009061882521692155
+    }
+  ],
+  "ablation": {
+    "full_support_coverage_with_alpha": 0.09248557545633207,
+    "full_support_coverage_without_alpha": 0.010709599512268296,
+    "local_width_2_coverage_with_alpha": 0.1302052056405918,
+    "local_width_2_coverage_without_alpha": 0.01536218064059014
+  },
+  "scientific_verdict": {
+    "verdict": "The rank-one statement is misleading: after accounting for target coverage and base choice, coincidences at least this close are not rare.",
+    "what_rank_one_did_show": "The chosen expression is the closest member of the frozen finite list.",
+    "what_rank_one_did_not_show": "It did not measure the look-elsewhere effect over targets, bases, grammar choices or earlier formula-search decisions.",
+    "physical_status": "No physical evidence is created either way; an operator derivation and prospective prediction remain mandatory."
+  }
+}

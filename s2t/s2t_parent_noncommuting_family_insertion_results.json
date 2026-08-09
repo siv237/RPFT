@@ -1,0 +1,80 @@
+{
+  "status": "canonical_commutator_exists_but_is_symmetry_odd_and_does_not_close_family_mixing",
+  "date": "2026-08-05",
+  "menu_symmetry": {
+    "AGL_order": 24,
+    "AGL_triplet_commutant_dimension": 1,
+    "translation_group_order": 4,
+    "translation_triplet_commutant_dimension": 3,
+    "translation_plus_shear_order": 8,
+    "translation_plus_shear_commutant_dimension": 2,
+    "consequence": "Full affine invariance allows only a scalar on the family triplet. Translation invariance allows diagonal splitting but no mixing."
+  },
+  "canonical_noncommuting_candidate": {
+    "definition": "K=(i/2)[T_RP3,S_shear]",
+    "hermiticity_error": 0.0,
+    "eigenvalues": [
+      -1.0,
+      3.3133218391157016e-16,
+      0.9999999999999997
+    ],
+    "rank": 2,
+    "nonzero_support": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "isolated_family_direction": [],
+    "translation_orbit_average_norm": 9.440504760436908e-17,
+    "full_affine_orbit_average_norm": 3.204802889390844e-17,
+    "finding": "K is a normalized Hermitian generator with no fitted coefficient, but it is odd under the unbroken translation symmetry. Symmetry averaging kills it exactly."
+  },
+  "SU5_controlled_insertion": {
+    "candidate": "K tensor P_SU5",
+    "P_SU5": "diag(1,1,1,-1,-1)",
+    "commutator_with_broken_SU5_generator_norm": 2.8284271247461903,
+    "finding": "The controlled insertion is invariant only after SU5 is already reduced to S(U3 x U2). The holonomy supplies a legal spurion, but symmetry does not fix the coefficient multiplying K tensor P_SU5."
+  },
+  "action_coefficient_count": {
+    "physical_SU5xAGL_quadratic_blocks": 2,
+    "relative_coefficients_after_overall_scale": 1,
+    "reason": "10 and bar5 are inequivalent SU5 irreducible representations",
+    "Yukawa_invariants": {
+      "10_10_5H": "one AGL-invariant family bilinear times an independent up-type coupling",
+      "10_bar5_bar5H": "one AGL-invariant family bilinear times an independent down-type coupling"
+    },
+    "consequence": "The unique normalized trace fixes normalization of each written term; it does not choose the relative coefficients of distinct invariant action terms."
+  },
+  "mixing_gate": {
+    "single_K_support": "one two-family plane",
+    "single_K_prediction": "After any diagonal factor kernel, one K insertion leaves one family direction exactly isolated and can generate at most one mixing angle.",
+    "full_CKM_requirement": "At least two non-coplanar family-breaking spurions are required for three nonzero mixing angles and a physical CP phase.",
+    "coefficient_problem": "The current parent symmetry neither selects those spurion directions nor fixes their relative amplitudes."
+  },
+  "scientific_verdict": {
+    "positive": "A canonical noncommuting operator can be constructed algebraically as a commutator of existing menu transformations.",
+    "no_go": "It is not an invariant consequence of the current parent action: its orbit average vanishes, its SU5-controlled version carries an independent coupling, and one insertion cannot produce the full CKM structure.",
+    "next_admissible_gate": "Introduce no fitted coefficient. Search instead for an enlarged symmetry or a discrete Dirac/incidence operator whose square fixes at least two noncommuting family spurions and their relative normalization."
+  }
+}

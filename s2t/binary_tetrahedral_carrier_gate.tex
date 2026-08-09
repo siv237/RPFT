@@ -1,0 +1,123 @@
+\chapter{Бинарно-тетраэдральный carrier gate}
+
+Внешний exploratory-аудит предложил заменить
+\(\mathbb{RP}^3=S^3/\mathbb Z_2\) на сферическую форму
+\begin{equation}
+ M_{2T}=S^3/2T,
+ \qquad
+ 2T\simeq\operatorname{SL}(2,3),
+ \qquad |2T|=24,
+\end{equation}
+и интерпретировать число \(23\) как размерность augmentation ideal
+\(\mathbb C[2T]\ominus\mathbf1\). Проверим отдельно carrier-нормировку,
+спектр и представленческий мост.
+
+\section{Carrier-тест}
+
+При единичном радиусе
+\begin{equation}
+ \Vol(M_{2T})=\frac{2\pi^2}{24}=\frac{\pi^2}{12}.
+\end{equation}
+Тем самым исходное условие \(Z_A=\pi^2\) нарушено в двенадцать раз.
+Абелианизация \(2T\) равна \(\mathbb Z_3\), поэтому плоские абелевы
+характеры имеют фазовый шаг \(2\pi/3\), а не \(\pi\). Кроме того, минимальный
+геометрический сдвиг задаётся элементом с вещественной частью \(1/2\), так
+что систола круглого quotient-а равна
+\begin{equation}
+ \ell_{sys}(M_{2T})=\arccos(1/2)=\frac{\pi}{3}.
+\end{equation}
+Прямая замена в прежнем геометрическом скаляре даёт
+\begin{align}
+ S_{geo}^{2T}
+ &=4\pi^3+\frac{\pi^2}{12}+\frac{\pi}{3}
+ =125.8947713058\ldots,\\
+ S_{vac}^{2T}
+ &=S_{geo}^{2T}-\frac{1}{24S_{geo}^{2T}}
+ -\frac{1}{\pi^4(S_{geo}^{2T})^2}
+ =125.8944396939\ldots.
+\end{align}
+Расхождение с train-якорем \(\alpha^{-1}\) равно
+\begin{equation}
+ S_{vac}^{2T}-\alpha^{-1}=-11.1415594831\ldots.
+\end{equation}
+Следовательно, candidate не является продолжением исходной numerical
+architecture без нового множителя или нового определения \(S_{geo}\).
+
+\section{Явное усреднение характеров}
+
+Для \(g\in2T\subset SU(2)\) характер
+\(\operatorname{Sym}^{\ell}(\mathbb C^2)\) равен
+\(U_\ell(\Re g)\), где \(U_\ell\) --- полином Чебышёва второго рода.
+Поэтому
+\begin{equation}
+ m_\ell^{2T}
+ =\dim\operatorname{Sym}^{\ell}(\mathbb C^2)^{2T}
+ =\frac1{24}\sum_{g\in2T}U_\ell(\Re g).
+\end{equation}
+Прямой подсчёт по двадцати четырём quaternion units даёт первые ненулевые
+степени
+\begin{equation}
+ \ell=0,6,8,12,14,16,18,\ldots.
+\end{equation}
+Первая положительная scalar shell имеет
+\begin{equation}
+ \lambda_6=6(6+2)=48,
+ \qquad d_6=(6+1)m_6^{2T}=7.
+\end{equation}
+
+Для coexact one-forms homogeneous left quotient multiplicity равна
+\begin{equation}
+ d_n^{2T}
+ =n\,m_{n+1}^{2T}+(n+2)m_{n-1}^{2T}.
+\end{equation}
+Первый уровень сохраняется:
+\begin{equation}
+ n=1,
+ \qquad \lambda_1=4,
+ \qquad d_1^{2T}=3.
+\end{equation}
+Поэтому положительный Bessel-tail не исчезает. При \(R_3=R_1=1\)
+получаем
+\begin{equation}
+ T_{coex}^{2T}=7.6133956135\cdot10^{-6}>0,
+\end{equation}
+причём первый уровень даёт более
+\(0.9999999999\) полной суммы. Замена quotient-а лишь примерно делит
+доминирующий residual пополам и не создаёт cancellation theorem.
+
+\section{Почему augmentation ideal не является quotient spectrum}
+
+Регулярное представление действительно имеет каноническое разложение
+\begin{equation}
+ \mathbb C[2T]=\mathbf1\oplus I_{aug},
+ \qquad \dim I_{aug}=23.
+\end{equation}
+Однако функции и формы на \(S^3/2T\) соответствуют \(2T\)-инвариантным
+состояниям на \(S^3\). Quotient-проектор сохраняет \(\mathbf1\)-isotypic
+часть и удаляет nontrivial regular components. Следовательно,
+\(I_{aug}\) не возникает как конечный physical spectral sector самого
+quotient-а.
+
+Утверждение, что \(Q_8\) не действует на этом пространстве, также неверно:
+\(Q_8\subset2T\) действует левыми сдвигами. Ограничение регулярного
+представления содержит три копии регулярного \(Q_8\)-модуля, поэтому
+\begin{equation}
+ \dim\mathbb C[2T]^{Q_8}=3,
+ \qquad
+ \dim I_{aug}^{Q_8}=2.
+\end{equation}
+Старый spinor-line no-go здесь непосредственно не применяется, но это не
+создаёт требуемого spectral bridge.
+
+\begin{nogocriterion}[Binary-tetrahedral direct-carrier no-go]
+Прямая замена \(\mathbb{RP}^3\) на \(S^3/2T\) нарушает locked volume и
+flat-phase tests, сохраняет положительный coexact tail и не реализует
+augmentation ideal как quotient eigenspace. Поэтому маршрут закрыт как
+геометрический источник физического ранга \(23\). Он может быть переоткрыт
+только как новая модель с отдельно выведенным внутренним
+\(\mathbb C[2T]\)-fiber и единым действием, связывающим его с Dirac,
+калибровочным и normalization-sensitive секторами.
+\end{nogocriterion}
+
+Машинный аудит сохранён в
+\texttt{s2t\_binary\_tetrahedral\_carrier\_results.json}.

@@ -1,0 +1,378 @@
+{
+  "status": "quadratic_strain_selection_allows_infinite_coexact_shell_channels",
+  "rule": {
+    "strain_space": "P_0,2 = scalar ell 0 plus ell 2 from Sym^2(R4)",
+    "l21_projection": "keep odd coexact n only",
+    "necessary_channel_rule": "surviving odd n may connect to odd m with |n-m| in {0,2}",
+    "important_limit": "This is a necessary representation-level rule, not the final coefficient calculation."
+  },
+  "kept_shells_checked": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17
+  ],
+  "per_shell_channels": [
+    {
+      "n": 1,
+      "targets": [
+        1,
+        3
+      ],
+      "target_count": 2,
+      "has_diagonal_channel": true,
+      "has_off_diagonal_channel": true
+    },
+    {
+      "n": 3,
+      "targets": [
+        1,
+        3,
+        5
+      ],
+      "target_count": 3,
+      "has_diagonal_channel": true,
+      "has_off_diagonal_channel": true
+    },
+    {
+      "n": 5,
+      "targets": [
+        3,
+        5,
+        7
+      ],
+      "target_count": 3,
+      "has_diagonal_channel": true,
+      "has_off_diagonal_channel": true
+    },
+    {
+      "n": 7,
+      "targets": [
+        5,
+        7,
+        9
+      ],
+      "target_count": 3,
+      "has_diagonal_channel": true,
+      "has_off_diagonal_channel": true
+    },
+    {
+      "n": 9,
+      "targets": [
+        7,
+        9,
+        11
+      ],
+      "target_count": 3,
+      "has_diagonal_channel": true,
+      "has_off_diagonal_channel": true
+    },
+    {
+      "n": 11,
+      "targets": [
+        9,
+        11,
+        13
+      ],
+      "target_count": 3,
+      "has_diagonal_channel": true,
+      "has_off_diagonal_channel": true
+    },
+    {
+      "n": 13,
+      "targets": [
+        11,
+        13,
+        15
+      ],
+      "target_count": 3,
+      "has_diagonal_channel": true,
+      "has_off_diagonal_channel": true
+    },
+    {
+      "n": 15,
+      "targets": [
+        13,
+        15,
+        17
+      ],
+      "target_count": 3,
+      "has_diagonal_channel": true,
+      "has_off_diagonal_channel": true
+    },
+    {
+      "n": 17,
+      "targets": [
+        15,
+        17
+      ],
+      "target_count": 2,
+      "has_diagonal_channel": true,
+      "has_off_diagonal_channel": true
+    }
+  ],
+  "channels": [
+    {
+      "n": 1,
+      "m": 1,
+      "lambda_n": 4,
+      "lambda_m": 4,
+      "degeneracy_n": 6,
+      "degeneracy_m": 6,
+      "channel_type": "diagonal"
+    },
+    {
+      "n": 1,
+      "m": 3,
+      "lambda_n": 4,
+      "lambda_m": 16,
+      "degeneracy_n": 6,
+      "degeneracy_m": 30,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 3,
+      "m": 1,
+      "lambda_n": 16,
+      "lambda_m": 4,
+      "degeneracy_n": 30,
+      "degeneracy_m": 6,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 3,
+      "m": 3,
+      "lambda_n": 16,
+      "lambda_m": 16,
+      "degeneracy_n": 30,
+      "degeneracy_m": 30,
+      "channel_type": "diagonal"
+    },
+    {
+      "n": 3,
+      "m": 5,
+      "lambda_n": 16,
+      "lambda_m": 36,
+      "degeneracy_n": 30,
+      "degeneracy_m": 70,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 5,
+      "m": 3,
+      "lambda_n": 36,
+      "lambda_m": 16,
+      "degeneracy_n": 70,
+      "degeneracy_m": 30,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 5,
+      "m": 5,
+      "lambda_n": 36,
+      "lambda_m": 36,
+      "degeneracy_n": 70,
+      "degeneracy_m": 70,
+      "channel_type": "diagonal"
+    },
+    {
+      "n": 5,
+      "m": 7,
+      "lambda_n": 36,
+      "lambda_m": 64,
+      "degeneracy_n": 70,
+      "degeneracy_m": 126,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 7,
+      "m": 5,
+      "lambda_n": 64,
+      "lambda_m": 36,
+      "degeneracy_n": 126,
+      "degeneracy_m": 70,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 7,
+      "m": 7,
+      "lambda_n": 64,
+      "lambda_m": 64,
+      "degeneracy_n": 126,
+      "degeneracy_m": 126,
+      "channel_type": "diagonal"
+    },
+    {
+      "n": 7,
+      "m": 9,
+      "lambda_n": 64,
+      "lambda_m": 100,
+      "degeneracy_n": 126,
+      "degeneracy_m": 198,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 9,
+      "m": 7,
+      "lambda_n": 100,
+      "lambda_m": 64,
+      "degeneracy_n": 198,
+      "degeneracy_m": 126,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 9,
+      "m": 9,
+      "lambda_n": 100,
+      "lambda_m": 100,
+      "degeneracy_n": 198,
+      "degeneracy_m": 198,
+      "channel_type": "diagonal"
+    },
+    {
+      "n": 9,
+      "m": 11,
+      "lambda_n": 100,
+      "lambda_m": 144,
+      "degeneracy_n": 198,
+      "degeneracy_m": 286,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 11,
+      "m": 9,
+      "lambda_n": 144,
+      "lambda_m": 100,
+      "degeneracy_n": 286,
+      "degeneracy_m": 198,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 11,
+      "m": 11,
+      "lambda_n": 144,
+      "lambda_m": 144,
+      "degeneracy_n": 286,
+      "degeneracy_m": 286,
+      "channel_type": "diagonal"
+    },
+    {
+      "n": 11,
+      "m": 13,
+      "lambda_n": 144,
+      "lambda_m": 196,
+      "degeneracy_n": 286,
+      "degeneracy_m": 390,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 13,
+      "m": 11,
+      "lambda_n": 196,
+      "lambda_m": 144,
+      "degeneracy_n": 390,
+      "degeneracy_m": 286,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 13,
+      "m": 13,
+      "lambda_n": 196,
+      "lambda_m": 196,
+      "degeneracy_n": 390,
+      "degeneracy_m": 390,
+      "channel_type": "diagonal"
+    },
+    {
+      "n": 13,
+      "m": 15,
+      "lambda_n": 196,
+      "lambda_m": 256,
+      "degeneracy_n": 390,
+      "degeneracy_m": 510,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 15,
+      "m": 13,
+      "lambda_n": 256,
+      "lambda_m": 196,
+      "degeneracy_n": 510,
+      "degeneracy_m": 390,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 15,
+      "m": 15,
+      "lambda_n": 256,
+      "lambda_m": 256,
+      "degeneracy_n": 510,
+      "degeneracy_m": 510,
+      "channel_type": "diagonal"
+    },
+    {
+      "n": 15,
+      "m": 17,
+      "lambda_n": 256,
+      "lambda_m": 324,
+      "degeneracy_n": 510,
+      "degeneracy_m": 646,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 17,
+      "m": 15,
+      "lambda_n": 324,
+      "lambda_m": 256,
+      "degeneracy_n": 646,
+      "degeneracy_m": 510,
+      "channel_type": "nearest_kept_shell"
+    },
+    {
+      "n": 17,
+      "m": 17,
+      "lambda_n": 324,
+      "lambda_m": 324,
+      "degeneracy_n": 646,
+      "degeneracy_m": 646,
+      "channel_type": "diagonal"
+    }
+  ],
+  "failure_modes": [
+    {
+      "claim": "quadratic_strain_only_hits_first_shell",
+      "result": "fails",
+      "reason": "The same necessary rule gives diagonal n->n channels for every surviving odd n."
+    },
+    {
+      "claim": "RP3_parity_removes_quadratic_off_diagonal_tower",
+      "result": "fails",
+      "reason": "The ell=2 even insertion preserves parity, so odd surviving shells couple to odd shells n±2."
+    },
+    {
+      "claim": "rank_10_follows_from_shell_selection_alone",
+      "result": "fails",
+      "reason": "Selection leaves infinitely many shell channels; rank 10 is only the deformation-space rank unless coefficients cancel or renormalize the tower."
+    }
+  ],
+  "next_obligations": [
+    {
+      "task": "compute_actual_vector_harmonic_coefficients",
+      "why": "The necessary selection rule shows which channels can exist but not whether their coefficients vanish after the full one-form Laplacian variation and coexact projection."
+    },
+    {
+      "task": "separate_local_heat_kernel_from_nonlocal_finite_part",
+      "why": "Diagonal all-shell contributions may be local/subtractable, but finite winding/Bessel pieces cannot be discarded without proof."
+    },
+    {
+      "task": "test_first_shell_dominance_after_coefficients",
+      "why": "Prior coexact Bessel tail is dominated by n=1; the real mixed trace could still be numerically dominated even if not exactly finite-rank."
+    }
+  ],
+  "verdict": "Quadratic first ambient strain is even and therefore preserves the L(2,1) parity sector. At the necessary representation-selection level it leaves diagonal channels for every surviving odd coexact shell and off-diagonal channels between neighboring surviving odd shells n and n±2. Therefore the C6 rank-10 result cannot be derived from shell selection alone. It requires an additional coefficient-level theorem: cancellation, locality/subtraction, or physical-quotient renormalization of the infinite allowed coexact channels."
+}

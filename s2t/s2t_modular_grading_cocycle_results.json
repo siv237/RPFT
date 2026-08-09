@@ -1,0 +1,116 @@
+{
+  "status": "the_A3_grading_is_unique_but_tree_cocycles_are_trivial_and_the_minimal_CP_cycle_conflicts_with_an_odd_Dirac_graph",
+  "date": "2026-08-06",
+  "blind_protocol": {
+    "observed_CKM_or_masses_loaded": false,
+    "continuous_parameters_fitted": false,
+    "input": "the modular A3 chain and unit edge coefficients"
+  },
+  "factor_modular_gate": {
+    "operator": "L=pi^(-1)(I-T_RP3)+(2pi)^(-1)(I-T_S1)",
+    "computed_eigenvalues": [
+      0.31830988618379086,
+      0.6366197723675813,
+      0.9549296585513722
+    ],
+    "exact_spectrum": [
+      "1/pi",
+      "2/pi",
+      "3/pi"
+    ],
+    "maximum_absolute_error": 2.220446049250313e-16,
+    "minimum_positive_modular_frequency": "beta/pi",
+    "derived_minimal_edges": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "unique_composition": "E_21 E_10=E_20",
+    "positive_log_status": "Delta_rho(X)=rho X rho^(-1) is positive and has a unique self-adjoint logarithm, but it is a superoperator on M3 and is not Log(U)"
+  },
+  "grading_gate": {
+    "condition": "Gamma D + D Gamma=0 requires opposite vertex signs across every Dirac edge",
+    "tree_gradings": [
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1
+      ]
+    ],
+    "tree_projective_gradings": 1,
+    "canonical_representative": [
+      1,
+      -1,
+      1
+    ],
+    "triangle_gradings": [],
+    "finding": "A3 has one grading up to global sign. Adding the 0-2 chord makes an odd cycle, so no Z2 grading can keep all three edges Dirac-odd."
+  },
+  "cohomology_gate": {
+    "tree": {
+      "vertices": 3,
+      "edges": 2,
+      "incidence_rank": 2,
+      "cycle_rank": 0,
+      "H1_dimension": 0,
+      "finding": "Every U(1) edge phase on A3 is a vertex-gauge coboundary."
+    },
+    "triangle": {
+      "vertices": 3,
+      "edges": 3,
+      "incidence_rank": 2,
+      "cycle_rank": 1,
+      "H1_dimension": 1,
+      "gauge_invariant_flux": "Phi=phi_10+phi_21-phi_20"
+    }
+  },
+  "shared_tree_connection_gate": {
+    "phase_grid_per_edge": 17,
+    "cases": 578,
+    "full_mixing_cases": 578,
+    "nonzero_CP_cases": 0,
+    "maximum_absolute_Jarlskog": 5.0775451593500953e-17,
+    "finding": "Arbitrary phases on one shared A3 connection are simultaneously gauge-removable from both sector readouts."
+  },
+  "sector_specific_tree_warning": {
+    "phase_grid_per_variable": 9,
+    "cases": 1458,
+    "nonzero_CP_cases": 1296,
+    "finding": "Independent upper and lower edge phases can create CP, but they are two sector-specific connections and reintroduce the missing relative cocycle by hand."
+  },
+  "minimal_cycle_gate": {
+    "split_readout": "upper sector uses chord E_20; lower sector uses chain edges E_10 and E_21",
+    "exact_CP_odd_invariant": {
+      "flux": "Phi=phi_10+phi_21-phi_20",
+      "trace_commutator_cube": "12*i*(1+pi^2)*sin(Phi)/pi^3",
+      "CP_condition": "sin(Phi) nonzero"
+    },
+    "sampled_fluxes": 65,
+    "nonzero_CP_samples": 64,
+    "CP_zero_at_flux_zero": true,
+    "finding": "The single triangle flux is sufficient for full mixing and CP whenever sin(Phi) is nonzero."
+  },
+  "minimal_action_gate": {
+    "positive_stiffness_potential": "V(Phi)=kappa*(1-cos(Phi)), kappa>0",
+    "selected_flux": "Phi=0 mod 2pi",
+    "CP_result": "zero",
+    "negative_stiffness_warning": "Phi=pi also has sin(Phi)=0 and is CP-conserving",
+    "nontrivial_flux_requirement": "A frustrated higher-harmonic potential, a discrete flux law or an explicitly oriented term is required; its coefficient or quantization rule is not derived by A3."
+  },
+  "scientific_verdict": {
+    "positive": "The modular chain fixes a unique projective grading, and closing it by one chord produces exactly one gauge-invariant flux with an exact CP-odd invariant proportional to sin(Phi).",
+    "negative": "The unclosed A3 tree has no cohomological phase. The triangle cannot be the graph of a wholly odd Dirac operator under the same grading, and the minimal positive plaquette action selects the CP-conserving flux zero.",
+    "status": "grading_gate_pass_tree_CP_no_go_triangle_flux_exists_but_parent_action_gate_fail",
+    "next_gate": "Test a two-layer or graded-superconnection model in which A3 edges are Dirac-odd while the 0-2 chord is an even Higgs or curvature field, and require its flux potential to be fixed without CKM data."
+  }
+}

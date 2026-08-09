@@ -1,0 +1,157 @@
+{
+  "status": "n1_conformal_hodge_diagonal_cancellation_leaks_to_cubic_shell",
+  "formula_for_image": "V_N = -12 q N x +4 N A x -2 C_N x + 2 f_N x, C_N=N^T A + A^T N, f_N=x^T C_N x",
+  "basis_labels": [
+    "E01",
+    "E02",
+    "E03",
+    "E12",
+    "E13",
+    "E23"
+  ],
+  "tested_deformation": "A=diag(1,-1,0,0)",
+  "normalization": {
+    "killing_norm_sq_on_L21": 4.934802200544679
+  },
+  "n1_projection_summary": {
+    "max_abs_entry": 0.0,
+    "frobenius_norm": 0.0
+  },
+  "image_gram_summary": {
+    "rank_numeric": 6,
+    "trace_image_norm": 96.0,
+    "max_abs_entry": 20.0,
+    "frobenius_norm": 39.59797974644666,
+    "eigenvalues": [
+      12.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      20.0
+    ],
+    "weighted_by_lambda1_trace_norm": 6.0,
+    "second_order_denominator_proxy_lambda3_minus_lambda1": 0.6666666666666666
+  },
+  "matrices": {
+    "n1_projection_matrix": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "normalized_image_gram_matrix": [
+      [
+        20.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        16.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        16.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        16.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        16.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        12.0
+      ]
+    ]
+  },
+  "interpretation": [
+    {
+      "claim": "the n=1 diagonal cancellation means the perturbation vanishes",
+      "verdict": "fails",
+      "reason": "The n=1 projection is zero, but the cubic image has nonzero norm; the operator sends the Killing shell into higher shell content."
+    },
+    {
+      "claim": "this proves a determinant obstruction",
+      "verdict": "not_yet",
+      "reason": "The image is represented as cubic tangent polynomials; it still needs projection onto the orthonormal coexact n=3 eigenspace and denominator/sign bookkeeping in the full second-order trace."
+    }
+  ],
+  "next_required_audit": {
+    "name": "n1_to_n3_coexact_projection",
+    "needed": "construct or numerically orthonormalize the coexact n=3 basis and project the cubic images onto it",
+    "pass_condition_for_zero_route": "projected n=3 component vanishes or cancels against projection/Hilbert terms",
+    "failure_condition": "nonzero finite 1<->3 trace-square remains outside the existing pi^-4/P02 residue"
+  },
+  "verdict": "The conformal Hodge variation cancels inside the n=1 diagonal block, but it does not vanish as an operator on Killing forms. Its n=1 projection is zero to roundoff while its cubic tangent-polynomial image has nonzero normalized Gram trace. Thus the next decisive C6 test is the actual coexact n=3 projection and second-order 1<->3 trace contribution."
+}

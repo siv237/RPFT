@@ -1,0 +1,174 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{geometry}
+\usepackage{microtype}
+\geometry{margin=2.3cm}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{nogocriterion}{Критерий провала}
+
+\title{Исчерпание минимальных семейных маршрутов:\\
+affine incidence против projective carrier}
+\author{}
+\date{5 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Область исчерпания}
+
+Настоящий gate не перебирает все мыслимые теории flavour. Он исчерпывает три
+минимальных класса, непосредственно продолжающих уже объявленное меню:
+\begin{enumerate}
+ \item операторы incidence, порождённые всеми элементами $AGL(2,2)$ на
+ четырёх spin-состояниях с последующим ограничением на триплет;
+ \item действия нетривиального projective $\mathbb Z_2$-flux на носителях
+ размерности $2m$;
+ \item intrinsic cohomology, product-metric, cellular-Dirac и determinant-line
+ selectors на пространстве spin-структур.
+\end{enumerate}
+
+\section{Полный affine-incidence перебор}
+
+Текущие две трансляции и shear порождают подгруппу порядка $8$. Её операторная
+алгебра на семейном триплете имеет размерность $5$ и коммутант размерности $2$,
+то есть сохраняет разложение $1+2$.
+
+В полном $AGL(2,2)\simeq S_4$ остаётся шестнадцать элементов вне этой
+подгруппы. Они распадаются на три орбиты текущей геометрической группы:
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Тип цикла & Число кандидатов & Результат на триплете \\
+\midrule
+$2+1+1$ & $4$ & полная $M_3(\mathbb C)$ \\
+$3+1$ & $8$ & полная $M_3(\mathbb C)$ \\
+$4$ & $4$ & редуцируемая алгебра размерности $5$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+Таким образом, двенадцать из шестнадцати одиночных дополнительных incidence-
+операторов снимают алгебраическое препятствие и допускают полное трёхсемейное
+смешивание.
+
+Но это не вывод selector-а. Факторы $\mathbb{RP}^3$ и $S^1$ неэквивалентны,
+поэтому недостающие affine-преобразования являются симметриями абстрактного
+меню, а не геометрическими автоморфизмами носителя. Усреднение любого кандидата
+по текущей группе порядка $8$ возвращает его в коммутант и восстанавливает
+$1+2$.
+
+\begin{proposition}[Existence без selection]
+Полная $M_3$-алгебра семейного смешивания существует уже в минимальном
+четырёхсостоянийном меню. Нерешённой является не задача существования, а выбор
+одного из двенадцати рабочих направлений, его коэффициента относительно
+факторного лапласиана и его назначения up/down-сектору.
+\end{proposition}
+
+\section{Исчерпание projective-carrier}
+
+Нетривиальный flux задаёт
+\begin{equation}
+ U^2=V^2=I,
+ \qquad UV=-VU.
+\end{equation}
+В четырёх измерениях порождённая алгебра имеет вид
+\begin{equation}
+ M_2(\mathbb C)\otimes I_2,
+\end{equation}
+а её коммутант равен $I_2\otimes M_2(\mathbb C)$. Общий эрмитов flux-only
+оператор
+\begin{equation}
+ H=aI+bU+cV+d\,iUV
+\end{equation}
+имеет спектр
+\begin{equation}
+ a-r,\ a-r,\ a+r,\ a+r,
+ \qquad r=\sqrt{b^2+c^2+d^2}.
+\end{equation}
+Поэтому его спектральные проекторы имеют только ранги $0,2,4$: split $1+3$
+невозможен.
+
+Общий носитель имеет форму
+\begin{equation}
+ \mathbb C^2_{flux}\otimes\mathbb C^m_{mult}.
+\end{equation}
+Попытка взять $m=3$ и назвать multiplicity-пространство тремя поколениями
+даёт шестимерный носитель, но flux действует на нём тождественно. Вся массовая
+иерархия лежит в свободном коммутанте $M_3(\mathbb C)$; две CKM-матрицы требуют
+двух некоммутирующих элементов этого коммутанта. Топология их не выбирает.
+
+\begin{nogocriterion}[Провал минимального projective rescue]
+Четырёхмерный flux не даёт $1+3$ из-за чётной спектральной кратности.
+Шестимерный вариант возвращает число три только как необъяснённую кратность и
+переносит всю flavour-задачу в произвольный $M_3$-коммутант. Следовательно,
+минимальная projective-ветвь не замыкает generation count и mixing одновременно.
+\end{nogocriterion}
+
+\section{Cohomology и metric selector}
+
+Остаётся проверить, не выбирают ли недостающий incidence-оператор сама
+cohomology ring или неравные длины факторов. Над $\mathbb F_2$
+\begin{equation}
+ H^*(\mathbb{RP}^3\times S^1)
+ =\mathbb F_2[a,b]/(a^4,b^2).
+\end{equation}
+Её линейная группа автоморфизмов на $H^1$ содержит только два элемента:
+тождество и $a\mapsto a+b$, $b\mapsto b$. Поэтому три ненулевых класса имеют
+орбиты
+\begin{equation}
+ \{b\},\qquad\{a,a+b\},
+\end{equation}
+а коммутант естественного действия снова имеет размерность $5$ и структуру
+$1+2$.
+
+При этом topology и product metric действительно различают все три класса.
+Индикатор ненулевого квадрата, наличие свободной $S^1$-компоненты и длины
+\begin{equation}
+ \ell(a)=\pi,\qquad \ell(b)=2\pi,\qquad
+ \ell(a+b)=\sqrt5\,\pi
+\end{equation}
+дают три различные сигнатуры. Но соответствующие операторы диагональны и
+попарно коммутируют. Они могут маркировать поколения и задавать иерархию, но
+предсказывают тождественное mixing.
+
+Систолический дефект на $\mathbb{RP}^1$ выбирает класс $a$. Однако его
+локализация в фиксированной точке $S^1$ вводит неканоническую фазу/точку.
+Оборачивание дефекта вдоль всего $S^1$ удаляет эту свободу, но сохраняет
+коммутирующую факторную структуру. Поэтому defect-route не выводит selector без
+того же дополнительного boundary datum, которое ранее было признано open.
+
+\section{Единственный живой минимальный маршрут}
+
+После трёх переборов остаётся один конкретный тип положительного исхода:
+необходимо вывести из новой предварительной структуры один из двенадцати
+outside-$D_8$ incidence-операторов. Допустимыми источниками могут быть только
+заранее объявленные boundary data, дискретный Dirac-комплекс или новая
+геометрическая связь между двумя факторами. Эта структура должна одновременно
+фиксировать:
+\begin{enumerate}
+ \item конкретную affine-орбиту и элемент внутри неё;
+ \item относительный вес к факторному оператору;
+ \item различное, но связанное назначение up- и down-Yukawa;
+ \item минимум два независимых mixing-направления.
+\end{enumerate}
+
+Если такой selector не выводится, семейная ветвь текущего конечного меню
+закрывается как физическая модель. При этом математический результат остаётся:
+точно установлено, где находится недостающая структура и почему ни trace, ни
+projective flux, ни intrinsic cohomology её не заменяют.
+
+Машинные протоколы сохранены в
+\texttt{s2t\_family\_affine\_incidence\_exhaustive\_audit.py},
+\texttt{s2t\_family\_affine\_incidence\_exhaustive\_results.json},
+\texttt{s2t\_even\_projective\_carrier\_exhaustive\_audit.py} и
+\texttt{s2t\_even\_projective\_carrier\_exhaustive\_results.json}, а также в
+\texttt{s2t\_topological\_family\_selector\_audit.py} и
+\texttt{s2t\_topological\_family\_selector\_results.json}, а также в
+\texttt{s2t\_spin\_menu\_dirac\_determinant\_line\_audit.py} и
+\texttt{s2t\_spin\_menu\_dirac\_determinant\_line\_results.json}.
+
+\end{document}

@@ -1,0 +1,53 @@
+{
+  "status": "conditional_fixed_geometry_saddle_constructed_unconstrained_radius_no_go",
+  "date": "2026-08-04",
+  "action": {
+    "formula": "S[X,a]=T Vol(X)+kappa/2 integral_gamma a wedge star a",
+    "topological_constraints": [
+      "deg(X)=1 on the RP3 fundamental class",
+      "integral_gamma a=1 on the systolic generator"
+    ],
+    "canonical_choice": {
+      "T": 1.0,
+      "kappa": 1.0
+    }
+  },
+  "fixed_unit_carrier_saddle": {
+    "radius": 1.0,
+    "carrier_volume": 9.869604401089358,
+    "cycle_length": 3.141592653589793,
+    "minimizing_cycle_form": "a=ds/pi",
+    "cycle_form_norm_squared": 0.3183098861837907,
+    "cycle_action": 0.15915494309189535,
+    "on_shell_action": 10.028759344181253,
+    "target_candidate": 10.028759344181253,
+    "identity_error": 0.0,
+    "variational_statement": "Cauchy-Schwarz gives integral f^2 ds >= 1/L, with equality only for f=1/L"
+  },
+  "stability_audit": {
+    "sample_count": 256,
+    "fourier_modes": 12,
+    "minimum_sampled_action_gap": 0.7878603004842958,
+    "maximum_quadratic_decomposition_error": 8.881784197001252e-16,
+    "analytic_hessian": "delta2 S=kappa integral_gamma (delta f)^2 ds > 0 on nonzero zero-mean perturbations"
+  },
+  "free_radius_test": {
+    "on_shell_function": "S(R)=T pi^2 R^3+kappa/(2 pi R)",
+    "derivative_at_R_equals_1": 29.44965826017618,
+    "second_derivative_at_R_equals_1": 59.53593629271994,
+    "R_equals_1_is_stationary": false,
+    "stationary_radius": 0.27076952486741235,
+    "stationary_action": 0.7837166715608226,
+    "verdict": "the two-term action does not stabilize the unit carrier radius"
+  },
+  "normalization_gate": {
+    "cycle_weight_needed_to_hit_reconstructed_action_with_T_equal_1": 1.2239743641000487,
+    "canonical_cycle_weight": 1.0,
+    "warning": "T=1 and kappa=1 must descend from one parent normalization; fitting kappa would destroy the zero-parameter status"
+  },
+  "theory_effect": {
+    "closed": "for a frozen unit RP3 carrier, the candidate is the unique stable minimum in the degree-one, unit-period sector",
+    "not_closed": "the same action neither derives the common normalization nor makes R=1 stationary when the overall radius is dynamical",
+    "next_gate": "derive the wrapped tension and cycle kinetic term from one parent S2T superconnection or add an independently required radius-stabilizing sector before two-loop matching"
+  }
+}

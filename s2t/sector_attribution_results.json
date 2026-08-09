@@ -1,0 +1,103 @@
+{
+  "source": "enriched_sector_map_results.json",
+  "mu_slopes": [
+    {
+      "mu_interval": [
+        0.0,
+        0.3
+      ],
+      "da2_dmu": -148.80926077234432,
+      "d_a2_over_4pi_dmu": -11.841864714884712
+    },
+    {
+      "mu_interval": [
+        0.3,
+        0.6
+      ],
+      "da2_dmu": -446.12468247111076,
+      "d_a2_over_4pi_dmu": -35.5014742252898
+    },
+    {
+      "mu_interval": [
+        0.6,
+        0.9
+      ],
+      "da2_dmu": -742.1454639520109,
+      "d_a2_over_4pi_dmu": -59.05805954059525
+    }
+  ],
+  "beta_slopes": [
+    {
+      "beta_interval": [
+        0.0,
+        0.125
+      ],
+      "da2_dbeta": 3.8198777474462986e-10,
+      "dtheta_plus_over_pi_dbeta": 2.0,
+      "dtheta_minus_over_pi_dbeta": -2.0
+    },
+    {
+      "beta_interval": [
+        0.125,
+        0.25
+      ],
+      "da2_dbeta": -7.912603905424476e-11,
+      "dtheta_plus_over_pi_dbeta": 2.0,
+      "dtheta_minus_over_pi_dbeta": -2.0
+    },
+    {
+      "beta_interval": [
+        0.25,
+        0.375
+      ],
+      "da2_dbeta": -1.8553691916167736e-10,
+      "dtheta_plus_over_pi_dbeta": 2.0,
+      "dtheta_minus_over_pi_dbeta": -2.0
+    },
+    {
+      "beta_interval": [
+        0.375,
+        0.5
+      ],
+      "da2_dbeta": 3.6561687011271715e-10,
+      "dtheta_plus_over_pi_dbeta": 2.0,
+      "dtheta_minus_over_pi_dbeta": -2.0
+    }
+  ],
+  "summary": {
+    "mean_abs_da2_dmu": 445.693135731822,
+    "mean_abs_da2_dbeta": 2.530669007683173e-10,
+    "sector_separation_ratio": 1761167242253.6758,
+    "interpretation": {
+      "holonomy_sector": "beta strongly controls phase branches theta_+, theta_- while barely moving mean a2",
+      "mass_sector": "mu strongly controls mean a2 and a2/(4pi), hence the subleading internal spectral load",
+      "volume_sector": "a0 remains approximately invariant across the map and stays geometric-leading"
+    }
+  },
+  "proposed_dictionary": [
+    {
+      "operator_component": "a0 leading term",
+      "role": "global geometric vacuum backbone",
+      "toe_reading": "background spectral-correlation volume sector",
+      "ugsm_reading": "vacuum geometric normalization sector"
+    },
+    {
+      "operator_component": "a2 local/subleading term",
+      "role": "local curvature plus internal spectral load",
+      "toe_reading": "local geometric-response block",
+      "ugsm_reading": "effective EFT curvature/mass-sensitive sector"
+    },
+    {
+      "operator_component": "theta_+, theta_- branches",
+      "role": "global holonomy/Wilson sector",
+      "toe_reading": "modular/phase-like global branch",
+      "ugsm_reading": "pi-sector and compact-cycle phase sector"
+    },
+    {
+      "operator_component": "mu-heavy channel",
+      "role": "internal channel loading",
+      "toe_reading": "hidden/internal spectral substructure",
+      "ugsm_reading": "effective internal multiplet deformation of observables"
+    }
+  ]
+}

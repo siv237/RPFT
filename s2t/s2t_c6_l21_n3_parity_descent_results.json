@@ -1,0 +1,32 @@
+{
+  "status": "n3_cubic_coexact_basis_descends_to_L21_antipodal_quotient",
+  "source": "s2t_c6_l21_n3_explicit_projection_results.json",
+  "antipodal_rule": {
+    "map": "a(x)=-x on S3",
+    "one_form": "alpha=sum_i V_i(x) dx_i",
+    "component_degree": 3,
+    "component_parity_V_minus_x_over_V_x": -1,
+    "dx_pullback_sign": -1,
+    "one_form_pullback_sign": 1,
+    "descends_to_L21": true
+  },
+  "normalization_rule": {
+    "quotient_volume_used": "Vol(L(2,1))=pi^2",
+    "basis_inner_product": "L2 on L(2,1), using quotient volume pi^2",
+    "orthonormality_error": 1.887379141862766e-15,
+    "constraint_error": 5.569452123193617e-15,
+    "no_extra_cover_factor": "The basis is already quotient-normalized; do not multiply the projected trace by 2 or 1/2."
+  },
+  "projection_carried_over": {
+    "basis_dimension": 30,
+    "projected_trace": 79.99999999999999,
+    "projected_rank": 6,
+    "interpretation": "The nonzero n=3 projection is compatible with the L(2,1) quotient parity gate."
+  },
+  "failure_modes_closed": [
+    "The n=3 obstruction is not removed by antipodal parity: cubic coefficient one-forms are quotient-even.",
+    "The n=3 obstruction is not a cover-normalization factor-of-two artifact in this audit: the inner product used Vol(L(2,1))=pi^2."
+  ],
+  "remaining_caveat": "This closes only the quotient/parity normalization gate for the explicit n=3 projection. It does not add the missing full one-form operator terms or determinant sign bookkeeping.",
+  "verdict": "The explicit n=3 cubic coexact basis passes the L(2,1) descent check: cubic vector coefficients are odd, dx is odd, and their product is antipodal-even. Therefore the nonzero projected trace is not killed by the RP3 quotient parity rule and should not receive an extra cover factor."
+}

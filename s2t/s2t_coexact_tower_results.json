@@ -1,0 +1,168 @@
+{
+  "status": "rp3_projection_implemented_normalization_still_open",
+  "spectrum_convention": {
+    "space": "unit-radius coexact one-form tower",
+    "lambda_n": "(n+1)^2, n>=1",
+    "degeneracy_s3": "2 n (n+2)",
+    "rp3_projection": "keep odd n with full S^3 degeneracy; project out even n",
+    "degeneracy_rp3": "2 n (n+2) for odd n, 0 for even n",
+    "open_normalization": "Overall sign and conversion factor from T_coex to Delta_tower^coex in S_vac remain to be fixed by the determinant normalization."
+  },
+  "cutoffs": {
+    "n_max": 80,
+    "q_max": 1000,
+    "term_tol": 1e-18
+  },
+  "dimensionless_positive_sum": {
+    "s3_full_degeneracy": 1.531916808400627e-05,
+    "rp3_projected": 1.5227161455271536e-05,
+    "rp3_over_s3": 0.9939940192424161,
+    "first_rp3_mode_fraction": 0.9999756862947792
+  },
+  "first_modes": [
+    {
+      "n": 1,
+      "lambda": 4.0,
+      "rho": 2.0,
+      "rp3_parity": 1,
+      "degeneracy_s3": 6.0,
+      "degeneracy_rp3": 6.0,
+      "rho_bessel_sum": 2.537798537759427e-06,
+      "q_terms": 4,
+      "contribution_s3": 1.5226791226556563e-05,
+      "contribution_rp3": 1.5226791226556563e-05
+    },
+    {
+      "n": 2,
+      "lambda": 9.0,
+      "rho": 3.0,
+      "rp3_parity": -1,
+      "degeneracy_s3": 16.0,
+      "degeneracy_rp3": 0.0,
+      "rho_bessel_sum": 5.750337219772005e-09,
+      "q_terms": 3,
+      "contribution_s3": 9.200539551635208e-08,
+      "contribution_rp3": 0.0
+    },
+    {
+      "n": 3,
+      "lambda": 16.0,
+      "rho": 4.0,
+      "rp3_parity": 1,
+      "degeneracy_s3": 30.0,
+      "degeneracy_rp3": 30.0,
+      "rho_bessel_sum": 1.2340834768054375e-11,
+      "q_terms": 2,
+      "contribution_s3": 3.7022504304163126e-10,
+      "contribution_rp3": 3.7022504304163126e-10
+    },
+    {
+      "n": 4,
+      "lambda": 25.0,
+      "rho": 5.0,
+      "rp3_parity": -1,
+      "degeneracy_s3": 48.0,
+      "degeneracy_rp3": 0.0,
+      "rho_bessel_sum": 2.5691838264735402e-14,
+      "q_terms": 2,
+      "contribution_s3": 1.2332082367072992e-12,
+      "contribution_rp3": 0.0
+    },
+    {
+      "n": 5,
+      "lambda": 36.0,
+      "rho": 6.0,
+      "rp3_parity": 1,
+      "degeneracy_s3": 70.0,
+      "degeneracy_rp3": 70.0,
+      "rho_bessel_sum": 5.24557838538624e-17,
+      "q_terms": 2,
+      "contribution_s3": 3.671904869770368e-15,
+      "contribution_rp3": 3.671904869770368e-15
+    },
+    {
+      "n": 6,
+      "lambda": 49.0,
+      "rho": 7.0,
+      "rp3_parity": -1,
+      "degeneracy_s3": 96.0,
+      "degeneracy_rp3": 0.0,
+      "rho_bessel_sum": 1.0566025458188674e-19,
+      "q_terms": 1,
+      "contribution_s3": 1.0143384439861127e-17,
+      "contribution_rp3": 0.0
+    },
+    {
+      "n": 7,
+      "lambda": 64.0,
+      "rho": 8.0,
+      "rp3_parity": 1,
+      "degeneracy_s3": 126.0,
+      "degeneracy_rp3": 126.0,
+      "rho_bessel_sum": 2.1071801180054933e-22,
+      "q_terms": 1,
+      "contribution_s3": 2.6550469486869216e-20,
+      "contribution_rp3": 2.6550469486869216e-20
+    },
+    {
+      "n": 8,
+      "lambda": 81.0,
+      "rho": 9.0,
+      "rp3_parity": -1,
+      "degeneracy_s3": 160.0,
+      "degeneracy_rp3": 0.0,
+      "rho_bessel_sum": 4.170343375358268e-25,
+      "q_terms": 1,
+      "contribution_s3": 6.672549400573229e-23,
+      "contribution_rp3": 0.0
+    },
+    {
+      "n": 9,
+      "lambda": 100.0,
+      "rho": 10.0,
+      "rp3_parity": 1,
+      "degeneracy_s3": 198.0,
+      "degeneracy_rp3": 198.0,
+      "rho_bessel_sum": 8.203790981686104e-28,
+      "q_terms": 1,
+      "contribution_s3": 1.6243506143738485e-25,
+      "contribution_rp3": 1.6243506143738485e-25
+    },
+    {
+      "n": 10,
+      "lambda": 121.0,
+      "rho": 11.0,
+      "rp3_parity": -1,
+      "degeneracy_s3": 240.0,
+      "degeneracy_rp3": 0.0,
+      "rho_bessel_sum": 1.6059280917953887e-30,
+      "q_terms": 1,
+      "contribution_s3": 3.854227420308933e-28,
+      "contribution_rp3": 0.0
+    },
+    {
+      "n": 11,
+      "lambda": 144.0,
+      "rho": 12.0,
+      "rp3_parity": 1,
+      "degeneracy_s3": 286.0,
+      "degeneracy_rp3": 286.0,
+      "rho_bessel_sum": 3.130934471467292e-33,
+      "q_terms": 1,
+      "contribution_s3": 8.954472588396455e-31,
+      "contribution_rp3": 8.954472588396455e-31
+    },
+    {
+      "n": 12,
+      "lambda": 169.0,
+      "rho": 13.0,
+      "rp3_parity": -1,
+      "degeneracy_s3": 336.0,
+      "degeneracy_rp3": 0.0,
+      "rho_bessel_sum": 6.083286263769744e-36,
+      "q_terms": 1,
+      "contribution_s3": 2.0439841846266342e-33,
+      "contribution_rp3": 0.0
+    }
+  ]
+}

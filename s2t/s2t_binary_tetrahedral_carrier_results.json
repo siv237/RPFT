@@ -1,0 +1,164 @@
+{
+  "date": "2026-08-09",
+  "status": "binary_tetrahedral_direct_carrier_route_closed",
+  "group": {
+    "name": "binary tetrahedral group 2T = SL(2,3)",
+    "order": 24,
+    "abelianization": "Z3",
+    "quotient_volume_unit_radius": 0.8224670334241132,
+    "systole_unit_radius": 1.0471975511965976,
+    "flat_U1_character_count": 3
+  },
+  "carrier_tests": {
+    "required_Z_A": 9.869604401089358,
+    "candidate_Z_A": 0.8224670334241132,
+    "volume_ratio_required": 12.0,
+    "required_flat_phase_step": 3.141592653589793,
+    "candidate_flat_phase_step": 2.0943951023931953,
+    "passes_original_carrier_definition": false
+  },
+  "vacuum_scalar_direct_substitution": {
+    "original_S_geo": 137.0363037758784,
+    "original_S_vac": 137.03599917352236,
+    "candidate_S_geo_using_geometric_systole": 125.89477130581999,
+    "candidate_S_vac": 125.8944396938683,
+    "candidate_minus_alpha_inverse": -11.1415594831317,
+    "natural_spectral_compensation_identified": false
+  },
+  "scalar_spectrum": {
+    "character_average": "dim Sym^ell(C2)^2T = |2T|^-1 sum_g U_ell(Re g)",
+    "nonzero_shells_through_degree_24": [
+      {
+        "degree": 0,
+        "eigenvalue": 0,
+        "invariant_dimension": 1,
+        "quotient_multiplicity": 1
+      },
+      {
+        "degree": 6,
+        "eigenvalue": 48,
+        "invariant_dimension": 1,
+        "quotient_multiplicity": 7
+      },
+      {
+        "degree": 8,
+        "eigenvalue": 80,
+        "invariant_dimension": 1,
+        "quotient_multiplicity": 9
+      },
+      {
+        "degree": 12,
+        "eigenvalue": 168,
+        "invariant_dimension": 2,
+        "quotient_multiplicity": 26
+      },
+      {
+        "degree": 14,
+        "eigenvalue": 224,
+        "invariant_dimension": 1,
+        "quotient_multiplicity": 15
+      },
+      {
+        "degree": 16,
+        "eigenvalue": 288,
+        "invariant_dimension": 1,
+        "quotient_multiplicity": 17
+      },
+      {
+        "degree": 18,
+        "eigenvalue": 360,
+        "invariant_dimension": 2,
+        "quotient_multiplicity": 38
+      },
+      {
+        "degree": 20,
+        "eigenvalue": 440,
+        "invariant_dimension": 2,
+        "quotient_multiplicity": 42
+      },
+      {
+        "degree": 22,
+        "eigenvalue": 528,
+        "invariant_dimension": 1,
+        "quotient_multiplicity": 23
+      },
+      {
+        "degree": 24,
+        "eigenvalue": 624,
+        "invariant_dimension": 3,
+        "quotient_multiplicity": 75
+      }
+    ],
+    "first_positive_degree": 6,
+    "first_positive_eigenvalue": 48,
+    "first_positive_multiplicity": 7
+  },
+  "coexact_spectrum": {
+    "multiplicity_formula": "n*dim Sym^(n+1)(C2)^2T + (n+2)*dim Sym^(n-1)(C2)^2T",
+    "first_levels": [
+      {
+        "level": 1,
+        "eigenvalue": 4,
+        "multiplicity": 3,
+        "contribution": 7.6133956132782816e-06
+      },
+      {
+        "level": 5,
+        "eigenvalue": 36,
+        "multiplicity": 5,
+        "contribution": 2.62278919269312e-16
+      },
+      {
+        "level": 7,
+        "eigenvalue": 64,
+        "multiplicity": 16,
+        "contribution": 3.3714881888087893e-21
+      },
+      {
+        "level": 9,
+        "eigenvalue": 100,
+        "multiplicity": 11,
+        "contribution": 9.024170079854713e-27
+      },
+      {
+        "level": 11,
+        "eigenvalue": 144,
+        "multiplicity": 22,
+        "contribution": 6.888055837228041e-32
+      },
+      {
+        "level": 13,
+        "eigenvalue": 196,
+        "multiplicity": 43,
+        "contribution": 5.067637967053669e-37
+      },
+      {
+        "level": 15,
+        "eigenvalue": 256,
+        "multiplicity": 32,
+        "contribution": 1.4052340537334815e-42
+      },
+      {
+        "level": 17,
+        "eigenvalue": 324,
+        "multiplicity": 53,
+        "contribution": 8.605320956514808e-48
+      }
+    ],
+    "positive_Bessel_tail": 7.613395613540564e-06,
+    "first_level_fraction": 0.9999999999655499,
+    "C6_tail_cancelled": false
+  },
+  "regular_representation_gate": {
+    "regular_dimension": 24,
+    "augmentation_ideal_dimension": 23,
+    "unique_2T_invariant_line_in_regular_representation": true,
+    "2T_invariant_lines_in_augmentation_ideal": 0,
+    "Q8_acts_on_regular_representation": true,
+    "Q8_invariant_dimension_in_regular_representation": 3,
+    "Q8_invariant_dimension_in_augmentation_ideal": 2,
+    "quotient_spectrum_keeps_Gamma_invariants_not_augmentation_ideal": true,
+    "augmentation_ideal_is_natural_physical_spectral_sector": false
+  },
+  "verdict": "S3/2T fails the locked volume and phase carrier tests. Its coexact tail remains positive. The canonical 23-dimensional augmentation ideal belongs to the deck-group regular representation, whereas the quotient spectrum keeps invariant states and projects that ideal out. The route survives only as a new model with an added internal C[2T] fiber."
+}

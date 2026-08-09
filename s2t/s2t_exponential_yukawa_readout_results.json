@@ -1,0 +1,377 @@
+{
+  "status": "central_shift_invariant_exponential_readout_improves_mass_hierarchy_but_mass_selected_candidate_fails_blind_CKM_and_no_single_functional_calculus_closes_both",
+  "date": "2026-08-06",
+  "protocol": {
+    "train_data": "up- and down-quark hierarchy ratios at the already declared scales",
+    "blind_data": "all CKM angles and Jarlskog invariant",
+    "readout": "m_i proportional to exp[-beta(E_i-E_min)]",
+    "beta_menu": {
+      "unit": 1.0,
+      "RP3_length": 3.141592653589793,
+      "S1_length": 6.283185307179586
+    },
+    "beta_assignments": "all nine discrete up/down pairs",
+    "continuous_fit": false
+  },
+  "scan": {
+    "candidate_count": 3888,
+    "within_factor_all_four_light_ratios": {
+      "2": 0,
+      "3": 0,
+      "5": 0,
+      "10": 0
+    },
+    "best_rows": [
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "normalization": "raw",
+        "coefficient": 1.0,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.00012824876854021137,
+          0.0061884176581413425,
+          1.0
+        ],
+        "down_pattern": [
+          0.0005703492862313166,
+          0.024042908727294855,
+          1.0
+        ],
+        "up_log_RMS": 1.6496664090648945,
+        "down_log_RMS": 0.47824006938418145,
+        "combined_log_RMS": 1.2145190046190406
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "normalization": "raw",
+        "coefficient": 1.0,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.00012824876854021137,
+          0.006188417658141326,
+          1.0
+        ],
+        "down_pattern": [
+          0.0005703492862313166,
+          0.024042908727294855,
+          1.0
+        ],
+        "up_log_RMS": 1.6496664090648945,
+        "down_log_RMS": 0.47824006938418145,
+        "combined_log_RMS": 1.2145190046190406
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "normalization": "raw",
+        "coefficient": 1.0,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.0001385267511132426,
+          0.006369550042587511,
+          1.0
+        ],
+        "down_pattern": [
+          0.0006352481752895406,
+          0.023643928166903066,
+          1.0
+        ],
+        "up_log_RMS": 1.7026831554760222,
+        "down_log_RMS": 0.40121945192485037,
+        "combined_log_RMS": 1.2369533088489357
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "normalization": "raw",
+        "coefficient": 1.0,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.0001385267511132426,
+          0.0063695500425875054,
+          1.0
+        ],
+        "down_pattern": [
+          0.0006352481752895406,
+          0.023643928166903066,
+          1.0
+        ],
+        "up_log_RMS": 1.7026831554760222,
+        "down_log_RMS": 0.40121945192485037,
+        "combined_log_RMS": 1.2369533088489357
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "normalization": "raw",
+        "coefficient": 1.0,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.0001608020455637221,
+          0.007350622492798156,
+          1.0
+        ],
+        "down_pattern": [
+          0.0005703492862313166,
+          0.024042908727294855,
+          1.0
+        ],
+        "up_log_RMS": 1.80503735552074,
+        "down_log_RMS": 0.47824006938418145,
+        "combined_log_RMS": 1.3203926345579735
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "normalization": "raw",
+        "coefficient": 1.0,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.0001608020455637221,
+          0.007350622492798163,
+          1.0
+        ],
+        "down_pattern": [
+          0.0005703492862313166,
+          0.024042908727294855,
+          1.0
+        ],
+        "up_log_RMS": 1.80503735552074,
+        "down_log_RMS": 0.47824006938418145,
+        "combined_log_RMS": 1.3203926345579735
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "normalization": "raw",
+        "coefficient": 1.0,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.0002017952187200567,
+          0.006391917575236864,
+          1.0
+        ],
+        "down_pattern": [
+          0.0009070779212889261,
+          0.01803760790419952,
+          1.0
+        ],
+        "up_log_RMS": 1.968145545225615,
+        "down_log_RMS": 0.21126750825987056,
+        "combined_log_RMS": 1.3996840442110083
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "normalization": "raw",
+        "coefficient": 1.0,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.00020179521872005707,
+          0.006391917575236875,
+          1.0
+        ],
+        "down_pattern": [
+          0.0009070779212889261,
+          0.01803760790419952,
+          1.0
+        ],
+        "up_log_RMS": 1.968145545225616,
+        "down_log_RMS": 0.21126750825987056,
+        "combined_log_RMS": 1.399684044211009
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "normalization": "raw",
+        "coefficient": 1.0,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.00020945843792730633,
+          0.008819342409677959,
+          1.0
+        ],
+        "down_pattern": [
+          0.0006352481752895406,
+          0.023643928166903066,
+          1.0
+        ],
+        "up_log_RMS": 1.9960496205368572,
+        "down_log_RMS": 0.40121945192485037,
+        "combined_log_RMS": 1.4396511966876229
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "normalization": "raw",
+        "coefficient": 1.0,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.0002094584379273071,
+          0.008819342409677999,
+          1.0
+        ],
+        "down_pattern": [
+          0.0006352481752895406,
+          0.023643928166903066,
+          1.0
+        ],
+        "up_log_RMS": 1.9960496205368599,
+        "down_log_RMS": 0.40121945192485037,
+        "combined_log_RMS": 1.4396511966876246
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "normalization": "chiral_projector",
+        "coefficient": 0.5,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.0003806775824747936,
+          0.016121302006352572,
+          1.0
+        ],
+        "down_pattern": [
+          0.0005703492862313166,
+          0.024042908727294855,
+          1.0
+        ],
+        "up_log_RMS": 2.4771968194798304,
+        "down_log_RMS": 0.47824006938418145,
+        "combined_log_RMS": 1.783986777754473
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "normalization": "chiral_projector",
+        "coefficient": 0.5,
+        "side": "up_only",
+        "beta_up": "RP3_length",
+        "beta_down": "RP3_length",
+        "up_pattern": [
+          0.0003806775824747936,
+          0.016121302006352558,
+          1.0
+        ],
+        "down_pattern": [
+          0.0005703492862313166,
+          0.024042908727294855,
+          1.0
+        ],
+        "up_log_RMS": 2.4771968194798304,
+        "down_log_RMS": 0.47824006938418145,
+        "combined_log_RMS": 1.783986777754473
+      }
+    ]
+  },
+  "mass_selected_candidate": {
+    "mode": "full_Wilson_Hermitian_part",
+    "kernel": "tunneling",
+    "orientation_up": 1,
+    "orientation_down": -1,
+    "normalization": "raw",
+    "coefficient": 1.0,
+    "side": "up_only",
+    "beta_up": "RP3_length",
+    "beta_down": "RP3_length",
+    "up_pattern": [
+      0.00012824876854021137,
+      0.0061884176581413425,
+      1.0
+    ],
+    "down_pattern": [
+      0.0005703492862313166,
+      0.024042908727294855,
+      1.0
+    ],
+    "up_log_RMS": 1.6496664090648945,
+    "down_log_RMS": 0.47824006938418145,
+    "combined_log_RMS": 1.2145190046190406,
+    "light_ratio_multiplicative_errors": [
+      10.24208915425299,
+      0.8405527921491193,
+      0.5105053568408786,
+      1.0760102620994914
+    ],
+    "finding": "The mass-only optimum selects beta_u=beta_d=pi. It captures the two middle ratios and the down first-generation ratio at order unity, but misses the lightest up ratio by factor 10.24."
+  },
+  "central_shift_gate": {
+    "up_pattern_error": 1.6479873021779667e-17,
+    "down_pattern_error": 3.122502256758253e-17,
+    "absolute_overlap_error": 7.216449660063518e-16,
+    "theorem": "Normalized exponential functional calculus removes central offsets exactly because only eigenvalue differences enter."
+  },
+  "blind_CKM_gate": {
+    "angles": [
+      0.9769129936581907,
+      0.5837987491960264,
+      0.7428989818527622
+    ],
+    "control_angles": [
+      0.22501,
+      0.04183,
+      0.003732
+    ],
+    "angle_ratios": [
+      4.341642565477938,
+      13.95646065493728,
+      199.06189224350538
+    ],
+    "absolute_Jarlskog": 0.011167129426818316,
+    "control_Jarlskog": 3.12e-05,
+    "Jarlskog_ratio": 357.9208149621255,
+    "finding": "The mass-selected readout predicts order-one mixing and a Jarlskog invariant hundreds of times too large."
+  },
+  "functional_calculus_no_go": {
+    "statement": "For every scalar function f, f(H) has the same spectral projectors as H. Functional calculus can reshape masses and remove central offsets but cannot repair a wrong mixing basis.",
+    "next_gate": "Introduce a source-derived noncommuting Yukawa insertion or unequal edge metric that changes eigenvectors, not only eigenvalues."
+  }
+}

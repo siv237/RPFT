@@ -1,0 +1,79 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{margin=2.3cm}
+\DeclareMathOperator{\Tr}{Tr}
+\title{Граничное роторное действие\\для вильсоновского функционала}
+\author{}
+\date{6 августа 2026 г.}
+\begin{document}
+\maketitle
+
+\section{Целевой функционал}
+
+Требуется получить из устойчивого локального механизма
+\begin{equation}
+ V_{\mathrm{gap}}(c)
+ =\frac8{1-c}+\frac83\log(1-c)-\frac{44}{45}c.
+\end{equation}
+Обычное исключение поля с фиксированным источником даёт неверный
+отрицательный знак. Положительный обратный член возникает у циклической
+степени свободы в ансамбле фиксированного заряда:
+\begin{equation}
+ H_{\mathrm{rot}}=\frac{q^2}{2m^2},
+ \qquad m^2(c)=1-c.
+\end{equation}
+
+\section{Минимальные кратности}
+
+Для \(N\) вещественных роторов, нормированного следа ранга \(d\) и средней
+нормы заряда \(q^2\)
+\begin{equation}
+ \Gamma_{\det}=\frac{N}{2d}\log(1-c),
+ \qquad
+ \Gamma_{\mathrm{rot}}=\frac{Nq^2}{2d(1-c)}.
+\end{equation}
+Точные коэффициенты требуют
+\begin{equation}
+ \frac{N}{2d}=\frac83,
+ \qquad
+ \frac{Nq^2}{2d}=8.
+\end{equation}
+Минимальное целочисленное решение:
+\begin{equation}
+ N=16,\qquad d=3,\qquad q^2=3.
+\end{equation}
+
+\section{Каноническое представление}
+
+Единственное приводимое представление размерности \(16\), не содержащее
+синглетов и состоящее только из полуцелых спинов, со средним казимиром \(3\):
+\begin{equation}
+ \boxed{\mathcal R_{\partial}=2V_{1/2}\oplus3V_{3/2}.}
+\end{equation}
+Для него
+\begin{equation}
+ \dim\mathcal R_{\partial}=16,
+ \qquad
+ \Tr_{\mathcal R_{\partial}}C_2=48.
+\end{equation}
+При \(d=3\)
+\begin{equation}
+ \frac{\dim\mathcal R_{\partial}}{2d}=\frac83,
+ \qquad
+ \frac{\Tr_{\mathcal R_{\partial}}C_2}{2d}=8.
+\end{equation}
+Все блоки имеют полуцелый спин, поэтому центр \(SU(2)\) действует знаком
+минус и одновременно задаёт антипериодическую ветвь.
+
+\section{Открытые условия}
+
+Необходимо вывести кратности \(2\) и \(3\), явный граничный оператор,
+линейный член \(-44c/45\), полный комплекс БВ/БРСТ и связь с осью поколений.
+До этого конструкция является конкретным локальным кандидатом, но не
+завершённым действием.
+
+\end{document}

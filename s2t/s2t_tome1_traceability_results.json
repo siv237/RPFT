@@ -1,0 +1,108 @@
+[
+  {
+    "item": "primary_structure",
+    "terms_found_in_tome2": [
+      "первичность структуры",
+      "устойчивые спектральные/eft-режимы"
+    ],
+    "covered": true
+  },
+  {
+    "item": "admissibility_over_locality",
+    "terms_found_in_tome2": [
+      "первичность допустимости",
+      "spin-структурой",
+      "голономиями"
+    ],
+    "covered": true
+  },
+  {
+    "item": "multilayer_reality",
+    "terms_found_in_tome2": [
+      "многослойность реальности",
+      "геометрический, спектральный, тополого-фазовый"
+    ],
+    "covered": true
+  },
+  {
+    "item": "particles_as_modes",
+    "terms_found_in_tome2": [
+      "частицы и взаимодействия как устойчивые моды",
+      "секторные редукции"
+    ],
+    "covered": true
+  },
+  {
+    "item": "single_source",
+    "terms_found_in_tome2": [
+      "единый источник",
+      "единой сущности",
+      "mathfrak s"
+    ],
+    "covered": true
+  },
+  {
+    "item": "postulate_admissibility",
+    "terms_found_in_tome2": [
+      "постулат допустимости",
+      "s2t-допустимые параметры"
+    ],
+    "covered": true
+  },
+  {
+    "item": "postulate_operator_generation",
+    "terms_found_in_tome2": [
+      "операторная порождаемость",
+      "спектров, determinant-ветвей"
+    ],
+    "covered": true
+  },
+  {
+    "item": "postulate_geometric_realizability",
+    "terms_found_in_tome2": [
+      "геометрическая реализуемость",
+      "компактный носитель"
+    ],
+    "covered": true
+  },
+  {
+    "item": "postulate_correlational_wholeness",
+    "terms_found_in_tome2": [
+      "корреляционная целостность",
+      "задача ii.b"
+    ],
+    "covered": true
+  },
+  {
+    "item": "postulate_invariant_core",
+    "terms_found_in_tome2": [
+      "инвариантное ядро",
+      "технический surrogate"
+    ],
+    "covered": true
+  },
+  {
+    "item": "five_phase_protocol",
+    "terms_found_in_tome2": [
+      "пять фаз реконструкции",
+      "definition of done"
+    ],
+    "covered": true
+  },
+  {
+    "item": "model_selection",
+    "terms_found_in_tome2": [
+      "селекция конкурирующих моделей",
+      "permutation-control"
+    ],
+    "covered": true
+  },
+  {
+    "item": "minimal_core",
+    "terms_found_in_tome2": [
+      "минимальное ядро",
+      "mathcal q_{audit}"
+    ],
+    "covered": true
+  }
+]

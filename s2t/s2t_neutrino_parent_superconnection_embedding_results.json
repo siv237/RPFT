@@ -1,0 +1,90 @@
+{
+  "status": "parent_superconnection_restriction_constructed_generic_spectral_hessian_does_not_force_metric",
+  "date": "2026-08-03",
+  "parent_data": {
+    "carrier": "K=RP3 x S1",
+    "Hilbert_space": "L2(K,S_K) tensor R24 tensor Nambu",
+    "base_operator": "D_parent=D_K tensor I + Gamma_K tensor D_F",
+    "defect_sector": "tubular neighborhood N(gamma) x S1 with square-root torsion transition",
+    "parent_superconnection": "A_parent=D_parent+Phi_defect+connection_root; its one-parameter collective tangent is delta A=a rho(r)[P_heavy tensor e0_hat + P_kernel tensor e1]"
+  },
+  "minimality_constraints": [
+    "the degree-zero variation acts only on the heavy quotient",
+    "the degree-one variation acts only on the unique defect kernel line",
+    "the same scalar amplitude multiplies both pieces",
+    "the radial profile and spectator S1 mode are canonically normalized",
+    "the zero-form is wavefunction-normalized and the one-form has unit period"
+  ],
+  "tubular_restriction": {
+    "ambient_zero_form_norm": 23.0,
+    "ambient_one_form_norm": 0.3183098861837907,
+    "ambient_cross_trace": 0.0,
+    "ambient_total_norm": 23.31830988618379,
+    "restricted_zero_form_norm": 23.0,
+    "restricted_one_form_norm": 0.3183098861837907,
+    "restricted_total_norm": 23.31830988618379,
+    "restriction_error": 0.0,
+    "target": 23.31830988618379,
+    "interpretation": "Normalized transverse and spectator factors integrate out, leaving exactly the previously constructed graded tangent on gamma."
+  },
+  "canonical_configuration_metric": {
+    "metric": "<delta A,delta A>=integral Str(delta A^dagger * delta A)",
+    "result": 23.31830988618379,
+    "status": "exact_parent_embedding_of_the_minimal_superconnection_norm"
+  },
+  "generic_spectral_action_hessian": {
+    "model": "S_f(a)=Tr f((D0+a delta A)^2) expanded at a=0",
+    "background_mass": 1.0,
+    "kernel_family": [
+      {
+        "kind": "linear",
+        "parameter": null,
+        "kernel_sector_weight": 2.0,
+        "heavy_sector_weight": 2.0,
+        "weight_difference": 0.0,
+        "equal_weights": true
+      },
+      {
+        "kind": "exp",
+        "parameter": 1.0,
+        "kernel_sector_weight": -2.0,
+        "heavy_sector_weight": 0.7357588823428847,
+        "weight_difference": 2.7357588823428847,
+        "equal_weights": false
+      },
+      {
+        "kind": "exp",
+        "parameter": 2.0,
+        "kernel_sector_weight": -4.0,
+        "heavy_sector_weight": 1.6240233988393524,
+        "weight_difference": 5.624023398839352,
+        "equal_weights": false
+      },
+      {
+        "kind": "rational",
+        "parameter": 3.0,
+        "kernel_sector_weight": -6.0,
+        "heavy_sector_weight": 1.125,
+        "weight_difference": 7.125,
+        "equal_weights": false
+      },
+      {
+        "kind": "rational",
+        "parameter": 4.0,
+        "kernel_sector_weight": -8.0,
+        "heavy_sector_weight": 1.0,
+        "weight_difference": 9.0,
+        "equal_weights": false
+      }
+    ],
+    "finding": "Only the linear quadratic functional gives equal second-order weights automatically in this reduced control model. Generic heat/rational kernels split the heavy and kernel weights around a nonzero mass background."
+  },
+  "theory_effect": {
+    "parent_tubular_restriction": "closed",
+    "canonical_superconnection_metric": "closed",
+    "generic_Tr_f_D2_derivation": "not_closed",
+    "D_nu": "derived_if_the_parent_action_uses_the_canonical_configuration_metric",
+    "remaining_choice": "declare/derive the configuration-space trace metric as the primary S2T kinetic metric, or prove a special spectral kernel/background identity that reproduces it"
+  },
+  "verdict": "The parent embedding of the graded tangent itself is explicit: normalized transverse and spectator modes reduce the ambient superconnection variation exactly to the gamma-sector tangent with norm 23+pi^-1. This closes the geometric restriction problem. It does not show that an arbitrary bosonic spectral action Tr f(D^2) has the same Hessian: generic kernels weight the massive heavy quotient and zero-mode connection differently. Therefore the denominator is a theorem of the canonical superconnection configuration metric, but only a conditional consequence of an otherwise unspecified spectral-action kernel."
+}

@@ -1,0 +1,86 @@
+{
+  "status": "W_gate_C0_C1_fail_C2_lookup_pass_but_parent_measure_not_derived",
+  "date": "2026-08-07",
+  "frozen_reference_metric": {
+    "name": "canonical_component_metric",
+    "reason": "A weight map is meaningful only relative to one fixed base inner product. Raw and canonical norms cannot be compared as two C0 weights.",
+    "components": {
+      "tau_RP3_zero_form": 1.0,
+      "tau_S1_zero_form": 1.0,
+      "tau_internal_average": 0.6666666666666666,
+      "neutrino_heavy_rank": 23.0,
+      "neutrino_cycle_one_form": 1.0
+    }
+  },
+  "targets": {
+    "charged_lepton_seed": 16.819456374935612,
+    "neutrino_stiffness": 23.31830988618379
+  },
+  "class_tests": {
+    "C0_canonical_constant": {
+      "reference_metric": "canonical_component_metric",
+      "weight": 1.0,
+      "tau": 2.6666666666666665,
+      "neutrino": 24.0,
+      "passes_tau": false,
+      "passes_neutrino": false
+    },
+    "C0_raw_claim": {
+      "classification": "not_a_second_C0_rule_under_the_frozen_reference_metric",
+      "reason": "Replacing canonical component norms by factor volumes changes the base inner product. It is not the same constant weight map W=1.",
+      "illustrative_tau": 16.819456374935612,
+      "illustrative_neutrino_if_all_heavy_zero_modes_receive_pi": 72.57494091874904
+    },
+    "C1_degree_and_period": {
+      "statement": "degree-zero amplitudes have unit weight; integral degree-one cycle has pi^-1",
+      "tau": 2.6666666666666665,
+      "neutrino": 23.31830988618379,
+      "passes_tau": false,
+      "passes_neutrino": true
+    },
+    "C1_raw_claim": {
+      "classification": "misclassified_as_C1",
+      "reason": "A raw zero-form norm is pi^2 on RP3, 2pi on S1 and another value on a different factor. Therefore raw normalization already depends on the manifold factor and belongs to C2, not degree-only C1."
+    },
+    "C2_factor_degree_period_cells": {
+      "cell_weights": {
+        "RP3_degree0": 9.869604401089358,
+        "S1_degree0": 6.283185307179586,
+        "finite_internal_degree0": 1.0,
+        "S1_integral_degree1": 0.3183098861837907
+      },
+      "tau": 16.819456374935612,
+      "neutrino": 23.31830988618379,
+      "passes_tau": true,
+      "passes_neutrino": true,
+      "sector_identity_used": false,
+      "action_or_symmetry_derivation_present": false,
+      "field_redefinition_covariance_law_present": false,
+      "predictive_status": "lookup_pass_action_fail",
+      "finding": "C2 separates the components into enough geometric cells to reproduce both aggregates. This is a consistent metric assignment, but without an action or covariance law it is not yet a prediction of one physical measure."
+    },
+    "C3_sector_identity": {
+      "admissible": false,
+      "reason": "Sector-labelled weights are a prohibited special readout."
+    }
+  },
+  "covariance_gate": {
+    "required": "Under a field-coordinate rescaling x'=a x, the metric and couplings must transform together so that physical quadratic forms and vertices are invariant.",
+    "provided_by_C2_table": false,
+    "passes": false
+  },
+  "logical_scope": {
+    "simple_universal_weight_rules_rejected": true,
+    "C2_numerical_assignment_exists": true,
+    "one_parent_principle_rejected": false,
+    "independence_of_all_remaining_gaps_proved": false,
+    "reason": "Failure of C0-C1 and underivation of C2 show that the common measure is not presently derived. They do not prove that no deeper action can generate C2 or that measure, CP, vacuum and threshold gaps are logically independent."
+  },
+  "scientific_verdict": {
+    "algebraic_gate": "C2_passes",
+    "operator_gate": "fails",
+    "two_sector_predictive_gate": "fails",
+    "closed_physical_predictions_added": 0,
+    "next_gate": "Derive the C2 cell metric as the Hessian or boundary symplectic form of one preregistered action, including its field-redefinition covariance, then test an independent EM or rotor observable."
+  }
+}

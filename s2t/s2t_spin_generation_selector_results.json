@@ -1,0 +1,143 @@
+{
+  "status": "bounding_reference_gives_three_nonreference_spin_sectors_but_geometry_splits_them_into_one_plus_two",
+  "date": "2026-08-04",
+  "spin_label_space": {
+    "torsor": "H1(K,Z2)=F2^2",
+    "labels_after_reference_choice": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "reference": [
+      0,
+      0
+    ],
+    "nonreference": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "total_count": 4,
+    "nonreference_count": 3
+  },
+  "reference_selector": {
+    "RP3_filling": "oriented disk bundle over S2 with Euler number 2; it retracts to S2, is spin because the Euler class is even, and has H1=0, so it induces one boundary spin structure",
+    "S1_filling": "D2 selects the bounding (antiperiodic) spin structure",
+    "product_rule": "the pair of factorwise bounding structures is the unique reference among the four product structures",
+    "status": "conditional_geometric_reference_if_standard_factor_fillings_are_part_of_the_model"
+  },
+  "abstract_affine_symmetry": {
+    "group": "GL(2,2)",
+    "order": 6,
+    "isomorphic_to": "S3",
+    "nonzero_orbit": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "transitive_on_three_nonzero_labels": true,
+    "interpretation": "If the theory possessed the full affine-label symmetry, the three nonreference spin sectors would form one generation triplet."
+  },
+  "geometric_automorphism_gate": {
+    "integral_fundamental_group": "Z2 x Z",
+    "constraint": "automorphisms preserve the unique torsion subgroup Z2",
+    "induced_mod2_group_order": 2,
+    "matrices": [
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1
+      ]
+    ],
+    "nonzero_orbits": [
+      [
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "orbit_sizes": [
+      1,
+      2
+    ],
+    "transitive_on_three_nonzero_labels": false,
+    "interpretation": "The natural automorphisms of K distinguish the pure circle spin twist from the two sectors carrying the RP3 torsion twist. The orbit pattern is 1+2, not 3."
+  },
+  "spectral_cross_check": {
+    "RP3_spin_eta_invariants": [
+      -0.25,
+      0.25
+    ],
+    "S1_bounding_gap": 0.5,
+    "S1_nonbounding_gap": 0.0,
+    "interpretation": "The four structures are spectrally distinguishable rather than automatically degenerate."
+  },
+  "gates": {
+    "three_sector_count": {
+      "passes": true,
+      "finding": "one factorwise bounding reference leaves exactly three nonreference spin sectors"
+    },
+    "three_sector_equivalence_from_K": {
+      "passes": false,
+      "finding": "Aut(Z2 x Z) induces only a two-element subgroup with nonzero orbit split 1+2"
+    },
+    "generation_triplet": {
+      "passes": false,
+      "finding": "three equivalent generations require an extra emergent GL(2,2)=S3 flavor symmetry or another operator that restores transitivity"
+    }
+  },
+  "scientific_verdict": {
+    "positive": "The count three can be obtained geometrically once standard factor fillings define a unique bounding reference spin structure.",
+    "negative": "The topology of K alone does not make the remaining three sectors equivalent; it distinguishes one from a pair.",
+    "next_gate": "Derive or reject an emergent S3 action on the three nonreference sectors from the SU(5) fiber/transition algebra, without postulating family symmetry separately."
+  }
+}

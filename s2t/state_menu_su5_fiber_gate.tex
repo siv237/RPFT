@@ -1,0 +1,155 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2.3cm}
+\setlength{\emergencystretch}{2em}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{nogocriterion}{Критерий провала}
+
+\title{Меню состояний с минимальным неабелевым fiber\\
+Проверка \(SU(5)\)-расширения}
+\author{}
+\date{4 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Постановка gate}
+
+Первый state-menu audit показал, что
+\[
+\pi_1(\mathbb{RP}^3\times S^1)=\mathbb Z_2\times\mathbb Z
+\]
+даёт две фазовые окружности и метки \((\varepsilon,n)\), но остаётся полностью абелевым. Поэтому следующий заранее объявленный вопрос имеет вид:
+\begin{quote}
+Существует ли один минимальный простой неабелев fiber над меню состояний, который одной \(\mathbb Z_2\)-голономией порождает одновременно color triplet и weak doublet, не вводя независимые \(SU(3)\)- и \(SU(2)\)-сектора?
+\end{quote}
+
+\section{Почему возникает \(SU(5)\)}
+
+Ранг стандартной калибровочной группы равен
+\[
+\operatorname{rank}(SU(3)\times SU(2)\times U(1))=4.
+\]
+Следовательно, простой compact fiber должен иметь ранг не меньше четырёх. Среди простых групп ранга четыре минимальную размерность имеет
+\[
+SU(5),
+\qquad
+\dim SU(5)=24.
+\]
+Для сравнения, \(SO(8)\) имеет размерность \(28\), \(SO(9)\) и \(Sp(8)\) --- \(36\), а \(F_4\) --- \(52\).
+
+\begin{proposition}[Минимальность fiber в rank--dimension gate]
+В классе compact connected simple Lie groups, способных содержать rank-four subgroup стандартной модели, \(SU(5)\) является минимальным по размерности Lie algebra кандидатом.
+\end{proposition}
+
+\section{Торсионная голономия}
+
+Нетривиальный генератор \(\mathbb Z_2\) можно отобразить в
+\[
+P=\operatorname{diag}(1,1,1,-1,-1)\in SU(5).
+\]
+Действительно,
+\[
+P^2=I,
+\qquad
+\det P=1.
+\]
+Коммутант этой голономии сохраняет трёхмерный и двумерный blocks:
+\[
+C_{SU(5)}(P)=S(U(3)\times U(2))
+\cong\frac{SU(3)\times SU(2)\times U(1)}{\mathbb Z_6}.
+\]
+Его размерность равна
+\[
+8+3+1=12,
+\]
+а оставшиеся двенадцать генераторов \(SU(5)\) становятся broken directions.
+
+Таким образом, прежняя дискретная ветвь меню не просто допускает неабелев fiber, а имеет ровно тот order-two элемент, который разбивает минимальный fiber до калибровочной группы стандартной модели.
+
+\section{Одно поколение}
+
+Возьмём стандартный traceless hypercharge generator
+\[
+Y=\operatorname{diag}\left(-\frac13,-\frac13,-\frac13,
+\frac12,\frac12\right).
+\]
+Минимальный chiral anomaly-free package равен
+\[
+\mathbf{10}\oplus\overline{\mathbf5}.
+\]
+Он раскладывается как
+\begin{align}
+\mathbf{10}
+&\longrightarrow
+(\mathbf3,\mathbf2)_{1/6}
+\oplus(\overline{\mathbf3},\mathbf1)_{-2/3}
+\oplus(\mathbf1,\mathbf1)_1,\\
+\overline{\mathbf5}
+&\longrightarrow
+(\overline{\mathbf3},\mathbf1)_{1/3}
+\oplus(\mathbf1,\mathbf2)_{-1/2}.
+\end{align}
+Это ровно набор \(Q,u^c,e^c,d^c,L\) одного поколения без правого нейтрино.
+
+Кубическая \(SU(5)\)-аномалия сокращается:
+\[
+\mathcal A(\mathbf{10})+\mathcal A(\overline{\mathbf5})
+=1-1=0.
+\]
+После branching также сокращаются mixed \(SU(3)^2U(1)\), \(SU(2)^2U(1)\), gravitational--\(U(1)\) и \(U(1)^3\) anomalies.
+
+\section{Неожиданный parity result}
+
+Голономия \(P\) действует со знаком, равным произведению знаков fundamental indices. Поэтому получаем:
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.42\textwidth}c}
+\toprule
+Состояния & \(\mathbb Z_2\)-parity \\
+\midrule
+Weak doublets \(Q\) и \(L\) & \(-1\) \\
+Weak singlets \(u^c,d^c,e^c\) & \(+1\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{proposition}[Единый weak-doublet selector]
+Одна и та же торсионная голономия, разбивающая \(SU(5)\) до стандартной калибровочной группы, делает все weak doublets нечётными, а все weak singlets чётными. Независимый sector-by-sector parity assignment не требуется.
+\end{proposition}
+
+Это первый действительно положительный cross-sector результат новой menu-гипотезы.
+
+\section{Соблазн трёх поколений}
+
+На \(K\) существуют четыре spin-структуры. Поэтому возникает очевидный соблазн:
+\[
+4-1=3,
+\]
+то есть выбрать один vacuum/reference sector и отождествить три остальных с поколениями.
+
+Однако spin-структуры образуют affine torsor над \(\mathbb Z_2^2\). Без дополнительного объекта в torsor нет канонического нуля и, следовательно, нет канонически выделенной структуры, которую следует исключить.
+
+\begin{nogocriterion}[Провал автоматического generation count]
+Равенство \(4-1=3\) является перспективной подсказкой, но не выводом трёх поколений. Требуется независимый геометрический инвариант, defect или boundary condition, единственным образом выделяющий reference spin-sector до сравнения с наблюдаемым числом поколений.
+\end{nogocriterion}
+
+\section{Вердикт и следующий gate}
+
+Второй menu-gate проходит существенно лучше первого. Один минимальный \(SU(5)\)-fiber и одна уже существующая \(\mathbb Z_2\)-голономия дают:
+\begin{itemize}
+    \item стандартную калибровочную группу как centralizer;
+    \item color triplets и weak doublets из одного fiber;
+    \item anomaly-free chiral package одного поколения;
+    \item единый parity rule, отделяющий doublets от singlets.
+\end{itemize}
+
+При этом не выведены выбор \(\mathbf{10}\oplus\overline{\mathbf5}\), три поколения, Yukawa matrices и массы. Следующий gate должен искать invariant четырёх spin-структур, который без знания числа поколений выделяет один reference sector и оставляет три эквивалентных nonreference sectors.
+
+\end{document}

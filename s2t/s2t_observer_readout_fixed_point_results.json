@@ -1,0 +1,86 @@
+{
+  "status": "readout_hypothesis_survives_but_canonical_readout_is_too_coarse_and_noncanonical_readouts_are_nonunique",
+  "date": "2026-08-06",
+  "formal_candidate": {
+    "source_algebra": "A=M4(C) for the finite four-state test",
+    "observer_algebra": "B subset A",
+    "readout": "a unital completely positive map R:A->B",
+    "strong_readout": "an idempotent state-preserving conditional expectation",
+    "fixed_point_condition": "R(X)=X for observable X in the image algebra"
+  },
+  "literature_basis": [
+    {
+      "source": "A. Jencova, Sufficiency in quantum statistical inference, quant-ph/0604091",
+      "use": "unital 2-positive maps as quantum coarse-grainings"
+    },
+    {
+      "source": "K. Furuya, N. Lashkari, S. Ouseph, arXiv:2012.14001",
+      "use": "conditional expectations as observable-algebra coarse-graining and RG readout"
+    },
+    {
+      "source": "J. de Boer et al., arXiv:2505.04682",
+      "use": "modular invariance and uniqueness once state and subalgebra are fixed"
+    }
+  ],
+  "finite_data_nonidentifiability": {
+    "known_points": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "vanishing_perturbation_on_known_points": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unseen_point": 3,
+    "perturbation_at_unseen_point": 120,
+    "finding": "Adding lambda times the vanishing polynomial preserves every known value and changes an unseen one. Observations alone cannot identify a unique readout."
+  },
+  "central_scalar_gate": {
+    "channel": "deterministic random-unitary unital CP map with five branches",
+    "unital_error": 3.836482348618973e-16,
+    "scalar_invariance_error": 7.176461836271247e-14,
+    "theorem": "Every unital linear readout satisfies R(c I)=c I.",
+    "finding": "Coarse-graining cannot repair a wrong centrally represented constant. A rescue requires noncentral operator encoding or new dynamics."
+  },
+  "S4_covariant_conditional_expectation": {
+    "group_order": 24,
+    "formula": "E_S4(A)=|S4|^-1 sum_g U_g A U_g^dagger",
+    "fixed_algebra_dimension": 2,
+    "idempotence_error": 1.6653345369377348e-16,
+    "triplet_scalar_error": 3.925231146709438e-16,
+    "fixed_algebra": "span{P_singlet,P_triplet}",
+    "invariant_state_family": "rho(p)=p P_singlet+(1-p) P_triplet/3",
+    "sampled_invariant_states": 101,
+    "maximum_trace_error": 2.220446049250313e-16,
+    "maximum_twirl_fixed_point_error": 4.80740671595891e-16,
+    "finding": "The affine-covariant twirl preserves the one-plus-three split but makes every triplet observable scalar. It cannot select masses, an axis, or CKM mixing, and its fixed states form a continuum."
+  },
+  "compression_fork": {
+    "source_factor_operators_commute": true,
+    "canonical_triplet_commutator_norm": 0.0,
+    "generic_rank3_UCP_compressions": 256,
+    "nonzero_generic_commutators": 256,
+    "minimum_commutator_norm": 0.27746323595812694,
+    "median_commutator_norm": 1.0489728629518198,
+    "maximum_commutator_norm": 1.3993451676522535,
+    "finding": "A nonreducing observer compression can manufacture apparent noncommutativity and mixing from commuting source operators, but the compression is free unless derived from state, modular flow, or action."
+  },
+  "existing_axis_gate": {
+    "single_axis_orbit_unique_modulo_residual_symmetry": true,
+    "remaining_relative_choices": [
+      "aligned representatives for up and down sectors",
+      "orthogonal representatives for up and down sectors"
+    ]
+  },
+  "scientific_verdict": {
+    "positive": "Observer compression can create effective structures absent from the commuting source presentation.",
+    "negative": "The canonical symmetry-preserving readout is too coarse, central mismatches are invariant, and flexible readouts are infinitely nonunique.",
+    "next_gate": "Derive a state omega and observable subalgebra B from the primary source, verify modular invariance, construct the unique omega-preserving conditional expectation, and only then compute blind observables."
+  }
+}

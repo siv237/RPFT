@@ -1,0 +1,195 @@
+{
+  "status": "tau_formula_numerically_unique_but_seed_and_qed_normalization_not_derived",
+  "date": "2026-08-04",
+  "current_control": {
+    "m_tau_MeV": 1776.93,
+    "sigma_MeV": 0.09,
+    "target_ratio": 16.817691844978253,
+    "ratio_sigma": 0.0008518018526605114
+  },
+  "claimed_formula": {
+    "formula": "m_tau/m_mu=pi^2+2pi+2/3-alpha/3",
+    "factor": 16.817023924080836,
+    "prediction_MeV": 1776.8594285630165,
+    "current_control_pull": -0.7841270775947528,
+    "seed_without_QED_prediction_MeV": 1777.1164373688157,
+    "seed_without_QED_pull": 2.071526320173689,
+    "provenance_gap": "the Tome states rho0=pi^2+2pi+2/3 as an input to the QED theorem rather than deriving it from the lepton operator"
+  },
+  "look_elsewhere_diagnostic": {
+    "warning": "this is a diagnostic inside a declared grammar, not a universal probability of accidental formulas",
+    "grammar": "pi^2+n*pi+p/q+c*alpha with n=0..4, reduced |p|<=4, q<=6, c in {0,+/-1,+/-1/2,+/-1/3,+/-2/3}",
+    "candidate_count": 1485,
+    "within_one_sigma": 1,
+    "within_two_sigma": 1,
+    "at_least_as_close_as_claimed": 0,
+    "claimed_rank": 1,
+    "claimed_complexity": 12,
+    "lower_or_equal_complexity_count": 931,
+    "lower_or_equal_complexity_within_one_sigma": 1,
+    "top_candidates": [
+      {
+        "pi_coefficient": 2,
+        "rational": "2/3",
+        "alpha_coefficient": "-1/3",
+        "factor": 16.817023924080836,
+        "absolute_pull": 0.7841270775953157,
+        "signed_pull": -0.7841270775953157,
+        "complexity": 12
+      },
+      {
+        "pi_coefficient": 2,
+        "rational": "2/3",
+        "alpha_coefficient": "0",
+        "factor": 16.819456374935612,
+        "absolute_pull": 2.071526320174239,
+        "signed_pull": 2.071526320174239,
+        "complexity": 9
+      },
+      {
+        "pi_coefficient": 2,
+        "rational": "2/3",
+        "alpha_coefficient": "-1/2",
+        "factor": 16.815807698653447,
+        "absolute_pull": 2.2119537764800934,
+        "signed_pull": -2.2119537764800934,
+        "complexity": 11
+      },
+      {
+        "pi_coefficient": 2,
+        "rational": "2/3",
+        "alpha_coefficient": "-2/3",
+        "factor": 16.81459147322606,
+        "absolute_pull": 3.6397804753648706,
+        "signed_pull": -3.6397804753648706,
+        "complexity": 13
+      },
+      {
+        "pi_coefficient": 2,
+        "rational": "2/3",
+        "alpha_coefficient": "1/3",
+        "factor": 16.82188882579039,
+        "absolute_pull": 4.927179717943794,
+        "signed_pull": 4.927179717943794,
+        "complexity": 12
+      },
+      {
+        "pi_coefficient": 2,
+        "rational": "2/3",
+        "alpha_coefficient": "1/2",
+        "factor": 16.823105051217777,
+        "absolute_pull": 6.355006416828571,
+        "signed_pull": 6.355006416828571,
+        "complexity": 11
+      },
+      {
+        "pi_coefficient": 2,
+        "rational": "2/3",
+        "alpha_coefficient": "-1",
+        "factor": 16.81215902237128,
+        "absolute_pull": 6.495433873138596,
+        "signed_pull": -6.495433873138596,
+        "complexity": 10
+      },
+      {
+        "pi_coefficient": 2,
+        "rational": "2/3",
+        "alpha_coefficient": "2/3",
+        "factor": 16.824321276645165,
+        "absolute_pull": 7.782833115713349,
+        "signed_pull": 7.782833115713349,
+        "complexity": 13
+      },
+      {
+        "pi_coefficient": 2,
+        "rational": "2/3",
+        "alpha_coefficient": "1",
+        "factor": 16.826753727499945,
+        "absolute_pull": 10.638486513487074,
+        "signed_pull": 10.638486513487074,
+        "complexity": 10
+      },
+      {
+        "pi_coefficient": 2,
+        "rational": "3/5",
+        "alpha_coefficient": "1",
+        "factor": 16.76008706083328,
+        "absolute_pull": 67.62697681984599,
+        "signed_pull": -67.62697681984599,
+        "complexity": 13
+      }
+    ]
+  },
+  "qed_integral_audit": {
+    "declared_sum": "sum_q>=1 (-1)^q integral_0^1 (1+x) K0(2 pi q x) dx",
+    "accelerated_sum": -0.19382664572322458,
+    "raw_coefficient_sum_over_pi": -0.061696937539545534,
+    "target_coefficient_magnitude": 0.3333333333333333,
+    "required_jacobian_magnitude": 5.4027533071585365,
+    "declared_jacobian_status": "J_RP3 is named but no explicit operator trace or numerical value is supplied",
+    "canonical_unit_jacobian_prediction_MeV_using_desired_sign": 1777.0688674001003,
+    "canonical_unit_jacobian_pull": 1.542971112225031,
+    "finite_interval_corrections": [
+      {
+        "winding": 1,
+        "finite_integral": 0.27503661862191264,
+        "infinite_integral": 0.27533029591058444,
+        "alternating_correction": 0.0002936772886718009
+      },
+      {
+        "winding": 2,
+        "finite_integral": 0.1313323792409434,
+        "infinite_integral": 0.1313325739776461,
+        "alternating_correction": -1.94736702707754e-07
+      },
+      {
+        "winding": 3,
+        "finite_integral": 0.08614781045836505,
+        "infinite_integral": 0.0861478106567316,
+        "alternating_correction": 1.9836655928973101e-10
+      },
+      {
+        "winding": 4,
+        "finite_integral": 0.06408314349417064,
+        "infinite_integral": 0.06408314349441152,
+        "alternating_correction": -2.4087676298023553e-13
+      },
+      {
+        "winding": 5,
+        "finite_integral": 0.051013211836423045,
+        "infinite_integral": 0.05101321183642338,
+        "alternating_correction": 3.3306690738754696e-16
+      },
+      {
+        "winding": 6,
+        "finite_integral": 0.04237028599751624,
+        "infinite_integral": 0.04237028599751623,
+        "alternating_correction": 6.938893903907228e-18
+      },
+      {
+        "winding": 7,
+        "finite_integral": 0.03623123052878742,
+        "infinite_integral": 0.036231230528787434,
+        "alternating_correction": 1.3877787807814457e-17
+      },
+      {
+        "winding": 8,
+        "finite_integral": 0.031645785873602846,
+        "infinite_integral": 0.03164578587360288,
+        "alternating_correction": -3.469446951953614e-17
+      }
+    ]
+  },
+  "ablation": {
+    "full_formula_pull": -0.7841270775947528,
+    "remove_QED_term_pull": 2.071526320173689,
+    "replace_one_third_by_raw_unit_jacobian_pull": 1.542971112225031,
+    "interpretation": "the alpha/3 term improves the current control from 2.07 sigma to 0.78 sigma, but the written loop expression supplies only coefficient magnitude 0.06170 before an unspecified normalization"
+  },
+  "scientific_verdict": {
+    "positive": "within the frozen low-complexity grammar the claimed formula is the unique candidate inside one sigma and ranks first among 1485 candidates",
+    "negative": "rho0 is postulated and the displayed Bessel sum does not produce 1/3 without an unexplained Jacobian of magnitude 5.40275",
+    "status_change": "downgrade m_tau from closed derivation to a strong conditional numerical relation",
+    "next_gate": "derive rho0 from an explicit charged-lepton operator and compute the RP3 projection trace that fixes J_RP3 before using tau as an independent foundation for the Higgs scale"
+  }
+}

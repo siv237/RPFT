@@ -1,0 +1,582 @@
+{
+  "status": "c11_table_reverification_passed",
+  "sample_pair_count": 14,
+  "sample_entry_count": 56,
+  "direct_recomputed_entries": [
+    {
+      "pair": "D00,D00",
+      "entry": "E01,E01",
+      "values": {
+        "product": "-2",
+        "single": "1",
+        "metric": "7/2",
+        "principal": "1/2"
+      }
+    },
+    {
+      "pair": "D00,D00",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D00,D00",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D00,D00",
+      "entry": "E23,E23",
+      "values": {
+        "product": "0",
+        "single": "-1",
+        "metric": "-5/6",
+        "principal": "25/6"
+      }
+    },
+    {
+      "pair": "D00,D11",
+      "entry": "E01,E01",
+      "values": {
+        "product": "2",
+        "single": "-1/3",
+        "metric": "-17/6",
+        "principal": "-1/6"
+      }
+    },
+    {
+      "pair": "D00,D11",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D00,D11",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D00,D11",
+      "entry": "E23,E23",
+      "values": {
+        "product": "0",
+        "single": "1/3",
+        "metric": "-7/6",
+        "principal": "1/6"
+      }
+    },
+    {
+      "pair": "D11,S01",
+      "entry": "E01,E01",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D11,S01",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D11,S01",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D11,S01",
+      "entry": "E23,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D22,S02",
+      "entry": "E01,E01",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D22,S02",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D22,S02",
+      "entry": "E03,E23",
+      "values": {
+        "product": "-1",
+        "single": "1",
+        "metric": "13/6",
+        "principal": "-11/6"
+      }
+    },
+    {
+      "pair": "D22,S02",
+      "entry": "E23,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D22,S12",
+      "entry": "E01,E01",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D22,S12",
+      "entry": "E01,E02",
+      "values": {
+        "product": "-1",
+        "single": "1",
+        "metric": "13/6",
+        "principal": "-11/6"
+      }
+    },
+    {
+      "pair": "D22,S12",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D22,S12",
+      "entry": "E23,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D33,S02",
+      "entry": "E01,E01",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D33,S02",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D33,S02",
+      "entry": "E03,E23",
+      "values": {
+        "product": "2",
+        "single": "-1/3",
+        "metric": "-19/6",
+        "principal": "-1/2"
+      }
+    },
+    {
+      "pair": "D33,S02",
+      "entry": "E23,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D33,S12",
+      "entry": "E01,E01",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D33,S12",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "-1/3",
+        "metric": "3/2",
+        "principal": "1/6"
+      }
+    },
+    {
+      "pair": "D33,S12",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "D33,S12",
+      "entry": "E23,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S01,S23",
+      "entry": "E01,E01",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S01,S23",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S01,S23",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S01,S23",
+      "entry": "E23,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S02,S03",
+      "entry": "E01,E01",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S02,S03",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S02,S03",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S02,S03",
+      "entry": "E23,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S02,S13",
+      "entry": "E01,E01",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S02,S13",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S02,S13",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S02,S13",
+      "entry": "E23,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S03,S12",
+      "entry": "E01,E01",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S03,S12",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S03,S12",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S03,S12",
+      "entry": "E23,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S12,S12",
+      "entry": "E01,E01",
+      "values": {
+        "product": "-2",
+        "single": "0",
+        "metric": "2",
+        "principal": "4"
+      }
+    },
+    {
+      "pair": "S12,S12",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S12,S12",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S12,S12",
+      "entry": "E23,E23",
+      "values": {
+        "product": "-2",
+        "single": "0",
+        "metric": "2",
+        "principal": "4"
+      }
+    },
+    {
+      "pair": "S13,S13",
+      "entry": "E01,E01",
+      "values": {
+        "product": "-2",
+        "single": "0",
+        "metric": "2",
+        "principal": "4"
+      }
+    },
+    {
+      "pair": "S13,S13",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S13,S13",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S13,S13",
+      "entry": "E23,E23",
+      "values": {
+        "product": "-2",
+        "single": "0",
+        "metric": "2",
+        "principal": "4"
+      }
+    },
+    {
+      "pair": "S23,S23",
+      "entry": "E01,E01",
+      "values": {
+        "product": "0",
+        "single": "-8/3",
+        "metric": "2/3",
+        "principal": "8"
+      }
+    },
+    {
+      "pair": "S23,S23",
+      "entry": "E01,E02",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S23,S23",
+      "entry": "E03,E23",
+      "values": {
+        "product": "0",
+        "single": "0",
+        "metric": "0",
+        "principal": "0"
+      }
+    },
+    {
+      "pair": "S23,S23",
+      "entry": "E23,E23",
+      "values": {
+        "product": "-8",
+        "single": "8/3",
+        "metric": "38/3",
+        "principal": "4/3"
+      }
+    }
+  ],
+  "full_connection_rank_distribution": {
+    "6": 10,
+    "4": 39,
+    "2": 6
+  },
+  "principal_plus_connection_rank_distribution": {
+    "6": 16,
+    "4": 39
+  },
+  "checks": [
+    "direct formula recomputation for product/single/metric/principal sample entries matched stored sparse tables",
+    "all 55 connection assemblies matched product+single+metric exactly",
+    "all 55 principal+connection assemblies matched exactly",
+    "basis labels and strain labels matched across all tables"
+  ]
+}

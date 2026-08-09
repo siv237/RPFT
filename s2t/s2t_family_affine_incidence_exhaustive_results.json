@@ -1,0 +1,289 @@
+{
+  "status": "one_extra_affine_incidence_can_generate_full_M3_but_geometry_does_not_select_it_and_symmetry_average_removes_the_gain",
+  "date": "2026-08-05",
+  "groups": {
+    "current_translation_shear_group_order": 8,
+    "full_affine_group_order": 24,
+    "outside_candidate_count": 16,
+    "outside_D8_conjugacy_orbits": [
+      {
+        "size": 4,
+        "cycle_types": {
+          "2+1+1": 4
+        }
+      },
+      {
+        "size": 8,
+        "cycle_types": {
+          "3+1": 8
+        }
+      },
+      {
+        "size": 4,
+        "cycle_types": {
+          "4": 4
+        }
+      }
+    ]
+  },
+  "current_family_algebra": {
+    "dimension": 5,
+    "commutant_dimension": 2,
+    "interpretation": "the current D8-type geometry leaves a reducible 1+2 family algebra"
+  },
+  "single_extra_operator_scan": {
+    "candidate_count": 16,
+    "full_M3_candidate_count": 12,
+    "cycle_type_counts": {
+      "2+1+1": 4,
+      "3+1": 8,
+      "4": 4
+    },
+    "rows": [
+      {
+        "permutation": [
+          0,
+          1,
+          3,
+          2
+        ],
+        "cycle_type": "2+1+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          0,
+          2,
+          1,
+          3
+        ],
+        "cycle_type": "2+1+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          0,
+          2,
+          3,
+          1
+        ],
+        "cycle_type": "3+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "cycle_type": "3+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "cycle_type": "2+1+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          1,
+          2,
+          0,
+          3
+        ],
+        "cycle_type": "3+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "cycle_type": "4",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 5,
+        "operator_commutant_dimension": 2,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          1,
+          3,
+          2,
+          0
+        ],
+        "cycle_type": "3+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          2,
+          0,
+          1,
+          3
+        ],
+        "cycle_type": "3+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "cycle_type": "4",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 5,
+        "operator_commutant_dimension": 2,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "cycle_type": "3+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          2,
+          3,
+          1,
+          0
+        ],
+        "cycle_type": "4",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 5,
+        "operator_commutant_dimension": 2,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "cycle_type": "3+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          3,
+          1,
+          0,
+          2
+        ],
+        "cycle_type": "3+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          3,
+          1,
+          2,
+          0
+        ],
+        "cycle_type": "2+1+1",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 9,
+        "operator_commutant_dimension": 1,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      },
+      {
+        "permutation": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "cycle_type": "4",
+        "generated_group_order": 24,
+        "operator_algebra_dimension": 5,
+        "operator_commutant_dimension": 2,
+        "averaged_algebra_dimension": 5,
+        "averaged_commutant_dimension": 2
+      }
+    ],
+    "finding": "Every affine permutation outside the current D8 subgroup enlarges the generated permutation group to S4. Its Hermitian incidence part is sufficient to make the triplet operator algebra irreducible and, in the successful cases, equal to M3."
+  },
+  "selector_gate": {
+    "geometric_selector_exists": false,
+    "reason": "The RP3 and S1 factors are inequivalent, so the missing affine transformations are abstract relabelings rather than diffeomorphism-induced symmetries. The current D8 action partitions the candidates into multiple nontrivial orbits.",
+    "symmetry_averaging_result": "Averaging any candidate over the current geometric group returns it to the D8 commutant and restores the reducible 1+2 algebra."
+  },
+  "action_gate": {
+    "fixed_coefficient_from_incidence": "an unweighted chosen edge can be normalized to one",
+    "remaining_choices": [
+      "which outside affine incidence operator is physical",
+      "its relative coefficient against the existing factor Laplacian",
+      "which SU5 Yukawa sector receives which incidence combination"
+    ],
+    "consequence": "Full mixing algebra is easy once one explicitly breaks the current geometry, but the parent action does not choose the breaking direction or sector map."
+  },
+  "scientific_verdict": {
+    "positive": "There is no algebraic obstruction to a three-dimensional full mixing algebra: one extra affine incidence operator can supply it.",
+    "no_go": "Within the declared carrier geometry the required operator is unselected. Restoring symmetry removes it, while choosing it by CKM data is forbidden.",
+    "next_condition": "A successful 1+3 rescue must derive one specific outside-D8 incidence direction from new prior geometry, a boundary condition or a discrete Dirac complex."
+  }
+}

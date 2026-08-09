@@ -1,0 +1,377 @@
+{
+  "status": "spectral_gap_action_has_a_stable_exact_Wilson_saddle_and_factor_geometry_reduces_axis_choice_but_does_not_complete_the_physical_derivation",
+  "date": "2026-08-05",
+  "continuous_two_sector_solution": {
+    "cos_theta": "(26-9*sqrt(15))/11",
+    "cos_theta_numeric": -0.8051681923515233,
+    "phase": 0.3989625047206992,
+    "tensor_response_over_pi4": 0.9999999999999998,
+    "canonical_axes": 13,
+    "joint_full_M3_axes": 8
+  },
+  "gap_action": {
+    "response": "R(c)=1/45+8(2+c)/(3(1-c)^2)",
+    "potential": "V_gap(c)=(8/3)(3/(1-c)+log(1-c))-(44/45)c",
+    "stationarity": "V_gap'(c)=R(c)-1=0",
+    "stationary_polynomial": "11*c^2-52*c-49=0",
+    "curvature_at_target": 1.9016485962545528,
+    "stable_local_minimum": true,
+    "bare_stiffness": 1.0,
+    "dc_dkappa_at_kappa_1": 0.5258595105160748,
+    "interpretation": "The exact angle is a stable saddle of a parameter-free spectral primitive if the tree-level stiffness is canonically one. The one is therefore the new normalization gate.",
+    "standard_determinant_status": "The potential contains both a resolvent-like 1/(1-c) term and a log-determinant term. It is a valid primitive of the susceptibility but has not yet been derived from a local BV/BRST field content."
+  },
+  "finite_order_gate": {
+    "polynomial_for_two_cos_theta": "11*x^2-104*x-196",
+    "finite_order": false,
+    "reason": "two_cos_theta_is_not_an_algebraic_integer"
+  },
+  "factor_axis_selector": {
+    "kernels": {
+      "inverse_length": {
+        "weight_rp3": 0.3183098861837907,
+        "weight_s1": 0.15915494309189535
+      },
+      "inverse_square": {
+        "weight_rp3": 0.10132118364233778,
+        "weight_s1": 0.025330295910584444
+      },
+      "tunneling": {
+        "weight_rp3": 0.04321391826377226,
+        "weight_s1": 0.0018674427317079893
+      }
+    },
+    "summary": {
+      "inverse_length": {
+        "minimum_cost": 0.4774648292756862,
+        "degeneracy": 2,
+        "selected_cycle_types": [
+          [
+            "2+1+1"
+          ],
+          [
+            "2+1+1"
+          ]
+        ],
+        "selected_axes": [
+          [
+            0.9811480430862917,
+            -0.19325764550966812,
+            5.760682210525997e-18
+          ],
+          [
+            0.11157735365796015,
+            0.566466086790745,
+            0.8164965809277261
+          ]
+        ]
+      },
+      "inverse_square": {
+        "minimum_cost": 0.12665147955292225,
+        "degeneracy": 2,
+        "selected_cycle_types": [
+          [
+            "2+1+1"
+          ],
+          [
+            "2+1+1"
+          ]
+        ],
+        "selected_axes": [
+          [
+            0.9811480430862917,
+            -0.19325764550966812,
+            5.760682210525997e-18
+          ],
+          [
+            0.11157735365796015,
+            0.566466086790745,
+            0.8164965809277261
+          ]
+        ]
+      },
+      "tunneling": {
+        "minimum_cost": 0.045081360995480255,
+        "degeneracy": 2,
+        "selected_cycle_types": [
+          [
+            "2+1+1"
+          ],
+          [
+            "2+1+1"
+          ]
+        ],
+        "selected_axes": [
+          [
+            0.9811480430862917,
+            -0.19325764550966812,
+            5.760682210525997e-18
+          ],
+          [
+            0.11157735365796015,
+            0.566466086790745,
+            0.8164965809277261
+          ]
+        ]
+      }
+    },
+    "finding": "Each tested pre-existing factor kernel reduces the eight joint axes to a smaller minimum set. Whether this is a legitimate vacuum-selection energy requires deriving the coupling n^T L n from the same boundary action."
+  },
+  "scientific_verdict": {
+    "positive": "The exact Wilson angle is not merely an isolated fitted point: it is a stable stationary point of an explicit zero-parameter spectral gap functional, and existing factor operators can reduce the axis degeneracy.",
+    "negative": "Canonical unit stiffness, the resolvent-plus-determinant field origin, the axis coupling, BRST completion and source normalization are not yet derived from one local action.",
+    "next_gate": "Construct a local auxiliary-field or boundary gauge action whose one-loop integration produces V_gap with unit tree stiffness and the factor-axis term, then recompute the complete determinant signs."
+  },
+  "axis_rows": [
+    {
+      "axis": [
+        0.3232079910562056,
+        -0.9463279529409515,
+        1.7487445342020336e-17
+      ],
+      "source_cycle_types": [
+        "2+1+1"
+      ],
+      "outside_D8_source_count": 1,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "factor_costs": {
+        "inverse_length": 0.795774715459477,
+        "inverse_square": 0.22797266319526002,
+        "tunneling": 0.0882952792592525
+      }
+    },
+    {
+      "axis": [
+        0.9811480430862917,
+        -0.19325764550966812,
+        5.760682210525997e-18
+      ],
+      "source_cycle_types": [
+        "2+1+1"
+      ],
+      "outside_D8_source_count": 1,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "factor_costs": {
+        "inverse_length": 0.4774648292756862,
+        "inverse_square": 0.12665147955292225,
+        "tunneling": 0.045081360995480255
+      }
+    },
+    {
+      "axis": [
+        -5.906328324140408e-18,
+        1.3419225008524531e-17,
+        1.0
+      ],
+      "source_cycle_types": [
+        "3+1"
+      ],
+      "outside_D8_source_count": 2,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "factor_costs": {
+        "inverse_length": 0.6366197723675815,
+        "inverse_square": 0.16886863940389632,
+        "tunneling": 0.060108481327307006
+      }
+    },
+    {
+      "axis": [
+        0.6579400520300861,
+        0.7530703074312833,
+        8.59057304728598e-18
+      ],
+      "source_cycle_types": [
+        "2+1+1"
+      ],
+      "outside_D8_source_count": 0,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "factor_costs": {
+        "inverse_length": 0.6366197723675815,
+        "inverse_square": 0.15198177546350666,
+        "tunneling": 0.04694880372718824
+      }
+    },
+    {
+      "axis": [
+        0.5463626983721259,
+        0.1866042206405385,
+        -0.816496580927726
+      ],
+      "source_cycle_types": [
+        "2+1+1"
+      ],
+      "outside_D8_source_count": 1,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "factor_costs": {
+        "inverse_length": 0.7957747154594769,
+        "inverse_square": 0.22797266319526005,
+        "tunneling": 0.08829527925925251
+      }
+    },
+    {
+      "axis": [
+        0.772673538012621,
+        0.2638982196259109,
+        0.5773502691896257
+      ],
+      "source_cycle_types": [
+        "2+2",
+        "4"
+      ],
+      "outside_D8_source_count": 2,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "factor_costs": {
+        "inverse_length": 0.3183098861837908,
+        "inverse_square": 0.050660591821168915,
+        "tunneling": 0.0037348854634159856
+      }
+    },
+    {
+      "axis": [
+        0.1822050555413763,
+        0.9250352461523036,
+        0.33333333333333337
+      ],
+      "source_cycle_types": [
+        "3+1"
+      ],
+      "outside_D8_source_count": 2,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "factor_costs": {
+        "inverse_length": 0.6366197723675815,
+        "inverse_square": 0.1688686394038963,
+        "tunneling": 0.06010848132730699
+      }
+    },
+    {
+      "axis": [
+        0.6148793312158344,
+        -0.5372058029379755,
+        -0.5773502691896258
+      ],
+      "source_cycle_types": [
+        "2+2",
+        "4"
+      ],
+      "outside_D8_source_count": 0,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "factor_costs": {
+        "inverse_length": 0.6366197723675816,
+        "inverse_square": 0.2026423672846756,
+        "tunneling": 0.08642783652754453
+      }
+    },
+    {
+      "axis": [
+        0.15779420679678643,
+        0.8011040225638864,
+        -0.5773502691896258
+      ],
+      "source_cycle_types": [
+        "2+2",
+        "4"
+      ],
+      "outside_D8_source_count": 2,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "factor_costs": {
+        "inverse_length": 0.9549296585513722,
+        "inverse_square": 0.2533029591058445,
+        "tunneling": 0.09016272199096052
+      }
+    },
+    {
+      "axis": [
+        0.7100014947931983,
+        -0.6203118298729381,
+        0.3333333333333334
+      ],
+      "source_cycle_types": [
+        "3+1"
+      ],
+      "outside_D8_source_count": 2,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "factor_costs": {
+        "inverse_length": 0.6366197723675815,
+        "inverse_square": 0.1688686394038963,
+        "tunneling": 0.06010848132730698
+      }
+    },
+    {
+      "axis": [
+        0.43478534471416586,
+        -0.3798618661502065,
+        0.8164965809277261
+      ],
+      "source_cycle_types": [
+        "2+1+1"
+      ],
+      "outside_D8_source_count": 0,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "factor_costs": {
+        "inverse_length": 0.6366197723675817,
+        "inverse_square": 0.15198177546350672,
+        "tunneling": 0.04694880372718825
+      }
+    },
+    {
+      "axis": [
+        0.8922065503345744,
+        0.3047234162793656,
+        -0.3333333333333335
+      ],
+      "source_cycle_types": [
+        "3+1"
+      ],
+      "outside_D8_source_count": 2,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "factor_costs": {
+        "inverse_length": 0.6366197723675817,
+        "inverse_square": 0.16886863940389638,
+        "tunneling": 0.06010848132730702
+      }
+    },
+    {
+      "axis": [
+        0.11157735365796015,
+        0.566466086790745,
+        0.8164965809277261
+      ],
+      "source_cycle_types": [
+        "2+1+1"
+      ],
+      "outside_D8_source_count": 1,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "factor_costs": {
+        "inverse_length": 0.47746482927568623,
+        "inverse_square": 0.12665147955292225,
+        "tunneling": 0.04508136099548026
+      }
+    }
+  ]
+}

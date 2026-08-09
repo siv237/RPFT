@@ -1,0 +1,129 @@
+\chapter{Динамическое происхождение Majorana-дефекта}
+
+После conformal-rank no-go единственным явным маршрутом к rank \(23\)
+остаётся class-D defect на систолической геодезической. Его topology,
+mod-two kernel, core gluing и tubular embedding уже согласованы. Теперь
+проверяется более сильное условие: следует ли сам defect как saddle из
+текущего parent action?
+
+\section{Минимальное tubular action}
+
+На tubular neighborhood \(N(\gamma)\) минимальный локальный кандидат имеет
+вид
+\begin{align}
+ S_B={}&\int_{N(\gamma)}
+ \left[
+ Z_\Phi |(d-2ia)\Phi|^2
+ +m_\Phi^2|\Phi|^2+\lambda_\Phi|\Phi|^4
+ +\frac1{4e_{root}^2}|f_a|^2
+ \right],\\
+ S_F={}&\frac12\int_{N(\gamma)}
+ \Psi^T C\left(
+ D_a+\Re\Phi\,\Gamma_1+\Im\Phi\,\Gamma_2
+ \right)\Psi.
+\end{align}
+Здесь \(a\) является square-root connection, а \(\Phi\) --- charge-two
+Majorana pairing field.
+
+\section{Что топология действительно вынуждает}
+
+Для square-root branch meridian holonomy равна
+\begin{equation}
+ \oint_{\mu_\gamma}a=\pi\pmod{2\pi}.
+\end{equation}
+Если \(|\Phi|\neq0\) вне core, finite-energy condition даёт
+\begin{equation}
+ \oint_{\mu_\gamma}(d\arg\Phi-2a)=0,
+\end{equation}
+и потому
+\begin{equation}
+ \Delta\arg\Phi=2\pi,
+ \qquad
+ \operatorname{wind}(\Phi)=1.
+\end{equation}
+Следовательно, odd winding не является fitted integer. При наличии root
+flux и pairing condensate он вынужден topology.
+
+\section{Что топология не вынуждает}
+
+Для минимального potential
+\begin{equation}
+ V(\Phi)=m_\Phi^2|\Phi|^2+\lambda_\Phi|\Phi|^4
+\end{equation}
+при \(\lambda_\Phi>0\) существуют два разных режима:
+\begin{equation}
+ m_\Phi^2\geq0
+ \quad\Longrightarrow\quad
+ \Phi=0,
+\end{equation}
+и
+\begin{equation}
+ m_\Phi^2<0
+ \quad\Longrightarrow\quad
+ |\Phi|^2=-\frac{m_\Phi^2}{2\lambda_\Phi}.
+\end{equation}
+В первом режиме vortex отсутствует: winding фазы не определён, Majorana
+gap не открыт и rank-one index не реализуется физически. Поэтому topology
+не выбирает знак \(m_\Phi^2\), величину condensate или существование
+attractive gap equation.
+
+Есть и независимый connection gap. Smooth ambient \(\mathbb Z_2\)-линия
+имеет trivial meridian holonomy \(+1\). Её square root на complement имеет
+holonomy \(-1\) и не продолжается через core. Значит, локальное действие
+должно содержать либо dynamical \(Z_4/U(1)\) root connection, либо явный
+disorder/defect sector. Совпадение с уже найденной quarter-holonomy ветвью
+показывает совместимость, но не выводит её назначение Majorana-паре.
+
+\begin{theorem}[Conditional-defect theorem]
+Square-root \(\pi\)-flux и ненулевой charge-two pairing condensate строго
+вынуждают odd vortex и сохраняют единственный реальный Majorana kernel.
+Но ambient \(\mathbb Z_2\)-topology сама по себе не вынуждает ни singular
+root sector, ни pairing condensation. Поэтому defect является условным
+saddle расширенного tubular action, а не следствием замороженного II.A
+field content.
+\end{theorem}
+
+\section{Что при этом сохраняется}
+
+Отрицательный dynamical gate не разрушает локальный результат. Если root
+sector и condensed saddle получены из будущего parent action, то уже
+проверены:
+\begin{itemize}
+ \item unit winding и нечётный mod-two index;
+ \item один transverse real Majorana zero mode;
+ \item periodic longitudinal coefficient line;
+ \item отсутствие физического Nambu doubling;
+ \item complement rank \(23\) в \(\mathbb R^{24}\);
+ \item точный ambient-to-tube superconnection restriction.
+\end{itemize}
+Таким образом, отсутствует не математическая конструкция defect, а механизм
+его обязательного возникновения.
+
+\begin{protocol}[Definition of Done defect parent action]
+Defect-route получает статус вывода только если:
+\begin{enumerate}
+ \item root \(Z_4/U(1)\)-connection следует из существующей finite algebra
+ или обязательной суммы topological sectors;
+ \item pairing Hessian имеет выведенное отрицательное направление либо
+ получена parameter-free attractive gap equation;
+ \item nonzero vortex saddle энергетически предпочтительнее \(\Phi=0\);
+ \item quarter-holonomy sector map к Majorana pair фиксирован до neutrino
+ data;
+ \item full fluctuation/BV complex сохраняет один mod-two kernel;
+ \item та же action normalization воспроизводит второй независимый sector.
+\end{enumerate}
+\end{protocol}
+
+Текущий вердикт смешанный. Topological implication
+\[
+ \pi\text{-flux}+\Phi\neq0\Longrightarrow\operatorname{wind}\Phi=1
+\]
+закрыта. Динамическое утверждение
+\[
+ \text{S2T parent action}\Longrightarrow \pi\text{-flux и }\Phi\neq0
+\]
+не закрыто. Добавление этих структур вручную означало бы новую версию
+модели.
+
+Машинный протокол сохранён в
+\texttt{s2t\_majorana\_defect\_parent\_action\_gate\_results.json}.

@@ -1,0 +1,162 @@
+{
+  "status": "blind_scorecard_reveals_close_lepton_scalar_rows_and_failed_gauge_running_sector",
+  "date": "2026-08-04",
+  "control_policy": {
+    "prediction_freeze": "all S2T values were already present in Tome II or generated before loading controls",
+    "control_reference": "S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)",
+    "pull_warning": "pulls use experimental uncertainties only and diagnose zero-matching predictions; they are not a complete theory chi-square"
+  },
+  "rows": [
+    {
+      "observable": "m_tau_MeV",
+      "prediction": 1776.8594285630165,
+      "control": 1776.93,
+      "control_sigma": 0.09,
+      "relative_difference": -3.97153725715294e-05,
+      "experimental_pull_if_theory_uncertainty_is_zero": -0.7841270775947528,
+      "diagnostic_class": "close",
+      "model_status": "strong_conditional_tau_relation",
+      "evidence_weight": "medium",
+      "control_source": "PDG 2024 tau listing"
+    },
+    {
+      "observable": "G_F_GeV_minus_2",
+      "prediction": 1.1685251367965192e-05,
+      "control": 1.1663788e-05,
+      "control_sigma": 6e-12,
+      "relative_difference": 0.001840171303284305,
+      "experimental_pull_if_theory_uncertainty_is_zero": 3577.22799419864,
+      "diagnostic_class": "fails_zero_theory_uncertainty_test",
+      "model_status": "blind_matching_gate",
+      "evidence_weight": "high",
+      "control_source": "PDG 2024 electroweak review"
+    },
+    {
+      "observable": "M_H_GeV",
+      "prediction": 125.05648603895122,
+      "control": 125.2,
+      "control_sigma": 0.11,
+      "relative_difference": -0.0011462776441596033,
+      "experimental_pull_if_theory_uncertainty_is_zero": -1.3046723731707486,
+      "diagnostic_class": "close",
+      "model_status": "conditional_Higgs_bridge_inherits_tau_and_Svac",
+      "evidence_weight": "medium",
+      "control_source": "PDG 2024 Higgs listing"
+    },
+    {
+      "observable": "lambda_H",
+      "prediction": 0.1292217159850974,
+      "control": 0.1292805756612353,
+      "control_sigma": 0.00022717034061878408,
+      "relative_difference": -0.00045528630915231264,
+      "experimental_pull_if_theory_uncertainty_is_zero": -0.25909929957213423,
+      "diagnostic_class": "close",
+      "model_status": "derived_tree_level_proxy",
+      "evidence_weight": "medium",
+      "control_source": "tree-level proxy M_H^2/(2 v_F^2) from PDG M_H and G_F"
+    },
+    {
+      "observable": "sin2_thetaW_tree_at_MZ",
+      "prediction": 0.217181,
+      "control": 0.22320949284344327,
+      "control_sigma": 0.00025934452780766184,
+      "relative_difference": -0.027008227860952024,
+      "experimental_pull_if_theory_uncertainty_is_zero": -23.24511295612984,
+      "diagnostic_class": "fails_zero_theory_uncertainty_test",
+      "model_status": "open_one_loop_no_threshold",
+      "evidence_weight": "high",
+      "control_source": "derived on-shell proxy from the frozen PDG M_W and M_Z controls"
+    },
+    {
+      "observable": "alpha_s_MZ",
+      "prediction": 0.086898,
+      "control": 0.118,
+      "control_sigma": 0.0009,
+      "relative_difference": -0.2635762711864406,
+      "experimental_pull_if_theory_uncertainty_is_zero": -34.557777777777765,
+      "diagnostic_class": "fails_zero_theory_uncertainty_test",
+      "model_status": "open_one_loop_no_threshold",
+      "evidence_weight": "high",
+      "control_source": "PDG 2024 QCD review"
+    },
+    {
+      "observable": "M_W_GeV",
+      "prediction": 79.923,
+      "control": 80.3692,
+      "control_sigma": 0.0133,
+      "relative_difference": -0.005551878082648633,
+      "experimental_pull_if_theory_uncertainty_is_zero": -33.548872180451475,
+      "diagnostic_class": "fails_zero_theory_uncertainty_test",
+      "model_status": "open_one_loop_no_threshold",
+      "evidence_weight": "high",
+      "control_source": "PDG 2024 non-CDF-II average"
+    },
+    {
+      "observable": "M_Z_GeV",
+      "prediction": 90.332,
+      "control": 91.188,
+      "control_sigma": 0.002,
+      "relative_difference": -0.00938720007018477,
+      "experimental_pull_if_theory_uncertainty_is_zero": -428.0000000000044,
+      "diagnostic_class": "fails_zero_theory_uncertainty_test",
+      "model_status": "open_one_loop_no_threshold",
+      "evidence_weight": "high",
+      "control_source": "PDG 2024 world average"
+    },
+    {
+      "observable": "delta_m2_21_eV2",
+      "prediction": 7.35648e-05,
+      "control": 7.41e-05,
+      "control_sigma": 2.05e-06,
+      "relative_difference": -0.007222672064777253,
+      "experimental_pull_if_theory_uncertainty_is_zero": -0.26107317073170466,
+      "diagnostic_class": "close",
+      "model_status": "conditional_neutrino_model",
+      "evidence_weight": "low",
+      "control_source": "PDG 2024 neutrino global analysis, normal ordering"
+    },
+    {
+      "observable": "delta_m2_32_eV2",
+      "prediction": 0.00249051,
+      "control": 0.002437,
+      "control_sigma": 2.75e-05,
+      "relative_difference": 0.021957324579400944,
+      "experimental_pull_if_theory_uncertainty_is_zero": 1.9458181818181854,
+      "diagnostic_class": "close",
+      "model_status": "conditional_neutrino_model",
+      "evidence_weight": "low",
+      "control_source": "PDG 2024 neutrino global analysis, normal ordering"
+    }
+  ],
+  "sector_summary": {
+    "close_rows": [
+      "m_tau_MeV",
+      "M_H_GeV",
+      "lambda_H",
+      "delta_m2_21_eV2",
+      "delta_m2_32_eV2"
+    ],
+    "failed_rows": [
+      "G_F_GeV_minus_2",
+      "sin2_thetaW_tree_at_MZ",
+      "alpha_s_MZ",
+      "M_W_GeV",
+      "M_Z_GeV"
+    ],
+    "lepton_scalar_pattern": "m_tau, M_H, the tree-level lambda proxy and both conditional neutrino splittings lie within two experimental sigmas",
+    "gauge_pattern": "G_F, the weak angle proxy, M_W, M_Z and alpha_s fail together, identifying the low-energy gauge matching/RG sector rather than the scalar quartic as the dominant gap"
+  },
+  "missing_sector_diagnostics": {
+    "v_matching_factor": 1.0009196627618444,
+    "g2_factor_after_v_is_fixed": 1.004658926113058,
+    "gZ_factor_after_v_is_fixed": 1.0085486300110584,
+    "g3_factor_from_alpha_s": 1.1652956174458797,
+    "interpretation": [
+      "The weak-scale mismatch is not one-dimensional: fixing v still requires distinct corrections to g2 and sqrt(g2^2+gY^2).",
+      "The strong coupling requires about a 16.5 percent increase in g3, too large to describe as the same small scale renormalization that fixes G_F.",
+      "The promising scalar relation is lambda_H: its S2T value differs from the M_H/G_F tree proxy by only about 4.6e-4 relatively.",
+      "The next model ingredient should be a derived gauge/KK threshold spectrum with representation-dependent corrections, not another universal scalar factor."
+    ]
+  },
+  "scientific_verdict": "The scorecard is not empty and not uniformly successful. It contains a coherent close cluster in the charged-lepton/scalar sector, while every genuinely gauge-running observable misses in the same direction or by a large amount. This localizes the main defect to the mapping from high-scale spectral normalizations to low-energy gauge couplings. Conditional neutrino agreement is encouraging but has low evidential weight until its action is fixed independently."
+}

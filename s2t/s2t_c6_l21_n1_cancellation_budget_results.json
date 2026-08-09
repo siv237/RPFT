@@ -1,0 +1,103 @@
+{
+  "status": "n1_cancellation_budget_fixed_by_principal_symbol",
+  "inputs": [
+    "s2t_c6_l21_n1_killing_overlap_results.json",
+    "s2t_c6_l21_n1_principal_symbol_results.json"
+  ],
+  "lambda_1": 4.0,
+  "principal_eigenvalues": [
+    -0.6666666666666667,
+    -0.6666666666666667,
+    -0.0,
+    -0.0,
+    0.6666666666666667,
+    0.6666666666666667
+  ],
+  "required_cancellation_eigenvalues": [
+    -0.6666666666666667,
+    -0.6666666666666667,
+    0.0,
+    0.0,
+    0.6666666666666667,
+    0.6666666666666667
+  ],
+  "principal_frobenius_norm": 1.3333333333333335,
+  "required_cancellation_frobenius_norm": 1.3333333333333335,
+  "weighted_required_trace_square": 0.11111111111111113,
+  "identity_projection_coefficient": 0.0,
+  "identity_residual_fraction": 1.0,
+  "budget_tests": [
+    {
+      "test": "scalar_or_volume_counterterm_can_cancel_n1_block",
+      "verdict": "fails",
+      "reason": "The required cancellation matrix is traceless with eigenvalues -2/3,-2/3,0,0,2/3,2/3; its identity projection is zero."
+    },
+    {
+      "test": "trace_square_bookkeeping_is_sufficient",
+      "verdict": "fails",
+      "reason": "The cancellation is matrix-level, not just trace-level; two positive and two negative eigendirections must be supplied with the correct basis alignment."
+    },
+    {
+      "test": "full_operator_cancellation_still_possible",
+      "verdict": "open",
+      "reason": "Connection, Ricci, projection, and Hilbert-metric terms have not yet been evaluated; the audit fixes the exact target they must hit."
+    }
+  ],
+  "next_required_audit": {
+    "name": "full_conformal_hodge_variation_on_n1_killing_shell",
+    "minimum_output": "the 6x6 matrix of connection+Ricci+projection+Hilbert terms in the same normalized Killing basis",
+    "pass_condition_for_zero_route": "matrix equals required_cancellation_matrix, not merely equal trace or norm",
+    "pass_condition_for_absorption_route": "leftover finite part is derived and equals the existing pi^-4/P02 residue without a fitted coefficient"
+  },
+  "verdict": "The principal-symbol warning can be sharpened into a fixed cancellation budget. For the n=1 Killing block, all non-principal one-form variation terms together must supply a traceless 6x6 matrix with Frobenius norm sqrt(8/9) and weighted trace-square 1/9. A scalar counterterm, volume renormalization, or trace-only argument cannot cancel it.",
+  "required_cancellation_matrix": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.6666666666666667,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.6666666666666667,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -0.6666666666666667,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.6666666666666667,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ]
+}

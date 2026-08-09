@@ -1,0 +1,88 @@
+{
+  "status": "n3_leakage_raw_image_requires_tangent_projection_before_coexact_claim",
+  "source": "s2t_c6_l21_n1_to_n3_leakage_results.json",
+  "tested_deformation": "A=diag(1,-1,0,0)",
+  "gate_meaning": {
+    "tangency": "x·V is tested before intrinsic tangent projection. Nonzero tangency means the ambient polynomial representative contains a normal component.",
+    "coexactness": "ambient divergence of the raw representative is tested, but it is not sufficient when the tangency gate fails.",
+    "degree": "max polynomial degree is cubic, matching the next allowed odd shell after n=1."
+  },
+  "row_checks": [
+    {
+      "basis": "E01",
+      "norm_sq": 98.69604401089359,
+      "tangency_max_coeff": 16.0,
+      "divergence_max_coeff": 0.0,
+      "divergence_norm_sq": 0.0,
+      "component_laplacian_max_coeff": 64.0,
+      "max_polynomial_degree": 3
+    },
+    {
+      "basis": "E02",
+      "norm_sq": 78.95683520871486,
+      "tangency_max_coeff": 8.0,
+      "divergence_max_coeff": 0.0,
+      "divergence_norm_sq": 0.0,
+      "component_laplacian_max_coeff": 56.0,
+      "max_polynomial_degree": 3
+    },
+    {
+      "basis": "E03",
+      "norm_sq": 78.95683520871486,
+      "tangency_max_coeff": 8.0,
+      "divergence_max_coeff": 0.0,
+      "divergence_norm_sq": 0.0,
+      "component_laplacian_max_coeff": 56.0,
+      "max_polynomial_degree": 3
+    },
+    {
+      "basis": "E12",
+      "norm_sq": 78.95683520871486,
+      "tangency_max_coeff": 8.0,
+      "divergence_max_coeff": 0.0,
+      "divergence_norm_sq": 0.0,
+      "component_laplacian_max_coeff": 56.0,
+      "max_polynomial_degree": 3
+    },
+    {
+      "basis": "E13",
+      "norm_sq": 78.95683520871486,
+      "tangency_max_coeff": 8.0,
+      "divergence_max_coeff": 0.0,
+      "divergence_norm_sq": 0.0,
+      "component_laplacian_max_coeff": 56.0,
+      "max_polynomial_degree": 3
+    },
+    {
+      "basis": "E23",
+      "norm_sq": 59.21762640653615,
+      "tangency_max_coeff": 0.0,
+      "divergence_max_coeff": 0.0,
+      "divergence_norm_sq": 0.0,
+      "component_laplacian_max_coeff": 0.0,
+      "max_polynomial_degree": 3
+    }
+  ],
+  "summary": {
+    "max_tangency_coeff": 16.0,
+    "max_divergence_coeff": 0.0,
+    "max_divergence_norm_sq": 0.0,
+    "max_component_laplacian_coeff": 64.0,
+    "min_norm_sq": 59.21762640653615,
+    "max_norm_sq": 98.69604401089359,
+    "max_polynomial_degree": 3
+  },
+  "interpretation": [
+    {
+      "claim": "the cubic leakage is already proven coexact",
+      "verdict": "fails",
+      "reason": "The raw ambient representative has a nonzero normal component, so an intrinsic tangent projection is mandatory before a coexact claim."
+    },
+    {
+      "claim": "the n=3 determinant contribution is now fully known",
+      "verdict": "not_yet",
+      "reason": "The raw leakage norm is nonzero, but the intrinsic tangent projection, coexact projection, and second-order denominator/sign trace still need to be assembled explicitly."
+    }
+  ],
+  "verdict": "The cubic leakage from the n=1 Killing shell is nonzero, but the raw ambient representative fails the tangency gate because x·V is not zero. Therefore it cannot yet be called a coexact n=3 contribution. The next step is to form the intrinsic tangent projection, then test co-closedness and spectral n=3 projection."
+}

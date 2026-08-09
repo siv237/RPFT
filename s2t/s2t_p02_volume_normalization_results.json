@@ -1,0 +1,59 @@
+{
+  "status": "P02_volume_normalization_natural_prefactor_derived_conditionally",
+  "geometry": {
+    "ambient_dimension": 4,
+    "Vol_S3_unit": 19.739208802178716,
+    "Vol_RP3_unit": 9.869604401089358,
+    "Vol_RP3_over_2_bosonic_half": 4.934802200544679
+  },
+  "moments": {
+    "E_xa_xb": "delta_ab/4",
+    "E_xa_xb_xc_xd": "(delta_ab delta_cd + delta_ac delta_bd + delta_ad delta_bc)/24",
+    "inner_product_RP3_qA_qB": "Vol(RP3)*((Tr A)(Tr B)+2Tr(AB))/(4*6)",
+    "coef_trace_trace": 0.4112335167120566,
+    "coef_frobenius_AB": 0.8224670334241132,
+    "norm_q_identity": 9.869604401089358,
+    "traceless_norm_per_Tr_A0_squared": 0.8224670334241132
+  },
+  "rank_decomposition": {
+    "Sym2_R4_dim": 10,
+    "trace_dim_ell0": 1,
+    "traceless_dim_ell2": 9,
+    "total_rank": 10
+  },
+  "absorption_prefactor": {
+    "natural_Vol_RP3_over_2": 4.934802200544679,
+    "required_prefactor_for_exact_pi4_without_CasMix": 4.919782694541265,
+    "required_over_natural": 0.9969564117480219,
+    "base_volume_half_absorption": 5.483439627824377e-07,
+    "base_relative_overshoot_vs_pi4": 0.0030528799615638967
+  },
+  "checks": [
+    {
+      "check": "even_descent",
+      "status": "pass",
+      "reason": "q_A(-x)=q_A(x), so quadratic strains descend from S3 to RP3 and integrals are exactly half of S3 integrals."
+    },
+    {
+      "check": "trace_traceless_orthogonality",
+      "status": "pass",
+      "reason": "For A0 traceless, integral q_I q_A0 = Vol(RP3)*Tr(A0)/d = 0."
+    },
+    {
+      "check": "rank_count",
+      "status": "pass",
+      "reason": "Sym^2(R4) decomposes orthogonally as trace rank 1 plus traceless rank 9."
+    },
+    {
+      "check": "volume_half_factor",
+      "status": "conditional_pass",
+      "reason": "Vol(RP3)=pi^2 follows from the quotient and the bosonic logdet contributes a formal 1/2. This derives the natural prefactor pi^2/2 if the coexact tower density is normalized per unit RP3 volume."
+    },
+    {
+      "check": "absolute_absorption_identity",
+      "status": "not_closed",
+      "reason": "The moment normalization derives the natural prefactor, but it does not derive the Bessel tower normalization or the N_need-10 finite scheme gap."
+    }
+  ],
+  "verdict": "The pi^2/2 prefactor is not a fitted number at the P02 normalization level: pi^2 is Vol(RP3) and 1/2 is the bosonic logdet factor. Moment formulas on S3/RP3 give an orthogonal trace/traceless decomposition with rank 1+9. This conditionally closes the volume-factor subtest of C6, provided the Bessel tower T_coex is normalized as a per-volume determinant density. It does not close the full C6 proof because the combined Maxwell--ghost second-variation sign and N_need-10 scheme gap remain open."
+}

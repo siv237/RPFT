@@ -1,0 +1,78 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,array}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{xurl}
+\geometry{margin=2.3cm}
+
+\title{Preservation-аудит проекта\\
+после Wilson modular-state gate}
+\author{}
+\date{6 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Проверенная задача}
+
+Аудит отвечает не на вопрос о физической истинности формул, а на более
+технический вопрос: не были ли прежние результаты потеряны, перезаписаны или
+сломаны при добавлении новых отрицательных gate-тестов.
+
+\section{Результат}
+
+Основные документы сохранены как крупные самостоятельные корпуса:
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Файл & Размер & Собранный PDF \\
+\midrule
+\texttt{main.tex} & $510839$ байт & $112$ страниц \\
+\texttt{tome2\_s2t\_spectral\_closure.tex} & $539046$ байт & $165$ страниц \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Во втором томе по-прежнему присутствуют блоки $S_{vac}$, $m_\tau$,
+$23+\pi^{-1}$, C6, SU(5), parent action и глобальный falsification-аудит.
+В тот же основной файл добавлена часть II.B с family-selector,
+inverse-susceptibility и новым Definition of Done.
+В первом томе сохранены послесловие после проверки вторым томом, разделение
+математического ядра, условных связей и отрицательно закрытых ветвей, а также
+перспектива следующего тома.
+
+Структурные проверки дали:
+\begin{itemize}
+ \item по одному \texttt{\string\end\{document\}} в каждом главном файле;
+ \item баланс ключевых LaTeX-окружений;
+ \item отсутствие удалённых Git-путей;
+ \item наличие новых family-selector, CKM, \(C_4\), chiral, zero-prompt и observed-world scripts/results/gates;
+ \item успешную синтаксическую компиляцию $152$ audit-скриптов;
+ \item успешный разбор $167$ JSON-файлов результатов;
+ \item полную сборку обоих главных томов.
+\end{itemize}
+
+\section{Статус формул}
+
+Новые gate-тесты не удаляли и не переписывали прежние формулы. Они добавлялись
+отдельными документами и меняли только эпистемический статус некоторых
+механизмов:
+\begin{equation}
+ \text{сохранённая формула}
+ \quad\neq\quad
+ \text{доказанный операторный вывод}.
+\end{equation}
+Численные соотношения, геометрические конструкции, нейтринный submodel,
+спектральные результаты и все ранее сформулированные no-go остаются в корпусе.
+Закрыты лишь конкретные попытки вывести их из недостаточно богатого parent
+action или intrinsic family-selector текущего носителя.
+
+Машинный отчёт сохранён в
+\path{s2t_project_preservation_audit.py} и
+\path{s2t_project_preservation_results.json}.
+
+\end{document}

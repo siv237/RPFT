@@ -1,0 +1,123 @@
+{
+  "status": "nonuniform_pairing_saddle_exists_only_above_a_dynamical_threshold_and_has_an_unselected_conjugate_winding_pair",
+  "date": "2026-08-06",
+  "functional": {
+    "expression": "F=integral_0^L [|D_y Phi|^2 + (lambda/2)(|Phi|^2-v^2)^2] dy",
+    "periodic_scalar_winding": "arg Phi(y+L)-arg Phi(y)=2*pi*n",
+    "root_connection_integral": "integral_y a=pi/2",
+    "pair_charge": -2,
+    "covariant_momenta": "k_n=(2*pi*n+pi)/L"
+  },
+  "geometry": {
+    "circumference_L": 3.141592653589793,
+    "unit_RP3_systolic_value": "L=pi",
+    "minimum_absolute_covariant_momentum": 1.0,
+    "degenerate_minimum_windings": [
+      -1,
+      0
+    ]
+  },
+  "analytic_saddle": {
+    "condensation_condition": "lambda*v^2 > k_min^2",
+    "critical_v_squared": 1.0,
+    "condensed_amplitude_squared": "v^2-k_min^2/lambda",
+    "condensed_energy_density": "k_min^2*v^2-k_min^4/(2*lambda)",
+    "energy_gain_over_Phi_zero": "(lambda*v^2-k_min^2)^2/(2*lambda)",
+    "radial_hessian": "4*(lambda*v^2-k_min^2)"
+  },
+  "explicit_stable_control_x_equals_2": {
+    "winding_0": {
+      "winding": 0,
+      "covariant_momentum": 1.0,
+      "covariant_momentum_squared": 1.0,
+      "condensed": true,
+      "amplitude_squared": 1.0,
+      "energy_density": 1.5,
+      "normal_energy_density": 2.0,
+      "energy_gain": 0.5,
+      "radial_hessian": 4.0
+    },
+    "winding_minus_1": {
+      "winding": -1,
+      "covariant_momentum": -1.0,
+      "covariant_momentum_squared": 1.0,
+      "condensed": true,
+      "amplitude_squared": 1.0,
+      "energy_density": 1.5,
+      "normal_energy_density": 2.0,
+      "energy_gain": 0.5,
+      "radial_hessian": 4.0
+    },
+    "equal_energy": true,
+    "opposite_covariant_momenta": true
+  },
+  "threshold_scan": [
+    {
+      "x=lambda*v^2/k_min^2": 0.5,
+      "phase": "normal",
+      "minimum_windings": [],
+      "minimum_condensed": false,
+      "minimum_amplitude_squared": 0.0,
+      "minimum_energy_density": 0.125,
+      "minimum_radial_hessian": 1.0
+    },
+    {
+      "x=lambda*v^2/k_min^2": 1.0,
+      "phase": "normal",
+      "minimum_windings": [],
+      "minimum_condensed": false,
+      "minimum_amplitude_squared": 0.0,
+      "minimum_energy_density": 0.5,
+      "minimum_radial_hessian": 0.0
+    },
+    {
+      "x=lambda*v^2/k_min^2": 2.0,
+      "phase": "condensed",
+      "minimum_windings": [
+        -1,
+        0
+      ],
+      "minimum_condensed": true,
+      "minimum_amplitude_squared": 1.0,
+      "minimum_energy_density": 1.5,
+      "minimum_radial_hessian": 4.0
+    },
+    {
+      "x=lambda*v^2/k_min^2": 10.0,
+      "phase": "condensed",
+      "minimum_windings": [
+        -1,
+        0
+      ],
+      "minimum_condensed": true,
+      "minimum_amplitude_squared": 9.0,
+      "minimum_energy_density": 9.5,
+      "minimum_radial_hessian": 36.0
+    }
+  ],
+  "topological_and_dynamical_split": {
+    "topology_fixes": [
+      "half-shifted momentum lattice k_n=(2n+1)pi/L",
+      "two conjugate lowest branches n=0 and n=-1",
+      "unit transverse meridian winding if a condensate exists"
+    ],
+    "topology_does_not_fix": [
+      "whether lambda*v^2 exceeds the geometric threshold",
+      "the amplitude of the condensate",
+      "which conjugate longitudinal branch is selected",
+      "the B-L breaking scale and Yukawa normalization"
+    ],
+    "transverse_rank_one_index_retained_conditionally": true
+  },
+  "revision_of_trilemma_branch": {
+    "homogeneous_branch_closed": true,
+    "nonuniform_branch_exists": true,
+    "existence_is_unconditional": false,
+    "reason": "The nonuniform condensate appears only when the dynamical combination lambda*v^2 is larger than the geometry-fixed half-shift k_min^2."
+  },
+  "scientific_verdict": {
+    "positive": "The root holonomy produces a calculable half-shifted GL spectrum and a stable nonuniform condensate above threshold. The two lowest branches are exactly the conjugate windings n=0 and n=-1.",
+    "negative": "Topology alone does not force condensation or choose an orientation. The branch still depends on the undetermined pairing stiffness, vacuum scale and an additional CP/orientation selector.",
+    "next_gate": "Derive lambda*v^2 and the orientation-splitting term from the parent spectral action, then recompute the BdG kernel on the selected saddle."
+  }
+}

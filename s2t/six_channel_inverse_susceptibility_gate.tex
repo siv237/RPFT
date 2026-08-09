@@ -1,0 +1,167 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{geometry}
+\usepackage{microtype}
+\geometry{margin=2.3cm}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{nogocriterion}{Критерий провала}
+\DeclareMathOperator{\Tr}{Tr}
+
+\title{Шесть-канальная inverse susceptibility:\\
+явный Gaussian seed и полный tensor-ghost gate}
+\author{}
+\date{5 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Явная Gaussian-модель}
+
+Пусть шесть равновесных каналов имеют квадратичное действие
+\begin{equation}
+ \Gamma(x)=\frac12\zeta\left(4,\frac12\right)
+ \sum_{a=1}^{6}x_a^2,
+ \qquad
+ \bar x=\frac16\sum_{a=1}^{6}x_a.
+\end{equation}
+Тогда
+\begin{equation}
+ \operatorname{Var}(\bar x)
+ =\frac1{6\zeta(4,1/2)}
+ =\frac1{\pi^4}.
+\end{equation}
+Это уже не арифметическая подстановка: обычная component-sum Gaussian measure
+действительно производит требуемую covariance среднего.
+
+Однако normalized trace меняет результат. Если действие использует
+\(\tau_6(X)=\Tr(X)/6\), rank suppression сокращается и
+\begin{equation}
+ \operatorname{Var}_{\tau_6}(\bar x)=\frac1{\zeta(4,1/2)}
+ =\frac6{\pi^4}.
+\end{equation}
+Следовательно, точная конструкция чувствительна к вопросу, использует ли
+parent action ordinary component trace или normalized tracial state.
+
+\section{Проверка естественных шестёрок}
+
+Проверены все ближайшие кандидаты проекта:
+\begin{center}
+\small
+\begin{tabular}{p{0.28\textwidth}p{0.18\textwidth}p{0.42\textwidth}}
+\toprule
+Кандидат & Raw count & Препятствие \\
+\midrule
+\(\Lambda^2\) в 4D & $6$ & Maxwell curvature constrained by $F=dA$, periodic gauge modes, не шесть scalar towers \\
+\(\operatorname{Sym}^2T^*\mathbb{RP}^3\) & $6$ & conformal/radius variation является одной trace-direction \\
+Один mixed $SU(5)$-блок & $6$ complex & gauge Hessian считает индексы $(5/2,3/2,1)$; reality добавляет conjugate block \\
+Одна chiral $Q=(3,2)$ family & $6$ & half-shift возможен, но Grassmann statistics и EM weight $5/3$, а не $6$ \\
+Абстрактные twisted scalars & $6$ & точный algebraic model, но такого блока нет в II.A \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Ни один существующий сектор одновременно не проходит half-shift, equal-weight,
+statistics, gauge/reality и trace-normalization gates.
+
+\section{Self-dual full-tower identity}
+
+Число шесть имеет более геометрическую декомпозицию. На ориентированном
+евклидовом четырёхмерном носителе
+\begin{equation}
+ \Lambda^2=\Lambda^2_+\oplus\Lambda^2_- ,
+ \qquad \operatorname{rank}\Lambda^2_+=3.
+\end{equation}
+Для полного antiperiodic tower
+\begin{equation}
+ \sum_{n\in\mathbb Z}\frac1{(n+1/2)^4}
+ =2\zeta(4,1/2)=\frac{\pi^4}{3}.
+\end{equation}
+Поэтому
+\begin{equation}
+ 3\sum_{n\in\mathbb Z}(n+1/2)^{-4}=\pi^4.
+\end{equation}
+То есть исходная ``шестёрка'' может читаться как три self-dual компоненты,
+умноженные на две стороны полного Fourier spectrum.
+
+Для локальной covariance это требует fourth-order kinetic operator. Но та же
+сумма возникает непосредственно как Hessian mass-деформации determinant:
+\begin{equation}
+ \Gamma(q)=c\Tr\log(K+qI),
+ \qquad K_n=(n+1/2)^2,
+\end{equation}
+\begin{equation}
+ \Gamma''(0)=-c\Tr K^{-2}.
+\end{equation}
+
+\section{Знак determinant}
+
+Для natural ranks точная величина $|\Gamma''|=\pi^4$ получается четырьмя
+способами, но знак разделяет их:
+\begin{itemize}
+ \item real bosonic full two-form: $\Gamma''=-\pi^4$;
+ \item complex bosonic self-dual two-form: $\Gamma''=-\pi^4$;
+ \item real Grassmann full two-form: $\Gamma''=+\pi^4$;
+ \item complex Grassmann self-dual two-form: $\Gamma''=+\pi^4$.
+\end{itemize}
+Следовательно, положительная стабильная stiffness возникает только в
+ghostlike determinant-блоке.
+
+Но стандартная reducible two-form gauge symmetry не разрешает оставить один
+благоприятный ghost. Её oscillator partition function содержит полный tower
+\begin{equation}
+ Z_2\propto
+ \det{}'(\Delta_2^T)^{-1/2}
+ \det{}'(\Delta_1^T)^{+1/2}
+ \det{}'(\Delta_0)^{-1/2}.
+\end{equation}
+Даже если искусственно дать всем блокам одинаковый half-shifted spectrum,
+raw-rank контроль даёт Hessian $-\pi^4/2$, а transverse-rank контроль
+$-\pi^4/6$. Полный BRST-комплекс не сохраняет изолированное $+\pi^4$.
+
+\begin{nogocriterion}[Провал автоматического tensor-ghost rescue]
+Точный положительный Hessian существует как отдельный Grassmann determinant,
+но такой determinant не является самостоятельным обязательным сектором
+текущей Maxwell/BF gauge symmetry. Его добавление без полного BV-комплекса
+повторяет ранее запрещённую изоляцию выгодного ghost-вклада.
+\end{nogocriterion}
+
+\section{Последний response gate}
+
+Даже при $H=\pi^4$ интегрирование коллективной координаты
+\begin{equation}
+ \Gamma(q)=\frac12Hq^2+\frac{Jq}{S_{geo}}
+\end{equation}
+даёт
+\begin{equation}
+ \Delta S=-\frac{J^2}{2HS_{geo}^2}.
+\end{equation}
+Для точной S2T-формулы требуется $J=\sqrt2$, либо независимо выведенный
+двухисточниковый или variance-readout механизм. Таким образом, $S_{geo}^{-2}$,
+знак и единичный коэффициент не следуют из spectral identity сами по себе.
+
+\begin{proposition}[Статус найденной лестницы]
+Существует явный determinant seed с Hessian $+\pi^4$ и, следовательно,
+inverse stiffness $\pi^{-4}$. Но он требует нового twisted tensor-ghost
+сектора, не входит в BRST-complete II.A и не фиксирует source normalization.
+Это конкретный II.B model seed, а не восстановление закрытого C6.
+\end{proposition}
+
+Условие переоткрытия теперь максимально конкретно: вывести twisted
+half-integer tensor ghost из полной reducible gauge symmetry, показать, что
+после всех determinant cancellations остаётся $H=\pi^4$, и получить source
+coefficient без обращения к $\alpha$.
+
+Машинные протоколы сохранены в
+\texttt{s2t\_six\_channel\_inverse\_susceptibility\_audit.py},
+\texttt{s2t\_six\_channel\_inverse\_susceptibility\_results.json},
+\texttt{s2t\_selfdual\_bilaplacian\_susceptibility\_audit.py},
+\texttt{s2t\_selfdual\_bilaplacian\_susceptibility\_results.json},
+\texttt{s2t\_halfshift\_tensor\_ghost\_hessian\_audit.py} и
+\texttt{s2t\_halfshift\_tensor\_ghost\_hessian\_results.json}.
+
+\end{document}

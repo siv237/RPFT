@@ -1,0 +1,224 @@
+{
+  "status": "residual_has_plausible_alpha_over_pi_like_scale_but_no_unique_derivation",
+  "numbers": {
+    "S_geo": 137.0363037758784,
+    "pi4_term": 5.466750295392699e-07,
+    "natural_pi2_half_tower": 5.483439627824377e-07,
+    "absolute_residual_natural_minus_pi4": 1.6689332431677886e-09,
+    "multiplier_needed": 0.9969564117480219,
+    "epsilon_needed_1_minus_multiplier": 0.0030435882519781465
+  },
+  "best_named_candidates": [
+    {
+      "candidate": "1/(32*pi^2)",
+      "value": 0.0031662869888230555,
+      "eps_minus_candidate": -0.00012269873684490895,
+      "relative_error_to_eps": 0.04031384230937357,
+      "M_candidate": 0.996833713011177,
+      "pi4_term_with_candidate": 5.4660774842768e-07,
+      "absolute_error_vs_pi4": -6.728111158993045e-11
+    },
+    {
+      "candidate": "1/(2*S_geo)",
+      "value": 0.0036486681720323206,
+      "eps_minus_candidate": -0.000605079920054174,
+      "relative_error_to_eps": 0.19880478893980125,
+      "M_candidate": 0.9963513318279676,
+      "pi4_term_with_candidate": 5.463432376181074e-07,
+      "absolute_error_vs_pi4": -3.3179192116255977e-10
+    },
+    {
+      "candidate": "1/(3*S_geo)",
+      "value": 0.002432445448021547,
+      "eps_minus_candidate": 0.0006111428039565995,
+      "relative_error_to_eps": -0.20079680737346584,
+      "M_candidate": 0.9975675545519784,
+      "pi4_term_with_candidate": 5.470101460062175e-07,
+      "absolute_error_vs_pi4": 3.3511646694759163e-10
+    },
+    {
+      "candidate": "1/(pi*S_geo)",
+      "value": 0.0023228143011240552,
+      "eps_minus_candidate": 0.0007207739508540913,
+      "relative_error_to_eps": -0.23681716815197726,
+      "M_candidate": 0.997677185698876,
+      "pi4_term_with_candidate": 5.470702615837516e-07,
+      "absolute_error_vs_pi4": 3.952320444817159e-10
+    },
+    {
+      "candidate": "alpha/pi_using_S_geo",
+      "value": 0.0023228143011240552,
+      "eps_minus_candidate": 0.0007207739508540913,
+      "relative_error_to_eps": -0.23681716815197726,
+      "M_candidate": 0.997677185698876,
+      "pi4_term_with_candidate": 5.470702615837516e-07,
+      "absolute_error_vs_pi4": 3.952320444817159e-10
+    },
+    {
+      "candidate": "1/(24*pi^2)",
+      "value": 0.004221715985097407,
+      "eps_minus_candidate": -0.0011781277331192608,
+      "relative_error_to_eps": 0.38708512307916476,
+      "M_candidate": 0.9957782840149025,
+      "pi4_term_with_candidate": 5.460290103094274e-07,
+      "absolute_error_vs_pi4": -6.460192298425035e-10
+    },
+    {
+      "candidate": "1/(4*S_geo)",
+      "value": 0.0018243340860161603,
+      "eps_minus_candidate": 0.0012192541659619863,
+      "relative_error_to_eps": -0.4005976055300994,
+      "M_candidate": 0.9981756659139839,
+      "pi4_term_with_candidate": 5.473436002002726e-07,
+      "absolute_error_vs_pi4": 6.685706610026673e-10
+    },
+    {
+      "candidate": "1/(2*pi*S_geo)",
+      "value": 0.0011614071505620276,
+      "eps_minus_candidate": 0.001882181101416119,
+      "relative_error_to_eps": -0.6184085840759886,
+      "M_candidate": 0.998838592849438,
+      "pi4_term_with_candidate": 5.477071121830947e-07,
+      "absolute_error_vs_pi4": 1.0320826438247522e-09
+    },
+    {
+      "candidate": "1/(3*pi*S_geo)",
+      "value": 0.0007742714337080184,
+      "eps_minus_candidate": 0.0022693168182701283,
+      "relative_error_to_eps": -0.7456057227173258,
+      "M_candidate": 0.999225728566292,
+      "pi4_term_with_candidate": 5.479193957162091e-07,
+      "absolute_error_vs_pi4": 1.244366176939133e-09
+    },
+    {
+      "candidate": "1/(pi^2*S_geo)",
+      "value": 0.0007393747558168792,
+      "eps_minus_candidate": 0.0023042134961612673,
+      "relative_error_to_eps": -0.7570713596570329,
+      "M_candidate": 0.9992606252441831,
+      "pi4_term_with_candidate": 5.479385310988518e-07,
+      "absolute_error_vs_pi4": 1.2635015595818812e-09
+    },
+    {
+      "candidate": "1/(4*pi*S_geo)",
+      "value": 0.0005807035752810138,
+      "eps_minus_candidate": 0.0024628846766971326,
+      "relative_error_to_eps": -0.8092042920379943,
+      "M_candidate": 0.9994192964247189,
+      "pi4_term_with_candidate": 5.480255374827662e-07,
+      "absolute_error_vs_pi4": 1.3505079434962704e-09
+    },
+    {
+      "candidate": "1/(2*pi^2*S_geo)",
+      "value": 0.0003696873779084396,
+      "eps_minus_candidate": 0.002673900874069707,
+      "relative_error_to_eps": -0.8785356798285165,
+      "M_candidate": 0.9996303126220916,
+      "pi4_term_with_candidate": 5.481412469406447e-07,
+      "absolute_error_vs_pi4": 1.466217401374782e-09
+    }
+  ],
+  "best_low_complexity_search": [
+    {
+      "expr": "5/12 in a/(b*S)",
+      "value": 0.003040556810026934,
+      "relative_error_to_eps": -0.0009960092168322969
+    },
+    {
+      "expr": "10/24 in a/(b*S)",
+      "value": 0.003040556810026934,
+      "relative_error_to_eps": -0.0009960092168322969
+    },
+    {
+      "expr": "2/67 in a/(b*pi^2)",
+      "value": 0.0030245129445473965,
+      "relative_error_to_eps": -0.006267374510449056
+    },
+    {
+      "expr": "12/29 in a/(b*S)",
+      "value": 0.0030195874527164032,
+      "relative_error_to_eps": -0.007885691911888626
+    },
+    {
+      "expr": "1/33 in a/(b*pi^2)",
+      "value": 0.00307033889825266,
+      "relative_error_to_eps": 0.008789180421210747
+    },
+    {
+      "expr": "2/66 in a/(b*pi^2)",
+      "value": 0.00307033889825266,
+      "relative_error_to_eps": 0.008789180421210747
+    },
+    {
+      "expr": "8/19 in a/(b*S)",
+      "value": 0.003072562671185112,
+      "relative_error_to_eps": 0.009519822265095724
+    },
+    {
+      "expr": "7/17 in a/(b*S)",
+      "value": 0.0030047855534383813,
+      "relative_error_to_eps": -0.012748997343693193
+    },
+    {
+      "expr": "11/26 in a/(b*S)",
+      "value": 0.0030873346071042715,
+      "relative_error_to_eps": 0.014373282949062689
+    },
+    {
+      "expr": "4/3 in a/(b*pi*S)",
+      "value": 0.0030970857348320735,
+      "relative_error_to_eps": 0.01757710913069693
+    },
+    {
+      "expr": "8/6 in a/(b*pi*S)",
+      "value": 0.0030970857348320735,
+      "relative_error_to_eps": 0.01757710913069693
+    },
+    {
+      "expr": "12/9 in a/(b*pi*S)",
+      "value": 0.0030970857348320735,
+      "relative_error_to_eps": 0.01757710913069693
+    },
+    {
+      "expr": "9/7 in a/(b*pi*S)",
+      "value": 0.0029864755300166423,
+      "relative_error_to_eps": -0.01876493048111369
+    },
+    {
+      "expr": "9/22 in a/(b*S)",
+      "value": 0.002985273958935535,
+      "relative_error_to_eps": -0.019159718140162683
+    },
+    {
+      "expr": "1/34 in a/(b*pi^2)",
+      "value": 0.0029800348130099344,
+      "relative_error_to_eps": -0.02088108959117786
+    },
+    {
+      "expr": "2/68 in a/(b*pi^2)",
+      "value": 0.0029800348130099344,
+      "relative_error_to_eps": -0.02088108959117786
+    },
+    {
+      "expr": "11/27 in a/(b*S)",
+      "value": 0.002972988880915224,
+      "relative_error_to_eps": -0.023196097900902674
+    },
+    {
+      "expr": "2/65 in a/(b*pi^2)",
+      "value": 0.003117574881302701,
+      "relative_error_to_eps": 0.024309013966152537
+    },
+    {
+      "expr": "9/21 in a/(b*S)",
+      "value": 0.0031274298617419887,
+      "relative_error_to_eps": 0.027546961948400943
+    },
+    {
+      "expr": "3/7 in a/(b*S)",
+      "value": 0.003127429861741989,
+      "relative_error_to_eps": 0.027546961948401085
+    }
+  ],
+  "verdict": "The correction needed to turn (pi^2/2)T/S into the exact pi^-4 term is epsilon=0.0030435883. This is close to alpha/pi = 1/(pi S_geo) = 0.0023228, but not close enough for an identity. Low-complexity searches find rationalized variants, but they are numerology unless a determinant or torsion-sector derivation supplies the coefficient."
+}

@@ -1,0 +1,104 @@
+{
+  "status": "BF_NK_proposal_does_not_rescue_C6_or_derive_23",
+  "date": "2026-08-04",
+  "proposal": "A localized BF two-form sector and its purported one-form Nielsen-Kallosh ghost cancel the Maxwell coexact tower and create the neutrino rank-one defect.",
+  "previous_audit_overlap": {
+    "paired_sector_status": "all_known_paired_candidates_fail_or_are_definitional",
+    "paired_sector_verdict": "No existing paired/cancellation sector in the current C6 bookkeeping supplies the required independent +1/2 log det' Delta0_nonzero with the same even RP3 x S1 scalar spectrum and P02 trace-square coupling. Standard FP and exact Hodge pieces are already exhausted, zero/gauge/Jacobian factors cannot cancel the nonzero tower, torsion/duality do not provide an additive scalar half-determinant, and Dirac/spin-cover matter has the wrong spectrum. Thus C6 is not rescued by a known paired sector; the viable non-phenomenological route remains a physical transverse quotient, or else pi^-4 must stay downgraded until a genuinely new mandatory sector is derived.",
+    "parent_action_status": "minimal_unified_parent_action_gate_negative_only_neutrino_metric_survives",
+    "interpretation": "The proposal is a concrete new paired-sector model, but the relevant sign, spectrum, rank-one and parent-action gates were already isolated and tested in the previous audit program."
+  },
+  "tests": [
+    {
+      "test": "hodge_spectral_map",
+      "status": "partial_pass_nonzero_modes_only",
+      "result": "For a co-closed one-form eigenmode A with lambda>0, lambda^(-1/2)*star*dA is a co-closed two-form eigenmode with the same eigenvalue. This supports isospectrality, not cancellation."
+    },
+    {
+      "test": "isolated_one_form_ghost",
+      "status": "fail_incomplete_bv_complex",
+      "result": "A bosonic two-form gauge field has a reducible gauge symmetry. Its one-form Grassmann ghost is accompanied by the two-form determinant and scalar ghost-for-ghost factors. Keeping only the favorable one-form determinant is not a BRST-complete partition function.",
+      "full_p2_oscillator_factor": "Z_2 proportional to det'(Delta_2^T)^(-1/2) det'(Delta_1^T)^(+1/2) det'(Delta_0)^(-1/2)"
+    },
+    {
+      "test": "nielsen_kallosh_identification",
+      "status": "fail_not_automatic",
+      "result": "The ordinary one-form ghost of a two-form gauge symmetry is not by itself an extra Nielsen-Kallosh sector. A Nielsen-Kallosh third ghost depends on the chosen differential gauge-fixing metric and cannot be inserted as a universal duplicate of the Maxwell coexact tower."
+    },
+    {
+      "test": "pure_BF_branch",
+      "status": "fail_removes_Maxwell_sector",
+      "result": "With no kinetic term for B, variation of integral B wedge F_A imposes F_A=0. The Maxwell transverse tower is constrained away rather than retained with a compensating ghost determinant."
+    },
+    {
+      "test": "dynamical_BF_branch",
+      "status": "fail_changes_operator_spectrum",
+      "result": "Adding a kinetic term for B makes a new propagating vector-tensor model. BF mixing changes the eigenvalues and can generate a topological mass, so its determinants are not minus the original massless Maxwell tower."
+    },
+    {
+      "test": "localized_BF_branch",
+      "status": "fail_global_isospectrality_lost",
+      "result": "A coupling supported near gamma times S1 introduces defect boundary conditions and a singular or position-dependent kinetic operator. Its ghost modes are not the global RP3 coexact harmonics used in T_coex."
+    },
+    {
+      "test": "flux_statement",
+      "status": "fail_form_degree_and_de_rham_torsion",
+      "result": "A two-form cannot be integrated over the one-cycle gamma. The natural surface gamma times S1 represents a Z2 torsion two-cycle in K, while H2(K;R)=0. A smooth closed real two-form has zero de Rham period on it; only a discrete gerbe holonomy could detect the torsion class.",
+      "homology": {
+        "H2_RP3xS1_Z": "Z2",
+        "H2_RP3xS1_R": "0"
+      }
+    },
+    {
+      "test": "rank_24_to_23",
+      "status": "fail_BF_flux_does_not_supply_mod_two_index",
+      "result": "Aharonov-Bohm holonomy shifts boundary conditions but does not by itself remove exactly one real state from R24. The existing audit needed an odd-winding class-D Majorana mass defect and a mod-two index; that new mass operator and its embedding remain conditional.",
+      "previous_exact_symmetry_status": "symmetry_protected_rank_one_selector_not_available_minimal_covariant_rank_is_four",
+      "existing_conditional_route": "A mathematically explicit route around the rank-one no-go exists. An odd class-D mass defect localized on the systolic projective geodesic supplies one transverse Majorana channel by a mod-two index. Coupling that channel to the existing nontrivial Z2 flat line cancels the antiperiodic spin holonomy and leaves one longitudinal real zero mode. Together with the generation singlet and self-dual cycle line this gives a rank-one kernel in the ambient module. The mechanism is not yet derived from the current S2T action because the odd-winding mass order parameter and its restriction map are new structural data."
+    },
+    {
+      "test": "rank_23_denominator",
+      "status": "fail_rank_alone_not_denominator",
+      "result": "Even a consistent rank-23 heavy quotient does not produce a tree-level denominator 23. Canonical coupling removes the rank; democratic unnormalized coupling puts it in the numerator.",
+      "previous_gate": "The global defect EFT can be written consistently and its heavy quotient has rank 23, but a tree-level quadratic action does not turn that rank into the mass denominator 23. Canonical coupling removes the rank; unnormalized democratic coupling puts it in the numerator; the Gaussian determinant contains 23 log(M0). Recovering D_nu requires a new derived collective normalization, such as a spectral or loop self-energy proportional to Tr(P_heavy), rather than the rank count alone."
+    },
+    {
+      "test": "C6_numeric_object",
+      "status": "fail_wrong_functional_identification",
+      "result": "The positive K1 sum T_coex is a Casimir-energy kernel. The Euclidean winding log-determinant is a different function and magnitude. Therefore writing a ghost contribution equal to -T_coex does not prove cancellation of the one-loop determinant used in a spectral action.",
+      "T_coex": 1.5227161455271536e-05,
+      "bosonic_Gamma_winding": -2.0924455471679034e-05,
+      "absolute_Gamma_over_T": 1.3741533859178419
+    },
+    {
+      "test": "local_heat_kernel_preservation",
+      "status": "fail_new_field_content_changes_local_coefficients",
+      "result": "A new two-form field, its ghost tower, defect support and BF mixing alter the full heat-kernel and zero-mode bookkeeping. The old 1/24 term cannot be declared unchanged without recomputing the combined complex."
+    }
+  ],
+  "summary_counts": {
+    "partial_pass_nonzero_modes_only": 1,
+    "fail_incomplete_bv_complex": 1,
+    "fail_not_automatic": 1,
+    "fail_removes_Maxwell_sector": 1,
+    "fail_changes_operator_spectrum": 1,
+    "fail_global_isospectrality_lost": 1,
+    "fail_form_degree_and_de_rham_torsion": 1,
+    "fail_BF_flux_does_not_supply_mod_two_index": 1,
+    "fail_rank_alone_not_denominator": 1,
+    "fail_wrong_functional_identification": 1,
+    "fail_new_field_content_changes_local_coefficients": 1
+  },
+  "scientific_verdict": {
+    "positive": "The nonzero Hodge map between one-form and two-form eigenmodes is real, and a BF/gerbe defect is a legitimate new II.B research direction.",
+    "negative": "The claimed exact cancellation isolates one favorable ghost while discarding the rest of the BV complex, confuses a Casimir kernel with the Euclidean determinant, and assigns a rank-one fermion index to a bosonic torsion flux without deriving a Majorana defect operator.",
+    "maturity_effect": "No increase from R_sci=4 follows. At best this is a new model extension that must restart the full same-scheme determinant and parent-action audits.",
+    "required_reopening_calculation": [
+      "write one globally gauge-invariant bulk/defect action",
+      "derive the complete BV complex including ghost-for-ghost fields",
+      "compute the full combined heat kernel and winding log determinant",
+      "derive a mod-two fermion index from the same action",
+      "show the resulting rank enters the collective stiffness denominator"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "M1_geometry": [],
+  "M2_spectra": ["M1_geometry"],
+  "M3_zeta_heat_kernel": ["M2_spectra"],
+  "M4_Gram_projectors": ["M1_geometry"],
+  "M5_B_minus_L_anomalies": [],
+  "M6_no_go_map": ["M1_geometry", "M2_spectra", "M3_zeta_heat_kernel", "M4_Gram_projectors", "M5_B_minus_L_anomalies"],
+  "physical_observables": "excluded from frozen mathematical package"
+}

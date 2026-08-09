@@ -1,0 +1,110 @@
+{
+  "status": "delta2_connection_laplacian_insertion_slots_fixed_C11_matrix_missing",
+  "inputs": [
+    "s2t_c6_l21_delta2_gamma_expansion_formula_results.json",
+    "s2t_c6_l21_delta2_c11_setup_results.json",
+    "s2t_c6_l21_delta2_principal_second_symbol_formula_results.json"
+  ],
+  "operator_convention": {
+    "rough_laplacian_part": "L_rough alpha_c = -g^{ij} nabla_i nabla_j alpha_c",
+    "one_form_connection_variation": "D_A(nabla_i alpha_j) = - Gamma_A^d_ij alpha_d",
+    "second_derivative_variation_object": "D_A(nabla_i nabla_j alpha_c) at fixed alpha components",
+    "background_nabla": "Use the round L(2,1) background covariant derivative nabla to write the Levi-Civita connection difference tensor."
+  },
+  "first_connection_insertion_template": {
+    "T_A_ijc(alpha)": "D_A(nabla_i nabla_j alpha_c)",
+    "expanded": "- (nabla_i Gamma_A^d_jc) alpha_d - Gamma_A^d_jc nabla_i alpha_d - Gamma_A^d_ij nabla_d alpha_c - Gamma_A^d_ic nabla_j alpha_d",
+    "meaning": "This is the first-variation connection insertion before inverse-metric contraction."
+  },
+  "mixed_second_connection_insertion_slots": [
+    {
+      "slot": "single_Gamma_AB",
+      "formula": "T_AB^single_ijc(alpha) = T_A_ijc(alpha) with Gamma_A replaced by Gamma_AB",
+      "contribution_to_operator": "L_conn2_single_AB alpha_c = -g^{ij} T_AB^single_ijc(alpha)",
+      "status": "formula_slot_fixed"
+    },
+    {
+      "slot": "metric_cross_with_first_connection",
+      "formula": "L_conn2_metric_cross_AB alpha_c = -m_A^{ij} T_B_ijc(alpha) - m_B^{ij} T_A_ijc(alpha)",
+      "where": "m_A^{ij}=partial_A g^{ij}; T_A is the first-connection insertion template",
+      "status": "formula_slot_fixed"
+    },
+    {
+      "slot": "Gamma_A_Gamma_B_products",
+      "formula": "L_conn2_product_AB alpha_c = -g^{ij}[D_A T_B_ijc(alpha) + D_B T_A_ijc(alpha)]_product_only",
+      "includes": [
+        "Gamma_A acting on derivative indices inside T_B",
+        "Gamma_A acting on one-form component indices inside T_B",
+        "Gamma_A multiplying nabla Gamma_B and Gamma_B nabla alpha terms, plus A<->B"
+      ],
+      "status": "slot_identified_product_expansion_pending"
+    }
+  ],
+  "full_second_connection_operator_schematic": {
+    "formula": "L_conn2_AB = L_conn2_single_AB + L_conn2_metric_cross_AB + L_conn2_product_AB",
+    "excluded_to_avoid_double_counting": [
+      "principal second-symbol: already in delta2_principal_AB",
+      "Ricci/curvature second variation",
+      "coexact-projector side terms",
+      "Hilbert/basis representation corrections",
+      "local counterterm classifier"
+    ],
+    "principal_reference_status": "delta2_principal_second_symbol_formula_fixed_matrix_missing"
+  },
+  "C11_insertion_rule_progress": {
+    "target": {
+      "name": "C_delta2[1,1]",
+      "shell": "n=1 coexact Killing one-forms on L(2,1)",
+      "degeneracy": 6,
+      "lambda": 4,
+      "matrix_shape_per_symmetric_deformation_pair": [
+        6,
+        6
+      ],
+      "entries_per_pair": 36,
+      "trace_weight_lambda_inverse": 0.25,
+      "deformation_pairs": 55,
+      "raw_entries_all_pairs": 1980
+    },
+    "matrix_element_template": "C_conn2[1,1]_{rs}(A,B)=<E_r, L_conn2_AB E_s>_L21",
+    "basis": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ],
+    "normalization": "quotient-orthonormal states; no extra global cover factor in trace",
+    "now_ready": [
+      "single Gamma_AB insertion formula",
+      "metric-cross formula with first-connection insertion",
+      "product slot identity and required expansion target"
+    ],
+    "still_missing": [
+      "fully expanded Gamma_A Gamma_B product polynomial/tensor terms",
+      "integration reduction against the six Killing states",
+      "classification of which terms reduce to q_A overlaps versus new tensor integrals",
+      "actual 6x6 matrices over 55 symmetric deformation pairs"
+    ]
+  },
+  "pass_fail": [
+    {
+      "test": "rough_laplacian_insertion_slots_fixed",
+      "status": "pass",
+      "meaning": "Gamma_AB is now mounted into the rough-Laplacian slot structure at formula level."
+    },
+    {
+      "test": "product_terms_fully_expanded",
+      "status": "not_yet",
+      "meaning": "Gamma_A Gamma_B products are identified but not fully expanded into integrable tensor terms."
+    },
+    {
+      "test": "C11_connection_matrix_evaluated",
+      "status": "not_yet",
+      "meaning": "No C_conn2[1,1] entries or trace values have been computed."
+    }
+  ],
+  "plain_language": "The tooth is now mounted on the shaft. We know the three ways connection2 turns the Laplacian, but we still have not spun it against the six C11 basis vectors.",
+  "verdict": "The second-connection sprint has advanced from Gamma_AB tensor formula to rough-Laplacian insertion slots. The C11 connection contribution is now decomposed into single Gamma_AB, inverse-metric/first-connection cross, and Gamma_A Gamma_B product slots. This is matrix-enabling structure, but not yet a matrix evaluation: product expansion and integration against the six n=1 Killing states remain open."
+}

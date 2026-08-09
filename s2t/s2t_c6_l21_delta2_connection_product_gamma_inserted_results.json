@@ -1,0 +1,87 @@
+{
+  "status": "delta2_connection_product_gamma_inserted_Ctensor_formula_fixed_integrals_missing",
+  "inputs": [
+    "s2t_c6_l21_delta2_connection_product_index_cleanup_results.json",
+    "s2t_c6_l21_delta2_gamma_expansion_formula_results.json",
+    "s2t_c6_l21_delta2_ambient_path_formula_results.json",
+    "s2t_c6_l21_delta2_c11_setup_results.json"
+  ],
+  "purpose": "Insert the first-connection formula Gamma_X^k_ij = 1/2 g^{kl} C_X_ijl into the cleaned Gamma_A Gamma_B product operator before C11 integration.",
+  "locked_convention": {
+    "rough_laplacian": "L alpha_c = -g^{ij} nabla_i nabla_j alpha_c",
+    "first_connection": "Gamma_X^k_ij = 1/2 g^{kl} C_X_ijl",
+    "C_X": "C_X_ijl = nabla_i h^X_jl + nabla_j h^X_il - nabla_l h^X_ij",
+    "ambient_first_strain": "h_X(u,v)=2<u,Xv> for symmetric ambient X on the locked linear embedding path",
+    "background": "round L(2,1) metric; all contractions use background g until finite matrix evaluation"
+  },
+  "substituted_product_operator": {
+    "from_gamma_form": "P_AB(alpha)_c = -g^{ij}[Gamma_A^p_ij Gamma_B^d_pc + Gamma_A^p_ic Gamma_B^d_jp - Gamma_B^d_jc Gamma_A^p_id] alpha_d + A<->B",
+    "C_tensor_form": "P_AB(alpha)_c = -1/4 g^{ij}[g^{pq} C_A_ijq g^{de} C_B_pce + g^{pq} C_A_icq g^{de} C_B_jpe - g^{de} C_B_jce g^{pq} C_A_idq] alpha_d + A<->B",
+    "canonical_warning": "The apparent third term can merge with the second term under A/B symmetrization and dummy relabeling only after the free output c and input d slots are preserved through the basis integral."
+  },
+  "expanded_term_table": [
+    {
+      "label": "D1_C",
+      "family": "derivative_index_products",
+      "expression": "-1/4 g^{ij} g^{pq} g^{de} C_A_ijq C_B_pce alpha_d + A<->B",
+      "meaning": "Connection variation on the contracted derivative index of the inner T_B tensor."
+    },
+    {
+      "label": "O1_C",
+      "family": "one_form_component_products",
+      "expression": "-1/4 g^{ij} g^{pq} g^{de} C_A_icq C_B_jpe alpha_d + A<->B",
+      "meaning": "Connection variation on the output one-form component c."
+    },
+    {
+      "label": "G1_C",
+      "family": "mixed_component_products",
+      "expression": "+1/4 g^{ij} g^{de} g^{pq} C_B_jce C_A_idq alpha_p + A<->B; relabel input p to d only after preserving the basis slot",
+      "meaning": "Connection variation on the input one-form component inside the inner first-connection term."
+    }
+  ],
+  "C11_integrand_template": {
+    "entry": "(C_conn2_product[1,1])_rs(A,B) = Integral e_r^c P_AB(e_s)_c dV_g",
+    "after_C_insertion": "replace alpha_d or alpha_p by the corresponding component of e_s; multiply by e_r^c; integrate over L(2,1)",
+    "basis": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ],
+    "deformation_pairs": 55,
+    "raw_entries": 1980
+  },
+  "what_is_now_ready": [
+    "Gamma_A Gamma_B product slot is written entirely in terms of first metric-strain derivatives C_A and C_B.",
+    "The product contribution is zero-order on the input one-form after preserving the free output/input slots.",
+    "A symbolic integrand template for each C11 entry is fixed."
+  ],
+  "what_is_still_missing": [
+    "choose an explicit ambient Sym^2(R4) basis A_r and compute h_A, C_A components on S3/RP3",
+    "insert the six quotient-normalized Killing one-forms Eij",
+    "canonicalize dummy indices and A/B symmetry in the actual polynomial/trigonometric representation",
+    "perform the quotient integrals and assemble the 6x6 matrices for 55 deformation pairs",
+    "combine with single Gamma_AB and inverse-metric/first-connection connection slots before claiming C_conn2[1,1]"
+  ],
+  "pass_fail": [
+    {
+      "test": "Gamma_product_inserted_to_C_tensor_form",
+      "status": "pass",
+      "meaning": "Every Gamma_X factor in the product operator has been replaced by 1/2 g^{-1} C_X."
+    },
+    {
+      "test": "C11_integrand_template_fixed",
+      "status": "pass",
+      "meaning": "The basis-integral shape is explicit, with free output/input slots preserved."
+    },
+    {
+      "test": "C11_integrals_evaluated",
+      "status": "not_yet",
+      "meaning": "No entries of C_conn2_product[1,1] have been numerically or symbolically integrated."
+    }
+  ],
+  "plain_language": "The labelled teeth are now made from the actual strain material C_A and C_B, not just abstract Gamma symbols. The gear is still not turned against the six Killing vectors.",
+  "verdict": "The Gamma_A Gamma_B product contribution has advanced from exact index cleanup to a C-tensor integrand formula on the locked ambient path. This is a genuine matrix-enabling formula for the product part of C_conn2[1,1], but it is not yet an evaluated C11 matrix or determinant contribution."
+}

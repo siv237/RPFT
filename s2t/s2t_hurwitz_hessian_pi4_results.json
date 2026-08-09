@@ -1,0 +1,157 @@
+{
+  "status": "hurwitz_half_shift_is_real_but_direct_Hessian_does_not_generate_inverse_pi4",
+  "date": "2026-08-05",
+  "numerical_anchor": {
+    "S_geo": 137.03630377587842,
+    "S_after_one_over_24S": 137.03599972019742,
+    "one_over_pi4_S2": 5.466750295392695e-07,
+    "S_vac": 137.0359991735224,
+    "difference_from_train_alpha_inverse": -3.477599673356888e-09
+  },
+  "hurwitz_identity": {
+    "zeta_4_half": 16.234848505667074,
+    "pi4_over_6": 16.234848505667074,
+    "absolute_error": 0.0,
+    "identity": "zeta(4,1/2)=(2^4-1)zeta(4)=pi^4/6"
+  },
+  "scale_logdet_model": {
+    "eigenvalues": "lambda_n(R)=((n+1/2)/R)^2",
+    "spectral_zeta": "Z_A(s;R)=R^(2s) zeta(2s,1/2)",
+    "zeta_0_half": 0.0,
+    "logdet_slope_in_logR": 0.0,
+    "logdet_Hessian_in_logR": 0.0,
+    "finding": "For the pure half-integer one-dimensional tower zeta(0,1/2)=0. The zeta-regularized logdet has no scale Hessian, and zeta(4,1/2) does not appear in this derivative."
+  },
+  "inverse_square_trace_model": {
+    "functional": "F(R)=Tr A_R^-2=R^4 zeta(4,1/2)",
+    "F_at_R1": 16.234848505667074,
+    "Hessian_in_logR_at_R1": 259.7575760906732,
+    "closed_form_Hessian": "16 zeta(4,1/2)=8 pi^4/3",
+    "finding": "The standard spectral functional that actually contains zeta(4,1/2) produces a direct pi^4 response, not an inverse-pi^4 response."
+  },
+  "coefficient_candidates": [
+    {
+      "name": "direct_zeta4_moment",
+      "coefficient": 16.234848505667074,
+      "ratio_to_required_one_over_pi4": 1581.4218360117623,
+      "term_after_dividing_by_S2": 0.0008645238289157759,
+      "required_extra_multiplier": 0.000632342349920962
+    },
+    {
+      "name": "six_times_zeta4_equals_pi4",
+      "coefficient": 97.40909103400244,
+      "ratio_to_required_one_over_pi4": 9488.531016070574,
+      "term_after_dividing_by_S2": 0.005187142973494655,
+      "required_extra_multiplier": 0.00010539039165349367
+    },
+    {
+      "name": "direct_scale_hessian_Tr_A_minus2",
+      "coefficient": 259.7575760906732,
+      "ratio_to_required_one_over_pi4": 25302.749376188196,
+      "term_after_dividing_by_S2": 0.013832381262652415,
+      "required_extra_multiplier": 3.952139687006013e-05
+    },
+    {
+      "name": "inverse_zeta4",
+      "coefficient": 0.06159589352810601,
+      "ratio_to_required_one_over_pi4": 6.0,
+      "term_after_dividing_by_S2": 3.2800501772356168e-06,
+      "required_extra_multiplier": 0.16666666666666666
+    },
+    {
+      "name": "inverse_direct_scale_hessian",
+      "coefficient": 0.0038497433455066256,
+      "ratio_to_required_one_over_pi4": 0.375,
+      "term_after_dividing_by_S2": 2.0500313607722605e-07,
+      "required_extra_multiplier": 2.6666666666666665
+    },
+    {
+      "name": "normalized_inverse_one_over_6_zeta4",
+      "coefficient": 0.010265982254684336,
+      "ratio_to_required_one_over_pi4": 1.0,
+      "term_after_dividing_by_S2": 5.466750295392695e-07,
+      "required_extra_multiplier": 1.0
+    }
+  ],
+  "normalization_obstruction": {
+    "direct_moment_required_multiplier": 0.000632342349920962,
+    "inverse_moment_required_multiplier": 0.16666666666666666,
+    "exact_inverse_candidate": "1/[6 zeta(4,1/2)]=1/pi^4",
+    "why_not_a_derivation": "The reciprocal response and the factor 1/6 must be specified by the parent functional or by an inverse covariance/Legendre-dual rule. They do not follow from taking the direct Hessian."
+  },
+  "six_channel_inverse_susceptibility": {
+    "required_channel_count": 6.0,
+    "identity": "[6 zeta(4,1/2)]^-1=pi^-4",
+    "candidate_sources": [
+      {
+        "source": "single_SU5_X_block_raw_dimension",
+        "channel_count": 6,
+        "inverse_collective_susceptibility": 0.010265982254684336,
+        "matches_one_over_pi4": true,
+        "gate": "Raw dimension six matches algebraically, but an electromagnetic/gauge Hessian weights generator squares. The previously audited X block has subgroup indices (5/2,3/2,1), not a universal unit weight six."
+      },
+      {
+        "source": "SU5_X_plus_conjugate_pair",
+        "channel_count": 12,
+        "inverse_collective_susceptibility": 0.005132991127342168,
+        "matches_one_over_pi4": false,
+        "gate": "The charge-conjugate pair doubles the raw multiplicity and gives one half of the required coefficient."
+      },
+      {
+        "source": "P02_scalar_shell_rank",
+        "channel_count": 10,
+        "inverse_collective_susceptibility": 0.006159589352810601,
+        "matches_one_over_pi4": false,
+        "gate": "The established P02 count is ten, not six."
+      },
+      {
+        "source": "symmetric_metric_strain_components_in_3D",
+        "channel_count": 6,
+        "inverse_collective_susceptibility": 0.010265982254684336,
+        "matches_one_over_pi4": true,
+        "gate": "Sym^2(T*) has dimension six, but the proposed constant conformal/radius deformation is a single trace direction. Summing all six strains changes the observable."
+      }
+    ],
+    "status": "sharp_II_B_candidate_not_current_EM_derivation",
+    "interpretation": "The factor six need not be arbitrary if a parent theory supplies six equal, unit-normalized fluctuation channels and the physical correction is the inverse collective Hessian. No current II.A electromagnetic block satisfies all three conditions."
+  },
+  "coordinate_dependence": {
+    "rule": "for x=c log R, H_x=H_logR/c^2",
+    "samples": [
+      {
+        "x_equals_scale_times_logR": 0.5,
+        "hessian": 1039.0303043626927,
+        "ratio_to_unscaled": 4.0
+      },
+      {
+        "x_equals_scale_times_logR": 1.0,
+        "hessian": 259.7575760906732,
+        "ratio_to_unscaled": 1.0
+      },
+      {
+        "x_equals_scale_times_logR": 2.0,
+        "hessian": 64.9393940226683,
+        "ratio_to_unscaled": 0.25
+      },
+      {
+        "x_equals_scale_times_logR": 3.141592653589793,
+        "hessian": 26.318945069571622,
+        "ratio_to_unscaled": 0.10132118364233778
+      }
+    ],
+    "consequence": "A bare numerical Hessian coefficient is not invariant until the deformation coordinate and its kinetic norm are fixed independently."
+  },
+  "S_inverse_square_gate": {
+    "finding": "Dividing a spectral moment or Hessian by S_geo^2 is an additional response map. It is not implied by the scale derivative of logdet or Tr A^-2.",
+    "required_parent_statement": "The theory must define S_geo as the background expectation, identify the physical correction with a normalized inverse susceptibility, and fix both the deformation norm and the factor 1/6 before alpha is used."
+  },
+  "comparison_with_C6": {
+    "same_determinant_interpretation": "If the Hessian is still the Maxwell-ghost logdet Hessian, C6 remains the relevant same-scheme calculation and the new wording does not bypass it.",
+    "new_functional_interpretation": "If the correction is an inverse susceptibility of another spectral functional, this is a genuinely new II.B model. It must also explain why that response is combined with the independent 1/24 determinant branch."
+  },
+  "scientific_verdict": {
+    "positive": "The half-shifted zeta value is exact and suggests a sharply testable inverse-response model.",
+    "negative": "The proposed direct-Hessian inference reverses the pi power: direct moments give pi^4, while 1/pi^4 appears only after taking a reciprocal and fixing an extra factor 1/6.",
+    "reopening_condition": "Construct one parent action whose Legendre-dual or covariance calculation forces six equal unit-normalized channels and the response 1/[6 zeta(4,1/2) S_geo^2] with a fixed deformation metric."
+  }
+}

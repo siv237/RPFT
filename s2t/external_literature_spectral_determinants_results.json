@@ -1,0 +1,47 @@
+{
+  "status": "external_literature_gate_added_not_full_review",
+  "updated": "2026-07-10",
+  "purpose": "Identify external literature needed before treating the S2T mixed-trace integer 10 as a theorem.",
+  "source_clusters": [
+    {
+      "cluster": "Ray-Singer analytic torsion",
+      "examples": [
+        "D. B. Ray and I. M. Singer, R-torsion and the Laplacian on Riemannian manifolds, 1971",
+        "D. B. Ray and I. M. Singer, Analytic torsion for complex manifolds, Annals of Mathematics 98 (1973)"
+      ],
+      "relevance": "Provides the classical determinant/Hodge/zeta framework for relating Laplacians on forms to torsion-like invariants."
+    },
+    {
+      "cluster": "Schwarz and topological/gauge partition functions",
+      "examples": [
+        "A. S. Schwarz, The partition function of degenerate quadratic functional and Ray-Singer invariants, 1978",
+        "A. S. Schwarz, The partition function for topological field theories / BF-type treatments"
+      ],
+      "relevance": "Connects degenerate gauge quadratic functionals, zero modes, gauge fixing, and determinant factors to Ray-Singer torsion."
+    },
+    {
+      "cluster": "Spectra of lens spaces on functions and p-forms",
+      "examples": [
+        "A. Ikeda and Y. Yamamoto, On the spectra of 3-dimensional lens spaces",
+        "E. Lauret, R. J. Miatello, J. P. Rossetti, The spectrum on p-forms of a lens space",
+        "E. Lauret, R. J. Miatello, J. P. Rossetti, Spectra of lens spaces from 1-norm spectra of congruence lattices"
+      ],
+      "relevance": "Directly constrains scalar/exact/coexact multiplicity bookkeeping on RP^3=L(2,1)."
+    },
+    {
+      "cluster": "Faddeev-Popov / BRST ghost determinants",
+      "examples": [
+        "Faddeev-Popov method and BRST gauge fixing references",
+        "Hodge-decomposition treatments of abelian gauge partition functions on compact manifolds"
+      ],
+      "relevance": "Needed to verify the sign and exponent of the scalar ghost determinant and whether exact modes cancel or survive in the finite mixed trace."
+    }
+  ],
+  "current_internal_claim": {
+    "N_need": 10.0099700224,
+    "nearest_integer": 10,
+    "candidate_origin": "RP3 scalar/ghost even cumulative degeneracy d0+d2=1+9",
+    "relative_error_pi4_with_N10": "3.04e-6"
+  },
+  "literature_gate_verdict": "The external literature supports the relevance of lens-space p-form spectra, Ray-Singer torsion, Hodge decomposition, and gauge/ghost determinant bookkeeping. It does not yet prove the S2T selection rule ell=0,2 nor the mixed-trace sign. Those remain explicit proof obligations."
+}

@@ -1,0 +1,53 @@
+{
+  "status": "coexact_projector_variation_formula_fixed_matrix_evaluation_missing",
+  "inputs": [
+    "s2t_c6_l21_n3_explicit_projection_results.json",
+    "s2t_c6_l21_full_operator_checklist_results.json"
+  ],
+  "geometric_setup": {
+    "domain": "physical coexact one-form determinant on L(2,1)",
+    "constraint": "delta_g alpha = 0 defines the transverse slice and depends on the metric",
+    "problem": "A fixed-basis projection after applying a simplified operator is not the same as varying the coexact slice itself."
+  },
+  "projector_variation_formula": {
+    "hodge_projector": "Pi_coex = I - d Delta_0^{-1} delta on non-harmonic one-forms, since b1(L(2,1))=0",
+    "variation_schematic": "delta Pi_coex = - d Delta_0^{-1} (delta delta) - d (delta Delta_0^{-1}) delta, with delta Delta_0^{-1} = - Delta_0^{-1} (delta Delta_0) Delta_0^{-1} on det-prime modes",
+    "restricted_to_coexact_input": "if delta alpha=0 initially, the term with trailing delta may vanish on the input but not necessarily after delta Delta_1 acts; both side-projectors must be treated in Pi deltaDelta Pi",
+    "reduced_operator_variation": "delta(Pi Delta_1 Pi) = Pi deltaDelta_1 Pi + (delta Pi) Delta_1 Pi + Pi Delta_1 (delta Pi), restricted to the moving physical slice",
+    "warning": "This fixes the projector-variation obligation only. It is not yet the evaluated C_proj[1,3] matrix block."
+  },
+  "required_matrix_output": {
+    "matrix_name": "C_proj[1,3]",
+    "domain_basis": "six quotient-normalized n=1 Killing one-forms satisfying the original coexact condition",
+    "target_basis": "30-dimensional quotient-normalized n=3 coexact basis",
+    "must_report": [
+      "delta codifferential term delta(delta_g) for h=2qg or the chosen first strain",
+      "whether moving-slice terms alter the trace-80 projected image",
+      "self-adjointness check of the reduced operator in the varied inner product"
+    ]
+  },
+  "current_obstruction_context": {
+    "projected_trace_before_projector_variation": 79.99999999999999,
+    "projected_rank_before_projector_variation": 6,
+    "meaning": "The explicit n=3 projection used a fixed quotient-normalized coexact target. The projector variation tests whether the physical moving slice changes that low-shell block."
+  },
+  "pass_fail": [
+    {
+      "test": "operator_obligation_written",
+      "status": "pass",
+      "meaning": "The moving coexact-slice correction is now represented as delta Pi_coex and delta(Pi Delta Pi)."
+    },
+    {
+      "test": "matrix_evaluated",
+      "status": "not_yet",
+      "meaning": "C_proj[1,3] still must be evaluated in the explicit low-shell bases."
+    },
+    {
+      "test": "self_adjoint_reduced_operator_verified",
+      "status": "not_yet",
+      "meaning": "The final reduced operator must be self-adjoint in the varied Hilbert metric before determinant traces are trusted."
+    }
+  ],
+  "plain_language": "The third extinguisher is the moving doorway itself. The coexact room moves when the metric changes. We have written how the doorway moves, but we have not yet checked whether that movement blocks the trace-80 fire.",
+  "verdict": "The coexact-projector variation is now fixed as an explicit operator obligation: Pi_coex = I - d Delta_0^{-1} delta and delta(Pi Delta_1 Pi) contains both deltaDelta_1 and moving-projector terms. This advances the full-operator checklist but does not close C6; the required next output is the quotient-normalized n=1<->n=3 projector-variation matrix block and a self-adjointness check of the reduced operator."
+}

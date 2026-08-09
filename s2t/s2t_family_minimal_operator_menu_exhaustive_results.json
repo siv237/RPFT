@@ -1,0 +1,555 @@
+{
+  "status": "minimal_discrete_operator_menu_generates_many_CKM_candidates_but_has_no_intrinsic_coefficient_selector",
+  "date": "2026-08-06",
+  "blind_protocol": {
+    "observed_quark_masses_loaded": false,
+    "observed_CKM_entries_loaded": false,
+    "coefficient_menu": "(a,b,d) in {-1,0,1}^3 independently for up and down sectors",
+    "operator": "M_s=L+a S+b A_n+d i[S,A_n]",
+    "purpose": "structural existence and uniqueness test, not phenomenological fitting"
+  },
+  "scan": {
+    "normalizations": [
+      "raw",
+      "spectral",
+      "frobenius"
+    ],
+    "kernels": [
+      "inverse_length",
+      "inverse_square",
+      "tunneling"
+    ],
+    "rows": [
+      {
+        "normalization": "raw",
+        "kernel": "inverse_length",
+        "sector_operators_before_deduplication": 54,
+        "unique_sector_operators": 51,
+        "ordered_sector_pairs": 2916,
+        "nondegenerate_pairs": 2916,
+        "full_three_family_mixing_pairs": 2748,
+        "nonzero_CP_pairs": 2352,
+        "same_axis_CP_pairs": 1116,
+        "crossed_axis_CP_pairs": 1236,
+        "same_coefficient_CP_pairs": 0,
+        "both_commutators_zero_pairs": 324,
+        "both_commutators_zero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 533,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "minimum_support_example": {
+          "upper_axis": 0,
+          "upper_coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "lower_axis": 0,
+          "lower_coefficients": [
+            0,
+            0,
+            0
+          ],
+          "abs_J": 0.09053692966612471,
+          "abs_mixing_matrix": [
+            [
+              0.6631188679999889,
+              0.565742214402605,
+              0.49011132790953726
+            ],
+            [
+              0.565742214402605,
+              0.5998929018463826,
+              0.5657422144026052
+            ],
+            [
+              0.49011132790953715,
+              0.5657422144026049,
+              0.663118867999989
+            ]
+          ]
+        },
+        "maximum_abs_J": 0.09517165777444497
+      },
+      {
+        "normalization": "raw",
+        "kernel": "inverse_square",
+        "sector_operators_before_deduplication": 54,
+        "unique_sector_operators": 51,
+        "ordered_sector_pairs": 2916,
+        "nondegenerate_pairs": 2916,
+        "full_three_family_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_axis_CP_pairs": 1116,
+        "crossed_axis_CP_pairs": 1236,
+        "same_coefficient_CP_pairs": 0,
+        "both_commutators_zero_pairs": 324,
+        "both_commutators_zero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "minimum_support_example": {
+          "upper_axis": 0,
+          "upper_coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "lower_axis": 0,
+          "lower_coefficients": [
+            0,
+            0,
+            0
+          ],
+          "abs_J": 0.09557194521501404,
+          "abs_mixing_matrix": [
+            [
+              0.6102348555614723,
+              0.5668150890835079,
+              0.5534745485070872
+            ],
+            [
+              0.5750377641833346,
+              0.579557422232263,
+              0.5774467629994354
+            ],
+            [
+              0.5449265921396205,
+              0.5855201526188056,
+              0.6001842717502264
+            ]
+          ]
+        },
+        "maximum_abs_J": 0.09557194521501404
+      },
+      {
+        "normalization": "raw",
+        "kernel": "tunneling",
+        "sector_operators_before_deduplication": 54,
+        "unique_sector_operators": 51,
+        "ordered_sector_pairs": 2916,
+        "nondegenerate_pairs": 2916,
+        "full_three_family_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_axis_CP_pairs": 1116,
+        "crossed_axis_CP_pairs": 1236,
+        "same_coefficient_CP_pairs": 0,
+        "both_commutators_zero_pairs": 324,
+        "both_commutators_zero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "minimum_support_example": {
+          "upper_axis": 0,
+          "upper_coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "lower_axis": 0,
+          "lower_coefficients": [
+            0,
+            0,
+            0
+          ],
+          "abs_J": 0.09608424559186181,
+          "abs_mixing_matrix": [
+            [
+              0.5930250259881872,
+              0.5698562207678505,
+              0.5688455029301829
+            ],
+            [
+              0.5767886711632098,
+              0.5776681239314221,
+              0.5775936005629996
+            ],
+            [
+              0.5618150472971408,
+              0.5844342788079205,
+              0.5854916108577277
+            ]
+          ]
+        },
+        "maximum_abs_J": 0.09608424559186189
+      },
+      {
+        "normalization": "spectral",
+        "kernel": "inverse_length",
+        "sector_operators_before_deduplication": 54,
+        "unique_sector_operators": 51,
+        "ordered_sector_pairs": 2916,
+        "nondegenerate_pairs": 2916,
+        "full_three_family_mixing_pairs": 2748,
+        "nonzero_CP_pairs": 2352,
+        "same_axis_CP_pairs": 1116,
+        "crossed_axis_CP_pairs": 1236,
+        "same_coefficient_CP_pairs": 0,
+        "both_commutators_zero_pairs": 324,
+        "both_commutators_zero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 533,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "minimum_support_example": {
+          "upper_axis": 0,
+          "upper_coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "lower_axis": 0,
+          "lower_coefficients": [
+            0,
+            0,
+            0
+          ],
+          "abs_J": 0.08325630508321583,
+          "abs_mixing_matrix": [
+            [
+              0.707335738471064,
+              0.5501515947596093,
+              0.4438573823482637
+            ],
+            [
+              0.5501515947596094,
+              0.6282248367956467,
+              0.5501515947596095
+            ],
+            [
+              0.4438573823482638,
+              0.5501515947596092,
+              0.707335738471064
+            ]
+          ]
+        },
+        "maximum_abs_J": 0.09073817688660536
+      },
+      {
+        "normalization": "spectral",
+        "kernel": "inverse_square",
+        "sector_operators_before_deduplication": 54,
+        "unique_sector_operators": 51,
+        "ordered_sector_pairs": 2916,
+        "nondegenerate_pairs": 2916,
+        "full_three_family_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_axis_CP_pairs": 1116,
+        "crossed_axis_CP_pairs": 1236,
+        "same_coefficient_CP_pairs": 0,
+        "both_commutators_zero_pairs": 324,
+        "both_commutators_zero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "minimum_support_example": {
+          "upper_axis": 0,
+          "upper_coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "lower_axis": 0,
+          "lower_coefficients": [
+            0,
+            0,
+            0
+          ],
+          "abs_J": 0.09464186243540915,
+          "abs_mixing_matrix": [
+            [
+              0.6287556474770122,
+              0.5598610341239108,
+              0.5396498478045453
+            ],
+            [
+              0.5717391237662488,
+              0.5826893259659028,
+              0.5775703626056344
+            ],
+            [
+              0.5270490585522049,
+              0.5890914800564573,
+              0.6125279732421428
+            ]
+          ]
+        },
+        "maximum_abs_J": 0.09464186243540916
+      },
+      {
+        "normalization": "spectral",
+        "kernel": "tunneling",
+        "sector_operators_before_deduplication": 54,
+        "unique_sector_operators": 51,
+        "ordered_sector_pairs": 2916,
+        "nondegenerate_pairs": 2916,
+        "full_three_family_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_axis_CP_pairs": 1116,
+        "crossed_axis_CP_pairs": 1236,
+        "same_coefficient_CP_pairs": 0,
+        "both_commutators_zero_pairs": 324,
+        "both_commutators_zero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "minimum_support_example": {
+          "upper_axis": 0,
+          "upper_coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "lower_axis": 0,
+          "lower_coefficients": [
+            0,
+            0,
+            0
+          ],
+          "abs_J": 0.09588154059783878,
+          "abs_mixing_matrix": [
+            [
+              0.6018942525060386,
+              0.5654570837391879,
+              0.5638985682278064
+            ],
+            [
+              0.5759799885658152,
+              0.57812510154478,
+              0.5779432668831435
+            ],
+            [
+              0.5531458772981317,
+              0.5882428524113237,
+              0.5899152354491866
+            ]
+          ]
+        },
+        "maximum_abs_J": 0.09588154059783888
+      },
+      {
+        "normalization": "frobenius",
+        "kernel": "inverse_length",
+        "sector_operators_before_deduplication": 54,
+        "unique_sector_operators": 51,
+        "ordered_sector_pairs": 2916,
+        "nondegenerate_pairs": 2916,
+        "full_three_family_mixing_pairs": 2748,
+        "nonzero_CP_pairs": 2352,
+        "same_axis_CP_pairs": 1116,
+        "crossed_axis_CP_pairs": 1236,
+        "same_coefficient_CP_pairs": 0,
+        "both_commutators_zero_pairs": 324,
+        "both_commutators_zero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 533,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "minimum_support_example": {
+          "upper_axis": 0,
+          "upper_coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "lower_axis": 0,
+          "lower_coefficients": [
+            0,
+            0,
+            0
+          ],
+          "abs_J": 0.0729597560616093,
+          "abs_mixing_matrix": [
+            [
+              0.7527672761279905,
+              0.5264669624786782,
+              0.3951885188227501
+            ],
+            [
+              0.5264669624786782,
+              0.6675815117548923,
+              0.5264669624786785
+            ],
+            [
+              0.3951885188227502,
+              0.5264669624786782,
+              0.7527672761279905
+            ]
+          ]
+        },
+        "maximum_abs_J": 0.08622061716154152
+      },
+      {
+        "normalization": "frobenius",
+        "kernel": "inverse_square",
+        "sector_operators_before_deduplication": 54,
+        "unique_sector_operators": 51,
+        "ordered_sector_pairs": 2916,
+        "nondegenerate_pairs": 2916,
+        "full_three_family_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_axis_CP_pairs": 1116,
+        "crossed_axis_CP_pairs": 1236,
+        "same_coefficient_CP_pairs": 0,
+        "both_commutators_zero_pairs": 324,
+        "both_commutators_zero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "minimum_support_example": {
+          "upper_axis": 0,
+          "upper_coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "lower_axis": 0,
+          "lower_coefficients": [
+            0,
+            0,
+            0
+          ],
+          "abs_J": 0.09310182111995906,
+          "abs_mixing_matrix": [
+            [
+              0.6498736722337793,
+              0.5510045653456792,
+              0.5235056629164595
+            ],
+            [
+              0.5662628449779921,
+              0.5878469874397075,
+              0.5777389633350788
+            ],
+            [
+              0.5069621292905547,
+              0.5923089466876893,
+              0.6262264056544621
+            ]
+          ]
+        },
+        "maximum_abs_J": 0.09310182111995906
+      },
+      {
+        "normalization": "frobenius",
+        "kernel": "tunneling",
+        "sector_operators_before_deduplication": 54,
+        "unique_sector_operators": 51,
+        "ordered_sector_pairs": 2916,
+        "nondegenerate_pairs": 2916,
+        "full_three_family_mixing_pairs": 2772,
+        "nonzero_CP_pairs": 2352,
+        "same_axis_CP_pairs": 1116,
+        "crossed_axis_CP_pairs": 1236,
+        "same_coefficient_CP_pairs": 0,
+        "both_commutators_zero_pairs": 324,
+        "both_commutators_zero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 534,
+        "minimum_nonzero_coefficient_support_for_CP": 1,
+        "minimum_support_example": {
+          "upper_axis": 0,
+          "upper_coefficients": [
+            0,
+            0,
+            -1
+          ],
+          "lower_axis": 0,
+          "lower_coefficients": [
+            0,
+            0,
+            0
+          ],
+          "abs_J": 0.09554007900089644,
+          "abs_mixing_matrix": [
+            [
+              0.6121066303374203,
+              0.5602456226746433,
+              0.5580773381627946
+            ],
+            [
+              0.5746172969276798,
+              0.5788932194538231,
+              0.5785305545448004
+            ],
+            [
+              0.5432682902291421,
+              0.5924588447683848,
+              0.5948546730817665
+            ]
+          ]
+        },
+        "maximum_abs_J": 0.09554007900089644
+      }
+    ]
+  },
+  "representative_raw_result": {
+    "normalization": "raw",
+    "kernel": "inverse_length",
+    "sector_operators_before_deduplication": 54,
+    "unique_sector_operators": 51,
+    "ordered_sector_pairs": 2916,
+    "nondegenerate_pairs": 2916,
+    "full_three_family_mixing_pairs": 2748,
+    "nonzero_CP_pairs": 2352,
+    "same_axis_CP_pairs": 1116,
+    "crossed_axis_CP_pairs": 1236,
+    "same_coefficient_CP_pairs": 0,
+    "both_commutators_zero_pairs": 324,
+    "both_commutators_zero_CP_pairs": 0,
+    "unique_absolute_CP_signatures": 533,
+    "minimum_nonzero_coefficient_support_for_CP": 1,
+    "minimum_support_example": {
+      "upper_axis": 0,
+      "upper_coefficients": [
+        0,
+        0,
+        -1
+      ],
+      "lower_axis": 0,
+      "lower_coefficients": [
+        0,
+        0,
+        0
+      ],
+      "abs_J": 0.09053692966612471,
+      "abs_mixing_matrix": [
+        [
+          0.6631188679999889,
+          0.565742214402605,
+          0.49011132790953726
+        ],
+        [
+          0.565742214402605,
+          0.5998929018463826,
+          0.5657422144026052
+        ],
+        [
+          0.49011132790953715,
+          0.5657422144026049,
+          0.663118867999989
+        ]
+      ]
+    },
+    "maximum_abs_J": 0.09517165777444497
+  },
+  "ablation_gates": {
+    "commutator_removed": {
+      "nonzero_CP_pairs_across_all_scans": 0,
+      "finding": "With d_u=d_d=0 all matrices are real, so the Jarlskog invariant vanishes identically."
+    },
+    "same_coefficients_in_both_sectors": {
+      "nonzero_CP_pairs_across_all_scans": 0,
+      "finding": "Using the same coefficient triple in the two sectors gives zero CP even when different representatives of the residual axis orbit are chosen."
+    },
+    "single_commutator_term": {
+      "minimum_total_nonzero_coefficients": 1,
+      "finding": "One commutator term in only one sector already creates full mixing and nonzero CP. This demonstrates abundance, not a unique mechanism."
+    }
+  },
+  "normalization_sensitivity": {
+    "qualitative_CP_count_stable": true,
+    "mixing_values_change": true,
+    "finding": "Raw, spectral-norm and Frobenius-norm conventions all admit many CP matrices, but their numerical entries and maximal J change. The action must select a normalization before any prediction is claimed."
+  },
+  "orientation_gate": {
+    "complex_term": "i d [S,A_n]",
+    "conjugation": "d -> -d complex-conjugates the mass operator",
+    "finding": "Without an oriented or chiral parent principle the signs d and -d are degenerate CP-conjugate choices, so even the sign of CP violation is unselected."
+  },
+  "scientific_verdict": {
+    "positive": "The minimal finite operator algebra is rich enough to produce nondegenerate three-family spectra, full mixing and nonzero CP without continuous fitting.",
+    "negative": "It produces hundreds of inequivalent blind CKM signatures. CP requires an independent sector-asymmetric coefficient choice, and no current geometry selects that choice or its normalization.",
+    "status": "existence_pass_selector_fail",
+    "next_gate": "Derive one coefficient triple per sector and the commutator orientation from a parent representation or boundary action. If this cannot be done before using quark data, the finite operator-menu route closes as underdetermined."
+  }
+}

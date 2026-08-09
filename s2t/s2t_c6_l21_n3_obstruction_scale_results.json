@@ -1,0 +1,52 @@
+{
+  "status": "explicit_n3_obstruction_scale_large_not_small_scheme_gap",
+  "inputs": [
+    "s2t_c6_l21_n3_explicit_projection_results.json",
+    "s2t_c6_l21_n3_proxy_obstruction_scale_results.json",
+    "s2t_c6_l21_full_operator_rescue_gate_results.json"
+  ],
+  "scale_data": {
+    "projected_trace": 79.99999999999999,
+    "projected_rank": 6,
+    "projected_eigenvalues": [
+      11.999999999999986,
+      12.000000000000005,
+      13.999999999999977,
+      13.999999999999996,
+      14.000000000000014,
+      14.000000000000016
+    ],
+    "lambda_gap": 12,
+    "trace_over_gap": 6.666666666666665,
+    "trace_over_gap_squared": 0.5555555555555555,
+    "rank10_count": 10.0,
+    "rank10_over_24_scale": 0.4166666666666667,
+    "N_need_minus_10_gap": 0.0099700224
+  },
+  "comparisons": {
+    "trace_to_rank10_ratio": 7.999999999999998,
+    "trace_to_proxy64_ratio": 1.2499999999999998,
+    "trace_over_gap_squared_to_rank10_over24_ratio": 1.333333333333333,
+    "trace_over_gap_squared_to_Nneed_gap_ratio": 55.72259853253243,
+    "trace_over_gap_to_rank10_ratio": 0.6666666666666665
+  },
+  "interpretation": [
+    {
+      "claim": "the explicit n=3 projection is a tiny correction comparable to N_need-10",
+      "verdict": "fails_at_bookkeeping_scale",
+      "reason": "Even the conservative trace/gap^2 proxy is about 0.5556, roughly 55.7 times the N_need-10 gap."
+    },
+    {
+      "claim": "the explicit n=3 projection is smaller than the earlier proxy and therefore harmless",
+      "verdict": "fails",
+      "reason": "The explicit trace is 80, larger than the earlier Hodge proxy trace 64 by a factor 1.25 in this modeled slice."
+    },
+    {
+      "claim": "the scale audit alone proves final C6 failure",
+      "verdict": "not_yet",
+      "reason": "The full one-form operator may still cancel or absorb the low-shell block; this audit only rules out treating it as a small gap-sized correction."
+    }
+  ],
+  "plain_language": "The third-floor signal is not a tiny scratch. Even with a conservative denominator-squared bookkeeping proxy, it is much bigger than the small N_need-10 gap. So C6 needs a real cancellation, not a rounding explanation.",
+  "verdict": "The explicit n=3 projected obstruction is large in the current low-shell bookkeeping. Its trace is 80, eight times the rank-10 count and 1.25 times the earlier proxy trace 64. The trace/(lambda3-lambda1)^2 proxy is about 0.5556, far larger than the N_need-10 gap. Therefore the nonzero n=3 block cannot be dismissed as a small scheme residue; only full-operator cancellation or a derived no-fit absorption identity can rescue C6."
+}

@@ -1,0 +1,61 @@
+{
+  "status": "integer10_has_plausible_scalar_ghost_shell_origin_not_final_proof",
+  "core_claim": "On RP^3, scalar harmonics descending from S^3 are even ell. The zero shell ell=0 has degeneracy 1 and the first nonzero even shell ell=2 has degeneracy 9; together they give 10.",
+  "numbers": {
+    "S_geo": 137.0363037758784,
+    "pi4_term": 5.466750295392699e-07,
+    "natural_pi2_half_tower": 5.483439627824377e-07,
+    "epsilon_needed": 0.0030435882519781465,
+    "integer10_over_24S": 0.003040556810026934,
+    "epsilon_relative_error": -0.0009960092168322969,
+    "casmix_term_with_integer10": 5.466766918121624e-07,
+    "casmix_term_minus_pi4": 1.6622728925159291e-12,
+    "casmix_relative_error_vs_pi4": 3.040696579678917e-06
+  },
+  "scalar_rp3_even_modes": [
+    {
+      "ell": 0,
+      "lambda": 0,
+      "degeneracy_s3": 1,
+      "rp3_parity": 1,
+      "descends_to_rp3": true
+    },
+    {
+      "ell": 2,
+      "lambda": 8,
+      "degeneracy_s3": 9,
+      "rp3_parity": 1,
+      "descends_to_rp3": true
+    },
+    {
+      "ell": 4,
+      "lambda": 24,
+      "degeneracy_s3": 25,
+      "rp3_parity": 1,
+      "descends_to_rp3": true
+    },
+    {
+      "ell": 6,
+      "lambda": 48,
+      "degeneracy_s3": 49,
+      "rp3_parity": 1,
+      "descends_to_rp3": true
+    },
+    {
+      "ell": 8,
+      "lambda": 80,
+      "degeneracy_s3": 81,
+      "rp3_parity": 1,
+      "descends_to_rp3": true
+    }
+  ],
+  "alternative_integer_sources": {
+    "scalar_even_shell_ell0_plus_ell2": 10,
+    "coexact_first_level_n1": 6,
+    "scalar_first_nonzero_even_ell2_only": 9,
+    "internal_metric_symmetric_components_dim4": 10,
+    "so4_isometry_dimension": 6,
+    "rp3_volume_shell_candidate_pi2_not_integer": 9.869604401089358
+  },
+  "verdict": "The integer 10 can be non-arbitrarily associated with the scalar/ghost RP3 even sector: 1 constant mode plus 9 first nonzero even scalar modes. This is structurally relevant because the 1/24 branch lives in the scalar periodic Maxwell--ghost determinant, and exact one-form modes inherit the scalar spectrum. It is not yet a proof of the second-order cross-term sign or coefficient, but it upgrades 10 from a naked fit to a concrete spectral candidate."
+}

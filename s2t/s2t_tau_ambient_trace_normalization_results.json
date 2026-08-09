@@ -1,0 +1,60 @@
+{
+  "status": "canonical_ambient_trace_rejects_rank9_half_candidate_tau_relation_remains_conditional",
+  "date": "2026-08-04",
+  "quotient_trace": {
+    "space": "even traceless Sym^2_0(R4) sector",
+    "rank": 9,
+    "antipodal_action": "+I because quadratic strains are even",
+    "projector": "P_plus=(I+U)/2",
+    "trace_P_plus": 9.0,
+    "naive_half_rank": 4.5,
+    "finding": "the image term equals the identity term on the even sector, so the quotient trace is 9 rather than 9/2"
+  },
+  "mode_normalization": {
+    "Vol_S3": 19.739208802178716,
+    "Vol_RP3": 9.869604401089358,
+    "normalized_cover_constant": 0.22507907903927651,
+    "normalized_quotient_constant": 0.3183098861837907,
+    "lifted_quotient_mode_relative_to_cover_mode": 1.4142135623730951,
+    "integral_RP3_of_normalized_mode_squared": 1.0000000000000002,
+    "finding": "the half-volume is canceled by the sqrt(2) normalization of the quotient mode in a quadratic matrix element"
+  },
+  "collective_vertex_normalization": {
+    "unnormalized_vertex": "P_tr=I_9",
+    "unnormalized_HS_norm_squared": 9.0,
+    "canonical_vertex": "P_tr/sqrt(Tr P_tr^2)=I_9/3",
+    "canonical_HS_norm_squared": 1.0,
+    "single_collective_mode_loop_trace": 1.0,
+    "nine_independent_channel_loop_trace": 9.0,
+    "finding": "a canonically normalized single collective field gives J=1; nine independent fields give J=9; neither gives 9/2"
+  },
+  "gram_seed_normalization": {
+    "background_unnormalized_seed": 16.819456374935612,
+    "canonical_normalized_constant_mode_seed": 2.6666666666666665,
+    "finding": "pi^2+2pi arises from unnormalized background geometry modes; canonical charged-lepton wavefunctions would replace the two volume norms by one each"
+  },
+  "tau_predictions": {
+    "canonical_single_collective_mode_J_1": {
+      "alpha_coefficient": 0.061696937539545534,
+      "prediction_MeV": 1777.0688674001003,
+      "pull": 1.542971112225031
+    },
+    "incorrect_half_rank_J_9_over_2": {
+      "alpha_coefficient": 0.2776362189279549,
+      "prediction_MeV": 1776.9023725095958,
+      "pull": -0.3069721156028512
+    },
+    "nine_independent_channels_J_9": {
+      "alpha_coefficient": 0.5552724378559099,
+      "prediction_MeV": 1776.688307650376,
+      "pull": -2.6854705513793915
+    }
+  },
+  "scientific_verdict": {
+    "rank9_half_candidate": "closed negatively in the minimal normalized ambient trace",
+    "canonical_result": "J=1 predicts m_tau=1777.06887 MeV, about +1.54 sigma",
+    "remaining_relation": "the original low-complexity tau formula remains numerically strong, but neither its seed nor alpha/3 coefficient follows from canonical mode normalization",
+    "reopen_condition": "derive a noncanonical stiffness, boundary measure, or multiplicity operator from the charged-lepton action that produces a fixed weight other than 1 or 9 before comparison",
+    "program_effect": "do not use the rank9/2 postdiction as evidence or as the Higgs-scale foundation"
+  }
+}

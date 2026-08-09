@@ -1,0 +1,100 @@
+{
+  "status": "delta2_Gamma_AB_expansion_formula_fixed_C11_insertion_rule_still_missing",
+  "inputs": [
+    "s2t_c6_timeboxed_operator_sprint_results.json",
+    "s2t_c6_l21_delta2_second_connection_formula_results.json",
+    "s2t_c6_l21_delta2_ambient_path_formula_results.json",
+    "s2t_c6_l21_delta2_c11_setup_results.json"
+  ],
+  "convention": {
+    "background_connection": "Use the round L(2,1) background covariant derivative nabla to write the Levi-Civita connection difference tensor.",
+    "metric_path": {
+      "path_id": "ambient_linear_embedding_strain",
+      "map": "F_eps(x)=(I+eps A)x, A=A^T, x in S3 subset R4, descended to L(2,1)",
+      "metric": "g_eps = F_eps^* <.,.>_R4 on the fixed S3/RP3 parameter manifold",
+      "reason": "This is the same first ambient strain route that supplies P02=Sym^2(R4)=1+9 in earlier audits.",
+      "selection_status": "fixed_for_theorem_route_before_C_delta2_numbers"
+    },
+    "metric_derivative_names": {
+      "h_A_ij": "partial_A g_ij",
+      "k_AB_ij": "partial_A partial_B g_ij",
+      "m_A^kl": "partial_A g^{kl} = -h_A^{kl}"
+    },
+    "why_background_nabla": "It avoids double-counting covariant-derivative variation; connection variation appears in the rough-Laplacian operator slots, not inside this Gamma difference formula."
+  },
+  "definitions": {
+    "C_A_ijl": "nabla_i h^A_jl + nabla_j h^A_il - nabla_l h^A_ij",
+    "C_B_ijl": "nabla_i h^B_jl + nabla_j h^B_il - nabla_l h^B_ij",
+    "C_AB_ijl": "nabla_i k^AB_jl + nabla_j k^AB_il - nabla_l k^AB_ij",
+    "first_connection": "Gamma_A^k_ij = 1/2 g^{kl} C_A_ijl"
+  },
+  "expanded_formula": {
+    "mixed_second_connection": "Gamma_AB^k_ij = 1/2 [ g^{kl} C_AB_ijl + m_A^{kl} C_B_ijl + m_B^{kl} C_A_ijl ]",
+    "same_direction_AA": "Gamma_AA^k_ij = 1/2 [ g^{kl} C_AA_ijl + 2 m_A^{kl} C_A_ijl ]",
+    "ambient_path_insertions": {
+      "h_A": "g'_A(u,v)=2 <u,A v>",
+      "k_AB": "partial_A partial_B g(u,v)=<A u,B v>+<B u,A v>",
+      "same_A_k_AA": "g''_A(u,v)=2 <A u,A v>"
+    },
+    "not_included_here": [
+      "products Gamma_A Gamma_B inside second variation of two covariant derivatives",
+      "inverse-metric/principal second-symbol block already fixed separately",
+      "Ricci, projector, Hilbert/basis, and local counterterm pieces"
+    ]
+  },
+  "rough_laplacian_connection_slots_next": [
+    {
+      "slot": "single_Gamma_AB_derivative",
+      "schematic": "-g^{ij}[ -nabla_i(Gamma_AB^d_jc alpha_d) - Gamma_AB^d_ij nabla_d alpha_c - Gamma_AB^d_ic nabla_j alpha_d ] with index placement checked",
+      "status": "not_expanded_to_matrix"
+    },
+    {
+      "slot": "Gamma_A_Gamma_B_products",
+      "schematic": "terms from applying delta_A nabla and delta_B nabla in both orders to the one-form second covariant derivative",
+      "status": "not_expanded_to_matrix"
+    },
+    {
+      "slot": "inverse_metric_first_connection_cross",
+      "schematic": "-m_A^{ij} connection_B_terms - m_B^{ij} connection_A_terms in the rough Laplacian",
+      "status": "not_expanded_to_matrix"
+    }
+  ],
+  "C11_relevance": {
+    "target": {
+      "name": "C_delta2[1,1]",
+      "shell": "n=1 coexact Killing one-forms on L(2,1)",
+      "degeneracy": 6,
+      "lambda": 4,
+      "matrix_shape_per_symmetric_deformation_pair": [
+        6,
+        6
+      ],
+      "entries_per_pair": 36,
+      "trace_weight_lambda_inverse": 0.25,
+      "deformation_pairs": 55,
+      "raw_entries_all_pairs": 1980
+    },
+    "what_is_now_ready": "Gamma_AB tensor formula has fixed signs and slots in a background-nabla convention.",
+    "what_is_not_ready": "The full rough-Laplacian connection operator and its 6x6 C11 matrix entries are not evaluated.",
+    "next_matrix_enabling_step": "expand the three rough_laplacian_connection_slots_next against n=1 Killing one-forms and classify which integrals reduce to existing q_A overlaps."
+  },
+  "pass_fail": [
+    {
+      "test": "Gamma_AB_formula_written",
+      "status": "pass",
+      "meaning": "The mixed second connection difference tensor is now explicit in one convention."
+    },
+    {
+      "test": "rough_laplacian_connection_operator_expanded",
+      "status": "not_yet",
+      "meaning": "Gamma_AB must still be inserted into -g^{ij} nabla_i nabla_j acting on one-forms."
+    },
+    {
+      "test": "C11_connection_matrix_evaluated",
+      "status": "not_yet",
+      "meaning": "No C_conn2[1,1] entries or traces have been computed."
+    }
+  ],
+  "plain_language": "One gear tooth is cut: we now know the second-connection tensor itself. But it still has to be mounted inside the Laplacian before it can turn the C11 box.",
+  "verdict": "The timeboxed C6 sprint has produced its first operator content: an explicit background-covariant formula for delta2 Gamma_AB on the locked ambient path. This is progress beyond a label. It does not yet evaluate C_delta2[1,1]; the next required step is inserting Gamma_AB, Gamma_A Gamma_B products, and inverse-metric/first-connection crosses into the rough one-form Laplacian and then reducing the result against the six n=1 Killing states."
+}

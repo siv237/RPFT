@@ -1,0 +1,55 @@
+{
+  "status": "hilbert_inner_product_variation_formula_fixed_matrix_evaluation_missing",
+  "inputs": [
+    "s2t_c6_l21_n3_explicit_projection_results.json",
+    "s2t_c6_l21_full_operator_checklist_results.json"
+  ],
+  "geometric_setup": {
+    "domain": "one-form Hilbert space on L(2,1)",
+    "inner_product": "<alpha,beta>_g = integral g^{ab} alpha_a beta_b sqrt(g) d^3x",
+    "metric_variation": "h_ab = delta g_ab, with conformal test slice h_ab = 2 q g_ab",
+    "problem": "Matrix elements and orthonormal bases change when the Hilbert metric changes; fixed-basis Gram traces are not final determinant coefficients."
+  },
+  "hilbert_variation_formula": {
+    "general_variation": "delta <alpha,beta> = integral [(-h^{ab} + 1/2 tr_g(h) g^{ab}) alpha_a beta_b] dvol_g, plus basis/eigenform normalization terms if alpha,beta are moved with the metric",
+    "conformal_slice_h_2qg_dimension3": "delta <alpha,beta> = integral q g^{ab} alpha_a beta_b dvol_g for fixed one-form components in dimension 3",
+    "normalization_warning": "Even if the quotient basis is orthonormal at epsilon=0, its derivative contributes to first-order matrix elements and to self-adjoint reduced operators.",
+    "trace_direction_warning": "The trace/volume direction can mix with radius and gauge normalization; it cannot be tuned after seeing alpha.",
+    "warning": "This fixes the Hilbert-metric formula only. It is not yet the evaluated C_Hilb[1,3] matrix block or basis-renormalization correction."
+  },
+  "required_matrix_output": {
+    "matrix_name": "C_Hilb[1,3]",
+    "domain_basis": "six quotient-normalized n=1 Killing one-forms",
+    "target_basis": "30-dimensional quotient-normalized n=3 coexact basis",
+    "must_report": [
+      "fixed-component Hilbert-metric matrix contribution",
+      "basis/eigenform normalization correction or proof it vanishes in the chosen gauge",
+      "self-adjointness of the combined reduced operator under the varied inner product",
+      "whether Hilbert terms cancel, enlarge, or rotate the trace-80 image"
+    ]
+  },
+  "current_obstruction_context": {
+    "projected_trace_before_Hilbert_variation": 79.99999999999999,
+    "projected_rank_before_Hilbert_variation": 6,
+    "meaning": "The trace-80 block was computed in the epsilon=0 quotient Hilbert metric. Hilbert variation tests whether the measuring stick itself changes the low-shell block."
+  },
+  "pass_fail": [
+    {
+      "test": "formula_written",
+      "status": "pass",
+      "meaning": "The one-form inner-product variation is fixed at formula level."
+    },
+    {
+      "test": "matrix_evaluated",
+      "status": "not_yet",
+      "meaning": "C_Hilb[1,3] still must be evaluated in the explicit low-shell bases."
+    },
+    {
+      "test": "basis_normalization_handled",
+      "status": "not_yet",
+      "meaning": "The derivative of orthonormal states or a gauge choice fixing it must be included before determinant traces are final."
+    }
+  ],
+  "plain_language": "The fourth extinguisher is the ruler itself. When the metric changes, the way we measure one-form overlaps changes. The ruler formula is now written, but we have not yet remeasured the trace-80 fire with it.",
+  "verdict": "The Hilbert inner-product variation is now fixed at formula level. For one-forms, delta<alpha,beta> = integral [(-h^{ab}+1/2 tr(h)g^{ab}) alpha_a beta_b] dvol, and in the conformal three-dimensional slice h=2qg this reduces to integral q <alpha,beta> dvol for fixed components. This advances the full-operator checklist but does not close C6; the required next output is the quotient-normalized n=1<->n=3 Hilbert/basis-normalization matrix contribution and a self-adjointness check."
+}

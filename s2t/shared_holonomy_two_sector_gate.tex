@@ -1,0 +1,96 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,array}
+\usepackage{geometry}
+\usepackage{microtype}
+\geometry{margin=2.3cm}
+
+\title{Shared-holonomy two-sector gate\\
+для family-selector и tensor-Hessian}
+\author{}
+\date{5 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Проверяемая гипотеза}
+
+Четыре состояния spin-меню несут permutation-представление \(S_4\), а
+семейный триплет является его трёхмерным подпространством с нулевой суммой
+компонент. Проверяется минимальная объединяющая гипотеза: один и тот же
+постоянный holonomy \(g\in S_4\), возможно умноженный на центральный знак,
+одновременно
+\begin{enumerate}
+    \item задаёт outside-\(D_8\) incidence-оператор, расширяющий family-алгебру
+    до \(M_3\);
+    \item фиксирует три boundary phase tensor-triplet на \(S^1\) и даёт
+    полный отклик \(H=\pi^4\).
+\end{enumerate}
+
+Для фазы \(a\ne0\) используется точная сумма
+\begin{equation}
+ \sum_{n\in\mathbb Z}\frac1{(n+a)^4}
+ =\pi^4\frac{2+\cos(2\pi a)}{3\sin^4(\pi a)},
+\end{equation}
+а для периодического канала удаляется нулевая мода:
+\begin{equation}
+ \sum_{n\in\mathbb Z\setminus\{0\}}\frac1{n^4}=\frac{\pi^4}{45}.
+\end{equation}
+
+\section{Полный перебор}
+
+Перебраны все \(24\) элемента \(S_4\) и оба центральных знака. Результаты
+зависят только от cycle type:
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Тип & Знак & Фазы на триплете & \(H/\pi^4\) \\
+\midrule
+(1+1+1+1) & (+) & (0,0,0) & (1/15) \\
+(1+1+1+1) & (-) & (1/2,1/2,1/2) & (1) \\
+(2+1+1) & (+) & (0,0,1/2) & (17/45) \\
+(2+1+1) & (-) & (0,1/2,1/2) & (31/45) \\
+(2+2) & (+) & (0,1/2,1/2) & (31/45) \\
+(2+2) & (-) & (0,0,1/2) & (17/45) \\
+(3+1) & (+) & (0,1/3,2/3) & (9/5) \\
+(3+1) & (-) & (1/4,1/2,3/4) & (17/3) \\
+(4) & (+) & (1/4,1/2,3/4) & (17/3) \\
+(4) & (-) & (0,1/4,3/4) & (241/45) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Ровно один из \(48\) знаковых вариантов даёт \(H=\pi^4\): центральный
+antiperiodic holonomy (-I). Но его family-действие скалярно и не расширяет
+исходную редуцируемую алгебру. Напротив, все двенадцать outside-\(D_8\)
+incidence-направлений типов transposition и three-cycle, дающих полную
+\(M_3\)-алгебру, промахиваются по tensor-отклику. Ближайший случай имеет
+\(H=31\pi^4/45\), то есть относительный промах \(14/45\).
+
+\section{Вердикт}
+
+\begin{equation}
+ \boxed{
+ \text{один постоянный signed }S_4\text{-holonomy}
+ \quad\not\Rightarrow\quad
+ \bigl(M_3\text{ family selector}\bigr)
+ \land
+ \bigl(H=\pi^4\bigr)
+ }
+\end{equation}
+
+Это полезный отрицательный результат: впервые оба operator seed проверены в
+одной parameter-free конструкции. Простая идентификация их через один group
+element закрыта. Следующий допустимый класс должен быть богаче: non-Abelian
+boundary connection с path ordering, Wilson-оператор на нескольких рёбрах или
+один parent symmetry principle, порождающий разные, но связанные
+представления в family- и tensor-секторах.
+
+Машинный перебор сохранён в
+\texttt{s2t\_shared\_holonomy\_two\_sector\_audit.py} и
+\texttt{s2t\_shared\_holonomy\_two\_sector\_results.json}.
+
+\end{document}

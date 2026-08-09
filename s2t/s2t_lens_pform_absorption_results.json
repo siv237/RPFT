@@ -1,0 +1,302 @@
+{
+  "status": "absorption_scheme_strong_candidate_not_theorem",
+  "inputs": {
+    "alpha_inv_reference": 137.035999177,
+    "S_geo": 137.0363037758784,
+    "S_vac_current": 137.03599917352236,
+    "S_vac_current_error": -3.477651944194804e-09,
+    "pi4_term": 5.466750295392699e-07,
+    "Vol_RP3": 9.869604401089358
+  },
+  "literature_gate": {
+    "checked_anchor_lines": [
+      "Ikeda--Yamamoto: spectra of three-dimensional lens spaces.",
+      "Lauret / Lauret--Miatello--Rossetti: lens-space p-spectra via congruence lattices.",
+      "Nash--O'Connor: determinants of Laplacians on lens spaces.",
+      "Schwarz / Ray--Singer: gauge determinant, zero-mode and analytic torsion bookkeeping."
+    ],
+    "consequence": "These sources validate the verification framework but do not close the S2T coefficient without an explicit L(2,1) Maxwell--ghost determinant calculation."
+  },
+  "rp3_mode_tables": {
+    "scalar_first_modes": [
+      {
+        "ell": 0,
+        "lambda_scalar": 0,
+        "degeneracy_s3": 1,
+        "degeneracy_rp3_trivial_flat_branch": 1,
+        "descends_to_RP3": true,
+        "exact_one_form_partner_for_nonzero_scalar": false
+      },
+      {
+        "ell": 1,
+        "lambda_scalar": 3,
+        "degeneracy_s3": 4,
+        "degeneracy_rp3_trivial_flat_branch": 0,
+        "descends_to_RP3": false,
+        "exact_one_form_partner_for_nonzero_scalar": false
+      },
+      {
+        "ell": 2,
+        "lambda_scalar": 8,
+        "degeneracy_s3": 9,
+        "degeneracy_rp3_trivial_flat_branch": 9,
+        "descends_to_RP3": true,
+        "exact_one_form_partner_for_nonzero_scalar": true
+      },
+      {
+        "ell": 3,
+        "lambda_scalar": 15,
+        "degeneracy_s3": 16,
+        "degeneracy_rp3_trivial_flat_branch": 0,
+        "descends_to_RP3": false,
+        "exact_one_form_partner_for_nonzero_scalar": false
+      },
+      {
+        "ell": 4,
+        "lambda_scalar": 24,
+        "degeneracy_s3": 25,
+        "degeneracy_rp3_trivial_flat_branch": 25,
+        "descends_to_RP3": true,
+        "exact_one_form_partner_for_nonzero_scalar": true
+      },
+      {
+        "ell": 5,
+        "lambda_scalar": 35,
+        "degeneracy_s3": 36,
+        "degeneracy_rp3_trivial_flat_branch": 0,
+        "descends_to_RP3": false,
+        "exact_one_form_partner_for_nonzero_scalar": false
+      },
+      {
+        "ell": 6,
+        "lambda_scalar": 48,
+        "degeneracy_s3": 49,
+        "degeneracy_rp3_trivial_flat_branch": 49,
+        "descends_to_RP3": true,
+        "exact_one_form_partner_for_nonzero_scalar": true
+      },
+      {
+        "ell": 7,
+        "lambda_scalar": 63,
+        "degeneracy_s3": 64,
+        "degeneracy_rp3_trivial_flat_branch": 0,
+        "descends_to_RP3": false,
+        "exact_one_form_partner_for_nonzero_scalar": false
+      },
+      {
+        "ell": 8,
+        "lambda_scalar": 80,
+        "degeneracy_s3": 81,
+        "degeneracy_rp3_trivial_flat_branch": 81,
+        "descends_to_RP3": true,
+        "exact_one_form_partner_for_nonzero_scalar": true
+      }
+    ],
+    "coexact_first_modes": [
+      {
+        "n": 1,
+        "rho": 2,
+        "lambda_coexact": 4,
+        "degeneracy_s3": 6,
+        "degeneracy_rp3": 6,
+        "descends_to_RP3": true,
+        "rho_bessel_tail": 2.537798537759427e-06,
+        "q_used": 4,
+        "contribution_rp3": 1.5226791226556563e-05
+      },
+      {
+        "n": 2,
+        "rho": 3,
+        "lambda_coexact": 9,
+        "degeneracy_s3": 16,
+        "degeneracy_rp3": 0,
+        "descends_to_RP3": false,
+        "rho_bessel_tail": 5.750337219772005e-09,
+        "q_used": 3,
+        "contribution_rp3": 0.0
+      },
+      {
+        "n": 3,
+        "rho": 4,
+        "lambda_coexact": 16,
+        "degeneracy_s3": 30,
+        "degeneracy_rp3": 30,
+        "descends_to_RP3": true,
+        "rho_bessel_tail": 1.2340834768054375e-11,
+        "q_used": 2,
+        "contribution_rp3": 3.7022504304163126e-10
+      },
+      {
+        "n": 4,
+        "rho": 5,
+        "lambda_coexact": 25,
+        "degeneracy_s3": 48,
+        "degeneracy_rp3": 0,
+        "descends_to_RP3": false,
+        "rho_bessel_tail": 2.5691838264735402e-14,
+        "q_used": 2,
+        "contribution_rp3": 0.0
+      },
+      {
+        "n": 5,
+        "rho": 6,
+        "lambda_coexact": 36,
+        "degeneracy_s3": 70,
+        "degeneracy_rp3": 70,
+        "descends_to_RP3": true,
+        "rho_bessel_tail": 5.24557838538624e-17,
+        "q_used": 2,
+        "contribution_rp3": 3.671904869770368e-15
+      },
+      {
+        "n": 6,
+        "rho": 7,
+        "lambda_coexact": 49,
+        "degeneracy_s3": 96,
+        "degeneracy_rp3": 0,
+        "descends_to_RP3": false,
+        "rho_bessel_tail": 1.0566025458188674e-19,
+        "q_used": 2,
+        "contribution_rp3": 0.0
+      },
+      {
+        "n": 7,
+        "rho": 8,
+        "lambda_coexact": 64,
+        "degeneracy_s3": 126,
+        "degeneracy_rp3": 126,
+        "descends_to_RP3": true,
+        "rho_bessel_tail": 2.1071801180054933e-22,
+        "q_used": 1,
+        "contribution_rp3": 2.6550469486869216e-20
+      },
+      {
+        "n": 8,
+        "rho": 9,
+        "lambda_coexact": 81,
+        "degeneracy_s3": 160,
+        "degeneracy_rp3": 0,
+        "descends_to_RP3": false,
+        "rho_bessel_tail": 4.170343375358268e-25,
+        "q_used": 1,
+        "contribution_rp3": 0.0
+      }
+    ],
+    "first_surviving_coexact_mode": {
+      "n": 1,
+      "rho": 2,
+      "lambda_coexact": 4,
+      "degeneracy_s3": 6,
+      "degeneracy_rp3": 6,
+      "descends_to_RP3": true,
+      "rho_bessel_tail": 2.537798537759427e-06,
+      "q_used": 4,
+      "contribution_rp3": 1.5226791226556563e-05
+    }
+  },
+  "absorption_numbers": {
+    "T_coex_RP3": 1.5227161455271536e-05,
+    "first_surviving_mode_fraction": 0.9999756862947792,
+    "base_volume_half_absorption": 5.483439627824377e-07,
+    "base_relative_overshoot_vs_pi4": 0.0030528799615638967,
+    "epsilon_needed": 0.0030435882519781465,
+    "rank_needed": 10.009970022402527,
+    "P02_rank_from_scalar_ell_0_2": 10,
+    "rank_if_ell_0_2_4_included": 35,
+    "P02_multiplier": 0.9969594431899731,
+    "P02_absorption_value": 5.466766918121624e-07,
+    "P02_absolute_error_vs_pi4": 1.6622728925159291e-12,
+    "P02_relative_error_vs_pi4": 3.040696579678917e-06,
+    "alpha_error_if_P02_absorption_replaces_pi4": -3.4793004033417674e-09
+  },
+  "best_integer_ranks": [
+    {
+      "rank": 10,
+      "absorption_value": 5.466766918121624e-07,
+      "absolute_error_vs_pi4": 1.6622728925159291e-12,
+      "relative_error_vs_pi4": 3.040696579678917e-06
+    },
+    {
+      "rank": 11,
+      "absorption_value": 5.465099647151349e-07,
+      "absolute_error_vs_pi4": -1.6506482413502192e-10,
+      "relative_error_vs_pi4": -0.00030194322991876224
+    },
+    {
+      "rank": 9,
+      "absorption_value": 5.4684341890919e-07,
+      "absolute_error_vs_pi4": 1.6838936992005378e-10,
+      "relative_error_vs_pi4": 0.0003080246230781201
+    },
+    {
+      "rank": 12,
+      "absorption_value": 5.463432376181074e-07,
+      "absolute_error_vs_pi4": -3.3179192116255977e-10,
+      "relative_error_vs_pi4": -0.0006069271564172035
+    },
+    {
+      "rank": 8,
+      "absorption_value": 5.470101460062175e-07,
+      "absolute_error_vs_pi4": 3.3511646694759163e-10,
+      "relative_error_vs_pi4": 0.0006130085495765613
+    },
+    {
+      "rank": 13,
+      "absorption_value": 5.461765105210798e-07,
+      "absolute_error_vs_pi4": -4.985190181900976e-10,
+      "relative_error_vs_pi4": -0.0009119110829156446
+    },
+    {
+      "rank": 7,
+      "absorption_value": 5.471768731032449e-07,
+      "absolute_error_vs_pi4": 5.018435639750236e-10,
+      "relative_error_vs_pi4": 0.0009179924760748088
+    },
+    {
+      "rank": 14,
+      "absorption_value": 5.460097834240523e-07,
+      "absolute_error_vs_pi4": -6.652461152176355e-10,
+      "relative_error_vs_pi4": -0.0012168950094140858
+    },
+    {
+      "rank": 6,
+      "absorption_value": 5.473436002002726e-07,
+      "absolute_error_vs_pi4": 6.685706610026673e-10,
+      "relative_error_vs_pi4": 0.0012229764025734435
+    },
+    {
+      "rank": 15,
+      "absorption_value": 5.458430563270247e-07,
+      "absolute_error_vs_pi4": -8.319732122451733e-10,
+      "relative_error_vs_pi4": -0.001521878935912527
+    }
+  ],
+  "proof_tests": [
+    {
+      "test": "external_lens_space_framework",
+      "status": "pass_framework_only",
+      "reason": "Ikeda--Yamamoto and Lauret/L-M-R make L(2,1) p-form spectra the correct verification class, but they do not by themselves derive the S2T mixed determinant coefficient."
+    },
+    {
+      "test": "ordinary_hodge_cancellation",
+      "status": "fail_as_full_cancellation",
+      "reason": "Exact one-forms can pair with nonzero scalar ghosts; coexact transverse modes remain and the first RP3 coexact mode contributes almost the whole Bessel tail."
+    },
+    {
+      "test": "exact_absorption_identity_with_P02_rank_10",
+      "status": "fail_as_exact_identity",
+      "reason": "The exact rank required is nonintegral, N_need=10.0099700224; P02 rank 10 leaves a relative pi^-4 mismatch 3.040697e-06."
+    },
+    {
+      "test": "finite_rank_selection",
+      "status": "conditional_pass_inside_S2T_first_strain_axiom",
+      "reason": "P02 rank equals dim Sym^2(R^4)=10=1+9, but this selects the first ambient strain channel, not the full scalar/exact tower demanded by a generic metric perturbation."
+    },
+    {
+      "test": "upgrade_4_to_5",
+      "status": "not_yet",
+      "reason": "The absorption formula is numerically excellent and structurally natural, but lacks an explicit Maxwell--ghost mixed-trace derivation of the volume factor, sign, det-prime convention, and rank-10 projector."
+    }
+  ],
+  "verdict": "Option A remains the best path, but it is not closed. The RP3 coexact tower is nonzero; the volume-weighted half determinant nearly equals the existing pi^-4 term; the P02/Casimir rank-10 correction reduces the mismatch to the 3e-6 relative level. However, the rank required for exact equality is 10.0099700224, not an integer, and no external lens-space determinant formula checked here derives the S2T rank-10 mixed trace. Therefore Tome II must keep S_vac at conditional determinant success unless a full L(2,1) Maxwell--ghost mixed-trace derivation is added."
+}

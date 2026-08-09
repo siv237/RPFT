@@ -1,0 +1,93 @@
+{
+  "status": "delta2_second_hilbert_formula_skeleton_fixed_basis_expansion_missing",
+  "inputs": [
+    "s2t_c6_l21_delta2_ambient_path_formula_results.json",
+    "s2t_c6_l21_hilbert_variation_formula_results.json",
+    "s2t_c6_l21_delta2_operator_decomposition_results.json"
+  ],
+  "operator_convention": {
+    "inner_product": "<alpha,beta>_g = integral g^{ab} alpha_a beta_b dvol_g",
+    "this_block_only": "second-order Hilbert metric, volume, and basis/orthonormalization corrections to determinant matrix traces",
+    "not_included_here": [
+      "principal/operator second-symbol terms",
+      "connection/Ricci/projector operator terms",
+      "local counterterm classifier"
+    ]
+  },
+  "ambient_metric_path": {
+    "path_id": "ambient_linear_embedding_strain",
+    "map": "F_eps(x)=(I+eps A)x, A=A^T, x in S3 subset R4, descended to L(2,1)",
+    "metric": "g_eps = F_eps^* <.,.>_R4 on the fixed S3/RP3 parameter manifold",
+    "reason": "This is the same first ambient strain route that supplies P02=Sym^2(R4)=1+9 in earlier audits.",
+    "selection_status": "fixed_for_theorem_route_before_C_delta2_numbers"
+  },
+  "metric_derivatives": {
+    "first_derivative_same_A": "g'_A(u,v)=2 <u,A v>",
+    "second_derivative_same_A": "g''_A(u,v)=2 <A u,A v>",
+    "mixed_second_derivative_A_B": "partial_A partial_B g(u,v)=<A u,B v>+<B u,A v>",
+    "expansion_same_A": "g_eps(u,v)=g(u,v)+eps*2<u,A v>+eps^2<Au,Av>",
+    "tangent_vectors": "u,v in T_x S3 with <u,x>=<v,x>=0"
+  },
+  "first_hilbert_reference": {
+    "general_variation": "delta <alpha,beta> = integral [(-h^{ab} + 1/2 tr_g(h) g^{ab}) alpha_a beta_b] dvol_g, plus basis/eigenform normalization terms if alpha,beta are moved with the metric",
+    "conformal_slice_h_2qg_dimension3": "delta <alpha,beta> = integral q g^{ab} alpha_a beta_b dvol_g for fixed one-form components in dimension 3",
+    "normalization_warning": "Even if the quotient basis is orthonormal at epsilon=0, its derivative contributes to first-order matrix elements and to self-adjoint reduced operators.",
+    "trace_direction_warning": "The trace/volume direction can mix with radius and gauge normalization; it cannot be tuned after seeing alpha.",
+    "warning": "This fixes the Hilbert-metric formula only. It is not yet the evaluated C_Hilb[1,3] matrix block or basis-renormalization correction."
+  },
+  "second_hilbert_skeleton": {
+    "fixed_component_inner_product_second_variation": [
+      "second variation of g^{ab} alpha_a beta_b",
+      "cross term from first variation of g^{ab} and first variation of dvol_g",
+      "second variation of dvol_g from h_A, h_B, and k_AB"
+    ],
+    "volume_form_formula_slots": {
+      "first": "partial_A dvol = 1/2 tr(h_A) dvol",
+      "mixed_second": "partial_AB dvol = [1/2 tr(k_AB) + 1/4 tr(h_A)tr(h_B) - 1/2 tr(h_A h_B)] dvol, with background index raising"
+    },
+    "basis_variation_slots": [
+      "orthonormal basis derivative needed to keep <e_i(eps),e_j(eps)>_eps=delta_ij",
+      "second derivative / Gram-Schmidt correction for diagonal trace consistency",
+      "possible eigenbasis rotation inside degenerate n=1 and n=3 shells",
+      "self-adjoint representation of the reduced operator in the varied Hilbert metric"
+    ],
+    "warning": "This audit fixes the required Hilbert/basis slots; it does not choose a basis transport rule or evaluate any Gram correction."
+  },
+  "determinant_trace_role": {
+    "why_it_matters": "A fixed-metric Gram trace is not the final determinant coefficient if the Hilbert metric and orthonormal basis move with epsilon.",
+    "required_consistency": "Operator second-variation traces and trace-square terms must be represented in the same quotient-normalized varied Hilbert space."
+  },
+  "matrix_task": {
+    "required_targets": [
+      "C_delta2[1,1]",
+      "C_delta2[3,3]"
+    ],
+    "required_pairs": 55,
+    "required_raw_diagonal_entries": 51480,
+    "status": "not_evaluated"
+  },
+  "pass_fail": [
+    {
+      "test": "formula_skeleton_written",
+      "status": "pass",
+      "meaning": "Second Hilbert/volume/basis correction slots are now identified."
+    },
+    {
+      "test": "basis_transport_chosen",
+      "status": "not_yet",
+      "meaning": "No canonical orthonormal-basis transport or gauge has been selected."
+    },
+    {
+      "test": "second_Gram_correction_evaluated",
+      "status": "not_yet",
+      "meaning": "No diagonal C_delta2 trace correction from Hilbert/basis variation has been computed."
+    },
+    {
+      "test": "self_adjointness_verified",
+      "status": "not_yet",
+      "meaning": "The final reduced operator has not been checked in the second-order varied Hilbert metric."
+    }
+  ],
+  "plain_language": "The fifth gear is the ruler changing for the second time. We know which marks on the ruler can stretch, but we have not recalibrated the ruler yet.",
+  "verdict": "The second Hilbert/basis subblock is now fixed at skeleton level. It contains second variation of the one-form inner product, volume-form second variation, basis transport/Gram-Schmidt corrections, degenerate-shell rotations, and self-adjoint representation of the reduced operator. This is not yet a basis convention or finite trace computation; diagonal C_delta2 corrections remain open."
+}

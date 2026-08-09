@@ -1,0 +1,265 @@
+{
+  "status": "path_ordering_creates_CP_only_through_a_multivalued_log_readout_and_does_not_select_a_unique_word",
+  "date": "2026-08-06",
+  "blind_protocol": {
+    "observed_CKM_or_masses_loaded": false,
+    "alphabet": {
+      "Q": "properized shear rotation -S",
+      "R": "Wilson rotation R_n(theta_star)",
+      "r": "inverse Wilson rotation R_n(theta_star)^(-1)"
+    },
+    "word_reduction": "QQ, Rr and rR immediate cancellations removed",
+    "maximum_lengths": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "geometric_gate": {
+    "fundamental_group": "pi1(RP3 times S1)=Z2 times Z is abelian",
+    "consequence": "Noncommuting Q and R cannot be two flat fundamental-loop holonomies. The word construction requires a new non-flat connection, an edge graph or a defect with specified path ordering.",
+    "path_graph_declared": false
+  },
+  "readout_gate": {
+    "direct_real": "Y=L+U is real; diagonalizing YY^T gives an orthogonal mixing matrix and CP=0.",
+    "cosine": "M=L+(U+U^T)/2 is real symmetric and gives CP=0.",
+    "principal_log": "M=L-i Log(U) is Hermitian and can give CP, but requires a branch of the matrix logarithm and a normalization relative to L."
+  },
+  "cumulative_scan": [
+    {
+      "maximum_word_length": 1,
+      "formal_axis_words": 6,
+      "branch_ambiguous_words": 2,
+      "direct_real_readout": {
+        "sector_operators": 6,
+        "ordered_pairs": 36,
+        "full_mixing_pairs": 28,
+        "nonzero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 0,
+        "minimum_total_word_length_for_CP": null,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.0
+      },
+      "cosine_readout": {
+        "sector_operators": 6,
+        "ordered_pairs": 36,
+        "full_mixing_pairs": 0,
+        "nonzero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 0,
+        "minimum_total_word_length_for_CP": null,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.0
+      },
+      "principal_log_readout": {
+        "sector_operators": 4,
+        "ordered_pairs": 16,
+        "full_mixing_pairs": 12,
+        "nonzero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 0,
+        "minimum_total_word_length_for_CP": null,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.0
+      }
+    },
+    {
+      "maximum_word_length": 2,
+      "formal_axis_words": 18,
+      "branch_ambiguous_words": 2,
+      "direct_real_readout": {
+        "sector_operators": 18,
+        "ordered_pairs": 324,
+        "full_mixing_pairs": 304,
+        "nonzero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 0,
+        "minimum_total_word_length_for_CP": null,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.0
+      },
+      "cosine_readout": {
+        "sector_operators": 18,
+        "ordered_pairs": 324,
+        "full_mixing_pairs": 208,
+        "nonzero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 0,
+        "minimum_total_word_length_for_CP": null,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.0
+      },
+      "principal_log_readout": {
+        "sector_operators": 16,
+        "ordered_pairs": 256,
+        "full_mixing_pairs": 240,
+        "nonzero_CP_pairs": 160,
+        "unique_absolute_CP_signatures": 40,
+        "minimum_total_word_length_for_CP": 3,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.05352703687345946
+      }
+    },
+    {
+      "maximum_word_length": 3,
+      "formal_axis_words": 42,
+      "branch_ambiguous_words": 6,
+      "direct_real_readout": {
+        "sector_operators": 42,
+        "ordered_pairs": 1764,
+        "full_mixing_pairs": 1720,
+        "nonzero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 0,
+        "minimum_total_word_length_for_CP": null,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.0
+      },
+      "cosine_readout": {
+        "sector_operators": 42,
+        "ordered_pairs": 1764,
+        "full_mixing_pairs": 1396,
+        "nonzero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 0,
+        "minimum_total_word_length_for_CP": null,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.0
+      },
+      "principal_log_readout": {
+        "sector_operators": 36,
+        "ordered_pairs": 1296,
+        "full_mixing_pairs": 1260,
+        "nonzero_CP_pairs": 1048,
+        "unique_absolute_CP_signatures": 252,
+        "minimum_total_word_length_for_CP": 3,
+        "same_word_CP_pairs": 4,
+        "maximum_abs_J": 0.05418916510588197
+      }
+    },
+    {
+      "maximum_word_length": 4,
+      "formal_axis_words": 90,
+      "branch_ambiguous_words": 6,
+      "direct_real_readout": {
+        "sector_operators": 90,
+        "ordered_pairs": 8100,
+        "full_mixing_pairs": 8008,
+        "nonzero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 0,
+        "minimum_total_word_length_for_CP": null,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.0
+      },
+      "cosine_readout": {
+        "sector_operators": 90,
+        "ordered_pairs": 8100,
+        "full_mixing_pairs": 7300,
+        "nonzero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 0,
+        "minimum_total_word_length_for_CP": null,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.0
+      },
+      "principal_log_readout": {
+        "sector_operators": 84,
+        "ordered_pairs": 7056,
+        "full_mixing_pairs": 6972,
+        "nonzero_CP_pairs": 6520,
+        "unique_absolute_CP_signatures": 1598,
+        "minimum_total_word_length_for_CP": 3,
+        "same_word_CP_pairs": 28,
+        "maximum_abs_J": 0.05609322393712484
+      }
+    },
+    {
+      "maximum_word_length": 5,
+      "formal_axis_words": 186,
+      "branch_ambiguous_words": 14,
+      "direct_real_readout": {
+        "sector_operators": 186,
+        "ordered_pairs": 34596,
+        "full_mixing_pairs": 34408,
+        "nonzero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 0,
+        "minimum_total_word_length_for_CP": null,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.0
+      },
+      "cosine_readout": {
+        "sector_operators": 186,
+        "ordered_pairs": 34596,
+        "full_mixing_pairs": 33148,
+        "nonzero_CP_pairs": 0,
+        "unique_absolute_CP_signatures": 0,
+        "minimum_total_word_length_for_CP": null,
+        "same_word_CP_pairs": 0,
+        "maximum_abs_J": 0.0
+      },
+      "principal_log_readout": {
+        "sector_operators": 172,
+        "ordered_pairs": 29584,
+        "full_mixing_pairs": 29412,
+        "nonzero_CP_pairs": 28552,
+        "unique_absolute_CP_signatures": 7080,
+        "minimum_total_word_length_for_CP": 3,
+        "same_word_CP_pairs": 100,
+        "maximum_abs_J": 0.06694248982353486
+      }
+    }
+  ],
+  "normalization_scan_at_length_four": [
+    {
+      "normalization": "raw",
+      "sector_operators": 84,
+      "ordered_pairs": 7056,
+      "full_mixing_pairs": 6972,
+      "nonzero_CP_pairs": 6520,
+      "unique_absolute_CP_signatures": 1598,
+      "minimum_total_word_length_for_CP": 3,
+      "same_word_CP_pairs": 28,
+      "maximum_abs_J": 0.05609322393712484
+    },
+    {
+      "normalization": "spectral",
+      "sector_operators": 84,
+      "ordered_pairs": 7056,
+      "full_mixing_pairs": 6900,
+      "nonzero_CP_pairs": 6360,
+      "unique_absolute_CP_signatures": 844,
+      "minimum_total_word_length_for_CP": 3,
+      "same_word_CP_pairs": 28,
+      "maximum_abs_J": 0.08011503266265341
+    },
+    {
+      "normalization": "per_edge",
+      "sector_operators": 84,
+      "ordered_pairs": 7056,
+      "full_mixing_pairs": 6964,
+      "nonzero_CP_pairs": 6552,
+      "unique_absolute_CP_signatures": 1474,
+      "minimum_total_word_length_for_CP": 3,
+      "same_word_CP_pairs": 28,
+      "maximum_abs_J": 0.08471842173312166
+    }
+  ],
+  "shortest_CP_gate": {
+    "maximum_length_one_CP_pairs": 0,
+    "maximum_length_two_CP_pairs": 160,
+    "minimum_total_word_length": 3,
+    "finding": "CP first appears for a pair with total word length three, for example a one-edge R sector against a two-edge QR sector."
+  },
+  "selector_gate": {
+    "length_two_unique_CP_signatures": 40,
+    "length_four_unique_CP_signatures": 1598,
+    "growth": "40 at length <=2, 252 at <=3, 1598 at <=4, 7080 at <=5",
+    "finding": "Increasing the allowed path length rapidly increases, rather than reduces, the number of blind CP candidates. No intrinsic shortest-word selector is present."
+  },
+  "branch_and_orientation_gate": {
+    "pi_rotation_issue": "Words with eigenangle pi have a non-unique principal generator axis and were excluded from the logarithmic scan.",
+    "inverse_word": "Reversing orientation sends the generator approximately to its negative and produces CP-conjugate choices unless an oriented parent structure is declared.",
+    "properization": "The reflection S was replaced by the proper rotation Q=-S; this signed representation choice must itself follow from the boundary theory."
+  },
+  "scientific_verdict": {
+    "positive": "Path ordering can generate a fixed noncommutative complex operator without introducing continuous coefficients, and CP appears already at total path length three in the logarithmic readout.",
+    "negative": "Real readouts give CP=0, while the logarithmic readout introduces branch, normalization, path-graph and orientation choices and yields rapidly growing candidate multiplicity.",
+    "status": "mechanism_exists_but_path_and_readout_selector_fail",
+    "next_gate": "Specify a concrete oriented edge complex or non-flat boundary connection that allows exactly one shortest word per quark sector and fixes the logarithm branch."
+  }
+}

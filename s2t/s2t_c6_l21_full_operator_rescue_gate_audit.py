@@ -1,0 +1,104 @@
+import json
+from pathlib import Path
+
+projection = json.loads(Path("s2t_c6_l21_n3_explicit_projection_results.json").read_text())
+laplacian = json.loads(Path("s2t_c6_l21_laplacian_variation_results.json").read_text())
+low_shell = json.loads(Path("s2t_c6_l21_low_shell_block_spec_results.json").read_text())
+
+projected_trace = projection["projection"]["projected_gram_trace"]
+projected_rank = projection["projection"]["projected_rank_numeric"]
+projected_eigenvalues = projection["projection"]["projected_eigenvalues"]
+trace_over_gap = projection["second_order_bookkeeping_proxy"]["trace_over_gap"]
+trace_over_gap_squared = projection["second_order_bookkeeping_proxy"]["trace_over_gap_squared"]
+
+rescue_terms = [
+    {
+        "term": "connection_variation_terms",
+        "must_do": "derive and evaluate delta_Gamma*nabla_alpha plus nabla(delta_Gamma)*alpha on the n=1 to n=3 block",
+        "why_it_matters": "these are same-order one-form terms and could in principle interfere destructively with the conformal-slice leakage",
+        "current_status": "not_computed",
+    },
+    {
+        "term": "curvature_Ricci_variation",
+        "must_do": "derive delta_Ric(alpha) and index-raising changes for the first ambient strain",
+        "why_it_matters": "RP3 is curved; Ricci terms are part of Delta_1 and cannot be dropped as scalar-like noise",
+        "current_status": "not_computed",
+    },
+    {
+        "term": "coexact_projector_variation",
+        "must_do": "include variation of the metric-dependent transverse slice, not only projection after applying the simplified operator",
+        "why_it_matters": "the physical determinant lives on a moving coexact subspace; projector variation could alter low-shell matrix elements",
+        "current_status": "not_computed",
+    },
+    {
+        "term": "Hilbert_inner_product_variation",
+        "must_do": "include variation of sqrt(g), one-form contraction, and basis normalization in matrix elements",
+        "why_it_matters": "a nonzero projected Gram trace is not a final determinant coefficient until the varied Hilbert metric is included",
+        "current_status": "not_computed",
+    },
+    {
+        "term": "second_variation_delta2_Delta",
+        "must_do": "prove genuine delta^2 Delta terms are local/subtracted/cancelled or compute their finite low-shell contribution",
+        "why_it_matters": "the logdet second variation has both trace-square and direct second-variation pieces",
+        "current_status": "not_computed",
+    },
+]
+
+pass_fail = [
+    {
+        "outcome": "full_operator_cancels_projected_trace",
+        "condition": "the sum of principal, connection, Ricci, projector, and Hilbert-metric terms gives zero n=1<->3 trace or exact antisymmetric cancellation",
+        "effect_on_C6": "rank10_route_reopened_for_next_odd_shell_gate",
+    },
+    {
+        "outcome": "full_operator_absorbs_projected_trace",
+        "condition": "a derived no-fit identity maps the finite n=3 contribution into the existing pi^-4/P02 residue",
+        "effect_on_C6": "conditional_rescue_but_requires_written_identity",
+    },
+    {
+        "outcome": "full_operator_leaves_nonzero_independent_trace",
+        "condition": "a nonzero n=1<->3 finite trace remains after all required terms and determinant signs are included",
+        "effect_on_C6": "clean_rank10_determinant_theorem_blocked",
+    },
+]
+
+results = {
+    "status": "full_operator_rescue_gate_open_after_nonzero_n3_projection",
+    "inputs": [
+        "s2t_c6_l21_n3_explicit_projection_results.json",
+        "s2t_c6_l21_laplacian_variation_results.json",
+        "s2t_c6_l21_low_shell_block_spec_results.json",
+    ],
+    "nonzero_projection_summary": {
+        "basis_dimension": projection["construction"]["basis_dimension"],
+        "projected_trace": projected_trace,
+        "projected_rank": projected_rank,
+        "projected_eigenvalues": projected_eigenvalues,
+        "trace_over_lambda_gap": trace_over_gap,
+        "trace_over_lambda_gap_squared": trace_over_gap_squared,
+    },
+    "remaining_rescue_terms": rescue_terms,
+    "pass_fail_outcomes": pass_fail,
+    "forbidden_claims": [
+        "Do not call pi^-4 a mature determinant theorem from the rank-10 pattern alone.",
+        "Do not call the nonzero n=3 projection the final C6 coefficient before full one-form variation and determinant bookkeeping.",
+        "Do not hide the n=3 finite trace in a fitted finite counterterm chosen after seeing the target alpha value.",
+    ],
+    "plain_language": (
+        "The third-floor signal survived the explicit basis test. The next question is not whether the basis exists; it does. "
+        "The next question is whether the complete one-form operator extinguishes that signal. If it does not, the clean rank-10 story fails."
+    ),
+    "verdict": (
+        "The explicit n=3 projection converts the C6 problem into a full-operator rescue gate. A nonzero rank-6 projected trace is present in the modelled conformal slice. "
+        "C6 can still survive only through an explicit cancellation by connection/Ricci/projector/Hilbert-metric/delta2 terms or through a derived no-fit absorption identity. "
+        "Absent such a result, pi^-4 remains structural compression rather than a mature Maxwell determinant theorem."
+    ),
+}
+
+Path("s2t_c6_l21_full_operator_rescue_gate_results.json").write_text(json.dumps(results, indent=2, ensure_ascii=False) + "\n")
+print(json.dumps({
+    "status": results["status"],
+    "projected_trace": projected_trace,
+    "projected_rank": projected_rank,
+    "remaining_rescue_terms": len(rescue_terms),
+}, indent=2, ensure_ascii=False))

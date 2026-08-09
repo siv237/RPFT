@@ -1,0 +1,70 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{xurl}
+\geometry{margin=2.3cm}
+
+\title{Алгебраические нормировки BCH и полный CKM gate}
+\author{}
+\date{6 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Замороженное меню}
+
+До сравнения с CKM зафиксированы коэффициенты
+\[
+ 1,\frac12,\frac13,\frac14,\frac16,\frac18,
+ \frac1{12},\frac1{24},\frac1{48}.
+\]
+Они соответствуют хиральному проектору, нормированным следам семейного и
+четырёхточечного пространств, двенадцати incidence-channel,
+\(S_4\)-усреднению и его signed-chiral удвоению.
+
+Для двух Wilson-Hamiltonian, трёх kernel, четырёх относительных ориентаций,
+девяти нормировок и двух односторонних реакций построены \(432\) кандидата.
+
+\section{Post-blind CKM}
+
+После построения меню загружен CKM-control. У \(52\) кандидатов величина
+\(|J|\) лежит в пределах множителя два от контроля. Лучший результат равен
+\[
+ \frac{|J|}{J_{\mathrm{CKM}}}=0.9888283.
+\]
+Следовательно, конечные размерности действительно естественно создают
+нужный порядок подавления.
+
+Однако проверка полной матрицы отрицательна. Для каждого кандидата перебраны
+все \(36\) независимых перенумераций up/down-поколений. Ни один кандидат с
+правильным масштабом \(J\) не воспроизводит одновременно три угла даже в
+грубой tolerance factor two. Лучший angle-log-RMS равен \(1.7283\), а
+лучший Frobenius score модулей матрицы равен \(0.8175\).
+
+\section{Mass-hierarchy no-go}
+
+Для любых \(c_u,c_d\in\mathbb R\)
+\[
+ H_u\mapsto H_u+c_uI,\qquad H_d\mapsto H_d+c_dI
+\]
+не меняет собственные векторы, mixing matrix и \(J\), но непрерывно меняет
+отношения собственных значений. Поэтому Wilson/BCH-Hamiltonian не определяют
+массовую иерархию до вывода центральных offsets и положительного
+Yukawa-readout из parent action.
+
+\section{Вердикт}
+
+Попадание в \(J\) является реальной структурной зацепкой, но не CKM-выводом.
+Следующий механизм должен создавать не только общий CP-scale, но и неравные
+family-edge metrics, фиксировать центральные части обоих секторов и
+одновременно порождать три иерархических угла.
+
+Машинные результаты сохранены в
+\path{s2t_chiral_bch_normalization_ckm_audit.py} и
+\path{s2t_chiral_bch_normalization_ckm_results.json}.
+
+\end{document}

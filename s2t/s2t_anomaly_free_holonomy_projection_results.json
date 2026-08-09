@@ -1,0 +1,215 @@
+{
+  "status": "anomaly_free_SU5_parent_Z2_Z4_projection_yields_U_2D_H_zero_sector_tower_sum_open",
+  "date": "2026-08-04",
+  "parent": {
+    "fermions": "(10+10bar) + 2 x (5+5bar)",
+    "scalar": "5_H",
+    "reason": "vectorlike conjugate pairs cancel parent and low-energy chiral gauge anomalies",
+    "SU5_cubic_anomaly_terms": {
+      "10": 1,
+      "10bar": -1,
+      "two_5": 2,
+      "two_5bar": -2
+    },
+    "SU5_cubic_anomaly_sum": 0
+  },
+  "holonomies": {
+    "Z4_element": "h=exp(i 3 pi Y)=diag(-1,-1,-1,-i,-i) in the SU5 fundamental",
+    "Z2_element": "P5=h^2=diag(+1,+1,+1,-1,-1)",
+    "det_h": [
+      1.0,
+      0.0
+    ],
+    "h_fourth_power_identity_error": 0.0,
+    "P5_equals_h_squared_error": 0.0,
+    "multiplet_flat_characters": {
+      "10+10bar": "+1",
+      "5+5bar_D_copies": "-1",
+      "5_H": "-i with conjugate +i"
+    },
+    "geometric_interpretation": "P5 is assigned to the RP3 Z2 cycle, h to the quarter S1 branch, and the remaining factors are existing flat-line characters"
+  },
+  "phase_table": [
+    {
+      "parent": "10+10bar",
+      "name": "U",
+      "six_Y": -4,
+      "P5": 1,
+      "flat_twist": "+1",
+      "copies": 1,
+      "kind": "vectorlike_Dirac",
+      "beta": [
+        1.7777777777777777,
+        0.0,
+        0.6666666666666666
+      ],
+      "Z4_hypercharge_phase": "+1",
+      "total_phase": "+1",
+      "periodic_zero_mode": true
+    },
+    {
+      "parent": "10+10bar",
+      "name": "Q",
+      "six_Y": 1,
+      "P5": -1,
+      "flat_twist": "+1",
+      "copies": 1,
+      "kind": "vectorlike_Dirac",
+      "beta": [
+        0.2222222222222222,
+        2.0,
+        1.3333333333333333
+      ],
+      "Z4_hypercharge_phase": "+i",
+      "total_phase": "-i",
+      "periodic_zero_mode": false
+    },
+    {
+      "parent": "10+10bar",
+      "name": "E",
+      "six_Y": 6,
+      "P5": 1,
+      "flat_twist": "+1",
+      "copies": 1,
+      "kind": "vectorlike_Dirac",
+      "beta": [
+        1.3333333333333333,
+        0.0,
+        0.0
+      ],
+      "Z4_hypercharge_phase": "-1",
+      "total_phase": "-1",
+      "periodic_zero_mode": false
+    },
+    {
+      "parent": "2 x (5+5bar)",
+      "name": "D",
+      "six_Y": 2,
+      "P5": 1,
+      "flat_twist": "-1",
+      "copies": 2,
+      "kind": "vectorlike_Dirac",
+      "beta": [
+        0.4444444444444444,
+        0.0,
+        0.6666666666666666
+      ],
+      "Z4_hypercharge_phase": "-1",
+      "total_phase": "+1",
+      "periodic_zero_mode": true
+    },
+    {
+      "parent": "2 x (5+5bar)",
+      "name": "L",
+      "six_Y": -3,
+      "P5": -1,
+      "flat_twist": "-1",
+      "copies": 2,
+      "kind": "vectorlike_Dirac",
+      "beta": [
+        0.6666666666666666,
+        0.6666666666666666,
+        0.0
+      ],
+      "Z4_hypercharge_phase": "+i",
+      "total_phase": "+i",
+      "periodic_zero_mode": false
+    },
+    {
+      "parent": "5_H",
+      "name": "H",
+      "six_Y": 3,
+      "P5": -1,
+      "flat_twist": "-i",
+      "copies": 1,
+      "kind": "complex_scalar",
+      "beta": [
+        0.16666666666666666,
+        0.16666666666666666,
+        0.0
+      ],
+      "Z4_hypercharge_phase": "-i",
+      "total_phase": "+1",
+      "periodic_zero_mode": true
+    },
+    {
+      "parent": "5_H",
+      "name": "T_H",
+      "six_Y": -2,
+      "P5": 1,
+      "flat_twist": "-i",
+      "copies": 1,
+      "kind": "complex_scalar",
+      "beta": [
+        0.1111111111111111,
+        0.0,
+        0.16666666666666666
+      ],
+      "Z4_hypercharge_phase": "-1",
+      "total_phase": "+i",
+      "periodic_zero_mode": false
+    }
+  ],
+  "zero_mode_content": {
+    "survivors_with_copies": [
+      "U",
+      "D",
+      "D",
+      "H"
+    ],
+    "projected_with_copies": [
+      "Q",
+      "E",
+      "L",
+      "L",
+      "T_H"
+    ],
+    "surviving_content": "one vectorlike U, two vectorlike D, one complex H doublet",
+    "beta_vector_Y_2_3": [
+      2.833333333333333,
+      0.16666666666666666,
+      2.0
+    ],
+    "target_beta_vector_Y_2_3": [
+      2.8333333333333335,
+      0.16666666666666666,
+      2.0
+    ],
+    "beta_vector_error": 4.440892098500626e-16
+  },
+  "anomaly_gate": {
+    "parent_SU5_anomaly": 0,
+    "low_energy_fermions": "vectorlike U and D pairs",
+    "low_energy_gauge_anomalies": "zero pairwise",
+    "scalar_H_anomaly": "none",
+    "status": "passed_for_the_constructed_parent_content"
+  },
+  "first_tower_data": {
+    "projected_component_circle_shifts": {
+      "Q": {
+        "phase": "-i",
+        "circle_shift_beta": 0.75
+      },
+      "E": {
+        "phase": "-1",
+        "circle_shift_beta": 0.5
+      },
+      "L": {
+        "phase": "+i",
+        "circle_shift_beta": 0.25
+      },
+      "T_H": {
+        "phase": "+i",
+        "circle_shift_beta": 0.25
+      }
+    },
+    "interpretation": "Q and L occupy quarter-shifted branches, E a half-shifted branch, and the color triplet a quarter-shifted branch",
+    "remaining_gate": "compute the regulated RP3 x S1 KK determinant difference between the surviving periodic branches and these fixed shifted partners"
+  },
+  "caveats": [
+    "The different flat characters must be derived from S2T sector attribution rather than declared ad hoc.",
+    "The construction closes representation content and anomaly consistency, not threshold magnitude.",
+    "Localized anomalies require a separate check if the projection is realized by boundaries rather than smooth flat bundles."
+  ],
+  "verdict": "An anomaly-free parent realization of the inverse U+2D+H hint exists. The combined RP3 Z2 parity, quarter hypercharge holonomy and conjugate flat characters retain exactly the desired vectorlike zero sector while projecting Q, L, E and the colored Higgs triplet. This upgrades the split ray from a bare representation guess to a consistent projection candidate. It is not yet a successful gauge prediction: the multiplet character assignment and the finite KK determinant sum remain to be derived."
+}

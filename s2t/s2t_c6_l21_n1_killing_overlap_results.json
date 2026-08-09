@@ -1,0 +1,176 @@
+{
+  "status": "n1_killing_overlap_not_symmetry_zero_for_p02_conformal_pairing",
+  "basis_labels": [
+    "E01",
+    "E02",
+    "E03",
+    "E12",
+    "E13",
+    "E23"
+  ],
+  "geometric_identification": {
+    "n1_shell": "six Killing one-forms from antisymmetric 4x4 generators on S3",
+    "degeneracy": 6,
+    "lambda": 4,
+    "descends_to_L21": true,
+    "note": "This checks a necessary overlap in the reduced conformal q_A pairing, not the full delta_A Delta_1 operator."
+  },
+  "normalization": {
+    "raw_basis_norm_sq_on_L21": 4.934802200544679,
+    "normalized_basis_rule": "divide overlap matrix by raw_basis_norm_sq_on_L21 for this basis"
+  },
+  "tested_deformations": {
+    "trace_direction": "A=I, q_A=1",
+    "traceless_diag_1_minus_1": "A=diag(1,-1,0,0), q_A=x0^2-x1^2"
+  },
+  "normalized_overlap_summaries": {
+    "trace_direction": {
+      "rank_numeric": 6,
+      "frobenius_norm": 2.449489742783178,
+      "max_abs_entry": 1.0,
+      "nonzero_entries_gt_1e-12": 6,
+      "eigenvalues": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "traceless_diag_1_minus_1": {
+      "rank_numeric": 4,
+      "frobenius_norm": 0.33333333333333337,
+      "max_abs_entry": 0.16666666666666669,
+      "nonzero_entries_gt_1e-12": 4,
+      "eigenvalues": [
+        -0.16666666666666669,
+        -0.16666666666666669,
+        0.0,
+        0.0,
+        0.16666666666666669,
+        0.16666666666666669
+      ]
+    }
+  },
+  "normalized_overlap_matrices": {
+    "trace_direction": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "traceless_diag_1_minus_1": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.16666666666666669,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.16666666666666669,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        -0.16666666666666669,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.16666666666666669,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "interpretation": [
+    {
+      "claim": "n=1 diagonal block vanishes by parity or representation symmetry",
+      "verdict": "fails_for_qA_pairing",
+      "reason": "The traceless P02 deformation has a nonzero normalized overlap matrix on the six Killing one-forms."
+    },
+    {
+      "claim": "this proves full C6 low-shell obstruction",
+      "verdict": "not_yet",
+      "reason": "The full one-form Laplacian variation includes principal, connection, Ricci, projection, and inner-product terms that may cancel this pairing."
+    },
+    {
+      "claim": "next calculation can ignore n=1 diagonal channel",
+      "verdict": "forbidden",
+      "reason": "There is no symmetry-zero at the basic P02/Killing overlap level; explicit coefficient cancellation must be shown if the full block vanishes."
+    }
+  ],
+  "verdict": "The first coexact shell is concretely the six Killing one-forms. A traceless P02 quadratic deformation has nonzero diagonal overlap on this shell in the conformal q_A pairing. Therefore the n=1->1 low-shell channel cannot be dismissed by parity or representation symmetry alone. C6 now needs an explicit full-operator cancellation or absorption calculation for this block."
+}

@@ -1,0 +1,162 @@
+{
+  "status": "K1_K14_priority_batch_closes_repeated_routes_and_rejects_loop_power_interpretation",
+  "date": "2026-08-07",
+  "candidates": {
+    "K1": {
+      "arithmetic": 0.3333333333333333,
+      "arithmetic_hits_one_third": true,
+      "same_chirality_doubling_required": true,
+      "real_mass_gate_passes": false,
+      "status": "arithmetic_pass_phase_to_mass_fail",
+      "reason": "Eta is additive, so two identical eta=-1/4 blocks give -1/2. But this doubles a determinant phase; the vectorlike real-mass response still cancels eta blockwise. A conjugate physical doubling would cancel eta rather than produce -1/2.",
+      "evidence_status": "F2_phase_to_mass_gate_closes_negatively_for_the_minimal_vectorlike_Dirac_product_determinant"
+    },
+    "K2": {
+      "proposed_sqrt2_half_product": 1.0000000000000002,
+      "canonical_J_after_product": 1.0000000000000002,
+      "rank9_J_after_product": 9.000000000000002,
+      "target_J": 5.4027533071585365,
+      "passes": false,
+      "status": "normalization_factors_cancel_vertex_map_underdefined",
+      "reason": "(sqrt(2))^2 times 1/2 equals one, so the proposal leaves the canonical J unchanged. Rank division is not specified by an operator."
+    },
+    "K3": {
+      "required_X": 450.83036686166565,
+      "status": "closed_circular_pruner"
+    },
+    "K4": {
+      "screen": {
+        "27/5": {
+          "value": 5.4,
+          "relative_error": 0.0005096118593621685
+        },
+        "17/pi": {
+          "value": 5.411268065124442,
+          "relative_error": 0.0015760034711603773
+        },
+        "pi^2/2+pi/4": {
+          "value": 5.720200363942127,
+          "relative_error": 0.058756533703469296
+        },
+        "pi*sqrt(3)": {
+          "value": 5.441398092702653,
+          "relative_error": 0.007152794759833473
+        }
+      },
+      "status": "numerical_screen_only_no_operator"
+    },
+    "K5": {
+      "status": "representation_count_only_level_not_derived",
+      "reason": "No action derives k=22 or a WZW level shift producing 23."
+    },
+    "K6": {
+      "status": "conditional_operator_success_parent_action_open",
+      "rank_one_kernel_consistent": true,
+      "rank23_complement_consistent": true,
+      "reason": {
+        "positive": "The topological part is strong: the square-root pi flux forces winding one, and the resulting rank-one Majorana kernel is internally consistent.",
+        "negative": "The current action does not force the root flux sector or the pairing condensate. Therefore the defect is a well-defined conditional submodel, not yet a derived saddle.",
+        "next_target": "Search the existing finite algebra/superconnection for a mandatory Z4 root connection and compute the pairing Hessian before introducing any new coupling."
+      }
+    },
+    "K7": {
+      "status": "regular_representation_not_derived",
+      "correction": "24 is the order of S4 and the dimension of its regular representation, not the dimension of the group itself."
+    },
+    "K8": {
+      "value": 23.140692632779263,
+      "relative_error_to_23": 0.00611707099040275,
+      "status": "closed_numerology_pruner"
+    },
+    "K9": {
+      "status": "corrected_finite_threshold_cone_algebraically_feasible_physically_infeasible",
+      "reason": {
+        "cone": "the sign cone is algebraically nonempty but physically empty when all threshold masses are required to lie between MZ and Lambda_S2T",
+        "hierarchy": "the least extreme exact below-scale solution needs max log 116.05; even allowing masses above Lambda needs max abs log 56.30, versus the available interval 29.92",
+        "best_physical": "saturating H3, Sigma8 and Sigma3 at MZ still leaves about 50.7 percent of the target vector unresolved in L2 norm",
+        "additional_gap": "with frozen v_S2T and alpha_em, fitting M_W by gauge couplings alone predicts M_Z low by about 0.54 percent",
+        "theory_effect": "the minimal XY/H3/Sigma8/Sigma3 finite-threshold basis is closed negatively as a simultaneous EW/QCD repair",
+        "next_gate": "either derive genuinely nonlogarithmic finite matching with fixed coefficients or freeze the gauge branch and move effort to sectors with independent successes"
+      }
+    },
+    "K10": {
+      "status": "BL_mixing_cannot_close_full_direction",
+      "reason": "B-L kinetic mixing adds a hypercharge-sensitive structure but does not independently supply the required SU2 and SU3 shifts.",
+      "BL_extension_status": "minimal_BL_extension_closes_root_representation_and_continuous_anomaly_gates_but_adds_unfixed_dynamics_and_kinetic_mixing"
+    },
+    "K11": {
+      "status": "closed_pruner",
+      "evidence_status": "two_loop_stress_test_closes_intermediate_running_route_negative_sign_and_anchor_failure"
+    },
+    "K12": {
+      "isolated_zero_shell_one_reversed_complex": 16.23484850566707,
+      "six_copy_zero_shell": 97.40909103400242,
+      "arithmetic_passes": true,
+      "full_BV_passes": false,
+      "status": "zero_shell_arithmetic_pass_full_BV_action_fail",
+      "reason": {
+        "standard_bosonic_complex": "wrong_sign_and_UV_divergent",
+        "single_statistics_reversed_complex": "positive but UV divergent; its spatial zero shell is pi4/6",
+        "positive_pi4_requires": "a derived renormalization prescription and a nonstandard graded parent complex; six copies match only the isolated spatial zero shell",
+        "status": "standard_BV_route_closed_as_a_pi4_derivation",
+        "next_allowed_route": "Only a separately derived graded parent symmetry may fix the field content, counterterm scheme and source map. Selecting the spatial zero shell or adding six copies because they fit the target is prohibited."
+      }
+    },
+    "K13": {
+      "variance": 0.010265982254684338,
+      "target": 0.010265982254684336,
+      "identity_passes": true,
+      "two_source_J": 1.4142135623730951,
+      "J_squared_over_2": 1.0000000000000002,
+      "source_map_derived": false,
+      "status": "identity_pass_source_action_fail",
+      "reason": {
+        "positive": "The six-channel Gaussian average is an explicit model, not merely arithmetic: ordinary-trace covariance of the channel mean equals pi^-4 exactly.",
+        "negative": "Every natural six-dimensional carrier currently in the project fails at least one of the half-shift, equal-weight, reality/gauge, statistics or trace-normalization gates.",
+        "reopening_condition": "Derive a bosonic six-channel antiperiodic auxiliary block with ordinary trace normalization and a unit variance readout, or an equivalent graded parent action, before comparison with alpha."
+      }
+    },
+    "K14": {
+      "existing_target_mD_MeV": 0.004596931373583115,
+      "radiative_candidate_mD_MeV": 2.669460417532257e-06,
+      "candidate_to_target_ratio": 0.0005807048660488322,
+      "status": "extra_alpha_loop_factor_suppresses_existing_target",
+      "reason": "The proposed alpha/(4pi) factor makes the already conditional Dirac insertion smaller by alpha/(4pi), rather than deriving it."
+    }
+  },
+  "inverse_power_reverse": {
+    "residual": 3.477651944194804e-09,
+    "S_inverse_3": 3.8859131668859376e-07,
+    "S_inverse_4": 2.835681538259608e-09,
+    "c3": 0.008949381509164543,
+    "c4": 1.2263901630961012,
+    "pi2_over_8": 1.2337005501361697,
+    "c4_relative_to_pi2_over_8": -0.005925576542266844,
+    "classification": "inverse_power_fit_not_loop_counting",
+    "loop_order_derived": false,
+    "anchor_uncertainty_propagated": false,
+    "conclusion": "The numbers c3 and c4 describe two chosen inverse-power ansatzes. They neither prove nor disprove three- or four-loop physics."
+  },
+  "tower_test": {
+    "n1": 1.5226791226556563e-05,
+    "n3": 3.7022504304163126e-10,
+    "total": 1.5227161455271536e-05,
+    "n3_over_total": 2.4313464077276332e-05,
+    "higher_shells_are_loop_orders": false,
+    "reason": "Shell and winding indices label modes inside one determinant. They do not count Feynman-loop order."
+  },
+  "priority_verdict": {
+    "K1": "stop in minimal vectorlike model",
+    "K2": "define an operator before more numerics",
+    "K6": "highest-value live action-level gate",
+    "K12": "new graded parent theory only; six copies by target are forbidden",
+    "K13": "live parent-action candidate; source normalization remains open",
+    "next_best_work": [
+      "derive the BdG defect and rank quotient from one parent action",
+      "derive a six-channel bosonic half-shifted carrier and source map",
+      "externally reproduce R1 before opening more numerical constants"
+    ],
+    "R_sci": 5,
+    "N_closed_physical": 0
+  }
+}

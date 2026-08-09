@@ -1,0 +1,97 @@
+{
+  "status": "global_defect_action_candidate_exists_rank23_does_not_fix_tree_level_denominator",
+  "date": "2026-08-03",
+  "global_tubular_action_candidate": {
+    "tube": "N(gamma), the solid-torus tubular neighborhood of the systolic core",
+    "quadratic_action": "S_tube=(1/2) integral_N(gamma) <Psi,B_Phi Psi>",
+    "operator": "B_Phi=Dirac_Sroot + Phi_1 Gamma_1 + Phi_2 Gamma_2",
+    "field_data": "Psi is the Majorana/Nambu spinor with the square-root torsion transition; Phi is the charge-two pairing section with forced unit winding.",
+    "asymptotic_mass_input": "The magnitude of Phi may be identified with the already declared heavy scale M_*; its topological profile adds no continuous fit parameter.",
+    "cycle_vertex": "S_Y on gamma uses the normalized kernel restriction R_gamma and the existing row (m_e^2/m_mu) v^T Qcycle^(1/2).",
+    "status": "well_defined_EFT_candidate_global_operator_coefficients_not_derived_from_S2T_spectral_action"
+  },
+  "finite_heavy_quotient": {
+    "full_dimension": 24,
+    "kernel_rank": 1,
+    "heavy_projector_rank": 23,
+    "projector_idempotence_error": 0.0,
+    "rank_only_mass_operator": "M0*P_heavy",
+    "rank_only_mass_eigenvalues": [
+      0.0,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "self_adjointness_error": 0.0
+  },
+  "tree_level_seesaw_test": {
+    "normalized_democratic_coupling": 0.40000000000000013,
+    "expected_normalized": 0.4,
+    "unnormalized_democratic_coupling": 9.200000000000003,
+    "expected_unnormalized": 9.2,
+    "interpretation": "With a canonically normalized light-to-heavy vector, the rank cancels. With equal unnormalized couplings, rank 23 appears in the numerator. Neither case produces a tree-level denominator 23."
+  },
+  "determinant_test": {
+    "log_pseudodeterminant": 21.074686833105574,
+    "expected": 21.074686833105567,
+    "interpretation": "The quotient rank enters the Gaussian determinant multiplicity as 23*log(M0), not as a mass eigenvalue 23*M0."
+  },
+  "symmetry_test": {
+    "heavy_symmetry": "O(23) acting on im(P_heavy)",
+    "invariance_errors_for_multiple_scalars": {
+      "1.0": 4.440892098500626e-16,
+      "2.0": 8.881784197001252e-16,
+      "23.0": 1.0658141036401503e-14,
+      "23.31830988618379": 1.0658141036401503e-14
+    },
+    "conclusion": "O(23) covariance fixes the mass operator to m*P_heavy but leaves the scalar m arbitrary. Symmetry and rank alone cannot select m=23*M0."
+  },
+  "desired_denominator_operator": {
+    "operator": "M0*(Tr(P_heavy)+pi^(-1))*P_heavy",
+    "D_nu": 23.31830988618379,
+    "normalized_seesaw_contraction": 0.01715390188879005,
+    "expected": 0.017153901888790058,
+    "status": "algebraically_works_but_the_trace_normalization_rule_is_an_additional_action_principle"
+  },
+  "action_level_gate": {
+    "closed": [
+      "global tubular EFT operator can be written",
+      "square-root transition and odd pairing winding are compatible",
+      "one real kernel and rank-23 heavy quotient are consistent",
+      "Qcycle Yukawa row can be attached through the normalized restriction map"
+    ],
+    "open": [
+      "derive why the heavy mass scalar equals Tr(P_heavy)+pi^(-1)",
+      "show whether this scalar arises from a one-loop self-energy, spectral trace, or collective stiffness",
+      "avoid defining the desired denominator directly in the mass operator"
+    ]
+  },
+  "theory_effect": {
+    "rank_one_defect": "retained",
+    "rank_23_heavy_quotient": "retained",
+    "D_nu_23_plus_inverse_pi": "not_yet_derived_at_action_level",
+    "global_BdG_EFT": "constructed_conditionally",
+    "next_target": "derive a trace-induced collective mass normalization in the same action"
+  },
+  "verdict": "The global defect EFT can be written consistently and its heavy quotient has rank 23, but a tree-level quadratic action does not turn that rank into the mass denominator 23. Canonical coupling removes the rank; unnormalized democratic coupling puts it in the numerator; the Gaussian determinant contains 23 log(M0). Recovering D_nu requires a new derived collective normalization, such as a spectral or loop self-energy proportional to Tr(P_heavy), rather than the rank count alone."
+}

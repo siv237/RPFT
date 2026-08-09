@@ -1,0 +1,240 @@
+{
+  "status": "full_coexact_delta_nonzero_normalization_decides_closure",
+  "inputs": {
+    "alpha_inv_reference": 137.035999177,
+    "S_geo": 137.0363037758784,
+    "S_vac_current": 137.03599917352236,
+    "current_error": -3.477651944194804e-09,
+    "pi4_term": 5.466750295392699e-07,
+    "Vol_RP3": 9.869604401089358
+  },
+  "tower": {
+    "T_coex_S3": 1.531916808400627e-05,
+    "T_coex_RP3": 1.5227161455271536e-05,
+    "RP3_over_S3": 0.9939940192424161,
+    "first_rp3_mode_fraction": 0.9999756862947792,
+    "first_modes": [
+      {
+        "n": 1,
+        "rho": 2,
+        "lambda": 4,
+        "degeneracy_s3": 6,
+        "degeneracy_rp3": 6,
+        "rp3_kept": true,
+        "rho_bessel_tail": 2.537798537759427e-06,
+        "q_used": 4,
+        "contribution_s3": 1.5226791226556563e-05,
+        "contribution_rp3": 1.5226791226556563e-05
+      },
+      {
+        "n": 2,
+        "rho": 3,
+        "lambda": 9,
+        "degeneracy_s3": 16,
+        "degeneracy_rp3": 0,
+        "rp3_kept": false,
+        "rho_bessel_tail": 5.750337219772005e-09,
+        "q_used": 3,
+        "contribution_s3": 9.200539551635208e-08,
+        "contribution_rp3": 0.0
+      },
+      {
+        "n": 3,
+        "rho": 4,
+        "lambda": 16,
+        "degeneracy_s3": 30,
+        "degeneracy_rp3": 30,
+        "rp3_kept": true,
+        "rho_bessel_tail": 1.2340834768054375e-11,
+        "q_used": 2,
+        "contribution_s3": 3.7022504304163126e-10,
+        "contribution_rp3": 3.7022504304163126e-10
+      },
+      {
+        "n": 4,
+        "rho": 5,
+        "lambda": 25,
+        "degeneracy_s3": 48,
+        "degeneracy_rp3": 0,
+        "rp3_kept": false,
+        "rho_bessel_tail": 2.5691838264735402e-14,
+        "q_used": 2,
+        "contribution_s3": 1.2332082367072992e-12,
+        "contribution_rp3": 0.0
+      },
+      {
+        "n": 5,
+        "rho": 6,
+        "lambda": 36,
+        "degeneracy_s3": 70,
+        "degeneracy_rp3": 70,
+        "rp3_kept": true,
+        "rho_bessel_tail": 5.24557838538624e-17,
+        "q_used": 2,
+        "contribution_s3": 3.671904869770368e-15,
+        "contribution_rp3": 3.671904869770368e-15
+      },
+      {
+        "n": 6,
+        "rho": 7,
+        "lambda": 49,
+        "degeneracy_s3": 96,
+        "degeneracy_rp3": 0,
+        "rp3_kept": false,
+        "rho_bessel_tail": 1.0566025458188674e-19,
+        "q_used": 2,
+        "contribution_s3": 1.0143384439861127e-17,
+        "contribution_rp3": 0.0
+      },
+      {
+        "n": 7,
+        "rho": 8,
+        "lambda": 64,
+        "degeneracy_s3": 126,
+        "degeneracy_rp3": 126,
+        "rp3_kept": true,
+        "rho_bessel_tail": 2.1071801180054933e-22,
+        "q_used": 1,
+        "contribution_s3": 2.6550469486869216e-20,
+        "contribution_rp3": 2.6550469486869216e-20
+      },
+      {
+        "n": 8,
+        "rho": 9,
+        "lambda": 81,
+        "degeneracy_s3": 160,
+        "degeneracy_rp3": 0,
+        "rp3_kept": false,
+        "rho_bessel_tail": 4.170343375358268e-25,
+        "q_used": 1,
+        "contribution_s3": 6.672549400573229e-23,
+        "contribution_rp3": 0.0
+      }
+    ]
+  },
+  "normalization_variants_ranked": [
+    {
+      "normalization": "half_raw_T_over_S",
+      "sign": "add",
+      "Delta_abs": 5.5558859352246605e-08,
+      "Delta_over_pi4_term": 0.10163050505356142,
+      "S_vac_with_delta": 137.03599922908123,
+      "error_vs_alpha_inv": 5.208121933719667e-08,
+      "abs_error_vs_alpha_inv": 5.208121933719667e-08,
+      "error_ratio_vs_current": 14.975972343677212
+    },
+    {
+      "normalization": "half_raw_T_over_S",
+      "sign": "subtract",
+      "Delta_abs": 5.5558859352246605e-08,
+      "Delta_over_pi4_term": 0.10163050505356142,
+      "S_vac_with_delta": 137.03599911796348,
+      "error_vs_alpha_inv": -5.903652322558628e-08,
+      "abs_error_vs_alpha_inv": 5.903652322558628e-08,
+      "error_ratio_vs_current": 16.975972343677213
+    },
+    {
+      "normalization": "raw_T_over_S",
+      "sign": "add",
+      "Delta_abs": 1.1111771870449321e-07,
+      "Delta_over_pi4_term": 0.20326101010712283,
+      "S_vac_with_delta": 137.03599928464007,
+      "error_vs_alpha_inv": 1.0764006219687872e-07,
+      "abs_error_vs_alpha_inv": 1.0764006219687872e-07,
+      "error_ratio_vs_current": 30.951936514682206
+    },
+    {
+      "normalization": "raw_T_over_S",
+      "sign": "subtract",
+      "Delta_abs": 1.1111771870449321e-07,
+      "Delta_over_pi4_term": 0.20326101010712283,
+      "S_vac_with_delta": 137.03599906240464,
+      "error_vs_alpha_inv": -1.1459536608526832e-07,
+      "abs_error_vs_alpha_inv": 1.1459536608526832e-07,
+      "error_ratio_vs_current": 32.9519365146822
+    },
+    {
+      "normalization": "pi2_over_2_casmix_P02",
+      "sign": "add",
+      "Delta_abs": 5.466766918121624e-07,
+      "Delta_over_pi4_term": 1.0000030406965796,
+      "S_vac_with_delta": 137.03599972019904,
+      "error_vs_alpha_inv": 5.431990359738847e-07,
+      "abs_error_vs_alpha_inv": 5.431990359738847e-07,
+      "error_ratio_vs_current": 156.19706764520797
+    },
+    {
+      "normalization": "volume_weighted_half",
+      "sign": "add",
+      "Delta_abs": 5.483439627824377e-07,
+      "Delta_over_pi4_term": 1.003052879961564,
+      "S_vac_with_delta": 137.03599972186632,
+      "error_vs_alpha_inv": 5.448663102924911e-07,
+      "abs_error_vs_alpha_inv": 5.448663102924911e-07,
+      "error_ratio_vs_current": 156.67649294289754
+    },
+    {
+      "normalization": "pi2_over_2_casmix_P02",
+      "sign": "subtract",
+      "Delta_abs": 5.466766918121624e-07,
+      "Delta_over_pi4_term": 1.0000030406965796,
+      "S_vac_with_delta": 137.03599862684567,
+      "error_vs_alpha_inv": -5.501543398622744e-07,
+      "abs_error_vs_alpha_inv": 5.501543398622744e-07,
+      "error_ratio_vs_current": 158.19706764520797
+    },
+    {
+      "normalization": "volume_weighted_half",
+      "sign": "subtract",
+      "Delta_abs": 5.483439627824377e-07,
+      "Delta_over_pi4_term": 1.003052879961564,
+      "S_vac_with_delta": 137.0359986251784,
+      "error_vs_alpha_inv": -5.518216141808807e-07,
+      "abs_error_vs_alpha_inv": 5.518216141808807e-07,
+      "error_ratio_vs_current": 158.67649294289754
+    },
+    {
+      "normalization": "volume_weighted_full",
+      "sign": "add",
+      "Delta_abs": 1.0966879255648754e-06,
+      "Delta_over_pi4_term": 2.006105759923128,
+      "S_vac_with_delta": 137.03600027021028,
+      "error_vs_alpha_inv": 1.093210272529177e-06,
+      "abs_error_vs_alpha_inv": 1.093210272529177e-06,
+      "error_ratio_vs_current": 314.3529858857951
+    },
+    {
+      "normalization": "volume_weighted_full",
+      "sign": "subtract",
+      "Delta_abs": 1.0966879255648754e-06,
+      "Delta_over_pi4_term": 2.006105759923128,
+      "S_vac_with_delta": 137.03599807683443,
+      "error_vs_alpha_inv": -1.1001655764175666e-06,
+      "abs_error_vs_alpha_inv": 1.1001655764175666e-06,
+      "error_ratio_vs_current": 316.3529858857951
+    }
+  ],
+  "paired_candidates": [
+    {
+      "candidate": "Hodge_exact_scalar_ghost",
+      "status": "does_not_cancel_coexact",
+      "reason": "Exact one-forms pair with scalar ghost sectors, but coexact transverse modes remain physical Maxwell modes."
+    },
+    {
+      "candidate": "RP3_even_odd_projection",
+      "status": "insufficient",
+      "reason": "The quotient removes even n coexact levels, but the dominant n=1 level survives; T_RP3/T_S3≈0.994."
+    },
+    {
+      "candidate": "Dirac_or_spin_cover_pairing",
+      "status": "not_available_in_EM_determinant",
+      "reason": "A fermionic determinant can affect full QED scale anomalies, but it is not a gauge-invariant cancellation of the pure Maxwell coexact Bessel tail without a derived supersymmetric/BRST pairing."
+    },
+    {
+      "candidate": "first_ambient_strain_P02",
+      "status": "explains_pi4_residue_not_full_tower_cancellation",
+      "reason": "P02 explains the finite-rank mixed pi^-4 residue, but does not remove the ordinary transverse coexact tower unless the tower is reinterpreted as already summarized by that mixed residue."
+    }
+  ],
+  "verdict": "The full RP3 coexact Bessel tower is nonzero and dominated by the first transverse mode. Naive raw normalizations are too large compared with the current alpha residual. The only variant close to the existing pi^-4 term is the volume-weighted half determinant with P02/Casimir mixing, which effectively identifies the pi^-4 term as a normalized summary of the coexact tower rather than an additional Delta_tower correction. No standard paired sector cancels the tower in the ordinary Maxwell--ghost determinant."
+}

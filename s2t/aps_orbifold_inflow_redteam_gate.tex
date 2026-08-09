@@ -1,0 +1,163 @@
+\chapter{APS, орбифолд и anomaly inflow: red-team смены языка}
+
+Предложенная смена рамки содержательна: она переносит внимание с локального
+bookkeeping на глобальные спектральные асимметрии, flat bundles и
+bulk--boundary consistency. Однако смена языка не может автоматически
+перевести прежние условные коэффициенты в статус вывода. Ниже отделены
+точные тождества от новых операторных гипотез.
+
+\section{Арифметика \texorpdfstring{\(1/3\)}{1/3} и APS-gate}
+
+Числовое равенство
+\begin{equation}
+ \frac14+\left|\zeta_R(-1)\right|
+ =\frac14+\frac1{12}=\frac13
+\end{equation}
+точно. Но его два слагаемых принадлежат разным конструкциям. APS-терм имеет
+вид \(-\frac12(\eta+h)\) для конкретного граничного оператора, ориентации,
+метрики, spin-структуры и twisting bundle. В уже проверенной конвенции для
+двух spin-структур \(\mathbb{RP}^3\) получены
+\begin{equation}
+ \eta_D=\pm\frac14,
+\end{equation}
+а не универсальное значение \(-1/2\). Поэтому число \(+1/4\) не следует из
+имеющегося eta-аудита без дополнительного удвоения или иного twisted
+оператора.
+
+Кроме того, \(\zeta_R(-1)\) регуляризует линейную сумму уровней, тогда как
+\(\det' D\) определяется производной spectral zeta-функции. Переход к
+абсолютному значению и аддитивное включение в \(\delta m/m\) требуют одного
+явного relative operator; это не является следствием одного удаления
+нулевой моды.
+
+Топологически
+\begin{equation}
+ \pi_1(\mathbb{RP}^3\times S^1)=\mathbb Z_2\times\mathbb Z.
+\end{equation}
+Torsion holonomy на первом генераторе и spin sign окружности на втором
+генераторе являются независимой парой. Их произведение описывает специально
+выбранный диагональный цикл, а не автоматически определённую ``полную
+голономию компактного направления''. Наконец, назначение нетривиальной
+\(\mathbb Z_2\)-линии мюону, но не тау, само является family-selector.
+
+\begin{nogocriterion}[APS-разложение коэффициента]
+Равенство \(1/3=1/4+1/12\) получает физический статус только после задания
+одного twisted Dirac/relative-mass operator, для которого вычислены eta,
+kernel, determinant/Casimir prescription и знак обоих вкладов, а
+mu/tau-twist следует из представления конечной алгебры до использования их
+масс.
+\end{nogocriterion}
+
+\section{Почему \texorpdfstring{\(24-1\)}{24-1} ещё не выводит 23}
+
+Арифметика \(24-1=23\) не эквивалентна gauge reduction. Конформный фактор
+метрики, нулевая мода диффеоморфизма вдоль \(S^1\) и направление в
+конечномерном Majorana-модуле принадлежат разным комплексам. Факторизация
+функционального интеграла по gauge orbit требует явных constraints, ghost
+операторов и kernel counting; она не является вычитанием одного заранее
+выбранного вектора из \(\mathbb R^{24}\).
+
+Коэффициент \(1/24\) в разложении \(\widehat A\)-рода фиксирует
+характеристический класс, но сам по себе не устанавливает физический rank
+\(24-1\). Тем самым прежний \(Q_8\)-no-go действительно не применим к
+настоящей gauge-факторизации, но вместо него возникает более сильная
+обязанность построить полный quadratic/BV или constrained Majorana complex.
+
+\section{SU(5)-орбифолд: что уже выведено}
+
+Матрица из предложенной таблицы
+\begin{equation}
+ P_{bad}=\diag(-1,-1,-1,+1,+1)
+\end{equation}
+имеет determinant \(-1\) и не принадлежит \(SU(5)\). Корректный order-two
+элемент имеет вид
+\begin{equation}
+ P_5=\diag(+1,+1,+1,-1,-1)\in SU(5).
+\end{equation}
+Он уже проверен в предыдущем gate и оставляет
+\(S(U(3)\times U(2))\). Однако один \(P_5\) фиксирует adjoint breaking, но
+не определяет все intrinsic parities matter multiplets.
+
+Более сильная существующая конструкция использует
+\begin{equation}
+ h=\diag(-1,-1,-1,-i,-i),\qquad h^2=P_5,
+\end{equation}
+то есть совместную \(Z_2/Z_4\)-проекцию и conjugate flat characters для
+vectorlike parent
+\begin{equation}
+ (\mathbf{10}+\overline{\mathbf{10}})
+ +2(\mathbf5+\overline{\mathbf5})+\mathbf5_H.
+\end{equation}
+Она действительно оставляет ровно \(U+2D+H\) и даёт
+\begin{equation}
+ \Delta b_{Y,2,3}=\left(\frac{17}{6},\frac16,2\right).
+\end{equation}
+Следовательно, representation direction уже не является голой подгонкой.
+Но flat characters пока не выведены из parent action, finite shifted-partner
+determinant проваливает direction gate, а ordinary running имеет неверный
+знак для требуемого legacy-сдвига. Абсолютный threshold не закрыт.
+
+\section{Inverse susceptibility и предел anomaly inflow}
+
+Шесть-канальное тождество
+\begin{equation}
+ \operatorname{Var}(\bar x)
+ =\frac1{6\zeta(4,1/2)}=\frac1{\pi^4}
+\end{equation}
+остаётся точным положительным результатом. Геометрическое чтение
+\(3\times2\) через self-dual two-forms и двусторонний half-integer spectrum
+также согласовано с уже выполненным аудитом. Но оно требует нового
+chiral, antiperiodic, fourth-order auxiliary sector и ordinary trace.
+
+Anomaly inflow фиксирует аномальную вариацию или фазу boundary partition
+function. Он не фиксирует автоматически вещественный finite response
+\(-1/(\pi^4S_{geo}^2)\), unit source coefficient и относительную нормировку
+с periodic \(1/(24S_{geo})\)-ветвью. Более того, существующие surviving
+\(U,D\)-фермионы vectorlike, поэтому их gauge anomaly сокращается и сама по
+себе не задаёт ненулевой inflow level.
+
+\section{Размерностная поправка parent action}
+
+Предложенная форма
+\begin{equation}
+ \int_{M^5}\Tr\left(A\wedge dA+\frac23A^3\right)
+\end{equation}
+является интегралом трёхформы и не определяет пяти-мерное действие. Gauge
+Chern--Simons five-form имеет схематический вид
+\begin{equation}
+ \omega_5(A)=\Tr\left(AF^2-\frac12A^3F+\frac1{10}A^5\right),
+ \qquad d\omega_5=\Tr F^3,
+\end{equation}
+с convention-dependent overall normalization.
+
+Есть и APS-dimensional gate. Если filling имеет boundary
+\(\mathbb{RP}^3\), можно использовать четырёхмерную APS-задачу с
+трёхмерным eta-оператором. Если boundary объявлена равной
+\(\mathbb{RP}^3\times S^1\), необходимо заново задать соответствующий
+пятимерный оператор и его четырёхмерную boundary spectral asymmetry;
+\(\eta_D(\mathbb{RP}^3)\) нельзя просто перенести без product theorem.
+
+\begin{protocol}[Definition of Done APS/orbifold/inflow ветви]
+Новая рамка считается физически переоткрывшей II.A только если:
+\begin{enumerate}
+ \item заданы bulk manifold, boundary, bundles и корректная five-form;
+ \item вычислен anomaly polynomial полного проецированного спектра;
+ \item inflow level квантован и фиксирован cancellation, а не наблюдаемым;
+ \item twisted APS operator выводит mu/tau branches и общий mass term;
+ \item полный constrained complex даёт ровно физический rank 23;
+ \item та же конструкция фиксирует sign и magnitude EW/QCD thresholds;
+ \item tensor sector выводит half-shift, fourth-order stiffness, ordinary
+ trace и unit response map;
+ \item хотя бы два normalization-sensitive сектора проходят blind-test.
+\end{enumerate}
+\end{protocol}
+
+Текущий вердикт: это конструктивная смена пространства поиска, но не
+устранение блокировок. Сохраняются три сильных кандидата --- APS eta как
+sector discriminator, точная anomaly-free \(Z_2/Z_4\) split-проекция и
+self-dual inverse susceptibility. Не выведены общий mass operator,
+family-selector, rank 23, inflow level, threshold magnitude, seed
+\(\rho_0\), CKM/PMNS и strong dynamics.
+
+Машинный red-team сохранён в
+\texttt{s2t\_aps\_orbifold\_inflow\_redteam\_results.json}.

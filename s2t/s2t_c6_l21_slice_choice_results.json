@@ -1,0 +1,64 @@
+{
+  "status": "conformal_slice_allowed_only_as_diffeomorphism_reduced_working_rule",
+  "slice_options": [
+    {
+      "slice": "raw_induced_strain",
+      "metric_variation": "h_A(u,v)=2<u,A v>",
+      "advantage": "directly follows from the ambient deformation F_eps(x)=x+eps A x",
+      "risk": "contains a Lie-derivative part that should be pure coordinate change, but can contaminate a truncated or improperly projected trace",
+      "status": "safe_but_more_complicated"
+    },
+    {
+      "slice": "conformal_representative",
+      "metric_variation": "h_A^red=2 q_A g",
+      "advantage": "keeps only the geometric normal/shape part after removing coordinate reparametrization",
+      "risk": "valid only if the determinant, zero/gauge factors and coexact projection are invariant under the removed Lie-derivative direction",
+      "status": "preferred_if_diffeomorphism_invariance_is_enforced"
+    }
+  ],
+  "conditions_to_drop_lie_part": [
+    {
+      "condition": "closed_manifold_no_boundary",
+      "meaning": "L(2,1) has no boundary, so pure coordinate variations should not create boundary terms.",
+      "status": "passes"
+    },
+    {
+      "condition": "diffeomorphism_covariant_regularization",
+      "meaning": "The determinant regularization and local counterterms must respect coordinate invariance.",
+      "status": "required"
+    },
+    {
+      "condition": "physical_coexact_projection_covariance",
+      "meaning": "The transverse/coexact slice must be transported consistently under coordinate changes, not kept fixed as a coordinate subspace.",
+      "status": "required"
+    },
+    {
+      "condition": "zero_gauge_volume_separation",
+      "meaning": "Gauge and zero-mode factors must not reintroduce a finite contribution from the removed coordinate direction.",
+      "status": "required"
+    },
+    {
+      "condition": "no_truncation_before_cancellation",
+      "meaning": "The Lie-derivative part may drop only in the full trace or in a symmetry-respecting finite calculation, not after arbitrary shell truncation.",
+      "status": "required"
+    }
+  ],
+  "allowed_working_rule": {
+    "rule": "Use h_A^red=2 q_A g for the C6 finite deformation trace only as a diffeomorphism-reduced representative.",
+    "must_state": "The Hess(q_A)=L_{grad(q_A)/2}g part is not discarded dynamically; it is quotiented as an infinitesimal coordinate reparametrization.",
+    "failure_mode": "If the coexact determinant calculation is not invariant under this reparametrization, the raw strain must be used and C6 rank-10 collapse must be recomputed."
+  },
+  "impact_on_next_matrix_elements": [
+    {
+      "if": "conformal_representative_is_valid",
+      "then": "matrix elements are driven by q_A times local conformal variation of the one-form Laplacian plus normalization terms",
+      "benefit": "the deformation space is visibly ell=0 plus ell=2, matching P02"
+    },
+    {
+      "if": "raw_strain_must_be_used",
+      "then": "matrix elements must include Hess(q_A) derivative couplings explicitly",
+      "benefit": "fully safe geometrically, but harder and may spread trace over more shell couplings"
+    }
+  ],
+  "verdict": "The conformal representative h_A^red=2 q_A g may be used only as a diffeomorphism-reduced slice, not as an unexplained deletion of Hess(q_A). This is conditionally justified on closed L(2,1) if determinant regularization, coexact projection, and zero/gauge separation are all coordinate-covariant. If any of these conditions fail, the raw induced strain h_A=2<u,A v> must be used for the matrix elements."
+}

@@ -1,0 +1,87 @@
+{
+  "status": "n3_tangent_signal_fails_coexact_divergence_gate",
+  "source": "s2t_c6_l21_n3_tangent_projection_results.json",
+  "geometry_note": "For a tangent ambient representative on the unit sphere, nonzero intrinsic/ambient divergence signals a non-coexact component; the transverse Hodge projector is still required.",
+  "row_checks": [
+    {
+      "basis": "E01",
+      "divergence_max_coeff": 96.0,
+      "divergence_norm_sq_on_L21": 421.10312111314596,
+      "divergence_degree": 4
+    },
+    {
+      "basis": "E02",
+      "divergence_max_coeff": 48.0,
+      "divergence_norm_sq_on_L21": 105.27578027828649,
+      "divergence_degree": 4
+    },
+    {
+      "basis": "E03",
+      "divergence_max_coeff": 48.0,
+      "divergence_norm_sq_on_L21": 105.27578027828649,
+      "divergence_degree": 4
+    },
+    {
+      "basis": "E12",
+      "divergence_max_coeff": 48.0,
+      "divergence_norm_sq_on_L21": 105.27578027828649,
+      "divergence_degree": 4
+    },
+    {
+      "basis": "E13",
+      "divergence_max_coeff": 48.0,
+      "divergence_norm_sq_on_L21": 105.27578027828649,
+      "divergence_degree": 4
+    },
+    {
+      "basis": "E23",
+      "divergence_max_coeff": 0.0,
+      "divergence_norm_sq_on_L21": 0.0,
+      "divergence_degree": -1
+    }
+  ],
+  "tangent_gram_summary": {
+    "trace": 85.33333333333334,
+    "rank": 6,
+    "eigenvalues": [
+      12.0,
+      14.666666666666664,
+      14.666666666666668,
+      14.666666666666668,
+      14.666666666666668,
+      14.666666666666668
+    ]
+  },
+  "divergence_gram_summary": {
+    "trace": 170.6666666666667,
+    "rank": 5,
+    "max_abs_entry": 85.33333333333334,
+    "eigenvalues": [
+      0.0,
+      21.333333333333336,
+      21.333333333333336,
+      21.333333333333336,
+      21.333333333333336,
+      85.33333333333334
+    ]
+  },
+  "interpretation": [
+    {
+      "claim": "the tangent cubic signal is already coexact",
+      "verdict": "fails",
+      "reason": "The divergence Gram trace is nonzero, so an exact/longitudinal component remains."
+    },
+    {
+      "claim": "the n=3 channel is irrelevant",
+      "verdict": "not_yet",
+      "reason": "The tangent Gram trace is nonzero; only the explicit transverse Hodge projection can decide whether a coexact residue survives."
+    }
+  ],
+  "next_required_audit": {
+    "name": "n3_hodge_coexact_projection",
+    "task": "subtract the gradient/exact component from the tangent cubic signal and recompute the coexact Gram trace",
+    "zero_route_pass": "coexact-projected Gram trace vanishes or cancels in determinant bookkeeping",
+    "obstruction_condition": "a nonzero coexact-projected 1<->3 trace remains outside the existing pi^-4/P02 residue"
+  },
+  "verdict": "The tangent-projected cubic signal fails the coexact divergence gate: it is tangent and nonzero, but not divergence-free. Therefore C6 is not decided yet. The next calculation must apply the Hodge coexact projector on the n=3 tangent cubic sector."
+}

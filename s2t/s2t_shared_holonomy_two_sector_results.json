@@ -1,0 +1,1329 @@
+{
+  "status": "simple_shared_S4_holonomy_fails_exact_two_sector_gate",
+  "date": "2026-08-05",
+  "model": {
+    "family_carrier": "standard three-dimensional representation of S4 on the sum-zero subspace of four spin-menu states",
+    "tensor_carrier": "the same triplet used as three self-dual tensor channels on S1",
+    "boundary_rule": "eigenphases of plus or minus the shared holonomy set the S1 shifts",
+    "tensor_readout": "sum over channels and the full integer tower of (n+a)^-4, divided by pi^4; periodic zero modes are omitted"
+  },
+  "scan": {
+    "S4_elements": 24,
+    "signed_variants": 48,
+    "current_D8_order": 8,
+    "full_M3_signed_variants": 24,
+    "exact_pi4_signed_variants": 1,
+    "joint_survivors": 0
+  },
+  "class_summary": [
+    {
+      "cycle_type": "1+1+1+1",
+      "central_sign": 1,
+      "count": 1,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tensor_response_over_pi4": 0.06666666666666667,
+      "full_M3_count": 0,
+      "exact_pi4_count": 0
+    },
+    {
+      "cycle_type": "1+1+1+1",
+      "central_sign": -1,
+      "count": 1,
+      "triplet_phases": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 1.0,
+      "full_M3_count": 0,
+      "exact_pi4_count": 1
+    },
+    {
+      "cycle_type": "2+1+1",
+      "central_sign": 1,
+      "count": 6,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.37777777777777777,
+      "full_M3_count": 4,
+      "exact_pi4_count": 0
+    },
+    {
+      "cycle_type": "2+1+1",
+      "central_sign": -1,
+      "count": 6,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "full_M3_count": 4,
+      "exact_pi4_count": 0
+    },
+    {
+      "cycle_type": "2+2",
+      "central_sign": 1,
+      "count": 3,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "full_M3_count": 0,
+      "exact_pi4_count": 0
+    },
+    {
+      "cycle_type": "2+2",
+      "central_sign": -1,
+      "count": 3,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.37777777777777777,
+      "full_M3_count": 0,
+      "exact_pi4_count": 0
+    },
+    {
+      "cycle_type": "3+1",
+      "central_sign": 1,
+      "count": 8,
+      "triplet_phases": [
+        0.0,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "tensor_response_over_pi4": 1.7999999999999998,
+      "full_M3_count": 8,
+      "exact_pi4_count": 0
+    },
+    {
+      "cycle_type": "3+1",
+      "central_sign": -1,
+      "count": 8,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "full_M3_count": 8,
+      "exact_pi4_count": 0
+    },
+    {
+      "cycle_type": "4",
+      "central_sign": 1,
+      "count": 6,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "full_M3_count": 0,
+      "exact_pi4_count": 0
+    },
+    {
+      "cycle_type": "4",
+      "central_sign": -1,
+      "count": 6,
+      "triplet_phases": [
+        0.0,
+        0.25,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.355555555555555,
+      "full_M3_count": 0,
+      "exact_pi4_count": 0
+    }
+  ],
+  "exact_tensor_rows": [
+    {
+      "permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cycle_type": "1+1+1+1",
+      "inside_current_D8": true,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 1.0,
+      "relative_error_from_pi4": 0.0,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": true
+    }
+  ],
+  "best_full_M3_rows": [
+    {
+      "permutation": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    }
+  ],
+  "joint_rows": [],
+  "scientific_verdict": {
+    "positive": "A single signed S4 element fixes both a family incidence direction and a complete set of tensor boundary phases, so the proposed two-sector gate is parameter-free and exhaustive within this ansatz.",
+    "negative": "The only exact pi^4 response is the central antiperiodic holonomy minus identity. Its family action is scalar and leaves the original reducible algebra unchanged. Every outside-D8 incidence that generates full M3 misses pi^4.",
+    "best_full_M3_mismatch": 0.3111111111111111,
+    "consequence": "One common constant S4 holonomy cannot simultaneously explain the tensor Hessian and select a full family-mixing operator. Reopening requires a richer non-Abelian boundary connection, a path-dependent Wilson operator, or a derived relation between distinct representations rather than one shared group element."
+  },
+  "rows": [
+    {
+      "permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cycle_type": "1+1+1+1",
+      "inside_current_D8": true,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tensor_response_over_pi4": 0.06666666666666667,
+      "relative_error_from_pi4": 0.9333333333333333,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "cycle_type": "1+1+1+1",
+      "inside_current_D8": true,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 1.0,
+      "relative_error_from_pi4": 0.0,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": true
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.37777777777777777,
+      "relative_error_from_pi4": 0.6222222222222222,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.37777777777777777,
+      "relative_error_from_pi4": 0.6222222222222222,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "tensor_response_over_pi4": 1.7999999999999998,
+      "relative_error_from_pi4": 0.7999999999999998,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "tensor_response_over_pi4": 1.7999999999999998,
+      "relative_error_from_pi4": 0.7999999999999998,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": true,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.37777777777777777,
+      "relative_error_from_pi4": 0.6222222222222222,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": true,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.37777777777777777,
+      "relative_error_from_pi4": 0.6222222222222222,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "cycle_type": "2+2",
+      "inside_current_D8": true,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "cycle_type": "2+2",
+      "inside_current_D8": true,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.37777777777777777,
+      "relative_error_from_pi4": 0.6222222222222222,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "tensor_response_over_pi4": 1.7999999999999998,
+      "relative_error_from_pi4": 0.7999999999999998,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": true,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": true,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.25,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.355555555555555,
+      "relative_error_from_pi4": 4.355555555555555,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.25,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.355555555555555,
+      "relative_error_from_pi4": 4.355555555555555,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "tensor_response_over_pi4": 1.7999999999999998,
+      "relative_error_from_pi4": 0.7999999999999998,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "tensor_response_over_pi4": 1.7999999999999998,
+      "relative_error_from_pi4": 0.7999999999999998,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.25,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.355555555555555,
+      "relative_error_from_pi4": 4.355555555555555,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": true,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.37777777777777777,
+      "relative_error_from_pi4": 0.6222222222222222,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": true,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "tensor_response_over_pi4": 1.7999999999999998,
+      "relative_error_from_pi4": 0.7999999999999998,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "cycle_type": "2+2",
+      "inside_current_D8": true,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "cycle_type": "2+2",
+      "inside_current_D8": true,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.37777777777777777,
+      "relative_error_from_pi4": 0.6222222222222222,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.25,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.355555555555555,
+      "relative_error_from_pi4": 4.355555555555555,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": true,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": true,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.25,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.355555555555555,
+      "relative_error_from_pi4": 4.355555555555555,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "tensor_response_over_pi4": 1.7999999999999998,
+      "relative_error_from_pi4": 0.7999999999999998,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "tensor_response_over_pi4": 1.7999999999999998,
+      "relative_error_from_pi4": 0.7999999999999998,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "cycle_type": "3+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.37777777777777777,
+      "relative_error_from_pi4": 0.6222222222222222,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "cycle_type": "2+1+1",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 9,
+      "family_commutant_dimension": 1,
+      "full_M3": true,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": false,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.666666666666666,
+      "relative_error_from_pi4": 4.666666666666666,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "cycle_type": "4",
+      "inside_current_D8": false,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.25,
+        0.75
+      ],
+      "tensor_response_over_pi4": 5.355555555555555,
+      "relative_error_from_pi4": 4.355555555555555,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "cycle_type": "2+2",
+      "inside_current_D8": true,
+      "central_sign": 1,
+      "triplet_phases": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.6888888888888889,
+      "relative_error_from_pi4": 0.3111111111111111,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "cycle_type": "2+2",
+      "inside_current_D8": true,
+      "central_sign": -1,
+      "triplet_phases": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "tensor_response_over_pi4": 0.37777777777777777,
+      "relative_error_from_pi4": 0.6222222222222222,
+      "family_algebra_dimension": 5,
+      "family_commutant_dimension": 2,
+      "full_M3": false,
+      "exact_pi4": false
+    }
+  ]
+}

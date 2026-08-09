@@ -1,0 +1,74 @@
+{
+  "status": "delta2_connection_metric_cross_ambient_operator_formula_fixed_C11_integrals_missing",
+  "inputs": [
+    "s2t_c6_l21_delta2_connection_laplacian_insertion_results.json",
+    "s2t_c6_l21_delta2_connection_product_C11_moment_results.json",
+    "s2t_c6_l21_delta2_connection_single_gammaAB_C11_moment_results.json",
+    "s2t_c6_l21_delta2_ambient_path_formula_results.json"
+  ],
+  "purpose": "Derive the remaining inverse-metric / first-connection cross slot on the locked ambient path, after product and single GammaAB C11 subslot tables have been computed.",
+  "starting_slot": {
+    "formula": "L_metric_cross_AB alpha_c = -m_A^{ij} T_B_ijc(alpha) - m_B^{ij} T_A_ijc(alpha)",
+    "T_X": "T_X_ijc(alpha)=-(nabla_i Gamma_X^d_jc)alpha_d-Gamma_X^d_jc nabla_i alpha_d-Gamma_X^d_ij nabla_d alpha_c-Gamma_X^d_ic nabla_j alpha_d",
+    "m_X": "m_X^{ij}=partial_X g^{ij}=-h_X^{ij}"
+  },
+  "ambient_simplifications": {
+    "a_X": "a_X=(Xx)^T",
+    "S_X": "S_X=P_T X P_T, the tangent endomorphism induced by ambient symmetric X",
+    "tau_X": "tau_X=Tr_T(S_X)=Tr(X)-<Xx,x>",
+    "first_connection": "Gamma_X^d_ij=-2 g_ij a_X^d",
+    "inverse_metric_first_variation": "m_X=-2 S_X",
+    "covariant_derivative_of_a": "nabla_u a_X = S_X u - <Xx,x> u"
+  },
+  "derived_cross_operator": {
+    "one_sided_A_metric_B_connection": "L_cross[A|B](alpha)_c = 4 (S_A)^i_c (nabla_i a_B^d) alpha_d + 8 (S_A)^i_c a_B^d nabla_i alpha_d + 4 tau_A a_B^d nabla_d alpha_c",
+    "symmetrized_AB": "L_metric_cross_AB = L_cross[A|B] + L_cross[B|A]",
+    "expanded_zero_order_piece": "4 (S_A)^i_c [(S_B)^d_i - <Bx,x> delta^d_i] alpha_d + A<->B",
+    "first_order_pieces": "8 (S_A)^i_c a_B^d nabla_i alpha_d + 4 tau_A a_B^d nabla_d alpha_c + A<->B",
+    "scope_warning": "This is only the inverse-metric/first-connection cross slot. It excludes product, single GammaAB, Ricci, projector, Hilbert/basis, and local/compensation pieces."
+  },
+  "C11_reduction_template": {
+    "entry": "(C_conn2_metric_cross[1,1])_rs(A,B)=Integral e_r^c L_metric_cross_AB(e_s)_c dV_g",
+    "basis": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ],
+    "deformation_pairs": 55,
+    "raw_entries": 1980,
+    "next_integrals": "finite S3/RP3 moments involving S_A, S_B, tau_A, a_A, a_B, Killing fields, and Killing derivatives"
+  },
+  "connection_block_status_after_this": {
+    "product_slot": "C11 moment table computed; nonzero for all 55 raw symmetric pairs",
+    "single_GammaAB_slot": "C11 moment table computed; nonzero for 52 of 55 raw symmetric pairs",
+    "metric_cross_slot": "operator formula fixed here; C11 moment table still missing",
+    "full_C_conn2_11": "not yet computed"
+  },
+  "pass_fail": [
+    {
+      "test": "metric_cross_operator_derived",
+      "status": "pass",
+      "meaning": "The inverse-metric/first-connection cross slot is reduced to S_A, tau_A, a_B, nabla a_B, and Killing derivatives."
+    },
+    {
+      "test": "all_three_connection_slots_formula_ready",
+      "status": "pass",
+      "meaning": "Product, single GammaAB, and metric-cross slots now all have ambient-path formulas."
+    },
+    {
+      "test": "metric_cross_C11_table_computed",
+      "status": "not_yet",
+      "meaning": "No finite six-state moment table has been computed for the metric-cross slot yet."
+    },
+    {
+      "test": "full_C_conn2_11_computed",
+      "status": "not_yet",
+      "meaning": "The three connection subslots have not yet been added into full C_conn2[1,1]."
+    }
+  ],
+  "plain_language": "The third connection gear is now shaped. It is built from the tangent action S_A, the trace tau_A, and the arrow a_B. It has not touched the six Killing rulers yet, but the full connection block now has all three gear formulas on the table.",
+  "verdict": "The inverse-metric/first-connection cross slot has been derived on the locked ambient path. Together with the already computed product and single-GammaAB moment tables, this completes the formula-level connection-slot triad for C_conn2[1,1]. The next required step is the metric-cross moment table and then explicit addition of the three connection subslots."
+}

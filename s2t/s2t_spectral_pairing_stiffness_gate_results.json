@@ -1,0 +1,135 @@
+{
+  "status": "existing_spectral_function_menu_does_not_uniquely_fix_pairing_condensation_and_parity_even_actions_cannot_select_orientation",
+  "date": "2026-08-06",
+  "reduced_spectral_expansion": {
+    "formula": "f(a^2)=f(0)+f'(0)a^2+(1/2)f''(0)a^4+...",
+    "identification": {
+      "quadratic_mass_coefficient": "c2=f'(0)",
+      "quartic_coefficient": "c4=f''(0)/2",
+      "lambda_GL": "f''(0)",
+      "v_squared": "-f'(0)/f''(0)",
+      "threshold_product": "lambda_GL*v^2=-f'(0)"
+    },
+    "scope": "This is the one-amplitude control reduction with canonical kinetic normalization; a full spectral action must still derive the derivative term and its relative normalization."
+  },
+  "unit_RP3_threshold": 1.0,
+  "spectral_function_menu": [
+    {
+      "kernel": "f(x)=x",
+      "f_prime_0": 1.0,
+      "f_second_0": 0.0,
+      "quadratic_coefficient": 1.0,
+      "quartic_coefficient": 0.0,
+      "stable_quartic": false,
+      "tachyonic_quadratic": false,
+      "lambda_GL": null,
+      "v_squared": null,
+      "lambda_v_squared": null,
+      "above_unit_RP3_threshold": false,
+      "at_critical_threshold": false,
+      "phase": "normal_or_unstable"
+    },
+    {
+      "kernel": "f(x)=exp(-1x)",
+      "f_prime_0": -1.0,
+      "f_second_0": 1.0,
+      "quadratic_coefficient": -1.0,
+      "quartic_coefficient": 0.5,
+      "stable_quartic": true,
+      "tachyonic_quadratic": true,
+      "lambda_GL": 1.0,
+      "v_squared": 1.0,
+      "lambda_v_squared": 1.0,
+      "above_unit_RP3_threshold": false,
+      "at_critical_threshold": true,
+      "phase": "critical"
+    },
+    {
+      "kernel": "f(x)=exp(-2x)",
+      "f_prime_0": -2.0,
+      "f_second_0": 4.0,
+      "quadratic_coefficient": -2.0,
+      "quartic_coefficient": 2.0,
+      "stable_quartic": true,
+      "tachyonic_quadratic": true,
+      "lambda_GL": 4.0,
+      "v_squared": 0.5,
+      "lambda_v_squared": 2.0,
+      "above_unit_RP3_threshold": true,
+      "at_critical_threshold": false,
+      "phase": "condensed"
+    },
+    {
+      "kernel": "f(x)=(1+x)^(-3)",
+      "f_prime_0": -3.0,
+      "f_second_0": 12.0,
+      "quadratic_coefficient": -3.0,
+      "quartic_coefficient": 6.0,
+      "stable_quartic": true,
+      "tachyonic_quadratic": true,
+      "lambda_GL": 12.0,
+      "v_squared": 0.25,
+      "lambda_v_squared": 3.0,
+      "above_unit_RP3_threshold": true,
+      "at_critical_threshold": false,
+      "phase": "condensed"
+    },
+    {
+      "kernel": "f(x)=(1+x)^(-4)",
+      "f_prime_0": -4.0,
+      "f_second_0": 20.0,
+      "quadratic_coefficient": -4.0,
+      "quartic_coefficient": 10.0,
+      "stable_quartic": true,
+      "tachyonic_quadratic": true,
+      "lambda_GL": 20.0,
+      "v_squared": 0.2,
+      "lambda_v_squared": 4.0,
+      "above_unit_RP3_threshold": true,
+      "at_critical_threshold": false,
+      "phase": "condensed"
+    }
+  ],
+  "menu_summary": {
+    "normal_or_unstable_count": 1,
+    "critical_count": 1,
+    "condensed_count": 3,
+    "unique_phase_selected": false
+  },
+  "configuration_metric_crosscheck": {
+    "collective_norm_squared": 23.31830988618379,
+    "fixes_kinetic_norm": true,
+    "fixes_negative_quadratic_coefficient": false,
+    "finding": "The norm 23+pi^(-1) supplies a positive configuration-space metric. It does not determine the sign of f'(0) and therefore cannot by itself force the pairing instability."
+  },
+  "orientation_no_go": {
+    "lowest_covariant_momenta": [
+      1.0,
+      -1.0
+    ],
+    "tested_even_invariants": {
+      "k_squared": [
+        1.0,
+        1.0
+      ],
+      "k_fourth": [
+        1.0,
+        1.0
+      ],
+      "absolute_k": [
+        1.0,
+        1.0
+      ]
+    },
+    "all_even_invariants_equal": true,
+    "statement": "Any real parity-even action depending only on D^2 or even powers of the covariant momentum assigns equal energy to n=0 and n=-1.",
+    "required_new_term": "A real orientation-odd contribution or a derived chiral boundary condition is required to split the conjugate branches.",
+    "eta_phase_does_not_supply_real_split_in_minimal_model": true
+  },
+  "scientific_verdict": {
+    "positive": "For each declared spectral function the reduced quadratic and quartic coefficients determine the condensation threshold without fitting.",
+    "negative": "The currently admitted spectral functions give three different outcomes: no stable condensate, a critical point, or condensation. The program has not derived which function and scale are fundamental.",
+    "orientation": "The real parity-even spectral action cannot choose between the two conjugate windings. The previously tested eta phase does not become a real energy splitting in the minimal vectorlike theory.",
+    "program_effect": "Neither the existence of the Majorana condensate nor its orientation is predicted by the current parent action. Both remain new action-level gates."
+  }
+}

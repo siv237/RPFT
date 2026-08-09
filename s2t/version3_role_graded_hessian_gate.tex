@@ -1,0 +1,100 @@
+\chapter{Role-graded Hessian и гейт embedding-нормировки}
+
+Минимальная возможная лазейка в no-go версии II состоит в том, что
+ненормированная фоновая деформация и нормированное квантовое состояние не
+обязаны задаваться одним и тем же вектором конфигурационного пространства,
+даже если измеряются одной Hodge-метрикой.
+
+\section{Единая метрика}
+
+Пусть нуль-формы всех блоков имеют общий вес \(w_0\), а интегральная
+одна форма на \(\gamma\) --- вес \(w_1\). Для role-graded embeddings
+фиксируем
+\begin{align}
+ \Xi_\tau
+ &=1_{\mathbb{RP}^3}\oplus1_{S^1}\oplus P_{\perp n},\\
+ \Xi_\nu
+ &=P_H\otimes\widehat 1_{S^1}
+   \oplus P_{\ker}\otimes e_1,
+ \qquad \oint_\gamma e_1=1.
+\end{align}
+Здесь \(\widehat1_{S^1}=(2\pi)^{-1/2}\) является нормированным состоянием,
+тогда как \(1_{S^1}\) в \(\Xi_\tau\) читается как единичная фоновая
+амплитуда.
+
+Одна factor-blind Hodge-метрика даёт
+\begin{align}
+ \|\Xi_\tau\|^2
+ &=w_0\left(\pi^2+2\pi+\frac23\right),\label{eq:V3TauHessian}\\
+ \|\Xi_\nu\|^2
+ &=23w_0+\frac{w_1}{\pi}.\label{eq:V3NuHessian}
+\end{align}
+При standard Hodge choice
+\begin{equation}
+ w_0=w_1=1
+\end{equation}
+обе требуемые числовые структуры возникают одновременно. Следовательно,
+чисто алгебраическая несовместимость отсутствует: no-go версии II зависит
+от предположения, что обе коллективные координаты сначала переводятся в
+\(L^2\)-нормированные состояния.
+
+\begin{proposition}[Алгебраический двухсекторный pass]
+Role-graded embedding и единая Hodge-метрика с единичными form-degree
+весами одновременно дают
+\begin{equation}
+ \|\Xi_\tau\|^2=\pi^2+2\pi+\frac23,
+ \qquad
+ \|\Xi_\nu\|^2=23+\pi^{-1}.
+\end{equation}
+Независимые sector weights для этого тождества не требуются.
+\end{proposition}
+
+\section{Field-redefinition red-team}
+
+Положительный числовой результат ещё не является физическим. Масштаб
+интегральной формы фиксирован условием периода, а нормированное состояние
+фиксировано вероятностной нормой. Но обычная вещественная нуль-форма
+допускает замену координаты
+\begin{equation}
+ \phi_\tau\longmapsto a\phi_\tau.
+\end{equation}
+При этом Hessian-вклад меняется как \(a^{-2}\), а interaction vertex должен
+измениться как соответствующая степень \(a\). Поэтому утверждение
+``единичная фоновая амплитуда'' не является инвариантным, пока единица не
+выведена из compact field range, charge lattice, canonical symplectic form
+или нормированной vertex map.
+
+Если разрешить embedding-scale \(a_\tau\), формула
+\eqref{eq:V3TauHessian} принимает вид
+\begin{equation}
+ \|\Xi_\tau(a_\tau)\|^2
+ =a_\tau^2w_0\left(\pi^2+2\pi+\frac23\right).
+\end{equation}
+Ни isometry group носителя, ни степень формы не фиксируют \(a_\tau=1\).
+
+\begin{nogocriterion}[Embedding-normalization gap]
+Role-graded Hessian проходит числовой двухсекторный тест, но не проходит
+parent-action gate, пока масштаб фоновой charged-lepton coordinate не
+получен из симметрии или канонической скобки и не показано совместное
+преобразование её Hessian и vertex. Назначение \(a_\tau=1\) после просмотра
+сырого seed является скрытой нормировкой.
+\end{nogocriterion}
+
+\section{Следующий конструктивный класс}
+
+Следующий этап больше не ищет новую таблицу весов. Требуется классифицировать
+механизмы, способные фиксировать \(a_\tau\):
+\begin{enumerate}
+ \item compact phase или holonomy coordinate с заранее заданным периодом;
+ \item collective coordinate defect-а с нормировкой из symplectic form;
+ \item boundary/AKSZ variable с квантованной pairing form;
+ \item finite spectral triple, где масштаб задаётся representation trace и
+ first-order constraints.
+\end{enumerate}
+Первым будет проверен compact-phase вариант, поскольку он минимально меняет
+carrier и имеет немедленный отрицательный критерий: если требуемые объёмные
+вклады превращаются в inverse-length stiffness или вводят decay constant,
+маршрут закрывается.
+
+Машинный аудит сохранён в
+\texttt{s2t\_v3\_role\_graded\_hessian\_results.json}.

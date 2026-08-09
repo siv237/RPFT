@@ -1,0 +1,255 @@
+{
+  "status": "projected_partner_holonomy_determinant_fails_direction_survivor_intermediate_running_remains_conditional",
+  "date": "2026-08-04",
+  "normalization": {
+    "mode_function": "L_beta(rho)=log[(cosh(2pi rho)-cos(2pi beta))/(cosh(2pi rho)-1)]",
+    "local_terms": "cancel in each shifted-minus-periodic ratio",
+    "overall_gauge_prefactor": "irrelevant for the direction no-go; a standard 1/(2pi) factor is used only for the running-scale reconstruction"
+  },
+  "projected_partner_content": {
+    "quarter_branches": "Q + 2 L + T_H",
+    "quarter_beta_vector_Y_2_3": [
+      1.6666666666666665,
+      3.333333333333333,
+      1.5
+    ],
+    "half_branch": "E",
+    "half_beta_vector_Y_2_3": [
+      1.3333333333333333,
+      0.0,
+      0.0
+    ],
+    "generic_common_shell": "Delta_shell=A(rho)*(Q+2L+T_H)+B(rho)*E, with A,B>0",
+    "fixed_color_over_SU2": 0.45000000000000007,
+    "required_color_over_SU2": 11.014232678242097
+  },
+  "shell_sweep": [
+    {
+      "rho": 0.05,
+      "quarter_logdet_ratio": 3.0491967019629005,
+      "half_logdet_ratio": 3.7183600648872415,
+      "half_over_quarter": 1.2194556233428862,
+      "partner_threshold_direction_Y_2_3": [
+        10.039807923121156,
+        10.163989006543,
+        4.573795052944351
+      ],
+      "normalized_to_SU2": [
+        0.9877822493371546,
+        1.0,
+        0.45000000000000007
+      ],
+      "relative_to_required_normalized": [
+        -15.927521991967524,
+        0.0,
+        -10.564232678242098
+      ]
+    },
+    {
+      "rho": 0.1,
+      "quarter_logdet_ratio": 1.7753982764728802,
+      "half_logdet_ratio": 2.38003333903856,
+      "half_over_quarter": 1.3405630559509647,
+      "partner_threshold_direction_Y_2_3": [
+        6.132374912839547,
+        5.9179942549096,
+        2.6630974147093203
+      ],
+      "normalized_to_SU2": [
+        1.0362252223803858,
+        1.0,
+        0.45
+      ],
+      "relative_to_required_normalized": [
+        -15.879079018924292,
+        0.0,
+        -10.564232678242098
+      ]
+    },
+    {
+      "rho": 0.25,
+      "quarter_logdet_ratio": 0.5083899513231646,
+      "half_logdet_ratio": 0.8438165095120485,
+      "half_over_quarter": 1.6597820380121278,
+      "partner_threshold_direction_Y_2_3": [
+        1.9724052648880055,
+        1.6946331710772151,
+        0.7625849269847469
+      ],
+      "normalized_to_SU2": [
+        1.163912815204851,
+        1.0,
+        0.45000000000000007
+      ],
+      "relative_to_required_normalized": [
+        -15.751391426099827,
+        0.0,
+        -10.564232678242098
+      ]
+    },
+    {
+      "rho": 0.5,
+      "quarter_logdet_ratio": 0.09021658637217356,
+      "half_logdet_ratio": 0.172963393134281,
+      "half_over_quarter": 1.9172017041384077,
+      "partner_threshold_direction_Y_2_3": [
+        0.3809788347993306,
+        0.3007219545739118,
+        0.13532487955826034
+      ],
+      "normalized_to_SU2": [
+        1.2668806816553633,
+        1.0,
+        0.45000000000000007
+      ],
+      "relative_to_required_normalized": [
+        -15.648423559649315,
+        0.0,
+        -10.564232678242098
+      ]
+    },
+    {
+      "rho": 1.0,
+      "quarter_logdet_ratio": 0.003741864489745597,
+      "half_logdet_ratio": 0.007469779610066523,
+      "half_over_quarter": 1.996272080546236,
+      "partner_threshold_direction_Y_2_3": [
+        0.016196146962998023,
+        0.012472881632485323,
+        0.005612796734618395
+      ],
+      "normalized_to_SU2": [
+        1.2985088322184943,
+        1.0,
+        0.45
+      ],
+      "relative_to_required_normalized": [
+        -15.616795409086183,
+        0.0,
+        -10.564232678242098
+      ]
+    },
+    {
+      "rho": 1.5,
+      "quarter_logdet_ratio": 0.00016141206031516458,
+      "half_logdet_ratio": 0.0003227980709817849,
+      "half_over_quarter": 1.9998386139889832,
+      "partner_threshold_direction_Y_2_3": [
+        0.0006994175285009875,
+        0.0005380402010505485,
+        0.00024211809047274688
+      ],
+      "normalized_to_SU2": [
+        1.2999354455955934,
+        1.0,
+        0.45000000000000007
+      ],
+      "relative_to_required_normalized": [
+        -15.615368795709085,
+        0.0,
+        -10.564232678242098
+      ]
+    },
+    {
+      "rho": 2.0,
+      "quarter_logdet_ratio": 6.974709035526944e-06,
+      "half_logdet_ratio": 1.3949369425049093e-05,
+      "half_over_quarter": 1.999993025371446,
+      "partner_threshold_direction_Y_2_3": [
+        3.022367429261036e-05,
+        2.3249030118423144e-05,
+        1.0462063553290415e-05
+      ],
+      "normalized_to_SU2": [
+        1.2999972101485784,
+        1.0,
+        0.45
+      ],
+      "relative_to_required_normalized": [
+        -15.6153070311561,
+        0.0,
+        -10.564232678242098
+      ]
+    },
+    {
+      "rho": 3.0,
+      "quarter_logdet_ratio": 1.3024824467409391e-08,
+      "half_logdet_ratio": 2.604964876517273e-08,
+      "half_over_quarter": 1.9999999869751757,
+      "partner_threshold_direction_Y_2_3": [
+        5.644090579924596e-08,
+        4.34160815580313e-08,
+        1.9537236701114086e-08
+      ],
+      "normalized_to_SU2": [
+        1.2999999947900702,
+        1.0,
+        0.45
+      ],
+      "relative_to_required_normalized": [
+        -15.615304246514608,
+        0.0,
+        -10.564232678242098
+      ]
+    },
+    {
+      "rho": 5.0,
+      "quarter_logdet_ratio": 4.5519144009630383e-14,
+      "half_logdet_ratio": 9.10382880192587e-14,
+      "half_over_quarter": 1.9999999999999545,
+      "partner_threshold_direction_Y_2_3": [
+        1.9724962404172886e-13,
+        1.5173048003210125e-13,
+        6.827871601444557e-14
+      ],
+      "normalized_to_SU2": [
+        1.2999999999999818,
+        1.0,
+        0.45000000000000007
+      ],
+      "relative_to_required_normalized": [
+        -15.615304241304697,
+        0.0,
+        -10.564232678242098
+      ]
+    }
+  ],
+  "analytic_direction_no_go": {
+    "quarter_vector_exact": "(5/3,10/3,3/2)",
+    "half_vector_exact": "(4/3,0,0)",
+    "normalized_generic_vector": "((5+4r)/10, 1, 9/20), r=B/A>0",
+    "finding": "the color/SU2 ratio is identically 9/20 for every common shell and every positive tower sum, while the required ratio is about 11.014",
+    "verdict": "the finite holonomy determinant of the projected partners cannot generate the required gauge correction direction under a common RP3 spectrum"
+  },
+  "survivor_running_reconstruction": {
+    "survivor_content": "U+2D+H",
+    "beta_vector_Y_2_3": [
+      2.833333333333333,
+      0.16666666666666666,
+      2.0
+    ],
+    "best_common_inverse_alpha_amplitude": 1.6017999596245203,
+    "fitted_shift_magnitudes": [
+      4.538433218936141,
+      0.26696665993742,
+      3.2035999192490405
+    ],
+    "relative_residuals": [
+      -0.02571985061660116,
+      -0.030573815112708173,
+      0.05618925607300503
+    ],
+    "max_abs_relative_residual": 0.05618925607300503,
+    "equivalent_log_running_interval": 10.06440597135364,
+    "Lambda_S2T_GeV_from_existing_T_EW": 899381471433345.9,
+    "reconstructed_split_scale_GeV": 38284938979.788925,
+    "interpretation": "if the periodic split sector is active over this intermediate interval, its ordinary running has nearly the required direction; the scale is reconstructed from controls and is not yet predicted"
+  },
+  "theory_effect": {
+    "finite_projected_partner_determinant": "closed_negatively_in_common_spectrum_model",
+    "split_zero_sector_running": "directionally_viable_but_scale_not_derived",
+    "required_new_input": "a geometric or dynamical mass for the vectorlike U,D,H sector near the reconstructed intermediate scale, plus non-common spectra if partner determinants are retained",
+    "stop_rule": "do not use the reconstructed split scale as a prediction; derive it independently before rerunning the gauge scorecard"
+  },
+  "verdict": "The requested determinant calculation is negative in the minimal common-spectrum realization. The quarter/half-shifted partners always produce color/SU2 ratio 9/20, far from the required 11.014, independent of normalization or the number of common KK shells. The only surviving mechanism is ordinary intermediate-scale running of the periodic U+2D+H sector. It would need a log interval about 10.065, corresponding to a reconstructed scale near 3.8e10 GeV for the existing S2T high scale, but that mass scale is not derived and therefore cannot yet repair the prediction."
+}

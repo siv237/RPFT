@@ -1,0 +1,110 @@
+{
+  "status": "direction_reaudit_continue_C6_timeboxed_with_parallel_fallbacks",
+  "date": "2026-07-14",
+  "wiki_pages_reviewed": [
+    "wiki/syntheses/current-status-and-next-vectors.md",
+    "wiki/syntheses/s2t-closure-roadmap.md",
+    "wiki/syntheses/tome2-svac-em-block-audit.md",
+    "wiki/questions/coexact-tower-delta.md",
+    "wiki/questions/kappa-cas-one-over-24.md",
+    "wiki/sources/external-literature-spectral-determinants.md",
+    "wiki/syntheses/tome2-proof-chain.md",
+    "wiki/questions/neutrino-overlap-lemma.md",
+    "wiki/questions/ew-qcd-threshold-closure.md",
+    "wiki/concepts/spectral-correlational-source.md"
+  ],
+  "material_sources_reviewed": [
+    "tome2_s2t_spectral_closure.tex",
+    "main.tex",
+    "theory_completion_program.tex",
+    "research_protocol_toe_ugsm.tex",
+    "root-level *_results.json audit layer"
+  ],
+  "current_dashboard": {
+    "C6_nodes": 37,
+    "blocking_or_failed_nodes": 11,
+    "primary_blocker": "full_one_form_operator_rescue_after_nonzero_n3_projection",
+    "note": "Current disk state is 37-node matrix with C11 setup present; C33 package is not present in the checked workspace state."
+  },
+  "continue_signals": [
+    {
+      "signal": "S_vac numerical and structural spine remains strong",
+      "evidence": "s2t_tome2_results closed rows plus wiki status: carrier geometry, S_geo, kappa branch, P02 rank, pi^2/2 prefactor, and sign direction remain positive inputs",
+      "meaning": "do not abandon the program as numerology yet"
+    },
+    {
+      "signal": "rank-10 trace lead is nontrivial",
+      "evidence": "The determinant cross-term would need an effective trace integer N=10.0099700224, whose nearest integer is 10. The nearest integer is exactly the RP3 scalar/ghost cumulative degeneracy d_0+d_2=1+9=10, giving relative pi4-term error 3.04e-6. This is strong evidence for the correct trace rank, but not a proof: the missing step is an explicit gauge-fixed operator calculation showing that the second-order mixed trace equals this scalar/exact rank with the minus sign.",
+      "meaning": "the N≈10 result is a real clue, but not proof"
+    },
+    {
+      "signal": "absorption route is best known route",
+      "evidence": "absorption_scheme_strong_candidate_not_theorem",
+      "meaning": "if C6 is pursued, pursue it as full operator/absorption, not independent correction"
+    },
+    {
+      "signal": "problem is localized rather than diffuse",
+      "evidence": "closure matrix has 37 nodes with explicit blockers and trace priorities",
+      "meaning": "a short focused C6 sprint can still falsify or rescue the path efficiently"
+    }
+  ],
+  "switch_signals": [
+    {
+      "signal": "n=3 obstruction is large",
+      "evidence": "The explicit n=3 projected obstruction is large in the current low-shell bookkeeping. Its trace is 80, eight times the rank-10 count and 1.25 times the earlier proxy trace 64. The trace/(lambda3-lambda1)^2 proxy is about 0.5556, far larger than the N_need-10 gap. Therefore the nonzero n=3 block cannot be dismissed as a small scheme residue; only full-operator cancellation or a derived no-fit absorption identity can rescue C6.",
+      "meaning": "do not expect a tiny scheme-gap explanation"
+    },
+    {
+      "signal": "known paired sectors failed",
+      "evidence": "paired-sector search and wiki pages reject ready-made Maxwell--ghost--Dirac pairing or scalar inheritance as closure",
+      "meaning": "a rescue probably needs full operator cancellation or a genuinely new mandatory sector"
+    },
+    {
+      "signal": "local counterterms cannot erase finite low-shell data",
+      "evidence": "local-counterterm classifier and n3 finite-counterterm gate forbid post-hoc finite subtraction",
+      "meaning": "no cheap subtraction escape remains"
+    },
+    {
+      "signal": "trace phase is not yet computation",
+      "evidence": "delta2_trace_phase_priority_fixed_diagonal_blocks_first; delta2_C11_setup_fixed_inputs_ready_matrix_not_evaluated",
+      "meaning": "continued C6 work is costly unless it attacks actual missing operator pieces"
+    }
+  ],
+  "candidate_vectors": [
+    {
+      "vector": "A_C6_timeboxed_operator_sprint",
+      "recommendation": "continue, but only with a stop condition",
+      "next_test": "expand one missing delta2/full-operator piece enough to produce a real C11 contribution or prove same-scheme compensation/locality",
+      "stop_if": "after the next concrete operator expansion there is still no route to C11/C33 values or cancellation mechanism",
+      "expected_value": "highest upside for mature S_vac theorem, highest difficulty"
+    },
+    {
+      "vector": "B_external_literature_gate",
+      "recommendation": "run in parallel or as fallback",
+      "next_test": "check lens-space p-form / Maxwell determinant formulas against the S2T quotient/coexact normalization and P02 trace claim",
+      "stop_if": "external formula forces additional same-order shells or gauge-choice dependence",
+      "expected_value": "can validate/demote C6 faster than doing all matrices"
+    },
+    {
+      "vector": "C_neutrino_overlap_lemma",
+      "recommendation": "good switch target if C6 stalls",
+      "next_test": "derive or reject N_nu^2 = pi + pi^-1 from Dirac/spin/gauge overlap space",
+      "stop_if": "identity requires a fitted residual rather than a defined inner product",
+      "expected_value": "smaller proof surface than C6; can strengthen an independent II.B row"
+    },
+    {
+      "vector": "D_EW_QCD_threshold_solver",
+      "recommendation": "secondary switch target, not immediate rescue",
+      "next_test": "build explicit threshold-spectrum solver with one/two-loop comparison",
+      "stop_if": "requires hidden mass/scale fitting",
+      "expected_value": "important for maturity, but likely broader than neutrino lemma"
+    }
+  ],
+  "decision": {
+    "primary_recommendation": "do_not_fully_switch_yet",
+    "operational_rule": "give C6 one timeboxed operator sprint focused on actual C11/C33-enabling formulas, while preparing external literature and neutrino fallback tracks",
+    "why": "The evidence is too structured to abandon, but the n=3 obstruction and missing delta2/full-operator pieces are too serious to keep doing only scoping work.",
+    "plain_language": "Keep digging this mine, but set a rope and an exit. One more real shaft toward numbers; if we hit only more fog, move part of the crew to neutrino/external gates."
+  },
+  "verdict": "The wiki/material re-audit supports continuing in the current direction only as a timeboxed, computation-facing C6 sprint. The program should not switch away wholesale because S_vac, P02 rank 10, kappa_Cas, volume/sign structure, and localization of the blocker remain strong. But it should stop adding C6 labels without numbers: the n=3 obstruction is large, local/paired escapes failed, and C_delta2 values or same-scheme compensation are required. Best strategy: one focused C6 operator sprint, plus parallel external-literature check and a prepared fallback to the neutrino overlap lemma if C6 remains blocked."
+}

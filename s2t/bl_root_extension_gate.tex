@@ -1,0 +1,118 @@
+\chapter{Минимальное расширение \texorpdfstring{\(U(1)_{B-L}\)}{U(1) B-L}
+как источник Majorana-root}
+
+Исчерпание существующего меню показывает, что root connection нельзя
+получить внутри минимального \(SU(5)\). Следующий честный шаг --- не скрывать
+новую структуру, а проверить минимальное зарегистрированное расширение
+\[
+ G_{ext}=G_{SM}\times U(1)_{B-L}.
+\]
+
+\section{Charge assignment и anomaly gate}
+
+Используем left-handed Weyl convention. Для одного поколения charges равны
+\[
+\begin{array}{c|rrrrrr}
+ &Q&u^c&d^c&L&e^c&N^c\\
+\hline
+ B-L&1/3&-1/3&-1/3&-1&1&1
+\end{array}
+\]
+с обычными multiplicities. Прямой rational audit даёт
+\begin{align}
+ \mathcal A_{(B-L)^3}&=0,&
+ \mathcal A_{\mathrm{grav}^2(B-L)}&=0,\\
+ \mathcal A_{SU(3)^2(B-L)}&=0,&
+ \mathcal A_{SU(2)^2(B-L)}&=0,\\
+ \mathcal A_{Y^2(B-L)}&=0,&
+ \mathcal A_{Y(B-L)^2}&=0.
+\end{align}
+Таким образом, одна sterile mode на поколение, уже требуемая seesaw-сектором,
+закрывает continuous anomaly gate без новых chiral fermions.
+
+\section{Root holonomy и pairing field}
+
+Пусть holonomy на generator complement равна
+\begin{equation}
+ \oint_y a_{BL}=\frac{\pi}{2}.
+\end{equation}
+Тогда \(N^c\) с charge \(+1\) получает phase
+\begin{equation}
+ \chi_{N^c}(y)=i,
+ \qquad
+ \chi_{N^c}(\mu_\gamma)=i^2=-1.
+\end{equation}
+Это ровно missing square-root connection.
+
+Введём один complex scalar
+\begin{equation}
+ \Phi_{BL},\qquad q_{BL}(\Phi_{BL})=-2.
+\end{equation}
+Тогда Majorana vertex
+\begin{equation}
+ y_N\Phi_{BL}N^cN^c+\mathrm{h.c.}
+\end{equation}
+gauge invariant, поскольку \(-2+1+1=0\). На meridian finite-energy
+condition вынуждает winding \(\pm1\), знак которого соответствует orientation.
+Следовательно, одно расширение одновременно поставляет root charge и
+ранее отсутствующий pairing order parameter.
+
+\section{Почему это ещё не замыкание}
+
+Расширение требует новых continuous данных:
+\begin{equation}
+ g_{BL},\quad v_{BL},\quad\lambda_{BL},\quad
+ \lambda_{H\Phi},\quad\epsilon_{YB},\quad y_N.
+\end{equation}
+Topology фиксирует quarter phase и winding, но не знак pairing Hessian,
+масштаб \(v_{BL}\) и Majorana Yukawa matrix.
+
+Поля \(N^c\) и \(\Phi_{BL}\) являются Standard Model singlets и не дают
+прямого one-loop вклада в \((b_Y,b_2,b_3)\). Однако обычные SM fermions
+заряжены одновременно по \(Y\) и \(B-L\), причём
+\begin{equation}
+ \sum_{\mathrm{Weyl}}Y(B-L)=\frac83
+\end{equation}
+на поколение. Поэтому kinetic mixing двух abelian factors генерируется
+радиативно. Его boundary value и running становятся новым
+normalization-sensitive gauge-sector test.
+
+Кроме того, \(B-L\), действующий нетривиально на \(N^c\), не содержится в
+существующем minimal \(SU(5)\)-fiber, где \(N^c\) является external singlet.
+Нужно либо добавить abelian factor, либо перейти к более крупной finite
+algebra/unification structure.
+
+\begin{proposition}[Первый coherent root extension]
+\(U(1)_{B-L}\) с одним \(N^c\) на поколение и scalar charge \(-2\) является
+первым проверенным расширением, которое одновременно:
+\begin{enumerate}
+ \item anomaly-free во всех continuous mixed channels;
+ \item даёт sterile order-four holonomy;
+ \item содержит gauge-invariant charge-two Majorana pairing field;
+ \item воспроизводит conditional odd-vortex/rank-one defect route.
+\end{enumerate}
+Но оно является новой моделью с невыведенными couplings и scale, а не
+замыканием II.A.
+\end{proposition}
+
+\begin{protocol}[Definition of Done \(B-L\)-ветви]
+Расширение получает S2T-статус только если:
+\begin{enumerate}
+ \item \(U(1)_{B-L}\) или его \(Z_4\)-subsector следует из finite algebra;
+ \item pairing Hessian и \(v_{BL}\) выводятся из frozen spectral scales;
+ \item kinetic mixing фиксирован до gauge controls;
+ \item discrete/global anomalies остаточного \(Z_4\) проверены;
+ \item heavy neutrino scale и rank-one defect возникают из одного saddle;
+ \item тот же extension проходит независимый EW/QCD или tensor gate.
+\end{enumerate}
+\end{protocol}
+
+Текущий вердикт положителен на representation/anomaly уровне и условен на
+dynamics уровне. Дополнительный global consistency gate, приведённый далее,
+уточняет этот вывод: ordinary charge-two scalar несовместим с root holonomy
+на generator complement, и требуется ambient-torsion-twisted pairing
+section. Пространство поиска сузилось до конкретного расширения, но цена
+расширения теперь полностью видима.
+
+Машинный протокол сохранён в
+\texttt{s2t\_bl\_root\_extension\_gate\_results.json}.

@@ -1,0 +1,137 @@
+{
+  "status": "corrected_finite_threshold_cone_algebraically_feasible_physically_infeasible",
+  "date": "2026-08-04",
+  "target_construction": {
+    "baseline": "alpha-anchored gauge-only two-loop SM without new thresholds",
+    "baseline_inverse_couplings_Y_2_3": [
+      107.23613669116695,
+      29.79986248583304,
+      10.9337290974207
+    ],
+    "target_policy": "use measured M_W with frozen v_S2T, preserve alpha_em, and use measured alpha_s",
+    "target_inverse_couplings_Y_2_3": [
+      107.60415164830188,
+      29.43184752869813,
+      8.474576271186441
+    ],
+    "required_finite_shift_Y_2_3": [
+      0.3680149571349318,
+      -0.3680149571349105,
+      -2.4591528262342592
+    ],
+    "normalized_direction_by_abs_SU2": [
+      1.000000000000058,
+      -1.0,
+      -6.682208911777352
+    ],
+    "MZ_implied_by_target_MW_alpha_GeV": 90.6969049213347,
+    "MZ_control_GeV": 91.188,
+    "MZ_relative_gap_not_fixable_by_gauge_couplings_alone": -0.005385523080507215
+  },
+  "threshold_basis": {
+    "fields": [
+      "XY",
+      "H3",
+      "Sigma8",
+      "Sigma3"
+    ],
+    "variables": "x_J=-log(M_J/Lambda)>=0 for M_J<=Lambda",
+    "matrix_Y_2_3": [
+      [
+        0.583568124670283,
+        0.01061032953945969,
+        0.0,
+        0.0
+      ],
+      [
+        0.3183098861837907,
+        0.0,
+        0.0,
+        -0.008841941282883074
+      ],
+      [
+        0.5570423008216338,
+        -0.026525823848649224,
+        -0.013262911924324612,
+        0.0
+      ]
+    ],
+    "formula_source": "extended SU5-like finite matching block already declared in Tome II"
+  },
+  "unbounded_below_scale_cone": {
+    "exactly_feasible": true,
+    "minimum_possible_max_log": 116.04656972607516,
+    "logs_XY_H3_Sigma8_Sigma3": [
+      0.0,
+      34.68459257238793,
+      116.04656972607515,
+      41.621511086863116
+    ],
+    "mass_ratios_to_Lambda": [
+      1.0,
+      8.643165694348527e-16,
+      3.995904719852101e-51,
+      8.394743028737243e-19
+    ],
+    "masses_GeV": [
+      899381471433345.9,
+      0.7773503080025395,
+      3.5938426666480345e-36,
+      0.0007550076337490524
+    ],
+    "reconstructed_shift": [
+      0.3680149571349318,
+      -0.3680149571349105,
+      -2.4591528262342592
+    ],
+    "interpretation": "the algebraic cone works only by placing H3, Sigma3 and especially Sigma8 far below MZ"
+  },
+  "physical_window_MZ_to_Lambda": {
+    "maximum_allowed_log": 29.919805079547,
+    "exactly_feasible": false,
+    "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "best_fit_logs_XY_H3_Sigma8_Sigma3": [
+      7.777675487413413e-30,
+      29.919805079546997,
+      29.919805079546997,
+      29.919805079546997
+    ],
+    "best_fit_shift": [
+      0.3174589916503936,
+      -0.2645491597086613,
+      -1.1904712186889759
+    ],
+    "residual": [
+      -0.05055596548453822,
+      0.10346579742624923,
+      1.2686816075452834
+    ],
+    "relative_L2_residual": 0.5067971615419633,
+    "largest_component_residual_relative_to_target_max": 0.5159018967877796
+  },
+  "masses_allowed_on_both_sides_of_Lambda": {
+    "exactly_feasible": true,
+    "minimum_possible_max_abs_log": 56.30250920742561,
+    "logs_log_M_over_Lambda_XY_H3_Sigma8_Sigma3": [
+      0.3930530297279575,
+      -56.30250920742561,
+      -56.30250920742561,
+      -27.47160201665664
+    ],
+    "mass_ratios_to_Lambda": [
+      1.4814969506264655,
+      3.532896657899877e-25,
+      3.532896657899877e-25,
+      1.1728293756321673e-12
+    ],
+    "comparison_to_available_log_interval": 1.881780615138889
+  },
+  "scientific_verdict": {
+    "cone": "the sign cone is algebraically nonempty but physically empty when all threshold masses are required to lie between MZ and Lambda_S2T",
+    "hierarchy": "the least extreme exact below-scale solution needs max log 116.05; even allowing masses above Lambda needs max abs log 56.30, versus the available interval 29.92",
+    "best_physical": "saturating H3, Sigma8 and Sigma3 at MZ still leaves about 50.7 percent of the target vector unresolved in L2 norm",
+    "additional_gap": "with frozen v_S2T and alpha_em, fitting M_W by gauge couplings alone predicts M_Z low by about 0.54 percent",
+    "theory_effect": "the minimal XY/H3/Sigma8/Sigma3 finite-threshold basis is closed negatively as a simultaneous EW/QCD repair",
+    "next_gate": "either derive genuinely nonlogarithmic finite matching with fixed coefficients or freeze the gauge branch and move effort to sectors with independent successes"
+  }
+}

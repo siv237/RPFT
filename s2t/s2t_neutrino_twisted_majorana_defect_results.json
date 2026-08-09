@@ -1,0 +1,126 @@
+{
+  "status": "conditional_rank_one_majorana_defect_constructed_new_order_parameter_not_derived",
+  "date": "2026-08-03",
+  "geometry": {
+    "defect_core": "shortest noncontractible geodesic gamma=RP1 in RP3",
+    "core_length": 3.141592653589793,
+    "normal_neighborhood": "oriented rank-two disk bundle, locally a solid torus",
+    "existing_flat_line": "nontrivial Z2 torsion line restricted to gamma"
+  },
+  "transverse_defect": {
+    "class": "real class-D Majorana defect with odd mass winding",
+    "minimal_radial_operator": "A=d/dx+tanh(x)",
+    "normalized_zero_profile": "psi0=sech(x)/sqrt(2)",
+    "numeric_profile_norm_on_window": 0.9999999999244971,
+    "max_zero_equation_residual": 0.0,
+    "adjoint_candidate": "cosh(x), non-normalizable",
+    "adjoint_candidate_window_norm": 6622282751.887566,
+    "ordinary_index": 1,
+    "mod_two_index": 1,
+    "interpretation": "An odd vortex reduces the four-real-dimensional lowest spinor multiplet to one topologically protected real Majorana channel."
+  },
+  "longitudinal_gate": {
+    "spin_holonomy": -1,
+    "torsion_line_holonomy": -1,
+    "total_holonomy": 1,
+    "rule": "h_total=h_spin*h_Z2",
+    "spectrum": [
+      {
+        "n": -4,
+        "wave_number": -8.0
+      },
+      {
+        "n": -3,
+        "wave_number": -6.0
+      },
+      {
+        "n": -2,
+        "wave_number": -4.0
+      },
+      {
+        "n": -1,
+        "wave_number": -2.0
+      },
+      {
+        "n": 0,
+        "wave_number": 0.0
+      },
+      {
+        "n": 1,
+        "wave_number": 2.0
+      },
+      {
+        "n": 2,
+        "wave_number": 4.0
+      },
+      {
+        "n": 3,
+        "wave_number": 6.0
+      },
+      {
+        "n": 4,
+        "wave_number": 8.0
+      }
+    ],
+    "kernel_rank_for_single_real_channel": 1,
+    "interpretation": "The antiperiodic spin sign and nontrivial torsion-line sign cancel. The defect Majorana channel is periodic around gamma and has one constant real zero mode."
+  },
+  "rank_one_selector": {
+    "factorization": "generation singlet tensor transverse Majorana zero mode tensor longitudinal constant mode tensor self-dual cycle line",
+    "factor_ranks": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "combined_real_rank": 1,
+    "why_previous_no_go_is_avoided": "The vortex mass texture physically breaks the spin-isometry multiplet and replaces an arbitrary polarization choice by a mod-two index."
+  },
+  "Qcycle_compatibility": {
+    "Qcycle": [
+      [
+        3.141592653589793,
+        0.0
+      ],
+      [
+        0.0,
+        0.3183098861837907
+      ]
+    ],
+    "self_dual_vector": [
+      1.0,
+      1.0
+    ],
+    "self_dual_Qcycle_norm": 3.4599025397735836,
+    "target": 3.4599025397735836,
+    "error": 0.0,
+    "interpretation": "The defect selects a single ambient spinor line while Qcycle continues to determine the reciprocal two-channel coupling norm. The two mechanisms act on different factors."
+  },
+  "rank_23_recovery_gate": {
+    "conditional_statement": "If the unique defect zero mode lies inside the declared R24 heavy module and is the single universal branch removed from the heavy determinant, then the complement has rank 23.",
+    "remaining_rank": 23,
+    "status": "conditional_not_yet_a_theorem",
+    "missing_proofs": [
+      "derive the two-component real mass order parameter from an existing S2T field",
+      "prove odd winding around gamma is forced rather than selected by hand",
+      "derive the restriction map from the ambient RP3 spinor bundle to the vortex-core channel",
+      "show that the Majorana/BdG formulation does not add physical states beyond R24",
+      "show that integrating out or quotienting the unique zero branch produces the heavy denominator count"
+    ]
+  },
+  "parameter_audit": {
+    "new_continuous_fit_parameter_required_for_rank": false,
+    "new_structural_field_required": true,
+    "new_field": "two-component real Majorana mass order parameter with odd vortex winding",
+    "profile_dependence": "zero-mode parity is stable under gap-preserving profile deformations",
+    "mass_gap_scale": "still required for EFT dynamics but does not change the mod-two count"
+  },
+  "theory_effect": {
+    "rank_one_route": "reopened_conditionally_by_topological_defect",
+    "rank_23_denominator": "conditional_pending_defect_embedding",
+    "Qcycle": "retained",
+    "previous_symmetry_no_go": "retained_for_defect_free_module",
+    "absolute_neutrino_scale": "still_open_but_has_a_concrete_completion_route"
+  },
+  "verdict": "A mathematically explicit route around the rank-one no-go exists. An odd class-D mass defect localized on the systolic projective geodesic supplies one transverse Majorana channel by a mod-two index. Coupling that channel to the existing nontrivial Z2 flat line cancels the antiperiodic spin holonomy and leaves one longitudinal real zero mode. Together with the generation singlet and self-dual cycle line this gives a rank-one kernel in the ambient module. The mechanism is not yet derived from the current S2T action because the odd-winding mass order parameter and its restriction map are new structural data."
+}

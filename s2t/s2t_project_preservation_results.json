@@ -1,0 +1,186 @@
+{
+  "status": "project_content_preserved_and_reproducible",
+  "date": "2026-08-06",
+  "checks": {
+    "core_files_nontrivial": true,
+    "single_document_end": true,
+    "all_core_markers_present": true,
+    "key_environments_balanced": true,
+    "recent_artifacts_complete": true,
+    "all_audit_scripts_compile": true,
+    "all_result_json_parse": true,
+    "no_git_deletions": true
+  },
+  "core_files": {
+    "main.tex": {
+      "bytes": 510839,
+      "lines": 3676,
+      "sha256": "839c48537b78bd9b3e52c539ecca25c437349df4542797eebcd3f85929af95cd",
+      "end_document_count": 1,
+      "marker_counts": {
+        "\\section{Послесловие после проверки вторым томом}": 1,
+        "\\subsection{Что сохранилось как математическое ядро}": 1,
+        "\\subsection{Что сохраняется только как условная связь}": 1,
+        "\\subsection{Какие ветви закрыты отрицательно}": 1,
+        "\\section{Перспектива следующего тома}": 1,
+        "23+\\pi^{-1}": 1
+      },
+      "environment_balances": {
+        "document": {
+          "begin": 1,
+          "end": 1
+        },
+        "equation": {
+          "begin": 144,
+          "end": 144
+        },
+        "itemize": {
+          "begin": 55,
+          "end": 55
+        },
+        "enumerate": {
+          "begin": 19,
+          "end": 19
+        },
+        "proof": {
+          "begin": 0,
+          "end": 0
+        },
+        "protocol": {
+          "begin": 0,
+          "end": 0
+        },
+        "nogocriterion": {
+          "begin": 0,
+          "end": 0
+        },
+        "proposition": {
+          "begin": 0,
+          "end": 0
+        }
+      }
+    },
+    "tome2_s2t_spectral_closure.tex": {
+      "bytes": 571396,
+      "lines": 7868,
+      "sha256": "807a5dc2e568ea63276838e653e95dcf2bd55c34238b76f62a567f8bd46ca887",
+      "end_document_count": 1,
+      "marker_counts": {
+        "S_{vac}": 60,
+        "m_\\tau": 42,
+        "23+\\pi^{-1}": 22,
+        "C6": 64,
+        "Единое parent action": 1,
+        "Глобальный falsification-аудит остаточных утверждений": 1,
+        "Продолжение феноменологической нумерологии внутри II.A прекращается": 1,
+        "\\part{Часть II.B: переоткрытие через новые операторные структуры}": 1,
+        "\\chapter{Definition of Done и текущий вердикт II.B}": 1,
+        "\\chapter{Общая голономия: первый прямой двухсекторный критерий}": 1,
+        "\\chapter{Непрерывная вильсоновская голономия и уравнение щели}": 1,
+        "\\chapter{Граничное роторное действие для вильсоновской ветви}": 1,
+        "\\chapter{Точный весовой детерминант граничного ротора}": 1,
+        "\\chapter{Модульная цепь, градуировка и минимальный CP-коцикл}": 1,
+        "\\chapter{Red-team двухслойной CKM-текстуры}": 1,
+        "\\chapter{Минимальный двудольный \\texorpdfstring{\\(C_4\\)}{C4}-лифт}": 1,
+        "\\chapter{Хирально удвоенный семейный триплет}": 1,
+        "\\section*{Red-team нулевого промта: условный вывод и неизбежность}": 1,
+        "\\chapter{Аудит покрытия наблюдаемого мира}": 1,
+        "\\chapter{Карта чтения и наблюдатель как недостающий слой}": 1,
+        "\\chapter{Wilson-state и относительный модульный коцикл}": 1,
+        "\\chapter{Прямой модульный коцикл и BCH-backreaction}": 1,
+        "\\chapter{Алгебраические нормировки BCH и полный CKM gate}": 1,
+        "\\chapter{Экспоненциальный Yukawa-readout: mass-trained и CKM-blind gate}": 1,
+        "\\chapter{Gap-derived weighted \\texorpdfstring{\\(A_3\\)}{A3} Yukawa gate}": 1,
+        "\\input{aps_orbifold_inflow_redteam_gate.tex}": 1,
+        "\\input{eta_phase_mass_gate.tex}": 1,
+        "\\input{conformal_majorana_rank_gate.tex}": 1,
+        "\\input{majorana_defect_parent_action_gate.tex}": 1,
+        "\\input{majorana_root_source_menu_gate.tex}": 1,
+        "\\input{bl_root_extension_gate.tex}": 1,
+        "\\input{bl_root_condensate_consistency_gate.tex}": 1,
+        "\\input{root_mass_condensate_trilemma_gate.tex}": 1,
+        "\\input{nonuniform_pairing_saddle_gate.tex}": 1,
+        "\\input{spectral_pairing_stiffness_gate.tex}": 1,
+        "\\input{bl_nonuniform_pairing_working_package.tex}": 1,
+        "\\input{hypothesis_batch_pruner_gate.tex}": 1,
+        "\\input{tiered_parent_action_p1_gate.tex}": 1,
+        "\\chapter{Что фактически достигнуто: от наивной модели к строгой программе}": 1
+      },
+      "environment_balances": {
+        "document": {
+          "begin": 1,
+          "end": 1
+        },
+        "equation": {
+          "begin": 543,
+          "end": 543
+        },
+        "itemize": {
+          "begin": 6,
+          "end": 6
+        },
+        "enumerate": {
+          "begin": 48,
+          "end": 48
+        },
+        "proof": {
+          "begin": 29,
+          "end": 29
+        },
+        "protocol": {
+          "begin": 63,
+          "end": 63
+        },
+        "nogocriterion": {
+          "begin": 85,
+          "end": 85
+        },
+        "proposition": {
+          "begin": 69,
+          "end": 69
+        }
+      }
+    }
+  },
+  "inventory": {
+    "root_tex_files": 66,
+    "audit_scripts": 170,
+    "result_json_files": 185,
+    "wiki_files": 113
+  },
+  "recent_artifacts": {
+    "expected_count": 160,
+    "missing": []
+  },
+  "python_failures": [],
+  "json_failures": [],
+  "git": {
+    "status_lines": [
+      " M s2t_anomaly_free_holonomy_projection_results.json",
+      " M s2t_bl_root_extension_gate_results.json",
+      " M s2t_continuous_wilson_gap_action_results.json",
+      " M s2t_lens_pform_absorption_results.json",
+      " M s2t_nonuniform_pairing_saddle_results.json",
+      " M s2t_project_preservation_results.json",
+      " M s2t_projected_kk_determinant_gate_results.json",
+      " M s2t_six_channel_inverse_susceptibility_results.json",
+      " M s2t_tome2_results.json",
+      " M tome2_s2t_spectral_closure.tex",
+      " M wiki/index.md",
+      " M wiki/log.md",
+      " M wiki/syntheses/bl-nonuniform-pairing-working-package-2026-08-07.md",
+      " M wiki/syntheses/theorem-status-ledger-2026-08-04.md",
+      "?? AGENTS.md",
+      "?? s2t_tiered_parent_action_p1_results.json",
+      "?? tiered_parent_action_p1_gate.tex",
+      "?? wiki/questions/tiered-parent-action-p1-gate.md"
+    ],
+    "deleted_paths": []
+  },
+  "principal_builds": {
+    "status": "verified_by_external_pdflatex_commands",
+    "main_pages": 112,
+    "tome2_pages": 201
+  },
+  "interpretation": "The original formulas, conditional-status language and negative verdicts remain in the principal tomes. Recent family-selector, physical-CKM red-team and bipartite-C4 work and the explicit B-L root-extension gate were added as separate audit/gate artifacts and did not replace the earlier mathematical or phenomenological corpus."
+}

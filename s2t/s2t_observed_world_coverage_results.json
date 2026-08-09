@@ -1,0 +1,271 @@
+{
+  "status": "observed_world_coverage_gate_failed_no_closed_independent_multisector_description",
+  "date": "2026-08-06",
+  "scope": {
+    "question": "What established content of our world is absent, underived, or quantitatively inaccurate in the current S2T model?",
+    "policy": "An input, postdiction, or numerically close conditional formula is not counted as a closed prediction.",
+    "external_control": "Particle Data Group 2026 is the current reference framework; numerical rows reuse the frozen controls already declared by the project unless explicitly noted."
+  },
+  "quantitative_scorecard": [
+    {
+      "observable": "alpha_em_inverse",
+      "prediction": 137.03599917352236,
+      "reference": 137.035999177,
+      "relative_error": -2.5377652332822115e-11,
+      "absolute_relative_error": 2.5377652332822115e-11,
+      "status": "numerically_extreme_but_train_anchor_and_operator_closure_failed",
+      "source": "s2t_tome2_results.json",
+      "note": "The numerical equality is not an independent blind prediction; the exact pi^-4 determinant route is closed negative."
+    },
+    {
+      "observable": "tau_mass_MeV",
+      "prediction": 1776.8594285630165,
+      "reference": 1776.86,
+      "relative_error": -3.2159932879576196e-07,
+      "absolute_relative_error": 3.2159932879576196e-07,
+      "status": "strong_conditional_relation",
+      "source": "s2t_tome2_results.json",
+      "note": "The seed rho_0 and the RP3 projection normalization remain unproved."
+    },
+    {
+      "observable": "Fermi_constant_GeV_minus2",
+      "prediction": 1.1685251e-05,
+      "reference": 1.1663788e-05,
+      "relative_error": 0.0018401397556265743,
+      "absolute_relative_error": 0.0018401397556265743,
+      "status": "precision_failure_and_matching_open",
+      "source": "tome2 blind table",
+      "note": "The relative mismatch is about 1.84e-3 and the weak-scale identification needs finite matching."
+    },
+    {
+      "observable": "W_mass_GeV",
+      "prediction": 82.02255126566878,
+      "reference": 80.36919999999999,
+      "relative_error": 0.020571951265768343,
+      "absolute_relative_error": 0.020571951265768343,
+      "status": "minimal_EW_QCD_branch_failed",
+      "source": "s2t_two_loop_split_stress_test_results.json",
+      "note": "Alpha-anchored two-loop split running overshoots the control by about 2.06 percent."
+    },
+    {
+      "observable": "Z_mass_GeV",
+      "prediction": 92.06162306447321,
+      "reference": 91.188,
+      "relative_error": 0.009580460855301218,
+      "absolute_relative_error": 0.009580460855301218,
+      "status": "minimal_EW_QCD_branch_failed",
+      "source": "s2t_two_loop_split_stress_test_results.json",
+      "note": "Alpha-anchored two-loop split running overshoots the control by about 0.96 percent."
+    },
+    {
+      "observable": "sin2_thetaW_on_shell_proxy",
+      "prediction": 0.20620329352438563,
+      "reference": 0.22320949284344327,
+      "relative_error": -0.07618940889304204,
+      "absolute_relative_error": 0.07618940889304204,
+      "status": "minimal_EW_QCD_branch_failed",
+      "source": "s2t_two_loop_split_stress_test_results.json",
+      "note": "The weak-angle proxy is low by about 7.62 percent."
+    },
+    {
+      "observable": "alpha_s_MZ",
+      "prediction": 0.08017692699095016,
+      "reference": 0.118,
+      "relative_error": -0.320534517025846,
+      "absolute_relative_error": 0.320534517025846,
+      "status": "minimal_EW_QCD_branch_failed",
+      "source": "s2t_two_loop_split_stress_test_results.json",
+      "note": "The strong coupling is low by about 32.05 percent."
+    },
+    {
+      "observable": "CKM_Jarlskog",
+      "prediction": 0.05104131819566343,
+      "reference": 3.12e-05,
+      "relative_error": 1634.9396857584434,
+      "absolute_relative_error": 1634.9396857584434,
+      "status": "blind_texture_failed",
+      "source": "s2t_two_layer_physical_ckm_redteam_results.json",
+      "note": "The symmetric texture predicts nonhierarchical mixing and a Jarlskog invariant over three orders of magnitude too large."
+    },
+    {
+      "observable": "CKM_sin_theta13",
+      "prediction": 0.5694394400528131,
+      "reference": 0.003732,
+      "relative_error": 151.5829153410539,
+      "absolute_relative_error": 151.5829153410539,
+      "status": "blind_texture_failed",
+      "source": "s2t_two_layer_physical_ckm_redteam_results.json",
+      "note": "The smallest observed quark-mixing angle is predicted as an order-one angle."
+    },
+    {
+      "observable": "neutrino_mass_splitting_ratio",
+      "prediction": 33.85458095393981,
+      "reference": 33.55140186915888,
+      "relative_error": 0.009036256844445516,
+      "absolute_relative_error": 0.009036256844445516,
+      "status": "numerically_close_but_dimension_selector_failed",
+      "source": "s2t_neutrino_majorana_dimension_gate_results.json",
+      "note": "The ratio is close, but the integer 23 is not representation-consistently derived and the absolute scale is not closed."
+    },
+    {
+      "observable": "Higgs_mass_GeV",
+      "prediction": 125.056486039,
+      "reference": 125.2,
+      "relative_error": -0.00114627764376994,
+      "absolute_relative_error": 0.00114627764376994,
+      "status": "numerically_close_but_conditional_scale_bridge",
+      "source": "tome2 Higgs EFT block; 2026 control rounded to 125.20 GeV",
+      "note": "The mass inherits the conditional tau and S_vac chain and is not independent of the unclosed absolute scale."
+    }
+  ],
+  "atlas_crosscheck": {
+    "status": "retrospective_common_base_compression_not_pi_uniqueness",
+    "claim_count": 11,
+    "claims": [
+      "alpha_s",
+      "sin2_theta_w",
+      "bottom_over_proton",
+      "strange_over_proton",
+      "down_over_electron",
+      "up_over_electron",
+      "tau_over_mu",
+      "V_cb",
+      "Omega_Lambda",
+      "Omega_dm",
+      "Omega_b"
+    ],
+    "pi_score": 0.018278930328733373,
+    "best_grid_base": 3.1642200000000003,
+    "best_grid_score": 0.015879651534315985,
+    "pi_low_error_percentile": 2.2699886500567494,
+    "interpretation": "The atlas already gives retrospective common-base numerical coverage of alpha_s, sin2 theta_W, four quark mass ratios, tau/muon, V_cb and three cosmological fractions. These entries must not be described as absent. They remain conditional compression rather than derived physics because the observable-to-formula addressing rule, parent action, scale dependence and dynamics are not selected."
+  },
+  "coverage_ledger": [
+    {
+      "domain": "electromagnetic_low_energy",
+      "established_world_content": "massless U(1) gauge field, QED charges, running and scattering amplitudes",
+      "model_status": "partial_numeric_compression_only",
+      "missing": "a closed Maxwell-ghost determinant and a derived low-energy QED action with matter charges"
+    },
+    {
+      "domain": "charged_lepton_spectrum",
+      "established_world_content": "electron, muon and tau with distinct masses and weak couplings",
+      "model_status": "one_conditional_tau_to_mu_relation",
+      "missing": "a common Yukawa or mass operator deriving all three masses rather than using the muon scale as input"
+    },
+    {
+      "domain": "quark_mass_spectrum",
+      "established_world_content": "six quark flavours with hierarchical running masses",
+      "model_status": "retrospective_atlas_contains_four_quark_mass_ratios_but_no_mass_operator",
+      "missing": "selected up- and down-type Yukawa blocks and their renormalization-scale dependence"
+    },
+    {
+      "domain": "CKM_mixing_and_CP",
+      "established_world_content": "hierarchical nontrivial quark mixing and CP violation",
+      "model_status": "retrospective_atlas_contains_Vcb_but_candidate_full_texture_fails",
+      "missing": "a selector fixing the two Yukawa blocks and reproducing four CKM parameters"
+    },
+    {
+      "domain": "neutrino_oscillations",
+      "established_world_content": "two nonzero mass splittings and large three-flavour mixing",
+      "model_status": "conditional_ratio_without_PMNS_or_absolute_scale",
+      "missing": "a valid rank selector, absolute Dirac/Majorana scale, ordering and the PMNS matrix"
+    },
+    {
+      "domain": "electroweak_precision",
+      "established_world_content": "W and Z masses, Fermi constant and weak mixing angle",
+      "model_status": "minimal_running_and_threshold_routes_failed",
+      "missing": "parameter-free finite matching jointly closing G_F, M_W, M_Z and sin2 theta_W"
+    },
+    {
+      "domain": "strong_interaction",
+      "established_world_content": "QCD running, confinement, jets and a hadron spectrum",
+      "model_status": "retrospective_atlas_matches_alpha_s_but_running_branch_fails_and_hadron_dynamics_are_absent",
+      "missing": "correct running plus confinement and quantitative meson/baryon observables"
+    },
+    {
+      "domain": "Higgs_sector",
+      "established_world_content": "a scalar resonance near 125 GeV with measured couplings and width",
+      "model_status": "conditional_mass_bridge",
+      "missing": "independent absolute scale, finite matching, decay widths and coupling modifiers"
+    },
+    {
+      "domain": "complete_standard_model_representation",
+      "established_world_content": "chiral gauge representations with anomaly cancellation",
+      "model_status": "partial_SU5_like_kinematic_construction",
+      "missing": "one parent action reducing to the complete observed low-energy field content and interactions"
+    },
+    {
+      "domain": "dynamical_spacetime_and_gravity",
+      "established_world_content": "universal gravitational dynamics and propagating spacetime perturbations",
+      "model_status": "not_in_tome2_closure",
+      "missing": "Einstein or alternative field equations, Newton normalization and a controlled graviton sector"
+    },
+    {
+      "domain": "cosmic_expansion",
+      "established_world_content": "an expanding universe with a measured thermal and expansion history",
+      "model_status": "retrospective_atlas_contains_three_density_fractions_but_no_cosmological_dynamics",
+      "missing": "background cosmological equations and parameter predictions"
+    },
+    {
+      "domain": "missing_mass_phenomenology",
+      "established_world_content": "gravitational evidence for nonluminous matter beyond visible baryons",
+      "model_status": "retrospective_atlas_contains_Omega_dm_but_no_dark_sector_or_structure_formation",
+      "missing": "a stable sector or modified dynamics reproducing abundance and structure formation"
+    },
+    {
+      "domain": "accelerated_expansion",
+      "established_world_content": "late-time accelerated cosmic expansion",
+      "model_status": "retrospective_atlas_contains_Omega_Lambda_but_no_acceleration_mechanism",
+      "missing": "a vacuum-energy or dynamical-dark-energy prediction compatible with cosmology"
+    },
+    {
+      "domain": "matter_antimatter_asymmetry",
+      "established_world_content": "a baryon-dominated observable universe",
+      "model_status": "not_derived",
+      "missing": "a baryogenesis mechanism with quantified CP violation and out-of-equilibrium dynamics"
+    },
+    {
+      "domain": "quantum_consistency",
+      "established_world_content": "unitary, causal and precision-tested quantum amplitudes over a wide energy range",
+      "model_status": "sectorwise_EFT_fragments_only",
+      "missing": "a common Hilbert space, measure, BRST/BV completion, renormalization prescription and unitarity checks"
+    }
+  ],
+  "summary": {
+    "quantitative_rows": 11,
+    "attempted_precision_failures": 7,
+    "coverage_domains": 15,
+    "unresolved_or_missing_domains": 15,
+    "closed_independent_multisector_predictions": 0,
+    "largest_relative_error": {
+      "observable": "CKM_Jarlskog",
+      "prediction": 0.05104131819566343,
+      "reference": 3.12e-05,
+      "relative_error": 1634.9396857584434,
+      "absolute_relative_error": 1634.9396857584434,
+      "status": "blind_texture_failed",
+      "source": "s2t_two_layer_physical_ckm_redteam_results.json",
+      "note": "The symmetric texture predicts nonhierarchical mixing and a Jarlskog invariant over three orders of magnitude too large."
+    },
+    "existing_global_status": "IIA_rejected_zero_closed_independent_empirical_predictions"
+  },
+  "marker_counts": {
+    "new_predictions_absent": 1,
+    "unified_action_absent": 1,
+    "CKM_selector_absent": 1,
+    "EW_QCD_negative": 1
+  },
+  "existing_machine_status": {
+    "zero_closed_predictions": true
+  },
+  "priority_order": [
+    "derive one parent action and readout map before adding more constants",
+    "close the low-energy gauge sector against M_W, M_Z, sin2 theta_W and alpha_s without fitting",
+    "derive finite-algebra constraints selecting quark and lepton Yukawa blocks",
+    "produce the CKM and PMNS matrices plus full fermion mass spectra",
+    "derive gravity and cosmological background dynamics",
+    "only then count a preregistered new observable as evidence for world inevitability"
+  ],
+  "verdict": "The current model captures nontrivial mathematical structure and several striking numerical relations, including an eleven-row retrospective pi-atlas, but it does not yet recover the minimum established content of our world as an operator-derived theory. Its sharpest independent low-energy branch fails electroweak and QCD precision, its CKM texture fails strongly, the neutrino and Higgs successes are conditional, and whole established sectors remain underived."
+}

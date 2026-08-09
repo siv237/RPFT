@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-09",
+  "version": "S2T-III",
+  "status": "minimal_local_compact_phase_no_go_stratified_pairing_open",
+  "compact_coordinate": {
+    "period": "2*pi",
+    "continuous_rescaling_is_group_automorphism": false,
+    "allowed_primitive_coordinate_changes": [
+      1,
+      -1
+    ],
+    "charge_lattice_fixes_vertex_powers": true,
+    "embedding_scale_kinematically_fixed": true
+  },
+  "minimal_local_action": {
+    "derivative_constant_mode_hessian": "0",
+    "group_metric_coefficient": "phase_metric",
+    "group_metric_coefficient_fixed_by_period": false,
+    "potential_scale": "potential_scale",
+    "potential_scale_fixed_by_compactness": false,
+    "potential_hessian_RP3": "pi**2*potential_scale",
+    "potential_hessian_S1": "2*pi*potential_scale"
+  },
+  "locality_test": {
+    "volume_K": "2*pi**3",
+    "target_factor_sum": "pi*(2 + pi)",
+    "single_local_constant_field_gives_factor_sum": false,
+    "stratified_direct_sum_gives_factor_sum": true,
+    "stratified_origin_from_parent_action": false
+  },
+  "verdict": {
+    "minimal_local_compact_phase_passed": false,
+    "kinematic_embedding_gap_closed": true,
+    "dynamic_hessian_gap_closed": false,
+    "next_gate": "derive a common boundary/defect symplectic pairing"
+  }
+}

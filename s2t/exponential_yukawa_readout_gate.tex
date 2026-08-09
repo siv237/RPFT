@@ -1,0 +1,74 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{xurl}
+\geometry{margin=2.3cm}
+
+\title{Экспоненциальный Yukawa-readout\\
+mass-trained и CKM-blind gate}
+\author{}
+\date{6 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Канонический readout}
+
+Проверена центрально-инвариантная карта
+\[
+ m_i\propto\exp[-\beta(E_i-E_{\min})].
+\]
+Она не содержит additive offset и использует только меню
+\(\beta\in\{1,\pi,2\pi\}\), заданное единичной, \(\mathbb{RP}^3\)- и
+\(S^1\)-длинами.
+
+Для \(432\) Wilson/BCH-кандидатов и девяти up/down-назначений \(\beta\)
+получено \(3888\) mass-readout. Выбор выполнен только по quark mass ratios;
+CKM оставался blind.
+
+\section{Mass gate}
+
+Лучший кандидат самостоятельно выбирает
+\[
+ \beta_u=\beta_d=\pi.
+\]
+Его multiplicative errors для четырёх лёгких отношений равны
+\[
+ (10.242,\ 0.841,\ 0.511,\ 1.076).
+\]
+Средний logarithmic score равен \(1.2145\). Ни один кандидат не закрывает все
+четыре отношения даже в пределах factor ten.
+
+Центральные сдвиги \(H_s\mapsto H_s+c_sI\) не меняют полученные patterns с
+ошибкой \(10^{-12}\), поэтому прежняя offset-неидентифицируемость действительно
+устранена.
+
+\section{Blind CKM}
+
+Mass-selected кандидат предсказывает
+\[
+ \frac{|J|}{J_{\mathrm{CKM}}}=357.9.
+\]
+Отношения трёх углов к контролю равны
+\[
+ (4.34,\ 13.96,\ 199.06).
+\]
+Следовательно, улучшение mass hierarchy не переносится на mixing.
+
+\section{Общий no-go}
+
+Для любой скалярной функции \(f\) операторы \(H\) и \(f(H)\) имеют одни и те
+же спектральные проекторы. Functional calculus может менять eigenvalues и
+устранять центральный offset, но не может исправить неправильный собственный
+базис. Следующий объект обязан быть некоммутирующей Yukawa-вставкой или
+неравной edge metric, меняющей eigenvectors.
+
+Машинные результаты сохранены в
+\path{s2t_exponential_yukawa_readout_audit.py} и
+\path{s2t_exponential_yukawa_readout_results.json}.
+
+\end{document}

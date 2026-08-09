@@ -1,0 +1,69 @@
+{
+  "status": "delta2_connection_single_GammaAB_ambient_simplification_fixed_integrals_missing",
+  "inputs": [
+    "s2t_c6_l21_delta2_connection_laplacian_insertion_results.json",
+    "s2t_c6_l21_delta2_gamma_expansion_formula_results.json",
+    "s2t_c6_l21_delta2_ambient_path_formula_results.json",
+    "s2t_c6_l21_delta2_c11_setup_results.json"
+  ],
+  "purpose": "Simplify the single mixed second-connection insertion Gamma_AB in the rough one-form Laplacian on the locked ambient linear strain path.",
+  "ambient_simplification": {
+    "general_constant_symmetric_bilinear": "For b_L(Y,Z)=<Y,LZ> on unit S3, C_L(X,Y,Z)=-2<X,Y><Z,Lx>.",
+    "mixed_metric_second_derivative": "k_AB(Y,Z)=<AY,BZ>+<BY,AZ>=<Y,(AB+BA)Z>.",
+    "C_AB": "C_AB(X,Y,Z)=-2<X,Y><Z,(AB+BA)x>.",
+    "first_connection_inputs": "C_A=-4 g ⊗ a_A, C_B=-4 g ⊗ a_B, with a_A=(Ax)^T and a_B=(Bx)^T.",
+    "inverse_metric_variations": "m_A=-h_A^sharp=-2 A_T and m_B=-2 B_T on tangent vectors, in the background metric.",
+    "Gamma_AB_simplified": "Gamma_AB^k_ij = g_ij w_AB^k",
+    "w_AB": "w_AB = -ell_AB + 4 A_T a_B + 4 B_T a_A, where ell_AB=((AB+BA)x)^T."
+  },
+  "rough_laplacian_single_slot": {
+    "starting_slot": "-g^{ij}[ -nabla_i(Gamma_AB^d_jc alpha_d) - Gamma_AB^d_ij nabla_d alpha_c - Gamma_AB^d_ic nabla_j alpha_d ]",
+    "after_Gamma_gw_substitution": "L_single_GammaAB(alpha)_c = nabla_c(w_AB^d alpha_d) + 3 w_AB^d nabla_d alpha_c + w_AB^d nabla_c alpha_d",
+    "expanded": "L_single_GammaAB(alpha)_c = (nabla_c w_AB^d) alpha_d + 2 w_AB^d nabla_c alpha_d + 3 w_AB^d nabla_d alpha_c",
+    "scope_warning": "This is only the single Gamma_AB insertion slot in the connection part. It excludes Gamma_A Gamma_B products and inverse-metric/first-connection cross terms."
+  },
+  "C11_reduction_template": {
+    "entry": "(C_conn2_single_GammaAB[1,1])_rs(A,B)=Integral e_r^c L_single_GammaAB(e_s)_c dV_g",
+    "basis": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ],
+    "deformation_pairs": 55,
+    "raw_entries": 1980,
+    "next_integrals": "moments involving Killing fields, derivatives of Killing fields, w_AB, and nabla w_AB"
+  },
+  "what_is_now_ready": [
+    "Gamma_AB is reduced to the isotropic-in-ij form g_ij w_AB^k for the locked ambient path.",
+    "The rough-Laplacian single-insertion slot is reduced to first-order and zero-order terms controlled by w_AB.",
+    "The next table can be computed by finite S3/RP3 moments rather than full Christoffel tensor expansion."
+  ],
+  "what_is_still_missing": [
+    "compute explicit moment table for the single Gamma_AB slot against the six Killing states",
+    "combine with the already computed Gamma_A Gamma_B product subslot",
+    "derive/evaluate the inverse-metric/first-connection cross slot",
+    "only after all connection slots are combined, compare with Ricci, projector, Hilbert/basis, and local/compensation pieces"
+  ],
+  "pass_fail": [
+    {
+      "test": "GammaAB_ambient_vector_simplified",
+      "status": "pass",
+      "meaning": "Gamma_AB has the form g_ij w_AB^k on the locked ambient path."
+    },
+    {
+      "test": "single_slot_operator_reduced",
+      "status": "pass",
+      "meaning": "The single Gamma_AB rough-Laplacian slot is reduced to terms involving w_AB and nabla w_AB."
+    },
+    {
+      "test": "single_slot_C11_moment_table_computed",
+      "status": "not_yet",
+      "meaning": "The six-state moment table for this slot has not been evaluated."
+    }
+  ],
+  "plain_language": "The neighboring gear also shrank. The single Gamma_AB slot is controlled by one arrow w_AB instead of a bulky three-index connection tensor. It is ready for a moment-table calculation, but not measured yet.",
+  "verdict": "The single Gamma_AB connection insertion has been simplified on the locked ambient path to Gamma_AB^k_ij=g_ij w_AB^k, yielding an explicit rough-Laplacian slot L(alpha)_c=(nabla_c w^d)alpha_d+2w^d nabla_c alpha_d+3w^d nabla_d alpha_c. This advances the second-connection C11 block beyond the product subslot, but no single-slot C11 integrals have yet been computed."
+}

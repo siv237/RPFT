@@ -1,0 +1,85 @@
+{
+  "status": "delta2_second_ricci_formula_skeleton_fixed_delta2Ricci_expansion_missing",
+  "inputs": [
+    "s2t_c6_l21_delta2_ambient_path_formula_results.json",
+    "s2t_c6_l21_ricci_variation_formula_results.json",
+    "s2t_c6_l21_delta2_operator_decomposition_results.json"
+  ],
+  "operator_convention": {
+    "laplacian": "Delta_1 alpha = -nabla^2 alpha + Ric(alpha)",
+    "this_block_only": "second variation of the Ricci/curvature endomorphism part of the one-form Weitzenbock operator",
+    "not_included_here": [
+      "principal second-symbol block",
+      "rough-laplacian connection second-variation block",
+      "coexact projector second variation",
+      "Hilbert/basis second variation",
+      "local counterterm classifier"
+    ]
+  },
+  "ambient_metric_path": {
+    "path_id": "ambient_linear_embedding_strain",
+    "map": "F_eps(x)=(I+eps A)x, A=A^T, x in S3 subset R4, descended to L(2,1)",
+    "metric": "g_eps = F_eps^* <.,.>_R4 on the fixed S3/RP3 parameter manifold",
+    "reason": "This is the same first ambient strain route that supplies P02=Sym^2(R4)=1+9 in earlier audits.",
+    "selection_status": "fixed_for_theorem_route_before_C_delta2_numbers"
+  },
+  "metric_derivatives": {
+    "first_derivative_same_A": "g'_A(u,v)=2 <u,A v>",
+    "second_derivative_same_A": "g''_A(u,v)=2 <A u,A v>",
+    "mixed_second_derivative_A_B": "partial_A partial_B g(u,v)=<A u,B v>+<B u,A v>",
+    "expansion_same_A": "g_eps(u,v)=g(u,v)+eps*2<u,A v>+eps^2<Au,Av>",
+    "tangent_vectors": "u,v in T_x S3 with <u,x>=<v,x>=0"
+  },
+  "first_ricci_reference": {
+    "covariant_Ricci_variation": "delta Ric_ab = - nabla_a nabla_b q - g_ab nabla^2 q in dimension 3 for h=2qg, using geometric nabla^2 sign",
+    "mixed_Ricci_operator_variation": "delta(Ric_a^b alpha_b) = (delta Ric_a^b) alpha_b + (delta g^{bc}) Ric_ac alpha_b",
+    "index_raising_piece_on_unit_S3": "(delta g^{bc}) Ric_ac alpha_b = -4 q alpha_a",
+    "positive_laplacian_translation": "if Delta_0 = -nabla^2 and q is ell=2, then nabla^2 q = -8 q; signs must be kept in the same convention as Delta_1 = -nabla^2 + Ric",
+    "warning": "This fixes the tensor formula only. It is not yet the evaluated C_Ric[1,3] matrix block."
+  },
+  "ricci_second_variation_skeleton": {
+    "curvature_part": "delta2_AB Ric_ij from variation_B[delta_A Ric_ij], including delta2 Gamma derivatives and delta Gamma_A delta Gamma_B curvature products",
+    "operator_index_part": "delta2_AB(Ric_i^j alpha_j) includes delta2 Ric_i^j alpha_j plus all index-raising products from partial_A g^{-1}, partial_B g^{-1}, and partial_AB g^{-1}",
+    "expanded_obligation": [
+      "covariant Ricci second variation: partial_AB Ric_ij in one ambient-path convention",
+      "mixed-index conversion: partial_AB(g^{jk} Ric_ik)",
+      "products (partial_A g^{-1})(partial_B Ric) and (partial_B g^{-1})(partial_A Ric)",
+      "background-curvature index term (partial_AB g^{-1}) Ric_background",
+      "symmetrization in A,B and sign convention matching Delta_1=-nabla^2+Ric"
+    ],
+    "warning": "This audit fixes the Ricci second-variation slots and signs to track, not the fully expanded delta2 Ricci tensor on S3/RP3."
+  },
+  "constant_curvature_context": {
+    "background": "unit S3/RP3 has Ric_ij=2 g_ij in dimension 3",
+    "why_not_drop": "Even on a constant-curvature background, metric variation changes Ric and the mixed Ric_i^j endomorphism; this block can contribute finite low-shell data.",
+    "conformal_slice_reference": "For h=2qg, first variation used delta Ric_ab=-nabla_a nabla_b q-g_ab nabla^2 q plus index raising -4q alpha_a, but the ambient theorem path is raw pullback unless a slice theorem is supplied."
+  },
+  "matrix_task": {
+    "required_targets": [
+      "C_delta2[1,1]",
+      "C_delta2[3,3]"
+    ],
+    "required_pairs": 55,
+    "required_raw_diagonal_entries": 51480,
+    "status": "not_evaluated"
+  },
+  "pass_fail": [
+    {
+      "test": "formula_skeleton_written",
+      "status": "pass",
+      "meaning": "The second Ricci/curvature slots are now identified and separated from principal/connection blocks."
+    },
+    {
+      "test": "delta2Ricci_fully_expanded",
+      "status": "not_yet",
+      "meaning": "The complete ambient-path tensor expression for delta2 Ricci_AB is still missing."
+    },
+    {
+      "test": "diagonal_matrix_traces_evaluated",
+      "status": "not_yet",
+      "meaning": "No diagonal C_delta2 traces have been computed from the Ricci block."
+    }
+  ],
+  "plain_language": "The third gear is curvature. RP3 is curved, so this gear cannot be thrown away. We have marked its slot, but the actual curved gear is not cut yet.",
+  "verdict": "The second Ricci/curvature subblock is now fixed at skeleton level. It consists of delta2 Ricci_AB, mixed-index raising terms, products of first inverse-metric and first Ricci variations, and background-curvature terms from partial_AB g^{-1}. This is not yet the full delta2 Ricci tensor or a finite trace computation; diagonal C_delta2 traces remain open."
+}

@@ -1,0 +1,123 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,array}
+\usepackage{geometry}
+\usepackage{microtype}
+\geometry{margin=2.3cm}
+
+\title{Continuous Wilson gap-action gate\\
+устойчивость угла и геометрическое сокращение осей}
+\author{}
+\date{5 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Непрерывное двухсекторное решение}
+
+Для \(SO(3)\) Wilson-holonomy с фазами \((0,a,1-a)\) полный
+tensor-response в единицах \(\pi^4\) равен
+\begin{equation}
+ R(c)=\frac1{45}+\frac{8(2+c)}{3(1-c)^2},
+ \qquad
+ c=\cos(2\pi a).
+\end{equation}
+Условие \(R(c)=1\) даёт
+\begin{equation}
+ 11c^2-52c-49=0,
+\end{equation}
+и допустимый корень
+\begin{equation}
+ c_*=\frac{26-9\sqrt{15}}{11},
+ \qquad
+ a_*\approx0.3989625047.
+\end{equation}
+Перебор канонических octahedral-\(S_4\) осей даёт восемь направлений,
+которые одновременно сохраняют \(R(c_*)=1\) и расширяют family-алгебру до
+\(M_3\).
+
+\section{Spectral gap-functional}
+
+Точка \(c_*\) является не только решением обратного численного условия.
+Функция
+\begin{equation}
+ V_{\mathrm{gap}}(c)
+ =
+ \frac83\left(
+ \frac3{1-c}+\log(1-c)
+ \right)
+ -\frac{44}{45}c
+\end{equation}
+удовлетворяет
+\begin{equation}
+ V_{\mathrm{gap}}'(c)=R(c)-1.
+\end{equation}
+Поэтому \(c_*\) является её стационарной точкой. Более того,
+\begin{equation}
+ V_{\mathrm{gap}}''(c_*)
+ =R'(c_*)
+ =\frac{8(5+c_*)}{3(1-c_*)^3}
+ \approx1.901648596>0.
+\end{equation}
+Следовательно, найденный угол является устойчивым локальным минимумом
+явного zero-parameter spectral primitive.
+
+Это повышает статус конструкции: угол можно читать как решение gap-equation,
+а не как свободно назначенный holonomy. Но единица в условии
+\(R(c)=1\) теперь становится новым normalization gate. При замене единицы на
+bare stiffness \(\kappa\)
+\begin{equation}
+ \frac{dc_*}{d\kappa}\bigg|_{\kappa=1}
+ =\frac1{R'(c_*)}
+ \approx0.525859511.
+\end{equation}
+Поэтому каноническая нормировка должна быть выведена, а не объявлена.
+
+\section{Factor-axis selector}
+
+К оси \(\hat n\) применены уже существующие factor operators
+\begin{equation}
+ L(w_3,w_1)
+ =w_3(I-T_{\mathbb{RP}^3})+w_1(I-T_{S^1})
+\end{equation}
+с тремя ранее объявленными kernels: inverse length, inverse square и
+tunneling. Для каждого из них минимизация
+\begin{equation}
+ E_L(\hat n)=\hat n^TL\hat n
+\end{equation}
+сокращает восемь совместных осей до двух эквивалентных
+transposition-направлений. Таким образом, старая product geometry уже
+содержит частичный selector:
+\begin{equation}
+ 8\longrightarrow2.
+\end{equation}
+
+Оставшаяся двукратность может интерпретироваться как symmetry-related vacuum
+degeneracy, но это допустимо только после вывода самого coupling
+\(\hat n^TL\hat n\) из того же boundary action.
+
+\section{Вердикт}
+
+\begin{equation}
+ \boxed{
+ \begin{gathered}
+ \text{joint operator existence}\quad\checkmark,\\
+ \text{stable spectral saddle}\quad\checkmark,\\
+ \text{partial geometric axis selector}\quad\checkmark,\\
+ \text{единый local/BV action и unit stiffness}\quad\text{открыты}.
+ \end{gathered}
+ }
+\end{equation}
+
+Следующий строгий шаг: построить auxiliary-field или boundary gauge action,
+чьё однопетлевое интегрирование одновременно даёт
+\(V_{\mathrm{gap}}\), каноническую единичную stiffness и factor-axis term.
+
+Машинный аудит сохранён в
+\texttt{s2t\_continuous\_wilson\_gap\_action\_audit.py} и
+\texttt{s2t\_continuous\_wilson\_gap\_action\_results.json}.
+
+\end{document}

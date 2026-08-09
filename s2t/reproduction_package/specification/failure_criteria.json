@@ -1,0 +1,9 @@
+{
+  "M1": "Any unexplained continuous factor or disagreement beyond the declared numerical tolerance.",
+  "M2": "Any mismatch in eigenvalues, multiplicities, parity projection, or spin-structure assignment.",
+  "M3": "Any regularization-dependent quantity presented as universal, or failure of the exact zeta identity.",
+  "M4": "Any projector rank assumed rather than derived, or normalized trace substituted for ordinary trace without a parent measure.",
+  "M5": "Any nonzero anomaly sum or globally ill-defined Majorana vertex.",
+  "M6": "Any no-go conclusion that uses experimental targets or assumptions absent from its declared hypothesis class.",
+  "global": "Any use of physical observables before the independent mathematical submission is frozen."
+}

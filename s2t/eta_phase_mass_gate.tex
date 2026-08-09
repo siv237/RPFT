@@ -1,0 +1,122 @@
+\chapter{Фаза детерминанта и вещественная масса: тест критерия Ф.2}
+
+После выбора anomaly inflow как вспомогательной invertible/topological
+теории остаётся один решающий вопрос: может ли eta-фаза фермионного
+детерминанта породить вещественный аддитивный член \(-\alpha/3\) в
+относительном операторе заряженных лептонов?
+
+\section{Полный product Dirac operator}
+
+Для product geometry квадрат оператора имеет вид
+\begin{equation}
+ D_K^2=D_{\mathbb{RP}^3}^2+D_{S^1}^2,
+\end{equation}
+поэтому каждому трёхмерному собственному значению \(\lambda_j\) и окружной
+моде \(n+\beta\) соответствует положительная энергия
+\begin{equation}
+ E_{j,n}^2=\lambda_j^2+\frac{(n+\beta)^2}{R_1^2}.
+\end{equation}
+Физический charged lepton является vectorlike Dirac field. Его полный
+Clifford-блок содержит пару \(\pm iE_{j,n}\), и при вещественной массе
+\begin{equation}
+ (m+iE_{j,n})(m-iE_{j,n})=m^2+E_{j,n}^2>0.
+\end{equation}
+Следовательно,
+\begin{equation}
+ \log(m+iE)+\log(m-iE)=\log(m^2+E^2),
+\end{equation}
+а mass response равен
+\begin{equation}
+ \frac{\partial}{\partial m}\log\det(D_K+m)
+ =\sum_{j,n}\frac{2m}{m^2+E_{j,n}^2}.
+\end{equation}
+Обе формулы вещественны blockwise. Спектральная асимметрия нечётномерного
+фактора не создаёт eta-члена в производной вещественного vectorlike
+effective action.
+
+\section{Численный asymmetric-spectrum control}
+
+Машинный тест намеренно использует несимметричный набор положительных и
+отрицательных трёхмерных eigenvalues, после чего строит полный
+четырёхмерный Clifford pair для periodic и antiperiodic окружностей. Для
+каждого блока, полной суммы и antiperiodic-minus-periodic difference мнимая
+часть равна нулю с машинной точностью. Производная по массе также полностью
+вещественна. Тем самым cancellation не опирается на случайную симметрию
+выбранного cutoff spectrum.
+
+\section{Почему \texorpdfstring{\(\zeta(-1)\)}{zeta(-1)} не является этим
+детерминантом}
+
+Для одного massive product-level конечное circle determinant ratio задаётся
+\begin{equation}
+ \mathcal I_\rho(\beta)=
+ \log\frac{\cosh(2\pi\rho)-\cos(2\pi\beta)}
+ {\cosh(2\pi\rho)-1}.
+\end{equation}
+При \(\rho=1\) и \(\beta=1/2\) получаем
+\begin{equation}
+ \mathcal I_1(1/2)=0.0074697796\ldots,
+\end{equation}
+что точно воспроизводит прежний projected-KK audit, но не равно
+\begin{equation}
+ |\zeta_R(-1)|=\frac1{12}=0.0833333\ldots.
+\end{equation}
+Первое число является mass-dependent Euclidean log-determinant; второе ---
+Casimir-регуляризацией линейной суммы уровней. Их нельзя складывать как
+части одного determinant без нового functional bridge.
+
+\section{Статус трёхмерной eta-фазы}
+
+В текущем spin-аудите для двух структур \(\mathbb{RP}^3\) зафиксировано
+\begin{equation}
+ \eta_D=\pm\frac14.
+\end{equation}
+Значение \(-1/2\) отсутствует в замороженном operator menu и потребовало бы
+явного twisted или doubled Dirac operator. Но даже после такого изменения
+eta-фаза относится к chiral determinant line. В vectorlike charged-lepton
+determinant две хиральности образуют положительный модуль и фазовый вклад
+сокращается.
+
+\begin{theorem}[Минимальный phase-to-mass no-go]
+Для вещественной положительной Dirac-массы и vectorlike charged-lepton
+operator на \(\mathbb{RP}^3\times S^1\) eta-инвариант не даёт аддитивного
+вклада в \(\partial_m\Re\log\det(D_K+m)\). Поэтому разложение
+\begin{equation}
+ \frac13=\frac14+\frac1{12}
+\end{equation}
+не выводит вещественный mass shift \(-\alpha/3\) в минимальной Gaussian
+реализации.
+\end{theorem}
+
+\begin{proof}
+Каждый product-level входит парой \(m\pm iE\). Их произведение положительно,
+мнимая часть логарифма сокращается, а mass derivative зависит только от
+\(m^2+E^2\). Отдельно, окружной determinant является функцией
+\(\mathcal I_\rho(\beta)\), а не константой \(|\zeta_R(-1)|\). Следовательно,
+ни eta-фаза, ни Casimir-остаток не поставляют требуемый вещественный
+коэффициент в объявленном operator class.
+\end{proof}
+
+\begin{protocol}[Условие переоткрытия Ф.2]
+Phase-to-mass ветвь может быть переоткрыта только если из parent action
+следуют:
+\begin{enumerate}
+ \item complex chiral Yukawa mass с физически неустранимой фазой;
+ \item CP-odd background или сумма topological sectors, превращающая
+ фазовую интерференцию в вещественный potential;
+ \item заранее фиксированная связь этого potential с lepton mass modulus;
+ \item линейный коэффициент \(\alpha/3\) без использования \(m_\tau\);
+ \item ablation eta/topological sector уничтожает именно вещественный mass
+ shift, а не только фазу partition function.
+\end{enumerate}
+\end{protocol}
+
+Текущий вердикт критерия Ф.2 отрицателен. 4D topological interpretation
+остаётся допустимой для global anomaly и determinant-phase bookkeeping, но
+не закрывает \(\tau/\mu\)-формулу. Единственным существующим вещественным
+кандидатом остаётся прежняя QED winding self-energy, для которой unit
+normalization даёт коэффициент \(0.0616969\ldots\), а требуемый projection
+weight \(5.4027533\ldots\) не выведен.
+
+Машинный протокол сохранён в
+\texttt{s2t\_eta\_phase\_mass\_gate\_results.json}.

@@ -1,0 +1,42 @@
+{
+  "freeze_date": "2026-08-07",
+  "supersedes": "all earlier intermediate II.A/II.B maturity ledgers",
+  "R_sci": "4/10 pending external computational reproduction and mathematical replication",
+  "N_closed_physical": 0,
+  "proved": [
+    "geometry_volume_systole_S_geo",
+    "declared_scalar_Dirac_coexact_spectra_with_projection",
+    "zeta_4_half_equals_pi4_over_6",
+    "six_channel_Gaussian_identity_only",
+    "Q_cycle_Gram_identity",
+    "B_minus_L_anomaly_cancellation",
+    "root_mass_condensate_trilemma_no_go",
+    "GL_condensation_threshold",
+    "selector_and_normalization_no_go_map"
+  ],
+  "conditional": [
+    "minimal_RP3_times_S1_selection",
+    "spin_and_half_shift_branch",
+    "periodic_one_over_24",
+    "nonuniform_pairing_saddle",
+    "counterfactual_23_plus_pi_inverse_identity",
+    "covariant_21_plus_3_pi_inverse_identity"
+  ],
+  "failed_physical": [
+    "exact_C6_absorption",
+    "minimal_EW_QCD_closure",
+    "standard_BV_six_channel_carrier",
+    "charged_lepton_seed_and_loop",
+    "CKM_CP_textures",
+    "quantitative_neutrino_prediction",
+    "minimal_unified_parent_action"
+  ],
+  "open": [
+    "new_parent_action",
+    "symmetry_protected_family_selector",
+    "CKM_PMNS",
+    "strong_dynamics",
+    "gravity",
+    "cosmology"
+  ]
+}

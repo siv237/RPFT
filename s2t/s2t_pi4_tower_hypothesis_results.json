@@ -1,0 +1,108 @@
+{
+  "status": "pi4_tower_hypothesis_promising_not_proven",
+  "inputs": {
+    "S_geo": 137.0363037758784,
+    "T_coex_RP3": 1.5227161455271536e-05,
+    "pi4_term": 5.466750295392699e-07,
+    "T_over_S_geo": 1.1111771870449321e-07,
+    "half_T_over_S_geo": 5.5558859352246605e-08
+  },
+  "required_prefactors": {
+    "direct_C_for_pi4_equals_C_T_over_S": 4.919782694541265,
+    "halfdet_C_for_pi4_equals_C_T_over_2S": 9.83956538908253,
+    "halfdet_C_over_pi2": 0.9969564117480219,
+    "direct_C_over_pi2_over_2": 0.9969564117480219
+  },
+  "best_natural_candidate": {
+    "hypothesis": "pi4 term ~= (Vol(RP3)/2) * T_coex_RP3 / S_geo",
+    "value": 5.483439627824377e-07,
+    "target_pi4_term": 5.466750295392699e-07,
+    "absolute_residual": 1.6689332431677886e-09,
+    "relative_residual": 0.0030528799615638967,
+    "alpha_inverse_shift_if_used_instead_of_pi4": 1.6689332431677886e-09
+  },
+  "candidate_comparisons": {
+    "1": {
+      "value": 1.0,
+      "as_direct_prefactor_term": 1.1111771870449321e-07,
+      "direct_relative_to_pi4": 0.20326101010712283,
+      "direct_residual_vs_pi4": -4.355573108347767e-07,
+      "as_halfdet_prefactor_term": 5.5558859352246605e-08,
+      "halfdet_relative_to_pi4": 0.10163050505356142,
+      "halfdet_residual_vs_pi4": -4.911161701870233e-07
+    },
+    "1/2": {
+      "value": 0.5,
+      "as_direct_prefactor_term": 5.5558859352246605e-08,
+      "direct_relative_to_pi4": 0.10163050505356142,
+      "direct_residual_vs_pi4": -4.911161701870233e-07,
+      "as_halfdet_prefactor_term": 2.7779429676123302e-08,
+      "halfdet_relative_to_pi4": 0.05081525252678071,
+      "halfdet_residual_vs_pi4": -5.188955998631466e-07
+    },
+    "pi": {
+      "value": 3.141592653589793,
+      "as_direct_prefactor_term": 3.49086608765693e-07,
+      "direct_relative_to_pi4": 0.6385632961137777,
+      "direct_residual_vs_pi4": -1.9758842077357692e-07,
+      "as_halfdet_prefactor_term": 1.745433043828465e-07,
+      "halfdet_relative_to_pi4": 0.31928164805688886,
+      "halfdet_residual_vs_pi4": -3.721317251564234e-07
+    },
+    "pi^2/2": {
+      "value": 4.934802200544679,
+      "as_direct_prefactor_term": 5.483439627824377e-07,
+      "direct_relative_to_pi4": 1.003052879961564,
+      "direct_residual_vs_pi4": 1.6689332431677886e-09,
+      "as_halfdet_prefactor_term": 2.7417198139121885e-07,
+      "halfdet_relative_to_pi4": 0.501526439980782,
+      "halfdet_residual_vs_pi4": -2.7250304814805107e-07
+    },
+    "pi^2": {
+      "value": 9.869604401089358,
+      "as_direct_prefactor_term": 1.0966879255648754e-06,
+      "direct_relative_to_pi4": 2.006105759923128,
+      "direct_residual_vs_pi4": 5.500128960256055e-07,
+      "as_halfdet_prefactor_term": 5.483439627824377e-07,
+      "halfdet_relative_to_pi4": 1.003052879961564,
+      "halfdet_residual_vs_pi4": 1.6689332431677886e-09
+    },
+    "5": {
+      "value": 5.0,
+      "as_direct_prefactor_term": 5.555885935224661e-07,
+      "direct_relative_to_pi4": 1.0163050505356142,
+      "direct_residual_vs_pi4": 8.91356398319614e-09,
+      "as_halfdet_prefactor_term": 2.7779429676123303e-07,
+      "halfdet_relative_to_pi4": 0.5081525252678071,
+      "halfdet_residual_vs_pi4": -2.688807327780369e-07
+    },
+    "sqrt(24)": {
+      "value": 4.898979485566356,
+      "as_direct_prefactor_term": 5.443634244162451e-07,
+      "direct_relative_to_pi4": 0.9957715187302904,
+      "direct_residual_vs_pi4": -2.3116051230247834e-09,
+      "as_halfdet_prefactor_term": 2.7218171220812257e-07,
+      "halfdet_relative_to_pi4": 0.4978857593651452,
+      "halfdet_residual_vs_pi4": -2.7449331733114735e-07
+    },
+    "Vol(RP3)=pi^2": {
+      "value": 9.869604401089358,
+      "as_direct_prefactor_term": 1.0966879255648754e-06,
+      "direct_relative_to_pi4": 2.006105759923128,
+      "direct_residual_vs_pi4": 5.500128960256055e-07,
+      "as_halfdet_prefactor_term": 5.483439627824377e-07,
+      "halfdet_relative_to_pi4": 1.003052879961564,
+      "halfdet_residual_vs_pi4": 1.6689332431677886e-09
+    },
+    "Vol(RP3)/2=pi^2/2": {
+      "value": 4.934802200544679,
+      "as_direct_prefactor_term": 5.483439627824377e-07,
+      "direct_relative_to_pi4": 1.003052879961564,
+      "direct_residual_vs_pi4": 1.6689332431677886e-09,
+      "as_halfdet_prefactor_term": 2.7417198139121885e-07,
+      "halfdet_relative_to_pi4": 0.501526439980782,
+      "halfdet_residual_vs_pi4": -2.7250304814805107e-07
+    }
+  },
+  "verdict": "The strongest natural relation is pi4_term ≈ (pi^2/2) T_RP3/S_geo, equivalently pi4_term ≈ pi^2 * T_RP3/(2 S_geo). The mismatch is about 0.305288%. This is close enough to be a serious lead, but not an identity at the current exact-tower normalization; it requires a determinant derivation of the volume factor and an explanation of the residual."
+}

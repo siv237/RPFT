@@ -1,0 +1,89 @@
+{
+  "status": "delta2_connection_product_terms_exact_index_table_fixed_integrals_missing",
+  "inputs": [
+    "s2t_c6_l21_delta2_connection_product_terms_results.json",
+    "s2t_c6_l21_delta2_gamma_expansion_formula_results.json",
+    "s2t_c6_l21_delta2_c11_setup_results.json"
+  ],
+  "convention": {
+    "operator": "rough one-form Laplacian L alpha_c = -g^{ij} nabla_i nabla_j alpha_c",
+    "first_connection_variation": "(delta_X nabla_i alpha)_c = -Gamma_X^d_{ic} alpha_d",
+    "tensor_T_X": "T_X(j,c) = (delta_X nabla_j alpha)_c = -Gamma_X^d_{jc} alpha_d",
+    "mixed_product_source": "-g^{ij}[(delta_A nabla_i)T_B(j,c)+(delta_B nabla_i)T_A(j,c)] with product terms only",
+    "background": "all indices raised/lowered and derivatives are background; principal second-symbol and single Gamma_AB terms excluded"
+  },
+  "exact_index_table": [
+    {
+      "family": "derivative_index_products",
+      "terms": [
+        {
+          "label": "D1",
+          "expression": "- g^{ij} Gamma_A^p_{ij} Gamma_B^d_{pc} alpha_d + A<->B",
+          "slot": "variation of the derivative-index connection acting on the covariant j-index of T_B(j,c) after i,j contraction",
+          "C11_action": "zero-order multiplication on the input one-form component alpha_d; integrate <e_r^c, term_c(e_s)>"
+        }
+      ],
+      "status": "index_table_fixed_integrals_missing"
+    },
+    {
+      "family": "one_form_component_products",
+      "terms": [
+        {
+          "label": "O1",
+          "expression": "- g^{ij} Gamma_A^p_{ic} Gamma_B^d_{jp} alpha_d + A<->B",
+          "slot": "variation of the one-form component connection acting on the output c-index of T_B(j,c)",
+          "C11_action": "zero-order multiplication on alpha_d; keep free output index c and input index d until basis contraction"
+        }
+      ],
+      "status": "index_table_fixed_integrals_missing"
+    },
+    {
+      "family": "mixed_gradient_products",
+      "terms": [
+        {
+          "label": "G1",
+          "expression": "+ g^{ij} Gamma_B^d_{jc} Gamma_A^p_{id} alpha_p + A<->B",
+          "slot": "delta_A acts on the component index d of alpha_d inside T_B",
+          "C11_action": "zero-order multiplication after relabeling alpha_p as input component"
+        },
+        {
+          "label": "G2",
+          "expression": "+ g^{ij} Gamma_B^d_{jc} Gamma_A^p_{id} alpha_p + A<->B is the same contraction as O1 with A,B swapped only after preserving output/input slots; do not double-count as a separate family integral without canonicalization",
+          "slot": "canonicalization warning for component-vs-gradient naming",
+          "C11_action": "merge with O1 under the final AB symmetrizer if symbolic canonicalization proves equality"
+        }
+      ],
+      "status": "index_table_fixed_canonical_merge_pending"
+    }
+  ],
+  "canonical_product_operator": "P_AB(alpha)_c = -g^{ij}[Gamma_A^p_{ij} Gamma_B^d_{pc} + Gamma_A^p_{ic} Gamma_B^d_{jp} - Gamma_B^d_{jc} Gamma_A^p_{id}] alpha_d + A<->B, with dummy indices canonicalized before integration",
+  "C11_reduction_rule": {
+    "entry": "(C_conn2_product[1,1])_{rs}(A,B)=Integral_{L(2,1)} e_r^c P_AB(e_s)_c dV_g",
+    "basis": "six quotient-orthonormal n=1 Killing one-forms",
+    "not_done": [
+      "insert explicit h_A,h_B ambient quadratic strain formulas into Gamma_X",
+      "canonicalize AB symmetrized dummy indices against basis labels",
+      "perform quotient integral/reduction"
+    ]
+  },
+  "double_counting_guardrails": [
+    "Do not add principal second-symbol terms.",
+    "Do not add single Gamma_AB derivative terms.",
+    "Do not count O1 and G1 as independent after canonical AB symmetrization unless the free output/input slots differ in the contracted basis integral.",
+    "Do not claim a C11 number from this table; it is an operator-index cleanup only."
+  ],
+  "pass_fail": [
+    {
+      "test": "exact_index_table_completed",
+      "status": "pass",
+      "meaning": "The product slot has a canonical free-index operator P_AB(alpha)_c."
+    },
+    {
+      "test": "C11_integrals_evaluated",
+      "status": "not_yet",
+      "meaning": "No quotient Killing-basis integrals or numeric matrix entries have been computed."
+    }
+  ],
+  "plain_language": "The double-gear teeth are now indexed: one derivative-index tooth, one component tooth, and one mixed tooth with a double-counting warning. The gear still has not been multiplied against the six C11 vectors.",
+  "verdict": "Exact index cleanup for Gamma_A Gamma_B products is fixed at operator-table level. This is matrix-enabling bookkeeping for C_conn2[1,1], not a determinant or trace computation. The next real step is explicit Gamma insertion and quotient integrals against the six n=1 Killing states."
+}

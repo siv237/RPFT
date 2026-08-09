@@ -1,0 +1,302 @@
+{
+  "status": "two_factor_selected_axes_form_one_exact_residual_symmetry_orbit",
+  "date": "2026-08-06",
+  "selected_axes": {
+    "triplet_coordinates": [
+      [
+        0.9811480430862917,
+        -0.19325764550966812,
+        5.760682210525997e-18
+      ],
+      [
+        0.11157735365796015,
+        0.566466086790745,
+        0.8164965809277261
+      ]
+    ],
+    "four_state_pair_directions": [
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "source_transpositions": [
+      [
+        0,
+        2,
+        1,
+        3
+      ],
+      [
+        3,
+        1,
+        2,
+        0
+      ]
+    ],
+    "absolute_inner_product": 1.6704956837781657e-17,
+    "orthogonal": true
+  },
+  "residual_factor_symmetry": {
+    "definition": "permutations whose triplet action fixes T_RP3 and T_S1 separately",
+    "order": 4,
+    "elements": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        3,
+        2
+      ],
+      [
+        2,
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        2,
+        1,
+        0
+      ]
+    ],
+    "is_translation_Klein_four_group": true,
+    "factor_exchange_excluded": "RP3 and S1 are inequivalent factors and their weights differ, so only the pointwise centralizer, not the setwise factor swap, is admissible."
+  },
+  "orbit_test": {
+    "maps": [
+      {
+        "permutation": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "restricted_determinant": 0.9999999999999997,
+        "axis_projector_map": [
+          0,
+          1
+        ]
+      },
+      {
+        "permutation": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "restricted_determinant": 0.9999999999999997,
+        "axis_projector_map": [
+          1,
+          0
+        ]
+      },
+      {
+        "permutation": [
+          2,
+          3,
+          0,
+          1
+        ],
+        "restricted_determinant": 0.9999999999999997,
+        "axis_projector_map": [
+          1,
+          0
+        ]
+      },
+      {
+        "permutation": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "restricted_determinant": 0.9999999999999996,
+        "axis_projector_map": [
+          0,
+          1
+        ]
+      }
+    ],
+    "swapping_elements": [
+      {
+        "permutation": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "restricted_determinant": 0.9999999999999997,
+        "axis_projector_map": [
+          1,
+          0
+        ]
+      },
+      {
+        "permutation": [
+          2,
+          3,
+          0,
+          1
+        ],
+        "restricted_determinant": 0.9999999999999997,
+        "axis_projector_map": [
+          1,
+          0
+        ]
+      }
+    ],
+    "stabilizing_elements": [
+      {
+        "permutation": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "restricted_determinant": 0.9999999999999997,
+        "axis_projector_map": [
+          0,
+          1
+        ]
+      },
+      {
+        "permutation": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "restricted_determinant": 0.9999999999999996,
+        "axis_projector_map": [
+          0,
+          1
+        ]
+      }
+    ],
+    "projective_orbit_size": 2,
+    "projective_stabilizer_size": 2,
+    "same_orbit": true,
+    "explicit_swap": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "conjugation_check": [
+      {
+        "group_element": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "transposition_images": [
+          [
+            0,
+            2,
+            1,
+            3
+          ],
+          [
+            3,
+            1,
+            2,
+            0
+          ]
+        ]
+      },
+      {
+        "group_element": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "transposition_images": [
+          [
+            3,
+            1,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "group_element": [
+          2,
+          3,
+          0,
+          1
+        ],
+        "transposition_images": [
+          [
+            3,
+            1,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "group_element": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "transposition_images": [
+          [
+            0,
+            2,
+            1,
+            3
+          ],
+          [
+            3,
+            1,
+            2,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "selector_consequence": {
+    "factor_cost_degeneracy_is_accidental": false,
+    "finding": "Every factor operator built from T_RP3 and T_S1 is invariant under the residual Klein group. The two minima are therefore exact symmetry images, not two unrelated candidates.",
+    "intrinsic_invariant_can_distinguish_axes": false,
+    "reason": "Any scalar invariant of the unbroken factor geometry is constant on a group orbit. Selecting one representative requires spontaneous or explicit breaking."
+  },
+  "two_sector_gate": {
+    "single_sector_choice": "The apparent 2-to-1 selector problem is solved after quotienting by the residual symmetry: there is one projective orbit.",
+    "remaining_relative_choices": [
+      "aligned representatives for up and down sectors",
+      "orthogonal representatives for up and down sectors"
+    ],
+    "relative_invariant": "absolute inner product is respectively 1 or 0",
+    "next_test": "Build up/down operators with the same derived coefficients and determine whether the aligned and crossed orbit classes give a nondegenerate, parameter-free mixing matrix."
+  }
+}

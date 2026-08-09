@@ -1,0 +1,110 @@
+import json
+from pathlib import Path
+
+CHANNEL_TYPES = [
+    {
+        "channel": "diagonal_high_shell_asymptotic",
+        "example": "n -> n for all odd n",
+        "piece": "large-n heat-kernel asymptotic",
+        "local_counterterm_status": "subtractable_if_expanded_as_local_heat_kernel",
+        "c6_status": "not_enough",
+        "reason": "UV polynomial/asymptotic pieces may be absorbed into local geometric counterterms, but this does not determine the finite determinant residue.",
+    },
+    {
+        "channel": "off_diagonal_nearest_shell",
+        "example": "n -> n+2 and n -> n-2 for odd n",
+        "piece": "finite matrix trace after two insertions",
+        "local_counterterm_status": "not_subtractable_by_declaration",
+        "c6_status": "requires_coefficient_proof",
+        "reason": "Off-diagonal shell mixing can contribute to the finite trace-square; locality is not implied by representation selection.",
+    },
+    {
+        "channel": "finite_low_shells",
+        "example": "1 -> 1, 1 -> 3, 3 -> 1",
+        "piece": "low spectrum / winding-sensitive determinant part",
+        "local_counterterm_status": "not_local_heat_kernel",
+        "c6_status": "dangerous",
+        "reason": "Low-shell finite pieces are global spectral data and cannot be removed by local counterterms without adding a finite scheme choice.",
+    },
+    {
+        "channel": "trace_metric_direction",
+        "example": "A proportional to identity",
+        "piece": "volume/radius response",
+        "local_counterterm_status": "partly_normalization_or_radius_counterterm",
+        "c6_status": "must_be_fixed_by_existing_normalization",
+        "reason": "The trace direction can be tied to volume normalization, but only if the carrier radius and gauge normalization are not re-fit after seeing alpha.",
+    },
+    {
+        "channel": "traceless_p02_direction",
+        "example": "A in Sym^2_0(R4)",
+        "piece": "anisotropic first ambient strain",
+        "local_counterterm_status": "not_removed_by_volume_counterterm",
+        "c6_status": "core_open_problem",
+        "reason": "This is the actual rank-9 deformation sector; if it has nonzero finite tower response, rank-10 compression is not a theorem.",
+    },
+]
+
+GATE_TESTS = [
+    {
+        "test": "can_discard_all_allowed_channels_as_local",
+        "verdict": "fails",
+        "reason": "Allowed shell channels include low-spectrum and finite off-diagonal trace-square data, not only UV heat-kernel coefficients.",
+    },
+    {
+        "test": "can_keep_rank10_without_coefficients",
+        "verdict": "fails",
+        "reason": "Rank 10 counts deformation labels; the trace still sums over infinitely many eigenform labels unless coefficients collapse.",
+    },
+    {
+        "test": "physical_quotient_still_viable",
+        "verdict": "conditional",
+        "reason": "The quotient can define the determinant domain, but it does not by itself prove finite tower absorption; it needs a normalization theorem equivalent to the mixed-trace calculation.",
+    },
+    {
+        "test": "local_counterterms_as_free_fit",
+        "verdict": "forbidden",
+        "reason": "A finite counterterm chosen to force alpha after seeing the target would violate the no-hidden-parameter criterion.",
+    },
+]
+
+PROOF_OBLIGATIONS = [
+    {
+        "obligation": "heat_kernel_split",
+        "needed_statement": "Write the mixed trace as local asymptotic part plus finite nonlocal determinant part.",
+        "pass_condition": "Only the local asymptotic part is removed by predetermined counterterms.",
+    },
+    {
+        "obligation": "finite_part_identity",
+        "needed_statement": "Show the remaining finite nonlocal coexact contribution equals the existing pi^-4 residue with P02 rank 10 and no extra coefficient.",
+        "pass_condition": "Derived equality or controlled scheme residue, not fitted subtraction.",
+    },
+    {
+        "obligation": "low_shell_check",
+        "needed_statement": "Evaluate at least the n=1 block and its n=3 coupling for the full one-form variation.",
+        "pass_condition": "Either vanishes/cancels by tensor algebra or matches the absorption formula.",
+    },
+    {
+        "obligation": "traceless_sector_check",
+        "needed_statement": "Treat Sym^2_0(R4) separately from the trace/volume direction.",
+        "pass_condition": "No hidden volume renormalization is used to erase anisotropic finite response.",
+    },
+]
+
+results = {
+    "status": "local_subtraction_cannot_by_itself_rescue_c6_coexact_tower",
+    "channel_classification": CHANNEL_TYPES,
+    "gate_tests": GATE_TESTS,
+    "proof_obligations": PROOF_OBLIGATIONS,
+    "verdict": (
+        "After the shell-selection audit, C6 cannot be rescued by saying that the infinite allowed coexact channels are local. "
+        "Only UV heat-kernel/asymptotic pieces are local-counterterm candidates. Low-shell and finite off-diagonal trace-square contributions are global spectral data. "
+        "Therefore the remaining viable route is a coefficient-level theorem: split local from finite parts, then prove the finite coexact mixed trace is exactly the existing pi^-4/P02 residue or downgrade it to structural compression."
+    ),
+}
+
+Path("s2t_c6_l21_coexact_locality_gate_results.json").write_text(json.dumps(results, indent=2, ensure_ascii=False) + "\n")
+print(json.dumps({
+    "status": results["status"],
+    "gate_tests": GATE_TESTS,
+    "core_next": PROOF_OBLIGATIONS[2],
+}, indent=2, ensure_ascii=False))

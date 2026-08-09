@@ -1,0 +1,48 @@
+{
+  "status": "delta2_Ricci_C11_computed_and_combined_with_principal_connection",
+  "geometry": {
+    "method": "Gauss equation for the linear ellipsoid F(x)=Mx in R4",
+    "background_control": "Ric#=2I on unit S3/RP3",
+    "trace_scaling_control": "A=B=I gives delta2 Ric#=12I on tangent forms",
+    "trace_scaling_control_max_abs": 0.0
+  },
+  "ricci_table": {
+    "pair_count": 55,
+    "rank_distribution": {
+      "0": 12,
+      "4": 27,
+      "6": 16
+    },
+    "zero_pairs": [
+      "D00,S01",
+      "D00,S02",
+      "D00,S03",
+      "D11,S01",
+      "D11,S12",
+      "D11,S13",
+      "D22,S02",
+      "D22,S12",
+      "D22,S23",
+      "D33,S03",
+      "D33,S13",
+      "D33,S23"
+    ],
+    "all_pairs_nonzero": false,
+    "max_matrix_asymmetry_numeric": 0.0
+  },
+  "combined_table": {
+    "rank_distribution": {
+      "4": 39,
+      "6": 16
+    },
+    "zero_pairs": [],
+    "all_pairs_nonzero": true
+  },
+  "decision": {
+    "Ricci_internal_status": "computed_full_C11_table",
+    "principal_connection_cancellation_by_Ricci": "yes_only_if_combined_zero_pairs_exist_else_no",
+    "actual_combined_zero_pair_count": 0,
+    "next_required_object": "inspect combined ranks/entries and add any remaining genuine local or Maxwell-ghost same-scheme L_AB terms"
+  },
+  "verdict": "The mixed second Ricci endomorphism has been computed from the exact Gauss shape-operator formula for the linearly deformed sphere and integrated against the six quotient-normalized Killing forms. The resulting 55-pair C11 table is then added to the existing principal+connection table. The trace-scaling control A=B=I reproduces delta2 Ric#=12I. The combined rank and zero-pair data decide whether curvature can cancel the previously nonzero C11 block."
+}

@@ -1,0 +1,108 @@
+{
+  "status": "minimal_Qcycle_seesaw_contraction_constructed_internal_spinor_embedding_open",
+  "date": "2026-08-03",
+  "cycle_data": {
+    "Qcycle": [
+      [
+        3.141592653589793,
+        0.0
+      ],
+      [
+        0.0,
+        0.3183098861837907
+      ]
+    ],
+    "cycle_vielbein": [
+      [
+        1.7724538509055159,
+        0.0
+      ],
+      [
+        0.0,
+        0.5641895835477563
+      ]
+    ],
+    "primitive_self_dual_vector": [
+      1.0,
+      1.0
+    ],
+    "cycle_metric_determinant": 1.0
+  },
+  "minimal_embedding": {
+    "Dirac_row": "mD_cycle=y*v^T*Qcycle^(1/2)",
+    "Dirac_row_numeric_at_y1": [
+      1.7724538509055159,
+      0.5641895835477563
+    ],
+    "heavy_cycle_block": "MR_cycle=M0*I2",
+    "seesaw_contraction": "-mD_cycle*MR_cycle^-1*mD_cycle^T",
+    "result_at_y1_M01": -3.459902539773583,
+    "expected": -3.4599025397735836,
+    "error": 4.440892098500626e-16
+  },
+  "derivation": {
+    "identity": "v^T Qcycle^(1/2) I2 Qcycle^(1/2) v = v^T Qcycle v = pi+pi^-1",
+    "no_cross_term": "the primal and dual cycle channels are orthogonal in the Hodge Gram basis",
+    "no_continuous_overlap_coefficient": "v=(1,1) is the primitive self-dual integral vector and Qcycle is fixed by the systolic length",
+    "no_new_mass_scale": "det Qcycle=1 and the only heavy scale remains M0=D_nu*m_mu"
+  },
+  "basis_invariance": {
+    "rule": "mD maps as mD O^T and MR as O MR O^T",
+    "rotation_checks": [
+      {
+        "angle": 0.0,
+        "seesaw_value": -3.459902539773583,
+        "error": 4.440892098500626e-16
+      },
+      {
+        "angle": 0.17,
+        "seesaw_value": -3.459902539773583,
+        "error": 4.440892098500626e-16
+      },
+      {
+        "angle": 0.51,
+        "seesaw_value": -3.459902539773583,
+        "error": 4.440892098500626e-16
+      },
+      {
+        "angle": 1.03,
+        "seesaw_value": -3.459902539773583,
+        "error": 4.440892098500626e-16
+      },
+      {
+        "angle": 1.57,
+        "seesaw_value": -3.4599025397735836,
+        "error": 0.0
+      }
+    ],
+    "max_abs_error": 4.440892098500626e-16
+  },
+  "physical_scale": {
+    "y=m_e^2/m_mu_eV": 2471.360423351209,
+    "M0=D_nu*m_mu_eV": 2463774741.979769,
+    "mu_nu_from_matrix_eV": 0.008576992731264175,
+    "dm21_eV2": 7.356480431215849e-05
+  },
+  "normalization_guardrail": {
+    "statement": "The integral vector v is a primitive coupling/charge vector in the cycle lattice, not a wavefunction to be divided by its Q norm. Canonically normalizing v would erase the predicted factor and would change the model definition.",
+    "required_EFT_statement": "The cycle doublet must have canonical kinetic term in the orthonormal channel basis, while its Yukawa components are the lattice vector transported by the vielbein Qcycle^(1/2)."
+  },
+  "generation_structure": {
+    "factorization": "mD_total=mD_generation tensor mD_cycle and MR_total=MR_generation tensor I2",
+    "effect": "the Qcycle contraction multiplies the full light-neutrino matrix by one scalar and therefore leaves the dimensionless eigenvalue ratio R_nu unchanged",
+    "state_count_warning": "The cycle doublet must be embedded as two orthogonal channels inside the already counted real Majorana module, not added as two new sterile generations."
+  },
+  "remaining_obligations": [
+    "construct an isometric embedding of the cycle doublet into the existing eight-real-dimensional Majorana module",
+    "derive the defect/restriction Yukawa vertex from the ambient Dirac action",
+    "prove that charge conjugation or another exact symmetry selects the primitive self-dual vector v=(1,1)",
+    "show that no additional cycle-channel mass matrix replaces the minimal identity block"
+  ],
+  "theory_effect": {
+    "pi_plus_inverse_factor": "derived_inside_minimal_cycle_channel_seesaw_contraction",
+    "absolute_neutrino_scale": "substantially_strengthened_but_not_full_theorem",
+    "dimensionless_ratio_Rnu": "unchanged",
+    "new_primary_gap": "representation_and_vertex_embedding_not_scalar_numerology"
+  },
+  "verdict": "A minimal matrix embedding exists. In the orthonormal cycle-channel basis, take the Dirac row to be y v^T Qcycle^(1/2) with primitive self-dual v=(1,1), and take the heavy cycle block to be M0 I2. The seesaw contraction is then exactly -(y^2/M0)(pi+pi^-1), is invariant under orthogonal channel-basis changes, introduces no new mass scale, and leaves R_nu unchanged. The remaining theorem gap is to embed these two channels and their self-dual Yukawa vector inside the already declared ambient Majorana/Dirac module."
+}

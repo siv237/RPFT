@@ -1,0 +1,129 @@
+{
+  "status": "canonical_metric_is_unique_smooth_background_independent_hessian_positive_heat_kernels_fail",
+  "date": "2026-08-04",
+  "reduced_hessian": {
+    "functional": "S_f(a)=Tr f((D0+a deltaA)^2)",
+    "kernel_line_weight": "w0=2 f'(0)",
+    "massive_heavy_weight": "wM=2 f'(M^2)+4 M^2 f''(M^2)",
+    "equal_weight_condition": "f'(0)=f'(x)+2x f''(x), x=M^2"
+  },
+  "background_independent_identity": {
+    "ode_for_y_equal_fprime": "Eq(2*x*Derivative(y(x), x) + y(x), c)",
+    "general_ode_solution": "Eq(y(x), C1/sqrt(x) + c)",
+    "smooth_at_zero_consequence": "the x^(-1/2) branch is excluded, so f'(x) is constant",
+    "unique_smooth_kernel_class": "f(x)=A+B x",
+    "polynomial_degree_tested": 8,
+    "symbolic_identity_solution": [
+      {
+        "a2": "0",
+        "a3": "0",
+        "a4": "0",
+        "a5": "0",
+        "a6": "0",
+        "a7": "0",
+        "a8": "0"
+      }
+    ]
+  },
+  "positive_heat_kernel_gate": {
+    "class": "f(x)=integral exp(-t x) dmu(t), with nonzero positive measure on t>0",
+    "mismatch_formula": "wM-w0=2 integral t[1-exp(-tx)+2tx exp(-tx)] dmu(t)>0 for x>0",
+    "tested_mixtures": [
+      {
+        "mixture": [
+          {
+            "weight": 1.0,
+            "rate": 1.0
+          }
+        ],
+        "background_points": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0
+        ],
+        "heavy_minus_kernel_half_weight": [
+          0.6105996084642975,
+          1.0,
+          1.3678794411714423,
+          1.406005849709838,
+          1.128209472221139
+        ],
+        "strictly_positive_for_tested_positive_backgrounds": true
+      },
+      {
+        "mixture": [
+          {
+            "weight": 0.5,
+            "rate": 0.5
+          },
+          {
+            "weight": 0.5,
+            "rate": 2.0
+          }
+        ],
+        "background_points": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0
+        ],
+        "heavy_minus_kernel_half_weight": [
+          1.0845318307653884,
+          1.5205293432875167,
+          1.656005849709838,
+          1.4701793325139998,
+          1.3565334018459971
+        ],
+        "strictly_positive_for_tested_positive_backgrounds": true
+      },
+      {
+        "mixture": [
+          {
+            "weight": 0.2,
+            "rate": 0.25
+          },
+          {
+            "weight": 0.3,
+            "rate": 1.0
+          },
+          {
+            "weight": 0.5,
+            "rate": 4.0
+          }
+        ],
+        "background_points": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0
+        ],
+        "heavy_minus_kernel_half_weight": [
+          2.927839443384084,
+          3.1289180655727535,
+          2.6973127572169258,
+          2.4818656337500267,
+          2.4068637909057466
+        ],
+        "strictly_positive_for_tested_positive_backgrounds": true
+      }
+    ],
+    "verdict": "no nonconstant positive heat-kernel mixture gives equal weights at nonzero background"
+  },
+  "single_background_warning": {
+    "statement": "At one preselected M, equality is one scalar constraint and admits infinitely many non-affine kernels. Choosing one after seeing D_nu is not a derivation.",
+    "polynomial_coefficient_dimension_excluding_constant": 8,
+    "constraint_rank": 1,
+    "remaining_solution_dimension": 7
+  },
+  "theory_effect": {
+    "generic_bosonic_spectral_action_route": "closed_negatively_for_positive_heat_kernels",
+    "background_independent_smooth_route": "forces_affine_kernel",
+    "canonical_configuration_metric": "may be adopted as a primary kinetic postulate, but is not derived from a generic cutoff kernel",
+    "neutrino_denominator": "theorem only inside the declared affine/canonical configuration-metric model; otherwise conditional"
+  },
+  "verdict": "The equal heavy/kernel metric is not a generic spectral-action consequence. Requiring it smoothly for arbitrary nonzero heavy background uniquely selects an affine f, equivalent to the canonical quadratic configuration metric. Standard positive heat-kernel mixtures miss equality with a strict sign. A non-affine kernel can be tuned at one chosen mass, but that is a codimension-one choice and cannot count as a no-fit derivation."
+}

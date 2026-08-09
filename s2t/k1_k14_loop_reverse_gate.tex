@@ -1,0 +1,192 @@
+\chapter{Пакетный аудит K1--K14 и reverse-проверка высших порядков}
+
+Расширенный список кандидатов содержит как новые конструкции, так и
+маршруты, уже закрытые прежними operator-gates. Для предотвращения
+повторного перебора все четырнадцать вариантов проверены в одной
+замороженной ведомости.
+
+\section{Приоритетные кандидаты K1, K2 и K6}
+
+Для K1 eta-инвариант аддитивен. Поэтому прямая сумма двух одинаковых
+блоков с \(\eta=-1/4\) формально даёт
+\begin{equation}
+ \eta_{\rm dbl}=-\frac12,
+ \qquad
+ -\frac{\eta_{\rm dbl}}2+\frac1{12}
+ =\frac14+\frac1{12}=\frac13.
+\end{equation}
+Это точное арифметическое прохождение, но не mass gate. Два одинаковых
+хиральных блока удваивают determinant-фазу, тогда как физическое
+vectorlike-сопряжение сокращает eta-фазы. Вещественный mass response
+по-прежнему не получает аддитивный член \(1/3\). K1 закрыт в минимальной
+vectorlike-модели и может быть переоткрыт только после вывода chiral
+CP-нечётного механизма.
+
+В K2 предложенный нормировочный множитель равен
+\begin{equation}
+ (\sqrt2)^2\cdot\frac12=1.
+\end{equation}
+Следовательно, он не меняет каноническое значение
+\(\mathcal J=1\) и не порождает
+\(\mathcal J_{\rm req}=5.4027533071\ldots\). Дополнительное rank-деление
+не задано оператором. K2 остаётся спецификацией будущей двухвершинной
+алгебры, а не численно закрытым кандидатом.
+
+K6 сохраняет наиболее сильный условно-положительный статус. Mod-2 defect
+даёт один real Majorana kernel channel, а дополнение имеет ранг \(23\).
+Открыт не индексный расчёт, а parent-action gate: необходимо вывести
+глобальный BdG-оператор, конденсацию и включение quotient-rank в collective
+stiffness из одного действия.
+
+\section{Тензорные кандидаты K12 и K13}
+
+Для K12 одна полностью обращённая по статистике two-form BV-система даёт
+в пространственно постоянной оболочке \(+\pi^4/6\), и шесть копий
+арифметически дают \(+\pi^4\). Полный четырёхмерный trace при этом
+ультрафиолетово расходится, а multiplicity six и обращение статистики не
+выведены из gauge symmetry. Поэтому K12 является seed новой graded
+parent-theory, но не спасением текущего действия.
+
+K13 проходит точную идентичность
+\begin{equation}
+ \operatorname{Var}(\bar x)
+ =\frac1{6\zeta(4,1/2)}
+ =\frac1{\pi^4}.
+\end{equation}
+Два равных источника дают арифметический контроль
+\(J=\sqrt2\), \(J^2/2=1\). Однако coherent source map, ordinary trace,
+bosonic half-shift и равные веса шести каналов не выведены. Статус K13:
+identity pass, source/action fail.
+
+\section{Сводный статус остальных кандидатов}
+
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.09\textwidth}>{\raggedright\arraybackslash}p{0.72\textwidth}>{\raggedright\arraybackslash}p{0.12\textwidth}}
+\toprule
+Кандидат & Результат & Статус \\
+\midrule
+K3 & требуемое \(X=\pi^2/(3\alpha)=450.83\ldots\) получено обращением целевой формулы & circular pruner \\
+K4 & \(27/5\) и \(17/\pi\) близки только численно; оператор отсутствует & screen only \\
+K5 & уровень \(k=22\) и WZW-shift не выведены из действия & open count \\
+K7 & \(24\) есть порядок \(S_4\) и размерность regular representation, а не размерность группы; физическая regular representation не построена & unsupported \\
+K8 & \(e^\pi\) отличается от \(23\) на \(0.612\%\) & pruner \\
+K9 & finite-threshold cone алгебраически непуст, но физически пуст в доступном mass interval & closed negative \\
+K10 & kinetic mixing \(B-L\) не создаёт требуемые \(SU(2)\) и \(SU(3)\) компоненты & insufficient \\
+K11 & split two-loop route уже закрыт неверным знаком и anchor failure & pruner \\
+K14 & множитель \(\alpha/(4\pi)\) уменьшает существующую \(m_D\)-вставку в \(1.72\cdot10^3\) раза & fails target \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Reverse-проверка \(1/S^3\) и \(1/S^4\)}
+
+Для остатка
+\begin{equation}
+ \Delta=\alpha^{-1}-S_{\rm vac}
+ =3.4776519442\cdot10^{-9}
+\end{equation}
+обратный подбор даёт
+\begin{equation}
+ c_3=\Delta S_{\rm geo}^3=0.00894938\ldots,
+ \qquad
+ c_4=\Delta S_{\rm geo}^4=1.22639016\ldots.
+\end{equation}
+Эти числа корректны для двух выбранных inverse-power ansatz. Но степень
+\(1/S_{\rm geo}\) не является числом фейнмановских петель. Loop expansion
+должен следовать из coupling expansion и диаграмм или determinant
+effective action. Аналогично, индексы оболочки \(n\) и winding \(q\)
+перечисляют моды внутри одного determinant и не задают loop-order.
+
+В coexact-башне
+\begin{equation}
+ \frac{T_{n=3}}{T_{\rm coex}}
+ =2.43135\cdot10^{-5},
+\end{equation}
+то есть следующая оболочка действительно слишком мала, чтобы объяснить
+данный остаток в той же absorption-нормировке. Это исключает конкретную
+гипотезу о higher-shell correction, но не доказывает отсутствие
+трёх- или четырёхпетлевых вкладов.
+
+\begin{nogocriterion}[Запрет ложной loop-интерпретации]
+Близость остатка к \(c/S^n\) не считается loop-выводом без:
+\begin{enumerate}
+ \item объявленного coupling-counting;
+ \item набора диаграмм или порядка determinant expansion;
+ \item схемы перенормировки;
+ \item переноса того же коэффициента хотя бы на второй observable.
+\end{enumerate}
+Отсутствие совпадения с коротким меню констант также не доказывает полноту
+формулы. Неопределённость frozen anchor в этом тесте отдельно не
+пропагирована, поэтому называть остаток anchor noise преждевременно.
+\end{nogocriterion}
+
+\section{Полный BV follow-up тензорной ветви}
+
+Последующий ответ выписал полный редуцируемый BV-комплекс twisted
+двухформенного поля:
+\begin{equation}
+ Z_2\propto
+ \det{}'(\Delta_2)^{-1/2}
+ \det{}'(\Delta_1)^{+1}
+ \det{}'(\Delta_0)^{-3/2}.
+\end{equation}
+Контроль степеней свободы даёт одну физическую bosonic моду, как и должно
+быть для четырёхмерной двухформы. На spatial zero shell полный комплекс
+даёт \(-\pi^4/6\), а полное обращение статистики --- \(+\pi^4/6\).
+Следовательно, требуемое \(+\pi^4\) возникает только после введения шести
+независимых обращённых комплексов; один BV-функционал такой multiplicity не
+выводит.
+
+Происхождение \(\zeta(4,1/2)\) корректно только для второй вариации
+аддитивно деформированного оператора:
+\begin{equation}
+ \Gamma''(0)\propto-\Tr K^{-2},
+ \qquad
+ K_n=(n+\tfrac12)^2.
+\end{equation}
+При этом стационарность или вычитание первой вариации
+\(\Tr K^{-1}\) должны быть частью объявленного generating functional, а не
+последующей интерпретацией.
+
+Полный follow-up выявил четыре окончательных разрыва:
+\begin{enumerate}
+ \item reality condition связывает Fourier-ветви, а BV quotient сокращает
+ component count до одной физической моды; шесть independent complexes не
+ следуют из \(3\times2\) кинематического разложения;
+ \item Grassmann determinant не задаёт положительную вероятность и
+ дисперсию commuting readout без отдельной бозонизации;
+ \item нормировка источника \(J^2/2=1\) не выводится;
+ \item вторая независимая normalization-sensitive величина отсутствует.
+\end{enumerate}
+
+\begin{proposition}[Закрытие тензорного parent-action кандидата]
+Точная inverse-susceptibility identity сохраняется как математический
+результат, но полный graded/BV generating functional не выводит физический
+\(S_{\rm vac}\)-вклад. Итоговый статус:
+\begin{equation}
+ \text{algebraic identity pass}
+ \quad/\quad
+ \text{parent-action fail}.
+\end{equation}
+Тензорную ветвь следует архивировать до появления независимо выведенной
+graded symmetry, бозонизации source readout и второго сектора.
+\end{proposition}
+
+\section{Рекомендуемый порядок}
+
+Главным живым маршрутом остаётся K6 как derivation одного defect/BdG
+parent action. K13 допустим как параллельный новый parent-action кандидат
+для электромагнитного сектора. K12 разрешён только при независимом выводе
+graded symmetry и полного BV-комплекса. K1, K3, K8 и K11 повторно не
+открываются без новой динамики; K2 сначала требует явной vertex algebra.
+
+После R1 внутренний статус остаётся
+\begin{equation}
+ R_{\rm sci}=5/10,
+ \qquad
+ N_{\rm closed\ physical}=0.
+\end{equation}
+
+Машинный протокол сохранён в
+\texttt{s2t\_k1\_k14\_loop\_reverse\_results.json}.

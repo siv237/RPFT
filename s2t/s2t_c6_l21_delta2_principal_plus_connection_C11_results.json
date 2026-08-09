@@ -1,0 +1,348 @@
+{
+  "status": "delta2_principal_plus_connection_C11_block_nonzero_all_pairs_remaining_blocks_missing",
+  "inputs": [
+    "s2t_c6_l21_delta2_connection_full_C11_assembly_results.json",
+    "s2t_c6_l21_delta2_principal_C11_moment_results.json"
+  ],
+  "computed_files": [
+    "s2t_c6_l21_delta2_principal_plus_connection_C11_table_data.json"
+  ],
+  "basis_conventions": {
+    "Killing_basis": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ],
+    "strain_basis_raw_trace": [
+      "D00",
+      "D11",
+      "D22",
+      "D33",
+      "S01",
+      "S02",
+      "S03",
+      "S12",
+      "S13",
+      "S23"
+    ],
+    "normalization_warning": "Raw Sym^2(R4) strain basis; off-diagonal Sij need 1/sqrt(2) scaling for trace-orthonormal strain coordinates."
+  },
+  "assembly_formula": "C_principal_plus_connection[1,1]=C_principal[1,1]+C_conn2[1,1]",
+  "results": {
+    "symmetric_strain_pairs": 55,
+    "all_pairs_nonzero": true,
+    "zero_pairs": [],
+    "rank_distribution": {
+      "6": 16,
+      "4": 39
+    },
+    "nonzero_raw_entries_total": 252,
+    "component_rank_distributions": {
+      "connection": {
+        "6": 10,
+        "4": 39,
+        "2": 6
+      },
+      "principal": {
+        "6": 16,
+        "4": 39
+      }
+    },
+    "sample_pair_matrices": [
+      {
+        "pair": "D00,D00",
+        "rank": 6,
+        "nonzero_count": 6,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "3"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "3"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "3"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "7/3"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "7/3"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "7/3"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D11",
+        "rank": 6,
+        "nonzero_count": 6,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "-4/3"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "2/3"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "2/3"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "2/3"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "2/3"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "-2/3"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D22",
+        "rank": 6,
+        "nonzero_count": 6,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "2/3"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "-4/3"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "2/3"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "2/3"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "-2/3"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "2/3"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D33",
+        "rank": 6,
+        "nonzero_count": 6,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "2/3"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "2/3"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "-4/3"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "-2/3"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "2/3"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "2/3"
+          }
+        ]
+      },
+      {
+        "pair": "D00,S01",
+        "rank": 4,
+        "nonzero_count": 4,
+        "first_entries": [
+          {
+            "row": "E02",
+            "col": "E12",
+            "value": "1/3"
+          },
+          {
+            "row": "E03",
+            "col": "E13",
+            "value": "1/3"
+          },
+          {
+            "row": "E12",
+            "col": "E02",
+            "value": "1/3"
+          },
+          {
+            "row": "E13",
+            "col": "E03",
+            "value": "1/3"
+          }
+        ]
+      }
+    ],
+    "cancellation_diagnostics_sample": [
+      {
+        "pair": "D00,D00",
+        "rank": 6,
+        "combined_l1": "16",
+        "connection_l1": "13",
+        "principal_l1": "14"
+      },
+      {
+        "pair": "D00,D11",
+        "rank": 6,
+        "combined_l1": "14/3",
+        "connection_l1": "10/3",
+        "principal_l1": "5/3"
+      },
+      {
+        "pair": "D00,D22",
+        "rank": 6,
+        "combined_l1": "14/3",
+        "connection_l1": "10/3",
+        "principal_l1": "5/3"
+      },
+      {
+        "pair": "D00,D33",
+        "rank": 6,
+        "combined_l1": "14/3",
+        "connection_l1": "10/3",
+        "principal_l1": "5/3"
+      },
+      {
+        "pair": "D00,S01",
+        "rank": 4,
+        "combined_l1": "4/3",
+        "connection_l1": "26/3",
+        "principal_l1": "22/3"
+      },
+      {
+        "pair": "D00,S02",
+        "rank": 4,
+        "combined_l1": "4/3",
+        "connection_l1": "26/3",
+        "principal_l1": "22/3"
+      },
+      {
+        "pair": "D00,S03",
+        "rank": 4,
+        "combined_l1": "4/3",
+        "connection_l1": "26/3",
+        "principal_l1": "22/3"
+      },
+      {
+        "pair": "D00,S12",
+        "rank": 4,
+        "combined_l1": "20/3",
+        "connection_l1": "16/3",
+        "principal_l1": "4/3"
+      },
+      {
+        "pair": "D00,S13",
+        "rank": 4,
+        "combined_l1": "20/3",
+        "connection_l1": "16/3",
+        "principal_l1": "4/3"
+      },
+      {
+        "pair": "D00,S23",
+        "rank": 4,
+        "combined_l1": "20/3",
+        "connection_l1": "16/3",
+        "principal_l1": "4/3"
+      },
+      {
+        "pair": "D11,D11",
+        "rank": 6,
+        "combined_l1": "16",
+        "connection_l1": "13",
+        "principal_l1": "14"
+      },
+      {
+        "pair": "D11,D22",
+        "rank": 6,
+        "combined_l1": "14/3",
+        "connection_l1": "10/3",
+        "principal_l1": "5/3"
+      }
+    ]
+  },
+  "interpretation": [
+    "The principal second-symbol table does not cancel the assembled second-connection table.",
+    "The combined principal+connection block is nonzero for every one of the 55 raw symmetric strain pairs.",
+    "The rank distribution tightens to ranks 4 and 6 only, with no zero or rank-2 residue.",
+    "Any future C6 cancellation must come from Ricci/curvature, coexact-projector, Hilbert/basis transport, or same-scheme local/compensation pieces."
+  ],
+  "pass_fail": [
+    {
+      "test": "principal_connection_added",
+      "status": "pass",
+      "meaning": "The principal and assembled connection C11 tables were added in the shared raw basis."
+    },
+    {
+      "test": "principal_cancels_connection",
+      "status": "fail",
+      "meaning": "The combined table is nonzero for all 55 symmetric strain pairs."
+    },
+    {
+      "test": "principal_plus_connection_C11_available",
+      "status": "pass",
+      "meaning": "The combined principal+connection C11 block is available as a raw-basis table."
+    },
+    {
+      "test": "full_delta2_Delta1_C11_available",
+      "status": "not_yet",
+      "meaning": "Ricci, projector, Hilbert/basis, and compensation pieces remain open."
+    }
+  ],
+  "plain_language": "We bolted the principal gear onto the connection machine. It still moves in every direction. So the easy rescue is gone: principal does not cancel connection. The remaining rescue must come from curvature, projector, ruler/basis, or compensation gears.",
+  "verdict": "The principal second-symbol C11 table has been added to the assembled second-connection C11 table. The combined block is nonzero for all 55 raw symmetric deformation pairs, with rank distribution 4:39 and 6:16. This rules out cancellation between the principal and connection blocks alone. C6 remains open only through the remaining Ricci/curvature, projector, Hilbert/basis, and compensation pieces."
+}

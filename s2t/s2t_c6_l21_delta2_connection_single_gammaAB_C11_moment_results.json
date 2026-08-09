@@ -1,0 +1,198 @@
+{
+  "status": "delta2_connection_single_GammaAB_C11_moment_table_computed_single_slot_only",
+  "inputs": [
+    "s2t_c6_l21_delta2_connection_single_gammaAB_ambient_simplified_results.json",
+    "s2t_c6_l21_delta2_c11_setup_results.json"
+  ],
+  "computed_files": [
+    "s2t_c6_l21_delta2_connection_single_gammaAB_moment_table_data.json"
+  ],
+  "basis_conventions": {
+    "Killing_basis": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ],
+    "Killing_normalization": "e_Omega=sqrt(2) Omega x, matching quotient-normalized n=1 convention used by the product moment audit",
+    "strain_basis_raw_trace": "Dii diagonal matrices and Sij symmetric off-diagonal matrices with entries 1 in ij,ji",
+    "strain_labels": [
+      "D00",
+      "D11",
+      "D22",
+      "D33",
+      "S01",
+      "S02",
+      "S03",
+      "S12",
+      "S13",
+      "S23"
+    ],
+    "normalization_warning": "Raw strain basis, not orthonormal trace basis; off-diagonal Sij need 1/sqrt(2) rescaling for trace-orthonormal strain coordinates."
+  },
+  "operator_formula_used": {
+    "w_AB": "w_AB=-ell_AB+4 A_T a_B+4 B_T a_A, ell_AB=((AB+BA)x)^T",
+    "single_slot": "L_single(alpha)_c=(nabla_c w_AB^d)alpha_d+2w_AB^d nabla_c alpha_d+3w_AB^d nabla_d alpha_c",
+    "entry": "C_rs(A,B)=Integral <e_r,L_single(e_s)> dV_g"
+  },
+  "results": {
+    "symmetric_strain_pairs": 55,
+    "all_pairs_nonzero": false,
+    "zero_pairs": [
+      "S01,S23",
+      "S02,S13",
+      "S03,S12"
+    ],
+    "rank_distribution": {
+      "6": 4,
+      "2": 12,
+      "4": 36,
+      "0": 3
+    },
+    "nonzero_raw_entries_total": 192,
+    "sample_pair_matrices": [
+      {
+        "pair": "D00,D00",
+        "nonzero_count": 6,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "1"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "1"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "1"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "-1"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "-1"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D11",
+        "nonzero_count": 2,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "-1/3"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "1/3"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D22",
+        "nonzero_count": 2,
+        "first_entries": [
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "-1/3"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "1/3"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D33",
+        "nonzero_count": 2,
+        "first_entries": [
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "-1/3"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "1/3"
+          }
+        ]
+      },
+      {
+        "pair": "D00,S01",
+        "nonzero_count": 4,
+        "first_entries": [
+          {
+            "row": "E02",
+            "col": "E12",
+            "value": "1"
+          },
+          {
+            "row": "E03",
+            "col": "E13",
+            "value": "1"
+          },
+          {
+            "row": "E12",
+            "col": "E02",
+            "value": "1"
+          },
+          {
+            "row": "E13",
+            "col": "E03",
+            "value": "1"
+          }
+        ]
+      }
+    ]
+  },
+  "interpretation": [
+    "The single Gamma_AB slot is active for 52 of 55 raw symmetric strain pairs and zero for 3 diagonal self-pairs in this raw basis.",
+    "The rank distribution differs from the product slot, so cancellation cannot be inferred from proportionality.",
+    "Because the product slot was nonzero for all 55 pairs, the combined connection block needs explicit addition rather than a yes/no symmetry argument.",
+    "This remains only one connection slot; the inverse-metric/first-connection cross slot is still missing."
+  ],
+  "pass_fail": [
+    {
+      "test": "single_GammaAB_C11_table_computed",
+      "status": "pass",
+      "meaning": "The six-state moment table for the single GammaAB slot is computed in the raw strain basis."
+    },
+    {
+      "test": "single_slot_vanishes_identically",
+      "status": "fail",
+      "meaning": "The slot is nonzero for 52 of 55 symmetric strain pairs."
+    },
+    {
+      "test": "single_slot_proportional_to_product_slot",
+      "status": "not_supported",
+      "meaning": "Rank distributions differ, so no proportional cancellation is established by this audit."
+    },
+    {
+      "test": "full_C_conn2_C11_computed",
+      "status": "not_yet",
+      "meaning": "The inverse-metric/first-connection cross slot and combination with product/single slots remain open."
+    }
+  ],
+  "plain_language": "The second gear has now touched the six Killing rulers too. It moves in most directions, but three diagonal directions are quiet. It does not simply mirror the product gear, so cancellation still has to be computed, not guessed.",
+  "verdict": "The single Gamma_AB subslot of C_conn2[1,1] has been evaluated as a symbolic finite moment table in the raw Sym^2(R4) strain basis. It is nonzero for 52 of 55 symmetric deformation pairs, with rank distribution recorded. This is the second actual C11 connection subslot table; the remaining inverse-metric/first-connection cross slot must still be derived/evaluated before any full connection-block conclusion."
+}

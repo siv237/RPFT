@@ -1,0 +1,146 @@
+{
+  "status": "C6_exact_pi4_absorption_downgraded_no_mandatory_same_scheme_compensation",
+  "decision_rule": "A rescue counts only if it is mandatory in the already declared Maxwell-ghost scheme, acts on the same nonzero finite spectral block, and introduces no fitted finite counterterm or late determinant-domain choice.",
+  "tests": [
+    {
+      "sector": "geometric_second_variation",
+      "requirement": "principal, connection and Ricci blocks cancel in the same C11 table",
+      "observed": {
+        "combined_zero_pair_count": 0,
+        "combined_rank_distribution": {
+          "4": 39,
+          "6": 16
+        }
+      },
+      "status": "fail_no_cancellation"
+    },
+    {
+      "sector": "coexact_projector",
+      "requirement": "projector transport supplies an opposite finite determinant contribution",
+      "observed": {
+        "direct_T5_rank": 0,
+        "structural_reason": "<beta_coex,dG phi>=<delta beta_coex,G phi>=0"
+      },
+      "status": "neutral_exact_coexact_orthogonality"
+    },
+    {
+      "sector": "hilbert_basis_transport",
+      "requirement": "basis transport changes the log-determinant Hessian",
+      "observed": {
+        "raw_logdet_hessian": -4.999999999999999,
+        "selfadjoint_logdet_hessian": -4.999999905098193,
+        "difference": 9.49018064133611e-08
+      },
+      "status": "neutral_similarity_invariance"
+    },
+    {
+      "sector": "standard_covariant_FP_scalar",
+      "requirement": "exact and ghost factors cancel the nonzero scalar tower",
+      "observed": [
+        {
+          "scheme": "physical_transverse_quotient",
+          "gamma_coexact_logdet_power": 0.5,
+          "gamma_scalar_logdet_power": 0.0,
+          "requires_extra_cancellation": false,
+          "classification": "viable_conditional_definition",
+          "formula": "Gamma = 1/2 log det' Delta_1,coex + zero/gauge/local",
+          "meaning": "P02 may be counted only in the coexact bosonic insertion if the physical quotient is the defining determinant scheme."
+        },
+        {
+          "scheme": "standard_covariant_FP_full_one_form",
+          "gamma_full_one_form_power": 0.5,
+          "gamma_fp_ghost_power": -1.0,
+          "hodge_exact_scalar_power_from_Delta1": 0.5,
+          "gamma_scalar_logdet_power_after_hodge": -0.5,
+          "requires_extra_cancellation": true,
+          "classification": "residual_scalar_half_power",
+          "formula": "Gamma = 1/2 log det' Delta_1,coex - 1/2 log det' Delta_0 + zero/gauge/local",
+          "meaning": "Standard FP/Hodge bookkeeping leaves a scalar half-determinant in Gamma unless zero/gauge/Jacobian normalization cancels it explicitly."
+        },
+        {
+          "scheme": "standard_FP_plus_unproven_scalar_cancellation",
+          "gamma_coexact_logdet_power": 0.5,
+          "gamma_scalar_logdet_power": 0.0,
+          "requires_extra_cancellation": "must_be_proven",
+          "classification": "desired_but_not_derived",
+          "formula": "Gamma_scalar_residual -> kappa_Cas branch only, no P02 trace-square",
+          "meaning": "This is the needed isolation lemma, not a consequence of the bare covariant FP determinant."
+        }
+      ],
+      "status": "fail_scalar_half_determinant_remains"
+    },
+    {
+      "sector": "det_prime_zero_gauge_jacobian",
+      "requirement": "zero-mode and gauge factors provide an opposite nonzero scalar tower",
+      "observed": [
+        {
+          "test": "hodge_jacobian_changes_determinant_power",
+          "status": "already_accounted_in_standard_FP_power_count",
+          "reason": "The Hodge split determinant identity det' Delta1 = det' Delta1,coex * det' Delta0 is exactly what produced the residual -1/2 log det' Delta0 in Gamma. Reusing it cannot also cancel the same residual without an additional derived factor."
+        },
+        {
+          "test": "gauge_volume_cancels_nonzero_scalar_modes",
+          "status": "fail",
+          "reason": "Gauge volume removes the constant gauge orbit / zero mode. It does not provide eigenvalue-by-eigenvalue factors over nonzero scalar shells ell=2,4,... ."
+        },
+        {
+          "test": "zero_mode_prime_det_cancels_nonzero_tower",
+          "status": "fail",
+          "reason": "The det-prime rule removes the true scalar zero mode only; it does not remove the nonzero ell=2 scalar shell or its S1 tower."
+        },
+        {
+          "test": "possible_additional_BRST_or_NK_ghost",
+          "status": "not_present_in_current_model",
+          "reason": "No extra determinant sector with the same scalar spectrum and opposite half-power is defined in Tome II. Adding one would be a new model ingredient, not a proof of the existing standard-FP route."
+        }
+      ],
+      "status": "fail_only_zero_or_power_bookkeeping"
+    },
+    {
+      "sector": "local_counterterms",
+      "requirement": "a pre-fixed local subtraction removes the finite low-shell obstruction",
+      "observed": {
+        "finite_gate": "n3_finite_low_shell_trace_not_rescuable_by_local_counterterm",
+        "coexact_locality_gate": "local_subtraction_cannot_by_itself_rescue_c6_coexact_tower"
+      },
+      "status": "fail_finite_global_spectral_data_not_local"
+    },
+    {
+      "sector": "mandatory_paired_sector",
+      "requirement": "an existing mandatory sector has the same spectrum and opposite determinant power",
+      "observed": "all_known_paired_candidates_fail_or_are_definitional",
+      "status": "fail_no_known_mandatory_pair"
+    },
+    {
+      "sector": "physical_transverse_quotient",
+      "requirement": "the quotient is derived as a same-scheme cancellation rather than selected as a primary domain",
+      "observed": "physical_transverse_quotient_viable_but_requires_primary_definition_and_external_gate",
+      "status": "conditional_definition_not_compensation"
+    }
+  ],
+  "summary_counts": {
+    "failed_rescue_classes": 5,
+    "neutral_transport_classes": 2,
+    "conditional_definitional_classes": 1,
+    "mandatory_compensation_found": 0
+  },
+  "theory_effect": {
+    "exact_pi4_determinant_theorem": "downgraded_to_structural_compression",
+    "S_vac": "remains_conditional_and_must_not_be_used_as_closed_input",
+    "independent_results": "S_geo_tau_and_Higgs_EFT_are_unchanged",
+    "scientific_value": "increases_because_the_failed_rescue_is_now_explicit_and_falsifiable"
+  },
+  "reopen_conditions": [
+    "derive a new mandatory same-spectrum opposite-sign sector from BRST, topology or EFT",
+    "derive an exact no-fit spectral identity that absorbs the finite C11 and low-shell blocks",
+    "prove external equivalence of a primary physical quotient together with cancellation of its remaining coexact geometric block"
+  ],
+  "next_plan": [
+    "freeze the exact pi^-4 claim at structural-compression status",
+    "prepare a compact reproducibility table claim-to-evidence-to-failure-mode",
+    "move the main proof effort to the neutrino overlap lemma",
+    "keep the external lens-space determinant gate as an independent reopening test",
+    "return to C6 only when a genuinely new identity or mandatory sector appears"
+  ],
+  "verdict": "No mandatory same-scheme Maxwell-ghost compensation is present in the audited model. The geometric C11 block remains nonzero; projector and Hilbert transport are determinant-neutral; standard FP leaves a nonzero scalar half-determinant; det-prime, zero/gauge and Jacobian factors do not cancel the nonzero tower; local counterterms cannot erase finite low-shell spectral data; and no mandatory paired sector is known. Therefore exact pi^-4 absorption is not a theorem of the current construction and is downgraded to strong structural compression. This closes the present C6 rescue branch negatively, not the whole research program."
+}

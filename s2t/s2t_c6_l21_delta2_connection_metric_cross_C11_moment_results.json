@@ -1,0 +1,259 @@
+{
+  "status": "delta2_connection_metric_cross_C11_moment_table_computed_connection_subslot_triad_ready",
+  "inputs": [
+    "s2t_c6_l21_delta2_connection_metric_cross_ambient_formula_results.json",
+    "s2t_c6_l21_delta2_connection_product_C11_moment_results.json",
+    "s2t_c6_l21_delta2_connection_single_gammaAB_C11_moment_results.json",
+    "s2t_c6_l21_delta2_c11_setup_results.json"
+  ],
+  "computed_files": [
+    "s2t_c6_l21_delta2_connection_metric_cross_moment_table_data.json"
+  ],
+  "basis_conventions": {
+    "Killing_basis": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ],
+    "Killing_normalization": "e_Omega=sqrt(2) Omega x, same convention as product and single-GammaAB moment tables",
+    "strain_basis_raw_trace": "Dii diagonal matrices and Sij symmetric off-diagonal matrices with entries 1 in ij,ji",
+    "strain_labels": [
+      "D00",
+      "D11",
+      "D22",
+      "D33",
+      "S01",
+      "S02",
+      "S03",
+      "S12",
+      "S13",
+      "S23"
+    ],
+    "normalization_warning": "Raw strain basis; off-diagonal Sij need 1/sqrt(2) scaling for trace-orthonormal strain coordinates."
+  },
+  "operator_formula_used": {
+    "one_sided": "L_cross[A|B](alpha)_c=4(S_A)^i_c(nabla_i a_B^d)alpha_d+8(S_A)^i_c a_B^d nabla_i alpha_d+4 tau_A a_B^d nabla_d alpha_c",
+    "symmetrized": "L_metric_cross_AB=L_cross[A|B]+L_cross[B|A]",
+    "entry": "C_rs(A,B)=Integral <e_r,L_metric_cross_AB(e_s)> dV_g"
+  },
+  "results": {
+    "symmetric_strain_pairs": 55,
+    "all_pairs_nonzero": true,
+    "rank_distribution": {
+      "6": 16,
+      "4": 39
+    },
+    "nonzero_raw_entries_total": 252,
+    "sample_pair_matrices": [
+      {
+        "pair": "D00,D00",
+        "nonzero_count": 6,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "7/2"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "7/2"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "7/2"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "-5/6"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "-5/6"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "-5/6"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D11",
+        "nonzero_count": 6,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "-17/6"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "1/3"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "1/3"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "1/3"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "1/3"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "-7/6"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D22",
+        "nonzero_count": 6,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "1/3"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "-17/6"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "1/3"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "1/3"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "-7/6"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "1/3"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D33",
+        "nonzero_count": 6,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "1/3"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "1/3"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "-17/6"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "-7/6"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "1/3"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "1/3"
+          }
+        ]
+      },
+      {
+        "pair": "D00,S01",
+        "nonzero_count": 4,
+        "first_entries": [
+          {
+            "row": "E02",
+            "col": "E12",
+            "value": "13/6"
+          },
+          {
+            "row": "E03",
+            "col": "E13",
+            "value": "13/6"
+          },
+          {
+            "row": "E12",
+            "col": "E02",
+            "value": "13/6"
+          },
+          {
+            "row": "E13",
+            "col": "E03",
+            "value": "13/6"
+          }
+        ]
+      }
+    ]
+  },
+  "connection_triad_status": {
+    "product_slot": "computed; all 55 pairs nonzero; ranks 1,2,3,4,5",
+    "single_GammaAB_slot": "computed; 52 of 55 pairs nonzero; ranks 0,2,4,6",
+    "metric_cross_slot": "computed here; all 55 pairs nonzero; ranks 4,6",
+    "full_C_conn2_11": "ready_for_subslot_addition_but_not_yet_added"
+  },
+  "interpretation": [
+    "The metric-cross slot is active for every raw symmetric strain pair.",
+    "Its rank pattern differs from both the product and single-GammaAB slots, so the full connection block requires explicit matrix addition.",
+    "At connection-subslot level, there is no remaining formula/table blocker for C_conn2[1,1]; the next gate is assembly and then comparison with non-connection delta2 pieces.",
+    "This still does not close C6 because Ricci, projector, Hilbert/basis, local/compensation, and full determinant trace bookkeeping remain outside this connection block."
+  ],
+  "pass_fail": [
+    {
+      "test": "metric_cross_C11_table_computed",
+      "status": "pass",
+      "meaning": "The six-state moment table for the inverse-metric/first-connection cross slot is computed."
+    },
+    {
+      "test": "metric_cross_vanishes_identically",
+      "status": "fail",
+      "meaning": "The slot is nonzero for all 55 raw symmetric strain pairs."
+    },
+    {
+      "test": "connection_subslot_triad_ready",
+      "status": "pass",
+      "meaning": "Product, single GammaAB, and metric-cross C11 subslot tables are all available in the same raw basis."
+    },
+    {
+      "test": "full_C_conn2_11_added",
+      "status": "not_yet",
+      "meaning": "The three subslot matrices have not yet been added pairwise into the full connection block."
+    }
+  ],
+  "plain_language": "The third gear has now touched the six Killing rulers. It moves in every direction, with ranks 4 or 6. We now have all three connection gear tables; the next move is to add them and see the whole connection block.",
+  "verdict": "The inverse-metric/first-connection metric-cross subslot of C_conn2[1,1] has been evaluated as a symbolic finite moment table in the raw Sym^2(R4) strain basis. It is nonzero for all 55 symmetric deformation pairs, with rank distribution 4:39 and 6:16. The second-connection C11 subslot triad is now table-complete; full C_conn2[1,1] assembly is the next required step."
+}

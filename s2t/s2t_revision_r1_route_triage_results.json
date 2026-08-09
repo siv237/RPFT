@@ -1,0 +1,150 @@
+{
+  "status": "revision_R1_internal_maturity_5_route_H1_closed_H2_not_test_ready",
+  "date": "2026-08-07",
+  "frozen_train_inputs": {
+    "alpha_inverse": 137.035999177,
+    "electron_mass_MeV": 0.51099895069,
+    "muon_mass_MeV": 105.6583755,
+    "note": "The displayed R1 rows use alpha_inverse and muon mass; electron mass is a frozen but unused train anchor in this subset."
+  },
+  "H0_revision_R1": {
+    "implementation": "independent direct formula evaluation without importing prior numerical scripts",
+    "computed_values": {
+      "S_geo": 137.0363037758784,
+      "periodic_term": 0.0003040556810026934,
+      "pi4_compression_term": 5.466750295392699e-07,
+      "S_vac": 137.03599917352236,
+      "tau_mass_MeV": 1776.8594285630165,
+      "tau_relative_control_residual": -3.2159932879576196e-07,
+      "v_S2T_GeV": 245.99340926110543,
+      "G_F_S2T_GeV_minus2": 1.1685251367965196e-05,
+      "lambda_H": 0.1292217159850974,
+      "Higgs_mass_GeV": 125.0564860389512
+    },
+    "row_checks": {
+      "S_geo": {
+        "computed": 137.0363037758784,
+        "document": 137.036303775878,
+        "relative_error": 2.903638824617055e-15,
+        "tolerance": 5e-09,
+        "passes": true
+      },
+      "periodic_term": {
+        "computed": 0.0003040556810026934,
+        "document": 0.00030405568,
+        "relative_error": 1.0026933710410857e-12,
+        "tolerance": 5e-09,
+        "passes": true
+      },
+      "pi4_compression_term": {
+        "computed": 5.466750295392699e-07,
+        "document": 5.4667502954e-07,
+        "relative_error": 7.300365214148001e-19,
+        "tolerance": 5e-09,
+        "passes": true
+      },
+      "S_vac": {
+        "computed": 137.03599917352236,
+        "document": 137.035999173522,
+        "relative_error": 2.6962420445987686e-15,
+        "tolerance": 5e-09,
+        "passes": true
+      },
+      "tau_mass_MeV": {
+        "computed": 1776.8594285630165,
+        "document": 1776.859428563,
+        "relative_error": 9.34135702607576e-15,
+        "tolerance": 5e-09,
+        "passes": true
+      },
+      "tau_relative_control_residual": {
+        "computed": -3.2159932879576196e-07,
+        "document": -3.22e-07,
+        "relative_error": 4.006712042380425e-10,
+        "tolerance": 5e-08,
+        "passes": true
+      },
+      "v_S2T_GeV": {
+        "computed": 245.99340926110543,
+        "document": 245.993409261,
+        "relative_error": 4.2853229521089134e-13,
+        "tolerance": 5e-09,
+        "passes": true
+      },
+      "G_F_S2T_GeV_minus2": {
+        "computed": 1.1685251367965196e-05,
+        "document": 1.1685251368e-05,
+        "relative_error": 3.48045838026792e-17,
+        "tolerance": 5e-09,
+        "passes": true
+      },
+      "lambda_H": {
+        "computed": 0.1292217159850974,
+        "document": 0.129221715985,
+        "relative_error": 9.739431483524186e-14,
+        "tolerance": 5e-09,
+        "passes": true
+      },
+      "Higgs_mass_GeV": {
+        "computed": 125.0564860389512,
+        "document": 125.056486039,
+        "relative_error": 3.902242629525424e-13,
+        "tolerance": 5e-09,
+        "passes": true
+      }
+    },
+    "all_rows_reproduced": true,
+    "alpha_residual": -3.477651944194804e-09,
+    "claim_statuses": {
+      "S_geo": "geometric success",
+      "periodic_1_over_24": "conditional determinant branch",
+      "pi4_term": "strong structural compression, not an exact determinant theorem",
+      "tau_mass": "strong conditional relation",
+      "v_and_Higgs_mass": "conditional inherited bridge",
+      "closed_physical_predictions": 0
+    },
+    "revision_integrity": {
+      "exact_pi4_theorem_removed": true,
+      "C6_no_go_retained": true,
+      "parent_action_no_go_retained": true,
+      "numerical_reproducibility_does_not_upgrade_claim_status": true
+    },
+    "maturity_effect": {
+      "old_internal_score": 4,
+      "new_internal_score": 5,
+      "basis": "The Tome II rubric explicitly allows 4->5 after a revision without the exact pi^-4 theorem plus an independent audit.",
+      "external_reproduction_completed": false,
+      "next_threshold": "5->6 requires external reproduction of the audit and blind table"
+    }
+  },
+  "H1_C6_reopening": {
+    "status": "already_falsified_in_current_model",
+    "explicit_n3_projected_trace": 79.99999999999999,
+    "explicit_n3_projected_rank": 6,
+    "hypothesized_zero": false,
+    "final_same_scheme_status": "C6_exact_pi4_absorption_downgraded_no_mandatory_same_scheme_compensation",
+    "reason": "The explicit quotient-normalized n=3 projection is nonzero (trace 80, rank 6), and the final same-scheme audit found no mandatory compensation. H1 repeats a completed gate.",
+    "reopen_only_if": [
+      "derive a new mandatory same-spectrum opposite-sign sector from BRST, topology or EFT",
+      "derive an exact no-fit spectral identity that absorbs the finite C11 and low-shell blocks",
+      "prove external equivalence of a primary physical quotient together with cancellation of its remaining coexact geometric block"
+    ]
+  },
+  "H2_reciprocal_plus_defect": {
+    "status": "not_test_ready_and_not_a_6_to_7_route",
+    "ambient_bridge_status": "ambient_reciprocal_duality_bridge_fails_in_current_Maxwell_FP_model",
+    "relative_normalization_derived": false,
+    "common_parent_action_present": false,
+    "blind_observable_map_present": false,
+    "reason": "The reciprocal minimum is produced by imposed symmetrization, while the defect saddle is conditional. Adding the two requires a common dimension, relative coefficient and observable map. Without them the sum is a new underdefined model, not a blind test.",
+    "scale_mismatch": "The internal 6->7 threshold is specifically parameter-free EW/QCD matching after external reproduction at 5->6."
+  },
+  "scientific_verdict": {
+    "recommended_move": "publish/freeze revision R1 and prepare external reproducibility package",
+    "H0": "passes as an internal maturity upgrade, not a physical closure",
+    "H1": "stop; closed negatively unless a new mandatory sector appears",
+    "H2": "do not run until a common parent action and blind map are defined",
+    "R_sci_internal": 5,
+    "N_closed_physical": 0
+  }
+}

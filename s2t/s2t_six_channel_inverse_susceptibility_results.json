@@ -1,0 +1,119 @@
+{
+  "status": "six_channel_inverse_identity_is_exact_but_no_current_carrier_passes_statistics_boundary_weight_and_trace_gates",
+  "date": "2026-08-05",
+  "exact_identity": {
+    "channel_count": 6,
+    "zeta4_half": 16.23484850566707,
+    "collective_hessian": 97.40909103400242,
+    "inverse_collective_hessian": 0.010265982254684338,
+    "target_one_over_pi4": 0.010265982254684338,
+    "absolute_error": 0.0
+  },
+  "gaussian_average_model": {
+    "ordinary_trace_action": "Gamma=1/2 zeta sum_i x_i^2",
+    "collective_coordinate": "qbar=(1/6) sum_i x_i",
+    "single_mode_variance": 0.06159589352810602,
+    "qbar_variance": 0.010265982254684338,
+    "matches_one_over_pi4": true,
+    "interpretation": "With an unnormalized component sum, the arithmetic mean of six independent equal channels has the desired variance."
+  },
+  "trace_normalization_gate": {
+    "normalized_trace_action": "Gamma=1/2 zeta tau6(x^2)",
+    "single_mode_variance": 0.3695753611686361,
+    "qbar_variance": 0.06159589352810602,
+    "ratio_to_target": 6.0,
+    "finding": "The normalized trace cancels the multiplicity-six suppression and gives 6/pi^4. The exact route therefore requires an ordinary component sum or an independently fixed overall trace normalization."
+  },
+  "carrier_scan": [
+    {
+      "candidate": "Lambda2_of_four_dimensional_carrier",
+      "raw_channel_count": 6,
+      "half_integer_tower": false,
+      "equal_unit_EM_weights": false,
+      "statistics": "bosonic",
+      "reality_or_constraint": "A curvature two-form has six pointwise components, but F=dA obeys the Bianchi constraint and the Maxwell partition function reduces to Hodge determinants rather than six unconstrained scalar towers. Gauge/ghost S1 modes are periodic.",
+      "passes": false
+    },
+    {
+      "candidate": "Sym2_metric_strains_on_RP3",
+      "raw_channel_count": 6,
+      "half_integer_tower": false,
+      "equal_unit_EM_weights": false,
+      "statistics": "bosonic",
+      "reality_or_constraint": "Sym2 has dimension six, but a constant conformal deformation is one trace direction. Summing all six strains is not the proposed radius Hessian.",
+      "passes": false
+    },
+    {
+      "candidate": "single_complex_SU5_X_block",
+      "raw_channel_count": 6,
+      "half_integer_tower": false,
+      "equal_unit_EM_weights": false,
+      "statistics": "bosonic gauge block",
+      "physical_indices": {
+        "U1_GUT": 2.5,
+        "SU2": 1.5,
+        "SU3": 1.0
+      },
+      "reality_or_constraint": "One complex (3,2) block has raw dimension six, but a real adjoint gauge field contains the conjugate block as well. Gauge Hessians use Dynkin indices, not raw rank.",
+      "passes": false
+    },
+    {
+      "candidate": "SU5_X_plus_conjugate",
+      "raw_channel_count": 12,
+      "half_integer_tower": false,
+      "equal_unit_EM_weights": false,
+      "statistics": "real bosonic adjoint pair",
+      "physical_indices": {
+        "U1_GUT": 5.0,
+        "SU2": 3.0,
+        "SU3": 2.0
+      },
+      "reality_or_constraint": "Reality restores twelve real broken generators, not six equal channels.",
+      "passes": false
+    },
+    {
+      "candidate": "one_generation_Q_left_block",
+      "raw_channel_count": 6,
+      "half_integer_tower": true,
+      "equal_unit_EM_weights": false,
+      "statistics": "chiral Grassmann",
+      "electromagnetic_charge_square_sum": 1.6666666666666667,
+      "reality_or_constraint": "The six Weyl components can inherit the antiperiodic spin tower, but their electromagnetic weights sum to 5/3 rather than six. Three generations give eighteen components, and Grassmann covariance is not a positive bosonic susceptibility.",
+      "passes": false
+    },
+    {
+      "candidate": "abstract_six_equal_antiperiodic_scalar_channels",
+      "raw_channel_count": 6,
+      "half_integer_tower": true,
+      "equal_unit_EM_weights": true,
+      "statistics": "bosonic auxiliary",
+      "reality_or_constraint": "This realizes the identity exactly, but no such six-channel auxiliary block is present in the frozen II.A field content.",
+      "passes": "algebraically_only"
+    }
+  ],
+  "response_map_gate": {
+    "variance_readout": "If the observable contains -qbar^2/S_geo^2 with unit coefficient, Gaussian averaging gives exactly -1/(pi^4 S_geo^2). The unit quadratic readout is a new coupling.",
+    "auxiliary_elimination": {
+      "action": "Gamma(q)=H q^2/2 + J q/S_geo",
+      "on_shell_correction": "-J^2/(2 H S_geo^2)",
+      "required_J": 1.4142135623730951,
+      "finding": "A linear-source derivation requires J=sqrt(2), another normalization that must be fixed by the parent action."
+    },
+    "sign": "The negative sign follows only after choosing a variance subtraction or integrating out a linearly sourced stable mode; it is not supplied by the zeta identity alone."
+  },
+  "boundary_and_statistics_gate": {
+    "half_shift_requirement": "zeta(4,1/2) requires antiperiodic/half-integer modes in the relevant direction.",
+    "current_EM_boundary_condition": "periodic integer Maxwell/ghost modes on S1",
+    "consequence": "Raw bosonic sixes in Lambda2 or SU5 gauge blocks do not carry the required half-integer tower. The natural half-shifted six Q components are fermionic and not equally electromagnetically weighted."
+  },
+  "unified_parent_action_gate": {
+    "ordinary_vs_normalized_trace": "unresolved and normalization-sensitive",
+    "combination_with_one_over_24": "The 1/24 branch is a periodic Maxwell-ghost finite part, whereas the six-channel candidate needs a half-shifted auxiliary sector. A graded parent action must fix their relative sign and normalization before alpha is used.",
+    "passes_two_sector_requirement": false
+  },
+  "scientific_verdict": {
+    "positive": "The six-channel Gaussian average is an explicit model, not merely arithmetic: ordinary-trace covariance of the channel mean equals pi^-4 exactly.",
+    "negative": "Every natural six-dimensional carrier currently in the project fails at least one of the half-shift, equal-weight, reality/gauge, statistics or trace-normalization gates.",
+    "reopening_condition": "Derive a bosonic six-channel antiperiodic auxiliary block with ordinary trace normalization and a unit variance readout, or an equivalent graded parent action, before comparison with alpha."
+  }
+}

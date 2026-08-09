@@ -1,0 +1,90 @@
+{
+  "status": "standard_covariant_FP_leaves_scalar_half_power_unless_cancelled",
+  "numbers": {
+    "S_geo": 137.0363037758784,
+    "P02_rank": 10,
+    "base_volume_half_absorption": 5.483439627824377e-07,
+    "pi4_term": 5.466750295392699e-07
+  },
+  "schemes": [
+    {
+      "scheme": "physical_transverse_quotient",
+      "gamma_coexact_logdet_power": 0.5,
+      "gamma_scalar_logdet_power": 0.0,
+      "requires_extra_cancellation": false,
+      "classification": "viable_conditional_definition",
+      "formula": "Gamma = 1/2 log det' Delta_1,coex + zero/gauge/local",
+      "meaning": "P02 may be counted only in the coexact bosonic insertion if the physical quotient is the defining determinant scheme."
+    },
+    {
+      "scheme": "standard_covariant_FP_full_one_form",
+      "gamma_full_one_form_power": 0.5,
+      "gamma_fp_ghost_power": -1.0,
+      "hodge_exact_scalar_power_from_Delta1": 0.5,
+      "gamma_scalar_logdet_power_after_hodge": -0.5,
+      "requires_extra_cancellation": true,
+      "classification": "residual_scalar_half_power",
+      "formula": "Gamma = 1/2 log det' Delta_1,coex - 1/2 log det' Delta_0 + zero/gauge/local",
+      "meaning": "Standard FP/Hodge bookkeeping leaves a scalar half-determinant in Gamma unless zero/gauge/Jacobian normalization cancels it explicitly."
+    },
+    {
+      "scheme": "standard_FP_plus_unproven_scalar_cancellation",
+      "gamma_coexact_logdet_power": 0.5,
+      "gamma_scalar_logdet_power": 0.0,
+      "requires_extra_cancellation": "must_be_proven",
+      "classification": "desired_but_not_derived",
+      "formula": "Gamma_scalar_residual -> kappa_Cas branch only, no P02 trace-square",
+      "meaning": "This is the needed isolation lemma, not a consequence of the bare covariant FP determinant."
+    }
+  ],
+  "rank_scenarios": [
+    {
+      "scenario": "coexact_only",
+      "coexact_rank": 10,
+      "scalar_residual_power": 0.0,
+      "effective_rank": 10,
+      "factor": 0.9969594431899731,
+      "classification": "desired_C6_route",
+      "absorption_value": 5.466766918121624e-07,
+      "relative_error_vs_pi4": 3.040696579678917e-06
+    },
+    {
+      "scenario": "standard_FP_half_scalar_residual_carries_P02",
+      "coexact_rank": 10,
+      "scalar_residual_power": -0.5,
+      "effective_rank": 5.0,
+      "factor": 0.9984797215949865,
+      "classification": "wrong_factor_if_not_cancelled",
+      "absorption_value": 5.475103272973e-07,
+      "relative_error_vs_pi4": 0.001527960329071691
+    },
+    {
+      "scenario": "full_ghost_like_scalar_P02_leakage",
+      "coexact_rank": 10,
+      "scalar_residual_power": -1.0,
+      "effective_rank": 0,
+      "factor": 1.0,
+      "classification": "suppression_cancelled",
+      "absorption_value": 5.483439627824377e-07,
+      "relative_error_vs_pi4": 0.0030528799615638967
+    }
+  ],
+  "obligations": [
+    {
+      "obligation": "derive_Hodge_measure_and_gauge_volume",
+      "status": "open",
+      "test": "Show zero/gauge/Jacobian factors cancel the -1/2 log det' Delta0 residual in the same normalization, or keep it."
+    },
+    {
+      "obligation": "compute_scalar_second_variation",
+      "status": "open",
+      "test": "Compute delta_g^2 log det' Delta0 under first ambient strain and project to Sym^2(R4)=P02."
+    },
+    {
+      "obligation": "separate_kappa_Cas_from_P02_trace_square",
+      "status": "open",
+      "test": "Prove the retained scalar branch contributes only kappa_Cas=1/24 and no finite P02 trace-square."
+    }
+  ],
+  "verdict": "Bare standard covariant FP/Hodge bookkeeping gives Gamma = 1/2 log det' Delta_1,coex - 1/2 log det' Delta0, so exact/scalar cancellation is not zero by default. If that residual scalar half-determinant carries the same P02 trace-square, the desired rank-10 suppression is reduced to an effective rank 5 in the simplified sign model. Therefore C6 requires an additional cancellation or selection lemma: either work in the physical transverse quotient as the defining scheme, or prove that the standard-FP scalar residual is only the kappa_Cas=1/24 branch and has no P02 leakage."
+}

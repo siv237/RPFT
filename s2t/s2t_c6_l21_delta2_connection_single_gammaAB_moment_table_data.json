@@ -1,0 +1,1322 @@
+{
+  "status": "single_GammaAB_C11_moment_data_raw_basis",
+  "rot_labels": [
+    "E01",
+    "E02",
+    "E03",
+    "E12",
+    "E13",
+    "E23"
+  ],
+  "strain_labels_raw_trace_basis": [
+    "D00",
+    "D11",
+    "D22",
+    "D33",
+    "S01",
+    "S02",
+    "S03",
+    "S12",
+    "S13",
+    "S23"
+  ],
+  "formula": "Integral <e_r,L_single_GammaAB(e_s)> dV, e=sqrt(2)Omega x, w=-ell+4A_Ta_B+4B_Ta_A",
+  "symmetric_pair_count": 55,
+  "rank_distribution": {
+    "6": 4,
+    "2": 12,
+    "4": 36,
+    "0": 3
+  },
+  "all_pairs_nonzero": false,
+  "nonzero_entries_total": 192,
+  "pairs": [
+    {
+      "A": "D00",
+      "B": "D00",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "1"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "1"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "1"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "-1"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "-1"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "-1"
+        }
+      ]
+    },
+    {
+      "A": "D00",
+      "B": "D11",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "-1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "1/3"
+        }
+      ]
+    },
+    {
+      "A": "D00",
+      "B": "D22",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "-1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "1/3"
+        }
+      ]
+    },
+    {
+      "A": "D00",
+      "B": "D33",
+      "nonzero_entries": [
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "-1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "1/3"
+        }
+      ]
+    },
+    {
+      "A": "D00",
+      "B": "S01",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "1"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "1"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "1"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "A": "D00",
+      "B": "S02",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "-1"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "1"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "-1"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "A": "D00",
+      "B": "S03",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "-1"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "-1"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "-1"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "-1"
+        }
+      ]
+    },
+    {
+      "A": "D00",
+      "B": "S12",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "-1/3"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "-1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "-1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "-1/3"
+        }
+      ]
+    },
+    {
+      "A": "D00",
+      "B": "S13",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "-1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "-1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "1/3"
+        }
+      ]
+    },
+    {
+      "A": "D00",
+      "B": "S23",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "-1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "-1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "-1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "-1/3"
+        }
+      ]
+    },
+    {
+      "A": "D11",
+      "B": "D11",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "1"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "-1"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "-1"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "1"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "1"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "-1"
+        }
+      ]
+    },
+    {
+      "A": "D11",
+      "B": "D22",
+      "nonzero_entries": [
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "-1/3"
+        }
+      ]
+    },
+    {
+      "A": "D11",
+      "B": "D33",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "-1/3"
+        }
+      ]
+    },
+    {
+      "A": "D11",
+      "B": "S01",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "1"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "1"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "1"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "A": "D11",
+      "B": "S02",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "-1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "-1/3"
+        }
+      ]
+    },
+    {
+      "A": "D11",
+      "B": "S03",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "1/3"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "1/3"
+        }
+      ]
+    },
+    {
+      "A": "D11",
+      "B": "S12",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "1"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "1"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "1"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "A": "D11",
+      "B": "S13",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "1"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "1"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "-1"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "-1"
+        }
+      ]
+    },
+    {
+      "A": "D11",
+      "B": "S23",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "-1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "-1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "-1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "-1/3"
+        }
+      ]
+    },
+    {
+      "A": "D22",
+      "B": "D22",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "-1"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "1"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "-1"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "1"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "-1"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "A": "D22",
+      "B": "D33",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "-1/3"
+        }
+      ]
+    },
+    {
+      "A": "D22",
+      "B": "S01",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "-1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "-1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "-1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "-1/3"
+        }
+      ]
+    },
+    {
+      "A": "D22",
+      "B": "S02",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "-1"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "1"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "-1"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "A": "D22",
+      "B": "S03",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "1/3"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "1/3"
+        }
+      ]
+    },
+    {
+      "A": "D22",
+      "B": "S12",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "1"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "1"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "1"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "A": "D22",
+      "B": "S13",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "-1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "-1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "1/3"
+        }
+      ]
+    },
+    {
+      "A": "D22",
+      "B": "S23",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "1"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "1"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "1"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "A": "D33",
+      "B": "D33",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "-1"
+        },
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "-1"
+        },
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "1"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "-1"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "1"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "A": "D33",
+      "B": "S01",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "-1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "-1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "-1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "-1/3"
+        }
+      ]
+    },
+    {
+      "A": "D33",
+      "B": "S02",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "1/3"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "-1/3"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "-1/3"
+        }
+      ]
+    },
+    {
+      "A": "D33",
+      "B": "S03",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "-1"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "-1"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "-1"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "-1"
+        }
+      ]
+    },
+    {
+      "A": "D33",
+      "B": "S12",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "-1/3"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "-1/3"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "-1/3"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "-1/3"
+        }
+      ]
+    },
+    {
+      "A": "D33",
+      "B": "S13",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "1"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "1"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "-1"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "-1"
+        }
+      ]
+    },
+    {
+      "A": "D33",
+      "B": "S23",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "1"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "1"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "1"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "A": "S01",
+      "B": "S01",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "8/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "-8/3"
+        }
+      ]
+    },
+    {
+      "A": "S01",
+      "B": "S02",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "4/3"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "4/3"
+        }
+      ]
+    },
+    {
+      "A": "S01",
+      "B": "S03",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "-4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "-4/3"
+        }
+      ]
+    },
+    {
+      "A": "S01",
+      "B": "S12",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "-4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "-4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "4/3"
+        }
+      ]
+    },
+    {
+      "A": "S01",
+      "B": "S13",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "-4/3"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "-4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "-4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "-4/3"
+        }
+      ]
+    },
+    {
+      "A": "S01",
+      "B": "S23",
+      "nonzero_entries": []
+    },
+    {
+      "A": "S02",
+      "B": "S02",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "8/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "-8/3"
+        }
+      ]
+    },
+    {
+      "A": "S02",
+      "B": "S03",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "4/3"
+        }
+      ]
+    },
+    {
+      "A": "S02",
+      "B": "S12",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "4/3"
+        }
+      ]
+    },
+    {
+      "A": "S02",
+      "B": "S13",
+      "nonzero_entries": []
+    },
+    {
+      "A": "S02",
+      "B": "S23",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E13",
+          "value": "-4/3"
+        },
+        {
+          "row": "E02",
+          "col": "E23",
+          "value": "-4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E01",
+          "value": "-4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E02",
+          "value": "-4/3"
+        }
+      ]
+    },
+    {
+      "A": "S03",
+      "B": "S03",
+      "nonzero_entries": [
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "8/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "-8/3"
+        }
+      ]
+    },
+    {
+      "A": "S03",
+      "B": "S12",
+      "nonzero_entries": []
+    },
+    {
+      "A": "S03",
+      "B": "S13",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E12",
+          "value": "4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E13",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E02",
+          "value": "4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E03",
+          "value": "4/3"
+        }
+      ]
+    },
+    {
+      "A": "S03",
+      "B": "S23",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E12",
+          "value": "-4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E23",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E01",
+          "value": "-4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E03",
+          "value": "4/3"
+        }
+      ]
+    },
+    {
+      "A": "S12",
+      "B": "S12",
+      "nonzero_entries": [
+        {
+          "row": "E03",
+          "col": "E03",
+          "value": "-8/3"
+        },
+        {
+          "row": "E12",
+          "col": "E12",
+          "value": "8/3"
+        }
+      ]
+    },
+    {
+      "A": "S12",
+      "B": "S13",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E03",
+          "value": "4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E02",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E13",
+          "value": "4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E12",
+          "value": "4/3"
+        }
+      ]
+    },
+    {
+      "A": "S12",
+      "B": "S23",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E03",
+          "value": "4/3"
+        },
+        {
+          "row": "E03",
+          "col": "E01",
+          "value": "4/3"
+        },
+        {
+          "row": "E12",
+          "col": "E23",
+          "value": "-4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E12",
+          "value": "-4/3"
+        }
+      ]
+    },
+    {
+      "A": "S13",
+      "B": "S13",
+      "nonzero_entries": [
+        {
+          "row": "E02",
+          "col": "E02",
+          "value": "-8/3"
+        },
+        {
+          "row": "E13",
+          "col": "E13",
+          "value": "8/3"
+        }
+      ]
+    },
+    {
+      "A": "S13",
+      "B": "S23",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E02",
+          "value": "4/3"
+        },
+        {
+          "row": "E02",
+          "col": "E01",
+          "value": "4/3"
+        },
+        {
+          "row": "E13",
+          "col": "E23",
+          "value": "4/3"
+        },
+        {
+          "row": "E23",
+          "col": "E13",
+          "value": "4/3"
+        }
+      ]
+    },
+    {
+      "A": "S23",
+      "B": "S23",
+      "nonzero_entries": [
+        {
+          "row": "E01",
+          "col": "E01",
+          "value": "-8/3"
+        },
+        {
+          "row": "E23",
+          "col": "E23",
+          "value": "8/3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+\chapter{Спецификация версии III}
+
+Версия III начинается не с новой численной формулы, а с одного вопроса:
+существует ли действие, которое до обращения к наблюдаемым одновременно
+фиксирует меру, embedding-карты коллективных координат и не менее двух
+normalization-sensitive секторов.
+
+\section{Замороженные входы}
+
+На первом этапе сохраняются только математические данные, уже отделённые от
+физических предсказаний:
+\begin{equation}
+ K=\mathbb{RP}^3\times S^1,
+ \qquad
+ \Vol(\mathbb{RP}^3)=\pi^2,
+ \qquad
+ \ell(S^1)=2\pi,
+ \qquad
+ \ell(\gamma)=\pi.
+\end{equation}
+Допустимы projector ranks, integral cohomology classes и представления,
+если они заданы до сравнения с массами. Не допускается использование
+\(\alpha^{-1}\), \(m_\tau\), neutrino splittings или EW/QCD residuals для
+выбора коэффициентов действия.
+
+\begin{protocol}[Двухсекторный Definition of Done]
+Кандидат считается первым положительным parent action только если:
+\begin{enumerate}
+ \item полный набор полей, симметрий, мер и boundary terms объявлен заранее;
+ \item одна и та же Hessian-метрика задаёт neutrino и charged-lepton
+ collective maps без независимых sector coefficients;
+ \item embedding каждой collective coordinate фиксирован калибровочной
+ симметрией, интегральным периодом, канонической скобкой или другим
+ field-redefinition-covariant принципом;
+ \item vacuum equations выбирают branch и family axis либо доказывают их
+ физическую несущественность;
+ \item действие проходит третий тест, не использованный при его построении;
+ \item все машинные расчёты воспроизводимы отдельным аудитом.
+\end{enumerate}
+\end{protocol}
+
+\section{Порядок работы}
+
+Исследование разбивается на последовательные kill-gates:
+\begin{enumerate}
+ \item role-graded Hessian: проверить числовую совместимость одной Hodge
+ metric при разных типах коллективных координат;
+ \item embedding gate: определить, фиксированы ли масштабы этих координат
+ симметрией, а не выбором базиса;
+ \item vertex covariance: вывести совместное преобразование stiffness и
+ interaction vertices;
+ \item vacuum selector: проверить branch, axis и rank-one kernel;
+ \item independent sector: вычислить заранее выбранный третий observable.
+\end{enumerate}
+
+Каждый отрицательный этап закрывает только объявленный класс. Переход к
+следующему классу требует нового структурного принципа, а не дополнительного
+числового коэффициента.

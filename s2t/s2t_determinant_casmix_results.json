@@ -1,0 +1,183 @@
+{
+  "status": "determinant_casmix_trace_integer_test",
+  "formula_tested": "pi^-4 term ?= (pi^2/2)*T_coex_RP3/S_geo*(1 - N/(24*S_geo))",
+  "numbers": {
+    "S_geo": 137.0363037758784,
+    "T_RP3": 1.5227161455271536e-05,
+    "pi4_term": 5.466750295392699e-07,
+    "base_tower": 5.483439627824377e-07,
+    "M_needed": 0.9969564117480219,
+    "epsilon_needed": 0.0030435882519781465,
+    "trace_integer_required": 10.009970022402527,
+    "nearest_integer": 10,
+    "nearest_integer_error": 0.009970022402526979,
+    "nearest_integer_relative_error": 0.0009960092168322038
+  },
+  "scalar_even_modes": [
+    {
+      "ell": 0,
+      "lambda": 0,
+      "degeneracy": 1,
+      "cumulative_degeneracy": 1
+    },
+    {
+      "ell": 2,
+      "lambda": 8,
+      "degeneracy": 9,
+      "cumulative_degeneracy": 10
+    },
+    {
+      "ell": 4,
+      "lambda": 24,
+      "degeneracy": 25,
+      "cumulative_degeneracy": 35
+    },
+    {
+      "ell": 6,
+      "lambda": 48,
+      "degeneracy": 49,
+      "cumulative_degeneracy": 84
+    },
+    {
+      "ell": 8,
+      "lambda": 80,
+      "degeneracy": 81,
+      "cumulative_degeneracy": 165
+    },
+    {
+      "ell": 10,
+      "lambda": 120,
+      "degeneracy": 121,
+      "cumulative_degeneracy": 286
+    },
+    {
+      "ell": 12,
+      "lambda": 168,
+      "degeneracy": 169,
+      "cumulative_degeneracy": 455
+    }
+  ],
+  "ranked_integer_candidates": [
+    {
+      "source": "scalar_even_cumulative_through_ell_2",
+      "integer": 10,
+      "epsilon": 0.003040556810026934,
+      "relative_error_epsilon": -0.0009960092168322969,
+      "term": 5.466766918121624e-07,
+      "relative_error_pi4": 3.040696579678917e-06
+    },
+    {
+      "source": "scalar_even_ell0_plus_ell2_or_metric_symmetric_dim4",
+      "integer": 10,
+      "epsilon": 0.003040556810026934,
+      "relative_error_epsilon": -0.0009960092168322969,
+      "term": 5.466766918121624e-07,
+      "relative_error_pi4": 3.040696579678917e-06
+    },
+    {
+      "source": "nearby_integer_control",
+      "integer": 11,
+      "epsilon": 0.0033446124910296274,
+      "relative_error_epsilon": 0.09890438986148455,
+      "term": 5.465099647151349e-07,
+      "relative_error_pi4": -0.00030194322991876224
+    },
+    {
+      "source": "first_nonzero_scalar_even_shell_only",
+      "integer": 9,
+      "epsilon": 0.0027365011290242406,
+      "relative_error_epsilon": -0.100896408295149,
+      "term": 5.4684341890919e-07,
+      "relative_error_pi4": 0.0003080246230781201
+    },
+    {
+      "source": "so4_or_first_coexact_level",
+      "integer": 6,
+      "epsilon": 0.0018243340860161603,
+      "relative_error_epsilon": -0.4005976055300994,
+      "term": 5.473436002002726e-07,
+      "relative_error_pi4": 0.0012229764025734435
+    },
+    {
+      "source": "four_internal_dimensions",
+      "integer": 4,
+      "epsilon": 0.0012162227240107735,
+      "relative_error_epsilon": -0.6003984036867329,
+      "term": 5.476770543943276e-07,
+      "relative_error_pi4": 0.0018329442555701323
+    },
+    {
+      "source": "rp3_dimension",
+      "integer": 3,
+      "epsilon": 0.0009121670430080801,
+      "relative_error_epsilon": -0.7002988027650497,
+      "term": 5.478437814913551e-07,
+      "relative_error_pi4": 0.002137928182068573
+    },
+    {
+      "source": "scalar_even_cumulative_through_ell_0",
+      "integer": 1,
+      "epsilon": 0.0003040556810026934,
+      "relative_error_epsilon": -0.9000996009216832,
+      "term": 5.481772356854102e-07,
+      "relative_error_pi4": 0.002747896035065456
+    },
+    {
+      "source": "constant_scalar_only",
+      "integer": 1,
+      "epsilon": 0.0003040556810026934,
+      "relative_error_epsilon": -0.9000996009216832,
+      "term": 5.481772356854102e-07,
+      "relative_error_pi4": 0.002747896035065456
+    },
+    {
+      "source": "full_index_count_control",
+      "integer": 24,
+      "epsilon": 0.007297336344064641,
+      "relative_error_epsilon": 1.3976095778796025,
+      "term": 5.44342512453777e-07,
+      "relative_error_pi4": -0.004266734274398304
+    },
+    {
+      "source": "scalar_even_cumulative_through_ell_4",
+      "integer": 35,
+      "epsilon": 0.010641948835094268,
+      "relative_error_epsilon": 2.496513967741087,
+      "term": 5.425085143864742e-07,
+      "relative_error_pi4": -0.007621557465880963
+    },
+    {
+      "source": "scalar_even_cumulative_through_ell_6",
+      "integer": 84,
+      "epsilon": 0.025540677204226245,
+      "relative_error_epsilon": 7.391633522578609,
+      "term": 5.343388866321252e-07,
+      "relative_error_pi4": -0.022565769864304
+    },
+    {
+      "source": "scalar_even_cumulative_through_ell_8",
+      "integer": 165,
+      "epsilon": 0.05016918736544441,
+      "relative_error_epsilon": 15.483565847922268,
+      "term": 5.208339917728953e-07,
+      "relative_error_pi4": -0.04726946791067638
+    },
+    {
+      "source": "scalar_even_cumulative_through_ell_10",
+      "integer": 286,
+      "epsilon": 0.08695992476677031,
+      "relative_error_epsilon": 27.571514136398598,
+      "term": 5.006600130325642e-07,
+      "relative_error_pi4": -0.08417252301698601
+    },
+    {
+      "source": "scalar_even_cumulative_through_ell_12",
+      "integer": 455,
+      "epsilon": 0.1383453348562255,
+      "relative_error_epsilon": 44.45468158063413,
+      "term": 4.7248313363491175e-07,
+      "relative_error_pi4": -0.13571480659521995
+    }
+  ],
+  "verdict": "The determinant cross-term would need an effective trace integer N=10.0099700224, whose nearest integer is 10. The nearest integer is exactly the RP3 scalar/ghost cumulative degeneracy d_0+d_2=1+9=10, giving relative pi4-term error 3.04e-6. This is strong evidence for the correct trace rank, but not a proof: the missing step is an explicit gauge-fixed operator calculation showing that the second-order mixed trace equals this scalar/exact rank with the minus sign."
+}

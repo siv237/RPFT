@@ -1,0 +1,101 @@
+\chapter{Источник square-root connection: исчерпание существующего меню}
+
+Предыдущий gate показал, что class-D defect требует singular root
+connection и pairing condensate. Теперь проверяется, содержится ли нужный
+order-four action уже в SU(5), spin, flat-character или Nambu-структурах
+проекта.
+
+\section{SU(5)-quarter holonomy}
+
+Используемый в split-sector элемент
+\begin{equation}
+ h=\exp(i3\pi Y)
+\end{equation}
+действительно имеет order \(4\) на некоторых Standard Model components.
+Но sterile right-handed mode имеет
+\begin{equation}
+ N^c\sim(\mathbf1,\mathbf1)_0,
+ \qquad Y(N^c)=0.
+\end{equation}
+Она является дополнительным \(SU(5)\)-singlet, отсутствующим в минимальном
+\(\mathbf{10}+\overline{\mathbf5}\). Поэтому
+\begin{equation}
+ h|_{N^c}=1,
+ \qquad
+ P_5|_{N^c}=h^2|_{N^c}=1.
+\end{equation}
+SU(5)-quarter branch, разделяющая \(Q,L,T_H\), не создаёт sterile
+square-root connection.
+
+\section{Абстрактная gauge-holonomy doublet}
+
+Ранний gauge audit использует U(1)-like charges \(q=\pm1\). При
+\(\beta=1/4\) он даёт conjugate phases
+\begin{equation}
+ (-i,+i),
+ \qquad
+ (-i)^2=(+i)^2=-1.
+\end{equation}
+Алгебраически это именно требуемый root pair. Но audit не задаёт
+representation map этого U(1)-like charge на neutral sterile sector.
+Назначить \(q=\pm1\) постфактум означало бы ввести новый charge assignment.
+
+То же относится к multiplet flat characters. В SU(5) split-table characters
+назначены \(\mathbf{10}\), \(\mathbf5\) и \(\mathbf5_H\); sterile singlet в
+таблице отсутствует. Character \(\pm i\) можно добавить, но он не выводится
+из текущей finite algebra.
+
+\section{Spin и Nambu не являются root-source}
+
+Spin-структуры дают coefficient holonomies \(\pm1\), а не независимую линию
+с квадратом \(-1\). Nambu transition
+\begin{equation}
+ \diag(i,-i)
+\end{equation}
+переносит basis нулевой моды после того, как pair phase уже изменилась на
+\(\pi\). Поэтому он является следствием vortex texture и не может служить
+причиной её возникновения. Использовать его как source означало бы
+логический круг.
+
+\section{Единственный настоящий root}
+
+Требуемый объект уже классифицирован топологически: это square root
+ambient torsion line на
+\(\mathbb{RP}^3\setminus\gamma\). Его character на generator равен
+\(\pm i\), а meridian holonomy равна \(-1\). Именно поэтому line не
+продолжается через core.
+
+Следовательно, root существует математически, но не является smooth field
+замороженного action. Он должен войти как один из трёх новых объектов:
+\begin{enumerate}
+ \item sterile-sector \(Z_4\) flat character;
+ \item dynamical \(U(1)\) или \(Z_4\) connection с charge-two pairing field;
+ \item disorder operator, включающий nonextendable sector в path integral.
+\end{enumerate}
+
+\begin{theorem}[Existing-menu root no-go]
+Ни SU(5)-holonomy, ни spin structure, ни Nambu transition не задают
+обязательный независимый square-root connection на sterile Majorana mode.
+Абстрактная quarter-holonomy doublet содержит правильные phases, но её
+sterile charge assignment не выведен. Поэтому defect-route требует явного
+расширения finite algebra или topological-sector measure.
+\end{theorem}
+
+\begin{protocol}[Definition of Done root-source extension]
+Новая root-ветвь допустима только если:
+\begin{enumerate}
+ \item sterile \(Z_4\)-charge следует из finite algebra и real structure;
+ \item root sector включён в path-integral measure до neutrino data;
+ \item проверены discrete и global anomaly constraints;
+ \item та же representation выводит charge-two pairing field;
+ \item pairing Hessian или gap equation создаёт condensate;
+ \item extension проходит второй независимый sector test.
+\end{enumerate}
+\end{protocol}
+
+Текущий итог: нужная фаза в математическом меню существует, но не назначена
+sterile-моде никакой обязательной структурой. Поэтому переиспользование
+SU(5)-quarter branch не закрывает defect parent action.
+
+Машинный протокол сохранён в
+\texttt{s2t\_majorana\_root\_source\_menu\_results.json}.

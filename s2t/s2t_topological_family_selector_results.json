@@ -1,0 +1,112 @@
+{
+  "status": "intrinsic_cohomology_and_product_metric_distinguish_three_labels_but_generate_only_commuting_family_observables",
+  "date": "2026-08-05",
+  "cohomology_ring": {
+    "presentation": "F2[a,b]/(a^4,b^2), deg(a)=deg(b)=1",
+    "ring_automorphism_count_on_H1": 2,
+    "matrices": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "nonzero_class_orbits": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "triplet_commutant_dimension": 5,
+    "consequence": "Pure ring naturality leaves the classes a and a+b paired and therefore retains a 1+2 invariant decomposition."
+  },
+  "metric_and_integral_refinement": {
+    "class_signatures": [
+      {
+        "class": [
+          1,
+          0
+        ],
+        "label": "a",
+        "nonzero_square": true,
+        "free_S1_component": false,
+        "product_metric_length": 3.141592653589793
+      },
+      {
+        "class": [
+          0,
+          1
+        ],
+        "label": "b",
+        "nonzero_square": false,
+        "free_S1_component": true,
+        "product_metric_length": 6.283185307179586
+      },
+      {
+        "class": [
+          1,
+          1
+        ],
+        "label": "a+b",
+        "nonzero_square": true,
+        "free_S1_component": true,
+        "product_metric_length": 7.024814731040727
+      }
+    ],
+    "all_three_signatures_distinct": true,
+    "finding": "The square, integral-lift/free component and unequal cycle lengths can label all three classes without observed masses."
+  },
+  "operator_gate": {
+    "canonical_diagonal_operators": [
+      "nonzero-square indicator",
+      "free-S1-component indicator",
+      "product-metric length"
+    ],
+    "pairwise_commutator_norms": {
+      "square_free": 0.0,
+      "square_length": 0.0,
+      "free_length": 0.0
+    },
+    "joint_algebra": "full diagonal C^3",
+    "mixing_prediction": "identity",
+    "finding": "Intrinsic topology solves label distinguishability but not flavor mixing. All canonical scalar readouts are simultaneously diagonal."
+  },
+  "defect_gate": {
+    "systolic_class": "a from RP1 is selected by the shortest nontrivial cycle length pi",
+    "localized_defect": "gamma=RP1 at a fixed S1 point breaks the residual symmetry strongly enough to define extra incidence data, but the S1 point/phase is not canonical.",
+    "wrapped_defect": "gamma times S1 removes the noncanonical point but preserves the factor translation structure and does not supply a full M3 selector.",
+    "verdict": "The existing defect idea can encode the missing selector only by adding the same boundary datum that was previously identified as underived."
+  },
+  "scientific_verdict": {
+    "positive": "The topology and metric canonically distinguish the three nonzero H1 classes; generation labeling itself no longer requires an arbitrary ordering.",
+    "no_go": "Every intrinsic scalar operator obtained from these data commutes. Neither the cohomology ring nor the product metric selects an outside-D8 incidence direction.",
+    "reopening_condition": "A genuine boundary/defect functional must be derived independently and must fix its S1 localization or phase before flavor data are inspected."
+  }
+}

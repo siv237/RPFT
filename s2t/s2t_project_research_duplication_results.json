@@ -1,0 +1,476 @@
+{
+  "status": "exact_wiki_duplicates_removed_and_c6_reporting_consolidated",
+  "date": "2026-08-06",
+  "inventory": {
+    "text_and_machine_files": 688,
+    "prose_files": 267,
+    "python_files": 219,
+    "sections_compared": 659
+  },
+  "exact_file_duplicates": [
+    [
+      "RPFT-main/Проработка/g-2.md",
+      "RPFT-main/Проработка/old/g-2.md"
+    ],
+    [
+      "RPFT-main/Проработка/old/sp2.md",
+      "RPFT-main/Проработка/sp2.md"
+    ],
+    [
+      "RPFT-main/Проработка/old/standart_model.md",
+      "RPFT-main/Проработка/standart_model.md"
+    ],
+    [
+      "RPFT-main/Проработка/old/standart_model2.md",
+      "RPFT-main/Проработка/standart_model2.md"
+    ],
+    [
+      "RPFT-main/Проработка/old/w-bazon.md",
+      "RPFT-main/Проработка/w-bazon.md"
+    ]
+  ],
+  "exact_section_duplicates": [
+    [
+      {
+        "path": "RPFT-main/peper/paper_full_en.md",
+        "line": 206,
+        "title": "Actually, let's use a better PI approximation for 100 digits precision"
+      },
+      {
+        "path": "RPFT-main/peper/paper_full_ru.md",
+        "line": 207,
+        "title": "Actually, let's use a better PI approximation for 100 digits precision"
+      }
+    ],
+    [
+      {
+        "path": "RPFT-main/peper/paper_full_en.md",
+        "line": 280,
+        "title": "B.2. Visualization Generation (`visualize_topology.py`)"
+      },
+      {
+        "path": "RPFT-main/peper/paper_full_ru.md",
+        "line": 281,
+        "title": "B.2. Генерация визуализаций (`visualize_topology.py`)"
+      }
+    ],
+    [
+      {
+        "path": "RPFT-main/Проработка/g-2.md",
+        "line": 57,
+        "title": "III. КОД ПОДТВЕРЖДЕНИЯ"
+      },
+      {
+        "path": "RPFT-main/Проработка/old/g-2.md",
+        "line": 57,
+        "title": "III. КОД ПОДТВЕРЖДЕНИЯ"
+      }
+    ],
+    [
+      {
+        "path": "RPFT-main/Проработка/old/sp2.md",
+        "line": 79,
+        "title": "ЭТАП IV: ВЫЧИСЛИТЕЛЬНЫЙ ПРОТОКОЛ"
+      },
+      {
+        "path": "RPFT-main/Проработка/sp2.md",
+        "line": 79,
+        "title": "ЭТАП IV: ВЫЧИСЛИТЕЛЬНЫЙ ПРОТОКОЛ"
+      }
+    ],
+    [
+      {
+        "path": "RPFT-main/Проработка/old/standart_model.md",
+        "line": 63,
+        "title": "3. КОД ГЕНЕРАЦИИ (PYTHON VERIFICATION)"
+      },
+      {
+        "path": "RPFT-main/Проработка/standart_model.md",
+        "line": 63,
+        "title": "3. КОД ГЕНЕРАЦИИ (PYTHON VERIFICATION)"
+      }
+    ],
+    [
+      {
+        "path": "RPFT-main/Проработка/old/standart_model.md",
+        "line": 117,
+        "title": "4. АНАЛИТИЧЕСКОЕ ЗАКЛЮЧЕНИЕ"
+      },
+      {
+        "path": "RPFT-main/Проработка/standart_model.md",
+        "line": 117,
+        "title": "4. АНАЛИТИЧЕСКОЕ ЗАКЛЮЧЕНИЕ"
+      }
+    ],
+    [
+      {
+        "path": "RPFT-main/Проработка/old/standart_model2.md",
+        "line": 77,
+        "title": "5. ИТОГОВАЯ ОЦЕНКА (EXECUTIVE SUMMARY)"
+      },
+      {
+        "path": "RPFT-main/Проработка/standart_model2.md",
+        "line": 77,
+        "title": "5. ИТОГОВАЯ ОЦЕНКА (EXECUTIVE SUMMARY)"
+      }
+    ],
+    [
+      {
+        "path": "RPFT-main/Проработка/old/w-bazon.md",
+        "line": 63,
+        "title": "5. ТОПОЛОГИЯ ЯДЕР: ОТ ГЕЛИЯ ДО ЖЕЛЕЗА (LEVEL 3)"
+      },
+      {
+        "path": "RPFT-main/Проработка/w-bazon.md",
+        "line": 63,
+        "title": "5. ТОПОЛОГИЯ ЯДЕР: ОТ ГЕЛИЯ ДО ЖЕЛЕЗА (LEVEL 3)"
+      }
+    ],
+    [
+      {
+        "path": "RPFT-main/Проработка/old/w-bazon.md",
+        "line": 86,
+        "title": "6. МОДУЛЬ ЧИСЛЕННОЙ ПРОВЕРКИ (PYTHON)"
+      },
+      {
+        "path": "RPFT-main/Проработка/w-bazon.md",
+        "line": 86,
+        "title": "6. МОДУЛЬ ЧИСЛЕННОЙ ПРОВЕРКИ (PYTHON)"
+      }
+    ]
+  ],
+  "near_file_pairs": [
+    {
+      "similarity": 1.0000000000000058,
+      "first": "RPFT-main/Проработка/old/sp2.md",
+      "second": "RPFT-main/Проработка/sp2.md"
+    },
+    {
+      "similarity": 1.0000000000000007,
+      "first": "RPFT-main/Проработка/old/w-bazon.md",
+      "second": "RPFT-main/Проработка/w-bazon.md"
+    },
+    {
+      "similarity": 0.9999999999999983,
+      "first": "RPFT-main/Проработка/old/standart_model2.md",
+      "second": "RPFT-main/Проработка/standart_model2.md"
+    },
+    {
+      "similarity": 0.9999999999999963,
+      "first": "RPFT-main/Проработка/old/standart_model.md",
+      "second": "RPFT-main/Проработка/standart_model.md"
+    },
+    {
+      "similarity": 0.9999999999999962,
+      "first": "RPFT-main/Проработка/g-2.md",
+      "second": "RPFT-main/Проработка/old/g-2.md"
+    },
+    {
+      "similarity": 0.7368180650225995,
+      "first": "RPFT-main/base/fabric_promt3.md",
+      "second": "RPFT-main/Проработка/old/fabric.md"
+    },
+    {
+      "similarity": 0.69325445807531,
+      "first": "RPFT-main/peper/paper_full_en.md",
+      "second": "RPFT-main/peper/paper_full_ru.md"
+    }
+  ],
+  "normalized_python_clone_groups": [],
+  "near_python_structure_pairs": [
+    {
+      "similarity": 1.0000000000000002,
+      "first": "s2t_c6_l21_delta2_delta_gate_audit.py",
+      "second": "s2t_c6_l21_projector_variation_formula_audit.py"
+    },
+    {
+      "similarity": 1.0000000000000002,
+      "first": "s2t_c6_l21_delta2_delta_gate_audit.py",
+      "second": "s2t_c6_l21_hilbert_variation_formula_audit.py"
+    },
+    {
+      "similarity": 1.0000000000000002,
+      "first": "s2t_c6_l21_hilbert_variation_formula_audit.py",
+      "second": "s2t_c6_l21_projector_variation_formula_audit.py"
+    },
+    {
+      "similarity": 1.0,
+      "first": "s2t_c6_l21_metric_strain_tensor_audit.py",
+      "second": "s2t_c6_l21_slice_choice_audit.py"
+    },
+    {
+      "similarity": 0.9999999999999998,
+      "first": "s2t_c6_l21_delta2_principal_second_symbol_formula_audit.py",
+      "second": "s2t_c6_l21_delta2_second_ricci_formula_audit.py"
+    },
+    {
+      "similarity": 0.9999999999999998,
+      "first": "s2t_c6_l21_delta2_principal_second_symbol_formula_audit.py",
+      "second": "s2t_c6_l21_delta2_second_hilbert_formula_audit.py"
+    },
+    {
+      "similarity": 0.9999999999999998,
+      "first": "s2t_c6_l21_delta2_principal_second_symbol_formula_audit.py",
+      "second": "s2t_c6_l21_delta2_second_connection_formula_audit.py"
+    },
+    {
+      "similarity": 0.9999999999999998,
+      "first": "s2t_c6_l21_delta2_second_connection_formula_audit.py",
+      "second": "s2t_c6_l21_delta2_second_ricci_formula_audit.py"
+    },
+    {
+      "similarity": 0.9999999999999998,
+      "first": "s2t_c6_l21_delta2_second_connection_formula_audit.py",
+      "second": "s2t_c6_l21_delta2_second_hilbert_formula_audit.py"
+    },
+    {
+      "similarity": 0.9999999999999998,
+      "first": "s2t_c6_l21_delta2_second_hilbert_formula_audit.py",
+      "second": "s2t_c6_l21_delta2_second_ricci_formula_audit.py"
+    },
+    {
+      "similarity": 0.9921367959635343,
+      "first": "RPFT-main/rigorous/11_eta_invariant.py",
+      "second": "RPFT-main/rigorous-en/11_eta_invariant.py"
+    },
+    {
+      "similarity": 0.9854685385875867,
+      "first": "s2t_c6_l21_delta2_principal_second_symbol_formula_audit.py",
+      "second": "s2t_c6_l21_delta2_second_projector_formula_audit.py"
+    },
+    {
+      "similarity": 0.9854685385875867,
+      "first": "s2t_c6_l21_delta2_second_connection_formula_audit.py",
+      "second": "s2t_c6_l21_delta2_second_projector_formula_audit.py"
+    },
+    {
+      "similarity": 0.9854685385875867,
+      "first": "s2t_c6_l21_delta2_second_hilbert_formula_audit.py",
+      "second": "s2t_c6_l21_delta2_second_projector_formula_audit.py"
+    },
+    {
+      "similarity": 0.9854685385875867,
+      "first": "s2t_c6_l21_delta2_second_projector_formula_audit.py",
+      "second": "s2t_c6_l21_delta2_second_ricci_formula_audit.py"
+    },
+    {
+      "similarity": 0.9752857338759477,
+      "first": "RPFT-main/rigorous/15_why_K.py",
+      "second": "RPFT-main/rigorous-en/15_why_K.py"
+    },
+    {
+      "similarity": 0.9706706730886292,
+      "first": "RPFT-main/rigorous/20_RG_matching.py",
+      "second": "RPFT-main/rigorous-en/20_RG_matching.py"
+    },
+    {
+      "similarity": 0.9640051410301063,
+      "first": "RPFT-main/rigorous/18_pi_term_rigorous.py",
+      "second": "RPFT-main/rigorous-en/18_pi_term_rigorous.py"
+    },
+    {
+      "similarity": 0.9603494023771015,
+      "first": "s2t_c6_l21_connection_variation_formula_audit.py",
+      "second": "s2t_c6_l21_ricci_variation_formula_audit.py"
+    },
+    {
+      "similarity": 0.9519317043025157,
+      "first": "RPFT-main/rigorous/16_radius_stabilization.py",
+      "second": "RPFT-main/rigorous-en/16_radius_stabilization.py"
+    },
+    {
+      "similarity": 0.9473904610025067,
+      "first": "RPFT-main/rigorous/06_pi4_proof.py",
+      "second": "RPFT-main/rigorous-en/06_pi4_proof.py"
+    },
+    {
+      "similarity": 0.9427053725682629,
+      "first": "RPFT-main/rigorous/07_why_C_equals_1.py",
+      "second": "RPFT-main/rigorous-en/07_why_C_equals_1.py"
+    },
+    {
+      "similarity": 0.9397207559821092,
+      "first": "RPFT-main/rigorous/22_spectral_flow_derivation.py",
+      "second": "RPFT-main/rigorous-en/22_spectral_flow_derivation.py"
+    },
+    {
+      "similarity": 0.939200984284808,
+      "first": "s2t_c6_l21_n3_intrinsic_divergence_audit.py",
+      "second": "s2t_c6_l21_n3_tangent_projection_audit.py"
+    },
+    {
+      "similarity": 0.9388523677958168,
+      "first": "RPFT-main/rigorous/04_heat_kernel.py",
+      "second": "RPFT-main/rigorous-en/04_heat_kernel.py"
+    },
+    {
+      "similarity": 0.938824315544857,
+      "first": "RPFT-main/rigorous/17_C_coefficient_deep.py",
+      "second": "RPFT-main/rigorous-en/17_C_coefficient_deep.py"
+    },
+    {
+      "similarity": 0.9326780287032822,
+      "first": "s2t_c6_l21_connection_variation_formula_audit.py",
+      "second": "s2t_c6_l21_projector_variation_formula_audit.py"
+    },
+    {
+      "similarity": 0.9326780287032822,
+      "first": "s2t_c6_l21_connection_variation_formula_audit.py",
+      "second": "s2t_c6_l21_hilbert_variation_formula_audit.py"
+    },
+    {
+      "similarity": 0.9326780287032822,
+      "first": "s2t_c6_l21_connection_variation_formula_audit.py",
+      "second": "s2t_c6_l21_delta2_delta_gate_audit.py"
+    },
+    {
+      "similarity": 0.9039727028392878,
+      "first": "RPFT-main/rigorous/13_casimir_explicit.py",
+      "second": "RPFT-main/rigorous-en/13_casimir_explicit.py"
+    },
+    {
+      "similarity": 0.8933119081298354,
+      "first": "dirac_unity_audit.py",
+      "second": "spectral_unity_deep_checks.py"
+    },
+    {
+      "similarity": 0.8918348453330438,
+      "first": "s2t_c6_l21_delta2_delta_gate_audit.py",
+      "second": "s2t_c6_l21_ricci_variation_formula_audit.py"
+    },
+    {
+      "similarity": 0.8918348453330438,
+      "first": "s2t_c6_l21_hilbert_variation_formula_audit.py",
+      "second": "s2t_c6_l21_ricci_variation_formula_audit.py"
+    },
+    {
+      "similarity": 0.8918348453330438,
+      "first": "s2t_c6_l21_projector_variation_formula_audit.py",
+      "second": "s2t_c6_l21_ricci_variation_formula_audit.py"
+    },
+    {
+      "similarity": 0.8649286268151933,
+      "first": "RPFT-main/rigorous/14_C_coefficient.py",
+      "second": "RPFT-main/rigorous-en/14_C_coefficient.py"
+    },
+    {
+      "similarity": 0.8409512991527495,
+      "first": "s2t_c6_l21_n3_coexact_gate_audit.py",
+      "second": "s2t_c6_l21_n3_intrinsic_divergence_audit.py"
+    },
+    {
+      "similarity": 0.836876444000467,
+      "first": "s2t_c6_l21_n3_coexact_gate_audit.py",
+      "second": "s2t_c6_l21_n3_tangent_projection_audit.py"
+    },
+    {
+      "similarity": 0.8304942380818632,
+      "first": "RPFT-main/rigorous/19_uniqueness.py",
+      "second": "RPFT-main/rigorous-en/19_uniqueness.py"
+    },
+    {
+      "similarity": 0.8063832189611628,
+      "first": "s2t_c6_l21_delta2_gamma_expansion_formula_audit.py",
+      "second": "s2t_c6_timeboxed_operator_sprint_audit.py"
+    },
+    {
+      "similarity": 0.8006516440984978,
+      "first": "s2t_family_affine_incidence_exhaustive_audit.py",
+      "second": "s2t_shared_holonomy_two_sector_audit.py"
+    },
+    {
+      "similarity": 0.7812019896277488,
+      "first": "RPFT-main/rigorous/02_zeta_compute.py",
+      "second": "RPFT-main/rigorous-en/02_zeta_compute.py"
+    },
+    {
+      "similarity": 0.7762450639965276,
+      "first": "s2t_c6_paired_sector_search_audit.py",
+      "second": "s2t_c6_scalar_rescue_routes_audit.py"
+    },
+    {
+      "similarity": 0.7719018346794912,
+      "first": "s2t_c6_ghost_exact_isolation_audit.py",
+      "second": "s2t_c6_scalar_fp_bookkeeping_audit.py"
+    },
+    {
+      "similarity": 0.7656796024731353,
+      "first": "enriched_sector_map_audit.py",
+      "second": "gauge_holonomy_audit.py"
+    },
+    {
+      "similarity": 0.7568496070384346,
+      "first": "s2t_c6_l21_n1_to_n3_leakage_audit.py",
+      "second": "s2t_c6_l21_n3_tangent_projection_audit.py"
+    },
+    {
+      "similarity": 0.7522616508613633,
+      "first": "s2t_c6_l21_n1_to_n3_leakage_audit.py",
+      "second": "s2t_c6_l21_n3_coexact_gate_audit.py"
+    },
+    {
+      "similarity": 0.7503514181549082,
+      "first": "s2t_c6_formal_gamma_audit.py",
+      "second": "s2t_c6_operator_trace_skeleton.py"
+    }
+  ],
+  "summary_counts": {
+    "exact_file_groups": 5,
+    "archival_exact_groups": 5,
+    "exact_wiki_section_groups": 0,
+    "python_clone_groups": 0,
+    "c6_python_clone_groups": 0,
+    "bilingual_python_clone_groups": 0,
+    "near_python_structure_pairs": 47,
+    "near_c6_structure_pairs": 30,
+    "near_bilingual_structure_pairs": 14
+  },
+  "c6_fragmentation": {
+    "result_files": 76,
+    "open_formula_skeletons": 16,
+    "open_files": [
+      "s2t_c6_l21_connection_variation_formula_results.json",
+      "s2t_c6_l21_delta2_ambient_path_formula_results.json",
+      "s2t_c6_l21_delta2_connection_metric_cross_ambient_formula_results.json",
+      "s2t_c6_l21_delta2_connection_product_gamma_inserted_results.json",
+      "s2t_c6_l21_delta2_gamma_expansion_formula_results.json",
+      "s2t_c6_l21_delta2_local_counterterm_classifier_results.json",
+      "s2t_c6_l21_delta2_principal_second_symbol_formula_results.json",
+      "s2t_c6_l21_delta2_second_connection_formula_results.json",
+      "s2t_c6_l21_delta2_second_hilbert_formula_results.json",
+      "s2t_c6_l21_delta2_second_projector_formula_results.json",
+      "s2t_c6_l21_delta2_second_ricci_formula_results.json",
+      "s2t_c6_l21_delta2_skeleton_completion_results.json",
+      "s2t_c6_l21_hilbert_variation_formula_results.json",
+      "s2t_c6_l21_projector_variation_formula_results.json",
+      "s2t_c6_l21_ricci_variation_formula_results.json",
+      "s2t_c6_operator_trace_skeleton_results.json"
+    ]
+  },
+  "classification": {
+    "harmful_or_risky": [
+      "Five byte-identical active/archive pairs inflate source counts."
+    ],
+    "intentional_and_useful": [
+      "Russian and English rigorous scripts are language mirrors.",
+      "The B-L, CKM and C6 chains are progressive falsification sequences.",
+      "Short theorem summaries in the tomes are legitimate traceability layers."
+    ],
+    "cleanup_applied": [
+      "The intermediate B-L condensate-holonomy result is now explicitly marked as superseded by the later trilemma.",
+      "Seven groups of verbatim C6 wiki sections were replaced by links to one canonical chronology.",
+      "Sixteen C6 formula skeletons are now reported through one C6-DELTA2 checklist and count as one research task."
+    ]
+  },
+  "recommendations": [
+    "Exclude old archives and language mirrors from independent-result counts.",
+    "Add claim_id, depends_on, supersedes and independent_control to future JSON results.",
+    "Use one computation, one canonical JSON and one canonical wiki page."
+  ],
+  "overall_verdict": {
+    "independent_physical_result_duplication": "low",
+    "documentation_duplication": "exact_C6_wiki_duplicates_removed",
+    "computational_overfragmentation": "historical_subfiles_retained_but_reporting_consolidated",
+    "scientific_interpretation": "The project mostly revisits questions with stricter controls rather than rediscovering the same physical result. The main duplication is bookkeeping."
+  }
+}

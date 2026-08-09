@@ -1,0 +1,31 @@
+{
+  "status": "fixed_momentum_projection_removes_the_rotor_log_determinant",
+  "date": "2026-08-06",
+  "canonical_rotor": {
+    "hamiltonian": "H=p^2/(2I), p integer",
+    "fixed_sector_partition": "exp(-8*beta/I)",
+    "fixed_sector_effective_action": "8*beta/I",
+    "independent_log_I_coefficient": "0",
+    "conclusion": "A fixed momentum sector contains the inverse-inertia term but no independent Gaussian log(I) term."
+  },
+  "poisson_check": {
+    "momentum_sum": 2.1919840584157417,
+    "winding_sum_with_prefactor": 2.1919840584157413,
+    "absolute_residual": 4.440892098500626e-16,
+    "passed": true,
+    "interpretation": "The square-root fluctuation prefactor belongs to the winding representation of the unprojected trace. After resolving individual momentum sectors it does not survive as a sectorwise log determinant."
+  },
+  "eight_rotor_sector": {
+    "momentum_squared_sum": 48,
+    "trace_rank": 3,
+    "inverse_coefficient": "8",
+    "log_coefficient_from_same_projected_rotors": "0",
+    "required_log_coefficient": "8/3",
+    "single_carrier_exact_match": false
+  },
+  "scientific_verdict": {
+    "no_go": "The momentum pattern 1^3 3^5 closes the inverse coefficient only. A canonical projection onto that sector removes the logarithmic determinant attributed to the same rotors, so one carrier cannot generate both terms.",
+    "surviving_option": "Use a separate unit-weight Gaussian boundary carrier for the logarithm and a topological fixed-momentum carrier for the inverse term, tied by a parent symmetry before comparison with observables.",
+    "next_gate": "Classify minimal two-layer boundary complexes and test whether their measures and BRST parities preserve the coefficient pair without a free relative factor."
+  }
+}

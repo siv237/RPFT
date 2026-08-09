@@ -1,0 +1,77 @@
+{
+  "status": "cellular_Dirac_and_determinant_line_reduce_to_commuting_diagonal_or_projective_even_multiplicity_cases",
+  "date": "2026-08-05",
+  "cellular_Dirac": {
+    "vertex_space": "C[F2^2]",
+    "edge_complex": "weighted square with RP3 and S1 edge directions",
+    "Dirac_form": "D=[[0,B],[B*,0]]",
+    "vertex_Laplacian": "Delta0=B B*",
+    "trivial_connection_spectrum": [
+      2.41092386229214e-17,
+      0.31830988618379064,
+      0.6366197723675814,
+      0.9549296585513719
+    ],
+    "expected_spectrum": [
+      0.0,
+      0.3183098861837907,
+      0.6366197723675814,
+      0.954929658551372
+    ],
+    "commutator_with_T_RP3": 0.0,
+    "commutator_with_T_S1": 0.0,
+    "finding": "The canonical cellular Dirac square is exactly the weighted factor Laplacian already audited. It distinguishes labels but remains a commuting convolution operator."
+  },
+  "determinant_line_values": {
+    "data_type": "one complex line/value for each spin structure",
+    "without_parallel_transport": "diagonal multiplication operator",
+    "example_off_diagonal_norm": 0.0,
+    "consequence": "Eta invariants or determinant magnitudes can weight the three labels but do not define transition amplitudes between different spin structures."
+  },
+  "connection_classification": {
+    "menu_translation_group": "Z2 x Z2",
+    "projective_U1_classes": 2,
+    "classes": [
+      {
+        "plaquette_holonomy": "+1",
+        "result": "gauge-equivalent to the trivial commuting connection"
+      },
+      {
+        "plaquette_holonomy": "-1",
+        "result": "the projective pi-flux class UV=-VU"
+      }
+    ],
+    "finding": "A determinant-line parallel transport adds no third topological option on the Z2^2 torsor: it is either trivial or the already-audited projective class."
+  },
+  "pi_flux_cellular_test": {
+    "spectrum": [
+      0.12158355756709749,
+      0.12158355756709749,
+      0.8333461009842745,
+      0.8333461009842745
+    ],
+    "multiplicities": [
+      {
+        "eigenvalue": 0.12158355756709749,
+        "multiplicity": 2
+      },
+      {
+        "eigenvalue": 0.8333461009842745,
+        "multiplicity": 2
+      }
+    ],
+    "uniform_triplet_leakage": 0.15915494309189537,
+    "finding": "The magnetic cellular Laplacian has two doubly-degenerate levels and does not preserve the uniform-plus-triplet split."
+  },
+  "spectral_flow_gate": {
+    "edge_integers_or_phases": "Spectral flow can orient or phase a chosen path between determinant fibers, but a graph of such paths is extra connection data.",
+    "closed_loop_content": "Only the gauge-invariant plaquette holonomy survives vertex rephasings, reducing again to the trivial/projective dichotomy."
+  },
+  "scientific_verdict": {
+    "cellular_Dirac": "returns the commuting factor Laplacian",
+    "eta_or_determinant_values": "return diagonal weights",
+    "determinant_connection": "returns either trivial transport or pi flux",
+    "no_go": "None of the canonical spin-structure spectral constructions selects one of the twelve outside-D8 full-M3 incidence directions.",
+    "reopening_condition": "A boundary theory must supply a non-flat, non-translation-generated graph connection with fixed edge magnitudes and sector assignment."
+  }
+}

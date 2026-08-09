@@ -1,0 +1,140 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{geometry}
+\usepackage{microtype}
+\geometry{margin=2.3cm}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{protocol}{Протокол}
+\newtheorem{nogocriterion}{Критерий провала}
+\DeclareMathOperator{\Tr}{Tr}
+
+\title{SU(5)-действие и относительный determinant:\\
+два последовательных gate-теста}
+\author{}
+\date{4 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Проверяемая задача}
+
+Предыдущий rank-selector обнаружил красивое соответствие между коэффициентами
+атласных формул и разложением
+\begin{equation}
+ \mathbf{24}=({\bf8},{\bf1})_0\oplus({\bf1},{\bf3})_0
+ \oplus({\bf1},{\bf1})_0\oplus({\bf3},{\bf2})_{-5/6}
+ \oplus(\overline{\bf3},{\bf2})_{+5/6}.
+\end{equation}
+Настоящий gate отвечает на два более строгих вопроса:
+\begin{enumerate}
+ \item выводятся ли rank-формулы из одного канонического $SU(5)$-действия;
+ \item может ли scheme-safe twisted/untwisted determinant исправить gauge-сектор.
+\end{enumerate}
+
+\section{Gate I: канонический gauge trace}
+
+В фундаментальном представлении
+\begin{equation}
+ \Tr(T_3^2)=\Tr(T_2^2)=\frac12,
+ \qquad
+ \Tr(Y^2)=\frac56.
+\end{equation}
+Поэтому один $SU(5)$-инвариантный след фиксирует
+\begin{equation}
+ k_Y=\frac53,
+ \qquad
+ \sin^2\theta_W=\frac{1}{1+k_Y}=\frac38
+\end{equation}
+на масштабе объединения. В присоединённом представлении три нормированных
+индекса также совпадают:
+\begin{equation}
+ I_3=I_2=I_1^{GUT}=5.
+\end{equation}
+
+Критическое различие состоит в том, что gauge action использует не размерность
+представления, а квадрат генератора и Dynkin-индекс. Для одного смешанного
+блока $X=({\bf3},{\bf2})_{5/6}$ получаем
+\begin{equation}
+ (I_1,I_2,I_3)=\left(\frac52,\frac32,1\right),
+\end{equation}
+а для пары $X\oplus\overline X$
+\begin{equation}
+ (I_1,I_2,I_3)=(5,3,2).
+\end{equation}
+Следовательно, rank-данные $(6,6/24)$ и gauge-данные $(5/2,3/2,1)$ являются
+разными инвариантами.
+
+Инволюция $P$ также не спасает конструкцию. Она различает только чётные блоки
+$C\oplus W\oplus Y$ и нечётные $X\oplus\overline X$. Любая функция $f(P)$
+оставляет цветовой, слабый и гиперзарядный блоки с одним весом. Добавление
+$\operatorname{ad}(Y)^2$ выделяет смешанные блоки, но по-прежнему не различает
+$C,W,Y$. Независимые проекторы на эти три сектора возвращают два свободных
+относительных gauge-веса после удаления общего масштаба.
+
+\begin{nogocriterion}[Провал rank-action]
+Канонический единый trace-action не выводит атласные rank-selector формулы.
+Явные секторные проекторы способны их закодировать, но тогда искомый selector
+вставляется в действие вручную. Rank-selector сохраняется как экономная
+representation-theoretic запись, а не как gauge-action theorem.
+\end{nogocriterion}
+
+\section{Gate II: относительный determinant}
+
+В twisted/untwisted отношении локальные heat-kernel части сокращаются. Для
+объявленной $\mathbb Z_2$-инволюции изменяются только смешанные блоки
+$X\oplus\overline X$; блоки $C,W,Y$ сокращаются между двумя ветвями. Поэтому
+любой общий determinant даёт поправку вида
+\begin{equation}
+ \Delta\boldsymbol{\alpha}^{-1}
+ =A_{rel}(5,3,2)
+\end{equation}
+в порядке $(U(1),SU(2),SU(3))$.
+
+Требуемая текущим gauge-scorecard поправка равна
+\begin{equation}
+ \Delta\boldsymbol{\alpha}^{-1}_{need}
+ =(0.3680,-0.3680,-2.4592).
+\end{equation}
+Она имеет смешанный знак, тогда как положительный relative determinant лежит
+на положительном луче $(5,3,2)$. Наилучшее положительное решение равно нулю и
+оставляет $100\%$ исходной нормы ошибки. Даже если искусственно разрешить
+произвольный общий знак, наилучшая амплитуда
+\begin{equation}
+ A_{rel}=-0.11006
+\end{equation}
+оставляет относительный $L^2$-остаток $96.3\%$.
+
+\begin{proposition}[Direction no-go]
+Минимальный $SU(5)$-adjoint relative determinant является конечным и
+scheme-safe, но его representation-fixed направление $(5,3,2)$ несовместимо
+с требуемой одновременной поправкой электрослабой и сильной связей. Этот вывод
+не зависит от общей нормировки и числа одинаковых KK-оболочек.
+\end{proposition}
+
+\section{Сохранившийся результат}
+
+Два отрицательных gate не обнуляют проделанную конструкцию:
+\begin{itemize}
+ \item $SU(5)$-разложение, anomaly-free matter package и $\mathbb Z_2$-чётности
+ остаются корректными;
+ \item rank-selector остаётся компактным языком спектральных адресов;
+ \item relative determinant остаётся чистой топологической response-величиной,
+ не зависящей от отдельного локального вычитания.
+\end{itemize}
+
+Но ни rank-action, ни минимальный adjoint determinant не являются мостом к
+текущим gauge-наблюдаемым. Следующая допустимая попытка должна либо предсказать
+новое relative-response наблюдаемое, либо заранее вывести несколько
+представлений и их неодинаковые спектры. Использование дополнительных
+мультиплетов только ради натяжения threshold-вектора запрещено.
+
+Численные протоколы сохранены в
+\texttt{s2t\_su5\_rank\_action\_gate\_results.json} и
+\texttt{s2t\_su5\_adjoint\_relative\_determinant\_results.json}.
+
+\end{document}

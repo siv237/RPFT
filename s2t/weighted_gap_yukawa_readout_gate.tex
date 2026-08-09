@@ -1,0 +1,43 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{xurl}
+\geometry{margin=2.3cm}
+\title{Gap-derived weighted \(A_3\) Yukawa gate}
+\author{}
+\date{6 августа 2026 г.}
+\begin{document}
+\maketitle
+
+Спектр каждого factor kernel аффинно нормирован в \([0,1]\). Соседние
+spectral gaps задают два веса цепи \(A_3\), а вес хорды фиксирован
+композицией \(q=p_{10}p_{21}\). Проверены три kernel, две ориентации, два
+up/down-назначения и девять экспоненциальных readout, всего \(108\) строк.
+
+Mass-only optimum использует inverse-square kernel,
+\[
+ (p_{10},p_{21},q)=\left(\frac34,\frac14,\frac3{16}\right),
+ \qquad \beta_u=\beta_d=2\pi.
+\]
+Ошибки четырёх лёгких quark ratios равны
+\[
+ (3.675,\ 4.426,\ 1.090,\ 1.315).
+\]
+Это первый tested noncommuting operator, помещающий все четыре строки в
+factor five без непрерывной подгонки.
+
+Blind CKM отрицателен:
+\[
+ |J|/J_{\rm CKM}=540.36,
+\]
+а отношения углов равны \((3.76,6.59,129.92)\). Следовательно, неравные gaps
+улучшают hierarchy, но split chain-versus-chord не создаёт CKM.
+
+Машинные результаты:
+\path{s2t_weighted_gap_yukawa_readout_audit.py} и
+\path{s2t_weighted_gap_yukawa_readout_results.json}.
+\end{document}

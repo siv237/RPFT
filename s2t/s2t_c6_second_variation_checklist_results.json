@@ -1,0 +1,160 @@
+{
+  "claim_id": "C6-DELTA2",
+  "status": "single_second_variation_calculation_decomposed_into_sixteen_open_subblocks",
+  "date": "2026-08-06",
+  "canonical_question": "Вычислить полную вторую вариацию калибровочно фиксированного определителя Максвелла--Фаддеева--Попова на L(2,1) x S1.",
+  "subblocks": [
+    {
+      "id": "A0",
+      "name_ru": "исходная схема операторного следа",
+      "source": "s2t_c6_operator_trace_skeleton_results.json",
+      "source_status": "C6_operator_trace_skeleton_built_not_closed",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "A1",
+      "name_ru": "первая вариация связности",
+      "source": "s2t_c6_l21_connection_variation_formula_results.json",
+      "source_status": "connection_variation_formula_fixed_matrix_evaluation_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "A2",
+      "name_ru": "первая вариация кривизны Риччи",
+      "source": "s2t_c6_l21_ricci_variation_formula_results.json",
+      "source_status": "ricci_variation_formula_fixed_matrix_evaluation_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "A3",
+      "name_ru": "первая вариация проектора на ко-точные формы",
+      "source": "s2t_c6_l21_projector_variation_formula_results.json",
+      "source_status": "coexact_projector_variation_formula_fixed_matrix_evaluation_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "A4",
+      "name_ru": "первая вариация гильбертовой метрики",
+      "source": "s2t_c6_l21_hilbert_variation_formula_results.json",
+      "source_status": "hilbert_inner_product_variation_formula_fixed_matrix_evaluation_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "B0",
+      "name_ru": "выбор пути второй вариации метрики",
+      "source": "s2t_c6_l21_delta2_ambient_path_formula_results.json",
+      "source_status": "delta2_ambient_linear_path_formula_fixed_operator_delta2_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "B1",
+      "name_ru": "сводная схема второй вариации",
+      "source": "s2t_c6_l21_delta2_skeleton_completion_results.json",
+      "source_status": "delta2_skeleton_phase_complete_trace_phase_open",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "B2",
+      "name_ru": "главный символ второго порядка",
+      "source": "s2t_c6_l21_delta2_principal_second_symbol_formula_results.json",
+      "source_status": "delta2_principal_second_symbol_formula_fixed_matrix_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "B3",
+      "name_ru": "вторая вариация связности",
+      "source": "s2t_c6_l21_delta2_second_connection_formula_results.json",
+      "source_status": "delta2_second_connection_formula_skeleton_fixed_delta2Gamma_expansion_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "B4",
+      "name_ru": "вторая вариация кривизны Риччи",
+      "source": "s2t_c6_l21_delta2_second_ricci_formula_results.json",
+      "source_status": "delta2_second_ricci_formula_skeleton_fixed_delta2Ricci_expansion_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "B5",
+      "name_ru": "вторая вариация проектора",
+      "source": "s2t_c6_l21_delta2_second_projector_formula_results.json",
+      "source_status": "delta2_second_projector_formula_skeleton_fixed_delta2Pi_expansion_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "B6",
+      "name_ru": "вторая вариация гильбертовой метрики",
+      "source": "s2t_c6_l21_delta2_second_hilbert_formula_results.json",
+      "source_status": "delta2_second_hilbert_formula_skeleton_fixed_basis_expansion_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "C1",
+      "name_ru": "разложение смешанной вариации связности",
+      "source": "s2t_c6_l21_delta2_gamma_expansion_formula_results.json",
+      "source_status": "delta2_Gamma_AB_expansion_formula_fixed_C11_insertion_rule_still_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "C2",
+      "name_ru": "смешанный член метрики и связности",
+      "source": "s2t_c6_l21_delta2_connection_metric_cross_ambient_formula_results.json",
+      "source_status": "delta2_connection_metric_cross_ambient_operator_formula_fixed_C11_integrals_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "C3",
+      "name_ru": "произведение первых вариаций связности",
+      "source": "s2t_c6_l21_delta2_connection_product_gamma_inserted_results.json",
+      "source_status": "delta2_connection_product_gamma_inserted_Ctensor_formula_fixed_integrals_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    },
+    {
+      "id": "D1",
+      "name_ru": "классификация локальных контрчленов",
+      "source": "s2t_c6_l21_delta2_local_counterterm_classifier_results.json",
+      "source_status": "delta2_local_counterterm_classifier_skeleton_fixed_finite_residual_proof_missing",
+      "formula_registered": true,
+      "matrix_evaluation_complete": false,
+      "canonical_status": "формула зафиксирована; матричное вычисление открыто"
+    }
+  ],
+  "summary": {
+    "registered_subblocks": 16,
+    "formula_level_complete": 16,
+    "matrix_level_complete": 0,
+    "independent_research_results": 1
+  },
+  "reporting_rule": "Подблоки A0--D1 являются строками одного вычисления и не должны учитываться как независимые физические результаты.",
+  "closure_condition": "Для закрытия C6 требуется единая самосопряжённая матрица второй вариации, её след на проекции P02, полный вклад духов и доказанная классификация локальных и конечных частей."
+}

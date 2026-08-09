@@ -1,0 +1,140 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2.3cm}
+\setlength{\emergencystretch}{2em}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{nogocriterion}{Критерий провала}
+
+\title{Гипотеза производных секторных мер\\
+Один parent trace и разные типы наблюдения}
+\author{}
+\date{4 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Гипотеза}
+
+Вторая радикальная идея состоит в том, что электромагнитный, лептонный, нейтринный и family-сектора не обязаны использовать одну и ту же численную нормировку. Но это допустимо только если разные меры являются производными одного parent object, а не независимыми коэффициентами.
+
+\section{Примитивный multi-trace no-go}
+
+Пусть внутренняя algebra полупроста:
+\[
+\mathcal A=\bigoplus_{i=1}^k M_{n_i}(\mathbb C).
+\]
+Всякий положительный trace имеет вид
+\[
+\tau(a)=\sum_{i=1}^k w_i\operatorname{Tr}_i(a_i),
+\qquad
+w_i>0.
+\]
+Даже после условия \(\tau(1)=1\) остаются \(k-1\) свободных относительных весов.
+
+\begin{nogocriterion}[Независимые секторные traces]
+Если разные меры вводятся как примитивные traces на независимых central blocks, они являются скрытыми непрерывными параметрами. Такая версия второй гипотезы закрывается отрицательно.
+\end{nogocriterion}
+
+Для трёх blocks, условно соответствующих color, weak и singlet-направлениям, остаются две свободные ручки. Это не лучше прежней подгонки.
+
+\section{Один trace, разные reductions}
+
+Допустимая версия использует один parent trace и фиксированные projectors. Для projector \(P\) существуют разные, но не взаимозаменяемые типы наблюдения:
+\begin{align}
+\tau_{loop}(O)&=\operatorname{Tr}(POP),\\
+\tau_{avg}(O)&=\frac{\operatorname{Tr}(POP)}{\operatorname{Tr}P},\\
+\tau_{state}(O)&=\langle\psi,O\psi\rangle,
+\qquad \|\psi\|=1.
+\end{align}
+Первый trace суммирует внутренние состояния в петле. Второй усредняет по сектору. Третий относится к одной нормированной частице. Голономный период \(\oint A\) является отдельной топологической величиной и вообще не является Hilbert trace.
+
+Выбор между этими формами определяется типом observable, а не требуемым числом.
+
+\section{Family example}
+
+В четырёхмерном spin-menu projectors
+\[
+P_1=\frac14J,
+\qquad
+P_3=I-\frac14J
+\]
+имеют ранги один и три. Поэтому loop trace видит
+\[
+\operatorname{Tr}P_1=1,
+\qquad
+\operatorname{Tr}P_3=3,
+\]
+а normalized sector average даёт единичный вес в обоих случаях.
+
+\begin{proposition}[Различие multiplicity и state normalization]
+Один и тот же parent trace без свободного коэффициента даёт вес три для family-loop и вес один для нормированного family-state. Различие определяется observable type.
+\end{proposition}
+
+Это объясняет, почему требования ``везде использовать одну норму'' и ``везде сохранять rank'' одинаково неверны.
+
+\section{Gauge example из \(SU(5)\)}
+
+В fundamental representation
+\[
+Y=\operatorname{diag}\left(-\frac13,-\frac13,-\frac13,
+\frac12,\frac12\right)
+\]
+имеет
+\[
+\operatorname{Tr}_{\mathbf5}Y^2=\frac56.
+\]
+Для стандартно нормированного nonabelian generator
+\[
+\operatorname{Tr}_{\mathbf5}T^2=\frac12.
+\]
+Поэтому parent \(SU(5)\)-trace фиксирует
+\[
+k_Y=\frac{\operatorname{Tr}Y^2}{\operatorname{Tr}T^2}
+=\frac53
+\]
+и, при равенстве unified couplings,
+\[
+\sin^2\theta_W(\Lambda)=\frac38.
+\]
+
+Для полного chiral package \(\mathbf{10}\oplus\overline{\mathbf5}\) subgroup indices равны
+\[
+I_{SU(3)}=I_{SU(2)}=I_{U(1)}^{GUT}=2.
+\]
+Здесь разные subgroup traces действительно являются разными тенями одного representation trace, а их относительные веса не подгоняются.
+
+\section{Почему это не спасает старую \(\tau\)-формулу}
+
+Ненормированная constant mode имеет нормы
+\[
+\|1_{\mathbb{RP}^3}\|^2=\pi^2,
+\qquad
+\|1_{S^1}\|^2=2\pi.
+\]
+Но для нормированных particle states
+\[
+\int_{\mathbb{RP}^3}|\widehat1|^2=1,
+\qquad
+\int_{S^1}|\widehat1|^2=1.
+\]
+Следовательно, raw volumes допустимы в background action или loop sum, но не возникают автоматически в mass matrix element одной частицы. Вторая гипотеза объясняет прежний конфликт категорий, но не возвращает seed \(\pi^2+2\pi+2/3\).
+
+\section{Вердикт}
+
+Вторая сумасбродная гипотеза проходит в ограниченной форме:
+\begin{quote}
+Разные эффективные меры допустимы, если они получены из одного parent trace фиксированными projectors и заранее определённым типом observable.
+\end{quote}
+
+Она закрывается отрицательно в форме ``каждому сектору свой trace''. Она положительно объясняет family multiplicity и \(SU(5)\) gauge normalization, но пока не даёт нового low-energy prediction.
+
+Следующий gate должен собрать menu projector, rank-one family operator и \(SU(5)\) representation trace в одной tensor-product algebra и проверить, действительно ли одна normalized parent state порождает обе структуры без смены соглашений.
+
+\end{document}

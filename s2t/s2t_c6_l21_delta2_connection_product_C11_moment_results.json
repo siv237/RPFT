@@ -1,0 +1,176 @@
+{
+  "status": "delta2_connection_product_C11_moment_table_computed_product_subslot_only",
+  "inputs": [
+    "s2t_c6_l21_delta2_connection_product_ambient_simplified_results.json",
+    "s2t_c6_l21_delta2_c11_setup_results.json"
+  ],
+  "computed_files": [
+    "s2t_c6_l21_delta2_connection_product_moment_table_data.json"
+  ],
+  "basis_conventions": {
+    "Killing_basis": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ],
+    "strain_basis_raw_trace": "Dii diagonal matrices and Sij symmetric off-diagonal matrices with entries 1 in ij,ji",
+    "strain_labels": [
+      "D00",
+      "D11",
+      "D22",
+      "D33",
+      "S01",
+      "S02",
+      "S03",
+      "S12",
+      "S13",
+      "S23"
+    ],
+    "strain_norms_trace": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2"
+    ],
+    "normalization_warning": "This table uses the raw trace basis for Sym^2(R4). Off-diagonal Sij have trace norm squared 2; convert by scaling rows/columns if an orthonormal strain basis is required."
+  },
+  "moment_formula": {
+    "overlap": "q_{Omega,A}(x)=<Omega x,(A x)^T>=<Omega x,A x>",
+    "raw_S3_moment": "Integral_S3 q_{Omega,A} q_{Lambda,B} dmu_norm = Tr(sym(Omega^T A) sym(Lambda^T B))/12",
+    "quotient_Killing_normalized_moment": "Integral_L21 <e_Omega,a_A><a_B,e_Lambda> dV = Tr(sym(Omega^T A) sym(Lambda^T B))/6",
+    "product_entry": "C_rs(A,B)=-12*(M(r,A;s,B)+M(r,B;s,A))"
+  },
+  "results": {
+    "symmetric_strain_pairs": 55,
+    "all_pairs_nonzero": true,
+    "rank_distribution": {
+      "3": 4,
+      "1": 6,
+      "4": 27,
+      "2": 12,
+      "5": 6
+    },
+    "nonzero_raw_entries_total": 180,
+    "sample_pair_matrices": [
+      {
+        "pair": "D00,D00",
+        "nonzero_count": 3,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "-2"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "-2"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "-2"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D11",
+        "nonzero_count": 1,
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D22",
+        "nonzero_count": 1,
+        "first_entries": [
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D33",
+        "nonzero_count": 1,
+        "first_entries": [
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "pair": "D00,S01",
+        "nonzero_count": 4,
+        "first_entries": [
+          {
+            "row": "E02",
+            "col": "E12",
+            "value": "-1"
+          },
+          {
+            "row": "E03",
+            "col": "E13",
+            "value": "-1"
+          },
+          {
+            "row": "E12",
+            "col": "E02",
+            "value": "-1"
+          },
+          {
+            "row": "E13",
+            "col": "E03",
+            "value": "-1"
+          }
+        ]
+      }
+    ]
+  },
+  "interpretation": [
+    "The product subslot of C_conn2[1,1] is not zero in the raw ambient strain basis.",
+    "Every one of the 55 symmetric strain pairs has at least one nonzero 6x6 entry in the product subslot.",
+    "The observed ranks are low to moderate (1 through 5), matching the rank-two fiber structure before integration but not collapsing to a scalar multiple of identity.",
+    "This does not close C6 because single Gamma_AB, inverse-metric/first-connection, Ricci, projector, Hilbert/basis, and local/compensation pieces are still missing."
+  ],
+  "pass_fail": [
+    {
+      "test": "moment_formula_derived",
+      "status": "pass",
+      "meaning": "The needed quartic S3/RP3 moments reduce to trace contractions."
+    },
+    {
+      "test": "product_C11_subslot_table_computed",
+      "status": "pass",
+      "meaning": "The 55 raw-basis product matrices are computed and stored sparsely."
+    },
+    {
+      "test": "product_subslot_vanishes",
+      "status": "fail",
+      "meaning": "All 55 symmetric strain pairs have nonzero product-subslot entries."
+    },
+    {
+      "test": "full_C_conn2_C11_computed",
+      "status": "not_yet",
+      "meaning": "The product table is only one of the second-connection slots."
+    }
+  ],
+  "plain_language": "We finally turned this one gear against the six Killing rulers. It moves: every strain-pair gives a nonzero product-piece matrix. That is important, but it is only one gear, not the whole machine.",
+  "verdict": "The Gamma_A Gamma_B product subslot of C_conn2[1,1] has now been evaluated as a symbolic finite moment table in the raw Sym^2(R4) strain basis. The product subslot is nonzero for all 55 symmetric deformation pairs, with matrix ranks distributed as recorded. This is the first actual C11 subslot table in the delta2 trace sprint, but no determinant conclusion follows until the remaining connection slots and other delta2 operator blocks are combined in the same convention."
+}

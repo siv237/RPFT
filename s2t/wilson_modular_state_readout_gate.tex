@@ -1,0 +1,92 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{xurl}
+\geometry{margin=2.3cm}
+\DeclareMathOperator{\Tr}{Tr}
+
+\title{Wilson-state и модульная карта чтения\\
+следующий predictive gate S2T}
+\author{}
+\date{6 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Минимальный класс состояний}
+
+Wilson saddle фиксирует угол и осевую орбиту, но не состояние. Поэтому
+проверен минимальный класс
+\[
+ \rho=\frac{e^{-H}}{\Tr e^{-H}},
+ \qquad
+ H=B\bigl(L_k+sA_{\hat n}\bigr)B^\dagger,
+\]
+где \(k\) пробегает три ранее объявленных factor-kernel, \(s=\pm1\), а две
+оси являются представителями одной остаточной орбиты. Положено
+\(\beta=1\), а singlet energy равна нулю. Это test-class, а не выведенный
+вакуум.
+
+\section{Корреляция и запутанность}
+
+Все двенадцать состояний нефакторизуемы. Mutual information положительна.
+Однако PPT-negativity зависит от знака:
+\[
+ N_{\mathrm{PPT}}=0\quad(s=+1),
+\qquad
+ N_{\mathrm{PPT}}>0\quad(s=-1).
+\]
+Следовательно, Wilson-угол создаёт корреляции, но квантовая запутанность не
+является неизбежной до вывода знака из parent action.
+
+\section{Модульная подалгебра}
+
+Канонический проектор \(P_3\) коммутирует с \(\rho\), поэтому блок
+\[
+ P_3M_4P_3\oplus\mathbb CP_1
+\]
+модульно инвариантен и допускает сохраняющее состояние условное ожидание.
+Но singlet не исчезает. Для получения чистого \(M_3\)-мира требуется
+нелинейное conditioning, отбрасывающее от \(18.1\%\) до \(31.7\%\)
+вероятности состояния.
+
+Кроме того, невырожденное состояние допускает несколько спектральных
+block-partition. Проверены все \(48\) rank-three spectral complement:
+\[
+ [\Phi(T_{\mathbb{RP}^3}),\Phi(T_{S^1})]=0
+\]
+с максимальной численной ошибкой \(5.7\cdot10^{-14}\). Минимальный
+Wilson-state не создаёт CKM через спектральный readout.
+
+\section{Ориентированная Wilson-фаза}
+
+Вещественная симметризация \(A_{\hat n}\) удаляет ориентацию. Поэтому также
+проверены эрмитовы генераторы
+\[
+ H_{\mathrm{mod}}=L_k+s\theta\,i[\hat n]_\times
+\]
+и полный ориентированный эрмитов Wilson-блок. Все \(24\) sector-pair дают
+полное трёхсемейное overlap без нулевых элементов. Но во всех случаях
+\[
+ J=0
+\]
+с точностью лучше \(3\cdot10^{-17}\). Комплексность создаёт full mixing, но
+общая антиунитарная симметрия запрещает CP.
+
+\section{Вердикт}
+
+Предсказанный следующий механизм уточнён. Недостаточно выбрать
+нефакторизуемое или даже запутанное состояние. Требуется относительный
+модульный коцикл up/down-секторов, который не устраняется общей вещественной
+структурой. Его знак, фаза, \(\beta\) и singlet energy должны следовать из
+одного parent action до сравнения с CKM.
+
+Машинный отчёт сохранён в
+\path{s2t_wilson_modular_state_readout_audit.py} и
+\path{s2t_wilson_modular_state_readout_results.json}.
+
+\end{document}

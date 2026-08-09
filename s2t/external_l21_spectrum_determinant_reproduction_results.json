@@ -1,0 +1,472 @@
+{
+  "status": "external_L21_untwisted_spectrum_and_scalar_determinant_reproduced",
+  "date": "2026-08-03",
+  "external_sources": [
+    {
+      "source": "Ikeda and Yamamoto, On the spectra of 3-dimensional lens spaces",
+      "role": "classical lens-space spectral framework"
+    },
+    {
+      "source": "Lauret, The spectrum on p-forms of a lens space, arXiv:1604.02471",
+      "role": "Hodge-Laplace eigenvalues and invariant-representation multiplicities"
+    },
+    {
+      "source": "Nash and O'Connor, hep-th/9212022",
+      "role": "explicit zero/one-form lens determinant technology and twisted p=2 check"
+    },
+    {
+      "source": "Dowker, Lens space determinants, arXiv:1301.0086",
+      "role": "untwisted minimally coupled scalar determinant on projective three-space"
+    },
+    {
+      "source": "David and Mukherjee, arXiv:2105.03662",
+      "role": "gauge-fixed p-form partition function in coexact and scalar determinant variables"
+    }
+  ],
+  "conventions": {
+    "space": "L(2,1)=RP3=S3/{+1,-1}",
+    "bundle_for_Maxwell": "trivial_untwisted",
+    "scalar_zero_mode": "removed_from_det_prime",
+    "laplacian_radius": "unit_round_metric",
+    "projection": "multiplicity=(identity_character plus central_character)/2"
+  },
+  "untwisted_scalar_shells": [
+    {
+      "n": 0,
+      "eigenvalue": 0,
+      "s3_multiplicity": 1,
+      "central_character": 1,
+      "l21_multiplicity": 1
+    },
+    {
+      "n": 1,
+      "eigenvalue": 3,
+      "s3_multiplicity": 4,
+      "central_character": -4,
+      "l21_multiplicity": 0
+    },
+    {
+      "n": 2,
+      "eigenvalue": 8,
+      "s3_multiplicity": 9,
+      "central_character": 9,
+      "l21_multiplicity": 9
+    },
+    {
+      "n": 3,
+      "eigenvalue": 15,
+      "s3_multiplicity": 16,
+      "central_character": -16,
+      "l21_multiplicity": 0
+    },
+    {
+      "n": 4,
+      "eigenvalue": 24,
+      "s3_multiplicity": 25,
+      "central_character": 25,
+      "l21_multiplicity": 25
+    },
+    {
+      "n": 5,
+      "eigenvalue": 35,
+      "s3_multiplicity": 36,
+      "central_character": -36,
+      "l21_multiplicity": 0
+    },
+    {
+      "n": 6,
+      "eigenvalue": 48,
+      "s3_multiplicity": 49,
+      "central_character": 49,
+      "l21_multiplicity": 49
+    },
+    {
+      "n": 7,
+      "eigenvalue": 63,
+      "s3_multiplicity": 64,
+      "central_character": -64,
+      "l21_multiplicity": 0
+    },
+    {
+      "n": 8,
+      "eigenvalue": 80,
+      "s3_multiplicity": 81,
+      "central_character": 81,
+      "l21_multiplicity": 81
+    },
+    {
+      "n": 9,
+      "eigenvalue": 99,
+      "s3_multiplicity": 100,
+      "central_character": -100,
+      "l21_multiplicity": 0
+    },
+    {
+      "n": 10,
+      "eigenvalue": 120,
+      "s3_multiplicity": 121,
+      "central_character": 121,
+      "l21_multiplicity": 121
+    }
+  ],
+  "untwisted_coexact_one_form_shells": [
+    {
+      "n": 1,
+      "eigenvalue": 4,
+      "s3_multiplicity": 6,
+      "central_character": 6,
+      "l21_multiplicity": 6
+    },
+    {
+      "n": 2,
+      "eigenvalue": 9,
+      "s3_multiplicity": 16,
+      "central_character": -16,
+      "l21_multiplicity": 0
+    },
+    {
+      "n": 3,
+      "eigenvalue": 16,
+      "s3_multiplicity": 30,
+      "central_character": 30,
+      "l21_multiplicity": 30
+    },
+    {
+      "n": 4,
+      "eigenvalue": 25,
+      "s3_multiplicity": 48,
+      "central_character": -48,
+      "l21_multiplicity": 0
+    },
+    {
+      "n": 5,
+      "eigenvalue": 36,
+      "s3_multiplicity": 70,
+      "central_character": 70,
+      "l21_multiplicity": 70
+    },
+    {
+      "n": 6,
+      "eigenvalue": 49,
+      "s3_multiplicity": 96,
+      "central_character": -96,
+      "l21_multiplicity": 0
+    },
+    {
+      "n": 7,
+      "eigenvalue": 64,
+      "s3_multiplicity": 126,
+      "central_character": 126,
+      "l21_multiplicity": 126
+    },
+    {
+      "n": 8,
+      "eigenvalue": 81,
+      "s3_multiplicity": 160,
+      "central_character": -160,
+      "l21_multiplicity": 0
+    },
+    {
+      "n": 9,
+      "eigenvalue": 100,
+      "s3_multiplicity": 198,
+      "central_character": 198,
+      "l21_multiplicity": 198
+    },
+    {
+      "n": 10,
+      "eigenvalue": 121,
+      "s3_multiplicity": 240,
+      "central_character": -240,
+      "l21_multiplicity": 0
+    }
+  ],
+  "twisted_control": {
+    "scalar_shells": [
+      {
+        "n": 0,
+        "eigenvalue": 0,
+        "s3_multiplicity": 1,
+        "central_character": 1,
+        "l21_multiplicity": 0
+      },
+      {
+        "n": 1,
+        "eigenvalue": 3,
+        "s3_multiplicity": 4,
+        "central_character": -4,
+        "l21_multiplicity": 4
+      },
+      {
+        "n": 2,
+        "eigenvalue": 8,
+        "s3_multiplicity": 9,
+        "central_character": 9,
+        "l21_multiplicity": 0
+      },
+      {
+        "n": 3,
+        "eigenvalue": 15,
+        "s3_multiplicity": 16,
+        "central_character": -16,
+        "l21_multiplicity": 16
+      },
+      {
+        "n": 4,
+        "eigenvalue": 24,
+        "s3_multiplicity": 25,
+        "central_character": 25,
+        "l21_multiplicity": 0
+      },
+      {
+        "n": 5,
+        "eigenvalue": 35,
+        "s3_multiplicity": 36,
+        "central_character": -36,
+        "l21_multiplicity": 36
+      },
+      {
+        "n": 6,
+        "eigenvalue": 48,
+        "s3_multiplicity": 49,
+        "central_character": 49,
+        "l21_multiplicity": 0
+      },
+      {
+        "n": 7,
+        "eigenvalue": 63,
+        "s3_multiplicity": 64,
+        "central_character": -64,
+        "l21_multiplicity": 64
+      },
+      {
+        "n": 8,
+        "eigenvalue": 80,
+        "s3_multiplicity": 81,
+        "central_character": 81,
+        "l21_multiplicity": 0
+      },
+      {
+        "n": 9,
+        "eigenvalue": 99,
+        "s3_multiplicity": 100,
+        "central_character": -100,
+        "l21_multiplicity": 100
+      },
+      {
+        "n": 10,
+        "eigenvalue": 120,
+        "s3_multiplicity": 121,
+        "central_character": 121,
+        "l21_multiplicity": 0
+      }
+    ],
+    "coexact_one_form_shells": [
+      {
+        "n": 1,
+        "eigenvalue": 4,
+        "s3_multiplicity": 6,
+        "central_character": 6,
+        "l21_multiplicity": 0
+      },
+      {
+        "n": 2,
+        "eigenvalue": 9,
+        "s3_multiplicity": 16,
+        "central_character": -16,
+        "l21_multiplicity": 16
+      },
+      {
+        "n": 3,
+        "eigenvalue": 16,
+        "s3_multiplicity": 30,
+        "central_character": 30,
+        "l21_multiplicity": 0
+      },
+      {
+        "n": 4,
+        "eigenvalue": 25,
+        "s3_multiplicity": 48,
+        "central_character": -48,
+        "l21_multiplicity": 48
+      },
+      {
+        "n": 5,
+        "eigenvalue": 36,
+        "s3_multiplicity": 70,
+        "central_character": 70,
+        "l21_multiplicity": 0
+      },
+      {
+        "n": 6,
+        "eigenvalue": 49,
+        "s3_multiplicity": 96,
+        "central_character": -96,
+        "l21_multiplicity": 96
+      },
+      {
+        "n": 7,
+        "eigenvalue": 64,
+        "s3_multiplicity": 126,
+        "central_character": 126,
+        "l21_multiplicity": 0
+      },
+      {
+        "n": 8,
+        "eigenvalue": 81,
+        "s3_multiplicity": 160,
+        "central_character": -160,
+        "l21_multiplicity": 160
+      },
+      {
+        "n": 9,
+        "eigenvalue": 100,
+        "s3_multiplicity": 198,
+        "central_character": 198,
+        "l21_multiplicity": 0
+      },
+      {
+        "n": 10,
+        "eigenvalue": 121,
+        "s3_multiplicity": 240,
+        "central_character": -240,
+        "l21_multiplicity": 240
+      }
+    ],
+    "warning": "For p=2 the Nash--O'Connor group average includes the nontrivial flat character. It selects the parity opposite to the untwisted Maxwell bundle and its determinant must not be substituted directly into the standard Maxwell sector."
+  },
+  "internal_coexact_comparison": [
+    {
+      "n": 1,
+      "external_projection_eigenvalue": 4,
+      "internal_eigenvalue": 4,
+      "external_projection_multiplicity": 6,
+      "internal_multiplicity": 6,
+      "match": true
+    },
+    {
+      "n": 2,
+      "external_projection_eigenvalue": 9,
+      "internal_eigenvalue": 9,
+      "external_projection_multiplicity": 0,
+      "internal_multiplicity": 0,
+      "match": true
+    },
+    {
+      "n": 3,
+      "external_projection_eigenvalue": 16,
+      "internal_eigenvalue": 16,
+      "external_projection_multiplicity": 30,
+      "internal_multiplicity": 30,
+      "match": true
+    },
+    {
+      "n": 4,
+      "external_projection_eigenvalue": 25,
+      "internal_eigenvalue": 25,
+      "external_projection_multiplicity": 0,
+      "internal_multiplicity": 0,
+      "match": true
+    },
+    {
+      "n": 5,
+      "external_projection_eigenvalue": 36,
+      "internal_eigenvalue": 36,
+      "external_projection_multiplicity": 70,
+      "internal_multiplicity": 70,
+      "match": true
+    },
+    {
+      "n": 6,
+      "external_projection_eigenvalue": 49,
+      "internal_eigenvalue": 49,
+      "external_projection_multiplicity": 0,
+      "internal_multiplicity": 0,
+      "match": true
+    },
+    {
+      "n": 7,
+      "external_projection_eigenvalue": 64,
+      "internal_eigenvalue": 64,
+      "external_projection_multiplicity": 126,
+      "internal_multiplicity": 126,
+      "match": true
+    },
+    {
+      "n": 8,
+      "external_projection_eigenvalue": 81,
+      "internal_eigenvalue": 81,
+      "external_projection_multiplicity": 0,
+      "internal_multiplicity": 0,
+      "match": true
+    },
+    {
+      "n": 9,
+      "external_projection_eigenvalue": 100,
+      "internal_eigenvalue": 100,
+      "external_projection_multiplicity": 198,
+      "internal_multiplicity": 198,
+      "match": true
+    },
+    {
+      "n": 10,
+      "external_projection_eigenvalue": 121,
+      "internal_eigenvalue": 121,
+      "external_projection_multiplicity": 0,
+      "internal_multiplicity": 0,
+      "match": true
+    }
+  ],
+  "determinant_reproduction": {
+    "scalar_zeta_zero": -1.0,
+    "scalar_zeta_prime_zero": -0.6951703617566011,
+    "scalar_series_terms": 52,
+    "dowker_reported_scalar_zeta_prime_zero": -0.695171,
+    "dowker_absolute_difference": 6.382433989690318e-07,
+    "scalar_logdet_prime": 0.6951703617566011,
+    "coexact_zeta_zero": 1.0,
+    "coexact_zeta_prime_zero": 1.802284458764508,
+    "coexact_logdet": -1.802284458764508,
+    "full_one_form_zeta_zero": 0.0,
+    "nash_twisted_coexact_zeta_prime_zero": 1.7516758458206099
+  },
+  "maxwell_bookkeeping": {
+    "identity": "log det' Delta1 = log det Delta1_coex + log det' Delta0",
+    "standard_FP_Gamma_nonzero": "1/2 log det Delta1_coex - 1/2 log det' Delta0",
+    "standard_FP_Gamma_nonzero_value_unit_RP3": -1.2487274102605546,
+    "consequence": "The external untwisted spectrum independently reproduces the scalar half-determinant residual. It does not support complete cancellation of the nonzero scalar tower."
+  },
+  "checks": {
+    "all_internal_coexact_shells_match": true,
+    "first_scalar_multiplicities": [
+      1,
+      0,
+      9,
+      0,
+      25
+    ],
+    "first_coexact_multiplicities": [
+      6,
+      0,
+      30,
+      0,
+      70
+    ],
+    "dowker_scalar_reproduced_within_1e_6": true,
+    "hodge_zeta_zero_consistency": true
+  },
+  "theory_effect": {
+    "lens_space_spectral_foundation": "strengthened",
+    "internal_coexact_multiplicity_table": "externally_reproduced",
+    "standard_FP_scalar_half_residual": "independently_confirmed",
+    "exact_pi4_absorption": "not_reopened",
+    "S_vac": "remains_conditional"
+  },
+  "next_external_steps": [
+    "reproduce the untwisted coexact determinant by a second heat-kernel or contour method",
+    "extend the calculation from RP3 to RP3 x S1 with explicit Matsubara sums",
+    "separate zero-temperature local terms from finite winding terms",
+    "compare the resulting Maxwell free energy with the project's T_coex_RP3 normalization"
+  ],
+  "verdict": "The untwisted L(2,1) scalar and coexact one-form spectra are independently reproduced by central-character projection and match the internal shell table exactly. The minimally coupled scalar determinant reproduces Dowker's published projective-space value within 1e-6. The same calculation confirms, rather than removes, the standard-FP scalar half-determinant residual. Nash--O'Connor's p=2 determinant formulas are a useful twisted control but are not the untwisted Maxwell determinant. The external gate therefore strengthens the spectral foundation while leaving exact pi^-4 absorption downgraded."
+}

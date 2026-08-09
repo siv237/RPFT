@@ -1,0 +1,86 @@
+{
+  "status": "derived_multi_trace_scheme_passes_as_measure_bookkeeping_primitive_sector_traces_fail_hidden_weight_gate",
+  "date": "2026-08-04",
+  "hypothesis": "Different sectors may use different measures because they are different reductions of one parent state/trace, not because each sector owns an independent normalization.",
+  "primitive_multi_trace_no_go": {
+    "algebra": "A=direct sum_i M_ni(C)",
+    "general_positive_trace": "tau(a)=sum_i w_i Tr_i(a_i), w_i>0",
+    "example_block_dimensions": [
+      3,
+      2,
+      1
+    ],
+    "primitive_weights": 3,
+    "free_weights_after_tau(1)=1": 2,
+    "verdict": "Independent sector traces reintroduce continuous hidden parameters and are not an acceptable unification mechanism."
+  },
+  "derived_trace_dictionary": {
+    "loop_trace": "Tr(P O P): sums over all internal states and retains rank/multiplicity",
+    "normalized_sector_average": "Tr(P O P)/Tr(P): describes an average per normalized state and removes rank",
+    "pure_state_expectation": "<psi,O psi> with ||psi||=1",
+    "topological_period": "integral of a connection around a quantized cycle; this is not a Hilbert trace",
+    "rule": "The observable type fixes which reduction is used; choosing between them after seeing a target is forbidden."
+  },
+  "family_menu_example": {
+    "loop_weights": {
+      "singlet": 1.0,
+      "triplet": 3.0
+    },
+    "normalized_state_weights": {
+      "singlet": 1.0,
+      "triplet": 1.0
+    },
+    "finding": "The same parent trace counts three family modes in a loop but gives unit weight to a normalized state. The difference is discrete and not a fitted coefficient."
+  },
+  "SU5_gauge_trace": {
+    "Tr5_Y2": 0.8333333333333333,
+    "Tr5_nonabelian_generator_squared": 0.5,
+    "hypercharge_normalization_kY": 1.6666666666666665,
+    "physical_gY2_over_unified_g2": 0.6000000000000001,
+    "sin2_thetaW_at_unification": 0.37500000000000006,
+    "one_generation_indices": {
+      "SU3": 2.0,
+      "SU2": 2.0,
+      "U1_GUT_normalized": 1.9999999999999998
+    },
+    "finding": "One SU5 representation trace induces different-looking subgroup traces but fixes their relative normalization: all one-generation indices equal 2 and kY=5/3."
+  },
+  "old_normalization_conflict": {
+    "raw_background_norms": {
+      "RP3": 9.869604401089358,
+      "S1": 6.283185307179586
+    },
+    "normalized_constant_matrix_elements": {
+      "RP3": 1.0000000000000002,
+      "S1": 1.0
+    },
+    "finding": "Raw volumes belong to unnormalized background/loop norms. A normalized particle matrix element gives 1 on each factor. The multi-trace principle therefore does not rescue the old tau seed; it explains why using raw volumes there was a category error."
+  },
+  "gates": {
+    "independent_sector_measures": {
+      "passes": false,
+      "finding": "a semisimple algebra with three blocks has two free normalized central weights"
+    },
+    "one_parent_trace_with_projectors": {
+      "passes": true,
+      "finding": "sector weights become fixed ranks, representation indices or normalized expectations"
+    },
+    "SU5_relative_gauge_normalization": {
+      "passes": true,
+      "finding": "one parent trace yields kY=5/3 and equal generation indices (2,2,2)"
+    },
+    "old_tau_volume_seed": {
+      "passes": false,
+      "finding": "particle-state normalization removes the RP3 and S1 volume factors"
+    },
+    "new_empirical_prediction": {
+      "passes": false,
+      "finding": "the scheme organizes measures but does not yet predict a new low-energy observable"
+    }
+  },
+  "scientific_verdict": {
+    "positive": "The second wild hypothesis survives in a restricted form: different effective measures can be derived from one parent trace by observable type and fixed projectors.",
+    "negative": "Primitive independent traces are hidden parameters, and the construction does not restore the rejected tau/Svac formulas.",
+    "next_gate": "Build one total algebra A_menu tensor End(10+bar5) and verify that the family rank-one operator and SU5 gauge kinetic trace arise from the same normalized parent state."
+  }
+}

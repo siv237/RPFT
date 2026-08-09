@@ -1,0 +1,772 @@
+{
+  "status": "direct_relative_cocycle_is_a_rephasing_no_go_while_one_sided_BCH_backreaction_creates_CP_but_overshoots_and_requires_a_new_sector_asymmetry",
+  "date": "2026-08-06",
+  "blind_protocol": {
+    "CKM_loaded_during_construction": false,
+    "input_hamiltonians": "the two oriented Wilson classes, three frozen factor kernels and four relative orientation pairs",
+    "BCH_coefficient": "canonical one-half commutator coefficient",
+    "post_blind_control": 3.12e-05
+  },
+  "base_gate": {
+    "sector_pairs": 24,
+    "all_base_CP_conserving": true
+  },
+  "direct_cocycle_gate": {
+    "formula": "V(t)=diag(exp(-it h_u)) V diag(exp(+it h_d)) in the two eigenbases",
+    "tested_times": [
+      0.5,
+      1.0,
+      0.3989625047206992
+    ],
+    "tests": 72,
+    "maximum_Jarlskog_change": 2.0816681711721685e-17,
+    "theorem": "The direct finite-dimensional Connes cocycle acts as row and column rephasing on the mixing matrix, so every rephasing invariant including J is unchanged.",
+    "finding": "A direct relative modular cocycle cannot turn a CP-conserving overlap into CKM CP violation."
+  },
+  "BCH_commutator_gate": {
+    "relative_operator": "Q=(i/2)[H_u,H_d]",
+    "rows": [
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.72122326249136,
+        "minimum_absolute_overlap": 0.041750937363281,
+        "Jarlskog": 8.673617379884035e-19
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 4.72122326249136,
+        "minimum_absolute_overlap": 0.16708676745584375,
+        "Jarlskog": -0.03431369731948616
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 4.72122326249136,
+        "minimum_absolute_overlap": 0.1670867674558438,
+        "Jarlskog": 0.03431369731948623
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.514409832105787,
+        "minimum_absolute_overlap": 0.18078737662400604,
+        "Jarlskog": 4.163336342344337e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 4.514409832105787,
+        "minimum_absolute_overlap": 0.030505356398567204,
+        "Jarlskog": -0.007314879032173686
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 4.514409832105787,
+        "minimum_absolute_overlap": 0.030505356398567357,
+        "Jarlskog": 0.007314879032173749
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.514409832105787,
+        "minimum_absolute_overlap": 0.18078737662400604,
+        "Jarlskog": 4.163336342344337e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 4.514409832105787,
+        "minimum_absolute_overlap": 0.03050535639856738,
+        "Jarlskog": -0.0073148790321737305
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 4.514409832105787,
+        "minimum_absolute_overlap": 0.030505356398567322,
+        "Jarlskog": 0.007314879032173748
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.72122326249136,
+        "minimum_absolute_overlap": 0.041750937363281136,
+        "Jarlskog": 1.734723475976807e-18
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 4.72122326249136,
+        "minimum_absolute_overlap": 0.16708676745584397,
+        "Jarlskog": -0.03431369731948624
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 4.72122326249136,
+        "minimum_absolute_overlap": 0.1670867674558438,
+        "Jarlskog": 0.03431369731948625
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.472275734728069,
+        "minimum_absolute_overlap": 0.14936356497263717,
+        "Jarlskog": 1.734723475976807e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 4.472275734728069,
+        "minimum_absolute_overlap": 0.053809478951050614,
+        "Jarlskog": -0.013118946417561922
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 4.472275734728069,
+        "minimum_absolute_overlap": 0.053809478951050586,
+        "Jarlskog": 0.013118946417561892
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.445147828111693,
+        "minimum_absolute_overlap": 0.18788717956042217,
+        "Jarlskog": 1.734723475976807e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 4.445147828111693,
+        "minimum_absolute_overlap": 0.005038414262239034,
+        "Jarlskog": 0.0012085045154599837
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 4.445147828111693,
+        "minimum_absolute_overlap": 0.005038414262238997,
+        "Jarlskog": -0.001208504515459981
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.445147828111693,
+        "minimum_absolute_overlap": 0.187887179560422,
+        "Jarlskog": -2.0816681711721685e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 4.445147828111693,
+        "minimum_absolute_overlap": 0.005038414262238975,
+        "Jarlskog": 0.001208504515459988
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 4.445147828111693,
+        "minimum_absolute_overlap": 0.005038414262238885,
+        "Jarlskog": -0.001208504515459974
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.472275734728069,
+        "minimum_absolute_overlap": 0.14936356497263706,
+        "Jarlskog": 2.0816681711721685e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 4.472275734728069,
+        "minimum_absolute_overlap": 0.05380947895105068,
+        "Jarlskog": -0.01311894641756192
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 4.472275734728069,
+        "minimum_absolute_overlap": 0.053809478951050566,
+        "Jarlskog": 0.013118946417561877
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.448612202158904,
+        "minimum_absolute_overlap": 0.17470996457915244,
+        "Jarlskog": -2.6020852139652106e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 4.448612202158904,
+        "minimum_absolute_overlap": 0.024411002998317638,
+        "Jarlskog": -0.0060711099440907725
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 4.448612202158904,
+        "minimum_absolute_overlap": 0.024411002998317825,
+        "Jarlskog": 0.006071109944090814
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.443343275831952,
+        "minimum_absolute_overlap": 0.18758151184282493,
+        "Jarlskog": 2.7755575615628914e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 4.443343275831952,
+        "minimum_absolute_overlap": 0.007166917016678199,
+        "Jarlskog": 0.001790653074586132
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 4.443343275831952,
+        "minimum_absolute_overlap": 0.007166917016678009,
+        "Jarlskog": -0.0017906530745860824
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.443343275831952,
+        "minimum_absolute_overlap": 0.18758151184282504,
+        "Jarlskog": 7.632783294297951e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 4.443343275831952,
+        "minimum_absolute_overlap": 0.007166917016678185,
+        "Jarlskog": 0.001790653074586128
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 4.443343275831952,
+        "minimum_absolute_overlap": 0.007166917016678053,
+        "Jarlskog": -0.0017906530745860976
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 4.448612202158904,
+        "minimum_absolute_overlap": 0.1747099645791525,
+        "Jarlskog": -2.0816681711721685e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 4.448612202158904,
+        "minimum_absolute_overlap": 0.02441100299831785,
+        "Jarlskog": -0.0060711099440908245
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 4.448612202158904,
+        "minimum_absolute_overlap": 0.024411002998317836,
+        "Jarlskog": 0.006071109944090805
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 0.7107009767920794,
+        "minimum_absolute_overlap": 0.16442249538209028,
+        "Jarlskog": 6.938893903907228e-18
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 0.7107009767920794,
+        "minimum_absolute_overlap": 0.2151123689818302,
+        "Jarlskog": 0.0022360480202329083
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 0.7107009767920794,
+        "minimum_absolute_overlap": 0.21511236898183028,
+        "Jarlskog": -0.0022360480202329447
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 1.0984314145957592,
+        "minimum_absolute_overlap": 0.2235222722397475,
+        "Jarlskog": -2.7755575615628914e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 1.0984314145957592,
+        "minimum_absolute_overlap": 0.25636349339014514,
+        "Jarlskog": 0.007006514897498541
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 1.0984314145957592,
+        "minimum_absolute_overlap": 0.2563634933901455,
+        "Jarlskog": -0.007006514897498532
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 1.0984314145957592,
+        "minimum_absolute_overlap": 0.22352227223974727,
+        "Jarlskog": 1.431146867680866e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 1.0984314145957592,
+        "minimum_absolute_overlap": 0.25636349339014536,
+        "Jarlskog": 0.0070065148974985374
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 1.0984314145957592,
+        "minimum_absolute_overlap": 0.25636349339014536,
+        "Jarlskog": -0.007006514897498511
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 0.7107009767920794,
+        "minimum_absolute_overlap": 0.16442249538209025,
+        "Jarlskog": 1.9081958235744878e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 0.7107009767920794,
+        "minimum_absolute_overlap": 0.21511236898183023,
+        "Jarlskog": 0.0022360480202329204
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 0.7107009767920794,
+        "minimum_absolute_overlap": 0.21511236898183014,
+        "Jarlskog": -0.002236048020232917
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 0.9519449966237453,
+        "minimum_absolute_overlap": 0.0241016969323345,
+        "Jarlskog": -6.938893903907228e-18
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 0.9519449966237453,
+        "minimum_absolute_overlap": 0.07545147776912275,
+        "Jarlskog": 0.010567714786731155
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 0.9519449966237453,
+        "minimum_absolute_overlap": 0.0754514777691227,
+        "Jarlskog": -0.010567714786731141
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 1.1307623487829055,
+        "minimum_absolute_overlap": 0.16099446780331692,
+        "Jarlskog": -1.3877787807814457e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 1.1307623487829055,
+        "minimum_absolute_overlap": 0.19182375906713628,
+        "Jarlskog": 0.010149455806772921
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 1.1307623487829055,
+        "minimum_absolute_overlap": 0.1918237590671363,
+        "Jarlskog": -0.010149455806772921
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 1.1307623487829055,
+        "minimum_absolute_overlap": 0.16099446780331694,
+        "Jarlskog": 2.6020852139652106e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 1.1307623487829055,
+        "minimum_absolute_overlap": 0.19182375906713628,
+        "Jarlskog": 0.010149455806772931
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 1.1307623487829055,
+        "minimum_absolute_overlap": 0.19182375906713633,
+        "Jarlskog": -0.010149455806772999
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 0.9519449966237453,
+        "minimum_absolute_overlap": 0.02410169693233455,
+        "Jarlskog": -4.336808689942018e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 0.9519449966237453,
+        "minimum_absolute_overlap": 0.07545147776912264,
+        "Jarlskog": 0.010567714786731044
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 0.9519449966237453,
+        "minimum_absolute_overlap": 0.0754514777691227,
+        "Jarlskog": -0.01056771478673111
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 1.0292944499413499,
+        "minimum_absolute_overlap": 0.02758094315619871,
+        "Jarlskog": 6.938893903907228e-18
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 1.0292944499413499,
+        "minimum_absolute_overlap": 0.047905021849291,
+        "Jarlskog": 0.011900598830110552
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 1.0292944499413499,
+        "minimum_absolute_overlap": 0.047905021849291025,
+        "Jarlskog": -0.011900598830110543
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 1.1255340710025754,
+        "minimum_absolute_overlap": 0.1281974220280246,
+        "Jarlskog": 4.163336342344337e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 1.1255340710025754,
+        "minimum_absolute_overlap": 0.1430097328702307,
+        "Jarlskog": 0.011167129426818304
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 1.1255340710025754,
+        "minimum_absolute_overlap": 0.14300973287023058,
+        "Jarlskog": -0.011167129426818308
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 1.1255340710025754,
+        "minimum_absolute_overlap": 0.12819742202802453,
+        "Jarlskog": 6.938893903907228e-18
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "up_only",
+        "commutator_norm": 1.1255340710025754,
+        "minimum_absolute_overlap": 0.14300973287023064,
+        "Jarlskog": 0.011167129426818332
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "scheme": "down_only",
+        "commutator_norm": 1.1255340710025754,
+        "minimum_absolute_overlap": 0.14300973287023044,
+        "Jarlskog": -0.01116712942681833
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "antisymmetric_two_sided",
+        "commutator_norm": 1.0292944499413499,
+        "minimum_absolute_overlap": 0.027580943156198735,
+        "Jarlskog": -9.324138683375338e-18
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "up_only",
+        "commutator_norm": 1.0292944499413499,
+        "minimum_absolute_overlap": 0.04790502184929107,
+        "Jarlskog": 0.011900598830110569
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "scheme": "down_only",
+        "commutator_norm": 1.0292944499413499,
+        "minimum_absolute_overlap": 0.04790502184929098,
+        "Jarlskog": -0.011900598830110524
+      }
+    ],
+    "symmetric_two_sided": {
+      "tests": 24,
+      "nonzero_CP": 0,
+      "maximum_absolute_J": 7.632783294297951e-17,
+      "finding": "Adding +Q to one sector and -Q to the other preserves a CP-conserving relation."
+    },
+    "one_sided": {
+      "tests": 48,
+      "nonzero_CP": 48,
+      "minimum_absolute_J": 0.001208504515459974,
+      "maximum_absolute_J": 0.03431369731948625,
+      "control_J": 3.12e-05,
+      "minimum_overshoot_factor": 38.73411908525558,
+      "sign_pairing": "up-only and down-only corrections produce opposite J signs",
+      "finding": "The first canonical commutator can create CP only through an asymmetric sector backreaction. With coefficient one-half all candidates overshoot the observed J scale."
+    }
+  },
+  "scientific_verdict": {
+    "positive": "The relative modular commutator is the first coefficient-free operator in this chain that produces nonzero three-family CP.",
+    "negative": "The direct cocycle is pure rephasing; symmetric backreaction still gives zero CP; one-sided backreaction is not yet derived and its canonical magnitude is at least about forty times too large.",
+    "next_gate": "Derive a chiral or charge-asymmetric coupling of Q from the finite algebra and parent action. Its coefficient must be fixed before data and simultaneously pass a mass-hierarchy observable."
+  }
+}

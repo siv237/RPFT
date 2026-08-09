@@ -1,0 +1,134 @@
+{
+  "status": "minimal_core_gluing_closes_periodic_majorana_line_action_embedding_open",
+  "date": "2026-08-03",
+  "local_BdG_data": {
+    "Nambu_basis": "(psi, psi_dagger)",
+    "particle_hole_operator": "C=tau_x*K",
+    "zero_basis": "v(theta)=(exp(i theta/2),exp(-i theta/2))/sqrt(2)",
+    "pair_phase_start": 0.0,
+    "pair_phase_end": 3.141592653589793,
+    "quarter_transition": [
+      [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          -1.0
+        ]
+      ]
+    ],
+    "transition_rule": "v(theta+pi)=diag(i,-i)v(theta)",
+    "transition_covariance_error": 4.329780281177466e-17
+  },
+  "Majorana_reality": {
+    "errors": {
+      "start": 0.0,
+      "end": 0.0,
+      "transported": 0.0
+    },
+    "fixed_line_statement": "For a C-fixed zero vector v, the physical coefficients in a*v are real because C(a*v)=conjugate(a)*v. The zero eigenspace therefore contributes one real Majorana direction, not a doubled complex state.",
+    "physical_zero_mode_real_rank": 1
+  },
+  "core_gluing": {
+    "spin_transition": -1.0,
+    "ambient_torsion_transition": -1.0,
+    "real_sign_product": 1.0,
+    "root_transition": [
+      [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          -1.0
+        ]
+      ]
+    ],
+    "total_transition": [
+      [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ]
+    ],
+    "total_gluing_error": 4.329780281177466e-17,
+    "coefficient_holonomy": [
+      0.9999999999999998,
+      1.3977892587259712e-33
+    ],
+    "longitudinal_kernel_rank": 1,
+    "interpretation": "The quarter transition transports the local zero-mode basis itself. The remaining coefficient sees the product of the antiperiodic spin sign and the ambient torsion sign, which is +1. Hence the Majorana coefficient line is periodic."
+  },
+  "control_without_ambient_torsion": {
+    "coefficient_holonomy": [
+      -0.9999999999999998,
+      -1.3977892587259712e-33
+    ],
+    "longitudinal_kernel_rank": 0,
+    "interpretation": "Without the ambient Z2 line the coefficient holonomy is -1 and the longitudinal zero mode disappears. The cancellation is therefore structural, not automatic."
+  },
+  "rank_one_result": {
+    "generation_singlet_rank": 1,
+    "transverse_mod_two_kernel_rank": 1,
+    "longitudinal_Majorana_kernel_rank": 1,
+    "self_dual_cycle_rank": 1,
+    "combined_real_rank": 1,
+    "complement_rank_in_R24": 23
+  },
+  "Qcycle_compatibility": {
+    "self_dual_Qcycle_norm": 3.4599025397735836,
+    "target": 3.4599025397735836,
+    "error": 0.0
+  },
+  "theory_effect": {
+    "core_gluing_gate": "closed_in_the_minimal_local_defect_model",
+    "rank_one_kernel": "constructed_without_Nambu_state_doubling",
+    "rank_23": "restored_inside_the_conditional_defect_model",
+    "full_S2T_status": "conditional_until_the_defect_BdG_operator_is_derived_from_the_action"
+  },
+  "remaining_proof_obligations": [
+    "derive the Nambu transition and Majorana pairing operator from the S2T action",
+    "construct the global tubular-neighborhood operator on RP3 rather than only transition data",
+    "prove that its unique kernel embeds into the previously declared R24 heavy module",
+    "show that quotienting this kernel produces the denominator contribution rather than a new light state"
+  ],
+  "verdict": "The core-gluing obstruction closes algebraically in the minimal square-root defect model. The quarter-holonomy matrix maps the start zero basis to the end zero basis, while the spin and ambient torsion signs cancel. The coefficient line is periodic and has one longitudinal real zero mode. Particle-hole reality leaves one real direction, so no physical Nambu doubling occurs. Thus complement rank 23 is internally consistent in this defect model, although deriving the complete operator from the S2T action remains open."
+}

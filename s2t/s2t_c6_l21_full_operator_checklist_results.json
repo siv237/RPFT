@@ -1,0 +1,102 @@
+{
+  "status": "full_operator_rescue_checklist_fixed_after_large_n3_obstruction",
+  "inputs": [
+    "s2t_c6_l21_full_operator_rescue_gate_results.json",
+    "s2t_c6_l21_laplacian_variation_results.json",
+    "s2t_c6_l21_n3_obstruction_scale_results.json",
+    "s2t_c6_l21_n3_explicit_projection_results.json"
+  ],
+  "obstruction_to_rescue": {
+    "projected_trace": 79.99999999999999,
+    "projected_rank": 6,
+    "trace_over_gap_squared": 0.5555555555555555,
+    "ratio_to_Nneed_minus_10_gap": 55.72259853253243,
+    "meaning": "The obstruction is too large for a rounding/scheme-gap story; the checklist must produce a real cancellation or no-fit absorption."
+  },
+  "required_operator_checklist": [
+    {
+      "term": "connection_variation_terms",
+      "current_status": "not_computed",
+      "must_do": "derive and evaluate delta_Gamma*nabla_alpha plus nabla(delta_Gamma)*alpha on the n=1 to n=3 block",
+      "why_it_matters": "these are same-order one-form terms and could in principle interfere destructively with the conformal-slice leakage",
+      "required_output": "matrix block C_conn[1,3] in the explicit n=1 Killing basis and n=3 coexact basis",
+      "zero_test": "Does C_principal + C_conn cancel in the six-dimensional image before Ricci/projector terms?",
+      "pass_condition": "written formula plus evaluated low-shell contribution with fixed signs and quotient normalization",
+      "fail_condition": "term omitted, only asserted verbally, or adjusted after seeing alpha target"
+    },
+    {
+      "term": "curvature_Ricci_variation",
+      "current_status": "not_computed",
+      "must_do": "derive delta_Ric(alpha) and index-raising changes for the first ambient strain",
+      "why_it_matters": "RP3 is curved; Ricci terms are part of Delta_1 and cannot be dropped as scalar-like noise",
+      "required_output": "matrix block C_Ric[1,3] including index-raising variation",
+      "zero_test": "Does C_principal + C_conn + C_Ric reduce the projected rank or trace?",
+      "pass_condition": "written formula plus evaluated low-shell contribution with fixed signs and quotient normalization",
+      "fail_condition": "term omitted, only asserted verbally, or adjusted after seeing alpha target"
+    },
+    {
+      "term": "coexact_projector_variation",
+      "current_status": "not_computed",
+      "must_do": "include variation of the metric-dependent transverse slice, not only projection after applying the simplified operator",
+      "why_it_matters": "the physical determinant lives on a moving coexact subspace; projector variation could alter low-shell matrix elements",
+      "required_output": "variation of Pi_coex and the induced correction to the n=1<->n=3 block",
+      "zero_test": "Does the moving transverse slice cancel the apparent fixed-slice projection?",
+      "pass_condition": "written formula plus evaluated low-shell contribution with fixed signs and quotient normalization",
+      "fail_condition": "term omitted, only asserted verbally, or adjusted after seeing alpha target"
+    },
+    {
+      "term": "Hilbert_inner_product_variation",
+      "current_status": "not_computed",
+      "must_do": "include variation of sqrt(g), one-form contraction, and basis normalization in matrix elements",
+      "why_it_matters": "a nonzero projected Gram trace is not a final determinant coefficient until the varied Hilbert metric is included",
+      "required_output": "metric variation of matrix elements, volume density, one-form contraction, and normalization",
+      "zero_test": "Does the varied Hilbert metric remove the trace-80 block without fitted normalization?",
+      "pass_condition": "written formula plus evaluated low-shell contribution with fixed signs and quotient normalization",
+      "fail_condition": "term omitted, only asserted verbally, or adjusted after seeing alpha target"
+    },
+    {
+      "term": "second_variation_delta2_Delta",
+      "current_status": "not_computed",
+      "must_do": "prove genuine delta^2 Delta terms are local/subtracted/cancelled or compute their finite low-shell contribution",
+      "why_it_matters": "the logdet second variation has both trace-square and direct second-variation pieces",
+      "required_output": "direct Tr(Delta^{-1} delta2 Delta) finite low-shell part or proof it is local/subtracted/cancelled",
+      "zero_test": "Does the direct second-variation term cancel the trace-square contribution in the same scheme?",
+      "pass_condition": "written formula plus evaluated low-shell contribution with fixed signs and quotient normalization",
+      "fail_condition": "term omitted, only asserted verbally, or adjusted after seeing alpha target"
+    }
+  ],
+  "global_pass_conditions": [
+    {
+      "condition": "complete_operator_formula",
+      "meaning": "All principal, connection, Ricci, projector, Hilbert-metric, and delta2 terms are present with signs."
+    },
+    {
+      "condition": "same_basis_same_normalization",
+      "meaning": "All terms are evaluated in the same quotient-normalized n=1 and n=3 bases; no cover factor is inserted after the fact."
+    },
+    {
+      "condition": "trace80_cancelled_or_absorbed",
+      "meaning": "The combined finite low-shell contribution either vanishes or is mapped to the existing pi^-4/P02 residue by a derived identity."
+    },
+    {
+      "condition": "no_hidden_finite_counterterm",
+      "meaning": "No finite subtraction is chosen after seeing alpha or the trace-80 result."
+    }
+  ],
+  "global_fail_conditions": [
+    {
+      "condition": "any_required_term_missing",
+      "effect": "C6 remains open; pi^-4 cannot be called mature determinant theorem."
+    },
+    {
+      "condition": "nonzero_independent_low_shell_trace_survives",
+      "effect": "Clean rank-10 determinant theorem is blocked in the physical coexact quotient."
+    },
+    {
+      "condition": "rescue_requires_adjustable_finite_scheme",
+      "effect": "Downgrade to phenomenological/structural compression under the no-hidden-parameter rule."
+    }
+  ],
+  "plain_language": "The third-floor fire is real and not small. The checklist says exactly which five extinguishers must be used next. If any extinguisher is only waved at, not computed, C6 is not closed.",
+  "verdict": "After the explicit nonzero n=3 projection and scale audit, the C6 rescue problem is reduced to a concrete full-operator checklist. Connection, Ricci, coexact-projector, Hilbert-metric, and direct delta2-Delta terms must be derived and evaluated in the same quotient-normalized low-shell bases. Only an explicit cancellation or a no-fit absorption identity can promote pi^-4 beyond structural compression."
+}

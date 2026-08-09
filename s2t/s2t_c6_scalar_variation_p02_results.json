@@ -1,0 +1,136 @@
+{
+  "status": "zero_by_symmetry_fails_for_nonzero_scalar_tower",
+  "P02_decomposition": {
+    "total_rank": 10,
+    "trace_rank": 1,
+    "traceless_rank": 9
+  },
+  "scalar_shells_checked": [
+    {
+      "ell": 0,
+      "rp3_allowed": true,
+      "multiplicity": 1,
+      "is_zero_shell": true,
+      "ell2_P02_outgoing_shells": [
+        2
+      ],
+      "diagonal_ell2_coupling_allowed": false
+    },
+    {
+      "ell": 2,
+      "rp3_allowed": true,
+      "multiplicity": 9,
+      "is_zero_shell": false,
+      "ell2_P02_outgoing_shells": [
+        0,
+        2,
+        4
+      ],
+      "diagonal_ell2_coupling_allowed": true
+    },
+    {
+      "ell": 4,
+      "rp3_allowed": true,
+      "multiplicity": 25,
+      "is_zero_shell": false,
+      "ell2_P02_outgoing_shells": [
+        2,
+        4,
+        6
+      ],
+      "diagonal_ell2_coupling_allowed": true
+    },
+    {
+      "ell": 6,
+      "rp3_allowed": true,
+      "multiplicity": 49,
+      "is_zero_shell": false,
+      "ell2_P02_outgoing_shells": [
+        4,
+        6,
+        8
+      ],
+      "diagonal_ell2_coupling_allowed": true
+    },
+    {
+      "ell": 8,
+      "rp3_allowed": true,
+      "multiplicity": 81,
+      "is_zero_shell": false,
+      "ell2_P02_outgoing_shells": [
+        6,
+        8,
+        10
+      ],
+      "diagonal_ell2_coupling_allowed": true
+    },
+    {
+      "ell": 10,
+      "rp3_allowed": true,
+      "multiplicity": 121,
+      "is_zero_shell": false,
+      "ell2_P02_outgoing_shells": [
+        8,
+        10
+      ],
+      "diagonal_ell2_coupling_allowed": true
+    }
+  ],
+  "first_nonzero_scalar_shell": {
+    "ell": 2,
+    "rp3_allowed": true,
+    "multiplicity": 9,
+    "is_zero_shell": false,
+    "ell2_P02_outgoing_shells": [
+      0,
+      2,
+      4
+    ],
+    "diagonal_ell2_coupling_allowed": true
+  },
+  "variation_terms": [
+    {
+      "term": "trace_volume_part",
+      "rank": 1,
+      "selection_status": "allowed_but_volume_local_or_gauge_normalization",
+      "meaning": "The trace direction rescales the metric/volume and must be handled by zero/gauge/Jacobian normalization or local counterterms."
+    },
+    {
+      "term": "traceless_ell2_part",
+      "rank": 9,
+      "selection_status": "allowed_on_nonzero_scalar_tower",
+      "meaning": "The ell=2 strain couples even RP3 scalar shells by ell -> ell, ell±2; the first nonzero shell ell=2 already admits diagonal and off-diagonal couplings."
+    },
+    {
+      "term": "constant_kappa_row",
+      "rank": 0,
+      "selection_status": "zero_for_traceless_spatial_laplacian_variation",
+      "meaning": "The retained kappa_Cas row is constant on RP3, so gradient-based scalar Laplacian variation vanishes on that row."
+    }
+  ],
+  "outcomes": [
+    {
+      "candidate_verdict": "zero_by_symmetry",
+      "status": "failed",
+      "reason": "Even RP3 scalar harmonics and ell=2 strain satisfy triangle/parity selection rules; ell=2 nonzero scalar shell couples to ell=0,2,4."
+    },
+    {
+      "candidate_verdict": "nonzero_but_local_subtracted",
+      "status": "not_proven",
+      "reason": "Trace/heat-kernel pieces may be local, but the trace-square of the nonzero tower is not shown to be purely local by representation theory alone."
+    },
+    {
+      "candidate_verdict": "nonzero_finite_or_scheme_residual",
+      "status": "blocking_risk",
+      "reason": "Unless a later analytic determinant calculation proves locality/cancellation, standard FP has a nonzero scalar P02 leakage channel."
+    }
+  ],
+  "rank_flow": {
+    "desired_coexact_rank": 10,
+    "standard_FP_scalar_half_power": -0.5,
+    "if_full_P02_scalar_channel_survives_effective_rank": 5.0,
+    "if_only_traceless_rank9_survives_effective_rank": 5.5,
+    "if_only_trace_rank1_survives_effective_rank": 9.5
+  },
+  "verdict": "The nonzero scalar residual tower cannot be dismissed by a symmetry selection rule. On RP3 the scalar tower contains even ell shells; the first nonzero shell ell=2 has multiplicity 9 and an ell=2/P02 first-strain insertion is selection-rule allowed. Thus delta_h Delta0 has a nonzero P02 leakage channel on the nonzero scalar tower unless a stronger analytic result proves cancellation, locality, or physical-quotient removal. C6 is therefore not closed in standard covariant FP by symmetry alone."
+}

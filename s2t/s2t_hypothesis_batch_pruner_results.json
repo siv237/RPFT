@@ -1,0 +1,147 @@
+{
+  "status": "batch_hypothesis_run_reproduces_existing_no_go_results_and_adds_three_precision_pruners_without_new_closed_physics",
+  "date": "2026-08-07",
+  "frozen_conventions": {
+    "train_anchors": [
+      "alpha_inverse",
+      "m_e",
+      "m_mu"
+    ],
+    "alpha_inverse": 137.035999177,
+    "unit_radii": true,
+    "RP3_eta_menu": [
+      -0.25,
+      0.25
+    ],
+    "circle_logdet": "I_rho(beta)=log[(cosh(2*pi*rho)-cos(2*pi*beta))/(cosh(2*pi*rho)-1)]"
+  },
+  "hypotheses": {
+    "G1_APS_real_mass_shift": {
+      "eta_menu_arithmetic": {
+        "-1/4": {
+          "value": "5/24",
+          "float": 0.20833333333333334,
+          "deficit_to_one_third": "1/8"
+        },
+        "1/4": {
+          "value": "-1/24",
+          "float": -0.041666666666666664,
+          "deficit_to_one_third": "3/8"
+        }
+      },
+      "eta_minus_one_half_in_menu": false,
+      "blockwise_phase_cancellation": true,
+      "verdict": "rejected_by_frozen_eta_convention_and_vectorlike_reality_gate",
+      "precision_note": "The value 5/24 uses eta=-1/4 only. For eta=+1/4 the same expression is -1/24. Neither branch gives 1/3."
+    },
+    "G2_rank_24_minus_one": {
+      "majorana_rank_after_gravity_quotient": 24,
+      "gauge_image_has_majorana_component": false,
+      "verdict": "rejected"
+    },
+    "G3_SU5_orbifold_projection": {
+      "proposed_matrix_determinant": -1,
+      "proposed_matrix_is_SU5": false,
+      "corrected_projection_passes_representation_direction": true,
+      "projected_beta_direction": [
+        2.833333333333333,
+        0.16666666666666666,
+        2.0
+      ],
+      "threshold_magnitude_closed": false,
+      "verdict": "partial_representation_pass_only"
+    },
+    "G4_five_dimensional_CS": {
+      "proposed_integrand_degrees": {
+        "A_wedge_dA": 3,
+        "A_cubed": 3
+      },
+      "is_five_form": false,
+      "dimensionally_defined": false,
+      "verdict": "rejected_dimensionally"
+    },
+    "G5_six_channel_inverse_susceptibility": {
+      "identity_matches": true,
+      "ordinary_trace_variance": 0.010265982254684338,
+      "normalized_trace_variance": 0.06159589352810602,
+      "two_sector_parent_action_passes": false,
+      "verdict": "exact_lemma_without_physical_closure"
+    },
+    "G6_minimal_BL_root": {
+      "continuous_anomalies_cancel": true,
+      "sterile_root_phase": "+i",
+      "majorana_vertex_charge_sum": 0,
+      "kinetic_mixing_trace": "8/3",
+      "homogeneous_condensate_closed": true,
+      "verdict": "representation_and_root_pass_nonuniform_branch_only",
+      "precision_note": "Kinetic mixing is a future normalization-sensitive second gate, not a second sector already passed."
+    },
+    "G7_nonuniform_GL_saddle": {
+      "threshold": "lambda*v^2 > k_min^2",
+      "unit_RP3_critical_value": 1.0,
+      "degenerate_windings": [
+        -1,
+        0
+      ],
+      "equal_energy": true,
+      "orientation_selected": false,
+      "verdict": "exact_reduced_saddle_lemma_without_action_closure"
+    },
+    "G8_torsion_orientation_selector": {
+      "rho": 1.0,
+      "beta": 0.25,
+      "conjugate_errors": {
+        "beta_vs_minus_beta": 0.0,
+        "beta_vs_one_minus_beta": 0.0
+      },
+      "exact_evenness": true,
+      "I1_half": 0.007469779610066302,
+      "I1_quarter": 0.003741864489745597,
+      "two_I1_quarter": 0.007483728979491194,
+      "half_to_two_quarter_ratio": 0.9981360402730886,
+      "half_minus_two_quarter": -1.3949369424891798e-05,
+      "verdict": "rejected_exactly_for_the_declared_circle_determinant",
+      "precision_note": "I_rho(beta)=I_rho(-beta) is the orientation pruner. Comparing I_1(1/2) with 2 I_1(1/4) is a separate failed arithmetic identity, not the proof of conjugate degeneracy."
+    },
+    "G9_two_loop_replacement": {
+      "equation": "(alpha/pi)^2 X=alpha/3",
+      "required_X": 450.83036686166565,
+      "depends_on_train_alpha": true,
+      "verdict": "rejected_as_circular_without_an_independent_operator",
+      "precision_note": "The strict objection is not aesthetic unnaturalness: solving for X imports the train anchor alpha into the coefficient."
+    },
+    "G10_projection_weight_12pi_over_7": {
+      "candidate": 5.385587406153931,
+      "required": 5.4027533071585365,
+      "absolute_deficit": 0.017165901004605466,
+      "relative_deficit": 0.0031772505662734964,
+      "exact_identity": false,
+      "verdict": "rejected_as_a_nonexact_post_hoc_candidate"
+    }
+  },
+  "additional_claim_gate": {
+    "axis_difference_shift_identically_zero": {
+      "registered_as_new_result": false,
+      "reason": "No operator formula for this shift was supplied in the batch. The existing residual-axis audit proves one symmetry orbit and the relative-orbit audit leaves a free two-family angle; neither statement alone is an identically zero axis-shift theorem."
+    }
+  },
+  "summary": {
+    "closed_physical_predictions_added": 0,
+    "exact_or_conditional_lemmas_retained": [
+      "six-channel ordinary-trace variance pi^-4",
+      "anomaly-free B-L representation and sterile root phase",
+      "nonuniform GL threshold and conjugate degeneracy",
+      "corrected Z2/Z4 representation projection direction"
+    ],
+    "new_precision_pruners": [
+      "circle determinant is exactly even under beta to minus beta",
+      "two-loop coefficient X is circular if solved from the train alpha",
+      "12*pi/7 misses the required projection weight by about 0.318 percent"
+    ],
+    "program_status": "The batch narrows the search but does not change N_closed_physical=0. The next admissible step remains a prior parent action rather than another target-designed operator insertion."
+  },
+  "crosschecks": {
+    "finite_threshold_cone_status": "corrected_finite_threshold_cone_algebraically_feasible_physically_infeasible",
+    "existing_eta_gate_status": "F2_phase_to_mass_gate_closes_negatively_for_the_minimal_vectorlike_Dirac_product_determinant"
+  }
+}

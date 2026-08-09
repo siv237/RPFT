@@ -1,0 +1,1224 @@
+{
+  "status": "minimal_Wilson_Gibbs_states_are_correlated_but_do_not_select_a_unique_modular_readout_or_full_flavour_mixing",
+  "date": "2026-08-06",
+  "state_ansatz": {
+    "formula": "rho=exp(-H)/Tr exp(-H), H=B[L_kernel+s A_n]B^T",
+    "beta": 1,
+    "singlet_energy": 0,
+    "declared_class": {
+      "kernels": [
+        "inverse_length",
+        "inverse_square",
+        "tunneling"
+      ],
+      "Wilson_signs": [
+        1,
+        -1
+      ],
+      "residual_axis_representatives": 2
+    },
+    "warning": "The Wilson saddle fixes angle and axis orbit, but not this Gibbs ansatz, sign, beta, or singlet energy."
+  },
+  "state_rows": [
+    {
+      "kernel": "inverse_length",
+      "wilson_sign": 1,
+      "axis_index": 0,
+      "rho_eigenvalues": [
+        0.06442776910947298,
+        0.24645336475047674,
+        0.28626966526679665,
+        0.4028492008732536
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.0398163005163199,
+      "factorization_error": 0.23805566074576273,
+      "mutual_information": 0.13505486837236647,
+      "PPT_negativity": -0.0,
+      "entangled": false,
+      "triplet_probability": 0.7137303347332032,
+      "discarded_singlet_probability": 0.28626966526679676,
+      "modular_triplet_projector_error": 7.343435057440258e-17,
+      "block_expectation_state_preservation_error": 0.0,
+      "rank3_spectral_readout_commutators": [
+        2.7599066112959286e-16,
+        2.46631229726768e-16,
+        4.877496473110941e-16,
+        8.93453637624106e-16
+      ]
+    },
+    {
+      "kernel": "inverse_length",
+      "wilson_sign": 1,
+      "axis_index": 1,
+      "rho_eigenvalues": [
+        0.06442776910947279,
+        0.24645336475047663,
+        0.2862696652667966,
+        0.4028492008732536
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.03981630051631996,
+      "factorization_error": 0.2380556607457628,
+      "mutual_information": 0.1350548683723667,
+      "PPT_negativity": -0.0,
+      "entangled": false,
+      "triplet_probability": 0.713730334733203,
+      "discarded_singlet_probability": 0.286269665266797,
+      "modular_triplet_projector_error": 4.615798956820346e-17,
+      "block_expectation_state_preservation_error": 0.0,
+      "rank3_spectral_readout_commutators": [
+        4.567705370964779e-16,
+        5.651705839938525e-16,
+        1.4638461332933103e-16,
+        8.433737694194369e-16
+      ]
+    },
+    {
+      "kernel": "inverse_length",
+      "wilson_sign": -1,
+      "axis_index": 0,
+      "rho_eigenvalues": [
+        0.05451788226653537,
+        0.08666662891729897,
+        0.3169127862347817,
+        0.5419027025813836
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.0321487466507636,
+      "factorization_error": 0.3550404130007886,
+      "mutual_information": 0.24316459384741718,
+      "PPT_negativity": 0.07401603628784853,
+      "entangled": true,
+      "triplet_probability": 0.683087213765218,
+      "discarded_singlet_probability": 0.31691278623478203,
+      "modular_triplet_projector_error": 6.548437517301134e-17,
+      "block_expectation_state_preservation_error": 0.0,
+      "rank3_spectral_readout_commutators": [
+        8.595532796149825e-16,
+        5.445871015493826e-15,
+        3.781982094576487e-16,
+        8.480355245071644e-16
+      ]
+    },
+    {
+      "kernel": "inverse_length",
+      "wilson_sign": -1,
+      "axis_index": 1,
+      "rho_eigenvalues": [
+        0.054517882266535464,
+        0.08666662891729905,
+        0.3169127862347819,
+        0.5419027025813838
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.03214874665076359,
+      "factorization_error": 0.35504041300078854,
+      "mutual_information": 0.2431645938474165,
+      "PPT_negativity": 0.07401603628784856,
+      "entangled": true,
+      "triplet_probability": 0.6830872137652182,
+      "discarded_singlet_probability": 0.3169127862347818,
+      "modular_triplet_projector_error": 1.389187528588841e-16,
+      "block_expectation_state_preservation_error": 3.552713678800501e-15,
+      "rank3_spectral_readout_commutators": [
+        3.2295406433155936e-16,
+        3.453830511589421e-16,
+        1.7615691025308205e-15,
+        5.932213308209135e-16
+      ]
+    },
+    {
+      "kernel": "inverse_square",
+      "wilson_sign": 1,
+      "axis_index": 0,
+      "rho_eigenvalues": [
+        0.06414421663295998,
+        0.1985376388514217,
+        0.3447584172100492,
+        0.39255972730556893
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.047801310095519745,
+      "factorization_error": 0.23374523270069847,
+      "mutual_information": 0.1326836414523218,
+      "PPT_negativity": -0.0,
+      "entangled": false,
+      "triplet_probability": 0.8014623611485785,
+      "discarded_singlet_probability": 0.1985376388514215,
+      "modular_triplet_projector_error": 8.441528768080324e-17,
+      "block_expectation_state_preservation_error": 0.0,
+      "rank3_spectral_readout_commutators": [
+        1.997701146498776e-15,
+        1.0482039606672945e-15,
+        1.5235966981924684e-15,
+        6.728292123264635e-15
+      ]
+    },
+    {
+      "kernel": "inverse_square",
+      "wilson_sign": 1,
+      "axis_index": 1,
+      "rho_eigenvalues": [
+        0.06414421663295997,
+        0.19853763885142156,
+        0.3447584172100493,
+        0.39255972730556876
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.04780131009551947,
+      "factorization_error": 0.23374523270069844,
+      "mutual_information": 0.1326836414523218,
+      "PPT_negativity": -0.0,
+      "entangled": false,
+      "triplet_probability": 0.8014623611485783,
+      "discarded_singlet_probability": 0.19853763885142173,
+      "modular_triplet_projector_error": 8.151354677681473e-17,
+      "block_expectation_state_preservation_error": 0.0,
+      "rank3_spectral_readout_commutators": [
+        9.239812854227127e-16,
+        1.4833943056741775e-15,
+        3.9323193467066224e-16,
+        2.3238856515411944e-15
+      ]
+    },
+    {
+      "kernel": "inverse_square",
+      "wilson_sign": -1,
+      "axis_index": 0,
+      "rho_eigenvalues": [
+        0.0837696474286564,
+        0.09477720560212705,
+        0.24142090183556944,
+        0.5800322451336475
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.011007558173470641,
+      "factorization_error": 0.38942955670205304,
+      "mutual_information": 0.2695597602004347,
+      "PPT_negativity": 0.09170228661724725,
+      "entangled": true,
+      "triplet_probability": 0.7585790981644305,
+      "discarded_singlet_probability": 0.24142090183556952,
+      "modular_triplet_projector_error": 1.2563278930025003e-16,
+      "block_expectation_state_preservation_error": 0.0,
+      "rank3_spectral_readout_commutators": [
+        3.976314562773042e-16,
+        1.2169913922940464e-15,
+        4.651567434906105e-16,
+        6.227627946253314e-16
+      ]
+    },
+    {
+      "kernel": "inverse_square",
+      "wilson_sign": -1,
+      "axis_index": 1,
+      "rho_eigenvalues": [
+        0.08376964742865621,
+        0.09477720560212703,
+        0.24142090183556927,
+        0.5800322451336475
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.011007558173470822,
+      "factorization_error": 0.38942955670205304,
+      "mutual_information": 0.26955976020043493,
+      "PPT_negativity": 0.09170228661724737,
+      "entangled": true,
+      "triplet_probability": 0.7585790981644307,
+      "discarded_singlet_probability": 0.2414209018355693,
+      "modular_triplet_projector_error": 9.592879659166617e-17,
+      "block_expectation_state_preservation_error": 1.7763568394002505e-15,
+      "rank3_spectral_readout_commutators": [
+        1.3956955579892507e-16,
+        1.3057283701799144e-14,
+        3.455532199959067e-16,
+        1.717606953083015e-16
+      ]
+    },
+    {
+      "kernel": "tunneling",
+      "wilson_sign": 1,
+      "axis_index": 0,
+      "rho_eigenvalues": [
+        0.06346270470898262,
+        0.18063533784896968,
+        0.3692543719251679,
+        0.38664758551687983
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.01739321359171192,
+      "factorization_error": 0.23054801832269142,
+      "mutual_information": 0.13088826266920695,
+      "PPT_negativity": -0.0,
+      "entangled": false,
+      "triplet_probability": 0.8193646621510304,
+      "discarded_singlet_probability": 0.18063533784896957,
+      "modular_triplet_projector_error": 7.601177430610147e-17,
+      "block_expectation_state_preservation_error": 1.7763568394002505e-15,
+      "rank3_spectral_readout_commutators": [
+        1.2775374804112934e-15,
+        1.9062101628326392e-15,
+        6.287004499924482e-16,
+        2.8365767909792085e-15
+      ]
+    },
+    {
+      "kernel": "tunneling",
+      "wilson_sign": 1,
+      "axis_index": 1,
+      "rho_eigenvalues": [
+        0.06346270470898252,
+        0.1806353378489698,
+        0.3692543719251679,
+        0.3866475855168796
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.017393213591711698,
+      "factorization_error": 0.23054801832269134,
+      "mutual_information": 0.13088826266920717,
+      "PPT_negativity": -0.0,
+      "entangled": false,
+      "triplet_probability": 0.81936466215103,
+      "discarded_singlet_probability": 0.18063533784897,
+      "modular_triplet_projector_error": 7.076311083754595e-17,
+      "block_expectation_state_preservation_error": 0.0,
+      "rank3_spectral_readout_commutators": [
+        7.970106984533464e-16,
+        1.697022544860845e-16,
+        4.972166300900615e-16,
+        1.8918222980606518e-14
+      ]
+    },
+    {
+      "kernel": "tunneling",
+      "wilson_sign": -1,
+      "axis_index": 0,
+      "rho_eigenvalues": [
+        0.0920750967992177,
+        0.09622982593967029,
+        0.22541325985510446,
+        0.5862818174060073
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.00415472914045259,
+      "factorization_error": 0.39542666812557714,
+      "mutual_information": 0.27418857498688287,
+      "PPT_negativity": 0.0949422063617842,
+      "entangled": true,
+      "triplet_probability": 0.7745867401448953,
+      "discarded_singlet_probability": 0.22541325985510474,
+      "modular_triplet_projector_error": 5.857100574038117e-17,
+      "block_expectation_state_preservation_error": 0.0,
+      "rank3_spectral_readout_commutators": [
+        3.7161369937445254e-16,
+        5.638977819058268e-14,
+        6.891472723195182e-16,
+        6.711361479054621e-16
+      ]
+    },
+    {
+      "kernel": "tunneling",
+      "wilson_sign": -1,
+      "axis_index": 1,
+      "rho_eigenvalues": [
+        0.09207509679921773,
+        0.09622982593967028,
+        0.22541325985510446,
+        0.5862818174060074
+      ],
+      "faithful": true,
+      "minimum_spectral_gap": 0.004154729140452548,
+      "factorization_error": 0.39542666812557703,
+      "mutual_information": 0.27418857498688287,
+      "PPT_negativity": 0.0949422063617841,
+      "entangled": true,
+      "triplet_probability": 0.7745867401448954,
+      "discarded_singlet_probability": 0.22541325985510463,
+      "modular_triplet_projector_error": 8.687484083189725e-17,
+      "block_expectation_state_preservation_error": 1.7763568394002505e-15,
+      "rank3_spectral_readout_commutators": [
+        5.08474364119024e-16,
+        3.9260472458840187e-14,
+        6.190638571088267e-16,
+        4.647742344593535e-17
+      ]
+    }
+  ],
+  "axis_orbit_equivalence": [
+    {
+      "kernel": "inverse_length",
+      "wilson_sign": 1,
+      "eigenvalue_difference": 2.3055512673781017e-16,
+      "mutual_information_difference": 2.220446049250313e-16,
+      "negativity_difference": 0.0
+    },
+    {
+      "kernel": "inverse_length",
+      "wilson_sign": -1,
+      "eigenvalue_difference": 3.390840864445248e-16,
+      "mutual_information_difference": 6.661338147750939e-16,
+      "negativity_difference": 2.7755575615628914e-17
+    },
+    {
+      "kernel": "inverse_square",
+      "wilson_sign": 1,
+      "eigenvalue_difference": 2.4394924734781536e-16,
+      "mutual_information_difference": 0.0,
+      "negativity_difference": 0.0
+    },
+    {
+      "kernel": "inverse_square",
+      "wilson_sign": -1,
+      "eigenvalue_difference": 2.5626980138831173e-16,
+      "mutual_information_difference": 2.220446049250313e-16,
+      "negativity_difference": 1.249000902703301e-16
+    },
+    {
+      "kernel": "tunneling",
+      "wilson_sign": 1,
+      "eigenvalue_difference": 2.665835984225005e-16,
+      "mutual_information_difference": 2.220446049250313e-16,
+      "negativity_difference": 0.0
+    },
+    {
+      "kernel": "tunneling",
+      "wilson_sign": -1,
+      "eigenvalue_difference": 1.1527756336890508e-16,
+      "mutual_information_difference": 0.0,
+      "negativity_difference": 9.71445146547012e-17
+    }
+  ],
+  "factorization_gate": {
+    "all_states_nonfactorizing": true,
+    "factorization_error_range": [
+      0.23054801832269134,
+      0.39542666812557714
+    ],
+    "mutual_information_range": [
+      0.13088826266920695,
+      0.27418857498688287
+    ],
+    "positive_sign_entangled_count": 0,
+    "negative_sign_entangled_count": 6,
+    "finding": "Nonfactorization is robust, but quantum entanglement is sign dependent. The undeclared Wilson sign blocks inevitability."
+  },
+  "modular_subalgebra_gate": {
+    "all_states_faithful_and_nondegenerate": true,
+    "canonical_M3_plus_C_modular_invariant": true,
+    "state_preserving_block_expectation": true,
+    "canonical_block_algebra": "P3 M4 P3 direct_sum C P1",
+    "canonical_block_partition_count_for_nondegenerate_state": 15,
+    "rank3_plus_rank1_spectral_partitions": 4,
+    "discarded_singlet_probability_range": [
+      0.18063533784896957,
+      0.31691278623478203
+    ],
+    "finding": "The state preserves M3 plus C but does not remove the singlet. A pure M3 world needs nonlinear conditioning and discards finite probability. Multiple modular block partitions remain."
+  },
+  "spectral_rank3_readout_gate": {
+    "tested_readouts": 48,
+    "maximum_factor_commutator_norm": 5.638977819058268e-14,
+    "noncommuting_readouts": 0,
+    "finding": "Every rank-three spectral complement selected by the minimal state preserves factor commutativity. State selection alone does not create CKM."
+  },
+  "relative_sector_gate": {
+    "rows": [
+      {
+        "kernel": "inverse_length",
+        "wilson_sign": 1,
+        "absolute_overlap": [
+          [
+            0.17365348407262046,
+            8.120157426335038e-17,
+            0.9848068173349737
+          ],
+          [
+            2.7585395637424595e-16,
+            0.9999999999999999,
+            2.2211699683752166e-16
+          ],
+          [
+            0.9848068173349734,
+            1.8829342703659537e-16,
+            0.17365348407262046
+          ]
+        ],
+        "zero_entries": 4,
+        "unit_entries": 1,
+        "Jarlskog": 0.0
+      },
+      {
+        "kernel": "inverse_length",
+        "wilson_sign": -1,
+        "absolute_overlap": [
+          [
+            0.17365348407262057,
+            0.9848068173349738,
+            6.269169564352515e-17
+          ],
+          [
+            0.9848068173349733,
+            0.17365348407262052,
+            6.048363281274424e-17
+          ],
+          [
+            1.4084303066168093e-16,
+            2.8792223120702793e-16,
+            0.9999999999999997
+          ]
+        ],
+        "zero_entries": 4,
+        "unit_entries": 1,
+        "Jarlskog": 0.0
+      },
+      {
+        "kernel": "inverse_square",
+        "wilson_sign": 1,
+        "absolute_overlap": [
+          [
+            0.0838957664923289,
+            1.8597754812291264e-16,
+            0.9964745357331838
+          ],
+          [
+            3.681020306919704e-16,
+            1.0,
+            2.4148869935417047e-16
+          ],
+          [
+            0.996474535733184,
+            3.5922679548297803e-16,
+            0.08389576649232888
+          ]
+        ],
+        "zero_entries": 4,
+        "unit_entries": 1,
+        "Jarlskog": 0.0
+      },
+      {
+        "kernel": "inverse_square",
+        "wilson_sign": -1,
+        "absolute_overlap": [
+          [
+            0.08389576649232892,
+            0.996474535733184,
+            5.277793181051416e-17
+          ],
+          [
+            0.9964745357331838,
+            0.0838957664923289,
+            2.4561515068076673e-15
+          ],
+          [
+            2.5523068735281086e-15,
+            2.0014574315855465e-16,
+            0.9999999999999999
+          ]
+        ],
+        "zero_entries": 4,
+        "unit_entries": 1,
+        "Jarlskog": 0.0
+      },
+      {
+        "kernel": "tunneling",
+        "wilson_sign": 1,
+        "absolute_overlap": [
+          [
+            0.04576101197450939,
+            1.526439217933318e-15,
+            0.9989524161756
+          ],
+          [
+            3.7029463778828074e-16,
+            1.0000000000000002,
+            1.0293565523931609e-15
+          ],
+          [
+            0.9989524161755997,
+            3.0394236265690757e-16,
+            0.045761011974509484
+          ]
+        ],
+        "zero_entries": 4,
+        "unit_entries": 1,
+        "Jarlskog": 0.0
+      },
+      {
+        "kernel": "tunneling",
+        "wilson_sign": -1,
+        "absolute_overlap": [
+          [
+            0.04576101197450955,
+            0.9989524161755998,
+            8.034897360234044e-16
+          ],
+          [
+            0.9989524161756,
+            0.04576101197450959,
+            3.5528354990577565e-15
+          ],
+          [
+            3.688263606865427e-15,
+            6.01058403047709e-16,
+            1.0000000000000002
+          ]
+        ],
+        "zero_entries": 4,
+        "unit_entries": 1,
+        "Jarlskog": 0.0
+      }
+    ],
+    "all_CP_conserving": true,
+    "all_have_spectator_direction": true,
+    "finding": "The two residual-axis states give one real two-family rotation with a spectator direction, not full CKM."
+  },
+  "oriented_Wilson_phase_gate": {
+    "tested_pairs": 24,
+    "rows": [
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.37411866267784794,
+            0.7799727839695875,
+            0.5016748772889377
+          ],
+          [
+            0.7799727839695869,
+            0.02799858782155091,
+            0.6251868003618848
+          ],
+          [
+            0.5016748772889377,
+            0.6251868003618845,
+            0.597882749500601
+          ]
+        ],
+        "minimum_absolute_entry": 0.02799858782155091,
+        "zero_entries": 0,
+        "Jarlskog": 1.6588293239028218e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.5264988186243961,
+            0.6949518842914894,
+            0.489735512809541
+          ],
+          [
+            0.6949518842914891,
+            0.019972368552943025,
+            0.7187788136931238
+          ],
+          [
+            0.4897355128095406,
+            0.7187788136931239,
+            0.493473549928547
+          ]
+        ],
+        "minimum_absolute_entry": 0.019972368552943025,
+        "zero_entries": 0,
+        "Jarlskog": 1.2468324983583301e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.5264988186243961,
+            0.6949518842914894,
+            0.489735512809541
+          ],
+          [
+            0.6949518842914891,
+            0.019972368552943025,
+            0.7187788136931238
+          ],
+          [
+            0.4897355128095406,
+            0.7187788136931239,
+            0.493473549928547
+          ]
+        ],
+        "minimum_absolute_entry": 0.019972368552943025,
+        "zero_entries": 0,
+        "Jarlskog": -1.2468324983583301e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.37411866267784794,
+            0.7799727839695875,
+            0.5016748772889377
+          ],
+          [
+            0.7799727839695869,
+            0.02799858782155091,
+            0.6251868003618848
+          ],
+          [
+            0.5016748772889377,
+            0.6251868003618845,
+            0.597882749500601
+          ]
+        ],
+        "minimum_absolute_entry": 0.02799858782155091,
+        "zero_entries": 0,
+        "Jarlskog": -1.6588293239028218e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.4550384877769167,
+            0.7367461643283385,
+            0.5001450429517191
+          ],
+          [
+            0.7367461643283385,
+            0.003975696488593306,
+            0.6761577354322817
+          ],
+          [
+            0.5001450429517194,
+            0.6761577354322815,
+            0.5409858157344896
+          ]
+        ],
+        "minimum_absolute_entry": 0.003975696488593306,
+        "zero_entries": 0,
+        "Jarlskog": 1.4718044491490723e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.5187547355859653,
+            0.6944601301397229,
+            0.4986167385411902
+          ],
+          [
+            0.694460130139723,
+            0.0021394661221241793,
+            0.7195280052444321
+          ],
+          [
+            0.49861673854119054,
+            0.7195280052444321,
+            0.48338473053615844
+          ]
+        ],
+        "minimum_absolute_entry": 0.0021394661221241793,
+        "zero_entries": 0,
+        "Jarlskog": 8.646512325571898e-18
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.5187547355859653,
+            0.6944601301397229,
+            0.4986167385411902
+          ],
+          [
+            0.694460130139723,
+            0.0021394661221241793,
+            0.7195280052444321
+          ],
+          [
+            0.49861673854119054,
+            0.7195280052444321,
+            0.48338473053615844
+          ]
+        ],
+        "minimum_absolute_entry": 0.0021394661221241793,
+        "zero_entries": 0,
+        "Jarlskog": -8.646512325571898e-18
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.4550384877769167,
+            0.7367461643283385,
+            0.5001450429517191
+          ],
+          [
+            0.7367461643283385,
+            0.003975696488593306,
+            0.6761577354322817
+          ],
+          [
+            0.5001450429517194,
+            0.6761577354322815,
+            0.5409858157344896
+          ]
+        ],
+        "minimum_absolute_entry": 0.003975696488593306,
+        "zero_entries": 0,
+        "Jarlskog": -1.4718044491490723e-17
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.47857613190882997,
+            0.7217845126903079,
+            0.49999200314364656
+          ],
+          [
+            0.7217845126903077,
+            0.0008649111772260526,
+            0.6921173088205999
+          ],
+          [
+            0.4999920031436468,
+            0.6921173088206006,
+            0.5205589569139438
+          ]
+        ],
+        "minimum_absolute_entry": 0.0008649111772260526,
+        "zero_entries": 0,
+        "Jarlskog": -8.287370355936075e-18
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.5121566128477745,
+            0.6985699409238451,
+            0.49969554886345563
+          ],
+          [
+            0.6985699409238447,
+            0.0003209538434723839,
+            0.7155417071186595
+          ],
+          [
+            0.4996955488634557,
+            0.7155417071186603,
+            0.48816434099569733
+          ]
+        ],
+        "minimum_absolute_entry": 0.0003209538434723839,
+        "zero_entries": 0,
+        "Jarlskog": 6.786427973401454e-18
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.5121566128477745,
+            0.6985699409238451,
+            0.49969554886345563
+          ],
+          [
+            0.6985699409238447,
+            0.0003209538434723839,
+            0.7155417071186595
+          ],
+          [
+            0.4996955488634557,
+            0.7155417071186603,
+            0.48816434099569733
+          ]
+        ],
+        "minimum_absolute_entry": 0.0003209538434723839,
+        "zero_entries": 0,
+        "Jarlskog": -6.786427973401454e-18
+      },
+      {
+        "mode": "modular_generator",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.47857613190882997,
+            0.7217845126903079,
+            0.49999200314364656
+          ],
+          [
+            0.7217845126903077,
+            0.0008649111772260526,
+            0.6921173088205999
+          ],
+          [
+            0.4999920031436468,
+            0.6921173088206006,
+            0.5205589569139438
+          ]
+        ],
+        "minimum_absolute_entry": 0.0008649111772260526,
+        "zero_entries": 0,
+        "Jarlskog": 8.287370355936075e-18
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.2094070594251333,
+            0.5714040523825505,
+            0.79350242115807
+          ],
+          [
+            0.5714040523825502,
+            0.5870155495674061,
+            0.5735068905312969
+          ],
+          [
+            0.7935024211580698,
+            0.5735068905312968,
+            0.20357739100746117
+          ]
+        ],
+        "minimum_absolute_entry": 0.20357739100746117,
+        "zero_entries": 0,
+        "Jarlskog": 1.3877787807814457e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.4072974433406209,
+            0.35088360391072876,
+            0.8432019266787839
+          ],
+          [
+            0.3508836039107284,
+            0.7922747217637932,
+            0.4991807906567762
+          ],
+          [
+            0.8432019266787837,
+            0.4991807906567759,
+            0.19957216510441358
+          ]
+        ],
+        "minimum_absolute_entry": 0.19957216510441358,
+        "zero_entries": 0,
+        "Jarlskog": 1.0408340855860843e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.4072974433406209,
+            0.35088360391072876,
+            0.8432019266787839
+          ],
+          [
+            0.3508836039107284,
+            0.7922747217637932,
+            0.4991807906567762
+          ],
+          [
+            0.8432019266787837,
+            0.4991807906567759,
+            0.19957216510441358
+          ]
+        ],
+        "minimum_absolute_entry": 0.19957216510441358,
+        "zero_entries": 0,
+        "Jarlskog": -1.0408340855860843e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_length",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.2094070594251333,
+            0.5714040523825505,
+            0.79350242115807
+          ],
+          [
+            0.5714040523825502,
+            0.5870155495674061,
+            0.5735068905312969
+          ],
+          [
+            0.7935024211580698,
+            0.5735068905312968,
+            0.20357739100746117
+          ]
+        ],
+        "minimum_absolute_entry": 0.20357739100746117,
+        "zero_entries": 0,
+        "Jarlskog": -1.3877787807814457e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.40965459783513075,
+            0.5458458751484316,
+            0.7309140791200971
+          ],
+          [
+            0.5458458751484316,
+            0.4952993309951315,
+            0.6758186541515537
+          ],
+          [
+            0.7309140791200973,
+            0.6758186541515542,
+            0.09504607116973719
+          ]
+        ],
+        "minimum_absolute_entry": 0.09504607116973719,
+        "zero_entries": 0,
+        "Jarlskog": -2.7755575615628914e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.48160245907662086,
+            0.44797315764588974,
+            0.7532457244751691
+          ],
+          [
+            0.4479731576458899,
+            0.6128840626562873,
+            0.650917180423665
+          ],
+          [
+            0.7532457244751691,
+            0.6509171804236655,
+            0.09448652173290835
+          ]
+        ],
+        "minimum_absolute_entry": 0.09448652173290835,
+        "zero_entries": 0,
+        "Jarlskog": 2.42861286636753e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.48160245907662086,
+            0.44797315764588974,
+            0.7532457244751691
+          ],
+          [
+            0.4479731576458899,
+            0.6128840626562873,
+            0.650917180423665
+          ],
+          [
+            0.7532457244751691,
+            0.6509171804236655,
+            0.09448652173290835
+          ]
+        ],
+        "minimum_absolute_entry": 0.09448652173290835,
+        "zero_entries": 0,
+        "Jarlskog": -2.42861286636753e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "inverse_square",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.40965459783513075,
+            0.5458458751484316,
+            0.7309140791200971
+          ],
+          [
+            0.5458458751484316,
+            0.4952993309951315,
+            0.6758186541515537
+          ],
+          [
+            0.7309140791200973,
+            0.6758186541515542,
+            0.09504607116973719
+          ]
+        ],
+        "minimum_absolute_entry": 0.09504607116973719,
+        "zero_entries": 0,
+        "Jarlskog": 2.7755575615628914e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.46256472027410445,
+            0.5256252939254625,
+            0.713969137948911
+          ],
+          [
+            0.5256252939254623,
+            0.4859251708314746,
+            0.6982798713540109
+          ],
+          [
+            0.7139691379489108,
+            0.6982798713540112,
+            0.05151010889442114
+          ]
+        ],
+        "minimum_absolute_entry": 0.05151010889442114,
+        "zero_entries": 0,
+        "Jarlskog": 3.469446951953614e-18
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": 1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.49869816148748997,
+            0.473551940616721,
+            0.7259812003537939
+          ],
+          [
+            0.47355194061672123,
+            0.5526618431576609,
+            0.6857940264071388
+          ],
+          [
+            0.7259812003537934,
+            0.6857940264071388,
+            0.05136000464515024
+          ]
+        ],
+        "minimum_absolute_entry": 0.05136000464515024,
+        "zero_entries": 0,
+        "Jarlskog": -1.0408340855860843e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": 1,
+        "absolute_overlap": [
+          [
+            0.49869816148748997,
+            0.473551940616721,
+            0.7259812003537939
+          ],
+          [
+            0.47355194061672123,
+            0.5526618431576609,
+            0.6857940264071388
+          ],
+          [
+            0.7259812003537934,
+            0.6857940264071388,
+            0.05136000464515024
+          ]
+        ],
+        "minimum_absolute_entry": 0.05136000464515024,
+        "zero_entries": 0,
+        "Jarlskog": 1.0408340855860843e-17
+      },
+      {
+        "mode": "full_Wilson_Hermitian_part",
+        "kernel": "tunneling",
+        "orientation_up": -1,
+        "orientation_down": -1,
+        "absolute_overlap": [
+          [
+            0.46256472027410445,
+            0.5256252939254625,
+            0.713969137948911
+          ],
+          [
+            0.5256252939254623,
+            0.4859251708314746,
+            0.6982798713540109
+          ],
+          [
+            0.7139691379489108,
+            0.6982798713540112,
+            0.05151010889442114
+          ]
+        ],
+        "minimum_absolute_entry": 0.05151010889442114,
+        "zero_entries": 0,
+        "Jarlskog": -3.469446951953614e-18
+      }
+    ],
+    "full_support_pairs": 24,
+    "nonzero_CP_pairs": 0,
+    "maximum_absolute_Jarlskog": 2.7755575615628914e-17,
+    "finding": "Restoring the oriented Hermitian Wilson generator removes the spectator zeros and gives full three-family overlap, but every declared pair remains CP conserving. A complex matrix is not enough; the two sectors require a relative modular cocycle not removable by their common real structure."
+  },
+  "identifiability": {
+    "state_classes_after_axis_quotient": 6,
+    "unfixed_choices": [
+      "factor kernel",
+      "Wilson insertion sign",
+      "Gibbs-state derivation and beta",
+      "singlet energy or conditioning rule",
+      "relative up/down state assignment"
+    ]
+  },
+  "scientific_verdict": {
+    "positive": "Wilson angle plus factor geometry naturally creates a nonfactorizing state, and one sign branch is entangled.",
+    "negative": "Entanglement is sign dependent, the observable algebra is not unique, pure triplet readout requires conditioning, and all minimal spectral readouts retain commuting factors. Oriented Wilson generators create full mixing but still give zero CP.",
+    "next_gate": "Derive sign, beta and singlet energy from one parent action, then construct a relative modular cocycle for the two sectors and test whether it breaks the common antiunitary symmetry."
+  }
+}

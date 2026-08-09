@@ -1,0 +1,86 @@
+\chapter{Root--mass--condensate trilemma}
+
+Предыдущий consistency gate показал, что ambient torsion twist устраняет
+holonomy-обструкцию для самого pairing field. Теперь необходимо проверить
+всю Majorana vertex. Эта проверка даёт более сильный результат.
+
+\section{Три несовместимых требования}
+
+На generator \(y\) sterile root line имеет
+\[
+ r=\operatorname{Hol}_{N^c}(y)=i,
+ \qquad r^2=-1.
+\]
+Для scalar Yukawa vertex
+\[
+ \Phi N^cN^c
+\]
+bundle invariance требует
+\begin{equation}
+ \phi r^2=1,
+ \qquad\Longrightarrow\qquad
+ \phi=-1,
+\end{equation}
+где \(\phi\) --- holonomy pairing field. Но uniform covariantly constant
+nonzero condensate требует \(\phi=+1\). Поэтому order-four root, ordinary
+linear Majorana vertex и uniform parallel condensate не могут выполняться
+одновременно.
+
+\section{Почему torsion twist переносит обструкцию}
+
+Для twisted field
+\[
+ \Phi_{\mathrm{tw}}\in
+ \Gamma(L_{\mathrm{tor}}\otimes L_{B-L}^{-2})
+\]
+полный holonomy равен
+\[
+ \phi_{\mathrm{tw}}=(-1)\times(-1)=+1.
+\]
+Это действительно допускает parallel condensate. Однако vertex теперь
+имеет holonomy
+\[
+ \phi_{\mathrm{tw}}r^2=(+1)(-1)=-1
+\]
+и не является scalar functional на всём complement.
+
+Можно формально добавить torsion-odd Yukawa spurion \(Y_{\mathrm{tor}}\)
+с holonomy \(-1\). Тогда
+\[
+ Y_{\mathrm{tor}}\Phi_{\mathrm{tw}}N^cN^c
+\]
+инвариантен. Но spurion сам не имеет nowhere-zero parallel trivialization.
+Следовательно, знак не исчезает, а переносится в новый defect, zero locus
+или вручную выбранную trivialization.
+
+\begin{nogocriterion}[Root--mass--uniform-vacuum no-go]
+При \(r=i\) не существует одного scalar pairing field и scalar constant
+Yukawa coefficient, которые одновременно дают invariant linear Majorana
+vertex и uniform parallel nonzero condensate на всём core complement.
+\end{nogocriterion}
+
+\section{Выжившая физическая ветвь}
+
+No-go не уничтожает class-D defect route. Ordinary charge-two field с
+holonomy \(-1\) может существовать как nonuniform section с forced gradient
+или zero locus. Тогда Majorana mass является defect texture, а не
+homogeneous bulk parameter. Это возвращает программу к исходному
+тубулярному BdG-механизму, но теперь с более строгим условием: texture
+должна быть получена как lowest-action section, а не объявлена.
+
+\begin{protocol}[Следующий nonuniform-section gate]
+\begin{enumerate}
+ \item построить минимальную energy functional на solid-torus complement;
+ \item найти lowest-action section с holonomy \(-1\);
+ \item определить обязательный zero locus и winding;
+ \item вычислить BdG kernel и fluctuation determinant;
+ \item проверить, остаётся ли rank-one результат без torsion Yukawa spurion.
+\end{enumerate}
+\end{protocol}
+
+Таким образом, torsion twist не является полным rescue homogeneous
+\(B-L\)-модели. Он точно локализует место обструкции и показывает, что
+выжившая ветвь обязана быть defect-like.
+
+Машинный протокол сохранён в
+\texttt{s2t\_root\_mass\_condensate\_trilemma\_results.json}.

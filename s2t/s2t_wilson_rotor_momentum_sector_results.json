@@ -1,0 +1,226 @@
+{
+  "status": "quantized_rotor_momentum_sector_closes_the_two_gap_coefficients_at_operator_level",
+  "date": "2026-08-06",
+  "distinction": {
+    "holonomy_weight": "The Cartan weight q=1 controls the twisted circle determinant.",
+    "fixed_momentum": "The integer rotor momentum p controls the fixed-charge Routhian p^2/(2I).",
+    "conclusion": "These are different quantum numbers and must not be identified with each other or with the full SU2 Casimir."
+  },
+  "determinant_gate": {
+    "real_rotation_planes": 8,
+    "unit_holonomy_weight_on_every_plane": 1,
+    "normalized_trace_rank": 3,
+    "determinant_term": "8*log(2 - 2*c)/3",
+    "target_term": "8*log(2 - 2*c)/3",
+    "exact_match": true
+  },
+  "momentum_scan": {
+    "equation": "sum_i p_i^2 = 48",
+    "all_nonnegative_integer_solutions_up_to_p=7": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        3,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        2,
+        3,
+        3,
+        5
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        4,
+        5
+      ],
+      [
+        0,
+        0,
+        1,
+        2,
+        3,
+        3,
+        3,
+        4
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        2,
+        6
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        5
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        5
+      ],
+      [
+        1,
+        1,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3,
+        4
+      ]
+    ],
+    "positive_odd_solutions_up_to_p=15": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        3,
+        3,
+        5
+      ],
+      [
+        1,
+        1,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    ],
+    "positive_odd_solution_is_unique": false,
+    "minimal_maximum_momentum": 3,
+    "minimal_maximum_momentum_sectors": [
+      [
+        1,
+        1,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    ],
+    "minimal_sector_is_unique": true,
+    "selected_sector": [
+      1,
+      1,
+      1,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "multiplicities": {
+      "1": 3,
+      "3": 5
+    },
+    "all_momenta_are_odd": true,
+    "center_phase": "minus one for every rotor wavefunction under a half-turn"
+  },
+  "routhian_gate": {
+    "momentum_squared_sum": 48,
+    "normalized_inverse_term": "8/(1 - c)",
+    "target_inverse_term": "8/(1 - c)",
+    "exact_match": true
+  },
+  "scientific_verdict": {
+    "positive": "Eight unit-weight rotation planes give the exact logarithmic determinant, while the unique positive odd momentum multiset with the smallest possible maximum momentum, (1,1,1,3,3,3,3,3), gives the exact inverse coefficient. The antiperiodic parity is preserved.",
+    "negative": "No parent action or symmetry yet selects this fixed-momentum sector, and a fixed-charge ensemble must still be derived without changing the fluctuation determinant or the BV/BRST content.",
+    "next_gate": "Construct the canonical boundary path integral projected onto this momentum sector and verify its measure, zero modes, and coupling to the Wilson axis."
+  }
+}

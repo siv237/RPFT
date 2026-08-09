@@ -1,0 +1,359 @@
+{
+  "status": "delta2_connection_full_C11_block_assembled_nonzero_all_pairs_nonconnection_blocks_missing",
+  "inputs": [
+    "s2t_c6_l21_delta2_connection_product_C11_moment_results.json",
+    "s2t_c6_l21_delta2_connection_single_gammaAB_C11_moment_results.json",
+    "s2t_c6_l21_delta2_connection_metric_cross_C11_moment_results.json"
+  ],
+  "computed_files": [
+    "s2t_c6_l21_delta2_connection_full_C11_table_data.json"
+  ],
+  "basis_conventions": {
+    "Killing_basis": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ],
+    "strain_basis_raw_trace": [
+      "D00",
+      "D11",
+      "D22",
+      "D33",
+      "S01",
+      "S02",
+      "S03",
+      "S12",
+      "S13",
+      "S23"
+    ],
+    "normalization_warning": "Raw Sym^2(R4) strain basis; off-diagonal Sij need 1/sqrt(2) scaling for trace-orthonormal strain coordinates. Killing normalization follows prior quotient-normalized convention."
+  },
+  "assembly_formula": "C_conn2[1,1](A,B)=C_product(A,B)+C_single_GammaAB(A,B)+C_metric_cross(A,B)",
+  "results": {
+    "symmetric_strain_pairs": 55,
+    "all_pairs_nonzero": true,
+    "zero_pairs": [],
+    "rank_distribution": {
+      "6": 10,
+      "4": 39,
+      "2": 6
+    },
+    "nonzero_raw_entries_total": 228,
+    "slot_rank_distributions": {
+      "product": {
+        "3": 4,
+        "1": 6,
+        "4": 27,
+        "2": 12,
+        "5": 6
+      },
+      "single_GammaAB": {
+        "6": 4,
+        "2": 12,
+        "4": 36,
+        "0": 3
+      },
+      "metric_cross": {
+        "6": 16,
+        "4": 39
+      }
+    },
+    "sample_full_pair_matrices": [
+      {
+        "pair": "D00,D00",
+        "rank": 6,
+        "nonzero_count": 6,
+        "slot_ranks": {
+          "product": 3,
+          "single_GammaAB": 6,
+          "metric_cross": 6
+        },
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "5/2"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "5/2"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "5/2"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "-11/6"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "-11/6"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "-11/6"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D11",
+        "rank": 6,
+        "nonzero_count": 6,
+        "slot_ranks": {
+          "product": 1,
+          "single_GammaAB": 2,
+          "metric_cross": 6
+        },
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "-7/6"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "1/3"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "1/3"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "1/3"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "1/3"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "-5/6"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D22",
+        "rank": 6,
+        "nonzero_count": 6,
+        "slot_ranks": {
+          "product": 1,
+          "single_GammaAB": 2,
+          "metric_cross": 6
+        },
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "1/3"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "-7/6"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "1/3"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "1/3"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "-5/6"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "1/3"
+          }
+        ]
+      },
+      {
+        "pair": "D00,D33",
+        "rank": 6,
+        "nonzero_count": 6,
+        "slot_ranks": {
+          "product": 1,
+          "single_GammaAB": 2,
+          "metric_cross": 6
+        },
+        "first_entries": [
+          {
+            "row": "E01",
+            "col": "E01",
+            "value": "1/3"
+          },
+          {
+            "row": "E02",
+            "col": "E02",
+            "value": "1/3"
+          },
+          {
+            "row": "E03",
+            "col": "E03",
+            "value": "-7/6"
+          },
+          {
+            "row": "E12",
+            "col": "E12",
+            "value": "-5/6"
+          },
+          {
+            "row": "E13",
+            "col": "E13",
+            "value": "1/3"
+          },
+          {
+            "row": "E23",
+            "col": "E23",
+            "value": "1/3"
+          }
+        ]
+      },
+      {
+        "pair": "D00,S01",
+        "rank": 4,
+        "nonzero_count": 4,
+        "slot_ranks": {
+          "product": 4,
+          "single_GammaAB": 4,
+          "metric_cross": 4
+        },
+        "first_entries": [
+          {
+            "row": "E02",
+            "col": "E12",
+            "value": "13/6"
+          },
+          {
+            "row": "E03",
+            "col": "E13",
+            "value": "13/6"
+          },
+          {
+            "row": "E12",
+            "col": "E02",
+            "value": "13/6"
+          },
+          {
+            "row": "E13",
+            "col": "E03",
+            "value": "13/6"
+          }
+        ]
+      }
+    ],
+    "cancellation_diagnostics_sample": [
+      {
+        "pair": "('D00', 'D00')",
+        "rank": 6,
+        "full_l1": "13",
+        "slot_l1_sum": "25"
+      },
+      {
+        "pair": "('D00', 'D11')",
+        "rank": 6,
+        "full_l1": "10/3",
+        "slot_l1_sum": "8"
+      },
+      {
+        "pair": "('D00', 'D22')",
+        "rank": 6,
+        "full_l1": "10/3",
+        "slot_l1_sum": "8"
+      },
+      {
+        "pair": "('D00', 'D33')",
+        "rank": 6,
+        "full_l1": "10/3",
+        "slot_l1_sum": "8"
+      },
+      {
+        "pair": "('D00', 'S01')",
+        "rank": 4,
+        "full_l1": "26/3",
+        "slot_l1_sum": "50/3"
+      },
+      {
+        "pair": "('D00', 'S02')",
+        "rank": 4,
+        "full_l1": "26/3",
+        "slot_l1_sum": "50/3"
+      },
+      {
+        "pair": "('D00', 'S03')",
+        "rank": 4,
+        "full_l1": "26/3",
+        "slot_l1_sum": "50/3"
+      },
+      {
+        "pair": "('D00', 'S12')",
+        "rank": 4,
+        "full_l1": "16/3",
+        "slot_l1_sum": "44/3"
+      },
+      {
+        "pair": "('D00', 'S13')",
+        "rank": 4,
+        "full_l1": "16/3",
+        "slot_l1_sum": "44/3"
+      },
+      {
+        "pair": "('D00', 'S23')",
+        "rank": 4,
+        "full_l1": "16/3",
+        "slot_l1_sum": "44/3"
+      }
+    ]
+  },
+  "interpretation": [
+    "The three second-connection subslots do not cancel each other inside C_conn2[1,1].",
+    "The full connection block is nonzero for every one of the 55 raw symmetric strain pairs.",
+    "Ranks are 2, 4, or 6 after assembly, with no zero-rank pair.",
+    "This is a real C11 connection-block result, but not a full delta2 Delta_1 result because Ricci, projector, Hilbert/basis, local/compensation, and principal/nonconnection pieces remain outside this block."
+  ],
+  "pass_fail": [
+    {
+      "test": "connection_subslots_added",
+      "status": "pass",
+      "meaning": "Product, single GammaAB, and metric-cross tables were added entry-wise in the shared raw basis."
+    },
+    {
+      "test": "internal_connection_cancellation",
+      "status": "fail",
+      "meaning": "The assembled connection block is nonzero for all 55 symmetric strain pairs."
+    },
+    {
+      "test": "full_C_conn2_11_available",
+      "status": "pass",
+      "meaning": "The second-connection rough-Laplacian contribution to C11 is available as a raw-basis table."
+    },
+    {
+      "test": "full_delta2_Delta1_C11_available",
+      "status": "not_yet",
+      "meaning": "Non-connection delta2 pieces still have to be computed and combined."
+    }
+  ],
+  "plain_language": "We assembled the three connection gears into one connection machine. It does not cancel internally: every strain-pair still moves. This is the first full connection-block table, but the larger delta2 machine still has other gears outside connection.",
+  "verdict": "The second-connection C_conn2[1,1] block has been assembled from product, single-GammaAB, and metric-cross subslot tables. In the raw Sym^2(R4) strain basis it is nonzero for all 55 symmetric deformation pairs, with rank distribution 2:6, 4:39, 6:10. Therefore there is no internal cancellation of the second-connection block. C6 remains open because the Ricci, projector, Hilbert/basis, principal, and compensation pieces have not yet been added."
+}

@@ -1,0 +1,105 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=2.3cm}
+\setlength{\emergencystretch}{2em}
+
+\newtheorem{proposition}{Предложение}
+\newtheorem{nogocriterion}{Критерий провала}
+
+\title{Spin-структуры и счёт поколений\\
+Третий gate гипотезы меню состояний}
+\author{}
+\date{4 августа 2026 г.}
+
+\begin{document}
+\maketitle
+
+\section{Проблема}
+
+После положительного \(SU(5)\)-gate остаётся вопрос о трёх поколениях. Для
+\[
+K=\mathbb{RP}^3\times S^1
+\]
+пространство spin-структур является torsor над
+\[
+H^1(K,\mathbb Z_2)\cong\mathbb F_2^2,
+\]
+поэтому содержит четыре элемента. Формула \(4-1=3\) приобретает смысл только если один reference sector выделяется до сравнения с наблюдаемым числом поколений.
+
+\section{Bounding reference}
+
+Пространство \(\mathbb{RP}^3=L(2,1)\) является границей ориентированного disk bundle над \(S^2\) с Euler number \(2\). Это заполнение стягивается на \(S^2\), имеет тривиальную первую cohomology и является spin, поскольку Euler class чётен. Следовательно, его единственная spin-структура выделяет одну из двух spin-структур границы.
+
+На окружности диск \(D^2\) аналогично выделяет bounding, или antiperiodic, spin-структуру. Поэтому product rule выделяет ровно одну пару
+\[
+s_{ref}=(s_{\mathbb{RP}^3}^{bound},s_{S^1}^{bound})
+\]
+среди четырёх product spin-структур.
+
+\begin{proposition}[Геометрический счёт трёх nonreference sectors]
+Если стандартные factor fillings являются частью menu-модели, то существует одна factorwise bounding reference spin-структура и ровно три nonreference spin-сектора.
+\end{proposition}
+
+Это первый случай, когда число три возникает не простым вычитанием выбранного элемента, а после предварительного геометрического критерия.
+
+\section{Абстрактная симметрия тройки}
+
+После выбора reference torsor превращается в vector space \(\mathbb F_2^2\). Его три ненулевых элемента переставляются группой
+\[
+GL(2,2),
+\qquad
+|GL(2,2)|=6,
+\qquad
+GL(2,2)\cong S_3.
+\]
+Таким образом, на абстрактном уровне три nonreference labels образуют естественную orbit и допускают permutation symmetry трёх поколений.
+
+\section{Геометрический obstruction}
+
+Но фундаментальная группа до редукции по модулю два равна
+\[
+\pi_1(K)=\mathbb Z_2\times\mathbb Z.
+\]
+Её автоморфизм обязан сохранять единственный torsion subgroup \(\mathbb Z_2\). Поэтому не вся группа \(GL(2,2)\) поднимается до геометрической автоморфизмной группы \(K\).
+
+На spin labels \((p,q)\in\mathbb F_2^2\) допустимое нетривиальное преобразование имеет вид
+\[
+(p,q)\longmapsto(p,q+p).
+\]
+Три ненулевых labels распадаются на орбиты размеров
+\[
+1+2,
+\]
+а не на одну orbit размера три. Чистый circle twist выделяется отдельно, тогда как два сектора с \(\mathbb{RP}^3\)-torsion twist образуют пару.
+
+\begin{nogocriterion}[Провал автоматической эквивалентности поколений]
+Топология \(K\) даёт правильное число трёх nonreference spin-секторов, но не делает их тремя эквивалентными поколениями. Полная \(S_3\)-симметрия требует дополнительного emergent действия, не следующего из \(\operatorname{Aut}(\mathbb Z_2\times\mathbb Z)\).
+\end{nogocriterion}
+
+\section{Спектральная проверка различимости}
+
+Две spin-структуры круглого \(\mathbb{RP}^3\) имеют противоположные Dirac \(\eta\)-invariants
+\[
+\eta_D=\pm\frac14.
+\]
+На \(S^1\) bounding структура имеет half-integer gap, а nonbounding periodic структура содержит нулевую моду. Следовательно, четыре product structures спектрально различимы; их вырождение в поколенческую тройку не возникает автоматически.
+
+\section{Вердикт}
+
+Третий gate даёт смешанный, но сильный результат:
+\begin{itemize}
+    \item уникальная bounding reference structure может быть выведена из стандартных заполнений;
+    \item после её удаления остаются ровно три spin-sector labels;
+    \item абстрактно они несут естественное действие \(S_3\);
+    \item геометрические автоморфизмы самого \(K\) реализуют только orbit split \(1+2\).
+\end{itemize}
+
+Следующий gate должен проверить, может ли уже найденный \(SU(5)\)-fiber и его algebra переходов восстановить полное \(S_3\)-действие на трёх nonreference sectors без отдельного постулата family symmetry. Если нет, идея трёх поколений закрывается на уровне красивого счёта, но не физического механизма.
+
+\end{document}

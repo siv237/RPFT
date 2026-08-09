@@ -1,0 +1,118 @@
+{
+  "status": "delta2_connection_product_terms_expansion_family_fixed_integrals_missing",
+  "inputs": [
+    "s2t_c6_l21_delta2_connection_laplacian_insertion_results.json",
+    "s2t_c6_l21_delta2_gamma_expansion_formula_results.json",
+    "s2t_c6_l21_delta2_c11_setup_results.json"
+  ],
+  "operator_convention": {
+    "rough_laplacian_part": "L_rough alpha_c = -g^{ij} nabla_i nabla_j alpha_c",
+    "one_form_connection_variation": "D_A(nabla_i alpha_j) = - Gamma_A^d_ij alpha_d",
+    "second_derivative_variation_object": "D_A(nabla_i nabla_j alpha_c) at fixed alpha components",
+    "background_nabla": "Use the round L(2,1) background covariant derivative nabla to write the Levi-Civita connection difference tensor."
+  },
+  "product_term_source": {
+    "first_connection_template": {
+      "T_A_ijc(alpha)": "D_A(nabla_i nabla_j alpha_c)",
+      "expanded": "- (nabla_i Gamma_A^d_jc) alpha_d - Gamma_A^d_jc nabla_i alpha_d - Gamma_A^d_ij nabla_d alpha_c - Gamma_A^d_ic nabla_j alpha_d",
+      "meaning": "This is the first-variation connection insertion before inverse-metric contraction."
+    },
+    "product_slot": {
+      "slot": "Gamma_A_Gamma_B_products",
+      "formula": "L_conn2_product_AB alpha_c = -g^{ij}[D_A T_B_ijc(alpha) + D_B T_A_ijc(alpha)]_product_only",
+      "includes": [
+        "Gamma_A acting on derivative indices inside T_B",
+        "Gamma_A acting on one-form component indices inside T_B",
+        "Gamma_A multiplying nabla Gamma_B and Gamma_B nabla alpha terms, plus A<->B"
+      ],
+      "status": "slot_identified_product_expansion_pending"
+    },
+    "first_connection_formula": "Gamma_A^k_ij = 1/2 g^{kl} C_A_ijl"
+  },
+  "expanded_product_families": [
+    {
+      "family": "derivative_index_products",
+      "schematic_terms": [
+        "+ Gamma_A^p_ij Gamma_B^d_pc alpha_d + A<->B",
+        "+ Gamma_A^p_ii_like acting on the first derivative index of T_B, with contraction by g^{ij}; keep explicit indices before simplifying"
+      ],
+      "meaning": "When D_A acts on the derivative indices of T_B, connection factors multiply Gamma_B alpha or Gamma_B nabla alpha terms.",
+      "status": "family_fixed_exact_index_cleanup_pending"
+    },
+    {
+      "family": "one_form_component_products",
+      "schematic_terms": [
+        "+ Gamma_A^p_ic Gamma_B^d_jp alpha_d + A<->B",
+        "+ Gamma_A^p_jc Gamma_B^d_ip alpha_d + A<->B"
+      ],
+      "meaning": "The variation of the one-form component connection index produces Gamma_A Gamma_B alpha contractions.",
+      "status": "family_fixed_exact_index_cleanup_pending"
+    },
+    {
+      "family": "mixed_gradient_products",
+      "schematic_terms": [
+        "+ Gamma_A Gamma_B nabla alpha terms from D_A acting on nabla alpha inside T_B, plus A<->B",
+        "+ Gamma_A nabla(Gamma_B) alpha and Gamma_B nabla(Gamma_A) alpha terms only if not already assigned to single Gamma_AB derivative bookkeeping"
+      ],
+      "meaning": "These terms decide whether product pieces reduce to existing Killing derivative identities or require new tensor integrals.",
+      "status": "family_fixed_derivative_assignment_pending"
+    }
+  ],
+  "double_counting_guardrails": [
+    "Do not include principal second-symbol terms; those are already in delta2_principal_AB.",
+    "Do not include single Gamma_AB derivative terms; those belong to L_conn2_single_AB.",
+    "Do not include metric-cross terms; those belong to L_conn2_metric_cross_AB.",
+    "Symmetrize A,B exactly once; do not add an extra factor of two after summing A<->B."
+  ],
+  "C11_reduction_plan": {
+    "target": {
+      "name": "C_delta2[1,1]",
+      "shell": "n=1 coexact Killing one-forms on L(2,1)",
+      "degeneracy": 6,
+      "lambda": 4,
+      "matrix_shape_per_symmetric_deformation_pair": [
+        6,
+        6
+      ],
+      "entries_per_pair": 36,
+      "trace_weight_lambda_inverse": 0.25,
+      "deformation_pairs": 55,
+      "raw_entries_all_pairs": 1980
+    },
+    "matrix_template": "C_conn2[1,1]_{rs}(A,B)=<E_r, L_conn2_AB E_s>_L21",
+    "basis": [
+      "E01",
+      "E02",
+      "E03",
+      "E12",
+      "E13",
+      "E23"
+    ],
+    "normalization": "quotient-orthonormal states; no extra global cover factor in trace",
+    "next_reduction_tests": [
+      "replace alpha by each Killing one-form E_rs and use nabla_i E_j antisymmetry identities",
+      "classify terms as q_A q_B overlaps, grad q_A grad q_B overlaps, Hessian/q mixed overlaps, or genuinely new tensor integrals",
+      "check whether trace direction and traceless P02 directions decouple as expected",
+      "build symbolic/index table before numerical integration over 55 symmetric A,B pairs"
+    ]
+  },
+  "pass_fail": [
+    {
+      "test": "product_families_named",
+      "status": "pass",
+      "meaning": "Gamma_A Gamma_B product contribution is split into derivative-index, one-form-component, and mixed-gradient families."
+    },
+    {
+      "test": "exact_index_table_completed",
+      "status": "not_yet",
+      "meaning": "The family-level expressions still need exact index cleanup before integration."
+    },
+    {
+      "test": "C11_product_integrals_evaluated",
+      "status": "not_yet",
+      "meaning": "No C11 product-term matrix entries have been computed."
+    }
+  ],
+  "plain_language": "The dirty double-gear piece is now sorted into three bins. We still have to count the teeth in each bin before multiplying against the six C11 basis vectors.",
+  "verdict": "The Gamma_A Gamma_B product part of the second-connection sprint is now organized into concrete term families with double-counting guardrails. This advances the rough-Laplacian insertion toward a C11 reduction plan, but it is still not a matrix computation: exact index cleanup and integrals against the six n=1 Killing states remain open."
+}

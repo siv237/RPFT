@@ -1,0 +1,297 @@
+{
+  "status": "the_minimal_C4_repairs_vertex_bipartiteness_but_is_incompatible_with_the_canonical_affine_triplet_and_does_not_derive_CKM",
+  "date": "2026-08-06",
+  "blind_protocol": {
+    "CKM_loaded_before_candidate_menu": false,
+    "candidate_auxiliary_masses": [
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      3.141592653589793,
+      6.283185307179586,
+      9.869604401089358
+    ],
+    "flux_source": "conditional transfer from the pre-existing continuous Wilson saddle",
+    "edge_weights": "all four C4 edges fixed to one"
+  },
+  "minimal_graph_gate": {
+    "grading": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "required_A3_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "all_admissible_cyclic_lifts": [
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "edge_count": 4,
+        "incidence_rank": 3,
+        "cycle_rank": 1
+      }
+    ],
+    "minimal_lifts": [
+      {
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "edge_count": 4,
+        "incidence_rank": 3,
+        "cycle_rank": 1
+      }
+    ],
+    "unique_minimal_lift": true,
+    "finding": "A bipartite graph has no odd cycle. Keeping A3 and adding the fewest vertices and edges gives the unique square 0-1-2-3-0."
+  },
+  "canonical_triplet_gate": {
+    "canonical_decomposition": "C^4=span{u_uniform} direct_sum u_uniform^perp",
+    "uniform_vector": "u=(1,1,1,1)/2",
+    "triplet_projector": "P_3=I-u u^dagger",
+    "flux_adjacency_triplet_leakage_squared": "||(I-u u^dagger) A_C4(Phi) u||^2=(1-cos(Phi))(3+cos(Phi))/4",
+    "leakage_zero_condition": "Phi=0 mod 2pi",
+    "target_flux_leakage_squared": 0.9905101416821067,
+    "grading_projector_commutator_norm_squared": 2,
+    "grading_finding": "Gamma maps the uniform singlet into the sum-zero triplet, so the canonical 1+3 decomposition is not a graded decomposition for Gamma=diag(1,-1,1,-1).",
+    "coordinate_auxiliary_singlet_overlap_squared": "1/4",
+    "coordinate_auxiliary_triplet_overlap_squared": "3/4",
+    "schur_finding": "Eliminating coordinate vertex 3 does not eliminate the canonical affine singlet; it removes a vector containing only one quarter singlet probability."
+  },
+  "canonical_spectral_level_gate": {
+    "four_mode_factor_laplacian_spectrum": [
+      0.0,
+      0.3183098861837907,
+      0.6366197723675814,
+      0.954929658551372
+    ],
+    "uniform_singlet_level": 0.0,
+    "static_elimination_at_lambda_zero": "undefined",
+    "finding": "The canonical fourth mode is the zero uniform mode, not a pre-existing heavy auxiliary state. A static Schur inverse at lambda=0 therefore requires an additional singlet mass operator and its normalization."
+  },
+  "schur_gate": {
+    "grading": "Gamma=diag(1,-1,1,-1)",
+    "parent_odd_part_anticommutes": true,
+    "energy_dependent_schur": "M_eff(lambda)=L3+D_A3-v v^dagger/(mu-lambda)",
+    "determinant_identity": "det(M4-lambda I)=(mu-lambda) det(M_eff(lambda)-lambda I)",
+    "static_complementary_upper": "M_u=L3-v v^dagger/mu, v=(1,0,exp(i Phi))^T",
+    "lower_path": "M_d=L3+H_10+H_21",
+    "physical_invariant": "1248*i*(2*mu-1)*(15*mu-8)*sin(Phi)/mu^3",
+    "degeneracy_zeros": [
+      "mu=1/2",
+      "mu=8/15"
+    ]
+  },
+  "gauge_gate": {
+    "spectrum_invariant": true,
+    "single_cycle_flux": 2.5067553477766635
+  },
+  "random_numeric_gate": {
+    "seed": 20260806,
+    "sample_count": 25,
+    "auxiliary_mass_interval": [
+      0.6,
+      20.0
+    ],
+    "maximum_physical_formula_error": 3.639158519018701e-12,
+    "maximum_Jarlskog_identity_error": 1.0920917507578622e-11
+  },
+  "shared_parent_warning": {
+    "same_operator_mixing_angles_degrees": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "same_operator_Jarlskog": 0.0,
+    "finding": "One common C4 operator with one common Schur reduction gives the same left eigenbasis in both sectors and therefore identity mixing. Distinct upper/lower path readouts require additional sector projectors or representations."
+  },
+  "complementary_path_candidate": {
+    "interpretation": "The lower sector is assigned the physical A3 path; the upper sector is assigned the auxiliary path and statically reduced at lambda=0. This assignment is a test ansatz, not yet a consequence of one action.",
+    "blind_rows": [
+      {
+        "auxiliary_mass": 1.0,
+        "angles_degrees": [
+          47.392251237605464,
+          35.98120907153542,
+          10.675967018648045
+        ],
+        "Jarlskog": 0.040351705068923105,
+        "physical_trace_direct": {
+          "real": 8.921865496921559e-14,
+          "imaginary": 5180.854451318011
+        },
+        "physical_trace_formula_error": 9.138602633595267e-13,
+        "Jarlskog_identity_error": 2.729942395247886e-12
+      },
+      {
+        "auxiliary_mass": 2.0,
+        "angles_degrees": [
+          42.72417471180505,
+          35.574806601716446,
+          7.0633364336190345
+        ],
+        "Jarlskog": 0.025520659097831733,
+        "physical_trace_direct": {
+          "real": 3.714844099793656e-14,
+          "imaginary": 6106.007031910513
+        },
+        "physical_trace_formula_error": 9.102530523000759e-13,
+        "Jarlskog_identity_error": 3.714844099793656e-14
+      },
+      {
+        "auxiliary_mass": 3.0,
+        "angles_degrees": [
+          40.71281727526765,
+          35.614721611764466,
+          7.499751600326381
+        ],
+        "Jarlskog": 0.01804583110842701,
+        "physical_trace_direct": {
+          "real": 3.156036678403584e-14,
+          "imaginary": 5071.206738062602
+        },
+        "physical_trace_formula_error": 2.7286666285438372e-12,
+        "Jarlskog_identity_error": 5.457059474539428e-12
+      },
+      {
+        "auxiliary_mass": 4.0,
+        "angles_degrees": [
+          39.63221481523588,
+          35.69210299352413,
+          8.278234000859742
+        ],
+        "Jarlskog": 0.013840520654816228,
+        "physical_trace_direct": {
+          "real": -2.7890961777653986e-14,
+          "imaginary": 4209.4442416958855
+        },
+        "physical_trace_formula_error": 9.099222594825947e-13,
+        "Jarlskog_identity_error": 2.7286266543311e-12
+      },
+      {
+        "auxiliary_mass": 3.141592653589793,
+        "angles_degrees": [
+          40.52131883590282,
+          35.6255486115688,
+          7.613665505582632
+        ],
+        "Jarlskog": 0.01730892194039415,
+        "physical_trace_direct": {
+          "real": -1.926003688523813e-14,
+          "imaginary": 4933.914329140374
+        },
+        "physical_trace_formula_error": 3.638029789579693e-12,
+        "Jarlskog_identity_error": 1.8190913663785365e-12
+      },
+      {
+        "auxiliary_mass": 6.283185307179586,
+        "angles_degrees": [
+          38.41028447739028,
+          35.82788189835383,
+          9.484728881039217
+        ],
+        "Jarlskog": 0.008969435789497217,
+        "physical_trace_direct": {
+          "real": 7.462009528731097e-14,
+          "imaginary": 2976.5197858241772
+        },
+        "physical_trace_formula_error": 9.125506951253257e-13,
+        "Jarlskog_identity_error": 2.274960875944268e-12
+      },
+      {
+        "auxiliary_mass": 9.869604401089358,
+        "angles_degrees": [
+          37.615184208952606,
+          35.944262164216276,
+          10.402256263576595
+        ],
+        "Jarlskog": 0.00575253511323201,
+        "physical_trace_direct": {
+          "real": -4.3172124241428624e-14,
+          "imaginary": 2020.3196006396074
+        },
+        "physical_trace_formula_error": 4.567920593112081e-13,
+        "Jarlskog_identity_error": 3.1835242006440136e-12
+      }
+    ],
+    "all_rows_pass_exact_formula": true,
+    "all_rows_pass_Jarlskog_identity": true
+  },
+  "post_blind_control": {
+    "PDG_2024_angles_degrees": [
+      13.003466199369875,
+      2.397381940018274,
+      0.21382834550537572
+    ],
+    "wide_positive_mass_scan": {
+      "log_mu_interval": [
+        -8.0,
+        12.0
+      ],
+      "sample_count": 4001,
+      "best_row": {
+        "auxiliary_mass": 162754.79141900392,
+        "angles_degrees": [
+          36.206108762749544,
+          36.2060050132165,
+          12.19988968467915
+        ],
+        "Jarlskog": 3.5062518329888326e-07,
+        "physical_trace_direct": {
+          "real": -1.0663768361247762e-13,
+          "imaginary": 0.13642314778801612
+        },
+        "physical_trace_formula_error": 1.0663769806087709e-13,
+        "Jarlskog_identity_error": 4.272580991836523e-12,
+        "post_blind_angle_objective": 0.5559424126401658
+      },
+      "minimum_theta_13_degrees": 7.032925647483773
+    },
+    "finding": "The unit-edge complementary-path texture remains non-hierarchical across the blind menu. A wide post-blind scan of the one undetermined auxiliary mass finds no CKM-like point and cannot replace a proof over all positive masses."
+  },
+  "scientific_verdict": {
+    "positive": "C4 is the unique minimal bipartite lift, carries one gauge-invariant flux, keeps every edge grading-odd, and produces the former effective chord through a Schur complement with tied diagonal shifts.",
+    "negative": "The coordinate C4 grading does not descend to the canonical affine triplet, and nonzero flux mixes the uniform singlet with that triplet. Eliminating one coordinate vertex is not elimination of the affine singlet. The exact Schur complement is energy-dependent, while a static version needs a new singlet mass; one shared reduction gives no mixing and the split readout is underived.",
+    "next_gate": "Either abandon the canonical affine 1+3 generation mechanism and rebuild generation counting on the four-state graded carrier, or construct a larger graded space in which the affine triplet and its singlet complement are invariant before any further CKM comparison."
+  }
+}

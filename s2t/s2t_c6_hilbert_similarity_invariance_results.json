@@ -1,0 +1,44 @@
+{
+  "status": "Hilbert_similarity_second_order_cancels_representation_change_in_logdet",
+  "setup": {
+    "witness": "A=diag(1,-1,0,0)",
+    "dimension": 36,
+    "operator_0": "diag(4 on n1, 16 on n3)",
+    "Gram_path": "G(eps)=I+eps H for the isolated representation test",
+    "operator_path": "L(eps)=L0+eps L1 with L2=0",
+    "selfadjoint_representation": "A(eps)=G(eps)^(1/2)L(eps)G(eps)^(-1/2)",
+    "epsilon": 0.0001
+  },
+  "first_order_checks": {
+    "gap_identity_residual_max_abs": 6.887530891868444e-15,
+    "raw_forward_norm_squared": 79.99999999999999,
+    "selfadjoint_cross_norm_squared": 180.00000002104255
+  },
+  "trace_terms": {
+    "raw_trace_square": 4.999999999999999,
+    "selfadjoint_trace_square": 5.625000001219846,
+    "similarity_second_trace": 0.6250000961216529,
+    "raw_logdet_hessian": -4.999999999999999,
+    "selfadjoint_logdet_hessian": -4.999999905098193,
+    "hessian_difference": 9.49018064133611e-08
+  },
+  "finite_difference_checks": {
+    "raw_logdet_hessian": -4.9999869133898756,
+    "selfadjoint_logdet_hessian": -4.9999869133898756,
+    "finite_difference_hessian_difference": 0.0,
+    "logdet_similarity_plus_error": 0.0,
+    "logdet_similarity_minus_error": 1.4210854715202004e-14
+  },
+  "interpretation": {
+    "first_order_80_to_180": "representation-dependent cross-block norm, not a determinant change by itself",
+    "second_order_compensation": "the similarity A2 term restores equality of the logdet Hessian",
+    "Hilbert_rescue_status": "neutral_for_the_determinant_by_similarity_invariance",
+    "remaining_physical_question": "the genuine L_AB operator and same-scheme determinant contribution"
+  },
+  "decision": {
+    "theory_effect": "restores_neutral_outlook_after_apparent_first_order_worsening",
+    "C6_status": "still_open",
+    "next_required_object": "compute genuine mixed second operator L_AB in a fixed quotient identification and combine it with the basis-invariant raw trace-square"
+  },
+  "verdict": "The apparent increase of the cross-shell norm from 80 to 180 is exactly a representation effect. Because G^(1/2)L G^(-1/2) is similar to L, its determinant and log-determinant Hessian are unchanged. The explicit second-order calculation shows that the additional self-adjoint trace-square is compensated by the second derivative of the similarity representation. Hilbert/basis transport therefore neither rescues nor worsens C6 at determinant level. The decisive remaining quantity is the genuine mixed second operator L_AB together with same-scheme Maxwell--ghost bookkeeping."
+}

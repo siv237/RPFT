@@ -1,0 +1,120 @@
+{
+  "operator": "Dirac-type with U(1)-like gauge holonomy doublet on S^3 x S^1",
+  "parameters": {
+    "R3": 1.0,
+    "R1": 1.0,
+    "alpha": 0.5,
+    "charges": [
+      -1.0,
+      1.0
+    ],
+    "betas": [
+      0.0,
+      0.125,
+      0.25,
+      0.375,
+      0.5
+    ],
+    "n_max": 120,
+    "m_max": 120,
+    "fit_window": [
+      0.03,
+      0.035,
+      0.04,
+      0.045,
+      0.05,
+      0.055,
+      0.06
+    ]
+  },
+  "beta_sweep": [
+    {
+      "alpha": 0.5,
+      "beta": 0.0,
+      "theta_plus_over_pi": 1.0,
+      "theta_minus_over_pi": 1.0,
+      "a0_fit": 496.1004268847966,
+      "a2_fit": -248.05021344236997,
+      "a4_fit": -3.2042737195355537e-10,
+      "a0_expected": 496.10042688479706,
+      "a2_expected": -248.05021344239853,
+      "a0_rel_err": 9.166437403450657e-16,
+      "a2_rel_err": 1.1515336988084886e-13,
+      "a2_over_4pi_fit": -19.739208802176442,
+      "a2_over_4pi_expected": -19.739208802178716,
+      "effective_circle_gap": 0.5
+    },
+    {
+      "alpha": 0.5,
+      "beta": 0.125,
+      "theta_plus_over_pi": 1.25,
+      "theta_minus_over_pi": 0.75,
+      "a0_fit": 496.10042688479626,
+      "a2_fit": -248.05021344235365,
+      "a4_fit": -4.929156925224688e-10,
+      "a0_expected": 496.10042688479706,
+      "a2_expected": -248.05021344239853,
+      "a0_rel_err": 1.6041265456038649e-15,
+      "a2_rel_err": 1.8092255825060733e-13,
+      "a2_over_4pi_fit": -19.739208802175146,
+      "a2_over_4pi_expected": -19.739208802178716,
+      "effective_circle_gap": 0.375
+    },
+    {
+      "alpha": 0.5,
+      "beta": 0.25,
+      "theta_plus_over_pi": 1.5,
+      "theta_minus_over_pi": 0.5,
+      "a0_fit": 496.1004268847971,
+      "a2_fit": -248.05021344238529,
+      "a4_fit": -1.7257922261676765e-10,
+      "a0_expected": 496.10042688479706,
+      "a2_expected": -248.05021344239853,
+      "a0_rel_err": 1.145804675431332e-16,
+      "a2_rel_err": 5.3394497875100074e-14,
+      "a2_over_4pi_fit": -19.73920880217766,
+      "a2_over_4pi_expected": -19.739208802178716,
+      "effective_circle_gap": 0.25
+    },
+    {
+      "alpha": 0.5,
+      "beta": 0.375,
+      "theta_plus_over_pi": 1.75,
+      "theta_minus_over_pi": 0.25,
+      "a0_fit": 496.10042688479655,
+      "a2_fit": -248.05021344236127,
+      "a4_fit": -4.314535047470088e-10,
+      "a0_expected": 496.10042688479706,
+      "a2_expected": -248.05021344239853,
+      "a0_rel_err": 1.0312242078881989e-15,
+      "a2_rel_err": 1.5021499294904761e-13,
+      "a2_over_4pi_fit": -19.73920880217575,
+      "a2_over_4pi_expected": -19.739208802178716,
+      "effective_circle_gap": 0.125
+    },
+    {
+      "alpha": 0.5,
+      "beta": 0.5,
+      "theta_plus_over_pi": 2.0,
+      "theta_minus_over_pi": 0.0,
+      "a0_fit": 496.1004268847978,
+      "a2_fit": -248.05021344241945,
+      "a4_fit": 2.1627060373627164e-10,
+      "a0_expected": 496.10042688479706,
+      "a2_expected": -248.05021344239853,
+      "a0_rel_err": 1.4895460780607316e-15,
+      "a2_rel_err": 8.433122411174603e-14,
+      "a2_over_4pi_fit": -19.73920880218038,
+      "a2_over_4pi_expected": -19.739208802178716,
+      "effective_circle_gap": 0.0
+    }
+  ],
+  "invariance_summary": {
+    "max_a0_rel_err": 1.6041265456038649e-15,
+    "max_a2_rel_err": 1.8092255825060733e-13,
+    "a0_fit_spread": 1.5347723092418164e-12,
+    "a2_fit_spread": 6.579625733138528e-11,
+    "gap_min": 0.0,
+    "gap_max": 0.5
+  }
+}
