@@ -1,7 +1,9 @@
 # Version III Base-K Spectral Renormalization Gate
 
-> Status: no parameter-free subtraction prescription found
-> Date: 2026-08-10
+> Status: working
+> Research status: no parameter-free subtraction prescription found
+> Type: question
+> Updated: 2026-08-10
 
 ## Zeta Ambiguity
 

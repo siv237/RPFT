@@ -1,7 +1,9 @@
 # Relative Holonomy Determinant
 
-> Status: first gate completed
-> Date: 2026-08-03
+> Status: working
+> Research status: first gate completed
+> Type: question
+> Updated: 2026-08-03
 
 ## Question
 

@@ -1,6 +1,7 @@
 # K1--K14 And Loop-Reverse Audit
 
-> Status: priority batch completed
+> Status: working
+> Research status: priority batch completed
 > Type: synthesis
 > Updated: 2026-08-07
 

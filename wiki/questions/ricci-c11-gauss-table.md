@@ -1,7 +1,9 @@
 # Ricci C11 Gauss Table
 
-> Status: computed / geometric cancellation failed
-> Type: question / audit result
+> Status: working
+> Research status: computed / geometric cancellation failed
+> Type: question
+> Research type: question / audit result
 > Updated: 2026-08-02
 
 ## Question

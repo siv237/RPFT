@@ -1,6 +1,8 @@
 # Version IV: exact Pati–Salam first-order kernel
 
-> Status: strong conditional pass
+> Status: working
+> Research status: strong conditional pass
+> Type: question
 > Updated: 2026-08-13
 
 ## Variable space

@@ -1,7 +1,9 @@
 # Version III Orbit Measure and Pfaffian Gate
 
-> Status: fermion half-count derived; universal half-trace rejected
-> Date: 2026-08-10
+> Status: working
+> Research status: fermion half-count derived; universal half-trace rejected
+> Type: question
+> Updated: 2026-08-10
 
 ## Trace Separation
 

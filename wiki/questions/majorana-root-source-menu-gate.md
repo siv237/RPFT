@@ -1,7 +1,9 @@
 # Majorana Root Source Menu Gate
 
-> Status: existing mandatory root sources exhausted negatively
-> Date: 2026-08-06
+> Status: working
+> Research status: existing mandatory root sources exhausted negatively
+> Type: question
+> Updated: 2026-08-06
 
 ## Question
 

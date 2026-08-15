@@ -1,6 +1,8 @@
 # State Menu Hypothesis Gate
 
-> Status: passes as an abelian kinematic skeleton; fails as a standalone particle theory
+> Status: working
+> Research status: passes as an abelian kinematic skeleton; fails as a standalone particle theory
+> Type: question
 > Updated: 2026-08-04
 
 ## Hypothesis

@@ -1,7 +1,9 @@
 # Version III Compact a2/a4 Moment Gate
 
-> Status: tree-level spectral boundary condition passes partially
-> Date: 2026-08-10
+> Status: working
+> Research status: tree-level spectral boundary condition passes partially
+> Type: question
+> Updated: 2026-08-10
 
 ## Explicit Coefficients
 

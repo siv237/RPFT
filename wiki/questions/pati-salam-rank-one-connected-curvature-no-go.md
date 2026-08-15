@@ -1,6 +1,7 @@
 # Pati-Salam Rank-One Connected Curvature No-Go
 
-> Status: current finite geometry closed
+> Status: working
+> Research status: current finite geometry closed
 > Type: question
 > Updated: 2026-08-14
 

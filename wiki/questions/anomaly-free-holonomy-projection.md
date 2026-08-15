@@ -1,7 +1,9 @@
 # Anomaly-Free Holonomy Projection
 
-> Status: constructive candidate
-> Date: 2026-08-04
+> Status: working
+> Research status: constructive candidate
+> Type: question
+> Updated: 2026-08-04
 
 ## Parent Content
 

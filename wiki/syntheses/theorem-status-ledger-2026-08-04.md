@@ -1,6 +1,10 @@
 # Theorem Status Ledger — 2026-08-04
 
-> Status: active decision ledger
+> Status: working
+> Research status: active decision ledger
+> Type: synthesis
+> Updated: 2026-08-15
+
 > Rule: a numerical match is not a theorem unless its operator, measure, normalization and blind inputs are fixed before comparison.
 
 Revision R1 has passed a separate direct numerical reproduction and therefore

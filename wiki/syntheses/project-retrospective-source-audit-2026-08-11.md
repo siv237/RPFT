@@ -1,6 +1,8 @@
 # Project retrospective source audit
 
-> Status: complete corpus pass
+> Status: working
+> Research status: complete corpus pass
+> Type: synthesis
 > Updated: 2026-08-11
 
 ## Main finding

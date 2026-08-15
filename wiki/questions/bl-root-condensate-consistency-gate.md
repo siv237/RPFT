@@ -1,7 +1,9 @@
 # B-L Root Condensate Consistency Gate
 
-> Status: промежуточный результат; заменён трилеммой root--mass--condensate
-> Date: 2026-08-06
+> Status: working
+> Research status: промежуточный результат; заменён трилеммой root--mass--condensate
+> Type: question
+> Updated: 2026-08-06
 
 ## Supersession
 

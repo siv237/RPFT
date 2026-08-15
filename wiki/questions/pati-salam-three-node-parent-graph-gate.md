@@ -1,6 +1,7 @@
 # Pati-Salam Three-Node Parent Graph Gate
 
-> Status: corrected to equivariant-carrier pass
+> Status: working
+> Research status: corrected to equivariant-carrier pass
 > Type: question
 > Updated: 2026-08-14
 

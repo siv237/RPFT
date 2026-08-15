@@ -1,6 +1,8 @@
 # Parent Action Normalization Gate
 
-> Status: closed negatively for the minimal unified action
+> Status: working
+> Research status: closed negatively for the minimal unified action
+> Type: question
 > Updated: 2026-08-04
 
 ## Question

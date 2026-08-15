@@ -1,7 +1,9 @@
 # Tiered Parent Action P1 Gate
 
-> Status: algebraic pass; single-measure operator gate failed
-> Date: 2026-08-07
+> Status: working
+> Research status: algebraic pass; single-measure operator gate failed
+> Type: question
+> Updated: 2026-08-07
 
 ## Question
 

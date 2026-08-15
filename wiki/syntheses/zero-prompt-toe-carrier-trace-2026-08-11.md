@@ -1,6 +1,8 @@
 # Zero-prompt and TOE carrier trace
 
-> Status: completed retrospective audit
+> Status: working
+> Research status: completed retrospective audit
+> Type: synthesis
 > Updated: 2026-08-11
 
 ## Problem

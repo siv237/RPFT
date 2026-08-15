@@ -1,6 +1,9 @@
 # Dynamic Family Order Parameter Gate
 
-> Status: projected algebraic selector pass; bulk origin, parity and full gap open
+> Status: working
+> Research status: projected algebraic selector pass; bulk origin, parity and full gap open
+> Type: question
+> Updated: 2026-08-15
 
 The residual group forbids a constant invariant antisymmetric family form,
 but permits the dynamical invariant

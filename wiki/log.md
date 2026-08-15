@@ -2776,3 +2776,27 @@ quartic normalization vacuum остаётся CP-even.
 - Files touched: `wiki/questions/*.md` (95 pages got `Status/Type/Updated` meta blocks), `wiki/questions/{family-relative-orbit-ckm-gate,family-residual-axis-orbit-gate,pati-salam-higher-moment-saturation-no-go,version4-gibbs-fisher-geometry-gate,version4-one-kernel-sign-trilemma-gate}.md` (new question pages created from gates), `wiki/index.md` (34 missing pages added with auto-generated summaries, coverage section), `wiki/wiki-schema.md` (link placeholder clarified), `wiki/log.md`.
 - Summary: verified repository structure against the `llm-wiki.md` pattern. Remaining gaps found and fixed: page-level meta blocks, index coverage for every wiki page, orphan pages, missing question pages behind broken links, and schema placeholder that tripped the linter. Final state: 0 broken links, 0 orphans, 0 pages missing from index, 261/261 pages carry meta blocks.
 - Follow-ups: keep `index.md` updated on ingest; consider separate source pages for `s2t/docs/tome2_s2t_spectral_closure.tex` and `toe_ugsm_unified_shadow_paper.tex` full ingests (see `wiki/lints/2026-07-09-llm-wiki-compliance-lint.md`).
+
+## [2026-08-15] maintenance | Restore Post-Reorganization Build
+
+- Files touched: `Makefile`, `.gitignore`, `s2t/docs/s2t_paths.tex`, `s2t/docs/main.tex`, `s2t/docs/tome2_s2t_spectral_closure.tex`, `s2t/docs/tome3_s2t_parent_action.tex`, `s2t/docs/tome4_s2t_observed_reconstruction.tex`, `s2t/docs/toe_ugsm_unified_shadow_paper.tex`, `s2t/docs/final_freeze_reproduction_protocol.tex`, `s2t/reproduction_package/FREEZE_MANIFEST.json`, `wiki/syntheses/final-freeze-and-reproduction-package-2026-08-07.md`, `wiki/index.md`, `README.md`, `GLOSSARY.md`.
+- Summary: restored LaTeX lookup paths from `s2t/docs/` to `s2t/gates/` and `s2t/assets/`, added reproducible root-level build targets, refreshed the relocated freeze manifest and documented the current package layout without changing the frozen scientific status.
+- Compliance check: `make all` builds Tomes I--IV and the TOE--UGSM integration paper; manifest paths and SHA-256 hashes are checked against the current repository layout.
+
+## [2026-08-15] lint | Full Post-Reorganization Recheck
+
+- Files touched: `wiki/{concepts,sources,syntheses,questions,lints}/*.md`, `wiki/lints/2026-08-15-post-reorganization-lint.md`, `wiki/index.md`, `README.md`, `s2t/reproduction_package/FREEZE_MANIFEST.json`, `.gitignore`, `Makefile`.
+- Summary: repeated the build and integrity audit from a clean state, normalized wiki metadata while preserving descriptive research statuses, removed three false Obsidian targets from matrix notation, and corrected two stale manifest hashes.
+- Compliance check: five primary PDFs build; 336 Python audits and 358 JSON results parse; manifest integrity is 8/8; wiki metadata, index coverage, duplicate identifiers and Obsidian targets all report zero errors.
+
+## [2026-08-15] maintenance | Prism-Safe Build Entry Point
+
+- Files touched: `s2t/docs/BUILD.md`, `README.md`, `GLOSSARY.md`, `wiki/log.md`.
+- Summary: Prism discarded the ignored root `Makefile` between workspace turns, while all tracked TeX path fixes remained intact. The build entry point was moved to a tracked Markdown instruction using direct `latexmk -cd` commands; no Git index or history operation was performed.
+- Compliance check: `.git/index.lock` is absent, `s2t/docs/s2t_paths.tex` remains present, and all primary documents are rebuilt without relying on ignored helper files.
+
+## [2026-08-15] lint | Wiki Link Integrity Pass
+
+- Files touched: `wiki/syntheses/project-success-tree-2026-08-11.md`, `wiki/lints/2026-08-15-post-reorganization-lint.md`, `wiki/log.md`.
+- Summary: checked all Obsidian and local Markdown links. Corrected the single broken image path for the current project evidence-status tree and removed a nonexistent PDF source reference.
+- Compliance check: 974 Obsidian links resolve uniquely, all 268 content pages are indexed, and every local Markdown link or image target exists.

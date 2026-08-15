@@ -1,7 +1,9 @@
 # Tau Formula Uniqueness and Normalization
 
-> Status: strong numerical relation; derivation conditional
-> Date: 2026-08-04
+> Status: working
+> Research status: strong numerical relation; derivation conditional
+> Type: question
+> Updated: 2026-08-04
 
 ## Numerical Robustness
 

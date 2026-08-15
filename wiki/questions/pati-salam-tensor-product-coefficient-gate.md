@@ -1,6 +1,7 @@
 # Pati-Salam Tensor-Product Coefficient Gate
 
-> Status: threshold saturation
+> Status: working
+> Research status: threshold saturation
 > Type: question
 > Updated: 2026-08-14
 

@@ -1,6 +1,7 @@
 # Pati-Salam Associative-Node No-Go
 
-> Status: closed literal-node route
+> Status: working
+> Research status: closed literal-node route
 > Type: question
 > Updated: 2026-08-14
 

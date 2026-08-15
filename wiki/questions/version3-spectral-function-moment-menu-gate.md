@@ -1,7 +1,9 @@
 # Version III Spectral Function Moment Menu Gate
 
-> Status: no unique moment selector
-> Date: 2026-08-10
+> Status: working
+> Research status: no unique moment selector
+> Type: question
+> Updated: 2026-08-10
 
 ## Preregistered Menu
 

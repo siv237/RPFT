@@ -1,6 +1,7 @@
 # Pati-Salam Wedge-Channel Compatibility Gate
 
-> Status: mature compatibility pass; parent graph open
+> Status: working
+> Research status: mature compatibility pass; parent graph open
 > Type: question
 > Updated: 2026-08-14
 

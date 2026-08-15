@@ -1,6 +1,7 @@
 # Pati-Salam Projected Curvature Selector Gate
 
-> Status: conditional reopening
+> Status: working
+> Research status: conditional reopening
 > Type: question
 > Updated: 2026-08-14
 

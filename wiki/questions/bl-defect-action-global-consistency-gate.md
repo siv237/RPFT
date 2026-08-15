@@ -1,7 +1,9 @@
 # B-L Defect Action Global Consistency Gate
 
-> Status: proposed action fails before its dynamical kill-gate
-> Date: 2026-08-07
+> Status: working
+> Research status: proposed action fails before its dynamical kill-gate
+> Type: question
+> Updated: 2026-08-07
 
 ## Question
 

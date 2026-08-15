@@ -1,6 +1,7 @@
 # TOE UGSM Unified Shadow Paper
 
-> Status: ingested with carrier-origin correction
+> Status: working
+> Research status: ingested with carrier-origin correction
 > Type: source
 > Updated: 2026-08-11
 

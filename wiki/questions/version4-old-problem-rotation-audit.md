@@ -1,6 +1,7 @@
 # Version IV Old-Problem Rotation Audit
 
-> Status: old branches reprioritized
+> Status: working
+> Research status: old branches reprioritized
 > Type: question
 > Updated: 2026-08-14
 

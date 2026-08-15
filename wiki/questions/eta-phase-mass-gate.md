@@ -1,7 +1,9 @@
 # Eta Phase to Real Mass Gate
 
-> Status: closed negatively for the minimal vectorlike Dirac realization
-> Date: 2026-08-06
+> Status: working
+> Research status: closed negatively for the minimal vectorlike Dirac realization
+> Type: question
+> Updated: 2026-08-06
 
 ## Question
 

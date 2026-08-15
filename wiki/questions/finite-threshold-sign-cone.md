@@ -1,7 +1,9 @@
 # Finite Threshold Sign Cone
 
-> Status: negative for the minimal `XY/H3/Sigma8/Sigma3` basis
-> Date: 2026-08-04
+> Status: working
+> Research status: negative for the minimal `XY/H3/Sigma8/Sigma3` basis
+> Type: question
+> Updated: 2026-08-04
 
 ## Corrected Target
 

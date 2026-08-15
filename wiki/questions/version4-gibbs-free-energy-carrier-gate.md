@@ -1,6 +1,8 @@
 # Version IV: Gibbs free-energy carrier gate
 
-> Status: conditionally closed
+> Status: working
+> Research status: conditionally closed
+> Type: question
 > Updated: 2026-08-11
 
 ## Problem

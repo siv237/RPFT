@@ -19,6 +19,7 @@
 |---|---|---|
 | `AGENTS.md` | Схема для LLM-агента: структура репо, правила ведения вики, протокол отчётов | [Активно] |
 | `llm-wiki.md` | Паттерн LLM Wiki (идея и правила из первого источника) | [Справочно] |
+| `s2t/docs/BUILD.md` | Prism-safe инструкция полной сборки после разделения `docs/`, `gates/` и `assets/` | [Активно] |
 | `LICENSE` | MIT-лицензия | [Служебное] |
 
 ## wiki/ — основа проекта (LLM-вики, вынесена из s2t)
@@ -32,9 +33,9 @@
 | `wiki/log.md` | Хронологический журнал всех действий (июль–август 2026) | [Активно] |
 | `wiki/concepts/*.md` (6) | Понятия: `rpft`, `ugsm`, `toe`, `s2t-reinterpretation`, `spectral-correlational-source`, `holonomy-and-dirac-sectors` | [Активно] |
 | `wiki/sources/*.md` (8) | Описания источников: тома, каталог, литература, корпуса | [Активно] |
-| `wiki/syntheses/*.md` (27) | Сводки и результаты: roadmap, статус-леджеры, аудиты направлений | [Активно] |
-| `wiki/questions/*.md` (218) | Гейты/вопросы: по сути индекс всех проверок проекта | [Активно] |
-| `wiki/lints/*.md` (2) | Периодические проверки здоровья вики | [Справочно] |
+| `wiki/syntheses/*.md` (28) | Сводки и результаты: roadmap, статус-леджеры, аудиты направлений | [Активно] |
+| `wiki/questions/*.md` (223) | Гейты/вопросы: по сути индекс всех проверок проекта | [Активно] |
+| `wiki/lints/*.md` (3) | Периодические проверки здоровья вики | [Справочно] |
 
 ---
 
@@ -61,9 +62,10 @@
 
 ## s2t/ — живой исследовательский слой
 
-Последние и самые свежие данные (активность по 15.08.2026). 947 файлов
-верхнего уровня, разложены по типам: 358 `results/*.json`, 336 `audits/*.py`,
-205 `gates/*.tex`, 22 `docs/*` (20 tex + 2 md), 24 `assets/*` (png/pdf).
+Последние и самые свежие данные (активность по 15.08.2026). 947 исходных
+артефактов верхнего уровня, разложены по типам: 358 `results/*.json`,
+336 `audits/*.py`, 205 `gates/*.tex`, 24 `docs/*` (21 tex + 3 md),
+24 `assets/*` (png/pdf). Генерируемые LaTeX-файлы в этот счёт не входят.
 Git-истории у файлов нет — завезены одним коммитом «add s2t» (09.08.2026),
 хронология воспроизводится по namespace имён и `wiki/log.md`.
 
@@ -71,10 +73,10 @@ Git-истории у файлов нет — завезены одним ком
 
 | Папка | Содержание | Актуальность |
 |---|---|---|
-| `s2t/gates/` (205) | Гейт-документы `*.tex`: `version3_*` (29), `version4_*` (117) и тематические (`wilson_*`, `family_*`, `bl_*`, `majorana_*`, `state_menu_*`, `su5_*`, `pati_salam_*`, `external_*`, `c6_*` и др.) | [Активно] |
+| `s2t/gates/` (205) | Гейт-документы `*.tex`: `version3_*` (27), `version4_*` (115) и тематические (`wilson_*`, `family_*`, `bl_*`, `majorana_*`, `state_menu_*`, `su5_*`, `pati_salam_*`, `external_*`, `c6_*` и др.) | [Активно] |
 | `s2t/audits/` (336) | Вычислительные аудиты `*.py` (включая `unified_theory_phase_map.py`) | [Активно] |
 | `s2t/results/` (358) | Численные результаты `*.json`, парные к аудитам по имени | [Активно] |
-| `s2t/docs/` (22) | Тома и интеграционные тексты: `main.tex`, `tome2_s2t_spectral_closure.tex`, `tome3_s2t_parent_action.tex`, `tome4_s2t_observed_reconstruction.tex`, `research_protocol_toe_ugsm.tex`, `theory_completion_program.tex`, `toe_ugsm_unified_shadow_paper.tex`, `toe_ugsm_shadow_audit_report.tex`, `toe_ugsm_common_shadow_bridge.tex`, `toe_ugsm_unity_deep_audit.tex`, `technical_s2t_analysis.tex`, `final_freeze_reproduction_protocol.tex`, `version3_final_status_freeze.tex`, `version3_parent_action_specification.tex`, `version4_observed_closure_specification.tex`, `s2t_ii_research_cycle_closure.tex`, `RESEARCH_CATALOG.md`, `COLLEAGUE_REVIEW_REQUEST_V4_BOUNDARY.md` | [Справочно] |
+| `s2t/docs/` (24) | Тома, интеграционные тексты, `BUILD.md` и общий `s2t_paths.tex`: `main.tex`, `tome2_s2t_spectral_closure.tex`, `tome3_s2t_parent_action.tex`, `tome4_s2t_observed_reconstruction.tex`, `research_protocol_toe_ugsm.tex`, `theory_completion_program.tex`, `toe_ugsm_unified_shadow_paper.tex`, `toe_ugsm_shadow_audit_report.tex`, `toe_ugsm_common_shadow_bridge.tex`, `toe_ugsm_unity_deep_audit.tex`, `technical_s2t_analysis.tex`, `final_freeze_reproduction_protocol.tex`, `version3_final_status_freeze.tex`, `version3_parent_action_specification.tex`, `version4_observed_closure_specification.tex`, `s2t_ii_research_cycle_closure.tex`, `RESEARCH_CATALOG.md`, `COLLEAGUE_REVIEW_REQUEST_V4_BOUNDARY.md` | [Справочно] |
 | `s2t/assets/` (24) | Графики `*.png` и PDF верхнего уровня (`ugsm_dynamics_audit-3.pdf` и др.) | [Справочно] |
 
 ### Вспомогательные папки s2t
@@ -97,6 +99,18 @@ Git-истории у файлов нет — завезены одним ком
 | `tome3_s2t_parent_action.tex` | Том III — parent action (родительское действие) | [Справочно] |
 | `tome4_s2t_observed_reconstruction.tex` | Том IV — наблюдаемая реконструкция | [Активно] |
 | `main.tex` | Основной черновик-сборка текста | [Активно] |
+
+### Сборка LaTeX
+
+Собирать документы следует из корня репозитория. Общий файл
+`s2t/docs/s2t_paths.tex` подключает гейты из `s2t/gates/`. Полные команды
+сборки и очистки находятся в Prism-safe файле `s2t/docs/BUILD.md`.
+
+Краткий пример:
+
+```bash
+latexmk -cd -pdf -interaction=nonstopmode -halt-on-error s2t/docs/main.tex
+```
 
 ### Гейты, аудиты и результаты (namespace-связки)
 

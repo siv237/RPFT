@@ -1,7 +1,9 @@
 # Version III Fluctuated Product and BV Complex Gate
 
-> Status: local product lift constructed
-> Date: 2026-08-10
+> Status: working
+> Research status: local product lift constructed
+> Type: question
+> Updated: 2026-08-10
 
 ## Construction
 

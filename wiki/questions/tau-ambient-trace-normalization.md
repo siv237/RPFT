@@ -1,7 +1,9 @@
 # Tau Ambient Trace Normalization
 
-> Status: rank-nine half-trace candidate rejected
-> Date: 2026-08-04
+> Status: working
+> Research status: rank-nine half-trace candidate rejected
+> Type: question
+> Updated: 2026-08-04
 
 ## Quotient Trace
 

@@ -1,6 +1,8 @@
 # Version IV: spectral-action/Gibbs equivalence gate
 
-> Status: exact equivalence closed negatively; operator dictionary corrected
+> Status: working
+> Research status: exact equivalence closed negatively; operator dictionary corrected
+> Type: question
 > Updated: 2026-08-11
 
 ## Problem

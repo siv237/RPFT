@@ -1,6 +1,8 @@
 # Version IV: Gaussian bare spectral topology gate
 
-> Status: conditional topology-measure pass; cutoff identification open
+> Status: working
+> Research status: conditional topology-measure pass; cutoff identification open
+> Type: question
 > Updated: 2026-08-11
 
 ## Candidate

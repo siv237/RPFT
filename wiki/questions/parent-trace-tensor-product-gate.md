@@ -1,6 +1,8 @@
 # Parent Trace Tensor Product Gate
 
-> Status: algebraic pass; action-level coefficient open
+> Status: working
+> Research status: algebraic pass; action-level coefficient open
+> Type: question
 > Updated: 2026-08-04
 
 ## Parent Algebra

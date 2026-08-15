@@ -1,7 +1,9 @@
 # Two-Loop Split Stress Test
 
-> Status: negative; intermediate-running repair closed
-> Date: 2026-08-04
+> Status: working
+> Research status: negative; intermediate-running repair closed
+> Type: question
+> Updated: 2026-08-04
 
 ## Exact Beta Check
 

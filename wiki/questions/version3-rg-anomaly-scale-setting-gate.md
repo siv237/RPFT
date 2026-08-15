@@ -1,7 +1,9 @@
 # Version III RG and Anomaly Scale-Setting Gate
 
-> Status: one absolute scale input is unavoidable
-> Date: 2026-08-10
+> Status: working
+> Research status: one absolute scale input is unavoidable
+> Type: question
+> Updated: 2026-08-10
 
 ## Gauge Running
 

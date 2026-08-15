@@ -1,7 +1,9 @@
 # Version III a4 Gauge Coupling Gate
 
-> Status: relative U(1) coupling closed
-> Date: 2026-08-10
+> Status: working
+> Research status: relative U(1) coupling closed
+> Type: question
+> Updated: 2026-08-10
 
 ## Heat-Kernel Ratio
 

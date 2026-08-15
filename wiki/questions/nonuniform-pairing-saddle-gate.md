@@ -1,7 +1,9 @@
 # Nonuniform Pairing Saddle Gate
 
-> Status: analytic saddle found conditionally
-> Date: 2026-08-06
+> Status: working
+> Research status: analytic saddle found conditionally
+> Type: question
+> Updated: 2026-08-06
 
 ## Question
 

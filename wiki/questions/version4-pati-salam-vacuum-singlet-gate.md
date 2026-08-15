@@ -1,6 +1,8 @@
 # Version IV: Pati–Salam vacuum and singlet gate
 
-> Status: universal-singlet route closed negatively
+> Status: working
+> Research status: universal-singlet route closed negatively
+> Type: question
 > Updated: 2026-08-13
 
 ## Question

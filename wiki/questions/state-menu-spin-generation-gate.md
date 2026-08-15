@@ -1,6 +1,8 @@
 # State Menu Spin Generation Gate
 
-> Status: count three passes conditionally; equivalence of generations fails on the bare geometry
+> Status: working
+> Research status: count three passes conditionally; equivalence of generations fails on the bare geometry
+> Type: question
 > Updated: 2026-08-04
 
 ## Reference Selector

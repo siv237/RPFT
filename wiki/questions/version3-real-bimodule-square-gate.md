@@ -1,7 +1,9 @@
 # Version III Real Bimodule Square Gate
 
-> Status: first-order vertex pass; KO6 doubling and parameter orbit open
-> Date: 2026-08-09
+> Status: working
+> Research status: first-order vertex pass; KO6 doubling and parameter orbit open
+> Type: question
+> Updated: 2026-08-09
 
 ## Result
 

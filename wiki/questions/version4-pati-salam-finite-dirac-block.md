@@ -1,6 +1,8 @@
 # Version IV: explicit Pati–Salam finite Dirac block
 
-> Status: representation/KO6 target pass; spectral-triple gate open
+> Status: working
+> Research status: representation/KO6 target pass; spectral-triple gate open
+> Type: question
 > Updated: 2026-08-13
 
 ## Hilbert module

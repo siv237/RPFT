@@ -1,7 +1,9 @@
 # Version III Automorphism and Half-Trace Gate
 
-> Status: edge-orbit no-go; KO6 half-trace conditional pass
-> Date: 2026-08-10
+> Status: working
+> Research status: edge-orbit no-go; KO6 half-trace conditional pass
+> Type: question
+> Updated: 2026-08-10
 
 ## Orbit Result
 

@@ -1,7 +1,9 @@
 # Version III Portal Menu Gate
 
-> Status: minimal hidden sector is exactly decoupled
-> Date: 2026-08-10
+> Status: working
+> Research status: minimal hidden sector is exactly decoupled
+> Type: question
+> Updated: 2026-08-10
 
 ## Scalar Portal
 

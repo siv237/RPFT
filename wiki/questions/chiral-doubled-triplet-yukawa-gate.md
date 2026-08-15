@@ -12,7 +12,7 @@ adding a fourth family state:
 
 `Gamma_F = diag(-I3,+I3)`,
 
-`D_F(Y) = [[0,Y],[Y^dagger,0]]`.
+`D_F(Y) = ((0,Y),(Y^dagger,0))`.
 
 For every complex `3 x 3` block `Y`, the operator is self-adjoint and odd,
 and its square contains the physical left squared-mass operator `Y Y^dagger`.

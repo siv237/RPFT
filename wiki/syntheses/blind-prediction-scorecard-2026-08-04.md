@@ -1,6 +1,10 @@
 # Blind Prediction Scorecard — 2026-08-04
 
-> Status: frozen comparison
+> Status: working
+> Research status: frozen comparison
+> Type: synthesis
+> Updated: 2026-08-15
+
 > Controls: PDG 2024 values loaded only after the S2T rows were fixed
 
 ## Result

@@ -1,7 +1,9 @@
 # Spectral Pairing Stiffness Gate
 
-> Status: spectral function and orientation selection remain underived
-> Date: 2026-08-06
+> Status: working
+> Research status: spectral function and orientation selection remain underived
+> Type: question
+> Updated: 2026-08-06
 
 ## Question
 

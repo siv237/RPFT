@@ -1,7 +1,9 @@
 # B-L Root Extension Gate
 
-> Status: representation and continuous-anomaly gates pass; dynamics remain open
-> Date: 2026-08-06
+> Status: working
+> Research status: representation and continuous-anomaly gates pass; dynamics remain open
+> Type: question
+> Updated: 2026-08-06
 
 ## Question
 

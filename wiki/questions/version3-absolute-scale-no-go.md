@@ -1,7 +1,9 @@
 # Version III Absolute Scale No-Go
 
-> Status: absolute scale closed for the scale-free parent class
-> Date: 2026-08-10
+> Status: working
+> Research status: absolute scale closed for the scale-free parent class
+> Type: question
+> Updated: 2026-08-10
 
 ## Result
 

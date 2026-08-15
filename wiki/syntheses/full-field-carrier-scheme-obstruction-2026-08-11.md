@@ -1,6 +1,8 @@
 # Full-field carrier scheme obstruction
 
-> Status: theorem-level obstruction
+> Status: working
+> Research status: theorem-level obstruction
+> Type: synthesis
 > Updated: 2026-08-11
 
 ## Finding

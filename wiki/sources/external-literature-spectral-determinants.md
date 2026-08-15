@@ -1,6 +1,7 @@
 # External Literature: Spectral Determinants
 
-> Status: literature gate
+> Status: working
+> Research status: literature gate
 > Type: source
 > Updated: 2026-07-10
 

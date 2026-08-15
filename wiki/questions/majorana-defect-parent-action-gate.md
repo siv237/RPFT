@@ -1,7 +1,9 @@
 # Majorana Defect Parent Action Gate
 
-> Status: topology closes winding conditionally; dynamical defect generation remains open
-> Date: 2026-08-06
+> Status: working
+> Research status: topology closes winding conditionally; dynamical defect generation remains open
+> Type: question
+> Updated: 2026-08-06
 
 ## Question
 

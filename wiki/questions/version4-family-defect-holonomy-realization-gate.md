@@ -1,7 +1,9 @@
 # Version IV family-defect holonomy realization gate
 
-> Status: constrained-saddle positive
-> Date: 2026-08-14
+> Status: working
+> Research status: constrained-saddle positive
+> Type: question
+> Updated: 2026-08-14
 
 ## Result
 

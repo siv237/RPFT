@@ -1,6 +1,8 @@
 # Project negative-space audit
 
-> Status: completed first pass
+> Status: working
+> Research status: completed first pass
+> Type: synthesis
 > Updated: 2026-08-11
 
 ## Result

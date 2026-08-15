@@ -1,7 +1,9 @@
 # Version IV family-defect projector supercurvature gate
 
-> Status: conditional positive
-> Date: 2026-08-14
+> Status: working
+> Research status: conditional positive
+> Type: question
+> Updated: 2026-08-14
 
 ## Result
 

@@ -1,6 +1,8 @@
 # Version IV: spectral Pati–Salam bridge gate
 
-> Status: architecture candidate; fixed-scale test failed
+> Status: working
+> Research status: architecture candidate; fixed-scale test failed
+> Type: question
 > Updated: 2026-08-13
 
 ## Problem

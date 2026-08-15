@@ -1,6 +1,8 @@
 # Version IV: project retrospective entropy-measure gate
 
-> Status: fixed-carrier routes exhausted; spectral-density variation reopened
+> Status: working
+> Research status: fixed-carrier routes exhausted; spectral-density variation reopened
+> Type: question
 > Updated: 2026-08-11
 
 ## Problem

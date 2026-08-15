@@ -1,6 +1,8 @@
 # State Menu Family Rank-One Gate
 
-> Status: positive leading family texture; light-family masses and mixing open
+> Status: working
+> Research status: positive leading family texture; light-family masses and mixing open
+> Type: question
 > Updated: 2026-08-04
 
 ## Input

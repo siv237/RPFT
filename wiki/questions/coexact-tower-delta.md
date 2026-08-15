@@ -1,6 +1,7 @@
 # Coexact Tower Delta
 
-> Status: open
+> Status: working
+> Research status: open
 > Type: question
 > Updated: 2026-07-14
 

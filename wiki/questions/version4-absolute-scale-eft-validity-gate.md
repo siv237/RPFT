@@ -1,6 +1,8 @@
 # Version IV: absolute-scale EFT-validity gate
 
-> Status: absolute matching closed as uncontrolled
+> Status: working
+> Research status: absolute matching closed as uncontrolled
+> Type: question
 > Updated: 2026-08-11
 
 ## Problem

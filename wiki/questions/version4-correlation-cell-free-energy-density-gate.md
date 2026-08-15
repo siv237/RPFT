@@ -1,6 +1,8 @@
 # Version IV: correlation-cell free-energy density gate
 
-> Status: conditional scale-ratio selection
+> Status: working
+> Research status: conditional scale-ratio selection
+> Type: question
 > Updated: 2026-08-11
 
 ## Problem

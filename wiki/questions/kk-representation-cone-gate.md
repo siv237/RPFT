@@ -1,7 +1,9 @@
 # KK Representation Cone Gate
 
-> Status: first inverse diagnostic
-> Date: 2026-08-04
+> Status: working
+> Research status: first inverse diagnostic
+> Type: question
+> Updated: 2026-08-04
 
 ## Question
 

@@ -1,6 +1,9 @@
 {
-  "release": "S2T-IIA-IIB-FREEZE-2026-08-07",
+  "release": "S2T-IIA-IIB-FREEZE-2026-08-07-LAYOUT-R1",
   "freeze_date": "2026-08-07",
+  "manifest_updated": "2026-08-15",
+  "layout_revision": "post-reorganization paths rooted at repository root",
+  "scientific_status_unchanged": true,
   "status": {
     "R_sci": "4/10",
     "N_closed_physical": 0,
@@ -13,13 +16,13 @@
     "release_condition": "after independent code and results hashes are frozen"
   },
   "files": {
-    "final_freeze_reproduction_protocol.tex": "7d04bb37f4631f47cf05fab8fff7e4860aaf4aaed8a46c284c5f8f4b1881260e",
-    "wiki/syntheses/final-freeze-and-reproduction-package-2026-08-07.md": "87a6301ffeccdb75b7ed40e438443c44198ce2837cdcb62bf1fdbf9722c337a9",
-    "reproduction_package/REPRODUCTION_PROTOCOL.md": "a72d0471a5a0ddc74035ca9c8fd4a3607f28d55e70075384d60f921c537c61fd",
-    "reproduction_package/THEOREM_STATUS_LEDGER.json": "4a54e298137efbdd7029195de51654e9f613ccaab6e0d35f1a3f7b0873021e7b",
-    "reproduction_package/DEPENDENCY_GRAPH.json": "bb56c4c673419ed41b2d0a0ca1e4bc042c8e0dc9ba6f3650300afc3b97427142",
-    "reproduction_package/specification/statements.md": "b35e068a97509b0c9c415effe67dbbf2bb8e75781bf3df9305702d1aa3e5ed49",
-    "reproduction_package/specification/allowed_inputs.json": "5e97f1e5c4058fce607c474a7c3b02ecf585b77f3d439f225c18c9517b92bf50",
-    "reproduction_package/specification/failure_criteria.json": "535cce0bf57c2f082cfe30e45fc7839e6042096e617382eb90a999265ac43aa3"
+    "s2t/docs/final_freeze_reproduction_protocol.tex": "a565757ed0577ee9771a4fda9d996697225faf60a91ac1657adce12a2c096085",
+    "wiki/syntheses/final-freeze-and-reproduction-package-2026-08-07.md": "cc1b3e0bf7fe67c13b58f2adad04f130677b6b6698f3ec62cd8b8ebbc22585e1",
+    "s2t/reproduction_package/REPRODUCTION_PROTOCOL.md": "f95b9abc50015794586d41df28434fdbcca79c300eb1e5a202090a30bfe8e07b",
+    "s2t/reproduction_package/THEOREM_STATUS_LEDGER.json": "e950dc38f6f06dfb7072faf6af2ac745f07e1cedbd24433aa732c9dd91712a77",
+    "s2t/reproduction_package/DEPENDENCY_GRAPH.json": "e0fe902d679e253810dc40cfb8ec7d850fbd0806ef2c0476b2b3887d0007cc03",
+    "s2t/reproduction_package/specification/statements.md": "967706780a70e46cdf2e8e4cad6a6cb3bb8b1df3a1f2f57a3140e410b5976fa2",
+    "s2t/reproduction_package/specification/allowed_inputs.json": "8c52aaad30b2c4213315af862273a84c1aab25a1410fb71827c488fb2122bd53",
+    "s2t/reproduction_package/specification/failure_criteria.json": "d240f23f1d86f0e3f4442aac63de27c68b4980a243ccbbe884963f215c87243e"
   }
 }

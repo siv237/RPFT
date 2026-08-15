@@ -1,7 +1,9 @@
 # Root Mass Condensate Trilemma Gate
 
-> Status: homogeneous Majorana branch closed negatively
-> Date: 2026-08-06
+> Status: working
+> Research status: homogeneous Majorana branch closed negatively
+> Type: question
+> Updated: 2026-08-06
 
 ## Question
 

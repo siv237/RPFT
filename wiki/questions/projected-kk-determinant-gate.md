@@ -1,7 +1,9 @@
 # Projected KK Determinant Gate
 
-> Status: negative for the common-spectrum determinant
-> Date: 2026-08-04
+> Status: working
+> Research status: negative for the common-spectrum determinant
+> Type: question
+> Updated: 2026-08-04
 
 ## Computation
 

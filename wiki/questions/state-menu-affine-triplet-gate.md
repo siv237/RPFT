@@ -1,6 +1,8 @@
 # State Menu Affine Triplet Gate
 
-> Status: positive canonical `1+3` family-space construction; hierarchy open
+> Status: working
+> Research status: positive canonical `1+3` family-space construction; hierarchy open
+> Type: question
 > Updated: 2026-08-04
 
 ## Core Shift

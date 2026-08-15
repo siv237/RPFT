@@ -1,6 +1,8 @@
 # Version IV: spin-sum measure gate
 
-> Status: closed negatively for the current parent action
+> Status: working
+> Research status: closed negatively for the current parent action
+> Type: question
 > Updated: 2026-08-11
 
 ## Problem

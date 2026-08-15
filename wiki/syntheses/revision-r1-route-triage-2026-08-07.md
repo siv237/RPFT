@@ -1,6 +1,7 @@
 # Revision R1 And Route Triage
 
-> Status: R1 internally reproduced; H1 closed; H2 not test-ready
+> Status: working
+> Research status: R1 internally reproduced; H1 closed; H2 not test-ready
 > Type: synthesis
 > Updated: 2026-08-07
 

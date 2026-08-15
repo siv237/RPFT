@@ -1,6 +1,7 @@
 # B-L Root And Nonuniform Pairing Working Package
 
-> Status: active conditional branch
+> Status: working
+> Research status: active conditional branch
 > Type: synthesis
 > Updated: 2026-08-07
 

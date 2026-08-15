@@ -1,7 +1,9 @@
 # Hypothesis Batch Pruner Gate
 
-> Status: completed; no new closed physical prediction
-> Date: 2026-08-07
+> Status: working
+> Research status: completed; no new closed physical prediction
+> Type: question
+> Updated: 2026-08-07
 
 ## Question
 

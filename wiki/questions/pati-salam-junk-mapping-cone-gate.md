@@ -1,6 +1,7 @@
 # Pati-Salam Junk and Mapping-Cone Gate
 
-> Status: conditional pass with ordinary-junk no-go
+> Status: working
+> Research status: conditional pass with ordinary-junk no-go
 > Type: question
 > Updated: 2026-08-14
 

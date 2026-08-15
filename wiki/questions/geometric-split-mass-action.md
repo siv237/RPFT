@@ -1,7 +1,9 @@
 # Geometric Split Mass Action
 
-> Status: geometric saddle retained; gauge interpretation rejected
-> Date: 2026-08-04
+> Status: working
+> Research status: geometric saddle retained; gauge interpretation rejected
+> Type: question
+> Updated: 2026-08-04
 
 ## Minimal Hypothesis
 

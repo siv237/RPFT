@@ -1,6 +1,7 @@
 # Pati-Salam BV Multiplicity Fork Gate
 
-> Status: architecture fork
+> Status: working
+> Research status: architecture fork
 > Type: question
 > Updated: 2026-08-14
 

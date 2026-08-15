@@ -1,7 +1,9 @@
 # Conformal Majorana Rank Gate
 
-> Status: conformal route closed negatively; topological defect route remains conditional
-> Date: 2026-08-06
+> Status: working
+> Research status: conformal route closed negatively; topological defect route remains conditional
+> Type: question
+> Updated: 2026-08-06
 
 ## Question
 

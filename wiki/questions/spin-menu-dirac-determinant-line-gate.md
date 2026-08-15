@@ -6,7 +6,7 @@
 ## Cellular Dirac
 
 The canonical weighted square incidence complex gives
-`D=[[0,B],[B*,0]]`. Its vertex Laplacian has spectrum
+`D=((0,B),(B*,0))`. Its vertex Laplacian has spectrum
 `(0,1/pi,2/pi,3/pi)` and commutes exactly with both factor translations. It is
 the previously audited commuting family Laplacian, not a mixing selector.
 

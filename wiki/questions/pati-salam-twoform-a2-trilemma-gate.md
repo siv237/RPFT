@@ -1,6 +1,7 @@
 # Pati-Salam Two-Form/A2 Trilemma Gate
 
-> Status: three direct routes closed
+> Status: working
+> Research status: three direct routes closed
 > Type: question
 > Updated: 2026-08-14
 

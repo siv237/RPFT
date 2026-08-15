@@ -1,7 +1,9 @@
 # Version III External Red-Team Convention Audit
 
-> Status: factor-two challenge rejected; notation clarified
-> Date: 2026-08-10
+> Status: working
+> Research status: factor-two challenge rejected; notation clarified
+> Type: question
+> Updated: 2026-08-10
 
 ## Kinetic Convention
 

@@ -1,7 +1,9 @@
 # Version III Finite Zero-Mode Supertrace Gate
 
-> Status: finite B positive; normalization and KK completion open
-> Date: 2026-08-10
+> Status: working
+> Research status: finite B positive; normalization and KK completion open
+> Type: question
+> Updated: 2026-08-10
 
 ## Canonical Ledger
 

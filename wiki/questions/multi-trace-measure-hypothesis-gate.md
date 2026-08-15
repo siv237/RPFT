@@ -1,6 +1,8 @@
 # Multi-Trace Measure Hypothesis Gate
 
-> Status: restricted pass; primitive independent sector traces fail
+> Status: working
+> Research status: restricted pass; primitive independent sector traces fail
+> Type: question
 > Updated: 2026-08-04
 
 ## No-Go

@@ -1,6 +1,8 @@
 # Gaussian bare topology measure
 
-> Status: conditional positive reopening
+> Status: working
+> Research status: conditional positive reopening
+> Type: synthesis
 > Updated: 2026-08-11
 
 ## Finding

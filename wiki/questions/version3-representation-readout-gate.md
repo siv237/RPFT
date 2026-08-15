@@ -1,7 +1,9 @@
 # Version III Representation Readout Gate
 
-> Status: hidden-sector readout passes; Standard Model readout fails
-> Date: 2026-08-10
+> Status: working
+> Research status: hidden-sector readout passes; Standard Model readout fails
+> Type: question
+> Updated: 2026-08-10
 
 ## Charge Structure
 

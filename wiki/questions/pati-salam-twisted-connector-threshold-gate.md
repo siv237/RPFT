@@ -1,6 +1,7 @@
 # Pati-Salam Twisted Connector Threshold Gate
 
-> Status: conditional target selected
+> Status: working
+> Research status: conditional target selected
 > Type: question
 > Updated: 2026-08-14
 

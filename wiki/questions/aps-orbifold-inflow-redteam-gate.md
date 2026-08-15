@@ -1,7 +1,9 @@
 # APS Orbifold Inflow Red-Team Gate
 
-> Status: constructive reframing; parent action and physical coefficients open
-> Date: 2026-08-06
+> Status: working
+> Research status: constructive reframing; parent action and physical coefficients open
+> Type: question
+> Updated: 2026-08-06
 
 ## Exact Positives
 

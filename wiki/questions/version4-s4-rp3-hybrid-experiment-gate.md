@@ -1,6 +1,8 @@
 # Version IV: S4/RP3 hybrid experiment
 
-> Status: metric hybrid closed; discrete topological core survives
+> Status: working
+> Research status: metric hybrid closed; discrete topological core survives
+> Type: question
 > Updated: 2026-08-11
 
 ## Problem

@@ -1,6 +1,8 @@
 # Version IV: negative-space bundle and fluctuation gate
 
-> Status: forgotten bundle tested; full-field carrier action open
+> Status: working
+> Research status: forgotten bundle tested; full-field carrier action open
+> Type: question
 > Updated: 2026-08-11
 
 ## Question

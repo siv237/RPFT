@@ -25,6 +25,7 @@ This is the navigation catalog for the project wiki. Read this file first before
 
 ## Core Syntheses
 
+- [[final-freeze-and-reproduction-package-2026-08-07]] — frozen II.A/II.B status, current package layout and external reproduction boundary.
 - [[k1-k14-loop-reverse-audit-2026-08-07]] — batch verdict for fourteen proposed routes and the inverse-power reverse test; only K6 and K13 remain high-value action-level candidates.
 - [[revision-r1-route-triage-2026-08-07]] — independent R1 formula reproduction and status triage: internal maturity reaches 5/10, H1 is already closed by the nonzero n=3 projection, and H2 lacks a common action.
 - [[kinematics-dynamics-pairing-diagnosis-2026-08-07]] — critical status of the collaborator's two-pattern diagnosis: mature kinematics and a relational heuristic, without a theorem of necessary pairing, nonlocality, or one unique missing principle.
@@ -271,6 +272,7 @@ This is the navigation catalog for the project wiki. Read this file first before
 - [[maintenance-agent-protocol]] — assistant reporting protocol for manager-friendly progress updates.
 - [[2026-07-09-initial-lint]] — first health check after setting up the wiki structure.
 - [[2026-07-09-llm-wiki-compliance-lint]] — compliance pass after applying the `llm-wiki.md` maintenance prompt.
+- [[2026-08-15-post-reorganization-lint]] — clean-build, manifest, metadata, index and link verification after the directory split.
 
 ## Source Map
 

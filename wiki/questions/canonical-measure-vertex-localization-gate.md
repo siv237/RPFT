@@ -1,7 +1,9 @@
 # Canonical Measure And Vertex Localization Gate
 
-> Status: compatibility pass; derivation and predictive gates failed
-> Date: 2026-08-07
+> Status: working
+> Research status: compatibility pass; derivation and predictive gates failed
+> Type: question
+> Updated: 2026-08-07
 
 ## Hypothesis
 

@@ -1,6 +1,8 @@
 # Version IV: restricted Pati–Salam potential gate
 
-> Status: current spectral field menu closed negatively
+> Status: working
+> Research status: current spectral field menu closed negatively
+> Type: question
 > Updated: 2026-08-13
 
 ## Representation correction

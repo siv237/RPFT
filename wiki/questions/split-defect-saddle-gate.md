@@ -1,7 +1,9 @@
 # Split Defect Saddle Gate
 
-> Status: conditional fixed-background derivation; dynamical-radius no-go
-> Date: 2026-08-04
+> Status: working
+> Research status: conditional fixed-background derivation; dynamical-radius no-go
+> Type: question
+> Updated: 2026-08-04
 
 ## Explicit Functional
 

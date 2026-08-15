@@ -1,6 +1,8 @@
 # Version IV: Pati–Salam representation-separation diagnostic
 
-> Status: necessary sensitivity passed; potential gate open
+> Status: working
+> Research status: necessary sensitivity passed; potential gate open
+> Type: question
 > Updated: 2026-08-13
 
 ## Target modes

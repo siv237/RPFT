@@ -1,6 +1,8 @@
 # Global Falsification Closure Audit
 
-> Status: current S2T-II.A closed negatively as a unified predictive physical theory
+> Status: working
+> Research status: current S2T-II.A closed negatively as a unified predictive physical theory
+> Type: question
 > Updated: 2026-08-04
 
 ## Question

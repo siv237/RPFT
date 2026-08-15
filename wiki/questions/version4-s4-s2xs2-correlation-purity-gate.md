@@ -1,6 +1,8 @@
 # Version IV: S4 versus S2 x S2 correlation-purity gate
 
-> Status: positive ordering, conditional selection
+> Status: working
+> Research status: positive ordering, conditional selection
+> Type: question
 > Updated: 2026-08-11
 
 ## Problem

@@ -1,7 +1,9 @@
 # Version III BF/AKSZ Pairing Gate
 
-> Status: pure topological pairing failed
-> Date: 2026-08-09
+> Status: working
+> Research status: pure topological pairing failed
+> Type: question
+> Updated: 2026-08-09
 
 A quantized symplectic level fixes brackets, not a positive Hessian.
 A compatible polarization retains a continuous parameter, and the closed

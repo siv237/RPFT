@@ -1,7 +1,9 @@
 # Research Roadmap After The August 2026 Audit
 
-> Status: active
-> Type: synthesis / decision roadmap
+> Status: working
+> Research status: active
+> Type: synthesis
+> Research type: synthesis / decision roadmap
 > Updated: 2026-08-02
 
 ## Простое резюме

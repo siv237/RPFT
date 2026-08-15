@@ -1,6 +1,7 @@
 # Tome I Main Treatise
 
-> Status: detailed ingest
+> Status: working
+> Research status: detailed ingest
 > Type: source
 > Updated: 2026-07-10
 

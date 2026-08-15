@@ -1,6 +1,8 @@
 # Version IV: TOE-native S4 carrier candidate gate
 
-> Status: conditional candidate
+> Status: working
+> Research status: conditional candidate
+> Type: question
 > Updated: 2026-08-11
 
 ## Problem

@@ -1,7 +1,9 @@
 # Version III Dilaton--Radion Transmutation Gate
 
-> Status: classical no-go; quantum transmutation candidate open
-> Date: 2026-08-10
+> Status: working
+> Research status: classical no-go; quantum transmutation candidate open
+> Type: question
+> Updated: 2026-08-10
 
 ## Classical Result
 

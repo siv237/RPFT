@@ -1,7 +1,9 @@
 # Tau Operator Projection Candidate
 
-> Status: constructive post-audit candidate
-> Date: 2026-08-04
+> Status: working
+> Research status: constructive post-audit candidate
+> Type: question
+> Updated: 2026-08-04
 
 ## Gram Origin of the Seed
 

@@ -1,7 +1,9 @@
 # Version III Product Heat-Kernel Kappa Gate
 
-> Status: kappa derived; finite B remains positive
-> Date: 2026-08-10
+> Status: working
+> Research status: kappa derived; finite B remains positive
+> Type: question
+> Updated: 2026-08-10
 
 ## Derivation
 

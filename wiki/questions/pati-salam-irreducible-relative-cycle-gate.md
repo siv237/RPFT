@@ -1,6 +1,7 @@
 # Pati-Salam Irreducible Relative-Cycle Gate
 
-> Status: conditional pass
+> Status: working
+> Research status: conditional pass
 > Type: question
 > Updated: 2026-08-14
 

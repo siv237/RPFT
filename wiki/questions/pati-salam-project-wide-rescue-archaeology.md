@@ -1,6 +1,7 @@
 # Pati-Salam Project-Wide Rescue Archaeology
 
-> Status: rescue class narrowed
+> Status: working
+> Research status: rescue class narrowed
 > Type: question
 > Updated: 2026-08-14
 

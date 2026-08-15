@@ -1,6 +1,8 @@
 # Version IV: full-field carrier counterterm gate
 
-> Status: cross-topology determinant underdetermined before finite couplings
+> Status: working
+> Research status: cross-topology determinant underdetermined before finite couplings
+> Type: question
 > Updated: 2026-08-11
 
 ## Problem

@@ -1,7 +1,9 @@
 # Version III Finite Dirac Parent Potential Gate
 
-> Status: orbit direction selected; physical scale and CP sign open
-> Date: 2026-08-10
+> Status: working
+> Research status: orbit direction selected; physical scale and CP sign open
+> Type: question
+> Updated: 2026-08-10
 
 ## Candidate
 

@@ -1,7 +1,9 @@
 # Weight Map Gate
 
-> Status: C0/C1 failed; C2 lookup passes but parent-measure gate failed
-> Date: 2026-08-07
+> Status: working
+> Research status: C0/C1 failed; C2 lookup passes but parent-measure gate failed
+> Type: question
+> Updated: 2026-08-07
 
 ## Question
 

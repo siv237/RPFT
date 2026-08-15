@@ -1,6 +1,9 @@
 # Family Wilson Majorana Core Selector Gate
 
-> Status: algebraic selector pass; common parent action open
+> Status: working
+> Research status: algebraic selector pass; common parent action open
+> Type: question
+> Updated: 2026-08-15
 
 ## Construction
 

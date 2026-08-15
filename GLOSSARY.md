@@ -92,6 +92,11 @@
   перелинкованную `wiki/` (concepts/sources/syntheses/questions/lints + index/log).
   Реализован в `wiki/` (корень проекта), описан в `wiki/wiki-schema.md`, `AGENTS.md` и `llm-wiki.md`. [Активно]
 
+- **Сборочный слой** — Prism-safe инструкция `s2t/docs/BUILD.md` и файл
+  `s2t/docs/s2t_paths.tex`, которые после реструктуризации связывают тома из
+  `s2t/docs/` с гейтами в `s2t/gates/` и иллюстрациями в `s2t/assets/`.
+  Сборка выполняется прямым вызовом `latexmk -cd`. [Активно]
+
 ## Прочие термины
 
 - **Real structure / KO6** — вещественная структура (KO-градуировка 6) в

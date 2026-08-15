@@ -1,6 +1,8 @@
 # Version IV: spin-branch mass stationarity gate
 
-> Status: closed negatively
+> Status: working
+> Research status: closed negatively
+> Type: question
 > Updated: 2026-08-11
 
 ## Problem

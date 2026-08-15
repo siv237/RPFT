@@ -1,6 +1,8 @@
 # State Menu SU5 Fiber Gate
 
-> Status: positive group/representation gate; generations and masses open
+> Status: working
+> Research status: positive group/representation gate; generations and masses open
+> Type: question
 > Updated: 2026-08-04
 
 ## Question

@@ -1,7 +1,9 @@
 # Version III Minimal Finite Algebra Gate
 
-> Status: module and measure pass; minimal first-order mixing failed
-> Date: 2026-08-09
+> Status: working
+> Research status: module and measure pass; minimal first-order mixing failed
+> Type: question
+> Updated: 2026-08-09
 
 ## Positive Result
 

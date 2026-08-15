@@ -1,9 +1,11 @@
 # Project Evidence-Status Tree
 
-> Status: current visual status map
-> Updated: 2026-08-14
+> Status: working
+> Research status: current visual status map
+> Type: synthesis
+> Updated: 2026-08-15
 
-![Project evidence-status tree](../../fig_project_success_tree_v4_current_2026-08-14.png)
+![Project evidence-status tree](../../s2t/assets/fig_project_success_tree_v4_current_2026-08-15.png)
 
 ## Legend
 
@@ -30,8 +32,7 @@ coefficients.
 
 ## Sources
 
-- `fig_project_success_tree_v4_current_2026-08-14.png`
-- `fig_project_success_tree_v4_current_2026-08-14.pdf`
+- `s2t/assets/fig_project_success_tree_v4_current_2026-08-15.png`
 - `s2t/audits/generate_project_success_tree_v4.py`
 - `s2t/results/project_success_tree_v4_results.json`
 - `s2t/gates/version4_project_success_tree_gate.tex`

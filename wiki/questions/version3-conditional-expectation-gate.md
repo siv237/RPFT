@@ -1,7 +1,9 @@
 # Version III Conditional Expectation Gate
 
-> Status: factor-measure pass; module origin open
-> Date: 2026-08-09
+> Status: working
+> Research status: factor-measure pass; module origin open
+> Type: question
+> Updated: 2026-08-09
 
 Normalized spectator integration derives the RP3 and S1 norms without free
 weights. One scalar product algebra still has only one global constant, so

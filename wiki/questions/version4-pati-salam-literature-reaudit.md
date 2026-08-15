@@ -1,6 +1,8 @@
 # Version IV: Pati–Salam literature re-audit
 
-> Status: scenario ledger corrected
+> Status: working
+> Research status: scenario ledger corrected
+> Type: question
 > Updated: 2026-08-13
 
 ## Correction

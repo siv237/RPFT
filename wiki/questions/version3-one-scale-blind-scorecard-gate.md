@@ -1,7 +1,9 @@
 # Version III One-Scale Blind Scorecard
 
-> Status: mathematical predictions exist; physical readout is open
-> Date: 2026-08-10
+> Status: working
+> Research status: mathematical predictions exist; physical readout is open
+> Type: question
+> Updated: 2026-08-10
 
 ## One Train Scale
 

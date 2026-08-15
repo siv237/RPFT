@@ -1,6 +1,7 @@
 # Pati-Salam KO6 Phi/Sigma Hessian Gate
 
-> Status: no-go with surviving extension route
+> Status: working
+> Research status: no-go with surviving extension route
 > Type: question
 > Updated: 2026-08-14
 

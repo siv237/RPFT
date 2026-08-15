@@ -1,7 +1,9 @@
 # Projector T5 Quotient Contraction Table
 
-> Status: computed / direct channel closed
-> Type: question / audit result
+> Status: working
+> Research status: computed / direct channel closed
+> Type: question
+> Research type: question / audit result
 > Updated: 2026-08-02
 
 ## Question
