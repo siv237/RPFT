@@ -1,0 +1,72 @@
+\chapter{Квадратичный parent selector: точный no-go}
+
+Incidence menu содержит двенадцать рабочих permutation directions, или восемь
+различных Hermitian operators после отождествления inverse cycles. Проверим,
+может ли простейшее действие, построенное из уже выведенных operators,
+выбрать один из них до обращения к CKM.
+
+\section{Quadratic score vector}
+
+Для каждого full-\(M_3\) candidate \(H\) определим
+\begin{equation}
+\mathcal S(H)=
+\left(
+\|[H,T_p]\|_F^2,
+\|[H,T_q]\|_F^2,
+\|[H,S]\|_F^2,
+\|[H,P_-]\|_F^2
+\right).
+\end{equation}
+Это полный набор простейших quadratic commutator penalties относительно
+factor translations, cohomology shear и leading rank-one projector.
+
+Exact scan восьми Hermitian candidates даёт четыре score classes, каждая
+кратности два. Ни один candidate не выделяется всеми этими quadratic data
+единственным образом.
+
+\begin{theorem}[Quadratic selector no-go]
+Любой parent potential, зависящий от \(H\) только через линейную комбинацию
+компонент \(\mathcal S(H)\), не может иметь единственный minimum на полном
+Hermitian incidence menu: каждый score vector реализуется как минимум двумя
+различными operators.
+\end{theorem}
+
+\section{Metric-weighted test}
+
+Для конкретного no-new-parameter теста используем inverse-square factor
+weights, удалив общий \(\pi^{-2}\):
+\begin{equation}
+V_{\rm quad}(H)=
+\|[H,T_p]\|_F^2
++\frac14\|[H,T_q]\|_F^2
++\frac15\|[H,S]\|_F^2.
+\end{equation}
+Минимальное значение равно
+\begin{equation}
+V_{\rm quad}^{\min}=\frac{16}{5}
+\end{equation}
+и достигается на двух symmetry-related transposition operators.
+
+Однако эти два minima коммутируют:
+\begin{equation}
+[H_A,H_B]=0.
+\end{equation}
+Поэтому даже назначение \(H_A\) up-sector, а \(H_B\) down-sector не создаёт
+физического misalignment: оба mass operators имеют общий eigenbasis.
+
+\begin{proposition}[Independent-sector quadratic failure]
+Независимая минимизация одного и того же quadratic parent potential в двух
+Yukawa sectors допускает aligned и symmetry-related branches, но не выводит
+ненулевой CKM. Для mixing требуется cross-sector interaction или
+orientation-sensitive invariant, отсутствующий в quadratic menu.
+\end{proposition}
+
+\begin{nogocriterion}[Запрет ручного снятия вырождения]
+Нельзя выбрать один из двух minima boundary condition-ом или назначить их
+разным секторам post hoc. Новый член действия должен одновременно фиксировать
+relative orbit, coefficient и complex orientation до сравнения с mixing
+data.
+\end{nogocriterion}
+
+Машинный результат сохранён в
+\path{s2t_v4_quadratic_parent_selector_gate_results.json}.

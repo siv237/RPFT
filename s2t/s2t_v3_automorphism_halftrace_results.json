@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "automorphism_orbit_no_go_halftrace_conditional_pass",
+  "orbit": {
+    "rephasing_product_ratio": "epsilon_x*epsilon_z",
+    "continuous_invariants": [
+      "abs(x)",
+      "abs(z)",
+      "arg(x*z) mod pi"
+    ],
+    "sheet_exchange": "x <-> z",
+    "unique_discrete_orbit": false
+  },
+  "spectral_invariants": {
+    "trace_BBdagger": "2*x_abs**2 + 2*z_abs**2",
+    "det_BBdagger": "4*x_abs**2*z_abs**2*sin(phi)**2",
+    "continuous_combinations": 2
+  },
+  "KO6_doubling": {
+    "dimension_before": 4,
+    "dimension_after": 8,
+    "J_gamma_anticommutator": "Matrix([[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0]])",
+    "full_trace_multiplier": 2,
+    "orbit_half_trace_multiplier": "1/2"
+  },
+  "normalization": {
+    "factor_rank_full_doubled": 2,
+    "factor_rank_orbit_trace": 1,
+    "heavy_rank_full_doubled": 46,
+    "heavy_rank_orbit_trace": 23,
+    "half_trace_from_parent_measure": false
+  },
+  "verdict": {
+    "edge_parameters_fixed": false,
+    "KO6_sign_passed": true,
+    "half_trace_algebraic_pass": true,
+    "half_trace_parent_origin_pass": false,
+    "parent_action_passed": false,
+    "next_gate": "finite Dirac parent potential and orbit selection"
+  }
+}

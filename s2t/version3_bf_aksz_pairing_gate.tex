@@ -1,0 +1,41 @@
+\chapter{Гейт граничной BF/AKSZ pairing form}
+
+Квантованная симплектическая форма
+\begin{equation}
+ \Omega_k=\frac{k}{2\pi}\int_\Sigma\delta B\wedge\delta A,
+ \qquad k\in\mathbb Z,
+\end{equation}
+фиксирует скобку фазовых координат, но не является положительной метрикой:
+\(\Omega_k(v,v)=0\). Положительная форма требует совместимой комплексной
+структуры \(J\), \(g_J(u,v)=\Omega_k(u,Jv)\).
+
+Уже для одной канонической пары допустимо семейство
+\begin{equation}
+ J_s=\begin{pmatrix}0&-s^{-1}\\s&0\end{pmatrix},
+ \qquad
+ g_s=k\begin{pmatrix}s&0\\0&s^{-1}\end{pmatrix},
+ \qquad s>0.
+\end{equation}
+Уровень \(k\) квантован, но поляризация \(s\) остаётся непрерывной.
+Кроме того, чистое BF/AKSZ pairing кодирует интегральные
+intersection/linking-данные, а объёмы \(\pi^2\), \(2\pi\) и норма
+\(\pi^{-1}\) появляются только после Hodge- или metric-ввода.
+
+Носитель \(K=\mathbb{RP}^3\times S^1\) замкнут. BFV-граница требует
+разрезания или физического дефекта, то есть новых граничных данных.
+
+\begin{nogocriterion}[Pure BF/AKSZ pairing no-go]
+Квантованный топологический pairing не выводит положительную
+двухсекторную trace--Hodge-метрику. Для этого требуется отдельно вывести
+поляризацию, gauge fixing, гамильтониан или дефект.
+\end{nogocriterion}
+
+Следующий кандидат использует канонические условные ожидания
+\begin{equation}
+ E_{S^1}=\operatorname{id}\otimes\tau_{S^1},
+ \qquad
+ E_{\mathbb{RP}^3}=\tau_{\mathbb{RP}^3}\otimes\operatorname{id}.
+\end{equation}
+
+Машинный аудит сохранён в
+\texttt{s2t\_v3\_bf\_aksz\_pairing\_results.json}.

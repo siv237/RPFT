@@ -1,0 +1,515 @@
+{
+  "gate": "version4_family_defect_tetrahedral_residual_bundle_gate",
+  "construction": {
+    "tetrahedral_axes": "n_a=B^T diag[(2/sqrt(3))(P_a-I/4)]",
+    "spin_three_tensor": "T_ijk=sum_a n_ai n_aj n_ak",
+    "continuous_breaking": "SO(3)_F -> Stab(T)=A4",
+    "projector_breaking": "A4 -> Stab(P_a)=Z3",
+    "binary_lift": "pi1(SO(3)/Z3)=preimage(Z3 in SU2)=Z6"
+  },
+  "checks": {
+    "axis_count": 4,
+    "axis_norm_residual": 4.440892098500626e-16,
+    "axis_sum_residual": 1.6653345369377348e-16,
+    "tetrahedral_tensor_trace_residual": 5.494009196698615e-16,
+    "tetrahedral_rotation_stabilizer_order": 12,
+    "maximum_even_tensor_residual": 1.787623914648862e-15,
+    "maximum_triplet_orthogonality_residual": 1.0345663512211877e-15,
+    "a4_order": 12,
+    "a4_commutator_subgroup_order": 4,
+    "a4_abelianization_order": 3,
+    "all_projector_stabilizers_z3": true,
+    "maximum_axis_stabilizer_residual": 4.775249788392736e-16,
+    "maximum_cycle_order_three_residual": 1.4438107334097244e-15,
+    "maximum_su2_lift_cube_residual": 4.594365265244385e-16,
+    "maximum_su2_lift_sixth_residual": 9.20981423184622e-16,
+    "maximum_exponential_rotation_residual": 1.7383793089314455e-15,
+    "charge_two_abelian_higgs_residual_group_order": 2,
+    "charge_three_abelian_higgs_residual_group_order": 3
+  },
+  "status": {
+    "z3_denominator_origin": "pass_as_projector_stabilizer_inside_A4",
+    "binary_tetrahedral_consistency": "the SU2 lift of every order-three SO3 holonomy has order six, and A4 abelianization has order three",
+    "gauge_global_fork": {
+      "global_A4": "retains physical axes but does not produce a gauge bundle",
+      "gauged_A4": "produces residual Z3 flux, but the four projector axes are gauge-related unless boundary framing or additional matter makes them observable"
+    },
+    "remaining_gap": "derive a gauged or boundary-framed tetrahedral carrier and the nonzero ordinary charge-two defect condensate from one finite graded parent action"
+  },
+  "tetrahedral_rows": [
+    {
+      "permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999994,
+      "orthogonality_residual": 9.964865003301369e-16,
+      "tetrahedral_tensor_residual": 1.3743089938045356e-15
+    },
+    {
+      "permutation": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999994,
+      "orthogonality_residual": 1.0345663512211877e-15,
+      "tetrahedral_tensor_residual": 1.595055361040534e-15
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999997,
+      "orthogonality_residual": 9.835532802298273e-16,
+      "tetrahedral_tensor_residual": 1.5974190980803914e-15
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999993,
+      "orthogonality_residual": 9.825553767340784e-16,
+      "tetrahedral_tensor_residual": 1.7039894754389788e-15
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999993,
+      "orthogonality_residual": 9.320900644887076e-16,
+      "tetrahedral_tensor_residual": 1.5300507509986095e-15
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999994,
+      "orthogonality_residual": 9.426354510585436e-16,
+      "tetrahedral_tensor_residual": 1.5268028797271164e-15
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2,
+        3
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999993,
+      "orthogonality_residual": 7.989157311772703e-16,
+      "tetrahedral_tensor_residual": 1.4814348656186427e-15
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999993,
+      "orthogonality_residual": 9.49108812995699e-16,
+      "tetrahedral_tensor_residual": 1.735861081564723e-15
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999994,
+      "orthogonality_residual": 9.068249340691316e-16,
+      "tetrahedral_tensor_residual": 1.787623914648862e-15
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999996,
+      "orthogonality_residual": 7.283188995684383e-16,
+      "tetrahedral_tensor_residual": 1.5428080950877153e-15
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999993,
+      "orthogonality_residual": 1.0098834362770985e-15,
+      "tetrahedral_tensor_residual": 1.91419170080881e-15
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999994,
+      "orthogonality_residual": 8.915834462670841e-16,
+      "tetrahedral_tensor_residual": 1.637962933480288e-15
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999994,
+      "orthogonality_residual": 9.31467142569597e-16,
+      "tetrahedral_tensor_residual": 1.6871080728435695e-15
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999993,
+      "orthogonality_residual": 9.969171414760646e-16,
+      "tetrahedral_tensor_residual": 1.7065870649196272e-15
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999996,
+      "orthogonality_residual": 1.020668914389972e-15,
+      "tetrahedral_tensor_residual": 1.6916818414269285e-15
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999998,
+      "orthogonality_residual": 8.350210161791663e-16,
+      "tetrahedral_tensor_residual": 1.2461063428384469e-15
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999993,
+      "orthogonality_residual": 1.017197886755032e-15,
+      "tetrahedral_tensor_residual": 1.6525205645907318e-15
+    },
+    {
+      "permutation": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999997,
+      "orthogonality_residual": 8.80962837403031e-16,
+      "tetrahedral_tensor_residual": 1.248581054410112e-15
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999993,
+      "orthogonality_residual": 6.63475611213096e-16,
+      "tetrahedral_tensor_residual": 1.485776282756609e-15
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999994,
+      "orthogonality_residual": 7.355034192113281e-16,
+      "tetrahedral_tensor_residual": 1.4661166649047013e-15
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999994,
+      "orthogonality_residual": 8.93772089250675e-16,
+      "tetrahedral_tensor_residual": 1.5136016534563632e-15
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999993,
+      "orthogonality_residual": 9.945461960240088e-16,
+      "tetrahedral_tensor_residual": 1.482859169490166e-15
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "sign": -1,
+      "triplet_determinant": -0.9999999999999996,
+      "orthogonality_residual": 8.838453933897981e-16,
+      "tetrahedral_tensor_residual": 1.6554316253222927e-15
+    },
+    {
+      "permutation": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "sign": 1,
+      "triplet_determinant": 0.9999999999999997,
+      "orthogonality_residual": 9.191437488748539e-16,
+      "tetrahedral_tensor_residual": 1.5511943185378957e-15
+    }
+  ],
+  "branch_rows": [
+    {
+      "fixed_point": 0,
+      "winding": 1,
+      "cycle": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "axis": [
+        -0.8164965809277259,
+        0.4714045207910318,
+        0.33333333333333337
+      ],
+      "stabilizer_order": 3,
+      "stabilizer_is_expected_z3": true,
+      "maximum_axis_stabilizer_residual": 4.775249788392736e-16,
+      "cycle_order_three_residual": 1.4438107334097244e-15,
+      "cycle_nontrivial_residual": 2.449489742783178,
+      "su2_lift_cube_residual": 3.3103687685155823e-16,
+      "su2_lift_sixth_residual": 8.317415680509753e-16,
+      "exponential_rotation_residual": 1.7383793089314455e-15
+    },
+    {
+      "fixed_point": 0,
+      "winding": -1,
+      "cycle": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "axis": [
+        -0.8164965809277259,
+        0.4714045207910318,
+        0.33333333333333337
+      ],
+      "stabilizer_order": 3,
+      "stabilizer_is_expected_z3": true,
+      "maximum_axis_stabilizer_residual": 4.775249788392736e-16,
+      "cycle_order_three_residual": 1.4370161257714548e-15,
+      "cycle_nontrivial_residual": 2.449489742783178,
+      "su2_lift_cube_residual": 3.8283582482295026e-16,
+      "su2_lift_sixth_residual": 8.323202514633948e-16,
+      "exponential_rotation_residual": 1.7316142319989001e-15
+    },
+    {
+      "fixed_point": 1,
+      "winding": 1,
+      "cycle": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "axis": [
+        -6.440924765284703e-17,
+        -0.9428090415820636,
+        0.3333333333333334
+      ],
+      "stabilizer_order": 3,
+      "stabilizer_is_expected_z3": true,
+      "maximum_axis_stabilizer_residual": 1.37658092942061e-16,
+      "cycle_order_three_residual": 1.2005794679315359e-15,
+      "cycle_nontrivial_residual": 2.449489742783178,
+      "su2_lift_cube_residual": 4.594365265244385e-16,
+      "su2_lift_sixth_residual": 9.20981423184622e-16,
+      "exponential_rotation_residual": 1.7136679897814678e-15
+    },
+    {
+      "fixed_point": 1,
+      "winding": -1,
+      "cycle": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "axis": [
+        -6.440924765284703e-17,
+        -0.9428090415820636,
+        0.3333333333333334
+      ],
+      "stabilizer_order": 3,
+      "stabilizer_is_expected_z3": true,
+      "maximum_axis_stabilizer_residual": 1.37658092942061e-16,
+      "cycle_order_three_residual": 1.2676451758237797e-15,
+      "cycle_nontrivial_residual": 2.449489742783178,
+      "su2_lift_cube_residual": 4.594365265244385e-16,
+      "su2_lift_sixth_residual": 9.20981423184622e-16,
+      "exponential_rotation_residual": 1.389997453310356e-15
+    },
+    {
+      "fixed_point": 2,
+      "winding": 1,
+      "cycle": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "axis": [
+        -6.440924765284703e-17,
+        -3.330415740667906e-17,
+        -1.0
+      ],
+      "stabilizer_order": 3,
+      "stabilizer_is_expected_z3": true,
+      "maximum_axis_stabilizer_residual": 2.4520889384712465e-16,
+      "cycle_order_three_residual": 7.878492973803256e-16,
+      "cycle_nontrivial_residual": 2.449489742783178,
+      "su2_lift_cube_residual": 3.885780586188048e-16,
+      "su2_lift_sixth_residual": 8.881784197001252e-16,
+      "exponential_rotation_residual": 7.69317014719427e-16
+    },
+    {
+      "fixed_point": 2,
+      "winding": -1,
+      "cycle": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "axis": [
+        -6.440924765284703e-17,
+        -3.330415740667906e-17,
+        -1.0
+      ],
+      "stabilizer_order": 3,
+      "stabilizer_is_expected_z3": true,
+      "maximum_axis_stabilizer_residual": 2.4520889384712465e-16,
+      "cycle_order_three_residual": 1.1591580098647889e-15,
+      "cycle_nontrivial_residual": 2.449489742783178,
+      "su2_lift_cube_residual": 3.885780586188048e-16,
+      "su2_lift_sixth_residual": 8.881784197001252e-16,
+      "exponential_rotation_residual": 8.438632304721172e-16
+    },
+    {
+      "fixed_point": 3,
+      "winding": 1,
+      "cycle": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "axis": [
+        0.816496580927726,
+        0.4714045207910318,
+        0.33333333333333337
+      ],
+      "stabilizer_order": 3,
+      "stabilizer_is_expected_z3": true,
+      "maximum_axis_stabilizer_residual": 4.1910000110727263e-16,
+      "cycle_order_three_residual": 1.0396383632971151e-15,
+      "cycle_nontrivial_residual": 2.449489742783178,
+      "su2_lift_cube_residual": 2.665835984225005e-16,
+      "su2_lift_sixth_residual": 6.07618935138655e-16,
+      "exponential_rotation_residual": 1.6397256185447726e-15
+    },
+    {
+      "fixed_point": 3,
+      "winding": -1,
+      "cycle": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "axis": [
+        0.816496580927726,
+        0.4714045207910318,
+        0.33333333333333337
+      ],
+      "stabilizer_order": 3,
+      "stabilizer_is_expected_z3": true,
+      "maximum_axis_stabilizer_residual": 4.1910000110727263e-16,
+      "cycle_order_three_residual": 1.0332358810813683e-15,
+      "cycle_nontrivial_residual": 2.449489742783178,
+      "su2_lift_cube_residual": 2.486410087150353e-16,
+      "su2_lift_sixth_residual": 5.763878168445254e-16,
+      "exponential_rotation_residual": 1.6360014942735805e-15
+    }
+  ]
+}

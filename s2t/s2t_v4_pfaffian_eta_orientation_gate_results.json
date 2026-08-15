@@ -1,0 +1,43 @@
+{
+  "gate": "version4_pfaffian_eta_orientation",
+  "canonical_antisymmetric_form": "A_red=gamma D in plus-then-minus chiral ordering",
+  "pfaffian_identity": "Pf([[0,M],[-M^T,0]])=(-1)^15 det(M)=-det(M)",
+  "branches": [
+    {
+      "name": "B_minus",
+      "det_chiral_block": "3/2",
+      "reduced_pfaffian": "-3/2",
+      "reduced_pfaffian_squared": "9/4",
+      "reduced_form_antisymmetric": true,
+      "full_ko6_pfaffian": "9/4",
+      "full_ko6_form_antisymmetric": true,
+      "eta_signature": 0
+    },
+    {
+      "name": "B_plus",
+      "det_chiral_block": "-3/2",
+      "reduced_pfaffian": "3/2",
+      "reduced_pfaffian_squared": "9/4",
+      "reduced_form_antisymmetric": true,
+      "full_ko6_pfaffian": "9/4",
+      "full_ko6_form_antisymmetric": true,
+      "eta_signature": 0
+    }
+  ],
+  "reduced_pfaffians_opposite": true,
+  "reduced_relative_phase": "pi",
+  "full_ko6_pfaffians_equal": true,
+  "full_ko6_phase_cancels": true,
+  "eta_invariants_equal_zero": true,
+  "odd_basis_permutation_flips_reduced_pfaffian": true,
+  "determinant_line_orientation_derived": false,
+  "complex_connector_paths": {
+    "W_minus_one_half": "(exp(I*theta) + 2)*exp(-3*I*theta)/2",
+    "W_plus_one_half": "-(exp(I*theta) - 2)*exp(-3*I*theta)/2"
+  },
+  "complex_paths_avoid_zero": true,
+  "reduced_sign_is_topological_on_full_complex_configuration_space": false,
+  "vacuum_energy_is_split_by_pfaffian_sign": false,
+  "conditional_quantum_relative_sign_exists": true,
+  "status": "a reduced oriented chiral Pfaffian gives opposite signs, but the full KO6 pair cancels the phase; eta is zero and the reduced sign is basis-orientation dependent and not topological in the complex configuration space"
+}

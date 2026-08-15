@@ -1,0 +1,187 @@
+\chapter{Reality measure, Pfaffian и статус orbit half-trace}
+
+Cross-tome audit оставил условным правило
+\begin{equation}
+ \Tr_{\mathrm{orb}}=\frac12\Tr_{H_8}.
+\end{equation}
+Для закрытия нужно различить fermionic functional measure и bosonic
+spectral action: они не обязаны использовать один и тот же trace
+prescription.
+
+\section{KO6 reality doubling}
+
+Пусть
+\begin{equation}
+ H_8=H_4\oplus H_4^c,
+\end{equation}
+а antiunitary \(J\) обменивает две копии. Для \(J\)-compatible observable
+\begin{equation}
+ Q_8=Q_4\oplus JQ_4J^{-1}
+\end{equation}
+и вещественного spectral invariant получаем
+\begin{equation}
+ \Tr_{H_8}Q_8=2\Tr_{H_4}Q_4.
+\end{equation}
+Это algebraic doubling identity, но само по себе оно не определяет,
+какой trace должен входить в каждый functional.
+
+\section{Fermionic Pfaffian measure}
+
+Для real even spectral data fermionic quadratic action имеет
+антисимметричную форму
+\begin{equation}
+ S_F[\psi]
+ =
+ \frac12\langle J\psi,\mathcal D\psi\rangle.
+\end{equation}
+Grassmann integration даёт
+\begin{equation}
+ Z_F=\operatorname{Pf}(\mathcal C\mathcal D),
+\end{equation}
+и
+\begin{equation}
+ \log Z_F
+ =
+ \frac12\Tr\log(\mathcal C\mathcal D)
+\end{equation}
+на doubled complex representation. Поэтому particle--antiparticle
+reality orbit считается один раз.
+
+\begin{theorem}[Pfaffian half-count pass]
+Для fermionic determinant, state multiplicities и one-loop fermion
+contribution коэффициент \(1/2\) выводится из Pfaffian measure. Две
+physical Dirac-пары finite ledger не должны удваиваться из-за формального
+KO6 completion.
+\end{theorem}
+
+\section{Bosonic spectral trace}
+
+Классический bosonic spectral action имеет вид
+\begin{equation}
+ S_B=\Tr_{H_8}f(\mathcal D^2/\Lambda^2)
+\end{equation}
+и использует полный complex trace. Fermionic Pfaffian не заменяет его
+автоматически на half-trace.
+
+Для doubled finite block:
+\begin{equation}
+ G_{\mathrm{full}}=2G_{\mathrm{orb}},
+ \qquad
+ H_{\mathrm{full}}=2H_{\mathrm{orb}}.
+\end{equation}
+Поэтому physical mass matrix invariant:
+\begin{equation}
+ (\kappa G_{\mathrm{full}})^{-1}H_{\mathrm{full}}
+ =
+ (\kappa G_{\mathrm{orb}})^{-1}H_{\mathrm{orb}}.
+\end{equation}
+
+Gauge normalization также invariant. Full trace даёт
+\begin{equation}
+ \Tr_{H_8}Q^2=4
+\end{equation}
+вместо orbit value \(2\), но scalar kinetic coefficient одновременно
+удваивается с \(2\) до \(4\). Нормированный gauge coefficient остаётся
+\begin{equation}
+ \frac{(2/3)\cdot4}{4}=\frac23,
+\end{equation}
+следовательно,
+\begin{equation}
+ g^2=\frac38
+\end{equation}
+не меняется.
+
+\begin{theorem}[Full-trace ratio invariance]
+Переход от orbit-normalized bosonic notation к полному spectral trace
+удваивает весь bosonic action глобально, но сохраняет \(\kappa\), scalar
+masses, gauge coupling и vacuum orbit после canonical normalization.
+\end{theorem}
+
+\section{Исправленная trace dictionary}
+
+Отныне различаем:
+\begin{align}
+ \Tr_{\mathrm{spec}}
+ &:=\Tr_{H_8}
+ &&\text{для bosonic spectral action},
+ \\
+ \Tr_{\mathrm{phys}}
+ &:=\frac12\Tr_{H_8}
+ &&\text{для Pfaffian fermion count},
+ \\
+ \Tr_{\mathrm{red}}
+ &:=\Tr_{H_4}
+ &&\text{как сокращённую вычислительную запись}.
+\end{align}
+Для \(J\)-invariant even polynomials
+\begin{equation}
+ \Tr_{\mathrm{red}}
+ =\frac12\Tr_{\mathrm{spec}},
+\end{equation}
+но это identity representation, а не универсальный measure axiom.
+
+Все прежние записи \(\Tr_{\mathrm{orb}}\) в normalized bosonic ratios
+следует понимать как использование reduced representative с последующим
+удалением общего doubling factor. В absolute bosonic action должен
+использоваться \(\Tr_{\mathrm{spec}}\).
+
+\section{Supertrace ledger}
+
+Coleman--Weinberg supertrace считает physical propagating fields:
+\begin{enumerate}
+ \item три real scalar modes;
+ \item три massive-vector polarizations;
+ \item две physical Dirac pairs, посчитанные Pfaffian/reality measure.
+\end{enumerate}
+Следовательно,
+\begin{equation}
+ N_{\mathrm{fin+gauge}}
+ =3\cdot4^2+3\cdot3^2-2\cdot4
+ =67
+\end{equation}
+сохраняется. Формальное удвоение representation не создаёт новые
+propagating particle species.
+
+\section{Что понижается в статусе}
+
+Role-graded norms, использовавшие absolute finite ranks
+\begin{equation}
+ \Tr_{\mathrm{orb}}P_H=23,
+\end{equation}
+не получают bosonic measure theorem из Pfaffian. Они уже исключены из
+blind scorecard и сохраняются только как reduced-module construction
+targets.
+
+Аналогично абсолютная общая normalizing constant bosonic action зависит
+от spectral moments и train scale. Но relative hidden-sector predictions
+не зависят от выбора full или reduced trace.
+
+\begin{nogocriterion}[No universal half-trace]
+Запрещено использовать fermionic Pfaffian как доказательство
+\(\frac12\Tr_{H_8}\) для независимого classical bosonic spectral action.
+Half-count допустим для physical fermions; bosonic coefficients должны
+считаться full trace либо явно нормироваться общим global factor.
+\end{nogocriterion}
+
+\begin{theorem}[Measure closure verdict]
+Универсальный orbit half-trace отвергается, но основной hidden parent
+action сохраняется. Fermionic half-count строго выводится из Pfaffian,
+bosonic action использует full spectral trace, а все ранее выведенные
+dimensionless ratios invariant относительно общего KO6 doubling.
+\end{theorem}
+
+\begin{protocol}[Следующий гейт]
+Measure gap закрыт для внутренней hidden EFT. Следует проверить portal
+menu при новой trace dictionary:
+\begin{enumerate}
+ \item scalar portal;
+ \item abelian kinetic mixing;
+ \item neutrino portal.
+\end{enumerate}
+Маршрут проходит только если symmetry или common algebra выбирает portal
+и его normalization; произвольный continuous portal coefficient
+сохраняет hidden sector phenomenologically disconnected.
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_orbit_measure_pfaffian_results.json}.

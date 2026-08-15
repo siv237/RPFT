@@ -1,0 +1,129 @@
+\section{Порог connected connector и twisted scalar--vector target}
+
+Полный \(\phi/\Sigma_4\) Hessian показал, что determinant selector
+стабилизирует rank-one направление \(\Delta\), но не остальные composite
+scalar directions. Следующий шаг должен сначала отделить минимально
+необходимый quadratic effect от более сильного утверждения о его
+геометрическом происхождении.
+
+\subsection{Connected scalar channel}
+
+Рассмотрим самый экономный дополнительный вклад, зависящий от того же
+composite Yukawa block:
+\begin{equation}
+ V_{\rm conn}=\zeta\|Y(\phi,\Sigma_4)\|_F^2.
+ \label{eq:ps-connected-scalar-channel}
+\end{equation}
+Пусть \(G_Y\) --- Gram matrix линейного отображения
+\(\phi\mapsto Y(\phi,\Sigma_{B-L})\) на восьмимерном real
+\(\phi\)-tangent. Тогда Hessian получает сдвиг
+\begin{equation}
+ H_\phi(\zeta)=H_\phi(0)+2\zeta G_Y.
+\end{equation}
+Для project Yukawa seed и canonical traceless direction собственные числа
+\(G_Y\) равны
+\begin{equation}
+ 1.99\ (4),
+ \qquad
+ 9.27\ (4).
+\end{equation}
+Generalized eigenvalue problem
+\begin{equation}
+ -H_\phi(0)v=2\zeta G_Yv
+\end{equation}
+даёт critical values
+\begin{equation}
+ 1.72905791\ (4),
+ \qquad
+ 2\ (4).
+\end{equation}
+Следовательно,
+\begin{equation}
+ \boxed{\zeta_{\rm crit}=2.}
+ \label{eq:ps-connector-critical-zeta}
+\end{equation}
+При \(\zeta=2\) остаются четыре zero modes; strict positive
+\(\phi\)-Hessian требует
+\begin{equation}
+ \boxed{\zeta>2.}
+ \label{eq:ps-connector-strict-threshold}
+\end{equation}
+Direct scan даёт signatures
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+\(\zeta\) & positive & zero & negative\\
+\midrule
+0 & 0 & 0 & 8\\
+1.9 & 4 & 0 & 4\\
+2 & 4 & 4 & 0\\
+2.1 & 8 & 0 & 0\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Почему одного scalar channel недостаточно}
+
+При \(\phi=0\)
+\begin{equation}
+ Y(0,\Sigma_4)=0
+\end{equation}
+для каждого \(\Sigma_4\). Поэтому любой potential, зависящий только от
+\(\|Y\|^2\), имеет нулевой \(\Sigma_4\)-Hessian в исследуемом background.
+Даже при \(\zeta>2\) все пятнадцать Hermitian traceless directions остаются
+flat.
+
+\begin{nogocriterion}[Scalar-only connector no-go]
+Connected вклад \(\zeta\|Y\|^2\) может стабилизировать восемь
+\(\phi\)-directions только при \(\zeta>2\), но не способен породить
+potential для \(\Sigma_4\). Поэтому single scalar portal не замыкает full
+Pati--Salam vacuum.
+\end{nogocriterion}
+
+\subsection{Литературная зацепка и допустимая архитектура}
+
+Grand-symmetry construction arXiv:1304.0415 показывает, что расширенная
+алгебра, смешивающая spin и internal degrees of freedom, может породить
+дополнительное scalar field без новых fermions. Twisted spectral triple
+arXiv:1411.1320 делает сопутствующие vectorial terms bounded и получает из
+одного twisted fluctuation scalar и vector fields вместе с dynamical
+reduction pre-geometric Pati--Salam symmetry к Standard Model algebra.
+
+Для текущего проекта существенна не буквальная идентификация полей, а
+структурный факт: минимальный parent должен давать одновременно два
+связанных эффекта,
+\begin{enumerate}
+ \item scalar mass shift в \(Y\)-channel с нормированным коэффициентом
+ \(\zeta>2\);
+ \item independent representation-sensitive vector или
+ \(\Sigma_4\)-potential, ненулевой уже при \(\phi=0\).
+\end{enumerate}
+Это согласуется с внешним no-go arXiv:1905.04533 для vacuum ordinary
+spectral Pati--Salam potential и не требует возвращения к fitted
+determinant coefficient.
+
+\begin{proposition}[Twisted scalar--vector target]
+Из исследованных ветвей только parent с двумя связанными quadratic channels
+может одновременно устранить \(8\) negative \(\phi\)-modes и \(15\) flat
+\(\Sigma_4\)-modes. Twisted scalar--vector fluctuation является
+литературно реализованным классом такой архитектуры без добавления fermions,
+но его коэффициенты для project finite block ещё не выведены.
+\end{proposition}
+
+\subsection{Следующий решающий gate}
+
+Нужно построить reduced twisted spectral triple с явно заданным exchange
+automorphism, вычислить twisted one-forms и quadratic spectral action, а
+затем проверить две независимые величины до сравнения с наблюдаемыми:
+\begin{equation}
+ \zeta_{\rm twist}>2,
+ \qquad
+ \rank H_{\Sigma,\rm twist}=15.
+ \label{eq:ps-twisted-next-pass}
+\end{equation}
+Если хотя бы одно условие не выполняется с фиксированными коэффициентами,
+twisted rescue закрывается и остаётся genuine two-scale spectral action.
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_twisted_connector_threshold_gate.py} и
+\path{s2t_v4_pati_salam_twisted_connector_threshold_gate_results.json}.

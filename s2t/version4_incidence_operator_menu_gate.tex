@@ -1,0 +1,75 @@
+\chapter{Исчерпывающий menu некоммутирующих incidence-операторов}
+
+Rank-one breaking фиксирует тяжёлое направление, но commuting factor algebra
+не создаёт sector misalignment. Проверим все минимальные Hermitian incidence
+operators, доступные в полном \(AGL(2,2)\).
+
+\section{Residual algebra}
+
+Две трансляции и cohomology shear порождают subgroup порядка 8. На family
+triplet её associative operator algebra имеет размерность 5, а commutant ---
+размерность 2. Поэтому сохраняется reducible split \(1+2\).
+
+В полном \(AGL(2,2)\simeq S_4\) остаётся 16 элементов вне residual subgroup.
+Для permutation matrix \(P_g\) физическим self-adjoint candidate считается
+\begin{equation}
+H_g=\frac{P_g+P_g^\dagger}{2}.
+\end{equation}
+
+\section{Полный перебор}
+
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Cycle type & Число & Full \(M_3\) & Reducible dimension 5 \\
+\midrule
+\(2+1+1\) & 4 & 4 & 0 \\
+\(3+1\) & 8 & 8 & 0 \\
+\(4\) & 4 & 0 & 4 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{theorem}[Existence of a full mixing algebra]
+Ровно 12 из 16 outside-residual Hermitian incidence operators вместе с
+factor translations и shear порождают полную алгебру
+\begin{equation}
+M_3(\mathbb C)
+\end{equation}
+на family triplet. Четыре 4-cycle candidates после Hermitian symmetrization
+оставляют прежнюю редуцируемую алгебру размерности 5.
+\end{theorem}
+
+Следовательно, алгебраическое препятствие mixing снято: минимальный carrier
+уже допускает noncommuting operators и произвольный трёхсемейный eigenbasis.
+Но существование полной \(M_3\)-алгебры само по себе не является
+предсказанием CKM.
+
+\section{Selector obstruction}
+
+Двенадцать рабочих operators образуют несколько residual-conjugacy orbits.
+Замороженная geometry не выбирает конкретный orbit element. Более того,
+усреднение любого candidate по residual group возвращает operator algebra к
+размерности 5 и split \(1+2\).
+
+\begin{proposition}[Existence без selection]
+Для nontrivial mixing достаточно добавить один из двенадцати incidence
+directions. Однако текущая архитектура не определяет:
+\begin{enumerate}
+\item какой именно operator физичен;
+\item его relative weight к rank-one и factor operators;
+\item различное, но связанное назначение up- и down-sector;
+\item источник complex phase.
+\end{enumerate}
+
+\end{proposition}
+
+\begin{nogocriterion}[Запрет выбора по CKM]
+Нельзя выбрать один из двенадцати candidates, его коэффициент или sector map
+после просмотра CKM angles. До появления boundary action, discrete Dirac
+complex или другого parent selector семейная ветвь имеет полную mixing
+алгебру, но не имеет mixing-предсказания.
+\end{nogocriterion}
+
+Машинный exact scan сохранён в
+\path{s2t_v4_incidence_operator_menu_gate_results.json}.

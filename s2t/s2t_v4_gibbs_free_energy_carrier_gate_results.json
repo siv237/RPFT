@@ -1,0 +1,79 @@
+{
+  "gate": "version4_gibbs_free_energy_carrier",
+  "date": "2026-08-11",
+  "normalization": "unit_four_volume",
+  "state_principle": "minimize_Tr_rho_Delta_minus_tau_inverse_von_Neumann_entropy",
+  "identity": "Phi(rho)-F=tau_inverse_relative_entropy(rho||rho_tau)",
+  "small_tau_delta_log_partition_coefficient": 1.8828182317221296,
+  "grid": {
+    "tau_min": 9.999999999999999e-06,
+    "tau_max": 2.0,
+    "points": 3001,
+    "minimum_delta_log_partition": 7.495153629021685e-18,
+    "minimum_tau": 2.0,
+    "nonpositive_points": 0
+  },
+  "maximum_delta_log_partition": {
+    "tau": 0.09576644714092472,
+    "value": 0.10793753018594082
+  },
+  "samples": [
+    {
+      "tau": 1e-05,
+      "delta_log_partition": 1.8827655924980036e-05,
+      "delta_free_energy": -1.8827655924980033
+    },
+    {
+      "tau": 0.0001,
+      "delta_log_partition": 0.00018822917064653666,
+      "delta_free_energy": -1.8822917064653666
+    },
+    {
+      "tau": 0.001,
+      "delta_log_partition": 0.0018775397537780236,
+      "delta_free_energy": -1.8775397537780236
+    },
+    {
+      "tau": 0.01,
+      "delta_log_partition": 0.018286538647077855,
+      "delta_free_energy": -1.8286538647077855
+    },
+    {
+      "tau": 0.05,
+      "delta_log_partition": 0.0786021400304453,
+      "delta_free_energy": -1.572042800608906
+    },
+    {
+      "tau": 0.1,
+      "delta_log_partition": 0.10768760752035655,
+      "delta_free_energy": -1.0768760752035655
+    },
+    {
+      "tau": 0.09576644714092472,
+      "delta_log_partition": 0.10793753018594082,
+      "delta_free_energy": -1.1270913081604228
+    },
+    {
+      "tau": 0.2,
+      "delta_log_partition": 0.04075499833886991,
+      "delta_free_energy": -0.20377499169434954
+    },
+    {
+      "tau": 0.5,
+      "delta_log_partition": 0.00015401953274939517,
+      "delta_free_energy": -0.00030803906549879033
+    },
+    {
+      "tau": 1.0,
+      "delta_log_partition": 6.049138549965962e-09,
+      "delta_free_energy": -6.049138549965962e-09
+    },
+    {
+      "tau": 2.0,
+      "delta_log_partition": 7.495153629021685e-18,
+      "delta_free_energy": -3.7475768145108425e-18
+    }
+  ],
+  "verdict": "S4_has_lower_Gibbs_free_energy_on_the_audited_profile",
+  "status": "conditional_on_normalized_correlation_state_completion"
+}

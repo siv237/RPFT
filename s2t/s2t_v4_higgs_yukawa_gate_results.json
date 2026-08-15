@@ -1,0 +1,180 @@
+{
+  "gate": "version4_higgs_yukawa",
+  "tested_left_scalar_right_combinations": 16,
+  "allowed_renormalizable_yukawa_vertices": [
+    "bar(Q_L) tilde_H u_R",
+    "bar(Q_L) H d_R",
+    "bar(L_L) H e_R",
+    "bar(L_L) tilde_H nu_R"
+  ],
+  "allowed_vertex_count": 4,
+  "rows": [
+    {
+      "left": "Q_L",
+      "scalar": "H",
+      "right": "u_R",
+      "hypercharge_sum": "1",
+      "color_singlet": true,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "Q_L",
+      "scalar": "tilde_H",
+      "right": "u_R",
+      "hypercharge_sum": "0",
+      "color_singlet": true,
+      "weak_singlet": true,
+      "allowed": true
+    },
+    {
+      "left": "Q_L",
+      "scalar": "H",
+      "right": "d_R",
+      "hypercharge_sum": "0",
+      "color_singlet": true,
+      "weak_singlet": true,
+      "allowed": true
+    },
+    {
+      "left": "Q_L",
+      "scalar": "tilde_H",
+      "right": "d_R",
+      "hypercharge_sum": "-1",
+      "color_singlet": true,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "Q_L",
+      "scalar": "H",
+      "right": "e_R",
+      "hypercharge_sum": "-2/3",
+      "color_singlet": false,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "Q_L",
+      "scalar": "tilde_H",
+      "right": "e_R",
+      "hypercharge_sum": "-5/3",
+      "color_singlet": false,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "Q_L",
+      "scalar": "H",
+      "right": "nu_R",
+      "hypercharge_sum": "1/3",
+      "color_singlet": false,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "Q_L",
+      "scalar": "tilde_H",
+      "right": "nu_R",
+      "hypercharge_sum": "-2/3",
+      "color_singlet": false,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "L_L",
+      "scalar": "H",
+      "right": "u_R",
+      "hypercharge_sum": "5/3",
+      "color_singlet": false,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "L_L",
+      "scalar": "tilde_H",
+      "right": "u_R",
+      "hypercharge_sum": "2/3",
+      "color_singlet": false,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "L_L",
+      "scalar": "H",
+      "right": "d_R",
+      "hypercharge_sum": "2/3",
+      "color_singlet": false,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "L_L",
+      "scalar": "tilde_H",
+      "right": "d_R",
+      "hypercharge_sum": "-1/3",
+      "color_singlet": false,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "L_L",
+      "scalar": "H",
+      "right": "e_R",
+      "hypercharge_sum": "0",
+      "color_singlet": true,
+      "weak_singlet": true,
+      "allowed": true
+    },
+    {
+      "left": "L_L",
+      "scalar": "tilde_H",
+      "right": "e_R",
+      "hypercharge_sum": "-1",
+      "color_singlet": true,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "L_L",
+      "scalar": "H",
+      "right": "nu_R",
+      "hypercharge_sum": "1",
+      "color_singlet": true,
+      "weak_singlet": true,
+      "allowed": false
+    },
+    {
+      "left": "L_L",
+      "scalar": "tilde_H",
+      "right": "nu_R",
+      "hypercharge_sum": "0",
+      "color_singlet": true,
+      "weak_singlet": true,
+      "allowed": true
+    }
+  ],
+  "single_doublet_scalar_invariants_dimension_le_4": [
+    "H^dagger H",
+    "(H^dagger H)^2"
+  ],
+  "renormalizable_scalar_potential": "V(H)=-mu^2 H^dagger H + lambda (H^dagger H)^2 + constant",
+  "physical_scalar_count_after_electroweak_breaking": 1,
+  "goldstone_count": 3,
+  "right_neutrino_majorana_term_allowed": true,
+  "weinberg_operator_dimension": 5,
+  "generation_count_for_parameter_count": 3,
+  "dirac_yukawa_real_parameters_before_basis_quotient": 72,
+  "majorana_real_parameters_before_basis_quotient": 12,
+  "spectral_yukawa_invariants": {
+    "a": "Tr(Ye^dagger Ye + Ynu^dagger Ynu + 3 Yu^dagger Yu + 3 Yd^dagger Yd)",
+    "b": "Tr((Ye^dagger Ye)^2 + (Ynu^dagger Ynu)^2 + 3 (Yu^dagger Yu)^2 + 3 (Yd^dagger Yd)^2)"
+  },
+  "predictive_status": "the representation fixes the graph and scalar invariant menu, but not Yukawa matrices, mu^2, lambda, or the electroweak scale",
+  "minimal_hidden_portal": {
+    "operator": "(H^dagger H) Sigma_h",
+    "gauge_allowed": true,
+    "coefficient_fixed_by_observed_finite_algebra": false,
+    "direct_sum_value": 0
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "gate": "version4_one_ratio_family_functional",
+  "functional": "R_s(t)=R4_s-t R2_s",
+  "shared_continuous_parameter_count": 1,
+  "train_data": "four light up/down mass ratios only",
+  "blind_data": "three CKM angles and Jarlskog invariant",
+  "mass_targets": {
+    "u": [
+      1.2521739130434784e-05,
+      0.0073623188405797105,
+      1.0
+    ],
+    "d": [
+      0.0011172248803827751,
+      0.022344497607655507,
+      1.0
+    ]
+  },
+  "trained_ratio": 4.09317172186404,
+  "mass_log_rms": 1.9120658657965994,
+  "mass_predictions": {
+    "u": [
+      1.3541626e-05,
+      0.166550698082,
+      1.0
+    ],
+    "d": [
+      0.000609176112,
+      0.187383173428,
+      1.0
+    ],
+    "nu": [
+      4.527e-09,
+      0.070184411229,
+      1.0
+    ],
+    "e": [
+      0.011955231899,
+      0.250182665804,
+      1.0
+    ]
+  },
+  "mass_multiplicative_errors": [
+    1.0814493200947979,
+    22.62204363713935,
+    1.8339932559580643,
+    8.386099196262322
+  ],
+  "maximum_mass_multiplicative_error": 22.62204363713935,
+  "quark_absolute_mixing": [
+    [
+      0.998768726728,
+      0.044789838696,
+      0.021328405011
+    ],
+    [
+      0.045258568214,
+      0.998730251019,
+      0.022125724894
+    ],
+    [
+      0.020314834824,
+      0.023059836263,
+      0.999527664168
+    ]
+  ],
+  "quark_angles": [
+    0.04480002964121097,
+    0.0221307591169027,
+    0.02132840501073239
+  ],
+  "ckm_target_angles": [
+    0.22501,
+    0.04183,
+    0.003732
+  ],
+  "quark_angle_ratios": [
+    0.19910239385454412,
+    0.5290642868014033,
+    5.715006701696781
+  ],
+  "quark_jarlskog": -1.966511860445252e-06,
+  "ckm_target_jarlskog": 3.12e-05,
+  "absolute_jarlskog_ratio": 0.06302922629632218,
+  "lepton_absolute_mixing": [
+    [
+      0.875032681653,
+      0.41982883107,
+      0.240959661856
+    ],
+    [
+      0.456565908116,
+      0.880842297921,
+      0.125157571644
+    ],
+    [
+      0.160827166815,
+      0.218770653416,
+      0.962431308519
+    ]
+  ],
+  "lepton_jarlskog": -0.001996783390833111,
+  "scan_domain": "hybrid linear/log grid on [0,10^6]",
+  "best_simultaneous_factor_score": 21.83988163350589,
+  "best_simultaneous_ratio": 3.96,
+  "factor_ten_simultaneous_candidate_exists": false,
+  "mass_train_pass": false,
+  "ckm_blind_pass": false,
+  "status": "a single shared quadratic/quartic ratio creates a sharp hierarchy near t=4, but mass-only training misses the middle generations and fails the blind CKM hierarchy"
+}

@@ -1,0 +1,120 @@
+\chapter{Three-moment Gram hierarchy and oriented messenger test}
+
+Предыдущий two-scale gate использовал radial--orientation Hessian и дал
+частичный blind Cabibbo pass, но не закрыл mass hierarchy. Проверим следующий
+канонический источник scales: совместную геометрию трёх чётных spectral
+moments $R_4,R_6,R_8$.
+
+\section{Moment Gram matrix}
+
+Для каждого observed sector $s\in\{u,d,e,\nu\}$ построим centered и
+unit-Hilbert--Schmidt normalized operators
+\begin{equation}
+ Z_{2n,s}=\frac{R_{2n,s}-\frac13\Tr(R_{2n,s})I}
+ {\sqrt{\frac13\Tr\left(R_{2n,s}-\frac13\Tr(R_{2n,s})I\right)^2}},
+ \qquad 2n\in\{4,6,8\}.
+\end{equation}
+Их sector-averaged Gram matrix равна
+\begin{equation}
+ G=\frac14\sum_s\left(\frac13\Tr(Z_{2m,s}Z_{2n,s})\right)_{m,n}
+ \simeq
+ \begin{pmatrix}
+ 1&0.986699&0.975839\\
+ 0.986699&1&0.998264\\
+ 0.975839&0.998264&1
+ \end{pmatrix}.
+\end{equation}
+Её spectrum имеет полный rank,
+\begin{equation}
+ \Spec(G)=
+ \left(1.03590\times10^{-4},\;0.0260003,\;2.97390\right),
+\end{equation}
+но condition number равен примерно $2.87\times10^4$. Следовательно,
+три moments линейно независимы, однако почти коллинеарны.
+
+\begin{proposition}[Три spectral stiffness scales]
+Если eigenvalues $G$ условно интерпретировать как dimensionless
+mass-squared stiffnesses, то после удаления общей scale получаются
+\begin{equation}
+ m_1:m_2:m_3=1:15.8427:169.435.
+\end{equation}
+Это отношение выведено из moment geometry, а не обучено по fermion masses.
+Сама идентификация Gram stiffness с messenger mass остаётся явно отмеченным
+conditional ansatz.
+\end{proposition}
+
+\section{Canonical oriented three-channel block}
+
+Два incident family edges обозначим $A_s,B_s$. Единственный безразмерный
+третий Hermitian channel, не требующий нового matrix input, есть normalized
+commutator
+\begin{equation}
+ C_s=\frac{(A_sB_s-B_sA_s)/(2i)}
+ {\sqrt{\Tr(((A_sB_s-B_sA_s)/(2i))^2)/3}}.
+\end{equation}
+Heavy channel block выбирается как oriented triangle
+\begin{equation}
+ \mathcal M(t)=t\,\operatorname{diag}(m_{\pi(1)},m_{\pi(2)},m_{\pi(3)})
+ +i\varepsilon
+ \begin{pmatrix}
+ 0&1&-1\\
+ -1&0&1\\
+ 1&-1&0
+ \end{pmatrix},
+ \qquad \varepsilon=\pm1.
+\end{equation}
+Полностью перебираются шесть assignments $\pi$, две orientations,
+left/right/KMS placements и шестнадцать sign cocycles. Только одна continuous
+scale $t$ обучается по четырём light quark mass ratios; mixing и CP остаются
+blind.
+
+\section{Mass selection and blind readout}
+
+Mass-selected branch имеет KMS placement,
+\begin{equation}
+ (m_A,m_B,m_C)=(15.8427,1,169.435),
+ \qquad t=111.6408,
+\end{equation}
+и даёт
+\begin{align}
+ u&=(0.00037055,\,0.00279404,\,1),\\
+ d&=(0.00099057,\,0.00224475,\,1).
+\end{align}
+Maximum multiplicative mass error равен $29.59$. Это лучше two-scale
+значения $43.13$, но всё ещё далеко от closure; особенно не закрыта strange
+scale.
+
+Blind mixing matrix равна
+\begin{equation}
+ |V_q|\simeq
+ \begin{pmatrix}
+ 0.926705&0.375790&0.000336\\
+ 0.375790&0.926705&0.000346\\
+ 0.000181&0.000447&1
+ \end{pmatrix},
+\end{equation}
+то есть
+\begin{equation}
+ (s_{12},s_{23},s_{13})
+ =(0.375790,\,3.4644\times10^{-4},\,3.3608\times10^{-4}),
+ \qquad |J_q|=1.96\times10^{-10}.
+\end{equation}
+Прежний Cabibbo pass утрачен, а middle mixing и CP остаются подавлены.
+
+\begin{theorem}[Three-moment oriented verdict]
+Moment Gram geometry действительно содержит три независимые и сильно
+иерархические stiffness scales. Их минимальная oriented three-channel
+реализация уменьшает максимальную quark-mass ошибку, но не проходит mass,
+CKM или CP gates. Полный rank spectral moments сам по себе недостаточен для
+observed flavour closure.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет перенастройки после blind readout]
+Нельзя менять коэффициент oriented cycle, Gram masses или assignment после
+открытия CKM. Следующий допустимый механизм должен вывести новое endpoint
+intertwining из moment eigenvectors либо из parent Hessian, а не вводить
+дополнительный fitted channel weight.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_three_moment_oriented_messenger_gate_results.json}.

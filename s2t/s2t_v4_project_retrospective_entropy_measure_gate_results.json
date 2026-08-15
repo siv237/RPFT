@@ -1,0 +1,350 @@
+{
+  "gate": "version4_project_retrospective_entropy_measure",
+  "date": "2026-08-11",
+  "corpus": {
+    "total_files": 1188,
+    "extension_counts": {
+      ".py": 325,
+      ".md": 316,
+      ".json": 314,
+      ".tex": 177,
+      ".pdf": 30,
+      ".png": 9,
+      ".out": 2,
+      ".fls": 2,
+      ".aux": 2,
+      "[no_extension]": 2,
+      ".toc": 2,
+      ".log": 2,
+      ".fdb_latexmk": 2,
+      ".txt": 2,
+      ".synctex": 1
+    },
+    "exact_duplicate_groups": [
+      [
+        "RPFT-main/Проработка/g-2.md",
+        "RPFT-main/Проработка/old/g-2.md"
+      ],
+      [
+        "RPFT-main/Проработка/sp2.md",
+        "RPFT-main/Проработка/old/sp2.md"
+      ],
+      [
+        "RPFT-main/Проработка/standart_model.md",
+        "RPFT-main/Проработка/old/standart_model.md"
+      ],
+      [
+        "RPFT-main/Проработка/standart_model2.md",
+        "RPFT-main/Проработка/old/standart_model2.md"
+      ],
+      [
+        "RPFT-main/Проработка/w-bazon.md",
+        "RPFT-main/Проработка/old/w-bazon.md"
+      ],
+      [
+        "TOE.pdf",
+        "17705966/TOE.pdf"
+      ]
+    ]
+  },
+  "pdfs": [
+    {
+      "path": "17705966/TOE.pdf",
+      "pages": 9,
+      "extracted_characters": 20946,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 26
+    },
+    {
+      "path": "17705966/TOE4.2.pdf",
+      "pages": 4,
+      "extracted_characters": 7503,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 8
+    },
+    {
+      "path": "17705966/TOE5.pdf",
+      "pages": 9,
+      "extracted_characters": 19275,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 7
+    },
+    {
+      "path": "17705966/ТОЕ 10.pdf",
+      "pages": 3,
+      "extracted_characters": 3130,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 1
+    },
+    {
+      "path": "17705966/ТОЕ 11.pdf",
+      "pages": 2,
+      "extracted_characters": 4487,
+      "entropy_mentions": 17,
+      "spectral_density_mentions": 2
+    },
+    {
+      "path": "17705966/ТОЕ 12.1.pdf",
+      "pages": 2,
+      "extracted_characters": 3896,
+      "entropy_mentions": 1,
+      "spectral_density_mentions": 2
+    },
+    {
+      "path": "17705966/ТОЕ 12.pdf",
+      "pages": 2,
+      "extracted_characters": 3759,
+      "entropy_mentions": 2,
+      "spectral_density_mentions": 2
+    },
+    {
+      "path": "17705966/ТОЕ 13.pdf",
+      "pages": 2,
+      "extracted_characters": 3013,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 2
+    },
+    {
+      "path": "17705966/ТОЕ 4.1.pdf",
+      "pages": 3,
+      "extracted_characters": 4314,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 3
+    },
+    {
+      "path": "17705966/ТОЕ 4.3.pdf",
+      "pages": 4,
+      "extracted_characters": 6682,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 8
+    },
+    {
+      "path": "17705966/ТОЕ 4.4.pdf",
+      "pages": 5,
+      "extracted_characters": 10413,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 7
+    },
+    {
+      "path": "17705966/ТОЕ 4.pdf",
+      "pages": 7,
+      "extracted_characters": 14953,
+      "entropy_mentions": 4,
+      "spectral_density_mentions": 16
+    },
+    {
+      "path": "17705966/ТОЕ 5.1.pdf",
+      "pages": 3,
+      "extracted_characters": 4883,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 0
+    },
+    {
+      "path": "17705966/ТОЕ 5.2.pdf",
+      "pages": 3,
+      "extracted_characters": 5511,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 1
+    },
+    {
+      "path": "17705966/ТОЕ 5.3.pdf",
+      "pages": 3,
+      "extracted_characters": 7113,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 2
+    },
+    {
+      "path": "17705966/ТОЕ 6.5.pdf",
+      "pages": 6,
+      "extracted_characters": 11275,
+      "entropy_mentions": 6,
+      "spectral_density_mentions": 17
+    },
+    {
+      "path": "17705966/ТОЕ 7.pdf",
+      "pages": 2,
+      "extracted_characters": 4182,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 0
+    },
+    {
+      "path": "17705966/ТОЕ 8.pdf",
+      "pages": 3,
+      "extracted_characters": 5442,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 12
+    },
+    {
+      "path": "17705966/ТОЕ 9.pdf",
+      "pages": 2,
+      "extracted_characters": 4547,
+      "entropy_mentions": 6,
+      "spectral_density_mentions": 2
+    },
+    {
+      "path": "17705966/ТОЕ2.pdf",
+      "pages": 7,
+      "extracted_characters": 14543,
+      "entropy_mentions": 4,
+      "spectral_density_mentions": 16
+    },
+    {
+      "path": "17705966/ТОЕ3.pdf",
+      "pages": 10,
+      "extracted_characters": 23053,
+      "entropy_mentions": 5,
+      "spectral_density_mentions": 32
+    },
+    {
+      "path": "17705966/ТОЕ6.pdf",
+      "pages": 2,
+      "extracted_characters": 4712,
+      "entropy_mentions": 8,
+      "spectral_density_mentions": 8
+    },
+    {
+      "path": "RPFT-main/peper/paper_full_en.pdf",
+      "pages": 12,
+      "extracted_characters": 21827,
+      "entropy_mentions": 1,
+      "spectral_density_mentions": 0
+    },
+    {
+      "path": "RPFT-main/peper/paper_full_ru.pdf",
+      "pages": 12,
+      "extracted_characters": 22261,
+      "entropy_mentions": 3,
+      "spectral_density_mentions": 0
+    },
+    {
+      "path": "TOE.pdf",
+      "pages": 9,
+      "extracted_characters": 20946,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 26
+    },
+    {
+      "path": "main-4.pdf",
+      "pages": 12,
+      "extracted_characters": 16210,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 2
+    },
+    {
+      "path": "paper-6.pdf",
+      "pages": 39,
+      "extracted_characters": 80602,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 51
+    },
+    {
+      "path": "tome3_s2t_parent_action.pdf",
+      "pages": 89,
+      "extracted_characters": 122855,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 115
+    },
+    {
+      "path": "tome4_s2t_observed_reconstruction.pdf",
+      "pages": 163,
+      "extracted_characters": 234016,
+      "entropy_mentions": 34,
+      "spectral_density_mentions": 142
+    },
+    {
+      "path": "ugsm_dynamics_audit-3.pdf",
+      "pages": 32,
+      "extracted_characters": 40588,
+      "entropy_mentions": 0,
+      "spectral_density_mentions": 47
+    }
+  ],
+  "source_genealogy": {
+    "early_RPFT": "carrier_and_pi_ledger_are_preloaded_before_variational_comparison",
+    "TOE3": "minimum_spectral_entropy_and_minimum_spectral_complexity_are_topology_postulates",
+    "TOE4": "maximum_entropy_at_fixed_variance_selects_the_Gaussian_kernel",
+    "TOE6": "log_trace_language_is_used_as_free_energy",
+    "TOE6_5": "proposes_variation_of_spectral_density_with_fluctuation_and_information_terms",
+    "final_TOE": "retains_Gaussian_minimum_action_language_but_drops_a_unique_topology_variation"
+  },
+  "entropy_taxonomy": {
+    "kernel_entropy": "coordinate_distribution_entropy_at_fixed_variance",
+    "state_entropy": "von_Neumann_entropy_of_the_normalized_heat_state",
+    "spectral_complexity": "entropy_or_complexity_of_the_eigenvalue_density_over_carriers",
+    "warning": "the_three_functionals_have_different_domains_constraints_and_variational_signs"
+  },
+  "unit_volume_energy_crossing": {
+    "crossing_tau": 0.09576644816724648,
+    "samples": [
+      {
+        "tau": 0.01,
+        "mean_energy_s4": 189.77575573112946,
+        "mean_energy_s2xs2": 191.54865126378996,
+        "energy_difference": -1.772895532660499,
+        "von_neumann_entropy_difference": 0.00055758332047251
+      },
+      {
+        "tau": 0.05,
+        "mean_energy_s4": 29.945717825114563,
+        "mean_energy_s2xs2": 31.14192876437967,
+        "energy_difference": -1.1962109392651072,
+        "von_neumann_entropy_difference": 0.01879159306719025
+      },
+      {
+        "tau": 0.09576644816724648,
+        "mean_energy_s4": 11.098388440000592,
+        "mean_energy_s2xs2": 11.098388440000589,
+        "energy_difference": 3.552713678800501e-15,
+        "von_neumann_entropy_difference": 0.10793753018594132
+      },
+      {
+        "tau": 0.2,
+        "mean_energy_s4": 1.5868029890200277,
+        "mean_energy_s2xs2": 0.9705459544839948,
+        "energy_difference": 0.6162570345360329,
+        "von_neumann_entropy_difference": 0.1640064052460765
+      },
+      {
+        "tau": 1.0,
+        "mean_energy_s4": 1.2563053457283141e-07,
+        "mean_energy_s2xs2": 1.8339195462288899e-09,
+        "energy_difference": 1.237966150266025e-07,
+        "von_neumann_entropy_difference": 1.2984575357656849e-07
+      }
+    ],
+    "verdict": "minimum_mean_spectral_energy_is_tau_dependent"
+  },
+  "stratified_measure": {
+    "functional": "-(log Z4+log Z3)/(N4+N3)",
+    "identity": "(N4*f4+N3*f3)/(N4+N3)",
+    "sector_minima": {
+      "S4": {
+        "minimum_density": -0.00549336084715081,
+        "radius_over_sigma": 1.35139219568654
+      },
+      "RP3": {
+        "minimum_density": -0.0104399545649812,
+        "radius_over_sigma": 1.99760832726935
+      }
+    },
+    "global_infimum": -0.0104399545649812,
+    "attained_only_on_boundary": "N4_to_zero",
+    "verdict": "natural_factorized_measure_eliminates_S4_instead_of_stabilizing_a_hybrid"
+  },
+  "surviving_exact_mechanisms": [
+    "Qcycle_Hodge_Gram_diag_pi_pi_inverse_on_the_defect_cycle",
+    "bounding_spin_filling_selects_a_reference_structure_only",
+    "parent_trace_fixes_multiplicities_but_not_relative_stiffness",
+    "TOE6_5_spectral_density_variation_remains_unexecuted"
+  ],
+  "recommended_next_program": {
+    "generator": "H_C=-log(C_hat)/tau",
+    "functional": "F[rho,M]=Tr(rho H_C)+Gamma_fluc[rho,M]-T_eff*S_info[rho]",
+    "constraints": [
+      "Tr rho=1",
+      "fixed_or_derived_mode_number",
+      "one_common_measure_over_carriers"
+    ],
+    "required_gate": "derive_the_sign_coefficients_and_positive_second_variation_before_observable_matching"
+  }
+}

@@ -1,0 +1,200 @@
+\chapter{Family--defect KO6 quiver embedding and spectral-sign gate}
+
+Moment-map gate построил frozen--gauged--frozen quiver, но оставил открытым
+его статус как finite geometry. Здесь предъявляется явная KO6 matrix model,
+проверяются order-zero и first-order conditions и затем сравнивается её
+ordinary spectral quartic с требуемым moment-map action. Результат
+разделяется: representation embedding проходит, ordinary
+\(\Tr D_F^4\) route закрывается по знаку mixed quartic.
+
+\section{Finite algebra и bimodule labels}
+
+Минимальная real algebraic skeleton имеет вид
+\begin{equation}
+ \mathcal A_{\rm q}
+ =\mathbb R_0\oplus M_3(\mathbb R)_G\oplus\mathbb C_2.
+ \label{eq:family-quiver-finite-algebra}
+\end{equation}
+Particle chain использует bimodule labels
+\begin{equation}
+ (0,0)^{\oplus3}
+ \xrightarrow{\ X\ }
+ (G,0)
+ \xrightarrow{\ Y\ }
+ (G,2).
+ \label{eq:family-krajewski-label-chain}
+\end{equation}
+Первый node является scalar representation с multiplicity три. Его
+commutant даёт global family frame. Middle и right modules имеют один и тот
+же left \(M_3(\mathbb R)\)-label, поэтому несут один gauged connected
+\(SO(3)_G\), а не два независимых gauge factors.
+
+Первый edge меняет left label при фиксированном right label и поэтому может
+быть arbitrary matrix
+\begin{equation}
+ X\in M_3(\mathbb R).
+\end{equation}
+Второй edge меняет right label при фиксированном left label. Exact
+first-order condition заставляет его коммутировать со всем
+\(M_3(\mathbb R)\):
+\begin{equation}
+ [Y,A]=0\quad\forall A\in M_3(\mathbb R)
+ \qquad\Longrightarrow\qquad
+ Y=\Phi I_3.
+ \label{eq:first-order-schur-pairing}
+\end{equation}
+Machine kernel dimension равен единице. Random nonscalar \(Y\) даёт
+first-order residual \(2.28\), тогда как scalar branch имеет нулевой
+residual.
+
+\section{KO6 completion}
+
+Particle grading равен \((+,-,+)\). Добавим conjugate transposed-label
+chain с противоположным grading и определим \(J_F\) обменом двух chains с
+complex conjugation. Получается complex Hilbert space dimension
+\begin{equation}
+ \dim_{\mathbb C}\mathcal H_F=18.
+\end{equation}
+Для
+\begin{equation}
+ D_p=
+ \begin{pmatrix}
+ 0&X^\dagger&0\\
+ X&0&\bar\Phi I_3\\
+ 0&\Phi I_3&0
+ \end{pmatrix},
+ \qquad
+ D_F=D_p\oplus\bar D_p,
+ \label{eq:family-quiver-ko6-dirac}
+\end{equation}
+прямая проверка даёт
+\begin{align}
+ D_F&=D_F^\dagger,\\
+ \{D_F,\Gamma_F\}&=0,\\
+ [D_F,J_F]&=0,\\
+ \{J_F,\Gamma_F\}&=0.
+\end{align}
+Все residuals равны нулю в double precision. Для полного basis algebra
+также выполнены
+\begin{align}
+ [\pi(a),J\pi(b)J^{-1}]&=0,\\
+ [[D_F,\pi(a)],J\pi(b)J^{-1}]&=0.
+\end{align}
+
+\begin{theorem}[KO6 quiver representation pass]
+Chain~\eqref{eq:family-krajewski-label-chain} имеет explicit
+18-dimensional self-adjoint odd KO6 completion, проходит order-zero и
+first-order conditions и автоматически фиксирует pairing edge как
+\(Y=\Phi I_3\). Поэтому moment-map quiver совместим с finite Krajewski
+representation на algebraic level.
+\end{theorem}
+
+Classification logic сверена с T.~Krajewski,
+\emph{Classification of Finite Spectral Triples},
+\path{arXiv:hep-th/9701081}. Ограничения scalar potentials обычным spectral
+action сверены с \path{arXiv:hep-th/9803199}; общий spectral principle ---
+с \path{arXiv:hep-th/9606001}.
+
+\section{Ordinary spectral quartic}
+
+Теперь проверим, совпадает ли ordinary spectral action этого же
+\(D_F\) с moment-map norm. На radial slice
+\begin{equation}
+ X=\rho I_3,
+ \qquad
+ \Phi=r\in\mathbb R
+\end{equation}
+particle half-traces равны
+\begin{align}
+ \Tr D_p^2&=6(\rho^2+r^2),\\
+ \Tr D_p^4&=6(\rho^2+r^2)^2.
+ \label{eq:family-quiver-ordinary-traces}
+\end{align}
+Следовательно, mixed quartic coefficient равен
+\begin{equation}
+ +12\rho^2r^2.
+\end{equation}
+Moment-map norm, напротив, имеет вид
+\begin{equation}
+ \tau_3(\mu_G^2)
+ =(\rho^2-r^2)^2
+ =\rho^4-2\rho^2r^2+r^4.
+ \label{eq:family-quiver-moment-sign}
+\end{equation}
+Требуемый mixed coefficient отрицателен. Добавление quadratic term
+\(-b\Tr D_p^2\) не меняет quartic sign, поэтому любой ordinary one-trace
+polynomial \(a\Tr D_p^4-b\Tr D_p^2\) сохраняет эту обструкцию.
+
+Попытка использовать grading также не помогает:
+\begin{equation}
+ \Str D_p^4=0.
+\end{equation}
+Зануление суперследа вызвано попарной симметрией нечётного спектра, а не
+требуемой разностью матриц Грама для входящих и исходящих стрелок.
+
+Все trace identities проверены на нескольких radial points; residuals
+меньше \(7\times10^{-16}\).
+
+\begin{nogocriterion}[Ordinary spectral mixed-sign no-go]
+Для explicit KO6 quiver ordinary quartic \(\Tr D_F^4\) видит
+\((\rho^2+r^2)^2\), тогда как required moment map видит
+\((\rho^2-r^2)^2\). Ни quadratic spectral term, ни graded supertrace не
+исправляют mixed sign. Поэтому moment-map condensate нельзя объявлять
+следствием стандартного one-trace spectral action этого \(D_F\).
+\end{nogocriterion}
+
+\section{Что именно остаётся открытым}
+
+No-go не уничтожает quiver action: в supersymmetric/quiver gauge theory
+moment map является curvature auxiliary \(D\)-sector, а не polynomial
+только от self-adjoint \(D_F=d+d^\dagger\). Project также уже располагает
+relative-curvature precedent, где conditional expectation удаляет common
+diagonal curvature и оставляет norm нужного oriented block.
+
+Поэтому остаются три существенно различные routes:
+\begin{enumerate}
+ \item auxiliary \(D\)-field, чья algebraic elimination даёт
+ \(\tau_3([d,d^\dagger]_G^2)\);
+ \item relative/mapping-cone curvature action, канонически выделяющее
+ middle-node incoming-minus-outgoing block;
+ \item более общий non-ordinary spectral functional с заранее выведенной
+ polarization, но без fitted counterterm.
+\end{enumerate}
+
+Первый и второй routes согласованы с quiver moment-map literature
+\path{arXiv:hep-th/0405230}, \path{arXiv:0807.4734} и graded quiver gauge
+construction \path{arXiv:0905.2338}. Но project должен вывести один из них
+из собственной finite geometry и получить ту же kinetic normalization.
+
+\begin{protocol}[Relative-moment continuation]
+Следующий gate должен построить canonical conditional expectation или
+auxiliary elimination на algebra
+\(\mathbb R_0\oplus M_3(\mathbb R)_G\oplus\mathbb C_2\), доказать
+\begin{equation}
+ S_{\rm rel}=\tau_3([d,d^\dagger]_G^2),
+\end{equation}
+и проверить, что общий trace weight относительно \(|D X|^2\) и
+\(|D\Phi|^2\) равен единице. Только после этого normalized condensed saddle
+предыдущей главы станет spectral-parent result.
+\end{protocol}
+
+Таким образом, representation gap закрыт, но ordinary spectral-action route
+закрыт отрицательно. Открыт более узкий relative/auxiliary curvature gate.
+
+Следующий audit закрывает ordinary mapping-cone перенос и strict
+\(SO(3)\)-adjoint D-term, но находит coefficient-free Legendre realization
+на self-adjoint module \(\operatorname{Sym}_3(\mathbb R)\). Поэтому новый
+разрыв состоит уже в выводе этого module из degree-two junk quotient или BV
+complex той же KO6 geometry.
+
+Повторная литературная проверка закрывает naive real auxiliary reading.
+Canonical mapping-cone norm сохраняет только endpoint product; strict
+\(SO(3)\) moment-map pairing исчезает на real slice; real positive
+auxiliary minimum даёт quartic противоположного знака. Открыты только
+positive degree-two junk-quotient curvature либо imaginary
+Hubbard--Stratonovich quantum measure с заранее выведенным contour.
+
+Машинный ledger сохранён в
+\path{s2t_v4_family_defect_ko6_quiver_embedding_gate_results.json};
+генератор ---
+\path{s2t_v4_family_defect_ko6_quiver_embedding_gate.py}.

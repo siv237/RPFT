@@ -1,0 +1,86 @@
+\chapter{Self-consistent orientation field: bifurcation no-go}
+
+Equal normalization commutator переориентировал Cabibbo plane слишком сильно.
+Однако подбирать relative coefficient запрещено. Поэтому сделаем его
+динамическим order parameter и проверим, возникает ли orientation-odd vacuum
+самопроизвольно.
+
+\section{Минимальная free energy}
+
+Пусть \(Z_s=Z_{4,s}\) --- standardized symmetric energy constraint, а
+\(K_s\) --- standardized Hermitian commutator constraint предыдущей главы.
+Введём один общий real order parameter \(\alpha\) и functional
+\begin{equation}
+ \Phi_g(\alpha)=\frac{\alpha^2}{2g}
+ -\frac14\sum_{s=u,d,e,\nu}
+ \log\Tr\exp[-(Z_s-\alpha K_s)].
+\end{equation}
+После unit-variance normalization минимальный choice имеет \(g=1\):
+квадратичная stiffness и orientation susceptibility измеряются в одной
+безразмерной нормировке.
+
+Поскольку \(Z_s\) вещественна, а \(K_s\) чисто мнимая Hermitian matrix,
+complex conjugation даёт
+\begin{equation}
+ \Phi_g(\alpha)=\Phi_g(-\alpha).
+\end{equation}
+Следовательно, ненулевой minimum мог бы возникнуть только как spontaneous
+pair \(\pm\alpha_\star\), что одновременно сняло бы CP fork.
+
+\begin{proposition}[Common orientation functional]
+\(\Phi_g\) является единым four-sector boundary functional: один и тот же
+\(\alpha\) связывает observed sectors, а fermion masses и CKM не входят в его
+определение.
+\end{proposition}
+
+\section{Canonical-stiffness test}
+
+Прямой полный scan на \([-8,8]\) и local minimization дают
+\begin{equation}
+ \alpha_\star=0
+\end{equation}
+с numerical evenness residual ниже machine precision. Curvature равна
+\begin{equation}
+ \Phi_1''(0)=0.324305>0.
+\end{equation}
+Поэтому symmetric vacuum устойчив, commutator constraint не конденсируется и
+механизм возвращается к affine Gibbs branch предыдущей главы.
+
+Orientation susceptibility равна
+\begin{equation}
+ \chi_K=1-\Phi_1''(0)=0.675695.
+\end{equation}
+Для generalized stiffness \(g\) local bifurcation требует
+\begin{equation}
+ \frac1g-\chi_K<0,
+ \qquad
+ g>g_c=\chi_K^{-1}\simeq1.47996.
+\end{equation}
+
+\begin{theorem}[Canonical orientation bifurcation no-go]
+Минимальный self-consistent boundary functional с unit stiffness не выбирает
+orientation и не порождает дополнительную CP/mixing структуру. Ненулевой
+order parameter возможен только при coupling выше вычисленного critical
+значения \(g_c\).
+\end{theorem}
+
+\section{Статус flavour readout}
+
+При \(\alpha_\star=0\) остаётся ровно affine modular ledger:
+\begin{equation}
+ s_{12}=0.26998,
+ \qquad s_{23}=1.73\times10^{-4},
+ \qquad s_{13}=4.03\times10^{-4},
+ \qquad |J_q|=6.61\times10^{-10}.
+\end{equation}
+Следовательно, dynamic agreement не достигается бесплатно: требуется
+структурный вывод orientation stiffness.
+
+\begin{nogocriterion}[Запрет fitted supercritical coupling]
+Нельзя выбрать \(g>g_c\) по CKM или CP residuals. Supercritical stiffness
+считается допустимой только если она следует из determinant line, anomaly
+inflow, boundary multiplicity или другого заранее заданного parent term.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_self_consistent_orientation_gate_results.json}.

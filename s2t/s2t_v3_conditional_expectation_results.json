@@ -1,0 +1,13 @@
+{
+  "date": "2026-08-09",
+  "status": "conditional_measure_pass_module_multiplicity_open",
+  "factor_norms": [
+    "pi**2",
+    "2*pi"
+  ],
+  "direct_sum_norm": "pi*(2 + pi)",
+  "single_field_double_readout": "4*pi*(2 + pi)",
+  "factor_weights_free": false,
+  "module_origin_derived": false,
+  "next_gate": "finite algebra or superconnection"
+}

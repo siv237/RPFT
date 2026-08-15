@@ -1,0 +1,225 @@
+\chapter{Family--defect quiver moment-map gate}
+
+Gauge--family locking gate выделил специальный square
+\begin{equation}
+ \left(|\Phi|^2-\frac13\Tr X^TX\right)^2,
+\end{equation}
+но не вывел ratio его трёх monomials. Здесь показывается, что этот square
+является central частью canonical moment-map norm трёхузлового quiver.
+Одновременно тот же functional штрафует anisotropy locking field и в
+unit-momentum defect model даёт устойчивый nonzero pairing saddle.
+
+\section{Frozen--gauged--frozen chain}
+
+Рассмотрим три copies real family triplet:
+\begin{equation}
+ V_L\xrightarrow{\ X\ }V_G\xrightarrow{\ Y\ }V_R.
+ \label{eq:family-moment-map-quiver}
+\end{equation}
+Левый и правый nodes являются frozen global family frames, а middle node
+несёт gauged \(SO(3)_G\). Первый arrow \(X\) является real
+bifundamental locking field предыдущей главы. Второй arrow несёт ordinary
+charge-two \(B-L\) pairing connector.
+
+После tetrahedral reduction обе frozen copies несут один и тот же
+irreducible real \(A_4\)-triplet. Прямой commutant audit всех двенадцати
+rotations даёт
+\begin{equation}
+ \dim_{\mathbb R}\operatorname{End}_{A_4}(\mathbb R^3)=1.
+\end{equation}
+Следовательно, Schur lemma фиксирует equivariant connector:
+\begin{equation}
+ Y=\Phi I_3.
+ \label{eq:a4-schur-pairing-connector}
+\end{equation}
+Это не isotropic ansatz, выбранный после vacuum: внутри declared
+\(A_4\)-equivariant arrow space других directions нет.
+
+\section{Middle-node moment map}
+
+Пусть \(d\) --- oriented quiver differential с blocks \(X\) и \(Y\).
+Middle block graded Hodge commutator равен
+\begin{equation}
+ \mu_G
+ =[d,d^\dagger]\big|_{V_G}
+ =XX^T-Y^\dagger Y
+ =XX^T-|\Phi|^2I_3.
+ \label{eq:middle-quiver-moment-map}
+\end{equation}
+Поскольку только middle node gauged, его auxiliary/D-term action использует
+normalized trace
+\begin{equation}
+ S_\mu=\tau_3(\mu_G^2),
+ \qquad
+ \tau_3(M)=\frac13\Tr M.
+ \label{eq:normalized-middle-moment-action}
+\end{equation}
+
+Incoming-minus-outgoing sign является стандартным real moment map quiver
+gauge theory. D-term interpretation и frozen flavor nodes описаны, например,
+в \path{arXiv:hep-th/0405230}; norm-square moment-map dynamics --- в
+\path{arXiv:0807.4734}. Graded connections и quiver Higgs systems из
+equivariant gauge reduction рассмотрены в \path{arXiv:0905.2338}. В
+finite spectral geometry Yang--Mills curvature norm действительно становится
+Higgs potential; см. \path{arXiv:hep-th/0101217}. Эти источники фиксируют
+архитектуру; конкретный \(A_4\)-Schur reduction является project result.
+
+\section{Точная coefficient identity}
+
+Обозначим
+\begin{equation}
+ G=XX^T,
+ \qquad
+ \bar g=\tau_3(G),
+ \qquad
+ G_0=G-\bar gI_3.
+\end{equation}
+Тогда \(\tau_3(G_0)=0\), и central/traceless orthogonality даёт
+\begin{equation}
+ \boxed{
+ \tau_3(\mu_G^2)
+ =\left(|\Phi|^2-\frac13\Tr XX^T\right)^2
+ +\frac13\Tr G_0^2.}
+ \label{eq:moment-map-central-shape-decomposition}
+\end{equation}
+Первое слагаемое является ровно искомым norm-locking square, второе ---
+положительный penalty за departure от isotropic frame.
+
+Expansion central term имеет coefficient ratio
+\begin{equation}
+ |\Phi|^4:
+ |\Phi|^2\Tr XX^T:
+ (\Tr XX^T)^2
+ =1:-\frac23:\frac19.
+ \label{eq:derived-pairing-ratio}
+\end{equation}
+Ratio поэтому следует не из настройки portal, а из dimension три и
+normalized trace middle node. Identity проверена на 128 random matrices;
+максимальный residual меньше \(2.2\times10^{-14}\).
+
+\begin{theorem}[Quiver moment-map coefficient pass]
+Frozen--gauged--frozen family quiver с \(A_4\)-equivariant right arrow
+однозначно даёт moment map
+\(\mu_G=XX^T-|\Phi|^2I_3\). Его normalized curvature norm содержит
+pairing square с exact ratio \(1:-2/3:1/9\) и дополнительный positive
+shape-locking term. Independent portal coefficients отсутствуют.
+\end{theorem}
+
+\section{Vacuum Hessian}
+
+Объединим \(S_\mu\) с уже проверенным bifundamental potential
+\begin{equation}
+ V_{\rm lock}
+ =\frac14\|X^TX-I_3\|_F^2
+ +\frac14(\det X-1)^2.
+\end{equation}
+В zero-gradient vacuum
+\begin{equation}
+ X_\star=I_3,
+ \qquad
+ |\Phi_\star|=1
+\end{equation}
+full eleven-real-dimensional Hessian имеет signature
+\begin{equation}
+ (7_+,4_0,0_-).
+\end{equation}
+Три zero modes являются gauge orbit locking field, четвёртая --- phase
+pairing field до включения winding/gauge data. Отрицательных modes нет.
+
+\section{Unit-momentum defect test}
+
+Ordinary charge-two field на surviving root branch имеет lowest covariant
+momentum \(k^2=1\) в normalized geometry \(L=\pi\). Чтобы не замораживать
+frame radius вручную, рассмотрим joint radial slice
+\begin{equation}
+ X=\rho I_3,
+ \qquad
+ \Phi=r e^{i\varphi},
+\end{equation}
+с energy
+\begin{equation}
+ V_{\rm rad}(\rho,r)
+ =V_{\rm lock}(\rho I_3)
+ +(\rho^2-r^2)^2+r^2.
+ \label{eq:joint-moment-map-defect-radial}
+\end{equation}
+Eight-start global numerical minimization даёт
+\begin{equation}
+ \rho_\star=0.7432242844,
+ \qquad
+ r_\star=0.2288718801,
+ \qquad
+ V_\star=0.5395181198.
+\end{equation}
+Лучший normal stationary branch имеет
+\begin{equation}
+ r=0,
+ \qquad
+ \rho=0.72442382,
+ \qquad
+ V_{\rm normal}=0.5408201282.
+\end{equation}
+Следовательно, condensed branch ниже на
+\begin{equation}
+ \Delta V=0.0013020084.
+\end{equation}
+Radial Hessian condensed saddle имеет eigenvalues
+\begin{equation}
+ 0.19471629,
+ \qquad
+ 8.67361589,
+\end{equation}
+и потому положителен.
+
+\begin{proposition}[Normalized defect-condensate pass]
+При canonical unit coefficients common locking-plus-moment-map action
+сохраняет stable nonzero pairing condensate даже после включения lowest
+unit defect momentum. Condensation является слабой, но energetic ordering
+однозначно положителен внутри проверенной normalized model.
+\end{proposition}
+
+\section{Граница результата}
+
+Коэффициентный gate закрыт, но physical parent ещё требует actual finite
+embedding. Нужно показать, что:
+\begin{enumerate}
+ \item nodes \(V_L,V_G,V_R\), их frozen/gauged status и arrows возникают
+ из одной finite graded algebra и real structure;
+ \item right arrow действительно имеет charge \(-2\) по \(B-L\) и
+ Schur-restricted form \(\Phi I_3\);
+ \item middle-node moment-map norm входит с той же normalization, что
+ scalar kinetic term и \(V_{\rm lock}\);
+ \item KO6 doubling, BV fields и nonradial fluctuations не меняют
+ ordering condensed/normal branches;
+ \item полученный background сохраняет exact-one BdG kernel.
+\end{enumerate}
+
+\begin{nogocriterion}[Quiver embedding gate]
+Нельзя объявлять pairing condensate выведенным из spectral geometry, пока
+moment-map quiver предъявлен как external gauge-theory block. Следующий pass
+требует построить его как finite Dirac/superconnection complex и получить
+normalization~\eqref{eq:normalized-middle-moment-action} из того же trace,
+который нормирует kinetic sector.
+\end{nogocriterion}
+
+Итак, portal ratio и normalized condensate больше не являются свободными
+EFT choices. Остаётся один representation-level вопрос: существует ли этот
+трёхузловой moment-map block внутри фактической finite geometry проекта.
+
+Следующий KO6 embedding gate отвечает на этот вопрос частично положительно.
+Explicit 18-dimensional chain проходит reality, grading, order-zero и
+first-order conditions; последний сам фиксирует \(Y=\Phi I_3\). Однако
+ordinary spectral quartic имеет mixed sign, противоположный moment-map
+action. Поэтому representation embedding закрыт, а action embedding
+переносится в relative/auxiliary curvature class.
+
+Последующий relative/auxiliary audit уточняет terminology. Canonical
+mapping-cone norm выбирает только endpoint product, а strict
+\(SO(3)\)-adjoint projection симметричной \(\mu_G\) равна нулю. Поэтому
+\(S_\mu\) не является обычным \(SO(3)\) D-term. Algebraic pass сохраняется
+для self-adjoint auxiliary module \(\operatorname{Sym}_3(\mathbb R)\), но
+его degree-two calculus/BV origin остаётся следующим gate.
+
+Машинный ledger сохранён в
+\path{s2t_v4_family_defect_quiver_moment_map_gate_results.json}; генератор
+--- \path{s2t_v4_family_defect_quiver_moment_map_gate.py}.

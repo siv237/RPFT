@@ -1,0 +1,153 @@
+\chapter{Exact first-order kernel: full Pati--Salam против SM subalgebra}
+
+Предыдущая глава построила общий KO6-compatible matrix block, но не
+проверила first-order condition. Теперь algebra и opposite algebra заданы
+явно на всех 32 states, а double commutator вычисляется как linear map на
+272-dimensional real space channels \((Y,M_R,M_L)\).
+
+\section{Действия алгебр}
+
+На particles full algebra действует как
+\begin{equation}
+ \pi(q_R,q_L,m)|_{V_R}=q_R\otimes I_4,
+ \qquad
+ \pi(q_R,q_L,m)|_{V_L}=q_L\otimes I_4,
+\end{equation}
+а \(m\in M_4(\mathbb C)\) действует на antiparticle sectors. Opposite
+action определяется без отдельного ansatz:
+\begin{equation}
+ \pi^o(b)=J_F\pi(b)J_F^{-1}.
+\end{equation}
+Full real algebra basis имеет dimension
+\begin{equation}
+ 4_{\mathbb H_R}+4_{\mathbb H_L}+32_{M_4(\mathbb C)}=40.
+\end{equation}
+
+Для embedded Standard Model subalgebra используются
+\begin{equation}
+ q_R(\lambda)=\operatorname{diag}(\lambda,\bar\lambda),
+ \qquad
+ m_4(\lambda,m_3)=\operatorname{diag}(\lambda,m_3),
+\end{equation}
+вместе с произвольным \(q_L\in\mathbb H_L\). Его real basis dimension равна
+\(2+4+18=24\).
+
+\section{Метод полного kernel audit}
+
+Для каждого real basis pair \((a,b)\) строится linear map
+\begin{equation}
+ \mathcal L_{a,b}(D_F)
+ =[[D_F,\pi(a)],\pi^o(b)].
+\end{equation}
+Completeness проверяется двумя независимыми способами:
+\begin{enumerate}
+ \item Gram-rank witness достигает codimension предполагаемого kernel;
+ \item аналитический basis затем даёт точно нулевой double commutator на
+ всех \(40^2\) или \(24^2\) basis pairs.
+\end{enumerate}
+Principal cosines между numerical nullspace и analytic subspace равны
+единице с machine precision. Дополнительно просканированы четыре conventions
+порядка \(\lambda,\bar\lambda\) и complex conjugation lepton slot.
+
+\section{Full algebra result}
+
+На full Pati--Salam algebra constraint rank равен \(264\), поэтому
+\begin{equation}
+ \dim_\mathbb R\ker\mathcal L_{PS}=272-264=8.
+\end{equation}
+Kernel имеет точную форму
+\begin{equation}
+ \boxed{
+ Y=A\otimes I_4,
+ \qquad
+ A\in M_2(\mathbb C),
+ \qquad
+ M_R=M_L=0.}
+\end{equation}
+Таким образом, full first-order condition оставляет только один
+quark--lepton unified bidoublet и запрещает оба Majorana channels.
+
+\section{SM-subalgebra result}
+
+Для embedded SM algebra constraint rank равен \(240\), и
+\begin{equation}
+ \boxed{\dim_\mathbb R\ker\mathcal L_{SM}=32.}
+\end{equation}
+Yukawa part содержит 16 real parameters:
+\begin{equation}
+ Y=A_\ell\otimes P_\ell+A_q\otimes P_q,
+ \qquad
+ A_\ell,A_q\in M_2(\mathbb C),
+\end{equation}
+где
+\begin{equation}
+ P_\ell=\operatorname{diag}(1,0,0,0),
+ \qquad
+ P_q=I_4-P_\ell.
+\end{equation}
+Это exactly освобождает quark--lepton splitting, необходимый для появления
+composite \(\Sigma_4\).
+
+Оставшиеся 16 real parameters образуют symmetric right-Majorana channel.
+Пусть \(e=(1,0,0,0)^T\) выделяет leptonic fourth-color direction, а
+\(u,v\in\mathbb C^4\). В \(2_R\times2_R\) block notation
+\begin{equation}
+ \boxed{
+ M_R=
+ \begin{pmatrix}
+ eu^T+ue^T&ve^T\\
+ ev^T&0
+ \end{pmatrix},
+ \qquad
+ M_L=0.}
+ \label{eq:sm-first-order-mr-kernel}
+\end{equation}
+Пара \((u,v)\) является одним complex
+\(\Delta\sim(2_R,1_L,4_4)\)-подобным seed. Equation
+\eqref{eq:sm-first-order-mr-kernel} проходит все \(24^2\) double-commutator
+tests точно.
+
+\begin{theorem}[Exact first-order kernel]
+В объявленной representation convention full first-order condition оставляет
+8-real-dimensional unified bidoublet. Restriction к Standard Model
+subalgebra расширяет kernel до 32 real dimensions, причём добавленные
+directions совпадают по representation content с quark--lepton split и
+одним \(\Delta(2_R,4_4)\) seed composite branch.
+\end{theorem}
+
+\section{Convention scan}
+
+Перестановка двух right-isospin slots и выбор \(\lambda\) либо
+\(\bar\lambda\) в leptonic \(M_4\)-slot меняют только расположение ненулевых
+matrix entries. Во всех четырёх conventions kernel dimension остаётся 32,
+Yukawa decomposition сохраняется, а Majorana channel остаётся одним
+\((2_R,4_4)\) multiplet. Следовательно, результат не является артефактом
+одной нумерации states.
+
+\section{Почему это ещё conditional pass}
+
+First-order kernel действует на finite Dirac seed, тогда как literature
+composite fields возникают после generalized inner fluctuation
+\begin{equation}
+ D_A=D+A_{(1)}+JA_{(1)}J^{-1}+A_{(2)}.
+\end{equation}
+Найденный kernel точно содержит необходимые seeds, но ещё не доказывает
+nonlinear formulas \(Y(\phi,\Sigma_4)\) и
+\(H_R\sim\Delta\Delta\). Для этого требуется явно вычислить linear one-form
+\(A_{(1)}\) и обязательный quadratic term \(A_{(2)}\).
+
+\begin{protocol}[Следующий gate]
+На exact SM kernel вычислить полный generalized inner fluctuation и
+проверить, что:
+\begin{enumerate}
+ \item linear sector даёт \(\phi,\Delta,\Sigma_4\) с правильными reality;
+ \item quadratic sector даёт symmetric \(\Delta\Delta\) channel;
+ \item не появляются дополнительные representations;
+ \item коэффициенты связаны исходными finite Yukawa seeds, а не свободны;
+ \item physical half-trace совпадает с literature normalization.
+\end{enumerate}
+\end{protocol}
+
+Машинный exact-kernel audit сохранён в
+\path{s2t_v4_pati_salam_first_order_kernel.py} и
+\path{s2t_v4_pati_salam_first_order_kernel_results.json}.

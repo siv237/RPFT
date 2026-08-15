@@ -1,0 +1,112 @@
+\chapter{Spectral normalization калибровочных связей}
+
+Family selector не требуется для относительной gauge normalization: три
+поколения и particle--antiparticle doubling умножают все traces на общий
+factor, который сокращается в отношениях.
+
+\section{Следы одного generation atom}
+
+Для физического гиперзаряда предыдущих глав fermionic traces равны
+\begin{align}
+C_Y&=\sum_{\rm Weyl}d_3d_2Y^2=\frac{10}{3},\\
+C_2&=\sum_{\rm Weyl}d_3T_2(R)=2,\\
+C_3&=\sum_{\rm Weyl}d_2T_3(R)=2.
+\end{align}
+После GUT normalization
+\begin{equation}
+T_1=\sqrt{\frac35}\,Y
+\end{equation}
+получаем
+\begin{equation}
+C_1=\frac35C_Y=2=C_2=C_3.
+\end{equation}
+
+\begin{theorem}[Spectral gauge relation]
+Один общий bosonic spectral coefficient перед тремя gauge kinetic terms
+фиксирует на matching scale
+\begin{equation}
+\boxed{g_1=g_2=g_3,}
+\end{equation}
+где \(g_1=\sqrt{5/3}\,g_Y\). В physical hypercharge convention это
+эквивалентно
+\begin{equation}
+g_Y^2=\frac35g_2^2,
+\qquad
+g_2^2=g_3^2,
+\qquad
+\sin^2\theta_W=\frac38
+\end{equation}
+на matching scale.
+\end{theorem}
+
+Это строгий relative-normalization result стандартного почти-коммутативного
+baseline. Он не определяет matching scale.
+
+\section{Замороженные экспериментальные входы}
+
+Для one-loop stress test фиксируются \(\overline{\mathrm{MS}}\)-входы на
+\(M_Z=91.1876\,\mathrm{GeV}\):
+\begin{equation}
+\widehat\alpha^{-1}(M_Z)=127.955,
+\qquad
+\sin^2\widehat\theta_W(M_Z)=0.23122,
+\qquad
+\alpha_s(M_Z)=0.1180.
+\end{equation}
+Последние два значения и uncertainties \(0.00006\), \(0.0009\) взяты из
+PDG 2026; для running electromagnetic coupling используется стандартный
+benchmark uncertainty \(0.010\).
+
+Отсюда
+\begin{equation}
+g_1(M_Z)=0.46142,
+\qquad
+g_2(M_Z)=0.65172,
+\qquad
+g_3(M_Z)=1.21772.
+\end{equation}
+
+\section{Minimal one-loop RG gate}
+
+Для Standard Model с тремя поколениями и одним Higgs doublet
+\begin{equation}
+(b_1,b_2,b_3)=\left(\frac{41}{10},-\frac{19}{6},-7\right),
+\end{equation}
+а
+\begin{equation}
+\frac1{g_i^2(\mu)}=
+\frac1{g_i^2(M_Z)}-\frac{b_i}{8\pi^2}\log\frac{\mu}{M_Z}.
+\end{equation}
+Pairwise equality возникает при различных scales:
+\begin{align}
+g_1=g_2:&\quad \mu_{12}=1.03\times10^{13}\,\mathrm{GeV},\\
+g_1=g_3:&\quad \mu_{13}=2.43\times10^{14}\,\mathrm{GeV},\\
+g_2=g_3:&\quad \mu_{23}=9.73\times10^{16}\,\mathrm{GeV}.
+\end{align}
+Следовательно, общего triple intersection нет.
+
+На наиболее близком pairwise crossing \(g_1=g_3\) получаем
+\begin{equation}
+g_1=g_3=0.55806,
+\qquad
+g_2=0.53438,
+\end{equation}
+то есть относительный deficit \(g_2\) составляет примерно \(4.24\%\).
+Corner scan экспериментальных uncertainties оставляет его в узком диапазоне
+и не снимает mismatch.
+
+\begin{theorem}[Minimal spectral-unification no-go]
+Точная spectral trace relation доказана на matching scale, но минимальный
+Standard Model без threshold corrections и новых states не переносит её к
+измеренным couplings: one-loop trajectories не имеют общего пересечения.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет свободного threshold repair]
+Нельзя вводить independent threshold shifts для трёх gauge factors после
+просмотра mismatch. Следующий repair допустим только если masses и
+representations новых states уже следуют из конечной геометрии и одновременно
+проходят другой sector gate.
+\end{nogocriterion}
+
+Машинный trace и RG ledger сохранён в
+\path{s2t_v4_spectral_gauge_normalization_gate_results.json}.

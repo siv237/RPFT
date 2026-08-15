@@ -1,0 +1,58 @@
+{
+  "random_seed": 20260813,
+  "random_tests": 200,
+  "double_path_identity": {
+    "direct": "Delta_(aI) Delta_(bJ)",
+    "crossed": "Delta_(aJ) Delta_(bI)",
+    "identity": "||direct-crossed||_F^2 = 4 det(Delta Delta^dagger)",
+    "maximum_absolute_error": 4.547473508864641e-13,
+    "maximum_weak_antisymmetry_error": 0.0,
+    "maximum_color_antisymmetry_error": 0.0,
+    "representation": "(1_R,6_4)"
+  },
+  "combined_casimir_cross_check": {
+    "desired_3R_10": "2+9/2=13/2",
+    "unwanted_1R_6": "0+5/2=5/2",
+    "gap": 4
+  },
+  "extended_potential": "V=-rho^2+tau^2+kappa det(Delta Delta^dagger)",
+  "rank_one_hessian_eigenvalues": {
+    "8*sqrt(2)": 1,
+    "0": 9,
+    "sqrt(2)*(kappa - 2)": 6
+  },
+  "rank_one_energy": "-1/4",
+  "rank_one_stationary": true,
+  "signatures": {
+    "kappa_0_original": {
+      "positive": 1,
+      "zero": 9,
+      "negative": 6
+    },
+    "kappa_2_single_casimir_gap": {
+      "positive": 1,
+      "zero": 15,
+      "negative": 0
+    },
+    "kappa_4_double_path_or_combined_casimir": {
+      "positive": 7,
+      "zero": 9,
+      "negative": 0
+    }
+  },
+  "rank_two_stationary_branch": {
+    "exists_for": "kappa<4",
+    "equal_singular_value_fourth_power": "(4-kappa)/8",
+    "energy": "-(4-kappa)^2/16",
+    "at_kappa_4": "collapses to the origin"
+  },
+  "project_archaeology": {
+    "rank_one_projector_precedent": "version4_rank_one_breaking_gate.tex",
+    "parallel_path_interference_precedent": "version4_common_updown_krajewski_loop_gate.tex",
+    "endpoint_inclusion_exclusion_precedent": "version4_relative_krajewski_star_gate.tex",
+    "casimir_gap_precedent": "version4_pati_salam_diagonal_connector_menu_gate.tex",
+    "decorated_trace_precedent": "version4_algebra_embedding_weighted_selector_gate.tex",
+    "common_superconnection_precedent": "version4_wilson_defect_parent_superconnection_gate.tex"
+  },
+  "verdict": "exact algebraic rescue candidate found; parent derivation of the two-path relative sign or equivalent Casimir-decorated curvature term remains open"
+}

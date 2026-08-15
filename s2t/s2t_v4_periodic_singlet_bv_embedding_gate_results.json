@@ -1,0 +1,48 @@
+{
+  "status": "finite_gaussian_BV_periodic_singlet_cannot_generate_an_exact_nonzero_linear_primitive",
+  "date": "2026-08-12",
+  "periodic_tower": {
+    "first_trace": "2*zeta(4)/pi^4=1/45",
+    "second_trace": "2*zeta(8)/pi^8=1/4725",
+    "bosonic_series": "-t**2/9450 + t/45+O(t^3)",
+    "fermionic_series": "t**2/9450 - t/45+O(t^3)",
+    "target_up_to_constant": "-t/45"
+  },
+  "finite_BV_moment_theorem": {
+    "condition": "sum_j a_j lambda_j^k=0 for every k>=2",
+    "vandermonde_checks": [
+      {
+        "species_count": 1,
+        "determinant": "1",
+        "full_rank": true
+      },
+      {
+        "species_count": 2,
+        "determinant": "4",
+        "full_rank": true
+      },
+      {
+        "species_count": 3,
+        "determinant": "72",
+        "full_rank": true
+      },
+      {
+        "species_count": 4,
+        "determinant": "6912",
+        "full_rank": true
+      },
+      {
+        "species_count": 5,
+        "determinant": "4147200",
+        "full_rank": true
+      },
+      {
+        "species_count": 6,
+        "determinant": "17915904000",
+        "full_rank": true
+      }
+    ],
+    "conclusion": "finite distinct nonzero couplings force all net weights and the linear moment to vanish"
+  },
+  "reopening": "Gamma_zeta=-t*pi^(-4)*Tr'(Delta_per^(-2))=-t/45"
+}

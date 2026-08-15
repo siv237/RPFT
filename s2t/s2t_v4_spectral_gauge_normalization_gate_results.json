@@ -1,0 +1,104 @@
+{
+  "gate": "version4_spectral_gauge_normalization",
+  "trace_contributions": {
+    "Q_L": {
+      "Y2": "1/6",
+      "SU2": "3/2",
+      "SU3": "1"
+    },
+    "u_R": {
+      "Y2": "4/3",
+      "SU2": "0",
+      "SU3": "1/2"
+    },
+    "d_R": {
+      "Y2": "1/3",
+      "SU2": "0",
+      "SU3": "1/2"
+    },
+    "L_L": {
+      "Y2": "1/2",
+      "SU2": "1/2",
+      "SU3": "0"
+    },
+    "e_R": {
+      "Y2": "1",
+      "SU2": "0",
+      "SU3": "0"
+    },
+    "nu_R": {
+      "Y2": "0",
+      "SU2": "0",
+      "SU3": "0"
+    }
+  },
+  "trace_totals": {
+    "C_Y": "10/3",
+    "C_1_GUT": "2",
+    "C_2": "2",
+    "C_3": "2"
+  },
+  "spectral_relation": "g1=g2=g3, equivalently gY^2=(3/5) g2^2 and g2=g3",
+  "spectral_sin2_thetaW": "3/8",
+  "generation_and_reality_doubling_cancel_in_ratios": true,
+  "inputs": {
+    "alpha_em_inverse_MZ": 127.955,
+    "alpha_em_inverse_uncertainty": 0.01,
+    "sin2_thetaW_MSbar_MZ": 0.23122,
+    "sin2_thetaW_uncertainty": 6e-05,
+    "alpha_s_MSbar_MZ": 0.118,
+    "alpha_s_uncertainty": 0.0009,
+    "MZ_GeV": 91.1876
+  },
+  "couplings_at_MZ": {
+    "gY": 0.35741704769115173,
+    "g1": 0.4614234244528176,
+    "g2": 0.651723832904323,
+    "g3": 1.2177157847767197,
+    "e": 0.31338362613688603
+  },
+  "one_loop_beta_coefficients": {
+    "g1": 4.1,
+    "g2": -3.1666666666666665,
+    "g3": -7
+  },
+  "pairwise_crossings": {
+    "g1_g2": {
+      "log_mu_over_MZ": 25.451908457929104,
+      "scale_GeV": 10317136647571.07,
+      "running_couplings": {
+        "g1": 0.5443196428639296,
+        "g2": 0.5443196428639296,
+        "g3": 0.584121451023387
+      },
+      "relative_spread": 0.07312212351926295
+    },
+    "g2_g3": {
+      "log_mu_over_MZ": 34.60316051333272,
+      "scale_GeV": 9.72517562387689e+16,
+      "running_couplings": {
+        "g1": 0.5872259432778976,
+        "g2": 0.5169381323025689,
+        "g3": 0.5169381323025689
+      },
+      "relative_spread": 0.13596948374121598
+    },
+    "g1_g3": {
+      "log_mu_over_MZ": 28.612250759344764,
+      "scale_GeV": 243264314534077.47,
+      "running_couplings": {
+        "g1": 0.5580556927769942,
+        "g2": 0.5343781334011699,
+        "g3": 0.5580556927769942
+      },
+      "relative_spread": 0.044308623231124944
+    }
+  },
+  "common_triple_crossing_exists": false,
+  "g1_g3_crossing_g2_relative_mismatch": 0.04242866739339246,
+  "g1_g3_crossing_mismatch_corner_range": [
+    0.04183218446379389,
+    0.043017385358558036
+  ],
+  "status": "exact spectral trace ratio; minimal no-threshold one-loop SM running fails exact triple matching"
+}

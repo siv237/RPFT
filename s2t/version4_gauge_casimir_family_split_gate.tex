@@ -1,0 +1,102 @@
+\chapter{Gauge-Casimir family split: четыре anchors и blind no-go}
+
+Relative-star gate показал, что центральные multiplicities не меняют family
+state. Однако полное gauge representation содержит не только multiplicity,
+но и различные квадратичные Casimirs левых и правых fermion modules.
+Проверим, может ли уже выведенный gauge ledger расщепить четыре Yukawa edges
+без новых flavour coefficients.
+
+\section{Representation-sensitive weight}
+
+При GUT-normalized \(T_1=\sqrt{3/5}\,Y\) определим endpoint weight
+\begin{equation}
+ C_s=g_3^2C_3(s)+g_2^2C_2(s)+g_1^2T_1(s)^2.
+\end{equation}
+Для каждого sector quartic family operator взвешивается Casimirs его left и
+right endpoints:
+\begin{equation}
+ R_{4,s}=C_{s,L}(R_{4,A}+R_{4,D})
+ +C_{s,R}(R_{4,B}+R_{4,C}).
+\end{equation}
+Коэффициенты здесь не подбираются по fermion masses: charges и normalization
+взяты из representation и spectral gauge gate.
+
+Explicit weights равны
+\begin{align}
+ C_{u,L}=C_{d,L}&=\frac43g_3^2+\frac34g_2^2+\frac1{60}g_1^2,\\
+ C_{u,R}&=\frac43g_3^2+\frac4{15}g_1^2,
+ &C_{d,R}&=\frac43g_3^2+\frac1{15}g_1^2,\\
+ C_{\nu,L}=C_{e,L}&=\frac34g_2^2+\frac3{20}g_1^2,\\
+ C_{\nu,R}&=0,
+ &C_{e,R}&=\frac35g_1^2.
+\end{align}
+
+\section{Matching-scale degeneracy}
+
+Down и electron anchors совпадают тогда и только тогда, когда совпадают
+отношения right/left weights. Числитель их разности факторизуется как
+\begin{equation}
+ C_{d,R}C_{e,L}-C_{e,R}C_{d,L}
+ =-\frac15\left(
+ 2g_1^2g_2^2+3g_1^2g_3^2-5g_2^2g_3^2
+ \right).
+\end{equation}
+При spectral relation \(g_1=g_2=g_3\) это выражение точно равно нулю.
+
+\begin{theorem}[Spectral-scale three-anchor no-go]
+На scale точного spectral gauge matching Casimir decoration не создаёт четыре
+family states: sectors \(d\) и \(e\) имеют одинаковый normalized endpoint
+weight и один anchor. Следовательно, tree-level spectral equality оставляет
+не более трёх textures.
+\end{theorem}
+
+\section{RG-separated stress test}
+
+Подставим замороженный gauge-train ledger на \(M_Z\):
+\begin{equation}
+ g_1=0.461423,
+ \qquad g_2=0.651724,
+ \qquad g_3=1.217716.
+\end{equation}
+Теперь четыре minima различны. State-anchored projection даёт normalized
+mass ledgers
+\begin{align}
+ u:&\quad(0.187192,\,0.378318,\,1),\\
+ d:&\quad(0.128103,\,0.423190,\,1),\\
+ \nu:&\quad(0,\,0.399664,\,1),\\
+ e:&\quad(0.179730,\,0.342420,\,1).
+\end{align}
+Таким образом, representation-sensitive RG weights действительно снимают
+двухтекстурную обструкцию без независимых flavour parameters.
+
+Однако quark mixing readout равен
+\begin{equation}
+ |V_q|\simeq
+ \begin{pmatrix}
+ 0.3864&0.8672&0.3141\\
+ 0.8551&0.4453&0.2653\\
+ 0.3455&0.2228&0.9116
+ \end{pmatrix},
+\end{equation}
+а максимальный off-diagonal element равен \(0.8672\). Cubic CP invariant
+ненулевой, но mass hierarchy и small quark mixing не воспроизводятся.
+
+\begin{theorem}[Four-anchor structural pass]
+Неравные running gauge couplings через один Casimir-decorated functional
+порождают четыре различных family anchors и четыре Yukawa textures без новых
+flavour coefficients.
+\end{theorem}
+
+\begin{nogocriterion}[Gauge-train не является fermion blind pass]
+Этот результат не считается предсказанием: использованы измеренные low-scale
+gauge couplings, minimal RG не соединяет их с точным triple matching, а
+полученный quark mixing ledger явно провален. Запрещено исправлять его новыми
+sector coefficients.
+\end{nogocriterion}
+
+Результат одновременно положителен и ограничителен. Representation data
+достаточно для четырёхсекторного split после RG, но простейшая Casimir map не
+описывает наблюдаемый flavour pattern. Следующий кандидат должен изменить
+сам family functional или RG bridge, а не добавить четыре Yukawa inputs.
+Машинный ledger сохранён в
+\path{s2t_v4_gauge_casimir_family_split_gate_results.json}.

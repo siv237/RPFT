@@ -1,0 +1,317 @@
+{
+  "gate": "version4_cross_sector_cp",
+  "distinct_real_symmetric_sector_operators": 8,
+  "unordered_sector_pairs": 28,
+  "commutator_norm_distribution": {
+    "0": 10,
+    "6": 4,
+    "4": 8,
+    "1": 6
+  },
+  "minimum_commutator_norm": "0",
+  "minimum_pair_degeneracy": 10,
+  "maximum_commutator_norm": "6",
+  "maximum_pair_degeneracy": 4,
+  "all_cp_odd_trace_cubes_zero": true,
+  "positive_cross_coupling_verdict": "selects one of ten commuting pairs and cannot force mixing",
+  "negative_cross_coupling_verdict": "selects one of four maximally noncommuting pairs but does not choose a unique orbit",
+  "real_menu_cp_verdict": "all real symmetric pairs have zero Jarlskog trace-cube invariant",
+  "nonzero_orientation_odd_operators": 8,
+  "orientation_odd_spectra": [
+    {
+      "-sqrt(3)/2": 1,
+      "sqrt(3)/2": 1,
+      "0": 1
+    },
+    {
+      "-sqrt(3)/2": 1,
+      "sqrt(3)/2": 1,
+      "0": 1
+    },
+    {
+      "-sqrt(3)/2": 1,
+      "sqrt(3)/2": 1,
+      "0": 1
+    },
+    {
+      "-sqrt(3)/2": 1,
+      "sqrt(3)/2": 1,
+      "0": 1
+    },
+    {
+      "-sqrt(3)/2": 1,
+      "sqrt(3)/2": 1,
+      "0": 1
+    },
+    {
+      "-sqrt(3)/2": 1,
+      "sqrt(3)/2": 1,
+      "0": 1
+    },
+    {
+      "-sqrt(3)/2": 1,
+      "sqrt(3)/2": 1,
+      "0": 1
+    },
+    {
+      "-sqrt(3)/2": 1,
+      "sqrt(3)/2": 1,
+      "0": 1
+    }
+  ],
+  "next_route": "include the Hermitian orientation-odd operator (P-P^dagger)/(2i) from a directed three-cycle",
+  "pairs": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "commutator_norm": "0",
+      "cp_odd_trace_cube": "0",
+      "commutes": true
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "commutator_norm": "6",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        0,
+        3
+      ],
+      "commutator_norm": "0",
+      "cp_odd_trace_cube": "0",
+      "commutes": true
+    },
+    {
+      "pair": [
+        0,
+        4
+      ],
+      "commutator_norm": "4",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        0,
+        5
+      ],
+      "commutator_norm": "6",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        0,
+        6
+      ],
+      "commutator_norm": "4",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        0,
+        7
+      ],
+      "commutator_norm": "0",
+      "cp_odd_trace_cube": "0",
+      "commutes": true
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "commutator_norm": "0",
+      "cp_odd_trace_cube": "0",
+      "commutes": true
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "commutator_norm": "1",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "commutator_norm": "1",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        1,
+        5
+      ],
+      "commutator_norm": "4",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        1,
+        6
+      ],
+      "commutator_norm": "1",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        1,
+        7
+      ],
+      "commutator_norm": "4",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "commutator_norm": "4",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "commutator_norm": "0",
+      "cp_odd_trace_cube": "0",
+      "commutes": true
+    },
+    {
+      "pair": [
+        2,
+        5
+      ],
+      "commutator_norm": "0",
+      "cp_odd_trace_cube": "0",
+      "commutes": true
+    },
+    {
+      "pair": [
+        2,
+        6
+      ],
+      "commutator_norm": "4",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        2,
+        7
+      ],
+      "commutator_norm": "6",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "commutator_norm": "1",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        3,
+        5
+      ],
+      "commutator_norm": "0",
+      "cp_odd_trace_cube": "0",
+      "commutes": true
+    },
+    {
+      "pair": [
+        3,
+        6
+      ],
+      "commutator_norm": "1",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        3,
+        7
+      ],
+      "commutator_norm": "4",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "commutator_norm": "4",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        4,
+        6
+      ],
+      "commutator_norm": "1",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        4,
+        7
+      ],
+      "commutator_norm": "0",
+      "cp_odd_trace_cube": "0",
+      "commutes": true
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "commutator_norm": "0",
+      "cp_odd_trace_cube": "0",
+      "commutes": true
+    },
+    {
+      "pair": [
+        5,
+        7
+      ],
+      "commutator_norm": "6",
+      "cp_odd_trace_cube": "0",
+      "commutes": false
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "commutator_norm": "0",
+      "cp_odd_trace_cube": "0",
+      "commutes": true
+    }
+  ]
+}

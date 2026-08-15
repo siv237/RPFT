@@ -1,0 +1,57 @@
+{
+  "gate": "version4_algebra_embedding_weighted_selector",
+  "coarse_algebra_acts_trivially_on_family_multiplicity": true,
+  "explicit_coarse_commutant_unitary": {
+    "U_A": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+    "U_B": "Matrix([[-1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+    "U_C": "Matrix([[1, 0, 0], [0, -1, 0], [0, 0, 1]])",
+    "U_D": "Matrix([[-1, 0, 0], [0, -1, 0], [0, 0, -1]])"
+  },
+  "coarse_unitary_is_orthogonal": true,
+  "coarse_unitary_determinant": "-1",
+  "coarse_unitary_maps_branches": true,
+  "coarse_unitary_commutes_with_algebra": true,
+  "coarse_unitary_commutes_with_grading": true,
+  "full_unitary_commutes_with_J": true,
+  "closed_loop_products_equal": true,
+  "pfaffian_sign_flip_explained_by_orientation_reversal": true,
+  "coarse_spectral_triples_unitarily_equivalent": true,
+  "family_residual_commutant": "{(x0, 0, 0, 0, x8, 0, 0, 0, x8)}",
+  "coarse_equivalence_commutes_with_family_generators": {
+    "T_p": true,
+    "T_q": true,
+    "S": false,
+    "P_minus": false
+  },
+  "enriched_family_embedding_blocks_explicit_equivalence": true,
+  "enriched_commutant_edge_equations_consistent": false,
+  "enriched_commutant_contradiction": "P and H_u edges force U_B=U_C=b I; connector gives U_D=-U_A; then the middle diagonal entry of U_C^* H_d^- U_D is -1 while H_d^+ requires +1",
+  "decorated_fourth_moments": {
+    "T_p": {
+      "Tr_rho_D4_minus": "-13",
+      "Tr_rho_D4_plus": "-13"
+    },
+    "T_q": {
+      "Tr_rho_D4_minus": "-21",
+      "Tr_rho_D4_plus": "-21"
+    },
+    "S": {
+      "Tr_rho_D4_minus": "13/2",
+      "Tr_rho_D4_plus": "17/2"
+    },
+    "P_minus": {
+      "Tr_rho_D4_minus": "83/4",
+      "Tr_rho_D4_plus": "79/4"
+    }
+  },
+  "P_minus_weighted_moment_selects": "B_plus",
+  "P_minus_weighted_values": {
+    "B_minus": "83/4",
+    "B_plus": "79/4"
+  },
+  "positive_P_minus_weighted_quartic_has_unique_branch": true,
+  "standard_unweighted_spectral_action_selects_branch": false,
+  "weighted_state_principle_derived": false,
+  "physical_ckm_phase_derived": false,
+  "status": "the branches are equivalent for the current coarse algebra, but become inequivalent when the canonical family embedding is promoted; a positive P_minus-weighted fourth moment selects B_plus conditionally"
+}

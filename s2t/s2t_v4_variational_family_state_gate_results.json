@@ -1,0 +1,137 @@
+{
+  "gate": "version4_variational_family_state",
+  "family_state_space": "rho>=0, Tr(rho)=1",
+  "functional": "V_2n(D,rho)=Tr(rho R_2n(D))",
+  "rayleigh_ritz_minimum": "lambda_min(R_2n)",
+  "reduced_operators": {
+    "2": {
+      "B_minus": "Matrix([[6, 0, 0], [0, 7, -1], [0, -1, 7]])",
+      "B_plus": "Matrix([[6, 0, 0], [0, 7, -1], [0, -1, 7]])"
+    },
+    "4": {
+      "B_minus": "Matrix([[27/2, 0, 1/2], [0, 35/2, -7/2], [1/2, -7/2, 17]])",
+      "B_plus": "Matrix([[27/2, -2, 3/2], [-2, 35/2, -5/2], [3/2, -5/2, 17]])"
+    },
+    "6": {
+      "B_minus": "Matrix([[34, -1/2, 5/2], [-1/2, 97/2, -12], [5/2, -12, 91/2]])",
+      "B_plus": "Matrix([[34, -21/2, 15/2], [-21/2, 97/2, -6], [15/2, -6, 91/2]])"
+    }
+  },
+  "ground_data": {
+    "2": {
+      "B_minus": {
+        "eigenvalues": [
+          6.0,
+          6.0,
+          8.0
+        ],
+        "ground_value": 6.0,
+        "ground_vector": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "odd_projector_overlap": 0.0,
+        "ground_state_unique": false
+      },
+      "B_plus": {
+        "eigenvalues": [
+          6.0,
+          6.0,
+          8.0
+        ],
+        "ground_value": 6.0,
+        "ground_vector": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "odd_projector_overlap": 0.0,
+        "ground_state_unique": false
+      }
+    },
+    "4": {
+      "B_minus": {
+        "eigenvalues": [
+          13.225082782365,
+          14.0,
+          20.774917217635
+        ],
+        "ground_value": 13.225082782364625,
+        "ground_vector": [
+          0.815148098568,
+          -0.36695160413,
+          -0.448196494438
+        ],
+        "odd_projector_overlap": 0.0033003661006085817,
+        "ground_state_unique": true
+      },
+      "B_plus": {
+        "eigenvalues": [
+          12.608881461798,
+          14.758684008744,
+          20.632434529458
+        ],
+        "ground_value": 12.608881461797846,
+        "ground_vector": [
+          0.939574855786,
+          0.310502002048,
+          -0.144179045282
+        ],
+        "odd_projector_overlap": 0.10336742740071737,
+        "ground_state_unique": true
+      }
+    },
+    "6": {
+      "B_minus": {
+        "eigenvalues": [
+          32.742926416437,
+          36.0,
+          59.257073583563
+        ],
+        "ground_value": 32.74292641643714,
+        "ground_vector": [
+          0.812528680997,
+          -0.336637787241,
+          -0.475890893755
+        ],
+        "odd_projector_overlap": 0.00969571383693579,
+        "ground_state_unique": true
+      },
+      "B_plus": {
+        "eigenvalues": [
+          27.505247675615,
+          40.830271301001,
+          59.664481023384
+        ],
+        "ground_value": 27.505247675615397,
+        "ground_vector": [
+          0.89309210304,
+          0.376119938704,
+          -0.246820354096
+        ],
+        "odd_projector_overlap": 0.19402730419692518,
+        "ground_state_unique": true
+      }
+    }
+  },
+  "quadratic_ground_values_equal": true,
+  "quartic_minus_exact_ground_value": "17 - sqrt(57)/2",
+  "quartic_plus_ground_root_bracket": [
+    "25/2",
+    "13"
+  ],
+  "quartic_plus_polynomial_at_25_over_2": "-8",
+  "quartic_plus_polynomial_at_13": "21",
+  "quartic_minus_ground_value_greater_than_13": true,
+  "quartic_selected_branch": "B_plus",
+  "quartic_ground_gap": 0.6162013205667787,
+  "quartic_ground_states_unique": true,
+  "quartic_ground_state_equals_odd_corner": false,
+  "sixth_moment_stress_selected_branch": "B_plus",
+  "preselected_corner_required": false,
+  "continuous_weight_parameter_required": false,
+  "requires_enriched_family_identification_across_nodes": true,
+  "physical_ckm_phase_derived": false,
+  "status": "joint minimization over all family states selects B_plus at D^4 with no preselected corner; Yukawa readout remains open"
+}

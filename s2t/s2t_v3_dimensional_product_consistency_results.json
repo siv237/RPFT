@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "dimensional_architecture_must_be_selected_before_kk_sum",
+  "architecture_A_base_K": {
+    "dimension": 4,
+    "interpretation": "K is Euclidean spacetime base",
+    "extra_KK_sum_allowed": false,
+    "reason": "eigenmodes on K are spacetime determinant modes, not extra species"
+  },
+  "architecture_B_internal_K": {
+    "external_dimension": 4,
+    "internal_dimension": 4,
+    "total_dimension": 8,
+    "heat_kernel_factorization_required": true,
+    "flat_external_a4_sufficient": false
+  },
+  "spinorial_internal_lift": {
+    "R_RP3": 6,
+    "R_S1": 0,
+    "R_K": 6,
+    "lichnerowicz_lower_bound_R_over_4": "3/2",
+    "harmonic_spinors": 0,
+    "finite_fermion_zero_modes_automatic": false
+  },
+  "status_of_previous_results": {
+    "kappa": 2,
+    "g_squared": "3/8",
+    "B_zero_finite_gauge": "67/(64*pi^2)",
+    "valid_as_4D_zero_mode_effective_action": true,
+    "valid_as_full_M4_times_K_compactification": false
+  },
+  "verdict": {
+    "kk_branch_audit_started": false,
+    "reason": "base/internal K ambiguity",
+    "next_gate": "select base-K determinant or internal-K zero-mode lift"
+  }
+}

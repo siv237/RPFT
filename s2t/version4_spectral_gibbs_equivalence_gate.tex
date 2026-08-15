@@ -1,0 +1,171 @@
+\chapter[Spectral/Gibbs no-go и operator dictionary]
+{Spectral-action/Gibbs equivalence: no-go и корректная operator dictionary}
+
+Предыдущий gate выбрал \(S^4\) в normalized correlation-state completion.
+Оставалось проверить, совпадает ли этот functional с Postulate 2 первичного
+\texttt{TOE.pdf}. В документе буквально записано
+\begin{equation}
+ S_{\rm raw}[\widehat C]
+ =\Tr f\!\left(\frac{\widehat C}{\Lambda^2}\right),
+ \qquad
+ \widehat C=e^{-\tau\Delta},
+ \qquad \tau=\sigma^2.
+ \label{eq:toe-raw-spectral-action}
+\end{equation}
+и сразу после этого заявлено стандартное Seeley--DeWitt expansion. Эти две
+строки несовместимы без дополнительного logarithmic map.
+
+\section{Trace-class obstruction исходной записи}
+
+Пусть \(\widehat C\) --- positive compact infinite-rank operator. Его
+eigenvalues \(c_n\) стремятся к нулю. Для обычного cutoff profile,
+непрерывного в нуле и удовлетворяющего \(f(0)\ne0\), имеем
+\begin{equation}
+ f(c_n/\Lambda^2)\longrightarrow f(0)\ne0.
+\end{equation}
+Следовательно, \(f(\widehat C/\Lambda^2)\) не является trace class и
+\eqref{eq:toe-raw-spectral-action} расходится.
+
+\begin{theorem}[Raw correlation-action obstruction]
+Стандартный positive spectral cutoff с \(f(0)>0\) нельзя напрямую применять
+в trace к compact correlation operator \(\widehat C\) бесконечного ранга.
+Обычный spectral action применяется к unbounded Dirac/Laplace generator,
+чьи eigenvalues уходят в бесконечность, а не к его heat exponential, чьи
+eigenvalues накапливаются в нуле.
+\end{theorem}
+
+Например, для \(f(u)=e^{-u}\), \(\tau=0.1\) и unit-volume \(S^4\) partial
+trace по spherical shells растёт как
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+shell cutoff \(L\) & partial \(\Tr f(\widehat C)\) \\
+\midrule
+10 & 1714.68 \\
+20 & 19479.68 \\
+40 & 259159.68 \\
+80 & 3767119.68 \\
+\bottomrule
+\end{tabular}
+\end{center}
+Рост обусловлен не UV physics, а тем, что каждый sufficiently high mode
+вносит почти \(f(0)=1\).
+
+Кроме того, \(\widehat C=e^{-\tau\Delta}\) dimensionless, тогда как
+\(\widehat C/\Lambda^2\) без дополнительной convention не является
+dimensionless argument функции \(f\).
+
+\section{Единственная естественная operator correction}
+
+Correlation operator содержит unbounded generator без потери информации:
+\begin{equation}
+ H_C:=-\frac1\tau\log\widehat C=\Delta
+ \label{eq:correlation-log-generator}
+\end{equation}
+на support \(\widehat C\). Поэтому standard spectral action, действительно
+имеющий Seeley--DeWitt expansion, должен быть записан как
+\begin{equation}
+ S_{\rm EFT}[\widehat C]
+ =\Tr f\!\left(
+ -\frac{\log\widehat C}{\tau\Lambda^2}
+ \right)
+ =\Tr f\!\left(\frac{\Delta}{\Lambda^2}\right).
+ \label{eq:corrected-correlation-spectral-action}
+\end{equation}
+Именно \eqref{eq:corrected-correlation-spectral-action}, а не
+\eqref{eq:toe-raw-spectral-action}, порождает conventional heat-kernel
+moments \(a_{2k}\).
+
+\begin{proposition}[Corrected TOE operator dictionary]
+Gaussian correlation kernel и standard spectral action совместимы при
+словаре
+\begin{equation}
+ \widehat C
+ \longleftrightarrow
+ H_C=-\tau^{-1}\log\widehat C
+ \longleftrightarrow
+ \Tr f(H_C/\Lambda^2).
+\end{equation}
+Таким образом, fundamental bounded operator может оставаться \(\widehat C\),
+но EFT action должен читаться через его logarithmic generator.
+\end{proposition}
+
+\section{Точная эквивалентность с Gibbs functional невозможна}
+
+Любой functional вида \(\Tr f(\widehat C)\) аддитивен на orthogonal direct
+sums:
+\begin{equation}
+ S_f(C_1\oplus C_2)=S_f(C_1)+S_f(C_2).
+\end{equation}
+Gibbs carrier functional имеет другую composition law:
+\begin{equation}
+ F_\tau(C_1\oplus C_2)
+ =-\frac1\tau\log\bigl(\Tr C_1+\Tr C_2\bigr),
+\end{equation}
+тогда как
+\begin{equation}
+ F_\tau(C_1)+F_\tau(C_2)
+ =-\frac1\tau\log\bigl((\Tr C_1)(\Tr C_2)\bigr).
+\end{equation}
+Например, при \(\tau=1\), \(Z_1=2\), \(Z_2=3\) получаются соответственно
+\(-\log5\) и \(-\log6\).
+
+\begin{theorem}[Additivity no-go]
+Не существует одной scalar function \(f\), для которой
+\(\Tr f(\widehat C)\) совпадает с
+\(-\tau^{-1}\log\Tr\widehat C\) на всех positive trace-class operators и их
+direct sums. Следовательно, original trace spectral action и Gibbs carrier
+free energy не являются двумя записями одного functional.
+\end{theorem}
+
+Точная Gibbs-запись требует outer logarithm:
+\begin{equation}
+ S_{\rm state}[\widehat C]
+ =-\frac1\tau\log\Tr\widehat C.
+ \label{eq:outer-log-state-action}
+\end{equation}
+Она spectral в широком смысле, поскольку зависит только от spectrum
+\(\widehat C\), но не является линейным trace functional.
+
+\section{Двухфункциональная parent architecture}
+
+Попытка механически сложить \(S_{\rm EFT}\) и \(S_{\rm state}\) ввела бы
+новый относительный коэффициент. Минимальная архитектура вместо этого
+разделяет их роли:
+\begin{enumerate}
+ \item \(S_{\rm state}\) выбирает normalized carrier vacuum при фиксированных
+ volume и correlation time;
+ \item после выбора carrier \(S_{\rm EFT}\) порождает local gravitational,
+ gauge и Higgs dynamics через Seeley--DeWitt expansion.
+\end{enumerate}
+Это последовательная constrained construction, а не сумма двух независимо
+взвешенных действий.
+
+\begin{nogocriterion}[Запрет ложной equivalence]
+Нельзя использовать claimed Seeley--DeWitt expansion как доказательство
+того, что raw \(\Tr f(\widehat C/\Lambda^2)\) одновременно является
+standard spectral action и Gibbs vacuum functional. Первая роль требует
+\(-\log\widehat C\) внутри trace, вторая --- \(\log\) снаружи trace.
+\end{nogocriterion}
+
+\begin{theorem}[Equivalence gate verdict]
+Запрошенная точная equivalence закрывается отрицательно. Вместо неё получен
+строгий corrected dictionary: один correlation operator порождает два
+неэквивалентных, но совместимых чтения,
+\begin{equation}
+ \boxed{
+ \begin{aligned}
+ S_{\rm EFT}[C]
+ &=\Tr f\!\left(-\frac{\log C}{\tau\Lambda^2}\right),\\
+ S_{\rm state}[C]
+ &=-\frac1\tau\log\Tr C.
+ \end{aligned}}
+\end{equation}
+Первое отвечает за local observed dynamics, второе --- за global carrier
+selection. Это исправляет Postulate 2 без отказа от фундаментального
+Gaussian correlation operator.
+\end{theorem}
+
+Воспроизводимый ledger сохранён в
+\path{s2t_v4_spectral_gibbs_equivalence_gate.py} и
+\path{s2t_v4_spectral_gibbs_equivalence_gate_results.json}.

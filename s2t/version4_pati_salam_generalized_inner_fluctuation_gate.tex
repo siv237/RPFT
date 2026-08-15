@@ -1,0 +1,166 @@
+\chapter{Нормированный generalized inner fluctuation и composite Pati--Salam branch}
+
+Предыдущий exact-kernel gate нашёл физический finite seed, но оставил открытым
+главный вопрос: действительно ли обязательный quadratic term порождает
+литературные composite fields, а не произвольную коллекцию матриц. Здесь
+проверка выполнена непосредственно на 32-dimensional KO6 representation.
+
+\section{Допустимые, а не произвольные флуктуации}
+
+Для spectral triple без first-order condition используется
+\begin{equation}
+ D'=D+A_{(1)}+\widetilde A_{(1)}+A_{(2)},
+\end{equation}
+где
+\begin{align}
+ A_{(1)}&=\sum_j a_j[D,b_j],\\
+ \widetilde A_{(1)}&=\sum_j \widehat a_j[D,\widehat b_j],\\
+ A_{(2)}&=\sum_j\widehat a_j[A_{(1)},\widehat b_j]
+ =\sum_{j,k}\widehat a_j a_k[[D,b_k],\widehat b_j].
+ \label{eq:ps-generalized-inner-fluctuation}
+\end{align}
+Критически важно, что пары \((a_j,b_j)\) не независимы. Они задают один
+элемент perturbation semigroup
+\begin{equation}
+ \operatorname{Pert}(\mathcal A)=
+ \left\{\sum_j a_j\otimes b_j^{\mathrm{op}}:\
+ \sum_j a_jb_j=1,\quad
+ \sum_j a_j\otimes b_j^{\mathrm{op}}
+ =\sum_j b_j^*\otimes a_j^{*\,\mathrm{op}}\right\}.
+ \label{eq:ps-pert-semigroup}
+\end{equation}
+Поэтому unrestricted linear span отдельных double commutators не является
+пространством физических scalar fields. В numerical audit использованы
+только valid real affine combinations
+\begin{equation}
+ \Theta=\sum_j c_j u_j\otimes(u_j^*)^{\mathrm{op}},
+ \qquad c_j\in\mathbb R,
+ \qquad \sum_jc_j=1,
+ \end{equation}
+с unitary \(u_j\in\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)\).
+
+\section{Жёсткий gauge-covariance test}
+
+Для одного unitary term формула обязана свестись к точному сопряжению
+\begin{equation}
+ D'=UDU^*,
+ \qquad
+ U=\pi(u)J_F\pi(u)J_F^{-1}.
+\end{equation}
+На двадцати random unitary elements максимальная ошибка равна
+\begin{equation}
+ \|D'-UDU^*\|<5\times10^{-15}.
+\end{equation}
+Если удалить \(A_{(2)}\), ошибка становится порядка единицы и с machine
+precision совпадает с нормой пропущенного quadratic term. Следовательно,
+\(A_{(2)}\) здесь не декоративная поправка, а ровно тот член, который
+восстанавливает gauge covariance.
+
+\section{Физический finite seed}
+
+Вместо общего 32-dimensional first-order kernel взят минимальный
+литературный seed: четыре diagonal Yukawa constants
+\begin{equation}
+ Y_0=\operatorname{diag}(k^\nu,k^e)\otimes P_\ell
+ +\operatorname{diag}(k^u,k^d)\otimes P_q
+\end{equation}
+и единственный right-neutrino Majorana entry \(k^{\nu_R}\). Это исключает
+ложное расширение результата за счёт заранее включённых scalar directions.
+
+Linear one-form имеет sample-span ranks
+\begin{equation}
+ \rank_\mathbb R A_{(1)}^{Y}=8,
+ \qquad
+ \rank_\mathbb R A_{(1)}^{M_R}=16,
+ \qquad
+ A_{(1)}^{M_L}=0.
+\end{equation}
+Они точно совпадают с real contents bidoublet
+\(\phi\sim(2_R,2_L,1)\) и complex
+\(\Delta\sim(2_R,1_L,4)\).
+
+\section{Два composite identities}
+
+Для каждого из 600 независимых valid perturbations full Yukawa block
+перегруппирован в matrix с row index \((\dot a,b)\) и column index \((I,J)\):
+\begin{equation}
+ \mathcal R_Y(Y)_{(\dot a,b),(I,J)}=Y_{\dot a I}^{bJ}.
+\end{equation}
+Во всех случаях
+\begin{equation}
+ \boxed{\rank_\mathbb C\mathcal R_Y(Y)=2},
+ \qquad
+ \frac{s_3}{s_1}<5\times10^{-16}.
+\end{equation}
+Кроме того, двумерное weak subspace замкнуто относительно
+\(X\mapsto\varepsilon\bar X\varepsilon^{-1}\) с ошибкой меньше
+\(3\times10^{-14}\). Это есть basis-independent numerical form
+литературной factorization
+\begin{align}
+ Y_{\dot a I}^{bJ}
+ ={}&(k^\nu\phi_{\dot a}^{b}+k^e\widetilde\phi_{\dot a}^{b})
+ \Sigma_I^{J}\nonumber\\
+ &+(k^u\phi_{\dot a}^{b}+k^d\widetilde\phi_{\dot a}^{b})
+ (\delta_I^J-\Sigma_I^J).
+ \label{eq:ps-composite-yukawa-confirmed}
+\end{align}
+
+Для Majorana block обычный matrix rank не является правильным тестом из-за
+перекрёстного порядка color indices. После reshuffle
+\begin{equation}
+ \mathcal R_H(H)_{(\dot a,J),(\dot b,I)}=H_{\dot a I\dot bJ}
+\end{equation}
+во всех 600 случаях получено
+\begin{equation}
+ \boxed{\rank_\mathbb C\mathcal R_H(H)=1},
+ \qquad
+ \frac{s_2}{s_1}<2\times10^{-15}.
+\end{equation}
+При этом \(\|\mathcal R_H-\mathcal R_H^T\|<2\times10^{-14}\).
+Следовательно, rank-one factor использует один и тот же
+\(\Delta_{\dot aI}\) с обеих сторон, и
+\begin{equation}
+ \boxed{
+ H_{\dot a I\dot bJ}
+ =k^{\nu_R*}\Delta_{\dot aJ}\Delta_{\dot bI}.}
+ \label{eq:ps-composite-majorana-confirmed}
+\end{equation}
+
+\section{Что означают большие ambient ranks}
+
+По совокупности samples quadratic pieces имеют real linear-span ranks
+\begin{equation}
+ \rank A_{(2)}^Y=120,
+ \qquad
+ \rank A_{(2)}^{M_R}=72,
+\end{equation}
+а полные fluctuated blocks заполняют ambient spans \(128+72=200\).
+Это не означает 200 независимых scalar coordinates: каждый отдельный point
+остаётся на nonlinear composite variety, заданном rank-two и rank-one
+identities выше. Большой rank возникает только после взятия linear span
+многих разных points этой variety.
+
+\begin{theorem}[Generalized fluctuation gate]
+На exact Standard-Model first-order seed нормированный semigroup
+\(\operatorname{Pert}(\mathcal A_{PS})\) воспроизводит composite
+Pati--Salam branch: linear term даёт \(\phi\) и \(\Delta\), quadratic term
+даёт factorized \(\phi\)--\(\Sigma_4\) Yukawa block и crossed square
+\(\Delta\Delta\), не порождая left-Majorana channel. Gate закрыт как
+конструктивный pass.
+\end{theorem}
+
+\section{Литература и воспроизводимость}
+
+Формулы \eqref{eq:ps-generalized-inner-fluctuation} и
+\eqref{eq:ps-pert-semigroup} взяты из A.~H.~Chamseddine, A.~Connes,
+W.~D.~van Suijlekom, \emph{Inner Fluctuations in Noncommutative Geometry
+without the First Order Condition}, arXiv:1304.7583, и
+\emph{Beyond the Spectral Standard Model: Emergence of Pati--Salam
+Unification}, arXiv:1304.8050. Composite formulas сверены с
+A.~H.~Chamseddine, A.~Connes, W.~D.~van Suijlekom,
+\emph{Grand Unification in the Spectral Pati--Salam Model},
+arXiv:1507.08161.
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_generalized_inner_fluctuation.py} и
+\path{s2t_v4_pati_salam_generalized_inner_fluctuation_results.json}.

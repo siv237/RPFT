@@ -1,0 +1,199 @@
+\chapter{Representation-level physical readout}
+
+One-scale scorecard оставил открытым главный физический вопрос: какие
+состояния представляет минимальный finite module. Ответ должен следовать
+из алгебры, charges и vertices до сравнения масс.
+
+\section{Charge table}
+
+Для faithful relative-\(U(1)\) quotient четыре недублированных bimodule
+сектора имеют вид
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+Сектор & Градуировка & Charge \(q\) & Роль в \(D_F\) \\
+\midrule
+\(H_{XX}\) & \(+\) & \(0\) & neutral positive state \\
+\(H_{CC}\) & \(+\) & \(0\) & neutral positive state \\
+\(H_{XC}\) & \(-\) & \(+1\) & charged negative state \\
+\(H_{CX}\) & \(-\) & \(-1\) & charged negative state \\
+\bottomrule
+\end{tabular}
+\end{center}
+Finite fields transform as
+\begin{equation}
+ q(x)=-1,
+ \qquad
+ q(z)=+1.
+\end{equation}
+
+\section{Yukawa-edge covariance}
+
+Chiral block
+\begin{equation}
+ B=
+ \begin{pmatrix}
+ x&\overline x\\
+ \overline z&z
+ \end{pmatrix}
+\end{equation}
+maps charged negative sectors to neutral positive sectors. Для каждого
+matrix element charge оператора равен разности charges target и source.
+Получаем:
+\begin{align}
+ H_{XC}(+1)\to H_{XX}(0)
+ &:\quad q=-1,
+ \\
+ H_{CX}(-1)\to H_{XX}(0)
+ &:\quad q=+1,
+ \\
+ H_{XC}(+1)\to H_{CC}(0)
+ &:\quad q=-1,
+ \\
+ H_{CX}(-1)\to H_{CC}(0)
+ &:\quad q=+1.
+\end{align}
+Именно эти charges несут \(x,\overline x,\overline z,z\). Поэтому весь
+finite Dirac vertex gauge-covariant без дополнительных assignments.
+
+\begin{theorem}[Finite Yukawa covariance pass]
+Минимальный reality-квадрат однозначно описывает две neutral--charged
+chiral pairings, связанные двумя opposite-charge scalar components.
+Charge table и Yukawa graph выводятся из bimodule indices.
+\end{theorem}
+
+\section{Local anomaly audit}
+
+После перевода всех physical Weyl states к одной chirality ненулевые
+charges образуют conjugate pair \(+1,-1\). Поэтому
+\begin{align}
+ \sum q&=0,
+ \\
+ \sum q^3&=0,
+ \\
+ \sum q^2&=2.
+\end{align}
+Смешанная gravitational--\(U(1)\) anomaly и cubic \(U(1)^3\) anomaly
+сокращаются, тогда как положительный quadratic trace задаёт уже
+вычисленные gauge kinetic normalization и beta coefficient.
+
+\begin{proposition}[Minimal anomaly-free hidden pair]
+Finite fermion representation является anomaly-free без добавления новых
+states. Оно представляет минимальную mirror-пару chiral fermions
+относительно broken \(U(1)_{\mathrm{rel}}\).
+\end{proposition}
+
+\section{Vacuum readout}
+
+В flattening vacuum оба scalars имеют ненулевые moduli:
+\begin{equation}
+ |x|=|z|=\frac{\chi}{\sqrt2}.
+\end{equation}
+Поэтому \(U(1)_{\mathrm{rel}}\) Higgsed, vector получает
+\begin{equation}
+ m_A^2=3\chi^2
+\end{equation}
+на spectral matching scale, а две singular values \(B\) равны \(\chi\).
+Все finite fermion modes образуют две massive Dirac pairs. Unpaired
+neutral zero-mode отсутствует.
+
+\section{Standard Model readout no-go}
+
+Текущая finite algebra после faithful quotient имеет только одну
+непрерывную gauge generator:
+\begin{equation}
+ \mathfrak g_F=\mathfrak u(1)_{\mathrm{rel}}.
+\end{equation}
+Она не содержит:
+\begin{equation}
+ \mathfrak{su}(3)_{\mathrm{color}},
+ \qquad
+ \mathfrak{su}(2)_{\mathrm{weak}},
+ \qquad
+ \mathfrak u(1)_Y
+\end{equation}
+как независимые Standard Model factors. В representation отсутствуют
+color triplets, weak doublets и Standard Model hypercharge table.
+
+Кроме того:
+\begin{enumerate}
+ \item relative vector massive и не может быть photon;
+ \item две finite Dirac masses точно вырождены;
+ \item mass pairing связывает neutral и relative-charged chiral states,
+ а не две vectorlike electromagnetic chiralities;
+ \item quark и weak charged-current vertices отсутствуют.
+\end{enumerate}
+
+\begin{nogocriterion}[Direct Standard Model embedding no-go]
+Минимальный \(A_F=\mathbb C\oplus\mathbb C\) parent block нельзя
+непосредственно читать как полный leptonic или Standard Model finite
+geometry. Такое чтение требует расширения algebra, Hilbert
+representation и Dirac graph и является новой моделью, а не readout
+существующей версии.
+\end{nogocriterion}
+
+\section{Neutrino readout}
+
+Gauge-neutral sectors \(H_{XX},H_{CC}\) не остаются light neutrinos:
+flattening block связывает их с charged sectors и имеет full rank.
+Текущий odd operator не содержит отдельного Majorana self-edge,
+generation selector или small lepton-number-breaking parameter.
+Следовательно:
+\begin{equation}
+ \ker D_F=0,
+\end{equation}
+и neutrino mass hierarchy из minimal block не следует.
+
+\begin{proposition}[Minimal neutrino readout no-go]
+Наличие двух neutral chiral basis states не является neutrino prediction.
+После vacuum они входят в massive Dirac pairs. Для physical neutrino
+sector требуется новый Majorana/Dirac graph с independently derived
+symmetry and rank structure.
+\end{proposition}
+
+\section{Hidden-sector interpretation}
+
+Representation data допускают естественное и полное чтение:
+\begin{equation}
+ \boxed{
+ \text{anomaly-free Higgsed hidden }U(1)
+ \text{ с двумя mirror chiral pairs}.}
+\end{equation}
+В этой интерпретации:
+\begin{enumerate}
+ \item \(x,z\) --- two-component hidden Higgs system;
+ \item \(A_\mu\) --- massive hidden vector;
+ \item finite fermions --- две вырожденные hidden Dirac states;
+ \item три scalar modes --- physical hidden Higgs fluctuations;
+ \item CP-conjugate vacua остаются orientation branches.
+\end{enumerate}
+
+\begin{theorem}[Representation readout verdict]
+Текущая версия III имеет однозначный anomaly-free hidden-sector readout,
+но не Standard Model readout. Это повышает математический статус parent
+action до конкретной 4D effective field theory, одновременно закрывая
+прямые claims о charged-lepton и neutrino predictions.
+\end{theorem}
+
+\section{Portal gap}
+
+Все states текущего module несут только hidden charge. Portal к
+наблюдаемому сектору не выведен. Возможные scalar portal, kinetic mixing
+или neutrino portal coefficients были бы новыми continuous couplings.
+Без portal hidden predictions не имеют лабораторного blind observable.
+
+\begin{protocol}[Следующий гейт]
+Необходимо выбрать один из двух путей:
+\begin{enumerate}
+ \item \textbf{Minimal hidden completion:} вывести единственный portal из
+ symmetry или доказать exact decoupling;
+ \item \textbf{Observed-sector extension:} объявить новую finite algebra
+ с Standard Model representations и повторить first-order, anomaly,
+ normalization и blind gates с нуля.
+\end{enumerate}
+До этого Tome III фиксируется как hidden-sector parent EFT, а не unified
+theory наблюдаемого микромира.
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_representation_readout_results.json}.

@@ -1393,7 +1393,7 @@ Traceless first ambient strain также находится в \(\ell=2\)-ка�
 \end{nogocriterion}
 
 \begin{protocol}[Defense-аудит physical transverse quotient]
-Следующий аудит \texttt{s2t\_c6\_physical\_quotient\_defense\_results.json} проверяет единственную оставшуюся чистую дверь C6: считать primary object не bare covariant FP determinant, а физический determinant на пространстве gauge-equivalence classes, представленном coexact/transverse slice. В этой схеме рабочее определение имеет вид
+Следующий аудит \texttt{s2t\_c6\_physical\_quotient\_defense\_results.json} проверяет оставшийся вариант C6: считать primary object не bare covariant FP determinant, а физический determinant на пространстве gauge-equivalence classes, представленном coexact/transverse slice. В этой схеме рабочее определение имеет вид
 \begin{equation}
     \Gamma_{EM}^{phys}[g]
     =\frac12\log\det{}'\Delta_{1,coex}[g]
@@ -1407,7 +1407,12 @@ Defense-аудит даёт статус \emph{viable but not yet theorem}. Пл
 \begin{protocol}[External gate для physical quotient]
 Добавлен внешний gate-аудит \texttt{s2t\_c6\_external\_physical\_quotient\_gate\_results.json}. Его вывод можно сформулировать в простом виде: литература разрешает сам язык quotient, Hodge split, ghost determinant, analytic torsion и zero-mode/gauge-volume factors, но не дарит автоматически S2T-остаток \(\pi^{-4}\). Поэтому gate получает статус \emph{conditional pass, not theorem}. Physical quotient можно использовать как primary determinant domain, но нельзя выдавать его за уже доказанную covariant-FP cancellation.
 
-В научно-популярной формулировке ситуация такова. Мы не нашли ``магического призрака'', который сам уничтожает scalar residual. Зато нашли честную дверь: считать физическими только transverse/coexact моды и затем проверить именно их mixed trace на \(L(2,1)\). Это взрослее, чем подгонка: теперь есть экспериментальная для математики развилка. Если coexact mixed trace даёт нужный \(P_{0,2}\)-остаток и external gate не возвращает scalar leakage, C6 можно повышать. Если нет, \(\pi^{-4}\) остаётся красивой spectral compression, но не теоремой.
+Полученный результат не даёт автоматической компенсации scalar residual.
+Остаётся строго определённый вариант: ограничить физический determinant
+transverse/coexact модами и вычислить их mixed trace на \(L(2,1)\). Если этот
+след даёт требуемый \(P_{0,2}\)-остаток и external gate не восстанавливает
+scalar leakage, статус C6 может быть повышен. В противном случае
+\(\pi^{-4}\) остаётся spectral compression без статуса теоремы.
 \end{protocol}
 
 \begin{protocol}[Аудит смешанного следа на \(L(2,1)\)]

@@ -1,0 +1,190 @@
+\chapter{Portal menu и exact-decoupling gate}
+
+Hidden parent EFT математически замкнут по measure, но не имеет
+наблюдаемого readout. Проверим минимальные renormalizable portals к
+Standard Model как внешнему сектору.
+
+\section{Scalar portal}
+
+Sheet-exchange invariant hidden scalar norm равна
+\begin{equation}
+ \Sigma_h=|x|^2+|z|^2.
+\end{equation}
+С Standard Model Higgs doublet \(H\) разрешён operator
+\begin{equation}
+ \mathcal O_S
+ =
+ \Sigma_h\,H^\dagger H
+\end{equation}
+и interaction
+\begin{equation}
+ \Delta\mathcal L_S
+ =
+ -\lambda_{hH}\mathcal O_S.
+\end{equation}
+Разностный operator
+\((|x|^2-|z|^2)H^\dagger H\) запрещается exact sheet exchange, но
+симметричный portal остаётся разрешённым. Его coefficient
+\(\lambda_{hH}\) не фиксируется hidden algebra.
+
+\begin{proposition}[Scalar portal uniqueness but not normalization]
+При сохранении sheet exchange существует один минимальный scalar portal
+operator, но его continuous coefficient не выводится из текущего
+finite Dirac graph.
+\end{proposition}
+
+\section{Abelian kinetic mixing}
+
+Если observed sector содержит hypercharge field strength
+\(B_{\mu\nu}\), gauge invariance допускает
+\begin{equation}
+ \Delta\mathcal L_{\mathrm{mix}}
+ =
+ -\frac{\epsilon}{2}
+ f_{\mu\nu}^{h}B^{\mu\nu}.
+\end{equation}
+В spectral trace коэффициент такого члена пропорционален mixed charge
+trace
+\begin{equation}
+ \Tr(Q_hY).
+\end{equation}
+Текущий Hilbert module не содержит states, одновременно несущих hidden
+charge и Standard Model hypercharge. Поэтому
+\begin{equation}
+ \Tr(Q_hY)=0
+\end{equation}
+и radiative source mixing отсутствует внутри frozen field content.
+
+Кроме того, charge-conjugation sheet symmetry
+\begin{equation}
+ A_h\longmapsto-A_h,
+ \qquad
+ x\longleftrightarrow z
+\end{equation}
+делает \(f_hB\) нечётным, если observed hypercharge field не
+трансформируется.
+
+\begin{theorem}[Kinetic-mixing zero in the minimal module]
+При block-diagonal hidden/observed representation и exact sheet
+charge-conjugation symmetry spectral kinetic mixing равен нулю.
+Ненулевой \(\epsilon\) требует bi-charged connector states или explicit
+symmetry breaking.
+\end{theorem}
+
+\section{Neutrino portal}
+
+Два neutral chiral basis states hidden module допускают schematic
+observed-sector operator
+\begin{equation}
+ \mathcal O_{N,ai}
+ =
+ \overline L_a\widetilde H\,N_i,
+\end{equation}
+где \(a\) --- observed generation label, а \(i=1,2\) --- hidden neutral
+basis label. Общий portal содержит complex matrix
+\begin{equation}
+ y_{ai}^{N}.
+\end{equation}
+
+Текущая finite algebra не содержит \(L_a,H\), generation representation
+или off-diagonal hidden--observed Dirac edge. Поэтому ни rank, ни
+orientation, ни normalization \(y^N\) не выводятся. Добавление portal
+вводит минимум \(3\times2\) complex entries до symmetry reduction.
+
+\begin{nogocriterion}[Neutrino portal parameter explosion]
+Neutral hidden basis state сам по себе не выводит neutrino portal.
+Без common finite algebra и first-order connector добавление
+\(y_{ai}^N\) является новой phenomenological matrix, несовместимой с
+no-hidden-fit правилом версии III.
+\end{nogocriterion}
+
+\section{Direct-sum spectral completion}
+
+Минимальное объединение hidden и observed sectors без новых connector
+states задаётся
+\begin{align}
+ \mathcal H_{\mathrm{tot}}
+ &=
+ \mathcal H_h\oplus\mathcal H_{\mathrm{obs}},
+ \\
+ \mathcal D_{\mathrm{tot}}
+ &=
+ \mathcal D_h\oplus\mathcal D_{\mathrm{obs}}.
+\end{align}
+Тогда
+\begin{equation}
+ f(\mathcal D_{\mathrm{tot}}^2)
+ =
+ f(\mathcal D_h^2)
+ \oplus
+ f(\mathcal D_{\mathrm{obs}}^2)
+\end{equation}
+и
+\begin{equation}
+ \Tr f(\mathcal D_{\mathrm{tot}}^2)
+ =
+ \Tr f(\mathcal D_h^2)
+ +
+ \Tr f(\mathcal D_{\mathrm{obs}}^2).
+\end{equation}
+Cross terms отсутствуют. Следовательно,
+\begin{equation}
+ \lambda_{hH}=0,
+ \qquad
+ \epsilon=0,
+ \qquad
+ y^N=0
+\end{equation}
+в минимальном direct-sum spectral action.
+
+\begin{theorem}[Exact-decoupling pass]
+Единственный portal prescription, выводимый без расширения algebra и
+Hilbert representation, --- exact decoupling. Все nongravitational portal
+coefficients равны нулю.
+\end{theorem}
+
+\section{Гравитационная связь}
+
+Оба sectors могут взаимодействовать через общий metric и stress tensor.
+Это universal gravitational coupling, но текущий parent action не выводит
+Planck scale, quantum gravity measure или лабораторный observable. Поэтому
+гравитация не обеспечивает practically testable blind portal в рамках
+Тома III.
+
+\section{Вердикт portal menu}
+
+\begin{center}
+\begin{tabular}{p{0.27\textwidth}p{0.22\textwidth}p{0.31\textwidth}}
+\toprule
+Portal & Minimal value & Причина \\
+\midrule
+scalar \(H^\dagger H\Sigma_h\) & \(0\) & block-diagonal Dirac; coefficient otherwise free \\
+kinetic mixing \(f_hB\) & \(0\) & no bi-charged trace; sheet symmetry \\
+neutrino \(LH N\) & \(0\) & no connector bimodule or generation graph \\
+gravity & universal but open & gravitational sector not normalized \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{theorem}[Portal verdict]
+Minimal Version III.H является exactly decoupled hidden-sector EFT.
+Ненулевой observable portal требует новой connector representation и
+перезапуска first-order, anomaly, trace и normalization gates.
+\end{theorem}
+
+Это честно закрывает текущий hidden branch: он математически конкретен, но
+не имеет nongravitational experimental predictions относительно
+наблюдаемого мира.
+
+\begin{protocol}[Следующий этап]
+Том III.H готов к финальной status freeze. Следует:
+\begin{enumerate}
+ \item собрать таблицу proven/conditional/negative statements;
+ \item отделить hidden EFT results от historical observed-world motives;
+ \item сформулировать условия переоткрытия portal branch;
+ \item перенести Standard Model reconstruction в Version IV.SM.
+\end{enumerate}
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_portal_menu_results.json}.

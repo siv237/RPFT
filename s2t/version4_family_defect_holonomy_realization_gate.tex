@@ -1,0 +1,161 @@
+\chapter{Family--defect flat-holonomy realization gate}
+
+Projector-supercurvature gate оставил один algebraic post-processing step:
+после выбора \(P_a\) permutation \(C_{a,\nu}\) назначалась отдельно. Здесь
+строится явная connection one-form, чья holonomy точно равна этой
+permutation и использует тот же projector field.
+
+\section{Канонический orientation generator}
+
+Пусть
+\begin{equation}
+ u=\frac12(1,1,1,1)^T
+\end{equation}
+--- нормированный affine singlet, а \(h_a=\operatorname{diag}H_a\) ---
+нормированная triplet axis, выбранная equation \(Q(H_a)=0\). Введём
+\begin{equation}
+ \Omega(h_a)_{bc}
+ =\sum_{d,e=1}^4\epsilon_{bcde}u_d(h_a)_e.
+ \label{eq:orientation-generator}
+\end{equation}
+Этот operator задаётся только canonical singlet, orientation tensor и
+curvature-selected axis. Он удовлетворяет
+\begin{align}
+ \Omega^T&=-\Omega,\\
+ \Omega u&=0,\\
+ \Omega h_a&=0,\\
+ \Omega^2&=-\left(I_4-uu^T-h_ah_a^T\right).
+\end{align}
+Следовательно, \(\Omega\) является unit complex structure на двумерной
+плоскости, ортогональной singlet и выбранной axis.
+
+Так как \(H_a\) имеет один distinguished eigenvalue и тройной eigenvalue
+на complement, получаем также
+\begin{equation}
+ [\Omega(h_a),H_a]=0.
+ \label{eq:connection-field-commutator}
+\end{equation}
+
+\section{Flat connection и точная holonomy}
+
+На boundary circle \(\gamma\) длины \(L\) определим
+\begin{equation}
+ \mathcal A_{a,\nu}
+ =-\frac{2\pi\nu}{3L}\Omega(h_a)\,ds,
+ \qquad \nu=\pm1.
+ \label{eq:projector-flat-connection}
+\end{equation}
+Connection постоянна и одномерна, поэтому flat. Её holonomy равна
+\begin{equation}
+ \operatorname{Hol}_\gamma(\mathcal A_{a,\nu})
+ =\exp\!\left[-\nu\frac{2\pi}{3}\Omega(h_a)\right].
+\end{equation}
+
+Exponential фиксирует \(u\) и \(h_a\), а на transverse plane поворачивает
+на угол \(-2\pi\nu/3\). Exhaustive calculation даёт exact identity
+\begin{equation}
+ \operatorname{Hol}_\gamma(\mathcal A_{a,\nu})=C_{a,\nu}
+ \label{eq:holonomy-equals-three-cycle}
+\end{equation}
+для всех четырёх projectors и обоих winding sectors. Максимальный
+numerical residual меньше \(1.8\times10^{-15}\).
+
+\begin{theorem}[Flat-holonomy realization]
+Каждый из восьми \(S_4\) three-cycles является точной holonomy
+connection~\eqref{eq:projector-flat-connection}, построенной из того же
+rank-one projector, который решает finite curvature equation
+\(Q(H)=0\). Следовательно, cycle больше не является внешним
+post-processing assignment.
+\end{theorem}
+
+\section{Twisted covariance}
+
+Для \(g\in S_4\) orientation generator преобразуется как
+\begin{equation}
+ g\Omega(h_a)g^{-1}
+ =\operatorname{sgn}(g)\Omega(h_{g(a)}).
+\end{equation}
+Если winding является orientation-line variable,
+\begin{equation}
+ \nu\longmapsto\operatorname{sgn}(g)\nu,
+\end{equation}
+то connection и holonomy ковариантны:
+\begin{align}
+ g\mathcal A_{a,\nu}g^{-1}
+ &=\mathcal A_{g(a),\operatorname{sgn}(g)\nu},\\
+ gC_{a,\nu}g^{-1}
+ &=C_{g(a),\operatorname{sgn}(g)\nu}.
+\end{align}
+Все 192 cases проходят с нулевым connection-covariance residual.
+
+\section{Один constrained superconnection saddle}
+
+Объединим ordinary connection и finite odd field символически как
+\begin{equation}
+ \mathbb A_{a,\nu}=d+\mathcal A_{a,\nu}+T(H_a),
+\end{equation}
+где shifted square \(T(H)^2-\frac13I\) воспроизводит
+\(Q(H)\). На selected branch одновременно выполнены
+\begin{equation}
+ F_{\mathcal A}=0,
+ \qquad
+ D_{\mathcal A}H_a=0,
+ \qquad
+ Q(H_a)=0.
+\end{equation}
+Второе равенство следует из
+equation~\eqref{eq:connection-field-commutator}. Поэтому finite curvature
+и boundary holonomy совместимы как блоки одного constrained
+superconnection saddle.
+
+После ограничения на standard triplet integrated connection имеет rank
+два и одномерное kernel. Тем самым тот же operator даёт и exact-one
+Majorana selector.
+
+Определение holonomy superconnection через parallel transport является
+стандартной конструкцией; см. \path{arXiv:0912.0249}. Flat defect
+connections с holonomies в фиксированных conjugacy classes также имеют
+прямые аналоги, например \path{arXiv:1304.1372}. Эти источники
+подтверждают архитектуру, тогда как explicit formula
+\eqref{eq:orientation-generator} является результатом project affine
+carrier.
+
+\section{Constitutive-action criterion}
+
+Положительный theorem ещё использует constitutive saddle relation
+\begin{equation}
+ \mathcal A
+ =-\frac{2\pi\nu}{3L}\Omega(h)\,ds.
+ \label{eq:constitutive-holonomy-relation}
+\end{equation}
+В пределах этой главы relation канонична и ковариантна, но ещё не получена
+как Euler--Lagrange equation одного local, topological или spectral action.
+Поэтому здесь её зависимость от \(H\) всё ещё имеет статус ansatz.
+
+\begin{nogocriterion}[Constitutive-action gate]
+Полное boundary-superconnection замыкание допускается только если
+relation~\eqref{eq:constitutive-holonomy-relation} следует из вариации
+одного заранее фиксированного action с тем же trace normalization, что и
+\(\Tr Q(H)^2\). Независимый multiplier, введённый только для навязывания
+этой relation, не считается выводом.
+\end{nogocriterion}
+
+Следующий cubic-root variational gate проходит этот критерий в фиксированном
+nonzero unit-winding sector. Для frame
+\(W=\exp[(\varphi/3)\Omega(H)]\) variation единого positive action по
+connection даёт
+\begin{equation}
+ \mathcal A_s=-\partial_sW\,W^T
+ =-\frac{\partial_s\varphi}{3}\Omega(H),
+\end{equation}
+а integrated holonomy равна \(C_{a,\nu}\) независимо от phase profile.
+
+Таким образом, algebraic holonomy gap и constitutive-action gap закрыты.
+Открытым остаётся более глубокий dynamical вопрос: вывести nonzero
+cubic-root condensate и его bundle embedding из полного finite graded
+parent action.
+
+Машинный ledger сохранён в
+\path{s2t_v4_family_defect_holonomy_realization_gate_results.json};
+генератор ---
+\path{s2t_v4_family_defect_holonomy_realization_gate.py}.

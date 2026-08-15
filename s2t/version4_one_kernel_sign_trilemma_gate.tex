@@ -1,0 +1,45 @@
+\chapter{One-kernel sign trilemma}
+
+Если fundamental correlation operator и Gaussian bare action являются одним
+heat operator,
+\begin{equation}
+ C=e^{-\sigma^2H}=e^{-H/\Lambda^2},
+\end{equation}
+то для всего spectrum точно следует
+\begin{equation}
+ \boxed{\Lambda\sigma=1.}
+\end{equation}
+Это закрывает cutoff--correlation identity без наблюдаемого input.
+
+Однако для \(Z_M=\Tr C_M\)
+\begin{equation}
+ S_{\rm bare}=Z_M,
+ \qquad
+ F_{\rm Gibbs}=-\sigma^{-2}\log Z_M
+\end{equation}
+имеют производные противоположных знаков. Поэтому их minima на любых двух
+неравных carriers всегда противоположны.
+
+При \(t=0.106734039959646\ldots\) scalar trace даёт
+\begin{equation}
+ Z_{S^4}=1.6196427172,
+ \qquad Z_{22}=1.4562989251,
+\end{equation}
+то есть bare winner \(S^2\times S^2\), Gibbs winner \(S^4\). Для Dirac
+trace
+\begin{equation}
+ Z_{S^4}=1.1395014998,
+ \qquad Z_{22}=1.1740832986,
+\end{equation}
+и winners меняются местами.
+
+\begin{theorem}[Opposite-order verdict]
+Bare trace и outer-log Gibbs functional нельзя считать двумя независимыми
+согласованными topology selectors одного operator. Лучший surviving вариант
+--- один universal heat time для family canonical Laplace-type operators:
+geometric outer-log selection и последовательные local Dirac/gauge traces.
+\end{theorem}
+
+Следующий объект --- Gibbs geometry Hessian, содержащий expectation
+\(\delta^2H\) и connected covariance \(\delta H\). Машинный audit сохранён
+в \path{s2t_v4_one_kernel_sign_trilemma_gate.py}.

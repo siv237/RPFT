@@ -1,0 +1,94 @@
+\chapter{Representation-separation diagnostic для diagonal connectors}
+
+Universal-singlet no-go определяет требуемую характеристику следующего
+объекта: он обязан различать required Goldstone \(G\) и unwanted mode
+\(X\). В опубликованном разложении они имеют квантовые числа
+\begin{equation}
+ G:\quad (I_R,R_4)=(1,\mathbf{10}),
+ \qquad
+ X:\quad (I_R,R_4)=(0,\mathbf6).
+\end{equation}
+
+\section{Casimir sensitivity test}
+
+Для \(SU(2)_R\)
+\begin{equation}
+ C_2(1)=2,
+ \qquad C_2(0)=0,
+\end{equation}
+а для двухиндексных представлений \(SU(4)\)
+\begin{equation}
+ C_2(\mathbf{10})=\frac92,
+ \qquad
+ C_2(\mathbf6)=\frac52.
+\end{equation}
+Поэтому минимальный Casimir diagnostic даёт
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+operator & eigenvalue on \(G\) & eigenvalue on \(X\) & \(X-G\) \\
+\midrule
+identity & \(1\) & \(1\) & \(0\) \\
+\(C_2[SU(2)_R]\) & \(2\) & \(0\) & \(-2\) \\
+\(C_2[SU(4)]\) & \(9/2\) & \(5/2\) & \(-2\) \\
+sum of Casimirs & \(13/2\) & \(5/2\) & \(-4\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Следовательно, representations различимы group-theoretically: identity их
+не различает, а quadratic Casimirs различают. Это не является mass matrix
+конкретного adjoint VEV. Для фиксированного breaking direction массы зависят
+от weights, tensor contractions и coefficients полного potential, а не
+автоматически от полного \(C_2(R)\).
+
+\section{\texorpdfstring{Внешний кандидат: единый \(\mathbf1\oplus\mathbf{15}\) block}{Внешний кандидат: единый 1+15 block}}
+
+Наиболее полезен не формально наименьший \(SU(2)_R\) adjoint, а Hermitian
+four-color diagonal block
+\begin{equation}
+ S_4=s_0\mathbf1_4+s_A T^A,
+ \qquad
+ S_4\in\mathbf1\oplus\mathbf{15}.
+\end{equation}
+Причина состоит в объединении двух задач:
+\begin{itemize}
+ \item trace component \(s_0\) может быть общей scale/dilaton mode;
+ \item \(\mathbf{10}\) и \(\mathbf6\) имеют разные Casimirs, поэтому
+ representation-sensitive contractions не запрещены group theory;
+ \item такой weak-singlet block отсутствует в general fundamental branch,
+ но присутствует в constrained composite branch.
+\end{itemize}
+
+\begin{proposition}[Первый target-кандидат]
+Four-color block \(\mathbf1\oplus\mathbf{15}\) является первым найденным
+target-объектом, который может нести общий transmutation scale и проходит
+representation-separation diagnostic. Реальное mass splitting и наличие
+такого block в project finite geometry не доказаны.
+\end{proposition}
+
+Это ещё не vacuum theorem. В general fundamental branch поле \(\Sigma\)
+несёт \((2_R,2_L,1+15_4)\). В composite branch отдельный
+\((1_R,1_L,15_4)\) появляется после first-order restriction, но его нельзя
+считать автоматически выведенным spontaneous remnant. Следующий blind gate
+должен воспроизвести обе ветви из одной matrix convention и затем
+проверить:
+\begin{enumerate}
+ \item существование stationary adjoint VEV;
+ \item положительность Hessian вне точных Goldstone directions;
+ \item отсутствие лишних massless colored states;
+ \item отсутствие недопустимых high-scale fermion masses;
+ \item Coleman--Weinberg coefficient \(B>0\) для trace mode;
+ \item полученный \(m_R\) до gauge-running comparison.
+\end{enumerate}
+
+\begin{nogocriterion}[Adjoint coefficient fit]
+Ненулевая Casimir difference является только диагностиком различимости.
+Коэффициенты identity и adjoint invariants запрещено выбирать из желаемого
+scalar spectrum. Они должны следовать из trace normalization одного
+finite-Dirac block.
+\end{nogocriterion}
+
+Машинный menu сохранён в
+\path{s2t_v4_pati_salam_diagonal_connector_menu.py} и
+\path{s2t_v4_pati_salam_diagonal_connector_menu_results.json}.

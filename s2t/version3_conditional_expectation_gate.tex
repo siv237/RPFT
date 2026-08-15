@@ -1,0 +1,49 @@
+\chapter{Гейт условных ожиданий произведения}
+
+Для \(X=\mathbb{RP}^3\), \(C=S^1\) нормированные состояния
+\begin{equation}
+ \tau_X(f)=\pi^{-2}\int_X f,
+ \qquad
+ \tau_C(g)=(2\pi)^{-1}\int_C g
+\end{equation}
+определяют условные ожидания \(E_C=\operatorname{id}\otimes\tau_C\) и
+\(E_X=\tau_X\otimes\operatorname{id}\). Для поднятых факторных мод
+\begin{equation}
+ \frac1{2\pi}\int_K|f(x)|^2=\int_X|f|^2,
+ \qquad
+ \frac1{\pi^2}\int_K|g(s)|^2=\int_C|g|^2.
+\end{equation}
+Следовательно, в модуле \(L^2(X)\oplus L^2(C)\)
+\begin{equation}
+ \|(1_X,1_C)\|^2=\pi^2+2\pi
+\end{equation}
+без свободных факторных весов.
+
+\begin{proposition}[Conditional-measure pass]
+Нормированное интегрирование по spectator-фактору канонически выводит
+собственную меру каждого фактора.
+\end{proposition}
+
+Однако одна алгебра \(C^\infty(K)\) имеет только одну глобальную
+постоянную моду. Если \(F=1_X+1_C=2\) читать одним полем, двойное условное
+считывание даёт \(4(\pi^2+2\pi)\). Центрированное разложение устраняет
+двойной счёт, но оставляет только один mean-сектор.
+
+\begin{lemma}[Multiplicity obstruction]
+Условные ожидания выводят меры уже заданных модулей, но не создают
+удвоение постоянной моды. Требуется вывести
+\(L^2(X)\oplus L^2(C)\) из конечной алгебры, суперсвязности или
+спектральной тройки.
+\end{lemma}
+
+На объявленном градуированном модуле
+\begin{equation}
+ L^2(X)\oplus L^2(C)\oplus\mathbb C^{23}
+ \oplus\Omega^1_{\mathrm{int}}(C)
+\end{equation}
+единая прямая сумма trace--Hodge-форм воспроизводит обе целевые нормы.
+Но объявление модуля вручную переносит скрытый выбор из таблицы весов в
+таблицу field content.
+
+Машинный аудит сохранён в
+\texttt{s2t\_v3\_conditional\_expectation\_results.json}.

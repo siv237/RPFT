@@ -1,0 +1,219 @@
+{
+  "gate": "version4_bounded_nonlinear_propagator",
+  "function_menu": [
+    "power_1",
+    "power_2",
+    "power_3",
+    "power_4",
+    "inverse_1",
+    "inverse_2",
+    "inverse_3",
+    "inverse_4",
+    "exponential_forward",
+    "exponential_inverse",
+    "centered_square"
+  ],
+  "function_rows": [
+    {
+      "function": "power_4",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 1620.6054555954508,
+      "mass_log_rms": 2.8570558575792884
+    },
+    {
+      "function": "inverse_4",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 1620.5220198914099,
+      "mass_log_rms": 2.857087939786625
+    },
+    {
+      "function": "inverse_3",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 1621.2680156894858,
+      "mass_log_rms": 2.8571176951069286
+    },
+    {
+      "function": "power_3",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 1621.5276406274265,
+      "mass_log_rms": 2.85712435346862
+    },
+    {
+      "function": "inverse_2",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 1621.7809511271112,
+      "mass_log_rms": 2.857134615337728
+    },
+    {
+      "function": "inverse_1",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 1622.1261642935292,
+      "mass_log_rms": 2.857147076909374
+    },
+    {
+      "function": "exponential_inverse",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 1622.1993178125954,
+      "mass_log_rms": 2.857147262972592
+    },
+    {
+      "function": "power_2",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 1622.0468328040597,
+      "mass_log_rms": 2.8571547235140975
+    },
+    {
+      "function": "centered_square",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 1622.1037494775642,
+      "mass_log_rms": 2.8571560019900186
+    },
+    {
+      "function": "exponential_forward",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 1622.1716470330136,
+      "mass_log_rms": 2.8571601118741463
+    },
+    {
+      "function": "power_1",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 1622.2797925103766,
+      "mass_log_rms": 2.8571618133015306
+    }
+  ],
+  "best": {
+    "function": "power_4",
+    "sign_bits": [
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "messenger_ratio": 1620.6054555954508,
+    "mass_log_rms": 2.8570558575792884
+  },
+  "normalized_masses": {
+    "u": [
+      0.001232729713932826,
+      0.0012340822818607522,
+      1.0
+    ],
+    "d": [
+      0.0012324407834961133,
+      0.0012341883829702835,
+      1.0
+    ],
+    "e": [
+      0.0012340170302550565,
+      0.0012352734277050197,
+      1.0
+    ],
+    "nu": [
+      0.0012346373807284913,
+      0.0012355276616494324,
+      1.0
+    ]
+  },
+  "mass_multiplicative_errors": {
+    "u": [
+      98.44716465435762,
+      5.9658249282039675
+    ],
+    "d": [
+      1.1031268683112962,
+      18.104608596201242
+    ]
+  },
+  "ckm_absolute": [
+    [
+      0.9918399702210593,
+      0.12748911117246076,
+      2.084245544917223e-06
+    ],
+    [
+      0.12748911116863737,
+      0.991839970221963,
+      1.8778048355560393e-06
+    ],
+    [
+      2.3063016557664446e-06,
+      1.5972486232763701e-06,
+      0.9999999999960648
+    ]
+  ],
+  "ckm_angles": [
+    0.12748911117246076,
+    1.8778048355560393e-06,
+    2.084245544917223e-06
+  ],
+  "ckm_angle_ratios": [
+    0.5665930899624939,
+    4.489134199273343e-05,
+    0.0005584795136434145
+  ],
+  "jarlskog_absolute": 2.7674043612258004e-14,
+  "jarlskog_ratio": 8.869885773159617e-10,
+  "edge_involution_residuals": {
+    "(1, 0)": 0.0,
+    "(1, 1)": 0.0,
+    "(0, 0)": 0.0,
+    "(0, 1)": 0.0
+  },
+  "asymptotic_formula": "Y_s=P_- - 2/t I + O(t^-2)",
+  "verdict": "bounded nonlinear heavy-block deformations cannot split the two light families at leading order"
+}

@@ -1,0 +1,40 @@
+{
+  "gate": "version4_hypercharge_anomaly",
+  "anomalies_after_yukawa_and_su2": {
+    "su3_squared_u1": "0",
+    "su2_squared_u1": "0",
+    "gravity_squared_u1": "0",
+    "u1_cubed": "0"
+  },
+  "with_right_neutrino": {
+    "continuous_freedom": "q and h remain free before generator normalization",
+    "interpretation": "hypercharge can mix with anomaly-free B-L",
+    "sterile_condition": "n=ell+h=0",
+    "sterile_solution": "h=3*q"
+  },
+  "without_right_neutrino": {
+    "gravity_anomaly": "h - 3*q",
+    "cubic_anomaly": "-(-h + 3*q)**3",
+    "forced_relation": "h=3*q"
+  },
+  "normalized_hypercharges": {
+    "Q_L": "1/6",
+    "u_R": "2/3",
+    "d_R": "-1/3",
+    "L_L": "-1/2",
+    "e_R": "-1",
+    "nu_R": "0",
+    "H": "1/2"
+  },
+  "target_anomalies": {
+    "su3_squared_u1": "0",
+    "su2_squared_u1": "0",
+    "gravity_squared_u1": "0",
+    "u1_cubed": "0"
+  },
+  "pure_su3_anomaly": "2-1-1=0",
+  "witten_su2_doublets": 4,
+  "passes_local_anomalies": true,
+  "passes_witten_su2": true,
+  "status": "conditional derivation up to overall U(1) normalization"
+}

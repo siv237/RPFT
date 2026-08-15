@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III.H",
+  "status": "pfaffian_fermion_half_count_full_bosonic_trace",
+  "trace_dictionary": {
+    "spectral": "Tr_H8 for bosonic action",
+    "physical": "(1/2) Tr_H8 for Pfaffian fermion count",
+    "reduced": "Tr_H4 as computational representative"
+  },
+  "mass_invariance": {
+    "reduced": "Matrix([[4, 0, 0], [0, 4, 0], [0, 0, 4]])",
+    "full": "Matrix([[4, 0, 0], [0, 4, 0], [0, 0, 4]])",
+    "equal": true
+  },
+  "gauge_ratio_invariance": {
+    "reduced_charge_trace": 2,
+    "full_charge_trace": 4,
+    "reduced_scalar_coefficient": 2,
+    "full_scalar_coefficient": 4,
+    "reduced_ratio": "2/3",
+    "full_ratio": "2/3"
+  },
+  "physical_supertrace": {
+    "numerator": 67,
+    "fermion_pairs": 2,
+    "formal_KO6_doubling_counted_as_particles": false
+  },
+  "status_changes": {
+    "universal_orbit_half_trace": false,
+    "fermionic_half_count_derived": true,
+    "bosonic_dimensionless_results_retained": true,
+    "absolute_role_rank_norms_measure_derived": false
+  },
+  "verdict": {
+    "hidden_measure_gate": "closed by trace separation",
+    "next_gate": "portal menu"
+  }
+}

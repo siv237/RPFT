@@ -1,0 +1,162 @@
+\chapter{Free-energy density на correlation cell: условная стабилизация \texorpdfstring{\(S^4\)}{S4}}
+
+Total Gibbs free energy decompactifies, а positive spectral trace collapses.
+Для homogeneous vacuum физически сравниваются не бесконечно разные total
+volumes, а intensive vacuum densities. Проверим поэтому единственную
+dimensionless density, построенную из уже имеющихся \(F\), \(V\) и
+\(\tau=\sigma^2\), без нового коэффициента:
+\begin{equation}
+ \mathfrak f_M
+ =\tau^3\frac{F_\tau(M)}{\operatorname{Vol}(M)}
+ =-\tau^2\frac{\log Z_M(\tau)}{\operatorname{Vol}(M)}.
+ \label{eq:correlation-cell-density}
+\end{equation}
+Множитель \(\tau^2/V\) есть inverse number of four-dimensional correlation
+cells, поэтому \(\mathfrak f_M\) --- dimensionless free energy per cell в
+units \(1/\tau\).
+
+\section{Round four-sphere}
+
+Положим
+\begin{equation}
+ r=\frac{a}{\sqrt\tau}=\frac a\sigma,
+ \qquad
+ v_4=\frac{8\pi^2}{3},
+ \qquad
+ \operatorname{Vol}(S^4_a)=v_4a^4.
+\end{equation}
+Тогда
+\begin{equation}
+ \mathfrak f_{S^4}(r)
+ =-\frac{\log Z_{S^4}(r)}{v_4r^4},
+ \qquad
+ Z_{S^4}(r)=\sum_{\ell=0}^\infty d_\ell e^{-\mu_\ell/r^2}.
+\end{equation}
+Её derivative равна
+\begin{equation}
+ \mathfrak f_{S^4}'(r)
+ =\frac{4\log Z-2\langle\mu\rangle/r^2}{v_4r^5}.
+ \label{eq:cell-density-derivative}
+\end{equation}
+Таким образом, stationary ratio удовлетворяет coefficient-free equation
+\begin{equation}
+ \boxed{
+ \frac{\langle\mu\rangle_{r_*}}{r_*^2}
+ =2\log Z(r_*)}.
+ \label{eq:cell-density-stationarity}
+\end{equation}
+
+При \(r\to0\) excited modes экспоненциально подавлены и
+\(\mathfrak f\to0^-\). При \(r\to\infty\),
+\(\log Z\sim4\log r\), поэтому \(\mathfrak f\to0^-\) снова. Между этими
+границами numerical root единственен:
+\begin{equation}
+ r_*^{(4)}=1.35139219568654\ldots,
+\end{equation}
+\begin{equation}
+ \mathfrak f_{S^4}(r_*^{(4)})
+ =-0.00549336084715081\ldots.
+\end{equation}
+
+В stationary point
+\begin{equation}
+ \log Z=0.482205579996783\ldots,
+ \qquad
+ \langle\mu\rangle=1.76126636077239\ldots,
+\end{equation}
+а exact Hessian formula
+\begin{equation}
+ \mathfrak f''(r_*)
+ =\frac{4\left(3\langle\mu\rangle r_*^2
+ -\operatorname{Var}(\mu)\right)}{v_4r_*^{10}}
+ =0.024577087452965\ldots>0
+\end{equation}
+подтверждает strict local minimum.
+
+\section{Thermodynamic meaning stationarity}
+
+Пусть \(\epsilon=F/V\) и
+\begin{equation}
+ p=-\left(\frac{\partial F}{\partial V}\right)_\tau.
+\end{equation}
+Условие \(\partial_V(F/V)=0\) эквивалентно
+\begin{equation}
+ VF'(V)-F(V)=0,
+\end{equation}
+то есть
+\begin{equation}
+ \boxed{p=-\epsilon}.
+ \label{eq:correlation-vacuum-equation-of-state}
+\end{equation}
+Поэтому найденный minimum не является произвольным делением на объём: он
+реализует vacuum equation of state непосредственно для correlation free
+energy.
+
+\section{Повторная проверка ближайшего конкурента}
+
+Для equal-radius \(S^2_b\times S^2_b\) положим \(r=b/\sigma\) и
+\(v_{22}=16\pi^2\). Product partition function факторизуется. Получаем
+единственный minimum
+\begin{equation}
+ r_*^{(22)}=0.950165770265541\ldots,
+\end{equation}
+\begin{equation}
+ \mathfrak f_{22}(r_*^{(22)})
+ =-0.00447647528318466\ldots,
+ \qquad
+ \mathfrak f_{22}''=0.0440183779452763\ldots>0.
+\end{equation}
+Поскольку vacuum выбирает меньшую free-energy density,
+\begin{equation}
+ \mathfrak f_{S^4}^{\min}<\mathfrak f_{22}^{\min},
+\end{equation}
+round \(S^4\) сохраняет преимущество и после независимой оптимизации scales.
+
+\begin{theorem}[Correlation-cell scale ratio]
+В intensive Gibbs completion одновременно выбираются topology/shape и
+dimensionless scale:
+\begin{equation}
+ M_*=S^4,
+ \qquad
+ \frac{a_*}{\sigma}=1.35139219568654\ldots.
+\end{equation}
+Minimum строг по radial direction и ниже minimum ближайшего surviving
+positive-Einstein spin competitor.
+\end{theorem}
+
+Для scalar curvature это даёт
+\begin{equation}
+ R_{S^4}\sigma^2
+ =\frac{12}{(r_*^{(4)})^2}
+ =6.57080279149\ldots.
+\end{equation}
+
+\section{Статус переоткрытия}
+
+Новый functional не содержит relative Gibbs/spectral weight и не использует
+наблюдаемый radius. Однако исходный TOE-текст явно не постулирует
+minimization free energy per correlation cell. Поэтому результат является
+сильным candidate completion, а не уже доказанной частью Postulate 2.
+
+Кроме того, фиксирован только ratio \(a/\sigma\). Абсолютное значение
+\(\sigma\) в метрах или GeV\(^{-1}\) должно быть получено из независимого
+normalization condition, например из correctly normalized gravitational
+sector, и затем пройти blind test.
+
+\begin{nogocriterion}[Запрет скрытой scale подстановки]
+Нельзя назначать \(\sigma\) по Planck scale и затем объявлять
+\(a_*=1.351392\sigma\) абсолютным предсказанием. Сначала должна быть выведена
+normalization map между correlation time и measured gravitational coupling.
+\end{nogocriterion}
+
+\begin{theorem}[Conditional scale-gate reopening]
+Предыдущий total-functional radius no-go остаётся верным, но intensive
+correlation-cell principle предоставляет первый coefficient-free finite
+radius candidate. Он условно переоткрывает scale gate на уровне
+dimensionless ratio и vacuum equation of state, не закрывая абсолютную
+физическую шкалу.
+\end{theorem}
+
+Воспроизводимый аудит сохранён в
+\path{s2t_v4_correlation_cell_free_energy_density_gate.py} и
+\path{s2t_v4_correlation_cell_free_energy_density_gate_results.json}.

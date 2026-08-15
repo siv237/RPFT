@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-09",
+  "version": "S2T-III",
+  "status": "minimal_finite_module_pass_diagonal_first_order_mixing_no_go",
+  "finite_algebra": {
+    "algebra": "C direct_sum C",
+    "primitive_central_idempotents": 2,
+    "minimal_faithful_multiplicities": [
+      1,
+      1
+    ],
+    "trace_weights": [
+      1,
+      1
+    ]
+  },
+  "spectator_zero_mode_module": {
+    "factor_X_norm": "pi**2",
+    "factor_C_norm": "2*pi",
+    "sum": "pi*(2 + pi)",
+    "free_factor_weights": false,
+    "module_multiplicity_derived": true
+  },
+  "first_order_test": {
+    "commutator": "Matrix([[0, mixing*(a_c - a_x)*(b_c - b_x)], [mixing*(a_c - a_x)*(b_c - b_x), 0]])",
+    "generic_off_diagonal_factor": "mixing*(a_c-a_x)*(b_c-b_x)",
+    "nonzero_mixing_allowed": false,
+    "forced_mixing": 0
+  },
+  "verdict": {
+    "measure_gate_passed": true,
+    "module_origin_gate_passed": true,
+    "vertex_gate_passed": false,
+    "parent_action_passed": false,
+    "next_gate": "classify minimal real graded bimodules"
+  }
+}

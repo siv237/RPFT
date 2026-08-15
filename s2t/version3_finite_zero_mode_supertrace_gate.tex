@@ -1,0 +1,165 @@
+\chapter{Finite zero-mode supertrace и знак Coleman--Weinberg коэффициента}
+
+Quantum scale gate требует вычислить
+\begin{equation}
+ B=\frac1{64\pi^2\chi^4}\Str M^4(\chi)
+\end{equation}
+для заранее объявленного поля. Первый контролируемый слой --- конечные
+zero-modes без KK-башен и gauge/ghost completion.
+
+\section{Trace-кинетическая метрика}
+
+На quotient по непPhysical rephasing используем координаты
+\begin{equation}
+ x=re^{i\phi/2},
+ \qquad
+ z=se^{i\phi/2}.
+\end{equation}
+Канонический Hilbert--Schmidt kinetic form задаётся
+\begin{equation}
+ ds^2_{\mathrm{kin}}
+ =\Tr_{\mathrm{orb}}(dD_F\,dD_F).
+\end{equation}
+Прямое вычисление даёт
+\begin{equation}
+ G(r,s,\phi)
+ =
+ \begin{pmatrix}
+ 4&0&0\\
+ 0&4&0\\
+ 0&0&r^2+s^2
+ \end{pmatrix}.
+\end{equation}
+Во flattening-vacuum
+\begin{equation}
+ r=s=\frac1{\sqrt2},
+ \qquad
+ \phi=\frac{\pi}{2}
+\end{equation}
+получаем
+\begin{equation}
+ G_*=\operatorname{diag}(4,4,1).
+\end{equation}
+
+\section{Канонические scalar masses}
+
+Hessian flattening-потенциала в тех же координатах равен
+\begin{equation}
+ H_*=\operatorname{diag}(32,32,8).
+\end{equation}
+Физические массы определяются обобщённой задачей
+\begin{equation}
+ H_*v=m^2G_*v.
+\end{equation}
+Поэтому три quotient-скаляра точно вырождены:
+\begin{equation}
+ m_{s,1}^2=m_{s,2}^2=m_{s,3}^2=8\chi^2.
+\end{equation}
+
+\begin{proposition}[Canonical finite-scalar spectrum]
+При общей trace-нормировке kinetic и flattening terms конечный
+Dirac-модуль содержит три real scalar zero-modes с одинаковой
+безразмерной массой \(m_s^2/\chi^2=8\).
+\end{proposition}
+
+\section{Fermion ledger}
+
+В минимуме
+\begin{equation}
+ B B^\dagger=\chi^2\mathbf1_2,
+\end{equation}
+поэтому chiral block имеет два единичных сингулярных значения. Минимальное
+четырёхмерное чтение соответствует двум Dirac-парам массы
+\begin{equation}
+ m_{f,1}=m_{f,2}=\chi.
+\end{equation}
+KO6 particle--antiparticle doubling не удваивает этот physical count, если
+используется ранее сформулированный orbit half-trace.
+
+\section{Минимальный supertrace}
+
+Для real scalar вес равен \(+1\), для Dirac fermion --- \(-4\). Поэтому
+\begin{align}
+ \frac{\Str M^4}{\chi^4}
+ &=3\cdot8^2-2\cdot4\cdot1^4\\
+ &=192-8\\
+ &=184=8\cdot23.
+\end{align}
+Минимальный finite zero-mode coefficient равен
+\begin{equation}
+ \boxed{
+ B_0^{\mathrm{fin}}
+ =\frac{184}{64\pi^2}
+ =\frac{23}{8\pi^2}>0.}
+\end{equation}
+
+\begin{theorem}[Conditional finite-sector \(B>0\)]
+При канонической общей trace-нормировке, трёх propagating scalar modes и
+двух physical Dirac-парах конечный zero-mode сектор даёт положительный
+Coleman--Weinberg коэффициент \(23/(8\pi^2)\).
+\end{theorem}
+
+Число \(23\) здесь является арифметическим результатом supertrace ledger,
+а не автоматически тем же rank-complement, что в нейтринном секторе.
+Идентификация этих двух появлений запрещена без общей representation
+теоремы.
+
+\section{Relative kinetic-normalization red-team}
+
+Пусть kinetic term имеет относительный коэффициент \(\kappa>0\):
+\begin{equation}
+ \mathcal L_{\mathrm{kin}}
+ =\frac{\kappa}{2}
+ \Tr_{\mathrm{orb}}(\partial_\mu D_F\partial^\mu D_F).
+\end{equation}
+После канонической нормировки
+\begin{equation}
+ m_s^2=\frac8\kappa\chi^2,
+\end{equation}
+и supertrace становится
+\begin{equation}
+ \frac{\Str M^4}{\chi^4}
+ =\frac{192}{\kappa^2}-8.
+\end{equation}
+Знак положителен только при
+\begin{equation}
+ \kappa<\sqrt{24}.
+\end{equation}
+Следовательно, \(\kappa=1\) не может считаться безусловным следствием
+одного лишь finite-module trace: необходимо вывести относительный
+коэффициент spacetime kinetic term и algebraic flattening potential.
+
+\begin{nogocriterion}[Finite \(B\)-normalization gap]
+Положительное значение \(B_0^{\mathrm{fin}}=23/(8\pi^2)\) повышается до
+теоремы parent action только если одна spectral/variational construction
+фиксирует \(\kappa=1\), fermion Yukawa normalization и orbit half-trace.
+Иначе знак \(B\) зависит от непрерывной kinetic/potential normalization.
+\end{nogocriterion}
+
+\section{Неполнота полного spectrum ledger}
+
+В текущий \(B_0^{\mathrm{fin}}\) не включены:
+\begin{enumerate}
+ \item возможная gauge-мода конечной алгебры и её ghost complex;
+ \item dilaton/radion fluctuation;
+ \item nonzero KK levels на \(K\);
+ \item scheme-dependent subtraction полного tower supertrace.
+\end{enumerate}
+Поэтому найден положительный finite seed, но не полный \(B\).
+
+\section{Следующий гейт}
+
+Следует вывести \(\kappa\) из product spectral action и затем вычислить
+regulated разность
+\begin{equation}
+ \Delta B_{\mathrm{KK+gauge}}
+ =B_{\mathrm{full}}-B_0^{\mathrm{fin}}.
+\end{equation}
+Маршрут остаётся живым только если
+\begin{equation}
+ B_{\mathrm{full}}>0
+\end{equation}
+в одной общей схеме вычитаний.
+
+Машинный аудит сохранён в
+\path{s2t_v3_finite_zero_mode_supertrace_results.json}.

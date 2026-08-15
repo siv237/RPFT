@@ -1,0 +1,87 @@
+\chapter{Каноническое нарушение affine symmetry и ведущая иерархия}
+
+Affine family-carrier создаёт три поколения, но оставляет их вырожденными.
+Первый допустимый breaking operator должен следовать из структуры
+замороженного \(K\), а не из наблюдаемых масс.
+
+\section{Единственный ring automorphism}
+
+Обозначим mod-two generators степени один через \(x\) для
+\(\mathbb{RP}^3\) и \(y\) для \(S^1\). Их квадраты различаются:
+\begin{equation}
+x^2\ne0,
+\qquad
+y^2=0.
+\end{equation}
+Поэтому ring automorphism обязан сохранять единственный ненулевой
+square-zero class \(y\). Полный перебор \(GL(2,2)\) оставляет только
+тождество и shear
+\begin{equation}
+S:(x,y)\longmapsto(x,x+y).
+\end{equation}
+На четырёх menu-состояниях \(S\) является involution со spectrum
+\begin{equation}
+\Spec_{\mathbb C^4}S=(-1,1,1,1).
+\end{equation}
+Uniform singlet принадлежит even sector, поэтому на family triplet
+\begin{equation}
+\Spec_{\mathbf3}S=(-1,1,1).
+\end{equation}
+
+\section{Rank-one odd projector}
+
+Единственный odd projector равен
+\begin{equation}
+P_-:=\frac{I-S}{2}.
+\end{equation}
+Он целиком лежит в \(\operatorname{im}P_3\) и имеет
+\begin{equation}
+\rank P_-=1,
+\qquad
+\Spec_{\mathbf3}P_-=(1,0,0).
+\end{equation}
+
+\begin{theorem}[Ведущая family texture]
+Если leading Yukawa или mass-squared operator пропорционален \(P_-\), то
+одно поколение получает ненулевую массу ведущего порядка, а два поколения
+остаются безмассовыми до следующего symmetry breaking:
+\begin{equation}
+M_f^{(0)}=m_f P_-.
+\end{equation}
+Rank и относительная texture фиксированы; overall scale \(m_f\) этим гейтом
+не выводится.
+\end{theorem}
+
+Это качественно воспроизводит наблюдаемую схему ``одно тяжёлое плюс два
+лёгких'', но пока не даёт mass ratios.
+
+\section{Факторная алгебра и mixing no-go}
+
+Две трансляции affine torsor, соответствующие \(\mathbb{RP}^3\)- и
+\(S^1\)-направлениям, коммутируют. На Fourier-triplet они одновременно
+диагональны. Следовательно, любые sector operators вида
+\begin{equation}
+M_u=f_u(T_x,T_y),
+\qquad
+M_d=f_d(T_x,T_y)
+\end{equation}
+имеют общий eigenbasis.
+
+\begin{proposition}[Чисто факторный mixing no-go]
+Если up- и down-sector breaking построены только из commuting factor
+translations, их тяжёлые направления совпадают и физического
+sector-dependent misalignment не возникает. При lifted light degeneracy это
+даёт \(V_{\rm CKM}=I\) с точностью до непредсказанных вращений внутри
+вырожденного light subspace.
+\end{proposition}
+
+\begin{nogocriterion}[Запрет свободной subleading Yukawa matrix]
+Нельзя добавлять произвольную perturbation в двумерный even sector. Следующий
+оператор должен быть некоммутирующим, sector-dependent и выведенным до
+сравнения с CKM/PMNS. Его coefficient также запрещено определять по mixing
+angles.
+\end{nogocriterion}
+
+Машинный аудит шести элементов \(GL(2,2)\), ring automorphisms, projectors и
+factor translations сохранён в
+\path{s2t_v4_rank_one_breaking_gate_results.json}.

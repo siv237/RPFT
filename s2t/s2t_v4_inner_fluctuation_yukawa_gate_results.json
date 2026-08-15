@@ -1,0 +1,94 @@
+{
+  "gate": "version4_inner_fluctuation_yukawa",
+  "local_family_one_form_definition": "Omega_H^1(A)=span{a[H,b]}",
+  "rows": [
+    {
+      "algebra": "coarse_C",
+      "algebra_dimension": 1,
+      "edges": {
+        "up": {
+          "one_form_dimension": 0,
+          "contains_state_anticommutator_correction": false
+        },
+        "down": {
+          "one_form_dimension": 0,
+          "contains_state_anticommutator_correction": false
+        }
+      }
+    },
+    {
+      "algebra": "state_C2",
+      "algebra_dimension": 2,
+      "edges": {
+        "up": {
+          "one_form_dimension": 2,
+          "contains_state_anticommutator_correction": false
+        },
+        "down": {
+          "one_form_dimension": 2,
+          "contains_state_anticommutator_correction": false
+        }
+      }
+    },
+    {
+      "algebra": "residual_family",
+      "algebra_dimension": 5,
+      "edges": {
+        "up": {
+          "one_form_dimension": 8,
+          "contains_state_anticommutator_correction": false
+        },
+        "down": {
+          "one_form_dimension": 8,
+          "contains_state_anticommutator_correction": false
+        }
+      }
+    },
+    {
+      "algebra": "full_M3",
+      "algebra_dimension": 9,
+      "edges": {
+        "up": {
+          "one_form_dimension": 9,
+          "contains_state_anticommutator_correction": true
+        },
+        "down": {
+          "one_form_dimension": 9,
+          "contains_state_anticommutator_correction": true
+        }
+      }
+    },
+    {
+      "algebra": "generated_selected_data",
+      "algebra_dimension": 9,
+      "edges": {
+        "up": {
+          "one_form_dimension": 9,
+          "contains_state_anticommutator_correction": true
+        },
+        "down": {
+          "one_form_dimension": 9,
+          "contains_state_anticommutator_correction": true
+        }
+      }
+    }
+  ],
+  "dimension_sequence_up": [
+    0,
+    2,
+    8,
+    9
+  ],
+  "dimension_sequence_down": [
+    0,
+    2,
+    8,
+    9
+  ],
+  "target_first_appears_in_full_M3": true,
+  "selected_data_generate_full_M3": true,
+  "coarse_failure": "family multiplicity algebra cannot create a rho-dependent correction",
+  "full_failure": "the first algebra large enough to contain the CP-capable correction also restores the full arbitrary M3 family one-form space",
+  "unique_inner_fluctuation_map_derived": false,
+  "status": "inner-fluctuation dichotomy: small family algebras exclude the CP-capable map, while full M3 includes it non-uniquely"
+}

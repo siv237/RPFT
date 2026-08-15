@@ -1,0 +1,117 @@
+\chapter{Algebra embedding gate: unitary equivalence и weighted selector}
+
+Внешний аудит предложил проверить данные spectral triple, зависящие не только
+от eigenvalues, но и от representation алгебры на \(H\). Этот вариант
+существенно отличается от смены cutoff function: точная изоспектральность
+уже закрыла любой selector вида \(\Tr f(D^2)\).
+
+\section{Почему coarse triple не видит две ветви}
+
+В текущей observed/hidden algebra family triplet является multiplicity space:
+алгебра действует на нём единицей. Для двух minima существует explicit
+node-wise orthogonal transformation
+\begin{align}
+ U_A&=I_3,&
+ U_B&=\operatorname{diag}(-1,1,1),\\
+ U_C&=\operatorname{diag}(1,-1,1),&
+ U_D&=-I_3.
+\end{align}
+Если \(U=\operatorname{diag}(U_A,U_B,U_C,U_D)\), то
+\begin{equation}
+ U^T D_-U=D_+.
+\end{equation}
+Оператор \(U\) коммутирует с coarse algebra, grading и после KO6 doubling с
+\(J\). Closed path products также совпадают:
+\begin{equation}
+ P_-H_uH_d^-
+ =
+ -P_-H_uH_d^+.
+\end{equation}
+
+\begin{theorem}[Coarse-triple equivalence]
+Пока family carrier остаётся только неразличимым multiplicity factor, две
+orientation branches задают унитарно эквивалентные spectral triples. Они не
+являются двумя физическими vacua текущей тройки.
+\end{theorem}
+
+Кроме того,
+\begin{equation}
+ \det U=-1,
+\end{equation}
+что точно объясняет flip reduced Pfaffian: найденный sign был orientation
+change basis, а не самостоятельным observable.
+
+\section{Что меняется при family embedding}
+
+Пусть в representation включены уже выведенные family operators
+\begin{equation}
+ T_p,\qquad T_q,\qquad S,
+\end{equation}
+а \(P_-=(I-S)/2\). Их общий commutant на triplet равен
+\begin{equation}
+ \left\{
+ \operatorname{diag}(\alpha,\beta,\beta)
+ \right\}.
+\end{equation}
+Explicit \(U_C\) не коммутирует с \(S\). Более того, полный edge-equation
+test внутри этого commutant противоречив: \(P_-\) и \(H_u\) вынуждают
+\(U_B=U_C=\beta I\), connector даёт \(U_D=-U_A\), после чего middle diagonal
+matrix element transformed \(H_d^-\) равен \(-1\), тогда как \(H_d^+\)
+требует \(+1\).
+
+\begin{proposition}[Embedding distinguishes branches]
+После включения residual family representation в algebraic data найденная
+commutant equivalence запрещается. Ветви становятся различными как полные
+представленные spectral data, несмотря на одинаковый spectrum \(D^2\).
+\end{proposition}
+
+\section{Первый eigenfunction-sensitive selector}
+
+Обычный trace не различает branches, но algebra-decorated moments различают.
+В частности,
+\begin{align}
+ \Tr(\rho(S)D_-^4)&=\frac{13}{2},
+ &
+ \Tr(\rho(S)D_+^4)&=\frac{17}{2},\\
+ \Tr(\rho(P_-)D_-^4)&=\frac{83}{4},
+ &
+ \Tr(\rho(P_-)D_+^4)&=\frac{79}{4}.
+\end{align}
+Поскольку \(P_-\) --- положительный канонический projector, functional
+\begin{equation}
+ V_{\rm emb}(D)=
+ \lambda\,\Tr(\rho(P_-)D^4),
+ \qquad \lambda>0,
+\end{equation}
+выбирает \(\mathcal B_+\) без candidate-dependent coefficient.
+
+\begin{theorem}[Conditional embedding selector]
+Полная spectral-triple информация действительно содержит datum, невидимый
+в eigenvalues: \(P_-\)-localized fourth moment снимает последнее
+orientation degeneracy и выбирает \(\mathcal B_+\).
+\end{theorem}
+
+\section{Новый, более узкий gap}
+
+Стандартное bosonic spectral action использует unweighted trace. Поэтому
+selector считается окончательно выведенным только если один общий principle
+задаёт family representation и state
+\begin{equation}
+ \omega_-(X)=\Tr(\rho(P_-)X)
+\end{equation}
+без ручного добавления отдельного functional. Возможные источники ---
+conditional expectation, modular weight или variational dynamics embedding.
+
+\begin{nogocriterion}[Запрет post-hoc weighted trace]
+Нельзя вводить \(P_-\)-weighted moment только после обнаружения, что он
+различает branches. Требуется независимо вывести weight из representation,
+functional measure или динамического принципа и затем повторить blind
+scorecard.
+\end{nogocriterion}
+
+Результат уточняет статус obstruction: Вариант A не помогает из-за
+изоспектральности, но Вариант B проходит как conditional construction.
+Знак orientation может быть выбран algebra embedding, хотя physical CKM
+phase и реалистичные masses ещё не выведены. Exact equivalence и decorated
+moment ledger сохранён в
+\path{s2t_v4_algebra_embedding_weighted_selector_gate_results.json}.

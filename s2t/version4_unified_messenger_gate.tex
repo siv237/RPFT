@@ -1,0 +1,89 @@
+\chapter{Unified messenger multiplet и gauge-running obstruction}
+
+One-sector chain требует messenger representation, совпадающую с endpoint
+right singlet. Проверим, можно ли заменить четыре независимых packages одним
+unified representation и одновременно улучшить spectral gauge matching.
+
+\section{SU(5) против SO(10)}
+
+В \(SU(5)\)-языке observed generation раскладывается как
+\begin{equation}
+\mathbf{10}\oplus\overline{\mathbf5}\oplus\mathbf1.
+\end{equation}
+Поэтому vectorlike messenger completion требует три representation types:
+\begin{equation}
+(\mathbf{10}\oplus\overline{\mathbf{10}}),
+\quad
+(\mathbf5\oplus\overline{\mathbf5}),
+\quad
+(\mathbf1\oplus\mathbf1).
+\end{equation}
+
+Один spinor package \(\mathbf{16}\) группы \(SO(10)\) содержит
+\begin{equation}
+\mathbf{16}=\mathbf{10}\oplus\overline{\mathbf5}\oplus\mathbf1
+\end{equation}
+и тем самым покрывает все четыре endpoint sectors одной representation type.
+Vectorlike pair \(\mathbf{16}\oplus\overline{\mathbf{16}}\) автоматически
+anomaly-safe.
+
+\begin{proposition}[Unified representation pass]
+В restricted GUT menu \(SO(10)\)-type vectorlike spinor является первым
+single representation package, содержащим messenger components для
+\(u_R,d_R,e_R,\nu_R\) одновременно.
+\end{proposition}
+
+Одна vectorlike pair содержит 32 Weyl states. Charge-consistent chain с
+neutral \(X_0\) и hidden-charged \(X_q\) требует две такие pairs, то есть 64
+messenger Weyl states до family/path replication.
+
+\section{Gauge trace test}
+
+Для chiral \(\mathbf{16}\) traces совпадают:
+\begin{equation}
+C_1=C_2=C_3=2.
+\end{equation}
+Его \(SU(5)\)-части также отдельно являются complete multiplets:
+\begin{align}
+\mathbf{10}:&\quad C_1=C_2=C_3=\frac32,\\
+\overline{\mathbf5}:&\quad C_1=C_2=C_3=\frac12,\\
+\mathbf1:&\quad C_1=C_2=C_3=0.
+\end{align}
+Одна vectorlike \(\mathbf{16}\oplus\overline{\mathbf{16}}\) с общей массой
+даёт one-loop shift
+\begin{equation}
+\Delta b_1=\Delta b_2=\Delta b_3=\frac83.
+\end{equation}
+
+\begin{theorem}[Complete-multiplet running no-go]
+Degenerate complete \(SO(10)\)/\(SU(5)\) messenger multiplets сдвигают три
+beta coefficients одинаково. Поэтому differences \(b_i-b_j\), pairwise
+crossing scales и отсутствие triple intersection остаются неизменными на
+one-loop level.
+\end{theorem}
+
+Таким образом, unified messenger package решает representation coverage, но
+не исправляет gauge mismatch предыдущего гейта.
+
+\section{Threshold fork}
+
+Изменить relative running можно только если:
+\begin{enumerate}
+\item расщепить masses SM components внутри complete \(SU(5)\) pieces;
+\item добавить incomplete multiplets;
+\item перейти к новой gauge/finite algebra выше messenger scale.
+\end{enumerate}
+Даже различие masses между целыми \(\mathbf{10}\),
+\(\overline{\mathbf5}\) и \(\mathbf1\) не помогает: каждый complete piece
+имеет равные \(C_1,C_2,C_3\). Требуется splitting внутри pieces, то есть новый
+symmetry-breaking datum.
+
+\begin{nogocriterion}[Запрет fitted component splitting]
+Masses \(Q,u^c,e^c,d^c,L,\nu^c\) внутри messenger package нельзя выбирать по
+gauge-coupling residuals. Их splitting должен следовать из того же boundary
+order parameter, который отвечает за family и CP, либо unified messenger
+ветвь не является single-source mechanism.
+\end{nogocriterion}
+
+Машинный decomposition и beta ledger сохранён в
+\path{s2t_v4_unified_messenger_gate_results.json}.

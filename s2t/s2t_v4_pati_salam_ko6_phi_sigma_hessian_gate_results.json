@@ -1,0 +1,96 @@
+{
+  "gate": "version4_pati_salam_ko6_phi_sigma_hessian",
+  "relative_KO6_completion": {
+    "complex_dimension": 20,
+    "self_adjointness_error": 0.0,
+    "odd_grading_error": 0.0,
+    "reality_error": 0.0,
+    "J_squared_error": 0.0,
+    "J_gamma_anticommutator_error": 0.0,
+    "height_reality_commutator_error": 0.0,
+    "physical_half_relative_action": 60.02825137560974,
+    "target_4det": 60.02825137560975,
+    "selector_error": 7.105427357601002e-15
+  },
+  "standard_almost_commutative_interpretation": {
+    "adds_complex_finite_Hilbert_dimension": 20,
+    "would_enter_fermionic_action": true,
+    "compatible_with_nonpropagating_classical_reading": false,
+    "required_reading": "relative bosonic/KK cycle outside the physical fermionic direct sum"
+  },
+  "rank_one_background": {
+    "Delta_entry": 0.8408964152537145,
+    "Majorana_nonzero_singular_square": 0.5,
+    "Sigma_B_minus_L_direction": [
+      0.75,
+      -0.25,
+      -0.25,
+      -0.25
+    ],
+    "project_Yukawa_seed": {
+      "nu": 0.7,
+      "e": 0.2,
+      "u": 1.1,
+      "d": 0.4
+    }
+  },
+  "general_Yukawa_quadratic_form": {
+    "identity": "H_Y(Y)=-4||Y||^2+8||M_R^dagger Y||^2",
+    "maximum_random_identity_error": 1.1368683772161603e-13,
+    "nonpositive_at_Majorana_singular_square_one_half": true,
+    "strict_positive_phi_mass_possible": false
+  },
+  "project_phi_Hessian": {
+    "positive": 0,
+    "zero": 0,
+    "negative": 8,
+    "eigenvalues": [
+      -34.92338965991328,
+      -34.92338965991328,
+      -34.92338965991328,
+      -34.923389659913276,
+      -7.306610340086716,
+      -7.306610340086716,
+      -7.306610340086714,
+      -7.306610340086711
+    ]
+  },
+  "Sigma_Hessian": {
+    "Hermitian_traceless_real_dimension": 15,
+    "signature": {
+      "positive": 0,
+      "zero": 15,
+      "negative": 0
+    },
+    "reason": "at phi=0 the composite Yukawa block vanishes for every Sigma"
+  },
+  "mixed_blocks": {
+    "maximum_Delta_phi_bilinear_error": 0.0,
+    "Delta_Sigma": 0.0,
+    "phi_Sigma": 0.0
+  },
+  "full_Delta_phi_Sigma_auxiliary_signature": {
+    "positive": 43,
+    "zero": 24,
+    "negative": 8,
+    "ledger": {
+      "Delta_plus_auxiliary": [
+        43,
+        9,
+        0
+      ],
+      "Hermitian_traceless_Sigma_flat": [
+        0,
+        15,
+        0
+      ],
+      "phi_project_seed": [
+        0,
+        0,
+        8
+      ]
+    }
+  },
+  "verdict": "The relative chain has an algebraically valid 20-dimensional KO6 completion, but placing it in an ordinary finite spectral triple makes it a physical fermion sector. As a nonpropagating relative bosonic cycle it stabilizes Delta only. The phi quadratic form is nonpositive and the project seed has eight negative modes, while Sigma contributes fifteen flat modes.",
+  "next_gate": "derive a connected representation-sensitive phi/Sigma interaction or a genuine two-scale spectral action; otherwise the full Pati-Salam vacuum remains closed"
+}

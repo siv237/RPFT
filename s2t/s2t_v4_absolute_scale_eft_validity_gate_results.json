@@ -1,0 +1,40 @@
+{
+  "gate": "version4_absolute_scale_eft_validity",
+  "date": "2026-08-11",
+  "gravitational_matching": "1/(8 pi G)=f2 Lambda^2/(96 pi^2)",
+  "sigma_squared": "G f2/(12 pi)",
+  "gaussian_profile": {
+    "f2": 1.0
+  },
+  "gaussian_absolute_ratios": {
+    "sigma_over_planck_length": 0.16286750396764,
+    "radius_over_planck_length": 0.22009787379281565,
+    "curvature_times_planck_length_squared": 247.71342933523326
+  },
+  "same_scale_validity": {
+    "radius_times_Lambda": 1.3513921956865422,
+    "curvature_over_Lambda_squared": 6.570802791491215,
+    "sqrt_curvature_over_Lambda": 2.5633577182069645,
+    "valid": false
+  },
+  "moment_independence": "R/Lambda^2=R sigma^2 is independent of f2 when Lambda=1/sigma",
+  "diagnostic_separation_targets": {
+    "1.0": {
+      "required_Lambda_EFT_times_sigma": 2.5633577182069645,
+      "required_radius_times_Lambda_EFT": 3.4641016151377544
+    },
+    "0.1": {
+      "required_Lambda_EFT_times_sigma": 8.106048847306075,
+      "required_radius_times_Lambda_EFT": 10.954451150103322
+    },
+    "0.01": {
+      "required_Lambda_EFT_times_sigma": 25.633577182069644,
+      "required_radius_times_Lambda_EFT": 34.64101615137754
+    }
+  },
+  "verdict": "absolute_matching_not_self_consistent_with_local_heat_kernel_expansion",
+  "reopening_routes": [
+    "derive_Lambda_EFT_over_Lambda_correlation_hierarchy",
+    "use_exact_nonlocal_spectral_action_without_local_truncation"
+  ]
+}

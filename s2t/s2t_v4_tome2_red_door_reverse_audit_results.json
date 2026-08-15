@@ -1,0 +1,57 @@
+{
+  "gate": "version4_tome2_red_door_reverse_audit",
+  "date": "2026-08-12",
+  "doors": {
+    "C6_Maxwell_ghost_absorption": {
+      "map_status": "failed",
+      "proved_scope": "declared Maxwell-ghost rank-10 absorption model has no mandatory same-scheme compensator",
+      "surviving_neighbor": "only a new primary functional, mandatory paired sector, or exact nonlocal identity",
+      "classification": "genuinely_closed_in_declared_class"
+    },
+    "neutrino_quantitative_prediction": {
+      "map_status": "correction",
+      "proved_scope": "23+pi^-1 and 21+3/pi are not invariant physical denominators in II.A/II.B",
+      "surviving_neighbor": "Wilson family connection on the defect tube gives an exact-one BdG kernel and a stable gap",
+      "classification": "quantitative_branch_closed_but_topological_operator_branch_survives"
+    },
+    "EW_QCD_threshold_closure": {
+      "map_status": "conditional",
+      "proved_scope": "ordinary running, minimal logarithmic cone, complete multiplets, and linear generator splitting fail",
+      "surviving_neighbor": "quadratic T3R splitting remains an explicit parent-action test; nonlogarithmic matching is unclassified",
+      "classification": "minimal_repairs_closed_but_adjacent_class_open"
+    },
+    "tau_Higgs_bridge": {
+      "map_status": "conditional",
+      "proved_scope": "minimal Qcycle vertex and canonical charged-lepton normalization do not derive the raw seed",
+      "surviving_neighbor": "general finite single-vertex algebra has not been exhaustively classified",
+      "classification": "general_no_go_unproved"
+    }
+  },
+  "priority_ranking": [
+    {
+      "priority": 1,
+      "route": "Wilson_to_Majorana_defect_parent_bridge",
+      "reason": "already has an exact-one kernel theorem and perturbative stability; missing object is one common covariant derivative/action",
+      "kill_gate": "derive the same family connection, defect vortex, branch selector, stiffness, and a second normalization-sensitive sector from one action"
+    },
+    {
+      "priority": 2,
+      "route": "quadratic_T3R_threshold_parent",
+      "reason": "only surviving explicit gauge-threshold direction with moderate relative mass spread",
+      "kill_gate": "derive q^2 mass law, eta, and M0 before gauge data; then run full RG blindly"
+    },
+    {
+      "priority": 3,
+      "route": "finite_volume_winding_vertex_algebra",
+      "reason": "general single-vertex no-go is explicitly unproved",
+      "kill_gate": "freeze a finite covariant vertex menu and exhaust it without target-loaded coefficients"
+    }
+  ],
+  "map_correction": {
+    "red_meaning": "closed implementation or no-go, not absence of mathematical achievement",
+    "neutrino_node": "correction",
+    "EW_QCD_node": "conditional",
+    "C6_node": "failed"
+  },
+  "verdict": "two_red_labels_were_overbroad_but_no_closed_physical_prediction_is_restored"
+}

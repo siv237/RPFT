@@ -1,0 +1,81 @@
+\chapter{Corrected zero-mode Pfaffian normalization}
+
+Normalization dictionary дал integrated bosonic coefficient
+\begin{equation}
+ \lambda_{0D}=2\pi^3\simeq62.01255.
+\end{equation}
+Теперь повторим radial--orientation minimization, сохраняя минимальное
+предположение об одной unit-normalized finite Pfaffian и прежней
+four-sector modular free energy.
+
+\section{Corrected functional}
+
+Пусть $V_B(r,\theta)$ обозначает unit-quartic bosonic shape предыдущего
+radial gate. Согласованный minimal zero-mode functional:
+\begin{equation}
+ \Gamma_{0D}(r,\theta)
+ =
+ 2\pi^3V_B(r,\theta)
+ +\Gamma_{\rm Pf}(r,\theta)
+ +\Gamma_{\rm matter}(r\sin\theta).
+\end{equation}
+Bosonic coefficient больше не нормируется независимо от fermionic measure.
+
+\section{Reduced measure}
+
+Exact numerical minimization даёт
+\begin{equation}
+ r_\star=1.000413,
+ \qquad
+ \theta_\star\simeq0.
+\end{equation}
+Hessian в coordinates $(\log r,\theta)$ имеет eigenvalues
+\begin{equation}
+ 495.851,\qquad6464.465.
+\end{equation}
+Vacuum строго устойчив и CP-even.
+
+\section{Full KO6 measure}
+
+Для doubled modulus:
+\begin{equation}
+ r_\star=1.000825,
+ \qquad
+ \theta_\star\simeq0,
+\end{equation}
+а Hessian eigenvalues:
+\begin{equation}
+ 496.277,\qquad6479.617.
+\end{equation}
+Удвоение Pfaffian слегка меняет radial shift, но не открывает orientation.
+
+\begin{theorem}[Corrected zero-mode no-go]
+После восстановления coefficient $\lambda_{0D}=2\pi^3$ обе минимальные
+fermionic measures имеют единственный найденный stable CP-even vacuum.
+Ранее полученная supercritical Pfaffian branch была следствием независимой
+unit normalization bosonic trace и finite Pfaffian.
+\end{theorem}
+
+\section{Статус результата}
+
+Gate закрывает minimal zero-mode architecture при предположении одной
+unit-normalized finite Pfaffian. Он не заменяет full determinant на base-$K$
+и не доказывает universal no-go для иной, независимо выведенной zero-mode
+measure multiplicity.
+
+Поскольку physical CP branch отсутствует, mass/CKM readout не открывается.
+
+\begin{nogocriterion}[Запрет возврата к unit quartic]
+Нельзя снова использовать $\lambda=1$ в integrated zero-mode action после
+вывода compact volume factor. Такая нормировка допустима только для local 4D
+density, где fermionic determinant также должен оставаться четырёхмерным.
+\end{nogocriterion}
+
+\begin{protocol}[Следующий architecture]
+Minimal zero-mode route закрыт отрицательно. Следующий допустимый шаг ---
+полный renormalized determinant непосредственно на base-$K$, без отдельного
+finite Pfaffian и без дополнительной KK-суммы.
+\end{protocol}
+
+Машинный ledger сохранён в
+\path{s2t_v4_corrected_zero_mode_pfaffian_gate_results.json}.

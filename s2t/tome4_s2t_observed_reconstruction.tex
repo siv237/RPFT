@@ -1,0 +1,184 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{xurl}
+\geometry{margin=2.3cm}
+\setlength{\emergencystretch}{2em}
+
+\makeatletter
+\renewcommand*\l@chapter[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{2.2em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \bfseries
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\hfil
+      \nobreak\hb@xt@\@pnumwidth{\hss #2\kern-\p@\kern\p@}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+\makeatother
+
+\newtheorem{definition}{Определение}[chapter]
+\newtheorem{lemma}{Лемма}[chapter]
+\newtheorem{proposition}{Предложение}[chapter]
+\newtheorem{theorem}{Теорема}[chapter]
+\theoremstyle{remark}
+\newtheorem{remark}{Замечание}[chapter]
+\newtheorem{protocol}{Протокол}[chapter]
+\newtheorem{nogocriterion}{Критерий провала}[chapter]
+
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Str}{Str}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\rank}{rank}
+
+\title{Трактат об устройстве мира\\
+Том IV: реконструкция наблюдаемого сектора и слепое физическое замыкание}
+\author{}
+\date{}
+
+\begin{document}
+\pagenumbering{roman}
+\hypersetup{pageanchor=false}
+\maketitle
+\clearpage
+\hypersetup{pageanchor=true}
+\setcounter{page}{1}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+\input{version4_observed_closure_specification.tex}
+\input{version4_standard_model_representation_gate.tex}
+\input{version4_hypercharge_anomaly_gate.tex}
+\input{version4_finite_algebra_menu_gate.tex}
+\input{version4_bimodule_multiplicity_gate.tex}
+\input{version4_frozen_k_family_selector_gate.tex}
+\input{version4_affine_family_carrier_gate.tex}
+\input{version4_rank_one_breaking_gate.tex}
+\input{version4_incidence_operator_menu_gate.tex}
+\input{version4_quadratic_parent_selector_gate.tex}
+\input{version4_cross_sector_cp_gate.tex}
+\input{version4_orientation_odd_cp_gate.tex}
+\input{version4_spectral_gauge_normalization_gate.tex}
+\input{version4_higgs_yukawa_gate.tex}
+\input{version4_boundary_connector_menu_gate.tex}
+\input{version4_vectorlike_messenger_chain_gate.tex}
+\input{version4_unified_messenger_gate.tex}
+\input{version4_boundary_threshold_splitting_gate.tex}
+\input{version4_order_one_krajewski_square_gate.tex}
+\input{version4_family_square_spectral_selector_gate.tex}
+\input{version4_cross_sector_transposition_orbit_gate.tex}
+\input{version4_common_updown_krajewski_loop_gate.tex}
+\input{version4_orientation_spectral_no_go.tex}
+\input{version4_pfaffian_eta_orientation_gate.tex}
+\input{version4_determinant_line_inflow_gate.tex}
+\input{version4_algebra_embedding_weighted_selector_gate.tex}
+\input{version4_conditional_weight_origin_gate.tex}
+\input{version4_variational_family_state_gate.tex}
+\input{version4_yukawa_operator_map_gate.tex}
+\input{version4_inner_fluctuation_yukawa_gate.tex}
+\input{version4_state_anchored_bimodule_gate.tex}
+\input{version4_relative_krajewski_star_gate.tex}
+\input{version4_gauge_casimir_family_split_gate.tex}
+\input{version4_one_ratio_family_functional_gate.tex}
+\input{version4_sector_torsor_incidence_gate.tex}
+\input{version4_common_messenger_schur_gate.tex}
+\input{version4_casimir_messenger_propagator_gate.tex}
+\input{version4_noncentral_boundary_propagator_gate.tex}
+\input{version4_bounded_nonlinear_propagator_gate.tex}
+\input{version4_modular_endpoint_intertwiner_gate.tex}
+\input{version4_affine_modular_temperature_gate.tex}
+\input{version4_moment_commutator_modular_gate.tex}
+\input{version4_self_consistent_orientation_gate.tex}
+\input{version4_pfaffian_stiffness_gate.tex}
+\input{version4_radial_pfaffian_hessian_gate.tex}
+\input{version4_hessian_two_scale_messenger_gate.tex}
+\input{version4_three_moment_oriented_messenger_gate.tex}
+\input{version4_gram_eigenvector_endpoint_gate.tex}
+\input{version4_bounded_gram_endpoint_gate.tex}
+\input{version4_stationary_endpoint_obstruction_gate.tex}
+\input{version4_cp_odd_mixed_invariant_gate.tex}
+\input{version4_full_spectral_profile_global_gate.tex}
+\input{version4_full_profile_radial_vacuum_gate.tex}
+\input{version4_heat_kernel_trace_dictionary_gate.tex}
+\input{version4_corrected_zero_mode_pfaffian_gate.tex}
+\input{version4_base_k_zeta_determinant_gate.tex}
+\input{version4_spin_structure_relative_determinant_gate.tex}
+\input{version4_spin_sum_measure_gate.tex}
+\input{version4_zero_prompt_toe_carrier_trace_gate.tex}
+\input{version4_spin_branch_mass_stationarity_gate.tex}
+\input{version4_toe_native_s4_carrier_candidate_gate.tex}
+\input{version4_s4_s2xs2_correlation_purity_gate.tex}
+\input{version4_gibbs_free_energy_carrier_gate.tex}
+\input{version4_spectral_gibbs_equivalence_gate.tex}
+\input{version4_s4_radius_boundary_no_go.tex}
+\input{version4_correlation_cell_free_energy_density_gate.tex}
+\input{version4_absolute_scale_eft_validity_gate.tex}
+\input{version4_s4_rp3_hybrid_experiment_gate.tex}
+\input{version4_project_retrospective_entropy_measure_gate.tex}
+\input{version4_negative_space_bundle_fluctuation_gate.tex}
+\input{version4_full_field_carrier_counterterm_gate.tex}
+\input{version4_gaussian_bare_spectral_topology_gate.tex}
+\input{version4_one_kernel_sign_trilemma_gate.tex}
+\input{version4_gibbs_fisher_geometry_gate.tex}
+\input{version4_tome2_red_door_reverse_audit.tex}
+\input{version4_wilson_defect_parent_superconnection_gate.tex}
+\input{wilson_rotor_momentum_sector_gate.tex}
+\input{version4_hessian_principle_sign_trilemma.tex}
+\input{version4_mapping_cone_spectral_priority_audit.tex}
+\input{version4_spectral_pati_salam_bridge_gate.tex}
+\input{version4_pati_salam_vacuum_singlet_no_go.tex}
+\input{version4_pati_salam_diagonal_connector_menu_gate.tex}
+\input{version4_pati_salam_restricted_potential_no_go.tex}
+\input{version4_pati_salam_literature_reaudit.tex}
+\input{version4_pati_salam_finite_dirac_block_gate.tex}
+\input{version4_pati_salam_first_order_kernel_gate.tex}
+\input{version4_pati_salam_generalized_inner_fluctuation_gate.tex}
+\input{version4_pati_salam_composite_potential_hessian_gate.tex}
+\input{version4_pati_salam_rank_selector_archaeology_gate.tex}
+\input{version4_pati_salam_wedge_channel_compatibility_gate.tex}
+\input{version4_pati_salam_three_node_parent_graph_gate.tex}
+\input{version4_pati_salam_associative_node_no_go.tex}
+\input{version4_pati_salam_twoform_a2_trilemma_gate.tex}
+\input{version4_pati_salam_projected_curvature_selector_gate.tex}
+\input{version4_pati_salam_junk_mapping_cone_gate.tex}
+\input{version4_pati_salam_relative_parent_action_gate.tex}
+\input{version4_pati_salam_bv_multiplicity_fork_gate.tex}
+\input{version4_pati_salam_irreducible_relative_cycle_gate.tex}
+\input{version4_pati_salam_ko6_phi_sigma_hessian_gate.tex}
+\input{version4_pati_salam_twisted_connector_threshold_gate.tex}
+\input{version4_pati_salam_project_wide_rescue_archaeology_gate.tex}
+\input{version4_pati_salam_tensor_product_coefficient_gate.tex}
+\input{version4_pati_salam_higher_moment_saturation_no_go.tex}
+\input{version4_pati_salam_rank_one_connected_curvature_no_go.tex}
+\input{version4_old_problem_rotation_audit.tex}
+\input{version4_family_defect_three_cycle_lock_gate.tex}
+\input{version4_family_defect_projector_supercurvature_gate.tex}
+\input{version4_family_defect_holonomy_realization_gate.tex}
+\input{version4_family_defect_cubic_root_action_gate.tex}
+\input{version4_family_defect_tetrahedral_residual_bundle_gate.tex}
+\input{version4_family_defect_gauge_family_locking_gate.tex}
+\input{version4_family_defect_quiver_moment_map_gate.tex}
+\input{version4_family_defect_ko6_quiver_embedding_gate.tex}
+\input{version4_family_defect_relative_auxiliary_moment_gate.tex}
+\input{version4_family_defect_degree_two_junk_gate.tex}
+\input{version4_family_defect_fermionic_measure_hs_gate.tex}
+\input{version4_project_success_tree_gate.tex}
+\input{version4_tome_conclusion.tex}
+
+\end{document}

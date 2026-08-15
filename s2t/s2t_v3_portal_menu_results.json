@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III.H",
+  "status": "minimal_hidden_sector_exactly_decoupled",
+  "portal_menu": {
+    "scalar": {
+      "operator": "(abs(x)^2+abs(z)^2)*(Hdagger H)",
+      "allowed_by_gauge_symmetry": true,
+      "coefficient_derived": false,
+      "minimal_spectral_value": 0
+    },
+    "kinetic_mixing": {
+      "operator": "f_hidden^{mu nu} B_{mu nu}",
+      "allowed_by_gauge_symmetry": true,
+      "mixed_charge_trace": 0,
+      "sheet_charge_conjugation_forbids": true,
+      "minimal_spectral_value": 0
+    },
+    "neutrino": {
+      "operator": "LtildeH N",
+      "allowed_after_SM_extension": true,
+      "connector_bimodule_present": false,
+      "free_complex_entries_before_symmetry": 6,
+      "minimal_spectral_value": 0
+    }
+  },
+  "direct_sum": {
+    "hilbert_space": "H_hidden direct_sum H_observed",
+    "dirac": "D_hidden direct_sum D_observed",
+    "spectral_cross_terms": false,
+    "all_nongravitational_portals_zero": true
+  },
+  "gravity": {
+    "shared_metric_possible": true,
+    "planck_normalization_derived": false,
+    "laboratory_blind_portal": false
+  },
+  "verdict": {
+    "hidden_EFT_closed": true,
+    "experimentally_connected": false,
+    "nonzero_portal_requires_new_representation": true,
+    "next_gate": "final status freeze"
+  }
+}

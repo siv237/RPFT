@@ -1,0 +1,127 @@
+\chapter{Heat-kernel--spectral-trace normalization dictionary}
+
+External audit справедливо потребовал явный словарь между compact
+heat-kernel action и radial finite-trace potential. Этот словарь можно
+вывести, но результат обнаруживает не свободный numerical factor, а
+architecture mismatch.
+
+\section{Raw four-dimensional coefficients}
+
+Scalar part compact $a_4$ равна
+\begin{equation}
+ S_{a_4}^{\Phi}
+ =
+ \frac{f_0}{(4\pi)^2}
+ \int_K
+ 2\Tr_{\rm orb}
+ \left[
+ (D_\mu\Phi)^2+\Phi^4
+ \right].
+\end{equation}
+Следовательно, общий scalar wavefunction coefficient:
+\begin{equation}
+ Z_\Phi=\frac{f_0}{8\pi^2}.
+\end{equation}
+Curvature contribution входит только в quadratic term и не изменяет
+quartic dictionary.
+
+Для relative $U(1)$ с $\Tr Q^2=2$ raw gauge coefficient равен
+\begin{equation}
+ \frac{f_0}{12\pi^2}F_{\mu\nu}F^{\mu\nu}.
+\end{equation}
+Сопоставление с $F^2/(4g^2)$ даёт
+\begin{equation}
+ f_0=\frac{3\pi^2}{g^2}.
+\end{equation}
+
+\section{Canonical scalar field}
+
+При
+\begin{equation}
+ \phi=\sqrt{Z_\Phi}\,\Phi
+\end{equation}
+kinetic term становится каноническим, а quartic coefficient:
+\begin{equation}
+ \lambda_{4D}
+ =\frac1{Z_\Phi}
+ =\frac{8\pi^2}{f_0}
+ =\frac83g^2.
+\end{equation}
+На spectral matching relation $g^2=3/8$ получаем
+\begin{equation}
+ \boxed{\lambda_{4D}=1},
+ \qquad
+ \boxed{f_0=8\pi^2}.
+\end{equation}
+
+\begin{proposition}[Local convention dictionary]
+В локальном четырёхмерном effective block прежняя единичная quartic
+normalization действительно корректна после canonical scalar rescaling.
+Curvature terms не создают дополнительный quartic factor.
+\end{proposition}
+
+\section{Integrated base-K zero mode}
+
+Для
+\begin{equation}
+ K=\mathbb{RP}^3_R\times S^1_R
+\end{equation}
+объём равен
+\begin{equation}
+ \operatorname{Vol}(K)=2\pi^3R^4.
+\end{equation}
+Если constant canonical mode записать как
+\begin{equation}
+ \widehat\phi=R\phi,
+\end{equation}
+то integrated dimensionless quartic action имеет coefficient
+\begin{equation}
+ \lambda_{0D}
+ =\frac{\operatorname{Vol}(K)}{R^4}\lambda_{4D}
+ =2\pi^3.
+\end{equation}
+Он не равен единице.
+
+\section{Architecture mismatch}
+
+Radial--Pfaffian gate использовал схему
+\begin{equation}
+ V_{\rm toy}
+ =\lambda\Tr D_F^4+\Gamma_{\rm Pf}+\Gamma_{\rm matter}
+\end{equation}
+с unit-normalized bosonic coefficient и unit finite Pfaffian. Эта схема не
+совпадает ни с:
+\begin{enumerate}
+\item local 4D effective action, где fermionic contribution является
+четырёхмерной determinant density;
+\item integrated base-\(K\) zero-mode action, где bosonic coefficient равен
+$2\pi^3$ и требуется согласованная normalization fermionic zero modes.
+\end{enumerate}
+
+\begin{theorem}[Dictionary verdict]
+Heat-kernel--trace quartic dictionary выводится однозначно:
+$\lambda_{4D}=1$ и $\lambda_{0D}=2\pi^3$ в соответствующих architectures.
+Но critical values $0.056684$ и $0.028906$ относятся к отдельному
+unit-normalized radial toy action. Поэтому их прямое cross-tome сравнение не
+является physical obstruction независимо от numerical convention.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет mixed-dimensional threshold]
+Нельзя складывать local 4D bosonic density с finite zero-dimensional
+Pfaffian, предварительно независимо нормировав оба коэффициента к единице.
+Critical coupling имеет физический смысл только после выбора одной общей
+dimensional reduction и measure normalization.
+\end{nogocriterion}
+
+\begin{protocol}[Следующий выбор]
+Нужно заморозить одну architecture:
+\begin{enumerate}
+\item полный determinant непосредственно на base-$K$;
+\item либо корректный zero-mode reduction с coefficient $2\pi^3$ и
+нормированной fermionic measure.
+\end{enumerate}
+До этого radial bifurcation thresholds остаются diagnostic toy values.
+\end{protocol}
+
+Машинный ledger сохранён в
+\path{s2t_v4_heat_kernel_trace_dictionary_gate_results.json}.

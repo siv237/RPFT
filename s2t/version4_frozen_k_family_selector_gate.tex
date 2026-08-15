@@ -1,0 +1,95 @@
+\chapter{Замороженный носитель и запрет автоматических трёх поколений}
+
+Предыдущий перебор оставил multiplicity поколений \(g\) свободным. Прежде
+чем вводить новую family algebra, необходимо проверить, не выбирает ли уже
+замороженный носитель
+\begin{equation}
+K=\mathbb{RP}^3\times S^1
+\end{equation}
+каноническую тройку через свои простейшие топологические или спектральные
+инварианты.
+
+\section{Точная клеточная гомология}
+
+Стандартный клеточный комплекс \(\mathbb{RP}^3\) имеет по одной клетке в
+размерностях \(0,1,2,3\) и дифференциалы
+\begin{equation}
+d_1=0,\qquad d_2=2,\qquad d_3=0.
+\end{equation}
+После произведения с клеточным комплексом \(S^1\) получаем
+\begin{align}
+H_0(K;\mathbb Z)&=\mathbb Z,\\
+H_1(K;\mathbb Z)&=\mathbb Z\oplus\mathbb Z_2,\\
+H_2(K;\mathbb Z)&=\mathbb Z_2,\\
+H_3(K;\mathbb Z)&=\mathbb Z,\\
+H_4(K;\mathbb Z)&=\mathbb Z.
+\end{align}
+Универсальная коэффициентная теорема даёт
+\begin{align}
+H^0(K;\mathbb Z)&=\mathbb Z,&
+H^1(K;\mathbb Z)&=\mathbb Z,\\
+H^2(K;\mathbb Z)&=\mathbb Z_2,&
+H^3(K;\mathbb Z)&=\mathbb Z\oplus\mathbb Z_2,\\
+H^4(K;\mathbb Z)&=\mathbb Z.
+\end{align}
+Сумма свободных Betti numbers равна 4, число torsion generators равно 2, а
+Euler characteristic равна 0.
+
+\begin{remark}
+Свободные Betti numbers равны \((1,1,0,1,1)\), поэтому их арифметическая
+сумма также равна 4. Значение 5 не следует ни из homology, ни из cohomology.
+\end{remark}
+
+\section{Spin-структуры и плоские характеры}
+
+Поскольку
+\begin{equation}
+H^1(K;\mathbb Z_2)\cong\mathbb Z_2\oplus\mathbb Z_2,
+\end{equation}
+носитель имеет четыре spin-структуры. Кроме того,
+\begin{equation}
+\pi_1(K)=\mathbb Z_2\times\mathbb Z,
+\end{equation}
+поэтому пространство плоских unitary characters имеет вид
+\begin{equation}
+\operatorname{Hom}(\pi_1(K),U(1))\cong\{+1,-1\}\times U(1).
+\end{equation}
+Оно содержит две дискретные torsion-ветви и непрерывную окружность, но не
+канонический трёхэлементный набор.
+
+\section{Dirac zero-mode gate}
+
+Для круглого \(\mathbb{RP}^3\) радиуса \(R\) scalar curvature равна
+\begin{equation}
+\mathcal R_K=\frac{6}{R^2}>0.
+\end{equation}
+Для любого flat unitary twist формула Лихнеровича даёт
+\begin{equation}
+D_{K,\rho}^2=\nabla_\rho^*\nabla_\rho+\frac{\mathcal R_K}{4}
+\geq \frac{3}{2R^2}.
+\end{equation}
+Следовательно,
+\begin{equation}
+\ker D_{K,\rho}=0
+\end{equation}
+для всех четырёх spin-структур и всех плоских characters. Семейная тройка не
+может быть multiplicity нулевых спинорных мод этого frozen operator.
+
+\begin{theorem}[Frozen-\(K\) family-selector no-go]
+Ни один элемент объявленного канонического меню --- свободные Betti numbers,
+torsion generators, spin structures, плоские torsion characters,
+фундаментальные generators или flat-twisted Dirac kernels --- не выбирает
+\(g=3\). В этом меню естественные конечные multiplicities равны 0, 2 или 4.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет арифметической сборки тройки]
+Запрещено объявлять \(1+2=3\), разность \(4-1=3\) или произвольный выбор
+трёх элементов из четырёх spin-ветвей family selector-ом без оператора,
+симметрии или variational principle, канонически реализующего соответствующую
+проекцию.
+\end{nogocriterion}
+
+Результат не исключает новую family algebra, non-flat bundle, defect или
+другую индексную задачу. Он доказывает, что тройка не скрыта автоматически в
+простейших инвариантах уже замороженного \(K\). Машинный ledger сохранён в
+\path{s2t_v4_frozen_k_family_selector_gate_results.json}.

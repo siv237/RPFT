@@ -1,0 +1,148 @@
+\chapter{Археология проекта: double-path wedge selector для Pati--Salam vacuum}
+
+Composite Hessian no-go потребовал rank-sensitive invariant
+\(\det(\Delta\Delta^\dagger)\). Поиск по старым главам и wiki показывает,
+что его основные детали уже присутствовали в проекте раздельно:
+rank-one projectors, interference общих Krajewski paths, integer
+inclusion--exclusion coefficients, Casimir representation gaps и
+algebra-decorated traces. Здесь эти детали собираются в один проверяемый
+кандидат.
+
+\section{Два квадратичных пути}
+
+Из одного \(\Delta\sim(2_R,4_4)\) существуют два contractions с одинаковыми
+external indices:
+\begin{align}
+ H^{\rm dir}_{\dot aI\dot bJ}
+ &=\Delta_{\dot aI}\Delta_{\dot bJ},\\
+ H^{\rm cr}_{\dot aI\dot bJ}
+ &=\Delta_{\dot aJ}\Delta_{\dot bI}.
+\end{align}
+Второй уже выведен generalized inner fluctuation. Их raw path difference
+равен
+\begin{equation}
+ W_{\dot aI\dot bJ}
+ =H^{\rm dir}_{\dot aI\dot bJ}
+ -H^{\rm cr}_{\dot aI\dot bJ}.
+\end{equation}
+Он антисимметричен отдельно по weak и four-color indices, поэтому
+\begin{equation}
+ W\in(1_R,6_4).
+\end{equation}
+Это ровно unwanted channel, создававший шесть отрицательных Hessian modes.
+
+\section{Determinant identity}
+
+Cauchy--Binet identity принимает здесь особенно простой вид:
+\begin{equation}
+ \boxed{
+ \|H^{\rm dir}-H^{\rm cr}\|_F^2
+ =4\det(\Delta\Delta^\dagger).}
+ \label{eq:ps-double-path-determinant}
+\end{equation}
+Правая часть является суммой квадратов всех \(2\times2\) minors
+\(\Delta\). Она неотрицательна и обращается в нуль тогда и только тогда,
+когда \(\rank\Delta\le1\). Таким образом, это точный rank-one selector, а
+не phenomenological mass term.
+
+Двести random complex matrices подтверждают
+\eqref{eq:ps-double-path-determinant} и обе antisymmetry identities с
+ошибками порядка machine precision.
+
+\section{Почему coefficient четыре не подгонка}
+
+Предыдущий Hessian gate рассматривал
+\begin{equation}
+ V_\kappa=-\rho^2+\tau^2
+ +\kappa\det(\Delta\Delta^\dagger).
+\end{equation}
+На rank-one stationary orbit exact spectrum равен
+\begin{equation}
+ 8\sqrt2\ (1),\qquad
+ 0\ (9),\qquad
+ \sqrt2(\kappa-2)\ (6).
+ \label{eq:ps-kappa-hessian}
+\end{equation}
+Следовательно, \(\kappa=2\) только превращает instability в дополнительные
+flat modes, а \(\kappa>2\) делает все шесть directions положительными.
+
+Raw path difference в
+\eqref{eq:ps-double-path-determinant} автоматически даёт
+\begin{equation}
+ \boxed{\kappa=4.}
+\end{equation}
+При этом Hessian signature становится
+\begin{equation}
+ \boxed{(7_+,9_0,0_-)}.
+\end{equation}
+Rank-two stationary branch, существовавший при \(\kappa<4\), при
+\(\kappa=4\) стягивается в origin; rank-one orbit остаётся с энергией
+\(-1/4\) и становится global nonzero minimum.
+
+\section{Независимая Casimir-проверка}
+
+Ранее project diagonal-connector audit уже вычислил combined Casimir values:
+\begin{align}
+ (3_R,10_4):&\quad C_2^R+C_2^4=2+\frac92=\frac{13}{2},\\
+ (1_R,6_4):&\quad C_2^R+C_2^4=0+\frac52=\frac52.
+\end{align}
+Их gap также равен
+\begin{equation}
+ \frac{13}{2}-\frac52=4.
+\end{equation}
+То есть path-combinatorics и representation theory независимо указывают на
+один и тот же stabilizing coefficient. Один отдельный Casimir gap \(2\)
+был бы лишь marginal; combined gap \(4\) проходит strict Hessian gate.
+
+\section{Какие старые механизмы соединились}
+
+В проекте уже имелись следующие части конструкции:
+\begin{enumerate}
+ \item \path{version4_rank_one_breaking_gate.tex}: канонический projector из
+ involution;
+ \item \path{version4_common_updown_krajewski_loop_gate.tex}: mixed word из
+ двух paths одного finite graph с фиксированной multiplicity;
+ \item \path{version4_relative_krajewski_star_gate.tex}: целочисленная
+ endpoint inclusion--exclusion с относительным минусом;
+ \item \path{version4_pati_salam_diagonal_connector_menu_gate.tex}: combined
+ Casimir gap \(4\);
+ \item \path{version4_algebra_embedding_weighted_selector_gate.tex}:
+ eigenfunction-sensitive decorated trace;
+ \item \path{version4_wilson_defect_parent_superconnection_gate.tex}: общий
+ graded superconnection как carrier projector и relative signs.
+\end{enumerate}
+
+\begin{proposition}[Exact algebraic rescue candidate]
+Если расширенный finite graph содержит direct и crossed quadratic
+\(\Delta\)-paths с relative sign, фиксированным orientation или grading, то
+его положительный curvature norm автоматически добавляет
+\(4\det(\Delta\Delta^\dagger)\). Этот член устраняет все шесть negative
+modes и выбирает требуемый rank-one Pati--Salam-to-Standard-Model orbit без
+настройки непрерывного coefficient.
+\end{proposition}
+
+\section{Что ещё не доказано}
+
+Найдено точное решение potential-level obstruction, но ещё не parent
+geometry. Текущий project generalized fluctuation выводит crossed path, но
+не выводит второй direct path и их relative minus sign в одном admissible
+KO6/Krajewski block. Combined Casimir gap является сильной независимой
+подсказкой, но standard unweighted spectral trace не вставляет Casimir
+projector автоматически.
+
+\begin{protocol}[Следующий узкий gate]
+Построить минимальный doubled-path finite graph и проверить:
+\begin{enumerate}
+ \item order-one condition для каждого fundamental edge;
+ \item self-adjointness, grading и \(J_F\)-совместимость;
+ \item появление \(H^{\rm dir}-H^{\rm cr}\) из одной curvature или
+ superconnection square;
+ \item отсутствие нового free relative coefficient;
+ \item сохранение fermion readout и девяти Goldstone modes;
+ \item полный Hessian после включения \(\phi\) и \(\Sigma_4\).
+\end{enumerate}
+\end{protocol}
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_rank_selector_archaeology.py} и
+\path{s2t_v4_pati_salam_rank_selector_archaeology_results.json}.

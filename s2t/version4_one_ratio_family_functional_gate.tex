@@ -1,0 +1,97 @@
+\chapter{One-ratio family functional: mass-train и CKM-blind kill-gate}
+
+Gauge-Casimir gate использовал только quartic family moment. Минимальное
+расширение того же spectral functional добавляет quadratic moment с одним
+общим ratio:
+\begin{equation}
+ R_s(t)=R_{4,s}-tR_{2,s},
+ \qquad t\ge0.
+\end{equation}
+Параметр \(t\) общий для \(u,d,e,\nu\); sector-dependent coefficients
+запрещены.
+
+\section{Замороженный train/blind protocol}
+
+До открытия mixing используются только четыре quark hierarchy ratios:
+\begin{align}
+ u_{\rm target}&=(1.25217\times10^{-5},\,0.00736232,\,1),\\
+ d_{\rm target}&=(0.00111722,\,0.0223445,\,1).
+\end{align}
+Objective есть общий logarithmic RMS этих четырёх light ratios. Три CKM
+angles и Jarlskog invariant не участвуют в выборе \(t\).
+
+Hybrid linear/log scan на \(0\le t\le10^6\) с локальным refinement даёт
+\begin{equation}
+ t_{\rm mass}=4.093172,
+ \qquad
+ \operatorname{RMS}_{\log}=1.912066.
+\end{equation}
+Предсказанные quark patterns равны
+\begin{align}
+ u&=(1.35416\times10^{-5},\,0.166551,\,1),\\
+ d&=(0.000609176,\,0.187383,\,1).
+\end{align}
+Multiplicative errors четырёх train quantities составляют
+\begin{equation}
+ (1.08,\,22.62,\,1.83,\,8.39).
+\end{equation}
+Следовательно, даже mass-train не проходит factor-five criterion: один ratio
+создаёт очень лёгкую первую генерацию, но не подавляет вторую.
+
+\section{Открытие CKM blind}
+
+После фиксации \(t_{\rm mass}\) получаем
+\begin{equation}
+ |V_q|\simeq
+ \begin{pmatrix}
+ 0.998769&0.044790&0.021328\\
+ 0.045259&0.998730&0.022126\\
+ 0.020315&0.023060&0.999528
+ \end{pmatrix}.
+\end{equation}
+Из неё следуют
+\begin{equation}
+ (s_{12},s_{23},s_{13})
+ =(0.044800,\,0.022131,\,0.021328),
+\end{equation}
+тогда как замороженный control равен
+\begin{equation}
+ (0.22501,\,0.04183,\,0.003732).
+\end{equation}
+Ratios prediction/control равны
+\begin{equation}
+ (0.199,\,0.529,\,5.715),
+\end{equation}
+а
+\begin{equation}
+ \frac{|J_q|}{J_{\rm CKM}}=0.0630.
+\end{equation}
+
+\begin{theorem}[One-ratio train/blind no-go]
+Один общий coefficient \(t\) в \(R_4-tR_2\) не закрывает quark flavour
+sector. Mass-only optimum проваливает две middle-generation hierarchy ratios,
+а после заморозки даёт неверную CKM hierarchy и слишком малый Jarlskog.
+\end{theorem}
+
+\section{Глобальный stress test}
+
+На том же hybrid grid проверена совместная multiplicative метрика для четырёх
+mass ratios и трёх CKM angles. Лучший общий factor равен
+\begin{equation}
+ 21.84
+\end{equation}
+при \(t\simeq3.96\). Не найдено ни одного candidate, проходящего даже
+factor-ten simultaneous window.
+
+\begin{nogocriterion}[Запрет tuning к красивому \(t=4\)]
+Близость minima к целому \(t=4\) не является выводом. При \(t=4\) mixing
+становится почти диагональным, но Cabibbo angle и middle-generation masses
+остаются неверными. Нельзя фиксировать \(t=4\) по эстетике или после просмотра
+CKM.
+\end{nogocriterion}
+
+Итак, изменение только relative weight quadratic/quartic moments исчерпано.
+Следующий механизм должен менять sector-relative incidence geometry или
+порожденную projection, а не один общий spectral ratio. Машинный train/blind
+ledger сохранён в
+\path{s2t_v4_one_ratio_family_functional_gate_results.json}.

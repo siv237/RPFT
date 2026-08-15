@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-09",
+  "version": "S2T-III",
+  "status": "first_order_vertex_pass_KO6_doubling_and_parameter_orbit_open",
+  "bimodule_classification": {
+    "sectors": [
+      "(1, 1)",
+      "(1, 2)",
+      "(2, 1)",
+      "(2, 2)"
+    ],
+    "allowed_edges": [
+      [
+        "(1, 1)",
+        "(1, 2)"
+      ],
+      [
+        "(1, 1)",
+        "(2, 1)"
+      ],
+      [
+        "(1, 2)",
+        "(2, 2)"
+      ],
+      [
+        "(2, 1)",
+        "(2, 2)"
+      ]
+    ],
+    "minimal_J_stable_sector_count": 4,
+    "direct_diagonal_edge_allowed": false
+  },
+  "odd_operator": {
+    "B": "Matrix([[I*x_imag + x_real, -I*x_imag + x_real], [-I*z_imag + z_real, I*z_imag + z_real]])",
+    "determinant": "2*I*(x_imag*z_real + x_real*z_imag)",
+    "free_complex_parameters": 2,
+    "full_rank_condition": "Im(x*z) != 0",
+    "odd_grading_test": "Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])",
+    "reality_test": "Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])"
+  },
+  "KO_gate": {
+    "J_gamma_relation_on_square": "commute",
+    "KO6_requires_anticommute": true,
+    "undoubled_KO6_passed": false,
+    "minimal_particle_antiparticle_dimension": 8,
+    "physical_half_trace_derived": false
+  },
+  "verdict": {
+    "first_order_vertex_exists": true,
+    "parameter_free_vertex": false,
+    "parent_action_passed": false,
+    "next_gate": "automorphism orbit and KO6 half-trace"
+  }
+}

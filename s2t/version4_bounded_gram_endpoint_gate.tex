@@ -1,0 +1,81 @@
+\chapter{Canonical bounded transform of Gram endpoints}
+
+Прямой linear Gram-eigenvector endpoint почти одновременно диагонализовал
+up/down sectors. Однако spectral triple имеет естественную nonlinear
+операцию, не требующую выбора cutoff function: bounded transform
+\begin{equation}
+ b(Q)=Q(1+Q^2)^{-1/2}.
+\end{equation}
+Он переводит self-adjoint unbounded data в bounded Fredholm representative и
+поэтому является каноническим кандидатом, а не phenomenological ansatz.
+
+\section{Frozen nonlinear prescription}
+
+Для ранее выведенных whitened Gram modes $Q_{a,s}$ определим
+\begin{equation}
+ B_{a,s}=b(Q_{a,s}).
+\end{equation}
+Все eigenvalues $B_{a,s}$ автоматически лежат в интервале $(-1,1)$. Endpoint
+row теперь равна
+\begin{equation}
+ L_s=(B_{1,s}\;B_{2,s}\;B_{3,s}).
+\end{equation}
+Gram messenger masses, oriented triangle и canonical eigenvector signs не
+изменяются. Перебирается только orientation sign, а одна общая scale $t$
+обучается по light quark masses.
+
+\begin{proposition}[No-new-function property]
+Map $b(x)=x/\sqrt{1+x^2}$ фиксирован functional calculus спектральной тройки.
+В этом гейте отсутствуют temperature, polynomial coefficients, channel
+weights и sector-dependent fit parameters.
+\end{proposition}
+
+\section{Mass train}
+
+Обе orientations снова изоспектральны. Mass-selected scale равна
+\begin{equation}
+ t=368.4287.
+\end{equation}
+Получаются spectra
+\begin{align}
+ u&=(0.00107006,\,0.00121528,\,1),\\
+ d&=(0.00125659,\,0.00140844,\,1).
+\end{align}
+Maximum multiplicative mass error равен $85.46$, то есть bounded transform
+усиливает ложную light-family degeneracy.
+
+\section{Blind flavour readout}
+
+После mass freeze
+\begin{equation}
+ |V_q|\simeq
+ \begin{pmatrix}
+ 0.999922&0.0124846&1.4527\times10^{-5}\\
+ 0.0124846&0.999922&5.0012\times10^{-6}\\
+ 1.4588\times10^{-5}&4.8194\times10^{-6}&1
+ \end{pmatrix},
+\end{equation}
+а
+\begin{equation}
+ |J_q|=1.12\times10^{-15}.
+\end{equation}
+Таким образом, bounded compression дополнительно уменьшает различие
+между linear modes разных sectors.
+
+\begin{theorem}[Canonical bounded-transform no-go]
+Стандартный bounded transform Gram eigenmodes не создаёт observed flavour.
+Он ухудшает maximum mass error до $85.46$, подавляет Cabibbo angle до
+$0.01248$ и оставляет CP invariant практически нулевым. Следовательно,
+искомая nonlinear endpoint dynamics не совпадает с universal K-homology
+bounded transform.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет произвольного spectral shaping]
+После этого результата нельзя заменять $b$ произвольной sigmoid, rational или
+heat-kernel function и обучать её форму по masses. Новый nonlinear map должен
+возникнуть как stationary solution конкретного parent action с независимо
+фиксированными коэффициентами.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_bounded_gram_endpoint_gate_results.json}.

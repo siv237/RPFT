@@ -1,0 +1,140 @@
+\chapter{Full spectral profile: higher-moment loophole}
+
+External red-team правильно указал две логические дыры: heat-kernel и
+spectral-trace quartic conventions не были явно связаны, а нулевой mixed
+Hessian не запрещает global spontaneous CP breaking. Первая ошибка исправлена
+в предыдущей главе. Здесь проверяется вторая.
+
+\section{Exact angular spectrum}
+
+На unit radial slice положим $c=\cos\theta$. Characteristic polynomial одного
+chiral squared block равен
+\begin{equation}
+ \det(y-H(c))
+ =\frac14(y^2-3y+1)
+ \left[
+ 4y^4-28y^3+60y^2-40y+5
+ +4c(y^2-3y+1)
+ \right].
+\end{equation}
+Два eigenvalues не зависят от orientation, четыре остальных зависят от $c$.
+Первые exact full-Dirac moments:
+\begin{align}
+ \Tr D^2&=20,\\
+ \Tr D^4&=52-4c,\\
+ \Tr D^6&=152-24c,\\
+ \Tr D^8&=4c^2-112c+466,\\
+ \Tr D^{10}&=40c^2-480c+\frac{2945}{2},\\
+ \Tr D^{12}&=-4c^3+264c^2-1977c+4762.
+\end{align}
+Следовательно, higher moments действительно содержат новую global angular
+information, даже когда mixed Hessian равен нулю.
+
+\section{Почему positivity недостаточно}
+
+Для полного profile обозначим
+\begin{equation}
+ F_f(c)=\Tr f(D^2(c)).
+\end{equation}
+Так как
+\begin{equation}
+ c=1-\frac{\theta^2}{2}+\frac{\theta^4}{24}+O(\theta^6),
+\end{equation}
+локальное разложение имеет вид
+\begin{equation}
+ F_f(\cos\theta)
+ =F_f(1)-\frac12F_f'(1)\theta^2
+ \left(\frac1{24}F_f'(1)+\frac18F_f''(1)\right)\theta^4
+O(\theta^6).
+\end{equation}
+Знак quartic coefficient зависит от derivatives функции $f$, а не от одного
+условия $f\ge0$.
+
+При unit scale получены coefficients $(A_2,A_4)$:
+\begin{align}
+ f(u)=e^{-u}:&& (A_2,A_4)&=(0.160130,-0.007109),\\
+ f(u)=e^{-u^2}:&& (A_2,A_4)&=(0.308331,-0.014694),\\
+ f(u)=(1+u)e^{-u}:&& (A_2,A_4)&=(0.105649,-0.016302).
+\end{align}
+Таким образом, даже стандартные positive profiles имеют отрицательный
+$\theta^4$ coefficient.
+
+В точках, где quadratic coefficient обращается в нуль,
+\begin{align}
+ a_{\rm Gauss}&=0.136328,
+ &A_4&=-0.0034598,\\
+ a_{\rm heat2}&=0.550814,
+ &A_4&=-0.0025743.
+\end{align}
+Предложенный red-team criterion therefore не закрывает CP branch: quartic
+sign оказывается отрицательным.
+
+\section{Положительный counterexample}
+
+Рассмотрим smooth, normalized, strictly positive и rapidly decreasing profile
+\begin{equation}
+ f_\star(u)
+ =\frac{e^{-u^2/100}+\frac1{12}e^{-10u^2}}{13/12}.
+\end{equation}
+На unit radial slice exact numerical minimization полного, не усечённого
+spectral trace даёт
+\begin{equation}
+ \theta_\star=\pm1.227311,
+ \qquad
+ |\sin\theta_\star|=0.941587.
+\end{equation}
+Обе CP-conjugate minima лежат ниже $\theta=0$ и $\theta=\pi$ соответственно
+на
+\begin{equation}
+ 0.0034164,\qquad0.0031275.
+\end{equation}
+
+\begin{theorem}[Angular-slice counterexample]
+Положительность, smoothness и rapid decay spectral function не запрещают
+CP-breaking angular minima при фиксированном radius. Поэтому нулевой mixed
+Hessian и positivity не доказывают даже angular no-go.
+\end{theorem}
+
+Counterexample доказывает существование, но не является profile selector:
+ratio $1/12$ не выведен текущей геометрией. Кроме того, расчёт пока фиксирует
+radial coordinate; полный two-dimensional vacuum требует отдельной проверки.
+
+\section{Conditional blind flavour readout}
+
+Не используя flavour data при выборе profile, заморозим amplitude
+$|\sin\theta_\star|$ и проведём прежний mass-only branch selection. Лучший
+right-GNS branch имеет
+\begin{equation}
+ t=479.3700
+\end{equation}
+и spectra
+\begin{align}
+ u&=(0.00073766,\,0.00216768,\,1),\\
+ d&=(0.00067849,\,0.00214273,\,1).
+\end{align}
+Maximum mass error равен $58.91$. Blind readout:
+\begin{equation}
+ (s_{12},s_{23},s_{13})
+ =(0.982426,\,0.0008514,\,0.0007774),
+\end{equation}
+\begin{equation}
+ |J_q|=7.10\times10^{-8}.
+\end{equation}
+Следовательно, открытая CP branch не согласует observed flavour.
+
+\begin{theorem}[Higher-profile angular verdict]
+Higher spectral moments снимают только локальный и frozen-radius CP no-go:
+допустимая positive функция может создать pair interior angular minima.
+Полный structural verdict требует radial minimization. Кроме того, текущая
+теория не выбирает profile, а conditional blind flavour test провален.
+\end{theorem}
+
+\begin{protocol}[Следующий обязательный гейт]
+Необходимо либо вывести spectral function из независимого принципа, либо
+доказать no-go в заранее объявленном profile class. После freeze функции
+следует минимизировать полный $(r,\theta)$ action и только затем открывать
+flavour observables.
+\end{protocol}
+
+Машинный ledger сохранён в
+\path{s2t_v4_full_spectral_profile_global_gate_results.json}.

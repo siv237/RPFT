@@ -1,0 +1,192 @@
+\chapter{Tetrahedral residual-bundle origin gate}
+
+Предыдущий cubic-root gate использовал transition
+\(Z_{H,\nu}^3=I\), но ещё не объяснял, почему degree три является частью
+project carrier, а не новым дискретным input. Здесь показывается, что
+\(\mathbb Z_3\) уже содержится в symmetry-breaking chain выбранных
+projectors. Одновременно возникает новая развилка: residual subgroup даёт
+gauge bundle только при gauged или boundary-framed family symmetry.
+
+\section{Канонический spin-three tetrahedral tensor}
+
+Пусть \(B:\mathbb R^3\to u^\perp\subset\mathbb R^4\) --- standard triplet
+isometry, а четыре projector axes равны
+\begin{equation}
+ n_a=B^T\operatorname{diag}\!\left[
+ \frac{2}{\sqrt3}\left(P_a-\frac14I_4\right)
+ \right],
+ \qquad a=1,\ldots,4.
+ \label{eq:project-tetrahedral-axes}
+\end{equation}
+Они удовлетворяют
+\begin{equation}
+ \|n_a\|=1,
+ \qquad
+ \sum_an_a=0,
+ \qquad
+ n_a\cdot n_b=-\frac13\quad(a\ne b).
+\end{equation}
+Следовательно, это вершины regular tetrahedron в family triplet.
+
+Из них без нового continuous direction строится symmetric rank-three
+tensor
+\begin{equation}
+ \mathcal T_{ijk}=\sum_{a=1}^4(n_a)_i(n_a)_j(n_a)_k.
+ \label{eq:project-spin-three-tensor}
+\end{equation}
+Его trace равен нулю:
+\begin{equation}
+ \mathcal T_{iik}=\sum_a\|n_a\|^2(n_a)_k=0,
+\end{equation}
+поэтому \(\mathcal T\) лежит в real spin-three representation
+\(\operatorname{Sym}^3_0(\mathbb R^3)\) dimension семь.
+
+Even permutations четырёх axes реализуются proper rotations standard
+triplet и сохраняют \(\mathcal T\). Тем самым
+\begin{equation}
+ \operatorname{Stab}_{SO(3)}(\mathcal T)=A_4.
+ \label{eq:so3-to-a4-breaking}
+\end{equation}
+Project computation проверяет все двенадцать proper tetrahedral rotations;
+максимальный tensor residual меньше \(1.8\times10^{-15}\).
+
+Именно такая UV architecture теперь имеет прямое литературное
+подтверждение. В \path{arXiv:2607.12366} построена renormalizable
+\(SO(3)\) gauge theory со spin-three Higgs, breaking
+\(SO(3)\to A_4\), и найдены finite-tension vortices с order-two и
+order-three \(A_4\)-holonomies. Более ранний scalar-potential анализ
+spin-three \(SO(3)\) field и tetrahedral vacuum приведён в
+\path{arXiv:0910.4392}. Эти работы не выводят project finite algebra, но
+показывают, что требуемый symmetry-breaking pattern допускает обычный
+local gauge-Higgs UV completion.
+
+\section{Projector оставляет ровно \texorpdfstring{\(\mathbb Z_3\)}{Z3}}
+
+После выбора одного projector \(P_a\), или эквивалентно axis \(n_a\),
+остаточный subgroup равен
+\begin{equation}
+ \operatorname{Stab}_{A_4}(n_a)
+ =\{1,C_{a,+},C_{a,-}\}
+ \simeq\mathbb Z_3.
+ \label{eq:projector-z3-stabilizer}
+\end{equation}
+Это следует также из orbit--stabilizer identity:
+\begin{equation}
+ |A_4|=12,
+ \qquad
+ |\operatorname{Orb}(n_a)|=4,
+ \qquad
+ |\operatorname{Stab}(n_a)|=3.
+\end{equation}
+Два nontrivial elements являются ровно двумя inverse three-cycles,
+выбранными winding \(\nu=\pm1\).
+
+Machine audit дополнительно даёт
+\begin{equation}
+ [A_4,A_4]=V_4,
+ \qquad
+ A_4^{\rm ab}=A_4/V_4\simeq\mathbb Z_3.
+\end{equation}
+Это согласуется со старым binary-tetrahedral ledger:
+\(2T^{\rm ab}\simeq\mathbb Z_3\). Direct replacement внешней geometry на
+\(S^3/2T\) ранее закрыт, но internal gauge lift этому no-go не
+противоречит.
+
+Для каждого nontrivial residual rotation его lift в \(SU(2)\) имеет
+порядок шесть:
+\begin{equation}
+ \widetilde C_{a,\nu}^{,3}=-1,
+ \qquad
+ \widetilde C_{a,\nu}^{,6}=1.
+ \label{eq:binary-z6-lift}
+\end{equation}
+Следовательно, cubic-root transition предыдущей главы является local
+frame description residual \(\mathbb Z_3\)-bundle, а не произвольно
+добавленной третьей корневой ветвью.
+
+\begin{theorem}[Residual origin of the cubic root]
+Projector equation \(Q(H)=0\), дополненная orientation-preserving
+tetrahedral carrier, имеет canonical residual subgroup
+\(\operatorname{Stab}_{A_4}(P_a)\simeq\mathbb Z_3\). Его два nontrivial
+holonomies совпадают с \(C_{a,\pm}\), а binary lift имеет order six.
+Поэтому denominator \(1/3\) и transition \(Z^3=I\) имеют внутреннее
+group-theoretic происхождение.
+\end{theorem}
+
+\section{Почему charge-two \texorpdfstring{\(B-L\)}{B-L} недостаточно}
+
+Нельзя приписать этот результат одному abelian pairing Higgs. Condensate
+поля charge \(n\) в обычной \(U(1)\)-теории оставляет residual
+\(\mathbb Z_n\); continuum/TQFT derivation приведён, например, в
+\path{arXiv:1307.4793}. Поэтому существующий charge-two
+\(B-L\) pairing field оставляет только
+\begin{equation}
+ U(1)_{B-L}\longrightarrow\mathbb Z_2,
+\end{equation}
+а independent abelian origin \(\mathbb Z_3\) потребовал бы нового
+charge-three condensate.
+
+Project data указывают на более экономное разделение ролей:
+\begin{equation}
+ \boxed{
+ \begin{aligned}
+ \text{ordinary charge-two }B-L\text{ texture}
+ &\quad\Rightarrow\quad
+ \text{Majorana pairing и unit vortex},\\
+ \text{tetrahedral family carrier}+P_a
+ &\quad\Rightarrow\quad
+ \text{residual }\mathbb Z_3\text{ frame holonomy}.
+ \end{aligned}}
+ \label{eq:two-role-root-architecture}
+\end{equation}
+Это устраняет необходимость charge-three scalar, но требует вывести оба
+blocks из одного graded parent.
+
+\section{Gauge/global fork}
+
+Group-theoretic stabilizer ещё не равен physical gauge bundle.
+
+Если \(A_4\) является только global family symmetry, четыре projector axes
+могут быть физически различимы, но residual \(\mathbb Z_3\) не поставляет
+connection и topological flux. Если \(A_4\) gauged как остаток
+\(SO(3)_F\), order-three vortices и bundles существуют, но четыре axes
+связаны gauge transformations. Тогда физически определена conjugacy class
+holonomy, а конкретная family axis требует boundary framing или
+дополнительного matter block, делающего relative orientation observable.
+
+\begin{nogocriterion}[Tetrahedral gauge/global fork]
+Residual identity~\eqref{eq:projector-z3-stabilizer} не является полным
+family prediction, пока не определено, является ли tetrahedral symmetry
+gauged, global или boundary-framed. Gauged branch должна объяснить
+наблюдаемость relative axis; global branch должна независимо породить
+connection.
+\end{nogocriterion}
+
+\section{Обновлённый decisive gate}
+
+Discrete root degree теперь закрыт. Остаются три связанные задачи:
+\begin{enumerate}
+ \item вывести spin-three tensor \(\mathcal T\) или эквивалентный
+ tetrahedral gauge reduction из finite graded algebra;
+ \item получить boundary framing, связывающий residual holonomy с family
+ matter без gauge-dependent axis assignment;
+ \item из того же parent action вывести nonzero ordinary charge-two
+ \(B-L\) defect condensate и его coupling к residual \(\mathbb Z_3\)
+ frame.
+\end{enumerate}
+
+Таким образом, cubic-root bundle больше не является независимой загадкой.
+Новый blocker --- не существование \(\mathbb Z_3\), а единое физическое
+embedding tetrahedral gauge/frame sector и Majorana condensate.
+
+Следующий gauge--family locking gate закрывает первую половину этого
+blocker. Real bifundamental \(X\) ломает
+\(SO(3)_{\rm gauge}\times SO(3)_{\rm family}^{\rm global}\) до exact
+diagonal global group, поэтому gauge holonomy получает physical family
+frame. Открытым остаётся уже только parent-derived pairing instability:
+symmetry разрешает как condensed, так и uncondensed phase.
+
+Машинный ledger сохранён в
+\path{s2t_v4_family_defect_tetrahedral_residual_bundle_gate_results.json};
+генератор ---
+\path{s2t_v4_family_defect_tetrahedral_residual_bundle_gate.py}.

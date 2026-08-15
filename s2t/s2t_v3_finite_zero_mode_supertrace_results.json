@@ -1,0 +1,52 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "finite_zero_mode_B_positive_normalization_and_KK_open",
+  "kinetic_metric": {
+    "general": "Matrix([[4, 0, 0], [0, 4, 0], [0, 0, r**2 + s**2]])",
+    "vacuum": "Matrix([[4, 0, 0], [0, 4, 0], [0, 0, 1]])"
+  },
+  "scalar_spectrum": {
+    "potential_hessian": "Matrix([[32, 0, 0], [0, 32, 0], [0, 0, 8]])",
+    "generalized_mass_matrix": "Matrix([[8, 0, 0], [0, 8, 0], [0, 0, 8]])",
+    "mass_squared_over_chi_squared": [
+      "8",
+      "8",
+      "8"
+    ],
+    "real_scalar_count": 3
+  },
+  "fermion_spectrum": {
+    "physical_Dirac_pairs": 2,
+    "mass_over_chi": 1,
+    "weighted_M4": -8
+  },
+  "canonical_supertrace": {
+    "scalar_weighted_M4": 192,
+    "fermion_weighted_M4": -8,
+    "numerator": 184,
+    "factorization": "8*23",
+    "B0": "23/(8*pi**2)",
+    "positive": true
+  },
+  "normalization_sensitivity": {
+    "kinetic_coefficient": "kappa",
+    "supertrace_numerator": "-8 + 192/kappa**2",
+    "positive_if": "kappa < sqrt(24)",
+    "threshold": "2*sqrt(6)",
+    "kappa_derived": false
+  },
+  "omitted_sectors": [
+    "finite gauge and ghosts",
+    "dilaton-radion fluctuation",
+    "nonzero KK towers",
+    "common tower subtraction"
+  ],
+  "verdict": {
+    "finite_seed_B_positive": true,
+    "canonical_B0_equals_23_over_8pi2": true,
+    "full_B_computed": false,
+    "quantum_scale_gate_passed": false,
+    "next_gate": "derive kappa and compute KK plus gauge correction"
+  }
+}

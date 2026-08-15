@@ -1,0 +1,135 @@
+\chapter{Размерностная согласованность product lift}
+
+Перед spin/flat KK-суммированием необходимо различить две геометрические
+архитектуры. Во втором томе \(K=\mathbb{RP}^3\times S^1\) назывался
+компактным внутренним носителем, тогда как предыдущий local product lift
+использовал \(C^\infty(K)\) как алгебру четырёхмерной базы. Эти чтения
+нельзя смешивать в одном Coleman--Weinberg ledger.
+
+\section{Архитектура A: \(K\) как евклидова база}
+
+Если
+\begin{equation}
+ \mathcal A=C^\infty(K)\otimes A_F,
+ \qquad
+ \mathcal H=L^2(K,S)\otimes H_8,
+\end{equation}
+то \(K\) является самим четырёхмерным spacetime background. В этом случае
+scalar, vector, ghost и fermion eigenmodes на \(K\) являются модами
+квантовых полей, а не дополнительными четырёхмерными particle species.
+Стандартный zero-mode коэффициент
+\begin{equation}
+ B=\frac1{64\pi^2\chi^4}\Str M^4
+\end{equation}
+может использоваться как локальная flat-background аппроксимация, но к
+нему нельзя ещё раз прибавлять весь spectrum \(D_K\) как независимую
+KK-башню. Такое прибавление было бы двойным счётом spacetime modes.
+
+\begin{nogocriterion}[Base-K double-count no-go]
+При интерпретации \(K\) как четырёхмерной базы запрещено определять
+\(\Delta N_{\mathrm{KK}}\) дополнительной суммой по eigenmodes того же
+\(K\). Полный quantum functional должен вычисляться determinant-методом
+непосредственно на \(K\).
+\end{nogocriterion}
+
+\section{Архитектура B: \(K\) как внутренний фактор}
+
+Если \(K\) сохраняет статус внутреннего носителя, полный локальный product
+должен иметь вид
+\begin{align}
+ \mathcal A_{\mathrm{tot}}
+ &=C^\infty(M_4)\otimes C^\infty(K)\otimes A_F,
+ \\
+ \mathcal H_{\mathrm{tot}}
+ &=L^2(M_4,S_4)\otimes\mathcal H_K\otimes H_8.
+\end{align}
+Тогда heat trace факторизуется схематически:
+\begin{equation}
+ a_n(\mathcal D_{\mathrm{tot}}^2)
+ =\sum_{p+q=n}
+ a_p(D_{M_4}^2)\,a_q(D_K^2).
+\end{equation}
+Следовательно, external scalar и gauge coefficients получают внутренние
+heat-kernel множители и не определяются одним flat четырёхмерным
+\(a_4\)-блоком без выбора \(\mathcal H_K\), \(D_K\) и проекции на
+четырёхмерные modes.
+
+Наивный spinorial выбор
+\begin{equation}
+ \mathcal H_K=L^2(K,S_K),
+ \qquad
+ D_K=\text{геометрический Dirac}
+\end{equation}
+не воспроизводит использованный finite zero-mode ledger. Для единичной
+\(\mathbb{RP}^3\times S^1\) scalar curvature положительна:
+\begin{equation}
+ R_K=6.
+\end{equation}
+По формуле Лихнеровича
+\begin{equation}
+ D_K^2=\nabla^*\nabla+\frac{R_K}{4}
+\end{equation}
+гармонические spinor zero-modes отсутствуют. Поэтому две finite Dirac-пары
+не могут автоматически быть zero-modes простого spinorial compactification.
+
+\begin{proposition}[Spinorial zero-mode obstruction]
+В минимальном геометрическом spinor lift на круглом
+\(\mathbb{RP}^3\times S^1\) отсутствует внутреннее Dirac-ядро. Чтобы
+сохранить четырёхмерные finite fermions, требуется либо иной twisted
+operator с доказанным kernel, либо эффективный spectator-module lift,
+который не является полным spinorial KK compactification.
+\end{proposition}
+
+\section{Статус предыдущих результатов}
+
+Полученные значения
+\begin{equation}
+ \kappa=2,
+ \qquad
+ g^2=\frac38,
+ \qquad
+ B_0^{\mathrm{fin+gauge}}=\frac{67}{64\pi^2}
+\end{equation}
+остаются согласованными внутри четырёхмерного zero-mode effective parent
+action. Они ещё не являются коэффициентами полной
+\(M_4\times K\)-компактификации.
+
+В частности:
+\begin{enumerate}
+ \item \(\kappa=2\) фиксирует относительную scalar kinetic normalization
+ в 4D effective block;
+ \item \(g^2=3/8\) фиксирует relative-\(U(1)\) coupling того же блока;
+ \item положительность \(67/(64\pi^2)\) относится к его finite и gauge
+ zero-modes;
+ \item spin/flat KK correction пока не определена, поскольку UV lift не
+ выбран.
+\end{enumerate}
+
+\begin{theorem}[Dimensional consistency verdict]
+Немедленный KK-аудит остановлен не из-за отрицательного знака, а из-за
+неединственности геометрической архитектуры. Версия III построила
+нормированное четырёхмерное zero-mode действие, но ещё не доказала его
+происхождение из локальной теории на \(M_4\times K\).
+\end{theorem}
+
+Это уточнение сохраняет реальный прогресс относительно тома II. Ранее не
+существовало даже общего finite parent block; теперь он существует и
+проходит zero-mode gauge completion. Открытым остался точно один уровень:
+UV lift, который должен объяснить, почему эти effective modes переживают
+компактификацию и какие KK-башни им соответствуют.
+
+\begin{protocol}[Следующий архитектурный гейт]
+До дальнейшего суммирования необходимо выбрать и проверить одну ветвь:
+\begin{enumerate}
+ \item \textbf{base-\(K\):} вычислить полный determinant на компактном
+ четырёхмерном \(K\) без дополнительного KK-ledger;
+ \item \textbf{internal-\(K\):} задать
+ \(\mathcal H_K,D_K\), twisted bundles и projector, который сохраняет
+ требуемые 4D zero-modes, после чего выполнить dimensional reduction.
+\end{enumerate}
+Выбор ветви должен следовать из онтологии программы, а не из желаемого
+знака \(B\).
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_dimensional_product_consistency_results.json}.

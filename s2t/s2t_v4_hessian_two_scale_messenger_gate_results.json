@@ -1,0 +1,198 @@
+{
+  "gate": "version4_hessian_two_scale_messenger",
+  "hessian_eigenvalues": [
+    104.0,
+    8.0
+  ],
+  "messenger_mass_ratio": 3.605551275463989,
+  "channel_assignments": {
+    "radial_first": [
+      3.605551275463989,
+      1.0
+    ],
+    "radial_second": [
+      1.0,
+      3.605551275463989
+    ]
+  },
+  "branch_rows": [
+    {
+      "assignment": "radial_first",
+      "channel_masses": [
+        3.605551275463989,
+        1.0
+      ],
+      "placement": "kms_symmetric",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 147.0565369561581,
+      "mass_log_rms": 2.334622953430865
+    },
+    {
+      "assignment": "radial_first",
+      "channel_masses": [
+        3.605551275463989,
+        1.0
+      ],
+      "placement": "right_gns",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 324.8788048078237,
+      "mass_log_rms": 2.5011068373465806
+    },
+    {
+      "assignment": "radial_first",
+      "channel_masses": [
+        3.605551275463989,
+        1.0
+      ],
+      "placement": "left_gns",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 450.00567644848155,
+      "mass_log_rms": 2.6710354280411086
+    },
+    {
+      "assignment": "radial_second",
+      "channel_masses": [
+        1.0,
+        3.605551275463989
+      ],
+      "placement": "left_gns",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 450.0047184582292,
+      "mass_log_rms": 2.6710354280421256
+    },
+    {
+      "assignment": "radial_second",
+      "channel_masses": [
+        1.0,
+        3.605551275463989
+      ],
+      "placement": "right_gns",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 321.44760080386175,
+      "mass_log_rms": 2.6835652943981416
+    },
+    {
+      "assignment": "radial_second",
+      "channel_masses": [
+        1.0,
+        3.605551275463989
+      ],
+      "placement": "kms_symmetric",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 145.23791040957218,
+      "mass_log_rms": 2.7528512068376596
+    }
+  ],
+  "best": {
+    "assignment": "radial_first",
+    "channel_masses": [
+      3.605551275463989,
+      1.0
+    ],
+    "placement": "kms_symmetric",
+    "sign_bits": [
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "messenger_scale": 147.0565369561581,
+    "mass_log_rms": 2.334622953430865
+  },
+  "normalized_masses": {
+    "u": [
+      0.000540080370333826,
+      0.002313366463365219,
+      1.0
+    ],
+    "d": [
+      0.001011184309016836,
+      0.0018224186784898415,
+      1.0
+    ],
+    "e": [
+      0.0010317213942183411,
+      0.001672829927901682,
+      1.0
+    ],
+    "nu": [
+      0.0004998251543323949,
+      0.001964466335710659,
+      1.0
+    ]
+  },
+  "mass_multiplicative_errors": {
+    "u": [
+      43.13141846415971,
+      3.18251299877057
+    ],
+    "d": [
+      1.1048676986187032,
+      12.260902432239892
+    ]
+  },
+  "ckm_absolute": [
+    [
+      0.9717625674210292,
+      0.2359605759886848,
+      0.00034516427668366867
+    ],
+    [
+      0.2359606724471224,
+      0.9717625673372237,
+      0.000271625605854027
+    ],
+    [
+      0.0002713256191726712,
+      0.00034540013901940275,
+      0.9999999035405712
+    ]
+  ],
+  "ckm_angles": [
+    0.2359605759886848,
+    0.000271625605854027,
+    0.00034516427668366867
+  ],
+  "ckm_angle_ratios": [
+    1.048667063635771,
+    0.0064935597861349986,
+    0.09248774830752107
+  ],
+  "jarlskog": -9.839547443967964e-11,
+  "absolute_jarlskog_ratio": 3.153701103835886e-06,
+  "cabibbo_relative_error": 0.04866706363577089,
+  "mass_train_pass": false,
+  "cabibbo_blind_pass": true,
+  "full_ckm_blind_pass": false,
+  "verdict": "the Hessian-derived two-scale propagator gives a blind Cabibbo angle within five percent but does not close middle-family masses, other CKM planes, or CP"
+}

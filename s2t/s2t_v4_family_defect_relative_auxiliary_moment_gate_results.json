@@ -1,0 +1,68 @@
+{
+  "gate": "version4_family_defect_relative_auxiliary_moment_gate",
+  "random_seed": 20260815,
+  "random_tests": 256,
+  "oriented_complex": {
+    "nodes": "V_L -> V_G -> V_R",
+    "middle_hodge_commutator": "[d,d^dagger]_G=XX^T-|Phi|^2 I3",
+    "middle_auxiliary_module": "Sym_3(R), the self-adjoint part of M3(R)_G",
+    "symmetric_tangent_rank": 6
+  },
+  "route_a_mapping_cone": {
+    "functional": "||(1/2)[h,(d+d^dagger)^2]||_HS^2",
+    "radial_content": "2 |Phi|^2 Tr(XX^T)",
+    "verdict": "fail: selects the endpoint product and has no |Phi|^4 or X^4 terms"
+  },
+  "route_b_strict_so3_D_term": {
+    "gauge_lie_algebra": "so(3)=Skew_3(R)",
+    "moment_map_module": "Sym_3(R)",
+    "orthogonal_projection": "zero for real X and Y=Phi I3",
+    "verdict": "fail: the required square is not an adjoint SO(3) D-term"
+  },
+  "route_c_self_adjoint_auxiliary": {
+    "variational_identity": "tau3(mu^2)=sup_{K in Sym3} [2 tau3(K mu)-tau3(K^2)]",
+    "stationary_auxiliary": "K=mu is a strict maximum",
+    "auxiliary_hessian_frobenius_eigenvalues": [
+      -0.6666666666666666,
+      -0.6666666666666666,
+      -0.6666666666666666,
+      -0.6666666666666666,
+      -0.6666666666666666,
+      -0.6666666666666666
+    ],
+    "positive_real_euclidean_elimination": "inf_K [tau3(K^2)-2 tau3(K mu)]=-tau3(mu^2), the wrong sign",
+    "imaginary_hubbard_stratonovich": "tau3(K^2+2 i K mu)=tau3((K+i mu)^2)+tau3(mu^2)",
+    "imaginary_saddle": "K=-i mu",
+    "gauge_covariance": "K and mu transform by SO(3) conjugation",
+    "trace_normalization": "the same tau3 normalizes |DX|^2, |D Phi|^2 and the auxiliary pairing",
+    "KO6_physical_half_trace": "unchanged after conjugate doubling",
+    "continuous_coefficient_added": false,
+    "verdict": "closed as a real classical auxiliary; conditional only as a complex quantum-measure HS representation"
+  },
+  "metric_fork": {
+    "SO3_module_decomposition": "Sym3(R)=R I3 direct_sum Sym3,0(R)=1 direct_sum 5",
+    "invariant_metric_dimension": 2,
+    "consequence": "SO(3) covariance alone does not fix equal central and traceless weights"
+  },
+  "maximum_errors": {
+    "middle_commutator_moment_map": 3.076740298213702e-15,
+    "mapping_cone_endpoint_formula": 5.684341886080802e-14,
+    "so3_adjoint_projection": 0.0,
+    "symmetric_projection": 0.0,
+    "legendre_identity_at_stationary_auxiliary": 0.0,
+    "legendre_gap_identity": 2.842170943040401e-14,
+    "gauge_covariance": 7.28310548396582e-15,
+    "kinetic_trace_normalization": 8.881784197001252e-16,
+    "ko6_physical_half_auxiliary": 0.0,
+    "real_auxiliary_wrong_sign": 0.0,
+    "imaginary_hs_completion": 9.769962616701378e-15
+  },
+  "minimum_sampled_legendre_gap": 0.6268414621771371,
+  "status": {
+    "ordinary_mapping_cone_curvature": "fail",
+    "strict_so3_adjoint_D_term": "fail",
+    "self_adjoint_M3_real_classical_auxiliary": "fail_by_sign",
+    "self_adjoint_M3_imaginary_HS_measure": "conditional_open",
+    "remaining_gate": "derive Sym3(R) from the represented degree-two quotient, or derive the imaginary HS contour and determinant/Pfaffian weight from the KO6 fermionic measure"
+  }
+}

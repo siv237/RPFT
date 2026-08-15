@@ -2,6 +2,115 @@
 
 Append-only chronological record of wiki operations.
 
+## [2026-08-12] recovery | Quantized Rotor Result Restored
+
+- Found the unintegrated `wilson_rotor_momentum_sector` audit after shell rollback.
+- Restored the exact coefficient pair from eight unit-weight planes and momenta `(1,1,1,3,3,3,3,3)`.
+- Retracted the overly broad fixed-charge no-go in the new parent-superconnection gate.
+- Reopened the Wilson--defect route conditionally at operator level.
+- Set the canonical fixed-charge boundary path integral as the next decisive gate.
+
+## [2026-08-13] architecture | Spectral Pati–Salam Bridge Gate
+
+- Read the primary spectral Pati–Salam unification and vacuum literature.
+- Tested four canonical scalar scenarios with the project’s existing
+  `g1=g2` crossing fixed as the intermediate scale.
+- Found a residual `2.63%–4.90%` spread; no scenario passes without a new
+  scale fit.
+- Reproduced exact one-loop unification only when `mR` is freely optimized.
+- Promoted parent derivation of the Pati–Salam vacuum and `mR` to the next
+  decisive model-improvement gate.
+
+## [2026-08-13] no-go | Pati–Salam Vacuum Singlet Gate
+
+- Cross-checked the published spectral Pati–Salam vacuum obstruction against
+  the project’s existing Coleman–Weinberg singlet and portal ledger.
+- Proved that a universal singlet mass shift cannot separate the required
+  Goldstone from the unwanted mass-degenerate scalar.
+- Computed `M_R^(0)=2.4637 GeV`, `10.78–13.31` decades below the Pati–Salam
+  scales, forbidding a notation-only identification.
+- Replaced the universal-singlet repair with a representation-sensitive
+  diagonal finite-block menu as the next decisive gate.
+
+## [2026-08-13] construction | Pati–Salam Diagonal Connector Menu
+
+- Compared identity, `SU(2)_R` Casimir, `SU(4)` Casimir and combined
+  mass operators on the required `(1,10)` and unwanted `(0,6)` modes.
+- Found zero sensitivity for a singlet and nonzero sensitivity for both
+  adjoint directions.
+- Selected the four-color `1+15` block as a target diagnostic joining scale
+  transmutation and scalar-representation separation.
+- Opened the restricted potential, Hessian, Goldstone and fermion-mass gate.
+
+- Later correction: the Casimir table is only a representation-separation
+  diagnostic, not the mass matrix of a specific adjoint VEV.
+
+## [2026-08-13] correction | Restricted Pati–Salam Potential No-Go
+
+- Corrected the `Sigma` representation from a presumed weak-singlet `1+15`
+  to the actual `(2_R,2_L,1+15_4)` spectral field.
+- Proved that a high-scale `Sigma` VEV cannot preserve `SU(2)_L`.
+- Recorded nine required plus six unwanted massless modes and negative
+  Hessian directions at the canonical breaking point.
+- Retracted the claim that the weak-singlet `1+15` candidate is native to the
+  current grading.
+- Promoted a genuine `(1_R,1_L,15_4)` grading extension and missing
+  multi-trace invariants to the next gate.
+
+## [2026-08-13] correction | Pati–Salam Literature Re-Audit
+
+- Distinguished the general fundamental and constrained composite scalar
+  branches using arXiv:1507.08161 and arXiv:1905.04533.
+- Corrected the overbroad claim that no spectral branch contains a
+  weak-singlet `(1,1,15)`; it is present conditionally in the composite
+  first-order branch.
+- Restricted the singlet no-go to the decoupled and pure universal-shift
+  ansatz; a connected diagonal real singlet remains open.
+- Recorded that the project still lacks an explicit Pati–Salam finite
+  Hilbert/Dirac block, so grading claims are targets rather than derived
+  project facts.
+
+## [2026-08-13] construction | Explicit Pati–Salam Finite Dirac Block
+
+- Built the 32-state KO6 one-generation module from right, left and
+  antiparticle Pati–Salam sectors.
+- Constructed the general `Y`, symmetric `M_R` and symmetric `M_L` Dirac
+  channels and verified self-adjointness, grading and reality numerically.
+- Reproduced the fundamental scalar representation dimensions `64+36+36`.
+- Implemented the literature composite formulas for `phi`, `Delta` and
+  `Sigma_4`, including exact Majorana symmetry.
+- Opened the exact full/SM-subalgebra first-order double-commutator kernel as
+  the next gate.
+
+## [2026-08-13] proof | Exact Pati–Salam First-Order Kernel
+
+- Implemented the full and embedded-SM algebra actions and opposite actions
+  on the 32-state KO6 module.
+- Computed exact rank witnesses in the 272-real-dimensional Dirac space.
+- Found the full-algebra kernel `Y=A tensor I4`, `M_R=M_L=0`, dimension 8.
+- Found the SM kernel with separate lepton/quark bidoublets and one
+  `Delta=(2_R,4_4)`-like Majorana seed, dimension 32.
+- Verified analytic bases exhaustively and scanned four embedding
+  conventions.
+- Promoted the generalized inner fluctuation with quadratic `A_(2)` to the
+  next gate.
+
+## [2026-08-12] audit | Wilson-Defect Parent Superconnection
+
+- Constructed the minimal common `U(1)_root x SU(2)_F` superconnection.
+- Proved the SO(3) exact-log solution requires eight vector triplets and eight zero-weight lines.
+- Identified the SU(2)-doublet center-lift and angle-normalization obstruction.
+- Closed the copy-symmetric fixed-charge sector and the minimal existing bridge.
+- Promoted quadratic `T3R^2` to the next red-door parent-action test.
+
+## [2026-08-12] audit | Tome II Red-Door Reverse Audit
+
+- Distinguished closed implementations from absence of mathematical results.
+- Kept C6 red for the declared Maxwell--ghost model.
+- Split the neutrino node into surviving topology/operator content and frozen quantitative claims.
+- Reclassified EW/QCD as conditional because the quadratic `T3R^2` parent class is untested.
+- Ranked Wilson--defect, `T3R^2`, and finite vertex-algebra reopening routes.
+
 ## [2026-07-09] setup | Initial LLM Wiki Structure
 
 - Files touched: `WIKI_SCHEMA.md`, `raw/README.md`, `wiki/index.md`, `wiki/syntheses/project-overview.md`, `wiki/syntheses/toe-ugsm-bridge.md`, `wiki/concepts/*.md`, `wiki/sources/*.md`, `wiki/questions/formalize-common-source.md`, `wiki/lints/2026-07-09-initial-lint.md`
@@ -1555,3 +1664,1097 @@ Append-only chronological record of wiki operations.
 - Replaced the arbitrary real tau amplitude by a primitive compact `U(1)` phase and proved that the period removes continuous field rescaling up to sign.
 - Rejected the minimal local compact-phase action: the derivative Hessian vanishes on the constant mode, a cosine potential introduces an unfixed scale, and the full carrier gives a product rather than a sum of volumes.
 - Kept one sharply defined continuation: derive the two factor contributions from one boundary/defect symplectic pairing shared with the neutrino sector.
+
+## 2026-08-09 — Version III recovered pairing and conditional-measure gates
+
+- Closed pure BF/AKSZ pairing as a source of the positive Hessian.
+- Derived factor norms from canonical spectator averages.
+- Localized the next obstruction to the origin of the doubled factor module.
+
+## 2026-08-09 — Version III minimal finite-algebra gate
+
+- Derived two factor components and equal trace weights from the primitive idempotents of C plus C.
+- Used normalized spectator zero modes to recover pi^2 and 2*pi without free coefficients.
+- Closed the doubled-module-origin gap inside a minimal spectral reduction.
+- Proved that the simple diagonal real representation forces finite Dirac mixing to zero under the first-order condition.
+
+## 2026-08-09 — Version III real bimodule square gate
+
+- Enumerated the four first-order edges of the C plus C bimodule square.
+- Proved that reality closure makes four bimodule sectors minimal for connecting the two diagonal factor sectors.
+- Constructed the general odd real-compatible Dirac block and found two complex edge parameters.
+- Found that full rank requires a nontrivial relative phase.
+- Recorded the KO6 obstruction: the undoubled square has commuting J and grading and must be doubled before a physical half-trace can be defined.
+
+## 2026-08-10 — Version III automorphism and half-trace gate
+
+- Quotiented the two complex finite-Dirac edges by all reality-compatible rephasings and sheet exchange.
+- Found three continuous orbit invariants: two moduli and the product phase modulo pi.
+- Constructed the explicit eight-state KO6 doubling and verified J-gamma anticommutation.
+- Showed that the reality-orbit half-trace restores unit factor weights and rank 23.
+- Kept the half-trace conditional because its derivation from the common bosonic/fermionic parent measure remains open.
+
+## 2026-08-10 — Version III finite Dirac parent-potential gate
+
+- Introduced the positive orbit-trace potential Tr((D_F^2-I)^2).
+- Solved its global minima exactly: equal edge moduli and product phase plus or minus pi/2.
+- Verified a positive quotient Hessian with eigenvalues 32, 32 and 8.
+- Closed the continuous edge-direction orbit without fitting x or z.
+- Isolated two remaining gaps: the physical scale M and the sign of the CP-conjugate vacuum branch.
+
+## 2026-08-10 — Version III absolute-scale no-go
+
+- Audited the global homothety of the carrier, Dirac spectrum and p-form norms.
+- Proved that the current architecture fixes M R but not M or R separately.
+- Identified the spectral cutoff as an external dimensionful anchor unless promoted to a dynamical dilaton/radion.
+- Showed that a minimal A R + B/R radion potential fixes the radius through an un-derived coefficient ratio.
+- Restricted honest blind predictions to dimensionless observables until a scale-generating sector is built.
+
+## 2026-08-10 — Version III dilaton--radion transmutation gate
+
+- Proved that the positive one-field quartic dilaton has no nonzero vacuum.
+- Proved that the minimal two-field scale-invariant potential retains one exact flat scale direction.
+- Rejected the self-dual-radius potential without a derived radius-inversion symmetry.
+- Constructed a Coleman--Weinberg joint dilaton, radion and finite-Dirac vacuum candidate.
+- Set the next decisive computation to the full supertrace coefficient B, with B less than or equal to zero as the immediate kill criterion.
+
+## 2026-08-10 — Version III finite zero-mode supertrace gate
+
+- Derived the orbit-trace kinetic metric diag(4,4,1) at the flattened vacuum.
+- Converted the finite potential Hessian into three degenerate scalar masses squared equal to 8 chi squared.
+- Counted two physical Dirac pairs of mass chi.
+- Obtained the canonical finite supertrace numerator 184 = 8*23 and B0 = 23/(8 pi^2), which is positive.
+- Isolated the relative kinetic coefficient kappa and the missing gauge/ghost, dilaton and KK sectors as the remaining quantum-scale gates.
+
+## 2026-08-10 — Version III product heat-kernel kappa gate
+
+- Squared the flat product Dirac operator and evaluated the spin trace of E squared.
+- Derived equal kinetic and quartic coefficients in a4, corresponding to kappa=2 in the previous convention.
+- Corrected the three scalar masses from 8 chi squared to 4 chi squared.
+- Corrected the finite Coleman--Weinberg seed from 23/(8 pi^2) to 5/(8 pi^2), still positive.
+- Explicitly removed the normalization-dependent appearance of 23 from the structural claims.
+## 2026-08-10 — Version III gauge--ghost and KK completion gate
+
+- Retained the heat-kernel-normalized finite numerator `40`.
+- Isolated the stable massive-vector plus ghost contribution as `3 c_A^2`.
+- Proved that the current parent action does not fix the gauge quotient,
+  canonical coupling, BV complex, or field-specific KK Hessians.
+- Forbade automatic inheritance of Tome II towers by the projected Version
+  III factor module.
+- Reduced the next task to a full fluctuated product Dirac/BV lift.
+## 2026-08-10 — Version III fluctuated product and BV complex
+
+- Lifted the finite KO6 square to an almost-commutative product on K.
+- Derived the bimodule charge vector (0,+1,-1,0) and removed the trivial
+  diagonal U(1).
+- Fixed the faithful gauge group to the relative U(1).
+- Built the minimal BRST/BV complex and recovered three physical
+  massive-vector degrees of freedom.
+- Reduced the gauge mass ratio to m_A^2/chi^2=8 g^2.
+- Set the next gate to the common a4 gauge-coupling normalization.
+## 2026-08-10 — Version III a4 gauge coupling gate
+
+- Computed the scalar and gauge Clifford traces in the same a4 block.
+- Used the derived orbit charge trace Tr Q^2=2.
+- Fixed the relative U(1) coupling to g^2=3/8.
+- Fixed the vector mass ratio to m_A^2/chi^2=3.
+- Closed the gauge-completed zero-mode numerator at 67.
+- Advanced the next gate to the spin/flat-character KK branch audit.
+## 2026-08-10 — Version III dimensional product consistency gate
+
+- Separated the interpretation of K as a four-dimensional Euclidean base
+  from its Tome II role as an internal compact carrier.
+- Proved that an extra KK sum double-counts modes in the base-K branch.
+- Identified the internal-K branch as an eight-dimensional M4 x K product
+  requiring factorized heat-kernel reduction.
+- Used R_K=6 and the Lichnerowicz bound to show that the naive internal
+  spinorial Dirac operator has no zero modes.
+- Restricted kappa=2, g^2=3/8 and B_zero=67/(64 pi^2) to the derived 4D
+  zero-mode effective action until a UV lift is selected.
+## 2026-08-10 — Version III dual architecture verdict
+
+- Tested the compact base-K determinant against all allowed finite
+  dimension-four counterterms.
+- Showed symbolically that finite counterterms can move the vacuum to an
+  arbitrary positive scale unless a subtraction condition is derived.
+- Tested all four product spin structures and all unitary flat characters
+  in the internal-K branch.
+- Proved by the R_K/4=3/2 Lichnerowicz bound that every flat internal
+  geometric Dirac kernel is empty.
+- Prioritized the base-K spectral renormalization gate; retained nonflat
+  internal curvature/defect lifts only as a new model class.
+## 2026-08-10 — Version III base-K spectral renormalization gate
+
+- Wrote the general compact one-loop scale potential with finite local
+  counterterms.
+- Proved that changing zeta scale is exactly equivalent to shifting the
+  finite quartic coupling.
+- Tested zeta-minimal, mu=1/R and spectral-cutoff prescriptions.
+- Found that none selects a parameter-free vacuum: each leaves a finite
+  subtraction constant, a homothety scale or continuous spectral moments.
+- Reclassified the base-K branch as a renormalizable 4D effective parent
+  action with one explicit open scale-setting condition.
+## 2026-08-10 — Version III RG and anomaly scale-setting gate
+
+- Derived the minimal relative-U(1) one-loop coefficient b=2.
+- Reclassified g^2=3/8 as a spectral matching condition rather than a
+  scale-independent constant.
+- Found no nonzero perturbative one-loop gauge fixed point.
+- Derived the dimensionless Landau ratio exp(32 pi^2/3).
+- Proved that dimensional transmutation and trace anomaly retain one RG
+  integration scale.
+- Advanced the program to a one-scale train plus dimensionless blind-test
+  protocol.
+## 2026-08-10 — Version III one-scale blind scorecard
+
+- Preregistered one abstract train scale m_ref=chi without particle
+  identification.
+- Listed the dimensionless spectrum, coupling, beta and CP outputs.
+- Removed the tau-like and neutrino-like construction targets from the
+  blind-prediction count.
+- Rejected the direct two-charged-lepton readout because the finite Dirac
+  pairs are exactly degenerate.
+- Recorded that no neutrino mass operator/readout currently exists.
+- Kept the two-sector Definition of Done open pending a representation-level
+  physical readout.
+## 2026-08-10 — External red-team convention audit
+
+- Rechecked the proposed factor-two correction against the canonical
+  quadratic action and retained K_quad=2G for kappa=2.
+- Retained scalar mass squared 4 chi^2 and supertrace numerators 40 and 67.
+- Confirmed that the current flattening equation is B Bdagger=I.
+- Rewrote the BV count as a general R_xi quartet cancellation.
+- Confirmed g^2=3/8 and the Lichnerowicz no-go.
+- Corrected the proposed spectral route: a2 contains Phi^2 and a4 contains
+  Phi^4; a0 contains neither.
+- Opened an explicit compact a2/a4 spectral-moment audit.
+## 2026-08-10 — Version III compact a2/a4 moment gate
+
+- Included the curved Dirac term E=-R/4-Phi^2 in the compact heat-kernel
+  calculation.
+- Derived spin-traced coefficients -4 for a2 Phi^2, 2 for kinetic and
+  quartic a4 terms, and R/3 for the a4 curvature coupling.
+- Obtained chi^2=(f2/f0)Lambda^2-R/12.
+- Reduced independent bare lambda2/lambda4 freedom to the single
+  combination (f2/f0)(Lambda R)^2.
+- Kept the absolute scale open because the moment ratio, cutoff-radius
+  relation and finite quantum matching shift are not derived.
+## 2026-08-10 — Version III spectral-function moment menu
+
+- Preregistered sharp, heat, Gaussian and second-heat cutoff profiles.
+- Computed moment ratios 1, 1, sqrt(pi)/2 and 2.
+- Found that all profiles pass the vacuum gate at Lambda R=1 but predict
+  different chi R values.
+- Proved a continuous profile-cutoff degeneracy using exp(-a u).
+- Closed the minimal spectral-function selector route and retained one
+  train invariant zeta_mom.
+- Returned the main priority to the physical representation/readout gate.
+## 2026-08-10 — Version III representation-level readout
+
+- Derived the finite charge table (0,0,+1,-1) and scalar charges (-1,+1).
+- Verified covariance of every finite Dirac/Yukawa edge.
+- Verified cancellation of linear and cubic relative-U(1) anomalies.
+- Proved that the full-rank vacuum leaves no neutral fermion zero mode.
+- Rejected a direct Standard Model readout because SU(3), SU(2),
+  hypercharge representations and weak vertices are absent.
+- Identified the complete current model as an anomaly-free Higgsed hidden
+  U(1) EFT with two mirror chiral pairs.
+- Opened the next choice: derive a portal or start a new observed-sector
+  finite algebra.
+## 2026-08-10 — Version III cross-tome closure audit
+
+- Rechecked the kinetic dispute with the elementary Euler--Lagrange
+  equation m^2=H/(2A) and retained numerators 40 and 67.
+- Imported the final Tome II status of S_vac as structural compression and
+  C6 as closed negatively.
+- Imported the negative minimal EW/QCD verdict and conditional neutrino
+  selector.
+- Recorded the missing functional bridge between S_vac and the Version III
+  Coleman--Weinberg hidden action.
+- Reaffirmed the conditional origin of the orbit half-trace.
+- Split future work into hidden measure/portal closure and a separate
+  observed-sector finite-algebra reconstruction.
+## 2026-08-10 — Version III orbit measure and Pfaffian gate
+
+- Separated full bosonic spectral trace from physical fermion state count.
+- Derived the fermionic one-half factor from the Pfaffian measure.
+- Rejected a universal bosonic orbit half-trace.
+- Verified that full KO6 doubling leaves scalar masses, g^2=3/8 and the
+  physical supertrace numerator 67 unchanged.
+- Demoted absolute role-rank norms to reduced-module construction targets.
+- Closed the hidden measure gate and advanced to the portal menu.
+## 2026-08-10 — Version III portal menu gate
+
+- Classified scalar, abelian kinetic-mixing and neutrino portals.
+- Found the scalar portal operator unique under sheet exchange but its
+  coefficient undetermined.
+- Proved zero kinetic mixing from the absence of bi-charged states and
+  sheet charge conjugation.
+- Rejected the neutrino portal because it requires a new connector
+  bimodule and a free complex matrix.
+- Proved exact nongravitational decoupling for a block-diagonal direct-sum
+  spectral action.
+- Advanced the hidden branch to final status freeze.
+## 2026-08-10 — Version III.H final status freeze
+
+- Accepted the final external red-team verdict of internal mathematical
+  consistency.
+- Clarified that universal bosonic half-trace is no longer an open blocker;
+  full spectral trace is used.
+- Froze the model as a one-scale anomaly-free hidden U(1) EFT with two
+  CP-conjugate vacuum branches.
+- Retained kappa=2, g^2=3/8, mass ratios and supertrace numerator 67.
+- Recorded exact nongravitational decoupling and absence of laboratory
+  predictions.
+- Renamed Tome III to remove the unified-action overclaim.
+- Reserved Version IV.SM for observed-sector reconstruction.
+
+## 2026-08-10 — Version IV.SM observed reconstruction opened
+
+- Created a separate Tome IV.SM rather than relabeling hidden modes as known
+  particles.
+- Defined physical closure through representation, anomaly, normalization,
+  RG and independent blind-test gates.
+- Required at least one gauge-sector and one matter-sector blind observable.
+- Added the Standard Model one-generation charge ledger as an empirical
+  target, not as a derived result.
+- Opened the first computational milestone: classification of finite
+  geometries that reproduce an anomaly-free observed-sector representation.
+
+## 2026-08-10 — Version IV.SM finite algebra menu gate
+
+- Exhausted the declared simple-block menu through three summands.
+- Found `C + H + M3(C)` as the unique dimension minimum inside the
+  quaternionic weak-block branch with a surviving central U(1).
+- Derived the local Lie algebra `su(3) + su(2) + u(1)` after one central
+  constraint.
+- Recorded the 16-state one-generation bimodule as a target-compatible
+  baseline, not yet a unique derivation.
+
+## 2026-08-10 — Version IV.SM bimodule multiplicity gate
+
+- Exhausted 15,625 multiplicity vectors in the restricted edge menu.
+- Combined Yukawa completeness with all local and global anomaly tests.
+- Derived one common quark-lepton generation atom with 16 states in the
+  Dirac-neutrino branch and 15 states without a right-handed neutrino.
+- Proved that arbitrary common replication remains allowed, so the observed
+  count of three generations is still open.
+
+## 2026-08-10 — Version IV.SM frozen-K family selector gate
+
+- Computed the integral homology and cohomology of `RP3 x S1` from the
+  cellular product complex.
+- Counted four spin structures and two discrete flat-character branches.
+- Reused the positive-curvature Lichnerowicz gap to exclude all flat-twisted
+  Dirac zero modes.
+- Proved that the preregistered canonical invariant menu contains no natural
+  multiplicity three.
+- Required a new family carrier rather than an arithmetic `4-1` selector.
+
+## 2026-08-11 — Version IV.SM affine family carrier gate
+
+- Reconstructed all 24 elements of `AGL(2,2)` on the four-state torsor.
+- Verified that the permutation commutant is exactly `span{I,J}`.
+- Derived the canonical decomposition `C4 = 1 + 3` and rank-three projector
+  `P3=I-J/4`.
+- Built a conditional three-generation module by tensoring the triplet with
+  the anomaly-free generation atom.
+- Recorded full affine symmetry as a new postulate and left hierarchy and
+  mixing open.
+
+## 2026-08-11 — Version IV.SM rank-one breaking gate
+
+- Exhausted the six `GL(2,2)` maps against the mod-two cohomology ring.
+- Isolated the unique nontrivial shear automorphism.
+- Derived its rank-one odd projector and the leading one-heavy/two-light
+  family texture.
+- Proved that factor-translation operators commute and therefore cannot
+  generate nontrivial CKM misalignment.
+- Required a derived sector-dependent noncommuting incidence operator as the
+  next gate.
+
+## 2026-08-11 — Version IV.SM incidence operator menu gate
+
+- Exhausted all 16 affine elements outside the residual order-eight group.
+- Used Hermitian incidence operators rather than raw permutation matrices.
+- Found 12 full-`M3` directions: four transpositions and eight three-cycles.
+- Confirmed that four four-cycles remain reducible after Hermitian
+  symmetrization.
+- Proved that residual-group averaging removes the gain and that no current
+  geometric selector chooses an operator, coefficient or sector map.
+
+## 2026-08-11 — Version IV.SM quadratic parent selector gate
+
+- Reduced the 12 successful permutation directions to eight distinct
+  Hermitian incidence operators.
+- Computed all commutator norms against the factor translations, shear and
+  rank-one projector.
+- Found four quadratic score classes, each with multiplicity two.
+- Tested inverse-square geometric weights and obtained two degenerate minima.
+- Proved that the two minima commute, so different sector assignments still
+  fail to generate CKM mixing.
+
+## 2026-08-11 — Version IV.SM cross-sector CP gate
+
+- Exhausted all 28 unordered pairs of the eight real Hermitian incidence
+  operators.
+- Found commutator-norm values 0, 1, 4 and 6 with no unique extremal pair.
+- Showed that the cross-coupling sign chooses alignment or a fourfold
+  noncommuting branch but is not derived.
+- Proved `Tr([Hu,Hd]^3)=0` for every real symmetric pair.
+- Isolated the orientation-odd Hermitian three-cycle operator as the minimal
+  possible source of a geometric complex phase.
+
+## 2026-08-11 — Version IV.SM orientation-odd CP gate
+
+- Constructed the general Hermitian directed-cycle operator `H+rK`.
+- Derived its nondegenerate generic triplet spectrum.
+- Symbolically tested all 28 sector pairs with independent real coefficients.
+- Proved that the physical squared-mass Jarlskog trace-cube vanishes
+  identically for every pair.
+- Classified the unit-weight overlap matrices and found only permutations or
+  large democratic `1/3`--`2/3` mixing patterns.
+- Required a third noncommuting layer or a genuine cross-sector orientation
+  invariant rather than merely complex matrix entries.
+
+## 2026-08-11 — Version IV.SM spectral gauge normalization gate
+
+- Accepted the external recommendation to prioritize gauge normalization
+  before further family-selector work.
+- Reconfirmed that the free Betti-number sum of `RP3 x S1` is four, not five.
+- Derived `C1=C2=C3=2` in GUT hypercharge normalization.
+- Obtained `g1=g2=g3` and `sin^2(theta_W)=3/8` at the spectral matching scale.
+- Ran the minimal one-loop Standard Model RG test with PDG 2026 inputs.
+- Found widely separated pairwise crossing scales and no triple intersection.
+- Closed the no-threshold minimal running branch and prohibited fitted gauge
+  threshold shifts.
+
+## 2026-08-11 — Version IV.SM Higgs-Yukawa gate
+
+- Chose to stabilize the observed scalar/Yukawa graph before attempting a
+  unified boundary action.
+- Exhausted all 16 left-scalar-right combinations and retained exactly the
+  four Standard Model Dirac Yukawa vertices.
+- Derived the unique one-doublet renormalizable scalar invariant menu.
+- Counted the unresolved Yukawa and Majorana matrix freedom.
+- Required any future boundary action to derive portal, family breaking and
+  CP orientation from one connector representation rather than separate
+  coefficients.
+
+## 2026-08-11 — Version IV.SM boundary connector menu gate
+
+- Defined five simultaneous requirements for a single-source boundary
+  package.
+- Closed direct-sum, single-scalar, single-vectorlike-pair and single-chain
+  menus structurally.
+- Isolated a two-path vectorlike messenger cycle with a family-triplet
+  connector as the first capability-complete graph ansatz.
+- Kept real-structure, order-one, anomaly, phase-survival and normalization
+  gates open.
+- Prepared `COLLEAGUE_REVIEW_REQUEST_V4_BOUNDARY.md` for external red-team.
+
+## 2026-08-11 — Version IV.SM vectorlike messenger chain gate
+
+- Built an explicit hidden-charge-consistent messenger chain for one Yukawa
+  sector.
+- Verified vectorlike cancellation of local gauge and gravitational
+  anomalies.
+- Derived the dimension-six effective portal-Yukawa operator.
+- Proved by graph cycle rank that one chain has no physical phase and two
+  paths have exactly one.
+- Found that all four Dirac sectors require four distinct SM messenger
+  representation types unless a new unified multiplet is introduced.
+
+## 2026-08-11 — Version IV.SM unified messenger gate
+
+- Compared separate SU(5) messenger packages with a single SO(10)-type
+  vectorlike spinor package.
+- Found that `16+bar16` covers all four Dirac endpoint sectors.
+- Counted 64 Weyl messenger states for the neutral-plus-hidden-charged chain.
+- Derived equal `8/3` one-loop beta shifts for all three gauge factors.
+- Proved that complete degenerate multiplets cannot repair the spectral
+  gauge-crossing mismatch.
+- Isolated within-multiplet component splitting as a new, still-unfixed
+  boundary datum.
+
+## 2026-08-11 — Version IV.SM boundary threshold splitting gate
+
+- Tested one-parameter component masses generated by `Y`, `B-L` and `T3R`.
+- Proved that every linear threshold direction vanishes by the mixed-anomaly
+  identities of the complete spinor package.
+- Tested the first nonlinear square-charge menu against the measured gauge
+  mismatch.
+- Found that the least extreme two-pair repair is the conditional `T3R^2`
+  branch with a component mass spread of about `1.25e3`.
+- Classified every inverse-fit threshold repair as a diagnostic rather than
+  a blind prediction.
+
+## 2026-08-11 — Version IV.SM order-one Krajewski square gate
+
+- Converted the external order-one objection into an explicit bimodule-edge
+  computation.
+- Proved that edges changing both left and right summand labels are forbidden,
+  so the triangular sketch must be replaced by a rectangle.
+- Constructed a self-adjoint J-compatible square and derived its exact
+  quadratic, quartic and determinant invariants.
+- Found one surviving loop phase with positive-quartic minima at +-pi/2;
+  the orientation sign remains degenerate.
+- Proved that unrestricted family multiplicity factors still span full
+  M3(C), shifting the primary obstruction from CP survival to flavour
+  selection.
+
+## 2026-08-11 — Version IV.SM family square spectral selector gate
+
+- Restricted the family edge factors to the derived rank-one projector and
+  the exhaustive Hermitian incidence menu.
+- Computed the full 12-by-12 square moments for all eight candidates.
+- Found maximal phase minima for every candidate.
+- Derived lower vacuum energy for the four transposition operators than for
+  the four Hermitian three-cycle operators.
+- Reduced the selector obstruction from eight operators to one four-element
+  residual orbit without manually assigning a family direction.
+
+## 2026-08-11 — Version IV.SM cross-sector transposition orbit gate
+
+- Quotiented the four single-sector minima by the stabilizer of the rank-one
+  projector.
+- Found three physical ordered up/down relative orbit classes.
+- Derived one cross word taking the values minus one half, zero and plus one
+  half and separating all three classes.
+- Proved that the separate square action does not generate this cross word.
+- Tested the unit-amplitude family readout and found zero CP invariant and
+  large mixing in every relative class.
+
+## 2026-08-11 — Version IV.SM common up-down Krajewski loop gate
+
+- Built a primary order-one up/down rectangle and its distinct J-conjugate
+  copy.
+- Verified the 24-dimensional finite matrix against self-adjointness, grading
+  and real-structure conditions.
+- Derived the cross word directly from the quartic spectral trace with no
+  independent cross coefficient.
+- Spectrally removed the commuting relative orbit.
+- Found two exactly degenerate noncommuting minima whose loop phases are zero
+  and pi, leaving a CP-even orientation fork.
+
+## 2026-08-11 — Version IV.SM orientation spectral no-go
+
+- Computed the exact characteristic polynomials of the two surviving
+  noncommuting branches.
+- Proved equality of the D and D-squared spectra and all bosonic spectral
+  moments.
+- Verified vanishing graded even traces and equal determinant magnitudes.
+- Closed all attempts to select orientation by changing the real spectral
+  function or adding higher even moments.
+- Reduced the admissible next step to a fermionic Pfaffian/eta phase or a
+  quantized orientation-sensitive boundary term.
+
+## 2026-08-11 — Version IV.SM Pfaffian and eta orientation gate
+
+- Reordered the primary family operator into its chiral off-diagonal block.
+- Constructed the canonical antisymmetric form gamma D and computed its
+  Pfaffian exactly.
+- Found opposite reduced Pfaffian signs and a relative phase pi between the
+  two bosonically isospectral branches.
+- Proved that the full KO6-paired Pfaffian is positive and equal in both
+  branches.
+- Verified zero eta signature and showed that the reduced sign depends on
+  determinant-line orientation and is not topological in the full complex
+  connector space.
+
+## 2026-08-11 — Version IV.SM determinant-line and inflow gate
+
+- Derived explicit nonvanishing Pfaffian sections over both connector
+  circles.
+- Found equal winding and a global complex-line trivialization.
+- Constructed an analytic zero-free interpolation between the two real-sign
+  branches and proved zero spectral flow.
+- Combined the result with the vectorlike anomaly ledger.
+- Closed Dai-Freed/anomaly inflow as an orientation selector unless a new
+  chiral boundary or spacetime bulk sector is introduced.
+
+## 2026-08-11 — Version IV.SM algebra embedding weighted selector gate
+
+- Followed the external proposal to test eigenfunction and representation
+  data beyond the unweighted spectrum.
+- Found an explicit determinant-minus-one commutant unitary identifying the
+  two branches for the coarse observed/hidden algebra.
+- Explained the reduced Pfaffian sign as this orientation-reversing basis
+  transformation.
+- Promoted the derived family translations and shear to represented data and
+  proved that the equivalence is then obstructed.
+- Found algebra-decorated fourth moments that distinguish the branches.
+- Isolated a positive P-minus-weighted moment selecting one branch, while
+  leaving the origin of the weighted state as the next dynamical gap.
+
+## 2026-08-11 — Version IV.SM conditional and variational state gates
+
+- Closed the vectorlike X-sector shortcut as orientation-even.
+- Recovered the complementary odd/even corner cancellation.
+- Replaced corner choice by variation over the full family state space.
+- Proved exact quartic selection of the plus branch with gap about 0.616201.
+- Confirmed the selected branch at sixth order.
+- Kept the physical Yukawa and CKM readout open.
+
+## 2026-08-11 — Version IV.SM Yukawa operator map gate
+
+- Constructed three coefficient-free family-to-Yukawa maps from the selected
+  branch and variational state.
+- Found a state-anticommutator map with a nonzero cubic CP invariant.
+- Derived the quartic cotangent-gradient map and its dimensionless mass and
+  mixing ledger.
+- Proved that equally covariant maps give incompatible CP and mass readouts.
+- Isolated the missing operator theorem connecting the bosonic variational
+  functional to four distinct fermionic Yukawa edges.
+
+## 2026-08-11 — Version IV.SM inner-fluctuation Yukawa gate
+
+- Computed local family one-form spaces for four nested algebra choices.
+- Found the exact dimension sequence zero, two, eight and nine for both
+  selected incidence edges.
+- Proved that the CP-capable anticommutator correction first appears only in
+  the full M3 family algebra.
+- Verified that the selected projector, state and incidence operators already
+  generate full M3.
+- Isolated a required restricted one-form module or variational constraint as
+  the next structural ingredient.
+
+## 2026-08-11 — Version IV.SM state-anchored bimodule gate
+
+- Defined the minimal module of family connectors touching the selected pure
+  state at at least one endpoint.
+- Derived its unique Hilbert--Schmidt orthogonal projection and verified
+  idempotence, covariance, star closure and bimodule stability.
+- Reduced the unrestricted nine-dimensional family space to five dimensions.
+- Obtained a coefficient-free Yukawa readout with a nonzero cubic CP
+  invariant.
+- Kept the result conditional on deriving the support axiom from the finite
+  graph and recorded the remaining mass, mixing and four-sector failures.
+
+## 2026-08-11 — Version IV.SM relative Krajewski star gate
+
+- Enumerated every corner sum over the state algebra decomposition of M3.
+- Proved uniqueness of the five-dimensional star under anchor, connectivity
+  and no-complement-dynamics requirements.
+- Derived the state projection by endpoint inclusion--exclusion.
+- Upgraded the support axiom from a free map choice to a conditional graph
+  theorem.
+- Proved that factorized gauge multiplicities leave only up-type and
+  down-type family textures rather than four Yukawa sectors.
+
+## 2026-08-11 — Version IV.SM gauge-Casimir family split gate
+
+- Decorated the quartic family operator by the derived endpoint gauge
+  Casimirs.
+- Proved exact down/electron anchor degeneracy at equal spectral couplings.
+- Used the frozen low-scale gauge train to obtain four distinct family
+  anchors without flavour coefficients.
+- Computed all four normalized mass ledgers and the quark/lepton mixing
+  matrices.
+- Rejected the construction as a blind flavour closure because quark mixing
+  remains large and the RG bridge is not closed.
+
+## 2026-08-11 — Version IV.SM one-ratio family functional gate
+
+- Added one common quadratic/quartic spectral ratio to all four Casimir
+  sectors.
+- Trained the ratio only on four light quark mass ratios.
+- Found the optimum near four but a maximum mass error above factor twenty.
+- Opened the CKM control only after training and recorded failures in all
+  three-angle hierarchy and the Jarlskog invariant.
+- Found no simultaneous mass-plus-CKM candidate inside a factor-ten window
+  over the broad scanned domain.
+
+## 2026-08-11 — Version IV.SM sector torsor incidence gate
+
+- Identified the four transposition minima with the four edges of the
+  quark--lepton sector graph K2,2.
+- Enumerated all sixteen orientation cocycles with canonical degree
+  normalization.
+- Trained each cocycle and one shared spectral ratio only on quark masses.
+- Found a selected branch with a Cabibbo-scale first angle but failed middle
+  masses, the remaining CKM hierarchy and the Jarlskog invariant.
+- Closed oriented vertex incidence and isolated a common messenger Schur
+  complement as the next distinct architecture.
+## 2026-08-11 — Common messenger Schur no-go
+
+Проверен общий двухканальный Schur complement на полном 16-элементном sign
+menu. Лучший mass-trained кандидат точно склеивает up/down spectra и даёт
+почти единичную CKM. Ветка общего центрального propagator закрыта.
+## 2026-08-11 — Casimir messenger propagator no-go
+
+Точные endpoint Casimirs введены в общий Schur propagator. Они формально
+расщепляют сектора, но mass optimum уходит в decoupling regime и подавляет
+все различия. Mass hierarchy и CKM не закрыты.
+## 2026-08-11 — Noncentral boundary propagator
+
+Проверены ground-projector и full-moment lift-ы полного family embedding.
+Они порождают заметный Cabibbo-plane rotation, но не mass hierarchy и не
+полную CKM. Локализован новый gap: нужны две независимые light-family scales.
+## 2026-08-11 — Universal bounded-propagator no-go
+
+Доказана общая асимптотика `Y=P_- - 2/t I + O(t^-2)` из involution property
+torsor edges. Она объясняет устойчивую light-pair degeneracy всех предыдущих
+messenger tests. Одиннадцать nonlinear functions дали числовое подтверждение.
+## 2026-08-11 — Modular endpoint partial pass
+
+Gibbs/GNS endpoint weighting изменило leading family metric и обошло общий
+bounded no-go. Получен Cabibbo-scale rotation, но mass hierarchy, остальные
+CKM angles и CP invariant всё ещё провалены.
+## 2026-08-11 — Affine modular temperature partial pass
+
+Mean/variance standardization вывела modular scale без fit. Cabibbo angle
+получен с ratio 1.20 к target, mass hierarchy улучшена, но full CKM и CP
+остаются открытыми.
+## 2026-08-11 — Moment-commutator modular trade-off
+
+Constraint `[R4,R6]/(2i)` активировал все mixing planes и усилил CP, а mass
+ledger улучшился. Но mass-selected branch почти переставляет первые два
+поколения, поэтому blind CKM закрыт отрицательно.
+## 2026-08-11 — Self-consistent orientation bifurcation no-go
+
+Общий orientation order parameter минимизирован до flavour data. При unit
+stiffness minimum остаётся в `alpha=0`; вычислен critical coupling
+`g_c=1.47996`. CP branch требует нового выведенного parent coefficient.
+## 2026-08-11 — Pfaffian stiffness supercritical pass
+
+Pfaffian Hessian оказался выше orientation bifurcation threshold. Exact
+periodic completion породил ненулевую vacuum magnitude, но reduced и full
+measure branches провалили blind CKM разными способами.
+## 2026-08-11 — Radial Pfaffian Hessian no-go
+
+Self-adjoint radial continuation исправила unit-circle determinant formula.
+Полный radial--orientation Hessian оказался диагональным; при canonical
+quartic normalization vacuum остаётся CP-even.
+## 2026-08-11 — First blind Cabibbo pass
+
+Две messenger scales с выведенным отношением `sqrt(13)` дали
+`s12=0.23596`, менее чем на 5% выше blind target. Полный mass/CKM/CP gate при
+этом остаётся отрицательным.
+
+## 2026-08-11 — Version IV spin-sum measure gate
+
+- Problem: the fermion determinant ranked the antiperiodic `S1` branch
+  lower, but this was physical only if the theory summed spin structures.
+- Search for solution: inspected the fixed-spin Hilbert space, BV complex,
+  spin torsor symmetry, possible topological weights, and the legacy RPFT
+  periodic-boundary assumption.
+- Expected result: a derived equal-weight sum would promote branch ranking
+  to dynamic selection.
+- Compliance check: no spin-transition field, groupoid Hilbert space,
+  `Z2` gauge sector, spin-TQFT weight or cobordism prescription is present.
+  The result is frozen as conditional ranking; periodicity or
+  antiperiodicity must be an explicit background input in the current model.
+
+## 2026-08-11 — Zero-prompt and TOE carrier genealogy
+
+- Problem: determine whether the repeatedly used carrier `K=RP3 x S1` was
+  actually derived by the original TOE document.
+- Search for solution: read the original and variational zero prompts,
+  extracted and visually checked `TOE.pdf`, inspected the unresolved
+  topological-realization discussion in `TOE5.pdf`, and traced the
+  `S3 x S1` test to the later TOE–UGSM bridge.
+- Expected result: either recover a continuous TOE-to-`K` derivation or
+  localize the assumptions that introduced the carrier.
+- Compliance check: TOE distinguishes the kernel domain `M x M`, finite NCG
+  space `F`, and conjectural `M_int`; none equals `K`. The working carrier is
+  a later hybrid candidate. A variational carrier-classification route is
+  recorded as the clean architectural reopening.
+
+## 2026-08-11 — Spin-branch mass stationarity no-go
+
+- Problem: an external audit proposed the periodic/AP determinant ratio as
+  the last no-new-physics selector of a nonzero `chi R` and questioned the
+  origin of the vector mass.
+- Search for solution: rechecked the charged finite vacuum and BV quotient,
+  then differentiated the exact branch ratio analytically and numerically.
+- Expected result: a positive stationary `chi R` would reopen the minimal
+  fixed-`K` scale mechanism.
+- Compliance check: the derivative is strictly positive for every
+  `chi R>0`; no nonzero stationary point exists. The vector mass is already
+  generated by the Higgsed relative `U(1)`, with the Goldstone living in the
+  separate gauge-orbit BV block.
+
+## 2026-08-11 — TOE-native S4 carrier candidate
+
+- Problem: fixed `RP3 x S1` is exhausted and was not derived by the primary
+  TOE correlation operator.
+- Search for solution: compared compact four-dimensional candidates through
+  a coefficient-free sequence: spin, homogeneous positive Einstein, no
+  unit-volume shape modulus, then maximal isometry.
+- Expected result: isolate a cleaner parent carrier without adding another
+  fitted field or geometric weight.
+- Compliance check: round `S4` conditionally wins the declared menu, while
+  absolute radius, correlation-functional sign, global uniqueness and the
+  second-variation test remain explicitly open.
+
+## 2026-08-11 — S4 versus S2 x S2 correlation purity
+
+- Problem: maximal symmetry selected `S4`, but the two surviving
+  positive-Einstein spin carriers still required an operator comparison.
+- Search for solution: normalized equal-volume scalar heat kernels to
+  density operators and compared their Rényi-2 entropies analytically at
+  both asymptotic ends and numerically over the middle profile.
+- Expected result: an independent correlation criterion should either
+  reinforce `S4` or reveal a crossing with `S2 x S2`.
+- Compliance check: no crossing occurs on 3001 tested points and both
+  asymptotic signs favour larger `S4` entropy. This is frozen as ordering,
+  not dynamic selection, until TOE fixes the entropy-principle sign.
+
+## 2026-08-11 — Gibbs free-energy carrier sign
+
+- Problem: the Gaussian entropy ordering favoured `S4`, but its variational
+  sign was not derived from the primary TOE formulation.
+- Search for solution: normalized the heat operator to a density state and
+  reconstructed the Gibbs functional whose equilibrium difference is
+  quantum relative entropy.
+- Expected result: relative-entropy positivity should fix the sign before
+  comparing candidate carriers.
+- Compliance check: Klein positivity uniquely selects the Gaussian state;
+  the resulting free energy favours `S4` at both asymptotic ends and all
+  3001 audited points. The conclusion remains conditional on identifying
+  this normalized-state completion with the original TOE spectral action.
+
+## 2026-08-11 — Spectral-action/Gibbs equivalence no-go
+
+- Problem: determine whether the Gibbs carrier functional is literally the
+  spectral action written in primary TOE Postulate 2.
+- Search for solution: visually verified the PDF formula, checked trace
+  class, reconstructed `Delta=-log(Chat)/tau`, and compared direct-sum
+  composition laws.
+- Expected result: either prove one common functional or provide a minimal
+  corrected operator dictionary.
+- Compliance check: exact equivalence is impossible. The raw action diverges
+  for standard cutoffs and Gibbs free energy is nonadditive. The corrected
+  two-stage architecture uses the logarithmic generator for local EFT and
+  the outer-log partition functional for global carrier selection.
+
+## 2026-08-11 — S4 absolute-radius boundary no-go
+
+- Problem: the post-`K` program selected the `S4` shape only after fixing its
+  volume, leaving the absolute radius open.
+- Search for solution: released the radius and differentiated both Gibbs
+  free energy and the corrected positive-cutoff spectral action.
+- Expected result: a finite stationary radius would close the scale gate
+  without observable fitting.
+- Compliance check: Gibbs selection decompactifies and positive spectral
+  action collapses. Their weighted sum stabilizes only by introducing a
+  free relative normalization, so absolute scale remains closed pending a
+  derived constraint.
+
+## 2026-08-11 — Correlation-cell free-energy density
+
+- Problem: total functionals select opposite radius boundaries and do not
+  provide a finite `S4` scale.
+- Search for solution: minimized dimensionless Gibbs free energy per
+  four-dimensional correlation cell and repeated the optimization for the
+  surviving `S2 x S2` competitor.
+- Expected result: an intensive coefficient-free principle could fix a
+  radius-to-correlation-length ratio while preserving the carrier ordering.
+- Compliance check: `S4` has a strict minimum at
+  `a/sigma=1.3513921957`, lower than the independently optimized competitor,
+  and satisfies `p=-epsilon`. Absolute `sigma` remains unassigned.
+
+## 2026-08-11 — Absolute-scale EFT validity
+
+- Problem: use primary TOE gravitational matching to turn the selected
+  radius ratio into an absolute scale.
+- Search for solution: evaluated the Gaussian spectral moment and checked
+  the local heat-kernel expansion parameters on the resulting vacuum.
+- Expected result: a controlled Planck normalization would close the final
+  scale gate.
+- Compliance check: formal matching gives `a=0.22010 l_P`, but the vacuum has
+  `R/Lambda^2=6.5708`, so the local expansion is uncontrolled. The ratio
+  `a/sigma` is retained; the absolute prediction is rejected pending exact
+  nonlocal dynamics or a derived scale hierarchy.
+
+## 2026-08-11 — S4/RP3 hybrid experiment
+
+- Problem: determine whether the cleaner `S4` spacetime can inherit the
+  exact volume, systole and `Z2` ledger of the original carrier.
+- Search for solution: optimized a separate metric `RP3`, tested the honest
+  tensor-product density, and computed trivial/twisted KK thresholds.
+- Expected result: retain the old exact arithmetic without restoring its
+  radius and spin-sector ambiguities.
+- Compliance check: the metric minimum is only near `b=2 sigma`; the joint
+  product collapses and KK towers remain near the cutoff. Only the discrete
+  `Z2` topological core is retained without qualification.
+
+## 2026-08-11 — Full-project retrospective entropy/measure audit
+
+- Problem: determine whether early RPFT, archived TOE or other project files
+  contain a stronger mechanism than the exhausted fixed-carrier actions.
+- Search for solution: inventoried the full corpus and PDFs, separated kernel,
+  state and spectral-density entropies, tested mean-energy ordering and the
+  natural factorized cell measure.
+- Expected result: either recover a forgotten parent principle or confirm
+  that returning to the original carrier merely repeats closed routes.
+- Compliance check: mean spectral energy changes carrier at
+  `tau=0.09576644817`, while the factorized measure eliminates `S4`. The
+  only unexecuted route is the corrected TOE 6.5 joint spectral-density and
+  carrier variation with one measure and a positive Hessian gate.
+
+## 2026-08-11 — Negative-space bundle and fluctuation audit
+
+- Problem: identify dead ends that were proved only under fixed-product,
+  scalar-operator or restricted-vertex assumptions.
+- Search for solution: reconstructed the nontrivial circle bundle over
+  `RP3`, derived its `ell+m` parity-momentum rule, tested its scalar density,
+  and compared the actual scope of all recent carrier gates.
+- Expected result: distinguish forgotten candidates that fail on calculation
+  from variants that were never computed.
+- Compliance check: the nontrivial bundle is a real omitted carrier but its
+  scalar density collapses. The full scalar-vector-ghost-Dirac fluctuation
+  determinant on competing carriers remains genuinely open and becomes the
+  highest-priority calculation.
+
+## 2026-08-11 — Full-field carrier counterterm obstruction
+
+- Problem: compute the full field-content carrier determinant identified by
+  the negative-space audit.
+- Search for solution: first evaluated the complete unit-volume local
+  curvature ledger for `S4` and `S2 x S2` and tested finite renormalization
+  dependence before attempting infinite spectral products.
+- Expected result: either obtain a scheme-safe determinant comparison or
+  identify the exact parent data required first.
+- Compliance check: nonzero Einstein, Weyl-squared and Euler differences
+  allow finite counterterms to reverse any carrier ordering. Parent-derived
+  gravitational/topology weights and vector-mass completion are mandatory
+  before the nonlocal determinant calculation.
+
+## 2026-08-11 — Gaussian bare spectral topology measure
+
+- Problem: derive the finite gravitational and topology weights required by
+  the counterterm gate rather than choosing a subtraction scheme.
+- Search for solution: treated the TOE Gaussian profile as a fundamental
+  bare Wilsonian spectral action, evaluated exact spin-Dirac heat traces on
+  unit-volume `S4` and `S2 x S2`, and used almost-commutative factorization.
+- Expected result: either obtain a parent topology measure or expose another
+  arbitrary moment.
+- Compliance check: Gaussian moments fix the bare weights; the exact traces
+  cross once at `t=0.12415316994`. The conditional correlation scale lies in
+  the `S4` window, while cutoff identification and quantum running remain
+  explicitly open.
+
+## 2026-08-11 — Project success/dead-end tree
+
+- Problem: restore the earlier visual map of successful branches, dead ends
+  and current open routes.
+- Search for solution: rebuilt the graph from the frozen theorem ledger and
+  current Tome III/IV status corrections using explicit status colors.
+- Expected result: one readable decision map for continuing, freezing or
+  terminating each branch.
+- Compliance check: the diagram preserves `R_sci=4/10` and
+  `N_closed physical=0` and isolates the final timeboxed kill-gates.
+
+## 2026-08-11 — Hybrid bundle parent-sign audit
+
+- Re-audit: connected and parity-information measures both have strict
+  two-radius minima, so spectator-driven product collapse was too broad.
+- Parent check: Gibbs relative entropy contributes `+T I`, while the
+  stabilizing information density used `-I/V`.
+- Exact verdict: at the information minimum the nontrivial bundle exceeds
+  the trivial-product free energy by `0.3689227663`. The branch is open only
+  for a derived cross-Hamiltonian interaction or an independent topology
+  measure; the mutual-information shortcut is closed.
+
+## [2026-08-13] synthesis | Pati-Salam generalized inner fluctuation
+
+- Files touched: `version4_pati_salam_generalized_inner_fluctuation_gate.tex`, `s2t_v4_pati_salam_generalized_inner_fluctuation.py`, `wiki/sources/pati-salam-generalized-inner-fluctuations.md`, `wiki/questions/pati-salam-generalized-inner-fluctuation-gate.md`
+- Summary: enforced the normalized self-adjoint `Pert(A)` constraint, verified exact unitary gauge covariance, and established the composite rank-two Yukawa and crossed rank-one Majorana identities on the project finite Dirac seed.
+- Follow-ups: derive the full composite spectral potential and compute its vacuum Hessian without replacing composite fields by independent fundamental ones.
+
+## [2026-08-13] synthesis | Composite Pati-Salam vacuum Hessian
+
+- Files touched: `version4_pati_salam_composite_potential_hessian_gate.tex`, `s2t_v4_pati_salam_composite_potential_hessian.py`, `wiki/questions/pati-salam-composite-potential-hessian-gate.md`
+- Summary: derived the exact composite half-trace potential, found six negative Hessian modes at the required rank-one condensate, and identified a lower but phenomenologically wrong rank-two orbit.
+- Follow-ups: search only geometries that derive a rank-sensitive determinant invariant or an independent connected adjoint; norm-only singlets are excluded.
+
+## [2026-08-14] synthesis | Pati-Salam rank-selector archaeology
+
+- Files touched: `version4_pati_salam_rank_selector_archaeology_gate.tex`, `s2t_v4_pati_salam_rank_selector_archaeology.py`, `wiki/syntheses/pati-salam-rank-selector-archaeology.md`
+- Summary: combined the project's Krajewski path-interference, inclusion-exclusion and Casimir diagnostics into the exact identity `||direct-crossed||^2=4 det(Delta Delta^dagger)`; the resulting coefficient removes all six negative rank-one Hessian modes.
+- Follow-ups: construct one KO6-compatible doubled-path finite graph or graded superconnection that derives the relative sign and coefficient without a decorated trace added by hand.
+
+## [2026-08-14] synthesis | Pati-Salam wedge compatibility
+
+- Files touched: `version4_pati_salam_wedge_channel_compatibility_gate.tex`, `s2t_v4_pati_salam_wedge_channel_compatibility.py`, `wiki/questions/pati-salam-wedge-channel-compatibility-gate.md`
+- Summary: embedded the wedge channel in the existing KO6 Majorana slot, found Jacobian rank six, and proved that all nine Goldstone directions plus the radial mode remain in its kernel.
+- Follow-ups: derive the direct/crossed path pair and relative sign from one admissible doubled-path finite graph.
+
+## [2026-08-14] question | Pati-Salam three-node parent graph
+
+- Files touched: `version4_pati_salam_three_node_parent_graph_gate.tex`, `s2t_v4_pati_salam_three_node_parent_graph.py`, `wiki/questions/pati-salam-three-node-parent-graph-gate.md`
+- Summary: constructed a KO6 exterior-square chain whose ordinary spectral trace contains a positive determinant rank selector; the canonical rank-one Hessian is `14 (1), 0 (9), 98/19 (6)` and stability persists for `0<c^2<8`.
+- Follow-ups: derive both edge maps and their relative normalization from one universal one-form representation in the full Pati-Salam finite triple.
+
+## [2026-08-14] question | Pati-Salam associative-node no-go
+
+- Files touched: `version4_pati_salam_associative_node_no_go.tex`, `s2t_v4_pati_salam_associative_node_no_go.py`, `wiki/questions/pati-salam-associative-node-no-go.md`
+- Summary: verified that the exterior-square carrier is exactly gauge-equivariant but cannot be a strict finite-triple node because neither `Lambda2` nor its derivative represents `M4(C)` as a unital associative algebra and color-six module dimension is forbidden.
+- Follow-ups: compute represented universal two-forms and the degree-two junk quotient on the existing 32-dimensional Pati-Salam Hilbert module.
+
+## [2026-08-14] question | Pati-Salam two-form/A2 trilemma
+
+- Files touched: `version4_pati_salam_twoform_a2_trilemma_gate.tex`, `s2t_v4_pati_salam_twoform_a2_trilemma.py`, `wiki/questions/pati-salam-twoform-a2-trilemma-gate.md`
+- Summary: ordinary two-forms are even and orthogonal to the odd wedge block; the physical seed gives crossed rank one only; generic allowed seeds span the full 72-real-dimensional symmetric Majorana channel with a `3.31e14` singular-value rank gap.
+- Follow-ups: compute the even gauge-singlet sector of the degree-two junk quotient; if it is norm-only, test a vectorlike fundamental-module extension.
+
+## [2026-08-14] question | Pati-Salam projected-curvature recovery
+
+- Files touched: `version4_pati_salam_projected_curvature_selector_gate.tex`, `s2t_v4_pati_salam_projected_curvature_selector.py`, `wiki/questions/pati-salam-projected-curvature-selector-gate.md`
+- Summary: combined three archived project mechanisms into the valid chain `4bar -> 2_R -> 4`; its projected endpoint curvature has exact norm `4 c^2 det(Delta Delta^dagger)` and reproduces coefficient four at canonical metric.
+- Follow-ups: derive the endpoint projector and `c=1` from one parent superconnection action, then audit mixed Hessian, physical vectorlike states and gauge running.
+
+## [2026-08-14] question | Pati-Salam junk and mapping-cone selector
+
+- Files touched: `version4_pati_salam_junk_mapping_cone_gate.tex`, `s2t_v4_pati_salam_junk_mapping_cone_gate.py`, `wiki/questions/pati-salam-junk-mapping-cone-gate.md`
+- Summary: proved `c=1` from the edge isometry and reflection/reality, found that the minimal ordinary junk quotient removes the endpoint path, and derived the same endpoint projector from the unique reflection-odd graph coordinate.
+- Follow-ups: derive the relative mapping-cone curvature norm as the physical bosonic parent action, then classify endpoint modules and recompute the mixed Hessian/running ledger.
+
+## [2026-08-14] synthesis | Current project evidence-status tree
+
+- Files touched: `generate_project_success_tree_v4.py`, `project_success_tree_v4_results.json`, `version4_project_success_tree_gate.tex`, `fig_project_success_tree_v4_current_2026-08-14.png`
+- Summary: rebuilt Figure 96 as a non-overlapping landscape tree, added the current Pati-Salam reconstruction branch, separated geometric and Pati-Salam decisive tests, and replaced the outdated 13 August status map.
+- Follow-ups: regenerate the figure whenever a decisive gate changes status.
+
+## [2026-08-14] question | Pati-Salam relative parent action
+
+- Summary: the fixed-point quotient norm gives `||[h,F]/2||^2=4 det(Delta Delta^dagger)` on even curvature; stability requires `lambda_rel>1/2`.
+- Follow-ups: derive carrier status, multiplicity and overall trace weight.
+
+## [2026-08-14] question | Pati-Salam BV multiplicity fork
+
+- Summary: the carrier is absent from the standard physical module and contractible BV pairs cannot change the classical vacuum; physical-vectorlike and classical mapping-cone branches remain.
+- Follow-ups: derive one branch and compute its mixed Hessian and RG ledger.
+
+## [2026-08-14] question | Pati-Salam irreducible relative cycle
+
+- Files touched: `version4_pati_salam_irreducible_relative_cycle_gate.tex`, `s2t_v4_pati_salam_irreducible_relative_cycle_gate.py`, `wiki/questions/pati-salam-irreducible-relative-cycle-gate.md`
+- Summary: the connected one-copy cycle has scalar commutant, while `k` identical copies have commutant `M_k(C)` of dimension `k^2`; irreducibility fixes `k=lambda_rel=1`. The full 52-real-dimensional Delta-plus-auxiliary Hessian has signature `(43,9,0)`.
+- Follow-ups: embed the relative cycle in the full KO6 real structure and compute the remaining `phi/Sigma_4` mixed Hessian.
+
+## [2026-08-14] question | Pati-Salam KO6 phi/Sigma Hessian
+
+- Files touched: `version4_pati_salam_ko6_phi_sigma_hessian_gate.tex`, `s2t_v4_pati_salam_ko6_phi_sigma_hessian_gate.py`, `wiki/questions/pati-salam-ko6-phi-sigma-hessian-gate.md`
+- Summary: constructed an exact 20-dimensional KO6 completion and preserved the determinant selector under the physical half-trace, but proved the general Yukawa quadratic form nonpositive. The project phi tangent has eight negative modes, Sigma has fifteen flat modes, and the total signature is `(43,24,8)`.
+- Follow-ups: derive a connected representation-sensitive phi/Sigma interaction or a genuine two-scale spectral action.
+
+## [2026-08-14] question | Pati-Salam relative parent action
+
+- Files touched: `version4_pati_salam_relative_parent_action_gate.tex`, `s2t_v4_pati_salam_relative_parent_action_gate.py`, `wiki/questions/pati-salam-relative-parent-action-gate.md`
+- Summary: derived the relative curvature functional as the fixed-point Hilbert quotient norm; on even curvature it equals `||[h,F]/2||^2=4 det(Delta Delta^dagger)`, while stability requires `lambda_rel>1/2`.
+- Follow-ups: derive the auxiliary/common status, multiplicity and overall trace weight from the full Pati-Salam relative spectral triple or BV complex.
+
+## [2026-08-14] question | Pati-Salam BV multiplicity fork
+
+- Files touched: `version4_pati_salam_bv_multiplicity_fork_gate.tex`, `s2t_v4_pati_salam_bv_multiplicity_fork_gate.py`, `wiki/questions/pati-salam-bv-multiplicity-fork-gate.md`
+- Summary: proved that the relative chain is absent from the standard physical module and that contractible BV gauge-fixing pairs cannot change the classical vacuum; the alternatives are a physical vectorlike chain or a classical mapping-cone sector.
+- Follow-ups: derive one branch from a stronger parent principle, then compute its mixed Hessian and RG/threshold ledger.
+
+## [2026-08-14] question | Pati-Salam twisted connector threshold
+
+- Files touched: `version4_pati_salam_twisted_connector_threshold_gate.tex`, `s2t_v4_pati_salam_twisted_connector_threshold_gate.py`, `wiki/questions/pati-salam-twisted-connector-threshold-gate.md`
+- Summary: derived the exact scalar-channel threshold `zeta>2`; at `zeta=2` four phi zero modes remain, while all fifteen Sigma directions stay flat for every scalar-only `||Y||^2` portal.
+- Follow-ups: construct a reduced exchange-twisted spectral triple and test whether one fixed spectral action produces both the required scalar shift and a rank-15 Sigma/vector Hessian.
+
+## [2026-08-14] question | Pati-Salam project-wide rescue archaeology
+
+- Files touched: `version4_pati_salam_project_wide_rescue_archaeology_gate.tex`, `s2t_v4_pati_salam_common_scale_no_go.py`, `wiki/questions/pati-salam-project-wide-rescue-archaeology.md`
+- Summary: proved that a common `a2/a4` scale only rescales the eight negative phi modes and leaves all fifteen Sigma modes flat; also rejected the Pati-Salam-like twist as an `SU(4)` adjoint mechanism.
+- Follow-ups: classify mixed quartics generated by the irreducible relative cycle and test `zeta_Y>2`, full Sigma rank, Goldstone count and one-weight irreducibility.
+
+## [2026-08-14] question | Pati-Salam tensor-product coefficient gate
+
+- Files touched: `version4_pati_salam_tensor_product_coefficient_gate.tex`, `s2t_v4_pati_salam_tensor_product_coefficient_gate.py`, `wiki/questions/pati-salam-tensor-product-coefficient-gate.md`
+- Summary: derived the canonical graded-product coefficient `c=4`; KO6 physical half-trace leaves it unchanged, so the portal reaches `zeta=2` and retains four phi zero modes.
+- Follow-ups: test a non-identical irreducible auxiliary factor or a derived higher spectral moment; identical-copy enhancement is forbidden by its non-scalar copy commutant.
+
+## [2026-08-14] question | Pati-Salam higher-moment saturation no-go
+
+- Files touched: `version4_pati_salam_higher_moment_saturation_no_go.tex`, `s2t_v4_pati_salam_higher_moment_saturation_no_go.py`
+- Summary: proved `zeta=2 alpha` at every stationary radius for all finite polynomial higher-moment product actions; weighted one-field placements canonically renormalize back to `c=4`.
+- Follow-ups: classify genuinely connected non-product contractions.
+
+## [2026-08-14] question | Pati-Salam rank-one connected curvature no-go
+
+- Files touched: `version4_pati_salam_rank_one_connected_curvature_no_go.tex`, `s2t_v4_pati_salam_rank_one_connected_curvature_no_go.py`, `wiki/questions/pati-salam-rank-one-connected-curvature-no-go.md`
+- Summary: classified the complete rank-one connected quadratic span; it has Sigma rank 7 with an eight-dimensional su(3) kernel and phi rank 6 with a two-dimensional kernel.
+- Follow-ups: current Tome IV finite geometry is closed; reopening requires a rank-at-least-three diagonal carrier or several independently derived noncommuting projectors in Version V.
+
+## [2026-08-14] question | Version IV old-problem rotation audit
+
+- Files touched: `version4_old_problem_rotation_audit.tex`, `s2t_v4_old_problem_rotation_audit.py`, `wiki/questions/version4-old-problem-rotation-audit.md`
+- Summary: reprioritized the carrier, defect and family branches; the SO(3) condition reduces twelve full-M3 affine candidates to eight three-cycles, but neither existing Wilson axis matches the discrete axes.
+- Follow-ups: construct one boundary superconnection for the sterile root line, charge-two pairing field and real family triplet.
+
+## [2026-08-14] question | Family-defect three-cycle lock
+
+- Files touched: `version4_family_defect_three_cycle_lock_gate.tex`, `s2t_v4_family_defect_three_cycle_lock_gate.py`, `wiki/questions/version4-family-defect-three-cycle-lock-gate.md`
+- Summary: the normalized cubic `S4` invariant and zero triplet character give a nonnegative joint functional with four minima per vortex orientation, exactly reproducing all eight three-cycles and preserving a one-dimensional Majorana kernel.
+- Follow-ups: derive the radial, character and cubic-orientation terms from one graded boundary-superconnection supertrace.
+
+## [2026-08-14] question | Family-defect projector supercurvature
+
+- Files touched: `version4_family_defect_projector_supercurvature_gate.tex`, `s2t_v4_family_defect_projector_supercurvature_gate.py`, `wiki/questions/version4-family-defect-projector-supercurvature-gate.md`
+- Summary: factorized radial and tetrahedral-axis selection into `Q(H)=0`, reconstructed four primitive projectors and obtained all eight winding-oriented three-cycles with zero failures in 192 covariance tests.
+- Follow-ups: realize the cycle as the actual holonomy of the same graded connection whose projected curvature is `Q(H)`.
+
+## [2026-08-14] question | Family-defect flat-holonomy realization
+
+- Files touched: `version4_family_defect_holonomy_realization_gate.tex`, `s2t_v4_family_defect_holonomy_realization_gate.py`, `wiki/questions/version4-family-defect-holonomy-realization-gate.md`
+- Summary: constructed `Omega(h)=*(u wedge h)` and proved that its flat connection has holonomy exactly equal to each of the eight selected three-cycles; all covariance, commutator and kernel tests pass.
+- Follow-ups: derive the constitutive relation between the connection and projector field from one parent action.
+
+## [2026-08-14] question | Family-defect cubic-root action
+
+- Files touched: `version4_family_defect_cubic_root_action_gate.tex`, `s2t_v4_family_defect_cubic_root_action_gate.py`, `wiki/questions/version4-family-defect-cubic-root-action-gate.md`
+- Summary: introduced the cubic-root frame `W=exp[(phi/3)Omega(H)]` and derived `A_s=-partial_s W W^T=-(partial_s phi/3)Omega(H)` from one positive common-trace action. All sixteen projector/winding/profile tests pass, the holonomy is profile-independent and the connection Hessian is positive.
+- Follow-ups: derive the nonzero condensate and the `Z3` root bundle from the finite graded representation and full parent superconnection rather than assume the topological sector.
+
+## [2026-08-15] question | Family-defect tetrahedral residual bundle
+
+- Files touched: `version4_family_defect_tetrahedral_residual_bundle_gate.tex`, `s2t_v4_family_defect_tetrahedral_residual_bundle_gate.py`, `wiki/questions/version4-family-defect-tetrahedral-residual-bundle-gate.md`
+- Summary: proved that the projector-selected tetrahedral carrier leaves exactly `Stab_A4(P_a)=Z3`, that the two nontrivial elements are the selected inverse three-cycles, and that their `SU(2)` lifts have order six. The cubic denominator is therefore intrinsic rather than fitted.
+- Follow-ups: resolve the gauge/global fork and derive a boundary-framed tetrahedral gauge sector together with the nonzero ordinary charge-two `B-L` defect condensate from one finite graded parent action.
+
+## [2026-08-15] question | Family-defect gauge-family locking
+
+- Files touched: `version4_family_defect_gauge_family_locking_gate.tex`, `s2t_v4_family_defect_gauge_family_locking_gate.py`, `wiki/questions/version4-family-defect-gauge-family-locking-gate.md`
+- Summary: a real bifundamental locks gauged and global family `SO(3)` to an exact diagonal frame; its matrix Hessian is `(6+,3zero,0-)` and all three gauge masses are positive. This resolves the axis observability fork without enlarging to family `SU(3)`.
+- Follow-ups: derive `(|Phi|^2-Tr(X^T X)/3)^2`, or an equivalent negative pairing Hessian, from one finite graded supertrace; ordinary symmetry permits both condensed and uncondensed phases.
+
+## [2026-08-15] question | Family-defect quiver moment map
+
+- Files touched: `version4_family_defect_quiver_moment_map_gate.tex`, `s2t_v4_family_defect_quiver_moment_map_gate.py`, `wiki/questions/version4-family-defect-quiver-moment-map-gate.md`
+- Summary: the frozen–gauged–frozen triplet quiver has middle moment map `mu=X X^T-|Phi|^2 I`; `A4` Schur reduction fixes the right arrow to `Phi I`. Its normalized trace yields the exact ratio `1:-2/3:1/9`, and the unit-momentum radial model has a stable condensed global minimum below the normal branch.
+- Follow-ups: embed the quiver, its `B-L` charge and middle-node trace normalization into the actual finite KO6/superconnection geometry and repeat the full nonradial/BdG audit.
+
+## [2026-08-15] question | Family-defect KO6 quiver embedding
+
+- Files touched: `version4_family_defect_ko6_quiver_embedding_gate.tex`, `s2t_v4_family_defect_ko6_quiver_embedding_gate.py`, `wiki/questions/version4-family-defect-ko6-quiver-embedding-gate.md`
+- Summary: constructed an explicit 18-dimensional KO6 chain over `R + M3(R) + C`; order-zero and first-order conditions pass and first order leaves only `Y=Phi I3`. The ordinary spectral quartic has mixed coefficient `+12`, opposite to the moment-map coefficient `-2`, while the graded quartic vanishes.
+- Follow-ups: derive the moment-map norm from a canonical auxiliary D-sector or relative/mapping-cone curvature with the same scalar kinetic normalization; do not repair the sign by an independent portal counterterm.
+
+## [2026-08-15] correction | Family-defect auxiliary literature reaudit
+
+- Files touched: `version4_family_defect_relative_auxiliary_moment_gate.tex`, `s2t_v4_family_defect_relative_auxiliary_moment_gate.py`, `wiki/questions/version4-family-defect-relative-auxiliary-moment-gate.md`
+- Summary: corrected `XX^T-|Phi|^2 I` from a strict real `SO(3)` moment map to a symmetric Hodge/Jordan curvature. Mapping-cone curvature selects only the endpoint product; the real auxiliary Legendre saddle is a maximum with six negative Hessian directions. A correct Euclidean Hubbard–Stratonovich representation requires imaginary coupling and a derived contour.
+- Follow-ups: compute the represented degree-two junk quotient and inherited trace metric, or derive the imaginary Hubbard–Stratonovich measure from a prior quantum principle. The physical parent action remains open.
+
+## [2026-08-15] question | Family-defect relative/auxiliary moment gate
+
+- Files touched: `version4_family_defect_relative_auxiliary_moment_gate.tex`, `s2t_v4_family_defect_relative_auxiliary_moment_gate.py`, `wiki/questions/version4-family-defect-relative-auxiliary-moment-gate.md`
+- Summary: the canonical mapping-cone norm selects only the positive endpoint product, and the symmetric middle curvature has zero projection to the skew `SO(3)` adjoint. The Legendre identity is a maximum; a positive real auxiliary gives the wrong sign, while the correct sign needs an imaginary HS coupling and complex saddle. `SO(3)` also permits separate central and traceless metric weights.
+- Follow-ups: compute the represented degree-two quotient; if it fails, derive the imaginary HS contour and measure from the KO6 fermionic determinant/Pfaffian.
+
+## [2026-08-15] question | Family-defect represented degree-two junk gate
+
+- Files touched: `version4_family_defect_degree_two_junk_gate.tex`, `s2t_v4_family_defect_degree_two_junk_gate.py`, `wiki/questions/version4-family-defect-degree-two-junk-gate.md`
+- Summary: on generic backgrounds the full KO6 calculus has ranks `20/9/11` for represented two-forms, degree-two junk and quotient. The particle middle `M3` is entirely junk; the doubled quotient retains only one central conjugate direction and no traceless-symmetric sector.
+- Follow-ups: derive the imaginary HS contour, determinant/Pfaffian measure and relative central/traceless weight from the same KO6 fermionic integral, or move to a modified calculus/new carrier.
+## [2026-08-15] conclusion | Tome IV final audit
+
+- Files touched: `version4_tome_conclusion.tex`, `s2t_v4_tome_conclusion.py`, `wiki/questions/version4-tome-conclusion.md`
+- Summary: compared every preregistered Version IV objective with the final gate ledger. The tome retains substantial mathematical modules but has no unified parent action, common normalization measure, RG closure or two-sector blind prediction. Final status remains `R_sci=4/10`, `N_closed_physical=0`.
+- Follow-ups: open Version V only after freezing one new architecture, deriving all relative weights from one measure, completing Hessian/BV audits and preregistering two independent dimensionless blind observables.

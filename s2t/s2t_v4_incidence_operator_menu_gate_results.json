@@ -1,0 +1,272 @@
+{
+  "gate": "version4_incidence_operator_menu",
+  "affine_group_order": 24,
+  "residual_group_order": 8,
+  "residual_triplet_algebra_dimension": 5,
+  "residual_triplet_commutant_dimension": 2,
+  "outside_candidate_count": 16,
+  "successful_full_M3_count": 12,
+  "failed_reducible_count": 4,
+  "cycle_type_counts": {
+    "2+1+1": 4,
+    "3+1": 8,
+    "4": 4
+  },
+  "successful_cycle_type_counts": {
+    "2+1+1": 4,
+    "3+1": 8
+  },
+  "failed_cycle_type_counts": {
+    "4": 4
+  },
+  "residual_conjugacy_orbits": [
+    {
+      "size": 4,
+      "cycle_types": {
+        "2+1+1": 4
+      }
+    },
+    {
+      "size": 8,
+      "cycle_types": {
+        "3+1": 8
+      }
+    },
+    {
+      "size": 4,
+      "cycle_types": {
+        "4": 4
+      }
+    }
+  ],
+  "all_successful_generate_S4": true,
+  "all_orbit_averages_restore_reducible_algebra": true,
+  "rows": [
+    {
+      "permutation": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "cycle_type": "2+1+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "cycle_type": "3+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "cycle_type": "3+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "cycle_type": "2+1+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "cycle_type": "3+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "cycle_type": "4",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 5,
+      "operator_commutant_dimension": 2,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "cycle_type": "4",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 5,
+      "operator_commutant_dimension": 2,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        1,
+        3,
+        2,
+        0
+      ],
+      "cycle_type": "3+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "cycle_type": "3+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "cycle_type": "4",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 5,
+      "operator_commutant_dimension": 2,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "cycle_type": "2+1+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        3,
+        0
+      ],
+      "cycle_type": "3+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "cycle_type": "4",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 5,
+      "operator_commutant_dimension": 2,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        3,
+        0,
+        2,
+        1
+      ],
+      "cycle_type": "3+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "cycle_type": "3+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    },
+    {
+      "permutation": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "cycle_type": "2+1+1",
+      "generated_group_order": 24,
+      "operator_algebra_dimension": 9,
+      "operator_commutant_dimension": 1,
+      "averaged_algebra_dimension": 5,
+      "averaged_commutant_dimension": 2
+    }
+  ],
+  "selector_exists": false,
+  "selector_obstruction": "twelve Hermitian incidence directions generate M3, but the frozen geometry selects neither an orbit element nor its sector assignment"
+}

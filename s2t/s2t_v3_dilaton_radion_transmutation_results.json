@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "classical_scale_no_go_quantum_transmutation_candidate",
+  "classical_single_dilaton": {
+    "potential": "lambda*chi^4",
+    "positive_lambda_nonzero_minimum": false,
+    "stationary_points_positive_domain": []
+  },
+  "classical_two_field": {
+    "potential": "lambda*(rho^2-alpha*chi^2)^2",
+    "ratio_fixed": "rho/chi=sqrt(alpha)",
+    "hessian": "Matrix([[8*alpha**2*coupling, -8*alpha**(3/2)*coupling], [-8*alpha**(3/2)*coupling, 8*alpha*coupling]])",
+    "eigenvalues": [
+      "0",
+      "8*alpha*lambda*(alpha+1)"
+    ],
+    "flat_scale_direction": true
+  },
+  "radius_inversion": {
+    "potential": "A*(exp(2phi)+exp(-2phi)-2)",
+    "minimum_phi": 0,
+    "hessian": "8*A",
+    "duality_present_in_current_field_menu": false
+  },
+  "coleman_weinberg": {
+    "potential": "B*chi^4*(log(chi^2/mu^2)-1/2)",
+    "first_derivative_at_mu": "0",
+    "second_derivative_at_mu": "8*B*mu**2",
+    "stable_if_B_positive": true,
+    "joint_finite_Dirac_minimum": "D_F^2=mu^2 I",
+    "selected_edge_modulus": "mu/sqrt(2)",
+    "selected_radion": "1/mu"
+  },
+  "open_quantum_data": {
+    "B_computed_from_full_supertrace": false,
+    "beta_functions_computed": false,
+    "RG_boundary_condition_preregistered": false,
+    "dimensionful_observable_predicted": false
+  },
+  "verdict": {
+    "classical_dilaton_route_passed": false,
+    "unproved_duality_route_passed": false,
+    "quantum_transmutation_architecture_exists": true,
+    "quantum_scale_gate_passed": false,
+    "next_gate": "full spectrum supertrace coefficient B"
+  }
+}

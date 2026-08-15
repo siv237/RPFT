@@ -1,0 +1,113 @@
+\chapter{Минимальная конечная алгебра и происхождение кратности}
+
+Рассмотрим минимальную конечную алгебру с двумя примитивными центральными
+идемпотентами
+\begin{equation}
+ A_F=\mathbb C\oplus\mathbb C,
+ \qquad
+ p_X=(1,0),
+ \qquad
+ p_C=(0,1).
+\end{equation}
+Её минимальное точное представление на \(H_F=\mathbb C^2\) имеет
+\begin{equation}
+ \rho(a_X,a_C)=
+ \begin{pmatrix}a_X&0\\0&a_C\end{pmatrix},
+ \qquad
+ \Tr p_X=\Tr p_C=1.
+\end{equation}
+Таким образом, кратность два и равные конечные trace-веса возникают из
+минимального faithful representation, а не из таблицы секторных
+коэффициентов.
+
+\section{Канонический факторный модуль}
+
+Пусть \(\widehat1_X=\pi^{-1}\) и
+\(\widehat1_C=(2\pi)^{-1/2}\) --- нормированные постоянные моды факторов.
+Внутри \(L^2(K)\otimes H_F\) определим спектрально выделенный модуль
+\begin{equation}
+ \mathcal H_{\mathrm{fac}}
+ =
+ \bigl(L^2(X)\otimes\mathbb C\widehat1_C\otimes p_XH_F\bigr)
+ \oplus
+ \bigl(\mathbb C\widehat1_X\otimes L^2(C)\otimes p_CH_F\bigr).
+\end{equation}
+Проекторы на \(\widehat1_X,\widehat1_C\) являются каноническими
+нулевыми спектральными проекторами лапласианов связных факторов.
+
+Для единичных факторных мод полный \(L^2(K)\)-след даёт
+\begin{align}
+ \|1_X\otimes\widehat1_C\otimes p_X\|^2
+ &=\pi^2,\\
+ \|\widehat1_X\otimes1_C\otimes p_C\|^2
+ &=2\pi.
+\end{align}
+Следовательно,
+\begin{equation}
+ \|\Xi_{\mathrm{fac}}\|^2=\pi^2+2\pi.
+\end{equation}
+
+\begin{theorem}[Minimal finite-module pass]
+Алгебра \(\mathbb C\oplus\mathbb C\), её минимальное faithful
+представление и нулевые spectator-проекторы канонически выводят две
+факторные компоненты, их единичные trace-веса и требуемые собственные
+объёмы. Ни независимые sector weights, ни выбранные точки дефектов не
+требуются.
+\end{theorem}
+
+\section{Локальность и спектральный статус}
+
+Редуцированный оператор
+\begin{equation}
+ D_{\mathrm{fac}}=D_X\oplus D_C
+\end{equation}
+на \(\mathcal H_{\mathrm{fac}}\) имеет компактную резольвенту, поскольку оба
+фактора компактны. Однако \(\mathcal H_{\mathrm{fac}}\) является
+спектрально спроецированным подпространством полного \(L^2(K)\), а не
+пространством всех локальных скалярных полей на \(K\). Поэтому конструкция
+является допустимым spectral reduction, но не обычной локальной EFT на
+четырёхмерном произведении.
+
+\section{First-order red-team минимального смешивания}
+
+Проверим простейший конечный оператор
+\begin{equation}
+ D_F=\begin{pmatrix}0&m\\\overline m&0\end{pmatrix},
+ \qquad
+ J_F=\text{комплексное сопряжение}.
+\end{equation}
+Для \(a=(a_X,a_C)\), \(b=(b_X,b_C)\) условие первого порядка требует
+\begin{equation}
+ [[D_F,\rho(a)],J_F\rho(b)J_F^{-1}]=0.
+\end{equation}
+Его внедиагональная компонента пропорциональна
+\begin{equation}
+ m(a_C-a_X)(b_C-b_X).
+\end{equation}
+Для произвольных \(a,b\in A_F\) это условие вынуждает \(m=0\).
+
+\begin{nogocriterion}[Minimal diagonal first-order no-go]
+В минимальном диагональном представлении
+\(\mathbb C\oplus\mathbb C\) простая real structure и условие первого
+порядка запрещают ненулевое смешивание двух листов. Модель выводит
+кинематический модуль и норму, но не выводит vertex, связывающую обе
+факторные компоненты в одну charged-lepton динамику.
+\end{nogocriterion}
+
+\section{Текущий статус parent-action программы}
+
+Впервые закрыты одновременно:
+\begin{enumerate}
+ \item непрерывный масштаб факторных фаз;
+ \item относительные факторные меры;
+ \item происхождение кратности два;
+ \item равенство конечных trace-весов.
+\end{enumerate}
+Открытым остаётся не нормировочный, а операторный вопрос: построить
+реальный градуированный бимодуль, в котором ненулевой odd operator
+удовлетворяет first-order condition и порождает физическую вершину без
+новых непрерывных коэффициентов. Следующий гейт должен классифицировать
+минимальные \(A_F\)-бимодули, а не менять геометрическую меру.
+
+Машинный аудит сохранён в
+\texttt{s2t\_v3\_minimal\_finite\_algebra\_results.json}.

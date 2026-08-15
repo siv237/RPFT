@@ -1,0 +1,183 @@
+{
+  "gate": "version4_pfaffian_stiffness",
+  "reduced_pfaffian_modulus_squared": "(5+4 cos theta)/4",
+  "normalized_periodic_action": {
+    "reduced": "-1/2 log((5+4 cos theta)/9)",
+    "full_ko6": "-log((5+4 cos theta)/9)"
+  },
+  "critical_g": 1.4799586083653407,
+  "measure_rows": [
+    {
+      "measure": "reduced",
+      "pfaffian_curvature": 0.2222222222222222,
+      "local_effective_g": 4.5,
+      "minimum": {
+        "theta": 1.0851612900743202,
+        "orientation_amplitude": 0.8843787113185861,
+        "free_energy": -1.5927569681195728,
+        "free_energy_at_zero": -1.474209749535875
+      },
+      "best": {
+        "orientation_sign": -1,
+        "placement": "right_gns",
+        "sign_bits": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "messenger_ratio": 485.59621013363574,
+        "mass_log_rms": 2.4652841904889597
+      },
+      "normalized_masses": {
+        "u": [
+          0.0007608017325114408,
+          0.0020992666714103607,
+          1.0
+        ],
+        "d": [
+          0.0007023346352785357,
+          0.0020725833607408086,
+          1.0
+        ],
+        "e": [
+          0.0008350236534054789,
+          0.001874184286088973,
+          1.0
+        ],
+        "nu": [
+          0.0008751704986692965,
+          0.0018835291964329683,
+          1.0
+        ]
+      },
+      "mass_multiplicative_errors": {
+        "u": [
+          60.758471693622,
+          3.5070908050159475
+        ],
+        "d": [
+          1.5907301509339633,
+          10.780988611077557
+        ]
+      },
+      "ckm_absolute": [
+        [
+          0.1799432060128199,
+          0.9836766915412414,
+          0.0007804667230557228
+        ],
+        [
+          0.983676732121047,
+          0.17994269197197765,
+          0.0008451565161863429
+        ],
+        [
+          0.0007275255918778697,
+          0.0008911365528426732,
+          0.99999933829086
+        ]
+      ],
+      "ckm_angles": [
+        0.9836766915412414,
+        0.0008451565161863429,
+        0.0007804667230557228
+      ],
+      "ckm_angle_ratios": [
+        4.371702108978452,
+        0.02020455453469622,
+        0.20912827520249805
+      ],
+      "jarlskog": -7.340384809272765e-08,
+      "absolute_jarlskog_ratio": 0.002352687438869476
+    },
+    {
+      "measure": "full_ko6",
+      "pfaffian_curvature": 0.4444444444444444,
+      "local_effective_g": 2.25,
+      "minimum": {
+        "theta": 0.697622862593795,
+        "orientation_amplitude": 0.6423977338106888,
+        "free_energy": -1.5010005284040955,
+        "free_energy_at_zero": -1.474209749535875
+      },
+      "best": {
+        "orientation_sign": -1,
+        "placement": "kms_symmetric",
+        "sign_bits": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "messenger_ratio": 1.0024146456848295,
+        "mass_log_rms": 1.375938088102855
+      },
+      "normalized_masses": {
+        "u": [
+          1.2575089451557483e-05,
+          0.07599591217677625,
+          1.0
+        ],
+        "d": [
+          0.0008714571301298154,
+          0.09393316252558619,
+          1.0
+        ],
+        "e": [
+          0.002045143866614811,
+          0.15654509281046974,
+          1.0
+        ],
+        "nu": [
+          0.0009158769231965765,
+          0.14695311619165516,
+          1.0
+        ]
+      },
+      "mass_multiplicative_errors": {
+        "u": [
+          1.0042606159229934,
+          10.322279409837718
+        ],
+        "d": [
+          1.282019323447786,
+          4.203861020952357
+        ]
+      },
+      "ckm_absolute": [
+        [
+          0.8323990922562722,
+          0.48673665570253816,
+          0.26495127704248284
+        ],
+        [
+          0.3881182514665826,
+          0.8178365826593031,
+          0.42486179746203934
+        ],
+        [
+          0.3955704413748025,
+          0.30697027878878014,
+          0.8656172790852097
+        ]
+      ],
+      "ckm_angles": [
+        0.48673665570253816,
+        0.42486179746203934,
+        0.26495127704248284
+      ],
+      "ckm_angle_ratios": [
+        2.1631778841053206,
+        10.156868215683465,
+        70.99444722467386
+      ],
+      "jarlskog": 0.02989587134403851,
+      "absolute_jarlskog_ratio": 958.2010046166189
+    }
+  ],
+  "local_quadratic_extrapolation_allowed": false,
+  "mass_train_pass": false,
+  "ckm_blind_pass": false,
+  "verdict": "Pfaffian curvature is supercritical and produces a periodic orientation minimum, but neither reduced nor full measure closes blind flavour"
+}

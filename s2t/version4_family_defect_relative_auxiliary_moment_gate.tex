@@ -1,0 +1,217 @@
+\chapter{Family--defect relative curvature and auxiliary-sign gate}
+
+Предыдущая глава оставила две внешне близкие возможности получить
+\(\tau_3(XX^T-|\Phi|^2I_3)^2\): relative/mapping-cone curvature или
+auxiliary \(D\)-sector. Здесь они проверяются отдельно внутри уже
+построенной real KO6 geometry. Результат уточняет terminology: ordinary
+mapping cone и строгий \(SO(3)\)-adjoint \(D\)-term не дают требуемый
+functional. Формальная Legendre polarization на self-adjoint части middle
+matrix summand существует, но не является положительным classical
+auxiliary elimination.
+
+\section{Oriented differential и middle Hodge commutator}
+
+Пусть oriented differential трёхузловой цепи равен
+\begin{equation}
+ d=
+ \begin{pmatrix}
+ 0&0&0\\
+ X&0&0\\
+ 0&\Phi I_3&0
+ \end{pmatrix}.
+ \label{eq:family-oriented-quiver-differential}
+\end{equation}
+Тогда middle block Hodge commutator имеет правильный знак:
+\begin{equation}
+ \mu_G=[d,d^\dagger]\big|_{V_G}
+ =XX^T-|\Phi|^2I_3.
+ \label{eq:family-middle-hodge-commutator}
+\end{equation}
+Это identity oriented complex, а не identity ordinary self-adjoint
+spectral quartic.
+
+\section{Почему mapping-cone route не работает}
+
+Возьмём canonical graph coordinate
+\begin{equation}
+ h=\operatorname{diag}(-I_3,0_3,I_3)
+\end{equation}
+и even curvature
+\(F=(d+d^\dagger)^2\). Как и в Pati--Salam relative gate, functional
+\begin{equation}
+ S_{\rm mc}=\left\|\frac12[h,F]\right\|_{\rm HS}^2
+ \label{eq:family-mapping-cone-functional}
+\end{equation}
+удаляет diagonal backtracking blocks и сохраняет endpoint block. Но теперь
+endpoint composition равна \(\Phi X\), поэтому
+\begin{equation}
+ S_{\rm mc}=2|\Phi|^2\Tr XX^T.
+ \label{eq:family-mapping-cone-endpoint-product}
+\end{equation}
+На radial slice это \(6\rho^2r^2\): присутствует только положительный
+mixed monomial, а \(\rho^4\) и \(r^4\) отсутствуют.
+
+\begin{nogocriterion}[Family mapping-cone no-go]
+Canonical relative derivation, применённая к ordinary even curvature
+\((d+d^\dagger)^2\), выбирает length-two endpoint composition, а не
+middle commutator~\eqref{eq:family-middle-hodge-commutator}. Поэтому
+Pati--Salam mapping-cone mechanism нельзя перенести в family branch простой
+заменой block dimensions.
+\end{nogocriterion}
+
+\section{Почему это не строгий SO(3) D-term}
+
+Для real locking field \(X\) и scalar arrow \(\Phi I_3\) matrix
+\(\mu_G\) симметрична. Но gauge Lie algebra middle node равна
+\begin{equation}
+ \mathfrak{so}(3)=\operatorname{Skew}_3(\mathbb R).
+\end{equation}
+Ортогональная projection требуемой curvature на adjoint sector тождественно
+исчезает:
+\begin{equation}
+ \operatorname{pr}_{\mathfrak{so}(3)}\mu_G
+ =\frac12(\mu_G-\mu_G^T)=0.
+ \label{eq:family-so3-dterm-zero}
+\end{equation}
+Следовательно, standard supersymmetric terminology ``\(SO(3)\) D-term''
+здесь была бы некорректна. В обычной quiver moment-map literature node
+groups являются unitary/Kähler groups, и real moment map принимает значения
+в dual их Lie algebra; см. \path{arXiv:hep-th/0405230} и
+\path{arXiv:0807.4734}. Наш real orthogonal reduction меняет этот вывод.
+
+\begin{nogocriterion}[Strict adjoint D-term no-go]
+Нельзя объявлять \(\tau_3(\mu_G^2)\) результатом elimination обычного
+\(SO(3)\)-adjoint auxiliary field: adjoint projection самой \(\mu_G\)
+равна нулю. Переход к \(U(3)\) исправил бы representation mismatch, но
+нарушил бы уже установленный запрет на новую family unitary gauge algebra.
+\end{nogocriterion}
+
+\section{Self-adjoint polarization и sign obstruction}
+
+У real matrix summand имеется каноническое self-adjoint пространство
+\begin{equation}
+ \operatorname{Sym}_3(\mathbb R)
+ =\{K\in M_3(\mathbb R):K^T=K\}.
+\end{equation}
+Оно не является gauge Lie algebra, но сохраняется при
+\(SO(3)\)-conjugation. Более того, linearization
+\begin{equation}
+ \delta\mu_G
+ =\delta X+\delta X^T-2\,\delta r\,I_3
+\end{equation}
+в точке \(X=I_3\), \(|\Phi|=r=1\) имеет rank шесть и заполняет всё
+\(\operatorname{Sym}_3(\mathbb R)\).
+
+Hilbert--Schmidt polarization даёт точную algebraic identity
+\begin{equation}
+ \boxed{
+ \tau_3(\mu_G^2)
+ =\sup_{K=K^T}
+ \left\{2\tau_3(K\mu_G)-\tau_3(K^2)\right\}.}
+ \label{eq:family-self-adjoint-auxiliary-legendre}
+\end{equation}
+Stationary equation единственна:
+\begin{equation}
+ K_\star=\mu_G.
+\end{equation}
+Действительно, для любого trial \(K\)
+\begin{equation}
+ \tau_3(\mu_G^2)
+ -2\tau_3(K\mu_G)+\tau_3(K^2)
+ =\tau_3((K-\mu_G)^2)\ge0.
+ \label{eq:family-auxiliary-legendre-gap}
+\end{equation}
+Однако functional в фигурных скобках имеет Hessian
+\begin{equation}
+ -2I_6,
+\end{equation}
+то есть stationary point является максимумом. Положительный real
+Euclidean auxiliary action имеет противоположный результат:
+\begin{equation}
+ \inf_{K=K^T}
+ \left\{\tau_3(K^2)-2\tau_3(K\mu_G)\right\}
+ =-\tau_3(\mu_G^2).
+ \label{eq:family-real-auxiliary-wrong-sign}
+\end{equation}
+Следовательно, formal supremum нельзя интерпретировать как elimination
+устойчивого real classical field.
+
+Положительный quartic допускает точное Gaussian representation только с
+imaginary coupling:
+\begin{equation}
+ \tau_3(K^2+2iK\mu_G)
+ =\tau_3((K+i\mu_G)^2)+\tau_3(\mu_G^2).
+ \label{eq:family-imaginary-hs-completion}
+\end{equation}
+Интеграционный contour может оставаться real, но integrand становится
+complex, а saddle лежит при \(K=-i\mu_G\). Это стандартная
+Hubbard--Stratonovich развилка для repulsive channel; см.
+\path{arXiv:2308.05150}. Поэтому данный механизм относится к quantum
+measure, а не к уже выведенному classical parent action.
+
+\section{Единая trace normalization}
+
+Тот же normalized middle trace задаёт kinetic terms:
+\begin{equation}
+ S_{\rm kin}
+ =\tau_3(DX(DX)^T)
+ +\tau_3((D(\Phi I_3))^\dagger D(\Phi I_3))
+ =\tau_3(DX(DX)^T)+|D\Phi|^2.
+ \label{eq:family-common-kinetic-trace}
+\end{equation}
+В identities~\eqref{eq:family-self-adjoint-auxiliary-legendre} и
+\eqref{eq:family-imaginary-hs-completion} используется ровно та же
+\(\tau_3\). Отдельный continuous coefficient не возникает. Но symmetry не
+фиксирует metric полностью: как \(SO(3)\)-module
+\begin{equation}
+ \operatorname{Sym}_3(\mathbb R)
+ =\mathbb RI_3\oplus\operatorname{Sym}_{3,0}(\mathbb R)
+ \simeq \mathbf1\oplus\mathbf5,
+\end{equation}
+поэтому invariant positive metrics имеют два независимых веса. Именно
+полный represented calculus, а не одна \(SO(3)\)-covariance, должен был бы
+вывести их равенство. Все algebraic identities и двухмерность metric
+commutant проверены машинно.
+
+\begin{theorem}[Auxiliary polarization without classical pass]
+На middle summand существует coefficient-free polarization identity на
+\(\operatorname{Sym}_3(\mathbb R)\), но её real stationary point является
+максимумом. Устойчивый real classical auxiliary даёт противоположный знак;
+правильный знак требует imaginary Hubbard--Stratonovich coupling и потому
+остаётся quantum-measure construction.
+\end{theorem}
+
+\section{Точный оставшийся разрыв}
+
+Необходимо проверить, возникает ли
+\(\operatorname{Sym}_3(\mathbb R)\) как canonical self-adjoint represented
+degree-two curvature module после quotient по junk. Если нет, imaginary
+HS representation должна быть выведена из determinant/Pfaffian measure с
+заранее фиксированным contour; простое объявление complex auxiliary не
+считается parent derivation.
+
+\begin{protocol}[Degree-two and measure continuation]
+Следующий gate должен вычислить represented
+\(\Omega_D^2(\mathcal A_{\rm q})\), его junk ideal и middle self-adjoint
+quotient. При отрицательном результате остаётся проверить только imaginary
+HS contour как следствие полной fermionic measure, а не как независимую
+аксиому.
+\end{protocol}
+
+Итак, три classical реализации закрыты или условны: mapping cone выбирает
+не тот block, strict \(SO(3)\) moment map равен нулю, а real symmetric
+auxiliary имеет неверный sign. Surviving route локализован до represented
+degree-two quotient либо complex quantum measure.
+
+Следующий explicit junk audit закрывает первую возможность: на generic
+фонe particle middle \(M_3\) целиком лежит в degree-two junk, а полный KO6
+quotient сохраняет только одну central complex direction на conjugate
+chain. Ни \(\operatorname{Sym}_{3,0}\), ни полный six-dimensional
+\(\operatorname{Sym}_3\) module не выживают. Поэтому после следующей главы
+условно открытым остаётся только imaginary HS measure или новая
+differential-calculus architecture.
+
+Машинный ledger сохранён в
+\path{s2t_v4_family_defect_relative_auxiliary_moment_gate_results.json};
+генератор ---
+\path{s2t_v4_family_defect_relative_auxiliary_moment_gate.py}.

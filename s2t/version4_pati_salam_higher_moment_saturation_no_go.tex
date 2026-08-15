@@ -1,0 +1,44 @@
+\section{Higher-moment stationarity saturation no-go}
+
+Пусть rank-one radial variable
+\(t=\Tr(M_R^\dagger M_R)\), а общий polynomial spectral potential равен
+\begin{equation}
+ V_{\rm rad}(t)=-\alpha t+P(t),
+ \qquad
+ P(t)=\sum_{n\ge2}a_nt^n.
+\end{equation}
+Radial stationarity фиксирует
+\begin{equation}
+ \alpha=P'(t).
+\end{equation}
+Для canonical graded product quadratic auxiliary portal каждого monomial
+равен \(2na_nt^{n-1}\|X\|^2\). Поэтому полный coefficient
+\begin{equation}
+ \boxed{\zeta(t)=2P'(t)=2\alpha.}
+\end{equation}
+Weak \(\phi\)-Hessian после connector shift тождественно равен
+\begin{equation}
+ -4\alpha+2\zeta=0.
+\end{equation}
+Следовательно, добавление \(D^6,D^8,\ldots\) меняет stationary radius, но
+не поднимает четыре threshold zero modes.
+
+Если одно physical field входит в inequivalent edges с weights \(w_i\),
+raw coefficient умножается на \(\sum_i|w_i|^2\). Однако тот же trace
+умножает kinetic norm, и после canonical normalization physical
+coefficient снова равен \(c=4\).
+
+\begin{theorem}[Higher-moment product no-go]
+Ни конечный polynomial higher-moment profile, ни weighted non-identical
+placement одного canonically normalized field не проходит strict
+\(\phi\)-threshold. Вся canonical product ветвь остаётся на границе.
+\end{theorem}
+
+В asymptotic spectral action higher coefficients определяются derivatives
+spectral function в нуле; для cutoff, flat около нуля, они исчезают, а для
+non-flat profile являются дополнительными profile data. Этот статус
+сверен с arXiv:1004.0464 и arXiv:1104.5199.
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_higher_moment_saturation_no_go.py} и
+\path{s2t_v4_pati_salam_higher_moment_saturation_no_go_results.json}.

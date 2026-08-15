@@ -1,0 +1,211 @@
+{
+  "gate": "version4_pati_salam_first_order_kernel",
+  "date": "2026-08-13",
+  "variable_space": {
+    "Y_real_dimension": 128,
+    "MR_real_dimension": 72,
+    "ML_real_dimension": 72,
+    "total_real_dimension": 272
+  },
+  "algebra_actions": {
+    "full_Pati_Salam_real_basis_dimension": 40,
+    "embedded_SM_real_basis_dimension": 24,
+    "particle_action": "q_R on R, q_L on L, M4(C) on antiparticles",
+    "opposite_action": "J pi(b) J^-1"
+  },
+  "full_algebra_kernel": {
+    "constraint_rank": 264,
+    "kernel_real_dimension": 8,
+    "rank_witness_pairs": 44,
+    "analytic_form": "Y=A_(2x2) tensor I4; MR=ML=0",
+    "exhaustive_basis_error": 0.0,
+    "analytic_numeric_principal_cosine_range": [
+      0.9999999999999997,
+      1.0000000000000004
+    ],
+    "first_nonzero_gram_eigenvalue": 4.0
+  },
+  "SM_subalgebra_kernel": {
+    "constraint_rank": 240,
+    "kernel_real_dimension": 32,
+    "rank_witness_pairs": 52,
+    "Y_real_dimension": 16,
+    "Y_analytic_form": "A_lepton tensor P_lepton + A_quark tensor P_quark",
+    "MR_real_dimension": 16,
+    "MR_analytic_form": "weak blocks [[e u^T+u e^T, v e^T], [e v^T, 0]], u,v in C4 and e=(1,0,0,0)",
+    "ML_real_dimension": 0,
+    "representation_reading": "independent lepton/quark bidoublet seeds plus one Delta-like (2_R,4_4) Majorana seed",
+    "exhaustive_basis_error": 0.0,
+    "analytic_numeric_principal_cosine_range": [
+      0.9999999999999998,
+      1.0000000000000007
+    ],
+    "first_nonzero_gram_eigenvalue": 4.0
+  },
+  "convention_scan": {
+    "qr_swap=False,lepton_conjugate=False": {
+      "kernel_real_dimension": 32,
+      "active_MR_upper_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    "qr_swap=False,lepton_conjugate=True": {
+      "kernel_real_dimension": 32,
+      "active_MR_upper_pairs": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ]
+    },
+    "qr_swap=True,lepton_conjugate=False": {
+      "kernel_real_dimension": 32,
+      "active_MR_upper_pairs": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ]
+    },
+    "qr_swap=True,lepton_conjugate=True": {
+      "kernel_real_dimension": 32,
+      "active_MR_upper_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    }
+  },
+  "literature_comparison": {
+    "full_first_order_enforces_quark_lepton_unified_bidoublet": true,
+    "SM_first_order_releases_quark_lepton_split": true,
+    "SM_first_order_releases_Delta_like_seed": true,
+    "composite_quadratic_fields_derived_from_inner_fluctuation": false,
+    "interpretation": "the exact kernel reproduces the structural seeds of the composite branch, but the nonlinear Sigma and Delta-Delta fields still require the full linear plus quadratic inner-fluctuation calculation"
+  },
+  "verdict": {
+    "first_order_kernel_gate": "strong conditional pass",
+    "reason_not_full_pass": "the kernel is exact for the declared representation convention, but the quadratic inner fluctuation and physical finite-Dirac normalization are not yet derived",
+    "next_gate": "compute A_(1)=sum a[D,b] and the required quadratic A_(2) term on the exact SM kernel, then compare its generated fields with the literature composite formulas"
+  },
+  "sources": [
+    "arXiv:1304.8050",
+    "arXiv:1507.08161"
+  ]
+}

@@ -1,0 +1,155 @@
+\chapter{Parent-потенциал конечного Dirac-оператора}
+
+После факторизации по автоморфизмам конечный оператор сохраняет два модуля
+и фазу произведения \(xz\). Минимальный положительный функционал, не
+использующий наблюдаемые данные, имеет вид spectral flattening:
+\begin{equation}
+ V_{\mathrm{flat}}(D_F)
+ =\Tr_{\mathrm{orb}}\left(D_F^2-\mathbf1\right)^2.
+\end{equation}
+На KO6-дублированном модуле orbit trace совпадает со следом исходного
+четырёхсекторного квадрата, поэтому не добавляет multiplicity factor.
+
+\section{Точная редукция к орбитным инвариантам}
+
+Положим
+\begin{equation}
+ r=|x|,
+ \qquad
+ s=|z|,
+ \qquad
+ \phi=\arg(xz),
+\end{equation}
+и введём
+\begin{equation}
+ u=r^2+s^2,
+ \qquad
+ v=r^2s^2\sin^2\phi.
+\end{equation}
+Тогда
+\begin{equation}
+ V_{\mathrm{flat}}
+ =8u^2-16v-8u+4.
+\end{equation}
+Поскольку исходный функционал является квадратом Hilbert--Schmidt нормы,
+\(V_{\mathrm{flat}}\ge0\), и глобальные минимумы удовлетворяют
+\begin{equation}
+ D_F^2=\mathbf1.
+\end{equation}
+
+Для chiral block это эквивалентно
+\begin{equation}
+ BB^\dagger=\mathbf1_2.
+\end{equation}
+Диагональные и внедиагональные компоненты дают
+\begin{equation}
+ 2r^2=1,
+ \qquad
+ 2s^2=1,
+ \qquad
+ 2\operatorname{Re}(xz)=0.
+\end{equation}
+Следовательно,
+\begin{equation}
+ \boxed{
+ r=s=\frac1{\sqrt2},
+ \qquad
+ \phi=\pm\frac{\pi}{2}\pmod{\pi}.}
+\end{equation}
+
+\begin{theorem}[Unitary-flattening orbit selector]
+Функционал \(V_{\mathrm{flat}}\) без подбора edge-параметров выбирает
+равные модули и максимальную по модулю комплексную фазу. После quotient по
+rephasing и обмену листов остаются ровно две CP-сопряжённые орбиты.
+\end{theorem}
+
+\section{Hessian-гейт}
+
+В координатах \((r,s,\phi)\) в точке
+\begin{equation}
+ \left(\frac1{\sqrt2},\frac1{\sqrt2},\frac{\pi}{2}\right)
+\end{equation}
+гессиан равен
+\begin{equation}
+ \Hess V_{\mathrm{flat}}
+ =
+ \begin{pmatrix}
+ 32&0&0\\
+ 0&32&0\\
+ 0&0&8
+ \end{pmatrix}.
+\end{equation}
+Обе радиальные моды и фазовая мода устойчивы. Нулевые направления остаются
+только вдоль уже факторизованных gauge/rephasing-орбит.
+
+\section{Сравнение с общим чётным полиномом}
+
+Для
+\begin{equation}
+ V_{a,b}
+ =a\,\Tr_{\mathrm{orb}}D_F^4
+ -b\,\Tr_{\mathrm{orb}}D_F^2,
+ \qquad a,b>0,
+\end{equation}
+минимизация также максимизирует \(v\), но масштаб равен
+\begin{equation}
+ u_{\min}=\frac{b}{2a}.
+\end{equation}
+Таким образом, равенство модулей и максимальная CP-фаза являются
+структурно устойчивыми, а абсолютный радиус орбиты зависит от отношения
+коэффициентов. Функционал \(V_{\mathrm{flat}}\) соответствует специальному
+отношению \(b/a=2\).
+
+\section{Scale red-team}
+
+Если \(D_F\) имеет физическую размерность массы, корректный функционал
+должен содержать масштаб
+\begin{equation}
+ V_M(D_F)
+ =\Tr_{\mathrm{orb}}\left(D_F^2-M^2\mathbf1\right)^2,
+\end{equation}
+и тогда
+\begin{equation}
+ |x|=|z|=\frac{M}{\sqrt2}.
+\end{equation}
+Алгебра, reality и first-order condition не фиксируют \(M\). Запись
+\(M=1\) является допустимой только если \(D_F\) заранее определён как
+безразмерный нормированный sign/flattened operator. Она не выводит
+физический массовый масштаб.
+
+\begin{nogocriterion}[Unit-scale gap]
+Unitary-flattening potential считается parameter-free selector только для
+безразмерного конечного оператора. Если \(D_F\) является физическим
+Dirac/Yukawa-блоком, масштаб \(M\) должен быть выведен из геометрии,
+дилатона, cutoff equation или другой части одного parent action.
+\end{nogocriterion}
+
+\section{CP-ветвь}
+
+Чётный вещественный функционал зависит от
+\(\operatorname{Im}(xz)^2\) и не различает
+\(\phi=+\pi/2\) и \(\phi=-\pi/2\). Это точное спонтанное
+CP-вырождение. Линейный orientation-odd член мог бы выбрать знак, но его
+коэффициент и происхождение должны быть выведены независимо.
+
+\begin{proposition}[Текущий статус]
+Parent-потенциал впервые закрывает непрерывную орбиту направления:
+отношение модулей и величина CP-фазы выбраны устойчивым минимумом. Полное
+замыкание не достигнуто по двум причинам: физический масштаб \(M\) не
+выведен, а знак CP-ветви остаётся двукратно вырожденным.
+\end{proposition}
+
+\section{Следующий гейт}
+
+Следующий этап должен проверить, может ли уже фиксированная геометрия
+\(K\), радиусный сектор или аномальный/eta-вклад:
+\begin{enumerate}
+ \item сделать \(D_F/M\) канонически безразмерным;
+ \item вывести \(M\) без обращения к лептонным массам;
+ \item породить orientation-odd вклад либо доказать физическую
+ эквивалентность двух CP-ветвей;
+ \item одновременно сохранить orbit half-trace.
+\end{enumerate}
+
+Машинный аудит сохранён в
+\path{s2t_v3_finite_dirac_parent_potential_results.json}.

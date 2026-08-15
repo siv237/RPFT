@@ -1,0 +1,114 @@
+\chapter{Sector torsor incidence: канонический \texorpdfstring{\(K_{2,2}\)}{K2,2} и blind no-go}
+
+Четыре observed Yukawa sectors имеют естественные бинарные labels
+\begin{equation}
+ (q,h)\in\mathbb F_2^2,
+\end{equation}
+где \(q=0,1\) различает lepton/quark, а \(h=0,1\) --- coupling к
+\(H/\widetilde H\):
+\begin{equation}
+ e=(0,0),\quad\nu=(0,1),\quad d=(1,0),\quad u=(1,1).
+\end{equation}
+
+\section{Новая идентификация четырёх minima}
+
+Четыре transposition operators, ранее оставшиеся после family-square
+selector, меняют quark/lepton bit и соединяют пары
+\begin{equation}
+ \nu d,\qquad\nu u,\qquad ed,\qquad eu.
+\end{equation}
+Следовательно, они являются ровно четырьмя edges полного bipartite graph
+\begin{equation}
+ K_{2,2}=\{e,\nu\}\star\{d,u\}.
+\end{equation}
+
+\begin{theorem}[Sector-torsor identification]
+Четырёхэлементная transposition orbit не является произвольным menu из
+четырёх family directions. После representation readout она канонически
+совпадает с edge set quark--lepton sector torsor \(K_{2,2}\).
+\end{theorem}
+
+Это усиливает связь family carrier с observed representation, но edge
+operators ещё требуется превратить в четыре vertex operators.
+
+\section{Ориентированный incidence menu}
+
+Пусть \(E_{\ell q}\) --- operator edge между lepton bit \(\ell\) и quark bit
+\(q\). Для sign cocycle \(\epsilon_{\ell q}=\pm1\) degree-normalized vertex
+incidence задаётся формулами
+\begin{align}
+ H_{\ell}&=-\frac12\sum_q\epsilon_{\ell q}E_{\ell q},\\
+ H_q&=\frac12\sum_\ell\epsilon_{\ell q}E_{\ell q}.
+\end{align}
+Знак перед lepton/quark vertices есть обычная orientation incidence, а
+\(1/2\) фиксирован общей степенью vertices. Полное discrete menu содержит
+\(2^4=16\) cocycles и не имеет continuous sector coefficient.
+
+Для каждого cocycle допускается один прежний общий ratio \(t\) в
+\(R_4-tR_2\). Cocycles и \(t\) выбираются только по четырём quark mass ratios;
+CKM остаётся blind.
+
+\section{Mass train}
+
+Лучший candidate имеет
+\begin{equation}
+ (\epsilon_{00},\epsilon_{01},\epsilon_{10},\epsilon_{11})
+ =(-1,-1,+1,+1),
+ \qquad
+ t=19.944681.
+\end{equation}
+Его quark patterns равны
+\begin{align}
+ u&=(1.47982\times10^{-5},\,0.186971,\,1),\\
+ d&=(0.000567355,\,0.179519,\,1),
+\end{align}
+с multiplicative errors
+\begin{equation}
+ (1.18,\,25.40,\,1.97,\,8.03).
+\end{equation}
+Как и в one-ratio gate, первая генерация может стать лёгкой, но обе middle
+generations остаются слишком тяжёлыми.
+
+\section{CKM blind}
+
+После заморозки candidate получаем
+\begin{equation}
+ |V_q|\simeq
+ \begin{pmatrix}
+ 0.96068&0.25521&0.10940\\
+ 0.25773&0.67639&0.68998\\
+ 0.10334&0.69091&0.71551
+ \end{pmatrix}.
+\end{equation}
+Первый angle имеет правильный порядок:
+\begin{equation}
+ \frac{s_{12}}{s_{12}^{\rm CKM}}=1.14.
+\end{equation}
+Но два остальных ratios равны \(16.59\) и \(29.31\), а
+\begin{equation}
+ \frac{|J_q|}{J_{\rm CKM}}=58.39.
+\end{equation}
+
+\begin{theorem}[Oriented sector-incidence no-go]
+Канонический sector torsor и исчерпывающее \(16\)-элементное orientation menu
+не закрывают flavour sector даже с одним общим trained ratio. Mass-selected
+branch проваливает middle-generation hierarchy, \(s_{23}\), \(s_{13}\) и
+Jarlskog invariant.
+\end{theorem}
+
+\begin{remark}
+Близкий Cabibbo angle является структурной зацепкой, но не pass. Он возникает
+в том же ledger, где два других angles и CP invariant ошибочны на один--два
+порядка.
+\end{remark}
+
+\begin{nogocriterion}[Запрет CKM-selected cocycle]
+Нельзя перейти к другому из шестнадцати cocycles после открытия CKM. Menu был
+заморожен и выбран по mass train; его blind failure закрывает всю объявленную
+oriented-incidence ветвь.
+\end{nogocriterion}
+
+Следующим остаётся третий архитектурно отличный вариант: общий messenger
+Schur complement, где sector-relative matrices возникают как коррелированные
+products одних и тех же edge blocks, а не как vertex sums. Машинный ledger
+сохранён в \path{s2t_v4_sector_torsor_incidence_gate_results.json}.

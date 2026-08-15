@@ -1,0 +1,112 @@
+\chapter{Family--defect fermionic measure and Hubbard--Stratonovich origin gate}
+
+Предыдущий audit оставил quantum-measure route как последнюю реализацию
+middle action
+\begin{equation}
+ \tau_3(XX^T-|\Phi|^2I_3)^2.
+\end{equation}
+Здесь проверяется, возникает ли imaginary Hubbard--Stratonovich contour из
+fermionic measure explicit KO6 geometry.
+
+\section{Standalone finite KO6 bilinear}
+
+Для linear part реальной структуры quadratic bilinear имеет matrix
+\begin{equation}
+ B_F=J_{F,\rm lin}D_F.
+\end{equation}
+В explicit 18-dimensional model машинно получено
+\begin{equation}
+ B_F^T=B_F.
+\end{equation}
+Его restriction на positive chirality имеет rank шесть, но antisymmetric
+Grassmann part имеет rank ноль. Это согласуется с общей классификацией:
+standalone real chiral fermion action в KO-dimension six обращается в нуль;
+physical Pfaffian возникает после four-dimensional product с total
+KO-dimension two. См. J.~W.~Barrett,
+\emph{Fermion integrals for finite spectral triples},
+\path{arXiv:2403.18428}.
+
+\section{Completed Gaussian measure}
+
+На radial slice
+\begin{equation}
+ X=\rho I_3,
+ \qquad
+ \Phi=r
+\end{equation}
+finite spectrum равен
+\begin{equation}
+ 0^{\times6},
+ \qquad
+ \left(\pm\sqrt{\rho^2+r^2}\right)^{\times6}.
+\end{equation}
+После включения spacetime momentum \(p\) regulated modulus удовлетворяет
+\begin{equation}
+ \boxed{
+ \log|\operatorname{Pf}\mathcal D_p|
+ =3\log p^2+6\log(p^2+\rho^2+r^2).}
+ \label{eq:family-final-pfaffian-sum}
+\end{equation}
+Все even moments имеют вид
+\begin{equation}
+ \Tr D_F^{2n}=12(\rho^2+r^2)^n.
+ \label{eq:family-final-even-moments}
+\end{equation}
+Обе формулы проверены на 128 random points.
+
+Точки
+\begin{equation}
+ (\rho,r)=(1,0),
+ \qquad
+ (\rho,r)=(2^{-1/2},2^{-1/2})
+\end{equation}
+имеют одинаковый Pfaffian при любом \(p\), но required moment-map square
+равен на них соответственно
+\begin{equation}
+ 1,qquad0.
+\end{equation}
+Следовательно, exact Gaussian measure не может породить required relative
+curvature. Loop expansion даёт quartic ratio
+\begin{equation}
+ \rho^4:\rho^2r^2:r^4=1:2:1,
+\end{equation}
+а не \(1:-2:1\).
+
+\begin{theorem}[Gaussian fermionic-measure no-go]
+Spacetime completion делает fermionic integral ненулевым, но сохраняет
+dependence только от \(\rho^2+r^2\). Поэтому ни exact Pfaffian, ни induced
+spectral moments не воспроизводят
+\((\rho^2-r^2)^2\).
+\end{theorem}
+
+\section{HS и torsion fork}
+
+Imaginary Hubbard--Stratonovich identity корректно переписывает уже заданный
+positive quartic, но не создаёт его. Current action не содержит выведенного
+four-fermion channel на
+\(\operatorname{Sym}_3(\mathbb R)=\mathbf1\oplus\mathbf5\), bare Gaussian
+kernel или contour. Поэтому такой HS sector был бы новым parent input.
+
+Spacetime Cartan/Holst torsion способен индуцировать four-fermion
+interactions в иных theories; см. \path{arXiv:1004.1375} и
+\path{arXiv:0911.5074}. Но project torsion является cohomological
+\(\mathbb Z_2\)-line, а не dynamical Cartan field. Torsion-mediated rescue
+меняет gravitational architecture и относится к следующей версии.
+
+\begin{nogocriterion}[Pfaffian-to-HS no-go]
+Нельзя объявлять imaginary HS identity следствием current Gaussian
+Pfaffian. Для reopening требуется заранее выведенный four-fermion kernel,
+modified differential calculus, Cartan torsion либо новый finite carrier.
+\end{nogocriterion}
+
+\section{Статус}
+
+Family--defect route внутри Version IV закрыт. Tetrahedral projector,
+three-cycle holonomy, gauge--family lock, KO6 embedding и moment-map
+coefficient identity сохраняются как mathematical conditional structures,
+но не объединяются current action в physical theory.
+
+Машинный ledger сохранён в
+\path{s2t_v4_family_defect_fermionic_measure_hs_gate_results.json};
+генератор ---
+\path{s2t_v4_family_defect_fermionic_measure_hs_gate.py}.

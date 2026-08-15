@@ -1,0 +1,164 @@
+\chapter{RG, trace anomaly и абсолютный scale-setting}
+
+Base-\(K\) renormalization gate оставил два продолжения: принять один
+scale input либо вывести finite subtraction из RG fixed point или anomaly.
+Проверим второй путь на поле-содержании уже построенного relative-\(U(1)\)
+parent block.
+
+\section{One-loop gauge beta coefficient}
+
+Физический charge-square trace finite fermion module равен
+\begin{equation}
+ \sum_{\mathrm{Weyl}}q_f^2
+ =\Tr_{\mathrm{orb}}Q^2=2.
+\end{equation}
+Два комплексных поля \(x,z\) имеют заряды \(-1,+1\), поэтому
+\begin{equation}
+ \sum_{\mathrm{complex\ scalar}}q_s^2=2.
+\end{equation}
+В стандартной четырёхмерной абелевой нормировке
+\begin{equation}
+ b
+ =
+ \frac23\sum_{\mathrm{Weyl}}q_f^2
+ +\frac13\sum_{\mathrm{complex\ scalar}}q_s^2
+ =\frac43+\frac23=2.
+\end{equation}
+Следовательно,
+\begin{equation}
+ \beta_g
+ =\mu\frac{dg}{d\mu}
+ =\frac{2}{16\pi^2}g^3
+ +O(g^5).
+\end{equation}
+
+\begin{proposition}[One-loop fixed-point no-go]
+В минимальном relative-\(U(1)\) field content единственная perturbative
+one-loop fixed point равна \(g=0\). Значение \(g^2=3/8\) не является
+fixed point; оно является spectral matching condition на некотором scale
+\(\mu_{\mathrm{spec}}\).
+\end{proposition}
+
+\section{Running from the spectral matching condition}
+
+One-loop решение имеет вид
+\begin{equation}
+ \frac1{g^2(\mu)}
+ =
+ \frac1{g^2(\mu_{\mathrm{spec}})}
+ -\frac{b}{8\pi^2}
+ \log\frac{\mu}{\mu_{\mathrm{spec}}}.
+\end{equation}
+При
+\begin{equation}
+ g^2(\mu_{\mathrm{spec}})=\frac38,
+ \qquad b=2,
+\end{equation}
+формальная Landau scale удовлетворяет
+\begin{equation}
+ \log\frac{\Lambda_L}{\mu_{\mathrm{spec}}}
+ =
+ \frac{8\pi^2}{b\,g^2(\mu_{\mathrm{spec}})}
+ =\frac{32\pi^2}{3}.
+\end{equation}
+Таким образом, spectral normalization фиксирует большое безразмерное
+отношение
+\begin{equation}
+ \frac{\Lambda_L}{\mu_{\mathrm{spec}}}
+ =\exp\left(\frac{32\pi^2}{3}\right),
+\end{equation}
+но не определяет абсолютное значение \(\mu_{\mathrm{spec}}\).
+
+\section{Общая transmutation-константа}
+
+Для автономного RG-уравнения
+\begin{equation}
+ \mu\frac{dg}{d\mu}=\beta(g)
+\end{equation}
+RG-invariant scale задаётся
+\begin{equation}
+ \Lambda_{\mathrm{RG}}
+ =
+ \mu
+ \exp\left(
+ -\int^g\frac{dg'}{\beta(g')}
+ \right).
+\end{equation}
+Это выражение не вычисляет абсолютный scale из dimensionless
+\(\beta\)-функции. Оно является интеграционной константой RG-trajectory,
+определяемой одним boundary condition.
+
+Сдвиг
+\begin{equation}
+ \mu\longmapsto s\mu,
+ \qquad
+ \Lambda_{\mathrm{RG}}\longmapsto s\Lambda_{\mathrm{RG}}
+\end{equation}
+оставляет все dimensionless running relations неизменными. Поэтому
+dimensional transmutation заменяет безразмерный coupling на один
+размерный вход, но не устраняет необходимость этого входа.
+
+\begin{theorem}[RG integration-constant no-go]
+Автономные beta-функции текущего scale-free parent action не могут
+зафиксировать абсолютный \(\chi_*\). Они могут предсказывать отношения
+scale-ов после задания одного matching scale, но сам matching scale
+остаётся RG integration constant.
+\end{theorem}
+
+\section{Trace anomaly}
+
+Trace anomaly имеет структуру
+\begin{equation}
+ T^\mu{}_\mu
+ =
+ \sum_i\beta_i(g)\,\mathcal O_i
+ +\text{curvature anomalies}.
+\end{equation}
+Она описывает нарушение classical scale invariance и порождает
+\(\Lambda_{\mathrm{RG}}\), но не задаёт boundary value RG-trajectory.
+Топология \(K\), spin-структуры и charge lattice фиксируют operator
+content, однако не выбирают начало logarithmic scale без дополнительного
+normalization condition.
+
+\begin{nogocriterion}[Anomaly-scale no-go]
+Идентификация anomaly-generated \(\Lambda_{\mathrm{RG}}\) с физическим
+mass scale не считается предсказанием, если не выведено независимое
+условие, фиксирующее \(\Lambda_{\mathrm{RG}}R\) или эквивалентное
+dimensionless отношение.
+\end{nogocriterion}
+
+\section{Вердикт}
+
+\begin{theorem}[Scale-input inevitability in Version III]
+В текущем minimal field content ни one-loop fixed point, ни dimensional
+transmutation, ни trace anomaly не устраняют один абсолютный scale-setting
+datum. Значение \(g^2=3/8\) остаётся строгим spectral matching relation,
+а не scale-independent константой.
+\end{theorem}
+
+Следовательно, минимальная честная версия III должна:
+\begin{enumerate}
+ \item принять один mass или length scale как train input;
+ \item вывести из parent action все dimensionless ratios и relative
+ normalizations;
+ \item зарезервировать минимум два независимых dimensionless observables
+ для blind two-sector gate.
+\end{enumerate}
+
+\begin{protocol}[Следующий этап]
+Необходимо выбрать один допустимый scale-setting input без оптимизации
+по blind observables и построить таблицу:
+\begin{equation}
+ \text{один train scale}
+ \longrightarrow
+ \text{dimensionless predictions}
+ \longrightarrow
+ \text{два независимых blind tests}.
+\end{equation}
+Это переводит программу от невозможного absolute-scale no-input требования
+к стандарту предсказательной effective theory с одной размерной
+калибровкой.
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_rg_anomaly_scale_setting_results.json}.

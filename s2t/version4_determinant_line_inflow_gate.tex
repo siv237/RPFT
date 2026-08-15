@@ -1,0 +1,78 @@
+\chapter{Determinant line и anomaly inflow: trivialization no-go}
+
+Reduced Pfaffian обнаружил relative sign, но не зафиксировал orientation
+determinant line. Проверим, может ли этот sign стать global anomaly или
+Dai--Freed inflow phase в уже построенной vectorlike architecture.
+
+\section{Pfaffian section над connector-circle}
+
+Для \(z=e^{i\theta}\) reduced Pfaffian равен минус determinant chiral block:
+\begin{align}
+ \operatorname{Pf}\mathcal A_-(z)
+ &=-\frac12(z+2)z^{-3},\\
+ \operatorname{Pf}\mathcal A_+(z)
+ &=+\frac12(z-2)z^{-3}.
+\end{align}
+На \(|z|=1\) factors \(z+2\) и \(z-2\) никогда не обращаются в нуль.
+Следовательно, каждая формула задаёт явную глобальную nowhere-zero section
+комплексной Pfaffian line над connector-circle.
+
+Обе phases имеют одинаковый winding \(-3\). Ненулевой winding самой функции
+не создаёт line-bundle obstruction: предъявленная section уже
+тривиализует комплексную line.
+
+\section{Явный путь между branches}
+
+Положим
+\begin{equation}
+ H_d(t)=(1-t)H_d^-+tH_d^+,
+ \qquad
+ z(t)=e^{i\pi t},
+ \qquad 0\le t\le1.
+\end{equation}
+Тогда
+\begin{equation}
+ \det M(t)
+ =
+ \left(
+ 1+\left(\frac12-t\right)e^{i\pi t}
+ \right)e^{-3i\pi t}.
+\end{equation}
+Если \(u=t-\frac12\), modulus первого factor удовлетворяет
+\begin{equation}
+ \left|1-u e^{i\pi(1/2+u)}\right|^2
+ =
+ 1+u^2+2u\sin(\pi u)
+ \ge1.
+\end{equation}
+Поэтому path нигде не пересекает zero determinant. Spectral flow вдоль него
+равен нулю, хотя endpoint real Pfaffians имеют противоположные знаки.
+
+\begin{theorem}[Determinant-line trivialization no-go]
+Две orientation branches принадлежат одной invertible complex component и
+соединяются без zero mode. Reduced real sign не является global
+\(\mathbb Z_2\)-anomaly и не получает basis-independent orientation из
+текущей finite parameter family.
+\end{theorem}
+
+\section{Почему inflow отсутствует}
+
+Messenger content vectorlike, поэтому local gauge, mixed и gravitational
+anomalies сокращаются representation by representation. Кроме того, finite
+family graph сам по себе не задаёт spacetime bulk operator, bordism class или
+APS boundary problem. Следовательно, в текущем model data нет нетривиального
+bulk phase, который мог бы ориентировать boundary Pfaffian line.
+
+\begin{nogocriterion}[Запрет fictitious inflow]
+Нельзя умножать reduced Pfaffian на выбранный вручную знак, называть его
+anomaly inflow и считать CP orientation выведенной. Inflow допустим только
+после предъявления chiral boundary content, bulk Dirac operator, extension
+independence и anomaly-cancellation identity.
+\end{nogocriterion}
+
+Таким образом, determinant-line route закрыт отрицательно внутри текущей
+anomaly-free vectorlike architecture. Нетривиальный inflow потребовал бы
+нового chiral или bulk sector и являлся бы расширением модели. В пределах
+Version IV остаётся только spontaneous выбор одной из двух CP-conjugate
+ветвей без предсказания её знака. Exact path ledger сохранён в
+\path{s2t_v4_determinant_line_inflow_gate_results.json}.

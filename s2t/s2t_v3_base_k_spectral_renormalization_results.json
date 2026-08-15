@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "base_K_subtraction_not_parameter_free",
+  "one_loop": {
+    "potential": "B*chi**4*(-c + log(chi**2/mu**2))",
+    "stationary_factor": "-B*(c - log(chi**2/mu**2)) + B/2 + lambda4",
+    "log_chi2_over_mu2": "c - 1/2 - lambda4/B"
+  },
+  "zeta_scale": {
+    "mu_transformation": "mu -> exp(t) mu",
+    "potential_shift": "-2*B*chi**4*t",
+    "lambda4_compensation": "lambda4 -> lambda4 + 2 B t",
+    "compensation_check": "0"
+  },
+  "prescriptions": {
+    "zeta_minimal": {
+      "computationally_defined": true,
+      "geometrically_unique": false
+    },
+    "mu_equals_inverse_radius": {
+      "new_dimensionful_input": false,
+      "fixes_absolute_scale": false,
+      "finite_lambda4_open": true
+    },
+    "spectral_cutoff": {
+      "can_set_boundary_condition": true,
+      "continuous_inputs": [
+        "Lambda",
+        "f0",
+        "f2"
+      ]
+    }
+  },
+  "verdict": {
+    "positive_B_allows_conditional_minimum": true,
+    "vacuum_location_predicted": false,
+    "open_data": "one scale-setting or finite subtraction condition",
+    "next_choice": "one train scale or new dynamical normalization"
+  }
+}

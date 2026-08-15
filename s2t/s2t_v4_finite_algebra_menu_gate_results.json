@@ -1,0 +1,163 @@
+{
+  "gate": "version4_finite_algebra_menu",
+  "all_lie_and_center_candidates": [
+    {
+      "blocks": [
+        "M2C",
+        "M3C"
+      ],
+      "real_dimension": 26,
+      "simple_lie_factors": [
+        "su2",
+        "su3"
+      ],
+      "central_u1_rank_before_unimodularity": 2,
+      "central_u1_rank_after_one_constraint": 1,
+      "has_quaternionic_weak_block": false,
+      "has_complex_color_block": true,
+      "passes_lie_target": true,
+      "passes_one_surviving_u1": true,
+      "passes_quaternionic_branch": false
+    },
+    {
+      "blocks": [
+        "C",
+        "H",
+        "M3C"
+      ],
+      "real_dimension": 24,
+      "simple_lie_factors": [
+        "su2",
+        "su3"
+      ],
+      "central_u1_rank_before_unimodularity": 2,
+      "central_u1_rank_after_one_constraint": 1,
+      "has_quaternionic_weak_block": true,
+      "has_complex_color_block": true,
+      "passes_lie_target": true,
+      "passes_one_surviving_u1": true,
+      "passes_quaternionic_branch": true
+    },
+    {
+      "blocks": [
+        "C",
+        "M2C",
+        "M3C"
+      ],
+      "real_dimension": 28,
+      "simple_lie_factors": [
+        "su2",
+        "su3"
+      ],
+      "central_u1_rank_before_unimodularity": 3,
+      "central_u1_rank_after_one_constraint": 2,
+      "has_quaternionic_weak_block": false,
+      "has_complex_color_block": true,
+      "passes_lie_target": true,
+      "passes_one_surviving_u1": true,
+      "passes_quaternionic_branch": false
+    },
+    {
+      "blocks": [
+        "H",
+        "M2C",
+        "M3C"
+      ],
+      "real_dimension": 30,
+      "simple_lie_factors": [
+        "su2",
+        "su2",
+        "su3"
+      ],
+      "central_u1_rank_before_unimodularity": 2,
+      "central_u1_rank_after_one_constraint": 1,
+      "has_quaternionic_weak_block": true,
+      "has_complex_color_block": true,
+      "passes_lie_target": true,
+      "passes_one_surviving_u1": true,
+      "passes_quaternionic_branch": true
+    },
+    {
+      "blocks": [
+        "M2C",
+        "M3C",
+        "M3R"
+      ],
+      "real_dimension": 35,
+      "simple_lie_factors": [
+        "so3",
+        "su2",
+        "su3"
+      ],
+      "central_u1_rank_before_unimodularity": 2,
+      "central_u1_rank_after_one_constraint": 1,
+      "has_quaternionic_weak_block": false,
+      "has_complex_color_block": true,
+      "passes_lie_target": true,
+      "passes_one_surviving_u1": true,
+      "passes_quaternionic_branch": false
+    }
+  ],
+  "minimal_quaternionic_candidates": [
+    {
+      "blocks": [
+        "C",
+        "H",
+        "M3C"
+      ],
+      "real_dimension": 24,
+      "simple_lie_factors": [
+        "su2",
+        "su3"
+      ],
+      "central_u1_rank_before_unimodularity": 2,
+      "central_u1_rank_after_one_constraint": 1,
+      "has_quaternionic_weak_block": true,
+      "has_complex_color_block": true,
+      "passes_lie_target": true,
+      "passes_one_surviving_u1": true,
+      "passes_quaternionic_branch": true
+    }
+  ],
+  "selected_baseline": [
+    "C",
+    "H",
+    "M3C"
+  ],
+  "unitary_lie_algebra_before_unimodularity": "u1 + su2 + su3 + u1",
+  "unitary_lie_algebra_after_one_nontrivial_central_constraint": "su3 + su2 + u1",
+  "bimodule_target": {
+    "Q_L": {
+      "left": "H",
+      "right": "M3C",
+      "complex_dimension": 6
+    },
+    "L_L": {
+      "left": "H",
+      "right": "C",
+      "complex_dimension": 2
+    },
+    "u_R": {
+      "left": "C",
+      "right": "M3C",
+      "complex_dimension": 3
+    },
+    "d_R": {
+      "left": "conjugate-C",
+      "right": "M3C",
+      "complex_dimension": 3
+    },
+    "nu_R": {
+      "left": "C",
+      "right": "C",
+      "complex_dimension": 1
+    },
+    "e_R": {
+      "left": "conjugate-C",
+      "right": "C",
+      "complex_dimension": 1
+    }
+  },
+  "one_generation_complex_dimension_without_antiparticles": 16,
+  "uniqueness_status": "unique minimum only inside the quaternionic weak-block branch and declared menu"
+}

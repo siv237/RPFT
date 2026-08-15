@@ -1,0 +1,118 @@
+\chapter{Спецификация Version IV.SM}
+
+Version IV.SM открывается не для поиска ещё одного красивого числа. Её
+задача --- построить одну архитектуру, которая имеет наблюдаемый набор полей,
+корректно переносится между масштабами и выдерживает заранее объявленные
+физические проверки. Численное совпадение после выбора специальных
+коэффициентов не считается замыканием.
+
+\section{Исходный диагноз}
+
+Том III.H дал математически согласованную скрытую
+\(U(1)\)-теорию, но её минимальное спектральное завершение точно отделено от
+Стандартной модели. Поэтому скрытые отношения
+\begin{equation}
+ g_h^2=\frac{3}{8},
+ \qquad
+ m_s:m_A:m_f=2:\sqrt3:1,
+ \qquad
+ B_0=\frac{67}{64\pi^2}
+\end{equation}
+нельзя сравнивать с массами и связями известных частиц как предсказания
+наблюдаемого мира. Version IV.SM должна изменить representation-level
+архитектуру, а не переименовать скрытые моды.
+
+\section{Минимальная карта наблюдаемого мира}
+
+Первый обязательный readout имеет вид
+\begin{equation}
+ \begin{aligned}
+ \mathcal R_{\rm SM}:&
+ (\mathcal A_F,H_F,D_F,J_F,\gamma_F)\\
+ &\longrightarrow
+ \left\{
+ \begin{array}{l}
+ SU(3)_c\times SU(2)_L\times U(1)_Y,\\
+ Q_L,u_R,d_R,L_L,e_R,\nu_R\ \text{или обоснованное отсутствие }\nu_R,\\
+ H,\ \text{калибровочные вершины и Yukawa-граф},\\
+ \text{три поколения или механизм их появления}
+ \end{array}
+ \right\}.
+ \end{aligned}
+\end{equation}
+Карта должна следовать из представления конечной алгебры, реальной структуры
+и допустимых внутренних флуктуаций. Таблица квантовых чисел может быть
+временно заморожена как эмпирическая цель, но тогда она не является выводом
+теории.
+
+\section{Что означает ``всё совпало''}
+
+Физическое замыкание разбивается на независимые уровни.
+
+\begin{center}
+\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.48\textwidth}>{\raggedright\arraybackslash}p{0.20\textwidth}}
+\toprule
+Уровень & Обязательный результат & Допустимый статус \\
+\midrule
+\endhead
+Представления & полный SM charge ledger, chirality, anomaly cancellation, Higgs и neutrino graph & строгий вывод или явно маркированный input \\
+Действие & один gauge-invariant и BRST-consistent low-energy functional & строгий вывод \\
+Нормировки & относительные \(g_1,g_2,g_3\), scalar normalization и Yukawa measure из одной trace convention & строгий вывод \\
+Масштаб & не более одного объявленного dimensionful train input & калибровка \\
+RG & перенос от matching scale до laboratory scales с thresholds и scheme ledger & воспроизводимый расчёт \\
+Электрослабый сектор & \(M_W,M_Z,M_H\), \(G_F\), \(\sin^2\theta_W\) и электромагнитная связь & минимум две blind-величины \\
+Сильный сектор & \(\alpha_s\) и согласованный цветовой спектр & blind-величина \\
+Фермионы & массы, CKM и CP-инвариант без независимой настройки каждой наблюдаемой & разделённый train/blind тест \\
+Нейтрино & две mass splittings, mixing pattern и mass ordering branch & минимум одна blind-величина \\
+Мост томов & один functional origin для наблюдаемого действия и допустимой части геометрического ядра & строгий вывод \\
+\bottomrule
+\end{longtable}
+\end{center}
+
+\begin{protocol}[Definition of Done Version IV.SM]
+Version IV.SM получает статус физически замкнутой только если одновременно:
+\begin{enumerate}
+ \item конечная алгебра и её представление фиксированы до численного fit;
+ \item все локальные gauge и mixed gravitational anomalies сокращаются;
+ \item из одного bosonic/fermionic measure следуют относительные
+ нормировки gauge, scalar и Yukawa-блоков;
+ \item после не более чем одного scale input выполнен RG-перенос;
+ \item не менее двух dimensionless observables, не использованных при
+ построении модели, проходят заранее зафиксированные tolerance windows;
+ \item хотя бы одна blind-проверка относится к EW/QCD, а другая --- к
+ fermion или neutrino сектору;
+ \item перечислены все неудачные наблюдаемые и запрещено менять модель после
+ раскрытия blind-набора без открытия новой версии;
+ \item результат воспроизводится независимым машинным pipeline.
+\end{enumerate}
+\end{protocol}
+
+\section{Порядок работы}
+
+Работа проводится через kill-gates:
+\begin{enumerate}
+ \item representation gate: получить наблюдаемый charge ledger;
+ \item anomaly gate: исключить несогласованные chiral modules;
+ \item spectral-normalization gate: вывести отношения \(g_1:g_2:g_3\);
+ \item Higgs--Yukawa gate: получить scalar potential и mass graph;
+ \item RG gate: перенести matching relations к низким энергиям;
+ \item two-sector blind gate: одновременно проверить gauge и matter sectors;
+ \item cross-tome gate: проверить, существует ли общий functional bridge.
+\end{enumerate}
+
+\begin{nogocriterion}[Запрет числового спасения]
+Если после раскрытия blind-наблюдаемой вводится новый коэффициент, меняется
+representation, выбирается новый threshold или переназначается физический
+смысл внутренней моды, соответствующая версия считается проваленной. Близкое
+совпадение отдельного числа не компенсирует неверный спектр частиц,
+аномалию или провал независимого сектора.
+\end{nogocriterion}
+
+\begin{proposition}[Необходимое изменение архитектуры]
+Exact direct-sum completion Тома III.H не может выполнить Definition of Done
+Version IV.SM, поскольку не содержит bi-charged connector states и не
+порождает ненулевой nongravitational portal. Следовательно, наблюдаемое
+замыкание требует новой конечной алгебры или нового недиагонального
+bimodule, а не выбора масштаба \(\chi\).
+\end{proposition}

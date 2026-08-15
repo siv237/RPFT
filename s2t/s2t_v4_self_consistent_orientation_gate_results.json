@@ -1,0 +1,54 @@
+{
+  "gate": "version4_self_consistent_orientation",
+  "free_energy": "Phi_g(alpha)=alpha^2/(2g)-1/4 sum_s log Tr exp[-(Z4_s-alpha K_s)]",
+  "canonical_stiffness": 1.0,
+  "minimum_order_parameter": -1.3652059519322912e-08,
+  "minimum_value": -1.474209749535875,
+  "curvature_at_zero": 0.3243054269574941,
+  "orientation_susceptibility": 0.6756945730425059,
+  "critical_stiffness": 1.4799586083653407,
+  "evenness_residual": 0.0,
+  "unique_zero_minimum_on_scan": true,
+  "fallback_affine_branch": {
+    "best": {
+      "orientation": "kms_symmetric",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 243.28649245061447,
+      "mass_log_rms": 2.5960510663289935
+    },
+    "normalized_masses": {
+      "u": [
+        0.000868489399333168,
+        0.0018084441497469277,
+        1.0
+      ],
+      "d": [
+        0.0009214347262199964,
+        0.00159191567599205,
+        1.0
+      ],
+      "e": [
+        0.000729552481735002,
+        0.0017057647053770719,
+        1.0
+      ],
+      "nu": [
+        0.0007237000650309225,
+        0.001787102156624024,
+        1.0
+      ]
+    },
+    "ckm_angles": [
+      0.2699751482881605,
+      0.0001733653754671545,
+      0.0004028664249075699
+    ],
+    "jarlskog_absolute": 6.609680212009417e-10
+  },
+  "verdict": "canonical self-consistent orientation field remains uncondensed; nonzero CP requires a derived stiffness above the critical value"
+}

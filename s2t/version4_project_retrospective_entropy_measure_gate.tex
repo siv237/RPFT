@@ -1,0 +1,210 @@
+\chapter{Ретроспективный аудит проекта: энтропия, мера и незавершённая вариационная программа}
+
+После исчерпания fixed-\(K\) parent action и неудачи прямого
+\(S^4\times\mathbb{RP}^3\) hybrid необходимо проверить, не был ли в раннем
+корпусе оставлен более фундаментальный механизм. Для этого повторно
+просмотрены RPFT-ветви, строгие UGSM-аудиты, архивные версии TOE, трактаты и
+машинные gate-результаты.
+
+Воспроизводимый snapshot содержит 1188 файлов вместе с generated
+artifacts; основной корпус \texttt{tex/md/py/pdf} содержит 848 файлов.
+Найдено только шесть exact duplicate groups. Следовательно, проблема не
+сводится к нескольким случайно повторённым текстам: она действительно
+пронизывает разные стадии программы.
+
+\section{Генеалогия исходного carrier}
+
+Ранний RPFT слой вводит
+\(S^3\to\mathbb{RP}^3\), modular circle и direct product до объявления
+полного comparison class. Последующие строгие ветви уже требуют отдельно
+доказать quotient, periodicity, spin structure, bundle data и
+variational selection. Поэтому точный \(\pi\)-ledger исходного
+\(K=\mathbb{RP}^3\times S^1\) остаётся содержательным conditional model, но
+не может служить собственным доказательством неизбежности carrier.
+
+Архив TOE показывает другую эволюцию. В одной линии Gaussian kernel
+получается из maximum entropy при фиксированной variance. В другой линии
+топология должна минимизировать spectral entropy или spectral complexity.
+В документе TOE~6.5 появляется наиболее сильная, но так и не выполненная
+программа:
+\begin{equation}
+ S_{\rm eff}[\rho]
+ =S_{\rm spec}[\rho]+\Gamma_{\rm fluc}[\rho],
+ \qquad
+ \mathcal F[\rho]
+ =S_{\rm eff}[\rho]-T_{\rm eff}S_{\rm info}[\rho],
+ \label{eq:archival-toe65-program}
+\end{equation}
+с вариацией spectral density, mode-number constraint и second-variation
+test. Финальный TOE сохраняет Gaussian minimum-action language, но уже не
+предъявляет завершённого topology functional.
+
+\begin{proposition}[Source-level correction]
+Архив не задаёт один универсальный ``энтропийный знак''. Он содержит как
+минимум две различные задачи: maximum entropy распределения при фиксированной
+variance и minimum spectral complexity при сравнении carriers. Их нельзя
+подставлять друг вместо друга без отдельного operator dictionary.
+\end{proposition}
+
+\section{Три разные энтропии}
+
+Для дальнейшей работы необходимо различать:
+\begin{enumerate}
+ \item kernel entropy координатного Gaussian distribution;
+ \item von Neumann или R\'enyi entropy нормированного heat state
+ \(\rho_M=Z_M^{-1}e^{-\tau\Delta_M}\);
+ \item entropy или complexity самой spectral density при вариации geometry
+ и topology.
+\end{enumerate}
+У этих объектов разные domains, constraints и conjugate variables.
+Maximum первой энтропии доказывает Gaussian при заданной covariance, но не
+выбирает manifold. Gibbs minimum второй выбирает state при фиксированном
+Hamiltonian, но не доказывает меру на пространстве manifolds. Третья могла
+бы сравнивать carriers, однако её measure в корпусе не построена.
+
+Это исправляет слишком сильную интерпретацию предыдущего
+\(S^4\)-результата. Большая state entropy и меньшая Gibbs free energy
+\(S^4\) являются точными ordering statements внутри выбранной completion,
+но ещё не следуют из архивного minimum-spectral-complexity postulate.
+
+\section{Scale dependence minimum spectral energy}
+
+Для unit-volume \(S^4\) и \(S^2\times S^2\) рассмотрим одинаковый scalar
+heat state и mean spectral energy
+\begin{equation}
+ E_M(\tau)
+ =\frac{\operatorname{Tr}(\Delta_Me^{-\tau\Delta_M})}
+ {\operatorname{Tr}(e^{-\tau\Delta_M})}.
+\end{equation}
+Машинный аудит даёт единственное crossing
+\begin{equation}
+ \tau_*=0.0957664481672465\ldots.
+\end{equation}
+При \(\tau<\tau_*\) имеем \(E_{S^4}<E_{S^2\times S^2}\), а при
+\(\tau>\tau_*\) порядок меняется. Например,
+\begin{equation}
+ \begin{aligned}
+ \tau=0.05:&\quad E_{S^4}-E_{22}=-1.1962109393\ldots,\\
+ \tau=0.20:&\quad E_{S^4}-E_{22}=+0.6162570345\ldots.
+ \end{aligned}
+\end{equation}
+При этом state-entropy difference на tested points остаётся положительной.
+
+\begin{theorem}[No scale-free energy selector]
+Минимизация mean spectral energy не задаёт безусловный topology selector:
+победитель зависит от correlation time \(\tau\). Следовательно,
+\(\tau\), mode-number constraint и spectral measure должны выводиться в
+одной задаче, а не назначаться после сравнения manifolds.
+\end{theorem}
+
+\section{Почему ранняя factorization не спасает hybrid}
+
+Ранний RPFT мотив независимых sector partition functions предлагает
+естественную общую density
+\begin{equation}
+ \mathfrak f_{4+3}
+ =-\frac{\log Z_4+\log Z_3}{N_4+N_3},
+\end{equation}
+где \(N_d\) --- число correlation cells. Но если
+\(\mathfrak f_i=-\log Z_i/N_i\), то тождественно
+\begin{equation}
+ \mathfrak f_{4+3}
+ =\frac{N_4\mathfrak f_4+N_3\mathfrak f_3}{N_4+N_3}.
+ \label{eq:stratified-weighted-average}
+\end{equation}
+Это convex weighted average. Поэтому его global infimum равен меньшему из
+отдельных minima и достигается на boundary, где cell number проигравшего
+сектора стремится к нулю.
+
+Для найденных minima
+\begin{equation}
+ \mathfrak f_{S^4}^{\min}=-0.00549336084715\ldots,
+ \qquad
+ \mathfrak f_{\mathbb{RP}^3}^{\min}=-0.01043995456498\ldots.
+\end{equation}
+Следовательно, natural stratified measure устраняет \(S^4\), а не
+стабилизирует \(S^4+\mathbb{RP}^3\).
+
+\begin{nogocriterion}[Запрет factorized-weight rescue]
+Сумма sector log-partition functions, нормированная общей суммой cells, не
+создаёт взаимодействия и не может иметь strict interior hybrid minimum.
+Для совместного vacuum необходим cross-sector term, причём его coefficient
+должен быть выведен из одной measure, а не добавлен ради стабилизации.
+\end{nogocriterion}
+
+\section{Что действительно пережило весь корпус}
+
+После дедупликации интерпретаций сохраняются четыре механизма:
+\begin{enumerate}
+ \item defect-cycle Hodge Gram operator
+ \(Q_{\rm cycle}=\operatorname{diag}(\pi,\pi^{-1})\) является exact, но
+ пока не поднят в ambient parent action;
+ \item bounding spin filling выбирает reference spin structure, но не
+ делает остальные три сектора динамически эквивалентными;
+ \item один parent trace фиксирует gauge/family multiplicities, но не
+ relative stiffness разных form degrees;
+ \item вариационная spectral-density программа TOE~6.5 остаётся
+ принципиально непроверенной.
+\end{enumerate}
+Первые три пункта уже проходили отдельные gates и не закрыли действие.
+Четвёртый отличается от очередной геометрической догадки: он меняет сам
+уровень вариации и потенциально может одновременно вывести Gaussian state,
+carrier measure и fluctuation correction.
+
+\section{Исправленный кандидат следующей программы}
+
+Trace-class correction предыдущего gate требует использовать не compact
+operator \(\widehat C\) непосредственно, а его logarithmic generator
+\begin{equation}
+ H_C=-\frac1\tau\log\widehat C.
+\end{equation}
+Минимальная совместная задача должна иметь вид
+\begin{equation}
+ \boxed{
+ \mathcal F[\rho,M]
+ =\operatorname{Tr}(\rho H_C[M])
+ +\Gamma_{\rm fluc}[\rho,M]
+ -\frac1\tau S(\rho)}
+ \label{eq:retrospective-parent-functional}
+\end{equation}
+при
+\begin{equation}
+ \rho\geq0,
+ \qquad
+ \operatorname{Tr}\rho=1,
+\end{equation}
+и одной preregistered measure на comparison class carriers. Коэффициент
+entropy term здесь не свободен: он связан с тем же \(\tau\), которое
+определяет \(\widehat C=e^{-\tau H_C}\). Term
+\(\Gamma_{\rm fluc}\) допустим только как determinant Hessian той же задачи.
+
+При \(\Gamma_{\rm fluc}=0\) variation по \(\rho\) возвращает canonical
+Gaussian state. Новое содержание начинается только при последующей variation
+по \(M\) и совместной проверке Hessian:
+\begin{equation}
+ \delta_\rho\mathcal F=0,
+ \qquad
+ \delta_M\mathcal F=0,
+ \qquad
+ \delta^2\mathcal F\big|_{(\rho_*,M_*)}>0.
+\end{equation}
+
+\begin{theorem}[Retrospective verdict]
+Возврат к исходной программе оправдан только на более глубоком уровне.
+Возвращаться к фиксированному \(K\), exact-number atlas или независимым
+sector normalizations нельзя. Лучший незавершённый кандидат --- совместная
+вариация normalized spectral state и carrier с fluctuation determinant,
+предложенная в TOE~6.5 и исправленная logarithmic-generator dictionary.
+Она пока не является новой физической теорией, но это единственный найденный
+в полном корпусе маршрут, который не был уже закрыт эквивалентным gate.
+\end{theorem}
+
+Первый admissible calculation должен быть выполнен на frozen comparison
+class \(\{S^4,S^2\times S^2\}\), без наблюдаемых inputs. Переоткрытие
+считается успешным только если одна и та же measure фиксирует entropy sign,
+correlation scale и positive second variation. При отсутствии strict
+interior minimum программа закрывается до введения явно новой структуры.
+
+Машинный corpus и numerical audit сохранены в
+\path{s2t_v4_project_retrospective_entropy_measure_gate.py} и
+\path{s2t_v4_project_retrospective_entropy_measure_gate_results.json}.

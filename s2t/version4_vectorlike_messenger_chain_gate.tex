@@ -1,0 +1,94 @@
+\chapter{Vectorlike messenger chain: charges, phases и sector obstruction}
+
+Capability menu выделил two-path vectorlike cycle. Теперь построим явную
+charge-consistent chain для одного observed Yukawa sector и определим, какие
+части механизма следуют автоматически.
+
+\section{Одна anomaly-safe chain}
+
+Пусть \(F_L\) и \(f_R\) --- observed fermions с нулевым hidden charge.
+Введём две vectorlike messenger pairs с одинаковой SM representation
+\(R_f\), но hidden charges
+\begin{equation}
+q_h(X_0)=0,
+\qquad
+q_h(X_q)=1.
+\end{equation}
+Пусть family-triplet scalar \(\Omega\) имеет charge \(-1\), а hidden scalar
+\(\phi_h\) --- charge \(+1\). Тогда разрешены vertices
+\begin{align}
+\overline F_L H_f X_{0R},\\
+\overline X_{0L}\Omega X_{qR},\\
+\overline X_{qL}\phi_h f_R,
+\end{align}
+поскольку hidden charge sums равны \(0,0,0\).
+
+Обе messenger pairs vectorlike относительно SM и hidden group. Поэтому их
+left/right contributions сокращаются во всех local gauge и mixed
+gravitational anomalies representation by representation.
+
+После интегрирования тяжёлых messengers возникает dimension-six operator
+\begin{equation}
+\frac{1}{M_0M_q}\,
+\overline F_L H_f\Omega\phi_h f_R.
+\end{equation}
+После condensates \(\langle\Omega\rangle\), \(\langle\phi_h\rangle\) он
+создаёт effective Yukawa texture и одновременно связывает hidden и observed
+sectors.
+
+\section{Phase-count theorem}
+
+Одна chain является tree graph: она имеет четыре field nodes и три coupling
+edges. Число rephasing-invariant phases равно cycle rank
+\begin{equation}
+E-V+1=3-4+1=0.
+\end{equation}
+Следовательно, все phases одной chain удаляются field redefinitions.
+
+Две неэквивалентные paths между теми же endpoints имеют пять nodes и пять
+edges, поэтому
+\begin{equation}
+E-V+1=1.
+\end{equation}
+Остаётся один loop invariant, например
+\begin{equation}
+\arg\left(
+y_{\Omega a}y_{\phi a}
+y_{\Omega b}^*y_{\phi b}^*
+\right).
+\end{equation}
+
+\begin{theorem}[Minimal phase cycle]
+Одна anomaly-safe vectorlike messenger chain может передать portal и family
+texture, но не может породить физическую CP phase. Две nonparallel paths
+создают ровно один rephasing-invariant loop phase.
+\end{theorem}
+
+\section{Четырёхсекторное препятствие}
+
+Для renormalizable endpoint coupling messenger representation должна
+совпадать с representation соответствующего right singlet. Четыре Dirac
+sectors требуют
+\begin{equation}
+R_u=(\mathbf3,\mathbf1)_{2/3},
+\quad
+R_d=(\mathbf3,\mathbf1)_{-1/3},
+\quad
+R_e=(\mathbf1,\mathbf1)_{-1},
+\quad
+R_\nu=(\mathbf1,\mathbf1)_0.
+\end{equation}
+Следовательно, одна SM messenger representation не обслуживает весь
+Higgs--Yukawa graph. Требуются четыре representation types либо новая unified
+multiplet, распадающаяся на них.
+
+\begin{nogocriterion}[Запрет sector multiplication]
+Нельзя независимо копировать two-path package четыре раза с отдельными
+couplings и называть это единым boundary action. Полный pass требует common
+algebraic multiplet или spectral relation, связывающую sector coefficients.
+\end{nogocriterion}
+
+Таким образом, one-sector charge ledger пройден, CP требует two-path loop, а
+полное observed completion упирается в unified messenger representation.
+Машинный результат сохранён в
+\path{s2t_v4_vectorlike_messenger_chain_gate_results.json}.

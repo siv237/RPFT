@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "a4_relative_u1_coupling_closed",
+  "heat_kernel_coefficients": {
+    "scalar_kinetic_before_common_rescaling": "2",
+    "charge_square_orbit_trace": 2,
+    "gauge_before_common_rescaling": "4/3",
+    "gauge_after_scalar_normalization": "2/3"
+  },
+  "coupling": {
+    "matching": "1/(4 g^2) = normalized gauge coefficient",
+    "g_squared": "3/8",
+    "g": "sqrt(3/8)"
+  },
+  "mass_and_supertrace": {
+    "m_A_squared_over_chi_squared": "3",
+    "gauge_ghost_numerator": "27",
+    "finite_scalar_fermion_numerator": 40,
+    "completed_zero_mode_numerator": "67",
+    "B_zero": "67/(64*pi**2)",
+    "positive": true
+  },
+  "robustness": {
+    "common_f0_cancels": true,
+    "ko6_full_trace_ratio_unchanged": true,
+    "depends_on_charge_representation": true
+  },
+  "verdict": {
+    "gauge_coupling_free": false,
+    "zero_mode_gauge_completion_closed": true,
+    "full_B_computed": false,
+    "next_gate": "spin and flat character KK branch audit"
+  }
+}

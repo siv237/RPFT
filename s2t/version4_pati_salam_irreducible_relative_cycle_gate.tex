@@ -1,0 +1,160 @@
+\section{Irreducible relative cycle и вывод one-copy weight}
+
+Предыдущий gate оставил архитектурный выбор между physical vectorlike
+extension и classical mapping-cone sector. В classical branch единственной
+невыведенной величиной была multiplicity \(k\) одинаковых relative copies,
+дающая \(\lambda_{\rm rel}=k\). Настоящий gate проверяет, устраняет ли эту
+свободу стандартный для finite geometry принцип irreducibility.
+
+\subsection{Операторная система одной цепи}
+
+Пусть
+\begin{equation}
+ \mathcal H_1=\bar4\oplus2_R\oplus4,
+ \qquad
+ \mathcal B_h=M_4(\mathbb C)\oplus M_2(\mathbb C)
+ \,\oplus M_4(\mathbb C),
+\end{equation}
+а \(\mathcal D_\Delta\) --- self-adjoint chain operator с двумя ненулевыми
+edges \(\Delta\) и \(\Delta^T\varepsilon_2\). Коммутант полной node algebra
+состоит из block scalars:
+\begin{equation}
+ \mathcal B_h'
+ =\{\alpha I_4\oplus\beta I_2\oplus\gamma I_4\}.
+\end{equation}
+Условие \([X,\mathcal D_\Delta]=0\) на первом edge даёт
+\(\alpha=\beta\), а на втором --- \(\beta=\gamma\). Поэтому
+\begin{equation}
+ \boxed{\{\mathcal B_h,\mathcal D_\Delta\}'=\mathbb C I_{10}.}
+ \label{eq:ps-relative-one-copy-commutant}
+\end{equation}
+Этот вывод требует только ненулевых edges и остаётся верным на rank-one
+vacuum.
+
+\subsection{Кратность одинаковых copies}
+
+Для \(k\) coefficient-free одинаковых copies канонический lift имеет вид
+\begin{equation}
+ \mathcal H_k=\mathcal H_1\otimes\mathbb C^k,
+ \qquad
+ \mathcal B_{h,k}=\mathcal B_h\otimes I_k,
+ \qquad
+ \mathcal D_{\Delta,k}=\mathcal D_\Delta\otimes I_k.
+\end{equation}
+Тогда
+\begin{equation}
+ \boxed{
+ \{\mathcal B_{h,k},\mathcal D_{\Delta,k}\}'
+ =I_{10}\otimes M_k(\mathbb C),
+ \qquad
+ \dim_\mathbb C=k^2.}
+ \label{eq:ps-relative-k-copy-commutant}
+\end{equation}
+Следовательно, lifted cycle irreducible ровно при \(k=1\).
+
+\begin{theorem}[One-copy irreducibility selector]
+В branch одинаковых relative copies без дополнительных copy-space operators
+условие irreducibility однозначно выбирает
+\begin{equation}
+ k=1,
+ \qquad
+ \boxed{\lambda_{\rm rel}=1.}
+\end{equation}
+Тем самым общий weight determinant selector следует из connectedness,
+common trace--Hodge metric и irreducibility, а не вводится как числовая
+подгонка.
+\end{theorem}
+
+Machine classification для \(k=1,\ldots,5\) даёт commutant dimensions
+\begin{equation}
+ 1,\ 4,\ 9,\ 16,\ 25,
+\end{equation}
+точно совпадающие с \(k^2\).
+
+\subsection{Граница theorem: nontrivial copy dynamics}
+
+При \(k>1\) можно разрушить \(M_k\)-commutant, если поместить на два edges
+дополнительные noncommuting matrices в copy space. Например, для \(k=2\)
+пара \(\sigma_x,\sigma_z\) имеет общий commutant \(\mathbb C I_2\). Но такая
+конструкция уже не является multiplicity одинаковых copies: она добавляет
+новый finite algebra/operator sector и новые orientation data.
+
+\begin{nogocriterion}[Copy-mixing loophole]
+Irreducibility не запрещает произвольную расширенную theory с noncommuting
+copy-space dynamics. Она запрещает \(k>1\) именно в рассматриваемой
+coefficient-free identical-copy branch. Любой \(k>1\) rescue должен быть
+предъявлен как новый finite model и пройти отдельные order-one, reality,
+Hessian и RG gates.
+\end{nogocriterion}
+
+\subsection{Полный \texorpdfstring{\(\Delta+C\)}{Delta+C} Hessian}
+
+До устранения fixed-point auxiliary curvature действие равно
+\begin{equation}
+ V(\Delta,C)=-\rho^2+\tau^2
+ +\|\mathcal D_\Delta^2-C\|_F^2,
+ \qquad
+ C\in\mathcal B_h^{\rm sa}.
+ \label{eq:ps-relative-uneliminated-potential}
+\end{equation}
+Real dimension \(\mathcal B_h^{\rm sa}\) равна
+\begin{equation}
+ 4^2+2^2+4^2=36.
+\end{equation}
+В stationary point
+\(C_\star=E_h(\mathcal D_\Delta^2)\). Если \(J_E\) обозначает Jacobian
+map \(\Delta\mapsto E_h(\mathcal D_\Delta^2)\), полный Hessian по
+\(16+36=52\) real variables имеет block form
+\begin{equation}
+ H_{\rm full}=
+ \begin{pmatrix}
+ H_{\rm eff}+2J_E^TJ_E&-2J_E^T\\
+ -2J_E&2I_{36}
+ \end{pmatrix}.
+ \label{eq:ps-relative-full-hessian-block}
+\end{equation}
+Его Schur complement по auxiliary block точно равен
+\begin{equation}
+ H_{\rm full}/(2I_{36})=H_{\rm eff}.
+\end{equation}
+Для \(\lambda_{\rm rel}=1\)
+\begin{equation}
+ \Spec H_{\rm eff}
+ =\{8\sqrt2\ (1),\ 2\sqrt2\ (6),\ 0\ (9)\},
+\end{equation}
+а inertia полного Hessian равна
+\begin{equation}
+ \boxed{(43_+,9_0,0_-).}
+ \label{eq:ps-relative-full-hessian-inertia}
+\end{equation}
+Numerical Schur-complement error равна
+\(1.8\times10^{-15}\). Все девять zero modes уже присутствуют в effective
+\(\Delta\)-sector; auxiliary block не создаёт новых flat или negative
+directions.
+
+\begin{theorem}[Classical branch conditional closure]
+В irreducible coefficient-free mapping-cone branch multiplicity и общий
+weight закрыты: \(k=\lambda_{\rm rel}=1\). Полный
+\(\Delta+C\) Hessian не имеет negative modes. Остаётся встроить relative
+cycle в полную KO6 real structure и вычислить mixed directions с
+\(\phi\) и \(\Sigma_4\), которые не входят в
+\eqref{eq:ps-relative-uneliminated-potential}.
+\end{theorem}
+
+\subsection{Литература и воспроизводимость}
+
+Multiplicity matrices finite bimodules и их direct sums сверены с
+T.~Krajewski, arXiv:hep-th/9701081. Использование irreducible minimal
+Krajewski diagrams и потеря irreducibility при добавлении одинаковых family
+copies сверены с J.-H.~Jureit and C.~A.~Stephan,
+arXiv:hep-th/0610040. Irreducibility finite real triples и multiplicity-one
+structure сопоставлены с A.~H.~Chamseddine and W.~D.~van Suijlekom,
+arXiv:1904.12392. Relative spectral triple и doubling framework сверены с
+I.~Forsyth, M.~Goffeng, B.~Mesland and A.~Rennie,
+arXiv:1607.07143. Формулы
+\eqref{eq:ps-relative-one-copy-commutant}--
+\eqref{eq:ps-relative-full-hessian-inertia} являются project specialization.
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_irreducible_relative_cycle_gate.py} и
+\path{s2t_v4_pati_salam_irreducible_relative_cycle_gate_results.json}.

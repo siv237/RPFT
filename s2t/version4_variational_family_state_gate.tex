@@ -1,0 +1,80 @@
+\chapter{Вариационная динамика family state: первый беспараметрический pass}
+
+Вместо предварительного выбора corner разрешим family state участвовать в
+вариационной задаче.
+
+\section{Joint state--geometry functional}
+
+После enriched family embedding определим partial graph trace
+\begin{equation}
+ R_{2n}(D)=\sum_{v=1}^{4}(D^{2n})_{vv}\in M_3(\mathbb C).
+\end{equation}
+Для любого state \(\rho\ge0\), \(\Tr\rho=1\), положим
+\begin{equation}
+ V_{2n}(D,\rho)=\Tr_{\rm fam}\bigl(\rho R_{2n}(D)\bigr).
+\end{equation}
+По Rayleigh--Ritz minimum по всем states равен
+\(\lambda_{\min}(R_{2n})\). Corner и continuous weight заранее не задаются.
+
+\section{Quartic selection}
+
+Для \(R_2\) обе branches имеют spectrum \(\{6,6,8\}\). Первый различающий
+even moment --- \(D^4\):
+\begin{align}
+ R_4^-&=
+ \begin{pmatrix}
+ 27/2&0&1/2\\
+ 0&35/2&-7/2\\
+ 1/2&-7/2&17
+ \end{pmatrix},\\
+ R_4^+&=
+ \begin{pmatrix}
+ 27/2&-2&3/2\\
+ -2&35/2&-5/2\\
+ 3/2&-5/2&17
+ \end{pmatrix}.
+\end{align}
+Minus ground value равен
+\begin{equation}
+ 17-\frac{\sqrt{57}}2\approx13.225083>13.
+\end{equation}
+Characteristic polynomial plus branch
+\begin{equation}
+ 4x^3-192x^2+3003x-15358
+\end{equation}
+равен \(-8\) при \(x=25/2\) и \(21\) при \(x=13\). Поэтому
+\begin{equation}
+ 12.5<\lambda_{\min}(R_4^+)<13,
+ \qquad
+ \lambda_{\min}(R_4^+)\approx12.608881.
+\end{equation}
+
+\begin{theorem}[Variational orientation selection]
+Совместная минимизация по geometry branch и по всем normalized family states
+единственным образом выбирает \(\mathcal B_+\). Gap приблизительно равен
+\(0.616201\), и ни corner, ни continuous coefficient не вводятся.
+\end{theorem}
+
+\section{Ground state и stress test}
+
+Selected ground vector равен приблизительно
+\begin{equation}
+ (0.939575,\;0.310502,\;-0.144179)^T.
+\end{equation}
+Его overlap с \(P_-\)-corner составляет около \(0.103\): variational state
+не является замаскированным прежним weight. Sixth-moment stress test также
+выбирает plus branch:
+\begin{equation}
+ 27.505248<32.742926.
+\end{equation}
+
+\begin{proposition}[Conditional dynamic pass]
+В family-enriched triple Вариант C снимает orientation fork без post-hoc
+weight. Pass остаётся условным относительно enriched embedding и выбора
+quartic parent functional как первого различающего even moment.
+\end{proposition}
+
+Physical Yukawa readout ещё не получен. Нельзя читать компоненты ground state
+как CKM или masses без единого operator map к четырём Yukawa sectors.
+Машинный ledger сохранён в
+\path{s2t_v4_variational_family_state_gate_results.json}.

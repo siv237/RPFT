@@ -1,0 +1,37 @@
+{
+  "gate": "version4_cp_odd_mixed_invariant",
+  "reduced_chiral_determinant": "(2*exp(sigma) + exp(I*theta))*exp(2*sigma)*exp(-3*I*theta)/2",
+  "polynomial_trace_classification": {
+    "odd_traces": "zero by bipartite chirality",
+    "graded_even_traces": "zero because MM^dagger and M^dagger M are isospectral",
+    "ungraded_even_traces": "real and CP even under theta -> -theta",
+    "mixed_radial_orientation_hessian": 0
+  },
+  "reduced_pfaffian_phase": {
+    "local_log_section": "2*sigma - 3*I*theta + log(2*exp(sigma) + exp(I*theta)) - log(2)",
+    "gradient_at_unit_vacuum": {
+      "sigma": "0",
+      "theta": "-8/3"
+    },
+    "mixed_hessian_sigma_theta": "-2/9",
+    "nonzero_mixed_hessian": true,
+    "basis_independent": false,
+    "globally_single_valued": false
+  },
+  "imaginary_determinant_candidate": {
+    "expression": "(-exp(sigma)*sin(3*theta) - sin(2*theta)/2)*exp(2*sigma)",
+    "mixed_hessian_sigma_theta": "-11",
+    "basis_independent": false
+  },
+  "full_ko6_measure": {
+    "pfaffian": "|Pf_red|^2",
+    "phase": 0,
+    "mixed_hessian_sigma_theta": 0,
+    "reality_pairing_cancels_candidate": true
+  },
+  "order_one_status": "the reduced phase uses an allowed Dirac block, but promoting it to an action term requires an oriented determinant line not supplied by the current real spectral triple",
+  "unique_local_candidate": "Im log Pf_red",
+  "candidate_survives_current_axioms": false,
+  "minimal_extension": "a chiral bulk/boundary determinant-line orientation or another independently derived pseudoscalar coefficient",
+  "verdict": "all polynomial spectral invariants have zero mixed Hessian; the only local nonzero candidate is the reduced Pfaffian phase with mixed Hessian -2/9, but J pairing cancels it and the determinant line is trivial in the current vectorlike model"
+}

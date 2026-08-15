@@ -1,0 +1,187 @@
+\chapter{Ретроспектива происхождения носителя \texorpdfstring{\(K\)}{K}}
+
+После серии отрицательных gate-ов необходимо проверить, не были ли ограничения
+созданы слишком ранней заморозкой геометрии. Для этого восстановим цепочку
+от исходного zero-prompt и документа \texttt{TOE.pdf} до рабочего
+\begin{equation}
+ K=\mathbb{RP}^3\times S^1.
+\end{equation}
+
+\section{Что действительно делает zero-prompt}
+
+Исходный файл
+\path{RPFT-main/ai-promts/First-principles-00.md} содержит четыре шага.
+
+Во-первых, он требует компактное односвязное трёхмерное group manifold
+единичных кватернионов. Внутри уже выбранного класса это корректно даёт
+\begin{equation}
+ SU(2)\simeq S^3.
+\end{equation}
+Но трёхмерность, group-manifold form и quaternionic symmetry являются
+входами prompt, а не результатом минимизации.
+
+Во-вторых, prompt объявляет центр \(\{\pm1\}\) физически неразличимым и
+требует antipodal quotient. После этого действительно
+\begin{equation}
+ S^3/\mathbb Z_2\simeq SO(3)\simeq\mathbb{RP}^3.
+\end{equation}
+Real structure \(J\) сама по себе такого quotient base points не доказывает;
+необходим отдельный axiom о тривиальном действии центра на всех физических
+состояниях и наблюдаемых.
+
+В-третьих, из конечности KMS-системы prompt требует периодичность modular
+flow и получает \(S^1\). Этот переход неверен в общем случае. Группа
+Томиты--Такесаки имеет real parameter \(t\in\mathbb R\); конечномерная
+density matrix может иметь несоизмеримые modular frequencies и не иметь
+общего ненулевого периода.
+
+Наконец, четвёртый пункт прямо предписывает product architecture. Поэтому
+\begin{equation}
+ \mathbb{RP}^3\times S^1
+\end{equation}
+является корректным ответом на поставленный prompt, но direct product уже
+содержится в условии. Не сравниваются warped metrics и нетривиальный
+\(U(1)\)-bundle class, существующий из-за
+\begin{equation}
+ H^2(\mathbb{RP}^3;\mathbb Z)\cong\mathbb Z_2.
+\end{equation}
+
+\begin{theorem}[Zero-prompt status]
+Zero-prompt условно реконструирует \(K\), но не выводит его как уникальный
+vacuum. Он заранее фиксирует quaternionic spatial class, central quotient,
+periodic circle и product architecture; radius и variational stability не
+определены.
+\end{theorem}
+
+\section{Что на самом деле постулируется в TOE}
+
+Первичный документ \texttt{TOE.pdf} начинается не с компактного
+\(K=\mathbb{RP}^3\times S^1\), а с compact self-adjoint correlation
+operator \(\widehat C\), ядро которого определено на паре точек
+\begin{equation}
+ (x,y)\in M\times M.
+\end{equation}
+Здесь \(M\times M\) --- domain двухточечного kernel, а не утверждение, что
+физическое пространство является произведением двух manifold factors.
+Постулируются
+\begin{align}
+ \widehat C&=e^{-\sigma^2\Delta},
+ \\
+ C_\sigma(x,y)
+ &=\frac1{(4\pi\sigma^2)^2}
+ \exp\left(-\frac{|x-y|^2}{4\sigma^2}\right),
+\end{align}
+а metric восстанавливается из logarithmic Hessian kernel:
+\begin{equation}
+ g_{\mu\nu}(x)
+ =-\lim_{y\to x}4\sigma^2
+ \frac{\partial^2}{\partial x^\mu\partial y^\nu}
+ \log C(x,y).
+\end{equation}
+Таким образом, TOE задаёт правило emergent local geometry, но не выбирает
+топологию \(M\).
+
+Standard Model sector в TOE использует другой объект: finite two-point
+space \(F\) с
+\begin{equation}
+ A_F=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C),
+ \qquad
+ A=C^\infty(M)\otimes A_F.
+\end{equation}
+Это finite noncommutative factor, а не \(\mathbb{RP}^3\times S^1\).
+
+Для трёх поколений TOE затем вводит ещё один, логически отдельный compact
+internal manifold \(M_{\rm int}\) и заявляет
+\begin{equation}
+ N_{\rm gen}=\operatorname{Ind}(D)
+ =\frac12|\chi(M_{\rm int})|,
+ \qquad
+ \chi(M_{\rm int})=\pm6.
+\end{equation}
+Но конкретное \(M_{\rm int}\) не строится. Поздний \texttt{TOE5.pdf}
+прямо называет это Topological Realization Problem и заменяет manifold
+лишь conjectural discrete multi-sheet space.
+
+\begin{proposition}[Различение трёх пространств TOE]
+В TOE нельзя отождествлять:
+\begin{enumerate}
+ \item \(M\times M\) --- область двухточечного correlation kernel;
+ \item \(F\) --- finite NCG space Standard Model;
+ \item \(M_{\rm int}\) --- гипотетический generation-index carrier.
+\end{enumerate}
+Ни один из этих объектов в первичном документе не равен рабочему
+\(K=\mathbb{RP}^3\times S^1\).
+\end{proposition}
+
+\section{Где появляется \texorpdfstring{\(S^3\times S^1\)}{S3 x S1}}
+
+Геометрия \(S^3\times S^1\) появляется в позднем
+\path{toe_ugsm_common_shadow_bridge.tex} как минимальный контролируемый
+heat-trace experiment. Она выбирается для проверки, может ли один и тот же
+Gaussian/heat operator воспроизвести UGSM coefficients \(4\pi^3\),
+\(\pi^2\) и linear \(\pi\)-proxy. Это диагностический background,
+унаследованный от UGSM-стороны, а не решение equation of motion
+\(\delta S[\widehat C]=0\).
+
+Переход
+\begin{equation}
+ S^3\times S^1
+ \longrightarrow
+ \mathbb{RP}^3\times S^1
+\end{equation}
+добавляется позднее через RPFT/S2T central quotient и restricted carrier
+criteria. Следовательно, фактическая genealogy имеет вид
+\begin{equation}
+ \boxed{
+ \begin{gathered}
+ \text{TOE: }\widehat C\text{ на общем }M\times M
+ \\
+ \downarrow\ \text{diagnostic choice}
+ \\
+ S^3\times S^1
+ \downarrow\ \mathbb Z_2\text{-quotient и product assumptions}
+ \\
+ K=\mathbb{RP}^3\times S^1.
+ \end{gathered}}
+\end{equation}
+
+\begin{theorem}[Carrier genealogy verdict]
+Непрерывного вывода \(\text{TOE}\Rightarrow K\) в корпусе нет. Рабочий
+\(K\) является осмысленным условным носителем, собранным из TOE heat-kernel
+language, UGSM test geometry и RPFT/S2T quotient assumptions. Поэтому
+отрицательное закрытие минимального fixed-\(K\) parent action не является
+опровержением исходной correlation-operator программы TOE.
+\end{theorem}
+
+\section{Следующее направление исследования}
+
+Ретроспектива меняет правильный следующий вопрос. Не следует немедленно
+добавлять к фиксированному \(K\) ещё один сектор. Нужно вернуться к
+первичному TOE-принципу и варьировать одновременно correlation operator и
+carrier class:
+\begin{equation}
+ (M,\widehat C,\mathfrak s,\rho)
+ \longmapsto
+ \mathcal S_{\rm corr}[M,\widehat C;\mathfrak s,\rho].
+\end{equation}
+Только если один нормированный functional имеет уникальный устойчивый
+minimum на \(\mathbb{RP}^3\times S^1\), слово ``выведенный носитель'' станет
+допустимым. В противном случае следует сравнить surviving geometries, а не
+принуждать их к уже известному \(K\).
+
+\begin{protocol}[Новая конструктивная ветвь]
+Следующий том может быть переоткрыт как variational carrier classification:
+\begin{enumerate}
+ \item объявить comparison class compact spin four-geometries и bundle
+ sectors без вставки \(K\);
+ \item определить один Gaussian-correlation spectral functional;
+ \item вычислить его local coefficients и nonlocal determinant differences;
+ \item экстремизировать radii, quotient и bundle classes;
+ \item проверить global minimum и Hessian до observed-data readout.
+\end{enumerate}
+Это новая архитектурная ветвь, но она ближе к исходному TOE, чем дальнейшее
+латание уже закрытого minimal fixed-\(K\) action.
+\end{protocol}
+
+Машинный ledger сохранён в
+\path{s2t_v4_zero_prompt_toe_carrier_trace_gate_results.json}.

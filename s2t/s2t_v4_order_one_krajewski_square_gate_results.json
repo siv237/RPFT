@@ -1,0 +1,91 @@
+{
+  "gate": "version4_order_one_krajewski_square",
+  "bimodule_nodes": {
+    "A": {
+      "left_label": "o",
+      "right_label": "o"
+    },
+    "B": {
+      "left_label": "o",
+      "right_label": "h"
+    },
+    "C": {
+      "left_label": "h",
+      "right_label": "h"
+    },
+    "D": {
+      "left_label": "h",
+      "right_label": "o"
+    }
+  },
+  "edge_order_one_ledger": [
+    {
+      "edge": "A-B",
+      "same_left": true,
+      "same_right": false,
+      "order_one_allowed": true
+    },
+    {
+      "edge": "A-C",
+      "same_left": false,
+      "same_right": false,
+      "order_one_allowed": false
+    },
+    {
+      "edge": "A-D",
+      "same_left": false,
+      "same_right": true,
+      "order_one_allowed": true
+    },
+    {
+      "edge": "B-C",
+      "same_left": false,
+      "same_right": true,
+      "order_one_allowed": true
+    },
+    {
+      "edge": "B-D",
+      "same_left": false,
+      "same_right": false,
+      "order_one_allowed": false
+    },
+    {
+      "edge": "C-D",
+      "same_left": true,
+      "same_right": false,
+      "order_one_allowed": true
+    }
+  ],
+  "allowed_edges": [
+    "A-B",
+    "A-D",
+    "B-C",
+    "C-D"
+  ],
+  "forbidden_diagonal_edges": [
+    "A-C",
+    "B-D"
+  ],
+  "allowed_graph_is_four_cycle": true,
+  "triangle_cycle_possible": false,
+  "minimum_order_one_cycle_length": 4,
+  "real_structure_map": {
+    "A": "A",
+    "B": "D",
+    "C": "C",
+    "D": "B"
+  },
+  "j_compatibility_residual_is_zero": true,
+  "trace_D2": "4*a**2 + 4*b**2",
+  "trace_D4": "8*a**4 + 16*a**2*b**2*cos(phi)**2 + 8*b**4",
+  "determinant_D": "4*a**2*b**2*sin(phi)**2",
+  "positive_quartic_phase_minima": [
+    "pi/2",
+    "-pi/2"
+  ],
+  "phase_sign_is_degenerate": true,
+  "j_structure_eliminates_cycle_phase": false,
+  "unrestricted_family_edge_product_span_dimension": 9,
+  "unrestricted_family_edges_return_full_M3": true,
+  "status": "order-one replaces the triangular connector by a Krajewski square; J preserves one CP-evenly selected loop phase, but unrestricted family factors restore arbitrary M3"
+}

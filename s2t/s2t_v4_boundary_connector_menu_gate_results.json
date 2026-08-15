@@ -1,0 +1,90 @@
+{
+  "gate": "version4_boundary_connector_menu",
+  "requirements": [
+    "off_diagonal_finite_edge",
+    "nonzero_portal_possible",
+    "family_triplet_breaking",
+    "rephasing_invariant_oriented_cycle",
+    "local_anomaly_safe"
+  ],
+  "packages": [
+    {
+      "name": "direct_sum",
+      "new_field_orbits": 0,
+      "off_diagonal_finite_edge": false,
+      "nonzero_portal_possible": false,
+      "family_triplet_breaking": false,
+      "rephasing_invariant_oriented_cycle": false,
+      "local_anomaly_safe": true,
+      "reason": "block diagonal spectral action has no cross terms",
+      "passes_all_requirements": false
+    },
+    {
+      "name": "single_scalar_family_triplet",
+      "new_field_orbits": 1,
+      "off_diagonal_finite_edge": false,
+      "nonzero_portal_possible": true,
+      "family_triplet_breaking": true,
+      "rephasing_invariant_oriented_cycle": false,
+      "local_anomaly_safe": true,
+      "reason": "a scalar portal is allowed, but no spectral connector edge or physical CP loop is generated",
+      "passes_all_requirements": false
+    },
+    {
+      "name": "single_vectorlike_messenger_pair",
+      "new_field_orbits": 1,
+      "off_diagonal_finite_edge": true,
+      "nonzero_portal_possible": true,
+      "family_triplet_breaking": false,
+      "rephasing_invariant_oriented_cycle": false,
+      "local_anomaly_safe": true,
+      "reason": "the pair can bridge charges, but one mass path is family blind and its phase is removable",
+      "passes_all_requirements": false
+    },
+    {
+      "name": "family_triplet_single_messenger_chain",
+      "new_field_orbits": 2,
+      "off_diagonal_finite_edge": true,
+      "nonzero_portal_possible": true,
+      "family_triplet_breaking": true,
+      "rephasing_invariant_oriented_cycle": false,
+      "local_anomaly_safe": true,
+      "reason": "one open chain can transmit family breaking, but all edge phases can be rephased away",
+      "passes_all_requirements": false
+    },
+    {
+      "name": "two_path_vectorlike_triplet_cycle",
+      "new_field_orbits": 3,
+      "off_diagonal_finite_edge": true,
+      "nonzero_portal_possible": true,
+      "family_triplet_breaking": true,
+      "rephasing_invariant_oriented_cycle": true,
+      "local_anomaly_safe": true,
+      "reason": "two vectorlike messenger paths and one family-triplet connector can form a closed oriented loop",
+      "passes_all_requirements": true
+    }
+  ],
+  "single_new_orbit_can_pass": false,
+  "minimal_passing_packages": [
+    {
+      "name": "two_path_vectorlike_triplet_cycle",
+      "new_field_orbits": 3,
+      "off_diagonal_finite_edge": true,
+      "nonzero_portal_possible": true,
+      "family_triplet_breaking": true,
+      "rephasing_invariant_oriented_cycle": true,
+      "local_anomaly_safe": true,
+      "reason": "two vectorlike messenger paths and one family-triplet connector can form a closed oriented loop",
+      "passes_all_requirements": true
+    }
+  ],
+  "restricted_minimum_new_field_orbits": 3,
+  "status": "single-field and single-chain packages fail; the first structurally capable menu element is a two-path vectorlike triplet cycle",
+  "open_mathematical_gates": [
+    "real-structure and order-one compatibility",
+    "explicit Standard Model and hidden charge assignment",
+    "survival of a non-removable loop phase after all rephasings",
+    "spectral fixing of relative coefficients",
+    "absence of arbitrary M3 family matrices after messenger integration"
+  ]
+}

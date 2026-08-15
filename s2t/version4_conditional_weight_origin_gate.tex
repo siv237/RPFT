@@ -1,0 +1,62 @@
+\chapter{Происхождение weight: conditional corners и vectorlike ablation}
+
+Внешний аудит предложил vectorlike \(X_\pm\)-сектор как источник orientation
+selection. Одновременно embedding gate оставил открытым происхождение
+\(P_-\)-weighted state.
+
+\section{Vectorlike \texorpdfstring{\(X_\pm\)}{X+/-} не создаёт odd selector}
+
+Если orientation входит как \(K_{\rm eff}=kK_n\), \(k=\pm1\), то eigenvalues
+vectorlike quadratic operator имеют вид
+\begin{equation}
+ M^2+g^2(k\lambda_n)^2=M^2+g^2\lambda_n^2.
+\end{equation}
+Поэтому vectorlike determinant чётен по \(k\). Odd coupling должен уже
+содержать выбранный directed operator \(K_n\) и лишь переносит исходный
+selector obstruction.
+
+\begin{proposition}[Vectorlike orientation ablation]
+Anomaly-safe \(X_\pm\)-пара не снимает CP fork без независимо выведенного
+orientation-odd coupling.
+\end{proposition}
+
+\section{Complementary corner expectations}
+
+Shear задаёт projections
+\begin{equation}
+ P_-=\frac{I-S}{2},\qquad P_+=I-P_-,
+\end{equation}
+рангов \(1\) и \(2\). Corner maps \(E_\pm(X)=P_\pm XP_\pm\) idempotent, а
+нормированные states после выбора corner фиксированы.
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Functional & \(\mathcal B_-\) & \(\mathcal B_+\)\\
+\midrule
+Full trace & \(48\) & \(48\)\\
+Odd corner & \(83/4\) & \(79/4\)\\
+Even corner & \(109/4\) & \(113/4\)\\
+Normalized even corner & \(109/8\) & \(113/8\)\\
+Shear weight & \(13/2\) & \(17/2\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Odd corner выбирает \(\mathcal B_+\), even corner --- \(\mathcal B_-\), а
+full trace является их точной суммой.
+
+\begin{theorem}[Conditional-expectation limitation]
+Conditional expectation канонически нормирует state после выбора corner, но
+не выбирает сам corner. Complementary canonical states предпочитают
+противоположные branches.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет corner cherry-picking]
+Нельзя выбирать \(P_-\)-corner по желаемому результату. Нужен вариационный,
+модульный или superselection-принцип, выделяющий physical state заранее.
+\end{nogocriterion}
+
+Заметка о \(X_\pm\) принимается как отрицательная ablation. Следующий шаг ---
+вариационная динамика state/embedding. Машинный ledger сохранён в
+\path{s2t_v4_conditional_weight_origin_gate_results.json}.

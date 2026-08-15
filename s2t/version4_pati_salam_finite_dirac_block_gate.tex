@@ -1,0 +1,165 @@
+\chapter{Явный one-generation Pati--Salam finite Dirac block}
+
+Literature re-audit показал, что дальнейшие слова о grading имеют смысл
+только после построения явной matrix model. Настоящая глава закрывает этот
+representation-level пробел, не заявляя ещё полный spectral triple.
+
+\section{Алгебра и Hilbert module}
+
+После grading reduction базовая конечная алгебра имеет вид
+\begin{equation}
+ \mathcal A_F^{PS}=\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C).
+\end{equation}
+Particle module одного поколения равен
+\begin{equation}
+ V_R=(2_R,1_L,4_4),
+ \qquad
+ V_L=(1_R,2_L,4_4),
+\end{equation}
+поэтому
+\begin{equation}
+ \dim_\mathbb C V_R=8,
+ \qquad
+ \dim_\mathbb C V_L=8.
+\end{equation}
+До antiparticle doubling получаются те же 16 complex particle states, что и
+в observed generation atom. KO6 completion использует
+\begin{equation}
+ \mathcal H_F=V_R\oplus V_L\oplus V_R^c\oplus V_L^c
+\end{equation}
+complex dimension 32.
+
+В порядке \((R,L,R^c,L^c)\) grading фиксируется как
+\begin{equation}
+ \Gamma_F=\operatorname{diag}(+I_8,-I_8,-I_8,+I_8),
+\end{equation}
+а antiunitary \(J_F=P_JK\) обменивает
+\begin{equation}
+ R\leftrightarrow R^c,
+ \qquad
+ L\leftrightarrow L^c.
+\end{equation}
+Тем самым \(J_F\Gamma_F=-\Gamma_FJ_F\), как требуется в KO-dimension 6.
+
+\section{Общий odd real-compatible operator}
+
+Минимальный block ansatz равен
+\begin{equation}
+ D_F=
+ \begin{pmatrix}
+ 0&Y&M_R&0\\
+ Y^\dagger&0&0&M_L\\
+ M_R^\dagger&0&0&\bar Y\\
+ 0&M_L^\dagger&Y^T&0
+ \end{pmatrix},
+ \label{eq:ps-explicit-df}
+\end{equation}
+где \(Y\in M_8(\mathbb C)\), а Majorana channels удовлетворяют
+\begin{equation}
+ M_R^T=M_R,
+ \qquad
+ M_L^T=M_L.
+\end{equation}
+Прямая машинная проверка даёт с double precision нулевые ошибки для
+\begin{equation}
+ D_F=D_F^\dagger,
+ \qquad
+ \{D_F,\Gamma_F\}=0,
+ \qquad
+ D_FP_J=P_J\bar D_F,
+ \qquad
+ \{P_J,\Gamma_F\}=0.
+\end{equation}
+
+\section{Representation decomposition каналов}
+
+Left--right channel имеет 64 complex components и разлагается как
+\begin{equation}
+ \operatorname{Hom}(V_L,V_R)
+ =(2_R,2_L,1_4)\oplus(2_R,2_L,15_4).
+\end{equation}
+Правый symmetric channel имеет
+\begin{align}
+ \operatorname{Sym}^2(2_R\otimes4_4)
+ &=(\operatorname{Sym}^22_R\otimes\operatorname{Sym}^24_4)
+ \\&\quad\oplus
+ (\Lambda^22_R\otimes\Lambda^24_4)\\
+ &=(3_R,1_L,10_4)\oplus(1_R,1_L,6_4),
+\end{align}
+dimension \(30+6=36\). Аналогично
+\begin{equation}
+ M_L:\quad(1_R,3_L,10_4)\oplus(1_R,1_L,6_4).
+\end{equation}
+Таким образом, три matrix channels точно воспроизводят general fundamental
+scalar ledger литературы, а total число complex components равно
+\begin{equation}
+ 64+36+36=136.
+\end{equation}
+
+\begin{theorem}[Explicit target-block pass]
+Матрица~\eqref{eq:ps-explicit-df} является явным self-adjoint, odd и
+KO6-real-compatible one-generation Pati--Salam target block. Её три
+независимых channels автоматически воспроизводят representations
+general fundamental branch.
+\end{theorem}
+
+\section{Composite first-order restriction}
+
+В constrained branch более общие fields становятся nonlinear composites
+основных
+\begin{equation}
+ \phi\sim(2_R,2_L,1_4),
+ \qquad
+ \Delta\sim(2_R,1_L,4_4),
+ \qquad
+ \Sigma_4\sim(1_R,1_L,15_4).
+\end{equation}
+При одном поколении literature formulas имеют структуру
+\begin{align}
+ Y={}&(k_\nu\phi+k_e\widetilde\phi)\otimes\Sigma_4
+ +(k_u\phi+k_d\widetilde\phi)\otimes(I_4-\Sigma_4),\\
+ (M_R)_{\dot aI,\dot bJ}={}&
+ k_{\nu_R}^*\Delta_{\dot aJ}\Delta_{\dot bI}.
+\end{align}
+Вторая формула автоматически симметрична по compound indices. В
+complexified algebraic convention inputs содержат до quotient
+\begin{equation}
+ 4_\phi+8_\Delta+15_{\Sigma_4}=27
+\end{equation}
+complex coordinates. Если physical adjoint condition требует
+\(\Sigma_4=\Sigma_4^\dagger\), тот же input имеет
+\begin{equation}
+ 8_\phi+16_\Delta+15_{\Sigma_4}=39
+\end{equation}
+real degrees. В обоих conventions это намного меньше 200 real components
+активных general \(Y+M_R\) channels. Composite branch является поэтому
+сильно ограниченным нелинейным подмногообразием, а не новым независимым
+scalar menu. Точный reality convention для fluctuated \(\Sigma_4\) должен
+быть получен из следующего algebra-action gate.
+
+\section{Что ещё не доказано}
+
+Построена gauge-representation и KO6 matrix model, но ещё не реализованы
+явными matrices:
+\begin{enumerate}
+ \item left и opposite actions всей \(\mathcal A_F^{PS}\);
+ \item exact first-order double commutator;
+ \item orientability и unimodularity;
+ \item вывод composite formulas из kernel first-order condition;
+ \item physical half-trace и spectral potential.
+\end{enumerate}
+
+\begin{protocol}[Следующий exact gate]
+Следует построить \(\pi(a)\) и \(J\pi(b)J^{-1}\) на всех 32 states и
+вычислить пространство operators, удовлетворяющих
+\begin{equation}
+ [[D_F,\pi(a)],J\pi(b)J^{-1}]=0.
+\end{equation}
+Расчёт проводится отдельно для full Pati--Salam algebra и embedded Standard
+Model subalgebra. Только совпадение второго kernel с composite formulas
+сделает first-order reduction project theorem.
+\end{protocol}
+
+Машинный block сохранён в
+\path{s2t_v4_pati_salam_finite_dirac_block.py} и
+\path{s2t_v4_pati_salam_finite_dirac_block_results.json}.

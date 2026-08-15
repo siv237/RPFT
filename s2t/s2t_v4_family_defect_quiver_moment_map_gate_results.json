@@ -1,0 +1,95 @@
+{
+  "gate": "version4_family_defect_quiver_moment_map_gate",
+  "quiver": {
+    "nodes": [
+      "left frozen A4 triplet",
+      "middle gauged SO3 triplet",
+      "right frozen A4 triplet"
+    ],
+    "arrows": {
+      "X": "left -> middle real bifundamental locking field",
+      "Y": "middle -> right A4-equivariant charge-two pairing connector"
+    },
+    "schur_reduction": "End_A4(R3)=R I3, hence Y=Phi I3",
+    "middle_moment_map": "mu=X X^T-Y^dagger Y=X X^T-|Phi|^2 I3",
+    "action": "S_mu=tau_3(mu^2), tau_3=Tr/3"
+  },
+  "checks": {
+    "a4_rotation_count": 12,
+    "real_a4_triplet_commutant_dimension": 1,
+    "smallest_nonzero_commutant_singular_value": 4.898979485566353,
+    "maximum_moment_map_decomposition_residual": 2.1316282072803006e-14,
+    "central_square_coefficients": {
+      "abs_phi_four": 1.0,
+      "abs_phi_two_trace_gram": -0.6666666666666666,
+      "trace_gram_squared": 0.1111111111111111
+    },
+    "zero_gradient_hessian_eigenvalues": [
+      4.666664831493549e-10,
+      4.666675120379856e-10,
+      4.666685012554291e-10,
+      8.000001323845989e-10,
+      2.3744469357302322,
+      4.66666666711676,
+      4.666666667116763,
+      4.66666666713333,
+      4.666666667133333,
+      4.666666667133334,
+      11.792219732152791
+    ],
+    "zero_gradient_positive_count": 7,
+    "zero_gradient_zero_count": 4,
+    "zero_gradient_negative_count": 0,
+    "unit_momentum_radial_minimum": {
+      "frame_radius": 0.7432242843559695,
+      "pairing_radius": 0.22887188009097365,
+      "pairing_radius_squared": 0.05238233749637702,
+      "energy": 0.5395181198347444,
+      "gradient_norm": 0.0,
+      "hessian_eigenvalues": [
+        0.19471628798993343,
+        8.673615891733446
+      ],
+      "condensed": true,
+      "stable": true,
+      "multistart_count": 8,
+      "multistart_energy_spread": 0.46048188016525493,
+      "distinct_candidate_minima": [
+        [
+          2e-08,
+          0.0,
+          1.0
+        ],
+        [
+          0.72442382,
+          0.0,
+          0.5408201282
+        ],
+        [
+          0.74322428,
+          0.22887184,
+          0.5395181198
+        ],
+        [
+          0.74322428,
+          0.22887185,
+          0.5395181198
+        ],
+        [
+          0.74322428,
+          0.22887188,
+          0.5395181198
+        ]
+      ]
+    }
+  },
+  "exact_identity": {
+    "formula": "tau_3(mu^2)=(|Phi|^2-tau_3(XX^T))^2+tau_3((XX^T-tau_3(XX^T)I)^2)",
+    "meaning": "one middle-node moment-map square contains both the requested norm-locking square and a positive anisotropy penalty"
+  },
+  "status": {
+    "coefficient_ratio": "pass_from_normalized_middle_node_moment_map",
+    "pairing_condensate_in_normalized_unit_momentum_model": "stable_nonzero_joint_minimum",
+    "remaining_gap": "embed the frozen-gauged-frozen quiver, its A4-equivariant Schur restriction, and the middle-node moment-map trace in the actual finite graded spectral triple with the same kinetic normalization"
+  }
+}

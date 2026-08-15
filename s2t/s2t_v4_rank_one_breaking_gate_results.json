@@ -1,0 +1,34 @@
+{
+  "gate": "version4_rank_one_breaking",
+  "gl2_order": 6,
+  "cohomology_ring_automorphism_order": 2,
+  "unique_nontrivial_ring_automorphism": "((1, 0), (1, 1))",
+  "shear_permutation": [
+    0,
+    1,
+    3,
+    2
+  ],
+  "shear_full_eigenvalues": {
+    "1": 3,
+    "-1": 1
+  },
+  "shear_triplet_eigenvalues": {
+    "1": 2,
+    "-1": 1
+  },
+  "odd_projector_rank_full": 1,
+  "odd_projector_rank_triplet": 1,
+  "odd_projector_triplet_eigenvalues": {
+    "0": 2,
+    "1": 1
+  },
+  "odd_projector_lies_in_triplet": true,
+  "factor_translations_commute": true,
+  "triplet_translation_p": "Matrix([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])",
+  "triplet_translation_q": "Matrix([[1, 0, 0], [0, -1, 0], [0, 0, -1]])",
+  "simultaneous_diagonal_family_algebra": true,
+  "leading_texture": "one heavy family and two massless families",
+  "mixing_verdict": "operators built only from the two factor translations share an eigenbasis and cannot predict nontrivial CKM",
+  "next_requirement": "derive a sector-dependent noncommuting incidence operator before looking at CKM data"
+}

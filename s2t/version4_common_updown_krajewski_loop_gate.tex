@@ -1,0 +1,91 @@
+\chapter{Common up--down Krajewski loop: derived cross-word и CP-even fork}
+
+Предыдущая глава показала, что invariant
+\(W=\Tr(P_-H_uH_d)\) классифицирует relative up/down geometry, но отсутствует
+в direct sum двух square actions. Теперь построим один общий finite graph,
+где этот cross-word возникает непосредственно из spectral trace.
+
+\section{Минимальный \texorpdfstring{\(J\)}{J}-парный rectangle}
+
+Первичный rectangle состоит из бимодулей
+\begin{equation}
+ A=(L_0,R_0),\quad B=(L_0,R_1),\quad
+ C=(L_1,R_1),\quad D=(L_1,R_0).
+\end{equation}
+Edges \(AB,BC,CD,DA\) поочерёдно сохраняют left или right label, поэтому все
+проходят order-one condition. Чтобы \(J\) не отождествлял независимые
+up/down edges, добавляется транспонированный conjugate rectangle. Полный
+оператор имеет восемь graph nodes и dimension \(8\times3=24\) на family
+blocks.
+
+На первичном loop фиксируем family factors
+\begin{equation}
+ AB:P_-,
+ \qquad
+ BC:H_u,
+ \qquad
+ CD:H_d,
+ \qquad
+ DA:e^{i\theta}I_3.
+\end{equation}
+Противоположные matrix elements задаются self-adjointness, а второй rectangle
+--- реальной структурой. Прямой matrix test подтверждает одновременно
+self-adjointness, \(JD_F=D_FJ\), odd grading и order-one edge criterion.
+
+\section{Cross-word из одного trace}
+
+Для каждой из трёх relative orbit полный quartic trace имеет универсальный
+вид
+\begin{equation}
+ \Tr D_F^4
+ =
+ 104+16\cos\theta\,\Tr(P_-H_uH_d).
+\end{equation}
+Следовательно, mixed coefficient не вводится вручную: он является
+кратностью ориентированного четырёхрёберного loop и имеет фиксированный знак.
+
+Подстановка \(W=-1/2,0,+1/2\) даёт
+\begin{align}
+ W=-\frac12:&\quad \Tr D_F^4=104-8\cos\theta,\\
+ W=0:&\quad \Tr D_F^4=104,\\
+ W=+\frac12:&\quad \Tr D_F^4=104+8\cos\theta.
+\end{align}
+При положительном quartic coefficient minima равны
+\begin{equation}
+ (W,\theta)=
+ \left(-\frac12,0\right)
+ \quad\text{или}\quad
+ \left(+\frac12,\pi\right),
+\end{equation}
+и имеют одинаковое значение \(96\). Commuting class \(W=0\) остаётся на
+уровне \(104\) и исключается.
+
+\begin{theorem}[Derived noncommuting-orbit selection]
+Один общий \(J\)-парный Krajewski rectangle автоматически порождает
+cross-word и спектрально исключает commuting relative orbit. Тем самым три
+физические up/down architecture сокращаются до двух noncommuting branches
+без введения нового \(\kappa_{ud}\).
+\end{theorem}
+
+\section{Почему CP ещё не закрыта}
+
+Loop phase релаксирует вместе с orbit sign. В двух minima она равна \(0\)
+или \(\pi\), поэтому оба loop products вещественны. Transformation
+\begin{equation}
+ (W,\theta)\longmapsto(-W,\theta+\pi)
+\end{equation}
+сохраняет minimum energy. Следовательно, action выбирает noncommutativity, но
+не orientation и не family-nonfactorizable CP phase.
+
+\begin{nogocriterion}[CP-even cross-loop]
+Наличие derived cross-word не разрешает объявить CKM phase выведенной.
+Нужен дополнительный orientation-sensitive datum, который запрещает
+компенсацию sign \(W\) сдвигом \(\theta\mapsto\theta+\pi\), причём этот datum
+должен возникать из того же общего operator, а не из внешнего complex
+coefficient.
+\end{nogocriterion}
+
+Гейт является реальным продвижением: mixed up/down interaction впервые
+получен из одного \(D_F\), а commuting branch устранена. Открытым остаётся
+двухветвевой CP-even fork. Exact \(24\times24\) ledger сохранён в
+\path{s2t_v4_common_updown_krajewski_loop_gate_results.json}.

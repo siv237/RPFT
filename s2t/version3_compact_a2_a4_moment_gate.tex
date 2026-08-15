@@ -1,0 +1,248 @@
+\chapter{Compact \(a_2/a_4\) spectral-moment gate}
+
+Внешний red-team предложил использовать compact heat-kernel coefficients
+для фиксации quadratic и quartic terms одним spectral action. Выполним
+это вычисление в той же Laplace-конвенции, что использовалась для
+\(\kappa\) и \(g\).
+
+\section{Curved product Dirac convention}
+
+На четырёхмерном base-\(K\) оператор имеет вид
+\begin{equation}
+ \mathcal D_A
+ =
+ i\gamma^\mu(\nabla_\mu+A_\mu)
+ +\gamma^5\Phi.
+\end{equation}
+В Laplace-записи
+\begin{equation}
+ \mathcal D_A^2
+ =-(\nabla^2+E)
+\end{equation}
+endomorphism содержит
+\begin{equation}
+ E
+ =
+ -\frac14R\mathbf1
+ -\Phi^2
+ -i\gamma^\mu\gamma^5D_\mu\Phi
+ -\frac12\gamma^{\mu\nu}F_{\mu\nu}.
+\end{equation}
+Для closed manifold relevant coefficients равны
+\begin{align}
+ a_2
+ &=
+ \frac1{(4\pi)^2}
+ \int_K
+ \Tr\left(E+\frac16R\right),
+ \\
+ a_4
+ &=
+ \frac1{(4\pi)^2}
+ \int_K
+ \Tr\left(
+ \frac12E^2
+ +\frac16RE
+ +\frac1{12}\Omega^2
+ +\text{pure curvature}
+ \right),
+\end{align}
+где total derivatives опущены.
+
+\section{\(\Phi\)-часть коэффициента \(a_2\)}
+
+Подстановка \(E\) даёт
+\begin{equation}
+ E+\frac16R
+ =
+ -\Phi^2-\frac1{12}R
+ +\text{Clifford-odd terms}.
+\end{equation}
+После spin trace
+\begin{equation}
+ a_2\big|_{\Phi}
+ =
+ \frac1{(4\pi)^2}
+ \int_K
+ \left[
+ -4\,\Tr_{\mathrm{orb}}\Phi^2
+ \right].
+\end{equation}
+Коэффициент \(a_0\) содержит только
+\(\Tr\mathbf1\) и не зависит от \(\Phi\).
+
+\section{\(\Phi\)-часть коэффициента \(a_4\)}
+
+Quartic term приходит из \(\frac12E^2\):
+\begin{equation}
+ a_4\big|_{\Phi^4}
+ =
+ \frac1{(4\pi)^2}
+ \int_K
+ 2\,\Tr_{\mathrm{orb}}\Phi^4.
+\end{equation}
+Derivative term имеет тот же spin-traced coefficient:
+\begin{equation}
+ a_4\big|_{\mathrm{kin}}
+ =
+ \frac1{(4\pi)^2}
+ \int_K
+ 2\,\Tr_{\mathrm{orb}}(D_\mu\Phi D^\mu\Phi).
+\end{equation}
+
+Curvature--scalar term получает два вклада. Из
+\(\frac16RE\) приходит
+\(-R\Phi^2/6\) до spin trace, а cross-term
+\(\frac12E^2\) между \(-R/4\) и \(-\Phi^2\) даёт
+\(+R\Phi^2/4\). Сумма равна
+\begin{equation}
+ -\frac16R\Phi^2+\frac14R\Phi^2
+ =\frac1{12}R\Phi^2.
+\end{equation}
+После spin trace
+\begin{equation}
+ a_4\big|_{R\Phi^2}
+ =
+ \frac1{(4\pi)^2}
+ \int_K
+ \frac13R\,\Tr_{\mathrm{orb}}\Phi^2.
+\end{equation}
+
+\begin{theorem}[Compact scalar heat-kernel ledger]
+В выбранной convention \(\Phi\)-dependent coefficients равны
+\begin{align}
+ a_2\big|_\Phi
+ &\propto-4\Tr_{\mathrm{orb}}\Phi^2,
+ \\
+ a_4\big|_\Phi
+ &\propto
+ 2\Tr_{\mathrm{orb}}(D\Phi)^2
+ +2\Tr_{\mathrm{orb}}\Phi^4
+ +\frac13R\Tr_{\mathrm{orb}}\Phi^2.
+\end{align}
+Тем самым \(a_2\) фиксирует quadratic bare term, а \(a_4\) одновременно
+фиксирует kinetic, quartic и conformal curvature coupling.
+\end{theorem}
+
+\section{Нормированный bare potential}
+
+Четырёхмерный spectral action содержит
+\begin{equation}
+ S_{\mathrm{spec}}
+ \supset
+ f_2\Lambda^2a_2+f_0a_4.
+\end{equation}
+После деления на общий scalar kinetic coefficient \(2f_0\) получаем
+\begin{align}
+ \mathcal L_{\Phi}
+ &=
+ \Tr_{\mathrm{orb}}(D_\mu\Phi D^\mu\Phi)
+ +\Tr_{\mathrm{orb}}\Phi^4
+ \\
+ &\quad
+ +\left(
+ -2\frac{f_2}{f_0}\Lambda^2
+ +\frac16R
+ \right)
+ \Tr_{\mathrm{orb}}\Phi^2.
+\end{align}
+Сопоставление с
+\begin{equation}
+ \Tr_{\mathrm{orb}}
+ \left(\Phi^2-\chi^2\mathbf1\right)^2
+\end{equation}
+даёт
+\begin{equation}
+ \boxed{
+ \chi^2
+ =
+ \frac{f_2}{f_0}\Lambda^2
+ -\frac1{12}R.}
+\end{equation}
+
+Для круглого
+\(K=\mathbb{RP}^3_R\times S^1_R\) с
+\begin{equation}
+ R_K=\frac6{R^2}
+\end{equation}
+получаем dimensionless relation
+\begin{equation}
+ \boxed{
+ (\chi R)^2
+ =
+ \frac{f_2}{f_0}(\Lambda R)^2
+ -\frac12.}
+\end{equation}
+Ненулевой flattening vacuum существует только если
+\begin{equation}
+ \frac{f_2}{f_0}(\Lambda R)^2>\frac12.
+\end{equation}
+
+\section{Что закрыто}
+
+\begin{enumerate}
+ \item bare quartic/kinetic ratio фиксирован и равен единице;
+ \item curvature coupling фиксирован и не является новым coefficient;
+ \item quadratic term определяется теми же spectral data
+ \(f_2,\Lambda,f_0\);
+ \item прежняя свободная \(\lambda_2\) на bare matching scale заменена
+ одной spectral combination.
+\end{enumerate}
+
+\begin{proposition}[Tree-level spectral boundary pass]
+Compact \(a_2/a_4\) calculation действительно задаёт единое tree-level
+boundary condition для scalar potential. Независимое ручное назначение
+\(\lambda_2\) и \(\lambda_4\) на matching scale больше не требуется.
+\end{proposition}
+
+\section{Что не закрыто}
+
+Формула для \(\chi R\) содержит
+\begin{equation}
+ \zeta_{\mathrm{mom}}
+ :=
+ \frac{f_2}{f_0}(\Lambda R)^2.
+\end{equation}
+Ни topology, ни finite algebra, ни charge trace пока не фиксируют
+\(\zeta_{\mathrm{mom}}\). Выбор spectral function определяет
+\(f_2/f_0\), а \(\Lambda R\) задаёт cutoff относительно геометрического
+радиуса.
+
+Кроме того, one-loop renormalized quartic допускает finite matching shift,
+если не постулировано, что bare spectral boundary condition является
+полной renormalization condition при \(\mu=\Lambda\).
+
+\begin{nogocriterion}[Spectral-moment closure rule]
+Scale gate считается закрытым только если:
+\begin{enumerate}
+ \item spectral function или её moment ratio \(f_2/f_0\) выведены;
+ \item relation \(\Lambda R\) фиксирована геометрически или динамически;
+ \item finite quantum matching shift при \(\mu=\Lambda\) доказанно
+ отсутствует либо вычислен.
+\end{enumerate}
+Иначе \(\zeta_{\mathrm{mom}}\) является одной непрерывной scale-setting
+комбинацией.
+\end{nogocriterion}
+
+\begin{theorem}[Compact moment verdict]
+Предложенный external red-team маршрут частично проходит: он закрывает
+двухпараметрическую свободу bare \(\lambda_2,\lambda_4\) до одной
+spectral-moment combination. Но parameter-free absolute scale не получен.
+После одного train scale relation становится проверяемой boundary
+condition для \(f_2/f_0\) и \(\Lambda R\).
+\end{theorem}
+
+\begin{protocol}[Следующий гейт]
+Необходимо проверить минимальные заранее объявленные spectral functions
+и вычислить их \(f_2/f_0\). Для каждой функции следует:
+\begin{enumerate}
+ \item зафиксировать normalization \(f_0\);
+ \item вычислить \(f_2/f_0\);
+ \item проверить vacuum inequality;
+ \item определить, остаётся ли \(\Lambda R\) свободным.
+\end{enumerate}
+Сравнение с particle masses до этого запрещено.
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_compact_a2_a4_moment_results.json}.

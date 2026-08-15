@@ -1,0 +1,122 @@
+{
+  "gate": "version4_bimodule_multiplicity",
+  "search_range_per_multiplicity": [
+    0,
+    4
+  ],
+  "tested_vectors": 15625,
+  "dirac_neutrino_branch": {
+    "solution_count_in_range": 4,
+    "minimal_dimension": 16,
+    "minimal_solutions": [
+      {
+        "multiplicities": {
+          "Q_L": 1,
+          "u_R": 1,
+          "d_R": 1,
+          "L_L": 1,
+          "e_R": 1,
+          "nu_R": 1
+        },
+        "complex_dimension": 16,
+        "su3_cubed": 0,
+        "su2_squared_u1": "0",
+        "gravity_squared_u1": 0,
+        "u1_cubed": "0",
+        "weak_doublets_mod2": 0
+      }
+    ],
+    "solution_vectors": [
+      {
+        "Q_L": 1,
+        "u_R": 1,
+        "d_R": 1,
+        "L_L": 1,
+        "e_R": 1,
+        "nu_R": 1
+      },
+      {
+        "Q_L": 2,
+        "u_R": 2,
+        "d_R": 2,
+        "L_L": 2,
+        "e_R": 2,
+        "nu_R": 2
+      },
+      {
+        "Q_L": 3,
+        "u_R": 3,
+        "d_R": 3,
+        "L_L": 3,
+        "e_R": 3,
+        "nu_R": 3
+      },
+      {
+        "Q_L": 4,
+        "u_R": 4,
+        "d_R": 4,
+        "L_L": 4,
+        "e_R": 4,
+        "nu_R": 4
+      }
+    ]
+  },
+  "no_right_neutrino_branch": {
+    "solution_count_in_range": 4,
+    "minimal_dimension": 15,
+    "minimal_solutions": [
+      {
+        "multiplicities": {
+          "Q_L": 1,
+          "u_R": 1,
+          "d_R": 1,
+          "L_L": 1,
+          "e_R": 1,
+          "nu_R": 0
+        },
+        "complex_dimension": 15,
+        "su3_cubed": 0,
+        "su2_squared_u1": "0",
+        "gravity_squared_u1": 0,
+        "u1_cubed": "0",
+        "weak_doublets_mod2": 0
+      }
+    ],
+    "solution_vectors": [
+      {
+        "Q_L": 1,
+        "u_R": 1,
+        "d_R": 1,
+        "L_L": 1,
+        "e_R": 1,
+        "nu_R": 0
+      },
+      {
+        "Q_L": 2,
+        "u_R": 2,
+        "d_R": 2,
+        "L_L": 2,
+        "e_R": 2,
+        "nu_R": 0
+      },
+      {
+        "Q_L": 3,
+        "u_R": 3,
+        "d_R": 3,
+        "L_L": 3,
+        "e_R": 3,
+        "nu_R": 0
+      },
+      {
+        "Q_L": 4,
+        "u_R": 4,
+        "d_R": 4,
+        "L_L": 4,
+        "e_R": 4,
+        "nu_R": 0
+      }
+    ]
+  },
+  "structural_result": "all nonzero solutions are generation copies with a common multiplicity g",
+  "generation_count_status": "unfixed positive integer"
+}

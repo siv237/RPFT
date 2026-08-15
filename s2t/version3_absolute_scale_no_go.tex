@@ -1,0 +1,130 @@
+\chapter{Глобальная масштабная ковариантность и absolute-scale no-go}
+
+До построения radion-потенциала необходимо отделить физическое уравнение
+масштаба от выбора единиц. Пусть вся метрика компактного носителя
+масштабируется гомотетией
+\begin{equation}
+ g\longmapsto \lambda^2 g,
+ \qquad \lambda>0.
+\end{equation}
+Топология, фундаментальная группа, спин-структуры и конечная алгебра при
+этом не меняются.
+
+\section{Масштабирование геометрических данных}
+
+Для \(d\)-мерного фактора выполняется
+\begin{align}
+ L&\longmapsto\lambda L,\\
+ \Vol_d&\longmapsto\lambda^d\Vol_d,\\
+ \Delta&\longmapsto\lambda^{-2}\Delta,\\
+ D&\longmapsto\lambda^{-1}D.
+\end{align}
+Для \(p\)-формы с неизменными координатными коэффициентами
+\begin{equation}
+ \|\omega_p\|_{L^2}^2
+ \longmapsto
+ \lambda^{d-2p}\|\omega_p\|_{L^2}^2.
+\end{equation}
+Следовательно, все спектральные массы и KK-шаги масштабируются как
+\(\lambda^{-1}\).
+
+Если конечный оператор связан с радиусом условием
+\begin{equation}
+ M=\frac1R,
+\end{equation}
+то произведение
+\begin{equation}
+ MR=1
+\end{equation}
+инвариантно. Это физическое безразмерное утверждение. Отдельные значения
+\(M\) и \(R\) без внешней единицы масштаба не являются предсказаниями.
+
+\begin{theorem}[Scale-covariance theorem]
+Топологические данные \(K\), конечная алгебра, first-order constraints и
+нормированный finite-Dirac потенциал определяют только гомотетический класс
+и безразмерные комбинации. Они не могут выбрать абсолютную массу, поскольку
+каждое решение порождает семейство
+\begin{equation}
+ (g,D_F)\longmapsto
+ (\lambda^2g,\lambda^{-1}D_F)
+\end{equation}
+с теми же безразмерными инвариантами.
+\end{theorem}
+
+\section{Spectral cutoff}
+
+Стандартный спектральный функционал имеет вид
+\begin{equation}
+ S_{\mathrm{spec}}=\Tr f(D/\Lambda).
+\end{equation}
+При одновременном преобразовании
+\begin{equation}
+ D\longmapsto\lambda^{-1}D,
+ \qquad
+ \Lambda\longmapsto\lambda^{-1}\Lambda
+\end{equation}
+отношение \(D/\Lambda\) не меняется. Поэтому \(\Lambda\) является
+dimensionful anchor, если не заменена динамическим dilaton/radion полем.
+Сам спектральный след не объясняет абсолютное значение \(\Lambda\).
+
+\section{Почему простая radion-подстановка недостаточна}
+
+Одночленный однородный потенциал
+\begin{equation}
+ V(R)=cR^q
+\end{equation}
+не имеет изолированного положительного минимума. Минимальный двухчленный
+пример
+\begin{equation}
+ V(R)=AR+\frac{B}{R},
+ \qquad A,B>0,
+\end{equation}
+даёт
+\begin{equation}
+ R_*=\sqrt{\frac BA}.
+\end{equation}
+Следовательно, физический радиус определяется отношением двух
+коэффициентов. Равенство \(A=B\), приводящее к \(R_*=1\), должно следовать
+из независимо объявленной duality или общей квадратной структуры; оно не
+следует из топологии окружности.
+
+Аналогично, запись \(R=1\), использованная для объёмов
+\(\pi^2\) и \(2\pi\), фиксирует безразмерную репрезентацию геометрии, но не
+переводит единицу в ГэВ\(^{-1}\).
+
+\begin{nogocriterion}[Absolute-scale no-go]
+В классе parent actions, содержащих только нормированную геометрию \(K\),
+конечную алгебру и безразмерный spectral flattening, абсолютная массовая
+шкала не выводится. Для её появления необходим хотя бы один из механизмов:
+\begin{enumerate}
+ \item dimensionful gravitational input;
+ \item динамический dilaton/radion с изолированным vacuum;
+ \item квантовая dimensional transmutation;
+ \item заранее объявленная физическая cutoff-шкала.
+\end{enumerate}
+\end{nogocriterion}
+
+\section{Следствие для статуса предсказаний}
+
+До закрытия scale gate допустимы только:
+\begin{itemize}
+ \item безразмерные отношения масс;
+ \item углы и фазы;
+ \item ранги, индексы и кратности;
+ \item отношения связей и normalization-sensitive безразмерные нормы.
+\end{itemize}
+Абсолютные значения масс могут использоваться лишь как один scale-setting
+input, но не как независимые blind-предсказания.
+
+\begin{protocol}[Развилка следующего этапа]
+Версия III должна выбрать один из двух честных маршрутов:
+\begin{enumerate}
+ \item построить совместный dilaton--radion--finite-Dirac action и вывести
+ физический scale vacuum;
+ \item заморозить один dimensionful input и проводить blind-тест только на
+ безразмерных наблюдаемых, не объявляя абсолютные массы предсказанными.
+\end{enumerate}
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_absolute_scale_no_go_results.json}.

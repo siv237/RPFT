@@ -1,0 +1,169 @@
+\chapter{Vortex-oriented \texorpdfstring{$S_4$}{S4} three-cycle lock}
+
+Rotation audit оставил восемь orientation-preserving affine candidates:
+ровно восемь three-cycles стандартного \(S_4\)-triplet. Прежний continuous
+Wilson vacuum не совпадал с ними ни по оси, ни по углу. Здесь проверяется
+другая возможность: может ли unit vortex winding сам ориентировать
+дискретный family holonomy без выбора одной permutation вручную.
+
+\section{Кубический инвариант стандартного triplet}
+
+Реализуем стандартное представление как
+\begin{equation}
+ F=\left\{x\in\mathbb R^4:\sum_{a=1}^4x_a=0\right\},
+ \qquad \|x\|=1.
+\end{equation}
+На нём существует канонический \(S_4\)-инвариант
+\begin{equation}
+ I_3(x)=\sum_{a=1}^4x_a^3.
+\end{equation}
+Метод множителей Лагранжа даёт точную границу
+\begin{equation}
+ -\frac1{\sqrt3}\leq I_3(x)\leq\frac1{\sqrt3}.
+\end{equation}
+Равенство достигается только на восьми ориентированных тетраэдрических
+вершинах
+\begin{equation}
+ \pm\frac1{\sqrt{12}}(3,-1,-1,-1)
+\end{equation}
+и их четырёх перестановках. После отождествления \(x=Bn\), где
+\(B:\mathbb R^3\to F\) --- ортонормированное вложение, это ровно четыре
+неориентированные оси three-cycle rotations.
+
+\section{Угол из характера, а не из прежнего Wilson functional}
+
+Для \(R_n(\theta)\in SO(3)\) характер стандартного triplet равен
+\begin{equation}
+ \chi_3(\theta)=\Tr R_n(\theta)=1+2\cos\theta.
+\end{equation}
+В интервале \(0<\theta<\pi\) условие \(\chi_3=0\) имеет единственное
+решение
+\begin{equation}
+ \theta=\frac{2\pi}{3}.
+\end{equation}
+Это характер three-cycle в стандартном представлении. Следовательно,
+нулевой характер фиксирует нужный угол без обращения к наблюдаемым данным.
+
+Этот шаг не является малой поправкой к прежнему continuous Wilson vacuum
+\(\theta_\star\). Он определяет отдельную discrete family--defect branch.
+Поэтому старые коэффициенты \(V_{\rm gap}(\theta_\star)\) нельзя переносить
+в новую ветвь автоматически.
+
+\section{Совместный неотрицательный functional}
+
+Пусть \(r=|\Phi|\) --- нормированный модуль charge-two pairing field, а
+\(\nu=\operatorname{wind}\Phi=\pm1\) --- unit vortex sector. Рассмотрим
+\begin{equation}
+ \begin{split}
+ V_\nu(r,\theta,n)={}&(r^2-1)^2
+ +r^2\bigl(1+2\cos\theta\bigr)^2\\
+ &+r^2\left(1-\sqrt3\,\nu I_3(Bn)\right),
+ \qquad \|n\|=1.
+ \end{split}
+ \label{eq:family-defect-three-cycle-lock}
+\end{equation}
+Каждое слагаемое неотрицательно. Поэтому глобальный минимум равен нулю и
+достигается тогда и только тогда, когда
+\begin{equation}
+ r=1,
+ \qquad
+ \theta=\frac{2\pi}{3},
+ \qquad
+ I_3(Bn)=\frac{\nu}{\sqrt3}.
+\end{equation}
+
+При \(\nu=+1\) остаются четыре oriented axes, соответствующие четырём
+three-cycles одной ориентации. При \(\nu=-1\) получаются четыре обратных
+цикла. Объединение двух unit-winding sectors даёт в точности все восемь
+кандидатов, оставленных предыдущим \(SO(3)\)-filter.
+
+\begin{theorem}[Vortex-oriented three-cycle selection]
+Functional~\eqref{eq:family-defect-three-cycle-lock} имеет ровно четыре
+глобальных минимума в каждом фиксированном unit-winding sector. Их family
+holonomies являются четырьмя \(S_4\) three-cycles ориентации \(\nu\).
+Следовательно, знак топологического winding заменяет ручной выбор между
+cycle и inverse cycle.
+\end{theorem}
+
+\section{Hessian и Majorana kernel}
+
+В нормированных координатах Hessian в каждом минимуме имеет eigenvalues
+\begin{equation}
+ \lambda_r=8,
+ \qquad
+ \lambda_\theta=6,
+ \qquad
+ \lambda_{n,1}=\lambda_{n,2}=6.
+\end{equation}
+Особенно важно, что угловая и обе осевые stiffness совпадают без настройки
+relative coefficient. Для каждого минимума
+\begin{equation}
+ K_n=\frac{2\pi}{3}[n]_\times
+\end{equation}
+имеет rank два и одномерное ядро. Поэтому прежний exact-one mechanism
+сохраняется:
+\begin{equation}
+ \dim\ker K_n=1,
+ \qquad
+ 3\longrightarrow1.
+\end{equation}
+Максимальные numerical residuals полного exhaustive scan меньше
+\(8\times10^{-16}\).
+
+\section{Сверка с литературной архитектурой}
+
+Superconnection formalism действительно объединяет gauge connection и
+пространственно зависимый mass/tachyon field и применяется к interface и
+Callias-type index problems; соответствующая современная сверка дана в
+\path{arXiv:2106.01591}. Локализованные winding-mass zero modes обсуждаются
+также в \path{arXiv:1905.09315}. Возможность фиксировать flavour alignment
+граничными условиями реализована в orbifold constructions, например в
+\path{arXiv:1910.04175}. Non-Abelian vortices с внутренними orientational
+moduli дают физический образ family axis на defect, см.
+\path{arXiv:1612.09419}.
+
+Эти работы подтверждают допустимость архитектурных ингредиентов, но не
+выводят specific functional~\eqref{eq:family-defect-three-cycle-lock}.
+Положительный результат настоящего gate является project-internal
+invariant theorem, а не заимствованной моделью.
+
+\section{Что прошло и что осталось}
+
+Новый functional одновременно:
+\begin{itemize}
+ \item выбирает ненулевой normalized condensate \(r=1\);
+ \item фиксирует exact three-cycle angle \(2\pi/3\);
+ \item выбирает тетраэдрическую family axis;
+ \item связывает orientation cycle с vortex winding;
+ \item сохраняет один Majorana core mode.
+\end{itemize}
+
+Но пока не доказано, что весь functional возникает как supertrace одной
+локальной boundary-superconnection curvature. В частности, единичный
+radial scale, constant term в \((r^2-1)^2\) и знак coupling
+\(\nu I_3\) должны следовать из parent grading, topological term или
+spectral normalization, а не задаваться после результата.
+
+\begin{nogocriterion}[Supertrace-origin gate]
+Нельзя считать three-cycle lock полным parent-action выводом, пока
+functional~\eqref{eq:family-defect-three-cycle-lock} не получен из одного
+заранее фиксированного graded curvature или boundary spectral action.
+Добавление трёх его слагаемых как независимых phenomenological potentials
+возвращает прежнюю проблему ручных sector weights.
+\end{nogocriterion}
+
+Таким образом, discrete selector и exact-one defect mechanism впервые
+имеют общий coefficient-free zero locus. Следующий узкий расчёт --- найти
+минимальную graded superconnection, квадрат которой порождает radial,
+character и cubic-orientation terms с общей нормировкой.
+
+Следующий projector-supercurvature gate уточняет эту запись. После замены
+\(y=\nu x\) четыре axes выбираются независимо от winding, а \(\nu\)
+ориентирует угол \(\pm2\pi/3\). Radial и axis conditions затем
+факторизуются в одну shifted-square equation; поэтому текущая сумма трёх
+terms является zero-locus representative, а не минимальной формой action.
+
+Машинный exhaustive ledger сохранён в
+\path{s2t_v4_family_defect_three_cycle_lock_gate_results.json}; генератор
+проверки ---
+\path{s2t_v4_family_defect_three_cycle_lock_gate.py}.

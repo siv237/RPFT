@@ -1,0 +1,193 @@
+\section{KO6 completion и полный \texorpdfstring{\(\phi/\Sigma_4\)}{phi/Sigma4} Hessian}
+
+Irreducibility gate зафиксировал \(k=\lambda_{\rm rel}=1\) и закрыл
+\(\Delta+C\) Hessian. Для полного vacuum test остаются два вопроса:
+допускает ли relative chain KO6-compatible realization и стабилизирует ли
+determinant selector остальные composite scalar directions
+\(\phi\) и \(\Sigma_4\).
+
+\subsection{Минимальный KO6 matrix completion}
+
+Пусть \(D_{\rm ch}(\Delta)\) --- \(10\times10\) chain operator на
+\begin{equation}
+ \mathcal H_{\rm ch}=\bar4^+\oplus2_R^-\oplus4^+.
+\end{equation}
+Минимальный particle--conjugate completion имеет complex dimension \(20\):
+\begin{align}
+ \mathcal H_{\rm rel}&=\mathcal H_{\rm ch}\oplus\mathcal H_{\rm ch}^c,\\
+ D_{\rm rel}&=D_{\rm ch}\oplus\overline{D_{\rm ch}},\\
+ \Gamma_{\rm rel}&=\Gamma_{\rm ch}\oplus(-\Gamma_{\rm ch}),\\
+ J_{\rm rel}&=
+ \begin{pmatrix}0&I_{10}\\I_{10}&0\end{pmatrix}K.
+ \label{eq:ps-relative-ko6-completion}
+\end{align}
+Direct matrix audit даёт exact identities
+\begin{equation}
+ D_{\rm rel}=D_{\rm rel}^\dagger,
+ \qquad
+ \{D_{\rm rel},\Gamma_{\rm rel}\}=0,
+ \qquad
+ J_{\rm rel}D_{\rm rel}=D_{\rm rel}J_{\rm rel},
+\end{equation}
+\begin{equation}
+ J_{\rm rel}^2=1,
+ \qquad
+ \{J_{\rm rel},\Gamma_{\rm rel}\}=0.
+\end{equation}
+Если graph height одинаков на particle и conjugate halves, он коммутирует с
+\(J_{\rm rel}\). KO6 doubling удваивает relative norm, а physical half-trace
+делит её на два, поэтому
+\begin{equation}
+ \frac12\left\|\frac12[h,D_{\rm rel}^2]\right\|_F^2
+ =4\det(\Delta\Delta^\dagger).
+ \label{eq:ps-relative-ko6-selector}
+\end{equation}
+Random complex test даёт error меньше \(7.2\times10^{-15}\).
+
+\begin{proposition}[Algebraic KO6 pass]
+Relative chain допускает минимальный self-adjoint odd KO6-real completion,
+который сохраняет coefficient четыре после physical half-trace.
+\end{proposition}
+
+\subsection{Fermionic interpretation obstruction}
+
+Алгебраический KO6 pass не означает, что этот completion можно безусловно
+добавить к ordinary almost-commutative finite Hilbert space. В стандартной
+fermionic action every component \(\mathcal H_F\) является fermionic state
+carrier. Direct sum с \(\mathcal H_{\rm rel}\) поэтому добавляет двадцать
+complex finite states и возвращает physical extension, а не
+non-propagating classical branch.
+
+\begin{nogocriterion}[Non-propagating direct-sum no-go]
+Один и тот же \(20\)-dimensional KO6 module нельзя одновременно читать как
+ordinary summand physical finite spectral triple и как sector без новых
+fermions. Classical branch должна быть relative bosonic/KK cycle,
+mapping-cone curvature module или superconnection data, не включёнными в
+physical fermionic path integral. Иначе она совпадает по смыслу с ранее
+отделённой physical branch.
+\end{nogocriterion}
+
+\subsection{Composite operator около rank-one background}
+
+Используем exact project block
+\begin{equation}
+ D_F(Y,M_R,0)
+\end{equation}
+и normalized finite potential
+\begin{equation}
+ V_{\rm fin}=-\frac12\Tr D_F^2+\frac12\Tr D_F^4.
+ \label{eq:ps-full-composite-finite-potential}
+\end{equation}
+Composite fields входят как
+\begin{align}
+ Y={}&(k^\nu\phi+k^e\widetilde\phi)\otimes\Sigma_4
+ +(k^u\phi+k^d\widetilde\phi)\otimes(I_4-\Sigma_4),\\
+ (M_R)_{\dot aI,\dot bJ}={}&
+ k_{\nu_R}^*\Delta_{\dot aJ}\Delta_{\dot bI}.
+\end{align}
+Rank-one stationary background имеет
+\begin{equation}
+ \Delta_{\dot1,1}=2^{-1/4},
+ \qquad
+ \|M_R\|_{\rm op}^2=\frac12,
+ \qquad
+ \phi=0.
+\end{equation}
+Relative selector не зависит от \(\phi\) и \(\Sigma_4\).
+
+\subsection{Общий quadratic form Yukawa direction}
+
+Пусть \(E_Y\) --- variation finite Dirac operator, порождённая произвольной
+Yukawa matrix \(Y\). Exact expansion
+\eqref{eq:ps-full-composite-finite-potential} около \(D_F(0,M_R,0)\) даёт
+\begin{equation}
+ \boxed{
+ H_Y(Y)=-4\|Y\|_F^2+8\|M_R^\dagger Y\|_F^2.}
+ \label{eq:ps-general-yukawa-hessian}
+\end{equation}
+Поскольку \(\|M_R\|_{\rm op}^2=1/2\),
+\begin{equation}
+ H_Y(Y)\le0
+\end{equation}
+для каждого \(Y\). Следовательно, strict positive \(\phi\)-mass невозможна
+независимо от parametrization composite tangent. Random matrix audit
+проверяет \eqref{eq:ps-general-yukawa-hessian} с maximum error
+\(1.2\times10^{-13}\).
+
+Для project Yukawa seed
+\begin{equation}
+ (k^\nu,k^e,k^u,k^d)=(0.7,0.2,1.1,0.4)
+\end{equation}
+и canonical traceless lepton--color direction
+\begin{equation}
+ \Sigma_{B-L}=\operatorname{diag}(3/4,-1/4,-1/4,-1/4)
+\end{equation}
+восемь real \(\phi\)-eigenvalues равны
+\begin{equation}
+ -34.92338966\ (4),
+ \qquad
+ -7.30661034\ (4).
+ \label{eq:ps-phi-negative-spectrum}
+\end{equation}
+
+\subsection{Flat adjoint и полный mixed ledger}
+
+При \(\phi=0\) composite Yukawa block обращается в нуль для любого
+\(\Sigma_4\). Поэтому все пятнадцать Hermitian traceless adjoint directions
+имеют zero Hessian. Mixed blocks удовлетворяют
+\begin{equation}
+ H_{\Delta\phi}=H_{\Delta\Sigma}=H_{\phi\Sigma}=0
+\end{equation}
+в рассматриваемом background; direct matrix audit даёт нулевой
+\(\Delta\)--\(\phi\) bilinear residual.
+
+Объединяя этот результат с irreducible relative-cycle gate, получаем
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+Sector & positive & zero & negative\\
+\midrule
+\(\Delta+C\) & 43 & 9 & 0\\
+Hermitian traceless \(\Sigma_4\) & 0 & 15 & 0\\
+\(\phi\), project seed & 0 & 0 & 8\\
+\midrule
+Полный ledger & 43 & 24 & 8\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{theorem}[Full composite vacuum no-go]
+Irreducible relative selector полностью устраняет шесть rank-growth
+instabilities \(\Delta\), но не стабилизирует full composite Pati--Salam
+vacuum. На rank-one background общий Yukawa quadratic form неположителен;
+project \(\phi\)-tangent содержит восемь negative modes, а
+\(\Sigma_4\) оставляет пятнадцать flat directions. Полный исследованный
+Hessian имеет signature
+\begin{equation}
+ \boxed{(43_+,24_0,8_-).}
+\end{equation}
+\end{theorem}
+
+\subsection{Следующий допустимый route}
+
+Следующий gate не должен снова менять determinant coefficient. Требуется
+либо connected representation-sensitive interaction, создающая positive
+\(\phi\)-mass и potential для \(\Sigma_4\), либо genuine two-scale spectral
+action, в которой Pati--Salam и electroweak stationary conditions возникают
+на разных scales. Без такого parent mechanism full physical closure ветви
+остаётся отрицательным.
+
+\subsection{Литература и воспроизводимость}
+
+KO6 grading, reality и finite Pati--Salam block сверены с
+A.~H.~Chamseddine, A.~Connes and W.~D.~van Suijlekom,
+arXiv:1507.08161. Обязательный quadratic inner fluctuation и perturbation
+semigroup сверены с arXiv:1304.7583 и arXiv:1304.8050. Composite formulas и
+scalar representation ledger сверены с arXiv:1507.08161. Relative-cycle
+interpretation сопоставлена с I.~Forsyth, M.~Goffeng, B.~Mesland and
+A.~Rennie, arXiv:1607.07143. Hessian identities и interpretation obstruction
+являются project results.
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_ko6_phi_sigma_hessian_gate.py} и
+\path{s2t_v4_pati_salam_ko6_phi_sigma_hessian_gate_results.json}.

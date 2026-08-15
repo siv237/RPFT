@@ -1,0 +1,138 @@
+\chapter{Scheme-independent selection spin-ветви}
+
+Полный base-\(K\) determinant не фиксирует абсолютный vacuum из-за
+локальных finite counterterms. Однако разность determinant между двумя
+flat/spin branches с одинаковыми локальными heat-kernel coefficients от
+этой свободы не зависит. Поэтому дискретный branch selection является
+следующим допустимым вопросом.
+
+\section{Почему две ветви \texorpdfstring{\(\mathbb{RP}^3\)}{RP3} не различаются}
+
+Для двух spin-структур круглого \(\mathbb{RP}^3\) signed Dirac spectra
+обмениваются местами. При обозначениях \(\tau_\pm\) абсолютные уровни равны
+\begin{equation}
+ |\lambda_k|=\frac{k+3/2}{R_3},
+ \qquad
+ d_k=(k+1)(k+2),
+ \qquad k\ge0,
+\end{equation}
+но знак уровня чередуется противоположно для \(\tau_+\) и \(\tau_-\).
+Следовательно,
+\begin{equation}
+ \Spec D_{\mathbb{RP}^3,\tau_+}^2
+ =\Spec D_{\mathbb{RP}^3,\tau_-}^2
+\end{equation}
+вместе с кратностями.
+
+Vectorlike effective action двух физических Dirac-пар зависит от
+\(D_K^2+\chi^2\). Поэтому его вещественный модуль не различает
+\(\tau_+\) и \(\tau_-\). Их eta-инварианты
+\begin{equation}
+ \eta_D(\tau_\pm)=\pm\frac14
+\end{equation}
+также не снимают вырождение: determinant phases сокращаются между
+vectorlike conjugate blocks.
+
+\begin{proposition}[\(\mathbb{RP}^3\)-spin degeneracy]
+Нетривиальный torsion character меняет signed branch, но не квадрат
+спектра. В текущей vectorlike архитектуре две spin-структуры
+\(\mathbb{RP}^3\) точно вырождены по вещественному one-loop action.
+\end{proposition}
+
+\section{Относительный determinant вдоль \texorpdfstring{\(S^1\)}{S1}}
+
+Пусть окружная ветвь задаётся
+\begin{equation}
+ p_m=\frac{m+\beta}{R_1},
+ \qquad
+ \beta\in\mathbb R/\mathbb Z.
+\end{equation}
+Периодической и анти-периодической spin-структурам соответствуют
+\(\beta=0\) и \(\beta=1/2\). Для одной трёхмерной Dirac shell положим
+\begin{equation}
+ \rho_k
+ =\frac{R_1}{R_3}
+ \sqrt{(k+3/2)^2+(\chi R_3)^2}.
+\end{equation}
+Точная разность окружных log-determinants равна
+\begin{equation}
+ \mathcal I_{\rho_k}(\beta)
+ =\log
+ \frac{\cosh(2\pi\rho_k)-\cos(2\pi\beta)}
+ {\cosh(2\pi\rho_k)-1}.
+\end{equation}
+Локальная zero-winding часть не зависит от \(\beta\) и сокращается.
+
+С учётом product-Clifford doubling и двух физических Dirac-пар получаем
+\begin{equation}
+ \Delta\Gamma_f(\beta)
+ =-2\sum_{k=0}^{\infty}
+ (k+1)(k+2)\,\mathcal I_{\rho_k}(\beta).
+ \label{eq:fermion-spin-relative-action}
+\end{equation}
+Ряд абсолютно и экспоненциально сходится при всех конечных положительных
+\(R_1/R_3\).
+
+\section{Точный знак и выбор ветви}
+
+Для любого \(\rho>0\)
+\begin{equation}
+ \mathcal I_\rho(\beta)\ge0,
+\end{equation}
+причём равенство достигается при \(\beta=0\pmod1\), а максимум --- при
+\(\beta=1/2\pmod1\). Из фермионного минуса в
+\eqref{eq:fermion-spin-relative-action} немедленно следует
+\begin{equation}
+ \Delta\Gamma_f(1/2)<\Delta\Gamma_f(0)=0.
+\end{equation}
+Более того, \(\beta=0\) является локальным максимумом, а
+\(\beta=1/2\) --- глобальным минимумом relative fermion action.
+
+При \(\chi R_3=1\) и \(R_1/R_3=1\) машинная сумма даёт
+\begin{equation}
+ \Delta\Gamma_f(1/2)
+ =-0.0001948280\ldots.
+\end{equation}
+Знак сохраняется при всех проверенных \(\chi R_3\) и отношениях радиусов;
+аналитическая положительность \(\mathcal I_\rho\) показывает, что это не
+численный эффект cutoff.
+
+\begin{theorem}[Условный anti-periodic selection]
+Если functional integral суммирует две spin-структуры \(S^1\) с одинаковым
+предварительным весом, fermion determinant текущего parent block строго
+выбирает anti-periodic branch \(\beta=1/2\). Результат не зависит от
+\(\mu\), \(\lambda_2\), \(\lambda_4\) и не использует наблюдаемые данные.
+\end{theorem}
+
+\begin{remark}[Граница утверждения]
+Spin-структура может задаваться как внешнее superselection datum. В таком
+чтении determinant только ранжирует две теории и не переводит одну в
+другую динамически. Теорема становится физическим selection-механизмом
+лишь при заранее объявленной сумме по spin structures или при dynamical
+flat Wilson variable, содержащей точки \(\beta=0,1/2\).
+\end{remark}
+
+\section{Что закрыто и что остаётся}
+
+Получено scheme-independent ранжирование дискретных ветвей без нового
+коэффициента. При дополнительной гипотезе равновесной суммы оно даёт
+\begin{equation}
+ \boxed{\beta_{S^1}=\frac12.}
+\end{equation}
+Само ранжирование ещё не доказывает наличие spin-sum measure. Кроме того,
+determinant modulus оставляет двойное вырождение
+\(\tau_+\leftrightarrow\tau_-\) на \(\mathbb{RP}^3\), а абсолютный
+\(\chi R\) по-прежнему зависит от renormalization conditions. Поэтому
+следующий гейт обязан сначала вывести либо отвергнуть меру суммы по
+spin-структурам. Только после этого разрешён поиск branch difference в
+orientation/Pfaffian sector.
+
+\begin{nogocriterion}[Запрет скрытой суммы по spin structures]
+Нельзя объявлять anti-periodic branch динамически выбранной, если в
+определении partition function spin-структура была заранее фиксирована.
+Правило суммирования и относительные topological weights должны быть частью
+parent theory до determinant-сравнения.
+\end{nogocriterion}
+
+Машинный аудит сохранён в
+\path{s2t_v4_spin_structure_relative_determinant_gate_results.json}.

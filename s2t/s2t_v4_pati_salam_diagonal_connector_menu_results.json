@@ -1,0 +1,76 @@
+{
+  "gate": "version4_pati_salam_diagonal_connector_menu",
+  "date": "2026-08-13",
+  "mode_ledger": {
+    "required_goldstone": {
+      "name": "G",
+      "SU2R_isospin": 1,
+      "SU4_representation": "10_symmetric",
+      "C2_SU2R": 2.0,
+      "C2_SU4": 4.5
+    },
+    "unwanted_pseudogoldstone": {
+      "name": "X",
+      "SU2R_isospin": 0,
+      "SU4_representation": "6_antisymmetric",
+      "C2_SU2R": 0.0,
+      "C2_SU4": 2.5
+    }
+  },
+  "operator_menu": {
+    "identity_singlet": {
+      "eigenvalue_G": 1.0,
+      "eigenvalue_X": 1.0,
+      "candidate_block": "real singlet",
+      "representation_dimension": 1,
+      "casimir_difference_X_minus_G": 0.0,
+      "representations_distinguished_by_this_invariant": false
+    },
+    "SU2R_Casimir": {
+      "eigenvalue_G": 2.0,
+      "eigenvalue_X": 0.0,
+      "candidate_block": "right-adjoint (3,1,1)",
+      "representation_dimension": 3,
+      "casimir_difference_X_minus_G": -2.0,
+      "representations_distinguished_by_this_invariant": true
+    },
+    "SU4_Casimir": {
+      "eigenvalue_G": 4.5,
+      "eigenvalue_X": 2.5,
+      "candidate_block": "four-color adjoint (1,1,15)",
+      "representation_dimension": 15,
+      "casimir_difference_X_minus_G": -2.0,
+      "representations_distinguished_by_this_invariant": true
+    },
+    "combined_Casimir": {
+      "eigenvalue_G": 6.5,
+      "eigenvalue_X": 2.5,
+      "candidate_block": "combined right/four-color diagonal block",
+      "representation_dimension": 18,
+      "casimir_difference_X_minus_G": -4.0,
+      "representations_distinguished_by_this_invariant": true
+    }
+  },
+  "minimal_dimension_sensitive_operator": "SU2R_Casimir",
+  "preferred_target_scale_and_split_block": {
+    "block": "Hermitian four-color diagonal block 1+15",
+    "reason": "its trace singlet can participate in scale transmutation while the 10 and 6 sectors have different SU4 Casimirs; an actual VEV mass matrix is still uncomputed",
+    "casimir_difference": -2.0,
+    "present_in_general_fundamental_branch": false,
+    "present_in_constrained_composite_branch": true,
+    "general_fundamental_Sigma_is_instead": "(2_R,2_L,1+15_4)",
+    "high_scale_vev_and_potential_are_not_yet_derived": true
+  },
+  "verdict": {
+    "universal_singlet_rejected": true,
+    "representation_separation_diagnostic_nonempty": true,
+    "actual_adjoint_vev_mass_splitting_computed": false,
+    "first_target_candidate": "weak-singlet four-color diagonal 1+15 block",
+    "next_gate": "derive the composite weak-singlet 15 from an explicit project finite Dirac block, then test its full potential and fermion masses"
+  },
+  "sources": [
+    "arXiv:1304.8050",
+    "arXiv:1801.00260",
+    "arXiv:1905.04533"
+  ]
+}

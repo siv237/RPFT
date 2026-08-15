@@ -1,0 +1,78 @@
+{
+  "gate": "version4_negative_space_bundle_fluctuation",
+  "date": "2026-08-11",
+  "forgotten_bundle": {
+    "base": "RP3",
+    "classification": "H2(RP3;Z)=Z2",
+    "total_space_model": "(S3 x S1)/[(x,theta)~(-x,theta+pi)]",
+    "scalar_selection_rule": "ell_plus_m_even",
+    "volume": "2*pi^3*R3^3*R1",
+    "trivial_product_rule": "ell_even_with_all_m",
+    "equal_scale_minima": {
+      "trivial_product": {
+        "radius_over_sigma": 0.6744459799949198,
+        "density": -0.01564203353168916
+      },
+      "nontrivial_bundle": {
+        "radius_over_sigma": 1.2747501827007155,
+        "density": -0.004035864427578701
+      }
+    },
+    "boundary_samples": [
+      {
+        "base_radius_over_sigma": 0.5,
+        "circle_radius_over_sigma_trivial": 1.53362628,
+        "trivial_density": -0.08411836596888282,
+        "circle_radius_over_sigma_nontrivial": 3.06725256,
+        "nontrivial_density": -0.04206021665395404
+      },
+      {
+        "base_radius_over_sigma": 0.25,
+        "circle_radius_over_sigma_trivial": 1.53362628,
+        "trivial_density": -0.6729469277509859,
+        "circle_radius_over_sigma_nontrivial": 3.06725256,
+        "nontrivial_density": -0.336473463875493
+      },
+      {
+        "base_radius_over_sigma": 0.1,
+        "circle_radius_over_sigma_trivial": 1.53362628,
+        "trivial_density": -10.51479574610915,
+        "circle_radius_over_sigma_nontrivial": 3.06725256,
+        "nontrivial_density": -5.257397873054576
+      },
+      {
+        "base_radius_over_sigma": 0.05,
+        "circle_radius_over_sigma_trivial": 1.53362628,
+        "trivial_density": -84.1183659688732,
+        "circle_radius_over_sigma_nontrivial": 3.06725256,
+        "nontrivial_density": -42.05918298443661
+      }
+    ],
+    "analytic_boundary": {
+      "limit": "R3_to_zero_at_fixed_R1",
+      "trivial_log_partition": "log(sum_m exp(-m^2/R1^2)) > 0",
+      "nontrivial_log_partition": "log(sum_n exp(-(2n)^2/R1^2)) > 0",
+      "density_limit": "minus_infinity"
+    },
+    "verdict": "nontrivial_bundle_couples_parity_and_momentum_but_does_not_stabilize_the_scalar_correlation_density"
+  },
+  "negative_space_map": {
+    "fixed_product_no_go": "does_not_cover_nonproduct_bundles_or_warped_metrics",
+    "bundle_test_here": "closes_the_homogeneous_flat_connection_scalar_density_branch",
+    "warped_metrics": "still_underdetermined_without_a_parent_cross_term",
+    "scalar_carrier_tests": "do_not_cover_the_full_standard_model_fluctuation_action",
+    "general_single_vertex_no_go": "explicitly_unproved_in_existing_audit"
+  },
+  "highest_value_omission": {
+    "name": "full_field_carrier_fluctuation_determinant",
+    "required_ledger": [
+      "three_physical_scalar_operators",
+      "massive_vector_plus_gauge_ghost_complex",
+      "two_Dirac_pair_operators",
+      "zero_modes_and_curvature_endomorphisms",
+      "one_common_counterterm_and_measure_scheme"
+    ],
+    "warning": "a_signed_supertrace_is_not_a_positive_density_state_and_cannot_be_inserted_into_the_scalar_entropy_gate",
+    "next_exact_test": "compare_renormalized_Gamma_fluc_on_S4_and_S2xS2_at_fixed_volume_then_compute_the_joint_geometry_Hessian"
+  }
+}

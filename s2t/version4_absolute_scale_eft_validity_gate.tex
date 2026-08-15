@@ -1,0 +1,150 @@
+\chapter{Абсолютная нормировка \texorpdfstring{\(\sigma\)}{sigma} и EFT-validity gate}
+
+Correlation-cell principle зафиксировал
+\begin{equation}
+ \frac{a_*}{\sigma}=r_*=1.35139219568654\ldots,
+ \qquad
+ R_*\sigma^2=6.57080279149122\ldots.
+\end{equation}
+Теперь можно попытаться определить \(\sigma\) через gravitational matching,
+заявленный в первичном TOE spectral expansion.
+
+\section{Гравитационная нормировка}
+
+В \texttt{TOE.pdf} коэффициент Einstein--Hilbert term сопоставляется как
+\begin{equation}
+ \frac1{8\pi G}=M_P^2
+ =\frac{f_2\Lambda^2}{96\pi^2},
+ \qquad
+ \Lambda=\frac1\sigma.
+ \label{eq:toe-gravitational-matching}
+\end{equation}
+Следовательно,
+\begin{equation}
+ \Lambda^2=\frac{12\pi}{Gf_2},
+ \qquad
+ \sigma^2=\frac{Gf_2}{12\pi}.
+ \label{eq:toe-sigma-from-gravity}
+\end{equation}
+
+В corrected Laplace spectral-action convention
+\begin{equation}
+ f_2=\int_0^\infty f(u)\,du.
+\end{equation}
+Если cutoff profile отождествляется с Gaussian
+\(f(u)=e^{-u}\), то \(f_2=1\). В Planck-length units
+\(\ell_P=\sqrt G\) получаем
+\begin{equation}
+ \frac{\sigma}{\ell_P}
+ =\frac1{\sqrt{12\pi}}
+ =0.162867503967640\ldots,
+\end{equation}
+\begin{equation}
+ \frac{a_*}{\ell_P}
+ =\frac{r_*}{\sqrt{12\pi}}
+ =0.220097873792816\ldots,
+\end{equation}
+\begin{equation}
+ R_*\ell_P^2
+ =247.713429335233\ldots.
+\end{equation}
+
+\begin{proposition}[Conditional absolute scale]
+При Gaussian cutoff и буквальном gravitational matching интенсивный carrier
+minimum соответствует sub-Planckian four-sphere radius
+\(a_*=0.22010\ldots\ell_P\). Этот результат не использует measured fit,
+но зависит от корректности asymptotic gravitational coefficient.
+\end{proposition}
+
+\section{Самосогласованность Seeley--DeWitt expansion}
+
+Вывод Einstein--Hilbert и Standard Model terms из spectral action требует,
+чтобы cutoff был велик относительно curvature scale:
+\begin{equation}
+ \frac{R}{\Lambda^2}\ll1,
+ \qquad
+ a\Lambda\gg1.
+ \label{eq:local-eft-validity-condition}
+\end{equation}
+Но в найденном minimum при \(\Lambda=1/\sigma\)
+\begin{equation}
+ a_*\Lambda=r_*=1.35139219568654\ldots,
+\end{equation}
+\begin{equation}
+ \frac{R_*}{\Lambda^2}
+ =R_*\sigma^2
+ =6.57080279149122\ldots,
+ \qquad
+ \frac{\sqrt{R_*}}\Lambda=2.56335771821\ldots.
+ \label{eq:selected-radius-invalid-expansion}
+\end{equation}
+Ни одно из условий \eqref{eq:local-eft-validity-condition} не выполняется.
+
+Особенно важно, что obstruction не устраняется выбором другого \(f_2\).
+Изменение moment одновременно меняет \(\sigma/\ell_P\), но dimensionless
+combination
+\begin{equation}
+ \frac{R_*}{\Lambda^2}=R_*\sigma^2
+\end{equation}
+фиксирована correlation-cell extremum и не зависит от gravitational moment.
+
+\begin{theorem}[EFT self-consistency no-go]
+При идентификации \(\Lambda=1/\sigma\) carrier minimum лежит вне
+large-cutoff regime, необходимого для локального Seeley--DeWitt вывода GR и
+SM. Поэтому формулу \eqref{eq:toe-gravitational-matching} нельзя одновременно
+использовать для абсолютной нормировки \(\sigma\) и считать полученную
+локальную EFT controlled approximation на том же vacuum.
+\end{theorem}
+
+\section{Требуемая scale separation}
+
+Можно ввести отдельный EFT cutoff
+\begin{equation}
+ \Lambda_{\rm EFT}=q\,\sigma^{-1}.
+\end{equation}
+Тогда
+\begin{equation}
+ \frac{R_*}{\Lambda_{\rm EFT}^2}
+ =\frac{6.57080279149\ldots}{q^2}.
+\end{equation}
+Для diagnostic thresholds получаем
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+target \(R/\Lambda_{\rm EFT}^2\) & required \(q\) &
+\(a_*\Lambda_{\rm EFT}\) \\
+\midrule
+1 & 2.5634 & 3.4641 \\
+0.1 & 8.1060 & 10.9545 \\
+0.01 & 25.6336 & 34.6410 \\
+\bottomrule
+\end{tabular}
+\end{center}
+Но \(q\) становится новым dimensionless hierarchy, если не выводится из
+algebra, measure или RG transition.
+
+Альтернативный маршрут --- отказаться от local truncation и вычислять exact
+nonlocal spectral action на selected carrier, выводя GR только как
+long-distance response, а не как первые члены uncontrolled expansion.
+
+\begin{nogocriterion}[Запрет неконтролируемого matching]
+Нельзя использовать asymptotic \(a_2\) coefficient для назначения
+\(\sigma\), если на полученном vacuum \(R/\Lambda^2\gtrsim1\). Абсолютная
+scale prediction допустима только после derived scale separation либо exact
+nonlocal response calculation.
+\end{nogocriterion}
+
+\section{Итог}
+
+\begin{theorem}[Absolute-scale verdict]
+Gaussian gravitational matching формально даёт
+\(\sigma=0.16287\ldots\ell_P\) и
+\(a_*=0.22010\ldots\ell_P\), но этот ответ не является controlled physical
+prediction: выбранный carrier нарушает предпосылку локального spectral
+expansion. Dimensionless radius result сохраняется, абсолютная шкала снова
+понижается до conditional status.
+\end{theorem}
+
+Воспроизводимый аудит сохранён в
+\path{s2t_v4_absolute_scale_eft_validity_gate.py} и
+\path{s2t_v4_absolute_scale_eft_validity_gate_results.json}.

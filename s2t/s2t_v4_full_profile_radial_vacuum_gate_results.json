@@ -1,0 +1,91 @@
+{
+  "gate": "version4_full_profile_radial_vacuum",
+  "profile": "f(u)=[exp(-u^2/100)+(1/12)exp(-10u^2)]/(13/12)",
+  "unit_radial_slice": {
+    "theta_minimum": 1.2273108545182316,
+    "cp_conjugate_minima": [
+      -1.2273108545182316,
+      1.2273108545182316
+    ],
+    "orientation_amplitude": 0.941586581337815,
+    "energy_gap_from_zero": 0.003416437227063085,
+    "energy_gap_from_pi": 0.003127535143168103
+  },
+  "slice_radial_derivative_in_log_radius": -0.7555026506622652,
+  "slice_cp_point_is_full_stationary_point": false,
+  "global_minimum": {
+    "radius": 5.773295071291098,
+    "theta": 2.446104656161907e-06,
+    "orientation_amplitude": 2.4461046561594676e-06,
+    "value": 5.4793350936091585
+  },
+  "global_hessian_log_radius_theta": [
+    [
+      0.07201448326554782,
+      0.0
+    ],
+    [
+      0.0,
+      0.00709530212361642
+    ]
+  ],
+  "global_hessian_eigenvalues": [
+    0.00709530212361642,
+    0.07201448326554782
+  ],
+  "radial_rows": [
+    {
+      "radius": 0,
+      "minimum_theta": 3.1415888805967773,
+      "minimum_value": 11.150613326648761
+    },
+    {
+      "radius": 0.1,
+      "minimum_theta": 3.819590153192663e-06,
+      "minimum_value": 11.139906325060718
+    },
+    {
+      "radius": 0.5,
+      "minimum_theta": 1.551242386894956,
+      "minimum_value": 11.061068180671288
+    },
+    {
+      "radius": 1,
+      "minimum_theta": 1.2273109946068819,
+      "minimum_value": 10.771401707961923
+    },
+    {
+      "radius": 2,
+      "minimum_theta": 1.9456871936833737,
+      "minimum_value": 9.58672963361984
+    },
+    {
+      "radius": 5,
+      "minimum_theta": 3.819590153192663e-06,
+      "minimum_value": 5.484685524648694
+    },
+    {
+      "radius": 10,
+      "minimum_theta": 3.819590153192663e-06,
+      "minimum_value": 5.480437621471108
+    },
+    {
+      "radius": 20,
+      "minimum_theta": 3.819590153192663e-06,
+      "minimum_value": 5.481716662557851
+    },
+    {
+      "radius": 50,
+      "minimum_theta": 8.240339986793127e-06,
+      "minimum_value": 5.482667796541268
+    },
+    {
+      "radius": 100,
+      "minimum_theta": 1.4162645728507844e-05,
+      "minimum_value": 5.4830138339750265
+    }
+  ],
+  "cp_breaking_global_vacuum": false,
+  "flavour_test_reached": false,
+  "verdict": "the positive profile has CP-breaking minima only on the frozen unit-radius slice; after radial minimization the unique stable vacuum is CP even near r=5.7733 and theta=0"
+}

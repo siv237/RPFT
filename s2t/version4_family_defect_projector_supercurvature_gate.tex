@@ -1,0 +1,143 @@
+\chapter{Family--defect projector supercurvature factorization}
+
+Предыдущий gate дал coefficient-free zero locus, но записал radial и axis
+условия разными слагаемыми. Проверим более сильную возможность: получить
+condensate и тетраэдрическую family axis из одной quadratic curvature.
+
+\section{Перепараметризация winding branch}
+
+Положим \(y=\nu x\). Тогда прежнее условие
+\(I_3(x)=\nu/\sqrt3\) принимает вид
+\begin{equation}
+ I_3(y)=\frac1{\sqrt3}.
+\end{equation}
+Ось \(y\) всегда лежит в одной четырёхточечной тетраэдрической орбите,
+а winding задаёт направление поворота
+\begin{equation}
+ R_{y,\nu}=R_y\!\left(\nu\frac{2\pi}{3}\right).
+\end{equation}
+
+\section{Одна shifted-square curvature}
+
+Для coordinate rank-one projector \(P_a\) на four-state affine menu
+введём
+\begin{equation}
+ H_a=\frac2{\sqrt3}\left(P_a-\frac14I_4\right)
+\end{equation}
+и curvature polynomial
+\begin{equation}
+ Q(H)=H^2-\frac1{\sqrt3}H-\frac14I_4.
+ \label{eq:projector-supercurvature}
+\end{equation}
+Он факторизуется как
+\begin{equation}
+ Q(H)=\left(H-\frac1{2\sqrt3}I_4\right)^2-\frac13I_4.
+\end{equation}
+При \(J=\sqrt3H-I_4/2\) equation \(Q(H)=0\) эквивалентна
+\(J^2=I_4\). Tracelessness даёт \(\Tr J=-2\), поэтому
+\begin{equation}
+ P=\frac{I_4+J}{2}
+\end{equation}
+автоматически является rank-one projector.
+
+\begin{theorem}[Projector factorization]
+На diagonal traceless \(4\times4\) matrices equation \(Q(H)=0\)
+имеет ровно четыре решения
+\begin{equation}
+ H_a=\frac2{\sqrt3}\left(P_a-\frac14I_4\right),
+ \qquad a=1,\ldots,4.
+\end{equation}
+Они удовлетворяют
+\begin{equation}
+ \Tr H_a^2=1,
+ \qquad
+ \Tr H_a^3=\frac1{\sqrt3}.
+\end{equation}
+Следовательно, одна curvature equation фиксирует radial norm и одну из
+четырёх тетраэдрических axes.
+\end{theorem}
+
+Каждый eigenvalue является корнем
+\(h^2-h/\sqrt3-1/4=0\). Поэтому возможны только
+\(h=\sqrt3/2\) и \(h=-1/(2\sqrt3)\); нулевой trace оставляет один
+eigenvalue первого типа и три второго.
+
+Для \(V_Q=\Tr Q(H)^2\) все три Hessian eigenvalues на traceless diagonal
+tangent space равны
+\begin{equation}
+ \lambda_1=\lambda_2=\lambda_3=\frac83.
+\end{equation}
+Radial и две axis directions стабилизируются одной trace-нормой.
+
+\section{От projector к oriented three-cycle}
+
+Projector \(P_a\) выбирает fixed vertex. На оставшихся трёх вершинах
+существуют ровно два inverse three-cycles; их различает winding
+\(\nu=\pm1\). Обозначим их через \(C_{a,\nu}\). Для любого
+\(g\in S_4\) выполняется twisted covariance law
+\begin{equation}
+ gC_{a,\nu}g^{-1}
+ =C_{g(a),\operatorname{sgn}(g)\nu}.
+ \label{eq:twisted-cycle-covariance}
+\end{equation}
+Все \(24\times4\times2=192\) cases проверены машинно; failures нет.
+
+На standard triplet каждая permutation имеет
+\begin{equation}
+ \Tr R_{a,\nu}=0,
+ \qquad
+ \det R_{a,\nu}=1,
+\end{equation}
+и равна
+\begin{equation}
+ R_{a,\nu}
+ =\exp\!\left(\nu\frac{2\pi}{3}[n_a]_\times\right).
+\end{equation}
+Соответствующий Majorana generator имеет rank два и nullity один.
+
+\begin{proposition}[Projector--cycle reconstruction]
+Четыре curvature-selected projectors и два winding orientations
+реконструируют все восемь \(S_4\) three-cycles. Реконструкция ковариантна,
+если winding является orientation-line variable по
+rule~\eqref{eq:twisted-cycle-covariance}.
+\end{proposition}
+
+\section{Статус parent action}
+
+Теперь radial equation и tetrahedral axis не являются независимыми
+potentials: обе следуют из shifted involution. Связь с four-state carrier
+также прямая, поскольку solutions являются его primitive projectors.
+Superconnection architecture допускает odd endomorphism и curvature square
+для position-dependent mass, см. \path{arXiv:2106.01591}; specific
+factorization здесь получена из project affine menu.
+
+Но equation~\eqref{eq:projector-supercurvature} пока не является
+вычисленным блоком полного \(\mathbb A^2\). Нужно показать, что:
+\begin{enumerate}
+ \item \(Q(H)\) возникает как projected even curvature;
+ \item physical winding является orientation-line variable;
+ \item \(C_{a,\nu}\) возникает как actual holonomy, а не как
+ post-processing projector;
+ \item та же connection ограничивается на Majorana kernel как
+ \(K_{a,\nu}=\nu(2\pi/3)[n_a]_\times\).
+\end{enumerate}
+
+\begin{nogocriterion}[Holonomy realization gate]
+Projector factorization не является полным boundary-superconnection
+выводом, пока \(C_{a,\nu}\) не получена как holonomy той же connection,
+чья curvature содержит \(Q(H)\).
+\end{nogocriterion}
+
+Следующий flat-holonomy gate проходит этот критерий на constrained saddle:
+canonical connection, построенная из \(H_a\), uniform singlet и
+orientation tensor, имеет holonomy ровно \(C_{a,\nu}\). Открытым остаётся
+уже не holonomy realization, а вариационное происхождение constitutive
+relation между connection и projector field.
+
+Итак, требуется вывести уже не три locking terms, а один projected
+curvature block и его oriented holonomy.
+
+Машинный ledger сохранён в
+\path{s2t_v4_family_defect_projector_supercurvature_gate_results.json};
+генератор ---
+\path{s2t_v4_family_defect_projector_supercurvature_gate.py}.

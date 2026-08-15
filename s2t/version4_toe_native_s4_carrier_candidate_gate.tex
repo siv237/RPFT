@@ -1,0 +1,163 @@
+\chapter{TOE-native кандидат носителя после отказа от фиксированного \texorpdfstring{\(K\)}{K}}
+
+Предыдущие determinant gates исчерпали
+\(K=\mathbb{RP}^3\times S^1\) как замкнутый минимальный vacuum carrier.
+Ретроспективный аудит одновременно показал, что этот носитель не следует из
+первичного TOE-постулата
+\begin{equation}
+ \widehat C_\sigma=e^{-\sigma^2\Delta_M}.
+\end{equation}
+Поэтому следующий шаг состоит не в добавлении поля к фиксированному \(K\),
+а в возврате к переменному четырёхмерному носителю \(M\).
+
+\section{Критерий без подгоняемого функционала}
+
+На текущем этапе determinant и spectral action не фиксируют конечные
+локальные коэффициенты. Следовательно, назначать кандидатам произвольную
+взвешенную сумму геометрических признаков было бы новой подгонкой. Вместо
+неё вводится последовательный structural gate.
+
+\begin{protocol}[TOE-native carrier gate]
+Кандидат проходит фильтры в следующем порядке:
+\begin{enumerate}
+ \item \(M\) является компактным связным spin-многообразием размерности
+ четыре;
+ \item vacuum metric однородна и имеет положительную Einstein-кривизну;
+ \item после нормировки объёма не остаётся непрерывного безразмерного
+ shape-модуля;
+ \item среди оставшихся кандидатов выбирается максимальная размерность
+ группы изометрий.
+\end{enumerate}
+Это не физическое действие и не доказанный закон TOE. Это минимальный
+лексикографический класс сравнения, не содержащий настраиваемых весов.
+\end{protocol}
+
+Первые три условия выражают соответственно наличие обычных фермионов,
+изотропный стационарный vacuum и отсутствие скрытого аналога свободного
+отношения \(R_1/R_3\). Последний фильтр выбирает наиболее симметричную
+реализацию только после выполнения динамически более содержательных
+ограничений.
+
+\section{Сравнение минимального меню}
+
+\begin{center}
+\scriptsize
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Носитель & spin & homogeneous & \(E_+\) & modulus &
+\(\dim\operatorname{Isom}\) \\
+\midrule
+\(S^4\) & да & да & да & нет & 10 \\
+\(S^2\times S^2\), равные радиусы & да & да & да & нет & 6 \\
+\(S^3\times S^1\) & да & да & нет & да & 7 \\
+\(\mathbb{RP}^3\times S^1\) & да & да & нет & да & 7 \\
+\(T^4\) & да & да & нет: \(R=0\) & да & 4 \\
+K3 & да & нет & нет: \(R=0\) & да & 0 generically \\
+\(\mathbb{CP}^2\) & нет & да & да & нет & 8 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Здесь \(E_+\) означает positive Einstein metric, а столбец modulus ---
+наличие непрерывного shape-модуля после нормировки объёма.
+
+Здесь \(S^3\times S^1\) и его antipodal quotient не являются Einstein:
+Ricci tensor положителен на сферическом факторе и равен нулю на окружности.
+Кроме того, при фиксированном четырёхмерном объёме сохраняется отношение
+радиусов. Flat torus и K3 не проходят positive-curvature gate и имеют
+геометрические модули. \(\mathbb{CP}^2\) исключается обычным spin-условием.
+
+После первых трёх фильтров остаются round \(S^4\) и Einstein product
+\(S^2\times S^2\) с равными радиусами. Для связного четырёхмерного
+риманова многообразия максимальная возможная размерность группы изометрий
+равна
+\begin{equation}
+ \frac{4(4+1)}2=10.
+\end{equation}
+Round \(S^4\) достигает этой границы, тогда как
+\(S^2\times S^2\) имеет шестимерную непрерывную группу изометрий.
+
+\begin{proposition}[Минимальный carrier candidate]
+В объявленном TOE-native меню и при указанном порядке фильтров round
+\(S^4\) является единственным surviving maximally symmetric кандидатом.
+Это условная классификационная уникальность, а не вывод глобальной топологии
+из уравнения для \(\widehat C_\sigma\).
+\end{proposition}
+
+\section{Улучшенная parent geometry}
+
+Пространство-время, finite Standard Model geometry и возможный generation
+carrier больше не отождествляются. Минимальный observed-sector parent имеет
+almost-commutative вид
+\begin{equation}
+ \begin{aligned}
+ \mathcal A_{\rm parent}
+   &=C^\infty(S^4)\otimes
+     \bigl(\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)\bigr),\\
+ \mathcal H_{\rm parent}
+   &=L^2(S^4,S)\otimes\mathcal H_F,\\
+ D_{\rm parent}
+   &=D_{S^4}\otimes1+\gamma_5\otimes D_F,\\
+ \widehat C_\sigma
+   &=e^{-\sigma^2D_{\rm parent}^2}.
+ \end{aligned}
+ \label{eq:toe-native-s4-parent}
+\end{equation}
+В этой архитектуре curvature и cosmological vacuum относятся к \(S^4\),
+gauge и Higgs data --- к finite space \(F\), а flavour hierarchy и CP phase
+не перекладываются на spin-структуру пространства-времени.
+
+Кандидат лучше прежнего \(K\) по четырём причинам:
+\begin{enumerate}
+ \item устраняется свободное отношение двух радиусов;
+ \item нет periodic/AP spin-branch выбора на выделенной окружности;
+ \item background удовлетворяет Einstein condition;
+ \item spacetime и finite observed geometry получают разные роли,
+ согласованные с первичной TOE-архитектурой.
+\end{enumerate}
+
+\section{Что ещё не выведено}
+
+Выбор \(S^4\) пока не фиксирует его радиус. При
+\(g=a^2g_{S^4,1}\) безразмерная форма геометрии определена, но scale \(a\)
+остаётся общей дилатонной координатой. Кроме того, ещё не доказано, что
+какой-либо нормированный functional от \(\widehat C_\sigma\) имеет на
+\(S^4\) строгий минимум относительно всех допустимых деформаций и изменения
+топологии.
+
+\begin{nogocriterion}[Запрет новой фиктивной уникальности]
+Нельзя объявлять \(S^4\) выведенным vacuum только из maximal symmetry.
+Физическое замыкание требует второй вариации одного заранее фиксированного
+correlation functional и отдельного scale-setting condition, не выбранного
+после сравнения с наблюдаемыми.
+\end{nogocriterion}
+
+\section{Следующий точный расчёт}
+
+Следует сравнить round \(S^4\) и равн-radius \(S^2\times S^2\) как два
+surviving positive-Einstein spin backgrounds. Первый preregistered test
+должен использовать одну и ту же нормировку объёма и один Gaussian operator:
+\begin{equation}
+ \widehat C_\tau(M)=e^{-\tau\Delta_M},
+ \qquad
+ \mathcal P_\tau(M)=
+ \frac{\Tr\widehat C_\tau(M)^2}
+      {\bigl(\Tr\widehat C_\tau(M)\bigr)^2}.
+ \label{eq:carrier-correlation-purity}
+\end{equation}
+Знак предпочтения и значение \(\tau\) не должны назначаться задним числом.
+Сначала требуется вывести их из определения TOE-state или показать, что
+порядок двух кандидатов не зависит от \(\tau\) в заранее объявленном
+диапазоне.
+
+\begin{theorem}[Отказ от fixed-\(K\) и новый кандидат]
+Лучший минимальный кандидат после исчерпания
+\(\mathbb{RP}^3\times S^1\) --- не новый quotient этого пространства, а
+round \(S^4\) в разделённой almost-commutative архитектуре
+\eqref{eq:toe-native-s4-parent}. Он устраняет уже доказанные структурные
+дефекты fixed-\(K\), но остаётся candidate geometry до прохождения
+correlation-functional Hessian и независимого scale gate.
+\end{theorem}
+
+Машинный ledger меню сохранён в
+\path{s2t_v4_toe_native_s4_carrier_candidate_gate_results.json}.

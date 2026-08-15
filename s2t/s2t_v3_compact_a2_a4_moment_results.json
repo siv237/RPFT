@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "compact_a2_a4_reduces_bare_freedom_to_one_moment_combination",
+  "heat_kernel_ledger": {
+    "a0_phi_dependence": false,
+    "a2_phi2_spin_traced": -4,
+    "a4_kinetic_spin_traced": 2,
+    "a4_phi4_spin_traced": 2,
+    "a4_R_phi2_spin_traced": "1/3"
+  },
+  "normalized_action": {
+    "quartic_coefficient": "1",
+    "phi2_coefficient": "-2*Lambda**2*f2/f0 + R**(-2)",
+    "chi_squared": "Lambda**2*f2/f0 - 1/(2*R**2)",
+    "chi_radius_squared": "(Lambda**2*R**2*f2 - f0/2)/f0"
+  },
+  "vacuum_condition": {
+    "inequality": "(f2/f0)*(Lambda*R)^2 > 1/2"
+  },
+  "closure": {
+    "independent_bare_lambda2_lambda4": false,
+    "remaining_combination": "(f2/f0)*(Lambda*R)^2",
+    "parameter_free_scale": false,
+    "finite_quantum_matching_open": true
+  },
+  "verdict": {
+    "external_route_partial_pass": true,
+    "next_gate": "spectral function moment menu"
+  }
+}

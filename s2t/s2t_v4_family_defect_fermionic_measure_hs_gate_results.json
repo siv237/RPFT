@@ -1,0 +1,63 @@
+{
+  "date": "2026-08-15",
+  "gate": "version4_family_defect_fermionic_measure_hs_gate",
+  "finite_KO6": {
+    "bilinear": "J_linear D_F is symmetric",
+    "chiral_bilinear_rank": 6,
+    "grassmann_antisymmetric_rank": 0
+  },
+  "spacetime_completed_radial_measure": {
+    "spectrum": "0^6 and +/-sqrt(rho^2+r^2), each sign multiplicity 6",
+    "log_pfaffian": "3 log p^2 + 6 log(p^2+rho^2+r^2)",
+    "even_moments": "Tr D_F^(2n)=12(rho^2+r^2)^n",
+    "loop_quartic_ratio": [
+      1,
+      2,
+      1
+    ],
+    "required_ratio": [
+      1,
+      -2,
+      1
+    ]
+  },
+  "equal_sum_counterexample": {
+    "points": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.7071067811865476,
+        0.7071067811865476
+      ]
+    ],
+    "pfaffian_values": [
+      0.6747037281013457,
+      0.6747037281013474
+    ],
+    "moment_map_square_values": [
+      1.0,
+      0.0
+    ]
+  },
+  "project_archaeology": {
+    "derived_four_fermion_Sym3_channel": false,
+    "HS_requires_prior_quartic_kernel": true,
+    "project_torsion_is_cohomological_Z2_not_Cartan_torsion": true
+  },
+  "maximum_errors": {
+    "finite_bilinear_symmetry": 0.0,
+    "chiral_grassmann_antisymmetric_part": 0.0,
+    "radial_spectrum": 3.659317657342086e-15,
+    "radial_pfaffian_formula": 7.105427357601002e-15,
+    "even_moment_formula": 5.4569682106375694e-12
+  },
+  "verdict": {
+    "standalone_finite_KO6_pfaffian": "zero_by_symmetry",
+    "completed_Gaussian_measure": "depends_only_on_rho2_plus_r2",
+    "imaginary_HS_origin": "not_derived",
+    "Version_IV_family_defect_parent_route": "closed",
+    "reopening": "Version V requires a derived four-fermion channel, modified calculus, Cartan torsion, or a new finite carrier"
+  }
+}

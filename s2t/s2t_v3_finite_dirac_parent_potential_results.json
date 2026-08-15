@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "orbit_direction_selected_scale_and_CP_sign_open",
+  "potential": {
+    "name": "orbit_trace((D_F^2-I)^2)",
+    "expression": "8*r**4 - 16*r**2*s**2*sin(phase)**2 + 16*r**2*s**2 - 8*r**2 + 8*s**4 - 8*s**2 + 4",
+    "nonnegative_by_construction": true,
+    "zero_condition": "D_F^2=I"
+  },
+  "global_minima": {
+    "abs_x": "1/sqrt(2)",
+    "abs_z": "1/sqrt(2)",
+    "arg_xz": [
+      "pi/2",
+      "-pi/2"
+    ],
+    "minimum_value_plus": "0",
+    "minimum_value_minus": "0",
+    "gradient_plus": [
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "stability": {
+    "hessian": "Matrix([[32, 0, 0], [0, 32, 0], [0, 0, 8]])",
+    "eigenvalues": [
+      8,
+      32,
+      32
+    ],
+    "positive_on_orbit_coordinates": true
+  },
+  "generic_even_polynomial": {
+    "potential": "a*Tr(D^4)-b*Tr(D^2)",
+    "selected_u": "general_b/(2*general_a)",
+    "equal_moduli_selected": true,
+    "maximal_CP_magnitude_selected": true,
+    "absolute_scale_fixed_without_ratio_b_over_a": false
+  },
+  "physical_scale": {
+    "dimensionful_potential": "Tr((D_F^2-M^2 I)^2)",
+    "selected_edge_modulus": "sqrt(2)*scale/2",
+    "M_fixed_by_finite_algebra": false
+  },
+  "CP_gate": {
+    "two_conjugate_branches": true,
+    "even_real_action_selects_sign": false,
+    "orientation_odd_term_required_for_unique_sign": true
+  },
+  "verdict": {
+    "continuous_direction_orbit_closed": true,
+    "scale_gate_closed": false,
+    "CP_sign_gate_closed": false,
+    "parent_action_passed": false,
+    "next_gate": "geometric scale and orientation-odd selector"
+  }
+}

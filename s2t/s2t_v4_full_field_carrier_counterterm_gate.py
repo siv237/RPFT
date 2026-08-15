@@ -1,0 +1,118 @@
+import json
+import math
+
+
+PI = math.pi
+
+
+def unit_volume_invariants_s4():
+    radius_fourth = 3.0 / (8.0 * PI**2)
+    radius_squared = math.sqrt(radius_fourth)
+    inverse_radius_squared = 1.0 / radius_squared
+    inverse_radius_fourth = 1.0 / radius_fourth
+    return {
+        "radius": math.sqrt(radius_squared),
+        "volume": 1.0,
+        "integral_R": 12.0 * inverse_radius_squared,
+        "integral_R2": 144.0 * inverse_radius_fourth,
+        "integral_Ricci2": 36.0 * inverse_radius_fourth,
+        "integral_Riemann2": 24.0 * inverse_radius_fourth,
+        "integral_Weyl2": 0.0,
+        "integral_Euler_density": 24.0 * inverse_radius_fourth,
+        "euler_characteristic": 2,
+    }
+
+
+def unit_volume_invariants_s2xs2():
+    radius_fourth = 1.0 / (16.0 * PI**2)
+    radius_squared = math.sqrt(radius_fourth)
+    inverse_radius_squared = 1.0 / radius_squared
+    inverse_radius_fourth = 1.0 / radius_fourth
+    return {
+        "factor_radius": math.sqrt(radius_squared),
+        "volume": 1.0,
+        "integral_R": 4.0 * inverse_radius_squared,
+        "integral_R2": 16.0 * inverse_radius_fourth,
+        "integral_Ricci2": 4.0 * inverse_radius_fourth,
+        "integral_Riemann2": 8.0 * inverse_radius_fourth,
+        "integral_Weyl2": (16.0 / 3.0) * inverse_radius_fourth,
+        "integral_Euler_density": 8.0 * inverse_radius_fourth,
+        "euler_characteristic": 4,
+    }
+
+
+s4 = unit_volume_invariants_s4()
+s22 = unit_volume_invariants_s2xs2()
+keys = [
+    "volume",
+    "integral_R",
+    "integral_R2",
+    "integral_Ricci2",
+    "integral_Riemann2",
+    "integral_Weyl2",
+    "integral_Euler_density",
+    "euler_characteristic",
+]
+differences = {key: s4[key] - s22[key] for key in keys}
+
+
+result = {
+    "gate": "version4_full_field_carrier_counterterm",
+    "date": "2026-08-11",
+    "normalization": "unit_four_volume",
+    "invariants": {"S4": s4, "S2xS2": s22},
+    "difference_S4_minus_S2xS2": differences,
+    "exact_forms": {
+        "delta_integral_R": "12*pi*sqrt(8/3)-16*pi",
+        "delta_integral_R2": "128*pi^2",
+        "delta_integral_Ricci2": "32*pi^2",
+        "delta_integral_Riemann2": "-64*pi^2",
+        "delta_integral_Weyl2": "-256*pi^2/3",
+        "delta_integral_Euler_density": "-64*pi^2",
+    },
+    "finite_counterterm_reversal_witnesses": {
+        "Einstein": {
+            "term": "c_R * integral R",
+            "difference_coefficient": differences["integral_R"],
+            "both_signs_allowed_until_c_R_is_fixed": True,
+        },
+        "Weyl_squared": {
+            "term": "c_W * integral W^2",
+            "difference_coefficient": differences["integral_Weyl2"],
+            "both_signs_allowed_until_c_W_is_fixed": True,
+        },
+        "Euler": {
+            "term": "c_E * integral E4",
+            "difference_coefficient": differences["integral_Euler_density"],
+            "both_signs_allowed_until_topology_weight_is_fixed": True,
+        },
+    },
+    "flat_parent_ledger": {
+        "supertrace_m4_over_chi4": 67,
+        "warning": "flat_multiplicity_check_does_not_fix_curved_finite_counterterms_or_nonlocal_determinants",
+    },
+    "vector_mass_origin": {
+        "formal_operator_ledger": "1/2 logdet(Delta1+3chi2)-1/2 logdet(Delta0+3chi2)",
+        "status": "usable_as_a_Proca_or_Stueckelberg_determinant_but_not_derived_from_the_three_listed_physical_scalars",
+    },
+    "theorem": "the_full_field_carrier_ordering_is_not_scheme_independent_before_gravitational_and_topological_finite_counterterms_are_fixed",
+    "next_admissible_step": {
+        "freeze": [
+            "renormalized_Newton_coefficient",
+            "Weyl_squared_coefficient",
+            "Euler_or_topology_weight",
+            "scalar_nonminimal_curvature_couplings",
+            "vector_mass_completion",
+        ],
+        "then_compute": "nonlocal determinant residual and joint carrier Hessian",
+    },
+}
+
+with open("s2t_v4_full_field_carrier_counterterm_gate_results.json", "w", encoding="utf-8") as output:
+    json.dump(result, output, ensure_ascii=False, indent=2)
+    output.write("\n")
+
+print(json.dumps({
+    "difference_S4_minus_S2xS2": differences,
+    "theorem": result["theorem"],
+}, ensure_ascii=False, indent=2))

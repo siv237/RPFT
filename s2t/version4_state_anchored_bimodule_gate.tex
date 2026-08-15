@@ -1,0 +1,101 @@
+\chapter{State-anchored one-form bimodule: каноническая CP-map}
+
+Inner-fluctuation gate оставил выбор: малая family algebra не содержит
+CP-capable correction, а полная \(M_3(\mathbb C)\) возвращает девять
+произвольных directions. Вместо расширения algebra выделим минимальный
+one-form module, определённый уже найденным pure state \(\rho_\star\).
+
+\section{State-supported module}
+
+Положим \(Q_\star=I-\rho_\star\) и потребуем, чтобы каждый subleading
+connector касался selected state хотя бы одним endpoint. Тогда допустимое
+пространство равно
+\begin{equation}
+ \mathcal M_{\rho}:=
+ \rho_\star M_3+M_3\rho_\star
+ =\{X\in M_3:Q_\star XQ_\star=0\}.
+\end{equation}
+Это не новая полная algebra, а *-замкнутый bimodule над state algebra
+\begin{equation}
+ \mathcal A_\rho=
+ \operatorname{span}\{\rho_\star,Q_\star\}.
+\end{equation}
+Прямой rank test даёт
+\begin{equation}
+ \dim_{\mathbb C}\mathcal M_\rho=5,
+ \qquad
+ \dim_{\mathbb C}\ker\Pi_\rho=4.
+\end{equation}
+Исключённые четыре directions образуют внутренний block
+\(Q_\star M_3Q_\star\), не связанный с выбранным state.
+
+\section{Единственная trace-orthogonal projection}
+
+Относительно уже используемой Hilbert--Schmidt trace metric ортогональная
+projection на \(\mathcal M_\rho\) единственна:
+\begin{equation}
+ \boxed{
+ \Pi_\rho(X)=X-Q_\star XQ_\star
+ =\rho_\star X+X\rho_\star-\rho_\star X\rho_\star.}
+\end{equation}
+Она idempotent, self-adjoint как superoperator, *-compatible и covariant:
+\begin{equation}
+ \Pi_{U\rho U^\dagger}(UXU^\dagger)
+ =U\Pi_\rho(X)U^\dagger.
+\end{equation}
+Машинные residuals всех этих identities не превосходят
+\(5\times10^{-13}\).
+
+Тем самым support principle и существующая trace metric выбирают map без
+continuous coefficient:
+\begin{equation}
+ Y_s^{\rm anch}=P_-+i\Pi_{\rho_\star}(H_s),
+ \qquad s=u,d.
+\end{equation}
+
+\section{Первый выбранный CP readout}
+
+Полученные normalized spectra равны
+\begin{align}
+ m_u/m_{u,\max}&=(0.192658,\,0.375569,\,1),\\
+ m_d/m_{d,\max}&=(0.119012,\,0.430519,\,1),
+\end{align}
+а cubic CP invariant имеет значение
+\begin{equation}
+ \Im\Tr[M_u,M_d]^3=-0.287960\ne0.
+\end{equation}
+Absolute mixing matrix имеет вид
+\begin{equation}
+ |V_{\rm anch}|\simeq
+ \begin{pmatrix}
+ 0.4302&0.8512&0.3007\\
+ 0.8349&0.4751&0.2777\\
+ 0.3432&0.2230&0.9124
+ \end{pmatrix}.
+\end{equation}
+Следовательно, map является genuinely CP-capable, но этот минимальный ledger
+ещё не проходит observed small-mixing и mass-hierarchy scorecard.
+
+\begin{theorem}[Conditional state-anchored selector]
+После выбора \(\rho_\star\) вариационным family functional support axiom
+\(Q_\star XQ_\star=0\) и Hilbert--Schmidt metric однозначно выделяют
+пятимерный bimodule и projection \(\Pi_\rho\). Полученная Yukawa map не имеет
+continuous flavour coefficient и порождает ненулевой CP invariant.
+\end{theorem}
+
+\begin{remark}
+Это сильнее предыдущего existence pass: Jordan и произвольные full-\(M_3\)
+maps больше не равноправны, поскольку только \(\Pi_\rho\) является
+ортогональной projection на state-supported module. Условным остаётся сам
+support axiom; его ещё нужно вывести из graph incidence или parent action.
+\end{remark}
+
+\begin{nogocriterion}[Запрет объявления phenomenological pass]
+Ненулевой CP invariant не компенсирует крупное mixing и слабую hierarchy.
+До появления четырёх sector-sensitive edges и RG readout найденная map
+считается структурным, а не феноменологическим pass.
+\end{nogocriterion}
+
+Следующая задача сужена: вывести support axiom из одного finite graph и
+различить \(u,d,e,\nu\) без четырёх независимых maps. Машинный ledger сохранён
+в \path{s2t_v4_state_anchored_bimodule_gate_results.json}.

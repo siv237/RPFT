@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "absolute_scale_no_go_dimensionless_program_open",
+  "homothety": {
+    "metric": "g -> lambda^2 g",
+    "length": "L -> lambda L",
+    "volume_d": "Vol_d -> lambda^d Vol_d",
+    "laplacian": "Delta -> lambda^-2 Delta",
+    "dirac": "D -> lambda^-1 D",
+    "p_form_norm_squared_exponent": "dimension - 2*form_degree"
+  },
+  "dimensionless_invariant": {
+    "scaled_MR": "mass*radius",
+    "equals_original_MR": true,
+    "absolute_M_fixed": false,
+    "absolute_R_fixed": false
+  },
+  "spectral_action": {
+    "functional": "Tr f(D/Lambda)",
+    "D_and_Lambda_common_rescaling_invariant": true,
+    "Lambda_dynamically_derived": false
+  },
+  "two_term_radion_example": {
+    "potential": "A*R+B/R",
+    "stationary_radius": "sqrt(B)/sqrt(A)",
+    "hessian_at_stationary": "2*A**(3/2)/sqrt(B)",
+    "depends_on_coefficient_ratio": true,
+    "R_equals_one_requires_A_equals_B": true
+  },
+  "verdict": {
+    "topology_fixes_absolute_scale": false,
+    "normalized_geometry_fixes_absolute_scale": false,
+    "dimensionless_predictions_allowed": true,
+    "absolute_mass_predictions_allowed": false,
+    "next_gate": "dilaton-radion action or dimensionless blind protocol"
+  }
+}

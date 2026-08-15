@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-14",
+  "random_seed": 20260814,
+  "random_tests": 200,
+  "matrix_checks": {
+    "wedge_symmetry_error": 0.0,
+    "ko6_self_adjoint_error": 0.0,
+    "ko6_odd_grading_error": 0.0,
+    "ko6_reality_error": 0.0,
+    "wedge_determinant_identity_error": 5.684341886080801e-13
+  },
+  "rank_one_vacuum": {
+    "wedge_norm": 0.0,
+    "wedge_jacobian_rank": 6,
+    "wedge_jacobian_nullity": 10,
+    "nonzero_jacobian_singular_values": [
+      1.6817928305074288,
+      1.6817928305074288,
+      1.6817928305074286,
+      1.6817928305074286,
+      1.6817928305074286,
+      1.6817928305074286
+    ],
+    "gauge_orbit_rank": 9,
+    "maximum_gauge_tangent_wedge_error": 0.0,
+    "radial_tangent_wedge_error": 0.0
+  },
+  "interpretation": {
+    "six_transverse_directions": "the wedge Jacobian sees exactly the six former negative Hessian modes",
+    "nine_goldstones": "the full nine-dimensional gauge orbit lies in its kernel",
+    "radial_mode": "the rank-one radial direction also lies in its kernel",
+    "fermion_readout": "the new channel vanishes at the rank-one vacuum and does not shift tree-level masses"
+  },
+  "verdict": {
+    "KO6_channel_compatible": true,
+    "representation_targeted": "(1_R,6_4)",
+    "vacuum_compatibility_pass": true,
+    "parent_graph_derived": false,
+    "next_gate": "construct the doubled-path Krajewski/superconnection block and derive the relative sign"
+  }
+}

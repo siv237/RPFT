@@ -1,0 +1,179 @@
+\chapter{Heat-kernel \(a_4\) и нормировка gauge coupling}
+
+Локальный product lift свёл gauge mass к
+\begin{equation}
+ \frac{m_A^2}{\chi^2}=8g^2.
+\end{equation}
+Остаётся проверить, фиксирует ли тот же heat-kernel coefficient, который
+дал scalar-нормировку \(\kappa=2\), значение \(g\).
+
+\section{Laplace-type decomposition}
+
+Для covariant product Dirac-оператора
+\begin{equation}
+ \mathcal D_A
+ =i\gamma^\mu(\partial_\mu+A_\mu)
+ +\gamma^5\Phi
+\end{equation}
+используем antihermitian convention
+\begin{equation}
+ A_\mu=iQ\,a_\mu,
+ \qquad
+ F_{\mu\nu}=iQ\,f_{\mu\nu}.
+\end{equation}
+В плоском фоне relevant endomorphism имеет блоки
+\begin{equation}
+ E_F=-\frac12\gamma^{\mu\nu}F_{\mu\nu},
+ \qquad
+ E_\Phi=-i\gamma^\mu\gamma^5D_\mu\Phi-\Phi^2,
+\end{equation}
+а curvature covariant derivative равна
+\begin{equation}
+ \Omega_{\mu\nu}=F_{\mu\nu}.
+\end{equation}
+Локальная часть \(a_4\) содержит
+\begin{equation}
+ \frac1{(4\pi)^2}
+ \Tr\left(
+ \frac12E^2+\frac1{12}\Omega_{\mu\nu}\Omega^{\mu\nu}
+ \right).
+\end{equation}
+
+\section{Clifford traces}
+
+При
+\begin{equation}
+ \operatorname{tr}_{\mathrm{spin}}\mathbf1=4
+\end{equation}
+и стандартной евклидовой Clifford-конвенции получаем
+\begin{align}
+ \operatorname{tr}_{\mathrm{spin}}
+ \left(\frac12E_\Phi^2\right)
+ &\supset
+ 2\,\Tr_{\mathrm{orb}}(D_\mu\Phi D^\mu\Phi),
+ \\
+ \operatorname{tr}_{\mathrm{spin}}
+ \left(
+ \frac12E_F^2+\frac1{12}\Omega^2
+ \right)
+ &=
+ -\frac23\Tr_{\mathrm{orb}}(F_{\mu\nu}F^{\mu\nu}).
+\end{align}
+Так как \(F=iQf\), второй член положителен:
+\begin{equation}
+ -\Tr_{\mathrm{orb}}F^2
+ =\Tr_{\mathrm{orb}}Q^2\,f^2.
+\end{equation}
+После деления всего \(a_4\)-блока на общий scalar coefficient \(2\)
+нормированная лагранжева плотность содержит
+\begin{equation}
+ \mathcal L_4
+ \supset
+ \Tr_{\mathrm{orb}}(D_\mu\Phi D^\mu\Phi)
+ +\frac13\Tr_{\mathrm{orb}}Q^2\,
+ f_{\mu\nu}f^{\mu\nu}.
+\end{equation}
+
+\section{Orbit charge trace}
+
+На минимальном reality-квадрате
+\begin{equation}
+ Q=\operatorname{diag}(0,1,-1,0),
+\end{equation}
+поэтому
+\begin{equation}
+ \Tr_{\mathrm{orb}}Q^2=2.
+\end{equation}
+Gauge kinetic term принимает вид
+\begin{equation}
+ \frac23 f_{\mu\nu}f^{\mu\nu}.
+\end{equation}
+Сопоставление с конвенцией
+\begin{equation}
+ \frac1{4g^2}f_{\mu\nu}f^{\mu\nu}
+\end{equation}
+даёт
+\begin{equation}
+ \boxed{g^2=\frac38,}
+ \qquad
+ \boxed{g=\sqrt{\frac38}.}
+\end{equation}
+
+\begin{theorem}[Common-\(a_4\) coupling pass]
+В минимальном relative-\(U(1)\) product triple gauge coupling не является
+новым непрерывным параметром после выбора общей \(a_4\)-нормировки.
+Scalar и gauge kinetic terms фиксируют
+\(g^2=3/8\) на spectral matching scale.
+\end{theorem}
+
+\begin{remark}
+Утверждение относится к четырёхмерному zero-mode effective block.
+Его перенос на полную \(M_4\times K\)-компактификацию требует отдельного
+размерностного гейта.
+\end{remark}
+
+\section{Исправленный gauge mass и supertrace}
+
+Подстановка найденного coupling в локальный product lift даёт
+\begin{equation}
+ \frac{m_A^2}{\chi^2}
+ =8g^2=3.
+\end{equation}
+Gauge, Goldstone и ghost block поэтому добавляет
+\begin{equation}
+ \Delta N_{\mathrm{gauge+ghost}}
+ =3\left(\frac{m_A^2}{\chi^2}\right)^2
+ =3\cdot3^2=27.
+\end{equation}
+Совместно с finite scalar--fermion numerator \(40\) получаем
+\begin{equation}
+ N_0^{\mathrm{fin+gauge}}=40+27=67
+\end{equation}
+и
+\begin{equation}
+ \boxed{
+ B_0^{\mathrm{fin+gauge}}
+ =\frac{67}{64\pi^2}>0.}
+\end{equation}
+
+\begin{proposition}[Zero-mode completion milestone]
+После включения выведенного relative-\(U(1)\) BV-блока полный
+недилатонный zero-mode coefficient остаётся строго положительным. Его
+значение \(67/(64\pi^2)\) не содержит свободного gauge coupling.
+\end{proposition}
+
+\section{Нормировочный red-team}
+
+Общий spectral moment \(f_0\) умножает scalar и gauge части одинаково и
+сокращается при фиксации канонической scalar-нормировки. Полный trace на
+KO6-удвоении также удваивает одновременно
+\(\Tr(D\Phi)^2\) и \(\Tr Q^2\), поэтому отношение и значение \(g\) не
+меняются. Результат изменится только при:
+\begin{enumerate}
+ \item ином charge representation;
+ \item независимой gauge kinetic добавке вне spectral action;
+ \item иной нормировке генератора с изменённым глобальным периодом.
+\end{enumerate}
+Все три изменения означают новую версию parent model.
+
+\begin{nogocriterion}[Gauge normalization kill-rule]
+Если полный fluctuated Dirac trace содержит дополнительные charged
+представления, меняющие \(\Tr Q^2=2\), они должны быть объявлены до
+KK-аудита. Сохранение \(g^2=3/8\) при скрытом расширении charge ledger
+запрещено.
+\end{nogocriterion}
+
+\begin{protocol}[Следующий гейт]
+Zero-mode gauge completion закрыт. Теперь требуется перечислить spin и
+flat-character ветви fermion operator на
+\(K=\mathbb{RP}^3\times S^1\), вычислить для каждой ветви regulated
+\(\Delta N_{\mathrm{KK}}\) в одной heat-kernel/дзета-схеме и проверить
+устойчивость знака
+\begin{equation}
+ B_{\mathrm{full}}
+ =\frac{67+c_\sigma^2+\Delta N_{\mathrm{KK}}}{64\pi^2}.
+\end{equation}
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_a4_gauge_coupling_results.json}.

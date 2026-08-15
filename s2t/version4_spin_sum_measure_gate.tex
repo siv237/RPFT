@@ -1,0 +1,122 @@
+\chapter{Мера суммы по spin-структурам}
+
+Предыдущий relative-determinant gate показал, что при одинаковых
+предварительных весах periodic и anti-periodic ветвей фермионная finite
+part ниже для \(\beta=1/2\). Теперь необходимо проверить, содержит ли
+текущий parent action саму сумму, относительно которой это ранжирование
+становится динамическим выбором.
+
+\section{Что определено текущим parent triple}
+
+Для каждой spin-структуры \(\mathfrak s\) почти-коммутативный lift имеет вид
+\begin{align}
+ \mathcal H_{\mathfrak s}
+ &=L^2(K,S_{\mathfrak s})\otimes H_8,
+ \\
+ \mathcal D_{\mathfrak s,\rho}
+ &=D_{K,\mathfrak s,\rho}\otimes\mathbf1
+ +\gamma_K\otimes\chi D_F^*.
+\end{align}
+Это определяет отдельный partition function
+\begin{equation}
+ Z_{\mathfrak s,\rho}
+ =\int_{\mathcal F_{\mathfrak s,\rho}}
+ e^{-S_{\mathfrak s,\rho}}\,D\mathcal F.
+\end{equation}
+BRST/BV complex действует на полях внутри фиксированного spinor bundle.
+Ни одно его поле не переводит \(S_{\mathfrak s}\) в
+\(S_{\mathfrak s'}\), а finite algebra не содержит spin-transition edge.
+
+Следовательно, выражение
+\begin{equation}
+ Z_{\mathrm{sum}}
+ =\sum_{\mathfrak s}w_{\mathfrak s}Z_{\mathfrak s}
+ \label{eq:spin-sum-partition}
+\end{equation}
+не является следствием уже заданного functional integral. Оно определяет
+дополнительную теорию и требует меры \(w_{\mathfrak s}\).
+
+\section{Может ли равномерная мера считаться канонической}
+
+Spin-структуры образуют torsor над
+\begin{equation}
+ H^1(K;\mathbb Z_2)\cong\mathbb Z_2^2.
+\end{equation}
+Если заранее постулировать физическое действие всей torsor translation
+group, единственная нормированная инвариантная counting measure равна
+\begin{equation}
+ w_{\mathfrak s}=\frac14.
+\end{equation}
+Но наличие torsor не означает, что его абстрактные трансляции являются
+gauge symmetry parent action. Текущая алгебра автоморфизмов, Dirac operator
+и BV complex такого действия не выводят. Поэтому равномерная мера является
+естественным дополнительным постулатом, но не theorem текущей версии.
+
+Неравномерные фазы или знаки также не фиксированы. Их можно получить только
+после добавления, например, \(\mathbb Z_2\)-topological gauge sector,
+spin-TQFT, determinant-line weight или явно объявленного filling/cobordism
+prescription. Каждый такой вариант меняет parent theory и обязан заново
+пройти anomaly, reality и measure gates.
+
+\begin{theorem}[Spin-sum specification gap]
+Текущий base-\(K\) parent action определяет четыре отдельных теории на
+фиксированных spin-структурах, но не их сумму. Поэтому более низкое значение
+relative determinant при \(\beta=1/2\) является scheme-independent
+ранжированием ветвей, а не динамическим выбором внутри уже построенного
+partition function.
+\end{theorem}
+
+\section{Конфликт с прежней periodic постановкой}
+
+В старой RPFT-ветви periodic condition на \(S^1\) фиксировалось из чтения
+окружности как пространственной, а anti-periodic condition называлось
+термальным. Это различение слишком сильное. Anti-periodicity является
+обязательной KMS-конвенцией, когда окружность представляет евклидово время;
+на пространственной окружности periodic и anti-periodic условия являются
+двумя допустимыми spin-структурами.
+
+Следовательно, spatial interpretation сама по себе не выводит periodic
+branch. Старый выбор остаётся допустимым model input, но не может
+одновременно использоваться вместе с утверждением, что determinant
+динамически выбрал anti-periodic branch, пока не задана сумма
+\eqref{eq:spin-sum-partition}.
+
+\begin{nogocriterion}[Запрет подмены background selection]
+Сравнение \(Z_{\rm AP}/Z_{\rm P}\) не разрешает заменить заранее выбранную
+periodic spin-структуру на anti-periodic. Для такого перехода требуется
+либо общий spin-sum partition function с выведенными весами, либо
+динамический topological field, связывающий sectors.
+\end{nogocriterion}
+
+\section{Замороженный статус}
+
+Итог имеет двухуровневый вид:
+\begin{equation}
+ \boxed{
+ \begin{gathered}
+ \Delta\Gamma_f(1/2)<\Delta\Gamma_f(0)
+ \quad\text{--- доказанное relative ranking},
+ \\
+ \beta_{S^1}=1/2
+ \quad\text{--- не выведенный dynamic selection}.
+ \end{gathered}}
+\end{equation}
+Минимальное продолжение без смены теории состоит в явной заморозке одной
+spin-структуры как background train input. Альтернативное продолжение ---
+построение новой \(\mathbb Z_2\)/spin-TQFT measure; оно относится уже к
+расширенной версии parent action.
+
+\begin{protocol}[Следующий допустимый выбор]
+До вычисления полного численного zeta-потенциала необходимо выбрать один из
+двух путей:
+\begin{enumerate}
+ \item сохранить legacy periodic branch как явный spatial-background input;
+ \item принять anti-periodic branch как новый явный input, мотивированный
+ relative determinant, но не называть его динамически выведенным.
+\end{enumerate}
+Суммирование с равными весами допустимо только после отдельного объявления
+spin-torsor symmetry как части parent theory.
+\end{protocol}
+
+Машинный статус сохранён в
+\path{s2t_v4_spin_sum_measure_gate_results.json}.

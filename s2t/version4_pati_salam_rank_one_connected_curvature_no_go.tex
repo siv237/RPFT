@@ -1,0 +1,140 @@
+\section{Rank-one connected curvature no-go и закрытие current geometry}
+
+После закрытия product contractions остаётся genuinely connected
+relative curvature. На выбранном vacuum единственным color-covariant
+background object является
+\begin{equation}
+ P=\frac{\Delta^\dagger\Delta}
+ {\Tr(\Delta^\dagger\Delta)},
+ \qquad
+ P^2=P,
+ \qquad
+ \rank P=1.
+ \label{eq:ps-rank-one-color-projector}
+\end{equation}
+Нужно проверить не отдельную формулу, а весь класс quadratic connected
+invariants, порождаемых этим projector.
+
+\subsection{Полная connected basis для adjoint direction}
+
+Пусть \(\Sigma=\Sigma^\dagger\), \(\Tr\Sigma=0\). С точностью до
+cyclicity, \(P^2=P\) и linear combinations quadratic single-trace words
+содержатся в
+\begin{equation}
+ \Tr(P\Sigma^2),
+ \qquad
+ \Tr(P\Sigma P\Sigma),
+ \qquad
+ \bigl(\Tr(P\Sigma)\bigr)^2.
+ \label{eq:ps-connected-sigma-word-basis}
+\end{equation}
+Эквивалентно их общий information span задаётся maps
+\begin{equation}
+ P\Sigma,\quad
+ \Sigma P,\quad
+ [P,\Sigma],\quad
+ \{P,\Sigma\},\quad
+ \Tr(P\Sigma).
+\end{equation}
+
+Разложим color space как
+\(\mathbb C^4=P\mathbb C^4\oplus Q\mathbb C^4\), \(Q=I-P\).
+Для каждого embedded
+\begin{equation}
+ \Sigma_8=Q\Sigma_8Q,
+ \qquad
+ \Sigma_8\in\mathfrak{su}(3),
+\end{equation}
+все maps выше равны нулю. Поэтому весь восьмимерный
+\(\mathfrak{su}(3)\)-adjoint лежит в общем kernel любого connected
+quadratic form.
+
+Machine rank ledger даёт
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Map & Rank & Kernel dimension\\
+\midrule
+\(P\Sigma\) или \(\Sigma P\) & 7 & 8\\
+\([P,\Sigma]\) & 6 & 9\\
+\(\{P,\Sigma\}\) & 7 & 8\\
+\(\Tr(P\Sigma)\) & 1 & 14\\
+весь connected span & 7 & 8\\
+\bottomrule
+\end{tabular}
+\end{center}
+Factorized form
+\(\Tr(P)\Tr(\Sigma^2)\) имеет rank \(15\), но именно она относится к
+уже закрытой product branch.
+
+\begin{theorem}[Rank-one stabilizer obstruction]
+Любой quadratic connected invariant, построенный из одного rank-\(r\)
+color projector, имеет общий
+\(\mathfrak{su}(4-r)\)-kernel размерности
+\((4-r)^2-1\). Для current rank-one vacuum неизбежны восемь flat
+\(\Sigma_4\)-directions.
+\end{theorem}
+
+\subsection{Projector-rank ledger}
+
+Direct calculation для Hermitian traceless \(\Sigma_4\) даёт
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+\(\rank P\) & Connected rank & Kernel & Остаточный adjoint\\
+\midrule
+1 & 7 & 8 & \(\mathfrak{su}(3)\)\\
+2 & 12 & 3 & \(\mathfrak{su}(2)\)\\
+3 & 15 & 0 & отсутствует\\
+4 & 15 & 0 & отсутствует\\
+\bottomrule
+\end{tabular}
+\end{center}
+Но current field \(\Delta\) является \(2\times4\) matrix и имеет
+\(\rank(\Delta^\dagger\Delta)\le2\). Более того, determinant selector
+выбирает именно rank-one branch. Поэтому full-rank connected
+\(\Sigma_4\)-Hessian недостижим во всём current carrier class.
+
+\subsection{Phi channel}
+
+На project \(\phi\)-tangent connected maps
+\begin{equation}
+ M_R^\dagger Y,\quad
+ YM_R^\dagger,\quad
+ P_LY,\quad
+ YP_R,\quad
+ [M_R^\dagger,Y],\quad
+ \{M_R^\dagger,Y\}
+\end{equation}
+по отдельности имеют ranks \(4,4,4,4,4,6\). Их полный stacked span имеет
+rank \(6\) из \(8\), то есть сохраняет ещё двумерный common kernel.
+Следовательно, даже без \(\Sigma_4\)-обструкции single-background
+connected curvature не замыкает весь \(\phi\)-sector.
+
+\begin{theorem}[Current finite geometry closure]
+One-copy rank-one relative cycle стабилизирует \(\Delta\), но никакой
+connected non-product quadratic contraction, построенный из его
+единственного projector, не даёт full-rank Hessian одновременно для
+\(\phi\) и \(\Sigma_4\). Поэтому current Pati--Salam finite geometry
+закрыта как physical vacuum mechanism.
+\end{theorem}
+
+\subsection{Условие переоткрытия}
+
+Переоткрытие требует одного из двух новых structural inputs:
+\begin{enumerate}
+ \item fundamental diagonal color carrier, порождающий effective projector
+ rank не меньше трёх;
+ \item несколько независимо выведенных noncommuting color projectors с
+ trivial common stabilizer.
+\end{enumerate}
+Оба варианта меняют finite geometry и относятся уже к следующей версии
+программы, а не к ремонту текущей ветви Тома IV.
+
+Результат согласуется с vacuum obstruction spectral Pati--Salam model,
+обсуждаемой в arXiv:1905.04533, и с composite scalar content, возникающим
+без first-order condition в arXiv:1304.8050.
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_rank_one_connected_curvature_no_go.py} и
+\path{s2t_v4_pati_salam_rank_one_connected_curvature_no_go_results.json}.

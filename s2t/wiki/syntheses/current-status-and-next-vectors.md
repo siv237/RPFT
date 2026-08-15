@@ -2,7 +2,7 @@
 
 > Status: working
 > Type: synthesis
-> Updated: 2026-08-07
+> Updated: 2026-08-13
 
 The compact theorem/no-go ledger superseding stale sprint recommendations is [[theorem-status-ledger-2026-08-04]].
 
@@ -598,3 +598,469 @@ The invariant calculation reproduces the exact SM two-loop gauge matrix and fixe
 ## 2026-08-04 Finite Threshold Sign Cone
 
 The corrected finite target has direction `(1,-1,-6.682)`. The extended `XY/H3/Sigma8/Sigma3` cone is algebraically nonempty, but its least extreme exact realization needs a maximum logarithm `116.05`; even allowing masses above the matching scale still needs `56.30`, versus the available interval `29.92`. The physical-window problem is infeasible and its best approximation misses `50.7%` of the target. In addition, frozen `v_S2T` and `alpha_em` cannot fit both weak masses through coupling thresholds alone. The minimal logarithmic gauge-repair program is therefore closed.
+
+## 2026-08-13 Mapping-Cone Spectral Hessian
+
+The periodic `1/45` term now has a stronger reconstruction. Put the nonzero periodic Laplacian and the Wilson incidence vector `b_theta=(1-U_theta)u` into one self-adjoint block operator on `R direct-sum R2_root`. Its real-Gaussian Hessian gives
+
+`-[1/2] ||b_theta||^2 Tr'(Delta_hat^-2) = -(1-cos(theta))/45`
+
+exactly. The spectrum supplies `Tr'(Delta_hat^-2)=1/45`, while the mapping-cone identity supplies `||b_theta||^2=2(1-cos(theta))`. The coefficient is therefore not inserted after comparison, and the former external identification between operator space and Wilson-edge space is replaced by one block intertwiner.
+
+This is a **strong conditional pass**, not a completed determinant derivation. The full Gaussian determinant contains the nonzero next term `-(1-cos(theta))^2/4725`; only the Hessian reproduces the declared functional. The remaining parent obligation is to derive the Hessian itself as the fundamental edge action and to prohibit an independent weight `alpha(1-U)`.
+
+Plain-language status: the correct number now falls out of one machine, but we still must prove that nature uses the machine's stiffness reading rather than its full output.
+
+## 2026-08-13 Literature Priority Status
+
+The ingredients are not individually new. Mapping-cone determinant lines, log-det Hessian geometry on graph/edge-weight spaces, Schur complements and inverse-gap-square fidelity metrics all have literature precedents. A targeted arXiv search did not find the exact specialization combining the periodic spectrum `(pi n)^2`, primitive Wilson incidence `(1-U)u`, the real-Gaussian half-weight and the resulting coefficient `(1-cos(theta))/45`.
+
+This is absence of a located match, not proof of novelty. The permitted public wording is: **“an apparently unrecorded specialization of known mapping-cone and log-det-Hessian mechanisms.”** Claims such as “first proof” or “nobody noticed this before” remain forbidden until an external search in MathSciNet, zbMATH, INSPIRE and Crossref, followed by expert review.
+
+## 2026-08-13 Hessian-Principle Sign Trilemma
+
+The direct mapping-cone Hessian identity survives algebraically, but its proposed information-geometric interpretation fails a sign test. The canonical Gaussian KL/Fisher Hessian is positive and gives `+(1-cos(theta))/45`. The required negative sign comes from the concave Gaussian log determinant, whose full expansion necessarily contains the additional term `-(1-cos(theta))^2/4725` and higher powers.
+
+Therefore the minimal menu is closed: a positive information metric has the wrong sign; the full determinant has the correct quadratic sign but extra terms; retaining only the negative Hessian is a new non-metric parent postulate. Reopening requires an independently derived signed susceptibility or an infinite graded cancellation theorem.
+
+Plain-language status: the stiffness meter gives the right number only when read upside down; reading the actual machine output brings back unwanted corrections.
+
+### Literature correction: exact response route reopens
+
+The previous closure was too strong. In standard linear response, the free-energy Hessian with respect to an external source is negative, while the positive susceptibility is its minus. Therefore the coefficient `-(1-cos(theta))/45` is a legitimate signed free-energy response, not an illegally sign-flipped Fisher metric.
+
+The nonzero quartic and higher determinant terms do not alter the exact derivative at zero probe coupling. They matter only if the claim concerns the full finite-source determinant. The mapping-cone result is therefore reinstated as an **exact two-point response conditional pass**.
+
+The remaining gate is precise: derive from the parent theory that the physical Wilson functional is the zero-source two-point stiffness itself, with a canonically normalized primitive probe coupling. If the physical object is instead the determinant evaluated at unit source, the higher-power no-go returns.
+
+Plain-language status: the meter reading is legitimate after all, but we still must prove that the theory asks for the meter reading rather than the machine's full nonlinear output.
+
+## 2026-08-13 Spectral Pati–Salam Architecture Gate
+
+The successful cluster is now interpreted as an architectural clue: the model
+works best for discrete, low-rank and fixed-scale spectral relations, while
+the gauge/RG cluster fails whenever independent representation-dependent
+transport is required. The smallest related extension is therefore a
+spectral Pati–Salam bridge, not another universal coefficient.
+
+A no-fit test fixed the Pati–Salam breaking scale to the project’s existing
+`g1=g2` crossing, `mR=1.0317137e13 GeV`. Across the four canonical scalar
+scenarios of arXiv:1507.08161, the best remaining coupling spreads are
+`2.63%–4.90%`; no scenario passes a one-percent gate. Freely optimizing `mR`
+restores exact one-loop unification and reproduces the literature scales, but
+that would make `mR` an input rather than a prediction.
+
+The next improvement is sharply defined: derive a viable Pati–Salam-to-SM
+vacuum, the scalar scenario and `mR` from the finite Dirac/scalar action,
+freeze them, and only then rerun gauge RG. The vacuum check is a real kill
+gate because arXiv:1905.04533 reports failure for a spectral Pati–Salam
+scalar potential. Generic 5D KK thresholds remain lower priority because
+their moduli and higher-dimensional operators can reintroduce hidden fits;
+an anomaly-constrained 6D route is the fallback architecture.
+
+## 2026-08-13 Pati–Salam Vacuum Singlet No-Go
+
+The next cross-sector reuse was tested and failed in its minimal form. The
+project already contains a Coleman–Weinberg dilaton/singlet candidate, but
+the minimal spectral direct sum gives it zero portal to the observed sector.
+Even granting a universal norm portal does not solve the published
+Pati–Salam vacuum obstruction: it shifts the required Goldstone and the
+mass-degenerate unwanted scalar equally, so preserving the Goldstone leaves
+the pseudo-Goldstone massless.
+
+The scale comparison is independently decisive. The project’s conditional
+`M_R^(0)=(23+pi^-1)m_mu` equals `2.4637 GeV`, whereas the freely optimized
+Pati–Salam breaking scales are `1.49e11–5.08e13 GeV`, a gap of
+`10.78–13.31` decades. The two quantities cannot be identified by notation.
+
+The model-improvement target is now a representation-sensitive diagonal
+finite block, not a universal singlet. It must change the problematic scalar
+mass difference, belong to the same finite geometry, and participate in
+dimensional transmutation. A finite menu and mass-difference calculation is
+the next gate; if every allowed block is universal, the Pati–Salam route
+closes and the anomaly-constrained 6D fallback gains priority.
+
+## 2026-08-13 Representation-Sensitive Connector Menu
+
+The first positive design clue after the singlet no-go is a Casimir
+representation-separation diagnostic. The required Goldstone lies in `(I_R,R4)=(1,10)` and the
+unwanted mode in `(0,6)`. An identity scalar gives zero mass-difference
+sensitivity, while either the `SU(2)_R` or `SU(4)` quadratic Casimir gives
+`-2`; the combined operator gives `-4`.
+
+The diagnostic does not compute a mass splitting from an adjoint VEV. A
+specific breaking direction acts through weights and potential contractions,
+not automatically through the full quadratic Casimir. A Hermitian
+four-color `1+15` block remains a target, with conditional realization in
+the composite branch.
+
+The result is only a necessary structural pass. The next calculation must
+derive the restricted potential, establish an adjoint high-scale VEV, check
+the complete Hessian and Goldstone count, and prevent unacceptable fermion
+masses before any RG improvement is claimed.
+
+## 2026-08-13 Restricted Pati–Salam Potential Correction
+
+The proposed `1+15` connector required a representation correction. The
+field `Sigma` in the general spectral Pati–Salam Dirac operator is
+`(2_R,2_L,1+15_4)`, not a weak-singlet `(1_R,1_L,1+15_4)`. A high-scale VEV
+would therefore break `SU(2)_L` and induce high-scale left-right fermion
+masses.
+
+The canonical breaking point has exactly the required nine Goldstones but
+also six unwanted massless scalars; the remaining scalar Hessian contains
+negative directions, so the point is a local maximum. The more general
+two-quartic potential still leaves the required and unwanted modes
+mass-degenerate by group theory.
+
+Casimir separation remains a useful target diagnostic, but does not by
+itself establish a high-scale adjoint mass matrix. The next calculation must
+derive either the conditional composite `(1_R,1_L,15_4)` or an expanded
+diagonal sector and then evaluate the actual potential contractions.
+
+## 2026-08-13 Pati–Salam Literature Re-Audit
+
+The scenario ledger required another correction. The general fundamental
+branch contains `Sigma=(2_R,2_L,1+15_4)` and obeys the published vacuum
+no-go. The constrained composite branch, however, does contain a
+weak-singlet `(1_R,1_L,15_4)` when quark–lepton coupling unification is not
+imposed. Its status is conditional because the larger fields are composite
+products, the reduction follows a first-order restriction on the Standard
+Model subalgebra, and the RG treatment explicitly left composite and
+post-breaking effects open.
+
+The real-singlet conclusion was also narrowed. A decoupled project singlet
+or a single universal mass shift cannot remove the degeneracy. A connected
+diagonal real singlet may generate additional mixed invariants and is a
+literature-suggested open extension, not a closed route.
+
+Finally, the project has not yet constructed an explicit Pati–Salam finite
+Hilbert/Dirac block. The next gate is therefore foundational: build that
+block, reproduce both literature branches in one convention, and only then
+test the composite adjoint and diagonal singlet potentials.
+
+## 2026-08-13 Explicit Pati–Salam Finite Dirac Block
+
+The missing representation-level project object is now explicit. One
+generation uses `V_R=(2_R,1_L,4_4)` and `V_L=(1_R,2_L,4_4)`, giving 16
+complex particle states and a 32-dimensional KO6 particle–antiparticle
+module. A block matrix with arbitrary `Y` and symmetric `M_R,M_L` passes
+self-adjointness, odd grading, reality and `J Gamma=-Gamma J` at machine
+precision.
+
+The channel decomposition exactly reproduces the general fundamental scalar
+ledger: `Y` gives `(2_R,2_L,1+15_4)`, `M_R` gives
+`(3_R,1_L,10_4)+(1_R,1_L,6_4)`, and `M_L` gives the left counterpart. The
+total general space has 136 complex components.
+
+The literature composite formulas were also instantiated. Their
+complexification has 27 complex coordinates; imposing a Hermitian adjoint
+condition gives 39 real degrees, versus 200 real components in general
+`Y+M_R`. The resulting Majorana block is exactly symmetric. This establishes
+the target matrix and compression, but not yet
+the first-order theorem. The next exact computation is the full versus
+SM-restricted double-commutator kernel.
+
+## 2026-08-13 Exact Pati–Salam First-Order Kernel
+
+The first-order double commutator has now been computed on the full
+272-real-dimensional KO6 Dirac space. For the full Pati–Salam algebra the
+kernel has dimension 8 and is exactly `Y=A tensor I4`, `M_R=M_L=0`: full
+first order enforces quark–lepton unification and removes Majorana channels.
+
+For the embedded Standard Model algebra the kernel has dimension 32. It
+contains independent lepton and quark `2 x 2` Yukawa blocks plus one
+16-real-dimensional symmetric right-Majorana channel carrying precisely one
+complex `(2_R,4_4)` Delta-like seed; `M_L` vanishes. Analytic kernel bases
+pass all algebra-basis pairs exactly, agree with numerical nullspaces, and
+remain representation-equivalent under four embedding conventions.
+
+This is a strong conditional pass rather than full closure. It recovers the
+seeds of the literature composite branch, but the nonlinear `Sigma_4` and
+`Delta Delta` fields require the generalized inner fluctuation and its
+quadratic `A_(2)` term. That calculation is now the next gate.
+
+## 2026-08-14 Pati–Salam Three-Node Parent Graph
+
+The rank-selector route has advanced from a desired correction to a minimal
+parent carrier. The graded chain
+`C -> C2 tensor C4 -> Lambda2(C2) tensor Lambda2(C4)` composes to
+`Lambda2 Delta`, so the two-step path measures exactly the sum of squared
+`2 x 2` minors. Its ordinary raw spectral trace contains a determinant term
+with positive coefficient throughout `0<c^2<8`.
+
+At canonical normalization the half-trace potential is
+`-7 rho/2 + 19 rho^2/8 + 7 det/2`. The rank-one branch lies below the
+rank-two branch, and its exact Hessian spectrum is
+`14 (1), 0 (9), 98/19 (6)`. A KO6 doubled chain and coarse order-one
+labels pass their combinatorial checks.
+
+The stricter associative-module audit closes the literal three-node finite
+triple. `Lambda2` is a valid group representation and its derivative is a
+valid Lie-algebra representation, but neither is a unital complex-linear
+representation of `M4(C)`. Moreover, every `M4(C)` module has dimension
+divisible by four, so the color-six endpoint cannot be a fermion node.
+
+The determinant mechanism is not discarded: `(1_R,6_4)` already exists as
+a scalar component of the symmetric Majorana channel on the established
+32-dimensional Hilbert module. The next gate is now the degree-two
+differential calculus: compute represented universal two-forms, quotient the
+junk ideal, and test whether the physical curvature isolates the wedge
+selector before recomputing the mixed Hessian.
+
+## 2026-08-14 Pati–Salam Two-Form/A2 Trilemma
+
+The first degree-two audit eliminates three direct realizations before the
+full junk computation. Represented ordinary two-forms are grading-even,
+whereas the wedge Majorana block is grading-odd; their Frobenius overlap is
+exactly zero, and quotienting even junk cannot change parity.
+
+The quadratic generalized fluctuation also splits sharply. The fixed
+physical seed always gives crossed reshuffle rank one, with second/first
+singular ratio below `6.7e-16`. Replacing it by a generic element of the
+16-real-dimensional SM Majorana kernel expands the quadratic image to all
+72 real dimensions of the complex symmetric `8 x 8` channel. The numerical
+rank gap is `3.31e14`: direct and wedge targets are present, but only together
+with every competing symmetric Majorana matrix.
+
+Thus ordinary two-form identification, physical-seed direct-path generation
+and generic-seed predictive selection are all closed. The remaining minimal
+route is the even gauge-singlet sector of the full degree-two quotient: its
+curvature norm may still contain `det(Delta Delta^dagger)` without carrying
+an odd color-six matrix. If that quotient is norm-only, the next admissible
+extension is vectorlike and uses only fundamental `4`/`4bar` modules.
+
+## 2026-08-14 Projected-Curvature Recovery
+
+The requested project archaeology found that the vectorlike fallback was
+already sketched in three older mechanisms. Combining the minimal
+superconnection carrier, relative endpoint projectors and fundamental-module
+messenger rules gives a valid chain `4bar -> 2_R -> 4`. Its two edges are
+`Delta` and `c Delta^T epsilon_2`, so the endpoint-to-endpoint curvature is
+the antisymmetric color-six matrix `c Delta^T epsilon_2 Delta`.
+
+The full ordinary quartic trace remains rank-blind at canonical normalization:
+`Tr D^4=4 rho^2`. The relative endpoint curvature is different:
+`||F_02||^2=4 c^2 det(Delta Delta^dagger)`. KO6 doubling preserves the
+physical half-norm, giving the exact coefficient four at `c=1`. Stability is
+robust for the interval `c^2>1/2`.
+
+This conditionally reopens the Pati-Salam vacuum route. It avoids a forbidden
+color-six algebra node and does not enlarge the color algebra. Full closure
+still requires the parent action to derive the endpoint curvature projector,
+fix or protect `c=1`, classify the auxiliary modules as physical or bosonic,
+and include their mixed Hessian and running effects.
+
+## 2026-08-14 Junk No-Go and Mapping-Cone Selector
+
+The two normalization ambiguities have now separated. The edge map
+`Delta -> Delta^T epsilon_2` is an exact Frobenius isometry, so a single
+reflection/reality-invariant trace-Hodge metric fixes `c=1` up to removable
+phase. This closes the continuous relative-edge normalization problem.
+
+The standard junk explanation fails in the minimal three-node calculus.
+For `C^3` on the path `0-1-2`, represented two-forms have rank 5, degree-two
+junk has rank 2, and both endpoint units `E_02,E_20` lie in that junk. Thus a
+full Pati-Salam computation may contain extra multiplicities, but no claim
+that junk automatically selects the endpoint path is allowed.
+
+The project has a canonical relative replacement. The path Laplacian has a
+unique lowest reflection-odd mode, normalized by graph distance to
+`h=(-1,0,1)`. The derivation `delta_h(F)=[h,F]/2` kills diagonal backtracking
+curvature and retains exactly the endpoint block, giving
+`||delta_h(D_Delta^2)||^2=4 det(Delta Delta^dagger)`. The remaining issue is
+now singular: derive why the physical parent action uses this relative
+mapping-cone norm rather than the full rank-blind curvature norm.
+
+## 2026-08-14 Relative Quotient and BV Fork
+
+The trace-preserving fixed-point quotient gives
+`||F-E_h(F)||^2=||[h,F]/2||^2=4 det(Delta Delta^dagger)` on even curvature.
+The standard physical module does not contain the relative chain, and
+contractible BV gauge-fixing pairs cannot change the classical vacuum.
+
+The remaining architecture fork is physical vectorlike versus classical
+mapping cone. The physical branch is anomaly-safe but misses the one-percent
+frozen-scale RG gate. The classical branch gives `lambda_rel=1` for one copy,
+but one-copy multiplicity is not yet derived. The next gate must select one
+branch and compute its complete mixed Hessian.
+
+## 2026-08-14 Irreducible Relative Cycle
+
+The coefficient-free classical branch now fixes its multiplicity. The
+one-copy connected chain has scalar generated commutant, whereas `k`
+identical copies leave `M_k(C)` and are reducible. Thus irreducibility selects
+`k=lambda_rel=1`. Nontrivial `k>1` models require new noncommuting copy-space
+operators and are separate finite geometries rather than unexplained copies.
+
+Keeping the fixed-point auxiliary curvature before elimination gives a
+52-real-dimensional Hessian with signature `(43 positive, 9 zero, 0
+negative)`. Its Schur complement is the exact effective Delta Hessian. The
+remaining scalar gate is now sharply limited to the KO6 embedding and the
+`phi/Sigma_4` mixed directions.
+
+## 2026-08-14 KO6 Completion and Full Composite Hessian
+
+The relative chain admits an exact 20-dimensional KO6 matrix completion and
+the physical half-trace preserves the coefficient `4`. However, treating
+this module as an ordinary finite-Hilbert direct summand would add physical
+fermions; the non-propagating branch must remain a relative bosonic/KK cycle.
+
+The full scalar test is negative. At the rank-one Delta background the
+general Yukawa quadratic form is nonpositive. The project phi tangent has
+eight negative modes, the Hermitian traceless Sigma sector has fifteen flat
+modes, and all mixed blocks vanish. The combined signature is `(43 positive,
+24 zero, 8 negative)`. The next admissible route is a connected phi/Sigma
+interaction or a genuinely two-scale spectral action.
+
+## 2026-08-14 Relative Quotient Parent Action
+
+The graph height generates a circle action with trace-preserving conditional
+expectation `E_h` onto the block-diagonal fixed-point algebra. Eliminating a
+fixed-point auxiliary curvature gives
+`inf_C ||F-C||^2=||F-E_h(F)||^2`.
+
+On the even curvature space this equals
+`||[h,F]/2||^2=4 det(Delta Delta^dagger)`. With overall relative-sector
+weight `lambda_rel`, the six transverse Hessian eigenvalues are
+`sqrt(2)(4 lambda_rel-2)`, so stability requires `lambda_rel>1/2`.
+The next gate is to derive the auxiliary status, multiplicity and trace
+weight from the full relative spectral triple or BV complex.
+
+## 2026-08-14 BV Multiplicity Fork
+
+The carrier is not hidden in the standard 32-dimensional KO6 Pati-Salam
+module, and standard BV gauge-fixing auxiliaries cannot change the classical
+vacuum. A physical vectorlike chain is anomaly-safe and shifts the one-loop
+coefficients by `(-2/3,0,-4/3)`, but misses the one-percent frozen-scale gate.
+A non-propagating mapping-cone sector leaves running unchanged and gives
+`lambda_rel=1` for one copy, but one-copy multiplicity is not yet derived.
+The next decisive gate must select one branch and compute its mixed Hessian.
+
+## 2026-08-14 Project-Wide Pati-Salam Rescue Archaeology
+
+The common spectral-scale loophole is closed. For the full one-profile
+family `V_alpha=-(alpha/2)Tr D_F^2+(1/2)Tr D_F^4`, rank-one stationarity
+forces `||M_R||^2=alpha/2` and the exact Yukawa Hessian remains
+`-4 alpha ||Y||^2+8||M_R^dagger Y||^2 <= 0`. All eight negative phi modes
+scale linearly with `alpha`; all fifteen Sigma directions remain flat.
+
+The twisted-grand-symmetry clue was also narrowed. Its primary algebra has
+`M3(C)`, its scalar is a Majorana singlet and its vector is a spacetime
+Dirac fluctuation. It is not a full `SU(4)` adjoint Sigma mechanism.
+
+The surviving internal clue is the already normalized irreducible relative
+cycle. The next gate must classify mixed curvature invariants and test
+whether one canonical norm simultaneously yields a phi shift above the
+exact threshold, a full-rank Sigma Hessian and the correct Goldstone kernel.
+
+## 2026-08-14 Canonical Tensor-Product Coefficient
+
+The missing normalization has now been fixed. For the standard graded
+product `D_x=D1 tensor I+Gamma1 tensor D2`, the exact mixed contribution to
+`(1/2)Tr(D_x^4)` is `Tr(D1^2)Tr(D2^2)`. Odd self-adjoint completions thus
+give the coefficient `c=4`; KO6 doubling followed by the physical
+half-trace leaves it unchanged.
+
+This value is not a strict pass. Since the rank-one background gives
+`zeta=c/2`, the canonical product reaches `zeta=2` exactly and leaves four
+phi zero modes. Two identical copies would yield `c=8`, but their `M2(C)`
+copy commutant violates the established one-copy irreducibility condition.
+
+The remaining tensor branches are therefore narrow: a non-identical
+irreducible auxiliary factor with scalar joint commutant, or a derived
+higher spectral moment followed by complete radial restationarization.
+
+## 2026-08-14 Closure of the Current Pati-Salam Finite Geometry
+
+The higher-moment loophole is closed. For
+`V=-alpha t+P(t)`, stationarity gives `alpha=P'(t)`, while every
+canonical product portal gives `zeta=2P'(t)`. Hence the weak phi Hessian
+is exactly zero for any finite collection of D4, D6, D8 and higher moments.
+Weighted placements of one field return to `c=4` after canonical
+normalization.
+
+The remaining connected branch is also obstructed. The selected rank-one
+Delta vacuum supplies one color projector P. Every quadratic connected word
+containing P vanishes on the embedded su(3) adjoint in Q Sigma Q. The full
+connected Sigma span therefore has rank 7 of 15 and an exact
+eight-dimensional kernel. The complete connected phi span has rank 6 of 8.
+
+For a rank-r projector the unavoidable Sigma kernel has dimension
+`(4-r)^2-1`; full rank first occurs at r=3. The current Delta carrier has
+rank at most two and its determinant selector chooses rank one. Thus the
+current Tome IV finite geometry is closed. Any reopening requires a new
+diagonal carrier or several independent noncommuting projectors and belongs
+to Version V.
+
+## 2026-08-14 Old-Problem Rotation
+
+The strongest old branch is now the family-defect boundary bridge. It
+already has an exact-one tubular BdG kernel and a rank-two SO(3) family
+generator. The standalone family menu has twelve outside-D8 operators that
+generate full M3.
+
+Requiring the family operator to arise from a continuous SO(3) connection
+removes the orientation-reversing transposition candidates and leaves the
+eight three-cycles. This narrows the selector to four unoriented axes.
+However, the two existing Wilson axes are not exactly aligned with these
+axes, and the Wilson angle differs from 2 pi/3. The cross-bridge therefore
+reduces the menu but does not yet derive the discrete incidence operator.
+
+The next rotation gate is a single boundary superconnection acting on the
+sterile root line, charge-two pairing field and real family triplet. It must
+derive the root sector, condensed vortex and family axis before opening
+neutrino or flavour observables.
+
+## 2026-08-14 Vortex-Oriented Three-Cycle Lock
+
+The family-defect bridge now has an exact common zero locus. On the standard
+`S4` triplet, `|I3|<=1/sqrt(3)` and equality selects the eight oriented
+tetrahedral vertices. The zero-character condition `1+2 cos(theta)=0`
+independently fixes the three-cycle angle `theta=2 pi/3`.
+
+The joint nonnegative functional has four minima for each unit vortex
+winding. Positive and negative winding select inverse orientations, so the
+two topological sectors reproduce all eight three-cycles without naming a
+permutation. Every selected antisymmetric generator has rank two and leaves
+one real Majorana core mode. The normalized Hessian is positive with radial,
+angular and axis eigenvalues `8,6,6,6`.
+
+This is a conditional positive gate. The zero locus is coefficient-free, but
+the functional has not yet been derived as one boundary-superconnection
+supertrace. The next calculation must obtain the radial scale, character term
+and cubic winding-orientation coupling from a single graded curvature.
+
+## 2026-08-14 Projector Supercurvature Factorization
+
+The three-term zero-locus representative is not minimal. With
+`y=nu x`, winding orients the angle while the family axis lies in one
+positive tetrahedral orbit. Radial and axis equations combine into
+`Q(H)=H^2-H/sqrt(3)-I/4=0`.
+
+Equivalently, `J=sqrt(3)H-I/2` is an involution with trace `-2`, and
+`P=(I+J)/2` is rank one. The four solutions are the four primitive
+projectors of the affine menu. Each projector and two winding signs give
+the eight three-cycles. The twisted covariance law passes all 192 cases,
+and every triplet generator has nullity one.
+
+The remaining gap is narrower: construct one graded connection whose
+projected curvature is `Q(H)` and whose actual holonomy is the corresponding
+three-cycle rather than an external reconstruction rule.
+
+## 2026-08-14 Flat-Holonomy Realization
+
+The post-processing gap is closed at the constrained-saddle level. Contracting
+the affine singlet and projector-selected axis with the four-dimensional
+orientation tensor gives an antisymmetric generator `Omega(h)`. It kills the
+singlet and axis and squares to minus the transverse projector.
+
+The flat connection `A=-(nu/L)(2pi/3)Omega(h) ds` exponentiates exactly to
+the required three-cycle in all eight branches. It commutes with the same
+projector field, passes all 192 twisted covariance tests and restricts to a
+rank-two generator with one-dimensional Majorana kernel.
+
+The remaining question is dynamical rather than algebraic: derive
+`A=A(H,nu)` as an Euler-Lagrange equation of the same action that produces
+the projector supercurvature, without adding an independent enforcing
+multiplier.

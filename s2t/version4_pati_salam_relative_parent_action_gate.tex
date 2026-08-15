@@ -1,0 +1,157 @@
+\section{Relative quotient action}
+
+Предыдущий gate вывел каноническую derivation
+\(\delta_h(F)=\frac12[h,F]\), но оставил выбор её нормы внешним. Этот
+выбор можно устранить, если curvature рассматривается как относительный
+класс по отношению к fixed-point algebra трёхузловой цепи. Получающийся
+функционал является quotient norm, а не вручную выбранным matrix projector.
+
+\subsection{Fixed-point algebra и conditional expectation}
+
+Пусть
+\begin{equation}
+ h=\operatorname{diag}(-I_4,0_2,I_4)
+\end{equation}
+и
+\begin{equation}
+ \alpha_t(X)=e^{ith}Xe^{-ith}.
+\end{equation}
+Поскольку spectrum \(h\) целочислен, \(\alpha_t\) задаёт каноническое
+действие окружности. Его fixed-point algebra равна
+\begin{equation}
+ \mathcal B_h=\operatorname{Fix}(\alpha)
+ =\operatorname{End}(\bar4)\oplus
+  \operatorname{End}(2_R)\oplus\operatorname{End}(4).
+ \label{eq:ps-relative-fixed-algebra}
+\end{equation}
+Единственное сохраняющее обычный trace conditional expectation на
+\(\mathcal B_h\) имеет вид
+\begin{equation}
+ E_h(X)=\frac1{2\pi}\int_0^{2\pi}\alpha_t(X)\,dt.
+ \label{eq:ps-relative-expectation}
+\end{equation}
+В конечномерной Hilbert--Schmidt metric это ортогональная projection на
+block-diagonal fixed-point algebra.
+
+\subsection{Исключение общей auxiliary curvature}
+
+Определим относительное действие не на представителе \(F\), а на его классе
+в Hilbert quotient по \(\mathcal B_h\):
+\begin{equation}
+ S_{\rm quot}[F]
+ =\inf_{C\in\mathcal B_h}\|F-C\|_F^2.
+ \label{eq:ps-relative-quotient-action}
+\end{equation}
+Ортогональность даёт точное разложение
+\begin{equation}
+ \|F-C\|_F^2
+ =\|F-E_h(F)\|_F^2+\|E_h(F)-C\|_F^2.
+ \label{eq:ps-relative-pythagoras}
+\end{equation}
+Следовательно, минимум единственен:
+\begin{equation}
+ C_\star=E_h(F),
+ \qquad
+ \boxed{S_{\rm quot}[F]=\|F-E_h(F)\|_F^2.}
+ \label{eq:ps-relative-auxiliary-elimination}
+\end{equation}
+Тем самым relative norm возникает после algebraic elimination общей
+block-diagonal curvature. Непрерывный coefficient или дополнительный
+projector внутри quotient construction не вводится. Общий вес этого сектора
+относительно исходного Pati--Salam trace рассматривается отдельно ниже.
+
+\subsection{Совпадение с mapping-cone Dirichlet form}
+
+Для \(F=\mathcal D_\Delta^2\) parity запрещает nearest-neighbour blocks:
+остаются только diagonal backtracking blocks и endpoint blocks
+\(0\leftrightarrow2\). На этом чётном curvature space оператор
+\begin{equation}
+ Q_h=\frac14\operatorname{ad}_h^2
+\end{equation}
+имеет eigenvalue ноль на \(\mathcal B_h\) и eigenvalue единицу на endpoint
+blocks. Поэтому
+\begin{align}
+ F-E_h(F)&=Q_hF,\\
+ S_{\rm quot}[F]
+ &=\langle F,Q_hF\rangle_F
+ =\left\|\frac12[h,F]\right\|_F^2.
+ \label{eq:ps-relative-quotient-dirichlet}
+\end{align}
+Endpoint gap координаты \((-1,0,1)\) равен двум, поэтому factor \(1/4\)
+фиксирован нормировкой graph distance.
+
+Подстановка admissible Pati--Salam curvature даёт
+\begin{equation}
+ \boxed{
+ S_{\rm quot}[\mathcal D_\Delta^2]
+ =4\det(\Delta\Delta^\dagger).}
+ \label{eq:ps-relative-quotient-selector}
+\end{equation}
+
+\begin{theorem}[Canonical relative quotient action]
+На чётном curvature space цепи \(\bar4\to2_R\to4\) trace-preserving
+conditional expectation \(E_h\) однозначно задаёт quotient norm по
+fixed-point algebra. После нормировки endpoint graph distance к двум этот
+quotient norm совпадает с \(\|\frac12[h,F]\|_F^2\) и на
+\(F=\mathcal D_\Delta^2\) равен
+\(4\det(\Delta\Delta^\dagger)\).
+\end{theorem}
+
+\subsection{Gauge covariance и граница применимости}
+
+Block-diagonal Pati--Salam gauge transformations коммутируют с \(h\), поэтому
+\begin{equation}
+ E_h(UFU^\dagger)=UE_h(F)U^\dagger
+\end{equation}
+и \(S_{\rm quot}\) gauge invariant. Ограничение на even curvature
+существенно. На полном matrix space odd nearest-neighbour blocks имеют
+height gap единицу; там \(\frac14\operatorname{ad}_h^2\) имеет eigenvalue
+\(1/4\), тогда как \(I-E_h\) имеет eigenvalue единицу. Поэтому найденное
+тождество нельзя переносить на произвольный operator.
+
+\subsection{Vacuum consequence и общий вес}
+
+Пусть \(\lambda_{\rm rel}\) обозначает общий вес relative carrier в полном
+bosonic trace. Тогда composite potential принимает вид
+\begin{equation}
+ V_\Delta=-\rho^2+\tau^2
+ +4\lambda_{\rm rel}\det(\Delta\Delta^\dagger).
+\end{equation}
+На rank-one Standard-Model orbit exact Hessian spectrum равен
+\begin{equation}
+ 8\sqrt2\ (1),
+ \qquad
+ 0\ (9),
+ \qquad
+ \sqrt2(4\lambda_{\rm rel}-2)\ (6).
+ \label{eq:ps-relative-parent-hessian}
+\end{equation}
+Следовательно, устойчивость требует
+\begin{equation}
+ \lambda_{\rm rel}>\frac12.
+\end{equation}
+Для one-copy embedding в ту же normalized trace--Hodge metric
+\(\lambda_{\rm rel}=1\), и последние шесть eigenvalues равны
+\(2\sqrt2\). Quotient construction фиксирует внутренний coefficient четыре,
+но не доказывает сама по себе multiplicity и общий trace weight carrier.
+
+\begin{theorem}[Условное закрытие parent-norm gate]
+Свобода выбора projector и его внутренней normalization закрыта. Полное
+физическое замыкание требует вывести auxiliary/common status, multiplicity
+и общий trace weight \(\lambda_{\rm rel}\) из полного Pati--Salam relative
+spectral triple или BV complex, а затем пересчитать endpoint-state, mixed
+Hessian и gauge-running ledger.
+\end{theorem}
+
+\subsection{Литература и воспроизводимость}
+
+Relative spectral triples и boundary quotient data сверены с I.~Forsyth,
+M.~Goffeng, B.~Mesland and A.~Rennie, arXiv:1607.07143. Tracial conditional
+expectation сопоставлена с E.~A.~Carlen and A.~Vershynina,
+arXiv:1710.02409. Higher-derivative Yang--Mills terms spectral action
+сверены с W.~D.~van Suijlekom, arXiv:1104.5199. Конечномерная identity
+\eqref{eq:ps-relative-quotient-selector} является специализацией проекта.
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_relative_parent_action_gate.py} и
+\path{s2t_v4_pati_salam_relative_parent_action_gate_results.json}.

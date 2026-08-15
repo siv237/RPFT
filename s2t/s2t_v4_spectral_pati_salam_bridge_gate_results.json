@@ -1,0 +1,131 @@
+{
+  "gate": "version4_spectral_pati_salam_bridge",
+  "sources": [
+    "arXiv:1507.08161",
+    "arXiv:1905.04533",
+    "arXiv:hep-ph/0611196",
+    "arXiv:hep-th/0407014"
+  ],
+  "matching": "g3=g4, g2=gL, 1/gY^2=1/gR^2+2/(3 g4^2)",
+  "scenario_beta_coefficients_paper_convention": {
+    "composite": {
+      "R": 2.3333333333333335,
+      "L": 3.0,
+      "4": 10.333333333333334
+    },
+    "composite_plus_1_1_15": {
+      "R": 2.3333333333333335,
+      "L": 3.0,
+      "4": 9.0
+    },
+    "fundamental": {
+      "R": -8.666666666666666,
+      "L": -2.0,
+      "4": 2.0
+    },
+    "left_right_fundamental": {
+      "R": -8.666666666666666,
+      "L": -8.666666666666666,
+      "4": -1.3333333333333333
+    }
+  },
+  "fixed_project_breaking_scale": {
+    "origin": "existing one-loop SM g1=g2 crossing",
+    "scale_GeV": 10317136647571.07
+  },
+  "fixed_scale_results": {
+    "composite": {
+      "breaking_scale_GeV": 10317136647571.07,
+      "best_unification_scale_GeV": 1.53996124580921e+16,
+      "couplings_R_L_4": [
+        0.5071955160047775,
+        0.5232216052358131,
+        0.5071955174187863
+      ],
+      "relative_spread": 0.031268127280109644
+    },
+    "composite_plus_1_1_15": {
+      "breaking_scale_GeV": 10317136647571.07,
+      "best_unification_scale_GeV": 6.6419910884042984e+16,
+      "couplings_R_L_4": [
+        0.5044008688419572,
+        0.5192889551567372,
+        0.5044008905026867
+      ],
+      "relative_spread": 0.02922880069912213
+    },
+    "fundamental": {
+      "breaking_scale_GeV": 10317136647571.07,
+      "best_unification_scale_GeV": 2477550413300071.5,
+      "couplings_R_L_4": [
+        0.5707588260386556,
+        0.5558729913342804,
+        0.5707588176174788
+      ],
+      "relative_spread": 0.02630950306461295
+    },
+    "left_right_fundamental": {
+      "breaking_scale_GeV": 10317136647571.07,
+      "best_unification_scale_GeV": 1233262080397107.2,
+      "couplings_R_L_4": [
+        0.5637705847925744,
+        0.5923415825594103,
+        0.5923415560971105
+      ],
+      "relative_spread": 0.049022168645919684
+    }
+  },
+  "freely_optimized_breaking_scale_results": {
+    "composite": {
+      "breaking_scale_GeV": 42284608698932.38,
+      "best_unification_scale_GeV": 2417923723458694.0,
+      "couplings_R_L_4": [
+        0.5281142384807372,
+        0.5281142301130712,
+        0.5281142286138706
+      ],
+      "relative_spread": 1.8683205359116014e-08,
+      "breaking_scale_was_fitted": true
+    },
+    "composite_plus_1_1_15": {
+      "breaking_scale_GeV": 40541622012282.2,
+      "best_unification_scale_GeV": 5852522364447013.0,
+      "couplings_R_L_4": [
+        0.5256643853369999,
+        0.5256643836169781,
+        0.5256643853918145
+      ],
+      "relative_spread": 3.3763679647125195e-09,
+      "breaking_scale_was_fitted": true
+    },
+    "fundamental": {
+      "breaking_scale_GeV": 148968485531.2939,
+      "best_unification_scale_GeV": 5.566897257746773e+16,
+      "couplings_R_L_4": [
+        0.5892392939344512,
+        0.5892392949214519,
+        0.5892393043046185
+      ],
+      "relative_spread": 1.7599245876119023e-08,
+      "breaking_scale_was_fitted": true
+    },
+    "left_right_fundamental": {
+      "breaking_scale_GeV": 50822678252296.805,
+      "best_unification_scale_GeV": 2639763249386755.0,
+      "couplings_R_L_4": [
+        0.5768206982255,
+        0.5768206969894035,
+        0.5768206927316661
+      ],
+      "relative_spread": 9.52433550073885e-09,
+      "breaking_scale_was_fitted": true
+    }
+  },
+  "fixed_scale_spread_range": [
+    0.02630950306461295,
+    0.049022168645919684
+  ],
+  "passes_without_new_scale_fit": false,
+  "architecture_verdict": "Pati-Salam is a coherent spectral bridge candidate, but the existing project scale leaves 2.6-4.9 percent mismatch. Exact one-loop unification reappears only after choosing the intermediate scale, so the bridge is not yet a prediction.",
+  "next_gate": "derive the Pati-Salam breaking scale and a viable Pati-Salam-to-SM vacuum from the finite Dirac/scalar sector before rerunning gauge unification"
+}

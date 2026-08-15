@@ -1,0 +1,134 @@
+\chapter{Hessian-principle sign trilemma}
+
+Mapping-cone block Hessian точно воспроизводит coefficient
+\(-(1-c)/45\). Оставался вопрос, может ли information geometry сделать этот
+Hessian фундаментальным действием и тем самым законно удалить higher powers
+полного determinant. Проверим знак канонической Gaussian divergence.
+
+Пусть \(K_\varepsilon=K_0+\varepsilon V\) --- positive precision operator,
+а \(A=K_0^{-1}V\). Для zero-mean Gaussian measures KL divergence имеет
+expansion
+\begin{equation}
+ D_{\rm KL}(\varepsilon\|0)
+ =\frac{\varepsilon^2}{4}\Tr A^2+O(\varepsilon^3).
+ \label{eq:gaussian-kl-positive-hessian}
+\end{equation}
+Это Fisher metric, поэтому quadratic form неотрицательна.
+
+Для mapping-cone incidence
+\(b_\theta=(1-U_\theta)u\),
+\(\|b_\theta\|^2=2(1-c)\), и periodic trace
+\(\Tr{}'\widehat\Delta^{-2}=1/45\). Следовательно,
+\begin{equation}
+ [\varepsilon^2]D_{\rm KL}
+ =+\frac{1-c}{45},
+\end{equation}
+то есть каноническая information metric имеет знак, противоположный target.
+
+С другой стороны, real Gaussian free energy
+\begin{equation}
+ \Gamma(\varepsilon)=\frac12\log\det K_\varepsilon
+\end{equation}
+даёт
+\begin{equation}
+ [\varepsilon^2]\Gamma
+ =-\frac14\Tr A^2
+ =-\frac{1-c}{45},
+\end{equation}
+но её полный expansion содержит
+\begin{equation}
+ [\varepsilon^4]\Gamma
+ =-\frac{(1-c)^2}{4725}\ne0.
+\end{equation}
+
+Таким образом, relative entropy и logdet являются двумя сторонами одного
+локального вычисления: positive KL Hessian равен минусу concave logdet
+Hessian. Нельзя одновременно называть нужный отрицательный functional
+Fisher metric и сохранять positivity.
+
+Литературно positivity является не дополнительным предположением. Hessian
+quantum relative entropy задаёт Bogoliubov--Kubo--Mori monotone metric;
+современные формулировки и Gaussian-state приложения представлены, например,
+в arXiv:2404.09600 и arXiv:1609.07279. Log-det divergences на positive
+matrices также порождают positive trace metrics после смены знака Hessian.
+
+\begin{theorem}[Hessian-principle sign trilemma]
+Минимальное меню имеет три исхода:
+\begin{enumerate}
+ \item KL/Fisher/BKM Hessian является каноническим quadratic action, но даёт
+ \(+ (1-c)/45\);
+ \item Gaussian logdet даёт требуемый минус, но полный action содержит
+ обязательные higher powers;
+ \item isolated negative Hessian даёт target, но является новым
+ non-metric parent postulate.
+\end{enumerate}
+Поэтому standard information geometry не закрывает exact periodic primitive.
+\end{theorem}
+
+\begin{nogocriterion}[Signed-susceptibility reopening gate]
+Переоткрытие требует independently derived signed susceptibility, которая не
+обязана быть positive metric, либо infinite graded complex с доказанным
+all-orders cancellation. Нельзя менять знак Fisher metric или отбрасывать
+higher determinant terms ради совпадения с target.
+\end{nogocriterion}
+
+\section{Литературная коррекция: free-energy response не является metric sign error}
+
+Предыдущая trilemma верна только при требовании отождествить signed action с
+positive information metric. В linear-response thermodynamics используются
+два разных объекта:
+\begin{equation}
+ F''(0)=-\chi,
+ \qquad
+ \chi\ge0.
+\end{equation}
+Отрицательный Hessian free energy по external source является стандартным;
+положительной metric/susceptibility называется его минус. Поэтому
+\(- (1-c)/45\) не требует ``переворачивать Fisher metric''. Он может быть
+непосредственно free-energy response, тогда как \((1-c)/45\) является
+соответствующей susceptibility.
+
+Для block family \(K_\varepsilon\) точный объект
+\begin{equation}
+ \left.\frac12\frac{d^2}{d\varepsilon^2}
+ \log\det K_\varepsilon\right|_{\varepsilon=0}
+ =-\frac{1-c}{45}
+\end{equation}
+не зависит от quartic и higher coefficients. Они изменяют finite-source
+free energy \(F(\varepsilon=1)\), но не two-point response в
+\(\varepsilon=0\). Следовательно, вычисление Hessian не является
+``выбрасыванием'' членов, если заявляемая observable --- susceptibility
+kernel, а не полный determinant.
+
+Это стандартное различение подтверждается литературой. В arXiv:2302.13515
+second derivative free energy интерпретируется как static thermal
+susceptibility; arXiv:2312.03080 использует second angular derivative free
+energy как magnetotropic susceptibility. One-loop effective actions обычно
+организуются по числу внешних полей: arXiv:1505.03119 отдельно выводит полный
+quadratic-in-field-strength sector, не утверждая отсутствия higher-point
+terms. BKM geometry при этом остаётся positive Hessian Massieu/relative
+entropy potential, как обсуждается в arXiv:2212.12919.
+
+\begin{proposition}[Exact response reopening]
+Mapping-cone block Hessian является exact two-point free-energy response и
+не загрязняется higher determinant powers. Его отрицательный знак совместим
+со standard susceptibility convention. Поэтому sign route переоткрыта как
+response-functional conditional pass.
+\end{proposition}
+
+Остаётся более узкий parent gate. Нужно доказать, что искомый Wilson
+functional по определению является induced two-point stiffness
+\(F''(0)\), а \(\varepsilon\) --- канонически нормированный probe coupling
+primitive mapping-cone edge. Нельзя использовать этот аргумент для заявления
+о полном finite-source determinant.
+
+\begin{nogocriterion}[Response-to-action gate]
+Pass требует parent variational principle, в котором observable заранее
+определена как zero-source connected two-point response и входит в effective
+edge action с unit weight. Если физически требуется \(F(1)-F(0)\), higher
+powers обязательны и прежний no-go восстанавливается.
+\end{nogocriterion}
+
+Машинный audit сохранён в
+\path{s2t_v4_hessian_principle_sign_trilemma.py} и
+\path{s2t_v4_hessian_principle_sign_trilemma_results.json}.

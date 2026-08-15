@@ -1,0 +1,109 @@
+\chapter{Restricted Pati--Salam potential: representation correction}
+
+Casimir sensitivity предыдущей главы остаётся правильным необходимым
+условием, но первичный источник требует важной коррекции representation
+ledger. В general fundamental branch поле \(\Sigma\) имеет
+не квантовые числа \((1,1,1+15)\), а
+\begin{equation}
+ \boxed{\Sigma\sim(2_R,2_L,1+15_4).}
+\end{equation}
+То есть four-color adjoint находится внутри weak bidoublet.
+
+\section{\texorpdfstring{Почему high-scale \(\Sigma\)-VEV запрещён}{Почему high-scale Sigma-VEV запрещён}}
+
+Ненулевой VEV в неприводимом doublet-представлении \(SU(2)_L\) не имеет
+инвариантного направления относительно всей группы \(SU(2)_L\). Поэтому
+\begin{equation}
+ \langle\Sigma\rangle\neq0
+ \quad\Longrightarrow\quad
+ SU(2)_L\ \text{broken at the same scale}.
+\end{equation}
+Такой VEV не может играть роль промежуточного Pati--Salam breaking field,
+которое обязано сохранить weak \(SU(2)_L\) до electroweak scale.
+
+Нужный объект имеет квантовые числа
+\begin{equation}
+ S_{15}\sim(1_R,1_L,15_4),
+\end{equation}
+Такого independent adjoint general fundamental branch не даёт. Он, однако,
+возникает в constrained composite branch после first-order restriction на
+Standard Model subalgebra; его dynamical legitimacy требует отдельного gate.
+
+\section{Restricted potential и Hessian verdict}
+
+Канонический spectral potential имеет структуру
+\begin{align}
+ V(H,\dot H,\Sigma)={}&
+ -\frac{M^2}{2}\Tr(\dot H^2+\Sigma^2+H^2)\\
+ &+\frac{g^2}{4}\Tr\bigl(
+ 2\dot H^4+2H^4+4|\bar{\dot H}\Sigma|^2
+ +4|\bar H\Sigma|^2+|\Sigma\bar\Sigma|^2
+ +\text{mixed terms}\bigr).
+\end{align}
+Поскольку \(H\) и \(\Sigma\) не могут получать high-scale VEV, breaking
+возлагается на neutral component \(\dot H\). Разность размерностей групп
+требует ровно
+\begin{equation}
+ (3+3+15)-(8+3+1)=9
+\end{equation}
+Goldstone modes. Потенциал действительно даёт эти девять modes, но вместе с
+ними остаются ещё шесть massless components \(3_A\oplus\bar3_A\), а прочие
+scalar directions имеют отрицательные mass squares. Следовательно,
+кандидатная точка имеет минимум пятнадцать нулевых directions и отрицательные
+Hessian eigenvalues: это local maximum, не vacuum.
+
+Даже общий quartic menu
+\begin{equation}
+ -\frac{M^2}{2}\Tr(\bar{\dot H}\dot H)
+ +\frac{\lambda_1}{4}\Tr|\bar{\dot H}\dot H|^2
+ +\frac{\lambda_2}{4}\bigl(\Tr|\bar{\dot H}\dot H|\bigr)^2
+\end{equation}
+не разделяет required leptoquark Goldstone и unwanted \(3_A\): group theory
+даёт им одинаковое взаимодействие с breaking VEV.
+
+\begin{theorem}[Restricted-potential no-go]
+Текущий general fundamental spectral Pati--Salam field menu не содержит
+independent high-scale \((1,1,15)\)-VEV. Breaking только через \(\dot H\) даёт девять
+required и шесть unwanted massless modes вместе с отрицательными Hessian
+directions. Поэтому найденный \(1+15\) Casimir direction не реализуется
+внутри general fundamental potential. Теорема не закрывает constrained
+composite branch или расширенную geometry.
+\end{theorem}
+
+\section{Fermion-mass gate}
+
+\(\Sigma\) соединяет right- и left-handed fermions. Поэтому high-scale VEV
+его bidoublet components не только ломал бы \(SU(2)_L\), но и порождал бы
+Dirac masses общего high scale. Это независимо запрещает использовать
+\(\Sigma\) как скрытый adjoint connector.
+
+\section{Исправленное улучшение модели}
+
+Предыдущий вывод следует читать так:
+\begin{itemize}
+ \item Casimir values различаются на \(2\); это доказывает различимость
+ representations, но не mass splitting конкретного VEV;
+ \item general fundamental \(\Sigma\) не является таким true adjoint;
+ \item composite branch содержит adjoint, но пока не выводит его как
+ законный spontaneous remnant общего model;
+ \item connected diagonal real singlet остаётся открытым extension.
+\end{itemize}
+
+Минимальное новое требование --- получить из одного явного project finite
+Dirac operator:
+\begin{enumerate}
+ \item weak-singlet \((1_R,1_L,15_4)\);
+ \item invariants \((\Tr\dot H^2)^2\) и
+ \(\Tr(\dot H^2)\Tr(S_{15}^2)\);
+ \item отсутствие high-scale masses для observed left-handed fermions;
+ \item positive Hessian вне девяти точных Goldstone directions;
+ \item scale equation до gauge-running test.
+\end{enumerate}
+
+Если ни dynamically derived composite adjoint, ни connected diagonal-sector
+extension не дают suitable vacuum, spectral Pati--Salam ветвь закрывается
+как minimal improvement.
+
+Машинный ledger сохранён в
+\path{s2t_v4_pati_salam_restricted_potential_gate.py} и
+\path{s2t_v4_pati_salam_restricted_potential_gate_results.json}.

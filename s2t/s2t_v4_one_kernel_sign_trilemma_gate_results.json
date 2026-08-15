@@ -1,0 +1,23 @@
+{
+  "gate": "version4_one_kernel_sign_trilemma",
+  "date": "2026-08-11",
+  "time": 0.10673403995964642,
+  "scale_identity": "Lambda*sigma=1",
+  "scalar": {
+    "trace_S4": 1.6196427172232761,
+    "trace_S2xS2": 1.456298925138692,
+    "bare_winner": "S2xS2",
+    "Gibbs_S4": -4.51782374375683,
+    "Gibbs_S2xS2": -3.5218214786154376,
+    "Gibbs_winner": "S4"
+  },
+  "Dirac": {
+    "trace_S4": 1.1395014997740136,
+    "trace_S2xS2": 1.1740832986296905,
+    "bare_winner": "S4",
+    "Gibbs_S4": -1.2235167517374577,
+    "Gibbs_S2xS2": -1.503622197620748,
+    "Gibbs_winner": "S2xS2"
+  },
+  "verdict": "one trace and minus-log trace have opposite carrier minima"
+}

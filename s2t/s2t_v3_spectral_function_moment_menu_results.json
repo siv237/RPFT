@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "spectral_function_menu_does_not_select_unique_moment",
+  "moment_convention": {
+    "f0": "f(0)=1",
+    "f2": "integral_0_infinity f(u) du"
+  },
+  "menu": {
+    "sharp": {
+      "f2_over_f0": "1",
+      "chiR_squared_at_LambdaR_1": "1/2",
+      "vacuum_pass_at_LambdaR_1": true,
+      "LambdaR_threshold": "sqrt(2)/2"
+    },
+    "heat": {
+      "f2_over_f0": "1",
+      "chiR_squared_at_LambdaR_1": "1/2",
+      "vacuum_pass_at_LambdaR_1": true,
+      "LambdaR_threshold": "sqrt(2)/2"
+    },
+    "gauss": {
+      "f2_over_f0": "sqrt(pi)/2",
+      "chiR_squared_at_LambdaR_1": "-1/2 + sqrt(pi)/2",
+      "vacuum_pass_at_LambdaR_1": true,
+      "LambdaR_threshold": "pi**(-1/4)"
+    },
+    "heat2": {
+      "f2_over_f0": "2",
+      "chiR_squared_at_LambdaR_1": "3/2",
+      "vacuum_pass_at_LambdaR_1": true,
+      "LambdaR_threshold": "1/2"
+    }
+  },
+  "continuous_heat_family": {
+    "profile": "exp(-a u)",
+    "moment": "1/a",
+    "invariant": "LambdaR**2/a",
+    "shape_cutoff_degeneracy": true
+  },
+  "verdict": {
+    "unique_chiR_from_natural_menu": false,
+    "remaining_train_combination": "zeta_mom=(f2/f0)*(Lambda R)^2",
+    "next_gate": "physical representation and readout"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "gate": "version4_radial_pfaffian_hessian",
+  "self_adjoint_radial_pfaffian": {
+    "det_chiral_minus": "r^2 (2r+exp(i theta)) exp(-3 i theta)/2",
+    "modulus_squared_minus": "r^4 (r^2+r cos(theta)+1/4)"
+  },
+  "full_trace_d2": "12*exp(2*sigma) + 28",
+  "full_trace_d4_minus": "12*exp(4*sigma) + 32*exp(2*sigma) - 8*exp(sigma)*cos(theta) + 60",
+  "mu_squared_over_lambda_for_unit_vacuum": "13/3",
+  "bosonic_hessian_sigma_theta": "Matrix([[104, 0], [0, 8]])",
+  "reduced_pfaffian_hessian_sigma_theta": "Matrix([[-2/9, 0], [0, 2/9]])",
+  "full_pfaffian_hessian_sigma_theta": "Matrix([[-4/9, 0], [0, 4/9]])",
+  "mixed_hessian_entries_zero": true,
+  "orientation_susceptibility": 0.6756945730425059,
+  "critical_lambda": {
+    "reduced": 0.05668404385253546,
+    "full_ko6": 0.028906266074757686
+  },
+  "unit_lambda_angular_curvature": {
+    "reduced": 7.5465276491797155,
+    "full_ko6": 7.768749871401939
+  },
+  "global_minima_at_unit_lambda": {
+    "reduced": {
+      "value": -78.84023383885007,
+      "radius": 1.0242618721723122,
+      "theta": -4.440892098500626e-16,
+      "orientation_amplitude": -4.54863645492548e-16
+    },
+    "full_ko6": {
+      "value": -78.93309280611915,
+      "radius": 1.0461992377490819,
+      "theta": -4.440892098500626e-16,
+      "orientation_amplitude": -4.646057928377276e-16
+    }
+  },
+  "radial_mode_generates_quadratic_orientation_mixing": false,
+  "flavour_test_reached": false,
+  "verdict": "the exact radial extension is stable but its Hessian is diagonal; at canonical quartic normalization the vacuum remains CP even and supplies no new flavour branch"
+}

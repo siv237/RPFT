@@ -1,0 +1,129 @@
+\chapter{Spectral Pati--Salam bridge: архитектурный gate}
+
+Предыдущие проверки показывают устойчивый рисунок. Локальные дискретные
+отношения, fixed-scale спектры и low-rank Hessian-инварианты часто
+воспроизводятся, тогда как совместное замыкание \(g_1,g_2,g_3\) требует
+representation-dependent передачи между масштабами. Поэтому следующий шаг
+должен менять не отдельную цифру, а высокоэнергетический слой модели.
+
+\section{Почему проверяется именно этот мост}
+
+В spectral Pati--Salam модели конечная алгебра приводит к группе
+\begin{equation}
+ SU(2)_R\times SU(2)_L\times SU(4),
+\end{equation}
+а допустимое scalar content определяется конечным Dirac operator, а не
+произвольным списком threshold states. На промежуточном масштабе
+\(m_R\) matching имеет вид
+\begin{equation}
+ g_3=g_4,
+ \qquad g_2=g_L,
+ \qquad
+ \frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{2}{3g_4^2}.
+ \label{eq:ps-bridge-matching}
+\end{equation}
+Это минимальная родственная модификация: она сохраняет спектральную логику
+успешной части проекта и добавляет один структурированный UV bridge вместо
+трёх независимых поправок.
+
+\section{Blind test уже имеющегося масштаба}
+
+Чтобы не получить unification подгонкой, фиксируем
+\begin{equation}
+ m_R=1.0317137\times10^{13}\,\mathrm{GeV},
+\end{equation}
+то есть уже найденный в Standard Model crossing \(g_1=g_2\). Затем для
+четырёх scalar scenarios из spectral Pati--Salam литературы варьируется
+только верхний scale \(\Lambda\). Результат:
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+scenario & best \(\Lambda\), GeV & relative spread \\
+\midrule
+composite & \(1.54\times10^{16}\) & \(3.13\%\) \\
+composite + \((1,1,15)\) & \(6.64\times10^{16}\) & \(2.92\%\) \\
+fundamental & \(2.48\times10^{15}\) & \(2.63\%\) \\
+left--right fundamental & \(1.23\times10^{15}\) & \(4.90\%\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Ни один scenario не проходит даже мягкий one-percent gate. Следовательно,
+прежний crossing нельзя просто переименовать в Pati--Salam scale.
+
+\section{\texorpdfstring{Что происходит при свободном выборе \(m_R\)}{Что происходит при свободном выборе mR}}
+
+Если разрешить выбирать \(m_R\) по условию unification, пересчёт
+воспроизводит известные scales:
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+scenario & fitted \(m_R\), GeV & \(\Lambda\), GeV \\
+\midrule
+composite & \(4.23\times10^{13}\) & \(2.42\times10^{15}\) \\
+composite + \((1,1,15)\) & \(4.05\times10^{13}\) & \(5.85\times10^{15}\) \\
+fundamental & \(1.49\times10^{11}\) & \(5.57\times10^{16}\) \\
+left--right fundamental & \(5.08\times10^{13}\) & \(2.64\times10^{15}\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+Это показывает, что механизм способен свести couplings, но пока не
+предсказывает масштаб разрыва.
+
+\begin{theorem}[Архитектурный диагноз]
+Наиболее экономное улучшение текущей модели --- не новый универсальный
+коэффициент, а spectral Pati--Salam transmission layer. Однако он становится
+физическим результатом только если конечный Dirac/scalar sector независимо
+выводит \(m_R\), допустимый vacuum Pati--Salam\(\to\)SM и соответствующий
+scalar scenario.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет unification-fit]
+Нельзя выбирать \(m_R\) из условия пересечения трёх couplings, а затем
+объявлять это пересечение предсказанием. Сначала должны быть вычислены
+\(m_R\) и vacuum из parent action; только после заморозки этих данных
+разрешается blind RG test.
+\end{nogocriterion}
+
+\section{Следующий decisive gate}
+
+Порядок работы теперь фиксирован:
+\begin{enumerate}
+ \item построить конечный Pati--Salam Dirac block, совместимый с уже
+ сохранённым low-energy representation content;
+ \item вычислить scalar potential и проверить существование устойчивого
+ Pati--Salam\(\to\)SM vacuum;
+ \item получить \(m_R\) из этого vacuum или независимого тяжёлого
+ right-neutrino saddle без gauge-data fit;
+ \item заморозить scenario и повторить one-/two-loop RG с threshold matching.
+\end{enumerate}
+
+Пункт 2 обязателен: опубликован отдельный no-go, согласно которому scalar
+potential одной spectral Pati--Salam реализации не даёт подходящего vacuum.
+Generic five-dimensional KK repair не является предпочтительной заменой:
+его threshold corrections легко становятся зависимыми от moduli и UV
+operators. Шестимерная anomaly-constrained конструкция потенциально
+предсказательнее, но это уже более крупная архитектурная ветвь и потому
+оставляется резервом после Pati--Salam gate.
+
+\section{Литература и воспроизводимость}
+
+Использованы следующие первичные источники:
+\begin{enumerate}
+ \item A.~H.~Chamseddine, A.~Connes, W.~D.~van Suijlekom,
+ \emph{Grand Unification in the Spectral Pati--Salam Model},
+ arXiv:1507.08161;
+ \item H.~Karimi Khozani,
+ \emph{Symmetry Breaking and Proton Decay in Spectral Pati--Salam Model},
+ arXiv:1905.04533;
+ \item H.~M.~Lee, \emph{Gauge Coupling Unification in Six Dimensions},
+ arXiv:hep-ph/0611196;
+ \item A.~Hebecker, A.~Westphal,
+ \emph{Gauge Unification in Extra Dimensions: Power Corrections vs.
+ Higher-Dimension Operators}, arXiv:hep-th/0407014.
+\end{enumerate}
+
+Машинный расчёт сохранён в
+\path{s2t_v4_spectral_pati_salam_bridge_gate.py}, а полный ledger --- в
+\path{s2t_v4_spectral_pati_salam_bridge_gate_results.json}.

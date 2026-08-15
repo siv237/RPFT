@@ -6,6 +6,23 @@
 
 This is the navigation catalog for the project wiki. Read this file first before answering research questions or ingesting new sources.
 
+## Latest Version IV Audit
+
+- [[version4-tome-conclusion]] — final objective-by-objective audit: mathematical program retained, Version IV physical closure failed, and Version V entry conditions frozen.
+- [[version4-family-defect-ko6-quiver-embedding-gate]] — embeds the quiver in an explicit KO6/order-one geometry but closes the ordinary spectral-action route by the opposite mixed quartic sign.
+- [[version4-family-defect-relative-auxiliary-moment-gate]] — closes the naive mapping-cone and strict SO(3) D-term routes, while retaining a coefficient-free self-adjoint auxiliary realization whose degree-two origin remains open.
+- [[version4-family-defect-relative-auxiliary-moment-gate]] — corrects the strict SO(3) moment-map interpretation and shows that the algebraic auxiliary identity needs either a degree-two curvature origin or an imaginary Hubbard–Stratonovich quantum contour.
+- [[version4-family-defect-quiver-moment-map-gate]] — derives the exact pairing ratio from a normalized middle-node quiver moment map and finds a stable unit-momentum condensate.
+- [[version4-family-defect-gauge-family-locking-gate]] — closes the gauge/global axis fork with a real bifundamental lock and isolates the underived pairing moment-map square.
+- [[version4-family-defect-tetrahedral-residual-bundle-gate]] — identifies the cubic `Z3` transition as the exact projector stabilizer inside the tetrahedral `A4` carrier and isolates the gauge/global fork.
+- [[version4-family-defect-cubic-root-action-gate]] — derives the projector-dependent connection by varying one common-trace root-frame action; the remaining gap is the condensate and bundle embedding.
+- [[version4-family-defect-holonomy-realization-gate]] — realizes every selected three-cycle as the exact holonomy of a canonical projector-dependent flat connection.
+- [[version4-family-defect-projector-supercurvature-gate]] — factors condensate and tetrahedral-axis selection into one shifted-square curvature and reconstructs all eight winding-oriented three-cycles.
+- [[version4-family-defect-three-cycle-lock-gate]] — vortex winding and the cubic `S4` invariant select exactly the eight oriented three-cycles while preserving one Majorana core mode.
+- [[version4-quantized-rotor-rollback-recovery]] — restores the exact Wilson coefficient pair lost after shell synchronization rollback.
+- [[version4-wilson-defect-parent-superconnection-gate]] — common-superconnection and representation-weight audit closing the minimal Wilson--defect parent bridge.
+- [[version4-tome2-red-door-reverse-audit]] — scope audit of Tome II no-go nodes; isolates the surviving Wilson--defect and quadratic T3R parent classes without restoring physical predictions.
+
 ## Core Syntheses
 
 - [[k1-k14-loop-reverse-audit-2026-08-07]] — batch verdict for fourteen proposed routes and the inverse-power reverse test; only K6 and K13 remain high-value action-level candidates.
@@ -45,6 +62,11 @@ This is the navigation catalog for the project wiki. Read this file first before
 - [[su5-rank-selector-gate]] — SU(5) adjoint ranks uniquely reconstruct the atlas strong-coupling and Weinberg coefficients up to charge conjugation.
 - [[su5-action-relative-determinant-gate]] — canonical trace and scheme-safe determinant gates reject the rank selector as a low-energy gauge derivation.
 - [[project-overview]] — high-level map of the RPFT / UGSM / TOE research program and its current working hypothesis.
+- [[project-retrospective-source-audit-2026-08-11]] — full-corpus rereading that separates three entropy principles and identifies the unexecuted TOE 6.5 spectral-density program.
+- [[project-negative-space-audit-2026-08-11]] — assumption-level audit of dead ends, including the forgotten nontrivial circle bundle and the missing full-field carrier determinant.
+- [[full-field-carrier-scheme-obstruction-2026-08-11]] — proves that finite Einstein, Weyl-squared and Euler couplings must be fixed before a cross-topology determinant can select a carrier.
+- [[gaussian-bare-topology-measure-2026-08-11]] — conditional positive reopening using the exact Gaussian spin-Dirac spectral action.
+- [[project-success-tree-2026-08-11]] — visual tree of proved branches, conditional routes, dead ends and final kill-gates.
 - [[toe-ugsm-bridge]] — synthesis of the bridge between TOE-style correlation language and UGSM-style spectral geometry.
 - [[s2t-closure-roadmap]] — closure-status map for S2T claims, evidence files, and remaining proof gaps.
 - [[tome2-proof-chain]] — proof-chain extraction for Tome II successful and partial closures.
@@ -72,6 +94,9 @@ This is the navigation catalog for the project wiki. Read this file first before
 
 ## Open Questions
 
+- [[version4-spin-branch-mass-stationarity-gate]] — exact monotonicity closes the periodic/AP determinant ratio as a nonzero scale selector.
+- [[zero-prompt-toe-carrier-trace-2026-08-11]] — retrospective source audit showing that `K=RP3 x S1` is not derived by TOE and motivating variational carrier selection.
+- [[version4-spin-sum-measure-gate]] — the antiperiodic determinant branch is ranked lower, but the current parent action does not derive a sum over spin structures or its weights.
 - [[bl-defect-action-global-consistency-gate]] — global bundle audit of the proposed B-L action; the torsion twist makes the Yukawa vertex odd and removes the claimed half shift.
 - [[formalize-common-source]] — how to turn the spectral-correlational source from working hypothesis into a mathematically constrained object.
 - [[neutrino-overlap-lemma]] — proof target for the missing S2T neutrino overlap factor.
@@ -145,6 +170,100 @@ This is the navigation catalog for the project wiki. Read this file first before
 
 - [[family-connection-defect-gap-bridge]] — derives the antisymmetric core operator from a real SO(3) bulk connection and proves an exact-one kernel in the separable tubular model.
 
+- [[version3-bf-aksz-pairing-gate]] — pure topological pairing no-go for the positive two-sector Hessian.
+- [[version3-conditional-expectation-gate]] — factor-measure pass and doubled-module obstruction.
+- [[version3-minimal-finite-algebra-gate]] — derives the doubled module from C plus C and isolates the first-order mixing obstruction.
+- [[version3-real-bimodule-square-gate]] — minimal J-stable Krajewski square with a first-order vertex, KO6 doubling requirement and open edge-parameter orbit.
+- [[version3-automorphism-halftrace-gate]] — proves the continuous edge-orbit obstruction and gives a conditional KO6 reality-orbit half-trace.
+- [[version3-finite-dirac-parent-potential-gate]] — stable unitary-flattening selector for equal edge moduli and maximal CP phase, with open physical scale and CP sign.
+- [[version3-absolute-scale-no-go]] — proves that the scale-free geometry fixes only dimensionless combinations and requires a dilaton, transmutation or explicit scale input.
+- [[version3-dilaton-radion-transmutation-gate]] — classical dilaton no-go and the surviving Coleman--Weinberg joint radion/finite-Dirac candidate.
+- [[version3-finite-zero-mode-supertrace-gate]] — positive finite Coleman--Weinberg seed 23/(8 pi^2), with open kinetic normalization and KK/gauge completion.
+- [[version3-product-heat-kernel-kappa-gate]] — derives kappa=2 from a4 and corrects the finite seed to 5/(8 pi^2).
+- [[version3-gauge-ghost-kk-completion-gate]] — isolates the nonnegative gauge contribution and proves that the KK sign awaits a full fluctuated product/BV complex.
+- [[version3-fluctuated-product-bv-complex-gate]] — constructs the local product lift, derives the relative U(1), and reduces the gauge mass to the canonical coupling.
+- [[version3-a4-gauge-coupling-gate]] — derives g squared = 3/8 and closes the finite plus gauge zero-mode coefficient at 67/(64 pi^2).
+- [[version3-dimensional-product-consistency-gate]] — separates base-K from internal-K interpretations and blocks a double-counted KK sum.
+- [[version3-dual-architecture-verdict-gate]] — tests both paths: base-K remains scheme-dependent, while every flat internal spinor lift has empty kernel.
+- [[version3-base-k-spectral-renormalization-gate]] — tests zeta, geometric-scale and cutoff prescriptions and isolates one unavoidable scale-setting condition.
+- [[version3-rg-anomaly-scale-setting-gate]] — proves that fixed points and trace anomaly do not remove the single RG integration scale.
+- [[version3-one-scale-blind-scorecard-gate]] — preregisters one scale, lists genuine dimensionless outputs, and exposes the missing physical readout.
+- [[version3-external-redteam-convention-audit]] — resolves the factor-two challenge, confirms BV/gauge/Lichnerowicz results, and corrects the proposed heat-kernel indexing.
+- [[version3-compact-a2-a4-moment-gate]] — computes the curved scalar coefficients and reduces the bare scale freedom to one spectral-moment combination.
+- [[version3-spectral-function-moment-menu-gate]] — tests natural cutoff profiles and proves the continuous moment-cutoff degeneracy.
+- [[version3-representation-readout-gate]] — derives the anomaly-free hidden-sector interpretation and rejects a direct Standard Model readout.
+- [[version3-cross-tome-closure-audit]] — integrates Tomes I–II, preserves the kinetic normalization, and separates hidden completion from observed-sector reconstruction.
+- [[version3-orbit-measure-pfaffian-gate]] — derives the fermion half-count from the Pfaffian while restoring the full bosonic spectral trace.
+- [[version3-portal-menu-gate]] — exhausts renormalizable portals and proves exact decoupling for the minimal direct-sum completion.
+- [[version3-final-status-freeze]] — freezes Version III.H as a mathematically closed one-scale hidden EFT without observed-world claims.
+- [[version4-observed-reconstruction-roadmap]] — opens the observed-sector reconstruction with representation, anomaly, RG and two-sector blind gates.
+- [[version4-finite-algebra-menu-gate]] — finds the minimal quaternionic finite-algebra baseline for the local Standard Model gauge Lie algebra.
+- [[version4-bimodule-multiplicity-gate]] — derives the minimal generation atom while proving that the generation count remains free.
+- [[version4-frozen-k-family-selector-gate]] — proves that the canonical invariants of RP3 x S1 do not select three generations.
+- [[version4-affine-family-carrier-gate]] — obtains a canonical rank-three family carrier from the full affine symmetry of the four-state torsor.
+- [[version4-rank-one-breaking-gate]] — derives a one-heavy/two-light leading texture and proves the commuting-factor CKM no-go.
+- [[version4-incidence-operator-menu-gate]] — finds 12 minimal full-M3 mixing directions while proving the absence of a geometric selector.
+- [[version4-quadratic-parent-selector-gate]] — proves that quadratic geometric scores leave paired commuting minima and cannot generate CKM.
+- [[version4-cross-sector-cp-gate]] — classifies all sector pairs and proves the CP no-go for the real symmetric incidence menu.
+- [[version4-orientation-odd-cp-gate]] — shows that directed-cycle quadratures lift degeneracy but still give zero physical Jarlskog invariant.
+- [[version4-spectral-gauge-normalization-gate]] — derives the canonical gauge-coupling ratio and proves the minimal one-loop triple-matching no-go.
+- [[version4-higgs-yukawa-gate]] — derives the one-doublet Yukawa graph and isolates the remaining flavour and portal freedom.
+- [[version4-boundary-connector-menu-gate]] — proves the restricted single-connector no-go and isolates a two-path vectorlike triplet cycle.
+- [[version4-vectorlike-messenger-chain-gate]] — constructs an anomaly-safe one-sector chain, derives the two-path phase, and isolates the four-representation obstruction.
+- [[version4-unified-messenger-gate]] — finds an SO(10)-type unified messenger package and proves its complete-multiplet one-loop running no-go.
+- [[version4-boundary-threshold-splitting-gate]] — proves anomaly cancellation of linear generator splitting and isolates a conditional quadratic T3R threshold branch.
+- [[version4-order-one-krajewski-square-gate]] — replaces the forbidden triangular connector by a J-compatible square, preserves a maximal loop phase and isolates full-M3 family freedom.
+- [[version4-family-square-spectral-selector-gate]] — restricts family edges to rank-one plus incidence data and spectrally selects the four-element transposition orbit.
+- [[version4-cross-sector-transposition-orbit-gate]] — reduces the four minima to three relative up/down classes and proves the unit-amplitude CP and mixing no-go.
+- [[version4-common-updown-krajewski-loop-gate]] — derives the cross-word from one J-paired rectangle, removes the commuting orbit and leaves a two-branch CP-even fork.
+- [[version4-orientation-spectral-no-go]] — proves exact isospectrality of the final two branches and closes every real-even bosonic spectral selector.
+- [[version4-pfaffian-eta-orientation-gate]] — finds opposite reduced Pfaffian signs but proves their cancellation in the full KO6 measure and isolates the determinant-line gap.
+- [[version4-determinant-line-inflow-gate]] — trivializes the Pfaffian line, constructs a zero-free path between branches and closes anomaly inflow inside the vectorlike model.
+- [[version4-algebra-embedding-weighted-selector-gate]] — exposes coarse unitary equivalence, promotes family embedding and finds a conditional P-minus-weighted orientation selector.
+- [[version4-conditional-weight-origin-gate]] — closes the vectorlike shortcut and shows that complementary conditional corners select opposite branches.
+- [[version4-variational-family-state-gate]] — varies over all family states and obtains the first parameter-free dynamic selection of the plus orientation branch.
+- [[version4-yukawa-operator-map-gate]] — finds a coefficient-free CP-capable readout but proves that the selected geometry does not uniquely determine the four physical Yukawa maps.
+- [[version4-inner-fluctuation-yukawa-gate]] — proves that small family algebras exclude the CP-capable map while full M3 contains it only with arbitrary Yukawa freedom.
+- [[version4-state-anchored-bimodule-gate]] — selects a canonical five-dimensional one-form module and a coefficient-free CP-nonzero Yukawa map from the variational family state.
+- [[version4-relative-krajewski-star-gate]] — derives the support module from a unique minimal relative graph and proves that factorization leaves only two Yukawa textures.
+- [[version4-gauge-casimir-family-split-gate]] — obtains four RG-separated family anchors from gauge Casimirs but records a failed quark flavour readout.
+- [[version4-one-ratio-family-functional-gate]] — trains one shared quadratic/quartic ratio on masses and proves a blind CKM and simultaneous factor-ten failure.
+- [[version4-sector-torsor-incidence-gate]] — identifies the four minima with a sector K2,2 and closes every oriented vertex-incidence cocycle by a mass-train/CKM-blind test.
+- [[version4-toe-native-s4-carrier-candidate-gate]] — abandons fixed RP3 x S1 and conditionally selects round S4 from a coefficient-free positive-Einstein spin shortlist.
+- [[version4-s4-s2xs2-correlation-purity-gate]] — shows that unit-volume S4 has larger Gaussian Rényi-2 correlation entropy than the surviving S2 x S2 competitor.
+- [[version4-gibbs-free-energy-carrier-gate]] — derives the entropy sign by relative-entropy positivity and conditionally selects S4 by lower Gibbs free energy.
+- [[version4-spectral-gibbs-equivalence-gate]] — proves the trace-class and additivity no-go, then corrects TOE through the logarithmic correlation generator.
+- [[version4-s4-radius-boundary-no-go]] — proves decompactification for Gibbs selection, collapse for positive spectral action, and no finite radius without a derived constraint.
+- [[version4-correlation-cell-free-energy-density-gate]] — conditionally stabilizes S4 at a/sigma=1.3513921957 through free energy per correlation cell.
+- [[version4-absolute-scale-eft-validity-gate]] — shows that formal gravitational scale matching violates the large-cutoff expansion on the selected S4 vacuum.
+- [[version4-s4-rp3-hybrid-experiment-gate]] — shows that metric RP3 nearly restores old pi-scales but brings product collapse and KK towers; only the discrete Z2 core survives cleanly.
+- [[version4-project-retrospective-entropy-measure-gate]] — scale-dependent energy crossing, factorized-measure no-go and corrected joint state/carrier variation.
+- [[version4-negative-space-bundle-fluctuation-gate]] — closes the homogeneous nontrivial circle bundle as a scalar vacuum and isolates the uncomputed gauge-ghost-fermion carrier action.
+- [[version4-full-field-carrier-counterterm-gate]] — unit-volume curvature ledger and explicit finite-counterterm reversal theorem.
+- [[version4-gaussian-bare-spectral-topology-gate]] — fixes bare topology weights and finds the exact Dirac carrier crossing.
+- [[version4-one-kernel-sign-trilemma-gate]] — derives Lambda sigma=1 and proves opposite trace/Gibbs carrier ordering.
+- [[version4-gibbs-fisher-geometry-gate]] — derives radial Jeffreys measure and Fisher-normalized stiffness.
+- [[pati-salam-generalized-inner-fluctuations]] — primary-source ledger for `Pert(A)`, the mandatory quadratic fluctuation and the composite Pati-Salam formulas.
+- [[pati-salam-generalized-inner-fluctuation-gate]] — exact project computation verifying the rank-two Yukawa and crossed rank-one Majorana factorizations.
+- [[pati-salam-composite-potential-hessian-gate]] — exact half-trace potential and the six-negative-mode no-go for the Standard-Model rank-one condensate.
+- [[pati-salam-rank-selector-archaeology]] — combines old project mechanisms into the exact `4 det(Delta Delta^dagger)` rescue candidate.
+- [[pati-salam-wedge-channel-compatibility-gate]] — verifies KO6 compatibility, the rank-six Jacobian and Goldstone/fermion safety.
+- [[pati-salam-three-node-parent-graph-gate]] — derives a robust rank-one selector from a KO6 exterior-square chain and ordinary spectral traces.
+- [[pati-salam-associative-node-no-go]] — proves that the literal color-six node is not an `M4(C)` module and redirects the selector to degree-two curvature.
+- [[pati-salam-twoform-a2-trilemma-gate]] — closes three direct curvature/generalized-fluctuation routes and isolates the even singlet quotient.
+- [[pati-salam-projected-curvature-selector-gate]] — recovers `4 det(Delta Delta^dagger)` from endpoint curvature on a valid fundamental-module chain.
+- [[pati-salam-junk-mapping-cone-gate]] — fixes `c=1`, closes the ordinary-junk explanation and derives the endpoint selector from the canonical graph coordinate.
+- [[pati-salam-relative-parent-action-gate]] — derives the fixed-point quotient norm and isolates the carrier trace-weight gate.
+- [[pati-salam-bv-multiplicity-fork-gate]] — closes the standard-BV origin and separates physical from classical parent sectors.
+- [[pati-salam-irreducible-relative-cycle-gate]] — selects `k=1` by connected-cycle irreducibility and closes the Delta-plus-auxiliary Hessian.
+- [[pati-salam-ko6-phi-sigma-hessian-gate]] — passes the algebraic KO6 completion but finds eight negative phi modes and fifteen flat Sigma directions.
+- [[pati-salam-twisted-connector-threshold-gate]] — derives the exact scalar-channel threshold `zeta>2`, proves the remaining rank-15 Sigma obstruction and selects a twisted scalar-vector parent as the next conditional target.
+- [[pati-salam-project-wide-rescue-archaeology]] — closes common-scale and Pati-Salam-like twist rescues, then isolates mixed relative curvature as the only surviving internal mechanism.
+- [[pati-salam-tensor-product-coefficient-gate]] — fixes the canonical mixed coefficient at `c=4`, proves threshold saturation and excludes identical-copy enhancement by irreducibility.
+- [[pati-salam-higher-moment-saturation-no-go]] — closes polynomial higher-moment and weighted one-field product rescues by the exact stationary identity.
+- [[pati-salam-rank-one-connected-curvature-no-go]] — proves the eight-dimensional su(3) stabilizer kernel and closes the current finite geometry.
+- [[version4-old-problem-rotation-audit]] — reprioritizes old branches and narrows the family-defect cross-bridge to the orientation-preserving three-cycle orbit.
+
 ## Maintenance
 
 - [[project-research-duplication-audit]] — полный аудит точных копий, текстовых повторов, структурно близких программ и чрезмерного дробления C6.
@@ -166,3 +285,28 @@ Important existing source paths:
 - `research_protocol_toe_ugsm.tex` — research protocol.
 - `RPFT-main/` — broad RPFT corpus with rigorous, deductive, and exploratory branches.
 - `*_results.json` — numerical and sector audit outputs.
+# Tome IV: latest gate
+
+- [S4/RP3 hybrid experiment](questions/version4-s4-rp3-hybrid-experiment-gate.md)
+- [Project retrospective entropy-measure gate](questions/version4-project-retrospective-entropy-measure-gate.md)
+- [Negative-space bundle/fluctuation gate](questions/version4-negative-space-bundle-fluctuation-gate.md)
+- [Full-field carrier counterterm gate](questions/version4-full-field-carrier-counterterm-gate.md)
+- [Gaussian bare spectral topology gate](questions/version4-gaussian-bare-spectral-topology-gate.md)
+- [Absolute-scale EFT validity](questions/version4-absolute-scale-eft-validity-gate.md)
+- [Correlation-cell free-energy density](questions/version4-correlation-cell-free-energy-density-gate.md)
+- [S4 absolute-radius boundary no-go](questions/version4-s4-radius-boundary-no-go.md)
+- [Spectral-action/Gibbs equivalence gate](questions/version4-spectral-gibbs-equivalence-gate.md)
+- [Gibbs free-energy carrier gate](questions/version4-gibbs-free-energy-carrier-gate.md)
+- [S4 versus S2 x S2 correlation purity](questions/version4-s4-s2xs2-correlation-purity-gate.md)
+- [TOE-native S4 carrier candidate](questions/version4-toe-native-s4-carrier-candidate-gate.md)
+- [Hessian two-scale messengers](questions/version4-hessian-two-scale-messenger-gate.md)
+- [Radial Pfaffian Hessian](questions/version4-radial-pfaffian-hessian-gate.md)
+- [Pfaffian stiffness](questions/version4-pfaffian-stiffness-gate.md)
+- [Self-consistent orientation field](questions/version4-self-consistent-orientation-gate.md)
+- [Moment-commutator modular constraint](questions/version4-moment-commutator-modular-gate.md)
+- [Affine modular temperature](questions/version4-affine-modular-temperature-gate.md)
+- [Modular endpoint intertwiner](questions/version4-modular-endpoint-intertwiner-gate.md)
+- [Bounded nonlinear propagator no-go](questions/version4-bounded-nonlinear-propagator-gate.md)
+- [Noncentral boundary propagator](questions/version4-noncentral-boundary-propagator-gate.md)
+- [Casimir messenger propagator](questions/version4-casimir-messenger-propagator-gate.md)
+- [Common messenger Schur gate](questions/version4-common-messenger-schur-gate.md)

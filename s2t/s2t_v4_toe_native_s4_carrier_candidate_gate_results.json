@@ -1,0 +1,27 @@
+{
+  "gate": "version4_toe_native_s4_carrier_candidate",
+  "date": "2026-08-11",
+  "status": "conditional_candidate",
+  "selection_rule": [
+    "compact_connected_spin_dimension_4",
+    "homogeneous_positive_einstein",
+    "no_continuous_shape_modulus_after_unit_volume",
+    "maximize_continuous_isometry_dimension"
+  ],
+  "candidates": [
+    {"name": "S4_round", "spin": true, "homogeneous": true, "positive_einstein": true, "shape_modulus": false, "isometry_dimension": 10, "survives": true},
+    {"name": "S2xS2_equal", "spin": true, "homogeneous": true, "positive_einstein": true, "shape_modulus": false, "isometry_dimension": 6, "survives": false},
+    {"name": "S3xS1", "spin": true, "homogeneous": true, "positive_einstein": false, "shape_modulus": true, "isometry_dimension": 7, "survives": false},
+    {"name": "RP3xS1", "spin": true, "homogeneous": true, "positive_einstein": false, "shape_modulus": true, "isometry_dimension": 7, "survives": false},
+    {"name": "T4_flat", "spin": true, "homogeneous": true, "positive_einstein": false, "shape_modulus": true, "isometry_dimension": 4, "survives": false},
+    {"name": "K3_generic", "spin": true, "homogeneous": false, "positive_einstein": false, "shape_modulus": true, "isometry_dimension": 0, "survives": false},
+    {"name": "CP2_fubini_study", "spin": false, "homogeneous": true, "positive_einstein": true, "shape_modulus": false, "isometry_dimension": 8, "survives": false}
+  ],
+  "winner": "S4_round",
+  "open_gates": [
+    "derive_correlation_functional_and_sign",
+    "compare_S4_against_equal_radius_S2xS2",
+    "prove_positive_second_variation",
+    "fix_absolute_radius_without_observable_fit"
+  ]
+}

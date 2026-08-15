@@ -1,0 +1,110 @@
+\section{Canonical tensor-product coefficient и threshold saturation}
+
+Project-wide archaeology оставила mixed relative curvature как последний
+внутренний кандидат. Однако до проверки новых contractions необходимо
+зафиксировать коэффициент самого простого product-triple механизма, поскольку
+его нельзя считать свободным parameter.
+
+\subsection{Канонический graded product}
+
+Для произведения чётной spectral triple с auxiliary factor стандартный
+Dirac operator имеет вид
+\begin{equation}
+ D_\times=D_1\otimes I+\Gamma_1\otimes D_2,
+ \qquad \{D_1,\Gamma_1\}=0.
+\end{equation}
+Отсюда без дополнительного предположения следует
+\begin{equation}
+ D_\times^2=D_1^2\otimes I+I\otimes D_2^2.
+\end{equation}
+Поэтому mixed часть quartic spectral trace равна
+\begin{equation}
+ \frac12\Tr D_\times^4\big|_{\rm mixed}
+ =\Tr(D_1^2)\Tr(D_2^2).
+ \label{eq:ps-product-mixed-trace}
+\end{equation}
+Именно эта product prescription используется в стандартных построениях
+real spectral triples; возможные KO-sign conventions меняют real structure,
+но не тождество для квадрата данного graded Dirac operator.
+
+Пусть оба factors заданы odd self-adjoint completions комплексных blocks
+\(M\) и \(X\). Тогда
+\begin{equation}
+ \Tr D_1^2=2\|M\|_F^2,
+ \qquad
+ \Tr D_2^2=2\|X\|_F^2,
+\end{equation}
+и \eqref{eq:ps-product-mixed-trace} принимает вид
+\begin{equation}
+ \boxed{
+ \frac12\Tr D_\times^4\big|_{\rm mixed}
+ =4\|M\|_F^2\|X\|_F^2.}
+ \label{eq:ps-canonical-tensor-c4}
+\end{equation}
+Следовательно, canonical tensor coefficient равен точно
+\(c_{\rm can}=4\). Удвоение particle--conjugate sector в KO-dimension six
+и последующий physical half-trace одновременно удваивают и делят trace,
+поэтому оставляют тот же коэффициент. Один oriented self-adjoint curvature
+block даёт ещё меньший coefficient \(c=2\).
+
+\subsection{Сравнение с точным vacuum threshold}
+
+Предыдущий Hessian gate установил, что для mixed portal
+\begin{equation}
+ V_{\rm mix}=c\,\Tr(M_R^\dagger M_R)\|Y\|_F^2
+\end{equation}
+на rank-one background
+\(\Tr(M_R^\dagger M_R)=1/2\) induced scalar shift равен
+\(\zeta=c/2\). Строгая устойчивость всех восьми project-
+\(\phi\) directions требует
+\begin{equation}
+ \zeta>2
+ \qquad\Longleftrightarrow\qquad
+ c>4.
+\end{equation}
+Каноническое значение \(c=4\) только насыщает границу: четыре eigenvalues
+становятся положительными, но ещё четыре остаются нулевыми. Таким образом,
+full-rank tensor contraction устраняет отрицательные modes, но не создаёт
+strict local minimum.
+
+\begin{theorem}[Canonical tensor threshold saturation]
+Канонический graded product двух odd finite blocks фиксирует mixed quartic
+coefficient \(c=4\). После KO6 physical half-trace коэффициент не меняется.
+Поэтому product spectral action достигает границы \(\zeta=2\), но не проходит
+условие strict \(\phi\)-stability \(\zeta>2\).
+\end{theorem}
+
+\subsection{Почему multiplicity не является исправлением}
+
+Для \(k\) идентичных auxiliary copies trace формально даёт
+\(c_k=4k\). Уже \(k=2\) обеспечило бы \(c=8\), однако copy space имеет
+commutant
+\begin{equation}
+ M_k(\mathbb C).
+\end{equation}
+При \(k>1\) он несводим не к скалярам, а содержит дополнительные matrix
+endomorphisms. Это противоречит ранее выведенному one-copy irreducibility
+selector и возвращает запрещённую multiplicity fork.
+
+\begin{nogocriterion}[Identical-copy tensor rescue]
+Нельзя поднимать canonical coefficient выше четырёх простым повторением
+одинакового auxiliary carrier. Численный threshold тогда проходит только
+ценой non-scalar copy commutant и нарушения irreducibility.
+\end{nogocriterion}
+
+\subsection{Оставшаяся развилка}
+
+Tensor-product route остаётся открытым только в двух более узких формах:
+\begin{enumerate}
+ \item non-identical irreducible auxiliary factor, для которого joint
+ commutant остаётся scalar, а induced coefficient превышает четыре;
+ \item higher spectral moment с заранее выведенным coefficient и полной
+ повторной radial stationarization, а не добавленный вручную quartic weight.
+\end{enumerate}
+Если ни одна ветвь не поднимает четыре нулевые modes без нового continuous
+input, canonical tensor-product rescue закрывается.
+
+Литературная product formula сверена с arXiv:math-ph/9902029 и
+arXiv:1011.4456. Machine audit сохранён в
+\path{s2t_v4_pati_salam_tensor_product_coefficient_gate.py} и
+\path{s2t_v4_pati_salam_tensor_product_coefficient_gate_results.json}.

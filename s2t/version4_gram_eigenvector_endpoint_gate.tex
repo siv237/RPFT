@@ -1,0 +1,101 @@
+\chapter{Gram eigenvectors as endpoint intertwiners}
+
+Three-moment gate использовал только eigenvalues moment Gram matrix как
+conditional messenger stiffnesses. Теперь проверим недостающую возможность:
+содержится ли observed flavour в самих Gram eigenvectors, то есть в
+относительном embedding operators $R_4,R_6,R_8$.
+
+\section{Whitened moment modes}
+
+Пусть $v_a$ --- eigenvectors sector-averaged Gram matrix,
+\begin{equation}
+ Gv_a=\lambda_av_a.
+\end{equation}
+Их знаковая неоднозначность устраняется без phenomenological choice: знак
+каждого столбца выбирается так, чтобы его наибольшая по модулю компонента была
+положительной. Получается
+\begin{equation}
+ V\simeq
+ \begin{pmatrix}
+ -0.205814&0.791747&0.575132\\
+ 0.785619&-0.216738&0.579506\\
+ -0.583475&-0.571105&0.577404
+ \end{pmatrix}.
+\end{equation}
+
+Для каждого sector определим whitened endpoint operators
+\begin{equation}
+ Q_{a,s}=\frac1{\sqrt{\lambda_a}}
+ \sum_{n\in\{4,6,8\}}V_{n a}Z_{n,s}.
+\end{equation}
+Их средняя Hilbert--Schmidt norm равна единице. Никаких новых family matrices,
+temperatures или relative weights не вводится.
+
+\begin{proposition}[Eigenvector endpoint prescription]
+Тройка $Q_{a,s}$ является каноническим linear endpoint intertwiner,
+извлекающим не только spectrum moments, но и их operator embedding в каждом
+observed sector. Messenger masses сохраняются спаренными со своими
+eigenvectors:
+\begin{equation}
+ m_a=\sqrt{\lambda_a/\lambda_1}
+ =(1,15.8427,169.435).
+\end{equation}
+Поэтому channel permutations не допускаются.
+\end{proposition}
+
+\section{One-scale mass selection}
+
+Endpoint row равна
+\begin{equation}
+ L_s=(Q_{1,s}\;Q_{2,s}\;Q_{3,s}),
+\end{equation}
+а heavy block остаётся ранее замороженным oriented triangle. Перебирается
+только orientation sign; единственная continuous scale $t$ обучается по
+четырём light quark ratios.
+
+Обе orientations дают одинаковый mass score. Выбранная convention имеет
+\begin{equation}
+ t=655.7588
+\end{equation}
+и spectra
+\begin{align}
+ u&=(0.00097216,\,0.00119007,\,1),\\
+ d&=(0.00126128,\,0.00157721,\,1).
+\end{align}
+Maximum multiplicative mass error возрастает до $77.64$.
+
+\section{Blind mixing}
+
+После mass freeze получается
+\begin{equation}
+ |V_q|\simeq
+ \begin{pmatrix}
+ 0.999813&0.0193620&2.6424\times10^{-5}\\
+ 0.0193620&0.999813&1.0738\times10^{-5}\\
+ 2.6211\times10^{-5}&1.1248\times10^{-5}&1
+ \end{pmatrix},
+\end{equation}
+и
+\begin{equation}
+ |J_q|=8.77\times10^{-15}.
+\end{equation}
+Moment eigenmodes почти одновременно диагонализуют up и down sectors. Поэтому
+они несут sector splitting, но не достаточную relative noncommutativity для
+observed mixing.
+
+\begin{theorem}[Direct Gram-eigenvector no-go]
+Канонические whitened Gram eigenvectors не закрывают mass или mixing gates.
+Они подавляют Cabibbo angle до $0.01936$, остальные mixing planes почти до
+нуля, а maximum mass error ухудшают до $77.64$. Следовательно, прямой linear
+embedding полной moment eigensystem не является искомым flavour mechanism.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет nonlinear rescue без parent origin]
+Нельзя после blind failure вводить произвольную nonlinear function от
+$Q_{a,s}$, отдельные temperatures или channel weights. Допустимо лишь
+нелинейное endpoint map, однозначно выведенное из уже существующего parent
+functional.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_gram_eigenvector_endpoint_gate_results.json}.

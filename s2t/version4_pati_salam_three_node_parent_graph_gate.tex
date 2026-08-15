@@ -1,0 +1,191 @@
+\chapter{Трёхузловой parent graph: спектральный rank selector без ручного знака}
+
+Предыдущие gates нашли правильный wedge-channel, но оставили открытым
+происхождение relative minus между direct и crossed paths. Здесь проверяется
+более экономная конструкция: не добавлять разность каналов вручную, а провести
+поле \(\Delta\) через внешний квадрат. Оказывается, полный raw spectral trace
+такого графа сам создаёт положительный determinant invariant.
+
+\section{Структура предлагаемого механизма}
+
+Предыдущий анализ определил требуемый determinant stabilizer, но не его
+parent construction. Рассмотрим трёхузловую цепь:
+\begin{equation}
+ \mathbb C
+ \xrightarrow{\ A_\Delta\ }
+ \mathbb C^2\otimes\mathbb C^4
+ \xrightarrow{\ B_\Delta\ }
+ \Lambda^2\mathbb C^2\otimes\Lambda^2\mathbb C^4.
+ \label{eq:ps-three-node-chain}
+\end{equation}
+Первое ребро кладёт \(\Delta\) в восьмимерный intermediate space. Второе
+ребро берёт все его \(2\times2\) minors. Поэтому двухшаговый путь видит ровно
+то, превращается ли rank one в rank two. Никакой отдельный знак
+\(H^{\rm dir}-H^{\rm cr}\) больше не вставляется: antisymmetrization уже
+содержится в \(\Lambda^2\).
+
+\section{Два фундаментальных ребра}
+
+Положим
+\begin{equation}
+ A_\Delta(1)=\operatorname{vec}\Delta.
+\end{equation}
+Для \(x\in\mathbb C^2\otimes\mathbb C^4\) определим
+\begin{equation}
+ (B_\Delta x)_{IJ}
+ =\frac{c}{2}\left(
+ \Delta_{0I}x_{1J}-\Delta_{1I}x_{0J}
+ -\Delta_{0J}x_{1I}+\Delta_{1J}x_{0I}
+ \right),
+ \qquad I<J.
+ \label{eq:ps-second-wedge-edge}
+\end{equation}
+Здесь \(c\) временно сохраняет возможную относительную нормировку двух
+representations одной one-form. При канонической polarization convention
+\(c=1\). Композиция равна
+\begin{equation}
+ \boxed{B_\Delta A_\Delta=c\,\Lambda^2\Delta},
+ \qquad
+ \|\Lambda^2\Delta\|^2
+ =\det(\Delta\Delta^\dagger).
+ \label{eq:ps-three-node-minor-identity}
+\end{equation}
+
+\section{Raw spectral traces}
+
+На graded carrier размерности \(1+8+6\) возьмём
+\begin{equation}
+ D_\Delta=
+ \begin{pmatrix}
+ 0&A_\Delta^\dagger&0\\
+ A_\Delta&0&B_\Delta^\dagger\\
+ 0&B_\Delta&0
+ \end{pmatrix}.
+ \label{eq:ps-three-node-dirac}
+\end{equation}
+Обозначим
+\begin{equation}
+ \rho=\Tr(\Delta\Delta^\dagger),\qquad
+ \tau=\Tr[(\Delta\Delta^\dagger)^2],\qquad
+ d=\det(\Delta\Delta^\dagger).
+\end{equation}
+Прямое умножение даёт
+\begin{align}
+ \Tr D_\Delta^2
+ &=\left(2+\frac32c^2\right)\rho,\\
+ \Tr D_\Delta^4
+ &=2\rho^2+c^4\left(\frac38\tau+\frac14d\right)
+   +4c^2d\\
+ &=\left(2+\frac38c^4\right)\rho^2
+   +\left(4c^2-\frac12c^4\right)d.
+ \label{eq:ps-three-node-traces}
+\end{align}
+Последний переход использует \(\tau=\rho^2-2d\), справедливое для
+\(2\times4\) matrix. Следовательно, determinant coefficient положителен не
+в одной подогнанной точке, а во всём интервале
+\begin{equation}
+ \boxed{0<c^2<8.}
+ \label{eq:ps-three-node-stability-window}
+\end{equation}
+
+При \(c=1\) physical half-traces KO6 completion равны
+\begin{equation}
+ \frac12\Tr D_F^2=\frac72\rho,
+ \qquad
+ \frac12\Tr D_F^4=\frac{19}{8}\rho^2+\frac72d.
+ \label{eq:ps-three-node-canonical-traces}
+\end{equation}
+То есть стабилизатор появляется из обычного незавешенного spectral trace, а
+не из Casimir-decorated functional.
+
+\section{Vacuum и полный Hessian}
+
+Для нормировки
+\begin{equation}
+ V=-\frac12\Tr D_F^2+\frac12\Tr D_F^4
+ =-\frac72\rho+\frac{19}{8}\rho^2+\frac72d
+ \label{eq:ps-three-node-potential}
+\end{equation}
+rank-one minimum имеет
+\begin{equation}
+ \rho_*=\frac{14}{19},
+ \qquad
+ V_*=-\frac{49}{38}.
+\end{equation}
+Equal-singular-value rank-two branch имеет
+\begin{equation}
+ p=q=\frac7{26},
+ \qquad
+ V_{(2)}=-\frac{49}{52}>V_*.
+\end{equation}
+Exact real \(16\times16\) Hessian spectrum в rank-one точке равен
+\begin{equation}
+ \boxed{
+ 14\ (1),\qquad
+ 0\ (9),\qquad
+ \frac{98}{19}\ (6).}
+ \label{eq:ps-three-node-hessian}
+\end{equation}
+Таким образом, radial mode положителен, девять gauge-orbit directions
+остаются Goldstone, а все шесть rank-growth directions становятся
+положительными.
+
+\section{KO6 и Krajewski-проверка}
+
+Particle chain имеет grading \((+,-,+)\). Добавим conjugate chain и зададим
+\(J_F\) обменом двух copies с complex conjugation. На complex dimension 30
+machine audit проверяет
+\begin{equation}
+ D_F=D_F^\dagger,\qquad
+ \{D_F,\Gamma_F\}=0,\qquad
+ [D_F,J_F]=0,\qquad
+ \{J_F,\Gamma_F\}=0
+\end{equation}
+с ошибками порядка machine precision.
+
+Coarse labels можно формально выбрать как
+\begin{equation}
+ (0,0)\longrightarrow(0,1)\longrightarrow(1,1),
+\end{equation}
+а для conjugate chain --- transposed labels. Каждое fundamental edge меняет
+ровно один label, поэтому chain проходит необходимый coarse order-one edge
+test. Однако это ещё не доказывает существование самих трёх nodes как
+modules represented associative algebra. Следующий audit показывает, что
+для \(\mathcal A_F^{PS}=\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)\)
+одномерный node и irreducible color-six node не существуют. Поэтому coarse
+labeling нельзя повышать до настоящего Krajewski pass.
+
+\begin{theorem}[Equivariant carrier pass]
+Трёхузловая exterior-square chain имеет KO6 completion и проходит coarse
+order-one edge criterion. Её polynomial trace автоматически содержит
+положительный rank-sensitive determinant coefficient и выбирает требуемый
+rank-one orbit с Hessian signature \((7_+,9_0,0_-)\). Relative
+direct-minus-crossed sign фиксирован antisymmetrization внешнего квадрата.
+Но этот результат является graded superconnection carrier, а не строгим
+finite spectral triple над неизменённой Pati--Salam algebra.
+\end{theorem}
+
+\section{Что ещё не закрыто}
+
+Это gauge-equivariant parent carrier, но не finite-triple parent graph. В
+\eqref{eq:ps-second-wedge-edge} оба ребра связаны с одной и той же
+\(\Delta\) по invariant polarization prescription, а endpoint
+\((1_R,6_4)\) является допустимым scalar channel, но не module node
+\(M_4(\mathbb C)\). Поэтому literal three-node embedding закрывается.
+Рабочий механизм следует искать в represented universal two-forms или
+curvature внутри уже существующего 32-dimensional Pati--Salam Hilbert space,
+после quotient по degree-two junk.
+
+\section{Литература и воспроизводимость}
+
+Diagrammatic finite-triple interpretation сверена с T.~Krajewski,
+\emph{Classification of Finite Spectral Triples}, arXiv:hep-th/9701081.
+Связь finite geometry со scalar-potential constraints сверена с
+T.~Krajewski, \emph{Constraints on the Scalar Potential from Spectral Action
+Principle}, arXiv:hep-th/9803199. Использование обычных следов
+\(\Tr D_F^2\) и \(\Tr D_F^4\) опирается на A.~H.~Chamseddine and A.~Connes,
+\emph{The Spectral Action Principle}, arXiv:hep-th/9606001.
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_three_node_parent_graph.py} и
+\path{s2t_v4_pati_salam_three_node_parent_graph_results.json}.

@@ -1,0 +1,60 @@
+{
+  "gate": "version4_state_anchored_bimodule",
+  "module": "M_rho=rho M3 + M3 rho={X:(1-rho)X(1-rho)=0}",
+  "module_dimension": 5,
+  "kernel_dimension": 4,
+  "orthogonal_projection": "Pi_rho(X)=X-(1-rho)X(1-rho)",
+  "projection_equals": "rho X + X rho - rho X rho",
+  "idempotence_error": 4.3961574722819746e-13,
+  "hilbert_schmidt_self_adjointness_error": 0.0,
+  "star_closure_error": 0.0,
+  "state_algebra_bimodule_error": 4.3895930515720463e-13,
+  "basis_covariance_error": 2.4912465244908755e-16,
+  "continuous_coefficient_required": false,
+  "support_axiom": "every subleading connector touches the selected state at at least one endpoint",
+  "readout": {
+    "mass_squared_eigenvalues_up": [
+      0.083008827741,
+      0.31544921337,
+      2.236402935029
+    ],
+    "mass_squared_eigenvalues_down": [
+      0.03383096995,
+      0.442703985803,
+      2.388522324472
+    ],
+    "normalized_masses_up": [
+      0.192658029314,
+      0.375568965246,
+      1.0
+    ],
+    "normalized_masses_down": [
+      0.119012498392,
+      0.430518743062,
+      1.0
+    ],
+    "absolute_mixing_matrix": [
+      [
+        0.430206711,
+        0.851193158577,
+        0.300653276387
+      ],
+      [
+        0.834948225259,
+        0.475105340347,
+        0.277734363577
+      ],
+      [
+        0.343196222223,
+        0.223036145872,
+        0.912398613922
+      ]
+    ],
+    "cp_invariant_im_Tr_commutator_cube": -0.28796040012361,
+    "cp_nonzero": true
+  },
+  "conditional_operator_map": "Y_s=P_minus+i Pi_rho(H_s)",
+  "conditional_pass": true,
+  "remaining_four_sector_obstruction": true,
+  "status": "a canonical five-dimensional state-anchored bimodule and its unique Hilbert-Schmidt projection select a CP-nonzero map conditionally on the support axiom"
+}

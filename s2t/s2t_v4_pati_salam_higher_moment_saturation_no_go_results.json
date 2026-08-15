@@ -1,0 +1,13 @@
+{
+  "gate": "version4_pati_salam_higher_moment_saturation_no_go",
+  "radial_potential": "V=-alpha t+P(t)",
+  "stationarity": "alpha=P'(t)",
+  "canonical_product_portal": "zeta=2P'(t)",
+  "stationary_weak_hessian": "0",
+  "symbolic_P": "a2*t**2 + a3*t**3 + a4*t**4 + a5*t**5 + a6*t**6",
+  "symbolic_zeta": "4*a2*t + 6*a3*t**2 + 8*a4*t**3 + 10*a5*t**4 + 12*a6*t**5",
+  "maximum_random_identity_residual": 0.0,
+  "weighted_edge_normalization_identity": "c_raw=4 sum|w_i|^2 and canonical normalization gives c=4",
+  "maximum_weighted_normalization_error": 0.0,
+  "verdict": "All finite polynomial higher moments saturate the weak phi threshold after radial stationarity. Weighted non-identical placements return to c=4 after canonical normalization."
+}

@@ -1,0 +1,209 @@
+\chapter{Gauge--family diagonal-locking parent gate}
+
+Tetrahedral residual gate оставил gauge/global fork. Global \(A_4\)
+сохраняет физическую различимость family axes, но не создаёт gauge flux;
+gauged \(A_4\) создаёт flux, но делает четыре axes gauge-equivalent. Здесь
+проверяется минимальный стандартный способ снять эту развилку ---
+diagonal gauge--family locking посредством bifundamental order parameter.
+
+\section{Real bifundamental locking field}
+
+Введём
+\begin{equation}
+ X\in\operatorname{Mat}_3(\mathbb R),
+ \qquad
+ X\longmapsto gXf^{-1},
+ \qquad
+ g\in SO(3)_{\rm gauge},\quad
+ f\in SO(3)_{\rm family}^{\rm global}.
+ \label{eq:gauge-family-bifundamental}
+\end{equation}
+Минимальный positive locking potential можно записать как
+\begin{equation}
+ V_{\rm lock}(X)
+ =\frac14\|X^TX-I_3\|_F^2
+ +\frac14(\det X-1)^2.
+ \label{eq:real-bifundamental-locking-potential}
+\end{equation}
+Его zero locus равен \(SO(3)\). Gauge transformation позволяет выбрать
+representative
+\begin{equation}
+ X_\star=I_3,
+\end{equation}
+после чего unbroken exact symmetry является diagonal global group
+\begin{equation}
+ SO(3)_{g+f}=\{(g,f):g=f\}.
+ \label{eq:diagonal-family-group}
+\end{equation}
+
+Machine Hessian в девятимерном real matrix space имеет signature
+\begin{equation}
+ (6_+,3_0,0_-).
+\end{equation}
+Три zero directions являются antisymmetric tangent directions vacuum
+orbit. После gauging они съедаются тремя gauge fields; normalized gauge
+mass matrix имеет spectrum
+\begin{equation}
+ (2,2,2).
+\end{equation}
+Все шесть symmetric fluctuations стабилизированы. Invariance potential
+под независимыми left/right rotations проверена на 64 random cases с
+максимальным residual меньше \(3.1\times10^{-15}\).
+
+\begin{theorem}[Diagonal-locking pass]
+Real bifundamental field с potential
+\eqref{eq:real-bifundamental-locking-potential} превращает gauged family
+orientation в physical orientation относительно exact global diagonal
+frame. Тем самым projector axis перестаёт быть чистым gauge choice, а
+остаточная three-cycle holonomy может действовать на observed family
+matter через diagonal group.
+\end{theorem}
+
+Это стандартная архитектура non-Abelian vortices. Exact color--flavor
+diagonal symmetry и physical orientational zero modes подробно реализованы,
+например, в \path{arXiv:hep-th/0307287}; group action на vortex moduli ---
+в \path{arXiv:1009.4794}. Coupled bulk/worldsheet formulation при weakly
+gauged flavor symmetry рассмотрена в \path{arXiv:1509.04061}. Project
+construction использует real \(SO(3)\) analogue, а не QCD color group.
+
+\section{Tetrahedral reduction после locking}
+
+Spin-three tensor \(\mathcal T\) предыдущей главы теперь располагается в
+global family frame. Bifundamental \(X\) переносит этот frame в gauge
+bundle. Поэтому symmetry-breaking chain принимает вид
+\begin{equation}
+ SO(3)_{\rm gauge}\times SO(3)_{\rm family}^{\rm global}
+ \xrightarrow{\langle X\rangle}
+ SO(3)_{g+f}
+ \xrightarrow{\langle\mathcal T\rangle}
+ A_4
+ \xrightarrow{\langle P_a\rangle}
+ \mathbb Z_3.
+ \label{eq:locked-tetrahedral-chain}
+\end{equation}
+Gauge field поставляет flux, global diagonal group --- physical reference
+frame, а projector выбирает residual \(\mathbb Z_3\) subgroup. Тем самым
+gauge/global fork закрывается без расширения family gauge algebra до
+\(SU(3)\).
+
+\section{Проверка pairing condensate}
+
+Остаётся выяснить, заставляет ли locking field конденсироваться ordinary
+charge-two \(B-L\) pairing scalar \(\Phi\). Наиболее общий минимальный
+renormalizable radial sector содержит
+\begin{equation}
+ V_\Phi
+ =m_\Phi^2|\Phi|^2
+ +\frac{\lambda_\Phi}{2}|\Phi|^4
+ +\kappa|\Phi|^2\Tr(X^TX),
+ \qquad \lambda_\Phi>0.
+ \label{eq:generic-locking-pairing-potential}
+\end{equation}
+В locked vacuum \(X=I_3\) effective mass равна
+\begin{equation}
+ m_{\rm eff}^2=m_\Phi^2+3\kappa.
+\end{equation}
+Symmetry не фиксирует её знак. Например, два одинаково допустимых набора
+\begin{align}
+ (m_\Phi^2,\lambda_\Phi,\kappa)&=(1,1,0),
+ &|\Phi_\star|^2&=0,\\
+ (m_\Phi^2,\lambda_\Phi,\kappa)&=(1,1,-1),
+ &|\Phi_\star|^2&=2
+\end{align}
+дают соответственно normal и condensed phases.
+
+\begin{nogocriterion}[Locking does not imply condensation]
+Diagonal gauge--family locking само по себе не выбирает sign pairing
+Hessian. Добавление произвольного отрицательного portal \(\kappa\) после
+выбора желаемой фазы является новым continuous input, а не выводом
+Majorana condensate.
+\end{nogocriterion}
+
+\section{Coefficient-free moment-map candidate}
+
+Существует один особенно экономный positive square:
+\begin{equation}
+ V_\mu(X,\Phi)
+ =\left(
+ |\Phi|^2-\frac13\Tr X^TX
+ \right)^2.
+ \label{eq:norm-locking-moment-map-square}
+\end{equation}
+На \(X=I_3\) он принудительно даёт
+\begin{equation}
+ |\Phi_\star|=1,
+ \qquad
+ \partial_{|\Phi|}^2V_\mu\big|_\star=8.
+\end{equation}
+То есть один square одновременно использует already-condensed frame и
+создаёт nonzero pairing amplitude без отрицательной bare mass.
+
+Но symmetry alone разрешает независимые coefficients трёх expansion terms:
+\begin{equation}
+ |\Phi|^4,
+ \qquad
+ |\Phi|^2\Tr X^TX,
+ \qquad
+ (\Tr X^TX)^2.
+\end{equation}
+Relation
+\begin{equation}
+ 1:-\frac23:\frac19
+\end{equation}
+является prediction только если square
+\eqref{eq:norm-locking-moment-map-square} возникает как один central
+curvature, D-term или projected superconnection moment map. Пока это
+candidate, а не theorem.
+
+\section{Почему literal \texorpdfstring{\(SU(3)\)}{SU(3)} CFL не выбран}
+
+Complex \(SU(3)\) color--flavor locking имеет central \(\mathbb Z_3\) и
+естественные one-third vortices. Однако literal перенос добавляет full
+family \(SU(3)\) gauge algebra и дополнительные gauge modes, отсутствующие
+в finite project menu.
+
+Другой apparent shortcut --- объявить charge-two pairing composite
+\begin{equation}
+ \Phi\sim\det X.
+\end{equation}
+Для scalar matrix field \(X\) determinant имеет engineering dimension три,
+поэтому bulk operator
+\begin{equation}
+ (\det X)N^cN^c
+\end{equation}
+имеет dimension шесть и требует нового inverse-mass-squared coefficient.
+Он допустим как EFT extension, но не является minimal renormalizable parent.
+
+\section{Обновлённый decisive gate}
+
+Gauge/global fork закрыт конструктивно. Discrete \(\mathbb Z_3\), flat
+connection и physical family frame теперь совместимы в одной стандартной
+locking architecture. Единственный непосредственный blocker этой ветви
+сводится к следующему:
+\begin{equation}
+ \boxed{
+ \begin{gathered}
+ \text{вывести }V_\mu\text{ или эквивалентный}\\
+ \text{negative pairing Hessian из одного finite graded supertrace}
+ \end{gathered}}
+\end{equation}
+
+Наиболее прямой следующий расчёт --- построить минимальный finite
+superconnection block для \((X,\Phi,H)\), вычислить его central even
+curvature и проверить, появляется ли coefficient ratio
+\(1:-2/3:1/9\) до выбора vacuum. Если ratio не возникает, condensate
+остаётся независимым portal input и family--defect physical closure не
+проходит.
+
+Следующий quiver moment-map gate проходит этот coefficient test.
+Frozen--gauged--frozen chain имеет middle moment map
+\(\mu_G=XX^T-|\Phi|^2I_3\), поскольку \(A_4\)-equivariance по Schur lemma
+фиксирует pairing arrow как \(Y=\Phi I_3\). Normalized trace
+\(\tau_3(\mu_G^2)\) точно содержит ratio \(1:-2/3:1/9\), а joint
+unit-momentum radial model сохраняет stable nonzero condensate. Открытым
+остаётся embedding этого quiver в actual finite graded spectral triple.
+
+Машинный ledger сохранён в
+\path{s2t_v4_family_defect_gauge_family_locking_gate_results.json};
+генератор ---
+\path{s2t_v4_family_defect_gauge_family_locking_gate.py}.

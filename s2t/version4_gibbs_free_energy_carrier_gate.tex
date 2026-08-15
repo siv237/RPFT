@@ -1,0 +1,152 @@
+\chapter{Вывод знака correlation principle через Gibbs variational identity}
+
+Предыдущий gate установил spectral ordering, но оставил открытым знак:
+почему vacuum должен максимизировать entropy, а не purity? Первичный
+\texttt{TOE.pdf} утверждает две вещи: фундаментальный Gaussian kernel имеет
+вид \(e^{-\sigma^2\Delta}\), а его роль --- состояние минимального spectral
+action. Сам текст не записывает normalized-state functional, поэтому знак
+необходимо восстановить математически.
+
+\section{Минимальное normalized-state completion}
+
+Пусть \(M\) --- компактный carrier, \(\Delta_M\ge0\), а
+\begin{equation}
+ \rho_\tau(M)=\frac{e^{-\tau\Delta_M}}{Z_M(\tau)},
+ \qquad
+ Z_M(\tau)=\Tr e^{-\tau\Delta_M},
+ \qquad \tau=\sigma^2>0.
+\end{equation}
+На convex space положительных trace-one operators рассмотрим
+\begin{equation}
+ \Phi_\tau[\rho;M]
+ =\Tr(\rho\Delta_M)
+ +\frac1\tau\Tr(\rho\log\rho)
+ =E_M(\rho)-\frac1\tau S_{\rm vN}(\rho).
+ \label{eq:gibbs-carrier-functional}
+\end{equation}
+Это не выбор между \(+S_2\) и \(-S_2\). Знак entropy term фиксирован
+требованием, чтобы заданный TOE Gaussian operator был equilibrium minimum.
+
+\begin{theorem}[Gibbs variational identity]
+Для любого normalized state \(\rho\)
+\begin{equation}
+ \Phi_\tau[\rho;M]-F_\tau(M)
+ =\frac1\tau
+ D\!\left(\rho\middle\|\rho_\tau(M)\right)\ge0,
+ \label{eq:gibbs-relative-entropy-identity}
+\end{equation}
+где
+\begin{equation}
+ F_\tau(M)=-\frac1\tau\log Z_M(\tau)
+\end{equation}
+и \(D(\rho\|\omega)=\Tr\rho(\log\rho-\log\omega)\) --- quantum relative
+entropy. Равенство достигается только при \(\rho=\rho_\tau(M)\).
+\end{theorem}
+
+Действительно,
+\begin{equation}
+ \log\rho_\tau=-\tau\Delta_M-\log Z_M,
+\end{equation}
+после подстановки в relative entropy немедленно получается
+\eqref{eq:gibbs-relative-entropy-identity}. Положительность является
+неравенством Клейна. Тем самым Gaussian state имеет правильный знак и
+строго устойчив относительно вариаций \(\rho\).
+
+\section{Carrier selection, следующий из того же functional}
+
+После минимизации по \(\rho\) остаётся сравнивать
+\begin{equation}
+ M_*\in\operatorname*{argmin}_{\operatorname{Vol}(M)=1}F_\tau(M)
+ =\operatorname*{argmax}_{\operatorname{Vol}(M)=1}\log Z_M(\tau).
+ \label{eq:gibbs-carrier-selection}
+\end{equation}
+Таким образом, знак carrier criterion больше не свободен: меньшая Gibbs free
+energy эквивалентна большему heat partition function.
+
+Для round \(S^4\) и equal-radius \(S^2\times S^2\) определим
+\begin{equation}
+ \Delta\log Z(\tau)
+ =\log Z_{S^4}(\tau)-\log Z_{S^2\times S^2}(\tau).
+\end{equation}
+При \(\tau\to0^+\) unit-volume heat expansion даёт
+\begin{equation}
+ \Delta\log Z(\tau)
+ =\frac{R_{S^4}-R_{S^2\times S^2}}6\tau+O(\tau^2)
+ =\frac{4\pi}{3}(\sqrt6-2)\tau+O(\tau^2)>0.
+ \label{eq:gibbs-small-tau-sign}
+\end{equation}
+При больших \(\tau\) меньший first gap \(S^4\) снова даёт
+\begin{equation}
+ \Delta\log Z(\tau)
+ \sim5e^{-4\tau/a^2}-6e^{-2\tau/b^2}>0.
+\end{equation}
+
+\section{Middle-profile audit}
+
+Тот же adaptive log-sum-exp расчёт на \(3001\) точке
+\(10^{-5}\le\tau\le2\) не находит ни одного
+\(\Delta\log Z\le0\). Максимум равен
+\begin{equation}
+ \Delta\log Z(0.0957664505\ldots)
+ =0.1079375302\ldots.
+\end{equation}
+Следовательно,
+\begin{equation}
+ \Delta F_\tau
+ =F_\tau(S^4)-F_\tau(S^2\times S^2)
+ =-\frac{\Delta\log Z(\tau)}\tau<0
+\end{equation}
+на всём audited profile.
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+\(\tau\) & \(\Delta\log Z\) & \(\Delta F_\tau\) \\
+\midrule
+0.001 & 0.00187754 & -1.87753975 \\
+0.01 & 0.01828654 & -1.82865386 \\
+0.05 & 0.07860214 & -1.57204280 \\
+0.10 & 0.10768761 & -1.07687608 \\
+0.20 & 0.04075500 & -0.20377499 \\
+0.50 & 0.00015402 & -0.00030804 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{proposition}[Знак и pairwise carrier selection]
+Если TOE correlation operator нормируется как physical state, а утверждение
+о minimum-action Gaussian реализуется минимальным Gibbs functional
+\eqref{eq:gibbs-carrier-functional}, то entropy sign фиксирован uniquely и
+round \(S^4\) имеет меньшую free energy, чем
+\(S^2\times S^2\), на всём проверенном \(\tau\)-профиле.
+\end{proposition}
+
+\section{Статус вывода}
+
+Этот результат сильнее произвольного postulate ``maximize Rényi entropy''.
+Он использует canonical variational identity и одновременно объясняет
+Gaussian form, entropy sign и carrier score. Однако в первичном TOE-тексте
+operator \(\widehat C\) ещё не объявлен trace-one density state, а spectral
+action не доказан равным \(\Phi_\tau\). Поэтому получен минимальный
+математический completion TOE, а не буквальное следствие уже записанного
+Postulate 2.
+
+\begin{nogocriterion}[Граница Gibbs completion]
+Нельзя смешивать \(\Tr f(\widehat C/\Lambda)\) и Gibbs free energy без
+явного normalization map \(\widehat C\mapsto\rho\) и доказательства, что
+их carrier extrema совпадают. До этого \(S^4\) является selected vacuum
+в normalized correlation-state version IV.G, но не во всех возможных
+spectral-action completions TOE.
+\end{nogocriterion}
+
+\begin{theorem}[Условное закрытие entropy-sign gate]
+В normalized correlation-state completion знак variational principle больше
+не является свободным: его фиксирует positivity of quantum relative
+entropy. В этом completion \(S^4\) выбран одновременно maximal symmetry,
+correlation entropy и минимальной Gibbs free energy. Следующий открытый узел
+--- equivalence с исходным spectral action и фиксация абсолютного радиуса.
+\end{theorem}
+
+Машинный аудит сохранён в
+\path{s2t_v4_gibbs_free_energy_carrier_gate.py} и
+\path{s2t_v4_gibbs_free_energy_carrier_gate_results.json}.

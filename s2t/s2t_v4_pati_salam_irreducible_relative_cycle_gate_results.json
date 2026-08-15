@@ -1,0 +1,81 @@
+{
+  "gate": "version4_pati_salam_irreducible_relative_cycle",
+  "canonical_identical_copy_ledger": [
+    {
+      "copy_number": 1,
+      "commutant_dimension": 1,
+      "expected_Mk_dimension": 1,
+      "irreducible": true,
+      "lambda_relative": 1
+    },
+    {
+      "copy_number": 2,
+      "commutant_dimension": 4,
+      "expected_Mk_dimension": 4,
+      "irreducible": false,
+      "lambda_relative": 2
+    },
+    {
+      "copy_number": 3,
+      "commutant_dimension": 9,
+      "expected_Mk_dimension": 9,
+      "irreducible": false,
+      "lambda_relative": 3
+    },
+    {
+      "copy_number": 4,
+      "commutant_dimension": 16,
+      "expected_Mk_dimension": 16,
+      "irreducible": false,
+      "lambda_relative": 4
+    },
+    {
+      "copy_number": 5,
+      "commutant_dimension": 25,
+      "expected_Mk_dimension": 25,
+      "irreducible": false,
+      "lambda_relative": 5
+    }
+  ],
+  "one_copy_generated_commutant": "C",
+  "k_copy_generated_commutant": "M_k(C)",
+  "one_copy_selected_by_irreducibility": true,
+  "nontrivial_k2_loophole": {
+    "copy_generators": [
+      "sigma_x",
+      "sigma_z"
+    ],
+    "common_commutant_dimension": 1,
+    "interpretation": "k>1 can be irreducible only after adding noncommuting copy-space dynamics",
+    "allowed_in_coefficient_free_branch": false
+  },
+  "effective_Delta_Hessian": {
+    "exact_eigenvalues": {
+      "8*sqrt(2)": 1,
+      "0": 9,
+      "2*sqrt(2)": 6
+    },
+    "signature": {
+      "positive": 7,
+      "zero": 9,
+      "negative": 0,
+      "minimum_eigenvalue": 0.0,
+      "maximum_eigenvalue": 11.313708498984761
+    }
+  },
+  "uneliminated_auxiliary_Hessian": {
+    "Delta_real_dimension": 16,
+    "fixed_point_auxiliary_real_dimension": 36,
+    "total_real_dimension": 52,
+    "signature": {
+      "positive": 43,
+      "zero": 9,
+      "negative": 0,
+      "minimum_eigenvalue": -7.229480082175925e-16,
+      "maximum_eigenvalue": 35.300124442270345
+    },
+    "Schur_complement_error": 1.7763568394002505e-15
+  },
+  "verdict": "Within the coefficient-free identical-copy mapping-cone branch, connected-cycle irreducibility forces k=1 and lambda_relative=1. The full Delta-plus-auxiliary Hessian has no negative modes; eliminating the auxiliary block returns the exact rank-one effective Hessian.",
+  "next_gate": "embed this irreducible relative cycle into the full Pati-Salam real structure and audit the remaining phi/Sigma mixed scalar directions"
+}

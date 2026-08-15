@@ -1,0 +1,97 @@
+\chapter{Hessian-derived two-scale messengers: blind Cabibbo pass}
+
+Universal bounded-propagator no-go указал, что одна messenger scale сохраняет
+ложную light-family degeneracy. Radial--orientation parent Hessian уже вывел
+две независимые curvatures
+\begin{equation}
+ m_\sigma^2:m_\theta^2=104:8=13:1.
+\end{equation}
+Поэтому физические messenger mass scales имеют фиксированное отношение
+\begin{equation}
+ \frac{M_\sigma}{M_\theta}=\sqrt{13}.
+\end{equation}
+
+\section{Двухканальный propagator}
+
+В affine-modular endpoint architecture заменим equal-mass block на
+\begin{equation}
+ \mathcal M(t)=
+ \begin{pmatrix}
+ t m_1 I&iI\\
+ -iI&t m_2 I
+ \end{pmatrix},
+ \qquad
+ \{m_1,m_2\}=\{\sqrt{13},1\}.
+\end{equation}
+Существуют только две дискретные привязки radial scale к первому или второму
+channel. Кроме них перебираются прежние left/right/KMS placements и
+шестнадцать sign cocycles. Единственный continuous \(t\) обучается по quark
+masses; CKM и CP не используются.
+
+\begin{proposition}[Hessian scale derivation]
+Отношение messenger masses не является flavour fit: оно равно square root
+отношения eigenvalues одного radial--orientation parent Hessian. Перестановка
+двух eigenmodes образует полное discrete assignment menu.
+\end{proposition}
+
+\section{Mass train}
+
+Лучший branch выбирает radial mode в первом channel, KMS-symmetric placement,
+all-negative cocycle и
+\begin{equation}
+ t=147.0565.
+\end{equation}
+Получаются spectra
+\begin{align}
+ u&=(0.00054008,\,0.00231337,\,1),\\
+ d&=(0.00101118,\,0.00182242,\,1).
+\end{align}
+Maximum mass error уменьшается до \(43.13\). Up и down first-generation
+scales расходятся в правильном направлении, но charm и strange errors всё
+ещё равны примерно \(3.18\) и \(12.26\).
+
+\section{CKM blind}
+
+После полной заморозки mass-selected branch
+\begin{equation}
+ |V_q|\simeq
+ \begin{pmatrix}
+ 0.97176&0.23596&0.000345\\
+ 0.23596&0.97176&0.000272\\
+ 0.000271&0.000345&1
+ \end{pmatrix}.
+\end{equation}
+Cabibbo angle равен
+\begin{equation}
+ s_{12}=0.23596,
+ \qquad
+ \frac{s_{12}}{s_{12}^{\rm CKM}}=1.0487.
+\end{equation}
+Это первый настоящий blind numerical pass отдельной observed flavour
+quantity: target не входил ни в branch selection, ни в training objective.
+
+Однако
+\begin{equation}
+ s_{23}=2.72\times10^{-4},
+ \qquad
+ s_{13}=3.45\times10^{-4},
+ \qquad
+ |J_q|=9.84\times10^{-11},
+\end{equation}
+по-прежнему существенно меньше наблюдаемых значений.
+
+\begin{theorem}[Blind Cabibbo partial pass]
+Две messenger scales, выведенные из parent Hessian, вместе с affine-modular
+endpoint geometry предсказывают Cabibbo angle с ошибкой менее \(5\%\) без
+использования mixing data. Но mass train, остальные CKM angles и CP invariant
+не закрыты, поэтому полный flavour gate остаётся отрицательным.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет Cabibbo-only declaration]
+Совпадение одного angle не разрешает объявить Standard Model flavour
+выведенным. Нельзя менять Hessian ratio или channel assignment после открытия
+\(s_{23}\), \(s_{13}\) и \(J_q\).
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_hessian_two_scale_messenger_gate_results.json}.

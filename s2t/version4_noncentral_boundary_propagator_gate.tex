@@ -1,0 +1,105 @@
+\chapter{Нецентральный boundary propagator: projector--moment no-go}
+
+Scalar Casimirs различали sectors только в channel space и исчезали в
+decoupling optimum. Теперь используем информацию полного representation
+embedding: собственные направления и node moments family operator.
+
+\section{Два канонических lift-а}
+
+Пусть \(R_L=R_{4,A}+R_{4,D}\) и
+\(R_R=R_{4,B}+R_{4,C}\). Для каждого sector
+\begin{equation}
+ R_{4,s}=C_L^sR_L+C_R^sR_R
+\end{equation}
+имеет ground projector \(\rho_s\), однозначно заданный Rayleigh--Ritz
+minimum. Рассмотрим две крайние конструкции без новых family matrices.
+
+\paragraph{Ground-projector lift.}
+\begin{equation}
+ \mathcal M_s^{(\rho)}(t)=
+ \begin{pmatrix}
+ tI+C_L^s\rho_s&iI\\
+ -iI&tI+C_R^s\rho_s
+ \end{pmatrix}.
+\end{equation}
+Он сохраняет только выбранную variational direction.
+
+\paragraph{Full-moment lift.}
+\begin{equation}
+ \mathcal M_s^{(R)}(t)=
+ \begin{pmatrix}
+ tI+C_L^sR_L&iI\\
+ -iI&tI+C_R^sR_R
+ \end{pmatrix}.
+\end{equation}
+Он сохраняет всю нецентральную eigenvector information quartic embedding.
+В обоих случаях
+\begin{equation}
+ Y_s=P_--L_s\mathcal M_s^{-1}L_s^\dagger
+\end{equation}
+и единственный continuous input \(t\) обучается только по quark masses.
+
+\begin{proposition}[Eigenvector-sensitive propagators]
+Оба lift-а зависят не только от spectrum: они используют embedding operators
+\(R_L,R_R\) и их eigenvectors в фиксированном family representation. Поэтому
+этот гейт непосредственно проверяет информацию полной spectral triple,
+невидимую в одном наборе eigenvalues.
+\end{proposition}
+
+\section{Projector train}
+
+Полный sign-menu выбирает all-negative cocycle и
+\begin{equation}
+ t\simeq1623.3037.
+\end{equation}
+Quark spectra остаются
+\begin{align}
+ u&\simeq(0.00123245,\,0.00123360,\,1),\\
+ d&\simeq(0.00123258,\,0.00123368,\,1).
+\end{align}
+Наибольшая mass error равна примерно \(98.4\). При этом впервые из
+нецентрального propagator возникает заметный поворот первой пары:
+\begin{equation}
+ s_{12}\simeq0.0634,
+\end{equation}
+но \(s_{23}\) и \(s_{13}\) остаются порядка \(10^{-7}\)--\(10^{-6}\), а
+\(|J_q|\simeq2.7\times10^{-16}\).
+
+\section{Full-moment train}
+
+Полный moment также выбирает all-negative cocycle и
+\begin{equation}
+ t\simeq1607.0282.
+\end{equation}
+Mass pattern практически не меняется:
+\begin{align}
+ u&\simeq(0.00123318,\,0.00123472,\,1),\\
+ d&\simeq(0.00123262,\,0.00123543,\,1).
+\end{align}
+Теперь \(s_{12}\simeq0.4626\), то есть тот же механизм переориентирует
+Cabibbo plane слишком сильно, тогда как два остальных angles остаются
+порядка \(10^{-6}\), а \(|J_q|\simeq3.4\times10^{-12}\).
+
+\begin{theorem}[Canonical noncentral-lift no-go]
+Ground projector и полный quartic moment действительно создают
+sector-relative eigenbases без произвольных Yukawa matrices. Однако оба
+однопараметрических Schur ledgers сохраняют ложную nearly-degenerate light
+pair и не воспроизводят трёхугловую CKM hierarchy. Eigenvector information
+не устраняет obstruction автоматически.
+\end{theorem}
+
+\begin{remark}
+Ненулевой \(s_{12}\) показывает, что embedding содержит физически релевантную
+orientation information. Провал локализован точнее: отсутствует механизм,
+который одновременно создаёт две независимые light-family scales и передаёт
+orientation во все три mixing planes.
+\end{remark}
+
+\begin{nogocriterion}[Запрет интерполяционного fit]
+Комбинацию \(a\rho_s+bR_L+cR_R\) нельзя подбирать по данным. Следующий
+кандидат допустим лишь как фиксированная нелинейная функция одного parent
+operator или как минимум заранее заданного boundary functional.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_noncentral_boundary_propagator_gate_results.json}.

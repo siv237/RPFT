@@ -1,0 +1,44 @@
+{
+  "gate": "version4_conditional_weight_origin",
+  "odd_projector_rank": 1,
+  "even_projector_rank": 2,
+  "odd_corner_expectation_idempotent": true,
+  "even_corner_expectation_idempotent": true,
+  "fourth_moments": {
+    "full": {
+      "B_minus": "48",
+      "B_plus": "48"
+    },
+    "odd_corner": {
+      "B_minus": "83/4",
+      "B_plus": "79/4"
+    },
+    "even_corner": {
+      "B_minus": "109/4",
+      "B_plus": "113/4"
+    },
+    "normalized_even_corner": {
+      "B_minus": "109/8",
+      "B_plus": "113/8"
+    },
+    "shear_weight": {
+      "B_minus": "13/2",
+      "B_plus": "17/2"
+    }
+  },
+  "branch_selected_by_weight": {
+    "full": "degenerate",
+    "odd_corner": "B_plus",
+    "even_corner": "B_minus",
+    "normalized_even_corner": "B_minus",
+    "shear_weight": "B_minus"
+  },
+  "full_trace_is_sum_of_corners": true,
+  "corner_choices_select_opposite_branches": true,
+  "conditional_expectation_derives_state_after_corner_is_chosen": true,
+  "conditional_expectation_selects_corner": false,
+  "canonical_weight_selector_unique": false,
+  "vectorlike_orientation_eigenvalue": "M2 + g2*k**2*lambda**2",
+  "vectorlike_even_determinant_independent_of_k_sign": true,
+  "status": "odd and even corners select opposite branches; vectorlike loops are orientation-even, so a variational state-selection principle is required"
+}

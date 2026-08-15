@@ -1,0 +1,133 @@
+\chapter{Gauge--ghost и KK completion-gate}
+
+Предыдущий heat-kernel гейт зафиксировал конечный zero-mode вклад
+\begin{equation}
+ B_0^{\mathrm{fin}}=\frac5{8\pi^2}
+ =\frac{40}{64\pi^2}.
+\end{equation}
+Теперь необходимо проверить, определяет ли уже построенный parent action
+оставшиеся gauge--ghost и nonzero KK слагаемые без новых нормировок.
+
+\section{Gauge--ghost ledger}
+
+Пусть после выбора физического gauge quotient возникает массивная
+абелева векторная мода с
+\begin{equation}
+ c_A=\frac{m_A^2}{\chi^2}.
+\end{equation}
+В gauge-independent supertrace на стационарном фоне vector, Goldstone и
+Faddeev--Popov блоки объединяются в три физические поляризации. Поэтому
+их zero-mode вклад имеет вид
+\begin{equation}
+ \Delta N_{\mathrm{gauge+ghost}}=3c_A^2\geq0.
+\end{equation}
+Если dilaton--radion Hessian содержит дополнительную устойчивую вещественную
+моду с \(c_\sigma=m_\sigma^2/\chi^2\), она добавляет \(c_\sigma^2\).
+
+Однако алгебра \(A_F=\mathbb C\oplus\mathbb C\), first-order квадрат и
+flattening-потенциал ещё не задают одновременно:
+\begin{enumerate}
+ \item физический quotient группы \(U(A_F)\) после действия \(J\);
+ \item наличие или отсутствие динамической относительной \(U(1)\)-моды;
+ \item канонически нормированный gauge coupling;
+ \item BV/BRST gauge-fixing fermion и правило нулевых мод.
+\end{enumerate}
+В частности, текущим данным совместимы как spectator-ветвь \(c_A=0\), так
+и Higgsed relative-\(U(1)\) ветвь \(c_A>0\). Во второй ветви величина
+\(c_A\) зависит от ещё не выведенной канонической gauge-нормировки.
+
+\begin{proposition}[Условная положительность gauge completion]
+После задания unitary massive-vector completion его gauge--ghost вклад не
+может изменить знак finite seed в отрицательную сторону. Но его величина
+не является предсказанием текущего parent action, поскольку \(c_A\) не
+зафиксирован.
+\end{proposition}
+
+\section{Общий KK supertrace}
+
+Для вида поля \(s\) обозначим через \(w_s\) supertrace-вес, через
+\(d_{s,n}\) кратность, а через \(\lambda_{s,n}\) безразмерный eigenvalue
+соответствующего оператора на компактном носителе. Если
+\begin{equation}
+ \frac{M_{s,n}^2}{\chi^2}=\lambda_{s,n}+c_s,
+\end{equation}
+то формальный tower ledger равен
+\begin{equation}
+ N_{\mathrm{KK}}^{\mathrm{formal}}
+ =\sum_s w_s\sum_{n\ne0}d_{s,n}
+   (\lambda_{s,n}+c_s)^2.
+\end{equation}
+Эта сумма расходится. После общей дзета/heat-kernel процедуры требуется
+конечная величина
+\begin{equation}
+ \Delta N_{\mathrm{KK}}
+ =\operatorname{FP}_{\mathcal R}
+ \sum_s w_s\sum_{n\ne0}d_{s,n}
+   (\lambda_{s,n}+c_s)^2,
+\end{equation}
+где схема \(\mathcal R\) должна быть частью parent action, а не выбираться
+после вычисления знака.
+
+Текущая конструкция не задаёт эту сумму. Причина структурна: факторный
+модуль \(\mathcal H_{\mathrm{fac}}\) был определён спектральной проекцией на
+нулевые spectator-моды и не является полным локальным пространством полей
+на \(K\). Поэтому scalar, spinor, one-form и ghost башни тома II нельзя
+автоматически прикрепить к трём quotient-скалярам и двум Dirac-парам
+версии III. Для этого нужен явный lift finite-бимодуля в полный product
+Hilbert space и его field-specific Hessian complex.
+
+\begin{nogocriterion}[Запрет наследования KK-башен]
+Назначение уже известных scalar, coexact или spinor спектров тома II
+полям версии III без вывода из одного fluctuated product Dirac/BV
+оператора считается новой модельной гипотезой. Полученный таким способом
+знак \(B\) не закрывает parent-action гейт.
+\end{nogocriterion}
+
+\section{Точный статус полного коэффициента}
+
+На текущем уровне единственная корректная формула имеет вид
+\begin{equation}
+ \boxed{
+ B_{\mathrm{full}}
+ =\frac{40+3c_A^2+c_\sigma^2+\Delta N_{\mathrm{KK}}}
+ {64\pi^2}.}
+\end{equation}
+Число \(40\) выведено. Остальные три величины ещё не определены одной
+функциональной мерой. Поскольку \(\Delta N_{\mathrm{KK}}\) не имеет
+доказанного знака, из текущих аксиом не следует ни
+\(B_{\mathrm{full}}>0\), ни \(B_{\mathrm{full}}\leq0\).
+
+\begin{theorem}[Gauge--KK specification gap]
+Версия III уже содержит положительный и нормально фиксированный finite
+Coleman--Weinberg seed, но ещё не определяет полный quantum scale
+functional. Gauge--ghost completion является неотрицательной после выбора
+устойчивой unitary ветви, тогда как величина и знак regulated KK correction
+остаются неопределёнными из-за отсутствия полного fluctuated product
+complex.
+\end{theorem}
+
+Это не возвращает программу к состоянию тома II. Во втором томе не был
+построен общий finite parent block; теперь такой блок, его vacuum и его
+finite Hessian уже фиксированы. Открытый разрыв локализован точнее: требуется
+не новая численная формула, а единственный lift этого блока в gauge-fixed
+локальную теорию на \(K\).
+
+\begin{protocol}[Следующий конструктивный гейт]
+Необходимо задать полный fluctuated product complex
+\begin{equation}
+\bigl(\mathcal A,\mathcal H,\mathcal D,J,\gamma;
+  \mathcal C_{\mathrm{BV}})
+\end{equation}
+и из него вывести:
+\begin{enumerate}
+ \item physical gauge quotient и канонический coupling;
+ \item scalar, vector, ghost и fermion Hessian-операторы;
+ \item spin/flat-bundle ветви и правила удаления нулевых мод;
+ \item одну общую конечную часть \(\Delta N_{\mathrm{KK}}\).
+\end{enumerate}
+Только после этого разрешён окончательный тест
+\(B_{\mathrm{full}}>0\).
+\end{protocol}
+
+Машинный параметрический аудит сохранён в
+\path{s2t_v3_gauge_ghost_kk_completion_results.json}.

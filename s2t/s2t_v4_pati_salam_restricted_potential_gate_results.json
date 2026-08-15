@@ -1,0 +1,38 @@
+{
+  "gate": "version4_pati_salam_restricted_potential",
+  "date": "2026-08-13",
+  "source": "arXiv:1905.04533",
+  "representation_correction": {
+    "current_Sigma": "(2_R,2_L,1+15_4)",
+    "previously_desired_block": "(1_R,1_L,1+15_4)",
+    "true_four_color_adjoint_target": "(1_R,1_L,15_4)",
+    "true_adjoint_present_in_general_fundamental_menu": false,
+    "true_adjoint_present_in_composite_first_order_branch": true,
+    "reason_current_Sigma_cannot_take_high_scale_vev": "a nonzero vector in the SU(2)_L doublet has no invariant direction under the full SU(2)_L group"
+  },
+  "restricted_potential": {
+    "canonical_form": "-M^2/2 Tr(Hdot^2+Sigma^2+H^2) + g^2/4 Tr(2 Hdot^4 + 2 H^4 + 4|Hdotbar Sigma|^2 + 4|Hbar Sigma|^2 + |Sigma Sigmabar|^2 + mixed terms)",
+    "required_goldstones": 9,
+    "unwanted_massless_scalars": 6,
+    "total_massless_at_candidate": 15,
+    "negative_hessian_directions_exist": true,
+    "candidate_is_local_minimum": false,
+    "candidate_is_local_maximum": true,
+    "missing_invariants": [
+      "(Tr(Hdot^2))^2",
+      "Tr(Hdot^2) Tr(Sigma^2)"
+    ]
+  },
+  "fermion_gate": {
+    "Sigma_connects_left_and_right_fermions": true,
+    "high_scale_bidoublet_vev_preserves_SU2L": false,
+    "high_scale_bidoublet_vev_is_acceptable": false
+  },
+  "verdict": {
+    "general_fundamental_1_plus_15_candidate_passed": false,
+    "composite_first_order_adjoint_branch_closed": false,
+    "casimir_sensitivity_result_survives_as_design_requirement": true,
+    "minimal_model_improvement": "derive the composite weak-singlet adjoint from an explicit project Pati-Salam Dirac block or expand the geometry with connected diagonal fields; then compute the full potential",
+    "next_gate": "construct the project Pati-Salam finite block and audit the legitimacy of the composite (1,1,15) plus a diagonal-real-singlet extension"
+  }
+}

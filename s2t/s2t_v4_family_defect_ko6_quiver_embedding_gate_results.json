@@ -1,0 +1,80 @@
+{
+  "gate": "version4_family_defect_ko6_quiver_embedding_gate",
+  "finite_geometry": {
+    "algebra": "R_0 direct_sum M3(R)_G direct_sum C_2",
+    "particle_bimodule_labels": [
+      "(0,0) x3",
+      "(G,0)",
+      "(G,2)"
+    ],
+    "particle_grading": [
+      "+",
+      "-",
+      "+"
+    ],
+    "KO6_completion": "conjugate transposed-label chain with opposite grading",
+    "complex_dimension": 18,
+    "edges": {
+      "X": "(0,0)x3 -> (G,0), arbitrary 3x3 locking matrix",
+      "Y": "(G,0) -> (G,2), forced to Phi I3 by first-order condition"
+    }
+  },
+  "checks": {
+    "self_adjoint_residual": 0.0,
+    "odd_grading_residual": 0.0,
+    "reality_residual": 0.0,
+    "J_gamma_anticommutator_residual": 0.0,
+    "maximum_order_zero_residual": 0.0,
+    "maximum_first_order_residual_scalar_pairing": 0.0,
+    "maximum_first_order_residual_nonscalar_pairing": 2.2801272609926753,
+    "first_order_pairing_kernel_dimension": 1,
+    "maximum_trace_D4_formula_residual": 4.440892098500626e-16,
+    "maximum_moment_formula_residual": 0.0,
+    "maximum_particle_supertrace_D4_residual": 6.661338147750939e-16
+  },
+  "quartic_sign_comparison": {
+    "ordinary_particle_trace": "Tr D_p^4=6(rho^2+r^2)^2, mixed coefficient +12",
+    "moment_map_trace": "tau_3(mu^2)=(rho^2-r^2)^2, mixed coefficient -2",
+    "graded_supertrace": "Str D_p^4=0",
+    "conclusion": "the KO6/order-one quiver exists, but the ordinary single-trace spectral quartic has the opposite mixed sign and the graded trace cancels; the moment-map action requires an auxiliary D-term, relative curvature, or another non-ordinary spectral functional"
+  },
+  "trace_rows": [
+    {
+      "frame_radius": 0.4,
+      "pairing_radius": 0.7,
+      "particle_trace_D2": 3.9,
+      "particle_trace_D4": 2.5349999999999997,
+      "moment_map_square": 0.10889999999999994,
+      "particle_supertrace_D4": -4.996003610813204e-16,
+      "trace_D4_formula_residual": 4.440892098500626e-16,
+      "moment_formula_residual": 0.0
+    },
+    {
+      "frame_radius": 0.9,
+      "pairing_radius": 0.2,
+      "particle_trace_D2": 5.1000000000000005,
+      "particle_trace_D4": 4.335000000000001,
+      "moment_map_square": 0.5929,
+      "particle_supertrace_D4": -2.7755575615628914e-17,
+      "trace_D4_formula_residual": 0.0,
+      "moment_formula_residual": 0.0
+    },
+    {
+      "frame_radius": 1.1,
+      "pairing_radius": 0.8,
+      "particle_trace_D2": 11.100000000000001,
+      "particle_trace_D4": 20.535000000000007,
+      "moment_map_square": 0.3249000000000001,
+      "particle_supertrace_D4": -6.661338147750939e-16,
+      "trace_D4_formula_residual": 0.0,
+      "moment_formula_residual": 0.0
+    }
+  ],
+  "status": {
+    "KO6_representation_embedding": "pass",
+    "order_zero": "pass",
+    "first_order_scalar_pairing_selection": "pass",
+    "ordinary_spectral_action_moment_map_origin": "fail_by_mixed_sign",
+    "remaining_route": "derive the middle-node moment-map norm as a relative/auxiliary curvature functional with the same kinetic normalization, rather than as Tr D_F^4"
+  }
+}

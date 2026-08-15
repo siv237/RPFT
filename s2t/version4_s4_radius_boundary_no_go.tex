@@ -1,0 +1,138 @@
+\chapter{Абсолютный радиус \texorpdfstring{\(S^4\)}{S4}: противоположный boundary no-go}
+
+Форма carrier теперь выбрана в normalized correlation-state completion, но
+до сих пор объём был искусственно зафиксирован. Освободим radius \(a>0\)
+round four-sphere и проверим оба functionals corrected operator dictionary.
+
+\section{Gibbs functional ведёт к decompactification}
+
+Пусть \(\mu_\ell=\ell(\ell+3)\) и
+\begin{equation}
+ Z(a;\tau)=\sum_{\ell=0}^\infty
+ d_\ell\exp\!\left(-\frac{\tau\mu_\ell}{a^2}\right),
+ \qquad
+ F(a;\tau)=-\frac1\tau\log Z(a;\tau).
+\end{equation}
+Обозначая Gibbs average dimensionless eigenvalue через
+\(\langle\mu\rangle_{a,\tau}\), получаем точную derivative identity
+\begin{equation}
+ \frac{\partial F}{\partial a}
+ =-\frac{2}{a^3}\langle\mu\rangle_{a,\tau}<0
+ \qquad(a>0).
+ \label{eq:s4-gibbs-radius-derivative}
+\end{equation}
+Строгость следует из наличия positive modes при любом конечном \(a\).
+Следовательно, isolated stationary radius отсутствует.
+
+При \(a\to0\) остаётся только constant mode,
+\begin{equation}
+ Z\to1,
+ \qquad F\to0^-.
+\end{equation}
+При \(a\to\infty\) Weyl asymptotics даёт
+\begin{equation}
+ Z(a;\tau)\sim\frac{\operatorname{Vol}(S^4_a)}{(4\pi\tau)^2}
+ =\frac{a^4}{6\tau^2},
+\end{equation}
+поэтому
+\begin{equation}
+ F(a;\tau)sim-\frac1\tau
+ \log\!\left(\frac{a^4}{6\tau^2}\right)\longrightarrow-\infty.
+\end{equation}
+
+\begin{theorem}[Gibbs decompactification no-go]
+Normalized correlation-state free energy выбирает форму \(S^4\) при
+фиксированном объёме, но после освобождения scale монотонно понижается при
+увеличении radius. Она не фиксирует \(a/\sqrt\tau\) и ведёт к
+decompactification boundary \(a=\infty\).
+\end{theorem}
+
+\section{Positive spectral action ведёт к collapse}
+
+Рассмотрим corrected spectral action
+\begin{equation}
+ S_f(a)=\sum_{\ell=0}^\infty d_\ell
+ f\!\left(\frac{\mu_\ell}{a^2\Lambda^2}\right),
+\end{equation}
+где standard cutoff неотрицателен и убывает:
+\(f'(y)\le0\). Тогда
+\begin{equation}
+ \frac{dS_f}{da}
+ =-\frac2a\sum_{\ell=0}^\infty d_\ell y_\ell f'(y_\ell)
+ \ge0,
+ \qquad
+ y_\ell=\frac{\mu_\ell}{a^2\Lambda^2}.
+ \label{eq:s4-positive-spectral-radius-derivative}
+\end{equation}
+Для strict cutoff profile derivative положительна. Значит минимизация
+positive spectral trace толкает geometry к противоположной границе
+\(a\to0\).
+
+В Gaussian случае \(f(y)=e^{-y}\), \(\tau=\Lambda^{-2}=1\), численный
+контроль имеет вид
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+\(a\) & \(F\) & \(\partial_aF\) & \(\partial_aS_f\) \\
+\midrule
+0.50 & \(-5.63\cdot10^{-7}\) & \(-3.60\cdot10^{-5}\) & \(3.60\cdot10^{-5}\) \\
+1.00 & \(-0.0882\) & \(-0.6824\) & 0.7454 \\
+1.50 & \(-0.7030\) & \(-1.5291\) & 3.0884 \\
+2.00 & \(-1.4762\) & \(-1.5097\) & 6.6072 \\
+3.00 & \(-2.8241\) & \(-1.1864\) & 19.9842 \\
+5.00 & \(-4.7259\) & \(-0.7681\) & 86.6634 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{theorem}[Opposite-boundary theorem]
+На scale family round \(S^4_a\) два corrected readings одного correlation
+operator имеют противоположные monotonicities:
+\begin{equation}
+ \partial_aS_{\rm state}<0,
+ \qquad
+ \partial_aS_{\rm EFT}>0.
+\end{equation}
+Ни один functional по отдельности не имеет finite stationary radius.
+\end{theorem}
+
+\section{Почему простая сумма не является решением}
+
+Комбинация
+\begin{equation}
+ \mathcal J(a)=\alpha S_f(a)+\beta F(a)
+\end{equation}
+может иметь stationary point за счёт конкуренции границ. Но его положение
+определяется отношением \(\beta/\alpha\). Если это отношение не выводится из
+normalization map, symmetry или measure до сравнения с физическими scales,
+то stabilization является новой параметризацией старой проблемы.
+
+Даже в Gaussian case, где \(S_f=Z\), условие stationarity сводится к
+\begin{equation}
+ Z(a)=\frac{\beta}{\alpha\tau}.
+\end{equation}
+Таким образом, целевой radius непосредственно кодируется свободным
+отношением коэффициентов.
+
+\begin{nogocriterion}[Finite-radius reopening condition]
+Scale gate считается переоткрытым только если constraint на объём, pressure,
+mean energy или relative functional weight выводится из одной заранее
+объявленной quantum measure. Назначение \(a\), \(\alpha/\beta\) либо
+cosmological multiplier после сравнения с Planck или cosmological scale
+запрещено.
+\end{nogocriterion}
+
+\section{Итог}
+
+\begin{theorem}[Absolute-radius verdict]
+Round \(S^4\) является сильным shape candidate, но текущая two-stage
+architecture не замыкает его абсолютный radius. Gibbs stage decompactifies,
+positive spectral stage collapses, а их произвольная сумма вводит новый
+scale-setting parameter. Следующий допустимый механизм должен вывести
+constraint или relative weight из correlation-operator measure, а не из
+наблюдаемого радиуса.
+\end{theorem}
+
+Воспроизводимый аудит сохранён в
+\path{s2t_v4_s4_radius_boundary_no_go.py} и
+\path{s2t_v4_s4_radius_boundary_no_go_results.json}.

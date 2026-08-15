@@ -1,0 +1,91 @@
+\chapter{Full-profile radial vacuum: angular loophole closes}
+
+Предыдущая глава предъявила positive spectral profile с CP-breaking minima на
+constraint slice $r=1$. Physical vacuum, однако, должен быть stationary
+одновременно по modulus и phase. Поэтому теперь минимизируется полный
+two-dimensional functional
+\begin{equation}
+ S_\star(r,\theta)=\Tr f_\star(D_F(r,\theta)^2),
+\end{equation}
+где
+\begin{equation}
+ f_\star(u)
+ =\frac{e^{-u^2/100}+\frac1{12}e^{-10u^2}}{13/12}.
+\end{equation}
+
+\section{Constrained point is not stationary}
+
+На unit radial slice найдено
+\begin{equation}
+ \theta_{\rm slice}=1.227311.
+\end{equation}
+Но radial derivative в coordinate $\sigma=\log r$ равна
+\begin{equation}
+ \left.
+ \partial_\sigma S_\star
+ \right|_{r=1,\theta=\theta_{\rm slice}}
+ =-0.755503.
+\end{equation}
+Следовательно, эта CP-breaking точка не является даже saddle полного
+functional: action строго убывает при radial displacement.
+
+\section{Global two-dimensional minimum}
+
+Global scan в $(\log r,\theta)$ с local refinement даёт
+\begin{equation}
+ r_\star=5.773295,
+ \qquad
+ \theta_\star\simeq0,
+\end{equation}
+и
+\begin{equation}
+ S_\star(r_\star,\theta_\star)=5.479335.
+\end{equation}
+Hessian в coordinates $(\log r,\theta)$:
+\begin{equation}
+ \operatorname{Hess}S_\star
+ \simeq
+ \begin{pmatrix}
+ 0.0720145&0\\
+ 0&0.00709530
+ \end{pmatrix}.
+\end{equation}
+Обе eigenvalues положительны. Vacuum finite, radially stable и CP-even.
+
+\begin{theorem}[Frozen-radius false positive]
+Profile $f_\star$ действительно создаёт interior angular minima при
+искусственно замороженном $r=1$, но эти minima исчезают из stationary set
+полного two-dimensional action. Единственный найденный stable global vacuum
+имеет $\theta_\star=0$.
+\end{theorem}
+
+\section{Статус higher-profile loophole}
+
+Этот calculation закрывает конкретный positive-profile counterexample, но не
+доказывает universal no-go для всех smooth positive functions. Он показывает
+более сильное требование к будущему candidate:
+\begin{equation}
+ \partial_r S_f=\partial_\theta S_f=0,
+ \qquad
+ \operatorname{Hess}S_f>0,
+ \qquad
+ \theta_\star\notin\{0,\pi\}.
+\end{equation}
+
+Поскольку physical CP branch не достигнута, conditional flavour readout
+предыдущей главы не является vacuum prediction и снимается с active scorecard.
+
+\begin{nogocriterion}[Запрет frozen-radius CP claim]
+Нельзя объявлять spontaneous CP breaking по minimum angular slice до проверки
+radial stationarity и полного Hessian. Любой новый profile проходит сначала
+двухмерный vacuum gate, а только затем mass/CKM blind protocol.
+\end{nogocriterion}
+
+\begin{protocol}[Следующий поиск]
+Допустим либо заранее объявленный restricted profile class с полным
+two-dimensional no-go, либо независимо выведенная spectral function,
+проходящая simultaneous radial--angular stationarity.
+\end{protocol}
+
+Машинный ledger сохранён в
+\path{s2t_v4_full_profile_radial_vacuum_gate_results.json}.

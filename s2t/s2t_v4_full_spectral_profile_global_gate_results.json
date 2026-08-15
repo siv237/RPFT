@@ -1,0 +1,234 @@
+{
+  "gate": "version4_full_spectral_profile_global",
+  "characteristic_polynomial_d_squared": "(y**2 - 3*y + 1)*(4*c*y**2 - 12*c*y + 4*c + 4*y**4 - 28*y**3 + 60*y**2 - 40*y + 5)/4",
+  "even_moment_polynomials": {
+    "2": "20",
+    "4": "-4*(c - 13)",
+    "6": "-8*(3*c - 19)",
+    "8": "2*(2*c**2 - 56*c + 233)",
+    "10": "5*(16*c**2 - 192*c + 589)/2",
+    "12": "-4*c**3 + 264*c**2 - 1977*c + 4762",
+    "14": "-(112*c**3 - 2912*c**2 + 15911*c - 31379)/2",
+    "16": "(8*c**4 - 960*c**3 + 14552*c**2 - 63008*c + 104937)/2"
+  },
+  "general_theta_expansion": "S_f(theta)=F_f(1)-F_f'(1) theta^2/2+(F_f'(1)/24+F_f''(1)/8) theta^4+O(theta^6)",
+  "positive_f_alone_fixes_quartic_sign": false,
+  "profile_rows": {
+    "heat": {
+      "unit_scale_even_coefficients": [
+        0.16013034817469168,
+        -0.007108675093125608,
+        -0.0004932998783781019,
+        3.194374627003e-05
+      ],
+      "interior_minimum_found_on_scale_scan": false,
+      "endpoint_choices": [
+        "zero"
+      ]
+    },
+    "gaussian": {
+      "unit_scale_even_coefficients": [
+        0.3083309379785617,
+        -0.014694378709367649,
+        -0.00897709219858332,
+        0.00263136067521632
+      ],
+      "interior_minimum_found_on_scale_scan": false,
+      "endpoint_choices": [
+        "pi",
+        "zero"
+      ]
+    },
+    "heat2": {
+      "unit_scale_even_coefficients": [
+        0.10564922653308294,
+        -0.01630181529711155,
+        0.0012257277376043936,
+        -3.010154087237596e-05
+      ],
+      "interior_minimum_found_on_scale_scan": false,
+      "endpoint_choices": [
+        "pi",
+        "zero"
+      ]
+    }
+  },
+  "critical_scales": {
+    "gaussian": 0.13632819354805842,
+    "heat2": 0.550813793906306
+  },
+  "critical_even_coefficients": {
+    "gaussian": [
+      4.758769936316434e-13,
+      -0.00345980480726015,
+      0.0006998891096437443,
+      -9.340875191715057e-05
+    ],
+    "heat2": [
+      3.985899742959634e-15,
+      -0.002574301601846814,
+      0.00040300617308850563,
+      -1.510757115098178e-05
+    ]
+  },
+  "positive_counterexample_profile": "f(u)=[exp(-u^2/100)+(1/12)exp(-10u^2)]/(13/12)",
+  "counterexample_unit_radial_slice": {
+    "theta_minimum": 1.2273108545182316,
+    "cp_conjugate_minima": [
+      -1.2273108545182316,
+      1.2273108545182316
+    ],
+    "orientation_amplitude": 0.941586581337815,
+    "energy_gap_from_zero": 0.003416437227063085,
+    "energy_gap_from_pi": 0.003127535143168103
+  },
+  "counterexample_is_profile_selector": false,
+  "counterexample_branch_rows": [
+    {
+      "orientation_sign": -1,
+      "placement": "right_gns",
+      "sign_bits": [
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "messenger_ratio": 479.369959607373,
+      "mass_log_rms": 2.442044410697115
+    },
+    {
+      "orientation_sign": 1,
+      "placement": "right_gns",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "messenger_ratio": 479.369959607373,
+      "mass_log_rms": 2.442044410697115
+    },
+    {
+      "orientation_sign": -1,
+      "placement": "kms_symmetric",
+      "sign_bits": [
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "messenger_ratio": 207.75023590515835,
+      "mass_log_rms": 2.457997581007823
+    },
+    {
+      "orientation_sign": 1,
+      "placement": "kms_symmetric",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "messenger_ratio": 207.75023590515835,
+      "mass_log_rms": 2.457997581007823
+    },
+    {
+      "orientation_sign": -1,
+      "placement": "left_gns",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "messenger_ratio": 622.4098522285203,
+      "mass_log_rms": 2.5404769430660927
+    },
+    {
+      "orientation_sign": 1,
+      "placement": "left_gns",
+      "sign_bits": [
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "messenger_ratio": 622.4098522285203,
+      "mass_log_rms": 2.5404769430660927
+    }
+  ],
+  "counterexample_mass_selected_best": {
+    "orientation_sign": -1,
+    "placement": "right_gns",
+    "sign_bits": [
+      -1,
+      -1,
+      1,
+      -1
+    ],
+    "messenger_ratio": 479.369959607373,
+    "mass_log_rms": 2.442044410697115
+  },
+  "counterexample_normalized_masses": {
+    "u": [
+      0.0007376557312267609,
+      0.002167681003999834,
+      1.0
+    ],
+    "d": [
+      0.0006784884892709792,
+      0.0021427268814703457,
+      1.0
+    ],
+    "e": [
+      0.0008523367715706905,
+      0.0018996075435011477,
+      1.0
+    ],
+    "nu": [
+      0.0008953652989062846,
+      0.0019096656962354712,
+      1.0
+    ]
+  },
+  "counterexample_mass_errors": {
+    "u": [
+      58.91000631324826,
+      3.396403265514926
+    ],
+    "d": [
+      1.6466379283504258,
+      10.428066124938258
+    ]
+  },
+  "counterexample_ckm_absolute": [
+    [
+      0.18665155132347117,
+      0.9824258720689483,
+      0.0007773532716498083
+    ],
+    [
+      0.9824259130500613,
+      0.1866510126331028,
+      0.0008513816949857045
+    ],
+    [
+      0.0007237100903076355,
+      0.0008974255426988338,
+      0.9999993354353297
+    ]
+  ],
+  "counterexample_ckm_angles": [
+    0.9824258720689483,
+    0.0008513816949857045,
+    0.0007773532716498083
+  ],
+  "counterexample_ckm_angle_ratios": [
+    4.366143158388287,
+    0.020353375447901136,
+    0.2082940170551469
+  ],
+  "counterexample_jarlskog": -7.096704617926344e-08,
+  "counterexample_jarlskog_ratio": 0.002274584813437931,
+  "verdict": "the structural CP no-go is false for an unspecified positive full spectral function: a smooth positive profile can create conjugate interior angular minima, but the profile is not selected by the current theory and therefore does not constitute a prediction"
+}

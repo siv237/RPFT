@@ -1,0 +1,120 @@
+{
+  "date": "2026-08-14",
+  "random_seed": 20260814,
+  "random_tests": 200,
+  "particle_graph": {
+    "nodes": [
+      "C",
+      "C2 tensor C4",
+      "Lambda2(C2) tensor Lambda2(C4)"
+    ],
+    "complex_dimensions": [
+      1,
+      8,
+      6
+    ],
+    "grading": [
+      "even",
+      "odd",
+      "even"
+    ],
+    "two_step_identity": "B_Delta A_Delta = Lambda^2 Delta",
+    "minor_norm_identity": "||Lambda^2 Delta||^2 = det(Delta Delta^dagger)"
+  },
+  "trace_identities": {
+    "general_trace_D2": "(2 + 3 c^2/2) rho",
+    "general_trace_D4": "2 rho^2 + c^4(3 tau/8 + det/4) + 4 c^2 det",
+    "general_reduced_trace_D4": "(2 + 3 c^4/8) rho^2 + (4 c^2 - c^4/2) det",
+    "canonical_half_trace_D2": "7 rho/2",
+    "canonical_half_trace_D4": "19 rho^2/8 + 7 det/2",
+    "stability_interval": "0 < c^2 < 8"
+  },
+  "canonical_potential": {
+    "definition": "V = -halfTr(D^2) + halfTr(D^4)",
+    "rank_one_norm_squared": "14/19",
+    "rank_one_energy": "-49/38",
+    "rank_two_equal_singular_value_squared": "7/26",
+    "rank_two_energy": "-49/52",
+    "exact_hessian_spectrum": {
+      "14": 1,
+      "0": 9,
+      "98/19": 6
+    }
+  },
+  "order_one_diagram": {
+    "particle_labels": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "conjugate_labels": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "edge_changes": [
+      {
+        "source": [
+          0,
+          0
+        ],
+        "target": [
+          0,
+          1
+        ],
+        "changed_coordinates": 1
+      },
+      {
+        "source": [
+          0,
+          1
+        ],
+        "target": [
+          1,
+          1
+        ],
+        "changed_coordinates": 1
+      }
+    ],
+    "each_edge_changes_one_label": true
+  },
+  "maximum_errors": {
+    "two_step_minor_error": 4.2970077452605675e-15,
+    "minor_norm_determinant_error": 1.4210854715202004e-13,
+    "trace_two_formula_error": 5.684341886080802e-14,
+    "trace_four_formula_error": 2.7284841053187847e-12,
+    "ko6_self_adjoint_error": 0.0,
+    "ko6_odd_grading_error": 0.0,
+    "ko6_reality_error": 0.0,
+    "ko6_grading_reality_error": 0.0
+  },
+  "verdict": {
+    "equivariant_three_node_carrier_pass": true,
+    "raw_spectral_rank_selector_pass": true,
+    "KO6_completion_pass": true,
+    "coarse_order_one_diagram_pass": true,
+    "pati_salam_associative_module_pass": false,
+    "strict_finite_triple_parent_pass": false,
+    "free_relative_sign_removed": true,
+    "same_fluctuation_edge_identification_derived": false,
+    "next_gate": "do not add literal C and color-six fermion nodes; instead derive the wedge selector as a universal two-form or curvature component on the existing Pati-Salam Hilbert module and quotient degree-two junk"
+  }
+}

@@ -1,0 +1,130 @@
+\chapter{Wedge-channel compatibility: KO6, Goldstones и fermion readout}
+
+Археологический gate нашёл exact potential repair
+\(\|H^{\rm dir}-H^{\rm cr}\|^2\). Теперь проверяется, является ли этот
+канал допустимым внутри уже построенного finite block, а не только хорошей
+формулой для potential.
+
+\section{Проверяемые условия совместимости}
+
+В rank-one stationary point имеются шесть отрицательных направлений.
+Wedge-channel должен одновременно выполнить три условия:
+\begin{enumerate}
+ \item дать положительный Hessian contribution ровно на этих шести
+ направлениях;
+ \item не тронуть девять Goldstone directions, которые обязаны остаться
+ нулевыми до gauge fixing;
+ \item исчезнуть в самом физическом vacuum, чтобы не испортить fermion masses.
+\end{enumerate}
+Все три условия ниже проходят.
+
+\section{KO6 embedding}
+
+Определим symmetric right-Majorana channel
+\begin{equation}
+ W_{\dot aI\dot bJ}
+ =\Delta_{\dot aI}\Delta_{\dot bJ}
+ -\Delta_{\dot aJ}\Delta_{\dot bI}.
+ \label{eq:ps-wedge-channel}
+\end{equation}
+Одновременный обмен compound indices сохраняет знак, поэтому
+\begin{equation}
+ W^T=W.
+\end{equation}
+Следовательно, его можно без изменения Hilbert space поместить в уже
+разрешённый \(M_R\)-slot:
+\begin{equation}
+ D_W=D_F(Y=0,M_R=W,M_L=0).
+\end{equation}
+На двухстах random complex \(\Delta\) machine audit даёт нулевые в пределах
+roundoff ошибки для
+\begin{equation}
+ D_W=D_W^\dagger,
+ \qquad
+ \{D_W,\Gamma_F\}=0,
+ \qquad
+ D_WP_J=P_J\overline{D_W}.
+\end{equation}
+Таким образом, wedge-channel совместим с теми же KO6 reality и grading, что
+и исходный Pati--Salam block.
+
+\section{Точный rank Jacobian}
+
+В Standard-Model rank-one точке
+\begin{equation}
+ \Delta_0=
+ \begin{pmatrix}2^{-1/4}&0&0&0\\0&0&0&0\end{pmatrix}
+\end{equation}
+выполняется
+\begin{equation}
+ W(\Delta_0)=0.
+\end{equation}
+Рассмотрим real Jacobian
+\begin{equation}
+ J_W=dW|_{\Delta_0}:
+ \mathbb R^{16}\longrightarrow M_8(\mathbb C)_\mathbb R.
+\end{equation}
+Прямой finite-difference и exact polynomial structure дают
+\begin{equation}
+ \boxed{\rank_\mathbb R J_W=6,\qquad\dim\ker J_W=10.}
+ \label{eq:ps-wedge-jacobian-rank}
+\end{equation}
+Шесть ненулевых singular values равны друг другу с numerical precision.
+Это ровно multiplicity шести отрицательных Hessian directions предыдущего
+gate.
+
+\section{Goldstone и radial kernel}
+
+Infinitesimal action \(SU(2)_R\times SU(4)\) на \(\Delta_0\) имеет orbit
+rank
+\begin{equation}
+ \boxed{9.}
+\end{equation}
+Для всех eighteen Lie-algebra generators проверено
+\begin{equation}
+ J_W\,\delta_{\rm gauge}\Delta_0=0.
+\end{equation}
+После удаления stabilizer это означает, что все девять Goldstone directions
+лежат в kernel wedge-selector. Десятое kernel direction является radial
+variation самой rank-one amplitude; оно также удовлетворяет
+\begin{equation}
+ J_W\,\Delta_0=0.
+\end{equation}
+Следовательно, положительный \(\|W\|^2\) меняет только transverse rank-growth
+modes и не меняет radial scale equation.
+
+\section{Fermion-mass safety}
+
+Поскольку \(W(\Delta_0)=0\), дополнительный channel не создаёт нового
+tree-level Majorana matrix в выбранном vacuum. Он действует как curvature
+penalty away from rank one, но исчезает на shell физического fermion
+readout. Это важное отличие от universal mass shift или независимого
+fundamental scalar VEV.
+
+\begin{theorem}[Wedge compatibility pass]
+Raw direct-minus-crossed wedge-channel является symmetric right-Majorana
+KO6-compatible block. В rank-one Standard-Model vacuum он исчезает, его
+Jacobian имеет rank шесть, все девять Goldstone directions и radial mode
+лежат в kernel. Поэтому найденный \(4\det(\Delta\Delta^\dagger)\) repair
+устраняет ровно unwanted instability, не меняя gauge breaking count и
+tree-level fermion readout.
+\end{theorem}
+
+\section{Что дальше}
+
+Теперь проблема локализована не в potential и не в representation content.
+Остался один structural вопрос: вывести \eqref{eq:ps-wedge-channel} как
+curvature одного doubled-path graph. Следующий block должен содержать direct
+и crossed length-two paths с relative sign, фиксированным grading или
+orientation, и пройти:
+\begin{enumerate}
+ \item fundamental-edge order-one condition;
+ \item \(J_F\)-pairing всех новых intermediate nodes;
+ \item отсутствие свободного relative amplitude;
+ \item восстановление coefficient четыре в physical half-trace;
+ \item полный \((\phi,\Sigma_4,\Delta)\) Hessian.
+\end{enumerate}
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_wedge_channel_compatibility.py} и
+\path{s2t_v4_pati_salam_wedge_channel_compatibility_results.json}.

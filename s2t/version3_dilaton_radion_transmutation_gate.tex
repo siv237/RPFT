@@ -1,0 +1,166 @@
+\chapter{Dilaton--radion action и dimensional transmutation}
+
+Absolute-scale no-go показывает, что классический parent action должен либо
+содержать физическую шкалу, либо порождать её квантово. Рассмотрим сначала
+минимальный classically scale-invariant сектор.
+
+\section{Однополевой классический no-go}
+
+Для дилатона \(\chi\) единственный ренормируемый потенциал без размерных
+коэффициентов имеет вид
+\begin{equation}
+ V_{\mathrm{cl}}(\chi)=\lambda_\chi\chi^4.
+\end{equation}
+При \(\lambda_\chi>0\) единственный минимум равен \(\chi=0\); при
+\(\lambda_\chi=0\) всё направление плоское; при
+\(\lambda_\chi<0\) потенциал не ограничен снизу. Ненулевой устойчивый
+масштаб классически не возникает.
+
+\section{Два scale-поля}
+
+Пусть \(\rho\) --- radion-модуль той же массовой размерности. Потенциал
+\begin{equation}
+ V_{\mathrm{ratio}}
+ =\lambda\left(\rho^2-\alpha\chi^2\right)^2
+\end{equation}
+фиксирует отношение
+\begin{equation}
+ \frac{\rho}{\chi}=\sqrt\alpha,
+\end{equation}
+но сохраняет общее преобразование
+\begin{equation}
+ (\chi,\rho)\longmapsto t(\chi,\rho).
+\end{equation}
+В точке \((\chi,\rho)=(1,\sqrt\alpha)\) Hessian имеет собственные значения
+\begin{equation}
+ 8\alpha\lambda(\alpha+1),
+ \qquad 0.
+\end{equation}
+Нулевая мода является неизбежным классическим дилатоном.
+
+\begin{theorem}[Classical dilaton flat-direction no-go]
+Полиномиальный classically scale-invariant dilaton--radion potential может
+фиксировать безразмерные отношения vacuum expectation values, но не
+абсолютный общий масштаб. Любой ненулевой классический vacuum образует
+непрерывную scale-орбиту.
+\end{theorem}
+
+\section{Radius-inversion кандидат}
+
+Функционал
+\begin{equation}
+ V_{\mathrm{dual}}(\varphi)
+ =A\left(e^{2\varphi}+e^{-2\varphi}-2\right),
+ \qquad
+ R=R_0e^\varphi,
+\end{equation}
+имеет единственный минимум \(R=R_0\). Но равенство коэффициентов двух
+экспонент требует симметрии
+\begin{equation}
+ \varphi\longmapsto-\varphi,
+ \qquad
+ R\longmapsto\frac{R_0^2}{R}.
+\end{equation}
+Обычный momentum-only спектр поля на окружности такой radius inversion не
+реализует. Для неё необходимы winding states, dual field или отдельно
+доказанная modular symmetry.
+
+\begin{nogocriterion}[Unproved radius duality]
+Потенциал \(V_{\mathrm{dual}}\) запрещено использовать для фиксации
+\(R=R_0\), пока radius inversion не выведена из объявленного field menu.
+Иначе равенство коэффициентов является скрытой scale-настройкой.
+\end{nogocriterion}
+
+\section{Coleman--Weinberg кандидат}
+
+Квантовая scale anomaly допускает эффективный потенциал
+\begin{equation}
+ V_{\mathrm{CW}}(\chi)
+ =B\chi^4
+ \left(
+ \log\frac{\chi^2}{\mu^2}-\frac12
+ \right),
+ \qquad B>0.
+\end{equation}
+Он удовлетворяет
+\begin{equation}
+ V_{\mathrm{CW}}'(\mu)=0,
+ \qquad
+ V_{\mathrm{CW}}''(\mu)=8B\mu^2>0.
+\end{equation}
+Минимальная совместная конструкция имеет вид
+\begin{equation}
+ V_{\mathrm{joint}}(\chi,D_F)
+ =
+ V_{\mathrm{CW}}(\chi)
+ +\chi^4\Tr_{\mathrm{orb}}
+ \left(
+ \frac{D_F^2}{\chi^2}-\mathbf1
+ \right)^2.
+\end{equation}
+Её минимум даёт
+\begin{equation}
+ \chi=\mu,
+ \qquad
+ D_F^2=\mu^2\mathbf1,
+ \qquad
+ |x|=|z|=\frac{\mu}{\sqrt2}.
+\end{equation}
+При идентификации \(\chi=R^{-1}\) одновременно стабилизируется
+\begin{equation}
+ R_*=\mu^{-1}.
+\end{equation}
+
+\begin{proposition}[Quantum joint-vacuum candidate]
+Coleman--Weinberg anomaly может одним vacuum equation связать dilaton,
+radion и конечный Dirac scale. При \(B>0\) scale-direction получает
+положительную массу, а finite-Dirac направления сохраняют положительный
+flattening Hessian.
+\end{proposition}
+
+\section{Что ещё не выведено}
+
+Параметр \(\mu\) в фиксированном порядке является renormalization point.
+Физическая transmutation scale должна быть записана как RG-инвариант
+\begin{equation}
+ \Lambda_{\mathrm{DT}}
+ =
+ \mu
+ \exp\left(
+ -\int^{g(\mu)}
+ \frac{dg}{\beta(g)}
+ \right).
+\end{equation}
+Её численное значение определяется beta-функциями и граничным значением
+хотя бы одной безразмерной связи. Поэтому dimensional transmutation
+заменяет явный mass parameter на quantum boundary condition; она не
+предсказывает число без полного RG-модуля.
+
+В текущей версии не вычислены:
+\begin{enumerate}
+ \item коэффициент \(B\) из полного KO6 finite module и KK-башен;
+ \item знак \(B\) после ghost, gauge и fermion contributions;
+ \item RG boundary condition для dimensionless couplings;
+ \item backreaction дилатона на factor measures и orbit half-trace.
+\end{enumerate}
+
+\begin{nogocriterion}[Quantum scale gate]
+Dilaton--radion branch считается закрытой положительно только если один
+пререгистрированный spectrum вычисляет \(B>0\), beta-функции и
+\(\Lambda_{\mathrm{DT}}\) без использования лептонных масс как boundary
+condition. В противном случае \(\mu\) остаётся переименованным scale input.
+\end{nogocriterion}
+
+\section{Следующий вычислительный шаг}
+
+Следующий аудит должен построить spectrum ledger полного кандидата и
+вычислить supertrace коэффициент Coleman--Weinberg:
+\begin{equation}
+ B\propto
+ \Str M^4(\chi)/\chi^4.
+\end{equation}
+Первый kill-критерий прост: если \(B\le0\), минимальный quantum vacuum
+неустойчив и dilaton--radion маршрут закрывается в текущем field menu.
+
+Машинный аудит сохранён в
+\path{s2t_v3_dilaton_radion_transmutation_results.json}.

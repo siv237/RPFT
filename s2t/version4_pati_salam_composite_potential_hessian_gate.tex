@@ -1,0 +1,168 @@
+\chapter{Composite Pati--Salam potential: exact rank-one Hessian no-go}
+
+Generalized inner fluctuation уже вывел composite fields из project finite
+Dirac block. Теперь они не считаются независимыми fundamental variables:
+spectral potential вычисляется после буквальной подстановки
+\(Y(\phi,\Sigma_4)\) и \(H_R(\Delta)\) в physical half-trace конечного
+оператора.
+
+\section{Что известно и чего нет в литературе}
+
+Первичная работа arXiv:1507.08161 перечисляет composite content
+\begin{equation}
+ \phi\sim(2_R,2_L,1),\qquad
+ \Delta\sim(2_R,1_L,4),\qquad
+ \Sigma_4\sim(1_R,1_L,15),
+\end{equation}
+но прямо оставляет полный анализ composite scalar potential будущей работе.
+Поэтому ниже не импортируется готовый phenomenological ansatz: potential
+вычисляется из уже проверенного project operator.
+
+\section{High-scale reduction}
+
+Чтобы сохранить weak \(SU(2)_L\) на Pati--Salam scale, необходимо
+\begin{equation}
+ \langle\phi\rangle=0.
+\end{equation}
+Но composite Yukawa block имеет вид
+\begin{align}
+ Y={}&(k^\nu\phi+k^e\widetilde\phi)\Sigma_4
+ +(k^u\phi+k^d\widetilde\phi)(I_4-\Sigma_4).
+\end{align}
+Следовательно,
+\begin{equation}
+ \boxed{\phi=0\quad\Longrightarrow\quad Y=0}
+\end{equation}
+для любого \(\Sigma_4\). Weak-singlet adjoint на этом background является
+точно flat и не может самостоятельно выбрать high-scale vacuum.
+
+Остаётся right-Majorana block
+\begin{equation}
+ H_{\dot aI\dot bJ}
+ =k^{\nu_R*}\Delta_{\dot aJ}\Delta_{\dot bI}.
+\end{equation}
+Константа \(k^{\nu_R}\) поглощается в normalization поля и не влияет на
+Hessian signature.
+
+\section{Exact physical half-traces}
+
+Обозначим
+\begin{equation}
+ \rho=\Tr(\Delta^\dagger\Delta),
+ \qquad
+ \tau=\Tr[(\Delta^\dagger\Delta)^2].
+\end{equation}
+Прямое умножение полного 32-by-32 KO6 operator даёт
+\begin{align}
+ \frac12\Tr D_F^2&=\rho^2,\\
+ \frac12\Tr D_F^4&=\tau^2.
+ \label{eq:composite-ps-half-traces}
+\end{align}
+Factor \(1/2\) удаляет particle--antiparticle doubling. Сто random complex
+\(2\times4\) matrices подтверждают identities
+\eqref{eq:composite-ps-half-traces} с абсолютной ошибкой ниже
+\(2\times10^{-10}\).
+
+После положительного rescaling coefficients общий vacuum-equivalent
+potential имеет нормированную форму
+\begin{equation}
+ \boxed{V_\Delta=-\rho^2+\tau^2.}
+ \label{eq:composite-ps-potential}
+\end{equation}
+
+\section{Желаемый rank-one saddle}
+
+Gauge transformations приводят \(\Delta\) к singular-value form. Standard
+Model stabilizer требует rank one, поэтому берём
+\begin{equation}
+ \Delta_{\rm SM}
+ =\begin{pmatrix}v&0&0&0\\0&0&0&0\end{pmatrix},
+ \qquad
+ v=2^{-1/4}.
+\end{equation}
+Это stationary point с
+\begin{equation}
+ V(\Delta_{\rm SM})=-\frac14.
+\end{equation}
+Exact Hessian на всех 16 real components \(\Delta\) имеет spectrum
+\begin{equation}
+ \boxed{
+ 8\sqrt2\ (1),\qquad
+ 0\ (9),\qquad
+ -2\sqrt2\ (6).}
+ \label{eq:composite-ps-rank-one-hessian}
+\end{equation}
+Девять zero modes совпадают с числом broken Pati--Salam generators, но шесть
+оставшихся directions отрицательны. Поэтому это не vacuum, а saddle.
+
+\section{Нежелательный stationary orbit}
+
+Нижний stationary orbit имеет два равных singular values,
+\begin{equation}
+ \Delta_{(2)}
+ =\begin{pmatrix}v&0&0&0\\0&v&0&0\end{pmatrix},
+ \qquad
+ V(\Delta_{(2)})=-1.
+\end{equation}
+Его Hessian spectrum равен
+\begin{equation}
+ 16\sqrt2\ (1),\qquad
+ 8\sqrt2\ (3),\qquad
+ 0\ (12),
+\end{equation}
+то есть отрицательных directions нет. Однако rank-two condensate разрушает
+four-color до subgroup с двумя color doublets и locking с \(SU(2)_R\), а не
+до \(SU(3)_c\times U(1)_Y\). Энергетически предпочтённый orbit не является
+Standard Model vacuum.
+
+\section{Почему universal singlet снова не помогает}
+
+Пусть connected или external singlet меняет только radial dependence:
+\begin{equation}
+ V=f(\rho)+b\tau^2,
+ \qquad b>0.
+\end{equation}
+Для singular squares \((p,q)\) rank-one point имеет \(q=0\). Radial
+stationarity требует
+\begin{equation}
+ f'(p)+4bp^3=0.
+\end{equation}
+Но coefficient при включении второго singular value равен
+\begin{equation}
+ \left.\frac{\partial V}{\partial q}\right|_{q=0}
+ =f'(p)=-4bp^3<0.
+\end{equation}
+Следовательно, любая поправка, зависящая только от общей нормы
+\(\Delta\), оставляет rank-growth instability.
+
+\begin{theorem}[Composite rank-one no-go]
+Минимальный constrained composite spectral Pati--Salam branch не имеет
+устойчивого Pati--Salam-to-Standard-Model vacuum. Weak preservation делает
+\(\Sigma_4\) flat, желаемый rank-one \(\Delta\)-orbit имеет шесть exact
+negative Hessian modes, а global lower orbit имеет rank two и неправильный
+unbroken subgroup. Norm-only singlet extension не меняет этот verdict.
+\end{theorem}
+
+\section{Конструктивное указание для улучшения}
+
+Следующая модель должна породить не ещё один universal mass coefficient, а
+rank-sensitive invariant. Минимальный target имеет вид
+\begin{equation}
+ c_{\det}\det(\Delta\Delta^\dagger)
+\end{equation}
+или эквивалентное coupling к independent connected adjoint, которое
+различает rank one и rank two. Его coefficient должен быть выведен из
+расширенного finite geometry; добавлять его вручную нельзя.
+
+\section{Литература и воспроизводимость}
+
+Composite field formulas и statement о незавершённом potential analysis
+сверены с A.~H.~Chamseddine, A.~Connes, W.~D.~van Suijlekom,
+\emph{Grand Unification in the Spectral Pati--Salam Model},
+arXiv:1507.08161. Fundamental-branch vacuum obstruction сопоставлен с
+H.~Karimi, \emph{Symmetry Breaking and Proton Decay in Spectral Pati--Salam
+Model}, arXiv:1905.04533.
+
+Exact symbolic Hessian и full-matrix trace audit сохранены в
+\path{s2t_v4_pati_salam_composite_potential_hessian.py} и
+\path{s2t_v4_pati_salam_composite_potential_hessian_results.json}.

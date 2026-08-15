@@ -1,0 +1,80 @@
+\chapter{Boundary connector: минимальная структурная спецификация}
+
+Новый boundary action должен решить три задачи из одного источника:
+разрушить family degeneracy, выбрать CP orientation и создать portal между
+Version III.H и observed sector. Чтобы это не превратилось в три независимых
+коэффициента, сначала классифицируем минимальные connector packages по
+структурным возможностям.
+
+\section{Обязательные свойства}
+
+Кандидат проходит первый boundary gate только если одновременно:
+\begin{enumerate}
+\item содержит off-diagonal finite edge между hidden и observed blocks;
+\item допускает nonzero portal, возникающий из того же connector orbit;
+\item несёт family-triplet datum, способный действовать на
+\(\operatorname{im}P_3\);
+\item содержит closed oriented path с rephasing-invariant phase;
+\item является anomaly-free до интегрирования тяжёлых messengers.
+\end{enumerate}
+
+\section{Restricted connector menu}
+
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.25\textwidth}ccccc}
+\toprule
+Package & Edge & Portal & Family & CP loop & Anomaly \\
+\midrule
+Direct sum & no & no & no & no & yes \\
+Один scalar triplet & no & yes & yes & no & yes \\
+Одна vectorlike pair & yes & yes & no & no & yes \\
+Triplet + одна messenger chain & yes & yes & yes & no & yes \\
+Two-path vectorlike triplet cycle & yes & yes & yes & yes & yes \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{theorem}[Single-connector no-go в restricted menu]
+Ни один single-field orbit и ни одна открытая messenger chain не могут
+одновременно породить portal, family breaking и физическую CP phase. Scalar
+triplet не создаёт off-diagonal spectral bridge; одна vectorlike pair не
+несёт family carrier; одна chain не содержит gauge-invariant closed phase и
+остаётся rephasing-real.
+\end{theorem}
+
+Первый package, проходящий capability gate, содержит две vectorlike messenger
+paths и один family-triplet connector. Схематически:
+\begin{equation}
+\Psi_{\rm obs}
+\longrightarrow X_1
+\mathrel{\substack{\longrightarrow\\[-0.6ex]\longrightarrow}}
+X_2
+\longrightarrow\Psi_{\rm obs},
+\end{equation}
+где две средние arrows являются неэквивалентными family/orientation edges, а
+хотя бы один промежуточный orbit несёт hidden charge. Замкнутая разность двух
+paths может содержать rephasing-invariant Wilson/Krajewski phase.
+
+\section{Статус минимальности}
+
+Полученный минимум относится только к объявленному renormalizable connector
+menu. Он не доказывает существование допустимой real finite geometry.
+Следующие условия ещё обязательны:
+\begin{enumerate}
+\item совместимость с \(J\), grading и order-one condition;
+\item явная таблица SM representations и hidden charges;
+\item cancellation всех continuous и discrete anomalies;
+\item доказательство, что loop phase не удаляется field redefinitions;
+\item вывод relative coefficients portal/family/CP из одного spectral trace;
+\item отсутствие произвольной \(M_3\)-матрицы после интегрирования messengers.
+\end{enumerate}
+
+\begin{nogocriterion}[Запрет capability-to-existence jump]
+Boolean capability pass не является построенным boundary action. Пока не
+предъявлены representation, finite Dirac operator и anomaly ledger, two-path
+cycle считается только первым admissible graph ansatz.
+\end{nogocriterion}
+
+Машинный capability ledger сохранён в
+\path{s2t_v4_boundary_connector_menu_gate_results.json}.

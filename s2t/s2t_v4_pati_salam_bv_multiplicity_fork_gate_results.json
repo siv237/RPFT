@@ -1,0 +1,163 @@
+{
+  "gate": "version4_pati_salam_bv_multiplicity_fork",
+  "existing_module": {
+    "particle_dimension": 16,
+    "KO6_dimension": 32,
+    "contains_relative_chain": false
+  },
+  "relative_chain": {
+    "path": "4bar -> 2_R -> 4",
+    "particle_dimension": 10,
+    "KO6_dimension": 20
+  },
+  "standard_BV_auxiliary": {
+    "contractible_gauge_fixing_pairs": true,
+    "changes_classical_vacuum": false,
+    "can_supply_relative_weight": false
+  },
+  "physical_vectorlike_branch": {
+    "SU4_Dirac_fundamentals": 2,
+    "SU2R_Dirac_doublets": 1,
+    "anomaly_safe": true,
+    "beta_shift_R_L_4": {
+      "R": -0.6666666666666666,
+      "L": 0.0,
+      "4": -1.3333333333333333
+    },
+    "base_running": {
+      "composite": {
+        "breaking_scale_GeV": 10317136647571.07,
+        "best_unification_scale_GeV": 1.53996124580921e+16,
+        "couplings_R_L_4": [
+          0.5071955160047775,
+          0.5232216052358131,
+          0.5071955174187863
+        ],
+        "relative_spread": 0.031268127280109644
+      },
+      "composite_plus_1_1_15": {
+        "breaking_scale_GeV": 10317136647571.07,
+        "best_unification_scale_GeV": 6.6419910884042984e+16,
+        "couplings_R_L_4": [
+          0.5044008688419572,
+          0.5192889551567372,
+          0.5044008905026867
+        ],
+        "relative_spread": 0.02922880069912213
+      },
+      "fundamental": {
+        "breaking_scale_GeV": 10317136647571.07,
+        "best_unification_scale_GeV": 2477550413300071.5,
+        "couplings_R_L_4": [
+          0.5707588260386556,
+          0.5558729913342804,
+          0.5707588176174788
+        ],
+        "relative_spread": 0.02630950306461295
+      },
+      "left_right_fundamental": {
+        "breaking_scale_GeV": 10317136647571.07,
+        "best_unification_scale_GeV": 1233262080397107.2,
+        "couplings_R_L_4": [
+          0.5637705847925744,
+          0.5923415825594103,
+          0.5923415560971105
+        ],
+        "relative_spread": 0.049022168645919684
+      }
+    },
+    "running_with_chain": {
+      "composite": {
+        "breaking_scale_GeV": 10317136647571.07,
+        "best_unification_scale_GeV": 2.9926140131977916e+16,
+        "couplings_R_L_4": [
+          0.5103351235115968,
+          0.5214229921709609,
+          0.510335125675059
+        ],
+        "relative_spread": 0.021570424593008283
+      },
+      "composite_plus_1_1_15": {
+        "breaking_scale_GeV": 10317136647571.07,
+        "best_unification_scale_GeV": 1.7599235119513693e+17,
+        "couplings_R_L_4": [
+          0.5078677828119768,
+          0.516715904748025,
+          0.5078677788982465
+        ],
+        "relative_spread": 0.01732151270714228
+      },
+      "fundamental": {
+        "breaking_scale_GeV": 10317136647571.07,
+        "best_unification_scale_GeV": 3570422747026747.0,
+        "couplings_R_L_4": [
+          0.5792634207501007,
+          0.5566696175308259,
+          0.5792634236825794
+        ],
+        "relative_spread": 0.03951816597013411
+      },
+      "left_right_fundamental": {
+        "breaking_scale_GeV": 10317136647571.07,
+        "best_unification_scale_GeV": 3570423504211141.5,
+        "couplings_R_L_4": [
+          0.5792634231863815,
+          0.6048523239053244,
+          0.6048523241253974
+        ],
+        "relative_spread": 0.04291116429194868
+      }
+    },
+    "passes_one_percent_gate": false
+  },
+  "classical_mapping_cone_branch": {
+    "new_propagating_states": 0,
+    "beta_shift_R_L_4": {
+      "R": 0.0,
+      "L": 0.0,
+      "4": 0.0
+    },
+    "lambda_rule": "lambda_relative=k",
+    "minimal_copy_number": 1,
+    "minimal_choice_derived": false
+  },
+  "copy_number_Hessian": [
+    {
+      "copy_number": 1,
+      "lambda_relative": 1,
+      "determinant_coefficient": 4,
+      "radial_eigenvalue": 11.313708498984761,
+      "gauge_zero_modes": 9,
+      "transverse_eigenvalue": 2.8284271247461903,
+      "transverse_multiplicity": 6
+    },
+    {
+      "copy_number": 2,
+      "lambda_relative": 2,
+      "determinant_coefficient": 8,
+      "radial_eigenvalue": 11.313708498984761,
+      "gauge_zero_modes": 9,
+      "transverse_eigenvalue": 8.485281374238571,
+      "transverse_multiplicity": 6
+    },
+    {
+      "copy_number": 3,
+      "lambda_relative": 3,
+      "determinant_coefficient": 12,
+      "radial_eigenvalue": 11.313708498984761,
+      "gauge_zero_modes": 9,
+      "transverse_eigenvalue": 14.142135623730951,
+      "transverse_multiplicity": 6
+    },
+    {
+      "copy_number": 4,
+      "lambda_relative": 4,
+      "determinant_coefficient": 16,
+      "radial_eigenvalue": 11.313708498984761,
+      "gauge_zero_modes": 9,
+      "transverse_eigenvalue": 19.79898987322333,
+      "transverse_multiplicity": 6
+    }
+  ],
+  "verdict": "standard BV no-go; physical vectorlike versus classical mapping-cone architecture fork"
+}

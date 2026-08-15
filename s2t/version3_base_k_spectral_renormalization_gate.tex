@@ -1,0 +1,177 @@
+\chapter{Base-\(K\) spectral renormalization gate}
+
+Путь base-\(K\) сохраняет построенное четырёхмерное parent action, но
+требует определить finite части determinant без обращения к наблюдаемому
+vacuum scale. Проверим три естественных prescription: zeta-minimal,
+геометрический scale и spectral cutoff.
+
+\section{Общий renormalized functional}
+
+Вдоль общей scale-direction локальная one-loop часть имеет форму
+\begin{equation}
+ V_{\mathrm{1loop}}(\chi)
+ =
+ B\chi^4
+ \left(
+ \log\frac{\chi^2}{\mu^2}-c
+ \right),
+ \qquad
+ B>0,
+\end{equation}
+где zero-mode гейт дал
+\begin{equation}
+ B_0=\frac{67}{64\pi^2}
+\end{equation}
+до curvature-dependent determinant corrections.
+
+Разрешённая renormalized local completion содержит
+\begin{equation}
+ V_{\mathrm{ren}}(\chi)
+ =
+ V_{\mathrm{1loop}}(\chi)
+ +\lambda_2R_K\chi^2
+ +\lambda_4\chi^4
+ +\lambda_0R_K^2.
+\end{equation}
+Последний член не влияет на vacuum equation, но необходим для полной
+гравитационной subtraction scheme.
+
+\section{Zeta-scale ambiguity}
+
+Пусть
+\begin{equation}
+ \mu\longmapsto e^t\mu.
+\end{equation}
+Тогда
+\begin{equation}
+ \log\frac{\chi^2}{e^{2t}\mu^2}
+ =
+ \log\frac{\chi^2}{\mu^2}-2t,
+\end{equation}
+и изменение scale точно поглощается заменой
+\begin{equation}
+ \lambda_4\longmapsto\lambda_4+2Bt.
+\end{equation}
+Следовательно, zeta determinant определяет nonlocal часть, но не отделяет
+канонически \(\mu\) от finite quartic counterterm.
+
+Даже если наложить scale-invariant условие \(\lambda_2=0\), nonzero
+stationary point удовлетворяет
+\begin{equation}
+ \log\frac{\chi_*^2}{\mu^2}
+ =
+ c-\frac12-\frac{\lambda_4}{B},
+\end{equation}
+то есть
+\begin{equation}
+ \frac{\chi_*}{\mu}
+ =
+ \exp\left[
+ \frac12
+ \left(
+ c-\frac12-\frac{\lambda_4}{B}
+ \right)
+ \right].
+\end{equation}
+Произвольная finite часть \(\lambda_4\) непрерывно сдвигает даже
+безразмерное отношение \(\chi_*/\mu\).
+
+\begin{nogocriterion}[Zeta-minimal no-go]
+Условие «finite counterterms равны нулю» является допустимой схемой, но
+не следствием spectrum. Без дополнительного normalization principle
+zeta-minimal prescription не превращает \(\chi_*/\mu\) в предсказание.
+\end{nogocriterion}
+
+\section{Геометрический выбор \(\mu=R^{-1}\)}
+
+На фиксированном unit-radius фоне можно положить
+\begin{equation}
+ \mu=R^{-1}.
+\end{equation}
+Это устраняет отдельную размерную константу и переводит vacuum equation в
+условие для \(\chi R\). Однако при homothety
+\begin{equation}
+ R\longmapsto sR
+\end{equation}
+масштаб \(\mu\) также меняется. Поэтому prescription фиксирует только
+dimensionless ratio и не выбирает абсолютный физический scale.
+
+Кроме того, quartic ambiguity сохраняется:
+\begin{equation}
+ \chi_*R
+ =
+ \exp\left[
+ \frac12
+ \left(
+ c-\frac12-\frac{\lambda_4}{B}
+ \right)
+ \right].
+\end{equation}
+Геометрическая единица длины не фиксирует finite subtraction constant.
+
+\begin{proposition}[Geometric-scale partial pass]
+Выбор \(\mu=R^{-1}\) совместим с base-\(K\) геометрией и не вводит новый
+размерный параметр, но без вывода \(\lambda_4\) он не предсказывает даже
+\(\chi R\). Абсолютный scale остаётся homothety-модулем.
+\end{proposition}
+
+\section{Spectral cutoff branch}
+
+Обычный spectral action вводит cutoff \(\Lambda\) и moments spectral
+function. Тогда bare coefficients имеют вид
+\begin{equation}
+ \lambda_2=\lambda_2(f_2,\Lambda),
+ \qquad
+ \lambda_4=\lambda_4(f_0).
+\end{equation}
+Эта схема действительно может задать renormalization boundary condition,
+но \(f_0,f_2\) и \(\Lambda\) являются новыми непрерывными входами, если не
+выведены из динамики dilaton/radion sector. Нормировка scalar kinetic term
+устраняет один общий множитель, но не фиксирует независимо все relevant
+moments.
+
+\begin{nogocriterion}[Spectral-moment input rule]
+Использование \(\Lambda,f_0,f_2\) для выбора vacuum допустимо только как
+расширенная модель с явно объявленными train inputs. Оно не является
+parameter-free завершением текущей версии III.
+\end{nogocriterion}
+
+\section{Вердикт subtraction gate}
+
+\begin{center}
+\begin{tabular}{p{0.25\textwidth}p{0.27\textwidth}p{0.32\textwidth}}
+\toprule
+Prescription & Что фиксирует & Оставшаяся свобода \\
+\midrule
+zeta-minimal & конкретную вычислительную схему & \(\mu\) и эквивалентная finite \(\lambda_4\) \\
+геометрическая \(\mu=R^{-1}\) & отсутствие нового dimensionful input & finite \(\lambda_4\), homothety scale \\
+spectral cutoff & bare boundary condition & \(\Lambda,f_0,f_2\) как continuous inputs \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{theorem}[Base-\(K\) renormalization no-go]
+Ни zeta-minimal, ни геометрический scale, ни обычный spectral cutoff не
+фиксируют parameter-free vacuum текущего parent action. Положительный
+\(B_0\) обеспечивает возможность Coleman--Weinberg минимума после выбора
+scheme, но его положение остаётся renormalization datum.
+\end{theorem}
+
+Следовательно, base-\(K\) путь не закрывается как абсолютная
+предсказательная теория. Его корректный статус --- renormalizable
+four-dimensional effective parent action с выведенными относительными
+коэффициентами и одним открытым scale-setting condition.
+
+\begin{protocol}[Следующий конструктивный выбор]
+Остаются два непересекающихся продолжения:
+\begin{enumerate}
+ \item принять один scale-setting observable как явный train input и
+ проверять только dimensionless blind ratios;
+ \item искать новую динамическую symmetry, RG fixed point или anomaly
+ condition, которая фиксирует finite \(\lambda_4/B\) без mass data.
+\end{enumerate}
+До такого выбора запрещено объявлять абсолютный \(\chi_*\) предсказанием.
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_base_k_spectral_renormalization_results.json}.

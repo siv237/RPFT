@@ -1,0 +1,84 @@
+\chapter{Orientation-odd incidence: снятие вырождения и новый CP no-go}
+
+Real-incidence menu не содержит CP phase. Добавим канонический orientation-odd
+quadrature directed three-cycle:
+\begin{equation}
+H_P=\frac{P+P^\dagger}{2},
+\qquad
+K_P=\frac{P-P^\dagger}{2i},
+\end{equation}
+и рассмотрим наиболее общий linear Hermitian operator без fitted complex
+coefficient,
+\begin{equation}
+X_P(r)=H_P+rK_P,
+\qquad r\in\mathbb R.
+\end{equation}
+
+\section{Spectrum}
+
+Для каждого из восьми directed three-cycles spectrum равен
+\begin{equation}
+\Spec X_P(r)=
+\left(
+1,
+-\frac12+\frac{\sqrt3}{2}r,
+-\frac12-\frac{\sqrt3}{2}r
+\right).
+\end{equation}
+Таким образом, orientation-odd component действительно снимает исходное
+двукратное вырождение при generic \(r\ne0\). В частности, \(r=\pm1\)
+фиксирует nondegenerate algebraic spectrum без непрерывной фазы.
+
+\section{Physical CP test}
+
+Если \(X_u,X_d\) интерпретируются как Hermitian Yukawa/mass operators, то
+физические squared-mass matrices равны
+\begin{equation}
+\mathcal H_u=X_u^2,
+\qquad
+\mathcal H_d=X_d^2.
+\end{equation}
+Ненулевой CKM CP invariant потребовал бы
+\begin{equation}
+\Tr[\mathcal H_u,\mathcal H_d]^3\ne0.
+\end{equation}
+
+Проведён exact symbolic scan всех 28 unordered pairs восьми directed
+three-cycles с независимыми вещественными coefficients \(r_u,r_d\). Для
+каждой пары получено тождество
+\begin{equation}
+\boxed{\Tr[\mathcal H_u,\mathcal H_d]^3\equiv0.}
+\end{equation}
+
+\begin{theorem}[Linear orientation CP no-go]
+Добавление одного orientation-odd quadrature \(K_P\) в каждом секторе снимает
+spectral degeneracy, но не создаёт CKM CP violation. Результат верен для
+любых вещественных \(r_u,r_d\) и любого выбора двух directed three-cycles из
+текущего menu.
+\end{theorem}
+
+Следовательно, наличие явно мнимых matrix elements ещё не гарантирует
+физическую CP phase: pairwise structure остаётся rephasing-real.
+
+\section{Дискретный mixing test при \texorpdfstring{\(r=1\)}{r=1}}
+
+При equal unit normalization все 28 sector pairs дают только три absolute
+overlap patterns. Четыре pairs дают permutation matrix, эквивалентную простой
+перенумерации family labels. Остальные 24 pairs имеют большие элементы
+\begin{equation}
+\left\{\frac13,\frac23\right\}
+\end{equation}
+в каждой строке и не создают near-diagonal hierarchical mixing. Таким
+образом, беспараметрический unit-weight вариант не воспроизводит качественную
+структуру CKM даже до CP-теста.
+
+\begin{nogocriterion}[Запрет объявления CP pass по комплексным entries]
+Комплексный вид \(X_P(r)\) не является доказательством CP violation. Pass
+разрешён только при ненулевом basis-invariant trace-cube или эквивалентном
+Jarlskog invariant физических squared-mass operators.
+\end{nogocriterion}
+
+Минимальный следующий выход требует третьего noncommuting layer или
+cross-sector orientation invariant, который нельзя свести к одному
+three-cycle quadrature в каждом секторе. Машинный symbolic ledger сохранён в
+\path{s2t_v4_orientation_odd_cp_gate_results.json}.

@@ -1,0 +1,24 @@
+{
+  "gate": "version4_gibbs_fisher_geometry",
+  "date": "2026-08-11",
+  "formula": "I_x=4 Var(mu)/r^4",
+  "candidates": [
+    {
+      "name": "S4",
+      "radius_over_sigma": 1.3513921956865422,
+      "density": -0.005493360847150809,
+      "Fisher_log_radius": 7.633014571722754,
+      "Jeffreys_log_radius": 2.7627910836186573,
+      "Fisher_normalized_hessian": 0.005880268222690372
+    },
+    {
+      "name": "S2xS2",
+      "radius_over_sigma": 0.9501657702655415,
+      "density": -0.004476475283184661,
+      "Fisher_log_radius": 8.71311723500692,
+      "Jeffreys_log_radius": 2.951798982825036,
+      "Fisher_normalized_hessian": 0.004560991252148238
+    }
+  ],
+  "verdict": "canonical radial measure derived; relative topology prior open"
+}

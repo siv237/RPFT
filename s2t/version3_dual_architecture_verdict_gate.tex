@@ -1,0 +1,147 @@
+\chapter{Проверка обеих архитектур: determinant и internal kernel}
+
+Размерностный гейт оставил две допустимые интерпретации. Теперь проверим
+каждую по собственному критерию замыкания, не смешивая их спектральные
+суммы.
+
+\section{Путь A: полный determinant на base-\(K\)}
+
+Если \(K\) является евклидовой четырёхмерной базой, one-loop functional
+задаётся непосредственно gauge-fixed determinant-комбинацией
+\begin{equation}
+ \Gamma_K^{(1)}(\chi)
+ =
+ \frac12\sum_b n_b\log\det_\zeta
+ \bigl(P_b+c_b\chi^2\bigr)
+ -
+ \frac12\sum_f n_f\log\det_\zeta
+ \bigl(P_f+c_f\chi^2\bigr).
+\end{equation}
+Здесь vector, Goldstone и ghost terms должны объединяться до снятия
+регулятора. Дополнительной KK-суммы нет.
+
+Такой determinant математически определим после выбора scale \(\mu\), но
+его vacuum location не задаётся одним spectrum. В четырёх измерениях
+локальная renormalized action допускает, в частности,
+\begin{equation}
+ \delta V_{\mathrm{loc}}(\chi)
+ =\lambda_2R_K\chi^2+\lambda_4\chi^4.
+\end{equation}
+Для любого заранее выбранного \(\chi_* >0\) и любого finite determinant
+derivative \(F'(\chi_*)\) можно выбрать
+\begin{equation}
+ \lambda_2
+ =-\frac{F'(\chi_*)+4\lambda_4\chi_*^3}
+ {2R_K\chi_*},
+\end{equation}
+после чего
+\begin{equation}
+ \frac{d}{d\chi}
+ \left(F+\delta V_{\mathrm{loc}}\right)_{\chi=\chi_*}=0.
+\end{equation}
+Следовательно, без заранее фиксированных renormalization conditions
+положение минимума не является спектральным предсказанием.
+
+\begin{nogocriterion}[Base-\(K\) counterterm no-go]
+Zeta-determinant на компактном \(K\) не выбирает абсолютный vacuum scale
+parameter-free, пока parent action не фиксирует finite части
+\(\lambda_2,\lambda_4\) и scale \(\mu\). Положительный zero-mode
+Coleman--Weinberg coefficient является локальным тестом устойчивости, но
+не устраняет эту свободу.
+\end{nogocriterion}
+
+Таким образом, путь A остаётся корректной 4D effective theory, но его
+полный determinant требует renormalization prescription как физической
+части модели. Простое применение minimal subtraction не является выводом
+из геометрии.
+
+\section{Путь B: \(K\) как внутренний spinorial factor}
+
+Рассмотрим все spin-структуры и произвольный плоский unitary character
+\(\rho_{\mathrm{flat}}\). Для twisted geometric Dirac operator
+\(D_{K,\rho}\) curvature плоской линии равна нулю, поэтому
+\begin{equation}
+ D_{K,\rho}^2
+ =\nabla_\rho^*\nabla_\rho+\frac{R_K}{4}.
+\end{equation}
+На единичном круглом носителе
+\begin{equation}
+ R_K=R_{\mathbb{RP}^3}+R_{S^1}=6+0=6.
+\end{equation}
+Для любой spin/flat ветви и любого spinor \(\psi\)
+\begin{equation}
+ \|D_{K,\rho}\psi\|^2
+ =\|\nabla_\rho\psi\|^2+\frac32\|\psi\|^2.
+\end{equation}
+Следовательно,
+\begin{equation}
+ \ker D_{K,\rho}=0.
+\end{equation}
+
+Этот вывод одновременно покрывает четыре product spin-структуры
+\begin{equation}
+ (\epsilon_{\mathbb{RP}^3},\epsilon_{S^1})
+ \in\mathbb Z_2\times\mathbb Z_2
+\end{equation}
+и все плоские holonomy characters: они меняют глобальные граничные
+условия, но не добавляют curvature term, способный отменить
+\(R_K/4>0\).
+
+\begin{theorem}[Flat-twist internal no-go]
+Ни одна spin-структура на \(\mathbb{RP}^3\times S^1\) и ни один плоский
+unitary twist не создают harmonic spinor zero-mode геометрического
+internal Dirac operator. Поэтому frozen internal-\(K\) field menu не
+порождает две четырёхмерные Dirac-пары finite parent block.
+\end{theorem}
+
+Периодическая spin-структура на \(S^1\) имеет нулевой circle momentum, но
+это не создаёт kernel полного product operator: положительный
+\(\mathbb{RP}^3\) Dirac gap остаётся. Анти-периодическая ветвь только
+увеличивает gap.
+
+\section{Сопоставление результатов}
+
+\begin{center}
+\begin{tabular}{p{0.19\textwidth}p{0.31\textwidth}p{0.34\textwidth}}
+\toprule
+Путь & Что проходит & Что блокирует замыкание \\
+\midrule
+base-\(K\)
+& локальный 4D parent block, \(g^2=3/8\), положительный zero-mode \(B\)
+& finite counterterms и renormalization scale не выведены \\
+internal-\(K\)
+& топология, четыре spin-ветви и плоские characters заданы
+& geometric spinor kernel пуст во всех flat ветвях \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{theorem}[Dual-architecture verdict]
+Обе ветви проверены и ни одна пока не даёт parameter-free UV completion.
+Путь A является жизнеспособной effective theory, но не предсказывает
+абсолютный минимум без renormalization data. Путь B закрывается
+отрицательно для всех существующих flat spinorial lifts, поскольку не
+воспроизводит fermion zero-modes.
+\end{theorem}
+
+Это сужает дальнейший поиск до двух честных вариантов:
+\begin{enumerate}
+ \item вывести finite counterterms base-\(K\) determinant из одной
+ spectral renormalization condition;
+ \item добавить в internal-\(K\) branch неплоский curvature/defect
+ operator с защищённым kernel и заново пройти anomaly, trace и
+ normalization gates.
+\end{enumerate}
+Второй вариант является новой UV-моделью; первый сохраняет текущий 4D
+parent action, но требует завершения quantum measure.
+
+\begin{protocol}[Следующий приоритет]
+Минимальным продолжением выбирается base-\(K\) renormalization gate,
+поскольку он не меняет field content уже закрытого zero-mode действия.
+Нужно проверить, фиксирует ли spectral action finite части
+\(\lambda_2,\lambda_4\) одной общей subtraction condition. Internal
+nonflat lift сохраняется как резервная новая версия.
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_dual_architecture_verdict_results.json}.

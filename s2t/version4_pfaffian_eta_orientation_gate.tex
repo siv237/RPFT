@@ -1,0 +1,115 @@
+\chapter{Pfaffian и \texorpdfstring{\(\eta\)}{eta}-phase: reduced sign и KO6 cancellation}
+
+Bosonic spectral action не различает две orientation branches. Проверим,
+содержит ли fermionic measure дополнительную фазовую информацию.
+
+\section{Каноническая chiral antisymmetric form}
+
+В plus--minus ordering bipartite primary operator имеет вид
+\begin{equation}
+ D_{\rm red}=
+ \begin{pmatrix}
+ 0&M\\
+ M^T&0
+ \end{pmatrix},
+ \qquad
+ \gamma=
+ \begin{pmatrix}
+ I_6&0\\0&-I_6
+ \end{pmatrix}.
+\end{equation}
+Поэтому
+\begin{equation}
+ \mathcal A_{\rm red}:=\gamma D_{\rm red}
+ =
+ \begin{pmatrix}
+ 0&M\\
+ -M^T&0
+ \end{pmatrix}
+\end{equation}
+антисимметрична и допускает Pfaffian. При выбранной orientation Grassmann
+basis
+\begin{equation}
+ \operatorname{Pf}\mathcal A_{\rm red}
+ =
+ (-1)^{6\cdot5/2}\det M
+ =-\det M.
+\end{equation}
+
+Для двух minima точный расчёт даёт
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Ветвь & \(\det M\) & \(\operatorname{Pf}\mathcal A_{\rm red}\)\\
+\midrule
+\(\mathcal B_-\) & \(+3/2\) & \(-3/2\)\\
+\(\mathcal B_+\) & \(-3/2\) & \(+3/2\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{proposition}[Conditional reduced Pfaffian phase]
+На одном ориентированном reduced representative две branches различаются
+relative Pfaffian phase \(\pi\), хотя их bosonic spectra совпадают.
+\end{proposition}
+
+\section{Полное KO6-сокращение}
+
+KO6 completion добавляет \(J\)-сопряжённую копию с противоположной grading.
+Полная antisymmetric form имеет block structure
+\begin{equation}
+ \mathcal A_{\rm full}
+ =
+ \mathcal A_{\rm red}\oplus(-\overline{\mathcal A}_{\rm red}).
+\end{equation}
+Поскольку reduced block имеет dimension \(12=2\cdot6\),
+\begin{equation}
+ \operatorname{Pf}\mathcal A_{\rm full}
+ =
+ \left|\operatorname{Pf}\mathcal A_{\rm red}\right|^2
+ =\frac94
+\end{equation}
+в обеих branches. Полный \(J\)-paired functional measure теряет relative
+phase.
+
+\begin{theorem}[Full KO6 Pfaffian cancellation]
+Если интегрировать обе \(J\)-сопряжённые copies как независимые Grassmann
+variables, Pfaffian orientation sign сокращается. Selector может сохраниться
+только в physical reality-orbit measure, считающей одну copy, а не в полном
+doubled Pfaffian.
+\end{theorem}
+
+\section{Почему reduced sign ещё не является предсказанием}
+
+Нечётная перестановка Grassmann basis меняет знак reduced Pfaffian. Поэтому
+для физического relative sign нужна глобально заданная orientation
+determinant line, которой текущий finite graph не выводит.
+
+Кроме того, при непрерывном complex connector \(z=e^{i\theta}\)
+\begin{align}
+ \det M_-&=\frac12(z+2)z^{-3},\\
+ \det M_+&=-\frac12(z-2)z^{-3}.
+\end{align}
+На единичной окружности эти determinants не обращаются в нуль. Их phases
+могут непрерывно вращаться, поэтому real signs в minima не являются
+\(\mathbb Z_2\)-индексом полного complex configuration space.
+
+Наконец, chiral symmetry даёт
+\begin{equation}
+ \eta(D_-)=\eta(D_+)=0.
+\end{equation}
+Pfaffian sign создаёт quantum relative sign, но не разность вещественных
+vacuum energies и сам по себе не выбирает одну classical branch.
+
+\begin{nogocriterion}[Запрет неориентированного Pfaffian selector]
+Нельзя считать branch выбранной только потому, что reduced Pfaffians имеют
+разные знаки. Требуется вывести orientation determinant line и показать,
+почему physical measure использует один reality representative, тогда как
+\(J\)-copy обеспечивает consistency, но не умножает Pfaffian обратно.
+\end{nogocriterion}
+
+Итак, Pfaffian route не закрыт отрицательно: он впервые обнаруживает relative
+phase \(\pi\). Но phase условна и сокращается в полном KO6 measure.
+Следующий гейт --- determinant-line/anomaly-inflow construction, способная
+сделать reduced sign basis-independent. Exact ledger сохранён в
+\path{s2t_v4_pfaffian_eta_orientation_gate_results.json}.

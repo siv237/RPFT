@@ -1,0 +1,28 @@
+{
+  "gate": "version4_affine_family_carrier",
+  "torsor": "F2^2",
+  "gl2_order": 6,
+  "affine_group_order": 24,
+  "is_full_s4_permutation_group": true,
+  "commutant_dimension": 2,
+  "commutant_is_span_I_J": true,
+  "group_average_equals_J_over_4": true,
+  "uniform_projector_rank": 1,
+  "triplet_projector_rank": 3,
+  "triplet_projector_idempotent": true,
+  "complete_graph_laplacian_eigenvalues": {
+    "4": 3,
+    "0": 1
+  },
+  "singlet_mass_eigenvalues": {
+    "4": 1,
+    "0": 3
+  },
+  "triplet_irreducibility_test": "the full commutant restricts to scalars on im(P3)",
+  "physical_status": "conditional on promoting the full affine torsor symmetry to a family symmetry",
+  "open_items": [
+    "derive the affine symmetry from a parent action",
+    "break exact triplet degeneracy without a free Yukawa matrix",
+    "connect the triplet to the observed-sector finite algebra"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "status": "minimal_three_node_graded_superconnection_embeds_the_exact_reduced_Wilson_complex_at_quadratic_order",
+  "date": "2026-08-12",
+  "minimality_scan": {
+    "two_node_survivors": 0,
+    "three_node_survivors": 24,
+    "minimum_nodes": 3,
+    "reason": "A charged zero-form needs an odd internal map, while a charged one-form of total odd degree needs an even internal map. Distinct targets are therefore required."
+  },
+  "chosen_architecture": {
+    "nodes": [
+      "E0_plus",
+      "E1_minus",
+      "E2_plus"
+    ],
+    "parities": [
+      0,
+      1,
+      0
+    ],
+    "root_charges": [
+      0,
+      1,
+      1
+    ],
+    "zero_form_edge": "E0_plus -> E1_minus",
+    "one_form_edge": "E0_plus -> E2_plus"
+  },
+  "quadratic_trace_Hodge_gate": {
+    "zero_form_module": "Omega0 Hom(E0,E1) tensor End_0(V1)",
+    "one_form_module": "Omega1 Hom(E0,E2) tensor End_0(V1)",
+    "same_root_charge": 1,
+    "same_Wilson_chord_operator": "K_theta=(2-U-U^dagger)/2=1-c",
+    "cross_term": 0,
+    "cross_term_reason": "different form degree and orthogonal target summands E1,E2",
+    "canonical_relative_metric_parameter": false,
+    "generic_spectral_Hessian_may_split_grades": true
+  },
+  "reduced_effective_action": {
+    "nonlinear_pair": "8*log(1 - c)/3 + 8/(1 - c)",
+    "canonical_plaquette": "1 - c",
+    "periodic_primitive": "c/45",
+    "combined": "((c - 1)*(-44*c + 120*log(1 - c) + 45) - 360)/(45*(c - 1))",
+    "target_up_to_constant": "4*((-11*c + 30*log(1 - c))*(c - 1) - 90)/(45*(c - 1))",
+    "difference_is_constant": true,
+    "constant_difference": "1"
+  },
+  "scientific_verdict": {
+    "positive": "A minimal three-node Z2-graded bundle removes the parity/charge obstruction. The canonical trace-Hodge metric makes the charged zero-form and charged one-form orthogonal and exposes the same Wilson chord operator on both grades. Adding the canonical plaquette and the already known periodic primitive reproduces the full gap shape up to an irrelevant constant.",
+    "negative": "This is a quadratic configuration-metric embedding, not yet a derivation from a specific local curvature or spectral action. Generic spectral Hessians can weight the two grades differently, and the compact radial constraint, gauge fixing, interaction Jacobian, and periodic primitive must still be computed in one model.",
+    "next_gate": "Choose the minimal three-node superconnection curvature action, expand it through quartic order, and verify that gauge/BV reduction preserves the fixed-charge sector, the 16-mode determinant, and the linear primitive without a new polarization."
+  }
+}

@@ -1,0 +1,75 @@
+\chapter{Boundary threshold splitting и аномальное сокращение}
+
+Unified messenger package не меняет relative gauge running, пока его
+компоненты вырождены. Проверим наиболее экономный вариант: один boundary
+order parameter расщепляет masses согласно одному каноническому generator.
+
+\section{Линейный generator ansatz}
+
+Для component \(a\subset\mathbf{16}\) положим
+\begin{equation}
+ \log\frac{M_a}{M_0}=\eta q_a,
+\end{equation}
+где \(q_a\) есть \(Y\), \(B-L\) или \(T_{3R}\). One-loop threshold direction
+для difference двух gauge factors равен
+\begin{equation}
+ S_{ij}(q)=\sum_a
+ \left(\Delta b_i^{(a)}-\Delta b_j^{(a)}\right)q_a.
+\end{equation}
+Прямой точный подсчёт даёт
+\begin{equation}
+ S_{12}(Y)=S_{13}(Y)=S_{12}(B-L)=S_{13}(B-L)
+ =S_{12}(T_{3R})=S_{13}(T_{3R})=0.
+\end{equation}
+
+Это не случайная арифметика. Суммы совпадают с differences смешанных
+gauge--gauge--generator anomaly traces полного spinor package и сокращаются
+в anomaly-free \(\mathbf{16}\).
+
+\begin{theorem}[Linear boundary-splitting no-go]
+Однопараметрическое logarithmic splitting полного vectorlike
+\(\mathbf{16}\oplus\overline{\mathbf{16}}\), линейное по \(Y\), \(B-L\) или
+\(T_{3R}\), не изменяет one-loop differences калибровочных связей. Поэтому
+оно не может устранить отсутствие triple crossing.
+\end{theorem}
+
+В частности, малое mass splitting, порождённое одним adjoint order
+parameter, также не помогает в первом порядке по condensate: его leading
+logarithm линеен по generator charge и попадает под ту же теорему.
+
+\section{Первый несокращающийся порядок}
+
+Следующий минимальный ansatz имеет вид
+\begin{equation}
+ \log\frac{M_a}{M_0}=\eta q_a^2.
+\end{equation}
+Он уже создаёт ненулевую threshold direction. Если \(\eta\) определить из
+измеренных gauge couplings, точное one-loop intersection формально возможно,
+но для двух messenger pairs, требуемых portal-chain, получаются масштабы
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Generator & \(\mu_{\rm unif}\), GeV & минимальный mass spread \\
+\midrule
+\(Y^2\) & \(1.20\times10^{16}\) & \(2.51\times10^9\) \\
+\((B-L)^2\) & \(1.29\times10^{10}\) & \(5.88\times10^{19}\) \\
+\(T_{3R}^2\) & \(6.80\times10^{14}\) & \(1.25\times10^3\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+Здесь spread означает отношение наибольшей component mass к наименьшей;
+общий \(M_0\) остаётся свободным. Наименее экстремальна \(T_{3R}^2\)-ветвь,
+но и она не является предсказанием: coefficient \(\eta\) получен обратным
+решением по наблюдаемым couplings.
+
+\begin{nogocriterion}[Запрет threshold-by-inversion]
+Совпадение gauge couplings после определения \(\eta\) из тех же gauge data не
+считается blind prediction. Pass разрешён только если boundary action заранее
+фиксирует generator, nonlinear mass law и \(\eta\), после чего RG comparison
+проводится без перенастройки.
+\end{nogocriterion}
+
+Следовательно, один линейный динамический коцикл закрыт отрицательно, а
+квадратичный \(T_{3R}\)-маршрут остаётся конкретным, но условным кандидатом
+для будущего parent-action test. Машинный ledger сохранён в
+\path{s2t_v4_boundary_threshold_splitting_gate_results.json}.

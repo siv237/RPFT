@@ -1,0 +1,52 @@
+{
+  "gate": "version4_pati_salam_tensor_product_coefficient",
+  "canonical_product": {
+    "Dirac": "D1 tensor I + Gamma1 tensor D2",
+    "square": "D1^2 tensor I + I tensor D2^2",
+    "mixed_term_in_half_Tr_D4": "Tr(D1^2) Tr(D2^2)",
+    "Tr_D1_squared_over_seed_norm": 2.0,
+    "Tr_D2_squared_over_seed_norm": 2.0,
+    "coefficient_c": 4.000000000000002,
+    "expected_exact_coefficient": 4.0,
+    "error": 1.7763568394002505e-15
+  },
+  "KO6_physical_half_trace": {
+    "coefficient_c": 4.000000000000001,
+    "error_from_four": 8.881784197001252e-16,
+    "doubling_changes_coefficient": false
+  },
+  "single_oriented_curvature_block": {
+    "Hilbert_Schmidt_coefficient": 2.0000000000000004,
+    "expected": 2.0
+  },
+  "strict_stability_threshold": {
+    "required": "c>4",
+    "canonical_c": 4.000000000000002,
+    "verdict": "threshold saturation with four phi zero modes"
+  },
+  "identical_copy_multiplicity": [
+    {
+      "copies": 1,
+      "coefficient": 4.000000000000002,
+      "strict_threshold_pass": false,
+      "copy_commutant_complex_dimension": 1,
+      "irreducible_identical_copy_system": true
+    },
+    {
+      "copies": 2,
+      "coefficient": 8.000000000000004,
+      "strict_threshold_pass": true,
+      "copy_commutant_complex_dimension": 4,
+      "irreducible_identical_copy_system": false
+    },
+    {
+      "copies": 3,
+      "coefficient": 12.000000000000005,
+      "strict_threshold_pass": true,
+      "copy_commutant_complex_dimension": 9,
+      "irreducible_identical_copy_system": false
+    }
+  ],
+  "verdict": "The canonical graded product spectral action fixes c=4 exactly, and KO6 doubling followed by the physical half-trace leaves it unchanged. This saturates but does not pass the strict phi-stability threshold. Two identical copies would give c=8, but their M2(C) copy commutant violates the already established one-copy irreducibility condition.",
+  "next_gate": "test whether a non-identical irreducible auxiliary factor or a derived higher spectral moment lifts the four zero modes without introducing a new continuous coefficient; otherwise close the tensor-product rescue"
+}

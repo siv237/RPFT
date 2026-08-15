@@ -1,0 +1,48 @@
+\chapter{Гиперзаряд из Yukawa-инвариантности и аномалий}
+
+Первый вычислительный тест проверяет, следуют ли относительные заряды
+наблюдаемого поколения из структурных требований.
+
+Обозначим
+\begin{equation}
+\begin{gathered}
+Y(Q_L)=q,\quad Y(u_R)=u,\quad Y(d_R)=d,\quad Y(L_L)=\ell,\\
+Y(e_R)=e,\quad Y(\nu_R)=n,\quad Y(H)=h.
+\end{gathered}
+\end{equation}
+Yukawa covariance даёт
+\begin{equation}
+u=q+h,\qquad d=q-h,\qquad e=\ell-h,\qquad n=\ell+h.
+\end{equation}
+Локальные anomaly coefficients равны
+\begin{align}
+\mathcal A_{331}&=2q-u-d,\\
+\mathcal A_{221}&=3q+\ell,\\
+\mathcal A_{\mathrm{grav}^2 1}&=6q-3u-3d+2\ell-e-n,\\
+\mathcal A_{111}&=6q^3-3u^3-3d^3+2\ell^3-e^3-n^3.
+\end{align}
+
+После \(\ell=-3q\) все локальные аномалии при наличии \(\nu_R\)
+сокращаются для любых \(q,h\). Остаётся непрерывное смешение с \(B-L\).
+Условие стерильности \(n=0\) даёт \(h=3q\), поэтому при нормировке
+\(h=1/2\)
+\begin{equation}
+\boxed{(q,u,d,\ell,e,n,h)=
+\left(\frac16,\frac23,-\frac13,-\frac12,-1,0,\frac12\right).}
+\end{equation}
+Это target-отношения Стандартной модели.
+
+Если \(\nu_R\) отсутствует, mixed gravitational и cubic anomalies сами
+вынуждают \(h=3q\). Чистая цветовая аномалия сокращается как
+\(2-1-1=0\), а число слабых дублетов \(3+1=4\) чётно, поэтому Witten
+anomaly отсутствует.
+
+\begin{theorem}[Условный вывод относительных гиперзарядов]
+Yukawa covariance, anomaly cancellation и либо \(Y(\nu_R)=0\), либо
+отсутствие \(\nu_R\), фиксируют стандартные относительные гиперзаряды.
+Общая нормировка \(U(1)\)-генератора остаётся свободной.
+\end{theorem}
+
+Результат не выводит набор multiplets, число поколений, finite algebra или
+gauge couplings. Машинная проверка сохранена в
+\path{s2t_v4_hypercharge_anomaly_gate_results.json}.

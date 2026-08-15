@@ -1,0 +1,76 @@
+\chapter{Cross-sector commutator и CP no-go вещественного menu}
+
+Квадратичный single-sector selector не создаёт mixing. Следующий минимальный
+кандидат --- cross-sector invariant двух Hermitian incidence fields
+\(H_u,H_d\):
+\begin{equation}
+\mathcal C(H_u,H_d)=\|[H_u,H_d]\|_F^2.
+\end{equation}
+
+\section{Исчерпывающий pair scan}
+
+Для восьми различных real symmetric full-\(M_3\) operators существует 28
+неупорядоченных sector pairs. Exact distribution равна
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+\(\mathcal C\) & Число пар \\
+\midrule
+0 & 10 \\
+1 & 6 \\
+4 & 8 \\
+6 & 4 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Если parent potential содержит \(+\lambda\mathcal C\) при \(\lambda>0\),
+он выбирает одно из десяти commuting направлений и не вынуждает mixing. Если
+знак противоположен, максимум
+\begin{equation}
+\mathcal C_{\max}=6
+\end{equation}
+достигается на четырёх различных pairs. Noncommutativity появляется, но
+selector остаётся четырёхкратно вырожденным.
+
+\begin{proposition}[Cross-sector sign fork]
+Простейший commutator interaction может предпочесть aligned или maximally
+misaligned sectors в зависимости от недоведённого знака coupling. Ни одна
+ветвь не выбирает unique sector pair без дополнительного invariant.
+\end{proposition}
+
+\section{CP-odd invariant}
+
+Все восемь operators вещественны и симметричны. Поэтому их commutator
+вещественен и антисимметричен. Для нечётной размерности три его spectrum имеет
+вид \(0,\pm i\lambda\), откуда
+\begin{equation}
+\Tr[H_u,H_d]^3=0.
+\end{equation}
+Exact scan подтверждает это для всех 28 pairs.
+
+\begin{theorem}[Real-incidence CP no-go]
+Никакой выбор двух real symmetric operators из текущего incidence menu не
+порождает ненулевой Jarlskog trace-cube invariant. Следовательно, даже
+noncommuting pair может дать real mixing matrix, но не CP violation.
+\end{theorem}
+
+\section{Единственный минимальный выход}
+
+Для oriented permutation \(P\) существует второй Hermitian operator
+\begin{equation}
+K_P=\frac{P-P^\dagger}{2i}.
+\end{equation}
+Он меняет знак при обращении orientation и ненулев для directed three-cycles.
+Именно такой operator способен внести complex structure без произвольной
+фазы. В текущем menu существуют четыре оси \(K_P\) с двумя ориентациями
+каждая; parent action ещё должен выбрать ось и знак.
+
+\begin{nogocriterion}[Запрет вставки CKM phase]
+Нельзя умножать real incidence operator на fitted complex coefficient.
+Complex phase должна следовать из orientation-odd Hermitian operator,
+квантованной голономии или другого заранее заданного geometric datum.
+\end{nogocriterion}
+
+Машинный cross-sector scan сохранён в
+\path{s2t_v4_cross_sector_cp_gate_results.json}.

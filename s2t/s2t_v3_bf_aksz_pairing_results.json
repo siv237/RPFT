@@ -1,0 +1,10 @@
+{
+  "date": "2026-08-09",
+  "status": "pure_bf_aksz_pairing_no_go",
+  "self_pairing": "0",
+  "J_squared": "Matrix([[-1, 0], [0, -1]])",
+  "metric": "Matrix([[level*polarization, 0], [0, level/polarization]])",
+  "polarization_fixed_by_level": false,
+  "K_closed": true,
+  "next_gate": "conditional expectations"
+}

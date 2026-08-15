@@ -1,0 +1,210 @@
+{
+  "gate": "version4_cross_sector_transposition_orbit",
+  "selected_single_sector_operator_count": 4,
+  "projector_stabilizer_order": 4,
+  "ordered_distinct_pair_count": 12,
+  "relative_pair_orbit_count": 3,
+  "all_pair_orbits_have_size_four": true,
+  "cross_word_values": [
+    "-1/2",
+    "0",
+    "1/2"
+  ],
+  "cross_word_distinguishes_all_relative_orbits": true,
+  "separate_square_action_contains_cross_word": false,
+  "linear_cross_word_selector_requires_new_coefficient": true,
+  "all_minimal_readout_cp_invariants_vanish": true,
+  "minimum_class_maximum_off_diagonal_entry": 0.8164965809277264,
+  "relative_orbits": [
+    {
+      "ordered_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "orbit_size": 4,
+      "representative": [
+        0,
+        1
+      ],
+      "invariants": {
+        "trace_Hu_Hd": "0",
+        "commutator_norm_squared": "6",
+        "cross_word_Tr_P_Hu_Hd": "-1/2",
+        "commuting": false
+      },
+      "minimal_readout": {
+        "mass_squared_eigenvalues_u": [
+          0.5,
+          1.0,
+          2.5
+        ],
+        "mass_squared_eigenvalues_d": [
+          0.5,
+          1.0,
+          2.5
+        ],
+        "absolute_mixing_matrix": [
+          [
+            0.5,
+            0.0,
+            0.866025403784
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.866025403784,
+            0.0,
+            0.5
+          ]
+        ],
+        "maximum_off_diagonal_entry": 0.8660254037844388,
+        "cp_trace_commutator_cube": "0",
+        "physical_cp_nonzero": false
+      }
+    },
+    {
+      "ordered_pairs": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "orbit_size": 4,
+      "representative": [
+        0,
+        3
+      ],
+      "invariants": {
+        "trace_Hu_Hd": "-1",
+        "commutator_norm_squared": "0",
+        "cross_word_Tr_P_Hu_Hd": "0",
+        "commuting": true
+      },
+      "minimal_readout": {
+        "mass_squared_eigenvalues_u": [
+          0.5,
+          1.0,
+          2.5
+        ],
+        "mass_squared_eigenvalues_d": [
+          0.5,
+          1.0,
+          2.5
+        ],
+        "absolute_mixing_matrix": [
+          [
+            0.0,
+            0.816496580928,
+            0.57735026919
+          ],
+          [
+            0.816496580928,
+            0.333333333333,
+            0.471404520791
+          ],
+          [
+            0.57735026919,
+            0.471404520791,
+            0.666666666667
+          ]
+        ],
+        "maximum_off_diagonal_entry": 0.8164965809277264,
+        "cp_trace_commutator_cube": "0",
+        "physical_cp_nonzero": false
+      }
+    },
+    {
+      "ordered_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "orbit_size": 4,
+      "representative": [
+        0,
+        2
+      ],
+      "invariants": {
+        "trace_Hu_Hd": "0",
+        "commutator_norm_squared": "6",
+        "cross_word_Tr_P_Hu_Hd": "1/2",
+        "commuting": false
+      },
+      "minimal_readout": {
+        "mass_squared_eigenvalues_u": [
+          0.5,
+          1.0,
+          2.5
+        ],
+        "mass_squared_eigenvalues_d": [
+          0.5,
+          1.0,
+          2.5
+        ],
+        "absolute_mixing_matrix": [
+          [
+            0.5,
+            0.816496580928,
+            0.288675134595
+          ],
+          [
+            0.816496580928,
+            0.333333333333,
+            0.471404520791
+          ],
+          [
+            0.288675134595,
+            0.471404520791,
+            0.833333333333
+          ]
+        ],
+        "maximum_off_diagonal_entry": 0.8164965809277265,
+        "cp_trace_commutator_cube": "0",
+        "physical_cp_nonzero": false
+      }
+    }
+  ],
+  "status": "one cross word classifies the three physical relative transposition orbits, but its coefficient is absent from the separate square action and the unit-amplitude readout remains CP-zero with large mixing"
+}

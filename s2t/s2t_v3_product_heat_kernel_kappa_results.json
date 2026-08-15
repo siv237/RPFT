@@ -1,0 +1,39 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "product_heat_kernel_kappa_closed_finite_B_positive",
+  "heat_kernel": {
+    "operator": "i gamma^mu d_mu + gamma5 Phi",
+    "E": "-Phi^2-i gamma^mu gamma5 d_mu Phi",
+    "spin_trace_E2": "4*((dPhi)^2+Phi^4)",
+    "kinetic_quartic_coefficient_equal": true,
+    "kappa_in_previous_convention": 2
+  },
+  "scalar_spectrum": {
+    "kinetic_metric": "Matrix([[4, 0, 0], [0, 4, 0], [0, 0, 1]])",
+    "physical_metric": "Matrix([[8, 0, 0], [0, 8, 0], [0, 0, 2]])",
+    "potential_hessian": "Matrix([[32, 0, 0], [0, 32, 0], [0, 0, 8]])",
+    "mass_squared_matrix_over_chi2": "Matrix([[4, 0, 0], [0, 4, 0], [0, 0, 4]])",
+    "scalar_mass_squared_over_chi2": 4,
+    "count": 3
+  },
+  "finite_supertrace": {
+    "scalar_weighted_M4": 48,
+    "fermion_weighted_M4": -8,
+    "numerator": 40,
+    "B0": "5/(8*pi**2)",
+    "positive": true
+  },
+  "status_correction": {
+    "old_conditional_B0": "23/(8*pi^2)",
+    "old_kappa": 1,
+    "new_derived_B0": "5/(8*pi^2)",
+    "number_23_robust": false
+  },
+  "verdict": {
+    "kappa_gate_closed": true,
+    "finite_B_positive": true,
+    "full_B_computed": false,
+    "next_gate": "gauge ghost and KK correction"
+  }
+}

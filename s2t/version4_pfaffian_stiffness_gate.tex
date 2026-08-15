@@ -1,0 +1,110 @@
+\chapter{Pfaffian stiffness: supercritical local pass и global flavour no-go}
+
+Self-consistent orientation field требовал \(g>g_c\simeq1.47996\). Старый
+Pfaffian gate не давал topological selector, но его modulus содержит
+orientation-even Hessian. Проверим, достаточно ли этого для динамической
+stiffness.
+
+\section{Точный Pfaffian Hessian}
+
+Для reduced branch около \(z=e^{i\theta}=1\)
+\begin{equation}
+ |\operatorname{Pf}\mathcal A_{\rm red}(\theta)|^2
+ =\frac{5+4\cos\theta}{4}.
+\end{equation}
+Нормированный fermionic action равен
+\begin{equation}
+ \Gamma_{\rm red}(\theta)
+ =-\frac12\log\frac{5+4\cos\theta}{9},
+\end{equation}
+и
+\begin{equation}
+ \Gamma_{\rm red}''(0)=\frac29.
+\end{equation}
+Если читать эту curvature как local term \(\alpha^2/(2g)\), получаем
+\begin{equation}
+ g_{\rm red}=\frac92>g_c.
+\end{equation}
+Для full KO6 modulus squared curvature удваивается:
+\begin{equation}
+ g_{\rm full}=\frac94>g_c.
+\end{equation}
+
+\begin{proposition}[Supercritical Pfaffian Hessian]
+И reduced reality-orbit measure, и full KO6 modulus дают local stiffness,
+достаточно слабую для orientation bifurcation. Таким образом, Pfaffian
+является первым parent term, который проходит critical-coupling test без
+обращения к CKM.
+\end{proposition}
+
+\section{Почему quadratic extrapolation запрещена}
+
+Local Hessian не определяет potential при больших \(\alpha\). Использование
+\(\alpha^2/(2g)\) вне окрестности нуля создаёт ложные minima и не считается
+выводом. Единственное доступное global completion уже дано точной periodic
+Pfaffian function.
+
+Минимальный periodic coupling к orientation constraint имеет вид
+\begin{equation}
+ H_s(\theta)=Z_s-\sin\theta\,K_s.
+\end{equation}
+Полный functional
+\begin{equation}
+ \Phi_{\rm Pf}(\theta)=\Gamma_{\rm Pf}(\theta)
+ -\frac14\sum_s\log\Tr e^{-H_s(\theta)}
+\end{equation}
+является even и заранее не использует flavour data.
+
+\section{Periodic minima}
+
+Exact minimization даёт spontaneous pairs
+\begin{align}
+ \theta_{\rm red}^\star&=\pm1.08516,
+ &|\sin\theta_{\rm red}^\star|&=0.88438,\\
+ \theta_{\rm full}^\star&=\pm0.69762,
+ &|\sin\theta_{\rm full}^\star|&=0.64240.
+\end{align}
+Знак остаётся CP-conjugate fork, но magnitude теперь выведена глобально.
+
+\section{Mass train и blind readout}
+
+Для reduced measure mass-only selection выбирает right GNS branch,
+\begin{equation}
+ t=485.5962,
+\end{equation}
+с maximum mass error \(60.76\). Blind result имеет
+\begin{equation}
+ s_{12}=0.98368,
+ \quad s_{23}=8.45\times10^{-4},
+ \quad s_{13}=7.80\times10^{-4},
+ \quad |J_q|=7.34\times10^{-8}.
+\end{equation}
+
+Для full KO6 measure mass-selected KMS branch имеет
+\begin{equation}
+ t=1.00241,
+\end{equation}
+maximum mass error \(10.32\), но
+\begin{equation}
+ (s_{12},s_{23},s_{13})=(0.4867,\,0.4249,\,0.2650),
+ \qquad |J_q|=0.0299.
+\end{equation}
+То есть mass hierarchy заметно улучшается, но mixing становится
+нефизически большим.
+
+\begin{theorem}[Pfaffian stiffness verdict]
+Точный Pfaffian modulus выводит supercritical orientation stiffness и
+ненулевую periodic vacuum magnitude. Однако ни physical reduced branch, ни
+full KO6 stress branch не проходят mass-train plus blind-CKM protocol.
+Pfaffian решает задачу возникновения orientation, но не согласует её с
+observed flavour geometry.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет local-Landau mass claim]
+Нельзя использовать только quadratic Pfaffian Hessian до больших
+\(|\alpha|\) и объявлять полученные массы предсказанием. Допустим только exact
+periodic functional либо independently derived higher-order action.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_pfaffian_stiffness_gate_results.json}.

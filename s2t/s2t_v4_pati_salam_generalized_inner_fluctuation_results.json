@@ -1,0 +1,54 @@
+{
+  "random_seed": 20260813,
+  "sample_count": 600,
+  "unitary_test_count": 20,
+  "seed": {
+    "lepton_yukawa_diagonal": [
+      0.7,
+      0.2
+    ],
+    "quark_yukawa_diagonal": [
+      1.1,
+      0.4
+    ],
+    "right_neutrino_majorana": 0.9
+  },
+  "real_sample_span_ranks": {
+    "total_yukawa": 128,
+    "total_majorana_right": 72,
+    "total_majorana_left": 0,
+    "linear_yukawa": 8,
+    "linear_majorana_right": 16,
+    "quadratic_yukawa": 120,
+    "quadratic_majorana_right": 72
+  },
+  "single_configuration_constraints": {
+    "yukawa_weak_color_reshuffle_ranks": [
+      2
+    ],
+    "majorana_crossed_reshuffle_ranks": [
+      1
+    ],
+    "pert_normalization_error": 3.8876805973917205e-15,
+    "self_adjointness_error": 2.576279211072399e-14,
+    "dirac_block_reconstruction_error": 1.882534662855599e-14,
+    "majorana_symmetry_error": 1.2231854455098756e-14,
+    "left_majorana_norm": 0.0,
+    "yukawa_third_singular_ratio": 4.3955885128039047e-16,
+    "majorana_second_singular_ratio": 9.917247128509206e-16,
+    "majorana_reshuffle_symmetry_error": 1.2231854455098756e-14,
+    "tilde_subspace_error": 2.080346383743765e-14
+  },
+  "unitary_orbit_test": {
+    "maximum_full_formula_error": 4.085592324075043e-15,
+    "minimum_error_without_quadratic_term": 2.286714872214945,
+    "maximum_relative_difference_omission_vs_quadratic_norm": 3.0530718434835084e-16
+  },
+  "interpretation": {
+    "linear_yukawa_rank_8": "bidoublet phi sector",
+    "linear_majorana_rank_16": "Delta(2_R,4) sector",
+    "rank_2_yukawa_reshuffle": "phi and tilde(phi) composite form",
+    "rank_1_crossed_majorana_reshuffle": "H_(aI,bJ)=k Delta_(aJ) Delta_(bI)",
+    "warning": "sample-span ranks are ambient linear spans, not manifold dimensions"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "gate": "version4_gaussian_bare_spectral_topology",
+  "date": "2026-08-11",
+  "normalization": "unit_four_volume",
+  "spectra": {
+    "S4": {
+      "D_eigenvalues": "+/-(ell+2)/a",
+      "D2_total_degeneracy": "8*binomial(ell+3,3)"
+    },
+    "S2": {
+      "D_eigenvalues": "+/-(ell+1)/b",
+      "D2_total_degeneracy": "4*(ell+1)"
+    },
+    "S2xS2": "D_product_squared=D1_squared+D2_squared and heat trace factorizes"
+  },
+  "gaussian_profile": {
+    "f": "exp(-u)",
+    "f0_a4_moment": 1.0,
+    "f2_a2_moment": 1.0,
+    "interpretation": "fundamental_bare_Wilsonian_spectral_action_at_the_cutoff"
+  },
+  "almost_commutative_factorization": {
+    "operator": "D=D_M tensor 1 + gamma5 tensor D_F",
+    "vacuum_condition": "D_F_constant_and_background_gauge_curvature_zero",
+    "square": "D_squared=D_M_squared tensor 1 + 1 tensor D_F_squared",
+    "heat_trace": "Tr exp(-t D_squared)=Tr exp(-t D_M_squared)*Tr exp(-t D_F_squared)",
+    "consequence": "the_positive_finite_factor_does_not_change_the_carrier_ordering"
+  },
+  "quantum_supertrace_non_cancellation": {
+    "bosonic_degrees": "3_scalars_plus_3_massive_vector_polarizations=6",
+    "fermionic_degrees": "2_Dirac_pairs_times_4=8",
+    "Str_1": -2,
+    "Str_M2_over_chi2": 13,
+    "Str_M4_over_chi4": 67,
+    "verdict": "no_supersymmetric_cancellation_of_local_quantum_terms"
+  },
+  "local_a4_check_per_spinor_copy": {
+    "formula": "a4=(1/(360*(4*pi)^2))*integral(11*E4-18*W2)",
+    "difference_S4_minus_S2xS2": 0.14444444444444443,
+    "meaning": "the_scale_independent_a4_piece_alone_prefers_S2xS2"
+  },
+  "exact_heat_trace": {
+    "crossing_time": 0.1241531699357692,
+    "ordering": {
+      "time_below_crossing": "S4_has_lower_positive_Gaussian_Dirac_spectral_action",
+      "time_above_crossing": "S2xS2_has_lower_positive_Gaussian_Dirac_spectral_action"
+    },
+    "samples": [
+      {
+        "time": 0.01,
+        "trace_S4": 240.43109073939698,
+        "trace_S2xS2": 242.6691304146289,
+        "difference_S4_minus_S2xS2": -2.2380396752319314,
+        "winner_for_positive_spectral_action": "S4"
+      },
+      {
+        "time": 0.05,
+        "trace_S4": 7.659967989626183,
+        "trace_S2xS2": 7.978761895437256,
+        "difference_S4_minus_S2xS2": -0.3187939058110736,
+        "winner_for_positive_spectral_action": "S4"
+      },
+      {
+        "time": 0.1,
+        "trace_S4": 1.3661431590447564,
+        "trace_S2xS2": 1.4186634656443922,
+        "difference_S4_minus_S2xS2": -0.0525203065996358,
+        "winner_for_positive_spectral_action": "S4"
+      },
+      {
+        "time": 0.10673403995964642,
+        "trace_S4": 1.1395014997740136,
+        "trace_S2xS2": 1.1740832986296905,
+        "difference_S4_minus_S2xS2": -0.034581798855676915,
+        "winner_for_positive_spectral_action": "S4"
+      },
+      {
+        "time": 0.1241531699357692,
+        "trace_S4": 0.7327582379988526,
+        "trace_S2xS2": 0.7327582379988528,
+        "difference_S4_minus_S2xS2": -1.1102230246251565e-16,
+        "winner_for_positive_spectral_action": "S4"
+      },
+      {
+        "time": 0.15,
+        "trace_S4": 0.40015513050693924,
+        "trace_S2xS2": 0.3740492498658086,
+        "difference_S4_minus_S2xS2": 0.02610588064113062,
+        "winner_for_positive_spectral_action": "S2xS2"
+      },
+      {
+        "time": 0.2,
+        "trace_S4": 0.1351610750671202,
+        "trace_S2xS2": 0.10520602868410217,
+        "difference_S4_minus_S2xS2": 0.02995504638301802,
+        "winner_for_positive_spectral_action": "S2xS2"
+      },
+      {
+        "time": 0.5,
+        "trace_S4": 0.00027993690076474784,
+        "trace_S2xS2": 5.579747915284854e-05,
+        "difference_S4_minus_S2xS2": 0.0002241394216118993,
+        "winner_for_positive_spectral_action": "S2xS2"
+      }
+    ]
+  },
+  "correlation_cell_map": {
+    "S4_radius_unit_volume": 0.44150220872428153,
+    "S4_radius_over_sigma": 1.35139219568654,
+    "sigma_squared_in_unit_volume_coordinates": 0.10673403995964642,
+    "lies_below_Dirac_crossing": true,
+    "winner_at_that_time": "S4",
+    "warning": "this_is_a_compatibility_test_not_an_independent_scale_derivation"
+  },
+  "verdict": "Gaussian_bare_spectral_action_fixes_the_local_topology_weights_but_carrier_ordering_still_depends_on_the_cutoff_time",
+  "reopening": "the_existing_correlation_cell_ratio_places_the_model_in_the_S4_Dirac_compatibility_window_conditionally"
+}

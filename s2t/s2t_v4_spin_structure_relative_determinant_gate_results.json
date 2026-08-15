@@ -1,0 +1,153 @@
+{
+  "date": "2026-08-11",
+  "version": "S2T-IV",
+  "status": "scheme_independent_S1_spin_selection_conditional_on_spin_sum",
+  "RP3_spin_gate": {
+    "tau_plus_absolute_spectrum": "abs(lambda_k)=k+3/2, d_k=(k+1)(k+2)",
+    "tau_minus_relation": "positive and negative signed branches exchanged",
+    "squared_spectra_equal": true,
+    "vectorlike_modulus_distinguishes_tau_plus_tau_minus": false,
+    "eta_values": [
+      -0.25,
+      0.25
+    ],
+    "eta_phase_survives_two_Dirac_pairing": false
+  },
+  "S1_relative_determinant": {
+    "mode_formula": "I_rho(beta)=log[(cosh(2 pi rho)-cos(2 pi beta))/(cosh(2 pi rho)-1)]",
+    "rho_k": "(R1/R3)*sqrt((k+3/2)^2+(chi R3)^2)",
+    "shell_multiplicity": "(k+1)(k+2)",
+    "two_Dirac_pair_action": "Delta Gamma_f=-2 sum_k d_k I_rho_k(beta)",
+    "analytic_sign": "I_rho(beta)>=0; it is maximal at beta=1/2, so Delta Gamma_f is minimized at beta=1/2"
+  },
+  "unit_radius_unit_mass_beta_sweep": [
+    {
+      "beta": 0.0,
+      "relative_action": -8.881784197001251e-16
+    },
+    {
+      "beta": 0.125,
+      "relative_action": -2.853248519163852e-05
+    },
+    {
+      "beta": 0.25,
+      "relative_action": -9.741517760827486e-05
+    },
+    {
+      "beta": 0.375,
+      "relative_action": -0.00016629671006580452
+    },
+    {
+      "beta": 0.5,
+      "relative_action": -0.00019482803525925613
+    }
+  ],
+  "mass_sweep_R1_over_R3_1": [
+    {
+      "chi_R3": 0.0,
+      "periodic_action": -1.4210854715202e-14,
+      "antiperiodic_action": -0.0012984530681616425
+    },
+    {
+      "chi_R3": 0.5,
+      "periodic_action": -2.7089441800853813e-14,
+      "antiperiodic_action": -0.0007808238348526818
+    },
+    {
+      "chi_R3": 1.0,
+      "periodic_action": -8.881784197001251e-16,
+      "antiperiodic_action": -0.00019482803525925613
+    },
+    {
+      "chi_R3": 2.0,
+      "periodic_action": -3.996802888650563e-15,
+      "antiperiodic_action": -2.5002924045705597e-06
+    },
+    {
+      "chi_R3": 4.0,
+      "periodic_action": 7.549516567451064e-15,
+      "antiperiodic_action": -4.1978864828549865e-11
+    }
+  ],
+  "radius_sweep_chi_R3_1": [
+    {
+      "R1_over_R3": 0.5,
+      "antiperiodic_action": -0.06682167099483509
+    },
+    {
+      "R1_over_R3": 0.75,
+      "antiperiodic_action": -0.0034221866269631036
+    },
+    {
+      "R1_over_R3": 1.0,
+      "antiperiodic_action": -0.00019482803525925613
+    },
+    {
+      "R1_over_R3": 1.25,
+      "antiperiodic_action": -1.1380474967622571e-05
+    },
+    {
+      "R1_over_R3": 1.5,
+      "antiperiodic_action": -6.68996184758965e-07
+    },
+    {
+      "R1_over_R3": 2.0,
+      "antiperiodic_action": -2.319957558720795e-09
+    }
+  ],
+  "stationary_tests": [
+    {
+      "beta": 0.0,
+      "first_derivative": 0.0,
+      "second_derivative": -0.0038456349216085613
+    },
+    {
+      "beta": 0.5,
+      "first_derivative": 0.0,
+      "second_derivative": 0.00384545174023955
+    }
+  ],
+  "convergence": [
+    {
+      "cutoff": 5,
+      "antiperiodic_action": -0.00019482803525925613
+    },
+    {
+      "cutoff": 10,
+      "antiperiodic_action": -0.00019482803525925613
+    },
+    {
+      "cutoff": 20,
+      "antiperiodic_action": -0.00019482803525925613
+    },
+    {
+      "cutoff": 40,
+      "antiperiodic_action": -0.00019482803525925613
+    },
+    {
+      "cutoff": 80,
+      "antiperiodic_action": -0.00019482803525925613
+    }
+  ],
+  "checks": {
+    "cutoff_40_to_80_error": 0.0,
+    "max_reflection_error": 0.0,
+    "max_periodicity_error": 0.0,
+    "periodic_value_zero": 8.881784197001251e-16,
+    "antiperiodic_lower_than_periodic_for_mass_sweep": true,
+    "beta_half_is_local_minimum": true,
+    "beta_zero_is_local_maximum": true
+  },
+  "interpretation": {
+    "scheme_independence": "Local heat-kernel coefficients are beta-independent, so the branch difference cancels lambda_0, lambda_2, lambda_4 and mu.",
+    "selection_scope": "If the functional integral sums the two S1 spin structures with equal prior weight, the antiperiodic branch has lower fermionic effective action for every finite chi and radius.",
+    "superselection_warning": "If the spin structure is fixed as external background data, the determinant compares branches but does not dynamically change the chosen topology.",
+    "remaining_degeneracy": "The two RP3 spin structures remain exactly degenerate in the vectorlike determinant modulus."
+  },
+  "verdict": {
+    "S1_antiperiodic_branch_selected_conditionally": true,
+    "RP3_spin_branch_selected": false,
+    "absolute_vacuum_scale_fixed": false,
+    "new_continuous_parameter_used": false
+  }
+}

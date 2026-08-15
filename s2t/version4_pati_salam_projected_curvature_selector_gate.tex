@@ -1,0 +1,221 @@
+\chapter{Project recovery: projected curvature на допустимой \texorpdfstring{\(\bar4\to2_R\to4\)}{4bar-to-2R-to-4} chain}
+
+Two-form/A2 trilemma закрыл три прямых маршрута, но оставил even singlet
+curvature. Повторный поиск по старым superconnection, relative-projector и
+vectorlike gates обнаруживает, что нужные детали уже были в проекте по
+отдельности. Их объединение даёт exact determinant selector без
+six-dimensional algebra node.
+
+\section{Синтез ранее полученных механизмов}
+
+В предыдущих разделах были независимо установлены три свойства:
+\begin{enumerate}
+ \item разные form degrees можно развести по ортогональным target modules;
+ \item endpoint inclusion--exclusion может канонически выделять относительный
+ curvature block;
+ \item vectorlike fundamental modules допустимы без нового color algebra
+ summand.
+\end{enumerate}
+Если собрать их, запрещённая шестёрка больше не нужна как node. Берутся
+только обычные color \(4,\bar4\) и weak doublet \(2_R\). Шестёрка возникает
+как antisymmetric двухшаговый curvature между крайними nodes.
+
+\section{Допустимая трёхузловая chain}
+
+Рассмотрим graded particle carrier
+\begin{equation}
+ E_0^+=\bar4,
+ \qquad
+ E_1^-=2_R,
+ \qquad
+ E_2^+=4.
+ \label{eq:ps-valid-module-chain}
+\end{equation}
+Все три nodes являются fundamental или opposite modules исходной
+Pati--Salam algebra. Для \(\Delta\in(2_R,4)\) зададим
+\begin{equation}
+ A_\Delta=\Delta:E_0\longrightarrow E_1,
+ \qquad
+ B_\Delta=c\,\Delta^T\varepsilon_2:E_1\longrightarrow E_2,
+ \label{eq:ps-valid-module-edges}
+\end{equation}
+где
+\begin{equation}
+ \varepsilon_2=
+ \begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+\end{equation}
+SU(2) pseudoreality identity
+\begin{equation}
+ U_R^T\varepsilon_2=\varepsilon_2U_R^{-1}
+\end{equation}
+обеспечивает gauge covariance второго edge. На трёхстах random
+\(SU(2)_R\times SU(4)\) transformations covariance error меньше
+\(8\times10^{-15}\).
+
+Двухшаговый path равен
+\begin{equation}
+ B_\Delta A_\Delta
+ =c\,\Delta^T\varepsilon_2\Delta.
+ \label{eq:ps-valid-module-wedge}
+\end{equation}
+Это antisymmetric \(4\times4\) matrix, то есть color \(6\), и
+\begin{equation}
+ \|B_\Delta A_\Delta\|_F^2
+ =2c^2\det(\Delta\Delta^\dagger).
+ \label{eq:ps-valid-module-minor-norm}
+\end{equation}
+
+\section{Почему raw trace снова недостаточен}
+
+Self-adjoint odd operator на \(4+2+4\) carrier имеет вид
+\begin{equation}
+ \mathcal D_\Delta=
+ \begin{pmatrix}
+ 0&A_\Delta^\dagger&0\\
+ A_\Delta&0&B_\Delta^\dagger\\
+ 0&B_\Delta&0
+ \end{pmatrix}.
+\end{equation}
+Для
+\begin{equation}
+ \rho=\Tr(\Delta\Delta^\dagger),
+ \qquad
+ \tau=\Tr[(\Delta\Delta^\dagger)^2],
+ \qquad
+ d=\det(\Delta\Delta^\dagger)
+\end{equation}
+получаем
+\begin{align}
+ \Tr\mathcal D_\Delta^2
+ &=2(1+c^2)\rho,\\
+ \Tr\mathcal D_\Delta^4
+ &=2(1+c^4)\tau+8c^2d.
+ \label{eq:ps-valid-module-raw-traces}
+\end{align}
+При каноническом \(c=1\)
+\begin{equation}
+ \Tr\mathcal D_\Delta^4=4\rho^2,
+\end{equation}
+то есть полный ordinary trace снова rank-blind. Это объясняет, почему
+предыдущие minimal spectral potentials не увидели determinant, хотя нужный
+path уже присутствовал внутри \(\mathcal D_\Delta^2\).
+
+\section{Endpoint curvature projector}
+
+Пусть \(P_0,P_2\) --- projectors на крайние irreducible nodes. Выделим
+relative endpoint curvature
+\begin{equation}
+ F_{02}
+ =P_0\mathcal D_\Delta^2P_2
+ +P_2\mathcal D_\Delta^2P_0.
+ \label{eq:ps-endpoint-curvature}
+\end{equation}
+Его два off-diagonal blocks равны
+\((B_\Delta A_\Delta)^\dagger\) и \(B_\Delta A_\Delta\). Поэтому
+\begin{equation}
+ \boxed{
+ \|F_{02}\|_F^2
+ =4c^2\det(\Delta\Delta^\dagger).}
+ \label{eq:ps-projected-curvature-selector}
+\end{equation}
+После KO6 doubling physical half-norm сохраняет ту же формулу. Machine audit
+даёт maximum error меньше \(5\times10^{-13}\) при \(c=1\), а projected
+curvature точно even, real-compatible и self-adjoint.
+
+При canonical trace metrics \(c=1\) получается
+\begin{equation}
+ \boxed{\frac12\|F_{02}^{\rm KO6}\|_F^2
+ =4\det(\Delta\Delta^\dagger).}
+ \label{eq:ps-project-recovered-kappa-four}
+\end{equation}
+Это ровно coefficient, найденный independently path identity и combined
+Casimir gap.
+
+\section{Robustness normalization}
+
+Если relative edge normalization пока оставить равной \(c\), induced
+potential coefficient равен
+\begin{equation}
+ \kappa=4c^2.
+\end{equation}
+Предыдущий exact Hessian требует лишь
+\begin{equation}
+ \kappa>2
+ \quad\Longleftrightarrow\quad
+ c^2>\frac12.
+ \label{eq:ps-project-recovery-window}
+\end{equation}
+Следовательно, rank-one stabilization не зависит от единственной идеально
+подогнанной normalization point. Но exact numerical coefficient четыре
+остаётся parent theorem только после вывода canonical equality metrics двух
+edges.
+
+\section{Что именно восстановлено из проекта}
+
+Механизм собирает три старых результата:
+\begin{enumerate}
+ \item \path{s2t_v4_three_node_superconnection_closure_gate.py}: минимальный
+ \((+,-,+)\) carrier и ортогональные target grades;
+ \item \path{version4_relative_krajewski_star_gate.tex}: endpoint
+ inclusion--exclusion и relative projectors без continuous weights;
+ \item \path{version4_vectorlike_messenger_chain_gate.tex}: допустимость
+ anomaly-safe fundamental-module extensions.
+\end{enumerate}
+
+\begin{proposition}[Project-recovered selector]
+На допустимой fundamental-module chain \(\bar4\to2_R\to4\) relative endpoint
+curvature norm автоматически равен
+\(4c^2\det(\Delta\Delta^\dagger)\). При canonical module metric \(c=1\)
+получается exact stabilizing coefficient четыре, тогда как полный ordinary
+spectral trace остаётся rank-blind.
+\end{proposition}
+
+\section{Почему это ещё условный успех}
+
+Найдена не ручная polynomial correction, а конкретный parent carrier и
+curvature block. Тем не менее остаются четыре обязательных gates:
+\begin{enumerate}
+ \item вывести projector \(F\mapsto F_{02}\) из единого superconnection
+ action, а не выбрать его после вычисления;
+ \item вывести equality edge metrics \(c=1\) из reality, normalized trace или
+ module isometry;
+ \item решить, являются ли дополнительные \(4/\bar4\) physical vectorlike
+ states или только auxiliary bosonic grades;
+ \item пересчитать полный \((\phi,\Sigma_4,\Delta)\) Hessian и gauge-running
+ ledger расширения.
+\end{enumerate}
+
+\begin{theorem}[Условное reopening]
+Ранее полученные superconnection и relative-projector механизмы дают
+admissible route к exact determinant selector без
+six-dimensional algebra node. Но физическое замыкание требует parent-action
+derivation endpoint curvature norm и normalization, поэтому status остаётся
+conditional, а не closed.
+\end{theorem}
+
+\section{Последующий junk/mapping-cone audit}
+
+Следующий gate уточняет это conditional statement. Equality edge metrics
+действительно выводится: map
+\(\Delta\mapsto\Delta^T\varepsilon_2\) является Frobenius-isometry, а
+endpoint reflection/reality фиксирует \(c=1\) с точностью до removable
+phase. Standard degree-two junk quotient, однако, не даёт projector: в
+минимальном \(\mathbb C^3\) path control endpoint units \(E_{02},E_{20}\)
+сами принадлежат junk. Projector выводится вместо этого как normalized
+commutator с уникальной reflection-odd graph coordinate
+\(h=(-1,0,1)\). Тем самым новый open gate --- не normalization и не algebraic
+projection, а выбор relative mapping-cone curvature norm как физического
+parent action.
+
+\section{Литература и воспроизводимость}
+
+Superconnection bosonic-action precedent сверён с
+H.~Figueroa, J.~M.~Gracia-Bond\'ia, F.~Lizzi and J.~C.~V\'arilly,
+arXiv:hep-th/9701179. Ordinary spectral action использует ungraded trace,
+как в A.~H.~Chamseddine and A.~Connes, arXiv:hep-th/9606001; именно поэтому
+projected superconnection curvature является дополнительной структурой, а
+не автоматическим следствием raw spectral action.
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_projected_curvature_selector.py} и
+\path{s2t_v4_pati_salam_projected_curvature_selector_results.json}.

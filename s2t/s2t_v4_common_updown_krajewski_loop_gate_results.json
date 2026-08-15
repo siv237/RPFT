@@ -1,0 +1,82 @@
+{
+  "gate": "version4_common_updown_krajewski_loop",
+  "primary_rectangle_labels": {
+    "A": {
+      "left": "L0",
+      "right": "R0"
+    },
+    "B": {
+      "left": "L0",
+      "right": "R1"
+    },
+    "C": {
+      "left": "L1",
+      "right": "R1"
+    },
+    "D": {
+      "left": "L1",
+      "right": "R0"
+    }
+  },
+  "all_primary_edges_order_one_allowed": true,
+  "primary_rectangle_node_count": 4,
+  "j_paired_total_node_count": 8,
+  "family_block_dimension": 3,
+  "full_dirac_dimension": 24,
+  "common_loop_generates_cross_word": true,
+  "full_trace_cross_term": "16 cos(theta) Tr(P_minus H_u H_d)",
+  "relative_orbits": [
+    {
+      "cross_word": "-1/2",
+      "representative": [
+        0,
+        1
+      ],
+      "trace_full_D4": "104 - 8*cos(theta)",
+      "phase_minimum": "0",
+      "minimum_trace_full_D4": "96",
+      "selected_by_positive_quartic": true,
+      "primary_self_adjoint": true,
+      "full_j_compatible": true,
+      "full_odd_under_grading": true
+    },
+    {
+      "cross_word": "0",
+      "representative": [
+        0,
+        3
+      ],
+      "trace_full_D4": "104",
+      "phase_minimum": "flat",
+      "minimum_trace_full_D4": "104",
+      "selected_by_positive_quartic": false,
+      "primary_self_adjoint": true,
+      "full_j_compatible": true,
+      "full_odd_under_grading": true
+    },
+    {
+      "cross_word": "1/2",
+      "representative": [
+        0,
+        2
+      ],
+      "trace_full_D4": "8*cos(theta) + 104",
+      "phase_minimum": "pi",
+      "minimum_trace_full_D4": "96",
+      "selected_by_positive_quartic": true,
+      "primary_self_adjoint": true,
+      "full_j_compatible": true,
+      "full_odd_under_grading": true
+    }
+  ],
+  "positive_quartic_selected_orbit_count": 2,
+  "positive_quartic_selected_cross_words": [
+    "-1/2",
+    "1/2"
+  ],
+  "commuting_orbit_removed": true,
+  "orientation_sign_selected": false,
+  "selected_loop_phases_are_cp_even": true,
+  "nonzero_common_connector_assumed": true,
+  "status": "a common J-paired Krajewski rectangle derives the cross word and selects the two noncommuting relative orbits, but phase relaxation leaves their orientations degenerate and CP-even"
+}

@@ -1,0 +1,107 @@
+\chapter{Higgs--Yukawa graph и граница предсказательности}
+
+До построения boundary action необходимо зафиксировать наблюдаемый scalar и
+Yukawa graph. Иначе один новый functional сможет одновременно менять число
+поколений, masses, CP phase и portal coefficient и станет нефальсифицируемым.
+
+\section{Минимальная scalar representation}
+
+В baseline
+\begin{equation}
+\mathcal A_F=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)
+\end{equation}
+minimal inner fluctuation, соединяющая quaternionic left modules с complex
+right modules, трансформируется как
+\begin{equation}
+H\sim(\mathbf1,\mathbf2)_{1/2}.
+\end{equation}
+При одном таком complex doublet renormalizable gauge-invariant scalar
+potential единственен с точностью до coefficients и additive constant:
+\begin{equation}
+V(H)=-\mu^2H^\dagger H+\lambda(H^\dagger H)^2.
+\end{equation}
+После electroweak breaking четыре вещественные компоненты дают три Goldstone
+modes и один physical scalar.
+
+\section{Полный renormalizable Yukawa menu}
+
+Перебор всех \(2\times4\times2=16\) комбинаций left doublet, right singlet и
+\(H/\widetilde H\) оставляет ровно четыре vertices:
+\begin{align}
+\overline Q_L\widetilde H u_R,
+\qquad
+\overline Q_L H d_R,
+\qquad
+\overline L_L H e_R,
+\qquad
+\overline L_L\widetilde H\nu_R.
+\end{align}
+Все quark--lepton cross vertices запрещены color representation, а неверный
+выбор \(H\) или \(\widetilde H\) --- гиперзарядом.
+
+Поскольку \(\nu_R\) является gauge singlet, также разрешён Majorana term
+\begin{equation}
+\frac12\nu_R^T C M_R\nu_R+\mathrm{h.c.}
+\end{equation}
+Если \(\nu_R\) отсутствует, первый neutrino mass operator возникает на
+dimension five как Weinberg operator.
+
+\begin{theorem}[Higgs--Yukawa structural pass]
+Минимальная observed finite algebra и generation atom воспроизводят ровно
+один Higgs doublet, стандартный renormalizable scalar invariant menu и четыре
+Dirac Yukawa edge types. Никаких дополнительных renormalizable flavour
+vertices в объявленном field content нет.
+\end{theorem}
+
+\section{Невыведенные flavour data}
+
+Для трёх поколений четыре complex \(3\times3\) Dirac Yukawa matrices содержат
+до flavour-basis quotient
+\begin{equation}
+4\times2\times3^2=72
+\end{equation}
+вещественных parameters. Complex symmetric Majorana matrix добавляет ещё 12.
+Finite algebra фиксирует допустимые позиции matrices, но не их entries.
+
+В spectral action scalar normalization зависит от invariants
+\begin{align}
+a={}&\Tr\left(
+Y_e^\dagger Y_e+Y_\nu^\dagger Y_\nu
++3Y_u^\dagger Y_u+3Y_d^\dagger Y_d
+\right),\\
+b={}&\Tr\left(
+(Y_e^\dagger Y_e)^2+(Y_\nu^\dagger Y_\nu)^2
++3(Y_u^\dagger Y_u)^2+3(Y_d^\dagger Y_d)^2
+\right).
+\end{align}
+Пока \(D_F\) не фиксирует Yukawa matrices, эти invariants, \(\mu^2\),
+\(\lambda\), electroweak scale и Higgs mass не являются blind predictions.
+
+\begin{nogocriterion}[Граф не равен mass theory]
+Воспроизведение Standard Model Yukawa graph не считается выводом fermion
+masses или mixing. Запрещено подставлять измеренные Yukawa matrices в
+\(D_F\), а затем объявлять spectral action их объяснением.
+\end{nogocriterion}
+
+\section{Граница будущего boundary action}
+
+Gauge symmetry разрешает scalar portal
+\begin{equation}
+\lambda_{hH}\,\Sigma_h H^\dagger H
+\end{equation}
+к hidden scalar invariant \(\Sigma_h\). Но observed finite algebra не
+фиксирует \(\lambda_{hH}\), а direct-sum completion Тома III.H даёт
+\(\lambda_{hH}=0\).
+
+Следовательно, будущий boundary action допустим только если он из одной новой
+connector representation одновременно выводит:
+\begin{enumerate}
+\item nonzero portal coefficient;
+\item family symmetry breaking;
+\item orientation-sensitive CP term;
+\item отсутствие новых gauge anomalies.
+\end{enumerate}
+Четыре независимых coefficients не считаются единым механизмом.
+
+Машинный vertex ledger сохранён в
+\path{s2t_v4_higgs_yukawa_gate_results.json}.

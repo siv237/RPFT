@@ -1,0 +1,197 @@
+\chapter{Family--defect cubic-root variational action gate}
+
+Предыдущий gate построил flat connection с правильной three-cycle
+holonomy, но оставил relation между connection и projector как constitutive
+ansatz. Здесь эта relation получается как Euler--Lagrange equation одного
+положительного boundary action. Цена результата формулируется заранее:
+рассматривается уже выбранный nonzero condensed unit-winding sector, тогда
+как происхождение самого condensate и его cubic-root bundle остаётся
+отдельным parent problem.
+
+\section{Cubic-root frame над winding sector}
+
+Пусть charge-two pairing field не обращается в нуль на boundary circle
+\(\gamma\) и задаёт фазу
+\begin{equation}
+ z(s)=\frac{\Phi(s)}{|\Phi(s)|}=e^{i\varphi(s)},
+ \qquad
+ \varphi(s+L)-\varphi(s)=2\pi\nu,
+ \qquad
+ \nu=\pm1.
+ \label{eq:cubic-root-phase-winding}
+\end{equation}
+Для projector-selected field \(H\) введём уже построенный generator
+\(\Omega(H)=*(u\wedge\operatorname{diag}H)\) и frame на universal cover:
+\begin{equation}
+ W(s)=\exp\!\left[\frac{\varphi(s)}{3}\Omega(H)\right]
+ \in SO(4).
+ \label{eq:cubic-root-frame}
+\end{equation}
+Поскольку все powers одного generator коммутируют,
+\begin{equation}
+ W(s)^3=\exp[\varphi(s)\Omega(H)].
+\end{equation}
+Frame не обязан быть single-valued как ordinary \(SO(4)\)-function. Вместо
+этого он является section cubic-root bundle с transition
+\begin{equation}
+ W(s+L)=W(s)Z_{H,\nu},
+ \qquad
+ Z_{H,\nu}=\exp\!\left[\nu\frac{2\pi}{3}\Omega(H)\right],
+ \qquad
+ Z_{H,\nu}^{,3}=I_4.
+ \label{eq:cubic-root-monodromy}
+\end{equation}
+Таким образом, коэффициент \(1/3\) не является fitted continuous weight:
+это discrete root degree, согласованный с трёхмерным complement выбранного
+rank-one projector.
+
+Архитектура flat connections с nontrivial root holonomy имеет прямой
+аналог в \(\mathbb Z_n\)-gauge constructions, где \(nA\) может быть pure
+gauge при нетривиальной holonomy самого \(A\); см.
+\path{arXiv:1404.3230}. Non-Abelian vortex realizations с
+\(\mathbb Z_3\) Aharonov--Bohm holonomy также известны, см.
+\path{arXiv:2210.11492}. Эти источники подтверждают допустимость root-bundle
+архитектуры, но specific map \(H\mapsto\Omega(H)\) остаётся внутренним
+результатом проекта.
+
+\section{Единый положительный action}
+
+Положим
+\begin{equation}
+ Q(H)=H^2-\frac1{\sqrt3}H-\frac14I_4,
+ \qquad
+ D_sW=\partial_sW+\mathcal A_sW,
+\end{equation}
+где \(\mathcal A_s\in\mathfrak{so}(4)\). Рассмотрим functional
+\begin{equation}
+ S_{\rm root}[H,W,\mathcal A]
+ =\int_0^L ds\left[
+  \frac1L\Tr Q(H)^2
+  +L\Tr\!\left((D_sW)^T D_sW\right)
+ \right].
+ \label{eq:cubic-root-parent-action}
+\end{equation}
+Оба summands используют один и тот же representation trace; множители
+\(L^{\mp1}\) только согласуют boundary dimensions. Independent multiplier
+или coefficient, подбираемый по holonomy, отсутствует.
+
+Так как \(W\in SO(4)\), matrix
+\begin{equation}
+ B_s=(\partial_sW)W^T
+\end{equation}
+лежит в \(\mathfrak{so}(4)\). Connection-dependent часть action равна
+\begin{equation}
+ L\Tr\!\left[(\mathcal A_s+B_s)^T(\mathcal A_s+B_s)\right].
+\end{equation}
+Поэтому variation по произвольному
+\(\delta\mathcal A_s\in\mathfrak{so}(4)\) даёт
+\begin{equation}
+ \frac{\delta S_{\rm root}}{\delta\mathcal A_s}=0
+ \quad\Longleftrightarrow\quad
+ \mathcal A_s=-B_s=-\partial_sW\,W^T.
+ \label{eq:connection-euler-lagrange}
+\end{equation}
+Для frame~\eqref{eq:cubic-root-frame} получаем искомую constitutive law
+\begin{equation}
+ \boxed{
+ \mathcal A_s
+ =-\frac{\partial_s\varphi}{3}\Omega(H)}.
+ \label{eq:derived-projector-connection}
+\end{equation}
+При uniform representative
+\(\partial_s\varphi=2\pi\nu/L\) это в точности relation
+\begin{equation}
+ \mathcal A
+ =-\frac{2\pi\nu}{3L}\Omega(H)\,ds,
+\end{equation}
+оставленная открытой в flat-holonomy gate.
+
+\begin{theorem}[Variational projector--connection relation]
+В фиксированном nonzero unit-winding root sector canonical connection
+\(\mathcal A(H,\nu)\) является единственным stationary point action
+\eqref{eq:cubic-root-parent-action} по connection при фиксированном frame.
+На projector branch \(Q(H)=0\) одновременно выполнено \(D_{\mathcal A}W=0\),
+поэтому полный action достигает global minimum \(S_{\rm root}=0\).
+\end{theorem}
+
+Никакой дополнительной \(H\)-equation от kinetic term на этом saddle не
+возникает: сам covariant derivative равен нулю. Следовательно,
+projector-supercurvature equation и connection equation stationary
+совместно, а identity \([\Omega(H),H]=0\) сохраняет constrained
+superconnection compatibility.
+
+\section{Holonomy, profile independence и Hessian}
+
+Все значения \(\mathcal A_s\) пропорциональны одному generator, поэтому
+path ordering исчезает и
+\begin{align}
+ \operatorname{Hol}_\gamma(\mathcal A)
+ &=\exp\!\left[-\frac{\varphi(L)-\varphi(0)}{3}\Omega(H)\right]\\
+ &=\exp\!\left[-\nu\frac{2\pi}{3}\Omega(H)\right]
+ =C_{H,\nu}.
+ \label{eq:root-action-holonomy}
+\end{align}
+Результат зависит только от winding и не зависит от локального phase
+profile. Holonomy connection является inverse transition cubic-root frame,
+как и требуется для parallel section \(D_{\mathcal A}W=0\).
+
+В orthonormal basis шести generators \(\mathfrak{so}(4)\) Hessian
+connection sector равен \(2I_6\). Следовательно, после фиксации frame
+stationary connection является strict local minimum. Если \(W\) также
+варьируется, остаётся обычная gauge orbit pure-gauge descriptions, а не
+новая physical flat direction.
+
+Машинная проверка охватывает четыре projectors, два winding sectors и два
+phase profiles. Для всех шестнадцати cases получены:
+\begin{align}
+ \max\|D_{\mathcal A}W\|&<5.6\times10^{-16},\\
+ \max\|Z_{H,\nu}^3-I\|&<5.1\times10^{-15},\\
+ \max\|\operatorname{Hol}(\mathcal A)-C_{H,\nu}\|
+ &<3.7\times10^{-15},\\
+ \lambda_{\min}(\operatorname{Hess}_{\mathcal A}S_{\rm root})
+ &=2-5\times10^{-16}.
+\end{align}
+
+\section{Точный статус и оставшийся parent gap}
+
+Constitutive-action criterion предыдущей главы теперь проходит в
+фиксированном condensed unit-winding sector: connection не назначается и
+не навязывается multiplier, а следует из variation одного заранее
+фиксированного sum-of-squares action с общим trace.
+
+Однако это ещё не full boundary-superconnection closure. Action принимает
+root frame \(W\) и nonzero phase \(z=\Phi/|\Phi|\) как данные выбранного
+topological sector. Необходимо отдельно вывести:
+\begin{enumerate}
+ \item почему pairing field имеет nonzero boundary condensate;
+ \item почему admissible lift является именно cubic-root bundle;
+ \item как \(W\), \(H\) и sterile root line входят в один finite graded
+ Hilbert module и одну superconnection;
+ \item сохраняется ли механизм после BV/fluctuation audit и во втором
+ normalization-sensitive sector.
+\end{enumerate}
+
+Следующий tetrahedral residual-bundle gate закрывает второй пункт на
+group-theoretic уровне. Projector \(P_a\) внутри orientation-preserving
+tetrahedral carrier имеет stabilizer
+\(\operatorname{Stab}_{A_4}(P_a)\simeq\mathbb Z_3\), причём его два
+nontrivial elements являются ровно \(C_{a,\pm}\). Поэтому cubic degree не
+является новым дискретным input. Открытым остаётся gauge/global fork:
+нужно вывести gauged или boundary-framed tetrahedral carrier и связать его
+с nonzero ordinary charge-two condensate одним parent action.
+
+\begin{nogocriterion}[Root-bundle embedding gate]
+Нельзя объявлять family--defect parent theory построенной, пока cubic-root
+frame и его condensate только постулируются как boundary sector. Следующий
+pass требует вывести этот sector из representation, charge assignment,
+potential и global bundle data одного parent action до обращения к family
+или neutrino observables.
+\end{nogocriterion}
+
+Итак, динамическая зависимость connection от projector закрыта
+вариационно. Открытым остаётся более глубокий вопрос происхождения самого
+cubic-root carrier.
+
+Машинный ledger сохранён в
+\path{s2t_v4_family_defect_cubic_root_action_gate_results.json}; генератор
+--- \path{s2t_v4_family_defect_cubic_root_action_gate.py}.

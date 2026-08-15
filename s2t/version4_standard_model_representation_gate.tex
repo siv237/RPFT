@@ -1,0 +1,91 @@
+\chapter{Первый гейт: представление наблюдаемого сектора}
+
+\section{Эмпирическая target-таблица}
+
+До попытки вывода фиксируется target одного поколения. Она служит тестом
+representation, а не доказанным следствием S2T:
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Поле & \(SU(3)_c\) & \(SU(2)_L\) & \(Y\) \\
+\midrule
+\(Q_L\) & \(\mathbf 3\) & \(\mathbf 2\) & \(1/6\) \\
+\(u_R\) & \(\mathbf 3\) & \(\mathbf 1\) & \(2/3\) \\
+\(d_R\) & \(\mathbf 3\) & \(\mathbf 1\) & \(-1/3\) \\
+\(L_L\) & \(\mathbf 1\) & \(\mathbf 2\) & \(-1/2\) \\
+\(e_R\) & \(\mathbf 1\) & \(\mathbf 1\) & \(-1\) \\
+\(\nu_R\) & \(\mathbf 1\) & \(\mathbf 1\) & \(0\) \\
+\(H\) & \(\mathbf 1\) & \(\mathbf 2\) & \(1/2\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Нулевая гипотеза для первого перебора --- стандартный почти-коммутативный
+класс конечных алгебр, содержащий комплексный, кватернионный и цветовой
+матричный блоки. Его использование допустимо как baseline. Оно не является
+новым открытием и не закрывает задачу происхождения трёх поколений или
+Yukawa-матриц.
+
+\section{Representation pass}
+
+Кандидат \((\mathcal A_F,H_F,J_F,\gamma_F)\) проходит первый гейт только
+если:
+\begin{enumerate}
+ \item unitary group после unimodularity/central quotient имеет локальную
+ алгебру \(su(3)\oplus su(2)\oplus u(1)\);
+ \item left/right modules воспроизводят target-таблицу без post hoc
+ переназначения зарядов;
+ \item внутренние флуктуации создают один Higgs doublet либо заранее
+ объявленное расширение;
+ \item допустимые рёбра \(D_F\) дают gauge-invariant Yukawa vertices;
+ \item real structure создаёт antiparticle sectors без удвоения физических
+ степеней свободы;
+ \item sterile neutrino и Majorana edge имеют однозначно объявленный статус.
+\end{enumerate}
+
+\section{Немедленные anomaly tests}
+
+Для каждого поколения должны обращаться в нуль коэффициенты
+\begin{equation}
+ \mathcal A_{333},\quad
+ \mathcal A_{221},\quad
+ \mathcal A_{331},\quad
+ \mathcal A_{111},\quad
+ \mathcal A_{\mathrm{grav}^2 1},
+\end{equation}
+с учётом того, что правые фермионы при подсчёте chiral anomaly записываются
+как левые charge-conjugate states. Проверка проводится из выведенного
+ledger, а не подстановкой заранее известной таблицы после построения.
+
+\begin{protocol}[Первый вычислительный пакет]
+Следующий машинный этап должен:
+\begin{enumerate}
+ \item перечислить минимальные finite-algebra candidates;
+ \item построить все irreducible left/right bimodules в заданной границе
+ размерности;
+ \item вычислить gauge algebra, hypercharge generator и anomaly polynomial;
+ \item отфильтровать кандидаты по target-таблице;
+ \item отдельно отметить, какие свойства были выведены, а какие внесены как
+ empirical constraints.
+\end{enumerate}
+\end{protocol}
+
+\begin{nogocriterion}[Baseline не является предсказанием]
+Если target-таблица целиком вставлена в \(H_F\), а затем из неё
+восстановлено действие Стандартной модели, получен корректный baseline, но
+не объяснение наблюдаемого спектра. Для статуса нового результата требуется
+либо уникальность представления в заранее заданном классе, либо новое
+ограничение на нормировки, массы, mixing или neutrino sector, прошедшее
+blind-test.
+\end{nogocriterion}
+
+\section{Ближайшая цель}
+
+Первой реальной вехой Version IV.SM является не масса частицы, а
+машинно воспроизводимый classification result:
+\begin{equation}
+ \{\text{допустимые finite geometries}\}
+ \longrightarrow
+ \{\text{anomaly-free observed candidates}\}.
+\end{equation}
+Только после этого разрешён расчёт spectral coupling relations и RG.

@@ -1,0 +1,98 @@
+\chapter{Family-to-Yukawa operator map: existence pass и prediction no-go}
+
+Вариационный гейт выбрал branch \(\mathcal B_+\) и pure family state
+\begin{equation}
+ \rho_\star=|\psi_\star\rangle\langle\psi_\star|,
+ \qquad
+ |\psi_\star\rangle\simeq
+ (0.939575,\,0.310502,\,-0.144179)^T.
+\end{equation}
+Теперь требуется не произвольная Yukawa matrix, а единая operator map от
+выведенных данных \((P_-,\rho_\star,H_u,H_d)\) к physical mass operators.
+
+\section{Три coefficient-free readout}
+
+Минимальные требования к candidate map: family-basis covariance, отсутствие
+подстановки измеренных масс и отсутствие нового continuous coefficient.
+Уже этим требованиям удовлетворяют по меньшей мере три неэквивалентные карты:
+\begin{align}
+ Y^{(0)}(H)&=P_-+iH,\\
+ Y^{(\rho)}(H)&=P_-+i\{\rho_\star,H\},\\
+ Y_u^{(\nabla)}&=\frac{\partial V_4}{\partial H_u},
+ &
+ Y_d^{(\nabla)}&=\frac{\partial V_4}{\partial H_d}.
+\end{align}
+Последняя карта является cotangent readout того же quartic functional
+\(V_4=\Tr(\rho_\star R_4)\), который выбрал branch. Все три карты
+ковариантны; численный basis-covariance residual первых двух меньше
+\(4\times10^{-16}\).
+
+\section{Неэквивалентные физические ledger}
+
+Для \(M_s=Y_sY_s^\dagger\) получаем:
+\begin{center}
+\small
+\begin{tabular}{lccc}
+\toprule
+Map & normalized \(m_u\) & normalized \(m_d\) &
+\(\Im\Tr[M_u,M_d]^3\)\\
+\midrule
+\(Y^{(0)}\) & \((0.4472,0.6325,1)\) & \((0.4472,0.6325,1)\) & \(0\)\\
+\(Y^{(\rho)}\) & \((0.1202,0.3338,1)\) & \((0.1093,0.3556,1)\) & \(-1.780834\)\\
+\(Y^{(\nabla)}\) & \((0.0579,0.2418,1)\) & \((0.0626,0.4549,1)\) & \(0\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Следовательно, выбранный state действительно способен породить
+nonfactorizable CP invariant без внешней complex phase: карта
+\(Y^{(\rho)}\) даёт ненулевой результат. Это положительный existence test,
+которого не было в предыдущих главах.
+
+Но тот же набор выведенных данных допускает CP-zero карты. Более того,
+cotangent prescription, наиболее непосредственно связанный с вариационным
+functional, остаётся вещественным. Его absolute mixing matrix равна
+приблизительно
+\begin{equation}
+ |V^{(\nabla)}|\simeq
+ \begin{pmatrix}
+ 0.2254&0.8161&0.5321\\
+ 0.8819&0.4030&0.2445\\
+ 0.4140&0.4141&0.8106
+ \end{pmatrix},
+\end{equation}
+то есть не даёт малого-mixing blind closure.
+
+\begin{theorem}[CP-capable family state]
+В branch \(\mathcal B_+\) существует basis-covariant coefficient-free
+polynomial map, которая порождает ненулевой трёхсемейный CP invariant.
+Следовательно, прежние CP no-go относились к более узким readout и не
+являются абсолютным запретом после введения variational state.
+\end{theorem}
+
+\begin{theorem}[Operator-map underdetermination]
+Данные \((P_-,\rho_\star,H_u,H_d)\) не определяют единственную Yukawa map.
+Две равно допустимые coefficient-free covariant карты дают соответственно
+нулевой и ненулевой CP invariant, различные mass ratios и различные mixing
+matrices. Поэтому ни один из этих ledger пока не является prediction.
+\end{theorem}
+
+\section{Четырёхсекторная обструкция}
+
+Family data различают две incidence directions, но не четыре observed edge
+types \(u,d,e,\nu\). Одна общая map отождествляет normalized textures
+\(u\) с \(\nu\) и \(d\) с \(e\). Четыре sector-dependent maps снимают это
+равенство, но становятся новым flavour input.
+
+\begin{nogocriterion}[Градиент не равен Yukawa без operator theorem]
+Нельзя объявлять \(\partial V_4/\partial H_s\) физической Yukawa matrix только
+потому, что эта карта канонична и численно иерархична. Требуется показать,
+что именно этот block возникает как fermionic edge одного finite Dirac
+operator или как однозначная внутренняя fluctuation того же parent action.
+\end{nogocriterion}
+
+Итак, вариационный state снимает orientation fork и впервые открывает
+алгебраическую возможность CP, но flavour prediction блокируется отсутствием
+operator theorem, связывающей bosonic state functional с четырьмя fermionic
+edges. Машинный ledger сохранён в
+\path{s2t_v4_yukawa_operator_map_gate_results.json}.

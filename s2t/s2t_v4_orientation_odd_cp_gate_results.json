@@ -1,0 +1,284 @@
+{
+  "gate": "version4_orientation_odd_cp",
+  "directed_three_cycle_count": 8,
+  "axis_count_mod_orientation": 4,
+  "generic_operator": "X_P(r)=H_P+r K_P",
+  "generic_characteristic_polynomial": "-(lambda - 1)*(-4*lambda**2 - 4*lambda + 3*r**2 - 1)/4",
+  "generic_eigenvalues": [
+    "1",
+    "-1/2+sqrt(3) r/2",
+    "-1/2-sqrt(3) r/2"
+  ],
+  "nondegenerate_for_generic_nonzero_r": true,
+  "tested_symbolic_sector_pairs": 28,
+  "all_physical_cp_odd_invariants_zero": true,
+  "physical_invariant": "Tr([X_u X_u^dagger, X_d X_d^dagger]^3)",
+  "interpretation": "the linear H+rK three-cycle menu has pairwise rephasing-real structure and cannot generate CKM CP violation",
+  "unit_weight_mixing_patterns": [
+    {
+      "count": 4,
+      "absolute_matrix": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "count": 12,
+      "absolute_matrix": [
+        [
+          0.666666666667,
+          0.333333333333,
+          0.666666666667
+        ],
+        [
+          0.333333333333,
+          0.666666666667,
+          0.666666666667
+        ],
+        [
+          0.666666666667,
+          0.666666666667,
+          0.333333333333
+        ]
+      ]
+    },
+    {
+      "count": 12,
+      "absolute_matrix": [
+        [
+          0.333333333333,
+          0.666666666667,
+          0.666666666667
+        ],
+        [
+          0.666666666667,
+          0.333333333333,
+          0.666666666667
+        ],
+        [
+          0.666666666667,
+          0.666666666667,
+          0.333333333333
+        ]
+      ]
+    }
+  ],
+  "unit_weight_pattern_counts": [
+    4,
+    12,
+    12
+  ],
+  "unit_weight_mixing_verdict": "four pairs give only a family permutation; the other twenty-four give large democratic 1/3-2/3 overlaps rather than hierarchical mixing",
+  "next_requirement": "add a third noncommuting layer or a relative orientation term not reducible to one directed-cycle quadrature per sector",
+  "pairs": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        0,
+        3
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        0,
+        4
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        0,
+        5
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        0,
+        6
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        0,
+        7
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        1,
+        5
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        1,
+        6
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        1,
+        7
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        2,
+        5
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        2,
+        6
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        2,
+        7
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        3,
+        5
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        3,
+        6
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        3,
+        7
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        4,
+        6
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        4,
+        7
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        5,
+        7
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "cp_odd_mass_squared_trace_cube": "0"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+\chapter{Корреляционная purity: \texorpdfstring{\(S^4\)}{S4} против \texorpdfstring{\(S^2\times S^2\)}{S2 x S2}}
+
+Предыдущий carrier gate оставил два компактных spin positive-Einstein
+кандидата без shape-модуля после фиксации объёма: round \(S^4\) и product
+\(S^2\times S^2\) с равными радиусами. Теперь они сравниваются одним и тем
+же scalar Gaussian operator без finite-sector multiplicities.
+
+\section{Preregistered normalization}
+
+Фиксируем четырёхмерный объём равным единице. Тогда радиусы определены без
+свободного отношения масштабов:
+\begin{equation}
+ a=\left(\frac{3}{8\pi^2}\right)^{1/4}
+ \quad\text{для }S^4,
+ \qquad
+ b=\left(\frac{1}{16\pi^2}\right)^{1/4}
+ \quad\text{для каждого }S^2.
+\end{equation}
+Для \(\widehat C_\tau=e^{-\tau\Delta_0}\) вводятся normalized heat state и
+его purity:
+\begin{equation}
+ \rho_\tau(M)=\frac{e^{-\tau\Delta_0(M)}}{Z_M(\tau)},
+ \qquad
+ Z_M(\tau)=\Tr e^{-\tau\Delta_0(M)},
+\end{equation}
+\begin{equation}
+ \mathcal P_\tau(M)=\Tr\rho_\tau(M)^2
+ =\frac{Z_M(2\tau)}{Z_M(\tau)^2},
+ \qquad
+ S_2(M;\tau)=-\log\mathcal P_\tau(M).
+ \label{eq:carrier-renyi2-definition}
+\end{equation}
+Сравнивается знак
+\begin{equation}
+ \Delta S_2(\tau)
+ =S_2(S^4;\tau)-S_2(S^2\times S^2;\tau).
+\end{equation}
+
+\section{Точные spectral ledgers}
+
+Для round four-sphere
+\begin{equation}
+ \lambda_\ell^{(4)}=\frac{\ell(\ell+3)}{a^2},
+ \qquad
+ d_\ell^{(4)}=\frac{(\ell+1)(\ell+2)(2\ell+3)}6.
+\end{equation}
+Для two-sphere
+\begin{equation}
+ \lambda_\ell^{(2)}=\frac{\ell(\ell+1)}{b^2},
+ \qquad
+ d_\ell^{(2)}=2\ell+1,
+\end{equation}
+а product trace факторизуется:
+\begin{equation}
+ Z_{S^2\times S^2}(\tau)=Z_{S^2}(\tau)^2.
+\end{equation}
+
+\section{Оба асимптотических конца}
+
+Стандартное heat-kernel expansion при unit volume показывает, что scalar
+curvature term сокращается из разности Rényi entropy. Первый
+geometry-sensitive вклад имеет вид
+\begin{equation}
+ \Delta S_2(\tau)
+ =\frac{16\pi^2}{15}\tau^2+O(\tau^3)>0
+ \qquad(\tau\to0^+).
+ \label{eq:carrier-small-tau-positive}
+\end{equation}
+
+На противоположном конце первые positive eigenvalues равны
+\begin{equation}
+ \lambda_1(S^4)=\frac4{a^2}=20.52079728\ldots,
+ \qquad d_1(S^4)=5,
+\end{equation}
+\begin{equation}
+ \lambda_1(S^2\times S^2)=\frac2{b^2}=8\pi
+ =25.13274123\ldots,
+ \qquad d_1(S^2\times S^2)=6.
+\end{equation}
+Поскольку sphere gap меньше, при больших \(\tau\)
+\begin{equation}
+ \Delta S_2(\tau)
+ \sim10e^{-4\tau/a^2}-12e^{-2\tau/b^2}>0.
+ \label{eq:carrier-large-tau-positive}
+\end{equation}
+
+\section{Converged middle-profile audit}
+
+Heat traces вычислены через log-sum-exp с adaptive shell cutoff. На
+логарифмической сетке из \(3001\) точки
+\begin{equation}
+ 10^{-5}\le\tau\le2
+\end{equation}
+не найдено ни одного значения \(\Delta S_2\le0\). Максимальное различие
+равно
+\begin{equation}
+ \Delta S_2(0.1133942342\ldots)
+ =0.1810734171\ldots.
+\end{equation}
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+\(\tau\) & \(S_2(S^4)\) & \(S_2(S^2\times S^2)\) \\
+\midrule
+0.01 & 5.53495894 & 5.53380883 \\
+0.05 & 2.32809306 & 2.27857639 \\
+0.10 & 1.01431659 & 0.83969637 \\
+0.20 & 0.15812668 & 0.07771936 \\
+0.50 & 0.00034988 & 0.00004185 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{proposition}[Correlation-entropy ordering]
+Аналитические asymptotics и converged middle-profile audit согласованно дают
+\begin{equation}
+ S_2(S^4;\tau)>S_2(S^2\times S^2;\tau)
+\end{equation}
+на всём проверенном positive-\(\tau\) профиле. Нормированное Gaussian state
+на \(S^4\) сохраняет больше effective spectral modes и имеет меньшую purity.
+\end{proposition}
+
+\section{Граница физического вывода}
+
+Если TOE vacuum principle формулируется как максимизация correlation
+entropy при фиксированных объёме и \(\tau\), то \(S^4\) выигрывает также
+операторный, а не только symmetry gate. Но исходная теория ещё не вывела
+именно этот знак вариационного принципа. Минимизация \(S_2\) выбрала бы
+противоположный background.
+
+\begin{nogocriterion}[Ordering не равен action principle]
+Нельзя объявлять \(S^4\) динамически выбранным только потому, что его
+normalized heat state имеет большую Rényi entropy. Необходимо независимо
+обосновать, почему vacuum экстремизирует \(+S_2\), а не \(-S_2\), и как
+correlation time \(\tau\) входит в фундаментальное состояние.
+\end{nogocriterion}
+
+\begin{theorem}[Первый операторный аргумент в пользу \(S^4\)]
+При единичном объёме round \(S^4\) превосходит ближайший surviving конкурент
+\(S^2\times S^2\) по разнообразию мод нормированного Gaussian state. Таким
+образом, \(S^4\) поддержан независимыми symmetry и correlation-entropy
+критериями. Открытым остаётся не порядок кандидатов, а происхождение знака
+entropy principle и абсолютного масштаба.
+\end{theorem}
+
+Воспроизводимый аудит сохранён в
+\path{s2t_v4_s4_s2xs2_correlation_purity_gate.py} и
+\path{s2t_v4_s4_s2xs2_correlation_purity_gate_results.json}.

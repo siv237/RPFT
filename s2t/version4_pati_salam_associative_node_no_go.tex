@@ -1,0 +1,155 @@
+\chapter{Associative-node no-go: почему color-six не является Krajewski node}
+
+Трёхузловой exterior-square carrier дал правильный determinant и Hessian.
+Теперь проводится более строгая проверка: могут ли его nodes быть modules
+той же ассоциативной Pati--Salam algebra, которая действует на fermions.
+Ответ отрицателен, и это уточняет, где именно должна жить найденная
+конструкция.
+
+\section{Локализация obstruction}
+
+Determinant-stabilizing identity сохраняется, но её literal realization через
+новый шестимерный fermion module невозможна. Группа \(SU(4)\) действует на
+шестёрке, тогда как полная matrix algebra \(M_4(\mathbb C)\) не допускает на
+ней линейного unital associative representation.
+
+Значит:
+\begin{enumerate}
+ \item формулы determinant и положительного Hessian остаются верны;
+ \item literal node \((1_R,6_4)\) в строгом Krajewski graph запрещён;
+ \item шестёрка должна появляться как scalar curvature channel внутри
+ существующего Hilbert space, где она уже присутствует в Majorana block.
+\end{enumerate}
+
+\section{Группа не равна associative algebra}
+
+Для \(g\in GL(4,\mathbb C)\) внешний квадрат задаёт корректное group
+representation
+\begin{equation}
+ \Lambda^2(gh)=\Lambda^2(g)\Lambda^2(h).
+\end{equation}
+Его производная задаёт корректное Lie-algebra representation
+\begin{equation}
+ d\Lambda^2([X,Y])
+ =[d\Lambda^2(X),d\Lambda^2(Y)].
+\end{equation}
+Именно поэтому предыдущий wedge edge является точно gauge-equivariant.
+
+Но representation ассоциативной algebra должна быть complex-linear,
+unital и multiplicative. Карта \(A\mapsto\Lambda^2A\) квадратична:
+\begin{equation}
+ \Lambda^2(A+B)\ne\Lambda^2A+\Lambda^2B,
+ \qquad
+ \Lambda^2(\lambda I_4)=\lambda^2I_6.
+\end{equation}
+Производная \(d\Lambda^2\) линейна, но
+\begin{equation}
+ d\Lambda^2(I_4)=2I_6,
+ \qquad
+ d\Lambda^2(AB)\ne d\Lambda^2(A)d\Lambda^2(B).
+\end{equation}
+Следовательно, ни одна из двух естественных exterior-square maps не является
+unital associative representation \(M_4(\mathbb C)\to M_6(\mathbb C)\).
+
+На двухстах random matrix pairs machine audit даёт ошибки порядка
+\(10^{-14}\) для group multiplicativity и Lie commutators, но типичный
+additivity/associative-product defect порядка \(10^1\). Scalar test уже
+точно даёт
+\begin{equation}
+ \|\Lambda^2(2I_4)-2I_6\|_F=2\sqrt6,
+ \qquad
+ \|d\Lambda^2(I_4)-I_6\|_F=\sqrt6.
+\end{equation}
+
+\section{Artin--Wedderburn module obstruction}
+
+Project Pati--Salam algebra равна
+\begin{equation}
+ \mathcal A_F^{PS}
+ =\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C).
+\end{equation}
+Её irreducible complex left modules имеют dimensions
+\begin{equation}
+ 2,\qquad2,\qquad4.
+\end{equation}
+В частности, любой nontrivial \(M_4(\mathbb C)\)-module является direct sum
+копий fundamental \(\mathbb C^4\), поэтому его dimension кратна четырём.
+Irreducible color-six module и unital one-dimensional module отсутствуют.
+Следовательно, оба крайних nodes chain
+\begin{equation}
+ \mathbb C\longrightarrow(2,4)\longrightarrow(1,6)
+\end{equation}
+не являются nodes строгого finite triple над неизменённой
+\(\mathcal A_F^{PS}\).
+
+Добавление отдельного \(M_6(\mathbb C)\)-summand формально разрешило бы
+six-dimensional module, но одновременно добавило бы новый \(U(6)\) gauge
+factor и тем самым изменило бы модель, которую требовалось вывести.
+
+\section{Почему wedge-map всё равно не случайна}
+
+На уровне gauge representations
+\begin{equation}
+ \operatorname{Hom}((2,4),(1,6))
+ \cong(2,4)\oplus(2,\overline{20}).
+\end{equation}
+Wedge polarization выбирает единственную \((2,4)\)-копию. Machine map
+\begin{equation}
+ \Delta\longmapsto B_\Delta
+\end{equation}
+имеет complex rank восемь и проходит exact
+\(SU(2)_R\times SU(4)\)-equivariance test. Поэтому проблема не в
+representation content scalar field, а только в ошибочном превращении
+scalar representation в fermionic algebra module.
+
+\section{Правильное место для шестёрки}
+
+В уже построенном finite block
+\begin{equation}
+ \mathcal H_F=V_R\oplus V_L\oplus V_R^c\oplus V_L^c
+\end{equation}
+color-six присутствует внутри
+\begin{equation}
+ \operatorname{Sym}^2(2_R\otimes4_4)
+ =(3_R,10_4)\oplus(1_R,6_4),
+\end{equation}
+то есть как scalar Majorana channel, а не как Hilbert node. Это указывает
+на корректный carrier: represented degree-two differential calculus
+\begin{equation}
+ \Omega^2_{D_F}(\mathcal A_F)
+ =\pi_D(\Omega^2\mathcal A_F)/\pi_D(J^2)
+\end{equation}
+или соответствующая curvature superconnection. Два length-two paths могут
+породить wedge component в \(D_F^2\), а junk quotient должен решить, остаётся
+ли нужная antisymmetric projection в physical curvature.
+
+\begin{nogocriterion}[Associative-node no-go]
+Exterior-square chain нельзя объявлять Krajewski finite triple над
+\(\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)\): representations
+\(1\) и \(6\) не являются допустимыми endpoint modules этой associative
+algebra. Coarse order-one label test был необходим, но недостаточен.
+\end{nogocriterion}
+
+\begin{proposition}[Сохранённый curvature route]
+Exterior-square trace identity остаётся точным gauge-equivariant указателем
+на нужный determinant selector. Допустимый следующий gate должен не добавлять
+новые fermion nodes, а вычислить represented universal two-forms и junk ideal
+на существующем 32-dimensional Pati--Salam module и проверить, выделяет ли
+physical curvature канал \((1_R,6_4)\).
+\end{proposition}
+
+\section{Литература и воспроизводимость}
+
+Различие между vertices finite triple и scalar links сверено с
+T.~Krajewski, \emph{Classification of Finite Spectral Triples},
+arXiv:hep-th/9701081. Ограничения scalar potential и роль diagram paths
+сверены с T.~Krajewski, arXiv:hep-th/9803199. Generalized inner fluctuations
+сверены с A.~H.~Chamseddine and W.~D.~van Suijlekom, arXiv:1304.7583, а
+Pati--Salam scalar channels --- с A.~H.~Chamseddine, A.~Connes and
+W.~D.~van Suijlekom, arXiv:1304.8050.
+Переход от universal forms к represented calculus modulo junk является
+стандартной частью spectral-triple differential calculus.
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_associative_node_no_go.py} и
+\path{s2t_v4_pati_salam_associative_node_no_go_results.json}.

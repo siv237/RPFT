@@ -1,0 +1,24 @@
+{
+  "gate": "version4_stationary_endpoint_obstruction",
+  "cross_tome_input": {
+    "bare_quartic_over_kinetic_ratio": 1.0,
+    "source": "version3_compact_a2_a4_moment_gate",
+    "normalization_dictionary_derived": false
+  },
+  "critical_lambda": {
+    "reduced": 0.05668404385253546,
+    "full_ko6": 0.028906266074757686
+  },
+  "quartic_to_critical_ratio": {
+    "reduced": 17.641648902141096,
+    "full_ko6": 34.59457535656074
+  },
+  "unit_lambda_angular_curvature": {
+    "reduced": 7.5465276491797155,
+    "full_ko6": 7.768749871401939
+  },
+  "identity_dictionary_stationary_cp_odd_branch_exists": false,
+  "absolute_stationary_obstruction_proved": false,
+  "minimal_missing_structure": "an independently derived CP-odd radial-orientation invariant or a cross-tome mechanism changing the normalized quartic coefficient",
+  "verdict": "the identity normalization dictionary gives a large stationary obstruction, but the physical cross-tome comparison is conditional until the heat-kernel to spectral-trace coefficient is derived"
+}

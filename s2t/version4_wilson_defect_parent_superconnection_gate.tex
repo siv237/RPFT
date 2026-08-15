@@ -1,0 +1,526 @@
+\chapter{Wilson--defect parent-superconnection gate}
+
+Reverse-audit выбрал strongest route: получить \(B-L\) vortex и family
+generator \(K_n\) из одной superconnection. Кинематически это возможно.
+На Nambu--family bundle можно записать
+\begin{equation}
+ \mathbb A=d+iq_{root}a\otimes I+I\otimes A_F+\Phi_{odd},
+ \qquad
+ G=U(1)_{root}\times SU(2)_F,
+\end{equation}
+где charge-two \(\Phi\) создаёт Majorana pairing, а adjoint action
+\(A_F\) на generation triplet ограничивается на core как \(K_n/L\).
+Следовательно, отдельный boundary bilinear действительно не обязателен.
+
+\section{Почему одна запись ещё не является одним механизмом}
+
+В минимальном local action два gauge factors остаются независимыми.
+Quadratic kinetic mixing отсутствует:
+\begin{equation}
+ F_{root}\Tr F_F=0,
+\end{equation}
+поскольку \(\mathfrak{su}(2)\) traceless. На flat Wilson branch
+\(F_F=0\), поэтому higher local curvature couplings также не фиксируют
+holonomy. Реальный мост может возникнуть только из determinant полей,
+заряженных одновременно по root и family sectors.
+
+\section{Exact-weight obstruction}
+
+Требуемый Wilson functional содержит
+\begin{equation}
+ \frac83\log(1-\cos\theta).
+\end{equation}
+Exact determinant означает восемь одинаковых real rotation planes веса
+\(|m|=1\) и отсутствие higher weights.
+
+Для honest \(SO(3)\) representation все spins целые. Exhaustive weight
+count показывает, что единственное решение состоит из восьми vector
+triplets:
+\begin{equation}
+ 8V_1,
+ \qquad
+ \dim_{\mathbb R}=24.
+\end{equation}
+Каждый triplet содержит дополнительную zero-weight line. Их удаление
+требует axis-dependent quotient и разрушает исходную covariant trace.
+
+Альтернативный exact-log кандидат --- четыре complex fundamental doublets
+\(SU(2)\), real dimension \(16\). Но half-integer representations не
+спускаются к \(SO(3)\): center действует знаком \(-1\). Кроме того, при
+одной и той же \(SU(2)\)-connection adjoint triplet видит удвоенный Cartan
+angle. Поэтому determinant дублетов не является single-valued functional
+того же \(SO(3)\) holonomy \(R_n(\theta_*)\), который создаёт core kernel.
+
+\begin{proposition}[Representation fork]
+Unbroken \(SO(3)\)-trace требует лишних zero-weight modes, а covariant
+half-integer completion требует physical \(SU(2)\) lift. Однако это не
+закрывает axis-broken architecture: после самостоятельного выбора оси
+остаточная \(U(1)\)-ветвь может содержать восемь unit-weight rotation
+planes. Поэтому representation gate является ordering condition, а не
+полным no-go.
+\end{proposition}
+
+\section{Fixed-charge obstruction}
+
+Даже four-doublet determinant закрывает только logarithmic term. Fixed-charge
+Routhian требует среднего momentum norm
+\begin{equation}
+ \langle p^2\rangle=6.
+\end{equation}
+Единого quantized momentum \(|p|=\sqrt6\) не существует. Однако сохранённый
+exhaustive audit восьми rotation planes даёт две положительные нечётные
+ветви. При минимально возможном \(p_{\max}=3\) решение единственно:
+\begin{equation}
+ (p_1,\ldots,p_8)=(1,1,1,3,3,3,3,3),
+ \qquad
+ \sum_i p_i^2=48.
+\end{equation}
+При trace rank \(3\) это точно даёт
+\begin{equation}
+ \frac{1}{2\cdot3}\sum_i p_i^2\frac1{1-c}
+ =\frac8{1-c}.
+\end{equation}
+Вместе с восемью unit-weight planes получается и точный logarithmic term
+\(\frac83\log(1-c)\). Следовательно, оба нелинейных коэффициента действительно
+выпадают из одной quantized rotor architecture без непрерывной подгонки.
+
+Открытым остаётся не арифметика, а parent selection: почему path integral
+проецируется именно на fixed-charge ensemble и почему из двух odd solutions
+выбирается ветвь с минимальным максимальным momentum.
+
+\section{Parent-action verdict}
+
+Общая superconnection существует как совместимая кинематика. После
+восстановления momentum-sector audit она также допускает exact operator-level
+Wilson coefficients. Но action всё ещё содержит независимые root coupling,
+pairing mass/quartic, family stiffness, Wilson tree stiffness, rotor sector
+и axis coupling.
+
+\begin{nogocriterion}[Parent-selection gate]
+Точный momentum multiset нельзя считать физическим выводом, пока fixed-charge
+projection, восемь unit-weight planes и criterion выбора minimal
+\(p_{\max}\) не следуют из заранее объявленной boundary path integral.
+Использование этих данных только потому, что они дают коэффициенты, было бы
+дискретной подгонкой.
+\end{nogocriterion}
+
+Таким образом, мой первоначальный verdict о полном закрытии был чрезмерным.
+Wilson--defect bridge переоткрыт условно: два нелинейных коэффициента уже
+получены точно на operator level. Следующий decisive расчёт --- canonical
+boundary path integral с projector на fixed momentum, включая measure,
+zero modes, BV/BRST content и coupling к family axis.
+
+\section{Family-Casimir selector вместо
+\texorpdfstring{minimal-\(p_{\max}\)}{minimal-pmax}}
+
+Generation triplet даёт каноническое разложение
+\begin{equation}
+ \operatorname{End}_0(\mathbb R^3)
+ =\Lambda^2\mathbb R^3\oplus\operatorname{Sym}^2_0\mathbb R^3
+ \simeq V_1\oplus V_2,
+ \qquad 8=3+5.
+\end{equation}
+На блоках \(V_1,V_2\) family-Casimir равен \(2,6\). Поэтому оператор
+\begin{equation}
+ P=\frac12C_2
+\end{equation}
+имеет spectrum \(1^3 3^5\) и
+\begin{equation}
+ \Tr P^2=3\cdot1^2+5\cdot3^2=48.
+\end{equation}
+Альтернативная ветвь с momentum \(5\) потребовала бы Casimir eigenvalue
+\(10\), которого в \(V_0\oplus V_1\oplus V_2\) нет. Это доказывает наличие
+family-оператора с нужным spectrum, но ещё не выбор rotor state:
+\(C_2/2\) и \(p=-i\partial_\phi\) действуют на разных сомножителях.
+
+\section{Exact reduced path integral}
+
+Однослойный rotor no-go не запрещает две градации одной boundary
+architecture. Compact grade имеет rank \(8\) и fixed sector \(P=C_2/2\), а
+unit-root gaussian grade равен
+\begin{equation}
+ \mathbb R^2_{\rm root}\otimes\operatorname{End}_0(\mathbb R^3),
+ \qquad \dim_{\mathbb R}=16.
+\end{equation}
+При общей inertia \(I=1-c\)
+\begin{equation}
+ Z_P=\exp\left(-\frac{24}{I}\right),
+ \qquad
+ Z_G\propto I^{-8}.
+\end{equation}
+Поэтому после объявления free energy на одну family component
+\begin{equation}
+ -\frac13\log(Z_PZ_G)
+ =\frac8{1-c}+\frac83\log(1-c)+\text{const}.
+\end{equation}
+Оба nonlinear terms воспроизводятся обычными integer field counts;
+fractional determinant не требуется. Однако fixed-charge projector и общая
+family normalization должны быть выведены отдельно.
+
+\section{Mapping-cone common operator}
+
+Общая inertia сама выводится из Wilson incidence. На unit-root plane
+\begin{equation}
+ U(\theta)=
+ \begin{pmatrix}c&-s\\s&c\end{pmatrix},
+ \qquad Q_U=1-U(\theta),
+\end{equation}
+и при \(c^2+s^2=1\)
+\begin{equation}
+ \frac12Q_U^TQ_U=(1-c)I_2.
+\end{equation}
+Один mapping-cone Laplacian одновременно задаёт rotor inertia и gaussian
+mass. Он действует на root factor и коммутирует с family-Casimir, поэтому
+блоки \(V_1\) и \(V_2\) не смешиваются на quadratic level.
+
+Canonical Wilson plaquette \(1-c\) даёт требуемую unit stiffness \(-c\) с
+точностью до константы. В результате единая quadratic architecture выводит
+\begin{equation}
+ V_{\rm cone}(c)
+ =\frac8{1-c}+\frac83\log(1-c)-c.
+\end{equation}
+От полного функционала остаётся ровно
+\begin{equation}
+ V_{\rm gap}(c)-V_{\rm cone}(c)=\frac{c}{45}.
+\end{equation}
+
+\begin{proposition}[Mapping-cone pass]
+Family selector, nonlinear pair, их общая inertia и canonical \(-c\)
+stiffness теперь происходят из одной локальной quadratic architecture.
+\end{proposition}
+
+Число \(1/45\) уже известно как constant response периодического phase-zero
+channel, но его primitive \(+c/45\) ещё не встроен в тот же local BV
+complex.
+
+\begin{nogocriterion}[Periodic-singlet embedding gate]
+Полное Wilson closure допускается только если phase-zero singlet с response
+\(1/45\) выводится из той же superconnection с фиксированными statistics,
+zero-mode prescription и determinant sign. Ручное добавление \(+c/45\)
+запрещено.
+\end{nogocriterion}
+
+Следующий расчёт теперь предельно узок: встроить один periodic singlet и
+проверить полный БВ-якобиан.
+
+\section{Three-node graded completion}
+
+Независимый parity/charge audit показывает, что two-node bundle не может
+одновременно содержать unit-charged zero-form и unit-charged one-form полной
+нечётной степени. Минимальный carrier имеет три summands:
+\begin{equation}
+ E=E_0^+\oplus E_1^-\oplus E_2^+,
+ \qquad (q_0,q_1,q_2)=(0,1,1).
+\end{equation}
+В нём zero-form \(E_0^+\to E_1^-\) и one-form \(E_0^+\to E_2^+\)
+имеют unit root charge и видят один оператор
+\begin{equation}
+ K_\theta=\frac{2-U_\theta-U_\theta^\dagger}{2}=1-c.
+\end{equation}
+Quadratic cross term исчезает по form degree и ортогональности targets.
+После compact reduction one-form grade даёт восемь angular rotors, а
+zero-form grade --- шестнадцать gaussian modes.
+
+Вместе с canonical plaquette и periodic primitive reduced action равен
+\begin{equation}
+ \Gamma_{\rm red}(c)
+ =\frac8{1-c}+\frac83\log(1-c)+(1-c)+\frac{c}{45},
+\end{equation}
+то есть совпадает с \(V_{\rm gap}\) с точностью до константы.
+
+\begin{proposition}[Three-node quadratic embedding pass]
+Трёхузловая graded superconnection является минимальным carrier обеих
+градаций, общего Wilson operator и полной reduced shape без нового
+continuous polarization.
+\end{proposition}
+
+Это quadratic configuration-metric pass, а не final physical closure.
+Supercurvature interactions начинаются выше quadratic order; periodic
+primitive, compact radial constraint, gauge quotient и interaction Jacobian
+должны быть вычислены из одного action.
+
+\begin{nogocriterion}[Curvature/BV gate]
+Three-node branch проходит только если одно заранее фиксированное curvature
+или spectral action после gauge fixing сохраняет common \(K_\theta\), Casimir
+projector, sixteen-mode determinant и linear primitive без counterterm.
+\end{nogocriterion}
+
+Машинный parity/charge audit сохранён в
+\path{s2t_v4_three_node_superconnection_closure_gate.py} и
+\path{s2t_v4_three_node_superconnection_closure_gate_results.json}.
+
+\section{Periodic-singlet determinant: all-orders BV no-go}
+
+Положим \(t=1-c\). Для periodic nonzero tower normalized determinant имеет
+разложение
+\begin{equation}
+ \sum_{n\ne0}\log\left(1+\frac{t}{(\pi n)^4}\right)
+ =\frac{t}{45}-\frac{t^2}{9450}+O(t^3),
+\end{equation}
+поскольку
+\begin{equation}
+ \frac{2\zeta(4)}{\pi^4}=\frac1{45},
+ \qquad
+ \frac{2\zeta(8)}{\pi^8}=\frac1{4725}.
+\end{equation}
+Fermionic/ghost sign даёт требуемый первый член \(-t/45\), эквивалентный
+\(+c/45\) с точностью до константы, но одновременно оставляет лишний
+\(+t^2/9450\). Поэтому susceptibility coefficient нельзя выдавать за полный
+determinant.
+
+Для конечного BV menu с couplings \(\lambda_j\) и signed weights \(a_j\)
+точная линейность потребовала бы
+\begin{equation}
+ \sum_j a_j\lambda_j^k=0,
+ \qquad k\ge2.
+\end{equation}
+При \(m\) различных ненулевых couplings условия \(k=2,\ldots,m+1\)
+образуют невырожденную weighted Vandermonde system. Значит, все net weights
+равны нулю и linear moment также исчезает.
+
+\begin{theorem}[Finite Gaussian periodic-singlet no-go]
+Никакой конечный стандартный boson/fermion/ghost Gaussian BV complex не даёт
+ненулевой exact linear primitive \(+c/45\) при сокращении всех higher powers.
+\end{theorem}
+
+Остаётся иной класс:
+\begin{equation}
+ \Gamma_\zeta(t)
+ =-\frac{t}{\pi^4}\Tr{}'\Delta_{\rm per}^{-2}
+ =-\frac{t}{45}.
+\end{equation}
+Это exact nonlocal spectral stiffness, а не determinant конечного local
+Gaussian complex.
+
+\begin{nogocriterion}[Zeta-stiffness reopening]
+Ветвь переоткрывается только если этот linear zeta functional с unit
+coefficient и отрицательным знаком выводится из parent spectral action,
+topological expectation value или infinite complex с доказанным all-orders
+cancellation. Ручной counterterm запрещён.
+\end{nogocriterion}
+
+\section{Periodic exact--ghost BV ledger}
+
+В полном gauge-fixed учёте нельзя оставлять один ghost без его продольного
+bosonic partner. Для одной real root plane имеются две вещественные gauge
+generators. Exact one-form sector даёт signed Gaussian weight
+\begin{equation}
+ +\frac12\times2=+1,
+\end{equation}
+а две соответствующие FP ghost pairs дают
+\begin{equation}
+ -1\times2=-2.
+\end{equation}
+Их полный net weight равен
+\begin{equation}
+ +1-2=-1.
+\end{equation}
+Поэтому periodic trace автоматически создаёт
+\begin{equation}
+ \Gamma_{\rm ex+gh}(c)
+ =-(1-c)\frac{2\zeta(4)}{\pi^4}
+ =-\frac{1-c}{45}
+ =\frac{c}{45}+\text{const}.
+\end{equation}
+Это ровно недостающий term, уже с полным exact/ghost bookkeeping, а не с
+изолированным ghost.
+
+\begin{proposition}[Periodic BV ledger pass]
+Root-plane exact one-form и его FP ghosts имеют канонический net weight
+\(-1\), который вместе с periodic \(n^{-4}\) trace даёт exact correction
+\(-(1-c)/45\).
+\end{proposition}
+
+Обычный четырёхмерный Yang--Mills complex, однако, содержит также coexact
+one-form modes с положительным bosonic weight. Они добавили бы новые spectral
+terms. Поэтому pass становится физическим только для topological/flat
+one-form grade либо при обязательном BV partner, сокращающем весь coexact
+root sector.
+
+\begin{nogocriterion}[Coexact-cancellation gate]
+Ветвь проходит только если local three-node action выводит отсутствие или
+точное BV-сокращение coexact root modes, сохраняя net exact/ghost weight
+\(-1\) и compact harmonic rotor.
+\end{nogocriterion}
+
+\section{Coexact-cancellation trilemma}
+
+Полный Hodge/BV audit оставляет три стандартные возможности.
+\begin{enumerate}
+ \item Ordinary Maxwell-type kinetic term сохраняет положительный coexact
+ root tower. Он не сокращается уже использованными FP ghosts.
+ \item Pure flat/BF constraint удаляет coexact modes, но одновременно
+ превращает exact/ghost sector в topological torsion и harmonic measure;
+ требуемый \(-\Tr'\Delta^{-2}\) residue не сохраняется.
+ \item Dynamical или localized BF partner меняет eigenvalues либо boundary
+ conditions и потому не является selective isospectral cancellation.
+\end{enumerate}
+
+\begin{theorem}[Local one-form BV trilemma]
+В стандартном конечном local one-form/BF/BV class нельзя одновременно
+сохранить periodic exact--ghost stiffness \(-(1-c)/45\) и удалить все
+coexact root modes. Ordinary kinetic branch оставляет лишний tower, а flat
+topological branch удаляет также нужный spectral residue.
+\end{theorem}
+
+Это закрывает не всю Wilson reconstruction, а её local Gaussian one-form
+реализацию. Остаётся nonlocal spectral class
+\begin{equation}
+ \Gamma_{\rm stiff}(c)
+ =-\frac{1-c}{\pi^4}\Tr{}'\Delta_{\rm per}^{-2}
+ =-\frac{1-c}{45},
+\end{equation}
+прочитанный как fundamental Kubo/configuration metric, а не как determinant
+локального finite BV complex.
+
+\begin{nogocriterion}[Fundamental spectral-metric gate]
+Ветвь переоткрывается только если unit coefficient, negative supertrace sign
+и kernel \(\Delta^{-2}\) выводятся из parent information/spectral geometry до
+сравнения с Wilson angle. Объявление этого functional вручную запрещено.
+\end{nogocriterion}
+
+Машинный аудит сохранён в
+\path{s2t_v4_periodic_singlet_bv_embedding_gate.py} и
+\path{s2t_v4_periodic_singlet_bv_embedding_gate_results.json}.
+
+Машинный exhaustive audit сохранён в
+\path{s2t_v4_wilson_defect_parent_superconnection_gate.py} и
+\path{s2t_v4_wilson_defect_parent_superconnection_gate_results.json}.
+
+\section{Fixed-charge Gauss-law и общая family-мера}
+
+Следующий аудит разделяет две ранее склеенные задачи: происхождение деления
+на три и динамический выбор momentum vector
+\begin{equation}
+ p_*=(1,1,1,3,3,3,3,3).
+\end{equation}
+
+\subsection{Нормировку на три можно сделать согласованной}
+
+Проблема деления \(-\log Z\) на три исчезает, если сначала строится полный
+family-traced functional, в котором tree и periodic sectors также имеют
+triplet multiplicity. Тогда
+\begin{equation}
+ \Gamma_{\rm full}(c)
+ =\frac{24}{1-c}+8\log(1-c)-3c+\frac{c}{15}
+ =3V_{\rm gap}(c).
+\end{equation}
+Деление на три после этой формулы является только переходом к величине на
+одну family component и не меняет stationary equation. Это не полный
+динамический вывод меры, но устраняет прежнюю внутреннюю несогласованность,
+где determinant делился на три, а tree term --- нет.
+
+\subsection{Один закон Гаусса не выбирает восемь импульсов}
+
+Пусть восемь compact momenta образуют vector \(p\in\mathbb Z^8\). Один
+temporal gauge field вводит одно scalar Gauss constraint
+\begin{equation}
+ A p=k,
+ \qquad \rank A=1.
+\end{equation}
+Его solution lattice имеет dimension $7$, поэтому он не может единственным
+образом зафиксировать $p=p_*$. Даже два block constraints, различающие
+$V_1$ и $V_2$, имеют rank $2$ и оставляют шестимерное семейство.
+Уникальное линейное закрепление всего vector требует rank $8$:
+\begin{equation}
+ p-C_2/2=0
+\end{equation}
+как восьмикомпонентного operator constraint. Такой multiplier не следует из
+одного минимального $U(1)$; он является новой структурой, пока не выведен
+из существующей superconnection.
+
+Есть и второе различие. Projector в Hilbert space одного rotor,
+тензорно умноженного на family carrier, даёт сумму
+\begin{equation}
+ Z_{\rm dir}=3e^{-1/[2(1-c)]}+5e^{-9/[2(1-c)]},
+\end{equation}
+а использованная ранее формула
+\begin{equation}
+ Z_{\rm prod}=e^{-24/(1-c)}
+\end{equation}
+является произведением восьми независимо constrained rotors. Поэтому один
+operator projector не восстанавливает прежний path integral автоматически.
+
+\begin{proposition}[Minimal Gauss-law menu no-go]
+Один diagonal $U(1)$ Gauss law и два irrep-block Gauss laws не выводят
+единственный sector $1^3 3^5$. Family normalization допускает согласованное
+triplet-trace completion, но fixed-charge product требует дополнительного
+rank-eight covariant constraint.
+\end{proposition}
+
+Следующий честный gate имеет два исхода. Либо rank-eight constraint выводится
+из уже существующей graded superconnection без нового свободного multiplier,
+либо восьмироторная реконструкция снимается и заменяется другим механизмом
+inverse term.
+
+\section{Coherent-source Gaussian: альтернативная роторная конструкция}
+
+Более широкий пересмотр показывает, что inverse term необязательно должен
+происходить из fixed momentum. Пусть уже имеющийся Gaussian carrier равен
+\begin{equation}
+ \mathcal X=\mathbb R^2_{\rm root}\otimes(V_1\oplus V_2),
+ \qquad \dim_{\mathbb R}\mathcal X=16.
+\end{equation}
+Для выбранной family axis $n$ обозначим через $\kappa_j(n)$ нормированный
+reproducing-kernel vector spin-$j$ channel. При нормировке invariant measure
+его квадрат нормы равен размерности representation:
+\begin{equation}
+ \|\kappa_1(n)\|^2=3,
+ \qquad
+ \|\kappa_2(n)\|^2=5.
+\end{equation}
+Это не выбор восьми компонент вручную: при вращении axis vector
+$\kappa_j(n)$ преобразуется ковариантно, а его норма остаётся постоянной.
+
+Положим
+\begin{equation}
+ P=\frac12C_2,
+ \qquad
+ J(n)=e_{\rm root}\otimes P\kappa(n).
+\end{equation}
+Тогда representation theory автоматически даёт
+\begin{equation}
+ \|J(n)\|^2
+ =3\cdot1^2+5\cdot3^2
+ =48,
+\end{equation}
+независимо от axis. Рассмотрим один Gaussian integral с общей mapping-cone
+inertia $I=1-c$:
+\begin{equation}
+ Z_J(I)=\int_{\mathbb R^{16}}dX\,
+ \exp\left[-\frac I2\|X\|^2+i\langle J(n),X\rangle\right].
+\end{equation}
+Точное completing the square даёт
+\begin{equation}
+ Z_J(I)\propto I^{-8}\exp\left[-\frac{24}{I}\right].
+\end{equation}
+Следовательно,
+\begin{equation}
+ -\frac13\log Z_J
+ =\frac8{1-c}+\frac83\log(1-c)+\text{const}.
+\end{equation}
+
+Таким образом, один и тот же sixteen-mode Gaussian sector порождает оба
+nonlinear terms. Восемь compact rotors, momentum vector $1^3 3^5$ и
+rank-eight Gauss projector больше не нужны. Casimir теперь задаёт norm
+ковариантного source, а не навязанные quantum numbers.
+
+\begin{proposition}[Coherent-source algebraic pass]
+Axis-coherent source $J(n)=e_{\rm root}\otimes(C_2/2)\kappa(n)$ в
+sixteen-dimensional Gaussian carrier точно воспроизводит nonlinear pair
+$8/(1-c)+(8/3)\log(1-c)$ без fixed-charge sector.
+\end{proposition}
+
+Это существенное переоткрытие, но не физическое замыкание. Для положительного
+inverse term требуется imaginary Euclidean coupling
+$i\langle J,X\rangle$. Он допустим как кандидат на oriented defect или
+boundary phase, однако его gauge-invariant происхождение, contour,
+reflection/reality prescription и measure axis должны следовать из parent
+superconnection. Вставка source вручную снова была бы подгонкой.
+
+\begin{nogocriterion}[Coherent-source parent gate]
+Ветвь проходит только если одна заранее фиксированная defect coupling выводит
+imaginary source, его unit coefficient, root orientation и invariant
+coherent-state measure. Сравнение с $V_{\rm gap}$ проводится только после
+фиксации этих данных.
+\end{nogocriterion}

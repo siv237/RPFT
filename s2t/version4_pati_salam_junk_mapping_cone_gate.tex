@@ -1,0 +1,201 @@
+\chapter{Junk no-go и canonical mapping-cone selector}
+
+Projected-curvature recovery оставил два вопроса: является ли endpoint
+projector следствием standard represented differential calculus и почему
+relative edge normalization равна \(c=1\). Здесь оба вопроса разделяются.
+Нормировка действительно фиксируется внутренней изометрией. Standard junk
+quotient, напротив, не выводит нужный projector. Но relative mapping-cone
+derivative строит его из единственной канонической координаты трёхузлового
+графа.
+
+\section{Сводка результатов gate}
+
+Результат состоит из трёх частей.
+\begin{enumerate}
+ \item Два edge realizations одной \(\Delta\) имеют одинаковую норму, поэтому
+ \(c=1\) не является подгонкой.
+ \item Обычный degree-two junk quotient нельзя использовать как объяснение
+ endpoint path: в минимальном node calculus он этот path удаляет.
+ \item У трёхузловой цепи есть единственная reflection-odd координата
+ \((-1,0,1)\). Нормированный коммутатор с ней автоматически убивает
+ backtracking curvature и оставляет только endpoint block.
+\end{enumerate}
+Следовательно, selector теперь выводится внутри relative mapping-cone
+action, но ещё не доказано, почему именно этот relative action является
+физическим bosonic parent action.
+
+\section{Почему \texorpdfstring{\(c=1\)}{c=1} канонично}
+
+Для
+\begin{equation}
+ A_\Delta=\Delta,
+ \qquad
+ B_\Delta=c\Delta^T\varepsilon_2
+\end{equation}
+операция
+\begin{equation}
+ T:\Delta\longmapsto\Delta^T\varepsilon_2
+\end{equation}
+является Frobenius-isometry:
+\begin{equation}
+ \|T(\Delta)\|_F^2=\|\Delta\|_F^2.
+ \label{eq:ps-edge-isometry}
+\end{equation}
+Transpose сохраняет singular values, а \(\varepsilon_2\) unitary. Кроме
+того, endpoint reflection меняет \(4\leftrightarrow\bar4\), а SU(2)
+pseudoreality переводит два edge realizations друг в друга. Поэтому единая
+reflection/reality-invariant trace--Hodge metric допускает только
+\begin{equation}
+ |c|=1.
+\end{equation}
+Оставшаяся фаза удаляется rephasing крайнего module, после чего
+\begin{equation}
+ \boxed{c=1.}
+ \label{eq:ps-canonical-edge-normalization}
+\end{equation}
+На трёхстах random matrices ошибка identity
+\eqref{eq:ps-edge-isometry} меньше \(1.1\times10^{-14}\).
+
+\begin{proposition}[Canonical edge metric]
+Если оба edges являются reflection/reality pair одного поля \(\Delta\) и
+измеряются одной Hilbert--Schmidt/Hodge metric, relative continuous
+normalization отсутствует: \(c=1\) с точностью до removable phase.
+\end{proposition}
+
+\section{Контроль standard junk quotient}
+
+Чтобы не приписывать junk calculus желаемое поведение, рассмотрим минимальный
+node control
+\begin{equation}
+ \mathcal A_{\rm node}=\mathbb C^3,
+ \qquad
+ 0\longleftrightarrow1\longleftrightarrow2,
+\end{equation}
+с любыми ненулевыми weights двух edges. Представленные one-forms и two-forms
+вычисляются из
+\begin{align}
+ \pi_D(e_i\,de_j)&=e_i[D,e_j],\\
+ \pi_D(e_i\,de_j\,de_k)&=e_i[D,e_j][D,e_k],
+\end{align}
+а degree-two junk равен
+\begin{equation}
+ J_D^2=\pi_D\bigl(d\ker\pi_D|_{\Omega^1}\bigr).
+\end{equation}
+
+Exact linear algebra даёт
+\begin{equation}
+ \rank\pi_D(\Omega^1)=4,
+ \qquad
+ \rank\pi_D(\Omega^2)=5,
+ \qquad
+ \rank J_D^2=2.
+\end{equation}
+Оба endpoint units принадлежат junk:
+\begin{equation}
+ E_{02},E_{20}\in J_D^2.
+ \label{eq:ps-endpoint-in-junk}
+\end{equation}
+Результат устойчив при complex unequal edge weights; maximum residual в
+трёх controls меньше \(1.5\times10^{-15}\).
+
+\begin{nogocriterion}[Junk-projector no-go]
+Нельзя утверждать, что standard degree-two junk quotient автоматически
+оставляет length-two endpoint curvature. Уже минимальный faithful node
+control делает противоположное: endpoint path является junk. Полный
+Pati--Salam quotient может иметь дополнительную multiplicity structure, но
+до его явного вычисления он не служит derivation найденного projector.
+\end{nogocriterion}
+
+\section{Каноническая координата трёхузлового графа}
+
+Incidence Laplacian path graph равен
+\begin{equation}
+ L_{P_3}=
+ \begin{pmatrix}
+ 1&-1&0\\
+ -1&2&-1\\
+ 0&-1&1
+ \end{pmatrix}.
+\end{equation}
+В reflection-odd sector его наименьший ненулевой eigenvalue равен единице, а
+eigenvector единственен с точностью до знака. Нормировка endpoint gap к двум
+даёт
+\begin{equation}
+ h=\operatorname{diag}(-1,0,1).
+ \label{eq:ps-canonical-graph-height}
+\end{equation}
+Это не fitted projector: \(h\) восстанавливается из incidence, reflection и
+фиксированной graph-distance normalization.
+
+Определим relative mapping-cone derivative
+\begin{equation}
+ \delta_h(F)=\frac12[h,F].
+ \label{eq:ps-mapping-cone-derivative}
+\end{equation}
+Для even curvature \(F=\mathcal D_\Delta^2\) diagonal backtracking blocks
+коммутируют с \(h\), тогда как blocks \(0\leftrightarrow2\) получают factor
+единицу. Поэтому
+\begin{equation}
+ \|\delta_h(F)\|_F^2=\|F_{02}\|_F^2.
+ \label{eq:ps-relative-equals-endpoint}
+\end{equation}
+При уже выведенном \(c=1\)
+\begin{equation}
+ \boxed{
+ \|\delta_h(\mathcal D_\Delta^2)\|_F^2
+ =4\det(\Delta\Delta^\dagger).}
+ \label{eq:ps-mapping-cone-kappa-four}
+\end{equation}
+KO6 doubling и physical half-trace сохраняют coefficient четыре. Все random
+tests identities \eqref{eq:ps-relative-equals-endpoint}--
+\eqref{eq:ps-mapping-cone-kappa-four} проходят с maximum error меньше
+\(10^{-12}\).
+
+\begin{theorem}[Canonical relative selector]
+На reflection-symmetric chain \(\bar4\to2_R\to4\) graph incidence однозначно
+задаёт normalized relative derivation \(\delta_h\), а reality-invariant
+trace--Hodge metric фиксирует \(c=1\). Relative curvature norm без continuous
+weights равен exact rank selector
+\(4\det(\Delta\Delta^\dagger)\).
+\end{theorem}
+
+\section{Точный статус parent action}
+
+Обычная curvature norm остаётся
+\begin{equation}
+ \|F\|_F^2=\Tr\mathcal D_\Delta^4=4\rho^2
+\end{equation}
+и не различает rank. Поэтому mapping-cone result не следует из raw spectral
+action заменой notation. Он задаёт другой, relative functional
+\begin{equation}
+ S_{\rm rel}[\Delta]
+ =\|\delta_h(\mathcal D_\Delta^2)\|_F^2.
+ \label{eq:ps-relative-parent-action}
+\end{equation}
+Следующий gate должен вывести выбор \(S_{\rm rel}\), а не полного
+\(\|F\|^2\), из boundary/mapping-cone principle или заранее объявленного
+relative observable. После этого требуется решить physical versus auxiliary
+status двух endpoint modules и пересчитать mixed Hessian и gauge-running
+ledger.
+
+\begin{theorem}[Уточнённое переоткрытие]
+Происхождение projector и normalization теперь локализовано.
+Standard junk route закрыт, \(c=1\) выведено, а endpoint projector
+является commutator с канонической graph coordinate. Незакрытым
+остаётся один концептуальный выбор: почему физический parent action
+измеряет relative mapping-cone curvature, а не full curvature.
+\end{theorem}
+
+\section{Литература и воспроизводимость}
+
+Определение degree-two junk сверено с T.~Sch\"ucker,
+arXiv:hep-th/9312186. Superconnection curvature как even operator
+\(F=\mathbb A^2\) сверена с G.~Roepstorff, arXiv:hep-th/9801040.
+Graph Laplacian/Dirac и distance-function framework сверены с M.~Requardt,
+arXiv:math-ph/0001026. Relative mapping-cone specialization
+\eqref{eq:ps-mapping-cone-derivative} является конструкцией проекта, а не
+утверждением, найденным в этих источниках.
+
+Machine audit сохранён в
+\path{s2t_v4_pati_salam_junk_mapping_cone_gate.py} и
+\path{s2t_v4_pati_salam_junk_mapping_cone_gate_results.json}.

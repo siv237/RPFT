@@ -1,0 +1,99 @@
+\chapter{Bounded nonlinear propagators: общий asymptotic no-go}
+
+Projector и full-moment lift-ы оставили две лёгкие families почти
+вырожденными. Это оказывается не случайностью конкретных spectral functions,
+а следствием leading endpoint metric.
+
+\section{Универсальная асимптотика}
+
+Пусть heavy block имеет вид
+\begin{equation}
+ \mathcal M_s(t)=tI_6+F_s,
+\end{equation}
+где \(F_s=O(1)\) --- любая фиксированная sector-relative matrix, выведенная
+из bounded spectral function parent operator. Тогда
+\begin{equation}
+ \mathcal M_s(t)^{-1}=\frac1tI_6-\frac1{t^2}F_s+O(t^{-3}).
+\end{equation}
+
+Endpoint row равен \(L_s=(A_s,B_s)\). Все четыре torsor edges являются
+restrictions transpositions, поэтому точно
+\begin{equation}
+ A_s^2=B_s^2=I_3,
+ \qquad
+ L_sL_s^\dagger=2I_3.
+\end{equation}
+Следовательно,
+\begin{equation}
+ Y_s=P_--\frac2tI_3+O(t^{-2}).
+\end{equation}
+Rank-one projector \(P_-\) имеет двухмерное нулевое eigenspace, поэтому две
+light singular values равны \(2/t+O(t^{-2})\). Их ratio стремится к единице.
+
+\begin{theorem}[Bounded-propagator asymptotic no-go]
+Любая bounded нецентральная deformation общего heavy block влияет на split
+двух light families лишь с порядка \(t^{-2}\), тогда как их общий scale
+возникает уже на порядке \(t^{-1}\). В decoupling regime такая архитектура не
+может создать параметрически различные first- и second-generation masses.
+\end{theorem}
+
+Это объясняет устойчивый numerical optimum \(t\sim1.6\times10^3\): fit
+подгоняет общий light scale, но leading degeneracy остаётся.
+
+\section{Нелинейный stress-menu}
+
+Для проверки вне projector/moment пары нормируем
+\begin{equation}
+ \widehat R_s=\frac{3R_{4,s}}{\Tr R_{4,s}}
+\end{equation}
+и заранее фиксируем конечное menu
+\begin{equation}
+ \widehat R_s^{\pm1},\ldots,\widehat R_s^{\pm4},\qquad
+ e^{\pm(\widehat R_s-I)},\qquad
+ I+(\widehat R_s-I)^2.
+\end{equation}
+Для каждой из одиннадцати functions перебираются все шестнадцать sign
+cocycles; один общий \(t\) обучается по quark masses, CKM остаётся blind.
+
+Лучший branch использует \(\widehat R_s^4\), all-negative cocycle и
+\begin{equation}
+ t=1620.6055.
+\end{equation}
+Он даёт
+\begin{align}
+ u&\simeq(0.00123273,\,0.00123408,\,1),\\
+ d&\simeq(0.00123244,\,0.00123419,\,1),
+\end{align}
+с максимальной mass error около \(98.4\). Blind readout имеет
+\begin{equation}
+ s_{12}\simeq0.1275,
+ \qquad s_{23}\simeq1.88\times10^{-6},
+ \qquad s_{13}\simeq2.08\times10^{-6},
+\end{equation}
+и \(|J_q|\simeq2.77\times10^{-14}\).
+
+\begin{proposition}[Nonlinear menu confirmation]
+Powers, inverse powers и parameter-free exponentials меняют Cabibbo-plane
+orientation, но ни один mass-selected branch не снимает leading light-pair
+degeneracy, предсказанную asymptotic theorem.
+\end{proposition}
+
+\section{Что именно требуется дальше}
+
+Следующий механизм обязан изменить хотя бы одно из условий theorem:
+\begin{enumerate}
+\item вывести неunitary endpoint intertwiners с
+\(L_sL_s^\dagger\not\propto I\);
+\item породить два parametrically distinct messenger scales;
+\item получить family term, растущий вместе с \(t\), а не bounded
+correction.
+\end{enumerate}
+
+\begin{nogocriterion}[Запрет дальнейшего перебора bounded functions]
+Новые polynomial, resolvent или heat-kernel functions того же bounded parent
+operator не считаются новым механизмом. Они уже покрываются universal
+\(t^{-1}\) obstruction.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_bounded_nonlinear_propagator_gate_results.json}.

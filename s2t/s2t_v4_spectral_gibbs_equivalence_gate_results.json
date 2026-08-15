@@ -1,0 +1,40 @@
+{
+  "gate": "version4_spectral_gibbs_equivalence",
+  "date": "2026-08-11",
+  "raw_postulate": "Tr f(C/Lambda^2)",
+  "trace_class_obstruction": "if_C_has_infinite_rank_and_f(0)_is_nonzero_then_f(C/Lambda^2)_is_not_trace_class",
+  "example_cutoff": "f(u)=exp(-u)",
+  "raw_partial_sums": [
+    {
+      "shell_cutoff": 10,
+      "raw_trace": 1714.6795589755582
+    },
+    {
+      "shell_cutoff": 20,
+      "raw_trace": 19479.679558975557
+    },
+    {
+      "shell_cutoff": 40,
+      "raw_trace": 259159.67955897556
+    },
+    {
+      "shell_cutoff": 80,
+      "raw_trace": 3767119.6795589756
+    }
+  ],
+  "corrected_unbounded_generator": "H_C=-tau_inverse_log(C)=Delta",
+  "corrected_spectral_action": "Tr f(H_C/Lambda^2)",
+  "direct_sum_test": {
+    "Z_A": 2.0,
+    "Z_B": 3.0,
+    "F_A_direct_sum_B": -1.6094379124341003,
+    "F_A_plus_F_B": -1.791759469228055,
+    "difference": 0.18232155679395468
+  },
+  "equivalence_verdict": "no_scalar_trace_function_can_equal_Gibbs_free_energy_on_all_direct_sums",
+  "exact_outer_transform": "F=-tau_inverse_log(Tr C)",
+  "architecture": {
+    "local_EFT": "Tr f((-log C)/(tau Lambda^2))",
+    "global_carrier_selection": "-tau_inverse_log Tr C"
+  }
+}

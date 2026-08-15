@@ -1,0 +1,117 @@
+\chapter{Реальный градуированный бимодуль и first-order квадрат}
+
+Для \(A_F=\mathbb C\oplus\mathbb C\) неприводимые бимодули маркируются
+парой индексов
+\begin{equation}
+ H_{ij},
+ \qquad i,j\in\{X,C\},
+\end{equation}
+где левое действие использует \(i\)-ю компоненту алгебры, а правое ---
+\(j\)-ю. Для матричного элемента
+\(D_{ij,kl}:H_{ij}\to H_{kl}\) условие первого порядка имеет множитель
+\begin{equation}
+ (a_i-a_k)(b_j-b_l)D_{ij,kl}.
+\end{equation}
+Следовательно, ненулевое ребро разрешено только если \(i=k\) или \(j=l\):
+оно может менять один индекс, но не оба одновременно.
+
+\section{Минимальная reality-замкнутая диаграмма}
+
+Прямая связь \(H_{XX}\leftrightarrow H_{CC}\) запрещена. Минимальный путь
+\begin{equation}
+ H_{XX}\longleftrightarrow H_{XC}
+ \longleftrightarrow H_{CC}
+\end{equation}
+после замыкания относительно
+\begin{equation}
+ J:H_{ij}\longmapsto H_{ji}
+\end{equation}
+обязательно добавляет \(H_{CX}\). Получается квадрат
+\begin{equation}
+ H_{XX}\leftrightarrow H_{XC}\leftrightarrow H_{CC}
+ \leftrightarrow H_{CX}\leftrightarrow H_{XX}.
+\end{equation}
+
+Градуировка
+\begin{equation}
+ \gamma=+1\quad\text{на }H_{XX}\oplus H_{CC},
+ \qquad
+ \gamma=-1\quad\text{на }H_{XC}\oplus H_{CX}
+\end{equation}
+делает все четыре разрешённых ребра нечётными.
+
+\begin{theorem}[Минимальный first-order vertex pass]
+Четырёхсекторный квадрат является минимальным \(J\)-замкнутым
+\(A_F\)-бимодулем, который содержит оба диагональных факторных сектора и
+допускает ненулевой нечётный оператор, удовлетворяющий first-order
+правилу. Тем самым операторный запрет минимального диагонального
+представления преодолён.
+\end{theorem}
+
+\section{Общий real-совместимый odd operator}
+
+В порядке положительных секторов \((H_{XX},H_{CC})\) и отрицательных
+\((H_{XC},H_{CX})\) нечётный самосопряжённый оператор имеет вид
+\begin{equation}
+ D_F=
+ \begin{pmatrix}
+ 0&B\\
+ B^\dagger&0
+ \end{pmatrix},
+ \qquad
+ B=
+ \begin{pmatrix}
+ x&\overline x\\
+ \overline z&z
+ \end{pmatrix}.
+\end{equation}
+Здесь условие \(JD_F=D_FJ\) уже учтено. Оно оставляет два комплексных
+параметра \(x,z\). Связующий блок невырожден тогда и только тогда, когда
+\begin{equation}
+ \det B=xz-\overline{xz}
+ =2i\,\operatorname{Im}(xz)\ne0.
+\end{equation}
+Следовательно, вещественный оператор имеет ранг-дефицит; полный ранг требует
+ненулевой относительной комплексной фазы.
+
+\section{KO-размерностный red-team}
+
+На четырёхсекторном квадрате транспонирование индексов сохраняет
+диагональность и внедиагональность, поэтому
+\begin{equation}
+ J\gamma=\gamma J.
+\end{equation}
+Это не знак конечной KO-размерности \(6\), для которой требуется
+\(J\gamma=-\gamma J\). При сохранении диагональных секторов минимальное
+исправление состоит в particle--antiparticle doubling с противоположной
+градуировкой, после которого \(J\) обменивает две копии. Размерность
+конечного модуля возрастает с \(4\) до \(8\).
+
+\begin{nogocriterion}[KO6 undoubled no-go]
+Недиублированный четырёхсекторный квадрат допускает first-order vertex, но
+не реализует знак \(J\gamma=-\gamma J\). Если Версия III требует конечную
+KO-размерность \(6\), particle--antiparticle doubling является
+обязательным, а правило физического half-trace должно быть выведено до
+сравнения нормировок.
+\end{nogocriterion}
+
+\section{Параметрический статус}
+
+Даже после KO-дублирования алгебра и first-order condition определяют
+разрешённые позиции \(D_F\), но не значения \(x,z\). Минимальный квадрат
+решает вопрос существования вершины, однако не фиксирует её модуль и
+комплексную фазу. Поэтому он ещё не является parameter-free parent action.
+
+\begin{protocol}[Следующий гейт]
+Необходимо проверить, может ли автоморфизм обмена факторов, reality,
+ориентируемость или спектральное действие:
+\begin{enumerate}
+ \item свести \(x,z\) к одной дискретно нормированной орбите;
+ \item сохранить ненулевой \(\operatorname{Im}(xz)\);
+ \item вывести physical half-trace после KO-дублирования;
+ \item не изменить уже полученные факторные нормы.
+\end{enumerate}
+\end{protocol}
+
+Машинный аудит сохранён в
+\texttt{s2t\_v3\_real\_bimodule\_square\_results.json}.

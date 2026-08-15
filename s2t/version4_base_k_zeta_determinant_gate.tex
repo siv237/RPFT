@@ -1,0 +1,182 @@
+\chapter{Полный zeta-determinant на \texorpdfstring{base-\(K\)}{base-K}}
+
+После закрытия корректной zero-mode редукции остаётся проверить вторую
+размерностно согласованную архитектуру: считать
+\(K=\mathbb{RP}^3_R\times S^1_R\) самой компактной евклидовой
+четырёхмерной базой и интегрировать все её моды одним determinant, без
+добавочной KK-суммы. В отличие от прежнего общего renormalization no-go,
+здесь сначала фиксируется полный gauge-fixed operator complex.
+
+\section{Физический Hessian-ledger}
+
+Исправленная kinetic convention и spectral gauge normalization дают
+\begin{equation}
+ m_s^2=4\chi^2,
+ \qquad
+ m_A^2=3\chi^2,
+ \qquad
+ m_f^2=\chi^2.
+\end{equation}
+В finite-блоке имеются три вещественных скаляра и две vectorlike Dirac-пары.
+Поэтому one-loop functional до локальных counterterms равен
+\begin{align}
+ \Gamma_{K,\mathfrak s,\rho}^{(1)}(\chi)
+ ={}&\frac32\log\det_{\zeta,\mu}(\Delta_0+4\chi^2)
+ \\
+ &+\frac12\log\det_{\zeta,\mu}(\Delta_1+3\chi^2)
+ -\frac12\log\det_{\zeta,\mu}(\Delta_0+3\chi^2)
+ \\
+ &-\log\det_{\zeta,\mu}(D_{K,\mathfrak s,\rho}^2+\chi^2).
+ \label{eq:base-k-full-determinant}
+\end{align}
+Последняя строка уже включает две Dirac-пары: каждая пара даёт
+\(-\tfrac12\log\det(D_K^2+\chi^2)\). Индексы
+\(\mathfrak s,\rho\) обозначают дискретный выбор spin-структуры и flat
+character; они должны быть заморожены до численного вычисления.
+
+В локальном flat-limit формула \eqref{eq:base-k-full-determinant}
+воспроизводит прежний supertrace:
+\begin{equation}
+ N_0
+ =3\cdot4^2-2\cdot4\cdot1^2+3\cdot3^2
+ =48-8+27
+ =67.
+\end{equation}
+Следовательно,
+\begin{equation}
+ B_0=\frac{67}{64\pi^2}>0.
+\end{equation}
+
+\section{Глобальное BV-сокращение и гармонические моды}
+
+Для произведения \(K\) свободные числа Бетти равны
+\begin{equation}
+ (b_0,b_1,b_2,b_3,b_4)=(1,1,0,1,1).
+\end{equation}
+В частности, в отличие от одного фактора \(\mathbb{RP}^3\), полный
+четырёхмерный носитель имеет гармоническую one-form вдоль \(S^1\).
+По Hodge-разложению ненулевой exact one-form spectrum совпадает с
+ненулевым scalar spectrum. Поэтому для любого \(M^2>0\)
+\begin{align}
+ &\log\det(\Delta_1+M^2)-\log\det(\Delta_0+M^2)
+ \\
+ &\qquad=
+ \log\det(\Delta_{1,\mathrm{coex}}^{\mathrm{nh}}+M^2)
+ +(b_1-b_0)\log M^2,
+\end{align}
+где superscript \(\mathrm{nh}\) исключает harmonic subspace. Так как
+\(b_1-b_0=0\), massive harmonic one-form и постоянная scalar mode
+сокращаются точно. Gauge--Goldstone--ghost часть принимает глобально
+корректный вид
+\begin{equation}
+ \Gamma_A^{(1)}
+ =\frac12\log\det_{\zeta,\mu}
+ (\Delta_{1,\mathrm{coex}}^{\mathrm{nh}}+3\chi^2).
+\end{equation}
+
+\begin{proposition}[Base-\(K\) BV determinant pass]
+Локальное shorthand-сокращение трёх massive-vector polarizations имеет
+точную глобальную реализацию на \(K\). Наличие \(b_1(K)=1\) не создаёт
+добавочного zero-mode множителя, поскольку \(b_1(K)=b_0(K)=1\).
+\end{proposition}
+
+\section{Явная scalar tower и branch-dependent fermions}
+
+Для trivial scalar bundle спектр можно записать непосредственно:
+\begin{equation}
+ \lambda_{\ell,m}^{(0)}
+ =\frac{\ell(\ell+2)+m^2}{R^2},
+ \qquad
+ \ell=0,2,4,\ldots,
+ \qquad
+ m\in\mathbb Z,
+\end{equation}
+с кратностью \((\ell+1)^2\). Чётность \(\ell\) является
+\(\mathbb Z_2\)-проекцией с \(S^3\) на \(\mathbb{RP}^3\). Поэтому,
+например,
+\begin{equation}
+ \zeta_0(s;c)
+ =\sum_{\substack{\ell\ge0\\ \ell\ \mathrm{even}}}
+ (\ell+1)^2
+ \sum_{m\in\mathbb Z}
+ \left[
+ \frac{\ell(\ell+2)+m^2}{R^2}+c\chi^2
+ \right]^{-s}.
+\end{equation}
+Coexact one-form zeta function определяется аналогично из объявленного
+projected vector spectrum. Fermion zeta function зависит от заранее
+выбранных \(\mathfrak s,\rho\); это дискретный branch test, а не
+непрерывная fitting-ручка.
+
+\section{Что именно фиксирует zeta prescription}
+
+Для положительного Laplace-type operator \(P\) используем
+\begin{equation}
+ \log\det_{\zeta,\mu}P
+ =-\zeta_P'(0)-\zeta_P(0)\log\mu^2.
+\end{equation}
+В четырёх измерениях \(\zeta_P(0)\) задаётся локальным \(a_4(P)\).
+Следовательно, scale dependence полного ledger является локальным
+полиномом по постоянному \(\chi\):
+\begin{equation}
+ \mu\frac{d}{d\mu}\Gamma_K^{(1)}
+ =C_0R_K^2+C_2R_K\chi^2+C_4\chi^4.
+\end{equation}
+Renormalized action поэтому обязано содержать
+\begin{equation}
+ \Gamma_K^{\mathrm{ren}}
+ =\Gamma_K^{(1)}
+ +\int_Kd\operatorname{vol}
+ \left(
+ \lambda_0R_K^2+\lambda_2R_K\chi^2+\lambda_4\chi^4
+ \right).
+ \label{eq:base-k-local-completion}
+\end{equation}
+Zeta regularization однозначно определяет nonlocal finite part после
+выбора \(\mathfrak s,\rho\), но не выбирает finite части
+\(\lambda_0,\lambda_2,\lambda_4\).
+
+Пусть \(F(\chi)\) обозначает уже вычисленную determinant-часть при
+фиксированных \(\mu,\mathfrak s,\rho\). Для любого заранее выбранного
+\(\chi_*>0\) и любого \(\lambda_4\) условие стационарности выполняется при
+\begin{equation}
+ \lambda_2
+ =-\frac{F'(\chi_*)+4\lambda_4\chi_*^3}
+ {2R_K\chi_*}.
+\end{equation}
+Даже в условно scale-invariant ветви \(\lambda_2=0\) finite quartic
+counterterm непрерывно сдвигает положение минимума. Замена
+\(\mu\mapsto e^t\mu\) в flat quartic sector эквивалентна
+\begin{equation}
+ \lambda_4\mapsto\lambda_4+2B_0t.
+\end{equation}
+
+\begin{theorem}[Полный base-\(K\) determinant verdict]
+Operator-level задача теперь замкнута: известны scalar, gauge--BV и
+fermion determinant blocks, а harmonic gauge bookkeeping согласуется с
+топологией полного \(K\). Однако даже точное аналитическое или численное
+вычисление всех zeta functions не выберет parameter-free vacuum, пока
+finite части \(\lambda_2,\lambda_4\) не зафиксированы независимыми
+renormalization conditions.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет численного обхода counterterms]
+Нахождение минимума только finite zeta-части при
+\(\lambda_2=\lambda_4=0\) является результатом выбранной схемы, а не
+спектральным предсказанием. Такой минимум нельзя использовать как blind
+physical output без предварительного объявления subtraction conditions.
+\end{nogocriterion}
+
+\begin{protocol}[Разрешённое продолжение]
+Следующий численный determinant-аудит допустим только после заморозки:
+\begin{enumerate}
+ \item spin/flat branch \((\mathfrak s,\rho)\);
+ \item двух renormalization conditions для \(R_K\chi^2\) и \(\chi^4\);
+ \item одного train scale либо dimensionless геометрического условия.
+\end{enumerate}
+После этого determinant может проверять blind dimensionless curvature,
+mass ratios и branch differences, но не абсолютный scale без train datum.
+\end{protocol}
+
+Машинный ledger сохранён в
+\path{s2t_v4_base_k_zeta_determinant_gate_results.json}.

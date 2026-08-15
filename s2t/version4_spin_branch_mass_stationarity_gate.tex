@@ -1,0 +1,160 @@
+\chapter{Стационарность spin-branch determinant по масштабу}
+
+Независимый аудит предложил последний маршрут без новой физики: использовать
+scheme-independent разность periodic и anti-periodic fermion determinants и
+проверить, фиксирует ли условие
+\begin{equation}
+ \frac{\partial}{\partial\chi}
+ \Delta\Gamma_{\rm AP-P}(\chi)=0
+\end{equation}
+ненулевой scale. Одновременно аудит поставил вопрос о происхождении massive
+vector. Оба пункта допускают точный ответ.
+
+\section{Gauge mass не является внешним Stueckelberg input}
+
+Finite block содержит charged coordinates
+\begin{equation}
+ x\mapsto e^{-i\theta}x,
+ \qquad
+ z\mapsto e^{+i\theta}z.
+\end{equation}
+В vacuum
+\begin{equation}
+ |x|=|z|=\frac{\chi}{\sqrt2}
+\end{equation}
+trace kinetic term даёт
+\begin{equation}
+ \Tr_{\rm orb}(D_\mu\Phi D^\mu\Phi)
+ \supset4\chi^2A_\mu A^\mu.
+\end{equation}
+После canonical gauge normalization
+\begin{equation}
+ \frac{m_A^2}{\chi^2}=8g^2=3.
+\end{equation}
+
+Три scalar masses \(m_s^2=4\chi^2\) относятся к физическим координатам
+quotient orbit space. Goldstone direction в этот список не входит: она
+лежит вдоль gauge orbit и в \(R_\xi\)-комплексе имеет operator
+\begin{equation}
+ \Delta_0+\xi m_A^2,
+\end{equation}
+совпадающий с longitudinal/ghost block. Поэтому отсутствие massless scalar
+среди трёх физических мод не означает отсутствия Higgs mechanism.
+
+\begin{proposition}[Gauge-origin clarification]
+Massive relative vector выводится из ковариантной kinetic metric charged
+finite vacuum. Stueckelberg mass или уже проинтегрированный внешний сектор
+для получения \(m_A^2=3\chi^2\) не требуются.
+\end{proposition}
+
+\section{Точная periodic/AP разность}
+
+Положим
+\begin{equation}
+ x=\chi R_3,
+ \qquad
+ r=\frac{R_1}{R_3},
+ \qquad
+ a_k=k+\frac32,
+ \qquad
+ d_k=(k+1)(k+2).
+\end{equation}
+Для двух физических Dirac-пар
+\begin{equation}
+ \Delta\Gamma_{\rm AP-P}(x;r)
+ =-2\sum_{k=0}^\infty d_k\,mathcal I(\rho_k),
+ \qquad
+ \rho_k=r\sqrt{a_k^2+x^2},
+ \label{eq:spin-branch-mass-ratio}
+\end{equation}
+где
+\begin{equation}
+ \mathcal I(\rho)
+ =\log\frac{\cosh(2\pi\rho)+1}{\cosh(2\pi\rho)-1}
+ =2\log\coth(\pi\rho)>0.
+\end{equation}
+Все local heat-kernel coefficients двух branches совпадают. Поэтому в
+\eqref{eq:spin-branch-mass-ratio} сокращаются \(\mu\), \(\lambda_0\),
+\(\lambda_2\) и \(\lambda_4\).
+
+\section{Аналитический derivative gate}
+
+Поскольку
+\begin{equation}
+ \mathcal I'(\rho)
+ =-\frac{4\pi}{\sinh(2\pi\rho)},
+\end{equation}
+получаем
+\begin{equation}
+ \frac{\partial\Delta\Gamma_{\rm AP-P}}{\partial x}
+ =8\pi r x
+ \sum_{k=0}^\infty
+ \frac{d_k}
+ {\sqrt{a_k^2+x^2}\,
+  \sinh\left(2\pi r\sqrt{a_k^2+x^2}\right)}.
+ \label{eq:spin-branch-positive-derivative}
+\end{equation}
+При \(r>0\) и \(x>0\) каждый член строго положителен. Следовательно,
+\begin{equation}
+ \frac{\partial\Delta\Gamma_{\rm AP-P}}{\partial x}>0
+ \qquad(x>0).
+\end{equation}
+Единственная stationary point на замкнутой области \(x\ge0\) находится на
+boundary \(x=0\). При \(x\to\infty\)
+\begin{equation}
+ \Delta\Gamma_{\rm AP-P}(x;r)\longrightarrow0^{-}.
+\end{equation}
+
+При \(r=1\) численный контроль даёт
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+\(x\) & \(\Delta\Gamma_{\rm AP-P}\) &
+\(\partial_x\Delta\Gamma_{\rm AP-P}\) \\
+\midrule
+0 & \(-1.2984531\cdot10^{-3}\) & 0 \\
+0.5 & \(-7.8082383\cdot10^{-4}\) & \(1.5474092\cdot10^{-3}\) \\
+1 & \(-1.9482804\cdot10^{-4}\) & \(6.7652689\cdot10^{-4}\) \\
+2 & \(-2.5002924\cdot10^{-6}\) & \(1.2468954\cdot10^{-5}\) \\
+4 & \(-4.20\cdot10^{-11}\) & \(2.43\cdot10^{-10}\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{theorem}[No nonzero scale from spin-branch ratio]
+Periodic/AP determinant difference является конечным, scheme-independent и
+нетривиально зависит от \(\chi R_3\), но не имеет stationary point при
+\(\chi>0\). Поэтому она не фиксирует ни абсолютный scale, ни ненулевое
+отношение \(\chi R_3\).
+\end{theorem}
+
+Тот же вывод не зависит от порядка вычитания: если определить обратную
+разность \(\Gamma_{\rm P}-\Gamma_{\rm AP}\), derivative меняет знак, но
+также нигде не обращается в нуль при \(x>0\).
+
+\section{Итог внешнего аудита}
+
+Независимый аудит верно подтвердил supertrace \(67\), determinant signs и
+общий counterterm obstruction. Два уточнения имеют окончательный статус:
+\begin{enumerate}
+ \item gauge mass уже выведена из Higgsed relative-\(U(1)\) finite block;
+ \item предложенный последний no-new-physics determinant route закрывается
+ точной положительностью \eqref{eq:spin-branch-positive-derivative}.
+\end{enumerate}
+
+\begin{nogocriterion}[Закрытие relative-scale loophole]
+Branch determinant считается scale selector только при наличии isolated
+stationary point \(x_*>0\). Монотонная branch difference не может быть
+использована для назначения \(\chi R\) по выбранному значению её magnitude.
+\end{nogocriterion}
+
+\begin{theorem}[Minimal fixed-\(K\) exhaustion]
+После derivative gate минимальный fixed-\(K\) parent action исчерпан также
+по последнему scheme-independent маршруту, не требующему новой структуры.
+Переоткрытие требует либо новой chiral/topological measure, либо
+variational carrier architecture, но не ещё одного determinant ratio внутри
+текущей модели.
+\end{theorem}
+
+Машинный аудит сохранён в
+\path{s2t_v4_spin_branch_mass_stationarity_gate_results.json}.

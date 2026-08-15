@@ -1,0 +1,99 @@
+\chapter{Pati--Salam literature re-audit и scenario ledger}
+
+Повторная проверка первичных источников выявила, что предыдущая формулировка
+слишком грубо объединила разные spectral Pati--Salam scenarios. Необходимо
+разделить most-general fundamental и constrained composite branches.
+
+\section{General fundamental branch}
+
+Для наиболее общего finite Dirac operator независимые поля равны
+\begin{align}
+ \Sigma&\sim(2_R,2_L,1_4)\oplus(2_R,2_L,15_4),\\
+ H_R&\sim(1_R,1_L,6_4)\oplus(3_R,1_L,10_4),\\
+ H_L&\sim(1_R,1_L,6_4)\oplus(1_R,3_L,10_4).
+\end{align}
+Именно к этому branch относится restricted-potential no-go: high-scale
+breaking через \(H_R\) даёт required Goldstones, шесть unwanted massless
+modes и отрицательные Hessian directions; \(\Sigma\) не допускается как
+самостоятельный high-scale breaking VEV.
+
+\section{Composite branch с first-order SM subalgebra}
+
+Если finite Dirac operator заранее удовлетворяет first-order condition для
+Standard Model subalgebra, более общие fields становятся composite products
+основных
+\begin{equation}
+ \phi\sim(2_R,2_L,1_4),
+ \qquad
+ \Delta\sim(2_R,1_L,4_4),
+ \qquad
+ \Sigma_4\sim(1_R,1_L,15_4).
+\end{equation}
+Следовательно, прежнее утверждение ``spectral menu вообще не содержит
+\((1,1,15)\)'' неверно. Weak-singlet adjoint присутствует в constrained
+composite branch и участвует в одном из RG scenarios, если quark--lepton
+Yukawa unification не imposed.
+
+Однако это не закрывает vacuum. Composite \(\Sigma_4\) возникает после
+специального ограничения исходного Dirac operator, а composite fields
+являются произведениями более фундаментальных fluctuations. В RG-анализе
+их nonrenormalizable interactions и post-breaking effects были явно
+оставлены будущей работе. Критика arXiv:1905.04533 состоит именно в том, что
+нельзя считать algebraic pre-splitting доказанным spontaneous breaking
+most-general model.
+
+\begin{theorem}[Scenario correction]
+Fundamental spectral Pati--Salam potential закрыт известным vacuum no-go.
+Composite branch содержит weak-singlet \((1,1,15)\), но его легитимность как
+динамически выведенного remnant и его полный vacuum potential не закрыты.
+Поэтому no-go нельзя переносить на все возможные geometry extensions, а
+composite adjoint нельзя считать готовым решением.
+\end{theorem}
+
+\section{Повторная оценка real singlet}
+
+Наш algebraic результат остаётся точным только для узкого ansatz
+\begin{equation}
+ \delta V=s^2\Tr(H_R^\dagger H_R),
+\end{equation}
+который даёт одинаковый mass shift двум вырожденным modes. Но diagonal real
+singlet расширенного Dirac operator может породить дополнительные mixed
+invariants, изменить joint vacuum и не обязан сводиться к одному universal
+quadratic shift. Более того, именно такой singlet назван в литературе
+возможным route around negative mass terms.
+
+Следовательно:
+\begin{itemize}
+ \item current project Coleman--Weinberg singlet в direct sum не помогает;
+ \item hand-added universal portal не помогает;
+ \item connected diagonal real singlet extension остаётся открытым gate.
+\end{itemize}
+
+\section{Сверка с базой проекта}
+
+В проекте явно построен observed finite baseline
+\begin{equation}
+ \mathbb C\oplus\mathbb H\oplus M_3(\mathbb C),
+\end{equation}
+но ещё не построены полный Pati--Salam Hilbert bimodule, grading, real
+structure и finite Dirac matrix для
+\(\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)\). Поэтому слова
+``current project grading forbids/allows'' были преждевременны: пока речь
+идёт о literature target grading, а не об уже реализованном project object.
+
+\begin{protocol}[Исправленный следующий gate]
+До следующего RG расчёта необходимо:
+\begin{enumerate}
+ \item построить явный project Pati--Salam finite Hilbert/Dirac block;
+ \item проверить general fundamental и composite restrictions в одной
+ matrix convention;
+ \item вывести, а не назначить composite \((1,1,15)\);
+ \item вычислить полный potential с composite/nonrenormalizable terms;
+ \item отдельно проверить connected diagonal real singlet;
+ \item повторить Hessian, Goldstone и fermion-mass gates.
+\end{enumerate}
+\end{protocol}
+
+Машинный scenario ledger сохранён в
+\path{s2t_v4_pati_salam_literature_reaudit.py} и
+\path{s2t_v4_pati_salam_literature_reaudit_results.json}.

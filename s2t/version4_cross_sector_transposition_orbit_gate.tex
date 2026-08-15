@@ -1,0 +1,92 @@
+\chapter{Cross-sector transposition orbit: relative selector и readout no-go}
+
+Single-sector square оставил четыре transposition minima. Их абсолютные
+labels не наблюдаемы до фиксации общего family basis; физическим datum
+является relative orbit ordered pair \((H_u,H_d)\). Классифицируем его без
+использования CKM input.
+
+\section{Три relative orbit-класса}
+
+Подгруппа residual symmetry, сохраняющая \(P_-\), имеет порядок \(4\) и
+транзитивно действует на четырёх single-sector minima. Двенадцать ordered
+distinct pairs распадаются на три orbit по четыре элемента.
+
+Полный минимальный invariant, различающий эти orbit, равен
+\begin{equation}
+ W(H_u,H_d)=\Tr(P_-H_uH_d).
+\end{equation}
+Точный перебор даёт
+\begin{equation}
+ W\in\left\{-\frac12,\,0,\,+\frac12\right\}.
+\end{equation}
+Класс \(W=0\) содержит commuting incidence pairs. Два класса
+\(W=\pm1/2\) некоммутативны и различаются ориентацией относительно
+rank-one projector.
+
+\begin{proposition}[Relative-orbit completeness]
+С точностью до simultaneous residual family transformation один scalar
+cross-word \(W\) полностью классифицирует все ordered up/down pairs внутри
+выбранной transposition branch.
+\end{proposition}
+
+Это означает, что четырёхкратность single-sector minima сама по себе не
+является четырьмя физически различными моделями. После quotient остаются
+ровно три relative architectures.
+
+\section{Почему selector ещё не выведен}
+
+Раздельная сумма двух square spectral actions не содержит \(W\):
+\begin{equation}
+ \Tr f(D_u^2)+\Tr f(D_d^2)
+\end{equation}
+не имеет mixed closed path. Добавление
+\begin{equation}
+ V_{ud}=\kappa_{ud}W(H_u,H_d)
+\end{equation}
+выбрало бы \(W=-1/2\) при \(\kappa_{ud}>0\) или \(W=+1/2\) при
+\(\kappa_{ud}<0\), но знак и величина \(\kappa_{ud}\) пока не следуют из
+построенного Krajewski square.
+
+\begin{nogocriterion}[Запрет ручного cross-word]
+Нельзя объявить один relative orbit выбранным, просто добавив
+\(\kappa_{ud}W\). Mixed term считается выведенным только если он возникает
+как closed path одного общего finite Dirac operator с фиксированным знаком и
+нормировкой.
+\end{nogocriterion}
+
+\section{Unit-amplitude physical diagnostic}
+
+Single-sector minimum фиксирует равные normalized edge amplitudes. Поэтому
+минимальный безразмерный readout имеет вид
+\begin{equation}
+ Y_s=P_-+iH_s,
+ \qquad s=u,d.
+\end{equation}
+Во всех трёх relative orbit-классах mass-squared spectrum одинаков:
+\begin{equation}
+ \Spec(Y_sY_s^\dagger)=
+ \left\{\frac12,\,1,\,\frac52\right\}.
+\end{equation}
+Прямой exact test даёт
+\begin{equation}
+ \Tr\left([Y_uY_u^\dagger,Y_dY_d^\dagger]^3\right)=0
+\end{equation}
+для каждого класса. Следовательно, scalar maximal loop phase square не
+становится физической CKM phase в этом readout.
+
+Кроме того, каждый класс даёт крупное mixing: даже наименее смешанный
+вариант имеет off-diagonal element не меньше примерно \(0.816\). Поэтому
+unit-amplitude branch не является реалистичным blind fermion output.
+
+\begin{theorem}[Minimal cross-sector readout no-go]
+Rank-one plus transposition square сокращает family menu и классифицирует
+relative up/down geometry, но без нового mixed Krajewski path не выбирает
+orbit. После естественного unit-amplitude readout все три orbit имеют
+нулевой CP invariant и крупное mixing.
+\end{theorem}
+
+Следующий admissible шаг должен не добавлять phenomenological CKM matrix, а
+построить общий up--down connector, который одновременно порождает
+\(W\), фиксирует его coefficient и делает phase family-nonfactorizable.
+Машинный orbit и readout ledger сохранён в
+\path{s2t_v4_cross_sector_transposition_orbit_gate_results.json}.

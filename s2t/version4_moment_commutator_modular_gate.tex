@@ -1,0 +1,98 @@
+\chapter{Moment-commutator modular constraint: all-plane activation no-go}
+
+Affine Gibbs state правильно ориентировал Cabibbo plane, но почти не
+возбуждал \(2\)--\(3\) и \(1\)--\(3\) rotations. В качестве второго
+независимого spectral constraint используем не fitted multiplier, а
+некоммутативность quartic и sixth moments.
+
+\section{Orientation-sensitive constraint}
+
+Для каждого sector отдельно стандартизируем \(R_{4,s}\) и \(R_{6,s}\):
+\begin{equation}
+ Z_{2n,s}=\frac{R_{2n,s}-\frac13\Tr(R_{2n,s})I}
+ {\sqrt{\frac13\Tr(R_{2n,s}-\frac13\Tr(R_{2n,s})I)^2}}.
+\end{equation}
+Их Hermitian commutator constraint равен
+\begin{equation}
+ K_s=\frac{[Z_{4,s},Z_{6,s}]}{2i}.
+\end{equation}
+После той же mean/variance normalization получаем \(\widehat K_s\). Его
+spectrum во всех четырёх sectors равен
+\begin{equation}
+ \left(-\sqrt{\frac32},\,0,\,+\sqrt{\frac32}\right)
+\end{equation}
+с numerical residual ниже machine precision.
+
+Два orientation branches задаются modular Hamiltonians
+\begin{equation}
+ H_s^\pm=\operatorname{standardize}(Z_{4,s}\pm\widehat K_s),
+ \qquad
+ \rho_s^\pm=\frac{e^{-H_s^\pm}}{\Tr e^{-H_s^\pm}}.
+\end{equation}
+Sign является прежней дискретной orientation fork, а не continuous
+coefficient. Branch, placement, edge cocycle и общий \(t\) выбираются только
+по mass train.
+
+\begin{proposition}[Independent orientation constraint]
+\(K_s\) исчезает тогда и только тогда, когда fourth и sixth family moments
+коммутируют. Поэтому он измеряет новую eigenvector information, не
+содержащуюся в spectrum одного moment, и является orientation-odd относительно
+перестановки порядка moments.
+\end{proposition}
+
+\section{Mass train}
+
+Полный menu из двух signs, трёх GNS/KMS placements и шестнадцати edge
+cocycles выбирает
+\begin{equation}
+ H_s^-,\qquad L_s^{R},\qquad
+ (\epsilon_{00},\epsilon_{01},\epsilon_{10},\epsilon_{11})=(-1,-1,-1,+1),
+ \qquad t=490.6176.
+\end{equation}
+Mass predictions равны
+\begin{align}
+ u&=(0.00078972,\,0.00199790,\,1),\\
+ d&=(0.00074520,\,0.00197700,\,1).
+\end{align}
+Maximum mass error уменьшается до \(63.07\); charm и strange errors --- до
+\(3.69\) и \(11.30\). Это лучший mass ledger данной modular sequence, но
+formal train всё ещё не пройден.
+
+\section{CKM blind}
+
+После заморозки mass-selected branch
+\begin{equation}
+ |V_q|\simeq
+ \begin{pmatrix}
+ 0.11377&0.99351&0.000651\\
+ 0.99351&0.11377&0.000659\\
+ 0.000610&0.000697&1
+ \end{pmatrix}.
+\end{equation}
+Второй constraint действительно активирует все planes и повышает
+\begin{equation}
+ |J_q|\quad\text{до}\quad3.73\times10^{-8},
+\end{equation}
+то есть примерно до \(1.2\times10^{-3}\) наблюдаемого значения. Однако
+Cabibbo plane переориентирован почти на permutation:
+\begin{equation}
+ s_{12}=0.9935.
+\end{equation}
+Кроме того, \(s_{23}\) и \(s_{13}\) всё ещё малы примерно в \(63\) и \(5.7\)
+раза соответственно.
+
+\begin{theorem}[Moment-commutator trade-off]
+Независимый orientation-sensitive constraint из \([R_4,R_6]\) улучшает
+mass hierarchy, включает три mixing planes и существенно усиливает CP.
+Но mass-only selection выбирает branch с почти максимальным \(1\)--\(2\)
+поворотом, поэтому blind CKM test провален.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет CKM-selected commutator sign]
+Нельзя после blind test заменить sign, placement или cocycle вариантом с
+более удобным Cabibbo angle. Следующий механизм должен сам динамически
+согласовать symmetric energy constraint и orientation-odd commutator.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_moment_commutator_modular_gate_results.json}.

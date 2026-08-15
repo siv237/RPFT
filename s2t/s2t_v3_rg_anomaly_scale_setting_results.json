@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "one_absolute_scale_input_unavoidable",
+  "charge_ledger": {
+    "weyl_charge_square": 2,
+    "complex_scalar_charge_square": 2,
+    "one_loop_b": "2"
+  },
+  "gauge_running": {
+    "beta_g": "b*g^3/(16*pi^2)",
+    "nonzero_one_loop_fixed_point": false,
+    "spectral_matching_g_squared": "3/8",
+    "inverse_g_squared_solution": "-log(mu/mu0)/(4*pi**2) + 8/3",
+    "landau_log_ratio": "32*pi**2/3",
+    "landau_ratio": "exp(32*pi^2/3)"
+  },
+  "scale_setting": {
+    "dimensional_transmutation_removes_scale_input": false,
+    "trace_anomaly_fixes_boundary_condition": false,
+    "rg_integration_constant_required": true
+  },
+  "status_correction": {
+    "g_squared_3_over_8": "matching relation at mu_spec",
+    "scale_independent_constant": false
+  },
+  "verdict": {
+    "minimum_train_scales": 1,
+    "next_gate": "one-scale train and dimensionless blind scorecard"
+  }
+}

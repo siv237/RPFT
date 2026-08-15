@@ -1,0 +1,72 @@
+\chapter{Inner-fluctuation Yukawa gate: малая алгебра или свободная
+\texorpdfstring{\(M_3\)}{M3}}
+
+Предыдущая глава нашла CP-capable map
+\begin{equation}
+ Y^{(\rho)}(H)=P_-+i\{\rho_\star,H\}.
+\end{equation}
+Проверим, может ли её второй член возникнуть как family component стандартной
+внутренней one-form одного finite Dirac operator, а не как новый postulate.
+
+\section{Локальный one-form test}
+
+Для family algebra \(\mathcal A_{\rm fam}\subset M_3(\mathbb C)\) и edge
+\(H\) необходимое локальное пространство имеет вид
+\begin{equation}
+ \Omega_H^1(\mathcal A_{\rm fam})=
+ \operatorname{span}\{a[H,b]:a,b\in\mathcal A_{\rm fam}\}.
+\end{equation}
+Проверены четыре естественных уровня:
+\begin{enumerate}
+\item coarse multiplicity algebra \(\mathbb C I\);
+\item state algebra \(\operatorname{span}\{I,\rho_\star\}\);
+\item residual algebra, порождённая \(T_p,T_q,S\);
+\item полная \(M_3(\mathbb C)\).
+\end{enumerate}
+
+Для обоих выбранных incidence edges \(H_u,H_d\) получена одна и та же
+последовательность размерностей:
+\begin{equation}
+ \dim\Omega_H^1=0,\quad2,\quad8,\quad9.
+\end{equation}
+Target correction \(i\{\rho_\star,H\}\) не принадлежит первым трём
+пространствам и впервые входит только при
+\(\mathcal A_{\rm fam}=M_3(\mathbb C)\).
+
+\begin{theorem}[Inner-fluctuation dichotomy]
+Coarse, state и residual family algebras слишком малы, чтобы породить
+CP-capable anticommutator map стандартной внутренней флуктуацией. Полная
+\(M_3(\mathbb C)\) порождает эту correction, но одновременно даёт
+девятимерное пространство всех family matrices. Поэтому карта существует,
+но не выделяется однозначно.
+\end{theorem}
+
+\section{Почему enriched data не спасают уникальность}
+
+Ассоциативная алгебра, порождённая уже выбранными объектами
+\begin{equation}
+ I,\quad P_-,\quad\rho_\star,\quad H_u,\quad H_d,
+\end{equation}
+сама имеет размерность \(9\), то есть равна \(M_3(\mathbb C)\). Таким
+образом, простое объявление всех найденных operators элементами represented
+algebra автоматически возвращает исходную свободу произвольной Yukawa
+matrix.
+
+\begin{nogocriterion}[Запрет full-family-algebra repair]
+Нельзя закрывать operator-map gap расширением represented algebra до
+\(M_3(\mathbb C)\): такое расширение действительно содержит желаемую
+CP-map, но вместе с ней содержит все competing maps и потому не создаёт
+flavour prediction.
+\end{nogocriterion}
+
+\begin{proposition}[Необходимый новый объект]
+Для продвижения требуется не более крупная algebra, а ограниченный
+\(\mathcal A\)-bimodule of one-forms или отдельный variational constraint,
+который выделяет anticommutator direction внутри полного девятимерного
+пространства до сравнения с fermion data.
+\end{proposition}
+
+Итак, стандартная внутренняя fluctuation не даёт искомую operator theorem:
+малая алгебра запрещает CP-capable map, полная алгебра делает её
+непредсказательной. Машинный span ledger сохранён в
+\path{s2t_v4_inner_fluctuation_yukawa_gate_results.json}.

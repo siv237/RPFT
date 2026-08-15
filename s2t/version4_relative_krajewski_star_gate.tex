@@ -1,0 +1,98 @@
+\chapter{Relative Krajewski star: вывод support module и двухтекстурный no-go}
+
+Предыдущий гейт условно потребовал, чтобы каждый subleading connector касался
+выбранного state \(\rho_\star\). Теперь проверим, является ли это отдельным
+postulate или следует из минимального finite graph после выбора state.
+
+\section{Классификация corner bimodules}
+
+Для \(Q_\star=I-\rho_\star\) полная family matrix algebra раскладывается в
+четыре \(\mathcal A_\rho\)-bimodule corners:
+\begin{equation}
+ M_3=
+ \rho M_3\rho
+ \oplus\rho M_3Q
+ \oplus QM_3\rho
+ \oplus QM_3Q,
+\end{equation}
+с комплексными размерностями
+\begin{equation}
+ 1,\qquad2,\qquad2,\qquad4.
+\end{equation}
+Полный перебор всех шестнадцати сумм corners с условием *-замкнутости оставляет
+восемь candidates. Наложим три graph requirements:
+\begin{enumerate}
+\item anchor self-edge \(\rho M_3\rho\) сохраняет leading heavy direction;
+\item edges \(\rho M_3Q\) и \(QM_3\rho\) связывают anchor с двумя light
+directions;
+\item внутренний complement edge \(QM_3Q\) отсутствует как не связанный с
+выбранным boundary anchor.
+\end{enumerate}
+Этим требованиям удовлетворяет ровно один *-замкнутый bimodule:
+\begin{equation}
+ \rho M_3\rho\oplus\rho M_3Q\oplus QM_3\rho
+ =\mathcal M_\rho,
+ \qquad \dim\mathcal M_\rho=5.
+\end{equation}
+
+\begin{theorem}[Unique relative-star module]
+Среди *-замкнутых \(\mathcal A_\rho\)-bimodules единственный минимальный graph,
+который содержит anchor loop, соединяет anchor с complement и не вводит
+самостоятельную light--light dynamics, есть пятимерный relative Krajewski
+star \(\mathcal M_\rho\).
+\end{theorem}
+
+В basis, где \(\rho=\operatorname{diag}(1,0,0)\), его пять matrix units ---
+ровно entries первой строки или первого столбца. Возвращение к произвольному
+basis даёт прежнее covariant условие \(QXQ=0\).
+
+\section{Projection как endpoint inclusion--exclusion}
+
+Каждый исходный incidence operator \(H\) имеет два anchored restrictions:
+\(\rho H\) и \(H\rho\). Их пересечение \(\rho H\rho\) посчитано дважды.
+Обычная inclusion--exclusion поэтому даёт
+\begin{equation}
+ \rho H+H\rho-\rho H\rho
+ =H-QHQ
+ =\Pi_\rho(H).
+\end{equation}
+Следовательно, коэффициенты \((1,1,-1)\) projection не являются flavour
+fit: это целочисленная endpoint incidence формула relative star.
+
+\begin{proposition}[Conditional derivation of the support axiom]
+Если subleading family graph определяется как минимальный relative graph к
+вариационно выбранному anchor, то support axiom и projection \(\Pi_\rho\)
+следуют из incidence и *-замкнутости, а не вводятся независимо.
+\end{proposition}
+
+\section{Почему четырёх Yukawa-текстур ещё нет}
+
+Observed representation различает четыре edge types, но family graph пока
+факторизован от gauge labels. Поэтому
+\begin{equation}
+ u,\nu\longmapsto H_{\rm up},
+ \qquad
+ d,e\longmapsto H_{\rm down}.
+\end{equation}
+Получаются только две normalized family textures. Цветовая multiplicity
+умножает quark functional на \(3\), но положительное scalar умножение не
+меняет eigenvectors и variational ground state. Exact test даёт ground-state
+residual меньше \(2\times10^{-16}\).
+
+\begin{theorem}[Factorized four-sector no-go]
+При gauge--family factorization центральные quark/lepton projectors и их
+multiplicities не расщепляют family state. Один relative star даёт максимум
+две textures, связанные с \(H\) и \(\widetilde H\), но не четыре независимых
+operators \(Y_u,Y_d,Y_e,Y_\nu\).
+\end{theorem}
+
+\begin{nogocriterion}[Запрет четырёх ручных anchors]
+Нельзя независимо выбрать \(\rho_u,\rho_d,\rho_e,\rho_\nu\). Следующий pass
+допустим только если quark--lepton splitting возникает из одного общего
+representation-sensitive functional и сохраняет anomaly/order-one ledger.
+\end{nogocriterion}
+
+Итак, support module выведен условно из минимального relative graph. Новый
+узкий gap --- получить неfactorizable quark/lepton dependence, не возвращая
+четыре свободные Yukawa matrices. Машинный classification ledger сохранён в
+\path{s2t_v4_relative_krajewski_star_gate_results.json}.

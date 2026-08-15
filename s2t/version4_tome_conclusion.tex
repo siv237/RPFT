@@ -1,0 +1,243 @@
+\chapter{Заключение: итог Тома IV и граница следующей версии}
+
+Том IV был открыт с более сильной целью, чем построение ещё одной
+математически согласованной модели. Требовалось перейти от геометрического
+ядра программы к наблюдаемому сектору: зафиксировать representation content,
+получить единое действие и его нормировки, выполнить RG-перенос и пройти
+минимум две независимые blind-проверки. Эта цель заранее была сформулирована
+как последовательность kill-gates, а не как поиск численных совпадений.
+
+Проведённый цикл завершает эту проверку. Его итог не сводится ни к простому
+успеху, ни к простому отрицанию исходной программы. Том существенно расширил
+строгое математическое содержание, построил несколько новых finite и
+boundary architectures и одновременно доказал, что ни одна из них в
+текущем виде не выполняет Definition of Done наблюдаемой физической теории.
+
+\section{Сопоставление исходных целей и результата}
+
+Финальный статус обязательных уровней имеет вид:
+
+\begin{center}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.38\textwidth}>{\raggedright\arraybackslash}p{0.13\textwidth}}
+\toprule
+Уровень & Цель Тома IV & Фактический результат & Статус \\
+\midrule
+\endhead
+Представления & Получить наблюдаемый charge ledger из finite geometry & Построен минимальный quaternionic SM baseline и generation atom; multiplet menu остаётся target-led и не выводит уникально три поколения & частично \\
+Аномалии & Получить anomaly-free chiral content & Относительные гиперзаряды выводятся из Yukawa covariance и anomaly cancellation при заявленных neutrino assumptions & пройдено условно \\
+Действие & Одно gauge-invariant bosonic/fermionic action & Ни minimal SM, ни Pati--Salam, ни family--defect ветвь не дали полного устойчивого parent action & не пройдено \\
+Нормировки & Единая trace convention для gauge, scalar и Yukawa sectors & Gauge trace relations и несколько relative weights выведены; общий scalar--Yukawa--defect measure не построен & частично \\
+RG & Перенести matching relations к laboratory scales & Minimal SM trajectories не имеют triple crossing; threshold repairs либо недостаточны, либо определяются обратным fit & не пройдено \\
+EW/QCD blind gate & Не менее одной blind gauge observable & Независимое электрослабое или QCD closure не достигнуто & не пройдено \\
+Flavour & Массы, CKM и CP без sectorwise input & Показана algebraic CP-capability, но operator map не единственна и четыре Yukawa sectors не выведены & не пройдено \\
+Нейтрино & Splittings, mixing и ordering branch & Сохраняются conditional defect topology и exact-one Majorana kernel; наблюдаемый neutrino ledger не получен & не пройдено \\
+Масштаб & Не более одного dimensionful train input и controlled EFT & Dimensionless carrier results устойчивы, но absolute scale matching нарушает local expansion control & не пройдено \\
+Мост томов & Один functional origin геометрии и наблюдаемого действия & Несколько совместимых локальных мостов построены, но единый cross-tome functional отсутствует & не пройдено \\
+Репликация & Независимый computational pipeline & Все основные gates имеют machine ledgers; внешняя независимая replication ещё не выполнена & внутренне пройдено \\
+\bottomrule
+\end{longtable}
+\end{center}
+
+Следовательно, строгий Definition of Done Version IV.SM не выполнен. В
+частности, отсутствуют две preregistered blind observables, единое действие и
+единая normalization measure. Поэтому
+\begin{equation}
+ N_{\rm closed\ physical}=0.
+ \label{eq:tome-four-zero-physical-closure}
+\end{equation}
+
+\section{Что удалось установить строго}
+
+\subsection{Observed representation baseline}
+
+В restricted finite-algebra class установлен минимальный quaternionic
+baseline
+\begin{equation}
+ \mathcal A_F=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C),
+\end{equation}
+который после central constraint воспроизводит локальную gauge algebra
+Стандартной модели. Anomaly cancellation и Yukawa covariance связывают
+quark и lepton multiplets в единый generation atom и фиксируют стандартные
+относительные hypercharges. Этот результат является classification и
+compatibility theorem внутри объявленного menu, но не доказательством
+уникального происхождения observed spectrum.
+
+\subsection{Family и flavour structure}
+
+Построены affine family carrier, variational family state и несколько
+basis-covariant readout maps. Установлено, что coefficient-free map может
+порождать ненулевой трёхсемейный CP invariant без внешней complex phase.
+Одновременно доказана operator-map underdetermination: равно допустимые maps
+дают разные mass ratios, mixing matrices и CP status. Поэтому algebraic
+возможность flavour не повышена до prediction.
+
+\subsection{Geometric carrier и measure}
+
+Для comparison class carriers построены correlation-cell Gibbs functional,
+spectral temperature dictionary и Gibbs--Fisher radial geometry. Получен
+устойчивый dimensionless \(S^4\)-candidate и уточнена роль normalized
+spectral state. Но bare trace и outer-log Gibbs action имеют противоположное
+ordering, absolute scale находится вне контролируемой local spectral
+expansion, а full-shape Hessian и gauge completion остаются decisive gate.
+
+\subsection{Pati--Salam branch}
+
+В этой ветви получен один из наиболее сильных математических результатов
+тома:
+\begin{equation}
+ \|\delta_h(D_\Delta^2)\|^2
+ =4\det(\Delta\Delta^\dagger),
+\end{equation}
+причём graph coordinate, edge normalization \(c=1\), one-copy
+irreducibility и auxiliary Schur Hessian выведены без continuous fit.
+Построен algebraic KO6 completion relative cycle. Однако full
+\(\phi/\Sigma_4\) vacuum имеет отрицательные и flat directions. Полный
+rank-one connected curvature span принципиально не стабилизирует оба
+sectors. Поэтому current Pati--Salam finite geometry закрыта как physical
+vacuum mechanism.
+
+\subsection{Family--defect branch}
+
+Получена последовательность взаимно согласованных structural results:
+tetrahedral projector, восемь oriented three-cycles, exact holonomy,
+residual \(\mathbb Z_3\)-bundle, gauge--family diagonal lock и explicit
+18-dimensional KO6 quiver embedding. First-order condition фиксирует
+pairing arrow \(Y=\Phi I_3\), а middle Hodge curvature даёт exact
+coefficient identity
+\begin{equation}
+ \frac13\Tr(XX^T-|\Phi|^2I_3)^2
+ =\left(|\Phi|^2-\frac13\Tr XX^T\right)^2
+ +\frac13\Tr\left(XX^T-\frac13\Tr(XX^T)I_3\right)^2.
+\end{equation}
+Но action origin последовательно закрыт: ordinary trace имеет wrong mixed
+sign, mapping cone сохраняет только endpoint product, positive real
+auxiliary даёт wrong Euclidean sign, particle middle curvature удаляется
+junk quotient, а completed Gaussian Pfaffian зависит только от
+\(\rho^2+r^2\). Следовательно, эта ветвь сохраняется как набор
+математических building blocks, но не как parent theory Version IV.
+
+\section{Главные отрицательные результаты}
+
+No-go results Тома IV являются частью результата, а не побочным продуктом.
+Они запрещают повторение следующих маршрутов без изменения версии:
+\begin{enumerate}
+ \item minimal SM spectral unification без independently derived
+ threshold sector;
+ \item восстановление gauge crossing через parameter, найденный обратным
+ решением по тем же couplings;
+ \item объявление Yukawa graph или gradient readout физической mass theory
+ без operator theorem;
+ \item использование ordinary one-trace spectral quartic для relative
+ incoming-minus-outgoing curvature;
+ \item стандартный BV gauge-fixing auxiliary как источник нового classical
+ vacuum potential;
+ \item rank-one Pati--Salam projector как full \(\phi/\Sigma_4\) stabilizer;
+ \item finite KO6 Pfaffian как самостоятельная physical measure;
+ \item imaginary Hubbard--Stratonovich identity без предварительно
+ выведенного quartic или four-fermion kernel;
+ \item absolute Planck-scale assignment из uncontrolled asymptotic
+ spectral expansion;
+ \item добавление нового coefficient после раскрытия blind data.
+\end{enumerate}
+
+Эти запреты сокращают пространство допустимых продолжений значительно
+сильнее, чем набор положительных численных coincidences.
+
+\section{Срез по программе в целом}
+
+На 15 августа 2026 года project-wide status сохраняется:
+\begin{equation}
+ R_{\rm sci}=4/10,
+ \qquad
+ N_{\rm closed\ physical}=0.
+\end{equation}
+Первая величина означает предъявленное к проверке математическое ядро и
+внутреннюю computational reproducibility; она не является вероятностью
+истинности теории. Вторая величина означает отсутствие хотя бы одного
+полного observed-sector closure, одновременно проходящего representation,
+normalization, RG и blind gates.
+
+Корректная формула статуса имеет вид
+\begin{equation}
+ \boxed{
+ \begin{gathered}
+ \text{математическая программа сохраняется},\\
+ \text{Version IV как единая физическая теория закрыта},\\
+ \text{положительные building blocks не являются observables},\\
+ \text{новая архитектура должна быть объявлена как Version V}.
+ \end{gathered}}
+ \label{eq:tome-four-final-status}
+\end{equation}
+
+\section{Что переносится в следующий том}
+
+Следующий том не должен продолжать все открытые ветви одновременно. Он
+должен выбрать один primary architecture class до обращения к новым
+observables. Из текущего корпуса сохраняются три допустимых направления.
+
+\subsection{Carrier-first route}
+
+Наиболее консервативное продолжение --- совместная variation normalized
+spectral state и carrier geometry:
+\begin{equation}
+ \mathcal F[\rho,M]
+ =\Tr(\rho H_C[M])
+ +\Gamma_{\rm fluc}[\rho,M]
+ -\tau^{-1}S(\rho).
+\end{equation}
+Первый gate обязан проверить full-shape Hessian, gauge sector и exact
+nonlocal response на frozen comparison class без observed inputs.
+
+\subsection{Finite-geometry route}
+
+Pati--Salam reopening требует fundamental diagonal carrier effective rank
+не меньше трёх либо нескольких independently derived noncommuting
+projectors с trivial common stabilizer. Family--defect reopening требует
+uniquely derived four-fermion \(\operatorname{Sym}_3\)-channel, modified
+differential calculus, Cartan-torsion mediator или новый finite carrier.
+Оба изменения являются новой geometry, а не counterterm repair.
+
+\subsection{Boundary-source route}
+
+Wilson--defect architecture сохраняет operator-level coefficient
+reconstructions, но требует gauge-invariant defect source и canonical
+fixed-charge boundary path integral. Momentum projector, measure, zero-mode
+prescription и BV content должны следовать из одного action до сравнения с
+наблюдаемыми.
+
+\begin{protocol}[Условия открытия Тома V]
+Новая версия допускается только после выполнения следующих условий:
+\begin{enumerate}
+ \item заранее фиксируется одна primary architecture и comparison class;
+ \item algebra, Hilbert space, measure, statistics и admissible counterterms
+ объявляются до numerical scan;
+ \item relative sector weights выводятся из одной symmetry, trace или
+ quantum measure;
+ \item до phenomenology вычисляются full Hessian, gauge quotient и BV/BRST
+ complex;
+ \item запрещено переносить fitted coefficients и failed parent actions из
+ Version IV;
+ \item заранее регистрируются минимум две dimensionless blind observables из
+ независимых sectors;
+ \item внешний computational reproduction является частью Definition of
+ Done, а не последующей публикационной процедурой.
+\end{enumerate}
+\end{protocol}
+
+\section{Финальное заключение}
+
+Том IV не построил единую предсказательную физическую теорию. Но он выполнил
+другую необходимую работу: преобразовал широкую программу аналогий в
+ограниченное дерево доказанных identities, conditional constructions и
+закрытых mechanisms. Теперь известно не только то, какие structures могут
+существовать, но и то, какие естественные способы их объединения не работают.
+
+Главный положительный итог состоит в сохранении содержательного
+математического ядра и нескольких reusable geometric modules. Главный
+отрицательный итог состоит в отсутствии единого action и blind physical
+closure. Главный методологический итог состоит в том, что следующий шаг уже
+нельзя совершить локальной подгонкой: он требует явно новой parent
+architecture и потому должен быть оформлен как отдельный том и отдельная
+версия программы.

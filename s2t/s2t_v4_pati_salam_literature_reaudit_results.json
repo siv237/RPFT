@@ -1,0 +1,54 @@
+{
+  "gate": "version4_pati_salam_literature_reaudit",
+  "date": "2026-08-13",
+  "sources": [
+    "arXiv:1304.8050",
+    "arXiv:1507.08161",
+    "arXiv:1905.04533"
+  ],
+  "scenario_ledger": {
+    "general_fundamental": {
+      "Sigma": "(2_R,2_L,1+15_4)",
+      "H_right": "(1_R,1_L,6_4)+(3_R,1_L,10_4)",
+      "H_left": "(1_R,1_L,6_4)+(1_R,3_L,10_4)",
+      "independent_weak_singlet_adjoint": false,
+      "vacuum_passed": false
+    },
+    "composite_first_order_SM_subalgebra": {
+      "phi": "(2_R,2_L,1_4)",
+      "Delta": "(2_R,1_L,4_4)",
+      "Sigma_adjoint": "(1_R,1_L,15_4)",
+      "Sigma_adjoint_present_if_quark_lepton_unification_absent": true,
+      "composite_fields_are_products": true,
+      "legitimacy_as_spontaneous_reduction_from_general_model": "open/disputed"
+    },
+    "project_local_status": {
+      "observed_SM_finite_algebra_constructed": true,
+      "explicit_Pati_Salam_finite_Hilbert_Dirac_block_constructed": false,
+      "therefore_project_grading_claims_are_target_claims_only": true
+    }
+  },
+  "corrections": {
+    "true_adjoint_absent_from_every_spectral_menu": false,
+    "true_adjoint_present_in_constrained_composite_branch": true,
+    "fundamental_potential_no_go_generalizes_to_all_extensions": false,
+    "pure_universal_mass_shift_no_go": true,
+    "diagonal_real_singlet_extension_closed": false
+  },
+  "surviving_results": {
+    "general_fundamental_vacuum_no_go": true,
+    "nine_required_plus_six_unwanted_massless": true,
+    "Casimir_sensitivity_as_necessary_design_test": true,
+    "fixed_project_scale_fails_Pati_Salam_unification": true
+  },
+  "next_gate": {
+    "name": "composite-adjoint legitimacy and diagonal-singlet menu",
+    "tasks": [
+      "construct an explicit Pati-Salam finite Hilbert/Dirac block in the project",
+      "derive rather than impose the composite (1,1,15) reduction",
+      "compute its full spectral potential including composite/nonrenormalizable terms",
+      "test a diagonal real singlet extension separately",
+      "rerun Hessian and fermion-mass gates before RG"
+    ]
+  }
+}

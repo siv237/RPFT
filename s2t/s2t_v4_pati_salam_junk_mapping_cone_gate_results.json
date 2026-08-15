@@ -1,0 +1,116 @@
+{
+  "date": "2026-08-14",
+  "random_seed": 20260814,
+  "random_tests": 300,
+  "ordinary_connes_calculus_control": {
+    "algebra": "C^3 on the three-node path 0-1-2",
+    "controls": [
+      {
+        "represented_one_rank": 4,
+        "one_form_kernel_dimension": 5,
+        "represented_two_rank": 5,
+        "degree_two_junk_rank": 2,
+        "quotient_rank": 3,
+        "endpoint_forward_residual_outside_junk": 1.1621018656140329e-32,
+        "endpoint_backward_residual_outside_junk": 0.0,
+        "junk_outside_represented_twoforms": 4.1116813820477654e-16
+      },
+      {
+        "represented_one_rank": 4,
+        "one_form_kernel_dimension": 5,
+        "represented_two_rank": 5,
+        "degree_two_junk_rank": 2,
+        "quotient_rank": 3,
+        "endpoint_forward_residual_outside_junk": 8.020617537906639e-16,
+        "endpoint_backward_residual_outside_junk": 2.663811151636176e-16,
+        "junk_outside_represented_twoforms": 5.717282001500016e-16
+      },
+      {
+        "represented_one_rank": 4,
+        "one_form_kernel_dimension": 5,
+        "represented_two_rank": 5,
+        "degree_two_junk_rank": 2,
+        "quotient_rank": 3,
+        "endpoint_forward_residual_outside_junk": 3.586114323059135e-16,
+        "endpoint_backward_residual_outside_junk": 1.4049547175329139e-15,
+        "junk_outside_represented_twoforms": 5.268878383658003e-16
+      }
+    ],
+    "stable_result": "The endpoint matrix units E_02 and E_20 lie in d(ker pi_1). The degree-two junk quotient removes rather than selects the length-two endpoint path.",
+    "ordinary_junk_selector_pass": false
+  },
+  "canonical_graph_coordinate": {
+    "path_laplacian": [
+      [
+        1.0,
+        -1.0,
+        0.0
+      ],
+      [
+        -1.0,
+        2.0,
+        -1.0
+      ],
+      [
+        0.0,
+        -1.0,
+        1.0
+      ]
+    ],
+    "reflection": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "lowest_nonzero_reflection_odd_eigenvalue": 1.0,
+    "endpoint_gap_normalized_coordinate": [
+      -1.0,
+      1.3738309013483037e-16,
+      1.0
+    ],
+    "uniqueness": "unique up to sign; the normalized commutator is sign-independent at norm level"
+  },
+  "mapping_cone_relative_derivation": {
+    "definition": "delta_h(F)=(1/2)[h,F] with h=(-1,0,1)",
+    "effect": "kills diagonal backtracking curvature and retains exactly the 0-2 plus 2-0 endpoint curvature",
+    "identity": "||delta_h(D_Delta^2)||_HS^2=4 det(Delta Delta^dagger) at c=1",
+    "gauge_covariance": "h acts on node position and commutes with block-diagonal Pati-Salam gauge transformations",
+    "continuous_weight_added": false
+  },
+  "normalization": {
+    "edge_relation": "B_Delta=Delta^T epsilon_2",
+    "isometry": "transpose and the unitary SU(2) symplectic form preserve the Frobenius norm",
+    "reality_interpretation": "endpoint reflection exchanges 4bar and 4 while pseudoreality exchanges the two edge realizations",
+    "consequence": "reflection/reality-invariant single trace-Hodge metric fixes |c|=1; endpoint rephasing fixes c=1"
+  },
+  "maximum_errors": {
+    "graph_eigenvector_error": 2.6229245186806835e-16,
+    "graph_reflection_odd_error": 2.7476618026966073e-16,
+    "edge_isometry_error": 1.0658141036401503e-14,
+    "mapping_cone_endpoint_projection_error": 0.0,
+    "determinant_selector_error": 4.547473508864641e-13,
+    "raw_trace_rank_blind_error": 9.094947017729282e-13,
+    "ko6_physical_half_error": 4.547473508864641e-13
+  },
+  "verdict": {
+    "ordinary_junk_route": "failed",
+    "canonical_c_equals_one": "passed inside the reflection/reality-invariant trace-Hodge metric",
+    "mapping_cone_projector": "derived from the unique reflection-odd graph coordinate",
+    "relative_curvature_selector": "passed",
+    "ordinary_spectral_action": "still rank-blind",
+    "physical_closure": "conditional",
+    "remaining_gate": "derive why the bosonic parent action uses the relative mapping-cone norm ||delta_h(F)||^2 rather than the full ungraded curvature norm, and audit the resulting physical state/gauge ledger"
+  }
+}

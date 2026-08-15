@@ -2,7 +2,7 @@
 
 > Status: working
 > Type: concept
-> Updated: 2026-07-09
+> Updated: 2026-08-11
 
 ## Summary
 
@@ -51,12 +51,33 @@ This is exactly the conjugate quarter-holonomy pair already present at `beta=1/4
 
 The local core transition is now explicit. In Nambu space `G_1/4=diag(i,-i)` maps the Majorana zero basis at pair phase `theta` to the basis at `theta+pi`. It therefore does not contribute an extra coefficient holonomy. The coefficient line sees only the antiperiodic spin sign and ambient torsion sign; their product is `+1`, yielding one periodic real core mode. This closes core gluing inside the minimal defect model while leaving global action derivation open.
 
+## Base-K spin-branch determinant update
+
+For the two physical vectorlike Dirac pairs, the two `RP3` spin structures
+have identical squared spectra: they exchange the signs of Dirac levels but
+not their absolute values or multiplicities. Their eta phases cancel after
+vectorlike pairing, so the real determinant modulus cannot select between
+them.
+
+Along `S1`, the finite relative determinant is scheme-independent and ranks
+the antiperiodic branch below the periodic branch. At `chi R3=1` and
+`R1/R3=1`, the two-pair difference is approximately `-1.94828035e-4`.
+However, [[version4-spin-sum-measure-gate]] shows that the current parent
+action fixes one spinor bundle and does not sum over spin structures. The
+result is therefore a branch ranking, not a dynamic selection.
+
+This also corrects an older RPFT overstatement: a spatial circle does not by
+itself force periodic fermions. Both spin structures are allowed; periodicity
+must be frozen as a model input unless a spin-sum or topological measure is
+constructed.
+
 ## Links
 
 - [[numerical-audits]] — source cluster for result files.
 - [[ugsm]] — operator/spectral framework being stress-tested.
 - [[spectral-correlational-source]] — candidate object strengthened or weakened by these tests.
 - [[neutrino-overlap-lemma]] — focused open problem for the Dirac/holonomy overlap factor.
+- [[version4-spin-sum-measure-gate]] — why the antiperiodic determinant ranking is not yet a dynamic spin selection.
 
 ## Source Notes
 

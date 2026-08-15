@@ -1,0 +1,79 @@
+\chapter{Multiplicity-перебор одного наблюдаемого поколения}
+
+Алгебраический baseline ещё не доказывает, какие bimodule-рёбра должны
+присутствовать. Выполним ограниченный, но полный перебор multiplicities для
+шести типов
+\begin{equation}
+Q_L,\quad u_R,\quad d_R,\quad L_L,\quad e_R,\quad \nu_R,
+\end{equation}
+используя уже выведенные относительные гиперзаряды.
+
+\section{Yukawa completeness}
+
+Для Dirac-neutrino branch полнота одного Higgs doublet требует
+\begin{equation}
+m_u=m_d=m_Q,
+\qquad
+m_e=m_\nu=m_L.
+\end{equation}
+Для ветви без \(\nu_R\) второе условие заменяется на
+\begin{equation}
+m_e=m_L,
+\qquad
+m_\nu=0.
+\end{equation}
+
+Цветовая аномалия имеет коэффициент
+\begin{equation}
+\mathcal A_{333}=2m_Q-m_u-m_d,
+\end{equation}
+а mixed weak anomaly после подстановки стандартных charge ratios равна
+\begin{equation}
+\mathcal A_{221}=\frac12(m_Q-m_L).
+\end{equation}
+Следовательно, anomaly cancellation вынуждает
+\begin{equation}
+m_Q=m_L=:g.
+\end{equation}
+Все остальные локальные аномалии после этого сокращаются покомпонентно.
+
+\begin{theorem}[Generation atom]
+В restricted edge menu совместные требования Yukawa completeness, local
+anomaly cancellation, наличия color и weak sectors и отсутствия Witten
+anomaly дают
+\begin{equation}
+(m_Q,m_u,m_d,m_L,m_e,m_\nu)=g(1,1,1,1,1,1)
+\end{equation}
+для Dirac-neutrino branch. Минимальное ненулевое решение \(g=1\) содержит
+16 complex particle states до antiparticle doubling.
+\end{theorem}
+
+В ветви без правого нейтрино минимальный вектор равен
+\begin{equation}
+(m_Q,m_u,m_d,m_L,m_e,m_\nu)=(1,1,1,1,1,0)
+\end{equation}
+и содержит 15 complex particle states.
+
+\section{Что действительно выведено}
+
+Внутри restricted menu получен единый irreducible generation atom:
+кварковые и лептонные multiplicities нельзя выбирать независимо. Это
+усиливает предыдущий baseline: anomaly cancellation связывает color и weak
+части в один полный набор.
+
+Однако любое
+\begin{equation}
+g=1,2,3,\ldots
+\end{equation}
+остаётся допустимым. Аномалии и Yukawa completeness не выбирают наблюдаемое
+значение \(g=3\).
+
+\begin{nogocriterion}[Запрет объявления трёх поколений]
+Минимальность generation atom не является выводом числа поколений. Для
+\(g=3\) требуется независимый family algebra, index, defect multiplicity или
+другой дискретный selector, определённый до обращения к наблюдаемому числу.
+\end{nogocriterion}
+
+Перебраны все \(5^6=15625\) multiplicity vectors с компонентами от 0 до 4.
+Машинный результат сохранён в
+\path{s2t_v4_bimodule_multiplicity_gate_results.json}.

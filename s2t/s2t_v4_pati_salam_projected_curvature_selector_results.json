@@ -1,0 +1,72 @@
+{
+  "date": "2026-08-14",
+  "random_seed": 20260814,
+  "random_tests": 300,
+  "valid_module_chain": {
+    "nodes": [
+      "color anti-fundamental 4bar",
+      "weak doublet 2_R",
+      "color fundamental 4"
+    ],
+    "complex_dimensions": [
+      4,
+      2,
+      4
+    ],
+    "parities": [
+      "even",
+      "odd",
+      "even"
+    ],
+    "first_edge": "A_Delta = Delta : 4bar -> 2_R",
+    "second_edge": "B_Delta = c Delta^T epsilon_2 : 2_R -> 4",
+    "two_step": "B_Delta A_Delta = c Delta^T epsilon_2 Delta in color 6",
+    "all_nodes_are_fundamental_or_opposite_modules": true
+  },
+  "trace_identities": {
+    "Tr_D2": "2(1+c^2) rho",
+    "Tr_D4": "2(1+c^4) tau + 8 c^2 det",
+    "canonical_raw_trace": "Tr_D4 at c=1 equals 4 rho^2 and is rank-blind",
+    "projected_endpoint_curvature_norm": "||P02 D^2 P20 + adjoint||^2 = 4 c^2 det",
+    "KO6_physical_half_at_c1": "(1/2)||F_rel_full||^2 = 4 det"
+  },
+  "stability": {
+    "induced_kappa": "4 c^2",
+    "strict_rank_one_Hessian_condition": "c^2 > 1/2",
+    "canonical_normalization": "c=1 gives kappa=4",
+    "canonical_Casimir_cross_check": "combined SU(2)_R + SU(4) gap also equals 4"
+  },
+  "maximum_errors": {
+    "two_step_antisymmetry_error": 6.860240711842105e-15,
+    "projected_curvature_determinant_error": 1.5916157281026244e-12,
+    "raw_trace_two_error": 1.1368683772161603e-13,
+    "raw_trace_four_error": 1.4551915228366852e-11,
+    "raw_trace_canonical_norm_only_error": 1.8189894035458565e-12,
+    "gauge_covariance_error": 7.471564972900876e-15,
+    "ko6_self_adjoint_error": 0.0,
+    "ko6_odd_grading_error": 0.0,
+    "ko6_reality_error": 0.0,
+    "projected_curvature_even_error": 0.0,
+    "projected_curvature_reality_error": 0.0,
+    "physical_half_projected_norm_error": 4.547473508864641e-13
+  },
+  "project_archaeology": {
+    "three_node_superconnection_precedent": "s2t_v4_three_node_superconnection_closure_gate.py separates form degrees on orthogonal target summands",
+    "relative_projector_precedent": "version4_relative_krajewski_star_gate.tex derives endpoint inclusion-exclusion projectors",
+    "vectorlike_precedent": "version4_vectorlike_messenger_chain_gate.tex permits anomaly-safe fundamental-module extensions"
+  },
+  "verdict": {
+    "project_answer_found": true,
+    "literal_color_six_node_needed": false,
+    "ordinary_raw_spectral_trace_selector_pass": false,
+    "projected_superconnection_curvature_selector_pass": true,
+    "coefficient_four_at_canonical_metric": true,
+    "strict_parent_action_derived": false,
+    "remaining_gates": [
+      "derive the endpoint curvature projector from the parent superconnection action rather than selecting it by hand",
+      "derive or protect the relative edge normalization c=1 from module metrics/reality",
+      "decide whether the auxiliary fundamental modules are physical vectorlike states or purely bosonic superconnection grades",
+      "recompute the full mixed Pati-Salam Hessian and gauge-running impact"
+    ]
+  }
+}

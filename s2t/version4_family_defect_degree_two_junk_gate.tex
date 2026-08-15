@@ -1,0 +1,138 @@
+\chapter{Family--defect represented degree-two junk gate}
+
+Предыдущий audit свёл classical parent problem к точному вопросу: является
+ли
+\begin{equation}
+ \mu_G=XX^T-|\Phi|^2I_3
+\end{equation}
+канонической self-adjoint two-form explicit 18-dimensional KO6 geometry.
+Здесь вычисляется не blockwise analogy, а полный represented universal
+calculus
+\begin{equation}
+ \Omega_D^2(\mathcal A_{\rm q})
+ =\pi(\Omega_u^2\mathcal A_{\rm q})/\pi(d\ker\pi_1)
+\end{equation}
+для
+\(\mathcal A_{\rm q}=\mathbb R_0\oplus M_3(\mathbb R)_G\oplus\mathbb C_2\).
+Именно quotient по differential ideal является стандартным определением
+Connes forms; см. \path{arXiv:hep-th/9605001}. Конечномерные three-point
+calculi и явный quotient также разобраны в \path{arXiv:2405.07866}.
+
+\section{Алгоритм quotient}
+
+Для real basis \(e_a\) алгебры строятся generators
+\begin{align}
+ \omega_{ab}&=\pi(e_a)[D_F,\pi(e_b)],\\
+ \eta_{abc}&=\pi(e_a)[D_F,\pi(e_b)][D_F,\pi(e_c)].
+\end{align}
+Если coefficients \(c_{ab}\) удовлетворяют
+\begin{equation}
+ \sum_{ab}c_{ab}\omega_{ab}=0,
+\end{equation}
+то corresponding degree-two junk равен
+\begin{equation}
+ \sum_{ab}c_{ab}[D_F,\pi(e_a)][D_F,\pi(e_b)].
+\end{equation}
+Все spans, kernels и quotient ranks вычисляются SVD. Реализация сначала
+проверена на existing \(\mathbb C^3\) path control: length-two endpoint
+matrix units снова оказываются junk с residual меньше \(10^{-15}\).
+
+\section{Generic KO6 ledger}
+
+На четырёх независимых full-rank real matrices \(X\) при nonzero complex
+\(\Phi\) complexified calculus стабильно даёт
+\begin{equation}
+ \rank\pi(\Omega_u^1)=20,
+ \qquad
+ \rank\pi(\Omega_u^2)=20,
+ \qquad
+ \rank\pi(d\ker\pi_1)=9,
+\end{equation}
+и потому
+\begin{equation}
+ \rank\Omega_D^2=11.
+ \label{eq:family-degree-two-quotient-rank}
+\end{equation}
+Junk лежит внутри represented two-forms с residual меньше
+\(3\times10^{-15}\). Независимый real-linear audit даёт ranks
+\begin{equation}
+ 22,
+ \qquad 22,
+ \qquad 9,
+ \qquad 13,
+\end{equation}
+что является realification той же obstruction, а не восстановлением
+six-dimensional symmetric sector.
+
+\section{Что происходит с middle curvature}
+
+На particle half represented middle diagonal block имеет полный rank девять,
+но его junk image также имеет rank девять. Следовательно,
+\begin{equation}
+ \boxed{
+ \operatorname{pr}_{G,\rm particle}\Omega_D^2=0.}
+ \label{eq:family-particle-middle-twoform-zero}
+\end{equation}
+В полном KO6 doubling сохраняется одна complex middle direction, однако она
+находится только на conjugate chain и пропорциональна \(I_3\):
+\begin{equation}
+ \rank_{\mathbb C}\operatorname{pr}_{G,\rm conj}\Omega_D^2=1,
+ \qquad
+ \rank_{\mathbb C}operatorname{pr}_{\operatorname{Sym}_{3,0}}
+ \Omega_D^2=0.
+ \label{eq:family-only-central-conjugate-twoform}
+\end{equation}
+Таким образом, five-dimensional traceless shape curvature исчезает, а
+полный module
+\(\operatorname{Sym}_3(\mathbb R)=\mathbf1\oplus\mathbf5\) не возникает.
+Оставшаяся central conjugate direction не может воспроизвести
+\(XX^T-|\Phi|^2I_3\) и не имеет требуемой particle/conjugate symmetry.
+
+\begin{nogocriterion}[Ordinary degree-two symmetric-curvature no-go]
+Для explicit KO6 representation обычный represented two-form quotient не
+содержит six-dimensional middle self-adjoint curvature. На physical
+particle chain весь middle \(M_3\) удаляется junk ideal; в doubled quotient
+остаётся только одна central conjugate direction. Поэтому
+\(\tau_3(\mu_G^2)\) нельзя вывести как norm ordinary Connes two-form этой
+geometry.
+\end{nogocriterion}
+
+\section{Почему radial rank jump не спасает route}
+
+При специальном background \(X=\rho I_3\) commutators вырождаются и
+degree-two junk rank падает до нуля. Тогда middle matrices формально снова
+видны. Но differential calculus parent theory должен быть определён
+off-shell и устойчив на открытом множестве configurations. Module,
+возникающий только после подстановки уже выбранного isotropic vacuum, не
+может служить derivation самого shape-locking potential. Поэтому radial
+rank jump является singular-locus artifact, а не rescue.
+
+\section{Оставшийся путь}
+
+После этого gate classical цепочка исчерпана:
+\begin{equation}
+ \text{ordinary trace}
+ \;\longrightarrow\;\text{wrong sign},
+ \qquad
+ \text{mapping cone}
+ \;\longrightarrow\;\text{endpoint only},
+\end{equation}
+\begin{equation}
+ \text{real auxiliary}
+ \;\longrightarrow\;\text{wrong sign},
+ \qquad
+ \text{ordinary }\Omega_D^2/J
+ \;\longrightarrow\;\text{middle shape is junk}.
+\end{equation}
+Условно открыта только quantum-measure identity с imaginary
+Hubbard--Stratonovich coupling. Литература подтверждает, что repulsive
+channels требуют imaginary coupling и complex saddle; см.
+\path{arXiv:2308.05150}. Для project pass теперь необходимо вывести этот
+contour и determinant/Pfaffian weight из той же KO6 fermionic measure.
+Иначе потребуется modified differential calculus, twist или новый finite
+carrier, что уже является новой architecture, а не продолжением current
+ordinary spectral triple.
+
+Машинный ledger сохранён в
+\path{s2t_v4_family_defect_degree_two_junk_gate_results.json}; генератор ---
+\path{s2t_v4_family_defect_degree_two_junk_gate.py}.

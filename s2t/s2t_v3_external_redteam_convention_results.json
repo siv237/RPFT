@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "external_redteam_factor_two_rejected_other_checks_integrated",
+  "quadratic_convention": {
+    "lagrangian": "(kappa/2) G_ab dq^a dq^b - (1/2) H_ab q^a q^b",
+    "canonical_kinetic_matrix": "Matrix([[8, 0, 0], [0, 8, 0], [0, 0, 2]])",
+    "mass_matrix": "Matrix([[4, 0, 0], [0, 4, 0], [0, 0, 4]])",
+    "scalar_mass_squared_over_chi2": 4
+  },
+  "supertrace": {
+    "scalar": 48,
+    "fermion": -8,
+    "finite": 40,
+    "gauge": 27,
+    "finite_plus_gauge": 67
+  },
+  "flattening": {
+    "current_equation": "B Bdagger = I2",
+    "half_identity_present": false
+  },
+  "brst": {
+    "feynman_gauge_short_count": "4+1-2=3",
+    "general_xi_unphysical_quartet": "1+1-2=0",
+    "physical_vector_dof": 3,
+    "gauge_independent": true
+  },
+  "heat_kernel_degrees": {
+    "a0": "identity only; no Phi",
+    "a2": "-Phi^2 + R/6",
+    "a4": "Phi^4/2 + kinetic + gauge - R Phi^2/6 + curvature",
+    "quartic_from_a0": false
+  },
+  "verdict": {
+    "change_40_to_184": false,
+    "change_67_to_211": false,
+    "g_squared_3_over_8_retained": true,
+    "next_gate": "explicit compact a2 a4 spectral moment audit"
+  }
+}

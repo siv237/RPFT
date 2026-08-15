@@ -1,0 +1,83 @@
+\chapter{Orientation spectral no-go: точная изоспектральность двух ветвей}
+
+Common up--down loop оставил два minima
+\begin{equation}
+ \mathcal B_-:
+ \left(W=-\frac12,\theta=0\right),
+ \qquad
+ \mathcal B_+:
+ \left(W=+\frac12,\theta=\pi\right).
+\end{equation}
+Проверим, может ли иной spectral moment или иная вещественная cutoff function
+различить их без добавления нового field content.
+
+\section{Characteristic-polynomial test}
+
+Для первичного \(12\times12\) family operator обе ветви имеют один и тот же
+characteristic polynomial:
+\begin{multline}
+ \chi_-(x)=\chi_+(x)\\
+ =
+ \frac14
+ (x^2-x-1)(x^2+x-1)
+ (2x^4-2x^3-6x^2+4x+3)\\
+ {}\times
+ (2x^4+2x^3-6x^2-4x+3).
+\end{multline}
+Characteristic polynomials \(D_-^2\) и \(D_+^2\) также совпадают. Поэтому
+\begin{equation}
+ \Tr f(D_-^2)=\Tr f(D_+^2)
+\end{equation}
+для любой функции \(f\), определённой на их конечном spectrum.
+
+\begin{theorem}[All-orders real spectral no-go]
+Две оставшиеся noncommuting orientation branches точно изоспектральны.
+Следовательно, никакая замена cutoff profile, добавление высших even moments
+или полный exact functional \(\Tr f(D_F^2)\) не снимают их вырождение.
+\end{theorem}
+
+Машинно проверены все power traces до \(D^{12}\), что вместе с равенством
+characteristic polynomials фиксирует все последующие moments по
+Cayley--Hamilton.
+
+\section{Grading и determinant также не помогают}
+
+Для bipartite grading \(\gamma\) прямой расчёт даёт
+\begin{equation}
+ \Tr(\gamma D_\pm^{2n})=0,
+ \qquad n=1,\ldots,6.
+\end{equation}
+Кроме того,
+\begin{equation}
+ \det D_-=\det D_+=\frac94.
+\end{equation}
+Ориентационно-нечётный loop observable также исчезает в обоих minima:
+\begin{equation}
+ W\sin\theta=0.
+\end{equation}
+
+Таким образом, ни ordinary trace, ни supertrace, ни determinant magnitude не
+создают selector в текущем finite menu.
+
+\section{Минимальная развилка после no-go}
+
+Ориентация может появиться только из структуры, чувствительной не к spectrum
+\(D^2\), а к фазе fermionic measure или к ориентированному boundary datum.
+Остаются три принципиальных маршрута:
+\begin{enumerate}
+\item Pfaffian phase или \(\eta\)-invariant chiral fermion operator;
+\item квантованный boundary Chern--Simons/anomaly-inflow term;
+\item явный выход из класса вещественного even spectral action.
+\end{enumerate}
+
+\begin{nogocriterion}[Запрет spectral-profile rescue]
+После доказанной изоспектральности запрещено искать orientation selector
+подбором новой функции \(f\), коэффициентов \(\Tr D^{2n}\) или иной
+нормировки bosonic trace. Такой поиск математически не может разделить
+\(\mathcal B_-\) и \(\mathcal B_+\).
+\end{nogocriterion}
+
+Следующий гейт должен начинаться с fermionic Pfaffian/\(\eta\)-phase и
+проверить, не сокращается ли она между \(J\)-сопряжёнными rectangles.
+Exact characteristic и moment ledger сохранён в
+\path{s2t_v4_orientation_spectral_no_go_results.json}.

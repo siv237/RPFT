@@ -1,0 +1,226 @@
+\chapter{Внешний red-team: квадратичная конвенция и spectral counterterms}
+
+Независимый аудит поставил под сомнение scalar mass normalization,
+BV-ledger и распределение \(\Phi\)-зависимых членов по heat-kernel
+coefficients. Проверим замечания в одной явной конвенции.
+
+\section{Каноническая квадратичная форма}
+
+Пусть \(q^a\) --- координаты \((r,s,\phi)\), а
+\begin{equation}
+ \Tr_{\mathrm{orb}}(d\Phi\,d\Phi)
+ =G_{ab}\,dq^a dq^b.
+\end{equation}
+Для
+\begin{equation}
+ \mathcal L
+ =
+ \frac{\kappa}{2}
+ \Tr_{\mathrm{orb}}(\partial_\mu\Phi\partial^\mu\Phi)
+ -V(\Phi)
+\end{equation}
+и
+\begin{equation}
+ H_{ab}
+ =
+ \left.
+ \frac{\partial^2V}{\partial q^a\partial q^b}
+ \right|_{q_*}
+\end{equation}
+квадратичное разложение имеет стандартный вид
+\begin{equation}
+ \mathcal L^{(2)}
+ =
+ \frac12
+ \left[
+ \kappa G_{ab}\,
+ \partial_\mu\eta^a\partial^\mu\eta^b
+ -
+ H_{ab}\eta^a\eta^b
+ \right].
+\end{equation}
+Следовательно, каноническая kinetic matrix равна
+\begin{equation}
+ K_{\mathrm{quad}}=\kappa G,
+\end{equation}
+а physical mass matrix равна
+\begin{equation}
+ M^2=(\kappa G)^{-1}H.
+\end{equation}
+
+Heat-kernel action содержит coefficient \(1\) перед
+\(\Tr(\partial\Phi)^2\), то есть \(\kappa/2=1\) и \(\kappa=2\).
+Поэтому
+\begin{equation}
+ K_{\mathrm{quad}}=2G_*,
+\end{equation}
+и
+\begin{equation}
+ (2G_*)^{-1}H_*
+ =\operatorname{diag}(4,4,4).
+\end{equation}
+
+\begin{theorem}[Factor-two convention verdict]
+Формула с \(2G_*\) корректна. Матрица
+\((\kappa/2)G\) является coefficient перед
+\(\partial q\,\partial q\), но не канонической матрицей внутри
+\(\frac12K_{ab}\partial q^a\partial q^b\). Использование
+\(((\kappa/2)G)^{-1}H\) удваивает mass matrix, поскольку теряет общий
+множитель \(1/2\) квадратичной формы.
+\end{theorem}
+
+Таким образом,
+\begin{equation}
+ \frac{m_s^2}{\chi^2}=4,
+ \qquad
+ N_{\mathrm{fin}}=3\cdot4^2-8=40,
+\end{equation}
+а после gauge completion
+\begin{equation}
+ N_{\mathrm{fin+gauge}}=40+27=67.
+\end{equation}
+Downstream значения \(5/(8\pi^2)\) и \(67/(64\pi^2)\) не требуют
+пересчёта.
+
+\section{Flattening equation}
+
+В текущем тексте flattening condition уже записано как
+\begin{equation}
+ D_F^2=\mathbf1,
+ \qquad
+ BB^\dagger=\mathbf1_2.
+\end{equation}
+Оно точно даёт
+\begin{equation}
+ 2r^2=2s^2=1.
+\end{equation}
+Формула \(BB^\dagger=\frac12\mathbf1\) в актуальной версии отсутствует;
+замечание относится к более ранней или иной сборке документа.
+
+\section{Общий \(R_\xi\) BRST-ledger}
+
+В Feynman gauge \(\xi=1\) shorthand
+\begin{equation}
+ 4+1-2=3
+\end{equation}
+корректен буквально. Для общего \(\xi\) determinant раскладывается на:
+\begin{enumerate}
+ \item три transverse vector modes массы \(m_A\);
+ \item одну longitudinal vector mode с operator
+ \(\Delta_0+\xi m_A^2\);
+ \item одну Goldstone mode с тем же operator;
+ \item complex ghost pair с весом \(-2\) и тем же operator.
+\end{enumerate}
+Нефизический quartet сокращается:
+\begin{equation}
+ 1_{\mathrm{long}}
+ +1_{\mathrm{Goldstone}}
+ -2_{\mathrm{ghost}}
+ =0.
+\end{equation}
+Остаются три physical polarizations массы \(m_A\), поэтому
+\begin{equation}
+ \Delta N_{\mathrm{gauge+ghost}}=3c_A^2
+\end{equation}
+не зависит от \(\xi\).
+
+\begin{proposition}[Gauge-independent BV pass]
+Предыдущий supertrace \(27\) корректен. Для строгости shorthand
+\(4+1-2=3\) следует читать как Feynman-gauge представление общего
+BRST-cancellation.
+\end{proposition}
+
+\section{Где находятся \(\Phi^2\) и \(\Phi^4\)}
+
+Для Laplace-type operator с
+\begin{equation}
+ E=-\Phi^2+\text{derivative и gauge terms}
+\end{equation}
+локальные coefficients в четырёх измерениях имеют структуру
+\begin{align}
+ a_0&\sim\Tr\mathbf1,
+ \\
+ a_2&\sim\Tr\left(-\Phi^2-\frac1{12}R\mathbf1\right),
+ \\
+ a_4&\sim\Tr\left(
+ \frac12\Phi^4
+ +(\nabla\Phi)^2
+ +F^2
+ +\frac1{12}R\Phi^2
+ +\text{pure curvature}
+ \right).
+\end{align}
+Следовательно:
+\begin{enumerate}
+ \item \(a_0\) не содержит \(\Phi^4\);
+ \item quadratic scale term приходит из \(f_2\Lambda^2a_2\) и
+ curvature-coupling внутри \(f_0a_4\);
+ \item quartic и kinetic terms приходят из общего \(f_0a_4\).
+\end{enumerate}
+
+Поэтому предложение «\(a_0\) фиксирует \(\lambda_4\)» неверно по
+heat-kernel degree. Правильный candidate route использует \(a_2\) и
+\(a_4\), как уже было указано в product heat-kernel gate.
+
+\section{Может ли \(a_2/a_4\) закрыть scale gate}
+
+Общая spectral action задаёт schematically
+\begin{equation}
+ S_{\mathrm{spec}}
+ \supset
+ f_2\Lambda^2 a_2
+ +f_0a_4.
+\end{equation}
+После canonical scalar normalization \(f_0\) сокращается из относительных
+quartic/kinetic coefficients. Но minimum scale зависит от
+\begin{equation}
+ \chi^2
+ \sim
+ \frac{f_2\Lambda^2}{f_0}
+ +\text{curvature correction}.
+\end{equation}
+Таким образом, explicit \(a_2/a_4\) calculation может задать spectral
+boundary condition, но не становится parameter-free, пока
+\(\Lambda\) и отношение moments \(f_2/f_0\) не выведены.
+
+Кроме того, bare spectral relation не устраняет автоматически finite
+quantum counterterms: требуется объявить matching scale и
+renormalization prescription.
+
+\begin{theorem}[Spectral-counterterm route verdict]
+Предложенный коллегами маршрут является правильным следующим вычислением
+после замены \(a_0\) на \(a_4\), но сам по себе не закрывает absolute
+scale. Он либо выводит дополнительное отношение moments из новой
+spectral-function динамики, либо остаётся boundary condition расширенной
+модели.
+\end{theorem}
+
+\section{Принятые и отклонённые замечания}
+
+\begin{center}
+\begin{tabular}{p{0.37\textwidth}p{0.18\textwidth}p{0.28\textwidth}}
+\toprule
+Замечание & Решение & Причина \\
+\midrule
+\(2G_*\) заменить на \(G_*\) & отклонено & каноническая matrix равна \(\kappa G\) \\
+\(BB^\dagger=\frac12\mathbf1\) & неактуально & текущий текст уже содержит \(\mathbf1\) \\
+\(g^2=3/8\) & подтверждено & Clifford trace корректен \\
+BV \(27\) & подтверждено & общий \(R_\xi\) quartet сокращается \\
+Lichnerowicz no-go & подтверждено & flat twist не меняет \(R/4\) gap \\
+вычислить compact \(a_2/a_4\) & принято & перспективный boundary-condition audit \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{protocol}[Следующий гейт]
+Следует явно вычислить compact base-\(K\) coefficients
+\(a_2,a_4\) для полного scalar--gauge finite block и определить:
+\begin{enumerate}
+ \item какие combinations \(f_2\Lambda^2/f_0\) входят в \(\chi R\);
+ \item сокращаются ли они после одной scale calibration;
+ \item остаётся ли независимая finite quartic subtraction.
+\end{enumerate}
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_external_redteam_convention_results.json}.

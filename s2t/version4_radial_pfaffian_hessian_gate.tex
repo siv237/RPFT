@@ -1,0 +1,109 @@
+\chapter{Radial--orientation Pfaffian Hessian: diagonal no-go}
+
+После supercritical Pfaffian gate естественно разрешить connector modulus и
+проверить, может ли radial mode одновременно регулировать mass hierarchy и
+orientation. Этот шаг требует нового точного расчёта: формула с \(z^{-3}\)
+была справедлива только на \(|z|=1\) и не может использоваться вне circle.
+
+\section{Self-adjoint radial continuation}
+
+Положим
+\begin{equation}
+ z=re^{i\theta},
+ \qquad r>0,
+\end{equation}
+и в обратном Dirac edge используем \(\bar z\), как требует
+self-adjointness. Прямой determinant chiral block для \(W=-1/2\) равен
+\begin{equation}
+ \det M_-(r,\theta)
+ =\frac12r^2(2r+e^{i\theta})e^{-3i\theta},
+\end{equation}
+поэтому
+\begin{equation}
+ |\det M_-|^2
+ =r^4\left(r^2+r\cos\theta+\frac14\right).
+\end{equation}
+При \(r\to0\) determinant обращается в нуль, а Pfaffian action растёт, а не
+падает. Тем самым ложная radial неограниченность исчезает.
+
+\section{Bosonic parent potential}
+
+Для того же полного \(J\)-парного rectangle exact traces равны
+\begin{align}
+ \Tr D_F^2&=12r^2+28,\\
+ \Tr D_F^4&=12r^4+32r^2-8r\cos\theta+60.
+\end{align}
+В potential
+\begin{equation}
+ V_B=-\mu^2\Tr D_F^2+\lambda\Tr D_F^4
+\end{equation}
+условие classical stationary point \((r,\theta)=(1,0)\) фиксирует
+\begin{equation}
+ \frac{\mu^2}{\lambda}=\frac{13}{3}.
+\end{equation}
+
+В координатах \(\sigma=\log r\), \(\theta\) bosonic Hessian при unit vacuum
+равен
+\begin{equation}
+ \operatorname{Hess} V_B
+ =\lambda
+ \begin{pmatrix}
+ 104&0\\0&8
+ \end{pmatrix}.
+\end{equation}
+Reduced Pfaffian добавляет
+\begin{equation}
+ \operatorname{Hess}\Gamma_{\rm red}
+ =
+ \begin{pmatrix}
+ -2/9&0\\0&2/9
+ \end{pmatrix},
+\end{equation}
+а full KO6 modulus удваивает эту matrix.
+
+\begin{theorem}[Diagonal radial--orientation Hessian]
+Все mixed entries \(\partial_\sigma\partial_\theta\) равны нулю. Это следует
+также из CP-even symmetry \(V(r,\theta)=V(r,-\theta)\). Следовательно, radial
+mode не может на quadratic level динамически настроить orientation stiffness.
+\end{theorem}
+
+\section{Critical quartic coefficient}
+
+С учётом modular orientation susceptibility \(\chi_K=0.675695\) angular
+curvature около unit vacuum равна
+\begin{align}
+ m_{\theta,\rm red}^2&=8\lambda+\frac29-\chi_K,\\
+ m_{\theta,\rm full}^2&=8\lambda+\frac49-\chi_K.
+\end{align}
+Spontaneous CP branch требует соответственно
+\begin{align}
+ \lambda&<0.056684 &&\text{(reduced)},\\
+ \lambda&<0.028906 &&\text{(full KO6)}.
+\end{align}
+При canonical normalized value \(\lambda=1\) обе curvatures строго
+положительны.
+
+Exact two-dimensional scan полного bosonic, Pfaffian и modular functional
+при \(\lambda=1\) даёт
+\begin{align}
+ (r_\star,\theta_\star)_{\rm red}&=(1.02426,0),\\
+ (r_\star,\theta_\star)_{\rm full}&=(1.04620,0).
+\end{align}
+Новая flavour branch поэтому не возникает и mass/CKM test не открывается.
+
+\begin{theorem}[Radial Pfaffian verdict]
+Точный radial mode стабилен и слегка сдвигает connector modulus, но не
+создаёт radial--orientation mixing. При естественной quartic normalization
+vacuum остаётся CP-even. Двухмерная Pfaffian geometry сама по себе не решает
+flavour trade-off.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет fitted small quartic]
+Нельзя уменьшать \(\lambda\) ниже critical values по CKM residuals. Ветка
+переоткрывается только если spectral moments независимо выводят малую
+classical quartic normalization либо parent action содержит новый CP-odd
+radial--orientation invariant.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_radial_pfaffian_hessian_gate_results.json}.

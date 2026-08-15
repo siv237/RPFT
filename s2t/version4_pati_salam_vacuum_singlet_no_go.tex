@@ -1,0 +1,107 @@
+\chapter{Pati--Salam vacuum и universal-singlet no-go}
+
+Предыдущая глава показала, что Pati--Salam running способен свести gauge
+couplings, но только после независимого вывода промежуточного масштаба.
+Теперь проверяется более раннее условие: существует ли вообще допустимый
+Pati--Salam\(\to\)SM vacuum в текущей архитектуре и может ли уже найденный
+dilaton/singlet исправить его без нового свободного portal.
+
+\section{Литературный vacuum obstruction}
+
+Для общего spectral Pati--Salam Dirac operator скалярный сектор содержит
+поля \(\dot H\), \(H\) и \(\Sigma\), а их potential фиксируется spectral
+action. Анализ arXiv:1905.04533 показывает, что кандидатный vacuum имеет
+нужные Goldstone modes, но одновременно оставляет шесть лишних безмассовых
+скаляров, а остальные направления получают отрицательные mass squares.
+Стационарная точка является local maximum, а не допустимым минимумом.
+
+Структурная причина особенно важна для нашего проекта. Нужная color-triplet
+Goldstone-мода и нежелательная antisymmetric scalar mode получают одинаковую
+массу, поскольку одинаково взаимодействуют с breaking VEV. Даже более общий
+двухинвариантный quartic potential не снимает эту degeneracy.
+
+\section{Проверка уже имеющегося singlet}
+
+В Томе III существует Coleman--Weinberg кандидат \(\chi\), который при
+\(B>0\) способен связать finite-Dirac scale и radion:
+\begin{equation}
+ V_{\rm CW}(\chi)=B\chi^4
+ \left(\log\frac{\chi^2}{\mu^2}-\frac12\right).
+\end{equation}
+Но в минимальном direct-sum spectral completion его portal к observed
+sector точно равен нулю. Ненулевой portal требует новой connector
+representation и потому не может быть добавлен как готовая ручка.
+
+Более того, даже предположенный universal portal не решает Goldstone problem.
+Пусть до добавления singlet две проблемные моды имеют
+\begin{equation}
+ m_G^2=m_X^2=0,
+\end{equation}
+где \(G\) обязана остаться Goldstone, а \(X\) должна стать тяжёлой. Universal
+singlet shift даёт
+\begin{equation}
+ m_G^2\longmapsto m_G^2+\delta,
+ \qquad
+ m_X^2\longmapsto m_X^2+\delta.
+\end{equation}
+Условие \(m_G^2=0\) требует \(\delta=0\), после чего \(m_X^2=0\) также
+сохраняется. Следовательно, singlet, связанный только с полным scalar norm,
+не меняет разность масс и не исправляет Goldstone counting.
+
+\begin{theorem}[Pure universal-shift no-go]
+Текущий Coleman--Weinberg singlet не закрывает spectral Pati--Salam vacuum.
+В минимальной сумме он развязан; ansatz с единственным universal norm portal
+одинаково сдвигает mass-degenerate required и unwanted modes. Теорема не
+закрывает connected diagonal real singlet, способный породить дополнительные
+mixed invariants в расширенном Dirac operator.
+\end{theorem}
+
+\section{\texorpdfstring{Нейтринный масштаб не является \(m_R\)}{Нейтринный масштаб не является mR}}
+
+Текущий нейтринный ledger использует
+\begin{equation}
+ M_R^{(0)}=(23+\pi^{-1})m_\mu=2.4637\,\mathrm{GeV}.
+\end{equation}
+Оптимальные Pati--Salam scales лежат в диапазоне
+\(1.49\times10^{11}\)--\(5.08\times10^{13}\,\mathrm{GeV}\). Разрыв
+составляет \(10.78\)--\(13.31\) десятичных порядков. Поэтому существующий
+символ \(M_R\) кодирует низкоэнергетическую seesaw-нормировку и не может
+быть переименован в high-scale Pati--Salam breaking VEV.
+
+\begin{nogocriterion}[Scale relabeling]
+Совпадение обозначений \(M_R\) и \(m_R\) не является физической связью.
+Идентификация разрешена только после вывода одного общего dimensionful
+operator и проверки его нормировки одновременно в neutrino и gauge sectors.
+\end{nogocriterion}
+
+\section{Как именно улучшать модель}
+
+Следующее расширение должно объединить две незакрытые задачи одним объектом.
+Нужен diagonal/Clifford-compatible finite sector, который:
+\begin{enumerate}
+ \item различает symmetric и antisymmetric Pati--Salam scalar sectors;
+ \item меняет разность \(m_X^2-m_G^2\), а не общий mass trace;
+ \item входит в тот же spectral action и фиксирует portal coefficients;
+ \item участвует в dimensional transmutation и тем самым выводит \(m_R\);
+ \item после breaking оставляет observed
+ \(\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)\) baseline;
+ \item не вводит новые fermion Yukawa matrices без selector.
+\end{enumerate}
+
+Это уже не ``добавить singlet'', а построить общий representation-sensitive
+transmission operator. Первым вычислением должен стать конечный menu таких
+diagonal blocks и mass-difference test. Если для каждого кандидата
+\begin{equation}
+ \Delta(m_X^2-m_G^2)=0,
+\end{equation}
+Pati--Salam ветвь закрывается и приоритет переходит к более крупной
+anomaly-constrained шестимерной архитектуре.
+
+После literature re-audit это утверждение относится только к pure universal
+shift. Connected real singlet на diagonal Dirac block остаётся открытым,
+поскольку может генерировать дополнительные mixed invariants совместно с
+adjoint/composite fields.
+
+Машинный ledger сохранён в
+\path{s2t_v4_pati_salam_vacuum_singlet_gate.py} и
+\path{s2t_v4_pati_salam_vacuum_singlet_gate_results.json}.

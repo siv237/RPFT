@@ -1,0 +1,25 @@
+{
+  "gate": "version4_heat_kernel_trace_dictionary",
+  "heat_kernel_prefactor": "1/(16*pi**2)",
+  "scalar_wavefunction_coefficient": "f0/(8*pi**2)",
+  "raw_gauge_coefficient": "f0/(12*pi**2)",
+  "f0_from_gauge_matching": "3*pi**2/gauge_squared",
+  "canonical_quartic": "8*pi**2/f0",
+  "canonical_quartic_from_gauge": "8*gauge_squared/3",
+  "matching_value": {
+    "gauge_squared": "3/8",
+    "f0": "8*pi**2",
+    "canonical_4d_quartic": "1"
+  },
+  "compact_base_volume": "2*pi**3*radius**4",
+  "dimensionless_zero_mode_quartic": "16*pi**3*gauge_squared/3",
+  "dimensionless_zero_mode_matching_value": "2*pi**3",
+  "curvature_changes_quartic_dictionary": false,
+  "curvature_changes_quadratic_term": true,
+  "local_4d_dictionary": "after canonical scalar normalization lambda_4D=(8/3)g^2=1",
+  "integrated_base_k_dictionary": "for phi_hat=R phi, lambda_0D=2*pi^3 at g^2=3/8",
+  "radial_pfaffian_gate_uses_same_architecture": false,
+  "architecture_gap": "the radial gate adds a unit finite Pfaffian to a unit-normalized bosonic trace; neither the local 4D determinant density nor the integrated base-K zero-mode coefficient is retained",
+  "physical_cross_tome_threshold_available": false,
+  "verdict": "the quartic convention dictionary is derivable, but it exposes an architecture mismatch rather than a free numerical factor: the radial-Pfaffian critical lambda is a normalized toy-action threshold and cannot be compared directly with the 4D heat-kernel coefficient"
+}

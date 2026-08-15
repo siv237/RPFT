@@ -1,0 +1,158 @@
+\section{Project-wide rescue archaeology и common-scale no-go}
+
+После scalar-only threshold gate повторно просмотрены основные ветви всего
+проекта: parent action, superconnection, heat kernel, spectral profile и
+Pati--Salam reconstruction. Цель аудита --- отделить механизмы, которые
+действительно меняют representation-sensitive Hessian, от механизмов,
+которые лишь перенормируют уже найденный неустойчивый potential.
+
+\subsection{Общий \texorpdfstring{\(a_2/a_4\)}{a2/a4} scale не меняет знак}
+
+Compact heat-kernel gate Тома III показывает, что один ordinary spectral
+profile после canonical normalization задаёт семейство
+\begin{equation}
+ V_\alpha(D_F)
+ =-\frac\alpha2\Tr D_F^2+\frac12\Tr D_F^4,
+ \qquad \alpha>0,
+ \label{eq:ps-common-scale-family}
+\end{equation}
+где \(\alpha\) кодирует common quadratic-to-quartic moment ratio. На
+rank-one branch relative determinant selector обращается в нуль вдоль
+radial direction, поэтому stationary relation имеет вид
+\begin{equation}
+ \|M_R\|_{\rm op}^2=\frac\alpha2,
+ \qquad
+ \Delta_{\dot1,1}=\left(\frac\alpha2\right)^{1/4}.
+\end{equation}
+
+Для произвольной Yukawa variation точный quadratic form равен
+\begin{equation}
+ \boxed{
+ H_{Y,\alpha}(Y)
+ =-4\alpha\|Y\|_F^2+8\|M_R^\dagger Y\|_F^2
+ \le0.}
+ \label{eq:ps-common-scale-yukawa-no-go}
+\end{equation}
+Следовательно, изменение \(f_2/f_0\), cutoff scale или общего
+Pati--Salam breaking scale не может сделать \(\phi\)-Hessian положительным.
+Для project tangent все eigenvalues просто умножаются на \(\alpha\):
+\begin{equation}
+ \alpha\left[-34.92338966\ (4),-7.30661034\ (4)\right].
+\end{equation}
+Direct scans при \(\alpha=0.1,1,10\) во всех случаях дают восемь negative
+modes. При \(\phi=0\) все пятнадцать \(\Sigma_4\)-directions остаются flat
+для любого \(\alpha\).
+
+\begin{theorem}[Common spectral scale no-go]
+Один общий \(a_2/a_4\) moment ratio изменяет радиус rank-one vacuum, но не
+его representation-sensitive inertia. Поэтому ordinary one-profile
+spectral action и простое разделение high/low scales не устраняют ни восемь
+negative \(\phi\)-modes, ни пятнадцать flat \(\Sigma_4\)-modes.
+\end{theorem}
+
+\subsection{Почему twisted grand-symmetry не является нужным adjoint}
+
+Primary construction arXiv:1411.1320 действительно порождает scalar
+\(\sigma\) из Majorana part и vector \(X_\mu\) из fluctuation свободного
+spacetime Dirac operator. Однако его algebra содержит
+\begin{equation}
+ \mathbb H^2\oplus\mathbb C^2\oplus M_3(\mathbb C),
+\end{equation}
+а сама модель названа Pati--Salam-like: она имеет
+\(SU(2)_R\times SU(2)_L\) и дополнительный \(U(1)\), но не полный
+four-color \(SU(4)\). Scalar \(\sigma\) является Majorana singlet, а
+vector potential динамически возвращает Standard Model algebra.
+
+Следовательно, этот mechanism не создаёт independent weak-singlet
+\((1,1,15_4)\)-potential. Ненулевой spacetime-vector background нельзя
+использовать как скрытый color generator без отдельной проверки
+Lorentz/Euclidean symmetry breaking.
+
+\begin{nogocriterion}[Twisted representation mismatch]
+Скалярно-векторный twist из arXiv:1411.1320 не реализует требуемый
+adjoint-канал \(\Sigma_4\). Это содержательный пример двухканальной
+флуктуации без свободных коэффициентов, однако он задан другой алгеброй и
+другим набором представлений.
+\end{nogocriterion}
+
+\subsection{Что действительно переиспользуется из проекта}
+
+Полный обход оставляет четыре механизма с различным статусом:
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}>{\raggedright\arraybackslash}p{0.34\textwidth}}
+\toprule
+Механизм & Реальный результат & Ограничение\\
+\midrule
+Произведение heat kernels & фиксирует общую нормировку кинетического и
+квартичного членов & не создаёт новых смешанных инвариантов\\
+Градуированная суперсвязность & связывает каналы нулевых и единичных форм
+одной метрикой следа & общий спектральный kernel разделяет веса гессиана\\
+Компактное отношение \(a_2/a_4\) & заменяет два исходных коэффициента одним
+отношением моментов & общее отношение не меняет инерцию по теореме выше\\
+Относительный mapping cone & канонически даёт
+\(4\det(\Delta\Delta^\dagger)\) и устойчивый \(\Delta\)-гессиан & пока не
+содержит смешанную кривизну \(\phi/\Sigma_4\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Последний пункт является единственной внутренней зацепкой, которая уже
+жёстко нормирована и находится в правильной Pati--Salam ветви.
+
+\subsection{Литературный диагноз недостающих invariants}
+
+Vacuum audit arXiv:1905.04533 показывает, что ordinary spectral
+Pati--Salam potential не даёт подходящего breaking vacuum. В частности,
+ему недостаёт mixed quartics типа
+\begin{equation}
+ \bigl(\Tr \dot H^2\bigr)^2,
+ \qquad
+ \Tr(\dot H^2)\Tr(\Sigma^2),
+ \label{eq:ps-missing-mixed-invariants}
+\end{equation}
+которые могли бы разделить требуемые Goldstone directions и unwanted
+pseudo-Goldstones. Это совпадает с project Hessian diagnosis: common trace
+potential масштабирует сектора одинаково, тогда как нужен новый connected
+contraction.
+
+Для current finite block минимальная target-база имеет schematic form
+\begin{align}
+ I_Y&=\Tr(M_R^\dagger M_R)\Tr(Y^\dagger Y),\\
+ I_\Sigma&=\Tr(M_R^\dagger M_R)\Tr(\Sigma_4^2),\\
+ I_{\rm conn}&=\Tr(M_R^\dagger M_R\,\mathcal C(\Sigma_4,Y)),
+\end{align}
+где \(\mathcal C\) должна быть выведена из одной connected relative
+curvature, а не выбрана после Hessian scan. Первый invariant способен дать
+positive \(Y\)-channel shift, второй имеет full-rank isotropic
+\(\Sigma_4\)-Hessian, а single-trace contractions проверяют необходимое
+representation splitting.
+
+\begin{proposition}[Surviving rescue class]
+После project-wide аудита остаётся не arbitrary two-scale action, а более
+узкий класс: irreducible relative/mapping-cone curvature должна породить
+одновременно positive \(Y\)-channel и direct full-rank
+\(\Sigma_4\)-quadratic form с одним заранее фиксированным trace weight.
+Common scale, direct-sum singlet и Pati--Salam-like twist этого не делают.
+\end{proposition}
+
+\subsection{Следующий вычислимый gate}
+
+Нужно классифицировать gauge-invariant mixed quartics, возникающие из
+расширения one-copy relative cycle на established Pati--Salam finite block,
+и для каждого candidate вычислить:
+\begin{enumerate}
+ \item induced coefficient \(\zeta_Y\) в \(\|Y\|^2\)-channel и условие
+ \(\zeta_Y>2\);
+ \item rank и signature \(\Sigma_4\)-Hessian;
+ \item Goldstone kernel после breaking;
+ \item commutant/irreducibility и отсутствие второго trace weight.
+\end{enumerate}
+Если canonical curvature norm не даёт одновременно первые два условия,
+one-copy relative rescue закрывается. Тогда следующий честный класс ---
+расширенная finite geometry с новым fundamental diagonal sector, а не
+перенастройка spectral profile.
+
+Machine audit common-scale no-go сохранён в
+\path{s2t_v4_pati_salam_common_scale_no_go.py} и
+\path{s2t_v4_pati_salam_common_scale_no_go_results.json}.

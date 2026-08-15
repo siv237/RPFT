@@ -1,0 +1,160 @@
+\section{Rotation audit старых открытых проблем}
+
+После закрытия current Pati--Salam finite geometry полезно временно
+переключить вычислительный приоритет на ранее оставленные ветви. Повторный
+обход tree, wiki и protocol ledger выделяет три задачи, которые не были
+поглощены последующими no-go:
+\begin{enumerate}
+ \item full-field carrier comparison;
+ \item Majorana-defect source и family-axis origin;
+ \item selector noncommuting family incidence.
+\end{enumerate}
+
+\subsection{Full-field carrier: реальная, но пока заблокированная задача}
+
+На competing carriers \(S^4\) и \(S^2\times S^2\) не вычислен полный
+renormalized gauge--ghost--scalar--Dirac determinant. Однако предыдущий
+counterterm audit уже показал, что до такого вычисления необходимо вывести
+из parent action как минимум:
+\begin{equation}
+ G_{\rm ren},\quad c_{W^2},\quad c_E,\quad
+ \xi_s,\quad\text{и origin massive-vector sector}.
+\end{equation}
+Без этих данных finite local terms способны изменить cross-topology
+ordering. Поэтому эта ветвь физически важна, но не является первым
+calculation-ready кандидатом. Curved-space one-loop literature также
+подтверждает необходимость полного gauge-invariant counterterm basis для
+scalar--gauge--fermion systems.
+
+\subsection{Family branch: existence уже доказано, selection отсутствует}
+
+Canonical affine menu даёт real standard triplet группы
+\(S_4\simeq AGL(2,2)\). Полный exhaustive scan уже нашёл двенадцать
+outside-\(D_8\) incidence operators, каждый из которых вместе с current
+geometric subgroup порождает full \(M_3\) family algebra. Они распадаются
+на
+\begin{equation}
+ 4\ \text{transpositions}
+ \;+\;
+ 8\ \text{three-cycles}.
+\end{equation}
+Проблема состоит не в существовании mixing algebra, а в выборе одного
+направления, его sector map и relative normalization.
+
+\subsection{Новая перекрёстная проверка с defect Wilson connection}
+
+Defect branch независимо построила continuous family holonomy
+\begin{equation}
+ R_n(\theta_\star)\in SO(3),
+ \qquad
+ K_n=\theta_\star[n]_\times,
+\end{equation}
+которая на трёх Majorana core modes имеет rank \(2\) и оставляет один
+real kernel. Следовательно, admissible affine incidence должен быть
+orientation-preserving в standard triplet.
+
+Прямой determinant audit restricted \(S_4\)-representation даёт:
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Cycle type & Число & Determinant на triplet\\
+\midrule
+transposition \(2+1+1\) & 6 & \(-1\)\\
+double transposition \(2+2\) & 3 & \(+1\)\\
+three-cycle \(3+1\) & 8 & \(+1\)\\
+four-cycle & 6 & \(-1\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+Среди двенадцати full-\(M_3\) outside-\(D_8\) candidates условие
+\(SO(3)\) поэтому оставляет ровно восемь three-cycles, то есть одну
+ориентированную conjugacy class и четыре unoriented tetrahedral axes.
+
+Это первое содержательное сокращение family selector menu, полученное не
+из flavour data, а из уже существующего defect architecture.
+
+\subsection{Проверка совпадения осей}
+
+Две project-selected Wilson axes сравнены с четырьмя three-cycle axes
+standard \(S_4\)-triplet. Лучшие absolute scalar products равны
+\begin{equation}
+ 0.89220655,
+ \qquad
+ 0.81649658,
+\end{equation}
+что соответствует misalignment angles
+\begin{equation}
+ 0.46858872,
+ \qquad
+ 0.61547971.
+\end{equation}
+Точного совпадения нет. Кроме того,
+\begin{equation}
+ \theta_\star=2.50675535,
+ \qquad
+ \theta_{3{\rm cyc}}=\frac{2\pi}{3}=2.09439510,
+\end{equation}
+и angle mismatch равен \(0.41236025\).
+
+\begin{proposition}[SO(3) family-menu reduction]
+Требование происхождения family operator из continuous \(SO(3)\)
+connection сокращает двенадцать algebraically successful affine candidates
+до восьми three-cycles. Но current Wilson vacuum не совпадает ни по axis,
+ни по angle с discrete three-cycle holonomy. Поэтому defect branch сужает
+family selector, но пока не выводит его.
+\end{proposition}
+
+\subsection{Приоритет после rotation audit}
+
+Три старые задачи получают следующий порядок:
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.29\textwidth}>{\raggedright\arraybackslash}p{0.12\textwidth}>{\raggedright\arraybackslash}p{0.46\textwidth}}
+\toprule
+Branch & Readiness & Главный blocker\\
+\midrule
+Граничная суперсвязность family--defect & \(4/5\) &
+единое происхождение корневого сектора, конденсата и семейной голономии\\
+Сопоставление полевых носителей & \(2/5\) &
+вывод гравитационных и топологических контрчленов из родительского действия\\
+Автономный аффинный селектор семейств & \(2/5\) &
+нет внутреннего выбора incidence operator, sector map и relative weight\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Первая ветвь имеет преимущество: один положительный parent action
+одновременно продвинул бы defect-source и family-selector problems.
+Литературно такая архитектура не исключена. Topological-defect
+classification защищает Majorana kernel после появления допустимой mass
+texture; Hosotani mechanism показывает, как Wilson phase может выбираться
+quantum effective action; orbifold flavour models демонстрируют, что
+boundary conditions способны одновременно порождать и ломать \(S_4\)-type
+flavour symmetry. Но ни один из этих результатов не выбирает автоматически
+конкретные project axis и root charge.
+
+\begin{protocol}[Следующий rotation gate]
+Нужно построить минимальную boundary superconnection, которая одним
+representation trace действует:
+\begin{enumerate}
+ \item на sterile square-root \(Z_4/U(1)\) line;
+ \item на charge-two pairing field;
+ \item на real family triplet.
+\end{enumerate}
+Её equations должны до neutrino/flavour data:
+\begin{enumerate}
+ \item выбрать nonextendable root sector;
+ \item создать condensed unit-winding saddle;
+ \item зафиксировать family holonomy axis;
+ \item определить, лежит ли axis в three-cycle orbit;
+ \item сохранить exact-one BdG kernel и пройти второй
+ normalization-sensitive sector.
+\end{enumerate}
+\end{protocol}
+
+Литературная сверка использует работы
+\path{arXiv:1006.0690}, \path{arXiv:hep-ph/0504272},
+\path{arXiv:1001.3172} и \path{arXiv:1805.01700}.
+Machine audit сохранён в
+\path{s2t_v4_old_problem_rotation_audit.py} и
+\path{s2t_v4_old_problem_rotation_audit_results.json}.

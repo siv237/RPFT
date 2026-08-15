@@ -1,0 +1,270 @@
+{
+  "gate": "version4_quadratic_parent_selector",
+  "raw_successful_permutation_directions": 12,
+  "distinct_hermitian_full_M3_operators": 8,
+  "quadratic_score_classes": {
+    "('8', '8', '6', '3/2')": 2,
+    "('4', '4', '0', '0')": 2,
+    "('0', '8', '6', '3/2')": 2,
+    "('4', '4', '4', '1')": 2
+  },
+  "any_singleton_score_class": false,
+  "metric_weights": {
+    "translation_p": "1",
+    "translation_q": "1/4",
+    "shear": "1/5"
+  },
+  "metric_minimum_score": "16/5",
+  "metric_minimum_degeneracy": 2,
+  "metric_minima": [
+    {
+      "matrix": "Matrix([[0, 0, 1], [0, 1, 0], [1, 0, 0]])",
+      "permutations": [
+        [
+          0,
+          3,
+          2,
+          1
+        ]
+      ],
+      "cycle_types": [
+        "2+1+1"
+      ],
+      "scores": {
+        "translation_p": "0",
+        "translation_q": "8",
+        "shear": "6",
+        "rank_one": "3/2"
+      },
+      "metric_weighted_score": "16/5"
+    },
+    {
+      "matrix": "Matrix([[0, 0, -1], [0, 1, 0], [-1, 0, 0]])",
+      "permutations": [
+        [
+          2,
+          1,
+          0,
+          3
+        ]
+      ],
+      "cycle_types": [
+        "2+1+1"
+      ],
+      "scores": {
+        "translation_p": "0",
+        "translation_q": "8",
+        "shear": "6",
+        "rank_one": "3/2"
+      },
+      "metric_weighted_score": "16/5"
+    }
+  ],
+  "metric_minima_commutators": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "commutator": "Matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]])",
+      "vanishes": true
+    }
+  ],
+  "all_metric_minima_commute": true,
+  "selector_status": "quadratic commutator data do not select a unique incidence operator",
+  "mixing_status": "assigning the two metric minima to different sectors still gives a common eigenbasis",
+  "rows": [
+    {
+      "matrix": "Matrix([[0, 1, 0], [1, 0, 0], [0, 0, 1]])",
+      "permutations": [
+        [
+          0,
+          2,
+          1,
+          3
+        ]
+      ],
+      "cycle_types": [
+        "2+1+1"
+      ],
+      "scores": {
+        "translation_p": "8",
+        "translation_q": "8",
+        "shear": "6",
+        "rank_one": "3/2"
+      },
+      "metric_weighted_score": "56/5"
+    },
+    {
+      "matrix": "Matrix([[0, 1/2, 1/2], [1/2, 0, 1/2], [1/2, 1/2, 0]])",
+      "permutations": [
+        [
+          0,
+          2,
+          3,
+          1
+        ],
+        [
+          0,
+          3,
+          1,
+          2
+        ]
+      ],
+      "cycle_types": [
+        "3+1"
+      ],
+      "scores": {
+        "translation_p": "4",
+        "translation_q": "4",
+        "shear": "0",
+        "rank_one": "0"
+      },
+      "metric_weighted_score": "5"
+    },
+    {
+      "matrix": "Matrix([[0, 0, 1], [0, 1, 0], [1, 0, 0]])",
+      "permutations": [
+        [
+          0,
+          3,
+          2,
+          1
+        ]
+      ],
+      "cycle_types": [
+        "2+1+1"
+      ],
+      "scores": {
+        "translation_p": "0",
+        "translation_q": "8",
+        "shear": "6",
+        "rank_one": "3/2"
+      },
+      "metric_weighted_score": "16/5"
+    },
+    {
+      "matrix": "Matrix([[0, 1/2, -1/2], [1/2, 0, -1/2], [-1/2, -1/2, 0]])",
+      "permutations": [
+        [
+          1,
+          2,
+          0,
+          3
+        ],
+        [
+          2,
+          0,
+          1,
+          3
+        ]
+      ],
+      "cycle_types": [
+        "3+1"
+      ],
+      "scores": {
+        "translation_p": "4",
+        "translation_q": "4",
+        "shear": "4",
+        "rank_one": "1"
+      },
+      "metric_weighted_score": "29/5"
+    },
+    {
+      "matrix": "Matrix([[0, -1/2, 1/2], [-1/2, 0, -1/2], [1/2, -1/2, 0]])",
+      "permutations": [
+        [
+          1,
+          3,
+          2,
+          0
+        ],
+        [
+          3,
+          0,
+          2,
+          1
+        ]
+      ],
+      "cycle_types": [
+        "3+1"
+      ],
+      "scores": {
+        "translation_p": "4",
+        "translation_q": "4",
+        "shear": "4",
+        "rank_one": "1"
+      },
+      "metric_weighted_score": "29/5"
+    },
+    {
+      "matrix": "Matrix([[0, 0, -1], [0, 1, 0], [-1, 0, 0]])",
+      "permutations": [
+        [
+          2,
+          1,
+          0,
+          3
+        ]
+      ],
+      "cycle_types": [
+        "2+1+1"
+      ],
+      "scores": {
+        "translation_p": "0",
+        "translation_q": "8",
+        "shear": "6",
+        "rank_one": "3/2"
+      },
+      "metric_weighted_score": "16/5"
+    },
+    {
+      "matrix": "Matrix([[0, -1/2, -1/2], [-1/2, 0, 1/2], [-1/2, 1/2, 0]])",
+      "permutations": [
+        [
+          2,
+          1,
+          3,
+          0
+        ],
+        [
+          3,
+          1,
+          0,
+          2
+        ]
+      ],
+      "cycle_types": [
+        "3+1"
+      ],
+      "scores": {
+        "translation_p": "4",
+        "translation_q": "4",
+        "shear": "0",
+        "rank_one": "0"
+      },
+      "metric_weighted_score": "5"
+    },
+    {
+      "matrix": "Matrix([[0, -1, 0], [-1, 0, 0], [0, 0, 1]])",
+      "permutations": [
+        [
+          3,
+          1,
+          2,
+          0
+        ]
+      ],
+      "cycle_types": [
+        "2+1+1"
+      ],
+      "scores": {
+        "translation_p": "8",
+        "translation_q": "8",
+        "shear": "6",
+        "rank_one": "3/2"
+      },
+      "metric_weighted_score": "56/5"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+\chapter{Order-one Krajewski square: факторизация, \texorpdfstring{\(J\)}{J} и CP-фаза}
+
+Внешний red-team справедливо потребовал вычислить
+\begin{equation}
+ [[D_F,a],JbJ^{-1}]
+\end{equation}
+до объявления connector graph допустимой finite geometry. Выполним этот
+тест на минимальном summand-label menu, не предполагая заранее исчезновение
+CP-фазы.
+
+\section{Точный edge criterion}
+
+Обозначим неприводимый бимодуль через
+\(\mathcal H_{ij}\), где \(i\) задаёт left action, а \(j\) --- right action.
+Для блока \(D_{ij,kl}\) double commutator содержит множитель
+\begin{equation}
+ (a_i-a_k)D_{ij,kl}(b_j-b_l).
+\end{equation}
+Поэтому order-one condition для всех \(a,b\) разрешает ненулевой edge только
+если
+\begin{equation}
+ i=k
+ \qquad\text{или}\qquad
+ j=l.
+\end{equation}
+Иными словами, один Dirac edge может изменить left label или right label,
+но не оба одновременно.
+
+Для четырёх coarse nodes
+\begin{equation}
+ A=(o,o),\quad B=(o,h),\quad C=(h,h),\quad D=(h,o)
+\end{equation}
+разрешены ровно edges
+\begin{equation}
+ AB,\quad BC,\quad CD,\quad DA,
+\end{equation}
+а diagonals \(AC\) и \(BD\) запрещены.
+
+\begin{theorem}[Order-one rectangle theorem]
+Треугольный observed--messenger--hidden contour не является допустимым
+Krajewski cycle, если хотя бы один его edge одновременно меняет left и right
+algebra labels. Минимальный connector cycle, проходящий order-one condition,
+есть четырёхрёберный rectangle.
+\end{theorem}
+
+Таким образом, EFT-chain предыдущей главы не должна буквально отождествляться
+с тремя finite-Dirac edges. Её spectral lift обязан разрешиться в alternating
+horizontal/vertical square. Это подтверждает факторизацию gauge intertwiner
+и family multiplicity, отмеченную red-team.
+
+\section{\texorpdfstring{\(J\)}{J}-совместимый квадрат}
+
+Реальная структура действует как
+\begin{equation}
+ J:A\mapsto A,\qquad B\leftrightarrow D,\qquad C\mapsto C.
+\end{equation}
+После допустимых rephasings минимальный self-adjoint \(J\)-совместимый
+оператор можно записать через два модуля \(a,b>0\) и одну loop phase
+\(\phi\). Прямой matrix calculation даёт
+\begin{align}
+ \Tr D_F^2 &=4a^2+4b^2,\\
+ \Tr D_F^4 &=8a^4+8b^4+16a^2b^2\cos^2\phi,\\
+ \det D_F &=4a^2b^2\sin^2\phi.
+\end{align}
+
+\begin{proposition}[Фаза не уничтожается реальной структурой]
+\(J\)-идентификация противоположных edges оставляет одну
+rephasing-invariant loop phase. Для finite potential
+\begin{equation}
+ V_F=-\mu^2\Tr D_F^2+\lambda\Tr D_F^4,
+ \qquad \lambda>0,
+\end{equation}
+phase minima равны
+\begin{equation}
+ \phi=\pm\frac{\pi}{2}.
+\end{equation}
+Следовательно, order-one factorization сама по себе не убивает maximal
+complex phase.
+\end{proposition}
+
+Однако вещественное spectral action зависит от \(\cos^2\phi\) и не различает
+две ориентации. Оно допускает spontaneous CP branch, но не предсказывает знак
+orientation.
+
+\section{Где obstruction действительно остаётся}
+
+Family space является multiplicity factor, коммутирующим с gauge algebra.
+Поэтому разрешённый edge имеет форму
+\begin{equation}
+ D_e=I_e^{\rm gauge}\otimes Y_e^{\rm family}.
+\end{equation}
+Order-one condition не ограничивает \(Y_e\) до rank-one projector или
+incidence operator. Если хотя бы один \(Y_e\) произволен, а остальные path
+factors обратимы, effective path product пробегает всю
+\(M_3(\mathbb C)\). Машинный basis test даёт span dimension \(9\).
+
+\begin{nogocriterion}[Family-factor freedom]
+Order-one pass и surviving loop phase не закрывают flavour sector. Connector
+считается predictive только если тот же parent action ограничивает family
+edge factors заранее объявленной алгеброй, например выбранными
+\(P_-\) и incidence directions, без произвольного \(M_3\)-входа.
+\end{nogocriterion}
+
+Итог уточняет внешний аудит: доказанная ошибка исходного sketch --- не сама
+факторизация и не автоматическая гибель CP, а использование contour до
+явного order-one lift. Rectangle lift существует и сохраняет фазу; открытым
+остаётся selector семейных matrices и ориентационный знак. Машинная проверка
+сохранена в
+\path{s2t_v4_order_one_krajewski_square_gate_results.json}.

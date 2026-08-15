@@ -1,0 +1,143 @@
+{
+  "gate": "version4_orientation_spectral_no_go",
+  "branch_minus": {
+    "cross_word": "-1/2",
+    "theta": "0"
+  },
+  "branch_plus": {
+    "cross_word": "1/2",
+    "theta": "pi"
+  },
+  "primary_dirac_dimension": 12,
+  "characteristic_polynomial_minus": "(x**2 - x - 1)*(x**2 + x - 1)*(2*x**4 - 2*x**3 - 6*x**2 + 4*x + 3)*(2*x**4 + 2*x**3 - 6*x**2 - 4*x + 3)/4",
+  "characteristic_polynomial_plus": "(x**2 - x - 1)*(x**2 + x - 1)*(2*x**4 - 2*x**3 - 6*x**2 + 4*x + 3)*(2*x**4 + 2*x**3 - 6*x**2 - 4*x + 3)/4",
+  "characteristic_polynomials_equal": true,
+  "squared_characteristic_polynomials_equal": true,
+  "ordinary_moments_through_dimension": [
+    {
+      "power": 1,
+      "trace_minus": "0",
+      "trace_plus": "0",
+      "equal": true
+    },
+    {
+      "power": 2,
+      "trace_minus": "20",
+      "trace_plus": "20",
+      "equal": true
+    },
+    {
+      "power": 3,
+      "trace_minus": "0",
+      "trace_plus": "0",
+      "equal": true
+    },
+    {
+      "power": 4,
+      "trace_minus": "48",
+      "trace_plus": "48",
+      "equal": true
+    },
+    {
+      "power": 5,
+      "trace_minus": "0",
+      "trace_plus": "0",
+      "equal": true
+    },
+    {
+      "power": 6,
+      "trace_minus": "128",
+      "trace_plus": "128",
+      "equal": true
+    },
+    {
+      "power": 7,
+      "trace_minus": "0",
+      "trace_plus": "0",
+      "equal": true
+    },
+    {
+      "power": 8,
+      "trace_minus": "358",
+      "trace_plus": "358",
+      "equal": true
+    },
+    {
+      "power": 9,
+      "trace_minus": "0",
+      "trace_plus": "0",
+      "equal": true
+    },
+    {
+      "power": 10,
+      "trace_minus": "2065/2",
+      "trace_plus": "2065/2",
+      "equal": true
+    },
+    {
+      "power": 11,
+      "trace_minus": "0",
+      "trace_plus": "0",
+      "equal": true
+    },
+    {
+      "power": 12,
+      "trace_minus": "3045",
+      "trace_plus": "3045",
+      "equal": true
+    }
+  ],
+  "all_ordinary_moments_equal": true,
+  "graded_even_moments": [
+    {
+      "even_power": 2,
+      "supertrace_minus": "0",
+      "supertrace_plus": "0",
+      "both_zero": true
+    },
+    {
+      "even_power": 4,
+      "supertrace_minus": "0",
+      "supertrace_plus": "0",
+      "both_zero": true
+    },
+    {
+      "even_power": 6,
+      "supertrace_minus": "0",
+      "supertrace_plus": "0",
+      "both_zero": true
+    },
+    {
+      "even_power": 8,
+      "supertrace_minus": "0",
+      "supertrace_plus": "0",
+      "both_zero": true
+    },
+    {
+      "even_power": 10,
+      "supertrace_minus": "0",
+      "supertrace_plus": "0",
+      "both_zero": true
+    },
+    {
+      "even_power": 12,
+      "supertrace_minus": "0",
+      "supertrace_plus": "0",
+      "both_zero": true
+    }
+  ],
+  "all_tested_supertraces_zero": true,
+  "determinant_minus": "9/4",
+  "determinant_plus": "9/4",
+  "determinants_equal": true,
+  "cp_odd_loop_observable_minus": "W sin(theta)=0",
+  "cp_odd_loop_observable_plus": "W sin(theta)=0",
+  "ordinary_real_spectral_action_can_select_orientation": false,
+  "graded_spectral_action_can_select_orientation": false,
+  "surviving_orientation_sensitive_routes": [
+    "fermionic Pfaffian or eta-invariant phase",
+    "quantized boundary Chern-Simons or anomaly-inflow term",
+    "explicit relaxation of the real-even spectral-action class"
+  ],
+  "status": "the two noncommuting minima are exactly isospectral, so no real function Tr f(D^2), determinant magnitude or tested graded trace can select their orientation"
+}

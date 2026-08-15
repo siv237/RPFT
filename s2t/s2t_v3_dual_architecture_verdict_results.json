@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "both_dimensional_paths_tested_neither_uv_closed",
+  "base_K": {
+    "determinant_well_defined_after_scheme_choice": true,
+    "allowed_local_counterterms": [
+      "lambda2 R_K chi^2",
+      "lambda4 chi^4"
+    ],
+    "lambda2_for_arbitrary_stationary_point": "(-Fprime - 4*chi_star**3*lambda4)/(12*chi_star)",
+    "stationary_residual": "0",
+    "absolute_vacuum_predicted": false,
+    "verdict": "effective theory viable; parameter-free scale open"
+  },
+  "internal_K": {
+    "spin_branches": [
+      {
+        "rp3": 0,
+        "s1": 0
+      },
+      {
+        "rp3": 0,
+        "s1": 1
+      },
+      {
+        "rp3": 1,
+        "s1": 0
+      },
+      {
+        "rp3": 1,
+        "s1": 1
+      }
+    ],
+    "flat_characters_covered": "all unitary flat lines",
+    "R_K": 6,
+    "lichnerowicz_bound": "3/2",
+    "dirac_kernel_dimension": 0,
+    "fermion_zero_modes_reproduced": false,
+    "verdict": "flat spinorial lift closed negatively"
+  },
+  "priority": {
+    "next": "base-K spectral renormalization condition",
+    "reserve": "new nonflat internal curvature or defect lift"
+  }
+}

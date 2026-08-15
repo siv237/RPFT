@@ -1,0 +1,48 @@
+{
+  "gate": "version4_relative_krajewski_star",
+  "corner_decomposition": {
+    "rho_rho": 1,
+    "rho_Q": 2,
+    "Q_rho": 2,
+    "Q_Q": 4
+  },
+  "star_closed_bimodule_count": 8,
+  "minimality_requirements": [
+    "contains rho M rho",
+    "contains rho M Q and Q M rho",
+    "excludes Q M Q"
+  ],
+  "admissible_module_count": 1,
+  "unique_admissible_module": {
+    "corners": [
+      "Q_rho",
+      "rho_Q",
+      "rho_rho"
+    ],
+    "dimension": 5,
+    "star_closed": true,
+    "contains_anchor_self_edge": true,
+    "connects_anchor_to_complement": true,
+    "excludes_complement_internal_edge": true
+  },
+  "relative_star_support": "matrix entries with row=anchor or column=anchor",
+  "relative_star_dimension": 5,
+  "relative_star_equals_M_rho": true,
+  "projection_is_endpoint_inclusion_exclusion": true,
+  "inclusion_exclusion_error": 0.0,
+  "sector_assignments": {
+    "u": "up_type_tilde_H",
+    "nu": "up_type_tilde_H",
+    "d": "down_type_H",
+    "e": "down_type_H"
+  },
+  "distinct_family_texture_count": 2,
+  "color_lepton_multiplicity_ground_state_errors": {
+    "quark": 1.6653345369377348e-16,
+    "lepton": 0.0
+  },
+  "positive_multiplicity_changes_state": false,
+  "support_axiom_derived_conditionally": true,
+  "four_sector_map_derived": false,
+  "status": "the support module is the unique minimal relative Krajewski star, but factorized gauge labels produce only two family textures for the four Yukawa sectors"
+}

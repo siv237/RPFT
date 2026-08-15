@@ -1,0 +1,163 @@
+\chapter{Один train scale и dimensionless blind-scorecard}
+
+RG-аудит доказал неизбежность одного размерного calibration input.
+Зафиксируем его без выбора конкретной наблюдаемой:
+\begin{equation}
+ m_{\mathrm{ref}}
+ :=m_f=\chi.
+\end{equation}
+Это определение устанавливает единицу массы, но не идентифицирует finite
+fermion с мюоном, \(\tau\)-лептоном, нейтрино или новым hidden state.
+
+\section{Пререгистрированные dimensionless outputs}
+
+После одной scale-калибровки parent action даёт:
+\begin{align}
+ \frac{m_{f,1}}{m_{\mathrm{ref}}}
+ &=
+ \frac{m_{f,2}}{m_{\mathrm{ref}}}=1,
+ \\
+ \frac{m_{s,a}^2}{m_{\mathrm{ref}}^2}
+ &=4,
+ \qquad a=1,2,3,
+ \\
+ \frac{m_A^2}{m_{\mathrm{ref}}^2}
+ &=3,
+ \\
+ g^2(\mu_{\mathrm{spec}})
+ &=\frac38,
+ \\
+ b_{U(1)}
+ &=2,
+ \\
+ |\sin\phi_{\mathrm{vac}}|
+ &=1.
+\end{align}
+Дополнительно остаются две CP-сопряжённые ветви
+\(\phi_{\mathrm{vac}}=\pm\pi/2\), пока orientation-odd selector не
+построен.
+
+\begin{proposition}[One-scale mathematical prediction set]
+После одного train scale модель содержит несколько parameter-free
+dimensionless следствий: mass ratios, degeneracies, matching coupling,
+one-loop beta coefficient и максимальную CP-фазу. Они являются
+математическими outputs parent action.
+\end{proposition}
+
+\section{Что не является blind prediction}
+
+Величины
+\begin{equation}
+ \pi^2+2\pi+\frac23,
+ \qquad
+ 23+\pi^{-1}
+\end{equation}
+использовались при проектировании role-graded двухсекторного Hessian gate.
+Они проверяют внутреннюю совместимость общей метрики, но не могут
+считаться независимыми blind observables версии III.
+
+Аналогично равные edge-модули и maximal phase использовались как критерии
+выбора flattening potential. Их последующие Hessian masses являются
+новыми outputs, но сам факт выбранного vacuum не является внешним blind
+test.
+
+\section{Readout gap}
+
+Для физической проверки требуется заранее заданная карта
+\begin{equation}
+ \begin{aligned}
+ \mathcal R_{\mathrm{phys}}:\quad
+ &\{\text{finite eigenmodes, collective coordinates}\}
+ \\
+ &\longrightarrow
+ \{\text{наблюдаемые particle states и couplings}\}.
+ \end{aligned}
+\end{equation}
+Текущий parent action фиксирует left/right bimodule charges и spectrum, но
+не задаёт:
+\begin{enumerate}
+ \item соответствие двух Dirac-пар поколениям charged leptons;
+ \item соответствие трёх scalar modes Higgs, radion или hidden scalars;
+ \item физическую идентичность relative-\(U(1)\) vector;
+ \item neutrino mass operator и его связь с collective norm
+ \(23+\pi^{-1}\).
+\end{enumerate}
+Без этой карты сравнение mass ratios с экспериментом является
+post-hoc assignment.
+
+\begin{nogocriterion}[Readout-before-data rule]
+Ни один finite mode не разрешено называть конкретной известной частицей
+после просмотра его предсказанной массы. Representation, charges и
+interaction vertices должны однозначно фиксировать идентификацию до
+численного сравнения.
+\end{nogocriterion}
+
+\section{Контрольная charged-lepton идентификация}
+
+Если условно отождествить две Dirac-пары с двумя различными
+charged-lepton поколениями, модель предсказывает точное вырождение
+\begin{equation}
+ \frac{m_{\ell_2}}{m_{\ell_1}}=1.
+\end{equation}
+Известные charged-lepton поколения невырождены. Следовательно, такая
+прямая readout-карта закрывается без тонкой численной проверки.
+
+\begin{proposition}[Direct charged-lepton readout no-go]
+Минимальные две Dirac-пары не могут непосредственно представлять два
+различных наблюдаемых charged-lepton поколения. Для их использования
+нужны дополнительный family operator, radiative splitting или иная
+representation map, отсутствующая в текущей версии.
+\end{proposition}
+
+\section{Neutrino blind gate}
+
+Collective norm
+\begin{equation}
+ N_\nu=23+\pi^{-1}
+\end{equation}
+не является eigenvalue finite Dirac operator и после аудита тома II не
+имеет статуса физического neutrino denominator. Версия III пока не
+построила Majorana/Dirac neutrino mass matrix, selector поколений и
+readout для mass splittings. Поэтому neutrino sector не предоставляет
+второй независимый blind test.
+
+\begin{theorem}[Blind-scorecard verdict]
+One-scale mathematical scorecard непуст, но физический двухсекторный
+scorecard ещё не определён. Прямая charged-lepton идентификация закрывается
+из-за exact degeneracy, а neutrino readout отсутствует. Следовательно,
+Definition of Done версии III пока не пройден, несмотря на существенное
+замыкание parent action.
+\end{theorem}
+
+\section{Текущий scorecard}
+
+\begin{center}
+\begin{tabular}{p{0.30\textwidth}p{0.20\textwidth}p{0.30\textwidth}}
+\toprule
+Пункт & Статус & Причина \\
+\midrule
+один train scale & pass & \(m_{\mathrm{ref}}=\chi\) \\
+dimensionless model outputs & pass & ratios \(1,2,\sqrt3\), \(g^2=3/8\), \(b=2\) \\
+charged-lepton blind test & fail & direct map даёт exact degeneracy \\
+neutrino blind test & open & mass operator/readout отсутствует \\
+двухсекторный Definition of Done & fail & нет двух физических blind observables \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{protocol}[Следующий гейт]
+До новых численных сравнений необходимо вывести representation-level
+readout:
+\begin{enumerate}
+ \item определить, являются ли finite modes hidden states или Standard
+ Model states;
+ \item если это charged leptons, построить family-splitting operator из
+ уже объявленной симметрии;
+ \item построить neutrino mass operator, не используя прежний denominator
+ как target;
+ \item только затем заморозить два blind dimensionless observables.
+\end{enumerate}
+\end{protocol}
+
+Машинный scorecard сохранён в
+\path{s2t_v3_one_scale_blind_scorecard_results.json}.

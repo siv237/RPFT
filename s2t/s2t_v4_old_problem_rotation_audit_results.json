@@ -1,0 +1,120 @@
+{
+  "gate": "version4_old_problem_rotation_audit",
+  "orientation_filter": {
+    "1+1+1+1": {
+      "count": 1,
+      "restricted_triplet_determinants": [
+        1
+      ]
+    },
+    "2+1+1": {
+      "count": 6,
+      "restricted_triplet_determinants": [
+        -1
+      ]
+    },
+    "2+2": {
+      "count": 3,
+      "restricted_triplet_determinants": [
+        1
+      ]
+    },
+    "3+1": {
+      "count": 8,
+      "restricted_triplet_determinants": [
+        1
+      ]
+    },
+    "4": {
+      "count": 6,
+      "restricted_triplet_determinants": [
+        -1
+      ]
+    }
+  },
+  "family_defect_cross_clue": {
+    "outside_D8_full_M3_candidates": 12,
+    "continuous_SO3_compatible_candidates": 8,
+    "compatible_cycle_type": "3+1",
+    "unique_unoriented_three_cycle_axes": 4,
+    "three_cycle_axes": [
+      [
+        0.816496580927726,
+        -0.4714045207910319,
+        -0.33333333333333337
+      ],
+      [
+        0.8164965809277261,
+        0.4714045207910317,
+        0.33333333333333337
+      ],
+      [
+        1.0245806294077891e-17,
+        5.926926159122354e-17,
+        1.0
+      ],
+      [
+        2.974666417268906e-17,
+        0.9428090415820634,
+        -0.33333333333333337
+      ]
+    ],
+    "wilson_axis_alignment": [
+      {
+        "wilson_axis_index": 0,
+        "nearest_three_cycle_axis_index": 0,
+        "absolute_dot": 0.8922065503345745,
+        "misalignment_angle": 0.4685887180786715,
+        "exact_alignment": false
+      },
+      {
+        "wilson_axis_index": 1,
+        "nearest_three_cycle_axis_index": 2,
+        "absolute_dot": 0.8164965809277261,
+        "misalignment_angle": 0.6154797086703871,
+        "exact_alignment": false
+      }
+    ],
+    "wilson_angle": 2.5067553477766635,
+    "three_cycle_angle": 2.0943951023931953,
+    "angle_difference": 0.41236024538346827,
+    "verdict": "The SO(3) requirement removes transposition candidates and leaves the eight three-cycles, but neither selected Wilson axis is exactly a tetrahedral three-cycle axis and theta_star is not 2pi/3. The Wilson-defect bridge narrows the family selector but does not derive a discrete affine incidence operator."
+  },
+  "problem_ledger": [
+    {
+      "branch": "family_defect_boundary_superconnection",
+      "readiness": 4,
+      "independent_blockers_addressed": 2,
+      "known_positive": [
+        "exact-one tubular BdG kernel",
+        "rank-two SO3 core generator",
+        "twelve affine full-M3 candidates narrowed to eight three-cycles"
+      ],
+      "blocking_input": "derive root sector, condensate and family-axis holonomy from one boundary action",
+      "priority": 1
+    },
+    {
+      "branch": "full_field_carrier_comparison",
+      "readiness": 2,
+      "independent_blockers_addressed": 1,
+      "known_positive": [
+        "field multiplicity ledger",
+        "fixed-volume curvature invariant difference"
+      ],
+      "blocking_input": "parent derivation of Newton, Weyl-squared, Euler, nonminimal scalar and vector-mass data",
+      "priority": 2
+    },
+    {
+      "branch": "standalone_affine_family_selector",
+      "readiness": 2,
+      "independent_blockers_addressed": 1,
+      "known_positive": [
+        "canonical S4 triplet",
+        "full M3 exists for twelve outside-D8 incidences"
+      ],
+      "blocking_input": "no intrinsic selector, sector assignment or relative weight",
+      "priority": 3
+    }
+  ],
+  "recommended_next_gate": "construct the minimal boundary superconnection whose holonomy acts on the family triplet and the sterile root line simultaneously; test whether its equations select a three-cycle axis and a condensed charge-two vortex without target-dependent coefficients"
+}

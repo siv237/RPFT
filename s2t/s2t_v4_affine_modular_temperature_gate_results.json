@@ -1,0 +1,144 @@
+{
+  "gate": "version4_affine_modular_temperature",
+  "standardization": "Z_s=(R_s-Tr(R_s)I/3)/sqrt(Tr((R_s-Tr(R_s)I/3)^2)/3)",
+  "variational_functional": "F_s(rho)=Tr(rho Z_s)+Tr(rho log rho)",
+  "spectral_standard_deviations": {
+    "u": 8.986038553717032,
+    "d": 8.608071147991804,
+    "nu": 2.580697580112788,
+    "e": 3.689173349139344
+  },
+  "state_eigenvalues": {
+    "u": [
+      0.05748612498795617,
+      0.3427214802029357,
+      0.5997923948091083
+    ],
+    "d": [
+      0.05738840209260648,
+      0.34885757656667,
+      0.5937540213407235
+    ],
+    "nu": [
+      0.05671535989375519,
+      0.4142312828240932,
+      0.5290533572821515
+    ],
+    "e": [
+      0.05738840209260648,
+      0.34885757656667016,
+      0.5937540213407235
+    ]
+  },
+  "orientation_rows": [
+    {
+      "orientation": "kms_symmetric",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 243.28649245061447,
+      "mass_log_rms": 2.5960510663289935
+    },
+    {
+      "orientation": "left_gns",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 704.5880655068945,
+      "mass_log_rms": 2.67103451019099
+    },
+    {
+      "orientation": "right_gns",
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_ratio": 538.0182839724743,
+      "mass_log_rms": 2.821683176499069
+    }
+  ],
+  "best": {
+    "orientation": "kms_symmetric",
+    "sign_bits": [
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "messenger_ratio": 243.28649245061447,
+    "mass_log_rms": 2.5960510663289935
+  },
+  "normalized_masses": {
+    "u": [
+      0.000868489399333168,
+      0.0018084441497469277,
+      1.0
+    ],
+    "d": [
+      0.0009214347262199964,
+      0.00159191567599205,
+      1.0
+    ],
+    "e": [
+      0.000729552481735002,
+      0.0017057647053770719,
+      1.0
+    ],
+    "nu": [
+      0.0007237000650309225,
+      0.001787102156624024,
+      1.0
+    ]
+  },
+  "mass_multiplicative_errors": {
+    "u": [
+      69.35852841896828,
+      4.071078911455456
+    ],
+    "d": [
+      1.2124840193140636,
+      14.03623190891117
+    ]
+  },
+  "ckm_absolute": [
+    [
+      0.9628672063194533,
+      0.2699751482881605,
+      0.0004028664249075699
+    ],
+    [
+      0.2699750989346513,
+      0.962867288830434,
+      0.0001733653754671545
+    ],
+    [
+      0.0004346835583718544,
+      5.8370487490243335e-05,
+      0.9999999038215406
+    ]
+  ],
+  "ckm_angles": [
+    0.2699751482881605,
+    0.0001733653754671545,
+    0.0004028664249075699
+  ],
+  "ckm_angle_ratios": [
+    1.1998362218930736,
+    0.004144522483078042,
+    0.10794920281553319
+  ],
+  "jarlskog_absolute": 6.609680212009417e-10,
+  "jarlskog_ratio": 2.1184872474389155e-05,
+  "affine_invariant": true,
+  "mass_train_pass": false,
+  "ckm_blind_pass": false,
+  "verdict": "affine normalization derives the modular scale and improves hierarchy and Cabibbo mixing, but full flavour closure still fails"
+}

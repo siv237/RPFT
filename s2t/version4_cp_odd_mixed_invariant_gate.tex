@@ -1,0 +1,107 @@
+\chapter{CP-odd mixed-invariant classification}
+
+Stationary obstruction оставил единственный возможный выход внутри
+finite-geometry языка: новый orientation-odd invariant с radial--angular
+mixing. Проведём полный low-degree classification для уже построенного
+bipartite Dirac block.
+
+\section{Polynomial spectral invariants}
+
+В chiral basis
+\begin{equation}
+ D_F=\begin{pmatrix}0&M\\M^\dagger&0\end{pmatrix},
+ \qquad
+ \gamma=\begin{pmatrix}I&0\\0&-I\end{pmatrix}.
+\end{equation}
+Поэтому все odd traces равны нулю. Для even powers
+\begin{equation}
+ D_F^{2n}=\operatorname{diag}
+ \left((MM^\dagger)^n,(M^\dagger M)^n\right).
+\end{equation}
+Матрицы $MM^\dagger$ и $M^\dagger M$ изоспектральны, откуда
+\begin{equation}
+ \Tr(\gamma D_F^{2n})=0.
+\end{equation}
+Неградуированные traces вещественны и инвариантны при
+$\theta\mapsto-\theta$. Следовательно,
+\begin{equation}
+ \left.
+ \frac{\partial^2}{\partial\sigma\,\partial\theta}
+ \Tr p(D_F)
+ \right|_{(0,0)}=0
+\end{equation}
+для любого real polynomial spectral action.
+
+\begin{theorem}[Polynomial mixed-invariant no-go]
+Ни один polynomial trace invariant конечной real even spectral triple не
+создаёт CP-odd radial--orientation Hessian. Увеличение степени с quartic до
+sixth, eighth или higher moments не меняет этот вывод.
+\end{theorem}
+
+\section{Reduced Pfaffian phase}
+
+Для reduced oriented representative exact chiral determinant равен
+\begin{equation}
+ \det M(r,\theta)
+ =\frac12r^2(2r+e^{i\theta})e^{-3i\theta}.
+\end{equation}
+На локальной logarithmic branch его phase имеет вид
+\begin{equation}
+ \varphi_{\rm red}(\sigma,\theta)
+ =\Im\left[
+ 2\sigma+\log(2e^\sigma+e^{i\theta})-3i\theta-\log2
+ \right].
+\end{equation}
+В unit vacuum
+\begin{equation}
+ \partial_\theta\varphi_{\rm red}=-\frac83,
+ \qquad
+ \partial_\sigma\partial_\theta\varphi_{\rm red}=-\frac29.
+\end{equation}
+Это первый и единственный additive measure candidate с ненулевой mixed
+derivative.
+
+Однако $\varphi_{\rm red}$ зависит от orientation Grassmann basis, определена
+только modulo $2\pi$ и входит как quantum phase, а не как однозначная
+вещественная classical energy. В полном KO6 measure
+\begin{equation}
+ \operatorname{Pf}\mathcal A_{\rm full}
+ =|\operatorname{Pf}\mathcal A_{\rm red}|^2,
+\end{equation}
+поэтому phase и mixed derivative точно сокращаются.
+
+\begin{proposition}[Reality filter]
+Reduced Dirac block удовлетворяет локальным algebraic constraints, но его
+phase не переживает полный $J$-paired reality completion. Чтобы сохранить
+её, требуется дополнительная orientation determinant line или chiral bulk
+structure, отсутствующая в текущем vectorlike model.
+\end{proposition}
+
+\section{Итог классификации}
+
+Полиномиальное меню даёт нулевой mixed Hessian. Reduced Pfaffian phase даёт
+точное значение $-2/9$, но не является basis-independent global action term
+и отменяется full reality pairing.
+
+\begin{theorem}[CP-odd invariant verdict]
+Внутри текущих algebra, grading, $J$, first-order condition и vectorlike
+measure допустимого CP-odd mixed invariant не существует. Единственный
+локальный след такого invariant обнаруживается в reduced Pfaffian phase, но
+его физикализация требует нового chiral bulk/boundary sector и является
+расширением модели.
+\end{theorem}
+
+\begin{remark}
+Этот theorem классифицирует explicit CP-odd mixed terms, но не запрещает
+spontaneous CP breaking в global minimum CP-even higher spectral functional.
+Нулевой mixed Hessian является только локальным утверждением.
+\end{remark}
+
+\begin{nogocriterion}[Запрет reduced-phase insertion]
+Нельзя добавлять $\Im\log\operatorname{Pf}\mathcal A_{\rm red}$ в real
+potential вручную. Сначала должны быть предъявлены oriented determinant
+line, bulk extension, basis independence и точное правило reality quotient.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_cp_odd_mixed_invariant_gate_results.json}.

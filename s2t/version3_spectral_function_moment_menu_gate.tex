@@ -1,0 +1,180 @@
+\chapter{Меню spectral functions и moment-selector gate}
+
+Compact \(a_2/a_4\) calculation свёл scale-setting к комбинации
+\begin{equation}
+ \zeta_{\mathrm{mom}}
+ =
+ \frac{f_2}{f_0}(\Lambda R)^2,
+ \qquad
+ (\chi R)^2=\zeta_{\mathrm{mom}}-\frac12.
+\end{equation}
+Теперь проверим, фиксируют ли стандартные требования к spectral function
+отношение \(f_2/f_0\).
+
+\section{Moment convention}
+
+Пусть spectral action записан как
+\begin{equation}
+ \Tr f(\mathcal D^2/\Lambda^2),
+\end{equation}
+где \(u\ge0\) --- безразмерный аргумент. Используем
+\begin{equation}
+ f_0=f(0),
+ \qquad
+ f_2=\int_0^\infty f(u)\,du.
+\end{equation}
+Общая scalar normalization позволяет положить
+\begin{equation}
+ f_0=1
+\end{equation}
+без потери relative coefficients. Тогда relevant datum равно площади под
+профилем \(f\).
+
+\section{Пререгистрированное минимальное меню}
+
+До обращения к particle masses фиксируем четыре стандартных профиля:
+\begin{align}
+ f_{\mathrm{sharp}}(u)
+ &=\mathbf1_{[0,1]}(u),
+ \\
+ f_{\mathrm{heat}}(u)
+ &=e^{-u},
+ \\
+ f_{\mathrm{Gauss}}(u)
+ &=e^{-u^2},
+ \\
+ f_{\mathrm{heat2}}(u)
+ &=(1+u)e^{-u}.
+\end{align}
+Их moments равны
+\begin{align}
+ \frac{f_2}{f_0}\bigg|_{\mathrm{sharp}}
+ &=1,
+ &
+ \frac{f_2}{f_0}\bigg|_{\mathrm{heat}}
+ &=1,
+ \\
+ \frac{f_2}{f_0}\bigg|_{\mathrm{Gauss}}
+ &=\frac{\sqrt\pi}{2},
+ &
+ \frac{f_2}{f_0}\bigg|_{\mathrm{heat2}}
+ &=2.
+\end{align}
+
+\section{Геометрический lock \(\Lambda R=1\)}
+
+Как наиболее жёсткий no-new-scale test временно положим
+\begin{equation}
+ \Lambda R=1.
+\end{equation}
+Тогда
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Профиль & \((\chi R)^2\) & Vacuum status \\
+\midrule
+sharp & \(1/2\) & pass \\
+heat & \(1/2\) & pass \\
+Gauss & \((\sqrt\pi-1)/2\) & pass \\
+heat2 & \(3/2\) & pass \\
+\bottomrule
+\end{tabular}
+\end{center}
+Все четыре естественные ветви дают nonzero vacuum, но три различных
+значения \(\chi R\). Positivity, normalization и rapid decay не выбирают
+единственную ветвь.
+
+\begin{proposition}[Spectral-menu nonuniqueness]
+Даже после геометрической фиксации \(\Lambda R=1\) стандартное
+неотрицательное spectral-function menu не предсказывает уникальный
+\(\chi R\). Совпадение sharp и heat profiles является частным равенством
+их первых moments, а не общим selector theorem.
+\end{proposition}
+
+\section{Непрерывная profile--cutoff degeneracy}
+
+Рассмотрим уже внутри heat-класса семейство
+\begin{equation}
+ f_a(u)=e^{-au},
+ \qquad a>0.
+\end{equation}
+Оно удовлетворяет
+\begin{equation}
+ f_a(0)=1,
+ \qquad
+ \frac{f_2}{f_0}=\frac1a.
+\end{equation}
+Тогда
+\begin{equation}
+ \zeta_{\mathrm{mom}}
+ =\frac{(\Lambda R)^2}{a}.
+\end{equation}
+Замена
+\begin{equation}
+ a\longmapsto s^2a,
+ \qquad
+ \Lambda R\longmapsto s\Lambda R
+\end{equation}
+оставляет \(\zeta_{\mathrm{mom}}\) неизменной. Следовательно, width
+spectral profile и cutoff normalization не являются двумя физически
+различимыми данными: они образуют одну непрерывную orbit.
+
+\begin{theorem}[Moment--cutoff orbit no-go]
+Условия \(f(0)=1\), \(f\ge0\), smoothness и rapid decay не фиксируют
+\(f_2/f_0\). Более того, rescaling аргумента spectral function точно
+компенсируется rescaling \(\Lambda\). Parent action видит только
+\(\zeta_{\mathrm{mom}}\), которая остаётся одной непрерывной
+scale-setting комбинацией.
+\end{theorem}
+
+\section{Vacuum thresholds}
+
+Для profile с moment ratio \(\rho_f=f_2/f_0\) nonzero vacuum требует
+\begin{equation}
+ \Lambda R>\frac1{\sqrt{2\rho_f}}.
+\end{equation}
+Для меню:
+\begin{align}
+ \Lambda R&>\frac1{\sqrt2}
+ &&\text{sharp/heat},
+ \\
+ \Lambda R&>\pi^{-1/4}
+ &&\text{Gauss},
+ \\
+ \Lambda R&>\frac12
+ &&\text{heat2}.
+\end{align}
+Эти inequalities являются genuine consistency predictions, но не
+выбирают actual vacuum scale.
+
+\section{Вердикт}
+
+\begin{theorem}[Spectral-function selector no-go]
+Минимальное естественное menu и непрерывный heat-profile class не выделяют
+единственный spectral moment. Compact \(a_2/a_4\) relation остаётся
+сильной boundary formula, но не превращается в absolute-scale prediction
+без одной calibration величины \(\zeta_{\mathrm{mom}}\).
+\end{theorem}
+
+После задания одного train scale формула
+\begin{equation}
+ \zeta_{\mathrm{mom}}
+ =(\chi R)^2+\frac12
+\end{equation}
+определяет требуемый spectral moment-cutoff invariant. Это корректная
+реконструкция model parameter из train input, а не blind prediction.
+
+\begin{protocol}[Следующий этап]
+Scale-setting search в минимальном spectral-function class исчерпан.
+Следует заморозить:
+\begin{enumerate}
+ \item один train scale, определяющий \(\zeta_{\mathrm{mom}}\);
+ \item один representative spectral profile внутри rescaling orbit;
+ \item dimensionless blind outputs, не использованные при выборе
+ \(\zeta_{\mathrm{mom}}\).
+\end{enumerate}
+Дальнейший приоритет возвращается к physical representation/readout gate.
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_spectral_function_moment_menu_results.json}.

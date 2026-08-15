@@ -1,0 +1,192 @@
+\chapter{Negative-space audit: забытые bundle-классы и непроверенный full-field carrier action}
+
+Предыдущий corpus audit искал сохранившиеся положительные механизмы. Здесь
+ставится другой вопрос: какие отрицательные вердикты были доказаны только в
+узком классе и какие варианты, прямо упомянутые в ранних файлах, не получили
+самостоятельного gate.
+
+\section{Область действия прежних no-go результатов}
+
+Сводная проверка показывает четыре важных ограничения:
+\begin{enumerate}
+ \item product-density no-go относится к прямым metric products;
+ \item \(S^4\)-carrier ordering получен для положительного scalar heat
+ state, а не для полного quantum field content;
+ \item parity-even spectral-action no-go для CP не исключает новый chiral
+ measure, но такой measure отсутствует в текущем parent action;
+ \item конкретный \(Q_{\rm cycle}\)-vertex провален, однако общий
+ single-vertex no-go в корпусе прямо помечен как недоказанный.
+\end{enumerate}
+Следовательно, фраза ``все варианты закрыты'' была бы переобобщением.
+
+\section{Забытое нетривиальное circle bundle}
+
+Файл
+\path{RPFT-main/ai-promts/First-principles-00-variational.md} требует
+сравнить два класса, поскольку
+\begin{equation}
+ H^2(\mathbb{RP}^3;\mathbb Z)\cong\mathbb Z_2.
+\end{equation}
+Тривиальный класс есть \(\mathbb{RP}^3\times S^1\). Homogeneous модель
+нетривиального класса можно записать как
+\begin{equation}
+ P=\frac{S^3\times S^1}
+ {(x,\theta)\sim(-x,\theta+\pi)}
+ \simeq U(2).
+ \label{eq:nontrivial-circle-bundle-u2}
+\end{equation}
+Это уже не независимый quotient базы и круга: deck transformation действует
+диагонально.
+
+Для scalar product eigenmodes
+\begin{equation}
+ Y_{\ell}(x)e^{im\theta}
+\end{equation}
+инвариантность даёт exact selection rule
+\begin{equation}
+ \boxed{\ell+m\equiv0\pmod2}.
+ \label{eq:bundle-parity-momentum-lock}
+\end{equation}
+В trivial product остаются \(\ell\) even и все \(m\). Таким образом,
+нетривиальное bundle действительно реализует забытый механизм:
+projective parity и KK momentum больше нельзя назначать независимо.
+
+При \(r_3=R_3/\sigma\), \(r_1=R_1/\sigma\) обе ветви имеют volume
+\begin{equation}
+ \frac{V}{\sigma^4}=2\pi^3r_3^3r_1.
+\end{equation}
+Их scalar correlation-cell densities равны
+\begin{equation}
+ \mathfrak f=-\frac{\log Z}{2\pi^3r_3^3r_1}.
+\end{equation}
+
+Искусственное equal-scale сечение имеет minima
+\begin{align}
+ r_*^{\rm product}&=0.674445979995\ldots,
+ &\mathfrak f_*^{\rm product}&=-0.015642033532\ldots,\\
+ r_*^{\rm bundle}&=1.274750182701\ldots,
+ &\mathfrak f_*^{\rm bundle}&=-0.004035864428\ldots.
+\end{align}
+Но освобождение shape modulus закрывает обе ветви. При
+\(r_3\to0\) и фиксированном \(r_1\)
+\begin{align}
+ \log Z_{\rm product}&\longrightarrow
+ \log\sum_{m\in\mathbb Z}e^{-m^2/r_1^2}>0,\\
+ \log Z_{\rm bundle}&\longrightarrow
+ \log\sum_{n\in\mathbb Z}e^{-(2n)^2/r_1^2}>0.
+\end{align}
+Поэтому
+\begin{equation}
+ \mathfrak f_{\rm product},\mathfrak f_{\rm bundle}
+ \longrightarrow-\infty.
+\end{equation}
+
+\begin{theorem}[Forgotten-bundle verdict]
+Нетривиальное homogeneous \(S^1\)-расслоение является реальным пропущенным
+carrier и выводит parity--momentum locking. Однако scalar correlation
+density не имеет finite joint minimum и коллапсирует при сжатии базы.
+Следовательно, эта ветвь закрыта как самостоятельный scalar carrier, но её
+selection rule сохраняется как возможный ingredient будущего full-field
+action.
+\end{theorem}
+
+\section{Что прежнее закрытие bundle не проверяло}
+
+В S2T--II нетривиальное расслоение ранее закрывалось как rescue для C6 и
+discrete selector: total space имеет continuous Wilson modulus и не даёт
+нужного isolated coefficient. Это не было вычислением его normalized
+carrier free energy. Настоящий gate заполняет именно этот пробел и получает
+независимый отрицательный результат.
+
+Allowed warped metrics остаются формально непросмотренными, но это пока не
+конкретная теория. Произвольная warp function создаёт бесконечномерное
+пространство коэффициентов. Без parent-derived cross term её оптимизация
+эквивалентна введению нового функционального входа.
+
+\begin{nogocriterion}[Запрет спасения словом ``warped'']
+Warped или non-product geometry считается новым кандидатом только после
+объявления action, symmetry, boundary conditions и finite parameter class.
+Само снятие product ansatz не является механизмом стабилизации.
+\end{nogocriterion}
+
+\section{Главный действительно пропущенный gate}
+
+Все последние \(S^4\) comparisons использовали scalar Gaussian operator.
+Но минимальный parent ledger Тома IV содержит:
+\begin{enumerate}
+ \item три физических scalar operators;
+ \item massive vector и полный gauge--ghost complex;
+ \item две Dirac pairs;
+ \item curvature endomorphisms, zero modes и determinant phases.
+\end{enumerate}
+Flat-limit supertrace coefficient \(67\) проверяет multiplicities, но не
+определяет finite curved-space ordering.
+
+Полный объект имеет schematically вид
+\begin{equation}
+ \Gamma_{\rm fluc}[M]
+ =\frac12\sum_b n_b\log\det\mathcal L_b[M]
+ -\frac12\sum_f n_f\log\det\mathcal D_f^2[M]
+ +\Gamma_{\rm ghost}[M].
+ \label{eq:full-field-carrier-fluctuation}
+\end{equation}
+Это signed determinant ledger, а не positive density state. Поэтому нельзя
+просто заменить scalar multiplicity на supertrace внутри прежней entropy
+формулы: отрицательные fermionic weights разрушили бы positivity \(\rho\).
+
+Кроме того, \(S^4\) и \(S^2\times S^2\) имеют разные local curvature
+invariants и topology. Их divergent/local determinant pieces не обязаны
+сокращаться в разности. До carrier comparison необходимо одной схемой
+фиксировать cosmological, Einstein и quadratic-curvature counterterms.
+
+\begin{proposition}[Настоящий незакрытый вариант]
+Полный renormalized gauge--ghost--scalar--Dirac fluctuation action на
+\(S^4\) и \(S^2\times S^2\) в корпусе не вычислен. Поэтому scalar
+correlation ordering не является full-field vacuum theorem. Это не лазейка
+в уже доказанном no-go, а отсутствующий следующий член TOE~6.5 functional.
+\end{proposition}
+
+\section{Другие найденные, но менее сильные пропуски}
+
+Общий single-vertex no-go действительно не доказан. Для его проверки нужно
+заранее ограничить finite algebra volume/winding vertices и exhaustive
+readout class. Этот путь может локально восстановить charged-lepton seed,
+но сам по себе не решает carrier, scale и CP gates, поэтому имеет второй
+приоритет.
+
+Старый quark/Skyrmion файл предлагает полноценную lattice minimization, но
+его action coefficients и связь с общим parent functional постулированы.
+Вычисление было бы тестом отдельной phenomenological soliton model, а не
+пропущенным замыканием текущей теории.
+
+Hopf-fibration, Leech-lattice, blackbody и string analogies в архиве
+переиспользуют уже известные числа или требуют новую категорию полей. После
+deduplication они не дают независимого механизма measure.
+
+\section{Новая очерёдность}
+
+Negative-space audit задаёт следующий порядок:
+\begin{enumerate}
+ \item вычислить \(\Gamma_{\rm fluc}^{\rm ren}\) из
+ \eqref{eq:full-field-carrier-fluctuation} на fixed-volume
+ \(S^4\) и \(S^2\times S^2\) в одной preregistered scheme;
+ \item вставить эту величину в joint state--carrier functional TOE~6.5 и
+ проверить полный Hessian;
+ \item возвращаться к warped/bundle geometries только если cross term
+ возникает из того же determinant, а не добавляется вручную;
+ \item отдельно exhaust finite single-vertex algebra, не смешивая этот
+ локальный вопрос с carrier selection.
+\end{enumerate}
+
+\begin{theorem}[Negative-space final verdict]
+Во всём массиве найдены не только повторения. Один забытый вариант ---
+нетривиальное \(S^1\)-расслоение --- теперь проверен и закрыт как scalar
+vacuum, сохранив exact parity--momentum rule. Главный непроверенный вариант
+--- полный renormalized field fluctuation determinant на competing
+carriers. Именно он, а не очередное численное совпадение, является следующим
+содержательным расчётом программы.
+\end{theorem}
+
+Машинный аудит сохранён в
+\path{s2t_v4_negative_space_bundle_fluctuation_gate.py} и
+\path{s2t_v4_negative_space_bundle_fluctuation_gate_results.json}.

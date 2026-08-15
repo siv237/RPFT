@@ -1,0 +1,819 @@
+{
+  "gate": "version4_three_moment_oriented_messenger",
+  "moment_powers": [
+    4,
+    6,
+    8
+  ],
+  "moment_gram": [
+    [
+      1.0,
+      0.9866989613235284,
+      0.9758389037212329
+    ],
+    [
+      0.9866989613235284,
+      1.0,
+      0.9982638357933448
+    ],
+    [
+      0.9758389037212329,
+      0.9982638357933448,
+      1.0
+    ]
+  ],
+  "sector_gram_matrices": {
+    "u": [
+      [
+        1.0000000000000002,
+        0.9854755068625073,
+        0.9740249277658716
+      ],
+      [
+        0.9854755068625073,
+        1.0,
+        0.9982825625617534
+      ],
+      [
+        0.9740249277658716,
+        0.9982825625617534,
+        1.0
+      ]
+    ],
+    "d": [
+      [
+        0.9999999999999999,
+        0.9859953591987903,
+        0.9749391433752806
+      ],
+      [
+        0.9859953591987903,
+        1.0,
+        0.9983216328361334
+      ],
+      [
+        0.9749391433752806,
+        0.9983216328361334,
+        1.0
+      ]
+    ],
+    "nu": [
+      [
+        1.0,
+        0.9893296200340251,
+        0.9794524003684986
+      ],
+      [
+        0.9893296200340251,
+        1.0,
+        0.9981295149393586
+      ],
+      [
+        0.9794524003684986,
+        0.9981295149393586,
+        1.0
+      ]
+    ],
+    "e": [
+      [
+        1.0000000000000002,
+        0.9859953591987907,
+        0.9749391433752809
+      ],
+      [
+        0.9859953591987907,
+        1.0000000000000002,
+        0.9983216328361335
+      ],
+      [
+        0.9749391433752809,
+        0.9983216328361335,
+        1.0
+      ]
+    ]
+  },
+  "gram_eigenvalues": [
+    0.00010359029691748213,
+    0.0260002853025523,
+    2.9738961244005306
+  ],
+  "gram_eigenvectors": [
+    [
+      0.205813604437271,
+      -0.7917471680092973,
+      -0.5751323171043308
+    ],
+    [
+      -0.7856193613954248,
+      0.21673760951067889,
+      -0.5795058477912379
+    ],
+    [
+      0.5834749173950697,
+      0.5711052710077666,
+      -0.5774043558875898
+    ]
+  ],
+  "gram_rank": 3,
+  "gram_condition_number": 28708.249835112205,
+  "spectral_masses": [
+    1.0,
+    15.842711652033302,
+    169.43509032993197
+  ],
+  "branch_rows": [
+    {
+      "channel_masses": [
+        15.842711652033302,
+        1.0,
+        169.43509032993197
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": -1,
+      "sign_bits": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 111.64076086344865,
+      "mass_log_rms": 2.1041216125538074
+    },
+    {
+      "channel_masses": [
+        15.842711652033302,
+        1.0,
+        169.43509032993197
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": 1,
+      "sign_bits": [
+        -1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 111.64076086344865,
+      "mass_log_rms": 2.1041216125538074
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        1.0,
+        15.842711652033302
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": -1,
+      "sign_bits": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 113.08047493122184,
+      "mass_log_rms": 2.1051306152674463
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        1.0,
+        15.842711652033302
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": 1,
+      "sign_bits": [
+        -1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 113.08047493122184,
+      "mass_log_rms": 2.1051306152674463
+    },
+    {
+      "channel_masses": [
+        15.842711652033302,
+        1.0,
+        169.43509032993197
+      ],
+      "placement": "right_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 247.04290220941238,
+      "mass_log_rms": 2.276273366706637
+    },
+    {
+      "channel_masses": [
+        15.842711652033302,
+        1.0,
+        169.43509032993197
+      ],
+      "placement": "right_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        -1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 247.04290220941238,
+      "mass_log_rms": 2.276273366706637
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        1.0,
+        15.842711652033302
+      ],
+      "placement": "right_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 251.2900958391283,
+      "mass_log_rms": 2.2799749813286465
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        1.0,
+        15.842711652033302
+      ],
+      "placement": "right_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        -1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 251.2900958391283,
+      "mass_log_rms": 2.2799749813286465
+    },
+    {
+      "channel_masses": [
+        15.842711652033302,
+        169.43509032993197,
+        1.0
+      ],
+      "placement": "left_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 446.4203485157653,
+      "mass_log_rms": 2.527018117724947
+    },
+    {
+      "channel_masses": [
+        15.842711652033302,
+        169.43509032993197,
+        1.0
+      ],
+      "placement": "left_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 446.4203485157653,
+      "mass_log_rms": 2.527018117724947
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        15.842711652033302,
+        1.0
+      ],
+      "placement": "left_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 446.4743487866237,
+      "mass_log_rms": 2.5270655487278435
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        15.842711652033302,
+        1.0
+      ],
+      "placement": "left_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 446.4743487866237,
+      "mass_log_rms": 2.5270655487278435
+    },
+    {
+      "channel_masses": [
+        1.0,
+        169.43509032993197,
+        15.842711652033302
+      ],
+      "placement": "right_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "messenger_scale": 243.054634451465,
+      "mass_log_rms": 2.540130012222267
+    },
+    {
+      "channel_masses": [
+        1.0,
+        169.43509032993197,
+        15.842711652033302
+      ],
+      "placement": "right_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "messenger_scale": 243.054634451465,
+      "mass_log_rms": 2.540130012222267
+    },
+    {
+      "channel_masses": [
+        1.0,
+        15.842711652033302,
+        169.43509032993197
+      ],
+      "placement": "right_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "messenger_scale": 241.70232859461507,
+      "mass_log_rms": 2.571525593504018
+    },
+    {
+      "channel_masses": [
+        1.0,
+        15.842711652033302,
+        169.43509032993197
+      ],
+      "placement": "right_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "messenger_scale": 241.70232859461507,
+      "mass_log_rms": 2.571525593504018
+    },
+    {
+      "channel_masses": [
+        15.842711652033302,
+        169.43509032993197,
+        1.0
+      ],
+      "placement": "right_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 386.66540405052723,
+      "mass_log_rms": 2.624424412949826
+    },
+    {
+      "channel_masses": [
+        15.842711652033302,
+        169.43509032993197,
+        1.0
+      ],
+      "placement": "right_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 386.66540405052723,
+      "mass_log_rms": 2.624424412949826
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        15.842711652033302,
+        1.0
+      ],
+      "placement": "right_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "messenger_scale": 388.32215185487826,
+      "mass_log_rms": 2.638667534464751
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        15.842711652033302,
+        1.0
+      ],
+      "placement": "right_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 388.32215185487826,
+      "mass_log_rms": 2.638667534464751
+    },
+    {
+      "channel_masses": [
+        1.0,
+        169.43509032993197,
+        15.842711652033302
+      ],
+      "placement": "left_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 381.41283506600456,
+      "mass_log_rms": 2.6605185751032256
+    },
+    {
+      "channel_masses": [
+        1.0,
+        169.43509032993197,
+        15.842711652033302
+      ],
+      "placement": "left_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 381.41283506600456,
+      "mass_log_rms": 2.6605185751032256
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        1.0,
+        15.842711652033302
+      ],
+      "placement": "left_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 381.47818888824173,
+      "mass_log_rms": 2.6605825297309953
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        1.0,
+        15.842711652033302
+      ],
+      "placement": "left_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 381.47818888824173,
+      "mass_log_rms": 2.6605825297309953
+    },
+    {
+      "channel_masses": [
+        1.0,
+        15.842711652033302,
+        169.43509032993197
+      ],
+      "placement": "left_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 377.0642549811648,
+      "mass_log_rms": 2.670046803205277
+    },
+    {
+      "channel_masses": [
+        1.0,
+        15.842711652033302,
+        169.43509032993197
+      ],
+      "placement": "left_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 377.0642549811648,
+      "mass_log_rms": 2.670046803205277
+    },
+    {
+      "channel_masses": [
+        15.842711652033302,
+        1.0,
+        169.43509032993197
+      ],
+      "placement": "left_gns",
+      "orientation_sign": -1,
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 377.06979215753864,
+      "mass_log_rms": 2.670052599689283
+    },
+    {
+      "channel_masses": [
+        15.842711652033302,
+        1.0,
+        169.43509032993197
+      ],
+      "placement": "left_gns",
+      "orientation_sign": 1,
+      "sign_bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 377.06979215753864,
+      "mass_log_rms": 2.670052599689283
+    },
+    {
+      "channel_masses": [
+        1.0,
+        169.43509032993197,
+        15.842711652033302
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": -1,
+      "sign_bits": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "messenger_scale": 108.14353563180025,
+      "mass_log_rms": 2.742903643769062
+    },
+    {
+      "channel_masses": [
+        1.0,
+        169.43509032993197,
+        15.842711652033302
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": 1,
+      "sign_bits": [
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "messenger_scale": 108.14353563180025,
+      "mass_log_rms": 2.742903643769062
+    },
+    {
+      "channel_masses": [
+        1.0,
+        15.842711652033302,
+        169.43509032993197
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": -1,
+      "sign_bits": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "messenger_scale": 108.47017741839373,
+      "mass_log_rms": 2.7634551564260494
+    },
+    {
+      "channel_masses": [
+        1.0,
+        15.842711652033302,
+        169.43509032993197
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": 1,
+      "sign_bits": [
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "messenger_scale": 108.47017741839373,
+      "mass_log_rms": 2.7634551564260494
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        15.842711652033302,
+        1.0
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": -1,
+      "sign_bits": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 165.14999297167373,
+      "mass_log_rms": 2.8110236100037382
+    },
+    {
+      "channel_masses": [
+        169.43509032993197,
+        15.842711652033302,
+        1.0
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": 1,
+      "sign_bits": [
+        -1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 165.14999297167373,
+      "mass_log_rms": 2.8110236100037382
+    },
+    {
+      "channel_masses": [
+        15.842711652033302,
+        169.43509032993197,
+        1.0
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": -1,
+      "sign_bits": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "messenger_scale": 164.34423953923405,
+      "mass_log_rms": 2.816486391461125
+    },
+    {
+      "channel_masses": [
+        15.842711652033302,
+        169.43509032993197,
+        1.0
+      ],
+      "placement": "kms_symmetric",
+      "orientation_sign": 1,
+      "sign_bits": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "messenger_scale": 164.34423953923405,
+      "mass_log_rms": 2.816486391461125
+    }
+  ],
+  "best": {
+    "channel_masses": [
+      15.842711652033302,
+      1.0,
+      169.43509032993197
+    ],
+    "placement": "kms_symmetric",
+    "orientation_sign": -1,
+    "sign_bits": [
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "messenger_scale": 111.64076086344865,
+    "mass_log_rms": 2.1041216125538074
+  },
+  "normalized_masses": {
+    "u": [
+      0.0003705524082717692,
+      0.0027940376695394127,
+      1.0
+    ],
+    "d": [
+      0.000990569967511052,
+      0.002244749246865756,
+      1.0
+    ],
+    "e": [
+      0.001249458901106853,
+      0.0017994320112750893,
+      1.0
+    ],
+    "nu": [
+      0.00037916514786859914,
+      0.0022108843857780555,
+      1.0
+    ]
+  },
+  "mass_multiplicative_errors": {
+    "u": [
+      29.592727049481567,
+      2.6350105873101426
+    ],
+    "d": [
+      1.1278606428882167,
+      9.954117431536792
+    ]
+  },
+  "ckm_absolute": [
+    [
+      0.926704692209898,
+      0.375790234684269,
+      0.0003360834714742506
+    ],
+    [
+      0.37579034125435273,
+      0.9267046451791248,
+      0.00034644389166468424
+    ],
+    [
+      0.00018126250312778616,
+      0.0004473470407075214,
+      0.9999998835122583
+    ]
+  ],
+  "ckm_angles": [
+    0.375790234684269,
+    0.00034644389166468424,
+    0.0003360834714742506
+  ],
+  "ckm_angle_ratios": [
+    1.6701045939481312,
+    0.008282187226026399,
+    0.09005452075944549
+  ],
+  "jarlskog": 1.9625691241413612e-10,
+  "absolute_jarlskog_ratio": 6.290285654299235e-06,
+  "mass_train_pass": false,
+  "cabibbo_blind_pass": false,
+  "full_ckm_blind_pass": false
+}

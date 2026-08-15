@@ -1,0 +1,52 @@
+{
+  "date": "2026-08-14",
+  "random_seed": 20260814,
+  "ordinary_two_forms": {
+    "tests": 200,
+    "maximum_even_grading_error": 0.0,
+    "maximum_wedge_odd_grading_error": 0.0,
+    "maximum_frobenius_overlap_with_odd_wedge_block": 0.0,
+    "junk_quotient_parity_statement": "degree-two junk is a subspace of the even represented two-forms, so quotienting cannot create the odd Majorana wedge block"
+  },
+  "physical_seed_A2": {
+    "tests": 200,
+    "observed_crossed_reshuffle_ranks": [
+      1
+    ],
+    "maximum_second_to_first_crossed_singular_ratio": 6.601257916254634e-16,
+    "interpretation": "the physical Standard-Model seed produces only the crossed rank-one orbit"
+  },
+  "generic_SM_kernel_seed_A2": {
+    "tests": 800,
+    "seed_real_dimension": 16,
+    "quadratic_majorana_real_span_rank": 72,
+    "full_complex_symmetric_channel_real_dimension": 72,
+    "smallest_retained_singular_value": 53.43076019662275,
+    "largest_discarded_singular_value": 1.6125825815015566e-13,
+    "retained_to_discarded_singular_gap": 331336582755784.75,
+    "maximum_symmetry_error": 9.339419194131705e-14,
+    "observed_ordinary_matrix_ranks": [
+      8
+    ],
+    "observed_crossed_reshuffle_ranks": [
+      2
+    ],
+    "relative_projection_errors": {
+      "direct": 1.661587841840077e-15,
+      "wedge": 1.5020397679273846e-15
+    },
+    "interpretation": "the generic allowed seed spans the entire symmetric Majorana channel; direct and wedge targets are available only together with all competitors"
+  },
+  "verdict": {
+    "ordinary_two_form_wedge_block_pass": false,
+    "physical_seed_direct_path_pass": false,
+    "generic_seed_predictive_selector_pass": false,
+    "trilemma": [
+      "ordinary two-forms have the wrong grading parity for the wedge Majorana block",
+      "the physical seed gives only the crossed rank-one path",
+      "the generic allowed seed spans all 72 real symmetric Majorana directions"
+    ],
+    "not_excluded": "an even gauge-singlet curvature functional may still encode the determinant after the full degree-two junk quotient",
+    "next_gate": "compute only the even singlet sector of the represented two-form quotient; if it cannot distinguish rank, test a valid vectorlike fundamental-module extension"
+  }
+}

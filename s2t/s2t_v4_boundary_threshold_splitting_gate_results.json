@@ -1,0 +1,88 @@
+{
+  "gate": "version4_boundary_threshold_splitting",
+  "mass_ansatz": "log(M_a/M0)=eta*q_a or eta*q_a^2",
+  "linear_generator_directions": {
+    "Y": {
+      "12": "0",
+      "13": "0"
+    },
+    "B-L": {
+      "12": "0",
+      "13": "0"
+    },
+    "T3R": {
+      "12": "0",
+      "13": "0"
+    }
+  },
+  "all_linear_directions_vanish": true,
+  "linear_cancellation_origin": "mixed gauge-gauge-generator anomaly cancellation in a complete SO10 spinor",
+  "quadratic_generator_solutions": {
+    "Y": {
+      "1": {
+        "copies": 1,
+        "direction_S12": "32/27",
+        "direction_S13": "1",
+        "log_mu_over_MZ": 32.511993901091635,
+        "unification_scale_GeV": 1.2014766429666544e+16,
+        "fitted_eta": 43.28714887339036,
+        "minimum_mass_spread": 6.300425680810938e+18
+      },
+      "2": {
+        "copies": 2,
+        "direction_S12": "64/27",
+        "direction_S13": "2",
+        "log_mu_over_MZ": 32.511993901091635,
+        "unification_scale_GeV": 1.2014766429666544e+16,
+        "fitted_eta": 21.64357443669518,
+        "minimum_mass_spread": 2510064875.817145
+      }
+    },
+    "B-L": {
+      "1": {
+        "copies": 1,
+        "direction_S12": "64/135",
+        "direction_S13": "16/15",
+        "log_mu_over_MZ": 18.77004187779312,
+        "unification_scale_GeV": 12931872024.364498,
+        "fitted_eta": -102.42048617364682,
+        "minimum_mass_spread": 3.454278223515034e+39
+      },
+      "2": {
+        "copies": 2,
+        "direction_S12": "128/135",
+        "direction_S13": "32/15",
+        "log_mu_over_MZ": 18.77004187779312,
+        "unification_scale_GeV": 12931872024.364498,
+        "fitted_eta": -51.21024308682341,
+        "minimum_mass_spread": 5.877310799604725e+19
+      }
+    },
+    "T3R": {
+      "1": {
+        "copies": 1,
+        "direction_S12": "8/15",
+        "direction_S13": "1/5",
+        "log_mu_over_MZ": 29.640541239506874,
+        "unification_scale_GeV": 680235489632429.4,
+        "fitted_eta": 57.07012164899723,
+        "minimum_mass_spread": 1571483.1489422817
+      },
+      "2": {
+        "copies": 2,
+        "direction_S12": "16/15",
+        "direction_S13": "2/5",
+        "log_mu_over_MZ": 29.640541239506874,
+        "unification_scale_GeV": 680235489632429.4,
+        "fitted_eta": 28.535060824498615,
+        "minimum_mass_spread": 1253.5881097642405
+      }
+    }
+  },
+  "two_pair_mass_spreads": {
+    "Y": 2510064875.817145,
+    "B-L": 5.877310799604725e+19,
+    "T3R": 1253.5881097642405
+  },
+  "status": "linear single-generator splitting is invisible to one-loop coupling differences; quadratic repair is fitted and requires large component hierarchies"
+}

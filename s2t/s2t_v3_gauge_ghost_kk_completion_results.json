@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "gauge_ghost_nonnegative_kk_completion_underspecified",
+  "ledger": {
+    "finite_numerator": 40,
+    "gauge_ghost_numerator": "3*c_A**2",
+    "dilaton_numerator": "c_sigma**2",
+    "kk_numerator": "delta_kk",
+    "full_numerator": "3*c_A**2 + c_sigma**2 + delta_kk + 40",
+    "B_full": "(3*c_A**2 + c_sigma**2 + delta_kk + 40)/(64*pi**2)"
+  },
+  "derived": {
+    "finite_seed_positive": true,
+    "massive_unitary_vector_weight": 3,
+    "gauge_ghost_contribution_nonnegative": true,
+    "gauge_mass_ratio_derived": false,
+    "kk_finite_part_derived": false
+  },
+  "sign_audit": {
+    "zero_correction_branch": "5/(8*pi**2)",
+    "negative_unspecified_kk_example": "-1/(64*pi**2)",
+    "sign_fixed_by_current_axioms": false
+  },
+  "missing_specification": [
+    "physical gauge quotient",
+    "canonical gauge coupling",
+    "BV/BRST complex",
+    "field-specific KK Hessians",
+    "spin and flat-bundle branches",
+    "common finite-part prescription"
+  ],
+  "verdict": {
+    "full_B_computed": false,
+    "finite_parent_block_retained": true,
+    "next_gate": "full fluctuated product Dirac and BV complex"
+  }
+}

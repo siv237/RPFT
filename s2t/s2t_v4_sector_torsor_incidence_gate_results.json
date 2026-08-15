@@ -1,0 +1,121 @@
+{
+  "gate": "version4_sector_torsor_incidence",
+  "sector_torsor": {
+    "e": [
+      0,
+      0
+    ],
+    "nu": [
+      0,
+      1
+    ],
+    "d": [
+      1,
+      0
+    ],
+    "u": [
+      1,
+      1
+    ]
+  },
+  "selected_transposition_edges": [
+    {
+      "lepton_sector": "nu",
+      "quark_sector": "d",
+      "permutation": [
+        0,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "lepton_sector": "nu",
+      "quark_sector": "u",
+      "permutation": [
+        0,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "lepton_sector": "e",
+      "quark_sector": "d",
+      "permutation": [
+        2,
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "lepton_sector": "e",
+      "quark_sector": "u",
+      "permutation": [
+        3,
+        1,
+        2,
+        0
+      ]
+    }
+  ],
+  "selected_graph_is_K22": true,
+  "incidence_sign_menu_size": 16,
+  "degree_normalization": "1/2",
+  "train_data": "four light quark mass ratios",
+  "blind_data": "CKM angles and Jarlskog invariant",
+  "selected_sign_bits": [
+    -1,
+    -1,
+    1,
+    1
+  ],
+  "trained_ratio": 19.94468098045863,
+  "mass_log_rms": 1.9552110144090702,
+  "mass_predictions": [
+    1.47981869428289e-05,
+    0.18697141956472102,
+    0.0005673553969134207,
+    0.17951946404437688
+  ],
+  "mass_multiplicative_errors": [
+    1.1817996516842524,
+    25.3957243109562,
+    1.9691799645527392,
+    8.034168733463545
+  ],
+  "maximum_mass_multiplicative_error": 25.3957243109562,
+  "quark_absolute_mixing": [
+    [
+      0.960676579235,
+      0.255208995305,
+      0.109402371206
+    ],
+    [
+      0.257725250137,
+      0.676393284316,
+      0.689978130359
+    ],
+    [
+      0.103335403187,
+      0.690912797427,
+      0.715514710401
+    ]
+  ],
+  "quark_angles": [
+    0.25675012616242227,
+    0.6941447021007178,
+    0.10940237120636867
+  ],
+  "quark_angle_ratios": [
+    1.1410609580126319,
+    16.594422713380773,
+    29.314676100313147
+  ],
+  "quark_jarlskog": 0.0018216370417370028,
+  "absolute_jarlskog_ratio": 58.38580261977573,
+  "mass_train_pass": false,
+  "ckm_blind_pass": false,
+  "status": "the four transposition minima form a canonical sector K2,2, but every mass-trained oriented-incidence branch fails hierarchy and the selected branch predicts order-one CKM mixing"
+}

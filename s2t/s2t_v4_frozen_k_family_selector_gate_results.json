@@ -1,0 +1,69 @@
+{
+  "gate": "version4_frozen_k_family_selector",
+  "space": "RP3 x S1",
+  "cellular_boundaries_rp3": {
+    "d1": [
+      [
+        0
+      ]
+    ],
+    "d2": [
+      [
+        2
+      ]
+    ],
+    "d3": [
+      [
+        0
+      ]
+    ]
+  },
+  "product_chain_ranks": {
+    "C0": 1,
+    "C1": 2,
+    "C2": 2,
+    "C3": 2,
+    "C4": 1
+  },
+  "product_boundary_smith_diagonals": {
+    "d1": [],
+    "d2": [
+      2
+    ],
+    "d3": [
+      2
+    ],
+    "d4": []
+  },
+  "homology": {
+    "H0": "Z",
+    "H1": "Z + Z2",
+    "H2": "Z2",
+    "H3": "Z",
+    "H4": "Z"
+  },
+  "cohomology": {
+    "H^0": "Z",
+    "H^1": "Z",
+    "H^2": "Z2",
+    "H^3": "Z + Z2",
+    "H^4": "Z"
+  },
+  "fundamental_group": "Z2 x Z",
+  "spin_structure_group": "H^1(K;Z2)=Z2 x Z2",
+  "flat_u1_character_space": "{+1,-1} x U(1)",
+  "unit_radius_scalar_curvature": "6",
+  "lichnerowicz_gap_R_over_4": "3/2",
+  "canonical_counts": {
+    "sum_free_betti_numbers": 4,
+    "number_of_spin_structures": 4,
+    "torsion_flat_character_branches": 2,
+    "fundamental_group_minimal_generators": 2,
+    "integral_cohomology_torsion_generators": 2,
+    "flat_twisted_dirac_zero_modes": 0,
+    "euler_characteristic": 0
+  },
+  "any_declared_count_equals_three": false,
+  "status": "no canonical three-family selector in the declared frozen-K invariant menu",
+  "scope": "does not exclude a new family algebra, non-flat bundle, defect, or additional index problem"
+}

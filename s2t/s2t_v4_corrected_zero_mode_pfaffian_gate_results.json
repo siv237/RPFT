@@ -1,0 +1,53 @@
+{
+  "gate": "version4_corrected_zero_mode_pfaffian",
+  "zero_mode_quartic_coefficient": 62.01255336059963,
+  "coefficient_origin": "Vol(K)/R^4 times lambda_4D = 2*pi^3",
+  "fermionic_measure_assumption": "one unit-normalized finite Pfaffian plus the previously normalized four-sector modular matter free energy",
+  "measure_rows": {
+    "reduced": {
+      "radius": 1.000413079236164,
+      "theta": -4.985262842538418e-07,
+      "orientation_amplitude": -4.987322151105284e-07,
+      "value": -4797.112220525278,
+      "hessian_log_radius_theta": [
+        [
+          6464.464604505338,
+          -0.00022737367544323206
+        ],
+        [
+          -0.00022737367544323206,
+          495.85141823627055
+        ]
+      ],
+      "hessian_eigenvalues": [
+        495.8514182362618,
+        6464.464604505347
+      ],
+      "cp_breaking": false
+    },
+    "full_ko6": {
+      "radius": 1.0008253610616147,
+      "theta": 1.0755467760859005e-07,
+      "orientation_amplitude": 1.076434490514825e-07,
+      "value": -4797.113871522462,
+      "hessian_log_radius_theta": [
+        [
+          6479.616513388464,
+          2.2737367544323206e-05
+        ],
+        [
+          2.2737367544323206e-05,
+          496.2773346051108
+        ]
+      ],
+      "hessian_eigenvalues": [
+        496.27733460511075,
+        6479.616513388464
+      ],
+      "cp_breaking": false
+    }
+  },
+  "cp_breaking_vacuum_found": false,
+  "flavour_test_reached": false,
+  "verdict": "with the corrected integrated bosonic coefficient 2*pi^3, both reduced and full KO6 minimal zero-mode measures have stable CP-even vacua; the earlier supercritical Pfaffian branch was caused by independent unit normalization of the bosonic trace"
+}

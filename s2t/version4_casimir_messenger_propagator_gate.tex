@@ -1,0 +1,85 @@
+\chapter{Casimir-resolved messenger propagator: scalar-splitting no-go}
+
+Общий центральный heavy block точно склеил up/down spectra. Первый допустимый
+sector-relative deformation должен следовать из representation labels, а не
+из четырёх fitted matrices. Поэтому используем точные квадратичные Casimirs
+observed endpoints.
+
+\section{Representation ledger}
+
+В GUT-normalized hypercharge convention сумма
+\(C_3+C_2+\frac35Y^2\) даёт
+\begin{align}
+ C(Q_L)&=\frac{21}{10},& C(u_R)&=\frac85,& C(d_R)&=\frac75,\\
+ C(L_L)&=\frac9{10},& C(e_R)&=\frac35,& C(\nu_R)&=0.
+\end{align}
+Это дискретно фиксированные rational numbers representation theory; flavour
+data в них не входят.
+
+Для sector \(s\) заменим общий block предыдущей главы на
+\begin{equation}
+ \mathcal M_s(t)=
+ \begin{pmatrix}
+ (t+C_L^s)I&iI\\
+ -iI&(t+C_R^s)I
+ \end{pmatrix}.
+\end{equation}
+Таким образом, propagator sector-relative в channel space, но остаётся
+центральным в family space и содержит только один общий ratio \(t\).
+
+\section{Schur complement}
+
+Для endpoint row \(L_s=(A_s,B_s)\) получаем
+\begin{equation}
+ Y_s=P_--\frac{
+ (t+C_R^s)A_s^2+(t+C_L^s)B_s^2+i(B_sA_s-A_sB_s)
+ }{(t+C_L^s)(t+C_R^s)-1}.
+\end{equation}
+Casimirs теперь действительно различают \(u,d,e,\nu\) без независимых
+sector coefficients.
+
+\begin{proposition}[Minimal representation-resolved propagator]
+В scalar-Casimir class приведённый block является первым deformation общего
+двухканального propagator, которое различает все четыре observed sectors и
+не вводит новых непрерывных sector parameters.
+\end{proposition}
+
+\section{Mass train и CKM blind}
+
+Исчерпывающий перебор шестнадцати edge-sign cocycles с обучением только \(t\)
+на quark mass ratios даёт
+\begin{equation}
+ (\epsilon_{00},\epsilon_{01},\epsilon_{10},\epsilon_{11})
+ =(-1,-1,-1,-1),
+ \qquad t=1622.2774.
+\end{equation}
+Нормированные spectra равны
+\begin{align}
+ u&=(0.00123241,\,0.00123349,\,1),\\
+ d&=(0.00123249,\,0.00123356,\,1).
+\end{align}
+Наибольшая mass error остаётся \(98.4\). Оптимум требует настолько большого
+\(t\), что rational Casimir splittings подавляются как \(C/t\).
+
+Blind matrix имеет off-diagonal entries не более
+\begin{equation}
+ 5.37\times10^{-7},
+\end{equation}
+а \(|J_q|\simeq2.74\times10^{-27}\). Casimir-resolved propagator поэтому не
+создаёт наблюдаемой относительной ориентации quark eigenbases.
+
+\begin{theorem}[Scalar-Casimir messenger no-go]
+Точные endpoint Casimirs снимают формальное равенство sector operators, но в
+однопараметрическом Schur ledger не закрывают ни mass hierarchy, ни CKM.
+Mass optimum лежит в decoupling regime, где все representation splittings
+параметрически исчезают.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет fitted matrix Casimir]
+Нельзя заменять scalar \(C_L^s,C_R^s\) произвольными family matrices. Следующая
+ветвь должна вывести нецентральный family action из representation embedding
+или из одного динамического boundary state до сравнения с массами.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_casimir_messenger_propagator_gate_results.json}.

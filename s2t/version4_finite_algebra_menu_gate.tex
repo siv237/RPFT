@@ -1,0 +1,70 @@
+\chapter{Минимальная конечная алгебра наблюдаемого baseline}
+
+Проверим, какой минимальный Artin--Wedderburn menu способен породить нужные
+неабелевы факторы и оставить один абелев генератор после unimodularity.
+Рассматриваются блоки
+\begin{equation}
+\mathbb C,\quad \mathbb H,\quad M_2(\mathbb C),\quad
+M_3(\mathbb C),\quad M_3(\mathbb R).
+\end{equation}
+
+\begin{proposition}[Минимум quaternionic branch]
+В объявленном меню минимальная по вещественной размерности алгебра, которая
+содержит quaternionic weak block, complex color block и два центральных
+\(u(1)\)-направления до одной unimodularity constraint, равна
+\begin{equation}
+\boxed{\mathcal A_F^{\rm SM}=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C).}
+\end{equation}
+Её вещественная размерность равна \(2+4+18=24\).
+\end{proposition}
+
+До central constraint unitary Lie algebra имеет вид
+\begin{equation}
+u(1)_{\mathbb C}\oplus su(2)_{\mathbb H}\oplus
+su(3)_{M_3}\oplus u(1)_{M_3}.
+\end{equation}
+Одна невырожденная связь между центральными генераторами оставляет
+\begin{equation}
+\boxed{su(3)_c\oplus su(2)_L\oplus u(1)_Y.}
+\end{equation}
+
+Без quaternionic condition существует baseline
+\(M_2(\mathbb C)\oplus M_3(\mathbb C)\) размерности 26. Поэтому
+минимальность является условной внутри quaternionic branch, а не абсолютной
+классификационной теоремой.
+
+\section{Bimodule target-ledger}
+
+Минимальная target-реализация одного поколения использует рёбра
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Multiplet & Левый блок & Правый блок & Размерность \\
+\midrule
+\(Q_L\) & \(\mathbb H\) & \(M_3(\mathbb C)\) & 6 \\
+\(L_L\) & \(\mathbb H\) & \(\mathbb C\) & 2 \\
+\(u_R\) & \(\mathbb C\) & \(M_3(\mathbb C)\) & 3 \\
+\(d_R\) & \(\overline{\mathbb C}\) & \(M_3(\mathbb C)\) & 3 \\
+\(\nu_R\) & \(\mathbb C\) & \(\mathbb C\) & 1 \\
+\(e_R\) & \(\overline{\mathbb C}\) & \(\mathbb C\) & 1 \\
+\bottomrule
+\end{tabular}
+\end{center}
+Итого: 16 complex particle states до antiparticle doubling.
+
+\begin{theorem}[Observed gauge-algebra baseline]
+Внутри предзарегистрированного quaternionic menu алгебра
+\(\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)\) является минимальным
+baseline, чья unitary Lie algebra после одной central constraint имеет
+локальную структуру Стандартной модели.
+\end{theorem}
+
+\begin{nogocriterion}[Baseline ещё не является происхождением]
+Поскольку bimodule ledger пока выбран по известным частицам, доказаны
+совместимость и ограниченная минимальность, но не уникальное происхождение
+спектра. Открыты полный bimodule-перебор, discrete quotient, три поколения и
+Yukawa matrices.
+\end{nogocriterion}
+
+Машинный результат сохранён в
+\path{s2t_v4_finite_algebra_menu_gate_results.json}.

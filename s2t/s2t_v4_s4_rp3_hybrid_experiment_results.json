@@ -1,0 +1,55 @@
+{
+  "gate": "version4_s4_rp3_hybrid_experiment",
+  "date": "2026-08-11",
+  "separate_rp3_scalar_density": {
+    "radius_over_sigma": 1.9976083272693532,
+    "density": -0.010439954564981247,
+    "hessian": 0.018660172218233947,
+    "volume_over_sigma_cubed": 78.67391543984549,
+    "systole_over_sigma": 6.2756716456991954,
+    "relative_radius_error_from_2": -0.0011958363653233883,
+    "relative_volume_error_from_8pi2": -0.003583220732207737
+  },
+  "kk_thresholds_over_correlation_cutoff": {
+    "trivial_scalar_first_nonzero": 1.4159067551608235,
+    "twisted_scalar_first_nonzero": 0.8670622683759623
+  },
+  "joint_product_density": {
+    "formula": "-(log Z_S4+log Z_RP3)/(v4 v3 r^4 s^3)",
+    "samples": [
+      {
+        "rp3_radius_over_sigma": 2.0,
+        "joint_density": -0.0001885072051273354
+      },
+      {
+        "rp3_radius_over_sigma": 1.0,
+        "joint_density": -0.0005600734940239389
+      },
+      {
+        "rp3_radius_over_sigma": 0.5,
+        "joint_density": -0.0044527505856634154
+      },
+      {
+        "rp3_radius_over_sigma": 0.25,
+        "joint_density": -0.03562200468529891
+      },
+      {
+        "rp3_radius_over_sigma": 0.1,
+        "joint_density": -0.5565938232077953
+      }
+    ],
+    "limit_s_to_zero": "minus_infinity",
+    "bounded_below": false
+  },
+  "discrete_branch_sum": {
+    "radius_over_sigma": 1.34900141462449,
+    "density": -0.026153398325769996,
+    "interpretation": "requires_a_spin_or_flat_character_sum_measure"
+  },
+  "verdict": "full_metric_K_baggage_cannot_be_inherited_without_product_instability_or_KK_content",
+  "surviving_topological_core": [
+    "pi1_RP3_equals_Z2",
+    "torsion_holonomy",
+    "linking_form"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-08-10",
+  "version": "S2T-III",
+  "status": "relative_u1_and_bv_complex_derived",
+  "product_triple": {
+    "algebra": "Cinf(K) tensor (C plus C)",
+    "hilbert_space": "L2(K,S) tensor H8",
+    "dirac": "D_K tensor 1 + gamma_K tensor chi D_F_star"
+  },
+  "gauge_quotient": {
+    "bimodule_charge_vector": [
+      0,
+      1,
+      -1,
+      0
+    ],
+    "charge_square_orbit_trace": 2,
+    "trivial_subgroup": "diagonal U(1)",
+    "faithful_group": "relative U(1)",
+    "x_charge": -1,
+    "z_charge": 1,
+    "xz_neutral": true
+  },
+  "gauge_mass": {
+    "gauge_orbit_metric": "4*r**2 + 4*s**2",
+    "vacuum_mass_term": "4*A**2*chi**2",
+    "canonical_mass_squared_over_chi2": "8*g**2"
+  },
+  "bv_ledger": {
+    "vector_components": 4,
+    "goldstone_real_modes": 1,
+    "complex_ghost_weight": -2,
+    "physical_massive_vector_dof": 3,
+    "gauge_supertrace_numerator": "192*g**4"
+  },
+  "remaining_inputs": [
+    "spectral normalization fixing g",
+    "spin structure",
+    "fermion flat character",
+    "radion-to-chi relation",
+    "common finite-part prescription"
+  ],
+  "verdict": {
+    "gauge_quotient_closed": true,
+    "bv_complex_closed": true,
+    "gauge_mass_parameter_reduced_to_g": true,
+    "full_B_computed": false,
+    "next_gate": "a4 gauge kinetic normalization"
+  }
+}

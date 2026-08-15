@@ -1,0 +1,82 @@
+\chapter{Cross-tome stationary endpoint obstruction}
+
+Предыдущий гейт потребовал nonlinear endpoint map как stationary solution
+уже существующего parent action. Cross-tome comparison действительно даёт
+сильный stress test, но требует явного normalization dictionary.
+
+\section{Convention gap}
+
+Compact $a_2/a_4$ calculation Тома III фиксирует единичный ratio в
+heat-kernel convention:
+\begin{equation}
+ \lambda_{\mathrm{HK}}=1.
+\end{equation}
+Radial--orientation gate использует spectral-trace convention
+\begin{equation}
+ V_B=-\mu^2\Tr D_F^2+\lambda_{\mathrm{tr}}\Tr D_F^4.
+\end{equation}
+Между ними требуется словарь
+\begin{equation}
+ \lambda_{\mathrm{tr}}
+ =c_{\mathrm{HK}}\lambda_{\mathrm{HK}},
+\end{equation}
+включающий scalar field normalization, curvature и boundary contributions.
+Текущий Том не вывел $c_{\mathrm{HK}}$. Поэтому прежнее прямое отождествление
+$\lambda_{\mathrm{tr}}=\lambda_{\mathrm{HK}}$ было convention gap.
+
+\section{Conditional bifurcation margins}
+
+Точный radial Pfaffian gate внутри trace convention вывел условия
+\begin{align}
+ \lambda_{\mathrm{tr}}&<0.056684
+ &&\text{для reduced measure},\\
+ \lambda_{\mathrm{tr}}&<0.028906
+ &&\text{для full KO6 measure}.
+\end{align}
+При условном identity dictionary $c_{\mathrm{HK}}=1$ ratios равны
+\begin{equation}
+ 17.64,\qquad 34.59,
+\end{equation}
+а angular curvatures:
+\begin{align}
+ m_{\theta,\rm red}^2&=7.54653,\\
+ m_{\theta,\rm full}^2&=7.76875.
+\end{align}
+Для общего dictionary factor эти ratios умножаются на $c_{\mathrm{HK}}$.
+
+\begin{proposition}[Conditional normalization obstruction]
+Identity convention даёт большой запас устойчивости CP-even vacuum. Однако
+без вывода $c_{\mathrm{HK}}$ числа $17.64$ и $34.59$ являются stress-test
+значениями, а не абсолютным physical no-go.
+\end{proposition}
+
+\section{Исправленный stationary verdict}
+
+\begin{theorem}[Convention-conditional stationary obstruction]
+Внутри собственной spectral-trace convention radial calculation строго
+задаёт bifurcation thresholds. Но cross-tome утверждение
+$\lambda_{\mathrm{tr}}=1$ не доказано до построения полного
+heat-kernel--spectral-trace dictionary. Следовательно, абсолютный stationary
+obstruction остаётся условным.
+\end{theorem}
+
+Для окончательного closure требуется:
+\begin{enumerate}
+\item вывести $c_{\mathrm{HK}}$ после canonical scalar rescaling;
+\item проверить full non-polynomial spectral profile на global CP minima;
+\item либо вывести новый CP-odd radial--orientation invariant.
+\end{enumerate}
+
+\begin{nogocriterion}[Запрет использования условного разрыва как theorem]
+Нельзя цитировать factors $17.64$ и $34.59$ как physical no-go до вывода
+$c_{\mathrm{HK}}$. Они проверяют только identity normalization convention.
+\end{nogocriterion}
+
+\begin{remark}
+Следующий dictionary gate показывает, что local canonical value действительно
+равна единице, но radial threshold всё равно нельзя использовать физически:
+он смешивает local 4D action и independently normalized finite Pfaffian.
+\end{remark}
+
+Машинный ledger сохранён в
+\path{s2t_v4_stationary_endpoint_obstruction_gate_results.json}.

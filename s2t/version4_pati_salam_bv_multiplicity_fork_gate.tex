@@ -1,0 +1,79 @@
+\section{BV auxiliary no-go и multiplicity fork}
+
+Relative quotient action фиксирует внутренний determinant coefficient, но
+оставляет общий trace weight \(\lambda_{\rm rel}\). Требуется определить,
+содержится ли relative carrier в исходном physical module, возникает ли он
+из стандартного BV extension или требует нового parent sector.
+
+\subsection{Existing-module embedding no-go}
+
+Минимальный Pati--Salam particle module
+\begin{equation}
+ V_R=(2_R,4),\qquad V_L=(2_L,4)
+\end{equation}
+имеет complex dimension \(16\), а KO6 completion --- \(32\). Цепь
+\begin{equation}
+ \bar4\longrightarrow2_R\longrightarrow4
+ \label{eq:ps-bv-relative-chain}
+\end{equation}
+имеет particle dimension \(10\) и KO6 dimension \(20\). Она не является
+invariant submodule исходного fermionic space.
+
+\begin{nogocriterion}[Existing-module embedding no-go]
+Relative carrier нельзя получить переобозначением стандартного
+Pati--Salam fermionic module.
+\end{nogocriterion}
+
+\subsection{Standard BV auxiliary no-go}
+
+Gauge-fixing BV auxiliaries образуют contractible pairs и не изменяют
+classical stationary locus physical action. После их устранения они не могут
+добавить independent term
+\begin{equation}
+ 4\lambda_{\rm rel}\det(\Delta\Delta^\dagger)
+\end{equation}
+или изменить physical vacuum Hessian.
+
+\begin{nogocriterion}[Standard BV auxiliary no-go]
+Стандартный gauge-fixing BV complex не выводит relative parent action и не
+фиксирует \(\lambda_{\rm rel}\).
+\end{nogocriterion}
+
+\subsection{Physical vectorlike branch}
+
+Physical interpretation цепи соответствует двум SU(4) Dirac fundamentals и
+одному SU(2)\(_R\) Dirac doublet. Sector vectorlike и anomaly-safe. В project
+conventions one-loop shift равен
+\begin{equation}
+ (\Delta b_R,\Delta b_L,\Delta b_4)=(-2/3,0,-4/3).
+\end{equation}
+На frozen project scale spreads меняются как
+\begin{equation}
+ 3.127\%\to2.157\%,\quad
+ 2.923\%\to1.732\%,\quad
+ 2.631\%\to3.952\%,\quad
+ 4.902\%\to4.291\%.
+\end{equation}
+Ни один сценарий не проходит one-percent gate.
+
+\subsection{Classical mapping-cone branch}
+
+Non-propagating parent sector не меняет beta coefficients. Для \(k\)
+одинаковых copies \(\lambda_{\rm rel}=k\), а Hessian spectrum равен
+\begin{equation}
+ 8\sqrt2\ (1),\qquad0\ (9),\qquad\sqrt2(4k-2)\ (6).
+\end{equation}
+Минимальный \(k=1\) устойчив, но пока является новым parent-sector axiom.
+
+\begin{theorem}[Multiplicity fork]
+Стандартный module и standard BV auxiliaries не фиксируют multiplicity.
+Остаются physical anomaly-safe vectorlike extension и non-propagating
+classical mapping-cone sector. Следующий gate должен вывести одну ветвь и
+вычислить полный mixed Hessian и RG/threshold ledger.
+\end{theorem}
+
+BV finite spectral triples сверены с arXiv:1604.00046 и arXiv:2410.11823;
+relative triples --- с arXiv:1607.07143; Pati--Salam content --- с
+arXiv:1507.08161. Machine audit сохранён в
+\path{s2t_v4_pati_salam_bv_multiplicity_fork_gate.py} и
+\path{s2t_v4_pati_salam_bv_multiplicity_fork_gate_results.json}.

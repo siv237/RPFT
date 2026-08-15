@@ -1,0 +1,35 @@
+{
+  "gate": "version4_correlation_cell_free_energy_density",
+  "date": "2026-08-11",
+  "functional": "tau^3 F/V=-tau^2 log(Z)/V",
+  "dimensionless_radius": "r=a/sqrt(tau)=a/sigma",
+  "stationarity_condition": "<mu>/r^2=2 log Z",
+  "equation_of_state_at_stationarity": "p=-epsilon",
+  "candidates": [
+    {
+      "name": "S4",
+      "radius_over_sigma": 1.3513921956865422,
+      "dimensionless_density": -0.005493360847150809,
+      "log_partition": 0.482205579996784,
+      "mean_dimensionless_eigenvalue": 1.7612663607723933,
+      "variance_dimensionless_eigenvalue": 6.364462417418683,
+      "hessian": 0.0245770874529649,
+      "stationarity_residual": 0.0,
+      "scalar_curvature_times_sigma_squared": 6.570802791491215
+    },
+    {
+      "name": "S2xS2",
+      "radius_over_sigma": 0.9501657702655415,
+      "dimensionless_density": -0.004476475283184661,
+      "log_partition": 0.5761737158135068,
+      "mean_dimensionless_eigenvalue": 1.0403565360951348,
+      "variance_dimensionless_eigenvalue": 1.7754608070614915,
+      "hessian": 0.04401837794527634,
+      "stationarity_residual": -2.220446049250313e-16,
+      "scalar_curvature_times_sigma_squared": 4.430586598522173
+    }
+  ],
+  "winner": "S4",
+  "status": "conditional_scale_ratio_selection",
+  "remaining_scale": "sigma_absolute_value"
+}

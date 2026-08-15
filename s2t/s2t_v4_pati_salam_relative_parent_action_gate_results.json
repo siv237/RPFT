@@ -1,0 +1,39 @@
+{
+  "gate": "version4_pati_salam_relative_parent_action",
+  "fixed_point_height": [
+    -1,
+    0,
+    1
+  ],
+  "even_curvature_identity": "inf_C ||F-C||^2=||F-E_h(F)||^2=||[h,F]/2||^2",
+  "selector_identity": "||[h,D_Delta^2]/2||^2=4 det(Delta Delta^dagger)",
+  "maximum_quotient_identity_error": 0.0,
+  "maximum_circle_average_error": 1.65196508266511e-14,
+  "maximum_determinant_selector_error": 4.547473508864641e-13,
+  "maximum_gauge_invariance_error": 4.547473508864641e-13,
+  "generic_full_matrix_mismatch": 39.7541108848709,
+  "generic_full_matrix_identity_is_false": true,
+  "Hessian_spectrum": {
+    "radial": [
+      "8 sqrt(2)",
+      1
+    ],
+    "gauge": [
+      0,
+      9
+    ],
+    "transverse": [
+      "sqrt(2) (4 lambda_rel - 2)",
+      6
+    ]
+  },
+  "strict_stability_condition": "lambda_rel > 1/2",
+  "one_copy_common_metric": {
+    "lambda_rel": 1,
+    "signature": [
+      7,
+      9,
+      0
+    ]
+  }
+}

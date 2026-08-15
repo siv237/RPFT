@@ -1,0 +1,74 @@
+\chapter{Family square spectral selector: orbit selection без unique direction}
+
+Order-one gate оставил family multiplicity matrices свободными. Теперь
+ограничим их уже выведенным menu: одна пара противоположных edges несёт
+rank-one projector \(P_-\), а вторая --- один из восьми различных Hermitian
+incidence operators \(H\), соответствующих двенадцати raw affine
+directions.
+
+\section{Restricted square operator}
+
+Положим
+\begin{equation}
+ D_A=aP_-,
+ \qquad
+ D_B=b e^{i\phi}H,
+\end{equation}
+и восстановим противоположные edges из self-adjointness и \(J\). Для каждого
+candidate вычисляются \(\Tr D_F^2\), \(\Tr D_F^4\) и minimum потенциала
+\begin{equation}
+ V_F=-\mu^2\Tr D_F^2+\lambda\Tr D_F^4,
+ \qquad \lambda>0,
+\end{equation}
+сначала по \(\phi\), затем по динамическим amplitudes \(a,b\).
+
+Для всех восьми operators положительный quartic выбирает
+\begin{equation}
+ \phi=\pm\frac{\pi}{2}.
+\end{equation}
+В этой точке mixed quartic \(a^2b^2\) исчезает. Остаются два spectral класса.
+
+\section{Exact vacuum comparison}
+
+Для четырёх transposition operators:
+\begin{align}
+ \Tr D_F^2&=4a^2+12b^2,\\
+ \Tr D_F^4\big|_{\phi=\pm\pi/2}&=8a^4+24b^4,\\
+ V_{\min}&=-2\,\frac{\mu^4}{\lambda}.
+\end{align}
+Для четырёх Hermitian three-cycle operators:
+\begin{align}
+ \Tr D_F^2&=4a^2+6b^2,\\
+ \Tr D_F^4\big|_{\phi=\pm\pi/2}&=8a^4+9b^4,\\
+ V_{\min}&=-\frac32\,\frac{\mu^4}{\lambda}.
+\end{align}
+
+\begin{theorem}[Spectral cycle-type selection]
+Минимальный \(J\)-совместимый square potential без candidate-dependent
+coefficients предпочитает transposition orbit всем Hermitian three-cycle
+operators. Тем самым family menu сокращается с восьми Hermitian operators
+до четырёх transposition directions.
+\end{theorem}
+
+Результат устойчив относительно общего rescaling каждого \(H\): после
+минимизации по \(b\) сравниваются dimensionless moment ratios
+\(\Tr H^4/(\Tr H^2)^2\).
+
+\section{Оставшаяся четырёхкратная обструкция}
+
+Четыре minima образуют одну residual-conjugacy orbit и имеют одинаковые
+spectral moments. Поэтому action выбирает тип incidence operator, но не
+конкретное affine direction внутри этого типа.
+
+\begin{nogocriterion}[Orbit selection не равен family selection]
+Сокращение \(8\to4\) является структурным прогрессом, но не выводом Yukawa
+texture. Нельзя выбрать один transposition вручную или назначить разные
+minima up/down sectors post hoc. Для unique direction нужен cross-sector или
+boundary-orientation invariant, различающий элементы одной residual orbit.
+\end{nogocriterion}
+
+Итак, order-one square впервые выполняет частичный selector: он устраняет
+three-cycle branch и одновременно сохраняет maximal loop phase. Следующий
+гейт должен действовать внутри оставшейся четырёхэлементной transposition
+orbit. Полный exact scan сохранён в
+\path{s2t_v4_family_square_spectral_selector_gate_results.json}.

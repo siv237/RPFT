@@ -1,0 +1,30 @@
+{
+  "gate": "version4_hessian_principle_sign_trilemma",
+  "date": "2026-08-13",
+  "target": "c/45 - 1/45",
+  "Gaussian_logdet": {
+    "quadratic_coefficient": "c/45 - 1/45",
+    "target_sign_match": true,
+    "quartic_residual": "-(c - 1)**2/4725",
+    "exact_full_action_match": false
+  },
+  "Gaussian_KL_Fisher": {
+    "quadratic_coefficient": "1/45 - c/45",
+    "Wilson_domain": "c=cos(theta) in [-1,1]",
+    "positive_on_Wilson_domain": true,
+    "target_sign_match": false
+  },
+  "trilemma": [
+    "KL/Fisher geometry is canonical and quadratic but has the opposite positive sign",
+    "Gaussian logdet has the required negative quadratic sign but its full action has nonzero higher powers",
+    "declaring only the negative Hessian fundamental is an extra non-metric parent axiom"
+  ],
+  "literature_correction": {
+    "free_energy_Hessian": "c/45 - 1/45",
+    "static_susceptibility_minus_free_energy_Hessian": "1/45 - c/45",
+    "higher_terms_change_second_derivative_at_zero": false,
+    "interpretation": "the negative free-energy Hessian is a standard signed response; its negative is the positive susceptibility or information metric"
+  },
+  "verdict": "exact_two_point_response_pass_parent_action_identification_open",
+  "reopening": "derive an independently required signed susceptibility functional or an infinite graded cancellation that removes all higher powers without reversing the linear sign"
+}

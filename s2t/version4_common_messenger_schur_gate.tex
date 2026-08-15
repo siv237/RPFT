@@ -1,0 +1,106 @@
+\chapter{Common messenger Schur complement: двухканальный no-go}
+
+Sector torsor дал четыре канонических edge operators, но их vertex sums не
+воспроизвели flavour data. Проверим архитектурно иной механизм: все четыре
+Yukawa sectors получают коррелированные products через один общий тяжёлый
+messenger-блок.
+
+\section{Минимальный двухканальный блок}
+
+Для каждого sector \(s\) два инцидентных оператора обозначим
+\(A_s,B_s\). Они являются теми же transposition edges \(K_{2,2}\), а не
+новыми family matrices. Общий hermitian heavy block зададим как
+\begin{equation}
+ \mathcal M(t)=
+ \begin{pmatrix}
+ tI&iI\\
+ -iI&tI
+ \end{pmatrix},
+ \qquad t>1.
+\end{equation}
+Единственный continuous ratio \(t\) есть messenger mass в единицах общего
+межканального coupling. Sector dependence входит только через endpoint row
+\begin{equation}
+ L_s=(\epsilon_aA_s,\epsilon_bB_s),
+ \qquad \epsilon_a,\epsilon_b\in\{\pm1\}.
+\end{equation}
+
+Schur complement полного блока
+\begin{equation}
+ \begin{pmatrix}
+ P_-&L_s\\
+ L_s^\dagger&\mathcal M(t)
+ \end{pmatrix}
+\end{equation}
+даёт effective Yukawa operator
+\begin{equation}
+ Y_s=P_--L_s\mathcal M(t)^{-1}L_s^\dagger.
+\end{equation}
+Прямое обращение общей matrix даёт
+\begin{equation}
+ Y_s=P_--\frac{
+ t(A_s^2+B_s^2)+i(B_sA_s-A_sB_s)
+ }{t^2-1}.
+\end{equation}
+Следовательно, CP-нечётный commutator возникает автоматически из общей
+двухканальной propagation; отдельная комплексная Yukawa matrix не вводится.
+
+\begin{proposition}[Order-one compatible product mechanism]
+Если два channel edges по отдельности удовлетворяют rectangle edge criterion,
+то их Schur complement является допустимым effective endpoint operator.
+Gauge intertwiner остаётся факторизованным, а вся family dependence лежит в
+фиксированных \(A_s,B_s\).
+\end{proposition}
+
+\section{Исчерпывающий train}
+
+Глобальные signs четырёх torsor edges образуют конечное menu из \(16\)
+cocycles. Для каждого элемента только \(t\) обучается на четырёх quark mass
+ratios; CKM не используется. Лучший результат:
+\begin{equation}
+ (\epsilon_{00},\epsilon_{01},\epsilon_{10},\epsilon_{11})
+ =(-1,-1,-1,-1),
+ \qquad t=1624.1449.
+\end{equation}
+Получаются почти одинаковые quark spectra
+\begin{align}
+ u&=(0.00123240,\,0.00123347,\,1),\\
+ d&=(0.00123240,\,0.00123347,\,1).
+\end{align}
+Наибольшая multiplicative mass error равна примерно \(98.4\). В частности,
+общий propagator создаёт две лёгкие nearly-degenerate families вместо
+наблюдаемой двойной иерархии.
+
+\section{CKM blind}
+
+После заморозки mass-selected branch
+\begin{equation}
+ |V_q|\simeq
+ \begin{pmatrix}
+ 1&1.44\times10^{-13}&5.36\times10^{-7}\\
+ 1.44\times10^{-13}&1&5.36\times10^{-7}\\
+ 5.36\times10^{-7}&5.36\times10^{-7}&1
+ \end{pmatrix},
+\end{equation}
+а \(|J_q|\simeq1.96\times10^{-29}\). Таким образом, algebraic
+commutator в каждом sector не превращается в относительную физическую
+ориентацию up/down eigenbases.
+
+\begin{theorem}[Common Schur-complement no-go]
+Минимальный общий двухканальный messenger block с фиксированными torsor edges,
+полным sign menu и одним mass ratio не воспроизводит quark hierarchy и
+коллапсирует CKM практически к единичной matrix. Наличие комплексного
+commutator term само по себе недостаточно: необходим sector-relative
+нецентральный heavy propagator либо дополнительный выведенный endpoint
+intertwiner.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет ручного sector propagator]
+Нельзя заменить общий \(\mathcal M(t)\) четырьмя независимо подобранными
+\(\mathcal M_s\). Следующая ветвь допустима только если различие heavy
+propagators следует из representation labels или одного boundary order
+parameter до открытия flavour data.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_common_messenger_schur_gate_results.json}.

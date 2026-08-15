@@ -1,0 +1,91 @@
+\chapter{Литературный priority audit mapping-cone spectral Hessian}
+
+По состоянию на 13 августа 2026 года выполнен targeted literature search по
+четырём связкам ключевых слов: block log-determinant Hessian и Schur
+complement; determinant line и mapping-cone torsion; fidelity susceptibility
+и Wilson loops; graph incidence и pullback log-det geometry. Цель аудита ---
+не объявить приоритет, а отделить известные общие механизмы от конкретной
+специализации текущей программы.
+
+\section{Что в литературе уже существует}
+
+\begin{enumerate}
+ \item \textbf{Mapping-cone determinant lines.}
+ Kaad и Nest, arXiv:1403.7937, исследуют torsion isomorphisms determinant
+ lines mapping-cone triangles Fredholm complexes и их canonical holomorphic
+ sections. Следовательно, использование mapping cone как носителя
+ determinant geometry не является новым само по себе.
+
+ \item \textbf{Log-det Hessian как pullback metric на edge space.}
+ В arXiv:2603.24913 Hessian функции \(-\log\det X\) явно pullback-ится на
+ пространство matrix/graph edge weights:
+ \begin{equation}
+  g(U,V)=\Tr\bigl(X^{-1}L(U)X^{-1}L(V)\bigr).
+ \end{equation}
+ Это очень близкий общий шаблон: incidence deformation входит в block
+ operator, а inverse-square response возникает из log-det Hessian.
+
+ \item \textbf{Inverse-gap-square quantum geometry.}
+ Zanardi--Giorda--Cozzini (\path{quant-ph/0701061}) выводят
+ natural metric/fidelity susceptibility на parameter space Hamiltonians.
+ К тому же выводу приходят Campos Venuti--Zanardi
+ (\path{arXiv:0705.2211}). Spectral representation
+ такой metric содержит squared inverse gaps. Поэтому интерпретация Hessian
+ как response geometry также имеет прямых предшественников.
+
+ \item \textbf{Schur complement и Gaussian determinant.}
+ Block Gaussian models, conditional covariances и effective actions
+ стандартно редуцируются Schur complement и log determinant. Этот
+ algebraic механизм широко известен и не является самостоятельной заявкой
+ на новизну.
+
+ \item \textbf{Wilson loops рядом с quantum geometry.}
+ В band-topology и quantum-criticality литературе Wilson loops и quantum
+ geometric tensor используются в одной задаче, например в arXiv:2312.01086.
+ Однако там Wilson loop служит topological diagnostic; он не выступает
+ mapping-cone incidence внутри zeta-logdet Hessian с коэффициентом
+ \(2\zeta(4)/\pi^4\).
+\end{enumerate}
+
+\section{Что при поиске не обнаружено}
+
+Не найдена работа, где одновременно присутствуют все следующие элементы:
+\begin{enumerate}
+ \item periodic operator со spectrum \((\pi n)^2\), \(n\ne0\);
+ \item rank-one или mapping-cone coupling, построенный из
+ \(b_\theta=(1-U_\theta)u\);
+ \item real-Gaussian factor \(1/2\) и Schur block
+ \(\mathbb R\oplus\mathbb R^2\);
+ \item Hessian coefficient
+ \begin{equation}
+  -\frac12\|b_\theta\|^2
+  \Tr{}'\widehat\Delta^{-2}
+  =-\frac{1-\cos\theta}{45};
+ \end{equation}
+ \item интерпретация этого coefficient как missing Wilson periodic
+ primitive при одновременном запрете использовать full determinant из-за
+ higher powers.
+\end{enumerate}
+
+Поиск по точным сигнатурам \(1/45\), \(\zeta(4)\),
+\(1-\cos\theta\), ``mapping cone'', ``Wilson'', ``fidelity
+susceptibility'' и ``log determinant Hessian'' не дал совпадающей
+конструкции. Это отсутствие найденного совпадения, а не математическое
+доказательство отсутствия публикации.
+
+\begin{proposition}[Осторожный priority verdict]
+Общие ингредиенты mapping-cone spectral Hessian известны и имеют сильные
+литературные предшественники. Потенциально новой выглядит не сама техника, а
+её конкретная specialization, в которой primitive Wilson incidence и
+periodic zeta spectrum совместно дают coefficient \(1/45\). До независимого
+поиска в MathSciNet, zbMATH, INSPIRE, Crossref и консультации специалиста
+нельзя утверждать научный приоритет.
+\end{proposition}
+
+\begin{protocol}[Правило будущего заявления]
+В публичном статусе допустима формулировка:
+``найдена, по-видимому, ранее не отмеченная specialization известных
+log-det-Hessian и mapping-cone механизмов''. Формулировки ``впервые
+доказано'' и ``никто ранее не замечал'' запрещены до внешнего priority audit
+и рецензирования.
+\end{protocol}

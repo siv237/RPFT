@@ -1,0 +1,189 @@
+{
+  "gate": "version4_yukawa_operator_map",
+  "selected_geometry_branch": "B_plus",
+  "ground_vector": [
+    0.939574855786,
+    0.310502002048,
+    -0.144179045282
+  ],
+  "projector_odd": "Matrix([[0, 0, 0], [0, 1/2, -1/2], [0, -1/2, 1/2]])",
+  "operator_up": "Matrix([[0, 1, 0], [1, 0, 0], [0, 0, 1]])",
+  "operator_down": "Matrix([[0, 0, -1], [0, 1, 0], [-1, 0, 0]])",
+  "admissible_coefficient_free_maps": {
+    "baseline": "Y(H)=P_minus+iH",
+    "state_anticommutator": "Y(H)=P_minus+i{rho_star,H}",
+    "quartic_cotangent": "Y_u=dV4/dH_u, Y_d=dV4/dH_d"
+  },
+  "basis_covariance_errors": {
+    "baseline_up": 0.0,
+    "baseline_down": 0.0,
+    "state_up": 3.8956806801599406e-16,
+    "state_down": 3.176770830354169e-16
+  },
+  "quartic_gradient_up": [
+    [
+      4.173893997567899,
+      5.83371351103891,
+      -2.1816317188437817
+    ],
+    [
+      7.639614407006083,
+      4.125919139511177,
+      -1.0549855882033432
+    ],
+    [
+      -1.5804403262132782,
+      -1.7820738774904294,
+      1.412712520591065
+    ]
+  ],
+  "quartic_gradient_down": [
+    [
+      2.2153961304023477,
+      2.596287030339079,
+      -7.979724998571937
+    ],
+    [
+      4.219491319041068,
+      3.1229400358388384,
+      -3.2743784366279822
+    ],
+    [
+      -9.988648321740246,
+      -3.7153224859733576,
+      2.7168888486378666
+    ]
+  ],
+  "readouts": {
+    "baseline_P_plus_iH": {
+      "mass_squared_eigenvalues_up": [
+        0.5,
+        1.0,
+        2.5
+      ],
+      "mass_squared_eigenvalues_down": [
+        0.5,
+        1.0,
+        2.5
+      ],
+      "normalized_masses_up": [
+        0.4472135955,
+        0.632455532034,
+        1.0
+      ],
+      "normalized_masses_down": [
+        0.4472135955,
+        0.632455532034,
+        1.0
+      ],
+      "absolute_mixing_matrix": [
+        [
+          0.5,
+          0.816496580928,
+          0.288675134595
+        ],
+        [
+          0.816496580928,
+          0.333333333333,
+          0.471404520791
+        ],
+        [
+          0.288675134595,
+          0.471404520791,
+          0.833333333333
+        ]
+      ],
+      "cp_invariant_im_Tr_commutator_cube": 0.0,
+      "cp_nonzero": false
+    },
+    "state_anticommutator": {
+      "mass_squared_eigenvalues_up": [
+        0.047880686312,
+        0.369137261171,
+        3.313260100235
+      ],
+      "mass_squared_eigenvalues_down": [
+        0.034287961915,
+        0.363224067242,
+        2.872373410391
+      ],
+      "normalized_masses_up": [
+        0.120213272024,
+        0.333784509316,
+        1.0
+      ],
+      "normalized_masses_down": [
+        0.109257280593,
+        0.35560418195,
+        1.0
+      ],
+      "absolute_mixing_matrix": [
+        [
+          0.627233761402,
+          0.714948703376,
+          0.30891124955
+        ],
+        [
+          0.690782276231,
+          0.650876512733,
+          0.314927947344
+        ],
+        [
+          0.359718856057,
+          0.255358799953,
+          0.897437589966
+        ]
+      ],
+      "cp_invariant_im_Tr_commutator_cube": -1.780834447094211,
+      "cp_nonzero": true
+    },
+    "quartic_cotangent_gradient": {
+      "mass_squared_eigenvalues_up": [
+        0.443141886267,
+        7.72696784189,
+        132.212258880546
+      ],
+      "mass_squared_eigenvalues_down": [
+        0.76005460464,
+        40.086170130308,
+        193.715089767594
+      ],
+      "normalized_masses_up": [
+        0.057894264151,
+        0.24175122852,
+        1.0
+      ],
+      "normalized_masses_down": [
+        0.062638402211,
+        0.454899601725,
+        1.0
+      ],
+      "absolute_mixing_matrix": [
+        [
+          0.225439951165,
+          0.816118776195,
+          0.532096768982
+        ],
+        [
+          0.881904754682,
+          0.403046028642,
+          0.244536096445
+        ],
+        [
+          0.414029989358,
+          0.414130464875,
+          0.810601706126
+        ]
+      ],
+      "cp_invariant_im_Tr_commutator_cube": 0.0,
+      "cp_nonzero": false
+    }
+  },
+  "same_data_give_cp_zero_and_cp_nonzero_maps": true,
+  "cotangent_map_is_real_and_cp_zero": true,
+  "observed_edge_types_distinguished_by_family_data": false,
+  "four_sector_dichotomy": "a common map identifies normalized up with neutrino and down with charged-lepton textures; sector-specific maps introduce new input",
+  "operator_map_uniquely_derived": false,
+  "positive_result": "the selected state supports a coefficient-free CP-nonzero polynomial map, so CP generation is algebraically possible",
+  "status": "existence pass but prediction no-go: the same selected geometry and state admit inequivalent covariant coefficient-free Yukawa maps"
+}

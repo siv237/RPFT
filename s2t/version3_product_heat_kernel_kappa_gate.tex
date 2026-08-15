@@ -1,0 +1,170 @@
+\chapter{Product heat-kernel derivation кинетического коэффициента}
+
+Предыдущий finite supertrace оставил относительный коэффициент
+\begin{equation}
+ \mathcal L
+ =\frac{\kappa}{2}
+ \Tr_{\mathrm{orb}}(\partial_\mu D_F\partial^\mu D_F)
+ +\Tr_{\mathrm{orb}}(D_F^2-\chi^2\mathbf1)^2
+\end{equation}
+невыведенным. Теперь вычислим его из минимального flat product
+Dirac-оператора.
+
+\section{Квадрат product Dirac-оператора}
+
+Пусть
+\begin{equation}
+ \mathcal D
+ =i\gamma^\mu\partial_\mu\otimes\mathbf1
+ +\gamma^5\otimes\Phi(x),
+\end{equation}
+где \(\Phi\) имеет структуру finite odd operator. В плоском евклидовом
+пространстве
+\begin{equation}
+ \mathcal D^2
+ =-\partial^2+\Phi^2
+ +i\gamma^\mu\gamma^5\partial_\mu\Phi.
+\end{equation}
+В стандартной Laplace-записи
+\begin{equation}
+ \mathcal D^2=-(\partial^2+E)
+\end{equation}
+получаем
+\begin{equation}
+ E=-\Phi^2-i\gamma^\mu\gamma^5\partial_\mu\Phi.
+\end{equation}
+
+\section{Коэффициент \(a_4\)}
+
+При отсутствии gauge curvature локальная часть коэффициента теплового
+ядра содержит
+\begin{equation}
+ a_4(\mathcal D^2)
+ \supset
+ \frac1{(4\pi)^2}
+ \int d^4x\,
+ \Tr\left(\frac12E^2\right).
+\end{equation}
+Нечётный Clifford cross-term имеет нулевой spin trace, а
+\begin{equation}
+ \operatorname{tr}_{\mathrm{spin}}
+ \left(
+ i\gamma^\mu\gamma^5
+ i\gamma^\nu\gamma^5
+ \right)
+ =4\delta^{\mu\nu}.
+\end{equation}
+Следовательно,
+\begin{equation}
+ \operatorname{tr}_{\mathrm{spin}}E^2
+ =4\Tr_F
+ \left[
+ (\partial_\mu\Phi)^2+\Phi^4
+ \right].
+\end{equation}
+Kinetic и quartic terms имеют один и тот же коэффициент \(f_0a_4\).
+
+\begin{theorem}[Product heat-kernel normalization]
+После удаления общего положительного множителя минимальный product
+spectral action имеет относительную нормировку
+\begin{equation}
+ \mathcal L_4
+ =
+ \Tr_{\mathrm{orb}}(\partial_\mu\Phi)^2
+ +\Tr_{\mathrm{orb}}(\Phi^2-\chi^2\mathbf1)^2.
+\end{equation}
+В конвенции
+\(\frac{\kappa}{2}\Tr(\partial\Phi)^2+V(\Phi)\) это точно означает
+\begin{equation}
+ \boxed{\kappa=2.}
+\end{equation}
+\end{theorem}
+
+Квадратичный член, необходимый для завершения квадрата, происходит из
+\(a_2\) и dilaton/cutoff sector. Его величина определяет \(\chi\), но не
+изменяет равенство коэффициентов kinetic и quartic terms внутри \(a_4\).
+
+\section{Исправленный finite scalar spectrum}
+
+Ранее были получены
+\begin{equation}
+ G_*=\operatorname{diag}(4,4,1),
+ \qquad
+ H_*=\operatorname{diag}(32,32,8).
+\end{equation}
+Для \(\kappa=2\) каноническая матрица quadratic kinetic form равна
+\(2G_*\), поэтому
+\begin{equation}
+ (2G_*)^{-1}H_*
+ =\operatorname{diag}(4,4,4).
+\end{equation}
+Здесь \(2G_*\) является канонической матрицей \(K_{\mathrm{quad}}\) в
+записи
+\(\mathcal L^{(2)}=\frac12(K_{\mathrm{quad}}(\partial q)^2-H_*q^2)\).
+Coefficient перед \(G_*(\partial q)^2\) равен единице, но это именно
+\(\frac12K_{\mathrm{quad}}\), а не \(K_{\mathrm{quad}}\).
+Три real scalar zero-modes имеют
+\begin{equation}
+ m_s^2=4\chi^2.
+\end{equation}
+
+\section{Исправленный Coleman--Weinberg seed}
+
+Scalar contribution теперь равен
+\begin{equation}
+ 3\cdot4^2=48,
+\end{equation}
+а две Dirac-пары по-прежнему дают \(-8\). Поэтому
+\begin{equation}
+ \frac{\Str M^4_{\mathrm{fin}}}{\chi^4}
+ =48-8=40
+\end{equation}
+и
+\begin{equation}
+ \boxed{
+ B_{0,\mathrm{HK}}^{\mathrm{fin}}
+ =\frac{40}{64\pi^2}
+ =\frac5{8\pi^2}>0.}
+\end{equation}
+
+\begin{proposition}[Heat-kernel finite \(B>0\)]
+В минимальном flat product spectral action нормировочный разрыв
+\(\kappa\) закрывается, а finite zero-mode Coleman--Weinberg coefficient
+остаётся строго положительным.
+\end{proposition}
+
+\section{Коррекция предыдущего статуса}
+
+Значение \(23/(8\pi^2)\) относилось к условной конвенции \(\kappa=1\).
+Product heat-kernel derivation заменяет его на \(5/(8\pi^2)\). Поэтому
+арифметическое появление числа \(23\) в прежнем ledger не является
+устойчивым структурным результатом и не должно связываться с neutrino
+rank.
+
+\section{Оставшиеся ограничения}
+
+Вывод использует:
+\begin{enumerate}
+ \item плоский четырёхмерный внешний фон;
+ \item отсутствие gauge curvature в данном подгейте;
+ \item одну общую spectral function с положительным \(f_0\);
+ \item orbit-trace prescription для KO6 finite module.
+\end{enumerate}
+Gauge/ghost completion, curvature terms и nonzero KK towers могут изменить
+полный \(B\), но уже не оставляют свободным \(\kappa\) в минимальном
+scalar block.
+
+\begin{protocol}[Следующий гейт]
+Необходимо вычислить
+\begin{equation}
+ B_{\mathrm{full}}
+ =\frac5{8\pi^2}
+ +\Delta B_{\mathrm{gauge+ghost}}
+ +\Delta B_{\mathrm{KK}}
+\end{equation}
+в одной product heat-kernel/дзета-схеме. Kill-критерий остаётся
+\(B_{\mathrm{full}}\le0\).
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_product_heat_kernel_kappa_results.json}.

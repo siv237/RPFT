@@ -1,0 +1,206 @@
+\chapter{Gaussian bare spectral action как parent topology measure}
+
+Counterterm gate показал, что renormalized one-loop determinant не может
+сам выбрать topology без заранее фиксированных finite couplings. Однако в
+исходной spectral-action программе существует более ранний объект: bare
+Wilsonian action на физическом cutoff,
+\begin{equation}
+ S_{\rm bare}[D;\Lambda]
+ =\Tr f(D^2/\Lambda^2).
+ \label{eq:gaussian-bare-spectral-action}
+\end{equation}
+В первоначальном spectral-action principle этот functional именно так и
+интерпретируется на scale \(\Lambda\); см. arXiv:hep-th/9606001. TOE
+дополнительно выделяет Gaussian profile, поэтому проверим, фиксирует ли он
+topology weights без отдельного counterterm choice.
+
+\section{Gaussian moments}
+
+Для
+\begin{equation}
+ f(u)=e^{-u}
+\end{equation}
+в принятой Laplace convention
+\begin{equation}
+ f_2=\int_0^\infty e^{-u}\,du=1,
+ \qquad
+ f_0=f(0)=1.
+\end{equation}
+Следовательно, Einstein и \(a_4\) coefficients на bare matching scale не
+являются независимыми moments. В частности, pure Dirac gravitational block
+имеет
+\begin{equation}
+ a_4(D_M^2)
+ =\frac1{360(4\pi)^2}
+ \int_M\left(11E_4-18W^2\right).
+ \label{eq:dirac-a4-ew-ledger}
+\end{equation}
+Отношение \(W^2:E_4=-18:11\) совпадает с standard NCG gravitational
+coefficients; см. arXiv:1101.2174.
+
+На unit-volume carriers предыдущий invariant ledger даёт
+\begin{equation}
+ \Delta a_4
+ :=a_4(S^4)-a_4(S^2\times S^2)
+ =\frac{13}{90}>0.
+ \label{eq:dirac-a4-carrier-difference}
+\end{equation}
+Таким образом, isolated scale-independent \(a_4\) term предпочитает
+\(S^2\times S^2\). Но полный Gaussian action содержит все heat coefficients,
+и при cutoff вне asymptotic regime truncation недопустима.
+
+\section{Exact Dirac heat traces}
+
+Для round \(S^4_a\) spectrum равен
+\begin{equation}
+ \lambda_\ell(D)=\pm\frac{\ell+2}{a},
+ \qquad
+ d_\ell(D^2)=8\binom{\ell+3}{3},
+ \qquad \ell=0,1,\ldots.
+ \label{eq:s4-dirac-spectrum}
+\end{equation}
+Эта standard sphere formula также используется в exact spectral-action
+computations, например arXiv:0812.0165.
+
+Для round \(S^2_b\)
+\begin{equation}
+ \lambda_\ell(D)=\pm\frac{\ell+1}{b},
+ \qquad
+ d_\ell(D^2)=4(\ell+1).
+\end{equation}
+На product spin structure
+\begin{equation}
+ D_{22}^2=D_1^2\otimes1+1\otimes D_2^2,
+\end{equation}
+поэтому heat trace factorizes.
+
+При unit four-volume радиусы равны
+\begin{equation}
+ a=\left(\frac3{8\pi^2}\right)^{1/4},
+ \qquad
+ b=\left(\frac1{16\pi^2}\right)^{1/4}.
+\end{equation}
+Определим
+\begin{equation}
+ \Delta_D(t)
+ =\Tr_{S^4}e^{-tD^2}
+ -\Tr_{S^2\times S^2}e^{-tD^2}.
+\end{equation}
+Exact converged sum имеет единственный crossing
+\begin{equation}
+ \boxed{t_*=0.124153169935769\ldots.}
+ \label{eq:gaussian-dirac-crossing}
+\end{equation}
+Для positive bare spectral action:
+\begin{equation}
+ \begin{cases}
+ \Delta_D(t)<0,&0<t<t_*,\quad S^4\text{ preferred},\\
+ \Delta_D(t)>0,&t>t_*,\quad S^2\times S^2\text{ preferred}.
+ \end{cases}
+\end{equation}
+\begin{center}
+\begin{tabular}{c|ccc}
+\(t\)&\(\Tr_{S^4}\)&\(\Tr_{22}\)&\(\Delta_D\)\\
+\hline
+0.05&7.65996799&7.97876190&-0.31879391\\
+0.10&1.36614316&1.41866347&-0.05252031\\
+0.15&0.40015513&0.37404925&+0.02610588\\
+0.20&0.13516108&0.10520603&+0.02995505\\
+\end{tabular}
+\end{center}
+
+\begin{theorem}[Exact Gaussian topology window]
+Gaussian bare Dirac spectral action фиксирует finite topology measure, но
+не выбирает carrier scale-independently. Он выбирает \(S^4\) только в
+ultraviolet window \(t<t_*\) и \(S^2\times S^2\) при более крупном heat
+time.
+\end{theorem}
+
+\section{Almost-commutative factorization}
+
+Для constant finite vacuum без background gauge curvature
+\begin{equation}
+ D=D_M\otimes1+\gamma^5\otimes D_F
+\end{equation}
+даёт
+\begin{equation}
+ D^2=D_M^2\otimes1+1\otimes D_F^2,
+\end{equation}
+и поэтому
+\begin{equation}
+ \Tr e^{-tD^2}
+ =\Tr e^{-tD_M^2}\,
+  \Tr e^{-tD_F^2}.
+ \label{eq:almost-commutative-heat-factorization}
+\end{equation}
+Второй factor строго положителен. Следовательно, finite algebra, constant
+Yukawa spectrum и multiplicities не меняют carrier ordering exact bare
+action. Это существенно сильнее scalar heat-state test: получен независимый
+spinorial parent trace.
+
+\section{Совместимость с correlation-cell scale}
+
+Условный correlation-cell minimum ранее дал
+\begin{equation}
+ \frac a\sigma=1.35139219568654\ldots.
+\end{equation}
+После unit-volume rescaling это соответствует
+\begin{equation}
+ t_{\rm corr}=\sigma^2
+ =\left(\frac{a}{1.35139219568654\ldots}\right)^2
+ =0.106734039959646\ldots.
+\end{equation}
+Поскольку
+\begin{equation}
+ t_{\rm corr}<t_*,
+\end{equation}
+exact Dirac action в этой точке независимо предпочитает \(S^4\):
+\begin{equation}
+ \Delta_D(t_{\rm corr})=-0.034581798856\ldots.
+\end{equation}
+
+\begin{proposition}[Conditional two-functional compatibility]
+Scalar correlation-cell principle и Gaussian bare Dirac spectral action
+совместимы на найденном scale ratio: оба выделяют \(S^4\). Это не
+независимый вывод \(t\), поскольку \(t_{\rm corr}\) получен после
+\(S^4\)-stationarity, но это нетривиальный cross-operator consistency test.
+\end{proposition}
+
+\section{Почему quantum ambiguity не исчезла полностью}
+
+Bare spectral action задаёт boundary values finite couplings при
+\(\mu=\Lambda\). Renormalized quantum action может от них уйти по RG flow.
+Текущий field ledger не supersymmetric:
+\begin{equation}
+ \Str\mathbf1=6-8=-2,
+ \qquad
+ \frac{\Str M^2}{\chi^2}=13,
+ \qquad
+ \frac{\Str M^4}{\chi^4}=67.
+\end{equation}
+Поэтому local quantum terms не сокращаются автоматически. Для physical
+low-scale verdict потребуется RG evolution от spectral boundary condition и
+vector-mass completion.
+
+Кроме того, ordering crossing означает, что identification
+\(t=\Lambda^{-2}=\sigma^2\) должна быть частью parent theory. Если cutoff и
+correlation length независимы, их ratio снова становится новой ручкой.
+
+\begin{nogocriterion}[Запрет post-hoc cutoff window]
+Нельзя выбирать \(t<t_*\) после обнаружения того, что это окно предпочитает
+\(S^4\). Relation \(\Lambda\sigma=1\) либо иной fixed ratio должна быть
+объявлена до carrier comparison и выдержать RG/EFT consistency test.
+\end{nogocriterion}
+
+\begin{theorem}[Gaussian bare-action verdict]
+В корпусе найден первый конкретный механизм, фиксирующий finite
+gravitational and topology weights: fundamental Gaussian bare spectral
+action. Exact Dirac trace условно согласуется с \(S^4\) correlation vacuum
+и не требует uncontrolled Seeley--DeWitt truncation. Полное физическое
+замыкание остаётся открытым из-за cutoff/correlation identification,
+quantum RG shifts и происхождения massive-vector sector.
+\end{theorem}
+
+Машинный exact-spectrum audit сохранён в
+\path{s2t_v4_gaussian_bare_spectral_topology_gate.py} и
+\path{s2t_v4_gaussian_bare_spectral_topology_gate_results.json}.

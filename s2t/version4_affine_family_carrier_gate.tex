@@ -1,0 +1,87 @@
+\chapter{Аффинный family-carrier и канонический триплет}
+
+Frozen-\(K\) no-go запрещает арифметически выбирать три из четырёх
+spin-структур. Но множество spin-структур является affine torsor над
+\begin{equation}
+H^1(K;\mathbb Z_2)\cong\mathbb F_2^2.
+\end{equation}
+Поэтому можно проверить более сильную гипотезу: полная affine group этого
+абстрактного меню является физической family symmetry.
+
+\section{Полная affine group}
+
+Группа
+\begin{equation}
+\operatorname{AGL}(2,2)=\mathbb F_2^2\rtimes GL(2,2)
+\end{equation}
+имеет порядок
+\begin{equation}
+4\cdot6=24
+\end{equation}
+и действует на четырёх точках как полный \(S_4\). Пусть
+\(\mathbb C^4\) --- её permutation representation, а \(J\) --- матрица из
+единиц. Тогда group average равен
+\begin{equation}
+P_1=\frac{J}{4}.
+\end{equation}
+Это ортогональный projector на uniform singlet. Дополнительный projector
+\begin{equation}
+P_3=I-\frac{J}{4}
+\end{equation}
+имеет rank три и выделяет sum-zero subspace.
+
+\begin{theorem}[Каноническое разложение affine menu]
+Permutation representation полной \(\operatorname{AGL}(2,2)\) разлагается
+как
+\begin{equation}
+\mathbb C^4=\mathbf1_{\rm unif}\oplus\mathbf3_{\rm sum\text{-}zero}.
+\end{equation}
+Коммутант полного действия равен \(\operatorname{span}\{I,J\}\), поэтому на
+\(\operatorname{im}P_3\) каждый invariant endomorphism скалярен. Триплет
+является каноническим irreducible carrier, а не выбором трёх точек.
+\end{theorem}
+
+Два простейших invariant operators демонстрируют split:
+\begin{align}
+L_{K_4}=4I-J&:\quad \Spec=(0,4,4,4),\\
+J&:\quad \Spec=(4,0,0,0).
+\end{align}
+Первый оставляет uniform zero-mode, второй делает singlet тяжёлым и оставляет
+rank-three kernel.
+
+\section{Связь с generation atom}
+
+Если \(H_{\rm gen}\) обозначает 16-мерный generation atom предыдущей главы,
+то candidate observed module имеет вид
+\begin{equation}
+H_{\rm obs}^{(3)}=\operatorname{im}P_3\otimes H_{\rm gen}.
+\end{equation}
+Он содержит три одинаковых anomaly-free поколения. Anomaly polynomial
+умножается на три и остаётся нулевым.
+
+\begin{proposition}[Условный selector числа поколений]
+Если полная affine symmetry spin-torsor является физической family symmetry
+и uniform singlet исключён invariant operator-ом \(J\), то число light
+generation copies равно rank \(P_3=3\).
+\end{proposition}
+
+\section{Статус нового принципа}
+
+Полная \(S_4\)-симметрия не следует из diffeomorphism group замороженного
+\(K\). Она действует на абстрактном menu spin-структур и потому является
+новым family postulate. Это честно снимает запрет ``\(4-1=3\)'': теперь
+вычитание реализовано каноническим invariant projector, но происхождение
+самой полной affine symmetry остаётся открытым.
+
+Кроме того, точная symmetry делает три поколения вырожденными. Она не
+выводит mass hierarchy, CKM, PMNS или CP violation.
+
+\begin{nogocriterion}[Запрет объявления полной family theory]
+До вывода affine action из parent functional и до построения заранее
+фиксированного symmetry-breaking operator результат имеет статус
+условного family carrier. Нельзя подставлять произвольную \(3\times3\)
+Yukawa matrix и считать иерархию объяснённой.
+\end{nogocriterion}
+
+Машинная проверка всех 24 affine permutations и их commutant сохранена в
+\path{s2t_v4_affine_family_carrier_gate_results.json}.

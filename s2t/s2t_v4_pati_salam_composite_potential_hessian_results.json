@@ -1,0 +1,60 @@
+{
+  "random_seed": 20260813,
+  "random_trace_tests": 100,
+  "physical_half_trace_identities": {
+    "half_Tr_D2": "(Tr Delta^dagger Delta)^2",
+    "half_Tr_D4": "(Tr (Delta^dagger Delta)^2)^2",
+    "maximum_D2_identity_error": 2.2737367544323206e-13,
+    "maximum_D4_identity_error": 1.7462298274040222e-10
+  },
+  "normalized_potential": "V=-rho^2+tau^2",
+  "definitions": {
+    "rho": "(x0 - I*x1)*(x0 + I*x1) + (x10 - I*x11)*(x10 + I*x11) + (x12 - I*x13)*(x12 + I*x13) + (x14 - I*x15)*(x14 + I*x15) + (x2 - I*x3)*(x2 + I*x3) + (x4 - I*x5)*(x4 + I*x5) + (x6 - I*x7)*(x6 + I*x7) + (x8 - I*x9)*(x8 + I*x9)",
+    "tau": "((x0 - I*x1)*(x0 + I*x1) + (x8 - I*x9)*(x8 + I*x9))**2 + 2*((x0 - I*x1)*(x2 + I*x3) + (x10 + I*x11)*(x8 - I*x9))*((x0 + I*x1)*(x2 - I*x3) + (x10 - I*x11)*(x8 + I*x9)) + 2*((x0 - I*x1)*(x4 + I*x5) + (x12 + I*x13)*(x8 - I*x9))*((x0 + I*x1)*(x4 - I*x5) + (x12 - I*x13)*(x8 + I*x9)) + 2*((x0 - I*x1)*(x6 + I*x7) + (x14 + I*x15)*(x8 - I*x9))*((x0 + I*x1)*(x6 - I*x7) + (x14 - I*x15)*(x8 + I*x9)) + ((x10 - I*x11)*(x10 + I*x11) + (x2 - I*x3)*(x2 + I*x3))**2 + 2*((x10 - I*x11)*(x12 + I*x13) + (x2 - I*x3)*(x4 + I*x5))*((x10 + I*x11)*(x12 - I*x13) + (x2 + I*x3)*(x4 - I*x5)) + 2*((x10 - I*x11)*(x14 + I*x15) + (x2 - I*x3)*(x6 + I*x7))*((x10 + I*x11)*(x14 - I*x15) + (x2 + I*x3)*(x6 - I*x7)) + ((x12 - I*x13)*(x12 + I*x13) + (x4 - I*x5)*(x4 + I*x5))**2 + 2*((x12 - I*x13)*(x14 + I*x15) + (x4 - I*x5)*(x6 + I*x7))*((x12 + I*x13)*(x14 - I*x15) + (x4 + I*x5)*(x6 - I*x7)) + ((x14 - I*x15)*(x14 + I*x15) + (x6 - I*x7)*(x6 + I*x7))**2"
+  },
+  "rank_one_standard_model_candidate": {
+    "nonzero_real_coordinate_indices": [
+      0
+    ],
+    "vacuum_entry": "2**(3/4)/2",
+    "potential_value": "-1/4",
+    "maximum_gradient_norm": 0.0,
+    "exact_hessian_eigenvalues": {
+      "8*sqrt(2)": 1,
+      "0": 9,
+      "-2*sqrt(2)": 6
+    },
+    "hessian_signature": {
+      "positive": 1,
+      "zero": 9,
+      "negative": 6
+    }
+  },
+  "rank_two_preferred_stationary_point": {
+    "nonzero_real_coordinate_indices": [
+      0,
+      10
+    ],
+    "vacuum_entry": "2**(3/4)/2",
+    "potential_value": "-1",
+    "maximum_gradient_norm": 0.0,
+    "exact_hessian_eigenvalues": {
+      "8*sqrt(2)": 3,
+      "16*sqrt(2)": 1,
+      "0": 12
+    },
+    "hessian_signature": {
+      "positive": 4,
+      "zero": 12,
+      "negative": 0
+    }
+  },
+  "energy_difference_rank_two_minus_rank_one": "-3/4",
+  "universal_radial_extension_no_go": {
+    "potential": "f(rho)+b tau^2, b>0",
+    "rank_one_radial_stationarity": "f'(p)+4 b p^3=0",
+    "orthogonal_rank_growth_coefficient": "f'(p)=-4 b p^3<0",
+    "conclusion": "a norm-only singlet cannot stabilize rank one"
+  },
+  "required_repair": "derive a representation-sensitive rank selector, for example an independent det(Delta Delta^dagger) invariant or a connected adjoint coupling"
+}

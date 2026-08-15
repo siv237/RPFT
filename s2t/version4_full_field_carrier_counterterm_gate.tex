@@ -1,0 +1,159 @@
+\chapter[Full-field carrier gate: counterterm obstruction]{Full-field carrier
+gate: counterterm obstruction до вычисления determinants}
+
+Negative-space audit выделил следующий расчёт: сравнить полный
+scalar--vector--ghost--Dirac fluctuation action на unit-volume \(S^4\) и
+\(S^2\times S^2\). Перед вычислением бесконечных spectral products нужно
+проверить, существует ли вообще scheme-independent cross-topology answer.
+
+\section{Общая структура one-loop action}
+
+Формальный ledger имеет вид
+\begin{equation}
+ \Gamma_{\rm 1loop}[M]
+ =\frac12\sum_b n_b\log\det\mathcal L_b[M]
+ -\frac12\sum_f n_f\log\det\mathcal D_f^2[M]
+ +\Gamma_{\rm ghost}[M].
+ \label{eq:full-field-one-loop-ledger}
+\end{equation}
+Для Тома IV он содержит три physical scalars, massive vector с ghost
+subtraction и две Dirac pairs. Проверенный flat-limit coefficient
+\begin{equation}
+ \operatorname{Str}M^4=67\chi^4
+\end{equation}
+фиксирует multiplicities, но не finite curved-space action.
+
+Heat-kernel renormalization в четырёх измерениях допускает local functional
+\begin{equation}
+ \Gamma_{\rm local}^{\rm ren}[M]
+ =c_0\int1+c_R\int R
+ +c_{R^2}\int R^2+c_{\rm Ric}\int R_{\mu\nu}R^{\mu\nu}
+ +c_{\rm Riem}\int R_{\mu\nu\rho\sigma}R^{\mu\nu\rho\sigma}.
+ \label{eq:curved-counterterm-basis}
+\end{equation}
+Эквивалентный basis использует \(W^2\) и Euler density \(E_4\). Divergent
+parts фиксируют running, но finite parts остаются renormalization conditions.
+Стандартная heat-kernel структура подтверждается внешним reference
+arXiv:hep-th/0306138.
+
+\section{Unit-volume invariant ledger}
+
+Для
+\begin{equation}
+ \operatorname{Vol}(S^4_a)=1,
+ \qquad
+ \operatorname{Vol}(S^2_b\times S^2_b)=1
+\end{equation}
+радиусы равны
+\begin{equation}
+ a=0.441502208724\ldots,
+ \qquad
+ b=0.282094791774\ldots.
+\end{equation}
+Прямое curvature computation даёт
+\begin{center}
+\begin{tabular}{c|cc|c}
+ invariant & \(S^4\) & \(S^2\times S^2\) & \(S^4-S^2\times S^2\)\\
+\hline
+\(\int1\) & \(1\) & \(1\) & \(0\)\\
+\(\int R\) & \(61.56239185\) & \(50.26548246\) & \(11.29690939\)\\
+\(\int R^2\) & \(384\pi^2\) & \(256\pi^2\) & \(128\pi^2\)\\
+\(\int \mathrm{Ric}^2\) & \(96\pi^2\) & \(64\pi^2\) & \(32\pi^2\)\\
+\(\int \mathrm{Riem}^2\) & \(64\pi^2\) & \(128\pi^2\) & \(-64\pi^2\)\\
+\(\int W^2\) & \(0\) & \(256\pi^2/3\) & \(-256\pi^2/3\)\\
+\(\int E_4\) & \(64\pi^2\) & \(128\pi^2\) & \(-64\pi^2\)\\
+\(\chi_{\rm Euler}\) & \(2\) & \(4\) & \(-2\)\\
+\end{tabular}
+\end{center}
+Equal volume удаляет только cosmological difference. Уже Einstein term
+различает manifolds, а quadratic terms дают ещё два независимых направления.
+
+\section{Явный reversal theorem}
+
+Пусть \(\Delta\Gamma=\Gamma[S^4]-\Gamma[S^2\times S^2]\). Finite shift
+\begin{equation}
+ \Gamma\longmapsto\Gamma+c_W\int W^2
+\end{equation}
+меняет comparison на
+\begin{equation}
+ \Delta\Gamma\longmapsto
+ \Delta\Gamma-c_W\frac{256\pi^2}{3}.
+\end{equation}
+При любом конечном исходном \(\Delta\Gamma\) выбор знака и magnitude
+\(c_W\) может сделать победителем любой carrier. Даже если \(c_W\)
+запрещён отдельным принципом, topology weight
+\begin{equation}
+ c_E\int E_4
+\end{equation}
+сдвигает difference на \(-64\pi^2c_E\). Euler term не меняет local field
+equations внутри фиксированной topology, но непосредственно меняет
+относительный вес разных topologies, то есть именно искомый carrier verdict.
+
+\begin{theorem}[Cross-topology scheme obstruction]
+Полный one-loop determinant на \(S^4\) и \(S^2\times S^2\) не задаёт
+scheme-independent ordering, пока заранее не фиксированы finite Einstein,
+Weyl-squared и Euler/topology coefficients. Spectral sums могут вычислить
+nonlocal residual только после этих условий; сами они не выбирают условия
+renormalization.
+\end{theorem}
+
+\section{Почему minimal subtraction недостаточна}
+
+Можно объявить minimal subtraction и получить определённое число. Но это
+будет answer в выбранной scheme, а не вывод carrier. Замена scheme конечным
+local counterterm оставляет все scattering amplitudes после соответствующей
+перенормировки couplings согласованными, но меняет cross-topology vacuum
+weight.
+
+Поэтому preregistration ``использовать MS'' закрывает computational test,
+но не physical selector gate. Для физического статуса coefficients должны
+быть получены из parent spectral action, symmetry, UV completion или
+независимых normalization conditions до сравнения carriers.
+
+\section{Дополнительный vector-mass разрыв}
+
+Формальная Proca/Stueckelberg комбинация
+\begin{equation}
+ \frac12\log\det(\Delta_1+3\chi^2)
+ -\frac12\log\det(\Delta_0+3\chi^2)
+\end{equation}
+корректно оставляет massive-vector physical modes. Однако три перечисленных
+scalars имеют \(m_s^2=4\chi^2\) и являются physical quotient coordinates,
+а не поглощённым Goldstone mode. Следовательно, origin vector mass и его
+curved-space completion должны быть объявлены до full determinant. Это не
+ошибка ledger, а дополнительный отсутствующий parent datum.
+
+\section{Исправленный следующий расчёт}
+
+До spectral determinant computation необходимо заморозить:
+\begin{enumerate}
+ \item renormalized Newton coefficient;
+ \item \(W^2\)-coefficient;
+ \item Euler/topology weight;
+ \item scalar nonminimal curvature couplings;
+ \item Proca, Higgs или Stueckelberg origin vector mass.
+\end{enumerate}
+После этого допустимо вычислять
+\begin{equation}
+ \Gamma_{\rm nonlocal}^{\rm ren}[S^4]
+ -\Gamma_{\rm nonlocal}^{\rm ren}[S^2\times S^2]
+\end{equation}
+и полный geometry Hessian.
+
+\begin{nogocriterion}[Запрет determinant без topology measure]
+Нельзя объявлять carrier выбранным по zeta determinant, если finite
+\(W^2\) и Euler coefficients не были фиксированы до расчёта. Такой verdict
+является выбором topology measure, замаскированным под regularization.
+\end{nogocriterion}
+
+\begin{theorem}[Full-field gate verdict]
+Главный пропущенный расчёт локализован ещё точнее. Сначала требуется не
+бесконечная spectral сумма, а parent derivation finite gravitational and
+topological counterterms. Без неё full-field carrier comparison
+underdetermined. После неё nonlocal determinant становится корректным и
+проверяемым вторым этапом TOE~6.5.
+\end{theorem}
+
+Машинный invariant ledger сохранён в
+\path{s2t_v4_full_field_carrier_counterterm_gate.py} и
+\path{s2t_v4_full_field_carrier_counterterm_gate_results.json}.

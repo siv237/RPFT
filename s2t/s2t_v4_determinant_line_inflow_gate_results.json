@@ -1,0 +1,29 @@
+{
+  "gate": "version4_determinant_line_inflow",
+  "pfaffian_circle_sections": {
+    "W_minus_one_half": "-(exp(I*theta) + 2)*exp(-3*I*theta)/2",
+    "W_plus_one_half": "(exp(I*theta) - 2)*exp(-3*I*theta)/2"
+  },
+  "circle_sections_never_zero": true,
+  "circle_phase_winding": {
+    "W_minus_one_half": -3,
+    "W_plus_one_half": -3
+  },
+  "explicit_nonzero_section_trivializes_complex_line": true,
+  "branch_interpolation": {
+    "H_d_t": "(1-t) H_d_minus + t H_d_plus",
+    "connector": "exp(i pi t)",
+    "determinant": "-(2*t*exp(I*pi*t) - exp(I*pi*t) - 2)*exp(-3*I*pi*t)/2",
+    "analytic_modulus_lower_bound": "1",
+    "minimum_sampled_modulus": 1.0,
+    "phase_change_in_pi_units": -3.0,
+    "zero_crossing": false,
+    "spectral_flow": 0
+  },
+  "vectorlike_local_anomaly_cancellation": true,
+  "finite_family_graph_supplies_spacetime_bulk_extension": false,
+  "dai_freed_inflow_selector_available": false,
+  "global_determinant_line_orientation_derived": false,
+  "new_chiral_or_bulk_sector_required_for_nontrivial_inflow": true,
+  "status": "the Pfaffian line is explicitly trivial over the connector circle and the two branches are connected without zero crossing; anomaly-free vectorlike content supplies no nontrivial inflow selector"
+}

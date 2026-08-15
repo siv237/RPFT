@@ -1,0 +1,106 @@
+\chapter{Modular endpoint intertwiners: leading split и partial pass}
+
+Universal no-go предыдущей главы использовал
+\(L_sL_s^\dagger=2I\). Чтобы изменить leading endpoint metric без
+произвольных matrices, построим GNS/KMS weight из того же
+representation-sensitive family operator.
+
+\section{Parameter-free Gibbs state}
+
+Нормируем parent operator средним eigenvalue:
+\begin{equation}
+ \widehat R_s=\frac{3R_{4,s}}{\Tr R_{4,s}},
+\end{equation}
+и определим full-rank state
+\begin{equation}
+ \rho_s=\frac{e^{-\widehat R_s}}{\Tr e^{-\widehat R_s}}.
+\end{equation}
+Inverse temperature здесь равна единице по определению dimensionless
+normalization; новый continuous flavour parameter не вводится.
+
+Для quark sectors spectra \(\rho_s\) приблизительно равны
+\begin{align}
+ \Spec\rho_u&=(0.2184,\,0.3602,\,0.4214),\\
+ \Spec\rho_d&=(0.2169,\,0.3620,\,0.4210).
+\end{align}
+Они full-rank и различают три family directions уже в leading metric.
+
+\section{Три модульные ориентации}
+
+Пусть \(S_s=\rho_s^{1/2}\). До mass data фиксируем три стандартных placement
+типа:
+\begin{align}
+ L_s^{L}&=(S_sA_s,S_sB_s),\\
+ L_s^{R}&=(A_sS_s,B_sS_s),\\
+ L_s^{KMS}&=(S_sA_sS_s,S_sB_sS_s).
+\end{align}
+Первые два меняются местами при left/right conjugation, третий является
+симметричным placement. Для left GNS точно
+\begin{equation}
+ L_s^L(L_s^L)^\dagger=2\rho_s,
+\end{equation}
+так что light-family split возникает на порядке \(t^{-1}\). Тем самым
+bounded-propagator theorem действительно обойдён, а не замаскирован.
+
+\begin{proposition}[Leading-metric escape]
+Modular endpoint weighting является первым рассмотренным механизмом, который
+меняет coefficient leading Schur term из scalar \(2I\) в sector-relative
+family density matrix без независимых Yukawa inputs.
+\end{proposition}
+
+\section{Mass train}
+
+Для каждого placement перебраны все шестнадцать sign cocycles; общий
+messenger ratio \(t\) обучается только по четырём quark mass ratios. Лучшим
+оказывается KMS-symmetric branch:
+\begin{equation}
+ (\epsilon_{00},\epsilon_{01},\epsilon_{10},\epsilon_{11})
+ =(-1,-1,-1,-1),
+ \qquad t=205.3797.
+\end{equation}
+Он даёт
+\begin{align}
+ u&=(0.00111544,\,0.00137766,\,1),\\
+ d&=(0.00112270,\,0.00133565,\,1).
+\end{align}
+По сравнению с bounded branch maximum mass error уменьшается с \(98.4\) до
+\(89.1\), но middle generations остаются слишком лёгкими: errors составляют
+примерно \(5.34\) для charm и \(16.73\) для strange.
+
+\section{CKM blind}
+
+После заморозки mass-selected branch
+\begin{equation}
+ |V_q|\simeq
+ \begin{pmatrix}
+ 0.98988&0.14187&0.000320\\
+ 0.14187&0.98988&0.0000747\\
+ 0.000327&0.0000304&1
+ \end{pmatrix}.
+\end{equation}
+Первый angle теперь имеет правильный качественный scale:
+\begin{equation}
+ s_{12}=0.1419\simeq0.63\,s_{12}^{\rm CKM}.
+\end{equation}
+Однако \(s_{23}\) подавлен примерно в \(560\) раз, \(s_{13}\) --- примерно в
+\(12\) раз, а
+\begin{equation}
+ |J_q|\simeq5.98\times10^{-10}
+\end{equation}
+остаётся примерно в \(5.2\times10^4\) раз меньше наблюдаемого.
+
+\begin{theorem}[Modular endpoint partial pass]
+Gibbs/GNS weighting успешно снимает leading light-pair degeneracy и создаёт
+Cabibbo-plane rotation без flavour coefficients. Но parameter-free
+unit-temperature state недостаточно anisotropic: mass train и полный CKM
+blind test остаются проваленными.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет fitted modular temperature]
+Нельзя обучать отдельные inverse temperatures \(\beta_s\) по fermion masses.
+Следующий pass допустим только если temperature или modular spectrum выводятся
+из единого boundary variational principle.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_modular_endpoint_intertwiner_gate_results.json}.

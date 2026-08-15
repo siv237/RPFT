@@ -1,0 +1,95 @@
+\chapter{Affine-invariant modular temperature: второй partial pass}
+
+Unit-temperature Gibbs state зависел от normalization parent operator по
+среднему eigenvalue. Чтобы вывести modular scale без flavour fit, потребуем
+инвариантность относительно всех положительных affine replacements
+\(R_s\mapsto aR_s+bI\).
+
+\section{Стандартизованный parent operator}
+
+Положим
+\begin{align}
+ \mu_s&=\frac13\Tr R_{4,s},\\
+ \sigma_s^2&=\frac13\Tr(R_{4,s}-\mu_sI)^2,\\
+ Z_s&=\frac{R_{4,s}-\mu_sI}{\sigma_s}.
+\end{align}
+Тогда \(\Tr Z_s=0\), \(\frac13\Tr Z_s^2=1\), а \(Z_s\) не меняется при
+\(R_s\mapsto aR_s+bI\), \(a>0\).
+
+Рассмотрим free-energy functional на density matrices
+\begin{equation}
+ \mathcal F_s(\rho)=\Tr(\rho Z_s)+\Tr(\rho\log\rho),
+ \qquad \Tr\rho=1.
+\end{equation}
+Его единственный minimum равен
+\begin{equation}
+ \rho_s^\star=\frac{e^{-Z_s}}{\Tr e^{-Z_s}}.
+\end{equation}
+Таким образом, effective inverse temperature \(\beta_s=\sigma_s^{-1}\)
+выводится из spectral variance, а не обучается по массам.
+
+\begin{theorem}[Affine modular-scale derivation]
+Стандартизация по mean и spectral variance является единственной affine
+normalization, одновременно фиксирующей первый и второй central moments.
+Entropy-regularized variational principle после неё однозначно задаёт Gibbs
+state без continuous temperature input.
+\end{theorem}
+
+Для quarks получаются более anisotropic spectra
+\begin{align}
+ \Spec\rho_u&=(0.05749,\,0.34272,\,0.59979),\\
+ \Spec\rho_d&=(0.05739,\,0.34886,\,0.59375).
+\end{align}
+
+\section{Mass train}
+
+Повторный полный перебор left GNS, right GNS и KMS-symmetric placements,
+шестнадцати sign cocycles и одного общего messenger ratio выбирает
+\begin{equation}
+ L_s^{KMS},
+ \qquad
+ (\epsilon_{00},\epsilon_{01},\epsilon_{10},\epsilon_{11})=(-1,-1,-1,-1),
+ \qquad
+ t=243.2865.
+\end{equation}
+Нормированные quark masses равны
+\begin{align}
+ u&=(0.00086849,\,0.00180844,\,1),\\
+ d&=(0.00092143,\,0.00159191,\,1).
+\end{align}
+Maximum error уменьшается до \(69.36\), а errors charm и strange --- до
+\(4.07\) и \(14.04\). Иерархия улучшается, но mass train ещё не пройден.
+
+\section{CKM blind}
+
+Mass-selected branch предсказывает
+\begin{equation}
+ |V_q|\simeq
+ \begin{pmatrix}
+ 0.96287&0.26998&0.000403\\
+ 0.26998&0.96287&0.000173\\
+ 0.000435&0.0000584&1
+ \end{pmatrix}.
+\end{equation}
+Cabibbo angle теперь отличается от target только множителем
+\begin{equation}
+ \frac{s_{12}}{s_{12}^{\rm CKM}}=1.20.
+\end{equation}
+Но \(s_{23}\) всё ещё подавлен примерно в \(241\) раз, \(s_{13}\) --- в
+\(9.3\) раза, а \(|J_q|\simeq6.61\times10^{-10}\).
+
+\begin{theorem}[Affine modular partial pass]
+Variationally derived affine temperature усиливает family anisotropy,
+улучшает mass hierarchy и выводит Cabibbo angle с правильным scale без его
+использования в train. Однако один density operator по-прежнему ориентирует
+почти исключительно \(1\)--\(2\) plane и не закрывает full CKM/CP sector.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет CKM-driven second constraint]
+Нельзя вводить второй modular multiplier после открытия \(s_{23}\) и
+\(s_{13}\). Дополнительный constraint допустим только если он заранее следует
+из независимого spectral moment или boundary conservation law.
+\end{nogocriterion}
+
+Машинный ledger сохранён в
+\path{s2t_v4_affine_modular_temperature_gate_results.json}.

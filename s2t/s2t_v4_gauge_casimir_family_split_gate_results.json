@@ -1,0 +1,140 @@
+{
+  "gate": "version4_gauge_casimir_family_split",
+  "weight_definition": "C_s=g3^2 C3+g2^2 C2+g1^2 T1^2",
+  "gut_normalized_hypercharge": true,
+  "casimir_weights_symbolic": {
+    "u": [
+      "g1_squared/60 + 3*g2_squared/4 + 4*g3_squared/3",
+      "4*g1_squared/15 + 4*g3_squared/3"
+    ],
+    "d": [
+      "g1_squared/60 + 3*g2_squared/4 + 4*g3_squared/3",
+      "g1_squared/15 + 4*g3_squared/3"
+    ],
+    "nu": [
+      "3*g1_squared/20 + 3*g2_squared/4",
+      "0"
+    ],
+    "e": [
+      "3*g1_squared/20 + 3*g2_squared/4",
+      "3*g1_squared/5"
+    ]
+  },
+  "down_electron_ratio_split_polynomial": "-(2*g1_squared*g2_squared + 3*g1_squared*g3_squared - 5*g2_squared*g3_squared)/5",
+  "down_electron_degenerate_at_equal_couplings": true,
+  "coupling_source": "frozen MZ gauge-train ledger",
+  "couplings": {
+    "g1": 0.4614234244528176,
+    "g2": 0.651723832904323,
+    "g3": 1.2177157847767197
+  },
+  "sectors": {
+    "u": {
+      "left_weight": 2.299215468718032,
+      "right_weight": 2.033885397094847,
+      "right_to_left_ratio": 0.8845997361999636,
+      "ground_vector": [
+        0.941024378742,
+        0.29675247736,
+        -0.162514878686
+      ],
+      "normalized_masses": [
+        0.187192140102,
+        0.378317574937,
+        1.0
+      ]
+    },
+    "d": {
+      "left_weight": 2.299215468718032,
+      "right_weight": 1.991303081768094,
+      "right_to_left_ratio": 0.8660793687502372,
+      "ground_vector": [
+        0.941220693321,
+        0.294264642085,
+        -0.165867196525
+      ],
+      "normalized_masses": [
+        0.128102785256,
+        0.423189601081,
+        1.0
+      ]
+    },
+    "nu": {
+      "left_weight": 0.3504947022766912,
+      "right_weight": 0.0,
+      "right_to_left_ratio": 0.0,
+      "ground_vector": [
+        0.742664947045,
+        -0.07750159985,
+        -0.665163347195
+      ],
+      "normalized_masses": [
+        0.0,
+        0.399663612735,
+        1.0
+      ]
+    },
+    "e": {
+      "left_weight": 0.3504947022766912,
+      "right_weight": 0.12774694598025904,
+      "right_to_left_ratio": 0.36447611090969273,
+      "ground_vector": [
+        0.92430565841,
+        0.166351377169,
+        -0.343491294132
+      ],
+      "normalized_masses": [
+        0.179729634548,
+        0.342420083278,
+        1.0
+      ]
+    }
+  },
+  "distinct_ground_state_count": 4,
+  "quark_readout": {
+    "absolute_mixing_matrix": [
+      [
+        0.386420228437,
+        0.867203870796,
+        0.314065046656
+      ],
+      [
+        0.855149239143,
+        0.445332379408,
+        0.265327817319
+      ],
+      [
+        0.345541872784,
+        0.222792545492,
+        0.911572430378
+      ]
+    ],
+    "maximum_off_diagonal_entry": 0.8672038707963577,
+    "cp_invariant_im_Tr_commutator_cube": -0.2392026871934687
+  },
+  "lepton_readout": {
+    "absolute_mixing_matrix": [
+      [
+        0.765752430977,
+        0.638614064957,
+        0.07612680534
+      ],
+      [
+        0.612905356959,
+        0.760392830918,
+        0.214824966195
+      ],
+      [
+        0.194859533675,
+        0.118215137474,
+        0.973681130252
+      ]
+    ],
+    "maximum_off_diagonal_entry": 0.6386140649572519,
+    "cp_invariant_im_Tr_commutator_cube": 0.008208624255712341
+  },
+  "four_sector_structural_split": true,
+  "quark_small_mixing_pass": false,
+  "blind_status": "not blind: the four-way split uses measured low-scale gauge couplings and the quark mixing ledger fails",
+  "status": "RG-separated gauge Casimirs generate four distinct family anchors without flavour coefficients, but equal spectral couplings restore d/e degeneracy and the resulting quark readout is not viable"
+}

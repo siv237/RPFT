@@ -1,0 +1,194 @@
+\chapter{Fluctuated product triple и минимальный BV-комплекс}
+
+Gauge--KK specification gap требует не нового назначения башен, а явного
+локального lift уже построенного finite-блока. Минимальный
+almost-commutative кандидат в интерпретации \(K\) как четырёхмерной базы
+задаётся данными
+\begin{align}
+ \mathcal A
+ &=C^\infty(K)\otimes A_F,
+ &
+ A_F&=\mathbb C\oplus\mathbb C,
+ \\
+ \mathcal H
+ &=L^2(K,S)\otimes H_8,
+ &
+ \mathcal D_\chi
+ &=D_K\otimes\mathbf1+\gamma_K\otimes\chi D_F^*,
+\end{align}
+где \(H_8\) --- KO6-удвоение минимального reality-квадрата, а \(D_F^*\)
+--- выбранная flattening-вакуумная орбита единичного масштаба.
+
+\section{Gauge quotient из бимодульных зарядов}
+
+Для сектора \(H_{ij}\) унитарий
+\begin{equation}
+ u=(e^{i\alpha_X},e^{i\alpha_C})\in U(A_F)
+\end{equation}
+действует фазой \(e^{i(\alpha_i-\alpha_j)}\). В порядке
+\begin{equation}
+ (H_{XX},H_{XC},H_{CX},H_{CC})
+\end{equation}
+вектор зарядов относительно
+\(\theta=\alpha_X-\alpha_C\) равен
+\begin{equation}
+ q=(0,+1,-1,0).
+\end{equation}
+Диагональная подгруппа \(\alpha_X=\alpha_C\) действует тривиально.
+Следовательно, faithful gauge quotient конечного квадрата равен
+\begin{equation}
+ G_F
+ =\frac{U(1)_X\times U(1)_C}{U(1)_{\mathrm{diag}}}
+ \simeq U(1)_{\mathrm{rel}}.
+\end{equation}
+
+Для параметров finite Dirac-блока это даёт
+\begin{equation}
+ x\longmapsto e^{-i\theta}x,
+ \qquad
+ z\longmapsto e^{+i\theta}z,
+\end{equation}
+поэтому произведение \(xz\), его фаза и flattening-потенциал
+gauge-инвариантны.
+
+\begin{theorem}[Relative-\(U(1)\) quotient pass]
+Минимальный reality-квадрат не оставляет выбор между spectator и
+динамической относительной фазой после локального lift: faithful
+непрерывный quotient единственен и равен \(U(1)_{\mathrm{rel}}\).
+Диагональный \(U(1)\) не связан с finite Dirac-блоком.
+\end{theorem}
+
+\section{Ковариантная производная и gauge mass}
+
+Положим
+\begin{equation}
+ D_\mu x=(\partial_\mu-iA_\mu)x,
+ \qquad
+ D_\mu z=(\partial_\mu+iA_\mu)z.
+\end{equation}
+В flattening-вакууме
+\begin{equation}
+ |x|=|z|=\frac{\chi}{\sqrt2}
+\end{equation}
+trace-кинетический член даёт вдоль gauge-орбиты
+\begin{equation}
+ \Tr_{\mathrm{orb}}(D_\mu\Phi D^\mu\Phi)
+ \supset4\chi^2 A_\mu A^\mu.
+\end{equation}
+Если gauge kinetic term записан как
+\begin{equation}
+ \frac1{4g^2}F_{\mu\nu}F^{\mu\nu},
+\end{equation}
+то для канонического поля \(A_\mu^{\mathrm{can}}=A_\mu/g\)
+\begin{equation}
+ \frac{m_A^2}{\chi^2}=c_A=8g^2.
+\end{equation}
+Таким образом, прежний неопределённый параметр \(c_A\) сводится к одному
+каноническому gauge coupling, а не к произвольной массе.
+
+\section{Минимальный BRST/BV complex}
+
+Для абелева quotient достаточно полей
+\begin{equation}
+ (A_\mu,x,z;c,\bar c,b).
+\end{equation}
+BRST-дифференциал фиксируется зарядами:
+\begin{align}
+ sA_\mu&=\partial_\mu c,
+ & sc&=0,
+ \\
+ sx&=-icx,
+ & sz&=+icz,
+ \\
+ s\bar c&=b,
+ & sb&=0.
+\end{align}
+В \(R_\xi\)-калибровке Goldstone и ghost получают одинаковый оператор
+\begin{equation}
+ \Delta_0+\xi m_A^2.
+\end{equation}
+Векторный principal block имеет вид
+\begin{equation}
+ \Delta_1+m_A^2
+\end{equation}
+с обычной \(\xi\)-зависимой продольной частью. В Feynman gauge
+\(\xi=1\) четыре vector-компоненты, одна Goldstone-мода и комплексная
+ghost-пара дают shorthand
+\begin{equation}
+ 4+1-2=3
+\end{equation}
+для трёх физических massive-vector степеней свободы. При общем \(\xi\)
+longitudinal vector, Goldstone и complex ghost pair имеют общий operator
+\(\Delta_0+\xi m_A^2\) и сокращаются как
+\(1+1-2=0\), оставляя те же три transverse polarizations массы \(m_A\).
+
+\begin{proposition}[BV degree-of-freedom pass]
+Gauge, Goldstone и ghost Hessian-блоки теперь происходят из одного
+relative-\(U(1)\) complex. Их zero-mode supertrace вклад равен
+\begin{equation}
+ \Delta N_{\mathrm{gauge+ghost}}
+ =3(8g^2)^2=192g^4.
+\end{equation}
+\end{proposition}
+
+\section{Field-specific product operators}
+
+Минимальный lift задаёт типы операторов:
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Сектор & Оператор на \(K\) & Bundle-данные \\
+\midrule
+radial/phase scalars & \(\Delta_0+m_s^2\) & trivial bosonic line \\
+relative vector & \(\Delta_1+m_A^2\) & trivial adjoint line \\
+Goldstone/ghost & \(\Delta_0+\xi m_A^2\) & trivial adjoint line \\
+finite fermions & \(D_K+\chi D_F^*\) & spin bundle и flat character \\
+\bottomrule
+\end{tabular}
+\end{center}
+Тем самым scalar, vector и ghost спектральные типы больше не являются
+свободным меню. Для абелева adjoint bundle flat relative holonomy не
+скручивает gauge и ghost operators; fermion block, напротив, зависит от
+spin-структуры и представления flat character.
+
+\section{Оставшиеся нормировочные данные}
+
+Product/BV lift закрывает gauge quotient, зарядовую единицу и структуру
+Hessian-комплекса. Но он ещё не фиксирует:
+\begin{enumerate}
+ \item численное значение \(g\), зависящее от общей spectral
+ normalization;
+ \item одну из допустимых spin-структур на \(K\);
+ \item flat character фермионного бимодуля;
+ \item связь radion scale с \(\chi\) внутри полного quantum vacuum;
+ \item общую finite-part prescription для разных Laplace-type operators.
+\end{enumerate}
+Поэтому полный ledger принимает более узкий вид
+\begin{equation}
+ B_{\mathrm{full}}
+ =\frac{40+192g^4+c_\sigma^2+\Delta N_{\mathrm{KK}}
+ (g,\mathfrak s,\rho_{\mathrm{flat}})}
+ {64\pi^2}.
+\end{equation}
+
+\begin{theorem}[Local product-lift milestone]
+По сравнению с предыдущим гейтом устранены две неопределённости:
+физический gauge quotient и gauge--ghost Hessian complex. Неопределённая
+gauge mass заменена вычисленной зависимостью \(c_A=8g^2\). Полное
+замыкание всё ещё требует вывести \(g\), spin/flat branch и одну общую
+регуляризацию KK-supertrace.
+\end{theorem}
+
+\begin{protocol}[Следующий гейт]
+Следует вычислить gauge kinetic coefficient из того же \(a_4\), который
+дал \(\kappa=2\), с явным orbit trace зарядов
+\begin{equation}
+ \Tr_{\mathrm{orb}}Q^2=2.
+\end{equation}
+Это должно либо зафиксировать \(g\) через один общий spectral moment, либо
+доказать, что \(f_0\) остаётся новым непрерывным входом. После этого
+разрешён spin/flat-branch KK audit.
+\end{protocol}
+
+Машинный аудит сохранён в
+\path{s2t_v3_fluctuated_product_bv_complex_results.json}.

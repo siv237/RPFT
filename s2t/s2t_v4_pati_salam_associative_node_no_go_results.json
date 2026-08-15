@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-14",
+  "random_seed": 20260814,
+  "random_tests": 200,
+  "group_level_checks": {
+    "maximum_errors": {
+      "group_exterior_square_multiplicativity_error": 5.838371970846204e-14,
+      "lie_exterior_square_commutator_error": 9.558441580393595e-15,
+      "wedge_edge_gauge_equivariance_error": 3.643092767768795e-15
+    },
+    "wedge_intertwiner_complex_rank": 8,
+    "representation_decomposition": "Hom((2,4),(1,6)) contains one (2,4) summand and one (2,20bar) summand"
+  },
+  "associative_algebra_obstruction": {
+    "median_exterior_square_additivity_defect": 23.008369821822953,
+    "minimum_exterior_square_additivity_defect": 11.741301772103109,
+    "scalar_linearity_defect_for_2I": 4.898979485566356,
+    "median_lie_map_associative_product_defect": 23.008369821822953,
+    "minimum_lie_map_associative_product_defect": 11.741301772103109,
+    "lie_map_unitality_defect": 2.449489742783178,
+    "reason": "Lambda^2 is a group representation and its derivative is a Lie-algebra representation, but neither is a unital complex-linear representation of M4(C)"
+  },
+  "pati_salam_module_ledger": {
+    "algebra": "H_R direct_sum H_L direct_sum M4(C)",
+    "irreducible_complex_left_module_dimensions": [
+      2,
+      2,
+      4
+    ],
+    "M4_active_module_dimensions_are_multiples_of": 4,
+    "one_dimensional_node_available": false,
+    "irreducible_six_dimensional_color_node_available": false,
+    "where_color_six_does_exist": "inside Sym^2((2_R,4_4)) as the scalar channel (1_R,6_4)"
+  },
+  "verdict": {
+    "equivariant_superconnection_carrier_pass": true,
+    "strict_pati_salam_finite_triple_parent_pass": false,
+    "previous_coarse_order_one_test_sufficient": false,
+    "new_color_algebra_summand_required_for_literal_six_node": true,
+    "preferred_repair": "keep the established 32-dimensional Pati-Salam Hilbert module and derive the (1_R,6_4) determinant selector as a represented universal two-form or curvature component after the junk quotient",
+    "next_gate": "compute the degree-two represented differential calculus of the existing finite Dirac seed and test whether junk projection isolates the wedge channel"
+  }
+}

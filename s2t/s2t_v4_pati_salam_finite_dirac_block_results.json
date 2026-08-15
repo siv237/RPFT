@@ -1,0 +1,116 @@
+{
+  "gate": "version4_pati_salam_finite_dirac_block",
+  "date": "2026-08-13",
+  "finite_algebra_target": "H_R direct_sum H_L direct_sum M4(C)",
+  "one_generation_particle_modules": {
+    "R": "(2_R,1_L,4_4)",
+    "L": "(1_R,2_L,4_4)",
+    "complex_dimension_R": 8,
+    "complex_dimension_L": 8,
+    "particle_dimension": 16,
+    "KO6_particle_antiparticle_dimension": 32
+  },
+  "grading_order": [
+    "R:+",
+    "L:-",
+    "R^c:-",
+    "L^c:+"
+  ],
+  "dirac_channels": {
+    "Y_LR": {
+      "matrix_shape": [
+        8,
+        8
+      ],
+      "complex_components": 64,
+      "representation": "(2_R,2_L,1_4+15_4)"
+    },
+    "M_R": {
+      "matrix_shape": [
+        8,
+        8
+      ],
+      "symmetric": true,
+      "complex_components": 36,
+      "representation": "(3_R,1_L,10_4)+(1_R,1_L,6_4)"
+    },
+    "M_L": {
+      "matrix_shape": [
+        8,
+        8
+      ],
+      "symmetric": true,
+      "complex_components": 36,
+      "representation": "(1_R,3_L,10_4)+(1_R,1_L,6_4)"
+    },
+    "total_general_complex_components": 136
+  },
+  "matrix_checks": {
+    "self_adjoint_error": 0.0,
+    "odd_grading_error": 0.0,
+    "reality_error": 0.0,
+    "J_gamma_anticommutator_error": 0.0,
+    "right_majorana_symmetry_error": 0.0,
+    "left_majorana_symmetry_error": 0.0,
+    "composite_right_majorana_symmetry_error": 2.5392938888219427e-15
+  },
+  "composite_first_order_ansatz": {
+    "fundamental_fields": {
+      "phi": {
+        "shape": [
+          2,
+          2
+        ],
+        "complex_components": 4
+      },
+      "Delta": {
+        "shape": [
+          2,
+          4
+        ],
+        "complex_components": 8
+      },
+      "Sigma_4_traceless": {
+        "shape": [
+          4,
+          4
+        ],
+        "complexified_components": 15,
+        "Hermitian_reality_components": 15
+      }
+    },
+    "complexified_input_components_before_gauge_quotient": 27,
+    "real_components_if_Sigma4_is_Hermitian": 39,
+    "general_active_Y_plus_MR_complex_components": 100,
+    "Y_formula": "(k_nu phi+k_e phi_tilde) tensor Sigma_4 + (k_u phi+k_d phi_tilde) tensor (I4-Sigma_4)",
+    "MR_formula": "k_nuR^* Delta_(a,J) Delta_(b,I)",
+    "Y_shape": [
+      8,
+      8
+    ],
+    "MR_shape": [
+      8,
+      8
+    ],
+    "MR_symmetric": true,
+    "is_nonlinear_restriction_of_general_block": true,
+    "is_derived_from_project_first_order_double_commutator": false
+  },
+  "verdict": {
+    "explicit_KO6_target_matrix_constructed": true,
+    "literature_field_representations_reproduced": true,
+    "project_spectral_triple_completed": false,
+    "missing_checks": [
+      "explicit left and opposite algebra representations",
+      "full first-order double commutator",
+      "orientability and unimodularity",
+      "inner-fluctuation derivation of the composite formulas",
+      "spectral potential and physical half-trace"
+    ],
+    "next_gate": "implement the algebra and opposite-algebra matrices and compute the exact first-order double-commutator kernel for the full and SM-restricted algebras"
+  },
+  "sources": [
+    "arXiv:1507.08161",
+    "arXiv:1304.8050"
+  ]
+}

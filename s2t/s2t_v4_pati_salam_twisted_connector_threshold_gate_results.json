@@ -1,0 +1,115 @@
+{
+  "gate": "version4_pati_salam_twisted_connector_threshold",
+  "rank_one_background": {
+    "Delta_entry": 0.8408964152537145,
+    "Majorana_nonzero_singular_square": 0.5,
+    "Sigma_B_minus_L_direction": [
+      0.75,
+      -0.25,
+      -0.25,
+      -0.25
+    ],
+    "project_Yukawa_seed": {
+      "nu": 0.7,
+      "e": 0.2,
+      "u": 1.1,
+      "d": 0.4
+    }
+  },
+  "connected_scalar_channel": {
+    "added_potential": "zeta ||Y(phi,Sigma)||_F^2",
+    "Hessian_shift": "2 zeta G_Y",
+    "Gram_eigenvalue_multiplicities": {
+      "1.99000000": 4,
+      "9.27000000": 4
+    },
+    "generalized_critical_mode_multiplicities": {
+      "1.72905791": 4,
+      "2.00000000": 4
+    },
+    "critical_zeta": 1.9999999999999996,
+    "strict_phi_stability_condition": "zeta > 2",
+    "scan": {
+      "0.0": {
+        "positive": 0,
+        "zero": 0,
+        "negative": 8,
+        "eigenvalues": [
+          -34.92338965991328,
+          -34.92338965991328,
+          -34.92338965991328,
+          -34.923389659913276,
+          -7.306610340086716,
+          -7.306610340086716,
+          -7.306610340086714,
+          -7.306610340086711
+        ]
+      },
+      "1.9": {
+        "positive": 4,
+        "zero": 0,
+        "negative": 4,
+        "eigenvalues": [
+          -0.8782419798814741,
+          -0.8782419798814741,
+          -0.8782419798814706,
+          -0.8782419798814706,
+          1.4362419798814812,
+          1.4362419798814812,
+          1.4362419798814812,
+          1.4362419798814812
+        ]
+      },
+      "2.0": {
+        "positive": 4,
+        "zero": 4,
+        "negative": 0,
+        "eigenvalues": [
+          4.3576253716537394e-15,
+          4.3576253716537394e-15,
+          7.577272143066693e-15,
+          7.577272143066693e-15,
+          2.810000000000005,
+          2.810000000000005,
+          2.810000000000005,
+          2.810000000000005
+        ]
+      },
+      "2.1": {
+        "positive": 8,
+        "zero": 0,
+        "negative": 0,
+        "eigenvalues": [
+          0.615586467626382,
+          0.6155864676263822,
+          0.6155864676263846,
+          0.6155864676263848,
+          4.446413532373629,
+          4.446413532373629,
+          4.44641353237363,
+          4.44641353237363
+        ]
+      }
+    }
+  },
+  "Sigma_obstruction": {
+    "Hermitian_traceless_real_dimension": 15,
+    "scalar_channel_rank_at_phi_zero": 0,
+    "remaining_flat_directions": 15,
+    "reason": "Y(0,Sigma)=0 for every Sigma, so every potential depending only on ||Y||^2 has zero Sigma Hessian"
+  },
+  "route_ledger": {
+    "direct_sum_singlet": "closed: exact portal zero",
+    "universal_total_norm_portal": "closed: cannot split required and unwanted modes",
+    "connected_scalar_Y_channel": "conditional phi pass for zeta>2, but Sigma remains flat",
+    "twisted_scalar_vector_parent": "open architecture: can in principle supply both a scalar mass shift and an independent vector/Sigma potential without new fermions",
+    "two_scale_spectral_action": "open architecture: must derive both stationary scales and relative coefficients"
+  },
+  "verdict": "A scalar-only connector is insufficient. The exact normalized threshold for all eight phi modes is zeta>2, while all fifteen Sigma directions remain flat. The next minimal parent must generate two linked effects: a connected scalar channel above threshold and a direct representation-sensitive Sigma/vector potential.",
+  "next_gate": "construct a reduced twisted spectral triple with an explicit exchange automorphism and compute whether its spectral action generates both required quadratic terms with fixed coefficients",
+  "literature_targets": [
+    "arXiv:1304.0415",
+    "arXiv:1411.1320",
+    "arXiv:1905.04533"
+  ]
+}
