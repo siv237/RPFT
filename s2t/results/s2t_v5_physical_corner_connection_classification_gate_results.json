@@ -1,0 +1,119 @@
+{
+  "gate": "version5_physical_corner_connection_classification_gate",
+  "input_certificates": {
+    "Morita_linking_parent": "pass",
+    "state_corner_curvature_readout": "pass",
+    "old_Yukawa_operator_uniqueness": "fail",
+    "old_inner_fluctuation_uniqueness": "fail"
+  },
+  "connection_difference_principle": {
+    "statement": "two connections with the same left/right Leibniz data differ by a bimodule-linear endomorphism",
+    "full_factor_bimodule_endomorphism_dimension": 1,
+    "full_factor_result": "C identity"
+  },
+  "observed_block_restriction": {
+    "algebra": "M6(C)+M2(C)+M3(C)+M3(C)+C",
+    "block_names": [
+      "Q_L",
+      "L_L",
+      "u_R",
+      "d_R",
+      "e_R"
+    ],
+    "block_sizes": [
+      6,
+      2,
+      3,
+      3,
+      1
+    ],
+    "complex_dimension": 59,
+    "commutant_complex_dimension": 5,
+    "commutant": "C P_Q+C P_L+C P_u+C P_d+C P_e",
+    "centered_commutant_complex_dimension": 4,
+    "commutant_residual": 2.220446049250313e-16,
+    "exact_SM_coordinate_algebra_commutant_lower_bound": 5,
+    "reason_for_lower_bound": "the exact Standard Model representation is contained in the block-preserving reading"
+  },
+  "rank_one_family_corner": {
+    "family_projector_rank": 1,
+    "right_block_ambiguity_dimension_after_corner": 5,
+    "left_right_associativity_residual": 0.0,
+    "corner_right_action_residual": 0.0,
+    "family_rank_one_selection_removes_observed_block_ambiguity": false
+  },
+  "trace_metric": {
+    "projector_Gram_matrix": [
+      [
+        0.4,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.13333333333333333,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.2,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.2,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.06666666666666667
+      ]
+    ],
+    "eigenvalues": [
+      0.06666666666666667,
+      0.13333333333333333,
+      0.2,
+      0.2,
+      0.4
+    ],
+    "weights": [
+      0.4,
+      0.13333333333333333,
+      0.2,
+      0.2,
+      0.06666666666666667
+    ],
+    "fixes_metric": true,
+    "selects_nonzero_connection_vector": false,
+    "pure_quadratic_norm_minimum": "zero connection"
+  },
+  "anti_circle_comparison": {
+    "version4_operator_map": "the same selected family data admitted inequivalent coefficient-free maps",
+    "version4_inner_fluctuation": "small algebras excluded the CP-capable map while full M3 restored all directions",
+    "new_information": "the Morita container does not remove underdetermination; after exact observed block restriction at least five affine connection directions remain"
+  },
+  "verdict": {
+    "full_M20_M15_connection_unique_up_to_scalar": "pass",
+    "physical_observed_restriction_unique": "fail",
+    "minimum_complex_ambiguity_dimension": 5,
+    "minimum_centered_ambiguity_dimension": 4,
+    "rank_one_family_corner_restores_uniqueness": "fail",
+    "trace_alone_selects_Yukawa": "fail",
+    "Morita_parent_architecture": "retained",
+    "unique_Yukawa_connection": false,
+    "physical_closure": false,
+    "status": "the linking parent fixes the carrier and relative curvature but not a unique physical Yukawa connection"
+  },
+  "next_gate": "Do not search for another algebraic projection. Test the most general symmetry-allowed potential on the four-dimensional centered observed-block connection ambiguity and determine whether the existing parent curvature and trace select a nonzero unique orbit; otherwise freeze Yukawa origin as underdetermined."
+}

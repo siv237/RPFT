@@ -1,0 +1,55 @@
+{
+  "gate": "version5_real_toeplitz_unbounded_parent_cycle_gate",
+  "finite_window_audit": {
+    "cutoff": 64,
+    "commutator_N_U_minus_U_frobenius": 0.0,
+    "K_N_K_plus_N_frobenius": 0.0,
+    "K_U_K_minus_U_star_frobenius": 0.0,
+    "P_dimension": 65,
+    "I_minus_SstarS_equals_top_cutoff_projector": true,
+    "I_minus_SSstar_equals_bottom_projector": true,
+    "top_defect_is_truncation_artifact": true
+  },
+  "infinite_exact_cycle": {
+    "hilbert_space": "ell2(Z) tensor q0(C105)",
+    "number_operator": "N e_n = n e_n",
+    "bilateral_shift": "U e_n = e_(n+1)",
+    "bounded_commutator": "[N,U]=U",
+    "compact_resolvent": true,
+    "spectral_projection": "P=chi_[0,infinity)(N)",
+    "hardy_space_derived": "P ell2(Z)=ell2(N0)",
+    "toeplitz_compressions": {
+      "PUP": "S, index -1",
+      "PUstarP": "S*, index +1"
+    },
+    "coefficient_indices": [
+      -15,
+      15
+    ],
+    "coefficient_defect_rank": 15,
+    "normalized_weight": 0.14285714285714285
+  },
+  "real_structure_checks": {
+    "K_N_K": "-N",
+    "K_U_K": "U*",
+    "exchange_pair_available": true,
+    "finite_KO6_exchange_skeleton_reusable": true
+  },
+  "degree_ledger": {
+    "toeplitz_extension_degree": 1,
+    "unbounded_extension_Clifford_action": "Cl(0,1)",
+    "covariant_KO_boundary_convention": "KO_n(symbol) -> KO_(n-1)(coefficient)",
+    "target_degree": 6,
+    "missing_real_symbol_degree": 7,
+    "degree_drop_mod_8": 6,
+    "extension_cycle_alone_is_KO6": false
+  },
+  "verdict": {
+    "hardy_polarization_derived_from_N": true,
+    "unbounded_toeplitz_extension_cycle": "pass",
+    "full_unbounded_KO6_parent": "not_yet",
+    "integer_class_15_from_previous_gate_preserved": true,
+    "physical_parent_action": false,
+    "next_gate": "version5_real_toeplitz_degree_seven_symbol_gate"
+  }
+}

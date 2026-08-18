@@ -1,0 +1,105 @@
+{
+  "date": "2026-08-15",
+  "gate": "version5_foundational_relative_architecture_gate",
+  "source_presence": {
+    "tome1": true,
+    "pairing_diagnosis": true,
+    "relative_determinant": true,
+    "mapping_cone_priority": true,
+    "relative_pati_salam": true,
+    "determinant_line": true,
+    "carrier_measure_fail": true
+  },
+  "philosophical_clue": {
+    "primary_not_object_but_admissible_transition_law": true,
+    "tome1_explicitly_allows_category_of_reductions": true,
+    "correlation_assembly_rule_was_never_fully_formalized": true
+  },
+  "project_pattern": {
+    "relative_successes": [
+      "scheme-safe twisted/untwisted determinant ratios",
+      "holonomy and transition functions",
+      "mapping-cone response",
+      "Pati-Salam relative quotient norm",
+      "determinant/Pfaffian line bookkeeping",
+      "defect index stability",
+      "gauge-family diagonal locking",
+      "exact three-cycle residual bundle"
+    ],
+    "absolute_failures": [
+      "cross-topology determinant with free finite counterterms",
+      "unique fixed-carrier selection",
+      "ordinary one-trace relative quartic sign",
+      "standalone Pfaffian branch orientation",
+      "absolute scale from uncontrolled local expansion",
+      "one common sector normalization measure",
+      "derived topology/spin sum weights",
+      "lifting numerical formulas to one parent action"
+    ]
+  },
+  "additive_coboundary_test": {
+    "edge_values": {
+      "g->s": 2,
+      "s->c": -1,
+      "c->g": 3
+    },
+    "vertex_potential": {
+      "g": 5,
+      "s": -2,
+      "c": 7
+    },
+    "shifted_edges": {
+      "g->s": -5,
+      "s->c": 8,
+      "c->g": 1
+    },
+    "open_path_before": 1,
+    "open_path_after": 3,
+    "open_path_shift": 2,
+    "loop_before": 4,
+    "loop_after": 4,
+    "loop_invariant": true
+  },
+  "multiplicative_normalization_test": {
+    "loop_product_before": "30",
+    "loop_product_after": "30",
+    "loop_product_invariant": true
+  },
+  "reduction_triangle": {
+    "T_gs_geometry_to_spectrum": {
+      "status": "partial",
+      "reason": "Dirac/Laplace spectra are constructed for declared carriers but not uniquely across all sectors"
+    },
+    "T_sc_spectrum_to_correlation": {
+      "status": "pass",
+      "reason": "C=exp(-tau H) and H=-tau^-1 log C form an exact dictionary on the support"
+    },
+    "T_cg_correlation_to_geometry": {
+      "status": "missing",
+      "reason": "no canonical reconstruction of geometry, topology prior or counterterm trivialization"
+    },
+    "triangle_cocycle": {
+      "status": "undefined",
+      "reason": "Omega_gsc cannot be evaluated before T_cg exists"
+    }
+  },
+  "verdict": {
+    "relative_category_hypothesis": "admitted_as_bounded_research_direction",
+    "mathematical_architecture_pass": false,
+    "physical_closure": false,
+    "main_missing_datum": "T_cg correlation-to-geometry reconstruction morphism",
+    "interpretation": "relative successes and absolute failures are consistent with a cocycle/coboundary architecture, but the project-specific reduction triangle is not yet instantiated"
+  },
+  "next_gate": {
+    "name": "version5_reduction_triangle_cocycle_gate",
+    "obligations": [
+      "freeze concrete geometric, spectral and correlation objects",
+      "define domains and codomains of T_gs and T_sc",
+      "classify coefficient-free T_cg candidates",
+      "check functorial composition and determinant-line anomalies",
+      "compute or prove undefined the closed-loop defect Omega_gsc",
+      "reject any T_cg requiring observed data, arbitrary topology prior or free counterterm trivialization"
+    ]
+  },
+  "boundary_control_status": "reserved_until_reduction_triangle_verdict"
+}

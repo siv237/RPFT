@@ -1,0 +1,420 @@
+{
+  "gate": "version5_rank_one_tetrahedral_transfer_reflection_gate",
+  "input_certificates": {
+    "minimal_transfer_has_one_free_mass_modulus": true,
+    "rank_one_projector_holonomy_exact_for_eight_branches": true,
+    "holonomy_angle": "2*pi/3"
+  },
+  "projector_holonomy_geometry": {
+    "u": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "transverse_plane": "orthogonal complement of the affine singlet u and selected axis h_a",
+    "orientation_generator_identity": "Omega^2=-P_transverse",
+    "maximum_residuals": {
+      "omega_square": 5.438959822042073e-16,
+      "omega_antisymmetry": 0.0,
+      "householder_transverse_scalar": 2.262328543112293e-16,
+      "holonomy_transverse_reconstruction": 1.9492241005813414e-15
+    },
+    "transverse_holonomy_eigenvalues": [
+      "exp(+2*pi*i/3)",
+      "exp(-2*pi*i/3)"
+    ],
+    "projector_involution_on_transverse_plane": "(2P_a-I)|_T=-I_T",
+    "projector_involution_exchanges_chiral_lines": false
+  },
+  "reflection_classification": {
+    "general_reflection": "R(alpha)=[[cos(2alpha),sin(2alpha)],[sin(2alpha),-cos(2alpha)]]",
+    "parameter_space": "alpha modulo pi",
+    "R_squared": "I",
+    "R_J_R": "-J",
+    "det_R": -1,
+    "C3_invariant_reflection_linear_intersection_dimension": 0,
+    "stabilizer_reflection_count": 3,
+    "stabilizer_reflection_angles": [
+      "0",
+      "pi/3",
+      "2*pi/3"
+    ],
+    "C3_conjugation_permutation": [
+      {
+        "from": 0,
+        "to": 2
+      },
+      {
+        "from": 1,
+        "to": 0
+      },
+      {
+        "from": 2,
+        "to": 1
+      }
+    ],
+    "average_of_three_reflections": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "unique_reflection_selected": false
+  },
+  "canonical_operator_algebra": {
+    "generators_on_transverse_plane": [
+      "I",
+      "J",
+      "C3",
+      "C3^2"
+    ],
+    "real_linear_rank": 2,
+    "algebra": "span_R{I,J}",
+    "all_elements_commute_with_J": true,
+    "contains_chirality_exchanging_reflection": false
+  },
+  "local_connection_candidate": {
+    "connection_density": "2*pi/(3L)",
+    "step_angle": "2*pi*a/(3*L)",
+    "candidate_if_reflection_is_added": {
+      "n": "cos(2*pi*a/(3*L))",
+      "m": "sin(2*pi*a/(3*L))",
+      "continuum_mass": "2*pi/(3*L)"
+    },
+    "extra_choice": "one reflection/polarization R(alpha) identifying the transverse plane with left/right propagation",
+    "functorial_from_projector_and_holonomy_alone": false
+  },
+  "rows": [
+    {
+      "fixed_point": 0,
+      "winding": 1,
+      "omega_2": [
+        [
+          -1.900669855439806e-17,
+          -1.0000000000000002
+        ],
+        [
+          1.0000000000000002,
+          1.4712896063634248e-17
+        ]
+      ],
+      "householder_on_transverse_plane": [
+        [
+          -1.0,
+          -4.246847167926316e-17
+        ],
+        [
+          -4.246847167926316e-17,
+          -1.0
+        ]
+      ],
+      "holonomy_2": [
+        [
+          -0.4999999999999996,
+          0.8660254037844375
+        ],
+        [
+          -0.8660254037844379,
+          -0.4999999999999995
+        ]
+      ],
+      "holonomy_eigenphases": [
+        -2.0943951023931957,
+        2.0943951023931957
+      ],
+      "reconstruction_residual": 1.7850093837272237e-15
+    },
+    {
+      "fixed_point": 0,
+      "winding": -1,
+      "omega_2": [
+        [
+          -1.900669855439806e-17,
+          -1.0000000000000002
+        ],
+        [
+          1.0000000000000002,
+          1.4712896063634248e-17
+        ]
+      ],
+      "householder_on_transverse_plane": [
+        [
+          -1.0,
+          -4.246847167926316e-17
+        ],
+        [
+          -4.246847167926316e-17,
+          -1.0
+        ]
+      ],
+      "holonomy_2": [
+        [
+          -0.49999999999999956,
+          -0.8660254037844379
+        ],
+        [
+          0.8660254037844376,
+          -0.4999999999999997
+        ]
+      ],
+      "holonomy_eigenphases": [
+        -2.0943951023931957,
+        2.0943951023931957
+      ],
+      "reconstruction_residual": 1.680989117872258e-15
+    },
+    {
+      "fixed_point": 1,
+      "winding": 1,
+      "omega_2": [
+        [
+          -2.2051404414115842e-17,
+          1.0000000000000002
+        ],
+        [
+          -1.0000000000000002,
+          1.890812283321094e-17
+        ]
+      ],
+      "householder_on_transverse_plane": [
+        [
+          -1.0000000000000002,
+          3.063900939564349e-17
+        ],
+        [
+          3.063900939564349e-17,
+          -1.0
+        ]
+      ],
+      "holonomy_2": [
+        [
+          -0.4999999999999996,
+          -0.8660254037844378
+        ],
+        [
+          0.8660254037844377,
+          -0.49999999999999967
+        ]
+      ],
+      "holonomy_eigenphases": [
+        -2.0943951023931957,
+        2.0943951023931957
+      ],
+      "reconstruction_residual": 1.6625566625485463e-15
+    },
+    {
+      "fixed_point": 1,
+      "winding": -1,
+      "omega_2": [
+        [
+          -2.2051404414115842e-17,
+          1.0000000000000002
+        ],
+        [
+          -1.0000000000000002,
+          1.890812283321094e-17
+        ]
+      ],
+      "householder_on_transverse_plane": [
+        [
+          -1.0000000000000002,
+          3.063900939564349e-17
+        ],
+        [
+          3.063900939564349e-17,
+          -1.0
+        ]
+      ],
+      "holonomy_2": [
+        [
+          -0.4999999999999996,
+          0.8660254037844375
+        ],
+        [
+          -0.8660254037844377,
+          -0.49999999999999933
+        ]
+      ],
+      "holonomy_eigenphases": [
+        -2.0943951023931957,
+        2.0943951023931957
+      ],
+      "reconstruction_residual": 1.9492241005813414e-15
+    },
+    {
+      "fixed_point": 2,
+      "winding": 1,
+      "omega_2": [
+        [
+          -1.5291039601768528e-17,
+          -1.0
+        ],
+        [
+          1.0000000000000002,
+          -4.198654108772804e-17
+        ]
+      ],
+      "householder_on_transverse_plane": [
+        [
+          -0.9999999999999999,
+          -1.413251793954071e-18
+        ],
+        [
+          -1.413251793954071e-18,
+          -1.0
+        ]
+      ],
+      "holonomy_2": [
+        [
+          -0.49999999999999944,
+          0.8660254037844374
+        ],
+        [
+          -0.8660254037844377,
+          -0.49999999999999944
+        ]
+      ],
+      "holonomy_eigenphases": [
+        -2.0943951023931957,
+        2.0943951023931957
+      ],
+      "reconstruction_residual": 1.8585876218927496e-15
+    },
+    {
+      "fixed_point": 2,
+      "winding": -1,
+      "omega_2": [
+        [
+          -1.5291039601768528e-17,
+          -1.0
+        ],
+        [
+          1.0000000000000002,
+          -4.198654108772804e-17
+        ]
+      ],
+      "householder_on_transverse_plane": [
+        [
+          -0.9999999999999999,
+          -1.413251793954071e-18
+        ],
+        [
+          -1.413251793954071e-18,
+          -1.0
+        ]
+      ],
+      "holonomy_2": [
+        [
+          -0.4999999999999995,
+          -0.8660254037844377
+        ],
+        [
+          0.8660254037844375,
+          -0.49999999999999956
+        ]
+      ],
+      "holonomy_eigenphases": [
+        -2.0943951023931957,
+        2.0943951023931957
+      ],
+      "reconstruction_residual": 1.798766884999431e-15
+    },
+    {
+      "fixed_point": 3,
+      "winding": 1,
+      "omega_2": [
+        [
+          4.198654108772804e-17,
+          -1.0000000000000002
+        ],
+        [
+          1.0,
+          1.5291039601768528e-17
+        ]
+      ],
+      "householder_on_transverse_plane": [
+        [
+          -1.0,
+          -1.4132517939540717e-18
+        ],
+        [
+          -1.4132517939540717e-18,
+          -0.9999999999999999
+        ]
+      ],
+      "holonomy_2": [
+        [
+          -0.49999999999999956,
+          0.8660254037844375
+        ],
+        [
+          -0.8660254037844377,
+          -0.4999999999999995
+        ]
+      ],
+      "holonomy_eigenphases": [
+        -2.0943951023931957,
+        2.0943951023931957
+      ],
+      "reconstruction_residual": 1.798766884999431e-15
+    },
+    {
+      "fixed_point": 3,
+      "winding": -1,
+      "omega_2": [
+        [
+          4.198654108772804e-17,
+          -1.0000000000000002
+        ],
+        [
+          1.0,
+          1.5291039601768528e-17
+        ]
+      ],
+      "householder_on_transverse_plane": [
+        [
+          -1.0,
+          -1.4132517939540717e-18
+        ],
+        [
+          -1.4132517939540717e-18,
+          -0.9999999999999999
+        ]
+      ],
+      "holonomy_2": [
+        [
+          -0.49999999999999944,
+          -0.8660254037844377
+        ],
+        [
+          0.8660254037844374,
+          -0.49999999999999944
+        ]
+      ],
+      "holonomy_eigenphases": [
+        -2.0943951023931957,
+        2.0943951023931957
+      ],
+      "reconstruction_residual": 1.8585876218927496e-15
+    }
+  ],
+  "verdict": {
+    "projector_selects_transverse_plane": "pass",
+    "winding_selects_holonomy_orientation": "pass",
+    "holonomy_fixes_phase_density": "pass",
+    "projector_involution_fixes_mass_reflection": "fail",
+    "C3_holonomy_contains_unique_reflection": "fail",
+    "unique_chiral_polarization": "fail",
+    "mass_modulus_fixed_without_extra_choice": "fail",
+    "minimal_dynamic_mass_route": "closed",
+    "massless_holonomy_transport": "retained",
+    "physical_closure": false,
+    "status": "the projector and 2pi/3 holonomy canonically fix an oriented transverse complex structure and phase transport, but no reflection exchanging the two chiral directions; choosing such a reflection is an external polarization and is exactly the missing mass datum"
+  },
+  "next_gate": "Stop using family holonomy as a mass selector. Keep the canonical massless transport and test its natural role instead: the spectrum and index of a massless triplet transported around the existing C3 holonomy. The decisive question is whether the invariant holonomy line gives one parameter-free zero mode while the conjugate branches acquire fixed one-third momentum shifts."
+}

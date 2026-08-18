@@ -1,0 +1,58 @@
+{
+  "gate": "version5_fermionic_determinant_induced_skyrme_gate",
+  "literature_mechanism": {
+    "normal_parity_expansion_through_four_derivatives": true,
+    "two_derivative_term_possible": true,
+    "four_derivative_terms_possible": true,
+    "pure_positive_skyrme_term_guaranteed": false,
+    "additional_four_derivative_invariants": true
+  },
+  "proper_time_ratio_audit": {
+    "identity": "Gamma(2,x)/Gamma(1,x)=1+x",
+    "samples": [
+      {
+        "x=M^2/Lambda^2": 0.01,
+        "Gamma(1,x)": 0.9900498337491681,
+        "Gamma(2,x)": 0.9999503320866598,
+        "Gamma(2,x)/Gamma(1,x)": 1.01
+      },
+      {
+        "x=M^2/Lambda^2": 0.25,
+        "Gamma(1,x)": 0.7788007830714049,
+        "Gamma(2,x)": 0.9735009788392561,
+        "Gamma(2,x)/Gamma(1,x)": 1.25
+      },
+      {
+        "x=M^2/Lambda^2": 1.0,
+        "Gamma(1,x)": 0.36787944117144233,
+        "Gamma(2,x)": 0.7357588823428847,
+        "Gamma(2,x)/Gamma(1,x)": 2.0
+      },
+      {
+        "x=M^2/Lambda^2": 4.0,
+        "Gamma(1,x)": 0.01831563888873418,
+        "Gamma(2,x)": 0.0915781944436709,
+        "Gamma(2,x)/Gamma(1,x)": 5.0
+      }
+    ],
+    "relative_four_derivative_weights_universal": false
+  },
+  "project_inputs": {
+    "canonical_D_of_V15_on_H15": false,
+    "fermion_gap_M_derived": false,
+    "relative_Yukawa_amplitudes_derived": false,
+    "renormalization_condition_derived": false,
+    "common_trace_weight": "1/7",
+    "common_weight_cancels_from_E4_over_E2": true
+  },
+  "dimensional_conclusion": {
+    "generic_radius": "M^-1 times R(M/Lambda,Y,scheme)",
+    "finite_radius_from_current_parent": false
+  },
+  "verdict": {
+    "conditional_induction": true,
+    "parameter_free_scale_closure": false,
+    "physical_closure": false,
+    "next_gate": "version5_eta_wzw_real_pair_phase_gate"
+  }
+}

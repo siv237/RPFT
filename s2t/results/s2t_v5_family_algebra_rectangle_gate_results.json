@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-15",
+  "gate": "version5_family_algebra_rectangle_gate",
+  "particle_matrix_dimension": 8,
+  "offdiagonal_block": "M=[[y I3,w],[v^T,z]]",
+  "trace_D2": "2*v0**2 + 2*v1**2 + 2*v2**2 + 2*w0**2 + 2*w1**2 + 2*w2**2 + 6*y**2 + 2*z**2",
+  "trace_D4": "2*v0**4 + 4*v0**2*v1**2 + 4*v0**2*v2**2 + 4*v0**2*y**2 + 4*v0**2*z**2 + 8*v0*w0*y*z + 2*v1**4 + 4*v1**2*v2**2 + 4*v1**2*y**2 + 4*v1**2*z**2 + 8*v1*w1*y*z + 2*v2**4 + 4*v2**2*y**2 + 4*v2**2*z**2 + 8*v2*w2*y*z + 2*w0**4 + 4*w0**2*w1**2 + 4*w0**2*w2**2 + 4*w0**2*y**2 + 4*w0**2*z**2 + 2*w1**4 + 4*w1**2*w2**2 + 4*w1**2*y**2 + 4*w1**2*z**2 + 2*w2**4 + 4*w2**2*y**2 + 4*w2**2*z**2 + 6*y**4 + 2*z**4",
+  "square_completion_identity": true,
+  "global_minimum_rank_argument": {
+    "upper_left_block": "|y|^2 I3 + w w^T",
+    "rank_one_cannot_equal_nonzero_scalar_I3": true,
+    "w": 0,
+    "v": 0,
+    "abs_y_equals_abs_z_equals_r": true
+  },
+  "normalized_vacuum": {
+    "mu_squared": 2,
+    "lambda": 1,
+    "y": 1,
+    "z": 1,
+    "v": [
+      0,
+      0,
+      0
+    ],
+    "w": [
+      0,
+      0,
+      0
+    ]
+  },
+  "hessian_eigenvalues": [
+    0,
+    0,
+    0,
+    16,
+    16,
+    16,
+    16,
+    48
+  ],
+  "flat_direction": {
+    "condition": "v=-w",
+    "multiplicity": 3,
+    "potential_difference": "4*t**4",
+    "condenses": false
+  },
+  "verdict": {
+    "order_one_rectangle": "pass",
+    "family_commutant_scalar": "pass",
+    "loop_sensitive_quartic": "pass",
+    "nonzero_triplet_vacuum": "fail",
+    "family_gauge_breaking": "fail",
+    "standard_finite_geometry_budget_route": "closed",
+    "mathematical_parent_architecture_pass": false,
+    "physical_closure": false
+  },
+  "next_gate": "version5_nonordinary_architecture_fork_gate"
+}

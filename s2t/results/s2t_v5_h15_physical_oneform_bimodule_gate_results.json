@@ -1,0 +1,152 @@
+{
+  "gate": "version5_h15_physical_oneform_bimodule_gate",
+  "input_certificates": {
+    "H15_architecture_freeze": "pass",
+    "rank_one_family_oneforms_dimension_four": "pass",
+    "charged_Yukawa_menu_u_d_e": "pass"
+  },
+  "charged_edge_multiplicity_space": {
+    "definition": "Lambda_ch=Hom_G(Q_L tensor tilde_H,u_R) + Hom_G(Q_L tensor H,d_R) + Hom_G(L_L tensor H,e_R)",
+    "edges": [
+      {
+        "name": "u",
+        "left": "Q_L",
+        "right": "u_R",
+        "scalar": "tilde_H"
+      },
+      {
+        "name": "d",
+        "left": "Q_L",
+        "right": "d_R",
+        "scalar": "H"
+      },
+      {
+        "name": "e",
+        "left": "L_L",
+        "right": "e_R",
+        "scalar": "H"
+      }
+    ],
+    "edge_signatures": [
+      [
+        "Q_L",
+        "u_R",
+        "tilde_H"
+      ],
+      [
+        "Q_L",
+        "d_R",
+        "H"
+      ],
+      [
+        "L_L",
+        "e_R",
+        "H"
+      ]
+    ],
+    "intertwiner_dimension_matrix": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "pairwise_inequivalent_simple_edges": true,
+    "complex_dimension": 3,
+    "bimodule_endomorphism_algebra": "C^3",
+    "centered_relative_algebra": "C^2"
+  },
+  "physical_oneform_bimodule": {
+    "formula": "Y_rho=E_rho tensor Lambda_ch",
+    "family_factor": "E_rho=rho M3 Q + Q M3 rho",
+    "family_factor_complex_dimension": 4,
+    "edge_multiplicity_complex_dimension": 3,
+    "total_multiplicity_complex_dimension": 12,
+    "finite_semisimple_module_projective": true,
+    "differential_degree": 1,
+    "contains_neutrino_edge": false
+  },
+  "connection_affine_space": {
+    "reference": "Grassmann connection from the rank-one family projector",
+    "difference_space_contains": "End_bimodule(Lambda_ch)=C^3",
+    "Hermitian_reality_reduces_complex_to_real_per_edge": true,
+    "Hermitian_real_dimension_before_common_quotient": 3,
+    "relative_real_dimension_after_common_quotient": 2,
+    "KO6_pairs_each_edge_with_its_conjugate": true,
+    "KO6_identifies_distinct_u_d_e_edges": false
+  },
+  "grassmann_readout": {
+    "acts_identically_on_edge_multiplicity": true,
+    "common_projector": [
+      [
+        0.3333333333333334,
+        0.3333333333333334,
+        0.3333333333333334
+      ],
+      [
+        0.3333333333333334,
+        0.3333333333333334,
+        0.3333333333333334
+      ],
+      [
+        0.3333333333333334,
+        0.3333333333333334,
+        0.3333333333333334
+      ]
+    ],
+    "relative_projector": [
+      [
+        0.6666666666666665,
+        -0.3333333333333334,
+        -0.3333333333333334
+      ],
+      [
+        -0.3333333333333334,
+        0.6666666666666665,
+        -0.3333333333333334
+      ],
+      [
+        -0.3333333333333334,
+        -0.3333333333333334,
+        0.6666666666666665
+      ]
+    ],
+    "common_rank": 1,
+    "unselected_relative_rank": 2,
+    "residuals": {
+      "common_idempotence": 3.3306690738754696e-16,
+      "relative_idempotence": 3.3306690738754696e-16,
+      "orthogonality": 3.331311502095134e-16,
+      "sum_to_identity": 0.0
+    },
+    "selects_nonzero_Yukawa_amplitude": false,
+    "selects_relative_u_d_e_weights": false
+  },
+  "literature_boundary": {
+    "finite_Dirac_operator_encodes_Yukawa_inputs": true,
+    "projective_module_admits_Grassmann_connection": true,
+    "connections_form_affine_space_over_oneform_valued_module_maps": true,
+    "new_project_result": "the corrected H15 one-form typing leaves exactly two relative charged-edge directions after the common connection is removed"
+  },
+  "verdict": {
+    "correctly_typed_physical_oneform_module_exists": "pass",
+    "projectivity": "pass",
+    "exactly_three_charged_edge_types": "pass",
+    "Grassmann_connection_fixes_family_reference": "pass",
+    "Grassmann_connection_uniquely_fixes_u_d_e_connection": "fail",
+    "residual_relative_connection_dimension": 2,
+    "physical_closure": false,
+    "status": "the type error is repaired, but gauge inequivalence of u,d,e leaves two relative connection directions"
+  },
+  "next_gate": "Test the second-order differential calculus and spectral torsion on the three-edge H15 module. If it remains block diagonal, close the Morita one-form route without another potential."
+}

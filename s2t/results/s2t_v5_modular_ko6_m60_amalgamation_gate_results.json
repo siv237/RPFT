@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-16",
+  "gate": "version5_modular_ko6_m60_amalgamation_gate",
+  "input_certificates": {
+    "modular_KO6_parent": "pass",
+    "M60_trace": "pass",
+    "SU5_package_anomaly": "zero"
+  },
+  "dimension_ledger": {
+    "naive_M18_tensor_M60": 1080,
+    "menu_particle_corner": 60,
+    "KO6_SU5_chain_particle_corner": 135,
+    "shared_three_family_particle_corner": 45,
+    "amalgamated_particle_dimension": 150,
+    "full_KO6_parent_dimension": 300,
+    "formula": "2*(60+135-45)=300",
+    "avoided_dimension_count": 780
+  },
+  "parent_algebra": {
+    "algebra": "M300(C)",
+    "unique_normalized_trace": true,
+    "relative_central_weight_count": 0,
+    "menu_full_corner_rank": 120,
+    "chain_full_corner_rank": 270,
+    "intersection_full_rank": 90
+  },
+  "conditional_trace_recovery": {
+    "physical_family_rank_inside_particle_menu": 45,
+    "particle_menu_rank": 60,
+    "physical_fraction": 0.75,
+    "expected_M60_fraction": 0.75,
+    "heavy_family_rank": 15,
+    "heavy_family_fraction_inside_physical": 0.3333333333333333,
+    "expected_heavy_fraction": 0.3333333333333333,
+    "M60_and_M45_conditional_traces_recovered": true,
+    "full_parent_reference_weight_fixed": 0.1,
+    "full_parent_chain_weight_fixed": 0.9
+  },
+  "SU5_equivariance": {
+    "propagated_package_commutator_residual": 0.0,
+    "endpoint_only_commutator_residual": 2.8752043405643364,
+    "finding": "A nonzero SU5-invariant connector requires the same 10+bar5 package on all three chain nodes; restricting SU5 to the family endpoint kills equivariance."
+  },
+  "light_heavy_spectrum": {
+    "radial_chain_parameters": {
+      "rho": 0.83,
+      "r": 0.61
+    },
+    "particle_dimension": 135,
+    "zero_mode_dimension": 45,
+    "positive_mass": 1.030048542545447,
+    "positive_mass_multiplicity": 45,
+    "negative_mass_multiplicity": 45,
+    "generic_internal_kernel_dimension_before_SU5": 3,
+    "interpretation": "The propagated connector does not leave nine light families: one 45-state combination remains light while two 45-state combinations become massive."
+  },
+  "normalizations": {
+    "middle_moment_trace_residual": 1.7763568394002505e-15,
+    "three_family_SU5_indices": {
+      "SU3": 6.0,
+      "SU2": 6.0,
+      "U1": 6.0
+    },
+    "index_equality_residual": 0.0,
+    "maximum_anomaly_residual": 1.97758476261356e-16
+  },
+  "remaining_risks": {
+    "reference_sector_zero_modes_need_physical_projection": true,
+    "massive_connector_stability_requires_full_Hessian": true,
+    "beta_dependent_state_weights_not_used_as_predictions": true,
+    "Yukawa_and_family_rank_one_operator_not_yet_inserted_in_one_action": true,
+    "BV_BRST_factor_not_derived": true
+  },
+  "verdict": {
+    "non_double_counting_amalgamation": "pass",
+    "single_trace_two_sector_normalization": "pass",
+    "SU5_representation_and_anomaly": "pass",
+    "exact_light_family_count_at_chain_level": "pass",
+    "kinematic_parent_architecture_candidate": true,
+    "full_action_closure": false,
+    "physical_closure": false,
+    "status": "first_M300_kinematic_parent_candidate_requires_action_and_Hessian"
+  },
+  "next_gate": "Construct the most general symmetry-allowed M300 parent action and test whether one coefficient-free Hessian makes the two connector combinations massive, projects out the reference sector and preserves the 45-state light kernel."
+}

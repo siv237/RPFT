@@ -1,0 +1,108 @@
+{
+  "gate": "version5_holonomy_zero_mode_localization_gate",
+  "input_certificates": {
+    "boundary_C3_zero_level_count": 1,
+    "boundary_mode_localized": false,
+    "projector_supercurvature_hessian": [
+      "8/3",
+      "8/3",
+      "8/3"
+    ],
+    "pairing_condensate_selected_by_existing_locking_symmetry": false
+  },
+  "field_type_audit": {
+    "H": {
+      "type": "neutral traceless self-adjoint family endomorphism",
+      "vacuum_data": "four rank-one tetrahedral projectors",
+      "native_curvature": "Q(H)=H^2-H/sqrt(3)-I/4"
+    },
+    "Phi": {
+      "type": "complex charge-two Majorana pairing section",
+      "required_defect_data": "nonzero vacuum amplitude, meridional phase winding and a core zero",
+      "native_action_data": [
+        "Z_Phi",
+        "m_Phi_squared",
+        "lambda_Phi",
+        "e_root",
+        "Majorana_Yukawa_normalization"
+      ]
+    },
+    "canonical_equivariant_identification_H_to_Phi_in_project": false,
+    "reason": "H is a neutral family-axis endomorphism, whereas Phi is a charged complex pairing section; the gauge-family locking gate treats them as distinct fields."
+  },
+  "radial_scaling_audit": {
+    "energy": "2*pi int r dr [Z_Phi(|d_r Phi|^2+|Phi|^2/r^2)+(lambda_Phi/2)(|Phi|^2-v^2)^2]",
+    "substitution": "Phi=v F(r/xi), xi=sqrt(Z_Phi/(lambda_Phi v^2))",
+    "dimensionless_common_factor": "Z*v**2",
+    "dimensionless_potential_coefficient": "Z*v**2/2",
+    "dimensionless_profile_can_be_universal": true,
+    "physical_width_fixed": false,
+    "scale_examples": [
+      {
+        "name": "unit_width",
+        "Z_Phi": 1,
+        "lambda_Phi": 1,
+        "v": 1,
+        "xi": "1",
+        "same_winding_boundary_conditions": true
+      },
+      {
+        "name": "double_width",
+        "Z_Phi": 4,
+        "lambda_Phi": 1,
+        "v": 1,
+        "xi": "2",
+        "same_winding_boundary_conditions": true
+      }
+    ]
+  },
+  "conditional_dirac_localization": {
+    "assumed_mass_profile": "m(x)=M tanh(x/xi)",
+    "zero_mode": "psi(x) proportional to cosh(x/xi)^(-M xi)",
+    "profile_exponent": "M*xi",
+    "special_normalized_wavefunction": "sech(x/xi)/sqrt(2*xi) for M*xi=1",
+    "special_inverse_participation_ratio": "1/(3*xi)",
+    "special_rms_width": "sqrt(3)*pi*xi/6",
+    "examples": [
+      {
+        "name": "unit_width",
+        "xi": 1,
+        "M_chosen_for_M_xi_equal_one": 1.0,
+        "inverse_participation_ratio": 0.3333333333333333,
+        "rms_width": 0.9068996821171089,
+        "normalizable": true,
+        "mod_two_parity": 1
+      },
+      {
+        "name": "double_width",
+        "xi": 2,
+        "M_chosen_for_M_xi_equal_one": 0.5,
+        "inverse_participation_ratio": 0.16666666666666666,
+        "rms_width": 1.8137993642342178,
+        "normalizable": true,
+        "mod_two_parity": 1
+      }
+    ],
+    "finding": "Normalizability follows conditionally after a sign-changing mass profile is supplied, but the localization length changes continuously while the winding and mod-two parity stay unchanged."
+  },
+  "projector_hessian_test": {
+    "native_H_hessian": "8/3",
+    "can_be_used_as_lambda_Phi_v_squared_without_new_map": false,
+    "even_after_manual_identification_remaining_free_data": [
+      "Z_Phi or an equivalent transverse metric normalization",
+      "Majorana Yukawa normalization g_Phi controlling the fermionic decay length",
+      "existence and orientation of the nonzero pairing vacuum"
+    ]
+  },
+  "verdict": {
+    "boundary_zero_level": "retained",
+    "conditional_bulk_zero_mode": "retained_if_a_charged_pairing_vortex_is_supplied",
+    "parameter_free_radial_profile": "fail",
+    "parameter_free_localization_width": "fail",
+    "QH_to_pairing_identification": "not_derived",
+    "localized_neutrino_or_Majorana_defect": "not_obtained",
+    "physical_closure": false,
+    "status": "The C3 boundary zero cannot be promoted to a localized bulk defect by the existing projector supercurvature. H and Phi have different field types, and radial rescaling leaves an unfixed physical width xi together with an independent fermionic decay normalization."
+  },
+  "next_gate": "Freeze the boundary-to-core bridge under the present field content. Reopen it only if a parent construction supplies a charged pairing section Phi, its covariant kinetic norm and its nonzero vacuum in the same trace before comparison with observables."
+}

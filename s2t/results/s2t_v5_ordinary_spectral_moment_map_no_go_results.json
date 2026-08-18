@@ -1,0 +1,95 @@
+{
+  "date": "2026-08-15",
+  "gate": "version5_ordinary_spectral_moment_map_no_go",
+  "scalar_family": {
+    "Dirac_characteristic_polynomial": "-lambda*(-lambda**2 + s)",
+    "even_moments": {
+      "2": "2*s",
+      "4": "2*s**2",
+      "6": "2*s**3",
+      "8": "2*s**4",
+      "10": "2*s**5",
+      "12": "2*s**6"
+    },
+    "supermoments": {
+      "2": "0",
+      "4": "0",
+      "6": "0",
+      "8": "0",
+      "10": "0",
+      "12": "0"
+    },
+    "all_spectral_data_independent_of_t": true,
+    "moment_map_norm": "4*s**2*t**2 - 4*s**2*t + s**2",
+    "moment_map_depends_on_t": true
+  },
+  "matrix_family": [
+    {
+      "t": "1/4",
+      "spectral_moments": [
+        "3",
+        "5",
+        "9",
+        "17"
+      ],
+      "moment_map_norm": "5/4"
+    },
+    {
+      "t": "1/2",
+      "spectral_moments": [
+        "3",
+        "5",
+        "9",
+        "17"
+      ],
+      "moment_map_norm": "0"
+    },
+    {
+      "t": "3/4",
+      "spectral_moments": [
+        "3",
+        "5",
+        "9",
+        "17"
+      ],
+      "moment_map_norm": "5/4"
+    }
+  ],
+  "general_identity": {
+    "middle_gram": "A+B",
+    "moment_map": "A-B",
+    "trace_D4": "2 Tr(A+B)^2",
+    "moment_map_square": "Tr(A-B)^2",
+    "ordinary_spectral_function_recovers_difference": false
+  },
+  "supertrace": {
+    "positive_even_powers_zero": true,
+    "general_role": "index times f(0)",
+    "moment_map_potential": false
+  },
+  "scope": {
+    "closed": [
+      "ordinary Tr f(D^2)",
+      "functions of ordinary spectral moments",
+      "singular-value determinant functionals",
+      "unprojected graded supertrace"
+    ],
+    "not_closed": [
+      "relative or conditionally projected curvature",
+      "auxiliary moment-map fields",
+      "twisted or derived calculi",
+      "BV-BFV structures",
+      "relative modular functionals",
+      "nonlocal boundary actions"
+    ]
+  },
+  "verdict": {
+    "spectral_blindness_theorem": true,
+    "quartic_cross_sign_no_go": true,
+    "supertrace_rescue": false,
+    "ordinary_one_trace_moment_map_origin": "closed",
+    "nonordinary_architectures": "undecided",
+    "physical_closure": false
+  },
+  "next_gate": "version5_nonordinary_architecture_fork_gate"
+}

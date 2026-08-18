@@ -1,0 +1,66 @@
+{
+  "gate": "version5_real_toeplitz_degree_seven_symbol_gate",
+  "convention_correction": {
+    "unbounded_extension_label": "KKO_1 with Cl(0,1)",
+    "covariant_real_K_boundary": "partial_n: KO_n(symbol) -> KO_(n-1)(coefficient)",
+    "previous_degree_five_claim": "retracted",
+    "correct_input_degree_for_KO6": 7
+  },
+  "coefficient_algebra": {
+    "algebra": "M105(C) regarded as a real C*-algebra",
+    "morita_model": "C_R",
+    "KO_degrees_0_to_7": [
+      "Z",
+      "0",
+      "Z",
+      "0",
+      "Z",
+      "0",
+      "Z",
+      "0"
+    ],
+    "KO6": "Z",
+    "class": 15
+  },
+  "symbol_construction": {
+    "real_circle_algebra": "C*_R(Z)",
+    "gelfand_real_space": "circle with conjugation z -> conjugate(z)",
+    "evaluation_kernel": "desuspension S^(-1)B",
+    "base_KO1": "Z direct_sum Z2",
+    "winding_summand": "reduced free Z",
+    "winding_class": "[u_R] in KO1(C*_R(Z))",
+    "coefficient_class": "kappa_15=[T_R]=15 in KO6(M105(C)_R)",
+    "external_product": "xi_15=[u_R] external_product kappa_15",
+    "degree": 7,
+    "reduced_KO7_group": "KO6(B)=Z"
+  },
+  "toeplitz_boundary": {
+    "degree_map": "KO7 -> KO6",
+    "base_winding_image": "+/-1",
+    "module_naturality": "partial(x external_product y)=partial(x) external_product y",
+    "image_of_xi_15": "+/-15",
+    "complexification_up_to_global_orientation": [
+      [
+        -15,
+        15
+      ],
+      [
+        15,
+        -15
+      ]
+    ]
+  },
+  "normalization": {
+    "absolute_class": 15,
+    "coefficient_rank": 105,
+    "weight": 0.14285714285714285
+  },
+  "verdict": {
+    "degree_convention_corrected": true,
+    "KO7_symbol_class_constructed": true,
+    "toeplitz_boundary_factorization_of_KO6_class_15": "pass_up_to_global_orientation",
+    "explicit_single_matrix_KO7_unitary": false,
+    "physical_action": false,
+    "next_gate": "version5_real_toeplitz_ko7_unitary_representative_gate"
+  }
+}

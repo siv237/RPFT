@@ -1,0 +1,82 @@
+{
+  "gate": "version5_self_generated_transition_defect_gate",
+  "local_nonlinear_action": {
+    "dimensionless_action": "integral [1/2 q_t^2-1/2 q_x^2-1/4(q^2-1)^2] dt dx",
+    "equation": "q_tt-q_xx+q(q^2-1)=0",
+    "vacua": [
+      -1,
+      1
+    ],
+    "new_order_parameter_added": true,
+    "derived_from_M35_trace": false
+  },
+  "analytic_kink": {
+    "profile": "q(x)=tanh((x-X)/sqrt(2))",
+    "equation_residual": "0",
+    "energy_density": "1/(2*cosh(sqrt(2)*x/2)**4)",
+    "rest_energy": "2*sqrt(2)/3",
+    "topological_charge": "1",
+    "profile_inserted_by_hand": false,
+    "topological_boundary_sector_assumed": true
+  },
+  "gradient_flow_reproduction": {
+    "grid_points": 301,
+    "domain": [
+      -10.0,
+      10.0
+    ],
+    "initial_profile": "x/10 + 0.08 sin(pi(x+10)/20), with fixed endpoints",
+    "iterations": 30000,
+    "time_step": 0.0007999999999999944,
+    "initial_energy": 2.748079360199139,
+    "final_energy": 0.9427391835620484,
+    "sampled_max_energy_increase": 2.220446049250313e-16,
+    "relaxed_center": -0.7632341982636542,
+    "rms_error_against_derived_kink": 4.114606938613029e-05,
+    "converges_to_kink": true
+  },
+  "moving_defect": {
+    "profile": "q_v=tanh(gamma(x-vt-X)/sqrt(2))",
+    "gamma_squared_times_one_minus_v_squared": "1",
+    "shape_preserved": true,
+    "topological_charge_preserved": true,
+    "energy": "E(v)=gamma E_kink",
+    "exact_discrete_QCA_solution": false
+  },
+  "Dirac_zero_mode": {
+    "Hamiltonian": "H=-i sigma2 d_x + g q(x) sigma1",
+    "normalizable_component": "psi1=cosh(x/sqrt(2))^(-g sqrt(2))",
+    "zero_mode_residual": "0",
+    "normalizable_for": "g>0",
+    "protected_by_mass_sign_change": true
+  },
+  "Morita_multiplicity_obstruction": {
+    "carrier": "E=M20x15(C)",
+    "complex_dimension": 300,
+    "bimodule_covariant_scalar_defect": "H_q tensor I_E",
+    "zero_mode_multiplicity": 300,
+    "single_physical_zero_mode": false,
+    "additional_projector_or_higher_complex_required": true
+  },
+  "free_data_audit": {
+    "dimensional_potential": "lambda/4 (q^2-v_q^2)^2",
+    "Dirac_coupling": "y q",
+    "dimensionful_scale_remains": true,
+    "dimensionless_ratio_y_over_sqrt_lambda_remains": true,
+    "topological_boundary_sector_remains_input": true,
+    "parameters_derived_from_corner_weights_or_order_four_phase": false
+  },
+  "verdict": {
+    "profile_derived_from_local_equation": "pass",
+    "independent_relaxation_reproduces_profile": "pass",
+    "topologically_stable_defect": "pass_given_nontrivial_boundary_sector",
+    "moving_shape_preserving_defect": "pass_in_continuum_Lorentz_model",
+    "localized_Dirac_zero_mode": "pass",
+    "exact_nonlinear_discrete_transition_automaton": "not_built",
+    "unique_observed_particle_on_full_Morita_carrier": "fail_by_multiplicity_300",
+    "parameter_free_origin_from_current_parent": "fail",
+    "physical_closure": false,
+    "status": "A local nonlinear field equation can genuinely generate, move and topologically protect a kink while localizing a Dirac zero mode. This validates the particle-as-defect mechanism as a continuum proof of concept. It does not close the project: the scalar potential, scale, relative coupling and topological sector are new inputs, and a bimodule-scalar kink produces 300 zero modes on the full Morita carrier."
+  },
+  "next_gate": "version5_defect_transport_part_conclusion_gate"
+}

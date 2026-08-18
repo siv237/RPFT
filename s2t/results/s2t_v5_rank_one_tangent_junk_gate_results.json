@@ -1,0 +1,235 @@
+{
+  "gate": "version5_rank_one_tangent_junk_gate",
+  "zero_degree_algebra": {
+    "formula": "A_rho=C rho + Q M3(C) Q isomorphic to C+M2(C)",
+    "complex_dimension": 5,
+    "projector_rank": 1
+  },
+  "rank_one_determinantal_tangent": {
+    "minor_count": 9,
+    "Jacobian_rank": 4,
+    "tangent_complex_dimension": 5,
+    "anchored_module_complex_dimension": 5,
+    "tangent_outside_anchored_module": 0.0,
+    "anchored_module_outside_tangent": 0.0
+  },
+  "generic_connector_samples": [
+    {
+      "connector": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "connector_norm_squared": 1.0,
+      "represented_one_rank": 4,
+      "one_form_kernel_dimension": 21,
+      "represented_two_rank": 5,
+      "degree_two_junk_rank": 4,
+      "quotient_rank": 1,
+      "one_forms_outside_off_diagonal_tangent": 0.0,
+      "off_diagonal_tangent_outside_one_forms": 2.220446049250313e-16,
+      "two_forms_outside_diagonal_algebra": 0.0,
+      "diagonal_algebra_outside_two_forms": 0.0,
+      "junk_outside_QM2Q": 2.2223326513594797e-16,
+      "QM2Q_outside_junk": 3.847014911403529e-16,
+      "quotient_outside_rho": 3.7259455092826764e-16,
+      "rho_outside_quotient": 5.796912330600579e-16,
+      "Q_block_norm_after_quotient": 7.65684186798028e-31,
+      "oriented_curvature_quotient_coefficient": [
+        -1.0,
+        0.0
+      ],
+      "metric_curvature_quotient_coefficient": [
+        1.0,
+        0.0
+      ],
+      "expected_oriented_coefficient": -1.0,
+      "expected_metric_coefficient": 1.0,
+      "quotient_norm_squares_equal": true,
+      "surviving_self_adjoint_direction": "rho"
+    },
+    {
+      "connector": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "connector_norm_squared": 2.0,
+      "represented_one_rank": 4,
+      "one_form_kernel_dimension": 21,
+      "represented_two_rank": 5,
+      "degree_two_junk_rank": 4,
+      "quotient_rank": 1,
+      "one_forms_outside_off_diagonal_tangent": 1.1443916996305594e-16,
+      "off_diagonal_tangent_outside_one_forms": 3.853402958752959e-16,
+      "two_forms_outside_diagonal_algebra": 0.0,
+      "diagonal_algebra_outside_two_forms": 9.171477791216581e-16,
+      "junk_outside_QM2Q": 3.1772469118080897e-16,
+      "QM2Q_outside_junk": 6.886754477292577e-16,
+      "quotient_outside_rho": 4.103100180977626e-16,
+      "rho_outside_quotient": 6.046234673386729e-16,
+      "Q_block_norm_after_quotient": 4.4102832282009328e-16,
+      "oriented_curvature_quotient_coefficient": [
+        -2.0,
+        0.0
+      ],
+      "metric_curvature_quotient_coefficient": [
+        2.0,
+        0.0
+      ],
+      "expected_oriented_coefficient": -2.0,
+      "expected_metric_coefficient": 2.0,
+      "quotient_norm_squares_equal": true,
+      "surviving_self_adjoint_direction": "rho"
+    },
+    {
+      "connector": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          2.0,
+          0.0
+        ]
+      ],
+      "connector_norm_squared": 5.0,
+      "represented_one_rank": 4,
+      "one_form_kernel_dimension": 21,
+      "represented_two_rank": 5,
+      "degree_two_junk_rank": 4,
+      "quotient_rank": 1,
+      "one_forms_outside_off_diagonal_tangent": 2.2204460492503126e-17,
+      "off_diagonal_tangent_outside_one_forms": 1.5956881131660046e-16,
+      "two_forms_outside_diagonal_algebra": 0.0,
+      "diagonal_algebra_outside_two_forms": 1.7362148652901485e-16,
+      "junk_outside_QM2Q": 3.7692603172029345e-16,
+      "QM2Q_outside_junk": 1.0178926738082664e-15,
+      "quotient_outside_rho": 2.741224316788441e-16,
+      "rho_outside_quotient": 2.741224316788441e-16,
+      "Q_block_norm_after_quotient": 8.338390282240345e-16,
+      "oriented_curvature_quotient_coefficient": [
+        -5.0,
+        0.0
+      ],
+      "metric_curvature_quotient_coefficient": [
+        5.0,
+        0.0
+      ],
+      "expected_oriented_coefficient": -5.0,
+      "expected_metric_coefficient": 5.0,
+      "quotient_norm_squares_equal": true,
+      "surviving_self_adjoint_direction": "rho"
+    },
+    {
+      "connector": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "connector_norm_squared": 2.0,
+      "represented_one_rank": 4,
+      "one_form_kernel_dimension": 21,
+      "represented_two_rank": 5,
+      "degree_two_junk_rank": 4,
+      "quotient_rank": 1,
+      "one_forms_outside_off_diagonal_tangent": 1.1443916996305594e-16,
+      "off_diagonal_tangent_outside_one_forms": 3.8534029587529596e-16,
+      "two_forms_outside_diagonal_algebra": 0.0,
+      "diagonal_algebra_outside_two_forms": 9.171477791216581e-16,
+      "junk_outside_QM2Q": 5.87625304598422e-16,
+      "QM2Q_outside_junk": 9.809412907762844e-16,
+      "quotient_outside_rho": 8.755098070062998e-16,
+      "rho_outside_quotient": 8.825210330684967e-16,
+      "Q_block_norm_after_quotient": 3.9506139938975633e-16,
+      "oriented_curvature_quotient_coefficient": [
+        -2.0,
+        0.0
+      ],
+      "metric_curvature_quotient_coefficient": [
+        2.0,
+        0.0
+      ],
+      "expected_oriented_coefficient": -2.0,
+      "expected_metric_coefficient": 2.0,
+      "quotient_norm_squares_equal": true,
+      "surviving_self_adjoint_direction": "rho"
+    },
+    {
+      "connector": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          2.0,
+          -1.0
+        ]
+      ],
+      "connector_norm_squared": 7.0,
+      "represented_one_rank": 4,
+      "one_form_kernel_dimension": 21,
+      "represented_two_rank": 5,
+      "degree_two_junk_rank": 4,
+      "quotient_rank": 1,
+      "one_forms_outside_off_diagonal_tangent": 7.396569529719284e-17,
+      "off_diagonal_tangent_outside_one_forms": 4.145736017595119e-16,
+      "two_forms_outside_diagonal_algebra": 0.0,
+      "diagonal_algebra_outside_two_forms": 3.2250204104036864e-16,
+      "junk_outside_QM2Q": 2.463950474370439e-16,
+      "QM2Q_outside_junk": 1.2728550858193374e-15,
+      "quotient_outside_rho": 3.996797631156717e-16,
+      "rho_outside_quotient": 8.739082009021522e-16,
+      "Q_block_norm_after_quotient": 7.1108036373070835e-16,
+      "oriented_curvature_quotient_coefficient": [
+        -7.0,
+        0.0
+      ],
+      "metric_curvature_quotient_coefficient": [
+        7.0,
+        0.0
+      ],
+      "expected_oriented_coefficient": -7.0,
+      "expected_metric_coefficient": 7.0,
+      "quotient_norm_squares_equal": true,
+      "surviving_self_adjoint_direction": "rho"
+    }
+  ],
+  "structural_result": {
+    "represented_one_forms": "rho M3 Q + Q M3 rho",
+    "represented_one_forms_complex_dimension": 4,
+    "missing_cone_direction": "C rho (radial amplitude belongs to degree zero)",
+    "represented_two_forms": "C rho + Q M3 Q",
+    "degree_two_junk": "Q M3 Q",
+    "degree_two_quotient": "C rho",
+    "quotient_complex_dimension": 1,
+    "orientation_after_quotient": "[d,d*] and D^2 survive with opposite scalar signs but equal squared norm",
+    "middle_shape_curvature_survives": false
+  },
+  "verdict": {
+    "support_condition_from_rank_one_geometry": "pass",
+    "off_diagonal_linking_corner_as_one_forms": "pass",
+    "stable_degree_two_quotient": "pass",
+    "full_moment_map_shape_from_quotient": "fail",
+    "orientation_selected_by_squared_curvature": "fail",
+    "radial_anchor_curvature": "conditional_pass",
+    "physical_closure": false,
+    "status": "rank_one geometry canonically yields the linking tangent, but junk removes the Q-block curvature and leaves only the anchor scalar"
+  },
+  "next_gate": "Tensor the surviving anchor line with the already established observed-sector commuting square and test whether the missing Q-block moment map is supplied by a relative bimodule curvature rather than by the ordinary Connes quotient."
+}

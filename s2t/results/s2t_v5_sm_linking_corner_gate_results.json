@@ -1,0 +1,89 @@
+{
+  "gate": "version5_sm_linking_corner_gate",
+  "exact_observed_reading": {
+    "coordinate_algebra": "C+H+M3(C)",
+    "gauge_lie_algebra_after_unimodularity": "su3+su2+u1",
+    "gauge_lie_dimension": 12,
+    "particle_bimodule_blocks": {
+      "Q_L": 6,
+      "L_L": 2,
+      "u_R": 3,
+      "d_R": 3,
+      "e_R": 1
+    },
+    "particle_dimension": 15,
+    "block_reading_algebra": "M6+M2+M3+M3+C",
+    "trace_preserving_expectation_residuals": {
+      "unital": 0.0,
+      "idempotent": 0.0,
+      "trace_preserving": 0.0,
+      "star_preserving": 0.0
+    },
+    "compatible_with_family_factor_expectation": true
+  },
+  "state_anchored_projection_reaudit": {
+    "formula": "Pi_rho(X)=X-QXQ",
+    "idempotent_Hilbert_Schmidt_projection": true,
+    "positive_input_witness_eigenvalues": [
+      -1.0000000000000002,
+      0.0,
+      2.0
+    ],
+    "Choi_eigenvalues": [
+      -1.0000000000000002,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.0
+    ],
+    "positive": false,
+    "completely_positive": false,
+    "conditional_expectation": false,
+    "previous_CP_map_wording": "retracted",
+    "valid_interpretation": "orthogonal projection onto an off-diagonal operator bimodule"
+  },
+  "canonical_positive_state_reading": {
+    "formula": "E_rho(X)=rho X rho+Tr(QXQ)Q/2",
+    "target": "C rho + C Q",
+    "target_complex_dimension": 2,
+    "Choi_eigenvalues": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      1.0
+    ],
+    "residuals": {
+      "unital": 0.0,
+      "idempotent": 0.0,
+      "trace_preserving": 4.440892098500626e-16,
+      "minimum_Choi_eigenvalue": 0.0
+    },
+    "off_diagonal_connector_norm_after_reading": 0.0,
+    "can_generate_Yukawa_mixing": false
+  },
+  "architecture_split": {
+    "diagonal_state_readings": "conditional expectations in the commuting square",
+    "interaction_operators": "off-diagonal Hilbert bimodule corners",
+    "appropriate_container": "linking algebra of the two readings",
+    "one_map_should_do_both_jobs": false
+  },
+  "verdict": {
+    "exact_SM_block_reading_in_square": "pass",
+    "state_anchored_projection_as_CP_readout": "fail",
+    "state_anchored_projection_as_operator_bimodule_selector": "conditional_pass",
+    "canonical_positive_expectation_generates_mixing": "fail",
+    "linking_algebra_interaction_branch": "open",
+    "physical_closure": false,
+    "status": "commuting_square_handles_states_while_Yukawa_requires_off_diagonal_linking_corner"
+  },
+  "next_gate": "Build the minimal linking algebra whose diagonal corners are the family and exact Standard Model readings and whose off-diagonal corner is the state-supported Yukawa bimodule; test closure, involution, one-trace normalization and whether the support condition is forced by the affine projector."
+}

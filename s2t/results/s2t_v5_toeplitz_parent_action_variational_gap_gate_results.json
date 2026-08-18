@@ -1,0 +1,32 @@
+{
+  "gate": "version5_toeplitz_parent_action_variational_gap_gate",
+  "action": "S_loop(V)=tau_210([N,V]*[N,V])",
+  "fixed_winding_minimization": {
+    "winding_per_branch": [
+      15,
+      -15
+    ],
+    "minimum_square_sum_per_branch": 15,
+    "minimizing_distribution": {
+      "plus_one_channels": 15,
+      "zero_channels": 90
+    },
+    "total_two_branch_action_unnormalized": 30,
+    "normalized_action": 0.14285714285714285,
+    "V15_is_global_minimizer_up_to_conjugation": true
+  },
+  "scale_test": {
+    "N_R": "N/R",
+    "fixed_measure_action": "1/(7 R^2)",
+    "circle_measure_action": "1/(7 R)",
+    "finite_positive_stationary_radius": false
+  },
+  "verdict": {
+    "internal_loop_variational_principle": "pass",
+    "positive_hessian_modulo_orbit": true,
+    "three_dimensional_localization": false,
+    "finite_size_stabilization": false,
+    "physical_mass": false,
+    "next_gate": "version5_spatial_extension_derrick_balance_gate"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-16",
+  "gate": "version5_derived_moment_map_minimal_data_gate",
+  "preprojective_identity": {
+    "middle_relation": "X X^T - Y^T Y",
+    "hodge_block_residual": 0.0,
+    "total_trace_balance": 0.0,
+    "exact_target": true
+  },
+  "orientation_change": {
+    "formal_isomorphism": "b=x_star, b_star=-x",
+    "general_phase_relation_preservation": "alpha*beta=-1",
+    "positive_star_phase_condition": "beta=conjugate(alpha)",
+    "phase_conditions_compatible": false,
+    "formal_relation_residual_first_edge": 0.0,
+    "formal_relation_residual_second_edge": 0.0,
+    "formal_star_defect_first_edge": 6.928203230275509,
+    "formal_star_defect_second_edge": 6.928203230275509,
+    "positive_star_residual_first_edge": 16.97056274847714,
+    "positive_star_residual_second_edge": 16.97056274847714,
+    "global_reversal_norm_residual": 0.0,
+    "single_edge_reversal_norm_shift": 81.33333333333334,
+    "formal_orientation_independence": true,
+    "positive_star_orientation_independence": false
+  },
+  "real_form": {
+    "mu_is_symmetric": true,
+    "so3_pairings": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "so3_pairing_norm": 0.0,
+    "strict_SO3_moment_map_nonzero": false,
+    "full_matrix_pairing_norm": 4.69041575982343,
+    "U3_or_GL3_detects_relation": true,
+    "SO3_dimension": 3,
+    "U3_or_GL3_dimension": 9,
+    "additional_generators_if_enlarged": 6
+  },
+  "derived_complex": {
+    "minimal_rule": "d(theta_i)=r_i, d(arrows)=0",
+    "d_squared_zero": true,
+    "moment_relation_is_input": true,
+    "moment_relation_derived_from_KO6": false
+  },
+  "normalization": {
+    "middle_vertex_normalized_norm": 7.333333333333333,
+    "projected_full_trace_norm": 7.333333333333333,
+    "normalization_residual": 0.0,
+    "unprojected_full_norm": 55.333333333333336,
+    "middle_vertex_idempotent_required": true,
+    "gauged_versus_framed_vertex_split_required": true
+  },
+  "verdict": {
+    "exact_preprojective_target": "pass",
+    "formal_orientation_independence": "pass",
+    "positive_star_canonicity": "fail",
+    "physical_SO3_moment_map": "fail",
+    "derived_nilpotence": "conditional_pass",
+    "parent_derivation_from_current_KO6": "fail",
+    "minimal_preprojective_route": "closed_as_parent_origin",
+    "new_complex_symplectic_parent": "open_only_as_new_architecture",
+    "physical_closure": false
+  },
+  "next_gate": "version5_parent_architecture_status_freeze_gate"
+}

@@ -1,0 +1,101 @@
+{
+  "date": "2026-08-16",
+  "gate": "version5_m300_hodge_curvature_hessian_gate",
+  "parent_action": {
+    "curvature": "F=[d,d*]-h",
+    "action": "S=tau300(F^2)",
+    "reduced_particle_chain_potential": "(Tr(I-X*X)^2+Tr(XX*-|phi|^2I)^2+3(|phi|^2-1)^2)/3",
+    "maximum_matrix_reduction_residual": 1.4210854715202004e-14,
+    "continuous_relative_coefficients_inside_single_trace_norm": 0
+  },
+  "zero_momentum_vacuum": {
+    "X": "I3",
+    "abs_phi": 1,
+    "energy": 0,
+    "exact_Hessian_spectrum": {
+      "0": 4,
+      "16/3": 5,
+      "(32-8sqrt7)/3": 1,
+      "(32+8sqrt7)/3": 1
+    },
+    "numerical_Hessian_eigenvalues": [
+      1.333306006090094e-10,
+      1.3333245056937866e-10,
+      1.3333342920408146e-10,
+      4.0000006619229947e-10,
+      3.611329837334191,
+      5.333333333466665,
+      5.333333333466665,
+      5.333333333466666,
+      5.333333333477332,
+      5.333333333477334,
+      17.722003496575137
+    ],
+    "signature": [
+      7,
+      4,
+      0
+    ]
+  },
+  "unit_momentum_vacuum": {
+    "frame_radius_squared": "5/6",
+    "pairing_radius_squared": "2/3",
+    "energy": "5/6",
+    "normal_branch_energy": "3/2",
+    "condensed_energy_advantage": "2/3",
+    "exact_Hessian_spectrum": {
+      "0": 4,
+      "40/9": 5,
+      "(68-4sqrt109)/9": 1,
+      "(68+4sqrt109)/9": 1
+    },
+    "numerical_Hessian_eigenvalues": [
+      -1.6653345386030723e-06,
+      -1.6653345370499601e-06,
+      -1.6653345355142695e-06,
+      0.0,
+      2.915417840533103,
+      4.444442036621864,
+      4.444442036621865,
+      4.444442036621867,
+      4.444442591733377,
+      4.44444259173338,
+      12.19569119020787
+    ],
+    "signature": [
+      7,
+      4,
+      0
+    ],
+    "connector_mass_absolute": 1.224744871391589,
+    "connector_mass_squared": "3/2"
+  },
+  "zero_mode_interpretation": {
+    "SO3_orbit_directions": 3,
+    "pairing_phase_direction": 1,
+    "negative_scalar_modes": 0,
+    "physical_scalar_Hessian_after_SO3_and_U1_quotient": "positive"
+  },
+  "action_uniqueness_boundary": {
+    "single_unweighted_full_curvature_norm": "fixes all block weights",
+    "block_symmetry_invariant_weight_count_lower_bound": 2,
+    "relative_weight_count_after_overall_scale": 1,
+    "finding": "The action is coefficient-free once the unweighted full curvature norm is adopted, but this equality is a parent-action principle, not a consequence of the smaller block symmetry alone."
+  },
+  "full_M300_limit": {
+    "reference_sector_lifted": false,
+    "reference_chain_mixing_one_forms_classified": false,
+    "complete_BV_BRST_complex": false,
+    "all_M300_admissible_fluctuations_in_Hessian": false
+  },
+  "verdict": {
+    "one_trace_Hodge_curvature_action_candidate": "pass",
+    "connector_scalar_Hessian_after_gauge_quotient": "pass",
+    "stable_unit_momentum_condensate": "pass",
+    "complete_M300_action_uniqueness": false,
+    "full_physical_Hessian": false,
+    "physical_closure": false,
+    "status": "connector_action_and_Hessian_pass_full_calculus_open"
+  },
+  "next_gate": "Classify the full M300 represented one-form/BV complex, especially reference-chain mixing blocks, and determine whether the same curvature norm lifts every nonphysical mode without a second weight."
+}

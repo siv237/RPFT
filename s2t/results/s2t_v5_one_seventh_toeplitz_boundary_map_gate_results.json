@@ -1,0 +1,73 @@
+{
+  "gate": "version5_one_seventh_toeplitz_boundary_map_gate",
+  "coefficient_projection": {
+    "name": "q0=p15 tensor P0",
+    "rank": 15,
+    "ambient_rank": 105,
+    "normalized_trace": 0.14285714285714285
+  },
+  "toeplitz_operator": {
+    "Hardy_space": "H2(S1) tensor q0(C105)",
+    "positive_winding_symbol": "u_H(z)=z",
+    "operator": "T_u=S tensor q0",
+    "unilateral_shift_data": {
+      "kernel_rank": 0,
+      "cokernel_rank": 1,
+      "Fredholm_index": -1,
+      "source_defect_rank_1_minus_SstarS": 0,
+      "target_defect_rank_1_minus_SSstar": 1
+    },
+    "coefficient_Fredholm_index": -15,
+    "compact_defect_projection": "e0 tensor q0",
+    "compact_defect_projection_rank": 15,
+    "compact_times_normalized_coefficient_trace": 0.14285714285714285
+  },
+  "orientation_reversal": {
+    "symbol": "u_H*=z^-1",
+    "operator": "T_u*=S* tensor q0",
+    "backward_shift_data": {
+      "kernel_rank": 1,
+      "cokernel_rank": 0,
+      "Fredholm_index": 1,
+      "source_defect_rank_1_minus_SSstar": 1,
+      "target_defect_rank_1_minus_SstarS": 0
+    },
+    "coefficient_Fredholm_index": 15,
+    "KO6_conjugation_exchanges_the_two_orientations": true,
+    "ordinary_full_pair_index": 0,
+    "oriented_half_index_absolute_value": 15
+  },
+  "finite_truncation_warning": {
+    "NxN_truncated_shift_kernel_rank": 1,
+    "NxN_truncated_shift_cokernel_rank": 1,
+    "NxN_truncated_shift_index": 0,
+    "Fredholm_index_requires_infinite_Hardy_module": true
+  },
+  "comparison_with_corner_class": {
+    "stable_corner_rank": 15,
+    "Toeplitz_defect_rank": 15,
+    "K0_ranks_match": true,
+    "canonical_class_level_bridge": true,
+    "canonical_rank5_subprojection_inside_H20_needed": false,
+    "reason": "positive representative lives in compact Toeplitz ideal, not H20"
+  },
+  "parent_status": {
+    "Hopf_orientation_fixes_sign_pair": true,
+    "Toeplitz_KK_class_fixed_by_oriented_circle": true,
+    "concrete_Hardy_representation_is_unique": false,
+    "new_finite_physical_states_added": false,
+    "infinite_Hardy_module_is_analytic_auxiliary": true,
+    "extension_embedded_in_parent_spectral_triple": false,
+    "real_KKO_cycle_completed": false,
+    "physical_Dirac_energy_localization_completed": false
+  },
+  "verdict": {
+    "explicit_boundary_map_constructed": true,
+    "one_seventh_class_transgression": "pass_at_complex_K_theory_level",
+    "KO6_orientation_pair": "compatible_at_index_pairing_level",
+    "operator_parent_closure": false,
+    "physical_closure": false,
+    "status": "class_bridge_closed_operator_parent_open"
+  },
+  "next_gate": "version5_real_toeplitz_ko6_parent_lift_gate"
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-16",
+  "gate": "version5_flip_twisted_trace_positivity_gate",
+  "abstract_rho_trace": {
+    "convention": "tau(a b) = tau(rho(b) a)",
+    "central_flip": "rho(e_plus)=e_minus, rho(e_minus)=e_plus",
+    "solution_on_flipped_idempotents": {
+      "tau_e_plus": 0,
+      "tau_e_minus": 0
+    },
+    "faithful": false,
+    "positivity_needed_for_no_go": false
+  },
+  "represented_weight": {
+    "Hilbert_dimension": 18,
+    "rank_P_plus": 6,
+    "rank_P_minus": 3,
+    "rank_fixed_complement": 9,
+    "intertwiner_rank_upper_bound": 15,
+    "sharp_example_rank": 15,
+    "intertwiner_residual_plus": 0.0,
+    "intertwiner_residual_minus": 0.0,
+    "invertible_weight_exists": false,
+    "positive_faithful_weight_exists": false
+  },
+  "finite_modular_state": {
+    "faithful_density_matrix_is_invertible": true,
+    "modular_automorphism_is_inner": true,
+    "center_fixed_pointwise": true,
+    "rank_mismatched_central_flip_possible": false
+  },
+  "normalization": {
+    "common_kinetic_curvature_trace": false,
+    "singular_support_projector_required": true,
+    "new_measure_data_required": true
+  },
+  "verdict": {
+    "faithful_abstract_rho_trace": "impossible",
+    "positive_invertible_represented_weight": "impossible",
+    "faithful_finite_modular_flip": "impossible",
+    "finite_real_scalar_twisted_route": "closed",
+    "type_III_or_indefinite_replacement": "new_architecture",
+    "physical_closure": false
+  },
+  "next_gate": "version5_derived_moment_map_minimal_data_gate"
+}

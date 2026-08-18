@@ -1,0 +1,112 @@
+{
+  "gate": "version5_closure_deficit_induced_vacuum_response_gate",
+  "finite_rank_heat_kernel": {
+    "identity": "exp(-t H_def)-exp(-t H_closed)=(1-exp(-t)) P_def",
+    "defect_rank_per_branch": 15,
+    "coefficient_dimension_per_branch": 105,
+    "samples": [
+      {
+        "t": 0.001,
+        "normalized_heat_response": 0.00014278573808928257
+      },
+      {
+        "t": 0.01,
+        "normalized_heat_response": 0.0014214523215474132
+      },
+      {
+        "t": 0.1,
+        "normalized_heat_response": 0.013594654566291497
+      },
+      {
+        "t": 1.0,
+        "normalized_heat_response": 0.09030293697550823
+      },
+      {
+        "t": 10.0,
+        "normalized_heat_response": 0.14285065715289105
+      }
+    ],
+    "ultraviolet_limit": 0.0,
+    "infrared_limit": 0.14285714285714285
+  },
+  "relative_determinant": {
+    "formula": "(1/7) log((m^2+a)/m^2)",
+    "unit_gap_mass_samples": [
+      {
+        "mass": 0.01,
+        "response": 1.3157771952823596
+      },
+      {
+        "mass": 0.1,
+        "response": 0.6593029309773227
+      },
+      {
+        "mass": 0.5,
+        "response": 0.22991970177630003
+      },
+      {
+        "mass": 1.0,
+        "response": 0.09902102579427789
+      },
+      {
+        "mass": 10.0,
+        "response": 0.001421475836166869
+      }
+    ],
+    "finite_for_positive_mass": true,
+    "massless_limit": "positive infinity",
+    "large_mass_limit": 0.0,
+    "local_counterterm_needed": false
+  },
+  "scale_test": {
+    "gap": "a(R)=R^-2",
+    "samples": [
+      {
+        "radius": 0.25,
+        "response_at_mass_1": 0.40474476343660226
+      },
+      {
+        "radius": 0.5,
+        "response_at_mass_1": 0.22991970177630003
+      },
+      {
+        "radius": 1.0,
+        "response_at_mass_1": 0.09902102579427789
+      },
+      {
+        "radius": 2.0,
+        "response_at_mass_1": 0.03187765018774425
+      },
+      {
+        "radius": 4.0,
+        "response_at_mass_1": 0.008660660259490692
+      },
+      {
+        "radius": 8.0,
+        "response_at_mass_1": 0.0022148837908521793
+      }
+    ],
+    "strictly_decreasing_with_radius": true,
+    "finite_stationary_radius": false
+  },
+  "real_pair": {
+    "signed_index_supertrace": "cancels between -15 and +15",
+    "positive_defect_rank": 30,
+    "total_dimension": 210,
+    "positive_modulus_weight": 0.14285714285714285,
+    "measure_orientation_derived": false
+  },
+  "causal_chain": [
+    "nonzero KO class",
+    "unavoidable compact defect",
+    "finite relative vacuum response"
+  ],
+  "verdict": {
+    "universal_relative_response": true,
+    "absolute_energy": false,
+    "mass_gap_derived": false,
+    "finite_radius": false,
+    "physical_closure": false,
+    "next_gate": "version5_eta_wzw_real_pair_phase_gate"
+  }
+}

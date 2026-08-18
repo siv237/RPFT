@@ -1,0 +1,118 @@
+{
+  "gate": "version5_holonomy_projector_defect_multiplicity_gate",
+  "full_bimodule_projector_no_go": {
+    "carrier": "E=M20x15(C)",
+    "bimodule_endomorphism_algebra": "C I_E",
+    "scalar_idempotent_solutions": [
+      0,
+      1
+    ],
+    "nontrivial_full_bimodule_linear_projector": false,
+    "consequence": "every nontrivial compression is a physical-corner readout after restricting the coordinate action, not an endomorphism of the full factor bimodule"
+  },
+  "canonical_rank_ledger": {
+    "full_parent_carrier": 300,
+    "affine_physical_light_partial_sector": 45,
+    "family_holonomy_projector_formula": "P0=(I+C3+C3^2)/3",
+    "family_holonomy_projector_rank": 1,
+    "P0_tensor_I15_rank": 15,
+    "KO6_J_completed_family_compressed_rank": 30,
+    "observed_block_names": [
+      "Q_L",
+      "L_L",
+      "u_R",
+      "d_R",
+      "e_R"
+    ],
+    "observed_block_sizes": [
+      6,
+      2,
+      3,
+      3,
+      1
+    ],
+    "combined_P0_block_ranks": [
+      6,
+      2,
+      3,
+      3,
+      1
+    ],
+    "only_fixed_rank_one_observed_block": "e_R",
+    "fixed_rank_one_block_is_neutrino": false
+  },
+  "weak_doublet_obstruction": {
+    "space": "L_L=C^2",
+    "coordinate_action": "M2(C)",
+    "commutant_dimension": 1,
+    "commutant": "C I2",
+    "fixed_gauge_invariant_projector_ranks": [
+      0,
+      2
+    ],
+    "fixed_neutrino_rank_one_projector": false
+  },
+  "Higgs_dressed_projector": {
+    "formula": "P_nu(H)=tilde(H) tilde(H)^dagger/(H^dagger H)",
+    "rank": 1,
+    "idempotence_residual": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "SU2_covariance_residual": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "defined_at_H_equal_zero": false,
+    "constant_commutant_projector": false,
+    "requires_broken_phase_or_nonzero_Higgs_section": true
+  },
+  "conditional_neutrino_rank_chain": {
+    "chain": "45 -> 15 by P0 -> 2 by L_L -> 1 by P_nu(H)",
+    "ranks": [
+      45,
+      15,
+      2,
+      1
+    ],
+    "combined_projector": "P0 tensor P_nu(H)",
+    "combined_complex_rank": 1,
+    "family_direction_from_holonomy": true,
+    "weak_direction_from_Higgs": true,
+    "from_holonomy_alone": false,
+    "matches_higher_degree_Weinberg_route": true
+  },
+  "nonlinear_defect_embedding_boundary": {
+    "old_scalar_defect": "q(x) I_E",
+    "candidate_operator_valued_defect": "q(x) P0 tensor P_nu(H(x))",
+    "requires_joint_q_and_H_dynamics": true,
+    "regularity_at_Higgs_zeros_open": true,
+    "common_kinetic_normalization_open": true,
+    "overall_Weinberg_or_defect_amplitude_fixed": false,
+    "already_a_term_of_scalar_kink_action": false
+  },
+  "verdict": {
+    "holonomy_projector_alone_removes_multiplicity_300_to_one": "fail",
+    "holonomy_projector_reduces_family_three_to_one": "pass",
+    "fixed_gauge_invariant_neutrino_projector": "fail",
+    "Higgs_dressed_neutrino_projector": "conditional_pass",
+    "conditional_single_complex_neutrino_line": "pass_after_physical_light_H15_and_nonzero_Higgs_compressions",
+    "single_line_from_current_universal_scalar_defect": "fail",
+    "absolute_mass_or_nonlinear_parent_derived": "fail",
+    "physical_closure": false,
+    "status": "P0 canonically removes only family multiplicity. A single neutrino line appears only after two further physical reductions: the L_L block and a Higgs-dressed covariant rank-one projector. This is precisely a higher-degree Weinberg-type route, not a projector of the full M20-M15 bimodule and not a consequence of holonomy alone."
+  },
+  "next_gate": "version5_defect_transport_part_conclusion_gate"
+}

@@ -1,0 +1,74 @@
+{
+  "gate": "version5_equivariant_boundary_sector_selection_gate",
+  "explicit_zero_sector": {
+    "constant_projector": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "idempotent": true,
+    "spatial_derivative": 0,
+    "projective_charge": 0,
+    "induced_Hopf_Chern_number": 0,
+    "admissible_in_current_product_finite_geometry": true
+  },
+  "carrier_topology": {
+    "historical_carrier": "RP3 x S1",
+    "pi2": 0,
+    "H2_cohomology": "Z2",
+    "free_H2_cohomology_rank": 0,
+    "torsion_restriction_candidates_in_H2_S2_equals_Z": [
+      0
+    ],
+    "torsion_can_force_local_Chern_one": false,
+    "late_S4_H2_cohomology": 0
+  },
+  "closed_space_charge_audit": {
+    "scope": "globally liftable branch without disclination lines",
+    "oriented_boundary_relation": "sum_i [S2_i] = 0",
+    "sample_point_charges": [
+      1,
+      -1
+    ],
+    "total_charge": 0,
+    "single_uncompensated_plus_one_forced": false
+  },
+  "functional_cross_audit": {
+    "identity_loop_winding": 0,
+    "identity_loop_action": 0.0,
+    "matter_loop_winding": 15,
+    "matter_sector_minimum_action": 0.14285714285714285,
+    "global_action_prefers_zero_if_all_sectors_are_allowed": true,
+    "sample_positive_defect_response": 0.05792358687259491,
+    "defect_response_destabilizes_zero": false
+  },
+  "project_background": {
+    "zero_prompt_carrier_inevitability_passed": false,
+    "carrier_measure_derived": false,
+    "self_generated_defect_boundary_sector_was_input": true,
+    "spin_cover_bridge_for_selected_hedgehog_passed": true,
+    "topological_closure_deficit_inside_sector_passed": true,
+    "zero_sector_negative_Hessian_mode_derived": false,
+    "global_anomaly_excluding_zero_derived": false
+  },
+  "verdict": {
+    "equivariant_boundary_condition_forced": false,
+    "nonzero_sector_selected_by_current_topology": false,
+    "nonzero_sector_selected_by_current_functionals": false,
+    "matter_inevitability_proved": false,
+    "topological_branch_status": "STOP until a zero-sector instability or anomaly is derived",
+    "next_gate": "version5_zero_sector_instability_parent_gate"
+  }
+}

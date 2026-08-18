@@ -1,0 +1,575 @@
+\babel@toc {russian}{}\relax 
+\contentsline {part}{I\hspace {1em}Родительская архитектура и предел статического выбора}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Введение: постановка задачи пятого тома}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Почему необходима новая версия}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Задача общего вариационного источника}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Что наследуется из предыдущих томов}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Запрещённый багаж}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Три допустимых класса архитектуры}{3}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Совместная вариация состояния и носителя}{3}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Архитектура граничного источника}{3}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Новая конечная геометрия}{4}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}Проверка V.0 до феноменологии}{4}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Критерий завершённости Тома V}{4}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Условие ранней остановки}{4}{section.1.8}%
+\contentsline {chapter}{\numberline {2}Общепроектная проверка литературы и новизны}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Область проверки}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Уровни новизны}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Совместная вариация состояния и носителя}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Граничный источник}{6}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Конечная геометрия}{6}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Общий вывод и правило дальнейшей работы}{7}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Выбор первой архитектуры версии V}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Лексикографический порядок}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Сравнение трёх классов}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Последствия заморозки}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Результат последующих проверок}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Вывод}{9}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Фиксация меры на носителях: источник, смысл и топологические веса}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Повторное чтение первичного источника}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Исправленный логарифмический словарь}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Два несовместимых смысла функционала}{10}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Конечные топологические веса}{11}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Реестр требований}{11}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Условия возможного повторного открытия}{11}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Археология исходной идеи: от отдельного объекта к категории редукций}{12}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Устойчивый образец проекта}{12}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Литературная граница}{12}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Относительная архитектура редукций}{12}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Треугольник трёх редукций}{13}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Вывод}{13}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Треугольник редукций: обратная спектральная неоднозначность и коцикл}{14}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Минимальные объекты треугольника}{14}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Точный конечный контрпример}{14}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Развилка обогащения}{15}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Состояние коцикла и вывод}{15}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Граничный родительский след: совместимость секторов Вильсона, дефекта и поколений}{16}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Зафиксированные требования}{16}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Сильнейшие готовые блоки}{16}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Развилка одного следа}{17}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Препятствие фиксированного заряда}{17}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Круг в сильнейшем объединении}{17}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Вывод}{18}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Ограничение сложности конечной геометрии}{19}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Граница, заданная литературой}{19}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Зафиксированная область перебора}{19}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Перебор графов}{20}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Алгебра предполагаемого селектора}{20}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Вывод}{21}{section.8.5}%
+\contentsline {chapter}{\numberline {9}Вещественная висячая вершина-селектор: запрет по условию первого порядка}{22}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Поблочное правило первого порядка}{22}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Размещения квадрата и висячей вершины}{22}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Проверка дополнением Шура}{23}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Упущенная возможность}{23}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Условия прекращения направления}{23}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Вывод}{23}{section.9.6}%
+\contentsline {chapter}{\numberline {10}Прямоугольник с активной алгеброй поколений: точный запрет для спектрального вакуума}{25}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Минимальный частичный блок}{25}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Односледовый спектральный потенциал}{25}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Гессиан и плоские квартичные направления}{26}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Калибровочное следствие}{26}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Связь с предыдущими запретительными результатами}{26}{section.10.5}%
+\contentsline {section}{\numberline {10.6}Вывод}{27}{section.10.6}%
+\contentsline {chapter}{\numberline {11}Невозможность получить отображение момента из обычного спектрального функционала}{28}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Ориентированная трёхвершинная цепочка}{28}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Теорема о спектральной неразличимости}{28}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Квартичный частный случай}{29}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Почему суперслед не помогает}{29}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Область применимости}{29}{section.11.5}%
+\contentsline {section}{\numberline {11.6}Толкование и вывод}{29}{section.11.6}%
+\contentsline {chapter}{\numberline {12}Выбор необычной архитектуры после доказательства спектральной слепоты}{31}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Условия допустимости}{31}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Сводная таблица направлений}{32}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Извлечение ориентированного дифференциала из высоты}{32}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Средний проектор как многочлен от высоты}{33}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Отличие от неудачной конструкции конуса отображения}{33}{section.12.5}%
+\contentsline {section}{\numberline {12.6}Нерешённый вопрос происхождения}{33}{section.12.6}%
+\contentsline {section}{\numberline {12.7}Вывод}{34}{section.12.7}%
+\contentsline {chapter}{\numberline {13}Каноничность ориентированной конструкции высоты--Ходжа в KO6}{35}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Исправления исходной постановки}{35}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Полный набор высот KO6}{35}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Явное препятствие двух высот}{36}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Нормировка следа}{36}{section.13.4}%
+\contentsline {section}{\numberline {13.5}Связь с литературой}{37}{section.13.5}%
+\contentsline {section}{\numberline {13.6}Вывод}{37}{section.13.6}%
+\contentsline {chapter}{\numberline {14}Автоморфизм скрученной алгебры поколений}{38}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Текущая вещественная конечная алгебра}{38}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Почему известный механизм обмена отсутствует}{38}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Препятствие на вещественном радиальном сечении}{39}{section.14.3}%
+\contentsline {section}{\numberline {14.4}Минимальная цена повторного открытия}{39}{section.14.4}%
+\contentsline {section}{\numberline {14.5}Вывод}{39}{section.14.5}%
+\contentsline {chapter}{\numberline {15}Ограничение минимального избирательного удвоения для скручивания}{41}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Зафиксированные бимодульные опоры}{41}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Охват стрелок}{41}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Калибровочная цена и сложность}{42}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Лексикографический выбор}{42}{section.15.4}%
+\contentsline {section}{\numberline {15.5}Вывод}{42}{section.15.5}%
+\contentsline {chapter}{\numberline {16}Вещественно-скалярное скручивание: представление KO6 и проверка знака}{43}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Скрученная алгебра и её представление}{43}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Вещественные скрученные условия порядка}{43}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Точная опора скрученных 1-форм}{44}{section.16.3}%
+\contentsline {section}{\numberline {16.4}Сохранение препятствия по знаку}{44}{section.16.4}%
+\contentsline {section}{\numberline {16.5}Вывод}{45}{section.16.5}%
+\contentsline {chapter}{\numberline {17}Положительность скрученного следа и модулярного состояния при обмене}{46}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Абстрактное препятствие для скрученного следа}{46}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Препятствие для операторного веса}{46}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Препятствие для конечномерного модулярного состояния}{47}{section.17.3}%
+\contentsline {section}{\numberline {17.4}Следствие для нормировки}{47}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Вывод}{47}{section.17.5}%
+\contentsline {chapter}{\numberline {18}Минимальные данные производного отображения момента}{49}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Удвоенный колчан и точное локальное соотношение}{49}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Две различные независимости от ориентации}{50}{section.18.2}%
+\contentsline {section}{\numberline {18.3}Проверка вещественной калибровочной группы}{50}{section.18.3}%
+\contentsline {section}{\numberline {18.4}Что действительно даёт производный комплекс}{51}{section.18.4}%
+\contentsline {section}{\numberline {18.5}След и выбор средней вершины}{51}{section.18.5}%
+\contentsline {section}{\numberline {18.6}Граница с литературой}{51}{section.18.6}%
+\contentsline {section}{\numberline {18.7}Вывод}{52}{section.18.7}%
+\contentsline {chapter}{\numberline {19}Итоговая заморозка родительской архитектуры}{53}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Область утверждения}{53}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Совместная вариация состояния и носителя}{53}{section.19.2}%
+\contentsline {section}{\numberline {19.3}Архитектура граничного источника}{54}{section.19.3}%
+\contentsline {section}{\numberline {19.4}Конечная, скрученная и производная геометрия}{54}{section.19.4}%
+\contentsline {section}{\numberline {19.5}Положительный математический остаток}{55}{section.19.5}%
+\contentsline {section}{\numberline {19.6}Проверка критерия завершённости}{55}{section.19.6}%
+\contentsline {section}{\numberline {19.7}Условия повторного открытия}{56}{section.19.7}%
+\contentsline {section}{\numberline {19.8}Итоговый статус}{56}{section.19.8}%
+\contentsline {chapter}{\numberline {20}Модулярное соответствие в коммутанте и единый конечный след}{58}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Алгебра вершин в полном коммутанте}{58}{section.20.1}%
+\contentsline {section}{\numberline {20.2}Соответствие спектральных проекторов}{58}{section.20.2}%
+\contentsline {section}{\numberline {20.3}Полная высота и верное состояние}{59}{section.20.3}%
+\contentsline {section}{\numberline {20.4}Модулярная поляризация оператора Дирака}{59}{section.20.4}%
+\contentsline {section}{\numberline {20.5}Кривизна и единственный след}{60}{section.20.5}%
+\contentsline {section}{\numberline {20.6}Почему прежний запрет скрученного следа не применяется}{60}{section.20.6}%
+\contentsline {section}{\numberline {20.7}Граница результата}{60}{section.20.7}%
+\contentsline {section}{\numberline {20.8}Вердикт}{61}{section.20.8}%
+\contentsline {chapter}{\numberline {21}Амальгамированное объединение KO6 и семейно-калибровочного следа}{62}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Общий 45-мерный угол}{62}{section.21.1}%
+\contentsline {section}{\numberline {21.2}Одна полная матричная алгебра}{62}{section.21.2}%
+\contentsline {section}{\numberline {21.3}Почему пакет SU(5) должен идти по всей цепи}{63}{section.21.3}%
+\contentsline {section}{\numberline {21.4}Лёгкое ядро и массивные связующие комбинации}{63}{section.21.4}%
+\contentsline {section}{\numberline {21.5}Общая нормировка двух секторов}{64}{section.21.5}%
+\contentsline {section}{\numberline {21.6}Граница кинематического успеха}{64}{section.21.6}%
+\contentsline {section}{\numberline {21.7}Вердикт}{65}{section.21.7}%
+\contentsline {chapter}{\numberline {22}Единый квадрат кривизны M300 и гессиан связующего сектора}{66}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Три блока одного функционала}{66}{section.22.1}%
+\contentsline {section}{\numberline {22.2}Точный гессиан при нулевом импульсе}{66}{section.22.2}%
+\contentsline {section}{\numberline {22.3}Единичный дефектный импульс}{67}{section.22.3}%
+\contentsline {section}{\numberline {22.4}Граница единственности действия}{67}{section.22.4}%
+\contentsline {section}{\numberline {22.5}Почему полный гессиан ещё не закрыт}{68}{section.22.5}%
+\contentsline {section}{\numberline {22.6}Вердикт}{68}{section.22.6}%
+\contentsline {chapter}{\numberline {23}Координатная алгебра M300 и корректность комплекса одноформ}{69}{chapter.23}%
+\contentsline {section}{\numberline {23.1}Почему полную матричную алгебру нельзя объявить координатной}{69}{section.23.1}%
+\contentsline {section}{\numberline {23.2}Взрыв пространства одноформ без вещественной структуры}{70}{section.23.2}%
+\contentsline {section}{\numberline {23.3}Точный свидетель неединственности исчисления}{70}{section.23.3}%
+\contentsline {section}{\numberline {23.4}Следствие для действия Ходжа}{71}{section.23.4}%
+\contentsline {section}{\numberline {23.5}Вердикт}{71}{section.23.5}%
+\contentsline {chapter}{\numberline {24}Аффинный KO6-бимодуль и канонический опорный угол}{72}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Каноническое разложение четырёх состояний}{72}{section.24.1}%
+\contentsline {section}{\numberline {24.2}Единый бимодуль размерности 300}{73}{section.24.2}%
+\contentsline {section}{\numberline {24.3}KO6, высота и ориентированный дифференциал}{73}{section.24.3}%
+\contentsline {section}{\numberline {24.4}Опорный сектор как канонический угол}{74}{section.24.4}%
+\contentsline {section}{\numberline {24.5}Кривизна и устойчивость смешивания с опорой}{74}{section.24.5}%
+\contentsline {section}{\numberline {24.6}Исправление нормировки полного следа}{75}{section.24.6}%
+\contentsline {section}{\numberline {24.7}Оставшаяся граница}{75}{section.24.7}%
+\contentsline {chapter}{\numberline {25}Алгебра Стандартной модели, семейный коммутант и предел обычных одноформ}{77}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Коммутантное размещение}{77}{section.25.1}%
+\contentsline {section}{\numberline {25.2}Теорема о невидимости семейной цепи}{78}{section.25.2}%
+\contentsline {section}{\numberline {25.3}Трилемма объединения алгебр}{78}{section.25.3}%
+\contentsline {subsection}{\numberline {25.3.1}Прямая сумма}{78}{subsection.25.3.1}%
+\contentsline {subsection}{\numberline {25.3.2}Тензорное произведение}{78}{subsection.25.3.2}%
+\contentsline {subsection}{\numberline {25.3.3}Коммутант}{79}{subsection.25.3.3}%
+\contentsline {section}{\numberline {25.4}Что действительно остаётся открытым}{79}{section.25.4}%
+\contentsline {chapter}{\numberline {26}Градуированное соответствие, суперсвязность и калибровочная развилка}{80}{chapter.26}%
+\contentsline {section}{\numberline {26.1}Минимальное соответствие}{80}{section.26.1}%
+\contentsline {section}{\numberline {26.2}Три кривизны и возвращение проблемы знака}{81}{section.26.2}%
+\contentsline {subsection}{\numberline {26.2.1}Самосопряжённая суперсвязность}{81}{subsection.26.2.1}%
+\contentsline {subsection}{\numberline {26.2.2}Односторонняя суперсвязность}{81}{subsection.26.2.2}%
+\contentsline {subsection}{\numberline {26.2.3}Эрмитово отображение момента}{81}{subsection.26.2.3}%
+\contentsline {section}{\numberline {26.3}Поправка к пространству допустимых флуктуаций}{82}{section.26.3}%
+\contentsline {section}{\numberline {26.4}Что исправляет общая нормировка}{82}{section.26.4}%
+\contentsline {section}{\numberline {26.5}Калибровочная и БВ/БРСТ-развилка}{82}{section.26.5}%
+\contentsline {section}{\numberline {26.6}Возврат к старому тетраэдрическому сектору}{83}{section.26.6}%
+\contentsline {chapter}{\numberline {27}Коммутирующий квадрат семейного и наблюдаемого чтений}{84}{chapter.27}%
+\contentsline {section}{\numberline {27.1}Две факторные алгебры}{84}{section.27.1}%
+\contentsline {section}{\numberline {27.2}Один след без относительного веса}{85}{section.27.2}%
+\contentsline {section}{\numberline {27.3}Какие семейные поля действительно допустимы}{85}{section.27.3}%
+\contentsline {section}{\numberline {27.4}Сокращённый функционал}{86}{section.27.4}%
+\contentsline {section}{\numberline {27.5}Что именно найдено}{86}{section.27.5}%
+\contentsline {chapter}{\numberline {28}Точное наблюдаемое чтение и внедиагональный юкавский угол}{88}{chapter.28}%
+\contentsline {section}{\numberline {28.1}Наблюдаемый пятнадцатимерный блок}{88}{section.28.1}%
+\contentsline {section}{\numberline {28.2}Повторный аудит проекции, привязанной к состоянию}{88}{section.28.2}%
+\contentsline {section}{\numberline {28.3}Что даёт настоящее условное ожидание}{89}{section.28.3}%
+\contentsline {section}{\numberline {28.4}Связывающая алгебра}{89}{section.28.4}%
+\contentsline {chapter}{\numberline {29}Касательная геометрия ранга один и идеал вырожденных двух форм}{91}{chapter.29}%
+\contentsline {section}{\numberline {29.1}Условие опоры как касательное пространство}{91}{section.29.1}%
+\contentsline {section}{\numberline {29.2}Минимальная алгебра нулевой степени}{91}{section.29.2}%
+\contentsline {section}{\numberline {29.3}Факторизация двух форм}{92}{section.29.3}%
+\contentsline {section}{\numberline {29.4}Проверка ориентации}{92}{section.29.4}%
+\contentsline {chapter}{\numberline {30}Ранг-один угловое чтение семейной кривизны}{94}{chapter.30}%
+\contentsline {section}{\numberline {30.1}Антикруговой журнал}{94}{section.30.1}%
+\contentsline {section}{\numberline {30.2}Полная и угловая кривизны}{94}{section.30.2}%
+\contentsline {section}{\numberline {30.3}Почему коэффициент не потерян}{95}{section.30.3}%
+\contentsline {section}{\numberline {30.4}Совместимость с наблюдаемым чтением}{95}{section.30.4}%
+\contentsline {chapter}{\numberline {31}Связывающий родитель Мориты и носитель переходов размерности 300}{97}{chapter.31}%
+\contentsline {section}{\numberline {31.1}Антикруговая сверка}{97}{section.31.1}%
+\contentsline {section}{\numberline {31.2}Триста состояний как прямоугольный бимодуль}{97}{section.31.2}%
+\contentsline {section}{\numberline {31.3}Связывающая алгебра и единственный след}{97}{section.31.3}%
+\contentsline {section}{\numberline {31.4}Двусторонняя связность}{98}{section.31.4}%
+\contentsline {section}{\numberline {31.5}Калибровочная граница}{99}{section.31.5}%
+\contentsline {chapter}{\numberline {32}Физические углы и классификация неоднозначности связности}{100}{chapter.32}%
+\contentsline {section}{\numberline {32.1}Антикруговая сверка}{100}{section.32.1}%
+\contentsline {section}{\numberline {32.2}Разность двух связностей}{100}{section.32.2}%
+\contentsline {section}{\numberline {32.3}Ограничение до наблюдаемых блоков}{101}{section.32.3}%
+\contentsline {section}{\numberline {32.4}Почему ранг-один семейный угол не спасает единственность}{101}{section.32.4}%
+\contentsline {section}{\numberline {32.5}Что фиксирует единственный след}{101}{section.32.5}%
+\contentsline {section}{\numberline {32.6}Оставшийся динамический тест}{102}{section.32.6}%
+\contentsline {chapter}{\numberline {33}Потенциал центрированной связности и динамический запрет единственности}{103}{chapter.33}%
+\contentsline {section}{\numberline {33.1}Сверка с прежними результатами}{103}{section.33.1}%
+\contentsline {section}{\numberline {33.2}Центрированное пространство}{103}{section.33.2}%
+\contentsline {section}{\numberline {33.3}Общий чётный потенциал}{104}{section.33.3}%
+\contentsline {section}{\numberline {33.4}Наиболее благоприятное следовое ограничение}{104}{section.33.4}%
+\contentsline {section}{\numberline {33.5}Проверка выравнивающего функционала}{105}{section.33.5}%
+\contentsline {section}{\numberline {33.6}Почему центральный уровень не является решением}{105}{section.33.6}%
+\contentsline {section}{\numberline {33.7}Итог ветви}{105}{section.33.7}%
+\contentsline {chapter}{\numberline {34}Развилка пятнадцати и шестнадцати состояний и степень нейтринного сектора}{107}{chapter.34}%
+\contentsline {section}{\numberline {34.1}Антикруговая сверка}{107}{section.34.1}%
+\contentsline {section}{\numberline {34.2}Две несовпадающие архитектуры}{107}{section.34.2}%
+\contentsline {section}{\numberline {34.3}Разделение первой и высшей степеней}{108}{section.34.3}%
+\contentsline {chapter}{\numberline {35}Физический бимодуль заряженных одноформ на пакете $H_{15}$}{110}{chapter.35}%
+\contentsline {section}{\numberline {35.1}Антикруговая сверка}{110}{section.35.1}%
+\contentsline {section}{\numberline {35.2}Пространство трёх физических рёбер}{110}{section.35.2}%
+\contentsline {section}{\numberline {35.3}Правильно типизированный модуль одноформ}{111}{section.35.3}%
+\contentsline {section}{\numberline {35.4}Что фиксирует грассманова связность}{111}{section.35.4}%
+\contentsline {section}{\numberline {35.5}Последняя дешёвая проверка этой щели}{112}{section.35.5}%
+\contentsline {chapter}{\numberline {36}Спектральное кручение как последний селектор заряженных рёбер}{113}{chapter.36}%
+\contentsline {section}{\numberline {36.1}Антикруговая сверка}{113}{section.36.1}%
+\contentsline {section}{\numberline {36.2}Ограничение на пакет $H_{15}$}{113}{section.36.2}%
+\contentsline {section}{\numberline {36.3}Точный ранг относительной чувствительности}{114}{section.36.3}%
+\contentsline {section}{\numberline {36.4}Почему положительная норма не спасает ветвь}{114}{section.36.4}%
+\contentsline {part}{II\hspace {1em}Прозрение: от выбора состояния к переносу дефекта}{116}{part.2}%
+\contentsline {chapter}{\numberline {37}От статического селектора к динамике переноса дефекта}{117}{chapter.37}%
+\contentsline {section}{\numberline {37.1}Обратная сверка с исходной программой}{117}{section.37.1}%
+\contentsline {section}{\numberline {37.2}Граница с известной математической физикой}{118}{section.37.2}%
+\contentsline {section}{\numberline {37.3}Что именно переосмысляется}{118}{section.37.3}%
+\contentsline {section}{\numberline {37.4}Новый словарь объектов проекта}{119}{section.37.4}%
+\contentsline {section}{\numberline {37.5}Минимальная математическая постановка переноса}{119}{section.37.5}%
+\contentsline {section}{\numberline {37.6}Масса как щель переноса}{120}{section.37.6}%
+\contentsline {section}{\numberline {37.7}Нейтрино как отдельный класс переноса}{121}{section.37.7}%
+\contentsline {section}{\numberline {37.8}Что сохраняется из первой части}{121}{section.37.8}%
+\contentsline {section}{\numberline {37.9}Следующий решающий гейт}{122}{section.37.9}%
+\contentsline {chapter}{\numberline {38}Минимальный локальный перенос и запрет массового замыкания}{124}{chapter.38}%
+\contentsline {section}{\numberline {38.1}Антикруговая сверка}{124}{section.38.1}%
+\contentsline {section}{\numberline {38.2}Скалярность переноса на полном соответствии Мориты}{124}{section.38.2}%
+\contentsline {section}{\numberline {38.3}Двухнаправленный одношаговый оператор}{125}{section.38.3}%
+\contentsline {section}{\numberline {38.4}Непрерывный дираковский предел}{126}{section.38.4}%
+\contentsline {section}{\numberline {38.5}Почему единый след не фиксирует массу}{126}{section.38.5}%
+\contentsline {section}{\numberline {38.6}Возвращение двух юкавских свобод}{127}{section.38.6}%
+\contentsline {section}{\numberline {38.7}Почему дефект пока не вставляется}{127}{section.38.7}%
+\contentsline {section}{\numberline {38.8}Оставшаяся проектная подсказка}{127}{section.38.8}%
+\contentsline {chapter}{\numberline {39}Проекторно-тетраэдрическое отражение и запрет массовой поляризации}{129}{chapter.39}%
+\contentsline {section}{\numberline {39.1}Антикруговая сверка}{129}{section.39.1}%
+\contentsline {section}{\numberline {39.2}Каноническая поперечная плоскость}{129}{section.39.2}%
+\contentsline {section}{\numberline {39.3}Почему проекторная инволюция не является массовым отражением}{130}{section.39.3}%
+\contentsline {section}{\numberline {39.4}Классификация допустимых отражений}{130}{section.39.4}%
+\contentsline {section}{\numberline {39.5}Заманчивый, но условный массовый масштаб}{131}{section.39.5}%
+\contentsline {section}{\numberline {39.6}Корректная роль тетраэдрической голономии}{132}{section.39.6}%
+\contentsline {chapter}{\numberline {40}Безмассовый голономный спектр и граница дефектного индекса}{133}{chapter.40}%
+\contentsline {section}{\numberline {40.1}Трёхцикл как граничное условие}{133}{section.40.1}%
+\contentsline {section}{\numberline {40.2}Точные дробные ветви}{133}{section.40.2}%
+\contentsline {section}{\numberline {40.3}Почему существенна хиральная ветвь $H_{15}$}{134}{section.40.3}%
+\contentsline {section}{\numberline {40.4}Обычный индекс остаётся нулевым}{134}{section.40.4}%
+\contentsline {section}{\numberline {40.5}Проверка локализации}{135}{section.40.5}%
+\contentsline {section}{\numberline {40.6}Статус ароматных осцилляций}{135}{section.40.6}%
+\contentsline {section}{\numberline {40.7}Следующий мост к дефектному ядру}{135}{section.40.7}%
+\contentsline {chapter}{\numberline {41}Граница голономного нуля и объёмной локализации}{137}{chapter.41}%
+\contentsline {section}{\numberline {41.1}Обратная сверка с прежней дефектной ветвью}{137}{section.41.1}%
+\contentsline {section}{\numberline {41.2}Масштабный аудит радиального профиля}{138}{section.41.2}%
+\contentsline {section}{\numberline {41.3}Условная нулевая мода не исправляет масштаб}{138}{section.41.3}%
+\contentsline {section}{\numberline {41.4}Что именно сохранено}{139}{section.41.4}%
+\contentsline {section}{\numberline {41.5}Критерий переоткрытия}{139}{section.41.5}%
+\contentsline {chapter}{\numberline {42}Статусная заморозка дефектно-транспортной ветви}{141}{chapter.42}%
+\contentsline {section}{\numberline {42.1}Сохранённое положительное ядро}{141}{section.42.1}%
+\contentsline {section}{\numberline {42.2}Скрытое смешение двух архитектур}{141}{section.42.2}%
+\contentsline {section}{\numberline {42.3}Обратный аудит источников поля спаривания}{142}{section.42.3}%
+\contentsline {subsection}{\numberline {42.3.1}Существующие фазы корня}{142}{subsection.42.3.1}%
+\contentsline {subsection}{\numberline {42.3.2}Расширение $B-L$}{142}{subsection.42.3.2}%
+\contentsline {subsection}{\numberline {42.3.3}Семейный колчан}{142}{subsection.42.3.3}%
+\contentsline {subsection}{\numberline {42.3.4}Относительная кривизна и вспомогательное поле}{142}{subsection.42.3.4}%
+\contentsline {subsection}{\numberline {42.3.5}Фермионная мера}{143}{subsection.42.3.5}%
+\contentsline {section}{\numberline {42.4}Отсутствует не один коэффициент, а типизированное соответствие}{143}{section.42.4}%
+\contentsline {section}{\numberline {42.5}Архитектурная развилка}{143}{section.42.5}%
+\contentsline {chapter}{\numberline {43}Майорановское соответствие высшей степени на пакете $H_{15}$}{145}{chapter.43}%
+\contentsline {section}{\numberline {43.1}Граница известного механизма}{145}{section.43.1}%
+\contentsline {section}{\numberline {43.2}Классификация при трёхциклической голономии}{145}{section.43.2}%
+\contentsline {section}{\numberline {43.3}Каноническое сжатие на нулевую ветвь}{146}{section.43.3}%
+\contentsline {section}{\numberline {43.4}Подсказка фермионного спектрального действия}{147}{section.43.4}%
+\contentsline {section}{\numberline {43.5}Следующий критерий}{147}{section.43.5}%
+\contentsline {chapter}{\numberline {44}Фермионная спектральная мера оператора Вайнберга на $H_{15}$}{149}{chapter.44}%
+\contentsline {section}{\numberline {44.1}Точная структура литературного механизма}{149}{section.44.1}%
+\contentsline {section}{\numberline {44.2}Независимость чётного и нечётного моментов}{149}{section.44.2}%
+\contentsline {section}{\numberline {44.3}Что делает сжатие семейного коэффициента}{150}{section.44.3}%
+\contentsline {section}{\numberline {44.4}Почему вес $1/7$ не является массой}{150}{section.44.4}%
+\contentsline {section}{\numberline {44.5}Остаточная формула амплитуды}{151}{section.44.5}%
+\contentsline {section}{\numberline {44.6}Критерий остановки}{151}{section.44.6}%
+\contentsline {chapter}{\numberline {45}Четырёхтактная резонансная петля и предел открытой устойчивости}{153}{chapter.45}%
+\contentsline {section}{\numberline {45.1}Археология исходной идеи}{153}{section.45.1}%
+\contentsline {section}{\numberline {45.2}Минимальный унитарный резонатор}{154}{section.45.2}%
+\contentsline {section}{\numberline {45.3}Трилемма устойчивости и открытости}{154}{section.45.3}%
+\contentsline {section}{\numberline {45.4}Проверка тёмных четырёхтактных мод}{155}{section.45.4}%
+\contentsline {section}{\numberline {45.5}Граница движения частицы}{155}{section.45.5}%
+\contentsline {section}{\numberline {45.6}Статус ранней гипотезы}{155}{section.45.6}%
+\contentsline {chapter}{\numberline {46}Самосогласованное внутреннее время и предел временной ловушки}{157}{chapter.46}%
+\contentsline {section}{\numberline {46.1}Что действительно сохранилось в архиве}{157}{section.46.1}%
+\contentsline {section}{\numberline {46.2}Минимальная переменная внутреннего времени}{158}{section.46.2}%
+\contentsline {section}{\numberline {46.3}Почему замедление ещё не создаёт устойчивость}{158}{section.46.3}%
+\contentsline {section}{\numberline {46.4}Горизонт, сингулярность и открытый обмен}{159}{section.46.4}%
+\contentsline {section}{\numberline {46.5}Сильное прочтение исходной интуиции}{159}{section.46.5}%
+\contentsline {section}{\numberline {46.6}Статус и критерий остановки}{159}{section.46.6}%
+\contentsline {chapter}{\numberline {47}Переход как первичный объект и научный язык композиции}{161}{chapter.47}%
+\contentsline {section}{\numberline {47.1}Антикруговая граница}{161}{section.47.1}%
+\contentsline {section}{\numberline {47.2}Первый инструмент: соответствия Мориты}{161}{section.47.2}%
+\contentsline {section}{\numberline {47.3}Второй инструмент: группоиды, колчаны и пути}{162}{section.47.3}%
+\contentsline {section}{\numberline {47.4}Третий инструмент: квантовые блуждания и клеточные автоматы}{162}{section.47.4}%
+\contentsline {section}{\numberline {47.5}Четвёртый инструмент: индекс и устойчивый дефект}{163}{section.47.5}%
+\contentsline {section}{\numberline {47.6}Четырёхтактное наследование}{163}{section.47.6}%
+\contentsline {section}{\numberline {47.7}Минимальный стек и отложенные инструменты}{163}{section.47.7}%
+\contentsline {section}{\numberline {47.8}Рабочая онтологическая формула}{164}{section.47.8}%
+\contentsline {chapter}{\numberline {48}Самопорождающийся переходный дефект: минимальный нелинейный тест}{166}{chapter.48}%
+\contentsline {section}{\numberline {48.1}Литературная граница}{166}{section.48.1}%
+\contentsline {section}{\numberline {48.2}Минимальный локальный функционал}{166}{section.48.2}%
+\contentsline {section}{\numberline {48.3}Проверка самопорождения профиля}{167}{section.48.3}%
+\contentsline {section}{\numberline {48.4}Перенос без расплывания}{167}{section.48.4}%
+\contentsline {section}{\numberline {48.5}Дираковская нулевая мода}{167}{section.48.5}%
+\contentsline {section}{\numberline {48.6}Цена положительного примера}{168}{section.48.6}%
+\contentsline {section}{\numberline {48.7}Статус следующего шага}{168}{section.48.7}%
+\contentsline {chapter}{\numberline {49}Голономный проектор и сокращение кратности дефектных нулей}{170}{chapter.49}%
+\contentsline {section}{\numberline {49.1}Полный фактор запрещает нетривиальный проектор}{170}{section.49.1}%
+\contentsline {section}{\numberline {49.2}Каноническая цепочка размерностей}{170}{section.49.2}%
+\contentsline {section}{\numberline {49.3}Почему слабый дублет не содержит постоянного нейтринного проектора}{171}{section.49.3}%
+\contentsline {section}{\numberline {49.4}Хиггс-зависимый ранг-один проектор}{171}{section.49.4}%
+\contentsline {section}{\numberline {49.5}Почему это ещё не решение полного нелинейного дефекта}{172}{section.49.5}%
+\contentsline {section}{\numberline {49.6}Вердикт}{172}{section.49.6}%
+\contentsline {chapter}{\numberline {50}Проективный ёж, точечный дефект и необходимость спинорного подъёма}{174}{chapter.50}%
+\contentsline {section}{\numberline {50.1}Коразмерность скалярного кинка}{174}{section.50.1}%
+\contentsline {section}{\numberline {50.2}Проекторное вакуумное многообразие}{174}{section.50.2}%
+\contentsline {section}{\numberline {50.3}Энергетическая граница глобального ежа}{175}{section.50.3}%
+\contentsline {section}{\numberline {50.4}Проекторная масса и нулевой индекс}{175}{section.50.4}%
+\contentsline {section}{\numberline {50.5}Спинорный подъём и единичный индекс}{176}{section.50.5}%
+\contentsline {section}{\numberline {50.6}Связь с четырёхтактной фазой}{176}{section.50.6}%
+\contentsline {section}{\numberline {50.7}Статус}{177}{section.50.7}%
+\contentsline {chapter}{\numberline {51}Итог части II: точная граница дефектно-транспортной программы}{178}{chapter.51}%
+\contentsline {section}{\numberline {51.1}Что удалось построить}{178}{section.51.1}%
+\contentsline {section}{\numberline {51.2}Где именно обрывается вывод}{179}{section.51.2}%
+\contentsline {subsection}{\numberline {51.2.1}Пространственная семейная связность}{179}{subsection.51.2.1}%
+\contentsline {subsection}{\numberline {51.2.2}Ориентированный спинорный подъём}{179}{subsection.51.2.2}%
+\contentsline {section}{\numberline {51.3}Почему это одна задача, а не две подгонки}{179}{section.51.3}%
+\contentsline {section}{\numberline {51.4}Статус ранних образов}{180}{section.51.4}%
+\contentsline {section}{\numberline {51.5}Финальная теорема части II}{180}{section.51.5}%
+\contentsline {part}{III\hspace {1em}Архитектурное решение и условие переоткрытия}{182}{part.3}%
+\contentsline {chapter}{\numberline {52}Архитектурное решение после дефектно-транспортного аудита}{183}{chapter.52}%
+\contentsline {section}{\numberline {52.1}Принятое решение}{183}{section.52.1}%
+\contentsline {section}{\numberline {52.2}Почему выбран именно этот путь}{184}{section.52.2}%
+\contentsline {section}{\numberline {52.3}Распределение десяти рассмотренных идей}{184}{section.52.3}%
+\contentsline {subsection}{\numberline {52.3.1}Компоненты основного маршрута}{184}{subsection.52.3.1}%
+\contentsline {subsection}{\numberline {52.3.2}Вспомогательные структуры}{185}{subsection.52.3.2}%
+\contentsline {subsection}{\numberline {52.3.3}Отложенные и закрытые самостоятельные маршруты}{185}{subsection.52.3.3}%
+\contentsline {section}{\numberline {52.4}Что означает подъём без скрытого расширения модели}{185}{section.52.4}%
+\contentsline {section}{\numberline {52.5}Первый обязательный гейт}{186}{section.52.5}%
+\contentsline {section}{\numberline {52.6}Последовательность дальнейшей работы}{186}{section.52.6}%
+\contentsline {section}{\numberline {52.7}Условия успеха и отказа}{187}{section.52.7}%
+\contentsline {section}{\numberline {52.8}Финальный статус решения}{187}{section.52.8}%
+\contentsline {section}{\numberline {52.9}Последующая проверка решения}{187}{section.52.9}%
+\contentsline {section}{\numberline {52.10}Ретроспективная поправка после чтения раннего источника}{188}{section.52.10}%
+\contentsline {chapter}{\numberline {53}Представительный запрет семейного $SU(2)_F$-подъёма на $H_{15}/M_{35}$}{192}{chapter.53}%
+\contentsline {section}{\numberline {53.1}Антикруговая сверка и точный носитель}{192}{section.53.1}%
+\contentsline {section}{\numberline {53.2}Канонический подъём триплета не хранит центральный знак}{192}{section.53.2}%
+\contentsline {section}{\numberline {53.3}Почему KO6-удвоение не является скрытым дублетом}{193}{section.53.3}%
+\contentsline {section}{\numberline {53.4}Почему слабый дублет не решает семейную задачу}{193}{section.53.4}%
+\contentsline {section}{\numberline {53.5}Разложение $\mathbf 3\to \mathbf 2\oplus \mathbf 1$}{194}{section.53.5}%
+\contentsline {section}{\numberline {53.6}Ориентационный дублет локального переноса}{194}{section.53.6}%
+\contentsline {section}{\numberline {53.7}След и бюджет состояний}{194}{section.53.7}%
+\contentsline {section}{\numberline {53.8}Вердикт и условие переоткрытия}{195}{section.53.8}%
+\contentsline {chapter}{\numberline {54}Аудит $\operatorname {Spin}^h$-связывания ориентации и семейного переноса}{196}{chapter.54}%
+\contentsline {section}{\numberline {54.1}Точный смысл структуры $\operatorname {Spin}^h$}{196}{section.54.1}%
+\contentsline {section}{\numberline {54.2}Можно ли поместить два действия на одну $\mathbb C^2$}{196}{section.54.2}%
+\contentsline {section}{\numberline {54.3}Минимальный настоящий $\operatorname {Spin}^h$-модуль}{197}{section.54.3}%
+\contentsline {section}{\numberline {54.4}Почему диагональное отождествление не спасает размерность}{197}{section.54.4}%
+\contentsline {section}{\numberline {54.5}Топологическая проверка}{198}{section.54.5}%
+\contentsline {section}{\numberline {54.6}След и аномалии}{198}{section.54.6}%
+\contentsline {section}{\numberline {54.7}Вердикт}{198}{section.54.7}%
+\contentsline {part}{IV\hspace {1em}Ретроспективное переоткрытие: хопфова линия перехода}{199}{part.4}%
+\contentsline {chapter}{\numberline {55}Хопфова линия на ориентированных переходах и условное переоткрытие}{200}{chapter.55}%
+\contentsline {section}{\numberline {55.1}Почему одной фазы порядка четыре недостаточно}{200}{section.55.1}%
+\contentsline {section}{\numberline {55.2}Полное расслоение Хопфа}{201}{section.55.2}%
+\contentsline {section}{\numberline {55.3}Где находится фаза порядка четыре}{201}{section.55.3}%
+\contentsline {section}{\numberline {55.4}Накрытие и quotient-чтение}{202}{section.55.4}%
+\contentsline {section}{\numberline {55.5}Линия Фелла на группоиде переходов}{202}{section.55.5}%
+\contentsline {section}{\numberline {55.6}Совместимость с KO6 без нового семейного дублета}{202}{section.55.6}%
+\contentsline {section}{\numberline {55.7}Главный оставшийся разрыв}{203}{section.55.7}%
+\contentsline {chapter}{\numberline {56}Ориентационный функтор Мориты для хопфовой линии}{204}{chapter.56}%
+\contentsline {section}{\numberline {56.1}Каноническая градуировка связывающей алгебры}{204}{section.56.1}%
+\contentsline {section}{\numberline {56.2}Функториальность степени}{204}{section.56.2}%
+\contentsline {section}{\numberline {56.3}Почему углы нельзя незаметно переставить}{205}{section.56.3}%
+\contentsline {section}{\numberline {56.4}Выбор двух подъёмов проекторной оси}{205}{section.56.4}%
+\contentsline {section}{\numberline {56.5}Совместимость с KO6 и следом}{206}{section.56.5}%
+\contentsline {section}{\numberline {56.6}Отношение к прежнему запрету высоты}{206}{section.56.6}%
+\contentsline {section}{\numberline {56.7}Вердикт и следующий предел}{206}{section.56.7}%
+\contentsline {chapter}{\numberline {57}Хопфово-скрученный дефект: совместный тест энергии и индекса}{208}{chapter.57}%
+\contentsline {section}{\numberline {57.1}Почему одной хопфовой линии недостаточно}{208}{section.57.1}%
+\contentsline {section}{\numberline {57.2}Минимальное гладкое завершение}{209}{section.57.2}%
+\contentsline {section}{\numberline {57.3}Тот же заряд как фермионный индекс}{210}{section.57.3}%
+\contentsline {section}{\numberline {57.4}Суперсвязностное чтение}{210}{section.57.4}%
+\contentsline {section}{\numberline {57.5}Что уже есть в проекте}{211}{section.57.5}%
+\contentsline {section}{\numberline {57.6}Невыведенные данные родителя}{211}{section.57.6}%
+\contentsline {section}{\numberline {57.7}Вердикт и следующий гейт}{211}{section.57.7}%
+\contentsline {chapter}{\numberline {58}Пространственная $SO(3)$-суперсвязность и предел следа $M_{35}$}{213}{chapter.58}%
+\contentsline {section}{\numberline {58.1}Что действительно фиксирует след $M_{35}$}{213}{section.58.1}%
+\contentsline {section}{\numberline {58.2}След не выбирает калибровочную подалгебру}{214}{section.58.2}%
+\contentsline {section}{\numberline {58.3}Топологическое препятствие гладкого ядра}{214}{section.58.3}%
+\contentsline {section}{\numberline {58.4}Возврат представительного препятствия}{214}{section.58.4}%
+\contentsline {section}{\numberline {58.5}Проверка квадрата суперсвязности}{215}{section.58.5}%
+\contentsline {section}{\numberline {58.6}Сопоставление с ранними результатами}{216}{section.58.6}%
+\contentsline {section}{\numberline {58.7}Вердикт}{216}{section.58.7}%
+\contentsline {chapter}{\numberline {59}Свежая литература о суперсвязностных дефектах и проверка новизны}{217}{chapter.59}%
+\contentsline {section}{\numberline {59.1}Иерархия источников}{217}{section.59.1}%
+\contentsline {subsection}{\numberline {59.1.1}Фундаментальный проверенный результат}{217}{subsection.59.1.1}%
+\contentsline {subsection}{\numberline {59.1.2}Свежая конкретная реализация 2026 года}{217}{subsection.59.1.2}%
+\contentsline {subsection}{\numberline {59.1.3}Свежий операторно-алгебраический язык}{218}{subsection.59.1.3}%
+\contentsline {subsection}{\numberline {59.1.4}Близкий, но непроверенный сосед}{218}{subsection.59.1.4}%
+\contentsline {section}{\numberline {59.2}Что в нашей конструкции уже известно литературе}{219}{section.59.2}%
+\contentsline {section}{\numberline {59.3}Где может находиться специфическая новизна проекта}{219}{section.59.3}%
+\contentsline {section}{\numberline {59.4}Новый центральный тест рангов}{219}{section.59.4}%
+\contentsline {section}{\numberline {59.5}Изменение исследовательского маршрута}{220}{section.59.5}%
+\contentsline {section}{\numberline {59.6}Вердикт и следующий гейт}{221}{section.59.6}%
+\contentsline {chapter}{\numberline {60}Нечётное продолжение хопфовой пары и равногранный стоп-тест}{222}{chapter.60}%
+\contentsline {section}{\numberline {60.1}Прямой прямоугольный оператор}{222}{section.60.1}%
+\contentsline {section}{\numberline {60.2}Структурный остаток $1/7$}{223}{section.60.2}%
+\contentsline {section}{\numberline {60.3}Попытка квадратного угла $15\times 15$}{223}{section.60.3}%
+\contentsline {section}{\numberline {60.4}Попытка на паре $E\oplus E^*$}{223}{section.60.4}%
+\contentsline {section}{\numberline {60.5}Самопроверка: квадрат $150\times 150$}{224}{section.60.5}%
+\contentsline {section}{\numberline {60.6}Почему положительные сжатия не сохраняют ориентацию}{224}{section.60.6}%
+\contentsline {section}{\numberline {60.7}Можно ли вычесть постоянное коядро как фон}{224}{section.60.7}%
+\contentsline {section}{\numberline {60.8}Итог исчерпания внутренней ветви}{225}{section.60.8}%
+\contentsline {section}{\numberline {60.9}Вердикт}{225}{section.60.9}%
+\contentsline {chapter}{\numberline {61}Два появления $1/7$: стабильный $K_0$-мост и предел каноничности}{227}{chapter.61}%
+\contentsline {section}{\numberline {61.1}Две точные формулы}{227}{section.61.1}%
+\contentsline {section}{\numberline {61.2}Общая сравнительная алгебра}{227}{section.61.2}%
+\contentsline {section}{\numberline {61.3}Почему равенство классов ещё не является переносом}{228}{section.61.3}%
+\contentsline {section}{\numberline {61.4}Что именно теперь требуется вывести}{229}{section.61.4}%
+\contentsline {section}{\numberline {61.5}Вердикт}{229}{section.61.5}%
+\contentsline {chapter}{\numberline {62}Литературный аудит граничной трансгрессии класса $1/7$}{230}{chapter.62}%
+\contentsline {section}{\numberline {62.1}Расширение Тёплица}{230}{section.62.1}%
+\contentsline {section}{\numberline {62.2}Почему граничный морфизм действительно каноничен}{231}{section.62.2}%
+\contentsline {section}{\numberline {62.3}Mapping cone и условия применимости}{231}{section.62.3}%
+\contentsline {section}{\numberline {62.4}Свежий хопфово-милноровский результат}{231}{section.62.4}%
+\contentsline {section}{\numberline {62.5}Что литература закрывает}{232}{section.62.5}%
+\contentsline {section}{\numberline {62.6}Что в проекте ещё отсутствует}{232}{section.62.6}%
+\contentsline {section}{\numberline {62.7}Вердикт и следующий тест}{232}{section.62.7}%
+\contentsline {chapter}{\numberline {63}Явная коэффициентная карта Тёплица для класса $1/7$}{234}{chapter.63}%
+\contentsline {section}{\numberline {63.1}Коэффициентный проектор}{234}{section.63.1}%
+\contentsline {section}{\numberline {63.2}Оператор на пространстве Харди}{234}{section.63.2}%
+\contentsline {section}{\numberline {63.3}Обращение ориентации и KO6}{235}{section.63.3}%
+\contentsline {section}{\numberline {63.4}Почему конечная матрица не воспроизводит результат}{235}{section.63.4}%
+\contentsline {section}{\numberline {63.5}Является ли пространство Харди новым физическим сектором}{236}{section.63.5}%
+\contentsline {section}{\numberline {63.6}Статус моста}{236}{section.63.6}%
+\contentsline {chapter}{\numberline {64}Вещественный KO6-подъём коэффициентного цикла Тёплица}{238}{chapter.64}%
+\contentsline {section}{\numberline {64.1}Знаки текущего KO6}{238}{section.64.1}%
+\contentsline {section}{\numberline {64.2}Теорема о компенсации индекса}{238}{section.64.2}%
+\contentsline {section}{\numberline {64.3}Сбалансированный цикл}{239}{section.64.3}%
+\contentsline {section}{\numberline {64.4}Статус вещественного класса}{239}{section.64.4}%
+\contentsline {section}{\numberline {64.5}Что получено и что осталось}{240}{section.64.5}%
+\contentsline {chapter}{\numberline {65}Классификация вещественной формы коэффициентного цикла Тёплица}{241}{chapter.65}%
+\contentsline {section}{\numberline {65.1}Литературная рамка}{241}{section.65.1}%
+\contentsline {section}{\numberline {65.2}Три возможные вещественные формы}{241}{section.65.2}%
+\contentsline {section}{\numberline {65.3}Группа, допускающая целочисленный остаток}{242}{section.65.3}%
+\contentsline {section}{\numberline {65.4}Что ещё не доказано}{243}{section.65.4}%
+\contentsline {chapter}{\numberline {66}Ретроспективный аудит обменного KO6-каркаса}{244}{chapter.66}%
+\contentsline {section}{\numberline {66.1}Что уже было доказано}{244}{section.66.1}%
+\contentsline {subsection}{\numberline {66.1.1}Обязательное KO6-удвоение}{244}{subsection.66.1.1}%
+\contentsline {subsection}{\numberline {66.1.2}Обмен ориентированного дифференциала}{244}{subsection.66.1.2}%
+\contentsline {subsection}{\numberline {66.1.3}Словарь следов и мер}{245}{subsection.66.1.3}%
+\contentsline {subsection}{\numberline {66.1.4}Запрет извлекать ориентацию только из KO6}{245}{subsection.66.1.4}%
+\contentsline {section}{\numberline {66.2}Что ранняя программа не даёт}{245}{section.66.2}%
+\contentsline {section}{\numberline {66.3}Как меняется следующий шаг}{245}{section.66.3}%
+\contentsline {chapter}{\numberline {67}Bott-сравнение обменного вещественного класса Тёплица}{247}{chapter.67}%
+\contentsline {section}{\numberline {67.1}Явная таблица из вещественной K-теории}{247}{section.67.1}%
+\contentsline {section}{\numberline {67.2}Применение к коэффициентному проектору}{248}{section.67.2}%
+\contentsline {section}{\numberline {67.3}Что именно теперь закрыто}{248}{section.67.3}%
+\contentsline {chapter}{\numberline {68}Неограниченный родитель расширения Тёплица и гейт степени}{250}{chapter.68}%
+\contentsline {section}{\numberline {68.1}Стандартный неограниченный класс расширения}{250}{section.68.1}%
+\contentsline {section}{\numberline {68.2}Поляризация Харди теперь выведена}{250}{section.68.2}%
+\contentsline {section}{\numberline {68.3}Вещественный обмен}{251}{section.68.3}%
+\contentsline {section}{\numberline {68.4}Степень расширения и соглашение о знаке}{251}{section.68.4}%
+\contentsline {chapter}{\numberline {69}Обменный Real-символ степени семь и исправление соглашения}{253}{chapter.69}%
+\contentsline {section}{\numberline {69.1}Почему степень пять была ошибкой}{253}{section.69.1}%
+\contentsline {section}{\numberline {69.2}Коэффициентный класс степени шесть}{253}{section.69.2}%
+\contentsline {section}{\numberline {69.3}Канонический winding-класс}{254}{section.69.3}%
+\contentsline {section}{\numberline {69.4}Произведение с расширением Тёплица}{254}{section.69.4}%
+\contentsline {section}{\numberline {69.5}Что ещё не закрыто}{255}{section.69.5}%
+\contentsline {chapter}{\numberline {70}Явный унитарный представитель обменного класса KO7}{256}{chapter.70}%
+\contentsline {chapter}{\numberline {71}Минимальное действие петли Тёплица и вариационный разрыв}{258}{chapter.71}%
+\contentsline {section}{\numberline {71.1}Почему это ещё не физическое действие частицы}{258}{section.71.1}%
+\contentsline {chapter}{\numberline {72}Пространственная Bott-суспензия и баланс Деррика}{260}{chapter.72}%
+\contentsline {chapter}{\numberline {73}Может ли суперсвязность вывести Skyrme-коэффициент}{262}{chapter.73}%
+\contentsline {chapter}{\numberline {74}Общий масштаб проекторной суперсвязности}{264}{chapter.74}%
+\contentsline {chapter}{\numberline {75}Индуцированный фермионным детерминантом член Скирма}{265}{chapter.75}%
+\contentsline {section}{\numberline {75.1}Что действительно гарантирует литература}{265}{section.75.1}%
+\contentsline {section}{\numberline {75.2}Масса и регуляризация не сокращаются}{266}{section.75.2}%
+\contentsline {section}{\numberline {75.3}Сверка с пакетом $H_{15}$}{266}{section.75.3}%
+\contentsline {section}{\numberline {75.4}Что остаётся содержательным}{267}{section.75.4}%
+\contentsline {chapter}{\numberline {76}Топологический дефицит замыкания и неизбежность дефекта}{268}{chapter.76}%
+\contentsline {section}{\numberline {76.1}Совершенное замыкание как обратимость}{268}{section.76.1}%
+\contentsline {section}{\numberline {76.2}Нижняя граница неплотности}{268}{section.76.2}%
+\contentsline {section}{\numberline {76.3}Почему Real-пара не уничтожает дефект}{269}{section.76.3}%
+\contentsline {section}{\numberline {76.4}Совпадение топологического и вариационного минимумов}{269}{section.76.4}%
+\contentsline {section}{\numberline {76.5}Граница доказанного постулата}{270}{section.76.5}%
+\contentsline {chapter}{\numberline {77}Вакуумный отклик на неизбежный дефицит замыкания}{271}{chapter.77}%
+\contentsline {section}{\numberline {77.1}Замкнутый и дефектный операторы}{271}{section.77.1}%
+\contentsline {section}{\numberline {77.2}Точный относительный детерминант}{271}{section.77.2}%
+\contentsline {section}{\numberline {77.3}Почему отклик не выбирает масштаб}{272}{section.77.3}%
+\contentsline {section}{\numberline {77.4}Обменная Real-пара и два разных чтения}{272}{section.77.4}%
+\contentsline {section}{\numberline {77.5}Новая причинная цепочка}{273}{section.77.5}%
+\contentsline {chapter}{\numberline {78}Эта-фаза и WZW-ориентация обменной Real-пары}{274}{chapter.78}%
+\contentsline {section}{\numberline {78.1}Три разных фазовых объекта}{274}{section.78.1}%
+\contentsline {section}{\numberline {78.2}Степенное ограничение WZW-формы}{274}{section.78.2}%
+\contentsline {section}{\numberline {78.3}Комплексная determinant-line фаза}{275}{section.78.3}%
+\contentsline {section}{\numberline {78.4}Условный Pfaffian-знак}{275}{section.78.4}%
+\contentsline {section}{\numberline {78.5}Сверка с физическим half-count}{276}{section.78.5}%
+\contentsline {section}{\numberline {78.6}Статус выбора сектора}{276}{section.78.6}%
+\contentsline {chapter}{\numberline {79}Глобальный носитель и принуждение нетривиального сектора}{277}{chapter.79}%
+\contentsline {section}{\numberline {79.1}Классификация окружностных носителей}{277}{section.79.1}%
+\contentsline {section}{\numberline {79.2}Следствие для коэффициентного класса пятнадцать}{278}{section.79.2}%
+\contentsline {section}{\numberline {79.3}Что фиксирует соответствие Мориты}{278}{section.79.3}%
+\contentsline {section}{\numberline {79.4}Сверка с уже доказанным багажом проекта}{279}{section.79.4}%
+\contentsline {section}{\numberline {79.5}Статус и критерий остановки}{279}{section.79.5}%
+\contentsline {chapter}{\numberline {80}Спин-накрытие и мост к сфере проекторного дефекта}{281}{chapter.80}%
+\contentsline {section}{\numberline {80.1}Две сферы и одно проекторное отображение}{281}{section.80.1}%
+\contentsline {section}{\numberline {80.2}Единственность вращательно-эквивариантного ежа}{281}{section.80.2}%
+\contentsline {section}{\numberline {80.3}Подъём накрытия и знак заряда}{282}{section.80.3}%
+\contentsline {section}{\numberline {80.4}Индуцированная хопфова линия}{282}{section.80.4}%
+\contentsline {section}{\numberline {80.5}Почему это ещё не полное принуждение материи}{283}{section.80.5}%
+\contentsline {section}{\numberline {80.6}Статус и следующий тест}{283}{section.80.6}%
+\contentsline {chapter}{\numberline {81}Эквивариантная граница и невозможность топологического выбора сектора}{285}{chapter.81}%
+\contentsline {section}{\numberline {81.1}Явный однородный конкурент}{285}{section.81.1}%
+\contentsline {section}{\numberline {81.2}Глобальный носитель не содержит свободного сферического заряда}{286}{section.81.2}%
+\contentsline {section}{\numberline {81.3}Глобальная классификация не создаёт дефект}{286}{section.81.3}%
+\contentsline {section}{\numberline {81.4}Сверка с доказанными функционалами}{287}{section.81.4}%
+\contentsline {section}{\numberline {81.5}Отличие от уже закрытых результатов}{287}{section.81.5}%
+\contentsline {section}{\numberline {81.6}Критерий переоткрытия}{288}{section.81.6}%
+\contentsline {part}{V\hspace {1em}Заключение Тома V и программа рождения материи}{289}{part.5}%
+\contentsline {chapter}{\numberline {82}Заключение Тома V: граница архитектуры и программа рождения материи}{290}{chapter.82}%
+\contentsline {section}{\numberline {82.1}Что доказано}{290}{section.82.1}%
+\contentsline {subsection}{\numberline {82.1.1}Первичность перехода получила математический язык}{290}{subsection.82.1.1}%
+\contentsline {subsection}{\numberline {82.1.2}Класс пятнадцать построен без ручного проектора ранга пять}{290}{subsection.82.1.2}%
+\contentsline {subsection}{\numberline {82.1.3}Неплотность замыкания стала операторной теоремой}{291}{subsection.82.1.3}%
+\contentsline {subsection}{\numberline {82.1.4}Форма точечного дефекта и его линия определены}{291}{subsection.82.1.4}%
+\contentsline {section}{\numberline {82.2}Что строго не доказано}{291}{section.82.2}%
+\contentsline {subsection}{\numberline {82.2.1}Нулевой сектор остаётся допустимым}{291}{subsection.82.2.1}%
+\contentsline {subsection}{\numberline {82.2.2}Конечная энергия и радиус не выведены}{292}{subsection.82.2.2}%
+\contentsline {subsection}{\numberline {82.2.3}Полная мера не выбирает одну ориентацию}{292}{subsection.82.2.3}%
+\contentsline {section}{\numberline {82.3}Философская граница результата}{292}{section.82.3}%
+\contentsline {section}{\numberline {82.4}Почему следующий этап должен начинаться с нейтральной пары}{292}{section.82.4}%
+\contentsline {section}{\numberline {82.5}Предпосылки следующего физического этапа}{293}{section.82.5}%
+\contentsline {section}{\numberline {82.6}Критерии немедленной остановки}{294}{section.82.6}%
+\contentsline {section}{\numberline {82.7}Итоговая программа}{295}{section.82.7}%
+\contentsline {chapter}{Заключение}{296}{chapter*.10}%

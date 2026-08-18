@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-16",
+  "gate": "version5_m300_coordinate_algebra_wellposedness_gate",
+  "input_certificate": {
+    "M300_chain_action_and_connector_Hessian": "pass"
+  },
+  "wellposedness_issue": {
+    "carrier_algebra": "B(H_parent)=M300(C)",
+    "coordinate_algebra_specified": false,
+    "representation_pi_specified_on_all_300_states": false,
+    "opposite_representation_specified_on_all_300_states": false,
+    "full_Dirac_seed_on_reference_chain_blocks_specified": false,
+    "finding": "A trace carrier does not by itself define represented one-forms. Omega_D^1 requires a coordinate algebra, its representation and D."
+  },
+  "full_matrix_coordinate_interpretation": {
+    "coordinate_algebra": "M300(C) in its defining representation on C300",
+    "commutant_dimension": 1,
+    "faithful_noncommutative_opposite_action_possible": false,
+    "represented_one_form_complex_rank_for_nonscalar_D": 90000,
+    "selfadjoint_fluctuation_real_dimension": 90000,
+    "projective_gauge_lie_dimension": 89999,
+    "minimal_faithful_left_right_bimodule_complex_dimension": 90000,
+    "current_carrier_complex_dimension": 300,
+    "verdict": "fails_real_spectral_triple_and_minimal_field_content"
+  },
+  "same_trace_same_D_two_calculi_witness": {
+    "toy_carrier": "C4 with one reference node and an A3 chain",
+    "same_normalized_matrix_trace": true,
+    "same_Dirac_operator": true,
+    "diagonal_coordinate_algebra": {
+      "algebra": "C^4",
+      "represented_one_form_complex_rank": 4,
+      "reference_chain_mixing_rank": 0
+    },
+    "full_coordinate_algebra": {
+      "algebra": "M4(C)",
+      "represented_one_form_complex_rank": 16,
+      "reference_chain_mixing_rank": 6
+    },
+    "conclusion": "The normalized carrier trace and the same D do not determine the differential calculus or reference-chain mixing fields."
+  },
+  "status_of_previous_action": {
+    "chain_sector_identity": "retained",
+    "connector_Hessian": "retained_conditionally_on_the_restricted_calculus",
+    "claim_of_full_M300_one_form_Hessian": "not_well_posed_yet"
+  },
+  "verdict": {
+    "M300_as_unique_trace_carrier": "pass",
+    "M300_as_coordinate_algebra_on_C300": "fail",
+    "full_one_form_classification_from_existing_data": false,
+    "physical_closure": false,
+    "status": "coordinate_algebra_and_bimodule_data_missing"
+  },
+  "next_gate": "Specify the minimal coordinate algebra A_coord, its faithful left/right bimodule representation, J, grading and full Dirac support on H300. Then compute Omega_D^1(A_coord), degree-two junk and the BV/BRST quotient."
+}

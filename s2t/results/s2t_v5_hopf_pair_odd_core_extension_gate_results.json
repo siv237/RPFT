@@ -1,0 +1,99 @@
+{
+  "gate": "version5_hopf_pair_odd_core_extension_gate",
+  "direct_rectangular_option": {
+    "map": "T:C15 -> C20",
+    "asymptotic_maximal_rank": {
+      "rank": 15,
+      "kernel_T": 0,
+      "cokernel_T": 5,
+      "Fredholm_index_T": -5,
+      "nullity_selfadjoint_Q": 5
+    },
+    "one_additional_rank_loss": {
+      "rank": 14,
+      "kernel_T": 1,
+      "cokernel_T": 6,
+      "Fredholm_index_T": -5,
+      "nullity_selfadjoint_Q": 7
+    },
+    "index_changes_under_rank_drop": false,
+    "extra_zero_modes_from_one_rank_drop": 2,
+    "asymptotic_mass_is_invertible": false,
+    "Callias_full_gap_condition": false,
+    "normalized_corner_superdimension": "(20-15)/35=1/7",
+    "one_over_seven_is_localized_index": false
+  },
+  "rank15_subcorner_option": {
+    "known_J_and_family_compatible_reduction_ranks": [
+      0,
+      2,
+      6,
+      8,
+      12,
+      14,
+      18,
+      20
+    ],
+    "rank15_present": false,
+    "canonical_reference_rank": 2,
+    "canonical_physical_rank": 18,
+    "manual_dimensions_to_remove_from_rank18": 3,
+    "verdict": "no_derived_rank15_left_subcorner"
+  },
+  "arrow_conjugate_arrow_option": {
+    "spaces": "E=M20x15 and E*=M15x20",
+    "complex_dimensions": [
+      300,
+      300
+    ],
+    "star_identification_is_complex_linear": false,
+    "star_identification_is_antilinear": true,
+    "canonical_bimodule_isomorphism_E_to_E_star": false,
+    "reason": "left/right factor algebras M20 and M15 are non-isomorphic",
+    "state_carrier_if_direct_sum_is_used": 600,
+    "current_transition_carrier": 300,
+    "hidden_doubling": true
+  },
+  "particle_conjugate_150_option": {
+    "decomposition": "(H10 tensor H15) direct_sum J(H10 tensor H15)",
+    "ranks": [
+      150,
+      150
+    ],
+    "canonical_identification": "anti-linear J only",
+    "complex_linear_universal_mass_derived": false,
+    "H15_contains_sterile_gauge_singlet_nuR": false,
+    "full_SM_gauge_equivariant_particle_antiparticle_pairing": false
+  },
+  "positive_compressions": {
+    "T_star_T_shape": [
+      15,
+      15
+    ],
+    "T_T_star_shape": [
+      20,
+      20
+    ],
+    "carry_singular_values": true,
+    "retain_Hopf_phase_orientation_by_themselves": false,
+    "define_odd_map_between_L_and_L_star": false
+  },
+  "relative_background_option": {
+    "persistent_rank5_kernel_can_be_called_background": true,
+    "canonical_projector_removing_it_derived": false,
+    "full_asymptotic_operator_gapped_after_no_projection": false,
+    "relative_subtraction_is_physical_derivation": false
+  },
+  "verdict": {
+    "direct_20x15_odd_Callias_operator": "fail_persistent_five_zero_channels",
+    "derived_15x15_operator": false,
+    "derived_300x300_operator": false,
+    "derived_150x150_operator": false,
+    "odd_core_extension_inside_version5": "fail",
+    "boundary_Hopf_orientation_survives": true,
+    "normalized_rank_imbalance_one_over_seven_survives_as_structural_invariant": true,
+    "physical_closure": false,
+    "status": "hopf_reopening_exhausted_without_gapped_odd_parent_operator"
+  },
+  "next_gate": "version5_hopf_reopening_final_status_freeze_gate"
+}

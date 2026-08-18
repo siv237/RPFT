@@ -1,0 +1,71 @@
+{
+  "gate": "version5_hopf_fell_line_transition_lift_gate",
+  "flat_order_four_character_audit": {
+    "phase_history": [
+      "1",
+      "I",
+      "-1",
+      "-I",
+      "1"
+    ],
+    "is_C4_character": true,
+    "induced_projective_multiplier_values": [
+      "1"
+    ],
+    "nontrivial_groupoid_two_cocycle_from_character_alone": false,
+    "flat_line_first_Chern_number": 0,
+    "unit_index_from_flat_Z4_phase_alone": false
+  },
+  "hopf_line_audit": {
+    "north_section": [
+      "cos(theta/2)",
+      "exp(I*phi)*sin(theta/2)"
+    ],
+    "south_to_north_transition": "exp(-i phi)",
+    "berry_connection_north_phi": "sin(theta/2)**2",
+    "berry_connection_south_phi": "-cos(theta/2)**2",
+    "curvature_theta_phi": "sin(theta)/2",
+    "first_Chern_number": 1,
+    "positive_projector": "z z^*= (I+n.sigma)/2",
+    "unit_index_line_available": true
+  },
+  "order_four_inside_hopf_fiber": {
+    "quarter_turn": "z -> i z",
+    "projector_invariant": true,
+    "oriented_axis_invariant": true,
+    "sign_after_two_quarter_turns": "-1 on z",
+    "return_after_four_quarter_turns": true,
+    "order_four_phase_is_subgroup_of_full_U1_fiber": true
+  },
+  "cover_quotient_reading": {
+    "spinor_total_space": "S3=SU(2), Hopf circle bundle over S2 with c1=1",
+    "vector_total_space": "RP3=SO(3), quotient circle bundle over S2 with c1=2",
+    "projective_axis": "RP2 after n~-n",
+    "unit_Chern_class_requires_spinor_cover": true,
+    "existing_project_has_S3_spinor_cover": true
+  },
+  "oriented_transition_pairing": {
+    "forward_arrow_candidate": "E twisted by Hopf line L, c1=+1",
+    "reverse_arrow_candidate": "E* twisted by conjugate line L*, c1=-1",
+    "KO6_real_structure_can_exchange_pair": true,
+    "new_fixed_internal_C2_family_required": false,
+    "new_chiral_SU2F_gauge_group_required": false,
+    "canonical_assignment_E_to_oriented_n_derived": false
+  },
+  "fell_line_composition": {
+    "arrow_fiber": "F(y<-x)=L_y tensor L_x^*",
+    "composition": "F(z<-y) tensor F(y<-x) -> F(z<-x)",
+    "associative_without_free_coefficient": true,
+    "index_source": "c1(L), not the flat C4 character"
+  },
+  "verdict": {
+    "pure_Z4_cocycle_route": "fail_trivial_multiplier_and_c1_zero",
+    "full_Hopf_line_route": "pass_topology_and_unit_Chern_class",
+    "avoids_previous_SU2F_representation_no_go": true,
+    "avoids_single_doublet_Spinh_no_go": true,
+    "physical_closure": false,
+    "status": "conditional_reopening",
+    "missing_bridge": "derive functorially that Morita arrow orientation E/E* selects n/-n and L/L* from the existing parent connection"
+  },
+  "next_gate": "version5_hopf_line_morita_orientation_functor_gate"
+}

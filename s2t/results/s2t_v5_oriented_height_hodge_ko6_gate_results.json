@@ -1,0 +1,122 @@
+{
+  "date": "2026-08-15",
+  "gate": "version5_oriented_height_hodge_ko6_gate",
+  "KO6_signs": {
+    "J_squared": 1,
+    "JD": "+DJ",
+    "J_gamma": "-gamma_J"
+  },
+  "candidate_heights": {
+    "coherent_chain": {
+      "particle_levels": [
+        -1,
+        0,
+        1
+      ],
+      "J_odd_residual": 0.0,
+      "grading_commutator_residual": 0.0,
+      "left_algebra_commutator_residual": 0.0,
+      "opposite_algebra_commutator_residual": 0.0,
+      "proposed_height_first_order_residual": 0.0,
+      "unit_gap_D_residual": 0.0,
+      "middle_projector_rank": 6,
+      "middle_curvature_residual": 0.0,
+      "middle_curvature_type": "A-B",
+      "selected_full_trace": 90.67415327144508,
+      "normalized_full_trace": 15.11235887857418,
+      "expected_normalized_trace": 15.11235887857418
+    },
+    "middle_sink": {
+      "particle_levels": [
+        -1,
+        0,
+        -1
+      ],
+      "J_odd_residual": 0.0,
+      "grading_commutator_residual": 0.0,
+      "left_algebra_commutator_residual": 0.0,
+      "opposite_algebra_commutator_residual": 0.0,
+      "proposed_height_first_order_residual": 0.0,
+      "unit_gap_D_residual": 0.0,
+      "middle_projector_rank": 6,
+      "middle_curvature_residual": 1.1102230246251565e-16,
+      "middle_curvature_type": "A+B",
+      "selected_full_trace": 106.19011349000243,
+      "normalized_full_trace": 17.698352248333737,
+      "expected_normalized_trace": 17.698352248333737
+    }
+  },
+  "height_classification": {
+    "discrete_unit_gap_heights": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "global_sign_orbits": [
+      [
+        [
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          -1
+        ]
+      ]
+    ],
+    "inequivalent_orbit_count": 2,
+    "coherent_and_sink_both_survive": true
+  },
+  "corrections_to_review": {
+    "direct_sum_block_center_can_distinguish_nodes": true,
+    "height_first_order_condition_is_trivial_for_block_scalar_h": true,
+    "J_squared_plus_one_in_project_KO6": true,
+    "nakajima_analogy_requires_oriented_quiver_as_input": true
+  },
+  "trace_normalization": {
+    "KO6_conjugate_copy_factor": 2,
+    "full_middle_dimension": 6,
+    "normalized_trace_matches_tau3": true,
+    "independent_relative_weight_introduced": false
+  },
+  "verdict": {
+    "height_hodge_algebraic_identity": "pass",
+    "coherent_height_KO6_compatibility": "pass",
+    "full_trace_normalization": "pass",
+    "height_uniqueness": "fail",
+    "orientation_from_existing_KO6_data": "closed",
+    "physical_closure": false
+  },
+  "next_gate": "version5_twisted_family_automorphism_gate"
+}

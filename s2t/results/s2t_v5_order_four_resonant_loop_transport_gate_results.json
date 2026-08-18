@@ -1,0 +1,121 @@
+{
+  "gate": "version5_order_four_resonant_loop_transport_gate",
+  "early_hypothesis_reconstruction": {
+    "matter_image": "light delayed by a four-stage twisted closed route rather than locally propagating below c",
+    "order_four_phase_history": [
+      "1",
+      "I",
+      "-1",
+      "-I",
+      "1"
+    ],
+    "Mobius_sign_after_two_steps": "-1",
+    "full_return_after_four_steps": "1",
+    "literal_c_over_four_local_speed_claimed": false,
+    "effective_delay_interpretation": true
+  },
+  "minimal_unitary_resonator": {
+    "junction_parameters": "r real, t=sqrt(1-r^2)",
+    "four_step_loop_factor": "q=exp(4 i omega)",
+    "through_scattering_amplitude": "(q - r)/(q*r - 1)",
+    "unitarity_residual_on_abs_q_equal_one": "0",
+    "group_delay": "(4 - 4*r**2)/(r**2 - 2*r*cos(theta) + 1)",
+    "resonant_group_delay": "4*(-r - 1)/(r - 1)",
+    "controls": [
+      {
+        "r": "0",
+        "external_internal_coupling_t": 1.0,
+        "resonant_group_delay_steps": 4.0,
+        "survival_probability_per_roundtrip": 0.0,
+        "finite_lifetime_for_nonzero_coupling": true
+      },
+      {
+        "r": "1/2",
+        "external_internal_coupling_t": 0.8660254037844386,
+        "resonant_group_delay_steps": 12.0,
+        "survival_probability_per_roundtrip": 0.25,
+        "finite_lifetime_for_nonzero_coupling": true
+      },
+      {
+        "r": "9/10",
+        "external_internal_coupling_t": 0.43588989435406733,
+        "resonant_group_delay_steps": 76.0,
+        "survival_probability_per_roundtrip": 0.81,
+        "finite_lifetime_for_nonzero_coupling": true
+      }
+    ]
+  },
+  "exact_factor_four_case": {
+    "condition": "r=0, t=1",
+    "scattering": "S=-q",
+    "delay_steps": 4,
+    "interpretation": "the incoming wave is fully routed through one four-stage internal cycle and then re-emitted",
+    "permanent_localization": false
+  },
+  "stability_coupling_trilemma": {
+    "survival_probability_after_n_roundtrips": "r**(2*n)",
+    "infinite_stability_requires": "r=1",
+    "nonzero_entry_exit_requires": "0<=r<1",
+    "at_infinite_stability_coupling_t": 0,
+    "stable_and_open_single_port_solution": false,
+    "finding": "For every nonzero coupling the stored amplitude has a finite lifetime. The infinite-lifetime limit disconnects the loop from the same external port."
+  },
+  "dark_state_audit": {
+    "internal_shift_order": 4,
+    "modes": [
+      {
+        "k": 0,
+        "eigenvalue": "1",
+        "site_port_overlap_squared": "1/4",
+        "symmetric_port_overlap_squared": "1"
+      },
+      {
+        "k": 1,
+        "eigenvalue": "-I",
+        "site_port_overlap_squared": "1/4",
+        "symmetric_port_overlap_squared": "0"
+      },
+      {
+        "k": 2,
+        "eigenvalue": "-1",
+        "site_port_overlap_squared": "1/4",
+        "symmetric_port_overlap_squared": "0"
+      },
+      {
+        "k": 3,
+        "eigenvalue": "I",
+        "site_port_overlap_squared": "1/4",
+        "symmetric_port_overlap_squared": "0"
+      }
+    ],
+    "single_site_port_dark_mode_count": 0,
+    "symmetric_port_dark_mode_count": 3,
+    "dark_state_entry_exit_through_same_port": false,
+    "finding": "Destructive interference can create exact dark states only by making their port overlap zero; reciprocity then prevents free excitation and emission through that port."
+  },
+  "moving_defect_boundary": {
+    "translated_attachment_points_are_isospectral": true,
+    "static_model_selects_attachment_position": false,
+    "law_transporting_the_attachment_point": "not derived",
+    "particle_motion_from_static_resonator": false
+  },
+  "project_compatibility": {
+    "local_unitary_transport": "compatible",
+    "common_light_cone": "compatible because local propagation remains at the base step speed",
+    "order_four_root_phase_algebraically_present": true,
+    "order_four_root_assigned_mandatorily_to_H15": false,
+    "new_topological_sector_required": true
+  },
+  "verdict": {
+    "four_stage_unitary_delay": "pass",
+    "exact_effective_factor_four": "pass_only_for_full_one_cycle_routing_r_equal_zero",
+    "free_entry_and_exit": "pass_for_nonzero_coupling",
+    "infinite_local_stability_with_same_port": "fail",
+    "topologically_protected_dark_state": "conditional_but_decoupled",
+    "moving_particle_law": "not_derived",
+    "parameter_free_physical_particle": "fail",
+    "physical_closure": false,
+    "status": "The early light-in-a-twisted-loop idea has a precise unitary realization as an order-four delay resonator. It explains an effective four-step delay without reducing the local light cone, but a single reciprocal port cannot simultaneously provide free entry/exit and infinite localization. The order-four root is also not mandatory in the current H15 parent."
+  },
+  "next_gate": "version5_defect_transport_part_conclusion_gate"
+}

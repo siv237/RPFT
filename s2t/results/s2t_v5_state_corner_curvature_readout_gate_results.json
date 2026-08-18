@@ -1,0 +1,104 @@
+{
+  "gate": "version5_state_corner_curvature_readout_gate",
+  "input_ledger": {
+    "modular_or_Hodge_moment_curvature": "already derived before this gate",
+    "equivariant_middle_curvature": "mu I3 with mu=radial^2-|Phi|^2",
+    "rank_one_degree_two_quotient": "C rho",
+    "exact_observed_block": "6+2+3+3+1=15",
+    "measure_rule": "one parent trace with observable-type reductions"
+  },
+  "corner_map": {
+    "formula": "C_rho(A)=rho A rho",
+    "global_unital": false,
+    "corner_unital": true,
+    "idempotent": true,
+    "completely_positive": true,
+    "Choi_eigenvalues": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "basis_covariance_residual": 5.922089785246709e-16,
+    "range": "C rho for rank-one rho"
+  },
+  "parent_corner": {
+    "space": "C3_family tensor C15_observed",
+    "parent_dimension": 45,
+    "projector": "rho tensor I15",
+    "projector_rank": 15,
+    "rank_fraction": 0.3333333333333333,
+    "relative_trace_parameter_count": 0
+  },
+  "commuting_readouts": {
+    "corner_with_family_partial_trace": 0.0,
+    "corner_with_exact_SM_block_reading": 0.0,
+    "conditioned_observed_with_SM_block_reading": 0.0
+  },
+  "curvature_samples": [
+    {
+      "radial": 1.0,
+      "phi": [
+        1.0,
+        0.0
+      ],
+      "moment": 0.0,
+      "family_normalized_curvature_norm": 0.0,
+      "corner_normalized_curvature_norm": 0.0,
+      "parent_loop_curvature_norm": 0.0,
+      "parent_conditioned_curvature_norm": 0.0
+    },
+    {
+      "radial": 0.9128709291752769,
+      "phi": [
+        0.816496580927726,
+        0.0
+      ],
+      "moment": 0.16666666666666674,
+      "family_normalized_curvature_norm": 0.027777777777777804,
+      "corner_normalized_curvature_norm": 0.027777777777777804,
+      "parent_loop_curvature_norm": 0.00925925925925927,
+      "parent_conditioned_curvature_norm": 0.027777777777777804
+    },
+    {
+      "radial": 0.73,
+      "phi": [
+        0.41,
+        0.27
+      ],
+      "moment": 0.29189999999999994,
+      "family_normalized_curvature_norm": 0.08520560999999997,
+      "corner_normalized_curvature_norm": 0.08520560999999996,
+      "parent_loop_curvature_norm": 0.028401869999999985,
+      "parent_conditioned_curvature_norm": 0.08520560999999996
+    }
+  ],
+  "interpretation": {
+    "family_loop_reading": "tau3((mu I3)^2)=mu^2",
+    "state_corner_reading": "Tr_rho((mu rho)^2)/Tr(rho)=mu^2",
+    "parent_loop_reading": "tau45((rho tensor I15)(mu^2 I45))=mu^2/3",
+    "fixed_multiplicity_factor": "rank(rho)/3=1/3",
+    "normalization_switch": false,
+    "different_observable_types": true,
+    "full_curvature_reconstructed_from_corner": false
+  },
+  "verdict": {
+    "full_to_rank_one_curvature_readout": "pass",
+    "normalized_curvature_norm_preserved": "pass",
+    "one_parent_trace_no_free_weight": "pass",
+    "compatibility_with_exact_SM_block_reading": "pass",
+    "rank_one_quotient_as_controlled_readout": "pass",
+    "new_origin_of_full_moment_map": "not_claimed",
+    "off_diagonal_Yukawa_dynamics": "open",
+    "two_sided_bimodule_connection_needed_for_scalar_transfer": false,
+    "two_sided_bimodule_connection_needed_for_interaction_dynamics": true,
+    "physical_closure": false,
+    "status": "the one-dimensional quotient is the correct normalized state-corner readout of the already derived equivariant family curvature"
+  },
+  "next_gate": "Construct the two-sided connection only on the off-diagonal interaction bimodule, keeping curvature transfer fixed by the state-corner square; test Leibniz rules, KO6, exact SM covariance and the Yukawa Hessian."
+}

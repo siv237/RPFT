@@ -1,0 +1,96 @@
+{
+  "date": "2026-08-15",
+  "gate": "version5_reduction_triangle_cocycle_gate",
+  "source_presence": {
+    "foundational_gate": true,
+    "heat_dictionary": true,
+    "modular_gate": true,
+    "carrier_measure_gate": true
+  },
+  "exact_cospectral_counterexample": {
+    "geometry_1": "connected star K_1,4",
+    "geometry_2": "disconnected C_4 plus isolated point",
+    "adjacency_characteristic_polynomial": "lambda**3*(lambda - 2)*(lambda + 2)",
+    "degree_sequence_1": [
+      4,
+      1,
+      1,
+      1,
+      1
+    ],
+    "degree_sequence_2": [
+      2,
+      2,
+      2,
+      2,
+      0
+    ],
+    "connected_1": true,
+    "connected_2": false,
+    "positive_generator_spectrum": [
+      1,
+      3,
+      3,
+      3,
+      5
+    ],
+    "heat_trace": "(exp(4*tau) + 3*exp(2*tau) + 1)*exp(-5*tau)",
+    "same_all_scalar_spectral_functionals": true,
+    "nonisomorphic": true
+  },
+  "dirac_square_ambiguity": {
+    "identity": "exp(-tau*D^2) = exp(-tau*(-D)^2)",
+    "orientation_or_sign_recovered": false,
+    "positive_square_root_is_canonical_dirac": false
+  },
+  "candidate_classification": {
+    "operator_logarithm": {
+      "recovers": "positive generator on the support",
+      "geometry_reconstruction": false,
+      "reason": "does not supply coordinate algebra, locality, topology or Dirac sign"
+    },
+    "gns": {
+      "recovers": "cyclic representation from an algebra-state pair",
+      "geometry_reconstruction": false,
+      "reason": "requires the algebra and supplies no canonical Dirac/locality operator"
+    },
+    "modular": {
+      "recovers": "relative state flow for an algebra-state pair",
+      "geometry_reconstruction": false,
+      "reason": "does not uniquely select a carrier metric or topology"
+    },
+    "inverse_spectrum": {
+      "recovers": "some invariants or a geometry inside restricted rigid classes",
+      "geometry_reconstruction": false,
+      "reason": "exact cospectral nonisomorphic counterexample"
+    },
+    "full_spectral_triple": {
+      "recovers": "geometry under reconstruction axioms",
+      "geometry_reconstruction": true,
+      "reason": "algebra, representation, Dirac and orientation data are already supplied",
+      "nontrivial_from_minimal_correlation": false
+    },
+    "prior_based_selection": {
+      "recovers": "one selected representative",
+      "geometry_reconstruction": false,
+      "reason": "imports the missing topology/model prior"
+    }
+  },
+  "triangle": {
+    "T_gs": "partial",
+    "T_sc": "operator-level pass",
+    "T_cg": "fail on minimal objects",
+    "Omega_gsc": "undefined"
+  },
+  "verdict": {
+    "minimal_reduction_triangle": "fail",
+    "coefficient_free_nontrivial_T_cg": false,
+    "categorical_architecture_pass": false,
+    "relative_coboundary_language_retained": true,
+    "reason": "weak correlation data underdetermine geometry; enriching them with a full spectral triple makes the return map tautological rather than generative"
+  },
+  "next_gate": {
+    "name": "version5_boundary_parent_trace_freeze_gate",
+    "question": "can one boundary Hilbert space and trace supply non-tautological locality and gluing data without independent sector weights?"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "gate": "version5_real_toeplitz_kr_classification_gate",
+  "Bott_tables": {
+    "KO_n_R_n_0_to_7": [
+      "Z",
+      "Z2",
+      "Z2",
+      "0",
+      "Z",
+      "0",
+      "0",
+      "0"
+    ],
+    "KO_n_C_as_real_n_0_to_7": [
+      "Z",
+      "0",
+      "Z",
+      "0",
+      "Z",
+      "0",
+      "Z",
+      "0"
+    ],
+    "degree_tested": 6
+  },
+  "candidate_real_forms": {
+    "single_branch_pointwise_conjugation": {
+      "fixed_algebra": "M105(R)",
+      "Morita_base": "R",
+      "KO6": "0",
+      "encodes_L_to_Lstar_exchange": false,
+      "verdict": "not_the_project_real_structure"
+    },
+    "exchange_conjugation_on_oriented_pair": {
+      "ambient_complex_algebra": "M105(C) direct_sum M105(C)",
+      "involution": "rho(a,b)=(conjugate(b),conjugate(a))",
+      "fixed_real_algebra": "{(a,conjugate(a))} isomorphic to M105(C)_as_real",
+      "Morita_base": "C_as_real",
+      "KO6": "Z",
+      "encodes_L_to_Lstar_exchange": true,
+      "verdict": "selected_by_project_J"
+    },
+    "quaternionic_single_branch": {
+      "compatible_with_J_squared_plus_one": false,
+      "compatible_with_odd_complex_rank_105_as_global_quaternionic_module": false,
+      "verdict": "excluded"
+    }
+  },
+  "classification_consequence": {
+    "ordinary_complex_total_index": 0,
+    "oriented_complex_indices": [
+      -15,
+      15
+    ],
+    "selected_real_group": "KO6(M105(C)_as_real)=Z",
+    "nonzero_integer_real_class_is_allowed": true,
+    "candidate_integer_magnitude": 15,
+    "candidate_normalized_weight": 0.14285714285714285,
+    "ordinary_index_cancellation_implies_real_class_zero": false
+  },
+  "remaining_proof_obligation": {
+    "explicit_Cl06_linear_Fredholm_cycle": false,
+    "comparison_map_sends_real_generator_to_oriented_pair": false,
+    "sign_and_magnitude_15_certified_in_KO6": false,
+    "unbounded_parent_and_physical_localization": false
+  },
+  "verdict": {
+    "real_form_selected": "exchange_conjugation",
+    "KO6_group": "Z",
+    "real_class_candidate_survives": true,
+    "real_class_proved": false,
+    "physical_closure": false,
+    "status": "integer_KO6_candidate_15_requires_explicit_Cl06_index"
+  },
+  "next_gate": "version5_real_toeplitz_cl06_index_gate"
+}

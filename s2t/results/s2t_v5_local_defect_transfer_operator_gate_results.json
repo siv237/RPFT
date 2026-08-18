@@ -1,0 +1,113 @@
+{
+  "gate": "version5_local_defect_transfer_operator_gate",
+  "input_certificates": {
+    "Morita_transition_carrier": "E=M20x15(C)",
+    "carrier_dimension": 300,
+    "family_corner_weight": "4/7",
+    "observed_corner_weight": "3/7"
+  },
+  "bimodule_intertwiner_classification": {
+    "theorem": "End_{M_p-M_q}(M_pq(C))=C for full matrix corners",
+    "proxy_dimensions": {
+      "p": 3,
+      "q": 2,
+      "dim_E": 6
+    },
+    "constraint_matrix_shape": [
+      468,
+      36
+    ],
+    "constraint_rank": 35,
+    "commutant_dimension": 1,
+    "consequence_for_M20x15": "local transport is scalar on the Morita carrier before the orientation doublet is added"
+  },
+  "minimal_two_direction_walk": {
+    "formula": "W(k)=[[n exp(ik),-i m],[-i m,n exp(-ik)]] tensor I_E",
+    "unitarity_condition": "n^2+m^2=1",
+    "symbolic_unitarity_product": "Matrix([[m**2 + n**2, 0], [0, m**2 + n**2]])",
+    "symbolic_unitarity_defect_before_constraint": "Matrix([[m**2 + n**2 - 1, 0], [0, m**2 + n**2 - 1]])",
+    "parity_relation": "sigma_x W(k) sigma_x=W(-k)",
+    "parity_defect": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "characteristic_polynomial": "-(-lambda**2*z + lambda*n*z**2 + lambda*n - m**2*z - n**2*z)/z",
+    "trace": "n*z + n/z",
+    "dispersion": "cos(omega)=n cos(k)",
+    "sample_unitarity_defects": {
+      "0.0": 3.148795641120281e-17,
+      "0.2": 3.233774443080676e-17,
+      "0.5": 1.840620365000582e-17,
+      "0.9": 2.212786571369016e-17,
+      "1.0": 0.0
+    }
+  },
+  "continuum_limit": {
+    "scaling": "m=a M, k=a p, n=sqrt(1-a^2 M^2)",
+    "walk_cosine_series": "1 + a**2*(-M**2/2 - p**2/2) + O(a**4)",
+    "Dirac_cosine_series": "1 + a**2*(-M**2/2 - p**2/2) + O(a**4)",
+    "difference_through_order_a3": "0",
+    "emergent_dispersion": "E^2=p^2+M^2",
+    "common_light_cone": true
+  },
+  "free_parameter_audit": {
+    "continuous_transfer_moduli_after_unitarity": 1,
+    "parameter": "m in [-1,1]",
+    "m_zero": "two uncoupled massless chiral shifts",
+    "absolute_m_one": "spatial propagation coefficient n vanishes",
+    "nonzero_propagating_mass": "requires 0<|m|<1 and is not fixed by current axioms",
+    "normalized_trace_preserved_for_every_m": true
+  },
+  "corner_weight_candidate_audit": {
+    "weights": {
+      "family": "4/7",
+      "observed": "3/7"
+    },
+    "candidate_identifications": {
+      "m2_equals_observed_weight": {
+        "m": "sqrt(21)/7",
+        "gap_omega0": "asin(sqrt(21)/7)"
+      },
+      "m2_equals_family_weight": {
+        "m": "2*sqrt(7)/7",
+        "gap_omega0": "asin(2*sqrt(7)/7)"
+      }
+    },
+    "unitarity_or_trace_selects_between_candidates": false,
+    "extra_principle_required": "a reflection, purification or stochastic rule relating diagonal trace weights to off-diagonal transfer amplitudes"
+  },
+  "charged_sector_extension": {
+    "sector_count": 3,
+    "independent_mass_parameters_if_edges_are_split": 3,
+    "relative_parameters_after_common_scale": 2,
+    "matches_previous_H15_relative_freedom": true,
+    "common_scalar_transport": "gives one universal gap and no u,d,e hierarchy",
+    "block_projectors_needed_for_hierarchy": true,
+    "block_projectors_reintroduce_Yukawa_input": true
+  },
+  "defect_stage": {
+    "homogeneous_transfer_classification_passed": true,
+    "topological_defect_inserted": false,
+    "reason_for_early_stop": "the homogeneous massive walk already contains an underived continuous modulus",
+    "zero_mode_or_flavour_oscillation_claimed": false
+  },
+  "verdict": {
+    "local_unitary_transfer_exists": "pass",
+    "Dirac_continuum_limit_exists": "pass",
+    "Morita_covariance_removes_internal_matrix_freedom": "pass",
+    "unique_nonzero_mass_from_current_geometry": "fail",
+    "corner_trace_weights_fix_transfer_mass": "fail",
+    "charged_mass_hierarchy_without_sector_inputs": "fail",
+    "minimal_transfer_language_validated": true,
+    "minimal_transfer_dynamics_physically_closed": false,
+    "physical_closure": false,
+    "status": "the Morita carrier supports a canonical massless chiral transport class, but every nonzero propagating mass requires one external mixing modulus; splitting u,d,e restores the two forbidden relative Yukawa freedoms"
+  },
+  "next_gate": "Do not insert a defect or fit flavour oscillations yet. Test one and only one project-native candidate for fixing the mixing modulus: whether the existing rank-one/tetrahedral holonomy canonically defines a reflection or partial isometry on the orientation doublet. Close the dynamic route if that map is not functorial and unique."
+}

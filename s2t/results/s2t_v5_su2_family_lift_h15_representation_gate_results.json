@@ -1,0 +1,70 @@
+{
+  "gate": "version5_su2_family_lift_h15_representation_gate",
+  "current_module_ledger": {
+    "H15_dimension": 15,
+    "light_family_packet_dimension": 45,
+    "particle_family_chain_dimension": 10,
+    "KO6_family_chain_dimension": 20,
+    "full_parent_dimension": 300,
+    "linking_algebra": "M35 with corners M20 and M15",
+    "existing_family_SO3_decomposition": "1+3+3+3 on the particle family chain"
+  },
+  "center_action": {
+    "spin_one_triplet": "plus_identity",
+    "spin_half_doublet": "minus_identity",
+    "particle_family_chain": "plus_identity_on_10",
+    "KO6_family_chain": "plus_identity_on_20",
+    "light_packet": "plus_identity_on_45",
+    "full_parent": "plus_identity_on_300",
+    "nontrivial_spinor_sign_present_in_current_family_module": false
+  },
+  "KO6_double_as_family_spinor_test": {
+    "commutator_norms_with_grading": {
+      "sigma_x": 8.94427190999916,
+      "sigma_y": 8.94427190999916,
+      "sigma_z": 0.0
+    },
+    "full_SU2_preserves_grading": false,
+    "maximal_continuous_subgroup_visible_on_copy_factor": "diagonal U(1)",
+    "particle_conjugate_mixing_required_for_sigma_x_sigma_y": true
+  },
+  "weak_SU2_reuse_test": {
+    "minus_center_eigenspace_dimension": 8,
+    "plus_center_eigenspace_dimension": 7,
+    "uniform_family_spinor_sign": false,
+    "preserves_existing_SM_assignment_if_identified_with_SU2F": false
+  },
+  "family_two_plus_one_test": {
+    "central_spectrum": [
+      -1,
+      -1,
+      1
+    ],
+    "same_as_existing_spin_one_triplet": false,
+    "irreducible_family_triplet_preserved": false,
+    "physical_Weyl_doublet_count": 15,
+    "odd_doublet_global_anomaly": true
+  },
+  "orientation_doublet_test": {
+    "dimension": 2,
+    "origin": "auxiliary counterpropagating factor added after E=M20x15",
+    "contained_in_H15_or_M35": false,
+    "can_carry_spin_half_kinematically": true,
+    "identification_with_family_SU2_is_current_architecture_pass": false,
+    "reason": "it requires an external associated module or a new Spin^h-type locking of propagation and family transport"
+  },
+  "trace_and_state_budget": {
+    "existing_M35_trace_normalizes_external_orientation_doublet": false,
+    "new_half_integer_associated_module_requires_trace_rederivation": true,
+    "new_fermion_states_allowed_by_gate": false
+  },
+  "verdict": {
+    "adjoint_SO3_family_transport_reproduced": true,
+    "nontrivial_central_spinor_sign_on_current_H15_M35": false,
+    "all_gate_conditions_simultaneously_satisfied": false,
+    "status": "fail_representation_obstruction",
+    "main_route_in_current_version": "closed_before_monopole_dynamics",
+    "reopening_condition": "a separately declared new version with an external half-integer associated module or Spin^h-type locking, followed by fresh KO6, anomaly, trace, and phenomenology audits"
+  },
+  "next_gate": null
+}

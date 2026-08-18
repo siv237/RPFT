@@ -1,0 +1,33 @@
+{
+  "gate": "version5_real_toeplitz_ko7_unitary_representative_gate",
+  "unitary": {
+    "plus": "z q0 + (1-q0)",
+    "minus": "z^(-1) conjugate(q0) + (1-conjugate(q0))",
+    "matrix_size_per_branch": 105,
+    "coefficient_rank": 15,
+    "max_unitarity_residual": 8.599750569898517e-16,
+    "max_real_exchange_residual": 0.0,
+    "KO7_symmetry": "V^tau=V"
+  },
+  "complex_K1_classes": [
+    15,
+    -15
+  ],
+  "toeplitz_boundary_indices": [
+    -15,
+    15
+  ],
+  "naive_doubling_rejected": {
+    "formula": "p u + (1-p)u*",
+    "reason": "represents 2[p]-[1] and doubles the intended class",
+    "would_give_absolute_class": 30
+  },
+  "verdict": {
+    "explicit_KO7_unitary": "pass",
+    "real_symmetry": "pass",
+    "boundary_matches_complexification_of_KO6_15": true,
+    "normalized_weight": 0.14285714285714285,
+    "physical_action": false,
+    "next_gate": "version5_toeplitz_parent_action_variational_gap_gate"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "gate": "version5_massless_holonomy_defect_index_gate",
+  "input_certificates": {
+    "mass_selector_from_tetrahedral_reflection": "closed",
+    "massless_holonomy_transport": "retained",
+    "holonomy": "C3"
+  },
+  "holonomy_spectrum": {
+    "matrix": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "order": 3,
+    "eigenvalues": [
+      "1",
+      "exp(+2*pi*i/3)",
+      "exp(-2*pi*i/3)"
+    ],
+    "fractional_phases": [
+      "-1/3",
+      "0",
+      "+1/3"
+    ],
+    "invariant_eigenline_dimension": 1,
+    "invariant_vector": [
+      0.5773502691896258,
+      0.5773502691896258,
+      0.5773502691896258
+    ]
+  },
+  "twisted_circle_spectrum": {
+    "operator": "D=-i d/ds",
+    "boundary_condition": "psi(s+L)=C3 psi(s)",
+    "formulae": [
+      "2*pi*(n - 1/3)/L",
+      "2*pi*n/L",
+      "2*pi*(n + 1/3)/L"
+    ],
+    "zero_level_count_single_chiral": 1,
+    "zero_levels": [
+      {
+        "branch": "invariant",
+        "alpha": "0",
+        "n": 0,
+        "dimensionless_L_times_p": 0.0,
+        "is_zero": true
+      }
+    ],
+    "smallest_nonzero_absolute_momentum": "2*pi/(3L)",
+    "enumeration_cutoff": 8
+  },
+  "orientation_and_reality": {
+    "single_H15_chiral_branch_complex_kernel_dimension": 1,
+    "two_direction_walk_complex_kernel_dimension": 2,
+    "Majorana_real_kernel_dimension_after_single_chiral_restriction": 1,
+    "mod2_kernel_parity": 1,
+    "exact_one_requires_H15_chiral_restriction": true
+  },
+  "index_audit": {
+    "complex_kernel_dimension": 1,
+    "complex_cokernel_dimension": 1,
+    "Fredholm_index": 0,
+    "nonzero_integer_index": false,
+    "conditional_real_mod2_parity": 1,
+    "boundary_kernel_is_not_yet_a_bulk_defect_index": true
+  },
+  "winding_and_eta": {
+    "inverse_winding_phases": [
+      "-1/3",
+      "0",
+      "+1/3"
+    ],
+    "winding_only_swaps_conjugate_branches": true,
+    "eta_plus_one_third": "1/3",
+    "eta_minus_one_third": "-1/3",
+    "total_eta": "0",
+    "orientation_selected_by_eta": false
+  },
+  "localization_audit": {
+    "site_count": 60,
+    "zero_mode_profile": "uniform invariant holonomy eigenvector",
+    "inverse_participation_ratio": 0.016666666666666653,
+    "expected_uniform_IPR": 0.016666666666666666,
+    "localized_at_defect_core": false
+  },
+  "flavour_boundary": {
+    "holonomy_eigenchannels_propagate_diagonally": true,
+    "physical_flavour_readout_basis_derived": false,
+    "neutrino_oscillation_prediction": false
+  },
+  "verdict": {
+    "parameter_free_fractional_shifts": "pass",
+    "one_invariant_zero_level_single_chiral": "pass",
+    "one_real_Majorana_zero_mode_conditional_on_H15_chirality": "conditional_pass",
+    "nonzero_Fredholm_index": "fail",
+    "localized_defect_core_mode": "fail",
+    "physical_neutrino_identification": "not_derived",
+    "massless_holonomy_spectral_mechanism": "retained",
+    "physical_closure": false,
+    "status": "C3 holonomy gives parameter-free momentum shifts 0,+/-1/3 and one invariant zero level on the single H15 chiral branch; the integer index is zero and the mode is delocalized, so this is a boundary spectral selector rather than a localized neutrino defect"
+  },
+  "next_gate": "Bridge the boundary zero level to the old vortex-core Majorana branch. Test whether the existing projector supercurvature Q(H), cubic-root connection and transfer operator determine a bulk radial profile and normalizable localized mode without a new stiffness, condensate scale or hand-chosen domain wall."
+}

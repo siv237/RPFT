@@ -1,0 +1,96 @@
+{
+  "gate": "version5_morita_linking_parent_gate",
+  "input_certificates": {
+    "commuting_square_two_readings": "pass",
+    "exact_standard_model_reading": "pass",
+    "rank_one_linking_tangent": "pass",
+    "state_corner_curvature_transfer": "pass"
+  },
+  "morita_carrier": {
+    "family_reading_algebra": "M20(C)",
+    "observed_control_reading_algebra": "M15(C)",
+    "equivalence_bimodule": "E=M20x15(C)",
+    "complex_dimension_E": 300,
+    "physical_parent_dimension": 300,
+    "left_compact_endomorphisms": "K_right(E)=M20(C)",
+    "right_compact_endomorphisms": "K_left(E)=M15(C)",
+    "endomorphism_algebra_of_carrier": "End_C(E)=M300(C)"
+  },
+  "linking_algebra": {
+    "formula": "L(E)=[[M20,E],[E*,M15]]=M35(C)",
+    "representation_dimension": 35,
+    "complex_vector_space_dimension": 1225,
+    "dimension_ledger": {
+      "family_corner": 400,
+      "observed_corner": 225,
+      "upper_off_diagonal": 300,
+      "lower_off_diagonal": 300,
+      "sum": 1225
+    },
+    "unique_normalized_trace": true,
+    "family_corner_weight": 0.5714285714285714,
+    "observed_corner_weight": 0.42857142857142855,
+    "conditioned_corner_traces_recover_tau20_tau15": true
+  },
+  "exact_observed_corner_decomposition": {
+    "block_sizes": [
+      6,
+      2,
+      3,
+      3,
+      1
+    ],
+    "bimodule_block_dimensions": [
+      120,
+      40,
+      60,
+      60,
+      20
+    ],
+    "sum": 300
+  },
+  "relative_bimodule_curvature": {
+    "covariant_derivative": "nabla_E xi=d xi+A_F xi-xi A_O",
+    "curvature": "R_E(xi)=F_F xi-xi F_O",
+    "minus_sign_source": "right action in the covariant derivative",
+    "independent_braiding_or_sigma_chosen": false,
+    "implementation": "ordinary block multiplication in the linking algebra",
+    "normalized_operator_trace_formula": "tau300(R^2)=tau20(F_F^2)+tau15(F_O^2)-2 tau20(F_F) tau15(F_O)",
+    "centered_formula": "tau300(R^2)=tau20(F_F^2)+tau15(F_O^2) when both curvatures are centered",
+    "residuals": {
+      "left_right_action_commutator": 0.0,
+      "general_relative_trace_identity": 6.943590961930622e-19,
+      "centered_relative_trace_identity": 7.105427391528205e-15,
+      "bimodule_curvature_covariance": 1.1216847530350023e-13,
+      "conditioned_family_trace": 8.673617379884035e-19,
+      "conditioned_observed_trace": 0.0
+    }
+  },
+  "architecture_interpretation": {
+    "M35_role": "linking operator container for the two readings",
+    "M300_role": "endomorphism algebra of the 300-dimensional off-diagonal carrier",
+    "two_algebras_are_not_two_unrelated_worlds": true,
+    "physical_carrier_is_the_space_of_transitions": true,
+    "old_commuting_square_trace_identity_reinterpreted": "norm identity of centered relative bimodule curvature"
+  },
+  "gauge_boundary": {
+    "full_M35_as_coordinate_algebra": false,
+    "forbidden_full_unitary_lie_dimension": 1225,
+    "standard_model_gauge_lie_dimension": 12,
+    "extra_generators_if_U35_gauged": 1213,
+    "physical_coordinate_subalgebras_still_required": true,
+    "linking_container_does_not_imply_gauging_all_unitaries": true
+  },
+  "verdict": {
+    "canonical_Morita_bimodule_origin_of_C300": "pass",
+    "one_linking_trace_and_conditioned_corner_traces": "pass",
+    "relative_curvature_without_free_sigma": "pass",
+    "exact_SM_subalgebra_as_right_coordinate_corner": "conditional_pass",
+    "M35_as_new_coordinate_algebra": "fail_by_gauge_enlargement",
+    "Yukawa_operator_from_same_connection": "open",
+    "full_BV_BRST_Hessian": "open",
+    "physical_closure": false,
+    "status": "C300 is canonically the transition bimodule between two readings; M35 links the readings while M300 acts on their transitions"
+  },
+  "next_gate": "Restrict the right M15 corner to the exact Standard Model coordinate action and the left M20 corner to the affine family action; classify compatible bimodule connections and test whether the state-supported Yukawa map is the unique off-diagonal connection component without gauging U35."
+}

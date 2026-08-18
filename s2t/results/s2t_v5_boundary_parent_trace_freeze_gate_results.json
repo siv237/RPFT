@@ -1,0 +1,130 @@
+{
+  "date": "2026-08-15",
+  "gate": "version5_boundary_parent_trace_freeze_gate",
+  "source_presence": {
+    "route_assessment": true,
+    "wilson_parent": true,
+    "rotor_momentum": true,
+    "family_axis": true,
+    "pairing_moment_map": true,
+    "ko6_sign": true,
+    "degree_two_junk": true,
+    "fermionic_measure": true,
+    "majorana_parent": true,
+    "majorana_selector": true,
+    "parent_trace_precedent": true
+  },
+  "frozen_requirements": [
+    "odd_wilson_branch",
+    "pairing_condensate",
+    "tetrahedral_axis",
+    "exact_one_majorana",
+    "independent_normalization"
+  ],
+  "central_trace_audit": {
+    "current_inequivalent_blocks": [
+      "wilson_gaussian_root_family",
+      "ko6_quiver_pairing",
+      "bdg_majorana_core"
+    ],
+    "block_count": 3,
+    "free_relative_trace_parameters_after_normalization": 2,
+    "single_symmetry_derived_trace": false
+  },
+  "fixed_charge_constraint_audit": {
+    "one_diagonal_u1": {
+      "rank": 1,
+      "solution_dimension": 7,
+      "unique_target": false
+    },
+    "two_irrep_blocks": {
+      "rank": 2,
+      "solution_dimension": 6,
+      "unique_target": false
+    },
+    "componentwise_projector": {
+      "rank": 8,
+      "solution_dimension": 0,
+      "unique_target": true,
+      "target": [
+        1,
+        1,
+        1,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "status": "additional operator-valued datum in the frozen carrier"
+    }
+  },
+  "candidate_ledger": {
+    "fixed_charge_boundary": {
+      "coefficient_pair": true,
+      "one_trace": false,
+      "selection_rule": false,
+      "failure": "one or two Gauss laws do not select the eight-component target"
+    },
+    "coherent_source_gaussian": {
+      "coefficient_pair": true,
+      "one_trace": "conditional",
+      "selection_rule": false,
+      "failure": "axis-dependent imaginary source, contour and unit coefficient are external"
+    },
+    "direct_sum_superconnection": {
+      "coefficient_pair": "sectorwise",
+      "one_trace": false,
+      "selection_rule": false,
+      "failure": "at least three central sectors leave two relative trace weights"
+    },
+    "full_matrix_factor": {
+      "coefficient_pair": "not tested",
+      "one_trace": true,
+      "selection_rule": false,
+      "failure": "requires new off-diagonal connectors mixing inequivalent charge/grade sectors"
+    }
+  },
+  "five_output_ledger": {
+    "odd_wilson_branch": {
+      "local_result": "exact coefficient pair",
+      "parent_status": "fail",
+      "reason": "fixed-charge projector or imaginary coherent source is not derived"
+    },
+    "pairing_condensate": {
+      "local_result": "stable normalized quiver moment-map saddle",
+      "parent_status": "conditional",
+      "reason": "ordinary trace has wrong mixed sign; degree-two and Pfaffian routes fail"
+    },
+    "tetrahedral_axis": {
+      "local_result": "exact 2pi/3 oriented three-cycle selection",
+      "parent_status": "conditional",
+      "reason": "projector curvature is not embedded in the Wilson Gaussian parent block"
+    },
+    "exact_one_majorana": {
+      "local_result": "rank-two family generator leaves one real kernel",
+      "parent_status": "conditional",
+      "reason": "root flux, condensate and core restriction are not jointly derived"
+    },
+    "independent_normalization": {
+      "local_result": "conditional trace averaging and exact Wilson coefficients",
+      "parent_status": "fail",
+      "reason": "normalizations are used in construction or lack one action-level relative weight"
+    }
+  },
+  "verdict": {
+    "common_boundary_kinematics": "partial_pass",
+    "exact_wilson_coefficient_pair": "operator_pass",
+    "one_parent_trace": false,
+    "fixed_charge_or_source_selection": false,
+    "joint_condensate_axis_majorana_derivation": false,
+    "mathematical_parent_architecture_pass": false,
+    "physical_closure": false,
+    "boundary_source_current_realization": "closed_as_version5_parent_architecture",
+    "reason": "exact local modules exist, but the symmetry-preserving direct sum has free central weights and neither the charge projector nor the coherent source is selected"
+  },
+  "next_gate": {
+    "name": "version5_finite_geometry_complexity_bound_gate",
+    "purpose": "bound and enumerate genuinely new irreducible finite geometries without reopening closed KO6, rank-one Pati-Salam or direct-sum boundary actions"
+  }
+}

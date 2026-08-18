@@ -1,0 +1,118 @@
+{
+  "date": "2026-08-16",
+  "gate": "version5_modular_commutant_parent_correspondence_gate",
+  "parent_algebra": {
+    "algebra": "M18(C)",
+    "normalized_trace": "tau18=Tr18/18",
+    "unique_normalized_trace": true,
+    "represented_physical_algebra": "R direct_sum M3(R) direct_sum C"
+  },
+  "vertex_projector_algebra": {
+    "algebra": "C^3 inside the joint commutant of left and opposite actions",
+    "ranks": [
+      6,
+      6,
+      6
+    ],
+    "projector_residuals": {
+      "sum_to_identity": 0.0,
+      "idempotence": 0.0,
+      "orthogonality": 0.0
+    },
+    "left_commutant_residual": 0.0,
+    "right_commutant_residual": 0.0
+  },
+  "spectral_projector_correspondence": {
+    "source": "C*(L_family) isomorphic to C^3",
+    "graph": "A3",
+    "graph_preserving_star_isomorphism_count": 2,
+    "isomorphisms": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        0
+      ]
+    ],
+    "induced_particle_heights": [
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        -1
+      ]
+    ],
+    "one_orbit_up_to_global_reversal": true,
+    "vector_phase_choice_needed": false
+  },
+  "full_KO6_height": {
+    "J_odd_residual": 0.0,
+    "grading_commutator_residual": 0.0,
+    "left_and_opposite_algebra_commutator_residual": 0.0
+  },
+  "full_KO6_Dirac_recheck": {
+    "selfadjoint_residual": 0.0,
+    "grading_odd_residual": 0.0,
+    "J_reality_residual": 0.0,
+    "order_zero_residual": 0.0,
+    "first_order_residual": 0.0
+  },
+  "faithful_modular_state": {
+    "beta_test_value": 0.73,
+    "trace_residual": 0.0,
+    "hermiticity_residual": 0.0,
+    "minimum_eigenvalue": 0.022580376694246205,
+    "positive_for_every_beta_greater_than_zero": true,
+    "orientation_independent_of_beta_magnitude": true,
+    "absolute_state_weights_depend_on_beta": true,
+    "left_and_opposite_algebra_commutator_residual": 0.0
+  },
+  "modular_polarization": {
+    "D_equals_d_plus_d_star_residual": 0.0,
+    "positive_frequency_residual": 0.0,
+    "J_maps_d_to_d_star_residual": 0.0,
+    "Kmod_equals_beta_ad_h_max_residual": 1.1102230246251565e-16
+  },
+  "oriented_curvature": {
+    "middle_identity": "[d,d*]|G=XX*-Y*Y",
+    "moment_map_residual": 2.4229329848432904e-18,
+    "normalized_parent_trace": 11.980645123048097,
+    "expected_tau3_trace": 11.980645123048093,
+    "trace_normalization_residual": 3.552713678800501e-15
+  },
+  "relation_to_previous_twist_no_go": {
+    "center_of_M18_dimension": 1,
+    "vertex_projectors_central_in_M18": false,
+    "noncentral_commutator_witness": 1.7320508075688772,
+    "uses_central_flip": false,
+    "finding": "The faithful modular state polarizes noncentral transition blocks; it does not implement the forbidden exchange of central idempotents."
+  },
+  "closure_ledger": {
+    "one_parent_algebra_for_modular_state_and_KO6_nodes": true,
+    "faithful_positive_state": true,
+    "unique_full_matrix_trace": true,
+    "orientation_derived_before_X_Y": true,
+    "exact_moment_map_square": true,
+    "standard_model_representation_in_same_parent": false,
+    "M60_family_gauge_trace_integrated_without_double_counting": false,
+    "full_parent_action": false,
+    "physical_BV_BRST_Hessian": false,
+    "two_blind_physical_endpoints": false
+  },
+  "verdict": {
+    "local_parent_correspondence": "pass",
+    "previous_orientation_obstruction": "resolved_by_modular_polarization",
+    "complete_tome5_parent_architecture": false,
+    "physical_closure": false,
+    "status": "first_positive_modular_KO6_parent_subarchitecture"
+  },
+  "next_gate": "Embed the modular-KO6 correspondence and the existing M60 family-gauge trace in one representation without duplicating the family triplet or adding a free weight."
+}

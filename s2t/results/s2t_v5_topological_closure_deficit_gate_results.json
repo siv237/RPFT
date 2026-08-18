@@ -1,0 +1,196 @@
+{
+  "gate": "version5_topological_closure_deficit_gate",
+  "perfect_closure": {
+    "definition": "Fredholm operator is invertible",
+    "kernel_dimension": 0,
+    "cokernel_dimension": 0,
+    "possible_in_index_15_sector": false
+  },
+  "oriented_plus_branch": {
+    "index": -15,
+    "representatives": [
+      {
+        "extra_kernel_cokernel_pairs": 0,
+        "kernel_dimension": 0,
+        "cokernel_dimension": 15,
+        "index": -15,
+        "defect_dimension": 15,
+        "normalized_deficit": 0.14285714285714285
+      },
+      {
+        "extra_kernel_cokernel_pairs": 1,
+        "kernel_dimension": 1,
+        "cokernel_dimension": 16,
+        "index": -15,
+        "defect_dimension": 17,
+        "normalized_deficit": 0.1619047619047619
+      },
+      {
+        "extra_kernel_cokernel_pairs": 2,
+        "kernel_dimension": 2,
+        "cokernel_dimension": 17,
+        "index": -15,
+        "defect_dimension": 19,
+        "normalized_deficit": 0.18095238095238095
+      },
+      {
+        "extra_kernel_cokernel_pairs": 3,
+        "kernel_dimension": 3,
+        "cokernel_dimension": 18,
+        "index": -15,
+        "defect_dimension": 21,
+        "normalized_deficit": 0.2
+      },
+      {
+        "extra_kernel_cokernel_pairs": 4,
+        "kernel_dimension": 4,
+        "cokernel_dimension": 19,
+        "index": -15,
+        "defect_dimension": 23,
+        "normalized_deficit": 0.21904761904761905
+      },
+      {
+        "extra_kernel_cokernel_pairs": 5,
+        "kernel_dimension": 5,
+        "cokernel_dimension": 20,
+        "index": -15,
+        "defect_dimension": 25,
+        "normalized_deficit": 0.23809523809523808
+      },
+      {
+        "extra_kernel_cokernel_pairs": 6,
+        "kernel_dimension": 6,
+        "cokernel_dimension": 21,
+        "index": -15,
+        "defect_dimension": 27,
+        "normalized_deficit": 0.2571428571428571
+      },
+      {
+        "extra_kernel_cokernel_pairs": 7,
+        "kernel_dimension": 7,
+        "cokernel_dimension": 22,
+        "index": -15,
+        "defect_dimension": 29,
+        "normalized_deficit": 0.2761904761904762
+      },
+      {
+        "extra_kernel_cokernel_pairs": 8,
+        "kernel_dimension": 8,
+        "cokernel_dimension": 23,
+        "index": -15,
+        "defect_dimension": 31,
+        "normalized_deficit": 0.29523809523809524
+      }
+    ],
+    "minimal_defect_dimension": 15,
+    "minimal_normalized_deficit": 0.14285714285714285,
+    "explicit_toeplitz_saturates_bound": true
+  },
+  "oriented_minus_branch": {
+    "index": 15,
+    "representatives": [
+      {
+        "extra_kernel_cokernel_pairs": 0,
+        "kernel_dimension": 15,
+        "cokernel_dimension": 0,
+        "index": 15,
+        "defect_dimension": 15,
+        "normalized_deficit": 0.14285714285714285
+      },
+      {
+        "extra_kernel_cokernel_pairs": 1,
+        "kernel_dimension": 16,
+        "cokernel_dimension": 1,
+        "index": 15,
+        "defect_dimension": 17,
+        "normalized_deficit": 0.1619047619047619
+      },
+      {
+        "extra_kernel_cokernel_pairs": 2,
+        "kernel_dimension": 17,
+        "cokernel_dimension": 2,
+        "index": 15,
+        "defect_dimension": 19,
+        "normalized_deficit": 0.18095238095238095
+      },
+      {
+        "extra_kernel_cokernel_pairs": 3,
+        "kernel_dimension": 18,
+        "cokernel_dimension": 3,
+        "index": 15,
+        "defect_dimension": 21,
+        "normalized_deficit": 0.2
+      },
+      {
+        "extra_kernel_cokernel_pairs": 4,
+        "kernel_dimension": 19,
+        "cokernel_dimension": 4,
+        "index": 15,
+        "defect_dimension": 23,
+        "normalized_deficit": 0.21904761904761905
+      },
+      {
+        "extra_kernel_cokernel_pairs": 5,
+        "kernel_dimension": 20,
+        "cokernel_dimension": 5,
+        "index": 15,
+        "defect_dimension": 25,
+        "normalized_deficit": 0.23809523809523808
+      },
+      {
+        "extra_kernel_cokernel_pairs": 6,
+        "kernel_dimension": 21,
+        "cokernel_dimension": 6,
+        "index": 15,
+        "defect_dimension": 27,
+        "normalized_deficit": 0.2571428571428571
+      },
+      {
+        "extra_kernel_cokernel_pairs": 7,
+        "kernel_dimension": 22,
+        "cokernel_dimension": 7,
+        "index": 15,
+        "defect_dimension": 29,
+        "normalized_deficit": 0.2761904761904762
+      },
+      {
+        "extra_kernel_cokernel_pairs": 8,
+        "kernel_dimension": 23,
+        "cokernel_dimension": 8,
+        "index": 15,
+        "defect_dimension": 31,
+        "normalized_deficit": 0.29523809523809524
+      }
+    ],
+    "minimal_defect_dimension": 15,
+    "minimal_normalized_deficit": 0.14285714285714285,
+    "explicit_adjoint_saturates_bound": true
+  },
+  "real_exchange_pair": {
+    "ordinary_complex_index_sum": 0,
+    "positive_defect_dimension": 30,
+    "total_coefficient_dimension": 210,
+    "normalized_deficit": 0.14285714285714285,
+    "KO6_class": 15,
+    "real_symmetry_preserving_trivialization": false
+  },
+  "cross_check": {
+    "minimal_loop_action": 0.14285714285714285,
+    "minimal_topological_deficit": 0.14285714285714285,
+    "exact_match": true,
+    "physical_mass_or_radius_derived": false
+  },
+  "interpretation_boundary": {
+    "literal_sphere_packing_density": false,
+    "operator_noninvertibility": true,
+    "vacuum_selection_of_nonzero_sector_derived": false,
+    "all_particle_spectrum_derived": false
+  },
+  "verdict": {
+    "defect_unavoidable_within_class_15": true,
+    "minimal_defect_weight": "1/7",
+    "ontology_operator_bridge": "pass",
+    "physical_closure": false,
+    "next_gate": "version5_closure_deficit_induced_vacuum_response_gate"
+  }
+}

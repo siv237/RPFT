@@ -1,0 +1,1121 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.8.14)  18 AUG 2026 09:59
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**tome5_s2t_parent_architecture.tex
+(./tome5_s2t_parent_architecture.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2023/11/07 v1.0k Cyrillic encoding definition file
+Now handling font encoding T2A ...
+... processing UTF-8 mapping file for font encoding T2A
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/base/t2aenc.dfu
+File: t2aenc.dfu 2022/06/07 v1.3c UTF-8 support
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0407 (decimal 1031)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0457 (decimal 1111)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0490 (decimal 1168)
+   defining Unicode char U+0491 (decimal 1169)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+0498 (decimal 1176)
+   defining Unicode char U+0499 (decimal 1177)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049C (decimal 1180)
+   defining Unicode char U+049D (decimal 1181)
+   defining Unicode char U+04A0 (decimal 1184)
+   defining Unicode char U+04A1 (decimal 1185)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AA (decimal 1194)
+   defining Unicode char U+04AB (decimal 1195)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B0 (decimal 1200)
+   defining Unicode char U+04B1 (decimal 1201)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04B8 (decimal 1208)
+   defining Unicode char U+04B9 (decimal 1209)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D4 (decimal 1236)
+   defining Unicode char U+04D5 (decimal 1237)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+3008 (decimal 12296)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+3009 (decimal 12297)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FB00 (decimal 64256)
+   defining Unicode char U+FB01 (decimal 64257)
+   defining Unicode char U+FB02 (decimal 64258)
+   defining Unicode char U+FB03 (decimal 64259)
+   defining Unicode char U+FB04 (decimal 64260)
+   defining Unicode char U+FB05 (decimal 64261)
+   defining Unicode char U+FB06 (decimal 64262)
+))
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 116.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2025/11/09 v25.15 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count284
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2050.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2052.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2054.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2055.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2056.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2058.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2083.
+\U@D=\dimen149
+\l@unhyphenated=\language90
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count285
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/locale/ru/babel-russian.tex)
+Package babel Info: Importing font and identification data for russian
+(babel)             from babel-ru.ini. Reported on input line 4298.
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/babel-russian/russianb.ldf
+File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
+Language: russian 2020/09/09 1.3k Russian support for the Babel system
+Package babel Info: Making " an active character on input line 124.
+Package babel Info: Default for \cyrdash is provided on input line 163.
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen150
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen151
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count286
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count287
+\leftroot@=\count288
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count289
+\DOTSCASE@=\count290
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen152
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count291
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count292
+\dotsspace@=\muskip17
+\c@parentequation=\count293
+\dspbrk@lvl=\count294
+\tag@help=\toks20
+\row@=\count295
+\column@=\count296
+\maxfields@=\count297
+\andhelp@=\toks21
+\eqnshift@=\dimen153
+\alignsep@=\dimen154
+\tagshift@=\dimen155
+\tagwidth@=\dimen156
+\totwidth@=\dimen157
+\lineht@=\dimen158
+\@envbody=\toks22
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks29
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks30
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count298
+\calc@Bcount=\count299
+\calc@Adimen=\dimen159
+\calc@Bdimen=\dimen160
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count300
+\calc@Cskip=\skip59
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count301
+\l_MT_multwidth_dim=\dimen161
+\origjot=\skip60
+\l_MT_shortvdotswithinadjustabove_dim=\dimen162
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen163
+\l_MT_above_intertext_sep=\dimen164
+\l_MT_below_intertext_sep=\dimen165
+\l_MT_above_shortintertext_sep=\dimen166
+\l_MT_below_shortintertext_sep=\dimen167
+\xmathstrut@box=\box55
+\xmathstrut@dim=\dimen168
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen169
+\lightrulewidth=\dimen170
+\cmidrulewidth=\dimen171
+\belowrulesep=\dimen172
+\belowbottomsep=\dimen173
+\aboverulesep=\dimen174
+\abovetopsep=\dimen175
+\cmidrulesep=\dimen176
+\cmidrulekern=\dimen177
+\defaultaddspace=\dimen178
+\@cmidla=\count302
+\@cmidlb=\count303
+\@aboverulesep=\dimen179
+\@belowrulesep=\dimen180
+\@thisruleclass=\count304
+\@lastruleclass=\count305
+\@thisrulewidth=\dimen181
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip61
+\LTright=\skip62
+\LTpre=\skip63
+\LTpost=\skip64
+\LTchunksize=\count306
+\LTcapwidth=\dimen182
+\LT@head=\box56
+\LT@firsthead=\box57
+\LT@foot=\box58
+\LT@lastfoot=\box59
+\LT@gbox=\box60
+\LT@cols=\count307
+\LT@rows=\count308
+\c@LT@tables=\count309
+\c@LT@chunks=\count310
+\LT@p@ftn=\toks31
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen183
+\ar@mcellbox=\box61
+\extrarowheight=\dimen184
+\NC@list=\toks32
+\extratabsurround=\skip65
+\backup@length=\skip66
+\ar@cellbox=\box62
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen185
+\Gin@req@width=\dimen186
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count311
+)
+\MT@toks=\toks33
+\MT@tempbox=\box63
+\MT@count=\count312
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks34
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen187
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count313
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip67
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count314
+\Gm@cntv=\count315
+\c@Gm@tempcnt=\count316
+\Gm@bindingoffset=\dimen188
+\Gm@wd@mp=\dimen189
+\Gm@odd@mp=\dimen190
+\Gm@even@mp=\dimen191
+\Gm@layoutwidth=\dimen192
+\Gm@layoutheight=\dimen193
+\Gm@layouthoffset=\dimen194
+\Gm@layoutvoffset=\dimen195
+\Gm@dimlist=\toks35
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count317
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen196
+\Hy@linkcounter=\count318
+\Hy@pagecounter=\count319
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count320
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 3160.
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count321
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen197
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count322
+\Field@Width=\dimen198
+\Fld@charsize=\dimen199
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count323
+\c@Item=\count324
+\c@Hfootnote=\count325
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+\Fld@listcount=\count326
+\c@bookmark@seq@number=\count327
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+)
+\Hy@SectionHShift=\skip68
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+) (./s2t_paths.tex)
+\c@definition=\count328
+\c@axiom=\count329
+\c@lemma=\count330
+\c@proposition=\count331
+\c@theorem=\count332
+\c@remark=\count333
+\c@protocol=\count334
+\c@nogocriterion=\count335
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count336
+) (./tome5_s2t_parent_architecture.aux
+Package babel Info: 'russian' activates 'russian' shorthands.
+(babel)             Reported on input line 8.
+)
+\openout1 = `tome5_s2t_parent_architecture.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Info: Redefining \th on input line 48.
+ (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count337
+\scratchdimen=\dimen256
+\scratchbox=\box64
+\nofMPsegments=\count338
+\nofMParguments=\count339
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count340
+\MPscratchDim=\dimen257
+\MPnumerator=\count341
+\makeMPintoPDFobject=\count342
+\everyMPtoPDFconversion=\toks37
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Info: Redefining \microtypecontext on input line 48.
+Package microtype Info: Applying patch `item' on input line 48.
+Package microtype Info: Applying patch `toc' on input line 48.
+Package microtype Info: Applying patch `eqnum' on input line 48.
+Package microtype Info: Applying patch `footnote' on input line 48.
+Package microtype Info: Applying patch `verbatim' on input line 48.
+LaTeX Info: Redefining \microtypesetup on input line 48.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(65.44142pt, 466.62503pt, 65.44142pt)
+* v-part:(T,H,B)=(65.44142pt, 714.164pt, 65.44142pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=466.62503pt
+* \textheight=714.164pt
+* \oddsidemargin=-6.82857pt
+* \evensidemargin=-6.82857pt
+* \topmargin=-43.82857pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 48.
+(./tome5_s2t_parent_architecture.out) (./tome5_s2t_parent_architecture.out)
+\@outlinefile=\write3
+\openout3 = `tome5_s2t_parent_architecture.out'.
+
+Package hyperref Info: Option `pageanchor' set `false' on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [1
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
+Package hyperref Info: Option `pageanchor' set `true' on input line 53.
+ (./tome5_s2t_parent_architecture.toc [1
+
+
+] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14])
+\tf@toc=\write4
+\openout4 = `tome5_s2t_parent_architecture.toc'.
+
+ [15] [1
+
+
+] (../gates/version5_problem_statement.tex
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 24.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-euf.cfg
+File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
+) [2
+
+] [3]) (../gates/version5_project_literature_novelty_gate.tex [4]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
+[5
+
+] [6]) (../gates/version5_architecture_selection_gate.tex [7]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
+[8
+
+]
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 48.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T2A).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) (../gates/version5_carrier_measure_freeze_gate.tex [9]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 4.
+[10
+
+]) (../gates/version5_foundational_relative_architecture_gate.tex [11]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 5.
+[12
+
+]) (../gates/version5_reduction_triangle_cocycle_gate.tex [13]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 6.
+[14
+
+]) (../gates/version5_boundary_parent_trace_freeze_gate.tex [15]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 7.
+[16
+
+] [17]) (../gates/version5_finite_geometry_complexity_bound_gate.tex [18]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 8.
+[19
+
+] [20]) (../gates/version5_real_selector_leaf_ko6_gate.tex [21]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 9.
+[22
+
+] [23]) (../gates/version5_family_algebra_rectangle_gate.tex [24]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 10.
+[25
+
+] [26]) (../gates/version5_ordinary_spectral_moment_map_no_go.tex [27]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 11.
+[28
+
+] [29]) (../gates/version5_nonordinary_architecture_fork_gate.tex [30]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 12.
+[31
+
+] [32] [33]) (../gates/version5_oriented_height_hodge_ko6_gate.tex [34]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 13.
+[35
+
+] [36]) (../gates/version5_twisted_family_automorphism_gate.tex [37]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 14.
+[38
+
+]) (../gates/version5_minimal_twist_doubling_budget_gate.tex [39] [40]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 15.
+[41
+
+]) (../gates/version5_real_scalar_flip_twisted_ko6_gate.tex [42]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 16.
+[43
+
+] [44]) (../gates/version5_flip_twisted_trace_positivity_gate.tex [45]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 17.
+[46
+
+] [47]) (../gates/version5_derived_moment_map_minimal_data_gate.tex [48]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 18.
+[49
+
+] [50] [51]) (../gates/version5_parent_architecture_status_freeze_gate.tex [52]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 19.
+[53
+
+] [54] [55] [56]) (../gates/version5_modular_commutant_parent_correspondence_gate.tex [57]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 20.
+[58
+
+] [59] [60]) (../gates/version5_modular_ko6_m60_amalgamation_gate.tex [61]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 21.
+[62
+
+] [63] [64]) (../gates/version5_m300_hodge_curvature_hessian_gate.tex [65]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 22.
+[66
+
+] [67]) (../gates/version5_m300_coordinate_algebra_wellposedness_gate.tex [68]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 23.
+[69
+
+] [70]) (../gates/version5_affine_ko6_reference_corner_gate.tex [71]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 24.
+[72
+
+] [73] [74] [75]) (../gates/version5_sm_family_commutant_calculus_gate.tex [76]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 25.
+[77
+
+] [78]) (../gates/version5_graded_correspondence_superconnection_gate.tex [79]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 26.
+[80
+
+] [81] [82]) (../gates/version5_commuting_square_readout_gate.tex [83]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 27.
+[84
+
+] [85] [86]) (../gates/version5_sm_linking_corner_gate.tex [87]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 28.
+[88
+
+] [89]) (../gates/version5_rank_one_tangent_junk_gate.tex [90]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 29.
+[91
+
+] [92]) (../gates/version5_state_corner_curvature_readout_gate.tex [93]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 30.
+[94
+
+] [95]) (../gates/version5_morita_linking_parent_gate.tex [96]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 31.
+[97
+
+] [98]) (../gates/version5_physical_corner_connection_classification_gate.tex [99]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 32.
+[100
+
+] [101]) (../gates/version5_centered_connection_potential_gate.tex [102]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 33.
+[103
+
+] [104] [105]) (../gates/version5_h15_neutrino_degree_split_gate.tex [106]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 34.
+[107
+
+] [108]) (../gates/version5_h15_physical_oneform_bimodule_gate.tex [109]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 35.
+[110
+
+] [111]) (../gates/version5_h15_spectral_torsion_selector_gate.tex [112]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 36.
+[113
+
+] [114]) [115] [116
+
+] (../gates/version5_defect_transport_reframing_gate.tex
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 37.
+[117
+
+] [118] [119] [120] [121] [122]) (../gates/version5_local_defect_transfer_operator_gate.tex [123]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 38.
+[124
+
+] [125] [126] [127]) (../gates/version5_rank_one_tetrahedral_transfer_reflection_gate.tex [128]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 39.
+[129
+
+] [130] [131]) (../gates/version5_massless_holonomy_defect_index_gate.tex [132]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 40.
+[133
+
+] [134] [135]) (../gates/version5_holonomy_zero_mode_localization_gate.tex [136]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 41.
+[137
+
+] [138] [139]) (../gates/version5_defect_transport_status_freeze_gate.tex [140]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 42.
+[141
+
+] [142] [143]) (../gates/version5_h15_majorana_pairing_correspondence_gate.tex [144]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 43.
+[145
+
+] [146]) (../gates/version5_h15_fermionic_spectral_weinberg_measure_gate.tex [147] [148]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 44.
+[149
+
+] [150] [151]) (../gates/version5_order_four_resonant_loop_transport_gate.tex [152]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 45.
+[153
+
+] [154] [155]) (../gates/version5_self_consistent_internal_time_horizon_gate.tex [156]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 46.
+[157
+
+] [158] [159]) (../gates/version5_transition_primitive_scientific_language_gate.tex [160]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 47.
+[161
+
+] [162] [163]) (../gates/version5_self_generated_transition_defect_gate.tex [164] [165]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 48.
+[166
+
+] [167] [168]) (../gates/version5_holonomy_projector_defect_multiplicity_gate.tex [169]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 49.
+[170
+
+] [171] [172]) (../gates/version5_projective_hedgehog_point_defect_gate.tex [173]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 50.
+[174
+
+] [175] [176]) (../gates/version5_defect_transport_part_conclusion_gate.tex [177]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 51.
+[178
+
+] [179] [180{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) [181] [182
+
+] (./version5_post_conclusion_architecture_decision.tex
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 52.
+[183
+
+] [184] [185] [186] [187] [188] [189] [190]) (../gates/version5_su2_family_lift_h15_representation_gate.tex [191]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 53.
+[192
+
+] [193] [194]) (../gates/version5_spinh_orientation_family_locking_reopening_gate.tex [195]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 54.
+[196
+
+] [197]) [198] [199
+
+] (../gates/version5_hopf_fell_line_transition_lift_gate.tex
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 55.
+[200
+
+] [201] [202]) (../gates/version5_hopf_line_morita_orientation_functor_gate.tex [203]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 56.
+[204
+
+] [205] [206]) (../gates/version5_hopf_twisted_defect_superconnection_energy_index_gate.tex [207]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 57.
+[208
+
+] [209] [210] [211]) (../gates/version5_spatial_so3_superconnection_parent_trace_gate.tex [212]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 58.
+[213
+
+] [214] [215]) (../gates/version5_recent_superconnection_defect_literature_novelty_gate.tex [216]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 59.
+[217
+
+] [218] [219] [220]) (../gates/version5_hopf_pair_odd_core_extension_gate.tex [221]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 60.
+[222
+
+] [223] [224] [225]) (../gates/version5_one_seventh_k0_bridge_gate.tex [226]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 61.
+[227
+
+] [228]) (../gates/version5_one_seventh_boundary_transgression_literature_gate.tex [229]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 62.
+[230
+
+] [231] [232]) (../gates/version5_one_seventh_toeplitz_boundary_map_gate.tex [233]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 63.
+[234
+
+] [235]) (../gates/version5_real_toeplitz_ko6_parent_lift_gate.tex [236] [237]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 64.
+[238
+
+] [239]) (../gates/version5_real_toeplitz_kr_classification_gate.tex [240]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 65.
+[241
+
+] [242]) (../gates/version5_real_toeplitz_cross_tome_reuse_audit_gate.tex [243]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 66.
+[244
+
+] [245]) (../gates/version5_real_toeplitz_bott_comparison_map_gate.tex [246]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 67.
+[247
+
+] [248]) (../gates/version5_real_toeplitz_unbounded_parent_cycle_gate.tex [249]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 68.
+[250
+
+] [251]) (../gates/version5_real_toeplitz_degree_seven_symbol_gate.tex [252]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 69.
+[253
+
+] [254]) (../gates/version5_real_toeplitz_ko7_unitary_representative_gate.tex [255]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 70.
+[256
+
+]) (../gates/version5_toeplitz_parent_action_variational_gap_gate.tex [257]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 71.
+[258
+
+]) (../gates/version5_spatial_extension_derrick_balance_gate.tex [259]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 72.
+[260
+
+]) (../gates/version5_superconnection_skyrme_coefficient_gate.tex [261]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 73.
+[262
+
+]) (../gates/version5_projector_superconnection_common_scale_gate.tex [263]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 74.
+) (../gates/version5_fermionic_determinant_induced_skyrme_gate.tex [264
+
+]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 75.
+[265
+
+] [266]) (../gates/version5_topological_closure_deficit_gate.tex [267]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 76.
+[268
+
+] [269]) (../gates/version5_closure_deficit_induced_vacuum_response_gate.tex [270]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 77.
+[271
+
+] [272]) (../gates/version5_eta_wzw_real_pair_phase_gate.tex [273]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 78.
+[274
+
+] [275]) (../gates/version5_global_carrier_forced_nontrivial_sector_gate.tex [276]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 79.
+[277
+
+] [278]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [279]) (../gates/version5_spin_cover_defect_sphere_bridge_gate.tex [280]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 80.
+[281
+
+] [282] [283]) (../gates/version5_equivariant_boundary_sector_selection_gate.tex [284]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 81.
+[285
+
+] [286] [287]) [288] [289
+
+] (./version5_final_conclusion_and_next_program.tex
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 82.
+[290
+
+] [291] [292] [293] [294]) (./version5_standard_conclusion.tex [295] [296
+
+] [297] [298] [299] [300] [301] [302]) [303] (./tome5_s2t_parent_architecture.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
+ ***********
+Package rerunfilecheck Info: File `tome5_s2t_parent_architecture.out' has not changed.
+(rerunfilecheck)             Checksum: 817B09D72D3633B2C60AE5B8CDC2748E;191652.
+ ) 
+Here is how much of TeX's memory you used:
+ 20892 strings out of 467538
+ 341193 string characters out of 5419552
+ 755047 words of memory out of 8000000
+ 45640 multiletter control sequences out of 15000+600000
+ 683928 words of font info for 409 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,19n,79p,1026b,723s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2025/texmf-dist/fonts/
+type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on tome5_s2t_parent_architecture.pdf (319 pages, 1547717 bytes).
+PDF statistics:
+ 7421 PDF objects out of 7423 (max. 8388607)
+ 6967 compressed objects within 70 object streams
+ 3131 named destinations out of 3580 (max. 500000)
+ 84977 words of extra memory for PDF output out of 89155 (max. 10000000)
+

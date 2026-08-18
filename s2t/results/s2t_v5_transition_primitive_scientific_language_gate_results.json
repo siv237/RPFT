@@ -1,0 +1,97 @@
+{
+  "gate": "version5_transition_primitive_scientific_language_gate",
+  "anti_circle_boundary": {
+    "closed_earlier_candidate": "category of reductions among whole geometric, spectral and correlation readings",
+    "new_candidate": "local typed transition as the physical primitive",
+    "requires_inverse_spectral_reconstruction": false,
+    "same_as_closed_reduction_triangle": false
+  },
+  "project_native_transition_carrier": {
+    "left_corner": "M20(C)",
+    "right_corner": "M15(C)",
+    "transition_correspondence": "E=M20x15(C)",
+    "linking_algebra": "[[M20,E],[E*,M15]]=M35(C)",
+    "interpretation": "off-diagonal elements are typed transitions; their opposite compositions generate diagonal observables"
+  },
+  "composition_proxy_audit": {
+    "proxy_correspondence": "M3x2(C)",
+    "left_product": "E E*=M3(C)",
+    "left_span_rank": 9,
+    "left_corner_dimension": 9,
+    "right_product": "E* E=M2(C)",
+    "right_span_rank": 4,
+    "right_corner_dimension": 4,
+    "diagonal_corners_generated_by_transition_composition": true
+  },
+  "four_step_character_inheritance": {
+    "step_order": 4,
+    "eigencharacters": [
+      "1",
+      "I",
+      "-1",
+      "-I"
+    ],
+    "projector_ranks": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "projectors_idempotent": true,
+    "projectors_pairwise_orthogonal": true,
+    "projectors_resolve_identity": true,
+    "interpretation": "observable sectors may inherit characters, signs and orientations of a primitive cycle rather than its literal geometric shape"
+  },
+  "holonomy_audit": {
+    "edge_phases": [
+      "1",
+      "I",
+      "1",
+      "1"
+    ],
+    "local_gauge_phases": [
+      "1",
+      "-1",
+      "I",
+      "-I"
+    ],
+    "transformed_edge_phases": [
+      "-1",
+      "1",
+      "-1",
+      "I"
+    ],
+    "loop_holonomy": "I",
+    "transformed_loop_holonomy": "I",
+    "gauge_invariant": true,
+    "candidate_defect_identity": "conjugacy class, spectrum or index of closed-path transport"
+  },
+  "scientific_language_stack": {
+    "C_star_correspondences_and_Morita": "type and compose arrows",
+    "quivers_and_groupoids": "record sources, targets, paths and holonomy",
+    "quantum_walks_and_QCA": "supply local reversible update and continuum tests",
+    "holonomy_and_index_theory": "distinguish protected defects from arbitrary profiles",
+    "categorical_process_theory": "provides compositional grammar but not a unique dynamics",
+    "causal_sets_spin_foams_tensor_networks": "deferred until the existing local carrier passes a nonlinear defect test"
+  },
+  "existing_project_certificates": {
+    "Morita_transition_carrier": true,
+    "local_unitary_transfer": "pass",
+    "Dirac_continuum_limit": "pass",
+    "common_light_cone": true,
+    "order_four_cycle": true,
+    "nontrivial_holonomy_tools": true,
+    "localized_protected_moving_defect": false
+  },
+  "verdict": {
+    "scientific_languages_for_transition_ontology_exist": true,
+    "all_minimal_language_layers_have_project_representatives": true,
+    "states_as_composites_of_transitions_algebraically_supported": true,
+    "inheritance_of_similarity_formalized_as_representation_character": true,
+    "unique_fundamental_update_rule_derived": false,
+    "standard_model_particle_spectrum_derived": false,
+    "physical_closure": false,
+    "status": "The transition ontology can be expressed without metaphor by combining Morita correspondences, path/groupoid composition, local unitary quantum dynamics and holonomy/index invariants. The project already contains representatives of all four layers, but it has not derived the nonlinear update rule that creates and transports a protected defect."
+  },
+  "next_gate": "version5_defect_transport_part_conclusion_gate"
+}

@@ -1,0 +1,63 @@
+{
+  "gate": "version5_spinh_orientation_family_locking_reopening_gate",
+  "mathematical_definition": {
+    "group": "Spin^h(n)=(Spin(n) x SU(2))/diagonal_Z2",
+    "descent_condition": "the pair (-1,-1) must act trivially",
+    "canonical_auxiliary_bundle": "SO(3)",
+    "topological_condition": "w2(Q)=w2(TM)"
+  },
+  "single_orientation_doublet_test": {
+    "carrier": "C2_orientation",
+    "commutant_dimension_of_fundamental_SU2": 1,
+    "second_nontrivial_commuting_SU2_exists": false,
+    "can_host_independent_spin_and_family_actions": false,
+    "reason": "the fundamental SU(2) action on C2 is irreducible and its commutant is scalar"
+  },
+  "minimal_valid_product_representation": {
+    "carrier": "C2_spin tensor C2_family",
+    "complex_dimension": 4,
+    "all_cross_commutator_norms": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "spin_center_action": "-I4",
+    "family_center_action": "-I4",
+    "diagonal_center_action": "+I4",
+    "descends_to_Spinh": true
+  },
+  "state_and_trace_budget": {
+    "Morita_internal_dimension": 300,
+    "current_orientation_walk_dimension": 600,
+    "minimal_Spinh_walk_dimension": 1200,
+    "extra_internal_doublet_required": true,
+    "contained_in_H15_M35": false,
+    "existing_M35_trace_normalizes_it": false
+  },
+  "topology_audit": {
+    "current_carrier_has_spin_structures": true,
+    "Spinh_needed_to_repair_tangent_spin_obstruction": false,
+    "projective_order_parameter_alone_specifies_auxiliary_SO3_bundle": false,
+    "required_equality_w2_Q_equals_w2_TM_derived": false
+  },
+  "anomaly_audit": {
+    "universal_H15_half_isospin_doublets": 15,
+    "odd_doublet_obstruction_removed_by_relabeling_as_Spinh": false,
+    "fresh_bordism_and_global_anomaly_audit_required": true
+  },
+  "verdict": {
+    "existing_orientation_C2_is_a_hidden_Spinh_completion": false,
+    "Spinh_is_a_precise_language_for_a_new_architecture": true,
+    "reopening_without_new_module": false,
+    "status": "fail_single_doublet_locking",
+    "version5_route": "remains_closed",
+    "possible_new_version": "requires an explicit independent C2_family, an extended trace, a derived SO3 bundle, and anomaly cancellation"
+  },
+  "next_gate": null
+}

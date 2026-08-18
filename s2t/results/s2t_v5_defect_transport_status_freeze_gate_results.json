@@ -1,0 +1,140 @@
+{
+  "gate": "version5_defect_transport_status_freeze_gate",
+  "frozen_positive_results": {
+    "current_parent": "H15 on M20x15(C) inside M35(C)",
+    "trace_weights": [
+      "4/7",
+      "3/7"
+    ],
+    "massless_transport": "Dirac continuum retained",
+    "C3_boundary_branches": [
+      "-1/3",
+      "0",
+      "+1/3"
+    ],
+    "single_left_chiral_zero_level": 1,
+    "conditional_real_mod2_parity": 1
+  },
+  "architecture_mismatch": {
+    "old_vortex_vertex": "Phi N_c N_c",
+    "old_vortex_requires_N_c": true,
+    "N_c_present_in_H15": false,
+    "H15_neutrino_route": "degree-five Weinberg operator or another higher-degree Majorana/defect correspondence",
+    "H16_change": {
+      "carrier": "M20x15(C) -> M20x16(C)",
+      "carrier_dimension": "300 -> 320",
+      "linking_algebra": "M35(C) -> M36(C)",
+      "trace_weights": "(4/7,3/7) -> (5/9,4/9)"
+    },
+    "hidden_reuse_of_BL_vortex_inside_H15_allowed": false
+  },
+  "candidate_ledger": {
+    "requirements": [
+      "compatible_with_current_M35_trace",
+      "mandatory_root_assignment",
+      "correct_charge_two_pairing_type",
+      "invariant_Majorana_vertex",
+      "parent_derived_kinetic_and_potential",
+      "localized_variational_saddle"
+    ],
+    "candidates": [
+      {
+        "candidate": "current_H15_M35_transport",
+        "passes": {
+          "compatible_with_current_M35_trace": true,
+          "mandatory_root_assignment": false,
+          "correct_charge_two_pairing_type": false,
+          "invariant_Majorana_vertex": false,
+          "parent_derived_kinetic_and_potential": false,
+          "localized_variational_saddle": false
+        },
+        "finding": "It supplies the left chiral boundary zero and the 4/7,3/7 trace weights, but contains no nu_R and no degree-five Majorana correspondence.",
+        "pass_count": 1,
+        "all_requirements_pass": false
+      },
+      {
+        "candidate": "H16_with_U1_B_minus_L",
+        "passes": {
+          "compatible_with_current_M35_trace": false,
+          "mandatory_root_assignment": true,
+          "correct_charge_two_pairing_type": true,
+          "invariant_Majorana_vertex": true,
+          "parent_derived_kinetic_and_potential": false,
+          "localized_variational_saddle": false
+        },
+        "finding": "It supplies N_c, the root charge and Phi N_c N_c, but changes the carrier to M20x16, the linking algebra to M36 and the trace weights to 5/9,4/9; its nonuniform condensate remains conditional.",
+        "pass_count": 3,
+        "all_requirements_pass": false
+      },
+      {
+        "candidate": "family_moment_map_quiver",
+        "passes": {
+          "compatible_with_current_M35_trace": false,
+          "mandatory_root_assignment": false,
+          "correct_charge_two_pairing_type": true,
+          "invariant_Majorana_vertex": false,
+          "parent_derived_kinetic_and_potential": false,
+          "localized_variational_saddle": false
+        },
+        "finding": "The quiver fixes Y=Phi I3 and the desired algebraic square, but it is a separate 18-dimensional KO6 geometry; the ordinary spectral quartic has the wrong mixed sign.",
+        "pass_count": 1,
+        "all_requirements_pass": false
+      },
+      {
+        "candidate": "relative_auxiliary_or_HS_completion",
+        "passes": {
+          "compatible_with_current_M35_trace": false,
+          "mandatory_root_assignment": false,
+          "correct_charge_two_pairing_type": true,
+          "invariant_Majorana_vertex": false,
+          "parent_derived_kinetic_and_potential": false,
+          "localized_variational_saddle": false
+        },
+        "finding": "The real auxiliary field has the wrong sign, the degree-two middle module is removed by junk, and the Gaussian Pfaffian does not derive the imaginary Hubbard-Stratonovich contour.",
+        "pass_count": 1,
+        "all_requirements_pass": false
+      },
+      {
+        "candidate": "H15_degree_five_Weinberg_or_defect_correspondence",
+        "passes": {
+          "compatible_with_current_M35_trace": true,
+          "mandatory_root_assignment": false,
+          "correct_charge_two_pairing_type": false,
+          "invariant_Majorana_vertex": false,
+          "parent_derived_kinetic_and_potential": false,
+          "localized_variational_saddle": false
+        },
+        "finding": "This is the representation-compatible open target, not an existing construction: the gauge-invariant degree-five operator is allowed, but its family tensor, differential degree, normalization and defect saddle are not derived.",
+        "pass_count": 1,
+        "all_requirements_pass": false
+      }
+    ],
+    "complete_candidate_count": 0
+  },
+  "missing_parent_object": {
+    "not_merely": "one more scalar potential or one more radial profile",
+    "H15_minimal_type": "a gauge-equivariant higher-degree Majorana pairing correspondence on Sym^2(L_L tensor H), compatible with the M35 trace and the C3 invariant family line",
+    "required_components": [
+      "a precisely represented charge-minus-two or lepton-number-minus-two pairing module/section",
+      "a covariant derivative including the relevant root or defect sector",
+      "a symmetric family pairing map fixed before neutrino data",
+      "one parent trace or measure fixing kinetic norm, potential and fermionic coupling",
+      "a variational nonuniform saddle and its transverse localization length"
+    ]
+  },
+  "architecture_fork": {
+    "branch_A_preserve_H15": "construct and kill-test the higher-degree Majorana pairing correspondence without adding nu_R",
+    "branch_B_replace_by_H16": "register a new M36/B-L parent and repeat all trace, measure and normalization gates",
+    "selected_next_by_minimal_change_rule": "branch_A_preserve_H15",
+    "reason": "H15, M35 and the 4/7,3/7 weights are already derived, whereas H16 changes the parent architecture and adds normalization-sensitive gauge data."
+  },
+  "verdict": {
+    "defect_transport_part_positive_kinematics": "retained",
+    "localized_neutrino_defect": "not_derived",
+    "old_BL_vortex_is_a_completion_of_current_H15": false,
+    "current_field_content_exhausted_for_direct_boundary_to_core_bridge": true,
+    "physical_closure": false,
+    "status": "Part II is frozen as a kinematic and topological transport result. The old Phi N_c N_c vortex belongs to H16/B-L, not to the current H15/M35 parent. The minimal compatible reopening target is a higher-degree H15 Majorana pairing correspondence."
+  },
+  "next_gate": "version5_h15_majorana_pairing_correspondence_gate"
+}

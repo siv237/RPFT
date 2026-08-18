@@ -1,0 +1,96 @@
+{
+  "date": "2026-08-16",
+  "gate": "version5_real_scalar_flip_twisted_ko6_gate",
+  "algebra": "R0_plus direct_sum R0_minus direct_sum M3(R)_G direct_sum C_2",
+  "twist": "swap R0_plus and R0_minus",
+  "representation": {
+    "complex_Hilbert_dimension": 18,
+    "real_algebra_dimension": 13,
+    "real_representation_rank": 13,
+    "faithful": true,
+    "new_fermion_dimensions": 0
+  },
+  "order_conditions": {
+    "maximum_zero_order_residual": 0.0,
+    "maximum_twisted_first_order_residual": 0.0,
+    "maximum_untwisted_first_order_residual": 5.375988920532462,
+    "twisted_first_order_pass": true,
+    "ordinary_first_order_on_duplicated_algebra": false
+  },
+  "twisted_one_forms": {
+    "complex_span_rank": 20,
+    "raw_block_support": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        4
+      ]
+    ],
+    "J_completed_block_support": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        4
+      ]
+    ],
+    "diagonal_blocks": false,
+    "endpoint_length_two_blocks": false,
+    "graph_type_after_self_adjoint_fluctuation": "same nearest-neighbour odd chain"
+  },
+  "quartic_sign": {
+    "ordinary_radial": "6*r**4 + 12*r**2*rho**2 + 6*rho**4",
+    "target_radial": "r**4 - 2*r**2*rho**2 + rho**4",
+    "ordinary_mixed_coefficient": 12,
+    "target_mixed_coefficient": -2,
+    "matrix_positive_cross_witness": "244",
+    "matrix_directed_target_witness": "2",
+    "sign_repaired": false
+  },
+  "verdict": {
+    "faithful_twisted_KO6_representation": "pass",
+    "twisted_first_order": "pass",
+    "new_curvature_support": "absent",
+    "ordinary_spectral_moment_map_sign": "fail",
+    "real_scalar_flip_with_ordinary_trace": "closed_dynamically",
+    "physical_closure": false
+  },
+  "next_gate": "version5_flip_twisted_trace_positivity_gate"
+}

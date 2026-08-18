@@ -1,0 +1,165 @@
+{
+  "date": "2026-08-15",
+  "gate": "version5_finite_geometry_complexity_bound_gate",
+  "budget": {
+    "max_summands": 5,
+    "matrix_size_max": 4,
+    "max_particle_nodes": 5,
+    "max_edges": 6,
+    "max_hilbert_dimension": 64,
+    "max_cycle_rank": 1,
+    "raw_algebra_multisets": 6187
+  },
+  "graph_counts": {
+    "3": 1,
+    "4": 3,
+    "5": 5
+  },
+  "graphs": {
+    "3": [
+      {
+        "vertices": 3,
+        "edges": 2,
+        "degree_sequence": [
+          2,
+          1,
+          1
+        ],
+        "cycle_rank": 0,
+        "graph6": "Bo"
+      }
+    ],
+    "4": [
+      {
+        "vertices": 4,
+        "edges": 3,
+        "degree_sequence": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "cycle_rank": 0,
+        "graph6": "CF"
+      },
+      {
+        "vertices": 4,
+        "edges": 3,
+        "degree_sequence": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "cycle_rank": 0,
+        "graph6": "Ck"
+      },
+      {
+        "vertices": 4,
+        "edges": 4,
+        "degree_sequence": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "cycle_rank": 1,
+        "graph6": "Cl"
+      }
+    ],
+    "5": [
+      {
+        "vertices": 5,
+        "edges": 4,
+        "degree_sequence": [
+          4,
+          1,
+          1,
+          1,
+          1
+        ],
+        "cycle_rank": 0,
+        "graph6": "D?{"
+      },
+      {
+        "vertices": 5,
+        "edges": 4,
+        "degree_sequence": [
+          3,
+          2,
+          1,
+          1,
+          1
+        ],
+        "cycle_rank": 0,
+        "graph6": "DBc"
+      },
+      {
+        "vertices": 5,
+        "edges": 4,
+        "degree_sequence": [
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "cycle_rank": 0,
+        "graph6": "Dh_"
+      },
+      {
+        "vertices": 5,
+        "edges": 5,
+        "degree_sequence": [
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "cycle_rank": 1,
+        "graph6": "DbW"
+      },
+      {
+        "vertices": 5,
+        "edges": 6,
+        "degree_sequence": [
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "cycle_rank": 2,
+        "graph6": "D]o"
+      }
+    ]
+  },
+  "provisional_survivor": {
+    "vertices": 5,
+    "edges": 5,
+    "degree_sequence": [
+      3,
+      2,
+      2,
+      2,
+      1
+    ],
+    "cycle_rank": 1,
+    "graph6": "DbW",
+    "name": "K_2,3 minus one edge; C4 with pendant leaf"
+  },
+  "selector_algebra_menu": [
+    "M3(R)",
+    "M3(C)"
+  ],
+  "verdict": {
+    "finite_budget": true,
+    "graph_enumeration": true,
+    "unique_graph_only_survivor": true,
+    "selector_function": "open_until_blockwise_first_order_test",
+    "finite_geometry_exists": false,
+    "physical_closure": false
+  },
+  "next_gate": "version5_real_selector_leaf_ko6_gate"
+}

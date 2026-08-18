@@ -17,6 +17,7 @@ for doc in \
   tome2_s2t_spectral_closure \
   tome3_s2t_parent_action \
   tome4_s2t_observed_reconstruction \
+  tome5_s2t_parent_architecture \
   toe_ugsm_unified_shadow_paper
 do
   latexmk -cd -pdf -interaction=nonstopmode -halt-on-error "s2t/docs/${doc}.tex"
@@ -31,6 +32,7 @@ for doc in \
   tome2_s2t_spectral_closure \
   tome3_s2t_parent_action \
   tome4_s2t_observed_reconstruction \
+  tome5_s2t_parent_architecture \
   toe_ugsm_unified_shadow_paper
 do
   latexmk -cd -C "s2t/docs/${doc}.tex"

@@ -1,0 +1,58 @@
+{
+  "gate": "version5_eta_wzw_real_pair_phase_gate",
+  "degree_audit": {
+    "loop_domain": "S1",
+    "cubic_WZW_form_on_S1": 0,
+    "native_loop_invariant": "first odd Chern character / winding",
+    "spatial_Bott_domain": "S3"
+  },
+  "oriented_charges": {
+    "winding": [
+      15,
+      -15
+    ],
+    "Bott_three_charge": [
+      15,
+      -15
+    ],
+    "total_oriented_charge": 0
+  },
+  "complex_determinant_phase": {
+    "integer_level": 1,
+    "plus_phase": [
+      1.0,
+      -1.0779367755043061e-14
+    ],
+    "minus_phase": [
+      1.0,
+      1.0779367755043061e-14
+    ],
+    "pair_phase": [
+      1.0,
+      0.0
+    ],
+    "sector_15_distinguished_from_zero": false,
+    "fractional_level_derived": false
+  },
+  "pfaffian_parity": {
+    "conditional_reduced_plus": -1,
+    "conditional_reduced_minus": -1,
+    "full_real_pair": 1,
+    "real_skew_adjoint_family_constructed": false,
+    "pfaffian_line_orientation_derived": false,
+    "single_reality_orbit_measure_derived": false
+  },
+  "project_cross_audit": {
+    "version3_pfaffian_half_count_reused": true,
+    "version4_full_KO6_phase_cancellation_reused": true,
+    "version4_determinant_line_inflow_no_go_reused": true,
+    "topological_closure_defect_preserved": true
+  },
+  "verdict": {
+    "eta_WZW_selects_nonzero_sector": false,
+    "conditional_oriented_parity_witness": true,
+    "full_real_measure_phase": "+1",
+    "physical_closure": false,
+    "next_gate": "version5_global_carrier_forced_nontrivial_sector_gate"
+  }
+}

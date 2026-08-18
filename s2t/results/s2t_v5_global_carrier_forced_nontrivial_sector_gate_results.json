@@ -1,0 +1,105 @@
+{
+  "gate": "version5_global_carrier_forced_nontrivial_sector_gate",
+  "circle_bundle_classification": {
+    "base": "S2",
+    "classification_group": "H2(S2,Z) = Z",
+    "boundary_map": "multiplication by n=c1",
+    "sample_carriers": [
+      {
+        "chern_number": -4,
+        "fundamental_group": "Z/4Z",
+        "total_space": "L(4,1)"
+      },
+      {
+        "chern_number": -3,
+        "fundamental_group": "Z/3Z",
+        "total_space": "L(3,1)"
+      },
+      {
+        "chern_number": -2,
+        "fundamental_group": "Z/2Z",
+        "total_space": "RP3 = L(2,1)"
+      },
+      {
+        "chern_number": -1,
+        "fundamental_group": "0",
+        "total_space": "S3 = L(1,1)"
+      },
+      {
+        "chern_number": 0,
+        "fundamental_group": "Z",
+        "total_space": "S2 x S1"
+      },
+      {
+        "chern_number": 1,
+        "fundamental_group": "0",
+        "total_space": "S3 = L(1,1)"
+      },
+      {
+        "chern_number": 2,
+        "fundamental_group": "Z/2Z",
+        "total_space": "RP3 = L(2,1)"
+      },
+      {
+        "chern_number": 3,
+        "fundamental_group": "Z/3Z",
+        "total_space": "L(3,1)"
+      },
+      {
+        "chern_number": 4,
+        "fundamental_group": "Z/4Z",
+        "total_space": "L(4,1)"
+      }
+    ],
+    "S3_forces_classes": [
+      -1,
+      1
+    ],
+    "RP3_forces_classes": [
+      -2,
+      2
+    ],
+    "trivial_class_total_space": "S2 x S1"
+  },
+  "coefficient_lift": {
+    "coefficient_rank": 15,
+    "ambient_rank": 105,
+    "S3_oriented_charges": [
+      -15,
+      15
+    ],
+    "minimal_positive_defect_weight": 0.14285714285714285,
+    "zero_class_charge": 0,
+    "RP3_oriented_charges": [
+      -30,
+      30
+    ]
+  },
+  "morita_audit": {
+    "degree_E": 1,
+    "degree_E_star": -1,
+    "selects_L_versus_dual_after_L_is_fixed": true,
+    "trivial_line_respects_composition": true,
+    "selects_chern_magnitude": false
+  },
+  "project_cross_audit": {
+    "spin3_carrier_present_in_background": true,
+    "rp3_vector_quotient_present_in_background": true,
+    "projective_defect_target": "RP2",
+    "oriented_defect_lift_to_S2_derived": false,
+    "defect_S2_identified_with_Spin3_over_Spin2": false,
+    "physical_phase_bundle_identified_with_spin_frame_bundle": false,
+    "spatial_SO3_derived_from_M35_trace": false
+  },
+  "verdict": {
+    "topological_theorem": "PASS",
+    "S3_carrier_excludes_zero_sector": true,
+    "current_parent_proves_S3_is_physical_defect_carrier": false,
+    "current_version_excludes_zero_sector": false,
+    "conditional_sector_if_bridge_passes": [
+      -15,
+      15
+    ],
+    "next_gate": "version5_spin_cover_defect_sphere_bridge_gate"
+  }
+}

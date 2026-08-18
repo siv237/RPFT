@@ -1,0 +1,71 @@
+{
+  "gate": "version5_real_toeplitz_cross_tome_reuse_audit_gate",
+  "scope": {
+    "tomes_and_live_gates": [
+      "III",
+      "IV",
+      "V"
+    ],
+    "strict_rpft_archive_checked": true,
+    "explicit_Cl06_index_cycle_found": false
+  },
+  "evidence_matrix": {
+    "version3_real_bimodule_square": {
+      "proved": "KO6 requires two conjugate copies with opposite grading",
+      "reusable": "exchange J and grading skeleton",
+      "does_not_prove": "Fredholm or Clifford index"
+    },
+    "version3_orbit_measure_pfaffian": {
+      "proved": "bosonic full trace and fermionic Pfaffian half-count differ",
+      "reusable": "trace cancellation is not a K-class test",
+      "does_not_prove": "integer Real index"
+    },
+    "version4_pfaffian_eta_orientation": {
+      "proved": "oriented reduced signs cancel in the full J-paired Pfaffian",
+      "reusable": "separate functional-measure phase from KO class",
+      "does_not_prove": "triviality of exchange Real class"
+    },
+    "version5_oriented_height_hodge": {
+      "proved": "KO6 exchange does not select an orientation sign",
+      "reusable": "sign must come from Hopf/Toeplitz orientation data",
+      "does_not_prove": "failure after an orientation is already fixed"
+    },
+    "version5_affine_ko6_reference_corner": {
+      "proved": "explicit J d J^-1=d* exchange completion exists",
+      "reusable": "finite algebraic model of the same exchange pattern",
+      "does_not_prove": "nonzero index in finite dimension"
+    },
+    "strict_rpft_spectral_flow": {
+      "proved": "the archived theta:0-to-pi family has spectral flow zero",
+      "reusable": "negative control against importing the old pi argument",
+      "does_not_prove": "the coefficient Toeplitz boundary index"
+    }
+  },
+  "reusable_lemmas": [
+    "J exchanges conjugate copies",
+    "the conjugate copy has opposite grading",
+    "J d J^-1=d* is already an exact project pattern",
+    "full trace or Pfaffian cancellation is not a KO-class computation",
+    "orientation must be supplied by the Hopf/Toeplitz symbol, not by J alone"
+  ],
+  "missing_lemmas": [
+    "graded Clifford convention for degree six",
+    "explicit real-to-complex comparison map",
+    "proof that the KO6 generator maps to the oriented pair (-1,+1)",
+    "coefficient multiplication by rank(q0)=15 inside the real boundary map"
+  ],
+  "architectural_consequence": {
+    "new_physical_particle_antiparticle_sector_needed": false,
+    "new_finite_KO6_doubling_needed": false,
+    "analytic_relative_KKO_cycle_needed": true,
+    "old_rpft_zero_spectral_flow_can_supply_index": false,
+    "candidate_weight": 0.14285714285714285
+  },
+  "verdict": {
+    "retrospective_review_changes_next_step": true,
+    "exchange_skeleton_already_proved": true,
+    "integer_class_already_proved": false,
+    "next_gate": "version5_real_toeplitz_bott_comparison_map_gate",
+    "stop_test": "comparison image must be anti-diagonal oriented pair, not diagonal cancellation"
+  }
+}

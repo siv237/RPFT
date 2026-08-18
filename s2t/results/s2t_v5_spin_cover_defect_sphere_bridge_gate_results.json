@@ -1,0 +1,66 @@
+{
+  "gate": "version5_spin_cover_defect_sphere_bridge_gate",
+  "homogeneous_space_bridge": {
+    "spatial_direction_sphere": "SO(3)/SO(2) = S2",
+    "projective_axis_space": "SO(3)/O(2) = RP2",
+    "stabilizer_inclusion": "SO(2) subset O(2)",
+    "canonical_map": "q(n)=[n]",
+    "unique_SO3_equivariant_map": true,
+    "constant_projector_is_SO3_equivariant": false,
+    "generator_equivariance_checks": [
+      "Rx",
+      "Rz"
+    ]
+  },
+  "covering_lift": {
+    "universal_cover": "S2 -> RP2",
+    "domain_is_simply_connected": true,
+    "number_of_global_lifts": 2,
+    "lifts": [
+      "n",
+      "-n"
+    ],
+    "degree_densities": [
+      "sin(theta)",
+      "-sin(theta)"
+    ],
+    "degrees": [
+      1,
+      -1
+    ]
+  },
+  "hopf_lines": {
+    "Chern_numbers": [
+      1,
+      -1
+    ],
+    "dual_pair": true,
+    "principal_carrier_total_space": "S3",
+    "coefficient_rank": 15,
+    "coefficient_classes": [
+      15,
+      -15
+    ],
+    "normalized_positive_weight": 0.14285714285714285
+  },
+  "project_cross_audit": {
+    "projective_hedgehog_already_constructed": true,
+    "previous_hedgehog_charge": 1,
+    "morita_degrees_pair_the_two_lifts": true,
+    "Real_structure_exchanges_the_two_lifts": true,
+    "new_family_SU2_doublet_required": false,
+    "finite_energy_derived": false
+  },
+  "logical_scope": {
+    "spin_cover_bridge_for_equivariant_hedgehog": "PASS",
+    "point_center_derived_from_parent_action": false,
+    "equivariant_boundary_condition_derived_from_parent_action": false,
+    "homogeneous_zero_vacuum_excluded": false,
+    "matter_existence_proved_non_circularly": false
+  },
+  "verdict": {
+    "bridge_closed": true,
+    "global_nonzero_sector_forced_unconditionally": false,
+    "next_gate": "version5_equivariant_boundary_sector_selection_gate"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "date": "2026-08-15",
+  "gate": "version5_carrier_measure_freeze_gate",
+  "primary_source": {
+    "path": "s2t/17705966/ТОЕ 6.5.pdf",
+    "sha256": "572accef2e3dc061667765271f06a412327a74311465f8122cb38d8d448ff835",
+    "pages": 6,
+    "extracted_characters_in_retrospective_audit": 11275,
+    "status": "proof_roadmap_not_frozen_parent_measure",
+    "open_source_variables": [
+      "T_eff",
+      "cutoff function f",
+      "regulator scale sigma",
+      "mode-number constraint and multiplier mu",
+      "positive spectral-density function space",
+      "modified heat-kernel density",
+      "parametric ansatz and background"
+    ]
+  },
+  "exact_witnesses": {
+    "one_kernel_time": 0.10673403995964642,
+    "scalar_bare_winner": "S2xS2",
+    "scalar_gibbs_winner": "S4",
+    "Dirac_bare_winner": "S4",
+    "Dirac_gibbs_winner": "S2xS2",
+    "delta_integral_R": 11.296909390332786,
+    "delta_integral_Weyl2": -842.2062422262918,
+    "delta_integral_Euler": -631.6546816697189,
+    "gaussian_crossing_time": 0.1241531699357692,
+    "gaussian_cutoff_warning": "this_is_a_compatibility_test_not_an_independent_scale_derivation"
+  },
+  "requirements": {
+    "trace_class_logarithmic_generator": {
+      "pass": true,
+      "reason": "H_C=-tau^-1 log C is well defined on the support"
+    },
+    "normalized_state_at_fixed_carrier": {
+      "pass": true,
+      "reason": "Gibbs variation fixes rho=C/Tr C for fixed H_C"
+    },
+    "entropy_coefficient_source_derived": {
+      "pass": false,
+      "reason": "TOE 6.5 treats T_eff as a roadmap variable"
+    },
+    "carrier_prior_measure_defined": {
+      "pass": false,
+      "reason": "TOE 6.5 varies spectral density but gives no measure on metrics/topologies"
+    },
+    "unique_primary_semantics": {
+      "pass": false,
+      "reason": "outer-log Gibbs and positive bare trace have opposite carrier orderings"
+    },
+    "finite_curvature_topology_weights_derived": {
+      "pass": false,
+      "reason": "finite Einstein, Weyl-squared and Euler terms reverse cross-topology ordering"
+    },
+    "scalar_nonminimal_couplings_derived": {
+      "pass": false,
+      "reason": "not fixed by the source functional"
+    },
+    "field_ghost_BV_measure_frozen": {
+      "pass": false,
+      "reason": "the full scalar-vector-ghost-Dirac measure is absent"
+    },
+    "massive_vector_completion_derived": {
+      "pass": false,
+      "reason": "Proca/Stueckelberg/Higgs origin is external"
+    },
+    "joint_off_shell_hessian_defined": {
+      "pass": false,
+      "reason": "the functional and measure are not uniquely frozen"
+    },
+    "observed_inputs_used": {
+      "pass": true,
+      "reason": "no masses, couplings or mixing data enter this gate"
+    }
+  },
+  "summary_counts": {
+    "parent_requirements": 10,
+    "passed": 2,
+    "failed": 8
+  },
+  "verdict": {
+    "state_normalization": "pass",
+    "parent_measure": "fail",
+    "current_carrier_first_architecture": "closed_before_spectral_sums_and_phenomenology",
+    "mathematical_architecture_passes": 0,
+    "physical_closures": 0
+  },
+  "reopening_requires": [
+    "an a priori measure on metrics and topologies",
+    "derived T_eff, tau, Lambda and their relation",
+    "full bare and renormalized curvature couplings",
+    "field/BV measure and massive-vector origin",
+    "one functional or a derived hierarchy with no free relative weight"
+  ],
+  "next_gate": "version5_boundary_parent_trace_freeze_gate"
+}

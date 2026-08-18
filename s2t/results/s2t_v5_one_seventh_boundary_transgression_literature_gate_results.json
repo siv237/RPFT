@@ -1,0 +1,66 @@
+{
+  "gate": "version5_one_seventh_boundary_transgression_literature_gate",
+  "literature_sources": [
+    {
+      "arxiv": "1911.05823",
+      "role": "Toeplitz extension, winding-index map, operator K-theory review",
+      "directly_transferable": true
+    },
+    {
+      "arxiv": "1604.02337",
+      "role": "boundary maps computed by Kasparov product with extension class",
+      "directly_transferable": true
+    },
+    {
+      "arxiv": "0711.3028",
+      "role": "mapping cone relates odd and even index pairings with APS data",
+      "directly_transferable": "only_after_inclusion_and_Kasparov_module_are_given"
+    },
+    {
+      "arxiv": "1605.08593",
+      "role": "mapping-cone/Cuntz-Pimsner exact sequences and partial-isometry classes",
+      "directly_transferable": "requires_a_self_correspondence_or_scalar_extension"
+    },
+    {
+      "arxiv": "2512.08304v3",
+      "role": "explicit Milnor connecting homomorphism for Hopf-Galois clutching",
+      "directly_transferable": "class_level_only_without_project_specific_pullback"
+    }
+  ],
+  "toeplitz_candidate": {
+    "extension": "0 -> K tensor M105 -> T tensor M105 -> C(S1) tensor M105 -> 0",
+    "boundary_unitary": "u_H with winding +1",
+    "coefficient_projection": "q0=p15 tensor P0",
+    "coefficient_projection_rank": 15,
+    "boundary_formula": "delta_T([u_H] external_product [q0])=+/-[q0]",
+    "image_absolute_rank": 15,
+    "normalized_trace_absolute_value": 0.14285714285714285,
+    "matches_stable_corner_rank": true,
+    "sign_fixed_by_orientation_convention": true
+  },
+  "what_is_canonical": {
+    "K_theory_boundary_map_once_extension_is_fixed": true,
+    "image_K0_class_once_u_H_and_q0_are_fixed": true,
+    "individual_partial_isometry_representative": false,
+    "physical_energy_or_Dirac_operator": false
+  },
+  "project_gap": {
+    "Hopf_clutching_unitary_available": true,
+    "coefficient_projection_q0_available": true,
+    "Toeplitz_or_mapping_cone_extension_inside_current_M35_parent": false,
+    "Hardy_polarization_or_disk_filling_derived_from_parent": false,
+    "canonical_rank5_subprojection_inside_H20_derived": false,
+    "Cuntz_Pimsner_self_correspondence_specified": false,
+    "project_specific_Milnor_pullback_specified": false
+  },
+  "verdict": {
+    "literature_contains_the_general_mechanism": true,
+    "class_level_transgression_candidate_is_exact": true,
+    "mechanism_is_novel_in_itself": false,
+    "project_specific_input": "derive_the_extension_class_from_Hopf_Morita_parent",
+    "operator_level_closure": false,
+    "physical_closure": false,
+    "status": "exact_Toeplitz_class_formula_without_derived_parent_extension"
+  },
+  "next_gate": "version5_one_seventh_toeplitz_boundary_map_gate"
+}

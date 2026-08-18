@@ -118,3 +118,13 @@ Recommended actions: `setup`, `ingest`, `query`, `synthesis`, `lint`, `maintenan
 ## Current Research Domain
 
 The current workspace appears to study an RPFT/UGSM/TOE cluster centered on geometry, topology, spectral action, holonomy, operator attribution, and a possible unified spectral-correlational source. Treat this as the initial domain model until the user revises it.
+
+## Язык проекта
+
+Основной язык содержательных страниц вики и русскоязычных трактатов ---
+русский. Английское написание сохраняется только для имён файлов,
+программных идентификаторов, библиографических названий и общепринятых
+международных сокращений. При наличии русского научного термина следует
+писать «след», «носитель», «колчан», «отображение момента», «условие первого
+порядка», «скручивание», «удвоение», «граничный сектор», а не смешивать
+русскую фразу с английским эквивалентом.

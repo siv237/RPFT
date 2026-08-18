@@ -1,0 +1,95 @@
+{
+  "gate": "version5_h15_fermionic_spectral_weinberg_measure_gate",
+  "input_certificates": {
+    "H15_zero_branch_family_direction": "P0 fixed",
+    "M35_zero_line_trace_weight": "1/7",
+    "right_handed_neutrino_present": false,
+    "charged_Yukawa_operator_uniquely_derived": false,
+    "parent_measure_frozen": false
+  },
+  "fermionic_spectral_action_structure": {
+    "full_function_decomposition": "g(z)=f(z^2)+z h(z^2)",
+    "even_part_role": "next-order nonscalar term containing the Higgs-quadratic Majorana/Weinberg operator",
+    "odd_part_role": "ordinary fermionic dynamics and its kinetic normalization",
+    "even_and_odd_parts_related_by_current_axioms": false,
+    "counterfamily": {
+      "formula": "g_alpha(z)=z exp(-z^2)+alpha exp(-z^2)",
+      "even_part": "alpha*exp(-z**2)",
+      "odd_part": "z*exp(-z**2)",
+      "rows": [
+        {
+          "label": "zero_even_part",
+          "alpha": 0,
+          "odd_kinetic_function": "z*exp(-z^2)",
+          "even_weinberg_function": "0*exp(-z^2)",
+          "same_kinetic_normalization": true,
+          "relative_Weinberg_coefficient": 0
+        },
+        {
+          "label": "unit_even_part",
+          "alpha": 1,
+          "odd_kinetic_function": "z*exp(-z^2)",
+          "even_weinberg_function": "1*exp(-z^2)",
+          "same_kinetic_normalization": true,
+          "relative_Weinberg_coefficient": 1
+        },
+        {
+          "label": "double_even_part",
+          "alpha": 2,
+          "odd_kinetic_function": "z*exp(-z^2)",
+          "even_weinberg_function": "2*exp(-z^2)",
+          "same_kinetic_normalization": true,
+          "relative_Weinberg_coefficient": 2
+        }
+      ],
+      "finding": "The kinetic odd part is identical for every alpha, while the Weinberg even coefficient ranges continuously and can vanish."
+    }
+  },
+  "family_compression_of_charged_lepton_factor": {
+    "literature_factor": "K_e=Y_e Y_e^dagger",
+    "diagonal_control": "diag(d1,d2,d3)",
+    "compression_identity": "P0 K_e P0=kappa_e P0",
+    "kappa_e": "d1/3 + d2/3 + d3/3",
+    "family_direction_fixed": true,
+    "scalar_amplitude_fixed": false,
+    "reason": "The project has not derived the three charged-edge amplitudes or their invariant quadratic norm."
+  },
+  "trace_weight_cancellation": {
+    "zero_line_weight": "w0=1/7",
+    "unnormalized_action": "w0 [Z_psi psi^dagger D psi + mu psi^T C psi]",
+    "canonical_field_rescaling": "psi_c=sqrt(w0 Z_psi) psi",
+    "canonical_mass": "mu/Z_psi",
+    "depends_on_w0": false,
+    "finding": "The common trace weight selects and counts the channel but cannot set its physical mass because it cancels between kinetic and mass terms."
+  },
+  "remaining_amplitude": {
+    "schematic_formula": "r_tau*v_H**2*(d1 + d2 + d3)/(3*Lambda)",
+    "independent_inputs": [
+      "r_tau: ratio of the nonscalar even spectral moment to the odd kinetic moment",
+      "kappa_e=<v0,Y_e Y_e^dagger v0>: charged-lepton quadratic contraction",
+      "Lambda: the dimensionful cutoff or parent suppression scale"
+    ],
+    "independent_input_count_at_least": 3,
+    "fixed_by_C3": false,
+    "fixed_by_M35_trace": false,
+    "fixed_by_current_parent_measure": false
+  },
+  "literature_boundary": {
+    "reference": "Sakellariadou-Sitarz, arXiv:1903.09149",
+    "paper_explicitly_leaves_classification_of_nonscalar_functions_open": true,
+    "paper_mass_depends_on_cutoff_coefficients_scale_Higgs_vev_and_charged_lepton_masses": true,
+    "paper_requires_further_nondiagonal_tau_data_for_neutrino_mixing": true,
+    "paper_does_not_supply_defect_localization": true
+  },
+  "verdict": {
+    "operator_type_on_H15": "retained",
+    "canonical_family_projector": "retained",
+    "trace_weight_one_seventh": "retained_as_channel_weight_not_mass",
+    "parameter_free_Weinberg_amplitude": "fail",
+    "common_measure_derivation": "fail",
+    "localized_defect_profile": "not_derived",
+    "physical_closure": false,
+    "status": "The nonscalar fermionic spectral action supplies a viable H15 operator type, but the current parent does not relate its even spectral moment to the odd kinetic moment. The M35 weight 1/7 cancels after canonical normalization, and the remaining coefficient also contains an underived charged-lepton contraction and cutoff scale."
+  },
+  "next_gate": "version5_defect_transport_part_conclusion_gate"
+}

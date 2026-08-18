@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-15",
+  "gate": "version5_nonordinary_architecture_fork_gate",
+  "height_hodge_identity": {
+    "height": "Matrix([[-1, 0, 0], [0, 0, 0], [0, 0, 1]])",
+    "oriented_differential_extracted": true,
+    "hodge_commutator": "Matrix([[-x**2, 0, 0], [0, x**2 - y**2, 0], [0, 0, y**2]])",
+    "middle_projector": "Matrix([[0, 0, 0], [0, 1, 0], [0, 0, 0]])",
+    "selected_action": "(x**2 - y**2)**2",
+    "target": "(x**2 - y**2)**2",
+    "global_height_reversal_invariant": true,
+    "unique_affine_selector": {
+      "a": "1",
+      "b": "-1"
+    },
+    "matrix_identity_exact": true,
+    "matrix_action": "2"
+  },
+  "routes": {
+    "ordinary_mapping_cone": {
+      "previously_closed": true,
+      "exact_target": false,
+      "eligible": false
+    },
+    "real_or_standard_bv_auxiliary": {
+      "previously_closed": true,
+      "exact_target": false,
+      "eligible": false
+    },
+    "imaginary_hs_current_ko6_measure": {
+      "previously_closed": true,
+      "exact_target": "formal_only",
+      "eligible": false
+    },
+    "twisted_spectral_calculus": {
+      "previously_closed": false,
+      "exact_target": false,
+      "eligible": true,
+      "readiness": 2
+    },
+    "derived_or_bv_bfv": {
+      "previously_closed": false,
+      "exact_target": "abstract_only",
+      "eligible": true,
+      "readiness": 1
+    },
+    "relative_modular": {
+      "previously_closed": false,
+      "exact_target": false,
+      "eligible": true,
+      "readiness": 1
+    },
+    "oriented_height_hodge": {
+      "previously_closed": false,
+      "exact_target": true,
+      "coefficient_free_selector": true,
+      "reuses_existing_ko6_chain": true,
+      "eligible": true,
+      "readiness": 4
+    }
+  },
+  "selected_architecture": "oriented_height_hodge",
+  "selection_scope": "next kill-test only",
+  "unresolved": [
+    "unique height origin in full KO6 real geometry",
+    "particle-conjugate compatibility",
+    "common kinetic and curvature trace normalization",
+    "classical parent interpretation",
+    "full Hessian and exact-one BdG kernel"
+  ],
+  "verdict": {
+    "algebraic_orientation_selector": "pass",
+    "parent_architecture": "not_passed",
+    "physical_closure": false
+  },
+  "next_gate": "version5_oriented_height_hodge_ko6_gate"
+}

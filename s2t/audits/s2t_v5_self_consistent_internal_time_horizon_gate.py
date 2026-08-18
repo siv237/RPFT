@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+"""Аудит коэффициента внутреннего времени и устойчивости дефекта."""
+
+import json
+from pathlib import Path
+
+import sympy as sp
+
+
+ROOT = Path(__file__).resolve().parents[2]
+OUTPUT = ROOT / "s2t/results/s2t_v5_self_consistent_internal_time_horizon_gate_results.json"
+
+
+# Минимальный коэффициент хода времени около q*=1.
+x, a, energy, kappa, quartic = sp.symbols(
+    "x a energy kappa quartic", real=True
+)
+lapse = sp.exp(-a * x) / 4
+potential = energy * a * x / 4 + kappa * x**2 / 2 + quartic * x**4 / 4
+free_energy = sp.simplify(potential + energy * lapse)
+
+stationarity = sp.simplify(sp.diff(free_energy, x).subs(x, 0))
+hessian = sp.simplify(sp.diff(free_energy, x, 2).subs(x, 0))
+assert lapse.subs(x, 0) == sp.Rational(1, 4)
+assert stationarity == 0
+assert hessian == kappa + energy * a**2 / 4
+
+controls = []
+for label, kappa_value in (
+    ("stable", sp.Integer(1)),
+    ("critical", -sp.Rational(1, 4)),
+    ("unstable", -sp.Integer(1)),
+):
+    value = sp.simplify(hessian.subs({a: 1, energy: 1, kappa: kappa_value}))
+    controls.append(
+        {
+            "case": label,
+            "a": 1,
+            "internal_energy": 1,
+            "kappa": str(kappa_value),
+            "lapse_at_defect": "1/4",
+            "stationarity_residual": "0",
+            "hessian": str(value),
+            "locally_stable": bool(value > 0),
+        }
+    )
+
+assert controls[0]["locally_stable"]
+assert controls[1]["hessian"] == "0"
+assert not controls[2]["locally_stable"]
+
+# Скорость распада на внешнем времени и предел временной ловушки.
+gamma_internal, epsilon = sp.symbols("gamma_internal epsilon", positive=True)
+gamma_external_quarter = sp.simplify(sp.Rational(1, 4) * gamma_internal)
+lifetime_ratio_quarter = sp.simplify(gamma_internal / gamma_external_quarter)
+assert lifetime_ratio_quarter == 4
+
+external_energy = sp.simplify(epsilon * energy)
+external_decay_rate = sp.simplify(epsilon * gamma_internal)
+assert sp.limit(external_energy, epsilon, 0, dir="+") == 0
+assert sp.limit(external_decay_rate, epsilon, 0, dir="+") == 0
+
+# Масштабная симметрия стационарной системы Шрёдингера--Ньютона:
+# psi_lambda=lambda^2 psi(lambda r), Phi_lambda=lambda^2 Phi(lambda r).
+# В трёх измерениях норма масштабируется как lambda, радиус как 1/lambda.
+scale = sp.symbols("scale", positive=True)
+mass_scaling = scale
+radius_scaling = 1 / scale
+mass_radius_scaling = sp.simplify(mass_scaling * radius_scaling)
+assert mass_radius_scaling == 1
+
+result = {
+    "gate": "version5_self_consistent_internal_time_horizon_gate",
+    "archive_reconstruction": {
+        "internal_time_hypothesis_found": True,
+        "claimed_dimensionless_radius": 1.33,
+        "claimed_schrodinger_newton_origin": True,
+        "preserved_boundary_value_problem": False,
+        "preserved_normalization": False,
+        "preserved_code_or_convergence_table": False,
+        "radius_reproducible_from_archive": False,
+    },
+    "schrodinger_newton_scaling": {
+        "wavefunction": "psi_lambda(r)=lambda^2 psi(lambda r)",
+        "potential": "Phi_lambda(r)=lambda^2 Phi(lambda r)",
+        "eigenvalue": "epsilon_lambda=lambda^2 epsilon",
+        "norm_scaling": "M_lambda=lambda M",
+        "radius_scaling": "R_lambda=R/lambda",
+        "mass_radius_product_scaling": str(mass_radius_scaling),
+        "universal_standalone_dimensionless_radius": False,
+    },
+    "internal_time_model": {
+        "proper_time_relation": "d tau=N(q) dt",
+        "lapse": str(lapse),
+        "quarter_speed_condition": "N(q*)=1/4",
+        "external_decay_rate_at_quarter_lapse": str(gamma_external_quarter),
+        "external_to_internal_lifetime_ratio": str(lifetime_ratio_quarter),
+        "quarter_lapse_implies_eternity": False,
+    },
+    "self_consistency_test": {
+        "functional": str(free_energy),
+        "stationarity_residual_at_q_star": str(stationarity),
+        "hessian_at_q_star": str(hessian),
+        "same_lapse_controls": controls,
+        "lapse_value_alone_fixes_stability": False,
+    },
+    "zero_lapse_limit": {
+        "external_energy": str(external_energy),
+        "external_decay_rate": str(external_decay_rate),
+        "external_energy_limit": "0",
+        "external_decay_rate_limit": "0",
+        "interpretation": "apparent infinite lifetime is reached together with vanishing external energy/readout in the minimal redshift model",
+    },
+    "architecture_audit": {
+        "literal_event_horizon_allows_classical_exit": False,
+        "event_horizon_is_curvature_singularity": False,
+        "effective_transfer_horizon_remains_possible": True,
+        "current_H15_M35_contains_lapse_field": False,
+        "current_parent_derives_backreaction_potential": False,
+        "nonlinear_flow_defect_lapse_parent_is_new_architecture": True,
+    },
+    "verdict": {
+        "historical_R_1_33": "not_reproducible_and_not_universal_without_normalization",
+        "fourfold_external_delay": "pass_as_N_equal_1_over_4",
+        "eternal_particle_from_fourfold_delay": "fail",
+        "stability_from_time_dilation_alone": "fail",
+        "free_entry_exit_through_literal_horizon": "fail",
+        "persistent_defect_with_through_flow": "open_as_new_nonlinear_architecture",
+        "physical_closure": False,
+        "status": "Internal time is a coherent kinematic variable, but a quarter lapse gives only a fourfold lifetime and does not determine the defect Hessian. The historical radius 1.33 is unreproducible and scale-dependent. A self-maintaining defect with through-flow requires a new nonlinear flow-plus-geometry-plus-lapse parent.",
+    },
+    "next_gate": "version5_defect_transport_part_conclusion_gate",
+}
+
+OUTPUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print(json.dumps(result, ensure_ascii=False, indent=2))

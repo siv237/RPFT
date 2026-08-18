@@ -1,0 +1,62 @@
+{
+  "gate": "version5_spatial_so3_superconnection_parent_trace_gate",
+  "spatial_calculus": {
+    "finite_parent": "M35(C) linking operator container",
+    "scalar_coordinate_commutator_zero": true,
+    "finite_trace_generates_spatial_derivative": false,
+    "required_extra_structure": "spacetime Dirac/Hodge calculus or equivalent product geometry"
+  },
+  "gauge_selection": {
+    "dimension_u35": 1225,
+    "dimension_corner_preserving_u20_plus_u15": 625,
+    "dimension_desired_so3": 3,
+    "full_M35_gauging_forbidden_by_previous_gate": true,
+    "normalized_trace_selects_so3_subalgebra": false
+  },
+  "core_extension": {
+    "H2_ball_Z": 0,
+    "boundary_line_Chern_number": 1,
+    "single_L_extends_over_B3_as_line_bundle": false,
+    "Chern_L_plus_L_star": 0,
+    "L_plus_L_star_topologically_extendable_as_rank_two": true,
+    "smooth_core_requires_complex_linear_branch_mixing": true,
+    "KO6_J_alone_supplies_complex_linear_gauge_mixing": false
+  },
+  "representation_test": {
+    "current_partial_family_decomposition": "spin 0 + spin 1 + spin 1 + spin 1",
+    "highest_weight_Chern_numbers": [
+      0,
+      2,
+      2,
+      2
+    ],
+    "all_current_nontrivial_Chern_numbers_even": true,
+    "unit_Chern_eigenline_present_in_current_family_module": false,
+    "minimal_unit_Chern_representation": "spin 1/2 complex doublet",
+    "previous_H15_M35_doublet_no_go_returns": true
+  },
+  "trace_action": {
+    "generic_rescaling": "Phi -> a Phi",
+    "schematic_coefficients": {
+      "gauge_F_squared": "1",
+      "scalar_DPhi_squared": "2*a**2",
+      "quartic_Phi": "a**4"
+    },
+    "one_trace_fixes_coefficients_after_embedding_is_fixed": true,
+    "M35_trace_derives_embedding_and_field_scale_a": false,
+    "M35_trace_derives_Bogomolny_Hodge_relative_weight": false,
+    "M35_trace_derives_vacuum_scale_v": false
+  },
+  "conditional_result": {
+    "if_spacetime_calculus_so3_embedding_and_rank_two_lift_are_supplied": "a single superconnection trace can package F_A, D_A Phi and Phi^2",
+    "is_this_a_derivation_from_current_parent": false
+  },
+  "verdict": {
+    "spatial_SO3_connection_from_M35_trace": "fail",
+    "smooth_unit_index_core_on_current_integer_spin_module": "fail",
+    "trace_compatibility_after_external_inputs": "conditional_pass",
+    "status": "boundary_hopf_orientation_pass_core_parent_derivation_fail",
+    "physical_closure": false
+  },
+  "next_gate": "version5_hopf_pair_odd_core_extension_gate"
+}

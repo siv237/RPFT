@@ -1,0 +1,61 @@
+{
+  "gate": "version5_hopf_line_morita_orientation_functor_gate",
+  "linking_grading": {
+    "full_parent": "M35 with corner projections p20 and p15",
+    "proxy": "M5 with ranks 3 and 2",
+    "grading": "Gamma_link=p_left-p_right",
+    "degree_formula": "[Gamma_link,X]=2 deg(X) X",
+    "degree_E": 1,
+    "degree_E_star": -1,
+    "degree_diagonal_corners": 0,
+    "maximum_proxy_commutator_residual": 0
+  },
+  "functoriality": {
+    "nonzero_matrix_unit_compositions_checked": 125,
+    "composition_failures": 0,
+    "degree_additive_on_composition": true,
+    "star_reverses_degree": true,
+    "line_assignment": "T(X)=X tensor L^{deg(X)}",
+    "forward_reverse_products_are_untwisted": true
+  },
+  "orientation_selection": {
+    "projective_axis_lifts": [
+      "n",
+      "-n"
+    ],
+    "degree_plus_selects": "L with c1=+1",
+    "degree_minus_selects": "L* with c1=-1",
+    "Chern_numbers_by_degree": {
+      "-1": -1,
+      "1": 1
+    },
+    "global_reversal": "implemented by star/J, not a continuous free parameter"
+  },
+  "canonicity": {
+    "corner_ranks": [
+      20,
+      15
+    ],
+    "corners_swappable_by_inner_unitary": false,
+    "family_and_observed_roles_already_fixed": true,
+    "depends_on_ambiguous_three_level_height": false,
+    "reason": "the two-corner source-target grading is fixed before the affine height choice"
+  },
+  "KO6_and_trace": {
+    "J_maps_E_tensor_L_to_E_star_tensor_L_star": true,
+    "full_real_pair_preserved": true,
+    "finite_internal_dimension_changed": false,
+    "normalized_M35_trace_changed": false,
+    "reason": "L tensor L* cancels in diagonal products and every line fiber has rank one"
+  },
+  "verdict": {
+    "orientation_functor_from_linking_parent": "pass",
+    "manual_sign_assignment_required": false,
+    "previous_height_nonuniqueness_bypassed_not_overturned": true,
+    "unit_Chern_branch_selected_on_forward_arrow": true,
+    "physical_closure": false,
+    "status": "topological_orientation_bridge_pass",
+    "remaining_problem": "derive a single spatial superconnection/action whose Hopf curvature gives both finite defect energy and the twisted Dirac index"
+  },
+  "next_gate": "version5_hopf_twisted_defect_superconnection_energy_index_gate"
+}

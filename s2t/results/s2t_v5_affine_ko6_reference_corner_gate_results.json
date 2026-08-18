@@ -1,0 +1,145 @@
+{
+  "date": "2026-08-16",
+  "gate": "version5_affine_ko6_reference_corner_gate",
+  "recovered_project_ingredients": {
+    "affine_menu": "C4=1_uniform+3_sum_zero",
+    "family_coordinate_algebra": "R0+M3(R)_G+C2",
+    "observed_multiplicity": "10+bar5 of dimension 15",
+    "KO6_doubling": true
+  },
+  "dimension_identity": {
+    "particle_base_nodes": [
+      4,
+      3,
+      3
+    ],
+    "particle_base_dimension": 10,
+    "observed_package_dimension": 15,
+    "KO6_factor": 2,
+    "parent_dimension": 300,
+    "formula": "2*(4+3+3)*15=300",
+    "reference_full_rank": 30,
+    "physical_full_rank": 270
+  },
+  "affine_projectors": {
+    "S4_element_count": 24,
+    "P1_rank": 1,
+    "P3_rank": 3,
+    "projector_residuals": {
+      "P1_idempotence": 0.0,
+      "P3_idempotence": 0.0,
+      "orthogonality": 0.0,
+      "sum_identity": 0.0,
+      "S4_invariance": 0.0
+    },
+    "frame_residuals": {
+      "VVt_identity": 3.8667552897052865e-16,
+      "VtV_P3": 3.6188843062238402e-16,
+      "uniform_kernel": 1.1102230246251565e-16
+    },
+    "maximum_S4_intertwiner_residual": 4.304607083168804e-16,
+    "triplet_orientation_determinants": [
+      -1,
+      1
+    ]
+  },
+  "family_KO6_bimodule": {
+    "particle_chain": "(0,0)^4 -> (G,0) -> (G,2)",
+    "coordinate_algebra": "R0+M3(R)_G+C2",
+    "base_complex_dimension": 20,
+    "KO6_residuals": {
+      "selfadjoint_D": 0.0,
+      "odd_D": 0.0,
+      "JD_equals_DJ": 0.0,
+      "Jgamma_plus_gammaJ": 0.0,
+      "Jh_plus_hJ": 0.0,
+      "order_zero": 0.0,
+      "first_order": 0.0
+    },
+    "differential_residuals": {
+      "D_reconstruction": 0.0,
+      "unit_frequency": 5.551115123125783e-17,
+      "J_reverses_orientation": 0.0
+    },
+    "height": "diag(-P3,0_3,+I3) plus J-reversed conjugate"
+  },
+  "canonical_reference_corner": {
+    "reference_projector": "P1 on the first node and its J-conjugate",
+    "reference_residuals": {
+      "idempotence": 0.0,
+      "J_invariance": 0.0,
+      "grading_commutator": 0.0,
+      "height_commutator": 0.0,
+      "algebra_commutator": 0.0,
+      "vacuum_D_commutator": 1.1102230246251565e-16
+    },
+    "full_base_kernel_before_corner": 8,
+    "physical_base_rank_after_corner": 18,
+    "physical_base_kernel_after_corner": 6,
+    "full_physical_kernel_after_SU5_multiplicity": 90,
+    "physical_particle_count": 45,
+    "conditional_parent_trace_weight": "270/300=9/10"
+  },
+  "Hodge_curvature": {
+    "particle_blocks": [
+      "P3-X*X",
+      "XX*-|Phi|^2 I3",
+      "(|Phi|^2-1)I3"
+    ],
+    "maximum_block_residual": 2.175583928816829e-15,
+    "maximum_parent_trace_residual": 3.552713678800501e-15,
+    "tau300_formula": "tau300(F^2)=Tr_particle(F^2)/10",
+    "reduced_tau3_formula": "V_reduced=Tr_particle(F^2)/3",
+    "tau300_over_reduced_factor": "3/10"
+  },
+  "vacuum_Hessian": {
+    "variables": "12 real components of X plus 2 real components of Phi",
+    "reduced_exact_spectrum": {
+      "0": 4,
+      "4/3": 3,
+      "16/3": 5,
+      "(32-8sqrt7)/3": 1,
+      "(32+8sqrt7)/3": 1
+    },
+    "parent_trace_exact_spectrum": {
+      "2/5": 3,
+      "8/5": 5,
+      "16/5 - 4*sqrt(7)/5": 1,
+      "4*sqrt(7)/5 + 16/5": 1,
+      "0": 4
+    },
+    "signature": [
+      10,
+      4,
+      0
+    ],
+    "reference_chain_mixing_modes": 3,
+    "reference_chain_mixing_eigenvalue_reduced": "4/3",
+    "reference_chain_mixing_eigenvalue_tau300": "2/5"
+  },
+  "remaining_boundaries": {
+    "reference_corner_is_dynamic_mass_removal": false,
+    "reference_corner_is_canonical_affine_reduction": true,
+    "SM_or_SU5_associative_coordinate_algebra_integrated": false,
+    "naive_tensor_product_allowed": false,
+    "kinetic_normalization_from_same_full_product_action": false,
+    "unit_momentum_vacuum_revalidated_with_full_normalization": false,
+    "full_BV_BRST_complex": false,
+    "priority_combined_architecture": {
+      "coordinate_algebra": "A_SM=C+H+M3(C)",
+      "family_placement": "graded correspondence in pi(A_SM)'",
+      "avoids_naive_M3_tensor_M3_to_M9": true,
+      "differential_calculus_verified": false
+    }
+  },
+  "verdict": {
+    "forgotten_affine_KO6_bimodule_recovered": "pass",
+    "exact_M300_dimension_without_ad_hoc_reference_sum": "pass",
+    "canonical_physical_45_particle_corner": "pass",
+    "reference_chain_scalar_mixing_stabilized": "pass",
+    "complete_coordinate_parent": false,
+    "physical_closure": false,
+    "status": "affine_family_coordinate_skeleton_pass_observed_algebra_open"
+  },
+  "next_gate": "Keep A_SM=C+H+M3(C) as the coordinate algebra and test whether the affine family KO6 chain can be realized as a graded correspondence inside its commutant on the same 300-state module. Compute the resulting one-forms, gauge group and scalar kinetic normalization before repeating the unit-momentum test."
+}

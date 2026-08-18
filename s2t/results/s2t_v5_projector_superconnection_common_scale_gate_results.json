@@ -1,0 +1,31 @@
+{
+  "gate": "version5_projector_superconnection_common_scale_gate",
+  "product_operator": "D_space tensor 1 + gamma tensor N/ell",
+  "spectral_action": {
+    "E2_coefficient": "f2 Lambda^2 times metric/internal normalization",
+    "E4_coefficient": "f0 times curvature normalization",
+    "independent_inputs": [
+      "f2",
+      "f0",
+      "Lambda",
+      "ell"
+    ],
+    "ratio_fixed": false
+  },
+  "superconnection_square": {
+    "odd_rescaling": "Phi -> a Phi",
+    "E2_scaling": "a^2",
+    "quartic_scaling": "a^4 or curvature normalization",
+    "ratio_fixed": false
+  },
+  "project_cross_audit": {
+    "ordinary_spectral_moment_no_go_reused": true,
+    "M35_trace_only_fixes_matrix_weights": true,
+    "spacetime_Hodge_and_scale_derived": false
+  },
+  "verdict": {
+    "common_scale_from_current_parent": false,
+    "finite_radius_prediction": false,
+    "next_gate": "version5_fermionic_determinant_induced_skyrme_gate"
+  }
+}

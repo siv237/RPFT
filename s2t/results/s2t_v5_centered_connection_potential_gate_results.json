@@ -1,0 +1,127 @@
+{
+  "gate": "version5_centered_connection_potential_gate",
+  "input_certificate": {
+    "centered_connection_complex_dimension": 4,
+    "unique_Yukawa_connection_before_dynamics": false
+  },
+  "centered_space": {
+    "block_names": [
+      "Q_L",
+      "L_L",
+      "u_R",
+      "d_R",
+      "e_R"
+    ],
+    "block_sizes": [
+      6,
+      2,
+      3,
+      3,
+      1
+    ],
+    "trace_weights": [
+      0.4,
+      0.13333333333333333,
+      0.2,
+      0.2,
+      0.06666666666666667
+    ],
+    "constraint": "sum_s w_s z_s = 0",
+    "complex_dimension": 4,
+    "real_dimension": 8,
+    "basis_residual": 2.0166160408230382e-17
+  },
+  "general_even_phase_blind_potential": {
+    "independent_quadratic_invariants": 5,
+    "independent_quartic_products": 15,
+    "real_coefficients_through_degree_four": 20,
+    "form": "V=sum_s m_s I_s + sum_{s<=t} lambda_st I_s I_t, I_s=w_s |z_s|^2",
+    "coefficients_fixed_by_current_symmetry": false
+  },
+  "trace_only_restriction": {
+    "independent_invariants_through_degree_four": 3,
+    "basis": [
+      "p1",
+      "p1^2",
+      "p2"
+    ],
+    "general_form": "a p1+b p1^2+c p2+constant",
+    "dimensionless_coefficient_ratios_after_overall_normalization": 2,
+    "positive_parent_norm_minimum": "z=0"
+  },
+  "radial_trace_potential": {
+    "functional": "(p1-1)^2",
+    "minimum_manifold": "weighted sphere in centered C^4",
+    "hessian_eigenvalues": [
+      -1.5731497596336818e-10,
+      -8.718264661293563e-11,
+      -2.0980394004130736e-11,
+      1.9286658669503346e-11,
+      2.4765722314090047e-11,
+      9.47219867585399e-11,
+      1.2610309273213276e-10,
+      1.471710197975375
+    ],
+    "hessian_nullity": 7,
+    "unique_orbit": false
+  },
+  "unitary_flattening_best_case": {
+    "functional": "sum_s w_s (|z_s|^2-1)^2",
+    "external_unit_scale_required": true,
+    "number_of_distinct_certified_minima": 2,
+    "center_residuals": [
+      8.946230858543522e-10,
+      1.1289459950810223e-09
+    ],
+    "potential_values": [
+      3.2869204384208825e-33,
+      0.0
+    ],
+    "representative_phases": [
+      [
+        0.0,
+        -1.7165212732657127,
+        3.0769287743568117,
+        2.871505360626827,
+        1.3944920373341518
+      ],
+      [
+        0.0,
+        2.535716812351054,
+        -2.4051158713820553,
+        2.4772490819469337,
+        -1.340268721134958
+      ]
+    ],
+    "hessian_eigenvalues": [
+      -3.0054178510484195e-16,
+      -3.999975371286987e-17,
+      2.172378855755689e-17,
+      0.21980773102624662,
+      0.5237295391816684,
+      0.9950716439694179,
+      1.5953846057967545,
+      2.143972581720826
+    ],
+    "hessian_nullity": 3,
+    "minimum_manifold_real_dimension": 3,
+    "unique_orbit": false
+  },
+  "moment_map_level": {
+    "block_center_real_dimension": 5,
+    "trace_zero_level_real_dimension": 4,
+    "canonical_nonzero_level_from_current_data": false,
+    "interpretation": "a nonzero central moment-map level would reintroduce the same four relative block choices"
+  },
+  "verdict": {
+    "current_parent_quadratic_norm_selects_nonzero_connection": false,
+    "symmetry_fixes_general_quartic_coefficients": false,
+    "trace_only_quartic_selects_unique_orbit": false,
+    "flattening_selects_unique_orbit": false,
+    "unique_Yukawa_connection": false,
+    "Yukawa_origin_status": "underdetermined",
+    "Morita_carrier_status": "retained as kinematics",
+    "physical_closure": false
+  },
+  "next_step": "Freeze the origin of the Yukawa connection within the present Morita parent architecture. Any reopening must add and independently derive a symmetry, moment-map level, spectral profile, or fermionic principle that fixes the four relative block directions."
+}

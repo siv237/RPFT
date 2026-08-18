@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-15",
+  "gate": "version5_real_selector_leaf_ko6_gate",
+  "square_nodes": {
+    "A": [
+      "o",
+      "o"
+    ],
+    "B": [
+      "o",
+      "h"
+    ],
+    "C": [
+      "h",
+      "h"
+    ],
+    "D": [
+      "h",
+      "o"
+    ]
+  },
+  "leaf_placements": {
+    "E_left": {
+      "label": [
+        "s",
+        "o"
+      ],
+      "order_one_allowed": true,
+      "J_transpose": [
+        "o",
+        "s"
+      ]
+    },
+    "E_right": {
+      "label": [
+        "o",
+        "s"
+      ],
+      "order_one_allowed": true,
+      "J_transpose": [
+        "s",
+        "o"
+      ]
+    }
+  },
+  "blockwise_test": {
+    "cycle_family_dimension_before_leaf": 9,
+    "cycle_family_dimension_after_leaf": 9,
+    "leaf_constrains_cycle_edge": false
+  },
+  "active_family_algebra": {
+    "algebra": "M3(R)",
+    "shared_on_cycle_edge": true,
+    "commutant_dimension": 1,
+    "edge_form": "scalar times I3"
+  },
+  "verdict": {
+    "selector_leaf": "fail",
+    "selector_leaf_geometry_closed": true,
+    "complexity_ledger_corrected": true,
+    "family_algebra_rectangle": "admitted_for_one_gate",
+    "mathematical_parent_architecture_pass": false,
+    "physical_closure": false
+  },
+  "next_gate": "version5_family_algebra_rectangle_gate"
+}

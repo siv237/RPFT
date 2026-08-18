@@ -1,0 +1,56 @@
+{
+  "gate": "version5_real_toeplitz_bott_comparison_map_gate",
+  "source_table": {
+    "real_algebra": "C considered as a real C*-algebra",
+    "KO_even_degrees_0_2_4_6": [
+      "Z",
+      "Z",
+      "Z",
+      "Z"
+    ],
+    "complexified_K_even_degrees": [
+      "Z^2",
+      "Z^2",
+      "Z^2",
+      "Z^2"
+    ],
+    "c0": "n -> (n,n)",
+    "c2": "n -> (-n,n)",
+    "c4": "n -> (n,n)",
+    "c6": "n -> (-n,n)",
+    "r6": "(a,b) -> -a+b",
+    "psi6": "(a,b) -> (-b,-a)"
+  },
+  "degree_six_checks": {
+    "generator_image": [
+      -1,
+      1
+    ],
+    "map_is_injective": true,
+    "conjugation_fixes_image": true,
+    "forget_after_complexify_is_times_two": true
+  },
+  "toeplitz_coefficient_class": {
+    "q0_complex_rank": 15,
+    "complexified_real_class_15": [
+      -15,
+      15
+    ],
+    "oriented_toeplitz_indices": [
+      -15,
+      15
+    ],
+    "exact_match": true,
+    "unique_real_preimage": 15,
+    "normalized_weight": 0.14285714285714285
+  },
+  "verdict": {
+    "anti_diagonal_stop_test": "pass",
+    "integer_KO6_class": 15,
+    "integer_KO6_class_proved_at_K_theory_level": true,
+    "explicit_Cl06_matrices_still_required_for_classification": false,
+    "unbounded_parent_operator": false,
+    "physical_localization_energy_mass": false,
+    "next_gate": "version5_real_toeplitz_unbounded_parent_cycle_gate"
+  }
+}

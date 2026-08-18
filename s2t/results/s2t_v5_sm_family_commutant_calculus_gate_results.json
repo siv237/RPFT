@@ -1,0 +1,71 @@
+{
+  "gate": "version5_sm_family_commutant_calculus_gate",
+  "inputs": {
+    "coordinate_algebra": "A_SM=C+H+M3(C)",
+    "observed_particle_multiplicity": 15,
+    "family_particle_dimension": 10,
+    "full_KO6_product_dimension": 300,
+    "standard_model_gauge_lie_dimension_after_unimodularity": 12,
+    "control_representation": "M2(C)+M3(C)+C on C^15",
+    "control_is_not_claimed_as_the_SM_bimodule": true
+  },
+  "commutant_placement": {
+    "representation": "pi(a)=I_10 tensor pi_SM(a)",
+    "dirac": "D=D_fam tensor I_15 + I_10 tensor D_SM",
+    "family_commutator_residual": 0.0,
+    "commutator_factorization_residual": 0.0,
+    "family_change_sensitivity_residual": 0.0,
+    "gauge_algebra_dimension_preserved": true,
+    "observed_control_algebra_span_rank": 14,
+    "replicated_control_algebra_span_rank": 14
+  },
+  "ordinary_one_form_calculus": {
+    "identity": "[D,pi(a)]=I_10 tensor [D_SM,pi_SM(a)]",
+    "observed_control_one_form_span_rank": 51,
+    "total_control_one_form_span_rank": 51,
+    "family_dirac_changes_one_forms": false,
+    "family_chain_visible_to_ordinary_inner_fluctuations": false
+  },
+  "architecture_trilemma": {
+    "direct_sum": {
+      "central_idempotent_product_norm": 0.0,
+      "jointly_charged_irreducible_sector": false,
+      "verdict": "fail_by_central_decomposition"
+    },
+    "naive_tensor_product": {
+      "witness": "M3(R) tensor_R M3(C) is M9(C)",
+      "separate_so3_plus_u3_lie_dimension": 12,
+      "tensor_u9_lie_dimension": 81,
+      "extra_generators": 69,
+      "verdict": "fail_by_gauge_enlargement"
+    },
+    "commutant": {
+      "standard_model_gauge_algebra_preserved": true,
+      "ordinary_family_one_forms_generated": false,
+      "verdict": "kinematic_pass_differential_origin_fail"
+    }
+  },
+  "surviving_route": {
+    "type": "graded correspondence or superconnection over A_SM",
+    "family_differential_must_be_additional_morphism_data": true,
+    "ordinary_single_spectral_triple_already_obtained": false,
+    "required_next_checks": [
+      "graded Leibniz rule",
+      "KO6 reality and grading",
+      "gauge covariance",
+      "one common positive trace on C300",
+      "scalar kinetic normalization",
+      "BV/BRST complex"
+    ]
+  },
+  "verdict": {
+    "SM_coordinate_algebra_with_family_in_commutant": "kinematic_pass",
+    "ordinary_Connes_calculus_produces_family_chain": "fail",
+    "direct_sum_solution": "fail",
+    "naive_tensor_product_solution": "fail",
+    "graded_correspondence_branch": "open",
+    "physical_closure": false,
+    "status": "commutant_preserves_gauge_but_is_invisible_to_ordinary_one_forms"
+  },
+  "next_gate": "Define the affine family chain as a graded correspondence connection over A_SM and test its Leibniz rule, KO6 covariance, common tau300 curvature, scalar kinetic normalization and BV/BRST complex."
+}

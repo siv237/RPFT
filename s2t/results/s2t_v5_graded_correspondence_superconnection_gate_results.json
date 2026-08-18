@@ -1,0 +1,89 @@
+{
+  "gate": "version5_graded_correspondence_superconnection_gate",
+  "inputs": {
+    "coordinate_algebra": "A_SM=C+H+M3(C)",
+    "family_module": "K_fam=C4+C3+C3",
+    "correspondence_module": "E=K_fam tensor A_SM",
+    "full_KO6_observed_dimension": 300
+  },
+  "connection_consistency": {
+    "candidate": "nabla=nabla_SM+Q_fam, Q_fam=d+d*",
+    "A_SM_linearity_residual": 6.825580633415626e-16,
+    "graded_Leibniz_rule": "pass because Q_fam is A_SM-linear",
+    "KO6_inherited_from_affine_bimodule": true,
+    "standard_model_gauge_covariance": true,
+    "family_operator_is_new_morphism_data": true
+  },
+  "curvature_comparison": {
+    "standard_superconnection": {
+      "curvature": "Q_fam^2",
+      "middle_block": "XX*+|Phi|^2 I3",
+      "residual": 0.0,
+      "produces_moment_map_difference": false
+    },
+    "holomorphic_superconnection": {
+      "curvature": "d^2",
+      "nonzero_path": "Phi X from node 0 to node 2",
+      "path_residual": 0.0,
+      "maximum_norm_formula_residual": 5.684341886080802e-14,
+      "norm": "|Phi|^2 Tr(X*X)",
+      "produces_moment_map_difference": false
+    },
+    "Hodge_moment_map": {
+      "curvature": "[d,d*]-h",
+      "middle_block": "XX*-|Phi|^2 I3",
+      "residual": 0.0,
+      "is_standard_superconnection_curvature": false,
+      "requires_Hermitian_moment_map_primitive": true
+    }
+  },
+  "fixed_height_tangent_space": {
+    "vacuum_unit_degree_residual": 3.332827630875848e-16,
+    "condition": "X=XP3",
+    "admissible_real_X_dimension": 9,
+    "excluded_reference_mixing_real_dimension": 3,
+    "reference_mixing_degree_defects": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "previous_positive_4_over_3_modes_are_inside_fixed_grading": false,
+    "interpretation": "they are massive in the extended Hodge functional but are not tangent to the fixed graded correspondence"
+  },
+  "common_trace_normalization": {
+    "tau300_over_reduced_factor": "3/10",
+    "maximum_kinetic_scaling_residual": 1.7763568394002505e-15,
+    "maximum_potential_scaling_residual": 1.4210854715202004e-14,
+    "generalized_mass_spectrum_changed_by_common_factor": false,
+    "normalization_correction_alone_invalidates_unit_momentum_vacuum": false,
+    "relative_heat_kernel_coefficients_still_required": true
+  },
+  "gauge_BV_fork": {
+    "SM_only": {
+      "gauge_lie_dimension": 12,
+      "family_SO3_orbit_is_BRST_exact": false,
+      "at_least_three_rotational_zero_modes_are_physical": true
+    },
+    "module_endomorphisms_gauged": {
+      "contains_U10_real_lie_dimension_at_least": 100,
+      "new_gauge_fields_and_ghosts": true,
+      "compatible_with_no_gauge_enlargement": false
+    },
+    "discrete_A4_stabilization": {
+      "new_continuous_gauge_bosons": false,
+      "candidate_source": "previous tetrahedral cubic and holonomy sector",
+      "lifting_of_SO3_zero_modes_verified": false
+    }
+  },
+  "verdict": {
+    "graded_correspondence_Leibniz_and_KO6": "pass",
+    "standard_superconnection_derives_Hodge_moment_map": "fail",
+    "common_trace_multiplicity_normalization": "pass",
+    "SM_only_full_BV_quotient": "fail_with_rotational_zero_modes",
+    "gauged_module_endomorphism_route": "fail_by_gauge_enlargement",
+    "tetrahedral_discrete_stabilization_route": "open",
+    "physical_closure": false,
+    "status": "correspondence_consistent_but_moment_map_and_BV_require_tetrahedral_hamiltonian_enrichment"
+  },
+  "next_gate": "Import the previously derived tetrahedral cubic/holonomy invariant into the affine Hodge moment-map functional and test whether one common A4-equivariant trace lifts the three accidental SO3 zero modes without continuous family gauge bosons or a tunable anisotropy coefficient."
+}

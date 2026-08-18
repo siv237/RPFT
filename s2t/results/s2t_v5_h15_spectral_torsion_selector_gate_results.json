@@ -1,0 +1,79 @@
+{
+  "gate": "version5_h15_spectral_torsion_selector_gate",
+  "input_certificate": {
+    "correctly_typed_H15_oneforms": "pass",
+    "residual_relative_dimension": 2
+  },
+  "H15_spectral_torsion_invariants": {
+    "up_self": "3*a**2",
+    "down_lepton_self": "3*b**2 + c**2",
+    "up_down_mixed": "3*a*b"
+  },
+  "homogeneity": {
+    "Yukawa_scaling": "y_s -> t y_s",
+    "invariant_scaling": "I -> t^4 I",
+    "checks": {
+      "up_self": "scale**4",
+      "down_lepton_self": "scale**4",
+      "up_down_mixed": "scale**4"
+    },
+    "absolute_scale_selected": false
+  },
+  "relative_sensitivity": {
+    "coordinates": {
+      "r": "|y_u|^2/|y_d|^2",
+      "s": "|y_e|^2/|y_d|^2"
+    },
+    "scale_free_observables": [
+      "I_ud/I_u=1/r",
+      "I_de/(3|y_d|^4)=1+s^2/3"
+    ],
+    "jacobian": [
+      [
+        "-1/r**2",
+        "0"
+      ],
+      [
+        "0",
+        "2*s/3"
+      ]
+    ],
+    "jacobian_determinant": "-2*s/(3*r**2)",
+    "generic_rank": 2,
+    "sees_both_relative_directions": true,
+    "prescribes_target_values_for_them": false
+  },
+  "connection_reconstruction_literature_audit": {
+    "ordinary_Connes_calculus_exact_match": false,
+    "Mesland_Rennie_modified_calculus_match": true,
+    "required_second_degree_idempotent_is_Hermitian": false,
+    "required_second_degree_idempotent_respects_involution": false,
+    "reconstructed_connection_uses_the_input_Dirac_Yukawa_data": true,
+    "reconstructed_connection_derives_Yukawa_ratios": false
+  },
+  "forbidden_potential_repair": {
+    "candidate": "sum of squares of torsion invariants",
+    "formula": "9*a**4 + 9*a**2*b**2 + 9*b**4 + 6*b**2*c**2 + c**4",
+    "nonnegative": true,
+    "zero_at_origin": true,
+    "gradient_at_origin": [
+      "0",
+      "0",
+      "0"
+    ],
+    "nonzero_level_or_constraint_required": true,
+    "allowed_as_parent_derived_selector": false
+  },
+  "verdict": {
+    "spectral_torsion_is_nontrivial_on_H15": "pass",
+    "spectral_torsion_detects_two_relative_directions": "pass",
+    "spectral_torsion_selects_unique_relative_Yukawa_ratios": "fail",
+    "ordinary_involutive_second_degree_calculus_reproduces_torsion": "fail",
+    "modified_calculus_is_input_independent_selector": "fail",
+    "Morita_oneform_route_to_unique_Yukawa_operator": "closed",
+    "Morita_parent_as_kinematic_container": "retained",
+    "physical_closure": false,
+    "status": "torsion measures the two remaining Yukawa directions but does not choose them; the unique-Yukawa Morita route is closed"
+  },
+  "next_gate": "Do not add another potential on the two-dimensional plane. Freeze the Morita construction as kinematics and return to the project-wide architecture menu: only an independently derived symmetry relating inequivalent edges or a new parent principle can reopen Yukawa selection."
+}

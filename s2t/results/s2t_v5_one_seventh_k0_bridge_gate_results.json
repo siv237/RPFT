@@ -1,0 +1,51 @@
+{
+  "gate": "version5_one_seventh_k0_bridge_gate",
+  "two_readings": {
+    "corner_superdimension": "(20-15)/35=1/7",
+    "holonomy_line_weight": "(15/35)*(1/3)=1/7",
+    "weights_equal": true,
+    "cross_multiplied_identity": "(20-15)*3=15*1=15"
+  },
+  "common_comparison_algebra": {
+    "bookkeeping_algebra": "M35 tensor M3 = M105",
+    "total_matrix_rank": 105,
+    "corner_virtual_class_representative_rank": 15,
+    "holonomy_projection_rank": 15,
+    "K0_ranks_equal": true,
+    "normalized_trace_each": 0.14285714285714285,
+    "bookkeeping_algebra_is_current_physical_parent": false
+  },
+  "positive_representative_problem": {
+    "corner_difference_is_virtual_not_a_projection": true,
+    "rank5_subprojection_of_H20_needed_before_tensoring": true,
+    "known_J_and_family_compatible_reduction_ranks": [
+      0,
+      2,
+      6,
+      8,
+      12,
+      14,
+      18,
+      20
+    ],
+    "canonical_rank5_reduction_present": false,
+    "complex_grassmannian_choice_space": "Gr(5,20)",
+    "real_dimension_Gr_5_20": 150
+  },
+  "partial_isometry_problem": {
+    "partial_isometry_exists_after_arbitrary_equal_rank_choices": true,
+    "fixed_endpoint_isometry_torsor": "U(15)",
+    "real_dimension_U15": 225,
+    "canonical_partial_isometry_derived": false,
+    "gauge_J_holonomy_equivariance_derived": false
+  },
+  "verdict": {
+    "one_seventh_is_accidental_decimal_coincidence": false,
+    "exact_trace_identity": true,
+    "exact_stable_rank_identity": true,
+    "operator_level_bridge": false,
+    "physical_closure": false,
+    "status": "stable_K0_clue_without_canonical_transgression_map"
+  },
+  "next_gate": "version5_one_seventh_boundary_transgression_gate"
+}

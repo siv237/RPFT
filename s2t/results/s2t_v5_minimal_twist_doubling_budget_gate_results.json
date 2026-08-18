@@ -1,0 +1,168 @@
+{
+  "date": "2026-08-16",
+  "gate": "version5_minimal_twist_doubling_budget_gate",
+  "vertices": [
+    {
+      "name": "p0",
+      "left": "R0",
+      "right": "R0",
+      "grading": "+"
+    },
+    {
+      "name": "p1",
+      "left": "G",
+      "right": "R0",
+      "grading": "-"
+    },
+    {
+      "name": "p2",
+      "left": "G",
+      "right": "C2",
+      "grading": "+"
+    },
+    {
+      "name": "c0",
+      "left": "R0",
+      "right": "R0",
+      "grading": "-"
+    },
+    {
+      "name": "c1",
+      "left": "R0",
+      "right": "G",
+      "grading": "+"
+    },
+    {
+      "name": "c2",
+      "left": "C2",
+      "right": "G",
+      "grading": "-"
+    }
+  ],
+  "graded_label_support": {
+    "R0": {
+      "+": 3,
+      "-": 3
+    },
+    "G": {
+      "+": 2,
+      "-": 2
+    },
+    "C2": {
+      "+": 1,
+      "-": 1
+    }
+  },
+  "edge_incidence": {
+    "X": {
+      "source": [
+        "R0",
+        "R0"
+      ],
+      "target": [
+        "G",
+        "R0"
+      ]
+    },
+    "Y": {
+      "source": [
+        "G",
+        "R0"
+      ],
+      "target": [
+        "G",
+        "C2"
+      ]
+    }
+  },
+  "summand_edge_coverage": {
+    "R0": [
+      "X",
+      "Y"
+    ],
+    "G": [
+      "X",
+      "Y"
+    ],
+    "C2": [
+      "Y"
+    ]
+  },
+  "frozen_simple_summand_budget": 4,
+  "branches": {
+    "duplicate_R0": {
+      "simple_summands": 4,
+      "within_budget": true,
+      "graded_support": {
+        "+": 3,
+        "-": 3
+      },
+      "edges_touched": [
+        "X",
+        "Y"
+      ],
+      "both_arrows": true,
+      "extra_continuous_gauge_generators": 0,
+      "new_fermion_dimensions_required_at_support_level": 0
+    },
+    "duplicate_M3R_G": {
+      "simple_summands": 4,
+      "within_budget": true,
+      "graded_support": {
+        "+": 2,
+        "-": 2
+      },
+      "edges_touched": [
+        "X",
+        "Y"
+      ],
+      "both_arrows": true,
+      "extra_continuous_gauge_generators": 3,
+      "new_fermion_dimensions_required_at_support_level": 0
+    },
+    "duplicate_C2": {
+      "simple_summands": 4,
+      "within_budget": true,
+      "graded_support": {
+        "+": 1,
+        "-": 1
+      },
+      "edges_touched": [
+        "Y"
+      ],
+      "both_arrows": false,
+      "extra_continuous_gauge_generators": 1,
+      "new_fermion_dimensions_required_at_support_level": 0
+    },
+    "full_algebra_doubling": {
+      "simple_summands": 6,
+      "within_budget": false,
+      "both_arrows": true,
+      "extra_continuous_gauge_generators": 4,
+      "new_fermion_dimensions_required_at_support_level": 0
+    }
+  },
+  "eligible_two_arrow_branches": [
+    "duplicate_R0",
+    "duplicate_M3R_G"
+  ],
+  "selected_branch": "duplicate_R0",
+  "selection_scope": "one explicit twisted KO6 representation kill-test",
+  "unresolved": [
+    "faithful representation of both R0 copies",
+    "compatibility with J and gamma",
+    "twisted order-zero and first-order conditions",
+    "radial quartic cross sign",
+    "common kinetic normalization"
+  ],
+  "verdict": {
+    "finite_selective_menu": "pass",
+    "full_doubling": "rejected_by_budget",
+    "duplicate_C2": "deferred_one_arrow_only",
+    "duplicate_M3R_G": "eligible_higher_gauge_cost",
+    "duplicate_R0": "selected_next_test",
+    "twisted_parent_action": "not_passed",
+    "physical_closure": false
+  },
+  "next_gate": "version5_real_scalar_flip_twisted_ko6_gate"
+}

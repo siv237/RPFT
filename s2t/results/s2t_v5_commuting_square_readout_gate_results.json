@@ -1,0 +1,89 @@
+{
+  "gate": "version5_commuting_square_readout_gate",
+  "recovered_architecture": {
+    "ambient_parent_algebra": "B(H_fam tensor H_obs)=M300(C)",
+    "ambient_is_not_coordinate_algebra": true,
+    "family_factor_dimension": 20,
+    "observed_factor_dimension": 15,
+    "total_dimension": 300,
+    "family_reading": "B(H_fam) tensor I15",
+    "observed_reading": "I20 tensor B(H_obs)",
+    "intersection": "C I300"
+  },
+  "conditional_expectations": {
+    "E_family": "id tensor tau15",
+    "E_observed": "tau20 tensor id",
+    "residuals": {
+      "family_idempotence": 9.98398005416905e-15,
+      "observed_idempotence": 7.604485153085946e-15,
+      "family_trace_preservation": 5.551115123125783e-17,
+      "observed_trace_preservation": 1.3877787807814457e-17,
+      "commuting_square": 1.2018516789897274e-15
+    },
+    "unique_trace_preserving_factor_expectations": true,
+    "old_module_origin_obstruction_resolved": true
+  },
+  "one_trace_orthogonality": {
+    "family_curvature_trace": 2.7755575615628914e-17,
+    "family_observed_cross_term": -2.960594732333751e-17,
+    "norm_decomposition_residual": 0.0,
+    "factor_norm_residuals": {
+      "family": 0.0,
+      "observed": 0.0
+    },
+    "independent_relative_weight": false,
+    "formula": "tau300((F_fam tensor I+I tensor F_obs)^2)=tau20(F_fam^2)+tau15(F_obs^2)"
+  },
+  "equivariant_field_content": {
+    "Hom_S4(C4_triplet,C3_triplet)_dimension": 1,
+    "Hom_A4(C4_triplet,C3_triplet)_dimension": 1,
+    "End_A4(C3_triplet)_dimension": 1,
+    "left_arrow": "X=rho V",
+    "right_arrow": "Y=Phi I3",
+    "continuous_family_orientation_fields": 0,
+    "previous_three_SO3_zero_modes_are_declared_fields": false,
+    "interpretation": "global triplet rotations are presentation equivalences or violate the fixed A4/S4 intertwiner space"
+  },
+  "restricted_Hodge_functional": {
+    "potential": "(1-rho^2)^2+(rho^2-|Phi|^2)^2+(|Phi|^2-1)^2",
+    "maximum_trace_formula_residual": 3.552713678800501e-15,
+    "zero_momentum_vacuum": {
+      "rho_squared": "1",
+      "abs_Phi_squared": "1",
+      "Hessian_spectrum_rho_RePhi_ImPhi": [
+        "24",
+        "8",
+        "0"
+      ]
+    },
+    "unit_momentum_vacuum": {
+      "rho_squared": "5/6",
+      "abs_Phi_squared": "2/3",
+      "energy": "5/6",
+      "Hessian_spectrum_rho_RePhi_ImPhi": [
+        "12-4sqrt(21)/3",
+        "12+4sqrt(21)/3",
+        "0"
+      ]
+    },
+    "rotational_zero_modes": 0,
+    "remaining_phase_zero_mode": 1
+  },
+  "remaining_boundaries": {
+    "observed_subalgebra_reduced_from_B15_to_exact_SM_bimodule": false,
+    "family_to_Yukawa_reading_map_derived": false,
+    "Phi_phase_charge_or_topological_fix_derived_in_same_square": false,
+    "full_BV_BRST_complex": false,
+    "blind_observables_closed": false
+  },
+  "verdict": {
+    "two_readings_one_parent_trace": "pass",
+    "module_origin_for_old_conditional_expectation_gate": "pass",
+    "no_relative_sector_weight": "pass",
+    "equivariant_field_restriction_removes_fake_SO3_modes": "pass",
+    "single_coordinate_algebra_required": false,
+    "physical_closure": false,
+    "status": "commuting_square_recovers_simple_two_reading_parent_architecture"
+  },
+  "next_gate": "Replace the observed B(C15) control factor by the exact Standard Model bimodule algebra and test whether the existing state-anchored conditional map and Wilson/defect phase readouts arise as compatible corners of the same commuting square, without a new coefficient."
+}
