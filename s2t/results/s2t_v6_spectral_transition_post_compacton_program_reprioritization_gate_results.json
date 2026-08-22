@@ -1,0 +1,145 @@
+{
+  "gate": "version6_spectral_transition_post_compacton_program_reprioritization_gate",
+  "source_gate_count": 8,
+  "route_selection_criteria": [
+    "obeys_compacton_freeze",
+    "does_not_require_single_plus_minus_i_selection",
+    "reuses_derived_project_data",
+    "attacks_internal_cooling_gap",
+    "attacks_R2_or_R3",
+    "introduces_no_dimensionful_input_at_route_selection",
+    "has_a_sharp_next_audit"
+  ],
+  "route_ledger": [
+    {
+      "route": "restore_compacton_as_particle_endpoint",
+      "passes": {
+        "obeys_compacton_freeze": false,
+        "does_not_require_single_plus_minus_i_selection": false,
+        "reuses_derived_project_data": true,
+        "attacks_internal_cooling_gap": false,
+        "attacks_R2_or_R3": false,
+        "introduces_no_dimensionful_input_at_route_selection": true,
+        "has_a_sharp_next_audit": false
+      },
+      "decision": "rejected_by_freeze",
+      "pass_count": 2
+    },
+    {
+      "route": "insert_open_jump_or_select_one_character_branch",
+      "passes": {
+        "obeys_compacton_freeze": false,
+        "does_not_require_single_plus_minus_i_selection": false,
+        "reuses_derived_project_data": true,
+        "attacks_internal_cooling_gap": false,
+        "attacks_R2_or_R3": false,
+        "introduces_no_dimensionful_input_at_route_selection": false,
+        "has_a_sharp_next_audit": false
+      },
+      "decision": "rejected_as_manual_gamma_or_boundary_choice",
+      "pass_count": 1
+    },
+    {
+      "route": "solve_absolute_scale_before_dynamics",
+      "passes": {
+        "obeys_compacton_freeze": false,
+        "does_not_require_single_plus_minus_i_selection": true,
+        "reuses_derived_project_data": true,
+        "attacks_internal_cooling_gap": false,
+        "attacks_R2_or_R3": false,
+        "introduces_no_dimensionful_input_at_route_selection": false,
+        "has_a_sharp_next_audit": true
+      },
+      "decision": "deferred_because_scale_nullity_is_not_the_first_dynamic_obstruction",
+      "pass_count": 3
+    },
+    {
+      "route": "start_an_unconstrained_new_parent",
+      "passes": {
+        "obeys_compacton_freeze": true,
+        "does_not_require_single_plus_minus_i_selection": true,
+        "reuses_derived_project_data": false,
+        "attacks_internal_cooling_gap": true,
+        "attacks_R2_or_R3": true,
+        "introduces_no_dimensionful_input_at_route_selection": true,
+        "has_a_sharp_next_audit": false
+      },
+      "decision": "admissible_in_principle_but_not_minimal_or_testable_yet",
+      "pass_count": 5
+    },
+    {
+      "route": "real_pair_radiative_cooling_parent",
+      "passes": {
+        "obeys_compacton_freeze": true,
+        "does_not_require_single_plus_minus_i_selection": true,
+        "reuses_derived_project_data": true,
+        "attacks_internal_cooling_gap": true,
+        "attacks_R2_or_R3": true,
+        "introduces_no_dimensionful_input_at_route_selection": true,
+        "has_a_sharp_next_audit": true
+      },
+      "decision": "selected_as_next_audit_only_not_as_a_derived_mechanism",
+      "pass_count": 7
+    },
+    {
+      "route": "terminate_tome_without_one_last_bridge_test",
+      "passes": {
+        "obeys_compacton_freeze": true,
+        "does_not_require_single_plus_minus_i_selection": true,
+        "reuses_derived_project_data": false,
+        "attacks_internal_cooling_gap": false,
+        "attacks_R2_or_R3": false,
+        "introduces_no_dimensionful_input_at_route_selection": true,
+        "has_a_sharp_next_audit": false
+      },
+      "decision": "fallback_if_selected_bridge_fails",
+      "pass_count": 3
+    }
+  ],
+  "selected_route": "real_pair_radiative_cooling_parent",
+  "bridge_data": {
+    "coexistence_beta": 1.5426695408602848,
+    "spinodal_beta": 10.5,
+    "entropy_export_required": 0.7402345697629901,
+    "effective_energy_released_at_coexistence": 0.479840011199152,
+    "four_state_entropy_capacity": 1.3862943611198906,
+    "minimal_clock_axis_ceiling": 0.6666666666666666,
+    "target_axis_weight": 0.9121665962741361,
+    "affine_resonant_rank": 3,
+    "radiation_density": 6.283185307219326,
+    "radiation_coefficient_per_cycle": 39.478417604607124,
+    "absolute_scale_nullity": 1
+  },
+  "next_gate_contract": {
+    "role_assignment": {
+      "projective_order_parameter": "system whose cooling and instability are to be derived",
+      "real_pair": "globally neutral transition/output structure; no selection of one conjugate branch is requested",
+      "compacton": "auxiliary finite-amplitude oscillator and source of an already measured radiation form factor, not a particle endpoint",
+      "radiation_continuum": "candidate entropy/energy carrying channel, not assumed to be a thermal bath"
+    },
+    "required_derivations": [
+      "a Real-even pair-summed radiation current that does not cancel under the full KO6 completion",
+      "one parent energy balance coupling the projective order parameter, compacton oscillator and outgoing modes",
+      "derivation of the excitation amplitude delta from the parent state or coupling rather than treating it as an input",
+      "a reduced beta update or equivalent monotone obtained from the closed dynamics rather than prescribed beta(t)",
+      "crossing of beta_c or beta_sp for a nonzero set of admissible initial states",
+      "survival long enough of the auxiliary oscillator to complete the transfer"
+    ],
+    "immediate_stop_conditions": [
+      "the plus/minus Real contributions cancel the pair-summed radiation current",
+      "the conversion from radiation norm to projective energy requires a new free coefficient",
+      "delta, gamma, beta(t), a C4 axis or a bath state must be inserted independently",
+      "total energy cannot be conserved by one parent interaction",
+      "the compacton source is destroyed before the projective system reaches coexistence or spinodal instability"
+    ]
+  },
+  "verdict": {
+    "compacton_particle_branch_reopened": false,
+    "compacton_data_reused_in_new_role": true,
+    "single_character_selection_required": false,
+    "new_physical_mechanism_already_derived": false,
+    "one_minimal_bridge_test_remains": true,
+    "status": "the compacton remains frozen as a matter endpoint. The only minimal next test that obeys the freeze and attacks an existing dynamic gap is to ask whether the Real-pair-summed compacton radiation can be embedded in one energy-conserving parent as the internal cooling channel of the already derived projective first-order transition. This is a selected audit target, not a positive mechanism claim.",
+    "next_gate": "version6_spectral_transition_real_pair_radiative_cooling_parent_gate"
+  }
+}

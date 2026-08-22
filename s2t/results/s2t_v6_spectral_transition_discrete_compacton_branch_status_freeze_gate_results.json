@@ -1,0 +1,94 @@
+{
+  "gate": "version6_spectral_transition_discrete_compacton_branch_status_freeze_gate",
+  "source_gate_count": 8,
+  "source_gates": [
+    "version6_spectral_transition_discrete_compacton_existence_gate",
+    "version6_spectral_transition_discrete_compacton_stability_quantization_gate",
+    "version6_spectral_transition_discrete_compacton_physical_scale_map_gate",
+    "version6_spectral_transition_discrete_compacton_dynamical_capture_gate",
+    "version6_spectral_transition_compacton_c4_affine_selector_admissibility_gate",
+    "version6_spectral_transition_discrete_compacton_c4_boundary_eta_dissipation_gate",
+    "version6_spectral_transition_discrete_compacton_energy_degeneracy_boundary_overlap_gate",
+    "version6_spectral_transition_discrete_compacton_character_resolved_radiation_form_factor_gate"
+  ],
+  "exact_ledger": {
+    "minimal_coupling": 6.283185307179586,
+    "return_law": "F^2(Psi)=-Psi",
+    "generic_captures": 0,
+    "generic_trials": 36,
+    "scale_nullity": 1,
+    "reduced_expanding_multiplier_count": 0,
+    "radiation_density": 6.283185307219326,
+    "radiation_coefficient": 39.478417604607124,
+    "undesired_character_is_damped": false
+  },
+  "R0_R6_ledger": {
+    "R0": {
+      "status": "partial",
+      "finding": "The chiral walk carrier is explicit, but the selected spatial axis and the S4-to-C4 boundary are conditional choices rather than consequences of the full physical H15 parent."
+    },
+    "R1": {
+      "status": "partial",
+      "finding": "One exact nonlinear unitary walk generates the compacton, but the C4 boundary, affine selector and any open-system law are not derived from the same Real/gauge parent functional."
+    },
+    "R2": {
+      "status": "failed",
+      "finding": "The exact family is not an isolated attractor, its two-step law is F^2=-1, and none of 36 generic localized trials is captured."
+    },
+    "R3": {
+      "status": "failed",
+      "finding": "Eta/Pfaffian data give orientation but zero decay rate. The exact coefficient 4pi^2 measures secular core radiation, not a normalized creation or capture rate."
+    },
+    "R4": {
+      "status": "failed",
+      "finding": "A finite-support solution with locally neutral Floquet spectrum exists, but there is a continuous invariant manifold, a neutral quadrature and finite-amplitude radiative escape rather than a unique stable endpoint."
+    },
+    "R5": {
+      "status": "failed",
+      "finding": "Kappa=2pi and E*L=pi*hbar*c are scale-free lattice relations; no absolute mass, size, lifetime or physical rate is predicted."
+    },
+    "R6": {
+      "status": "passed",
+      "finding": "Existence, stability, scale, capture, symmetry, eta, degeneracy and radiation claims all have reproducible machine certificates and explicit stop criteria."
+    }
+  },
+  "status_counts": {
+    "passed": 1,
+    "partial": 2,
+    "failed": 4
+  },
+  "retained_results": [
+    "exact two-site compactons at kappa=2(2m+1)pi with minimal branch 2pi",
+    "the exact continuous two-site manifold with F^2=-1",
+    "absence of expanding symmetry-reduced Floquet multipliers in the tested finite volumes",
+    "the coefficient-free diagnostic D_chi=4 w_plus w_minus with zero locus plus/minus i",
+    "a consistent conditional S4-to-one-C4 boundary construction",
+    "the exact outgoing density rho_rad(0)=2pi and coefficient 4pi^2",
+    "the compacton as a benchmark for nonlinear localization and radiative escape"
+  ],
+  "rejected_claims": [
+    "autonomous formation from generic or vacuum initial data",
+    "canonical selection of one plus/minus i branch by the existing parent",
+    "eta/Pfaffian-derived amplitude damping or a parent-derived gamma",
+    "radiative stabilization through the already present massless continuum",
+    "an absolute compacton mass, size or lifetime",
+    "identification of the compacton with a physically admitted matter-birth endpoint"
+  ],
+  "freeze_rule": {
+    "same_architecture_variants_allowed": false,
+    "reopening_requires_simultaneously": [
+      "a parent-derived physical scale",
+      "a nonzero basin of capture from generic or vacuum-compatible initial data",
+      "negative real decay for every physical transverse character quadrature while the core survives",
+      "derivation of the C4 boundary or affine mixer and the open channel from one parent",
+      "a normalized physical rate or blind observable"
+    ]
+  },
+  "verdict": {
+    "exact_mathematical_branch_retained": true,
+    "autonomous_matter_birth_mechanism_admitted": false,
+    "compacton_branch_frozen": true,
+    "status": "the discrete compacton branch is a genuine exact nonlinear lattice solution and a useful radiation benchmark, but it fails R2--R5 and only partially satisfies R0--R1. It is therefore frozen as an autonomous matter-birth mechanism; further variants are barred unless one new parent simultaneously derives scale, capture, all-quadrature damping, boundary coupling and a physical rate.",
+    "next_gate": "version6_spectral_transition_post_compacton_program_reprioritization_gate"
+  }
+}

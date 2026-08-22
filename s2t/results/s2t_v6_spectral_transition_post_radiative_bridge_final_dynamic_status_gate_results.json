@@ -1,0 +1,93 @@
+{
+  "gate": "version6_spectral_transition_post_radiative_bridge_final_dynamic_status_gate",
+  "supersedes_status_gate": "version6_spectral_transition_dynamic_closure_status_gate",
+  "strict_result_ledger": {
+    "KO6_Toeplitz_classification": "closed",
+    "rank_change_and_exchange_bridge_kinematics": "closed",
+    "projective_static_transition_landscape": "closed_within_declared_functional",
+    "projective_Q_field_and_mode_decomposition": "closed",
+    "exact_discrete_compacton_branch": "closed_as_mathematical_solution_only",
+    "Real_even_radiation_coefficient_4pi2": "closed",
+    "factorized_common_carrier_no_go": "closed_negative_result"
+  },
+  "exact_numbers_retained": {
+    "projective_coexistence_beta": 1.5426695408602848,
+    "projective_spinodal_beta": 10.5,
+    "ordering_entropy_export_required": 0.7402345697629901,
+    "ordering_effective_energy_released": 0.479840011199152,
+    "minimal_compacton_coupling": 6.283185307179586,
+    "compacton_radiation_density": 6.283185307219326,
+    "Real_pair_radiation_coefficient": 39.47841760722931,
+    "factorized_lift_family_state_residual": 1.7690991444785065e-16
+  },
+  "physical_dynamic_obligations": {
+    "one_parent_action": false,
+    "vacuum_compatible_endogenous_trigger": false,
+    "normalized_creation_or_cooling_rate": false,
+    "irreversible_internal_cooling_law": false,
+    "unique_stable_localized_matter_endpoint": false,
+    "absolute_dynamic_scale_or_blind_abundance": false
+  },
+  "final_R0_R6_contract": {
+    "R0_typed_physical_carrier": {
+      "status": "partial",
+      "reason": "the family, H15 and walk carriers are individually explicit, but no single attributed interacting carrier contains all three sectors"
+    },
+    "R1_single_parent_functional": {
+      "status": "failed",
+      "reason": "the compacton rule, C4 boundary, affine map, projective free energy and outgoing channel do not arise from one parent action"
+    },
+    "R2_endogenous_trigger": {
+      "status": "failed",
+      "reason": "the cooling law and vacuum-compatible capture basin are absent; none of 36 generic compacton trials was captured"
+    },
+    "R3_path_measure_and_rate": {
+      "status": "failed",
+      "reason": "4pi2 is a walk radiation norm coefficient, not a normalized creation or cooling rate; delta, time and conversion remain free"
+    },
+    "R4_stable_localized_endpoint": {
+      "status": "failed",
+      "reason": "the compacton has a continuous neutral manifold and radiative escape and is frozen as a physical endpoint"
+    },
+    "R5_blind_numeric_prediction": {
+      "status": "failed",
+      "reason": "no absolute mass, size, lifetime, rate or defect abundance follows from the dynamic branch"
+    },
+    "R6_prefixed_failure_certificates": {
+      "status": "passed",
+      "reason": "all positive claims and stop conditions are linked to reproducible gate-audit-result certificates"
+    }
+  },
+  "final_R0_R6_counts": {
+    "passed": 1,
+    "partial": 1,
+    "failed": 5
+  },
+  "status_transitions_after_earlier_closure": {
+    "new_exact_nonlinear_solution_found": true,
+    "compacton_endpoint_admitted": false,
+    "Real_even_radiation_clue_survived": true,
+    "radiation_became_projective_cooling": false,
+    "single_parent_functional_status": "downgraded_from_partial_candidate_to_failed_after_common_carrier_attribution"
+  },
+  "freeze_rule": {
+    "continue_same_dynamic_architecture": false,
+    "new_gate_allowed_only_if_it_supplies": [
+      "one gauge and Real compatible parent action on a common carrier",
+      "a vacuum-compatible endogenous trigger",
+      "a normalized measure and physical rate",
+      "a unique stable localized endpoint",
+      "one blind observable not inserted as input"
+    ],
+    "editorial_conclusion_of_tome6_allowed": true
+  },
+  "verdict": {
+    "Tome_VI_is_valid_classification_and_kinematics_base": true,
+    "Tome_VI_contains_new_exact_nonlinear_and_radiative_results": true,
+    "Tome_VI_derives_autonomous_matter_birth": false,
+    "Tome_VI_physical_dynamic_branch_frozen": true,
+    "unchanged_architecture_must_stop": true,
+    "status": "after the earlier classification and kinematic closure, Tome VI tested an exact nonlinear compacton parent and the last Real-pair radiative bridge. The compacton is retained only as a mathematical solution and radiation benchmark. The positive coefficient 4pi2 survives the Real half-trace, but no common parent interaction changes the family state R. The final dynamic contract therefore has one pass, one partial item and five failures. Tome VI remains a reproducible classification, static phase and kinematic foundation, but it does not derive autonomous matter birth, a physical rate or a stable observed endpoint. The present dynamic architecture is frozen; only an editorial conclusion may follow without new parent input.",
+    "next_gate": "version6_final_conclusion_and_next_program"
+  }
+}

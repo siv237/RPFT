@@ -1,0 +1,68 @@
+{
+  "gate": "version6_spectral_transition_radiative_cooling_common_carrier_attribution_gate",
+  "existing_carrier_attribution": {
+    "full_internal_bimodule_dimension": 300,
+    "full_bimodule_commutant": "C_times_identity",
+    "physical_one_family_carrier_dimension": 15,
+    "physical_species_commutant_dimension": 5,
+    "family_triplet_dimension": 3,
+    "family_full_matrix_action_commutant_dimension": 1,
+    "smallest_nonzero_commutant_constraint_singular_value": 2.449489742783177
+  },
+  "factorized_lift_no_go": {
+    "family_dimension": 3,
+    "walk_dimension": 6,
+    "random_entangled_joint_state_trials": 24,
+    "maximum_family_reduced_state_residual_after_I3_tensor_Uwalk": 1.7690991444785065e-16,
+    "maximum_joint_trace_residual": 4.44120803098268e-16,
+    "exact_statement": "for every joint state Omega, Tr_walk[(I3 tensor U) Omega (I3 tensor U*)]=Tr_walk(Omega)"
+  },
+  "candidate_ledger": {
+    "full_M20_M15_bimodule": {
+      "already_exists": true,
+      "contains_compacton_internal_carrier": true,
+      "contains_family_selective_intertwiner": false,
+      "obstruction": "the full bimodule commutant is C times the identity"
+    },
+    "physical_H15_reduction": {
+      "already_exists": true,
+      "contains_chiral_compacton_sector": true,
+      "contains_family_R_sector": false,
+      "obstruction": "its five central blocks distinguish Standard Model species within one family line, not the SO(3) family triplet"
+    },
+    "affine_P3_coisometry": {
+      "already_exists": true,
+      "contains_family_R_sector": true,
+      "contains_outgoing_spatial_chiral_modes": false,
+      "obstruction": "the canonical rho V coupling is isotropic and preserves R=I3/3"
+    },
+    "declared_tensor_product_C3_family_tensor_walk": {
+      "already_exists_as_named_parent": false,
+      "kinematically_well_defined": true,
+      "canonical_factorized_lift_changes_R": false,
+      "obstruction": "I3 tensor U_walk leaves the family reduced state invariant; a nontrivial coupling requires new Q- or P-dependent data"
+    }
+  },
+  "required_parent_items": {
+    "one_existing_declared_carrier_contains_family_chiral_and_spatial_factors": false,
+    "canonical_intertwiner_is_non_scalar_on_family_triplet": false,
+    "intertwiner_changes_family_spectrum_without_assuming_axis_P": false,
+    "same_trace_normalization_covers_projective_energy_and_walk_flux": false,
+    "derived_partial_trace_identifies_outgoing_modes_as_family_environment": false,
+    "no_new_coupling_or_scale_is_required": false
+  },
+  "passed_parent_item_count": 0,
+  "retained_exact_data": {
+    "Real_pair_positive_radiation_flux": 39.47841760722931,
+    "expected_4pi2": 39.47841760435743,
+    "radiation_flux_is_dynamically_attributed_to_R": false
+  },
+  "verdict": {
+    "common_ambient_tensor_product_can_be_declared": true,
+    "common_carrier_is_already_derived_as_one_parent": false,
+    "canonical_existing_intertwiner_changes_R": false,
+    "radiative_cooling_route_closed_at_existing_parent_level": true,
+    "status": "the family triplet and compacton walk can be placed in a common tensor product, but this is a new kinematic declaration rather than an existing attributed parent. The full M20-M15 commutant is scalar, the physical H15 projectors distinguish species rather than families, and the affine P3 link is isotropic. The only coefficient-free factorized lift is identity on the family factor and exactly preserves the reduced state R, including for entangled joint states. A cooling interaction would therefore require a new Q- or P-dependent intertwiner, normalization and subsystem split. The exact 4pi^2 radiation coefficient remains valid but dynamically disconnected from projective ordering.",
+    "next_gate": "version6_spectral_transition_post_radiative_bridge_final_dynamic_status_gate"
+  }
+}

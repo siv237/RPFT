@@ -1,0 +1,117 @@
+{
+  "gate": "version6_spectral_transition_real_pair_radiative_cooling_parent_gate",
+  "Real_pair_radiation_test": {
+    "plus_packet_norm_squared": 39.47841760722931,
+    "minus_packet_norm_squared": 39.47841760722931,
+    "physical_half_trace_flux": 39.47841760722931,
+    "expected_4pi2": 39.47841760435743,
+    "half_trace_flux_residual": 2.8718787348225305e-09,
+    "minus_packet_is_conjugate_plus_packet_residual": 2.625137564580237e-10,
+    "Real_odd_oriented_amplitude_residual": 2.625137564580237e-10,
+    "cross_overlap": [
+      2.441517210627353e-09,
+      0.0
+    ],
+    "interpretation": "Real conjugation cancels orientation-sensitive linear data but the positive quadratic radiation flux survives the physical half-trace with coefficient 4pi^2 rather than doubling or vanishing"
+  },
+  "conditional_energy_matching": {
+    "projective_effective_energy_released_at_coexistence": 0.479840011199152,
+    "assumption_for_table_only": "one unit of walk tangent norm squared equals one unit of projective effective energy",
+    "cycle_scan": [
+      {
+        "cycles": 1,
+        "delta_if_walk_norm_equals_projective_energy": 0.11024740120532768,
+        "delta_squared_times_cycles": 0.012154489472528488,
+        "weak_core_survival_if_same_coefficient": 0.6188823981387217
+      },
+      {
+        "cycles": 2,
+        "delta_if_walk_norm_equals_projective_energy": 0.07795668500048115,
+        "delta_squared_times_cycles": 0.012154489472528486,
+        "weak_core_survival_if_same_coefficient": 0.6188823981387217
+      },
+      {
+        "cycles": 4,
+        "delta_if_walk_norm_equals_projective_energy": 0.05512370060266384,
+        "delta_squared_times_cycles": 0.012154489472528488,
+        "weak_core_survival_if_same_coefficient": 0.6188823981387217
+      },
+      {
+        "cycles": 8,
+        "delta_if_walk_norm_equals_projective_energy": 0.03897834250024058,
+        "delta_squared_times_cycles": 0.012154489472528486,
+        "weak_core_survival_if_same_coefficient": 0.6188823981387217
+      },
+      {
+        "cycles": 16,
+        "delta_if_walk_norm_equals_projective_energy": 0.02756185030133192,
+        "delta_squared_times_cycles": 0.012154489472528488,
+        "weak_core_survival_if_same_coefficient": 0.6188823981387217
+      },
+      {
+        "cycles": 32,
+        "delta_if_walk_norm_equals_projective_energy": 0.01948917125012029,
+        "delta_squared_times_cycles": 0.012154489472528486,
+        "weak_core_survival_if_same_coefficient": 0.6188823981387217
+      }
+    ],
+    "degeneracy": "for an unknown conversion chi, only chi*N*4pi^2*delta^2=DeltaE is fixed; neither chi nor delta nor N is selected",
+    "unit_conversion_is_parent_derived": false
+  },
+  "entropy_test": {
+    "required_export": 0.7402345697629901,
+    "global_walk_update_is_unitary": true,
+    "global_pure_radiation_state_entropy_increase": 0.0,
+    "orthogonal_outgoing_packets_exist": true,
+    "entropy_increase_requires_reduced_state_or_coarse_graining": true,
+    "projective_system_outgoing_mode_tensor_factor_and_partial_trace_derived": false
+  },
+  "parent_ledger": {
+    "Real_even_pair_flux_survives_half_trace": true,
+    "Real_odd_oriented_amplitude_survives": false,
+    "compacton_walk_and_projective_R_share_one_declared_Hilbert_carrier": false,
+    "common_parent_action_normalizes_walk_flux_against_projective_energy": false,
+    "derived_interaction_between_R_and_outgoing_walk_modes": false,
+    "delta_derived_from_parent_state": false,
+    "physical_step_time_derived": false,
+    "monotone_beta_law_derived": false,
+    "outgoing_unitary_radiation_by_itself_exports_von_Neumann_entropy": false,
+    "coarse_graining_or_partial_trace_to_define_entropy_sink_derived": false,
+    "canonical_affine_link_is_axis_selective": false
+  },
+  "required_parent_items": [
+    "Real_even_pair_flux_survives_half_trace",
+    "compacton_walk_and_projective_R_share_one_declared_Hilbert_carrier",
+    "common_parent_action_normalizes_walk_flux_against_projective_energy",
+    "derived_interaction_between_R_and_outgoing_walk_modes",
+    "delta_derived_from_parent_state",
+    "monotone_beta_law_derived",
+    "coarse_graining_or_partial_trace_to_define_entropy_sink_derived"
+  ],
+  "passed_parent_items": [
+    "Real_even_pair_flux_survives_half_trace"
+  ],
+  "failed_parent_items": [
+    "compacton_walk_and_projective_R_share_one_declared_Hilbert_carrier",
+    "common_parent_action_normalizes_walk_flux_against_projective_energy",
+    "derived_interaction_between_R_and_outgoing_walk_modes",
+    "delta_derived_from_parent_state",
+    "monotone_beta_law_derived",
+    "coarse_graining_or_partial_trace_to_define_entropy_sink_derived"
+  ],
+  "projective_thresholds": {
+    "coexistence_beta": 1.5426695408602848,
+    "spinodal_beta": 10.5,
+    "crossing_derived": false
+  },
+  "verdict": {
+    "Real_pair_positive_radiation_current_nonzero": true,
+    "Real_pair_phase_or_oriented_current_nonzero": false,
+    "one_energy_conserving_cooling_parent_derived": false,
+    "radiation_norm_is_projective_heat_current": false,
+    "internal_beta_law_derived": false,
+    "route_passes_parent_gate": false,
+    "status": "the first obstruction is avoided: the Real-pair half-trace preserves the positive radiation coefficient 4pi^2 even though oriented amplitudes cancel. The parent gate nevertheless fails because the compacton walk and projective order parameter have no shared declared carrier, interaction or common energy normalization; delta and the physical step time remain free, and unitary outgoing packets export no projective entropy without an additional derived subsystem trace. Therefore the existing radiation channel is not yet an internal cooling law.",
+    "next_gate": "version6_spectral_transition_radiative_cooling_common_carrier_attribution_gate"
+  }
+}
