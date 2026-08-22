@@ -1,0 +1,38 @@
+{
+  "gate": "version6_spectral_transition_dynamic_closure_status_gate",
+  "closure_levels": {
+    "KO6_Toeplitz_classification": "closed",
+    "rank_change_kinematics": "closed",
+    "finite_transition_saddle": "control_only",
+    "new_numeric_observable": "selection_rules_only",
+    "endogenous_trigger": "open",
+    "creation_probability_and_rate": "open",
+    "stable_observed_endpoint": "open"
+  },
+  "counts": {
+    "closed": 2,
+    "partial_or_control": 2,
+    "open": 3
+  },
+  "global_verdict": {
+    "classification_closure": true,
+    "kinematic_closure": true,
+    "physical_transition_language_supported": true,
+    "project_full_generation_saddle": false,
+    "endogenous_trigger": false,
+    "creation_rate": false,
+    "stable_endpoint": false,
+    "unified_matter_birth": false,
+    "unchanged_architecture_must_stop": true,
+    "physical_dynamic_closure": false
+  },
+  "minimal_new_model_contract": [
+    "gauge_and_Real_covariant_path_on_full_physical_carrier",
+    "one_parent_functional_for_vacuum_saddle_and_endpoint",
+    "derived_instability_or_quantum_nucleation",
+    "computable_rate_with_measure_and_prefactor",
+    "stable_localized_endpoint",
+    "new_numeric_observable_not_inserted_as_input"
+  ],
+  "next_gate": "version6_spectral_transition_new_model_minimal_requirements_gate"
+}

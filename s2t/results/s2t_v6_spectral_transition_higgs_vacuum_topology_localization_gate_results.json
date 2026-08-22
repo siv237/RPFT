@@ -1,0 +1,58 @@
+{
+  "gate": "version6_spectral_transition_higgs_vacuum_topology_localization_gate",
+  "vacuum_manifold": {
+    "constraint": "H^dagger H=v^2/2 in C^2",
+    "homogeneous_space": "(SU(2)_L x U(1)_Y)/U(1)_em",
+    "topology": "S^3",
+    "homotopy_groups": {
+      "pi0": "0",
+      "pi1": "0",
+      "pi2": "0",
+      "pi3": "Z"
+    }
+  },
+  "explicit_loop_contraction": {
+    "formula": "h_t(phi)=(sin(pi t/2), cos(pi t/2) exp(i n phi))",
+    "tested_windings": [
+      1,
+      2,
+      7
+    ],
+    "max_unit_norm_residual": 6.661338147750939e-16,
+    "max_constant_endpoint_residual": 0.0,
+    "crosses_H_zero": false
+  },
+  "explicit_sphere_contraction": {
+    "formula": "F_t(n)=(sqrt(1-t^2) n,t)",
+    "sample_points": 33153,
+    "max_unit_norm_residual": 5.551115123125783e-16,
+    "max_constant_endpoint_residual": 0.0,
+    "crosses_H_zero": false
+  },
+  "rank_change_audit": {
+    "sample_count": 512,
+    "unique_ranks_of_W_nu_on_normalized_Higgs_vacuum": [
+      1
+    ],
+    "max_projector_residual": 4.75558632924383e-16,
+    "pi3_texture_can_keep_H_nonzero_everywhere": true,
+    "pi3_texture_forces_rank_zero_core": false
+  },
+  "defect_classification": {
+    "domain_wall_from_one_Higgs_doublet": false,
+    "topological_string_from_one_Higgs_doublet": false,
+    "topological_monopole_from_one_Higgs_doublet": false,
+    "texture_class_exists": true,
+    "texture_localizes_rank_change_0_to_1": false,
+    "embedded_or_semilocal_saddles_excluded": false
+  },
+  "verdict": {
+    "one_Higgs_doublet_topologically_localizes_H_zero": false,
+    "one_Higgs_doublet_topologically_localizes_W_nu_rank_change": false,
+    "alternative_global_electroweak_quotient_is_current_parent_derived": false,
+    "non_topological_dynamic_localization_remains_open": true,
+    "physical_closure": false,
+    "status": "S^3 has trivial pi0, pi1 and pi2; pi3 textures keep the Higgs norm nonzero, so one standard doublet does not topologically force the rank-changing core"
+  },
+  "next_gate": "version6_spectral_transition_higgs_zero_finite_energy_saddle_gate"
+}

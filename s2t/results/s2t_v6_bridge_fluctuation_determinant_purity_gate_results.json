@@ -1,0 +1,89 @@
+{
+  "gate": "version6_bridge_fluctuation_determinant_purity_gate",
+  "state_weighted_bridge": {
+    "state": "tau5 tensor R",
+    "normalized": true,
+    "recovers_uniform_trace_at_R_equal_I3_over_3": true,
+    "new_classical_coefficient_added": false
+  },
+  "physical_hessian": {
+    "zero_orbit_modes": 3,
+    "physical_symmetric_modes": 6,
+    "diagonal_eigenvalues": "(16/7)*r_i",
+    "offdiagonal_eigenvalues": "(8/7)*(r_i+r_j)",
+    "isotropic_eigenvalues": [
+      0.7619047619047619,
+      0.7619047619047619,
+      0.7619047619047619,
+      0.7619047619047619,
+      0.7619047619047619,
+      0.7619047619047619
+    ],
+    "isotropic_expected_value": 0.7619047619047619
+  },
+  "one_loop_purity_expansion": {
+    "formula": "0.5*(sum log r_i + sum log(r_i+r_j)) + constant",
+    "extracted_quadratic_coefficients": [
+      -2.8125834994341403,
+      -2.8125113349375397,
+      -2.812500787818806,
+      -2.8125000106626885,
+      -2.8125001105827607,
+      -2.81250107592168,
+      -2.812510757954634,
+      -2.8126075843071248,
+      -2.813576398654205
+    ],
+    "exact_quadratic_coefficient": "-45/16",
+    "induced_alignment_kappa": 2.8125,
+    "required_threshold_log4_plus_6_over_7": 2.2434372182627476,
+    "threshold_passed": true,
+    "entropy_plus_bridge_minus_loop_exact": "-51/112",
+    "entropy_plus_bridge_minus_loop": -0.45535714285714285,
+    "isotropic_local_instability": true
+  },
+  "breakdown_test": {
+    "boundary_scan": [
+      {
+        "epsilon": 0.1,
+        "one_loop_effective_action": -1.1600025525858422,
+        "smallest_physical_hessian_eigenvalue": 0.22857142857142856
+      },
+      {
+        "epsilon": 0.01,
+        "one_loop_effective_action": -2.2536896783275338,
+        "smallest_physical_hessian_eigenvalue": 0.022857142857142857
+      },
+      {
+        "epsilon": 0.0001,
+        "one_loop_effective_action": -4.551199610894664,
+        "smallest_physical_hessian_eigenvalue": 0.00022857142857142857
+      },
+      {
+        "epsilon": 1e-06,
+        "one_loop_effective_action": -6.8537351913897915,
+        "smallest_physical_hessian_eigenvalue": 2.2857142857142856e-06
+      },
+      {
+        "epsilon": 1e-08,
+        "one_loop_effective_action": -9.15631978938259,
+        "smallest_physical_hessian_eigenvalue": 2.2857142857142858e-08
+      }
+    ],
+    "one_loop_action_unbounded_toward_rank_loss": true,
+    "fluctuation_mass_vanishes_at_same_boundary": true,
+    "finite_nonlinear_saturation_derived": false
+  },
+  "measure_status": {
+    "flat_measure_on_physical_symmetric_modes": "control_assumption",
+    "full_BV_measure_derived": false,
+    "polar_jacobian_included": false
+  },
+  "verdict": {
+    "self_started_local_RP2_instability": "conditional_pass",
+    "external_time_kick_required_for_local_instability": false,
+    "stable_ordered_phase_proved": false,
+    "matter_birth_proved": false,
+    "next_gate": "version6_state_weighted_bridge_nonperturbative_saturation_gate"
+  }
+}

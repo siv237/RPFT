@@ -1,0 +1,95 @@
+{
+  "gate": "version6_closed_bridge_destabilization_gate",
+  "early_project_reframing": {
+    "counterphase_cancellation": true,
+    "persistent_vacuum_fluctuations": true,
+    "big_bang_as_nonadiabatic_mismatch": "testable_reframing"
+  },
+  "bare_circle_phase": {
+    "order_parameter_space": "S1",
+    "pi_1": "Z",
+    "pi_2": "0",
+    "phase_samples": [
+      {
+        "phase": 0.0,
+        "singular_value_residual": 0.0,
+        "fixed_real_exchange_scalar_residual": 0.0
+      },
+      {
+        "phase": 0.3,
+        "singular_value_residual": 0.0,
+        "fixed_real_exchange_scalar_residual": 0.43145950172555575
+      },
+      {
+        "phase": 1.1,
+        "singular_value_residual": 4.2998752849492583e-16,
+        "fixed_real_exchange_scalar_residual": 1.3011627456896957
+      },
+      {
+        "phase": 2.4,
+        "singular_value_residual": 0.0,
+        "fixed_real_exchange_scalar_residual": 0.9861762436046804
+      }
+    ],
+    "canonical_spectrum_depends_only_on_modulus": true,
+    "fixed_real_exchange_allows_arbitrary_phase": false,
+    "three_dimensional_point_defect_route": "fail",
+    "natural_defect_codimension": "line_or_flux_defect"
+  },
+  "projective_orientation_quench": {
+    "order_parameter_space": "RP2",
+    "pi_1": "Z2",
+    "pi_2": "Z",
+    "three_dimensional_point_defects_supported": true,
+    "minimal_hedgehog_lift_degrees": [
+      1,
+      -1
+    ],
+    "coefficient_rank": 15,
+    "local_oriented_K_classes": [
+      15,
+      -15
+    ],
+    "global_oriented_charge_of_pair": 0,
+    "spin_cover_and_Hopf_line_bridge_reused": true
+  },
+  "kibble_zurek_conditional_scaling": {
+    "correlation_length_formula": "xi_hat/xi_0=(tau_Q/tau_0)^(nu/(1+z*nu))",
+    "point_density_formula": "n_point~xi_hat^(-3)",
+    "illustrative_nu": 0.5,
+    "illustrative_z": 2.0,
+    "illustrative_freezeout_exponent": 0.25,
+    "samples": [
+      {
+        "tau_Q_over_tau_0": 1.0,
+        "xi_hat_over_xi_0": 1.0,
+        "conditional_point_defect_density_times_xi_0_cubed": 1.0
+      },
+      {
+        "tau_Q_over_tau_0": 10.0,
+        "xi_hat_over_xi_0": 1.7782794100389228,
+        "conditional_point_defect_density_times_xi_0_cubed": 0.1778279410038923
+      },
+      {
+        "tau_Q_over_tau_0": 100.0,
+        "xi_hat_over_xi_0": 3.1622776601683795,
+        "conditional_point_defect_density_times_xi_0_cubed": 0.031622776601683784
+      },
+      {
+        "tau_Q_over_tau_0": 10000.0,
+        "xi_hat_over_xi_0": 10.0,
+        "conditional_point_defect_density_times_xi_0_cubed": 0.001
+      }
+    ],
+    "project_critical_exponents_derived": false,
+    "project_microphysical_scales_derived": false
+  },
+  "verdict": {
+    "bare_holonomy_phase_as_particle_birth": "fail_wrong_codimension",
+    "projective_quench_as_pair_exposure": "conditional_kinematic_pass",
+    "static_vacuum_instability_required": false,
+    "nonequilibrium_history_required": true,
+    "matter_birth_proved": false,
+    "next_gate": "version6_projective_quench_parent_dynamics_gate"
+  }
+}

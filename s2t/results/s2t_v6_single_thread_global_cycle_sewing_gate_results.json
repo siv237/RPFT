@@ -1,0 +1,153 @@
+{
+  "gate": "version6_single_thread_global_cycle_sewing_gate",
+  "input": {
+    "local_pass_labels": 4,
+    "ordered_weights": [
+      0.9011874253513867,
+      0.032937524882871085,
+      0.032937524882871085,
+      0.032937524882871085
+    ],
+    "microscopic_no_branching_rule": "one incoming label maps to exactly one outgoing label",
+    "candidate_rule_class": "permutations of four tetrahedral pass labels and standard Real lifts"
+  },
+  "S4_enumeration": {
+    "permutation_count": 24,
+    "cycle_type_counts": {
+      "1+1+1+1": 1,
+      "2+1+1": 6,
+      "2+2": 3,
+      "3+1": 8,
+      "4": 6
+    },
+    "single_four_cycle_count": 6,
+    "all_single_four_cycles_are_odd": true,
+    "maximum_tetrahedral_map_residual": 2.8609792490763985e-16,
+    "maximum_determinant_parity_residual": 4.440892098500626e-16
+  },
+  "proper_tetrahedral_A4": {
+    "element_count": 12,
+    "cycle_type_counts": {
+      "1+1+1+1": 1,
+      "2+2": 3,
+      "3+1": 8
+    },
+    "single_four_cycle_count": 0,
+    "maximum_orbit_size": 3,
+    "one_step_single_cycle_available": false
+  },
+  "ordered_weight_stabilizer": {
+    "element_count": 6,
+    "cycle_type_counts": {
+      "1+1+1+1": 1,
+      "2+1+1": 3,
+      "3+1": 2
+    },
+    "selected_axis_fixed_by_every_element": true,
+    "single_four_cycle_count": 0,
+    "maximum_orbit_size": 3
+  },
+  "canonical_generators": {
+    "residual_Z3": {
+      "permutation": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "cycle_type": "3+1",
+      "cycles": [
+        [
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "parity": 1,
+      "preserves_ordered_weights": true
+    },
+    "order_four_shift": {
+      "permutation": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "cycle_type": "4",
+      "cycles": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "parity": -1,
+      "induced_orthogonal_determinant": -1.0000000000000002,
+      "belongs_to_SO3_tetrahedral_A4": false,
+      "ordered_weight_stationarity_residual": 1.2278907847716647,
+      "can_reproduce_ordered_weights_with_nonuniform_dwell_times": true,
+      "project_derives_required_axis_dwell_suspension": false
+    }
+  },
+  "standard_Real_doubled_lifts": {
+    "diagonal": {
+      "all_S4_lifts": 24,
+      "all_S4_single_8_cycles": 0,
+      "proper_A4_lifts": 12,
+      "proper_A4_single_8_cycles": 0,
+      "C4_lift_cycle_type": "4+4",
+      "Z3_lift_cycle_type": "3+3+1+1"
+    },
+    "Real_flip": {
+      "all_S4_lifts": 24,
+      "all_S4_single_8_cycles": 0,
+      "proper_A4_lifts": 12,
+      "proper_A4_single_8_cycles": 0,
+      "C4_lift_cycle_type": "4+4",
+      "Z3_lift_cycle_type": "6+2"
+    },
+    "arrow_reversal": {
+      "all_S4_lifts": 24,
+      "all_S4_single_8_cycles": 0,
+      "proper_A4_lifts": 12,
+      "proper_A4_single_8_cycles": 0,
+      "C4_lift_cycle_type": "2+2+2+2",
+      "Z3_lift_cycle_type": "2+2+2+2"
+    }
+  },
+  "coisometry_boundary": {
+    "shape": [
+      3,
+      4
+    ],
+    "rank": 3,
+    "kernel_dimension": 1,
+    "is_bijection_of_four_pass_labels": false,
+    "can_serve_as_moment_frame": true,
+    "can_by_itself_serve_as_no_reconnection_sewing": false
+  },
+  "continuity_boundary": {
+    "local_in_degree_equals_out_degree_for_every_permutation": true,
+    "number_conservation_implies_single_global_cycle": false,
+    "project_currently_contains_parent_transition_permutation": false,
+    "project_currently_contains_ambient_isotopy_or_excluded_crossing_law": false,
+    "topological_vortex_charge_forbids_arbitrary_free_endpoint_in_ordered_bulk": true,
+    "topological_vortex_charge_forbids_reconnection_or_loop_shrinkage": false
+  },
+  "verdict": {
+    "four_pass_local_no_branching_is_mathematically_possible": true,
+    "existing_residual_Z3_sews_one_global_cycle": false,
+    "proper_tetrahedral_A4_sews_one_global_cycle": false,
+    "existing_standard_Real_lifts_sew_one_global_cycle": false,
+    "order_four_shift_is_single_cycle": true,
+    "order_four_shift_is_already_valid_parent_sewing": false,
+    "single_global_thread_hypothesis_refuted": false,
+    "single_global_thread_derived_from_current_parent": false,
+    "no_reconnection_dynamics_derived": false,
+    "next_gate": "version6_single_thread_c4_suspension_parent_gate"
+  }
+}

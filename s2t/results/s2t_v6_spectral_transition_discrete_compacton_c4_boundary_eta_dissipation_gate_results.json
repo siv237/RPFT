@@ -1,0 +1,377 @@
+{
+  "gate": "version6_spectral_transition_discrete_compacton_c4_boundary_eta_dissipation_gate",
+  "selected_axis_compacton": {
+    "axis": [
+      0.5,
+      0.0,
+      0.5
+    ],
+    "boundary_character_targets": [
+      "+i",
+      "-i"
+    ],
+    "local_norm_squared": 0.5,
+    "weak_norm_squared": 0.25,
+    "right_norm_squared": 0.25,
+    "plus_i_residual": 0.0,
+    "minus_i_residual": 0.0,
+    "axis_is_derived_by_this_gate": false,
+    "interpretation": "the chosen balanced internal axis makes the compacton reduction exact, but it is boundary data rather than a dynamically generated axis"
+  },
+  "S4_to_C4_boundary_condition": {
+    "condition": "psi(s+L)=C4 psi(s) with C4=(1234)",
+    "S4_order": 24,
+    "centralizer_order": 4,
+    "centralizer_equals_generated_C4": true,
+    "residual_symmetry": "C4",
+    "affine_character_ranks": {
+      "1": 1,
+      "+i": 1,
+      "-1": 1,
+      "-i": 1
+    },
+    "plus_minus_i_projectors_lie_in_P3": true,
+    "boundary_breaking_is_mathematically_consistent": true,
+    "boundary_breaking_is_parent_derived": false
+  },
+  "eta_pfaffian_phase_audit": {
+    "twist_fractions": {
+      "+i": 0.25,
+      "-i": 0.75
+    },
+    "eta_invariants": {
+      "+i": 0.5,
+      "-i": -0.5
+    },
+    "eta_phases": {
+      "+i": [
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "-i": [
+        0.7071067811865476,
+        0.7071067811865475
+      ]
+    },
+    "eta_relative_phase": [
+      1.5700924586837752e-16,
+      -1.0
+    ],
+    "eta_phase_moduli": {
+      "+i": 1.0,
+      "-i": 1.0
+    },
+    "eta_implied_decay_rates": {
+      "+i": -0.0,
+      "-i": -0.0
+    },
+    "reduced_pfaffian_signs": {
+      "branch_minus": -1.0,
+      "branch_plus": 1.0
+    },
+    "reduced_pfaffian_implied_decay_rates": {
+      "branch_minus": -0.0,
+      "branch_plus": -0.0
+    },
+    "full_KO6_real_pair_phase": 1.0,
+    "full_KO6_phase_cancels": true,
+    "phase_supplies_positive_dissipation_rate": false
+  },
+  "reduced_open_dynamics": {
+    "initial_state": "equal coherent superposition of plus/minus i characters",
+    "weak_test_rate": 0.01,
+    "eta_coherent_phase_history": [
+      {
+        "time": 0.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.4999999999999999,
+        "purity": 0.9999999999999996,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.0
+      },
+      {
+        "time": 25.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.4999999999999999,
+        "purity": 0.9999999999999996,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 1.3877787807814457e-16
+      },
+      {
+        "time": 50.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.4999999999999999,
+        "purity": 0.9999999999999996,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": -5.551115123125783e-17
+      },
+      {
+        "time": 100.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.49999999999999983,
+        "purity": 0.9999999999999996,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 1.6653345369377348e-16
+      },
+      {
+        "time": 200.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.4999999999999999,
+        "purity": 0.9999999999999996,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.0
+      },
+      {
+        "time": 500.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.4999999999999999,
+        "purity": 0.9999999999999996,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.0
+      }
+    ],
+    "eta_dephasing_history": [
+      {
+        "time": 0.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.4999999999999999,
+        "purity": 0.9999999999999996,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.0
+      },
+      {
+        "time": 25.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.3032653298563166,
+        "purity": 0.6839397205857208,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.1967346701436833
+      },
+      {
+        "time": 50.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.18393972058572108,
+        "purity": 0.5676676416183061,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.31606027941427883
+      },
+      {
+        "time": 100.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.0676676416183063,
+        "purity": 0.5091578194443669,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.4323323583816936
+      },
+      {
+        "time": 200.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.00915781944436708,
+        "purity": 0.500167731313951,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.4908421805556328
+      },
+      {
+        "time": 500.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 2.2699964881242383e-05,
+        "purity": 0.5000000010305766,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.49997730003511864
+      }
+    ],
+    "oriented_amplitude_jump_history": [
+      {
+        "time": 0.0,
+        "weight_plus_i": 0.4999999999999999,
+        "weight_minus_i": 0.4999999999999999,
+        "character_population_defect": 0.9999999999999996,
+        "coherence_magnitude": 0.4999999999999999,
+        "purity": 0.9999999999999996,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.0
+      },
+      {
+        "time": 25.0,
+        "weight_plus_i": 0.6105996084642975,
+        "weight_minus_i": 0.38940039153570233,
+        "character_population_defect": 0.951070906430176,
+        "coherence_magnitude": 0.44124845129229756,
+        "purity": 0.9138649383206139,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.045101693605804766
+      },
+      {
+        "time": 50.0,
+        "weight_plus_i": 0.6967346701436832,
+        "weight_minus_i": 0.3032653298563166,
+        "character_population_defect": 0.8451818782538241,
+        "coherence_magnitude": 0.38940039153570233,
+        "purity": 0.880674390729404,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.06372348749365128
+      },
+      {
+        "time": 100.0,
+        "weight_plus_i": 0.8160602794142787,
+        "weight_minus_i": 0.18393972058572108,
+        "character_population_defect": 0.6004235991062716,
+        "coherence_magnitude": 0.3032653298563166,
+        "purity": 0.8837279210325848,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.06197721461516112
+      },
+      {
+        "time": 200.0,
+        "weight_plus_i": 0.9323323583816935,
+        "weight_minus_i": 0.0676676416183063,
+        "character_population_defect": 0.25235492758449096,
+        "coherence_magnitude": 0.18393972058572108,
+        "purity": 0.9414901778260603,
+        "trace": 0.9999999999999998,
+        "minimum_eigenvalue": 0.030164827931081342
+      },
+      {
+        "time": 500.0,
+        "weight_plus_i": 0.996631026500457,
+        "weight_minus_i": 0.003368973499542729,
+        "character_population_defect": 0.013430494068408428,
+        "coherence_magnitude": 0.04104249931194937,
+        "purity": 0.996653726465338,
+        "trace": 0.9999999999999997,
+        "minimum_eigenvalue": 0.0016759455608536878
+      }
+    ],
+    "coherent_phase_changes_populations": false,
+    "dephasing_changes_character_populations": false,
+    "dephasing_selects_pure_plus_or_minus_i": false,
+    "inserted_oriented_jump_captures_plus_i": true,
+    "oriented_jump": "sqrt(gamma)|+i><-i|",
+    "oriented_jump_in_eta_diagonal_algebra": false,
+    "oriented_jump_diagonal_algebra_residual": 0.1,
+    "rate_scan": {
+      "0.001": {
+        "rate": 0.001,
+        "time_to_plus_weight_0_99": 3912.023005428146,
+        "rate_times_capture_time": 3.912023005428146,
+        "diagnostic_at_capture_time": {
+          "weight_plus_i": 0.9899999999999998,
+          "weight_minus_i": 0.010000000000000009,
+          "character_population_defect": 0.039600000000000024,
+          "coherence_magnitude": 0.07071067811865478,
+          "purity": 0.9901999999999995,
+          "trace": 0.9999999999999998,
+          "minimum_eigenvalue": 0.00492424822053747
+        }
+      },
+      "0.003": {
+        "rate": 0.003,
+        "time_to_plus_weight_0_99": 1304.0076684760486,
+        "rate_times_capture_time": 3.912023005428146,
+        "diagnostic_at_capture_time": {
+          "weight_plus_i": 0.9899999999999998,
+          "weight_minus_i": 0.009999999999999998,
+          "character_population_defect": 0.03959999999999998,
+          "coherence_magnitude": 0.07071067811865474,
+          "purity": 0.9901999999999995,
+          "trace": 0.9999999999999998,
+          "minimum_eigenvalue": 0.004924248220537466
+        }
+      },
+      "0.01": {
+        "rate": 0.01,
+        "time_to_plus_weight_0_99": 391.2023005428146,
+        "rate_times_capture_time": 3.9120230054281464,
+        "diagnostic_at_capture_time": {
+          "weight_plus_i": 0.9899999999999998,
+          "weight_minus_i": 0.00999999999999999,
+          "character_population_defect": 0.03959999999999995,
+          "coherence_magnitude": 0.07071067811865471,
+          "purity": 0.9901999999999995,
+          "trace": 0.9999999999999998,
+          "minimum_eigenvalue": 0.004924248220537461
+        }
+      },
+      "0.03": {
+        "rate": 0.03,
+        "time_to_plus_weight_0_99": 130.40076684760487,
+        "rate_times_capture_time": 3.912023005428146,
+        "diagnostic_at_capture_time": {
+          "weight_plus_i": 0.9899999999999998,
+          "weight_minus_i": 0.009999999999999998,
+          "character_population_defect": 0.03959999999999998,
+          "coherence_magnitude": 0.07071067811865474,
+          "purity": 0.9901999999999995,
+          "trace": 0.9999999999999998,
+          "minimum_eigenvalue": 0.004924248220537466
+        }
+      },
+      "0.1": {
+        "rate": 0.1,
+        "time_to_plus_weight_0_99": 39.12023005428146,
+        "rate_times_capture_time": 3.912023005428146,
+        "diagnostic_at_capture_time": {
+          "weight_plus_i": 0.9899999999999998,
+          "weight_minus_i": 0.009999999999999998,
+          "character_population_defect": 0.03959999999999998,
+          "coherence_magnitude": 0.07071067811865474,
+          "purity": 0.9901999999999995,
+          "trace": 0.9999999999999998,
+          "minimum_eigenvalue": 0.004924248220537466
+        }
+      }
+    },
+    "capture_time_scales_as_inverse_free_rate": true
+  },
+  "full_compacton_scope": {
+    "phase_capture_inside_selected_exact_manifold_if_jump_inserted": true,
+    "spatial_leakage_repaired": false,
+    "chiral_balance_repaired": false,
+    "generic_localized_state_capture_established": false
+  },
+  "maximum_residuals": {
+    "selected_plus_i_eigenstate": 0.0,
+    "selected_minus_i_eigenstate": 0.0,
+    "density_trace_preservation": 3.3306690738754696e-16,
+    "density_positivity_violation": 5.551115123125783e-17,
+    "eta_decay_rate": 0.0,
+    "pfaffian_decay_rate": 0.0
+  },
+  "verdict": {
+    "selected_axis_compacton_consistent": true,
+    "boundary_S4_to_C4_consistent": true,
+    "eta_pfaffian_phase_orients_character_basis": true,
+    "eta_pfaffian_phase_derives_weak_dissipation": false,
+    "conditional_capture_with_inserted_jump": true,
+    "jump_operator_and_rate_parent_derived": false,
+    "R2_endogenous_trigger": false,
+    "R3_rate": false,
+    "R4_unique_endpoint": "conditional after choosing boundary orientation and inserting a non-Hermitian jump",
+    "status": "a chosen compacton axis and the boundary twist psi(s+L)=C4 psi(s) consistently reduce S4 to one C4 and align the plus/minus i character lines; however eta and Pfaffian data have unit modulus, give zero decay rate, cancel in the full KO6 pair, and generate only diagonal phase/dephasing operators. An inserted jump sqrt(gamma)|+i><-i| captures exponentially, but both the off-diagonal partial isometry and gamma are new inputs, so the proposed eta/Pfaffian weak dissipation is not derived",
+    "next_gate": "version6_spectral_transition_discrete_compacton_energy_degeneracy_boundary_overlap_gate"
+  }
+}

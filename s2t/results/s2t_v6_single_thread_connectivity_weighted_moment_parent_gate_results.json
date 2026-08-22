@@ -1,0 +1,112 @@
+{
+  "gate": "version6_single_thread_connectivity_weighted_moment_parent_gate",
+  "input": {
+    "ordered_weights": [
+      0.9011874253513867,
+      0.032937524882871085,
+      0.032937524882871085,
+      0.032937524882871085
+    ],
+    "affine_parent": "canonical 4-to-3 coisometry from version6_existing_multiplicity_resonant_sink_gate",
+    "observable": "STF sum_a w_a Sym((R^-1 n_a) tensor n_a tensor n_a)"
+  },
+  "affine_tetrahedral_frame": {
+    "coisometry_rank": 3,
+    "V_Vstar_identity_residual": 3.8667552897052865e-16,
+    "Vstar_V_P3_residual": 3.6188843062238402e-16,
+    "normalized_column_gram": [
+      [
+        1.0,
+        -0.33333333333333315,
+        -0.3333333333333334,
+        -0.33333333333333337
+      ],
+      [
+        -0.33333333333333315,
+        1.0,
+        -0.3333333333333334,
+        -0.33333333333333337
+      ],
+      [
+        -0.3333333333333334,
+        -0.3333333333333334,
+        0.9999999999999999,
+        -0.3333333333333333
+      ],
+      [
+        -0.33333333333333337,
+        -0.33333333333333337,
+        -0.3333333333333333,
+        1.0
+      ]
+    ],
+    "regular_tetrahedron_gram_residual": 3.597533769998862e-16
+  },
+  "working_ordered_state": {
+    "frame_operator": [
+      [
+        0.6227499668228386,
+        0.3341895425062423,
+        0.23630769170779387
+      ],
+      [
+        0.3341895425062422,
+        0.236861122170165,
+        0.1364323094190739
+      ],
+      [
+        0.23630769170779384,
+        0.1364323094190739,
+        0.14038891100699655
+      ]
+    ],
+    "frame_eigenvalues": [
+      0.04391669984382806,
+      0.043916699843828184,
+      0.9121666003123439
+    ],
+    "frame_condition_number": 20.77038127992528,
+    "best_scale": 0.75,
+    "target_normalized_residual": 3.682800984437534e-16,
+    "cosine": 1.0,
+    "expected_exact_scale": 0.75,
+    "scale_residual": 0.0,
+    "previous_naive_moment_residual": 0.6133541142598031,
+    "previous_best_nontrivial_phase_residual": 0.667160649278724
+  },
+  "positive_weight_robustness": {
+    "random_dirichlet_samples": 256,
+    "maximum_target_normalized_residual": 1.2232739609103933e-15,
+    "maximum_scale_residual_from_three_quarters": 3.3306690738754696e-16,
+    "minimum_sampled_frame_eigenvalue": 0.015167544472922576,
+    "C3_weight_samples": 1001,
+    "C3_maximum_target_normalized_residual": 3.4737266409437966e-13,
+    "C3_maximum_scale_residual_from_three_quarters": 1.6342482922482304e-13
+  },
+  "exact_C3_identity": {
+    "symbolic_parameter": "p with q=(1-p)/3",
+    "exact_scale": "3/4",
+    "number_of_tensor_components": 27,
+    "all_component_differences_are_zero": true,
+    "distinct_simplified_differences": [
+      "0"
+    ]
+  },
+  "interpretation_boundary": {
+    "R_inverse_role": "canonical dual frame and reconstruction map",
+    "R_inverse_used_as_energy_weight": false,
+    "new_relative_parameter_added": false,
+    "inverse_exists_for_strictly_positive_four_pass_weights": true,
+    "dual_frame_diverges_at_rank_loss_boundary": true,
+    "local_pass_moment_identity_proves_one_global_cycle": false
+  },
+  "verdict": {
+    "affine_coisometry_is_tetrahedral_frame": true,
+    "canonical_dual_mixed_moment_reproduces_T": true,
+    "local_Q_T_moment_bridge_passed": true,
+    "single_global_thread_hypothesis_refuted": false,
+    "global_single_cycle_sewing_derived": false,
+    "matter_birth_fully_derived": false,
+    "next_gate": "version6_single_thread_global_cycle_sewing_gate"
+  }
+}

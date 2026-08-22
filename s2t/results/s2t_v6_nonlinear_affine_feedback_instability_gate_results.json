@@ -1,0 +1,82 @@
+{
+  "gate": "version6_nonlinear_affine_feedback_instability_gate",
+  "canonical_candidate": {
+    "conditional_map": "P(R)=R^2/Tr(R^2)",
+    "stay_amplitude": "K_stay(R)=sqrt(R)",
+    "leak_amplitude": "K_leak(R)=sqrt(I-R)",
+    "pointwise_completeness": "K_stay^*K_stay+K_leak^*K_leak=I",
+    "SO3_equivariant": true,
+    "preselected_axis_required": false
+  },
+  "isotropic_linearization": {
+    "discrete_traceless_gain_exact": 2.0,
+    "discrete_traceless_gain_numeric": 2.0000003001302904,
+    "continuous_flow": "dR/dtau=R^2-Tr(R^2)R",
+    "continuous_traceless_growth_rate": 0.3333333333333333,
+    "isotropic_fixed_point": true,
+    "isotropic_linearly_unstable": true
+  },
+  "coexistence_test": {
+    "input_spectrum": [
+      0.04391670186293195,
+      0.04391670186293195,
+      0.9121665962741361
+    ],
+    "output_spectrum": [
+      0.002307291043023995,
+      0.002307291043023995,
+      0.9953854179139521
+    ],
+    "input_entropy": 0.3583777189051197,
+    "output_entropy": 0.03262218955959165,
+    "output_axis_weight": 0.9953854179139521,
+    "finite_full_rank_phase_is_fixed": false,
+    "overshoots_toward_rank_one": true
+  },
+  "iteration": {
+    "axis_weight_history_from_coexistence": [
+      0.9121665962741361,
+      0.9953854179139521,
+      0.9999892539825709,
+      0.9999999999422603,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "rank_one_projectors_are_attractors": true,
+    "only_full_rank_fixed_point": "I3/3"
+  },
+  "ensemble_linearity_obstruction": {
+    "convex_linearity_defect": 0.2721655269759087,
+    "fixed_linear_CPTP_channel_realizes_map_for_all_states": false,
+    "requires": [
+      "postselection/conditioning",
+      "multiple copies",
+      "measurement feedback",
+      "or a derived nonlinear mean-field limit"
+    ]
+  },
+  "random_state_checks": {
+    "maximum_entropy_change": -0.0356716266791244,
+    "minimum_purity_change": 0.011075083734706781,
+    "maximum_SO3_equivariance_residual": 8.186718638421367e-16
+  },
+  "project_boundary": {
+    "affine_P3_resonant_corner_available": true,
+    "modular_square_root_available": true,
+    "state_dependent_Kraus_operator_parent_derived": false,
+    "two_copy_deterministic_realization_parent_derived": false,
+    "finite_ordered_phase_saturation": false
+  },
+  "verdict": {
+    "coefficient_free_axis_amplifier_exists": true,
+    "amplifier_is_SO3_equivariant": true,
+    "amplifier_is_autonomous_linear_quantum_channel": false,
+    "amplifier_stabilizes_observed_full_rank_crystal": false,
+    "nonlinear_feedback_is_a_valid_next_parent_target": true,
+    "matter_birth_fully_derived": false,
+    "next_gate": "version6_two_copy_affine_dilation_gate"
+  }
+}

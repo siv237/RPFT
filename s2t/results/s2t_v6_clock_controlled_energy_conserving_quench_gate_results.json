@@ -1,0 +1,64 @@
+{
+  "gate": "version6_clock_controlled_energy_conserving_quench_gate",
+  "minimal_resonant_model": {
+    "system_hamiltonian": "epsilon diag(0,1,1)",
+    "clock_hamiltonian": "epsilon diag(0,1,2,3)",
+    "system_transverse_degeneracy": 2,
+    "clock_gap_degeneracy": 1,
+    "initial_system_state": "I3/3",
+    "allowed_unitaries": "[W,Hs+Hc]=0"
+  },
+  "target_phase": {
+    "coexistence_axis_weight": 0.9121665962741361,
+    "coexistence_transverse_weight": 0.04391670186293195,
+    "gibbs_gap_in_effective_energy_units": 1.9664146236189166,
+    "resonant_four_tick_duration_if_gap_is_tuned": 0.7988123704572849
+  },
+  "energy_block_bound": {
+    "formula": "[p0+max(p1,p0)+max(p2,p1)+max(p3,p2)]/3",
+    "vertex_values": [
+      0.6666666666666666,
+      0.6666666666666666,
+      0.6666666666666666,
+      0.3333333333333333
+    ],
+    "exact_maximum_axis_weight": 0.6666666666666666,
+    "sampled_maximum_axis_weight": 0.6660611592369753,
+    "target_exceeds_bound": true,
+    "axis_weight_deficit": 0.24549992960746947
+  },
+  "degeneracy_obstruction": {
+    "initial_orthogonal_excited_components": 2,
+    "ground_clock_states_at_one_resonant_gap": 1,
+    "minimum_required_gap_degeneracy_for_full_transfer": 2,
+    "order_four_character_eigenvalues": [
+      "1",
+      "i",
+      "-1",
+      "-i"
+    ],
+    "order_four_quasienergies_nondegenerate_mod_period": true,
+    "canonical_four_character_clock_supplies_required_degeneracy": false
+  },
+  "resource_options": {
+    "add_second_resonant_clock_channel": true,
+    "use_existing_multiplicity_as_energy_degeneracy": "not yet attributed",
+    "break_transverse_doublet": "forbidden if RP2 orbit is to remain exact",
+    "use_initial_system_clock_correlations": "possible but new resource",
+    "allow_nonadditive_interaction_energy": "possible but must be parent-derived"
+  },
+  "maximum_residuals": {
+    "sampled_bound_violation": 0.0,
+    "vertex_bound_residual": 0.0,
+    "target_normalization": 0.0
+  },
+  "verdict": {
+    "minimal_non_degenerate_four_tick_clock_reaches_target": false,
+    "energy_conserving_axis_ceiling": 0.6666666666666666,
+    "entropy_capacity_alone_was_sufficient_but_not_energy_degeneracy": true,
+    "canonical_order_four_clock_is_autonomous_refrigerator": false,
+    "existing_project_multiplicity_may_reopen_gate": true,
+    "matter_birth_fully_derived": false,
+    "next_gate": "version6_existing_multiplicity_resonant_sink_gate"
+  }
+}

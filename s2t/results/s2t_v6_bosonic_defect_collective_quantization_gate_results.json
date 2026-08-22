@@ -1,0 +1,77 @@
+{
+  "gate": "version6_bosonic_defect_collective_quantization_gate",
+  "static_symmetry": {
+    "group_before_hedgehog": "SO(3)_space x SO(3)_family",
+    "hedgehog_stabilizer": "diagonal SO(3)",
+    "formal_relative_orientation_space": "SO(3)",
+    "combined_space_family_rotation_residual": 0.0,
+    "diagonal_rotation_is_collective_coordinate": false
+  },
+  "orientation_norm": {
+    "variation": "delta Q=[Omega,Q]",
+    "angular_integral": "integral_S2 Tr([Omega,P]^T[Omega,P])=16 pi/3 for unit z rotation",
+    "angular_identity_maximum_residual": 1.3322676295501878e-15,
+    "cutoffs": [
+      10.0,
+      20.0,
+      40.0,
+      80.0,
+      160.0
+    ],
+    "inertias": [
+      4003.5457959234395,
+      33225.16270697148,
+      268499.7244108732,
+      2153720.570016647,
+      17241546.66908804
+    ],
+    "asymptotic_power_fit": 3.00241239044628,
+    "predicted_L3_coefficient": 4.210336725365034,
+    "measured_L3_coefficient_at_largest_cutoff": 4.209361979757822,
+    "internal_orientation_mode_normalizable": false,
+    "interpretation": "relative family rotation changes the ordered vacuum throughout infinite volume"
+  },
+  "collective_modes": {
+    "translations": 3,
+    "translation_status": "exact static moduli; finite kinetic norm conditional on covariant time completion",
+    "relative_internal_rotations": 0,
+    "diagonal_rotations": "stabilizer, not a mode",
+    "scale_energy": "E(R)=c_D R+c_F/R+c_V R^3",
+    "unit_coefficient_stationary_radius": 0.8301754154282602,
+    "unit_coefficient_scale_curvature": 204.40169995540316,
+    "scale_mode_is_zero_mode": false,
+    "absolute_breathing_frequency_derived": false,
+    "localized_collective_moduli_in_current_approximation": "R3 translations",
+    "localized_moduli_pi1": "0"
+  },
+  "comparison_with_gauge_monopole": {
+    "ordinary_single_BPS_monopole_moduli": "R3 x S1",
+    "S1_origin": "global stabilizer U(1) gauge phase",
+    "project_full_stabilizer_connection_derived": false,
+    "project_has_normalizable_S1_dyon_phase": false
+  },
+  "FR_statistics_test": {
+    "formal_pi1_SO3": "Z2",
+    "formal_FR_representations": [
+      "+1 bosonic",
+      "-1 fermionic"
+    ],
+    "SO3_rotor_is_normalizable_local_modulus": false,
+    "reduced_localized_moduli_supports_Z2_FR_loop": false,
+    "full_real_WZW_phase": 1,
+    "WZW_phase_identified_with_2pi_collective_rotation_holonomy": false,
+    "nontrivial_FR_constraint_parent_derived": false,
+    "minimal_collective_quantization": "spin-zero bosonic ground state",
+    "fermionic_quantization_excluded_in_all_future_extensions": false
+  },
+  "verdict": {
+    "normalizable_internal_rotor_exists": false,
+    "half_integer_spin_from_current_collective_coordinates": false,
+    "dyonic_charge_coordinate_exists": false,
+    "stable_breathing_mode_possible": true,
+    "absolute_mass_radius_and_frequency_derived": false,
+    "current_particle_reading": "neutral spin-zero bosonic soliton candidate",
+    "status": "collective_quantization_selects_no_internal_rotor_and_no_current_FR_fermion",
+    "next_gate": "version6_bosonic_defect_mass_portal_parent_gate"
+  }
+}

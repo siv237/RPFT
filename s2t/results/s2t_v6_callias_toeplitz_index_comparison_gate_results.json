@@ -1,0 +1,50 @@
+{
+  "gate": "version6_callias_toeplitz_index_comparison_gate",
+  "hopf_clutching": {
+    "north_south_relation": "v_N = exp(i phi) v_S on the equator",
+    "max_relation_residual": 2.265078122990043e-16,
+    "max_projector_residual": 2.189807330521971e-16,
+    "line_transition": "z",
+    "first_chern_number": 1
+  },
+  "coefficient_symbol": {
+    "matrix_size": 105,
+    "coefficient_rank": 15,
+    "transition": "z q0 + 1 - q0",
+    "determinant_winding": 15,
+    "max_unitarity_residual": 1.7199501139797033e-15,
+    "max_match_with_tome5_V_plus_residual": 0.0
+  },
+  "real_pair": {
+    "plus_transition": "z q0 + 1 - q0",
+    "minus_transition": "z^(-1) conjugate(q0) + 1 - conjugate(q0)",
+    "max_conjugate_exchange_residual": 9.61481343191782e-16,
+    "callias_boundary_indices_up_to_common_orientation": [
+      15,
+      -15
+    ],
+    "toeplitz_indices_standard_hardy_orientation": [
+      -15,
+      15
+    ],
+    "absolute_class": 15
+  },
+  "comparison": {
+    "same_clutching_unitary_as_tome5_real_toeplitz_symbol": true,
+    "boundary_K_class_comparison_closed": true,
+    "equality_is_stronger_than_numeric_index_match": true,
+    "direct_operator_unitary_equivalence_proved": false,
+    "direct_Bunke_kernel_compression_hypotheses_checked": false,
+    "spatial_Callias_index_conditional_on_spin_cover_carrier": true,
+    "finite_parent_derives_rank_two_spin_carrier": false,
+    "localized_physical_fermions_fully_derived": false
+  },
+  "verdict": {
+    "complex_Callias_Toeplitz_clutching_bridge": "pass",
+    "Real_conjugate_pair_bridge": "pass",
+    "coefficient_multiplicity_fifteen": "pass",
+    "analytic_operator_identification": "open",
+    "physical_carrier_derivation": "open",
+    "next_gate": "version6_spin_cover_carrier_parent_derivation_gate"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gate": "version6_bosonic_defect_q_tetrahedral_coupled_vacuum_gate",
+  "canonical_input": {
+    "critical_inverse_temperature": 1.5426695408602842,
+    "ordered_density_spectrum": [
+      0.9121666003123439,
+      0.043916699843828066,
+      0.043916699843828066
+    ],
+    "projective_gap_Delta": 0.8682499004685158,
+    "tetrahedral_norm_squared": 3.555555555555559,
+    "single_family_connection": true
+  },
+  "mixed_parent_curvature": {
+    "projective_readout": "P_Q=I3/3+Q/Delta",
+    "composed_arrow": "w_i=T_ijk(P_Q)_jk=(T:Q)_i/Delta",
+    "curvature": "F_QT=w w^T-(64/81)P_Q",
+    "potential": "V_QT=Tr(F_QT^2)/3",
+    "tetrahedral_contraction_residual": 5.768888059150692e-16,
+    "vacuum_curvature_norm": 5.926969055564841e-16,
+    "new_relative_weight_parameter_count": 0,
+    "fixed_scale_origin": "(8/9)^2 from the canonical tetrahedral contraction",
+    "mixed_hessian_block_frobenius_norm": 1.761249146956689
+  },
+  "vacuum_selection": {
+    "ordered_aligned_potential_components_Q_T_QT": [
+      9.43689570931383e-16,
+      6.395343741710065e-31,
+      1.1709654061874394e-31
+    ],
+    "ordered_aligned_total_potential": 9.436895709313838e-16,
+    "isotropic_Q_with_tetrahedral_T_components_Q_T_QT": [
+      1.1102230246251565e-16,
+      6.395343741710065e-31,
+      0.06936611966333044
+    ],
+    "isotropic_Q_with_tetrahedral_T_total_potential": 0.06936611966333055,
+    "exact_isotropic_alignment_penalty": 0.06936611966333045,
+    "oriented_tetrahedral_axis_count": 8,
+    "projective_tetrahedral_axis_count": 4,
+    "maximum_enumerated_axis_curvature_residual": 9.992007221626409e-16,
+    "zero_locus_statement": "for canonical T, F_QT=0 implies |n1|=|n2|=|n3|=1/sqrt(3)"
+  },
+  "full_mixed_hessian": {
+    "field_dimension": 12,
+    "uncoupled_eigenvalues": [
+      -2.1982368219900147e-06,
+      -1.8857315650709607e-06,
+      4.934446634154813e-10,
+      5.57988017317312e-10,
+      7.60133625299133e-10,
+      1.2641975315954896,
+      1.2641975316866436,
+      1.2641975318824878,
+      3.1604938277583865,
+      4.508152529059118,
+      17.88452028462931,
+      17.88452065398834
+    ],
+    "uncoupled_zero_mode_count_tolerance_1e-5": 5,
+    "coupled_eigenvalues": [
+      -2.0977913393312087e-07,
+      -1.7973936283438146e-07,
+      4.0219129347558457e-10,
+      1.214733229987792,
+      1.2147332515851097,
+      1.4798551699016724,
+      2.3788184602453017,
+      2.3788187030206713,
+      3.3990154800435346,
+      6.55303887361516,
+      19.700720571604776,
+      19.700720961352786
+    ],
+    "coupled_zero_mode_count_tolerance_1e-5": 3,
+    "gauge_orbit_rank": 3,
+    "hessian_on_normalized_gauge_orbit_residual": 9.05493229401418e-07,
+    "physical_dimension_after_gauge_quotient": 9,
+    "physical_eigenvalues": [
+      1.2147332299877618,
+      1.214733251585088,
+      1.4798551699016749,
+      2.3788184602451437,
+      2.3788187030205594,
+      3.399015480043535,
+      6.553038873615156,
+      19.700720571604787,
+      19.700720961352783
+    ],
+    "physical_negative_mode_count_tolerance_1e-5": 0,
+    "physical_zero_mode_count_tolerance_1e-5": 0,
+    "physical_positive_mode_count_tolerance_1e-5": 9
+  },
+  "family_gauge_sector": {
+    "Q_only_mass_eigenvalues": [
+      -8.557342554291126e-31,
+      1.507715779327176,
+      1.5077157793271765
+    ],
+    "T_only_mass_eigenvalues": [
+      14.222222222222225,
+      14.222222222222236,
+      14.222222222222241
+    ],
+    "combined_mass_eigenvalues": [
+      14.222222222222237,
+      15.72993800154941,
+      15.729938001549419
+    ],
+    "continuous_stabilizer_dimension": 0,
+    "tetrahedral_proper_rotation_count": 12,
+    "aligned_residual_rotation_count": 3,
+    "aligned_residual_discrete_group": "Z3",
+    "vacuum_orbit": "SO(3)/Z3"
+  },
+  "literature_boundary": {
+    "rank_two_and_rank_three_coupled_order_is_standard_in_general_landau_theory": true,
+    "SO3_to_A4_by_spin_three_is_known": true,
+    "specific_coefficient_free_mixed_curvature_is_project_construction": true,
+    "observed_standard_model_matter_derived": false
+  },
+  "verdict": {
+    "coefficient_free_mixed_parent_square_passes": true,
+    "ordered_Q_axis_is_locked_to_one_of_four_tetrahedral_projective_axes": true,
+    "relative_orientation_zero_modes_lifted": true,
+    "only_common_SO3_gauge_orbit_remains_zero": true,
+    "full_physical_hessian_positive": true,
+    "all_family_gauge_bosons_massive": true,
+    "residual_group_is_Z3": true,
+    "matter_birth_closed": false,
+    "status": "coupled_Q_T_vacuum_Z3_and_physical_hessian_pass",
+    "next_gate": "version6_bosonic_defect_q_tetrahedral_coupled_defect_profile_gate"
+  }
+}

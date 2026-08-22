@@ -1,0 +1,129 @@
+{
+  "gate": "version6_real_qutrit_purification_transition_gate",
+  "existing_linear_gibbs_test": {
+    "R4_plus_eigenvalues": [
+      12.608881461797846,
+      14.758684008744204,
+      20.632434529457953
+    ],
+    "R4_plus_ground_is_nondegenerate": true,
+    "finite_beta_gibbs_spectra_descending": {
+      "0.0": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "0.1": [
+        0.19880525250429176,
+        0.35770218939096,
+        0.4434925581047483
+      ],
+      "1.0": [
+        0.0002933771154240453,
+        0.10431906199498678,
+        0.8953875608895893
+      ],
+      "10.0": [
+        1.426105892613367e-35,
+        4.60814532304785e-10,
+        0.9999999995391855
+      ]
+    },
+    "finite_beta_phase_transition": false,
+    "SO3_invariant_linear_H_gives": "I3/3",
+    "nonscalar_linear_H_gives": "explicit_fixed_axis",
+    "RP2_vacuum_orbit_generated": false
+  },
+  "minimal_nonlinear_control": {
+    "functional": "Tr(R log R)-kappa*(Tr(R^2)-1/3)",
+    "critical_kappa": 1.3862943611198906,
+    "critical_kappa_exact": "log(4)",
+    "isotropic_spectrum": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "ordered_coexistence_spectrum": [
+      0.6666666666666666,
+      0.16666666666666666,
+      0.16666666666666666
+    ],
+    "coexistence_energy_residual": 2.220446049250313e-16,
+    "ordered_stationarity_residual": 0.0,
+    "isotropic_local_curvature_at_transition": 0.3411169166403285,
+    "ordered_local_curvature_at_transition": 0.3411169166403285,
+    "isotropic_spinodal_kappa": 1.5,
+    "transition_order": "first_order",
+    "ordered_orbit": "SO3/O2=RP2",
+    "phase_scan": {
+      "1": {
+        "global_uniaxial_x": 0.3333333333333333,
+        "global_energy": -1.0986122886681096,
+        "isotropic_energy": -1.0986122886681096
+      },
+      "1.38629436112": {
+        "global_uniaxial_x": 0.3333333333333333,
+        "global_energy": -1.0986122886681096,
+        "isotropic_energy": -1.0986122886681096
+      },
+      "1.45": {
+        "global_uniaxial_x": 0.7684726806233333,
+        "global_energy": -1.1134258487517847,
+        "isotropic_energy": -1.0986122886681096
+      },
+      "1.5": {
+        "global_uniaxial_x": 0.8109159502916665,
+        "global_energy": -1.1291467753662179,
+        "isotropic_energy": -1.0986122886681096
+      },
+      "2": {
+        "global_uniaxial_x": 0.953929069105,
+        "global_energy": -1.3741307765694266,
+        "isotropic_energy": -1.0986122886681096
+      }
+    },
+    "full_simplex_scan": {
+      "1.38629436112": {
+        "minimum_spectrum_descending": [
+          0.3333333333333334,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "minimum_energy": -1.0986122886681096,
+        "transverse_pair_splitting": 0.0
+      },
+      "1.45": {
+        "minimum_spectrum_descending": [
+          0.7677902621722846,
+          0.11610486891385768,
+          0.11610486891385763
+        ],
+        "minimum_energy": -1.1134255525748364,
+        "transverse_pair_splitting": 5.551115123125783e-17
+      },
+      "2": {
+        "minimum_spectrum_descending": [
+          0.9550561797752808,
+          0.02247191011235955,
+          0.02247191011235955
+        ],
+        "minimum_energy": -1.374120043725922,
+        "transverse_pair_splitting": 0.0
+      }
+    }
+  },
+  "project_source_audit": {
+    "linear_family_state_term_supplies_negative_purity": false,
+    "TOE65_fluctuation_term_computed": false,
+    "closure_deficit_response_is_prior_state_selector": false,
+    "bridge_positive_square_favors_defect": false,
+    "formal_one_seventh_exceeds_log4": false,
+    "kappa_sign_and_normalization_derived": false
+  },
+  "verdict": {
+    "exact_RP2_transition_mechanism_found": true,
+    "mechanism_derived_from_current_parent": false,
+    "full_purification_needed": false,
+    "next_gate": "version6_exchange_bridge_induced_alignment_gate"
+  }
+}

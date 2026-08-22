@@ -1,0 +1,59 @@
+{
+  "gate": "version6_projective_order_parameter_field_spectrum_gate",
+  "ordered_background": {
+    "beta": 1.5426695408602842,
+    "spectrum": [
+      0.9121666003123439,
+      0.043916699843828066,
+      0.043916699843828066
+    ],
+    "order_parameter": "Q=R-I3/3",
+    "vacuum_orbit": "SO(3)/O(2)=RP2",
+    "maximum_orbit_energy_residual": 6.106226635438361e-16,
+    "maximum_SO3_covariance_residual": 2.942091015256665e-15
+  },
+  "local_field_decomposition": {
+    "real_symmetric_traceless_dimension": 5,
+    "amplitude_modes": 1,
+    "biaxial_modes": 2,
+    "director_goldstone_modes": 2,
+    "directional_curvatures": {
+      "amplitude": 4.508152784410413,
+      "biaxial_diagonal": 17.88452699269527,
+      "biaxial_transverse": 17.88452699269527,
+      "director_one": 7.771561172376096e-08,
+      "director_two": 7.771561172376096e-08
+    },
+    "positive_massive_curvatures": [
+      4.508152784410413,
+      17.88452699269527,
+      17.88452699269527
+    ],
+    "goldstone_curvatures_zero_within_numeric_tolerance": true
+  },
+  "topological_sectors": {
+    "pi1_RP2": "Z2",
+    "pi2_RP2": "Z",
+    "pi3_RP2": "Z",
+    "line_defects": "Z2 disclinations",
+    "point_defects": "integer hedgehogs",
+    "three_dimensional_textures": "Hopf sectors"
+  },
+  "physics_boundary": {
+    "order_parameter_field_derived": true,
+    "collective_mode_count_derived": true,
+    "topological_matter_sectors_exist": true,
+    "finite_defect_radius_requires_spatial_stiffness_and_Skyrme_balance": true,
+    "director_modes_become_gauge_bosons": false,
+    "defects_identified_with_observed_particles": false,
+    "spin_cover_plus_minus_15_assignment_still_required": true
+  },
+  "verdict": {
+    "transition_from_phase_to_fields_has_started": true,
+    "first_bosonic_field_is_Q": true,
+    "matter_candidates_are_topological_sectors_of_Q": true,
+    "standard_model_field_content_derived": false,
+    "matter_birth_fully_derived": false,
+    "next_gate": "version6_spatial_projective_defect_energy_spectrum_gate"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "gate": "version6_bosonic_defect_tetrahedral_gauge_frame_branch_decision_gate",
+  "current_parent_representation_ledger": {
+    "End_V3": {
+      "0": 1,
+      "1": 1,
+      "2": 1
+    },
+    "End_V3_dimension": 9,
+    "Hom_V4_to_V3": {
+      "0": 1,
+      "1": 2,
+      "2": 1
+    },
+    "Hom_V4_to_V3_dimension": 12,
+    "End_Kfam": {
+      "0": 10,
+      "1": 15,
+      "2": 9
+    },
+    "End_Kfam_dimension": 100,
+    "spin_three_multiplicity_in_End_Kfam": 0,
+    "ordinary_matrix_products_remain_in_End_Kfam": true,
+    "spin_three_from_ordinary_parent_operator_polynomial": false,
+    "external_Sym3_V3": {
+      "1": 1,
+      "3": 1
+    },
+    "external_Sym3_V3_dimension": 10,
+    "spin_three_multiplicity_in_external_Sym3_V3": 1
+  },
+  "uniform_tetrahedral_moment": {
+    "weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "first_moment_norm": 0.0,
+    "second_moment_isotropy_residual": 1.9229626863835638e-16,
+    "third_moment_norm_squared": 0.2222222222222224,
+    "proper_stabilizer_count": 12,
+    "improper_tetrahedral_operation_count": 12,
+    "maximum_proper_third_moment_residual": 2.282793701844871e-34,
+    "maximum_combined_frame_permutation_residual": 0.0,
+    "third_moment_continuous_orbit_rank": 3,
+    "gauge_mass_eigenvalues_from_third_moment": [
+      0.8888888888888896,
+      0.8888888888888896,
+      0.8888888888888896
+    ],
+    "interpretation": "zero vector and quadrupole order, nonzero tetrahedral rank-three order"
+  },
+  "ordered_frame_branch": {
+    "frame_rank": 3,
+    "left_gauge_orbit_rank": 3,
+    "left_continuous_stabilizer_dimension": 0,
+    "left_discrete_stabilizer_is_trivial": true,
+    "diagonal_A4_pair_count": 12,
+    "right_permutation_action_is_inner_gauge_symmetry_of_commutative_C4": false,
+    "project_status_of_full_S4": "conditional affine-family postulate, not derived local gauge group"
+  },
+  "branch_decision": {
+    "uniform_moment_is_valid_tetrahedral_composite_order": true,
+    "uniform_moment_is_already_a_dynamic_field_of_current_parent": false,
+    "independent_spin_three_is_already_in_current_operator_carrier": false,
+    "ordered_frame_leaves_gauge_A4": false,
+    "ordered_frame_leaves_diagonal_global_or_boundary_A4": true,
+    "current_one_connection_parent_yields_genuine_SO3_to_A4_Higgs_phase": false,
+    "minimal_way_to_retain_gauge_A4_and_Z3_holonomy": "add or derive one spin-three carrier Sym0^3(V3)",
+    "alternative_repair": "gauge a second frame SO3 and break the product to a diagonal gauge SO3 before tetrahedral reduction",
+    "alternative_repair_rejected_by_current_minimality": true,
+    "matter_birth_closed": false,
+    "status": "current_parent_no_go_minimal_spin_three_carrier_extension_selected",
+    "next_gate": "version6_bosonic_defect_minimal_spin_three_carrier_embedding_gate"
+  }
+}

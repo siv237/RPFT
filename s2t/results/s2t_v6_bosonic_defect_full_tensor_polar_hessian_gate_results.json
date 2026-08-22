@@ -1,0 +1,142 @@
+{
+  "gate": "version6_bosonic_defect_full_tensor_polar_hessian_gate",
+  "global_bundle_domain": {
+    "vortex_holonomy": "exp(2*pi*J0/3) in residual Z3",
+    "corotating_boundary_condition": "xi(theta+2*pi)=rho(g_Z3)^(-1) xi(theta)",
+    "common_exponent_rule": "mu=j-s_g/3; laboratory harmonic n_s=j+(s-s_g)/3",
+    "integer_label": "j in Z",
+    "residual_characters": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "representation_weights": {
+    "Q_spin_two": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "T_spin_three": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "family_connection_adjoint": [
+      -1,
+      0,
+      1
+    ],
+    "matter_residue_multiplicities": {
+      "-1": 4,
+      "0": 4,
+      "1": 4
+    }
+  },
+  "twisted_sector_dimensions": {
+    "-1": {
+      "matter": 4,
+      "radial_connection": 1,
+      "angular_connection": 1,
+      "total_complex_radial_fields": 6,
+      "matter_weights": [
+        -1,
+        -1,
+        2,
+        2
+      ],
+      "gauge_weight": -1
+    },
+    "0": {
+      "matter": 4,
+      "radial_connection": 1,
+      "angular_connection": 1,
+      "total_complex_radial_fields": 6,
+      "matter_weights": [
+        -3,
+        0,
+        0,
+        3
+      ],
+      "gauge_weight": 0
+    },
+    "1": {
+      "matter": 4,
+      "radial_connection": 1,
+      "angular_connection": 1,
+      "total_complex_radial_fields": 6,
+      "matter_weights": [
+        -2,
+        -2,
+        1,
+        1
+      ],
+      "gauge_weight": 1
+    }
+  },
+  "harmonic_examples": {
+    "-1": {
+      "common_corotating_exponent": "j--1/3",
+      "laboratory_harmonics_at_j_0": {
+        "-1": 0,
+        "2": 1
+      },
+      "connection_laboratory_harmonic_at_j_0": 0
+    },
+    "0": {
+      "common_corotating_exponent": "j-0/3",
+      "laboratory_harmonics_at_j_0": {
+        "-3": -1,
+        "0": 0,
+        "3": 1
+      },
+      "connection_laboratory_harmonic_at_j_0": 0
+    },
+    "1": {
+      "common_corotating_exponent": "j-1/3",
+      "laboratory_harmonics_at_j_0": {
+        "-2": -1,
+        "1": 0
+      },
+      "connection_laboratory_harmonic_at_j_0": 0
+    }
+  },
+  "covariance_checks": {
+    "sample_count": 4,
+    "maximum_potential_hessian_Z3_residual": 2.169930481707345e-06,
+    "maximum_gauge_orbit_map_Z3_residual": 3.969186448890946e-15,
+    "potential_hessian_preserves_residual_character": true,
+    "connection_to_matter_map_preserves_residual_character": true
+  },
+  "previous_radial_scan_boundary": {
+    "common_integer_corotating_harmonic_is_globally_valid_for_all_components": false,
+    "globally_periodic_character_zero_complex_fields": 6,
+    "full_complex_radial_fields": 18,
+    "omitted_twisted_complex_fields": 12,
+    "previous_thirteen_real_component_scan_remains_local_robustness_test": true,
+    "previous_scan_is_full_global_section_spectrum": false
+  },
+  "translation_location": {
+    "residual_character": 0,
+    "integer_labels": [
+      -1,
+      1
+    ],
+    "expected_real_zero_mode_count": 2
+  },
+  "verdict": {
+    "full_tensor_polar_operator_domain_derived": true,
+    "ordinary_single_integer_fourier_decomposition_rejected": true,
+    "three_Z3_twisted_sector_decomposition_required": true,
+    "full_tensor_spectrum_computed": false,
+    "full_vortex_stability_closed": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_full_tensor_twisted_sector_spectrum_gate"
+  }
+}

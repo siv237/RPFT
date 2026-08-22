@@ -1,0 +1,212 @@
+{
+  "gate": "version6_fractional_determinant_measure_origin_gate",
+  "admissible_window": {
+    "lower": 0.0,
+    "upper": 0.10119047619047619,
+    "upper_exact": "17/168"
+  },
+  "candidate_ledger": [
+    {
+      "name": "M300_full_complex_pair",
+      "nu": 0.1,
+      "nu_exact": "1/10",
+      "inside_fractional_window": true,
+      "residual_local_curvature": -0.005357142857142857,
+      "residual_local_curvature_exact": "-3/560",
+      "local_instability_survives": true,
+      "operator_status": "candidate_requires_product_Dirac_and_R_coupling"
+    },
+    {
+      "name": "M300_real_pfaffian",
+      "nu": 0.05,
+      "nu_exact": "1/20",
+      "inside_fractional_window": true,
+      "residual_local_curvature": -0.23035714285714284,
+      "residual_local_curvature_exact": "-129/560",
+      "local_instability_survives": true,
+      "operator_status": "candidate_requires_product_KO2_pfaffian"
+    },
+    {
+      "name": "M210_real_pfaffian",
+      "nu": 0.07142857142857142,
+      "nu_exact": "1/14",
+      "inside_fractional_window": true,
+      "residual_local_curvature": -0.13392857142857142,
+      "residual_local_curvature_exact": "-15/112",
+      "local_instability_survives": true,
+      "operator_status": "candidate_requires_trace_transport_to_global_parent"
+    },
+    {
+      "name": "M210_full_complex_pair",
+      "nu": 0.14285714285714285,
+      "nu_exact": "1/7",
+      "inside_fractional_window": false,
+      "residual_local_curvature": 0.1875,
+      "residual_local_curvature_exact": "3/16",
+      "local_instability_survives": false,
+      "operator_status": "derived_positive_modulus_weight_but_too_large_for_instability"
+    },
+    {
+      "name": "periodic_Maxwell_ghost_constant_branch",
+      "nu": 0.041666666666666664,
+      "nu_exact": "1/24",
+      "inside_fractional_window": true,
+      "residual_local_curvature": -0.26785714285714285,
+      "residual_local_curvature_exact": "-15/56",
+      "local_instability_survives": true,
+      "operator_status": "wrong_operator_no_map_to_family_logdet"
+    }
+  ],
+  "exact_relations": {
+    "M300_determinant_weight": "30/300=1/10",
+    "M300_pfaffian_weight": "15/300=1/20",
+    "M210_pfaffian_weight": "15/210=1/14",
+    "M210_determinant_weight": "30/210=1/7",
+    "distance_from_M300_determinant_to_upper_bound": "17/168-1/10=1/840",
+    "M300_determinant_residual_curvature": "-3/560",
+    "M300_pfaffian_residual_curvature": "-129/560"
+  },
+  "matrix_pfaffian_modulus_checks": {
+    "family_block": "I15 tensor R",
+    "antisymmetric_form": "[[0,M],[-M^T,0]]",
+    "identity": "(1/300) log|Pf A_R| = (1/20) log det R",
+    "samples": [
+      {
+        "logdet_R": -3.928928185452894,
+        "normalized_log_pfaffian": -0.19644640927264465,
+        "target_one_over_20_logdet_R": -0.1964464092726447,
+        "residual": 5.551115123125783e-17
+      },
+      {
+        "logdet_R": -3.416983594144001,
+        "normalized_log_pfaffian": -0.1708491797072,
+        "target_one_over_20_logdet_R": -0.17084917970720007,
+        "residual": 5.551115123125783e-17
+      },
+      {
+        "logdet_R": -4.357008761977608,
+        "normalized_log_pfaffian": -0.21785043809888047,
+        "target_one_over_20_logdet_R": -0.21785043809888038,
+        "residual": -8.326672684688674e-17
+      },
+      {
+        "logdet_R": -4.0191536883682275,
+        "normalized_log_pfaffian": -0.20095768441841164,
+        "target_one_over_20_logdet_R": -0.2009576844184114,
+        "residual": -2.498001805406602e-16
+      },
+      {
+        "logdet_R": -5.077651181112412,
+        "normalized_log_pfaffian": -0.2538825590556205,
+        "target_one_over_20_logdet_R": -0.25388255905562057,
+        "residual": 5.551115123125783e-17
+      },
+      {
+        "logdet_R": -3.6637286775670206,
+        "normalized_log_pfaffian": -0.1831864338783511,
+        "target_one_over_20_logdet_R": -0.18318643387835104,
+        "residual": -5.551115123125783e-17
+      },
+      {
+        "logdet_R": -4.849093600680728,
+        "normalized_log_pfaffian": -0.2424546800340363,
+        "target_one_over_20_logdet_R": -0.24245468003403642,
+        "residual": 1.1102230246251565e-16
+      },
+      {
+        "logdet_R": -3.6317071794761357,
+        "normalized_log_pfaffian": -0.18158535897380684,
+        "target_one_over_20_logdet_R": -0.1815853589738068,
+        "residual": -5.551115123125783e-17
+      },
+      {
+        "logdet_R": -3.5367682035421093,
+        "normalized_log_pfaffian": -0.1768384101771054,
+        "target_one_over_20_logdet_R": -0.17683841017710547,
+        "residual": 8.326672684688674e-17
+      },
+      {
+        "logdet_R": -4.222340725776071,
+        "normalized_log_pfaffian": -0.21111703628880374,
+        "target_one_over_20_logdet_R": -0.21111703628880357,
+        "residual": -1.6653345369377348e-16
+      },
+      {
+        "logdet_R": -4.03799514804117,
+        "normalized_log_pfaffian": -0.20189975740205862,
+        "target_one_over_20_logdet_R": -0.2018997574020585,
+        "residual": -1.1102230246251565e-16
+      },
+      {
+        "logdet_R": -4.044065301959914,
+        "normalized_log_pfaffian": -0.20220326509799577,
+        "target_one_over_20_logdet_R": -0.2022032650979957,
+        "residual": -8.326672684688674e-17
+      },
+      {
+        "logdet_R": -4.243291551507403,
+        "normalized_log_pfaffian": -0.2121645775753703,
+        "target_one_over_20_logdet_R": -0.21216457757537013,
+        "residual": -1.6653345369377348e-16
+      },
+      {
+        "logdet_R": -3.9637731767560878,
+        "normalized_log_pfaffian": -0.19818865883780415,
+        "target_one_over_20_logdet_R": -0.1981886588378044,
+        "residual": 2.498001805406602e-16
+      },
+      {
+        "logdet_R": -4.301706186899726,
+        "normalized_log_pfaffian": -0.21508530934498618,
+        "target_one_over_20_logdet_R": -0.21508530934498632,
+        "residual": 1.3877787807814457e-16
+      },
+      {
+        "logdet_R": -4.046295399398501,
+        "normalized_log_pfaffian": -0.20231476996992503,
+        "target_one_over_20_logdet_R": -0.20231476996992503,
+        "residual": 0.0
+      },
+      {
+        "logdet_R": -3.8224521702321015,
+        "normalized_log_pfaffian": -0.1911226085116049,
+        "target_one_over_20_logdet_R": -0.19112260851160506,
+        "residual": 1.6653345369377348e-16
+      },
+      {
+        "logdet_R": -4.013816520030792,
+        "normalized_log_pfaffian": -0.20069082600153973,
+        "target_one_over_20_logdet_R": -0.2006908260015396,
+        "residual": -1.3877787807814457e-16
+      },
+      {
+        "logdet_R": -3.4386765489136626,
+        "normalized_log_pfaffian": -0.1719338274456832,
+        "target_one_over_20_logdet_R": -0.17193382744568314,
+        "residual": -5.551115123125783e-17
+      },
+      {
+        "logdet_R": -5.3017414271651,
+        "normalized_log_pfaffian": -0.265087071358255,
+        "target_one_over_20_logdet_R": -0.26508707135825504,
+        "residual": 5.551115123125783e-17
+      }
+    ],
+    "maximum_residual": 2.498001805406602e-16
+  },
+  "project_archaeology": {
+    "M300_unique_normalized_trace_retained": true,
+    "M300_coordinate_algebra_derived": false,
+    "M210_to_M300_trace_preserving_embedding_derived": false,
+    "internal_KO6_real_fermion_integral_sufficient": false,
+    "product_total_KO2_required": true,
+    "kappa_Cas_1_over_24_has_family_R_operator_map": false,
+    "C6_scalar_half_residual_has_family_R_operator_map": false
+  },
+  "verdict": {
+    "project_contains_coefficients_inside_window": true,
+    "fractional_barrier_parent_action_proved": false,
+    "strongest_global_candidate": "M300 real Pfaffian nu=1/20 or full determinant nu=1/10",
+    "next_gate": "version6_product_ko2_family_pfaffian_operator_gate"
+  }
+}

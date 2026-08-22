@@ -1,0 +1,113 @@
+{
+  "gate": "version6_single_thread_framed_winding_embedding_gate",
+  "input": {
+    "unsigned_counts": [
+      22696855,
+      829548,
+      829548,
+      829548
+    ],
+    "unsigned_total_passes": 25185499,
+    "Real_doubled_total_oriented_visits": 50370998,
+    "tetrahedral_axes": [
+      [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      [
+        0.5773502691896258,
+        -0.5773502691896258,
+        -0.5773502691896258
+      ],
+      [
+        -0.5773502691896258,
+        0.5773502691896258,
+        -0.5773502691896258
+      ],
+      [
+        -0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ]
+    ]
+  },
+  "closed_curve_necessary_condition": {
+    "condition": "sum of oriented unit tangents over a closed polygonal walk equals zero",
+    "plus_counts": [
+      22696855,
+      829548,
+      829548,
+      829548
+    ],
+    "minus_counts": [
+      22696855,
+      829548,
+      829548,
+      829548
+    ],
+    "integer_count_difference": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "displacement_vector": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "displacement_norm": 0.0,
+    "closure_passes_after_Real_doubling": true
+  },
+  "physical_moments_after_Real_doubling": {
+    "polar_current": [
+      2.42861286636753e-17,
+      2.42861286636753e-17,
+      2.42861286636753e-17
+    ],
+    "polar_current_norm": 4.206480876464046e-17,
+    "second_moment_residual": 0.0,
+    "Q_is_preserved": true
+  },
+  "odd_moment_orientation_test": {
+    "without_Real_orientation_character_norm": 0.0,
+    "with_character_chi_equals_orientation": {
+      "best_scale": 0.7500000000000004,
+      "target_normalized_residual": 4.490387927348027e-16,
+      "expected_scale": 0.75,
+      "scale_residual": 4.440892098500626e-16
+    },
+    "Real_character_cancels_tangent_reversal_of_rank_three_moment": true,
+    "project_has_oriented_E_and_E_star_pair": true,
+    "project_derives_this_character_as_physical_thread_observable": false
+  },
+  "abstract_embedding_boundary": {
+    "one_closed_polygonal_walk_with_the_balanced_step_multiset_exists": true,
+    "canonical_reverse_word_construction_closes": true,
+    "canonical_reverse_word_retraces_the_same_edges": true,
+    "retracing_is_compatible_with_nonzero_tube_thickness": false,
+    "simple_self_avoiding_embedding_with_exact_word_certified": false,
+    "unique_axis_word_selected": false
+  },
+  "framing_and_reconnection_boundary": {
+    "Hopf_line_supplies_unit_Chern_class": true,
+    "Hopf_line_supplies_a_normal_frame_along_the_full_spatial_curve": false,
+    "Calugareanu_self_linking_split_computed": false,
+    "fundamental_tube_radius_derived": false,
+    "existing_vortex_width_can_be_reused_as_fundamental_thread_radius": false,
+    "excluded_volume_or_injectivity_term_in_parent_action": false,
+    "reconnection_barrier_computed": false
+  },
+  "verdict": {
+    "closed_oriented_pass_balance_passed": true,
+    "Q_survives_zero_current_Real_doubling": true,
+    "T_survives_with_orientation_character": true,
+    "orientation_character_parent_derivation_complete": false,
+    "finite_thickness_self_avoiding_embedding_derived": false,
+    "no_reconnection_dynamics_derived": false,
+    "single_global_thread_hypothesis_refuted": false,
+    "single_global_thread_geometrically_derived": false,
+    "next_gate": "version6_single_thread_excluded_volume_reconnection_barrier_gate"
+  }
+}

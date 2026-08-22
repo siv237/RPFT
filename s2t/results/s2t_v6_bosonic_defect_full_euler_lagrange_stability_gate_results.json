@@ -1,0 +1,227 @@
+{
+  "gate": "version6_bosonic_defect_full_euler_lagrange_stability_gate",
+  "radial_reduction": {
+    "field": "Q=Delta*u(r)*(P-I/3)",
+    "composite_connection": "A=u(r)^2[P,dP]",
+    "DQ_density": "(2/3)Delta^2 u'^2+4 Delta^2 u^2(1-u^2)^2/r^2",
+    "F_density": "16 u^2 u'^2/r^2+2 u^4(u^2-2)^2/r^4",
+    "V_density": "Delta^4(1-u^2)^2",
+    "cartesian_reduction_maximum_residual": 1.8848755889422364e-11
+  },
+  "boundary_value_problem": {
+    "boundary_conditions": [
+      "u(0)=0",
+      "u(infinity)=1"
+    ],
+    "outer_radius": 50.0,
+    "curvature_tail_correction": "8 pi c_F/R_max",
+    "cases": {
+      "unit": {
+        "coefficients": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "bvp_status": 0,
+        "maximum_rms_ode_residual": 1.9750463359445666e-07,
+        "boundary_residual": 1.710733520774396e-34,
+        "monotonicity_minimum_difference": -1.1102230246251565e-16,
+        "half_height_radius": 1.039444480502646,
+        "energy_parts_with_tail_correction": [
+          11.03061079260563,
+          35.39588530959468,
+          8.121758200122938
+        ],
+        "corrected_total_energy": 54.54825430232325,
+        "best_scaled_trial_radius": 0.8301754154282602,
+        "best_scaled_trial_energy": 60.769895445870674,
+        "energy_below_trial_family": true,
+        "corrected_virial_residual": 8.337975998529146e-08,
+        "radial_hessian_negative_eigenvalue_count": 0,
+        "lowest_three_finite_box_eigenvalues": [
+          13.16043029848294,
+          16.782957056691522,
+          29.231712621772083
+        ]
+      },
+      "small_D": {
+        "coefficients": [
+          0.25,
+          1.0,
+          1.0
+        ],
+        "bvp_status": 0,
+        "maximum_rms_ode_residual": 1.992957721075032e-07,
+        "boundary_residual": 8.626973950096954e-27,
+        "monotonicity_minimum_difference": -1.1102230246251565e-16,
+        "half_height_radius": 1.0990703399806732,
+        "energy_parts_with_tail_correction": [
+          2.9897898271332575,
+          32.95824258558973,
+          9.989484281430794
+        ],
+        "corrected_total_energy": 45.93751669415378,
+        "best_scaled_trial_radius": 0.8775465739379192,
+        "best_scaled_trial_energy": 52.78105809556977,
+        "energy_below_trial_family": true,
+        "corrected_virial_residual": 8.583591082356179e-08,
+        "radial_hessian_negative_eigenvalue_count": 0,
+        "lowest_three_finite_box_eigenvalues": [
+          14.819728350711653,
+          20.81899114168759,
+          32.294008354026346
+        ]
+      },
+      "large_D": {
+        "coefficients": [
+          4.0,
+          1.0,
+          1.0
+        ],
+        "bvp_status": 0,
+        "maximum_rms_ode_residual": 1.9334582271009157e-07,
+        "boundary_residual": 1.9620210887005287e-30,
+        "monotonicity_minimum_difference": -1.1102230246251565e-16,
+        "half_height_radius": 0.8312511090340747,
+        "energy_parts_with_tail_correction": [
+          33.9187046403334,
+          45.627689234239064,
+          3.9029948905420384
+        ],
+        "corrected_total_energy": 83.4493887651145,
+        "best_scaled_trial_radius": 0.6742112265135615,
+        "best_scaled_trial_energy": 88.7590659258926,
+        "energy_below_trial_family": true,
+        "corrected_virial_residual": 7.772045407250516e-08,
+        "radial_hessian_negative_eigenvalue_count": 0,
+        "lowest_three_finite_box_eigenvalues": [
+          17.522921854288846,
+          30.274120232599273,
+          48.40076367803594
+        ]
+      },
+      "small_F": {
+        "coefficients": [
+          1.0,
+          0.25,
+          1.0
+        ],
+        "bvp_status": 0,
+        "maximum_rms_ode_residual": 1.9361840295329928e-07,
+        "boundary_residual": 1.550846570995306e-33,
+        "monotonicity_minimum_difference": -1.1102230246251565e-16,
+        "half_height_radius": 0.6809293791258287,
+        "energy_parts_with_tail_correction": [
+          7.07921086299269,
+          13.70979122878995,
+          2.2101934628610405
+        ],
+        "corrected_total_energy": 22.99919555464368,
+        "best_scaled_trial_radius": 0.545964691989518,
+        "best_scaled_trial_energy": 25.017717771289252,
+        "energy_below_trial_family": true,
+        "corrected_virial_residual": 2.2785862086038833e-08,
+        "radial_hessian_negative_eigenvalue_count": 0,
+        "lowest_three_finite_box_eigenvalues": [
+          7.182143226379975,
+          10.08205307395168,
+          18.93893759828761
+        ]
+      },
+      "large_F": {
+        "coefficients": [
+          1.0,
+          4.0,
+          1.0
+        ],
+        "bvp_status": 0,
+        "maximum_rms_ode_residual": 1.9738549692004874e-07,
+        "boundary_residual": 8.441737087238865e-33,
+        "monotonicity_minimum_difference": -1.1102230246251565e-16,
+        "half_height_radius": 1.5261128218173448,
+        "energy_parts_with_tail_correction": [
+          16.44843522195936,
+          95.47829838691888,
+          26.343287819716735
+        ],
+        "corrected_total_energy": 138.270021428595,
+        "best_scaled_trial_radius": 1.2182209489634435,
+        "best_scaled_trial_energy": 156.95918225030724,
+        "energy_below_trial_family": true,
+        "corrected_virial_residual": 2.941906842579556e-07,
+        "radial_hessian_negative_eigenvalue_count": 0,
+        "lowest_three_finite_box_eigenvalues": [
+          27.901477626793692,
+          34.94985825950886,
+          55.47534359941572
+        ]
+      },
+      "small_V": {
+        "coefficients": [
+          1.0,
+          1.0,
+          0.25
+        ],
+        "bvp_status": 0,
+        "maximum_rms_ode_residual": 1.9259897503301182e-07,
+        "boundary_residual": 8.979060648606201e-31,
+        "monotonicity_minimum_difference": -1.1102230246251565e-16,
+        "half_height_radius": 1.3618587586167,
+        "energy_parts_with_tail_correction": [
+          14.158421725968648,
+          27.419582433534735,
+          4.420386925716801
+        ],
+        "corrected_total_energy": 45.998391085220184,
+        "best_scaled_trial_radius": 1.091929383979036,
+        "best_scaled_trial_energy": 50.035435542578504,
+        "energy_below_trial_family": true,
+        "corrected_virial_residual": 6.958431342241056e-08,
+        "radial_hessian_negative_eigenvalue_count": 0,
+        "lowest_three_finite_box_eigenvalues": [
+          6.941636235869807,
+          8.315819409165883,
+          13.448322656410493
+        ]
+      },
+      "large_V": {
+        "coefficients": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "bvp_status": 0,
+        "maximum_rms_ode_residual": 1.935176280318092e-07,
+        "boundary_residual": 2.725583042921728e-35,
+        "monotonicity_minimum_difference": -1.1102230246251565e-16,
+        "half_height_radius": 0.7630564160638563,
+        "energy_parts_with_tail_correction": [
+          8.224217610979256,
+          47.739149241549086,
+          13.171643909850554
+        ],
+        "corrected_total_energy": 69.1350107623789,
+        "best_scaled_trial_radius": 0.6091104744817217,
+        "best_scaled_trial_energy": 78.47959112515362,
+        "energy_below_trial_family": true,
+        "corrected_virial_residual": 9.898182895540231e-08,
+        "radial_hessian_negative_eigenvalue_count": 0,
+        "lowest_three_finite_box_eigenvalues": [
+          28.856112939383465,
+          41.46846519060746,
+          69.12068578042407
+        ]
+      }
+    }
+  },
+  "verdict": {
+    "unit_case_solution_exists": true,
+    "all_tested_positive_coefficient_cases_converged": true,
+    "all_solutions_monotone": true,
+    "all_exact_energies_below_scaled_trial_family": true,
+    "radial_negative_mode_found": false,
+    "full_nonradial_stability_derived": false,
+    "status": "radial_solution_exists_and_is_radially_stable_in_tested_positive_coefficient_window",
+    "next_gate": "version6_bosonic_defect_nonradial_stability_gate"
+  }
+}

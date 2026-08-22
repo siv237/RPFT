@@ -1,0 +1,39 @@
+{
+  "gate": "version6_rp2_geometric_phase_derivation_gate",
+  "project_audit": {
+    "rank_one_projector_is_input_in_relevant_tome5_gates": true,
+    "current_parent_derives_RP2_vacuum_manifold": false,
+    "affine_P1_orbit_dimension": 0,
+    "affine_P1_maximum_permutation_residual": 0.0,
+    "modular_ground_multiplicity": 6
+  },
+  "available_state_kinematics": {
+    "carrier": "D_R3",
+    "pure_state_manifold": "RP2",
+    "maximum_projector_residual": 2.884444029575346e-16,
+    "uniaxial_mixed_state_spectrum": [
+      0.16666666666666663,
+      0.16666666666666666,
+      0.6666666666666667
+    ],
+    "uniaxial_mixed_state_orbit": "SO3/O2=RP2",
+    "full_purification_required": false
+  },
+  "landau_de_gennes_control": {
+    "scalar_order": 1.5,
+    "hessian_eigenvalues": [
+      2.7755575615628914e-08,
+      2.7755575615628914e-08,
+      1.5000000186393692,
+      1.5000000232696546,
+      2.5000000162582854
+    ],
+    "tangent_zero_modes": 2,
+    "positive_transverse_modes": 3
+  },
+  "verdict": {
+    "missing_dynamic_bridge": "derive_spectral_splitting_3_to_1_plus_2",
+    "missing_physical_bridge": "identify_family_state_as_geometric_order_parameter",
+    "next_gate": "version6_real_qutrit_purification_transition_gate"
+  }
+}

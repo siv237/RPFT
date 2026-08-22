@@ -1,0 +1,119 @@
+{
+  "gate": "version6_common_configuration_space_gate",
+  "finite_rectangular_model": {
+    "cutoff": 12,
+    "coefficient_rank": 15,
+    "coefficient_ambient_rank": 105,
+    "total_square_dimension": 375,
+    "oriented_plus_rectangular_dimensions": [
+      195,
+      180
+    ],
+    "oriented_minus_rectangular_dimensions": [
+      180,
+      195
+    ]
+  },
+  "uncoupled_balanced_pair": {
+    "ordinary_index": 0,
+    "kernel_dimension": 15,
+    "cokernel_dimension": 15,
+    "positive_defect_dimension": 30,
+    "normalized_block_deficit": 0.14285714285714285,
+    "each_oriented_branch_dimension_obstruction": 15,
+    "branch_preserving_invertibility": false
+  },
+  "exchange_bridge": {
+    "rank": 15,
+    "maps_kernel_to_cokernel": true,
+    "path_samples": [
+      {
+        "coupling": 0.0,
+        "rank": 360,
+        "nullity": 15,
+        "smallest_singular_value": 0.0,
+        "expected_smallest_singular_value": 0.0,
+        "invertible": false
+      },
+      {
+        "coupling": 0.1,
+        "rank": 375,
+        "nullity": 0,
+        "smallest_singular_value": 0.1,
+        "expected_smallest_singular_value": 0.1,
+        "invertible": true
+      },
+      {
+        "coupling": 0.25,
+        "rank": 375,
+        "nullity": 0,
+        "smallest_singular_value": 0.25,
+        "expected_smallest_singular_value": 0.25,
+        "invertible": true
+      },
+      {
+        "coupling": 0.5,
+        "rank": 375,
+        "nullity": 0,
+        "smallest_singular_value": 0.5,
+        "expected_smallest_singular_value": 0.5,
+        "invertible": true
+      },
+      {
+        "coupling": 1.0,
+        "rank": 375,
+        "nullity": 0,
+        "smallest_singular_value": 1.0,
+        "expected_smallest_singular_value": 1.0,
+        "invertible": true
+      }
+    ],
+    "unitary_at_coupling_one": true,
+    "left_unitarity_residual": 0.0,
+    "right_unitarity_residual": 0.0,
+    "exchange_identified_selfadjoint": true,
+    "exchange_identified_involution": true,
+    "exchange_selfadjoint_residual": 0.0,
+    "exchange_involution_residual": 0.0
+  },
+  "infinite_operator_identities": {
+    "T_lambda_invertible_for_lambda_positive": true,
+    "minimum_singular_value": "min(1, lambda)",
+    "T_one_unitary": true,
+    "non_Fredholm_crossing_needed_to_remove_pair_zero_modes": false
+  },
+  "topological_interpretation": {
+    "oriented_half_indices": [
+      -15,
+      15
+    ],
+    "full_ordinary_index": 0,
+    "complex_K_homology_class_changed_by_finite_rank_bridge": false,
+    "invertible_representative_implies_zero_KO_class": false,
+    "project_KO6_class": 15,
+    "project_normalized_KO_weight": 0.14285714285714285,
+    "real_KO_class_preserved_if_full_symmetry_compatible": true,
+    "full_real_and_Clifford_compatibility_verified": false,
+    "kernel_cokernel_one_seventh_is_global_pair_invariant": false,
+    "kernel_cokernel_one_seventh_is_oriented_block_invariant": true
+  },
+  "configuration_space_fork": {
+    "orientation_block_diagonal_space": "defect_protected",
+    "exchange_compact_bridge_space": "invertible_completion_exists",
+    "physical_zero_vacuum_space": "not_yet_identified",
+    "latent_nonzero_class_exposure_mechanism": "reopened"
+  },
+  "remaining_obligations": {
+    "bridge_is_parent_one_form": false,
+    "full_project_J_and_Clifford_compatibility": false,
+    "gauge_and_BV_BRST_compatibility": false,
+    "single_parent_potential_for_bridge": false,
+    "vacuum_KO_class_selected": false
+  },
+  "verdict": {
+    "common_operator_space": "partial_pass",
+    "new_mechanism": "latent_KO_class_exposed_by_bridge_closure",
+    "physical_closure": false,
+    "next_gate": "version6_exchange_bridge_parent_admissibility_gate"
+  }
+}

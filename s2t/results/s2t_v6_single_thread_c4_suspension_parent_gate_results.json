@@ -1,0 +1,204 @@
+{
+  "gate": "version6_single_thread_c4_suspension_parent_gate",
+  "conceptual_correction": {
+    "rejected_variable": "continuous dwell time assigned to a tetrahedral axis",
+    "replacement_variable": "integer traversal multiplicity K_a on the unbounded number-operator lift",
+    "C4_role": "residue phase of the traversal number, not a permutation of the four tetrahedral axes",
+    "previous_odd_four_cycle_obstruction_applies_to_axis_permutation": true,
+    "previous_obstruction_applies_to_number_operator_lift": false
+  },
+  "project_number_operator": {
+    "Hilbert_basis": "e_n on ell2(Z)",
+    "number_operator": "N e_n=n e_n",
+    "unit_shift": "U e_n=e_(n+1)",
+    "unit_commutator": "[N,U]=U",
+    "arbitrary_power_commutator": "[N,U^k]=k U^k",
+    "distinguishes_first_and_ten_billionth_turn": true
+  },
+  "finite_holonomy_information_loss": {
+    "turn_count": 10000000000,
+    "C4_residue": 0,
+    "Z3_residue": 1,
+    "Z6_residue": 4,
+    "number_operator_eigenvalue": 10000000000,
+    "Toeplitz_index_of_U_power": -10000000000,
+    "commutator": "[N,U^k]=k U^k"
+  },
+  "integer_pass_count_approximations": {
+    "10": {
+      "counts": [
+        219,
+        8,
+        8,
+        8
+      ],
+      "total_passes": 243,
+      "frequencies": [
+        0.9012345679012346,
+        0.03292181069958848,
+        0.03292181069958848,
+        0.03292181069958848
+      ],
+      "maximum_frequency_error": 4.714254984783395e-05,
+      "L1_frequency_error": 9.428509969564708e-05,
+      "second_moment_residual": 5.132230768915911e-05,
+      "single_cycle_successor": "m -> (m+1) mod total_passes",
+      "every_position_has_one_predecessor_and_one_successor": true,
+      "cycle_component_count": 1
+    },
+    "100": {
+      "counts": [
+        2353,
+        86,
+        86,
+        86
+      ],
+      "total_passes": 2611,
+      "frequencies": [
+        0.9011872845653006,
+        0.03293757181156645,
+        0.03293757181156645,
+        0.03293757181156645
+      ],
+      "maximum_frequency_error": 1.4078608612244636e-07,
+      "L1_frequency_error": 2.8157217222407604e-07,
+      "second_moment_residual": 1.5326847746286378e-07,
+      "single_cycle_successor": "m -> (m+1) mod total_passes",
+      "every_position_has_one_predecessor_and_one_successor": true,
+      "cycle_component_count": 1
+    },
+    "1000": {
+      "counts": [
+        15103,
+        552,
+        552,
+        552
+      ],
+      "total_passes": 16759,
+      "frequencies": [
+        0.9011874216838713,
+        0.032937526105376216,
+        0.032937526105376216,
+        0.032937526105376216
+      ],
+      "maximum_frequency_error": 3.6675154024834455e-09,
+      "L1_frequency_error": 7.335030798027997e-09,
+      "second_moment_residual": 3.992685063944898e-09,
+      "single_cycle_successor": "m -> (m+1) mod total_passes",
+      "every_position_has_one_predecessor_and_one_successor": true,
+      "cycle_component_count": 1
+    },
+    "10000": {
+      "counts": [
+        88265,
+        3226,
+        3226,
+        3226
+      ],
+      "total_passes": 97943,
+      "frequencies": [
+        0.9011874253392279,
+        0.03293752488692403,
+        0.03293752488692403,
+        0.03293752488692403
+      ],
+      "maximum_frequency_error": 1.2158829498787327e-11,
+      "L1_frequency_error": 2.4317665936468558e-11,
+      "second_moment_residual": 1.3236932493248537e-11,
+      "single_cycle_successor": "m -> (m+1) mod total_passes",
+      "every_position_has_one_predecessor_and_one_successor": true,
+      "cycle_component_count": 1
+    },
+    "100000": {
+      "counts": [
+        2243206,
+        81987,
+        81987,
+        81987
+      ],
+      "total_passes": 2489167,
+      "frequencies": [
+        0.9011874253515333,
+        0.03293752488282225,
+        0.03293752488282225,
+        0.03293752488282225
+      ],
+      "maximum_frequency_error": 1.4654943925052066e-13,
+      "L1_frequency_error": 2.930572451376179e-13,
+      "second_moment_residual": 1.5936152278583275e-13,
+      "single_cycle_successor": "m -> (m+1) mod total_passes",
+      "every_position_has_one_predecessor_and_one_successor": true,
+      "cycle_component_count": 1
+    },
+    "1000000": {
+      "counts": [
+        22696855,
+        829548,
+        829548,
+        829548
+      ],
+      "total_passes": 25185499,
+      "frequencies": [
+        0.9011874253513897,
+        0.0329375248828701,
+        0.0329375248828701,
+        0.0329375248828701
+      ],
+      "maximum_frequency_error": 2.9976021664879227e-15,
+      "L1_frequency_error": 5.953570969552402e-15,
+      "second_moment_residual": 3.128879526812945e-15,
+      "single_cycle_successor": "m -> (m+1) mod total_passes",
+      "every_position_has_one_predecessor_and_one_successor": true,
+      "cycle_component_count": 1
+    }
+  },
+  "single_cycle_lift": {
+    "construction": "replace four labels by K_0+K_1+K_2+K_3 distinct visit positions and use one cyclic successor",
+    "works_for_every_strictly_positive_integer_count_vector": true,
+    "local_branching": false,
+    "local_endpoints": false,
+    "global_component_count": 1,
+    "axis_projection_preserves_requested_counts": true,
+    "axis_word_is_unique_from_counts": false
+  },
+  "Toeplitz_loop_action_boundary": {
+    "action": "sum_a k_a^2",
+    "ten_billion_turns_in_one_channel": 100000000000000000000,
+    "minimum_over_105_coefficient_channels": 952380952380952400,
+    "minimizer_base_winding_per_channel": 95238095,
+    "channels_with_one_extra_winding": 25,
+    "concentrated_to_distributed_action_ratio": 105.0,
+    "existing_action_prefers_distributed_unit_winding_for_total_15": true,
+    "coefficient_channels_already_identified_with_successive_spatial_passes": false
+  },
+  "parent_boundary": {
+    "ordered_weights_are_available_from_R": true,
+    "current_parent_proves_weights_are_exact_rational_pass_frequencies": false,
+    "current_parent_selects_a_unique_cyclic_word_with_those_frequencies": false,
+    "current_parent_embeds_the_word_as_a_finite_thickness_nonselfintersecting_curve": false,
+    "current_parent_forbids_reconnection_dynamics": false,
+    "previous_axis_permutation_result": {
+      "four_pass_local_no_branching_is_mathematically_possible": true,
+      "existing_residual_Z3_sews_one_global_cycle": false,
+      "proper_tetrahedral_A4_sews_one_global_cycle": false,
+      "existing_standard_Real_lifts_sew_one_global_cycle": false,
+      "order_four_shift_is_single_cycle": true,
+      "order_four_shift_is_already_valid_parent_sewing": false,
+      "single_global_thread_hypothesis_refuted": false,
+      "single_global_thread_derived_from_current_parent": false,
+      "no_reconnection_dynamics_derived": false,
+      "next_gate": "version6_single_thread_c4_suspension_parent_gate"
+    }
+  },
+  "verdict": {
+    "integer_winding_counter_exists_in_project": true,
+    "finite_holonomy_alone_counts_absolute_turns": false,
+    "one_abstract_nonbranching_cycle_with_prescribed_integer_multiplicities_exists": true,
+    "working_Q_weights_have_high_accuracy_integer_approximants": true,
+    "exact_finite_count_realization_of_working_weights_proved": false,
+    "single_global_thread_hypothesis_refuted": false,
+    "single_global_thread_kinematically_reopened": true,
+    "single_global_thread_derived_from_current_parent": false,
+    "next_gate": "version6_single_thread_framed_winding_embedding_gate"
+  }
+}

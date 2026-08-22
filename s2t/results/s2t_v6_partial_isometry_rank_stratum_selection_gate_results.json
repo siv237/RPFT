@@ -1,0 +1,144 @@
+{
+  "gate": "version6_partial_isometry_rank_stratum_selection_gate",
+  "zero_strata": [
+    {
+      "rank": 1,
+      "dimension": 4,
+      "normal_dimension": 5,
+      "laplace_beta_exponent": -2.5,
+      "hessian_eigenvalues": [
+        2.285714308684614e-08,
+        2.285714308684614e-08,
+        2.285714308684614e-08,
+        2.285714308684614e-08,
+        0.5714285028571465,
+        0.5714285028571465,
+        0.5714285028571465,
+        0.5714285028571465,
+        2.285714308570925
+      ],
+      "expected_hessian_eigenvalues": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5714285714285714,
+        0.5714285714285714,
+        0.5714285714285714,
+        0.5714285714285714,
+        2.2857142857142856
+      ],
+      "positive_normal_hessian_determinant": 0.24370797881834944,
+      "entropy": -0.0,
+      "exterior_square": 0.0
+    },
+    {
+      "rank": 2,
+      "dimension": 5,
+      "normal_dimension": 4,
+      "laplace_beta_exponent": -2.0,
+      "hessian_eigenvalues": [
+        -1.1428379315483496e-08,
+        1.142857175562284e-08,
+        1.1428571771994499e-08,
+        1.1428571771994499e-08,
+        1.1428571771994499e-08,
+        0.2857142571428582,
+        1.1428571314283218,
+        1.1428572228568898,
+        1.142857222857715
+      ],
+      "expected_hessian_eigenvalues": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2857142857142857,
+        1.1428571428571428,
+        1.1428571428571428,
+        1.1428571428571428
+      ],
+      "positive_normal_hessian_determinant": 0.4264889629321115,
+      "entropy": -0.6931471805599453,
+      "exterior_square": 1.0
+    },
+    {
+      "rank": 3,
+      "dimension": 3,
+      "normal_dimension": 6,
+      "laplace_beta_exponent": -3.0,
+      "hessian_eigenvalues": [
+        -1.0158602316632025e-08,
+        -1.0158602269066669e-08,
+        -1.0158602070350848e-08,
+        0.7619047356612094,
+        0.7619048228575244,
+        0.7619048228575245,
+        0.7619048228575246,
+        0.761904837248508,
+        0.7619048372485083
+      ],
+      "expected_hessian_eigenvalues": [
+        0.0,
+        0.0,
+        0.0,
+        0.7619047619047619,
+        0.7619047619047619,
+        0.7619047619047619,
+        0.7619047619047619,
+        0.7619047619047619,
+        0.7619047619047619
+      ],
+      "positive_normal_hessian_determinant": 0.19561588893591206,
+      "entropy": -1.0986122886681098,
+      "exterior_square": 3.0
+    }
+  ],
+  "morse_bott_measure": {
+    "asymptotic_rule": "Z_k ~ C_k beta^{-(9-d_k)/2}",
+    "dominant_rank_at_large_beta": 2,
+    "reason": "rank two has the largest zero-manifold dimension d_2=5",
+    "flat_measure_selects_rank_one": false
+  },
+  "reduced_state_topology": {
+    "rank_1_orbit": "RP2",
+    "rank_2_orbit": "Gr(2,3)=RP2",
+    "rank_3_orbit": "point",
+    "topology_distinguishes_rank_1_from_rank_2": false
+  },
+  "real_structure": {
+    "operation": "B -> B^T",
+    "rank_preserved": true,
+    "selects_rank_one": false
+  },
+  "exterior_square_candidate": {
+    "identity": "||B_ia B_jb-B_ib B_ja||^2=4||wedge^2 B||^2=4 e_2(B^T B)",
+    "maximum_identity_residual": 1.1368683772161603e-13,
+    "vanishes_exactly_for_rank_at_most_one": true,
+    "normalized_identity": "W(R)=4 e_2(R)=2(1-Tr(R^2))",
+    "one_copy_equivalent_purity_coefficient": 2.0,
+    "first_order_transition_threshold": 1.3862943611198906,
+    "threshold_passed": true,
+    "ordered_full_rank_spectrum": [
+      0.9539302688773259,
+      0.023034865561337048,
+      0.023034865561337048
+    ],
+    "ordered_free_energy": -1.3741307765814856,
+    "isotropic_free_energy": -1.0986122886681096,
+    "pure_boundary_free_energy": -1.3333333333333335,
+    "ordered_orbit": "RP2",
+    "exact_rank_one_selected_at_finite_entropy": false,
+    "reason_exact_rank_one_fails": "epsilon log epsilon repels every finite-coupling minimum from the boundary",
+    "derived_in_current_bridge_parent": false
+  },
+  "verdict": {
+    "entropy_selector": "rank 3",
+    "flat_morse_bott_measure_selector": "rank 2",
+    "topological_selector": "does not distinguish ranks 1 and 2",
+    "current_parent_selects_rank_one": false,
+    "strongest_reopening_candidate": "normalized direct-minus-crossed exterior-square curvature",
+    "next_gate": "version6_exchange_bridge_exterior_square_parent_gate"
+  }
+}

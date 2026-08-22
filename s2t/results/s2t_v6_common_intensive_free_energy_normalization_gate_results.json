@@ -1,0 +1,100 @@
+{
+  "gate": "version6_common_intensive_free_energy_normalization_gate",
+  "inputs": {
+    "carrier_rank": 300,
+    "positive_entropy_plus_classical_curvature": "33/14",
+    "one_collective_bridge_loop_curvature": "-45/16",
+    "ordinary_family_pfaffian_curvature": "135/2",
+    "family_pfaffian_multiplicity": 15,
+    "one_logdet_copy_curvature": "9/2"
+  },
+  "normalization_cases": {
+    "ordinary_path_integral": {
+      "curvature_exact": "7509/112",
+      "curvature": 67.04464285714286,
+      "unstable": false
+    },
+    "global_division_of_entire_effective_action_by_300": {
+      "curvature_exact": "2503/11200",
+      "curvature": 0.22348214285714285,
+      "unstable": false,
+      "sign_same_as_ordinary": true
+    },
+    "hybrid_divide_only_fermion_logpf_by_300": {
+      "curvature_exact": "-129/560",
+      "curvature": -0.23035714285714284,
+      "unstable": true,
+      "measure_status": "forbidden_sector_selective_normalization"
+    },
+    "common_large_rank_free_energy_density": {
+      "curvature_exact": "5763/2240",
+      "curvature": 2.572767857142857,
+      "unstable": false,
+      "collective_bridge_loops_scaled_by": "1/300",
+      "family_pfaffian_scaled_by": "15/300"
+    }
+  },
+  "bridge_multiplicity_test": {
+    "threshold_exact": "1928/7",
+    "minimum_integer_copies_for_instability": 276,
+    "project_independent_collective_bridge_fields": 1,
+    "scan": [
+      {
+        "independent_bridge_copies": 1,
+        "curvature_exact": "5763/2240",
+        "curvature": 2.572767857142857,
+        "unstable": false
+      },
+      {
+        "independent_bridge_copies": 6,
+        "curvature_exact": "2829/1120",
+        "curvature": 2.525892857142857,
+        "unstable": false
+      },
+      {
+        "independent_bridge_copies": 15,
+        "curvature_exact": "5469/2240",
+        "curvature": 2.4415178571428573,
+        "unstable": false
+      },
+      {
+        "independent_bridge_copies": 30,
+        "curvature_exact": "2577/1120",
+        "curvature": 2.3008928571428573,
+        "unstable": false
+      },
+      {
+        "independent_bridge_copies": 270,
+        "curvature_exact": "57/1120",
+        "curvature": 0.05089285714285714,
+        "unstable": false
+      },
+      {
+        "independent_bridge_copies": 275,
+        "curvature_exact": "9/2240",
+        "curvature": 0.0040178571428571425,
+        "unstable": false
+      },
+      {
+        "independent_bridge_copies": 276,
+        "curvature_exact": "-3/560",
+        "curvature": -0.005357142857142857,
+        "unstable": true
+      },
+      {
+        "independent_bridge_copies": 300,
+        "curvature_exact": "-129/560",
+        "curvature": -0.23035714285714284,
+        "unstable": true
+      }
+    ]
+  },
+  "verdict": {
+    "common_global_scaling_rescues_instability": false,
+    "common_large_rank_intensive_limit_rescues_instability": false,
+    "hybrid_fractional_pfaffian_would_rescue_but_is_common_measure": false,
+    "required_bridge_replication_present": false,
+    "determinant_barrier_branch_closed": true,
+    "next_gate": "version6_nongaussian_spatial_stiffness_saturation_gate"
+  }
+}

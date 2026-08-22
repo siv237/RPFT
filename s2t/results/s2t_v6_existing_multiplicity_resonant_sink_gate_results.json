@@ -1,0 +1,154 @@
+{
+  "gate": "version6_existing_multiplicity_resonant_sink_gate",
+  "affine_triplet_certificate": {
+    "P1_rank": 1,
+    "P3_rank": 3,
+    "height_on_affine_node": "-P3",
+    "P3_is_exactly_degenerate": true,
+    "V_Vstar": [
+      [
+        0.9999999999999998,
+        2.4514267852689627e-17,
+        -8.898096421589207e-18
+      ],
+      [
+        2.4514267852689627e-17,
+        1.0000000000000002,
+        -1.1097163582100284e-17
+      ],
+      [
+        -8.898096421589207e-18,
+        -1.1097163582100284e-17,
+        1.0000000000000002
+      ]
+    ],
+    "Vstar_V": [
+      [
+        0.75,
+        -0.24999999999999986,
+        -0.25000000000000006,
+        -0.25000000000000006
+      ],
+      [
+        -0.24999999999999986,
+        0.75,
+        -0.25000000000000006,
+        -0.25000000000000006
+      ],
+      [
+        -0.25000000000000006,
+        -0.25000000000000006,
+        0.7500000000000002,
+        -0.25000000000000006
+      ],
+      [
+        -0.25000000000000006,
+        -0.25000000000000006,
+        -0.25000000000000006,
+        0.7500000000000001
+      ]
+    ],
+    "V_maps_P3_to_family_triplet": true
+  },
+  "direct_sum_conditional_transfer": {
+    "target_axis_weight": 0.9121665962741361,
+    "target_transverse_weight": 0.04391670186293195,
+    "required_transverse_survival_probability": 0.0481454835578451,
+    "required_selective_rotation_angle": 1.3495755726035428,
+    "remaining_probability_in_family_corner": 0.3654303223718967,
+    "probability_leaked_to_affine_corner": 0.6345696776281033,
+    "conditional_family_spectrum": [
+      0.9121665962741361,
+      0.04391670186293196,
+      0.04391670186293196
+    ],
+    "conditional_target_reached": true,
+    "is_tensor_product_cooling": false
+  },
+  "canonical_affine_coupling_test": {
+    "coupling": "X=rho V",
+    "acts_as_scalar_on_family_triplet": true,
+    "conditional_state_after_equal_transfer": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "creates_uniaxial_split": false,
+    "required_modified_coupling": "rho V(I-P) after an axis P is already selected",
+    "modified_coupling_is_parent_derived": false
+  },
+  "candidate_ledger": {
+    "affine_C4_equal_1_plus_3": {
+      "raw_dimension": 4,
+      "same_height_resonant_rank": 3,
+      "canonical_intertwiner_rank": 3,
+      "independent_tensor_factor": false,
+      "direct_sum_corner": true,
+      "canonical_coupling_axis_selective": false,
+      "status": "resonant multiplicity exists but canonical V is isotropic"
+    },
+    "H15_observed_package": {
+      "raw_dimension": 15,
+      "irreducible_block_dimensions": [
+        6,
+        2,
+        3,
+        3,
+        1
+      ],
+      "equivalent_copy_multiplicities": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maximum_gauge_commutant_multiplicity": 1,
+      "status": "representation dimensions are gauge charges, not a multiplicity space"
+    },
+    "KO6_real_doubling": {
+      "raw_factor": 2,
+      "same_physical_grading_multiplicity": 1,
+      "mixing_halves_preserves_grading": false,
+      "status": "Real completion is not two interchangeable sink channels"
+    },
+    "M18_vertex_rank_six": {
+      "raw_vertex_rank": 6,
+      "decomposition": "family rank 3 plus J-conjugate rank 3",
+      "independent_multiplicity_after_J_and_grading": 1,
+      "status": "rank six combines family and Real structure rather than a free sink factor"
+    },
+    "M20_M35_matrix_sizes": {
+      "matrix_sizes": [
+        20,
+        35
+      ],
+      "hilbert_sink_multiplicity": false,
+      "status": "algebra/corner dimensions are not energy-level degeneracies"
+    },
+    "exterior_real_pair": {
+      "raw_same_orientation_copies": 2,
+      "physical_half_trace_independent_copies": 1,
+      "status": "already normalized; reuse would repeat the closed double count"
+    }
+  },
+  "maximum_residuals": {
+    "P1_projector": 0.0,
+    "P3_projector": 0.0,
+    "P1_P3_orthogonality": 0.0,
+    "V_Vstar_identity": 3.8667552897052865e-16,
+    "Vstar_V_P3": 3.6188843062238402e-16,
+    "conditional_target": 9.813077866773595e-18,
+    "isotropic_transfer_stays_isotropic": 0.0
+  },
+  "verdict": {
+    "existing_affine_parent_contains_resonant_rank_at_least_two": true,
+    "resonant_rank_is_independent_tensor_sink": false,
+    "canonical_parent_coupling_generates_order": false,
+    "H15_or_KO6_supplies_free_sink_multiplicity": false,
+    "all_requirements_for_autonomous_crystallization_met": false,
+    "minimal_reopening": "derive state-selective nonlinear affine transfer without assuming P",
+    "matter_birth_fully_derived": false,
+    "next_gate": "version6_nonlinear_affine_feedback_instability_gate"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "gate": "version6_bosonic_defect_q_tetrahedral_vortex_radial_stability_gate",
+  "operator": {
+    "sector": "axisymmetric coupled fluctuations delta K, delta a, delta b",
+    "gauge_and_scalar_metric_included": true,
+    "finite_element_node_counts": [
+      100,
+      160,
+      240,
+      360,
+      500
+    ],
+    "lowest_eigenvalue_convergence": {
+      "100": 1.5105138738711401,
+      "160": 1.5104985591623534,
+      "240": 1.5104683511756785,
+      "360": 1.5104470938032428,
+      "500": 1.5104366622295657
+    },
+    "finest_eigenvalues": [
+      1.5104366622295657,
+      1.595580692241064,
+      1.7018178147210574,
+      1.8617567200973086,
+      2.073517053905778,
+      2.3363085393101013,
+      2.649612490301441,
+      3.012897738130608
+    ]
+  },
+  "stability": {
+    "negative_mode_count_checked": 0,
+    "zero_mode_count_checked": 0,
+    "positive_checked_mode_count": 8,
+    "minimum_eigenvalue": 1.5104366622295657,
+    "minimum_grid_drift_360_to_500": 1.043157367708325e-05
+  },
+  "boundary": {
+    "nonaxisymmetric_angular_sectors_checked": false,
+    "longitudinal_wave_numbers_checked": false,
+    "full_gauge_fixed_hessian_checked": false,
+    "absolute_scale_derived": false
+  },
+  "verdict": {
+    "axisymmetric_radial_stability_passes": true,
+    "full_vortex_stability_closed": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_q_tetrahedral_vortex_angular_stability_gate"
+  }
+}

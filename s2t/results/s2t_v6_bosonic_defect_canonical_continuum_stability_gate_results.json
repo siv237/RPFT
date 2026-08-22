@@ -1,0 +1,164 @@
+{
+  "gate": "version6_bosonic_defect_canonical_continuum_stability_gate",
+  "grand_angular_momentum": {
+    "internal_tensor_spin": 2,
+    "orbital_tensor_product_decompositions": {
+      "0": {
+        "2": 5
+      },
+      "1": {
+        "1": 3,
+        "2": 5,
+        "3": 7
+      },
+      "2": {
+        "0": 1,
+        "1": 3,
+        "2": 5,
+        "3": 7,
+        "4": 9
+      },
+      "3": {
+        "1": 3,
+        "2": 5,
+        "3": 7,
+        "4": 9,
+        "5": 11
+      }
+    },
+    "previous_lowest_mode_scalar_orbital_degree": 2,
+    "previous_lowest_multiplicity": 3,
+    "unique_total_J_with_multiplicity_three_in_l2_tensor_spin2": 1,
+    "lowest_triplet_classification": "grand angular momentum J=1"
+  },
+  "infinite_volume_scaling_test": {
+    "spectra": [
+      {
+        "box_radius": 6.0,
+        "basis_dimension": 125,
+        "lowest_six_eigenvalues": [
+          0.050506633970296866,
+          0.05050663442748672,
+          0.05050852805168722,
+          0.3898590013937405,
+          0.38985900221225867,
+          0.38986098874442854
+        ],
+        "negative_mode_count": 0,
+        "projected_first_variation_norm": 2.6394939942531264e-05,
+        "maximum_directional_hessian_residual": 8.973071102934072e-07
+      },
+      {
+        "box_radius": 8.0,
+        "basis_dimension": 125,
+        "lowest_six_eigenvalues": [
+          0.01374852733963438,
+          0.01374852877842634,
+          0.013751622485842139,
+          0.10345558217485643,
+          0.10345558245015538,
+          0.10345846794976757
+        ],
+        "negative_mode_count": 0,
+        "projected_first_variation_norm": 5.0521121436840435e-05,
+        "maximum_directional_hessian_residual": 4.259820189662067e-06
+      },
+      {
+        "box_radius": 10.0,
+        "basis_dimension": 125,
+        "lowest_six_eigenvalues": [
+          0.005361733427632704,
+          0.005361735405862723,
+          0.005365508799778179,
+          0.040373040374813124,
+          0.0403730428999299,
+          0.0403764262119195
+        ],
+        "negative_mode_count": 0,
+        "projected_first_variation_norm": 7.563048539770507e-05,
+        "maximum_directional_hessian_residual": 1.0110011775339243e-05
+      },
+      {
+        "box_radius": 12.0,
+        "basis_dimension": 125,
+        "lowest_six_eigenvalues": [
+          0.0027536947902586156,
+          0.002753696161232528,
+          0.0027578624491961063,
+          0.019889813793872592,
+          0.019889816273434807,
+          0.019893586169016986
+        ],
+        "negative_mode_count": 0,
+        "projected_first_variation_norm": 0.00010233941458088055,
+        "maximum_directional_hessian_residual": 7.792332350296683e-06
+      }
+    ],
+    "lowest_eigenvalues": [
+      0.050506633970296866,
+      0.01374852733963438,
+      0.005361733427632704,
+      0.0027536947902586156
+    ],
+    "power_fit_all_boxes": -4.218097292899608,
+    "power_fit_last_three_boxes": -3.9751418609438223,
+    "lambda_times_L4": [
+      65.45659762550474,
+      56.31396798314242,
+      53.61733427632704,
+      57.100615170802655
+    ],
+    "asymptotic_identity": {
+      "ordered_vacuum_covariant_derivative": "D_Q Q=0",
+      "ordered_vacuum_potential": "V_can(Q)=0",
+      "leading_long_wavelength_term": "integral |F_A|^2",
+      "predicted_L2_rayleigh_scaling": "lambda_min proportional to L^-4"
+    },
+    "approaches_zero_from_above": true,
+    "negative_bound_state_seen": false
+  },
+  "higher_angular_channel_test": {
+    "orbital_degree": 3,
+    "basis_dimension": 140,
+    "lowest_twenty_eigenvalues": [
+      2.8204027997372303,
+      2.8204028004442,
+      2.8204034957858095,
+      2.8204045054344293,
+      2.8204045067820207,
+      4.318226523682099,
+      4.31822765478627,
+      4.3182276556625485,
+      4.661623279067935,
+      4.661623280747806,
+      4.661624323702183,
+      4.661625831902038,
+      4.661625832128309,
+      8.1940135344828,
+      8.194013535222492,
+      8.194014470772924,
+      8.19401740300868,
+      8.19401740539946,
+      8.194017407207866,
+      8.194017423455747
+    ],
+    "negative_mode_count": 0,
+    "projected_first_variation_norm": 5.860278093634396e-12
+  },
+  "normalization_boundary": {
+    "static_hessian_sign_is_independent_of_positive_norm_choice": true,
+    "reported_eigenvalue_scaling_uses_L2_Q_norm": true,
+    "unique_lorentzian_kinetic_metric_parent_derived": false,
+    "physical_oscillation_frequencies_derived": false
+  },
+  "verdict": {
+    "lowest_triplet_is_J1": true,
+    "lowest_triplet_is_negative_instability": false,
+    "zero_is_static_continuum_threshold": true,
+    "quartic_threshold_scaling_supported": true,
+    "l3_negative_mode_found": false,
+    "all_continuum_channels_proved_nonnegative": false,
+    "status": "J1_zero_threshold_identified_without_negative_mode",
+    "next_gate": "version6_bosonic_defect_channel_operator_factorization_gate"
+  }
+}

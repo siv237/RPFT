@@ -1,0 +1,442 @@
+{
+  "gate": "version6_bosonic_defect_corrected_vortex_nonradial_stability_gate",
+  "corrected_normalization": {
+    "A": 0.5267489711934157,
+    "B": 0.6584362139917695,
+    "G": 0.07407407407407407,
+    "A_over_G": 7.1111111111111125
+  },
+  "operator": {
+    "sector": "effective charged amplitude + neutral amplitude + two transverse gauge components",
+    "coordinate_system": "Cartesian",
+    "gauge_fixing": "background gauge div(delta A)+(A/G)(J phi0).delta phi=0",
+    "finite_difference_hessian_step": 2e-05,
+    "spectra": {
+      "24": {
+        "grid_size": 24,
+        "gauge_sign": 1.0,
+        "box_radius": 10.0,
+        "spacing": 0.8695652173913047,
+        "dimension": 2420,
+        "background_discrete_gradient_rms": 0.00995433178119885,
+        "eigenvalues": [
+          0.9423531351296927,
+          1.4784247740930818,
+          1.9121283806443286,
+          1.9164981339822307,
+          1.9997859707839278,
+          1.999792074406185,
+          2.030618832227728,
+          2.0377073366951715
+        ],
+        "naive_translation_first_four_overlaps": [
+          0.10325172838481618,
+          0.10325172838639424
+        ],
+        "covariant_translation_first_four_overlaps": [
+          0.31592202898375765,
+          0.31592202899013727
+        ],
+        "covariant_translation_first_eight_overlaps": [
+          0.31661241152653413,
+          0.31661241410015134
+        ],
+        "covariant_translation_rayleigh_quotients": [
+          4.140107175843426,
+          4.140107175842433
+        ],
+        "mode_block_weights": [
+          {
+            "charged_scalar": 0.6080652064363397,
+            "gauge_field": 0.38725325610694916,
+            "neutral_scalar": 0.004681537456712327
+          },
+          {
+            "charged_scalar": 0.6334697100357752,
+            "gauge_field": 0.3569487846287853,
+            "neutral_scalar": 0.009581505335438546
+          },
+          {
+            "charged_scalar": 0.43219102150082883,
+            "gauge_field": 0.5664092275225014,
+            "neutral_scalar": 0.0013997509766694007
+          },
+          {
+            "charged_scalar": 0.4260059423306438,
+            "gauge_field": 0.5730590784929008,
+            "neutral_scalar": 0.0009349791764555023
+          },
+          {
+            "charged_scalar": 0.43108961024468717,
+            "gauge_field": 0.5686811748671893,
+            "neutral_scalar": 0.00022921488812292556
+          },
+          {
+            "charged_scalar": 0.43107481927039365,
+            "gauge_field": 0.5687195534714121,
+            "neutral_scalar": 0.00020562725819387226
+          },
+          {
+            "charged_scalar": 0.4332380192894879,
+            "gauge_field": 0.5666650558140666,
+            "neutral_scalar": 9.692489644410946e-05
+          },
+          {
+            "charged_scalar": 0.4360805299621802,
+            "gauge_field": 0.5636393905600254,
+            "neutral_scalar": 0.0002800794777916715
+          }
+        ]
+      },
+      "32": {
+        "grid_size": 32,
+        "gauge_sign": 1.0,
+        "box_radius": 10.0,
+        "spacing": 0.6451612903225801,
+        "dimension": 4500,
+        "background_discrete_gradient_rms": 0.004465360879284824,
+        "eigenvalues": [
+          0.5210107467118024,
+          0.8070059806713641,
+          0.9975072713705269,
+          1.0197099025537495,
+          1.0607771475531635,
+          1.0609063976193838,
+          1.0964978914593992,
+          1.1029841739589996
+        ],
+        "naive_translation_first_four_overlaps": [
+          0.10192700453177643,
+          0.10192700453358862
+        ],
+        "covariant_translation_first_four_overlaps": [
+          0.44621390343435974,
+          0.446213903441754
+        ],
+        "covariant_translation_first_eight_overlaps": [
+          0.45158413554324345,
+          0.451584142758871
+        ],
+        "covariant_translation_rayleigh_quotients": [
+          3.1950291230897006,
+          3.1950291230929277
+        ],
+        "mode_block_weights": [
+          {
+            "charged_scalar": 0.6227069093873879,
+            "gauge_field": 0.3739295331916922,
+            "neutral_scalar": 0.0033635574209247136
+          },
+          {
+            "charged_scalar": 0.584937369850119,
+            "gauge_field": 0.40992897634841535,
+            "neutral_scalar": 0.005133653801469782
+          },
+          {
+            "charged_scalar": 0.3971815372658355,
+            "gauge_field": 0.6023205196289817,
+            "neutral_scalar": 0.0004979431051787818
+          },
+          {
+            "charged_scalar": 0.4007553326766692,
+            "gauge_field": 0.5991465540297426,
+            "neutral_scalar": 9.811329358759042e-05
+          },
+          {
+            "charged_scalar": 0.4033461274279244,
+            "gauge_field": 0.5965862442351517,
+            "neutral_scalar": 6.762833692267727e-05
+          },
+          {
+            "charged_scalar": 0.40299044814724166,
+            "gauge_field": 0.5969444860598202,
+            "neutral_scalar": 6.506579293659203e-05
+          },
+          {
+            "charged_scalar": 0.4045375280737594,
+            "gauge_field": 0.5954384349081736,
+            "neutral_scalar": 2.403701806767726e-05
+          },
+          {
+            "charged_scalar": 0.40822866550289294,
+            "gauge_field": 0.5916450162193955,
+            "neutral_scalar": 0.00012631827771312685
+          }
+        ]
+      },
+      "40": {
+        "grid_size": 40,
+        "gauge_sign": 1.0,
+        "box_radius": 10.0,
+        "spacing": 0.5128205128205128,
+        "dimension": 7220,
+        "background_discrete_gradient_rms": 0.002217329379289544,
+        "eigenvalues": [
+          0.34769351363598455,
+          0.4327431165582659,
+          0.43802580125585033,
+          0.45543130974099766,
+          0.4572587686332772,
+          0.46167975226525954,
+          0.4932683561262034,
+          0.4993766054688907
+        ],
+        "naive_translation_first_four_overlaps": [
+          0.05659414091392117,
+          0.056594140912097676
+        ],
+        "covariant_translation_first_four_overlaps": [
+          0.24787541149241948,
+          0.24787541147767866
+        ],
+        "covariant_translation_first_eight_overlaps": [
+          0.3589633537717319,
+          0.35896337477435697
+        ],
+        "covariant_translation_rayleigh_quotients": [
+          2.8649519594215116,
+          2.86495195942274
+        ],
+        "mode_block_weights": [
+          {
+            "charged_scalar": 0.5771509126279264,
+            "gauge_field": 0.4199544351573583,
+            "neutral_scalar": 0.0028946522147128735
+          },
+          {
+            "charged_scalar": 0.4078695996157232,
+            "gauge_field": 0.5916183908360887,
+            "neutral_scalar": 0.0005120095481846007
+          },
+          {
+            "charged_scalar": 0.3866195721831213,
+            "gauge_field": 0.6133223707540537,
+            "neutral_scalar": 5.805706282516811e-05
+          },
+          {
+            "charged_scalar": 0.38874607491475055,
+            "gauge_field": 0.6109911291110588,
+            "neutral_scalar": 0.00026279597418714336
+          },
+          {
+            "charged_scalar": 0.37778423600142075,
+            "gauge_field": 0.6221660717624597,
+            "neutral_scalar": 4.96922361131131e-05
+          },
+          {
+            "charged_scalar": 0.44098366106446396,
+            "gauge_field": 0.557713795882194,
+            "neutral_scalar": 0.0013025430533398503
+          },
+          {
+            "charged_scalar": 0.37687129653325907,
+            "gauge_field": 0.6230863631557025,
+            "neutral_scalar": 4.234031103844498e-05
+          },
+          {
+            "charged_scalar": 0.38463787118898957,
+            "gauge_field": 0.6152264350086567,
+            "neutral_scalar": 0.00013569380235160458
+          }
+        ]
+      },
+      "48": {
+        "grid_size": 48,
+        "gauge_sign": 1.0,
+        "box_radius": 10.0,
+        "spacing": 0.4255319148936163,
+        "dimension": 10580,
+        "background_discrete_gradient_rms": 0.001245621837546519,
+        "eigenvalues": [
+          0.11540326828736959,
+          0.119968673512095,
+          0.1259048037439284,
+          0.1259324391625345,
+          0.14358442293922882,
+          0.1499785619850078,
+          0.15686368149984428,
+          0.16612922226481466
+        ],
+        "naive_translation_first_four_overlaps": [
+          0.0032711373748806494,
+          0.0032711373743372642
+        ],
+        "covariant_translation_first_four_overlaps": [
+          0.016671422730870245,
+          0.016671422728068704
+        ],
+        "covariant_translation_first_eight_overlaps": [
+          0.07417356581620312,
+          0.07417356606961899
+        ],
+        "covariant_translation_rayleigh_quotients": [
+          2.7575315175583497,
+          2.757531517556853
+        ],
+        "mode_block_weights": [
+          {
+            "charged_scalar": 0.36550714914613636,
+            "gauge_field": 0.6342811465555643,
+            "neutral_scalar": 0.00021170429830528486
+          },
+          {
+            "charged_scalar": 0.3534983735217171,
+            "gauge_field": 0.6464848386970302,
+            "neutral_scalar": 1.6787781252670088e-05
+          },
+          {
+            "charged_scalar": 0.3522015110015059,
+            "gauge_field": 0.6477903852587235,
+            "neutral_scalar": 8.10373976820671e-06
+          },
+          {
+            "charged_scalar": 0.35232719192131245,
+            "gauge_field": 0.64766549312906,
+            "neutral_scalar": 7.314949628299317e-06
+          },
+          {
+            "charged_scalar": 0.3743057514901371,
+            "gauge_field": 0.62533804514973,
+            "neutral_scalar": 0.00035620336013382123
+          },
+          {
+            "charged_scalar": 0.3521954151935844,
+            "gauge_field": 0.6477978842804879,
+            "neutral_scalar": 6.700525922542698e-06
+          },
+          {
+            "charged_scalar": 0.37724830698770534,
+            "gauge_field": 0.6224984697631739,
+            "neutral_scalar": 0.00025322324911735566
+          },
+          {
+            "charged_scalar": 0.36504461172623864,
+            "gauge_field": 0.6348446646477423,
+            "neutral_scalar": 0.00011072362601592347
+          }
+        ]
+      },
+      "56": {
+        "grid_size": 56,
+        "gauge_sign": 1.0,
+        "box_radius": 10.0,
+        "spacing": 0.3636363636363633,
+        "dimension": 14580,
+        "background_discrete_gradient_rms": 0.0007718603316688694,
+        "eigenvalues": [
+          0.01327643417977624,
+          0.013319421780054916,
+          0.013912657857585177,
+          0.013915785884513938,
+          0.018977468526503217,
+          0.01948457187821699,
+          0.024311332432340932,
+          0.024367209344111167
+        ],
+        "naive_translation_first_four_overlaps": [
+          3.228952118767132e-05,
+          3.2289521266630746e-05
+        ],
+        "covariant_translation_first_four_overlaps": [
+          0.00017594371682498505,
+          0.0001759437171975912
+        ],
+        "covariant_translation_first_eight_overlaps": [
+          0.001864378703298373,
+          0.0018643787023229694
+        ],
+        "covariant_translation_rayleigh_quotients": [
+          2.7245600652999764,
+          2.7245600652985322
+        ],
+        "mode_block_weights": [
+          {
+            "charged_scalar": 0.3284775005310262,
+            "gauge_field": 0.6715193033063738,
+            "neutral_scalar": 3.1961625967969134e-06
+          },
+          {
+            "charged_scalar": 0.327635902435951,
+            "gauge_field": 0.6723621233558926,
+            "neutral_scalar": 1.9742081546405566e-06
+          },
+          {
+            "charged_scalar": 0.32791668031685933,
+            "gauge_field": 0.6720808370608827,
+            "neutral_scalar": 2.482622243546029e-06
+          },
+          {
+            "charged_scalar": 0.3280068598597787,
+            "gauge_field": 0.6719904408700292,
+            "neutral_scalar": 2.6992701866462287e-06
+          },
+          {
+            "charged_scalar": 0.32977214276492917,
+            "gauge_field": 0.670210681041775,
+            "neutral_scalar": 1.717619330032723e-05
+          },
+          {
+            "charged_scalar": 0.3272538642319104,
+            "gauge_field": 0.6727439256916267,
+            "neutral_scalar": 2.210076466798289e-06
+          },
+          {
+            "charged_scalar": 0.327566654513805,
+            "gauge_field": 0.6724295240289822,
+            "neutral_scalar": 3.821457207666917e-06
+          },
+          {
+            "charged_scalar": 0.3274857052793894,
+            "gauge_field": 0.6725101012942322,
+            "neutral_scalar": 4.193426372317918e-06
+          }
+        ]
+      }
+    }
+  },
+  "stability": {
+    "finest_eigenvalues": [
+      0.01327643417977624,
+      0.013319421780054916,
+      0.013912657857585177,
+      0.013915785884513938,
+      0.018977468526503217,
+      0.01948457187821699,
+      0.024311332432340932,
+      0.024367209344111167
+    ],
+    "negative_mode_count_checked": 0,
+    "near_zero_mode_count_at_finest_grid": 8,
+    "soft_modes_rigorously_identified": false,
+    "minimum_checked_eigenvalue": 0.01327643417977624,
+    "minimum_drift_48_to_56": 0.10212683410759335,
+    "third_mode_ratio_56_over_48": 0.11050140617256708,
+    "longitudinal_dispersion_samples_for_lowest_finite_grid_mode": {
+      "0.0": 0.01327643417977624,
+      "0.25": 0.07577643417977624,
+      "0.5": 0.26327643417977625,
+      "1.0": 1.0132764341797762,
+      "2.0": 4.013276434179776
+    },
+    "positive_gap_converged": false
+  },
+  "boundary": {
+    "effective_abelian_subsystem_checked": true,
+    "translation_zero_modes_rigorously_resolved": false,
+    "all_spin2_components_checked": false,
+    "all_spin3_components_checked": false,
+    "full_nonabelian_gauge_fixed_hessian_checked": false,
+    "closed_loop_stability_checked": false,
+    "hopf_identification_checked": false,
+    "absolute_scale_derived": false
+  },
+  "verdict": {
+    "negative_mode_found_in_checked_effective_sector": false,
+    "checked_effective_sector_is_numerically_nonnegative": true,
+    "nonradial_stability_certificate_passes": false,
+    "reason": "more than two modes collapse toward zero under grid refinement",
+    "full_vortex_stability_closed": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_corrected_vortex_covariant_zero_mode_resolution_gate"
+  }
+}

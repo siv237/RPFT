@@ -1,0 +1,215 @@
+\chapter{Компонентные observables рождения: selection rules без скорости}
+\label{ch:v6-spectral-transition-componentwise-creation-observable-gate}
+
+\section{Вопрос после отказа от единого пакета рождения}
+
+Предыдущая архитектурная развилка сохранила класс пятнадцать как ledger
+поколения и запретила читать его как multiplicity одного события. Теперь
+нужно определить, какие компонентные утверждения остаются физически
+проверяемыми без новой модели.
+
+Сопоставляются четыре независимые структуры:
+\begin{enumerate}
+ \item тёплицевы ранги и веса компонент;
+ \item физический сфалеронный спектральный поток;
+ \item аномальные изменения зарядов;
+ \item хиггс-разрешённые ранги локальных опор.
+\end{enumerate}
+Цель --- отделить точные selection rules от вероятностей, масс и
+branching ratios, которых топология сама не задаёт.
+
+\section{Классификационные компонентные числа}
+
+Тёплицева граница раскладывается как
+\begin{equation}
+ \kappa_{15}=\kappa_{12}+\kappa_3,
+\end{equation}
+а нормированные следовые веса равны
+\begin{equation}
+ w_q=\frac{12}{105}=\frac4{35},
+ \qquad
+ w_\ell=\frac3{105}=\frac1{35}.
+ \label{eq:v6-component-observable-toeplitz-weights}
+\end{equation}
+Их отношение равно
+\begin{equation}
+ w_q:w_\ell=4:1.
+\end{equation}
+Это точное утверждение о коэффициентном цикле и следовой нормировке. Но
+в текущем родителе нет теоремы, превращающей $w_q,w_\ell$ в вероятности
+создания кваркового и лептонного событий.
+
+\section{Физический поток и зарядовые правила}
+
+Для стандартного единичного сфалеронного перехода компонентные потоки
+равны
+\begin{equation}
+ \operatorname{SF}_q:\operatorname{SF}_\ell=3:1.
+ \label{eq:v6-component-observable-flow-ratio}
+\end{equation}
+При барионном весе $1/3$ каждой цветовой кварковой копии это даёт
+\begin{equation}
+ \Delta B=1,
+ \qquad
+ \Delta L=1,
+ \qquad
+ \Delta(B-L)=0.
+ \label{eq:v6-component-observable-charge-rule}
+\end{equation}
+Связь топологического перехода, спектрального потока и аномальных
+зарядов является стандартной
+\cite{component-observable-klinkhamer-rupp2003,
+component-observable-krs1985}.
+
+Однако зарядовое отношение равно $1:1$, а не $3:1$ и не $4:1$.
+Причина прозрачна: поток считает дублетные копии, заряд включает
+физические веса, а тёплицев класс считает размер коэффициентного
+носителя. Это разные observables.
+
+\section{Хиггс-разрешённые опоры}
+
+При $H\ne0$ конечный носитель дополнительно распадается как
+\begin{equation}
+ 15=6_{\rm up}+6_{\rm down}+2_e+1_\nu.
+ \label{eq:v6-component-observable-higgs-supports}
+\end{equation}
+Эти ранги определяют опоры блоков заряженного оператора и нейтринной
+линии. Они также не являются числами частиц в одном переходе. В
+частности, ранг нейтринного коварианта меняется $0\to1$ при прохождении
+через $H=0$, но текущий функционал не задаёт частоту таких прохождений.
+
+\section{Несовместимость единой вероятностной интерпретации}
+
+После нормировки двухкомпонентные распределения, которые можно было бы
+ошибочно принять за branching fractions, равны
+\begin{align}
+ p_{\rm rank}&=\left(\frac{12}{15},\frac3{15}\right)
+ =\left(\frac45,\frac15\right),\\
+ p_{\rm flow}&=\left(\frac34,\frac14\right),\\
+ p_{B,L}&=\left(\frac12,\frac12\right).
+\end{align}
+Они попарно различны. В текущей архитектуре нет динамического принципа,
+выбирающего одно из них или переводящего одно в другое.
+
+\begin{theorem}[Selection rules не определяют branching ratios]
+Текущий родитель точно фиксирует компонентные $K$-классы $(12,3)$,
+сфалеронный поток $(3,1)$, зарядовые изменения
+$(\Delta B,\Delta L)=(1,1)$ и хиггс-разрешённые ранги $(6,6,2,1)$.
+Эти наборы являются различными спариваниями и не задают единой
+вероятностной меры. Поэтому параметрически чистые branching ratio,
+скорость рождения и абсолютная multiplicity из них не следуют.
+\end{theorem}
+
+\section{Почему скорость требует дополнительной динамики}
+
+Даже в стандартной электрослабой теории сфалеронная скорость зависит от
+температуры, барьерной энергии, калибровочных и хиггсовских параметров,
+неравновесной эволюции и динамического prefactor. Она определяется
+отдельным термическим или real-time расчётом, часто непертурбативным
+\cite{component-observable-moore1998,
+component-observable-barroso-moore2023}.
+
+В проекте отсутствуют необходимые входы единой компонентной скорости:
+\begin{enumerate}
+ \item калиброванная энергия переходного барьера для проектного
+ спектрального оператора;
+ \item физическая температура или неравновесное распределение;
+ \item real-time кинетический оператор и prefactor;
+ \item мера флуктуаций, общая для компонент $12$ и $3$;
+ \item нелинейное конечное состояние, интерпретируемое как наблюдаемая
+ материя.
+\end{enumerate}
+Следовательно, формула вида $\Gamma\sim A e^{-E_*/T}$ не становится
+предсказанием, пока $A,E_*,T$ не выведены одним родителем.
+
+\section{Что остаётся строгим}
+
+После настоящего гейта разрешены следующие утверждения:
+\begin{itemize}
+ \item классовый ledger: $(\kappa_{12},\kappa_3)$;
+ \item физический поток стандартного сфалерона: $(3,1)$;
+ \item аномальное правило: $\Delta B=\Delta L$, $\Delta(B-L)=0$;
+ \item локальная возможность смены ранга $W_\nu:0\to1$ при $H=0$.
+\end{itemize}
+Не разрешены без новой динамики:
+\begin{itemize}
+ \item отношение числа рождаемых кварков и лептонов;
+ \item абсолютная скорость события;
+ \item масса или размер продукта;
+ \item вероятность образования устойчивой материи;
+ \item отождествление весов $4/35$ и $1/35$ с branching fractions.
+\end{itemize}
+
+\begin{nogocriterion}
+Нельзя превращать ранги, индексы или нормированные следовые веса в
+вероятности рождения без явно выведенной меры на траекториях и
+real-time динамики. Совпадение суммы или красивое рациональное отношение
+не заменяет расчёт скорости.
+\end{nogocriterion}
+
+\section{Следующий статусный гейт}
+
+Следующий гейт
+\path{version6_spectral_transition_dynamic_closure_status_gate}
+должен свести полный ledger ветви спектрального рождения и ответить,
+закрыта ли версия VI на уровне:
+\begin{enumerate}
+ \item кинематики и классификации;
+ \item существования переходного седла;
+ \item динамической вероятности;
+ \item устойчивого конечного состояния;
+ \item наблюдаемого физического предсказания.
+\end{enumerate}
+
+Нулевая гипотеза: классификационный и selection-rule уровни закрыты,
+но динамическое рождение устойчивой наблюдаемой материи остаётся
+незамкнутым.
+
+Стоп-критерий: если отсутствуют и скорость, и устойчивый конечный
+фермионный объект, дальнейшее продвижение внутри неизменённой
+архитектуры фиксируется как круговое и требует новой модели.
+
+\begin{protocol}
+\begin{enumerate}
+ \item компонентные классы: \textbf{$(12,3)$};
+ \item нормированные тёплицевы веса: \textbf{$(4/35,1/35)$};
+ \item физические потоки: \textbf{$(3,1)$};
+ \item зарядовое правило: \textbf{$\Delta B=\Delta L=1$};
+ \item сохранение $B-L$: \textbf{да};
+ \item хиггс-разрешённые ранги: \textbf{$(6,6,2,1)$};
+ \item единая компонентная вероятность: \textbf{не выведена};
+ \item branching ratio: \textbf{не выведен};
+ \item абсолютная скорость: \textbf{не выведена};
+ \item масса и размер продукта: \textbf{не выведены};
+ \item точные selection rules: \textbf{сохранены};
+ \item динамическое замыкание: \textbf{не достигнуто}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v6_spectral_transition_componentwise_creation_observable_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{component-observable-klinkhamer-rupp2003}
+F.~R.~Klinkhamer, C.~Rupp,
+\emph{Sphalerons, Spectral Flow, and Anomalies},
+Journal of Mathematical Physics 44 (2003), 3619--3639;
+arXiv:hep-th/0304167.
+
+\bibitem{component-observable-krs1985}
+V.~A.~Kuzmin, V.~A.~Rubakov, M.~E.~Shaposhnikov,
+\emph{On the Anomalous Electroweak Baryon Number Nonconservation in the
+Early Universe},
+Physics Letters B 155 (1985), 36--42.
+
+\bibitem{component-observable-moore1998}
+G.~D.~Moore,
+\emph{Measuring the Broken Phase Sphaleron Rate Nonperturbatively},
+Physical Review D 59 (1999), 014503; arXiv:hep-ph/9805264.
+
+\bibitem{component-observable-barroso-moore2023}
+M.~Barroso Mancha, G.~D.~Moore,
+\emph{The Sphaleron Rate from 4D Euclidean Lattices},
+Journal of High Energy Physics 01 (2023), 155;
+arXiv:2210.05507.
+\end{thebibliography}

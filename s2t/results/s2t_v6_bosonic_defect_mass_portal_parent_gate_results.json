@@ -1,0 +1,73 @@
+{
+  "gate": "version6_bosonic_defect_mass_portal_parent_gate",
+  "dimensionless_profile": {
+    "integral_DQ_squared": 12.478636601133651,
+    "integral_F_squared": 33.53717150406454,
+    "integral_bulk_potential": 17.500222083059832,
+    "unit_coefficient_stationary_radius": 0.8301754154282602,
+    "unit_coefficient_mass": 60.769895445870674
+  },
+  "two_scale_degeneracy": {
+    "parameterization": {
+      "c_D": "E0/L0",
+      "c_F": "E0*L0",
+      "c_V": "E0/L0^3",
+      "R_physical": "L0*r_dimensionless",
+      "M_physical": "E0*m_dimensionless"
+    },
+    "examples": [
+      {
+        "length_unit": 1.0,
+        "energy_unit": 1.0,
+        "physical_radius": 0.8301754154282602,
+        "predicted_radius": 0.8301754154282602,
+        "physical_mass": 60.769895445870674,
+        "predicted_mass": 60.769895445870674
+      },
+      {
+        "length_unit": 7.0,
+        "energy_unit": 11.0,
+        "physical_radius": 5.8112279079978215,
+        "predicted_radius": 5.8112279079978215,
+        "physical_mass": 668.4688499045774,
+        "predicted_mass": 668.4688499045774
+      },
+      {
+        "length_unit": 0.001,
+        "energy_unit": 2000000.0,
+        "physical_radius": 0.0008301754154282602,
+        "predicted_radius": 0.0008301754154282602,
+        "physical_mass": 121539790.89174134,
+        "predicted_mass": 121539790.89174135
+      }
+    ],
+    "absolute_length_scale_derived": false,
+    "absolute_energy_scale_derived": false
+  },
+  "lorentzian_completion": {
+    "allowed_tensor_structure": "Tr(D_mu Q D^mu Q), Tr(F_mu_nu F^mu_nu), V(Q)",
+    "static_signs_fix_minkowski_relative_signs_after_metric_convention": true,
+    "common_normalization_from_current_parent": false,
+    "time_kinetic_coefficient_derived": false
+  },
+  "higgs_portal_test": {
+    "m300_middle_block": "Tr(T R-|H|^2 I_3)^2",
+    "expanded_form": "T^2 Tr(R^2)-2 T |H|^2+3|H|^4",
+    "shape_variable": "Q=R-I_3/3",
+    "mixed_shape_higgs_residual": 1.1102230246251565e-16,
+    "radial_higgs_mixed_derivative": -1.9999904510292765,
+    "Tr_Q2_H2_coefficient_in_minimal_M300_parent": 0.0,
+    "radial_amplitude_H2_coupling_exists": true,
+    "nonzero_bosonic_defect_higgs_portal_derived": false
+  },
+  "verdict": {
+    "dimensionless_profile_and_scaling_closed": true,
+    "absolute_mass_and_radius_derived": false,
+    "lorentz_covariant_form_admissible": true,
+    "lorentz_covariant_parent_normalization_derived": false,
+    "minimal_parent_predicts_nonzero_shape_higgs_portal": false,
+    "current_bosonic_defect_is_observably_coupled": false,
+    "status": "scale_and_portal_no_go_for_current_parent",
+    "next_gate": "version6_bosonic_defect_full_euler_lagrange_stability_gate"
+  }
+}

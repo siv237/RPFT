@@ -1,0 +1,379 @@
+{
+  "gate": "version6_spectral_transition_discrete_compacton_character_resolved_radiation_form_factor_gate",
+  "exact_branches": {
+    "plus_i_one_step_residual": 2.3141666767917647e-16,
+    "minus_i_one_step_residual": 2.3141666767917647e-16,
+    "branch_overlap": [
+      0.0,
+      0.0
+    ],
+    "four_step_linearization_base": "+i compacton"
+  },
+  "character_quadratures": {
+    "hermitian_mixer": "H_theta=e^{i theta}T+e^{-i theta}T^dagger",
+    "tangent": "delta_Psi=-i e^{-i theta}|-i>",
+    "quadrature_scan": {
+      "-1.0": {
+        "theta_over_pi": -1.0,
+        "radiation_norm_after_one_return": 3.13975518304534e-12,
+        "formula_2pi_abs_sin_theta": 7.694682774887159e-16
+      },
+      "-0.875": {
+        "theta_over_pi": -0.875,
+        "radiation_norm_after_one_return": 2.404470918924508,
+        "formula_2pi_abs_sin_theta": 2.4044709195373857
+      },
+      "-0.75": {
+        "theta_over_pi": -0.75,
+        "radiation_norm_after_one_return": 4.442882938268214,
+        "formula_2pi_abs_sin_theta": 4.442882938158366
+      },
+      "-0.625": {
+        "theta_over_pi": -0.625,
+        "radiation_norm_after_one_return": 5.804906303906497,
+        "formula_2pi_abs_sin_theta": 5.804906304278862
+      },
+      "-0.5": {
+        "theta_over_pi": -0.5,
+        "radiation_norm_after_one_return": 6.283185307477424,
+        "formula_2pi_abs_sin_theta": 6.283185307179586
+      },
+      "-0.375": {
+        "theta_over_pi": -0.375,
+        "radiation_norm_after_one_return": 5.804906303864865,
+        "formula_2pi_abs_sin_theta": 5.804906304278862
+      },
+      "-0.25": {
+        "theta_over_pi": -0.25,
+        "radiation_norm_after_one_return": 4.442882938323725,
+        "formula_2pi_abs_sin_theta": 4.442882938158366
+      },
+      "-0.125": {
+        "theta_over_pi": -0.125,
+        "radiation_norm_after_one_return": 2.404470918924508,
+        "formula_2pi_abs_sin_theta": 2.4044709195373852
+      },
+      "0.0": {
+        "theta_over_pi": 0.0,
+        "radiation_norm_after_one_return": 3.13975518304534e-12,
+        "formula_2pi_abs_sin_theta": 0.0
+      },
+      "0.125": {
+        "theta_over_pi": 0.125,
+        "radiation_norm_after_one_return": 2.404470918924508,
+        "formula_2pi_abs_sin_theta": 2.4044709195373852
+      },
+      "0.25": {
+        "theta_over_pi": 0.25,
+        "radiation_norm_after_one_return": 4.442882938337603,
+        "formula_2pi_abs_sin_theta": 4.442882938158366
+      },
+      "0.37499999999999983": {
+        "theta_over_pi": 0.37499999999999983,
+        "radiation_norm_after_one_return": 5.804906303962008,
+        "formula_2pi_abs_sin_theta": 5.804906304278861
+      },
+      "0.5": {
+        "theta_over_pi": 0.5,
+        "radiation_norm_after_one_return": 6.283185307477424,
+        "formula_2pi_abs_sin_theta": 6.283185307179586
+      },
+      "0.6250000000000001": {
+        "theta_over_pi": 0.6250000000000001,
+        "radiation_norm_after_one_return": 5.804906303892619,
+        "formula_2pi_abs_sin_theta": 5.804906304278861
+      },
+      "0.75": {
+        "theta_over_pi": 0.75,
+        "radiation_norm_after_one_return": 4.442882938268214,
+        "formula_2pi_abs_sin_theta": 4.442882938158366
+      },
+      "0.8749999999999999": {
+        "theta_over_pi": 0.8749999999999999,
+        "radiation_norm_after_one_return": 2.404470918924508,
+        "formula_2pi_abs_sin_theta": 2.4044709195373883
+      },
+      "1.0": {
+        "theta_over_pi": 1.0,
+        "radiation_norm_after_one_return": 3.13975518304534e-12,
+        "formula_2pi_abs_sin_theta": 7.694682774887159e-16
+      }
+    },
+    "maximum_2pi_abs_sin_theta_formula_residual": 6.128804130867138e-10,
+    "theta_zero_neutral_fixed_residual": 3.139755325134394e-12,
+    "reduced_eta_phase_minus_i_theta": -0.5,
+    "eta_oriented_radiation_norm": 6.283185307408123,
+    "eta_oriented_radiation_norm_squared": 39.47841760722931,
+    "eta_source_projection_after_return": [
+      1.0000000004173337,
+      -7.033653259942362e-12
+    ],
+    "orthogonal_phase_quadrature_is_exact_compacton_manifold_tangent": true
+  },
+  "outgoing_channel": {
+    "packet_count": 8,
+    "packet_norms": [
+      6.283185307408123,
+      6.283185307408118,
+      6.2831853074081145,
+      6.283185307408111,
+      6.283185307408107,
+      6.283185307408106,
+      6.283185307408102,
+      6.2831853074080986
+    ],
+    "maximum_packet_norm_residual_from_2pi": 2.2853718917303922e-10,
+    "maximum_distinct_packet_overlap": 2.0143705538152646e-08,
+    "secular_scan": [
+      {
+        "cycle": 1,
+        "total_tangent_norm_squared": 40.47841760806398,
+        "outside_core_norm_squared": 39.47841760722931,
+        "minus_source_projection": [
+          1.0000000004173337,
+          -7.033653259942362e-12
+        ]
+      },
+      {
+        "cycle": 2,
+        "total_tangent_norm_squared": 79.95683525333516,
+        "outside_core_norm_squared": 78.95683525177884,
+        "minus_source_projection": [
+          1.0000000007781562,
+          5.141394168590494e-12
+        ]
+      },
+      {
+        "cycle": 3,
+        "total_tangent_norm_squared": 119.43525292035,
+        "outside_core_norm_squared": 118.43525291812756,
+        "minus_source_projection": [
+          1.0000000011112231,
+          1.1082797439876097e-11
+        ]
+      },
+      {
+        "cycle": 4,
+        "total_tangent_norm_squared": 158.9136706278441,
+        "outside_core_norm_squared": 157.91367062476124,
+        "minus_source_projection": [
+          1.0000000015414345,
+          6.849469153208614e-12
+        ]
+      },
+      {
+        "cycle": 5,
+        "total_tangent_norm_squared": 198.39208836293994,
+        "outside_core_norm_squared": 197.39208835877463,
+        "minus_source_projection": [
+          1.0000000020826683,
+          -5.242256799611668e-13
+        ]
+      },
+      {
+        "cycle": 6,
+        "total_tangent_norm_squared": 237.87050612415092,
+        "outside_core_norm_squared": 236.87050611981905,
+        "minus_source_projection": [
+          1.000000002165935,
+          -1.4345532547368335e-11
+        ]
+      },
+      {
+        "cycle": 7,
+        "total_tangent_norm_squared": 277.3489239193691,
+        "outside_core_norm_squared": 276.3489239136494,
+        "minus_source_projection": [
+          1.0000000028598244,
+          2.446454775220109e-12
+        ]
+      },
+      {
+        "cycle": 8,
+        "total_tangent_norm_squared": 316.8273417540158,
+        "outside_core_norm_squared": 315.82734174724146,
+        "minus_source_projection": [
+          1.0000000033871803,
+          -1.201757980299302e-11
+        ]
+      }
+    ],
+    "maximum_norm_squared_residual_from_1_plus_4pi2_n": 9.191563208332809e-07,
+    "interpretation": "each return emits a new outward packet of norm 2pi while the character-source projection remains one; this is a generalized secular source, not a decaying eigenmode"
+  },
+  "spectral_form_factor": {
+    "vacuum_four_step_multiplier": "exp(plus_or_minus 4 i k)",
+    "resonant_momenta_over_pi": [
+      0.0,
+      0.5,
+      1.0,
+      1.5
+    ],
+    "resonant_form_factor_norm_squared": {
+      "0.0": 7.768324532866081e-19,
+      "0.5": 78.95683521793393,
+      "1.0": 7.532675118376339e-19,
+      "1.5": 78.95683520049457
+    },
+    "spectral_density_at_multiplier_one": 6.283185307219326,
+    "golden_rule_coefficient_per_four_step_cycle": 39.478417604607124,
+    "coefficient_identity": "2pi*rho_rad(0)=4pi^2",
+    "absolutely_continuous_outgoing_channel_detected": true
+  },
+  "nonlinear_validation": {
+    "cycles": 20,
+    "scan": {
+      "eta_oriented_radiative": {
+        "0.0001": {
+          "initial_minus_character_weight": 9.999999899988908e-09,
+          "final_minus_character_weight_in_core": 1.0030771128624607e-08,
+          "final_plus_character_weight_in_core": 0.9999920824975664,
+          "final_core_probability": 0.9999920925283374,
+          "radiated_probability": 7.907471662571552e-06,
+          "weak_limit_exponential_prediction": 7.895652350042859e-06,
+          "prediction_absolute_error": 1.1819312528693615e-08,
+          "core_probability_history_per_cycle": [
+            1.0,
+            0.9999996052153532,
+            0.9999992104241799,
+            0.9999988156172506,
+            0.9999984207853321,
+            0.9999980259191934,
+            0.999997631009599,
+            0.9999972360473096,
+            0.9999968410230826,
+            0.9999964459276713,
+            0.9999960507518226,
+            0.9999956554862786,
+            0.9999952601217706,
+            0.999994864649028,
+            0.9999944690587675,
+            0.9999940733417001,
+            0.9999936774885242,
+            0.9999932814899275,
+            0.9999928853365896,
+            0.9999924890191754,
+            0.9999920925283374
+          ]
+        },
+        "0.0003": {
+          "initial_minus_character_weight": 8.99999918999597e-08,
+          "final_minus_character_weight_in_core": 9.253791722391224e-08,
+          "final_plus_character_weight_in_core": 0.9999278802272111,
+          "final_core_probability": 0.9999279727651285,
+          "radiated_probability": 7.202723487154117e-05,
+          "weak_limit_exponential_prediction": 7.105862690404141e-05,
+          "prediction_absolute_error": 9.686079674997572e-07,
+          "core_probability_history_per_cycle": [
+            1.0000000000000002,
+            0.9999964469044149,
+            0.9999928932800854,
+            0.9999893383790867,
+            0.9999857814526787,
+            0.9999822217507846,
+            0.9999786585214632,
+            0.999975091010372,
+            0.9999715184602411,
+            0.9999679401103292,
+            0.9999643551958838,
+            0.9999607629475913,
+            0.9999571625910192,
+            0.9999535533460553,
+            0.9999499344263345,
+            0.999946305038659,
+            0.999942664382403,
+            0.9999390116489162,
+            0.9999353460209037,
+            0.9999316666717999,
+            0.9999279727651285
+          ]
+        },
+        "0.001": {
+          "initial_minus_character_weight": 9.999990000009463e-07,
+          "final_minus_character_weight_in_core": 1.3922282061446769e-06,
+          "final_plus_character_weight_in_core": 0.9990713742496614,
+          "final_core_probability": 0.9990727664778709,
+          "radiated_probability": 0.0009272335221290895,
+          "weak_limit_exponential_prediction": 0.0007892567250181726,
+          "prediction_absolute_error": 0.00013797679711091693,
+          "core_probability_history_per_cycle": [
+            0.9999999999999998,
+            0.9999605168912628,
+            0.9999209684618255,
+            0.999881261938498,
+            0.9998413034253615,
+            0.9998009971597688,
+            0.9997602447386847,
+            0.9997189443021202,
+            0.9996769896591794,
+            0.9996342693405846,
+            0.999590665559358,
+            0.9995460530585523,
+            0.9995002978213602,
+            0.9994532556144237,
+            0.9994047703295663,
+            0.9993546720820201,
+            0.9993027750142811,
+            0.9992488747433731,
+            0.999192745374889,
+            0.9991341359887379,
+            0.9990727664778709
+          ]
+        }
+      },
+      "orthogonal_neutral": {
+        "0.001": {
+          "initial_minus_character_weight": 9.99999000001e-07,
+          "final_minus_character_weight_in_core": 9.999990000017798e-07,
+          "final_plus_character_weight_in_core": 0.9999990000010055,
+          "final_core_probability": 1.0000000000000058,
+          "radiated_probability": -5.773159728050814e-15,
+          "weak_limit_exponential_prediction": 0.0007892567250181726,
+          "prediction_absolute_error": 0.0007892567250239457,
+          "core_probability_history_per_cycle": [
+            1.0,
+            0.9999999999999987,
+            0.9999999999999984,
+            1.0,
+            1.0000000000000007,
+            1.000000000000001,
+            1.0000000000000002,
+            1.0000000000000013,
+            1.0000000000000022,
+            1.0000000000000022,
+            1.000000000000003,
+            1.0000000000000027,
+            1.000000000000003,
+            1.000000000000004,
+            1.000000000000004,
+            1.0000000000000044,
+            1.0000000000000044,
+            1.0000000000000047,
+            1.0000000000000056,
+            1.0000000000000062,
+            1.0000000000000058
+          ]
+        }
+      }
+    }
+  },
+  "capture_test": {
+    "eta_radiative_smallest_amplitude_final_minus_weight": 1.0030771128624607e-08,
+    "eta_radiative_smallest_amplitude_initial_minus_weight": 9.999999899988908e-09,
+    "eta_radiative_smallest_amplitude_core_loss": 7.907471662571552e-06,
+    "neutral_amplitude_core_loss": -5.773159728050814e-15,
+    "undesired_character_is_damped": false,
+    "compacton_core_is_depleted": true,
+    "generic_complex_character_tangent_has_neutral_quadrature": true
+  },
+  "verdict": {
+    "character_resolved_radiation_form_factor_nonzero": true,
+    "dimensionless_radiation_coefficient_derived": true,
+    "coefficient_per_cycle": "4pi^2 times squared eta-oriented perturbation amplitude",
+    "radiation_is_capture": false,
+    "reason": "the source projection remains fixed while orthogonal outgoing packets accumulate; nonlinear evolution loses compacton core probability without suppressing the minus-character weight, and the orthogonal phase quadrature remains exactly neutral",
+    "manual_gamma_replaced_by_successful_autonomous_capture_rate": false,
+    "status": "the full Floquet Jacobian has a nonzero, analytically normalized form factor from the eta-oriented -1 character quadrature into the spatial radiation continuum. The density at the resonant multiplier is 2pi and gives the exact weak coefficient 4pi^2 per four-step cycle. However this is a secular emitter rather than amplitude damping: the undesired character component is not depleted, the compacton core radiates, and the orthogonal character quadrature is a fixed tangent of the exact compacton manifold. The mechanism therefore destabilizes the compacton instead of selecting one branch",
+    "next_gate": "version6_spectral_transition_discrete_compacton_branch_status_freeze_gate"
+  }
+}

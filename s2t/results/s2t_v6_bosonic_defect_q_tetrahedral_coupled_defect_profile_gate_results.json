@@ -1,0 +1,86 @@
+{
+  "gate": "version6_bosonic_defect_q_tetrahedral_coupled_defect_profile_gate",
+  "topology": {
+    "vacuum_manifold": "SO(3)/Z3",
+    "pi1": "Z6",
+    "pi2": "0",
+    "pi3": "Z",
+    "SU2_lift_cube_minus_identity_residual": 0.0,
+    "SU2_lift_sixth_identity_residual": 0.0,
+    "isolated_RP2_hedgehog_is_full_vacuum_charge": false
+  },
+  "ansatz": {
+    "formula": "Q=Q*, T=b(r)T0+a(r)rho(exp(theta J/3))T3, B=-(K(r)/3)J dtheta",
+    "winding_norm_squared": 1.5802469135802468,
+    "invariant_norm_squared": 1.9753086419753085,
+    "gauge_trace_norm": 0.07407407407407407
+  },
+  "profile": {
+    "solver_status": 0,
+    "mesh_nodes": 1874,
+    "maximum_relative_residual": 1.995988759825773e-07,
+    "boundary_residual": 5.207528876437691e-29,
+    "core_b": 1.0708503823543372,
+    "core_a_slope": 2.5622270289418982,
+    "dimensionless_tension": 3.1060360711638095,
+    "energy_parts": {
+      "radial_scalar": 1.3324597666068727,
+      "angular_scalar": 0.6766088171025633,
+      "gauge_curvature": 0.5484836666503696,
+      "potential": 0.548483820804004
+    },
+    "relative_virial_residual": 4.9630342623547365e-08,
+    "samples": {
+      "r": [
+        1e-05,
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0,
+        8.0,
+        15.0
+      ],
+      "K": [
+        1.2095966724167037e-35,
+        0.1487980835149607,
+        0.456443635421321,
+        0.8750160093894239,
+        0.9975546717666838,
+        0.9999996341092849,
+        0.9999999999999951,
+        1.0
+      ],
+      "a": [
+        5.207528876437549e-29,
+        0.30573533916939216,
+        0.5437063273465289,
+        0.8051258563660869,
+        0.9598432209672789,
+        0.9977422706350612,
+        0.9999892597145181,
+        0.9999999987234552
+      ],
+      "b": [
+        1.0708503823543372,
+        1.0678104211492228,
+        1.0600051824220151,
+        1.0401024272702206,
+        1.0133560197436662,
+        1.00105514066079,
+        1.0000055926428277,
+        1.0000000006697536
+      ]
+    }
+  },
+  "boundary": {
+    "absolute_scale_derived": false,
+    "full_stability_derived": false,
+    "localized_fermion_modes_derived": false
+  },
+  "verdict": {
+    "finite_Z6_vortex_profile_passes": true,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_q_tetrahedral_vortex_radial_stability_gate"
+  }
+}

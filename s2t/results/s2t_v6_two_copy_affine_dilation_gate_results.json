@@ -1,0 +1,40 @@
+{
+  "gate": "version6_two_copy_affine_dilation_gate",
+  "two_copy_virtual_identity": {
+    "numerator": "Tr[(O tensor I) SWAP (R tensor R)]=Tr(O R^2)",
+    "denominator": "Tr[SWAP (R tensor R)]=Tr(R^2)",
+    "maximum_numeric_residual": 4.440892098500626e-16,
+    "normalized_square_observables_available": true,
+    "normalized_square_state_physically_prepared": false
+  },
+  "deterministic_channel_obstruction": {
+    "input_curve": "R(t) tensor R(t) is polynomial of degree two in t",
+    "fixed_linear_channel_output_curve": "polynomial of degree at most two in t",
+    "target_axis_curve": "t^2/[t^2+(1-t)^2/2]",
+    "best_quadratic_uniform_grid_residual": 0.14517152381778928,
+    "convex_affinity_defect": 0.15463950396358442,
+    "exact_fixed_trace_preserving_realization": false
+  },
+  "project_interpretation": {
+    "tensor_square_carrier_exists": true,
+    "swap_and_exterior_contractions_exist": true,
+    "virtual_feedback_observable_is_representable": true,
+    "virtual_feedback_term_is_parent_derived": false,
+    "autonomous_state_update_requires_extra_instrument": true,
+    "allowed_extra_structures": [
+      "postselection with a derived success branch",
+      "measurement and feedback",
+      "a larger unitary dilation with discarded record",
+      "or a controlled mean-field limit"
+    ]
+  },
+  "verdict": {
+    "two_copy_route_is_mathematically_real": true,
+    "two_copy_route_is_only_virtual_at_current_parent_level": true,
+    "nonlinear_update_is_autonomous_dynamics": false,
+    "effective_free_energy_remains_valid": true,
+    "matter_field_expansion_may_proceed": true,
+    "matter_birth_fully_derived": false,
+    "next_gate": "version6_projective_order_parameter_field_spectrum_gate"
+  }
+}

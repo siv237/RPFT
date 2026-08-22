@@ -1,0 +1,124 @@
+{
+  "gate": "version6_spectral_transition_minimal_support_gate",
+  "input_certificates": {
+    "H15_observed_blocks": {
+      "Q_L": 6,
+      "L_L": 2,
+      "u_R": 3,
+      "d_R": 3,
+      "e_R": 1
+    },
+    "charged_edges": [
+      [
+        "Q_L",
+        "u_R"
+      ],
+      [
+        "Q_L",
+        "d_R"
+      ],
+      [
+        "L_L",
+        "e_R"
+      ]
+    ],
+    "charged_edge_count": 3,
+    "coefficient_projection_rank": 15,
+    "balanced_real_defect_rank": 30,
+    "transfer_internal_action": "local transport is scalar on the Morita carrier before the orientation doublet is added"
+  },
+  "algebra_boundary": {
+    "full_control_corner": "M15(C)",
+    "full_control_corner_commutant_dimension": 1,
+    "full_control_corner_irreducible": true,
+    "full_control_corner_is_physical_coordinate_algebra": false,
+    "reason": "the Morita linking gate explicitly keeps M15 as a full control reading; promoting it would allow arbitrary quark-lepton mixing"
+  },
+  "physical_support_classification": {
+    "gauge_irreducible_block_ranks": [
+      1,
+      2,
+      3,
+      3,
+      6
+    ],
+    "gauge_commutant_dimension": 5,
+    "nonzero_charged_Yukawa_graph_components": {
+      "quark": [
+        "Q_L",
+        "u_R",
+        "d_R"
+      ],
+      "lepton": [
+        "L_L",
+        "e_R"
+      ]
+    },
+    "component_ranks": {
+      "quark_Q_L_plus_u_R_plus_d_R": 12,
+      "lepton_L_L_plus_e_R": 3
+    },
+    "physical_gauge_plus_Yukawa_commutant_dimension": 2,
+    "quark_projector_rank": 12,
+    "lepton_projector_rank": 3,
+    "projectors_sum_to_identity_residual": 0.0,
+    "projectors_orthogonality_residual": 0.0,
+    "quark_physical_commutator_residual": 0.0,
+    "lepton_physical_commutator_residual": 0.0,
+    "quark_grading_commutator_residual": 0.0,
+    "lepton_grading_commutator_residual": 0.0,
+    "rank_15_physically_irreducible": false,
+    "minimal_connected_support_rank_if_all_three_charged_edges_are_nonzero": 3,
+    "minimal_gauge_only_support_rank": 1,
+    "conditionality": "the 12+3 split is preserved even when all three allowed charged edges are active; vanishing edge amplitudes can only split it further"
+  },
+  "real_grading_and_boundary_checks": {
+    "KO6_preserves_quark_lepton_label": true,
+    "real_quark_rank": 24,
+    "real_lepton_rank": 6,
+    "real_projectors_commute_with_orientation_swap_residual": {
+      "quark": 0.0,
+      "lepton": 0.0
+    },
+    "oriented_component_indices": {
+      "quark_Q_L_plus_u_R_plus_d_R": {
+        "positive_winding": -12,
+        "negative_winding": 12
+      },
+      "lepton_L_L_plus_e_R": {
+        "positive_winding": -3,
+        "negative_winding": 3
+      }
+    },
+    "component_normalized_weights": {
+      "quark_Q_L_plus_u_R_plus_d_R": 0.11428571428571428,
+      "lepton_L_L_plus_e_R": 0.02857142857142857
+    },
+    "component_weight_sum": 0.14285714285714285,
+    "full_oriented_indices_reconstructed": {
+      "positive_winding": -15,
+      "negative_winding": 15
+    },
+    "each_real_component_integer_index": 0,
+    "Toeplitz_boundary_binds_components_together": false
+  },
+  "transfer_check": {
+    "transfer_is_scalar_on_internal_Morita_carrier": true,
+    "commutes_with_quark_and_lepton_projectors": true,
+    "mixes_quark_and_lepton_components": false,
+    "protects_rank_15_as_one_packet": false,
+    "nonzero_component_gaps_derived": false
+  },
+  "verdict": {
+    "rank_15_is_algebraically_composite": true,
+    "rank_15_is_composite_under_current_physical_algebra": true,
+    "full_M15_irreducibility_is_physically_admissible_proof": false,
+    "strongest_current_nonzero_edge_decomposition": "15=12+3",
+    "minimal_current_connected_complex_support_rank": 3,
+    "rank_3_declared_elementary_particle": false,
+    "rank_15_interpretation": "one-generation charged matter package, not a demonstrated elementary spectral atom",
+    "physical_closure": false,
+    "status": "the null hypothesis fails: current physical symmetries preserve proper rank-12 and rank-3 subprojections; topology, KO6 and scalar transfer do not resew them"
+  },
+  "next_gate": "version6_spectral_transition_component_boundary_gate"
+}

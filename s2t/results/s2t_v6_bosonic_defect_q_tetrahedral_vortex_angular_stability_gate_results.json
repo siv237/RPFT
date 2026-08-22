@@ -1,0 +1,147 @@
+{
+  "gate": "version6_bosonic_defect_q_tetrahedral_vortex_angular_stability_gate",
+  "operator": {
+    "sector": "effective charged amplitude + neutral amplitude + two transverse gauge components",
+    "coordinate_system": "Cartesian",
+    "gauge_fixing": "background gauge div(delta A)+(A/G)(J phi0).delta phi=0",
+    "finite_difference_hessian_step": 2e-05,
+    "spectra": {
+      "24": {
+        "grid_size": 24,
+        "box_radius": 10.0,
+        "spacing": 0.8695652173913047,
+        "dimension": 2420,
+        "background_discrete_gradient_rms": 0.028536006952641784,
+        "eigenvalues": [
+          1.2349334131684697,
+          1.4072727491516699,
+          1.5629311286655874,
+          1.624235932054936,
+          1.6256346253496365,
+          1.6844348110929155,
+          1.6854381108076908,
+          1.7211473224750282,
+          1.760914549872592,
+          1.7794201931122438
+        ],
+        "translation_low_space_overlaps": [
+          0.08081956686531201,
+          0.0808195669942492
+        ]
+      },
+      "32": {
+        "grid_size": 32,
+        "box_radius": 10.0,
+        "spacing": 0.6451612903225801,
+        "dimension": 4500,
+        "background_discrete_gradient_rms": 0.013548347997808784,
+        "eigenvalues": [
+          1.117231733376708,
+          1.2052749955395976,
+          1.5273865068757795,
+          1.598227826736253,
+          1.6183367779320141,
+          1.6586548934682557,
+          1.6898739844959472,
+          1.7185905214417143,
+          1.754120479565438,
+          1.7704157669917973
+        ],
+        "translation_low_space_overlaps": [
+          0.1207572381038088,
+          0.12075723810350815
+        ]
+      },
+      "40": {
+        "grid_size": 40,
+        "box_radius": 10.0,
+        "spacing": 0.5128205128205128,
+        "dimension": 7220,
+        "background_discrete_gradient_rms": 0.007335070601555085,
+        "eigenvalues": [
+          0.9276865938876661,
+          0.9844902671682702,
+          1.5007160484912643,
+          1.588791591926606,
+          1.6170191149608009,
+          1.6540350691253678,
+          1.6926646403502765,
+          1.717447250946835,
+          1.751856439243271,
+          1.767506623869429
+        ],
+        "translation_low_space_overlaps": [
+          0.11677341081418062,
+          0.11677341081378112
+        ]
+      },
+      "48": {
+        "grid_size": 48,
+        "box_radius": 10.0,
+        "spacing": 0.4255319148936163,
+        "dimension": 10580,
+        "background_discrete_gradient_rms": 0.004325294877396429,
+        "eigenvalues": [
+          0.7562686297319534,
+          0.8207705009021937,
+          1.501073849121706,
+          1.587349664530224,
+          1.61617825627104,
+          1.653235007846862,
+          1.6935458790351106,
+          1.7165164704194986,
+          1.7512836711974498,
+          1.7650229288930932
+        ],
+        "translation_low_space_overlaps": [
+          0.10244406927594946,
+          0.10244406927607272
+        ]
+      }
+    }
+  },
+  "stability": {
+    "finest_eigenvalues": [
+      0.7562686297319534,
+      0.8207705009021937,
+      1.501073849121706,
+      1.587349664530224,
+      1.61617825627104,
+      1.653235007846862,
+      1.6935458790351106,
+      1.7165164704194986,
+      1.7512836711974498,
+      1.7650229288930932
+    ],
+    "negative_mode_count_checked": 0,
+    "soft_lattice_mode_count": 2,
+    "soft_pair_rigorously_identified_as_translations": false,
+    "minimum_checked_eigenvalue": 0.7562686297319534,
+    "minimum_hard_sector_eigenvalue": 1.501073849121706,
+    "hard_sector_drift_40_to_48": 0.00035780063044166255,
+    "hard_sector_longitudinal_dispersion_samples": {
+      "0.0": 1.501073849121706,
+      "0.25": 1.563573849121706,
+      "0.5": 1.751073849121706,
+      "1.0": 2.501073849121706,
+      "2.0": 5.501073849121706
+    }
+  },
+  "boundary": {
+    "effective_abelian_subsystem_checked": true,
+    "translation_zero_modes_rigorously_resolved": false,
+    "all_spin2_components_checked": false,
+    "all_spin3_components_checked": false,
+    "full_nonabelian_gauge_fixed_hessian_checked": false,
+    "closed_loop_stability_checked": false,
+    "hopf_identification_checked": false,
+    "absolute_scale_derived": false
+  },
+  "verdict": {
+    "negative_mode_found_in_checked_effective_sector": false,
+    "checked_effective_sector_is_numerically_nonnegative": true,
+    "full_vortex_stability_closed": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_q_tetrahedral_vortex_full_hessian_gate"
+  }
+}

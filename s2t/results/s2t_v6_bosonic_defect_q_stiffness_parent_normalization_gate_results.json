@@ -1,0 +1,100 @@
+{
+  "gate": "version6_bosonic_defect_q_stiffness_parent_normalization_gate",
+  "conditioned_parent_trace": {
+    "formula_Q": "Tr_3((DQ)^2)/3",
+    "formula_T": "Tr_3((DZ_T)^* DZ_T)/3=||DT||^2/3",
+    "Q_gram_eigenvalues": [
+      0.33333333333333326,
+      0.33333333333333326,
+      0.33333333333333326,
+      0.33333333333333326,
+      0.3333333333333334
+    ],
+    "T_gram_eigenvalues": [
+      0.3333333333333333,
+      0.3333333333333334,
+      0.3333333333333334,
+      0.3333333333333334,
+      0.3333333333333335,
+      0.3333333333333335,
+      0.3333333333333335
+    ],
+    "raw_frobenius_Z_Q": 0.3333333333333333,
+    "raw_frobenius_Z_T": 0.3333333333333335,
+    "relative_ratio_Z_Q_over_Z_T": 0.9999999999999996,
+    "new_relative_weight_parameter_count": 0
+  },
+  "normalization_correction": {
+    "previous_profile_A": 1.5802469135802468,
+    "previous_profile_B": 1.9753086419753085,
+    "corrected_A": 0.5267489711934157,
+    "corrected_B": 0.6584362139917695,
+    "corrected_C": 0.5267489711934157,
+    "unchanged_G": 0.07407407407407407,
+    "previous_T_kinetic_overcount_factor": 2.9999999999999996,
+    "potential_already_conditioned_correctly": true,
+    "previous_profile_certificate_is_canonical_after_correction": false
+  },
+  "corrected_profile": {
+    "solver_status": 0,
+    "mesh_nodes": 1873,
+    "maximum_relative_residual": 1.9982957107453235e-07,
+    "boundary_residual": 5.4676789462593e-29,
+    "core_b": 1.0851729254022904,
+    "core_a_slope": 2.959750000040333,
+    "dimensionless_tension": 1.5772484656255092,
+    "energy_parts": {
+      "radial_scalar": 0.4852017769811792,
+      "angular_scalar": 0.44610475381806947,
+      "gauge_curvature": 0.3229709626284401,
+      "potential": 0.32297097219782045
+    },
+    "relative_virial_residual": 6.0671356176548815e-09
+  },
+  "corrected_radial_stability": {
+    "finite_element_node_counts": [
+      100,
+      160,
+      240,
+      360,
+      500
+    ],
+    "lowest_eigenvalue_convergence": {
+      "100": 4.141408998827219,
+      "160": 4.143222683397745,
+      "240": 4.143717514401297,
+      "360": 4.143889183724771,
+      "500": 4.1439414612156105
+    },
+    "finest_eigenvalues": [
+      4.1439414612156105,
+      4.68982279246821,
+      4.77791339025799,
+      4.923500700916189,
+      5.123914482092302,
+      5.3772506753888605,
+      5.682113034560129,
+      6.037274024861113
+    ],
+    "negative_mode_count_checked": 0,
+    "zero_mode_count_checked": 0,
+    "minimum_eigenvalue": 4.1439414612156105,
+    "minimum_grid_drift_360_to_500": 5.227749083935862e-05
+  },
+  "boundary": {
+    "absolute_scale_derived": false,
+    "corrected_nonradial_stability_checked": false,
+    "closed_loop_stability_checked": false,
+    "hopf_identification_checked": false
+  },
+  "verdict": {
+    "relative_Q_T_stiffness_derived_from_same_parent_trace": true,
+    "canonical_Z_Q_equals_Z_T": true,
+    "previous_profile_T_kinetic_normalization_consistent": false,
+    "corrected_profile_exists": true,
+    "corrected_radial_stability_passes": true,
+    "full_vortex_stability_closed": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_corrected_vortex_nonradial_stability_gate"
+  }
+}

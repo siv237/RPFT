@@ -1,0 +1,49 @@
+{
+  "gate": "version6_spectral_transition_higgs_zero_finite_energy_saddle_gate",
+  "pure_Higgs_scaling": {
+    "energy": "R**3*V_H + R*T_H",
+    "virial_derivative_at_R1": "T_H + 3*V_H",
+    "minimum_sample_derivative": 0.5599528977651224,
+    "nontrivial_stationary_scale_possible": false,
+    "Derrick_stable_static_lump": false
+  },
+  "fixed_direction_radial_regular_branch": {
+    "f0": 0,
+    "smoothness_requires_f1": 0,
+    "equation_requires_f2": 0,
+    "analytic_recursion": "all higher coefficients vanish"
+  },
+  "gauge_Higgs_scaling": {
+    "energy": "E_D*R + E_F/R + E_V*R**3",
+    "virial_derivative_at_R1": "E_D - E_F + 3*E_V",
+    "scale_curvature_at_R1": "2*E_F + 6*E_V",
+    "max_sample_virial_residual": 3.552713678800501e-15,
+    "minimum_sample_scale_curvature": 2.4259440375687085,
+    "positive_terms_can_satisfy_virial_identity": true
+  },
+  "electroweak_sphaleron_literature_certificate": {
+    "finite_static_solution_exists": true,
+    "Higgs_profile_zero_at_center": true,
+    "Chern_Simons_number": "1/2 modulo integers",
+    "is_energy_barrier_saddle": true,
+    "has_unstable_mode": true,
+    "recent_SM_control_negative_eigenvalue": "omega_-^2 approximately -2.7 m_W^2",
+    "recent_SM_control_is_project_prediction": false
+  },
+  "rank_change_reading": {
+    "rank_W_nu_at_H_zero": 0,
+    "rank_W_nu_for_nonzero_H": 1,
+    "finite_energy_stationary_rank_change_core_exists": true,
+    "rank_change_core_is_linearly_stable_particle": false,
+    "correct_reading": "transient saddle event between gauge vacua"
+  },
+  "verdict": {
+    "pure_Higgs_stable_particle": false,
+    "gauge_Higgs_sphaleron_realizes_local_H_zero": true,
+    "sphaleron_realizes_stable_matter": false,
+    "sphaleron_spectral_flow_is_next_project_test": true,
+    "physical_closure": false,
+    "status": "the scalar sector fails Derrick scaling; gauge curvature permits the electroweak sphaleron, but its negative mode makes the rank-zero core a transition event rather than a particle"
+  },
+  "next_gate": "version6_spectral_transition_sphaleron_spectral_flow_gate"
+}

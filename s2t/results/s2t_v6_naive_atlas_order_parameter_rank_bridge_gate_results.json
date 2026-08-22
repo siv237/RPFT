@@ -1,0 +1,142 @@
+{
+  "gate": "version6_naive_atlas_order_parameter_rank_bridge_gate",
+  "source_scope": {
+    "atlas": "архив-2025-2026/2026-02-проработка/Проработка/atlas.md",
+    "short_formula_ledger": "s2t/results/s2t_pi_spectral_address_operator_results.json",
+    "prior_SU5_rank_ledger": "s2t/results/s2t_su5_rank_selector_results.json",
+    "new_data": "exact control RP2 coexistence spectrum from Tome VI",
+    "retrospective_not_blind": true
+  },
+  "critical_order_parameter": {
+    "R_spectrum": [
+      "2/3",
+      "1/6",
+      "1/6"
+    ],
+    "Q_spectrum": [
+      "1/3",
+      "-1/6",
+      "-1/6"
+    ],
+    "gap": "1/2",
+    "normalized_Q_spectrum": [
+      "2/3",
+      "-1/3",
+      "-1/3"
+    ]
+  },
+  "rank24_bridge": {
+    "SU5_adjoint_blocks": {
+      "C": 8,
+      "W": 3,
+      "Y": 1,
+      "X": 6,
+      "Xbar": 6
+    },
+    "normalized_Q_identity": "(2/3,-1/3,-1/3)=((24-8)/24,-8/24,-8/24)",
+    "R_identity": "(2/3,1/6,1/6)=(16,4,4)/24 with 16=24-8 and 4=3+1",
+    "gap_identity": "1/2=12/24",
+    "gap_square_identity": "(1/2)^2=1/4=6/24",
+    "integer_square_identity": "12^2=24*6",
+    "color_role_matches": [
+      "C"
+    ],
+    "electroweak_rank4_labelled_pair_matches": [
+      [
+        "W",
+        "Y"
+      ],
+      [
+        "Y",
+        "W"
+      ]
+    ],
+    "mixed_rank6_matches": [
+      "X",
+      "Xbar"
+    ],
+    "unique_up_to_WY_order_and_XXbar_conjugation": true,
+    "literal_disjoint_24_partition": false,
+    "reason": "the rank-4 electroweak block is used twice in (16,4,4); this is a spectral identity, not a direct-sum decomposition"
+  },
+  "atlas_fraction_dictionary": {
+    "1/3": "-q_minus = 8/24",
+    "2/3": "q_plus = 16/24",
+    "4/3": "1-q_minus",
+    "3/2": "1/q_plus",
+    "1/2": "Delta_crit = 12/24",
+    "1/4": "Delta_crit^2 = 6/24",
+    "interpretation": "several formerly inserted small fractions are eigenvalues or gap powers of the exact control order parameter"
+  },
+  "formula_rewrites": {
+    "count": 7,
+    "atlas_short_formula_count": 11,
+    "rows": {
+      "alpha_s": {
+        "original_value": 0.11809999173983109,
+        "rewritten_value": 0.11809999173983109,
+        "absolute_residual": 0.0
+      },
+      "weinberg": {
+        "original_value": 0.23122153045768992,
+        "rewritten_value": 0.23122153045768992,
+        "absolute_residual": 0.0
+      },
+      "bottom_over_proton": {
+        "original_value": 4.474925986923126,
+        "rewritten_value": 4.474925986923126,
+        "absolute_residual": 0.0
+      },
+      "strange_inverse_denominator": {
+        "original_value": 10.202937734422692,
+        "rewritten_value": 10.202937734422692,
+        "absolute_residual": 0.0
+      },
+      "tau_over_muon_core": {
+        "original_value": 16.819456374935612,
+        "rewritten_value": 16.819456374935612,
+        "absolute_residual": 0.0
+      },
+      "omega_dark_matter": {
+        "original_value": 0.2676492943626218,
+        "rewritten_value": 0.2676492943626218,
+        "absolute_residual": 0.0
+      },
+      "omega_baryon": {
+        "original_value": 0.05066059182116889,
+        "rewritten_value": 0.05066059182116889,
+        "absolute_residual": 0.0
+      }
+    },
+    "maximum_residual": 0.0,
+    "muon_leading_fraction": "3/2=1/q_plus",
+    "tau_alpha_extension": "2 alpha/3 = alpha q_plus"
+  },
+  "dynamic_background_control": {
+    "current_canonical_coexistence_spectrum": [
+      0.9121666003123439,
+      0.043916699843828066,
+      0.043916699843828066
+    ],
+    "current_gap": 0.8682499004685158,
+    "current_gap_squared": 0.7538578896635876,
+    "maximum_spectrum_difference_from_exact_control": 0.24549993364567724,
+    "exact_rank_bridge_applies_to_current_dynamic_minimum": false,
+    "status": "exact for the kappa=log4 control transition, not for the later beta_c canonical phase"
+  },
+  "new_hypothesis": {
+    "spectral_address_upgrade": "replace free rational coefficient slots by functions of Pi and the order-parameter operators R_crit or Q_crit/Delta",
+    "two_copy_clue": "the atlas coefficient 1/4 is simultaneously Delta_crit^2 and rank(X)/24, so a tensor-square gap may be the missing bridge to the mixed rank-six sector",
+    "multiplicity_clue": "(16,4,4)/24 repeats the electroweak rank-four block; the repetition must be derived by the two-copy carrier before it can be physical",
+    "H16_coincidence": "the numerator 16 also equals the one-generation H16 dimension, but this is not unique evidence and is not promoted"
+  },
+  "verdict": {
+    "new_exact_cross_tome_identity_found": true,
+    "prior_atlas_numerology_fully_explained": false,
+    "observable_address_selector_derived": false,
+    "physical_SU5_parent_derived": false,
+    "useful_for_next_two_copy_spin_cover_test": true,
+    "status": "exact_retrospective_rank_spectral_clue_not_physical_derivation",
+    "next_gate": "version6_two_copy_spin_cover_multiplicity_gate"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "gate": "version6_exchange_bridge_minimal_parent_gate",
+  "compact_coordinate_extension": {
+    "cutoff": 7,
+    "represented_oneform_span_dimension": 49,
+    "full_matrix_dimension": 49,
+    "span_is_full_finite_compact_algebra": true,
+    "single_projector_bridge_is_isolated": false,
+    "minimal_parent_status": "fail"
+  },
+  "real_superconnection_parent": {
+    "coefficient_test_rank": 3,
+    "real_intertwiner_dimension_before_exchange": 2,
+    "real_intertwiner_dimension_after_exchange": 1,
+    "canonical_bridge_amplitude_dimension": 1,
+    "coordinate_algebra_enlarged": false,
+    "H15_charged_oneform_module_enlarged": false,
+    "kinematic_parent_status": "pass"
+  },
+  "canonical_positive_action": {
+    "formula": "2*(1/7)*(1-lambda^2)^2",
+    "samples": [
+      {
+        "coupling": 0.0,
+        "action": 0.2857142857142857
+      },
+      {
+        "coupling": 0.25,
+        "action": 0.2511160714285714
+      },
+      {
+        "coupling": 0.5,
+        "action": 0.1607142857142857
+      },
+      {
+        "coupling": 0.75,
+        "action": 0.0546875
+      },
+      {
+        "coupling": 1.0,
+        "action": 0.0
+      }
+    ],
+    "action_at_defect_lambda_zero": 0.2857142857142857,
+    "action_at_closed_bridge_lambda_one": 0.0,
+    "hessian_at_defect_lambda_zero": -1.1428571428571428,
+    "hessian_at_closed_bridge_lambda_one": 2.2857142857142856,
+    "defect_pair_is_unstable": true,
+    "closed_bridge_is_stable": true,
+    "spontaneous_matter_birth_from_this_action": false
+  },
+  "verdict": {
+    "minimal_kinematic_parent": "real_odd_superconnection_endomorphism",
+    "compact_coordinate_parent": "rejected_as_nonminimal",
+    "canonical_action_direction": "defect_annihilation_not_birth",
+    "mechanism_status": "kinematically_open_dynamically_not_selected",
+    "next_gate": "version6_closed_bridge_destabilization_gate"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "gate": "version6_tensor_square_relative_carrier_normalization_gate",
+  "real_pair_exterior_decomposition": {
+    "formula": "Lambda2(V+ plus V-)=Lambda2 V+ plus (V+ tensor V-) plus Lambda2 V-",
+    "same_orientation_family_term": "2 e2(B^T B)",
+    "mixed_orientation_term": "Tr(B^T B)^2",
+    "mixed_term_after_state_normalization": 1.0,
+    "extra_rank_sensitive_factor": false
+  },
+  "exchange_normalization": {
+    "orthogonal_antisymmetric_projector": "P_-=(I-swap)/2",
+    "projected_norm": "e2(B^T B)",
+    "raw_antisymmetrizer": "I-swap=2P_-",
+    "raw_norm": "4 e2(B^T B)",
+    "raw_factor_is_projection_overcount": true
+  },
+  "casimir_clue": {
+    "vector_so3_casimir_residual": 0.0,
+    "left_right_combined_casimir_residual": 0.0,
+    "combined_eigenvalue": 4.0,
+    "current_parent_contains_so3_left_right_laplacian": false
+  },
+  "thermal_reopening": {
+    "free_energy": "Tr(R log R)+beta[S_rad(R)+2e2(R)]",
+    "critical_inverse_temperature": 1.5426695408602842,
+    "coexistence_ordered_spectrum": [
+      0.9121666003123439,
+      0.043916699843828066,
+      0.043916699843828066
+    ],
+    "coexistence_optimal_total_singular_weight": 1.101127566404338,
+    "beta_1_phase": "isotropic",
+    "beta_2_ordered_axis_weight": 0.9760191272844954,
+    "beta_2_ordered_free_energy": -0.022206968921747033,
+    "beta_2_isotropic_free_energy": 0.23472104466522348,
+    "canonical_exterior_term_sufficient_after_cooling": true
+  },
+  "project_beta_status": {
+    "rho_beta_exists": true,
+    "beta_is_fixed_by_project": false,
+    "modular_flow_changes_its_own_beta": false,
+    "modular_height_acts_on_family_axis": false,
+    "cooling_trajectory_derived": false
+  },
+  "maximum_residuals": {
+    "same_orientation_residual": 5.684341886080802e-14,
+    "mixed_residual": 1.1368683772161603e-13,
+    "full_exterior_residual": 1.1368683772161603e-13,
+    "normalized_projector_residual": 2.1316282072803006e-14,
+    "raw_antisymmetrizer_residual": 8.526512829121202e-14
+  },
+  "verdict": {
+    "tensor_square_supplies_missing_factor_two": false,
+    "raw_coefficient_four_is_canonical_exchange_norm": false,
+    "so3_casimir_four_is_algebraically_exact": true,
+    "so3_casimir_four_is_parent_derived": false,
+    "thermal_phase_transition_with_canonical_term": true,
+    "thermal_transition_is_dynamically_derived": false,
+    "next_gate": "version6_modular_cooling_projective_transition_gate"
+  }
+}

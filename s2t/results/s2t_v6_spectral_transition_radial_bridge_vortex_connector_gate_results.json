@@ -1,0 +1,84 @@
+{
+  "gate": "version6_spectral_transition_radial_bridge_vortex_connector_gate",
+  "input_certificates": {
+    "radial_bridge_localization_pass": false,
+    "Q_SM_representation": "(1,1,0)",
+    "Q_family_spin": 2,
+    "M300_is_ambient_not_coordinate_algebra": true
+  },
+  "representation_audit": {
+    "symmetry_group": "SO(3)_fam x SU(2)_L x U(1)_Y",
+    "H_representation": "(j_f=0,j_w=1/2,Y=1/2)",
+    "defect_representations": {
+      "B_family_connection": "(1,0,0)",
+      "Q_shape": "(2,0,0)",
+      "T_tetrahedral": "(3,0,0)"
+    },
+    "SO3_invariant_covector_dimensions": {
+      "B_family_connection": 0,
+      "Q_shape": 0,
+      "T_tetrahedral": 0
+    },
+    "direct_defect_to_H_intertwiner_dimensions": {
+      "B_family_connection": 0,
+      "Q_shape": 0,
+      "T_tetrahedral": 0
+    },
+    "weak_singlet_to_H_doublet_intertwiner_dimension": 0,
+    "all_direct_linear_connectors_zero": true,
+    "minimal_complex_dimensions_if_new_mixed_carriers_are_added": {
+      "B_family_connection": 6,
+      "Q_shape": 10,
+      "T_tetrahedral": 14
+    }
+  },
+  "existing_equivariant_arrows": {
+    "family_left_arrow_dimension": 1,
+    "family_left_arrow": "X=rho V",
+    "radial_right_arrow_dimension": 1,
+    "radial_right_arrow": "Y=Phi I3",
+    "continuous_family_orientation_fields": 0,
+    "orientation_sensitive_family_Higgs_arrow_present": false,
+    "reason": "the only common curvature arrow is proportional to the family identity, so its mixed trace sees T |H|^2 and annihilates traceless Q"
+  },
+  "physical_oneform_boundary": {
+    "module": "Y_rho=E_rho tensor Lambda_ch",
+    "complex_dimension": 12,
+    "charged_edge_types": [
+      "u",
+      "d",
+      "e"
+    ],
+    "relative_connection_dimension": 2,
+    "canonical_nonzero_section_selected": false,
+    "interpretation": "a mixed tensor-product module exists, but it is an affine space of connections rather than a uniquely selected bosonic connector"
+  },
+  "Morita_connection_boundary": {
+    "minimum_physical_connection_ambiguity_complex_dimension": 5,
+    "minimum_centered_ambiguity_complex_dimension": 4,
+    "trace_selects_nonzero_connection": "fail",
+    "unique_Yukawa_connection": false
+  },
+  "full_M300_boundary": {
+    "full_one_form_classification_from_existing_data": false,
+    "hidden_arrow_claim_from_M300_matrix_units_is_valid": false,
+    "reason": "M300 is the ambient endomorphism/trace carrier; it does not define Omega_D^1 without coordinate and bimodule data",
+    "absolute_absence_of_every_possible_extended_connector_proved": false
+  },
+  "quadratic_invariant_boundary": {
+    "Tr_Q2_HdaggerH_symmetry_allowed": true,
+    "coefficient_in_current_minimal_parent": 0.0,
+    "symmetry_permission_implies_parent_origin": false
+  },
+  "verdict": {
+    "canonical_direct_family_vortex_Higgs_connector_in_established_fields": false,
+    "current_M300_radial_arrow_is_orientation_sensitive": false,
+    "mixed_physical_oneform_module_exists": true,
+    "mixed_module_selects_unique_nonzero_connector": false,
+    "hidden_connector_can_be_claimed_from_ambient_M300": false,
+    "new_bifundamental_would_extend_the_model": true,
+    "physical_closure": false,
+    "status": "all established direct equivariant arrows are radial or family-only; the mixed oneform module is nonunique, and ambient M300 supplies no hidden physical arrow"
+  },
+  "next_gate": "version6_spectral_transition_morita_two_step_connector_gate"
+}

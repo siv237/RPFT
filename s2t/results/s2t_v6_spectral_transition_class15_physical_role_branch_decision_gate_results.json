@@ -1,0 +1,56 @@
+{
+  "gate": "version6_spectral_transition_class15_physical_role_branch_decision_gate",
+  "input_certificates": {
+    "KO6_Toeplitz_class_15_exists": true,
+    "class_15_is_physically_irreducible": false,
+    "component_classes_12_and_3_exist": true,
+    "components_are_dynamically_colocalized": false,
+    "Higgs_resolved_supports_are_6_6_2_1": true,
+    "single_Higgs_topologically_forces_zero": false,
+    "sphaleron_has_Higgs_zero": true,
+    "sphaleron_is_stable_particle": false,
+    "physical_sphaleron_flow": 4,
+    "formal_rank_decorated_product": 15,
+    "physical_equivariant_product": 4
+  },
+  "architecture_options": {
+    "class15_as_birth_multiplicity_in_version6": {
+      "compatible": false,
+      "contradictions": [
+        "physical spectral flow is 4",
+        "support decomposes as 12+3",
+        "components are not dynamically colocalized",
+        "formal product uses rank q0 as input",
+        "sphaleron is an unstable saddle"
+      ]
+    },
+    "insert_full_finite_operator_transition_without_new_model": {
+      "compatible": false,
+      "reason": "it requires a new operator, action, anomaly audit, KO6 audit and stability analysis"
+    },
+    "class15_as_classification_ledger_with_componentwise_physics": {
+      "compatible": true,
+      "preserves_KO6_Toeplitz_result": true,
+      "preserves_component_classes": true,
+      "does_not_claim_unified_birth_event": true
+    }
+  },
+  "decision": {
+    "selected_option": "class15_as_classification_ledger_with_componentwise_physics",
+    "class15_is_generation_classification_ledger": true,
+    "class15_is_particle_count": false,
+    "class15_is_bound_state_rank": false,
+    "class15_is_sphaleron_birth_multiplicity": false,
+    "new_full_transition_dynamics_requires_declared_new_model": true,
+    "version6_unified_generation_birth_is_proven": false,
+    "physical_closure": false
+  },
+  "surviving_roles": {
+    "class15": "classification ledger of the full one-generation coefficient package",
+    "classes12_and3": "independent component boundary classes",
+    "sphaleron_flow4": "standard chiral electroweak transition observable",
+    "rank_changing_Higgs_support": "local transition carrier, not a complete generation birth mechanism"
+  },
+  "next_gate": "version6_spectral_transition_componentwise_creation_observable_gate",
+  "next_null_hypothesis": "the current parent fixes componentwise integer and charge selection rules but no parameter-free creation probability, mass or particle multiplicity"
+}

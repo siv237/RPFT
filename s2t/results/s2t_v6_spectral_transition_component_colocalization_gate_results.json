@@ -1,0 +1,146 @@
+{
+  "gate": "version6_spectral_transition_component_colocalization_gate",
+  "input_certificates": {
+    "component_classes": {
+      "quark": 12,
+      "lepton": 3
+    },
+    "global_class_requires_sum": true,
+    "previous_binding_term": false
+  },
+  "direct_finite_connector_audit": {
+    "charged_edges": [
+      "u",
+      "d",
+      "e"
+    ],
+    "quark_edges": [
+      "u",
+      "d"
+    ],
+    "lepton_edges": [
+      "e"
+    ],
+    "quark_lepton_Dirac_edge_count": 0,
+    "edge_intertwiner_algebra": "C^3",
+    "KO6_identifies_u_d_e_edges": false,
+    "direct_finite_colocalizing_connector": false
+  },
+  "morita_curvature_audit": {
+    "carrier_split": "M20x15 = M20x12 direct_sum M20x3",
+    "hilbert_schmidt_additivity_residual": 5.684341886080802e-14,
+    "centered_relative_curvature_formula": "tau300(R^2)=tau20(F_F^2)+tau15(F_O^2) when both curvatures are centered",
+    "quark_lepton_cross_term_in_centered_norm": 0.0,
+    "common_left_M20_action_is_a_spatial_binding_operator": false,
+    "colocalization_derived": false
+  },
+  "higgs_and_torsion_audit": {
+    "same_Higgs_doublet_appears_on_d_and_e_edges": true,
+    "same_Higgs_field_creates_direct_quark_lepton_Dirac_edge": false,
+    "torsion_down_lepton_invariant": "3*b**2 + c**2",
+    "mixed_derivative_of_3b2_plus_c2_with_respect_to_b_c": 0.0,
+    "squared_torsion_potential_contains_b2_c2_cross_term": true,
+    "squared_torsion_potential_allowed_as_parent_selector": false,
+    "minimal_shape_Higgs_portal_coefficient": 0.0,
+    "radial_Higgs_coupling_locates_quark_and_lepton_spectral_cores": false,
+    "Higgs_colocalization_derived": false
+  },
+  "family_gauge_and_order_parameter_audit": {
+    "family_connection_action": "A_fam tensor I_H15",
+    "family_connection_commutator_residuals": {
+      "quark": 0.0,
+      "lepton": 0.0
+    },
+    "family_connection_is_rank_blind_on_H15": true,
+    "family_connection_dynamical_localization_derived": false,
+    "Q_field_SM_representation": "(1,1,0)",
+    "Q_fermion_minimum_independent_species_coefficients": 5,
+    "Q_unique_nonzero_fermion_coupling_selected": false,
+    "ordinary_inner_fluctuation_generates_Q_fermion_coupling": false,
+    "single_Q_profile_would_conditionally_be_common_to_all_H15_states": true,
+    "single_Q_profile_is_derived_as_component_localizing_mass": false
+  },
+  "callias_common_core_candidate": {
+    "conditional_mass": "(n(x) dot sigma) tensor (q_quark + q_lepton)",
+    "conditional_common_profile_would_colocalize_12_and_3": true,
+    "coefficient_Callias_index": 15,
+    "same_clutching_unitary_as_Toeplitz": true,
+    "spatial_Callias_operator_identified_with_Toeplitz_boundary": false,
+    "finite_parent_derives_spin_cover_carrier": false,
+    "two_copy_loophole_available": false,
+    "common_core_is_currently_physical": false,
+    "independent_component_profiles_remain_allowed": true
+  },
+  "separation_test": {
+    "model": "two normalized Gaussian defect densities with the current additive component weights",
+    "component_weights": {
+      "quark": 0.11428571428571428,
+      "lepton": 0.02857142857142857
+    },
+    "scan": [
+      {
+        "separation": 0.0,
+        "quark_self": 0.3526184897173477,
+        "lepton_self": 0.3526184897173477,
+        "overlap": 0.3526184897173477,
+        "current_additive_energy": 0.0503740699596211,
+        "hypothetical_energy_if_binding_coefficient_were_one": -0.30224441975772665
+      },
+      {
+        "separation": 0.5,
+        "quark_self": 0.3526184897173476,
+        "lepton_self": 0.35261848971734755,
+        "overlap": 0.3198110833125616,
+        "current_additive_energy": 0.050374069959621084,
+        "hypothetical_energy_if_binding_coefficient_were_one": -0.2694370133529405
+      },
+      {
+        "separation": 1.0,
+        "quark_self": 0.35261848971734777,
+        "lepton_self": 0.3526184897173479,
+        "overlap": 0.2385936049251891,
+        "current_additive_energy": 0.05037406995962111,
+        "hypothetical_energy_if_binding_coefficient_were_one": -0.18821953496556798
+      },
+      {
+        "separation": 2.0,
+        "quark_self": 0.35261848971734755,
+        "lepton_self": 0.3526184897173476,
+        "overlap": 0.07391285076477835,
+        "current_additive_energy": 0.05037406995962108,
+        "hypothetical_energy_if_binding_coefficient_were_one": -0.023538780805157276
+      },
+      {
+        "separation": 4.0,
+        "quark_self": 0.3526184897173477,
+        "lepton_self": 0.35261848971734755,
+        "overlap": 0.0006807138219852217,
+        "current_additive_energy": 0.0503740699596211,
+        "hypothetical_energy_if_binding_coefficient_were_one": 0.049693356137635876
+      }
+    ],
+    "current_energy_spread_over_separation": 3.469446951953614e-17,
+    "current_energy_has_minimum_at_zero_separation": false,
+    "hypothetical_attractive_cross_term_would_minimize_at_zero": true,
+    "current_cross_coefficient": 0.0
+  },
+  "global_index_boundary": {
+    "total_KO6_class_conserved": 15,
+    "separated_centers_can_carry_classes_12_and_3": true,
+    "K_theory_addition_requires_same_spatial_center": false,
+    "global_index_conservation_is_binding_energy": false
+  },
+  "verdict": {
+    "direct_quark_lepton_connector_exists": false,
+    "current_Morita_or_Toeplitz_actions_colocalize_components": false,
+    "current_Higgs_or_torsion_terms_colocalize_components": false,
+    "current_family_QTB_sector_colocalizes_observed_components": false,
+    "conditional_single_Callias_profile_would_colocalize": true,
+    "conditional_Callias_profile_is_parent_derived": false,
+    "global_class_15_is_a_proved_bound_particle": false,
+    "spatial_colocalization_derived": false,
+    "physical_closure": false,
+    "status": "all derived terms remain block-additive or rank-blind; the only common-core construction is the unproved spin-cover Callias ansatz, so class 15 is not a derived bound particle"
+  },
+  "next_gate": "version6_spectral_transition_higgs_resolved_support_gate"
+}

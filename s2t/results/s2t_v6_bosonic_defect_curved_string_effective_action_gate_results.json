@@ -1,0 +1,81 @@
+{
+  "gate": "version6_bosonic_defect_curved_string_effective_action_gate",
+  "straight_string_inputs": {
+    "dimensionless_tension_reintegrated": 1.5744530782963584,
+    "dimensionless_tension_parent": 1.5744526906724816,
+    "relative_tension_reintegration_residual": 2.461958899363241e-07,
+    "full_internal_gap": 3.6193363303023642,
+    "normalizable_internal_rotor_exists": false,
+    "dyonic_charge_coordinate_exists": false
+  },
+  "cross_section": {
+    "second_energy_moment": 0.5174619005128893,
+    "fourth_energy_moment": 0.43661998998972423,
+    "sixth_energy_moment": 0.7206475642657205,
+    "rms_energy_width": 0.5732899499352971,
+    "radial_energy_kurtosis": 2.567299754245696,
+    "energy_radius_quantiles": {
+      "0.5": 0.4429882325151238,
+      "0.9": 0.8802159621404018,
+      "0.95": 1.0410339723068662,
+      "0.99": 1.3999147292133924
+    },
+    "transverse_first_moment": [
+      0.0,
+      0.0
+    ],
+    "first_moment_vanishes_by_axial_symmetry": true
+  },
+  "zero_mode_effective_action": {
+    "leading_worldsheet_action": "-T integral sqrt(-gamma)",
+    "leading_coefficient_T": 1.5744530782963584,
+    "independent_quadratic_extrinsic_rigidity_from_translation_modes": false,
+    "quadratic_worldsheet_Ricci_term_is_topological_for_closed_worldsheets": true,
+    "static_circular_cylinder_worldsheet_Ricci_scalar": 0.0,
+    "massive_profile_modes_required_for_nontrivial_curvature_response": true
+  },
+  "static_ring": {
+    "leading_energy": "E0(R)=2*pi*T*R",
+    "leading_energy_derivative": 9.89258044839535,
+    "finite_stationary_radius_at_leading_order": false,
+    "samples_by_radius_over_rms_width": {
+      "3.0": {
+        "radius": 1.7198698498058915,
+        "nambu_goto_energy": 17.01395084997441,
+        "width_over_radius": 0.3333333333333333,
+        "unit_c4_relative_correction": 0.012345679012345678,
+        "c4_required_for_stationarity_at_this_radius": 27.0
+      },
+      "5.0": {
+        "radius": 2.8664497496764856,
+        "nambu_goto_energy": 28.356584749957346,
+        "width_over_radius": 0.2,
+        "unit_c4_relative_correction": 0.0016,
+        "c4_required_for_stationarity_at_this_radius": 208.33333333333334
+      },
+      "10.0": {
+        "radius": 5.732899499352971,
+        "nambu_goto_energy": 56.71316949991469,
+        "width_over_radius": 0.1,
+        "unit_c4_relative_correction": 0.0001,
+        "c4_required_for_stationarity_at_this_radius": 3333.3333333333335
+      }
+    }
+  },
+  "quartic_curvature_boundary": {
+    "generic_relative_form": "E(R)=2*pi*T*R*[1+c4*(w/R)^4+...]",
+    "unit_c4_stationary_radius_over_width": 1.3160740129524924,
+    "unit_c4_stationary_point_inside_slow_curvature_regime": false,
+    "c4_required_for_stationarity_at_R_over_w_3": 27.0,
+    "coefficient_c4_derived_from_current_straight_spectrum": false
+  },
+  "verdict": {
+    "nambu_goto_term_derived_from_parent_tension": true,
+    "controlled_quadratic_rigidity_stabilizes_ring": false,
+    "normalizable_worldsheet_current_can_stabilize_ring": false,
+    "ground_state_ring_has_controlled_finite_radius": false,
+    "straight_string_can_be_promoted_to_particle_without_new_response_calculation": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_curved_string_massive_mode_response_gate"
+  }
+}

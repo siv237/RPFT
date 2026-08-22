@@ -1,0 +1,56 @@
+{
+  "gate": "version6_modular_cooling_projective_transition_gate",
+  "free_energy_landscape": {
+    "uniaxial_family": "R(a)=diag(a,(1-a)/2,(1-a)/2)",
+    "free_energy": "S(a)+beta E(a)",
+    "ordered_branch_birth_inverse_temperature": 1.341793897077308,
+    "ordered_branch_birth_axis_weight": 0.7605757614242159,
+    "coexistence_inverse_temperature": 1.5426695408602848,
+    "coexistence_ordered_axis_weight": 0.9121665962741361,
+    "coexistence_saddle_axis_weight": 0.6178076620211084,
+    "coexistence_barrier_density": 0.05717835735458465,
+    "isotropic_spinodal_inverse_temperature": 10.5,
+    "isotropic_spinodal_exact": "21/2",
+    "isotropic_curvature": "9/2-3 beta/7"
+  },
+  "metastability_windows": {
+    "beta_below_ordered_spinodal": "only isotropic minimum",
+    "ordered_spinodal_to_coexistence": "ordered phase metastable",
+    "coexistence_to_isotropic_spinodal": "isotropic phase metastable; nucleation required",
+    "beta_above_isotropic_spinodal": "isotropic phase linearly unstable; spinodal roll-down allowed"
+  },
+  "beta_two_example": {
+    "saddle_axis_weight": 0.5445217740335409,
+    "ordered_axis_weight": 0.9760191285336342,
+    "barrier_density_above_isotropic": 0.03676483736081915
+  },
+  "kinetic_classification": {
+    "natural_order_parameter_dynamics": "nonconserved Model A / Allen-Cahn type",
+    "standard_kibble_zurek_directly_applicable": false,
+    "first_order_route": "Langer nucleation for shallow supercooling; spinodal decomposition for deep quench",
+    "thin_wall_critical_radius": "2 sigma / Delta f",
+    "thin_wall_barrier": "16 pi sigma^3 / (3 Delta f^2)",
+    "defect_origin": "independent RP2 axes selected by distinct bubbles or unstable domains"
+  },
+  "missing_parent_data": {
+    "cooling_law_beta_of_internal_time": false,
+    "mobility_or_relaxation_coefficient": false,
+    "noise_kernel": false,
+    "interface_tension_normalization": false,
+    "defect_density_prediction": false
+  },
+  "maximum_residuals": {
+    "ordered_spinodal_stationarity": 0.0,
+    "ordered_spinodal_curvature": 8.881784197001252e-16,
+    "coexistence_free_energy": 2.7755575615628914e-16,
+    "isotropic_spinodal_curvature": 1.1546319456101628e-14
+  },
+  "verdict": {
+    "static_transition_kinetics_classified": true,
+    "long_metastable_isotropic_window_exists": true,
+    "explosive_spinodal_crystallization_is_conditionally_possible": true,
+    "internal_cooling_trigger_derived": false,
+    "matter_birth_fully_derived": false,
+    "next_gate": "version6_internal_entropy_transfer_cooling_gate"
+  }
+}

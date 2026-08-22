@@ -1,0 +1,566 @@
+{
+  "gate": "version6_spectral_transition_compacton_c4_affine_selector_admissibility_gate",
+  "compacton_character_selector": {
+    "reduced_orbit_step": [
+      [
+        0.0,
+        -1.0
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ],
+    "F2_equals_minus_identity_residual": 0.0,
+    "F4_equals_identity_residual": 0.0,
+    "character_projector_ranks": {
+      "+i": 1,
+      "-i": 1
+    },
+    "selector": "D_chi(Psi)=1-|<Psi,F(Psi)>|^2=4 w_(+i) w_(-i) on the exact compacton manifold",
+    "selector_is_coefficient_free": true,
+    "selector_zero_locus": "F(Psi)=+i Psi or F(Psi)=-i Psi",
+    "selector_also_enforces": [
+      "equal two-site norm",
+      "relative phase plus or minus pi/2",
+      "collinearity of the two internal balanced vectors"
+    ],
+    "phase_scan_count": 64,
+    "zero_phase_points": [
+      0.5,
+      1.5
+    ],
+    "maximum_defect_weight_identity_residual": 8.881784197001252e-16,
+    "phase_scan": [
+      {
+        "phase_over_pi": 0.0,
+        "character_defect": 1.0,
+        "weight_plus_i": 0.4999999999999998,
+        "weight_minus_i": 0.4999999999999998,
+        "four_weight_product": 0.9999999999999991
+      },
+      {
+        "phase_over_pi": 0.03125,
+        "character_defect": 0.9903926402016152,
+        "weight_plus_i": 0.4509914298352195,
+        "weight_minus_i": 0.5490085701647801,
+        "four_weight_product": 0.9903926402016144
+      },
+      {
+        "phase_over_pi": 0.0625,
+        "character_defect": 0.9619397662556434,
+        "weight_plus_i": 0.4024548389919357,
+        "weight_minus_i": 0.5975451610080639,
+        "four_weight_product": 0.9619397662556425
+      },
+      {
+        "phase_over_pi": 0.09375,
+        "character_defect": 0.9157348061512727,
+        "weight_plus_i": 0.35485766137276864,
+        "weight_minus_i": 0.6451423386272309,
+        "four_weight_product": 0.9157348061512718
+      },
+      {
+        "phase_over_pi": 0.125,
+        "character_defect": 0.8535533905932737,
+        "weight_plus_i": 0.30865828381745497,
+        "weight_minus_i": 0.6913417161825446,
+        "four_weight_product": 0.853553390593273
+      },
+      {
+        "phase_over_pi": 0.15625,
+        "character_defect": 0.7777851165098011,
+        "weight_plus_i": 0.26430163158700104,
+        "weight_minus_i": 0.7356983684129985,
+        "four_weight_product": 0.7777851165098004
+      },
+      {
+        "phase_over_pi": 0.1875,
+        "character_defect": 0.6913417161825449,
+        "weight_plus_i": 0.22221488349019886,
+        "weight_minus_i": 0.7777851165098008,
+        "four_weight_product": 0.6913417161825445
+      },
+      {
+        "phase_over_pi": 0.21875,
+        "character_defect": 0.5975451610080642,
+        "weight_plus_i": 0.18280335791817717,
+        "weight_minus_i": 0.8171966420818224,
+        "four_weight_product": 0.5975451610080637
+      },
+      {
+        "phase_over_pi": 0.25,
+        "character_defect": 0.5000000000000001,
+        "weight_plus_i": 0.1464466094067262,
+        "weight_minus_i": 0.8535533905932734,
+        "four_weight_product": 0.4999999999999997
+      },
+      {
+        "phase_over_pi": 0.28125,
+        "character_defect": 0.4024548389919358,
+        "weight_plus_i": 0.11349477331863148,
+        "weight_minus_i": 0.886505226681368,
+        "four_weight_product": 0.4024548389919355
+      },
+      {
+        "phase_over_pi": 0.3125,
+        "character_defect": 0.30865828381745497,
+        "weight_plus_i": 0.08426519384872735,
+        "weight_minus_i": 0.9157348061512723,
+        "four_weight_product": 0.3086582838174549
+      },
+      {
+        "phase_over_pi": 0.34374999999999994,
+        "character_defect": 0.2222148834901988,
+        "weight_plus_i": 0.059039367825822496,
+        "weight_minus_i": 0.940960632174177,
+        "four_weight_product": 0.2222148834901988
+      },
+      {
+        "phase_over_pi": 0.375,
+        "character_defect": 0.14644660940672627,
+        "weight_plus_i": 0.03806023374435663,
+        "weight_minus_i": 0.9619397662556429,
+        "four_weight_product": 0.1464466094067262
+      },
+      {
+        "phase_over_pi": 0.40625000000000006,
+        "character_defect": 0.08426519384872722,
+        "weight_plus_i": 0.021529832133895553,
+        "weight_minus_i": 0.9784701678661042,
+        "four_weight_product": 0.0842651938487273
+      },
+      {
+        "phase_over_pi": 0.4375,
+        "character_defect": 0.03806023374435663,
+        "weight_plus_i": 0.009607359798384778,
+        "weight_minus_i": 0.9903926402016148,
+        "four_weight_product": 0.03806023374435662
+      },
+      {
+        "phase_over_pi": 0.46874999999999994,
+        "character_defect": 0.009607359798384896,
+        "weight_plus_i": 0.0024076366639015647,
+        "weight_minus_i": 0.9975923633360979,
+        "four_weight_product": 0.009607359798384802
+      },
+      {
+        "phase_over_pi": 0.5,
+        "character_defect": 0.0,
+        "weight_plus_i": 9.373498641636607e-34,
+        "weight_minus_i": 0.9999999999999996,
+        "four_weight_product": 3.749399456654641e-33
+      },
+      {
+        "phase_over_pi": 0.53125,
+        "character_defect": 0.009607359798384674,
+        "weight_plus_i": 0.0024076366639015578,
+        "weight_minus_i": 0.997592363336098,
+        "four_weight_product": 0.009607359798384774
+      },
+      {
+        "phase_over_pi": 0.5625,
+        "character_defect": 0.03806023374435663,
+        "weight_plus_i": 0.009607359798384766,
+        "weight_minus_i": 0.9903926402016148,
+        "four_weight_product": 0.03806023374435657
+      },
+      {
+        "phase_over_pi": 0.59375,
+        "character_defect": 0.08426519384872722,
+        "weight_plus_i": 0.021529832133895525,
+        "weight_minus_i": 0.9784701678661041,
+        "four_weight_product": 0.08426519384872719
+      },
+      {
+        "phase_over_pi": 0.625,
+        "character_defect": 0.14644660940672627,
+        "weight_plus_i": 0.0380602337443566,
+        "weight_minus_i": 0.9619397662556429,
+        "four_weight_product": 0.1464466094067261
+      },
+      {
+        "phase_over_pi": 0.65625,
+        "character_defect": 0.2222148834901988,
+        "weight_plus_i": 0.05903936782582248,
+        "weight_minus_i": 0.940960632174177,
+        "four_weight_product": 0.22221488349019877
+      },
+      {
+        "phase_over_pi": 0.6874999999999999,
+        "character_defect": 0.30865828381745475,
+        "weight_plus_i": 0.08426519384872726,
+        "weight_minus_i": 0.9157348061512722,
+        "four_weight_product": 0.3086582838174545
+      },
+      {
+        "phase_over_pi": 0.71875,
+        "character_defect": 0.40245483899193546,
+        "weight_plus_i": 0.11349477331863142,
+        "weight_minus_i": 0.8865052266813683,
+        "four_weight_product": 0.40245483899193546
+      },
+      {
+        "phase_over_pi": 0.75,
+        "character_defect": 0.4999999999999999,
+        "weight_plus_i": 0.14644660940672616,
+        "weight_minus_i": 0.8535533905932734,
+        "four_weight_product": 0.4999999999999995
+      },
+      {
+        "phase_over_pi": 0.78125,
+        "character_defect": 0.5975451610080642,
+        "weight_plus_i": 0.18280335791817717,
+        "weight_minus_i": 0.8171966420818224,
+        "four_weight_product": 0.5975451610080637
+      },
+      {
+        "phase_over_pi": 0.8125000000000001,
+        "character_defect": 0.6913417161825449,
+        "weight_plus_i": 0.22221488349019886,
+        "weight_minus_i": 0.7777851165098008,
+        "four_weight_product": 0.6913417161825445
+      },
+      {
+        "phase_over_pi": 0.84375,
+        "character_defect": 0.7777851165098009,
+        "weight_plus_i": 0.264301631587001,
+        "weight_minus_i": 0.7356983684129987,
+        "four_weight_product": 0.7777851165098004
+      },
+      {
+        "phase_over_pi": 0.875,
+        "character_defect": 0.8535533905932736,
+        "weight_plus_i": 0.3086582838174549,
+        "weight_minus_i": 0.6913417161825447,
+        "four_weight_product": 0.853553390593273
+      },
+      {
+        "phase_over_pi": 0.90625,
+        "character_defect": 0.9157348061512726,
+        "weight_plus_i": 0.35485766137276864,
+        "weight_minus_i": 0.6451423386272309,
+        "four_weight_product": 0.9157348061512718
+      },
+      {
+        "phase_over_pi": 0.9374999999999999,
+        "character_defect": 0.9619397662556433,
+        "weight_plus_i": 0.40245483899193557,
+        "weight_minus_i": 0.5975451610080641,
+        "four_weight_product": 0.9619397662556426
+      },
+      {
+        "phase_over_pi": 0.96875,
+        "character_defect": 0.9903926402016152,
+        "weight_plus_i": 0.45099142983521934,
+        "weight_minus_i": 0.5490085701647802,
+        "four_weight_product": 0.9903926402016143
+      },
+      {
+        "phase_over_pi": 1.0,
+        "character_defect": 1.0,
+        "weight_plus_i": 0.4999999999999997,
+        "weight_minus_i": 0.4999999999999999,
+        "four_weight_product": 0.9999999999999992
+      },
+      {
+        "phase_over_pi": 1.03125,
+        "character_defect": 0.9903926402016152,
+        "weight_plus_i": 0.5490085701647801,
+        "weight_minus_i": 0.4509914298352195,
+        "four_weight_product": 0.9903926402016144
+      },
+      {
+        "phase_over_pi": 1.0625,
+        "character_defect": 0.9619397662556434,
+        "weight_plus_i": 0.597545161008064,
+        "weight_minus_i": 0.4024548389919356,
+        "four_weight_product": 0.9619397662556426
+      },
+      {
+        "phase_over_pi": 1.09375,
+        "character_defect": 0.9157348061512728,
+        "weight_plus_i": 0.6451423386272308,
+        "weight_minus_i": 0.35485766137276875,
+        "four_weight_product": 0.9157348061512719
+      },
+      {
+        "phase_over_pi": 1.125,
+        "character_defect": 0.8535533905932737,
+        "weight_plus_i": 0.6913417161825446,
+        "weight_minus_i": 0.3086582838174551,
+        "four_weight_product": 0.8535533905932733
+      },
+      {
+        "phase_over_pi": 1.15625,
+        "character_defect": 0.7777851165098011,
+        "weight_plus_i": 0.7356983684129985,
+        "weight_minus_i": 0.26430163158700104,
+        "four_weight_product": 0.7777851165098004
+      },
+      {
+        "phase_over_pi": 1.1875,
+        "character_defect": 0.6913417161825453,
+        "weight_plus_i": 0.7777851165098006,
+        "weight_minus_i": 0.2222148834901989,
+        "four_weight_product": 0.6913417161825446
+      },
+      {
+        "phase_over_pi": 1.21875,
+        "character_defect": 0.5975451610080644,
+        "weight_plus_i": 0.8171966420818222,
+        "weight_minus_i": 0.18280335791817728,
+        "four_weight_product": 0.5975451610080639
+      },
+      {
+        "phase_over_pi": 1.25,
+        "character_defect": 0.5000000000000001,
+        "weight_plus_i": 0.8535533905932734,
+        "weight_minus_i": 0.14644660940672624,
+        "four_weight_product": 0.4999999999999998
+      },
+      {
+        "phase_over_pi": 1.28125,
+        "character_defect": 0.40245483899193635,
+        "weight_plus_i": 0.886505226681368,
+        "weight_minus_i": 0.11349477331863166,
+        "four_weight_product": 0.4024548389919361
+      },
+      {
+        "phase_over_pi": 1.3125,
+        "character_defect": 0.30865828381745497,
+        "weight_plus_i": 0.9157348061512722,
+        "weight_minus_i": 0.08426519384872733,
+        "four_weight_product": 0.3086582838174548
+      },
+      {
+        "phase_over_pi": 1.34375,
+        "character_defect": 0.2222148834901988,
+        "weight_plus_i": 0.940960632174177,
+        "weight_minus_i": 0.059039367825822524,
+        "four_weight_product": 0.2222148834901989
+      },
+      {
+        "phase_over_pi": 1.3749999999999998,
+        "character_defect": 0.1464466094067265,
+        "weight_plus_i": 0.9619397662556428,
+        "weight_minus_i": 0.03806023374435673,
+        "four_weight_product": 0.14644660940672655
+      },
+      {
+        "phase_over_pi": 1.40625,
+        "character_defect": 0.08426519384872744,
+        "weight_plus_i": 0.978470167866104,
+        "weight_minus_i": 0.02152983213389557,
+        "four_weight_product": 0.08426519384872735
+      },
+      {
+        "phase_over_pi": 1.4375,
+        "character_defect": 0.03806023374435685,
+        "weight_plus_i": 0.9903926402016148,
+        "weight_minus_i": 0.009607359798384812,
+        "four_weight_product": 0.03806023374435675
+      },
+      {
+        "phase_over_pi": 1.46875,
+        "character_defect": 0.009607359798384674,
+        "weight_plus_i": 0.997592363336098,
+        "weight_minus_i": 0.002407636663901548,
+        "four_weight_product": 0.009607359798384736
+      },
+      {
+        "phase_over_pi": 1.5,
+        "character_defect": 0.0,
+        "weight_plus_i": 0.9999999999999996,
+        "weight_minus_i": 8.436148777472946e-33,
+        "four_weight_product": 3.374459510989177e-32
+      },
+      {
+        "phase_over_pi": 1.53125,
+        "character_defect": 0.009607359798384674,
+        "weight_plus_i": 0.997592363336098,
+        "weight_minus_i": 0.0024076366639015313,
+        "four_weight_product": 0.009607359798384668
+      },
+      {
+        "phase_over_pi": 1.5625,
+        "character_defect": 0.03806023374435663,
+        "weight_plus_i": 0.9903926402016148,
+        "weight_minus_i": 0.009607359798384778,
+        "four_weight_product": 0.03806023374435662
+      },
+      {
+        "phase_over_pi": 1.59375,
+        "character_defect": 0.08426519384872722,
+        "weight_plus_i": 0.9784701678661041,
+        "weight_minus_i": 0.02152983213389551,
+        "four_weight_product": 0.08426519384872713
+      },
+      {
+        "phase_over_pi": 1.6250000000000002,
+        "character_defect": 0.1464466094067256,
+        "weight_plus_i": 0.9619397662556428,
+        "weight_minus_i": 0.03806023374435665,
+        "four_weight_product": 0.14644660940672627
+      },
+      {
+        "phase_over_pi": 1.65625,
+        "character_defect": 0.2222148834901988,
+        "weight_plus_i": 0.940960632174177,
+        "weight_minus_i": 0.05903936782582244,
+        "four_weight_product": 0.2222148834901986
+      },
+      {
+        "phase_over_pi": 1.6875,
+        "character_defect": 0.30865828381745475,
+        "weight_plus_i": 0.9157348061512722,
+        "weight_minus_i": 0.08426519384872723,
+        "four_weight_product": 0.3086582838174544
+      },
+      {
+        "phase_over_pi": 1.71875,
+        "character_defect": 0.4024548389919358,
+        "weight_plus_i": 0.8865052266813681,
+        "weight_minus_i": 0.1134947733186315,
+        "four_weight_product": 0.4024548389919356
+      },
+      {
+        "phase_over_pi": 1.75,
+        "character_defect": 0.4999999999999998,
+        "weight_plus_i": 0.8535533905932735,
+        "weight_minus_i": 0.1464466094067261,
+        "four_weight_product": 0.4999999999999994
+      },
+      {
+        "phase_over_pi": 1.78125,
+        "character_defect": 0.5975451610080635,
+        "weight_plus_i": 0.8171966420818227,
+        "weight_minus_i": 0.18280335791817698,
+        "four_weight_product": 0.5975451610080632
+      },
+      {
+        "phase_over_pi": 1.8125,
+        "character_defect": 0.6913417161825449,
+        "weight_plus_i": 0.7777851165098008,
+        "weight_minus_i": 0.22221488349019886,
+        "four_weight_product": 0.6913417161825445
+      },
+      {
+        "phase_over_pi": 1.84375,
+        "character_defect": 0.7777851165098009,
+        "weight_plus_i": 0.7356983684129986,
+        "weight_minus_i": 0.26430163158700093,
+        "four_weight_product": 0.7777851165098002
+      },
+      {
+        "phase_over_pi": 1.8749999999999998,
+        "character_defect": 0.8535533905932733,
+        "weight_plus_i": 0.691341716182545,
+        "weight_minus_i": 0.30865828381745475,
+        "four_weight_product": 0.853553390593273
+      },
+      {
+        "phase_over_pi": 1.90625,
+        "character_defect": 0.9157348061512726,
+        "weight_plus_i": 0.645142338627231,
+        "weight_minus_i": 0.3548576613727686,
+        "four_weight_product": 0.9157348061512718
+      },
+      {
+        "phase_over_pi": 1.9375,
+        "character_defect": 0.9619397662556433,
+        "weight_plus_i": 0.5975451610080641,
+        "weight_minus_i": 0.4024548389919354,
+        "four_weight_product": 0.9619397662556423
+      },
+      {
+        "phase_over_pi": 1.96875,
+        "character_defect": 0.9903926402016152,
+        "weight_plus_i": 0.54900857016478,
+        "weight_minus_i": 0.45099142983521956,
+        "four_weight_product": 0.9903926402016143
+      }
+    ]
+  },
+  "affine_C4_character_decomposition": {
+    "full_affine_group": "AGL(2,2)=S4",
+    "four_cycle_count_in_S4": 6,
+    "distinct_C4_subgroup_count": 3,
+    "selected_cycle_is_parent_canonical": false,
+    "selected_cycle_character_ranks": {
+      "1": 1,
+      "+i": 1,
+      "-1": 1,
+      "-i": 1
+    },
+    "plus_i_and_minus_i_lie_in_P3": true,
+    "distinct_oriented_plus_i_projectors": 6,
+    "distinct_unoriented_plus_minus_i_planes": 3,
+    "maximum_chosen_character_plane_S4_commutator": 1.4142135623730951,
+    "interpretation": "a chosen four-cycle supplies the desired plus/minus i channels inside P3, but choosing one of three C4 subgroups and one of two orientations is new symmetry-breaking data"
+  },
+  "equivariance_obstruction": {
+    "full_C4_permutation_commutant_dimension": 2,
+    "full_C4_expected_commutant": "span{I,J}",
+    "P3_triplet_commutant_dimension": 1,
+    "P3_triplet_expected_commutant": "complex scalars",
+    "canonical_link": "X=rho V",
+    "canonical_link_induced_metric_residual_from_identity": 3.871405715699005e-16,
+    "maximum_isotropic_metric_S4_commutator": 7.0508631834064e-16,
+    "canonical_link_distinguishes_plus_minus_i": false,
+    "C4_projectors_require_chosen_four_cycle": true,
+    "full_commutant_smallest_nonzero_singular_value": 6.928203230275506,
+    "triplet_commutant_smallest_nonzero_singular_value": 6.928203230275507
+  },
+  "dynamical_obstruction": {
+    "C4_equivariant_linear_unitary_preserves_character_weights": true,
+    "therefore_D_chi_is_conserved": true,
+    "finite_direct_sum_sink_is_contracting": false,
+    "coherent_source_sink_survival": [
+      {
+        "time_over_pi": 0.0,
+        "source_probability": 0.9999999999999996,
+        "sink_probability": 5.004680467665246e-34
+      },
+      {
+        "time_over_pi": 0.25,
+        "source_probability": 0.4999999999999999,
+        "sink_probability": 0.4999999999999998
+      },
+      {
+        "time_over_pi": 0.5,
+        "source_probability": 4.249867503421168e-33,
+        "sink_probability": 0.9999999999999996
+      },
+      {
+        "time_over_pi": 0.75,
+        "source_probability": 0.4999999999999998,
+        "sink_probability": 0.4999999999999999
+      },
+      {
+        "time_over_pi": 1.0,
+        "source_probability": 0.9999999999999996,
+        "sink_probability": 1.5498065873385093e-32
+      }
+    ],
+    "recurrence_residual_at_pi": 4.440892098500626e-16,
+    "required_new_structure": "a derived open, measured, noisy, or nonlinear state-dependent evolution"
+  },
+  "maximum_residuals": {
+    "character_projector_idempotence": 0.0,
+    "character_projector_orthogonality": 0.0,
+    "coisometry_VVstar": 3.8667552897052865e-16,
+    "coisometry_VstarV": 3.6188843062238402e-16,
+    "compacton_character_identity": 8.881784197001252e-16
+  },
+  "verdict": {
+    "coefficient_free_kinematic_selector_exists": true,
+    "selector_is_parent_action_term": false,
+    "affine_sink_contains_plus_minus_i_after_choosing_C4": true,
+    "C4_choice_is_canonical_under_full_affine_symmetry": false,
+    "canonical_affine_link_drives_character_purification": false,
+    "autonomous_capture_mechanism_derived": false,
+    "status": "the compacton orbit has an exact coefficient-free character-purity defect whose zero locus is the plus/minus i pair, but the full affine S4 parent has no canonical C4 subgroup, its canonical link is isotropic, and finite coherent transfer preserves character weights and recurs; the clue is a valid diagnostic, not a derived matter-birth dynamics",
+    "next_gate": "version6_spectral_transition_discrete_compacton_c4_boundary_eta_dissipation_gate"
+  }
+}

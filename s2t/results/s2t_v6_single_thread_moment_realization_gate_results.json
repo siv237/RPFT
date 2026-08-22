@@ -1,0 +1,79 @@
+{
+  "gate": "version6_single_thread_moment_realization_gate",
+  "input": {
+    "ordered_spectrum": [
+      0.9121666003123439,
+      0.043916699843828066,
+      0.043916699843828066
+    ],
+    "tetrahedral_axes": [
+      [
+        0.5773502691896258,
+        0.5773502691896258,
+        0.5773502691896258
+      ],
+      [
+        0.5773502691896258,
+        -0.5773502691896258,
+        -0.5773502691896258
+      ],
+      [
+        -0.5773502691896258,
+        0.5773502691896258,
+        -0.5773502691896258
+      ],
+      [
+        -0.5773502691896258,
+        -0.5773502691896258,
+        0.5773502691896258
+      ]
+    ],
+    "same_nonnegative_local_pass_distribution_assumed": true
+  },
+  "ordered_second_moment_fit": {
+    "weights": [
+      0.9011874253513867,
+      0.032937524882871085,
+      0.032937524882871085,
+      0.032937524882871085
+    ],
+    "weights_nonnegative": true,
+    "sum_weights": 0.9999999999999999,
+    "second_moment_residual": 0.0,
+    "polar_first_moment": [
+      0.5012843137593634,
+      0.5012843137593634,
+      0.5012843137593634
+    ],
+    "polar_first_moment_norm": 0.8682499004685159,
+    "third_moment_best_scale_to_canonical_T": 0.25000000000000006,
+    "third_moment_cosine_to_canonical_T": 0.7898080339681108,
+    "third_moment_relative_residual_after_best_scale": 0.6133541142598029
+  },
+  "zero_polar_current_solution": {
+    "constraint_matrix_rank": 4,
+    "unique_weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "first_moment_norm": 0.0,
+    "quadrupole_norm": 1.9229626863835638e-16,
+    "third_moment_norm": 0.4714045207910319,
+    "ordered_Q_reproduced": false,
+    "canonical_T_reproduced_up_to_factor": true
+  },
+  "head_tail_real_pair": {
+    "first_moment_norm": 0.0,
+    "third_moment_norm": 1.6996749443881478e-17,
+    "canonical_T_reproduced": false
+  },
+  "verdict": {
+    "raw_common_distribution_realizes_Q_T_and_zero_current": false,
+    "single_global_thread_hypothesis_refuted": false,
+    "Q_and_T_require_distinct_weightings_or_observables": true,
+    "minimal_refinement": "phase- or connectivity-weighted third moment on the same thread",
+    "next_gate": "version6_single_thread_phase_weighted_moment_lift_gate"
+  }
+}

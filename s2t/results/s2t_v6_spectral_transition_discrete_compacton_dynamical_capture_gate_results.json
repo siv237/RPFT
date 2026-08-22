@@ -1,0 +1,675 @@
+{
+  "gate": "version6_spectral_transition_discrete_compacton_dynamical_capture_gate",
+  "exact_invariant_manifold": {
+    "definition": "two adjacent inward directional blocks, each with norm squared 1/2 and equal weak/right chiral populations",
+    "independent_left_and_right_balanced_vectors_allowed": true,
+    "random_family_sample_count": 32,
+    "maximum_F2_plus_identity_residual": 2.140163077677951e-15,
+    "maximum_manifold_defect": 3.236828524569469e-16,
+    "return_law": "F^2(Psi)=-Psi",
+    "isolated_orbit": false
+  },
+  "relative_phase_scan": {
+    "phase_count": 16,
+    "one_step_eigenstate_phase_count": 2,
+    "one_step_eigenstate_relative_phases": [
+      "pi/2",
+      "3*pi/2"
+    ],
+    "all_relative_phases_are_two_step_compactons": true,
+    "maximum_two_step_residual": 9.872660391828489e-16,
+    "scan": {
+      "0.0": {
+        "relative_phase_over_pi": 0.0,
+        "one_step_eigenstate_residual": 1.414213562373095,
+        "two_step_minus_identity_residual": 8.55001219242246e-16,
+        "core_probability_after_two_steps": 0.9999999999999991
+      },
+      "0.125": {
+        "relative_phase_over_pi": 0.125,
+        "one_step_eigenstate_residual": 1.1111404660392041,
+        "two_step_minus_identity_residual": 9.704837051416416e-16,
+        "core_probability_after_two_steps": 0.9999999999999991
+      },
+      "0.25": {
+        "relative_phase_over_pi": 0.25,
+        "one_step_eigenstate_residual": 0.7653668647301796,
+        "two_step_minus_identity_residual": 7.381513741463618e-16,
+        "core_probability_after_two_steps": 0.9999999999999992
+      },
+      "0.375": {
+        "relative_phase_over_pi": 0.375,
+        "one_step_eigenstate_residual": 0.3901806440322566,
+        "two_step_minus_identity_residual": 9.677014095789903e-16,
+        "core_probability_after_two_steps": 0.9999999999999991
+      },
+      "0.5": {
+        "relative_phase_over_pi": 0.5,
+        "one_step_eigenstate_residual": 2.393806039268617e-16,
+        "two_step_minus_identity_residual": 8.550012192422461e-16,
+        "core_probability_after_two_steps": 0.9999999999999991
+      },
+      "0.625": {
+        "relative_phase_over_pi": 0.625,
+        "one_step_eigenstate_residual": 0.39018064403225644,
+        "two_step_minus_identity_residual": 9.872660391828489e-16,
+        "core_probability_after_two_steps": 0.9999999999999991
+      },
+      "0.75": {
+        "relative_phase_over_pi": 0.75,
+        "one_step_eigenstate_residual": 0.7653668647301795,
+        "two_step_minus_identity_residual": 7.381513741463619e-16,
+        "core_probability_after_two_steps": 0.9999999999999992
+      },
+      "0.875": {
+        "relative_phase_over_pi": 0.875,
+        "one_step_eigenstate_residual": 1.1111404660392041,
+        "two_step_minus_identity_residual": 8.692979858448333e-16,
+        "core_probability_after_two_steps": 0.9999999999999991
+      },
+      "1.0": {
+        "relative_phase_over_pi": 1.0,
+        "one_step_eigenstate_residual": 1.414213562373095,
+        "two_step_minus_identity_residual": 8.55001219242246e-16,
+        "core_probability_after_two_steps": 0.9999999999999991
+      },
+      "1.125": {
+        "relative_phase_over_pi": 1.125,
+        "one_step_eigenstate_residual": 1.1111404660392044,
+        "two_step_minus_identity_residual": 8.692979858448333e-16,
+        "core_probability_after_two_steps": 0.999999999999999
+      },
+      "1.25": {
+        "relative_phase_over_pi": 1.25,
+        "one_step_eigenstate_residual": 0.7653668647301797,
+        "two_step_minus_identity_residual": 7.376570082321526e-16,
+        "core_probability_after_two_steps": 0.9999999999999993
+      },
+      "1.3749999999999998": {
+        "relative_phase_over_pi": 1.3749999999999998,
+        "one_step_eigenstate_residual": 0.39018064403225705,
+        "two_step_minus_identity_residual": 8.692979858448333e-16,
+        "core_probability_after_two_steps": 0.9999999999999991
+      },
+      "1.5": {
+        "relative_phase_over_pi": 1.5,
+        "one_step_eigenstate_residual": 2.9546280508657296e-16,
+        "two_step_minus_identity_residual": 8.550012192422461e-16,
+        "core_probability_after_two_steps": 0.9999999999999991
+      },
+      "1.6250000000000002": {
+        "relative_phase_over_pi": 1.6250000000000002,
+        "one_step_eigenstate_residual": 0.3901806440322567,
+        "two_step_minus_identity_residual": 9.872660391828489e-16,
+        "core_probability_after_two_steps": 0.999999999999999
+      },
+      "1.75": {
+        "relative_phase_over_pi": 1.75,
+        "one_step_eigenstate_residual": 0.7653668647301792,
+        "two_step_minus_identity_residual": 7.381513741463618e-16,
+        "core_probability_after_two_steps": 0.9999999999999992
+      },
+      "1.8749999999999998": {
+        "relative_phase_over_pi": 1.8749999999999998,
+        "one_step_eigenstate_residual": 1.1111404660392037,
+        "two_step_minus_identity_residual": 8.661907320847988e-16,
+        "core_probability_after_two_steps": 0.9999999999999991
+      }
+    }
+  },
+  "amplitude_balance_scan": {
+    "0.1": {
+      "left_population": 0.1,
+      "initial_defect": 0.5656854249492381,
+      "final_defect": 1.1168869222294477,
+      "final_selected_probability": 0.08951967100711866,
+      "minimum_post_burnin_defect": 0.730220063025421
+    },
+    "0.2": {
+      "left_population": 0.2,
+      "initial_defect": 0.42426406871192857,
+      "final_defect": 1.1311878860097275,
+      "final_selected_probability": 0.07745967905584544,
+      "minimum_post_burnin_defect": 1.0583636921941921
+    },
+    "0.3": {
+      "left_population": 0.3,
+      "initial_defect": 0.28284271247461895,
+      "final_defect": 1.1479378009213546,
+      "final_selected_probability": 0.06342114098671219,
+      "minimum_post_burnin_defect": 1.074157379756933
+    },
+    "0.4": {
+      "left_population": 0.4,
+      "initial_defect": 0.14142135623730945,
+      "final_defect": 0.7055564456198218,
+      "final_selected_probability": 0.5021692065065434,
+      "minimum_post_burnin_defect": 0.6967801954891719
+    },
+    "0.45": {
+      "left_population": 0.45,
+      "initial_defect": 0.07071067811865482,
+      "final_defect": 0.7017654779009583,
+      "final_selected_probability": 0.5049054554820734,
+      "minimum_post_burnin_defect": 0.7006567404935271
+    },
+    "0.48": {
+      "left_population": 0.48,
+      "initial_defect": 0.028284271247461926,
+      "final_defect": 0.7055538860370437,
+      "final_selected_probability": 0.5021861379269077,
+      "minimum_post_burnin_defect": 0.6896677251432868
+    },
+    "0.49": {
+      "left_population": 0.49,
+      "initial_defect": 0.014142135623730925,
+      "final_defect": 0.7020356815316044,
+      "final_selected_probability": 0.5045763307413373,
+      "minimum_post_burnin_defect": 0.09752947381952756
+    },
+    "0.5": {
+      "left_population": 0.5,
+      "initial_defect": 0.0,
+      "final_defect": 1.2935319186337451e-14,
+      "final_selected_probability": 1.000000000000009,
+      "minimum_post_burnin_defect": 2.2093159237770886e-15
+    },
+    "0.51": {
+      "left_population": 0.51,
+      "initial_defect": 0.014142135623730925,
+      "final_defect": 0.7020356815316009,
+      "final_selected_probability": 0.5045763307413393,
+      "minimum_post_burnin_defect": 0.09752947381955314
+    },
+    "0.52": {
+      "left_population": 0.52,
+      "initial_defect": 0.028284271247461926,
+      "final_defect": 0.7055538860370429,
+      "final_selected_probability": 0.5021861379269087,
+      "minimum_post_burnin_defect": 0.6896677251432863
+    },
+    "0.55": {
+      "left_population": 0.55,
+      "initial_defect": 0.07071067811865482,
+      "final_defect": 0.7017654779009572,
+      "final_selected_probability": 0.504905455482075,
+      "minimum_post_burnin_defect": 0.7006567404935273
+    },
+    "0.6": {
+      "left_population": 0.6,
+      "initial_defect": 0.14142135623730945,
+      "final_defect": 0.7055564456198207,
+      "final_selected_probability": 0.502169206506545,
+      "minimum_post_burnin_defect": 0.6967801954891719
+    },
+    "0.7": {
+      "left_population": 0.7,
+      "initial_defect": 0.28284271247461895,
+      "final_defect": 1.1479378009213548,
+      "final_selected_probability": 0.06342114098671202,
+      "minimum_post_burnin_defect": 1.0741573797569328
+    },
+    "0.8": {
+      "left_population": 0.8,
+      "initial_defect": 0.42426406871192857,
+      "final_defect": 1.1311878860097277,
+      "final_selected_probability": 0.07745967905584518,
+      "minimum_post_burnin_defect": 1.0583636921941921
+    },
+    "0.9": {
+      "left_population": 0.9,
+      "initial_defect": 0.5656854249492381,
+      "final_defect": 1.116886922229448,
+      "final_selected_probability": 0.0895196710071185,
+      "minimum_post_burnin_defect": 0.7302200630254212
+    }
+  },
+  "chiral_balance_scan": {
+    "0.1": {
+      "weak_fraction": 0.1,
+      "initial_defect": 0.28284271247461906,
+      "final_defect": 1.1294557240523706,
+      "final_selected_probability": 0.07928745830840177,
+      "minimum_post_burnin_defect": 1.0535642282164406
+    },
+    "0.2": {
+      "weak_fraction": 0.2,
+      "initial_defect": 0.21213203435596426,
+      "final_defect": 1.1417823574671522,
+      "final_selected_probability": 0.06870925292573295,
+      "minimum_post_burnin_defect": 1.1027950944271072
+    },
+    "0.3": {
+      "weak_fraction": 0.3,
+      "initial_defect": 0.14142135623730948,
+      "final_defect": 1.151616792864637,
+      "final_selected_probability": 0.06038659666788016,
+      "minimum_post_burnin_defect": 1.1089838058517172
+    },
+    "0.4": {
+      "weak_fraction": 0.4,
+      "initial_defect": 0.0707106781186547,
+      "final_defect": 1.1499439697204037,
+      "final_selected_probability": 0.061739237309552934,
+      "minimum_post_burnin_defect": 0.17405629185717353
+    },
+    "0.45": {
+      "weak_fraction": 0.45,
+      "initial_defect": 0.03535533905932741,
+      "final_defect": 0.10508186729003058,
+      "final_selected_probability": 0.918399853061693,
+      "minimum_post_burnin_defect": 0.03535356403322468
+    },
+    "0.48": {
+      "weak_fraction": 0.48,
+      "initial_defect": 0.014142135623730963,
+      "final_defect": 0.014141207212730787,
+      "final_selected_probability": 0.9998502630940136,
+      "minimum_post_burnin_defect": 0.014141192964289328
+    },
+    "0.49": {
+      "weak_fraction": 0.49,
+      "initial_defect": 0.007071067811865442,
+      "final_defect": 0.007071016867902432,
+      "final_selected_probability": 0.9999917825241631,
+      "minimum_post_burnin_defect": 0.007071016867902432
+    },
+    "0.5": {
+      "weak_fraction": 0.5,
+      "initial_defect": 0.0,
+      "final_defect": 1.2935319186337451e-14,
+      "final_selected_probability": 1.000000000000009,
+      "minimum_post_burnin_defect": 2.2093159237770886e-15
+    },
+    "0.51": {
+      "weak_fraction": 0.51,
+      "initial_defect": 0.007071067811865481,
+      "final_defect": 0.007071016867901131,
+      "final_selected_probability": 0.9999917825241661,
+      "minimum_post_burnin_defect": 0.007071016867901131
+    },
+    "0.52": {
+      "weak_fraction": 0.52,
+      "initial_defect": 0.014142135623730963,
+      "final_defect": 0.014141207212729741,
+      "final_selected_probability": 0.9998502630940103,
+      "minimum_post_burnin_defect": 0.014141192964288347
+    },
+    "0.55": {
+      "weak_fraction": 0.55,
+      "initial_defect": 0.03535533905932741,
+      "final_defect": 0.10508186728982431,
+      "final_selected_probability": 0.9183998530618718,
+      "minimum_post_burnin_defect": 0.03535356403322473
+    },
+    "0.6": {
+      "weak_fraction": 0.6,
+      "initial_defect": 0.07071067811865474,
+      "final_defect": 1.1499439697204017,
+      "final_selected_probability": 0.0617392373095546,
+      "minimum_post_burnin_defect": 0.1740562918571957
+    },
+    "0.7": {
+      "weak_fraction": 0.7,
+      "initial_defect": 0.14142135623730948,
+      "final_defect": 1.1516167928646366,
+      "final_selected_probability": 0.060386596667880564,
+      "minimum_post_burnin_defect": 1.108983805851717
+    },
+    "0.8": {
+      "weak_fraction": 0.8,
+      "initial_defect": 0.21213203435596428,
+      "final_defect": 1.1417823574671517,
+      "final_selected_probability": 0.0687092529257332,
+      "minimum_post_burnin_defect": 1.1027950944271072
+    },
+    "0.9": {
+      "weak_fraction": 0.9,
+      "initial_defect": 0.28284271247461906,
+      "final_defect": 1.1294557240523702,
+      "final_selected_probability": 0.07928745830840209,
+      "minimum_post_burnin_defect": 1.0535642282164404
+    }
+  },
+  "generic_capture_protocol": {
+    "coupling": 6.283185307179586,
+    "lattice_sites": 192,
+    "steps": 80,
+    "sample_every_steps": 4,
+    "capture_condition": "manifold defect <1e-3 and selected probability >0.99 at every sample from t=60 through t=80",
+    "seed": 20260821,
+    "ensembles": {
+      "one_site_random": {
+        "trial_count": 12,
+        "capture_count": 0,
+        "smallest_post_burnin_defect": 0.6758842659804281,
+        "largest_final_selected_probability": 0.5111177233887385,
+        "trials": [
+          {
+            "trial": 0,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.0703119493807183,
+            "maximum_post_burnin_selected_probability": 0.12929032157433723,
+            "final_defect": 1.161910882709117,
+            "final_selected_probability": 0.05177497586471139
+          },
+          {
+            "trial": 1,
+            "captured": false,
+            "minimum_post_burnin_defect": 0.6758842659804281,
+            "maximum_post_burnin_selected_probability": 0.5727147825911189,
+            "final_defect": 1.0723136364684696,
+            "final_selected_probability": 0.1287533397981318
+          },
+          {
+            "trial": 2,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.072438554233583,
+            "maximum_post_burnin_selected_probability": 0.12857073445815878,
+            "final_defect": 1.1346525230895785,
+            "final_selected_probability": 0.07490859206406669
+          },
+          {
+            "trial": 3,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.0764686328824697,
+            "maximum_post_burnin_selected_probability": 0.12404427165618157,
+            "final_defect": 1.1514834152720304,
+            "final_selected_probability": 0.06056131423462002
+          },
+          {
+            "trial": 4,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.055289634099002,
+            "maximum_post_burnin_selected_probability": 0.14260222621933621,
+            "final_defect": 1.1566134420773235,
+            "final_selected_probability": 0.0562362387138149
+          },
+          {
+            "trial": 5,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.0563137726109868,
+            "maximum_post_burnin_selected_probability": 0.14140634848458167,
+            "final_defect": 1.1404492404311952,
+            "final_selected_probability": 0.07011411658076508
+          },
+          {
+            "trial": 6,
+            "captured": false,
+            "minimum_post_burnin_defect": 0.9949796912257667,
+            "maximum_post_burnin_selected_probability": 0.1991825226599114,
+            "final_defect": 1.0371243043203189,
+            "final_selected_probability": 0.16073876730510742
+          },
+          {
+            "trial": 7,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.0719325715263088,
+            "maximum_post_burnin_selected_probability": 0.12790939906901744,
+            "final_defect": 1.1654559275581846,
+            "final_selected_probability": 0.04882912189687276
+          },
+          {
+            "trial": 8,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.030636183122827,
+            "maximum_post_burnin_selected_probability": 0.1638839997247236,
+            "final_defect": 1.1357668963537586,
+            "final_selected_probability": 0.07365656047578281
+          },
+          {
+            "trial": 9,
+            "captured": false,
+            "minimum_post_burnin_defect": 0.8488892226131695,
+            "maximum_post_burnin_selected_probability": 0.3535369071614426,
+            "final_defect": 0.8488892226131695,
+            "final_selected_probability": 0.3535369071614426
+          },
+          {
+            "trial": 10,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.0891161427034917,
+            "maximum_post_burnin_selected_probability": 0.11314314092895036,
+            "final_defect": 1.1658755150572642,
+            "final_selected_probability": 0.048478185963099864
+          },
+          {
+            "trial": 11,
+            "captured": false,
+            "minimum_post_burnin_defect": 0.7002447808591991,
+            "maximum_post_burnin_selected_probability": 0.5111177233887385,
+            "final_defect": 0.7002447808591991,
+            "final_selected_probability": 0.5111177233887385
+          }
+        ]
+      },
+      "two_site_random": {
+        "trial_count": 12,
+        "capture_count": 0,
+        "smallest_post_burnin_defect": 0.6857469690497421,
+        "largest_final_selected_probability": 0.5183429944427614,
+        "trials": [
+          {
+            "trial": 0,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.0686543584965293,
+            "maximum_post_burnin_selected_probability": 0.13070850865077635,
+            "final_defect": 1.1543249420921198,
+            "final_selected_probability": 0.05807164046120119
+          },
+          {
+            "trial": 1,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.0904455619360776,
+            "maximum_post_burnin_selected_probability": 0.11282091022287792,
+            "final_defect": 1.1308457989352276,
+            "final_selected_probability": 0.07827021137352634
+          },
+          {
+            "trial": 2,
+            "captured": false,
+            "minimum_post_burnin_defect": 0.6857469690497421,
+            "maximum_post_burnin_selected_probability": 0.534073924173049,
+            "final_defect": 0.6964895220497029,
+            "final_selected_probability": 0.5183429944427614
+          },
+          {
+            "trial": 3,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.1054182080656088,
+            "maximum_post_burnin_selected_probability": 0.09945554045171545,
+            "final_defect": 1.1337239099189669,
+            "final_selected_probability": 0.07579945889961781
+          },
+          {
+            "trial": 4,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.048614033386991,
+            "maximum_post_burnin_selected_probability": 0.14927100722659403,
+            "final_defect": 1.1215866875169165,
+            "final_selected_probability": 0.0859866341737458
+          },
+          {
+            "trial": 5,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.0565676301774913,
+            "maximum_post_burnin_selected_probability": 0.14300642858446314,
+            "final_defect": 1.1028304194425114,
+            "final_selected_probability": 0.10226154540461767
+          },
+          {
+            "trial": 6,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.072207090088991,
+            "maximum_post_burnin_selected_probability": 0.12839269073588291,
+            "final_defect": 1.146831944420186,
+            "final_selected_probability": 0.06451693990241623
+          },
+          {
+            "trial": 7,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.0810052854374084,
+            "maximum_post_burnin_selected_probability": 0.12063099241665011,
+            "final_defect": 1.1075376845998155,
+            "final_selected_probability": 0.09836013783327598
+          },
+          {
+            "trial": 8,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.112680628371614,
+            "maximum_post_burnin_selected_probability": 0.09289033618174533,
+            "final_defect": 1.1634390284694327,
+            "final_selected_probability": 0.05049775232655167
+          },
+          {
+            "trial": 9,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.095946110492985,
+            "maximum_post_burnin_selected_probability": 0.10721784496001849,
+            "final_defect": 1.154292878051678,
+            "final_selected_probability": 0.058218521830419846
+          },
+          {
+            "trial": 10,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.1282683002670257,
+            "maximum_post_burnin_selected_probability": 0.0798603128520724,
+            "final_defect": 1.1433887492787858,
+            "final_selected_probability": 0.0676314456562472
+          },
+          {
+            "trial": 11,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.11940855713617,
+            "maximum_post_burnin_selected_probability": 0.0875087119533564,
+            "final_defect": 1.1599754029635894,
+            "final_selected_probability": 0.05356510501968427
+          }
+        ]
+      },
+      "gaussian_random_internal": {
+        "trial_count": 12,
+        "capture_count": 0,
+        "smallest_post_burnin_defect": 1.0736759154300846,
+        "largest_final_selected_probability": 0.1279621777190257,
+        "trials": [
+          {
+            "trial": 0,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.1384295923997938,
+            "maximum_post_burnin_selected_probability": 0.07129372736943784,
+            "final_defect": 1.1774561337449547,
+            "final_selected_probability": 0.03886838197992103
+          },
+          {
+            "trial": 1,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.1324924355381565,
+            "maximum_post_burnin_selected_probability": 0.07643385615940715,
+            "final_defect": 1.155022249257324,
+            "final_selected_probability": 0.0575743363231058
+          },
+          {
+            "trial": 2,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.10823625796395,
+            "maximum_post_burnin_selected_probability": 0.09690095388835322,
+            "final_defect": 1.1556310255582332,
+            "final_selected_probability": 0.05707026346548351
+          },
+          {
+            "trial": 3,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.1443952167346756,
+            "maximum_post_burnin_selected_probability": 0.06644747173321561,
+            "final_defect": 1.1608692577339645,
+            "final_selected_probability": 0.05275877472368059
+          },
+          {
+            "trial": 4,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.1157044543508128,
+            "maximum_post_burnin_selected_probability": 0.09060671059553686,
+            "final_defect": 1.1540052308073059,
+            "final_selected_probability": 0.05843041778401878
+          },
+          {
+            "trial": 5,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.162919493243649,
+            "maximum_post_burnin_selected_probability": 0.051004650205929584,
+            "final_defect": 1.1936033635175276,
+            "final_selected_probability": 0.025552516006683262
+          },
+          {
+            "trial": 6,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.122206829357404,
+            "maximum_post_burnin_selected_probability": 0.08538507853485684,
+            "final_defect": 1.1425805845914774,
+            "final_selected_probability": 0.06827150925788165
+          },
+          {
+            "trial": 7,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.0736759154300846,
+            "maximum_post_burnin_selected_probability": 0.1279621777190257,
+            "final_defect": 1.0736759154300846,
+            "final_selected_probability": 0.1279621777190257
+          },
+          {
+            "trial": 8,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.1243290455320132,
+            "maximum_post_burnin_selected_probability": 0.0832523257853465,
+            "final_defect": 1.162391565478595,
+            "final_selected_probability": 0.051534635731523774
+          },
+          {
+            "trial": 9,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.1439436869411659,
+            "maximum_post_burnin_selected_probability": 0.06671559714552705,
+            "final_defect": 1.1636908108091533,
+            "final_selected_probability": 0.0502971927192666
+          },
+          {
+            "trial": 10,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.1470548484813148,
+            "maximum_post_burnin_selected_probability": 0.06431399872913858,
+            "final_defect": 1.1550633404649504,
+            "final_selected_probability": 0.05769623001603883
+          },
+          {
+            "trial": 11,
+            "captured": false,
+            "minimum_post_burnin_defect": 1.1178796470779355,
+            "maximum_post_burnin_selected_probability": 0.0885822641563829,
+            "final_defect": 1.176761570399268,
+            "final_selected_probability": 0.03945461782406577
+          }
+        ]
+      }
+    },
+    "total_trials": 36,
+    "total_captures": 0
+  },
+  "interpretation": {
+    "exact_compacton_family_exists": true,
+    "one_step_phase_plus_or_minus_i_unique_within_fixed_vector_pair": true,
+    "localized_endpoint_unique": false,
+    "amplitude_balance_dynamically_restored": false,
+    "chiral_balance_dynamically_restored": false,
+    "generic_localized_state_capture_observed": false,
+    "open_capture_basin_certified": false,
+    "previous_local_stability_reinterpreted_as_stability_of_a_nonisolated_lattice_manifold": true
+  },
+  "verdict": {
+    "R2_endogenous_trigger": false,
+    "R3_rate": false,
+    "R4_unique_stable_endpoint": false,
+    "status": "the kappa=2*pi rule contains a continuous exact two-site invariant manifold with F^2=-1, while the plus/minus i eigenstates are only special phase points; amplitude and chiral balance are not dynamically selected, and none of 36 prospective generic localized trials is captured, so the unchanged compacton branch does not provide a matter-birth mechanism"
+  },
+  "next_gate": "version6_spectral_transition_discrete_compacton_branch_status_freeze_gate"
+}

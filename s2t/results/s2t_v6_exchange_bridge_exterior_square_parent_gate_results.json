@@ -1,0 +1,67 @@
+{
+  "gate": "version6_exchange_bridge_exterior_square_parent_gate",
+  "ordinary_two_node_superconnection": {
+    "trace_phi_four": "2 Tr((B^T B)^2)",
+    "contains_trace_squared": false,
+    "contains_exterior_invariant": false
+  },
+  "minimal_exterior_chain": {
+    "nodes": [
+      "R",
+      "R3 tensor R3",
+      "Lambda2(R3) tensor Lambda2(R3)"
+    ],
+    "dimensions": [
+      1,
+      9,
+      9
+    ],
+    "polarized_two_step_path": "Lambda2(B)",
+    "path_norm": "e2(B^T B)",
+    "relative_endpoint_action": "2 e2(B^T B)",
+    "normalized_exterior_coefficient": 2.0,
+    "equivalent_purity_coefficient": 1.0,
+    "new_carrier_required": true
+  },
+  "full_self_consistent_phase_test": {
+    "free_energy": "min_T S_sc(T,R)+Tr(R log R)+m e2(R)",
+    "transition_exterior_coefficient": 3.02614542689993,
+    "transition_equivalent_purity_coefficient": 1.513072713449965,
+    "coexistence_axis_weight": 0.8804840693440499,
+    "canonical_chain_passes_transition": false,
+    "raw_direct_crossed_passes_transition": true,
+    "raw_ordered_state_spectrum": [
+      0.9668900191305043,
+      0.01655499043474784,
+      0.01655499043474784
+    ],
+    "raw_optimal_total_singular_weight": 1.0348397999586576,
+    "raw_bridge_action_at_minimum": 0.009138729990294239,
+    "raw_ordered_free_energy": -0.030052125334722096,
+    "raw_isotropic_free_energy": 0.23472104466522348
+  },
+  "normalization_audit": {
+    "normalized_exterior_basis": "||Lambda2 B||^2=e2",
+    "self_adjoint_endpoint_pair": "2 e2",
+    "raw_direct_minus_crossed_tensor": "4 e2",
+    "extra_factor_needed_over_minimal_chain": 2.0,
+    "available_from_KO6_doubling_after_half_trace": false,
+    "available_from_one_irreducible_copy": false
+  },
+  "maximum_residuals": {
+    "polarization_residual": 1.8544380573903915e-15,
+    "compound_norm_residual": 2.842170943040401e-14,
+    "relative_action_residual": 7.105427357601002e-14,
+    "raw_tensor_residual": 7.105427357601002e-14,
+    "two_node_trace_four_residual": 1.1368683772161603e-13,
+    "self_adjoint_residual": 0.0
+  },
+  "verdict": {
+    "current_two_node_parent_derives_exterior_square": false,
+    "canonical_functorial_exterior_extension_exists": true,
+    "canonical_extension_is_dynamically_sufficient": false,
+    "raw_tensor_channel_is_dynamically_sufficient": true,
+    "raw_tensor_channel_is_already_parent_derived": false,
+    "next_gate": "version6_tensor_square_relative_carrier_normalization_gate"
+  }
+}

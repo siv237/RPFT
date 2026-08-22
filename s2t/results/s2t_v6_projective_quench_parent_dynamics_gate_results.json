@@ -1,0 +1,56 @@
+{
+  "gate": "version6_projective_quench_parent_dynamics_gate",
+  "recognized_internal_time_frameworks": {
+    "page_wootters_relational_clock": "recognized_but_project_constraint_missing",
+    "connes_rovelli_thermal_time": "recognized_and_partially_realized",
+    "rovelli_partial_observables": "recognized_relational_language"
+  },
+  "existing_project_modular_state": {
+    "algebra": "M18(C)",
+    "beta": 0.73,
+    "state_is_faithful": true,
+    "state_is_tracial": false,
+    "modular_generator": "beta*ad(h_F)",
+    "generator_frequency_residual": 0.0,
+    "chain_edge_motion_norm": 0.4416299640728666,
+    "chain_orientation_generated": true
+  },
+  "projective_orientation_test": {
+    "vertex_block_rank": 3,
+    "number_of_random_RP2_projectors": 12,
+    "maximum_modular_motion_residual": 1.3609013466915069e-16,
+    "h_F_is_scalar_on_each_triplet": true,
+    "existing_modular_flow_rotates_RP2_orientation": false
+  },
+  "self_quench_test": {
+    "state_invariance_residual": 1.1198965540532189e-17,
+    "defining_state_is_fixed_by_own_modular_flow": true,
+    "von_neumann_entropy_before": 2.7337078634408303,
+    "von_neumann_entropy_after": 2.7337078634408303,
+    "entropy_change": 0.0,
+    "modular_flow_is_reversible": true,
+    "relaxation_or_arrow_generated": false,
+    "self_generated_quench": false
+  },
+  "tracial_limit": {
+    "beta_zero_state": "I/18",
+    "commutator_residual": 0.0,
+    "modular_flow": "trivial"
+  },
+  "page_wootters_project_candidate": {
+    "existing_order_four_loop_dimension": 4,
+    "unitary_clock_like_shift_exists": true,
+    "clock_system_tensor_factor_fixed": false,
+    "global_stationary_constraint_H_clock_plus_H_system": false,
+    "clock_system_entanglement_derived": false,
+    "status": "open_not_yet_a_relational_clock"
+  },
+  "verdict": {
+    "internal_time_idea": "mathematically_recognized_and_project_relevant",
+    "existing_modular_time": "orients_chain_but_not_projective_quench",
+    "external_time_in_previous_quench_gate": "provisional_only",
+    "matter_and_time_coemergence": "open_hypothesis_not_proved",
+    "matter_birth_proved": false,
+    "next_gate": "version6_relational_clock_projective_quench_gate"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "gate": "version6_internal_entropy_transfer_cooling_gate",
+  "ordering_budget": {
+    "isotropic_system_entropy": 1.0986122886681098,
+    "coexistence_ordered_entropy": 0.3583777189051197,
+    "entropy_export_required": 0.7402345697629901,
+    "isotropic_effective_energy": 0.6666666666666665,
+    "coexistence_ordered_effective_energy": 0.18682665546751454,
+    "effective_energy_released": 0.479840011199152,
+    "coexistence_identity_beta_delta_energy_equals_delta_entropy": 0.7402345697629897
+  },
+  "four_state_carrier": {
+    "dimension": 4,
+    "maximum_entropy_capacity_from_pure_state": 1.3862943611198906,
+    "fraction_of_capacity_used_by_ordering": 0.5339663714458206,
+    "minimum_pure_sink_dimension_from_entropy_bound": 3,
+    "entropy_capacity_sufficient": true
+  },
+  "explicit_closed_unitary_kinematics": {
+    "initial_global_spectrum": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "target_global_spectrum": [
+      -7.473584590946723e-17,
+      -6.1133810651919785e-18,
+      -1.3185969844036302e-18,
+      0.0,
+      1.6851887013388277e-34,
+      3.914968161203007e-19,
+      3.8152429780394514e-18,
+      1.3877787807814457e-17,
+      2.505230636616965e-17,
+      0.33333333333333326,
+      0.33333333333333326,
+      0.3333333333333333
+    ],
+    "same_global_spectrum_implies_unitary_orbit": true,
+    "target_system_spectrum": [
+      0.04391670186293192,
+      0.04391670186293195,
+      0.9121665962741361
+    ],
+    "target_clock_spectrum": [
+      0.0,
+      0.33333333333333337,
+      0.33333333333333337,
+      0.33333333333333337
+    ],
+    "target_global_entropy": 1.0986122886681098,
+    "target_system_entropy": 0.35837771890511966,
+    "target_clock_entropy": 1.0986122886681096,
+    "target_mutual_information": 0.3583777189051194
+  },
+  "clock_backreaction": {
+    "clock_initially_pure": true,
+    "clock_final_entropy": 1.0986122886681096,
+    "clock_final_rank": 3,
+    "phase_clock_preserved_by_constructed_transfer": false,
+    "finite_clock_recurrence_avoided": false
+  },
+  "missing_parent_data": {
+    "clock_hamiltonian_from_U4_alone": false,
+    "energy_conserving_system_clock_coupling": false,
+    "autonomous_control_hamiltonian": false,
+    "monotone_reduced_beta_law": false,
+    "thermodynamic_or_coarse_grained_limit": false
+  },
+  "maximum_residuals": {
+    "target_vector_orthonormality": 8.966561194152984e-19,
+    "global_spectrum_preservation": 1.1234969964063086e-16,
+    "target_system_state": 9.133370702131751e-17,
+    "entropy_free_energy_coexistence": 3.3306690738754696e-16,
+    "entropy_balance": 1.1102230246251565e-16
+  },
+  "verdict": {
+    "four_state_carrier_can_absorb_ordering_entropy_kinematically": true,
+    "closed_unitary_orbit_to_ordered_reduced_state_exists": true,
+    "four_tick_shift_itself_derives_cooling": false,
+    "autonomous_energy_conserving_cooling_derived": false,
+    "irreversible_internal_arrow_derived": false,
+    "matter_birth_fully_derived": false,
+    "next_gate": "version6_clock_controlled_energy_conserving_quench_gate"
+  }
+}

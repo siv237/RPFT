@@ -1,0 +1,280 @@
+{
+  "gate": "version6_bosonic_defect_full_gauge_completion_reopening_gate",
+  "retrospective_project_ledger": {
+    "current_exact_problem": {
+      "symbols": [
+        {
+          "wave_number": 0.0,
+          "eigenvalues": [
+            2.275957200481571e-07,
+            2.275957200481571e-07,
+            4.50815604291499,
+            17.88455649687215,
+            17.884556499647708
+          ],
+          "rank_tolerance_1e-6": 3,
+          "tangent_basis_indices": [
+            2,
+            3
+          ],
+          "tangent_symbol_residuals": [
+            2.275957200481571e-07,
+            2.275957200481571e-07
+          ],
+          "normal_symbol_minimum": 4.50815604291499
+        },
+        {
+          "wave_number": 0.5,
+          "eigenvalues": [
+            2.275957200481571e-07,
+            2.275957200481571e-07,
+            5.00815604291499,
+            18.38455649687215,
+            18.384556499647708
+          ],
+          "rank_tolerance_1e-6": 3,
+          "tangent_basis_indices": [
+            2,
+            3
+          ],
+          "tangent_symbol_residuals": [
+            2.275957200481571e-07,
+            2.275957200481571e-07
+          ],
+          "normal_symbol_minimum": 5.00815604291499
+        },
+        {
+          "wave_number": 1.0,
+          "eigenvalues": [
+            2.275957200481571e-07,
+            2.275957200481571e-07,
+            6.50815604291499,
+            19.88455649687215,
+            19.884556499647708
+          ],
+          "rank_tolerance_1e-6": 3,
+          "tangent_basis_indices": [
+            2,
+            3
+          ],
+          "tangent_symbol_residuals": [
+            2.275957200481571e-07,
+            2.275957200481571e-07
+          ],
+          "normal_symbol_minimum": 6.50815604291499
+        },
+        {
+          "wave_number": 3.0,
+          "eigenvalues": [
+            2.275957200481571e-07,
+            2.275957200481571e-07,
+            22.508156042914994,
+            35.88455649687215,
+            35.8845564996477
+          ],
+          "rank_tolerance_1e-6": 3,
+          "tangent_basis_indices": [
+            2,
+            3
+          ],
+          "tangent_symbol_residuals": [
+            2.275957200481571e-07,
+            2.275957200481571e-07
+          ],
+          "normal_symbol_minimum": 22.508156042914994
+        }
+      ],
+      "field_component_count": 5,
+      "symbol_rank_for_nonzero_wave_number": 3,
+      "exact_tangent_kernel_dimension": 2,
+      "director_principal_symbol_is_zero_for_every_wave_number": true,
+      "full_static_hessian_is_elliptic": false
+    },
+    "reusable_positive_results": [
+      "the project already contains a real SO(3) triplet connection with an exact-one tubular kernel",
+      "the Q field is the five-dimensional symmetric-traceless representation of the same SO(3)",
+      "M300 Hodge Hessian already identified SO(3)-orbit zeros, although their gauge removal was then only conditional",
+      "the composite projector connection supplies the broken coset components but misses the stabilizer component"
+    ],
+    "still_binding_no_go_results": [
+      "M35 and M300 cannot be promoted wholesale to coordinate gauge algebras",
+      "the trace does not by itself select or normalize a spatial connection",
+      "the 20x15 odd carrier does not provide the missing spinor Callias core operator",
+      "ordinary Standard-Model one-forms remain blind to the family operator"
+    ],
+    "bosonic_completion_is_logically_distinct_from_spinor_carrier_completion": true
+  },
+  "vacuum_orbit_map": {
+    "matrix_from_so3_to_symmetric_traceless_components": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.8682499004685157
+      ],
+      [
+        0.0,
+        -0.8682499004685157,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "singular_values": [
+      0.8682499004685157,
+      0.8682499004685157,
+      0.0
+    ],
+    "rank": 2,
+    "kernel_dimension": 1,
+    "kernel_is_O2_stabilizer_generator": true,
+    "image_equals_two_dimensional_director_kernel": true,
+    "broken_gauge_mass_squared": [
+      0.0,
+      0.7538578896635874,
+      0.7538578896635874
+    ]
+  },
+  "linearized_gauge_covariance": {
+    "wave_vector": [
+      0.71,
+      -0.33,
+      0.24
+    ],
+    "gauge_parameter": [
+      0.29,
+      -0.41,
+      0.37
+    ],
+    "covariant_derivative_residuals": [
+      0.0,
+      1.3877787807814457e-17,
+      1.3877787807814457e-17
+    ],
+    "maximum_residual": 1.3877787807814457e-17
+  },
+  "gauge_fixed_symbol": {
+    "symbols": [
+      {
+        "wave_number": 0.25,
+        "field_dimension_before_quotient": 14,
+        "eigenvalues": [
+          0.0625,
+          0.0625,
+          0.0625,
+          0.8163578896635874,
+          0.8163578896635874,
+          0.8163578896635874,
+          0.8163578896635874,
+          0.8163578896635874,
+          0.8163578896635874,
+          0.8163581172593074,
+          0.8163581172593074,
+          4.57065604291499,
+          17.94705649687215,
+          17.947056499647708
+        ],
+        "minimum_eigenvalue": 0.0625,
+        "rank_tolerance_1e-8": 14
+      },
+      {
+        "wave_number": 0.5,
+        "field_dimension_before_quotient": 14,
+        "eigenvalues": [
+          0.25,
+          0.25,
+          0.25,
+          1.0038578896635872,
+          1.0038578896635872,
+          1.0038578896635872,
+          1.0038578896635872,
+          1.0038578896635872,
+          1.0038578896635872,
+          1.0038581172593075,
+          1.0038581172593075,
+          4.75815604291499,
+          18.13455649687215,
+          18.134556499647708
+        ],
+        "minimum_eigenvalue": 0.25,
+        "rank_tolerance_1e-8": 14
+      },
+      {
+        "wave_number": 1.0,
+        "field_dimension_before_quotient": 14,
+        "eigenvalues": [
+          1.0,
+          1.0,
+          1.0,
+          1.7538578896635872,
+          1.7538578896635872,
+          1.7538578896635872,
+          1.7538578896635872,
+          1.7538578896635872,
+          1.7538578896635872,
+          1.7538581172593075,
+          1.7538581172593075,
+          5.50815604291499,
+          18.88455649687215,
+          18.884556499647708
+        ],
+        "minimum_eigenvalue": 1.0,
+        "rank_tolerance_1e-8": 14
+      },
+      {
+        "wave_number": 3.0,
+        "field_dimension_before_quotient": 14,
+        "eigenvalues": [
+          9.0,
+          9.0,
+          9.0,
+          9.753857889663587,
+          9.753857889663587,
+          9.753857889663587,
+          9.753857889663587,
+          9.753857889663587,
+          9.753857889663587,
+          9.753858117259307,
+          9.753858117259307,
+          13.50815604291499,
+          26.88455649687215,
+          26.884556499647708
+        ],
+        "minimum_eigenvalue": 9.0,
+        "rank_tolerance_1e-8": 14
+      }
+    ],
+    "all_nonzero_wave_numbers_have_full_rank": true,
+    "minimum_checked_eigenvalue": 0.0625,
+    "director_kernel_removed_after_gauge_fixing": true,
+    "unbroken_stabilizer_connection_has_Maxwell_symbol": true
+  },
+  "physical_interpretation": {
+    "two_director_modes": "gauge orbit directions paired with the two broken SO(3)/O(2) connection components",
+    "stabilizer_component": "one unbroken O(2) connection component, absent from A_Q and required for a full connection",
+    "exact_one_dimensional_flat_families": "pure-gauge configurations once the independent connection is included",
+    "new_spinor_doublet_required_for_bosonic_ellipticity": false,
+    "new_local_gauge_connection_required": true
+  },
+  "verdict": {
+    "kinematic_full_gauge_completion_passes": true,
+    "gauge_fixed_vacuum_symbol_is_elliptic_in_checked_window": true,
+    "parent_derivation_of_connection_and_its_scale": false,
+    "fermionic_Callias_carrier_derived": false,
+    "matter_birth_closed": false,
+    "status": "kinematic_reopening_pass_parent_origin_open",
+    "next_gate": "version6_bosonic_defect_family_connection_parent_identification_gate"
+  }
+}

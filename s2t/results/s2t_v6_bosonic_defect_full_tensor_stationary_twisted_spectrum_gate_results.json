@@ -1,0 +1,1792 @@
+{
+  "gate": "version6_bosonic_defect_full_tensor_stationary_twisted_spectrum_gate",
+  "operator": {
+    "stationary_four_profile_background": true,
+    "characters": [
+      -1,
+      0,
+      1
+    ],
+    "integer_labels": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "complex_fields_per_block": 6,
+    "background_gauge_fixing_included": true,
+    "nonabelian_curvature_cross_term_included": true,
+    "twisted_core_regularity_included": true
+  },
+  "convergence": {
+    "70": {
+      "-1": {
+        "-3": {
+          "eigenvalues": [
+            0.01465098164016504,
+            0.032550672068344104,
+            0.08218416615881333,
+            0.13187588524992255
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            -3,
+            -3,
+            -2,
+            -2
+          ],
+          "common_corotating_exponent": -2.6666666666666665,
+          "hermiticity_residual": 2.126737794013595e-14
+        },
+        "-2": {
+          "eigenvalues": [
+            0.015201968832023368,
+            0.03254958440228283,
+            0.08362160866667463,
+            0.13206245999571672
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            -2,
+            -2,
+            -1,
+            -1
+          ],
+          "common_corotating_exponent": -1.6666666666666667,
+          "hermiticity_residual": 2.125812230648491e-14
+        },
+        "-1": {
+          "eigenvalues": [
+            0.010662474847144953,
+            0.03243195447947157,
+            0.07792899686737292,
+            0.13173712978567273
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "common_corotating_exponent": -0.6666666666666667,
+          "hermiticity_residual": 2.1262722522144965e-14
+        },
+        "0": {
+          "eigenvalues": [
+            0.011152291415355045,
+            0.03205415916918111,
+            0.07811888938532971,
+            0.1302735281542816
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "common_corotating_exponent": 0.3333333333333333,
+          "hermiticity_residual": 2.1281522659226985e-14
+        },
+        "1": {
+          "eigenvalues": [
+            -0.017854806495312073,
+            0.03178046258172732,
+            0.05840410085347294,
+            0.12911890006367874
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "common_corotating_exponent": 1.3333333333333333,
+          "hermiticity_residual": 2.127773803597163e-14
+        },
+        "2": {
+          "eigenvalues": [
+            -0.006966575765833011,
+            0.03196767925783175,
+            0.06292608438804691,
+            0.12966954841741982
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            2,
+            2,
+            3,
+            3
+          ],
+          "common_corotating_exponent": 2.3333333333333335,
+          "hermiticity_residual": 2.1296521317546065e-14
+        },
+        "3": {
+          "eigenvalues": [
+            0.003313740182585837,
+            0.0321794764943613,
+            0.06922654191159688,
+            0.13026777683265872
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            3,
+            3,
+            4,
+            4
+          ],
+          "common_corotating_exponent": 3.3333333333333335,
+          "hermiticity_residual": 2.1291541390240885e-14
+        }
+      },
+      "0": {
+        "-3": {
+          "eigenvalues": [
+            0.009725566677561772,
+            0.031868702850561356,
+            0.07549011947963309,
+            0.12902632614231604
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -4,
+            -3,
+            -3,
+            -2
+          ],
+          "common_corotating_exponent": -3.0,
+          "hermiticity_residual": 1.2600767377756948e-14
+        },
+        "-2": {
+          "eigenvalues": [
+            0.01007453383985447,
+            0.031562184070709556,
+            0.07688106443471056,
+            0.12810029063206207
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -3,
+            -2,
+            -2,
+            -1
+          ],
+          "common_corotating_exponent": -2.0,
+          "hermiticity_residual": 1.2664100867469028e-14
+        },
+        "-1": {
+          "eigenvalues": [
+            0.00996186564067563,
+            0.010559912838554456,
+            0.07574880437706885,
+            0.07828786317186388
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -2,
+            -1,
+            -1,
+            0
+          ],
+          "common_corotating_exponent": -1.0,
+          "hermiticity_residual": 1.261760497539383e-14
+        },
+        "0": {
+          "eigenvalues": [
+            0.011054506584307825,
+            0.03123025530505424,
+            0.07971458527477514,
+            0.1271433197584619
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -1,
+            0,
+            0,
+            1
+          ],
+          "common_corotating_exponent": 0.0,
+          "hermiticity_residual": 1.2599625860809467e-14
+        },
+        "1": {
+          "eigenvalues": [
+            0.009961865640788442,
+            0.010559912838434948,
+            0.07574880437709648,
+            0.0782878631718999
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "common_corotating_exponent": 1.0,
+          "hermiticity_residual": 1.2617692568809882e-14
+        },
+        "2": {
+          "eigenvalues": [
+            0.01007453384006125,
+            0.03156218407068932,
+            0.07688106443507087,
+            0.12810029063208622
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            1,
+            2,
+            2,
+            3
+          ],
+          "common_corotating_exponent": 2.0,
+          "hermiticity_residual": 1.2664371485138984e-14
+        },
+        "3": {
+          "eigenvalues": [
+            0.009725566678098414,
+            0.0318687028507454,
+            0.07549011947933372,
+            0.12902632614168408
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            2,
+            3,
+            3,
+            4
+          ],
+          "common_corotating_exponent": 3.0,
+          "hermiticity_residual": 1.2599516878581824e-14
+        }
+      },
+      "1": {
+        "-3": {
+          "eigenvalues": [
+            0.003313740182578432,
+            0.032179476494597896,
+            0.06922654191156159,
+            0.13026777683514476
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -4,
+            -4,
+            -3,
+            -3
+          ],
+          "common_corotating_exponent": -3.3333333333333335,
+          "hermiticity_residual": 2.110803269367287e-14
+        },
+        "-2": {
+          "eigenvalues": [
+            -0.006966575765538986,
+            0.03196767925790383,
+            0.0629260843883851,
+            0.1296695484168232
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -3,
+            -3,
+            -2,
+            -2
+          ],
+          "common_corotating_exponent": -2.3333333333333335,
+          "hermiticity_residual": 2.1105340857273934e-14
+        },
+        "-1": {
+          "eigenvalues": [
+            -0.017854806495170062,
+            0.0317804625817252,
+            0.0584041008535252,
+            0.12911890006346033
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -2,
+            -2,
+            -1,
+            -1
+          ],
+          "common_corotating_exponent": -1.3333333333333333,
+          "hermiticity_residual": 2.1093171431619008e-14
+        },
+        "0": {
+          "eigenvalues": [
+            0.011152291415509068,
+            0.03205415916937183,
+            0.0781188893853314,
+            0.13027352815342083
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "common_corotating_exponent": -0.3333333333333333,
+          "hermiticity_residual": 2.1103700478848805e-14
+        },
+        "1": {
+          "eigenvalues": [
+            0.010662474847317596,
+            0.032431954479604085,
+            0.07792899686707083,
+            0.13173712978518415
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "common_corotating_exponent": 0.6666666666666667,
+          "hermiticity_residual": 2.1073586065330848e-14
+        },
+        "2": {
+          "eigenvalues": [
+            0.015201968831412293,
+            0.032549584402009016,
+            0.08362160866595512,
+            0.13206245999319793
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "common_corotating_exponent": 1.6666666666666667,
+          "hermiticity_residual": 2.113792916117582e-14
+        },
+        "3": {
+          "eigenvalues": [
+            0.014650981639816997,
+            0.03255067206842383,
+            0.08218416615890313,
+            0.131875885249318
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            2,
+            2,
+            3,
+            3
+          ],
+          "common_corotating_exponent": 2.6666666666666665,
+          "hermiticity_residual": 2.106551850930635e-14
+        }
+      }
+    },
+    "100": {
+      "-1": {
+        "-3": {
+          "eigenvalues": [
+            0.012619257781956631,
+            0.028562612034440542,
+            0.07124482311087071,
+            0.1150706375026429
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            -3,
+            -3,
+            -2,
+            -2
+          ],
+          "common_corotating_exponent": -2.6666666666666665,
+          "hermiticity_residual": 2.1991406380586233e-14
+        },
+        "-2": {
+          "eigenvalues": [
+            0.013119281533930948,
+            0.028569480039067542,
+            0.072309943350862,
+            0.1151852608925595
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            -2,
+            -2,
+            -1,
+            -1
+          ],
+          "common_corotating_exponent": -1.6666666666666667,
+          "hermiticity_residual": 2.2042806648971715e-14
+        },
+        "-1": {
+          "eigenvalues": [
+            0.008534404202092883,
+            0.028484426484666127,
+            0.0666382726861386,
+            0.11490379104252779
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "common_corotating_exponent": -0.6666666666666667,
+          "hermiticity_residual": 2.2076739655612083e-14
+        },
+        "0": {
+          "eigenvalues": [
+            0.009153273246022593,
+            0.028198092906969216,
+            0.06695270474093534,
+            0.11378384781647723
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "common_corotating_exponent": 0.3333333333333333,
+          "hermiticity_residual": 2.2058568971112553e-14
+        },
+        "1": {
+          "eigenvalues": [
+            -0.020945197133595442,
+            0.027938415848940516,
+            0.049195622199693236,
+            0.11272273681532465
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "common_corotating_exponent": 1.3333333333333333,
+          "hermiticity_residual": 2.2086356554043144e-14
+        },
+        "2": {
+          "eigenvalues": [
+            -0.009153284623878277,
+            0.02809319516255894,
+            0.05339036316349933,
+            0.11326123523713232
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            2,
+            2,
+            3,
+            3
+          ],
+          "common_corotating_exponent": 2.3333333333333335,
+          "hermiticity_residual": 2.1988574483241077e-14
+        },
+        "3": {
+          "eigenvalues": [
+            0.001558213517244058,
+            0.028233291155079013,
+            0.05948118924335541,
+            0.11371374234305
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            3,
+            3,
+            4,
+            4
+          ],
+          "common_corotating_exponent": 3.3333333333333335,
+          "hermiticity_residual": 2.2030958335214877e-14
+        }
+      },
+      "0": {
+        "-3": {
+          "eigenvalues": [
+            0.007909695728556652,
+            0.028256379130344567,
+            0.0657584258104332,
+            0.11383425873835096
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -4,
+            -3,
+            -3,
+            -2
+          ],
+          "common_corotating_exponent": -3.0,
+          "hermiticity_residual": 1.5032074777530385e-14
+        },
+        "-2": {
+          "eigenvalues": [
+            0.008108066327379924,
+            0.027995043249044775,
+            0.06667216876189566,
+            0.11295789497090138
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -3,
+            -2,
+            -2,
+            -1
+          ],
+          "common_corotating_exponent": -2.0,
+          "hermiticity_residual": 1.466688834331083e-14
+        },
+        "-1": {
+          "eigenvalues": [
+            0.00802056964449696,
+            0.008361710907260867,
+            0.06557189864743469,
+            0.067652031844577
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -2,
+            -1,
+            -1,
+            0
+          ],
+          "common_corotating_exponent": -1.0,
+          "hermiticity_residual": 1.469059194923642e-14
+        },
+        "0": {
+          "eigenvalues": [
+            0.008651955543352874,
+            0.02772345291038197,
+            0.06851977413183001,
+            0.11208510307157178
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -1,
+            0,
+            0,
+            1
+          ],
+          "common_corotating_exponent": 0.0,
+          "hermiticity_residual": 1.4635748953130984e-14
+        },
+        "1": {
+          "eigenvalues": [
+            0.008020569645036854,
+            0.008361710906465267,
+            0.06557189864698151,
+            0.06765203184361858
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "common_corotating_exponent": 1.0,
+          "hermiticity_residual": 1.4690587314758067e-14
+        },
+        "2": {
+          "eigenvalues": [
+            0.008108066326648278,
+            0.02799504324950144,
+            0.06667216876270252,
+            0.11295789496532338
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            1,
+            2,
+            2,
+            3
+          ],
+          "common_corotating_exponent": 2.0,
+          "hermiticity_residual": 1.466656398249369e-14
+        },
+        "3": {
+          "eigenvalues": [
+            0.007909695727759939,
+            0.0282563791296056,
+            0.0657584258099256,
+            0.11383425873855116
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            2,
+            3,
+            3,
+            4
+          ],
+          "common_corotating_exponent": 3.0,
+          "hermiticity_residual": 1.503105296893807e-14
+        }
+      },
+      "1": {
+        "-3": {
+          "eigenvalues": [
+            0.0015582135175916975,
+            0.028233291153933207,
+            0.059481189243928374,
+            0.1137137423437158
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -4,
+            -4,
+            -3,
+            -3
+          ],
+          "common_corotating_exponent": -3.3333333333333335,
+          "hermiticity_residual": 2.0141876191488367e-14
+        },
+        "-2": {
+          "eigenvalues": [
+            -0.00915328462327316,
+            0.028093195161405123,
+            0.053390363162903916,
+            0.11326123523468135
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -3,
+            -3,
+            -2,
+            -2
+          ],
+          "common_corotating_exponent": -2.3333333333333335,
+          "hermiticity_residual": 2.01265578859465e-14
+        },
+        "-1": {
+          "eigenvalues": [
+            -0.020945197133498322,
+            0.027938415848812972,
+            0.04919562220037998,
+            0.11272273681517464
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -2,
+            -2,
+            -1,
+            -1
+          ],
+          "common_corotating_exponent": -1.3333333333333333,
+          "hermiticity_residual": 2.0272692113765155e-14
+        },
+        "0": {
+          "eigenvalues": [
+            0.009153273246131403,
+            0.028198092906630487,
+            0.06695270474127203,
+            0.11378384781840213
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "common_corotating_exponent": -0.3333333333333333,
+          "hermiticity_residual": 2.0251476480208895e-14
+        },
+        "1": {
+          "eigenvalues": [
+            0.0085344042031712,
+            0.02848442648516395,
+            0.06663827268796939,
+            0.11490379104245128
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "common_corotating_exponent": 0.6666666666666667,
+          "hermiticity_residual": 2.0154805471574717e-14
+        },
+        "2": {
+          "eigenvalues": [
+            0.013119281534496971,
+            0.028569480040494893,
+            0.07230994335442129,
+            0.11518526088850885
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "common_corotating_exponent": 1.6666666666666667,
+          "hermiticity_residual": 2.009776816179906e-14
+        },
+        "3": {
+          "eigenvalues": [
+            0.012619257781988701,
+            0.028562612035347094,
+            0.07124482311244909,
+            0.11507063750323776
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            2,
+            2,
+            3,
+            3
+          ],
+          "common_corotating_exponent": 2.6666666666666665,
+          "hermiticity_residual": 2.0168890223901096e-14
+        }
+      }
+    },
+    "140": {
+      "-1": {
+        "-3": {
+          "eigenvalues": [
+            0.011723354466781995,
+            0.02674037037323793,
+            0.0662591275233421,
+            0.10737377888556407
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            -3,
+            -3,
+            -2,
+            -2
+          ],
+          "common_corotating_exponent": -2.6666666666666665,
+          "hermiticity_residual": 2.0910675527164887e-14
+        },
+        "-2": {
+          "eigenvalues": [
+            0.012205392129780829,
+            0.026742191177753286,
+            0.06719435342058173,
+            0.10742005114836677
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            -2,
+            -2,
+            -1,
+            -1
+          ],
+          "common_corotating_exponent": -1.6666666666666667,
+          "hermiticity_residual": 2.08308583707078e-14
+        },
+        "-1": {
+          "eigenvalues": [
+            0.007598972316839703,
+            0.02668476546832745,
+            0.06152070943914209,
+            0.10722220191740048
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "common_corotating_exponent": -0.6666666666666667,
+          "hermiticity_residual": 2.0819798029679435e-14
+        },
+        "0": {
+          "eigenvalues": [
+            0.00828441452219073,
+            0.026417982307397118,
+            0.061935877534061906,
+            0.10616768641152854
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "common_corotating_exponent": 0.3333333333333333,
+          "hermiticity_residual": 2.0904568965315e-14
+        },
+        "1": {
+          "eigenvalues": [
+            -0.022381564205582846,
+            0.026187722022077326,
+            0.04508335769581919,
+            0.1052393393724586
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "common_corotating_exponent": 1.3333333333333333,
+          "hermiticity_residual": 2.1056154735028203e-14
+        },
+        "2": {
+          "eigenvalues": [
+            -0.01013266745251251,
+            0.026307593204849017,
+            0.049129319231899046,
+            0.10568378695573749
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            2,
+            2,
+            3,
+            3
+          ],
+          "common_corotating_exponent": 2.3333333333333335,
+          "hermiticity_residual": 2.0960253459501015e-14
+        },
+        "3": {
+          "eigenvalues": [
+            0.0007899150400799326,
+            0.026443396401259287,
+            0.05501925966900706,
+            0.1061759456958987
+          ],
+          "matter_weights": [
+            -1,
+            -1,
+            2,
+            2
+          ],
+          "gauge_weight": -1,
+          "laboratory_harmonics": [
+            3,
+            3,
+            4,
+            4
+          ],
+          "common_corotating_exponent": 3.3333333333333335,
+          "hermiticity_residual": 2.0816616038795517e-14
+        }
+      },
+      "0": {
+        "-3": {
+          "eigenvalues": [
+            0.00710936082673057,
+            0.02660355952575048,
+            0.061322368382465006,
+            0.10686534848312249
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -4,
+            -3,
+            -3,
+            -2
+          ],
+          "common_corotating_exponent": -3.0,
+          "hermiticity_residual": 1.7044320201837255e-14
+        },
+        "-2": {
+          "eigenvalues": [
+            0.007241072639242623,
+            0.026353693445124803,
+            0.06205764038064089,
+            0.10597411343913929
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -3,
+            -2,
+            -2,
+            -1
+          ],
+          "common_corotating_exponent": -2.0,
+          "hermiticity_residual": 1.7005677359619457e-14
+        },
+        "-1": {
+          "eigenvalues": [
+            0.0071525338244511055,
+            0.007389588502954336,
+            0.06097306944100621,
+            0.06281472254143748
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -2,
+            -1,
+            -1,
+            0
+          ],
+          "common_corotating_exponent": -1.0,
+          "hermiticity_residual": 1.6722001625470185e-14
+        },
+        "0": {
+          "eigenvalues": [
+            0.00757399270807283,
+            0.026112343626226126,
+            0.0634708185148358,
+            0.10516314580464863
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            -1,
+            0,
+            0,
+            1
+          ],
+          "common_corotating_exponent": 0.0,
+          "hermiticity_residual": 1.6862079967190838e-14
+        },
+        "1": {
+          "eigenvalues": [
+            0.007152533831152695,
+            0.007389588513021346,
+            0.06097306943697358,
+            0.06281472253366625
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "common_corotating_exponent": 1.0,
+          "hermiticity_residual": 1.67219751442862e-14
+        },
+        "2": {
+          "eigenvalues": [
+            0.007241072638539763,
+            0.026353693442115467,
+            0.06205764038011792,
+            0.10597411344718782
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            1,
+            2,
+            2,
+            3
+          ],
+          "common_corotating_exponent": 2.0,
+          "hermiticity_residual": 1.7005577831193295e-14
+        },
+        "3": {
+          "eigenvalues": [
+            0.007109360825663413,
+            0.026603559522553822,
+            0.06132236838142696,
+            0.10686534849110567
+          ],
+          "matter_weights": [
+            -3,
+            0,
+            0,
+            3
+          ],
+          "gauge_weight": 0,
+          "laboratory_harmonics": [
+            2,
+            3,
+            3,
+            4
+          ],
+          "common_corotating_exponent": 3.0,
+          "hermiticity_residual": 1.704474050727796e-14
+        }
+      },
+      "1": {
+        "-3": {
+          "eigenvalues": [
+            0.0007899150480005328,
+            0.02644339640223608,
+            0.055019259677815485,
+            0.1061759457124863
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -4,
+            -4,
+            -3,
+            -3
+          ],
+          "common_corotating_exponent": -3.3333333333333335,
+          "hermiticity_residual": 1.98773045615164e-14
+        },
+        "-2": {
+          "eigenvalues": [
+            -0.010132667450716096,
+            0.026307593204154826,
+            0.04912931922909063,
+            0.1056837869494831
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -3,
+            -3,
+            -2,
+            -2
+          ],
+          "common_corotating_exponent": -2.3333333333333335,
+          "hermiticity_residual": 2.0048821018096587e-14
+        },
+        "-1": {
+          "eigenvalues": [
+            -0.02238156420296286,
+            0.02618772202841665,
+            0.04508335769572267,
+            0.10523933937147117
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -2,
+            -2,
+            -1,
+            -1
+          ],
+          "common_corotating_exponent": -1.3333333333333333,
+          "hermiticity_residual": 1.9801356946834947e-14
+        },
+        "0": {
+          "eigenvalues": [
+            0.00828441452169484,
+            0.026417982306459885,
+            0.061935877534029134,
+            0.10616768642947712
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            -1,
+            -1,
+            0,
+            0
+          ],
+          "common_corotating_exponent": -0.3333333333333333,
+          "hermiticity_residual": 1.9640062589367146e-14
+        },
+        "1": {
+          "eigenvalues": [
+            0.007598972322454886,
+            0.02668476546835875,
+            0.06152070943685496,
+            0.10722220191998647
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "common_corotating_exponent": 0.6666666666666667,
+          "hermiticity_residual": 1.972055709691411e-14
+        },
+        "2": {
+          "eigenvalues": [
+            0.012205392125587158,
+            0.02674219117025772,
+            0.06719435341934203,
+            0.1074200511289871
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            1,
+            1,
+            2,
+            2
+          ],
+          "common_corotating_exponent": 1.6666666666666667,
+          "hermiticity_residual": 1.971243832772855e-14
+        },
+        "3": {
+          "eigenvalues": [
+            0.01172335446736115,
+            0.0267403703722728,
+            0.06625912752324375,
+            0.10737377888805953
+          ],
+          "matter_weights": [
+            -2,
+            -2,
+            1,
+            1
+          ],
+          "gauge_weight": 1,
+          "laboratory_harmonics": [
+            2,
+            2,
+            3,
+            3
+          ],
+          "common_corotating_exponent": 2.6666666666666665,
+          "hermiticity_residual": 1.9972071734490032e-14
+        }
+      }
+    }
+  },
+  "targeted_refinement": {
+    "200": {
+      "1:-1": {
+        "eigenvalues": [
+          -0.02313895177066099,
+          0.025272521516934415,
+          0.04296685723606665,
+          0.10132619381650478
+        ],
+        "matter_weights": [
+          -2,
+          -2,
+          1,
+          1
+        ],
+        "gauge_weight": 1,
+        "laboratory_harmonics": [
+          -2,
+          -2,
+          -1,
+          -1
+        ],
+        "common_corotating_exponent": -1.3333333333333333,
+        "hermiticity_residual": 2.53173288835046e-14
+      },
+      "1:-2": {
+        "eigenvalues": [
+          -0.01063964211251548,
+          0.025373441046673734,
+          0.04692588390680225,
+          0.10171492129569917
+        ],
+        "matter_weights": [
+          -2,
+          -2,
+          1,
+          1
+        ],
+        "gauge_weight": 1,
+        "laboratory_harmonics": [
+          -3,
+          -3,
+          -2,
+          -2
+        ],
+        "common_corotating_exponent": -2.3333333333333335,
+        "hermiticity_residual": 2.520302935770644e-14
+      },
+      "0:1": {
+        "eigenvalues": [
+          0.006698830045829122,
+          0.006895936004851855,
+          0.05857855133460335,
+          0.06030272701137579
+        ],
+        "matter_weights": [
+          -3,
+          0,
+          0,
+          3
+        ],
+        "gauge_weight": 0,
+        "laboratory_harmonics": [
+          0,
+          1,
+          1,
+          2
+        ],
+        "common_corotating_exponent": 1.0,
+        "hermiticity_residual": 2.2242627871757983e-14
+      },
+      "0:0": {
+        "eigenvalues": [
+          0.0070165693576444855,
+          0.025266756297377353,
+          0.060857363353211374,
+          0.10152910936740618
+        ],
+        "matter_weights": [
+          -3,
+          0,
+          0,
+          3
+        ],
+        "gauge_weight": 0,
+        "laboratory_harmonics": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "common_corotating_exponent": 0.0,
+        "hermiticity_residual": 2.2383261055359006e-14
+      }
+    },
+    "280": {
+      "1:-1": {
+        "eigenvalues": [
+          -0.02349348755162245,
+          0.024845021895656103,
+          0.0419908636575501,
+          0.09949829021340914
+        ],
+        "matter_weights": [
+          -2,
+          -2,
+          1,
+          1
+        ],
+        "gauge_weight": 1,
+        "laboratory_harmonics": [
+          -2,
+          -2,
+          -1,
+          -1
+        ],
+        "common_corotating_exponent": -1.3333333333333333,
+        "hermiticity_residual": 3.3695849052579864e-14
+      },
+      "1:-2": {
+        "eigenvalues": [
+          -0.01087480868293834,
+          0.024939110098440718,
+          0.04590287756772385,
+          0.09986859804410822
+        ],
+        "matter_weights": [
+          -2,
+          -2,
+          1,
+          1
+        ],
+        "gauge_weight": 1,
+        "laboratory_harmonics": [
+          -3,
+          -3,
+          -2,
+          -2
+        ],
+        "common_corotating_exponent": -2.3333333333333335,
+        "hermiticity_residual": 3.367497700258012e-14
+      },
+      "0:1": {
+        "eigenvalues": [
+          0.006486188027572787,
+          0.006670683535558839,
+          0.05746374350870825,
+          0.05913794635242169
+        ],
+        "matter_weights": [
+          -3,
+          0,
+          0,
+          3
+        ],
+        "gauge_weight": 0,
+        "laboratory_harmonics": [
+          0,
+          1,
+          1,
+          2
+        ],
+        "common_corotating_exponent": 1.0,
+        "hermiticity_residual": 3.2932131317476825e-14
+      },
+      "0:0": {
+        "eigenvalues": [
+          0.0067581092904193335,
+          0.02487249976357475,
+          0.059644525599958316,
+          0.09983454819003752
+        ],
+        "matter_weights": [
+          -3,
+          0,
+          0,
+          3
+        ],
+        "gauge_weight": 0,
+        "laboratory_harmonics": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "common_corotating_exponent": 0.0,
+        "hermiticity_residual": 3.36894128638695e-14
+      }
+    }
+  },
+  "translation_candidate_character_0_label_1": {
+    "70": 0.009961865640788442,
+    "100": 0.008020569645036854,
+    "140": 0.007152533831152695
+  },
+  "finest_global_levels": [
+    {
+      "value": -0.022381564205582846,
+      "character": -1,
+      "integer_label": 1
+    },
+    {
+      "value": -0.02238156420296286,
+      "character": 1,
+      "integer_label": -1
+    },
+    {
+      "value": -0.01013266745251251,
+      "character": -1,
+      "integer_label": 2
+    },
+    {
+      "value": -0.010132667450716096,
+      "character": 1,
+      "integer_label": -2
+    },
+    {
+      "value": 0.0007899150400799326,
+      "character": -1,
+      "integer_label": 3
+    },
+    {
+      "value": 0.0007899150480005328,
+      "character": 1,
+      "integer_label": -3
+    },
+    {
+      "value": 0.007109360825663413,
+      "character": 0,
+      "integer_label": 3
+    },
+    {
+      "value": 0.00710936082673057,
+      "character": 0,
+      "integer_label": -3
+    },
+    {
+      "value": 0.0071525338244511055,
+      "character": 0,
+      "integer_label": -1
+    },
+    {
+      "value": 0.007152533831152695,
+      "character": 0,
+      "integer_label": 1
+    },
+    {
+      "value": 0.007241072638539763,
+      "character": 0,
+      "integer_label": 2
+    },
+    {
+      "value": 0.007241072639242623,
+      "character": 0,
+      "integer_label": -2
+    }
+  ],
+  "finest_nontranslation_minimum": {
+    "value": -0.022381564205582846,
+    "character": -1,
+    "integer_label": 1
+  },
+  "symmetry_checks": {
+    "maximum_conjugate_sector_eigenvalue_residual": 1.9379664539798114e-11,
+    "maximum_hermiticity_residual": 2.2086356554043144e-14
+  },
+  "continuum_diagnostics": {
+    "fit_node_counts": [
+      140,
+      200,
+      280
+    ],
+    "fit_variable": "1/(N-1)^2",
+    "primary_twisted_candidate_limit": -0.023860580734839956,
+    "secondary_twisted_candidate_limit": -0.011120570154350388,
+    "translation_candidate_limit": 0.006266290112476979,
+    "primary_drift_200_to_280": 0.00035453578096145827,
+    "secondary_drift_200_to_280": 0.00023516657042285845,
+    "translation_drift_200_to_280": 0.00021264201825633468
+  },
+  "verdict": {
+    "negative_mode_count_in_checked_window": 4,
+    "negative_mode_found_in_checked_window": true,
+    "translation_pair_resolved": false,
+    "negative_candidate_survives_targeted_refinement": true,
+    "physical_negative_mode_certified": false,
+    "certification_blocker": "the same discretization still lifts the exact translation pair to a positive level",
+    "full_checked_window_stable": false,
+    "full_angular_tail_closed": false,
+    "full_vortex_stability_closed": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_full_tensor_translation_calibration_gate"
+  }
+}

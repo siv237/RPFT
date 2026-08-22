@@ -1,0 +1,42 @@
+{
+  "gate": "version6_spectral_transition_discrete_nonlinear_parent_reopening_gate",
+  "exact_tests": {
+    "norm_preservation_error": 2.220446049250313e-16,
+    "internal_unitary_covariance_residual": 1.8173625012389096e-16,
+    "nearest_neighbor_locality": true
+  },
+  "coupling_scan_after_40_steps": {
+    "0.0": {
+      "norm_error": 0.0,
+      "inverse_participation_ratio": 0.04207637884513314
+    },
+    "0.5": {
+      "norm_error": 2.220446049250313e-16,
+      "inverse_participation_ratio": 0.03434699684293768
+    },
+    "1.0": {
+      "norm_error": 1.1102230246251565e-16,
+      "inverse_participation_ratio": 0.03232196693655865
+    },
+    "2.0": {
+      "norm_error": 0.0,
+      "inverse_participation_ratio": 0.04229332953528281
+    }
+  },
+  "analytic_structure": {
+    "continuum_limit": "nonlinear_Dirac_type",
+    "full_internal_bimodule_dimension": 300,
+    "full_bimodule_commutant": "C_times_identity",
+    "canonical_rank_one_internal_selector": false,
+    "lattice_spacing_physical_value_derived": false,
+    "nonlinear_coupling_derived": false
+  },
+  "verdict": {
+    "local_norm_preserving_nonlinear_parent_constructed": true,
+    "internal_multiplicity_reduced": false,
+    "R4_stable_physical_endpoint_closed": false,
+    "R5_blind_prediction_closed": false,
+    "status": "discrete proof of concept reproduces nonlinear Dirac kinematics but retains 300-fold internal covariance and free scale/coupling"
+  },
+  "next_gate": "version6_spectral_transition_discrete_equivariant_coin_selector_gate"
+}

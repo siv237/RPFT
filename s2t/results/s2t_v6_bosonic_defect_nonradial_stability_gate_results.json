@@ -1,0 +1,396 @@
+{
+  "gate": "version6_bosonic_defect_nonradial_stability_gate",
+  "parent_potential_consistency": {
+    "previous_radial_potential": "Delta^4(1-u^2)^2",
+    "previous_potential_was_canonical_parent_derived": false,
+    "canonical_local_potential": "F_beta(I/3+Q)-F_beta(R_ordered)",
+    "isotropic_and_ordered_phases_coexist": true,
+    "previous_unit_energy": 54.54825430232325,
+    "previous_half_height_radius": 1.039444480502646,
+    "interpretation": "the earlier radial result applies to an admissible quartic completion, not uniquely to the canonical Tome VI parent"
+  },
+  "canonical_radial_solution": {
+    "bvp_status": 0,
+    "maximum_rms_ode_residual": 1.978362762799963e-07,
+    "half_height_radius": 1.4343402811964634,
+    "energy_parts_with_tail_correction": [
+      14.201121890988794,
+      27.383420107587842,
+      4.394099419581171
+    ],
+    "corrected_total_energy": 45.97864141815781,
+    "corrected_virial_residual": 4.214446747141665e-08,
+    "canonical_potential_at_isotropic_core": -2.220446049250313e-15,
+    "canonical_potential_at_ordered_vacuum": 1.7763568394002505e-15,
+    "canonical_barrier_maximum": 0.05717826052424124
+  },
+  "five_component_galerkin_hessian": {
+    "field_space": "real symmetric traceless 3x3 Q tensor",
+    "tensor_component_count": 5,
+    "angular_degrees_tested": [
+      0,
+      1,
+      2
+    ],
+    "solid_harmonics_per_degree": [
+      1,
+      3,
+      5
+    ],
+    "boundary_condition": "compact radial cutoff at finite ball boundary",
+    "spectra": [
+      {
+        "basis_dimension": 90,
+        "lowest_twenty_generalized_eigenvalues": [
+          1.968249162630742,
+          1.9682491631264631,
+          1.968249315042242,
+          3.031821500727033,
+          3.031821591719461,
+          3.031821592643122,
+          5.109689301081321,
+          5.109689303130098,
+          5.109689307663194,
+          5.109689308881775,
+          5.109689312790039,
+          8.756570487289894,
+          9.87740929566678,
+          9.877409296312633,
+          9.87740952671557,
+          9.87740967066234,
+          9.877409671654954,
+          10.63546338330342,
+          10.635463439299324,
+          10.63546343970158
+        ],
+        "negative_mode_count_in_computed_window": 0,
+        "near_zero_mode_count_in_computed_window": 0,
+        "lowest_mode_angular_degree_weights": {
+          "0": 7.754523874636052e-17,
+          "1": 6.033554048896373e-19,
+          "2": 1.0
+        },
+        "hessian_asymmetry_residual": 0.0,
+        "mass_smallest_eigenvalue": 0.0007049804102874763,
+        "projected_first_variation_norm": 2.0801783065145694e-06,
+        "translation_projection_tests": [
+          {
+            "spatial_direction": 0,
+            "captured_L2_fraction": 0.2828855230563612,
+            "projected_rayleigh_quotient": 5.450062626329596
+          },
+          {
+            "spatial_direction": 1,
+            "captured_L2_fraction": 0.28288552305636083,
+            "projected_rayleigh_quotient": 5.450062709374941
+          },
+          {
+            "spatial_direction": 2,
+            "captured_L2_fraction": 0.282885523056363,
+            "projected_rayleigh_quotient": 5.4500627103533645
+          }
+        ],
+        "directional_finite_difference_checks": [
+          {
+            "step": 0.0001,
+            "first_variation_residual": -1.3958612044007168e-07,
+            "finite_difference_curvature": 19.357068481440365,
+            "assembled_curvature": 19.35707062917247,
+            "relative_curvature_residual": 1.1095336403464819e-07
+          },
+          {
+            "step": 0.0001,
+            "first_variation_residual": -1.411848415955319e-07,
+            "finite_difference_curvature": 19.266038009391195,
+            "assembled_curvature": 19.266040678289734,
+            "relative_curvature_residual": 1.3852864650199473e-07
+          },
+          {
+            "step": 0.0001,
+            "first_variation_residual": 5.758948873335612e-08,
+            "finite_difference_curvature": 18.997587858393672,
+            "assembled_curvature": 18.997588621210948,
+            "relative_curvature_residual": 4.0153373737150915e-08
+          }
+        ],
+        "box_radius": 4.5,
+        "radial_quadrature_order": 18,
+        "polar_quadrature_order": 8,
+        "azimuthal_quadrature_order": 16,
+        "integration_point_count": 2304,
+        "radial_scales": [
+          0.8,
+          1.6
+        ],
+        "maximum_angular_degree": 2
+      },
+      {
+        "basis_dimension": 90,
+        "lowest_twenty_generalized_eigenvalues": [
+          1.589985022320326,
+          1.5899850234987172,
+          1.5899852014533176,
+          2.5320909556336946,
+          2.532091046112821,
+          2.532091046556655,
+          4.664009610411545,
+          4.664009616203714,
+          4.66400962617555,
+          4.664009626325832,
+          4.664009629711693,
+          7.501604814278911,
+          9.27044414838455,
+          9.270444150328004,
+          9.270444401207714,
+          9.270444562638813,
+          9.27044456357226,
+          9.769926032712302,
+          9.769926076341878,
+          9.769926093761018
+        ],
+        "negative_mode_count_in_computed_window": 0,
+        "near_zero_mode_count_in_computed_window": 0,
+        "lowest_mode_angular_degree_weights": {
+          "0": 9.329361979055622e-17,
+          "1": 1.885903723337631e-18,
+          "2": 0.9999999999999999
+        },
+        "hessian_asymmetry_residual": 0.0,
+        "mass_smallest_eigenvalue": 0.00045564015296997685,
+        "projected_first_variation_norm": 2.636901665589338e-06,
+        "translation_projection_tests": [
+          {
+            "spatial_direction": 0,
+            "captured_L2_fraction": 0.2243777347990387,
+            "projected_rayleigh_quotient": 4.718658343743758
+          },
+          {
+            "spatial_direction": 1,
+            "captured_L2_fraction": 0.22437773479903808,
+            "projected_rayleigh_quotient": 4.718658427555183
+          },
+          {
+            "spatial_direction": 2,
+            "captured_L2_fraction": 0.22437773479903694,
+            "projected_rayleigh_quotient": 4.718658428212921
+          }
+        ],
+        "directional_finite_difference_checks": [
+          {
+            "step": 0.0001,
+            "first_variation_residual": -3.2294167340296553e-08,
+            "finite_difference_curvature": 17.851030520432687,
+            "assembled_curvature": 17.851027076791173,
+            "relative_curvature_residual": 1.9290999332157188e-07
+          },
+          {
+            "step": 0.0001,
+            "first_variation_residual": -2.8244073746463982e-08,
+            "finite_difference_curvature": 17.726372902870935,
+            "assembled_curvature": 17.72637237258878,
+            "relative_curvature_residual": 2.9914871641052304e-08
+          },
+          {
+            "step": 0.0001,
+            "first_variation_residual": 1.8900436771218665e-08,
+            "finite_difference_curvature": 17.402219043560763,
+            "assembled_curvature": 17.40221670572102,
+            "relative_curvature_residual": 1.3434149118890937e-07
+          }
+        ],
+        "box_radius": 5.5,
+        "radial_quadrature_order": 22,
+        "polar_quadrature_order": 10,
+        "azimuthal_quadrature_order": 20,
+        "integration_point_count": 4400,
+        "radial_scales": [
+          0.8,
+          1.6
+        ],
+        "maximum_angular_degree": 2
+      },
+      {
+        "basis_dimension": 135,
+        "lowest_twenty_generalized_eigenvalues": [
+          0.4757847963943949,
+          0.4757847979214296,
+          0.475785220794987,
+          1.1483315639396754,
+          1.1483316650204878,
+          1.1483316658212737,
+          2.8464201930233726,
+          2.8464202217451717,
+          2.8464202640754506,
+          2.8464202647515995,
+          2.8464202914223042,
+          4.750120461552657,
+          6.633665814073565,
+          6.633665887694092,
+          6.633666015112712,
+          6.633666016643535,
+          6.633666446650563,
+          6.633666447169405,
+          6.633666721352623,
+          7.044117667697902
+        ],
+        "negative_mode_count_in_computed_window": 0,
+        "near_zero_mode_count_in_computed_window": 0,
+        "lowest_mode_angular_degree_weights": {
+          "0": 3.7182252206961956e-16,
+          "1": 1.9179387427507935e-18,
+          "2": 0.9999999999999996
+        },
+        "hessian_asymmetry_residual": 0.0,
+        "mass_smallest_eigenvalue": 0.00010310936751341016,
+        "projected_first_variation_norm": 7.301120392217056e-06,
+        "translation_projection_tests": [
+          {
+            "spatial_direction": 0,
+            "captured_L2_fraction": 0.366307817846985,
+            "projected_rayleigh_quotient": 3.4582500428273586
+          },
+          {
+            "spatial_direction": 1,
+            "captured_L2_fraction": 0.36630781784698163,
+            "projected_rayleigh_quotient": 3.458250157803914
+          },
+          {
+            "spatial_direction": 2,
+            "captured_L2_fraction": 0.3663078178469793,
+            "projected_rayleigh_quotient": 3.4582501589708077
+          }
+        ],
+        "directional_finite_difference_checks": [
+          {
+            "step": 0.0001,
+            "first_variation_residual": 1.1937117960769683e-08,
+            "finite_difference_curvature": 13.422577183064277,
+            "assembled_curvature": 13.42257702051981,
+            "relative_curvature_residual": 1.2109780895779243e-08
+          },
+          {
+            "step": 0.0001,
+            "first_variation_residual": 4.472866521609831e-08,
+            "finite_difference_curvature": 14.332829323393526,
+            "assembled_curvature": 14.332830792255406,
+            "relative_curvature_residual": 1.0248232895632707e-07
+          },
+          {
+            "step": 0.0001,
+            "first_variation_residual": -5.329070518200751e-09,
+            "finite_difference_curvature": 13.463260017942957,
+            "assembled_curvature": 13.463259762821876,
+            "relative_curvature_residual": 1.8949428748174406e-08
+          }
+        ],
+        "box_radius": 5.5,
+        "radial_quadrature_order": 22,
+        "polar_quadrature_order": 10,
+        "azimuthal_quadrature_order": 20,
+        "integration_point_count": 4400,
+        "radial_scales": [
+          0.7,
+          1.2,
+          2.1
+        ],
+        "maximum_angular_degree": 2
+      },
+      {
+        "basis_dimension": 180,
+        "lowest_twenty_generalized_eigenvalues": [
+          0.3310395843551327,
+          0.33103958608602824,
+          0.3310401320048994,
+          1.0298737975131504,
+          1.0298739044128045,
+          1.0298739052492802,
+          2.617601229423217,
+          2.6176012686535213,
+          2.6176013252284154,
+          2.6176013260462723,
+          2.6176013655950614,
+          4.214225685147512,
+          4.214225686843652,
+          4.214226053227102,
+          4.490259197876273,
+          6.198684845799233,
+          6.198684968127062,
+          6.198685129151008,
+          6.198685130741853,
+          6.198685669065056
+        ],
+        "negative_mode_count_in_computed_window": 0,
+        "near_zero_mode_count_in_computed_window": 0,
+        "lowest_mode_angular_degree_weights": {
+          "0": 5.457680800952342e-16,
+          "1": 1.0195144064778676e-18,
+          "2": 0.9999999999999994
+        },
+        "hessian_asymmetry_residual": 0.0,
+        "mass_smallest_eigenvalue": 1.9791789269260036e-05,
+        "projected_first_variation_norm": 2.6609218043472755e-05,
+        "translation_projection_tests": [
+          {
+            "spatial_direction": 0,
+            "captured_L2_fraction": 0.4140860229448569,
+            "projected_rayleigh_quotient": 3.8611224517607217
+          },
+          {
+            "spatial_direction": 1,
+            "captured_L2_fraction": 0.41408602294485836,
+            "projected_rayleigh_quotient": 3.8611225958923447
+          },
+          {
+            "spatial_direction": 2,
+            "captured_L2_fraction": 0.41408602294485863,
+            "projected_rayleigh_quotient": 3.8611225970720566
+          }
+        ],
+        "directional_finite_difference_checks": [
+          {
+            "step": 0.0001,
+            "first_variation_residual": 4.479971948967432e-08,
+            "finite_difference_curvature": 15.22712125279213,
+            "assembled_curvature": 15.227121657957484,
+            "relative_curvature_residual": 2.6608137953642006e-08
+          },
+          {
+            "step": 0.0001,
+            "first_variation_residual": -2.3945290195115376e-08,
+            "finite_difference_curvature": 13.681923860531242,
+            "assembled_curvature": 13.681926115146204,
+            "relative_curvature_residual": 1.6478783347519473e-07
+          },
+          {
+            "step": 0.0001,
+            "first_variation_residual": 8.735057122066792e-07,
+            "finite_difference_curvature": 13.829139788867906,
+            "assembled_curvature": 13.829138404303643,
+            "relative_curvature_residual": 1.0011934379956383e-07
+          }
+        ],
+        "box_radius": 5.5,
+        "radial_quadrature_order": 22,
+        "polar_quadrature_order": 10,
+        "azimuthal_quadrature_order": 20,
+        "integration_point_count": 4400,
+        "radial_scales": [
+          0.55,
+          0.9,
+          1.4,
+          2.2
+        ],
+        "maximum_angular_degree": 2
+      }
+    ]
+  },
+  "verdict": {
+    "canonical_parent_radial_profile_recomputed": true,
+    "old_quartic_radial_profile_remains_valid_for_that_completion": true,
+    "old_quartic_profile_is_unique_parent_prediction": false,
+    "negative_nonradial_mode_found_in_tested_galerkin_spaces": false,
+    "continuum_full_stability_proved": false,
+    "status": "canonical_potential_correction_and_five_component_galerkin_test",
+    "next_gate": "version6_bosonic_defect_canonical_continuum_stability_gate"
+  }
+}

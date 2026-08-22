@@ -1,0 +1,249 @@
+{
+  "gate": "version6_product_ko2_family_pfaffian_operator_gate",
+  "ko_dimension": {
+    "external": 4,
+    "internal": 6,
+    "sum_mod_8": 2,
+    "chiral_pfaffian_allowed": true
+  },
+  "carrier": {
+    "total_dimension": 300,
+    "active_real_pair_dimension": 90,
+    "R_independent_complement_dimension": 210,
+    "family_copies_in_pfaffian": 15
+  },
+  "weights": {
+    "ordinary_Berezin_pfaffian": "15",
+    "normalized_Fuglede_Kadison_pfaffian": "1/20",
+    "admissible_upper_bound": "17/168",
+    "ordinary_inside_window": false,
+    "normalized_inside_window": true
+  },
+  "normalization_test": {
+    "statement": "Pf(c A_R)/Pf(c A_R0) = Pf(A_R)/Pf(A_R0)",
+    "quadratic_action_scale": "1/300",
+    "R_dependent_exponent_after_scaling": "15",
+    "normalized_log_pfaffian_requires_postprocessing": "(1/300) log|Pf A_R|",
+    "samples": [
+      {
+        "logdet_R_ratio": -0.6330913194485648,
+        "ordinary_logpf_ratio": -9.496369791728519,
+        "target_15_logdet_ratio": -9.496369791728473,
+        "scaled_quadratic_form_logpf_ratio": -9.496369791728853,
+        "two_external_mode_logpf_ratio": -18.992739583457038,
+        "target_30_logdet_ratio": -18.992739583456945,
+        "normalized_FK_logpf_ratio": -0.0316545659724284,
+        "target_one_over_20_logdet_ratio": -0.03165456597242824
+      },
+      {
+        "logdet_R_ratio": -0.12114672813967209,
+        "ordinary_logpf_ratio": -1.8172009220951324,
+        "target_15_logdet_ratio": -1.8172009220950813,
+        "scaled_quadratic_form_logpf_ratio": -1.8172009220959353,
+        "two_external_mode_logpf_ratio": -3.634401844190293,
+        "target_30_logdet_ratio": -3.6344018441901627,
+        "normalized_FK_logpf_ratio": -0.006057336406983775,
+        "target_one_over_20_logdet_ratio": -0.006057336406983605
+      },
+      {
+        "logdet_R_ratio": -1.0611718959732785,
+        "ordinary_logpf_ratio": -15.917578439599268,
+        "target_15_logdet_ratio": -15.917578439599179,
+        "scaled_quadratic_form_logpf_ratio": -15.917578439599652,
+        "two_external_mode_logpf_ratio": -31.835156879198408,
+        "target_30_logdet_ratio": -31.835156879198358,
+        "normalized_FK_logpf_ratio": -0.053058594798664226,
+        "target_one_over_20_logdet_ratio": -0.05305859479866393
+      },
+      {
+        "logdet_R_ratio": -0.7233168223638984,
+        "ordinary_logpf_ratio": -10.849752335458618,
+        "target_15_logdet_ratio": -10.849752335458476,
+        "scaled_quadratic_form_logpf_ratio": -10.849752335458675,
+        "two_external_mode_logpf_ratio": -21.699504670917108,
+        "target_30_logdet_ratio": -21.69950467091695,
+        "normalized_FK_logpf_ratio": -0.036165841118195395,
+        "target_one_over_20_logdet_ratio": -0.036165841118194916
+      },
+      {
+        "logdet_R_ratio": -1.7818143151080825,
+        "ordinary_logpf_ratio": -26.727214726621284,
+        "target_15_logdet_ratio": -26.727214726621238,
+        "scaled_quadratic_form_logpf_ratio": -26.727214726621924,
+        "two_external_mode_logpf_ratio": -53.45442945324275,
+        "target_30_logdet_ratio": -53.454429453242476,
+        "normalized_FK_logpf_ratio": -0.08909071575540428,
+        "target_one_over_20_logdet_ratio": -0.08909071575540413
+      },
+      {
+        "logdet_R_ratio": -0.36789181156269146,
+        "ordinary_logpf_ratio": -5.518377173440456,
+        "target_15_logdet_ratio": -5.518377173440372,
+        "scaled_quadratic_form_logpf_ratio": -5.5183771734409675,
+        "two_external_mode_logpf_ratio": -11.036754346881125,
+        "target_30_logdet_ratio": -11.036754346880745,
+        "normalized_FK_logpf_ratio": -0.01839459057813485,
+        "target_one_over_20_logdet_ratio": -0.018394590578134574
+      },
+      {
+        "logdet_R_ratio": -1.553256734676399,
+        "ordinary_logpf_ratio": -23.298851020146017,
+        "target_15_logdet_ratio": -23.298851020145985,
+        "scaled_quadratic_form_logpf_ratio": -23.29885102014657,
+        "two_external_mode_logpf_ratio": -46.59770204029259,
+        "target_30_logdet_ratio": -46.59770204029197,
+        "normalized_FK_logpf_ratio": -0.07766283673382006,
+        "target_one_over_20_logdet_ratio": -0.07766283673381995
+      },
+      {
+        "logdet_R_ratio": -0.3358703134718066,
+        "ordinary_logpf_ratio": -5.038054702077183,
+        "target_15_logdet_ratio": -5.038054702077099,
+        "scaled_quadratic_form_logpf_ratio": -5.0380547020778295,
+        "two_external_mode_logpf_ratio": -10.076109404154408,
+        "target_30_logdet_ratio": -10.076109404154199,
+        "normalized_FK_logpf_ratio": -0.01679351567359061,
+        "target_one_over_20_logdet_ratio": -0.01679351567359033
+      },
+      {
+        "logdet_R_ratio": -0.24093133753778018,
+        "ordinary_logpf_ratio": -3.613970063066745,
+        "target_15_logdet_ratio": -3.6139700630667027,
+        "scaled_quadratic_form_logpf_ratio": -3.6139700630673133,
+        "two_external_mode_logpf_ratio": -7.227940126133731,
+        "target_30_logdet_ratio": -7.227940126133405,
+        "normalized_FK_logpf_ratio": -0.01204656687688915,
+        "target_one_over_20_logdet_ratio": -0.01204656687688901
+      },
+      {
+        "logdet_R_ratio": -0.9265038597717421,
+        "ordinary_logpf_ratio": -13.897557896576245,
+        "target_15_logdet_ratio": -13.897557896576131,
+        "scaled_quadratic_form_logpf_ratio": -13.897557896576814,
+        "two_external_mode_logpf_ratio": -27.795115793152803,
+        "target_30_logdet_ratio": -27.795115793152263,
+        "normalized_FK_logpf_ratio": -0.046325192988587484,
+        "target_one_over_20_logdet_ratio": -0.0463251929885871
+      },
+      {
+        "logdet_R_ratio": -0.7421582820368409,
+        "ordinary_logpf_ratio": -11.132374230552713,
+        "target_15_logdet_ratio": -11.132374230552614,
+        "scaled_quadratic_form_logpf_ratio": -11.13237423055341,
+        "two_external_mode_logpf_ratio": -22.264748461105526,
+        "target_30_logdet_ratio": -22.264748461105228,
+        "normalized_FK_logpf_ratio": -0.03710791410184238,
+        "target_one_over_20_logdet_ratio": -0.03710791410184204
+      },
+      {
+        "logdet_R_ratio": -0.7482284359555846,
+        "ordinary_logpf_ratio": -11.223426539333857,
+        "target_15_logdet_ratio": -11.223426539333769,
+        "scaled_quadratic_form_logpf_ratio": -11.223426539334241,
+        "two_external_mode_logpf_ratio": -22.446853078668,
+        "target_30_logdet_ratio": -22.446853078667537,
+        "normalized_FK_logpf_ratio": -0.03741142179777952,
+        "target_one_over_20_logdet_ratio": -0.03741142179777923
+      },
+      {
+        "logdet_R_ratio": -0.9474546855030734,
+        "ordinary_logpf_ratio": -14.21182028254622,
+        "target_15_logdet_ratio": -14.211820282546102,
+        "scaled_quadratic_form_logpf_ratio": -14.211820282546569,
+        "two_external_mode_logpf_ratio": -28.423640565092555,
+        "target_30_logdet_ratio": -28.423640565092203,
+        "normalized_FK_logpf_ratio": -0.047372734275154066,
+        "target_one_over_20_logdet_ratio": -0.04737273427515367
+      },
+      {
+        "logdet_R_ratio": -0.6679363107517586,
+        "ordinary_logpf_ratio": -10.019044661276368,
+        "target_15_logdet_ratio": -10.019044661276379,
+        "scaled_quadratic_form_logpf_ratio": -10.019044661277007,
+        "two_external_mode_logpf_ratio": -20.038089322553304,
+        "target_30_logdet_ratio": -20.038089322552757,
+        "normalized_FK_logpf_ratio": -0.033396815537587894,
+        "target_one_over_20_logdet_ratio": -0.03339681553758793
+      },
+      {
+        "logdet_R_ratio": -1.005869320895397,
+        "ordinary_logpf_ratio": -15.088039813430981,
+        "target_15_logdet_ratio": -15.088039813430957,
+        "scaled_quadratic_form_logpf_ratio": -15.088039813431465,
+        "two_external_mode_logpf_ratio": -30.176079626862176,
+        "target_30_logdet_ratio": -30.176079626861913,
+        "normalized_FK_logpf_ratio": -0.05029346604476994,
+        "target_one_over_20_logdet_ratio": -0.05029346604476985
+      },
+      {
+        "logdet_R_ratio": -0.7504585333941716,
+        "ordinary_logpf_ratio": -11.256878000912636,
+        "target_15_logdet_ratio": -11.256878000912574,
+        "scaled_quadratic_form_logpf_ratio": -11.256878000913275,
+        "two_external_mode_logpf_ratio": -22.513756001825342,
+        "target_30_logdet_ratio": -22.513756001825147,
+        "normalized_FK_logpf_ratio": -0.03752292666970879,
+        "target_one_over_20_logdet_ratio": -0.03752292666970858
+      },
+      {
+        "logdet_R_ratio": -0.5266153042277724,
+        "ordinary_logpf_ratio": -7.899229563416597,
+        "target_15_logdet_ratio": -7.899229563416585,
+        "scaled_quadratic_form_logpf_ratio": -7.899229563417407,
+        "two_external_mode_logpf_ratio": -15.798459126833407,
+        "target_30_logdet_ratio": -15.79845912683317,
+        "normalized_FK_logpf_ratio": -0.026330765211388656,
+        "target_one_over_20_logdet_ratio": -0.026330765211388617
+      },
+      {
+        "logdet_R_ratio": -0.7179796540264629,
+        "ordinary_logpf_ratio": -10.769694810397048,
+        "target_15_logdet_ratio": -10.769694810396944,
+        "scaled_quadratic_form_logpf_ratio": -10.769694810397823,
+        "two_external_mode_logpf_ratio": -21.53938962079404,
+        "target_30_logdet_ratio": -21.539389620793887,
+        "normalized_FK_logpf_ratio": -0.035898982701323495,
+        "target_one_over_20_logdet_ratio": -0.03589898270132315
+      },
+      {
+        "logdet_R_ratio": -0.14283968290933347,
+        "ordinary_logpf_ratio": -2.1425952436400877,
+        "target_15_logdet_ratio": -2.142595243640002,
+        "scaled_quadratic_form_logpf_ratio": -2.1425952436404714,
+        "two_external_mode_logpf_ratio": -4.28519048728019,
+        "target_30_logdet_ratio": -4.285190487280004,
+        "normalized_FK_logpf_ratio": -0.007141984145466959,
+        "target_one_over_20_logdet_ratio": -0.007141984145466673
+      },
+      {
+        "logdet_R_ratio": -2.0059045611607713,
+        "ordinary_logpf_ratio": -30.088568417411622,
+        "target_15_logdet_ratio": -30.08856841741157,
+        "scaled_quadratic_form_logpf_ratio": -30.088568417411807,
+        "two_external_mode_logpf_ratio": -60.17713683482326,
+        "target_30_logdet_ratio": -60.17713683482314,
+        "normalized_FK_logpf_ratio": -0.10029522805803874,
+        "target_one_over_20_logdet_ratio": -0.10029522805803856
+      }
+    ],
+    "maximum_residuals": {
+      "ordinary": 1.4210854715202004e-13,
+      "scaled_action": 8.79296635503124e-13,
+      "two_external_modes": 6.181721801112872e-13,
+      "normalized_fk": 4.787836793695988e-16
+    }
+  },
+  "finite_gaussian_exponent_lattice": {
+    "lattice": "(1/2) Z",
+    "minimum_positive_weight": "1/2",
+    "minimum_exceeds_admissible_window": true
+  },
+  "verdict": {
+    "product_KO2_kinematics_pass": true,
+    "ordinary_fermion_integral_yields_fractional_barrier": false,
+    "M210_vs_M300_denominator_selects_standard_pfaffian": false,
+    "normalized_intensive_free_energy_remains_possible": true,
+    "parent_measure_closed": false,
+    "next_gate": "version6_common_intensive_free_energy_normalization_gate"
+  }
+}

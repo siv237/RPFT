@@ -1,0 +1,34 @@
+{
+  "gate": "version6_exchange_bridge_induced_alignment_gate",
+  "matrix_bridge_extension": {
+    "action": "(Tr(I-BtB)^2+Tr(I-BBt)^2)/21",
+    "maximum_scalar_recovery_residual": 2.7755575615628914e-17,
+    "fixed_trace_X": 3.0,
+    "minimum_sampled_purity": 3.001575603361201,
+    "theoretical_minimum_purity": 3.0,
+    "minimum_sampled_action": 0.00015005746297142524,
+    "isotropic_global_minimum": true
+  },
+  "normalized_state_dictionary": {
+    "identification": "R=(B^t B)/3 on Tr(B^t B)=3",
+    "state_action": "(6/7)*(Tr(R^2)-1/3)",
+    "effective_alignment_kappa": -0.8571428571428571,
+    "isotropic_cost": 0.0,
+    "critical_RP2_state_cost": 0.14285714285714288,
+    "critical_RP2_state_cost_exact": "1/7",
+    "pure_state_cost": 0.5714285714285715,
+    "sign_favors_alignment": false
+  },
+  "fluctuation_kill_threshold": {
+    "required_effective_kappa": 1.3862943611198906,
+    "bridge_isotropic_penalty": 0.8571428571428571,
+    "required_negative_fluctuation_coefficient": 2.2434372182627476,
+    "exact_expression": "log(4)+6/7"
+  },
+  "verdict": {
+    "canonical_bridge_induces_negative_purity": false,
+    "canonical_bridge_stabilizes_isotropic_state": true,
+    "RP2_birth_from_current_bridge": false,
+    "next_gate": "version6_bridge_fluctuation_determinant_purity_gate"
+  }
+}

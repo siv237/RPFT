@@ -1,0 +1,4977 @@
+{
+  "gate": "version6_bosonic_defect_full_tensor_high_angular_coercivity_gate",
+  "calibrated_parent": {
+    "gate": "version6_bosonic_defect_full_tensor_translation_calibration_gate",
+    "checked_integer_label_window": [
+      -3,
+      3
+    ],
+    "translation_eigenvalue_limit": 7.491052970191444e-06,
+    "minimum_near_zero_level_at_N140": 0.0005101294543469506
+  },
+  "dense_low_window": {
+    "radial_node_count": 80,
+    "integer_labels": [
+      -3,
+      3
+    ],
+    "characters": [
+      -1,
+      0,
+      1
+    ],
+    "spectra": {
+      "-3": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.733306968127536,
+          "second_algebraic_eigenvalue": 3.8613735666574542,
+          "hermiticity_residual": 1.957486991795034e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.5413312042313265,
+          "second_algebraic_eigenvalue": 4.677863000619867,
+          "hermiticity_residual": 1.191696643927223e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.759331785022165,
+          "second_algebraic_eigenvalue": 3.904401577427026,
+          "hermiticity_residual": 2.2566505915782428e-14
+        }
+      },
+      "-2": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.699620642812084,
+          "second_algebraic_eigenvalue": 3.8023596985609114,
+          "hermiticity_residual": 1.9500061927735753e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.505480407671213,
+          "second_algebraic_eigenvalue": 4.616538555203505,
+          "hermiticity_residual": 1.2048798274545257e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.7213621043628375,
+          "second_algebraic_eigenvalue": 3.8410165533296263,
+          "hermiticity_residual": 2.255498055297918e-14
+        }
+      },
+      "-1": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.6187714143088288,
+          "second_algebraic_eigenvalue": 3.6868162640764313,
+          "hermiticity_residual": 1.9516866883988923e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 0.0014555428481444008,
+          "second_algebraic_eigenvalue": 4.4758541237759015,
+          "hermiticity_residual": 1.2063971941351946e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.689896217115264,
+          "second_algebraic_eigenvalue": 3.7845465651167216,
+          "hermiticity_residual": 2.2589314482222794e-14
+        }
+      },
+      "0": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.6649934209861144,
+          "second_algebraic_eigenvalue": 3.7344843969282624,
+          "hermiticity_residual": 1.9493291887944178e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 3.997544409010412,
+          "second_algebraic_eigenvalue": 4.467235970832624,
+          "hermiticity_residual": 1.1985344836325054e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.6649934209860238,
+          "second_algebraic_eigenvalue": 3.7344843969283392,
+          "hermiticity_residual": 2.257973170934946e-14
+        }
+      },
+      "1": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.689896217115448,
+          "second_algebraic_eigenvalue": 3.7845465651165253,
+          "hermiticity_residual": 1.9477049144595873e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 0.0014555428484686913,
+          "second_algebraic_eigenvalue": 4.47585412377586,
+          "hermiticity_residual": 1.2063935159299726e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.6187714143086422,
+          "second_algebraic_eigenvalue": 3.6868162640763673,
+          "hermiticity_residual": 2.2560245280832176e-14
+        }
+      },
+      "2": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.721362104362813,
+          "second_algebraic_eigenvalue": 3.8410165533295593,
+          "hermiticity_residual": 1.9558816237306342e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.505480407671273,
+          "second_algebraic_eigenvalue": 4.616538555203503,
+          "hermiticity_residual": 1.2048740470112799e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.699620642812481,
+          "second_algebraic_eigenvalue": 3.802359698560867,
+          "hermiticity_residual": 2.2532888998926417e-14
+        }
+      },
+      "3": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.7593317850222228,
+          "second_algebraic_eigenvalue": 3.904401577426696,
+          "hermiticity_residual": 1.95213823438675e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.541331204231234,
+          "second_algebraic_eigenvalue": 4.677863000619533,
+          "hermiticity_residual": 1.1917377447936898e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.733306968127134,
+          "second_algebraic_eigenvalue": 3.8613735666573215,
+          "hermiticity_residual": 2.2592976809403057e-14
+        }
+      }
+    },
+    "negative_mode_count": 0,
+    "translation_pair_levels": [
+      0.0014555428481444008,
+      0.0014555428484686913
+    ],
+    "lowest_internal_level_after_translation_removal": {
+      "value": 3.6187714143086422,
+      "character": 1,
+      "integer_label": 1
+    }
+  },
+  "direct_bridge": {
+    "radial_node_count": 80,
+    "characters": [
+      -1,
+      0,
+      1
+    ],
+    "signed_integer_labels": [
+      -139,
+      139
+    ],
+    "absolute_integer_labels": [
+      4,
+      139
+    ],
+    "solver": "dense generalized Hermitian eigensolver for the algebraically lowest levels",
+    "spectra": {
+      "-139": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 57.41164869951206,
+          "second_algebraic_eigenvalue": 60.625223548693484,
+          "hermiticity_residual": 2.7450315819803396e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 58.44806863076553,
+          "second_algebraic_eigenvalue": 60.138199590238685,
+          "hermiticity_residual": 2.2709634055987823e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 57.894233767738925,
+          "second_algebraic_eigenvalue": 61.10148740377958,
+          "hermiticity_residual": 2.843033651571719e-14
+        }
+      },
+      "-138": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 56.691351431787936,
+          "second_algebraic_eigenvalue": 59.91432058858314,
+          "hermiticity_residual": 2.910579706522955e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 57.72633765970744,
+          "second_algebraic_eigenvalue": 59.4253663780307,
+          "hermiticity_residual": 2.5259883770784912e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 57.17107144799573,
+          "second_algebraic_eigenvalue": 60.38778922644572,
+          "hermiticity_residual": 3.0903653203796e-14
+        }
+      },
+      "-137": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 55.975369136375484,
+          "second_algebraic_eigenvalue": 59.207631678687484,
+          "hermiticity_residual": 2.6963746735973184e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 57.008914754284575,
+          "second_algebraic_eigenvalue": 58.71675235272836,
+          "hermiticity_residual": 2.4204532026354128e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 56.45221021054296,
+          "second_algebraic_eigenvalue": 59.67828815530622,
+          "hermiticity_residual": 2.995781778857563e-14
+        }
+      },
+      "-136": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 55.263722080776034,
+          "second_algebraic_eigenvalue": 58.505181447204606,
+          "hermiticity_residual": 2.9173824430115096e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 56.29582040696549,
+          "second_algebraic_eigenvalue": 58.012381858210496,
+          "hermiticity_residual": 2.300560995547825e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 55.73767077524383,
+          "second_algebraic_eigenvalue": 58.97300944739081,
+          "hermiticity_residual": 3.099098414442474e-14
+        }
+      },
+      "-135": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 54.55642988798988,
+          "second_algebraic_eigenvalue": 57.80699362428389,
+          "hermiticity_residual": 2.8169927990080256e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 55.58707445116683,
+          "second_algebraic_eigenvalue": 57.3122783585205,
+          "hermiticity_residual": 2.3816133786263305e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 55.027473191608294,
+          "second_algebraic_eigenvalue": 58.2719774251215,
+          "hermiticity_residual": 2.906925668647209e-14
+        }
+      },
+      "-134": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 53.85351156840419,
+          "second_algebraic_eigenvalue": 57.11309109310344,
+          "hermiticity_residual": 2.8743535085163726e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 54.88269609785405,
+          "second_algebraic_eigenvalue": 56.61646448860418,
+          "hermiticity_residual": 2.5163274841946304e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 54.32163687426437,
+          "second_algebraic_eigenvalue": 57.57521553029096,
+          "hermiticity_residual": 2.997735728045595e-14
+        }
+      },
+      "-133": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 53.154985547771325,
+          "second_algebraic_eigenvalue": 56.42349593952569,
+          "hermiticity_residual": 2.7069108338071167e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 54.1827039643578,
+          "second_algebraic_eigenvalue": 55.92496209886437,
+          "hermiticity_residual": 2.3019340977701078e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 53.620180634125745,
+          "second_algebraic_eigenvalue": 56.88274637604586,
+          "hermiticity_residual": 2.8831862202959624e-14
+        }
+      },
+      "-132": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 52.46086970203593,
+          "second_algebraic_eigenvalue": 55.73822949613019,
+          "hermiticity_residual": 2.927204505959521e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 53.48711610695658,
+          "second_algebraic_eigenvalue": 55.23779230169736,
+          "hermiticity_residual": 2.2413288042985113e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 52.923122712333445,
+          "second_algebraic_eigenvalue": 56.19459179120913,
+          "hermiticity_residual": 2.971418607001151e-14
+        }
+      },
+      "-131": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 51.77118138013377,
+          "second_algebraic_eigenvalue": 55.05731238122327,
+          "hermiticity_residual": 2.850455535436379e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 52.79595004682397,
+          "second_algebraic_eigenvalue": 54.55497550928482,
+          "hermiticity_residual": 2.304249355206659e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 52.23048080573491,
+          "second_algebraic_eigenvalue": 55.510772867022126,
+          "hermiticity_residual": 3.058131398182072e-14
+        }
+      },
+      "-130": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 51.0859374308,
+          "second_algebraic_eigenvalue": 54.38076454184217,
+          "hermiticity_residual": 2.7702590226937355e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 52.10922279785551,
+          "second_algebraic_eigenvalue": 53.87653147150769,
+          "hermiticity_residual": 2.316545444919837e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 51.542272092965646,
+          "second_algebraic_eigenvalue": 54.83130999391949,
+          "hermiticity_residual": 2.98107153738672e-14
+        }
+      },
+      "-129": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 50.40515422923025,
+          "second_algebraic_eigenvalue": 53.708605283161006,
+          "hermiticity_residual": 2.644052669077553e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 51.42695088880144,
+          "second_algebraic_eigenvalue": 53.20247931052923,
+          "hermiticity_residual": 2.1077786213307015e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 50.85851326321618,
+          "second_algebraic_eigenvalue": 54.15622289934102,
+          "hermiticity_residual": 2.979541877190834e-14
+        }
+      },
+      "-128": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 49.72884769582686,
+          "second_algebraic_eigenvalue": 53.04085330844431,
+          "hermiticity_residual": 2.7649839565157192e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 50.749150390949104,
+          "second_algebraic_eigenvalue": 52.532837554356355,
+          "hermiticity_residual": 2.094817386320421e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 50.17922053730129,
+          "second_algebraic_eigenvalue": 53.48553068651481,
+          "hermiticity_residual": 2.994903252916231e-14
+        }
+      },
+      "-127": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 49.05703332092156,
+          "second_algebraic_eigenvalue": 52.3775267465235,
+          "hermiticity_residual": 2.6555469788588547e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 50.07583693417669,
+          "second_algebraic_eigenvalue": 51.86762416825033,
+          "hermiticity_residual": 2.454750207637284e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 49.50440968916758,
+          "second_algebraic_eigenvalue": 52.81925186272432,
+          "hermiticity_residual": 3.028074372368711e-14
+        }
+      },
+      "-126": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 48.38972618095787,
+          "second_algebraic_eigenvalue": 51.718643181230725,
+          "hermiticity_residual": 2.8524306323771546e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 49.407025731174585,
+          "second_algebraic_eigenvalue": 51.206856580009315,
+          "hermiticity_residual": 2.3365471708129105e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 48.83409607024048,
+          "second_algebraic_eigenvalue": 52.15740437228807,
+          "hermiticity_residual": 2.952238993618799e-14
+        }
+      },
+      "-125": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 47.72694096307336,
+          "second_algebraic_eigenvalue": 51.06421968013533,
+          "hermiticity_residual": 2.547719080951703e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 48.74273159747483,
+          "second_algebraic_eigenvalue": 50.55055170927872,
+          "hermiticity_residual": 2.2772036817187695e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 48.16829462520669,
+          "second_algebraic_eigenvalue": 51.50000562305947,
+          "hermiticity_residual": 2.914450924970423e-14
+        }
+      },
+      "-124": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 47.06869197640101,
+          "second_algebraic_eigenvalue": 50.41427281769012,
+          "hermiticity_residual": 2.596181575364985e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 48.082968965765915,
+          "second_algebraic_eigenvalue": 49.89872599318092,
+          "hermiticity_residual": 2.1477573917336277e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 47.50701991206341,
+          "second_algebraic_eigenvalue": 50.84707251683666,
+          "hermiticity_residual": 3.025930992521714e-14
+        }
+      },
+      "-123": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 46.41499317425668,
+          "second_algebraic_eigenvalue": 49.76881870353279,
+          "hermiticity_residual": 2.5575666428207433e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 47.42775190642218,
+          "second_algebraic_eigenvalue": 49.25139540722254,
+          "hermiticity_residual": 2.0288788766165448e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 46.85028612058051,
+          "second_algebraic_eigenvalue": 50.19862146968833,
+          "hermiticity_residual": 2.8006850883937824e-14
+        }
+      },
+      "-122": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 45.76585816672966,
+          "second_algebraic_eigenvalue": 49.12787300053179,
+          "hermiticity_residual": 2.7121674245287962e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 46.77709414187525,
+          "second_algebraic_eigenvalue": 48.60857548926522,
+          "hermiticity_residual": 2.0695611735412254e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 46.19810708726663,
+          "second_algebraic_eigenvalue": 49.5546684405595,
+          "hermiticity_residual": 2.898605692902559e-14
+        }
+      },
+      "-121": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 45.121300237676735,
+          "second_algebraic_eigenvalue": 48.491450949234164,
+          "hermiticity_residual": 2.562918351440776e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 46.13100906360625,
+          "second_algebraic_eigenvalue": 47.97028136034573,
+          "hermiticity_residual": 2.2556014703299343e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 45.55049631278898,
+          "second_algebraic_eigenvalue": 48.915228947930046,
+          "hermiticity_residual": 2.8994028651373896e-14
+        }
+      },
+      "-120": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 44.48133235799369,
+          "second_algebraic_eigenvalue": 47.85956738501879,
+          "hermiticity_residual": 2.6452079011695925e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 45.48950974472119,
+          "second_algebraic_eigenvalue": 47.33652774309225,
+          "hermiticity_residual": 2.1632945846609015e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 44.90746697396824,
+          "second_algebraic_eigenvalue": 48.28031809647253,
+          "hermiticity_residual": 2.8664794456312396e-14
+        }
+      },
+      "-119": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 43.845967199420926,
+          "second_algebraic_eigenvalue": 47.232236759749696,
+          "hermiticity_residual": 2.6122029811102464e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 44.85260895544699,
+          "second_algebraic_eigenvalue": 46.70732898130576,
+          "hermiticity_residual": 2.1461357765021118e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 44.269031940984604,
+          "second_algebraic_eigenvalue": 47.64995059131445,
+          "hermiticity_residual": 2.8229830621163487e-14
+        }
+      },
+      "-118": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 43.21521714678815,
+          "second_algebraic_eigenvalue": 46.60947315776429,
+          "hermiticity_residual": 2.5854244754591394e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 44.22031917474756,
+          "second_algebraic_eigenvalue": 46.082699057337805,
+          "hermiticity_residual": 2.201038060047269e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 43.6352037887641,
+          "second_algebraic_eigenvalue": 47.024140759673486,
+          "hermiticity_residual": 2.8392561287964582e-14
+        }
+      },
+      "-117": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 42.589094310669665,
+          "second_algebraic_eigenvalue": 45.99129031412683,
+          "hermiticity_residual": 2.5434522975012107e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 43.592652603572766,
+          "second_algebraic_eigenvalue": 45.46265160724632,
+          "hermiticity_residual": 2.1109539585496166e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 43.00599480893757,
+          "second_algebraic_eigenvalue": 46.40290256811457,
+          "hermiticity_residual": 2.694884873132998e-14
+        }
+      },
+      "-116": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 41.96761054019947,
+          "second_algebraic_eigenvalue": 45.37770162818876,
+          "hermiticity_residual": 2.5545959597670652e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 42.96962117715418,
+          "second_algebraic_eigenvalue": 44.847199938408934,
+          "hermiticity_residual": 2.1802416154738872e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 42.381417024559056,
+          "second_algebraic_eigenvalue": 45.7862496380058,
+          "hermiticity_residual": 2.865791838000394e-14
+        }
+      },
+      "-115": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 41.35077743063562,
+          "second_algebraic_eigenvalue": 44.76872018049704,
+          "hermiticity_residual": 2.50214934223733e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 42.35123657386248,
+          "second_algebraic_eigenvalue": 44.23635704157827,
+          "hermiticity_residual": 2.0053359507262365e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 41.76148219775949,
+          "second_algebraic_eigenvalue": 45.1741952596385,
+          "hermiticity_residual": 2.8376866168574193e-14
+        }
+      },
+      "-114": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 40.73860633788951,
+          "second_algebraic_eigenvalue": 44.16435874585795,
+          "hermiticity_residual": 2.5524144245295345e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 41.737510228003835,
+          "second_algebraic_eigenvalue": 43.63013560781899,
+          "hermiticity_residual": 2.1331765433804738e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 41.146201843886146,
+          "second_algebraic_eigenvalue": 44.56675241159125,
+          "hermiticity_residual": 2.8592506376674264e-14
+        }
+      },
+      "-113": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 40.13110838511362,
+          "second_algebraic_eigenvalue": 43.5646298076678,
+          "hermiticity_residual": 2.608124554568092e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 41.12845333937267,
+          "second_algebraic_eigenvalue": 43.02854803855082,
+          "hermiticity_residual": 2.127531965295082e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 40.53558723986184,
+          "second_algebraic_eigenvalue": 43.96393376953675,
+          "hermiticity_residual": 2.879493849026211e-14
+        }
+      },
+      "-112": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 39.528294473505085,
+          "second_algebraic_eigenvalue": 42.96954557074958,
+          "hermiticity_residual": 2.6264405004150344e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 40.52407688258949,
+          "second_algebraic_eigenvalue": 42.43160646116723,
+          "hermiticity_residual": 2.0686386866071422e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 39.92964943328775,
+          "second_algebraic_eigenvalue": 43.36575172273828,
+          "hermiticity_residual": 2.791838607485432e-14
+        }
+      },
+      "-111": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 38.93017529241891,
+          "second_algebraic_eigenvalue": 42.379117970936605,
+          "hermiticity_residual": 2.5762359087664516e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 39.92439161625478,
+          "second_algebraic_eigenvalue": 41.8393227378358,
+          "hermiticity_residual": 1.9576815062611277e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 39.32839925494845,
+          "second_algebraic_eigenvalue": 42.772218384509614,
+          "hermiticity_residual": 2.876298681375265e-14
+        }
+      },
+      "-110": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 38.33676132603932,
+          "second_algebraic_eigenvalue": 41.79335869020932,
+          "hermiticity_residual": 2.502485023044187e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 39.3294080918241,
+          "second_algebraic_eigenvalue": 41.251708478973406,
+          "hermiticity_residual": 2.011632685086491e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 38.7318473233841,
+          "second_algebraic_eigenvalue": 42.18334560558572,
+          "hermiticity_residual": 2.813214684568598e-14
+        }
+      },
+      "-109": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 37.74806286209018,
+          "second_algebraic_eigenvalue": 41.212279165478236,
+          "hermiticity_residual": 2.5871291760204882e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 38.7391366621059,
+          "second_algebraic_eigenvalue": 40.66877505344771,
+          "hermiticity_residual": 1.956122945534509e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 38.140004057193906,
+          "second_algebraic_eigenvalue": 41.599144984533694,
+          "hermiticity_residual": 2.7891866657791508e-14
+        }
+      },
+      "-108": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 37.164090000814525,
+          "second_algebraic_eigenvalue": 40.63589059834038,
+          "hermiticity_residual": 2.4862284288749114e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 38.1535874889033,
+          "second_algebraic_eigenvalue": 40.09053359839825,
+          "hermiticity_residual": 2.0572344904460707e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 37.552879680850445,
+          "second_algebraic_eigenvalue": 41.01962787854531,
+          "hermiticity_residual": 2.8440760692283024e-14
+        }
+      },
+      "-107": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 36.58485266118019,
+          "second_algebraic_eigenvalue": 40.06420396712082,
+          "hermiticity_residual": 2.5399162507069668e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 37.57277055057795,
+          "second_algebraic_eigenvalue": 39.51699502855363,
+          "hermiticity_residual": 1.8865097362905436e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 36.97048423357779,
+          "second_algebraic_eigenvalue": 40.444805414661516,
+          "hermiticity_residual": 2.7584488223182603e-14
+        }
+      },
+      "-106": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 36.010360588824895,
+          "second_algebraic_eigenvalue": 39.49723003450865,
+          "hermiticity_residual": 2.5105825527876158e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 36.99669565027318,
+          "second_algebraic_eigenvalue": 38.94817004707123,
+          "hermiticity_residual": 1.9857758837039518e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 36.392827575666075,
+          "second_algebraic_eigenvalue": 39.874688497723696,
+          "hermiticity_residual": 2.680468368052853e-14
+        }
+      },
+      "-105": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 35.44062336331121,
+          "second_algebraic_eigenvalue": 38.932881535146244,
+          "hermiticity_residual": 2.456370201511537e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 36.425372421170756,
+          "second_algebraic_eigenvalue": 38.384069152158325,
+          "hermiticity_residual": 1.848863848415513e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 35.81991939594492,
+          "second_algebraic_eigenvalue": 39.309287820125306,
+          "hermiticity_residual": 2.7653764171164832e-14
+        }
+      },
+      "-104": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 34.87565040310953,
+          "second_algebraic_eigenvalue": 38.367908575801636,
+          "hermiticity_residual": 2.4663445608122523e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 35.85881033556205,
+          "second_algebraic_eigenvalue": 37.824702647331485,
+          "hermiticity_residual": 1.874166251786517e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 35.25176922003354,
+          "second_algebraic_eigenvalue": 38.74402739183378,
+          "hermiticity_residual": 2.6361588418448502e-14
+        }
+      },
+      "-103": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 34.315450973646755,
+          "second_algebraic_eigenvalue": 37.80770914737315,
+          "hermiticity_residual": 2.4690867202612583e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 35.29701870854865,
+          "second_algebraic_eigenvalue": 37.27008064937115,
+          "hermiticity_residual": 1.853694582085622e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 34.688386414714614,
+          "second_algebraic_eigenvalue": 38.18064458773587,
+          "hermiticity_residual": 2.7396767341568574e-14
+        }
+      },
+      "-102": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 33.76003419266204,
+          "second_algebraic_eigenvalue": 37.252292367055425,
+          "hermiticity_residual": 2.411680751058543e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 34.740006707122575,
+          "second_algebraic_eigenvalue": 36.72021309409591,
+          "hermiticity_residual": 1.8458126425473496e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 34.129780195155064,
+          "second_algebraic_eigenvalue": 37.622038369045455,
+          "hermiticity_residual": 2.6783322664853702e-14
+        }
+      },
+      "-101": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 33.209409035763215,
+          "second_algebraic_eigenvalue": 36.7016672109897,
+          "hermiticity_residual": 2.4254307828130264e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 34.18778335311456,
+          "second_algebraic_eigenvalue": 36.175109746446026,
+          "hermiticity_residual": 1.8387275594643602e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 33.575959631870724,
+          "second_algebraic_eigenvalue": 37.06821780618756,
+          "hermiticity_residual": 2.705838956525161e-14
+        }
+      },
+      "-100": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 32.663584343307605,
+          "second_algebraic_eigenvalue": 36.15584251889568,
+          "hermiticity_residual": 2.3575400527288223e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 33.64035753160164,
+          "second_algebraic_eigenvalue": 35.63478020525545,
+          "hermiticity_residual": 1.7640186243883176e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 33.02693365407977,
+          "second_algebraic_eigenvalue": 36.51919182930712,
+          "hermiticity_residual": 2.640122940515998e-14
+        }
+      },
+      "-99": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 32.12256882391036,
+          "second_algebraic_eigenvalue": 35.61196115603955,
+          "hermiticity_residual": 2.4462252547462112e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 33.097737994640426,
+          "second_algebraic_eigenvalue": 35.099233911920024,
+          "hermiticity_residual": 1.7354882175420512e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 32.482711057574875,
+          "second_algebraic_eigenvalue": 35.97496923348601,
+          "hermiticity_residual": 2.6798774283381332e-14
+        }
+      },
+      "-98": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 31.586371061864007,
+          "second_algebraic_eigenvalue": 35.040252132424605,
+          "hermiticity_residual": 2.3718412666271902e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 32.559933366939546,
+          "second_algebraic_eigenvalue": 34.56848015533173,
+          "hermiticity_residual": 1.7440338981121077e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 31.943300509715954,
+          "second_algebraic_eigenvalue": 35.42087445958413,
+          "hermiticity_residual": 2.7143395306132755e-14
+        }
+      },
+      "-97": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 31.054999520107145,
+          "second_algebraic_eigenvalue": 34.473204680183514,
+          "hermiticity_residual": 2.3736998991605926e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 32.02695215190304,
+          "second_algebraic_eigenvalue": 34.042528078827374,
+          "hermiticity_residual": 1.7509351316284348e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 31.408710553069604,
+          "second_algebraic_eigenvalue": 34.8507176207211,
+          "hermiticity_residual": 2.6113203707099798e-14
+        }
+      },
+      "-96": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 30.528462547072742,
+          "second_algebraic_eigenvalue": 33.910833733192376,
+          "hermiticity_residual": 2.4131706430731048e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 31.49880273541951,
+          "second_algebraic_eigenvalue": 33.52138668645317,
+          "hermiticity_residual": 1.7165648980593683e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 30.87894961231499,
+          "second_algebraic_eigenvalue": 34.285227355082306,
+          "hermiticity_residual": 2.6445168644652275e-14
+        }
+      },
+      "-95": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 30.006768379669865,
+          "second_algebraic_eigenvalue": 33.35315401704694,
+          "hermiticity_residual": 2.3257146847416258e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 30.97549339056782,
+          "second_algebraic_eigenvalue": 33.005064848734094,
+          "hermiticity_residual": 1.810258684072962e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 30.354025998066227,
+          "second_algebraic_eigenvalue": 33.72441852524058,
+          "hermiticity_residual": 2.6373584165642644e-14
+        }
+      },
+      "-94": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 29.489925148524254,
+          "second_algebraic_eigenvalue": 32.8001800604555,
+          "hermiticity_residual": 2.4196726759433405e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 30.45703228379061,
+          "second_algebraic_eigenvalue": 32.49357130742909,
+          "hermiticity_residual": 1.7310827072694432e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 29.83394791116587,
+          "second_algebraic_eigenvalue": 33.16830579110392,
+          "hermiticity_residual": 2.6205524445358278e-14
+        }
+      },
+      "-93": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 28.97794088348384,
+          "second_algebraic_eigenvalue": 32.251926200062826,
+          "hermiticity_residual": 2.3176887563743332e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 29.94342747729951,
+          "second_algebraic_eigenvalue": 31.986914681658313,
+          "hermiticity_residual": 1.711542609761887e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 29.318723448208008,
+          "second_algebraic_eigenvalue": 32.61690361566181,
+          "hermiticity_residual": 2.6007357280114862e-14
+        }
+      },
+      "-92": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 28.470823516078777,
+          "second_algebraic_eigenvalue": 31.708406591161815,
+          "hermiticity_residual": 2.3646539779093823e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 29.434686934985073,
+          "second_algebraic_eigenvalue": 31.485103473517995,
+          "hermiticity_residual": 1.7535200809342943e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 28.80836060551539,
+          "second_algebraic_eigenvalue": 32.07022627519959,
+          "hermiticity_residual": 2.6116426089088646e-14
+        }
+      },
+      "-91": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 27.968580883929008,
+          "second_algebraic_eigenvalue": 31.16963521287822,
+          "hermiticity_residual": 2.314288733010339e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 28.930818526025554,
+          "second_algebraic_eigenvalue": 30.988146071955704,
+          "hermiticity_residual": 1.717424535666814e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 28.30286728344761,
+          "second_algebraic_eigenvalue": 31.528287864998354,
+          "hermiticity_residual": 2.586901390487367e-14
+        }
+      },
+      "-90": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 27.471220737223888,
+          "second_algebraic_eigenvalue": 30.635625877348765,
+          "hermiticity_residual": 2.3050337729701247e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 28.431830028362562,
+          "second_algebraic_eigenvalue": 30.4960507582877,
+          "hermiticity_residual": 1.711182021320871e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 27.80225129010978,
+          "second_algebraic_eigenvalue": 30.991102307917537,
+          "hermiticity_residual": 2.5186454259356452e-14
+        }
+      },
+      "-89": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 26.97875073948891,
+          "second_algebraic_eigenvalue": 30.10639223475983,
+          "hermiticity_residual": 2.3555052397633386e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 27.937729134426792,
+          "second_algebraic_eigenvalue": 30.008825711465217,
+          "hermiticity_residual": 1.6513486420828513e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 27.306520345243847,
+          "second_algebraic_eigenvalue": 30.458683360914844,
+          "hermiticity_residual": 2.5908739371676265e-14
+        }
+      },
+      "-88": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 26.491178472491157,
+          "second_algebraic_eigenvalue": 29.581947783014435,
+          "hermiticity_residual": 2.3000568794121577e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 27.448523453165684,
+          "second_algebraic_eigenvalue": 29.526479011318063,
+          "hermiticity_residual": 1.6049492333990374e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 26.815682085913892,
+          "second_algebraic_eigenvalue": 29.931044622980465,
+          "hermiticity_residual": 2.5693948922463238e-14
+        }
+      },
+      "-87": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 26.008511441385217,
+          "second_algebraic_eigenvalue": 29.062305871409464,
+          "hermiticity_residual": 2.3396256700879525e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 26.96422051433551,
+          "second_algebraic_eigenvalue": 29.04901864443756,
+          "hermiticity_residual": 1.713113648157426e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 26.329744067481062,
+          "second_algebraic_eigenvalue": 29.408199541594616,
+          "hermiticity_residual": 2.5462311062425107e-14
+        }
+      },
+      "-86": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 25.53075707710233,
+          "second_algebraic_eigenvalue": 28.547479709816297,
+          "hermiticity_residual": 2.3082211287288757e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 26.484827772997356,
+          "second_algebraic_eigenvalue": 28.576452507486685,
+          "hermiticity_residual": 1.5824308360697662e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 25.84871376994348,
+          "second_algebraic_eigenvalue": 28.890161419213456,
+          "hermiticity_residual": 2.5401292329221962e-14
+        }
+      },
+      "-85": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 25.057922738747695,
+          "second_algebraic_eigenvalue": 28.037482373396102,
+          "hermiticity_residual": 2.2183038187562966e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 26.010352612606443,
+          "second_algebraic_eigenvalue": 28.108788411886444,
+          "hermiticity_residual": 1.6042968967563585e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 25.37259859963149,
+          "second_algebraic_eigenvalue": 28.37694341946,
+          "hermiticity_residual": 2.6153773235395668e-14
+        }
+      },
+      "-84": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 24.590015720367436,
+          "second_algebraic_eigenvalue": 27.53232680932066,
+          "hermiticity_residual": 2.2404849521782162e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 25.540802347853077,
+          "second_algebraic_eigenvalue": 27.64603408778903,
+          "hermiticity_residual": 1.6073947113199303e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 24.901405894335447,
+          "second_algebraic_eigenvalue": 27.868558574734706,
+          "hermiticity_residual": 2.5145999562166612e-14
+        }
+      },
+      "-83": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 24.127043251116348,
+          "second_algebraic_eigenvalue": 27.03202584319613,
+          "hermiticity_residual": 2.2762105523102948e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 25.076184229544282,
+          "second_algebraic_eigenvalue": 27.188197188114252,
+          "hermiticity_residual": 1.6148880489013656e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 24.435142925452578,
+          "second_algebraic_eigenvalue": 27.365019790775186,
+          "hermiticity_residual": 2.5521210363468503e-14
+        }
+      },
+      "-82": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 23.66901250111057,
+          "second_algebraic_eigenvalue": 26.536592185290658,
+          "hermiticity_residual": 2.2656905800618464e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 24.616505446821392,
+          "second_algebraic_eigenvalue": 26.735285292945964,
+          "hermiticity_residual": 1.663393409126065e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 23.973816902196596,
+          "second_algebraic_eigenvalue": 26.866339854054523,
+          "hermiticity_residual": 2.494001965631123e-14
+        }
+      },
+      "-81": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 23.215930582724802,
+          "second_algebraic_eigenvalue": 26.04603843493787,
+          "hermiticity_residual": 2.2728801855650413e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 24.16177313106632,
+          "second_algebraic_eigenvalue": 26.287305912506625,
+          "hermiticity_residual": 1.5551271131389696e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 23.517434974946184,
+          "second_algebraic_eigenvalue": 26.372531437148602,
+          "hermiticity_residual": 2.5639467066338595e-14
+        }
+      },
+      "-80": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 22.7678045553361,
+          "second_algebraic_eigenvalue": 25.560377088178726,
+          "hermiticity_residual": 2.2183806749279518e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 23.711994358899517,
+          "second_algebraic_eigenvalue": 25.84426649163683,
+          "hermiticity_residual": 1.546541055116125e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 23.06600423867902,
+          "second_algebraic_eigenvalue": 25.883607104843712,
+          "hermiticity_residual": 2.5532977771696873e-14
+        }
+      },
+      "-79": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 22.324641428304027,
+          "second_algebraic_eigenvalue": 25.079620542043475,
+          "hermiticity_residual": 2.2629708571107984e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 23.267176156151166,
+          "second_algebraic_eigenvalue": 25.406174413330742,
+          "hermiticity_residual": 1.604342946631834e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 22.61953173491527,
+          "second_algebraic_eigenvalue": 25.399579318800143,
+          "hermiticity_residual": 2.5251562821737156e-14
+        }
+      },
+      "-78": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 21.886448163673162,
+          "second_algebraic_eigenvalue": 24.60378110174404,
+          "hermiticity_residual": 2.180837213468818e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 22.827325500127735,
+          "second_algebraic_eigenvalue": 24.973037002187645,
+          "hermiticity_residual": 1.5386490706483214e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 22.17802445742748,
+          "second_algebraic_eigenvalue": 24.920460445201126,
+          "hermiticity_residual": 2.5002736119446567e-14
+        }
+      },
+      "-77": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 21.453231679694813,
+          "second_algebraic_eigenvalue": 24.1328709838646,
+          "hermiticity_residual": 2.2250600025630014e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 22.392449323411938,
+          "second_algebraic_eigenvalue": 24.544861528647765,
+          "hermiticity_residual": 1.5873734271778068e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 21.741489353003104,
+          "second_algebraic_eigenvalue": 24.44626275900753,
+          "hermiticity_residual": 2.5458971612680183e-14
+        }
+      },
+      "-76": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 21.024998854225117,
+          "second_algebraic_eigenvalue": 23.666902323908346,
+          "hermiticity_residual": 2.2058124851346527e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 21.962554516902543,
+          "second_algebraic_eigenvalue": 24.121655211871655,
+          "hermiticity_residual": 1.499151097152818e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 21.309933326141874,
+          "second_algebraic_eigenvalue": 23.976998449090328,
+          "hermiticity_residual": 2.484430956085115e-14
+        }
+      },
+      "-75": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 20.601756527541973,
+          "second_algebraic_eigenvalue": 23.205887181207522,
+          "hermiticity_residual": 2.2199596827504944e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 21.5376479329246,
+          "second_algebraic_eigenvalue": 23.703425223835367,
+          "hermiticity_residual": 1.5408226155443342e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 20.883363242049043,
+          "second_algebraic_eigenvalue": 23.51267962558373,
+          "hermiticity_residual": 2.4832216933522002e-14
+        }
+      },
+      "-74": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 20.18351150537029,
+          "second_algebraic_eigenvalue": 22.74983754394617,
+          "hermiticity_residual": 2.1880938744824458e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 21.11773638851421,
+          "second_algebraic_eigenvalue": 23.290178692394882,
+          "hermiticity_residual": 1.543334961019804e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 20.461785928979765,
+          "second_algebraic_eigenvalue": 23.053318322521086,
+          "hermiticity_residual": 2.4707858708957916e-14
+        }
+      },
+      "-73": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 19.770270562512387,
+          "second_algebraic_eigenvalue": 22.298765334403008,
+          "hermiticity_residual": 2.2083065158638937e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 20.702826668646544,
+          "second_algebraic_eigenvalue": 22.88192270512679,
+          "hermiticity_residual": 1.5591251377460807e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 20.045208181895596,
+          "second_algebraic_eigenvalue": 22.598926506187563,
+          "hermiticity_residual": 2.5250686268198896e-14
+        }
+      },
+      "-72": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 19.36204044558366,
+          "second_algebraic_eigenvalue": 21.852682415474277,
+          "hermiticity_residual": 2.186500764390812e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 20.292925528595703,
+          "second_algebraic_eigenvalue": 22.478664312864588,
+          "hermiticity_residual": 1.5198723364521265e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 19.63363676585842,
+          "second_algebraic_eigenvalue": 22.14951607845765,
+          "hermiticity_residual": 2.4683988826192072e-14
+        }
+      },
+      "-71": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 18.958827876391062,
+          "second_algebraic_eigenvalue": 21.41160059405331,
+          "hermiticity_residual": 2.15280552649126e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 19.888039698391516,
+          "second_algebraic_eigenvalue": 22.08041053290959,
+          "hermiticity_residual": 1.4710761442128028e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 19.22707841912529,
+          "second_algebraic_eigenvalue": 21.705098882368993,
+          "hermiticity_residual": 2.487257828565451e-14
+        }
+      },
+      "-70": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 18.56063955505448,
+          "second_algebraic_eigenvalue": 20.975531628321384,
+          "hermiticity_residual": 2.1896094112955604e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 19.48817588496177,
+          "second_algebraic_eigenvalue": 21.687168352963802,
+          "hermiticity_residual": 1.5395652793272288e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 18.825539855775965,
+          "second_algebraic_eigenvalue": 21.265686708872465,
+          "hermiticity_residual": 2.4970810641106903e-14
+        }
+      },
+      "-69": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 18.16748216327237,
+          "second_algebraic_eigenvalue": 20.544487232163394,
+          "hermiticity_residual": 2.1876717446957348e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 19.09334077572731,
+          "second_algebraic_eigenvalue": 21.298944734194475,
+          "hermiticity_residual": 1.5927235913984336e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 18.429027769445987,
+          "second_algebraic_eigenvalue": 20.831291300214474,
+          "hermiticity_residual": 2.4662172168861116e-14
+        }
+      },
+      "-68": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 17.779362367419754,
+          "second_algebraic_eigenvalue": 20.118479080617387,
+          "hermiticity_residual": 2.139793646657426e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 18.7035410417657,
+          "second_algebraic_eigenvalue": 20.915746614694793,
+          "hermiticity_residual": 1.521020085624299e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 18.03754883632078,
+          "second_algebraic_eigenvalue": 20.40192435677391,
+          "hermiticity_residual": 2.4183881832481738e-14
+        }
+      },
+      "-67": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 17.396286821583654,
+          "second_algebraic_eigenvalue": 19.697518815478485,
+          "hermiticity_residual": 2.1780188287016546e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 18.31878334086211,
+          "second_algebraic_eigenvalue": 20.53758091378394,
+          "hermiticity_residual": 1.5948886862434882e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 17.651109718318395,
+          "second_algebraic_eigenvalue": 19.97759754199551,
+          "hermiticity_residual": 2.4814804034336862e-14
+        }
+      },
+      "-66": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 17.018262171721965,
+          "second_algebraic_eigenvalue": 19.28161805062839,
+          "hermiticity_residual": 2.1864276861596965e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 17.939074321416797,
+          "second_algebraic_eigenvalue": 20.164454535022255,
+          "hermiticity_residual": 1.498967212139511e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 17.26971706625291,
+          "second_algebraic_eigenvalue": 19.558322487523665,
+          "hermiticity_residual": 2.4373014434712983e-14
+        }
+      },
+      "-65": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 16.64529505790788,
+          "second_algebraic_eigenvalue": 18.87078837770415,
+          "hermiticity_residual": 2.1741265124068418e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 17.56442062520562,
+          "second_algebraic_eigenvalue": 19.7963743695937,
+          "hermiticity_residual": 1.5081849054486637e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 16.89337752414261,
+          "second_algebraic_eigenvalue": 19.14411079963975,
+          "hermiticity_residual": 2.4204647906996593e-14
+        }
+      },
+      "-64": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 16.277392118804237,
+          "second_algebraic_eigenvalue": 18.465041371932095,
+          "hermiticity_residual": 2.1781015873213104e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 17.194828890680498,
+          "second_algebraic_eigenvalue": 19.395090528384273,
+          "hermiticity_residual": 1.4600380936691378e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 16.5220977308986,
+          "second_algebraic_eigenvalue": 18.73497406371812,
+          "hermiticity_residual": 2.432714977270336e-14
+        }
+      },
+      "-63": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 15.914559994497576,
+          "second_algebraic_eigenvalue": 18.064388597525074,
+          "hermiticity_residual": 2.1589792081140676e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 16.830305757245675,
+          "second_algebraic_eigenvalue": 18.99273839179932,
+          "hermiticity_residual": 1.5269523184901295e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 16.155884325390645,
+          "second_algebraic_eigenvalue": 18.33092385067218,
+          "hermiticity_residual": 2.4313452640364153e-14
+        }
+      },
+      "-62": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 15.556805330439463,
+          "second_algebraic_eigenvalue": 17.668841613522904,
+          "hermiticity_residual": 2.1491969333986586e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 16.4708578682151,
+          "second_algebraic_eigenvalue": 18.595488192713013,
+          "hermiticity_residual": 1.4678393450169533e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 15.794743949079693,
+          "second_algebraic_eigenvalue": 17.93197172195523,
+          "hermiticity_residual": 2.4189161612519666e-14
+        }
+      },
+      "-61": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 15.204134780988223,
+          "second_algebraic_eigenvalue": 17.278411980043327,
+          "hermiticity_residual": 2.157267350361358e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 16.116491874508917,
+          "second_algebraic_eigenvalue": 18.20335149009938,
+          "hermiticity_residual": 1.4572109232465577e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 15.438683250034389,
+          "second_algebraic_eigenvalue": 17.538129236943895,
+          "hermiticity_residual": 2.411648802455404e-14
+        }
+      },
+      "-60": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 14.85655501340893,
+          "second_algebraic_eigenvalue": 16.89311126416244,
+          "hermiticity_residual": 2.138687617053908e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 15.767214438390866,
+          "second_algebraic_eigenvalue": 17.816339848216277,
+          "hermiticity_residual": 1.4965783850571427e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 15.087708886382048,
+          "second_algebraic_eigenvalue": 17.14940795678376,
+          "hermiticity_residual": 2.4178513316683642e-14
+        }
+      },
+      "-59": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 14.514072711439853,
+          "second_algebraic_eigenvalue": 16.512951046347204,
+          "hermiticity_residual": 2.1124660688243703e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 15.423032238160808,
+          "second_algebraic_eigenvalue": 17.43446484213993,
+          "hermiticity_residual": 1.47761682913991e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 14.741827530493499,
+          "second_algebraic_eigenvalue": 16.765819452817723,
+          "hermiticity_residual": 2.3842406207999578e-14
+        }
+      },
+      "-58": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 14.176694579787771,
+          "second_algebraic_eigenvalue": 16.137942926610805,
+          "hermiticity_residual": 2.1191508737681534e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 15.083951970628366,
+          "second_algebraic_eigenvalue": 17.05773806477741,
+          "hermiticity_residual": 1.4914657373398538e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 14.40104587252586,
+          "second_algebraic_eigenvalue": 16.387375310927503,
+          "hermiticity_residual": 2.3747685099175827e-14
+        }
+      },
+      "-57": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 13.844427347883185,
+          "second_algebraic_eigenvalue": 15.768098531314033,
+          "hermiticity_residual": 2.1381684125779516e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 14.749980356768408,
+          "second_algebraic_eigenvalue": 16.68617113298356,
+          "hermiticity_residual": 1.4670007074515603e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 14.065370624922455,
+          "second_algebraic_eigenvalue": 16.014087139228945,
+          "hermiticity_residual": 2.4171680855792878e-14
+        }
+      },
+      "-56": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 13.517277774777659,
+          "second_algebraic_eigenvalue": 15.403429520492733,
+          "hermiticity_residual": 2.115552812511476e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 14.421124145059583,
+          "second_algebraic_eigenvalue": 16.319775694648584,
+          "hermiticity_residual": 1.4563123999671688e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 13.73480852675486,
+          "second_algebraic_eigenvalue": 15.645966574814812,
+          "hermiticity_residual": 2.4490919410620895e-14
+        }
+      },
+      "-55": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 13.195252653045939,
+          "second_algebraic_eigenvalue": 15.043947594150506,
+          "hermiticity_residual": 2.11668070861468e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 14.097390116584002,
+          "second_algebraic_eigenvalue": 15.958563435815051,
+          "hermiticity_residual": 1.4226068366146732e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 13.409366347528444,
+          "second_algebraic_eigenvalue": 15.283025289974958,
+          "hermiticity_residual": 2.405126959287203e-14
+        }
+      },
+      "-54": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 12.878358814299382,
+          "second_algebraic_eigenvalue": 14.689664500135894,
+          "hermiticity_residual": 2.1025557961690252e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 13.778785089366202,
+          "second_algebraic_eigenvalue": 15.602546087448207,
+          "hermiticity_residual": 1.4467078406376293e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 13.089050892286284,
+          "second_algebraic_eigenvalue": 14.925274999752784,
+          "hermiticity_residual": 2.3940850701455128e-14
+        }
+      },
+      "-53": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 12.566603133419324,
+          "second_algebraic_eigenvalue": 14.340592041783626,
+          "hermiticity_residual": 2.0889317280663492e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 13.465315923115183,
+          "second_algebraic_eigenvalue": 15.25173543363714,
+          "hermiticity_residual": 1.4040909767238453e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 12.773869006679242,
+          "second_algebraic_eigenvalue": 14.572727469816419,
+          "hermiticity_residual": 2.3619606660305787e-14
+        }
+      },
+      "-52": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 12.25999253429482,
+          "second_algebraic_eigenvalue": 13.996742085844595,
+          "hermiticity_residual": 2.0908902172707932e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 13.15698952511217,
+          "second_algebraic_eigenvalue": 14.906143318961291,
+          "hermiticity_residual": 1.3894367227300105e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 12.4638275810924,
+          "second_algebraic_eigenvalue": 14.225394523653318,
+          "hermiticity_residual": 2.3849162835805308e-14
+        }
+      },
+      "-51": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 11.958533995034916,
+          "second_algebraic_eigenvalue": 13.65812657109425,
+          "hermiticity_residual": 2.0728844315770788e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 12.853812854434274,
+          "second_algebraic_eigenvalue": 14.565781657293073,
+          "hermiticity_residual": 1.3935644294188086e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 12.158933557177786,
+          "second_algebraic_eigenvalue": 13.883288051230917,
+          "hermiticity_residual": 2.3653582931494017e-14
+        }
+      },
+      "-50": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 11.662234553980783,
+          "second_algebraic_eigenvalue": 13.324757516773662,
+          "hermiticity_residual": 2.0559578008442405e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 12.555792928922871,
+          "second_algebraic_eigenvalue": 14.2306624401317,
+          "hermiticity_residual": 1.3661097854115716e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 11.859193932126402,
+          "second_algebraic_eigenvalue": 13.54642001688254,
+          "hermiticity_residual": 2.3753338443995014e-14
+        }
+      },
+      "-49": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 11.37110131541085,
+          "second_algebraic_eigenvalue": 12.996647032334206,
+          "hermiticity_residual": 2.0863419078091283e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 12.262936830006957,
+          "second_algebraic_eigenvalue": 13.900797745718162,
+          "hermiticity_residual": 1.3602416256864018e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 11.564615765679667,
+          "second_algebraic_eigenvalue": 13.214802469073533,
+          "hermiticity_residual": 2.3771721610488472e-14
+        }
+      },
+      "-48": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 11.085141456417809,
+          "second_algebraic_eigenvalue": 12.673807326637125,
+          "hermiticity_residual": 2.0724347025996023e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 11.97525170984329,
+          "second_algebraic_eigenvalue": 13.576199748708964,
+          "hermiticity_residual": 1.3438507597561692e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 11.27520618578863,
+          "second_algebraic_eigenvalue": 12.8884475490018,
+          "hermiticity_residual": 2.3653789789270045e-14
+        }
+      },
+      "-47": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 10.804362233475622,
+          "second_algebraic_eigenvalue": 12.356250718543286,
+          "hermiticity_residual": 2.0473044913472357e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 11.69274479769542,
+          "second_algebraic_eigenvalue": 13.256880730178638,
+          "hermiticity_residual": 1.3484174266358098e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 10.990972395047804,
+          "second_algebraic_eigenvalue": 12.567367501368016,
+          "hermiticity_residual": 2.366536011535595e-14
+        }
+      },
+      "-46": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 10.528770989959026,
+          "second_algebraic_eigenvalue": 12.043989647939854,
+          "hermiticity_residual": 2.0496765550742117e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 11.415423407044798,
+          "second_algebraic_eigenvalue": 12.942853088323755,
+          "hermiticity_residual": 1.3376322038940486e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 10.71192167817383,
+          "second_algebraic_eigenvalue": 12.2515746839392,
+          "hermiticity_residual": 2.347126966041281e-14
+        }
+      },
+      "-45": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 10.258375163574666,
+          "second_algebraic_eigenvalue": 11.737036686739426,
+          "hermiticity_residual": 2.045248269684574e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 11.143294943388037,
+          "second_algebraic_eigenvalue": 12.634129349974623,
+          "hermiticity_residual": 1.3420706352912784e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 10.438061409008142,
+          "second_algebraic_eigenvalue": 11.94108157939327,
+          "hermiticity_residual": 2.3495685899941995e-14
+        }
+      },
+      "-44": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 9.993182295115464,
+          "second_algebraic_eigenvalue": 11.43540455192096,
+          "hermiticity_residual": 2.0379055203954058e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 10.876366912042236,
+          "second_algebraic_eigenvalue": 12.330722182069103,
+          "hermiticity_residual": 1.3152985942734719e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 10.169399058872134,
+          "second_algebraic_eigenvalue": 11.63590080647542,
+          "hermiticity_residual": 2.343679473997871e-14
+        }
+      },
+      "-43": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 9.733200036885666,
+          "second_algebraic_eigenvalue": 11.139106117887668,
+          "hermiticity_residual": 2.0492256334970258e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 10.614646927117484,
+          "second_algebraic_eigenvalue": 12.032644405316876,
+          "hermiticity_residual": 1.3147875130129123e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 9.905942204435185,
+          "second_algebraic_eigenvalue": 11.336045133263198,
+          "hermiticity_residual": 2.326895161845771e-14
+        }
+      },
+      "-42": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 9.47843616255469,
+          "second_algebraic_eigenvalue": 10.848154430792832,
+          "hermiticity_residual": 2.0477424912772868e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 10.358142720903155,
+          "second_algebraic_eigenvalue": 11.739909006832786,
+          "hermiticity_residual": 1.3062710553946273e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 9.647698537470903,
+          "second_algebraic_eigenvalue": 11.041527489701627,
+          "hermiticity_residual": 2.3353918815696156e-14
+        }
+      },
+      "-41": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 9.228898577322695,
+          "second_algebraic_eigenvalue": 10.562562723563184,
+          "hermiticity_residual": 2.029915578385453e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 10.106862153375316,
+          "second_algebraic_eigenvalue": 11.452529155739144,
+          "hermiticity_residual": 1.3252225747967888e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 9.394675874330172,
+          "second_algebraic_eigenvalue": 10.7523609826356,
+          "hermiticity_residual": 2.3320554344102575e-14
+        }
+      },
+      "-40": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 8.984595328967501,
+          "second_algebraic_eigenvalue": 10.282344431776627,
+          "hermiticity_residual": 2.05023871438549e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 9.860813223518882,
+          "second_algebraic_eigenvalue": 11.170518218181137,
+          "hermiticity_residual": 1.2969930075802604e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 9.14688216647405,
+          "second_algebraic_eigenvalue": 10.468558910502804,
+          "hermiticity_residual": 2.330212670732583e-14
+        }
+      },
+      "-39": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 8.745534619865637,
+          "second_algebraic_eigenvalue": 10.007513210911672,
+          "hermiticity_residual": 2.0236094457310395e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 9.620004080861271,
+          "second_algebraic_eigenvalue": 10.893889774273205,
+          "hermiticity_residual": 1.2868229298520565e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 8.904325511862215,
+          "second_algebraic_eigenvalue": 10.190134780311944,
+          "hermiticity_residual": 2.3419498734701986e-14
+        }
+      },
+      "-38": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 8.511724819973391,
+          "second_algebraic_eigenvalue": 9.738082955066737,
+          "hermiticity_residual": 2.0167428798776546e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 9.384443037996629,
+          "second_algebraic_eigenvalue": 10.622657636525418,
+          "hermiticity_residual": 1.2853919852082125e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 8.667014167156594,
+          "second_algebraic_eigenvalue": 9.917102324984096,
+          "hermiticity_residual": 2.3217893340692158e-14
+        }
+      },
+      "-37": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 8.283174480984048,
+          "second_algebraic_eigenvalue": 9.474067817162041,
+          "hermiticity_residual": 2.0226770524886542e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 9.154138584251768,
+          "second_algebraic_eigenvalue": 10.356835869284065,
+          "hermiticity_residual": 1.297088547456767e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 8.434956561280305,
+          "second_algebraic_eigenvalue": 9.649475522567108,
+          "hermiticity_residual": 2.3091328166307618e-14
+        }
+      },
+      "-36": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 8.05989235157191,
+          "second_algebraic_eigenvalue": 9.215482230639662,
+          "hermiticity_residual": 2.0206439507063432e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 8.929099401002802,
+          "second_algebraic_eigenvalue": 10.096438809910119,
+          "hermiticity_residual": 1.30317567755721e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 8.20816130986181,
+          "second_algebraic_eigenvalue": 9.38726861685729,
+          "hermiticity_residual": 2.3125768956955057e-14
+        }
+      },
+      "-35": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 7.841887394448202,
+          "second_algebraic_eigenvalue": 8.962340933142903,
+          "hermiticity_residual": 2.0193137990374483e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 8.709334377625208,
+          "second_algebraic_eigenvalue": 9.841481091969285,
+          "hermiticity_residual": 1.2877616701157408e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 7.986637230978031,
+          "second_algebraic_eigenvalue": 9.130496140111566,
+          "hermiticity_residual": 2.3232785267126966e-14
+        }
+      },
+      "-34": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 7.629168804693753,
+          "second_algebraic_eigenvalue": 8.714658992619936,
+          "hermiticity_residual": 2.0165721129800942e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 8.494852629508305,
+          "second_algebraic_eigenvalue": 9.591977670218597,
+          "hermiticity_residual": 1.2870731211225979e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 7.770393362550735,
+          "second_algebraic_eigenvalue": 8.87917293694048,
+          "hermiticity_residual": 2.310260258819591e-14
+        }
+      },
+      "-33": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 7.421746029879849,
+          "second_algebraic_eigenvalue": 8.472451835266103,
+          "hermiticity_residual": 2.0166640627393737e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 8.28566351767757,
+          "second_algebraic_eigenvalue": 9.347943848218225,
+          "hermiticity_residual": 1.2756272023134542e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 7.55943898159755,
+          "second_algebraic_eigenvalue": 8.633314191562775,
+          "hermiticity_residual": 2.2985003274035062e-14
+        }
+      },
+      "-32": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 7.219628792626434,
+          "second_algebraic_eigenvalue": 8.235735276673385,
+          "hermiticity_residual": 1.993757207031546e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 8.081776670517673,
+          "second_algebraic_eigenvalue": 9.10939530809448,
+          "hermiticity_residual": 1.2680734101437576e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 7.353783624766735,
+          "second_algebraic_eigenvalue": 8.392935456354454,
+          "hermiticity_residual": 2.295215885674761e-14
+        }
+      },
+      "-31": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 7.022827115274081,
+          "second_algebraic_eigenvalue": 8.004525555765323,
+          "hermiticity_residual": 1.998395526080251e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 7.883202007529336,
+          "second_algebraic_eigenvalue": 8.876348143667405,
+          "hermiticity_residual": 1.2765256450496068e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 7.153437111690585,
+          "second_algebraic_eigenvalue": 8.158052684060927,
+          "hermiticity_residual": 2.3012530785447037e-14
+        }
+      },
+      "-30": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 6.831351347276442,
+          "second_algebraic_eigenvalue": 7.778839372387006,
+          "hermiticity_residual": 2.0073297747771687e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 7.689949765890615,
+          "second_algebraic_eigenvalue": 8.648818896746835,
+          "hermiticity_residual": 1.2656514168434994e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 6.958409570495549,
+          "second_algebraic_eigenvalue": 7.928682262865948,
+          "hermiticity_residual": 2.2976977820849955e-14
+        }
+      },
+      "-29": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 6.645212195784586,
+          "second_algebraic_eigenvalue": 7.5586939285214765,
+          "hermiticity_residual": 2.0024821912608442e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 7.502030529877931,
+          "second_algebraic_eigenvalue": 8.426824597063352,
+          "hermiticity_residual": 1.2735469673888661e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 6.768711466398894,
+          "second_algebraic_eigenvalue": 7.704841055214743,
+          "hermiticity_residual": 2.288428436167544e-14
+        }
+      },
+      "-28": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 6.464420759774059,
+          "second_algebraic_eigenvalue": 7.344106974744436,
+          "hermiticity_residual": 2.0058685418920812e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 7.319455263840469,
+          "second_algebraic_eigenvalue": 8.210382806853527,
+          "hermiticity_residual": 1.2658262345726682e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 6.5843536330992,
+          "second_algebraic_eigenvalue": 7.486546440614815,
+          "hermiticity_residual": 2.3004295753980073e-14
+        }
+      },
+      "-27": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 6.288988568398067,
+          "second_algebraic_eigenvalue": 7.135096860934117,
+          "hermiticity_residual": 1.9914035950980814e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 7.142235348997394,
+          "second_algebraic_eigenvalue": 7.9995116701666635,
+          "hermiticity_residual": 1.2766535765305262e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 6.40534730851072,
+          "second_algebraic_eigenvalue": 7.273816363416905,
+          "hermiticity_residual": 2.2921690688924557e-14
+        }
+      },
+      "-26": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 6.118927624185632,
+          "second_algebraic_eigenvalue": 6.931682593952874,
+          "hermiticity_residual": 1.9895155601647786e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.970382624975244,
+          "second_algebraic_eigenvalue": 7.7942299680292795,
+          "hermiticity_residual": 1.2473858942750948e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 6.2317041745001704,
+          "second_algebraic_eigenvalue": 7.066669385811361,
+          "hermiticity_residual": 2.2909288999205525e-14
+        }
+      },
+      "-25": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.9542504518428405,
+          "second_algebraic_eigenvalue": 6.733883901511964,
+          "hermiticity_residual": 1.9864952235877916e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.803909436597777,
+          "second_algebraic_eigenvalue": 7.594557180232818,
+          "hermiticity_residual": 1.2388273438679895e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 6.063436401965593,
+          "second_algebraic_eigenvalue": 6.865124747403753,
+          "hermiticity_residual": 2.2821054429182985e-14
+        }
+      },
+      "-24": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.794970153774717,
+          "second_algebraic_eigenvalue": 6.541721304715505,
+          "hermiticity_residual": 1.981515232309107e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.642828687064464,
+          "second_algebraic_eigenvalue": 7.400513554779604,
+          "hermiticity_residual": 1.2322553506767037e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.900556701603993,
+          "second_algebraic_eigenvalue": 6.6692024319756875,
+          "hermiticity_residual": 2.281192916917196e-14
+        }
+      },
+      "-23": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.641100473597962,
+          "second_algebraic_eigenvalue": 6.355216199696397,
+          "hermiticity_residual": 1.977986680090265e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.487153898678356,
+          "second_algebraic_eigenvalue": 7.212120186275982,
+          "hermiticity_residual": 1.239968530009135e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.743078382107877,
+          "second_algebraic_eigenvalue": 6.478923242657261,
+          "hermiticity_residual": 2.2819581233247477e-14
+        }
+      },
+      "-22": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.492655868920455,
+          "second_algebraic_eigenvalue": 6.174390950609351,
+          "hermiticity_residual": 1.9758884742330044e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.3368992822893535,
+          "second_algebraic_eigenvalue": 7.029399105055997,
+          "hermiticity_residual": 1.2271627271190935e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.591015416483005,
+          "second_algebraic_eigenvalue": 6.294308887320909,
+          "hermiticity_residual": 2.2789266485664914e-14
+        }
+      },
+      "-21": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.349651595419583,
+          "second_algebraic_eigenvalue": 5.999268995666655,
+          "hermiticity_residual": 1.9667881733672382e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.192079817429308,
+          "second_algebraic_eigenvalue": 6.852373378524913,
+          "hermiticity_residual": 1.2327518404889969e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.444382518346973,
+          "second_algebraic_eigenvalue": 6.115382075645417,
+          "hermiticity_residual": 2.2755608511517793e-14
+        }
+      },
+      "-20": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.2121038046461985,
+          "second_algebraic_eigenvalue": 5.829874968929576,
+          "hermiticity_residual": 1.9712831723732937e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.05271134523708,
+          "second_algebraic_eigenvalue": 6.681067227424659,
+          "hermiticity_residual": 1.2241163877971033e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.303195230466826,
+          "second_algebraic_eigenvalue": 5.942166630086381,
+          "hermiticity_residual": 2.2822665195026908e-14
+        }
+      },
+      "-19": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.080029658256811,
+          "second_algebraic_eigenvalue": 5.666234840791161,
+          "hermiticity_residual": 1.9642615184047375e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.918810676783588,
+          "second_algebraic_eigenvalue": 6.515506159693893,
+          "hermiticity_residual": 1.226861402092461e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.167470027422922,
+          "second_algebraic_eigenvalue": 5.7746876134954945,
+          "hermiticity_residual": 2.2692403222711068e-14
+        }
+      },
+      "-18": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.9534474627033624,
+          "second_algebraic_eigenvalue": 5.508376081159428,
+          "hermiticity_residual": 1.9663364942516654e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.790395720549099,
+          "second_algebraic_eigenvalue": 6.355717125609405,
+          "hermiticity_residual": 1.2309528512594284e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.037224436399423,
+          "second_algebraic_eigenvalue": 5.612971476739515,
+          "hermiticity_residual": 2.2668957692649042e-14
+        }
+      },
+      "-17": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.832376829082792,
+          "second_algebraic_eigenvalue": 5.356327850003291,
+          "hermiticity_residual": 1.959284621384903e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.667485633174118,
+          "second_algebraic_eigenvalue": 6.20172869859523,
+          "hermiticity_residual": 1.2147386354621506e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.912477179552223,
+          "second_algebraic_eigenvalue": 5.457046230380815,
+          "hermiticity_residual": 2.2690085269709694e-14
+        }
+      },
+      "-16": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.716838864589096,
+          "second_algebraic_eigenvalue": 5.210121221711212,
+          "hermiticity_residual": 1.961808833846825e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.550100999600901,
+          "second_algebraic_eigenvalue": 6.053571287530187,
+          "hermiticity_residual": 1.2173884865453009e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.793248343607802,
+          "second_algebraic_eigenvalue": 5.306941645711699,
+          "hermiticity_residual": 2.2684717873158427e-14
+        }
+      },
+      "-15": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.606856404029807,
+          "second_algebraic_eigenvalue": 5.0697894511144375,
+          "hermiticity_residual": 1.960608007160551e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.438264050146047,
+          "second_algebraic_eigenvalue": 5.911277387862627,
+          "hermiticity_residual": 1.2218048759643279e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.679559583666745,
+          "second_algebraic_eigenvalue": 5.162689492072668,
+          "hermiticity_residual": 2.264747996958735e-14
+        }
+      },
+      "-14": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.502454292708446,
+          "second_algebraic_eigenvalue": 4.935368291485062,
+          "hermiticity_residual": 1.9595303433480326e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.33199892475195,
+          "second_algebraic_eigenvalue": 5.77488188100166,
+          "hermiticity_residual": 1.2146639378018234e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.571434370315762,
+          "second_algebraic_eigenvalue": 5.024323818821506,
+          "hermiticity_residual": 2.2620230023885833e-14
+        }
+      },
+      "-13": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.403659736248887,
+          "second_algebraic_eigenvalue": 4.806896378329283,
+          "hermiticity_residual": 1.9578022693162608e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.231331998453529,
+          "second_algebraic_eigenvalue": 5.644422394367494,
+          "hermiticity_residual": 1.218997736651324e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.468898292902033,
+          "second_algebraic_eigenvalue": 4.8918812936313145,
+          "hermiticity_residual": 2.2627641092155923e-14
+        }
+      },
+      "-12": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.310502738987793,
+          "second_algebraic_eigenvalue": 4.684415697161398,
+          "hermiticity_residual": 1.9590017252020655e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.1362922873258015,
+          "second_algebraic_eigenvalue": 5.51993973881288,
+          "hermiticity_residual": 1.213926667080609e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.371979436103398,
+          "second_algebraic_eigenvalue": 4.765401611908044,
+          "hermiticity_residual": 2.2630106985934828e-14
+        }
+      },
+      "-11": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.223016661750629,
+          "second_algebraic_eigenvalue": 4.567972160001263,
+          "hermiticity_residual": 1.9587637030942004e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.046911962323549,
+          "second_algebraic_eigenvalue": 5.40147844564048,
+          "hermiticity_residual": 1.2059084650728605e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.280708854083415,
+          "second_algebraic_eigenvalue": 4.644927997718265,
+          "hermiticity_residual": 2.263205408091623e-14
+        }
+      },
+      "-10": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.141238943916036,
+          "second_algebraic_eigenvalue": 4.4576163246413145,
+          "hermiticity_residual": 1.956599005267992e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.963227010440383,
+          "second_algebraic_eigenvalue": 5.289087433646699,
+          "hermiticity_residual": 1.202114438210995e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.195121177175063,
+          "second_algebraic_eigenvalue": 4.5305078234881355,
+          "hermiticity_residual": 2.2572286420330233e-14
+        }
+      },
+      "-9": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.065212057144755,
+          "second_algebraic_eigenvalue": 4.353404304278595,
+          "hermiticity_residual": 1.9514926868207492e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.885278101801372,
+          "second_algebraic_eigenvalue": 5.182820848704019,
+          "hermiticity_residual": 1.2067585055441411e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.115255402250129,
+          "second_algebraic_eigenvalue": 4.422193386644381,
+          "hermiticity_residual": 2.258610443452862e-14
+        }
+      },
+      "-8": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.9949847949379143,
+          "second_algebraic_eigenvalue": 4.25539893529483,
+          "hermiticity_residual": 1.9546096662495674e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.8131117525465585,
+          "second_algebraic_eigenvalue": 5.082739135370143,
+          "hermiticity_residual": 1.1981151528316568e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.04115594435588,
+          "second_algebraic_eigenvalue": 4.320042896568335,
+          "hermiticity_residual": 2.2618359285085857e-14
+        }
+      },
+      "-7": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.930614065656836,
+          "second_algebraic_eigenvalue": 4.163671300863388,
+          "hermiticity_residual": 1.9578061368615537e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.746781925625782,
+          "second_algebraic_eigenvalue": 4.988910424598967,
+          "hermiticity_residual": 1.2057308796038007e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.972874071248441,
+          "second_algebraic_eigenvalue": 4.224121748570168,
+          "hermiticity_residual": 2.2580628799021308e-14
+        }
+      },
+      "-6": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.8721674706962825,
+          "second_algebraic_eigenvalue": 4.078302750658748,
+          "hermiticity_residual": 1.950148196464008e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.686352304792284,
+          "second_algebraic_eigenvalue": 4.90141234998891,
+          "hermiticity_residual": 1.1976225433499178e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.9104699189915353,
+          "second_algebraic_eigenvalue": 4.134504196469273,
+          "hermiticity_residual": 2.260299065969999e-14
+        }
+      },
+      "-5": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.819727167212367,
+          "second_algebraic_eigenvalue": 3.999387593764327,
+          "hermiticity_residual": 1.9511040192692345e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.631899647746668,
+          "second_algebraic_eigenvalue": 4.820334387785476,
+          "hermiticity_residual": 1.21297867425915e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.854015427828468,
+          "second_algebraic_eigenvalue": 4.05127558899243,
+          "hermiticity_residual": 2.255064665787172e-14
+        }
+      },
+      "-4": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.7733959447693,
+          "second_algebraic_eigenvalue": 3.9270363611226395,
+          "hermiticity_residual": 1.9616241896967462e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.583518934980656,
+          "second_algebraic_eigenvalue": 4.745780261593799,
+          "hermiticity_residual": 1.1975531830810584e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.8035988141864783,
+          "second_algebraic_eigenvalue": 3.9745354183121124,
+          "hermiticity_residual": 2.2588121938855554e-14
+        }
+      },
+      "4": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.8035988141871284,
+          "second_algebraic_eigenvalue": 3.9745354183118193,
+          "hermiticity_residual": 1.950796682338111e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.583518934980924,
+          "second_algebraic_eigenvalue": 4.745780261593254,
+          "hermiticity_residual": 1.1974174362369189e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.7733959447691454,
+          "second_algebraic_eigenvalue": 3.9270363611226644,
+          "hermiticity_residual": 2.260037833919207e-14
+        }
+      },
+      "5": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.8540154278275454,
+          "second_algebraic_eigenvalue": 4.0512755889920715,
+          "hermiticity_residual": 1.957109134553306e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.631899647746787,
+          "second_algebraic_eigenvalue": 4.820334387784891,
+          "hermiticity_residual": 1.2129109620500468e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.819727167211938,
+          "second_algebraic_eigenvalue": 3.999387593763635,
+          "hermiticity_residual": 2.2549787066803587e-14
+        }
+      },
+      "6": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.9104699189923418,
+          "second_algebraic_eigenvalue": 4.13450419647055,
+          "hermiticity_residual": 1.9598609887603875e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.686352304791166,
+          "second_algebraic_eigenvalue": 4.901412349990531,
+          "hermiticity_residual": 1.1976444273139065e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.8721674706959472,
+          "second_algebraic_eigenvalue": 4.078302750658508,
+          "hermiticity_residual": 2.2558322300104918e-14
+        }
+      },
+      "7": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 3.972874071247034,
+          "second_algebraic_eigenvalue": 4.224121748572205,
+          "hermiticity_residual": 1.9527068368425288e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.746781925625889,
+          "second_algebraic_eigenvalue": 4.988910424599791,
+          "hermiticity_residual": 1.2054501773289946e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.9306140656583155,
+          "second_algebraic_eigenvalue": 4.163671300865432,
+          "hermiticity_residual": 2.2544952130421455e-14
+        }
+      },
+      "8": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.041155944356117,
+          "second_algebraic_eigenvalue": 4.3200428965676725,
+          "hermiticity_residual": 1.9529389748841454e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.813111752546244,
+          "second_algebraic_eigenvalue": 5.082739135371834,
+          "hermiticity_residual": 1.1981818342768197e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 3.994984794937878,
+          "second_algebraic_eigenvalue": 4.255398935294161,
+          "hermiticity_residual": 2.2534258352178365e-14
+        }
+      },
+      "9": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.115255402252679,
+          "second_algebraic_eigenvalue": 4.42219338664497,
+          "hermiticity_residual": 1.9545163449075614e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.8852781018005285,
+          "second_algebraic_eigenvalue": 5.182820848700839,
+          "hermiticity_residual": 1.2069547132915122e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.065212057143427,
+          "second_algebraic_eigenvalue": 4.353404304280329,
+          "hermiticity_residual": 2.258381040516604e-14
+        }
+      },
+      "10": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.1951211771782155,
+          "second_algebraic_eigenvalue": 4.530507823489703,
+          "hermiticity_residual": 1.9675316595975262e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 4.963227010436677,
+          "second_algebraic_eigenvalue": 5.289087433644951,
+          "hermiticity_residual": 1.201515030474532e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.141238943914498,
+          "second_algebraic_eigenvalue": 4.457616324644519,
+          "hermiticity_residual": 2.2648967290325504e-14
+        }
+      },
+      "11": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.280708854081983,
+          "second_algebraic_eigenvalue": 4.644927997718883,
+          "hermiticity_residual": 1.9615857101585977e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.046911962324956,
+          "second_algebraic_eigenvalue": 5.40147844564241,
+          "hermiticity_residual": 1.2058481444959952e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.223016661748888,
+          "second_algebraic_eigenvalue": 4.567972160005279,
+          "hermiticity_residual": 2.260135595659977e-14
+        }
+      },
+      "12": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.371979436104657,
+          "second_algebraic_eigenvalue": 4.765401611907148,
+          "hermiticity_residual": 1.9640783903358095e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.1362922873199155,
+          "second_algebraic_eigenvalue": 5.51993973881347,
+          "hermiticity_residual": 1.2143303949481607e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.310502738985754,
+          "second_algebraic_eigenvalue": 4.684415697161025,
+          "hermiticity_residual": 2.2644879635480768e-14
+        }
+      },
+      "13": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.468898292903222,
+          "second_algebraic_eigenvalue": 4.891881293633879,
+          "hermiticity_residual": 1.9575973500895082e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.23133199845007,
+          "second_algebraic_eigenvalue": 5.644422394361406,
+          "hermiticity_residual": 1.2182435634736311e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.40365973625435,
+          "second_algebraic_eigenvalue": 4.80689637832723,
+          "hermiticity_residual": 2.2688258794991538e-14
+        }
+      },
+      "14": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.5714343703159415,
+          "second_algebraic_eigenvalue": 5.024323818821211,
+          "hermiticity_residual": 1.9598978303627836e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.33199892475312,
+          "second_algebraic_eigenvalue": 5.774881880996588,
+          "hermiticity_residual": 1.2148837891024017e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.502454292712322,
+          "second_algebraic_eigenvalue": 4.935368291484638,
+          "hermiticity_residual": 2.2659592164281248e-14
+        }
+      },
+      "15": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.679559583663001,
+          "second_algebraic_eigenvalue": 5.162689492074905,
+          "hermiticity_residual": 1.9727091264915864e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.438264050147281,
+          "second_algebraic_eigenvalue": 5.911277387861637,
+          "hermiticity_residual": 1.221075234078168e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.606856404030621,
+          "second_algebraic_eigenvalue": 5.069789451120663,
+          "hermiticity_residual": 2.2633149540205604e-14
+        }
+      },
+      "16": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.793248343607845,
+          "second_algebraic_eigenvalue": 5.306941645706695,
+          "hermiticity_residual": 1.9701548173233413e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.550100999597083,
+          "second_algebraic_eigenvalue": 6.053571287531039,
+          "hermiticity_residual": 1.2167878705356924e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.716838864588942,
+          "second_algebraic_eigenvalue": 5.210121221717033,
+          "hermiticity_residual": 2.2632589983071384e-14
+        }
+      },
+      "17": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 4.9124771795401845,
+          "second_algebraic_eigenvalue": 5.457046230375574,
+          "hermiticity_residual": 1.9629344489689858e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.667485633169016,
+          "second_algebraic_eigenvalue": 6.201728698596718,
+          "hermiticity_residual": 1.2132506537805344e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.832376829074332,
+          "second_algebraic_eigenvalue": 5.3563278499935025,
+          "hermiticity_residual": 2.2671052731459267e-14
+        }
+      },
+      "18": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.037224436395011,
+          "second_algebraic_eigenvalue": 5.612971476744997,
+          "hermiticity_residual": 1.9677959303098967e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.790395720551752,
+          "second_algebraic_eigenvalue": 6.35571712561733,
+          "hermiticity_residual": 1.22932376071412e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 4.953447462708432,
+          "second_algebraic_eigenvalue": 5.508376081157392,
+          "hermiticity_residual": 2.2706412932327275e-14
+        }
+      },
+      "19": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.1674700274126,
+          "second_algebraic_eigenvalue": 5.774687613508082,
+          "hermiticity_residual": 1.968509404444265e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 5.918810676786426,
+          "second_algebraic_eigenvalue": 6.515506159705056,
+          "hermiticity_residual": 1.2265582172965852e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.080029658253922,
+          "second_algebraic_eigenvalue": 5.6662348408002305,
+          "hermiticity_residual": 2.2653257863498873e-14
+        }
+      },
+      "20": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.30319523045169,
+          "second_algebraic_eigenvalue": 5.94216663009499,
+          "hermiticity_residual": 1.977804870596962e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.052711345233016,
+          "second_algebraic_eigenvalue": 6.68106722741347,
+          "hermiticity_residual": 1.2254378723561868e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.21210380464959,
+          "second_algebraic_eigenvalue": 5.829874968929065,
+          "hermiticity_residual": 2.2742574428867828e-14
+        }
+      },
+      "21": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.444382518357179,
+          "second_algebraic_eigenvalue": 6.115382075634242,
+          "hermiticity_residual": 1.97857460354497e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.192079817439467,
+          "second_algebraic_eigenvalue": 6.8523733785332865,
+          "hermiticity_residual": 1.234330449484202e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.349651595429634,
+          "second_algebraic_eigenvalue": 5.999268995650839,
+          "hermiticity_residual": 2.2744588575375372e-14
+        }
+      },
+      "22": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.591015416468045,
+          "second_algebraic_eigenvalue": 6.294308887307545,
+          "hermiticity_residual": 1.9765757728391335e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.336899282297711,
+          "second_algebraic_eigenvalue": 7.029399105065224,
+          "hermiticity_residual": 1.226065146129363e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.492655868914968,
+          "second_algebraic_eigenvalue": 6.174390950606826,
+          "hermiticity_residual": 2.272684251684127e-14
+        }
+      },
+      "23": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.743078382112314,
+          "second_algebraic_eigenvalue": 6.4789232426522485,
+          "hermiticity_residual": 1.9853377919621318e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.487153898664257,
+          "second_algebraic_eigenvalue": 7.212120186267425,
+          "hermiticity_residual": 1.240554956238609e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.641100473607056,
+          "second_algebraic_eigenvalue": 6.355216199702674,
+          "hermiticity_residual": 2.2779604982248263e-14
+        }
+      },
+      "24": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 5.9005567015952085,
+          "second_algebraic_eigenvalue": 6.669202431978826,
+          "hermiticity_residual": 1.9810555147670487e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.642828687054344,
+          "second_algebraic_eigenvalue": 7.400513554781583,
+          "hermiticity_residual": 1.2313021359936939e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.7949701537881175,
+          "second_algebraic_eigenvalue": 6.541721304718431,
+          "hermiticity_residual": 2.2775659003502512e-14
+        }
+      },
+      "25": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 6.063436401976994,
+          "second_algebraic_eigenvalue": 6.865124747408873,
+          "hermiticity_residual": 1.9812712198407824e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.803909436603615,
+          "second_algebraic_eigenvalue": 7.594557180244486,
+          "hermiticity_residual": 1.2366838100832636e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 5.954250451839814,
+          "second_algebraic_eigenvalue": 6.7338839015073475,
+          "hermiticity_residual": 2.2850156790603596e-14
+        }
+      },
+      "26": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 6.231704174505312,
+          "second_algebraic_eigenvalue": 7.066669385797345,
+          "hermiticity_residual": 1.9904120588139e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 6.9703826249980665,
+          "second_algebraic_eigenvalue": 7.794229968031505,
+          "hermiticity_residual": 1.2461080469002169e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 6.118927624201571,
+          "second_algebraic_eigenvalue": 6.931682593952966,
+          "hermiticity_residual": 2.286815916998182e-14
+        }
+      },
+      "27": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 6.405347308518216,
+          "second_algebraic_eigenvalue": 7.273816363401564,
+          "hermiticity_residual": 1.990959292243041e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 7.142235349019554,
+          "second_algebraic_eigenvalue": 7.999511670154163,
+          "hermiticity_residual": 1.2774823596141446e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 6.288988568426284,
+          "second_algebraic_eigenvalue": 7.135096860951368,
+          "hermiticity_residual": 2.2825478806523128e-14
+        }
+      },
+      "28": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 6.5843536330790595,
+          "second_algebraic_eigenvalue": 7.486546440635779,
+          "hermiticity_residual": 2.00440026033532e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 7.31945526385654,
+          "second_algebraic_eigenvalue": 8.210382806846383,
+          "hermiticity_residual": 1.2706547716028067e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 6.46442075977,
+          "second_algebraic_eigenvalue": 7.344106974738066,
+          "hermiticity_residual": 2.3103631128268272e-14
+        }
+      },
+      "29": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 6.768711466399944,
+          "second_algebraic_eigenvalue": 7.704841055211448,
+          "hermiticity_residual": 1.996921191131985e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 7.502030529852696,
+          "second_algebraic_eigenvalue": 8.426824597075123,
+          "hermiticity_residual": 1.2764305268904124e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 6.645212195794783,
+          "second_algebraic_eigenvalue": 7.55869392854605,
+          "hermiticity_residual": 2.3019085000026796e-14
+        }
+      },
+      "30": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 6.958409570523317,
+          "second_algebraic_eigenvalue": 7.928682262876265,
+          "hermiticity_residual": 2.002432158339316e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 7.689949765885988,
+          "second_algebraic_eigenvalue": 8.648818896757152,
+          "hermiticity_residual": 1.2670212662771286e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 6.831351347302084,
+          "second_algebraic_eigenvalue": 7.778839372354849,
+          "hermiticity_residual": 2.3041454036487908e-14
+        }
+      },
+      "31": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 7.153437111654288,
+          "second_algebraic_eigenvalue": 8.15805268404323,
+          "hermiticity_residual": 1.990292050894817e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 7.883202007556569,
+          "second_algebraic_eigenvalue": 8.876348143675685,
+          "hermiticity_residual": 1.2829211813916073e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 7.022827115295165,
+          "second_algebraic_eigenvalue": 8.004525555797166,
+          "hermiticity_residual": 2.2971047628976085e-14
+        }
+      },
+      "32": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 7.353783624738873,
+          "second_algebraic_eigenvalue": 8.392935456358503,
+          "hermiticity_residual": 2.0070139530538497e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 8.0817766705388,
+          "second_algebraic_eigenvalue": 9.109395308077099,
+          "hermiticity_residual": 1.267766423662448e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 7.219628792620824,
+          "second_algebraic_eigenvalue": 8.235735276704705,
+          "hermiticity_residual": 2.2920845817310108e-14
+        }
+      },
+      "33": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 7.559438981589443,
+          "second_algebraic_eigenvalue": 8.633314191599698,
+          "hermiticity_residual": 2.012751991766844e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 8.285663517683293,
+          "second_algebraic_eigenvalue": 9.347943848222599,
+          "hermiticity_residual": 1.2770569779979263e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 7.421746029885451,
+          "second_algebraic_eigenvalue": 8.472451835264698,
+          "hermiticity_residual": 2.3040840057960614e-14
+        }
+      },
+      "34": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 7.770393362588857,
+          "second_algebraic_eigenvalue": 8.879172936961208,
+          "hermiticity_residual": 2.0151498690693388e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 8.494852629487347,
+          "second_algebraic_eigenvalue": 9.591977670215616,
+          "hermiticity_residual": 1.2832086014955314e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 7.62916880468676,
+          "second_algebraic_eigenvalue": 8.714658992627726,
+          "hermiticity_residual": 2.3156043591683587e-14
+        }
+      },
+      "35": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 7.9866372309617315,
+          "second_algebraic_eigenvalue": 9.130496140091692,
+          "hermiticity_residual": 2.003701536147829e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 8.709334377639907,
+          "second_algebraic_eigenvalue": 9.841481091974009,
+          "hermiticity_residual": 1.2858834918426061e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 7.841887394452733,
+          "second_algebraic_eigenvalue": 8.962340933149514,
+          "hermiticity_residual": 2.3189342135023258e-14
+        }
+      },
+      "36": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 8.208161309836616,
+          "second_algebraic_eigenvalue": 9.387268616852264,
+          "hermiticity_residual": 2.0162512362674423e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 8.92909940100655,
+          "second_algebraic_eigenvalue": 10.096438809902484,
+          "hermiticity_residual": 1.2971245227461153e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 8.059892351546253,
+          "second_algebraic_eigenvalue": 9.21548223063581,
+          "hermiticity_residual": 2.311707780102722e-14
+        }
+      },
+      "37": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 8.434956561262219,
+          "second_algebraic_eigenvalue": 9.649475522564007,
+          "hermiticity_residual": 2.005046926082656e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 9.154138584282192,
+          "second_algebraic_eigenvalue": 10.35683586930849,
+          "hermiticity_residual": 1.296229252688715e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 8.283174480985188,
+          "second_algebraic_eigenvalue": 9.474067817186391,
+          "hermiticity_residual": 2.3176192821932627e-14
+        }
+      },
+      "38": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 8.667014167137324,
+          "second_algebraic_eigenvalue": 9.917102325003079,
+          "hermiticity_residual": 2.0283538614046767e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 9.384443037948948,
+          "second_algebraic_eigenvalue": 10.622657636515976,
+          "hermiticity_residual": 1.2860331817578827e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 8.511724820017914,
+          "second_algebraic_eigenvalue": 9.738082955085176,
+          "hermiticity_residual": 2.319106513094214e-14
+        }
+      },
+      "39": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 8.904325511859042,
+          "second_algebraic_eigenvalue": 10.190134780326659,
+          "hermiticity_residual": 2.0381212953754232e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 9.620004080847622,
+          "second_algebraic_eigenvalue": 10.893889774255431,
+          "hermiticity_residual": 1.2929210761995484e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 8.745534619834237,
+          "second_algebraic_eigenvalue": 10.007513210904593,
+          "hermiticity_residual": 2.336751203315168e-14
+        }
+      },
+      "40": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 9.146882166460875,
+          "second_algebraic_eigenvalue": 10.468558910526594,
+          "hermiticity_residual": 2.0506521410021128e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 9.860813223540593,
+          "second_algebraic_eigenvalue": 11.17051821812209,
+          "hermiticity_residual": 1.2947326406028516e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 8.984595329004051,
+          "second_algebraic_eigenvalue": 10.282344431753156,
+          "hermiticity_residual": 2.3228613959513096e-14
+        }
+      },
+      "41": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 9.394675874336114,
+          "second_algebraic_eigenvalue": 10.752360982592661,
+          "hermiticity_residual": 2.022499161582973e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 10.106862153343043,
+          "second_algebraic_eigenvalue": 11.452529155776494,
+          "hermiticity_residual": 1.3222128556786384e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 9.228898577394087,
+          "second_algebraic_eigenvalue": 10.56256272356805,
+          "hermiticity_residual": 2.3265500915548676e-14
+        }
+      },
+      "42": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 9.647698537487724,
+          "second_algebraic_eigenvalue": 11.041527489714628,
+          "hermiticity_residual": 2.0289534850946275e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 10.358142720879243,
+          "second_algebraic_eigenvalue": 11.73990900684835,
+          "hermiticity_residual": 1.3077074394868994e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 9.478436162581104,
+          "second_algebraic_eigenvalue": 10.84815443076721,
+          "hermiticity_residual": 2.347709036807838e-14
+        }
+      },
+      "43": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 9.905942204366353,
+          "second_algebraic_eigenvalue": 11.336045133230167,
+          "hermiticity_residual": 2.052893657851441e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 10.61464692712314,
+          "second_algebraic_eigenvalue": 12.032644405282955,
+          "hermiticity_residual": 1.315330876946822e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 9.733200036927851,
+          "second_algebraic_eigenvalue": 11.139106117872544,
+          "hermiticity_residual": 2.3446193486226493e-14
+        }
+      },
+      "44": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 10.169399058841408,
+          "second_algebraic_eigenvalue": 11.635900806468195,
+          "hermiticity_residual": 2.0543308206356907e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 10.876366912052443,
+          "second_algebraic_eigenvalue": 12.330722182081612,
+          "hermiticity_residual": 1.3184586136090904e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 9.993182295092385,
+          "second_algebraic_eigenvalue": 11.435404551880584,
+          "hermiticity_residual": 2.3342012577572986e-14
+        }
+      },
+      "45": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 10.438061409042522,
+          "second_algebraic_eigenvalue": 11.941081579350158,
+          "hermiticity_residual": 2.0482748104053378e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 11.143294943392695,
+          "second_algebraic_eigenvalue": 12.634129349938453,
+          "hermiticity_residual": 1.3389976761019541e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 10.258375163562892,
+          "second_algebraic_eigenvalue": 11.737036686769006,
+          "hermiticity_residual": 2.3338993234260614e-14
+        }
+      },
+      "46": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 10.711921678175553,
+          "second_algebraic_eigenvalue": 12.251574683951894,
+          "hermiticity_residual": 2.056892767615603e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 11.415423407087088,
+          "second_algebraic_eigenvalue": 12.942853088392244,
+          "hermiticity_residual": 1.3499023750036431e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 10.528770989919561,
+          "second_algebraic_eigenvalue": 12.043989647907583,
+          "hermiticity_residual": 2.3401075611403368e-14
+        }
+      },
+      "47": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 10.990972395107775,
+          "second_algebraic_eigenvalue": 12.567367501376278,
+          "hermiticity_residual": 2.0644969652893202e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 11.692744797690743,
+          "second_algebraic_eigenvalue": 13.256880730198436,
+          "hermiticity_residual": 1.348274373442965e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 10.804362233489051,
+          "second_algebraic_eigenvalue": 12.356250718552328,
+          "hermiticity_residual": 2.3456264699989308e-14
+        }
+      },
+      "48": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 11.275206185767686,
+          "second_algebraic_eigenvalue": 12.888447549036425,
+          "hermiticity_residual": 2.0868731167695494e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 11.975251709855646,
+          "second_algebraic_eigenvalue": 13.576199748732686,
+          "hermiticity_residual": 1.3428014306113188e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 11.085141456418354,
+          "second_algebraic_eigenvalue": 12.673807326630046,
+          "hermiticity_residual": 2.3618156235305667e-14
+        }
+      },
+      "49": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 11.564615765759896,
+          "second_algebraic_eigenvalue": 13.214802468981617,
+          "hermiticity_residual": 2.0897128667700722e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 12.262936829997482,
+          "second_algebraic_eigenvalue": 13.900797745741816,
+          "hermiticity_residual": 1.3553547087838611e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 11.371101315385161,
+          "second_algebraic_eigenvalue": 12.99664703238339,
+          "hermiticity_residual": 2.3588793148685292e-14
+        }
+      },
+      "50": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 11.859193932146141,
+          "second_algebraic_eigenvalue": 13.546420016851162,
+          "hermiticity_residual": 2.068947968694258e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 12.555792928935364,
+          "second_algebraic_eigenvalue": 14.230662440152777,
+          "hermiticity_residual": 1.3588557893951986e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 11.662234553948363,
+          "second_algebraic_eigenvalue": 13.324757516785226,
+          "hermiticity_residual": 2.3647345334369846e-14
+        }
+      },
+      "51": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 12.158933557098823,
+          "second_algebraic_eigenvalue": 13.883288051189645,
+          "hermiticity_residual": 2.0698128179333645e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 12.853812854510252,
+          "second_algebraic_eigenvalue": 14.565781657287594,
+          "hermiticity_residual": 1.3949830946816145e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 11.958533995041957,
+          "second_algebraic_eigenvalue": 13.658126570999919,
+          "hermiticity_residual": 2.3567774607224247e-14
+        }
+      },
+      "52": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 12.46382758115423,
+          "second_algebraic_eigenvalue": 14.225394523746825,
+          "hermiticity_residual": 2.073809819997362e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 13.15698952508188,
+          "second_algebraic_eigenvalue": 14.906143318925253,
+          "hermiticity_residual": 1.388191683849427e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 12.259992534298878,
+          "second_algebraic_eigenvalue": 13.996742085873066,
+          "hermiticity_residual": 2.3756111277193496e-14
+        }
+      },
+      "53": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 12.773869006708868,
+          "second_algebraic_eigenvalue": 14.572727469859721,
+          "hermiticity_residual": 2.0802603347512873e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 13.465315923211861,
+          "second_algebraic_eigenvalue": 15.25173543361085,
+          "hermiticity_residual": 1.4002201868778267e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 12.566603133330329,
+          "second_algebraic_eigenvalue": 14.340592041661097,
+          "hermiticity_residual": 2.3722015455561e-14
+        }
+      },
+      "54": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 13.089050892339653,
+          "second_algebraic_eigenvalue": 14.925274999819845,
+          "hermiticity_residual": 2.1080444278961697e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 13.778785089427322,
+          "second_algebraic_eigenvalue": 15.602546087442173,
+          "hermiticity_residual": 1.462815322371793e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 12.878358814254504,
+          "second_algebraic_eigenvalue": 14.689664500145344,
+          "hermiticity_residual": 2.3773952080111404e-14
+        }
+      },
+      "55": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 13.409366347511373,
+          "second_algebraic_eigenvalue": 15.283025289965003,
+          "hermiticity_residual": 2.1096368857628258e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 14.097390116643991,
+          "second_algebraic_eigenvalue": 15.958563435859832,
+          "hermiticity_residual": 1.4235573347596623e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 13.19525265304011,
+          "second_algebraic_eigenvalue": 15.043947594108253,
+          "hermiticity_residual": 2.4227105013130932e-14
+        }
+      },
+      "56": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 13.734808526767846,
+          "second_algebraic_eigenvalue": 15.645966574873997,
+          "hermiticity_residual": 2.154420633935987e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 14.421124145077043,
+          "second_algebraic_eigenvalue": 16.319775694673353,
+          "hermiticity_residual": 1.4698169644562164e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 13.51727777480821,
+          "second_algebraic_eigenvalue": 15.403429520573845,
+          "hermiticity_residual": 2.4062823525968787e-14
+        }
+      },
+      "57": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 14.06537062496519,
+          "second_algebraic_eigenvalue": 16.014087139260283,
+          "hermiticity_residual": 2.1372339924615076e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 14.749980356714676,
+          "second_algebraic_eigenvalue": 16.68617113297107,
+          "hermiticity_residual": 1.469559061914895e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 13.844427347931662,
+          "second_algebraic_eigenvalue": 15.768098531347583,
+          "hermiticity_residual": 2.4201149897453634e-14
+        }
+      },
+      "58": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 14.401045872478905,
+          "second_algebraic_eigenvalue": 16.387375310802568,
+          "hermiticity_residual": 2.100210619374018e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 15.083951970558797,
+          "second_algebraic_eigenvalue": 17.057738064676833,
+          "hermiticity_residual": 1.4937013591292142e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 14.176694579877978,
+          "second_algebraic_eigenvalue": 16.13794292649905,
+          "hermiticity_residual": 2.4157455467803808e-14
+        }
+      },
+      "59": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 14.741827530401759,
+          "second_algebraic_eigenvalue": 16.765819452779418,
+          "hermiticity_residual": 2.1200703209017393e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 15.423032238117582,
+          "second_algebraic_eigenvalue": 17.434464842182308,
+          "hermiticity_residual": 1.486100753809839e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 14.51407271144595,
+          "second_algebraic_eigenvalue": 16.512951046332844,
+          "hermiticity_residual": 2.3707241073249035e-14
+        }
+      },
+      "60": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 15.087708886322194,
+          "second_algebraic_eigenvalue": 17.149407956830785,
+          "hermiticity_residual": 2.125757360565942e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 15.767214438536547,
+          "second_algebraic_eigenvalue": 17.816339848124002,
+          "hermiticity_residual": 1.4952342749747986e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 14.856555013335775,
+          "second_algebraic_eigenvalue": 16.89311126412471,
+          "hermiticity_residual": 2.4257840666772673e-14
+        }
+      },
+      "61": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 15.43868325010243,
+          "second_algebraic_eigenvalue": 17.538129236855013,
+          "hermiticity_residual": 2.109495031167605e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 16.116491874503723,
+          "second_algebraic_eigenvalue": 18.203351490190926,
+          "hermiticity_residual": 1.4500887641413048e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 15.204134780992488,
+          "second_algebraic_eigenvalue": 17.27841198009864,
+          "hermiticity_residual": 2.4449990539176724e-14
+        }
+      },
+      "62": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 15.79474394911853,
+          "second_algebraic_eigenvalue": 17.931971722005606,
+          "hermiticity_residual": 2.130513982435534e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 16.470857868133223,
+          "second_algebraic_eigenvalue": 18.595488192643238,
+          "hermiticity_residual": 1.467901851913784e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 15.556805330472828,
+          "second_algebraic_eigenvalue": 17.66884161352774,
+          "hermiticity_residual": 2.4384836873749053e-14
+        }
+      },
+      "63": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 16.155884325463532,
+          "second_algebraic_eigenvalue": 18.330923850621783,
+          "hermiticity_residual": 2.1378325327787052e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 16.830305757306597,
+          "second_algebraic_eigenvalue": 18.992738391790507,
+          "hermiticity_residual": 1.5299323585103426e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 15.914559994537699,
+          "second_algebraic_eigenvalue": 18.064388597477738,
+          "hermiticity_residual": 2.4600935011670632e-14
+        }
+      },
+      "64": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 16.522097730940153,
+          "second_algebraic_eigenvalue": 18.734974063799548,
+          "hermiticity_residual": 2.1261014680856317e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 17.194828890671825,
+          "second_algebraic_eigenvalue": 19.395090528432224,
+          "hermiticity_residual": 1.465304241140794e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 16.27739211883396,
+          "second_algebraic_eigenvalue": 18.46504137206856,
+          "hermiticity_residual": 2.4720303644244214e-14
+        }
+      },
+      "65": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 16.893377524060575,
+          "second_algebraic_eigenvalue": 19.144110799722178,
+          "hermiticity_residual": 2.1872081804189706e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 17.564420625175302,
+          "second_algebraic_eigenvalue": 19.79637436949961,
+          "hermiticity_residual": 1.5259709235160497e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 16.64529505792296,
+          "second_algebraic_eigenvalue": 18.870788377698716,
+          "hermiticity_residual": 2.4359753019183453e-14
+        }
+      },
+      "66": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 17.26971706641102,
+          "second_algebraic_eigenvalue": 19.558322487617964,
+          "hermiticity_residual": 2.1672312132137888e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 17.93907432149269,
+          "second_algebraic_eigenvalue": 20.1644545350053,
+          "hermiticity_residual": 1.4831428214313544e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 17.018262171672927,
+          "second_algebraic_eigenvalue": 19.281618050605484,
+          "hermiticity_residual": 2.4691020670361255e-14
+        }
+      },
+      "67": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 17.6511097182778,
+          "second_algebraic_eigenvalue": 19.97759754195459,
+          "hermiticity_residual": 2.198123320271527e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 18.31878334086589,
+          "second_algebraic_eigenvalue": 20.537580913860047,
+          "hermiticity_residual": 1.5901913512477523e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 17.39628682160523,
+          "second_algebraic_eigenvalue": 19.69751881550603,
+          "hermiticity_residual": 2.4372384658186886e-14
+        }
+      },
+      "68": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 18.03754883644282,
+          "second_algebraic_eigenvalue": 20.401924356633234,
+          "hermiticity_residual": 2.141387138770925e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 18.70354104181758,
+          "second_algebraic_eigenvalue": 20.91574661479676,
+          "hermiticity_residual": 1.520999669328329e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 17.779362367313365,
+          "second_algebraic_eigenvalue": 20.118479080707413,
+          "hermiticity_residual": 2.423962975792582e-14
+        }
+      },
+      "69": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 18.42902776947603,
+          "second_algebraic_eigenvalue": 20.831291300050374,
+          "hermiticity_residual": 2.154346777314439e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 19.093340775695715,
+          "second_algebraic_eigenvalue": 21.29894473423588,
+          "hermiticity_residual": 1.5881440866483695e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 18.167482163354336,
+          "second_algebraic_eigenvalue": 20.54448723219864,
+          "hermiticity_residual": 2.446613514747927e-14
+        }
+      },
+      "70": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 18.825539855768184,
+          "second_algebraic_eigenvalue": 21.265686708727564,
+          "hermiticity_residual": 2.224228607723435e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 19.488175884980258,
+          "second_algebraic_eigenvalue": 21.68716835308856,
+          "hermiticity_residual": 1.551781042771273e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 18.560639555005032,
+          "second_algebraic_eigenvalue": 20.975531628353544,
+          "hermiticity_residual": 2.4401190909512207e-14
+        }
+      },
+      "71": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 19.22707841920801,
+          "second_algebraic_eigenvalue": 21.705098882473862,
+          "hermiticity_residual": 2.214886367828909e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 19.888039698479407,
+          "second_algebraic_eigenvalue": 22.080410533051726,
+          "hermiticity_residual": 1.482753241064602e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 18.958827876418788,
+          "second_algebraic_eigenvalue": 21.411600594026428,
+          "hermiticity_residual": 2.4808159919612543e-14
+        }
+      },
+      "72": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 19.633636765838645,
+          "second_algebraic_eigenvalue": 22.149516078289352,
+          "hermiticity_residual": 2.1917553709701028e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 20.292925528685764,
+          "second_algebraic_eigenvalue": 22.478664312915143,
+          "hermiticity_residual": 1.5197062924536426e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 19.36204044546637,
+          "second_algebraic_eigenvalue": 21.85268241545679,
+          "hermiticity_residual": 2.4738878375612123e-14
+        }
+      },
+      "73": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 20.045208181745235,
+          "second_algebraic_eigenvalue": 22.598926506255086,
+          "hermiticity_residual": 2.224631234698497e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 20.7028266686415,
+          "second_algebraic_eigenvalue": 22.881922705059814,
+          "hermiticity_residual": 1.5558375751675676e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 19.770270562507662,
+          "second_algebraic_eigenvalue": 22.29876533463134,
+          "hermiticity_residual": 2.4530950865341822e-14
+        }
+      },
+      "74": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 20.461785928998122,
+          "second_algebraic_eigenvalue": 23.05331832264294,
+          "hermiticity_residual": 2.192908451932089e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 21.11773638862106,
+          "second_algebraic_eigenvalue": 23.290178692291377,
+          "hermiticity_residual": 1.5371754820689207e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 20.18351150543214,
+          "second_algebraic_eigenvalue": 22.74983754405598,
+          "hermiticity_residual": 2.4793315586272767e-14
+        }
+      },
+      "75": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 20.883363242216795,
+          "second_algebraic_eigenvalue": 23.512679625407365,
+          "hermiticity_residual": 2.2035649809363344e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 21.53764793281269,
+          "second_algebraic_eigenvalue": 23.703425223754927,
+          "hermiticity_residual": 1.5422410530731494e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 20.60175652759198,
+          "second_algebraic_eigenvalue": 23.20588718127847,
+          "hermiticity_residual": 2.4916508349337267e-14
+        }
+      },
+      "76": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 21.309933326161953,
+          "second_algebraic_eigenvalue": 23.97699844913725,
+          "hermiticity_residual": 2.1997260924515663e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 21.962554516789446,
+          "second_algebraic_eigenvalue": 24.121655212007063,
+          "hermiticity_residual": 1.5091821218404913e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 21.024998854249834,
+          "second_algebraic_eigenvalue": 23.66690232398304,
+          "hermiticity_residual": 2.4811780478795566e-14
+        }
+      },
+      "77": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 21.741489352996155,
+          "second_algebraic_eigenvalue": 24.446262758767674,
+          "hermiticity_residual": 2.2323069678063857e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 22.39244932336814,
+          "second_algebraic_eigenvalue": 24.54486152875322,
+          "hermiticity_residual": 1.579964730608978e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 21.45323167970311,
+          "second_algebraic_eigenvalue": 24.132870983734467,
+          "hermiticity_residual": 2.523652726843499e-14
+        }
+      },
+      "78": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 22.178024457273505,
+          "second_algebraic_eigenvalue": 24.920460445224606,
+          "hermiticity_residual": 2.251622263427228e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 22.82732550004885,
+          "second_algebraic_eigenvalue": 24.97303700233617,
+          "hermiticity_residual": 1.5481533406396743e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 21.886448163723053,
+          "second_algebraic_eigenvalue": 24.603781101634908,
+          "hermiticity_residual": 2.4676583743359792e-14
+        }
+      },
+      "79": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 22.619531734928106,
+          "second_algebraic_eigenvalue": 25.39957931884357,
+          "hermiticity_residual": 2.2626995889473458e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 23.267176156307052,
+          "second_algebraic_eigenvalue": 25.40617441331068,
+          "hermiticity_residual": 1.578023976386743e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 22.32464142846367,
+          "second_algebraic_eigenvalue": 25.079620542083724,
+          "hermiticity_residual": 2.5195466971429116e-14
+        }
+      },
+      "80": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 23.066004238636964,
+          "second_algebraic_eigenvalue": 25.883607104821508,
+          "hermiticity_residual": 2.2539610030926284e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 23.711994358944356,
+          "second_algebraic_eigenvalue": 25.844266491633537,
+          "hermiticity_residual": 1.5584251525872848e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 22.76780455527637,
+          "second_algebraic_eigenvalue": 25.56037708798508,
+          "hermiticity_residual": 2.5579874292414768e-14
+        }
+      },
+      "81": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 23.51743497507328,
+          "second_algebraic_eigenvalue": 26.372531437366398,
+          "hermiticity_residual": 2.2986632098625636e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 24.16177313100005,
+          "second_algebraic_eigenvalue": 26.287305912517983,
+          "hermiticity_residual": 1.5689130982958474e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 23.215930582600556,
+          "second_algebraic_eigenvalue": 26.046038434826492,
+          "hermiticity_residual": 2.5143506871622193e-14
+        }
+      },
+      "82": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 23.973816902313715,
+          "second_algebraic_eigenvalue": 26.866339854025433,
+          "hermiticity_residual": 2.2739878610847746e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 24.616505446789933,
+          "second_algebraic_eigenvalue": 26.73528529294925,
+          "hermiticity_residual": 1.6681119362101953e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 23.669012500949947,
+          "second_algebraic_eigenvalue": 26.536592185117726,
+          "hermiticity_residual": 2.5295612150765804e-14
+        }
+      },
+      "83": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 24.435142925549236,
+          "second_algebraic_eigenvalue": 27.36501979074545,
+          "hermiticity_residual": 2.294667756594117e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 25.07618422958818,
+          "second_algebraic_eigenvalue": 27.188197188176908,
+          "hermiticity_residual": 1.6269646423524716e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 24.127043251317843,
+          "second_algebraic_eigenvalue": 27.032025843167403,
+          "hermiticity_residual": 2.5435825818181436e-14
+        }
+      },
+      "84": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 24.90140589428274,
+          "second_algebraic_eigenvalue": 27.868558574745798,
+          "hermiticity_residual": 2.2391729690083764e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 25.540802347991075,
+          "second_algebraic_eigenvalue": 27.64603408773948,
+          "hermiticity_residual": 1.5985270024843795e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 24.59001572037176,
+          "second_algebraic_eigenvalue": 27.532326809315983,
+          "hermiticity_residual": 2.5848400535780183e-14
+        }
+      },
+      "85": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 25.372598599598085,
+          "second_algebraic_eigenvalue": 28.376943419384986,
+          "hermiticity_residual": 2.3462584290386976e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 26.010352612403796,
+          "second_algebraic_eigenvalue": 28.108788411981376,
+          "hermiticity_residual": 1.6081831197264667e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 25.057922738875106,
+          "second_algebraic_eigenvalue": 28.0374823733441,
+          "hermiticity_residual": 2.555376873662284e-14
+        }
+      },
+      "86": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 25.848713770148496,
+          "second_algebraic_eigenvalue": 28.890161419198538,
+          "hermiticity_residual": 2.2900272214018564e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 26.484827773008476,
+          "second_algebraic_eigenvalue": 28.57645250751976,
+          "hermiticity_residual": 1.5762828132218262e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 25.530757077067978,
+          "second_algebraic_eigenvalue": 28.54747970986257,
+          "hermiticity_residual": 2.6015483450071884e-14
+        }
+      },
+      "87": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 26.329744067677765,
+          "second_algebraic_eigenvalue": 29.40819954180308,
+          "hermiticity_residual": 2.254954699479725e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 26.964220514230707,
+          "second_algebraic_eigenvalue": 29.049018644390593,
+          "hermiticity_residual": 1.701286583123098e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 26.00851144168074,
+          "second_algebraic_eigenvalue": 29.062305871277683,
+          "hermiticity_residual": 2.5862753890920374e-14
+        }
+      },
+      "88": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 26.815682085861788,
+          "second_algebraic_eigenvalue": 29.93104462321937,
+          "hermiticity_residual": 2.3732548467816146e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 27.448523453039023,
+          "second_algebraic_eigenvalue": 29.526479011425643,
+          "hermiticity_residual": 1.608688843173786e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 26.491178472639554,
+          "second_algebraic_eigenvalue": 29.58194778287688,
+          "hermiticity_residual": 2.5495394433611793e-14
+        }
+      },
+      "89": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 27.306520345280905,
+          "second_algebraic_eigenvalue": 30.458683361072566,
+          "hermiticity_residual": 2.3447974056986396e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 27.937729134405338,
+          "second_algebraic_eigenvalue": 30.00882571154022,
+          "hermiticity_residual": 1.6373342052401416e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 26.978750739516478,
+          "second_algebraic_eigenvalue": 30.106392234827165,
+          "hermiticity_residual": 2.619424706748441e-14
+        }
+      },
+      "90": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 27.802251289887625,
+          "second_algebraic_eigenvalue": 30.991102308080304,
+          "hermiticity_residual": 2.2717267718250432e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 28.43183002845522,
+          "second_algebraic_eigenvalue": 30.49605075833092,
+          "hermiticity_residual": 1.704183289965374e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 27.47122073729855,
+          "second_algebraic_eigenvalue": 30.635625877130394,
+          "hermiticity_residual": 2.5682398212243425e-14
+        }
+      },
+      "91": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 28.30286728352483,
+          "second_algebraic_eigenvalue": 31.528287865072944,
+          "hermiticity_residual": 2.3350850267943143e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 28.93081852603772,
+          "second_algebraic_eigenvalue": 30.98814607195936,
+          "hermiticity_residual": 1.7165934964911572e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 27.96858088398978,
+          "second_algebraic_eigenvalue": 31.1696352130589,
+          "hermiticity_residual": 2.5635355357246035e-14
+        }
+      },
+      "92": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 28.808360605497214,
+          "second_algebraic_eigenvalue": 32.070226275358365,
+          "hermiticity_residual": 2.339865264609058e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 29.43468693503275,
+          "second_algebraic_eigenvalue": 31.485103473392655,
+          "hermiticity_residual": 1.7366428204274467e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 28.470823515793533,
+          "second_algebraic_eigenvalue": 31.708406591345145,
+          "hermiticity_residual": 2.608804362937874e-14
+        }
+      },
+      "93": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 29.318723448139416,
+          "second_algebraic_eigenvalue": 32.61690361566899,
+          "hermiticity_residual": 2.3754491048379813e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 29.9434274772673,
+          "second_algebraic_eigenvalue": 31.98691468162732,
+          "hermiticity_residual": 1.7311583509848928e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 28.977940883374266,
+          "second_algebraic_eigenvalue": 32.251926200280536,
+          "hermiticity_residual": 2.5427991684216547e-14
+        }
+      },
+      "94": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 29.833947911088977,
+          "second_algebraic_eigenvalue": 33.168305790811274,
+          "hermiticity_residual": 2.3225905076398804e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 30.457032283727376,
+          "second_algebraic_eigenvalue": 32.49357130726756,
+          "hermiticity_residual": 1.7321755800344825e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 29.48992514845442,
+          "second_algebraic_eigenvalue": 32.800180060346705,
+          "hermiticity_residual": 2.6725420174740747e-14
+        }
+      },
+      "95": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 30.354025998052737,
+          "second_algebraic_eigenvalue": 33.72441852516148,
+          "hermiticity_residual": 2.386365751137917e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 30.975493390562107,
+          "second_algebraic_eigenvalue": 33.00506484870198,
+          "hermiticity_residual": 1.7896366649434053e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 30.006768379301345,
+          "second_algebraic_eigenvalue": 33.35315401731354,
+          "hermiticity_residual": 2.6303459341756564e-14
+        }
+      },
+      "96": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 30.87894961222784,
+          "second_algebraic_eigenvalue": 34.28522735477655,
+          "hermiticity_residual": 2.3856884230034517e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 31.498802735281664,
+          "second_algebraic_eigenvalue": 33.52138668667589,
+          "hermiticity_residual": 1.721498691330769e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 30.52846254684733,
+          "second_algebraic_eigenvalue": 33.91083373314026,
+          "hermiticity_residual": 2.642879583553549e-14
+        }
+      },
+      "97": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 31.408710552995625,
+          "second_algebraic_eigenvalue": 34.85071762096469,
+          "hermiticity_residual": 2.3908263574913516e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 32.02695215193651,
+          "second_algebraic_eigenvalue": 34.04252807873697,
+          "hermiticity_residual": 1.7656299935884375e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 31.054999519893666,
+          "second_algebraic_eigenvalue": 34.47320468046432,
+          "hermiticity_residual": 2.6299965161026597e-14
+        }
+      },
+      "98": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 31.943300509610737,
+          "second_algebraic_eigenvalue": 35.42087445951704,
+          "hermiticity_residual": 2.503784280940588e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 32.559933367097535,
+          "second_algebraic_eigenvalue": 34.568480155385245,
+          "hermiticity_residual": 1.7555520654924726e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 31.586371061615843,
+          "second_algebraic_eigenvalue": 35.04025213216008,
+          "hermiticity_residual": 2.6298218111544873e-14
+        }
+      },
+      "99": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 32.48271105785969,
+          "second_algebraic_eigenvalue": 35.97496923340121,
+          "hermiticity_residual": 2.3985672174581813e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 33.097737994418594,
+          "second_algebraic_eigenvalue": 35.09923391198646,
+          "hermiticity_residual": 1.725372016626e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 32.1225688239135,
+          "second_algebraic_eigenvalue": 35.61196115595041,
+          "hermiticity_residual": 2.7178445041218134e-14
+        }
+      },
+      "100": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 33.02693365397376,
+          "second_algebraic_eigenvalue": 36.51919182940506,
+          "hermiticity_residual": 2.4063468934786536e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 33.64035753143375,
+          "second_algebraic_eigenvalue": 35.63478020546638,
+          "hermiticity_residual": 1.7667836810838905e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 32.6635843431072,
+          "second_algebraic_eigenvalue": 36.15584251885606,
+          "hermiticity_residual": 2.6377677073365218e-14
+        }
+      },
+      "101": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 33.57595963167109,
+          "second_algebraic_eigenvalue": 37.0682178065834,
+          "hermiticity_residual": 2.45714374445091e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 34.18778335299787,
+          "second_algebraic_eigenvalue": 36.175109746319194,
+          "hermiticity_residual": 1.838585234011577e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 33.209409035602704,
+          "second_algebraic_eigenvalue": 36.701667210889156,
+          "hermiticity_residual": 2.6367102885978193e-14
+        }
+      },
+      "102": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 34.12978019509809,
+          "second_algebraic_eigenvalue": 37.62203836902514,
+          "hermiticity_residual": 2.4156615559151487e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 34.74000670699,
+          "second_algebraic_eigenvalue": 36.72021309423502,
+          "hermiticity_residual": 1.8712976713139356e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 33.760034192716034,
+          "second_algebraic_eigenvalue": 37.25229236692181,
+          "hermiticity_residual": 2.636649782375101e-14
+        }
+      },
+      "103": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 34.6883864145517,
+          "second_algebraic_eigenvalue": 38.18064458755529,
+          "hermiticity_residual": 2.3750262595888107e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 35.29701870868047,
+          "second_algebraic_eigenvalue": 37.27008064915606,
+          "hermiticity_residual": 1.8422182841357175e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 34.31545097361334,
+          "second_algebraic_eigenvalue": 37.8077091472945,
+          "hermiticity_residual": 2.7134425013045335e-14
+        }
+      },
+      "104": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 35.25176921982718,
+          "second_algebraic_eigenvalue": 38.74402739202277,
+          "hermiticity_residual": 2.418230064289238e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 35.858810335585346,
+          "second_algebraic_eigenvalue": 37.82470264750752,
+          "hermiticity_residual": 1.8714738667193934e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 34.875650403146764,
+          "second_algebraic_eigenvalue": 38.36790857575136,
+          "hermiticity_residual": 2.740549596672065e-14
+        }
+      },
+      "105": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 35.819919395645826,
+          "second_algebraic_eigenvalue": 39.30928782000335,
+          "hermiticity_residual": 2.5018719691471486e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 36.42537242118751,
+          "second_algebraic_eigenvalue": 38.38406915216636,
+          "hermiticity_residual": 1.820397139957354e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 35.44062336360424,
+          "second_algebraic_eigenvalue": 38.93288153504691,
+          "hermiticity_residual": 2.8049930521942555e-14
+        }
+      },
+      "106": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 36.39282757551126,
+          "second_algebraic_eigenvalue": 39.874688497617285,
+          "hermiticity_residual": 2.4254842192375773e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 36.99669565005438,
+          "second_algebraic_eigenvalue": 38.94817004678367,
+          "hermiticity_residual": 1.996334443255526e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 36.01036058892602,
+          "second_algebraic_eigenvalue": 39.49723003446999,
+          "hermiticity_residual": 2.7194204836156517e-14
+        }
+      },
+      "107": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 36.97048423354977,
+          "second_algebraic_eigenvalue": 40.444805414635454,
+          "hermiticity_residual": 2.5410670671091247e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 37.572770550752765,
+          "second_algebraic_eigenvalue": 39.516995028754295,
+          "hermiticity_residual": 1.8958088012372607e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 36.58485266107827,
+          "second_algebraic_eigenvalue": 40.064203967172304,
+          "hermiticity_residual": 2.7588718821006744e-14
+        }
+      },
+      "108": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 37.552879681233506,
+          "second_algebraic_eigenvalue": 41.01962787891907,
+          "hermiticity_residual": 2.5931870419387453e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 38.153587488753935,
+          "second_algebraic_eigenvalue": 40.09053359856416,
+          "hermiticity_residual": 2.0531381403848618e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 37.16409000084127,
+          "second_algebraic_eigenvalue": 40.63589059817828,
+          "hermiticity_residual": 2.753714107786931e-14
+        }
+      },
+      "109": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 38.14000405739241,
+          "second_algebraic_eigenvalue": 41.599144984693126,
+          "hermiticity_residual": 2.552075320238568e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 38.739136662191584,
+          "second_algebraic_eigenvalue": 40.66877505345349,
+          "hermiticity_residual": 1.9376344086173102e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 37.74806286204242,
+          "second_algebraic_eigenvalue": 41.21227916520273,
+          "hermiticity_residual": 2.8600625156054655e-14
+        }
+      },
+      "110": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 38.731847323608534,
+          "second_algebraic_eigenvalue": 42.18334560545931,
+          "hermiticity_residual": 2.5835595279466706e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 39.329408091995674,
+          "second_algebraic_eigenvalue": 41.25170847896855,
+          "hermiticity_residual": 2.0257789862115176e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 38.33676132590054,
+          "second_algebraic_eigenvalue": 41.79335869000858,
+          "hermiticity_residual": 2.754164706122333e-14
+        }
+      },
+      "111": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 39.32839925489062,
+          "second_algebraic_eigenvalue": 42.77221838448964,
+          "hermiticity_residual": 2.563050556831503e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 39.92439161618158,
+          "second_algebraic_eigenvalue": 41.839322737695525,
+          "hermiticity_residual": 1.971104494271971e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 38.93017529256382,
+          "second_algebraic_eigenvalue": 42.379117970940385,
+          "hermiticity_residual": 2.854706767112644e-14
+        }
+      },
+      "112": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 39.92964943325702,
+          "second_algebraic_eigenvalue": 43.365751722524664,
+          "hermiticity_residual": 2.5953281798037858e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 40.524076882457216,
+          "second_algebraic_eigenvalue": 42.431606460893654,
+          "hermiticity_residual": 2.0617572304607847e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 39.52829447356494,
+          "second_algebraic_eigenvalue": 42.96954557076502,
+          "hermiticity_residual": 2.8306662153442306e-14
+        }
+      },
+      "113": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 40.53558723961545,
+          "second_algebraic_eigenvalue": 43.9639337698692,
+          "hermiticity_residual": 2.618711747868176e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 41.12845333945171,
+          "second_algebraic_eigenvalue": 43.02854803843675,
+          "hermiticity_residual": 2.1381401207378067e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 40.13110838489555,
+          "second_algebraic_eigenvalue": 43.56462980763177,
+          "hermiticity_residual": 2.844172100729071e-14
+        }
+      },
+      "114": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 41.14620184385067,
+          "second_algebraic_eigenvalue": 44.566752411453415,
+          "hermiticity_residual": 2.695223681123363e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 41.73751022792639,
+          "second_algebraic_eigenvalue": 43.630135607759925,
+          "hermiticity_residual": 2.17419439544214e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 40.7386063382628,
+          "second_algebraic_eigenvalue": 44.16435874561347,
+          "hermiticity_residual": 2.8113040433618126e-14
+        }
+      },
+      "115": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 41.7614821978804,
+          "second_algebraic_eigenvalue": 45.17419526006516,
+          "hermiticity_residual": 2.5805718051326585e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 42.3512365735472,
+          "second_algebraic_eigenvalue": 44.236357041789056,
+          "hermiticity_residual": 2.0615484601669173e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 41.350777430720484,
+          "second_algebraic_eigenvalue": 44.768720180038954,
+          "hermiticity_residual": 2.7692778415969212e-14
+        }
+      },
+      "116": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 42.38141702471022,
+          "second_algebraic_eigenvalue": 45.78624963795454,
+          "hermiticity_residual": 2.6907511315778508e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 42.96962117680887,
+          "second_algebraic_eigenvalue": 44.84719993819729,
+          "hermiticity_residual": 2.1769997183831168e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 41.96761054022442,
+          "second_algebraic_eigenvalue": 45.377701628202,
+          "hermiticity_residual": 2.777837428098069e-14
+        }
+      },
+      "117": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 43.005994808961916,
+          "second_algebraic_eigenvalue": 46.402902568578384,
+          "hermiticity_residual": 2.4581899036989473e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 43.59265260373708,
+          "second_algebraic_eigenvalue": 45.46265160724485,
+          "hermiticity_residual": 2.143906900090618e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 42.58909431070734,
+          "second_algebraic_eigenvalue": 45.99129031417884,
+          "hermiticity_residual": 2.7981739685254773e-14
+        }
+      },
+      "118": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 43.635203788660704,
+          "second_algebraic_eigenvalue": 47.02414076022252,
+          "hermiticity_residual": 2.5274262540962784e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 44.220319174604484,
+          "second_algebraic_eigenvalue": 46.08269905728589,
+          "hermiticity_residual": 2.192795555391786e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 43.21521714675518,
+          "second_algebraic_eigenvalue": 46.60947315767807,
+          "hermiticity_residual": 2.8047210750336496e-14
+        }
+      },
+      "119": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 44.26903194116172,
+          "second_algebraic_eigenvalue": 47.64995059154001,
+          "hermiticity_residual": 2.5448548216190487e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 44.852608955330254,
+          "second_algebraic_eigenvalue": 46.70732898114966,
+          "hermiticity_residual": 2.1353082461574114e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 43.845967199269126,
+          "second_algebraic_eigenvalue": 47.232236759354194,
+          "hermiticity_residual": 2.818399973088236e-14
+        }
+      },
+      "120": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 44.90746697421798,
+          "second_algebraic_eigenvalue": 48.28031809652877,
+          "hermiticity_residual": 2.62711044556092e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 45.48950974444036,
+          "second_algebraic_eigenvalue": 47.336527743016234,
+          "hermiticity_residual": 2.152614858348817e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 44.48133235815587,
+          "second_algebraic_eigenvalue": 47.85956738444115,
+          "hermiticity_residual": 2.8674718944738206e-14
+        }
+      },
+      "121": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 45.55049631269223,
+          "second_algebraic_eigenvalue": 48.91522894820511,
+          "hermiticity_residual": 2.623281596092225e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 46.13100906350546,
+          "second_algebraic_eigenvalue": 47.970281360264174,
+          "hermiticity_residual": 2.2369504154678522e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 45.121300237613895,
+          "second_algebraic_eigenvalue": 48.49145094903598,
+          "hermiticity_residual": 2.825922531346108e-14
+        }
+      },
+      "122": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 46.19810708777072,
+          "second_algebraic_eigenvalue": 49.55466844059275,
+          "hermiticity_residual": 2.6867848281638542e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 46.77709414165048,
+          "second_algebraic_eigenvalue": 48.60857548944263,
+          "hermiticity_residual": 2.0667849438023677e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 45.765858166764616,
+          "second_algebraic_eigenvalue": 49.12787300065118,
+          "hermiticity_residual": 2.9124043230464544e-14
+        }
+      },
+      "123": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 46.85028612062168,
+          "second_algebraic_eigenvalue": 50.198621469548605,
+          "hermiticity_residual": 2.5113596035e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 47.42775190605048,
+          "second_algebraic_eigenvalue": 49.25139540745141,
+          "hermiticity_residual": 2.0652296331268113e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 46.41499317404905,
+          "second_algebraic_eigenvalue": 49.76881870337192,
+          "hermiticity_residual": 2.933723178669054e-14
+        }
+      },
+      "124": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 47.50701991232329,
+          "second_algebraic_eigenvalue": 50.847072516428625,
+          "hermiticity_residual": 2.8020026351575725e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 48.082968965818836,
+          "second_algebraic_eigenvalue": 49.89872599334748,
+          "hermiticity_residual": 2.1204156189738658e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 47.06869197628673,
+          "second_algebraic_eigenvalue": 50.41427281767669,
+          "hermiticity_residual": 2.881586503069045e-14
+        }
+      },
+      "125": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 48.16829462501129,
+          "second_algebraic_eigenvalue": 51.500005623364174,
+          "hermiticity_residual": 2.5968795100474286e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 48.7427315978596,
+          "second_algebraic_eigenvalue": 50.55055170949545,
+          "hermiticity_residual": 2.293626292631039e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 47.726940962750206,
+          "second_algebraic_eigenvalue": 51.064219680061186,
+          "hermiticity_residual": 2.8040492289250738e-14
+        }
+      },
+      "126": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 48.83409607042044,
+          "second_algebraic_eigenvalue": 52.15740437193321,
+          "hermiticity_residual": 2.732003918904945e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 49.40702573139993,
+          "second_algebraic_eigenvalue": 51.206856579698744,
+          "hermiticity_residual": 2.2888635224010307e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 48.38972618110408,
+          "second_algebraic_eigenvalue": 51.71864318116276,
+          "hermiticity_residual": 2.946039113860894e-14
+        }
+      },
+      "127": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 49.504409689444216,
+          "second_algebraic_eigenvalue": 52.81925186297558,
+          "hermiticity_residual": 2.6729257698252444e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 50.07583693379705,
+          "second_algebraic_eigenvalue": 51.86762416788618,
+          "hermiticity_residual": 2.4651140863838134e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 49.057033320452014,
+          "second_algebraic_eigenvalue": 52.37752674651893,
+          "hermiticity_residual": 2.896355515027773e-14
+        }
+      },
+      "128": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 50.17922053729187,
+          "second_algebraic_eigenvalue": 53.48553068684231,
+          "hermiticity_residual": 2.768639814985611e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 50.749150390858226,
+          "second_algebraic_eigenvalue": 52.532837554511126,
+          "hermiticity_residual": 2.122112701329869e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 49.728847696142296,
+          "second_algebraic_eigenvalue": 53.04085330878492,
+          "hermiticity_residual": 2.969173815824526e-14
+        }
+      },
+      "129": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 50.85851326324193,
+          "second_algebraic_eigenvalue": 54.156222899553796,
+          "hermiticity_residual": 2.7506298389350704e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 51.42695088899798,
+          "second_algebraic_eigenvalue": 53.2024793104152,
+          "hermiticity_residual": 2.1140106948418296e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 50.40515422911682,
+          "second_algebraic_eigenvalue": 53.708605282870366,
+          "hermiticity_residual": 2.8926592770537766e-14
+        }
+      },
+      "130": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 51.542272092752256,
+          "second_algebraic_eigenvalue": 54.831309993981634,
+          "hermiticity_residual": 2.6896423537825506e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 52.10922279766464,
+          "second_algebraic_eigenvalue": 53.87653147142163,
+          "hermiticity_residual": 2.3047831100209982e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 51.08593743093631,
+          "second_algebraic_eigenvalue": 54.380764541393056,
+          "hermiticity_residual": 2.889087397074448e-14
+        }
+      },
+      "131": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 52.23048080542529,
+          "second_algebraic_eigenvalue": 55.51077286689875,
+          "hermiticity_residual": 2.8357771180713846e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 52.79595004682906,
+          "second_algebraic_eigenvalue": 54.55497550926687,
+          "hermiticity_residual": 2.3115352898207706e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 51.771181379663645,
+          "second_algebraic_eigenvalue": 55.05731238122834,
+          "hermiticity_residual": 2.960390729439496e-14
+        }
+      },
+      "132": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 52.92312271274109,
+          "second_algebraic_eigenvalue": 56.19459179164631,
+          "hermiticity_residual": 2.763647157398077e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 53.487116106924304,
+          "second_algebraic_eigenvalue": 55.23779230187512,
+          "hermiticity_residual": 2.285328330148002e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 52.460869701838874,
+          "second_algebraic_eigenvalue": 55.73822949593459,
+          "hermiticity_residual": 3.007322681537864e-14
+        }
+      },
+      "133": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 53.62018063448154,
+          "second_algebraic_eigenvalue": 56.882746375963606,
+          "hermiticity_residual": 2.668866765723791e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 54.182703964464025,
+          "second_algebraic_eigenvalue": 55.924962098674754,
+          "hermiticity_residual": 2.2742855420798605e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 53.15498554767572,
+          "second_algebraic_eigenvalue": 56.42349593972776,
+          "hermiticity_residual": 2.9471522312805604e-14
+        }
+      },
+      "134": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 54.32163687408841,
+          "second_algebraic_eigenvalue": 57.57521553070743,
+          "hermiticity_residual": 2.7568745081117243e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 54.88269609783213,
+          "second_algebraic_eigenvalue": 56.616464488675994,
+          "hermiticity_residual": 2.547695517448008e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 53.853511568271806,
+          "second_algebraic_eigenvalue": 57.1130910928478,
+          "hermiticity_residual": 3.005166816850509e-14
+        }
+      },
+      "135": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 55.02747319197222,
+          "second_algebraic_eigenvalue": 58.271977425198386,
+          "hermiticity_residual": 2.714652118533482e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 55.58707445161104,
+          "second_algebraic_eigenvalue": 57.31227835838834,
+          "hermiticity_residual": 2.377743135784353e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 54.556429888526566,
+          "second_algebraic_eigenvalue": 57.8069936240603,
+          "hermiticity_residual": 3.089355616747332e-14
+        }
+      },
+      "136": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 55.73767077583233,
+          "second_algebraic_eigenvalue": 58.97300944751528,
+          "hermiticity_residual": 2.8059721652553843e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 56.2958204065744,
+          "second_algebraic_eigenvalue": 58.012381858567316,
+          "hermiticity_residual": 2.3278167985198487e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 55.26372208086726,
+          "second_algebraic_eigenvalue": 58.50518144753229,
+          "hermiticity_residual": 3.0874348328477514e-14
+        }
+      },
+      "137": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 56.452210210809966,
+          "second_algebraic_eigenvalue": 59.67828815589368,
+          "hermiticity_residual": 2.8354197275398415e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 57.008914754609506,
+          "second_algebraic_eigenvalue": 58.71675235299334,
+          "hermiticity_residual": 2.3761313083683108e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 55.975369135980316,
+          "second_algebraic_eigenvalue": 59.20763167916881,
+          "hermiticity_residual": 2.972655975449903e-14
+        }
+      },
+      "138": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 57.17107144811823,
+          "second_algebraic_eigenvalue": 60.38778922637022,
+          "hermiticity_residual": 2.89597241749777e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 57.726337659805935,
+          "second_algebraic_eigenvalue": 59.425366378647425,
+          "hermiticity_residual": 2.5370253404784077e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 56.69135143234131,
+          "second_algebraic_eigenvalue": 59.91432058827845,
+          "hermiticity_residual": 3.1755171891607994e-14
+        }
+      },
+      "139": {
+        "-1": {
+          "lowest_algebraic_eigenvalue": 57.89423376748579,
+          "second_algebraic_eigenvalue": 61.101487403603,
+          "hermiticity_residual": 2.591990176091198e-14
+        },
+        "0": {
+          "lowest_algebraic_eigenvalue": 58.448068630403995,
+          "second_algebraic_eigenvalue": 60.13819958983376,
+          "hermiticity_residual": 2.2870431316435004e-14
+        },
+        "1": {
+          "lowest_algebraic_eigenvalue": 57.41164869984003,
+          "second_algebraic_eigenvalue": 60.62522354855007,
+          "hermiticity_residual": 3.01739672782231e-14
+        }
+      }
+    },
+    "minimum_by_absolute_label": {
+      "4": 3.7733959447691454,
+      "5": 3.819727167211938,
+      "6": 3.8721674706959472,
+      "7": 3.930614065656836,
+      "8": 3.994984794937878,
+      "9": 4.065212057143427,
+      "10": 4.141238943914498,
+      "11": 4.223016661748888,
+      "12": 4.310502738985754,
+      "13": 4.403659736248887,
+      "14": 4.502454292708446,
+      "15": 4.606856404029807,
+      "16": 4.716838864588942,
+      "17": 4.832376829074332,
+      "18": 4.9534474627033624,
+      "19": 5.080029658253922,
+      "20": 5.2121038046461985,
+      "21": 5.349651595419583,
+      "22": 5.492655868914968,
+      "23": 5.641100473597962,
+      "24": 5.794970153774717,
+      "25": 5.954250451839814,
+      "26": 6.118927624185632,
+      "27": 6.288988568398067,
+      "28": 6.46442075977,
+      "29": 6.645212195784586,
+      "30": 6.831351347276442,
+      "31": 7.022827115274081,
+      "32": 7.219628792620824,
+      "33": 7.421746029879849,
+      "34": 7.62916880468676,
+      "35": 7.841887394448202,
+      "36": 8.059892351546253,
+      "37": 8.283174480984048,
+      "38": 8.511724819973391,
+      "39": 8.745534619834237,
+      "40": 8.984595328967501,
+      "41": 9.228898577322695,
+      "42": 9.47843616255469,
+      "43": 9.733200036885666,
+      "44": 9.993182295092385,
+      "45": 10.258375163562892,
+      "46": 10.528770989919561,
+      "47": 10.804362233475622,
+      "48": 11.085141456417809,
+      "49": 11.371101315385161,
+      "50": 11.662234553948363,
+      "51": 11.958533995034916,
+      "52": 12.25999253429482,
+      "53": 12.566603133330329,
+      "54": 12.878358814254504,
+      "55": 13.19525265304011,
+      "56": 13.517277774777659,
+      "57": 13.844427347883185,
+      "58": 14.176694579787771,
+      "59": 14.514072711439853,
+      "60": 14.856555013335775,
+      "61": 15.204134780988223,
+      "62": 15.556805330439463,
+      "63": 15.914559994497576,
+      "64": 16.277392118804237,
+      "65": 16.64529505790788,
+      "66": 17.018262171672927,
+      "67": 17.396286821583654,
+      "68": 17.779362367313365,
+      "69": 18.16748216327237,
+      "70": 18.560639555005032,
+      "71": 18.958827876391062,
+      "72": 19.36204044546637,
+      "73": 19.770270562507662,
+      "74": 20.18351150537029,
+      "75": 20.601756527541973,
+      "76": 21.024998854225117,
+      "77": 21.453231679694813,
+      "78": 21.886448163673162,
+      "79": 22.324641428304027,
+      "80": 22.76780455527637,
+      "81": 23.215930582600556,
+      "82": 23.669012500949947,
+      "83": 24.127043251116348,
+      "84": 24.590015720367436,
+      "85": 25.057922738747695,
+      "86": 25.530757077067978,
+      "87": 26.008511441385217,
+      "88": 26.491178472491157,
+      "89": 26.97875073948891,
+      "90": 27.471220737223888,
+      "91": 27.968580883929008,
+      "92": 28.470823515793533,
+      "93": 28.977940883374266,
+      "94": 29.48992514845442,
+      "95": 30.006768379301345,
+      "96": 30.52846254684733,
+      "97": 31.054999519893666,
+      "98": 31.586371061615843,
+      "99": 32.12256882391036,
+      "100": 32.6635843431072,
+      "101": 33.209409035602704,
+      "102": 33.76003419266204,
+      "103": 34.31545097361334,
+      "104": 34.87565040310953,
+      "105": 35.44062336331121,
+      "106": 36.010360588824895,
+      "107": 36.58485266107827,
+      "108": 37.164090000814525,
+      "109": 37.74806286204242,
+      "110": 38.33676132590054,
+      "111": 38.93017529241891,
+      "112": 39.528294473505085,
+      "113": 40.13110838489555,
+      "114": 40.73860633788951,
+      "115": 41.35077743063562,
+      "116": 41.96761054019947,
+      "117": 42.589094310669665,
+      "118": 43.21521714675518,
+      "119": 43.845967199269126,
+      "120": 44.48133235799369,
+      "121": 45.121300237613895,
+      "122": 45.76585816672966,
+      "123": 46.41499317404905,
+      "124": 47.06869197628673,
+      "125": 47.726940962750206,
+      "126": 48.38972618095787,
+      "127": 49.057033320452014,
+      "128": 49.72884769582686,
+      "129": 50.40515422911682,
+      "130": 51.0859374308,
+      "131": 51.771181379663645,
+      "132": 52.460869701838874,
+      "133": 53.15498554767572,
+      "134": 53.853511568271806,
+      "135": 54.55642988798988,
+      "136": 55.263722080776034,
+      "137": 55.975369135980316,
+      "138": 56.691351431787936,
+      "139": 57.41164869951206
+    },
+    "global_minimum": 3.7733959447691454,
+    "global_minimum_absolute_label": 4,
+    "negative_mode_count": 0,
+    "minimum_strictly_increases_with_absolute_label": true,
+    "maximum_hermiticity_residual": 3.1755171891607994e-14
+  },
+  "analytic_tail": {
+    "method": "metric-normalized six-row Gershgorin polynomials after a polar Hodge split and Young bound",
+    "radial_element_count": 1599,
+    "characters": [
+      -1,
+      0,
+      1
+    ],
+    "signed_directions": [
+      -1,
+      1
+    ],
+    "epsilon": 0.5,
+    "certified_threshold_absolute_integer_label": 140,
+    "first_sampled_positive_threshold": 130,
+    "minimum_quadratic_coefficient": 0.0012510558947766409,
+    "threshold_margin": 1.2117804273717203,
+    "threshold_margin_derivative": 0.12813910038967008,
+    "maximum_lower_matrix_hermiticity_residual": 2.651611025015002e-12,
+    "all_integer_labels_at_or_above_threshold_coercive": true
+  },
+  "global_full_tensor_operator": {
+    "all_three_twisted_characters_covered": true,
+    "all_integer_angular_labels_covered": true,
+    "translation_pair_removed_from_internal_spectrum": true,
+    "negative_internal_mode_found": false,
+    "global_internal_gap_upper_identification": "the calibrated low-window minimum is the translation discretization level; the positive internal gap requires removing that pair"
+  },
+  "verdict": {
+    "full_tensor_high_angular_tail_closed": true,
+    "straight_stationary_vortex_linearly_nonnegative": true,
+    "strict_internal_gap_value_closed": false,
+    "closed_loop_stability_checked": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_full_tensor_internal_gap_gate"
+  }
+}

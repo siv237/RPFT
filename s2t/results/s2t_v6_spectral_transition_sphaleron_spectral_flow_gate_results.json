@@ -1,0 +1,69 @@
+{
+  "gate": "version6_spectral_transition_sphaleron_spectral_flow_gate",
+  "chern_simons_transition": {
+    "delta_N_CS": 1,
+    "sphaleron_midpoint_N_CS_mod_Z": "1/2",
+    "spectral_flow_per_left_SU2_doublet": 1
+  },
+  "one_generation": {
+    "H15_block_ranks": {
+      "Q_L": 6,
+      "L_L": 2,
+      "u_R": 3,
+      "d_R": 3,
+      "e_R": 1
+    },
+    "H15_total_rank": 15,
+    "left_doublet_crossings": {
+      "three_colored_Q_L_copies": 3,
+      "one_L_L_copy": 1,
+      "right_singlets": 0,
+      "total": 4
+    },
+    "anomaly_charges": {
+      "delta_B": "1",
+      "delta_L": "1",
+      "delta_B_plus_L": "2",
+      "delta_B_minus_L": "0"
+    }
+  },
+  "three_generations": {
+    "left_doublet_crossings": 12,
+    "delta_B": "3",
+    "delta_L": "3"
+  },
+  "comparison_with_project_class": {
+    "project_component_ranks": [
+      12,
+      3
+    ],
+    "sphaleron_component_flows_per_generation": [
+      3,
+      1
+    ],
+    "project_total_rank": 15,
+    "sphaleron_flow_per_generation": 4,
+    "sphaleron_flow_three_generations": 12,
+    "flow_equals_project_rank_15": false,
+    "three_generation_flow_equals_project_rank_15": false,
+    "numeric_12_has_same_origin_as_project_quark_rank_12": false,
+    "reason": "the sphaleron counts chiral SU(2) doublet copies, while q0 counts the full one-generation coefficient-space rank including right singlets"
+  },
+  "real_KO6_reading": {
+    "oriented_flow": [
+      4,
+      -4
+    ],
+    "ordinary_sum": 0,
+    "matches_general_conjugate_cancellation_pattern": true,
+    "identifies_toeplitz_pair_minus15_plus15": false
+  },
+  "verdict": {
+    "spectral_transition_language_has_physical_example": true,
+    "standard_sphaleron_flow_derives_project_class_15": false,
+    "explicit_operator_product_map_required": true,
+    "physical_closure": false,
+    "status": "the sphaleron validates transition through a zero mode, but its chiral multiplicity 4 per generation is not the rank-15 Toeplitz coefficient class"
+  },
+  "next_gate": "version6_spectral_transition_anomaly_to_toeplitz_product_map_gate"
+}

@@ -1,0 +1,75 @@
+{
+  "gate": "version6_spin_cover_carrier_parent_derivation_gate",
+  "callias_clifford_requirement": {
+    "spatial_clifford_factor": "C2_spin",
+    "mass_factor_needed": "independent C2_twist",
+    "max_same_factor_pauli_commutator_norm": 2.8284271247461903,
+    "same_factor_has_first_order_commutator": true,
+    "max_product_factor_cross_commutator_norm": 0.0,
+    "minimal_complex_product_dimension": 4
+  },
+  "hopf_pair_bundle": {
+    "bundle": "L direct_sum L*",
+    "clutching": "diag(z,z^-1)",
+    "total_first_chern_number": 0,
+    "transition_lies_in_SU2": true,
+    "max_determinant_one_residual": 2.2887833992611187e-16,
+    "max_unitarity_residual": 4.446067310658949e-16,
+    "topological_rank_two_bundle_obstruction": false,
+    "positive_and_negative_eigenline_chern_numbers": [
+      1,
+      -1
+    ]
+  },
+  "existing_KO6_pair_test": {
+    "candidate": "particle/conjugate or E/E* pair",
+    "grading_commutator_norms_sigma_xyz": [
+      10.954451150103322,
+      10.954451150103322,
+      0.0
+    ],
+    "full_pauli_triplet_preserves_grading": false,
+    "conjugate_charge_commutator_norms_sigma_xyz": [
+      10.954451150103322,
+      10.954451150103322,
+      0.0
+    ],
+    "full_pauli_triplet_commutes_with_nonzero_conjugate_charge": false,
+    "only_diagonal_U1_survives_both_tests": true,
+    "real_structure_is_antilinear_not_missing_complex_linear_intertwiner": true
+  },
+  "independent_duplicate_test": {
+    "candidate": "C2_twist tensor H15 with equal gauge action on both copies",
+    "gauge_commutator_norms_sigma_xyz": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "algebraically_valid": true,
+    "particle_dimension_before": 15,
+    "particle_dimension_after": 30,
+    "real_completed_dimension_before": 30,
+    "real_completed_dimension_after": 60,
+    "contained_in_current_H15_M35": false,
+    "normalized_by_current_M35_trace": false
+  },
+  "other_existing_candidates": {
+    "weak_SU2_minus_center_dimension": 8,
+    "weak_SU2_plus_center_dimension": 7,
+    "weak_doublet_uniform_on_H15": false,
+    "orientation_walk_C2_origin": "counterpropagating/Dirac factor",
+    "orientation_walk_C2_independent_of_spatial_spin": false,
+    "Clifford_stabilization_is_physical_state_derivation": false,
+    "two_copy_or_exterior_carrier_checked_as_single_particle_doublet": false
+  },
+  "verdict": {
+    "topological_Hopf_pair_rank_two_carrier_exists": true,
+    "current_KO6_pair_is_physical_internal_SU2_doublet": false,
+    "current_weak_or_walk_doublet_solves_problem": false,
+    "new_equal_charge_duplicate_would_solve_algebraic_problem": true,
+    "finite_parent_derives_required_doublet": false,
+    "localized_fifteen_fermions_fully_derived": false,
+    "status": "topological_carrier_pass_but_gauge_equivariant_parent_carrier_fail",
+    "next_gate": "version6_two_copy_spin_cover_multiplicity_gate"
+  }
+}

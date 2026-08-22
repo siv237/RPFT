@@ -1,0 +1,237 @@
+{
+  "gate": "version6_nongaussian_spatial_stiffness_saturation_gate",
+  "uniform_rank_loss_valley": {
+    "state": "diag(1,0,0)",
+    "bridge": "diag(1,C), C in M2(R)",
+    "dimension": 4,
+    "checks": [
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      },
+      {
+        "local_bridge_energy": 0.0,
+        "bridge_gradient_energy": 0.0,
+        "state_gradient_energy": 0.0,
+        "projector_skyrme_energy": 0.0
+      }
+    ],
+    "maximum_total_derivative_energy": 0.0,
+    "maximum_local_energy": 0.0
+  },
+  "lattice_stiffness": {
+    "sites": 8,
+    "transverse_components_per_site": 4,
+    "gradient_hessian_zero_modes": 4,
+    "expected_uniform_zero_modes": 4,
+    "smallest_positive_eigenvalue": 0.5857864376269041,
+    "interpretation": "stiffness removes nonuniform modes but leaves global M2(R) valley"
+  },
+  "derrick_balance": {
+    "energy": "a L + b/L",
+    "samples": [
+      {
+        "quadratic_coefficient": 1.0,
+        "quartic_coefficient": 1.0,
+        "stationary_radius": 1.0,
+        "stationary_energy": 2.0
+      },
+      {
+        "quadratic_coefficient": 2.0,
+        "quartic_coefficient": 0.5,
+        "stationary_radius": 0.5,
+        "stationary_energy": 2.0
+      },
+      {
+        "quadratic_coefficient": 0.3,
+        "quartic_coefficient": 4.2,
+        "stationary_radius": 3.7416573867739418,
+        "stationary_energy": 2.244994432064365
+      }
+    ],
+    "stabilizes_nontrivial_spatial_scale": true,
+    "selects_homogeneous_bulk_phase": false
+  },
+  "project_archaeology": {
+    "projector_curvature_E4_exists_conditionally": true,
+    "common_E2_E4_scale_derived": false,
+    "fermion_induced_unique_positive_E4_derived": false,
+    "derivative_terms_nonzero_on_constant_rank_loss_valley": false
+  },
+  "verdict": {
+    "spatial_stiffness_saturates_homogeneous_transition": false,
+    "spatial_stiffness_can_stabilize_existing_defect_size": true,
+    "bulk_rank_loss_requires_nonderivative_coercivity": true,
+    "next_gate": "version6_modular_dual_weight_bridge_coercivity_gate"
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "gate": "version6_bosonic_defect_channel_operator_factorization_gate",
+  "vacuum_hessian_symbol": {
+    "symbols": [
+      {
+        "wave_number": 0.0,
+        "eigenvalues": [
+          2.275957200481571e-07,
+          2.275957200481571e-07,
+          4.50815604291499,
+          17.88455649687215,
+          17.884556499647708
+        ],
+        "rank_tolerance_1e-6": 3,
+        "tangent_basis_indices": [
+          2,
+          3
+        ],
+        "tangent_symbol_residuals": [
+          2.275957200481571e-07,
+          2.275957200481571e-07
+        ],
+        "normal_symbol_minimum": 4.50815604291499
+      },
+      {
+        "wave_number": 0.5,
+        "eigenvalues": [
+          2.275957200481571e-07,
+          2.275957200481571e-07,
+          5.00815604291499,
+          18.38455649687215,
+          18.384556499647708
+        ],
+        "rank_tolerance_1e-6": 3,
+        "tangent_basis_indices": [
+          2,
+          3
+        ],
+        "tangent_symbol_residuals": [
+          2.275957200481571e-07,
+          2.275957200481571e-07
+        ],
+        "normal_symbol_minimum": 5.00815604291499
+      },
+      {
+        "wave_number": 1.0,
+        "eigenvalues": [
+          2.275957200481571e-07,
+          2.275957200481571e-07,
+          6.50815604291499,
+          19.88455649687215,
+          19.884556499647708
+        ],
+        "rank_tolerance_1e-6": 3,
+        "tangent_basis_indices": [
+          2,
+          3
+        ],
+        "tangent_symbol_residuals": [
+          2.275957200481571e-07,
+          2.275957200481571e-07
+        ],
+        "normal_symbol_minimum": 6.50815604291499
+      },
+      {
+        "wave_number": 3.0,
+        "eigenvalues": [
+          2.275957200481571e-07,
+          2.275957200481571e-07,
+          22.508156042914994,
+          35.88455649687215,
+          35.8845564996477
+        ],
+        "rank_tolerance_1e-6": 3,
+        "tangent_basis_indices": [
+          2,
+          3
+        ],
+        "tangent_symbol_residuals": [
+          2.275957200481571e-07,
+          2.275957200481571e-07
+        ],
+        "normal_symbol_minimum": 22.508156042914994
+      }
+    ],
+    "field_component_count": 5,
+    "symbol_rank_for_nonzero_wave_number": 3,
+    "exact_tangent_kernel_dimension": 2,
+    "director_principal_symbol_is_zero_for_every_wave_number": true,
+    "full_static_hessian_is_elliptic": false
+  },
+  "exact_flat_director_family": {
+    "configuration": "Q(x)=Delta(P(n(x))-I/3) with n depending on one coordinate",
+    "maximum_DQ_norm": 2.1138016631127878e-16,
+    "maximum_curvature_norm": 0.0,
+    "canonical_potential": 0.0,
+    "total_static_energy_density": 0.0,
+    "samples": [
+      {
+        "coordinate": -2.0,
+        "covariant_derivative_norm": 1.4720415368819607e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -1.9,
+        "covariant_derivative_norm": 1.5332934166833742e-19,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -1.8,
+        "covariant_derivative_norm": 0.0,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -1.7,
+        "covariant_derivative_norm": 4.336808689942018e-19,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -1.6,
+        "covariant_derivative_norm": 0.0,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -1.5,
+        "covariant_derivative_norm": 0.0,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -1.4,
+        "covariant_derivative_norm": 2.4532694666933987e-18,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -1.2999999999999998,
+        "covariant_derivative_norm": 7.987266704438207e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -1.2,
+        "covariant_derivative_norm": 4.046035655711836e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -1.1,
+        "covariant_derivative_norm": 7.911556306605241e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -1.0,
+        "covariant_derivative_norm": 7.97218214573518e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -0.8999999999999999,
+        "covariant_derivative_norm": 4.3885418357208765e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -0.7999999999999998,
+        "covariant_derivative_norm": 1.962615573354719e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -0.7,
+        "covariant_derivative_norm": 8.092071311423672e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -0.5999999999999999,
+        "covariant_derivative_norm": 2.1138016631127878e-16,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -0.5,
+        "covariant_derivative_norm": 2.7755575615628914e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -0.3999999999999999,
+        "covariant_derivative_norm": 3.925231146709438e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -0.2999999999999998,
+        "covariant_derivative_norm": 1.962615573354719e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -0.19999999999999996,
+        "covariant_derivative_norm": 2.7755575615628914e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": -0.09999999999999987,
+        "covariant_derivative_norm": 2.0816681711721685e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 0.0,
+        "covariant_derivative_norm": 0.0,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 0.10000000000000009,
+        "covariant_derivative_norm": 2.1942709178604383e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 0.20000000000000018,
+        "covariant_derivative_norm": 1.962615573354719e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 0.30000000000000027,
+        "covariant_derivative_norm": 3.925231146709438e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 0.40000000000000036,
+        "covariant_derivative_norm": 3.925231146709438e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 0.5,
+        "covariant_derivative_norm": 2.7755575615628914e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 0.6000000000000001,
+        "covariant_derivative_norm": 2.0014830212433605e-16,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 0.7000000000000002,
+        "covariant_derivative_norm": 8.326672684688674e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 0.8000000000000003,
+        "covariant_derivative_norm": 8.092071311423672e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 0.9000000000000004,
+        "covariant_derivative_norm": 1.316562550716263e-16,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 1.0,
+        "covariant_derivative_norm": 7.97218214573518e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 1.1,
+        "covariant_derivative_norm": 7.911556306605241e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 1.2000000000000002,
+        "covariant_derivative_norm": 7.911556306605241e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 1.3000000000000003,
+        "covariant_derivative_norm": 7.987266704438207e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 1.4000000000000004,
+        "covariant_derivative_norm": 3.925231146709438e-17,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 1.5,
+        "covariant_derivative_norm": 0.0,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 1.6,
+        "covariant_derivative_norm": 0.0,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 1.7000000000000002,
+        "covariant_derivative_norm": 4.336808689942018e-19,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 1.8000000000000003,
+        "covariant_derivative_norm": 9.817868239461538e-18,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 1.9000000000000004,
+        "covariant_derivative_norm": 9.813676791237319e-18,
+        "curvature_norm": 0.0
+      },
+      {
+        "coordinate": 2.0,
+        "covariant_derivative_norm": 1.4720415368819607e-17,
+        "curvature_norm": 0.0
+      }
+    ],
+    "local_director_twists_are_exactly_flat_not_merely_quadratic_zero_modes": true
+  },
+  "two_dimensional_director_test": {
+    "covariant_derivative_residuals": [
+      8.15873481018251e-17,
+      1.7303388613476597e-17
+    ],
+    "curvature_norm": 0.1344726612248365,
+    "curvature_energy_density": 0.018082896616889645
+  },
+  "reinterpretation_of_previous_L4_scaling": {
+    "previous_power_fit": -3.9751418609438223,
+    "previous_L4_scaling_is_reproduced": true,
+    "is_free_biharmonic_director_dispersion": false,
+    "correct_interpretation": "finite-volume coupling of the flat director sector to the decaying hedgehog background and boundary cutoff"
+  },
+  "factorization_test": {
+    "coercive_positive_channel_factorization_possible": false,
+    "reason": "the vacuum principal symbol has an exact two-dimensional kernel at every wave number",
+    "semidefinite_factorization_excluded": false,
+    "isolated_local_minimum_derived": false,
+    "fredholm_static_hessian_derived": false
+  },
+  "architectural_consequence": {
+    "add_parent_derived_quadratic_director_stiffness": "would restore an elliptic Hessian but reopens the infrared energy of the global hedgehog unless gauged",
+    "promote_to_independent_full_connection": "can interpret flat director changes as gauge redundancy but requires the missing stabilizer direction and gauge fixing",
+    "current_composite_connection_alone_is_sufficient_for_particle_dynamics": false
+  },
+  "verdict": {
+    "negative_mode_found": false,
+    "strict_linear_stability_derived": false,
+    "failure_is_flatness_not_negative_curvature": true,
+    "channel_factorization_program_closed_for_current_static_parent": true,
+    "status": "nonelliptic_director_kernel_no_go",
+    "next_gate": "version6_bosonic_defect_full_gauge_completion_reopening_gate"
+  }
+}

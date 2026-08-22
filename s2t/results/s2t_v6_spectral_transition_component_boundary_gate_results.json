@@ -1,0 +1,129 @@
+{
+  "gate": "version6_spectral_transition_component_boundary_gate",
+  "input_certificates": {
+    "physical_support_split": "15=12+3",
+    "full_KO6_class": 15,
+    "full_oriented_indices": 15,
+    "full_unbounded_extension_cycle": "pass",
+    "full_minimal_defect_weight": "1/7",
+    "full_loop_action": 0.14285714285714285
+  },
+  "component_cycles": {
+    "quark": {
+      "complex_rank": 12,
+      "normalized_weight": 0.11428571428571428,
+      "complex_oriented_indices": [
+        -12,
+        12
+      ],
+      "KO6_integer_class": 12,
+      "KO7_symbol": "(z q_quark + 1-q_quark, z^-1 conjugate(q_quark) + 1-conjugate(q_quark))",
+      "KO7_unitarity_residual": 3.8459253727671276e-16,
+      "KO7_real_exchange_residual": 0.0,
+      "unbounded_commutator_residual": 0.0,
+      "real_pair_defect_rank": 24,
+      "real_pair_loop_action": 0.11428571428571428,
+      "real_pair_ordinary_index": 0,
+      "nonzero_KO6_class_at_K_theory_level": true
+    },
+    "lepton": {
+      "complex_rank": 3,
+      "normalized_weight": 0.02857142857142857,
+      "complex_oriented_indices": [
+        -3,
+        3
+      ],
+      "KO6_integer_class": 3,
+      "KO7_symbol": "(z q_lepton + 1-q_lepton, z^-1 conjugate(q_lepton) + 1-conjugate(q_lepton))",
+      "KO7_unitarity_residual": 1.9229626863835638e-16,
+      "KO7_real_exchange_residual": 0.0,
+      "unbounded_commutator_residual": 0.0,
+      "real_pair_defect_rank": 6,
+      "real_pair_loop_action": 0.02857142857142857,
+      "real_pair_ordinary_index": 0,
+      "nonzero_KO6_class_at_K_theory_level": true
+    }
+  },
+  "finite_H15_reduction": {
+    "quark_projector_reduces_current_gauge_and_charged_Dirac_operator": true,
+    "lepton_projector_reduces_current_gauge_and_charged_Dirac_operator": true,
+    "grading_preserved": true,
+    "KO6_preserved_after_orientation_doubling": true,
+    "first_order_condition_inherited_from_frozen_parent": true,
+    "inheritance_formula": "P [[D,a],J b J^-1] P = 0 when P commutes with A,D,J,gamma",
+    "scope": "current charged H15 operator; the unclosed higher-degree neutrino operator is not added",
+    "component_subcycles_are_genuine_reducing_cycles": true
+  },
+  "global_class_ledger": {
+    "component_KO6_sum": 15,
+    "component_positive_indices_sum": -15,
+    "component_negative_indices_sum": 15,
+    "component_weight_sum": 0.14285714285714285,
+    "quark_component_alone_represents_full_class_15": false,
+    "lepton_component_alone_represents_full_class_15": false,
+    "direct_sum_represents_full_class_15": true,
+    "global_closure_deficit_requires_total_rank_15": true,
+    "global_class_requires_both_component_classes_in_total": true
+  },
+  "additivity_and_binding_test": {
+    "orthogonal_projection_overlap_residual": 0.0,
+    "loop_action_cross_term": 0.0,
+    "component_loop_actions": {
+      "quark": 0.11428571428571428,
+      "lepton": 0.02857142857142857
+    },
+    "component_loop_action_sum": 0.14285714285714285,
+    "full_loop_action_reconstructed": 0.14285714285714285,
+    "heat_response_at_t1": {
+      "quark": 0.0722423495804066,
+      "lepton": 0.01806058739510165
+    },
+    "heat_response_sum_at_t1": 0.09030293697550824,
+    "full_heat_response_at_t1": 0.09030293697550824,
+    "finite_rank_response_cross_term": 0.0,
+    "current_action_contains_quark_lepton_binding_term": false,
+    "current_topology_forces_colocalization": false,
+    "interpretation": "the total class is fixed, but the trace action and relative response are direct sums and do not force the rank-12 and rank-3 defects to share one spatial core"
+  },
+  "transfer_and_gap_test": {
+    "common_scalar_transfer_restricts_to_both_components": true,
+    "common_scalar_transfer_free_moduli_after_unitarity": 1,
+    "split_component_transfer_free_moduli_after_unitarity": 2,
+    "component_weight_gap_candidates": {
+      "quark": {
+        "m_if_m2_equals_component_weight": 0.3380617018914066,
+        "gap_omega0": 0.34485657698530603,
+        "selected_by_unitarity_or_trace": false
+      },
+      "lepton": {
+        "m_if_m2_equals_component_weight": 0.1690308509457033,
+        "gap_omega0": 0.16984628808367366,
+        "selected_by_unitarity_or_trace": false
+      }
+    },
+    "component_weights_select_nonzero_gaps": false,
+    "nonzero_quark_gap_derived": false,
+    "nonzero_lepton_gap_derived": false,
+    "relative_component_gap_derived": false
+  },
+  "parent_boundary": {
+    "component_K_theory_cycles_closed": true,
+    "component_unbounded_extension_cycles_closed": true,
+    "component_physical_localization_closed": false,
+    "component_mass_or_binding_energy_closed": false,
+    "Toeplitz_extension_derived_as_original_M35_dynamics": false,
+    "absolute_energy_scale": false
+  },
+  "verdict": {
+    "rank_12_and_rank_3_are_genuine_component_cycles": true,
+    "either_component_alone_is_the_original_forced_defect": false,
+    "their_direct_sum_is_the_original_class_15": true,
+    "global_topology_requires_total_class_but_not_colocation": true,
+    "current_action_binds_components_into_one_particle": false,
+    "component_nonzero_gaps_derived": false,
+    "rank_3_declared_elementary_particle": false,
+    "physical_closure": false,
+    "status": "the 12 and 3 supports are genuine analytic and K-theoretic subcycles, but only their sum realizes the frozen class 15; current additive actions provide neither colocalization nor a mass gap"
+  },
+  "next_gate": "version6_spectral_transition_component_colocalization_gate"
+}

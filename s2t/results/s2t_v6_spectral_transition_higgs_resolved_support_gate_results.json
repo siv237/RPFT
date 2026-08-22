@@ -1,0 +1,106 @@
+{
+  "gate": "version6_spectral_transition_higgs_resolved_support_gate",
+  "Higgs_covariant_projectors": {
+    "definitions": {
+      "P_H": "H H^dagger/(H^dagger H)",
+      "P_tildeH": "tilde(H) tilde(H)^dagger/(H^dagger H)"
+    },
+    "ranks": {
+      "up": 6,
+      "down": 6,
+      "electron": 2,
+      "neutrino": 1
+    },
+    "sum_to_identity_residual": 3.145847504238329e-16,
+    "orthogonality_residual": 7.050039861280838e-17,
+    "idempotence_residual": 2.3818435404569866e-16,
+    "SU2_covariance_residuals": {
+      "up": 1.1868602169191553e-15,
+      "down": 1.2070175321225453e-15,
+      "electron": 6.968718970875494e-16,
+      "neutrino": 6.852340657287319e-16
+    },
+    "SU3_color_commutator_residuals": {
+      "up": 0.0,
+      "down": 0.0,
+      "electron": 0.0,
+      "neutrino": 0.0
+    },
+    "defined_at_H_equal_zero": false
+  },
+  "charged_Dirac_reduction": {
+    "sample_Yukawas_are_structure_test_only": {
+      "up": 0.7,
+      "down": 0.4,
+      "electron": 0.2
+    },
+    "projector_commutator_residuals": {
+      "up": 1.72828295011806e-16,
+      "down": 1.2719202621569003e-16,
+      "electron": 1.962615573354719e-17,
+      "neutrino": 1.0514120824276917e-17
+    },
+    "Dirac_rank": 14,
+    "Dirac_nullity": 1,
+    "sorted_eigenvalues": [
+      -0.7,
+      -0.6999999999999998,
+      -0.6999999999999996,
+      -0.4000000000000002,
+      -0.39999999999999997,
+      -0.3999999999999998,
+      -0.19999999999999993,
+      -8.608565249534905e-17,
+      0.19999999999999998,
+      0.4000000000000001,
+      0.40000000000000013,
+      0.40000000000000013,
+      0.6999999999999995,
+      0.6999999999999997,
+      0.6999999999999998
+    ],
+    "structural_support_split": "15=6_up+6_down+2_e+1_nu"
+  },
+  "Toeplitz_and_Real_ledger": {
+    "component_KO6_classes": {
+      "up": 6,
+      "down": 6,
+      "electron": 2,
+      "neutrino": 1
+    },
+    "component_weights": {
+      "up": 0.05714285714285714,
+      "down": 0.05714285714285714,
+      "electron": 0.01904761904761905,
+      "neutrino": 0.009523809523809525
+    },
+    "component_real_ranks": {
+      "up": 12,
+      "down": 12,
+      "electron": 4,
+      "neutrino": 2
+    },
+    "class_sum": 15,
+    "weight_sum": 0.14285714285714285
+  },
+  "mass_boundary": {
+    "charged_degree_one_edges": [
+      "up",
+      "down",
+      "electron"
+    ],
+    "charged_mass_values_derived": false,
+    "neutrino_degree_one_edge": false,
+    "neutrino_rank_one_line_is_Higgs_conditional": true,
+    "neutrino_line_regular_at_Higgs_zero": false
+  },
+  "verdict": {
+    "Higgs_resolved_split_passes": true,
+    "split": "15=6_up+6_down+2_e+1_nu",
+    "charged_blocks_structurally_massive_for_nonzero_Yukawas": true,
+    "neutrino_line_is_massless_at_degree_one": true,
+    "rank_one_neutrino_line_is_parent_closed_particle": false,
+    "physical_closure": false
+  },
+  "next_gate": "version6_spectral_transition_neutrino_line_parent_gate"
+}

@@ -1,0 +1,178 @@
+\chapter{Локализация смены ранга нейтринной опоры}
+\label{ch:v6-spectral-transition-rank-change-localization-gate}
+
+\section{Различающий вопрос}
+
+Квадратичный ковариант
+\begin{equation}
+ W_\nu(H)=\widetilde H\widetilde H^\dagger
+\end{equation}
+регулярен во всём пространстве конфигураций и меняет ранг с нуля на один
+ровно при переходе от $H=0$ к $H\neq0$. Однако существование такого
+оператора ещё не означает, что область смены ранга локализуется на уже
+построенном вихревом дефекте $Q,T,B$.
+
+Нулевая гипотеза настоящего гейта утверждает, что радиальное сцепление
+$M_{300}$ само подавляет норму Хиггса в ядре вихря до нуля. Стоп-критерий
+--- строго положительный точечный минимум $|H|^2$ для всякой допустимой
+неотрицательной радиальной амплитуды.
+
+Это новая проверка, а не повторение портального аудита. Предыдущий гейт
+установил нулевой коэффициент оператора
+$\Tr(Q^2)H^\dagger H$, но сохранил радиальный член $T|H|^2$. Здесь
+проверяется, достаточно ли именно этого сохранившегося члена для
+локального восстановления слабой симметрии.
+
+\section{Точечное сокращение полного квадрата}
+
+Единый квадрат кривизны Тома V имеет вид
+\begin{equation}
+ V_H(X,H)=\frac13\left\{
+ \Tr(I_3-X^\dagger X)^2+
+ \Tr(XX^\dagger-|H|^2I_3)^2+
+ 3(|H|^2-1)^2\right\}.
+ \label{eq:v6-rank-localization-parent-potential}
+\end{equation}
+Положим
+\begin{equation}
+ XX^\dagger=TR,
+ \qquad T\geq0,
+ \qquad \Tr R=1,
+ \qquad s=|H|^2\geq0.
+\end{equation}
+После удаления членов, не зависящих от $s$, получаем
+\begin{equation}
+ V_{\rm loc}(s;T)=\frac13\left[6s^2-(2T+6)s\right]+\mathrm{const}.
+ \label{eq:v6-rank-localization-reduced-potential}
+\end{equation}
+Его единственный минимум на $s\geq0$ равен
+\begin{equation}
+ s_*(T)=\frac{T}{6}+\frac12.
+ \label{eq:v6-rank-localization-current-minimum}
+\end{equation}
+Следовательно,
+\begin{equation}
+ s_*(T)\geq\frac12>0
+ \qquad\text{при всех }T\geq0.
+\end{equation}
+
+Знак радиального сцепления оказался решающим: положительная амплитуда
+$T$ не подавляет, а повышает предпочтительную норму Хиггса. Поэтому даже
+идеализированная точка $T=0$ не является точкой восстановления $H=0$.
+
+\section{Оптимистический контроль единичного ядрового члена}
+
+В старом гессианном аудите $M_{300}$ уже рассматривался единичный
+дефектный импульс $V_k=|H|^2$. Чтобы не пропустить этот наиболее дешёвый
+канал, введём контрольный параметр $0\leq k\leq1$:
+\begin{equation}
+ V_{\rm loc}^{(k)}(s;T)
+ =\frac13\left[6s^2-(2T+6-3k)s\right]+mathrm{const}.
+\end{equation}
+Тогда
+\begin{equation}
+ s_*(T;k)=\max\left\{0,
+ \frac{T}{6}+\frac12-\frac{k}{4}\right\}.
+ \label{eq:v6-rank-localization-optimistic-minimum}
+\end{equation}
+Даже на наиболее благоприятной границе $T=0$, $k=1$ остаётся
+\begin{equation}
+ s_*\geq\frac14>0.
+\end{equation}
+Для достижения $H=0$ потребовалась бы сила
+\begin{equation}
+ k\geq k_{\rm crit}(T)=2+\frac23T,
+ \label{eq:v6-rank-localization-critical-strength}
+\end{equation}
+которой нет в текущем родителе. Контроль $k=1$ не объявляется новым
+членом модели: он лишь показывает, что даже уже встречавшаяся
+единичная нормировка недостаточна.
+
+\section{Следствие для спектрального перехода}
+
+Для слабого дублета
+\begin{equation}
+ \Tr W_\nu(H)=|H|^2=s.
+\end{equation}
+Поэтому при найденном минимуме
+\begin{equation}
+ \rank W_\nu=1
+\end{equation}
+как вне вихря, так и в его ядре. Текущий дефект может деформировать
+амплитуду $W_\nu$, но не создаёт границу ранговых страт $0\leftrightarrow1$.
+
+Это согласуется с общей теорией конденсатов на струнах: второе поле
+обнуляется или конденсируется в ядре только при наличии смешанного
+взаимодействия с требуемым знаком и достаточной величиной; одна топология
+струнообразующего поля такого условия не обеспечивает
+\cite{rank-localization-witten1985,rank-localization-achucarro2000,
+rank-localization-forgacs2017}.
+
+\begin{theorem}[Радиальный мост не локализует смену ранга]
+В существующем квадрате кривизны $M_{300}$ точечный минимум нормы слабого
+дублета равен $|H|^2=T/6+1/2$ и потому строго положителен при $T\geq0$.
+Даже оптимистический единичный ядровый член оставляет
+$|H|^2\geq1/4$. Следовательно, вихрь $Q,T,B$ не локализует переход
+$\rank W_\nu:0\to1$.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет ручного ядрового подавления]
+Нельзя назначить $k\geq k_{\rm crit}(T)$ или ненулевой коэффициент
+$\Tr(Q^2)H^\dagger H$ ради получения $H=0$ в ядре. Такой шаг вводит
+новое взаимодействие после знания желаемого результата. Допустим только
+его вывод из представленного коннектора, общего квадрата кривизны или
+другого заранее определённого родительского принципа.
+\end{nogocriterion}
+
+\section{Следующий различающий тест}
+
+Отрицательный ответ закрывает радиальную интерпретацию существующего
+моста, но не все внутренние углы $M_{300}$. Следующий гейт о радиальном
+коннекторе вихря должен классифицировать представленные эквивариантные стрелки между
+семейным дефектным сектором и слабым дублетом. Успех требует ненулевого
+бифундаментального пространства, чей единый квадрат автоматически даёт
+ядровый член правильного знака. Нулевое пространство интертвинеров
+закроет скрытый коннектор и отделит текущий родитель от новой модели.
+Его файловый идентификатор:
+\begin{sloppypar}
+\path{version6_spectral_transition_radial_bridge_vortex_connector_gate}.
+\end{sloppypar}
+
+\begin{protocol}
+\begin{enumerate}
+ \item регулярный носитель смены ранга $W_\nu$: \textbf{сохранён};
+ \item радиальное сцепление $T|H|^2$: \textbf{учтено};
+ \item точечный минимум текущего родителя:
+ \textbf{$|H|^2=T/6+1/2$};
+ \item нижняя граница при $T\geq0$: \textbf{$1/2$};
+ \item нижняя граница при оптимистическом $0\leq k\leq1$:
+ \textbf{$1/4$};
+ \item критическая сила подавления:
+ \textbf{$k_{\rm crit}=2+2T/3$};
+ \item локализованный переход ранга $0\to1$:
+ \textbf{не получен};
+ \item скрытый портал формы: \textbf{не найден};
+ \item физическое замыкание: \textbf{не достигнуто}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v6_spectral_transition_rank_change_localization_gate.py} и
+\path{s2t_v6_spectral_transition_rank_change_localization_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{rank-localization-witten1985}
+E.~Witten,
+\emph{Superconducting Strings},
+Nuclear Physics B 249 (1985), 557--592.
+
+\bibitem{rank-localization-achucarro2000}
+A.~Ach\'ucarro, T.~Vachaspati,
+\emph{Semilocal and Electroweak Strings},
+Physics Reports 327 (2000), 347--426; arXiv:hep-ph/9904229.
+
+\bibitem{rank-localization-forgacs2017}
+P.~Forg\'acs, A.~Luk\'acs,
+\emph{Stabilization of Semilocal Strings by Dark Scalar Condensates},
+Physical Review D 95 (2017), 035003; arXiv:1612.03151.
+\end{thebibliography}

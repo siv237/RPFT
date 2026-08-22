@@ -1,0 +1,42 @@
+{
+  "gate": "version6_exchange_bridge_parent_admissibility_gate",
+  "real_exchange": {
+    "R_T_lambda_equals_T_lambda_star_R": true,
+    "outer_J_commutes_with_F": true,
+    "J_anticommutes_with_grading": true,
+    "new_KO6_sign_obstruction": false,
+    "full_project_Clifford_realization_reused_not_recomputed": true
+  },
+  "toeplitz_differential_calculus": {
+    "number_operator_dimension": 16,
+    "identity": "E01 [N,E10] = E00",
+    "oneform_residual": 0.0,
+    "P0_is_represented_oneform_if_compact_matrix_units_are_in_algebra": true,
+    "P0_is_in_symbol_algebra_C_of_circle": false,
+    "P0_is_in_toeplitz_compact_ideal": true
+  },
+  "frozen_H15_physical_oneforms": {
+    "charged_edge_types": [
+      "u",
+      "d",
+      "e"
+    ],
+    "charged_edge_multiplicity_dimension": 3,
+    "family_oneform_dimension": 4,
+    "physical_multiplicity_dimension": 12,
+    "orientation_exchange_edge_present": false,
+    "bridge_requires_new_neutral_edge_or_odd_endomorphism": true
+  },
+  "parent_fork": {
+    "symbol_only_parent": "bridge_absent",
+    "toeplitz_extension_with_smooth_compacts": "bridge_algebraically_available",
+    "frozen_H15_oneform_parent": "bridge_absent",
+    "graded_superconnection_endomorphism": "conditionally_available"
+  },
+  "verdict": {
+    "basic_real_compatibility": "pass",
+    "existing_H15_physical_oneform": "fail",
+    "mechanism_status": "conditionally_open_only_after_explicit_parent_extension",
+    "next_gate": "version6_exchange_bridge_minimal_parent_gate"
+  }
+}

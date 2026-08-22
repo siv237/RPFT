@@ -1,0 +1,79 @@
+{
+  "gate": "version6_single_thread_phase_weighted_moment_lift_gate",
+  "input": {
+    "ordered_weights": [
+      0.9011874253513867,
+      0.032937524882871085,
+      0.032937524882871085,
+      0.032937524882871085
+    ],
+    "residual_group": "Z3",
+    "real_pair_combinations_tested": "full continuous span of real and imaginary parts"
+  },
+  "linear_independence": {
+    "rank_of_four_spin3_contributions": 4,
+    "singular_values": [
+      0.9428090415820639,
+      0.4868644955601481,
+      0.48686449556014794,
+      0.48686449556014777
+    ],
+    "exact_target_requires_equal_complex_coefficients": true
+  },
+  "trivial_character": {
+    "best_scale": 0.25,
+    "relative_residual": 0.6133541142598031,
+    "absolute_cosine": 0.7898080339681111
+  },
+  "nontrivial_characters": {
+    "number_of_character_spans": 6,
+    "best_candidate": {
+      "orbit_phases": [
+        [
+          -0.4999999999999998,
+          0.8660254037844387
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          -0.5000000000000003,
+          -0.8660254037844384
+        ]
+      ],
+      "continuous_real_pair_span_rank": 2,
+      "optimal_real_imag_coefficients": [
+        2.462957881764178,
+        1.5545268532716116e-14
+      ],
+      "best_scale": 0.5548966680539913,
+      "relative_residual": 0.667160649278724,
+      "absolute_cosine": 0.7449138661979593
+    }
+  },
+  "amplitude_obstruction": {
+    "required_inverse_weights": [
+      1.10964708546625,
+      30.36050837323367,
+      30.36050837323367,
+      30.36050837323367
+    ],
+    "required_off_axis_to_selected_modulus_ratio": 27.36050837323367,
+    "unitary_character_modulus_ratio": 1.0,
+    "unit_modulus_phase_can_compensate_weights": false
+  },
+  "real_pair_boundary": {
+    "counterpropagating_pair_can_cancel_physical_first_moment": true,
+    "real_pair_can_change_effective_real_coefficient_moduli": true,
+    "fixed_axis_and_one_orbit_axis_share_trivial_phase_with_unequal_weights": true,
+    "real_pair_removes_spin3_amplitude_obstruction": false
+  },
+  "verdict": {
+    "canonical_Z3_or_Real_phase_lift_reproduces_T": false,
+    "single_global_thread_hypothesis_refuted": false,
+    "pure_phase_weighting_route_closed": true,
+    "state_dependent_amplitude_weight_required": true,
+    "next_gate": "version6_single_thread_connectivity_weighted_moment_parent_gate"
+  }
+}

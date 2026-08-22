@@ -1,0 +1,63 @@
+{
+  "gate": "version6_spectral_transition_morita_two_step_connector_gate",
+  "input_certificates": {
+    "direct_connector_exists": false,
+    "mixed_oneform_module_exists": true,
+    "mixed_module_selects_unique_connector": false
+  },
+  "graded_product_audit": {
+    "formula": "D_tot=D_f tensor 1+gamma_f tensor D_H",
+    "family_oddness_residual": 0.0,
+    "mixed_square_residual": 4.166517598348034e-16,
+    "mixed_two_step_term_survives": false,
+    "ungraded_control_cross_norm": 14.179712498516263,
+    "ungraded_control_is_admissible_Dirac_product": false,
+    "reason": "the graded cross terms cancel by gamma_f D_f + D_f gamma_f=0; removing gamma_f restores a cross term but violates the graded product"
+  },
+  "ordinary_degree_two_boundary": {
+    "generic_particle_middle_quotient_rank": 0,
+    "generic_traceless_symmetric_quotient_rank": 0,
+    "ordinary_family_shape_twoform_survives": false,
+    "status": "closed"
+  },
+  "rank_one_quotient_boundary": {
+    "represented_two_forms": "C rho + Q M3 Q",
+    "degree_two_junk": "Q M3 Q",
+    "degree_two_quotient": "C rho",
+    "quotient_complex_dimension": 1,
+    "middle_shape_curvature_survives": false
+  },
+  "relative_curvature_audit": {
+    "formula": "tau300(R^2)=tau20(F_F^2)+tau15(F_O^2)-2 tau20(F_F) tau15(F_O)",
+    "centered_formula": "tau300(R^2)=tau20(F_F^2)+tau15(F_O^2) when both curvatures are centered",
+    "sample_additive_residual": 1.1102230246251565e-16,
+    "mixed_derivative_in_TrQ2_and_H2": 0.0,
+    "Tr_Q": 0.0,
+    "shape_Higgs_portal_generated": false,
+    "interpretation": "centering kills the only bilinear trace cross term, leaving a sum of sector norms rather than Tr(Q^2) H^dagger H"
+  },
+  "superconnection_boundary": {
+    "standard_middle_block": "XX*+|Phi|^2 I3",
+    "standard_produces_moment_map_difference": false,
+    "holomorphic_path_norm": "|Phi|^2 Tr(X*X)",
+    "holomorphic_produces_moment_map_difference": false,
+    "Hodge_requires_extra_primitive": true
+  },
+  "higher_functional_boundary": {
+    "allowed_product_invariant": "Tr(Q^2) H^dagger H",
+    "appears_in_current_quadratic_curvature_norm": false,
+    "could_be_inserted_as_product_of_sector_norms": true,
+    "product_coefficient_fixed_by_current_parent": false,
+    "centered_connection_unique_orbit": false
+  },
+  "verdict": {
+    "graded_two_step_composition_generates_connector": false,
+    "ordinary_degree_two_quotient_preserves_shape": false,
+    "Morita_relative_curvature_generates_shape_Higgs_portal": false,
+    "current_mixed_oneform_module_closes_connector": false,
+    "current_architecture_has_internal_vortex_Higgs_connector": false,
+    "physical_closure": false,
+    "status": "the graded product cancels the mixed two-step operator, ordinary junk removes the family shape, and centered Morita curvature is additive; a nonzero portal would require a new higher functional or new carrier"
+  },
+  "next_gate": "version6_spectral_transition_connector_architecture_branch_decision_gate"
+}

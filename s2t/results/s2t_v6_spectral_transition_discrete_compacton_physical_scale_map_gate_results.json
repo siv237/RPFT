@@ -1,0 +1,166 @@
+{
+  "gate": "version6_spectral_transition_discrete_compacton_physical_scale_map_gate",
+  "exact_dimensionless_data": {
+    "compacton_coupling": 6.283185307179586,
+    "minimal_quasienergy_phase_magnitude": 1.5707963267948966,
+    "support_cells": 2,
+    "conditional_relations": {
+      "causal_speed": "c=a/delta_t",
+      "minimal_zone_energy": "E=pi*hbar/(2*delta_t)",
+      "diameter": "L=2*a",
+      "mass_size_product": "E*L=pi*hbar*c",
+      "diameter_over_compton_length": "L/lambda_C=pi",
+      "continuum_coupling": "g=kappa/a=2*pi/a",
+      "energy_over_coupling_at_c_equal_1": "E/g=1/4"
+    }
+  },
+  "dimensional_rank_test": {
+    "variables": [
+      "log_a",
+      "log_delta_t",
+      "log_E"
+    ],
+    "constraints": [
+      "a/delta_t=c",
+      "E*delta_t=hbar*pi/2"
+    ],
+    "constraint_rank": 2,
+    "scale_nullity": 1,
+    "scale_null_vector": [
+      1.0,
+      1.0,
+      -1.0
+    ],
+    "null_residual": 0.0,
+    "rescaling_symmetry": "(a,delta_t,E,g)->(lambda*a,lambda*delta_t,E/lambda,g/lambda)",
+    "rescaling_examples": {
+      "0.1": {
+        "a_natural_units": 0.1,
+        "delta_t_natural_units": 0.1,
+        "energy_natural_units": 15.707963267948966,
+        "diameter_natural_units": 0.2,
+        "effective_continuum_coupling": 62.83185307179586,
+        "a_over_delta_t": 1.0,
+        "energy_times_delta_t": 1.5707963267948966,
+        "energy_times_diameter": 3.141592653589793,
+        "energy_over_effective_coupling": 0.25
+      },
+      "1.0": {
+        "a_natural_units": 1.0,
+        "delta_t_natural_units": 1.0,
+        "energy_natural_units": 1.5707963267948966,
+        "diameter_natural_units": 2.0,
+        "effective_continuum_coupling": 6.283185307179586,
+        "a_over_delta_t": 1.0,
+        "energy_times_delta_t": 1.5707963267948966,
+        "energy_times_diameter": 3.141592653589793,
+        "energy_over_effective_coupling": 0.25
+      },
+      "10.0": {
+        "a_natural_units": 10.0,
+        "delta_t_natural_units": 10.0,
+        "energy_natural_units": 0.15707963267948966,
+        "diameter_natural_units": 20.0,
+        "effective_continuum_coupling": 0.6283185307179586,
+        "a_over_delta_t": 1.0,
+        "energy_times_delta_t": 1.5707963267948966,
+        "energy_times_diameter": 3.141592653589793,
+        "energy_over_effective_coupling": 0.25
+      }
+    }
+  },
+  "quasienergy_modularity": {
+    "eigenphases": [
+      "+i",
+      "-i"
+    ],
+    "principal_zone_phases": [
+      -1.5707963267948966,
+      1.5707963267948966
+    ],
+    "aliases_theta_plus_2pi_n": {
+      "-1": [
+        -14.137166941154069,
+        -7.853981633974483,
+        -1.5707963267948966,
+        4.71238898038469,
+        10.995574287564276
+      ],
+      "1": [
+        -10.995574287564276,
+        -4.71238898038469,
+        1.5707963267948966,
+        7.853981633974483,
+        14.137166941154069
+      ]
+    },
+    "absolute_energy_branch_selected_by_current_parent": false,
+    "relative_phase_to_vacuum_can_be_defined": true,
+    "time_step_still_required": true
+  },
+  "continuum_limit_test": {
+    "controlled_nonlinear_dirac_scaling": "kappa=g*a with fixed finite g and a->0",
+    "compacton_requirement": "kappa=2*pi",
+    "fixed_g_continuum_survival": false,
+    "required_behavior_to_keep_compacton": "g=2*pi/a diverges as a->0",
+    "compacton_is_lattice_scale_object": true
+  },
+  "existing_project_scale_ledger": {
+    "Lambda_S2T_GeV": 1.7724538509055158e+16,
+    "equation_linking_compacton_a_to_Lambda_S2T_found": false,
+    "arbitrary_alpha_assignments": {
+      "0.1": {
+        "assumption": "a=alpha*hbar*c/Lambda_S2T",
+        "lattice_step_m": 1.1132982689461229e-33,
+        "diameter_m": 2.2265965378922458e-33,
+        "minimal_zone_energy_GeV": 2.7841639984158534e+17,
+        "effective_continuum_coupling_GeV": 1.1136655993663414e+18,
+        "compton_length_m": 7.087476905537031e-34,
+        "diameter_over_compton_length": 3.141592653589793,
+        "energy_times_diameter_over_hbar_c": 3.1415926535897936
+      },
+      "1.0": {
+        "assumption": "a=alpha*hbar*c/Lambda_S2T",
+        "lattice_step_m": 1.1132982689461228e-32,
+        "diameter_m": 2.2265965378922456e-32,
+        "minimal_zone_energy_GeV": 2.7841639984158536e+16,
+        "effective_continuum_coupling_GeV": 1.1136655993663414e+17,
+        "compton_length_m": 7.087476905537031e-33,
+        "diameter_over_compton_length": 3.141592653589793,
+        "energy_times_diameter_over_hbar_c": 3.1415926535897936
+      },
+      "3.141592653589793": {
+        "assumption": "a=alpha*hbar*c/Lambda_S2T",
+        "lattice_step_m": 3.497529662975373e-32,
+        "diameter_m": 6.995059325950746e-32,
+        "minimal_zone_energy_GeV": 8862269254527579.0,
+        "effective_continuum_coupling_GeV": 3.5449077018110316e+16,
+        "compton_length_m": 2.2265965378922456e-32,
+        "diameter_over_compton_length": 3.141592653589793,
+        "energy_times_diameter_over_hbar_c": 3.141592653589793
+      }
+    },
+    "version4_planck_matching_controlled": false,
+    "version4_absolute_scale_verdict": "absolute_matching_not_self_consistent_with_local_heat_kernel_expansion",
+    "version5_common_superconnection_scale": false,
+    "version5_finite_radius_prediction": false,
+    "version6_hidden_scale_hierarchy": false,
+    "version6_absolute_length_scale": false,
+    "version6_absolute_energy_scale": false
+  },
+  "interpretation": {
+    "absolute_lattice_step_derived": false,
+    "absolute_time_step_derived": false,
+    "absolute_mass_derived": false,
+    "conditional_mass_size_product_derived": true,
+    "conditional_dimensionless_ratio": "E*L/(hbar*c)=pi",
+    "blind_observable_prediction_closed": false,
+    "new_dimensionful_input_required": true
+  },
+  "verdict": {
+    "R4_status": "local_lattice_endpoint_only",
+    "R5_status": "failed_for_absolute_scale_and_mass",
+    "status": "the exact phase and two-cell support imply only the conditional reciprocal relation E*L=pi*hbar*c; one continuous scale remains free, quasienergy is modular, and keeping kappa=2*pi forces the continuum coupling to diverge as a->0, so neither a physical size nor a mass is predicted"
+  },
+  "next_gate": "version6_spectral_transition_discrete_compacton_dynamical_capture_gate"
+}

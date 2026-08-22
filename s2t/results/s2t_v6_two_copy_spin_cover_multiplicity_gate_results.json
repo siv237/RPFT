@@ -1,0 +1,139 @@
+{
+  "gate": "version6_two_copy_spin_cover_multiplicity_gate",
+  "family_tensor_square": {
+    "space": "C3_family tensor C3_family under diagonal SO(3)",
+    "casimir_eigenvalue_dimensions": {
+      "0": 1,
+      "2": 3,
+      "6": 5
+    },
+    "irrep_decomposition": "spin 0 plus spin 1 plus spin 2, dimensions 1+3+5",
+    "swap_eigenvalues_by_casimir": {
+      "0": [
+        1.0000000000000002
+      ],
+      "2": [
+        -1.0000000000000002,
+        -1.0,
+        -0.9999999999999993
+      ],
+      "6": [
+        0.9999999999999996,
+        0.9999999999999998,
+        0.9999999999999999,
+        1.0000000000000002,
+        1.0000000000000002
+      ]
+    },
+    "commutant_dimension": 3,
+    "multiplicity_profile": {
+      "spin_0": 1,
+      "spin_1": 1,
+      "spin_2": 1
+    },
+    "contains_M2_multiplicity_algebra": false,
+    "canonical_complex_doublet": false
+  },
+  "copy_order_test": {
+    "prequotient_order_space": "span{LR,RL}",
+    "swap_matrix": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ],
+    "commutant_dimension": 2,
+    "commutant_is_span_I_swap_and_abelian": true,
+    "pauli_xyz_commutator_norms_with_swap": [
+      0.0,
+      2.8284271247461903,
+      2.8284271247461903
+    ],
+    "symmetric_quotient_dimension": 1,
+    "antisymmetric_quotient_dimension": 1,
+    "full_pauli_action_preserves_statistics_sector": false
+  },
+  "H15_tensor_product_test": {
+    "representation_convention": "Q_L(3,2,1/6)+L_L(1,2,-1/2)+u_R(3,1,2/3)+d_R(3,1,-1/3)+e_R(1,1,-1)",
+    "H15_in_H15_tensor_H15_target_multiplicities": {
+      "Q_L": 2,
+      "L_L": 0,
+      "u_R": 0,
+      "d_R": 4,
+      "e_R": 1
+    },
+    "H15_in_H15_tensor_H15dual_target_multiplicities": {
+      "Q_L": 1,
+      "L_L": 3,
+      "u_R": 2,
+      "d_R": 0,
+      "e_R": 1
+    },
+    "H15_in_H15dual_tensor_H15_target_multiplicities": {
+      "Q_L": 1,
+      "L_L": 3,
+      "u_R": 2,
+      "d_R": 0,
+      "e_R": 1
+    },
+    "direct_square_contains_full_H15_copy": false,
+    "mixed_square_contains_full_H15_copy": false,
+    "uniform_equal_charge_multiplicity_two": false,
+    "missing_direct_targets": [
+      "L_L",
+      "u_R"
+    ],
+    "missing_mixed_targets": [
+      "d_R"
+    ]
+  },
+  "atlas_rank_address_test": {
+    "rank24_blocks": "8_C+3_W+1_Y+6_X+6_Xbar",
+    "rank4_address": "W plus Y",
+    "rank16_address": "complement of C, already containing W plus Y",
+    "P4_is_subprojector_of_P16_residual": 0.0,
+    "two_written_rank4_slots_overlap_gram": [
+      [
+        4.0,
+        4.0
+      ],
+      [
+        4.0,
+        4.0
+      ]
+    ],
+    "overlap_gram_eigenvalues": [
+      0.0,
+      8.0
+    ],
+    "overlap_gram_rank": 1,
+    "rank4_repetition_is_independent_multiplicity": false,
+    "rank6_X_Xbar_charge_commutator_norms_sigma_xyz": [
+      6.928203230275509,
+      6.928203230275509,
+      0.0
+    ],
+    "rank6_conjugate_pair_is_equal_charge_doublet": false,
+    "Delta_squared_equals_rank6_over_24_numerically": true,
+    "Delta_squared_derives_spin_cover_carrier": false
+  },
+  "verdict": {
+    "existing_two_copy_carriers_supply_physical_C2_twist": false,
+    "family_tensor_square_has_nonabelian_M2_commutant": false,
+    "copy_order_doublet_survives_statistics_quotient": false,
+    "H15_tensor_products_contain_uniform_H15_doublet": false,
+    "atlas_rank_repetition_is_operator_multiplicity": false,
+    "spin_cover_fermion_branch_closed_in_current_finite_parent": true,
+    "bosonic_projective_defect_and_boundary_K_class_survive": true,
+    "reopening_requires": [
+      "new equal-charge multiplicity module with trace/anomaly audit",
+      "or an explicitly new Spin^h architecture linking spatial spin and internal Sp(1)"
+    ],
+    "status": "two_copy_loophole_closed_no_physical_spin_cover_multiplicity",
+    "next_gate": "version6_bosonic_defect_field_identification_gate"
+  }
+}

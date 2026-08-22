@@ -1,0 +1,78 @@
+{
+  "gate": "version6_spectral_transition_componentwise_creation_observable_gate",
+  "exact_component_ledgers": {
+    "KO6_Toeplitz_ranks": [
+      12,
+      3
+    ],
+    "normalized_Toeplitz_weights": [
+      "4/35",
+      "1/35"
+    ],
+    "weight_ratio": "4:1",
+    "physical_sphaleron_flows": [
+      3,
+      1
+    ],
+    "flow_ratio": "3:1",
+    "anomaly_charge_changes": {
+      "delta_B": 1,
+      "delta_L": 1,
+      "delta_B_minus_L": 0,
+      "charge_ratio": "1:1"
+    },
+    "Higgs_resolved_support_ranks": [
+      6,
+      6,
+      2,
+      1
+    ]
+  },
+  "probability_candidate_test": {
+    "rank_candidate": [
+      "4/5",
+      "1/5"
+    ],
+    "flow_candidate": [
+      "3/4",
+      "1/4"
+    ],
+    "charge_candidate": [
+      "1/2",
+      "1/2"
+    ],
+    "number_of_distinct_normalized_candidates": 3,
+    "single_canonical_probability_measure_selected": false
+  },
+  "missing_rate_inputs": {
+    "calibrated_transition_barrier": false,
+    "physical_temperature_or_nonequilibrium_distribution": false,
+    "real_time_kinetic_operator": false,
+    "dynamical_prefactor": false,
+    "common_component_fluctuation_measure": false,
+    "stable_observed_fermionic_endpoint": false
+  },
+  "surviving_exact_statements": {
+    "component_K_classes": true,
+    "standard_sphaleron_flow_selection_rule": true,
+    "delta_B_equals_delta_L": true,
+    "B_minus_L_conserved": true,
+    "local_rank_change_Wnu_zero_to_one_is_possible_at_H_zero": true
+  },
+  "not_derived": {
+    "quark_to_lepton_creation_branching_ratio": true,
+    "absolute_creation_rate": true,
+    "created_particle_multiplicity": true,
+    "product_mass": true,
+    "product_size": true,
+    "probability_of_stable_matter_formation": true
+  },
+  "verdict": {
+    "parameter_free_component_selection_rules_exist": true,
+    "parameter_free_component_creation_probability_exists": false,
+    "Toeplitz_weights_are_branching_fractions": false,
+    "dynamic_closure": false,
+    "status": "the current parent fixes distinct rank, flow and charge ledgers but contains no measure or real-time dynamics selecting a creation probability"
+  },
+  "next_gate": "version6_spectral_transition_dynamic_closure_status_gate"
+}

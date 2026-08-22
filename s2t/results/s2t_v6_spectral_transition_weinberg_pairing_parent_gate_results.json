@@ -1,0 +1,99 @@
+{
+  "gate": "version6_spectral_transition_weinberg_pairing_parent_gate",
+  "input_certificates": {
+    "regular_weak_support": true,
+    "normalized_line_parent_closed": false,
+    "V5_family_direction": "pass_dimension_one_after_spectral_compression",
+    "V5_parameter_free_amplitude": "fail"
+  },
+  "operator_type": {
+    "H15_has_right_handed_neutrino": false,
+    "lowest_neutrino_mass_route": "dimension-five Weinberg pairing",
+    "weak_support": "B_nu(H)=tilde(H) tilde(H)^T",
+    "weak_contraction_dimension": 1,
+    "lepton_number_change": 2,
+    "operator_type_admissible": true
+  },
+  "family_tensor_audit": {
+    "unconstrained_complex_symmetric_dimension": 6,
+    "C3_invariant_symmetric_dimension": 2,
+    "general_C3_form": "x P0 + y (I-P0)",
+    "dimension_after_P0_compression": 1,
+    "compression_to_scalar_P0_residual": 1.6653345369377348e-16,
+    "family_direction_after_zero_branch_compression": "P0",
+    "overall_complex_amplitude_fixed": false
+  },
+  "spectral_measure_no_go": {
+    "counterfamily": "g_alpha(z)=z exp(-z^2)+alpha exp(-z^2)",
+    "rows": [
+      {
+        "alpha": 0.0,
+        "odd_kinetic_norm": 0.31332853432887503,
+        "even_Weinberg_coefficient": 0.0
+      },
+      {
+        "alpha": 1.0,
+        "odd_kinetic_norm": 0.31332853432887503,
+        "even_Weinberg_coefficient": 1.0
+      },
+      {
+        "alpha": 2.0,
+        "odd_kinetic_norm": 0.31332853432887503,
+        "even_Weinberg_coefficient": 2.0
+      }
+    ],
+    "odd_part_common_residual": 2.3836805368570605e-17,
+    "kinetic_normalization_fixes_even_coefficient": false,
+    "even_coefficient_can_vanish_or_vary_continuously": true
+  },
+  "trace_weight_audit": {
+    "tested_common_weights": [
+      0.14285714285714285,
+      0.2857142857142857,
+      1.0
+    ],
+    "canonical_masses_after_field_normalization": [
+      0.01764705882352941,
+      0.01764705882352941,
+      0.01764705882352941
+    ],
+    "mass_spread": 0.0,
+    "one_seventh_is_channel_weight_not_mass": true
+  },
+  "charged_lepton_factor_boundary": {
+    "identity": "P0 K_e P0=kappa_e P0",
+    "sample_kappas": [
+      4.666666666666666,
+      2.0
+    ],
+    "compression_residuals": [
+      0.0,
+      0.0
+    ],
+    "direction_fixed": true,
+    "kappa_e_fixed_by_parent": false
+  },
+  "remaining_amplitude": {
+    "schematic": "m_nu ~ r_tau kappa_e v_H^2/Lambda",
+    "independent_underived_inputs": [
+      "even/odd spectral-moment ratio r_tau",
+      "charged-lepton contraction kappa_e",
+      "suppression scale Lambda",
+      "absolute Higgs scale v_H"
+    ],
+    "underived_input_count_at_least": 4,
+    "localized_rank_change_profile_derived": false
+  },
+  "verdict": {
+    "Weinberg_operator_type_parent_admissible": true,
+    "weak_direction_fixed": true,
+    "family_zero_branch_direction_fixed": true,
+    "full_family_tensor_fixed_without_compression": false,
+    "coefficient_and_scale_parent_derived": false,
+    "parameter_free_neutrino_mass": false,
+    "current_parent_closes_Weinberg_pairing": false,
+    "physical_closure": false,
+    "status": "the parent fixes the weak support and one compressed family channel, but an explicit counterfamily leaves the even spectral coefficient free; the 1/7 trace weight cancels and the mass scale remains external"
+  },
+  "next_gate": "version6_spectral_transition_rank_change_localization_gate"
+}

@@ -1,0 +1,77 @@
+{
+  "gate": "version6_single_thread_scale_hierarchy_branch_decision_gate",
+  "scale_ledger": {
+    "version3_absolute_scale_from_topology": false,
+    "version3_absolute_scale_from_normalized_geometry": false,
+    "version5_common_superconnection_scale": false,
+    "version5_finite_radius_prediction": false,
+    "version6_absolute_length_scale": false,
+    "version6_absolute_energy_scale": false,
+    "thread_hard_core_from_parent": false,
+    "thread_reconnection_barrier_from_parent": false,
+    "hidden_scale_hierarchy_available": false
+  },
+  "spectral_transition_skeleton": {
+    "hilbert_module": "ell2(Z) tensor q0(C105)",
+    "number_operator": "N e_n = n e_n",
+    "bilateral_shift": "U e_n = e_(n+1)",
+    "hardy_projection_derived_from_N": true,
+    "compact_defect_projection": "e0 tensor q0",
+    "compact_defect_rank": 15,
+    "normalized_defect_weight": 0.14285714285714285,
+    "oriented_indices": [
+      -15,
+      15
+    ],
+    "local_transfer_has_common_light_cone": true,
+    "local_transfer_dispersion": "E^2=p^2+M^2",
+    "nonzero_mass_parameter_derived": false,
+    "physical_parent_action_complete": false
+  },
+  "primitivity_warning": {
+    "coefficient_rank": 15,
+    "ambient_rank": 105,
+    "K0_class_integer": 15,
+    "rank_one_decomposition": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "rank_one_decomposition_sum": 15,
+    "complex_matrix_projection_is_algebraically_primitive": false,
+    "class_15_is_15_times_complex_K0_generator": true,
+    "Real_or_gauge_equivariant_splitting_allowed": null,
+    "physical_indivisibility_proved": false,
+    "required_next_test": "classify invariant subprojections under the full algebra, Real structure, grading, gauge action and transfer dynamics"
+  },
+  "dictionary": {
+    "historical_thread": "ordered composition of local transitions",
+    "winding_turn": "power U^n measured by N",
+    "fabric": "homogeneous phase of the transition network / quantum walk",
+    "matter_candidate": "localized finite-rank topological defect of the transition operator",
+    "particle_antiparticle": "Real-conjugate oriented index pair -15/+15",
+    "mass_candidate": "spectral or quasienergy gap of the local transfer operator",
+    "spatial_size_candidate": "localization length derived from velocity divided by a parent-derived gap"
+  },
+  "branch_decision": {
+    "literal_continuous_rope_branch_active": false,
+    "literal_thread_retained_as_history_and_coarse_metaphor": true,
+    "spectral_transition_primitive_selected": true,
+    "effective_Hopf_field_branch_retained": true,
+    "rank_15_declared_elementary_particle": false,
+    "absolute_spatial_size_derived": false,
+    "next_gate": "version6_spectral_transition_minimal_support_gate"
+  }
+}

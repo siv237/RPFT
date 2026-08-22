@@ -1,0 +1,72 @@
+{
+  "gate": "version6_bosonic_defect_translation_covariant_discretization_gate",
+  "input": {
+    "parent_gate": "version6_bosonic_defect_corrected_vortex_negative_mode_nonlinear_saturation_gate",
+    "grids": [
+      25,
+      33,
+      41
+    ],
+    "spacings": [
+      0.8333333333333339,
+      0.625,
+      0.5
+    ],
+    "center_pinned_lowest_eigenvalues": [
+      0.012022625824289116,
+      0.0008661275618775047,
+      0.00047269807150304716
+    ],
+    "negative_mode_counts": [
+      0,
+      0,
+      0
+    ],
+    "maximum_projected_gradient_rms": 4.604077644770695e-09
+  },
+  "collective_coordinate_completion": {
+    "coordinates": [
+      "X",
+      "Y"
+    ],
+    "field_family": "Phi_X(x)=Phi_0(x-X)",
+    "translation_hessian_block": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "translation_zero_mode_count": 2,
+    "mixed_translation_internal_block": "zero by translation invariance at a stationary solution",
+    "representative_extended_spectrum_grid_41": [
+      0.0,
+      0.0,
+      0.00047269807150304716,
+      0.0004727008327174224,
+      0.0012213569201417738,
+      0.0012220616810247865,
+      0.0015316671787061625,
+      0.0015983378701435623
+    ]
+  },
+  "refinement_diagnostic": {
+    "lowest_level_ratio_grid_41_over_33": 0.5457603386715688,
+    "lowest_center_pinned_level_decreases_under_last_refinement": true,
+    "strict_positive_internal_gap_certified": false,
+    "reason": "the center constraint removes translations but the lowest residual level still softens with refinement"
+  },
+  "verdict": {
+    "translation_modes_exactly_restored_as_collective_zero_modes": true,
+    "peierls_nabarro_level_is_physical_mass": false,
+    "negative_mode_found_after_centered_stationarization": false,
+    "effective_internal_operator_nonnegative_on_checked_grids": true,
+    "continuum_internal_gap_closed": false,
+    "full_spin2_spin3_stability_closed": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_centered_angular_channel_decomposition_gate"
+  }
+}

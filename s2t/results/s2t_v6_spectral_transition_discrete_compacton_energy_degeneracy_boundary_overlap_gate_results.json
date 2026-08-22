@@ -1,0 +1,459 @@
+{
+  "gate": "version6_spectral_transition_discrete_compacton_energy_degeneracy_boundary_overlap_gate",
+  "exact_branch_comparison": {
+    "branches": {
+      "+i": {
+        "one_step_eigenstate_residual": 1.9999999999999998,
+        "real_invariants": {
+          "norm": 1.0,
+          "center": 32.5,
+          "radius_squared": 0.25,
+          "inverse_participation": 0.5,
+          "nonlinear_intensity_sum_pq": 0.125,
+          "composite_higgs_norm_squared": 0.125,
+          "instantaneous_coin_generator_expectation": 0.0,
+          "instantaneous_coin_generator_square_expectation": 0.0625
+        },
+        "quasienergy_angle_principal": -1.5707963267948966,
+        "quasienergy_absolute_angle": 1.5707963267948966
+      },
+      "-i": {
+        "one_step_eigenstate_residual": 1.9999999999999998,
+        "real_invariants": {
+          "norm": 1.0,
+          "center": 32.5,
+          "radius_squared": 0.25,
+          "inverse_participation": 0.5,
+          "nonlinear_intensity_sum_pq": 0.125,
+          "composite_higgs_norm_squared": 0.125,
+          "instantaneous_coin_generator_expectation": 0.0,
+          "instantaneous_coin_generator_square_expectation": 0.0625
+        },
+        "quasienergy_angle_principal": 1.5707963267948966,
+        "quasienergy_absolute_angle": 1.5707963267948966
+      }
+    },
+    "real_invariant_absolute_differences": {
+      "norm": 0.0,
+      "center": 0.0,
+      "radius_squared": 0.0,
+      "inverse_participation": 0.0,
+      "nonlinear_intensity_sum_pq": 0.0,
+      "composite_higgs_norm_squared": 0.0,
+      "instantaneous_coin_generator_expectation": 0.0,
+      "instantaneous_coin_generator_square_expectation": 0.0
+    },
+    "maximum_real_invariant_difference": 0.0,
+    "profiles_are_complex_conjugate": true,
+    "support_and_radius_exactly_equal": true,
+    "signed_principal_quasienergies_opposite": true,
+    "absolute_quasienergy_equal": true,
+    "physical_static_energy_functional_defined_by_current_walk": false
+  },
+  "nonlinear_phase_family": {
+    "phase_count": 32,
+    "maximum_character_weight_drift_after_40_steps": 8.43769498715119e-15,
+    "maximum_real_invariant_spread": 1.4210854715202004e-14,
+    "equal_mixture_is_nonlinearly_unstable_in_exact_walk": false,
+    "self_focusing_of_character_population_observed": false,
+    "scan": [
+      {
+        "phase_over_pi": 0.0,
+        "initial_weight_plus_i": 0.5000000000000001,
+        "initial_weight_minus_i": 0.5000000000000001,
+        "final_weight_plus_i": 0.5000000000000018,
+        "final_weight_minus_i": 0.5000000000000013,
+        "initial_D_chi": 1.0000000000000004,
+        "final_D_chi": 1.0000000000000062
+      },
+      {
+        "phase_over_pi": 0.0625,
+        "initial_weight_plus_i": 0.40245483899193585,
+        "initial_weight_minus_i": 0.597545161008064,
+        "final_weight_plus_i": 0.4024548389919361,
+        "final_weight_minus_i": 0.5975451610080643,
+        "initial_D_chi": 0.9619397662556431,
+        "final_D_chi": 0.9619397662556443
+      },
+      {
+        "phase_over_pi": 0.125,
+        "initial_weight_plus_i": 0.3086582838174551,
+        "initial_weight_minus_i": 0.6913417161825449,
+        "final_weight_plus_i": 0.3086582838174547,
+        "final_weight_minus_i": 0.6913417161825438,
+        "initial_D_chi": 0.8535533905932737,
+        "final_D_chi": 0.8535533905932713
+      },
+      {
+        "phase_over_pi": 0.1875,
+        "initial_weight_plus_i": 0.22221488349019888,
+        "initial_weight_minus_i": 0.7777851165098012,
+        "final_weight_plus_i": 0.22221488349019936,
+        "final_weight_minus_i": 0.7777851165098031,
+        "initial_D_chi": 0.6913417161825449,
+        "final_D_chi": 0.6913417161825481
+      },
+      {
+        "phase_over_pi": 0.25,
+        "initial_weight_plus_i": 0.14644660940672624,
+        "initial_weight_minus_i": 0.8535533905932737,
+        "final_weight_plus_i": 0.14644660940672696,
+        "final_weight_minus_i": 0.8535533905932772,
+        "initial_D_chi": 0.5,
+        "final_D_chi": 0.5000000000000044
+      },
+      {
+        "phase_over_pi": 0.3125,
+        "initial_weight_plus_i": 0.0842651938487274,
+        "initial_weight_minus_i": 0.9157348061512728,
+        "final_weight_plus_i": 0.08426519384872791,
+        "final_weight_minus_i": 0.9157348061512787,
+        "initial_D_chi": 0.30865828381745525,
+        "final_D_chi": 0.3086582838174591
+      },
+      {
+        "phase_over_pi": 0.375,
+        "initial_weight_plus_i": 0.03806023374435664,
+        "initial_weight_minus_i": 0.9619397662556434,
+        "final_weight_plus_i": 0.03806023374435682,
+        "final_weight_minus_i": 0.9619397662556473,
+        "initial_D_chi": 0.1464466094067263,
+        "final_D_chi": 0.14644660940672757
+      },
+      {
+        "phase_over_pi": 0.4375,
+        "initial_weight_plus_i": 0.009607359798384781,
+        "initial_weight_minus_i": 0.9903926402016153,
+        "final_weight_plus_i": 0.009607359798384823,
+        "final_weight_minus_i": 0.9903926402016195,
+        "initial_D_chi": 0.03806023374435665,
+        "final_D_chi": 0.03806023374435698
+      },
+      {
+        "phase_over_pi": 0.5,
+        "initial_weight_plus_i": 9.37349864163661e-34,
+        "initial_weight_minus_i": 1.0,
+        "final_weight_plus_i": 3.156850722481083e-30,
+        "final_weight_minus_i": 1.0000000000000044,
+        "initial_D_chi": 3.749399456654644e-33,
+        "final_D_chi": 1.2627402889924388e-29
+      },
+      {
+        "phase_over_pi": 0.5625,
+        "initial_weight_plus_i": 0.009607359798384767,
+        "initial_weight_minus_i": 0.9903926402016151,
+        "final_weight_plus_i": 0.009607359798384776,
+        "final_weight_minus_i": 0.9903926402016175,
+        "initial_D_chi": 0.03806023374435658,
+        "final_D_chi": 0.038060233744356714
+      },
+      {
+        "phase_over_pi": 0.625,
+        "initial_weight_plus_i": 0.03806023374435662,
+        "initial_weight_minus_i": 0.9619397662556434,
+        "final_weight_plus_i": 0.03806023374435657,
+        "final_weight_minus_i": 0.9619397662556431,
+        "initial_D_chi": 0.1464466094067262,
+        "final_D_chi": 0.146446609406726
+      },
+      {
+        "phase_over_pi": 0.6874999999999999,
+        "initial_weight_plus_i": 0.0842651938487273,
+        "initial_weight_minus_i": 0.9157348061512728,
+        "final_weight_plus_i": 0.08426519384872794,
+        "final_weight_minus_i": 0.9157348061512812,
+        "initial_D_chi": 0.30865828381745486,
+        "final_D_chi": 0.3086582838174601
+      },
+      {
+        "phase_over_pi": 0.75,
+        "initial_weight_plus_i": 0.1464466094067262,
+        "initial_weight_minus_i": 0.8535533905932737,
+        "final_weight_plus_i": 0.14644660940672685,
+        "final_weight_minus_i": 0.8535533905932768,
+        "initial_D_chi": 0.4999999999999999,
+        "final_D_chi": 0.5000000000000039
+      },
+      {
+        "phase_over_pi": 0.8125000000000001,
+        "initial_weight_plus_i": 0.22221488349019894,
+        "initial_weight_minus_i": 0.7777851165098012,
+        "final_weight_plus_i": 0.22221488349019924,
+        "final_weight_minus_i": 0.7777851165098028,
+        "initial_D_chi": 0.6913417161825451,
+        "final_D_chi": 0.6913417161825475
+      },
+      {
+        "phase_over_pi": 0.875,
+        "initial_weight_plus_i": 0.3086582838174551,
+        "initial_weight_minus_i": 0.6913417161825449,
+        "final_weight_plus_i": 0.30865828381745714,
+        "final_weight_minus_i": 0.6913417161825495,
+        "initial_D_chi": 0.8535533905932737,
+        "final_D_chi": 0.853553390593285
+      },
+      {
+        "phase_over_pi": 0.9374999999999999,
+        "initial_weight_plus_i": 0.40245483899193574,
+        "initial_weight_minus_i": 0.5975451610080643,
+        "final_weight_plus_i": 0.40245483899193907,
+        "final_weight_minus_i": 0.5975451610080693,
+        "initial_D_chi": 0.9619397662556434,
+        "final_D_chi": 0.9619397662556594
+      },
+      {
+        "phase_over_pi": 1.0,
+        "initial_weight_plus_i": 0.4999999999999999,
+        "initial_weight_minus_i": 0.5000000000000001,
+        "final_weight_plus_i": 0.5000000000000009,
+        "final_weight_minus_i": 0.500000000000001,
+        "initial_D_chi": 1.0,
+        "final_D_chi": 1.0000000000000038
+      },
+      {
+        "phase_over_pi": 1.0625,
+        "initial_weight_plus_i": 0.5975451610080642,
+        "initial_weight_minus_i": 0.40245483899193585,
+        "final_weight_plus_i": 0.5975451610080676,
+        "final_weight_minus_i": 0.4024548389919381,
+        "initial_D_chi": 0.9619397662556435,
+        "final_D_chi": 0.9619397662556545
+      },
+      {
+        "phase_over_pi": 1.125,
+        "initial_weight_plus_i": 0.6913417161825449,
+        "initial_weight_minus_i": 0.3086582838174552,
+        "final_weight_plus_i": 0.6913417161825471,
+        "final_weight_minus_i": 0.3086582838174559,
+        "initial_D_chi": 0.8535533905932741,
+        "final_D_chi": 0.8535533905932787
+      },
+      {
+        "phase_over_pi": 1.1875,
+        "initial_weight_plus_i": 0.777785116509801,
+        "initial_weight_minus_i": 0.22221488349019905,
+        "final_weight_plus_i": 0.7777851165098086,
+        "final_weight_minus_i": 0.22221488349020144,
+        "initial_D_chi": 0.6913417161825453,
+        "final_D_chi": 0.6913417161825595
+      },
+      {
+        "phase_over_pi": 1.25,
+        "initial_weight_plus_i": 0.8535533905932737,
+        "initial_weight_minus_i": 0.1464466094067263,
+        "final_weight_plus_i": 0.8535533905932771,
+        "final_weight_minus_i": 0.1464466094067268,
+        "initial_D_chi": 0.5000000000000002,
+        "final_D_chi": 0.5000000000000039
+      },
+      {
+        "phase_over_pi": 1.3125,
+        "initial_weight_plus_i": 0.9157348061512728,
+        "initial_weight_minus_i": 0.08426519384872735,
+        "final_weight_plus_i": 0.9157348061512763,
+        "final_weight_minus_i": 0.08426519384872769,
+        "initial_D_chi": 0.3086582838174551,
+        "final_D_chi": 0.30865828381745747
+      },
+      {
+        "phase_over_pi": 1.3749999999999998,
+        "initial_weight_plus_i": 0.9619397662556434,
+        "initial_weight_minus_i": 0.03806023374435674,
+        "final_weight_plus_i": 0.9619397662556473,
+        "final_weight_minus_i": 0.038060233744356915,
+        "initial_D_chi": 0.14644660940672669,
+        "final_D_chi": 0.14644660940672796
+      },
+      {
+        "phase_over_pi": 1.4375,
+        "initial_weight_plus_i": 0.9903926402016153,
+        "initial_weight_minus_i": 0.009607359798384816,
+        "final_weight_plus_i": 0.9903926402016218,
+        "final_weight_minus_i": 0.009607359798384901,
+        "initial_D_chi": 0.03806023374435678,
+        "final_D_chi": 0.03806023374435737
+      },
+      {
+        "phase_over_pi": 1.5,
+        "initial_weight_plus_i": 1.0,
+        "initial_weight_minus_i": 8.436148777472948e-33,
+        "final_weight_plus_i": 1.0000000000000044,
+        "final_weight_minus_i": 3.578786657608793e-30,
+        "initial_D_chi": 3.374459510989179e-32,
+        "final_D_chi": 1.4315146630435237e-29
+      },
+      {
+        "phase_over_pi": 1.5625,
+        "initial_weight_plus_i": 0.9903926402016153,
+        "initial_weight_minus_i": 0.009607359798384778,
+        "final_weight_plus_i": 0.990392640201622,
+        "final_weight_minus_i": 0.009607359798384844,
+        "initial_D_chi": 0.03806023374435664,
+        "final_D_chi": 0.03806023374435715
+      },
+      {
+        "phase_over_pi": 1.6250000000000002,
+        "initial_weight_plus_i": 0.9619397662556431,
+        "initial_weight_minus_i": 0.038060233744356665,
+        "final_weight_plus_i": 0.9619397662556481,
+        "final_weight_minus_i": 0.03806023374435687,
+        "initial_D_chi": 0.14644660940672638,
+        "final_D_chi": 0.1464466094067279
+      },
+      {
+        "phase_over_pi": 1.6875,
+        "initial_weight_plus_i": 0.9157348061512726,
+        "initial_weight_minus_i": 0.08426519384872726,
+        "final_weight_plus_i": 0.9157348061512751,
+        "final_weight_minus_i": 0.08426519384872742,
+        "initial_D_chi": 0.30865828381745464,
+        "final_D_chi": 0.30865828381745614
+      },
+      {
+        "phase_over_pi": 1.75,
+        "initial_weight_plus_i": 0.853553390593274,
+        "initial_weight_minus_i": 0.14644660940672616,
+        "final_weight_plus_i": 0.8535533905932766,
+        "final_weight_minus_i": 0.14644660940672666,
+        "initial_D_chi": 0.49999999999999983,
+        "final_D_chi": 0.5000000000000031
+      },
+      {
+        "phase_over_pi": 1.8125,
+        "initial_weight_plus_i": 0.7777851165098012,
+        "initial_weight_minus_i": 0.22221488349019888,
+        "final_weight_plus_i": 0.7777851165098041,
+        "final_weight_minus_i": 0.22221488349019972,
+        "initial_D_chi": 0.6913417161825449,
+        "final_D_chi": 0.6913417161825501
+      },
+      {
+        "phase_over_pi": 1.8749999999999998,
+        "initial_weight_plus_i": 0.6913417161825453,
+        "initial_weight_minus_i": 0.3086582838174548,
+        "final_weight_plus_i": 0.6913417161825511,
+        "final_weight_minus_i": 0.3086582838174574,
+        "initial_D_chi": 0.8535533905932734,
+        "final_D_chi": 0.8535533905932878
+      },
+      {
+        "phase_over_pi": 1.9375,
+        "initial_weight_plus_i": 0.5975451610080647,
+        "initial_weight_minus_i": 0.40245483899193585,
+        "final_weight_plus_i": 0.5975451610080673,
+        "final_weight_minus_i": 0.4024548389919377,
+        "initial_D_chi": 0.9619397662556441,
+        "final_D_chi": 0.9619397662556528
+      }
+    ]
+  },
+  "boundary_real_action": {
+    "twists": {
+      "+i": 0.25,
+      "-i": 0.75
+    },
+    "spectral_pairing": "(n+1/4)^2=(-n-1+3/4)^2",
+    "maximum_squared_spectrum_pair_residual": 0.0,
+    "determinant_modulus_scan": {
+      "0.1": {
+        "+i": 1.7753982764728806,
+        "-i": 1.7753982764728808,
+        "difference": 2.220446049250313e-16
+      },
+      "0.3": {
+        "+i": 0.35215444415572955,
+        "-i": 0.35215444415572955,
+        "difference": 0.0
+      },
+      "1.0": {
+        "+i": 0.0037418644897455975,
+        "-i": 0.0037418644897455975,
+        "difference": 0.0
+      },
+      "3.0": {
+        "+i": 1.3024824467409391e-08,
+        "-i": 1.3024824467409391e-08,
+        "difference": 0.0
+      },
+      "10.0": {
+        "+i": 0.0,
+        "-i": 0.0,
+        "difference": 0.0
+      }
+    },
+    "maximum_determinant_modulus_difference": 2.220446049250313e-16,
+    "affine_height_energies": {
+      "+i": -0.9999999999999999,
+      "-1": -1.0,
+      "-i": -0.9999999999999999
+    },
+    "eta_invariants_opposite": [
+      0.5,
+      -0.5
+    ],
+    "eta_changes_real_boundary_energy": false
+  },
+  "boundary_overlap": {
+    "scalar_normal_derivative_overlap": [
+      -5.551115123125783e-16,
+      2.220446049250314e-16
+    ],
+    "maximum_C4_equivariant_operator_overlap": 2.272396546295169e-15,
+    "scalar_or_C4_equivariant_boundary_operator_mixes_plus_minus_i": false,
+    "required_mixer_character": "-1",
+    "mixer_transforms_as_minus_one_residual": 1.0986130599488565e-15,
+    "mixer_transforms_as_scalar_residual": 1.9999999999999998,
+    "affine_P3_contains_minus_one_mediator_line": true,
+    "minus_one_boundary_mode_profile_or_condensate_derived": false
+  },
+  "projected_Dchi_gradient": {
+    "dimensionless_flow": "dw_plus/ds=4 w_plus(1-w_plus)(2w_plus-1)",
+    "gradient_flow_scan": {
+      "0.49": {
+        "initial_weight_plus_i": 0.49,
+        "final_weight_plus_i": 2.654159321004419e-15,
+        "initial_D_chi": 0.9996,
+        "final_D_chi": 1.0616637284017647e-14
+      },
+      "0.499": {
+        "initial_weight_plus_i": 0.499,
+        "final_weight_plus_i": 2.65521078867784e-13,
+        "initial_D_chi": 0.999996,
+        "final_D_chi": 1.0620843154708538e-12
+      },
+      "0.5": {
+        "initial_weight_plus_i": 0.5,
+        "final_weight_plus_i": 0.5,
+        "initial_D_chi": 1.0,
+        "final_D_chi": 1.0
+      },
+      "0.501": {
+        "initial_weight_plus_i": 0.501,
+        "final_weight_plus_i": 0.9999999999997339,
+        "initial_D_chi": 0.999996,
+        "final_D_chi": 1.0644818360103168e-12
+      },
+      "0.51": {
+        "initial_weight_plus_i": 0.51,
+        "final_weight_plus_i": 0.9999999999999722,
+        "initial_D_chi": 0.9996,
+        "final_D_chi": 1.1102230246251257e-13
+      }
+    },
+    "equal_mixture_is_fixed": true,
+    "equal_mixture_is_unstable_under_biased_gradient_flow": true,
+    "P3_fixes_flow_direction_but_not_physical_time_metric": true,
+    "physical_rate_derived": false
+  },
+  "verdict": {
+    "plus_minus_compacton_real_energies_exactly_degenerate": true,
+    "boundary_real_actions_exactly_degenerate": true,
+    "nonlinear_walk_amplifies_character_bias": false,
+    "scalar_boundary_derivative_generates_transition": false,
+    "coefficient_free_gradient_flow_selects_after_bias": true,
+    "gradient_flow_is_parent_dynamics": false,
+    "new_structural_clue": "the unique off-diagonal plus/minus i mixer carries C4 character -1, which already exists as the third affine P3 line; a derived dynamical boundary mode in that line could mediate coherent mixing, but dissipation would still require its continuum spectral density or an open channel",
+    "status": "all currently defined real bulk, nonlinear, affine-height, and boundary-determinant energies are exactly equal for the plus/minus i compactons. The exact nonlinear phase family conserves character weights, and a scalar normal derivative has zero boundary overlap. A projected Dchi gradient would select a branch in dimensionless relaxation time, but declaring that gradient law supplies the missing dissipation. The only nontrivial new clue is the affine -1 character line required by the off-diagonal boundary mixer",
+    "next_gate": "version6_spectral_transition_discrete_compacton_character_resolved_radiation_form_factor_gate"
+  }
+}

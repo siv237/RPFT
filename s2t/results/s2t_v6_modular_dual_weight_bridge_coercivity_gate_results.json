@@ -1,0 +1,210 @@
+{
+  "gate": "version6_modular_dual_weight_bridge_coercivity_gate",
+  "direct_commutant_test": {
+    "identity": "S_R(B)=S_{R^T}(B^T) for symmetric real data",
+    "maximum_residual": 0.0,
+    "samples": [
+      {
+        "direct_action": 3.6888131847943404,
+        "commutant_action": 3.6888131847943404,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 1.5610139321473124,
+        "commutant_action": 1.5610139321473124,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 2.4751959042876654,
+        "commutant_action": 2.4751959042876654,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 0.24456123738437435,
+        "commutant_action": 0.24456123738437435,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 2.861196272369601,
+        "commutant_action": 2.861196272369601,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 4.726728668861163,
+        "commutant_action": 4.726728668861163,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 2.944637316967662,
+        "commutant_action": 2.944637316967662,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 4.639843679240149,
+        "commutant_action": 4.639843679240149,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 2.0568196317508733,
+        "commutant_action": 2.0568196317508733,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 16.00235817740975,
+        "commutant_action": 16.00235817740975,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 1.5310751887428584,
+        "commutant_action": 1.5310751887428584,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 10.304308867288368,
+        "commutant_action": 10.304308867288368,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 3.8125622247120483,
+        "commutant_action": 3.8125622247120483,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 1.2345616744650363,
+        "commutant_action": 1.2345616744650363,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 9.77604749990931,
+        "commutant_action": 9.77604749990931,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 30.311345679692913,
+        "commutant_action": 30.311345679692913,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 5.317792439749704,
+        "commutant_action": 5.317792439749704,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 0.39538225012301736,
+        "commutant_action": 0.39538225012301736,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 7.050248008785711,
+        "commutant_action": 7.050248008785711,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 2.9452098556766693,
+        "commutant_action": 2.9452098556766693,
+        "residual": 0.0
+      }
+    ]
+  },
+  "projector_valley": {
+    "maximum_direct_action": 0.0,
+    "maximum_commutant_sum_action": 0.0,
+    "maximum_kms_action": 0.0,
+    "valley_lifted": false
+  },
+  "faithful_boundary_scaling": {
+    "samples": [
+      {
+        "epsilon": 0.1,
+        "gns_action": 0.12421714285714283,
+        "commutant_sum_action": 0.24843428571428566,
+        "kms_action": 0.12421714285714283,
+        "inverse_weight_action": 12.421714285714282,
+        "tracial_reference_relative_entropy": 0.5108256237659905,
+        "modular_condition_number": 8.0
+      },
+      {
+        "epsilon": 0.03,
+        "gns_action": 0.03726514285714284,
+        "commutant_sum_action": 0.07453028571428567,
+        "kms_action": 0.03726514285714285,
+        "inverse_weight_action": 41.405714285714275,
+        "tracial_reference_relative_entropy": 1.2597181107845736,
+        "modular_condition_number": 31.333333333333332
+      },
+      {
+        "epsilon": 0.01,
+        "gns_action": 0.012421714285714282,
+        "commutant_sum_action": 0.024843428571428565,
+        "kms_action": 0.012421714285714284,
+        "inverse_weight_action": 124.21714285714282,
+        "tracial_reference_relative_entropy": 1.9782354044297905,
+        "modular_condition_number": 98.0
+      },
+      {
+        "epsilon": 0.003,
+        "gns_action": 0.003726514285714285,
+        "commutant_sum_action": 0.00745302857142857,
+        "kms_action": 0.003726514285714285,
+        "inverse_weight_action": 414.05714285714265,
+        "tracial_reference_relative_entropy": 2.7761557289830963,
+        "modular_condition_number": 331.3333333333333
+      },
+      {
+        "epsilon": 0.001,
+        "gns_action": 0.0012421714285714282,
+        "commutant_sum_action": 0.0024843428571428563,
+        "kms_action": 0.0012421714285714282,
+        "inverse_weight_action": 1242.1714285714284,
+        "tracial_reference_relative_entropy": 3.507225231543539,
+        "modular_condition_number": 998.0
+      },
+      {
+        "epsilon": 0.0003,
+        "gns_action": 0.0003726514285714284,
+        "commutant_sum_action": 0.0007453028571428568,
+        "kms_action": 0.0003726514285714285,
+        "inverse_weight_action": 4140.5714285714275,
+        "tracial_reference_relative_entropy": 4.3094064935612835,
+        "modular_condition_number": 3331.3333333333335
+      },
+      {
+        "epsilon": 0.0001,
+        "gns_action": 0.00012421714285714282,
+        "commutant_sum_action": 0.00024843428571428563,
+        "kms_action": 0.00012421714285714282,
+        "inverse_weight_action": 12421.71428571428,
+        "tracial_reference_relative_entropy": 5.0416812993169,
+        "modular_condition_number": 9998.0
+      }
+    ],
+    "gns_tends_to_zero": true,
+    "kms_tends_to_zero": true,
+    "inverse_weight_diverges": true,
+    "modular_operator_becomes_unbounded": true
+  },
+  "relative_entropy_reference_test": {
+    "reference": "I3/3",
+    "functional": "D(I3/3 || R) = -(1/3) log det R - log 3",
+    "barrier_weight": "1/3",
+    "quadratic_curvature": "3/2",
+    "combined_with_bridge_instability": "117/112",
+    "instability_survives": false
+  },
+  "project_archaeology": {
+    "tome5_modular_state_is_faithful_gibbs_state": true,
+    "tome5_beta_fixed_by_parent": false,
+    "tome5_uses_modular_operator_for_orientation": true,
+    "tome5_derives_inverse_weight_energy": false,
+    "family_R_identified_with_rho_beta": false
+  },
+  "verdict": {
+    "commutant_conjugation_adds_complementary_weight": false,
+    "canonical_GNS_or_KMS_norm_lifts_kernel": false,
+    "inverse_modular_weight_is_available_as_new_model_term": true,
+    "inverse_modular_weight_derived_by_current_parent": false,
+    "canonical_tracial_relative_entropy_preserves_self_start": false,
+    "modular_dual_coercivity_parent_action_proved": false,
+    "next_gate": "version6_self_consistent_state_bridge_purification_gate"
+  }
+}

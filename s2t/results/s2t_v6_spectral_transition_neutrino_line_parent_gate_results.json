@@ -1,0 +1,65 @@
+{
+  "gate": "version6_spectral_transition_neutrino_line_parent_gate",
+  "input_certificates": {
+    "Higgs_resolved_split": "15=6_up+6_down+2_e+1_nu",
+    "H15_has_Dirac_neutrino_edge": false,
+    "previous_Higgs_dressed_projector_status": "conditional_pass"
+  },
+  "global_projector_no_go": {
+    "weak_doublet_SU2_commutant_dimension": 1,
+    "only_invariant_endomorphisms": "complex scalars times I2",
+    "invariant_idempotent_ranks": [
+      0,
+      2
+    ],
+    "constant_gauge_invariant_rank_one_projector": false,
+    "directional_limits_at_H_zero_distance": 1.4142135623730951,
+    "continuous_SU2_equivariant_rank_one_extension_through_H_zero": false,
+    "reason": "H=0 is fixed by all SU2, so an equivariant value there would have to be an invariant rank-one projector; none exists"
+  },
+  "quadratic_parent": {
+    "unnormalized_support": "W_nu(H)=tilde(H) tilde(H)^dagger",
+    "pairing_tensor": "B_nu(H)=tilde(H) tilde(H)^T",
+    "polynomial_degree_in_H": 2,
+    "continuous_at_H_zero": true,
+    "value_at_H_zero": "zero operator",
+    "rank_for_nonzero_H_samples": [
+      1
+    ],
+    "normalized_projector_formula": "P_nu=W_nu/Tr(W_nu)",
+    "normalized_projector_defined_at_H_zero": false,
+    "covariance_residuals": {
+      "normalized_projector": 7.218729512980801e-16,
+      "quadratic_support": 5.652063716365373e-15,
+      "pairing_tensor": 6.2291328269317324e-15
+    },
+    "quadratic_homogeneity_residual": 2.882594906761583e-17,
+    "norm_near_zero_at_scale_1e-8": 9.34600117363891e-16
+  },
+  "family_and_degree_ledger": {
+    "family_holonomy_projector_rank": 1,
+    "P0_tensor_Pnu_rank_for_H_nonzero": 1,
+    "P0_tensor_Wnu_rank_for_H_nonzero": 1,
+    "P0_tensor_Wnu_rank_at_H_zero": 0,
+    "pairing_tensor_rank_for_H_nonzero": 1,
+    "degree_one_neutrino_edge_on_H15": false,
+    "lowest_existing_route": "degree-five Weinberg operator built from two lepton and two Higgs fields",
+    "absolute_coefficient_or_scale_derived": false,
+    "family_pairing_matrix_derived": false
+  },
+  "interpretation_boundary": {
+    "global_neutrino_projector_is_parent_primitive": false,
+    "quadratic_covariant_support_is_parent_admissible": true,
+    "neutrino_support_changes_rank_at_Higgs_zero": true,
+    "spectral_transition_can_be_defined_without_normalizing_to_a_line": true,
+    "observed_neutrino_mass_derived": false
+  },
+  "verdict": {
+    "normalized_neutrino_line_parent_closed": false,
+    "polynomial_neutrino_transition_support_exists": true,
+    "correct_primitive": "unnormalized Higgs-quadratic covariant, not a globally smooth rank-one projector",
+    "physical_closure": false,
+    "status": "the normalized line is necessarily singular at Higgs zeros, while its unnormalized quadratic support extends canonically by zero; the missing data are the Weinberg coefficient, family tensor and nonlinear parent"
+  },
+  "next_gate": "version6_spectral_transition_weinberg_pairing_parent_gate"
+}

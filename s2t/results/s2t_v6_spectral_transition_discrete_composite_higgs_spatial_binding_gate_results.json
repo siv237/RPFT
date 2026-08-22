@@ -1,0 +1,134 @@
+{
+  "gate": "version6_spectral_transition_discrete_composite_higgs_spatial_binding_gate",
+  "update": {
+    "coin_generator": "sigma_y_direction tensor K(H_eff)",
+    "H_eff": "sum_direction ell_direction*conjugate(e_direction)",
+    "shift": "opposite nearest-neighbor shifts",
+    "external_mass_angle": false,
+    "exactly_local": true,
+    "exactly_norm_preserving": true
+  },
+  "linearization": {
+    "measured_nonlinear_correction_order": 2.9999998051598924,
+    "expected_order": 3,
+    "vacuum_linearization": "massless_free_shift",
+    "linear_spectral_gap": false,
+    "small_amplitude_exponential_bound_state_supported": false,
+    "correction_norm_scan": {
+      "0.1": 0.00039755744075870876,
+      "0.03": 1.073405886917195e-05,
+      "0.01": 3.9755773827437554e-07,
+      "0.003": 1.073405893392395e-08
+    }
+  },
+  "exact_tests": {
+    "global_gauge_covariance_residual": 5.992389118785972e-16,
+    "maximum_norm_error_after_80_steps": 4.6629367034256575e-15
+  },
+  "initial_metrics": {
+    "norm": 1.0,
+    "inverse_participation_ratio": 0.1410473958869391,
+    "second_moment": 4.0,
+    "core_probability_abs_x_le_8": 0.9999824154895561,
+    "peak_density": 0.19947114020071632
+  },
+  "coupling_scan_after_80_steps": {
+    "0.0": {
+      "norm": 0.9999999999999953,
+      "inverse_participation_ratio": 0.07218407783122291,
+      "second_moment": 6403.99999999997,
+      "core_probability_abs_x_le_8": 6.036306449327073e-32,
+      "peak_density": 0.11503891154432866,
+      "norm_error": 4.6629367034256575e-15,
+      "ipr_ratio_to_initial": 0.511771786904058
+    },
+    "0.5": {
+      "norm": 0.9999999999999982,
+      "inverse_participation_ratio": 0.06727401143225162,
+      "second_moment": 6264.888535917321,
+      "core_probability_abs_x_le_8": 0.003580500762975924,
+      "peak_density": 0.11072504539747925,
+      "norm_error": 1.7763568394002505e-15,
+      "ipr_ratio_to_initial": 0.47696032251582426
+    },
+    "1.0": {
+      "norm": 1.000000000000002,
+      "inverse_participation_ratio": 0.055967315887403966,
+      "second_moment": 5918.358297169709,
+      "core_probability_abs_x_le_8": 0.012415117385330408,
+      "peak_density": 0.09978778310171799,
+      "norm_error": 1.9984014443252818e-15,
+      "ipr_ratio_to_initial": 0.39679793827789844
+    },
+    "2.0": {
+      "norm": 0.9999999999999994,
+      "inverse_participation_ratio": 0.03406384773909743,
+      "second_moment": 5115.626922926655,
+      "core_probability_abs_x_le_8": 0.031212795805584538,
+      "peak_density": 0.07655855265021647,
+      "norm_error": 5.551115123125783e-16,
+      "ipr_ratio_to_initial": 0.24150639240728955
+    },
+    "4.0": {
+      "norm": 1.0000000000000009,
+      "inverse_participation_ratio": 0.01541652385353777,
+      "second_moment": 4279.216221381771,
+      "core_probability_abs_x_le_8": 0.04192248127232974,
+      "peak_density": 0.047405731392986095,
+      "norm_error": 8.881784197001252e-16,
+      "ipr_ratio_to_initial": 0.10930030828711904
+    },
+    "8.0": {
+      "norm": 1.0000000000000004,
+      "inverse_participation_ratio": 0.00947768973519952,
+      "second_moment": 3794.061440228208,
+      "core_probability_abs_x_le_8": 0.05357312599954589,
+      "peak_density": 0.027391310039399732,
+      "norm_error": 4.440892098500626e-16,
+      "ipr_ratio_to_initial": 0.06719507067536827
+    },
+    "16.0": {
+      "norm": 0.9999999999999988,
+      "inverse_participation_ratio": 0.008912642575470909,
+      "second_moment": 3143.2064280349955,
+      "core_probability_abs_x_le_8": 0.08225551219667987,
+      "peak_density": 0.04333865703884108,
+      "norm_error": 1.2212453270876722e-15,
+      "ipr_ratio_to_initial": 0.06318899061855146
+    },
+    "32.0": {
+      "norm": 0.9999999999999983,
+      "inverse_participation_ratio": 0.013728316075124793,
+      "second_moment": 3128.266337319305,
+      "core_probability_abs_x_le_8": 0.07129322819604564,
+      "peak_density": 0.06472590940237836,
+      "norm_error": 1.6653345369377348e-15,
+      "ipr_ratio_to_initial": 0.09733122677521214
+    }
+  },
+  "scan_summary": {
+    "all_scanned_packets_spread": true,
+    "coupling_values": [
+      0.0,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0,
+      32.0
+    ],
+    "robust_bound_profile_found": false,
+    "finite_support_compacton_excluded": false
+  },
+  "verdict": {
+    "composite_coin_slows_spreading_for_some_couplings": true,
+    "parameter_independent_spatial_binding_found": false,
+    "gapped_localized_endpoint_found": false,
+    "compacton_loophole_open": true,
+    "R4_stable_physical_endpoint_closed": false,
+    "R5_blind_prediction_closed": false,
+    "status": "the canonical composite-Higgs directional coin has a massless vacuum linearization and no robust binding in the declared scan; only tuned finite-support compactons remain open"
+  },
+  "next_gate": "version6_spectral_transition_discrete_compacton_existence_gate"
+}

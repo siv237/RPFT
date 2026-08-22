@@ -1,0 +1,114 @@
+{
+  "gate": "version6_bosonic_defect_full_tensor_stationary_background_gate",
+  "reduced_action": {
+    "profiles": [
+      "K",
+      "a",
+      "b",
+      "q"
+    ],
+    "Q_ansatz": "Q(r)=q(r) Q_vacuum",
+    "kinetic_coefficients": {
+      "A_T3": 0.5267489711934161,
+      "B_T0": 0.6584362139917703,
+      "D_Q": 0.16752397548079734,
+      "G_connection": 0.07407407407407407
+    },
+    "new_free_parameter_count": 0
+  },
+  "boundary_value_problem": {
+    "solver_status": 0,
+    "solver_message": "The algorithm converged to the desired accuracy.",
+    "mesh_nodes": 2099,
+    "maximum_relative_residual": 1.9850682611738397e-07,
+    "boundary_residual": 2.0423628950488112e-27,
+    "maximum_first_order_system_residual": 6.654254920412939e-07
+  },
+  "profile": {
+    "core_values": {
+      "b": 1.0913000372251294,
+      "q": 0.9666849844592198,
+      "a_slope": 2.9489441346084373
+    },
+    "dimensionless_tension": 1.5744526906724816,
+    "energy_parts": {
+      "radial_T3": 0.4783054514879804,
+      "radial_T0": 0.0073761888113061435,
+      "radial_Q": 0.00025293463752254226,
+      "angular_T3": 0.4444981082290376,
+      "gauge_curvature": 0.32200999882179193,
+      "potential": 0.3220100086848429
+    },
+    "relative_virial_residual": 6.264431472268657e-09,
+    "samples": {
+      "r": [
+        1e-05,
+        0.05,
+        0.1,
+        0.3,
+        0.7,
+        1.5,
+        3.0,
+        6.0,
+        12.0
+      ],
+      "K": [
+        9.592830906377547e-35,
+        0.004105237416154763,
+        0.016277915274455823,
+        0.13393802606623012,
+        0.5033211001068988,
+        0.9086641319144391,
+        0.9976746908063053,
+        0.9999989195040601,
+        0.99999999999983
+      ],
+      "a": [
+        2.042362895048809e-27,
+        0.07358219358996589,
+        0.14632403456088308,
+        0.41415944451345144,
+        0.7668006985935082,
+        0.968955937964055,
+        0.9991256246603122,
+        0.9999989048659884,
+        0.9999999994327027
+      ],
+      "b": [
+        1.0913000372251294,
+        1.0910001132878238,
+        1.0901088503755845,
+        1.081337634752784,
+        1.051561316665736,
+        1.0121176211768572,
+        1.0004799034151248,
+        1.0000006507143087,
+        1.00000000113107
+      ],
+      "q": [
+        0.9666849844592198,
+        0.9667810771991616,
+        0.9670670395802902,
+        0.9699145353518941,
+        0.9800620205843029,
+        0.9948972123205962,
+        0.9997807769334033,
+        0.9999996887070477,
+        0.9999999944926202
+      ]
+    }
+  },
+  "stationarity": {
+    "old_frozen_Q_equation_residual_scale": 0.7450323975192081,
+    "full_four_profile_background_stationary": true,
+    "Q_profile_deviation_from_vacuum_at_core": 0.0333150155407802
+  },
+  "verdict": {
+    "single_additional_Q_amplitude_suffices": true,
+    "full_stationary_background_constructed": true,
+    "candidate_twisted_negative_mode_retest_required": true,
+    "full_vortex_stability_closed": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_full_tensor_stationary_twisted_spectrum_gate"
+  }
+}

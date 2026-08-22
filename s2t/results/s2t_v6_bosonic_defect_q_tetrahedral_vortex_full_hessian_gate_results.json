@@ -1,0 +1,140 @@
+{
+  "gate": "version6_bosonic_defect_q_tetrahedral_vortex_full_hessian_gate",
+  "operator_ledger": {
+    "field_components": {
+      "Q_spin2": 5,
+      "T_spin3": 7,
+      "angular_family_connection": 1
+    },
+    "potential_Q_T_QT_fixed": true,
+    "T_spatial_kinetic_norm_fixed_by_conditioned_parent_trace": true,
+    "family_curvature_coefficient_G": 0.07407407407407407,
+    "Q_relative_spatial_stiffness_Z_Q_derived": false,
+    "Q_relative_spatial_stiffness_symbol": "Z_Q",
+    "full_time_kinetic_metric_derived": false
+  },
+  "representation": {
+    "Q_angular_weight_squares": [
+      1.5785983631388945e-16,
+      1.0000000000000002,
+      1.0000000000000002,
+      3.9999999999999996,
+      3.9999999999999996
+    ],
+    "T_angular_weight_squares": [
+      1.776356340659534e-15,
+      1.0000000000000016,
+      1.0000000000000027,
+      4.000000000000002,
+      4.000000000000002,
+      8.999999999999993,
+      9.000000000000004
+    ],
+    "profile_decomposition": {
+      "T0_norm_squared": 1.9753086419753088,
+      "T3_norm_squared": 1.5802469135802475,
+      "orthogonality_residual": 8.87350299557128e-16
+    }
+  },
+  "local_potential": {
+    "minimum_hessian_eigenvalue_on_profile": -0.9758341149118566,
+    "maximum_hessian_eigenvalue_minimum_on_profile": -1.1584434395314235e-07,
+    "sample_count": 149
+  },
+  "maximal_unambiguous_radial_family": {
+    "node_count": 150,
+    "Q_stiffness_scan": [
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      10.0,
+      30.0
+    ],
+    "lowest_eigenvalues": {
+      "0.03": [
+        0.014662292429588983,
+        0.0176493434200833,
+        0.017649400294394296,
+        0.07819205943493511,
+        0.08432987788740033,
+        0.08432993447694588
+      ],
+      "0.1": [
+        0.01466229242746312,
+        0.0176503222226004,
+        0.01765037868234831,
+        0.07819205943672511,
+        0.08433347860840133,
+        0.08433353477964707
+      ],
+      "0.3": [
+        0.014662292428357924,
+        0.01765295323302883,
+        0.01765300853960849,
+        0.07819205944067929,
+        0.08434324066685603,
+        0.0843432956854807
+      ],
+      "1.0": [
+        0.014662292429531085,
+        0.01766092005363873,
+        0.017660971663130468,
+        0.07819205944162069,
+        0.08437327845423405,
+        0.08437332979699942
+      ],
+      "3.0": [
+        0.014662292423063873,
+        0.01767781097825332,
+        0.01767785429134575,
+        0.07819205944236642,
+        0.08443818595477198,
+        0.08443822906229796
+      ],
+      "10.0": [
+        0.014662292427960017,
+        0.017708522899456423,
+        0.017708550631014265,
+        0.07819205944039691,
+        0.08455818118304477,
+        0.08455820881318014
+      ],
+      "30.0": [
+        0.014662292434156492,
+        0.01773583559542254,
+        0.01773584927479308,
+        0.07819205944146747,
+        0.08466622312900397,
+        0.08466623677529307
+      ]
+    },
+    "minimum_by_stiffness": {
+      "0.03": 0.014662292429588983,
+      "0.1": 0.01466229242746312,
+      "0.3": 0.014662292428357924,
+      "1.0": 0.014662292429531085,
+      "3.0": 0.014662292423063873,
+      "10.0": 0.014662292427960017,
+      "30.0": 0.014662292434156492
+    },
+    "negative_mode_found_in_scan": false
+  },
+  "boundary": {
+    "all_internal_Q_and_T_components_in_corotating_radial_sector_checked": true,
+    "all_transverse_nonabelian_connection_components_checked": false,
+    "all_nonaxisymmetric_angular_sectors_checked": false,
+    "unique_full_hessian_defined_by_parent": false,
+    "closed_loop_stability_checked": false,
+    "hopf_identification_checked": false
+  },
+  "verdict": {
+    "full_hessian_gate_well_posed_without_new_weight": false,
+    "reason": "the parent does not derive the relative spatial stiffness Z_Q or the complete time-kinetic metric",
+    "scanned_internal_radial_family_has_negative_mode": false,
+    "full_vortex_stability_closed": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_q_stiffness_parent_normalization_gate"
+  }
+}

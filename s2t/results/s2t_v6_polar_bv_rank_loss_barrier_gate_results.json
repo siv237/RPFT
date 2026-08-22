@@ -1,0 +1,237 @@
+{
+  "gate": "version6_polar_bv_rank_loss_barrier_gate",
+  "polar_svd_measure": {
+    "matrix_space": "M2(R)",
+    "jacobian": "abs(s1^2-s2^2)",
+    "radial_power": 3,
+    "transverse_gaussian_power": -4,
+    "residual_power": -1,
+    "residual_integral": "integral dt/t",
+    "compact_orbit_quotient_changes_power": false
+  },
+  "logdet_no_go": {
+    "base_local_curvature": -0.45535714285714285,
+    "base_local_curvature_exact": "-51/112",
+    "barrier_curvature_per_nu": 4.5,
+    "barrier_curvature_per_nu_exact": "9/2",
+    "local_instability_requires_nu_below": 0.10119047619047619,
+    "local_instability_bound_exact": "17/168",
+    "nonperturbative_boundary_partition_growth": "log(1/epsilon)",
+    "regulated_radial_integral": {
+      "epsilon": [
+        0.01,
+        0.001,
+        0.0001,
+        9.999999999999999e-06,
+        1e-06,
+        1e-07,
+        1e-08,
+        1e-09,
+        1e-10,
+        1e-11,
+        1e-12
+      ],
+      "one_quarter_E1": [
+        1.0094823941345283,
+        1.5828848410340373,
+        2.158306176143676,
+        2.7339299500109235,
+        3.3095739732656226,
+        3.885220021514196,
+        4.460866272262709,
+        5.036512543261219,
+        5.6121588162847305,
+        6.187805089510743,
+        6.763451362757003
+      ],
+      "ratio_to_log_inverse_epsilon": [
+        0.2192063166755546,
+        0.22914605064979612,
+        0.23433511563922657,
+        0.23746613823995544,
+        0.23955495233998003,
+        0.2410470880462355,
+        0.2421662008190029,
+        0.24303662284165117,
+        0.2437329605477144,
+        0.2443026914061248,
+        0.2447774671221996
+      ],
+      "expected_ratio_limit": 0.25
+    },
+    "pure_vertex_suppression_requires_nu_above": 0.0,
+    "pure_vertex_bound_exact": "0",
+    "compatible_interval": "0 < nu < 17/168",
+    "compatible_interval_exists": true
+  },
+  "real_induced_measure": {
+    "density": "det(R)^((K-4)/2)",
+    "barrier_coefficient": "nu_K=(K-4)/2",
+    "integer_K_audit": [
+      {
+        "K": 3,
+        "nu": -0.5,
+        "nu_exact": "-1/2",
+        "local_curvature": -2.705357142857143,
+        "local_curvature_exact": "-303/112",
+        "isotropic_locally_unstable": true,
+        "pure_vertex_suppressed": false
+      },
+      {
+        "K": 4,
+        "nu": 0.0,
+        "nu_exact": "0",
+        "local_curvature": -0.45535714285714285,
+        "local_curvature_exact": "-51/112",
+        "isotropic_locally_unstable": true,
+        "pure_vertex_suppressed": false
+      },
+      {
+        "K": 5,
+        "nu": 0.5,
+        "nu_exact": "1/2",
+        "local_curvature": 1.7946428571428572,
+        "local_curvature_exact": "201/112",
+        "isotropic_locally_unstable": false,
+        "pure_vertex_suppressed": true
+      },
+      {
+        "K": 6,
+        "nu": 1.0,
+        "nu_exact": "1",
+        "local_curvature": 4.044642857142857,
+        "local_curvature_exact": "453/112",
+        "isotropic_locally_unstable": false,
+        "pure_vertex_suppressed": true
+      },
+      {
+        "K": 7,
+        "nu": 1.5,
+        "nu_exact": "3/2",
+        "local_curvature": 6.294642857142857,
+        "local_curvature_exact": "705/112",
+        "isotropic_locally_unstable": false,
+        "pure_vertex_suppressed": true
+      },
+      {
+        "K": 8,
+        "nu": 2.0,
+        "nu_exact": "2",
+        "local_curvature": 8.544642857142858,
+        "local_curvature_exact": "957/112",
+        "isotropic_locally_unstable": false,
+        "pure_vertex_suppressed": true
+      },
+      {
+        "K": 9,
+        "nu": 2.5,
+        "nu_exact": "5/2",
+        "local_curvature": 10.794642857142858,
+        "local_curvature_exact": "1209/112",
+        "isotropic_locally_unstable": false,
+        "pure_vertex_suppressed": true
+      },
+      {
+        "K": 10,
+        "nu": 3.0,
+        "nu_exact": "3",
+        "local_curvature": 13.044642857142858,
+        "local_curvature_exact": "1461/112",
+        "isotropic_locally_unstable": false,
+        "pure_vertex_suppressed": true
+      },
+      {
+        "K": 11,
+        "nu": 3.5,
+        "nu_exact": "7/2",
+        "local_curvature": 15.294642857142858,
+        "local_curvature_exact": "1713/112",
+        "isotropic_locally_unstable": false,
+        "pure_vertex_suppressed": true
+      },
+      {
+        "K": 12,
+        "nu": 4.0,
+        "nu_exact": "4",
+        "local_curvature": 17.544642857142858,
+        "local_curvature_exact": "1965/112",
+        "isotropic_locally_unstable": false,
+        "pure_vertex_suppressed": true
+      },
+      {
+        "K": 13,
+        "nu": 4.5,
+        "nu_exact": "9/2",
+        "local_curvature": 19.794642857142858,
+        "local_curvature_exact": "2217/112",
+        "isotropic_locally_unstable": false,
+        "pure_vertex_suppressed": true
+      },
+      {
+        "K": 14,
+        "nu": 5.0,
+        "nu_exact": "5",
+        "local_curvature": 22.044642857142858,
+        "local_curvature_exact": "2469/112",
+        "isotropic_locally_unstable": false,
+        "pure_vertex_suppressed": true
+      },
+      {
+        "K": 15,
+        "nu": 5.5,
+        "nu_exact": "11/2",
+        "local_curvature": 24.294642857142858,
+        "local_curvature_exact": "2721/112",
+        "isotropic_locally_unstable": false,
+        "pure_vertex_suppressed": true
+      }
+    ],
+    "K5_positive_carrier_derived_in_project": false,
+    "K5_status": "virtual rank 20-15, not a canonical purification carrier"
+  },
+  "simplex_control_scan": {
+    "0.0": {
+      "minimum_spectrum": [
+        0.0008333333333333334,
+        0.0008333333333333334,
+        0.9983333333333333
+      ],
+      "minimum_value": -9.735116444414913,
+      "isotropic_value": -3.354728383832521
+    },
+    "0.5": {
+      "minimum_spectrum": [
+        0.0008333333333333334,
+        0.0008333333333333334,
+        0.9983333333333333
+      ],
+      "minimum_value": -2.6442055800884736,
+      "isotropic_value": -1.7068099508303565
+    },
+    "1.0": {
+      "minimum_spectrum": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333334
+      ],
+      "minimum_value": -0.05889151782819191,
+      "isotropic_value": -0.05889151782819191
+    },
+    "5.5": {
+      "minimum_spectrum": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333334
+      ],
+      "minimum_value": 14.77237437919129,
+      "isotropic_value": 14.77237437919129
+    }
+  },
+  "verdict": {
+    "polar_or_standard_bv_saturates_flat_valley": false,
+    "standard_polar_or_integer_Wishart_barrier_works": false,
+    "fractional_logdet_window_remains_open": true,
+    "matter_birth_proved": false,
+    "next_gate": "version6_fractional_determinant_measure_origin_gate"
+  }
+}

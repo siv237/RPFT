@@ -1,0 +1,337 @@
+{
+  "gate": "version6_bosonic_defect_corrected_vortex_covariant_zero_mode_resolution_gate",
+  "gauge_sign_audit": {
+    "covariant_derivative": "D_i phi=partial_i phi-A_i J phi",
+    "gauge_condition": "div(delta A)-(A/G)(J phi0).delta phi=0",
+    "faddeev_popov_principal_form": "-Delta+(A/G)|phi0|^2",
+    "previous_plus_sign_has_elliptic_positive_mass_term": false,
+    "corrected_minus_sign_has_elliptic_positive_mass_term": true,
+    "gauge_fixing_quadratic_form_is_nonnegative": true
+  },
+  "grid_convergence": {
+    "24": {
+      "grid_size": 24,
+      "gauge_sign": -1.0,
+      "box_radius": 10.0,
+      "spacing": 0.8695652173913047,
+      "dimension": 2420,
+      "background_discrete_gradient_rms": 0.00995433178119885,
+      "eigenvalues": [
+        0.015103097143581668,
+        0.018625542477654338,
+        0.01983657126069664,
+        0.019841313668749815
+      ],
+      "naive_translation_first_four_overlaps": [
+        5.231092566800216e-06,
+        5.231092570640471e-06
+      ],
+      "covariant_translation_first_four_overlaps": [
+        5.12052842599935e-08,
+        5.120528539228378e-08
+      ],
+      "covariant_translation_first_eight_overlaps": [
+        5.12052842599935e-08,
+        5.120528539228378e-08
+      ],
+      "covariant_translation_rayleigh_quotients": [
+        7.219593982731222,
+        7.219593982731187
+      ],
+      "mode_block_weights": [
+        {
+          "charged_scalar": 0.49892251465870113,
+          "gauge_field": 0.5010750830296733,
+          "neutral_scalar": 2.4023116209204983e-06
+        },
+        {
+          "charged_scalar": 0.4803494134363124,
+          "gauge_field": 0.5196457247829018,
+          "neutral_scalar": 4.861780784801752e-06
+        },
+        {
+          "charged_scalar": 0.48373650008712904,
+          "gauge_field": 0.516243526517951,
+          "neutral_scalar": 1.9973394917072256e-05
+        },
+        {
+          "charged_scalar": 0.48375539506198223,
+          "gauge_field": 0.5162246337532321,
+          "neutral_scalar": 1.9971184787229523e-05
+        }
+      ]
+    },
+    "32": {
+      "grid_size": 32,
+      "gauge_sign": -1.0,
+      "box_radius": 10.0,
+      "spacing": 0.6451612903225801,
+      "dimension": 4500,
+      "background_discrete_gradient_rms": 0.004465360879284824,
+      "eigenvalues": [
+        -0.10337577777366672,
+        0.0013001633499164975,
+        0.0013007316982489457,
+        0.003470466358718863
+      ],
+      "naive_translation_first_four_overlaps": [
+        0.06845701107603169,
+        0.06845701101539332
+      ],
+      "covariant_translation_first_four_overlaps": [
+        0.009186495335899568,
+        0.009186495337528175
+      ],
+      "covariant_translation_first_eight_overlaps": [
+        0.009186495335899568,
+        0.009186495337528175
+      ],
+      "covariant_translation_rayleigh_quotients": [
+        7.7487505488121835,
+        7.748750548815593
+      ],
+      "mode_block_weights": [
+        {
+          "charged_scalar": 0.4882447371060043,
+          "gauge_field": 0.5095049852119701,
+          "neutral_scalar": 0.0022502776820290515
+        },
+        {
+          "charged_scalar": 0.4928442919643458,
+          "gauge_field": 0.5071550748155058,
+          "neutral_scalar": 6.332202399206767e-07
+        },
+        {
+          "charged_scalar": 0.4928475807556445,
+          "gauge_field": 0.5071517817581767,
+          "neutral_scalar": 6.37486260595765e-07
+        },
+        {
+          "charged_scalar": 0.48365834093299476,
+          "gauge_field": 0.5163395921028192,
+          "neutral_scalar": 2.066964228650363e-06
+        }
+      ]
+    },
+    "40": {
+      "grid_size": 40,
+      "gauge_sign": -1.0,
+      "box_radius": 10.0,
+      "spacing": 0.5128205128205128,
+      "dimension": 7220,
+      "background_discrete_gradient_rms": 0.002217329379289544,
+      "eigenvalues": [
+        -0.201698321653685,
+        0.0004998486926057819,
+        0.0004998487240375118,
+        0.0013922382189640863
+      ],
+      "naive_translation_first_four_overlaps": [
+        0.09183383915267657,
+        0.09182969096690033
+      ],
+      "covariant_translation_first_four_overlaps": [
+        0.010834116604943721,
+        0.01083411989598658
+      ],
+      "covariant_translation_first_eight_overlaps": [
+        0.010834116604943721,
+        0.01083411989598658
+      ],
+      "covariant_translation_rayleigh_quotients": [
+        8.25299453311517,
+        8.252994533119322
+      ],
+      "mode_block_weights": [
+        {
+          "charged_scalar": 0.5046672469900606,
+          "gauge_field": 0.4928279139395477,
+          "neutral_scalar": 0.002504839070393167
+        },
+        {
+          "charged_scalar": 0.49193436636415355,
+          "gauge_field": 0.50806542901186,
+          "neutral_scalar": 2.046240097905643e-07
+        },
+        {
+          "charged_scalar": 0.49193437349548147,
+          "gauge_field": 0.5080654218807086,
+          "neutral_scalar": 2.046238979389038e-07
+        },
+        {
+          "charged_scalar": 0.478013625673746,
+          "gauge_field": 0.5219857545264379,
+          "neutral_scalar": 6.197999192424778e-07
+        }
+      ]
+    },
+    "48": {
+      "grid_size": 48,
+      "gauge_sign": -1.0,
+      "box_radius": 10.0,
+      "spacing": 0.4255319148936163,
+      "dimension": 10580,
+      "background_discrete_gradient_rms": 0.001245621837546519,
+      "eigenvalues": [
+        -0.18904743182210215,
+        0.00034096980818126084,
+        0.0003409698257265735,
+        0.0009518852872201325
+      ],
+      "naive_translation_first_four_overlaps": [
+        0.10539492645126845,
+        0.10538444383466443
+      ],
+      "covariant_translation_first_four_overlaps": [
+        0.011842347700941957,
+        0.011842354947820145
+      ],
+      "covariant_translation_first_eight_overlaps": [
+        0.011842347700941957,
+        0.011842354947820145
+      ],
+      "covariant_translation_rayleigh_quotients": [
+        8.641378697593169,
+        8.641378697593758
+      ],
+      "mode_block_weights": [
+        {
+          "charged_scalar": 0.5212559698259757,
+          "gauge_field": 0.4760022052113104,
+          "neutral_scalar": 0.002741824962714111
+        },
+        {
+          "charged_scalar": 0.4915531185904866,
+          "gauge_field": 0.5084467590768316,
+          "neutral_scalar": 1.2233275927356392e-07
+        },
+        {
+          "charged_scalar": 0.49155312303233556,
+          "gauge_field": 0.5084467546350889,
+          "neutral_scalar": 1.2233268303305263e-07
+        },
+        {
+          "charged_scalar": 0.4765901148552846,
+          "gauge_field": 0.5234095098758265,
+          "neutral_scalar": 3.7526900000145004e-07
+        }
+      ]
+    }
+  },
+  "boundary_checks_at_grid_40": {
+    "8.0": {
+      "grid_size": 40,
+      "gauge_sign": -1.0,
+      "box_radius": 8.0,
+      "spacing": 0.4102564102564106,
+      "dimension": 7220,
+      "background_discrete_gradient_rms": 0.001398440551118949,
+      "eigenvalues": [
+        -0.18007196169161302,
+        0.0006271119189779867
+      ],
+      "naive_translation_first_four_overlaps": [
+        0.11448742921076538,
+        0.11584740600680903
+      ],
+      "covariant_translation_first_four_overlaps": [
+        0.012050543448038747,
+        0.012050663914524444
+      ],
+      "covariant_translation_first_eight_overlaps": [
+        0.012050543448038747,
+        0.012050663914524444
+      ],
+      "covariant_translation_rayleigh_quotients": [
+        8.711595217596873,
+        8.711595217596292
+      ],
+      "mode_block_weights": [
+        {
+          "charged_scalar": 0.5251932679950091,
+          "gauge_field": 0.47200245746612307,
+          "neutral_scalar": 0.002804274538872401
+        },
+        {
+          "charged_scalar": 0.4893345254919201,
+          "gauge_field": 0.5106652500608014,
+          "neutral_scalar": 2.244473118254782e-07
+        }
+      ]
+    },
+    "12.0": {
+      "grid_size": 40,
+      "gauge_sign": -1.0,
+      "box_radius": 12.0,
+      "spacing": 0.615384615384615,
+      "dimension": 7220,
+      "background_discrete_gradient_rms": 0.0032174508891730713,
+      "eigenvalues": [
+        -0.1353403819948035,
+        0.00046163142895160937
+      ],
+      "naive_translation_first_four_overlaps": [
+        0.07026471051317762,
+        0.07005438615638317
+      ],
+      "covariant_translation_first_four_overlaps": [
+        0.009645019891341509,
+        0.009645009933782598
+      ],
+      "covariant_translation_first_eight_overlaps": [
+        0.009645019891341509,
+        0.009645009933782598
+      ],
+      "covariant_translation_rayleigh_quotients": [
+        7.850044733030372,
+        7.8500447330328065
+      ],
+      "mode_block_weights": [
+        {
+          "charged_scalar": 0.4916315361189274,
+          "gauge_field": 0.506040807248237,
+          "neutral_scalar": 0.0023276566328360253
+        },
+        {
+          "charged_scalar": 0.4934230630115576,
+          "gauge_field": 0.5065767129578594,
+          "neutral_scalar": 2.2403061448548694e-07
+        }
+      ]
+    }
+  },
+  "negative_mode": {
+    "lowest_eigenvalue_by_grid": {
+      "24": 0.015103097143581668,
+      "32": -0.10337577777366672,
+      "40": -0.201698321653685,
+      "48": -0.18904743182210215
+    },
+    "finest_lowest_eigenvalue": -0.18904743182210215,
+    "drift_40_to_48": 0.012650889831582857,
+    "boundary_lowest_eigenvalues": {
+      "8.0": -0.18007196169161302,
+      "12.0": -0.1353403819948035
+    },
+    "finest_mode_block_weights": {
+      "charged_scalar": 0.5212559698259757,
+      "gauge_field": 0.4760022052113104,
+      "neutral_scalar": 0.002741824962714111
+    },
+    "isolated_from_next_mode": true,
+    "longitudinal_dispersion": "lambda(k_z)=lambda(0)+k_z^2",
+    "unstable_longitudinal_band_abs_kz_below": 0.434795850741589
+  },
+  "interpretation_boundary": {
+    "negative_mode_is_created_by_positive_gauge_fixing_term": false,
+    "nonlinear_endpoint_computed": false,
+    "endpoint_is_hopf_loop": false,
+    "full_spin2_spin3_operator_checked": false,
+    "matter_birth_closed": false
+  },
+  "verdict": {
+    "straight_corrected_vortex_is_linearly_unstable_in_effective_sector": true,
+    "previous_soft_cluster_is_consistent_with_residual_gauge_contamination": true,
+    "next_gate": "version6_bosonic_defect_corrected_vortex_negative_mode_nonlinear_saturation_gate"
+  }
+}

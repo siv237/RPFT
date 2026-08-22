@@ -1,0 +1,68 @@
+{
+  "gate": "version6_bosonic_defect_spin_three_corner_curvature_parent_gate",
+  "modular_orientation": {
+    "height_spectrum": [
+      -1.0,
+      -1.0,
+      -1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_rank": 3,
+    "target_rank": 5,
+    "positive_frequency": 2.0,
+    "frequency_residual": 0.0,
+    "self_adjoint_odd_completion_residual": 0.0,
+    "height_gauge_commutator_maximum": 0.0,
+    "source_corner_selected_before_vacuum": true
+  },
+  "spin_three_covariant_subbundle": {
+    "projector_rank": 7,
+    "projector_commutator_with_SO3_maximum": 2.2658224671745698e-15,
+    "curvature_infinitesimal_covariance_maximum_residual": 0.0,
+    "preserved_by_physical_SO3": true,
+    "closed_under_full_right_M3_action": false,
+    "sample_full_M3_closure_residual_minimum": 0.9344249766581157,
+    "interpretation": "associated SO3 subbundle inside the full Hom correspondence, not a Hilbert M3 submodule"
+  },
+  "source_corner_curvature": {
+    "formula": "F_source=-p_source[d,d*]p_source-(v_T^2/3)p_source",
+    "source_block_equals_mu_T_residual": 0.0,
+    "tetrahedral_vacuum_residual": 0.0,
+    "full_normalized_trace_source_weight": 0.375,
+    "conditioned_source_trace": 0.0,
+    "triplet_normalized_trace": 0.0,
+    "conditional_trace_identity_residual": 0.0,
+    "unconditioned_parent_trace": 0.0,
+    "H120_source_rank": 45,
+    "H120_conditioned_trace_residual": 0.0,
+    "random_conditioned_trace_maximum_residual": 0.0,
+    "random_H120_conditioned_trace_maximum_residual": 8.881784197001252e-16,
+    "random_unconditioned_rank_weight_maximum_residual": 4.440892098500626e-16,
+    "kinetic_H45_trace_maximum_residual": 1.7763568394002505e-15,
+    "new_relative_weight_parameter_count": 0
+  },
+  "cokernel_interpretation": {
+    "literal_Dirac_kernel_dimension": 2,
+    "kernel_is_included_in_correspondence_curvature_determinant": false,
+    "reason": "the action is the conditioned curvature norm on the modularly selected source corner, not the spectrum of the 8x8 odd completion",
+    "literal_finite_Dirac_interpretation_remains_rejected": true,
+    "correspondence_bosonic_interpretation_passes": true
+  },
+  "verdict": {
+    "modular_source_corner_is_canonical": true,
+    "one_sided_curvature_parent_pass": true,
+    "same_parent_trace_after_conditioning": true,
+    "physical_SO3_covariance_pass": true,
+    "spin_three_is_full_M3_Hilbert_submodule": false,
+    "full_container_M3_is_physical_gauge_algebra": false,
+    "literal_finite_spectral_Dirac_route_reopened": false,
+    "bosonic_correspondence_route_closed_at_parent_norm_level": true,
+    "matter_birth_closed": false,
+    "status": "modular_correspondence_corner_pass_literal_dirac_route_stays_closed",
+    "next_gate": "version6_bosonic_defect_q_tetrahedral_coupled_vacuum_gate"
+  }
+}

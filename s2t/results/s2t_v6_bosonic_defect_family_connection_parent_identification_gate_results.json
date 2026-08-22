@@ -1,0 +1,196 @@
+{
+  "gate": "version6_bosonic_defect_family_connection_parent_identification_gate",
+  "single_bundle_identification": {
+    "family_bundle": "E_fam with real rank-three fibre",
+    "fermion_carrier": "E_fam tensor H15 = H45",
+    "bosonic_order_parameter": "SymmetricTracelessSquare(E_fam)",
+    "one_connection_induces_both_actions": true,
+    "second_independent_SO3_connection_required": false,
+    "induced_spin_two_audit": {
+      "generator_matrices": [
+        [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.9999999999999996
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            -0.9999999999999998,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999999999998,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.9999999999999996,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.7320508075688776,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999999999998,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.9999999999999998
+          ],
+          [
+            -1.7320508075688772,
+            -0.9999999999999998,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -0.9999999999999998,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0,
+            -1.7320508075688776,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999999999998,
+            0.0,
+            0.0
+          ],
+          [
+            1.7320508075688772,
+            -0.9999999999999998,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.9999999999999998
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999999999998,
+            0.0
+          ]
+        ]
+      ],
+      "casimir_eigenvalues": [
+        5.999999999999998,
+        5.999999999999998,
+        5.999999999999999,
+        6.0,
+        6.000000000000001
+      ],
+      "maximum_induced_connection_residual": 3.635450680502071e-15,
+      "representation_dimension": 5,
+      "spin": 2
+    }
+  },
+  "parent_trace_restriction": {
+    "normalized_triplet_trace": 0.32073333333333337,
+    "normalized_H45_trace": 0.32073333333333337,
+    "normalized_real_doubled_H90_trace": 0.3207333333333333,
+    "H45_residual": 0.0,
+    "H90_residual": 5.551115123125783e-17,
+    "independent_relative_weight_required": false
+  },
+  "anomaly_audit": {
+    "left_handed_SM_channel_count": 15,
+    "family_representation": "real SO(3) triplet, integer isospin j=1",
+    "maximum_local_SO3_cubic_anomaly_residual": 0.0,
+    "mixed_SO3_squared_U1_hypercharge_sum": 0.0,
+    "mixed_SO3_squared_U1_anomaly": 0.0,
+    "mixed_single_SO3_generator_anomalies": 0.0,
+    "witten_mod_two_index": 0,
+    "old_SU2_global_anomaly_present": false,
+    "new_SU2_anomaly_applicable": false,
+    "reason_new_anomaly_absent": "all family fermions have integer isospin j=1",
+    "anomaly_audit_passes": true
+  },
+  "tetrahedral_stabilizer_completion": {
+    "tetrahedral_tensor_norm_squared": 3.555555555555559,
+    "tetrahedral_trace_residual": 0.0,
+    "Q_only_mass_eigenvalues": [
+      1.1102230246251565e-16,
+      1.5077157793271763,
+      1.5077157793271763
+    ],
+    "tetrahedral_mass_eigenvalues": [
+      14.222222222222234,
+      14.222222222222234,
+      14.222222222222236
+    ],
+    "combined_mass_eigenvalues": [
+      14.222222222222237,
+      15.729938001549412,
+      15.729938001549412
+    ],
+    "continuous_stabilizer_dimension_after_Q_only": 1,
+    "continuous_stabilizer_dimension_after_Q_and_tetrahedral_tensor": 0,
+    "residual_discrete_group_for_vertex_axis": "Z3"
+  },
+  "binding_previous_no_go_results": {
+    "M300_is_coordinate_algebra": false,
+    "M300_can_normalize_a_preselected_embedded_family_connection": true,
+    "ordinary_SM_one_forms_generate_family_connection": false,
+    "spinor_Callias_carrier_from_20x15": false,
+    "tetrahedral_tensor_potential_from_same_parent_trace": false
+  },
+  "verdict": {
+    "connection_identity_passes": true,
+    "single_trace_normalization_passes": true,
+    "local_and_global_anomaly_tests_pass": true,
+    "continuous_massless_stabilizer_removed_if_tetrahedral_condensate_is_active": true,
+    "dynamical_localization_of_family_symmetry_derived": false,
+    "tetrahedral_condensate_from_same_action_derived": false,
+    "matter_birth_closed": false,
+    "status": "representation_trace_anomaly_pass_dynamical_origin_open",
+    "next_gate": "version6_bosonic_defect_tetrahedral_gauge_mass_parent_gate"
+  }
+}

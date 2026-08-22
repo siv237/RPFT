@@ -1,0 +1,40 @@
+{
+  "gate": "version6_spectral_transition_connector_architecture_branch_decision_gate",
+  "input_certificates": {
+    "radial_bridge_localizes_rank_change": false,
+    "direct_connector_exists": false,
+    "mixed_module_selects_unique_connector": false,
+    "two_step_connector_exists": false,
+    "new_bifundamental_extends_model": true,
+    "Higgs_resolved_support_exists": true,
+    "straight_vortex_transversely_stable": true
+  },
+  "architecture_options": {
+    "continue_hidden_connector_search": {
+      "compatible_with_completed_ledger": false,
+      "reason": "radial, direct degree-one and graded degree-two mechanisms have all failed independently"
+    },
+    "insert_portal_or_bifundamental_without_new_version": {
+      "compatible_with_no_hidden_extension_rule": false,
+      "reason": "the coefficient or nonzero mixed section is not selected by the current trace, calculus or carrier"
+    },
+    "separate_spectral_and_vortex_sectors_in_version6": {
+      "compatible_with_completed_ledger": true,
+      "preserves_Higgs_resolved_spectral_support": true,
+      "preserves_stable_bosonic_vortex": true,
+      "claims_observed_matter_identification": false
+    }
+  },
+  "decision": {
+    "selected_option": "separate_spectral_and_vortex_sectors_in_version6",
+    "search_for_another_hidden_current-parent_connector": false,
+    "new_portal_or_bifundamental_requires_declared_new_model": true,
+    "spectral_transition_remains_active": true,
+    "bosonic_vortex_remains_active_as_independent_sector": true,
+    "bosonic_vortex_identified_with_observed_particle": false,
+    "universal_gravitational_coupling_derived": false,
+    "physical_closure": false
+  },
+  "next_gate": "version6_spectral_transition_higgs_vacuum_topology_localization_gate",
+  "next_null_hypothesis": "after the electroweak gauge quotient, one Higgs doublet has no topological class supporting a stable wall, string or monopole that forces H=0 and localizes the rank-changing support"
+}

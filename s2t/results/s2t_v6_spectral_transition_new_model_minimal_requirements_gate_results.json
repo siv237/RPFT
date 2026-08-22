@@ -1,0 +1,36 @@
+{
+  "gate": "version6_spectral_transition_new_model_minimal_requirements_gate",
+  "contract": {
+    "R0_typed_physical_carrier": "mandatory",
+    "R1_single_parent_functional": "mandatory",
+    "R2_endogenous_trigger": "mandatory",
+    "R3_path_measure_and_rate": "mandatory",
+    "R4_stable_localized_endpoint": "mandatory",
+    "R5_blind_numeric_prediction": "mandatory",
+    "R6_prefixed_failure_certificates": "mandatory"
+  },
+  "current_version_assessment": {
+    "R0_typed_physical_carrier": "partial",
+    "R1_single_parent_functional": false,
+    "R2_endogenous_trigger": false,
+    "R3_path_measure_and_rate": false,
+    "R4_stable_localized_endpoint": false,
+    "R5_blind_numeric_prediction": false,
+    "R6_prefixed_failure_certificates": true
+  },
+  "rejected_shortcuts": [
+    "rank_insertion",
+    "hidden_portal",
+    "external_quench_without_dynamic_source",
+    "topology_interpreted_as_probability",
+    "unstable_saddle_interpreted_as_matter"
+  ],
+  "verdict": {
+    "contract_is_necessary": true,
+    "contract_is_sufficient": false,
+    "current_version_admitted_as_dynamic_birth_model": false,
+    "current_version_remains_valid_classification_kinematics_base": true,
+    "candidate_comparison_may_start": true
+  },
+  "next_gate": "version6_spectral_transition_new_model_candidate_menu_gate"
+}

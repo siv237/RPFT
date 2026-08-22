@@ -1,0 +1,117 @@
+{
+  "gate": "version6_state_weighted_bridge_nonperturbative_saturation_gate",
+  "rank_one_flat_valley": {
+    "state": "diag(1,0,0)",
+    "bridge_family": "diag(1,C), C in M2(R)",
+    "valley_dimension": 4,
+    "maximum_action_residual": 0.0
+  },
+  "transverse_power_counting": {
+    "scales": [
+      2.0,
+      3.0,
+      5.0,
+      8.0,
+      13.0,
+      21.0
+    ],
+    "hessian_spectra": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2857142971428568,
+        0.2857142971428568,
+        2.2857143085709253,
+        2.571428582857143,
+        2.571428582857143
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.1428571542857147,
+        1.1428571542857147,
+        2.2857143085709253,
+        4.571428582857144,
+        4.571428582857144
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.2857143085709253,
+        4.571428582857144,
+        4.571428582857144,
+        10.285714297142858,
+        10.285714297142858
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.2857143085709253,
+        14.000000011428572,
+        14.000000011428572,
+        23.142857154285718,
+        23.142857154285718
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.2857143085709253,
+        41.14285715428571,
+        41.14285715428572,
+        56.000000011428575,
+        56.000000011428575
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.2857143085709253,
+        114.28571429714285,
+        114.28571429714287,
+        138.28571429714287,
+        138.28571429714287
+      ]
+    ],
+    "large_positive_mode_geometric_means": [
+      1.4415367330860545,
+      2.718187708423315,
+      6.857142869523809,
+      18.000000011791382,
+      48.00000001156462,
+      125.7142857257662
+    ],
+    "fitted_growing_eigenvalue_power": 2.026135627587926,
+    "expected_growing_eigenvalue_power": 2.0,
+    "gaussian_transverse_volume_power": -4.0,
+    "M2_radial_measure_power": 3.0,
+    "residual_radial_integrand_power": -1.0,
+    "residual_integral": "integral dt/t",
+    "flat_measure_partition_at_rank_one": "logarithmically_divergent"
+  },
+  "world_crystal_retrospective": {
+    "early_project_big_bang_as_crystallization": true,
+    "leech_lattice_literal_model_retained": false,
+    "light_thread_literal_model_retained": false,
+    "operator_order_parameter_RP2_retained": true,
+    "defects_as_misaligned_domains_retained": true,
+    "literal_spacetime_lattice_derived": false
+  },
+  "verdict": {
+    "one_loop_instability_survives_as_rank_loss_tendency": true,
+    "flat_measure_nonperturbative_saturation": false,
+    "finite_RP2_vacuum_proved": false,
+    "missing_datum": "derived rank-loss barrier from polar/BV measure",
+    "next_gate": "version6_polar_bv_rank_loss_barrier_gate"
+  }
+}

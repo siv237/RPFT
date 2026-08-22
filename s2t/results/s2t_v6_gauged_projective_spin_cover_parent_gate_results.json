@@ -1,0 +1,81 @@
+{
+  "gate": "version6_gauged_projective_spin_cover_parent_gate",
+  "canonical_composite_connection": {
+    "formula": "A_Q=[Q,dQ]/Delta^2",
+    "equivalent_uniaxial_formula": "A_Q=(q/Delta)^2[P,dP]",
+    "new_continuous_coefficient": false,
+    "global_SO3_covariant": true,
+    "cancels_asymptotic_orientation_gradient": true,
+    "profile": "q(r)=Delta r^2/(r^2+R^2)",
+    "connection_is_smooth_at_core": true,
+    "core_A_norm_over_r_samples": [
+      1.9999999600000007e-08,
+      1.7999996760000435e-07,
+      1.9999960000060006e-06
+    ]
+  },
+  "finite_energy_test_unit_coefficients": {
+    "integral_DQ_squared": 12.478636601133651,
+    "integral_F_squared": 33.53717150406454,
+    "integral_bulk_potential": 17.500222083059832,
+    "cutoff_100_integrals": [
+      12.478575861116333,
+      33.30835194047286,
+      17.24017443629994
+    ],
+    "far_density_power_DQ": -5.999063640172816,
+    "far_density_power_F": -4.000003051614463,
+    "far_density_power_V": -3.9994216703282315,
+    "all_three_radial_integrals_converge": true
+  },
+  "local_gauge_transformation_test": {
+    "infinitesimal_extra_term": "[Q,[domega,Q]]/Delta^2",
+    "broken_generators_receive_minus_domega": true,
+    "stabilizer_generator_receive_minus_domega": false,
+    "checks": {
+      "broken_12": {
+        "residual_to_minus_generator": 1.5700924586837752e-16,
+        "composite_term_norm": 1.414213562373095
+      },
+      "broken_13": {
+        "residual_to_minus_generator": 1.5700924586837752e-16,
+        "composite_term_norm": 1.414213562373095
+      },
+      "stabilizer_23": {
+        "residual_to_minus_generator": 1.4142135623730951,
+        "composite_term_norm": 0.0
+      }
+    },
+    "full_SO3_connection_from_Q_alone": false,
+    "interpretation": "canonical coset/broken-direction connection, not an independent gauge field"
+  },
+  "spin_cover_status": {
+    "boundary_Hopf_line_L_plus_Lstar_exists": true,
+    "boundary_c1": [
+      1,
+      -1
+    ],
+    "coefficient_multiplicity_classes": [
+      15,
+      -15
+    ],
+    "missing_stabilizer_O2_connection_is_boundary_typed": true,
+    "smooth_core_extension_from_current_parent": false,
+    "Callias_Fredholm_operator_parent_derived": false
+  },
+  "stability_and_scale": {
+    "DQ_plus_bulk_without_curvature_stabilizes_size": false,
+    "positive_curvature_term_prevents_collapse": true,
+    "common_relative_normalization_derived": false,
+    "absolute_mass_and_radius_derived": false
+  },
+  "verdict": {
+    "composite_connection_removes_hedgehog_infrared_divergence": true,
+    "finite_smooth_trial_configuration_exists": true,
+    "new_independent_gauge_boson_derived": false,
+    "full_local_SO3_gauge_law_derived": false,
+    "spin_cover_completes_boundary_but_not_core": true,
+    "matter_birth_fully_derived": false,
+    "next_gate": "version6_composite_connection_callias_fredholm_gate"
+  }
+}

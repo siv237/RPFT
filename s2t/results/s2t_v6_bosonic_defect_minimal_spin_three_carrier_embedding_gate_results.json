@@ -1,0 +1,86 @@
+{
+  "gate": "version6_bosonic_defect_minimal_spin_three_carrier_embedding_gate",
+  "canonical_carrier": {
+    "domain": "V1, dimension 3",
+    "codomain": "V2=Sym0^2(V1), dimension 5",
+    "Hom_dimension": 15,
+    "casimir_eigenvalues": [
+      1.999999999999997,
+      2.000000000000003,
+      2.0000000000000044,
+      5.999999999999999,
+      6.0,
+      6.0,
+      6.000000000000003,
+      6.0000000000000036,
+      11.999999999999995,
+      11.999999999999996,
+      11.999999999999996,
+      11.999999999999998,
+      12.0,
+      12.000000000000005,
+      12.000000000000012
+    ],
+    "casimir_multiplicities_expected": {
+      "2": 3,
+      "6": 5,
+      "12": 7
+    },
+    "spin_three_projector_rank": 7,
+    "spin_three_projector_idempotence_residual": 1.5892783454459146e-15,
+    "spin_three_basis_projector_residual": 1.5985048263091876e-15,
+    "tensor_to_arrow_isometry_residual": 8.766020360049141e-16,
+    "unique_spin_three_copy": true,
+    "new_gauge_factor_required": false
+  },
+  "tetrahedral_corner_curvature": {
+    "vacuum_norm_squared": 3.5555555555555585,
+    "arrow_singular_values": [
+      1.0886621079036352,
+      1.0886621079036352,
+      1.0886621079036352
+    ],
+    "triplet_corner_curvature_residual": 0.0,
+    "tensor_contraction_identity_residual": 0.0,
+    "hessian_eigenvalues_on_spin_three": [
+      9.587092231200245e-11,
+      9.587095006757806e-11,
+      1.0311151932285156e-10,
+      1.2641975310024778,
+      1.2641975310024778,
+      1.2641975310242,
+      3.160493827230007
+    ],
+    "hessian_zero_mode_count": 3,
+    "hessian_positive_mode_count": 4,
+    "gauge_mass_eigenvalues": [
+      14.22222222222223,
+      14.222222222222232,
+      14.222222222222232
+    ],
+    "H45_normalized_trace_maximum_residual": 1.7763568394002505e-15,
+    "corner_square_equals_previous_mu_T": true
+  },
+  "literal_self_adjoint_block": {
+    "block_dimension": 8,
+    "self_adjoint_residual": 0.0,
+    "odd_grading_residual": 0.0,
+    "rank": 6,
+    "kernel_dimension": 2,
+    "kernel_origin": "two-dimensional cokernel in V2 because rank(Z)<=3<5",
+    "full_target_corner_isotropy_residual": 1.2983053214937283,
+    "full_two_corner_zero_curvature_possible": false,
+    "kernel_after_H15_amplification": 30
+  },
+  "verdict": {
+    "spin_three_associated_subbundle_embedding_pass": true,
+    "triplet_corner_curvature_and_trace_pass": true,
+    "literal_full_finite_Dirac_embedding_pass": false,
+    "reason": "rectangular 5x3 arrow leaves two unavoidable zero modes and the full two-corner curvature cannot vanish",
+    "one_sided_corner_projection_required": true,
+    "one_sided_corner_projection_already_derived_from_current_parent": false,
+    "matter_birth_closed": false,
+    "status": "canonical_carrier_and_corner_pass_literal_finite_dirac_block_fail",
+    "next_gate": "version6_bosonic_defect_spin_three_corner_curvature_parent_gate"
+  }
+}

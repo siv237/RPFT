@@ -1,0 +1,52 @@
+{
+  "gate": "version6_spectral_transition_rank_change_localization_gate",
+  "input_certificates": {
+    "M300_radial_Higgs_coupling_exists": true,
+    "Q_shape_Higgs_portal_coefficient": 0.0,
+    "regular_rank_changing_support_exists": true
+  },
+  "pointwise_model": {
+    "variable": "s=|H|^2",
+    "current_parent_s_dependent_potential": "6 s^2-(2 T+6) s",
+    "optimistic_test_extension": "+3 k s, 0<=k<=1",
+    "stationary_minimizer": "max(0,T/6+1/2-k/4)",
+    "radial_amplitude_domain": "T>=0",
+    "current_parent_k": 0.0
+  },
+  "localization_audit": {
+    "minimum_s_current_parent_for_T_ge_0": 0.5,
+    "minimum_s_with_unit_strength_optimistic_suppressor": 0.25,
+    "critical_k_formula": "k_crit(T)=2+(2/3)T",
+    "critical_k_at_T_zero": 2.0,
+    "critical_k_samples": [
+      2.0,
+      2.3333333333333335,
+      2.6666666666666665,
+      4.0
+    ],
+    "H_zero_reached_in_current_parent": false,
+    "H_zero_reached_for_0_le_k_le_1": false,
+    "W_nu_rank_in_vortex_core_current_parent": 1,
+    "localized_rank_change_0_to_1": false
+  },
+  "numerical_checks": {
+    "finite_difference_stationarity_residual": 4.440892098500626e-10,
+    "grid_minimizer_residual": 3.333333333332966e-05,
+    "sampled_T_count": 301,
+    "sampled_k_count": 101
+  },
+  "interpretation": {
+    "radial_coupling_effect": "positive T raises rather than suppresses the Higgs norm",
+    "shape_portal_available": false,
+    "unit_suppressor_is_part_of_current_parent": false,
+    "missing_structure": "a representation-compatible connector or a derived core term with strength k>=k_crit(T)"
+  },
+  "verdict": {
+    "existing_radial_bridge_localizes_H_zero": false,
+    "existing_vortex_localizes_neutrino_rank_change": false,
+    "hidden_shape_portal_found": false,
+    "physical_closure": false,
+    "status": "the M300 radial term keeps |H|^2 strictly positive; even an optimistic unit core penalty cannot reach H=0, so the rank-changing support is not localized by the current vortex"
+  },
+  "next_gate": "version6_spectral_transition_radial_bridge_vortex_connector_gate"
+}

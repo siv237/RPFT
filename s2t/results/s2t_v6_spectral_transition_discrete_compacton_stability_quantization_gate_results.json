@@ -1,0 +1,153 @@
+{
+  "gate": "version6_spectral_transition_discrete_compacton_stability_quantization_gate",
+  "linearization": {
+    "map": "real Frechet derivative of the four-step return map F^4",
+    "reason_real": "the composite Higgs bilinear contains complex conjugation, so the update is real-differentiable rather than holomorphic",
+    "coupling": 6.283185307179586,
+    "finite_periodic_lattices": {
+      "8": {
+        "real_dimension": 96,
+        "spectral_radius": 1.0000000010060641,
+        "expanding_multiplier_count": 0,
+        "unit_circle_multiplier_count": 68,
+        "largest_singular_value": 6.438500961275717,
+        "four_step_orbit_residual": 2.6136713472184116e-15
+      },
+      "12": {
+        "real_dimension": 144,
+        "spectral_radius": 1.0000000009305352,
+        "expanding_multiplier_count": 0,
+        "unit_circle_multiplier_count": 100,
+        "largest_singular_value": 6.438500961275715,
+        "four_step_orbit_residual": 2.6136713472184116e-15
+      },
+      "16": {
+        "real_dimension": 192,
+        "spectral_radius": 1.0000000008910404,
+        "expanding_multiplier_count": 0,
+        "unit_circle_multiplier_count": 132,
+        "largest_singular_value": 6.438500961275717,
+        "four_step_orbit_residual": 2.6136713472184116e-15
+      }
+    }
+  },
+  "symmetry_reduction": {
+    "tested_tangents": [
+      "global_phase",
+      "weak_pauli_x",
+      "weak_pauli_y",
+      "weak_pauli_z",
+      "right_chiral_phase"
+    ],
+    "independent_tangent_rank": 4,
+    "maximum_fixed_tangent_residual": 1.1258885332324578e-09,
+    "reduced_real_dimension": 188,
+    "reduced_spectral_radius": 1.0000000009008414,
+    "reduced_expanding_multiplier_count": 0,
+    "reduced_unit_circle_multiplier_count": 128
+  },
+  "nonnormal_transient": {
+    "operator_norms_of_monodromy_powers": {
+      "1": 6.438500961275717,
+      "2": 8.996915080998392,
+      "4": 11.839228310378656,
+      "8": 4.657586444755906,
+      "16": 6.438501051504269,
+      "32": 8.996915294286344,
+      "64": 11.839228639746976,
+      "128": 4.657586984597483
+    },
+    "maximum_tested_amplification": 11.839228639746976,
+    "exponential_growth_detected": false,
+    "interpretation": "the finite-volume monodromy is spectrally neutral but strongly nonnormal; transient growth is bounded and recurrent in the tested window"
+  },
+  "finite_amplitude_protocol": {
+    "lattice_sites": 256,
+    "steps": 80,
+    "seed": 20260821,
+    "perturbation_normalization": "one fixed random complex direction with norm delta, followed by total-state normalization",
+    "scan": {
+      "0.0001": {
+        "core_probability_after_80_steps": 0.9999999908942178,
+        "radiated_probability": 9.105782239338112e-09,
+        "radiated_probability_over_amplitude_squared": 0.9105782239338112,
+        "norm_error": 2.220446049250313e-16
+      },
+      "0.001": {
+        "core_probability_after_80_steps": 0.9999990895547175,
+        "radiated_probability": 9.104452824981735e-07,
+        "radiated_probability_over_amplitude_squared": 0.9104452824981735,
+        "norm_error": 2.220446049250313e-15
+      },
+      "0.01": {
+        "core_probability_after_80_steps": 0.9999073772188717,
+        "radiated_probability": 9.262278112831535e-05,
+        "radiated_probability_over_amplitude_squared": 0.9262278112831535,
+        "norm_error": 6.439293542825908e-15
+      },
+      "0.03": {
+        "core_probability_after_80_steps": 0.9990061304073017,
+        "radiated_probability": 0.0009938695926983154,
+        "radiated_probability_over_amplitude_squared": 1.1042995474425727,
+        "norm_error": 3.774758283725532e-15
+      },
+      "0.05": {
+        "core_probability_after_80_steps": 0.9954525401314883,
+        "radiated_probability": 0.004547459868511683,
+        "radiated_probability_over_amplitude_squared": 1.8189839474046727,
+        "norm_error": 4.440892098500626e-16
+      },
+      "0.06": {
+        "core_probability_after_80_steps": 0.9879834021089002,
+        "radiated_probability": 0.012016597891099767,
+        "radiated_probability_over_amplitude_squared": 3.337943858638824,
+        "norm_error": 1.9984014443252818e-15
+      },
+      "0.07": {
+        "core_probability_after_80_steps": 0.5952017862491622,
+        "radiated_probability": 0.4047982137508378,
+        "radiated_probability_over_amplitude_squared": 82.61188035731382,
+        "norm_error": 4.107825191113079e-15
+      },
+      "0.08": {
+        "core_probability_after_80_steps": 0.4218826447049947,
+        "radiated_probability": 0.5781173552950053,
+        "radiated_probability_over_amplitude_squared": 90.33083676484458,
+        "norm_error": 2.886579864025407e-15
+      },
+      "0.09": {
+        "core_probability_after_80_steps": 0.01195387248970392,
+        "radiated_probability": 0.9880461275102961,
+        "radiated_probability_over_amplitude_squared": 121.98100339633285,
+        "norm_error": 2.9976021664879227e-15
+      },
+      "0.1": {
+        "core_probability_after_80_steps": 0.009128471812253429,
+        "radiated_probability": 0.9908715281877466,
+        "radiated_probability_over_amplitude_squared": 99.08715281877464,
+        "norm_error": 1.5543122344752192e-15
+      }
+    },
+    "protocol_dependent_escape_bracket": [
+      0.06,
+      0.07
+    ]
+  },
+  "interpretation": {
+    "linear_floquet_spectral_stability": true,
+    "expanding_physical_multiplier_found": false,
+    "asymptotic_attraction_proved": false,
+    "reason_not_asymptotic": "the massless vacuum supplies an extensive neutral unit-circle radiation sector",
+    "small_perturbation_core_survives": true,
+    "global_nonlinear_stability_proved": false,
+    "existence_quantization_survives_first_stability_gate": true,
+    "physical_lattice_spacing_derived": false,
+    "observational_mass_map_derived": false
+  },
+  "verdict": {
+    "R4_stable_endpoint_status": "partially_closed_by_local_numerical_floquet_stability",
+    "R5_blind_prediction_closed": false,
+    "status": "the kappa=2*pi compacton has no expanding Floquet multiplier after symmetry reduction and keeps its core under small controlled perturbations, but neutral radiation, nonnormal transients, finite-amplitude escape and the absence of a nonlinear theorem prevent calling it a fully stable physical particle"
+  },
+  "next_gate": "version6_spectral_transition_discrete_compacton_physical_scale_map_gate"
+}

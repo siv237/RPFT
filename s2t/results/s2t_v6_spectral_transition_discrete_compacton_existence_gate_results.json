@@ -1,0 +1,89 @@
+{
+  "gate": "version6_spectral_transition_discrete_compacton_existence_gate",
+  "one_site_obstruction": {
+    "nonzero_stationary_one_site_profile_exists": false,
+    "reason": "the conditional shift sends the two directional outputs to distinct neighboring sites",
+    "test_stationary_residual": 1.4142135623730951,
+    "center_probability_after_one_step": 0.0
+  },
+  "symmetric_two_site_branch": {
+    "local_vector": "(ell,e)=(1/2,1/2) with one weak component",
+    "local_norm_squared": 0.5,
+    "balanced_chiral_populations": true,
+    "full_flip_condition": "kappa*local_norm_squared=(2m+1)*pi",
+    "allowed_couplings": "kappa=2*(2m+1)*pi",
+    "minimal_positive_coupling": 6.283185307179586,
+    "eigenphase": "plus_or_minus_i",
+    "branches": {
+      "0": {
+        "coupling": 6.283185307179586,
+        "coupling_over_pi": 2.0,
+        "eigenphase_real": 0.0,
+        "eigenphase_imag": 1.0,
+        "eigenstate_residual": 2.3141666767917647e-16,
+        "leakage_probability": 4.440892098500626e-16,
+        "norm_error": 4.440892098500626e-16
+      },
+      "1": {
+        "coupling": 18.84955592153876,
+        "coupling_over_pi": 6.0,
+        "eigenphase_real": 0.0,
+        "eigenphase_imag": 1.0,
+        "eigenstate_residual": 2.8904821350939285e-16,
+        "leakage_probability": 4.440892098500626e-16,
+        "norm_error": 4.440892098500626e-16
+      },
+      "2": {
+        "coupling": 31.41592653589793,
+        "coupling_over_pi": 10.0,
+        "eigenphase_real": 0.0,
+        "eigenphase_imag": 1.0,
+        "eigenstate_residual": 3.7886575596040064e-16,
+        "leakage_probability": 4.440892098500626e-16,
+        "norm_error": 4.440892098500626e-16
+      }
+    }
+  },
+  "detuning": {
+    "0.001": {
+      "one_step_leakage_probability": 2.4673990713375282e-06,
+      "analytic_leakage_probability": 2.4673990709169446e-06,
+      "residual": 4.2058362204728215e-16
+    },
+    "0.01": {
+      "one_step_leakage_probability": 0.00024671981713458857,
+      "analytic_leakage_probability": 0.00024671981713422146,
+      "residual": 3.671108556035918e-16
+    },
+    "0.05": {
+      "one_step_leakage_probability": 0.006155829702431337,
+      "analytic_leakage_probability": 0.0061558297024311365,
+      "residual": 2.0036056147532122e-16
+    },
+    "0.1": {
+      "one_step_leakage_probability": 0.024471741852423567,
+      "analytic_leakage_probability": 0.024471741852423214,
+      "residual": 3.5388358909926865e-16
+    }
+  },
+  "long_run_exactness": {
+    "steps": 100,
+    "core_probability": 1.000000000000012,
+    "norm_error": 1.199040866595169e-14
+  },
+  "interpretation": {
+    "exact_finite_support_compacton_exists": true,
+    "dimensionless_existential_quantization_found": true,
+    "minimal_branch_value": "2*pi",
+    "physical_lattice_spacing_derived": false,
+    "nonlinear_stability_proved": false,
+    "observational_map_for_2pi": false
+  },
+  "verdict": {
+    "compacton_loophole_closed_by_existence": true,
+    "R4_stable_physical_endpoint_closed": false,
+    "R5_blind_prediction_closed": false,
+    "status": "an exact two-site compacton exists at kappa=2(2m+1)pi; the minimal 2pi branch is a new discrete existence value, but stability, physical length and observational meaning remain open"
+  },
+  "next_gate": "version6_spectral_transition_discrete_compacton_stability_quantization_gate"
+}

@@ -1,0 +1,105 @@
+{
+  "gate": "version6_single_thread_excluded_volume_reconnection_barrier_gate",
+  "input": {
+    "unsigned_counts": [
+      22696855,
+      829548,
+      829548,
+      829548
+    ],
+    "unsigned_total_passes": 25185499,
+    "Real_doubled_oriented_visits": 50370998
+  },
+  "positive_thickness_geometry": {
+    "tube_condition": "radius a must not exceed curve reach",
+    "reach_components": [
+      "local curvature radius",
+      "half the nonlocal self-distance"
+    ],
+    "current_parent_supplies_fundamental_radius": false,
+    "existing_effective_vortex_width_is_fundamental_radius": false,
+    "strict_continuum_dense_filling_with_uniform_positive_reach_certified": false,
+    "finite_cutoff_weave_remains_possible": true
+  },
+  "conditional_cross_section_packing": {
+    "assumption": "all counted visits cross one coarse square cell simultaneously as disjoint circular tubes",
+    "hexagonal_packing_fraction": 0.9068996821171089,
+    "largest_axis_count": 22696855,
+    "largest_axis_radius_to_cell_ratio_upper_bound": 0.00011277733998417578,
+    "all_unsigned_passes_radius_to_cell_ratio_upper_bound": 0.0001070605348065843,
+    "all_Real_visits_radius_to_cell_ratio_upper_bound": 7.570323015919416e-05,
+    "equal_thread_and_cell_scale_compatible": false,
+    "counts_are_physical_planck_pass_numbers": false,
+    "interpretation": "the integer counts are moment approximants; without a derived scale map they cannot be used as literal Planck packing data"
+  },
+  "local_action_collision_test": {
+    "geometry": "two straight parallel unit segments separated by delta",
+    "deltas": [
+      0.1,
+      0.01,
+      0.001,
+      0.0001,
+      1e-05,
+      1e-06
+    ],
+    "Nambu_Goto_length_energy": [
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "local_bending_energy": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inverse_square_contact_energy": [
+      24.807432969233435,
+      302.94889165466975,
+      3125.7771426984955,
+      31395.505855150644,
+      314134.23950804933,
+      3141563.0225686776
+    ],
+    "delta_times_contact_energy": [
+      2.4807432969233436,
+      3.0294889165466974,
+      3.1257771426984955,
+      3.1395505855150647,
+      3.1413423950804935,
+      3.1415630225686773
+    ],
+    "limiting_delta_times_contact_energy": 3.141592653589793,
+    "local_tension_or_curvature_diverges_at_contact": false,
+    "nonlocal_contact_kernel_diverges_at_contact": true
+  },
+  "project_operator_audit": {
+    "known_thread_terms": [
+      "local tension / Nambu-Goto term",
+      "local derivative and curvature terms",
+      "internal rank-loss barriers",
+      "topological winding and Hopf labels"
+    ],
+    "pairwise_nonlocal_self_distance_operator_found": false,
+    "hard_core_positive_reach_constraint_found": false,
+    "coefficient_free_OHara_or_tangent_point_energy_found": false,
+    "topological_charge_alone_forbids_reconnection": false,
+    "reason": "reconnection may pass through a finite core where the order parameter leaves the vacuum manifold"
+  },
+  "verdict": {
+    "literal_planck_thickness_planck_cell_multi_pass_packing_derived": false,
+    "finite_cutoff_single_cycle_embedding_refuted": false,
+    "excluded_volume_derived_from_current_parent": false,
+    "infinite_reconnection_barrier_derived": false,
+    "literal_unbreakable_single_thread_derived": false,
+    "effective_multi_pass_order_parameter_picture_survives": true,
+    "stable_Hopf_soliton_route_survives": true,
+    "single_thread_hypothesis_requires_new_microscopic_axiom_or_scale_hierarchy": true,
+    "next_gate": "version6_single_thread_scale_hierarchy_branch_decision_gate"
+  }
+}

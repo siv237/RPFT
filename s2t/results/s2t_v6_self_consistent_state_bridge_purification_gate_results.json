@@ -1,0 +1,360 @@
+{
+  "gate": "version6_self_consistent_state_bridge_purification_gate",
+  "state_map": {
+    "right": "R_R=B^T B/Tr(B^T B)",
+    "left": "R_L=B B^T/Tr(B^T B)",
+    "new_continuous_coefficient": false,
+    "scalar_bridge_recovery_maximum_residual": 2.220446049250313e-16
+  },
+  "spectral_action_identity": {
+    "formula": "S=2/(7 sum x_i) sum x_i(1-x_i)^2",
+    "maximum_residual": 7.105427357601002e-14,
+    "samples": [
+      {
+        "direct_action": 4.780755995956611,
+        "spectral_action": 4.780755995956613,
+        "residual": -2.6645352591003757e-15
+      },
+      {
+        "direct_action": 4.7190998724411,
+        "spectral_action": 4.719099872441104,
+        "residual": -4.440892098500626e-15
+      },
+      {
+        "direct_action": 5.246713716502163,
+        "spectral_action": 5.246713716502167,
+        "residual": -3.552713678800501e-15
+      },
+      {
+        "direct_action": 4.028996945393244,
+        "spectral_action": 4.028996945393245,
+        "residual": -8.881784197001252e-16
+      },
+      {
+        "direct_action": 68.14656117698543,
+        "spectral_action": 68.14656117698536,
+        "residual": 7.105427357601002e-14
+      },
+      {
+        "direct_action": 3.4427614554391988,
+        "spectral_action": 3.442761455439202,
+        "residual": -3.1086244689504383e-15
+      },
+      {
+        "direct_action": 35.59685532759371,
+        "spectral_action": 35.59685532759371,
+        "residual": 0.0
+      },
+      {
+        "direct_action": 0.3473825354331483,
+        "spectral_action": 0.3473825354331492,
+        "residual": -8.881784197001252e-16
+      },
+      {
+        "direct_action": 1.4258284771911414,
+        "spectral_action": 1.42582847719114,
+        "residual": 1.3322676295501878e-15
+      },
+      {
+        "direct_action": 8.5078672385467,
+        "spectral_action": 8.507867238546702,
+        "residual": -1.7763568394002505e-15
+      },
+      {
+        "direct_action": 3.501570329716056,
+        "spectral_action": 3.501570329716052,
+        "residual": 3.9968028886505635e-15
+      },
+      {
+        "direct_action": 7.230859667706499,
+        "spectral_action": 7.230859667706503,
+        "residual": -4.440892098500626e-15
+      },
+      {
+        "direct_action": 10.146330335210392,
+        "spectral_action": 10.14633033521037,
+        "residual": 2.1316282072803006e-14
+      },
+      {
+        "direct_action": 6.157678880049866,
+        "spectral_action": 6.1576788800498665,
+        "residual": -8.881784197001252e-16
+      },
+      {
+        "direct_action": 6.761772968705612,
+        "spectral_action": 6.761772968705609,
+        "residual": 3.552713678800501e-15
+      },
+      {
+        "direct_action": 7.76454462914493,
+        "spectral_action": 7.764544629144919,
+        "residual": 1.0658141036401503e-14
+      },
+      {
+        "direct_action": 2.2169788381904176,
+        "spectral_action": 2.2169788381904127,
+        "residual": 4.884981308350689e-15
+      },
+      {
+        "direct_action": 6.088729877013486,
+        "spectral_action": 6.088729877013482,
+        "residual": 3.552713678800501e-15
+      },
+      {
+        "direct_action": 3.1545607372669906,
+        "spectral_action": 3.1545607372669884,
+        "residual": 2.220446049250313e-15
+      },
+      {
+        "direct_action": 38.137556038442085,
+        "spectral_action": 38.13755603844213,
+        "residual": -4.263256414560601e-14
+      },
+      {
+        "direct_action": 5.077003526084654,
+        "spectral_action": 5.077003526084659,
+        "residual": -4.440892098500626e-15
+      },
+      {
+        "direct_action": 3.5764525870218797,
+        "spectral_action": 3.576452587021884,
+        "residual": -4.440892098500626e-15
+      },
+      {
+        "direct_action": 14.31472403600213,
+        "spectral_action": 14.314724036002124,
+        "residual": 5.329070518200751e-15
+      },
+      {
+        "direct_action": 24.082026746309598,
+        "spectral_action": 24.08202674630959,
+        "residual": 7.105427357601002e-15
+      },
+      {
+        "direct_action": 31.49318325988752,
+        "spectral_action": 31.493183259887495,
+        "residual": 2.4868995751603507e-14
+      },
+      {
+        "direct_action": 8.92126227806639,
+        "spectral_action": 8.921262278066404,
+        "residual": -1.4210854715202004e-14
+      },
+      {
+        "direct_action": 9.820238414519533,
+        "spectral_action": 9.820238414519538,
+        "residual": -5.329070518200751e-15
+      },
+      {
+        "direct_action": 4.09983163609534,
+        "spectral_action": 4.099831636095346,
+        "residual": -6.217248937900877e-15
+      },
+      {
+        "direct_action": 3.4805629810835006,
+        "spectral_action": 3.480562981083501,
+        "residual": -4.440892098500626e-16
+      },
+      {
+        "direct_action": 21.57721668375883,
+        "spectral_action": 21.57721668375886,
+        "residual": -2.842170943040401e-14
+      }
+    ]
+  },
+  "former_fixed_state_valley": {
+    "checks": [
+      {
+        "transverse_norm": 1.8378962870462177,
+        "distance_of_R_from_projector": 1.086259643677229,
+        "self_consistent_action": 1.2054145632044622,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 0.6312988160035732,
+        "distance_of_R_from_projector": 0.3539973897850173,
+        "self_consistent_action": 0.05024021911517734,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 3.9147270282412805,
+        "distance_of_R_from_projector": 1.2724794851008439,
+        "self_consistent_action": 41.01347284472729,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 1.5956478675840744,
+        "distance_of_R_from_projector": 0.9738429276746755,
+        "self_consistent_action": 0.33799298930799265,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 1.1420814367657577,
+        "distance_of_R_from_projector": 0.700952711776056,
+        "self_consistent_action": 0.01925857531796133,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 2.532010812849732,
+        "distance_of_R_from_projector": 1.1700181689488833,
+        "self_consistent_action": 5.176696984479981,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 1.6530491641025056,
+        "distance_of_R_from_projector": 0.999036312274202,
+        "self_consistent_action": 0.46262004770141435,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 0.7484198338052224,
+        "distance_of_R_from_projector": 0.5040216985603663,
+        "self_consistent_action": 0.021794098895156593,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 2.857308488061321,
+        "distance_of_R_from_projector": 1.2491213907091556,
+        "self_consistent_action": 12.339191886869786,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 1.7290923961046754,
+        "distance_of_R_from_projector": 0.9915911263693151,
+        "self_consistent_action": 0.4516392110319491,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 1.9726328379002387,
+        "distance_of_R_from_projector": 1.0901540213297358,
+        "self_consistent_action": 1.485213184801878,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 1.1969909052794154,
+        "distance_of_R_from_projector": 0.7504653507154149,
+        "self_consistent_action": 0.017983644874930708,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 1.3151870803593195,
+        "distance_of_R_from_projector": 0.8745116647801745,
+        "self_consistent_action": 0.07865185253579186,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 1.5247312714366836,
+        "distance_of_R_from_projector": 0.9446693284053091,
+        "self_consistent_action": 0.2299201929675118,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 2.4743689126650925,
+        "distance_of_R_from_projector": 1.205430406410643,
+        "self_consistent_action": 6.08256202419608,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 3.213091012860215,
+        "distance_of_R_from_projector": 1.2378676012855374,
+        "self_consistent_action": 16.971119645941133,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 2.178525208322482,
+        "distance_of_R_from_projector": 1.1641794073328198,
+        "self_consistent_action": 3.2348177234823945,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 2.6546762431585313,
+        "distance_of_R_from_projector": 1.1468752765742252,
+        "self_consistent_action": 4.844260804864774,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 2.567235833701069,
+        "distance_of_R_from_projector": 1.2239325604083624,
+        "self_consistent_action": 7.587216545967517,
+        "rank_R": 3
+      },
+      {
+        "transverse_norm": 1.3498033354655985,
+        "distance_of_R_from_projector": 0.9105705147086164,
+        "self_consistent_action": 0.12193962748011923,
+        "rank_R": 3
+      }
+    ],
+    "pure_state_with_nonzero_C_possible": false,
+    "flat_valley_removed": true
+  },
+  "zero_action_rank_strata": [
+    {
+      "rank": 1,
+      "action": 0.0,
+      "right_state_eigenvalues": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "left_state_eigenvalues": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "state_entropy": 0.0,
+      "free_energy_action_plus_entropy": 0.0
+    },
+    {
+      "rank": 2,
+      "action": 0.0,
+      "right_state_eigenvalues": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "left_state_eigenvalues": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "state_entropy": -0.6931471805599453,
+      "free_energy_action_plus_entropy": -0.6931471805599453
+    },
+    {
+      "rank": 3,
+      "action": 0.0,
+      "right_state_eigenvalues": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "left_state_eigenvalues": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "state_entropy": -1.0986122886681096,
+      "free_energy_action_plus_entropy": -1.0986122886681096
+    }
+  ],
+  "coercivity": {
+    "large_scale_power": 4.000011314386259,
+    "expected_power": 4.0,
+    "finite_matrix_integral_at_infinity": true
+  },
+  "entropy_selection": {
+    "lower_bound": "Tr(R log R)>=-log 3",
+    "global_minimum_rank": 3,
+    "global_minimum_bridge": "O(3)",
+    "global_minimum_state": "I3/3",
+    "RP2_selected": false
+  },
+  "verdict": {
+    "self_consistency_removes_rank_loss_divergence": true,
+    "self_consistency_preserves_independent_state_one_loop_mechanism": false,
+    "self_consistent_parent_births_RP2": false,
+    "independent_R_assumption_was_essential_to_previous_self_start": true,
+    "next_gate": "version6_partial_isometry_rank_stratum_selection_gate"
+  }
+}

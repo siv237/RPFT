@@ -1,0 +1,69 @@
+{
+  "gate": "version6_spectral_transition_new_model_candidate_menu_gate",
+  "candidates": {
+    "electroweak_sphaleron": {
+      "R0": "partial",
+      "hard_conflicts": [
+        "no_full_H15_flow",
+        "unstable_endpoint"
+      ],
+      "role": "control_transition_saddle",
+      "new_primitives": 0
+    },
+    "explicit_QTB_Higgs_portal": {
+      "R0": false,
+      "hard_conflicts": [
+        "current_intertwiner_space_zero",
+        "manual_portal_parameter"
+      ],
+      "role": "rejected_hidden_portal",
+      "new_primitives": 2
+    },
+    "Q_ball_or_fermion_bag": {
+      "R0": false,
+      "hard_conflicts": [
+        "new_global_charge",
+        "new_potential"
+      ],
+      "role": "R4_control",
+      "new_primitives": 3
+    },
+    "Jackiw_Rebbi_defect_mode": {
+      "R0": "partial",
+      "hard_conflicts": [
+        "background_defect_not_derived"
+      ],
+      "role": "endpoint_submechanism",
+      "new_primitives": 1
+    },
+    "dynamical_finite_Dirac_field": {
+      "R0": true,
+      "hard_conflicts": [],
+      "role": "selected_research_candidate",
+      "new_primitives": 1,
+      "open_requirements": [
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ]
+    },
+    "discrete_spectral_transition_network": {
+      "R0": "open",
+      "hard_conflicts": [],
+      "role": "deferred_foundational_rebuild",
+      "new_primitives": 5
+    }
+  },
+  "decision": {
+    "candidates_checked": 6,
+    "fully_admitted_R0_to_R6": [],
+    "selected_for_next_derivation": [
+      "dynamical_finite_Dirac_field"
+    ],
+    "selection_is_model_admission": false,
+    "selection_reason": "preserves the typed H15 carrier and allows one operator parent with the fewest foreign primitives",
+    "retrospectively_superseded": true
+  },
+  "next_gate": "version6_spectral_transition_candidate_menu_retrospective_correction_gate"
+}

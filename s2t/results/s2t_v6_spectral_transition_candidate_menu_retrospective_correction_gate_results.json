@@ -1,0 +1,56 @@
+{
+  "gate": "version6_spectral_transition_candidate_menu_retrospective_correction_gate",
+  "prior_results": {
+    "self_generated_transition_defect": {
+      "kink": true,
+      "normalizable_Dirac_zero_mode": true,
+      "full_carrier_multiplicity": 300,
+      "potential_and_scale_derived": false
+    },
+    "holonomy_projector_defect_multiplicity": {
+      "rank_chain": [
+        300,
+        45,
+        15,
+        2,
+        1
+      ],
+      "rank_one_is_conditional_on_nonzero_Higgs": true,
+      "unified_nonlinear_functional": false
+    },
+    "projector_superconnection_common_scale": {
+      "independent_parameters": [
+        "f2",
+        "f0",
+        "Lambda",
+        "ell",
+        "odd_field_normalization"
+      ],
+      "common_scale_derived": false
+    },
+    "spectral_pairing_stiffness": {
+      "phase_depends_on_spectral_function": true,
+      "even_action_selects_orientation": false
+    },
+    "fermionic_spectral_measure": {
+      "even_and_odd_moments_linked": false,
+      "pairing_amplitude_derived": false
+    },
+    "fermionic_determinant_induced_action": {
+      "single_positive_four_derivative_term": false,
+      "scheme_independent_radius": false
+    }
+  },
+  "correction": {
+    "dynamical_finite_Dirac_field_is_new": false,
+    "previous_candidate_selection_retracted": true,
+    "fully_admitted_model_exists": false,
+    "ordinary_internal_fluctuations_must_not_be_reopened": true
+  },
+  "genuinely_unbuilt_object": {
+    "exact_nonlinear_discrete_parent": true,
+    "exact_local_update_rule_present_in_project": false,
+    "continuum_limit_alone_is_sufficient": false
+  },
+  "next_gate": "version6_spectral_transition_discrete_nonlinear_parent_reopening_gate"
+}

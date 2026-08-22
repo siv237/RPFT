@@ -1,0 +1,109 @@
+{
+  "gate": "version6_bosonic_defect_corrected_vortex_negative_mode_nonlinear_saturation_gate",
+  "previous_unpinned_negative_mode": {
+    "finest_eigenvalue": -0.18904743182210215,
+    "one_dimensional_branch_amplitude_grid_33": 0.32078113544385095,
+    "one_dimensional_branch_energy_drop_grid_33": -0.012984507868341315,
+    "interpretation": "translation-like descent of a nonstationary sampled background"
+  },
+  "center_pinned_discrete_stationary_vortices": {
+    "25": {
+      "grid_size": 25,
+      "spacing": 0.8333333333333339,
+      "sampled_background_lowest_eigenvalues": [
+        -1.039126453832821,
+        -0.9707072007371575,
+        0.013186953923481218,
+        0.015656757873537142
+      ],
+      "optimizer_success": true,
+      "optimizer_iterations": 401,
+      "gauge_fixed_energy_drop": -0.08845734717347392,
+      "projected_gradient_rms": 4.4212050139146175e-09,
+      "center_amplitude": 0.0,
+      "flux_centroid": [
+        -0.3494761514023536,
+        -0.34947615140235017
+      ],
+      "relaxed_hessian_eigenvalues": [
+        0.012022625824289116,
+        0.015115891245306047,
+        0.017745923377117365,
+        0.017751445685310136,
+        0.018633217923005544,
+        0.021790550654485135
+      ],
+      "relaxed_negative_mode_count": 0
+    },
+    "33": {
+      "grid_size": 33,
+      "spacing": 0.625,
+      "sampled_background_lowest_eigenvalues": [
+        -0.5047402318777244,
+        -0.2981442365741568,
+        0.0009516930429587769,
+        0.0009517099404481456
+      ],
+      "optimizer_success": true,
+      "optimizer_iterations": 1402,
+      "gauge_fixed_energy_drop": -0.053107127180314316,
+      "projected_gradient_rms": 4.199309961986619e-09,
+      "center_amplitude": 0.0,
+      "flux_centroid": [
+        -0.2636826078280098,
+        -0.2636826078385456
+      ],
+      "relaxed_hessian_eigenvalues": [
+        0.0008661275618775047,
+        0.0008661772192975695,
+        0.002606225349921401,
+        0.0026063015078164344,
+        0.003740297529498606,
+        0.0038494539593356314
+      ],
+      "relaxed_negative_mode_count": 0
+    },
+    "41": {
+      "grid_size": 41,
+      "spacing": 0.5,
+      "sampled_background_lowest_eigenvalues": [
+        -0.31760548291492835,
+        -0.034185426049773655,
+        0.0004726786647803186,
+        0.0004726786775482476
+      ],
+      "optimizer_success": true,
+      "optimizer_iterations": 1465,
+      "gauge_fixed_energy_drop": -0.03614114898854253,
+      "projected_gradient_rms": 4.604077644770695e-09,
+      "center_amplitude": 0.0,
+      "flux_centroid": [
+        -0.1969301487476916,
+        -0.1969301487478774
+      ],
+      "relaxed_hessian_eigenvalues": [
+        0.00047269807150304716,
+        0.0004727008327174224,
+        0.0012213569201417738,
+        0.0012220616810247865,
+        0.0015316671787061625,
+        0.0015983378701435623
+      ],
+      "relaxed_negative_mode_count": 0
+    }
+  },
+  "relaxed_lowest_eigenvalue_by_grid": {
+    "25": 0.012022625824289116,
+    "33": 0.0008661275618775047,
+    "41": 0.00047269807150304716
+  },
+  "verdict": {
+    "negative_mode_survives_centered_stationary_relaxation": false,
+    "previous_negative_mode_is_physical_instability_certificate": false,
+    "peierls_nabarro_lattice_pinning_diagnosis": true,
+    "corrected_effective_vortex_has_negative_mode_after_translation_fixing": false,
+    "full_spin2_spin3_stability_closed": false,
+    "matter_birth_closed": false,
+    "next_gate": "version6_bosonic_defect_translation_covariant_discretization_gate"
+  }
+}

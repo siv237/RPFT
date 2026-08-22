@@ -1,0 +1,170 @@
+\chapter{Переоткрытие через нелинейный дискретный родитель}
+\label{ch:v6-spectral-transition-discrete-nonlinear-parent-reopening-gate}
+
+\section{Минимальный объект проверки}
+
+Ретроспективная коррекция оставила один действительно непостроенный класс:
+локальный дискретный закон, который не является сеточной записью заранее
+заданного потенциала. Рассмотрим одномерный минимальный носитель
+\begin{equation}
+ \Psi_n^t\in\mathbb C^2_{\rm dir}\otimes E,
+ \qquad E=M_{20\times15}(\mathbb C),
+ \qquad \dim_{\mathbb C}E=300.
+\end{equation}
+Две компоненты отвечают встречным направлениям переноса, а $E$ сохраняет
+полный внутренний носитель проекта.
+
+Линейные локальные унитарные автоматы могут иметь уравнение Дирака как
+длинноволновый предел \cite{discrete-parent-bialynicki1994,
+discrete-parent-bisio2015}. Нелинейные квантовые блуждания со
+state-dependent монетой аналогично дают нелинейный дираковский предел
+\cite{discrete-parent-angles2023,discrete-parent-continuous-limits2019}.
+
+\section{Точное нелинейное обновление}
+
+Введём локальный вещественный билинеар
+\begin{equation}
+ s_n(\Psi)=
+ \langle\Psi_n,(\sigma_z\otimes I_E)\Psi_n\rangle
+\end{equation}
+и монету
+\begin{equation}
+ C_{\kappa,n}(\Psi)=
+ \exp\!\left[-i\bigl(\theta_0+\kappa s_n(\Psi)\bigr)
+ \sigma_y\right]\otimes I_E.
+ \label{eq:v6-discrete-parent-coin}
+\end{equation}
+Один шаг равен
+\begin{equation}
+ \Psi^{t+1}=S\,C_\kappa(\Psi^t)\Psi^t,
+ \label{eq:v6-discrete-parent-update}
+\end{equation}
+где $S$ сдвигает правую компоненту на один узел вправо, а левую --- на
+один узел влево.
+
+Для каждого состояния $s_n$ вещественно, поэтому монета унитарна. Сдвиг
+является перестановкой узлов. Следовательно,
+\begin{equation}
+ \sum_n\|\Psi_n^{t+1}\|^2=\sum_n\|\Psi_n^t\|^2
+\end{equation}
+точно, несмотря на нелинейность. Правило использует только один узел и его
+ближайшие выходы, то есть проходит тесты локальности и сохранения нормы.
+
+\section{Непрерывный предел}
+
+При шаге решётки и времени $a$, масштабировании
+\begin{equation}
+ \theta_0=ma,\qquad \kappa=ga
+\end{equation}
+формальное разложение \eqref{eq:v6-discrete-parent-update} даёт оператор
+типа
+\begin{equation}
+ i\partial_t\Psi=
+ \left[-i\sigma_z\partial_x+m\sigma_y
+ +g\langle\Psi,\sigma_z\Psi\rangle\sigma_y\right]\Psi+O(a).
+ \label{eq:v6-discrete-parent-nonlinear-dirac}
+\end{equation}
+Тем самым дискретный закон действительно объединяет свободный дираковский
+перенос и локальную самосвязь без отдельного непрерывного поля $q(x)$.
+
+Однако параметры $m$, $g$ и физический шаг $a$ не следуют из унитарности,
+локальности и однородности. Разные $\kappa$ дают разные режимы
+самофокусировки; литература также рассматривает силу нелинейности как
+параметр монеты, а не следствие одной только дискретности.
+
+\section{Точный внутренний запрет}
+
+На полном факторном соответствии уже доказано
+\begin{equation}
+ \operatorname{End}_{M_{20}-M_{15}}(E)=\mathbb C I_E.
+ \label{eq:v6-discrete-parent-full-commutant}
+\end{equation}
+Поэтому всякая монета, совместимая с обоими полными действиями, имеет
+внутреннюю часть, пропорциональную $I_E$. Более того, правило
+\eqref{eq:v6-discrete-parent-update} ковариантно относительно любого
+$V\in U(E)$:
+\begin{equation}
+ F(\Psi V)=F(\Psi)V.
+\end{equation}
+Оно не различает внутренние направления. Локализованный режим, если он
+возникает в одном канале, существует в 300 эквивалентных копиях и их
+унитарных суперпозициях.
+
+Нелинейная зависимость от полной плотности может связать амплитуды каналов,
+но не выбирает каноническую линию. Для сокращения кратности требуется
+нескалярная монета, например проекторного типа. На полном бимодуле она
+запрещена \eqref{eq:v6-discrete-parent-full-commutant}; после ограничения
+до физической алгебры возвращается уже проверенная цепочка
+$P_0\otimes P_\nu(H)$.
+
+\begin{theorem}[Минимальный дискретный родитель не выбирает частицу]
+Локальное state-dependent унитарное правило
+\eqref{eq:v6-discrete-parent-update} точно сохраняет норму и имеет
+нелинейный дираковский непрерывный предел. Но совместимость с полным
+$M_{20}$--$M_{15}$-бимодулем делает внутреннюю монету скалярной. Поэтому
+правило сохраняет кратность $300$, не фиксирует $g$ и $a$ и не выводит
+единственный физический endpoint. Оно является новым дискретным
+proof-of-concept, но не проходит R4 и R5.
+\end{theorem}
+
+\begin{nogocriterion}
+Нельзя считать минимальный шаг решётки предсказанным размером частицы,
+пока не выведена физическая величина $a$. Нельзя также вставлять
+$P_0\otimes P_\nu(H)$ в монету без вывода из локальной алгебры обновления:
+это воспроизводит старый операторнозначный дефект, а не решает его.
+\end{nogocriterion}
+
+\section{Следующий гейт}
+
+Следующий гейт
+\path{version6_spectral_transition_discrete_equivariant_coin_selector_gate}
+должен классифицировать локальные монеты после перехода от полного фактора
+к физической алгебре Стандартной модели и проверить, возникает ли
+единственный нескалярный селектор без ручного выбора блока и Хиггса.
+
+Нулевая гипотеза: коммутант физической алгебры даёт несколько центральных
+блоков и не выбирает один из них. Стоп-критерий: если ранг-один монета
+требует состояния Хиггса или внешнего проектора, дискретная ветвь
+возвращается к условной лестнице Тома V и закрывается.
+
+\begin{protocol}
+\begin{enumerate}
+ \item точное локальное нелинейное правило: \textbf{построено};
+ \item сохранение нормы: \textbf{точное};
+ \item ближайшая локальность: \textbf{да};
+ \item нелинейный дираковский предел: \textbf{получен формально};
+ \item минимальный дискретный шаг: \textbf{имеется};
+ \item физическое значение шага: \textbf{не выведено};
+ \item нелинейная связь $\kappa$: \textbf{не фиксирована};
+ \item полная внутренняя ковариантность: \textbf{сохранена};
+ \item внутренняя кратность: \textbf{$300$};
+ \item единственный физический канал: \textbf{не выбран};
+ \item статус: \textbf{дискретный proof-of-concept без физического замыкания}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v6_spectral_transition_discrete_nonlinear_parent_reopening_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{discrete-parent-bialynicki1994}
+I.~Bialynicki-Birula,
+\emph{Weyl, Dirac, and Maxwell Equations on a Lattice as Quantum Cellular Automata},
+Physical Review D 49 (1994), 6920--6927; arXiv:hep-th/9304070.
+
+\bibitem{discrete-parent-bisio2015}
+A.~Bisio, G.~M.~D'Ariano, A.~Tosini,
+\emph{Quantum Field as a Quantum Cellular Automaton: The Dirac Free Evolution in One Dimension},
+Annals of Physics 354 (2015), 244--264; arXiv:1212.2839.
+
+\bibitem{discrete-parent-angles2023}
+A.~Angl\`es-Castillo, A.~P\'erez, E.~Rold\'an,
+\emph{Solitons in a Photonic Nonlinear Quantum Walk: Lessons from the Continuum},
+arXiv:2308.01014.
+
+\bibitem{discrete-parent-continuous-limits2019}
+M.~Maeda, A.~Suzuki,
+\emph{Continuous Limits of Linear and Nonlinear Quantum Walks},
+Reviews in Mathematical Physics 32 (2020), 2050008;
+arXiv:1902.02017.
+\end{thebibliography}

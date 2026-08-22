@@ -1,0 +1,55 @@
+{
+  "gate": "version6_spectral_transition_discrete_equivariant_coin_selector_gate",
+  "physical_observed_carrier": {
+    "labels": [
+      "Q_L",
+      "L_L",
+      "u_R",
+      "d_R",
+      "e_R"
+    ],
+    "block_ranks_on_H15": [
+      6,
+      2,
+      3,
+      3,
+      1
+    ],
+    "dimension": 15,
+    "observed_block_algebra_dimension": 59,
+    "commutant_complex_dimension": 5,
+    "coin_commutant_complex_dimension_on_C2_tensor_H15": 20,
+    "one_axis_coin_angles": 5,
+    "relative_one_axis_coin_angles": 4
+  },
+  "exact_tests": {
+    "central_projector_commutator_residual": 0.0,
+    "sector_dependent_coin_unitarity_error": 4.393024217182855e-16,
+    "sector_dependent_coin_equivariance_residual": 0.0,
+    "weak_doublet_identity_commutator_residual": 0.0
+  },
+  "selector_classification": {
+    "canonical_central_projectors": [
+      "Q_L",
+      "L_L",
+      "u_R",
+      "d_R",
+      "e_R"
+    ],
+    "unique_rank_one_central_block": "e_R",
+    "unique_rank_one_block_is_neutral_endpoint": false,
+    "constant_weak_neutrino_rank_one_projector_exists": false,
+    "gauge_closed_charged_lepton_support_rank": 3,
+    "higgs_direction_required_for_rank_one_left_component": true,
+    "algebra_selects_one_nonzero_coin": false
+  },
+  "verdict": {
+    "non_scalar_equivariant_coins_exist": true,
+    "unique_physical_selector_derived": false,
+    "internal_multiplicity_problem_closed": false,
+    "R4_stable_physical_endpoint_closed": false,
+    "R5_blind_prediction_closed": false,
+    "status": "physical reduction replaces the scalar full-factor coin by five independent sector coins; the sole rank-one central block is e_R and is not a gauge/Yukawa-closed massive endpoint"
+  },
+  "next_gate": "version6_spectral_transition_discrete_chiral_coin_closure_gate"
+}
