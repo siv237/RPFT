@@ -7,11 +7,17 @@
 \usepackage{graphicx}
 \usepackage{pdflscape}
 \usepackage{microtype}
+\usepackage{etoolbox}
 \usepackage{geometry}
 \usepackage{hyperref}
 \usepackage{xurl}
 \geometry{margin=2.3cm}
 \setlength{\emergencystretch}{2em}
+% В стандартном report.cls ширина номера главы в оглавлении рассчитана
+% на одну-две цифры. Том VI содержит более ста глав.
+\makeatletter
+\patchcmd{\l@chapter}{1.5em}{2.0em}{}{}
+\makeatother
 \input{s2t_paths.tex}
 \graphicspath{{../assets/}}
 
@@ -181,6 +187,9 @@
 \input{version6_spectral_transition_real_pair_radiative_cooling_parent_gate.tex}
 \input{version6_spectral_transition_radiative_cooling_common_carrier_attribution_gate.tex}
 \input{version6_spectral_transition_post_radiative_bridge_final_dynamic_status_gate.tex}
+
+\part{Заключение}
+
 \input{version6_final_conclusion_and_next_program.tex}
 
 \end{document}

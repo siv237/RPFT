@@ -1,24 +1,31 @@
 # Research Catalog
 
-> Status: working
+> Status: mature
 > Type: source
-> Updated: 2026-07-09
+> Updated: 2026-08-22
 
 ## Summary
 
-`s2t/docs/RESEARCH_CATALOG.md` is the pre-existing high-level map of the workspace. It identifies the main research layers: RPFT, UGSM, TOE ↔ UGSM bridge, numerical audits, and an emerging S2T reinterpretation.
+`s2t/docs/RESEARCH_CATALOG.md` — ранняя карта рабочего пространства. Она
+фиксирует исходное разделение на RPFT, UGSM, мост TOE ↔ UGSM, численные аудиты
+и тогда ещё не каталогизированный слой S2T. Как исторический источник каталог
+полезен, но текущей навигацией служит `wiki/index.md`.
 
 ## Key Points
 
-- Treat as the initial authoritative navigation source for the wiki setup.
-- Use it to prioritize which documents to ingest next.
-- It already states the current working hypothesis: RPFT, UGSM, and TOE may point to a unified spectral-correlational source.
+- Каталог был исходным навигатором при создании вики.
+- Его утверждение «S2T-материалы ещё не каталогизированы» теперь устарело:
+  см. [[s2t-research-program]] и [[treatise-volume-systematics]].
+- Гипотеза общего спектрально-корреляционного источника сохранена как открытая,
+  а не как установленный результат.
 
 ## Links
 
 - [[project-overview]] — wiki synthesis derived from the catalog.
 - [[spectral-correlational-source]] — central hypothesis extracted from the catalog.
 - [[toe-ugsm-unified-shadow-paper]] — main document identified by the catalog.
+- [[s2t-research-program]] — закрывает старый каталогизационный пробел.
+- [[treatise-volume-systematics]] — актуальная карта томов.
 
 ## Source Notes
 

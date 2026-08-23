@@ -1,33 +1,46 @@
-# S2T Reinterpretation
+# S2T: метод Shadow-to-Theory
 
-> Status: draft
+> Status: working
 > Type: concept
-> Updated: 2026-07-09
+> Updated: 2026-08-22
 
 ## Summary
 
-S2T is the emerging reinterpretation layer that may help name or formalize the common object behind RPFT, UGSM, and TOE. It appears to move from comparison of theories toward identification of a deeper shared entity.
+S2T — не имя уже найденной общей сущности, а метод перехода от обнаруженного
+структурного паттерна (`shadow`) к формализованной, проверяемой и потенциально
+опровержимой теории (`theory`). Общий спектрально-корреляционный источник
+остаётся гипотезой, которую S2T должен проверить, а не предположить истинной.
 
 ## Key Points
 
-- Currently less settled than the RPFT/UGSM/TOE bridge layer.
-- Likely connected to spectral closure and theory completion documents.
-- Should be updated after a focused ingest of `s2t/docs/tome2_s2t_spectral_closure.tex` and related result files.
-- Current audits retain `S_vac`, `m_tau`, and the Higgs bridge as numerically strong but conditional structures; their determinant, seed, and normalization gaps are explicit.
+- Протокол включает минимальную формализацию, предрегистрацию допустимых
+  входов, слепые проверки, anti-overfit-аудит и критерии провала.
+- Конкретная реализация на `RP^3 x S^1` не тождественна всей методологии.
+- `S_vac`, масса тау и хиггсовский мост сохраняются как сильные, но условные
+  структуры; детерминантные и нормировочные разрывы документированы.
+- Полный паспорт программы и её документов: [[s2t-research-program]].
 
-## Tome II Source Update
+## Техническая реализация в Томе II
 
-- `s2t/docs/tome2_s2t_spectral_closure.tex` makes S2T operational by fixing train inputs, compact carrier, no-go rules, closure rows, and II.B gaps.
-- The strongest surviving patterns are `S_geo`, the unique tau relation, and the dimensionless Higgs normalization; only `S_geo` currently avoids the later normalization no-go tests.
-- S2T remains explicitly incomplete in two places: the neutrino Dirac insertion and EW/QCD threshold model.
+- `s2t/docs/tome2_s2t_spectral_closure.tex` фиксирует входы, носитель,
+  no-go-правила, строки замыкания и открытые задачи II.B.
+- Последующий цикл II закрыт с `R_sci = 4/10` и без полностью замкнутых
+  физических строк; это ограничение конкретной архитектуры, не отмена метода.
+- Тома III–VI проверяют более сильные требования одного действия,
+  наблюдаемого сектора, дефектной архитектуры и динамического рождения.
 
 ## Links
 
-- [[spectral-correlational-source]] — likely target of the reinterpretation.
-- [[project-overview]] — global layer map.
-- [[s2t-closure-roadmap]] — current closure table and proof-gap map.
-- [[tome2-s2t-spectral-closure]] — primary source page for the Tome II closure program.
+- [[s2t-research-program]] — паспорт программы и точки входа.
+- [[treatise-volume-systematics]] — связь метода с томами I–VI.
+- [[spectral-correlational-source]] — проверяемая гипотеза общего источника.
+- [[s2t-closure-roadmap]] — таблица статусов и доказательных разрывов.
+- [[tome2-s2t-spectral-closure]] — источник по реализации Тома II.
 
 ## Source Notes
 
-- Source paths: `s2t/docs/tome2_s2t_spectral_closure.tex`, `s2t/docs/technical_s2t_analysis.tex`, `s2t/results/s2t_tome2_results.json`.
+- `s2t/docs/tome1_s2t_research_program.tex`
+- `s2t/docs/theory_completion_program.tex`
+- `s2t/docs/tome2_s2t_spectral_closure.tex`
+- `s2t/docs/technical_s2t_analysis.tex`
+- `s2t/results/s2t_tome2_results.json`

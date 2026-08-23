@@ -27,6 +27,8 @@ not derived by `s2t/17705966/TOE.pdf`.
 - [[toe]] — correlation side.
 - [[spectral-correlational-source]] — candidate common source.
 - [[zero-prompt-toe-carrier-trace-2026-08-11]] — corrected genealogy of `K`.
+- [[toe-ugsm-comparison-protocol]] — прямое сравнение первичных документов и
+  ограничений общего моста.
 
 ## Source Notes
 

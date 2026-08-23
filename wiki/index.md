@@ -7,16 +7,37 @@
 Это навигационный каталог вики проекта. Его следует читать перед ответом на
 исследовательские вопросы и перед добавлением новых источников.
 
+## Систематика программы и томов
+
+- [[treatise-volume-systematics]] — каноническая карта томов I–VI, различие
+  между сборками `tomeN_*` и namespace гейтов `versionN_*`, а также логика
+  перехода от постановки программы к проверке рождения материи.
+- [[tome1-s2t-research-program]] — Том I найден и идентифицирован однозначно:
+  сегментная редакция — `s2t/docs/tome1_s2t_research_program.tex`,
+  финальный PDF — `corpus/Трактат 1 том.pdf`. Это
+  постановка исследовательской программы и карта структурных режимов, а не
+  готовое спектральное замыкание.
+- [[s2t-research-program]] — паспорт Shadow-to-Theory: метод, основные
+  документы, вычислительные аудиты и текущий статус. Программа существует как
+  корпус, но полного физического замыкания на текущем крае не доказано.
+- [[tome1-to-tome2-traceability]] — точная граница наследования: Том I даёт
+  онтологию и метод, Том II — первую техническую S2T-реализацию.
+- [[tome1-segmented-reconstruction]] — поэтапная безопасная для Prism
+  пересборка Тома I
+  с русскоязычной научной терминологией и небольшими файлами.
+
 ## Том VI: действующая ветвь
 
 - [[version6-final-conclusion-and-next-program]] — Том VI завершён как
-  различающий тест. Строгий слой включает Real-классификацию, кинематику
-  ранга, статический проекторный переход, поле `Q`, бозонную прямую нить,
-  точный compacton и ток `4*pi²`. Положительное динамическое замыкание не
-  достигнуто: единый родитель, запуск, скорость и устойчивый конечный
-  объект отсутствуют. Следующий том не открывается автоматически; сначала
-  новый кандидат должен пройти общий носитель, одно действие и вычислимый
-  тест нестабильности нулевого сектора.
+  самостоятельной частью «Заключение» и различающим тестом. В ней исходные
+  ожидания разделены на подтверждённые, частично подтверждённые,
+  пересмотренные, отменённые и действительно открытые. Строгий слой
+  включает Real-классификацию, кинематику ранга, статический проекторный
+  переход, поле `Q`, бозонную прямую нить, точный compacton и ток `4*pi²`.
+  Положительное динамическое замыкание не достигнуто: единый родитель,
+  запуск, скорость и устойчивый конечный объект отсутствуют. Следующий том
+  не открывается автоматически; сначала новый кандидат должен пройти общий
+  носитель, одно действие и вычислимый тест нестабильности нулевого сектора.
 - [[version6-spectral-transition-post-radiative-bridge-final-dynamic-status-gate]] —
   финальный реестр после нелинейного compacton- и Real-парного
   радиационного тестов. Сохранены классификация, кинематика, статический
@@ -783,7 +804,8 @@
 - [[full-field-carrier-scheme-obstruction-2026-08-11]] — proves that finite Einstein, Weyl-squared and Euler couplings must be fixed before a cross-topology determinant can select a carrier.
 - [[gaussian-bare-topology-measure-2026-08-11]] — conditional positive reopening using the exact Gaussian spin-Dirac spectral action.
 - [[project-success-tree-2026-08-11]] — visual tree of proved branches, conditional routes, dead ends and final kill-gates.
-- [[toe-ugsm-bridge]] — synthesis of the bridge between TOE-style correlation language and UGSM-style spectral geometry.
+- [[toe-ugsm-bridge]] — уточнённый статус общего операторно-спектрального
+  моста: структурированная гипотеза без доказанной эквивалентности.
 - [[s2t-closure-roadmap]] — closure-status map for S2T claims, evidence files, and remaining proof gaps.
 - [[tome2-proof-chain]] — proof-chain extraction for Tome II successful and partial closures.
 - [[c6-second-variation-checklist]] — единая ведомость шестнадцати подблоков второй вариации C6, учитываемых как одна открытая задача.
@@ -804,11 +826,17 @@
 - [[toe-6-5-spectral-density-roadmap]] — direct ingest of the six-page TOE 6.5 proof roadmap and its still-free measure data.
 - [[version5-external-literature-map]] — primary-literature map for carrier, boundary-source and finite-geometry Version V routes.
 - [[research-catalog]] — source page for `s2t/docs/RESEARCH_CATALOG.md`, the pre-existing human/LLM map of the workspace.
+- [[s2t-research-program]] — паспорт программы S2T, её документов,
+  вычислительного слоя и текущего научного статуса.
+- [[treatise-volume-systematics]] — карта томов I–VI и их функций.
 - [[toe-ugsm-unified-shadow-paper]] — source page for `s2t/docs/toe_ugsm_unified_shadow_paper.tex`, currently the main integration document.
+- [[toe-ugsm-comparison-protocol]] — доказательное сравнение первичного TOE и
+  динамического аудита UGSM без условного балльного ранжирования.
 - [[rpft-main-corpus]] — source page for the `RPFT-main/` markdown corpus.
 - [[numerical-audits]] — source page for root-level JSON audit/result files.
 - [[external-literature-spectral-determinants]] — literature gate for lens-space spectra, analytic torsion, and gauge determinants.
-- [[tome1-main]] — detailed source page for Tome I ontology, reconstruction protocol, kernel, and model-selection rules.
+- [[tome1-s2t-research-program]] — паспорт Тома I: онтология, протокол
+  реконструкции, минимальное ядро и правила выбора моделей.
 - [[tome2-s2t-spectral-closure]] — source page for the Tome II S2T spectral-closure treatise.
 
 ## Open Questions
@@ -993,11 +1021,21 @@
 - [[2026-07-09-llm-wiki-compliance-lint]] — compliance pass after applying the `llm-wiki.md` maintenance prompt.
 - [[2026-08-15-post-reorganization-lint]] — clean-build, manifest, metadata, index and link verification after the directory split.
 - [[2026-08-16-lint]] — проверка связности вики после понижения последних двух запретов до нуль-форменной области и фиксации развилки `H15/H16`.
+- [[2026-08-22-tome1-s2t-navigation-lint]] — полная проверка метаблоков,
+  идентификаторов, входящих и Obsidian-ссылок после систематизации Тома I и
+  программы S2T; исправлены две ранее существовавшие битые ссылки.
+- [[2026-08-22-tome1-language-and-structure-lint]] — языковая, структурная и
+  статическая проверка сегментной редакции Тома I без создания PDF.
 
 ## Source Map
 
 Important existing source paths:
 
+- `s2t/docs/tome1_s2t_research_program.tex` — канонический сборщик сегментной
+  редакции Тома I.
+- `corpus/Трактат 1 том.pdf` — финальная PDF-сборка Тома I.
+- `corpus/S2T_FINAL_PAPER.md`, `corpus/S2T_FINAL_PAPER_V2.md` — исторически
+  зафиксированный кандидат версии II.C от 28 мая 2026 года.
 - `s2t/docs/RESEARCH_CATALOG.md` — current hand-built catalog and stage map.
 - `s2t/docs/toe_ugsm_unified_shadow_paper.tex` — main integration paper.
 - `s2t/docs/theory_completion_program.tex` — completion-oriented treatise/program text.

@@ -311,7 +311,7 @@ E,\,
 - `s2t/gates/version5_h15_neutrino_degree_split_gate.tex`
 - `s2t/gates/version5_h15_physical_oneform_bimodule_gate.tex`
 - `s2t/gates/version5_h15_spectral_torsion_selector_gate.tex`
-- `s2t/docs/main.tex`
+- `s2t/docs/tome1_s2t_research_program.tex`
 - `arXiv:1306.1951`
 - `arXiv:2006.02761`
 - `arXiv:math/0701893`

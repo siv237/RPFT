@@ -5829,3 +5829,337 @@ quartic normalization vacuum остаётся CP-even.
   `s2t/docs/tome6_s2t_matter_birth.tex`, `wiki/index.md`,
   `wiki/questions/version6-matter-birth-program.md`, `README.md`,
   `GLOSSARY.md`, `wiki/log.md`.
+
+## [2026-08-22] maintenance | Очистка журнала сборки Тома VI
+
+- **Problem:** полный Том VI выдавал предупреждения `hyperref`, `Underfull \\hbox` и `Overfull \\hbox` в заголовках, таблицах, библиографиях, длинных формулах и оглавлении после появления трёхзначных номеров глав.
+- **Search for solution:** математические заголовки получили текстовые PDF-варианты через `\texorpdfstring`; длинные программные идентификаторы заменены смысловыми названиями; таблицы и библиографии переведены на допустимое выравнивание по левому краю; длинные формулы разбиты; одной главе дано краткое название для оглавления; ширина номера главы в оглавлении Тома VI увеличена локальной правкой `\l@chapter`. Дополнительно очищены обнаруженные при полной сборке предупреждения новых глав 110--115.
+- **Expected result:** весь Том VI должен собираться без предупреждений о недопустимых PDF-токенах, переполненных и недозаполненных строках, неопределённых ссылках и цитатах.
+- **Compliance check:** выполнена полная многоходовая сборка `latexmk -cd -pdf -interaction=nonstopmode -halt-on-error s2t/docs/tome6_s2t_matter_birth.tex`; получен PDF объёмом 465 страниц. Поиск по итоговому журналу не нашёл `Underfull \\hbox`, `Overfull \\hbox`, `Token not allowed in a PDF string` и `undefined`; `git diff --check` прошёл. Тома I--V не изменялись.
+- Изменённые файлы: `s2t/docs/tome6_s2t_matter_birth.tex` и локально перечисленные в запросе `version6_*`-гейты; дополнительно исправлены типографские предупреждения в `version6_bosonic_defect_tetrahedral_gauge_frame_branch_decision_gate.tex`, `version6_spectral_transition_discrete_compacton_branch_status_freeze_gate.tex`, `version6_spectral_transition_post_compacton_program_reprioritization_gate.tex`, `version6_spectral_transition_post_radiative_bridge_final_dynamic_status_gate.tex`, а также `wiki/log.md`.
+
+## [2026-08-22] maintenance | Систематика Тома I и программы S2T
+
+- **Problem:** Том I отсутствовал в таблице томов README, его канонический
+  `main.tex` описывался как безымянный активный черновик, wiki-паспорт ссылался
+  на несуществующий корневой `main-4.pdf`, а S2T смешивалась с конкретной
+  заявкой версии II.C на полное спектральное замыкание.
+- **Search for solution:** сопоставлены титульные страницы `main.tex` и томов
+  II–VI, PDF в `corpus/` и `s2t/assets/`, тексты `S2T_FINAL_PAPER*`,
+  `theory_completion_program.tex`, заморозка цикла II и заключение Тома VI.
+  Созданы отдельные страницы систематики серии и паспорта S2T; исправлены
+  паспорт Тома I, индекс, README, глоссарий и исторический каталог.
+- **Expected result:** Том I должен находиться по одному устойчивому маршруту
+  как `s2t/docs/main.tex` / `corpus/Трактат 1 том.pdf`; S2T должна быть
+  определена как метод и корпус исследований, а версия II.C — как отдельный
+  исторический кандидат с пониженным поздними аудитами статусом.
+- **Compliance check:** проверены титульные строки всех шести томов и
+  существование указанных исходников. Полный структурный аудит `557` страниц
+  не нашёл нарушений метаблоков, повторяющихся идентификаторов или сирот;
+  после исправления двух старых ссылок все `3359` распознанные Obsidian-ссылки
+  разрешаются. `git diff --check` проходит. Исходные TeX/PDF, гейты, аудиты и
+  результаты не изменялись.
+- Изменённые файлы: `wiki/sources/tome1-main.md`,
+  `wiki/sources/s2t-research-program.md`,
+  `wiki/syntheses/treatise-volume-systematics.md`,
+  `wiki/concepts/s2t-reinterpretation.md`, `wiki/sources/research-catalog.md`,
+  `wiki/lints/2026-08-22-tome1-s2t-navigation-lint.md`,
+  `wiki/questions/version6-partial-isometry-rank-stratum-selection-gate.md`,
+  `wiki/questions/version5-projector-superconnection-common-scale-gate.md`,
+  `wiki/index.md`, `README.md`, `GLOSSARY.md`, `wiki/log.md`.
+
+## [2026-08-22] maintenance | Нормализация имён и путей Тома I
+
+- **Problem:** после смысловой идентификации Том I оставался единственным
+  томом с неструктурным именем `main.tex`; PDF имели три несогласованных имени,
+  а wiki-паспорт сохранял идентификатор `tome1-main`.
+- **Search for solution:** исходник перемещён через `git mv` в
+  `s2t/docs/tome1_s2t_research_program.tex`, wiki-паспорт — в
+  `wiki/sources/tome1-s2t-research-program.md`. Полная PDF-сборка получила имя
+  `corpus/tome1_s2t_research_program.pdf`. Ранняя 12-страничная версия
+  размещена как `corpus/tome1_s2t_research_program_early_build.pdf`, а её
+  идентичная исходная копия — как
+  `s2t/assets/tome1_s2t_research_program_early_source.pdf`. Обновлены сборочные
+  команды, действующие wiki-ссылки, README, глоссарий, схема репозитория,
+  технический анализ и структурные аудиты. Старые записи журнала не менялись.
+- **Expected result:** все шесть томов должны использовать схему
+  `tomeN_s2t_<topic>.tex`; канонический исходник и PDF Тома I должны находиться
+  по предсказуемым путям, а старые имена — отсутствовать вне исторического
+  контекста.
+- **Compliance check:** `latexmk` успешно собрал новый исходник в PDF объёмом
+  `113` страниц; каноническая копия имеет SHA-256
+  `c35ccf4f9e8ce748342b99e92d5dd441f717628b27be7eeda5f773673fe146c5`.
+  Два ранних PDF имеют одинаковый SHA-256
+  `c50ed35408d80a33fc6120d3e15a726e79fd91c931a9926675fc2b93af04ff5`.
+  Старые пять путей отсутствуют. Вики содержит `557` страниц, нарушений
+  метаданных, повторов, битых ссылок и сирот нет; все `3360` Obsidian-ссылок
+  разрешаются. Изменённые JSON разбираются, Python-аудит компилируется,
+  `git diff --check` проходит.
+- Изменённые файлы: `AGENTS.md`, `README.md`, `GLOSSARY.md`,
+  `s2t/docs/BUILD.md`, `s2t/docs/tome1_s2t_research_program.tex`,
+  `s2t/docs/technical_s2t_analysis.tex`,
+  `s2t/gates/project_preservation_gate.tex`,
+  `s2t/results/s2t_project_preservation_results.json`,
+  `s2t/results/s2t_direction_reaudit_20260714_results.json`,
+  `s2t/results/s2t_v4_project_retrospective_entropy_measure_gate_results.json`,
+  `wiki/sources/tome1-s2t-research-program.md`,
+  `wiki/sources/s2t-research-program.md`,
+  `wiki/syntheses/treatise-volume-systematics.md`, `wiki/index.md`,
+  `wiki/lints/2026-08-22-tome1-s2t-navigation-lint.md` и связанные страницы.
+
+## [2026-08-22] maintenance | Prism-safe коррекция миграции Тома I
+
+- **Problem:** повторная проверка показала, что Prism откатывает операции с
+  игнорируемыми PDF и обнуляет крупный новый untracked TeX после физического
+  перемещения. Поэтому предыдущая схема с переименованием бинарных файлов и
+  переносом полного `main.tex` не является устойчивой в этой среде.
+- **Search for solution:** физическое тело восстановлено в существующем
+  tracked-файле `s2t/docs/main.tex`. Системное имя реализовано маленьким
+  текстовым входом `s2t/docs/tome1_s2t_research_program.tex`, содержащим
+  `\input{main.tex}`. Старый wiki-идентификатор `tome1-main` сохранён как
+  redirect. PDF не перемещались и не создавались; в навигации закреплены
+  существующие пути `corpus/Трактат 1 том.pdf`, `corpus/main-44.pdf` и
+  `s2t/assets/main-4.pdf`. Ссылки исторических аудитов возвращены к физическим
+  исходникам.
+- **Expected result:** Prism должен сохранять большой tracked-текст и все
+  существующие бинарные артефакты без отката, а единообразное имя Тома I
+  должно работать как лёгкий текстовый вход и wiki-паспорт.
+- **Compliance check:** `main.tex` содержит `512363` байта, одну декларацию
+  документа и один `\end{document}`; wrapper содержит `308` байт и подключает
+  `main.tex`. Все три существующих PDF найдены, ссылок на отсутствующие новые
+  PDF-пути вне исторического журнала нет. Вики содержит `558` страниц;
+  проверены `3362` Obsidian-ссылки, нарушений метаданных, дубликатов, битых
+  ссылок и сирот нет. JSON разбираются, Python-аудит компилируется,
+  `git diff --check` проходит. Staging и commit не выполнялись; бинарные файлы
+  не создавались.
+- Изменённые файлы: `AGENTS.md`, `README.md`, `GLOSSARY.md`,
+  `s2t/docs/BUILD.md`, `s2t/docs/tome1_s2t_research_program.tex`,
+  `wiki/sources/tome1-s2t-research-program.md`,
+  `wiki/sources/tome1-main.md`, `wiki/sources/s2t-research-program.md`,
+  `wiki/syntheses/treatise-volume-systematics.md`, `wiki/index.md`,
+  `wiki/lints/2026-08-22-tome1-s2t-navigation-lint.md`, `wiki/log.md`.
+
+## [2026-08-22] maintenance | Полная текстовая копия Тома I для Prism
+
+- **Problem:** Prism считает ключевой `s2t/docs/main.tex` пустым в render-слое
+  и отклоняет попытку восстановления как добавление примерно `3700` строк в
+  ключевой файл (`Invalid conflict-marker diff`).
+- **Search for solution:** ключевой путь оставлен без diff относительно
+  render-слоя. Сохранённое tracked-содержимое Тома I скопировано в отдельный
+  текстовый файл `s2t/docs/tome1_s2t_research_program.tex`; бинарные PDF не
+  копировались и не изменялись. Навигация переведена на новую полную копию.
+- **Expected result:** Prism должен видеть только добавление нового текстового
+  документа, не пытаясь восстановить или изменить ключевой `main.tex`.
+- **Compliance check:** копия содержит `3705` строк и `512490` байт, одну
+  декларацию документа, титул и один `\end{document}`. Staging, commit и
+  бинарные операции не выполнялись.
+- Изменённые файлы: `s2t/docs/tome1_s2t_research_program.tex`,
+  `wiki/sources/tome1-s2t-research-program.md`, `wiki/sources/tome1-main.md`,
+  `wiki/sources/s2t-research-program.md`,
+  `wiki/syntheses/treatise-volume-systematics.md`, `wiki/index.md`,
+  `README.md`, `GLOSSARY.md`, `AGENTS.md`, `wiki/log.md`.
+
+## [2026-08-22] synthesis | Начата сегментная редакция Тома I
+
+- **Problem:** монолитный Том I нельзя безопасно переносить одним diff; кроме
+  того, ранний текст содержит смешанную русско-английскую терминологию.
+- **Search for solution:** создан короткий сборщик и первый отдельный сегмент.
+  Введение переписано по правилам русскоязычного трактата; различены
+  мотивация, гипотеза, математическая конструкция и физический результат.
+- **Expected result:** каждый следующий пакет должен добавлять небольшой
+  самостоятельный сегмент без изменения ключевых файлов и бинарных артефактов.
+- **Compliance check:** первый пакет содержит `166` строк и около `11` КБ;
+  обязательные окружения сбалансированы, лишние англоязычные термины из
+  контрольного списка отсутствуют. PDF, staging и commit не создавались.
+- Изменённые файлы: `s2t/docs/tome1_s2t_research_program.tex`,
+  `s2t/docs/tome1/00_introduction_and_research_program.tex`,
+  `wiki/sources/tome1-s2t-research-program.md`,
+  `wiki/questions/tome1-segmented-reconstruction.md`, `wiki/index.md`,
+  `wiki/log.md`.
+
+## [2026-08-22] synthesis | Инвариантное ядро и режимы Тома I
+
+- **Problem:** после общей постановки требовалось отделить несущие элементы
+  программы от временного аппарата и определить проверяемое отнесение
+  наблюдаемых к структурным режимам.
+- **Search for solution:** введены минимальное ядро, проверка исключением,
+  нормированные секторные вклады, пять режимов, предварительная карта
+  `(Xi,Upsilon)` и пятишаговое правило атрибуции.
+- **Expected result:** карта должна использоваться как методический
+  классификатор, не выдавая свободную нормировку за физическую наблюдаемую.
+- **Compliance check:** новый сегмент содержит `139` строк и около `9.6` КБ;
+  семь окружений сбалансированы, нежелательные англицизмы из контрольного
+  списка отсутствуют, `git diff --check` проходит. PDF не создавался.
+- Изменённые файлы:
+  `s2t/docs/tome1_s2t_research_program.tex`,
+  `s2t/docs/tome1/01_invariant_kernel_and_structural_regimes.tex`,
+  `wiki/sources/tome1-s2t-research-program.md`,
+  `wiki/questions/tome1-segmented-reconstruction.md`, `wiki/log.md`.
+
+## [2026-08-22] synthesis | Реконструкция наблюдаемых и отбор моделей
+
+- **Problem:** требовалось превратить секторную карту в воспроизводимую
+  процедуру и исключить выбор модели только по численному совпадению.
+- **Search for solution:** введены устойчивое ядро данных, первичная
+  атрибуция, реконструкция минимальной структуры, проверка деформациями,
+  межъязыковая согласованность и пять критериев сравнения моделей.
+- **Expected result:** модель допускается только при заранее фиксированных
+  входах, нормировке, контрольных перестановках и критерии провала.
+- **Compliance check:** сегмент содержит `147` строк и около `9` КБ; восемь
+  окружений сбалансированы, контрольный список англицизмов пуст,
+  `git diff --check` проходит. PDF не создавался.
+- Изменённые файлы:
+  `s2t/docs/tome1_s2t_research_program.tex`,
+  `s2t/docs/tome1/02_observable_reconstruction_and_model_selection.tex`,
+  `wiki/sources/tome1-s2t-research-program.md`,
+  `wiki/questions/tome1-segmented-reconstruction.md`, `wiki/log.md`.
+
+## [2026-08-22] synthesis | Крупный трёхглавный блок Тома I
+
+- **Problem:** мелкие сегменты недостаточно ясно показывали книжную структуру
+  нового тома; требовались более крупные содержательные блоки и главы.
+- **Search for solution:** сборщик переведён на класс `report`, прежние
+  верхние разделы повышены до глав. Новый файл объединяет главы о допустимых
+  деформациях, структурной динамике и редукционном сжатии.
+- **Expected result:** Том I должен читаться как последовательность глав, при
+  этом каждый добавляемый файл остаётся приемлемым для Prism.
+- **Compliance check:** новый блок содержит `160` строк, около `8.9` КБ и три
+  главы; десять окружений сбалансированы, контрольный список англицизмов пуст,
+  `git diff --check` проходит. Сборщик подключает четыре сегмента.
+- Изменённые файлы: `s2t/docs/tome1_s2t_research_program.tex`,
+  `s2t/docs/tome1/00_introduction_and_research_program.tex`,
+  `s2t/docs/tome1/01_invariant_kernel_and_structural_regimes.tex`,
+  `s2t/docs/tome1/02_observable_reconstruction_and_model_selection.tex`,
+  `s2t/docs/tome1/03_deformations_dynamics_and_compression.tex`,
+  `wiki/sources/tome1-s2t-research-program.md`,
+  `wiki/questions/tome1-segmented-reconstruction.md`, `wiki/log.md`.
+
+## [2026-08-22] synthesis | Пробный цикл и граница строгой теории
+
+- **Problem:** требовалось показать полный ход применения протокола и точно
+  отделить локальный успех модели от замыкания всей теории.
+- **Search for solution:** добавлены четыре главы о пробном цикле, уровнях
+  опровержения, многоклассовой иерархии моделей и необходимых уровнях строгой
+  теории.
+- **Expected result:** следующий том получает определения, реестр статусов,
+  критерии провала и запрет скрытых входов, а не только общую мотивацию.
+- **Compliance check:** блок содержит `180` строк, около `11.2` КБ и четыре
+  главы; восемь окружений сбалансированы, контрольный список англицизмов пуст,
+  `git diff --check` проходит. PDF не создавался.
+- Изменённые файлы: `s2t/docs/tome1_s2t_research_program.tex`,
+  `s2t/docs/tome1/04_trial_cycle_hierarchy_and_theory_boundary.tex`,
+  `wiki/sources/tome1-s2t-research-program.md`,
+  `wiki/questions/tome1-segmented-reconstruction.md`, `wiki/log.md`.
+
+## [2026-08-22] synthesis | Статусы, аксиомы, леммы и квазидействие
+
+- **Problem:** требовалось сжать поздний формальный слой Тома I и отделить
+  методическую динамику от физического действия.
+- **Search for solution:** добавлены пять глав о статусах элементов,
+  выводимости классификаторов, минимальных аксиомах, леммах сохранения и
+  условном квазидействии.
+- **Expected result:** формальный каркас должен явно показывать, какие
+  утверждения являются гипотезами и чего не хватает до физического действия.
+- **Compliance check:** блок содержит `163` строки, около `9.8` КБ и пять глав;
+  шесть окружений сбалансированы, контрольный список англицизмов пуст,
+  `git diff --check` проходит. Сборщик подключает шесть сегментов. По
+  тематической ведомости перенесено `38` из `55` разделов, осталось `17`.
+- Изменённые файлы: `s2t/docs/tome1_s2t_research_program.tex`,
+  `s2t/docs/tome1/05_status_axioms_lemmas_and_quasi_action.tex`,
+  `wiki/sources/tome1-s2t-research-program.md`,
+  `wiki/questions/tome1-segmented-reconstruction.md`, `wiki/log.md`.
+
+## [2026-08-22] synthesis | Пробная реализация и режимные инварианты
+
+- **Problem:** требовалось сохранить предметные примеры раннего Тома I, не
+  выдавая полуколичественные показатели за физические наблюдаемые.
+- **Search for solution:** добавлены пять глав о пробной секторной реализации,
+  локальном операторном чтении, общей нормировке чувствительностей и
+  инвариантах `Xi`, `Upsilon`.
+- **Expected result:** режимные координаты используются только как
+  сравнительные показатели до вывода канонической метрики деформаций.
+- **Compliance check:** блок содержит `167` строк, около `9.2` КБ и пять глав;
+  восемь окружений сбалансированы, контрольный список англицизмов пуст,
+  `git diff --check` проходит. Перенесено `50` из `55` тематических разделов;
+  осталось `5` заключительных.
+- Изменённые файлы: `s2t/docs/tome1_s2t_research_program.tex`,
+  `s2t/docs/tome1/06_trial_realization_and_semiquantitative_invariants.tex`,
+  `wiki/sources/tome1-s2t-research-program.md`,
+  `wiki/questions/tome1-segmented-reconstruction.md`, `wiki/log.md`.
+
+## [2026-08-22] synthesis | Содержательный перенос Тома I завершён
+
+- **Problem:** оставалось перенести пять заключительных разделов и честно
+  зафиксировать итоговый статус первого тома после проверок последующих томов.
+- **Search for solution:** добавлены главы с иллюстративными схемами,
+  заключением, послесловием после Тома II, перспективой и окончательной
+  заморозкой статуса.
+- **Expected result:** новый Том I должен завершаться явным различением
+  закрытой методологии и открытого физического замыкания.
+- **Compliance check:** заключительный блок содержит `145` строк, около `8` КБ
+  и пять глав; восемь окружений сбалансированы, контрольный список англицизмов
+  пуст, `git diff --check` проходит. Всего создано `8` сегментов, `39` глав и
+  `1234` строки. Тематически перенесено `55` из `55` разделов; осталось `0`.
+- Изменённые файлы: `s2t/docs/tome1_s2t_research_program.tex`,
+  `s2t/docs/tome1/07_illustrations_conclusion_and_status_freeze.tex`,
+  `wiki/sources/tome1-s2t-research-program.md`,
+  `wiki/questions/tome1-segmented-reconstruction.md`, `wiki/log.md`.
+
+## [2026-08-22] lint | Языковая и структурная проверка Тома I
+
+- **Problem:** после сегментного переноса требовалось проверить язык,
+  иерархию заголовков и собираемость Тома I без создания бинарного файла.
+- **Search for solution:** проверены сборщик и восемь частей; прямые
+  подразделы повышены до разделов, добавлены оглавление и нумерация страниц,
+  в навигации «копия» заменена на «сегментную редакцию».
+- **Expected result:** первый том находится по каноническому имени, читается
+  как 39 глав с 96 разделами и проходит статическую проверку LaTeX.
+- **Compliance check:** `pdflatex -draftmode` завершён с кодом `0`,
+  `git diff --check` проходит, PDF и коммит не создавались. Постраничное
+  сравнение с архивным PDF оставлено внешней задачей.
+- Изменённые файлы: `s2t/docs/tome1_s2t_research_program.tex`,
+  `s2t/docs/tome1/*.tex`, `README.md`, `wiki/index.md`,
+  `wiki/sources/tome1-s2t-research-program.md`, `wiki/sources/tome1-main.md`,
+  `wiki/syntheses/treatise-volume-systematics.md`,
+  `wiki/questions/tome1-segmented-reconstruction.md`,
+  `wiki/lints/2026-08-22-tome1-language-and-structure-lint.md`, `wiki/log.md`.
+
+## [2026-08-22] synthesis | Доказательное сравнение TOE и UGSM
+
+- **Problem:** прежний протокол смешивал первичные документы, поздний архив и
+  вторичные тексты моста, а условная балльная сумма создавала ложную точность.
+- **Search for solution:** первичный `TOE.pdf` и аудит UGSM проверены по
+  исходному объекту, цепочке вывода, заморозке, контролям, опровержимости и
+  границе статуса. Отдельно учтена исправленная генеалогия `S3 x S1`.
+- **Expected result:** читатель видит, что TOE сильнее по широте, UGSM --- по
+  внутренней процедурной дисциплине, но ни один корпус не замкнут полностью и
+  их эквивалентность не доказана.
+- **Compliance check:** документ проходит `pdflatex -draftmode` без ошибок и
+  предупреждений; метаданные и ссылки вики проверены; PDF и коммит не
+  создавались.
+- Изменённые файлы: `s2t/docs/research_protocol_toe_ugsm.tex`,
+  `wiki/syntheses/toe-ugsm-bridge.md`,
+  `wiki/sources/toe-ugsm-comparison-protocol.md`,
+  `wiki/sources/toe-ugsm-unified-shadow-paper.md`, `wiki/index.md`,
+  `README.md`, `wiki/log.md`.
+
+## [2026-08-22] synthesis | Полное заключение Тома VI
+
+- **Problem:** финалу Тома VI недоставало единого разбора исходных ожиданий:
+  какие гипотезы подтвердились, какие сузились, какие были отменены и какие
+  вопросы остались открытыми после заморозки динамической ветви.
+- **Search for solution:** итоговый текст вынесен в самостоятельную часть
+  «Заключение»; сопоставлены цели всех четырёх частей, положительные и
+  отрицательные гейты, финальный контракт `R0--R6` и входные условия
+  следующей программы `P0--P6`. Добавлен отдельный аудит ожиданий по пяти
+  классам исхода.
+- **Expected result:** читатель получает полноценное заключение без смешения
+  строгих локальных результатов с недоказанным автономным рождением материи;
+  отменённые маршруты и оставшиеся вопросы названы явно.
+- **Compliance check:** основной файл собирается `latexmk` без фатальных
+  ошибок в PDF на `469` страниц; неопределённых ссылок и цитат нет,
+  `git diff --check` проходит. Имена гейтов, аудитов и результатов не менялись.
+- Изменённые файлы: `s2t/docs/tome6_s2t_matter_birth.tex`,
+  `s2t/docs/version6_final_conclusion_and_next_program.tex`,
+  `wiki/questions/version6-final-conclusion-and-next-program.md`,
+  `wiki/index.md`, `wiki/log.md`.

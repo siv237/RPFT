@@ -1,0 +1,50 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{xurl}
+\geometry{margin=2.3cm}
+\setlength{\emergencystretch}{2em}
+\graphicspath{{../assets/}}
+
+% Языковое правило Тома I: основной текст и заголовки пишутся по-русски.
+% Английское написание сохраняется только для имён файлов, программных
+% идентификаторов, общепринятых сокращений и библиографических названий.
+%
+% Безопасное для Prism правило сборки: содержательные части добавляются
+% отдельными файлами небольшими пакетами; этот файл остаётся коротким
+% сборщиком.
+
+\title{Трактат об устройстве мира\\
+Том I: постановка исследовательской программы\\
+и карта структурных режимов}
+\author{}
+\date{}
+
+\begin{document}
+\pagenumbering{roman}
+\hypersetup{pageanchor=false}
+\maketitle
+\clearpage
+\hypersetup{pageanchor=true}
+\setcounter{page}{1}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+\input{tome1/00_introduction_and_research_program.tex}
+\input{tome1/01_invariant_kernel_and_structural_regimes.tex}
+\input{tome1/02_observable_reconstruction_and_model_selection.tex}
+\input{tome1/03_deformations_dynamics_and_compression.tex}
+\input{tome1/04_trial_cycle_hierarchy_and_theory_boundary.tex}
+\input{tome1/05_status_axioms_lemmas_and_quasi_action.tex}
+\input{tome1/06_trial_realization_and_semiquantitative_invariants.tex}
+\input{tome1/07_illustrations_conclusion_and_status_freeze.tex}
+
+\end{document}

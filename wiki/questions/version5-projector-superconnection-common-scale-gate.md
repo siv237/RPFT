@@ -14,7 +14,7 @@
 ## Links
 
 - [[version5-superconnection-skyrme-coefficient-gate]]
-- [[version5-ordinary-spectral-moment-map-no-go]]
+- [[version5-ordinary-spectral-moment-map-no-go-gate]]
 - [[version5-spatial-so3-superconnection-parent-trace-gate]]
 
 ## Source Notes

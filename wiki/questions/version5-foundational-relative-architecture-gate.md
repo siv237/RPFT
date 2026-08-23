@@ -80,4 +80,4 @@ non-tautological locality/gluing data.
 - `s2t/gates/version5_foundational_relative_architecture_gate.tex`
 - `s2t/audits/s2t_v5_foundational_relative_architecture_gate.py`
 - `s2t/results/s2t_v5_foundational_relative_architecture_gate_results.json`
-- `s2t/docs/main.tex`
+- `s2t/docs/tome1_s2t_research_program.tex`

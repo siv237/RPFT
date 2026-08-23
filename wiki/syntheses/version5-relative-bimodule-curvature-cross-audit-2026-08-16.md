@@ -53,7 +53,7 @@
    связывающей алгебры.
 4. [[version5-rank-one-tangent-junk-gate]] выводит этот угол как касательное
    пространство ранга один, а не как внешнее условие опоры.
-5. Ранний текст `s2t/docs/main.tex` требует понимать редукции как
+5. Ранний текст `s2t/docs/tome1_s2t_research_program.tex` требует понимать редукции как
    контролируемые проекции, сохраняющие идентичность общего источника, и
    отдельно предупреждает, что пространство допустимых наблюдаемых может
    требовать операционального слоя чтения.
@@ -142,7 +142,7 @@
 
 ## Исходные материалы
 
-- `s2t/docs/main.tex`
+- `s2t/docs/tome1_s2t_research_program.tex`
 - `s2t/gates/version4_family_defect_relative_auxiliary_moment_gate.tex`
 - `s2t/gates/version4_family_defect_degree_two_junk_gate.tex`
 - `s2t/gates/version5_modular_commutant_parent_correspondence_gate.tex`

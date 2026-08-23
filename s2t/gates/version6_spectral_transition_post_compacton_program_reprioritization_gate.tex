@@ -76,7 +76,9 @@ $2/3$, тогда как требуется $0.9121665963\ldots$.
 следующего теста.
 
 \begin{center}
-\begin{tabular}{p{0.43\textwidth}p{0.14\textwidth}p{0.31\textwidth}}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.43\textwidth}
+                  >{\raggedright\arraybackslash}p{0.14\textwidth}
+                  >{\raggedright\arraybackslash}p{0.31\textwidth}}
 \toprule
 Маршрут & Счёт & Решение \\
 \midrule
@@ -97,7 +99,7 @@ Real-парный радиационный мост охлаждения & $7/7$
 \section{Новая карта ролей}
 
 Следующий тест обязан использовать четыре объекта с разными функциями:
-\begin{enumerate}
+\begin{enumerate}\raggedright
  \item проекторное состояние $R$ --- охлаждаемая система и параметр
  порядка;
  \item глобально нейтральная Real-пара --- допустимая структура перехода,
@@ -122,7 +124,7 @@ Real-парный радиационный мост охлаждения & $7/7$
 Гейт
 \path{version6_spectral_transition_real_pair_radiative_cooling_parent_gate}
 должен вывести, а не предположить, шесть утверждений.
-\begin{enumerate}
+\begin{enumerate}\raggedright
  \item Суммарный по Real-паре радиационный ток должен быть чётным и не
  сокращаться в полном KO6-завершении.
  \item Должен существовать один закон сохранения энергии для $R$,

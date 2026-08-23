@@ -6,7 +6,10 @@ import subprocess
 from pathlib import Path
 
 
-CORE_FILES = [Path("main.tex"), Path("tome2_s2t_spectral_closure.tex")]
+CORE_FILES = [
+    Path("main.tex"),
+    Path("tome2_s2t_spectral_closure.tex"),
+]
 
 RECENT_ARTIFACTS = [
     "s2t_family_factor_operator_audit.py",

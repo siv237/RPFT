@@ -2,7 +2,7 @@
 
 > Status: working
 > Type: build
-> Updated: 2026-08-15
+> Updated: 2026-08-22
 
 The Prism workspace preserves Markdown and TeX sources but may discard ignored
 helper files such as an untracked root `Makefile`. Build the documents directly
@@ -13,7 +13,7 @@ from the repository root with `latexmk -cd`; `s2t_paths.tex` supplies the
 
 ```bash
 for doc in \
-  main \
+  tome1_s2t_research_program \
   tome2_s2t_spectral_closure \
   tome3_s2t_parent_action \
   tome4_s2t_observed_reconstruction \
@@ -28,7 +28,7 @@ done
 
 ```bash
 for doc in \
-  main \
+  tome1_s2t_research_program \
   tome2_s2t_spectral_closure \
   tome3_s2t_parent_action \
   tome4_s2t_observed_reconstruction \

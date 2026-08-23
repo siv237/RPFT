@@ -1,27 +1,51 @@
-# TOE UGSM Bridge
+# Мост TOE--UGSM
 
 > Status: working
 > Type: synthesis
-> Updated: 2026-07-09
+> Updated: 2026-08-22
 
 ## Summary
 
-The bridge compares TOE as a correlation-oriented architecture with UGSM as a spectral-geometric formalism. The current research direction treats both as possible shadows of a common operator/geometric source rather than as isolated theories.
+TOE и UGSM используют общий операторно-спектральный язык, поэтому гипотеза
+общего источника математически осмысленна. Однако текущие материалы не
+доказывают эквивалентность теорий: геометрия `S3 x S1` входит в мост со стороны
+UGSM и не выводится первичным `TOE.pdf`.
 
-## Key Points
+## Сравнительный статус
 
-- The bridge is anchored by `s2t/docs/toe_ugsm_unified_shadow_paper.tex`.
-- The project currently reports repeated support from scalar, Dirac-type, spin-holonomy, gauge-holonomy, and enriched-sector checks.
-- Stable numerical/geometric scales such as `4π^3`, `π^2`, and `π` are treated as bridge evidence, pending deeper derivation.
-- The bridge remains a working hypothesis, not a completed proof.
+- TOE сильнее по широте объединительной архитектуры и числу внешних
+  проверяемых следствий.
+- UGSM сильнее по явности внутреннего вычислительного протокола: есть
+  заморозка формул, разделение обучающего и контрольного наборов,
+  перестановочный контроль и информационные критерии.
+- Статус UGSM `blind-validated (operational)` является внутренним результатом
+  развивавшегося документа, а не независимой внешней слепой проверкой.
+- Формулировки TOE о строгом выводе требуют отдельной проверки полноты
+  предпосылок, выбора носителя и независимой воспроизводимости.
+- Ни один корпус пока не достигает полного физического замыкания.
+
+## Статус общего моста
+
+Совпадение масштабов `4*pi^3`, `pi^2` и `pi` в выбранном тепловом следе
+поддерживает совместимость геометрии UGSM с операторным чтением TOE. Оно не
+доказывает единственность носителя, глобальное совпадение операторов или вывод
+всех наблюдаемых без дополнительных предпосылок. Последующие проверки
+дираковского и голономных секторов усиливают рабочую гипотезу, но не превращают
+её в теорему.
 
 ## Links
 
-- [[ugsm]] — spectral-geometric side of the bridge.
-- [[toe]] — correlation/architecture side of the bridge.
-- [[spectral-correlational-source]] — proposed common origin.
-- [[numerical-audits]] — evidence and stress-test source cluster.
+- [[toe-ugsm-comparison-protocol]] — доказательная матрица прямого сравнения.
+- [[toe-ugsm-unified-shadow-paper]] — основной интеграционный документ.
+- [[toe]] — корреляционно-операторная сторона.
+- [[ugsm]] — спектрально-геометрическая сторона.
+- [[spectral-correlational-source]] — кандидат на общий источник.
+- [[zero-prompt-toe-carrier-trace-2026-08-11]] — происхождение диагностической
+  геометрии моста.
 
 ## Source Notes
 
-- Source paths: `s2t/docs/toe_ugsm_unified_shadow_paper.tex`, `s2t/docs/toe_ugsm_common_shadow_bridge.tex`, `s2t/docs/toe_ugsm_shadow_audit_report.tex`, `s2t/docs/toe_vs_ugsm_comparison.tex`, `s2t/docs/toe_vs_paper6_comparison.tex`.
+- `s2t/17705966/TOE.pdf`
+- `s2t/assets/ugsm_dynamics_audit-3.pdf`
+- `s2t/docs/research_protocol_toe_ugsm.tex`
+- `s2t/docs/toe_ugsm_unified_shadow_paper.tex`

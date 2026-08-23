@@ -54,7 +54,7 @@ exterior-carrier даёт `2e2(R)`, тогда как полный самосо�
 - [[version6-self-consistent-state-bridge-purification-gate]]
 - [[partial-isometry-morse-bott-rank-selection-literature-2026]]
 - [[version6-real-qutrit-purification-transition-gate]]
-- [[version4-pati-salam-rank-selector-archaeology-gate]]
+- [[pati-salam-rank-selector-archaeology]]
 - [[version5-rank-one-tangent-junk-gate]]
 - [[version5-equivariant-boundary-sector-selection-gate]]
 - [[version6-matter-birth-program]]
