@@ -1,0 +1,158 @@
+\chapter{Минимальный смешивающий коннектор на фиксированном \texorpdfstring{$H_{15}$}{H15}}
+\label{ch:v7-minimal-h15-mixed-connector-admission-gate}
+
+\section{Вопрос и строгий вход}
+
+Предыдущие гейты доказали, что физическая вторая степень и все положительные
+односледовые моменты текущего оператора распадаются по кромкам $u,d,e$.
+Поэтому новый потенциал от того же блочного дерева не допускается. Требуется
+классифицировать минимальную новую стрелочную структуру, впервые замыкающую
+смешанный цикл.
+
+Фиксируем фермионные вершины заряженного $H_{15}$:
+\begin{equation}
+ L=\{Q_L,L_L\},\qquad R=\{u_R,d_R,e_R\},
+\end{equation}
+и существующие рёбра
+\begin{equation}
+ E_0=\{Q_Lu_R,Q_Ld_R,L_Le_R\}.
+ \label{eq:v7-existing-h15-forest}
+\end{equation}
+Это лес без четырёхцикла. Старый гейт Тома IV установил, что в
+бимодульном квадрате первым order-one-совместимым циклом может быть
+четырёхкромочный прямоугольник. Здесь это используется только как
+предклассификация: полный Real/order-one тест конкретного расширения ещё
+не выполнен.
+
+\section{Полный перебор прямоугольных дополнений}
+
+На фиксированных вершинах отсутствуют ровно три рёбра:
+\begin{equation}
+ E_{\rm miss}=\{L_Lu_R,L_Ld_R,Q_Le_R\}.
+\end{equation}
+Одной новой стрелки недостаточно. Минимум равен двум, и полный перебор даёт
+ровно три дополнения:
+\begin{align}
+ \{L_Lu_R,L_Ld_R\}&:\quad \{u_R,d_R\},\nonumber\\
+ \{L_Lu_R,Q_Le_R\}&:\quad \{u_R,e_R\},
+ \label{eq:v7-three-minimal-rectangles}\\
+ \{L_Ld_R,Q_Le_R\}&:\quad \{d_R,e_R\}.\nonumber
+\end{align}
+Правая пара обозначает два столбца соответствующего $K_{2,2}$.
+
+\section{Калибровочная типизация}
+
+Используем стандартные представления
+\begin{align}
+ Q_L&\sim(\mathbf3,\mathbf2)_{1/6},&
+ L_L&\sim(\mathbf1,\mathbf2)_{-1/2},\nonumber\\
+ u_R&\sim(\mathbf3,\mathbf1)_{2/3},&
+ d_R&\sim(\mathbf3,\mathbf1)_{-1/3},&
+ e_R&\sim(\mathbf1,\mathbf1)_{-1}.
+\end{align}
+Для вершины $\overline\psi_L S\psi_R$ калибровочная инвариантность требует
+\begin{equation}
+ Y_S=Y_L-Y_R.
+ \label{eq:v7-scalar-hypercharge-rule}
+\end{equation}
+Поэтому недостающие рёбра имеют типы
+\begin{align}
+ L_Lu_R&:\quad S\sim(\overline{\mathbf3},\mathbf2)_{-7/6},\nonumber\\
+ L_Ld_R&:\quad S\sim(\overline{\mathbf3},\mathbf2)_{-1/6},
+ \label{eq:v7-missing-edge-scalars}\\
+ Q_Le_R&:\quad S\sim(\mathbf3,\mathbf2)_{7/6}.\nonumber
+\end{align}
+Первое и третье являются сопряжёнными чтениями одного комплексного
+мультиплета
+\begin{equation}
+ R_2\sim(\mathbf3,\mathbf2)_{7/6}.
+ \label{eq:v7-r2-candidate}
+\end{equation}
+Он поддерживает два блока
+\begin{equation}
+ \overline Q_LR_2e_R,
+ \qquad
+ \overline u_RR_2^Ti\sigma_2L_L+\mathrm{h.c.}
+ \label{eq:v7-r2-two-edges}
+\end{equation}
+и единственный замыкает минимальный прямоугольник $\{u_R,e_R\}$ одним
+комплексным полем. Два других дополнения требуют одновременно $R_2$ и
+независимый $\widetilde R_2\sim(\mathbf3,\mathbf2)_{1/6}$.
+
+\section{Почему второй обычный Хиггс не решает этот гейт}
+
+Второй дублет $(\mathbf1,\mathbf2)_{1/2}$ может дать независимые поля на
+уже существующих рёбрах, но не меняет $E_0$, не создаёт отсутствующую
+матричную единицу между метками $u,d,e$ и не замыкает $K_{2,2}$. Это
+отдельная расширенная скалярная ветвь, а не требуемый смешанный коннектор.
+
+\section{Литературная и физическая граница}
+
+Диаграммная классификация конечных спектральных троек связывает вершины с
+хиральными калибровочными мультиплетами, а стрелки --- с юкавскими блоками
+\cite{v7connector-krajewski}. Лептокварковые блоки в ранней NCG-модели
+появлялись после отказа от $S^0$-реальности, причём конкретная реализация
+не прошла феноменологические ограничения \cite{v7connector-paschke}.
+Clifford-расширение также порождает скаляры одновременно со слабым и
+цветовым индексами \cite{v7connector-kurkov}. Двуххиггсовская NCG-модель
+существует как отдельная архитектура, но сама по себе не создаёт нужный
+кварк-лептонный блок \cite{v7connector-jimenez}.
+
+Следовательно, \eqref{eq:v7-r2-candidate} --- единственный графово
+минимальный кандидат на прежнем фермионном наборе, но не элемент текущего
+одноформенного бимодуля $\mathbb C^3$. До физического допуска необходимы:
+\begin{enumerate}
+ \item полный тест первого порядка и Real/$J$-совместимости;
+ \item вывод обоих блоков \eqref{eq:v7-r2-two-edges} одной флуктуацией;
+ \item цветосохраняющий вакуум полного спектрального действия;
+ \item аудит недопустимых фермионных и барионных каналов;
+ \item семейно-чувствительное смешанное слово и полный гессиан.
+\end{enumerate}
+
+\begin{theorem}[Минимальность смешанного кандидата]
+На фиксированных фермионных вершинах заряженного $H_{15}$ первый
+четырёхкромочный смешанный цикл требует не менее двух новых рёбер. Существует
+ровно три минимальных дополнения. Единственное дополнение одним комплексным
+калибровочным мультиплетом замыкает пару $u_R,e_R$ посредством
+$R_2\sim(\mathbf3,\mathbf2)_{7/6}$ и его сопряжения.
+\end{theorem}
+
+\begin{nogocriterion}[Классификация не равна допуску]
+$R_2$ не принадлежит неизменённому родителю и не считается выведенным
+полем. Пока не пройдены Real, первое условие, спектральное действие и
+цветовой вакуум, это только классификация минимального расширения.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item четырёхцикл в текущем $H_{15}$: \textbf{нет};
+ \item минимальное число новых рёбер: \textbf{два};
+ \item минимальных дополнений: \textbf{три};
+ \item одно-мультиплетное дополнение: \textbf{единственно};
+ \item его тип: \textbf{$R_2=(\mathbf3,\mathbf2)_{7/6}$};
+ \item второй обычный Хиггс замыкает граф: \textbf{нет};
+ \item $R_2$ содержится в текущем модуле: \textbf{нет};
+ \item физический допуск: \textbf{условно открыт}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_minimal_h15_mixed_connector_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7connector-krajewski}
+T.~Krajewski, \emph{Classification of Finite Spectral Triples},
+Journal of Geometry and Physics 28 (1998), 1--30; arXiv:hep-th/9701081.
+\bibitem{v7connector-paschke}
+M.~Paschke, F.~Scheck, A.~Sitarz,
+\emph{Can (noncommutative) geometry accommodate leptoquarks?},
+Physical Review D 59 (1999), 035003; arXiv:hep-th/9709009.
+\bibitem{v7connector-kurkov}
+M.~A.~Kurkov, F.~Lizzi,
+\emph{Clifford Structures in Noncommutative Geometry and the Extended Scalar Sector},
+Physical Review D 97 (2018), 085024; arXiv:1801.00260.
+\bibitem{v7connector-jimenez}
+F.~Jimenez, D.~Restrepo, A.~Rivera,
+\emph{Type-II two-Higgs-doublet model in noncommutative geometry},
+arXiv:2202.04222.
+\end{thebibliography}

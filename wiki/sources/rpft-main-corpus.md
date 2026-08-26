@@ -1,12 +1,18 @@
 # RPFT Main Corpus
 
-> Status: draft
+> Status: working
 > Type: source
-> Updated: 2026-07-09
+> Updated: 2026-08-25
 
 ## Summary
 
-`RPFT-main/` is the broad markdown corpus for the RPFT research program. It contains rigorous derivations, English variants, deductive-logic chapters, exploratory notes, older drafts, and AI prompts.
+`s2t/RPFT-main/` is a snapshot of the broad pre-tome RPFT corpus. It contains
+rigorous derivations, English variants, deductive-logic chapters, exploratory
+notes, older drafts, and AI prompts. It is mostly a mirror of the dated
+`архив-2025-2026/`, not an independent evidential corpus.
+
+Exact hash comparison found `127` archive mirrors among `133` files. The six
+exceptions are documented in [[pre-tome-formula-genealogy]].
 
 ## Major Branches
 
@@ -24,5 +30,7 @@
 
 ## Source Notes
 
-- Source path: `RPFT-main/`.
-- Status note: needs a structured ingest by branch, not all at once.
+- Source path: `s2t/RPFT-main/`.
+- Canonical chronological source: `архив-2025-2026/`.
+- Formula occurrence index: [[pre-tome-formula-source-index]].
+- Formula genealogy and current statuses: [[pre-tome-formula-genealogy]].

@@ -1,0 +1,86 @@
+{
+  "gate": "version7_chiral_hodge_index_instability_gate",
+  "chiral_packet": {
+    "left_complex_dimension": 8,
+    "right_complex_dimension": 7,
+    "total_complex_dimension": 15,
+    "dimension_difference": 1,
+    "full_real_tangent_dimension": 112
+  },
+  "action": {
+    "zero_value": 1.0,
+    "minimum_lower_bound": 0.06666666666666667,
+    "maximum_singular_value_formula_residual": 5.115907697472721e-13
+  },
+  "zero_hessian": {
+    "expected_eigenvalue": -0.5333333333333333,
+    "minimum_finite_difference_eigenvalue": -0.5333333330526102,
+    "maximum_finite_difference_eigenvalue": -0.5333333330526102,
+    "maximum_residual": 2.8072311142324224e-10,
+    "negative_direction_count": 112,
+    "zero_direction_count": 0
+  },
+  "physical_edge_minimum": {
+    "rank": 7,
+    "kernel_complex_dimension": 1,
+    "singular_values": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "action": 0.06666666666666667,
+    "source_projector_residual": 0.0,
+    "target_identity_residual": 0.0,
+    "neutrino_basis_vector_residual": 0.0
+  },
+  "radial_path": [
+    {
+      "t": 0.0,
+      "numeric": 1.0,
+      "analytic": 1.0,
+      "residual": 0.0
+    },
+    {
+      "t": 0.25,
+      "numeric": 0.8869791666666667,
+      "analytic": 0.8869791666666667,
+      "residual": 0.0
+    },
+    {
+      "t": 0.5,
+      "numeric": 0.5916666666666667,
+      "analytic": 0.5916666666666667,
+      "residual": 0.0
+    },
+    {
+      "t": 1.0,
+      "numeric": 0.06666666666666667,
+      "analytic": 0.06666666666666667,
+      "residual": 0.0
+    },
+    {
+      "t": 1.5,
+      "numeric": 1.525,
+      "analytic": 1.525,
+      "residual": 0.0
+    }
+  ],
+  "contract_update": {
+    "stationary_zero": "pass",
+    "negative_zero_hessian": "pass",
+    "bounded_quartic_saturation": "pass",
+    "rank_seven_minimum": "pass",
+    "single_kernel_line": "pass",
+    "full_affine_family_lift": "open",
+    "physical_particle_identification": "not_claimed"
+  },
+  "verdict": {
+    "chiral_core": "positive_candidate",
+    "full_tome7_parent": "not_yet_closed",
+    "next_gate": "canonical lift from E_aff tensor Y_phys to the H15 odd operator"
+  }
+}

@@ -122,7 +122,7 @@ K_min = (S, I(S), R_type, Q_sel),
 ## Links
 
 - [[tome1-main]] — совместимый старый идентификатор страницы.
-- [[treatise-volume-systematics]] — место Тома I в серии I–VI.
+- [[treatise-volume-systematics]] — место Тома I в серии I–VII.
 - [[s2t-research-program]] — где находится и из чего состоит программа S2T.
 - [[tome1-to-tome2-traceability]] — перенос тезисов первого тома во второй.
 - [[tome2-s2t-spectral-closure]] — первая техническая реализация программы.

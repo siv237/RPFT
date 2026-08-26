@@ -1,0 +1,76 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{microtype}
+\usepackage{etoolbox}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{xurl}
+\geometry{margin=2.3cm}
+\setlength{\emergencystretch}{2em}
+\makeatletter
+\patchcmd{\l@chapter}{1.5em}{2.0em}{}{}
+\makeatother
+\input{s2t_paths.tex}
+\graphicspath{{../assets/}}
+
+\newtheorem{definition}{Определение}[chapter]
+\newtheorem{axiom}{Аксиома}[chapter]
+\newtheorem{lemma}{Лемма}[chapter]
+\newtheorem{proposition}{Предложение}[chapter]
+\newtheorem{theorem}{Теорема}[chapter]
+\theoremstyle{remark}
+\newtheorem{remark}{Замечание}[chapter]
+\newtheorem{protocol}{Протокол}[chapter]
+\newtheorem{nogocriterion}{Критерий провала}[chapter]
+
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Str}{Str}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Hess}{Hess}
+
+% Языковое правило Тома VII: содержательный текст, заголовки, теоремы и
+% выводы пишутся по-русски. Английское написание сохраняется для имён файлов,
+% программных идентификаторов, библиографии и общепринятых сокращений.
+%
+% Входное правило Тома VII: никакая локализованная конфигурация не получает
+% физического имени до прохождения общего носителя, одного действия,
+% физического запуска и полного гессиана. Каждый новый гейт обязан сверяться
+% с запретами Томов V--VI и глобальным строгим реестром.
+
+\title{Трактат об устройстве мира\\
+Том VII: рангоизменяющий родитель,\\
+общий носитель и динамика перехода}
+\author{}
+\date{}
+
+\begin{document}
+\pagenumbering{roman}
+\hypersetup{pageanchor=false}
+\maketitle
+\clearpage
+\hypersetup{pageanchor=true}
+\setcounter{page}{1}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+\part{Допуск нового родителя}
+
+\input{version7_introduction_and_problem_statement.tex}
+\input{version7_rank_changing_superconnection_admission_gate.tex}
+\input{version7_full_physical_rank_field_hessian_gate.tex}
+\input{version7_chiral_hodge_index_instability_gate.tex}
+\input{version7_affine_physical_module_canonical_lift_gate.tex}
+\input{version7_corrected_vacuum_relative_edge_hessian_gate.tex}
+\input{version7_common_higgs_degree_two_cross_edge_gate.tex}
+\input{version7_quartic_cross_edge_invariant_admission_gate.tex}
+\input{version7_minimal_h15_mixed_connector_admission_gate.tex}
+
+\end{document}

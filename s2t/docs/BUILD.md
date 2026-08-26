@@ -18,6 +18,8 @@ for doc in \
   tome3_s2t_parent_action \
   tome4_s2t_observed_reconstruction \
   tome5_s2t_parent_architecture \
+  tome6_s2t_matter_birth \
+  tome7_s2t_rank_change_parent \
   toe_ugsm_unified_shadow_paper
 do
   latexmk -cd -pdf -interaction=nonstopmode -halt-on-error "s2t/docs/${doc}.tex"
@@ -33,6 +35,8 @@ for doc in \
   tome3_s2t_parent_action \
   tome4_s2t_observed_reconstruction \
   tome5_s2t_parent_architecture \
+  tome6_s2t_matter_birth \
+  tome7_s2t_rank_change_parent \
   toe_ugsm_unified_shadow_paper
 do
   latexmk -cd -C "s2t/docs/${doc}.tex"

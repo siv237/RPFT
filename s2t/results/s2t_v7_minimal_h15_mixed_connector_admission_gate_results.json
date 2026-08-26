@@ -1,0 +1,192 @@
+{
+  "gate": "version7_minimal_h15_mixed_connector_admission_gate",
+  "fixed_fermion_graph": {
+    "left_vertices": [
+      "Q_L",
+      "L_L"
+    ],
+    "right_vertices": [
+      "u_R",
+      "d_R",
+      "e_R"
+    ],
+    "existing_edges": [
+      "L_L->e_R",
+      "Q_L->d_R",
+      "Q_L->u_R"
+    ],
+    "missing_edges": [
+      "L_L->d_R",
+      "L_L->u_R",
+      "Q_L->e_R"
+    ],
+    "existing_graph_contains_four_cycle": false,
+    "current_edge_endomorphism_algebra": "C^3"
+  },
+  "order_one_cycle_preclassification": {
+    "minimum_cycle_length_from_prior_gate": 4,
+    "minimum_number_of_added_edges_on_fixed_vertices": 2,
+    "minimal_completions": [
+      {
+        "added_edges": [
+          "L_L->d_R",
+          "L_L->u_R"
+        ],
+        "added_scalar_representations": [
+          {
+            "edge": "L_L->d_R",
+            "representation_in_barL_S_R_convention": [
+              "3bar",
+              "2",
+              "-1/6"
+            ]
+          },
+          {
+            "edge": "L_L->u_R",
+            "representation_in_barL_S_R_convention": [
+              "3bar",
+              "2",
+              "-7/6"
+            ]
+          }
+        ],
+        "complex_scalar_multiplets": [
+          "R2=(3,2,7/6) up to conjugation",
+          "R2_tilde=(3,2,1/6) up to conjugation"
+        ],
+        "number_of_distinct_complex_scalar_multiplets": 2,
+        "completed_right_pair": [
+          "u_R",
+          "d_R"
+        ]
+      },
+      {
+        "added_edges": [
+          "L_L->d_R",
+          "Q_L->e_R"
+        ],
+        "added_scalar_representations": [
+          {
+            "edge": "L_L->d_R",
+            "representation_in_barL_S_R_convention": [
+              "3bar",
+              "2",
+              "-1/6"
+            ]
+          },
+          {
+            "edge": "Q_L->e_R",
+            "representation_in_barL_S_R_convention": [
+              "3",
+              "2",
+              "7/6"
+            ]
+          }
+        ],
+        "complex_scalar_multiplets": [
+          "R2=(3,2,7/6) up to conjugation",
+          "R2_tilde=(3,2,1/6) up to conjugation"
+        ],
+        "number_of_distinct_complex_scalar_multiplets": 2,
+        "completed_right_pair": [
+          "d_R",
+          "e_R"
+        ]
+      },
+      {
+        "added_edges": [
+          "L_L->u_R",
+          "Q_L->e_R"
+        ],
+        "added_scalar_representations": [
+          {
+            "edge": "L_L->u_R",
+            "representation_in_barL_S_R_convention": [
+              "3bar",
+              "2",
+              "-7/6"
+            ]
+          },
+          {
+            "edge": "Q_L->e_R",
+            "representation_in_barL_S_R_convention": [
+              "3",
+              "2",
+              "7/6"
+            ]
+          }
+        ],
+        "complex_scalar_multiplets": [
+          "R2=(3,2,7/6) up to conjugation"
+        ],
+        "number_of_distinct_complex_scalar_multiplets": 1,
+        "completed_right_pair": [
+          "u_R",
+          "e_R"
+        ]
+      }
+    ],
+    "number_of_minimal_edge_completions": 3
+  },
+  "scalar_multiplet_minimality": {
+    "one_complex_multiplet_completions": [
+      {
+        "added_edges": [
+          "L_L->u_R",
+          "Q_L->e_R"
+        ],
+        "added_scalar_representations": [
+          {
+            "edge": "L_L->u_R",
+            "representation_in_barL_S_R_convention": [
+              "3bar",
+              "2",
+              "-7/6"
+            ]
+          },
+          {
+            "edge": "Q_L->e_R",
+            "representation_in_barL_S_R_convention": [
+              "3",
+              "2",
+              "7/6"
+            ]
+          }
+        ],
+        "complex_scalar_multiplets": [
+          "R2=(3,2,7/6) up to conjugation"
+        ],
+        "number_of_distinct_complex_scalar_multiplets": 1,
+        "completed_right_pair": [
+          "u_R",
+          "e_R"
+        ]
+      }
+    ],
+    "unique_one_complex_multiplet_completion": true,
+    "candidate": "R2=(3,2,7/6) plus Hermitian conjugate",
+    "candidate_edges": [
+      "Q_L->e_R",
+      "L_L->u_R"
+    ],
+    "second_standard_Higgs_adds_graph_edges": 0,
+    "second_standard_Higgs_completes_rectangle": false
+  },
+  "typing_boundary": {
+    "preserves_fixed_fermion_vertices_H15": true,
+    "preserves_current_physical_oneform_bimodule": false,
+    "already_present_in_current_finite_Dirac_operator": false,
+    "requires_new_coloured_bifundamental_oneform_sector": true,
+    "grading_L_to_R_compatible": true,
+    "strict_Real_first_order_admission_proved": false,
+    "colour_preserving_vacuum_proved": false,
+    "family_selector_proved": false
+  },
+  "verdict": {
+    "connector_admitted_in_unchanged_parent": false,
+    "graph_minimal_candidate_identified": true,
+    "graph_minimal_candidate": "one complex R2 multiplet completing the u-e rectangle",
+    "physical_model_admission": "conditional_open",
+    "next_gate": "R2 connector Real, first-order, spectral-action and colour-vacuum admission"
+  }
+}

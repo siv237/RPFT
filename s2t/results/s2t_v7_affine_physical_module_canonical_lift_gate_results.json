@@ -1,0 +1,98 @@
+{
+  "gate": "version7_affine_physical_module_canonical_lift_gate",
+  "original_carrier": {
+    "E_aff_complex_dimension": 12,
+    "E_rho_complex_dimension": 4,
+    "charged_edge_dimension": 3,
+    "claimed_complex_dimension": 144,
+    "verdict": "double_family_counting_without_global_tangent_bundle"
+  },
+  "S4_equivariance": {
+    "E_aff_invariant_subspace_dimension": 1,
+    "E_aff_invariant_functional_kernel_dimension": 11,
+    "averaging_projector_idempotence_residual": 2.0427054229791877e-16,
+    "canonical_coisometry_invariant_residual": 2.5445654036791317e-16,
+    "contracted_original_complex_kernel_dimension": 132,
+    "fixed_E_rho": {
+      "fixed_tangent_dimension": 4,
+      "noninvariant_image_count": 80,
+      "total_image_count": 96,
+      "maximum_subspace_residual": 0.8660254037844389,
+      "orbit_span_dimension": 8
+    }
+  },
+  "corrected_carrier": {
+    "formula": "E_aff tensor Lambda_ch",
+    "complex_multiplicity_dimension": 36,
+    "real_multiplicity_tangent_dimension": 72,
+    "canonical_embedding": "Hom(C4,V3) tensor Hom(HL,HR) -> Hom(C4 tensor HL,V3 tensor HR)"
+  },
+  "lifted_hodge_parent": {
+    "physical_source_rank": 24,
+    "target_rank": 21,
+    "rank_difference": 3,
+    "zero_action": 1.0,
+    "orthonormal_coordinate_hessian_eigenvalue": -0.17777777777777778,
+    "negative_corrected_multiplicity_directions": 72,
+    "minimum_lower_bound": 0.06666666666666667,
+    "maximum_singular_value_formula_residual": 1.3642420526593924e-12
+  },
+  "factorized_witness": {
+    "matrix_shape": [
+      21,
+      32
+    ],
+    "rank": 21,
+    "action": 0.06666666666666665,
+    "target_coisometry_residual": 1.02304728773037e-15,
+    "source_projector_residual": 0.0,
+    "full_kernel_dimension": 11,
+    "reference_kernel_dimension": 8,
+    "physical_kernel_dimension": 3,
+    "radial_path": [
+      {
+        "t": 0.0,
+        "numeric": 1.0,
+        "analytic": 1.0,
+        "residual": 0.0
+      },
+      {
+        "t": 0.25,
+        "numeric": 0.8869791666666667,
+        "analytic": 0.8869791666666667,
+        "residual": 0.0
+      },
+      {
+        "t": 0.5,
+        "numeric": 0.5916666666666668,
+        "analytic": 0.5916666666666667,
+        "residual": 1.1102230246251565e-16
+      },
+      {
+        "t": 1.0,
+        "numeric": 0.06666666666666665,
+        "analytic": 0.06666666666666667,
+        "residual": 1.3877787807814457e-17
+      },
+      {
+        "t": 1.5,
+        "numeric": 1.525,
+        "analytic": 1.525,
+        "residual": 0.0
+      }
+    ]
+  },
+  "contract_update": {
+    "original_144_complex_carrier": "fail_double_family_counting",
+    "corrected_36_complex_carrier": "pass_typing",
+    "stationary_unstable_zero": "pass",
+    "bounded_rank_21_minimum": "pass",
+    "three_physical_kernel_lines": "pass_as_linear_algebra",
+    "full_Real_junk_BRST_BV_hessian": "open",
+    "particle_identification": "not_claimed"
+  },
+  "verdict": {
+    "canonical_lift": "positive_after_carrier_correction",
+    "next_gate": "full corrected Real module vacuum manifold and Hessian"
+  }
+}

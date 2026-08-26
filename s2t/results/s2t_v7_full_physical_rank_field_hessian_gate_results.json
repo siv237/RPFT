@@ -1,0 +1,147 @@
+{
+  "gate": "version7_full_physical_rank_field_hessian_gate",
+  "frozen_H15_input": {
+    "observed_dimension": 15,
+    "charged_edges": [
+      "u",
+      "d",
+      "e"
+    ],
+    "charged_edge_count": 3,
+    "edge_intertwiner_dimension_matrix": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "edge_bimodule_commutant": "C^3",
+    "relative_real_edge_dimension": 2,
+    "family_oneform_complex_dimension": 4,
+    "physical_oneform_complex_dimension": 12
+  },
+  "tome7_full_field": {
+    "E_aff_complex_dimension": 12,
+    "Y_phys_complex_dimension": 12,
+    "full_complex_dimension_before_real_completion": 144,
+    "full_real_tangent_dimension": 288,
+    "independent_relative_edge_weights": 2
+  },
+  "nonzero_DF_background": {
+    "radial_direction_is_in_physical_oneform_module": true,
+    "symbolic_gradient": "4 tr_norm(D_F^4) > 0 for D_F != 0",
+    "samples": [
+      {
+        "edge_amplitudes": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "analytic_radial_gradient_per_family_copy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "finite_difference_radial_gradient_per_family_copy": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "stationary": true
+      },
+      {
+        "edge_amplitudes": [
+          0.25,
+          0.5,
+          1.0
+        ],
+        "analytic_radial_gradient_per_family_copy": [
+          0.07589285714285714,
+          0.17857142857142858,
+          0.5714285714285714
+        ],
+        "finite_difference_radial_gradient_per_family_copy": [
+          0.07589285714685683,
+          0.17857142856995503,
+          0.5714285714608636
+        ],
+        "stationary": false
+      },
+      {
+        "edge_amplitudes": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "analytic_radial_gradient_per_family_copy": [
+          0.5714285714285714,
+          0.5714285714285714,
+          0.5714285714285714
+        ],
+        "finite_difference_radial_gradient_per_family_copy": [
+          0.5714285714608636,
+          0.5714285714608636,
+          0.5714285714608636
+        ],
+        "stationary": false
+      },
+      {
+        "edge_amplitudes": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "analytic_radial_gradient_per_family_copy": [
+          0.5714285714285714,
+          2.857142857142857,
+          8.571428571428571
+        ],
+        "finite_difference_radial_gradient_per_family_copy": [
+          0.5714285714608636,
+          2.85714285741534,
+          8.57142857254208
+        ],
+        "stationary": false
+      }
+    ],
+    "maximum_analytic_numeric_gradient_residual": 1.113509284778047e-09,
+    "Phi_zero_stationary_for_nonzero_DF": false
+  },
+  "zero_DF_background": {
+    "stationary": true,
+    "full_real_hessian_dimension": 288,
+    "raw_coordinate_hessian_eigenvalue": 0.09523809523809523,
+    "minimum_eigenvalue": 0.09523809523809523,
+    "maximum_eigenvalue": 0.09523809523809523,
+    "negative_eigenvalue_count": 0,
+    "zero_eigenvalue_count": 0
+  },
+  "forbidden_repairs": {
+    "manual_negative_mass": true,
+    "post_hoc_reference_curvature_subtraction": true,
+    "remove_radial_rank_direction_by_constraint": true
+  },
+  "contract_update": {
+    "P0_common_typed_carrier": "pass",
+    "P1_single_trace": "exists_but_relative_DF_background_unfixed",
+    "P2_nonzero_DF_vacuum": "fail_nonstationary",
+    "P2_zero_DF_vacuum": "fail_no_negative_mode",
+    "P3_to_P5": "stopped",
+    "P6": "pass"
+  },
+  "verdict": {
+    "pure_curvature_norm_parent": "closed_negative",
+    "matter_birth": false,
+    "next_requirement": "a preregistered functional with a stationary nonzero background and no post-hoc curvature subtraction"
+  }
+}

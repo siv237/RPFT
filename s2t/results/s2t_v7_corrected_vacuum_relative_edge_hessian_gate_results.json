@@ -1,0 +1,81 @@
+{
+  "gate": "version7_corrected_vacuum_relative_edge_hessian_gate",
+  "corrected_field": {
+    "complex_dimension": 36,
+    "real_dimension": 72,
+    "edge_multiplicities": {
+      "u": 3,
+      "d": 3,
+      "e": 1
+    }
+  },
+  "block_reduction": {
+    "maximum_full_reduced_action_residual": 8.526512829121202e-14,
+    "maximum_mixed_edge_hessian_block_norm": 1.0077832699099824e-09
+  },
+  "vacuum": {
+    "action": 0.06666666666666665,
+    "manifold": "U(3)_u x U(3)_d x U(3)_e",
+    "real_dimension": 27,
+    "maximum_random_unitary_action_residual": 1.3877787807814457e-17
+  },
+  "raw_coordinate_hessian": {
+    "clusters": [
+      {
+        "value": 9.275350618896246e-09,
+        "multiplicity": 27
+      },
+      {
+        "value": 0.08888889312831412,
+        "multiplicity": 6
+      },
+      {
+        "value": 0.2666666784127751,
+        "multiplicity": 12
+      },
+      {
+        "value": 0.35555555992560417,
+        "multiplicity": 9
+      },
+      {
+        "value": 1.066666678550989,
+        "multiplicity": 18
+      }
+    ],
+    "minimum_eigenvalue": 3.890094859218774e-09,
+    "maximum_eigenvalue": 1.066666679406613
+  },
+  "trace_metric_generalized_hessian": {
+    "clusters": [
+      {
+        "value": 4.074004984336715e-09,
+        "multiplicity": 27
+      },
+      {
+        "value": 0.08888889291227703,
+        "multiplicity": 18
+      },
+      {
+        "value": 0.3555555596531991,
+        "multiplicity": 27
+      }
+    ],
+    "negative_count": 0,
+    "zero_count": 27,
+    "positive_count": 45,
+    "minimum_eigenvalue": 3.567104317396898e-09,
+    "maximum_eigenvalue": 0.35555556037923275
+  },
+  "relative_moduli": {
+    "after_common_U3_quotient": 18,
+    "after_common_O3_quotient_in_real_limit": 6,
+    "mixing_selected": false
+  },
+  "contract_update": {
+    "transverse_endpoint_stability": "pass",
+    "isolated_endpoint": "fail_continuous_moduli",
+    "relative_edge_alignment": "not_selected",
+    "CKM_PMNS_prediction": "not_obtained",
+    "next_gate": "degree_two_cross_edge_curvature and junk quotient"
+  }
+}

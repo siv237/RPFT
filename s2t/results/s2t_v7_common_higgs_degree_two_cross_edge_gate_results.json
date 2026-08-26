@@ -1,0 +1,68 @@
+{
+  "gate": "version7_common_higgs_degree_two_cross_edge_gate",
+  "scope": {
+    "carrier": "corrected E_aff tensor Lambda_ch on H_L^8 -> H_R^7",
+    "physical_edges": [
+      "u",
+      "d",
+      "e"
+    ],
+    "common_normalized_Higgs": true,
+    "degree": 2,
+    "claim_about_raw_universal_forms_with_arbitrary_zero_form_insertions": false,
+    "claim_about_physical_bimodule_endomorphism_projection": true
+  },
+  "input_certificates": {
+    "edge_intertwiner_dimension_matrix": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "pairwise_inequivalent_edges": true,
+    "current_endpoint_zero_modes": 27
+  },
+  "common_higgs_identities": {
+    "formula": "tilde_H=i sigma_2 conjugate(H), H^* tilde_H=0",
+    "maximum_residuals_over_64_trials": {
+      "higgs_tilde_higgs_inner_product": 5.799631729412634e-17,
+      "physical_Ta_Tb_adjoint": 1.0045256820531237e-16,
+      "physical_Ta_adjoint_Tb": 0.0,
+      "lifted_Da_Db_adjoint": 2.6437458957274465e-15,
+      "lifted_Da_adjoint_Db": 0.0,
+      "degree_two_square_decomposition": 1.2514546277758973e-14,
+      "hodge_commutator_decomposition": 9.31191287265099e-15
+    }
+  },
+  "degree_two_support": {
+    "mixed_physical_edge_word_count_before_projection": 6,
+    "nonzero_direct_mixed_word_count": 0,
+    "mixed_bimodule_endomorphism_dimension": 0,
+    "full_square_equals_sum_of_edge_squares": true,
+    "hodge_commutator_equals_sum_of_edge_commutators": true,
+    "junk_quotient_can_create_absent_mixed_class": false
+  },
+  "higher_degree_boundary": {
+    "spectral_torsion_has_u_d_cross_sensitivity": true,
+    "spectral_torsion_selects_unique_relative_Yukawa_ratios": "fail",
+    "first_remaining_candidate_level": "derived quartic or higher typed invariant"
+  },
+  "verdict": {
+    "common_Higgs_direct_degree_two_cross_edge_curvature": "closed_zero",
+    "ordinary_physical_degree_two_lifts_relative_U3_frames": false,
+    "full_raw_universal_calculus_classified": false,
+    "reason": "direct mixed products vanish before junk and off-diagonal edge morphisms are absent after physical bimodule projection",
+    "next_gate": "admission of a coefficient-free derived quartic cross-edge invariant on the corrected carrier"
+  }
+}

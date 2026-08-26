@@ -1,0 +1,87 @@
+{
+  "gate": "version7_quartic_cross_edge_invariant_admission_gate",
+  "current_carrier": {
+    "physical_graph": "H15 charged forest with common-Higgs orthogonal edge supports",
+    "edge_types": [
+      "u",
+      "d",
+      "e"
+    ],
+    "edge_bimodule_commutant": "C^3",
+    "off_diagonal_intertwiner_dimension": 0
+  },
+  "ordinary_one_trace_polynomials": {
+    "tested_positive_moment_powers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "maximum_absolute_total_minus_separated_residual_by_power": {
+      "1": 1.1368683772161603e-13,
+      "2": 1.8189894035458565e-12,
+      "3": 2.9103830456733704e-11,
+      "4": 1.862645149230957e-09,
+      "5": 5.960464477539063e-08,
+      "6": 1.9073486328125e-06
+    },
+    "maximum_relative_total_minus_separated_residual_by_power": {
+      "1": 3.540630119853144e-16,
+      "2": 2.823636316940182e-16,
+      "3": 2.627296829413052e-16,
+      "4": 3.942230152619848e-16,
+      "5": 3.0771990016277703e-16,
+      "6": 3.9286031432803396e-16
+    },
+    "maximum_direct_quartic_cross_trace": 8.542357866702336e-14,
+    "all_polynomial_moments_split_by_edge": true
+  },
+  "coisometric_vacuum": {
+    "quartic_trace_expected": 42.0,
+    "quartic_trace_minimum": 41.99999999999996,
+    "quartic_trace_maximum": 42.00000000000004,
+    "quartic_trace_range": 8.526512829121202e-14,
+    "relative_U3_frames_seen_by_physical_trace": false
+  },
+  "family_only_cross_contractions": {
+    "relative_matrix": "W_ab=X_a X_b^*=U_a U_b^*",
+    "ranges_over_random_vacua": {
+      "ReTrW": {
+        "minimum": -1.6959443597953732,
+        "maximum": 2.037031540544401,
+        "range": 3.732975900339774
+      },
+      "ReTrW2": {
+        "minimum": -2.2229852264298366,
+        "maximum": 2.2687310519637833,
+        "range": 4.4917162783936195
+      },
+      "absTrW_squared": {
+        "minimum": 0.009679716125929185,
+        "maximum": 4.151099836265909,
+        "range": 4.14142012013998
+      }
+    },
+    "can_see_relative_frames": true,
+    "requires_off_diagonal_edge_contraction": true,
+    "admissible_in_current_physical_bimodule": false
+  },
+  "known_higher_structures": {
+    "spectral_torsion_cross_sensitive": true,
+    "spectral_torsion_selector_status": "fail",
+    "krajewski_rectangle_generates_cross_word": true,
+    "krajewski_rectangle_requires_nonzero_common_connector": true,
+    "krajewski_rectangle_full_dimension": 24,
+    "contained_in_current_H15_carrier": false
+  },
+  "verdict": {
+    "coefficient_free_quartic_cross_edge_invariant_on_current_carrier": "not_admitted",
+    "raising_polynomial_degree_without_new_connector_can_help": false,
+    "family_only_frame_sensitive_scalars_exist": true,
+    "family_only_scalars_are_physically_typed": false,
+    "minimal_required_change": "derive a new gauge- and Real-compatible connector completing a mixed Krajewski cycle",
+    "next_gate": "minimal H15-compatible mixed connector representation admission"
+  }
+}

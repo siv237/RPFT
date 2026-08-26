@@ -2,7 +2,7 @@
 
 > Status: mature
 > Type: source
-> Updated: 2026-08-22
+> Updated: 2026-08-25
 
 ## Summary
 
@@ -24,6 +24,7 @@
 | Зафиксированная версия II.C | `corpus/S2T_FINAL_PAPER.md`, `corpus/S2T_FINAL_PAPER_V2.md` | Тексты от 28 мая 2026 года; исторический кандидат полного замыкания |
 | Вычислительная программа | `s2t/audits/*.py`, `s2t/results/*.json` | Сотни локальных проверок, а не единый монолитный код |
 | Текущий итог ветви | `s2t/docs/version6_final_conclusion_and_next_program.tex` | Условия, при которых допустимо открывать следующую архитектуру |
+| Новый активный кандидат | `s2t/docs/tome7_s2t_rank_change_parent.tex` | Рангоизменяющая суперсвязность; входной плоский гессиан положителен |
 
 ## Что является программой, а что — гипотезой
 
@@ -42,7 +43,9 @@
 `N_closed_physical = 0` в заявленном минимальном классе. Тома III–VI расширили
 математическую архитектуру, однако финал Тома VI не получил единый родитель,
 эндогенный запуск, физическую скорость и устойчивый наблюдаемый конечный
-объект. Поэтому корректная формулировка на 22 августа 2026 года:
+объект. 25 августа 2026 года Том VII открыл новый общий кандидат, но пока
+прошёл только входной контракт и положительный плоский контроль. Поэтому
+корректная формулировка:
 
 > S2T существует как активная методология и воспроизводимая исследовательская
 > программа; конкретное полное физическое замыкание пока не доказано.
@@ -53,8 +56,9 @@
 2. Для систематики серии читать [[treatise-volume-systematics]].
 3. Для спектрального кандидата и его доказательных разрывов читать
    [[tome2-s2t-spectral-closure]] и [[s2t-closure-roadmap]].
-4. Для фактического текущего края читать
-   [[version6-final-conclusion-and-next-program]].
+4. Для закрытой границы Тома VI читать
+   [[version6-final-conclusion-and-next-program]], а для активного края —
+   [[version7-rank-change-parent-program]].
 5. Для конкретного утверждения находить соответствующую связку
    `gate -> audit -> result -> wiki question`, а не ссылаться только на
    итоговую статью II.C.
@@ -62,11 +66,12 @@
 ## Links
 
 - [[tome1-s2t-research-program]] — происхождение программы.
-- [[treatise-volume-systematics]] — последовательность томов I–VI.
+- [[treatise-volume-systematics]] — последовательность томов I–VII.
 - [[tome2-s2t-spectral-closure]] — первая техническая реализация.
 - [[s2t-closure-roadmap]] — карта доказательств и пробелов.
 - [[s2t-ii-research-cycle-closure]] — заморозка конструктивного цикла II.
 - [[version6-final-conclusion-and-next-program]] — текущая граница программы.
+- [[version7-rank-change-parent-program]] — текущий активный кандидат.
 - [[s2t-reinterpretation]] — историческая концептуальная страница, теперь
   уточнённая этим паспортом.
 
@@ -79,3 +84,4 @@
 - `corpus/S2T_FINAL_PAPER_V2.md`
 - `wiki/syntheses/s2t-ii-research-cycle-closure.md`
 - `s2t/docs/version6_final_conclusion_and_next_program.tex`
+- `s2t/docs/tome7_s2t_rank_change_parent.tex`
