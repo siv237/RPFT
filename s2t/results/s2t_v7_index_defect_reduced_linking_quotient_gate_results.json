@@ -1,0 +1,58 @@
+{
+  "existing_reductions": {
+    "arrow_module_ordinary_inner_fluctuation_available": false,
+    "brst_can_remove_extra_origin_negative_mode_as_gauge": false,
+    "forest_quotient_acts_on_endpoint_gram_duplication": false,
+    "forest_quotient_relative_moduli_dimension": 9,
+    "real_half_trace_derives_raw_metric": false,
+    "represented_junk_derives_metric_rescaling": false,
+    "zero_field_gauge_orbit_residual": 0.0
+  },
+  "gate": "version7_index_defect_reduced_linking_quotient_gate",
+  "matched_carrier": {
+    "index_defect_rank": 1,
+    "polar_transfer_is_coisometry": true,
+    "source_support_rank": 10,
+    "target_rank": 10
+  },
+  "quotient_metric_comparison": {
+    "allowed_metric_scale_window": "0 <= c < 16/15",
+    "critical_metric_scale": 1.0666666666666669,
+    "exact_critical_metric_scale": "16/15",
+    "inherited_metric_scale_relative_to_raw": 2,
+    "inherited_origin_equals_old_physical_origin_residual": 3.826012917639393e-14,
+    "inherited_origin_heavy_gap": -5.6000000000000005,
+    "inherited_origin_signature": [
+      21,
+      0,
+      6
+    ],
+    "inherited_two_corner_action": "||Z||^2",
+    "inherited_vacuum_minimum_eigenvalue": 5.1796208786381825,
+    "inherited_vacuum_signature": [
+      0,
+      0,
+      27
+    ],
+    "raw_one_corner_action": "1/2 ||Z||^2",
+    "raw_origin_heavy_gap": 0.40000000000000113,
+    "raw_origin_signature": [
+      7,
+      0,
+      20
+    ],
+    "raw_vacuum_minimum_eigenvalue": 4.582763014822573,
+    "raw_vacuum_signature": [
+      0,
+      0,
+      27
+    ]
+  },
+  "verdict": {
+    "existing_real_junk_forest_brst_reduction_derives_half": false,
+    "next_gate": "version7_polar_transfer_cross_curvature_origin_gate",
+    "raw_quotient_local_pass_is_reproducible": true,
+    "raw_quotient_metric_is_inherited_from_current_parent": false,
+    "status": "raw_quotient_metric_not_derived_existing_reductions_no_go"
+  }
+}

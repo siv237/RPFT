@@ -1,0 +1,200 @@
+\chapter{Циклически-изотипический проектор полного меню рёбер}
+\label{ch:v7-rooted-cycle-isotypic-edge-projector-gate}
+
+\section{Два независимо выведенных признака}
+
+Предыдущий гейт выделил четыре новых ребра единственного примитивного цикла,
+укоренённого в исходном $H_{15}$. Две требуемые вектороподобные массы в этот
+цикл не входят. Проверим, дополняет ли циклический признак независимый
+представленческий признак без использования меток ``старое'' и ``новое''.
+
+Пусть $\mathcal E_{\rm new}$ --- прямая сумма всех одиннадцати новых
+первопорядково допустимых пространств стрелок:
+\begin{equation}
+ \mathcal E_{\rm new}
+ =\bigoplus_{e\in E_{\rm new}}
+ \operatorname{Hom}(\mathcal H_{s(e)},\mathcal H_{t(e)}),
+ \qquad |E_{\rm new}|=11.
+ \label{eq:v7-edge-projector-space}
+\end{equation}
+Каждое слагаемое является полным калибровочно-ковариантным блоком, а не
+отдельной матричной компонентой.
+
+\section{Проектор циклического участия}
+
+Для единственного укоренённого монома $\mathcal R_6(x)$ определим формальную
+степень ребра
+\begin{equation}
+ \nu_e=x_e\frac{\partial}{\partial x_e}\log\mathcal R_6(x)
+ \in\{0,1\}.
+ \label{eq:v7-edge-projector-cycle-degree}
+\end{equation}
+Поскольку $\mathcal R_6$ является одним квадратсвободным мономом, $\nu_e$
+не зависит от значения ненулевых переменных и просто измеряет участие ребра
+в цикле. На новом пространстве стрелок получаем ортогональный проектор
+\begin{equation}
+ P_C=\sum_{e\in E_{\rm new}}\nu_e|e\rangle\langle e|,
+ \qquad \rank P_C=4.
+ \label{eq:v7-edge-projector-cycle}
+\end{equation}
+Его опора равна
+\begin{equation}
+ E_C=\{L_LY_R,Q_LY_R,X_Le_R,X_Lu_R\}.
+ \label{eq:v7-edge-projector-cycle-support}
+\end{equation}
+Ложноположительных рёбер нет, но отсутствуют $X_LX_R$ и $Y_LY_R$.
+
+\section{Изотипический проектор}
+
+Ребро назовём изотипическим, если его левый и правый концы несут одно и то
+же представление $SU(3)\times SU(2)\times U(1)_Y$ после забывания
+хиральности:
+\begin{equation}
+ \epsilon_e^{\rm iso}
+ =\mathbf1\!\left[\rho_{s(e)}\simeq\rho_{t(e)}\right].
+ \label{eq:v7-edge-projector-isotypic-indicator}
+\end{equation}
+Такое условие является условием калибровочно-инвариантного
+вектороподобного массового блока. Диаграммы Краевского именно связывают
+вершины с хиральными мультиплетами, а стрелки с допустимыми массовыми и
+юкавскими блоками \cite{v7-edge-projector-krajewski,v7-edge-projector-jureit}.
+
+Соответствующий проектор имеет вид
+\begin{equation}
+ P_I=\sum_{e\in E_{\rm new}}\epsilon_e^{\rm iso}|e\rangle\langle e|,
+ \qquad \rank P_I=4,
+ \label{eq:v7-edge-projector-isotypic}
+\end{equation}
+и опору
+\begin{equation}
+ E_I=\{L_LY_R,Y_LY_R,X_Le_R,X_LX_R\}.
+ \label{eq:v7-edge-projector-isotypic-support}
+\end{equation}
+Она включает обе недостающие массы. Ложноположительных рёбер снова нет;
+пропущены только два смешанных ребра $Q_LY_R$ и $X_Lu_R$.
+
+\section{Точное объединение шести рёбер}
+
+Оба проектора диагональны в каноническом разложении по пространствам
+стрелок, поэтому коммутируют. Их пересечение имеет ранг два. Проектор на
+объединение равен
+\begin{equation}
+ P_*=P_C\vee P_I=P_C+P_I-P_CP_I,
+ \qquad P_*^2=P_*,\qquad \rank P_*=6.
+ \label{eq:v7-edge-projector-union}
+\end{equation}
+Полный конечный аудит даёт
+\begin{align}
+ \operatorname{supp}P_*
+ &=\{L_LY_R,Q_LY_R,X_LX_R,X_Le_R,X_Lu_R,Y_LY_R\},
+ \nonumber\\
+ \operatorname{supp}(I-P_*)
+ &=\{L_LX_R,X_LY_R,X_Ld_R,X_RY_L,Y_Le_R\}.
+ \label{eq:v7-edge-projector-exact-partition}
+\end{align}
+Первая строка совпадает ровно с шестью рёбрами целевого ремонта, вторая ---
+с пятью ранее нежелательными. Ни один относительный вес между циклическим и
+изотипическим признаками не вводится: формула объединения двух коммутирующих
+проекторов единственна.
+
+\section{Каноническая знаковая градуировка}
+
+Проектор автоматически задаёт инволюцию пространства новых стрелок
+\begin{equation}
+ \Gamma_E=I-2P_*,
+ \qquad \Gamma_E^*=\Gamma_E,
+ \qquad \Gamma_E^2=I.
+ \label{eq:v7-edge-projector-grading}
+\end{equation}
+Её квадратичная форма равна
+\begin{equation}
+ q_E(z)=\langle z,\Gamma_Ez\rangle
+ =\sum_{e\notin E_*}\|z_e\|^2-\sum_{e\in E_*}\|z_e\|^2.
+ \label{eq:v7-edge-projector-quadratic-form}
+\end{equation}
+Тем самым все шесть целевых блоков получают отрицательный знак запуска, а
+пять конкурирующих --- положительную щель. Сигнатуры гессиана равны
+\begin{equation}
+ (n_-,n_0,n_+)_{\rm one\ gen}=(12,0,10),
+ \qquad
+ (n_-,n_0,n_+)_{3\times3\rm\ family}=(108,0,90).
+ \label{eq:v7-edge-projector-hessian-signatures}
+\end{equation}
+Знак сохраняется на ориентированном Real-сопряжении ребра, поскольку
+$P_*$ определён на полном неориентированном блоке.
+
+\section{Оставшийся родительский разрыв}
+
+Полученная $\Gamma_E$ является канонической градуировкой пространства
+стрелок относительно уже установленного фона $H_{15}$. Но её существование
+ещё не доказывает, что она входит в исходную суперсвязность или спектральное
+действие. Квадратичная форма \eqref{eq:v7-edge-projector-quadratic-form}
+сама по себе не ограничена снизу. Не выведены:
+\begin{equation}
+ \begin{gathered}
+  \text{общий масштаб запуска},\qquad
+  \text{единая квартичная стабилизация},\\
+  \text{ненулевой минимум всех шести целевых блоков}.
+ \end{gathered}
+ \label{eq:v7-edge-projector-parent-gaps}
+\end{equation}
+
+\begin{theorem}[Точный проектор шести рёбер]
+Объединение проектора участия в единственном $H_{15}$-укоренённом
+примитивном цикле и проектора изотипических лево-правых блоков совпадает
+ровно с шестью рёбрами целевого четырёхвершинного ремонта. Производная
+инволюция $\Gamma_E=I-2P_*$ даёт отрицательный квадратичный знак всем шести
+целевым и положительный знак всем пяти нежелательным блокам без
+относительных коэффициентов и без меток старой/новой копии.
+\end{theorem}
+
+\begin{nogocriterion}[Проектор ещё не равен действию]
+Нельзя объявлять знаковую форму полным физическим родителем, пока одна
+Real-полевая суперсвязность не выводит одновременно $\Gamma_E$, общий
+масштаб и стабилизирующий член. Независимое добавление
+$(\|P_*z\|^2-\mu^2)^2$, отдельных масс рёбер или ручных юкавских отношений
+запрещено.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item размерность пространства новых комплексных рёбер: \textbf{$11$};
+ \item ранг циклического проектора: \textbf{$4$};
+ \item ранг изотипического проектора: \textbf{$4$};
+ \item ранг пересечения: \textbf{$2$};
+ \item ранг объединения: \textbf{$6$};
+ \item ранг дополнения: \textbf{$5$};
+ \item объединение совпадает с целевым меню: \textbf{да};
+ \item ложноположительных рёбер: \textbf{$0$};
+ \item свободный относительный вес: \textbf{нет};
+ \item сигнатура вещественного гессиана на поколение: \textbf{$(12,0,10)$};
+ \item семейная сигнатура: \textbf{$(108,0,90)$};
+ \item Real-парность знаков: \textbf{сохранена};
+ \item общий масштаб и квартичная стабилизация: \textbf{не выведены};
+ \item итог: \textbf{точный канонический проектор, родитель действия открыт}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_rooted_cycle_isotypic_edge_projector_gate_results.json}.
+
+\paragraph{Уровень подсчёта сигнатур.}
+Сигнатуры в \eqref{eq:v7-edge-projector-hessian-signatures} относятся к
+пространству меток рёбер: одно комплексное число на ребро для одного
+поколения и одна комплексная матрица $3\times3$ на ребро на семейном уровне.
+Если раскрыть внутренние калибровочные компоненты полного блока, их
+кратности дополнительно умножаются на размерность соответствующего
+мультиплета, но знак, заданный $\Gamma_E$, наследуется всеми компонентами и
+не меняется.
+
+\begin{thebibliography}{9}
+\bibitem{v7-edge-projector-krajewski}
+T.~Krajewski,
+\emph{Classification of Finite Spectral Triples},
+Journal of Geometry and Physics 28 (1998), 1--30;
+arXiv:hep-th/9701081.
+\bibitem{v7-edge-projector-jureit}
+J.-H.~Jureit, T.~Schuecker, C.~A.~Stephan,
+\emph{On a Classification of Irreducible Almost-Commutative Geometries V},
+Journal of Mathematical Physics 50 (2009), 072303; arXiv:0901.3214.
+\end{thebibliography}

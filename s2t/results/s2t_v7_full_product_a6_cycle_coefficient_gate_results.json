@@ -1,0 +1,115 @@
+{
+  "cycle_enumeration": {
+    "cycles_quadratic_in_zero_fields_about_singlet_vacuum": 3,
+    "quadratic_cycles": [
+      {
+        "edges": [
+          "LL-XR",
+          "LL-YR",
+          "XL-XR",
+          "XL-eR",
+          "YL-YR",
+          "YL-eR"
+        ],
+        "zero_edges": [
+          "LL-XR",
+          "YL-eR"
+        ]
+      },
+      {
+        "edges": [
+          "LL-YR",
+          "LL-eR",
+          "QL-YR",
+          "QL-dR",
+          "XL-dR",
+          "XL-eR"
+        ],
+        "zero_edges": [
+          "QL-YR",
+          "XL-dR"
+        ]
+      },
+      {
+        "edges": [
+          "LL-YR",
+          "LL-eR",
+          "QL-YR",
+          "QL-uR",
+          "XL-eR",
+          "XL-uR"
+        ],
+        "zero_edges": [
+          "QL-YR",
+          "XL-uR"
+        ]
+      }
+    ],
+    "simple_six_cycles_in_full_strict_graph": 14
+  },
+  "explicit_weak_intertwiners": {
+    "H": [
+      0,
+      1
+    ],
+    "H_dagger_H": "1",
+    "H_tilde": [
+      1,
+      0
+    ],
+    "H_tilde_dagger_H": "0"
+  },
+  "gate": "version7_full_product_a6_cycle_coefficient_gate",
+  "gaussian_a6_reduction": {
+    "coefficient_of_Tr_Phi6": "-1/6",
+    "conditional_central_holonomy_selected_by_surviving_cycle": "W_C=I",
+    "down_cycle_bilinear": "-2",
+    "original_up_cycle_bilinear": "0",
+    "weak_cycle_bilinear": "-2"
+  },
+  "mixed_coefficients_in_Tr_Phi6": {
+    "down_aligned_cycle": "12",
+    "original_up_cycle": "0",
+    "weak_doublet_cycle_aligned_components": "12",
+    "weak_doublet_cycle_orthogonal_control": "0"
+  },
+  "origin_hessians_of_Tr_Phi6": {
+    "down_pair": {
+      "eigenvalues": [
+        "6*sqrt(13) + 66",
+        "66 - 6*sqrt(13)"
+      ],
+      "matrix": "[[48, 12], [12, 84]]"
+    },
+    "up_pair": {
+      "eigenvalues": [
+        "48",
+        "84"
+      ],
+      "matrix": "[[48, 0], [0, 84]]"
+    },
+    "weak_pair": {
+      "eigenvalues": [
+        "48",
+        "72"
+      ],
+      "matrix": "[[60, 12], [12, 60]]"
+    }
+  },
+  "restricted_exact_trace_polynomials": {
+    "down_colored_pair": "2*x**6 + 12*x**4 + 6*x**2*y**2 + 24*x**2 + 12*x*y + 4*y**6 + 24*y**4 + 42*y**2 + 50",
+    "up_colored_pair": "2*x**6 + 12*x**4 + 6*x**2*y**2 + 24*x**2 + 4*y**6 + 24*y**4 + 42*y**2 + 50",
+    "weak_pair_aligned": "2*x**6 + 12*x**4 + 30*x**2 + 12*x*y + 2*y**6 + 12*y**4 + 30*y**2 + 48",
+    "weak_pair_orthogonal_control": "2*x**6 + 12*x**4 + 30*x**2 + 2*y**6 + 12*y**4 + 30*y**2 + 48"
+  },
+  "verdict": {
+    "down_type_cycle_survives": true,
+    "full_product_a6_pass_for_original_cycle": false,
+    "next_gate": "version7_weak_aligned_cycle_competition_gate",
+    "original_uR_virtual_cycle_survives_full_weak_trace": false,
+    "original_virtual_determinant_model_has_nonzero_kappa": false,
+    "reason": "H_tilde^dagger H=0",
+    "status": "original_cycle_no_go_down_and_weak_competition_open",
+    "weak_doublet_competitor_survives": true
+  }
+}

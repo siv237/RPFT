@@ -1,0 +1,130 @@
+{
+  "gate": "version7_rooted_cycle_isotypic_edge_projector_gate",
+  "edge_space": {
+    "ordered_new_edges": [
+      "L_L--X_R",
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "X_R--Y_L",
+      "Y_L--Y_R",
+      "Y_L--e_R"
+    ],
+    "complex_dimension": 11,
+    "real_dimension_per_generation": 22,
+    "real_dimension_for_3x3_family_blocks": 198
+  },
+  "rooted_cycle_projector": {
+    "support": [
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--e_R",
+      "X_L--u_R"
+    ],
+    "rank": 4,
+    "false_positive_edges": [],
+    "missed_selected_edges": [
+      "X_L--X_R",
+      "Y_L--Y_R"
+    ]
+  },
+  "isotypic_projector": {
+    "definition": "opposite-chirality edge endpoints carry the same (SU3,SU2,Y) gauge representation",
+    "support": [
+      "L_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "Y_L--Y_R"
+    ],
+    "rank": 4,
+    "false_positive_edges": [],
+    "missed_selected_edges": [
+      "Q_L--Y_R",
+      "X_L--u_R"
+    ],
+    "uses_old_new_copy_labels": false
+  },
+  "projector_union": {
+    "formula": "P_sel=P_cycle+P_iso-P_cycle*P_iso",
+    "intersection_rank": 2,
+    "selected_rank": 6,
+    "complement_rank": 5,
+    "selected_support": [
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "Y_L--Y_R"
+    ],
+    "complement_support": [
+      "L_L--X_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_R--Y_L",
+      "Y_L--e_R"
+    ],
+    "equals_desired_six_edge_menu": true,
+    "commuting_orthogonal_projectors": true,
+    "free_relative_weight": false
+  },
+  "edge_grading": {
+    "formula": "Gamma_E=I-2*P_sel",
+    "involution_residual": 0.0,
+    "complex_signature": {
+      "negative": 6,
+      "zero": 0,
+      "positive": 5
+    },
+    "one_generation_real_hessian_signature": {
+      "negative": 12,
+      "zero": 0,
+      "positive": 10
+    },
+    "three_generation_family_hessian_signature": {
+      "negative": 108,
+      "zero": 0,
+      "positive": 90
+    },
+    "negative_edges": [
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "Y_L--Y_R"
+    ],
+    "positive_edges": [
+      "L_L--X_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_R--Y_L",
+      "Y_L--e_R"
+    ]
+  },
+  "covariance": {
+    "acts_by_complete_gauge_covariant_edge_blocks": true,
+    "orientation_reversal_assigns_same_sign_to_Real_pair": true,
+    "depends_on_pre_extension_H15_support": true,
+    "depends_on_observed_old_new_basis": false
+  },
+  "remaining_parent_gap": {
+    "quadratic_relative_signs_fixed": true,
+    "overall_mass_scale_fixed": false,
+    "quartic_stabilization_fixed": false,
+    "nonzero_vacuum_with_all_six_selected_edges_proved": false,
+    "real_superconnection_or_spectral_trace_origin_proved": false
+  },
+  "verdict": {
+    "status": "positive_canonical_edge_grading_parent_origin_open",
+    "exact_six_of_eleven_selector_obtained": true,
+    "unwanted_edges_have_positive_quadratic_sign": true,
+    "selected_edges_have_negative_quadratic_sign": true,
+    "complete_dynamical_parent_obtained": false,
+    "next_gate": "derive Gamma_E as the degree-zero part of one Real field-space superconnection and test the quartic vacuum and full Hessian without an independent stabilization weight"
+  }
+}

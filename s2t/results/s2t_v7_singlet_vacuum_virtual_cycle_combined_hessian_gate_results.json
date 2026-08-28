@@ -1,0 +1,55 @@
+{
+  "benchmark": {
+    "a": "1/10",
+    "gamma": "214/75",
+    "heavy_gap_open": true,
+    "locally_stable": true,
+    "normalized_smallest_heavy_eigenvalue": "1 - 3*sqrt(10)/25",
+    "radial_antisymmetric_eigenvalue": "56/5",
+    "radial_symmetric_eigenvalue": "3992/535",
+    "u": "6/5"
+  },
+  "dimensionless_model": {
+    "four_singlet_phases_remain_zero_modes": true,
+    "heavy_gap_domain": "a*r^2*s^2<1",
+    "parameters": "a=(kappa*mu^2/(M_a*M_b))^2, gamma=relative determinant weight",
+    "potential": "(r^2-1)^2+(s^2-1)^2+gamma*log(1-a*r^2*s^2)",
+    "two_vectorlike_mass_radials_decouple_with_eigenvalue": 8,
+    "variables": "r=|p|/mu, s=|q|/mu"
+  },
+  "full_hessian_structure": {
+    "charged_and_forbidden_edge_modes_remain_positive": true,
+    "determinant_locks_relative_phase_of_p_and_q": false,
+    "negative_modes_in_open_stable_region": 0,
+    "positive_singlet_radial_modes": 4,
+    "singlet_phase_zero_modes": 4,
+    "virtual_colored_heavy_modes_remain_positive_under_gap_condition": true
+  },
+  "gate": "version7_singlet_vacuum_virtual_cycle_combined_hessian_gate",
+  "global_and_normalization_boundary": {
+    "a_derived_from_single_spectral_action": false,
+    "finite_dimensional_stationary_vacuum_is_at_most_metastable": true,
+    "four_dimensional_renormalized_potential_computed": false,
+    "gamma_derived_from_single_spectral_action": false,
+    "parameter_free_physical_vacuum_proved": false,
+    "zero_mode_log_potential_tends_to_minus_infinity_at_gap_boundary": true
+  },
+  "symmetric_stationary_branch": {
+    "definition": "r=s=sqrt(u)",
+    "gamma_of_a_u": "-2*(u - 1)*(a*u**2 - 1)/(a*u)",
+    "heavy_gap_condition": "a*u^2<1",
+    "local_stability_condition": "a*u^2*(2*u-1)<1",
+    "local_stability_implies_open_heavy_gap": true,
+    "radial_antisymmetric_eigenvalue": "8*(2*u - 1)",
+    "radial_symmetric_eigenvalue": "8*(2*a*u**3 - a*u**2 - 1)/(a*u**2 - 1)",
+    "required_u_range": "u>1"
+  },
+  "verdict": {
+    "coefficient_free_closure_pass": false,
+    "combined_local_hessian_pass": "conditional",
+    "global_vacuum_pass": false,
+    "next_gate": "version7_common_spectral_profile_singlet_virtual_ratio_gate",
+    "open_locally_stable_color_preserving_region_exists": true,
+    "status": "conditional_local_pass_global_and_normalization_open"
+  }
+}

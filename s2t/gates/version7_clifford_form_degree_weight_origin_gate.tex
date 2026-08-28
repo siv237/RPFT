@@ -1,0 +1,112 @@
+\chapter{Степень формы, клиффордов след и происхождение относительного веса}
+\label{ch:v7-clifford-form-degree-weight-origin-gate}
+
+\section{Два естественных счёта степени}
+
+После запрета простого Real-полуследа остаётся проверить, не различаются ли
+рёберная и физическая кривизны своей степенью. Однако в текущем произведённом
+носителе обе являются пространственно-временными нуль-формами:
+\begin{equation}
+ \deg_M\mathfrak m_E=\deg_M\mathfrak m_V=0.
+ \label{eq:v7-clifford-common-spacetime-degree}
+\end{equation}
+Во внутреннем исчислении они также возникают на одном чётном уровне:
+$\mathfrak m_E=[d_Z,d_Z^*]+\text{фон}$ и
+$\mathfrak m_V=(A^*A-A_0^*A_0)\oplus(AA^*-A_0A_0^*)$ являются
+квадратичными двухшаговыми моментами. Поэтому ни естественная внешняя, ни
+внутренняя степень пока не создаёт относительного коэффициента.
+
+\section{Явный клиффордов контроль}
+
+Возьмём четырёхмерные евклидовы матрицы
+\begin{equation}
+ \{\gamma^\mu,\gamma^\nu\}=2\delta^{\mu\nu}I_4
+ \label{eq:v7-clifford-relations}
+\end{equation}
+и клиффордово представление вещественной двухформы
+\begin{equation}
+ c(F)=\frac12\sum_{\mu,\nu}\gamma^\mu\gamma^\nu F_{\mu\nu}
+ =\sum_{\mu<\nu}\gamma^\mu\gamma^\nu F_{\mu\nu}.
+ \label{eq:v7-clifford-twoform-map}
+\end{equation}
+Прямой расчёт даёт изометрию
+\begin{equation}
+ \frac14\operatorname{tr}_{\rm spin}\bigl(c(F)^*c(F)\bigr)
+ =\sum_{\mu<\nu}|F_{\mu\nu}|^2
+ =\frac12\sum_{\mu,\nu}|F_{\mu\nu}|^2.
+ \label{eq:v7-clifford-hodge-isometry}
+\end{equation}
+Для скаляра аналогично
+\begin{equation}
+ \frac14\operatorname{tr}_{\rm spin}|sI_4|^2=|s|^2.
+ \label{eq:v7-clifford-scalar-isometry}
+\end{equation}
+Следовательно, видимая половина в последней части
+\eqref{eq:v7-clifford-hodge-isometry} лишь удаляет двойной подсчёт пар
+$(\mu,\nu)$ и $(\nu,\mu)$. Она не является весом между двумя секторами.
+
+\section{Следствие для текущего действия}
+
+Поскольку оба текущих момента тензорно умножаются на тождество спинорного
+блока, нормированный клиффордов след сохраняет прежнее отношение:
+\begin{equation}
+ \boxed{\beta_{\rm Clifford}=1,\qquad
+ (n_-,n_0,n_+)_{0}=(21,0,6).}
+ \label{eq:v7-clifford-derived-weight-signature}
+\end{equation}
+Целевой вакуум остаётся положительным, но нулевой сектор запускает двадцать
+один отрицательный режим вместо семи.
+
+Это согласуется с суперсвязностным разложением кривизны на нуль-, одно- и
+двухформенные компоненты: относительные веса становятся геометрическими
+только после фиксации представления и следовой метрики; общий формализм сам
+по себе допускает центральные веса
+\cite{v7-clifford-roepstorff,v7-clifford-spectral-action,
+v7-clifford-product-triples}.
+
+\begin{theorem}[No-go степени формы и клиффордова следа текущего носителя]
+В существующем произведённом носителе рёберная и физическая Hodge-кривизны
+имеют одинаковую пространственно-временную степень и одинаковый чётный
+внутренний статус. Нормированный четырёхмерный клиффордов след является
+изометрией Hodge-нормы и сохраняет отношение $\beta=1$. Поэтому он не
+выводит требуемое окно $0\le\beta<8/15$.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет факториальной подгонки]
+Нельзя объявлять только физический момент двухформой или смешивать
+$\sum_{\mu<\nu}$ с $\sum_{\mu,\nu}$ после просмотра гессиана. Это меняет
+представленное исчисление либо соглашение о компонентах только в одном
+секторе и эквивалентно скрытому относительному весу.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item пространственно-временная степень $\mathfrak m_E$: \textbf{ноль};
+ \item пространственно-временная степень $\mathfrak m_V$: \textbf{ноль};
+ \item внутренний уровень обоих моментов: \textbf{чётный квадратичный};
+ \item клиффордова изометрия двухформ: \textbf{проверена};
+ \item фактор $1/2$ антисимметричных индексов: \textbf{не секторный вес};
+ \item выведенное отношение: \textbf{$\beta=1$};
+ \item нулевая сигнатура: \textbf{$(21,0,6)$};
+ \item требуемое окно: \textbf{не достигнуто};
+ \item итог: \textbf{текущий маршрут степени формы закрыт};
+ \item следующий гейт: \textbf{кратности единого неприводимого носителя}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_clifford_form_degree_weight_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-clifford-roepstorff}
+G.~Roepstorff,
+\emph{Superconnections and the Higgs Field}, arXiv:hep-th/9801040.
+\bibitem{v7-clifford-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle},
+Commun. Math. Phys. 186 (1997), 731--750; arXiv:hep-th/9606001.
+\bibitem{v7-clifford-product-triples}
+S.~Brain, B.~Mesland, W.~D.~van Suijlekom,
+\emph{Gauge Theory for Spectral Triples and the Unbounded Kasparov Product},
+J. Noncommut. Geom. 10 (2016), 135--206; arXiv:1306.1951.
+\end{thebibliography}

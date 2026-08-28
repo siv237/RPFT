@@ -1,0 +1,210 @@
+\chapter{Смешанная полярно-передаточная кривизна связывающего бимодуля}
+\label{ch:v7-polar-transfer-cross-curvature-origin-gate}
+
+\section{Замена вопроса о весе вопросом о кривизне}
+
+Предыдущий гейт запретил сохранять сырую норму
+$\frac12\|Z\|_{\rm HS}^2$ после диагонального quotient: метрика двух
+исходных углов индуцирует $\|Z\|_{\rm HS}^2$ и возвращает неверную
+сигнатуру. Однако связывающая алгебра допускает другой канонический объект.
+Она не обязана считать среднее двух кривизн; она несёт кривизну
+эквивалентного бимодуля, то есть их ковариантную разность.
+
+Пусть
+\begin{equation}
+ A_0:\mathbb C^{11}\longrightarrow\mathbb C^{10},
+ \qquad A_0=U|A_0|
+ \label{eq:v7-polar-linking-reference}
+\end{equation}
+--- полярное разложение фоновой инцидентности. Тогда
+\begin{equation}
+ UU^*=I_{10},\qquad U^*U=P,\qquad \rank P=10,
+ \qquad \rank(I_{11}-P)=1.
+ \label{eq:v7-polar-linking-support}
+\end{equation}
+Для переменного прямоугольного поля $A$ определим две относительные
+Gram-кривизны
+\begin{equation}
+ C_s(A)=A^*A-A_0^*A_0,
+ \qquad
+ C_t(A)=AA^*-A_0A_0^*.
+ \label{eq:v7-polar-linking-end-curvatures}
+\end{equation}
+
+\section{Канонический знак разности}
+
+Полярная часть $U$ является элементом прямоугольного связывающего
+бимодуля. Индуцированная на нём кривизна равна
+\begin{equation}
+ \mathcal R_U(A)=C_t(A)U-UC_s(A).
+ \label{eq:v7-polar-linking-relative-curvature}
+\end{equation}
+Знак минус не является параметром: он следует из правого правила Лейбница
+для двусторонней связности
+\begin{equation}
+ \nabla\xi=d\xi+A_t\xi-\xi A_s.
+ \label{eq:v7-polar-linking-bimodule-connection}
+\end{equation}
+Это тот же механизм относительной моритовой кривизны, который был независимо
+зафиксирован в Томе~V.
+
+Самосопряжённое связывающее завершение имеет вид
+\begin{equation}
+ \mathbb F_U=
+ \begin{pmatrix}
+  0&\mathcal R_U\\
+  \mathcal R_U^*&0
+ \end{pmatrix}.
+ \label{eq:v7-polar-linking-selfadjoint-completion}
+\end{equation}
+Поэтому
+\begin{equation}
+ \frac14\|\mathbb F_U\|_{\rm HS}^2
+ =\frac12\|\mathcal R_U\|_{\rm HS}^2.
+ \label{eq:v7-polar-linking-half-trace-identity}
+\end{equation}
+Здесь множитель $1/2$ удаляет две ориентированные записи одного
+внедиагонального блока. Он не является относительным весом между рёберным и
+физическим секторами.
+
+\section{Почему опасный нулевой гессиан исчезает}
+
+Полярное разложение даёт точное переплетение фоновых углов:
+\begin{equation}
+ (A_0A_0^*)U=U(A_0^*A_0).
+ \label{eq:v7-polar-linking-background-intertwining}
+\end{equation}
+В точке $A=0$ обе кривизны имеют только постоянную фоновую часть, и она
+сокращается в~\eqref{eq:v7-polar-linking-relative-curvature}:
+\begin{equation}
+ \mathcal R_U(0)=0.
+ \label{eq:v7-polar-linking-zero-background}
+\end{equation}
+Поскольку $C_s(A)-C_s(0)$ и $C_t(A)-C_t(0)$ квадратичны по $A$, имеем
+\begin{equation}
+ \mathcal R_U(A)=O(A^2),
+ \qquad
+ \Hess_0\frac12\|\mathcal R_U(A)\|_{\rm HS}^2=0.
+ \label{eq:v7-polar-linking-zero-hessian}
+\end{equation}
+Следовательно, общий локальный функционал
+\begin{equation}
+ \mathcal S_{\rm link}(A)
+ =\mathcal S_E(A)+\frac12\|\mathcal R_U(A)\|_{\rm HS}^2
+ \label{eq:v7-polar-linking-action}
+\end{equation}
+наследует в нуле ровно рёберный запуск:
+\begin{equation}
+ \operatorname{SpecSign}\Hess_0\mathcal S_{\rm link}
+ =(7,0,20),
+ \qquad
+ \lambda_{\rm heavy}^{\min}=\frac{18}{5}.
+ \label{eq:v7-polar-linking-origin-signature}
+\end{equation}
+Семь выбранных корней неустойчивы, а двадцать конкурирующих направлений
+имеют положительную щель без настройки прежнего коэффициента $\beta$.
+
+\section{Полный гессиан выбранного вакуума}
+
+В точке $A=A_0$ обе относительные Gram-кривизны равны нулю. Линеаризация
+связывающей кривизны имеет вид
+\begin{align}
+ \delta\mathcal R_U
+ &=(A_0\delta A^*+\delta A A_0^*)U\nonumber\\
+ &\quad-U(A_0^*\delta A+\delta A^*A_0).
+ \label{eq:v7-polar-linking-linearization}
+\end{align}
+Её квадрат является положительной полуопределённой добавкой ранга $22$ с
+пятью нулевыми направлениями. Рёберный Hodge-блок заполняет оставшиеся
+нули. Полный 27-мерный результат равен
+\begin{equation}
+ \operatorname{SpecSign}\Hess_{A_0}\mathcal S_{\rm link}
+ =(0,0,27),
+ \qquad
+ \lambda_{\min}=3.9368554658\ldots.
+ \label{eq:v7-polar-linking-vacuum-signature}
+\end{equation}
+
+Индексный дефект не вставляется вручную. Полярная карта удовлетворяет
+$U(I-P)=0$, а смешанные вариации между опорой и дефектной линией входят в
+линеаризацию~\eqref{eq:v7-polar-linking-linearization}. Именно поэтому
+полная прямоугольная кривизна имеет ранг $22$, тогда как её сжатие только к
+согласованному углу теряло одно дополнительное направление.
+
+\section{Контроль ложных альтернатив}
+
+Знак суммы
+\begin{equation}
+ \mathcal R_U^{(+)}=C_tU+UC_s
+ \label{eq:v7-polar-linking-plus-channel}
+\end{equation}
+не является кривизной правого модуля. Он сохраняет общий фоновый угол и при
+той же связывающей нормировке даёт сигнатуру нуля
+\begin{equation}
+ (27,0,0),
+ \label{eq:v7-polar-linking-plus-fail}
+\end{equation}
+то есть делает неустойчивыми уже все направления.
+
+Произвольная фаза между двумя концами также не выводится. Смешанный член
+$\langle Z,D\rangle$ нечётен при обмене source/target и сокращается в
+Real-симметричном завершении. Поэтому положительный результат не является
+скрытой настройкой фазы или коэффициента.
+
+\begin{theorem}[Локальный полярно-связывающий родитель]
+Каноническая относительная кривизна
+$\mathcal R_U=C_tU-UC_s$ существует на уже выведенном полярном
+связывающем бимодуле $10\times11$. Её нулевой гессиан тождественно равен
+нулю, поскольку фоновая инцидентность переплетает два Gram-угла. В сумме с
+рёберной Hodge-нормой она даёт сигнатуру $(7,0,20)$ в нуле и строго
+положительный 27-мерный гессиан целевого вакуума. Ручной вес $\beta=1/2$
+для селективного запуска больше не требуется.
+\end{theorem}
+
+\begin{remark}
+Гейт является локальным допуском архитектуры, а не полным физическим
+замыканием. Следующий тест обязан получить одновременно рёберную Hodge-
+кривизну и $\mathcal R_U$ как блоки одной Real-суперсвязности с одним
+следом. До этого количественные отношения масс и нормировка кинетики не
+считаются выведенными.
+\end{remark}
+
+\begin{nogocriterion}[Запрет возврата к суммарному Gram-каналу]
+Нельзя после положительного относительного прохода добавлять прежнюю сумму
+$\|C_s\|^2+\|C_t\|^2$ или знак плюс и затем компенсировать её свободным
+весом. Это восстанавливает уже закрытый гессиан $(21,0,6)$ или усиливает
+провал до $(27,0,0)$.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item полярная коизометрия $11\to10$: \textbf{сохранена};
+ \item индексный дефект ранга один: \textbf{сохранён};
+ \item знак относительной кривизны: \textbf{выведен правилом Лейбница};
+ \item ручной относительный вес в нулевом гессиане: \textbf{не требуется};
+ \item сигнатура нуля: \textbf{$(7,0,20)$};
+ \item тяжёлая щель нуля: \textbf{$18/5$};
+ \item ранг связывающего вакуумного гессиана: \textbf{$22$};
+ \item полный вакуум: \textbf{$(0,0,27)$};
+ \item знак суммы: \textbf{провал $(27,0,0)$};
+ \item количественная нормировка масс: \textbf{открыта};
+ \item следующий гейт: \textbf{единая Real-связывающая суперсвязность}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_polar_transfer_cross_curvature_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-polar-linking-quillen}
+D.~Quillen,
+\emph{Superconnections and the Chern Character},
+Topology 24 (1985), 89--95.
+\bibitem{v7-polar-linking-kodaka-teruya}
+K.~Kodaka, T.~Teruya,
+\emph{The Strong Morita Equivalence for Inclusions of $C^*$-Algebras and
+Conditional Expectations for Equivalence Bimodules},
+arXiv:1609.08263.
+\bibitem{v7-polar-linking-project}
+Том~V, глава о связывающем родителе Мориты и двусторонней кривизне.
+\end{thebibliography}

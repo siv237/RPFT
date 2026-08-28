@@ -1,0 +1,85 @@
+{
+  "gate": "version7_single_scale_calibration_closure_gate",
+  "effective_lagrangian": {
+    "formula": "L=Z/2*sum_e |partial z_e|^2-kappa*S_mu(z)",
+    "canonical_field": "phi=sqrt(Z)*z",
+    "canonical_vacuum_amplitude": "v=sqrt(Z)*mu",
+    "effective_quartic": "lambda_eff=kappa/Z^2",
+    "single_quadratic_scale": "M0^2=kappa*mu^2/Z=lambda_eff*v^2"
+  },
+  "linear_spectrum_in_M0_units": {
+    "origin_eigenvalues": {
+      "minus_4": 12,
+      "plus_4": 10
+    },
+    "vacuum_eigenvalues": {
+      "zero": 6,
+      "plus_4": 10,
+      "plus_8": 6
+    },
+    "origin_signature": {
+      "negative": 12,
+      "zero": 0,
+      "positive": 10
+    },
+    "vacuum_signature": {
+      "negative": 0,
+      "zero": 6,
+      "positive": 16
+    },
+    "selected_radial_mass_over_M0": 2.8284271247461903,
+    "unwanted_mass_over_M0": 2.0,
+    "radial_to_unwanted_mass_ratio": 1.4142135623730951,
+    "radial_to_unwanted_correlation_length_ratio": 0.7071067811865475,
+    "one_mass_calibration_closes_linear_spectrum": true
+  },
+  "fixed_M0_degeneracy": {
+    "M0": 1.0,
+    "lambda_eff_values": [
+      0.25,
+      1.0,
+      4.0
+    ],
+    "canonical_v_values": [
+      2.0,
+      1.0,
+      0.5
+    ],
+    "selected_radial_masses": [
+      2.8284271247461903,
+      2.8284271247461903,
+      2.8284271247461903
+    ],
+    "unwanted_masses": [
+      2.0,
+      2.0,
+      2.0
+    ],
+    "quartic_vertex_proxies": [
+      0.25,
+      1.0,
+      4.0
+    ],
+    "codimension_one_tension_proxies_v2_M0": [
+      4.0,
+      1.0,
+      0.25
+    ],
+    "linear_spectrum_changes": false,
+    "interactions_and_nonlinear_energies_change": true
+  },
+  "kinetic_parent_status": {
+    "finite_trace_metric_eigenvalue": 3.0,
+    "finite_metric_positive_and_common": true,
+    "absolute_heat_kernel_kinetic_coefficient_derived": false,
+    "lambda_eff_fixed_by_current_parent": false,
+    "physical_time_normalization_derived": false
+  },
+  "verdict": {
+    "one_dimensionful_input_suffices_for_internal_linear_masses": true,
+    "dimensionless_mass_ratio_sqrt_2_predicted": true,
+    "one_input_suffices_for_full_nonlinear_EFT": false,
+    "status": "partial_positive_linear_one_scale_full_closure_open",
+    "next_gate": "derive or rule out the spacetime kinetic-to-Hodge-potential normalization from one product superconnection heat-kernel coefficient"
+  }
+}

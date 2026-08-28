@@ -1,0 +1,153 @@
+{
+  "fixed_support_compression": {
+    "endpoint_dimension": 21,
+    "fixed_endpoint_projector_is_admissible": true,
+    "full_chain_dimension": 42,
+    "maximum_physical_curvature_rank": 14,
+    "maximum_trace_compression_residual": 4.547473508864641e-13,
+    "pointwise_rank_normalization_is_smooth": false,
+    "pointwise_support_projector_jump_from_origin": 3.7416573867739396
+  },
+  "gate": "version7_minimal_curvature_support_trace_gate",
+  "generated_algebras": {
+    "combined_surrogate": {
+      "algebra": "C^54 direct_sum M21(C)",
+      "center_dimension": 55,
+      "faithful_normalized_trace_parameters": 54
+    },
+    "edge_diagonal_surrogate": {
+      "algebra_dimension": 54,
+      "carrier_dimension": 54,
+      "commutant_dimension": 54,
+      "generated_algebra": "C^54",
+      "minimum_nonzero_generator_gram_eigenvalue": 2.0,
+      "unique_normalized_trace": false
+    },
+    "linking_endpoint": {
+      "carrier_dimension": 21,
+      "commutant_dimension": 1,
+      "generated_factor": "M21(C)",
+      "smallest_nonzero_commutant_singular_value": 5.2050935227017865,
+      "unique_normalized_trace": true
+    },
+    "physical_factor_model": {
+      "algebra": "M22(C) direct_sum M21(C)",
+      "center_dimension": 2,
+      "faithful_normalized_trace_parameters": 1
+    }
+  },
+  "physical_hessian_control": {
+    "qualitative_selector_independent_of_trace_weight": true,
+    "quantitative_spectrum_independent_of_trace_weight": false,
+    "scan": [
+      {
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_linking_weight": 0.25,
+        "vacuum_maximum_eigenvalue": 24.0,
+        "vacuum_minimum_eigenvalue": 3.768427732924391,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_linking_weight": 1.0,
+        "vacuum_maximum_eigenvalue": 24.0,
+        "vacuum_minimum_eigenvalue": 4.235590449919224,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_linking_weight": 2.5714285714285716,
+        "vacuum_maximum_eigenvalue": 46.772136008875336,
+        "vacuum_minimum_eigenvalue": 4.939302351401821,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_linking_weight": 4.0,
+        "vacuum_maximum_eigenvalue": 69.32058237257078,
+        "vacuum_minimum_eigenvalue": 5.428673114063864,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      }
+    ]
+  },
+  "simple_completion_cost": {
+    "existing_canonical_cross_connector_found": false,
+    "physical_completion": "M43(C)",
+    "physical_offdiagonal_complex_dimension": 462,
+    "surrogate_completion": "M75(C)",
+    "surrogate_offdiagonal_complex_dimension": 1134
+  },
+  "trace_normalization": {
+    "central_weight_scan": [
+      {
+        "edge_central_weight": 0.2,
+        "linking_central_weight": 0.8,
+        "relative_linking_density": 10.285714285714286
+      },
+      {
+        "edge_central_weight": 0.5,
+        "linking_central_weight": 0.5,
+        "relative_linking_density": 2.5714285714285716
+      },
+      {
+        "edge_central_weight": 0.8,
+        "linking_central_weight": 0.19999999999999996,
+        "relative_linking_density": 0.6428571428571427
+      }
+    ],
+    "standard_one_copy_M43_restriction": {
+      "edge_central_weight": 0.5116279069767442,
+      "intrinsic_to_abstract_direct_sum_algebra": false,
+      "linking_central_weight": 0.4883720930232558,
+      "relative_unnormalized_sector_weight": 1.0
+    },
+    "standard_one_copy_M75_restriction": {
+      "edge_central_weight": 0.72,
+      "intrinsic_to_abstract_direct_sum_algebra": false,
+      "linking_central_weight": 0.28,
+      "relative_unnormalized_sector_weight": 1.0
+    }
+  },
+  "verdict": {
+    "common_direct_sum_trace_unique": false,
+    "declaring_full_matrix_container_is_derivation": false,
+    "linking_factor_trace_unique": true,
+    "mass_metric_derived": false,
+    "minimal_support_produces_unique_common_trace": false,
+    "next_gate": "version7_qualitative_parent_mass_metric_freeze_gate",
+    "qualitative_parent_closed": true,
+    "status": "minimal_support_trace_no_go_qualitative_parent_mass_metric_freeze_open"
+  }
+}

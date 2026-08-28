@@ -1,0 +1,150 @@
+{
+  "gate": "version7_four_vertex_vectorlike_selector_gate",
+  "carrier": {
+    "new_vertices": {
+      "X_L": [
+        "C",
+        "C",
+        "L"
+      ],
+      "X_R": [
+        "C",
+        "C",
+        "R"
+      ],
+      "Y_L": [
+        "H",
+        "C",
+        "L"
+      ],
+      "Y_R": [
+        "H",
+        "C",
+        "R"
+      ]
+    },
+    "strict_first_order_edges_total": 14,
+    "baseline_edges": [
+      "L_L--e_R",
+      "Q_L--d_R",
+      "Q_L--u_R"
+    ],
+    "new_allowed_edges": [
+      "L_L--X_R",
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "X_R--Y_L",
+      "Y_L--Y_R",
+      "Y_L--e_R"
+    ],
+    "desired_cycle_plus_vector_masses": [
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "Y_L--Y_R"
+    ],
+    "allowed_but_unselected_edges": [
+      "L_L--X_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_R--Y_L",
+      "Y_L--e_R"
+    ]
+  },
+  "admission": {
+    "strict_first_order": true,
+    "formal_Real_completion": true,
+    "local_anomalies_cancel_pairwise": true,
+    "Witten_doublet_parity_even": true
+  },
+  "family_matrix_cost": {
+    "new_allowed_3x3_complex_matrices": 11,
+    "raw_real_parameters_before_quotients": 198,
+    "desired_nonbaseline_matrices": 6,
+    "allowed_matrices_requiring_zero_or_relation": 5
+  },
+  "generic_mass_kernel": {
+    "charged_singlet_matrix_shape": [
+      3,
+      6
+    ],
+    "charged_singlet_rank": 3,
+    "right_kernel_dimension": 3,
+    "weak_doublet_matrix_shape": [
+      6,
+      3
+    ],
+    "weak_doublet_rank": 3,
+    "left_kernel_dimension": 3,
+    "one_light_chiral_direction_per_generation_survives": true,
+    "kernel_orientation_selected_by_current_action": false
+  },
+  "chiral_index_comparison": {
+    "H15_without_nuR": {
+      "Q": 1,
+      "u": -1,
+      "d": -1,
+      "L": 1,
+      "e": -1
+    },
+    "four_vertex_extension": {
+      "Q": 1,
+      "u": -1,
+      "d": -1,
+      "L": 1,
+      "e": -1
+    },
+    "complete_mirror_generation": {
+      "Q": 0,
+      "u": 0,
+      "d": 0,
+      "L": 0,
+      "e": 0
+    },
+    "four_vertex_preserves_H15_indices": true,
+    "complete_mirror_generation_preserves_H15_indices": false
+  },
+  "selector_obstruction": {
+    "coarse_coordinate_duplicates": {
+      "H/C/L": [
+        "L_L",
+        "Y_L"
+      ],
+      "C/M3/R": [
+        "u_R",
+        "d_R"
+      ],
+      "C/C/R": [
+        "e_R",
+        "X_R"
+      ]
+    },
+    "exact_gauge_duplicate_types": {
+      "H/C/L;Y=-1/2": [
+        "L_L",
+        "Y_L"
+      ],
+      "C/C/R;Y=-1": [
+        "e_R",
+        "X_R"
+      ]
+    },
+    "unchanged_algebra_distinguishes_old_from_new_copies": false,
+    "desired_six_of_eleven_new_edges_selected": false,
+    "arbitrary_Yukawa_enlargement_avoided": false
+  },
+  "verdict": {
+    "four_vertex_vectorlike_closure_structurally_admitted": true,
+    "complete_mirror_generation_rejected_by_chiral_index": true,
+    "canonical_single_source_parent_obtained": false,
+    "status": "conditional_positive_selector_missing",
+    "next_gate": "derive a multiplicity-space selector from the existing affine/Hodge parent and test whether it fixes the light kernels and edge menu"
+  }
+}

@@ -1,0 +1,214 @@
+\chapter{Quotient кривизны длины два и каноническая высота связывающей цепи}
+\label{ch:v7-linking-chain-degree-two-curvature-quotient-gate}
+
+\section{Две разные операции, которые нельзя смешивать}
+
+Трёхступенная суперсвязность предыдущего гейта дала точную факторизацию
+\begin{equation}
+ (d_A^2)_{20}=B_1B_0=\mathcal R_U,
+ \label{eq:v7-degree-two-endpoint-block}
+\end{equation}
+но её полный самосопряжённый квадрат содержит также диагональные
+backtracking-блоки. Теперь необходимо различить:
+\begin{enumerate}
+ \item стандартный представленный фактор двухформ Конна;
+ \item относительное чтение кривизны по степени цепи.
+\end{enumerate}
+Первое является quotient универсального дифференциального исчисления по
+junk-идеалу. Второе является производной mapping-cone типа. Совпадение их
+результатов нельзя предполагать.
+
+\section{Обычный junk-фактор удаляет нужный путь}
+
+Рассмотрим узловую алгебру
+\begin{equation}
+ \mathcal A_{\rm node}=\mathbb C^3
+ \label{eq:v7-degree-two-node-algebra}
+\end{equation}
+на блоках
+\begin{equation}
+ H_0=\mathbb C^{11},\qquad
+ H_1=\mathbb C^{21},\qquad
+ H_2=\mathbb C^{10}.
+ \label{eq:v7-degree-two-node-blocks}
+\end{equation}
+Её минимальные идемпотенты действуют как единицы соответствующих блоков, а
+оператор Дирака равен $Q_A=d_A+d_A^*$.
+
+Представленные формы вычисляются стандартно:
+\begin{align}
+ \pi_D(e_i\,de_j)&=e_i[Q_A,e_j],\nonumber\\
+ \pi_D(e_i\,de_j\,de_k)&=e_i[Q_A,e_j][Q_A,e_k],
+ \label{eq:v7-degree-two-represented-forms}
+\end{align}
+а junk второй степени равен
+\begin{equation}
+ J_D^2=\pi_D\!\left(d\ker\pi_D|_{\Omega^1}\right).
+ \label{eq:v7-degree-two-junk}
+\end{equation}
+
+На двадцати общих комплексных полях $A$ машинный расчёт стабильно даёт
+\begin{equation}
+ \rank\pi_D(\Omega^1)=4,\qquad
+ \rank\pi_D(\Omega^2)=6,\qquad
+ \rank J_D^2=2,
+ \label{eq:v7-degree-two-ranks}
+\end{equation}
+и потому
+\begin{equation}
+ \rank\Omega_D^2=4.
+ \label{eq:v7-degree-two-quotient-rank}
+\end{equation}
+Но оба крайних блока $0\to2$ и $2\to0$ целиком лежат в junk. Максимальный
+остаток их проекции вне $J_D^2$ меньше $10^{-10}$.
+
+\begin{nogocriterion}[No-go обычного junk-объяснения]
+Стандартный фактор $\Omega_D^2/J_D^2$ не сохраняет
+$B_1B_0=\mathcal R_U$, а удаляет его. Поэтому правильный локальный
+селектор нельзя объявлять обычной двухформой Конна данного трёхузлового
+исчисления.
+\end{nogocriterion}
+
+\section{Канонический оператор степени цепи}
+
+Трёхступенный носитель имеет собственный целочисленный оператор степени
+\begin{equation}
+ N=\operatorname{diag}(0\cdot I_{11},1\cdot I_{21},2\cdot I_{10}).
+ \label{eq:v7-degree-two-number-operator}
+\end{equation}
+Его последовательные разности равны единице. Поэтому $N$ определён
+структурой цепи с точностью до добавления скаляра и смены ориентации.
+Обе неоднозначности исчезают в норме коммутатора.
+
+Для полной чётной кривизны
+\begin{equation}
+ F_A=Q_A^2-Q_{A_0}^2
+ \label{eq:v7-degree-two-full-curvature}
+\end{equation}
+определим нормированную относительную производную
+\begin{equation}
+ \delta_N(F_A)=\frac12[N,F_A].
+ \label{eq:v7-degree-two-relative-derivative}
+\end{equation}
+Диагональные блоки имеют разность степеней ноль и исчезают. Крайние блоки
+имеют разность степеней два и сохраняются с единичным коэффициентом:
+\begin{equation}
+ \delta_N(F_A)=
+ \begin{pmatrix}
+ 0&0&-\mathcal R_U^*\\
+ 0&0&0\\
+ \mathcal R_U&0&0
+ \end{pmatrix}.
+ \label{eq:v7-degree-two-relative-blocks}
+\end{equation}
+Следовательно,
+\begin{equation}
+ \|\delta_N(F_A)\|_{\rm HS}^2
+ =2\|\mathcal R_U(A)\|_{\rm HS}^2.
+ \label{eq:v7-degree-two-relative-norm}
+\end{equation}
+На случайных полях максимальные остатки блочного тождества и нормы меньше
+$10^{-8}$.
+
+\section{Ковариантность и ориентация}
+
+Оператор $N$ скалярен на каждом узловом блоке и коммутирует с
+блок-диагональной gauge-группой. Поэтому
+\begin{equation}
+ \delta_N(gF_Ag^*)=g\,\delta_N(F_A)\,g^*.
+ \label{eq:v7-degree-two-covariance}
+\end{equation}
+Максимальный машинный остаток ковариантности меньше $10^{-10}$.
+
+Смена ориентации цепи заменяет $N$ на $2I-N$ и меняет знак
+$\delta_N$, но не её норму:
+\begin{equation}
+ \|\delta_{2I-N}(F_A)\|_{\rm HS}
+ =\|\delta_N(F_A)\|_{\rm HS}.
+ \label{eq:v7-degree-two-orientation-independence}
+\end{equation}
+Таким образом, выбор физического направления цепи не вводит непрерывного
+веса.
+
+\section{Относительное Hodge-действие}
+
+Естественный относительный функционал имеет вид
+\begin{equation}
+ \mathcal S_{\rm rel}
+ =\mathcal S_E+\frac14
+ \|\delta_N(Q_A^2-Q_{A_0}^2)\|_{\rm HS}^2
+ =\mathcal S_E+\frac12\|\mathcal R_U(A)\|_{\rm HS}^2.
+ \label{eq:v7-degree-two-relative-action}
+\end{equation}
+Коэффициент $1/2$ справа является удалением двух Real-ориентаций крайнего
+блока, а множитель $1/2$ в $\delta_N$ фиксирован разностью степеней два.
+Непрерывный параметр отсутствует.
+
+Повторный гессиан даёт
+\begin{align}
+ (n_-,n_0,n_+)_{0}&=(7,0,20),
+ &\lambda_{\rm heavy}^{\min}&=\frac{18}{5},
+ \label{eq:v7-degree-two-origin-signature}\\
+ (n_-,n_0,n_+)_{A_0}&=(0,0,27),
+ &\lambda_{\min}&=3.9368554658\ldots.
+ \label{eq:v7-degree-two-vacuum-signature}
+\end{align}
+
+\begin{theorem}[Канонический relative mapping-cone quotient]
+Оператор степени трёхступенной цепи канонически задаёт производную
+$\delta_N=\frac12[N,\cdot]$, которая удаляет все диагональные
+backtracking-блоки полного квадрата и сохраняет ровно относительную
+полярную кривизну $\mathcal R_U$. Полученная положительная норма
+калибровочно ковариантна, не зависит от ориентации цепи и воспроизводит
+правильные нулевой и вакуумный гессианы без непрерывного секторного веса.
+\end{theorem}
+
+\begin{remark}
+Это положительный результат для relative mapping-cone наблюдаемого, но не
+для обычного Connes-junk quotient: последний удаляет нужный endpoint-класс.
+Остаётся вывести рёберный Hodge-момент и $\delta_N(F_A)$ как ортогональные
+компоненты одной общей Hodge-метрики, а не как сумму двух уже выбранных норм.
+\end{remark}
+
+\begin{nogocriterion}[Запрет переименования mapping cone в junk]
+Нельзя ссылаться на обычный junk-идеал как на источник
+\eqref{eq:v7-degree-two-relative-action}: его прямой аудит даёт
+противоположный результат. Физическое право использовать
+$\delta_N(F_A)$ должно следовать из цепной степени, граничного observable
+или общей относительной Hodge-структуры.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item узловая алгебра: \textbf{$\mathbb C^3$};
+ \item ранги $\Omega^1,\Omega^2,J^2$: \textbf{$4,6,2$};
+ \item ранг обычного quotient: \textbf{$4$};
+ \item endpoint-путь в обычном junk: \textbf{да};
+ \item обычный junk-маршрут: \textbf{закрыт};
+ \item оператор степени $N=(0,1,2)$: \textbf{каноничен};
+ \item $\delta_N$ удаляет возвраты: \textbf{точно};
+ \item $\delta_N$ сохраняет $\mathcal R_U$: \textbf{точно};
+ \item gauge-ковариантность: \textbf{получена};
+ \item ориентационная независимость нормы: \textbf{получена};
+ \item нулевая сигнатура: \textbf{$(7,0,20)$};
+ \item вакуумная сигнатура: \textbf{$(0,0,27)$};
+ \item общий Hodge-след двух компонент: \textbf{открыт};
+ \item следующий гейт: \textbf{общий цепно-Hodge relative trace}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_linking_chain_degree_two_curvature_quotient_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-degree-two-schucker}
+T.~Sch\"ucker, J.-M.~Zylinski,
+\emph{Connes' Model Building Kit},
+arXiv:hep-th/9312186.
+\bibitem{v7-degree-two-roepstorff}
+G.~Roepstorff,
+\emph{Superconnections and the Higgs Field},
+arXiv:hep-th/9801040.
+\bibitem{v7-degree-two-project}
+Том~IV, гейт junk no-go и канонического mapping-cone селектора.
+\end{thebibliography}

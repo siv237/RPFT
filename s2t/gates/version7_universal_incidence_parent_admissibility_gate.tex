@@ -1,0 +1,158 @@
+\chapter{Базисно-независимый допуск универсального инцидентного родителя}
+\label{ch:v7-universal-incidence-parent-admissibility-gate}
+
+\section{Проверяемая предпосылка предыдущего гейта}
+
+Модулярно-графовый кандидат использовал максимальную бинарную смежность
+$A_{\max}$ и получил на копийной плоскости
+\begin{equation}
+ qA_{\max}^2q
+ =3\begin{pmatrix}1&1\\1&1\end{pmatrix}.
+ \label{eq:v7-incidence-labeled-square}
+\end{equation}
+Теперь требуется проверить, является ли эта матрица каноническим следствием
+представления и условия первого порядка или уже содержит выбор когерентного
+базиса стрелок.
+
+\section{Истинная симметрия изотипической кратности}
+
+Для двух одинаковых бимодулей физическая алгебра действует как
+\begin{equation}
+ \pi(a)=\pi_0(a)\otimes I_W,
+ \qquad W\simeq\mathbb C^2.
+ \label{eq:v7-incidence-isotypic-action}
+\end{equation}
+До задания дополнительного оператора все замены базиса $U\in U(W)$ оставляют
+представленные данные неизменными. Поэтому любой канонически и функториально
+построенный оператор $T$ на $W$ обязан удовлетворять
+\begin{equation}
+ UTU^\dagger=T\quad\text{для всех }U\in U(2),
+ \qquad T=\lambda I_2.
+ \label{eq:v7-incidence-naturality-schur}
+\end{equation}
+Real-условие может сузить группу до $O(2)$, но полный ортогональный
+коммутант на комплексной двумерной плоскости также скалярен.
+
+\section{Независимые стрелки и скрытая когерентная сумма}
+
+Для каждого общего соседа условие первого порядка разрешает две независимые
+стрелки, обозначенные ортонормированными векторами $e_1,e_2$ пространства
+копий. Базисно-независимая ковариация полного разрешённого пространства
+равна
+\begin{equation}
+ C_{\rm iso}^{(1)}
+ =|e_1\rangle\langle e_1|+|e_2\rangle\langle e_2|
+ =I_2.
+ \label{eq:v7-incidence-incoherent-one-neighbour}
+\end{equation}
+После трёх общих соседей получается
+\begin{equation}
+ C_{\rm iso}=3I_2,
+ \qquad
+ \frac13C_{\rm iso}-I_2=0.
+ \label{eq:v7-incidence-incoherent-three-neighbours}
+\end{equation}
+Это единственный результат, не зависящий от базиса стрелочного пространства.
+
+Напротив, бинарная матрица предыдущего гейта использует для каждого соседа
+когерентный столбец $b=e_1+e_2$:
+\begin{equation}
+ bb^\dagger
+ =\begin{pmatrix}1&1\\1&1\end{pmatrix}
+ =I_2+\sigma_x.
+ \label{eq:v7-incidence-coherent-column}
+\end{equation}
+Именно перекрёстные члены
+$|e_1\rangle\langle e_2|+|e_2\rangle\langle e_1|$ создают
+$\sigma_x$. При независимой смене относительной фазы
+\begin{equation}
+ e_2\longmapsto e^{i\varphi}e_2
+ \quad\Longrightarrow\quad
+ bb^\dagger-I_2
+ =\begin{pmatrix}0&e^{-i\varphi}\\e^{i\varphi}&0\end{pmatrix},
+ \label{eq:v7-incidence-relative-phase-orbit}
+\end{equation}
+поэтому выбор $\varphi=0$ не следует из бинарного факта существования двух
+стрелок.
+
+\section{Точный твирлинг}
+
+Усреднение по четырём матрицам Паули уже даёт полный унитарный первый момент:
+\begin{equation}
+ \frac14\sum_{P\in\{I,\sigma_x,\sigma_y,\sigma_z\}}
+ PTP^\dagger=\frac{\Tr T}{2}I_2.
+ \label{eq:v7-incidence-pauli-twirl}
+\end{equation}
+Следовательно,
+\begin{equation}
+ \operatorname{Twirl}(\sigma_x)=0,
+ \qquad
+ \operatorname{Twirl}(P_-)=\frac12I_2.
+ \label{eq:v7-incidence-selector-twirl}
+\end{equation}
+Машинный аудит получает нулевые остатки. Усреднение по диэдральному
+подмножеству $O(2)$ даёт тот же результат, поэтому Real-структура не
+восстанавливает направление.
+
+\section{Граница универсальной дифференциальной оболочки}
+
+Универсальная дифференциальная алгебра $\Omega_{\rm univ}(\mathcal A)$
+канонична как алгебраический объект, но её представленная форма использует
+коммутатор с уже заданным оператором Дирака:
+\begin{equation}
+ \pi_D(a_0\,da_1\cdots da_n)
+ =\pi(a_0)[D,\pi(a_1)]\cdots[D,\pi(a_n)].
+ \label{eq:v7-incidence-represented-universal-form}
+\end{equation}
+Поэтому она ограничивает допустимые блоки после выбора $D$, но не создаёт
+их общую фазу или единичный инцидентный столбец до выбора $D$. Диаграмма
+Краевского также кодирует кратности и стрелки конкретной спектральной тройки;
+множество всех разрешённых условием первого порядка стрелок не является
+каноническим ненулевым оператором Дирака.
+
+\begin{theorem}[Запрет внутреннего вывода единичной инцидентности]
+Из представления с кратностью $W\simeq\mathbb C^2$, Real-структуры,
+градуировки и линейного пространства всех первопорядково допустимых блоков
+канонически получается только скалярная ковариация на $W$. Оператор
+$\sigma_x$ предыдущего гейта возникает лишь после когерентного отождествления
+двух независимых стрелок, то есть после выбора относительной фазы и
+ранга-один в стрелочном пространстве.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет скрытого единичного столбца]
+Нельзя считать бинарное наличие двух рёбер доказательством того, что их
+физические амплитуды равны и фазово синхронизированы. Для открытия маршрута
+необходимо отдельное поле или конденсат когерентности стрелок, чьё действие
+выводит ранга-один ковариацию и проходит полный гессиан.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item полный $U(2)$ изотипической кратности: \textbf{сохраняется};
+ \item базисно-независимая ковариация трёх соседей: \textbf{$3I_2$};
+ \item нецентральный обмен из пространства всех стрелок: \textbf{нет};
+ \item бинарный $A_{\max}$ требует когерентной суммы: \textbf{да};
+ \item относительная фаза выведена: \textbf{нет};
+ \item Real/O(2) выбирает направление: \textbf{нет};
+ \item универсальная оболочка создаёт $D$: \textbf{нет};
+ \item прежний условный модулярный расчёт: \textbf{математически сохранён};
+ \item его внутренний родительский допуск: \textbf{закрыт};
+ \item следующий гейт: \textbf{ранга-один конденсат когерентности стрелок}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_universal_incidence_parent_admissibility_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7incidence-krajewski}
+T.~Krajewski,
+\emph{Classification of finite spectral triples},
+Journal of Geometry and Physics 28 (1998), 1--30;
+arXiv:hep-th/9701081.
+\bibitem{v7incidence-cacic}
+B.~\v Caci\'c,
+\emph{Moduli spaces of Dirac operators for finite spectral triples},
+Journal of Noncommutative Geometry 4 (2010), 507--545;
+arXiv:0902.2068.
+\end{thebibliography}

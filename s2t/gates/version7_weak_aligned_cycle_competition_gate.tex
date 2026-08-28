@@ -1,0 +1,116 @@
+\chapter{Конкуренция выживших циклов в точном Gaussian-следе}
+\label{ch:v7-weak-aligned-cycle-competition-gate}
+
+\section{Полный одно-поколенческий носитель}
+
+Рассмотрим полный $21$-мерный конечный оператор на вершинах
+$H_{15}\oplus X_L\oplus X_R\oplus Y_L\oplus Y_R$. Singlet-фон содержит
+три старых ребра и четыре ненулевые gauge-синглетные амплитуды. Тяжёлое
+пространство двух выживших циклов имеет разложение
+\begin{equation}
+ \mathcal E_{
+m heavy}^{\mathbb R}
+ =\mathcal E_d^{\mathbb R}\oplus\mathcal E_W^{\mathbb R},
+ \qquad \dim_{\mathbb R}\mathcal E_d=12,
+ \quad \dim_{\mathbb R}\mathcal E_W=8.
+ \label{eq:v7-weak-competition-heavy-split}
+\end{equation}
+
+Для чистого теплового профиля проверяется точный функционал
+\begin{equation}
+ S_t(\Phi)=\Tr e^{-t\Phi^2},\qquad t>0.
+ \label{eq:v7-weak-competition-exact-gaussian}
+\end{equation}
+
+\section{Точный спектральный гессиан}
+
+Если $\Phi_0=U\operatorname{diag}(\lambda_i)U^\dagger$ и
+$E_a'=U^\dagger E_aU$, то формула Далецкого--Крейна даёт
+\begin{equation}
+ (H_t)_{ab}=\sum_{i,j}g_t(\lambda_i,\lambda_j)
+ (E_a')_{ij}(E_b')_{ji},
+ \qquad
+ g_t(x,y)=\frac{f_t'(x)-f_t'(y)}{x-y},
+ \quad f_t(x)=e^{-tx^2},
+ \label{eq:v7-weak-competition-divided-hessian}
+\end{equation}
+с диагональным продолжением $g_t(x,x)=f_t''(x)$. Это вычисляет весь
+экспоненциальный остаток без усечения по $a_6$.
+
+Down- и weak-блоки гессиана ортогональны:
+\begin{equation}
+ H_t=H_d(t)\oplus H_W(t).
+ \label{eq:v7-weak-competition-block-split}
+\end{equation}
+Однако их знаки различаются. При $t=1$ получено
+\begin{align}
+ \Spec H_d(1)&=\{0.041312^{\times6},\ 0.736618^{\times6}\},\nonumber\\
+ \Spec H_W(1)&=\{-1.280223^{\times2},-1.004339,-0.558141,
+ -0.265457^{\times2},-0.093662^{\times2}\}.
+ \label{eq:v7-weak-competition-t-one-spectrum}
+\end{align}
+Следовательно, даже там, где цветная down-пара стабилизируется, все восемь
+вещественных weak-направлений ещё отрицательны.
+
+\section{Профильный проход и корневые вариации}
+
+Логарифмический проход по $401$ точке
+\begin{equation}
+ 10^{-4}\le t\le10^2
+ \label{eq:v7-weak-competition-scan-domain}
+\end{equation}
+не нашёл ни одного $t$ с неотрицательным $H_W(t)$. При малом $t$ это
+следует уже из $S_t=21-t\Tr\Phi^2+O(t^2)$; при большом $t$ отрицательный
+вклад связи нулевой моды фонового пути $P_3$ с путём $P_6$ стремится к нулю
+с отрицательной стороны.
+
+Кроме того, singlet-фон не является стационарной точкой автономного
+Gaussian-функционала. Например, при $t=1$ семь корневых производных равны
+\begin{equation}
+ (-4.414553,-4.414553,-0.549001,-0.635003,
+  -0.866155,-0.093662,-1.407496),
+ \label{eq:v7-weak-competition-root-tadpoles}
+\end{equation}
+и потому не исчезают.
+
+\begin{theorem}[Запрет автономного точного Gaussian-родителя]
+На полном $21$-мерном носителе точный функционал $\Tr e^{-t\Phi^2}$ не
+продолжает singlet-Hodge вакуум в общий устойчивый родитель. Down-блок имеет
+положительное окно, но weak-блок сохраняет отрицательную моду на всём
+проверенном диапазоне и в обоих асимптотических пределах. Одновременно
+ненулевые корневые производные сдвигают сам фон.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет ручного сложения двух действий]
+Нельзя исправить результат добавлением прежнего Hodge-потенциала с
+произвольным весом: такой вес является новым параметром. Требуется один
+точный функционал, чьи квадратичный, квартичный и циклический уровни
+одновременно порождают singlet-вакуум и стабилизируют weak-конкурента.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item комплексная размерность полного носителя: \textbf{$21$};
+ \item вещественная размерность тяжёлого сектора: \textbf{$20$};
+ \item смешивание down--weak в гессиане: \textbf{ноль};
+ \item положительное окно down-блока: \textbf{есть};
+ \item положительное окно полного weak-блока: \textbf{нет};
+ \item корневые tadpole автономного Gaussian: \textbf{ненулевые};
+ \item точный Gaussian как общий родитель: \textbf{не проходит};
+ \item итог: \textbf{no-go автономного профиля};
+ \item следующий гейт: \textbf{единый точный Hodge--cycle функционал}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_weak_aligned_cycle_competition_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-weak-daleckii}
+V.~Noferini, \emph{A Daleckii--Krein Formula for the Fr\'echet Derivative
+of a Generalized Matrix Function}, SIAM Journal on Matrix Analysis and
+Applications 38 (2017), 434--457.
+\bibitem{v7-weak-vassilevich}
+D.~V.~Vassilevich, \emph{Heat Kernel Expansion: User's Manual}, Physics
+Reports 388 (2003), 279--360; arXiv:hep-th/0306138.
+\end{thebibliography}

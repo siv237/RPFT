@@ -1,0 +1,166 @@
+\chapter{Полный калибровочно-взвешенный носитель рёбер}
+\label{ch:v7-full-gauge-weighted-edge-carrier-gate}
+
+\section{Минимальный подъём полных блоков}
+
+Редуцированный Hodge-родитель использовал одно комплексное число на ребро.
+Теперь раскроем минимальный калибровочный мультиплет каждого блока, стягивая
+тождественным интертвинером общий фактор концов. Для представления
+\begin{equation}
+ R_e=(d_3,d_2)_{Y_e}
+ \label{eq:v7-full-edge-representation}
+\end{equation}
+следовые индексы в стандартной нормировке равны
+\begin{equation}
+ I_1(e)=d_3d_2Y_e^2,qquad
+ I_2(e)=d_3T_2(R_e),qquad
+ I_3(e)=d_2T_3(R_e),
+ \label{eq:v7-full-edge-indices}
+\end{equation}
+где $T(\mathbf2)=T(\mathbf3)=1/2$. Именно представления на конечном
+гильбертовом пространстве определяют коэффициенты gauge-кривизны в
+спектральном действии \cite{v7-full-edge-spectral-action}.
+
+Полный список одиннадцати блоков имеет вид
+\begin{equation}
+\begin{array}{c|c|c}
+e&R_e&\text{статус}\\ \hline
+L_LY_R&(1,1)_0&*\\
+Q_LY_R&(3,1)_{2/3}&*\\
+X_LX_R&(1,1)_0&*\\
+X_Le_R&(1,1)_0&*\\
+X_Lu_R&(3,1)_{5/3}&*\\
+Y_LY_R&(1,1)_0&*\\ \hline
+L_LX_R&(1,2)_{1/2}&+\\
+X_LY_R&(1,2)_{1/2}&+\\
+X_Ld_R&(3,1)_{2/3}&+\\
+Y_LX_R&(1,2)_{1/2}&+\\
+Y_Le_R&(1,2)_{1/2}&+
+\end{array}
+ \label{eq:v7-full-edge-multiplet-table}
+\end{equation}
+Звёздочкой отмечены шесть рёбер, выбранных $P_*$; знаком плюс --- пять
+конкурирующих. Стрелки диаграммы кодируют массовые и Yukawa-блоки между
+хиральными мультиплетами, поэтому такое раскрытие является необходимым до
+физической интерпретации потенциала \cite{v7-full-edge-krajewski}.
+
+\section{Что переживает физические веса}
+
+Пусть каждый полный блок имеет положительный следовой вес $w_e$. Тогда
+естественный блочно-радиальный подъём прежнего потенциала равен
+\begin{equation}
+ \mathcal S_{\rm full}(\phi)
+ =\sum_{e\in E_*}w_e(\|\phi_e\|^2-\mu^2)^2
+ +\sum_{e\notin E_*}w_e
+ (\|\phi_e\|^4+2\mu^2\|\phi_e\|^2).
+ \label{eq:v7-full-edge-weighted-potential}
+\end{equation}
+При любых $w_e>0$ множество минимумов сохраняет опору
+\begin{equation}
+ \|\phi_e\|=\mu\quad(e\in E_*),qquad
+ \phi_e=0\quad(e\notin E_*).
+ \label{eq:v7-full-edge-weighted-vacuum}
+\end{equation}
+Следовательно, положительные физические кратности не меняют сам селектор
+``шесть из одиннадцати''.
+
+Суммарные комплексные размерности выбранной и конкурирующей частей равны
+\begin{equation}
+ d_* =10,qquad d_+=11.
+ \label{eq:v7-full-edge-dimensions}
+\end{equation}
+До gauge-quotient гессиан блочно-радиального потенциала имеет сигнатуры
+\begin{equation}
+ (n_-,n_0,n_+)_{0}=(20,0,22),qquad
+ (n_-,n_0,n_+)_{*}=(0,14,28).
+ \label{eq:v7-full-edge-hessian-signatures}
+\end{equation}
+Четырнадцать нулей являются угловыми направлениями сфер ненулевых полных
+мультиплетов; часть из них может быть gauge-вертикальной.
+
+\section{Решающий цветовой тест}
+
+Среди шести обязательных ненулевых блоков находятся
+\begin{equation}
+ \phi_{Q_LY_R}\in(3,1)_{2/3},qquad
+ \phi_{X_Lu_R}\in(3,1)_{5/3}.
+ \label{eq:v7-full-edge-selected-colored-fields}
+\end{equation}
+Фундаментальное представление $\mathbf3$ не содержит ненулевого
+$SU(3)$-инвариантного вектора:
+\begin{equation}
+ (\mathbb C^3)^{SU(3)}=\{0\}.
+ \label{eq:v7-full-edge-no-color-invariant-vector}
+\end{equation}
+Но вакуум \eqref{eq:v7-full-edge-weighted-vacuum} требует норму $\mu>0$
+для обоих цветных полей. Поэтому его стабилизатор является собственной
+подгруппой $SU(3)$; полный цвет неизбежно нарушен. Никакой положительный
+вес $w_e$, семейная кратность или Real-полуслед этого вывода не меняют.
+
+Калибровочные индексы рёбер дополнительно подтверждают неоднородность:
+\begin{equation}
+ (I_1,I_2,I_3)_{E_*}
+ =\left(\frac{29}{3},0,1\right),qquad
+ (I_1,I_2,I_3)_{E\setminus E_*}
+ =\left(\frac{10}{3},2,\frac12\right).
+ \label{eq:v7-full-edge-sector-indices}
+\end{equation}
+На всех одиннадцати блоках получается
+\begin{equation}
+ (I_1,I_2,I_3)_{E}=\left(13,2,\frac32\right),
+ \label{eq:v7-full-edge-total-indices}
+\end{equation}
+так что один прежний индекс $q_G=2$ не описывает полный carrier.
+
+\begin{theorem}[Устойчивость опоры и цветовой запрет]
+Полный минимальный gauge-подъём сохраняет точную опору $P_*$ при любых
+положительных следовых весах: шесть выбранных блоков остаются ненулевыми,
+пять конкурирующих --- нулевыми. Однако два выбранных блока являются
+цветовыми триплетами, а Hodge-вакуум требует их ненулевых норм. Поэтому
+текущий шестирёберный вакуум не сохраняет $SU(3)_c$ и не может быть
+физическим вакуумом Стандартной модели.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет цветного фундаментального конденсата]
+Нельзя скрыть цветовой разрыв нормировкой trace, gauge-quotient или выбором
+ориентации триплетов. Полный $SU(3)_c$ сохраняется только при нулевых
+фундаментальных цветных вакуумных значениях. Рёбра $Q_LY_R$ и $X_Lu_R$
+могут остаться переходными возбуждениями или входить в составной
+цветосинглетный оператор, но не могут одновременно удовлетворять
+$\|\phi_e\|=\mu>0$ в физическом вакууме.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item полных минимальных multiplet-блоков: \textbf{$11$};
+ \item выбранная комплексная размерность: \textbf{$10$};
+ \item конкурирующая комплексная размерность: \textbf{$11$};
+ \item опора $6/11$ при положительных весах: \textbf{сохраняется};
+ \item сигнатура нуля: \textbf{$(20,0,22)$};
+ \item сигнатура вакуума до quotient: \textbf{$(0,14,28)$};
+ \item выбранных цветных триплетов: \textbf{$2$};
+ \item ненулевой $SU(3)$-инвариантный вектор в $\mathbf3$: \textbf{нет};
+ \item сохранение цвета вакуумом: \textbf{нет};
+ \item общий индекс рёбер: \textbf{$(13,2,3/2)$};
+ \item численное gauge-замыкание: \textbf{не достигнуто};
+ \item итог: \textbf{структурный селектор устойчив, физический вакуум закрыт};
+ \item следующий гейт: \textbf{цветосохраняющий составной циклический
+ родитель}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_full_gauge_weighted_edge_carrier_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-full-edge-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle},
+Communications in Mathematical Physics 186 (1997), 731--750;
+arXiv:hep-th/9606001.
+\bibitem{v7-full-edge-krajewski}
+T.~Krajewski,
+\emph{Classification of Finite Spectral Triples},
+Journal of Geometry and Physics 28 (1998), 1--30;
+arXiv:hep-th/9701081.
+\end{thebibliography}

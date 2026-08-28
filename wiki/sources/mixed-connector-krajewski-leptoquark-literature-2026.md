@@ -30,18 +30,36 @@
 
 Найденный `R2=(3,2)_(7/6)` нельзя молча приписать текущему `H15`. Он
 сохраняет набор фермионных вершин, но меняет допустимый конечный оператор и
-одноформенный сектор. Следующий гейт обязан тестировать Real/первый порядок
-и цветовой вакуум до вычисления семейного потенциала.
+одноформенный сектор. Поэтому Real/первый порядок должны проверяться раньше
+цветового вакуума и семейного потенциала.
+
+Последующий [[version7-r2-real-first-order-admission-gate]] уточнил границу:
+на стандартных бимодульных координатах оба ребра `R2` являются запрещёнными
+диагоналями первого порядка. Работа Paschke--Scheck--Sitarz получает иной
+лептокварковый канал только после отказа от `S0`-реальности. Обобщённые
+внутренние флуктуации без первого порядка и Clifford-расширения являются
+новыми архитектурами, а не продолжением неизменённого родителя.
+
+[[version7-edge-coherence-bimodule-admission-gate]] применил тот же
+диаграммный критерий к спектральной цепи `1 -> 6 -> 3`. Совпадение
+размерностей оказалось недостаточным: одномерный `(C,C)` и шестимерный
+`(H,M3)` меняют обе координаты, поэтому физическое первое ребро запрещено.
+Это подтверждает необходимость различать пространство коэффициентов
+стрелок и фермионную вершину диаграммы.
 
 ## Links
 
 - [[version7-minimal-h15-mixed-connector-admission-gate]]
+- [[version7-r2-real-first-order-admission-gate]]
 - [[version7-quartic-cross-edge-invariant-admission-gate]]
 - [[version4-order-one-krajewski-square-gate]]
 - [[version4-higgs-yukawa-gate]]
+- [[version7-edge-coherence-bimodule-admission-gate]]
 
 ## Source Notes
 
 - `s2t/gates/version7_minimal_h15_mixed_connector_admission_gate.tex`
 - `s2t/gates/version4_order_one_krajewski_square_gate.tex`
 - `s2t/gates/version4_higgs_yukawa_gate.tex`
+- A. H. Chamseddine, A. Connes, W. D. van Suijlekom,
+  `arXiv:1304.7583`.

@@ -1,0 +1,202 @@
+{
+  "gate": "version7_r2_real_first_order_admission_gate",
+  "algebra": "A_SM = C + H + M3(C)",
+  "first_order_edge_criterion": {
+    "edge": "D_(ij,kl): H_(ij) -> H_(kl)",
+    "double_commutator_coefficient": "(a_i-a_k) D_(ij,kl) (b_j-b_l)",
+    "pass_iff": "i=k or j=l",
+    "test_basis": "central summand idempotents"
+  },
+  "standard_bimodule_coordinates": {
+    "Q_L": [
+      "H",
+      "M3"
+    ],
+    "L_L": [
+      "H",
+      "C"
+    ],
+    "u_R": [
+      "C",
+      "M3"
+    ],
+    "d_R": [
+      "C",
+      "M3"
+    ],
+    "e_R": [
+      "C",
+      "C"
+    ]
+  },
+  "existing_yukawa_edges": [
+    {
+      "edge": "Q_L->u_R",
+      "source_bimodule": [
+        "H",
+        "M3"
+      ],
+      "target_bimodule": [
+        "C",
+        "M3"
+      ],
+      "same_left_coordinate": false,
+      "same_right_coordinate": true,
+      "maximum_central_idempotent_double_commutator_residual": 0,
+      "strict_first_order_pass": true
+    },
+    {
+      "edge": "Q_L->d_R",
+      "source_bimodule": [
+        "H",
+        "M3"
+      ],
+      "target_bimodule": [
+        "C",
+        "M3"
+      ],
+      "same_left_coordinate": false,
+      "same_right_coordinate": true,
+      "maximum_central_idempotent_double_commutator_residual": 0,
+      "strict_first_order_pass": true
+    },
+    {
+      "edge": "L_L->e_R",
+      "source_bimodule": [
+        "H",
+        "C"
+      ],
+      "target_bimodule": [
+        "C",
+        "C"
+      ],
+      "same_left_coordinate": false,
+      "same_right_coordinate": true,
+      "maximum_central_idempotent_double_commutator_residual": 0,
+      "strict_first_order_pass": true
+    }
+  ],
+  "all_missing_fixed_vertex_edges": [
+    {
+      "edge": "L_L->u_R",
+      "source_bimodule": [
+        "H",
+        "C"
+      ],
+      "target_bimodule": [
+        "C",
+        "M3"
+      ],
+      "same_left_coordinate": false,
+      "same_right_coordinate": false,
+      "maximum_central_idempotent_double_commutator_residual": 1,
+      "strict_first_order_pass": false
+    },
+    {
+      "edge": "L_L->d_R",
+      "source_bimodule": [
+        "H",
+        "C"
+      ],
+      "target_bimodule": [
+        "C",
+        "M3"
+      ],
+      "same_left_coordinate": false,
+      "same_right_coordinate": false,
+      "maximum_central_idempotent_double_commutator_residual": 1,
+      "strict_first_order_pass": false
+    },
+    {
+      "edge": "Q_L->e_R",
+      "source_bimodule": [
+        "H",
+        "M3"
+      ],
+      "target_bimodule": [
+        "C",
+        "C"
+      ],
+      "same_left_coordinate": false,
+      "same_right_coordinate": false,
+      "maximum_central_idempotent_double_commutator_residual": 1,
+      "strict_first_order_pass": false
+    }
+  ],
+  "graph_minimal_R2_candidate": {
+    "edges": [
+      {
+        "edge": "L_L->u_R",
+        "source_bimodule": [
+          "H",
+          "C"
+        ],
+        "target_bimodule": [
+          "C",
+          "M3"
+        ],
+        "same_left_coordinate": false,
+        "same_right_coordinate": false,
+        "maximum_central_idempotent_double_commutator_residual": 1,
+        "strict_first_order_pass": false
+      },
+      {
+        "edge": "Q_L->e_R",
+        "source_bimodule": [
+          "H",
+          "M3"
+        ],
+        "target_bimodule": [
+          "C",
+          "C"
+        ],
+        "same_left_coordinate": false,
+        "same_right_coordinate": false,
+        "maximum_central_idempotent_double_commutator_residual": 1,
+        "strict_first_order_pass": false
+      }
+    ],
+    "J_conjugate_edges": [
+      {
+        "edge": "J(L_L->u_R)J^-1",
+        "source_opposite_bimodule": [
+          "C",
+          "H"
+        ],
+        "target_opposite_bimodule": [
+          "M3",
+          "C"
+        ],
+        "maximum_central_idempotent_double_commutator_residual": 1,
+        "strict_first_order_pass": false
+      },
+      {
+        "edge": "J(Q_L->e_R)J^-1",
+        "source_opposite_bimodule": [
+          "M3",
+          "H"
+        ],
+        "target_opposite_bimodule": [
+          "C",
+          "C"
+        ],
+        "maximum_central_idempotent_double_commutator_residual": 1,
+        "strict_first_order_pass": false
+      }
+    ],
+    "all_edges_fail_strict_first_order": true,
+    "Real_completion_repairs_obstruction": false
+  },
+  "S0_reality_boundary": {
+    "strict_S0_preserves_particle_antiparticle_separation": true,
+    "historical_leptoquark_channel_requires_dropping_S0": true,
+    "historical_channel_identical_to_two_edge_R2_rectangle": false
+  },
+  "verdict": {
+    "R2_admitted_in_unchanged_strict_real_first_order_parent": false,
+    "any_missing_edge_admitted_on_fixed_vertices": false,
+    "spectral_action_and_colour_vacuum_stage_reached": false,
+    "reason": "both bimodule coordinates change on every missing edge",
+    "next_gate": "classify the minimal algebra/representation or twisted/generalized-first-order extension that turns an R2 path into allowed same-row/same-column edges"
+  }
+}

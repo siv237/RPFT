@@ -1,0 +1,131 @@
+{
+  "canonical_edge_decomposition": {
+    "cycle_colored_virtual_bridges": [
+      "Q_L--Y_R",
+      "X_L--u_R"
+    ],
+    "cycle_singlet_connectors": [
+      "L_L--Y_R",
+      "X_L--e_R"
+    ],
+    "forbidden_edges": [
+      "L_L--X_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_R--Y_L",
+      "Y_L--e_R"
+    ],
+    "partition_is_disjoint_and_complete": true,
+    "ranks": [
+      2,
+      2,
+      2,
+      5
+    ],
+    "vectorlike_mass_edges": [
+      "X_L--X_R",
+      "Y_L--Y_R"
+    ]
+  },
+  "gate": "version7_color_preserving_quadratic_selector_origin_gate",
+  "gauge_casimir": {
+    "convention": "C_G=(3/5)Y^2+C_2(SU2)+C_2(SU3)",
+    "finite_spectrum_polynomial": "P_G=(I-C_G/(9/10))*(I-C_G/(8/5))*(I-C_G/3)",
+    "kernel_independent_of_positive_relative_gauge_weights": true,
+    "kernel_projector": "P_G=1_{0}(C_G)=lim_{t->infinity} exp(-t*C_G)",
+    "polynomial_projector_residual": 0.0,
+    "representation_eigenvalues": {
+      "doublet_1/2": "9/10",
+      "singlet_0": "0",
+      "triplet_2/3": "8/5",
+      "triplet_5/3": "3"
+    },
+    "spectrum": [
+      "0",
+      "9/10",
+      "8/5",
+      "3"
+    ]
+  },
+  "hodge_selector": {
+    "all_negative_edges_are_full_gauge_singlets": true,
+    "full_gauge_group_preserved_by_vacuum": true,
+    "full_multiplet_origin_signature": {
+      "negative": 8,
+      "positive": 34,
+      "zero": 0
+    },
+    "full_multiplet_vacuum_signature": {
+      "negative": 0,
+      "positive": 38,
+      "zero": 4
+    },
+    "grading": "Gamma_G=I-2*P_G",
+    "negative_edges": [
+      "L_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "Y_L--Y_R"
+    ],
+    "positive_edges": [
+      "L_L--X_R",
+      "Q_L--Y_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_L--u_R",
+      "X_R--Y_L",
+      "Y_L--e_R"
+    ],
+    "reduced_one_generation_origin_signature": {
+      "negative": 8,
+      "positive": 14,
+      "zero": 0
+    },
+    "three_generation_reduced_origin_signature": {
+      "negative": 72,
+      "positive": 126,
+      "zero": 0
+    }
+  },
+  "light_fermion_kernel": {
+    "H15_chiral_lepton_content_preserved": true,
+    "doublet_mass_map_shape_one_generation": "C^2_L -> C_R",
+    "generic_rank_each": 1,
+    "light_left_doublet_dimension_one_generation": 1,
+    "light_left_doublet_dimension_three_families": 3,
+    "light_right_singlet_dimension_one_generation": 1,
+    "light_right_singlet_dimension_three_families": 3,
+    "singlet_mass_map_shape_one_generation": "C_L -> C^2_R"
+  },
+  "projector_coincidence": {
+    "P_G_equals_P_I": true,
+    "false_positive_edges": [],
+    "gauge_kernel_support": [
+      "L_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "Y_L--Y_R"
+    ],
+    "missed_gauge_singlet_edges": [],
+    "previous_isotypic_support": [
+      "L_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "Y_L--Y_R"
+    ],
+    "rank": 4
+  },
+  "remaining_gaps": {
+    "family_orientations_fixed": false,
+    "full_real_physical_superconnection_embedding_proved": false,
+    "overall_hodge_scale_fixed": false,
+    "virtual_colored_nonlinear_coefficient_fixed": false
+  },
+  "verdict": {
+    "color_preserving_quadratic_selector_obtained": true,
+    "independent_graph_and_gauge_projectors_coincide": true,
+    "next_gate": "version7_singlet_vacuum_virtual_cycle_combined_hessian_gate",
+    "status": "positive_color_preserving_quadratic_selector",
+    "uses_manual_casimir_threshold": false
+  }
+}

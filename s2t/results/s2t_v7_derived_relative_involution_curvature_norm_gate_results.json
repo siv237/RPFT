@@ -1,0 +1,112 @@
+{
+  "carrier": {
+    "heavy_directions": 20,
+    "oriented_physical_shape": [
+      10,
+      11
+    ],
+    "root_directions": 7,
+    "tested_real_slice_dimension": 27
+  },
+  "gate": "version7_derived_relative_involution_curvature_norm_gate",
+  "normalization_test": {
+    "allowed_heavy_window": "0 <= beta < 8/15",
+    "beta_half_derived_from_real_half_trace": false,
+    "beta_half_passes": true,
+    "critical_beta": 0.5333333333333333,
+    "equal_weight_beta_one_signature": [
+      21,
+      0,
+      6
+    ],
+    "exact_candidate": "8/15"
+  },
+  "origin_hessian": {
+    "eigenvalues": [
+      -18.0,
+      -18.0,
+      -12.7501839924,
+      -9.41472969951,
+      -8.54243224361,
+      -7.40727323685,
+      -6.34577051253,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.712770286076,
+      0.947619398812,
+      1.6,
+      1.6,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4
+    ],
+    "heavy_gap": 0.3999999999999997,
+    "signature": [
+      7,
+      0,
+      20
+    ]
+  },
+  "positive_action": {
+    "benchmark_beta": 0.5,
+    "combination": "S_edge + beta*S_physical",
+    "edge_part": "derived edge Hodge norm with root levels 1 and Casimirs 8/5,9/10",
+    "physical_part": "1/2*(||A^*A-A0^*A0||^2+||AA^*-A0A0^*||^2)"
+  },
+  "vacuum_hessian": {
+    "eigenvalues": [
+      5.6,
+      5.6,
+      6.0660023581,
+      6.23691221604,
+      6.6,
+      6.6,
+      6.6,
+      6.6,
+      9.09419804687,
+      9.4,
+      9.4,
+      9.4,
+      9.4,
+      9.4,
+      9.4,
+      11.5799713359,
+      12.4,
+      12.4,
+      12.4,
+      12.4,
+      12.4,
+      12.4,
+      14.417796201,
+      18.4888187431,
+      25.316301099,
+      36.0,
+      36.0
+    ],
+    "minimum_eigenvalue": 5.600000000000001,
+    "signature": [
+      0,
+      0,
+      27
+    ]
+  },
+  "verdict": {
+    "correct_origin_selector": true,
+    "free_relative_weight_eliminated": false,
+    "next_gate": "version7_real_half_trace_curvature_weight_gate",
+    "positive_curvature_norm_local_pass": true,
+    "status": "one_ratio_local_pass_beta_half_origin_open",
+    "strictly_stable_target_vacuum": true
+  }
+}

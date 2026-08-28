@@ -1,0 +1,205 @@
+{
+  "frozen_boundaries": {
+    "CKM_PMNS_derived": false,
+    "absolute_scale_derived": false,
+    "family_phases_selected": false,
+    "full_field_space_hessian_completed": false,
+    "full_spacetime_gauge_closure_obtained": false,
+    "new_particle_names_authorized": false,
+    "unique_mass_metric_derived": false,
+    "unique_parent_action_derived": false
+  },
+  "frozen_positive_core": {
+    "color_preserving_quadratic_selector_exists": true,
+    "common_carrier_exists": true,
+    "linking_endpoint_generates_M21": true,
+    "one_unweighted_representative_action_exists": true,
+    "qualitative_signatures_hold_for_all_positive_relative_weights": true,
+    "stationary_zero_has_seven_negative_modes": true,
+    "target_is_strictly_stable_on_tested_slice": true,
+    "twenty_heavy_competitors_are_positive_at_origin": true
+  },
+  "gate": "version7_qualitative_parent_mass_metric_freeze_gate",
+  "reopening_conditions": [
+    "derive a physical offdiagonal connector between the edge and linking sectors",
+    "derive a second noncommuting family tensor for phase and mixing selection",
+    "derive one common gauge-spacetime trace fixing the kinetic and mass metrics"
+  ],
+  "task_registry": [
+    {
+      "scope": "E_aff tensor Lambda_ch and the associated edge/linking carriers",
+      "status": "passed_after_carrier_correction",
+      "task": "common_rank_changing_carrier"
+    },
+    {
+      "result": "origin signature (7,0,20)",
+      "status": "passed_on_tested_real_slice",
+      "task": "stationary_unstable_zero"
+    },
+    {
+      "result": "target signature (0,0,27)",
+      "status": "passed_on_tested_real_slice",
+      "task": "finite_nonlinear_saturation"
+    },
+    {
+      "result": "S_eta=S_E+eta||R_U||^2 for eta>0",
+      "status": "passed_qualitatively",
+      "task": "one_curvature_action"
+    },
+    {
+      "reason": "nontrivial center leaves a relative trace weight",
+      "status": "failed",
+      "task": "unique_relative_mass_metric"
+    },
+    {
+      "reason": "one conjugacy class does not select relative family axes",
+      "status": "failed_in_single_cycle_parent",
+      "task": "family_phase_and_mixing_selection"
+    },
+    {
+      "reason": "one mass fixes the linear scale but f0 and the quartic remain external",
+      "status": "partial",
+      "task": "absolute_scale_and_full_nonlinear_EFT"
+    },
+    {
+      "reason": "the color-preserving selector is derived, but no unique common physical gauge trace exists",
+      "status": "not_reached",
+      "task": "full_gauge_spacetime_physical_closure"
+    },
+    {
+      "reason": "mass metric and family axes are not derived",
+      "status": "forbidden",
+      "task": "particle_mass_and_CKM_PMNS_predictions"
+    }
+  ],
+  "tested_real_slice": {
+    "dimension": 27,
+    "heavy_directions": 20,
+    "positive_metric_scan": [
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 0.0,
+        "vacuum_maximum_eigenvalue": 24.0,
+        "vacuum_minimum_eigenvalue": 3.6,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 1e-06,
+        "vacuum_maximum_eigenvalue": 24.0,
+        "vacuum_minimum_eigenvalue": 3.600000673710932,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 0.25,
+        "vacuum_maximum_eigenvalue": 24.0,
+        "vacuum_minimum_eigenvalue": 3.768427732924391,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 1.0,
+        "vacuum_maximum_eigenvalue": 24.0,
+        "vacuum_minimum_eigenvalue": 4.235590449919224,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 4.0,
+        "vacuum_maximum_eigenvalue": 69.32058237257078,
+        "vacuum_minimum_eigenvalue": 5.428673114063864,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 1000.0,
+        "vacuum_maximum_eigenvalue": 15822.051540675884,
+        "vacuum_minimum_eigenvalue": 7.022618553188641,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 1000000.0,
+        "vacuum_maximum_eigenvalue": 15816084.784303827,
+        "vacuum_minimum_eigenvalue": 7.025017941981261,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      }
+    ],
+    "relative_linking_hessian_positive_semidefinite": true,
+    "relative_linking_hessian_rank_at_vacuum": 22,
+    "root_directions": 7
+  },
+  "verdict": {
+    "complete_physical_rank_changing_parent_obtained": false,
+    "next_document": "version7_final_conclusion_and_next_program",
+    "numerical_mass_predictions_allowed": false,
+    "particle_identification_allowed": false,
+    "qualitative_radial_incidence_universality_class_closed": true,
+    "status": "tome7_qualitative_class_closed_full_physical_closure_not_obtained",
+    "tome7_research_question_completed": true
+  }
+}

@@ -1,0 +1,152 @@
+\chapter{Real- и аномальный допуск минимальной зеркальной пары}
+\label{ch:v7-minimal-mirror-pair-real-anomaly-gate}
+
+\section{Проверяемый кандидат}
+
+После закрытия кругового маршрута с $A_{(2)}$ остаётся строгий
+первопорядковый кандидат минимальной сырой размерности
+\begin{equation}
+ X_L=(\mathbb C,\mathbb C,L),\qquad
+ Y_R=(\mathbb H,\mathbb C,R).
+ \label{eq:v7-mirror-pair-candidate}
+\end{equation}
+Вместе со стандартными вершинами он замыкает цикл
+\begin{equation}
+ Q_L\to u_R\to X_L\to e_R\to L_L\to Y_R\to Q_L.
+ \label{eq:v7-mirror-pair-cycle}
+\end{equation}
+Все шесть рёбер меняют хиральность и сохраняют хотя бы одну бимодульную
+координату. Следовательно, граф проходит строгий первый порядок.
+
+\section{Real-замыкание не является аномальным замыканием}
+
+В KO-размерности с противоположной хиральностью Real-образ имеет вид
+\begin{equation}
+ J:(i,j,\chi)\longmapsto(j,i,-\chi),
+ \label{eq:v7-mirror-pair-real-map}
+\end{equation}
+поэтому
+\begin{equation}
+ JX_L=(\mathbb C,\mathbb C,R),\qquad
+ JY_R=(\mathbb C,\mathbb H,L).
+ \label{eq:v7-mirror-pair-real-images}
+\end{equation}
+Эти вершины завершают частице-античастичный Real-носитель. Однако
+$J$-удвоение не добавляет независимый набор физических Weyl-полей после
+устранения фермионного удвоения и потому само по себе не сокращает аномалии.
+
+\section{Каноническое зеркальное чтение}
+
+Наименьшая пара повторяет калибровочные типы заряженного лептонного
+синглета и слабого лептонного дублета, но с противоположными хиральностями:
+\begin{equation}
+ X_L\sim(\mathbf1,\mathbf1)_{-1},\qquad
+ Y_R\sim(\mathbf1,\mathbf2)_{-1/2}.
+ \label{eq:v7-mirror-pair-canonical-charges}
+\end{equation}
+В соглашениях Тома IV её локальные коэффициенты равны
+\begin{align}
+ \mathcal A_{221}&=-Y(Y_R)=\frac12,\nonumber\\
+ \mathcal A_{\mathrm{grav}^2 1}&=Y(X_L)-2Y(Y_R)=0,\nonumber\\
+ \mathcal A_{111}&=Y(X_L)^3-2Y(Y_R)^3=-\frac34.
+ \label{eq:v7-mirror-pair-canonical-anomalies}
+\end{align}
+Кроме того, добавлен ровно один физический слабый дублет, так что
+\begin{equation}
+ N_{\mathbf2}^{\rm new}=1\pmod 2.
+ \label{eq:v7-mirror-pair-witten-parity}
+\end{equation}
+Следовательно, присутствуют и локальная, и глобальная $SU(2)$-аномалии.
+Связь аномального сокращения с multiplicity-матрицей и унимодулярностью
+конечной геометрии является стандартной частью классификации
+\cite{v7mirror-krajewski,v7mirror-alvarez}; нечётное число Weyl-дублетов
+даёт глобальное препятствие Виттена \cite{v7mirror-witten}.
+
+\section{Заряд нельзя перенастроить внутри двух вершин}
+
+Пусть $x=Y(X_L)$ и $y=Y(Y_R)$ произвольны. Тогда локальное сокращение требует
+\begin{equation}
+ -y=0,\qquad x-2y=0,\qquad x^3-2y^3=0,
+ \label{eq:v7-mirror-pair-general-anomaly-system}
+\end{equation}
+откуда $x=y=0$. Но один слабый дублет остаётся нечётным и при нулевом
+гиперзаряде. Значит, никакой выбор двух $U(1)$-зарядов не исправляет эту
+пару.
+
+\section{Массовая ловушка}
+
+Те же координаты разрешают прямые противоположно-хиральные блоки
+\begin{equation}
+ X_L\longleftrightarrow e_R,\qquad
+ L_L\longleftrightarrow Y_R.
+ \label{eq:v7-mirror-pair-direct-masses}
+\end{equation}
+При общей невырожденной матрице они превращают исходные лёгкие лептоны в
+тяжёлые вектороподобные пары. Сохранение наблюдаемого хирального $H_{15}$
+потребовало бы вручную задать ядро новой массовой матрицы.
+
+\section{Минимальный консервативный ремонт}
+
+Независимый аномально безопасный сектор требует добавить противоположные
+хиральности обоих новых представлений:
+\begin{equation}
+ X_R\sim(\mathbf1,\mathbf1)_{-1},\qquad
+ Y_L\sim(\mathbf1,\mathbf2)_{-1/2}.
+ \label{eq:v7-mirror-pair-vectorlike-repair}
+\end{equation}
+Тогда новый сектор попарно вектороподобен,
+\begin{equation}
+ \mathcal A_{221}=\mathcal A_{\mathrm{grav}^2 1}
+ =\mathcal A_{111}=0,
+ \qquad N_{\mathbf2}^{\rm new}=0\pmod2.
+ \label{eq:v7-mirror-pair-repair-anomalies}
+\end{equation}
+Но цена возрастает с двух до четырёх новых физических хиральных вершин, а
+их массы и связи ещё не выведены из одного родителя.
+
+\begin{theorem}[Провал минимальной двухвершинной пары]
+Пара $X_L\oplus Y_R$ замыкает строгий первопорядковый цикл и допускает
+формальное Real-удвоение. Однако она содержит нечётное число слабых дублетов,
+не сокращает локальные аномалии и в каноническом чтении допускает прямое
+утяжеление исходных лептонов. Поэтому она не является физически допустимым
+расширением $H_{15}$.
+\end{theorem}
+
+\begin{nogocriterion}[Real не заменяет anomaly]
+Нельзя считать пару допустимой только потому, что к ней добавлены
+$J$-сопряжённые вершины. Требуется отдельное сокращение аномалий на физическом
+Weyl-секторе и сохранение лёгкого хирального спектра без ручного рангового
+условия.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item строгий первый порядок шестикромочного цикла: \textbf{пройден};
+ \item формальное Real-замыкание: \textbf{пройдено};
+ \item локальные аномалии канонической пары: \textbf{не сокращаются};
+ \item глобальная $SU(2)$-аномалия: \textbf{присутствует};
+ \item перенастройка двух гиперзарядов исправляет результат: \textbf{нет};
+ \item лёгкий $H_{15}$ сохраняется при общей массе: \textbf{нет};
+ \item минимальный аномально безопасный ремонт: \textbf{четыре вершины};
+ \item следующий гейт: \textbf{четырёхвершинное вектороподобное замыкание
+ против полного зеркального поколения}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_minimal_mirror_pair_real_anomaly_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7mirror-krajewski}
+T.~Krajewski,
+\emph{Classification of finite spectral triples},
+Journal of Geometry and Physics 28 (1998), 1--30; arXiv:hep-th/9701081.
+\bibitem{v7mirror-alvarez}
+E.~Alvarez, J.~M.~Gracia-Bondia, C.~P.~Martin,
+\emph{Anomaly cancellation and the gauge group of the Standard Model in NCG},
+Physics Letters B 364 (1995), 33--40; arXiv:hep-th/9506115.
+\bibitem{v7mirror-witten}
+E.~Witten,
+\emph{An SU(2) anomaly},
+Physics Letters B 117 (1982), 324--328.
+\end{thebibliography}

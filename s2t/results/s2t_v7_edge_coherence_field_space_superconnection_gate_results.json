@@ -1,0 +1,97 @@
+{
+  "gate": "version7_edge_coherence_field_space_superconnection_gate",
+  "carrier": {
+    "graded_dimensions": [
+      1,
+      6,
+      3
+    ],
+    "degree_zero": "trivial line",
+    "degree_one": "Hom(W,V), the six-dimensional arrow-amplitude bundle",
+    "degree_two": "Hom(Lambda^2 W,Lambda^2 V), the three-dimensional composite-minor bundle",
+    "physical_fermion_vertices_added": 0,
+    "independent_gauge_connections_added": 0,
+    "connection_rule": "connections on degree one and two are induced functorially from endpoint bundles V and W"
+  },
+  "oriented_superconnection": {
+    "d_squared": "Lambda^2 B in Hom(H0,H2)",
+    "curvature_norm_squared": "det(B B*)",
+    "rank_one_wedge_norm": 8.837982573301268e-16,
+    "rank_two_control_wedge_norm": 1.9652259005586574,
+    "rank_one_curvature_array_power_diagnostic": 9.123364236139732e-16,
+    "interpretation": "curved complex off vacuum, genuine complex on the rank-at-most-one locus"
+  },
+  "hermitian_finite_part": {
+    "operator": "D_B=d_B+d_B*",
+    "trace_D2": "3 T",
+    "trace_D4": "(9/4) T^2 + (15/4) det(B B*)",
+    "spectral_action": "(T-2 mu/3)^2 + (5/3) det(B B*)"
+  },
+  "kinetic_metric": {
+    "identity": "Tr(delta D_B delta D_B)=3 Tr(delta B delta B*)",
+    "real_dimension": 12,
+    "eigenvalues": [
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0,
+      3.0
+    ],
+    "max_residual_from_3I": 0.0,
+    "positive": true
+  },
+  "covariance": {
+    "tested_group": "U(2)_copy x U(2)_{eX} x U(1)_Y",
+    "reason_for_block_group": "the third channel has a different bimodule type from e_R and X_R",
+    "full_U3_channel_symmetry_used_as_physical_gauge_group": false,
+    "actual_physical_gauge_group_is_a_subgroup": true
+  },
+  "placement_in_full_strict_graph": {
+    "coherence_block_edges_total": 6,
+    "baseline_edges_inside_block": 1,
+    "new_edges_inside_block": 5,
+    "selected_new_edges_inside_block": 2,
+    "unwanted_new_edges_inside_block": 3,
+    "new_edges_outside_block": 6,
+    "selected_new_edges_outside_block": 4,
+    "unwanted_new_edges_outside_block": 2,
+    "interpretation": "the coherence block is a maximal twin biclique, not the desired six-edge extension"
+  },
+  "real_completion": {
+    "construction": "conjugate associated bundle with anti-linear exchange",
+    "physical_half_trace_preserves_finite_coefficients": true
+  },
+  "numerical_audit": {
+    "seed": 20260827,
+    "trials": 250,
+    "tolerance": 2e-07,
+    "maximum_residuals": {
+      "polarization": 2.9790409838967277e-15,
+      "oriented_curvature": 2.9790409838967277e-15,
+      "curvature_norm": 1.1368683772161603e-13,
+      "second_trace": 1.4210854715202004e-14,
+      "fourth_trace": 6.252776074688882e-13,
+      "action": 2.2737367544323206e-13,
+      "block_covariance_wedge": 5.687116766346677e-15,
+      "block_covariance_derivative": 3.202372833989377e-15,
+      "real_half_trace_second": 1.4210854715202004e-14,
+      "real_half_trace_fourth": 4.547473508864641e-13
+    }
+  },
+  "verdict": {
+    "status": "positive_auxiliary_field_space_superconnection_carrier",
+    "physical_finite_triple_embedding_required": false,
+    "new_physical_particles_required": false,
+    "new_independent_gauge_field_required": false,
+    "absolute_spacetime_heat_kernel_normalization_closed": false,
+    "full_eleven_edge_competition_closed": false,
+    "next_gate": "test the exact support and flat-direction competition between the coherence biclique and all eleven new strict edges without a manual projector"
+  }
+}

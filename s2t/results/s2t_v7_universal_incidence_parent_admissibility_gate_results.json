@@ -1,0 +1,579 @@
+{
+  "gate": "version7_universal_incidence_parent_admissibility_gate",
+  "isotypic_symmetry": {
+    "multiplicity_space": "C2",
+    "complex_basis_group": "U2",
+    "Real_basis_group": "O2",
+    "canonical_endomorphism_commutant": "C times I2",
+    "exchange_commutators": {
+      "with_sigma_x": 0.0,
+      "with_sigma_y": 2.8284271247461903,
+      "with_sigma_z": 2.8284271247461903
+    },
+    "maximum_exchange_displacement_under_real_rotations": 2.8284271247461903,
+    "rotation_samples": [
+      {
+        "theta": 0.0,
+        "exchange_displacement": 0.0
+      },
+      {
+        "theta": 0.09817477042468103,
+        "exchange_displacement": 0.2772343383981829
+      },
+      {
+        "theta": 0.19634954084936207,
+        "exchange_displacement": 0.551798758565886
+      },
+      {
+        "theta": 0.2945243112740431,
+        "exchange_displacement": 0.8210490550447147
+      },
+      {
+        "theta": 0.39269908169872414,
+        "exchange_displacement": 1.082392200292394
+      },
+      {
+        "theta": 0.4908738521234052,
+        "exchange_displacement": 1.3333113169554929
+      },
+      {
+        "theta": 0.5890486225480862,
+        "exchange_displacement": 1.571389916774204
+      },
+      {
+        "theta": 0.6872233929727672,
+        "exchange_displacement": 1.7943351726852723
+      },
+      {
+        "theta": 0.7853981633974483,
+        "exchange_displacement": 1.9999999999999998
+      },
+      {
+        "theta": 0.8835729338221293,
+        "exchange_displacement": 2.186403734003515
+      },
+      {
+        "theta": 0.9817477042468103,
+        "exchange_displacement": 2.3517512048387172
+      },
+      {
+        "theta": 1.0799224746714913,
+        "exchange_displacement": 2.494450025973342
+      },
+      {
+        "theta": 1.1780972450961724,
+        "exchange_displacement": 2.613125929752753
+      },
+      {
+        "theta": 1.2762720155208536,
+        "exchange_displacement": 2.7066360023487053
+      },
+      {
+        "theta": 1.3744467859455345,
+        "exchange_displacement": 2.774079690644295
+      },
+      {
+        "theta": 1.4726215563702154,
+        "exchange_displacement": 2.8148074750527647
+      },
+      {
+        "theta": 1.5707963267948966,
+        "exchange_displacement": 2.8284271247461903
+      }
+    ]
+  },
+  "allowed_arrow_covariance": {
+    "one_common_neighbour_incoherent": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "three_common_neighbours_incoherent": [
+      [
+        3.0,
+        0.0
+      ],
+      [
+        0.0,
+        3.0
+      ]
+    ],
+    "derived_incoherent_selector": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "one_common_neighbour_coherent": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "three_common_neighbours_coherent": [
+      [
+        3.0,
+        3.0
+      ],
+      [
+        3.0,
+        3.0
+      ]
+    ],
+    "derived_coherent_selector": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0
+      ]
+    ],
+    "coherent_relative_phase_was_fixed_by_first_order": false,
+    "phase_orbit": [
+      {
+        "phase": 0.0,
+        "selector_real": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 0.39269908169872414,
+        "selector_real": [
+          [
+            0.0,
+            0.9238795325112867
+          ],
+          [
+            0.9238795325112867,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            -0.3826834323650898
+          ],
+          [
+            0.3826834323650898,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 0.7853981633974483,
+        "selector_real": [
+          [
+            0.0,
+            0.7071067811865476
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            -0.7071067811865475
+          ],
+          [
+            0.7071067811865475,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 1.1780972450961724,
+        "selector_real": [
+          [
+            0.0,
+            0.38268343236508984
+          ],
+          [
+            0.38268343236508984,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            -0.9238795325112867
+          ],
+          [
+            0.9238795325112867,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 1.5707963267948966,
+        "selector_real": [
+          [
+            0.0,
+            6.123233995736766e-17
+          ],
+          [
+            6.123233995736766e-17,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            -1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 1.9634954084936207,
+        "selector_real": [
+          [
+            0.0,
+            -0.3826834323650897
+          ],
+          [
+            -0.3826834323650897,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            -0.9238795325112867
+          ],
+          [
+            0.9238795325112867,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 2.356194490192345,
+        "selector_real": [
+          [
+            0.0,
+            -0.7071067811865475
+          ],
+          [
+            -0.7071067811865475,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            -0.7071067811865476
+          ],
+          [
+            0.7071067811865476,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 2.748893571891069,
+        "selector_real": [
+          [
+            0.0,
+            -0.9238795325112867
+          ],
+          [
+            -0.9238795325112867,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            -0.3826834323650899
+          ],
+          [
+            0.3826834323650899,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 3.141592653589793,
+        "selector_real": [
+          [
+            0.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            -1.2246467991473532e-16
+          ],
+          [
+            1.2246467991473532e-16,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 3.5342917352885173,
+        "selector_real": [
+          [
+            0.0,
+            -0.9238795325112868
+          ],
+          [
+            -0.9238795325112868,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            0.38268343236508967
+          ],
+          [
+            -0.38268343236508967,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 3.9269908169872414,
+        "selector_real": [
+          [
+            0.0,
+            -0.7071067811865477
+          ],
+          [
+            -0.7071067811865477,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            0.7071067811865475
+          ],
+          [
+            -0.7071067811865475,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 4.319689898685965,
+        "selector_real": [
+          [
+            0.0,
+            -0.38268343236509034
+          ],
+          [
+            -0.38268343236509034,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            0.9238795325112865
+          ],
+          [
+            -0.9238795325112865,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 4.71238898038469,
+        "selector_real": [
+          [
+            0.0,
+            -1.8369701987210297e-16
+          ],
+          [
+            -1.8369701987210297e-16,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            -1.0,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 5.105088062083414,
+        "selector_real": [
+          [
+            0.0,
+            0.38268343236509
+          ],
+          [
+            0.38268343236509,
+            -1.1102230246251565e-16
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            0.9238795325112866
+          ],
+          [
+            -0.9238795325112866,
+            0.0
+          ]
+        ],
+        "formula_residual": 1.1102230246251565e-16
+      },
+      {
+        "phase": 5.497787143782138,
+        "selector_real": [
+          [
+            0.0,
+            0.7071067811865474
+          ],
+          [
+            0.7071067811865474,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            0.7071067811865477
+          ],
+          [
+            -0.7071067811865477,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 5.890486225480862,
+        "selector_real": [
+          [
+            0.0,
+            0.9238795325112865
+          ],
+          [
+            0.9238795325112865,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            0.3826834323650904
+          ],
+          [
+            -0.3826834323650904,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      },
+      {
+        "phase": 6.283185307179586,
+        "selector_real": [
+          [
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0
+          ]
+        ],
+        "selector_imag": [
+          [
+            0.0,
+            2.4492935982947064e-16
+          ],
+          [
+            -2.4492935982947064e-16,
+            0.0
+          ]
+        ],
+        "formula_residual": 0.0
+      }
+    ]
+  },
+  "twirling": {
+    "pauli_exchange_residual": 0.0,
+    "pauli_projector_to_half_identity_residual": 0.0,
+    "orthogonal_exchange_residual": 8.659560562354932e-17,
+    "orthogonal_projector_to_half_identity_residual": 0.0
+  },
+  "universal_calculus": {
+    "allowed_block_space_is_canonical": true,
+    "canonical_nonzero_element_of_each_block_space": false,
+    "represented_forms_require_D": true,
+    "binary_support_implies_equal_amplitudes": false,
+    "binary_support_implies_common_phase": false
+  },
+  "verdict": {
+    "previous_modular_parity_calculation_mathematically_valid_conditionally": true,
+    "maximal_binary_incidence_derived_from_current_parent": false,
+    "basis_independent_copy_selector_obtained": false,
+    "status": "closed_as_internal_universal_incidence_parent",
+    "missing_object": "rank-one coherent covariance or condensate on the allowed-arrow multiplicity space",
+    "next_gate": "derive or exclude a rank-one edge-coherence condensate from one invariant action and test its full Hessian and Real completion"
+  }
+}

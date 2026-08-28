@@ -1,0 +1,209 @@
+\chapter{Полевое суперсвязностное завершение цепи когерентности}
+\label{ch:v7-edge-coherence-field-space-superconnection-gate}
+
+\section{Разделение физических и вычислительных носителей}
+
+Бимодульный гейт запретил отождествлять цепь $1\to6\to3$ с новыми
+фермионными вершинами. Это не запрещает использовать ту же цепь как
+ассоциированный градуированный пучок над пространством полей. Пусть
+\begin{equation}
+ V=\mathbb C^2_{\rm copy},\qquad
+ W=W_e\oplus W_X\oplus W_Y\simeq\mathbb C^3,
+ \qquad B\in\operatorname{Hom}(W,V).
+ \label{eq:v7-field-superconnection-arrow-bundle}
+\end{equation}
+Разложение $W$ сохраняется явно: каналы $e_R,X_R$ изотипичны, тогда как
+$Y_R$ имеет другой бимодульный тип. Поэтому полный $U(3)$ на $W$ является
+лишь случайной симметрией абстрактной нормы и не объявляется физической
+калибровочной группой.
+
+Введём ассоциированный градуированный носитель
+\begin{equation}
+ \mathcal E^0=\underline{\mathbb C},\qquad
+ \mathcal E^1=\operatorname{Hom}(W,V),\qquad
+ \mathcal E^2=\operatorname{Hom}(\Lambda^2W,\Lambda^2V).
+ \label{eq:v7-field-superconnection-carrier}
+\end{equation}
+Его волокна имеют размерности $1,6,3$, но секции $\mathcal E^k$ не
+интерпретируются как фермионные поля. Это вычислительные волокна,
+функториально построенные из пространства амплитуд разрешённых стрелок.
+
+\section{Ориентированная суперсвязность и её кривизна}
+
+Определим нечётный оператор положительной степени
+\begin{equation}
+ d_B:\mathcal E^0\oplus\mathcal E^1\oplus\mathcal E^2
+ \longrightarrow
+ \mathcal E^0\oplus\mathcal E^1\oplus\mathcal E^2,
+ \qquad
+ d_B|_{\mathcal E^0}=A_B,\quad
+ d_B|_{\mathcal E^1}=C_B,\quad
+ d_B|_{\mathcal E^2}=0,
+ \label{eq:v7-field-superconnection-oriented-differential}
+\end{equation}
+где $A_B(1)=B$ и $C_B=\frac12d(\Lambda^2)_B$. Тогда
+\begin{equation}
+ d_B^2|_{\mathcal E^0}=C_BA_B=\Lambda^2B,qquad
+ d_B^2|_{\mathcal E^1\oplus\mathcal E^2}=0.
+ \label{eq:v7-field-superconnection-curvature}
+\end{equation}
+Следовательно,
+\begin{equation}
+ \|d_B^2\|^2=\|\Lambda^2B\|_F^2
+ =\det(BB^\dagger).
+ \label{eq:v7-field-superconnection-curvature-norm}
+\end{equation}
+Вне вакуума это кривой комплекс: квадрат дифференциала является
+алгебраической кривизной. На ранговой страте
+\begin{equation}
+ \rank B\leq1
+ \quad\Longleftrightarrow\quad
+ d_B^2=0
+ \label{eq:v7-field-superconnection-integrable-locus}
+\end{equation}
+он становится настоящим комплексом. Это не означает исчезновения полной
+эрмитовой кривизны: условие относится именно к ориентированной части
+$d_B$, а не к $\mathcal D_B=d_B+d_B^\dagger$.
+
+Пусть $\nabla^V$ и $\nabla^W$ --- уже имеющиеся связности конечных
+endpoint-пучков. На двух составных волокнах используются только
+индуцированные связности
+\begin{align}
+ \nabla^{\mathcal E^1}X
+ &=\nabla^V X-X\nabla^W,\\
+ \nabla^{\mathcal E^2}Y
+ &=\nabla^{\Lambda^2V}Y-Y\nabla^{\Lambda^2W}.
+ \label{eq:v7-field-superconnection-induced-connections}
+\end{align}
+Таким образом, суперсвязность $\mathbb A=\nabla^{\mathcal E}+d_B$ не
+требует независимой калибровочной связности на узлах размерностей $6$ и
+$3$.
+
+\section{Фактическая блочная ковариантность}
+
+Максимальная группа замен базиса, сохраняющая бимодульную типизацию
+каналов, имеет вид
+\begin{equation}
+ G_{\rm blk}=U(2)_{\rm copy}\times U(2)_{eX}\times U(1)_Y
+ \subset U(V)\times U(W).
+ \label{eq:v7-field-superconnection-block-group}
+\end{equation}
+Для $g\in U(V)$ и блочно-диагонального $h\in U(W)$ поле преобразуется как
+\begin{equation}
+ B\longmapsto gBh^\dagger.
+ \label{eq:v7-field-superconnection-field-action}
+\end{equation}
+Функториальность внешней степени даёт
+\begin{align}
+ \Lambda^2(gBh^\dagger)
+ &=\Lambda^2g\,(\Lambda^2B)\,(\Lambda^2h)^\dagger,\\
+ C_{gBh^\dagger}(gXh^\dagger)
+ &=\Lambda^2g\,C_B(X)\,(\Lambda^2h)^\dagger.
+ \label{eq:v7-field-superconnection-covariance}
+\end{align}
+Поэтому ориентированная и эрмитова части ковариантны относительно
+$G_{\rm blk}$ и, следовательно, относительно действующей физической
+калибровочной подгруппы. Для результата не требуется смешивать $Y_R$ с
+$e_R,X_R$ фиктивным физическим $U(3)$.
+
+\section{Эрмитова часть, потенциал и кинетическая метрика}
+
+Эрмитова нечётная часть
+\begin{equation}
+ \mathcal D_B=d_B+d_B^\dagger
+ \label{eq:v7-field-superconnection-hermitian-part}
+\end{equation}
+совпадает с оператором спектрального родителя. Поэтому без добавления
+новых полей сохраняются тождества
+\begin{align}
+ \Tr\mathcal D_B^2&=3\Tr(BB^\dagger),\\
+ \Tr\mathcal D_B^4&=\frac94\bigl(\Tr BB^\dagger\bigr)^2
+ +\frac{15}{4}\det(BB^\dagger).
+ \label{eq:v7-field-superconnection-finite-traces}
+\end{align}
+При пространственно-временной зависимости $B(x)$ главная квадратичная
+форма производных фиксируется той же конечной следовой метрикой:
+\begin{equation}
+ \boxed{
+ \Tr\bigl(\delta\mathcal D_B\,\delta\mathcal D_B\bigr)
+ =3\Tr(\delta B\,\delta B^\dagger).}
+ \label{eq:v7-field-superconnection-kinetic-metric}
+\end{equation}
+На двенадцати вещественных компонентах её матрица равна $3I_{12}$.
+Следовательно, полевой подъём не создаёт отрицательных кинетических мод.
+Абсолютный коэффициент пространственно-временного кинетического члена
+зависит от теплового разложения полного произведения и здесь не считается
+выведенным.
+
+Real-завершение строится сопряжённым ассоциированным пучком и антилинейным
+обменом. Полуслед Real-пары возвращает ровно исходные второй и четвёртый
+моменты, поэтому скрытый множитель два не возникает.
+
+\begin{theorem}[Допуск полевого суперсвязностного носителя]
+Цепь $1\to6\to3$ канонически реализуется как ассоциированный
+градуированный пучок пространства стрелок, не добавляя физических
+фермионных вершин и независимых калибровочных связностей. Ориентированная
+кривизна равна $\Lambda^2B$ и исчезает точно на страте ранга не выше
+одного. Эрмитова часть сохраняет единый спектральный потенциал, а её
+следовая кинетическая метрика положительна и равна $3I_{12}$. Конструкция
+ковариантна относительно фактической блочной группы без постулирования
+физического $U(3)$ каналов.
+\end{theorem}
+
+Этот результат закрывает вопрос о математическом носителе положительного
+механизма, но ещё не завершает физический селектор. Поле $B$ занимает
+шестикромочный прямоугольник полного строгого графа. Внутри него находится
+одно старое и пять новых рёбер; только два из этих пяти принадлежат целевому
+ремонту, а три являются нежелательными. Ещё шесть новых рёбер лежат вне
+$B$. Поэтому прямоугольник когерентности не совпадает с требуемым меню из
+шести новых блоков.
+
+\begin{nogocriterion}[Запрет скрытого проектора на шесть рёбер]
+Нельзя считать полевой суперсвязностный допуск полным выбором физического
+графа, пока явно не сопоставлены его ранга-один вакуум и точное целевое
+меню рёбер, а все одиннадцать новых разрешённых блоков не включены в один
+тест. Если потребуется заранее занулить конкурирующие рёбра или вставить
+проектор на выбранный рисунок, успех останется условным.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item физические фермионные вершины: \textbf{не добавлены};
+ \item вычислительный носитель $1,6,3$: \textbf{ассоциирован функториально};
+ \item ориентированная кривизна: \textbf{$d_B^2=\Lambda^2B$};
+ \item интегрируемая страта: \textbf{$\rank B\leq1$};
+ \item независимые калибровочные связности: \textbf{не добавлены};
+ \item фактическая блочная ковариантность: \textbf{подтверждена};
+ \item физический $U(3)$ каналов: \textbf{не постулируется};
+ \item спектральный потенциал: \textbf{сохранён};
+ \item кинетическая метрика: \textbf{$3I_{12}$, положительна};
+ \item Real-полуслед: \textbf{сохраняет коэффициенты};
+ \item абсолютная тепловая нормировка: \textbf{открыта};
+ \item конкуренция всех одиннадцати рёбер: \textbf{открыта};
+ \item итог: \textbf{положительный вспомогательный полевой носитель};
+ \item следующий гейт: \textbf{полное одиннадцатирёберное вложение без
+ ручного проектора}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_edge_coherence_field_space_superconnection_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-field-superconnection-quillen}
+D.~Quillen,
+\emph{Superconnections and the Chern character},
+Topology 24 (1985), 89--95.
+\bibitem{v7-field-superconnection-exterior}
+G.~Roepstorff,
+\emph{Superconnections and Matter}, arXiv:hep-th/9801040.
+\bibitem{v7-field-superconnection-correspondence}
+B.~Mesland,
+\emph{Unbounded bivariant K-theory and correspondences in noncommutative
+geometry}, arXiv:0904.4383.
+\bibitem{v7-field-superconnection-gauge-product}
+S.~Brain, B.~Mesland, W.~D.~van Suijlekom,
+\emph{Gauge theory for spectral triples and the unbounded Kasparov product},
+Journal of Noncommutative Geometry 10 (2016), 135--206;
+arXiv:1306.1951.
+\end{thebibliography}

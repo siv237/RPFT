@@ -1,0 +1,198 @@
+{
+  "algebraic_bicomplex_rescaling": {
+    "basis_bidegrees": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "maximum_residual": 0.0,
+    "scan": [
+      {
+        "anticommutator_residual": 0.0,
+        "horizontal_nilpotence_residual": 0.0,
+        "total_degree_residual": 0.0,
+        "total_nilpotence_residual": 0.0,
+        "vertical_nilpotence_residual": 0.0,
+        "vertical_scale": 0.125
+      },
+      {
+        "anticommutator_residual": 0.0,
+        "horizontal_nilpotence_residual": 0.0,
+        "total_degree_residual": 0.0,
+        "total_nilpotence_residual": 0.0,
+        "vertical_nilpotence_residual": 0.0,
+        "vertical_scale": 0.5
+      },
+      {
+        "anticommutator_residual": 0.0,
+        "horizontal_nilpotence_residual": 0.0,
+        "total_degree_residual": 0.0,
+        "total_nilpotence_residual": 0.0,
+        "vertical_nilpotence_residual": 0.0,
+        "vertical_scale": 1.0
+      },
+      {
+        "anticommutator_residual": 0.0,
+        "horizontal_nilpotence_residual": 0.0,
+        "total_degree_residual": 0.0,
+        "total_nilpotence_residual": 0.0,
+        "vertical_nilpotence_residual": 0.0,
+        "vertical_scale": 2.0
+      },
+      {
+        "anticommutator_residual": 0.0,
+        "horizontal_nilpotence_residual": 0.0,
+        "total_degree_residual": 0.0,
+        "total_nilpotence_residual": 0.0,
+        "vertical_nilpotence_residual": 0.0,
+        "vertical_scale": 8.0
+      }
+    ],
+    "total_degree_fixes_relative_scale": false,
+    "vertical_rescaling_preserves_bicomplex_relations": true
+  },
+  "dimension_defect": {
+    "affine_carrier_complex_dimension": 12,
+    "canonical_affine_identification_derived": false,
+    "dimension_matches_E_aff": true,
+    "edge_minus_linking_dimension": 12,
+    "maximal_linking_to_edge_isometry_residual": 0.0,
+    "orthogonal_defect_rank": 12,
+    "unitary_exchange_possible": false
+  },
+  "gate": "version7_bicomplex_total_degree_hodge_metric_gate",
+  "hodge_metric_family": {
+    "edge_dimension": 54,
+    "linking_dimension": 42,
+    "maximum_residual": 0.0,
+    "positive_metrics_compatible_with_degree_real_and_hodge_star": true,
+    "scan": [
+      {
+        "commutator_with_edge_projector": 0.0,
+        "commutator_with_total_degree": 0.0,
+        "hodge_involution_residual": 0.0,
+        "hodge_isometry_residual": 0.0,
+        "minimum_metric_eigenvalue": 0.125,
+        "real_compatibility_residual": 0.0,
+        "relative_weight": 0.125
+      },
+      {
+        "commutator_with_edge_projector": 0.0,
+        "commutator_with_total_degree": 0.0,
+        "hodge_involution_residual": 0.0,
+        "hodge_isometry_residual": 0.0,
+        "minimum_metric_eigenvalue": 0.5,
+        "real_compatibility_residual": 0.0,
+        "relative_weight": 0.5
+      },
+      {
+        "commutator_with_edge_projector": 0.0,
+        "commutator_with_total_degree": 0.0,
+        "hodge_involution_residual": 0.0,
+        "hodge_isometry_residual": 0.0,
+        "minimum_metric_eigenvalue": 1.0,
+        "real_compatibility_residual": 0.0,
+        "relative_weight": 1.0
+      },
+      {
+        "commutator_with_edge_projector": 0.0,
+        "commutator_with_total_degree": 0.0,
+        "hodge_involution_residual": 0.0,
+        "hodge_isometry_residual": 0.0,
+        "minimum_metric_eigenvalue": 1.0,
+        "real_compatibility_residual": 0.0,
+        "relative_weight": 2.0
+      },
+      {
+        "commutator_with_edge_projector": 0.0,
+        "commutator_with_total_degree": 0.0,
+        "hodge_involution_residual": 0.0,
+        "hodge_isometry_residual": 0.0,
+        "minimum_metric_eigenvalue": 1.0,
+        "real_compatibility_residual": 0.0,
+        "relative_weight": 8.0
+      }
+    ],
+    "total_degree_two_dimension": 96,
+    "unique_relative_metric_derived": false
+  },
+  "physical_hessian_family": {
+    "best_global_scale_low_to_high": 2.0326696714178505,
+    "nonhomothetic_spectrum_residual": 0.31814229306058006,
+    "qualitative_signatures_fixed": true,
+    "quantitative_spectrum_fixed": false,
+    "scan": [
+      {
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_weight": 0.25,
+        "vacuum_maximum_eigenvalue": 24.0,
+        "vacuum_minimum_eigenvalue": 3.768427732924391,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ],
+        "vacuum_trace": 207.199957570456
+      },
+      {
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_weight": 1.0,
+        "vacuum_maximum_eigenvalue": 24.0,
+        "vacuum_minimum_eigenvalue": 4.235590449919224,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ],
+        "vacuum_trace": 247.99983028182407
+      },
+      {
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_weight": 4.0,
+        "vacuum_maximum_eigenvalue": 69.32058237257078,
+        "vacuum_minimum_eigenvalue": 5.428673114063864,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ],
+        "vacuum_trace": 411.19932112729634
+      }
+    ]
+  },
+  "verdict": {
+    "hodge_involution_closes_metric_uniqueness": false,
+    "mass_ratios_derived": false,
+    "next_gate": "version7_affine_defect_bicomplex_completion_gate",
+    "qualitative_vacuum_remains_closed": true,
+    "real_structure_closes_metric_uniqueness": false,
+    "status": "bicomplex_total_degree_metric_no_go_affine_defect_completion_open",
+    "total_degree_closes_metric_uniqueness": false,
+    "twelve_dimensional_completion_clue_found": true
+  }
+}

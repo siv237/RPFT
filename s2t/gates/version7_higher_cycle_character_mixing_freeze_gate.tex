@@ -1,0 +1,187 @@
+\chapter{Высшие циклические характеры и заморозка ветви смешивания}
+\label{ch:v7-higher-cycle-character-mixing-freeze-gate}
+
+\section{Разложение по единственной голономии}
+
+Предыдущий гейт оставил один матричный цикл $W_C\in U(3)$. Поскольку все
+остальные семейные блоки в текущем подъёме пропорциональны $I_3$, можно
+диагонализовать $W_C$ одним общим семейным преобразованием:
+\begin{equation}
+ W_C=V\operatorname{diag}(e^{i\theta_1},e^{i\theta_2},e^{i\theta_3})V^\dagger,
+ \qquad
+ D(r,W_C)\simeq\bigoplus_{j=1}^3D(r,e^{i\theta_j}).
+ \label{eq:v7-higher-character-direct-sum}
+\end{equation}
+Следовательно, любой спектральный функционал текущего оператора является
+суммой одной и той же скалярной функции трёх собственных фаз. Это является
+точным следствием семейно-слепого фона, а не дополнительным предположением.
+
+Точный подсчёт замкнутых маршрутов даёт разложение
+\begin{equation}
+ \Tr D^{2n}
+ =A_{2n}(r)+
+ \sum_{m=1}^{\lfloor n/3\rfloor}
+ a_{2n,m}(r)\Re\Tr W_C^m,
+ \qquad a_{2n,m}(r)\in\mathbb Z_{\ge0}[r].
+ \label{eq:v7-higher-character-general-expansion}
+\end{equation}
+Число оборотов $m$ требует не менее $6m$ шагов, и полный перебор до степени
+тридцать подтверждает точное правило первого появления
+\begin{equation}
+ k_{\min}(m)=6m,
+ \qquad m=1,2,3,4,5.
+ \label{eq:v7-higher-character-first-degree}
+\end{equation}
+Такое чтение согласуется с общим разложением спектрального действия колчана
+по замкнутым путям и с описанием инвариантов представления через следы
+циклических голономий \cite{v7-higher-character-perez,v7-higher-character-kassel}.
+
+\section{Первые высшие характеры}
+
+Обозначим $\chi_m(W_C)=\Re\Tr W_C^m$. Голономные части первых моментов
+равны
+\begin{equation}
+ [\Tr D^6]_{\rm hol}=12r^4\chi_1(W_C),
+ \label{eq:v7-higher-character-six}
+\end{equation}
+\begin{equation}
+ [\Tr D^8]_{\rm hol}=(48r^4+96r^6)\chi_1(W_C),
+ \label{eq:v7-higher-character-eight}
+\end{equation}
+\begin{equation}
+ [\Tr D^{10}]_{\rm hol}
+ =(140r^4+460r^6+540r^8)\chi_1(W_C).
+ \label{eq:v7-higher-character-ten}
+\end{equation}
+Первый новый гармонический характер возникает в двенадцатом моменте:
+\begin{align}
+ [\Tr D^{12}]_{\rm hol}
+ ={}&(360r^4+1560r^6+3072r^8+2592r^{10})\chi_1(W_C)
+ \nonumber\\
+ &+12r^8\chi_2(W_C).
+ \label{eq:v7-higher-character-twelve}
+\end{align}
+Третий характер впервые возникает при степени восемнадцать и имеет
+коэффициент
+\begin{equation}
+ [\chi_3]\Tr D^{18}=12r^{12}.
+ \label{eq:v7-higher-character-eighteen-third}
+\end{equation}
+Таким образом, высшие моменты действительно несут новую фазовую информацию.
+Но новое содержание не означает автоматического нецентрального минимума.
+
+Для каждого отдельного положительно взвешенного момента выполнен прямой
+угловой тест
+\begin{equation}
+ \theta_{2n}^*(r)=\pi,
+ \qquad
+ 2n=6,8,\ldots,30,
+ \qquad 0.05\le r\le20,
+ \label{eq:v7-higher-character-individual-minima}
+\end{equation}
+на $61$ логарифмически распределённом значении $r$ и $20001$ угловой точке.
+Это конечный вычислительный результат, а не теорема для всех степеней. Он
+закрывает ближайшую лазейку: ни один из проверенных индивидуальных моментов
+не сдвигает минимум с $W_C=-I_3$.
+
+\section{Почему свободный профиль может имитировать успех}
+
+Уже два первых характера допускают потенциал
+\begin{equation}
+ V_{12}(W_C)=a\Re\Tr W_C+b\Re\Tr W_C^2.
+ \label{eq:v7-higher-character-two-harmonic-potential}
+\end{equation}
+На одной собственной фазе его стационарное уравнение равно
+\begin{equation}
+ \sin\theta\,(a+4b\cos\theta)=0.
+ \label{eq:v7-higher-character-stationarity}
+\end{equation}
+Внутренний минимум возможен при
+\begin{equation}
+ b>0,
+ \qquad |a|<4b,
+ \qquad
+ \cos\theta_*=-\frac{a}{4b}.
+ \label{eq:v7-higher-character-interior-condition}
+\end{equation}
+Но при $r=1$ комбинация $c_6\Tr D^6+c_{12}\Tr D^{12}$ имеет
+\begin{equation}
+ a=12c_6+7584c_{12},
+ \qquad b=12c_{12},
+ \qquad
+ -636<\frac{c_6}{c_{12}}<-628.
+ \label{eq:v7-higher-character-tuned-ratio}
+\end{equation}
+Иными словами, нецентральная собственная фаза требует компенсации двух
+независимых коэффициентов спектрального профиля. Фон $H_{15}$ этого
+отношения не выводит. Моменты функции отсечения являются отдельными данными
+спектрального действия \cite{v7-higher-character-spectral-action}.
+
+\section{Классовый no-go полной матрицы смешивания}
+
+Для произвольного профиля текущая архитектура имеет вид
+\begin{equation}
+ \mathcal S_f(W_C)=\sum_{j=1}^3F_f(\theta_j),
+ \label{eq:v7-higher-character-separable-action}
+\end{equation}
+и потому удовлетворяет
+\begin{equation}
+ \mathcal S_f(UW_CU^\dagger)=\mathcal S_f(W_C)
+ \qquad\text{для всех }U\in U(3).
+ \label{eq:v7-higher-character-conjugation-invariance}
+\end{equation}
+Функционал может ограничить три собственные фазы, но не выбирает семейные
+собственные векторы относительно независимо различимых up- и down-осей.
+Следовательно, даже искусственно полученный нецентральный спектр одной
+голономии ещё не является выводом CKM/PMNS. Для этого необходим второй
+независимо выведенный семейный тензор, не коммутирующий с первым.
+
+\begin{theorem}[Высшие характеры без параметр-свободного смешивания]
+На текущем семейно-слепом одноконтурном родителе характер
+$\Re\Tr W_C^m$ впервые возникает в степени $6m$. Отдельные моменты степеней
+$6$--$30$ во всём проверенном диапазоне радиуса сохраняют центральный минимум
+$W_C=-I_3$. Нецентральная фаза уже алгебраически возможна при смешивании
+характеров, но требует не выведенного отношения коэффициентов профиля.
+\end{theorem}
+
+\begin{nogocriterion}[Заморозка одноконтурной ветви смешивания]
+Нельзя считать CKM/PMNS выведенными из одной классовой функции $W_C$.
+Архитектура инвариантна при сопряжении и не выбирает относительные семейные
+оси; первый внутренний минимум дополнительно требует свободного отношения
+$c_6/c_{12}$. Ветвь смешивания текущего одноконтурного родителя замораживается
+до независимого появления второго некоммутирующего семейного тензора.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item высшие характеры $\chi_2,\chi_3$: \textbf{присутствуют};
+ \item первое появление $\chi_m$: \textbf{степень $6m$};
+ \item индивидуальные моменты $6$--$30$ выбирают нецентр: \textbf{нет};
+ \item комбинация $\chi_1+\chi_2$ может иметь внутреннюю фазу:
+ \textbf{да, условно};
+ \item необходимое отношение коэффициентов выведено из $H_{15}$:
+ \textbf{нет};
+ \item одна классовая функция выбирает семейные оси: \textbf{нет};
+ \item CKM/PMNS выведены: \textbf{нет};
+ \item ветвь смешивания текущего родителя: \textbf{заморожена};
+ \item следующий основной вопрос: \textbf{эндогенный масштаб Hodge-родителя};
+ \item условие повторного открытия: \textbf{второй независимо выведенный
+ некоммутирующий семейный тензор}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_higher_cycle_character_mixing_freeze_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-higher-character-perez}
+C.~I.~P\'erez-S\'anchez,
+\emph{The Spectral Action on Quivers}, arXiv:2401.03705.
+\bibitem{v7-higher-character-kassel}
+A.~Kassel, T.~L\'evy,
+\emph{Trace Identities for Quiver Representations}, arXiv:2603.22156.
+\bibitem{v7-higher-character-spectral-action}
+M.~Eckstein, B.~Iochum,
+\emph{Spectral Action in Noncommutative Geometry},
+SpringerBriefs in Mathematical Physics 27 (2018); arXiv:1902.05306.
+\end{thebibliography}

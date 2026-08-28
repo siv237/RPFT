@@ -1,0 +1,160 @@
+{
+  "gate": "version7_higher_cycle_character_mixing_freeze_gate",
+  "exact_walk_character_structure": {
+    "first_winding_degrees": {
+      "1": 6,
+      "2": 12,
+      "3": 18,
+      "4": 24,
+      "5": 30
+    },
+    "selected_harmonic_coefficients_by_radius_power": {
+      "6": {
+        "1": {
+          "4": 12
+        }
+      },
+      "8": {
+        "1": {
+          "4": 48,
+          "6": 96
+        }
+      },
+      "10": {
+        "1": {
+          "4": 140,
+          "6": 460,
+          "8": 540
+        }
+      },
+      "12": {
+        "1": {
+          "4": 360,
+          "6": 1560,
+          "8": 3072,
+          "10": 2592
+        },
+        "2": {
+          "8": 12
+        }
+      },
+      "18": {
+        "1": {
+          "4": 4572,
+          "6": 31644,
+          "8": 117108,
+          "10": 279324,
+          "12": 437040,
+          "14": 415044,
+          "16": 183708
+        },
+        "2": {
+          "8": 1296,
+          "10": 6336,
+          "12": 12492,
+          "14": 9720
+        },
+        "3": {
+          "12": 12
+        }
+      }
+    },
+    "maximum_direct_block_matrix_residual": 2.6702880859375e-05,
+    "maximum_direct_block_matrix_relative_residual": 6.620393343176247e-14,
+    "single_holonomy_class_function": true,
+    "depends_on_eigenphases_not_eigenvectors": true
+  },
+  "individual_higher_moment_test": {
+    "degrees": [
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30
+    ],
+    "radius_interval": [
+      0.05,
+      20.0
+    ],
+    "radius_samples": 61,
+    "angle_samples": 20001,
+    "minima": {
+      "6": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "8": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "10": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "12": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "14": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "16": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "18": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "20": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "22": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "24": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "26": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "28": {
+        "all_tested_radii_minimize_at_pi": true
+      },
+      "30": {
+        "all_tested_radii_minimize_at_pi": true
+      }
+    },
+    "maximum_displacement_from_pi": 0.0,
+    "all_tested_individual_moments_select_minus_identity": true,
+    "all_order_theorem_claimed": false
+  },
+  "first_tunable_noncentral_loophole": {
+    "potential": "a*ReTr(W)+b*ReTr(W^2)",
+    "scalar_stationarity": "sin(theta)*(a+4*b*cos(theta))=0",
+    "interior_minimum_condition": "b>0 and abs(a)<4*b",
+    "at_r_equal_1": {
+      "TrD6_chi1_coefficient": 12,
+      "TrD12_chi1_coefficient": 7584,
+      "TrD12_chi2_coefficient": 12,
+      "required_c6_over_c12_interval": [
+        -636.0,
+        -628.0
+      ]
+    },
+    "ratio_derived_by_H15": false,
+    "noncentral_eigenphase_requires_profile_tuning": true
+  },
+  "verdict": {
+    "status": "higher_cycle_characters_visible_single_holonomy_mixing_freeze",
+    "higher_characters_exist": true,
+    "nearest_individual_moment_loophole_closed": true,
+    "single_conjugacy_class_can_select_CKM_eigenvectors": false,
+    "parameter_free_noncentral_minimum_obtained": false,
+    "family_mixing_branch_frozen_in_current_single_cycle_parent": true,
+    "complete_physical_parent_obtained": false,
+    "next_gate": "return to the scale problem and test whether a profile-independent dynamical level can be derived from the Hodge parent; reopen mixing only after a second noncommuting family tensor is independently derived"
+  }
+}

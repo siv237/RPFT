@@ -1,0 +1,133 @@
+\chapter{Происхождение общего теплового следа из Real-суперсвязности}
+\label{ch:v7-real-superconnection-common-trace-origin-gate}
+
+\section{Решающий вопрос}
+
+Предыдущий гейт получил положительный локальный гессиан формального
+функционала
+\begin{equation}
+ \mathcal S_{\rm form}
+ =-\Tr_{H_{15}}e^{-\mathfrak m_{\rm ch}^2}
+  -\Tr_Ee^{-\mathfrak m_C^2}
+  +\Tr_{\rm phys}e^{-\Phi^2}.
+ \label{eq:v7-real-trace-formal-functional}
+\end{equation}
+Проверим, могут ли два минуса и один плюс быть обычной градуировкой одной
+конечномерной Real-суперсвязности, а не назначением ролей после вычисления.
+
+\section{Индексный запрет}
+
+Пусть $\mathcal H=\mathcal H^+\oplus\mathcal H^-$ и нуль-форменная часть
+суперсвязности нечётна:
+\begin{equation}
+ \mathbb A_0=
+ \begin{pmatrix}0&B^*\\B&0\end{pmatrix},
+ \qquad
+ \mathbb A_0^2=
+ \begin{pmatrix}B^*B&0\\0&BB^*\end{pmatrix}.
+ \label{eq:v7-real-trace-odd-square}
+\end{equation}
+Ненулевые спектры $B^*B$ и $BB^*$ совпадают с кратностями. Поэтому для
+любого $t>0$
+\begin{equation}
+ \Str e^{-t\mathbb A_0^2}
+ =\dim\ker B-\dim\ker B^*
+ =\dim\mathcal H^+-\dim\mathcal H^-.
+ \label{eq:v7-real-trace-index-identity}
+\end{equation}
+Это конечномерная форма механизма Маккина--Зингера. Она постоянна по $B$;
+все её корневые производные и гессиан равны нулю. Прямая сумма трёх таких
+комплексов даёт только сумму индексов:
+\begin{equation}
+ \Str e^{-t(\mathbb A_{0,1}\oplus\mathbb A_{0,2}\oplus
+ \mathbb A_{0,3})^2}=\operatorname{ind}B_1+
+ \operatorname{ind}B_2+\operatorname{ind}B_3.
+ \label{eq:v7-real-trace-direct-sum-index}
+\end{equation}
+Следовательно, она не может совпасть с \eqref{eq:v7-real-trace-formal-functional},
+чей полный гессиан имеет минимальную моду $1.14399252085$.
+
+\section{Почему ролевой знак не является решением}
+
+На формальной прямой сумме можно ввести
+\begin{equation}
+ K_{\rm role}=\operatorname{diag}(-I_{H_{15}},-I_E,I_{\rm phys}),
+ \qquad
+ \Tr K_{\rm role}e^{-Q^2}=\mathcal S_{\rm form}.
+ \label{eq:v7-real-trace-role-involution}
+\end{equation}
+Но $Q=\operatorname{diag}(\mathfrak m_{\rm ch},\mathfrak m_C,\Phi)$
+коммутирует с $K_{\rm role}$ и не является нечётным относительно него:
+\begin{equation}
+ \{K_{\rm role},Q\}=2K_{\rm role}Q\ne0
+ \quad\text{при}\quad Q\ne0.
+ \label{eq:v7-real-trace-role-oddness-defect}
+\end{equation}
+Если исправить нечётность каноническим удвоением
+\begin{equation}
+ D_Q=\begin{pmatrix}0&Q^*\\Q&0\end{pmatrix},
+ \qquad \Str e^{-tD_Q^2}=0
+ \label{eq:v7-real-trace-canonical-doubling}
+\end{equation}
+для квадратного $Q$. Real-удвоение и последующий физический полуслед лишь
+удваивают и затем делят это сокращение; нужная динамика не возвращается.
+
+\begin{theorem}[No-go обычного теплового суперследа]
+Функционал \eqref{eq:v7-real-trace-formal-functional} не является
+нуль-форменной компонентой обычного теплового суперследа одной
+конечномерной нечётной Real-суперсвязности. Честный суперслед сокращается до
+индекса, а ролевой оператор $K_{\rm role}$ воспроизводит знаки только как
+дополнительная вставка, не как градуировка данного ненулевого $Q$.
+\end{theorem}
+
+\section{Точная граница результата}
+
+Запрет не относится к высшим дифференциально-форменным компонентам характера
+Черна, трансгрессиям, условным или эквивариантным следам и положительной
+норме кривизны. Но каждый такой маршрут содержит дополнительную
+геометрическую структуру и не может называться обычным суперследовым выводом
+\eqref{eq:v7-real-trace-formal-functional}. Литература Квиллена и
+Бисмута--Фрида подтверждает характерологическую и трансгрессионную роль
+суперследа, но не предоставляет требуемый скалярный потенциал автоматически
+\cite{v7-real-trace-quillen,v7-real-trace-bismut-freed}.
+
+\begin{nogocriterion}[Запрет ручной ролевой градуировки]
+Нельзя объявлять $K_{\rm role}$ физически выведенным только потому, что его
+вставка сохраняет найденный положительный гессиан. Требуется получить
+относительную инволюцию из уже существующего дифференциала, Real-структуры,
+условного ожидания или одной положительной нормы кривизны.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item обычный нечётный тепловой суперслед: \textbf{индексный};
+ \item зависимость его нуль-форменной части от полей: \textbf{нет};
+ \item прямая сумма трёх комплексов: \textbf{не помогает};
+ \item Real-удвоение и полуслед: \textbf{не помогают};
+ \item ролевой оператор воспроизводит знаки: \textbf{формально да};
+ \item происхождение ролевого оператора: \textbf{не выведено};
+ \item формальный локальный вакуум предыдущего гейта: \textbf{сохраняется};
+ \item его повышение до физического родителя: \textbf{не пройдено};
+ \item следующий гейт: \textbf{производная относительная инволюция или
+ норма общей кривизны}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_real_superconnection_common_trace_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-real-trace-quillen}
+D.~Quillen,
+\emph{Superconnections and the Chern Character},
+Topology 24 (1985), 89--95.
+\bibitem{v7-real-trace-mckean-singer}
+H.~P.~McKean, I.~M.~Singer,
+\emph{Curvature and the Eigenvalues of the Laplacian},
+J. Differential Geometry 1 (1967), 43--69.
+\bibitem{v7-real-trace-bismut-freed}
+J.-M.~Bismut, D.~S.~Freed,
+\emph{The Analysis of Elliptic Families. I. Metrics and Connections on
+Determinant Bundles},
+Comm. Math. Phys. 106 (1986), 159--176.
+\end{thebibliography}

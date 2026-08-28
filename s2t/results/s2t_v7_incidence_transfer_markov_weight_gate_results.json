@@ -1,0 +1,68 @@
+{
+  "gate": "version7_incidence_transfer_markov_weight_gate",
+  "one_corner_quotient_channel": {
+    "formula": "T(X,Y)=(U X U* + Y)/2",
+    "local_selector_pass": true,
+    "origin_half_full_hessian_residual": 1.9130064588196966e-14,
+    "origin_heavy_gap": 0.40000000000000113,
+    "origin_signature": [
+      7,
+      0,
+      20
+    ],
+    "random_positive_input_minimum_eigenvalue": 1.57572785914,
+    "unital_residual": 9.828703763834368e-15,
+    "vacuum_minimum_eigenvalue": 4.582763014822573,
+    "vacuum_signature": [
+      0,
+      0,
+      27
+    ]
+  },
+  "polar_transfer": {
+    "coisometry_residual": 1.96567804791517e-14,
+    "decomposition": "21 = 10 matched source + 10 target + 1 index defect",
+    "matched_source_support_rank": 10,
+    "reference_rank": 10,
+    "reference_shape": [
+      10,
+      11
+    ],
+    "source_defect_rank": 1,
+    "support_projector_residual": 1.96519666761392e-14
+  },
+  "source_corner_reinterpretation": {
+    "meaning": "source-only curvature forgets target endpoint data",
+    "signature": [
+      8,
+      0,
+      19
+    ],
+    "unwanted_negative_modes": [
+      {
+        "dominant_label": "LLXR_w1_im",
+        "dominant_weight": 1.0,
+        "eigenvalue": -0.3999999999999999
+      }
+    ]
+  },
+  "trace_preserving_expectation": {
+    "local_selector_pass": false,
+    "matched_corner_is_duplicated": true,
+    "origin_heavy_gap": -5.6000000000000005,
+    "origin_hessian_equals_twice_quotient_hessian": true,
+    "origin_signature": [
+      21,
+      0,
+      6
+    ]
+  },
+  "verdict": {
+    "canonical_polar_quotient_derives_local_half_weight": true,
+    "eleven_over_twenty_one_is_fundamental_weight": false,
+    "full_trace_preserving_expectation_derives_half_weight": false,
+    "next_gate": "version7_index_defect_reduced_linking_quotient_gate",
+    "physical_reduced_quotient_is_derived": false,
+    "status": "local_ucp_quotient_pass_full_expectation_no_go"
+  }
+}

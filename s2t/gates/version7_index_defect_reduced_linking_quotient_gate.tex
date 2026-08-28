@@ -1,0 +1,158 @@
+\chapter{Индексный дефект и метрика редуцированного связывающего quotient}
+\label{ch:v7-index-defect-reduced-linking-quotient-gate}
+
+\section{Почему локальный проход ещё нужно нормировать}
+
+Предыдущий гейт получил правильный гессиан из однократного полярного чтения
+\begin{equation}
+ Z=T_U(C_s,C_t)=\frac12(UC_sU^*+C_t),
+ \qquad
+ \mathcal S_{\rm raw}=\frac12\|Z\|_{\rm HS}^2.
+ \label{eq:v7-reduced-raw-quotient-action}
+\end{equation}
+Но коэффициент перед нормой нельзя переносить через quotient без проверки.
+Исходное физическое действие уже имело вид половины суммы двух углов:
+\begin{equation}
+ \mathcal S_V
+ =\frac12\left(\|C_s\|_{\rm HS}^2+\|C_t\|_{\rm HS}^2\right).
+ \label{eq:v7-reduced-original-two-corner-action}
+\end{equation}
+
+На согласованных десятимерных опорах положим
+\begin{equation}
+ X=UP C_sPU^*,
+ \qquad Y=C_t,
+ \qquad
+ Z=\frac{X+Y}{2},
+ \qquad D=\frac{X-Y}{2}.
+ \label{eq:v7-reduced-symmetric-antisymmetric-curvature}
+\end{equation}
+Тогда параллелограммное тождество даёт
+\begin{equation}
+ \frac12\left(\|X\|_{\rm HS}^2+\|Y\|_{\rm HS}^2\right)
+ =\|Z\|_{\rm HS}^2+\|D\|_{\rm HS}^2.
+ \label{eq:v7-reduced-parallelogram-identity}
+\end{equation}
+Следовательно, метрика, индуцированная исходным двухугловым носителем на
+диагональном quotient, равна $\|Z\|^2$, а не $\frac12\|Z\|^2$.
+
+\section{Нулевой гессиан индуцированной метрики}
+
+В нуле согласованные фоновые кривизны совпадают после полярного переноса:
+\begin{equation}
+ U(A_0^*A_0)U^*=A_0A_0^*.
+ \label{eq:v7-reduced-background-intertwining}
+\end{equation}
+Антисимметричная часть $D$ и все блоки ранга-один дефекта начинаются с
+квадратичного порядка по полю. Поэтому они не дают вклада в гессиан нуля,
+и машинный аудит получает точное тождество
+\begin{equation}
+ \Hess_0\|Z\|_{\rm HS}^2
+ =\Hess_0\mathcal S_V.
+ \label{eq:v7-reduced-inherited-hessian-identity}
+\end{equation}
+
+Удобно записать семейство метрик
+\begin{equation}
+ \mathcal S_c=\mathcal S_E+\frac c2\|Z\|_{\rm HS}^2.
+ \label{eq:v7-reduced-metric-scale-family}
+\end{equation}
+Все двадцать тяжёлых направлений положительны точно при
+\begin{equation}
+ 0\le c<\frac{16}{15}.
+ \label{eq:v7-reduced-metric-scale-window}
+\end{equation}
+Сырая однокопийная конвенция $c=1$ проходит, но индуцированная метрика
+$c=2$ возвращает прежний равный вес:
+\begin{align}
+ c=1:&\quad (n_-,n_0,n_+)=(7,0,20),
+ &\lambda_{\rm heavy}^{\min}&=\frac25,
+ \label{eq:v7-reduced-raw-pass}\\
+ c=2:&\quad (n_-,n_0,n_+)=(21,0,6),
+ &\lambda_{\rm heavy}^{\min}&=-\frac{28}{5}.
+ \label{eq:v7-reduced-inherited-fail}
+\end{align}
+Обе метрики сохраняют положительный гессиан уже выбранного вакуума. Различие
+касается именно эндогенного запуска из нуля.
+
+\section{Проверка накопленных механизмов редукции}
+
+\subsection{Real-полуслед}
+
+Полное Real-удвоение действует одновременно на рёберный и физический
+Hodge-блоки. Предыдущий строгий гейт уже доказал, что один физический
+полуслед сокращает оба удвоения и сохраняет относительный вес один. Он не
+превращает индуцированную метрику $c=2$ в $c=1$ только для физического
+quotient.
+
+\subsection{Лесной семейный quotient}
+
+Лесной quotient главы~\ref{ch:v7-real-arrow-bimodule-forest-quotient-gate}
+действует на вершинные семейные кадры после выбора ненулевого вакуума. Он
+уменьшает $54$ ориентационных нуля до девяти циклических мод, но не
+отождествляет source/target Gram-углы и не меняет их Hodge-метрику.
+
+\subsection{Представленный junk}
+
+На вспомогательном Real-модуле стрелок обычный модуль внутренних одноформ
+равен нулю. Поэтому в текущем представленном исчислении нет ненулевого
+идеала форм, факторизация по которому могла бы породить именно карту
+$C_s\oplus C_t\mapsto Z$ вместе с новой нормой.
+
+\subsection{BRST--BV и gauge-quotient}
+
+Для вершинного калибровочного действия
+\begin{equation}
+ \delta A=\xi_tA-A\xi_s
+ \label{eq:v7-reduced-gauge-variation}
+\end{equation}
+в точке $A=0$ получаем $\delta A=0$. Поэтому ненулевая отрицательная мода
+гессиана нуля не является вертикальной gauge-модой и не может исчезнуть
+только после BRST--BV-факторирования.
+
+\begin{theorem}[No-go наследуемой метрики текущих редукций]
+Полярный quotient канонически определяет общий десятимерный образ
+кривизн, но метрика, наследуемая от исходного двухуглового Hodge-носителя,
+считает его с коэффициентом $c=2$. Она даёт сигнатуру $(21,0,6)$.
+Ни общий Real-полуслед, ни прежний лесной quotient, ни текущий junk-фактор,
+ни gauge/BRST--BV-редукция не выводят сырую метрику $c=1$, обеспечившую
+локальный проход предыдущего гейта.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет потери половины при смене носителя]
+Нельзя после отождествления двух согласованных углов сохранять коэффициент
+$1/2$ перед однокопийным следом только потому, что он даёт правильную
+сигнатуру. Требуется либо функториально вывести quotient-меру с этой
+нормировкой, либо получить эквивалентное ослабление из смешанной
+полярно-передаточной кривизны одного большего оператора.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item полярный carrier $10+10+1$: \textbf{сохранён};
+ \item сырой quotient $c=1$: \textbf{локально проходит};
+ \item индуцированный quotient $c=2$: \textbf{проваливает запуск};
+ \item критическая граница: \textbf{$c=16/15$};
+ \item Real-полуслед как источник $c=1$: \textbf{нет};
+ \item лесной семейный quotient как источник $c=1$: \textbf{нет};
+ \item текущий junk-фактор как источник $c=1$: \textbf{нет};
+ \item BRST--BV как удаление лишней моды нуля: \textbf{нет};
+ \item физическая quotient-метрика: \textbf{не выведена};
+ \item следующий гейт: \textbf{смешанная полярно-передаточная кривизна}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_index_defect_reduced_linking_quotient_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-reduced-weiner}
+M.~Weiner,
+\emph{On Quasi-Orthogonal Systems of Matrix Algebras},
+arXiv:1002.0017.
+\bibitem{v7-reduced-kodaka}
+K.~Kodaka, T.~Teruya,
+\emph{The Strong Morita Equivalence for Inclusions of $C^*$-Algebras and
+Conditional Expectations for Equivalence Bimodules},
+arXiv:1609.08263.
+\end{thebibliography}

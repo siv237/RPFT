@@ -1,0 +1,152 @@
+\chapter{Минимальная архитектурная развилка после запрета \texorpdfstring{$R_2$}{R2}}
+\label{ch:v7-r2-minimal-architecture-branch-gate}
+
+\section{Вопрос}
+
+Строгий первый порядок запретил прямой $R_2$ на фиксированном $H_{15}$.
+Теперь необходимо сравнить три минимальных изменения архитектуры:
+автоморфную скрутку неизменённой алгебры, обобщённые внутренние флуктуации
+без первого порядка и строгий путь с новыми фермионными вершинами.
+
+\section{Автоморфная скрутка не меняет типы слагаемых}
+
+Стандартная алгебра разлагается на попарно неизоморфные простые вещественные
+идеалы
+\begin{equation}
+ \mathcal A_{\rm SM}=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C).
+ \label{eq:v7-r2-branch-simple-ideals}
+\end{equation}
+Любой $*$-автоморфизм прямой суммы может переставлять только изоморфные
+простые идеалы. Поэтому
+\begin{equation}
+ \rho(\mathbb C)=\mathbb C,\qquad
+ \rho(\mathbb H)=\mathbb H,\qquad
+ \rho(M_3)=M_3.
+ \label{eq:v7-r2-branch-automorphism-orbits}
+\end{equation}
+Внутренние автоморфизмы могут вращать матричные координаты внутри $\mathbb H$
+и $M_3$, но не превращают метку $\mathbb C$ в $M_3$ или $\mathbb H$.
+Следовательно, простая автоморфная скрутка неизменённой $\mathcal A_{\rm SM}$
+не превращает диагональ $R_2$ в ребро одной строки или одного столбца.
+Общие теории скрученных Real-троек существуют, но применение скрутки требует
+явного расширения представленной алгебры или другой реализации
+\cite{v7r2branch-landi,v7r2branch-grand}.
+
+\section{Нулевой по новым вершинам путь: отказ от первого порядка}
+
+Для Real-тройки без условия первого порядка к линейным флуктуациям добавляется
+нелинейный член \cite{v7r2branch-generalized}:
+\begin{equation}
+ D_A=D+A_{(1)}+\widetilde A_{(1)}+A_{(2)},
+ \label{eq:v7-r2-branch-generalized-dirac}
+\end{equation}
+где
+\begin{equation}
+ A_{(2)}=\sum_j\widehat a_j[A_{(1)},\widehat b_j]
+ =\sum_{j,k}\widehat a_j a_k[[D,b_k],\widehat b_j].
+ \label{eq:v7-r2-branch-quadratic-fluctuation}
+\end{equation}
+При строгом первом порядке $A_{(2)}=0$; при его нарушении именно этот член
+восстанавливает нелинейную калибровочную ковариантность полной флуктуации.
+
+Этот маршрут не требует новых фермионных вершин, но меняет аксиоматику и
+действие. Из общей формулы ещё не следует, что на конкретном $H_{15}$
+возникает ровно $R_2$, что его нормировка единственна или что вакуум
+сохраняет цвет.
+
+\section{Строгий путь: минимальный зеркальный цикл}
+
+Сохраняем обычный первый порядок и хиральную нечётность. Вершина задаётся
+тройкой
+\begin{equation}
+ v=(i,j,\chi),\qquad
+ i,j\in\{\mathbb C,\mathbb H,M_3\},\qquad
+ \chi\in\{L,R\}.
+ \label{eq:v7-r2-branch-typed-vertex}
+\end{equation}
+Строго допустимое ребро удовлетворяет одновременно
+\begin{equation}
+ \chi_v\ne\chi_w,\qquad
+ i_v=i_w\quad\text{или}\quad j_v=j_w.
+ \label{eq:v7-r2-branch-strict-edge}
+\end{equation}
+
+Машинный перебор всех $18$ типов показывает: без новых вершин и с одной
+новой вершиной цикла, содержащего оба существующих ребра
+$Q_L-u_R$ и $L_L-e_R$, нет. Минимум равен
+\begin{equation}
+ N_{\rm new}^{\rm strict}=2.
+ \label{eq:v7-r2-branch-minimum-new-vertices}
+\end{equation}
+Существует девять минимальных пар координат. Наименьшая по сырой комплексной
+размерности добавляет зеркальные лептонные типы
+\begin{equation}
+ X_L=(\mathbb C,\mathbb C,L),\qquad
+ Y_R=(\mathbb H,\mathbb C,R),\qquad
+ \dim_{\mathbb C}(X_L\oplus Y_R)=1+2=3,
+ \label{eq:v7-r2-branch-minimal-mirror-pair}
+\end{equation}
+и даёт шестикромочный цикл
+\begin{equation}
+ Q_L\to u_R\to X_L\to e_R\to L_L\to Y_R\to Q_L.
+ \label{eq:v7-r2-branch-six-cycle}
+\end{equation}
+Здесь смешанный эффект факторизован по нескольким допустимым полям; прямого
+элементарного ребра $R_2$ всё равно нет. Кроме того, ещё не выполнены
+Real-удвоение, аномальный аудит, спектральное действие и экспериментальные
+границы на зеркальных фермионов.
+
+\section{Решение развилки}
+
+Две оставшиеся ветви имеют несравнимую цену. Обобщённая флуктуация сохраняет
+фермионный набор, но отказывается от линейного первого порядка и вводит
+$A_{(2)}$. Строгий маршрут сохраняет аксиому, но требует как минимум двух
+новых хиральных вершин и не создаёт элементарный $R_2$. Поэтому без заранее
+заданного критерия стоимости нельзя честно объявить одну ветвь канонической.
+
+\begin{theorem}[Минимальная архитектурная цена]
+На неизменённой $\mathcal A_{\rm SM}$ автоморфная скрутка не переставляет
+слагаемые и не лечит диагональный дефект $R_2$. Маршрут без новых фермионов
+требует отказа от строгого первого порядка и квадратичного $A_{(2)}$.
+Маршрут со строгим первым порядком требует не менее двух новых хиральных
+вершин; существует ровно девять минимальных координатных пар.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет ложного выбора]
+Нельзя выбирать обобщённую или зеркальную ветвь только по меньшему числу
+символов. Первая должна доказать конкретную опору $A_{(2)}$, Real-замыкание
+и цветовой вакуум; вторая --- Real/аномальное завершение и отсутствие
+произвольных новых юкавских матриц.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item простая автоморфная скрутка $\mathcal A_{\rm SM}$: \textbf{закрыта};
+ \item обобщённая флуктуация, новые фермионные вершины: \textbf{ноль};
+ \item необходимый новый член: \textbf{$A_{(2)}$};
+ \item строгий путь, минимум новых вершин: \textbf{две};
+ \item минимальных координатных пар: \textbf{девять};
+ \item минимальная сырая комплексная размерность: \textbf{три};
+ \item элементарный строгий $R_2$: \textbf{не получен};
+ \item единственная физическая ветвь выбрана: \textbf{нет}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_r2_minimal_architecture_branch_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7r2branch-generalized}
+A.~H.~Chamseddine, A.~Connes, W.~D.~van Suijlekom,
+\emph{Inner Fluctuations in Noncommutative Geometry without the First Order Condition},
+Journal of Geometry and Physics 73 (2013), 222--234; arXiv:1304.7583.
+\bibitem{v7r2branch-landi}
+G.~Landi, P.~Martinetti,
+\emph{On twisting real spectral triples by algebra automorphisms},
+Letters in Mathematical Physics 106 (2016), 1499--1530; arXiv:1601.00219.
+\bibitem{v7r2branch-grand}
+A.~Devastato, P.~Martinetti,
+\emph{Twisted spectral triple for the Standard Model and spontaneous breaking of the Grand Symmetry},
+Mathematical Physics, Analysis and Geometry 20 (2017), article 2;
+arXiv:1411.1320.
+\end{thebibliography}

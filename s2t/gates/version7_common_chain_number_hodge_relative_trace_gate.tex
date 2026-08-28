@@ -1,0 +1,203 @@
+\chapter{Общий цепно-Hodge след и граница единственности метрики}
+\label{ch:v7-common-chain-number-hodge-relative-trace-gate}
+
+\section{От двух положительных норм к одному следу}
+
+Предыдущий гейт вывел относительную производную
+\begin{equation}
+ \delta_N(F_A)=\frac12[N,F_A],
+ \qquad
+ \|\delta_N(F_A)\|_{\rm HS}^2=2\|\mathcal R_U(A)\|_{\rm HS}^2.
+ \label{eq:v7-common-relative-component}
+\end{equation}
+Оставался вопрос, можно ли считать рёберный Hodge-момент и эту
+relative-компоненту одним физическим следом, а не двумя независимо
+нормированными функционалами.
+
+На исследуемом 27-мерном вещественном срезе рёберную кривизну удобно
+представить самосопряжённым удвоенным блоком
+\begin{equation}
+ \mathbb M_E=\operatorname{diag}(m_E,-m_E),
+ \qquad \dim_{\mathbb C}\mathbb M_E=54,
+ \label{eq:v7-common-edge-curvature}
+\end{equation}
+где координаты $m_E$ равны
+\begin{equation}
+ \sqrt{m_a}(|z_a|^2-1),\qquad
+ |w_d|^2+\frac85,\qquad
+ |w_W|^2+\frac9{10}.
+ \label{eq:v7-common-edge-components}
+\end{equation}
+Тогда
+\begin{equation}
+ \frac12\Tr_{54}\mathbb M_E^2
+ =\mathcal S_E+\text{постоянная}.
+ \label{eq:v7-common-edge-trace}
+\end{equation}
+
+Связывающий блок сделаем самосопряжённым умножением антиэрмитова
+коммутатора на $i$:
+\begin{equation}
+ \mathbb M_L=i\,\delta_N(Q_A^2-Q_{A_0}^2),
+ \qquad \dim_{\mathbb C}\mathbb M_L=42.
+ \label{eq:v7-common-linking-curvature}
+\end{equation}
+
+\section{Один 96-мерный кривизностный носитель}
+
+Положим
+\begin{equation}
+ \mathcal K_{\rm common}
+ =\mathcal K_E\oplus\mathcal H_{\rm link},
+ \qquad
+ \dim_{\mathbb C}\mathcal K_{\rm common}=54+42=96,
+ \label{eq:v7-common-chain-carrier}
+\end{equation}
+и
+\begin{equation}
+ \mathbb F_{\rm common}
+ =\operatorname{diag}(\mathbb M_E,\mathbb M_L).
+ \label{eq:v7-common-curvature}
+\end{equation}
+Обычный полный матричный след даёт одно действие
+\begin{align}
+ \mathcal S_{\rm common}
+ &=\frac12\Tr_{96}\mathbb F_{\rm common}^2-\text{const}\nonumber\\
+ &=\mathcal S_E+\|\mathcal R_U(A)\|_{\rm HS}^2.
+ \label{eq:v7-common-action}
+\end{align}
+На ста случайных конфигурациях максимальная невязка этого тождества меньше
+$10^{-8}$. Никакого относительного коэффициента в
+\eqref{eq:v7-common-action} не вставлено.
+
+Полная матричная алгебра $M_{96}(\mathbb C)$ здесь является только
+контейнером следа. Она не объявляется координатной алгеброй и не создаёт
+новую калибровочную группу. Физическое действие остаётся блок-диагональным
+на уже построенных носителях.
+
+\section{Real-завершение}
+
+Real-сопряжение добавляет комплексно-сопряжённую копию общей кривизны:
+\begin{equation}
+ \mathbb F_{\mathbb R}
+ =\mathbb F_{\rm common}\oplus\overline{\mathbb F_{\rm common}}.
+ \label{eq:v7-common-real-completion}
+\end{equation}
+Один физический полуслед удовлетворяет
+\begin{equation}
+ \frac14\Tr_{192}\mathbb F_{\mathbb R}^2
+ =\frac12\Tr_{96}\mathbb F_{\rm common}^2.
+ \label{eq:v7-common-real-half-trace}
+\end{equation}
+Максимальная машинная ошибка меньше $10^{-8}$. Real-удвоение не меняет
+отношение двух компонент.
+
+\section{Полный локальный гессиан}
+
+Связывающая relative-компонента начинается с четвёртого порядка в нуле.
+Поэтому общий след сохраняет рёберный запуск
+\begin{equation}
+ (n_-,n_0,n_+)_{0}=(7,0,20),
+ \qquad
+ \lambda_{\rm heavy}^{\min}=\frac{18}{5}.
+ \label{eq:v7-common-origin-signature}
+\end{equation}
+В целевом вакууме единый след даёт
+\begin{equation}
+ (n_-,n_0,n_+)_{A_0}=(0,0,27),
+ \qquad
+ \lambda_{\min}=4.2355904499\ldots.
+ \label{eq:v7-common-vacuum-signature}
+\end{equation}
+
+Более сильный контроль состоит в замене linking-метрики на любой
+положительный вес $\eta\ge0$. Для проверенных значений
+\begin{equation}
+ \eta=0,\frac14,1,4,100
+ \label{eq:v7-common-positive-weight-scan}
+\end{equation}
+нулевая сигнатура остаётся $(7,0,20)$, а вакуумная --- $(0,0,27)$.
+Фактически это следует из двух структурных фактов:
+\begin{enumerate}
+ \item linking-компонента имеет нулевой гессиан в начале;
+ \item её вакуумный гессиан положительно полуопределён.
+\end{enumerate}
+Следовательно, качественный селектор больше не зависит от относительной
+положительной нормировки.
+
+\section{Почему количественная метрика ещё не единственна}
+
+Несмотря на существование одного незавешенного следа, два подносителя имеют
+разные размерности:
+\begin{equation}
+ \dim\mathcal K_E=54,\qquad
+ \dim\mathcal H_{\rm link}=42.
+ \label{eq:v7-common-dimension-mismatch}
+\end{equation}
+Между ними нет унитарной обменной симметрии. Проекторы на два ортогональных
+слагаемых коммутируют со всей текущей блок-диагональной физической
+структурой. Поэтому симметрии не запрещают заменить Hodge-метрику на
+\begin{equation}
+ \|\mathbb M_E\|^2+\eta\|\mathbb M_L\|^2,
+ \qquad \eta>0.
+ \label{eq:v7-common-metric-family}
+\end{equation}
+Выбор $\eta=1$ является минимальным незавешенным общим следом, но пока не
+теоремой единственности метрики.
+
+\begin{theorem}[Качественное замыкание общим следом]
+Рёберный Hodge-момент и относительная цепная кривизна допускают один
+96-мерный самосопряжённый кривизностный носитель и один незавешенный
+матричный след. Он даёт правильный селективный запуск $(7,0,20)$ и строго
+устойчивый вакуум $(0,0,27)$. Более того, эти два качественных результата
+сохраняются при любой положительной относительной Hodge-нормировке.
+\end{theorem}
+
+\begin{remark}
+Тем самым прежний нормировочный барьер понижен: он больше не угрожает
+существованию вакуума и выбору правильных направлений. Но количественные
+отношения масс зависят от $\eta$, пока два подносителя не получены как
+степени одного неприводимого бикомплекса с единственной Hodge-метрикой.
+\end{remark}
+
+\begin{nogocriterion}[Запрет преждевременного массового предсказания]
+Нельзя использовать незавешенный выбор $\eta=1$ для численного предсказания
+масс, пока единственность общей Hodge-метрики не выведена из total-degree,
+Real-структуры или неприводимости общего бикомплекса. Допустимо утверждать
+только нормировочно независимые сигнатуры и существование локального
+вакуума.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item рёберный кривизностный носитель: \textbf{$54$};
+ \item связывающий носитель: \textbf{$42$};
+ \item общий носитель: \textbf{$96$};
+ \item один незавешенный след: \textbf{получен};
+ \item reduced action: \textbf{$\mathcal S_E+\|\mathcal R_U\|^2$};
+ \item Real-удвоение: \textbf{$192$};
+ \item физический полуслед: \textbf{отношение сохраняет};
+ \item нулевая сигнатура: \textbf{$(7,0,20)$};
+ \item вакуумная сигнатура: \textbf{$(0,0,27)$};
+ \item устойчивость при всех положительных весах: \textbf{получена};
+ \item качественный нормировочный разрыв: \textbf{закрыт};
+ \item количественная Hodge-метрика: \textbf{не единственна};
+ \item массовые отношения: \textbf{не выведены};
+ \item следующий гейт: \textbf{бикомплекс полной степени}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_common_chain_number_hodge_relative_trace_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-common-trace-quillen}
+D.~Quillen,
+\emph{Superconnections and the Chern Character},
+Topology 24 (1985), 89--95.
+\bibitem{v7-common-trace-morita}
+K.~Kodaka, T.~Teruya,
+\emph{The Strong Morita Equivalence for Inclusions of $C^*$-Algebras and
+Conditional Expectations for Equivalence Bimodules},
+arXiv:1609.08263.
+\end{thebibliography}

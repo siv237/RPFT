@@ -1,0 +1,199 @@
+{
+  "color_vacuum_audit": {
+    "full_su3_color_preserved": false,
+    "fundamental_su3_has_nonzero_invariant_vector": false,
+    "hodge_vacuum_requires_each_selected_norm_nonzero": true,
+    "selected_colored_edge_count": 2,
+    "selected_colored_edges": [
+      "Q_L_Y_R",
+      "X_L_u_R"
+    ],
+    "verdict": "the exact six-edge Hodge vacuum necessarily breaks color"
+  },
+  "gate": "version7_full_gauge_weighted_edge_carrier_gate",
+  "gauge_index_audit": {
+    "edge_indices_one_copy": {
+      "complex_dimension": 21,
+      "su2_dynkin_index": "2",
+      "su3_dynkin_index": "3/2",
+      "u1_trace_index": "13"
+    },
+    "indices_are_unified": false,
+    "single_old_q_G_reuse_available": false
+  },
+  "minimal_intertwiner_lift": {
+    "all_edge_totals": {
+      "complex_dimension": 21,
+      "su2_dynkin_index": "2",
+      "su3_dynkin_index": "3/2",
+      "u1_trace_index": "13"
+    },
+    "edges": [
+      {
+        "absolute_hypercharge": "0",
+        "complex_dimension": 1,
+        "contains_color_triplet": false,
+        "contains_weak_doublet": false,
+        "edge": "L_L_Y_R",
+        "minimal_multiplet": "(1,1)_0",
+        "selected": true,
+        "su2_dynkin_index": "0",
+        "su3_dynkin_index": "0",
+        "u1_trace_index": "0"
+      },
+      {
+        "absolute_hypercharge": "2/3",
+        "complex_dimension": 3,
+        "contains_color_triplet": true,
+        "contains_weak_doublet": false,
+        "edge": "Q_L_Y_R",
+        "minimal_multiplet": "(3,1)_{2/3}",
+        "selected": true,
+        "su2_dynkin_index": "0",
+        "su3_dynkin_index": "1/2",
+        "u1_trace_index": "4/3"
+      },
+      {
+        "absolute_hypercharge": "0",
+        "complex_dimension": 1,
+        "contains_color_triplet": false,
+        "contains_weak_doublet": false,
+        "edge": "X_L_X_R",
+        "minimal_multiplet": "(1,1)_0",
+        "selected": true,
+        "su2_dynkin_index": "0",
+        "su3_dynkin_index": "0",
+        "u1_trace_index": "0"
+      },
+      {
+        "absolute_hypercharge": "0",
+        "complex_dimension": 1,
+        "contains_color_triplet": false,
+        "contains_weak_doublet": false,
+        "edge": "X_L_e_R",
+        "minimal_multiplet": "(1,1)_0",
+        "selected": true,
+        "su2_dynkin_index": "0",
+        "su3_dynkin_index": "0",
+        "u1_trace_index": "0"
+      },
+      {
+        "absolute_hypercharge": "5/3",
+        "complex_dimension": 3,
+        "contains_color_triplet": true,
+        "contains_weak_doublet": false,
+        "edge": "X_L_u_R",
+        "minimal_multiplet": "(3,1)_{5/3}",
+        "selected": true,
+        "su2_dynkin_index": "0",
+        "su3_dynkin_index": "1/2",
+        "u1_trace_index": "25/3"
+      },
+      {
+        "absolute_hypercharge": "0",
+        "complex_dimension": 1,
+        "contains_color_triplet": false,
+        "contains_weak_doublet": false,
+        "edge": "Y_L_Y_R",
+        "minimal_multiplet": "(1,1)_0",
+        "selected": true,
+        "su2_dynkin_index": "0",
+        "su3_dynkin_index": "0",
+        "u1_trace_index": "0"
+      },
+      {
+        "absolute_hypercharge": "1/2",
+        "complex_dimension": 2,
+        "contains_color_triplet": false,
+        "contains_weak_doublet": true,
+        "edge": "L_L_X_R",
+        "minimal_multiplet": "(1,2)_{1/2}",
+        "selected": false,
+        "su2_dynkin_index": "1/2",
+        "su3_dynkin_index": "0",
+        "u1_trace_index": "1/2"
+      },
+      {
+        "absolute_hypercharge": "1/2",
+        "complex_dimension": 2,
+        "contains_color_triplet": false,
+        "contains_weak_doublet": true,
+        "edge": "X_L_Y_R",
+        "minimal_multiplet": "(1,2)_{1/2}",
+        "selected": false,
+        "su2_dynkin_index": "1/2",
+        "su3_dynkin_index": "0",
+        "u1_trace_index": "1/2"
+      },
+      {
+        "absolute_hypercharge": "2/3",
+        "complex_dimension": 3,
+        "contains_color_triplet": true,
+        "contains_weak_doublet": false,
+        "edge": "X_L_d_R",
+        "minimal_multiplet": "(3,1)_{2/3}",
+        "selected": false,
+        "su2_dynkin_index": "0",
+        "su3_dynkin_index": "1/2",
+        "u1_trace_index": "4/3"
+      },
+      {
+        "absolute_hypercharge": "1/2",
+        "complex_dimension": 2,
+        "contains_color_triplet": false,
+        "contains_weak_doublet": true,
+        "edge": "Y_L_X_R",
+        "minimal_multiplet": "(1,2)_{1/2}",
+        "selected": false,
+        "su2_dynkin_index": "1/2",
+        "su3_dynkin_index": "0",
+        "u1_trace_index": "1/2"
+      },
+      {
+        "absolute_hypercharge": "1/2",
+        "complex_dimension": 2,
+        "contains_color_triplet": false,
+        "contains_weak_doublet": true,
+        "edge": "Y_L_e_R",
+        "minimal_multiplet": "(1,2)_{1/2}",
+        "selected": false,
+        "su2_dynkin_index": "1/2",
+        "su3_dynkin_index": "0",
+        "u1_trace_index": "1/2"
+      }
+    ],
+    "selected_totals": {
+      "complex_dimension": 10,
+      "su2_dynkin_index": "0",
+      "su3_dynkin_index": "1",
+      "u1_trace_index": "29/3"
+    },
+    "unselected_totals": {
+      "complex_dimension": 11,
+      "su2_dynkin_index": "2",
+      "su3_dynkin_index": "1/2",
+      "u1_trace_index": "10/3"
+    }
+  },
+  "verdict": {
+    "next_gate": "version7_color_preserving_composite_cycle_parent_gate",
+    "physical_color_preserving_vacuum_survives": false,
+    "projector_support_survives_positive_trace_weights": true,
+    "status": "structural_support_pass_but_color_vacuum_no_go"
+  },
+  "weighted_hodge_audit": {
+    "origin_signature_full_multiplets": [
+      20,
+      0,
+      22
+    ],
+    "potential": "sum_selected w_e*(||phi_e||^2-mu^2)^2 + sum_unselected w_e*(||phi_e||^4+2*mu^2||phi_e||^2), w_e>0",
+    "support_six_of_eleven_preserved_for_positive_weights": true,
+    "total_real_dimension": 42,
+    "vacuum_signature_before_gauge_quotient": [
+      0,
+      14,
+      28
+    ]
+  }
+}

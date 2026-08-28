@@ -1,0 +1,422 @@
+{
+  "gate": "version7_edge_coherence_rank_one_condensate_gate",
+  "field": {
+    "space": "M_2x3(C)",
+    "complex_dimension": 6,
+    "real_dimension": 12,
+    "copy_dimension": 2,
+    "common_channel_dimension": 3
+  },
+  "action": {
+    "formula": "(Tr(B B*) - 3)^2 + ||W(B)||_F^2",
+    "wedge_formula": "W_ia,jb = B_ia B_jb - B_ib B_ja",
+    "wedge_identity": "||W||^2 = 4 det(B B*)",
+    "maximum_random_wedge_identity_residual": 2.2737367544323206e-13,
+    "nonnegative": true,
+    "zero_set": "rank(B)=1 and Tr(B B*)=3"
+  },
+  "origin": {
+    "action": 9.0,
+    "stationary": true,
+    "analytic_hessian_eigenvalue": -12.0,
+    "numeric_spectrum": [
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819
+    ],
+    "signature": {
+      "negative": 12,
+      "zero": 0,
+      "positive": 0
+    }
+  },
+  "vacuum": {
+    "representative": [
+      [
+        1.7320508075688772,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "action": 1.9721522630525295e-31,
+    "rank": 1,
+    "frobenius_norm_squared": 2.9999999999999996,
+    "complex_vacuum_manifold_real_dimension": 7,
+    "analytic_positive_hessian_eigenvalue": 24.0,
+    "numeric_spectrum": [
+      7.999999902760463e-08,
+      7.999999902760463e-08,
+      7.999999902760463e-08,
+      7.999999902760463e-08,
+      7.999999902760463e-08,
+      7.999999902760463e-08,
+      7.999999902760463e-08,
+      24.000000079991,
+      24.00000008,
+      24.00000008,
+      24.00000008,
+      24.00000008
+    ],
+    "signature": {
+      "negative": 0,
+      "zero": 7,
+      "positive": 5
+    },
+    "copy_state_purity": 1.0,
+    "height_involution_residual": 0.0,
+    "random_minimum_samples": [
+      {
+        "action": 2.465190328815662e-31,
+        "rank": 1,
+        "left_purity": 1.0000000000000004,
+        "right_purity": 1.0000000000000002
+      },
+      {
+        "action": 1.8173556437724054e-30,
+        "rank": 1,
+        "left_purity": 0.9999999999999991,
+        "right_purity": 0.9999999999999991
+      },
+      {
+        "action": 2.320745582986619e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999996,
+        "right_purity": 0.9999999999999999
+      },
+      {
+        "action": 9.345575055139062e-31,
+        "rank": 1,
+        "left_purity": 1.0000000000000002,
+        "right_purity": 1.0000000000000004
+      },
+      {
+        "action": 2.2263750157116446e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999994,
+        "right_purity": 0.9999999999999993
+      },
+      {
+        "action": 1.5407439555097887e-32,
+        "rank": 1,
+        "left_purity": 0.9999999999999998,
+        "right_purity": 0.9999999999999998
+      },
+      {
+        "action": 2.472894048593211e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999996,
+        "right_purity": 0.9999999999999999
+      },
+      {
+        "action": 2.220597225878483e-31,
+        "rank": 1,
+        "left_purity": 1.0000000000000002,
+        "right_purity": 0.9999999999999999
+      },
+      {
+        "action": 7.943016573139057e-31,
+        "rank": 1,
+        "left_purity": 1.0000000000000004,
+        "right_purity": 1.0000000000000002
+      },
+      {
+        "action": 8.782240546405795e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999993,
+        "right_purity": 0.9999999999999993
+      },
+      {
+        "action": 1.832377897338626e-30,
+        "rank": 1,
+        "left_purity": 1.0000000000000009,
+        "right_purity": 1.0000000000000009
+      },
+      {
+        "action": 3.235562306570556e-32,
+        "rank": 1,
+        "left_purity": 1.0,
+        "right_purity": 1.0000000000000002
+      },
+      {
+        "action": 3.223236354926478e-30,
+        "rank": 1,
+        "left_purity": 0.9999999999999989,
+        "right_purity": 0.9999999999999989
+      },
+      {
+        "action": 7.904497974251313e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999996,
+        "right_purity": 0.9999999999999993
+      },
+      {
+        "action": 2.6808944825870323e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999996,
+        "right_purity": 0.9999999999999998
+      },
+      {
+        "action": 5.623715437610729e-32,
+        "rank": 1,
+        "left_purity": 0.9999999999999999,
+        "right_purity": 1.0
+      },
+      {
+        "action": 9.76831667793206e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999993,
+        "right_purity": 0.9999999999999993
+      },
+      {
+        "action": 1.9259299443872359e-32,
+        "rank": 1,
+        "left_purity": 0.9999999999999998,
+        "right_purity": 1.0
+      },
+      {
+        "action": 9.013352139732264e-32,
+        "rank": 1,
+        "left_purity": 0.9999999999999998,
+        "right_purity": 0.9999999999999996
+      },
+      {
+        "action": 2.742524240807424e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999997,
+        "right_purity": 0.9999999999999998
+      },
+      {
+        "action": 7.988757409318254e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999994,
+        "right_purity": 0.9999999999999994
+      },
+      {
+        "action": 8.728314507962953e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999994,
+        "right_purity": 0.9999999999999996
+      },
+      {
+        "action": 2.0530413207167934e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999996,
+        "right_purity": 0.9999999999999998
+      },
+      {
+        "action": 8.258387601532467e-31,
+        "rank": 1,
+        "left_purity": 1.0000000000000004,
+        "right_purity": 1.0000000000000004
+      },
+      {
+        "action": 2.1305600009783797e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999994,
+        "right_purity": 0.9999999999999997
+      },
+      {
+        "action": 1.7922704062467617e-30,
+        "rank": 1,
+        "left_purity": 0.9999999999999991,
+        "right_purity": 0.999999999999999
+      },
+      {
+        "action": 2.719413081474777e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999998,
+        "right_purity": 0.9999999999999999
+      },
+      {
+        "action": 3.180095524172204e-30,
+        "rank": 1,
+        "left_purity": 0.9999999999999989,
+        "right_purity": 0.9999999999999989
+      },
+      {
+        "action": 2.742524240807424e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999998,
+        "right_purity": 1.0
+      },
+      {
+        "action": 1.718892475365608e-32,
+        "rank": 1,
+        "left_purity": 0.9999999999999998,
+        "right_purity": 0.9999999999999997
+      },
+      {
+        "action": 8.085053906537616e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999996,
+        "right_purity": 0.9999999999999994
+      },
+      {
+        "action": 8.196757843312076e-31,
+        "rank": 1,
+        "left_purity": 1.0000000000000007,
+        "right_purity": 1.0000000000000004
+      },
+      {
+        "action": 2.0800043399382147e-31,
+        "rank": 1,
+        "left_purity": 1.0,
+        "right_purity": 1.0
+      },
+      {
+        "action": 8.628166150854818e-32,
+        "rank": 1,
+        "left_purity": 1.0000000000000002,
+        "right_purity": 1.0000000000000002
+      },
+      {
+        "action": 8.520795556455228e-31,
+        "rank": 1,
+        "left_purity": 1.0000000000000007,
+        "right_purity": 1.0000000000000007
+      },
+      {
+        "action": 6.77927340424307e-32,
+        "rank": 1,
+        "left_purity": 0.9999999999999999,
+        "right_purity": 0.9999999999999998
+      },
+      {
+        "action": 2.742524240807424e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999996,
+        "right_purity": 0.9999999999999997
+      },
+      {
+        "action": 7.904016491765216e-31,
+        "rank": 1,
+        "left_purity": 1.0000000000000004,
+        "right_purity": 1.0000000000000004
+      },
+      {
+        "action": 8.050387167538646e-31,
+        "rank": 1,
+        "left_purity": 1.0000000000000007,
+        "right_purity": 1.0000000000000004
+      },
+      {
+        "action": 2.157041537713704e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999996,
+        "right_purity": 0.9999999999999998
+      },
+      {
+        "action": 3.8711191882183446e-32,
+        "rank": 1,
+        "left_purity": 0.9999999999999998,
+        "right_purity": 0.9999999999999998
+      },
+      {
+        "action": 7.965646249985607e-31,
+        "rank": 1,
+        "left_purity": 1.0000000000000004,
+        "right_purity": 1.0000000000000007
+      },
+      {
+        "action": 3.019858152799186e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999996,
+        "right_purity": 0.9999999999999993
+      },
+      {
+        "action": 2.1127451489927977e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999994,
+        "right_purity": 0.9999999999999994
+      },
+      {
+        "action": 1.1401505270772436e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999998,
+        "right_purity": 0.9999999999999997
+      },
+      {
+        "action": 8.081202046648842e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999996,
+        "right_purity": 0.9999999999999996
+      },
+      {
+        "action": 8.011898661306282e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999993,
+        "right_purity": 0.9999999999999993
+      },
+      {
+        "action": 2.876496742563861e-31,
+        "rank": 1,
+        "left_purity": 0.9999999999999996,
+        "right_purity": 1.0
+      },
+      {
+        "action": 3.156406585856241e-30,
+        "rank": 1,
+        "left_purity": 0.9999999999999987,
+        "right_purity": 0.9999999999999987
+      },
+      {
+        "action": 1.1170393677445968e-31,
+        "rank": 1,
+        "left_purity": 1.0,
+        "right_purity": 1.0
+      }
+    ]
+  },
+  "Real_slice": {
+    "field_real_dimension": 6,
+    "vacuum_manifold_real_dimension": 3,
+    "origin_spectrum": [
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819,
+      -12.00000001588819
+    ],
+    "origin_signature": {
+      "negative": 6,
+      "zero": 0,
+      "positive": 0
+    },
+    "vacuum_spectrum": [
+      7.999999902760463e-08,
+      7.999999902760463e-08,
+      7.999999902760463e-08,
+      24.000000079991,
+      24.00000008,
+      24.00000008
+    ],
+    "vacuum_signature": {
+      "negative": 0,
+      "zero": 3,
+      "positive": 3
+    }
+  },
+  "parent_status": {
+    "radial_and_wedge_terms_combined_in_one_existing_curvature": false,
+    "relative_metric_between_scalar_and_wedge_channels_derived": false,
+    "copy_axis_inserted_by_hand": false,
+    "potential_level_rank_one_condensation": true,
+    "status": "conditional_positive_potential_parent_missing",
+    "next_gate": "construct or exclude a single Real graded exterior-square parent whose one curvature norm produces both the radial and wedge terms with fixed normalization"
+  }
+}

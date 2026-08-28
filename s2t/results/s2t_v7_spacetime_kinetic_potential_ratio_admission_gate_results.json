@@ -1,0 +1,236 @@
+{
+  "gate": "version7_spacetime_kinetic_potential_ratio_admission_gate",
+  "product_heat_kernel": {
+    "operator": "D_M tensor 1 + gamma5 tensor a*Phi_E(x)",
+    "common_a4_coefficient": "C0=f0/(8*pi^2)",
+    "finite_trace_kinetic_identity": "Tr(partial Phi_E)^2=2 sum_e |partial z_e|_R^2",
+    "hodge_potential_identity": "Tr(m_E^2)=2*S_mu+constant",
+    "Z": "4*C0*a^2",
+    "kappa": "2*C0*a^4",
+    "lambda_eff": "kappa/Z^2=pi^2/f0"
+  },
+  "rescaling_audit": {
+    "f0_values": [
+      0.5,
+      1.0,
+      2.0,
+      5.0
+    ],
+    "odd_field_scales": [
+      0.3,
+      1.0,
+      4.0
+    ],
+    "table": [
+      {
+        "f0": 0.5,
+        "odd_scale": 0.3,
+        "common_a4_coefficient": 0.006332573977646111,
+        "Z": 0.0022797266319525998,
+        "kappa": 0.00010258769843786699,
+        "lambda_eff": 19.739208802178716,
+        "expected_lambda_eff": 19.739208802178716
+      },
+      {
+        "f0": 0.5,
+        "odd_scale": 1.0,
+        "common_a4_coefficient": 0.006332573977646111,
+        "Z": 0.025330295910584444,
+        "kappa": 0.012665147955292222,
+        "lambda_eff": 19.739208802178716,
+        "expected_lambda_eff": 19.739208802178716
+      },
+      {
+        "f0": 0.5,
+        "odd_scale": 4.0,
+        "common_a4_coefficient": 0.006332573977646111,
+        "Z": 0.4052847345693511,
+        "kappa": 3.242277876554809,
+        "lambda_eff": 19.739208802178716,
+        "expected_lambda_eff": 19.739208802178716
+      },
+      {
+        "f0": 1.0,
+        "odd_scale": 0.3,
+        "common_a4_coefficient": 0.012665147955292222,
+        "Z": 0.0045594532639051995,
+        "kappa": 0.00020517539687573398,
+        "lambda_eff": 9.869604401089358,
+        "expected_lambda_eff": 9.869604401089358
+      },
+      {
+        "f0": 1.0,
+        "odd_scale": 1.0,
+        "common_a4_coefficient": 0.012665147955292222,
+        "Z": 0.05066059182116889,
+        "kappa": 0.025330295910584444,
+        "lambda_eff": 9.869604401089358,
+        "expected_lambda_eff": 9.869604401089358
+      },
+      {
+        "f0": 1.0,
+        "odd_scale": 4.0,
+        "common_a4_coefficient": 0.012665147955292222,
+        "Z": 0.8105694691387022,
+        "kappa": 6.484555753109618,
+        "lambda_eff": 9.869604401089358,
+        "expected_lambda_eff": 9.869604401089358
+      },
+      {
+        "f0": 2.0,
+        "odd_scale": 0.3,
+        "common_a4_coefficient": 0.025330295910584444,
+        "Z": 0.009118906527810399,
+        "kappa": 0.00041035079375146795,
+        "lambda_eff": 4.934802200544679,
+        "expected_lambda_eff": 4.934802200544679
+      },
+      {
+        "f0": 2.0,
+        "odd_scale": 1.0,
+        "common_a4_coefficient": 0.025330295910584444,
+        "Z": 0.10132118364233778,
+        "kappa": 0.05066059182116889,
+        "lambda_eff": 4.934802200544679,
+        "expected_lambda_eff": 4.934802200544679
+      },
+      {
+        "f0": 2.0,
+        "odd_scale": 4.0,
+        "common_a4_coefficient": 0.025330295910584444,
+        "Z": 1.6211389382774044,
+        "kappa": 12.969111506219235,
+        "lambda_eff": 4.934802200544679,
+        "expected_lambda_eff": 4.934802200544679
+      },
+      {
+        "f0": 5.0,
+        "odd_scale": 0.3,
+        "common_a4_coefficient": 0.06332573977646111,
+        "Z": 0.022797266319526,
+        "kappa": 0.00102587698437867,
+        "lambda_eff": 1.9739208802178714,
+        "expected_lambda_eff": 1.9739208802178716
+      },
+      {
+        "f0": 5.0,
+        "odd_scale": 1.0,
+        "common_a4_coefficient": 0.06332573977646111,
+        "Z": 0.25330295910584444,
+        "kappa": 0.12665147955292222,
+        "lambda_eff": 1.9739208802178716,
+        "expected_lambda_eff": 1.9739208802178716
+      },
+      {
+        "f0": 5.0,
+        "odd_scale": 4.0,
+        "common_a4_coefficient": 0.06332573977646111,
+        "Z": 4.052847345693511,
+        "kappa": 32.42277876554809,
+        "lambda_eff": 1.9739208802178716,
+        "expected_lambda_eff": 1.9739208802178716
+      }
+    ],
+    "maximum_formula_residual": 2.220446049250313e-16,
+    "lambda_independent_of_odd_field_scale": true,
+    "lambda_independent_of_f2_and_cutoff_after_mass_calibration": true,
+    "lambda_depends_on_f0": true
+  },
+  "mass_scale_audit": {
+    "formula": "M0^2=kappa*mu^2/Z=(a*mu)^2/2",
+    "tests": [
+      {
+        "f0": 0.5,
+        "odd_scale": 0.3,
+        "M0_squared": 0.13004999999999997,
+        "expected": 0.13005
+      },
+      {
+        "f0": 0.5,
+        "odd_scale": 1.0,
+        "M0_squared": 1.4449999999999998,
+        "expected": 1.4449999999999998
+      },
+      {
+        "f0": 0.5,
+        "odd_scale": 4.0,
+        "M0_squared": 23.119999999999997,
+        "expected": 23.119999999999997
+      },
+      {
+        "f0": 1.0,
+        "odd_scale": 0.3,
+        "M0_squared": 0.13004999999999997,
+        "expected": 0.13005
+      },
+      {
+        "f0": 1.0,
+        "odd_scale": 1.0,
+        "M0_squared": 1.4449999999999998,
+        "expected": 1.4449999999999998
+      },
+      {
+        "f0": 1.0,
+        "odd_scale": 4.0,
+        "M0_squared": 23.119999999999997,
+        "expected": 23.119999999999997
+      },
+      {
+        "f0": 2.0,
+        "odd_scale": 0.3,
+        "M0_squared": 0.13004999999999997,
+        "expected": 0.13005
+      },
+      {
+        "f0": 2.0,
+        "odd_scale": 1.0,
+        "M0_squared": 1.4449999999999998,
+        "expected": 1.4449999999999998
+      },
+      {
+        "f0": 2.0,
+        "odd_scale": 4.0,
+        "M0_squared": 23.119999999999997,
+        "expected": 23.119999999999997
+      },
+      {
+        "f0": 5.0,
+        "odd_scale": 0.3,
+        "M0_squared": 0.13004999999999997,
+        "expected": 0.13005
+      },
+      {
+        "f0": 5.0,
+        "odd_scale": 1.0,
+        "M0_squared": 1.4449999999999998,
+        "expected": 1.4449999999999998
+      },
+      {
+        "f0": 5.0,
+        "odd_scale": 4.0,
+        "M0_squared": 23.119999999999997,
+        "expected": 23.119999999999997
+      }
+    ],
+    "f0_cancels": true,
+    "one_mass_input_fixes_a_times_mu": true
+  },
+  "real_trace_audit": {
+    "physical_half_trace_lambda_at_f0_1": 9.869604401089358,
+    "unhalved_real_trace_lambda_at_f0_1": 4.934802200544679,
+    "physical_half_trace_required": true
+  },
+  "remaining_anchor": {
+    "free_dimensionless_input": "f0",
+    "can_be_related_to_gauge_coupling_only_with_common_gauge_block": true,
+    "common_physical_gauge_block_present_in_current_edge_carrier": false,
+    "lambda_eff_numerically_predicted": false
+  },
+  "verdict": {
+    "odd_rescaling_obstruction_closed": true,
+    "f2_cutoff_obstruction_closed_for_dimensionless_quartic": true,
+    "unique_kinetic_to_potential_ratio_from_current_parent": false,
+    "status": "partial_positive_product_ratio_reduced_to_f0",
+    "next_gate": "test a common gauge kinetic anchor that fixes f0 and the edge quartic in the same physical product spectral trace"
+  }
+}

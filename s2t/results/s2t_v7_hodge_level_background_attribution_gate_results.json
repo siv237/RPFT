@@ -1,0 +1,329 @@
+{
+  "gate": "version7_hodge_level_background_attribution_gate",
+  "typed_H15_background": {
+    "baseline_edge_order": [
+      "u",
+      "d",
+      "e"
+    ],
+    "two_term_complex_dimension": 6,
+    "d15": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "chi15": [
+      [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "K15_commutator": [
+      [
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "Tr_D15_squared": 6.0,
+    "compressed_positive_edge_moments": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "target_edge_level": {
+    "edge_order": [
+      "L_L--X_R",
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "X_R--Y_L",
+      "Y_L--Y_R",
+      "Y_L--e_R"
+    ],
+    "selected_edges": [
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "Y_L--Y_R"
+    ],
+    "Gamma_E_diagonal": [
+      1,
+      -1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1,
+      1,
+      -1,
+      1
+    ],
+    "Gamma_hat_squared_trace": 22.0,
+    "residuals": {
+      "source_selfadjoint": 0.0,
+      "source_real_oddness": 0.0,
+      "target_selfadjoint": 0.0,
+      "target_involution": 0.0,
+      "target_grading_commutator": 0.0,
+      "target_real_oddness": 0.0
+    }
+  },
+  "equivariant_map_classification": {
+    "formula": "Psi_c(K15)=(c_u*k_u+c_d*k_d+c_e*k_e)*Gamma_hat",
+    "exact_baseline_gauge_types": {
+      "u": [
+        "3",
+        "1",
+        "2/3"
+      ],
+      "d": [
+        "3",
+        "1",
+        "-1/3"
+      ],
+      "e": [
+        "1",
+        "1",
+        "-1"
+      ]
+    },
+    "exact_gauge_type_orbits": [
+      [
+        "d"
+      ],
+      [
+        "e"
+      ],
+      [
+        "u"
+      ]
+    ],
+    "minimal_exact_gauge_equivariant_real_dimension": 3,
+    "coarse_u_d_exchange_orbits": [
+      [
+        "d",
+        "u"
+      ],
+      [
+        "e"
+      ]
+    ],
+    "minimal_coarse_invariant_real_dimension": 2,
+    "map_gram_matrix": [
+      [
+        22.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        22.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        22.0
+      ]
+    ],
+    "map_space_rank": 3,
+    "positive_normalized_exact_family_dimension": 2,
+    "positive_normalized_coarse_family_dimension": 1,
+    "one_dimensional_unique_map_space": false,
+    "full_S3_edge_symmetry_would_force_equal_weights": true,
+    "full_S3_edge_symmetry_is_physically_available": false
+  },
+  "normalization_comparison": {
+    "family_blind_edge_moments": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "scalar_trace_conventions": {
+      "full_vertex_trace_div_9": 0.6666666666666666,
+      "active_vertex_trace_div_5": 1.2,
+      "oriented_edge_average_div_6": 1.0
+    },
+    "all_three_conventions_equal": false,
+    "normalization_fixed_by_word_normalized_trace": false
+  },
+  "unequal_family_background": {
+    "edge_moments": [
+      1.0,
+      4.0,
+      9.0
+    ],
+    "positive_normalized_weight_choices": {
+      "equal_edge_weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "quark_symmetric_weights": [
+        0.25,
+        0.25,
+        0.5
+      ],
+      "strictly_positive_asymmetric_weights": [
+        0.5,
+        0.3333333333333333,
+        0.16666666666666666
+      ]
+    },
+    "resulting_relative_levels": {
+      "equal_edge_weights": 4.666666666666666,
+      "quark_symmetric_weights": 5.75,
+      "strictly_positive_asymmetric_weights": 3.333333333333333
+    },
+    "choice_independent": false
+  },
+  "verdict": {
+    "H15_supplies_nonzero_scale_observables": true,
+    "H15_uniquely_selects_map_to_Gamma_hat": false,
+    "relative_mu_over_H15_norm_derived": false,
+    "absolute_scale_derived": false,
+    "status": "no_go_nonunique_background_level_attribution",
+    "next_gate": "freeze internal scale derivation and test whether one declared dimensionful calibration input suffices for all remaining Hodge-parent observables"
+  }
+}

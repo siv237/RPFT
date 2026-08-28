@@ -1,0 +1,108 @@
+{
+  "conditional_dictionary": {
+    "canonical_matching": "C0*q_G/3=1/(4*g^2)",
+    "common_a4_coefficient": "C0=f0/(8*pi^2)",
+    "edge_quartic": "lambda_E=q_G*g^2/6",
+    "f0": "6*pi^2/(q_G*g^2)",
+    "gauge_coefficient": "C0*q_G/3",
+    "old_relative_u1_if_q_G_equals_2": "lambda_E=g^2/3"
+  },
+  "gate": "version7_common_gauge_f0_anchor_gate",
+  "numerical_checks": {
+    "pi_squared": 9.869604401089358,
+    "q_G_2_lambda_over_g_squared": 0.3333333333333333,
+    "selected_reduced_u1_index": 3.2222222222222223
+  },
+  "representation_trace_audit": {
+    "conditional_examples": [
+      {
+        "f0_times_g_squared_over_pi_squared": 3.0,
+        "lambda_E_over_g_squared": 0.3333333333333333,
+        "q_G": "2"
+      },
+      {
+        "f0_times_g_squared_over_pi_squared": 1.5,
+        "lambda_E_over_g_squared": 0.6666666666666666,
+        "q_G": "4"
+      },
+      {
+        "f0_times_g_squared_over_pi_squared": 0.75,
+        "lambda_E_over_g_squared": 1.3333333333333333,
+        "q_G": "8"
+      }
+    ],
+    "lambda_depends_on_total_gauge_index": true,
+    "reason": "The 11-dimensional edge-label trace suppresses gauge multiplet dimensions and Dynkin indices; the physical curvature trace does not.",
+    "reduced_edge_trace_determines_total_gauge_index": false
+  },
+  "selected_edge_hypercharge_audit": {
+    "all_gauge_weights_equal": false,
+    "all_hodge_weights_equal": true,
+    "charged_edges": 2,
+    "rows": [
+      {
+        "edge": "L_L_Y_R",
+        "gauge_singlet_under_u1": true,
+        "hodge_block_weight": 1,
+        "hypercharge_square": "0",
+        "induced_hypercharge": "0",
+        "source_hypercharge": "-1/2",
+        "target_hypercharge": "-1/2"
+      },
+      {
+        "edge": "Q_L_Y_R",
+        "gauge_singlet_under_u1": false,
+        "hodge_block_weight": 1,
+        "hypercharge_square": "4/9",
+        "induced_hypercharge": "-2/3",
+        "source_hypercharge": "1/6",
+        "target_hypercharge": "-1/2"
+      },
+      {
+        "edge": "X_L_X_R",
+        "gauge_singlet_under_u1": true,
+        "hodge_block_weight": 1,
+        "hypercharge_square": "0",
+        "induced_hypercharge": "0",
+        "source_hypercharge": "-1",
+        "target_hypercharge": "-1"
+      },
+      {
+        "edge": "X_L_e_R",
+        "gauge_singlet_under_u1": true,
+        "hodge_block_weight": 1,
+        "hypercharge_square": "0",
+        "induced_hypercharge": "0",
+        "source_hypercharge": "-1",
+        "target_hypercharge": "-1"
+      },
+      {
+        "edge": "X_L_u_R",
+        "gauge_singlet_under_u1": false,
+        "hodge_block_weight": 1,
+        "hypercharge_square": "25/9",
+        "induced_hypercharge": "5/3",
+        "source_hypercharge": "-1",
+        "target_hypercharge": "2/3"
+      },
+      {
+        "edge": "Y_L_Y_R",
+        "gauge_singlet_under_u1": true,
+        "hodge_block_weight": 1,
+        "hypercharge_square": "0",
+        "induced_hypercharge": "0",
+        "source_hypercharge": "-1/2",
+        "target_hypercharge": "-1/2"
+      }
+    ],
+    "singlet_edges": 4,
+    "unweighted_reduced_u1_index": "29/9"
+  },
+  "verdict": {
+    "common_physical_gauge_anchor_admitted": false,
+    "formal_f0_cancellation_against_a_fixed_gauge_trace": true,
+    "next_gate": "version7_full_gauge_weighted_edge_carrier_gate",
+    "reuse_q_G_equals_2_without_full_carrier": false,
+    "status": "conditional_formula_and_trace_mismatch_no_go"
+  }
+}

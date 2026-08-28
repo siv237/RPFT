@@ -1,0 +1,97 @@
+{
+  "classical_elimination": {
+    "creates_light_quadratic_instability": false,
+    "linear_heavy_source_present": false,
+    "preserves_su3_at_stationary_solution": true,
+    "stationary_solution_inside_positive_domain": "a=b=0",
+    "tree_level_light_correction": "0"
+  },
+  "field_role_audit": {
+    "heavy_objects_are_bosonic_edge_fields_not_linear_operator_subspaces": true,
+    "heavy_variables": [
+      "a in anti-3",
+      "b in 3"
+    ],
+    "light_variables": [
+      "p = X_L e_R",
+      "q = L_L Y_R"
+    ],
+    "ordinary_fermionic_messenger_schur_formula_directly_applicable": false
+  },
+  "finite_dimensional_gaussian": {
+    "complex_color_multiplicity": 3,
+    "effective_action": "3*log(M_a2*M_b2-kappa^2*|p*q|^2)+constant",
+    "first_nonzero_light_degree": 4,
+    "leading_light_operator": "-3*kappa^2/(M_a2*M_b2)*|p*q|^2",
+    "leading_u_coefficient": "-3*kappa**2/(M_a2*M_b2)",
+    "light_hessian_at_full_origin": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "light_hessian_is_zero": true,
+    "monotone_toward_gap_closure": true,
+    "stable_interior_minimum_from_determinant_alone": false
+  },
+  "four_dimensional_trace_log": {
+    "finite_coefficient_fixed_by_current_finite_graph": false,
+    "leading_integrand": "-3*kappa^2*|p*q|^2/((k^2+M_a2)*(k^2+M_b2))",
+    "logarithmically_divergent_quartic_matching": true,
+    "negative_light_mass_generated_at_p_equal_q_equal_zero": false,
+    "requires_counterterm_and_renormalization_scale": true,
+    "uv_radial_asymptotic": "dk/k"
+  },
+  "gate": "version7_virtual_colored_bridge_schur_complement_gate",
+  "heavy_block": {
+    "color_preserving_domain": "M_a2*M_b2 - kappa^2*|p*q|^2 > 0",
+    "determinant": "M_a2*M_b2 - kappa**2*p_x**2*q_x**2 - kappa**2*p_x**2*q_y**2 - kappa**2*p_y**2*q_x**2 - kappa**2*p_y**2*q_y**2",
+    "eigenvalues_each_with_color_multiplicity_three": [
+      "M_a2/2 + M_b2/2 - sqrt(4*kappa**2*(p_x**2*q_x**2 + p_x**2*q_y**2 + p_y**2*q_x**2 + p_y**2*q_y**2) + (M_a2 - M_b2)**2)/2",
+      "M_a2/2 + M_b2/2 + sqrt(4*kappa**2*(p_x**2*q_x**2 + p_x**2*q_y**2 + p_y**2*q_x**2 + p_y**2*q_y**2) + (M_a2 - M_b2)**2)/2"
+    ],
+    "gap_closes_at": "|p*q|^2 = M_a2*M_b2/kappa^2",
+    "matrix": [
+      [
+        "M_a2",
+        "-kappa*conjugate(p*q)"
+      ],
+      [
+        "-kappa*p*q",
+        "M_b2"
+      ]
+    ]
+  },
+  "project_comparison": {
+    "independent_color_preserving_quadratic_launch_already_derived": false,
+    "version4_messenger_schur_same_category": false,
+    "version6_bridge_determinant_boundary_risk_reappears_in_zero_mode_control": true
+  },
+  "verdict": {
+    "coefficient_free_stable_vacuum_closed": false,
+    "next_gate": "version7_color_preserving_quadratic_selector_origin_gate",
+    "self_starting_color_preserving_parent_admitted": false,
+    "status": "nonlinear_structural_pass_but_self_start_and_normalization_no_go",
+    "virtual_color_singlet_nonlinear_coupling_exists": true
+  }
+}

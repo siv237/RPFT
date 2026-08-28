@@ -1,0 +1,128 @@
+\chapter{Происхождение квадратичной флуктуации \texorpdfstring{$A_{(2)}$}{A(2)}}
+\label{ch:v7-r2-generalized-fluctuation-seed-origin-gate}
+
+\section{Вопрос и нулевая гипотеза}
+
+Архитектурная развилка оставила маршрут без новых фермионов: отказаться от
+строгого первого порядка и использовать обобщённую внутреннюю флуктуацию.
+До вычисления потенциала необходимо проверить, способен ли уже допущенный
+родитель сам активировать нелинейный член
+\begin{equation}
+ A_{(2)}=\sum_{j,k}\widehat a_j a_k[[D,b_k],\widehat b_j].
+ \label{eq:v7-a2-seed-source}
+\end{equation}
+Нулевая гипотеза: текущий оператор поддержан только на стандартных рёбрах
+$u,d,e$, проходит первый порядок и потому даёт $A_{(2)}=0$.
+
+\section{Наследование от полного поля Тома VII}
+
+Исправленный носитель имеет вид
+\begin{equation}
+ \mathcal E_{\rm phys}=E_{\rm aff}\otimes\Lambda_{\rm ch},
+ \qquad \Lambda_{\rm ch}=\operatorname{span}_{\mathbb C}\{u,d,e\}.
+ \label{eq:v7-a2-admitted-carrier}
+\end{equation}
+Семейный множитель коммутирует с конечной алгеброй. Поэтому
+\begin{equation}
+ [[X_a\otimes T_a,\pi(b)],\pi^o(c)]
+ =X_a\otimes[[T_a,\pi(b)],\pi^o(c)]=0.
+ \label{eq:v7-a2-family-factorization}
+\end{equation}
+Линейность даёт
+\begin{equation}
+ D_{\rm adm}=\sum_{a=u,d,e}X_a\otimes T_a
+ \quad\Longrightarrow\quad A_{(2)}[D_{\rm adm}]=0.
+ \label{eq:v7-a2-admitted-zero}
+\end{equation}
+Ранги $24\to21$ и Hodge-неустойчивость меняют коэффициенты и ранг на
+прежней опоре, но не создают скрытого нарушения первого порядка.
+
+\section{Центральный аудит и положительный контроль}
+
+На одном представителе каждого неприводимого бимодуля введены
+\begin{equation}
+ P_s^L|_{\mathcal H_{ij}}=\delta_{s,i},
+ \qquad P_t^R|_{\mathcal H_{ij}}=\delta_{t,j}.
+ \label{eq:v7-a2-central-projectors}
+\end{equation}
+Для всех девяти пар центральных идемпотентов получено
+\begin{equation}
+ \max_{s,t}\left\|[[D_{\rm adm},P_s^L],P_t^R]\right\|=0.
+ \label{eq:v7-a2-admitted-residual}
+\end{equation}
+Положительный контроль использует запрещённые диагонали $L_L-u_R$ и
+$Q_L-e_R$ и даёт
+\begin{equation}
+ \max_{s,t}\left\|[[D_{R_2},P_s^L],P_t^R]\right\|>0.
+ \label{eq:v7-a2-forbidden-residual}
+\end{equation}
+
+\section{Одна унитарная обобщённая флуктуация}
+
+Для $L=\pi(u)$, $R=\pi^o(u)$ и $U=LR$:
+\begin{align}
+ D^u&=UDU^*,\nonumber\\
+ A_{(1)}&=LDL^*-D,\qquad
+ \widetilde A_{(1)}=RDR^*-D,\nonumber\\
+ A_{(2)}&=D^u-D-A_{(1)}-\widetilde A_{(1)}.
+ \label{eq:v7-a2-unitary-decomposition}
+\end{align}
+Машинная проверка даёт
+\begin{equation}
+ \|A_{(2)}[D_{\rm adm}]\|<10^{-15},
+ \label{eq:v7-a2-unitary-admitted-zero}
+\end{equation}
+тогда как для $D_{R_2}$ норма ненулевая. При добавлении
+$\varepsilon D_{R_2}$ она линейна по $|\varepsilon|$ с остатком ниже
+$10^{-15}$.
+
+\section{Сверка с прежней ветвью}
+
+В Pati--Salam ненулевой $A_{(2)}$ возникал после явного расширения алгебры
+и конечного seed. Нормированный полугрупповой аудит затем доказывал
+составные тождества, но слишком общий seed заполнял весь 72-мерный
+симметричный канал. Общая теория показывает, что $A_{(2)}$ исчезает при
+первом порядке \cite{v7a2-generalized}; Pati--Salam является новой
+геометрией, а не флуктуацией неизменённой Стандартной модели
+\cite{v7a2-pati-salam}.
+
+\begin{theorem}[Нулевой $A_{(2)}$ допущенного родителя]
+На носителе $E_{\rm aff}\otimes\Lambda_{\rm ch}$ любой оператор,
+поддержанный на рёбрах $u,d,e$, удовлетворяет первому порядку до семейного
+тензорного множителя. Поэтому квадратичная часть любой обобщённой внутренней
+флуктуации равна нулю.
+\end{theorem}
+
+\begin{nogocriterion}[Круговой seed]
+Если ненулевой $A_{(2)}$ появляется только после включения в исходный $D$
+запрещённого кварк-лептонного блока, конструкция не выводит $R_2$, а
+предполагает новый сектор входными данными.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item допущенная опора: \textbf{$u,d,e$};
+ \item максимальный первопорядковый остаток: \textbf{ноль};
+ \item $A_{(2)}$ от допущенного родителя: \textbf{ноль};
+ \item семейный подъём меняет вывод: \textbf{нет};
+ \item запрещённый $R_2$-seed активирует $A_{(2)}$: \textbf{да};
+ \item $R_2$ получен без вставки нового сектора: \textbf{нет};
+ \item обобщённый маршрут как вывод: \textbf{закрыт круговостью};
+ \item следующий гейт: \textbf{Real- и аномальное завершение зеркального
+ цикла}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_r2_generalized_fluctuation_seed_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7a2-generalized}
+A.~H.~Chamseddine, A.~Connes, W.~D.~van Suijlekom,
+\emph{Inner Fluctuations in Noncommutative Geometry without the First Order Condition},
+Journal of Geometry and Physics 73 (2013), 222--234; arXiv:1304.7583.
+\bibitem{v7a2-pati-salam}
+A.~H.~Chamseddine, A.~Connes, W.~D.~van Suijlekom,
+\emph{Beyond the Spectral Standard Model: Emergence of Pati--Salam Unification},
+Journal of High Energy Physics 2013, 132; arXiv:1304.8050.
+\end{thebibliography}

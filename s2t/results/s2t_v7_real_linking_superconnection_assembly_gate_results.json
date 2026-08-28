@@ -1,0 +1,160 @@
+{
+  "degree_two_curvature_block": {
+    "origin_heavy_gap": 3.6,
+    "origin_signature_with_edge_hodge": [
+      7,
+      0,
+      20
+    ],
+    "projection": "Hom(H0,H2) block of d^2",
+    "represented_degree_projection_derived": false,
+    "vacuum_minimum_eigenvalue": 3.9368554658487813,
+    "vacuum_signature_with_edge_hodge": [
+      0,
+      0,
+      27
+    ]
+  },
+  "full_selfadjoint_curvature": {
+    "contains_diagonal_gram_blocks": true,
+    "curvature": "Q^2-Q0^2",
+    "operator": "Q=d+d*",
+    "origin_eigenvalues": [
+      -144.794319639,
+      -108.0,
+      -108.0,
+      -93.7787051595,
+      -89.6,
+      -89.6,
+      -89.6,
+      -89.6,
+      -89.6,
+      -89.6,
+      -72.8543191473,
+      -64.6551344981,
+      -55.21650903,
+      -44.4,
+      -44.4,
+      -41.6,
+      -41.6,
+      -41.6,
+      -41.6,
+      -41.6,
+      -41.6,
+      -40.6801098893,
+      -40.6801098893,
+      -33.9198571201,
+      -26.1198901107,
+      -26.1198901107,
+      -19.5811554062
+    ],
+    "origin_heavy_gap": -89.59999999999994,
+    "origin_signature": [
+      27,
+      0,
+      0
+    ],
+    "unwanted_square_block_norm": 19.183326093250876,
+    "vacuum_hessian_rank": 27,
+    "vacuum_minimum_eigenvalue": 23.262477976929947,
+    "vacuum_signature": [
+      0,
+      0,
+      27
+    ]
+  },
+  "gate": "version7_real_linking_superconnection_assembly_gate",
+  "normalization_test": {
+    "canonical_standard_factor_passes": false,
+    "critical_scale": 0.0666666666666667,
+    "exact_allowed_full_curvature_window": "0 <= alpha < 1/15",
+    "standard_orientation_and_real_factors": [
+      {
+        "heavy_gap": -89.59999999999994,
+        "name": "full_half_trace",
+        "passes": false,
+        "scale": 1.0,
+        "signature": [
+          27,
+          0,
+          0
+        ]
+      },
+      {
+        "heavy_gap": -41.59999999999997,
+        "name": "real_half_of_full_trace",
+        "passes": false,
+        "scale": 0.5,
+        "signature": [
+          27,
+          0,
+          0
+        ]
+      },
+      {
+        "heavy_gap": -17.599999999999994,
+        "name": "offdiagonal_orientation_quarter",
+        "passes": false,
+        "scale": 0.25,
+        "signature": [
+          27,
+          0,
+          0
+        ]
+      },
+      {
+        "heavy_gap": -5.599999999999998,
+        "name": "double_deduplication_eighth",
+        "passes": false,
+        "scale": 0.125,
+        "signature": [
+          21,
+          0,
+          6
+        ]
+      },
+      {
+        "heavy_gap": 0.4000000000000018,
+        "name": "first_passing_sixteenth",
+        "passes": true,
+        "scale": 0.0625,
+        "signature": [
+          7,
+          0,
+          20
+        ]
+      }
+    ]
+  },
+  "relative_curvature_factorization": {
+    "identity": "B1 B0 = AA*U-UA*A = R_U",
+    "maximum_d_square_block_residual": 2.714695366371291e-14,
+    "maximum_factorization_residual": 3.1384159184648177e-14,
+    "positive_factorization": true,
+    "reference_nilpotency_residual": 4.691595480048641e-15,
+    "zero_nilpotency_residual": 0.0
+  },
+  "three_term_linking_chain": {
+    "B0": "column(A*U,A)",
+    "B1": "row(A,-UA*)",
+    "d_is_odd": true,
+    "d_square_is_even": true,
+    "dimensions": [
+      11,
+      21,
+      10
+    ],
+    "maximum_even_square_residual": 0.0,
+    "maximum_oddness_residual": 0.0,
+    "total_complex_dimension": 42
+  },
+  "verdict": {
+    "degree_two_block_local_parent_survives": true,
+    "degree_two_projection_is_yet_derived": false,
+    "next_gate": "version7_linking_chain_degree_two_curvature_quotient_gate",
+    "ordinary_full_selfadjoint_curvature_is_parent": false,
+    "ordinary_full_square_restores_forbidden_gram_channels": true,
+    "relative_curvature_is_square_of_three_term_differential": true,
+    "status": "positive_three_term_factorization_full_curvature_no_go_degree_two_quotient_open"
+  }
+}

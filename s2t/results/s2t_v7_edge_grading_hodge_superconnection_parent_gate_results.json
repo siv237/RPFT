@@ -1,0 +1,83 @@
+{
+  "gate": "version7_edge_grading_hodge_superconnection_parent_gate",
+  "carrier": {
+    "edge_count": 11,
+    "two_term_complex_dimensions": [
+      11,
+      11
+    ],
+    "dynamic_edge_field": "Z=diag(z_e)",
+    "fixed_background_differential": "delta_E=[[0,P_sel],[P_unwanted,0]]",
+    "background_is_nilpotent": true,
+    "dynamic_is_nilpotent": true,
+    "arrow_colors_are_orthogonal": true
+  },
+  "derived_edge_grading": {
+    "Gamma_E": "I-2*P_sel",
+    "doubled_Gamma_E": "diag(Gamma_E,-Gamma_E)",
+    "background_moment_map": "[delta_E,delta_E^*]=-doubled_Gamma_E",
+    "maximum_background_identity_residual": 0.0,
+    "Real_exchange_reverses_doubled_grading": true
+  },
+  "single_hodge_action": {
+    "formula": "S_mu=1/2 Tr(([d_Z,d_Z^*]+mu^2[delta_E,delta_E^*])^2)-5mu^4",
+    "mu": 1.0,
+    "reduction": "sum_selected (|z_e|^2-mu^2)^2 + sum_unwanted (|z_e|^4+2mu^2|z_e|^2)",
+    "maximum_random_reduction_residual": 8.526512829121202e-14,
+    "bounded_below": true,
+    "minimum_value": 0.0
+  },
+  "one_generation_dynamics": {
+    "origin_stationary": true,
+    "origin_hessian_signature": {
+      "negative": 12,
+      "zero": 0,
+      "positive": 10
+    },
+    "vacuum_selected_edge_magnitudes_squared": 1.0,
+    "vacuum_unwanted_edges_zero": true,
+    "vacuum_hessian_signature": {
+      "negative": 0,
+      "zero": 6,
+      "positive": 16
+    },
+    "vacuum_phase_zero_modes": 6
+  },
+  "family_lift": {
+    "selected_vacuum": "Z_e in mu U(3)",
+    "unwanted_vacuum": "Z_e=0",
+    "origin_hessian_signature": {
+      "negative": 108,
+      "zero": 0,
+      "positive": 90
+    },
+    "vacuum_hessian_signature": {
+      "negative": 0,
+      "zero": 54,
+      "positive": 144
+    },
+    "vacuum_manifold": "U(3)^6"
+  },
+  "covariance_and_reality": {
+    "dynamic_oddness_residual": 0.0,
+    "background_oddness_residual": 0.0,
+    "projectors_act_on_complete_gauge_covariant_edge_blocks": true,
+    "Real_completion_by_orientation_reversal": true,
+    "physical_half_trace_preserves_coefficients": true
+  },
+  "remaining_physical_gap": {
+    "overall_scale_mu_derived": false,
+    "family_unitary_orientations_selected": false,
+    "embedding_into_physical_finite_spectral_triple_proved": false,
+    "spacetime_kinetic_terms_and_gauge_quotient_proved": false
+  },
+  "verdict": {
+    "status": "positive_field_space_hodge_parent_physical_embedding_open",
+    "one_moment_map_norm_gives_quadratic_and_quartic_terms": true,
+    "all_six_selected_edges_condense": true,
+    "all_five_unwanted_edges_are_gapped": true,
+    "independent_stabilization_weight": false,
+    "complete_physical_parent_obtained": false,
+    "next_gate": "test the canonical Real bimodule/superconnection embedding of the two colored edge arrows and quotient the U(3)^6 vacuum orientations without inserting family projectors"
+  }
+}

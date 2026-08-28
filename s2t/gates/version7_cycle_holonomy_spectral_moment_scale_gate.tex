@@ -1,0 +1,183 @@
+\chapter{Шестой спектральный момент циклической голономии и no-go масштаба}
+\label{ch:v7-cycle-holonomy-spectral-moment-scale-gate}
+
+\section{Оставшийся циклический объект}
+
+После относительного семейного quotient полный ненулевой граф имеет один
+независимый цикл
+\begin{equation}
+ C=(Q_L,u_R,X_L,e_R,L_L,Y_R,Q_L).
+ \label{eq:v7-cycle-moment-cycle}
+\end{equation}
+Три старых ребра имеют фиксированную единичную семейную ориентацию, четыре
+новых циклических ребра имеют общий радиальный масштаб $r$, а две
+вектороподобные массы и древесное ребро $Q_Ld_R$ не входят в $C$.
+После древесной фиксации всю относительную ориентацию можно поместить в один
+блок $W_C\in U(3)$.
+
+Пусть $D(r,W_C)$ является самосопряжённой блочной смежностью полного графа:
+\begin{equation}
+ D_{vw}=a_{vw}U_{vw},\qquad
+ D_{wv}=a_{vw}U_{vw}^\dagger,\qquad
+ a_{vw}=\begin{cases}1,&vw\in E_0,\\r,&vw\in E_*,\end{cases}
+ \label{eq:v7-cycle-moment-dirac}
+\end{equation}
+где все древесные $U_{vw}=I_3$, а произведение вдоль $C$ равно $W_C$.
+
+\section{Первый чувствительный спектральный момент}
+
+Прямой подсчёт замкнутых маршрутов даёт
+\begin{align}
+ \Tr D^2&=18(2r^2+1),\nonumber\\
+ \Tr D^4&=6(18r^4+10r^2+5),
+ \label{eq:v7-cycle-moment-low-traces}
+\end{align}
+и обе формулы не зависят от $W_C$. Шестой момент равен
+\begin{equation}
+ \Tr D^6
+ =54+144r^2+306r^4+324r^6
+ +12r^4\Re\Tr W_C.
+ \label{eq:v7-cycle-moment-sixth-trace}
+\end{equation}
+При $W_C=I_3$ это принимает форму
+\begin{equation}
+ \Tr D^6\big|_{W_C=I_3}
+ =18(18r^6+19r^4+8r^2+3).
+ \label{eq:v7-cycle-moment-sixth-trivial}
+\end{equation}
+Коэффициент двенадцать равен числу ориентированных начальных чтений простого
+шестирёберного цикла: шесть выборов начальной вершины и две ориентации.
+Следовательно,
+\begin{equation}
+ k_{\min}^{\rm hol}=6,\qquad
+ \Delta\Tr D^6=12r^4(\Re\Tr W_C-3).
+ \label{eq:v7-cycle-moment-first-sensitive-degree}
+\end{equation}
+Это согласуется с общим разложением спектрального действия колчана по
+замкнутым путям \cite{v7-cycle-moment-perez}. След голономии является
+классовой функцией и не зависит от выбора корневого семейного кадра.
+
+\section{Что выбирает шестой момент}
+
+Если коэффициент шестого момента в спектральном полиноме равен $c_6$, то
+первая голономно-чувствительная часть есть
+\begin{equation}
+ V_6(W_C)=12c_6r^4\Re\Tr W_C.
+ \label{eq:v7-cycle-moment-holonomy-potential}
+\end{equation}
+Её минимумы центральны:
+\begin{equation}
+ W_C^*=\begin{cases}
+ I_3,&c_6<0,\\
+ -I_3,&c_6>0,
+ \end{cases}
+ \qquad
+ c_6=0:\quad W_C\ \text{не виден}.
+ \label{eq:v7-cycle-moment-central-minima}
+\end{equation}
+Для $W_C=W_C^*\exp(iH)$ и ортонормированной следовой метрики на
+$\mathfrak u(3)$ получаем
+\begin{equation}
+ \Hess V_6\big|_{W_C^*}=12|c_6|r^4I_9,
+ \qquad (n_-,n_0,n_+)=(0,0,9).
+ \label{eq:v7-cycle-moment-holonomy-hessian}
+\end{equation}
+Таким образом, ненулевой $c_6$ действительно поднимает девятимерный
+линейный остаток предыдущего гейта. Но он выбирает только $\pm I_3$, а не
+нецентральную матрицу смешивания. Знак ответа определяется спектральным
+профилем, а не графом.
+
+\section{Радиальный тест масштаба}
+
+Возьмём общий усечённый полином
+\begin{equation}
+ \mathcal S_{246}(r,W_C)
+ =c_2\Tr D^2+c_4\Tr D^4+c_6\Tr D^6.
+ \label{eq:v7-cycle-moment-spectral-polynomial}
+\end{equation}
+После выбора центрального минимума при $c_6>0$ радиальная часть имеет вид
+\begin{equation}
+ \mathcal S_{246}(r)=\mathcal S_{246}(0)
+ +ar^2+br^4+cr^6,
+ \label{eq:v7-cycle-moment-radial-polynomial}
+\end{equation}
+где
+\begin{equation}
+ a=36c_2+60c_4+144c_6,\qquad
+ b=108c_4+270c_6,\qquad
+ c=324c_6.
+ \label{eq:v7-cycle-moment-radial-coefficients}
+\end{equation}
+Ненулевой стационарный масштаб обязан удовлетворять
+\begin{equation}
+ a+2br^2+3cr^4=0.
+ \label{eq:v7-cycle-moment-scale-equation}
+\end{equation}
+Фон $H_{15}$ вывел целые коэффициенты замкнутых маршрутов
+$36,60,144,108,270,324$, но не числа $c_2,c_4,c_6$. Последние являются
+моментами или производными выбранной спектральной функции и данными масштаба
+усечения \cite{v7-cycle-moment-spectral-action}. Поэтому значение $r=\mu$
+не следует из одного графа $H_{15}$.
+
+Если все три коэффициента неотрицательны, то
+\begin{equation}
+ a>0,\qquad b>0,\qquad c\ge0,\qquad r_*=0,
+ \label{eq:v7-cycle-moment-positive-profile-origin}
+\end{equation}
+то есть старый фон стабилизирует нуль, а не запускает конденсат. Ненулевой
+масштаб требует отдельного знака спектрального профиля, уровня отображения
+момента или нового динамического поля. В колчанных quotient постоянный сдвиг
+уровня является параметром устойчивости/Fayet--Iliopoulos, если его не
+выводит внешняя геометрия \cite{v7-cycle-moment-fi}.
+
+\begin{theorem}[Спектральная видимость и центральное замыкание]
+На текущем полном графе единственная относительная $U(3)$-голономия впервые
+входит в спектральные моменты при степени шесть и имеет точный вклад
+$12r^4\Re\Tr W_C$. При ненулевом коэффициенте шестого момента все девять
+линейных голономных мод получают положительный гессиан, но минимум всегда
+централен: $W_C=I_3$ или $W_C=-I_3$. Нецентральное семейное смешивание этим
+моментом не выводится.
+\end{theorem}
+
+\begin{nogocriterion}[Фон не выводит уровень отображения момента]
+Нельзя отождествлять комбинаторные коэффициенты замкнутых маршрутов с
+коэффициентами спектрального профиля. Без независимого вывода
+$c_2,c_4,c_6$ уравнение \eqref{eq:v7-cycle-moment-scale-equation} не
+предсказывает $\mu$. Нельзя также выбирать знак $c_6$ по желаемой
+голономии или называть центральный минимум выводом CKM/PMNS.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item независимых циклов полного графа: \textbf{$1$};
+ \item первый чувствительный момент: \textbf{$\Tr D^6$};
+ \item точный голономный вклад: \textbf{$12r^4\Re\Tr W_C$};
+ \item $\Tr D^2$ и $\Tr D^4$ видят $W_C$: \textbf{нет};
+ \item девять линейных мод при $c_6\ne0$: \textbf{подняты};
+ \item минимум при $c_6<0$: \textbf{$I_3$};
+ \item минимум при $c_6>0$: \textbf{$-I_3$};
+ \item нецентральный минимум: \textbf{нет};
+ \item CKM/PMNS: \textbf{не выведены};
+ \item коэффициенты радиального полинома: \textbf{вычислены};
+ \item $H_{15}$ определяет $c_2,c_4,c_6$: \textbf{нет};
+ \item масштаб $\mu$ выведен: \textbf{нет};
+ \item итог: \textbf{положительная спектральная видимость, центральный
+ holonomy-only минимум и no-go масштаба}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_cycle_holonomy_spectral_moment_scale_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-cycle-moment-perez}
+C.~I.~P\'erez-S\'anchez,
+\emph{The Spectral Action on Quivers}, arXiv:2401.03705.
+\bibitem{v7-cycle-moment-spectral-action}
+M.~Eckstein, B.~Iochum,
+\emph{Spectral Action in Noncommutative Geometry},
+SpringerBriefs in Mathematical Physics 27 (2018); arXiv:1902.05306.
+\bibitem{v7-cycle-moment-fi}
+D.~Robles-Llana,
+\emph{Quivers, Quotients, and Duality}, arXiv:hep-th/0405230.
+\end{thebibliography}

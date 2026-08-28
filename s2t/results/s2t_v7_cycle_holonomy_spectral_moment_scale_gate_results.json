@@ -1,0 +1,110 @@
+{
+  "gate": "version7_cycle_holonomy_spectral_moment_scale_gate",
+  "graph": {
+    "vertices": [
+      "L_L",
+      "Q_L",
+      "X_L",
+      "X_R",
+      "Y_L",
+      "Y_R",
+      "d_R",
+      "e_R",
+      "u_R"
+    ],
+    "baseline_edges": [
+      "L_L--e_R",
+      "Q_L--d_R",
+      "Q_L--u_R"
+    ],
+    "selected_edges": [
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "Y_L--Y_R"
+    ],
+    "unique_cycle": [
+      "Q_L--u_R",
+      "X_L--u_R",
+      "X_L--e_R",
+      "L_L--e_R",
+      "L_L--Y_R",
+      "Q_L--Y_R"
+    ],
+    "family_blind_baseline_assumption": true
+  },
+  "spectral_visibility": {
+    "degrees_tested": [
+      2,
+      4,
+      6
+    ],
+    "first_holonomy_sensitive_degree": 6,
+    "TrD2_holonomy_independent": true,
+    "TrD4_holonomy_independent": true,
+    "TrD6_holonomy_term": "12*r^4*ReTr(W_C)",
+    "maximum_second_moment_residual": 2.842170943040401e-14,
+    "maximum_fourth_moment_residual": 4.547473508864641e-13,
+    "maximum_sixth_identity_residual": 4.945377440890297e-12
+  },
+  "exact_radial_traces_at_trivial_holonomy": {
+    "TrD2": "18*(2*r^2+1)",
+    "TrD4": "6*(18*r^4+10*r^2+5)",
+    "TrD6": "18*(18*r^6+19*r^4+8*r^2+3)",
+    "maximum_direct_residual": 0.0
+  },
+  "sixth_moment_holonomy_potential": {
+    "formula": "V6(W)=12*c6*r^4*ReTr(W)",
+    "c6_negative_minimum": "W=I3",
+    "c6_positive_minimum": "W=-I3",
+    "noncentral_minimum_selected": false,
+    "hessians": {
+      "-1.0": {
+        "minimum": "I3",
+        "signature": {
+          "negative": 0,
+          "zero": 0,
+          "positive": 9
+        },
+        "eigenvalue_min": 11.999999927070348,
+        "eigenvalue_max": 11.999999927070348
+      },
+      "1.0": {
+        "minimum": "-I3",
+        "signature": {
+          "negative": 0,
+          "zero": 0,
+          "positive": 9
+        },
+        "eigenvalue_min": 11.999999927070348,
+        "eigenvalue_max": 11.999999927070348
+      }
+    },
+    "CKM_PMNS_derived": false
+  },
+  "scale_test": {
+    "spectral_polynomial": "S=c2 TrD2+c4 TrD4+c6 TrD6",
+    "radial_coefficients": {
+      "a_r2": "36*c2+60*c4+144*c6",
+      "b_r4_at_c6_positive_minimum": "108*c4+270*c6",
+      "c_r6": "324*c6",
+      "stationary_equation": "r*(a+2*b*r^2+3*c*r^4)=0"
+    },
+    "H15_determines_integer_walk_multiplicities": true,
+    "H15_determines_c2_c4_c6": false,
+    "mu_determined_by_H15_alone": false,
+    "nonzero_scale_requires_profile_coefficients_or_another_dynamic_level": true,
+    "all_nonnegative_c2_c4_c6_make_origin_radially_stable": true
+  },
+  "verdict": {
+    "status": "positive_sixth_moment_holonomy_visibility_central_minimum_scale_no_go",
+    "unique_cycle_holonomy_enters_derived_spectral_invariant": true,
+    "holonomy_zero_modes_lifted_if_c6_nonzero": true,
+    "nontrivial_family_mixing_selected": false,
+    "moment_map_level_mu_derived": false,
+    "complete_physical_parent_obtained": false,
+    "next_gate": "test whether independently derived higher cycle characters can produce a noncentral conjugacy-class minimum without free spectral-profile ratios; otherwise freeze the family-mixing branch"
+  }
+}

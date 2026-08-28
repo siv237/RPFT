@@ -1,0 +1,138 @@
+{
+  "gate": "version7_edge_coherence_full_graph_competition_gate",
+  "full_graph": {
+    "baseline_edges": [
+      "L_L--e_R",
+      "Q_L--d_R",
+      "Q_L--u_R"
+    ],
+    "new_allowed_edges": [
+      "L_L--X_R",
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "X_R--Y_L",
+      "Y_L--Y_R",
+      "Y_L--e_R"
+    ],
+    "selected_new_edges": [
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "Y_L--Y_R"
+    ],
+    "unwanted_new_edges": [
+      "L_L--X_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_R--Y_L",
+      "Y_L--e_R"
+    ]
+  },
+  "coherence_biclique_placement": {
+    "vertices": {
+      "rows": [
+        "L_L",
+        "Y_L"
+      ],
+      "columns": [
+        "e_R",
+        "X_R",
+        "Y_R"
+      ]
+    },
+    "all_edges": [
+      "L_L--X_R",
+      "L_L--Y_R",
+      "L_L--e_R",
+      "X_R--Y_L",
+      "Y_L--Y_R",
+      "Y_L--e_R"
+    ],
+    "baseline_inside": [
+      "L_L--e_R"
+    ],
+    "selected_new_inside": [
+      "L_L--Y_R",
+      "Y_L--Y_R"
+    ],
+    "unwanted_new_inside": [
+      "L_L--X_R",
+      "X_R--Y_L",
+      "Y_L--e_R"
+    ],
+    "new_outside": [
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_L--e_R",
+      "X_L--u_R"
+    ],
+    "selected_new_outside": [
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "X_L--u_R"
+    ],
+    "unwanted_new_outside": [
+      "X_L--Y_R",
+      "X_L--d_R"
+    ]
+  },
+  "support_obstruction": {
+    "row_order": [
+      "L_L",
+      "Y_L"
+    ],
+    "column_order": [
+      "e_R",
+      "X_R",
+      "Y_R"
+    ],
+    "target_mask": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "rank_one_rectangular_support_count": 21,
+    "target_is_rank_one_support": false,
+    "target_representative_rank": 2,
+    "target_eY_minor": 1.0,
+    "target_representative_energy_at_unit_amplitudes": 1.6666666666666667,
+    "minimum_unwanted_edges_if_all_three_desired_inside_edges_survive": 1,
+    "forced_unwanted_edge": "Y_L--e_R",
+    "stationary_point_with_all_target_inside_amplitudes_nonzero": false
+  },
+  "spectator_test": {
+    "new_complex_edges_outside_coherence_block": 6,
+    "one_generation_real_flat_directions": 12,
+    "three_generation_real_flat_directions": 108,
+    "selected_new_complex_edges_left_flat": 4,
+    "unwanted_new_complex_edges_left_flat": 2,
+    "extended_hessian_signature": {
+      "negative": 0,
+      "zero": 19,
+      "positive": 5
+    },
+    "maximum_outside_hessian_entry": 0.0,
+    "maximum_mixed_hessian_entry": 0.0
+  },
+  "verdict": {
+    "status": "closed_as_selector_of_target_six_edge_extension",
+    "auxiliary_superconnection_carrier_preserved": true,
+    "rank_one_coherence_mechanism_preserved": true,
+    "target_edge_menu_selected": false,
+    "reason": "the target support inside the coherence biclique has rank two, while the potential selects rank one; six new outside edges are spectators",
+    "next_gate": "construct and preregister a full-quiver cycle-curvature parent whose variables include all eleven new edges and whose vacuum support is the selected six-edge cycle rather than a rank-one biclique"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "asymmetric_escape": {
+    "extra_vertex_only_half_factor": "1/2",
+    "is_free_central_sector_weight": true,
+    "is_one_global_trace_operation": false,
+    "manufactured_beta": "1/2"
+  },
+  "degree_and_clifford_test": {
+    "common_clifford_identity_trace_distinguishes_blocks": false,
+    "degree_two_reassignment_is_new_structure": true,
+    "edge_curvature_component_degree": 0,
+    "form_degree_factor_distinguishes_blocks": false,
+    "vertex_curvature_component_degree": 0
+  },
+  "gate": "version7_real_half_trace_curvature_weight_gate",
+  "hessian_consequence": {
+    "beta_half_heavy_gap": 0.3999999999999997,
+    "beta_one_origin_minimum_eigenvalue": -24.0,
+    "conditional_beta_half_origin_signature": [
+      7,
+      0,
+      20
+    ],
+    "conditional_beta_half_vacuum_signature": [
+      0,
+      0,
+      27
+    ],
+    "uniform_real_half_trace_beta_one_origin_signature": [
+      21,
+      0,
+      6
+    ],
+    "uniform_real_half_trace_beta_one_vacuum_signature": [
+      0,
+      0,
+      27
+    ]
+  },
+  "trace_bookkeeping": {
+    "derived_beta": "1",
+    "edge_oriented_prefactor": "1/2",
+    "effective_edge_prefactor": "1/2",
+    "effective_vertex_prefactor": "1/2",
+    "one_global_physical_half_trace": "1/2",
+    "real_multiplicity_both_blocks": 2,
+    "target_beta": "1/2",
+    "vertex_oriented_prefactor": "1/2"
+  },
+  "verdict": {
+    "beta_half_derived": false,
+    "global_half_trace_changes_relative_weight": false,
+    "next_gate": "version7_clifford_form_degree_weight_origin_gate",
+    "real_doubling_changes_relative_weight": false,
+    "status": "real_half_trace_origin_no_go_form_degree_calculus_open",
+    "uniform_construction_gives_beta_one": true
+  }
+}

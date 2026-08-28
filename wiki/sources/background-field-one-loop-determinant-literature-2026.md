@@ -2,7 +2,7 @@
 
 > Status: working
 > Type: source
-> Updated: 2026-08-19
+> Updated: 2026-08-28
 
 ## Summary
 
@@ -34,12 +34,23 @@
 моды и проверить непертурбативное насыщение. Отрицательный локальный
 гессиан не равен доказанному конечному вакууму.
 
+Для виртуальной цветной пары Тома VII первый четырёхмерный лёгкий оператор
+пропорционален логарифмически расходящемуся интегралу с двумя тяжёлыми
+пропагаторами. Поэтому коэффициент локальной вершины `|pq|²` обязан быть
+записан как сумма loop-части и перенормированного контрчлена. Выбор общего
+голого спектрального профиля сам по себе не задаёт конечную часть этого
+контрчлена и масштаб согласования.
+
 ## Links
 
 - [[version6-bridge-fluctuation-determinant-purity-gate]]
 - [[version6-exchange-bridge-induced-alignment-gate]]
 - [[version5-carrier-measure-freeze-gate]]
+- [[version7-virtual-colored-bridge-schur-complement-gate]]
+- [[version7-singlet-vacuum-virtual-cycle-combined-hessian-gate]]
+- [[version7-common-spectral-profile-singlet-virtual-ratio-gate]]
 
 ## Source Notes
 
-- Литературная проверка выполнена 2026-08-19.
+- Литературная проверка выполнена 2026-08-19; вывод для нового гейта
+  уточнён 2026-08-28.

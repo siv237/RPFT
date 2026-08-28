@@ -1,0 +1,272 @@
+{
+  "gate": "version7_edge_coherence_bimodule_admission_gate",
+  "algebra": {
+    "simple_summands": [
+      "C",
+      "H",
+      "M3(C)"
+    ],
+    "complex_irrep_dimensions": {
+      "C": 1,
+      "H": 2,
+      "M3": 3
+    },
+    "first_order_edge_rule": "same left coordinate or same right coordinate"
+  },
+  "irreducible_dimension_test": {
+    "dimension_1_modules": [
+      [
+        "C",
+        "C"
+      ]
+    ],
+    "dimension_6_modules": [
+      [
+        "H",
+        "M3"
+      ],
+      [
+        "M3",
+        "H"
+      ]
+    ],
+    "dimension_3_modules": [
+      [
+        "C",
+        "M3"
+      ],
+      [
+        "M3",
+        "C"
+      ]
+    ],
+    "strict_1_6_3_chains": [],
+    "reason": "the unique 1D C-C module shares no coordinate with either 6D H-M3 or M3-H module"
+  },
+  "admitted_carrier_test": {
+    "vertices": {
+      "Q_L": {
+        "coordinates": [
+          "H",
+          "M3"
+        ],
+        "chirality": "L",
+        "dimension": 6
+      },
+      "L_L": {
+        "coordinates": [
+          "H",
+          "C"
+        ],
+        "chirality": "L",
+        "dimension": 2
+      },
+      "u_R": {
+        "coordinates": [
+          "C",
+          "M3"
+        ],
+        "chirality": "R",
+        "dimension": 3
+      },
+      "d_R": {
+        "coordinates": [
+          "C",
+          "M3"
+        ],
+        "chirality": "R",
+        "dimension": 3
+      },
+      "e_R": {
+        "coordinates": [
+          "C",
+          "C"
+        ],
+        "chirality": "R",
+        "dimension": 1
+      },
+      "X_L": {
+        "coordinates": [
+          "C",
+          "C"
+        ],
+        "chirality": "L",
+        "dimension": 1
+      },
+      "X_R": {
+        "coordinates": [
+          "C",
+          "C"
+        ],
+        "chirality": "R",
+        "dimension": 1
+      },
+      "Y_L": {
+        "coordinates": [
+          "H",
+          "C"
+        ],
+        "chirality": "L",
+        "dimension": 2
+      },
+      "Y_R": {
+        "coordinates": [
+          "H",
+          "C"
+        ],
+        "chirality": "R",
+        "dimension": 2
+      }
+    },
+    "candidate_chains": [
+      {
+        "vertices": [
+          "e_R",
+          "Q_L",
+          "u_R"
+        ],
+        "first_edge_allowed": false,
+        "second_edge_allowed": true,
+        "full_chain_allowed": false,
+        "first_edge_max_central_residual": 1,
+        "second_edge_max_central_residual": 0
+      },
+      {
+        "vertices": [
+          "e_R",
+          "Q_L",
+          "d_R"
+        ],
+        "first_edge_allowed": false,
+        "second_edge_allowed": true,
+        "full_chain_allowed": false,
+        "first_edge_max_central_residual": 1,
+        "second_edge_max_central_residual": 0
+      },
+      {
+        "vertices": [
+          "X_R",
+          "Q_L",
+          "u_R"
+        ],
+        "first_edge_allowed": false,
+        "second_edge_allowed": true,
+        "full_chain_allowed": false,
+        "first_edge_max_central_residual": 1,
+        "second_edge_max_central_residual": 0
+      },
+      {
+        "vertices": [
+          "X_R",
+          "Q_L",
+          "d_R"
+        ],
+        "first_edge_allowed": false,
+        "second_edge_allowed": true,
+        "full_chain_allowed": false,
+        "first_edge_max_central_residual": 1,
+        "second_edge_max_central_residual": 0
+      }
+    ],
+    "candidate_count": 4,
+    "admitted_chain_count": 0,
+    "conjugate_candidates": [
+      {
+        "vertices": [
+          "e_R^c",
+          "Q_L^c",
+          "u_R^c"
+        ],
+        "first_edge_allowed": false,
+        "second_edge_allowed": true
+      },
+      {
+        "vertices": [
+          "e_R^c",
+          "Q_L^c",
+          "d_R^c"
+        ],
+        "first_edge_allowed": false,
+        "second_edge_allowed": true
+      },
+      {
+        "vertices": [
+          "X_R^c",
+          "Q_L^c",
+          "u_R^c"
+        ],
+        "first_edge_allowed": false,
+        "second_edge_allowed": true
+      },
+      {
+        "vertices": [
+          "X_R^c",
+          "Q_L^c",
+          "d_R^c"
+        ],
+        "first_edge_allowed": false,
+        "second_edge_allowed": true
+      }
+    ],
+    "Real_completion_repairs_first_edge": false
+  },
+  "reducible_same_column_alternative": {
+    "chain": {
+      "H0": {
+        "type": [
+          "C",
+          "C",
+          "R"
+        ],
+        "multiplicity": 1,
+        "dimension": 1
+      },
+      "H1": {
+        "type": [
+          "H",
+          "C",
+          "L"
+        ],
+        "multiplicity": 3,
+        "dimension": 6
+      },
+      "H2": {
+        "type": [
+          "C",
+          "C",
+          "R"
+        ],
+        "multiplicity": 3,
+        "dimension": 3
+      }
+    },
+    "first_order": true,
+    "required_multiplicities": {
+      "H/C/L": 3,
+      "C/C/R": 4
+    },
+    "available_multiplicities": {
+      "H/C/L": 2,
+      "C/C/R": 2
+    },
+    "deficits": {
+      "H/C/L": 1,
+      "C/C/R": 2
+    },
+    "new_physical_chiral_vertices_before_anomaly_completion": 3,
+    "simplest_vectorlike_completion_adds_mirror_vertices": 3,
+    "exterior_edge_relation_forced_by_first_order": false
+  },
+  "interpretation": {
+    "six_dimensional_middle_space_in_spectral_parent": "space of edge amplitudes V tensor W*, not an existing irreducible fermion bimodule",
+    "three_dimensional_endpoint": "exterior composite Lambda^2 V tensor Lambda^2 W*, not an existing endpoint node",
+    "graded_spectral_parent_remains_valid_as_field_space_complex": true,
+    "strict_physical_finite_triple_embedding_on_unchanged_carrier": false
+  },
+  "verdict": {
+    "status": "closed_on_unchanged_physical_bimodule_carrier",
+    "spectral_trace_identity_preserved": true,
+    "physical_embedding_preserved": false,
+    "next_gate": "test whether the 1-6-3 chain can be an auxiliary BRST/BV or mapping-cone field-space complex without adding physical fermion vertices"
+  }
+}

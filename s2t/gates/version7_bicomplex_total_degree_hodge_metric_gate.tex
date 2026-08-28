@@ -1,0 +1,193 @@
+\chapter{Бикомплекс полной степени и no-go единственной Hodge-метрики}
+\label{ch:v7-bicomplex-total-degree-hodge-metric-gate}
+
+\section{Проверяемое усиление}
+
+Предыдущий гейт поместил рёберную и связывающую кривизны в один носитель
+размерности $96$, но оставил семейство положительных метрик
+\begin{equation}
+ G_\eta=P_E+\eta P_L,
+ \qquad \eta>0,
+ \label{eq:v7-bicomplex-metric-family}
+\end{equation}
+где $P_E$ и $P_L$ являются ортогональными проекторами на блоки размерностей
+$54$ и $42$. Теперь проверим, устраняют ли эту свободу структура
+бикомплекса, полная степень, Real-сопряжение или Hodge-звезда.
+
+Для двойного комплекса требуются
+\begin{equation}
+ d_h^2=d_v^2=0,
+ \qquad d_hd_v+d_vd_h=0,
+ \qquad D=d_h+d_v.
+ \label{eq:v7-bicomplex-relations}
+\end{equation}
+Однако для любого $c>0$ замена
+\begin{equation}
+ d_v\longmapsto d_v^{(c)}=c\,d_v
+ \label{eq:v7-bicomplex-vertical-rescaling}
+\end{equation}
+сохраняет все тождества \eqref{eq:v7-bicomplex-relations}.
+Следовательно, сами алгебраические аксиомы бикомплекса не фиксируют
+отношение длин горизонтального и вертикального направлений.
+
+\section{Точный квадратный контроль}
+
+На базисе бикомплекса
+\begin{equation}
+ (0,0),(1,0),(0,1),(1,1)
+ \end{equation}
+возьмём стрелки
+\begin{equation}
+ d_h e_{00}=e_{10},\quad d_h e_{01}=e_{11},\qquad
+ d_v^{(c)}e_{00}=c e_{01},\quad d_v^{(c)}e_{10}=-c e_{11}.
+ \label{eq:v7-bicomplex-square-control}
+\end{equation}
+Для $c=1/8,1/2,1,2,8$ машинный расчёт даёт нулевые с точностью вычислений
+остатки нильпотентности и антикоммутатора. Если
+\begin{equation}
+ N_{\rm tot}=\operatorname{diag}(0,1,1,2),
+ \end{equation}
+то при каждом $c$
+\begin{equation}
+ [N_{\rm tot},D_c]=D_c.
+ \label{eq:v7-bicomplex-total-degree}
+\end{equation}
+Таким образом, даже целочисленная полная степень не видит относительного
+масштаба двух дифференциалов. Это согласуется с общим алгебраическим языком
+двойных комплексов как сумм квадратов и зигзагов
+\cite{v7-bicomplex-stelzig} и с параметризованными квадрат-нуль
+дифференциалами в Hodge-теории \cite{v7-bicomplex-tardini-tomassini}.
+
+\section{Hodge-звезда также допускает семейство}
+
+Положительность, Real-совместимость и условие $\star^2=1$ сами по себе не
+устраняют \eqref{eq:v7-bicomplex-metric-family}. На удвоенном пространстве
+$\mathcal K\oplus\mathcal K^\vee$ положим
+\begin{equation}
+ \star_\eta=
+ \begin{pmatrix}
+ 0&G_\eta^{-1}\\
+ G_\eta&0
+ \end{pmatrix},
+ \qquad
+ H_\eta=\operatorname{diag}(G_\eta,G_\eta^{-1}).
+ \label{eq:v7-bicomplex-hodge-family}
+\end{equation}
+Тогда для каждого $\eta>0$
+\begin{equation}
+ \star_\eta^2=1,
+ \qquad
+ \star_\eta^*H_\eta\star_\eta=H_\eta.
+ \label{eq:v7-bicomplex-hodge-isometry}
+\end{equation}
+Все матрицы вещественны и коммутируют с полной степенью и текущим
+комплексным сопряжением. Машинные остатки равны нулю для
+$\eta=1/8,1/2,1,2,8$. Значит, Hodge-звезда становится единственной только
+после независимого задания геометрической метрики; она не выводит эту
+метрику из bigrading. В стандартной литературе это разделение также явно:
+сначала задаётся двойной комплекс, а Hodge-операторы строятся после выбора
+эрмитовой метрики \cite{v7-bicomplex-tardini-tomassini,
+v7-bicomplex-popovici-stelzig-ugarte}.
+
+\section{Размерностный дефект}
+
+Обменная изометрия между текущими компонентами невозможна, поскольку
+\begin{equation}
+ \rank P_E=54,
+ \qquad \rank P_L=42.
+ \end{equation}
+Максимальная изометрическая инъекция
+$U_L:\mathbb C^{42}\to\mathbb C^{54}$ удовлетворяет
+\begin{equation}
+ U_L^*U_L=I_{42},
+ \qquad
+ \rank(I_{54}-U_LU_L^*)=12.
+ \label{eq:v7-bicomplex-defect-twelve}
+\end{equation}
+Поэтому никакая унитарная Hodge-операция не может просто поменять два блока
+местами. Неприводимость текущего носителя также отсутствует: $P_E$ и $P_L$
+коммутируют со всеми уже построенными блок-диагональными операторами.
+
+Число $12$ заслуживает отдельной проверки:
+\begin{equation}
+ 54-42=12=\dim_{\mathbb C}E_{\rm aff}.
+ \label{eq:v7-bicomplex-affine-dimension-clue}
+\end{equation}
+Это пока только размерностное совпадение. Ни отображение
+$E_{\rm aff}\to\ker U_L^*$, ни совместимость бимодульных меток, ни новый
+смешанный дифференциал ещё не выведены.
+
+\section{Физическое следствие}
+
+На полном 27-мерном гессиане веса $\eta=1/4,1,4$ сохраняют
+\begin{equation}
+ (n_-,n_0,n_+)_{0}=(7,0,20),
+ \qquad
+ (n_-,n_0,n_+)_{*}=(0,0,27).
+\end{equation}
+Но вакуумные спектры не связаны одним общим масштабом. После наилучшего
+глобального перескалирования относительная невязка спектров при
+$\eta=1/4$ и $\eta=4$ равна
+\begin{equation}
+ 0.3181422930\ldots.
+ \label{eq:v7-bicomplex-nonhomothetic-spectrum}
+\end{equation}
+Следовательно, качественный вакуум остаётся строгим, а отношения масс
+действительно зависят от невыведенной метрики.
+
+\begin{theorem}[No-go полной степени]
+Алгебраические аксиомы бикомплекса, оператор полной степени, текущее
+Real-сопряжение и существование изометрической Hodge-инволюции совместимы с
+непрерывным семейством положительных относительных метрик $G_\eta$.
+Следовательно, они не фиксируют $\eta$ и не выводят отношения масс.
+\end{theorem}
+
+\begin{remark}
+Отрицательный результат не переоткрывает качественную проблему. При всех
+$\eta\ge0$ сохраняются правильный запуск и устойчивый вакуум. Он запрещает
+только превращать выбранное значение $\eta$ в количественное предсказание.
+\end{remark}
+
+\begin{nogocriterion}[Запрет метрики из одной bigrading]
+Нельзя объявлять $\eta=1$ следствием total-degree или Hodge-звезды без
+оператора, смешивающего два бистепенных блока. Любой такой оператор обязан
+быть выведен из существующего физического модуля, пройти Real-условия и не
+внести новые произвольные массы.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item квадратный бикомплекс при пяти масштабах: \textbf{прошёл};
+ \item $D_c^2=0$: \textbf{для всех $c$};
+ \item $[N_{\rm tot},D_c]=D_c$: \textbf{для всех $c$};
+ \item семейство положительных метрик $G_\eta$: \textbf{существует};
+ \item Real-совместимая Hodge-инволюция: \textbf{для всех $\eta>0$};
+ \item единственность относительной метрики: \textbf{не получена};
+ \item унитарный обмен $54\leftrightarrow42$: \textbf{невозможен};
+ \item размерностный дефект: \textbf{$12$};
+ \item совпадение с $\dim E_{\rm aff}$: \textbf{получено};
+ \item каноническое аффинное отождествление: \textbf{не получено};
+ \item нулевая сигнатура: \textbf{$(7,0,20)$};
+ \item вакуумная сигнатура: \textbf{$(0,0,27)$};
+ \item массовые отношения: \textbf{не выведены};
+ \item следующий гейт: \textbf{аффинное дефектное дополнение бикомплекса}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_bicomplex_total_degree_hodge_metric_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-bicomplex-stelzig}
+J.~Stelzig,
+\emph{On the Structure of Double Complexes},
+J. London Math. Soc. 104 (2021), 956--988; arXiv:1812.00865.
+\bibitem{v7-bicomplex-tardini-tomassini}
+N.~Tardini, A.~Tomassini,
+\emph{Differential operators on almost-Hermitian manifolds and harmonic
+forms}, Complex Manifolds 7 (2020), 106--128; arXiv:1909.06569.
+\bibitem{v7-bicomplex-popovici-stelzig-ugarte}
+D.~Popovici, J.~Stelzig, L.~Ugarte,
+\emph{Higher-Page Bott--Chern and Aeppli Cohomologies and Applications},
+J. Reine Angew. Math. 777 (2021), 157--194; arXiv:2007.03320.
+\end{thebibliography}

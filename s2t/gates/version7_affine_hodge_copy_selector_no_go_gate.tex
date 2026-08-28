@@ -1,0 +1,147 @@
+\chapter{Симметрийный запрет аффинно-Hodge-селектора пространства копий}
+\label{ch:v7-affine-hodge-copy-selector-no-go-gate}
+
+\section{Точный вопрос}
+
+Четырёхвершинный носитель оставляет в каждом лептонном секторе трёхмерное
+ядро прямоугольной семейной массы
+\begin{equation}
+ M:\mathbb C^6\longrightarrow\mathbb C^3,
+ \qquad \dim\ker M=3.
+ \label{eq:v7-copy-selector-rectangular-mass}
+\end{equation}
+Проверим, способен ли уже принятый аффинно-Hodge-родитель выбрать положение
+этого ядра среди старой и новой копий без второго оператора.
+
+\section{Грассманиан ядер}
+
+Для полного ранга проектор ядра равен
+\begin{equation}
+ P_{\ker M}=I_6-M^\dagger(MM^\dagger)^{-1}M,
+ \qquad \rank P_{\ker M}=3.
+ \label{eq:v7-copy-selector-kernel-projector}
+\end{equation}
+Поэтому возможные лёгкие пространства образуют
+\begin{equation}
+ P_{\ker M}\in\operatorname{Gr}_{\mathbb C}(3,6),
+ \qquad
+ \dim_{\mathbb R}\operatorname{Gr}_{\mathbb C}(3,6)=18.
+ \label{eq:v7-copy-selector-grassmannian}
+\end{equation}
+Описание прямоугольных полу-унитарных матриц через многообразие Штифеля и
+грассманиан стандартно \cite{v7copy-grassmann}. В проекте оно означает, что
+правильная размерность ядра ещё не выбирает физические смеси.
+
+\section{Точная копийная орбита}
+
+Разложим шестимерный вход как
+$\mathbb C^3_{\rm fam}\otimes\mathbb C^2_{\rm copy}$. Для любого
+$U\in U(2)_{\rm copy}$ положим
+\begin{equation}
+ M\longmapsto M^U=M(U\otimes I_3).
+ \label{eq:v7-copy-selector-orbit}
+\end{equation}
+Тогда
+\begin{equation}
+ M^U(M^U)^\dagger=MM^\dagger,
+ \qquad
+ P_{\ker M^U}=(U\otimes I_3)^\dagger
+ P_{\ker M}(U\otimes I_3).
+ \label{eq:v7-copy-selector-invariant-gram-moving-kernel}
+\end{equation}
+Следовательно, сингулярные числа и любой Hodge-функционал от
+$MM^\dagger$ постоянны, тогда как само лёгкое подпространство движется.
+
+Явный аудит использует $M_0=(I_3\;0)$ и семнадцать вращений от нуля до
+$\pi/2$. Он получает
+\begin{equation}
+ \Delta\mathcal S_{\rm Hodge}<10^{-24},
+ \qquad
+ \max\|P_{\ker M^U}-P_{\ker M_0}\|_F=\sqrt6,
+ \label{eq:v7-copy-selector-orbit-audit}
+\end{equation}
+а перекрытие ядра со старой копией проходит весь интервал $[0,3]$.
+Гессиан действия вдоль этой орбиты равен нулю.
+
+\section{Почему аффинный проектор не помогает}
+
+Аффинный подъём имеет вид
+\begin{equation}
+ P_{\rm aff}=P_3\otimes I_2,
+ \qquad \rank P_3=3.
+ \label{eq:v7-copy-selector-affine-lift}
+\end{equation}
+Поэтому для всех копийных вращений
+\begin{equation}
+ [P_3\otimes I_2,I_4\otimes U]=0.
+ \label{eq:v7-copy-selector-affine-commutator}
+\end{equation}
+$P_3$ выбирает стандартный семейный триплет внутри аффинной четвёрки, но
+действует единично на метке старой/новой копии.
+
+То же препятствие видно из коммутанта. На совпадающих представлениях
+алгебра действует как
+\begin{equation}
+ \pi(a)=\pi_0(a)\otimes I_2,
+ \qquad
+ I\otimes M_2(\mathbb C)\subset\pi(\mathcal A_{\rm SM})'.
+ \label{eq:v7-copy-selector-copy-commutant}
+\end{equation}
+Машинный аудит проверяет четыре независимые матричные единицы этого
+коммутанта с нулевым остатком. Хиральная градуировка, Real-сопряжение и
+класс $15$ также не действуют нецентрально внутри пары одинаковой
+хиральности и калибровочного типа.
+
+\section{Литературная граница}
+
+Квадрат нормы отображения момента на пространстве представлений колчана
+может стратифицировать орбиты, но устойчивость требует отдельного характера
+или параметра \cite{v7copy-quiver}. В текущей архитектуре такого
+copy-space параметра нет. Его подстановка как
+$\operatorname{diag}(1,-1)$ означала бы заранее выбрать старую и новую
+копии, то есть записать ответ в действие.
+
+\begin{theorem}[Аффинно-Hodge no-go пространства копий]
+Тривиальный подъём существующего аффинно-Hodge-родителя на
+$\mathbb C^2_{\rm copy}$ инвариантен относительно полного $U(2)$ копий.
+Он фиксирует ранг массы и размерность лёгкого ядра, но не способен выбрать
+его ориентацию, различить старые и новые совпадающие бимодули или выделить
+шесть целевых рёбер из одиннадцати разрешённых.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет ручной копийной градуировки]
+Нельзя добавлять матрицу $\operatorname{diag}(1,-1)$, проектор старой копии
+или пять нулевых юкавских блоков как входные данные. Следующий кандидат
+должен вывести второй нецентральный оператор из ориентированной алгебры
+путей, Morita-угла либо другого независимо существующего носителя.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item размерность ядра: \textbf{выбирается};
+ \item ориентация ядра: \textbf{не выбирается};
+ \item Hodge-действие вдоль $U(2)$-орбиты: \textbf{постоянно};
+ \item проектор ядра вдоль орбиты: \textbf{движется};
+ \item аффинный $P_3$ нарушает $U(2)$ копий: \textbf{нет};
+ \item коммутант содержит $M_2(\mathbb C)$: \textbf{да};
+ \item шесть из одиннадцати рёбер выбраны: \textbf{нет};
+ \item старый родитель как copy-selector: \textbf{закрыт};
+ \item следующий гейт: \textbf{происхождение нецентрального оператора из
+ алгебры путей или Morita-угла}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_affine_hodge_copy_selector_no_go_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7copy-grassmann}
+T.~Bendokat, R.~Zimmermann, P.-A.~Absil,
+\emph{A Grassmann Manifold Handbook: Basic Geometry and Computational Aspects},
+Advances in Computational Mathematics 50 (2024), article 6;
+arXiv:2011.13699.
+\bibitem{v7copy-quiver}
+M.~Harada, G.~Wilkin,
+\emph{Morse theory of the moment map for representations of quivers},
+Geometriae Dedicata 150 (2011), 307--353; arXiv:0807.4734.
+\end{thebibliography}

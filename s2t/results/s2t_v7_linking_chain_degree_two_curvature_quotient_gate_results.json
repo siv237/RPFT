@@ -1,0 +1,67 @@
+{
+  "chain_number_relative_derivation": {
+    "adjacent_degree_spacing": 1,
+    "continuous_weight_added": false,
+    "definition": "delta_N(F)=1/2[N,F]",
+    "endpoint_degree_gap": 2,
+    "kills_diagonal_backtracking_blocks": true,
+    "maximum_block_gauge_covariance_residual": 0.0,
+    "maximum_endpoint_norm_residual": 0.0,
+    "maximum_endpoint_projection_residual": 0.0,
+    "maximum_orientation_reversal_norm_residual": 0.0,
+    "number_operator": "N=diag(0*I11,1*I21,2*I10)",
+    "retains_exactly_endpoint_blocks": true,
+    "unique_up_to_additive_constant_and_orientation": true
+  },
+  "gate": "version7_linking_chain_degree_two_curvature_quotient_gate",
+  "ordinary_connes_calculus": {
+    "chain_dimensions": [
+      11,
+      21,
+      10
+    ],
+    "endpoint_length_two_class_survives": false,
+    "maximum_endpoint_residual_outside_junk": 1.3857118898143634e-13,
+    "maximum_junk_residual_outside_two_forms": 1.1046204780222014e-15,
+    "node_algebra": "C^3 acting by scalars on H0,H1,H2",
+    "ordinary_junk_quotient_pass": false,
+    "random_controls": 20,
+    "stable_ranks": {
+      "degree_two_junk": 2,
+      "degree_two_quotient": 4,
+      "represented_one_forms": 4,
+      "represented_two_forms": 6
+    }
+  },
+  "relative_hodge_action": {
+    "bounded_below": true,
+    "formula": "S_E+1/4||delta_N(Q^2-Q0^2)||^2 = S_E+1/2||R_U||^2",
+    "origin_heavy_gap": 3.6,
+    "origin_signature": [
+      7,
+      0,
+      20
+    ],
+    "vacuum_minimum_eigenvalue": 3.9368554658487813,
+    "vacuum_signature": [
+      0,
+      0,
+      27
+    ]
+  },
+  "status_boundary": {
+    "ordinary_connes_two_form_interpretation": false,
+    "relative_mapping_cone_interpretation": true,
+    "relative_observable_selected_by_chain_degree": true,
+    "single_common_hodge_trace_with_edge_moment_derived": false
+  },
+  "verdict": {
+    "canonical_chain_number_relative_quotient": "passed",
+    "correct_origin_selector": true,
+    "manual_endpoint_projector_needed": false,
+    "next_gate": "version7_common_chain_number_hodge_relative_trace_gate",
+    "standard_junk_route": "failed_endpoint_is_junk",
+    "status": "ordinary_junk_no_go_chain_number_mapping_cone_pass_common_hodge_trace_open",
+    "strictly_stable_vacuum": true
+  }
+}

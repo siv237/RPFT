@@ -1,0 +1,81 @@
+{
+  "common_heat_parameter": 1.0,
+  "formal_functional": "-Tr_H15 exp(-m_ch^2) - Tr_edge exp(-m_C^2) + Tr_phys exp(-Phi^2)",
+  "full_hessian": {
+    "dimension": 27,
+    "eigenvalues": [
+      1.14399252365,
+      1.14399252365,
+      1.14399252365,
+      1.14399252365,
+      1.14399252365,
+      1.14399252365,
+      1.86604221199,
+      1.86604221199,
+      1.86604221199,
+      1.86604221199,
+      1.86604221199,
+      1.86604221199,
+      1.95906730995,
+      1.95906730995,
+      2.23152239574,
+      2.72244540681,
+      3.00763309504,
+      3.00763309504,
+      3.13383566643,
+      3.18148662434,
+      15.6198995482,
+      16.9610435059,
+      18.0172876009,
+      18.9014540818,
+      20.6543026155,
+      60.215431487,
+      60.215431487
+    ],
+    "minimum_eigenvalue": 1.143992523649868,
+    "signature": [
+      0,
+      0,
+      27
+    ]
+  },
+  "gate": "version7_common_carrier_root_stationarity_gate",
+  "heavy_hessian_minimum": 1.143992523649868,
+  "maximum_gradient_residual": 2.6645352591003757e-15,
+  "root_heavy_cross_norm": 0.47806214865004915,
+  "root_hessian_eigenvalues": [
+    15.6082680851,
+    16.9187098379,
+    18.0142377682,
+    18.9012409068,
+    20.6530187858,
+    60.215431487,
+    60.215431487
+  ],
+  "root_order": [
+    "QLuR",
+    "QLdR",
+    "LLeR",
+    "LLYR",
+    "XLXR",
+    "XLeR",
+    "YLYR"
+  ],
+  "stationary_root_amplitudes": [
+    1.0773708802,
+    1.0773708802,
+    1.03492563834,
+    1.02768472792,
+    1.04972668229,
+    1.00214566096,
+    1.07390997444
+  ],
+  "verdict": {
+    "formal_one_profile_local_vacuum_pass": true,
+    "full_root_heavy_hessian_positive": true,
+    "next_gate": "version7_real_superconnection_common_trace_origin_gate",
+    "root_stationary_solution_exists": true,
+    "single_real_superconnection_derived": false,
+    "status": "formal_local_vacuum_pass_real_superconnection_origin_open"
+  }
+}

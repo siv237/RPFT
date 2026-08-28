@@ -1,0 +1,52 @@
+{
+  "flat_profile_branch": {
+    "classical_a6_cycle_coefficient": 0,
+    "condition": "chi'(0)=0",
+    "fminus2": 0,
+    "virtual_cycle_survives_at_this_order": false
+  },
+  "four_dimensional_spectral_weights": {
+    "dimensionless_profile_invariant": "R_chi=f2*fminus2/f0^2",
+    "hodge_quartic": "f0 times finite a4 trace constants",
+    "mass_level": "f2*Lambda^2 times finite a2 trace constants",
+    "moment_convention": "f0=chi(0), f2=int chi, fminus2=-chi'(0)",
+    "six_cycle": "fminus2/Lambda^2 times finite a6 trace constants"
+  },
+  "gate": "version7_common_spectral_profile_singlet_virtual_ratio_gate",
+  "pure_heat_kernel_profile": {
+    "R_chi": "1",
+    "f0": "1",
+    "f2": "1/t",
+    "fminus2": "t",
+    "profile": "chi_t(x)=exp(-t*x)",
+    "scale_independent": true
+  },
+  "renormalized_determinant": {
+    "four_dimensional_pq_vertex_log_divergent": true,
+    "local_counterterm_required": true,
+    "matching_scale_required": true,
+    "renormalized_gamma_fixed_by_bare_profile_alone": false
+  },
+  "two_scale_positive_mixture": {
+    "R_chi": "-(t1*w - t1 - t2*w)*(t1*w - t2*w + t2)/(t1*t2)",
+    "R_chi_ge_one_for_0_le_w_le_1": true,
+    "R_chi_minus_one": "-w*(t1 - t2)**2*(w - 1)/(t1*t2)",
+    "benchmark": {
+      "R_chi": "25/16",
+      "t1": "1",
+      "t2": "4",
+      "w": "1/2"
+    },
+    "equality_only_for_single_scale_or_endpoint": true,
+    "profile": "w*exp(-t1*x)+(1-w)*exp(-t2*x)"
+  },
+  "verdict": {
+    "coefficient_free_closure_pass": false,
+    "common_profile_fixes_renormalized_a_gamma_ratio": false,
+    "general_positive_profile_fixes_R_chi": false,
+    "next_gate": "version7_full_product_a6_cycle_coefficient_gate",
+    "one_unspecified_profile_is_one_number": false,
+    "pure_gaussian_collapses_classical_moment_ratio": true,
+    "status": "gaussian_classical_partial_pass_general_and_renormalized_no_go"
+  }
+}

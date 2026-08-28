@@ -1,0 +1,217 @@
+\chapter{Hodge-родитель градуировки полного пространства рёбер}
+\label{ch:v7-edge-grading-hodge-superconnection-parent-gate}
+
+\section{Вопрос родительского происхождения}
+
+Циклически-изотипический гейт построил проектор $P_*$ ранга шесть на
+пространстве одиннадцати новых стрелок и инволюцию
+$\Gamma_E=I-2P_*$. Теперь необходимо получить не только желаемые знаки, но
+и их квартичное насыщение из одной нормы отображения момента.
+
+Положим
+\begin{equation}
+ P_+=P_*,\qquad P_-=I-P_*,\qquad
+ \Gamma_E=P_--P_+,qquad
+ (\rank P_+,\rank P_-)=(6,5).
+ \label{eq:v7-edge-hodge-projectors}
+\end{equation}
+Индексы $+$ и $-$ здесь обозначают целевую и нежелательную опоры, а не
+знак будущей квадратичной формы.
+
+\section{Двухступенный комплекс пространства стрелок}
+
+Возьмём две копии полного пространства новых стрелок
+\begin{equation}
+ \mathcal K_E=\mathcal E_E^0\oplus\mathcal E_E^1,
+ \qquad
+ \dim_{\mathbb C}(\mathcal E_E^0,\mathcal E_E^1)=(11,11),
+ \qquad
+ \chi_E=\operatorname{diag}(-I_{11},I_{11}).
+ \label{eq:v7-edge-hodge-two-term-carrier}
+\end{equation}
+Для амплитуд новых рёбер $z=(z_e)$ определим диагональную стрелку
+$Z=\operatorname{diag}(z_e)$ и динамический дифференциал
+\begin{equation}
+ d_Z=\begin{pmatrix}0&0\\Z&0\end{pmatrix},
+ \qquad d_Z^2=0.
+ \label{eq:v7-edge-hodge-dynamic-differential}
+\end{equation}
+
+Второй, фиксированный цвет стрелок задаётся уже выведенными проекторами:
+\begin{equation}
+ \delta_E=\begin{pmatrix}0&P_+\\P_-&0\end{pmatrix},
+ \qquad \delta_E^2=0.
+ \label{eq:v7-edge-hodge-background-differential}
+\end{equation}
+Нильпотентность следует из $P_+P_-=0$. Это не новое динамическое поле:
+$\delta_E$ является фоновым дифференциалом, производным от точного
+циклически-изотипического разбиения.
+
+Его Hodge-момент равен самой градуировке:
+\begin{equation}
+ [\delta_E,\delta_E^\dagger]
+ =-\widehat\Gamma_E,
+ \qquad
+ \widehat\Gamma_E=\operatorname{diag}(\Gamma_E,-\Gamma_E).
+ \label{eq:v7-edge-hodge-derived-grading}
+\end{equation}
+Таким образом, сдвиг не постулируется отдельной матрицей: он является
+квадратичным следствием нильпотентной фоновой стрелки.
+
+\section{Одно отображение момента}
+
+Рассматриваем $d_Z$ и $\delta_E$ как два ортогональных цвета стрелок одного
+представления колчана. Для пространства представлений колчана отображение
+момента является суммой вкладов стрелок, а квадрат его нормы задаёт
+стандартный Morse-функционал \cite{v7-edge-hodge-quiver-moment}.
+При общем масштабе $\mu>0$ получаем
+\begin{equation}
+ \mathfrak m_\mu(Z)
+ =[d_Z,d_Z^\dagger]
+ +\mu^2[\delta_E,\delta_E^\dagger]
+ =[d_Z,d_Z^\dagger]-\mu^2\widehat\Gamma_E.
+ \label{eq:v7-edge-hodge-total-moment}
+\end{equation}
+Единственный функционал равен
+\begin{equation}
+ \mathcal S_\mu(Z)
+ =\frac12\Tr_{\mathcal K_E}\mathfrak m_\mu(Z)^2
+ -5\mu^4.
+ \label{eq:v7-edge-hodge-action}
+\end{equation}
+Последнее слагаемое есть не динамический вес, а вычитание постоянной
+энергии пяти положительных фоновых блоков.
+
+Прямая подстановка даёт точное разложение
+\begin{equation}
+ \boxed{
+ \mathcal S_\mu(z)
+ =\sum_{e\in E_*}(|z_e|^2-\mu^2)^2
+ +\sum_{e\notin E_*}(|z_e|^4+2\mu^2|z_e|^2).}
+ \label{eq:v7-edge-hodge-reduced-action}
+\end{equation}
+Оба типа квадратичных знаков и все квартичные коэффициенты следуют из одной
+неотрицательной нормы. Независимый стабилизирующий вес отсутствует.
+
+\section{Запуск и точный вакуум}
+
+Нуль является стационарной точкой. Его вещественный гессиан на одном
+поколении имеет сигнатуру
+\begin{equation}
+ (n_-,n_0,n_+)_{z=0}=(12,0,10).
+ \label{eq:v7-edge-hodge-origin-hessian}
+\end{equation}
+Двенадцать отрицательных направлений принадлежат шести целевым комплексным
+рёбрам; десять положительных --- пяти нежелательным.
+
+Из \eqref{eq:v7-edge-hodge-reduced-action} множество глобальных минимумов
+задаётся без решения связанных уравнений:
+\begin{equation}
+ |z_e|^2=\mu^2\quad(e\in E_*),
+ \qquad
+ z_e=0\quad(e\notin E_*),
+ \qquad
+ \min\mathcal S_\mu=0.
+ \label{eq:v7-edge-hodge-vacuum}
+\end{equation}
+В единичном представителе вакуумный гессиан имеет сигнатуру
+\begin{equation}
+ (n_-,n_0,n_+)_{z=z_*}=(0,6,16).
+ \label{eq:v7-edge-hodge-vacuum-hessian}
+\end{equation}
+Шесть нулей являются фазами выбранных рёбер; радиальные моды и все
+нежелательные отклонения положительны.
+
+\section{Семейный подъём}
+
+Если каждое $z_e$ заменить семейной матрицей $Z_e\in M_3(\mathbb C)$, то
+тот же незавешенный след даёт
+\begin{equation}
+ Z_e\in\mu U(3)\quad(e\in E_*),
+ \qquad
+ Z_e=0\quad(e\notin E_*).
+ \label{eq:v7-edge-hodge-family-vacuum}
+\end{equation}
+Следовательно, все шесть целевых матриц имеют полный ранг, а пять
+конкурирующих исчезают. Сигнатуры равны
+\begin{equation}
+ (n_-,n_0,n_+)_{0}^{\rm family}=(108,0,90),
+ \qquad
+ (n_-,n_0,n_+)_{*}^{\rm family}=(0,54,144).
+ \label{eq:v7-edge-hodge-family-hessians}
+\end{equation}
+Оставшиеся $54$ нуля образуют касательные направления $U(3)^6$. Действие
+выбирает опору и сингулярные числа, но ещё не относительные семейные
+ориентации.
+
+\section{Real-завершение и граница физического статуса}
+
+Самосопряжённые операторы $d_Z+d_Z^\dagger$ и
+$\delta_E+\delta_E^\dagger$ нечётны относительно $\chi_E$. Антилинейный
+обмен двух ступеней переводит ориентированную стрелку в сопряжённую и
+удовлетворяет
+\begin{equation}
+ J_E\widehat\Gamma_EJ_E^{-1}=-\widehat\Gamma_E.
+ \label{eq:v7-edge-hodge-real-grading}
+\end{equation}
+Полное Real-удвоение удваивает след, а физический полуслед восстанавливает
+\eqref{eq:v7-edge-hodge-action} без нового коэффициента. Такое чтение
+соответствует общей суперсвязностной идее нечётного нуль-форменного
+эндоморфизма и его кривизности \cite{v7-edge-hodge-quillen}.
+
+\begin{theorem}[Полевой Hodge-родитель точного меню]
+На двухступенном комплексе полного пространства стрелок фиксированный
+нильпотентный дифференциал $\delta_E$ выводит градуировку $\Gamma_E$ своим
+Hodge-моментом. Одна норма суммарного отображения момента
+\eqref{eq:v7-edge-hodge-action} делает нуль неустойчивым ровно по шести
+целевым рёбрам, даёт положительную щель пяти нежелательным и имеет
+поперечно устойчивые минимумы, в которых все шесть целевых блоков ненулевые.
+Квадратичный запуск и квартичное насыщение не имеют независимых весов.
+\end{theorem}
+
+Результат строг на вспомогательном пространстве полей. Ещё не доказано,
+что два цвета стрелок являются каноническими компонентами конечной
+Real-бимодульной суперсвязности физической алгебры. Масштаб $\mu$ не выведен,
+а семейное вакуумное многообразие $U(3)^6$ не сведено к наблюдаемым
+смешиваниям.
+
+\begin{nogocriterion}[Запрет преждевременного полного замыкания]
+Нельзя считать \eqref{eq:v7-edge-hodge-action} физическим спектральным
+действием до вывода обоих цветов стрелок из одного Real-бимодуля, проверки
+первого порядка, кинетической метрики и gauge-quotient полного гессиана.
+Нельзя также выбирать шесть матриц из $U(3)^6$ по наблюдаемым CKM/PMNS.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item двухступенный полевой носитель: \textbf{$11+11$};
+ \item динамический дифференциал $d_Z^2$: \textbf{$0$};
+ \item фоновый дифференциал $\delta_E^2$: \textbf{$0$};
+ \item градуировка из фонового момента: \textbf{получена};
+ \item одна норма отображения момента: \textbf{получена};
+ \item независимый квартичный вес: \textbf{нет};
+ \item нулевая сигнатура на поколение: \textbf{$(12,0,10)$};
+ \item вакуумная сигнатура на поколение: \textbf{$(0,6,16)$};
+ \item целевых ненулевых рёбер: \textbf{$6$};
+ \item нежелательных ненулевых рёбер: \textbf{$0$};
+ \item семейный вакуум: \textbf{$\mu U(3)^6$};
+ \item семейная вакуумная сигнатура: \textbf{$(0,54,144)$};
+ \item Real-полуслед: \textbf{коэффициенты сохраняет};
+ \item физическое бимодульное вложение: \textbf{открыто};
+ \item итог: \textbf{положительный полевой Hodge-родитель}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_edge_grading_hodge_superconnection_parent_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-edge-hodge-quiver-moment}
+M.~Harada, G.~Wilkin,
+\emph{Morse theory of the moment map for representations of quivers},
+Geometriae Dedicata 150 (2011), 307--353; arXiv:0807.4734.
+\bibitem{v7-edge-hodge-quillen}
+D.~Quillen,
+\emph{Superconnections and the Chern character},
+Topology 24 (1985), 89--95.
+\end{thebibliography}

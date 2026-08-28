@@ -1,0 +1,120 @@
+{
+  "alternative_channels": {
+    "arbitrary_endpoint_phase_is_derived": false,
+    "oriented_cross_term_is_real_exchange_odd": true,
+    "plus_channel_formula": "C_t U+U C_s",
+    "plus_channel_local_selector_pass": false,
+    "plus_channel_origin_signature": [
+      27,
+      0,
+      0
+    ],
+    "real_exchange_average_cross_residual": 0.0
+  },
+  "gate": "version7_polar_transfer_cross_curvature_origin_gate",
+  "origin_hessian": {
+    "combined_signature": [
+      7,
+      0,
+      20
+    ],
+    "eigenvalues": [
+      -12.0,
+      -12.0,
+      -4.0,
+      -4.0,
+      -4.0,
+      -4.0,
+      -4.0,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      6.4,
+      6.4,
+      6.4,
+      6.4,
+      6.4,
+      6.4,
+      6.4,
+      6.4,
+      6.4,
+      6.4,
+      6.4,
+      6.4
+    ],
+    "heavy_gap": 3.6,
+    "reason": "polar background intertwines and R_U starts quadratically",
+    "relative_curvature_hessian_rank": 0
+  },
+  "polar_linking_bimodule": {
+    "background_intertwining_residual": 4.689953167021793e-15,
+    "defect_annihilation_residual": 1.965143130981681e-14,
+    "index_defect_rank": 1,
+    "matched_rank": 10,
+    "relative_curvature": "R_U=C_t U-U C_s",
+    "right_module_leibniz_fixes_minus_sign": true,
+    "source_dimension": 11,
+    "target_dimension": 10
+  },
+  "self_adjoint_linking_completion": {
+    "factor_is_free_sector_weight": false,
+    "factor_is_offdiagonal_orientation_deduplication": true,
+    "formula": "F_R=[[0,R_U],[R_U*,0]]",
+    "identity": "1/4 ||F_R||^2 = 1/2 ||R_U||^2",
+    "identity_residual": 2.842170943040401e-14
+  },
+  "vacuum_hessian": {
+    "combined_eigenvalues": [
+      3.93685546585,
+      3.93685546585,
+      3.94751290745,
+      4.49852373053,
+      4.63104608109,
+      5.53873449998,
+      5.71199266201,
+      5.71199266201,
+      6.67244808191,
+      6.67244808191,
+      6.67244808191,
+      6.67244808191,
+      6.67244808191,
+      6.67244808191,
+      7.63426610025,
+      7.63426610025,
+      7.63426610025,
+      7.63426610025,
+      7.63426610025,
+      7.63426610025,
+      8.0,
+      8.00854072561,
+      8.24772601452,
+      10.3099368803,
+      14.4799129528,
+      24.0,
+      24.0
+    ],
+    "combined_minimum_eigenvalue": 3.9368554658487813,
+    "combined_signature": [
+      0,
+      0,
+      27
+    ],
+    "relative_curvature_minimum_eigenvalue": -8.536897762263532e-16,
+    "relative_curvature_rank": 22,
+    "relative_curvature_zero_modes": 5
+  },
+  "verdict": {
+    "canonical_relative_linking_curvature_exists": true,
+    "correct_origin_selector": true,
+    "manual_half_weight_needed_for_origin_selector": false,
+    "next_gate": "version7_real_linking_superconnection_assembly_gate",
+    "quantitative_mass_normalization_fixed": false,
+    "status": "positive_relative_polar_linking_curvature_local_parent",
+    "strictly_stable_target_vacuum": true
+  }
+}

@@ -1,0 +1,194 @@
+\chapter{Происхождение цветосохраняющего квадратичного селектора}
+\label{ch:v7-color-preserving-quadratic-selector-origin-gate}
+
+\section{Неожиданное совпадение двух проекторов}
+
+Виртуальный цветной мост не запускает лёгкий сектор из нуля. Требуется
+квадратичный проектор, который делает неустойчивыми только бесцветные
+целевые рёбра. Полный gauge-подъём уже классифицировал одиннадцать блоков.
+Четыре из них являются точными gauge-синглетами:
+\begin{equation}
+ E_0=\{L_LY_R,\ X_LX_R,\ X_Le_R,\ Y_LY_R\}.
+ \label{eq:v7-color-selector-singlet-support}
+\end{equation}
+Но это в точности опора ранее выведенного изотипического проектора:
+\begin{equation}
+ \boxed{P_G=P_I,\qquad \rank P_G=4.}
+ \label{eq:v7-color-selector-projector-coincidence}
+\end{equation}
+Здесь $P_I$ был получен условием эквивалентности калибровочных
+представлений концов ребра, тогда как $P_G$ определяется независимо как
+проектор на инвариантные векторы полного gauge-действия. Совпадение не
+использует метки ``старое'' и ``новое''.
+
+\section{Проектор как ядро Casimir}
+
+Пусть на полном рёберном носителе
+\begin{equation}
+ \mathcal C_G=\alpha_1Y^2+\alpha_2C_2(SU(2))
+ +\alpha_3C_2(SU(3)),\qquad \alpha_i>0.
+ \label{eq:v7-color-selector-positive-casimir}
+\end{equation}
+Каждое слагаемое неотрицательно, поэтому ядро суммы не зависит от
+положительных относительных нормировок:
+\begin{equation}
+ \ker\mathcal C_G=(\mathcal E_{\rm new})^{G_{SM}},
+ \qquad
+ P_G=\mathbf1_{\{0\}}(\mathcal C_G)
+ =\lim_{t\to\infty}e^{-t\mathcal C_G}.
+ \label{eq:v7-color-selector-kernel-projector}
+\end{equation}
+Следовательно, неизвестные отношения gauge-couplings не создают порога.
+В обычной GUT-нормировке
+\begin{equation}
+ \mathcal C_G=\frac35Y^2+C_2(SU(2))+C_2(SU(3))
+ \label{eq:v7-color-selector-gut-casimir}
+\end{equation}
+спектр на проверяемых типах равен
+\begin{equation}
+ \Spec\mathcal C_G=\left\{0,\frac9{10},\frac85,3\right\}.
+ \label{eq:v7-color-selector-casimir-spectrum}
+\end{equation}
+Поэтому тот же проектор имеет конечную полиномиальную запись
+\begin{equation}
+ P_G=\left(I-\frac{\mathcal C_G}{9/10}\right)
+ \left(I-\frac{\mathcal C_G}{8/5}\right)
+ \left(I-\frac{\mathcal C_G}{3}\right).
+ \label{eq:v7-color-selector-polynomial-projector}
+\end{equation}
+Фундаментальной является спектральная проекция на нуль; полином служит
+точным сертификатом на данном конечном спектре.
+
+\section{Новая физическая декомпозиция одиннадцати рёбер}
+
+Циклический проектор $P_C$ и gauge-синглетный проектор $P_G=P_I$
+коммутируют. Они дают каноническое ортогональное разбиение
+\begin{equation}
+ 11=2_{\rm conn}+2_{\rm virtual}+2_{\rm mass}+5_{\rm forbidden}.
+ \label{eq:v7-color-selector-edge-partition}
+\end{equation}
+Его части равны
+\begin{align}
+ E_{\rm conn}&=E_C\cap E_0=\{L_LY_R,X_Le_R\},\nonumber\\
+ E_{\rm virtual}&=E_C\setminus E_0=\{Q_LY_R,X_Lu_R\},\nonumber\\
+ E_{\rm mass}&=E_0\setminus E_C=\{X_LX_R,Y_LY_R\}.
+ \label{eq:v7-color-selector-four-sector-support}
+\end{align}
+Таким образом, два прежде опасных цветных ребра получают точное физическое
+чтение виртуальных мостов, а четыре бесцветных рёбра состоят из двух
+смешанных коннекторов и двух вектороподобных масс.
+
+\section{Hodge-запуск без нарушения gauge-группы}
+
+Повторим уже выведенную двухцветную Hodge-конструкцию, заменяя прежний
+проектор объединения на $P_G$. Производная градуировка равна
+\begin{equation}
+ \Gamma_G=I-2P_G.
+ \label{eq:v7-color-selector-grading}
+\end{equation}
+Одна норма отображения момента даёт
+\begin{equation}
+ \mathcal S_G(z)=
+ \sum_{e\in E_0}(|z_e|^2-\mu^2)^2
+ +\sum_{e\notin E_0}(|z_e|^4+2\mu^2|z_e|^2).
+ \label{eq:v7-color-selector-hodge-potential}
+\end{equation}
+Поэтому вакуум имеет опору
+\begin{equation}
+ |z_e|=\mu\quad(e\in E_0),\qquad
+ z_e=0\quad(e\notin E_0).
+ \label{eq:v7-color-selector-vacuum}
+\end{equation}
+Все ненулевые поля являются полными gauge-синглетами. В частности,
+$SU(3)_c\times SU(2)_L\times U(1)_Y$ не нарушается этим внутренним
+вектороподобным вакуумом.
+
+На редуцированном пространстве меток сигнатуры равны
+\begin{equation}
+ (n_-,n_0,n_+)_{0}^{\rm red}=(8,0,14),\qquad
+ (n_-,n_0,n_+)_{*}^{\rm red}=(0,4,18).
+ \label{eq:v7-color-selector-reduced-signatures}
+\end{equation}
+После раскрытия минимальных полных multiplet-размерностей получаем
+\begin{equation}
+ (n_-,n_0,n_+)_{0}^{\rm full}=(8,0,34),\qquad
+ (n_-,n_0,n_+)_{*}^{\rm full}=(0,4,38).
+ \label{eq:v7-color-selector-full-signatures}
+\end{equation}
+
+\section{Сохранение лёгкого хирального лептонного сектора}
+
+На одно поколение два синглетных массовых блока образуют отображение
+$\mathbb C_L\to\mathbb C_R^2$, а два дублетных --- отображение
+$\mathbb C_L^2\to\mathbb C_R$. При ненулевых амплитудах оба имеют ранг
+один, поэтому
+\begin{equation}
+ \dim\ker M_{\rm doublet}=1,
+ \qquad
+ \dim\ker M_{\rm singlet}^{*}=1.
+ \label{eq:v7-color-selector-light-kernels}
+\end{equation}
+При трёх семействах остаются три лёгких левых дублета и три лёгких правых
+заряженных синглета. Тем самым сохраняется хиральный лептонный индекс
+$H_{15}$, тогда как вектороподобное дополнение становится тяжёлым.
+
+\begin{theorem}[Двойное происхождение физического вакуумного проектора]
+На полном одиннадцатирёберном носителе проектор на ядро положительного
+gauge-Casimir в точности совпадает с ранее независимо выведенным
+изотипическим проектором $P_I$. Он выбирает четыре и только четыре
+gauge-синглетных ребра. Производная Hodge-градуировка запускает их,
+оставляет два цветных циклических моста и пять нежелательных блоков
+массивными, сохраняет полную gauge-группу и один лёгкий хиральный
+лептонный пакет на поколение.
+\end{theorem}
+
+\begin{nogocriterion}[Граница положительного прохода]
+Совпадение $P_G=P_I$ закрывает квадратичный селектор, но ещё не фиксирует
+коэффициент виртуального determinant-взаимодействия, общий масштаб $\mu$,
+семейные ориентации и полное Real-бимодульное вложение. Нельзя возвращать
+цветные рёбра в ненулевой фундаментальный вакуум или выбирать порог
+Casimir вручную: используется только точное ядро.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item gauge-синглетных новых рёбер: \textbf{$4$};
+ \item ранг $P_G$: \textbf{$4$};
+ \item совпадение $P_G=P_I$: \textbf{точное};
+ \item зависимость ядра от положительных gauge-весов: \textbf{нет};
+ \item ручной Casimir-порог: \textbf{нет};
+ \item бесцветных циклических коннекторов: \textbf{$2$};
+ \item цветных виртуальных мостов: \textbf{$2$};
+ \item вектороподобных массовых рёбер: \textbf{$2$};
+ \item запрещённых рёбер: \textbf{$5$};
+ \item полная сигнатура нуля: \textbf{$(8,0,34)$};
+ \item полная сигнатура вакуума: \textbf{$(0,4,38)$};
+ \item нарушение $SU(3)_c$: \textbf{нет};
+ \item нарушение электрослабой gauge-группы: \textbf{нет};
+ \item лёгкий левый дублет на поколение: \textbf{$1$};
+ \item лёгкий правый синглет на поколение: \textbf{$1$};
+ \item цветосохраняющий квадратичный селектор: \textbf{получен};
+ \item следующий гейт: \textbf{совместный гессиан singlet-вакуума и
+ виртуального цикла}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_color_preserving_quadratic_selector_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-color-selector-krajewski}
+T.~Krajewski,
+\emph{Classification of Finite Spectral Triples},
+Journal of Geometry and Physics 28 (1998), 1--30;
+arXiv:hep-th/9701081.
+\bibitem{v7-color-selector-jureit}
+J.-H.~Jureit, T.~Schuecker, C.~A.~Stephan,
+\emph{On a Classification of Irreducible Almost-Commutative Geometries V},
+Journal of Mathematical Physics 50 (2009), 072303; arXiv:0901.3214.
+\bibitem{v7-color-selector-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle},
+Communications in Mathematical Physics 186 (1997), 731--750;
+arXiv:hep-th/9606001.
+\end{thebibliography}

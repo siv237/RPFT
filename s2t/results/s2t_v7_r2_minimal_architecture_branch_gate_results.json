@@ -1,0 +1,332 @@
+{
+  "gate": "version7_r2_minimal_architecture_branch_gate",
+  "fixed_input": {
+    "algebra": "C + H + M3(C)",
+    "base_vertices": {
+      "Q_L": [
+        "H",
+        "M3",
+        "L"
+      ],
+      "L_L": [
+        "H",
+        "C",
+        "L"
+      ],
+      "u_R": [
+        "C",
+        "M3",
+        "R"
+      ],
+      "e_R": [
+        "C",
+        "C",
+        "R"
+      ]
+    },
+    "required_existing_edges_in_mixed_cycle": [
+      "Q_L-u_R",
+      "L_L-e_R"
+    ]
+  },
+  "automorphism_twist_branch": {
+    "simple_ideal_signatures": {
+      "C": [
+        "complex",
+        1
+      ],
+      "H": [
+        "quaternionic",
+        1
+      ],
+      "M3": [
+        "complex_matrix",
+        3
+      ]
+    },
+    "admissible_summand_label_permutations": [
+      [
+        "C",
+        "H",
+        "M3"
+      ]
+    ],
+    "nontrivial_summand_permutation_exists": false,
+    "can_turn_forbidden_diagonal_into_same_row_or_column": false,
+    "verdict": "closed_for_automorphisms_of_unchanged_A_SM"
+  },
+  "generalized_inner_fluctuation_branch": {
+    "new_fermion_vertices": 0,
+    "drops_strict_first_order": true,
+    "requires_quadratic_term_A2": true,
+    "gauge_covariance_is_not_given_by_linear_fluctuation_alone": true,
+    "physical_R2_support_and_vacuum_proved": false,
+    "status": "architecturally_admissible_not_physically_closed"
+  },
+  "strict_first_order_mirror_vertex_branch": {
+    "minimum_new_chiral_vertices": 2,
+    "number_of_minimal_coordinate_type_solutions": 9,
+    "solutions": [
+      {
+        "new_vertex_types": [
+          [
+            "C",
+            "C",
+            "L"
+          ],
+          [
+            "H",
+            "C",
+            "R"
+          ]
+        ],
+        "raw_complex_carrier_dimension": 3,
+        "cycle": [
+          "Q_L",
+          "X2",
+          "L_L",
+          "e_R",
+          "X1",
+          "u_R",
+          "Q_L"
+        ],
+        "cycle_length": 6
+      },
+      {
+        "new_vertex_types": [
+          [
+            "C",
+            "H",
+            "L"
+          ],
+          [
+            "H",
+            "C",
+            "R"
+          ]
+        ],
+        "raw_complex_carrier_dimension": 4,
+        "cycle": [
+          "Q_L",
+          "X2",
+          "L_L",
+          "e_R",
+          "X1",
+          "u_R",
+          "Q_L"
+        ],
+        "cycle_length": 6
+      },
+      {
+        "new_vertex_types": [
+          [
+            "C",
+            "C",
+            "L"
+          ],
+          [
+            "H",
+            "H",
+            "R"
+          ]
+        ],
+        "raw_complex_carrier_dimension": 5,
+        "cycle": [
+          "Q_L",
+          "X2",
+          "L_L",
+          "e_R",
+          "X1",
+          "u_R",
+          "Q_L"
+        ],
+        "cycle_length": 6
+      },
+      {
+        "new_vertex_types": [
+          [
+            "C",
+            "M3",
+            "L"
+          ],
+          [
+            "H",
+            "C",
+            "R"
+          ]
+        ],
+        "raw_complex_carrier_dimension": 5,
+        "cycle": [
+          "Q_L",
+          "X2",
+          "L_L",
+          "e_R",
+          "X1",
+          "u_R",
+          "Q_L"
+        ],
+        "cycle_length": 6
+      },
+      {
+        "new_vertex_types": [
+          [
+            "C",
+            "H",
+            "L"
+          ],
+          [
+            "H",
+            "H",
+            "R"
+          ]
+        ],
+        "raw_complex_carrier_dimension": 6,
+        "cycle": [
+          "Q_L",
+          "X2",
+          "L_L",
+          "e_R",
+          "X1",
+          "u_R",
+          "Q_L"
+        ],
+        "cycle_length": 6
+      },
+      {
+        "new_vertex_types": [
+          [
+            "C",
+            "C",
+            "L"
+          ],
+          [
+            "H",
+            "M3",
+            "R"
+          ]
+        ],
+        "raw_complex_carrier_dimension": 7,
+        "cycle": [
+          "Q_L",
+          "X2",
+          "L_L",
+          "e_R",
+          "X1",
+          "u_R",
+          "Q_L"
+        ],
+        "cycle_length": 6
+      },
+      {
+        "new_vertex_types": [
+          [
+            "C",
+            "M3",
+            "L"
+          ],
+          [
+            "H",
+            "H",
+            "R"
+          ]
+        ],
+        "raw_complex_carrier_dimension": 7,
+        "cycle": [
+          "Q_L",
+          "X2",
+          "L_L",
+          "e_R",
+          "X1",
+          "u_R",
+          "Q_L"
+        ],
+        "cycle_length": 6
+      },
+      {
+        "new_vertex_types": [
+          [
+            "C",
+            "H",
+            "L"
+          ],
+          [
+            "H",
+            "M3",
+            "R"
+          ]
+        ],
+        "raw_complex_carrier_dimension": 8,
+        "cycle": [
+          "Q_L",
+          "X2",
+          "L_L",
+          "e_R",
+          "X1",
+          "u_R",
+          "Q_L"
+        ],
+        "cycle_length": 6
+      },
+      {
+        "new_vertex_types": [
+          [
+            "C",
+            "M3",
+            "L"
+          ],
+          [
+            "H",
+            "M3",
+            "R"
+          ]
+        ],
+        "raw_complex_carrier_dimension": 9,
+        "cycle": [
+          "Q_L",
+          "X2",
+          "L_L",
+          "e_R",
+          "X1",
+          "u_R",
+          "Q_L"
+        ],
+        "cycle_length": 6
+      }
+    ],
+    "dimension_minimal_solution": {
+      "new_vertex_types": [
+        [
+          "C",
+          "C",
+          "L"
+        ],
+        [
+          "H",
+          "C",
+          "R"
+        ]
+      ],
+      "raw_complex_carrier_dimension": 3,
+      "cycle": [
+        "Q_L",
+        "X2",
+        "L_L",
+        "e_R",
+        "X1",
+        "u_R",
+        "Q_L"
+      ],
+      "cycle_length": 6
+    },
+    "Real_completion_and_anomaly_cancellation_proved": false,
+    "elementary_R2_edge_obtained": false,
+    "mixed_effect_is_factorized_along_cycle": true
+  },
+  "verdict": {
+    "unchanged_algebra_automorphism_twist_selected": false,
+    "unique_physical_branch_selected": false,
+    "zero_new_vertex_route": "generalized inner fluctuations without first order",
+    "strict_first_order_route": "at least two new mirror-chirality vertices",
+    "next_gate": "compare generalized A2 support with Real/anomaly completion of the dimension-minimal two-mirror-vertex cycle"
+  }
+}

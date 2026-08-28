@@ -1,0 +1,116 @@
+\chapter{Производная относительная инволюция и общая норма кривизны}
+\label{ch:v7-derived-relative-involution-curvature-norm-gate}
+
+\section{Положительная замена ролевого суперследа}
+
+Пусть $A:\mathbb C^{11}\to\mathbb C^{10}$ --- ориентированная половина
+физического incidence-оператора, а $A_0$ --- единичный фон семи корневых
+рёбер, уже выбранных старым $H_{15}$ и бесцветным проектором. Определим
+\begin{equation}
+ \mathcal S_V(A)=\frac12\left(
+ \|A^*A-A_0^*A_0\|_{\rm HS}^2+
+ \|AA^*-A_0A_0^*\|_{\rm HS}^2\right).
+ \label{eq:v7-relative-norm-vertex-action}
+\end{equation}
+Это положительная норма относительной Hodge-кривизны без суперследа.
+
+Рёберный блок использует уже выведенную инволюцию и полные Casimir-веса:
+\begin{equation}
+ \mathcal S_E=
+ \sum_{a=1}^7m_a(|z_a|^2-1)^2
+ +\sum_{j\in d}\bigl[(|w_j|^2+8/5)^2-(8/5)^2\bigr]
+ +\sum_{j\in W}\bigl[(|w_j|^2+9/10)^2-(9/10)^2\bigr],
+ \label{eq:v7-relative-norm-edge-action}
+\end{equation}
+где $(m_a)=(3,3,1,1,1,1,1)$. Проверяем одну положительную сумму
+\begin{equation}
+ \mathcal S_\beta=\mathcal S_E+\beta\mathcal S_V,
+ \qquad \beta\ge0.
+ \label{eq:v7-relative-norm-combined-action}
+\end{equation}
+
+\section{Запуск нулевого сектора}
+
+Полный гессиан в нуле вычислен на той же вещественной размерности
+$7+20=27$. Условие положительности всех тяжёлых направлений имеет точную
+границу
+\begin{equation}
+ 0\le\beta<\frac8{15}.
+ \label{eq:v7-relative-norm-beta-window}
+\end{equation}
+При естественном кандидате $\beta=1/2$ получаем
+\begin{equation}
+ (n_-,n_0,n_+)_{0}=(7,0,20),
+ \qquad \lambda_{\rm heavy}^{\min}=0.4.
+ \label{eq:v7-relative-norm-origin-signature}
+\end{equation}
+Ровно семь корневых направлений запускаются, а все двадцать down--weak
+конкурентов получают положительную щель. Равный вес $\beta=1$ этот тест не
+проходит.
+
+\section{Целевой вакуум}
+
+В точке $A=A_0$, $|z_a|=1$, $w_j=0$ обе положительные нормы минимальны.
+Полный гессиан равен
+\begin{equation}
+ (n_-,n_0,n_+)_{*}=(0,0,27),
+ \qquad \lambda_{\min}=5.6.
+ \label{eq:v7-relative-norm-vacuum-signature}
+\end{equation}
+Таким образом, положительная кривизностная архитектура одновременно даёт
+селективный запуск и строго устойчивый локальный вакуум без отрицательной
+метрики или теплового суперследа.
+
+\begin{theorem}[Одноотношенческий положительный локальный проход]
+На физическом incidence-блоке $10\times11$ и выведенном рёберном Hodge-блоке
+действие \eqref{eq:v7-relative-norm-combined-action} при $\beta=1/2$ имеет
+правильную нулевую сигнатуру $(7,0,20)$ и положительную вакуумную сигнатуру
+$(0,0,27)$. Допустимое окно нормировки открыто и заканчивается точно при
+$8/15$.
+\end{theorem}
+
+\section{Оставшийся нормировочный разрыв}
+
+Число $1/2$ естественно напоминает физический полуслед Real-пары и
+стандартный коэффициент квадрата кривизны. Однако оно ещё не выведено из
+одного представленного модуля. Литература по Yang--Mills функционалам
+суперсвязностей подтверждает, что квадрат кривизны способен объединять
+калибровочный и хиггсовский секторы, но относительные нормировки зависят от
+представления и допустимых центральных весов
+\cite{v7-relative-norm-roepstorff,v7-relative-norm-figueroa}.
+
+\begin{nogocriterion}[Запрет объявлять $\beta=1/2$ выведенным]
+Пока Real-удвоение, физический полуслед и Hodge-метрика обоих блоков не
+записаны в одном carrier, $\beta=1/2$ остаётся единственным невыведенным
+отношением. Положительный гессиан является условным локальным проходом, а не
+полным физическим замыканием.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item действие ограничено снизу: \textbf{да};
+ \item отрицательная метрика или суперслед: \textbf{нет};
+ \item допустимое окно: \textbf{$0\le\beta<8/15$};
+ \item кандидат $\beta=1/2$: \textbf{проходит};
+ \item нулевая сигнатура: \textbf{$(7,0,20)$};
+ \item тяжёлая щель в нуле: \textbf{$0.4$};
+ \item вакуумная сигнатура: \textbf{$(0,0,27)$};
+ \item вакуумная минимальная мода: \textbf{$5.6$};
+ \item происхождение $\beta=1/2$: \textbf{открыто};
+ \item итог: \textbf{одноотношенческий положительный локальный проход}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_derived_relative_involution_curvature_norm_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-relative-norm-roepstorff}
+G.~Roepstorff,
+\emph{Superconnections and the Higgs Field}, arXiv:hep-th/9801040.
+\bibitem{v7-relative-norm-figueroa}
+H.~Figueroa, J.~M.~Gracia-Bondia, F.~Lizzi, J.~C.~Varilly,
+\emph{A Nonperturbative Form of the Spectral Action Principle in
+Noncommutative Geometry}, J. Geom. Phys. 26 (1998), 329--339;
+arXiv:hep-th/9701179.
+\end{thebibliography}

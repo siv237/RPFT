@@ -1,0 +1,137 @@
+{
+  "gate": "version7_real_arrow_bimodule_forest_quotient_gate",
+  "real_arrow_module": {
+    "carrier": "E_new^0 direct_sum E_new^1 with formal orientation-reversed Real partner",
+    "edge_summands": 11,
+    "projectors_act_on_complete_bimodule_summands": true,
+    "background_delta_is_odd": true,
+    "background_delta_is_nilpotent": true,
+    "central_bimodule_commutator_residual": 0.0,
+    "Real_exchange_reverses_chain_grading": true,
+    "Real_oddness_residual": 0.0,
+    "auxiliary_first_order_condition": "trivial because delta is A-bimodule linear"
+  },
+  "ordinary_inner_fluctuation_test": {
+    "dynamic_central_commutator_residual": 0.0,
+    "ordinary_one_form_span_from_auxiliary_operator": "zero",
+    "is_standard_finite_Dirac_inner_fluctuation": false,
+    "requires_new_physical_fermion_vertices": false,
+    "valid_status": "Real equivariant arrow-space superconnection/correspondence"
+  },
+  "selected_vacuum_graph": {
+    "vertices": [
+      "L_L",
+      "Q_L",
+      "X_L",
+      "X_R",
+      "Y_L",
+      "Y_R",
+      "d_R",
+      "e_R",
+      "u_R"
+    ],
+    "selected_edges": [
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "Y_L--Y_R"
+    ],
+    "selected_components": [
+      [
+        "L_L",
+        "Q_L",
+        "Y_L",
+        "Y_R"
+      ],
+      [
+        "X_L",
+        "X_R",
+        "e_R",
+        "u_R"
+      ],
+      [
+        "d_R"
+      ]
+    ],
+    "vertex_count": 9,
+    "edge_count": 6,
+    "component_count": 3,
+    "incidence_rank": 6,
+    "cycle_rank": 0,
+    "is_forest": true
+  },
+  "full_graph_relative_to_frozen_H15": {
+    "family_lift_assumption": "the current family-blind H15 lift uses unitary orientation I3 on each baseline edge",
+    "baseline_edges": [
+      "L_L--e_R",
+      "Q_L--d_R",
+      "Q_L--u_R"
+    ],
+    "all_nonzero_edges": [
+      "L_L--e_R",
+      "Q_L--d_R",
+      "Q_L--u_R",
+      "L_L--Y_R",
+      "Q_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "X_L--u_R",
+      "Y_L--Y_R"
+    ],
+    "components": [
+      [
+        "L_L",
+        "Q_L",
+        "X_L",
+        "X_R",
+        "Y_L",
+        "Y_R",
+        "d_R",
+        "e_R",
+        "u_R"
+      ]
+    ],
+    "edge_count": 9,
+    "incidence_rank": 8,
+    "cycle_rank": 1,
+    "unique_cycle_holonomy_dimension_for_U3": 9
+  },
+  "family_frame_quotient": {
+    "vertex_frame_group": "product over nine vertices U(3)_v",
+    "vertex_frame_group_real_dimension": 81,
+    "frames_preserving_frozen_H15_dimension": 54,
+    "linearized_action": "delta Z_e=xi_t-xi_s",
+    "orbit_dimension_on_new_edges_relative_to_H15": 45,
+    "full_graph_stabilizer": "one diagonal U(3) on the connected graph",
+    "full_graph_stabilizer_real_dimension": 9,
+    "hessian_zero_modes": 54,
+    "frame_vertical_zero_modes": 45,
+    "relative_cycle_zero_modes": 9,
+    "all_hessian_zero_modes_are_frame_vertical": false,
+    "linearized_quotient_dimension_at_identity": 9,
+    "holonomy_representative": "one U(3) matrix around the unique H15-rooted cycle",
+    "nonlinear_frame_quotient": "U(3)/Ad U(3)",
+    "generic_conjugacy_class_dimension": 3,
+    "class_invariants": "three eigenphases before any further spectral potential",
+    "nontrivial_CKM_PMNS_from_unitary_orientations": false
+  },
+  "remaining_physical_gap": {
+    "physical_gauge_group_equals_vertex_frame_group": false,
+    "basis_quotient_is_not_new_gauge_boson_dynamics": true,
+    "overall_scale_mu_derived": false,
+    "nondegenerate_family_singular_values_derived": false,
+    "quotient_recomputed_for_nondegenerate_H15_family_matrices": false,
+    "physical_mixing_observable_derived": false,
+    "standard_almost_commutative_spectral_triple_embedding": false
+  },
+  "verdict": {
+    "status": "positive_real_arrow_correspondence_partial_frame_quotient_one_cycle_holonomy_physical_inner_fluctuation_no_go",
+    "two_colours_have_one_Real_arrow_module": true,
+    "family_orientation_zero_modes_closed_as_frame_redundancy": false,
+    "family_orientation_zero_modes_reduced_from_54_to_9": true,
+    "complete_physical_spectral_parent_obtained": false,
+    "next_gate": "test whether the unique U(3) cycle holonomy enters a derived spectral invariant and whether the moment-map level mu follows from the frozen H15 background"
+  }
+}

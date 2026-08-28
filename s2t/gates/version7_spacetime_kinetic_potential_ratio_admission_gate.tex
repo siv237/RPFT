@@ -1,0 +1,141 @@
+\chapter{Пространственно-временное отношение кинетики и Hodge-потенциала}
+\label{ch:v7-spacetime-kinetic-potential-ratio-admission-gate}
+
+\section{Произведённый оператор}
+
+Одна массовая калибровка оставила свободной эффективную квартику
+$\lambda_E=\kappa/Z^2$. Проверим, сокращается ли эта свобода в минимальном
+плоском произведённом операторе
+\begin{equation}
+ \mathcal D_E
+ =i\gamma^\mu\partial_\mu\otimes I
+ +\gamma^5\otimes a\Phi_E(x),
+ \label{eq:v7-spacetime-ratio-product-dirac}
+\end{equation}
+где $a>0$ является общей нормировкой нечётного поля, а $\Phi_E$ содержит
+динамический и фоновый цвета Hodge-суперсвязности.
+
+В плоском четырёхмерном фоне $a_4$ даёт кинетический и квартичный члены с
+одним коэффициентом \cite{v7-spacetime-ratio-spectral-action}:
+\begin{equation}
+ C_0=\frac{f_0}{8\pi^2}.
+ \label{eq:v7-spacetime-ratio-common-coefficient}
+\end{equation}
+Квадратичный уровень вакуума зависит также от $a_2$, но после одной
+массовой калибровки он не входит в искомую безразмерную квартику.
+
+\section{Конечные следовые множители}
+
+Для динамического эрмитова оператора рёбер
+$\Phi_Z=d_Z+d_Z^\dagger$ выполняется
+\begin{equation}
+ \Tr_{\mathcal K_E}(\partial_\mu\Phi_Z)^2
+ =2\sum_e\left[(\partial_\mu x_e)^2+(\partial_\mu y_e)^2\right].
+ \label{eq:v7-spacetime-ratio-kinetic-trace}
+\end{equation}
+Hodge-потенциал был определён равенством
+\begin{equation}
+ \Tr_{\mathcal K_E}\mathfrak m_\mu^2
+ =2\mathcal S_\mu+10\mu^4.
+ \label{eq:v7-spacetime-ratio-potential-trace}
+\end{equation}
+Поэтому произведённый $a_4$-блок индуцирует коэффициенты
+\begin{equation}
+ Z=4C_0a^2,
+ \qquad
+ \kappa=2C_0a^4.
+ \label{eq:v7-spacetime-ratio-induced-coefficients}
+\end{equation}
+
+\section{Что действительно сокращается}
+
+После канонической нормировки
+\begin{equation}
+ \boxed{
+ \lambda_E=\frac{\kappa}{Z^2}
+ =\frac1{8C_0}=\frac{\pi^2}{f_0}.}
+ \label{eq:v7-spacetime-ratio-effective-quartic}
+\end{equation}
+Общая нормировка $a$ сокращается точно. Аналогично единый массовый масштаб
+равен
+\begin{equation}
+ M_0^2=\frac{\kappa\mu^2}{Z}
+ =\frac{a^2\mu^2}{2},
+ \label{eq:v7-spacetime-ratio-mass-scale}
+\end{equation}
+поэтому $f_0$ сокращается из линейных масс и одна калибровка фиксирует
+комбинацию $a\mu$.
+
+\begin{theorem}[Сокращение нормировки нечётного поля]
+В минимальном произведённом heat-kernel блоке отношение
+$\kappa/Z^2$ не зависит от рескейлинга $\Phi_E\mapsto a\Phi_E$, от
+$f_2$ и от cutoff после фиксации одной массы. Вся оставшаяся
+неопределённость эффективной квартики сосредоточена в одном безразмерном
+моменте $f_0$.
+\end{theorem}
+
+\section{Почему численное значение ещё не предсказано}
+
+Функция спектрального отсечения определяет $f_0$ и не выводится текущим
+конечным графом. При
+\begin{equation}
+ f_0\in\left\{\frac12,1,2,5\right\}
+ \quad\Longrightarrow\quad
+ \lambda_E\in\left\{2\pi^2,\pi^2,\frac{\pi^2}{2},\frac{\pi^2}{5}\right\}.
+ \label{eq:v7-spacetime-ratio-f0-family}
+\end{equation}
+Все эти значения сохраняют прежнее отношение линейных масс $\sqrt2$, но
+дают разные амплитуды рассеяния.
+
+Полное Real-удвоение умножает оба следовых члена на два. Физический
+полуслед удаляет этот известный множитель; без него каноническая квартика
+изменилась бы вдвое. Семейная и Real-кратности поэтому должны фиксироваться
+тем же физическим следом, а не выбираться после нормировки.
+
+Обычный выход спектрального действия состоит в фиксации $f_0$ через
+калибровочный кинетический член. Но текущий вспомогательный рёберный носитель
+не содержит доказанного общего физического gauge-блока. До такого вложения
+формула~\eqref{eq:v7-spacetime-ratio-effective-quartic} является отношением
+к одному невыведенному моменту, а не численным предсказанием. Произведённые
+спектральные тройки дают подходящую архитектуру для следующей проверки
+\cite{v7-spacetime-ratio-product}.
+
+\begin{nogocriterion}[Один оставшийся безразмерный якорь]
+Нельзя назначать $f_0=1$ или определять его по желаемой квартике. Полное
+одномасштабное замыкание допускается только если один и тот же физический
+спектральный след фиксирует калибровочную кинетику и
+$\lambda_E=\pi^2/f_0$. Без общего gauge-блока численное значение
+$\lambda_E$ остаётся свободным.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item общий коэффициент $a_4$: \textbf{$C_0=f_0/(8\pi^2)$};
+ \item кинетический коэффициент: \textbf{$Z=4C_0a^2$};
+ \item потенциальный коэффициент: \textbf{$\kappa=2C_0a^4$};
+ \item эффективная квартика: \textbf{$\lambda_E=\pi^2/f_0$};
+ \item зависимость от нормировки $a$: \textbf{сокращается};
+ \item зависимость от $f_2$ и cutoff: \textbf{сокращается после
+ массовой калибровки};
+ \item зависимость от $f_0$: \textbf{остаётся};
+ \item Real-полуслед: \textbf{обязателен и сохраняет коэффициенты};
+ \item общий физический gauge-блок: \textbf{не выведен};
+ \item итог: \textbf{частичный проход, свобода сведена к одному $f_0$}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_spacetime_kinetic_potential_ratio_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-spacetime-ratio-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle},
+Communications in Mathematical Physics 186 (1997), 731--750;
+arXiv:hep-th/9606001.
+\bibitem{v7-spacetime-ratio-product}
+S.~Brain, B.~Mesland, W.~D.~van Suijlekom,
+\emph{Gauge Theory for Spectral Triples and the Unbounded Kasparov Product},
+Journal of Noncommutative Geometry 10 (2016), 135--206;
+arXiv:1306.1951.
+\end{thebibliography}

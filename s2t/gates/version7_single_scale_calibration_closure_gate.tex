@@ -1,0 +1,145 @@
+\chapter{Замыкание Hodge-родителя с одной размерной калибровкой}
+\label{ch:v7-single-scale-calibration-closure-gate}
+
+\section{Честный EFT-вопрос}
+
+Предыдущий гейт запретил выводить $\mu$ из одного фона $H_{15}$. Теперь
+принимается минимальная разрешённая альтернатива: одна физическая масса
+используется как единственный размерный вход. Нужно проверить, становятся ли
+после этого все остальные величины предсказаниями.
+
+На пространстве одиннадцати комплексных рёбер рассмотрим лоренцево
+допустимую эффективную плотность
+\begin{equation}
+ \mathcal L_E
+ =\frac{Z}{2}\sum_e\left[(\partial_\mu x_e)^2
+ +(\partial_\mu y_e)^2\right]
+ -\kappa\mathcal S_\mu(z),
+ \qquad z_e=x_e+iy_e,
+ \label{eq:v7-single-scale-effective-lagrangian}
+\end{equation}
+где $Z,\kappa>0$ общи для всех рёбер, а $\mathcal S_\mu$ является уже
+выведенным Hodge-потенциалом. Отдельные $Z_e$, $\kappa_e$ и $\mu_e$
+запрещены.
+
+\section{Канонические переменные}
+
+После замены
+\begin{equation}
+ \phi_e=\sqrt Z\,z_e,
+ \qquad
+ v=\sqrt Z\,\mu,
+ \qquad
+ \lambda_E=\frac{\kappa}{Z^2}
+ \label{eq:v7-single-scale-canonical-variables}
+\end{equation}
+весь квадратичный спектр зависит от одной размерной комбинации
+\begin{equation}
+ M_0^2=\frac{\kappa\mu^2}{Z}=\lambda_Ev^2.
+ \label{eq:v7-single-scale-common-mass}
+\end{equation}
+Это показывает, что отдельные $\mu$, $Z$ и $\kappa$ не являются тремя
+размерными входами. Линейная физика видит только $M_0$.
+
+\section{Безразмерное предсказание спектра}
+
+В нуле обобщённый гессиан в единицах $M_0^2$ равен
+\begin{equation}
+ \Spec(M_0^{-2}G^{-1}\Hess_0)
+ =\{-4^{(12)},\;4^{(10)}\}.
+ \label{eq:v7-single-scale-origin-spectrum}
+\end{equation}
+В Hodge-вакууме получаем
+\begin{equation}
+ \Spec(M_0^{-2}G^{-1}\Hess_*)
+ =\{0^{(6)},\;4^{(10)},\;8^{(6)}\}.
+ \label{eq:v7-single-scale-vacuum-spectrum}
+\end{equation}
+Шесть нулей являются фазами выбранных рёбер. Десять компонент пяти
+нежелательных рёбер имеют массу $2M_0$, а шесть выбранных радиальных мод ---
+$2\sqrt2M_0$. Следовательно,
+\begin{equation}
+ \frac{m_{\rm rad}}{m_{\rm gap}}=\sqrt2,
+ \qquad
+ \frac{\xi_{\rm rad}}{\xi_{\rm gap}}=\frac1{\sqrt2}.
+ \label{eq:v7-single-scale-linear-ratios}
+\end{equation}
+Одна измеренная ненулевая масса действительно калибрует весь внутренний
+линейный спектр. Отношение $\sqrt2$ не использует абсолютную единицу.
+
+\begin{theorem}[Частичное одномасштабное замыкание]
+При единой положительной кинетической метрике одна размерная калибровка
+фиксирует все ненулевые собственные значения линейного Hodge-спектра и его
+корреляционные длины. В частности, отношение выбранной радиальной массы к
+щели нежелательного ребра равно $\sqrt2$.
+\end{theorem}
+
+\section{Почему полный EFT ещё не замкнут}
+
+Одна масса фиксирует $M_0$, но не разлагает его на $v$ и $\lambda_E$:
+\begin{equation}
+ v=\frac{M_0}{\sqrt{\lambda_E}}.
+ \label{eq:v7-single-scale-vev-coupling-degeneracy}
+\end{equation}
+При фиксированном $M_0$ значения
+\begin{equation}
+ \lambda_E\in\left\{\frac14,1,4\right\}
+ \quad\Longrightarrow\quad
+ v\in\left\{2M_0,M_0,\frac12M_0\right\}
+ \label{eq:v7-single-scale-degeneracy-example}
+\end{equation}
+дают один и тот же квадратичный спектр, но разные четырёхточечные вершины и
+нелинейные энергии. Например, натяжение профиля коразмерности один имеет
+масштаб
+\begin{equation}
+ \sigma_{\rm nl}\sim v^2M_0=\frac{M_0^3}{\lambda_E},
+ \label{eq:v7-single-scale-nonlinear-energy}
+\end{equation}
+которая не определяется одной массовой калибровкой.
+
+Конечный полевой след ранее дал общую положительную метрику $3I$, но
+коэффициент её пространственно-временного теплового продолжения не выведен.
+Это согласуется со спектральным действием: функция отсечения и масштаб входят
+в исходный функционал, а связи кинетического и скалярного секторов требуют
+конкретного произведённого спектрального оператора
+\cite{v7-single-scale-spectral-action,v7-single-scale-product}.
+
+\begin{nogocriterion}[Запрет полного одномасштабного статуса]
+Нельзя называть отношение $\sqrt2$ полным физическим замыканием, пока
+$\lambda_E=\kappa/Z^2$ не выведено из одного пространственно-временного
+спектрального следа. Выбор $Z=1$ или $\lambda_E=1$ является выбором
+нормировки, а не вторым предсказанием. Массы линейных мод замкнуты условно;
+амплитуды, рассеяние и нелинейные энергии остаются открыты.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item размерных калибровочных входов: \textbf{$1$};
+ \item общий квадратичный масштаб: \textbf{$M_0^2=\kappa\mu^2/Z$};
+ \item радиальных выбранных мод: \textbf{$6$ с массой $2\sqrt2M_0$};
+ \item нежелательных массивных компонент: \textbf{$10$ с массой $2M_0$};
+ \item фазовых нулей: \textbf{$6$};
+ \item предсказанное отношение масс: \textbf{$\sqrt2$};
+ \item линейные корреляционные длины: \textbf{замкнуты одной массой};
+ \item эффективная квартика $\lambda_E$: \textbf{не выведена};
+ \item нелинейные энергии и амплитуды: \textbf{не замкнуты};
+ \item физическая временная нормировка: \textbf{не выведена};
+ \item итог: \textbf{частичное линейное одномасштабное замыкание}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_single_scale_calibration_closure_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-single-scale-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle},
+Communications in Mathematical Physics 186 (1997), 731--750;
+arXiv:hep-th/9606001.
+\bibitem{v7-single-scale-product}
+S.~Brain, B.~Mesland, W.~D.~van Suijlekom,
+\emph{Gauge Theory for Spectral Triples and the Unbounded Kasparov Product},
+Journal of Noncommutative Geometry 10 (2016), 135--206;
+arXiv:1306.1951.
+\end{thebibliography}

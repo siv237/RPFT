@@ -1,0 +1,139 @@
+{
+  "gate": "version7_edge_coherence_spectral_parent_gate",
+  "carrier": {
+    "chain_dimensions": [
+      1,
+      6,
+      3
+    ],
+    "chain": "C -> C^2 tensor (C^3)* -> Lambda^2 C^2 tensor Lambda^2 (C^3)*",
+    "grading": [
+      "even",
+      "odd",
+      "even"
+    ],
+    "dirac_linear_in_B": true,
+    "self_adjoint_residual": 0.0,
+    "odd_grading_residual": 0.0,
+    "real_completion": "conjugate chain; physical half-trace preserves particle trace"
+  },
+  "identities": {
+    "C_B": "(1/2) d(Lambda^2)_B",
+    "C_B_A_B": "Lambda^2 B",
+    "trace_D2": "3 T",
+    "trace_D4": "(9/4) T^2 + (15/4) det(B B*)",
+    "second_edge_norm": "T/2",
+    "second_edge_fourth_trace": "(T^2-det(B B*))/8",
+    "maximum_residuals": {
+      "polarization": 1.2755491433176288e-15,
+      "trace_two": 2.1316282072803006e-14,
+      "trace_four": 4.902744876744691e-13,
+      "parent_action": 2.5579538487363607e-13,
+      "second_edge_norm": 2.6645352591003757e-15,
+      "second_edge_fourth_trace": 2.842170943040401e-14
+    }
+  },
+  "spectral_parent": {
+    "mu": 4.5,
+    "formula": "(4/9)(Tr D_B^4 - mu Tr D_B^2 + mu^2)",
+    "reduced_formula": "(T-3)^2 + (5/3) det(B B*)",
+    "relative_determinant_coefficient": 1.6666666666666667,
+    "absolute_scale_role": "mu fixes only the common radial norm T*=2mu/3",
+    "zero_set": "rank(B)=1 and T=3"
+  },
+  "origin": {
+    "action": 9.0,
+    "spectrum": [
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348
+    ],
+    "signature": {
+      "negative": 12,
+      "zero": 0,
+      "positive": 0
+    }
+  },
+  "vacuum": {
+    "action": 1.578983857244667e-15,
+    "spectrum": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      7.894919286223335e-08,
+      7.894919286223335e-08,
+      7.894919286223335e-08,
+      9.999999958962587,
+      9.999999958962587,
+      10.00000003791178,
+      10.00000003791178,
+      23.999999854140697
+    ],
+    "signature": {
+      "negative": 0,
+      "zero": 7,
+      "positive": 5
+    },
+    "analytic_spectrum": {
+      "zero": [
+        0.0,
+        7
+      ],
+      "rank_growth": [
+        10.0,
+        4
+      ],
+      "radial": [
+        24.0,
+        1
+      ]
+    }
+  },
+  "Real_slice": {
+    "origin_spectrum": [
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348,
+      -11.999999927070348
+    ],
+    "origin_signature": {
+      "negative": 6,
+      "zero": 0,
+      "positive": 0
+    },
+    "vacuum_spectrum": [
+      0.0,
+      0.0,
+      7.894919286223335e-08,
+      9.999999958962587,
+      10.00000003791178,
+      23.999999854140697
+    ],
+    "vacuum_signature": {
+      "negative": 0,
+      "zero": 3,
+      "positive": 3
+    }
+  },
+  "verdict": {
+    "single_full_spectral_polynomial": true,
+    "manual_minor_norm_removed": true,
+    "relative_radial_wedge_weight_derived": true,
+    "rank_one_condensation": true,
+    "strict_finite_triple_embedding": false,
+    "status": "positive_graded_spectral_parent_strict_algebraic_embedding_open",
+    "next_gate": "embed or exclude the 1-6-3 exterior chain as a strict Real finite spectral triple over the admitted physical algebra"
+  }
+}

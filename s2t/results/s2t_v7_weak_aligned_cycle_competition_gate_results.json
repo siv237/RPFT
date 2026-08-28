@@ -1,0 +1,177 @@
+{
+  "asymptotics": {
+    "large_t": "negative kernel-to-P6 bridge contribution tends to zero from below",
+    "small_t": "negative quadratic term from -t Tr Phi^2"
+  },
+  "benchmarks": {
+    "0.1": {
+      "down_eigenvalues": [
+        -0.58769262459,
+        -0.58769262459,
+        -0.58769262459,
+        -0.58769262459,
+        -0.58769262459,
+        -0.58769262459,
+        -0.294624660862,
+        -0.294624660862,
+        -0.294624660862,
+        -0.294624660862,
+        -0.294624660862,
+        -0.294624660862
+      ],
+      "down_weak_cross_norm": 0.0,
+      "full_signature": [
+        20,
+        0,
+        0
+      ],
+      "root_gradient": [
+        -1.08580490164,
+        -1.08580490164,
+        -0.297968874403,
+        -0.623764925073,
+        -0.329132521439,
+        -0.296272623842,
+        -0.65662482267
+      ],
+      "weak_eigenvalues": [
+        -0.329280443258,
+        -0.329280443258,
+        -0.299665124964,
+        -0.2994463561,
+        -0.297876982937,
+        -0.297876982937,
+        -0.296272623842,
+        -0.296272623842
+      ]
+    },
+    "1.0": {
+      "down_eigenvalues": [
+        0.0413116763074,
+        0.0413116763074,
+        0.0413116763074,
+        0.0413116763074,
+        0.0413116763074,
+        0.0413116763074,
+        0.736618255779,
+        0.736618255779,
+        0.736618255779,
+        0.736618255779,
+        0.736618255779,
+        0.736618255779
+      ],
+      "down_weak_cross_norm": 0.0,
+      "full_signature": [
+        8,
+        0,
+        12
+      ],
+      "root_gradient": [
+        -4.41455329406,
+        -4.41455329406,
+        -0.549000715649,
+        -0.635003126048,
+        -0.866154635293,
+        -0.0936619931017,
+        -1.40749576824
+      ],
+      "weak_eigenvalues": [
+        -1.28022328225,
+        -1.28022328225,
+        -1.0043394382,
+        -0.558140860109,
+        -0.265457288897,
+        -0.265457288897,
+        -0.0936619931017,
+        -0.0936619931017
+      ]
+    },
+    "10.0": {
+      "down_eigenvalues": [
+        -0.178339422193,
+        -0.178339422193,
+        -0.178339422193,
+        -0.178339422193,
+        -0.178339422193,
+        -0.178339422193,
+        0.477048348948,
+        0.477048348948,
+        0.477048348948,
+        0.477048348948,
+        0.477048348948,
+        0.477048348948
+      ],
+      "down_weak_cross_norm": 0.0,
+      "full_signature": [
+        9,
+        0,
+        11
+      ],
+      "root_gradient": [
+        -0.0054479915715,
+        -0.0054479915715,
+        -0.857976035544,
+        0.476139092603,
+        -0.593742330278,
+        0.47613917505,
+        -0.593742412724
+      ],
+      "weak_eigenvalues": [
+        -2.45123588831,
+        -2.45123588831,
+        -2.19209124614,
+        0.259144559724,
+        0.259144559724,
+        0.47613917505,
+        0.47613917505,
+        6.40542365029
+      ]
+    }
+  },
+  "carrier": {
+    "background_spectrum": [
+      -1.8019377358,
+      -1.41421356237,
+      -1.24697960372,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -1.0,
+      -0.445041867913,
+      -8.06646416329e-17,
+      0.445041867913,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.24697960372,
+      1.41421356237,
+      1.8019377358
+    ],
+    "complex_dimension": 21,
+    "down_real_dimension": 12,
+    "heavy_real_dimension": 20,
+    "weak_real_dimension": 8
+  },
+  "gate": "version7_weak_aligned_cycle_competition_gate",
+  "log_scan": {
+    "down_has_positive_window": true,
+    "most_negative_weak_value": -3.294409111312702,
+    "points": 401,
+    "t_max": 100.0,
+    "t_min": 0.0001,
+    "weak_min_always_negative": true
+  },
+  "method": "Daleckii-Krein divided-difference Hessian of Tr exp(-t Phi^2)",
+  "verdict": {
+    "exact_gaussian_autonomous_parent_pass": false,
+    "manual_hodge_plus_gaussian_sum_allowed": false,
+    "next_gate": "version7_exact_profile_hodge_cycle_unification_gate",
+    "reason": "weak sector retains a negative mode and the singlet background has nonzero root tadpoles",
+    "status": "exact_gaussian_no_go_common_functional_still_open"
+  }
+}

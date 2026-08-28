@@ -1,0 +1,290 @@
+{
+  "gate": "version7_modular_copy_projector_origin_gate",
+  "maximal_first_order_graph": {
+    "vertex_count": 9,
+    "edge_count": 14,
+    "adjacency_rank": 6,
+    "adjacency_nullity": 3,
+    "physical_duplicate_twin_pairs": [
+      [
+        "L_L",
+        "Y_L"
+      ],
+      [
+        "e_R",
+        "X_R"
+      ]
+    ],
+    "neighbourhoods": {
+      "Q_L": [
+        "Y_R",
+        "d_R",
+        "u_R"
+      ],
+      "L_L": [
+        "X_R",
+        "Y_R",
+        "e_R"
+      ],
+      "u_R": [
+        "Q_L",
+        "X_L"
+      ],
+      "d_R": [
+        "Q_L",
+        "X_L"
+      ],
+      "e_R": [
+        "L_L",
+        "X_L",
+        "Y_L"
+      ],
+      "X_L": [
+        "X_R",
+        "Y_R",
+        "d_R",
+        "e_R",
+        "u_R"
+      ],
+      "X_R": [
+        "L_L",
+        "X_L",
+        "Y_L"
+      ],
+      "Y_L": [
+        "X_R",
+        "Y_R",
+        "e_R"
+      ],
+      "Y_R": [
+        "L_L",
+        "Q_L",
+        "X_L",
+        "Y_L"
+      ]
+    },
+    "independent_twin_swap_group": "S2 x S2",
+    "edge_orbit_count": 9,
+    "edge_orbits": [
+      [
+        [
+          "L_L",
+          "X_R"
+        ],
+        [
+          "L_L",
+          "e_R"
+        ],
+        [
+          "X_R",
+          "Y_L"
+        ],
+        [
+          "Y_L",
+          "e_R"
+        ]
+      ],
+      [
+        [
+          "L_L",
+          "Y_R"
+        ],
+        [
+          "Y_L",
+          "Y_R"
+        ]
+      ],
+      [
+        [
+          "X_L",
+          "X_R"
+        ],
+        [
+          "X_L",
+          "e_R"
+        ]
+      ],
+      [
+        [
+          "Q_L",
+          "Y_R"
+        ]
+      ],
+      [
+        [
+          "Q_L",
+          "d_R"
+        ]
+      ],
+      [
+        [
+          "Q_L",
+          "u_R"
+        ]
+      ],
+      [
+        [
+          "X_L",
+          "Y_R"
+        ]
+      ],
+      [
+        [
+          "X_L",
+          "d_R"
+        ]
+      ],
+      [
+        [
+          "X_L",
+          "u_R"
+        ]
+      ]
+    ]
+  },
+  "derived_copy_operator": {
+    "L_L/Y_L": {
+      "compressed_A2": [
+        [
+          3.0,
+          3.0
+        ],
+        [
+          3.0,
+          3.0
+        ]
+      ],
+      "derived_exchange": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "plus_projector": [
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ]
+      ],
+      "minus_projector": [
+        [
+          0.5,
+          -0.5
+        ],
+        [
+          -0.5,
+          0.5
+        ]
+      ],
+      "exchange_square_residual": 0.0
+    },
+    "e_R/X_R": {
+      "compressed_A2": [
+        [
+          3.0,
+          3.0
+        ],
+        [
+          3.0,
+          3.0
+        ]
+      ],
+      "derived_exchange": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "plus_projector": [
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5
+        ]
+      ],
+      "minus_projector": [
+        [
+          0.5,
+          -0.5
+        ],
+        [
+          -0.5,
+          0.5
+        ]
+      ],
+      "exchange_square_residual": 0.0
+    }
+  },
+  "modular_selector": {
+    "beta": 1.0,
+    "sample_count": 129,
+    "maximum_unweighted_Hodge_action": 1.479114197289397e-31,
+    "minimum": {
+      "theta": 0.7853981633974483,
+      "hodge_action": 0.0,
+      "weighted_moment": 0.11920292202211763
+    },
+    "maximum": {
+      "theta": -0.7853981633974483,
+      "hodge_action": 0.0,
+      "weighted_moment": 0.8807970779778826
+    },
+    "analytic_minimum": 0.11920292202211755,
+    "analytic_maximum": 0.8807970779778824,
+    "analytic_gap": 0.7615941559557649,
+    "finite_difference_hessian_at_minimum": 1.5231883046529227,
+    "analytic_hessian_at_minimum": 1.5231883119115297,
+    "selected_heavy_copy_parity": "even",
+    "selected_light_kernel_parity": "odd"
+  },
+  "old_six_edge_pattern": {
+    "invariant_under_twin_swaps": false,
+    "symmetric_differences": {
+      "{'L_L': 'Y_L', 'Y_L': 'L_L'}": [
+        [
+          "L_L",
+          "e_R"
+        ],
+        [
+          "Y_L",
+          "e_R"
+        ]
+      ],
+      "{'e_R': 'X_R', 'X_R': 'e_R'}": [
+        [
+          "L_L",
+          "X_R"
+        ],
+        [
+          "L_L",
+          "e_R"
+        ]
+      ]
+    },
+    "recovered_by_parity_selector": false
+  },
+  "architectural_status": {
+    "operator_derived_from_binary_maximal_incidence": true,
+    "operator_derived_from_existing_physical_DF": false,
+    "binary_unit_incidence_parent_previously_derived": false,
+    "continuous_copy_U2_lifted": true,
+    "old_new_vertex_label_selected": false,
+    "status": "conditional_positive_parity_selector",
+    "next_gate": "test whether maximal binary first-order incidence is an admissible universal parent on the full represented carrier without inserting unit edge maps by hand"
+  }
+}

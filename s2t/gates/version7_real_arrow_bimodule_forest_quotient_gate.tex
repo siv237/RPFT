@@ -1,0 +1,241 @@
+\chapter{Real-бимодуль пространства стрелок и относительный семейный quotient}
+\label{ch:v7-real-arrow-bimodule-forest-quotient-gate}
+
+\section{Два разных вопроса вложения}
+
+Предыдущий гейт получил единый Hodge-функционал на пространстве всех
+одиннадцати новых стрелок. Теперь необходимо различить два утверждения:
+существование одной Real-суперсвязности на модуле стрелок и её происхождение
+как обычной внутренней флуктуации конечного физического оператора Дирака.
+Первое утверждение оказывается положительным, второе --- отрицательным.
+
+Пусть
+\begin{equation}
+ \mathcal E_{\rm new}
+ =\bigoplus_{e\in E_{\rm new}}
+ \operatorname{Hom}(\mathcal H_{s(e)},\mathcal H_{t(e)}),
+ \qquad |E_{\rm new}|=11.
+ \label{eq:v7-real-arrow-edge-module}
+\end{equation}
+Проекторы $P_+$ и $P_-$ являются суммами тождественных операторов на
+полных калибровочно-ковариантных слагаемых. Поэтому они коммутируют с
+индуцированным действием конечной алгебры на модуле стрелок.
+
+\section{Одна Real-суперсвязность пространства стрелок}
+
+На двухступенном модуле
+\begin{equation}
+ \mathcal K_E=\mathcal E_{\rm new}^{0}\oplus
+ \mathcal E_{\rm new}^{1},
+ \qquad
+ \chi_E=\operatorname{diag}(-I,I)
+ \label{eq:v7-real-arrow-two-term-module}
+\end{equation}
+действие алгебры одинаково на обеих ступенях:
+\begin{equation}
+ \rho_E(a)=\operatorname{diag}(\rho_{\rm arr}(a),
+                                \rho_{\rm arr}(a)).
+ \label{eq:v7-real-arrow-algebra-action}
+\end{equation}
+Фоновый оператор предыдущего гейта удовлетворяет
+\begin{equation}
+ \delta_E=\begin{pmatrix}0&P_+\\P_-&0\end{pmatrix},
+ \qquad
+ \delta_E^2=0,
+ \qquad
+ [\delta_E,\rho_E(a)]=[d_Z,\rho_E(a)]=0.
+ \label{eq:v7-real-arrow-background-bimodule}
+\end{equation}
+Следовательно, он является нечётным бимодульным эндоморфизмом. Вместе с
+динамическим $d_Z$ он определяет один колчанный суперсвязностный объект
+\begin{equation}
+ \mathbb A_E=\nabla_E+d_Z+\mu\delta_E,
+ \qquad
+ \mathfrak m_E=[d_Z,d_Z^\dagger]
+ +\mu^2[\delta_E,\delta_E^\dagger].
+ \label{eq:v7-real-arrow-superconnection}
+\end{equation}
+Здесь два цвета являются двумя стрелками одного представления, поэтому их
+вклады складываются в одном отображении момента. Это стандартная структура
+пространства представлений колчана и нормы отображения момента
+\cite{v7-real-arrow-harada}. Нечётная эндоморфная часть согласуется с
+понятием суперсвязности Quillen \cite{v7-real-arrow-quillen}.
+
+Real-оператор меняет ориентацию стрелки и обменивает ступени. Для формального
+ориентационного удвоения выполняется
+\begin{equation}
+ J_E\chi_EJ_E^{-1}=-\chi_E,
+ \qquad
+ J_E\delta_EJ_E^{-1}=\delta_E^\dagger.
+ \label{eq:v7-real-arrow-real-structure}
+\end{equation}
+
+\section{Почему это не обычная внутренняя флуктуация}
+
+Бимодульная линейность обоих нечётных операторов, достаточная для
+вспомогательной суперсвязности,
+одновременно создаёт препятствие для стандартного спектрального чтения.
+Если использовать этот оператор как конечный $D_E$, то
+\begin{equation}
+ \Omega^1_{D_E}(\mathcal A_F)
+ =\operatorname{span}\{a[D_E,b]:a,b\in\mathcal A_F\}=0.
+ \label{eq:v7-real-arrow-inner-oneform-zero}
+\end{equation}
+Поэтому динамическое поле $Z$ не получается его обычной внутренней
+флуктуацией. Носитель остаётся Real-эквивариантным соответствием пространства
+стрелок, а не новым фермионным конечным спектральным тройным объектом.
+Классификация физических конечных троек требует оператор на фермионном
+бимодуле и нетривиальные допустимые одноформы \cite{v7-real-arrow-krajewski}.
+
+\section{Лес новых рёбер}
+
+Вакуумная опора нового Hodge-функционала равна
+\begin{equation}
+ E_*=\{L_LY_R,Q_LY_R,X_LX_R,X_Le_R,X_Lu_R,Y_LY_R\}.
+ \label{eq:v7-real-arrow-selected-edges}
+\end{equation}
+На девяти вершинах, включая изолированную относительно $E_*$ вершину $d_R$,
+матрица инцидентности $B_*$ имеет
+\begin{equation}
+ |V|=9,\qquad |E_*|=6,\qquad c_*=3,\qquad
+ \rank B_*=6,\qquad |E_*|-|V|+c_*=0.
+ \label{eq:v7-real-arrow-selected-forest}
+\end{equation}
+То есть одни новые ненулевые рёбра образуют лес. Если бы старый фон можно
+было вращать независимо вместе с ними, их шесть унитарных ориентаций не
+содержали бы циклической голономии.
+
+\section{Возврат замороженного фона \texorpdfstring{$H_{15}$}{H15}}
+
+Однако родитель является относительным к трём уже существующим рёбрам
+\begin{equation}
+ E_0=\{L_Le_R,Q_Ld_R,Q_Lu_R\}.
+ \label{eq:v7-real-arrow-baseline-edges}
+\end{equation}
+В текущем семейно-слепом подъёме их унитарные полярные ориентации равны
+$I_3$. Все последующие размерности quotient относятся именно к этому
+замороженному представителю; после вывода неравных семейных сингулярных
+чисел стабилизатор необходимо вычислить повторно.
+Полный ненулевой граф имеет девять рёбер, связан и содержит ровно один цикл:
+\begin{equation}
+ |E_0\cup E_*|=9,\qquad c_{\rm full}=1,\qquad
+ \rank B_{\rm full}=8,\qquad
+ b_1=9-9+1=1.
+ \label{eq:v7-real-arrow-full-cycle-rank}
+\end{equation}
+Именно этот цикл совпадает с ранее найденным $H_{15}$-укоренённым маршрутом;
+две вектороподобные массы являются древесными ветвями.
+
+Пусть $U_v\in U(3)$ меняет семейный кадр в вершине. На единичном вакууме
+линеаризованное действие равно
+\begin{equation}
+ \delta Z_e=\xi_{t(e)}-\xi_{s(e)},
+ \qquad \xi_v\in\mathfrak u(3).
+ \label{eq:v7-real-arrow-frame-action}
+\end{equation}
+Сохранение замороженных старых рёбер требует
+\begin{equation}
+ B_0^T\xi=0,\qquad
+ \dim_{\mathbb R}\ker(B_0^T\otimes I_{\mathfrak u(3)})
+ =(9-3)\cdot9=54.
+ \label{eq:v7-real-arrow-baseline-frame-kernel}
+\end{equation}
+Ограничение действия этих кадров на новые рёбра имеет ранг
+\begin{equation}
+ \rank_{\mathbb R}
+ \left.(B_*^T\otimes I_{\mathfrak u(3)})\right|_{\ker B_0^T}
+ =5\cdot9=45.
+ \label{eq:v7-real-arrow-relative-frame-rank}
+\end{equation}
+Поэтому из $54$ нулевых направлений семейного Hodge-гессиана снимаются
+только $45$:
+\begin{equation}
+ \dim_{\mathbb R}\mathcal M_{\rm orient}^{\rm rel}
+ =54-45=9=\dim_{\mathbb R}U(3).
+ \label{eq:v7-real-arrow-relative-moduli}
+\end{equation}
+
+Оставшийся объект можно представить голономией единственного цикла
+\begin{equation}
+ W_C=Z_{e_1}^{\epsilon_1}Z_{e_2}^{\epsilon_2}\cdots
+ Z_{e_6}^{\epsilon_6}\in U(3),
+ \qquad \epsilon_j\in\{1,-1\},
+ \label{eq:v7-real-arrow-cycle-holonomy}
+\end{equation}
+которая при вершинной смене кадров преобразуется сопряжением
+\begin{equation}
+ W_C\longmapsto U_{v_0}W_CU_{v_0}^{-1}.
+ \label{eq:v7-real-arrow-holonomy-conjugation}
+\end{equation}
+Текущий функционал не зависит от $W_C$ и потому не выбирает его спектр.
+Девятимерность в \eqref{eq:v7-real-arrow-relative-moduli} является
+линеаризованной размерностью в единичной точке, где сопряжение имеет
+неподвижную точку. Нелинейный кадровый quotient равен
+\begin{equation}
+ \mathcal M_C=U(3)/\operatorname{Ad}U(3),
+ \qquad \dim_{\mathbb R}\mathcal M_C^{\rm generic}=3,
+ \label{eq:v7-real-arrow-conjugacy-quotient}
+\end{equation}
+и описывается тремя собственными фазами. Даже эти три классовых инварианта
+ещё не являются выводом CKM или PMNS: их связь с наблюдаемыми не установлена.
+
+\begin{theorem}[Real-подъём и частичный семейный quotient]
+Два цвета Hodge-родителя образуют один нечётный Real-эквивариантный
+суперсвязностный объект на удвоенном модуле полного пространства стрелок.
+Его проекторы бимодульно линейны, нильпотентны в требуемой композиции и не
+добавляют физические фермионные вершины. После учёта замороженного $H_{15}$
+вершинные семейные кадры снимают $45$ из $54$ нулевых мод. Оставшиеся девять
+линейных направлений являются касательным конусом голономии единственного
+$H_{15}$-укоренённого цикла; её нелинейный quotient имеет три собственные
+фазы.
+\end{theorem}
+
+\begin{nogocriterion}[Два запрета преждевременного замыкания]
+Нельзя называть модуль стрелок стандартной конечной спектральной тройкой:
+его бимодульный нечётный оператор имеет нулевой модуль обычных внутренних
+одноформ. Нельзя также удалить все $54$ семейные нулевые моды полным
+$U(3)^9$-вращением, поскольку это одновременно вращает замороженный фон
+$H_{15}$; относительный quotient оставляет один $U(3)$-цикл.
+Нельзя переносить число $45$ на ещё не выведенные неравные семейные матрицы
+$H_{15}$ без нового вычисления их стабилизатора.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item один Real-модуль двух цветов стрелок: \textbf{получен};
+ \item бимодульный коммутатор $[\delta_E,\rho_E(a)]$: \textbf{$0$};
+ \item вспомогательное условие первого порядка: \textbf{тривиально выполнено};
+ \item обычные внутренние одноформы этого оператора: \textbf{$0$};
+ \item стандартная физическая внутренняя флуктуация: \textbf{не получена};
+ \item новых физических фермионов: \textbf{$0$};
+ \item цикл-ранг новых рёбер: \textbf{$0$};
+ \item цикл-ранг вместе с $H_{15}$: \textbf{$1$};
+ \item семейных нулевых мод до quotient: \textbf{$54$};
+ \item вертикальных кадровых мод: \textbf{$45$};
+ \item относительных линейных циклических мод в единице: \textbf{$9$};
+ \item нелинейных классовых параметров общего $U(3)$-цикла: \textbf{$3$};
+ \item вывод CKM/PMNS: \textbf{нет};
+ \item масштаб $\mu$: \textbf{не выведен};
+ \item итог: \textbf{положительное Real-соответствие, физическая внутренняя
+ флуктуация закрыта, один циклический модуль открыт}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_real_arrow_bimodule_forest_quotient_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-real-arrow-harada}
+M.~Harada, G.~Wilkin,
+\emph{Morse theory of the moment map for representations of quivers},
+Geometriae Dedicata 150 (2011), 307--353; arXiv:0807.4734.
+\bibitem{v7-real-arrow-quillen}
+D.~Quillen,
+\emph{Superconnections and the Chern character},
+Topology 24 (1985), 89--95.
+\bibitem{v7-real-arrow-krajewski}
+T.~Krajewski,
+\emph{Classification of Finite Spectral Triples},
+Journal of Geometry and Physics 28 (1998), 1--30;
+arXiv:hep-th/9701081.
+\end{thebibliography}

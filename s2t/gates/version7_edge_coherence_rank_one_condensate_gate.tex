@@ -1,0 +1,183 @@
+\chapter{Ранга-один конденсат когерентности стрелок}
+\label{ch:v7-edge-coherence-rank-one-condensate-gate}
+
+\section{Синтез проверенной формульной базы}
+
+Предыдущий гейт локализовал недостающий объект: две разрешённые стрелки
+должны не складываться независимо, а образовать ранга-один когерентную
+ковариацию. Проект уже проверил три близких механизма. Энтропия предпочитает
+полный ранг, плоская мера частичных изометрий --- ранг два, а норма внешнего
+квадрата обращается в нуль точно на ранге не выше одного. Поэтому новый тест
+не повторяет энтропийный или мерный селектор.
+
+Пусть три общих соседних канала собраны в поле
+\begin{equation}
+ B\in\operatorname{Hom}(\mathbb C_{\rm ch}^3,
+ \mathbb C_{\rm copy}^2)\simeq M_{2\times3}(\mathbb C),
+ \qquad C=BB^\dagger.
+ \label{eq:v7-edge-coherence-field}
+\end{equation}
+
+\section{Прямой минус перекрёстный путь}
+
+Определим антисимметризованную двухпутевую амплитуду
+\begin{equation}
+ W_{ia,jb}(B)=B_{ia}B_{jb}-B_{ib}B_{ja}.
+ \label{eq:v7-edge-coherence-wedge-tensor}
+\end{equation}
+Тождество Коши--Бине даёт
+\begin{equation}
+ \|W(B)\|_F^2
+ =4\|\Lambda^2B\|_F^2
+ =4\det(BB^\dagger).
+ \label{eq:v7-edge-coherence-wedge-identity}
+\end{equation}
+Коэффициент четыре возникает из полного суммирования прямого минус
+перекрёстного тензора, как в ранговом селекторе Тома IV и его проверке в
+Томе VI.
+
+\section{Минимальный потенциал уровня конфигураций}
+
+Число три уже задано количеством общих каналов. Рассмотрим
+\begin{equation}
+ \mathcal S_{\rm coh}(B)
+ =\left(\Tr BB^\dagger-3\right)^2+\|W(B)\|_F^2.
+ \label{eq:v7-edge-coherence-action}
+\end{equation}
+Оба слагаемых неотрицательны, поэтому
+\begin{equation}
+ \mathcal S_{\rm coh}(B)=0
+ \quad\Longleftrightarrow\quad
+ \Tr BB^\dagger=3,
+ \qquad \rank B=1.
+ \label{eq:v7-edge-coherence-zero-set}
+\end{equation}
+Все минимумы имеют сингулярную форму
+\begin{equation}
+ B_\star=\sqrt3\,u v^\dagger,
+ \qquad u\in\mathbb C^2,\qquad v\in\mathbb C^3,
+ \qquad \|u\|=\|v\|=1.
+ \label{eq:v7-edge-coherence-vacuum}
+\end{equation}
+После удаления общей фазы вакуумное многообразие имеет вещественную
+размерность
+\begin{equation}
+ \dim_{\mathbb R}\mathcal M_{\rm coh}
+ =\dim S^3+\dim S^5-\dim U(1)=7.
+ \label{eq:v7-edge-coherence-vacuum-dimension}
+\end{equation}
+
+\section{Эндогенный запуск и полный гессиан}
+
+В нуле действие равно девяти, а его квадратичная часть равна
+$-6\Tr BB^\dagger$. Поэтому полный вещественный гессиан на двенадцати
+компонентах имеет спектр
+\begin{equation}
+ \Spec\Hess_0\mathcal S_{\rm coh}
+ =\{-12\}^{\times12}.
+ \label{eq:v7-edge-coherence-origin-hessian}
+\end{equation}
+Нулевой сектор стационарен и неустойчив без внешнего толчка.
+
+В представителе
+$B_0=\begin{psmallmatrix}\sqrt3&0&0\\0&0&0\end{psmallmatrix}$
+машинный и аналитический расчёты дают
+\begin{equation}
+ \Spec\Hess_{B_0}\mathcal S_{\rm coh}
+ =\{0\}^{\times7}\cup\{24\}^{\times5}.
+ \label{eq:v7-edge-coherence-vacuum-hessian}
+\end{equation}
+Семь нулей точно касательны к $\mathcal M_{\rm coh}$; отрицательных
+поперечных мод нет.
+
+\section{Индуцированный проектор и модулярная высота}
+
+Редуцированное копийное состояние автоматически чисто:
+\begin{equation}
+ R_{\rm copy}(B_\star)
+ =\frac{B_\star B_\star^\dagger}{\Tr B_\star B_\star^\dagger}
+ =uu^\dagger,
+ \qquad R_{\rm copy}^2=R_{\rm copy}.
+ \label{eq:v7-edge-coherence-copy-projector}
+\end{equation}
+Следовательно, высота
+\begin{equation}
+ h_{\rm copy}=2R_{\rm copy}-I_2,
+ \qquad h_{\rm copy}^2=I_2
+ \label{eq:v7-edge-coherence-height}
+\end{equation}
+возникает после конденсации, а не вставляется как фиксированная
+$\sigma_x$. Модулярный расчёт предыдущего гейта переносится на любую
+спонтанно выбранную ось $u$.
+
+Правое редуцированное состояние также имеет ранг один:
+\begin{equation}
+ R_{\rm ch}(B_\star)
+ =\frac{B_\star^\dagger B_\star}{\Tr B_\star^\dagger B_\star}
+ =vv^\dagger.
+ \label{eq:v7-edge-coherence-channel-projector}
+\end{equation}
+Поэтому потенциал одновременно выбирает одну копийную линию и одну
+когерентную комбинацию трёх соседних каналов. Вторая ориентация пока не
+сопоставлена наблюдаемому меню рёбер.
+
+\section{Real-ветвь и граница результата}
+
+Для вещественного $B$ множество минимумов равно
+$(S^1\times S^2)/\mathbb Z_2$ и имеет размерность три. Real-условие уменьшает
+число плоских направлений, но не выбирает конкретные $u$ и $v$.
+
+Главный разрыв остаётся родительским. Радиальный квадрат может наследовать
+замкнутый мост и число общих каналов, а внешний квадрат имеет точный
+double-path прецедент. Но в текущей конечной геометрии ещё не построена одна
+суперсвязность, чья единственная норма кривизны одновременно содержит оба
+слагаемых~\eqref{eq:v7-edge-coherence-action} с указанной относительной
+нормировкой. Простое добавление нормы миноров было бы новым ручным сектором.
+
+\begin{theorem}[Условный конденсат стрелочной когерентности]
+Функционал~\eqref{eq:v7-edge-coherence-action} имеет неустойчивый нулевой
+сектор и точное многообразие поперечно устойчивых ненулевых минимумов ранга
+один. Каждый минимум порождает чистый копийный проектор и модулярную высоту
+без заранее выбранной оси. Это закрывает задачу на уровне потенциала, но не
+выводит потенциал из одного конечного родителя.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет ручной нормы миноров]
+Нельзя считать сумму радиального квадрата и $\|W\|^2$ единым физическим
+действием, пока прямой и перекрёстный пути, их относительный минус и общая
+следовая метрика не получены из одной Real-градуированной архитектуры.
+Нельзя также называть выбранные линии физическими поколениями или частицами
+до проверки полного носителя и калибровочных токов.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item поле когерентности $2\times3$: \textbf{построено};
+ \item точный внешний квадрат: \textbf{получен};
+ \item нулевой сектор: \textbf{стационарен и имеет 12 отрицательных мод};
+ \item ненулевой минимум: \textbf{ранг один, норма три};
+ \item полный поперечный гессиан: \textbf{пять положительных мод};
+ \item касательные нули: \textbf{семь, совпадают с размерностью орбиты};
+ \item чистый копийный проектор: \textbf{возникает};
+ \item фиксированная внешняя ось: \textbf{не вводится};
+ \item один кривизностный родитель обоих слагаемых: \textbf{не построен};
+ \item итог: \textbf{условно положительный потенциал};
+ \item следующий гейт: \textbf{внешнеквадратный родитель когерентности и
+ единая следовая нормировка}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_edge_coherence_rank_one_condensate_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7coherence-quiver}
+M.~Harada, G.~Wilkin,
+\emph{Morse theory of the moment map for representations of quivers},
+Geometriae Dedicata 150 (2011), 307--353; arXiv:0807.4734.
+\bibitem{v7coherence-krajewski}
+T.~Krajewski,
+\emph{Classification of finite spectral triples},
+Journal of Geometry and Physics 28 (1998), 1--30;
+arXiv:hep-th/9701081.
+\end{thebibliography}

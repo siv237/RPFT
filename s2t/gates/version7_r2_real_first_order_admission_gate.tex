@@ -1,0 +1,140 @@
+\chapter{Real/первопорядковый допуск минимального \texorpdfstring{$R_2$}{R2}-коннектора}
+\label{ch:v7-r2-real-first-order-admission-gate}
+
+\section{Почему графовой минимальности недостаточно}
+
+Предыдущая глава классифицировала дополнения абстрактного двудольного графа
+хиральностей и выделила единственный одно-мультиплетный кандидат
+$R_2\sim(\mathbf3,\mathbf2)_{7/6}$. Теперь требуется вернуть полные
+бимодульные метки алгебры Стандартной модели
+\begin{equation}
+ \mathcal A_{\rm SM}=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C).
+ \label{eq:v7-r2-standard-algebra}
+\end{equation}
+Граф по хиральности забывает, какая компонента алгебры действует слева и
+справа. Именно эти две координаты проверяет условие первого порядка.
+
+\section{Точный критерий ребра}
+
+Для неприводимого бимодуля $\mathcal H_{ij}$ и блока
+$D_{ij,kl}:\mathcal H_{ij}\to\mathcal H_{kl}$ двойной коммутатор содержит
+\begin{equation}
+ [[D,a],JbJ^{-1}]_{ij,kl}
+ =(a_i-a_k)D_{ij,kl}(b_j-b_l).
+ \label{eq:v7-r2-first-order-factor}
+\end{equation}
+Поэтому для всех $a,b$ ненулевое ребро допускается только при
+\begin{equation}
+ i=k\qquad\text{или}\qquad j=l.
+ \label{eq:v7-r2-same-row-column-criterion}
+\end{equation}
+Достаточно проверить центральные идемпотенты трёх слагаемых алгебры: если
+меняются обе координаты, можно независимо выбрать ненулевыми оба множителя
+в \eqref{eq:v7-r2-first-order-factor}.
+
+\section{Бимодульные координаты заряженного пакета}
+
+На уровне слагаемых алгебры стандартные вершины имеют координаты
+\begin{align}
+ Q_L&=(\mathbb H,M_3),& L_L&=(\mathbb H,\mathbb C),\nonumber\\
+ u_R&=(\mathbb C,M_3),& d_R&=(\mathbb C,M_3),&
+ e_R&=(\mathbb C,\mathbb C).
+ \label{eq:v7-r2-bimodule-coordinates}
+\end{align}
+Различие обычного и сопряжённого действия $\mathbb C$ не влияет на
+проверяемое препятствие по слагаемым.
+
+Три существующих юкавских ребра меняют ровно одну координату:
+\begin{align}
+ Q_L\to u_R&:(\mathbb H,M_3)\to(\mathbb C,M_3),\nonumber\\
+ Q_L\to d_R&:(\mathbb H,M_3)\to(\mathbb C,M_3),\nonumber\\
+ L_L\to e_R&:(\mathbb H,\mathbb C)\to(\mathbb C,\mathbb C).
+ \label{eq:v7-r2-existing-edge-pass}
+\end{align}
+Они проходят критерий \eqref{eq:v7-r2-same-row-column-criterion}.
+
+Все отсутствующие рёбра меняют обе координаты:
+\begin{align}
+ L_L\to u_R&:(\mathbb H,\mathbb C)\to(\mathbb C,M_3),\nonumber\\
+ L_L\to d_R&:(\mathbb H,\mathbb C)\to(\mathbb C,M_3),\nonumber\\
+ Q_L\to e_R&:(\mathbb H,M_3)\to(\mathbb C,\mathbb C).
+ \label{eq:v7-r2-missing-edge-fail}
+\end{align}
+Следовательно, не только выбранная $R_2$-пара, но и каждое минимальное
+прямоугольное дополнение предыдущей главы содержит запрещённые диагонали.
+
+\section{Почему Real-дополнение не исправляет дефект}
+
+Реальная структура переводит
+\begin{equation}
+ J:\mathcal H_{ij}\longmapsto\mathcal H_{ji}.
+ \label{eq:v7-r2-real-coordinate-swap}
+\end{equation}
+Если исходное ребро меняет $i\ne k$ и $j\ne l$, сопряжённое ребро меняет
+$j\ne l$ и $i\ne k$. Поэтому добавление $JD_{R_2}J^{-1}$ восстанавливает
+самосопряжённость и Real-парность, но не обнуляет двойной коммутатор.
+
+\section{Граница \texorpdfstring{$S^0$}{S0}-реальности и литературы}
+
+В стандартной конечной геометрии строгая $S^0$-реальность сохраняет
+разделение частиц и античастиц и исключает прямой кварк-лептонный сектор.
+После отказа от неё в ранней модели возникал иной канал
+$L_L\leftrightarrow u_R^c$, но не двухрёберный прямоугольник текущего
+$R_2$-кандидата; полученная модель также столкнулась с феноменологическими
+ограничениями \cite{v7r2-paschke}. Современные расширенные скалярные сектора
+возникают после явного изменения геометрической архитектуры, например
+Clifford-условий или обобщённых флуктуаций
+\cite{v7r2-kurkov,v7r2-generalized}.
+
+Это означает, что проверка спектрального действия и цветового вакуума для
+неизменённого родителя не начинается: требуемого допустимого блока $D_F$ в
+нём нет.
+
+\begin{theorem}[Первопорядковый запрет фиксированного $R_2$]
+В стандартной алгебре $\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)$ на
+фиксированных вершинах $H_{15}$ каждое отсутствующее кварк-лептонное ребро
+меняет одновременно левую и правую бимодульные координаты. Поэтому оба
+ребра графово минимального $R_2$-дополнения и их Real-сопряжения нарушают
+строгое условие первого порядка.
+\end{theorem}
+
+\begin{nogocriterion}[Строгий неизменённый родитель закрыт]
+Нельзя переходить к потенциалу $R_2$ или цветному вакууму, сохраняя
+одновременно стандартную алгебру и представление, фиксированные вершины,
+обычную Real-структуру и строгое условие первого порядка. Сначала необходимо
+явно изменить хотя бы один из этих пунктов.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item существующие юкавские рёбра проходят первый порядок: \textbf{да};
+ \item $L_L-u_R$ проходит: \textbf{нет};
+ \item $Q_L-e_R$ проходит: \textbf{нет};
+ \item Real-сопряжения устраняют дефект: \textbf{нет};
+ \item какое-либо отсутствующее ребро допустимо на фиксированных вершинах:
+ \textbf{нет};
+ \item строгий $R_2$-родитель допущен: \textbf{нет};
+ \item стадия спектрального действия и цветового вакуума достигнута:
+ \textbf{нет};
+ \item следующий гейт: \textbf{минимальное расширение алгебры,
+ представления или скрученного/обобщённого первого порядка}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_r2_real_first_order_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7r2-paschke}
+M.~Paschke, F.~Scheck, A.~Sitarz,
+\emph{Can (noncommutative) geometry accommodate leptoquarks?},
+Physical Review D 59 (1999), 035003; arXiv:hep-th/9709009.
+\bibitem{v7r2-kurkov}
+M.~A.~Kurkov, F.~Lizzi,
+\emph{Clifford Structures in Noncommutative Geometry and the Extended Scalar Sector},
+Physical Review D 97 (2018), 085024; arXiv:1801.00260.
+\bibitem{v7r2-generalized}
+A.~H.~Chamseddine, A.~Connes, W.~D.~van Suijlekom,
+\emph{Inner Fluctuations in Noncommutative Geometry without the First Order Condition},
+Journal of Geometry and Physics 73 (2013), 222--234; arXiv:1304.7583.
+\end{thebibliography}

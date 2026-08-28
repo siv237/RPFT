@@ -1,0 +1,208 @@
+\chapter{Спектральный родитель конденсата стрелочной когерентности}
+\label{ch:v7-edge-coherence-spectral-parent-gate}
+
+\section{Уточнение открытого разрыва}
+
+Предыдущий гейт использовал сумму радиального квадрата и сырой нормы
+антисимметризованного тензора. Такое действие имело правильные минимумы, но
+оставалось составным. Теперь проверяется более сильная конструкция:
+получаются ли оба ранговых инварианта из обычных следов одного нечётного
+оператора, без отдельного проектора на миноры.
+
+Пусть
+\begin{equation}
+ V=\mathbb C_{\rm copy}^2,\qquad
+ W=\mathbb C_{\rm ch}^3,\qquad
+ B\in\operatorname{Hom}(W,V).
+ \label{eq:v7-coherence-parent-spaces}
+\end{equation}
+Рассмотрим градуированную цепь
+\begin{equation}
+ \mathcal H_0=\mathbb C
+ \xrightarrow{\ A_B\ }
+ \mathcal H_1=V\otimes W^*
+ \xrightarrow{\ C_B\ }
+ \mathcal H_2=\Lambda^2V\otimes\Lambda^2W^*,
+ \qquad
+ \dim_{\mathbb C}\mathcal H=(1,6,3).
+ \label{eq:v7-coherence-parent-chain}
+\end{equation}
+Первое ребро и поляризованное второе ребро определены формулами
+\begin{equation}
+ A_B(1)=\operatorname{vec}B,
+ \qquad
+ C_B=\frac12d(\Lambda^2)_B.
+ \label{eq:v7-coherence-parent-edges}
+\end{equation}
+Множитель $1/2$ не является весом сектора: для квадратичной карты он
+фиксирован тождеством Эйлера
+\begin{equation}
+ C_BA_B=\Lambda^2B.
+ \label{eq:v7-coherence-parent-polarization}
+\end{equation}
+
+\section{Один нечётный оператор}
+
+На чётно-нечётно-чётной цепи положим
+\begin{equation}
+ \mathcal D_B=
+ \begin{pmatrix}
+ 0&A_B^\dagger&0\\
+ A_B&0&C_B^\dagger\\
+ 0&C_B&0
+ \end{pmatrix},
+ \qquad
+ \Gamma=\operatorname{diag}(1,-I_6,I_3).
+ \label{eq:v7-coherence-parent-dirac}
+\end{equation}
+Тогда $\mathcal D_B^\dagger=\mathcal D_B$ и
+$\{\Gamma,\mathcal D_B\}=0$. Обозначим
+\begin{equation}
+ T=\Tr(BB^\dagger),\qquad d=\det(BB^\dagger).
+ \label{eq:v7-coherence-parent-invariants}
+\end{equation}
+Прямой compound-matrix расчёт даёт
+\begin{equation}
+ \|A_B\|_F^2=T,\qquad
+ \|C_B\|_F^2=\frac12T,\qquad
+ \Tr(C_B^\dagger C_B)^2=\frac18(T^2-d).
+ \label{eq:v7-coherence-parent-edge-traces}
+\end{equation}
+Поэтому полные незавешенные следы одного оператора равны
+\begin{align}
+ \Tr\mathcal D_B^2&=3T,\\
+ \Tr\mathcal D_B^4&=\frac94T^2+\frac{15}{4}d.
+ \label{eq:v7-coherence-parent-spectral-traces}
+\end{align}
+Положительный детерминант возник из обычного полного следа. Относительная
+норма внешнего квадрата и сырой четырёхиндексный тензор больше не вводятся
+как отдельные части действия.
+
+\section{Единый спектральный полином}
+
+Для общего положительного массового масштаба $\mu$ определим
+\begin{equation}
+ \mathcal S_\mu(B)
+ =\frac49\left(
+ \Tr\mathcal D_B^4-\mu\Tr\mathcal D_B^2+\mu^2
+ \right).
+ \label{eq:v7-coherence-parent-action}
+\end{equation}
+Подстановка следов даёт точное разложение
+\begin{equation}
+ \boxed{
+ \mathcal S_\mu(B)
+ =\left(T-\frac{2\mu}{3}\right)^2+\frac53d.}
+ \label{eq:v7-coherence-parent-reduction}
+\end{equation}
+Таким образом, коэффициент $5/3$ между радиальным и ранговым каналами
+фиксирован геометрией цепи. Параметр $\mu$ задаёт только общий радиальный
+масштаб
+\begin{equation}
+ T_\star=\frac{2\mu}{3};
+ \label{eq:v7-coherence-parent-radius}
+\end{equation}
+нормированные проекторы и ранговая страта от него не зависят.
+
+При $\mu=9/2$ восстанавливается прежняя конвенция $T_\star=3$, но новый
+родитель не воспроизводит ручной коэффициент четыре. Он даёт другой,
+полностью спектральный потенциал
+\begin{equation}
+ \mathcal S_{9/2}(B)=(T-3)^2+\frac53\det(BB^\dagger).
+ \label{eq:v7-coherence-parent-normalized-action}
+\end{equation}
+Это различие не мешает точному выбору ранга: поскольку оба слагаемых
+неотрицательны,
+\begin{equation}
+ \mathcal S_{9/2}(B)=0
+ \quad\Longleftrightarrow\quad
+ T=3,\qquad\rank B=1.
+ \label{eq:v7-coherence-parent-zero-set}
+\end{equation}
+
+\section{Запуск и полный гессиан}
+
+В нуле квадратичная часть равна $-6T$, поэтому
+\begin{equation}
+ \Spec\Hess_0\mathcal S_{9/2}
+ =\{-12\}^{\times12}.
+ \label{eq:v7-coherence-parent-origin-hessian}
+\end{equation}
+Для представителя
+$B_0=\begin{psmallmatrix}\sqrt3&0&0\\0&0&0\end{psmallmatrix}$
+полный вещественный спектр равен
+\begin{equation}
+ \Spec\Hess_{B_0}\mathcal S_{9/2}
+ =\{0\}^{\times7}
+ \cup\{10\}^{\times4}
+ \cup\{24\}.
+ \label{eq:v7-coherence-parent-vacuum-hessian}
+\end{equation}
+Семь нулей снова совпадают с касательным пространством
+$(S^3\times S^5)/U(1)$. Четыре моды роста ранга и радиальная мода
+положительны. В Real-срезе сигнатуры равны соответственно
+$6_-$ в нуле и $3_0+3_+$ в минимуме.
+
+\section{Real-завершение и точная граница}
+
+Сопряжённая цепь с антилинейным обменом даёт стандартное Real-удвоение.
+Обычный физический полуслед удаляет удвоение и сохраняет следовые формулы
+\eqref{eq:v7-coherence-parent-spectral-traces}; нового веса не возникает.
+Действие ковариантно относительно естественного
+$U(V)\times U(W)$-действия, поскольку внешняя степень функториальна.
+
+\begin{theorem}[Спектральный родитель ранга-один когерентности]
+Трёхузловой нечётный оператор~\eqref{eq:v7-coherence-parent-dirac},
+линейный по одному полю $B$, имеет полный спектральный полином
+\eqref{eq:v7-coherence-parent-action}. Его относительный коэффициент
+$5/3$ фиксирован носителем, нулевой сектор стационарен и неустойчив, а
+ненулевые поперечно устойчивые минимумы имеют ранг один и порождают чистые
+копийный и канальный проекторы. Ручная норма миноров предыдущего гейта
+устранена.
+\end{theorem}
+
+Результат является строгим на уровне градуированного спектрального
+носителя, но ещё не является конечной спектральной тройкой физической
+алгебры. Не доказано, что узлы размерностей $1,6,3$, оба фундаментальных
+ребра и их Real-образы возникают в уже допущенном четырёхвершинном
+представлении с точным первым порядком и без лишних скаляров.
+
+\begin{nogocriterion}[Запрет преждевременного физического чтения]
+Нельзя объявлять цепь новым физическим сектором или завершённым родителем
+материи до явной бимодульной типизации всех трёх узлов, проверки первого
+порядка, аномалий и совместимости с сохранённым классом $15$. Общий
+масштаб $\mu$ также нельзя выдавать за выведенную абсолютную массу.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item один нечётный оператор, линейный по $B$: \textbf{построен};
+ \item поляризация второго ребра: \textbf{канонична};
+ \item полный след второго момента: \textbf{$3T$};
+ \item полный след четвёртого момента:
+ \textbf{$\frac94T^2+\frac{15}{4}d$};
+ \item отдельная норма миноров: \textbf{не используется};
+ \item относительный коэффициент детерминанта: \textbf{$5/3$};
+ \item нулевой сектор: \textbf{12 отрицательных мод};
+ \item минимум: \textbf{ранг один, семь касательных нулей};
+ \item поперечный гессиан: \textbf{$10$ четырежды и $24$ один раз};
+ \item Real-полуслед: \textbf{не меняет коэффициенты};
+ \item строгая конечная спектральная тройка: \textbf{не построена};
+ \item итог: \textbf{положительный градуированный спектральный родитель};
+ \item следующий гейт:
+ \textbf{бимодульный admission цепи $1\to6\to3$}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_edge_coherence_spectral_parent_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-parent-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle}, arXiv:hep-th/9606001.
+\bibitem{v7-parent-quiver-morse}
+M.~Harada, G.~Wilkin,
+\emph{Morse theory of the moment map for representations of quivers},
+Geometriae Dedicata 150 (2011), 307--353; arXiv:0807.4734.
+\end{thebibliography}

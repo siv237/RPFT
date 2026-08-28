@@ -575,6 +575,23 @@ K=\mathbb{RP}^3\times S^1
 \end{equation}
 ```
 
+## EQ-02-040
+
+- Кратность: **2**
+- Слои: `gates`
+- Вхождения:
+  - `s2t/gates/version7_rooted_cycle_isotypic_edge_projector_gate.tex:13`
+  - `s2t/gates/version7_real_arrow_bimodule_forest_quotient_gate.tex:13`
+
+```latex
+\begin{equation}
+ \mathcal E_{\rm new}
+ =\bigoplus_{e\in E_{\rm new}}
+ \operatorname{Hom}(\mathcal H_{s(e)},\mathcal H_{t(e)}),
+ \qquad |E_{\rm new}|=11.
+\end{equation}
+```
+
 ## Links
 
 - [[formula-equivalence-and-status-index]]

@@ -1,0 +1,46 @@
+{
+  "clifford_audit": {
+    "apparent_factor_half_is_antisymmetric_index_bookkeeping": true,
+    "euclidean_dimension": 4,
+    "maximum_clifford_relation_residual": 0.0,
+    "maximum_ordered_component_double_count_residual": 1.4210854715202004e-14,
+    "maximum_scalar_isometry_residual": 0.0,
+    "maximum_two_form_isometry_residual": 7.105427357601002e-15,
+    "normalized_clifford_trace_is_hodge_isometry": true,
+    "spinor_dimension": 4
+  },
+  "current_bidegree": {
+    "degree_distinguishes_sectors": false,
+    "edge_internal_status": "represented even quadratic Hodge moment",
+    "edge_spacetime_form_degree": 0,
+    "vertex_internal_status": "represented even quadratic Gram moment",
+    "vertex_spacetime_form_degree": 0
+  },
+  "derived_weight": {
+    "beta": 1.0,
+    "inside_required_window_0_to_8_over_15": false,
+    "origin_signature": [
+      21,
+      0,
+      6
+    ],
+    "vacuum_signature": [
+      0,
+      0,
+      27
+    ]
+  },
+  "forbidden_escape": {
+    "declare_vertex_block_spacetime_two_form_after_hessian": true,
+    "mix_ordered_component_norm_with_hodge_norm": true,
+    "reason": "changes represented calculus or component convention sector by sector"
+  },
+  "gate": "version7_clifford_form_degree_weight_origin_gate",
+  "verdict": {
+    "clifford_trace_derives_beta_half": false,
+    "current_route_closed": true,
+    "form_degree_derives_beta_half": false,
+    "next_gate": "version7_common_irreducible_trace_multiplicity_gate",
+    "status": "form_degree_clifford_origin_no_go_common_carrier_multiplicity_open"
+  }
+}

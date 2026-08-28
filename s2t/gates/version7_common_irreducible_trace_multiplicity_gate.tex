@@ -1,0 +1,132 @@
+\chapter{Кратности общего неприводимого следового носителя}
+\label{ch:v7-common-irreducible-trace-multiplicity-gate}
+
+\section{Развилка одного следа}
+
+Текущие кривизны естественно живут на двух носителях размерностей
+\begin{equation}
+ \dim\mathcal K_E=22,
+ \qquad
+ \dim\mathcal K_V=11+10=21.
+ \label{eq:v7-common-trace-carrier-dimensions}
+\end{equation}
+Если сохранять их блочно-диагонально, алгебра равна
+\begin{equation}
+ M_{22}(\mathbb C)\oplus M_{21}(\mathbb C),
+ \qquad
+ \tau=w\tau_{22}+(1-w)\tau_{21}.
+ \label{eq:v7-common-trace-central-fork}
+\end{equation}
+После общей нормировки остаётся свободный вес $w$. Переход к простому
+$M_{43}(\mathbb C)$ удаляет центр, но одновременно вводит полный
+внедиагональный угол
+\begin{equation}
+ \operatorname{Hom}(\mathbb C^{21},\mathbb C^{22}),
+ \qquad \dim_{\mathbb C}=462,
+ \label{eq:v7-common-trace-offdiagonal-cost}
+\end{equation}
+то есть новый класс коннекторов и новое действие.
+
+Для одной простой матричной алгебры нормированный след единственен. Однако
+равномерная кратность представления не создаёт коэффициент:
+\begin{equation}
+ \frac1{nk}\Tr_{nk}(X\otimes I_k)=\frac1n\Tr_nX.
+ \label{eq:v7-common-trace-multiplicity-cancellation}
+\end{equation}
+В текущей конструкции оба блока представлены по одному разу, поэтому общий
+полный след снова даёт $\beta=1$.
+
+\section{Почему резонанс \texorpdfstring{$22\to21$}{22 -> 21} ещё не является оператором}
+
+Можно было бы попытаться считать два блока квадратами одного прямоугольного
+оператора. Но для любого $B$ выполняется
+\begin{equation}
+ \rank(B^*B)=\rank(BB^*).
+ \label{eq:v7-common-trace-rank-pairing}
+\end{equation}
+Текущий рёберный опорный квадрат имеет ранг $22$, тогда как два физических
+Gram-конца единичного корневого фона имеют общий ранг $20$. После дополнения
+нулём евклидова невязка их спектров равна
+\begin{equation}
+ \|\lambda_E-\lambda_V\|_2=4.
+ \label{eq:v7-common-trace-spectral-mismatch}
+\end{equation}
+Следовательно, размеры $22$ и $21$ образуют полезную индексную подсказку, но
+текущие кривизны не являются двумя концами одного Hodge--Dirac квадрата.
+
+\section{Привлекательное отношение \texorpdfstring{$11/21$}{11/21}}
+
+Нормированный след физического source-проектора равен
+\begin{equation}
+ \tau_{21}(P_{11})=\frac{11}{21}<\frac8{15}.
+ \label{eq:v7-common-trace-source-fraction}
+\end{equation}
+Если просто умножить всю физическую норму на это число, гессиан действительно
+проходит:
+\begin{equation}
+ \beta=\frac{11}{21}:qquad
+ (n_-,n_0,n_+)=(7,0,20),
+ \qquad \lambda_{\rm heavy}^{\min}=\frac4{35}.
+ \label{eq:v7-common-trace-source-fraction-pass}
+\end{equation}
+Это наиболее близкая числовая зацепка текущей базы.
+
+Но настоящий оператор $P_{11}$ внутри следа не умножает всю двустороннюю
+Gram-кривизну. Он оставляет только source-конец. Аналогично $P_{10}$ оставляет
+только target-конец. Явный аудит даёт
+\begin{equation}
+ (n_-,n_0,n_+)_{P_{11}}=(8,0,19),
+ \qquad
+ (n_-,n_0,n_+)_{P_{10}}=(17,0,10).
+ \label{eq:v7-common-trace-corner-insertion-signatures}
+\end{equation}
+Оба честных проекторных следа проваливаются. Операция
+$\tau_{21}(P_{11})\mathcal S_V$ является произведением уже вычисленных
+скаляров, а не одним следом кривизны.
+
+\begin{theorem}[No-go простого следа и условный размерностный резонанс]
+Ни общий полный след одной копии, ни нормированные corner-следы, ни текущая
+кратность представлений не выводят коэффициент в окне
+$0\le\beta<8/15$. Число $11/21$ даёт правильный гессиан только как
+постфактумный множитель всего физического сектора. Его честная вставка как
+source-проектора выбирает один Gram-конец и не проходит.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет умножения на след проектора]
+Нельзя заменять $\Tr(P\mathfrak m_V^2)$ произведением
+$\tau(P)\Tr(\mathfrak m_V^2)$. Эти выражения совпадают лишь при специальной
+изотропии кривизны, которой нет на полном пространстве вариаций. Для спасения
+$11/21$ требуется заранее заданный передаточный оператор или условное
+ожидание, действующее на саму кривизну.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item блочно-диагональный центр: \textbf{два};
+ \item свободных нормированных весов: \textbf{один};
+ \item простой completion: \textbf{$M_{43}(\mathbb C)$};
+ \item новых комплексных коннекторов: \textbf{$462$};
+ \item равномерная кратность меняет нормированный след: \textbf{нет};
+ \item общий однокопийный вес: \textbf{$\beta=1$};
+ \item ранги предполагаемой Hodge-пары: \textbf{$22$ и $20$};
+ \item числовой кандидат $11/21$: \textbf{проходит условно};
+ \item честный source-corner: \textbf{$(8,0,19)$, провал};
+ \item честный target-corner: \textbf{$(17,0,10)$, провал};
+ \item итог: \textbf{простой след и текущие кратности закрыты};
+ \item следующий гейт: \textbf{инцидентное условное ожидание или марковский вес}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_common_irreducible_trace_multiplicity_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-common-trace-krajewski}
+T.~Krajewski,
+\emph{Classification of Finite Spectral Triples},
+J. Geom. Phys. 28 (1998), 1--30; arXiv:hep-th/9701081.
+\bibitem{v7-common-trace-af-lift}
+T.~Masson, G.~Nieuviarts,
+\emph{Lifting Bratteli Diagrams between Krajewski Diagrams: Spectral
+Triples, Spectral Actions, and AF Algebras}, arXiv:2207.04466.
+\end{thebibliography}

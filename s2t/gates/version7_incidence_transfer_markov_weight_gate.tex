@@ -1,0 +1,179 @@
+\chapter{Инцидентный перенос, марковский вес и индексный quotient}
+\label{ch:v7-incidence-transfer-markov-weight-gate}
+
+\section{Что означала лишняя отрицательная мода}
+
+Предыдущий гейт обнаружил, что честный source-corner даёт сигнатуру
+$(8,0,19)$ вместо требуемой $(7,0,20)$. Это не следует читать как почти
+правильный восьмой корень. Явная диагонализация показывает, что дополнительная
+отрицательная мода лежит на нежелательном ребре $L_LX_R$:
+\begin{equation}
+ \lambda_{\rm extra}=-\frac25,
+ \qquad
+ v_{\rm extra}=\operatorname{Im}(L_LX_R)_{w=1}.
+ \label{eq:v7-transfer-extra-source-mode}
+\end{equation}
+Причина структурна. Кривизна $A^*A$ помнит общий источник стрелок, но
+суммирует по их целям. Поэтому source-only чтение теряет часть данных о том,
+в какой правый блок приходит стрелка, и запускает запрещённого конкурента.
+
+Это совпадает с уроком Тома V: диагональные условные ожидания читают
+состояния, тогда как взаимодействие хранится во внедиагональном углу
+связывающей алгебры. Следовательно, исправлять $(8,0,19)$ новым скалярным
+весом нельзя; нужно проверить двусторонний перенос.
+
+\section{Полярная часть существующей инцидентности}
+
+Однопоколенческий фоновый оператор имеет тип
+\begin{equation}
+ A_0:\mathbb C^{11}\longrightarrow\mathbb C^{10},
+ \qquad \rank A_0=10.
+ \label{eq:v7-transfer-reference-rank}
+\end{equation}
+Его полярная часть определяется без нового коэффициента:
+\begin{equation}
+ U=A_0(A_0^*A_0)^{-1/2}_{\operatorname{supp}},
+ \qquad
+ UU^*=I_{10},
+ \qquad
+ P=U^*U,
+ \qquad Q=I_{11}-P.
+ \label{eq:v7-transfer-polar-coisometry}
+\end{equation}
+Здесь
+\begin{equation}
+ \rank P=10,
+ \qquad \rank Q=1,
+ \qquad
+ 21=10_{\rm source\ support}+10_{\rm target}+1_{\rm defect}.
+ \label{eq:v7-transfer-index-decomposition}
+\end{equation}
+Именно это разложение, а не число $11/21$ само по себе, является операторным
+содержанием размерностной зацепки.
+
+Для переменного прямоугольного поля $A$ введём две относительные
+Gram-кривизны
+\begin{equation}
+ C_s(A)=A^*A-A_0^*A_0,
+ \qquad
+ C_t(A)=AA^*-A_0A_0^*.
+ \label{eq:v7-transfer-two-gram-curvatures}
+\end{equation}
+
+\section{Однократное quotient-чтение}
+
+Полярная коизометрия задаёт унитальную вполне положительную карту
+\begin{equation}
+ T_U(X,Y)=\frac12\left(UXU^*+Y\right):
+ M_{11}(\mathbb C)\oplus M_{10}(\mathbb C)\longrightarrow M_{10}(\mathbb C).
+ \label{eq:v7-transfer-ucp-channel}
+\end{equation}
+Она является средним двух вполне положительных отображений и удовлетворяет
+$T_U(I_{11},I_{10})=I_{10}$.
+
+Рассмотрим однократно прочитанную кривизностную норму
+\begin{equation}
+ \mathcal S_{\rm quot}(A)
+ =\frac12\left\|T_U(C_s(A),C_t(A))\right\|_{\rm HS}^2.
+ \label{eq:v7-transfer-quotient-action}
+\end{equation}
+В нуле её гессиан удовлетворяет точному тождеству
+\begin{equation}
+ \Hess_0\mathcal S_{\rm quot}
+ =\frac12\Hess_0\mathcal S_V.
+ \label{eq:v7-transfer-half-hessian-identity}
+\end{equation}
+Таким образом, ранее условный коэффициент $\beta=1/2$ возникает локально не
+из умножения на число, а из усреднения двух полярно отождествлённых Gram-
+концов и однократного чтения их общего образа.
+
+После сложения с уже выведенной рёберной Hodge-нормой аудит даёт
+\begin{align}
+ \operatorname{sig}\Hess_0\mathcal S_{\rm tot}^{\rm quot}
+  &=(7,0,20),
+ &\lambda_{\rm heavy}^{\min}&=\frac25,
+ \label{eq:v7-transfer-quotient-origin-pass}\\
+ \operatorname{sig}\Hess_{A_0}\mathcal S_{\rm tot}^{\rm quot}
+  &=(0,0,27),
+ &\lambda_{\rm vac}^{\min}&=4.5827630148\ldots.
+ \label{eq:v7-transfer-quotient-vacuum-pass}
+\end{align}
+Это первый операторный локальный проход без вставленного секторного числа.
+
+\section{Почему полное условное ожидание снова проваливается}
+
+Карта~\eqref{eq:v7-transfer-ucp-channel} сама по себе не является
+сохраняющим полный след условным ожиданием на исходной алгебре. Настоящее
+ожидание на подалгебру отождествлённых углов имеет вид
+\begin{equation}
+ E_U(X\oplus Y)
+ =\left(U^*ZU+\Tr(QXQ)Q\right)\oplus Z,
+ \qquad
+ Z=T_U(X,Y).
+ \label{eq:v7-transfer-trace-preserving-expectation}
+\end{equation}
+Оно унитально, вполне положительно, идемпотентно и сохраняет полный след на
+$M_{11}\oplus M_{10}$. Но общий десятимерный образ $Z$ появляется в нём в
+обоих согласованных углах. Ранга-один дефект не даёт квадратичного вклада в
+нуле, поэтому
+\begin{equation}
+ \Hess_0\frac12\|E_U(C_s\oplus C_t)\|_{\rm HS}^2
+ =2\Hess_0\mathcal S_{\rm quot}.
+ \label{eq:v7-transfer-expectation-double-count}
+\end{equation}
+Полный сохраняющий след вариант возвращает эффективный вес $\beta=1$ и
+сигнатуру
+\begin{equation}
+ (n_-,n_0,n_+)_{E_U}=(21,0,6).
+ \label{eq:v7-transfer-expectation-no-go}
+\end{equation}
+
+\begin{theorem}[Локальный проход полярного quotient и no-go полного ожидания]
+Полярная часть уже существующего фонового оператора канонически разбивает
+физический носитель как $10+10+1$. Однократное унитальное вполне
+положительное чтение двух согласованных десятимерных углов выводит локальный
+вес $1/2$, правильную сигнатуру нуля и положительный гессиан целевого
+вакуума. Полное сохраняющее след условное ожидание считает общий угол в двух
+диагональных копиях, возвращает вес $1$ и проваливает селекцию.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет преждевременного объявления общего действия]
+Нельзя отождествлять однократный quotient-readout с полным родительским
+следом, пока не доказано, что физический фактор форм, Real-условие или
+BRST--BV-редукция действительно оставляют одну согласованную копию
+$M_{10}$ и отдельно сохраняют ранга-один индексный дефект. Без такой
+теоремы карта $T_U$ является положительным локальным кандидатом, а не
+завершённым действием.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item ранг фоновой инцидентности: \textbf{$10$ в типе $10\times11$};
+ \item полярная коизометрия и проекторы $P,Q$: \textbf{выведены};
+ \item истинное разложение размерности: \textbf{$10+10+1$};
+ \item лишняя source-мода: \textbf{нежелательное ребро $L_LX_R$};
+ \item однократная UCP-карта: \textbf{канонична относительно $A_0$};
+ \item тождество гессианов: \textbf{$H_{\rm quot}=H_V/2$ в нуле};
+ \item сигнатура нуля quotient-действия: \textbf{$(7,0,20)$};
+ \item устойчивость целевого вакуума: \textbf{получена локально};
+ \item полный сохраняющий след expectation: \textbf{$(21,0,6)$, провал};
+ \item физическое происхождение редуцированного quotient: \textbf{открыто};
+ \item следующий гейт: \textbf{индексно-дефектный редуцированный
+ связывающий след}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_incidence_transfer_markov_weight_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-transfer-kodaka-teruya}
+K.~Kodaka, T.~Teruya,
+\emph{The Strong Morita Equivalence for Inclusions of $C^*$-Algebras and
+Conditional Expectations for Equivalence Bimodules},
+arXiv:1609.08263.
+\bibitem{v7-transfer-knill}
+O.~Knill,
+\emph{The McKean--Singer Formula in Graph Theory},
+arXiv:1301.1408.
+\end{thebibliography}

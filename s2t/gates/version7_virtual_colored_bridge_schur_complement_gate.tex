@@ -1,0 +1,166 @@
+\chapter{Виртуальный цветной мост и граница дополнения Шура}
+\label{ch:v7-virtual-colored-bridge-schur-complement-gate}
+
+\section{Какая переменная действительно интегрируется}
+
+Предыдущий гейт оставил возможность виртуального участия двух цветных
+рёбер при нулевых одноточечных средних. Однако формула дополнения Шура
+имеет два разных физических чтения. В гейтах messenger-цепей Тома IV
+исключался тяжёлый подблок линейного фермионного оператора. Здесь цветные
+рёбра сами являются бозонными полями. Поэтому классическое исключение и
+детерминант их флуктуаций должны проверяться раздельно.
+
+Обозначим
+\begin{equation}
+ a=z_{u_RX_L}\in\overline{\mathbf3},\qquad
+ b=z_{Y_RQ_L}\in\mathbf3,
+ \qquad
+ p=z_{X_Le_R},\qquad q=z_{L_LY_R}.
+ \label{eq:v7-virtual-bridge-fields}
+\end{equation}
+После фиксации двух старых корней укоренённый цикл пропорционален
+$pq\,a\cdot b+\mathrm{c.c.}$ Минимальная тяжёлая квадратичная форма на
+каждой цветовой компоненте задаётся эрмитовым блоком
+\begin{equation}
+ K(pq)=
+ \begin{pmatrix}
+  M_a^2&-\kappa\overline{pq}\\
+  -\kappa pq&M_b^2
+ \end{pmatrix},
+ \qquad
+ \Delta(pq)=\det K=M_a^2M_b^2-\kappa^2|pq|^2.
+ \label{eq:v7-virtual-bridge-heavy-block}
+\end{equation}
+Цветосохраняющая тяжёлая область требует
+\begin{equation}
+ \Delta(pq)>0.
+ \label{eq:v7-virtual-bridge-positive-domain}
+\end{equation}
+
+\section{Классическое исключение ничего не индуцирует}
+
+В текущем цикле отсутствует член, линейный по $a$ или $b$. Поэтому внутри
+области \eqref{eq:v7-virtual-bridge-positive-domain} тяжёлые стационарные
+уравнения имеют единственное решение
+\begin{equation}
+ a=b=0.
+ \label{eq:v7-virtual-bridge-tree-solution}
+\end{equation}
+Подстановка этого решения возвращает исходный лёгкий потенциал без
+циклической поправки. Обычная формула
+$D_{\rm eff}=D_{ll}-D_{lh}D_{hh}^{-1}D_{hl}$ здесь неприменима без
+дополнительного линейного источника: она относится к исключению состояний
+линейного оператора, а не к автоматическому исключению его полевых
+коэффициентов.
+
+\section{Конечномерный детерминант}
+
+Для трёх комплексных цветовых копий гауссов интеграл даёт
+\begin{equation}
+ \Gamma_{0}(p,q)
+ =3\log\Delta(pq)+\mathrm{const}.
+ \label{eq:v7-virtual-bridge-zero-mode-logdet}
+\end{equation}
+Разложение при малом $|pq|$ равно
+\begin{equation}
+ \Gamma_{0}(p,q)
+ =3\log(M_a^2M_b^2)
+ -\frac{3\kappa^2}{M_a^2M_b^2}|pq|^2
+ +O(|pq|^4).
+ \label{eq:v7-virtual-bridge-quartic-expansion}
+\end{equation}
+Первый индуцированный оператор является gauge-инвариантным и имеет
+четвёртую степень по лёгким полям. Следовательно,
+\begin{equation}
+ \Hess_{p=q=0}\Gamma_0=0.
+ \label{eq:v7-virtual-bridge-zero-light-hessian}
+\end{equation}
+Виртуальная цветная пара создаёт нелинейное притяжение между $p$ и $q$,
+но не запускает их из полного нуля.
+
+Собственные значения $K$ равны
+\begin{equation}
+ \lambda_{\pm}
+ =\frac12\left[M_a^2+M_b^2
+ \pm\sqrt{(M_a^2-M_b^2)^2+4\kappa^2|pq|^2}\right]
+ \label{eq:v7-virtual-bridge-heavy-eigenvalues}
+\end{equation}
+с цветовой кратностью три. При $\Delta\to0$ значение $\lambda_-$ стремится
+к нулю: интегрируемая мода перестаёт быть тяжёлой именно на границе
+сильного конечномерного эффекта. Это повторяет предупреждение детерминантного
+гейта моста Тома VI, хотя полный четырёхмерный предел требует отдельного
+анализа.
+
+\section{Четырёхмерный след логарифма}
+
+После добавления канонической кинетики первый член разложения имеет вид
+\begin{equation}
+ \Gamma_{4}^{(1)}
+ =-3\kappa^2|pq|^2
+ \int\frac{d^4k}{(2\pi)^4}
+ \frac{1}{(k^2+M_a^2)(k^2+M_b^2)}.
+ \label{eq:v7-virtual-bridge-four-dimensional-term}
+\end{equation}
+Радиальный ультрафиолетовый хвост пропорционален $dk/k$. Поэтому это
+логарифмически перенормируемая квартичная вершина, а не конечный
+коэффициент, однозначно заданный конечным графом. Необходимо фиксировать
+контрчлен, масштаб согласования и полный gauge/BV-набор. Такое разделение
+tree-level и one-loop вкладов стандартно при интегрировании тяжёлых полей
+методом фонового поля
+\cite{v7-virtual-bridge-hlm,v7-virtual-bridge-dittmaier}.
+
+\begin{theorem}[Нелинейный проход без самостоятельного запуска]
+В положительной тяжёлой области виртуальная цветная пара имеет нулевые
+классические средние и сохраняет $SU(3)_c$. Её классическое исключение не
+создаёт лёгкого оператора. Конечномерный детерминант индуцирует отрицательный
+gauge-инвариантный член $|pq|^2$, но его лёгкий гессиан в полном нуле равен
+нулю. В четырёх измерениях коэффициент этого члена требует
+перенормировочного согласования. Следовательно, виртуальный мост допустим
+как нелинейная связь, но не как самостоятельный coefficient-free родитель
+цветосохраняющего запуска.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет подмены двух дополнений Шура]
+Нельзя переносить messenger-формулу исключения тяжёлых фермионных состояний
+на бозонные коэффициенты рёбер без явного линейного источника. Нельзя также
+считать коэффициент $-3\kappa^2/(M_a^2M_b^2)$ физически предсказанным до
+вывода $M_a,M_b,\kappa$, кинетической меры и четырёхмерного правила
+перенормировки из одного действия.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item тяжёлых цветных полей: \textbf{два, $\overline3+3$};
+ \item цветовая кратность блока: \textbf{$3$};
+ \item область сохранения тяжёлой щели: \textbf{$\Delta>0$};
+ \item классическое решение в этой области: \textbf{$a=b=0$};
+ \item tree-level поправка лёгкого потенциала: \textbf{$0$};
+ \item первый конечномерный determinant-оператор:
+ \textbf{$-3\kappa^2|pq|^2/(M_a^2M_b^2)$};
+ \item его степень по лёгким полям: \textbf{$4$};
+ \item лёгкий гессиан в полном нуле: \textbf{$0$};
+ \item самостоятельный цветосохраняющий запуск: \textbf{нет};
+ \item нелинейная singlet-связь: \textbf{да};
+ \item закрытие тяжёлой щели при $\Delta=0$: \textbf{да};
+ \item четырёхмерный коэффициент конечен без контрчлена: \textbf{нет};
+ \item единая нормировка $M_a,M_b,\kappa$: \textbf{не выведена};
+ \item итог: \textbf{частичный структурный проход, родительский no-go};
+ \item следующий гейт: \textbf{происхождение цветосохраняющего
+ квадратичного селектора}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_virtual_colored_bridge_schur_complement_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-virtual-bridge-hlm}
+B.~Henning, X.~Lu, H.~Murayama,
+\emph{One-loop Matching and Running with Covariant Derivative Expansion},
+Journal of High Energy Physics 01 (2018), 123; arXiv:1604.01019.
+\bibitem{v7-virtual-bridge-dittmaier}
+S.~Dittmaier, S.~Schuhmacher, M.~Stahlhofen,
+\emph{Integrating out heavy fields in the path integral using the
+background-field method}, European Physical Journal C 81 (2021), 826;
+arXiv:2102.12020.
+\end{thebibliography}

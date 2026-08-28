@@ -1,0 +1,174 @@
+\chapter{Полный product-a6 коэффициент циклической ветви}
+\label{ch:v7-full-product-a6-cycle-coefficient-gate}
+
+\section{Явные слабые интертвинеры}
+
+Редуцированный граф дал ненулевой формальный коэффициент простого
+шестикромочного цикла. Теперь раскроем слабые индексы. В единичной
+калибровке общего Хиггса положим
+\begin{equation}
+ H=\begin{pmatrix}0\\1\end{pmatrix},\qquad
+ \widetilde H=i\sigma_2\overline H
+ =\begin{pmatrix}1\\0\end{pmatrix}.
+ \label{eq:v7-full-a6-higgs-frame}
+\end{equation}
+Тогда старое up-ребро $Q_L\to u_R$ использует слабую ковекторную часть
+$\widetilde H^\dagger$, а $L_L\to e_R$ --- $H^\dagger$. Два singlet-ребра
+$L_L\leftrightarrow Y_R$ и цветное $Y_R\leftrightarrow Q_L$ сохраняют
+слабый индекс тождественно. Поэтому слабый множитель исходного цикла равен
+\begin{equation}
+ \boxed{\widetilde H^\dagger H=0.}
+ \label{eq:v7-full-a6-up-overlap-zero}
+\end{equation}
+Это то же ортогональное тождество, которое ранее запретило прямые
+межрёберные слова второй степени. В полном произведении оно действует и
+внутри шестишаговой композиции.
+
+\section{Исходный цикл исчезает}
+
+Пусть $x$ обозначает одну цветовую компоненту ребра $X_Lu_R$, а $y$ ---
+согласованную компоненту $Q_LY_R$; четыре фоновых ребра имеют единичную
+норму. Явная самосопряжённая блочная матрица даёт точный ограниченный след
+\begin{equation}
+ \Tr\Phi_u^6
+ =50+24x^2+42y^2+12x^4+24y^4
+ +6x^2y^2+2x^6+4y^6.
+ \label{eq:v7-full-a6-up-polynomial}
+\end{equation}
+В нём отсутствует билинейный член:
+\begin{equation}
+ [xy]\Tr\Phi_u^6=0.
+ \label{eq:v7-full-a6-up-mixed-zero}
+\end{equation}
+Следовательно, коэффициент $\kappa$ тяжёлого блока, использованный в
+предыдущем determinant-контроле для пары $(X_Lu_R,Q_LY_R)$, равен нулю в
+полном слабом product-следе. Формальная gauge-инвариантность замкнутого
+слова не гарантирует его ненулевость.
+
+\section{Исчерпывающая локальная конкуренция циклов}
+
+Полный строгий граф содержит четырнадцать простых неориентированных
+шестикромочных циклов. На фоне трёх старых рёбер и четырёх gauge-singlet
+амплитуд ровно три из них содержат ровно два нулевых поля и потому входят в
+тяжёлый гессиан:
+\begin{equation}
+\begin{array}{c|c|c}
+\text{ветвь}&\text{два нулевых ребра}&\text{слабый множитель}\\ \hline
+u&(Q_LY_R,X_Lu_R)&\widetilde H^\dagger H=0\\
+d&(Q_LY_R,X_Ld_R)&H^\dagger H=1\\
+W&(L_LX_R,Y_Le_R)&\langle\ell,y\rangle
+\end{array}
+ \label{eq:v7-full-a6-three-quadratic-cycles}
+\end{equation}
+Таким образом, полный оператор не просто уничтожает исходный цикл: он
+переносит цветную ветвь с $u_R$ на $d_R$ и одновременно открывает
+конкурирующую бесцветную пару слабых дублетов.
+
+Для down-ветви явный след равен
+\begin{equation}
+ \Tr\Phi_d^6
+ =50+24x^2+42y^2+12xy+12x^4+24y^4
+ +6x^2y^2+2x^6+4y^6,
+ \label{eq:v7-full-a6-down-polynomial}
+\end{equation}
+поэтому
+\begin{equation}
+ [xy]\Tr\Phi_d^6=12.
+ \label{eq:v7-full-a6-down-mixed}
+\end{equation}
+Для параллельных компонент слабой пары получаем
+\begin{equation}
+ \Tr\Phi_W^6
+ =48+30(x^2+y^2)+12xy+12(x^4+y^4)+2(x^6+y^6),
+ \label{eq:v7-full-a6-weak-polynomial}
+\end{equation}
+тогда как для ортогональных компонент билинейный член исчезает. Это
+подтверждает, что $12xy$ является интертвинерным скалярным произведением,
+а не артефактом простой смежности.
+
+\section{Gaussian-знак и гессиан шестого следа}
+
+На постоянном плоском фоне чистый Gaussian даёт потенциальный множитель
+\begin{equation}
+ -\frac16\Tr\Phi^6.
+ \label{eq:v7-full-a6-gaussian-factor}
+\end{equation}
+Следовательно, билинейные вклады трёх ветвей равны соответственно
+\begin{equation}
+ 0,\qquad -2xy,\qquad -2xy.
+ \label{eq:v7-full-a6-gaussian-mixed-terms}
+\end{equation}
+При сохранении ориентации это знак центрального минимума $W_C=I$, а не
+$-I$. Однако он относится уже к down-циклу.
+
+Полные ограниченные гессианы $\Tr\Phi^6$ в начале тяжёлых пар равны
+\begin{align}
+ H_u&=\begin{pmatrix}48&0\\0&84\end{pmatrix},\nonumber\\
+ H_d&=\begin{pmatrix}48&12\\12&84\end{pmatrix},\qquad
+ \Spec H_d=\{66-6\sqrt{13},66+6\sqrt{13}\},\nonumber\\
+ H_W&=\begin{pmatrix}60&12\\12&60\end{pmatrix},\qquad
+ \Spec H_W=\{48,72\}.
+ \label{eq:v7-full-a6-heavy-hessians}
+\end{align}
+Gaussian-$a_6$ умножает их на отрицательное число. Поэтому устойчивость
+нельзя решать по одному смешанному моному: положительные $a_2/a_4$ части и
+точный экспоненциальный остаток обязательны.
+
+\begin{theorem}[Обнуление исходного цикла и перенос ветви]
+После раскрытия стандартных слабых интертвинеров коэффициент исходного
+цикла через $u_R$ тождественно равен нулю из-за
+$\widetilde H^\dagger H=0$. Из четырнадцати простых шестикромочных циклов
+ровно три входят квадратично по тяжёлым полям около singlet-вакуума. Один
+обнулён, down-цикл через $X_Ld_R$ имеет коэффициент двенадцать, и ещё один
+коэффициент двенадцать связывает пару слабых дублетов. Следовательно,
+прежняя однопарная виртуальная модель не является редукцией полного
+product-$a_6$.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет редуцированного циклического коэффициента]
+Нельзя переносить коэффициент $12$ скалярной смежности на полный цикл через
+$u_R$ без слабого следа. Нельзя также молча заменить $X_Lu_R$ на прежде
+конкурирующее $X_Ld_R$: полный оператор одновременно открывает слабую пару
+$(L_LX_R,Y_Le_R)$, и обе выжившие ветви должны пройти один общий точный
+Gaussian-гессиан.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item простых шестикромочных циклов полного графа: \textbf{$14$};
+ \item циклов, квадратичных по нулевым полям около singlet-вакуума:
+ \textbf{$3$};
+ \item слабый множитель исходного up-цикла:
+ \textbf{$\widetilde H^\dagger H=0$};
+ \item полный коэффициент исходного up-цикла: \textbf{$0$};
+ \item коэффициент down-цикла: \textbf{$12$};
+ \item коэффициент слабой конкурирующей пары: \textbf{$12$};
+ \item Gaussian-билинейный коэффициент выживших ветвей: \textbf{$-2$};
+ \item прежний determinant-параметр $\kappa$ для up-пары: \textbf{$0$};
+ \item полный product-$a_6$ проход исходного цикла: \textbf{нет};
+ \item down-ветвь: \textbf{открыта};
+ \item слабая конкуренция: \textbf{обязательна};
+ \item итог: \textbf{строгий no-go исходного цикла и перенос ветви};
+ \item следующий гейт: \textbf{конкуренция weak-aligned down-цикла}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_full_product_a6_cycle_coefficient_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-full-a6-vassilevich}
+D.~V.~Vassilevich, \emph{Heat Kernel Expansion: User's Manual},
+Physics Reports 388 (2003), 279--360; arXiv:hep-th/0306138.
+\bibitem{v7-full-a6-dimension-six}
+A.~Devastato, F.~Lizzi, C.~Valcarcel Flores, D.~Vassilevich,
+\emph{Unification of Coupling Constants, Dimension Six Operators and the
+Spectral Action}, International Journal of Modern Physics A 30 (2015),
+1550033; arXiv:1410.6624.
+\bibitem{v7-full-a6-quiver}
+C.~I.~P\'erez-S\'anchez,
+\emph{The Spectral Action on Quivers}, arXiv:2401.03705.
+\bibitem{v7-full-a6-ncg-sm}
+A.~Devastato, \emph{Spectral Noncommutative Geometry, Standard Model and
+all that}, arXiv:1906.09583.
+\end{thebibliography}

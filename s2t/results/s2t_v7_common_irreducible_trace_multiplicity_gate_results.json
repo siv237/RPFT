@@ -1,0 +1,137 @@
+{
+  "algebraic_fork": {
+    "block_diagonal_algebra": "M22(C) direct_sum M21(C)",
+    "block_diagonal_center_dimension": 2,
+    "free_relative_trace_weights_after_normalization": 1,
+    "simple_completion": "M43(C)",
+    "simple_completion_adds_connectors": true,
+    "simple_completion_offdiagonal_complex_dimension": 462
+  },
+  "candidate_ratios": [
+    {
+      "beta": "1",
+      "heavy_gap": -5.600000000000002,
+      "inside_window": false,
+      "name": "single_full_trace",
+      "signature": [
+        21,
+        0,
+        6
+      ]
+    },
+    {
+      "beta": "22/21",
+      "heavy_gap": -6.171428571428574,
+      "inside_window": false,
+      "name": "separately_normalized_22_and_21_corners",
+      "signature": [
+        21,
+        0,
+        6
+      ]
+    },
+    {
+      "beta": "21/22",
+      "heavy_gap": -5.054545454545456,
+      "inside_window": false,
+      "name": "inverse_total_dimension_fraction",
+      "signature": [
+        21,
+        0,
+        6
+      ]
+    },
+    {
+      "beta": "10/11",
+      "heavy_gap": -4.50909090909091,
+      "inside_window": false,
+      "name": "inverse_active_rank_fraction",
+      "signature": [
+        21,
+        0,
+        6
+      ]
+    },
+    {
+      "beta": "11/21",
+      "heavy_gap": 0.11428571428571337,
+      "inside_window": true,
+      "name": "tempting_source_fraction",
+      "signature": [
+        7,
+        0,
+        20
+      ]
+    },
+    {
+      "beta": "10/21",
+      "heavy_gap": 0.6857142857142859,
+      "inside_window": true,
+      "name": "tempting_target_fraction",
+      "signature": [
+        7,
+        0,
+        20
+      ]
+    }
+  ],
+  "carrier_dimensions": {
+    "edge_hodge_two_ended_dimension": 22,
+    "edge_physical_padded_spectral_mismatch": 4.0,
+    "edge_reference_rank": 22,
+    "physical_gram_rank": 20,
+    "physical_incidence_dimension": 21,
+    "physical_source_target_dimensions": [
+      11,
+      10
+    ]
+  },
+  "corner_projector_test": {
+    "actual_source_corner_insertion_signature": [
+      8,
+      0,
+      19
+    ],
+    "actual_target_corner_insertion_signature": [
+      17,
+      0,
+      10
+    ],
+    "corner_insertion_equals_global_sector_rescaling": false,
+    "scalar_multiplication_by_11_over_21_would_pass": true,
+    "scalar_multiplication_heavy_gap": 0.11428571428571337,
+    "trace_of_source_projector": "11/21",
+    "trace_of_target_projector": "10/21"
+  },
+  "gate": "version7_common_irreducible_trace_multiplicity_gate",
+  "simple_factor_trace": {
+    "examples": [
+      {
+        "dimension": 3,
+        "multiplicity": 2,
+        "residual": 2.220446049250313e-16
+      },
+      {
+        "dimension": 5,
+        "multiplicity": 4,
+        "residual": 0.0
+      },
+      {
+        "dimension": 11,
+        "multiplicity": 3,
+        "residual": 8.326672684688674e-17
+      }
+    ],
+    "one_copy_each_gives_beta": "1",
+    "uniform_representation_multiplicity_cancels": true,
+    "unique_normalized_trace": true
+  },
+  "verdict": {
+    "common_existing_trace_derives_allowed_beta": false,
+    "dimension_resonance_11_over_21_numerically_passes": true,
+    "dimension_resonance_is_currently_one_trace_operation": false,
+    "next_gate": "version7_incidence_transfer_markov_weight_gate",
+    "rank_spectral_pairing_available": false,
+    "status": "simple_trace_multiplicity_no_go_incidence_transfer_weight_open"
+  }
+}

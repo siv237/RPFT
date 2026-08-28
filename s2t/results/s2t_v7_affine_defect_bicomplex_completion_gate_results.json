@@ -1,0 +1,55 @@
+{
+  "affine_representation": {
+    "S4_irreducible_multiplicities": {
+      "irreducible_2": 1,
+      "sign": 0,
+      "standard_3": 2,
+      "standard_3_sign": 1,
+      "trivial": 1
+    },
+    "complex_dimension": 12,
+    "equivariant_isomorphism_from_dimension_alone": false,
+    "invariant_subspace_dimension": 1,
+    "maximum_intertwiner_residual": 2.0955334580212837e-15,
+    "maximum_rank_of_map_to_undefined_or_trivial_defect_action": 1
+  },
+  "arbitrary_embedding_cost": {
+    "complex_grassmannian": "Gr(42,54)",
+    "defect_subspace_canonical_without_extra_symmetry": false,
+    "real_dimension": 1008
+  },
+  "gate": "version7_affine_defect_bicomplex_completion_gate",
+  "linking_curvature_support": {
+    "full_chain_dimension": 42,
+    "maximum_compressed_curvature_rank": 14,
+    "maximum_full_curvature_rank": 14,
+    "maximum_middle_block_residual": 0.0,
+    "maximum_trace_compression_residual": 2.2737367544323206e-13,
+    "middle_block_identically_zero": true,
+    "middle_dimension": 21,
+    "minimal_endpoint_carrier_dimension": 21,
+    "source_dimension": 11,
+    "target_dimension": 10
+  },
+  "verdict": {
+    "E_aff_identification_rejected": true,
+    "affine_defect_completion_derived": false,
+    "dimension_match_12_is_zero_padding_artifact": true,
+    "mass_ratios_derived": false,
+    "next_gate": "version7_minimal_curvature_support_trace_gate",
+    "qualitative_common_action_affected": false,
+    "status": "affine_defect_completion_no_go_minimal_curvature_support_open"
+  },
+  "zero_padding_noninvariance": {
+    "action_unchanged_by_zero_padding": true,
+    "edge_minus_full_chain_dimension": 12,
+    "edge_minus_minimal_support_dimension": 33,
+    "maximum_trace_residual": 2.2737367544323206e-13,
+    "tested_ambient_dimensions": [
+      42,
+      54,
+      79
+    ],
+    "twelve_dimensional_difference_is_carrier_invariant": false
+  }
+}

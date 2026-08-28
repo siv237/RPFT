@@ -1,0 +1,102 @@
+{
+  "canonical_odd_doubling": {
+    "construction": "D_Q=[[0,Q^*],[Q,0]]",
+    "heat_supertraces": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "real_doubling_then_physical_half_trace": "still zero/index-only"
+  },
+  "comparison_with_previous_gate": {
+    "can_equal_index_only_supertrace": false,
+    "formal_full_hessian_minimum": 1.143992523649868,
+    "formal_functional_is_nonconstant": true
+  },
+  "finite_odd_operator_identity": {
+    "field_derivatives_vanish": true,
+    "operator": "A=[[0,B^*],[B,0]]",
+    "rectangular_tests": [
+      {
+        "dimensions_minus_plus": [
+          3,
+          5
+        ],
+        "expected_index": 2,
+        "heat_supertraces": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "scale_test_at_t_1": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "dimensions_minus_plus": [
+          4,
+          4
+        ],
+        "expected_index": 0,
+        "heat_supertraces": [
+          -4.4408920985e-16,
+          -1.33226762955e-15,
+          -1.55431223448e-15,
+          -1.99840144433e-15,
+          -1.85962356625e-15
+        ],
+        "scale_test_at_t_1": [
+          4.4408920985e-16,
+          -1.11022302463e-15,
+          -1.55431223448e-15,
+          1.33226762955e-15
+        ]
+      },
+      {
+        "dimensions_minus_plus": [
+          6,
+          2
+        ],
+        "expected_index": -4,
+        "heat_supertraces": [
+          -4.0,
+          -4.0,
+          -4.0,
+          -4.0,
+          -4.0
+        ],
+        "scale_test_at_t_1": [
+          -4.0,
+          -4.0,
+          -4.0,
+          -4.0
+        ]
+      }
+    ],
+    "supertrace": "Str exp(-t*A^2)=dim(H_plus)-dim(H_minus)=index(B)"
+  },
+  "gate": "version7_real_superconnection_common_trace_origin_gate",
+  "target_role_insertion": {
+    "K": "diag(-1,-1,+1)",
+    "Q_is_odd_for_K": false,
+    "anticommutator_norm_KQ_plus_QK": 3.8262252939417984,
+    "interpretation": "Tr(K exp(-Q^2)) reproduces signs only by an extra role involution",
+    "weighted_trace_example": -0.7699652526932583
+  },
+  "verdict": {
+    "manual_role_involution_admissible_as_derivation": false,
+    "manual_role_involution_would_reproduce_signs": true,
+    "next_gate": "version7_derived_relative_involution_curvature_norm_gate",
+    "real_structure_rescues_degree_zero_potential": false,
+    "scope": "finite-dimensional degree-zero heat supertrace",
+    "single_ordinary_quillen_heat_supertrace_origin": false,
+    "status": "quillen_heat_supertrace_no_go_derived_relative_involution_or_curvature_norm_open"
+  }
+}

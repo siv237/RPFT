@@ -1,0 +1,217 @@
+\chapter{Трёхступенная Real-связывающая суперсвязность и граница полного квадрата}
+\label{ch:v7-real-linking-superconnection-assembly-gate}
+
+\section{Можно ли получить относительную кривизну квадратом}
+
+Предыдущий гейт получил каноническую бимодульную кривизну
+\begin{equation}
+ \mathcal R_U(A)=C_t(A)U-UC_s(A)
+ =AA^*U-UA^*A,
+ \label{eq:v7-linking-assembly-relative-curvature}
+\end{equation}
+где сокращение фоновых членов следует из полярного переплетения. Оставался
+вопрос, является ли эта формула настоящим блоком квадрата одного нечётного
+оператора или только составным выражением, вставленным после вычисления.
+
+Пусть
+\begin{equation}
+ H_0=\mathbb C^{11},\qquad
+ H_1=\mathbb C^{11}\oplus\mathbb C^{10},\qquad
+ H_2=\mathbb C^{10}.
+ \label{eq:v7-linking-assembly-chain-spaces}
+\end{equation}
+Определим две линейные по $A$ стрелки
+\begin{equation}
+ B_0(A)=
+ \begin{pmatrix}A^*U\\A\end{pmatrix}:H_0\to H_1,
+ \qquad
+ B_1(A)=
+ \begin{pmatrix}A&-UA^*\end{pmatrix}:H_1\to H_2.
+ \label{eq:v7-linking-assembly-arrows}
+\end{equation}
+Тогда прямое блочное умножение даёт
+\begin{equation}
+ \boxed{B_1(A)B_0(A)=AA^*U-UA^*A=\mathcal R_U(A).}
+ \label{eq:v7-linking-assembly-factorization}
+\end{equation}
+Таким образом, знак разности не добавляется в действие: он является знаком
+между двумя длины-два путями одного трёхступенного комплекса.
+
+\section{Нечётный оператор и его квадрат}
+
+На носителе
+\begin{equation}
+ \mathcal H_{\rm link}=H_0\oplus H_1\oplus H_2,
+ \qquad \dim_{\mathbb C}\mathcal H_{\rm link}=42,
+ \label{eq:v7-linking-assembly-carrier}
+\end{equation}
+введём
+\begin{equation}
+ d_A=
+ \begin{pmatrix}
+ 0&0&0\\
+ B_0(A)&0&0\\
+ 0&B_1(A)&0
+ \end{pmatrix},
+ \qquad
+ \chi_{\rm link}=\operatorname{diag}(I_{11},-I_{21},I_{10}).
+ \label{eq:v7-linking-assembly-differential}
+\end{equation}
+Имеем
+\begin{equation}
+ \{\chi_{\rm link},d_A\}=0,
+ \qquad
+ [\chi_{\rm link},d_A^2]=0,
+ \label{eq:v7-linking-assembly-parity}
+\end{equation}
+и единственный ненулевой блок длины два равен
+\begin{equation}
+ (d_A^2)_{20}=\mathcal R_U(A).
+ \label{eq:v7-linking-assembly-square-block}
+\end{equation}
+На фоне $A=A_0$ и в нуле этот блок исчезает с машинными остатками меньше
+$5\cdot10^{-15}$. На ста случайных комплексных матрицах максимальный
+остаток тождества~\eqref{eq:v7-linking-assembly-factorization} меньше
+$3.2\cdot10^{-14}$.
+
+Это положительный результат: относительная полярная кривизна действительно
+является квадратом заранее типизированного нечётного оператора, а не
+постфактум функционалом.
+
+\section{Почему полный самосопряжённый квадрат не проходит}
+
+Real-самосопряжённое завершение имеет вид
+\begin{equation}
+ Q_A=d_A+d_A^*.
+ \label{eq:v7-linking-assembly-selfadjoint-operator}
+\end{equation}
+Однако $Q_A^2$ содержит не только крайний блок $B_1B_0$, но и диагональные
+положительные блоки
+\begin{equation}
+ B_0^*B_0,\qquad
+ B_0B_0^*+B_1^*B_1,\qquad
+ B_1B_1^*.
+ \label{eq:v7-linking-assembly-diagonal-blocks}
+\end{equation}
+Именно они восстанавливают уже запрещённые суммарные Gram-каналы.
+Для полного действия
+\begin{equation}
+ \mathcal S_{\rm full}
+ =\mathcal S_E+\frac12
+ \|Q_A^2-Q_{A_0}^2\|_{\rm HS}^2
+ \label{eq:v7-linking-assembly-full-action}
+\end{equation}
+нулевой гессиан равен
+\begin{equation}
+ (n_-,n_0,n_+)=(27,0,0),
+ \qquad
+ \lambda_{\rm heavy}^{\min}=-\frac{448}{5}.
+ \label{eq:v7-linking-assembly-full-origin-fail}
+\end{equation}
+То есть полный квадрат делает неустойчивыми уже все исследуемые направления.
+
+Даже обычные множители, связанные с Real-полуследом и удалением
+ориентационного двойного счёта, не спасают конструкцию. Если $\alpha$
+умножает полный связывающий гессиан, допустимое окно равно
+\begin{equation}
+ 0\le\alpha<\frac1{15}.
+ \label{eq:v7-linking-assembly-scale-window}
+\end{equation}
+Но последовательные стандартные кандидаты
+\begin{equation}
+ \alpha=1,\frac12,\frac14,\frac18
+ \label{eq:v7-linking-assembly-standard-scales}
+\end{equation}
+дают соответственно сигнатуры
+\begin{equation}
+ (27,0,0),\ (27,0,0),\ (27,0,0),\ (21,0,6).
+ \label{eq:v7-linking-assembly-standard-fails}
+\end{equation}
+Первый проходящий контроль $\alpha=1/16$ уже является новым секторным
+ослаблением, а не следствием текущего Real-завершения.
+
+Целевой вакуум полного квадрата остаётся строго устойчивым:
+\begin{equation}
+ (n_-,n_0,n_+)_{A_0}=(0,0,27),
+ \qquad \lambda_{\min}=23.2624779769\ldots.
+ \label{eq:v7-linking-assembly-full-vacuum}
+\end{equation}
+Провал относится не к насыщению, а к избыточному запуску из нуля.
+
+\section{Сохранившийся блок степени два}
+
+Если действие читает только канонический крайний блок
+\begin{equation}
+ \mathcal S_{(2)}
+ =\mathcal S_E+\frac12\|(d_A^2)_{20}\|_{\rm HS}^2,
+ \label{eq:v7-linking-assembly-degree-two-action}
+\end{equation}
+то оно совпадает с относительным полярным кандидатом предыдущего гейта и
+даёт
+\begin{align}
+ (n_-,n_0,n_+)_{0}&=(7,0,20),
+ &\lambda_{\rm heavy}^{\min}&=\frac{18}{5},
+ \label{eq:v7-linking-assembly-degree-two-origin}\\
+ (n_-,n_0,n_+)_{A_0}&=(0,0,27),
+ &\lambda_{\min}&=3.9368554658\ldots.
+ \label{eq:v7-linking-assembly-degree-two-vacuum}
+\end{align}
+
+Но операторная факторизация ещё не выводит право отбросить диагональные
+блоки~\eqref{eq:v7-linking-assembly-diagonal-blocks}. Такое право должно
+следовать из степени формы, представленного junk-идеала, отображающего
+конуса или относительной когомологии комплекса. Без этого
+\eqref{eq:v7-linking-assembly-degree-two-action} остаётся канонически
+локализованным, но ещё не полным следом кривизны.
+
+\begin{theorem}[Положительная факторизация и no-go полного квадрата]
+Относительная полярная кривизна точно факторизуется как блок $d_A^2$
+трёхступенного нечётного комплекса размерностей $11\to21\to10$. Однако
+полная норма самосопряжённой кривизны $(d_A+d_A^*)^2$ неизбежно добавляет
+диагональные Gram-блоки и даёт нулевую сигнатуру $(27,0,0)$. Правильный
+селектор сохраняется только на компоненте длины два
+$\operatorname{Hom}(H_0,H_2)$.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет скрытой проекции полного квадрата]
+Нельзя объявлять $\|(d_A^2)_{20}\|^2$ полным Real-кривизностным действием,
+просто удалив диагональные блоки $Q_A^2$. Требуется вывести их исчезновение
+или ортогональное отделение в представленном дифференциальном исчислении.
+Нельзя также использовать проходящий множитель $1/16$ без независимого
+следового происхождения.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item трёхступенный носитель: \textbf{$11\to21\to10$};
+ \item общая комплексная размерность: \textbf{$42$};
+ \item $d_A$ нечётен: \textbf{точно};
+ \item $d_A^2$ чётен: \textbf{точно};
+ \item $(d_A^2)_{20}=\mathcal R_U$: \textbf{точно};
+ \item полный самосопряжённый квадрат: \textbf{провал $(27,0,0)$};
+ \item критический полный вес: \textbf{$1/15$};
+ \item стандартные Real/ориентационные множители: \textbf{не проходят};
+ \item блок степени два: \textbf{проходит $(7,0,20)$};
+ \item вакуум блока степени два: \textbf{$(0,0,27)$};
+ \item представленная проекция степени два: \textbf{не выведена};
+ \item следующий гейт: \textbf{quotient кривизны длины два}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_real_linking_superconnection_assembly_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-linking-assembly-quillen}
+D.~Quillen,
+\emph{Superconnections and the Chern Character},
+Topology 24 (1985), 89--95.
+\bibitem{v7-linking-assembly-ackermann-tolksdorf}
+T.~Ackermann, J.~Tolksdorf,
+\emph{The Generalized Lichnerowicz Formula and Analysis of Dirac Operators},
+J. Reine Angew. Math. 471 (1996), 23--42; arXiv:hep-th/9503153.
+\bibitem{v7-linking-assembly-roepstorff}
+G.~Roepstorff,
+\emph{Superconnections and the Higgs Field},
+arXiv:hep-th/9801040.
+\end{thebibliography}

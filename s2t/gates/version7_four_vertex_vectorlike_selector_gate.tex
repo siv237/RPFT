@@ -1,0 +1,148 @@
+\chapter{Четырёхвершинное вектороподобное замыкание и дефицит селектора}
+\label{ch:v7-four-vertex-vectorlike-selector-gate}
+
+\section{Кандидат после аномального запрета}
+
+Минимальный консервативный ремонт добавляет полный синглетный и дублетный
+вектороподобные пакеты
+\begin{equation}
+ X_L,X_R\sim(\mathbf1,\mathbf1)_{-1},\qquad
+ Y_L,Y_R\sim(\mathbf1,\mathbf2)_{-1/2}.
+ \label{eq:v7-vectorlike-four-vertex-content}
+\end{equation}
+Левые и правые вклады сокращаются попарно, поэтому
+\begin{equation}
+ \mathcal A_{221}=\mathcal A_{\mathrm{grav}^2 1}
+ =\mathcal A_{111}=0,
+ \qquad N_{\mathbf2}^{\rm new}=0\pmod2.
+ \label{eq:v7-vectorlike-four-vertex-anomalies}
+\end{equation}
+Вектороподобные расширения конечных спектральных троек действительно могут
+иметь калибровочно-инвариантные массы и быть безаномальными
+\cite{v7vector-classification,v7vector-scalars}. Но это ещё не выбирает их
+связи с исходным поколением.
+
+\section{Полный первопорядковый граф}
+
+Для девяти физических вершин полный перебор критерия одной строки или одного
+столбца даёт
+\begin{equation}
+ |E_{\rm strict}|=14,\qquad
+ |E_{\rm old}|=3,\qquad
+ |E_{\rm new}|=11.
+ \label{eq:v7-vectorlike-edge-count}
+\end{equation}
+Желаемый шестикромочный цикл вместе с двумя собственными
+вектороподобными массами использует только шесть новых блоков:
+\begin{equation}
+ |E_{\rm selected}\setminus E_{\rm old}|=6,
+ \qquad
+ |E_{\rm allowed}\setminus E_{\rm selected}|=5.
+ \label{eq:v7-vectorlike-edge-deficit}
+\end{equation}
+Оставшиеся разрешённые рёбра включают дополнительный кварк-лептонный канал,
+смешивание старых и новых копий и ещё один внутренний путь. Первый порядок
+их разрешает, но не заставляет зануляться.
+
+При трёх поколениях каждое новое ребро несёт независимую комплексную матрицу
+$3\times3$. До факторизации базисных вращений это означает
+\begin{equation}
+ 11\times 9\ \text{комплексных}
+ =198\ \text{вещественных параметров}.
+ \label{eq:v7-vectorlike-raw-yukawa-cost}
+\end{equation}
+Следовательно, аномальный ремонт сам по себе возвращает произвольное меню
+юкавских матриц, против которого был сформулирован стоп-критерий предыдущей
+развилки.
+
+\section{Почему лёгкий хиральный сектор всё же не исчезает}
+
+В заряженном синглетном секторе общая семейная масса имеет размер
+$3\times6$, а в дублетном --- $6\times3$:
+\begin{equation}
+ M_e:\mathbb C^6_R\to\mathbb C^3_L,\qquad
+ M_L:\mathbb C^3_R\to\mathbb C^6_L.
+ \label{eq:v7-vectorlike-mass-shapes}
+\end{equation}
+Для общей матрицы обе имеют ранг три, поэтому
+\begin{equation}
+ \dim\ker M_e=3,\qquad
+ \dim\ker M_L^*=3.
+ \label{eq:v7-vectorlike-kernel-count}
+\end{equation}
+То есть на каждое поколение остаются один правый заряженный синглет и один
+левый слабый дублет. Их направления, однако, являются произвольными смесями
+старых и новых копий.
+
+На уровне хиральных индексов результат точен:
+\begin{equation}
+ I_{\rm four\ vertex}=(1,-1,-1,1,-1)=I_{H_{15}}
+ \label{eq:v7-vectorlike-index-preservation}
+\end{equation}
+в порядке $(Q,u,d,L,e)$. Полное зеркальное поколение вместо этого даёт
+\begin{equation}
+ I_{\rm full\ mirror}=(0,0,0,0,0),
+ \label{eq:v7-vectorlike-full-mirror-index-zero}
+\end{equation}
+и при общей массе уничтожает весь хиральный индекс. Поэтому полный зеркальный
+атом является более крупным, но не более подходящим ремонтом.
+
+\section{Дубликаты бимодулей и отсутствующий центр}
+
+Расширенный носитель содержит совпадающие типы
+\begin{equation}
+ L_L\simeq Y_L=(\mathbb H,\mathbb C,L),\qquad
+ e_R\simeq X_R=(\mathbb C,\mathbb C,R).
+ \label{eq:v7-vectorlike-duplicate-types}
+\end{equation}
+Неизменённая алгебра действует на каждую пару одинаково и потому допускает
+унитарные вращения пространства кратностей. Она не различает «старую» и
+«новую» копии, не выбирает три лёгких ядровых направления и не выделяет
+шесть желаемых блоков из одиннадцати разрешённых.
+
+\begin{theorem}[Условный допуск четырёхвершинного замыкания]
+Четырёхвершинный вектороподобный сектор проходит строгий первый порядок,
+Real-замыкание, локальные и глобальную аномальные проверки. В отличие от
+полного зеркального поколения он сохраняет хиральные индексы $H_{15}$ и
+оставляет по одному лёгкому лептонному направлению на поколение. Однако
+неизменённая алгебра не выбирает ориентацию этих ядер и разрешает пять
+лишних рёбер. Поэтому получен допустимый носитель, но не канонический
+single-source родитель.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет произвольного юкавского ремонта]
+Нельзя вручную занулить пять разрешённых блоков или выбрать ядра массовых
+матриц по наблюдаемым смешиваниям. Требуемый селектор должен следовать из
+уже существующего аффинного/Hodge-родителя либо быть объявлен новой
+архитектурой до вычисления спектра.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item строгий первый порядок: \textbf{пройден};
+ \item Real и аномалии: \textbf{пройдены};
+ \item хиральный индекс $H_{15}$: \textbf{сохранён};
+ \item полное зеркальное поколение: \textbf{отклонено индексом};
+ \item новых разрешённых матричных блоков: \textbf{$11$};
+ \item блоков желаемого ремонта: \textbf{$6$};
+ \item лишних разрешённых блоков: \textbf{$5$};
+ \item ориентация лёгкого ядра выведена: \textbf{нет};
+ \item итог: \textbf{условно положительный носитель, селектор отсутствует};
+ \item следующий гейт: \textbf{селектор пространства кратностей из
+ аффинного/Hodge-родителя}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_four_vertex_vectorlike_selector_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7vector-classification}
+J.-H.~Jureit, T.~Schuecker, C.~A.~Stephan,
+\emph{On a Classification of Irreducible Almost-Commutative Geometries V},
+Journal of Mathematical Physics 50 (2009), 072303; arXiv:0901.3214.
+\bibitem{v7vector-scalars}
+C.~A.~Stephan,
+\emph{New Scalar Fields in Noncommutative Geometry},
+Physical Review D 79 (2009), 065013; arXiv:0901.4676.
+\end{thebibliography}

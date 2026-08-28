@@ -1,0 +1,95 @@
+{
+  "gate": "version7_color_preserving_composite_cycle_parent_gate",
+  "local_origin_audit": {
+    "cycle_creates_quadratic_instability": false,
+    "gradient_at_origin": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "hessian_at_origin": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "positive_mass_hessian": [
+      [
+        "2*mass2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2*mass2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "2*mass2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "2*mass2"
+      ]
+    ],
+    "positive_mass_origin_remains_locally_stable": true
+  },
+  "nonzero_composite_audit": {
+    "fundamental_color_preserved_if_colored_factors_nonzero": false,
+    "independent_sigma_with_constraint_sigma_equals_cycle_repairs_problem": false,
+    "nonzero_cycle_implies_colored_factors_nonzero": true,
+    "product_nonzero_implies_every_factor_nonzero": true
+  },
+  "rooted_cycle": {
+    "colored_factors": [
+      "u_RX_L",
+      "Y_RQ_L"
+    ],
+    "frozen_H15_roots": [
+      "Q_Lu_R",
+      "e_RL_L"
+    ],
+    "full_word": "Q_Lu_R * u_RX_L * X_Le_R * e_RL_L * L_LY_R * Y_RQ_L",
+    "gauge_singlet_as_closed_word": true,
+    "new_field_degree": 4,
+    "new_field_word": "u_RX_L * X_Le_R * L_LY_R * Y_RQ_L"
+  },
+  "scope_boundary": {
+    "classical_analytic_cycle_parent_admitted": false,
+    "quantum_composite_condensate_tested": false,
+    "required_new_ingredient": "a quantum determinant or Schur-complement integration of massive colored bridges with zero one-point functions",
+    "virtual_heavy_bridge_route_tested": false
+  },
+  "verdict": {
+    "next_gate": "version7_virtual_colored_bridge_schur_complement_gate",
+    "status": "classical_composite_cycle_no_go"
+  }
+}

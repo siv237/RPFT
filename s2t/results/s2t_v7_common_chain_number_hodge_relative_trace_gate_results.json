@@ -1,0 +1,131 @@
+{
+  "common_curvature_carrier": {
+    "curvature": "diag(M_E,i delta_N(Q^2-Q0^2))",
+    "edge_hodge_dimension": 54,
+    "linking_chain_dimension": 42,
+    "maximum_selfadjoint_residual": 8.98149155400541e-15,
+    "maximum_trace_identity_residual": 2.2737367544323206e-13,
+    "reduced_action": "S_E+||R_U||^2",
+    "single_action": "1/2 Tr_96(F_common^2)-constant",
+    "total_complex_dimension": 96
+  },
+  "common_trace_hessians": {
+    "origin_heavy_gap": 3.6,
+    "origin_signature": [
+      7,
+      0,
+      20
+    ],
+    "vacuum_minimum_eigenvalue": 4.235590449919224,
+    "vacuum_signature": [
+      0,
+      0,
+      27
+    ]
+  },
+  "gate": "version7_common_chain_number_hodge_relative_trace_gate",
+  "metric_uniqueness_boundary": {
+    "edge_and_linking_subcarriers_have_different_dimensions": true,
+    "full_M96_is_trace_container_not_coordinate_algebra": true,
+    "full_matrix_trace_on_M96_is_unique": true,
+    "orthogonal_central_projector_residual": 0.0,
+    "quantitative_mass_ratio_derived": false,
+    "relative_hodge_metric_rescaling_forbidden_by_current_symmetry": false,
+    "unitary_exchange_symmetry_between_subcarriers": false
+  },
+  "positive_metric_independence": {
+    "qualitative_selector_independent_of_positive_relative_weight": true,
+    "qualitative_vacuum_stability_independent_of_positive_relative_weight": true,
+    "scan": [
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 0.0,
+        "vacuum_minimum_eigenvalue": 3.6,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 0.25,
+        "vacuum_minimum_eigenvalue": 3.768427732924391,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 1.0,
+        "vacuum_minimum_eigenvalue": 4.235590449919224,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 4.0,
+        "vacuum_minimum_eigenvalue": 5.428673114063864,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "relative_metric_weight": 100.0,
+        "vacuum_minimum_eigenvalue": 6.999952862627435,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      }
+    ]
+  },
+  "real_completion": {
+    "doubled_dimension": 192,
+    "maximum_real_half_trace_residual": 1.1368683772161603e-13,
+    "physical_half_trace_restores_common_action": true
+  },
+  "verdict": {
+    "common_trace_correct_origin_selector": true,
+    "common_trace_strictly_stable_vacuum": true,
+    "manual_weight_needed_for_qualitative_result": false,
+    "next_gate": "version7_bicomplex_total_degree_hodge_metric_gate",
+    "one_unweighted_common_trace_exists": true,
+    "status": "positive_common_trace_qualitative_closure_metric_uniqueness_open",
+    "unique_relative_hodge_metric_derived": false
+  }
+}

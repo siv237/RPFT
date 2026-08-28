@@ -1,0 +1,182 @@
+\chapter{Бимодульный допуск цепи когерентности}
+\label{ch:v7-edge-coherence-bimodule-admission-gate}
+
+\section{Что именно требуется вложить}
+
+Спектральный родитель предыдущей главы использует цепь комплексных
+размерностей $1\to6\to3$. Совпадение размерностей с отдельными
+фермионными мультиплетами ещё не означает существование конечной
+спектральной тройки. Для
+\begin{equation}
+ \mathcal A_{\rm SM}
+ =\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)
+ \label{eq:v7-coherence-bimodule-algebra}
+\end{equation}
+каждый неприводимый бимодуль имеет две координаты $(i,j)$, а его
+комплексная размерность равна произведению размерностей простых модулей.
+
+Для блока $D_{ij,kl}$ строгий первый порядок требует
+\begin{equation}
+ [[D,a],JbJ^{-1}]_{ij,kl}
+ =(a_i-a_k)D_{ij,kl}(b_j-b_l)=0
+ \quad\text{для всех }a,b.
+ \label{eq:v7-coherence-bimodule-first-order}
+\end{equation}
+Следовательно, ненулевое ребро должно сохранять левую или правую
+бимодульную координату.
+
+\section{Неприводимый размерностный запрет}
+
+Размерности простых комплексных модулей равны
+\begin{equation}
+ \dim\mathbb C=1,\qquad
+ \dim_{\mathbb C}\mathbb H=2,\qquad
+ \dim M_3=3.
+ \label{eq:v7-coherence-bimodule-simple-dimensions}
+\end{equation}
+Поэтому одномерный неприводимый бимодуль имеет единственный тип
+\begin{equation}
+ \mathcal H_1^{(1)}=(\mathbb C,\mathbb C),
+ \label{eq:v7-coherence-bimodule-one-dimensional}
+\end{equation}
+а шестимерные типы исчерпываются парой
+\begin{equation}
+ \mathcal H^{(6)}
+ \in\{(\mathbb H,M_3),(M_3,\mathbb H)\}.
+ \label{eq:v7-coherence-bimodule-six-dimensional}
+\end{equation}
+Одномерный тип не разделяет ни одной координаты ни с одним шестимерным
+типом. Поэтому уже первое ребро любой неприводимой цепи $1\to6$ нарушает
+\eqref{eq:v7-coherence-bimodule-first-order}.
+
+\begin{theorem}[Неприводимый запрет цепи $1\to6\to3$]
+Над неизменённой алгеброй $\mathcal A_{\rm SM}$ не существует
+неприводимой бимодульной цепи размерностей $1\to6\to3$, удовлетворяющей
+строгому первому порядку. Препятствие возникает на первом ребре и не
+зависит от выбора трёхмерного конечного узла.
+\end{theorem}
+
+\section{Проверка фактически допущенного носителя}
+
+В четырёхвершинном расширении единственный шестимерный физический узел есть
+\begin{equation}
+ Q_L=(\mathbb H,M_3,L),\qquad \dim_{\mathbb C}Q_L=6.
+ \label{eq:v7-coherence-bimodule-q-node}
+\end{equation}
+Одномерные узлы нужной противоположной хиральности равны
+\begin{equation}
+ e_R,X_R=(\mathbb C,\mathbb C,R),
+ \label{eq:v7-coherence-bimodule-one-nodes}
+\end{equation}
+а трёхмерные узлы равны
+\begin{equation}
+ u_R,d_R=(\mathbb C,M_3,R).
+ \label{eq:v7-coherence-bimodule-three-nodes}
+\end{equation}
+Таким образом, имеются четыре размерностных кандидата
+\begin{equation}
+ \{e_R,X_R\}\longrightarrow Q_L
+ \longrightarrow\{u_R,d_R\}.
+ \label{eq:v7-coherence-bimodule-four-candidates}
+\end{equation}
+Второе ребро сохраняет правую координату $M_3$ и проходит первый порядок.
+Первое меняет одновременно $\mathbb C\to\mathbb H$ и
+$\mathbb C\to M_3$, поэтому запрещено. Real-сопряжение только переставляет
+обе координаты и сохраняет тот же дефект.
+
+\section{Почему прежнее поле всё же существовало}
+
+Матрица $B\in M_{2\times3}(\mathbb C)$ была построена на пространстве
+коэффициентов шести разрешённых стрелок полного графа:
+\begin{equation}
+ \{L_L,Y_L\}\times\{e_R,X_R,Y_R\}.
+ \label{eq:v7-coherence-bimodule-edge-space}
+\end{equation}
+Это шестимерное пространство амплитуд рёбер, а не новый шестимерный
+фермионный бимодуль. Аналогично,
+\begin{equation}
+ \Lambda^2\mathbb C^2\otimes\Lambda^2\mathbb C^3
+ \simeq\mathbb C^3
+ \label{eq:v7-coherence-bimodule-exterior-endpoint}
+\end{equation}
+является пространством составных миноров, а не уже существующей физической
+вершиной. Поэтому спектральные следовые тождества предыдущего гейта
+остаются верными на комплексе полей, но не превращаются автоматически в
+фермионный конечный оператор.
+
+\section{Минимальная приводимая альтернатива}
+
+Первый порядок можно формально сохранить, если все три узла лежат в одном
+бимодульном столбце:
+\begin{equation}
+ (\mathbb C,\mathbb C,R)
+ \longrightarrow
+ 3(\mathbb H,\mathbb C,L)
+ \longrightarrow
+ 3(\mathbb C,\mathbb C,R).
+ \label{eq:v7-coherence-bimodule-reducible-chain}
+\end{equation}
+Размерности этой цепи действительно равны $1,6,3$. Однако крайние узлы
+являются четырьмя независимыми копиями типа $(\mathbb C,\mathbb C,R)$,
+а средний --- тремя копиями $(\mathbb H,\mathbb C,L)$. В допущенном
+носителе имеются только
+\begin{equation}
+ n_{HCL}=2,\qquad n_{CCR}=2,
+ \label{eq:v7-coherence-bimodule-available-multiplicities}
+\end{equation}
+тогда как цепь требует
+\begin{equation}
+ n_{HCL}=3,\qquad n_{CCR}=4.
+ \label{eq:v7-coherence-bimodule-required-multiplicities}
+\end{equation}
+До аномального завершения пришлось бы добавить как минимум один левый
+слабый дублет и два правых синглета. Простейшее вектороподобное завершение
+добавляет также их три зеркальных партнёра. Кроме того, первый порядок
+разрешает два независимых ребра, но сам не выводит нелинейную связь
+$C_B=\frac12d(\Lambda^2)_B$ между ними.
+
+\begin{nogocriterion}[Запрет переименования пространства стрелок]
+Нельзя считать пространство коэффициентов Дираковских блоков физическим
+фермионным модулем только из-за совпадения размерности шесть. Нельзя также
+отождествлять внешний составной узел с трёхмерным кварковым модулем:
+их бимодульные координаты и калибровочные действия различны.
+\end{nogocriterion}
+
+\section{Вердикт}
+
+\begin{protocol}
+\begin{enumerate}
+ \item неприводимых одномерных типов: \textbf{только $(\mathbb C,\mathbb C)$};
+ \item неприводимых шестимерных типов:
+ \textbf{$(\mathbb H,M_3)$ и $(M_3,\mathbb H)$};
+ \item допустимых неприводимых цепей $1\to6\to3$: \textbf{ноль};
+ \item размерностных цепей в физическом носителе: \textbf{четыре};
+ \item их допустимое первое ребро: \textbf{ни у одной};
+ \item Real-сопряжение исправляет препятствие: \textbf{нет};
+ \item пространство шести стрелок остаётся допустимым комплексом полей:
+ \textbf{да};
+ \item приводимая same-column цепь: \textbf{формально проходит};
+ \item дефицит её физических вершин:
+ \textbf{один дублет и два синглета};
+ \item relation двух рёбер выводится первым порядком: \textbf{нет};
+ \item итог:
+ \textbf{неизменённый физический бимодульный носитель закрыт};
+ \item следующий гейт:
+ \textbf{вспомогательный BV/BRST или mapping-cone статус комплекса полей}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_edge_coherence_bimodule_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-coherence-bimodule-krajewski}
+T.~Krajewski,
+\emph{Classification of finite spectral triples},
+Journal of Geometry and Physics 28 (1998), 1--30;
+arXiv:hep-th/9701081.
+\bibitem{v7-coherence-bimodule-vectorlike}
+J.-H.~Jureit, C.~A.~Stephan,
+\emph{On a Classification of Irreducible Almost-Commutative Geometries V},
+Journal of Mathematical Physics 50 (2009), 072303; arXiv:0901.3214.
+\end{thebibliography}

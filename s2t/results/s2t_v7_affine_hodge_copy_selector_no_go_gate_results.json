@@ -1,0 +1,166 @@
+{
+  "gate": "version7_affine_hodge_copy_selector_no_go_gate",
+  "copy_orbit": {
+    "mass_matrix_shape": [
+      3,
+      6
+    ],
+    "kernel_dimension": 3,
+    "sample_count": 17,
+    "maximum_hodge_action_residual": 3.6977854932234923e-32,
+    "maximum_singular_value_residual": 1.9229626863835638e-16,
+    "maximum_kernel_projector_displacement": 2.449489742783178,
+    "kernel_overlap_with_old_copy_range": [
+      0.0,
+      3.0
+    ],
+    "orbit_hessian": 0.0,
+    "samples": [
+      {
+        "theta": 0.0,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 0.0,
+        "kernel_overlap_with_old_copy": 0.0
+      },
+      {
+        "theta": 0.09817477042468103,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 0.24009197985419808,
+        "kernel_overlap_with_old_copy": 0.02882207939515402
+      },
+      {
+        "theta": 0.19634954084936207,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 0.4778717426947734,
+        "kernel_overlap_with_old_copy": 0.11418070123306989
+      },
+      {
+        "theta": 0.2945243112740431,
+        "action": 3.6977854932234923e-32,
+        "singular_value_residual": 1.9229626863835638e-16,
+        "kernel_projector_displacement": 0.7110493394219308,
+        "kernel_overlap_with_old_copy": 0.25279558154618165
+      },
+      {
+        "theta": 0.39269908169872414,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 0.9373791423113476,
+        "kernel_overlap_with_old_copy": 0.4393398282201788
+      },
+      {
+        "theta": 0.4908738521234052,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 1.1546814716367426,
+        "kernel_overlap_with_old_copy": 0.6666446504705964
+      },
+      {
+        "theta": 0.5890486225480862,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 1.3608635871771757,
+        "kernel_overlap_with_old_copy": 0.9259748514523652
+      },
+      {
+        "theta": 0.6872233929727672,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 1.5539398424493835,
+        "kernel_overlap_with_old_copy": 1.2073645169758074
+      },
+      {
+        "theta": 0.7853981633974483,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 1.732050807568877,
+        "kernel_overlap_with_old_copy": 1.4999999999999996
+      },
+      {
+        "theta": 0.8835729338221293,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 1.8934811765761985,
+        "kernel_overlap_with_old_copy": 1.7926354830241926
+      },
+      {
+        "theta": 0.9817477042468103,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 2.0366762867709904,
+        "kernel_overlap_with_old_copy": 2.0740251485476344
+      },
+      {
+        "theta": 1.0799224746714913,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 2.1602570909636674,
+        "kernel_overlap_with_old_copy": 2.333355349529403
+      },
+      {
+        "theta": 1.1780972450961724,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 2.2630334384537143,
+        "kernel_overlap_with_old_copy": 2.560660171779821
+      },
+      {
+        "theta": 1.2762720155208536,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 2.3440155368315367,
+        "kernel_overlap_with_old_copy": 2.7472044184538182
+      },
+      {
+        "theta": 1.3744467859455345,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 2.402423484220436,
+        "kernel_overlap_with_old_copy": 2.88581929876693
+      },
+      {
+        "theta": 1.4726215563702154,
+        "action": 3.6977854932234923e-32,
+        "singular_value_residual": 1.9229626863835638e-16,
+        "kernel_projector_displacement": 2.437694780158027,
+        "kernel_overlap_with_old_copy": 2.9711779206048456
+      },
+      {
+        "theta": 1.5707963267948966,
+        "action": 0.0,
+        "singular_value_residual": 0.0,
+        "kernel_projector_displacement": 2.449489742783178,
+        "kernel_overlap_with_old_copy": 3.0
+      }
+    ]
+  },
+  "affine_lift": {
+    "rank_P3": 3,
+    "copy_factor": "I2",
+    "maximum_commutator_with_copy_U2": 0.0,
+    "P3_selects_copy_line": false
+  },
+  "commutant": {
+    "contained_copy_algebra": "M2(C)",
+    "verified_complex_dimension": 4,
+    "maximum_matrix_unit_commutator": 0.0,
+    "represented_algebra_distinguishes_old_new_duplicates": false
+  },
+  "analytic_statement": {
+    "transformation": "M -> M (U_copy tensor I_family)",
+    "MM_star_invariant": true,
+    "kernel_projector_conjugates": true,
+    "singular_value_Hodge_functional_selects_orientation": false,
+    "Real_or_class15_breaks_copy_U2": false
+  },
+  "verdict": {
+    "existing_affine_Hodge_parent_selects_kernel_dimension": true,
+    "existing_affine_Hodge_parent_selects_kernel_orientation": false,
+    "existing_affine_Hodge_parent_selects_six_of_eleven_edges": false,
+    "status": "closed_as_copy_selector",
+    "next_gate": "derive or exclude a noncentral copy-space operator from an oriented path algebra or Morita corner without preselecting the desired six edges"
+  }
+}

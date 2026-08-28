@@ -1,0 +1,125 @@
+\chapter{Real-полуслед и происхождение половинного веса кривизны}
+\label{ch:v7-real-half-trace-curvature-weight-gate}
+
+\section{Проверяемая гипотеза}
+
+Предыдущий гейт получил правильный селективный гессиан для
+\begin{equation}
+ \mathcal S_\beta=\mathcal S_E+\beta\mathcal S_V
+ \quad\text{при}\quad \beta=\frac12,
+ \label{eq:v7-half-trace-target}
+\end{equation}
+но происхождение половины осталось открытым. Проверим, возникает ли она из
+полного Real-удвоения и одного физического полуследа.
+
+\section{Одинаковая Hodge-нормировка двух блоков}
+
+Рёберное действие уже записано как
+\begin{equation}
+ \mathcal S_E=\frac12\Tr_{\mathcal K_E}\mathfrak m_E^2,
+ \label{eq:v7-half-trace-edge-hodge}
+\end{equation}
+с точностью до постоянного вакуумного вычитания и прямых сумм, порождающих
+кратности и Casimir-веса. Физическая относительная кривизна имеет ту же
+структуру:
+\begin{equation}
+ \mathcal S_V=\frac12\left(
+ \|A^*A-A_0^*A_0\|_{\rm HS}^2+
+ \|AA^*-A_0A_0^*\|_{\rm HS}^2\right)
+ =\frac12\Tr_{\mathcal K_V}\mathfrak m_V^2.
+ \label{eq:v7-half-trace-vertex-hodge}
+\end{equation}
+Здесь две нормы являются двумя концами одного прямоугольного Hodge-комплекса,
+а не двумя независимо взвешиваемыми действиями.
+
+Если Real-завершение удваивает оба носителя, а один физический полуслед делит
+полный след пополам, то для $X=E,V$
+\begin{equation}
+ \frac12\Tr_{\mathcal K_X\oplus J\mathcal K_XJ^{-1}}
+ \mathfrak m_{X,\mathbb R}^2
+ =\Tr_{\mathcal K_X}\mathfrak m_X^2.
+ \label{eq:v7-half-trace-uniform-cancellation}
+\end{equation}
+Одна и та же операция умножает оба сектора на один коэффициент. Поэтому
+\begin{equation}
+ \boxed{\beta_{\rm Real\ half\ trace}=1,}
+ \label{eq:v7-half-trace-derived-beta-one}
+\end{equation}
+а не $1/2$.
+
+\section{Почему степень формы и след Клиффорда пока не помогают}
+
+Оба текущих момента $\mathfrak m_E$ и $\mathfrak m_V$ являются конечными
+эндоморфизмами степени ноль. Общая Hodge-метрика на нуль-формах и общий
+пространственный след тождественного клиффордова блока действуют на них
+одинаково. Множитель $1/2!$ мог бы различить нуль- и двухформенную компоненты,
+но в текущем носителе ни один из двух блоков не выведен как отдельная
+двухформа. Такое назначение было бы новой структурой, а не следствием
+Real-удвоения.
+
+Литература по спектральному действию подтверждает, что относительные
+коэффициенты могут быть выведены общим коэффициентом теплового ядра и
+клиффордовым следом после фиксации представленного исчисления, но не одним
+удалением фермионного удвоения
+\cite{v7-half-trace-spectral-review,v7-half-trace-wick-doubling}.
+
+\section{Гессианный итог}
+
+Машинный аудит возвращает для выведенного равного веса
+\begin{equation}
+ (n_-,n_0,n_+)_{0,\,\beta=1}=(21,0,6),
+ \label{eq:v7-half-trace-beta-one-origin}
+\end{equation}
+тогда как условный половинный вес сохраняет
+\begin{equation}
+ (n_-,n_0,n_+)_{0,\,\beta=1/2}=(7,0,20).
+ \label{eq:v7-half-trace-beta-half-origin}
+\end{equation}
+Оба веса дают положительный целевой вакуум, но только второй подавляет все
+двадцать тяжёлых конкурентов уже в нуле.
+
+\begin{theorem}[No-go Real-полуследа для относительной половины]
+Полное Real-удвоение обоих Hodge-блоков и один общий физический полуслед
+сохраняют их исходное отношение $1:1$. Они не выводят $\beta=1/2$.
+Дополнительный полуслед только физического блока формально создаёт нужное
+отношение, но эквивалентен секторному центральному весу и потому запрещён
+входным правилом Тома VII.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет асимметричного полуследа]
+Нельзя применять полуслед повторно только к $\mathcal S_V$ или объявлять
+его двухформой после просмотра гессиана. Половинный вес считается выведенным
+только если общий представленный дифференциальный комплекс заранее помещает
+два блока в разные степени или даёт различную клиффордову кратность.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item Real-кратность рёберного блока: \textbf{два};
+ \item Real-кратность физического блока: \textbf{два};
+ \item один общий физический полуслед: \textbf{сокращает оба удвоения};
+ \item выведенное отношение: \textbf{$\beta=1$};
+ \item его нулевая сигнатура: \textbf{$(21,0,6)$};
+ \item требуемое отношение: \textbf{$\beta=1/2$};
+ \item асимметричный полуслед: \textbf{ручной центральный вес};
+ \item различие текущих степеней формы: \textbf{нет};
+ \item различие текущих клиффордовых кратностей: \textbf{нет};
+ \item итог: \textbf{Real-полуследовой маршрут закрыт};
+ \item следующий гейт: \textbf{представленное исчисление степеней форм и
+ клиффордова следа}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_real_half_trace_curvature_weight_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-half-trace-spectral-review}
+A.~Devastato, M.~A.~Kurkov, F.~Lizzi,
+\emph{Spectral Noncommutative Geometry, Standard Model and all that},
+Int. J. Mod. Phys. A 35 (2020), 2030013; arXiv:1906.09583.
+\bibitem{v7-half-trace-wick-doubling}
+F.~D'Andrea, M.~A.~Kurkov, F.~Lizzi,
+\emph{Wick Rotation and Fermion Doubling in Noncommutative Geometry},
+Phys. Rev. D 94 (2016), 025030; arXiv:1605.03231.
+\end{thebibliography}

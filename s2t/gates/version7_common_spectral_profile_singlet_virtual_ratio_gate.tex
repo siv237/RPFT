@@ -1,0 +1,172 @@
+\chapter{Общий спектральный профиль отношения singlet--virtual}
+\label{ch:v7-common-spectral-profile-singlet-virtual-ratio-gate}
+
+\section{Какой коэффициент должен сократиться}
+
+Совместный гессиан предыдущей главы зависит от двух безразмерных параметров
+$a$ и $\gamma$. Проверим, превращает ли требование одного спектрального
+профиля эту пару в вычисленное число. Для четырёхмерного действия
+\begin{equation}
+ \Tr\chi(D^2/\Lambda^2)
+ \sim f_4\Lambda^4a_0+f_2\Lambda^2a_2+f_0a_4
+ +\frac{f_{-2}}{\Lambda^2}a_6+\cdots
+ \label{eq:v7-common-profile-heat-expansion}
+\end{equation}
+используем соглашение
+\begin{equation}
+ f_0=\chi(0),\qquad
+ f_2=\int_0^\infty\chi(x)\,dx,\qquad
+ f_{-2}=-\chi'(0).
+ \label{eq:v7-common-profile-moments}
+\end{equation}
+Точные численные множители зависят от конечных следов, но распределение
+уровней неизбежно: квадратичный Hodge-уровень приходит с $f_2\Lambda^2$,
+квартика --- с $f_0$, а первый шестирёберный цикл --- с
+$f_{-2}/\Lambda^2$ \cite{v7-common-profile-spectral-action,v7-common-profile-book}.
+
+После измерения всех масс в Hodge-единицах остаётся безразмерный инвариант
+профиля
+\begin{equation}
+ \boxed{R_\chi=\frac{f_2f_{-2}}{f_0^2}.}
+ \label{eq:v7-common-profile-invariant}
+\end{equation}
+Конкретное $a$ получается умножением степени $R_\chi$ на вычислимые конечные
+следовые коэффициенты полного product-оператора. Поэтому общий профиль
+закрывает отношение только в том случае, если сам $R_\chi$ каноничен.
+
+\section{Gaussian-зацепка проекта}
+
+Для чистого теплового профиля
+\begin{equation}
+ \chi_t(x)=e^{-tx},\qquad t>0,
+ \label{eq:v7-common-profile-pure-heat}
+\end{equation}
+имеем
+\begin{equation}
+ f_0=1,\qquad f_2=\frac1t,\qquad f_{-2}=t,
+ \qquad R_{\chi_t}=1.
+ \label{eq:v7-common-profile-gaussian-collapse}
+\end{equation}
+Тем самым Gaussian-линия ранних томов действительно даёт нетривиальную
+подсказку: неизвестный тепловой масштаб сокращается из классического
+отношения моментов. Это положительный частичный результат, а не право
+назначить все конечные следовые множители единицами.
+
+\section{Почему один профиль не равен одному параметру}
+
+Рассмотрим столь же положительный профиль, являющийся смесью двух тепловых
+масштабов:
+\begin{equation}
+ \chi(x)=w e^{-t_1x}+(1-w)e^{-t_2x},
+ \qquad 0<w<1,\quad t_1,t_2>0.
+ \label{eq:v7-common-profile-two-scale-mixture}
+\end{equation}
+Прямой расчёт даёт
+\begin{equation}
+ R_\chi
+ =1+\frac{w(1-w)(t_1-t_2)^2}{t_1t_2}\ge1.
+ \label{eq:v7-common-profile-mixture-ratio}
+\end{equation}
+Равенство достигается только при одном масштабе или на концах смеси. Уже
+$w=1/2$, $t_1=1$, $t_2=4$ даёт
+\begin{equation}
+ R_\chi=\frac{25}{16}\ne1.
+ \label{eq:v7-common-profile-mixture-benchmark}
+\end{equation}
+Следовательно, положительность, гладкость и даже представимость смесью
+тепловых ядер не фиксируют нужное отношение. Чистый Gaussian является
+дополнительным принципом экстремальности профиля.
+
+С другой стороны, часто используемое усечение с плоским профилем в нуле
+имеет
+\begin{equation}
+ \chi'(0)=0\quad\Longrightarrow\quad f_{-2}=0,
+ \label{eq:v7-common-profile-flat-branch}
+\end{equation}
+и тогда классический коэффициент $a_6$ вместе с шестым циклическим словом
+исчезает. Поэтому стандартное трёхмоментное усечение и ненулевой виртуальный
+цикл нельзя использовать одновременно без явного неплоского профиля.
+
+\section{Квантовая граница determinant-веса}
+
+Даже выбор чистого Gaussian решает только классическое отношение
+$a_2:a_4:a_6$. В четырёх измерениях интегрирование двух цветных мостов даёт
+\begin{equation}
+ -3\kappa^2|pq|^2
+ \int\frac{d^4k}{(2\pi)^4}
+ \frac1{(k^2+M_a^2)(k^2+M_b^2)},
+ \label{eq:v7-common-profile-loop-integral}
+\end{equation}
+а этот интеграл логарифмически расходится. Перенормированный коэффициент
+имеет структуру
+\begin{equation}
+ \lambda_{pq}^{\rm ren}(\nu)
+ =\lambda_{pq}^{\rm ct}(\nu)
+ +\lambda_{pq}^{\rm loop}(\nu;M_a,M_b,\kappa).
+ \label{eq:v7-common-profile-renormalized-vertex}
+\end{equation}
+Масштаб согласования и конечная часть контрчлена не определяются голым
+профилем $\chi$. Это стандартная граница однопетлевого исключения тяжёлых
+полей \cite{v7-common-profile-hlm,v7-common-profile-dittmaier}. Поэтому
+физический $\gamma$ совместного потенциала не выводится только из
+$R_\chi=1$.
+
+\begin{theorem}[Gaussian-сокращение и общий профильный no-go]
+Чистый тепловой профиль $e^{-tx}$ точно даёт $R_\chi=1$ независимо от
+$t$ и тем самым сокращает одну классическую свободу отношения Hodge- и
+циклического уровней. Однако общий положительный профиль оставляет
+$R_\chi$ переменным, а плоский в нуле профиль уничтожает шестой цикл.
+Кроме того, четырёхмерный determinant-вес $\gamma$ требует независимого
+перенормировочного условия. Следовательно, требование ``один спектральный
+профиль'' не фиксирует физическое отношение $(a,\gamma)$.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет считать функцию одним числом]
+Нельзя выводить $a$ и $\gamma$ из факта существования общей функции
+отсечения без фиксации её формы, коэффициента полного $a_6$, квантовой меры
+и перенормировочного условия. Нельзя также одновременно пользоваться
+плоским трёхмоментным усечением и ненулевым шестым циклическим членом.
+Gaussian-профиль допускается только как явно названная дополнительная
+гипотеза, а не как следствие спектрального принципа.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item Hodge-квартика: \textbf{уровень $f_0a_4$};
+ \item Hodge-масса: \textbf{уровень $f_2\Lambda^2a_2$};
+ \item шестой цикл: \textbf{уровень $f_{-2}a_6/\Lambda^2$};
+ \item профильный инвариант: \textbf{$R_\chi=f_2f_{-2}/f_0^2$};
+ \item чистый Gaussian: \textbf{$R_\chi=1$};
+ \item положительная двухмасштабная смесь: \textbf{$R_\chi>1$ в общем случае};
+ \item плоский профиль в нуле: \textbf{$f_{-2}=0$, цикл исчезает};
+ \item конечный коэффициент полного $a_6$: \textbf{ещё не вычислен};
+ \item четырёхмерный determinant-контрчлен: \textbf{необходим};
+ \item $\gamma$ фиксирован профилем: \textbf{нет};
+ \item коэффициент-свободное отношение $(a,\gamma)$: \textbf{не получено};
+ \item итог: \textbf{Gaussian-классический частичный проход и общий no-go};
+ \item следующий гейт: \textbf{полный product-$a_6$ коэффициент цикла}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_common_spectral_profile_singlet_virtual_ratio_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-common-profile-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle}, Communications in Mathematical
+Physics 186 (1997), 731--750; arXiv:hep-th/9606001.
+\bibitem{v7-common-profile-book}
+M.~Eckstein, B.~Iochum,
+\emph{Spectral Action in Noncommutative Geometry}, SpringerBriefs in
+Mathematical Physics 27 (2018); arXiv:1902.05306.
+\bibitem{v7-common-profile-hlm}
+B.~Henning, X.~Lu, H.~Murayama,
+\emph{One-loop Matching and Running with Covariant Derivative Expansion},
+Journal of High Energy Physics 01 (2018), 123; arXiv:1604.01019.
+\bibitem{v7-common-profile-dittmaier}
+S.~Dittmaier, S.~Schuhmacher, M.~Stahlhofen,
+\emph{Integrating out heavy fields in the path integral using the
+background-field method}, European Physical Journal C 81 (2021), 826;
+arXiv:2102.12020.
+\end{thebibliography}

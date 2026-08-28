@@ -1,0 +1,158 @@
+\chapter{Общий калибровочный якорь спектрального момента}
+\label{ch:v7-common-gauge-f0-anchor-gate}
+
+\section{Условный словарь коэффициентов}
+
+Предыдущий гейт получил
+\begin{equation}
+ C_0=\frac{f_0}{8\pi^2},
+ \qquad
+ \lambda_E=\frac1{8C_0}=\frac{\pi^2}{f_0}.
+ \label{eq:v7-gauge-anchor-edge-quartic}
+\end{equation}
+Пусть физический калибровочный генератор имеет полный конечный индекс
+\begin{equation}
+ q_G=\Tr_{\mathcal H_F}Q^2.
+ \label{eq:v7-gauge-anchor-total-index}
+\end{equation}
+В конвенции heat-kernel словаря Тома IV коэффициент кривизны равен
+\begin{equation}
+ \frac{C_0q_G}{3}F_{\mu\nu}F^{\mu\nu}.
+ \label{eq:v7-gauge-anchor-curvature-coefficient}
+\end{equation}
+Сопоставление с $F^2/(4g^2)$ условно даёт
+\begin{equation}
+ f_0=\frac{6\pi^2}{q_Gg^2},
+ \qquad
+ \boxed{\lambda_E=\frac{q_G}{6}g^2.}
+ \label{eq:v7-gauge-anchor-conditional-relation}
+\end{equation}
+Для старого относительного $U(1)$-словаря с $q_G=2$ это стало бы
+\begin{equation}
+ \lambda_E=\frac13g^2.
+ \label{eq:v7-gauge-anchor-old-u1-relation}
+\end{equation}
+Таким образом, алгебраическое сокращение $f_0$ не является проблемой.
+Проверяемый вопрос состоит в том, определён ли тот же $q_G$ текущим
+рёберным носителем.
+
+\section{Два неравных конечных следа}
+
+Hodge-родитель использует редуцированное пространство меток
+\begin{equation}
+ \mathcal E_{\rm new}^{\rm red}\simeq\mathbb C^{11},
+ \qquad
+ \Tr_{\rm red}|e\rangle\langle e|=1
+ \quad\text{для каждого ребра }e.
+ \label{eq:v7-gauge-anchor-reduced-edge-trace}
+\end{equation}
+Именно этот незавешенный след дал одинаковые квартичные коэффициенты и
+точный селектор шести рёбер.
+
+Физическая калибровочная кривизна действует иначе. На блоке
+$\operatorname{Hom}(R_s,R_t)$ индуцированный абелев заряд равен
+\begin{equation}
+ q_e=Y_t-Y_s,
+ \qquad
+ \Tr_e F^2\ \mathrel{\propto}\
+ \dim(R_e)q_e^2F^2,
+ \label{eq:v7-gauge-anchor-induced-charge}
+\end{equation}
+а для неабелевых факторов вместо $q_e^2$ входят индексы представлений.
+Следовательно, физический след зависит от раскрытых калибровочных
+кратностей, а не только от числа рёбер \cite{v7-gauge-anchor-beyond-sm}.
+
+Уже на шести выбранных блоках абелевы разности равны
+\begin{equation}
+ \begin{array}{c|cccccc}
+ e&L_LY_R&Q_LY_R&X_LX_R&X_Le_R&X_Lu_R&Y_LY_R\\ \hline
+ Y_t-Y_s&0&-\frac23&0&0&\frac53&0
+ \end{array}.
+ \label{eq:v7-gauge-anchor-selected-charges}
+\end{equation}
+Четыре канала являются синглетными по этому $U(1)$, тогда как два имеют
+разные ненулевые веса. Даже до цветовых и слабых множителей
+\begin{equation}
+ \sum_{e\in E_*}(Y_t-Y_s)^2=\frac{29}{9},
+ \qquad
+ \{q_e^2:e\in E_*\}=\left\{0,\frac49,\frac{25}{9}\right\}.
+ \label{eq:v7-gauge-anchor-nonuniform-index}
+\end{equation}
+Поэтому незавешенный Hodge-след не является физическим gauge-следом.
+
+\section{Почему прямое присоединение не закрывает вопрос}
+
+Можно формально взять блочную сумму физического $H_{15}$ и
+вспомогательного комплекса стрелок и применить одну функцию отсечения.
+Однако тогда калибровочный индекс равен
+\begin{equation}
+ q_G^{\rm tot}=q_G^{H_{15}}+q_G^{\rm edge},
+ \label{eq:v7-gauge-anchor-total-block-index}
+\end{equation}
+где $q_G^{\rm edge}$ требует полного представления каждого
+калибровочно-ковариантного блока. Редуцированная модель $\mathbb C^{11}$
+эти данные стёрла. Положить $q_G^{\rm edge}=0$ нельзя: смешанные рёбра
+явно заряжены. Использовать только старое $q_G^{H_{15}}=2$ также нельзя,
+поскольку тогда Hodge-блок присутствует в потенциале, но удалён из
+кривизностного следа.
+
+Кроме того, нечётный оператор рёбер бимодульно линеен и имеет
+$\Omega^1_{D_E}(\mathcal A_F)=0$. Поэтому он был допущен как
+ассоциированный полевой комплекс, но не как обычная физическая конечная
+спектральная тройка. Теория произведений допускает индуцированные связности
+на таких пучках, но не отождествляет их след с фермионным следом без явного
+модуля и представления \cite{v7-gauge-anchor-product}.
+
+\begin{theorem}[Условное сокращение и запрет старого якоря]
+При заранее фиксированном полном калибровочном индексе $q_G$ один
+спектральный момент действительно даёт
+$\lambda_E=q_Gg^2/6$. Но текущий редуцированный Hodge-носитель считает
+одинаково одиннадцать меток рёбер и не определяет физические индексы их
+представлений. Поэтому значение $q_G=2$ из прежнего физического словаря
+нельзя перенести на новый product-оператор; отношение
+$\lambda_E=g^2/3$ остаётся условным.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет смешения следов]
+Нельзя нормировать gauge-кинетику полным физическим следом, а Hodge-потенциал
+--- незавешенным следом по меткам рёбер и называть их одним спектральным
+действием. Допустим либо полный калибровочно-взвешенный рёберный носитель с
+повторным вычислением потенциала и гессиана, либо явное признание двух
+разных функционалов.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item формальное сокращение $f_0$: \textbf{получено};
+ \item условное отношение: \textbf{$\lambda_E=q_Gg^2/6$};
+ \item старый словарь $q_G=2$: \textbf{$\lambda_E=g^2/3$ условно};
+ \item равные Hodge-веса рёбер: \textbf{да};
+ \item равные gauge-индексы рёбер: \textbf{нет};
+ \item синглетных выбранных каналов по $U(1)$: \textbf{$4$};
+ \item заряженных выбранных каналов по $U(1)$: \textbf{$2$};
+ \item полный $q_G^{\rm edge}$: \textbf{редуцированным носителем не задан};
+ \item перенос прежнего $q_G=2$: \textbf{запрещён};
+ \item итог: \textbf{условная формула и no-go прямого gauge-якоря};
+ \item следующий гейт: \textbf{полный gauge-взвешенный носитель рёбер}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v7_common_gauge_f0_anchor_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v7-gauge-anchor-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle},
+Communications in Mathematical Physics 186 (1997), 731--750;
+arXiv:hep-th/9606001.
+\bibitem{v7-gauge-anchor-beyond-sm}
+W.~D.~van Suijlekom,
+\emph{Going beyond the Standard Model with noncommutative geometry},
+arXiv:1211.0825.
+\bibitem{v7-gauge-anchor-product}
+S.~Brain, B.~Mesland, W.~D.~van Suijlekom,
+\emph{Gauge Theory for Spectral Triples and the Unbounded Kasparov Product},
+Journal of Noncommutative Geometry 10 (2016), 135--206;
+arXiv:1306.1951.
+\end{thebibliography}

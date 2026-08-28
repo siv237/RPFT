@@ -1,0 +1,77 @@
+{
+  "gate": "version7_r2_generalized_fluctuation_seed_origin_gate",
+  "scope": {
+    "finite_vertices": [
+      "Q_L",
+      "L_L",
+      "u_R",
+      "d_R",
+      "e_R"
+    ],
+    "admitted_edge_support": [
+      "Q_L->u_R",
+      "Q_L->d_R",
+      "L_L->e_R"
+    ],
+    "positive_control_R2_support": [
+      "L_L->u_R",
+      "Q_L->e_R"
+    ],
+    "family_lift": "central algebra actions tensor identity on E_aff"
+  },
+  "first_order_source_tensor": {
+    "admitted_seed_maximum_residual": 0.0,
+    "forbidden_R2_seed_maximum_residual": 1.849324200890693,
+    "admitted_seed_double_commutators_all_zero": true,
+    "forbidden_seed_has_nonzero_double_commutator": true
+  },
+  "single_unitary_generalized_fluctuation": {
+    "admitted_seed": {
+      "A1_norm": 4.067028654729107,
+      "A1_opposite_norm": 1.7554167342883506e-16,
+      "A2_norm": 7.879846534485585e-16,
+      "full_gauge_covariance_residual": 2.0770370905276122e-16
+    },
+    "forbidden_R2_positive_control": {
+      "A1_norm": 3.6355355924464936,
+      "A1_opposite_norm": 0.9865458020139982,
+      "A2_norm": 1.9394232634132682,
+      "full_gauge_covariance_residual": 2.9373740229761033e-16
+    },
+    "forbidden_seed_scale_scan": [
+      {
+        "forbidden_seed_scale": 0.25,
+        "A2_norm": 0.48485581585331705,
+        "linearity_residual": 0.0
+      },
+      {
+        "forbidden_seed_scale": 0.5,
+        "A2_norm": 0.9697116317066341,
+        "linearity_residual": 0.0
+      },
+      {
+        "forbidden_seed_scale": 1.0,
+        "A2_norm": 1.9394232634132682,
+        "linearity_residual": 0.0
+      },
+      {
+        "forbidden_seed_scale": 2.0,
+        "A2_norm": 3.8788465268265364,
+        "linearity_residual": 0.0
+      }
+    ]
+  },
+  "analytic_extension": {
+    "any_linear_combination_on_u_d_e_edges_has_A2_zero": true,
+    "tensoring_family_multiplicity_can_change_this": false,
+    "reason": "double commutator vanishes before the family tensor factor"
+  },
+  "verdict": {
+    "nonzero_A2_generated_from_current_admitted_parent": false,
+    "nonzero_A2_requires_first_order_violating_seed": true,
+    "R2_obtained_without_inserting_new_sector": false,
+    "zero_new_vertex_generalized_route_as_derivation": "closed_circular",
+    "generalized_route_as_explicit_new_model": "still_possible",
+    "next_gate": "Real and anomaly completion of the minimal two-mirror-vertex strict cycle"
+  }
+}
