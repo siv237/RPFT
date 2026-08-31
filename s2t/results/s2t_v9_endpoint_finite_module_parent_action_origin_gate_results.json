@@ -1,0 +1,83 @@
+{
+  "conditional_projector_parent": {
+    "ambient_dimension": 24,
+    "disjoint_coordinate_competitor_score": "+3 epsilon",
+    "positive_penalty_has_projector_minima": true,
+    "projector_rank": 3,
+    "rank_three_projector_space_defined_on_H24": true,
+    "satisfied": 5,
+    "seeded_constrained_score_selects_target": true,
+    "target_recovered_from_seed": "P_E=(I-C_E)/2",
+    "target_score": "-3 epsilon",
+    "target_seed_spectrum": {
+      "minus_one": 3,
+      "plus_one": 21
+    },
+    "tested": 5,
+    "triplet_increment_projector_family_commutator_rank": 2,
+    "triplet_increment_projector_is_family_invariant": false,
+    "typed_seed_has_target_negative_eigenspace": true,
+    "unseeded_minimum_is_not_unique": true,
+    "unseeded_minimum_manifold": "Gr_C(3,24)",
+    "unseeded_minimum_real_dimension": 126
+  },
+  "date": "2026-08-31",
+  "fixed_parent_candidates": {
+    "dirac_operator_variation": false,
+    "environment_retyping": false,
+    "inner_fluctuation": false,
+    "kernel_or_condensate_inside_H21": false,
+    "morita_completion_without_new_bimodule": false,
+    "old_operator_algebra_closure": false,
+    "satisfied": 0,
+    "sum_over_finite_geometries": false,
+    "tested": 7
+  },
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_finite_module_parent_action_origin_gate",
+  "ledgers": {
+    "conditional_projector_architecture_satisfied": 5,
+    "conditional_projector_architecture_tested": 5,
+    "finite_module_parent_origin_satisfied": 0,
+    "finite_module_parent_origin_tested": 5,
+    "fixed_parent_module_origin_satisfied": 0,
+    "fixed_parent_module_origin_tested": 7,
+    "raw_physical_slot_closure_satisfied": 0,
+    "raw_physical_slot_closure_tested": 4
+  },
+  "multiplicity_jump": {
+    "delta": [
+      1,
+      1,
+      1
+    ],
+    "integer_multiplicity_tangent_dimension": 0,
+    "l1_size": 3,
+    "new": [
+      1,
+      1,
+      3
+    ],
+    "old": [
+      0,
+      0,
+      2
+    ],
+    "types": [
+      "neutral_plus",
+      "neutral_minus",
+      "charged_minus_one_plus"
+    ]
+  },
+  "next_gate": "version9_endpoint_finite_geometry_configuration_space_admission_gate",
+  "predecessor": "version9_endpoint_extension_minimal_finite_module_architecture_gate",
+  "verdict": {
+    "common_finite_geometry_configuration_space_required": true,
+    "finite_module_physically_derived": false,
+    "fixed_parent_can_change_representation_multiplicity": false,
+    "typed_seed_is_target_loaded": true,
+    "typed_seed_selects_a_family_axis": true,
+    "typed_seed_selects_target_conditionally": true,
+    "unseeded_rank_projector_selects_required_type": false
+  }
+}

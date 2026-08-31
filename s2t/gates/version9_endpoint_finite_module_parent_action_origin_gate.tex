@@ -1,0 +1,214 @@
+\chapter{Parent-action origin конечного endpoint-модуля}
+\label{ch:v9-endpoint-finite-module-parent-origin}
+
+\section{Дискретные данные старой конечной геометрии}
+
+Предыдущий гейт построил минимальную архитектуру, но не её происхождение.
+Старая конечная геометрия имеет фиксированные данные
+\begin{equation}
+ \mathfrak F_{21}=(\mathcal A_{21},H_{21},\pi_{21},J_{21},\Gamma_{21};D_{21}),
+ \qquad D_{21}\in\operatorname{End}(H_{21}).
+ \label{eq:v9-endpoint-parent-fixed-triple}
+\end{equation}
+В спектральном действии и его внутренних флуктуациях варьируется оператор
+$D_{21}$, тогда как $\mathcal A_{21}$, $H_{21}$ и $\pi_{21}$ задают область
+вариации \cite{v9-endpoint-parent-spectral-action,v9-endpoint-parent-dynamic-triple}:
+\begin{equation}
+ \delta D_{21}\in\operatorname{End}(H_{21}),
+ \qquad
+ \delta\dim H_{21}=0,
+ \qquad
+ \delta[\pi_{21}]=0.
+ \label{eq:v9-endpoint-parent-variation-domain}
+\end{equation}
+
+Для трёх затронутых типов запишем кратности как
+\begin{equation}
+ m_{21}=(m_{0,+},m_{0,-},m_{-1,+})=(0,0,2),
+ \qquad
+ m_{24}=(1,1,3).
+ \label{eq:v9-endpoint-parent-multiplicity-vectors}
+\end{equation}
+Требуемый скачок равен
+\begin{equation}
+ \Delta m=m_{24}-m_{21}=(1,1,1),
+ \qquad \lVert\Delta m\rVert_1=3.
+ \label{eq:v9-endpoint-parent-multiplicity-jump}
+\end{equation}
+Кратности являются целочисленными данными representation module и диаграммы
+Краевского \cite{v9-endpoint-parent-krajewski}. В фиксированной компоненте
+пространства полей их касательное пространство нулевое:
+\begin{equation}
+ T_{m_{21}}\mathbb Z_{ge0}^{3}=\{0\},
+ \qquad
+ \frac{\delta S_{21}}{\delta m}\ \text{не определено}.
+ \label{eq:v9-endpoint-parent-zero-multiplicity-tangent}
+\end{equation}
+
+\section{Исчерпание механизмов старого parent}
+
+Полиномиальное, коммутаторное и функциональное исчисление не выходит из
+старой operator algebra:
+\begin{equation}
+ p(D_{21},[D_{21},\pi_{21}(a)],\Gamma_{21},J_{21})
+ \in\operatorname{End}(H_{21}).
+ \label{eq:v9-endpoint-parent-old-operator-closure}
+\end{equation}
+Внутренняя флуктуация также сохраняет carrier и его кратности:
+\begin{equation}
+ D_A=D_{21}+A+\epsilon'J_{21}AJ_{21}^{-1}
+ \in\operatorname{End}(H_{21}),
+ \qquad m(D_A)=m_{21}.
+ \label{eq:v9-endpoint-parent-inner-fluctuation}
+\end{equation}
+Конденсат, kernel или spectral projector старого оператора может выбрать
+лишь подпространство $H_{21}$ и потому не создаёт отсутствующий trivial
+gauge type:
+\begin{equation}
+ K\le_G H_{21}
+ \quad\Longrightarrow\quad
+ \dim\operatorname{Hom}_G(\mathbb C_0,K)=0.
+ \label{eq:v9-endpoint-parent-subspace-no-neutral}
+\end{equation}
+
+Morita/linking completion требует исходного бимодуля; Stinespring-дилатация
+сохраняет различие system/environment; суммы по конечным геометриям и меры
+между диаграммами в старом parent нет. Семь candidate mechanisms дают
+\begin{equation}
+ \begin{aligned}
+ N_{\rm fixed\ parent\ module\ origin}&=0/7,\\
+ \mathcal C_{\rm old}&=\{\delta D,D_A,\operatorname{Alg}(D),\ker D,\\
+ &\hspace{3.5em}\text{Morita},\text{environment},\text{geometry sum}\}.
+ \end{aligned}
+ \label{eq:v9-endpoint-parent-candidate-ledger}
+\end{equation}
+
+\section{Условный projector-parent и его вырождение}
+
+Чтобы увидеть минимально недостающую структуру, временно предположим, что
+$H_{24}$ уже дан, и введём множество rank-three projectors
+\begin{equation}
+ \mathfrak P_3(H_{24})=
+ \{P=P^*=P^2\in\operatorname{End}(H_{24}):\Tr P=3\}.
+ \label{eq:v9-endpoint-parent-projector-space}
+\end{equation}
+Без типизированного ориентира естественный положительный functional
+\begin{equation}
+ V_0(Q)=\kappa\Tr(Q^2-Q)^2
+       +\mu(\Tr Q-3)^2,
+ \qquad Q=Q^*,\quad \kappa,\mu>0,
+ \label{eq:v9-endpoint-parent-projector-potential}
+\end{equation}
+имеет множеством нулевых минимумов весь Grassmannian:
+\begin{equation}
+ \operatorname*{argmin}V_0=\mathfrak P_3(H_{24})
+ \simeq \operatorname{Gr}_{\mathbb C}(3,24),
+ \qquad \dim_{\mathbb R}=2\cdot3\cdot21=126.
+ \label{eq:v9-endpoint-parent-grassmannian-degeneracy}
+\end{equation}
+Следовательно, rank penalty выбирает число новых линий, но не их gauge,
+grading и family type.
+
+Пусть $P_{\mathcal E}$ --- projector на требуемую
+$\mathcal E_{\min}$, и введём оператор с spectral gap
+\begin{equation}
+ C_{\mathcal E}=I_{24}-2P_{\mathcal E},
+ \qquad
+ \Spec C_{\mathcal E}=\{-1^{\times3},+1^{\times21}\}.
+ \label{eq:v9-endpoint-parent-target-seed}
+\end{equation}
+Тогда на constrained configuration space функционал
+\begin{equation}
+ S_C(P)=\varepsilon\Tr(C_{\mathcal E}P),
+ \qquad P\in\mathfrak P_3(H_{24}),\quad\varepsilon>0
+ \label{eq:v9-endpoint-parent-seeded-score}
+\end{equation}
+действительно имеет единственный минимум
+\begin{equation}
+ \operatorname*{argmin}_{P\in\mathfrak P_3(H_{24})}S_C(P)
+ =\{P_{\mathcal E}\},
+ \qquad \min S_C=-3\varepsilon.
+ \label{eq:v9-endpoint-parent-seeded-minimum}
+\end{equation}
+Но этот успех тавтологичен:
+\begin{equation}
+ P_{\mathcal E}=\frac{I_{24}-C_{\mathcal E}}2.
+ \label{eq:v9-endpoint-parent-seed-circularity}
+\end{equation}
+Typed seed уже содержит искомый новый module, а само определение $P$ уже
+предполагает ambient carrier $H_{24}$.
+
+Кроме того, increment-projector выделяет одну координату внутри
+неприводимого family-triplet. На $H_{\rm t}\simeq\mathbb C^3$ для
+$P_{\rm new}=\operatorname{diag}(1,0,0)$ и генератора, смешивающего первые
+две координаты, имеем
+\begin{equation}
+ J_{12}=E_{12}-E_{21},
+ \qquad [J_{12},P_{\rm new}]\ne0,
+ \qquad \rank[J_{12},P_{\rm new}]=2.
+ \label{eq:v9-endpoint-parent-family-projector-obstruction}
+\end{equation}
+По лемме Шура family-инвариантный projector на irreducible triplet может
+быть только $0$ или $I_3$. Значит, target seed не только тавтологичен, но и
+фиксирует семейную ось, если symmetry breaking не введено отдельно.
+
+\section{Итог происхождения}
+
+Итак, условная projector-архитектура математически работоспособна, но
+старое действие не поставляет ни configuration space конечных геометрий,
+ни ambient module, ни нетавтологичный selector:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm conditional\ projector\ architecture}&=5/5,\\
+ N_{\rm finite\ module\ parent\ origin}&=0/5,\\
+ N_{\rm raw\ physical\ slot\ closure}&=0/4.
+ \end{aligned}
+ \label{eq:v9-endpoint-parent-final-ledgers}
+\end{equation}
+
+\begin{theorem}[No-go fixed-parent происхождения endpoint-модуля]
+Вариация спектрального действия и внутренних флуктуаций на фиксированной
+конечной геометрии сохраняет размерность Hilbert carrier и целочисленные
+кратности representation types. Поэтому скачок $(0,0,2)\to(1,1,3)$ не
+может быть стационарным решением старого parent. Rank-three projector-parent
+условно существует лишь после задания $H_{24}$; без typed seed он имеет
+126-мерное многообразие минимумов, а seed с единственным минимумом прямо
+кодирует $P_{\mathcal E}$ и выделяет ось внутри family-triplet.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет target-loaded projector seed]
+Оператор $C_{\mathcal E}=I-2P_{\mathcal E}$ нельзя считать объяснением
+происхождения $\mathcal E_{\min}$: из него projector восстанавливается
+алгебраически. Физический parent обязан сначала определить общее
+configuration space конечных геометрий и нетавтологичную меру или локальный
+закон перехода между его компонентами.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item скачок multiplicity vector: \textbf{$(1,1,1)$};
+\item новых complex lines: \textbf{$3$};
+\item $D$-variation меняет Hilbert module: \textbf{нет};
+\item inner fluctuations меняют multiplicities: \textbf{нет};
+\item fixed-parent candidate origin: \textbf{$0/7$};
+\item rank-three projector architecture: \textbf{$5/5$ условно};
+\item размерность вырожденного Grassmannian: \textbf{$126$};
+\item target seed выбирает $P_{\mathcal E}$: \textbf{да, тавтологично};
+\item increment-projector family-инвариантен: \textbf{нет};
+\item physical parent-origin: \textbf{$0/5$};
+\item следующий гейт: \textbf{admission общего configuration space конечных геометрий}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_finite_module_parent_action_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-endpoint-parent-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle}, arXiv:hep-th/9606001.
+\bibitem{v9-endpoint-parent-krajewski}
+T.~Krajewski, \emph{Classification of Finite Spectral Triples},
+arXiv:hep-th/9701081.
+\bibitem{v9-endpoint-parent-dynamic-triple}
+C.~Rovelli, \emph{Spectral noncommutative geometry and quantization:
+a simple example}, arXiv:gr-qc/9904029.
+\end{thebibliography}

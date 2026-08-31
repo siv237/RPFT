@@ -1,0 +1,51 @@
+{
+  "admission_contract": {
+    "closed_tome8_predecessor": true,
+    "common_K45_L44_baseline_declared": true,
+    "computable_pass_fail_ledger": true,
+    "explicit_stop_rule": true,
+    "four_slots_explicitly_typed": true,
+    "satisfied": 6,
+    "target_loaded_dimensional_inputs_forbidden": true,
+    "tested": 6
+  },
+  "continuous_dependency_audit": {
+    "coordinates": [
+      "E_star",
+      "chi"
+    ],
+    "jacobian_rank": 2,
+    "nonzero_minor": "E_star>0",
+    "outputs": [
+      "E_star",
+      "chi E_star",
+      "hbar/E_star",
+      "chi^2 E_star/hbar"
+    ]
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "four_slot_program": {
+    "common_energy_E_star": "positive_dimensional_scalar",
+    "dimensionless_coupling_chi": "positive_dimensionless_scalar",
+    "endpoint_extension": "discrete_carrier_sector",
+    "transport_primitive": "evolution_law_class"
+  },
+  "gate": "version9_four_slot_dynamic_parent_program_admission_gate",
+  "ledgers": {
+    "constructed_common_parent_satisfied": 0,
+    "constructed_common_parent_tested": 1,
+    "inherited_slot_selection_satisfied": 0,
+    "inherited_slot_selection_tested": 4,
+    "program_admission_satisfied": 6,
+    "program_admission_tested": 6
+  },
+  "next_gate": "version9_four_slot_common_carrier_architecture_gate",
+  "predecessor": "version8_baryon_c0_charged_mediator_common_energy_scale_parent_origin_gate",
+  "verdict": {
+    "four_slot_parent_constructed": false,
+    "next_step_is_common_carrier_architecture": true,
+    "physical_scale_selected": false,
+    "tome9_program_admitted": true
+  }
+}

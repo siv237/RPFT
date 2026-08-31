@@ -32,7 +32,7 @@
 
 Первичная таблица выше сохраняет разбиение исходного прохода. Повторный
 полный проход 2026-08-30 по тому же правилу извлечения с последующими
-инкрементами новых гейтов дал **633** формулосодержащих файла и **6655**
+инкрементами новых гейтов дал **644** формулосодержащих файла и **6797**
 блочные формулы. Прежние числа
 `467/5216` считаются устаревшим снимком, а не текущим итогом.
 
@@ -42,6 +42,7 @@
 
 - документы: [[live-formulas-docs-10]] — 17 формул из 3 файлов;
   [[live-formulas-docs-11]] — 7 формул заключения Тома VIII;
+  [[live-formulas-docs-12]] — 4 формулы введения Тома IX;
 - поздние гейты Version 7: [[live-formulas-gates-version7-49]],
   [[live-formulas-gates-version7-50]], [[live-formulas-gates-version7-51]],
   [[live-formulas-gates-version7-52]];
@@ -95,10 +96,20 @@
   [[live-formulas-gates-version8-80]], [[live-formulas-gates-version8-81]],
   [[live-formulas-gates-version8-82]], [[live-formulas-gates-version8-83]],
   [[live-formulas-gates-version8-84]], [[live-formulas-gates-version8-85]],
-  [[live-formulas-gates-version8-86]].
+  [[live-formulas-gates-version8-86]];
+- гейты Version 9: [[live-formulas-gates-version9-01]] — 7 формул первого
+  admission-гейта; [[live-formulas-gates-version9-02]] — 12 формул общего
+  carrier; [[live-formulas-gates-version9-03]] — 13 формул bounded
+  functional; [[live-formulas-gates-version9-04]] — 11 формул selector-origin;
+  [[live-formulas-gates-version9-05]] — 11 формул raw endpoint-origin;
+  [[live-formulas-gates-version9-06]] — 14 формул finite-module architecture;
+  [[live-formulas-gates-version9-07]] — 18 формул fixed-parent module-origin;
+  [[live-formulas-gates-version9-08]] — 17 формул finite-geometry configuration space;
+  [[live-formulas-gates-version9-09]] — 17 формул typed creation-frame;
+  [[live-formulas-gates-version9-10]] — 18 формул creation source/rate origin.
 
-Новые страницы индексируют 153 дополнительных пути относительно исходного
-снимка. Текущий сводный счёт `633/6655` получен повторным полным проходом и
+Новые страницы индексируют 164 дополнительных пути относительно исходного
+снимка. Текущий сводный счёт `644/6797` получен повторным полным проходом и
 последующими точными инкрементами; он имеет приоритет над суммой
 исторических страничных снимков, часть которых отражает более ранние
 состояния файлов.

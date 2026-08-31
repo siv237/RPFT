@@ -1,0 +1,87 @@
+{
+  "architecture_audit": {
+    "configuration_source_line_is_separate": true,
+    "creation_cell_dimension_is_6": true,
+    "creation_frame_generates_M6": true,
+    "family_closed_target_dimension_is_5": true,
+    "five_creation_channels_are_hilbert_schmidt_orthonormal": true,
+    "gksl_generator_is_trace_preserving_and_reaches_three_new_lines": true,
+    "grading_parities_are_exact": true,
+    "neutral_and_charged_channel_types_are_exact": true,
+    "real_completion_dimension_is_12": true,
+    "satisfied": 10,
+    "tested": 10,
+    "triplet_dissipator_frame_is_family_covariant": true
+  },
+  "creation_cell": {
+    "charged_triplet_target_dimension": 3,
+    "complex_dimension": 6,
+    "generated_algebra": "M6(C)",
+    "generated_algebra_complex_dimension": 36,
+    "independent_creation_channels": 5,
+    "neutral_target_dimension": 2,
+    "real_completed_complex_dimension": 12,
+    "source_dimension": 1
+  },
+  "creation_dynamics": {
+    "new_physical_lines_reached": 3,
+    "new_physical_lines_required": 3,
+    "new_physical_population_rate": "gamma_s+gamma_a+gamma_t",
+    "source_derivative_diagonal": [
+      "-(gamma_s+gamma_a+3 gamma_t)",
+      "gamma_s",
+      "gamma_a",
+      "gamma_t",
+      "gamma_t",
+      "gamma_t"
+    ],
+    "trace_derivative": 0
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_finite_geometry_creation_operator_architecture_gate",
+  "ledgers": {
+    "creation_operator_architecture_satisfied": 10,
+    "creation_operator_architecture_tested": 10,
+    "creation_parent_origin_satisfied": 0,
+    "creation_parent_origin_tested": 4,
+    "endpoint_reachability_satisfied": 3,
+    "endpoint_reachability_tested": 3,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1
+  },
+  "next_gate": "version9_endpoint_finite_geometry_creation_operator_parent_origin_gate",
+  "predecessor": "version9_endpoint_finite_geometry_configuration_space_admission_gate",
+  "typed_frame": {
+    "channel_labels": [
+      "s0",
+      "a0",
+      "eR_t0",
+      "eR_t1",
+      "eR_t2"
+    ],
+    "family_triplet_channel_count": 3,
+    "hilbert_schmidt_gram_rank": 5,
+    "hypercharges": [
+      0,
+      0,
+      -1,
+      -1,
+      -1
+    ],
+    "parities": [
+      1,
+      -1,
+      1,
+      1,
+      1
+    ]
+  },
+  "verdict": {
+    "all_new_endpoint_lines_are_dynamically_reachable": true,
+    "configuration_source_physically_derived": false,
+    "creation_rates_physically_derived": false,
+    "family_covariant_creation_architecture_constructed": true,
+    "physical_endpoint_transition_derived": false
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "configuration_source": {
+    "kernel_dimension": 1,
+    "origin": "normalized_unique_zero_mode_of_phase_laplacian",
+    "physically_derived": true,
+    "projector_rank": 1,
+    "vector": "(1,1,1)/sqrt(3)"
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_finite_geometry_creation_operator_parent_origin_gate",
+  "ledgers": {
+    "configuration_source_origin_satisfied": 1,
+    "configuration_source_origin_tested": 1,
+    "creation_parent_origin_satisfied": 1,
+    "creation_parent_origin_tested": 4,
+    "creation_rate_selector_satisfied": 0,
+    "creation_rate_selector_tested": 5,
+    "endpoint_reachability_satisfied": 3,
+    "endpoint_reachability_tested": 3,
+    "physical_endpoint_selection_satisfied": 0,
+    "physical_endpoint_selection_tested": 1,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "rate_parameter_origin_satisfied": 0,
+    "rate_parameter_origin_tested": 3
+  },
+  "next_gate": "version9_endpoint_creation_bidirectional_kms_completion_architecture_gate",
+  "outward_creation_qms": {
+    "energy_gaps_present": false,
+    "liouvillian_rank": 11,
+    "primitive": false,
+    "reverse_jumps_present": false,
+    "stationary_operator_space_dimension": 25,
+    "stationary_target_corner": "M5(C)"
+  },
+  "predecessor": "version9_endpoint_finite_geometry_creation_operator_architecture_gate",
+  "rate_commutant": {
+    "channel_representation": "1_neutral_even direct_sum 1_neutral_odd direct_sum 3_charged_even",
+    "complex_dimension": 3,
+    "general_positive_matrix": "diag(gamma_s,gamma_a,gamma_t,gamma_t,gamma_t)",
+    "new_population_rates": [
+      3,
+      "11/3"
+    ],
+    "trace_normalized_simplex_dimension": 2,
+    "unphysical_U5_swap_charge_commutator_rank": 2,
+    "unphysical_U5_swap_grading_commutator_rank": 2,
+    "witness_1": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "witness_2": [
+      2,
+      1,
+      "2/3",
+      "2/3",
+      "2/3"
+    ]
+  },
+  "rate_selector_candidates": {
+    "kms_without_reverse_jumps_and_energy_gaps": false,
+    "old_noise_frame_extension": false,
+    "phase_edge_weights": false,
+    "represented_symmetry": false,
+    "satisfied": 0,
+    "tested": 5,
+    "trace_normalization": false
+  },
+  "verdict": {
+    "bidirectional_kms_completion_required": true,
+    "configuration_source_derived_from_phase_graph": true,
+    "outward_creation_qms_has_unique_stationary_state": false,
+    "physical_endpoint_transition_derived": false,
+    "represented_symmetry_selects_rate_ratios": false,
+    "trace_isotropy_is_physically_forced": false
+  }
+}

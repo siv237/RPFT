@@ -1,0 +1,75 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{microtype}
+\usepackage{etoolbox}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{xurl}
+\geometry{margin=2.3cm}
+\setlength{\emergencystretch}{2em}
+\makeatletter
+\patchcmd{\l@chapter}{1.5em}{2.0em}{}{}
+\makeatother
+\input{s2t_paths.tex}
+\graphicspath{{../assets/}}
+
+\newtheorem{definition}{Определение}[chapter]
+\newtheorem{axiom}{Аксиома}[chapter]
+\newtheorem{lemma}{Лемма}[chapter]
+\newtheorem{proposition}{Предложение}[chapter]
+\newtheorem{theorem}{Теорема}[chapter]
+\theoremstyle{remark}
+\newtheorem{remark}{Замечание}[chapter]
+\newtheorem{protocol}{Протокол}[chapter]
+\newtheorem{nogocriterion}{Критерий провала}[chapter]
+
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Str}{Str}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Hess}{Hess}
+
+% Правило Тома IX: новый физический параметр считается выведенным только
+% тогда, когда один общий ограниченный снизу parent выбирает его совместно
+% с носителем, состоянием, транспортом и слепым безразмерным следствием.
+
+\title{Трактат об устройстве мира\\
+Том IX: единый динамический родитель,\\
+физический масштаб и закон транспорта}
+\author{}
+\date{}
+
+\begin{document}
+\pagenumbering{roman}
+\hypersetup{pageanchor=false}
+\maketitle
+\clearpage
+\hypersetup{pageanchor=true}
+\setcounter{page}{1}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+
+\part{От границы Тома VIII к единому родителю}
+
+\input{version9_introduction_and_problem_statement.tex}
+\input{version9_four_slot_dynamic_parent_program_admission_gate.tex}
+\input{version9_four_slot_common_carrier_architecture_gate.tex}
+\input{version9_four_slot_common_parent_functional_architecture_gate.tex}
+\input{version9_four_slot_parent_selector_coefficient_origin_gate.tex}
+\input{version9_endpoint_extension_raw_parent_origin_gate.tex}
+\input{version9_endpoint_extension_minimal_finite_module_architecture_gate.tex}
+\input{version9_endpoint_finite_module_parent_action_origin_gate.tex}
+\input{version9_endpoint_finite_geometry_configuration_space_admission_gate.tex}
+\input{version9_endpoint_finite_geometry_creation_operator_architecture_gate.tex}
+\input{version9_endpoint_finite_geometry_creation_operator_parent_origin_gate.tex}
+\input{version9_endpoint_finite_geometry_creation_operator_parent_origin_gate.tex}
+\input{version9_endpoint_creation_bidirectional_kms_completion_architecture_gate.tex}
+
+\end{document}

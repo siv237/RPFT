@@ -10264,3 +10264,87 @@ quartic normalization vacuum остаётся CP-even.
 - **Search for solution:** проверены scale-orbit, projector-gap witnesses и шесть классов energy candidates. Созданы финальный гейт, машинный аудит, заключение Тома VIII и входной контракт four-slot программы Тома IX.
 - **Expected result:** последний гейт VIII должен либо вывести typed common scale, либо строго перенести положительную parent-конструкцию в новый том без внешней калибровки.
 - **Compliance check:** scale-orbit закрыта `6/6`, common-energy origin `0/6`; гейт классифицирован как final closure Тома VIII, а следующий constructive gate — `version9_four_slot_dynamic_parent_program_admission_gate`. Созданы триада, вопросная, литературная и итоговая synthesis-страницы, 14 gate-формул и 7 формул заключения; реестр `155/155/155`, формульная база `6655/633`. SHA-256 результата `63225f42eb0ad018c851579b808cfe72aa715737ed16c04c6fa4c6ac263b7d81`; пройдены `54` ProofDSL-теста и collect-only, финальный Том VIII собран на `484` страницах без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк.
+
+## [2026-08-31] research | Открытие Тома IX и admission четырёхслотовой программы
+
+- **Problem:** открыть новый том без переноса незакрытого утверждения в статус результата и проверить, корректно ли типизирован поиск одного parent для endpoint, `E_*`, `chi` и transport primitive.
+- **Search for solution:** закреплено уточнённое название Тома VIII; созданы сборщик и введение Тома IX, первая version9-триада, вопросная, исходниковая и synthesis-страницы. Вычислен rank continuous dependency-map, структурные slots отделены от скалярных и проверен шестипунктовый входной контракт.
+- **Expected result:** Том IX должен быть самостоятельной воспроизводимой программой с явным критерием `6/6`, stop-rule и следующим конструктивным узлом общего carrier, но без преждевременного заявления физического масштаба.
+- **Compliance check:** continuous rank `2`, minor `E_*>0`, slot-types `4/4`, admission `6/6`, inherited selection `0/4`, constructed parent `0/1`. Реестр Version 9 равен `1/1/1`, формульная база `6666/635`; SHA-256 результата `72c1424f61968775466f54226b384bde995c9b685d2ee27287ed37d23e43989b`. Пройдены `54` ProofDSL-теста и collect-only; Том VIII пересобран на `484` страницах, Том IX — на `7` страницах без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк. Следующий узел — `version9_four_slot_common_carrier_architecture_gate`.
+
+## [2026-08-31] research | Общий doubled-chain carrier Тома IX
+
+- **Problem:** разместить endpoint menu, полный 44-канальный collision и ещё не выбранные forward/balanced transport-ветви на одном носителе без преждевременного выбора `E_*` и `chi`.
+- **Search for solution:** `H24` разложен на проекторы ranks `21,2,1`; две копии `K45` использованы как активная noise-cell и inverse-flow compensator. Построена общая cell `Xi_IX`, единая локальная алгебра, угловое вложение старого процесса и две transport-ветви на одной цепи.
+- **Expected result:** carrier-архитектура должна поддерживать оба GNVW-класса и все endpoint-секторы, сохраняя различие между структурной реализуемостью и физическим selector.
+- **Compliance check:** `dim Xi_IX=48600`, endpoint ranks `21,2,1`, noise ranks `1,42,2`, transport indices `45/1`; architecture `8/8`, selected slots `0/4`, bounded action `0/1`. Реестр Version 9 равен `2/2/2`, формульная база `6678/636`; SHA-256 результата `4cc0354b45069f1f905e509d8be7056cd09955b91e81ebe1c8eb4d5cc969ebfa`. Пройдены `54` ProofDSL-теста и collect-only; Том IX собран на `10` страницах без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк. Следующий узел — `version9_four_slot_common_parent_functional_architecture_gate`.
+
+## [2026-08-31] research | Bounded functional четырёх slots
+
+- **Problem:** построить на общем carrier одну ограниченную снизу parent-family, способную условно выбрать endpoint, `E_*`, `chi` и transport, не выдавая witness-коэффициенты за физический вывод.
+- **Search for solution:** endpoint menu релаксировано на `Delta2`, transport menu — на interval с двумя физическими границами; для `E_*` и `chi` введены quartic части. Выполнены completion of squares, вычислены минимумы и Hessian, перечислены четыре минимальных selector-пакета.
+- **Expected result:** один functional должен иметь глобальный минимум и generic conditional selection `4/4`, а происхождение коэффициентов должно остаться отдельным строгим гейтом.
+- **Compliance check:** functional architecture `9/9`, conditional selection `4/4`, Hessian `diag(4b_E,4b_chi)>0`; coefficient origin `0/4`, physical parent `0/1`. Реестр Version 9 равен `3/3/3`, формульная база `6691/637`; SHA-256 результата `f575011dc5a2eaae8ab69e16c646a764d243c1318f5e03241cbe72ed9ee30cc0`. Пройдены `54` ProofDSL-теста и collect-only; Том IX собран на `13` страницах без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк. Следующий узел — `version9_four_slot_parent_selector_coefficient_origin_gate`.
+
+## [2026-08-31] research | Parent-origin selector-пакетов Тома IX
+
+- **Problem:** проверить внутреннее происхождение endpoint-score, energy-ratio, coupling-ratio и transport-bias и не смешать условный выбор вершины с raw происхождением endpoint states.
+- **Search for solution:** подсчитаны closure-дефекты трёх endpoint-вариантов, построена score-family; quartic ratios проверены exact witnesses, а forward/balanced transports сопоставлены по пяти общим admission-требованиям.
+- **Expected result:** каждый пакет должен получить selector либо явный witness неединственности; raw carrier origin ведётся отдельным ledger.
+- **Compliance check:** defects `(2,1,0)` выбирают `H24` внутри условного menu; energy и coupling ratios свободны, transport admission равен `5/5` для обеих ветвей. Coefficient origin `1/4`, raw physical slot closure `0/4`, parent `0/1`. Реестр Version 9 равен `4/4/4`, формульная база `6702/638`; SHA-256 результата `a5a25dd619dbef54ed7fad25039b46864daa6a7f55f9041d606b843635d70f76`. Пройдены `54` ProofDSL-теста и collect-only; Том IX собран на `16` страницах без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк. Следующий узел — `version9_endpoint_extension_raw_parent_origin_gate`.
+
+## [2026-08-31] research | Raw endpoint-origin no-go
+
+- **Problem:** проверить, можно ли получить три состояния условного `H24` из raw `H21`, старого frame, noise environment или cotangent doubling без нового representation module.
+- **Search for solution:** построен exact hypercharge operator на `H21`; проверены kernel, algebraic closure, zero-extension `F42`, environment tensor types, grading charged-singlet multiplicity и сохранение multiplicities при doubling.
+- **Expected result:** кандидат обязан совпасть по gauge, grading, family, Real и tensor-factor type; простое совпадение заряда или размерности не считается origin.
+- **Compliance check:** `rank Y21=21`, neutral nullity `0`; шесть candidate classes дали `0/6`. Environment retyping запрещён, минимальный новый module `E_min` имеет complex dimension `3`; raw slot closure `0/4`. Реестр Version 9 равен `5/5/5`, формульная база `6713/639`; SHA-256 результата `2d5fb036067fecd54c86c677fe7f6e47521aa0bfb3df0408a0e08636a4a9e385`. Пройдены `54` ProofDSL-теста и collect-only; после исправления TeX-команды Том IX собран на `19` страницах без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк. Следующий узел — `version9_endpoint_extension_minimal_finite_module_architecture_gate`.
+
+## [2026-08-31] research | Минимальная finite endpoint-архитектура
+
+- **Problem:** построить минимальную finite algebra/module для трёх недостающих endpoint-lines с одновременной gauge, grading, family и Real совместимостью и сохранением старого `H21`-угла.
+- **Search for solution:** neutral matrix units замкнуты в `M2(C)`, charged family triplet — в `M3(C)`; вычислены algebra/centre dimensions, Hermitian increment, commutators и канонический Real-double.
+- **Expected result:** архитектура должна быть faithful и минимальной по matrix-unit closure, но не выдавать новый algebra summand за динамически рождённый.
+- **Compliance check:** `A_min=M2(C) direct_sum M3(C)`, dimensions `13/2`, Hermitian increment `11`, independent states `3`, Real increment `6`; architecture `10/10`, parent-origin `0/1`. Реестр Version 9 равен `6/6/6`, формульная база `6727/640`; SHA-256 результата `5876b8cc778910c746ba7732f0e60cf17b0a09926cfe12fa0d905c936bc49e37`. Пройдены `54` ProofDSL-теста и collect-only; Том IX собран на `23` страницах без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк. Следующий узел — `version9_endpoint_finite_module_parent_action_origin_gate`.
+
+## [2026-08-31] research | Fixed-parent origin конечного endpoint-модуля
+
+- **Problem:** проверить, может ли старое действие породить multiplicity jump `(0,0,2)->(1,1,3)` без предварительной вставки `H24` или target-loaded projector.
+- **Search for solution:** проверены variation domain спектрального действия, inner fluctuations, operator closure, kernels, Morita completion, environment и geometry sum; построен conditional rank-three projector-parent и вычислено его minimum manifold.
+- **Expected result:** физический origin обязан менять discrete finite-module data внутри общего configuration space и не кодировать target в spectral seed.
+- **Compliance check:** multiplicity jump `(1,1,1)`, fixed-parent candidate origin `0/7`; unseeded minimum `Gr_C(3,24)` имеет real dimension `126`, increment-projector family-commutator rank `2`, conditional projector architecture `5/5`, physical origin `0/5`. Реестр Version 9 равен `7/7/7`, формульная база `6745/641`; SHA-256 результата `fe896f4371ce7bc6235d8d44c6d982ec8e5fdf7f6b3c6718351c4d6f6d0e7174`. Пройдены `54` ProofDSL-теста и collect-only; Том IX собран на `27` страницах без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк. Следующий узел — `version9_endpoint_finite_geometry_configuration_space_admission_gate`.
+
+## [2026-08-31] research | Configuration space конечных endpoint-геометрий
+
+- **Problem:** объединить `H21`, `H23`, `H24` в одном finite-geometry configuration space без target-loaded vertex score и проверить, создают ли canonical inclusion-edges новые endpoints.
+- **Search for solution:** построены phase algebra `C^3`, carrier dimension `68`, canonical isometries с defects `2/1`, path Laplacian и self-adjoint block-Dirac; вычислены reducing old subbundle и family edge defect.
+- **Expected result:** архитектура должна хранить все три фазы и connected transition graph, а физическая creation dynamics — иметь ненулевые matrix elements в defect subspaces.
+- **Compliance check:** architecture `9/9`, Laplacian spectrum `(0,1,3)`, block-Dirac rank/nullity `46/22`; old subbundle dimension `63`, unreachable complement `5`, endpoint creation `0/3`, family commutator rank `2`. Реестр Version 9 равен `8/8/8`, формульная база `6762/642`; SHA-256 результата `346876190b6445c9bed0595c28b9036b872185bebbb97b856b98b5679eea0a13`. Пройдены `54` ProofDSL-теста и collect-only; Том IX собран на `31` странице без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк. Следующий узел — `version9_endpoint_finite_geometry_creation_operator_architecture_gate`.
+
+## [2026-08-31] research | Typed creation-frame endpoint-геометрии
+
+- **Problem:** устранить reachability obstruction трёх новых endpoint-lines, не нарушая gauge, grading, family и Real type.
+- **Search for solution:** введена отдельная configuration-source line; два neutral creators дополнены полным charged triplet, вычислены Gram, generated algebra, type commutators, Real-double и GKSL derivative source state.
+- **Expected result:** все три новые physical lines должны получать positive population rate, а charged creator обязан входить в family-complete frame.
+- **Compliance check:** creation cell dimension `6`, five-channel frame порождает `M6(C)` dimension `36`, Real completion `12`; architecture `10/10`, endpoint reachability `3/3`, source/rate origin `0/4`. Реестр Version 9 равен `9/9/9`, формульная база `6779/643`; SHA-256 результата `cfdf08d9f8d43f9878ba143aa613587aa3ed100e7c997adfe86e06f2b4d4ea6f`. Пройдены `54` ProofDSL-теста и collect-only; Том IX собран на `35` страницах без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк. Следующий узел — `version9_endpoint_finite_geometry_creation_operator_parent_origin_gate`.
+
+## [2026-08-31] research | Parent-origin source и creation rates
+
+- **Problem:** проверить, выводятся ли configuration-source и три channel rates из phase graph, gauge/grading/family symmetry и общего trace.
+- **Search for solution:** восстановлена отсутствовавшая триада, вычислены unique zero mode фазового лапласиана, полный Kossakowski commutant, два normalized rate-witness и stationary corner outward-only generator.
+- **Expected result:** source должен получить строгий origin, а остаточная свобода rates — точную размерность и следующий constructive gate.
+- **Compliance check:** source origin `1/1`; commutant dimension `3`, normalized simplex dimension `2`; Liouvillian rank/nullity `11/25`; creation parent-origin `1/4`, rate origin `0/3`. Реестр Version 9 равен `10/10/10`, формульная база `6797/644`; SHA-256 результата `6b6f031e260385f8c5eebeb1248e204ecef0c313301b1a754114a97b7982cc0f`. Пройдены `54` ProofDSL-теста и collect-only; интеграционная сборка продолжена следующим гейтом.
+
+## [2026-08-31] research | Bidirectional KMS completion creation-frame
+
+- **Problem:** устранить 25-мерный stationary corner outward-only dynamics и проверить, даёт ли минимальное KMS-дополнение primitive faithful QMS.
+- **Search for solution:** введены три symmetry-compatible gaps, пять reverse jumps, KMS ratios и Gibbs state; точно вычислены jump algebra, Liouvillian rank и рациональный stationary witness.
+- **Expected result:** paired channels должны закрыть `M6(C)` и unique faithful stationary state, не скрывая происхождение gaps и conductances.
+- **Compliance check:** architecture `10/10`, primitive closure `1/1`, generated algebra dimension `36`, Liouvillian rank/nullity `35/1`, stationary state `diag(12,6,4,3,3,3)/31`; KMS parameter origin `0/6`. Реестр Version 9 равен `11/11/11`, формульная база `6813/645`; SHA-256 результата `a9ef970d91ce13e4b98b87bfcc54678c46e54de7c9fe0b2b79ebdbe03ddf4fb9`. Пройдены `54` ProofDSL-теста и collect-only; Том IX собран на `43` страницах без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк. Следующий узел — `version9_endpoint_creation_kms_gap_conductance_parent_origin_gate`.
+
+## [2026-08-31] research | Parent-origin creation source и rates
+
+- **Problem:** проверить происхождение configuration-source и трёх creation rates после закрытия reachability `3/3`.
+- **Search for solution:** source сопоставлен unique zero mode phase-Laplacian; решён exact commutant пяти channels, построены два trace-normalized witnesses, проверена неphysical `U(5)` isotropy и вычислен stationary kernel outward-only Liouvillian.
+- **Expected result:** source должен выводиться без environment retyping, а rate selector — фиксировать три positive coefficients или явно показать недостающий KMS sector.
+- **Compliance check:** source origin `1/1`, commutant dimension `3`, normalized rate freedom dimension `2`, rate selector `0/5`, rate origin `0/3`; Liouvillian rank `11`, stationary operator dimension `25`, creation parent-origin `1/4`. Реестр Version 9 равен `10/10/10`, формульная база `6797/644`; SHA-256 результата `608577e1a2dd169b6d5c2a891e1373ebaefe0e1a5fd919f0568d2184ccd08cea`. Пройдены `54` ProofDSL-теста и collect-only; Том IX собран на `39` страницах без критических ошибок, неопределённых ссылок, повторных меток и переполненных строк. Следующий узел — `version9_endpoint_creation_bidirectional_kms_completion_architecture_gate`.

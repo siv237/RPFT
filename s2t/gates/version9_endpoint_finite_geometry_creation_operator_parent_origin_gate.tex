@@ -1,0 +1,208 @@
+\chapter{Parent-origin configuration-source и creation rates}
+\label{ch:v9-endpoint-creation-parent-origin}
+
+\section{Configuration-source из фазового лапласиана}
+
+Предыдущая архитектура ввела source line $\mathbb C\Omega_{\rm cfg}$ как
+новый вход. Однако общий phase graph уже имеет Laplacian
+\begin{equation}
+ L_F=\begin{pmatrix}1&-1&0\\-1&2&-1\\0&-1&1\end{pmatrix},
+ \qquad
+ \omega_F=\frac1{\sqrt3}(1,1,1)^T,
+ \qquad L_F\omega_F=0.
+ \label{eq:v9-creation-origin-phase-zero-mode}
+\end{equation}
+Поскольку $\dim\ker L_F=1$, normalized source-projector каноничен:
+\begin{equation}
+ P_\Omega=|\omega_F\rangle\langle\omega_F|
+ =\frac13\begin{pmatrix}1&1&1\\1&1&1\\1&1&1\end{pmatrix},
+ \qquad P_\Omega^2=P_\Omega,
+ \qquad \Tr P_\Omega=1.
+ \label{eq:v9-creation-origin-source-projector}
+\end{equation}
+Phase register не является ни physical endpoint, ни Stinespring
+environment. Поэтому это допустимое внутреннее происхождение:
+\begin{equation}
+ N_{\rm configuration\ source\ origin}=1/1.
+ \label{eq:v9-creation-origin-source-ledger}
+\end{equation}
+
+\section{Полный симметрийный коммутант rates}
+
+На channel space
+\begin{equation}
+ \mathcal C_{\rm cr}=\mathbb C C_s\oplus\mathbb C C_a
+ \oplus\operatorname{span}\{C_0,C_1,C_2\}\simeq\mathbb C^5
+ \label{eq:v9-creation-origin-channel-space}
+\end{equation}
+действуют
+\begin{equation}
+ Y_C=\operatorname{diag}(0,0,-1,-1,-1),
+ \qquad
+ \Gamma_C=\operatorname{diag}(1,-1,1,1,1),
+ \qquad
+ J_a^C=0_2\oplus J_a^{(3)}.
+ \label{eq:v9-creation-origin-channel-representation}
+\end{equation}
+Kossakowski matrix должна удовлетворять
+\begin{equation}
+ K=K^*>0,
+ \qquad [K,Y_C]=[K,\Gamma_C]=[K,J_a^C]=0.
+ \label{eq:v9-creation-origin-kossakowski-constraints}
+\end{equation}
+Точное решение commutant equations имеет вид
+\begin{equation}
+ K=\gamma_sP_s+\gamma_aP_a+\gamma_tP_t
+ =\operatorname{diag}(\gamma_s,\gamma_a,
+ \gamma_t,\gamma_t,\gamma_t),
+ \qquad \gamma_s,\gamma_a,\gamma_t>0.
+ \label{eq:v9-creation-origin-kossakowski-family}
+\end{equation}
+Иными словами,
+\begin{equation}
+ \dim_{\mathbb C}\operatorname{Comm}(Y_C,\Gamma_C,J_1^C,J_2^C,J_3^C)=3.
+ \label{eq:v9-creation-origin-commutant-dimension}
+\end{equation}
+Симметрии выводят block-shape и равенство трёх triplet rates, но не
+относительные веса трёх неэквивалентных blocks.
+
+Соответствующая invariant quadratic form равна
+\begin{equation}
+ \mathcal Q_K(z)=\gamma_s|z_s|^2+\gamma_a|z_a|^2
+ +\gamma_t\lVert z_t\rVert^2.
+ \label{eq:v9-creation-origin-invariant-metric}
+\end{equation}
+Даже convention $\Tr K=5$ оставляет двумерный open simplex
+\begin{equation}
+ \gamma_s+\gamma_a+3\gamma_t=5,
+ \qquad \gamma_s,\gamma_a,\gamma_t>0.
+ \label{eq:v9-creation-origin-normalized-simplex}
+\end{equation}
+
+\section{Два точных normalized witnesses}
+
+Две допустимые matrices
+\begin{equation}
+ K_1=I_5,
+ \qquad
+ K_2=\operatorname{diag}\left(2,1,\frac23,\frac23,\frac23\right)
+ \label{eq:v9-creation-origin-two-witnesses}
+\end{equation}
+обе положительны, имеют trace $5$ и коммутируют со всеми физическими
+симметриями. Однако скорости заполнения новых физических линий различны:
+\begin{equation}
+ r_{\mathcal E}(K_1)=3,
+ \qquad r_{\mathcal E}(K_2)=2+1+\frac23=\frac{11}{3}.
+ \label{eq:v9-creation-origin-witness-rates}
+\end{equation}
+Кроме того, общий scale остаётся clock-orbit:
+\begin{equation}
+ K\longmapsto cK,quad c>0
+ \qquad\Longrightarrow\qquad
+ \mathcal L_K\longmapsto c\mathcal L_K,
+ \quad t\longmapsto t/c.
+ \label{eq:v9-creation-origin-rate-scale-orbit}
+\end{equation}
+
+Полная формальная $U(5)$-isotropy сделала бы $K$ скалярной. Но unitary,
+меняющая $C_a$ и $C_0$, смешивает разные charge/parity blocks:
+\begin{equation}
+ \rank[U_{a0},Y_C]=2,
+ \qquad \rank[U_{a0},\Gamma_C]=2.
+ \label{eq:v9-creation-origin-unphysical-u5}
+\end{equation}
+Поэтому $U(5)$ не является физической симметрией, а trace-isotropic
+$K=I_5$ остаётся каноническим представителем, не selector.
+
+\section{Почему KMS пока не выбирает rates}
+
+Outward-only creation generator имеет большой stationary corner. Для
+$P_{\rm act}=I_6-P_\Omega$ выполнено
+\begin{equation}
+ \mathcal L_{\rm cr}(X)=0
+ \quad\text{для всех }X=P_{\rm act}XP_{\rm act},
+ \qquad
+ \dim\ker\mathcal L_{\rm cr}=25.
+ \label{eq:v9-creation-origin-stationary-corner}
+\end{equation}
+Следовательно, generator не примитивен и не имеет единственного faithful
+stationary state. Detailed balance связывает forward/backward rates только
+после задания Hamiltonian gaps и обратных jumps
+\cite{v9-creation-origin-frigerio,v9-creation-origin-kms}:
+\begin{equation}
+ \frac{\gamma_\alpha^+}{\gamma_\alpha^-}
+ =e^{-\beta\Delta E_\alpha},
+ \qquad
+ \{C_\alpha^*\}\ \text{и }\{\Delta E_\alpha\}
+ \text{ в текущем parent отсутствуют}.
+ \label{eq:v9-creation-origin-missing-kms-data}
+\end{equation}
+
+Пять проверенных candidate mechanisms дают
+\begin{equation}
+ \begin{aligned}
+ N_{\rm creation\ rate\ selector}&=0/5,\\
+ \mathcal C_{\rm rate}&=\{\text{symmetry},\Tr K,\text{phase edges},\\
+ &\hspace{3em}\text{old noise frame},
+ \text{KMS without reverse jumps}\}.
+ \end{aligned}
+ \label{eq:v9-creation-origin-rate-candidate-ledger}
+\end{equation}
+
+\section{Итог parent-origin}
+
+Source line теперь выведена, но три rates и физическая endpoint-фаза не
+выбраны:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm creation\ parent\ origin}&=1/4,\\
+ N_{\rm rate\ parameter\ origin}&=0/3,\\
+ N_{\rm endpoint\ reachability}&=3/3,\\
+ N_{\rm physical\ endpoint\ selection}&=0/1,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-creation-origin-final-ledgers}
+\end{equation}
+
+\begin{theorem}[Частичный parent-origin creation-frame]
+Configuration-source line не является новым физическим входом: она
+канонически совпадает с единственным normalized zero mode фазового
+лапласиана. После gauge, grading и family covariance Kossakowski commutant
+имеет размерность три и оставляет независимые rates
+$(\gamma_s,\gamma_a,\gamma_t)$. Даже при фиксированном trace остаётся
+двумерный simplex, а outward-only generator имеет 25-мерный stationary
+corner. Поэтому полный creation parent не выведен.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет trace-isotropy как физического rate-selector]
+Hilbert--Schmidt orthonormality пяти channels не разрешает автоматически
+положить $K=I_5$. Физическая represented symmetry имеет трёхмерный
+коммутант; большая $U(5)$ смешивает charge и grading. Rate-selection можно
+повысить только после вывода reverse jumps, energy gaps и stationary state
+либо другого parent Hessian на channel space.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item configuration-source origin: \textbf{$1/1$};
+\item channel commutant dimension: \textbf{$3$};
+\item normalized rate freedom: \textbf{двумерный simplex};
+\item physical $U(5)$ isotropy: \textbf{нет};
+\item stationary operator-space dimension: \textbf{$25$};
+\item creation-rate selector: \textbf{$0/5$};
+\item rate parameter origin: \textbf{$0/3$};
+\item creation parent-origin: \textbf{$1/4$};
+\item endpoint reachability: \textbf{$3/3$};
+\item следующий гейт: \textbf{bidirectional KMS completion}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_finite_geometry_creation_operator_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-creation-origin-frigerio}
+A.~Frigerio, \emph{Stationary States of Quantum Dynamical Semigroups},
+Commun. Math. Phys. \textbf{63} (1978), 269--276.
+\bibitem{v9-creation-origin-kms}
+Z.~Ding, B.~Li, L.~Lin, \emph{Efficient quantum Gibbs samplers with
+Kubo--Martin--Schwinger detailed balance condition}, arXiv:2404.05998.
+\end{thebibliography}

@@ -1,0 +1,57 @@
+{
+  "architecture_audit": {
+    "L44_collision_has_one_common_local_algebra": true,
+    "balanced_transport_index_is_1": true,
+    "common_cell_dimension_is_48600": true,
+    "endpoint_projectors_are_orthogonal_and_complete": true,
+    "endpoint_ranks_are_21_2_1": true,
+    "floquet_transport_index_is_45": true,
+    "noise_cell_ranks_are_1_42_2": true,
+    "old_H21_corner_embedding_exists": true,
+    "satisfied": 8,
+    "tested": 8
+  },
+  "carrier": {
+    "common_local_cell": "Xi_IX=H24 tensor K45_right tensor K45_left",
+    "common_local_dimension": 48600,
+    "endpoint_decomposition": "H24=H21 direct_sum Hn2 direct_sum Ht1",
+    "endpoint_ranks": [
+      21,
+      2,
+      1
+    ],
+    "noise_cell_decomposition": "K45=K0_1 direct_sum N42 direct_sum Ech_2",
+    "noise_cell_ranks": [
+      1,
+      42,
+      2
+    ]
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version9_four_slot_common_carrier_architecture_gate",
+  "ledgers": {
+    "bounded_four_slot_action_satisfied": 0,
+    "bounded_four_slot_action_tested": 1,
+    "common_carrier_architecture_satisfied": 8,
+    "common_carrier_architecture_tested": 8,
+    "selected_slots_satisfied": 0,
+    "selected_slots_tested": 4
+  },
+  "next_gate": "version9_four_slot_common_parent_functional_architecture_gate",
+  "predecessor": "version9_four_slot_dynamic_parent_program_admission_gate",
+  "transport_menu": {
+    "balanced": "S45_right tensor inverse(S45_left)",
+    "balanced_gnvw_index": 1,
+    "floquet": "S45_right tensor identity_left",
+    "floquet_gnvw_index": 45,
+    "same_doubled_chain_carrier": true
+  },
+  "verdict": {
+    "endpoint_sector_selected": false,
+    "energy_and_coupling_selected": false,
+    "four_slot_parent_constructed": false,
+    "single_common_carrier_architecture_constructed": true,
+    "transport_law_selected": false
+  }
+}

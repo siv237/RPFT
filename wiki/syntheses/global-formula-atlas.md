@@ -1,4 +1,4 @@
-# Глобальный атлас ключевых формул Томов I--VIII
+# Глобальный атлас ключевых формул Томов I--IX
 
 > Status: working
 > Type: synthesis
@@ -8,7 +8,7 @@
 
 Это каноническая формульная карта проекта для изучения математической и
 физической интуиции. Она собирает итоговые формулы, которые пережили
-заключения, заморозки и ретроспективные аудиты Томов I--VIII, а также точные
+заключения, заморозки и ретроспективные аудиты Томов I--IX, а также точные
 no-go тождества, ограничивающие их смысл.
 
 Атлас не копирует каждую промежуточную строку сотен гейтов. Единицей отбора
@@ -4180,6 +4180,252 @@ four-slot parent Тома IX. См.
 [[version8-baryon-c0-charged-mediator-common-energy-scale-parent-origin-gate]]
 и [[tome8-final-conclusion-and-tome9-program]].
 
+### IX-F1. Четырёхслотовый вход и admission программы
+
+Статус: **строгая типизация программы; construction открыт**.
+
+$$
+\mathcal D_{IX}=\{\mathfrak e_{\rm endpoint},E_*,\chi,
+\mathfrak t_{\rm transport}\},
+\qquad N_{\rm admission}=6/6.
+$$
+
+Непрерывная карта
+`(E_*,chi) -> (E_*,chi E_*,hbar/E_*,chi²E_*/hbar)` имеет rank `2` и
+minor `E_*>0`; endpoint и transport являются структурными типами. Это
+допускает поиск, но не решает его:
+
+$$
+N_{\rm constructed\ common\ parent}=0/1,
+\qquad N_{\rm selected\ slots}=0/4.
+$$
+
+См. [[version9-four-slot-dynamic-parent-program-admission-gate]] и
+[[tome9-opening-contract]].
+
+### IX-F2. Единый doubled-chain carrier
+
+Статус: **строгая условная архитектура; selector открыт**.
+
+$$
+\Xi_{IX}=H_{24}\otimes K_{45}^{\rightarrow}\otimes K_{45}^{\leftarrow},
+\qquad \dim\Xi_{IX}=24\cdot45^2=48600.
+$$
+
+На одной цепи размещены обе допустимые transport-ветви:
+
+$$
+\operatorname{ind}_{\rm GNVW}(S_{45}^{\rightarrow}\otimes I)=45,
+\qquad
+\operatorname{ind}_{\rm GNVW}
+(S_{45}^{\rightarrow}\otimes(S_{45}^{\leftarrow})^{-1})=1.
+$$
+
+Endpoint-projectors имеют ranks `(21,2,1)`, noise-projectors — `(1,42,2)`.
+Architecture закрыта `8/8`, но `N_selected=0/4` и общий bounded action
+остаётся `0/1`. См. [[version9-four-slot-common-carrier-architecture-gate]].
+
+### IX-F3. Одна bounded parent-family четырёх slots
+
+Статус: **условная functional architecture; coefficient-origin открыт**.
+
+$$
+\mathcal S_4=\kappa_e(1-\sum_i p_i^2)+\sum_i\varepsilon_i p_i
++a_EE_*^4-b_EE_*^2+a_\chi\chi^4-b_\chi\chi^2
++\kappa_tq(1-q)+\delta_tq.
+$$
+
+При положительных leading coefficients
+
+$$
+E_*^{\min}=\sqrt{\frac{b_E}{2a_E}},\qquad
+\chi^{\min}=\sqrt{\frac{b_\chi}{2a_\chi}},\qquad
+\Hess_{E_*,\chi}\mathcal S_4=\operatorname{diag}(4b_E,4b_\chi)>0.
+$$
+
+Endpoint выбирается ordering трёх scores, transport — знаком `delta_t`.
+Поэтому conditional selection равно `4/4`, architecture `9/9`, но
+coefficient-origin остаётся `0/4`. См.
+[[version9-four-slot-common-parent-functional-architecture-gate]].
+
+### IX-F4. Частичный origin selector-пакетов
+
+Статус: **строгий частичный selector; raw endpoint открыт**.
+
+$$
+(\nu(H_{21}),\nu(H_{23}),\nu(H_{24}))=(2,1,0),\qquad
+\varepsilon_i=\varepsilon_{\rm ref}+\rho\nu_i,quad\rho>0.
+$$
+
+Closure-score условно выбирает `H24`. Однако quartic ratios `2` и `8` дают
+разные минимумы `1` и `2`, а обе transport-ветви проходят `5/5`. Поэтому
+
+$$
+N_{\rm coefficient\ origin}=1/4,
+\qquad N_{\rm raw\ physical\ slot\ closure}=0/4.
+$$
+
+См. [[version9-four-slot-parent-selector-coefficient-origin-gate]].
+
+### IX-F5. Raw endpoint-origin no-go
+
+Статус: **строгий type-aware no-go**.
+
+$$
+H_{24}=H_{21}\oplus\mathcal E_{\min},\qquad
+\mathcal E_{\min}=\mathbb Cs_0^+\oplus\mathbb Ca_0^-
+\oplus\mathbb Ce_R^{(t,0),+}.
+$$
+
+На raw carrier
+
+$$
+\rank Y_{21}=21,\qquad \ker Y_{21}=0,
+\qquad N_{\rm raw\ endpoint\ candidate\ origin}=0/6.
+$$
+
+Operator closure сохраняет dimension `21`, а noise states имеют неверный
+tensor-factor. Поэтому требуется новый complex module dimension `3`; raw
+physical slot closure остаётся `0/4`. См.
+[[version9-endpoint-extension-raw-parent-origin-gate]].
+
+### IX-F6. Минимальная finite endpoint-алгебра
+
+Статус: **строгая условная архитектура; parent-origin открыт**.
+
+$$
+\mathcal A_{\min}=M_2(\mathbb C)\oplus M_3(\mathbb C),
+\qquad \dim_{\mathbb C}\mathcal A_{\min}=13,
+\qquad \dim Z(\mathcal A_{\min})=2.
+$$
+
+На active block
+
+$$
+H_{24}=H_{\rm rest}^{19}\oplus H_{\rm n}^{2}\oplus H_{\rm t}^{3},
+\qquad \Delta N_{\rm Herm}=13-2=11.
+$$
+
+Три новые independent complex lines дают Real-замкнутый прирост `6`.
+Architecture проходит `10/10`, но module parent-origin остаётся `0/1`.
+См. [[version9-endpoint-extension-minimal-finite-module-architecture-gate]].
+
+### IX-F7. Fixed-parent no-go изменения endpoint-кратностей
+
+Статус: **строгий no-go текущего parent; configuration-space extension открыт**.
+
+$$
+m_{21}=(0,0,2),\qquad m_{24}=(1,1,3),\qquad
+\Delta m=(1,1,1).
+$$
+
+На фиксированной конечной геометрии
+
+$$
+\delta D_{21}\in\operatorname{End}(H_{21}),\qquad
+\delta\dim H_{21}=0,\qquad T_{m_{21}}\mathbb Z_{\ge0}^3=\{0\}.
+$$
+
+Условный rank-three functional без typed seed имеет
+
+$$
+\operatorname*{argmin}V_0=\operatorname{Gr}_{\mathbb C}(3,24),
+\qquad \dim_{\mathbb R}=126.
+$$
+
+Seed `C_E=I-2P_E` выбирает target projector, но одновременно позволяет
+восстановить его как `P_E=(I-C_E)/2`; поэтому origin равен `0/5`, а семь
+механизмов старого parent дают `0/7`. Projector одной новой triplet-линии
+имеет family-commutator rank `2`, то есть seed также выбирает семейную ось. См.
+[[version9-endpoint-finite-module-parent-action-origin-gate]].
+
+### IX-F8. Общее finite-geometry configuration space
+
+Статус: **строгая условная архитектура; creation dynamics открыт**.
+
+$$
+H_\Sigma=H_{21}\oplus H_{23}\oplus H_{24},
+\qquad \dim_{\mathbb C}H_\Sigma=68,
+\qquad \mathcal Z_F\simeq\mathbb C^3.
+$$
+
+Для path graph фаз
+
+$$
+\Spec L_F=\{0,1,3\},\qquad \rank L_F=2,
+\qquad \ker L_F=\mathbb C(1,1,1)^T.
+$$
+
+Canonical block-Dirac имеет rank/nullity `46/22`, но сохраняет reducing
+subbundle
+
+$$
+\dim H_{\rm old}^{\Sigma}=63,
+\qquad [D_\Sigma,P_{\rm old}^{\Sigma}]=0,
+\qquad \dim(H_{\rm old}^{\Sigma})^\perp=5.
+$$
+
+Поэтому configuration architecture закрыта `9/9`, target vertex не выбран,
+а creation reachability новых physical lines остаётся `0/3`. См.
+[[version9-endpoint-finite-geometry-configuration-space-admission-gate]].
+
+### IX-F9. Family-ковариантная endpoint creation-frame
+
+Статус: **строгая условная динамическая архитектура; origin открыт**.
+
+$$
+K_{\rm cr}=\mathbb C\Omega_{\rm cfg}\oplus H_{\rm n}^{2}
+\oplus H_{\rm t}^{3},
+\qquad \dim_{\mathbb C}K_{\rm cr}=6.
+$$
+
+Пять creators удовлетворяют
+
+$$
+\Tr(C_\alpha^*C_\beta)=\delta_{\alpha\beta},
+\qquad \operatorname{Alg}\{P_\Omega,C_\alpha,C_\alpha^*\}=M_6(\mathbb C).
+$$
+
+Для positive rates covariant GKSL generator даёт
+
+$$
+\Tr\!\left(P_{\mathcal E}\mathcal L_{\rm cr}(P_\Omega)\right)
+=\gamma_s+\gamma_a+\gamma_t>0.
+$$
+
+Architecture закрыта `10/10`, endpoint reachability повышена до `3/3`, но
+configuration-source и три rates остаются origin `0/4`. См.
+[[version9-endpoint-finite-geometry-creation-operator-architecture-gate]].
+
+### IX-F10. Частичный origin creation source и rates
+
+Статус: **строгий частичный origin; bidirectional completion открыт**.
+
+$$
+\omega_F=\frac1{\sqrt3}(1,1,1)^T,
+\qquad L_F\omega_F=0,
+\qquad N_{\rm configuration\ source\ origin}=1/1.
+$$
+
+Physical symmetry commutant равен
+
+$$
+K=\operatorname{diag}(\gamma_s,\gamma_a,
+\gamma_t,\gamma_t,\gamma_t),
+\qquad \dim\operatorname{Comm}=3.
+$$
+
+После `Tr K=5` остаётся двумерный simplex. Outward-only generator имеет
+
+$$
+\dim\ker\mathcal L_{\rm cr}=25,
+\qquad N_{\rm creation\ parent\ origin}=1/4,
+\qquad N_{\rm rate\ parameter\ origin}=0/3.
+$$
+
+Следовательно, source выведен, но reverse jumps, gaps и rate ratios ещё нет.
+См. [[version9-endpoint-finite-geometry-creation-operator-parent-origin-gate]].
+
 ## Что ещё требуется добавить
 
 Атлас покрывает канонические формулы итоговых заключений и глобального
@@ -4191,7 +4437,7 @@ four-slot parent Тома IX. См.
 2. наблюдательные формулы Тома II с полным разделением train/blind;
 3. промежуточные, но переиспользуемые формулы второй вариации C6;
 4. семантическая классификация полного [[live-formula-source-index]]:
-   механический слой синхронизирован до 6655 формул из 633 файлов, а
+   механический слой синхронизирован до 6797 формульных блоков из 644 файлов, а
    [[formula-equivalence-and-status-index]] пока закрывает точные повторы
    и консервативные сопоставления с каноническими formula-id.
    [[formula-semantic-atlas-matches]] восстановил сорок

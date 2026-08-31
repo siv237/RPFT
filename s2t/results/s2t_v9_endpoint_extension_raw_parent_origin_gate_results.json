@@ -1,0 +1,76 @@
+{
+  "candidate_origins": {
+    "algebraic_closure_of_End_H21": false,
+    "charged_environment_pair_retyping": false,
+    "cotangent_or_real_operator_doubling": false,
+    "hypercharge_kernel_in_H21": false,
+    "neutral_environment_vacuum_retyping": false,
+    "old_F42_frame_zero_extension": false,
+    "satisfied": 0,
+    "tested": 6
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_extension_raw_parent_origin_gate",
+  "ledgers": {
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "raw_endpoint_candidate_origin_satisfied": 0,
+    "raw_endpoint_candidate_origin_tested": 6,
+    "raw_physical_slot_closure_satisfied": 0,
+    "raw_physical_slot_closure_tested": 4
+  },
+  "next_gate": "version9_endpoint_extension_minimal_finite_module_architecture_gate",
+  "predecessor": "version9_four_slot_parent_selector_coefficient_origin_gate",
+  "raw_H21_certificate": {
+    "dimension": 21,
+    "hypercharge_nullity": 0,
+    "hypercharge_rank": 21,
+    "neutral_trivial_irrep_multiplicity": 0,
+    "operator_closure_changes_module_dimension": false
+  },
+  "required_extension": {
+    "module": "E_min=C s0_plus direct_sum C a0_minus direct_sum C eR_t0_plus",
+    "new_complex_dimension": 3,
+    "states": {
+      "a0": {
+        "charge": 0,
+        "factor": "system_endpoint",
+        "grading": -1
+      },
+      "eR_t0": {
+        "charge": -1,
+        "factor": "system_endpoint",
+        "grading": 1
+      },
+      "s0": {
+        "charge": 0,
+        "factor": "system_endpoint",
+        "grading": 1
+      }
+    }
+  },
+  "type_failure_audit": {
+    "charged_environment_pair": [
+      "tensor_factor",
+      "family_type",
+      "grading"
+    ],
+    "cotangent_double": [
+      "endpoint_representation_multiplicity"
+    ],
+    "environment_vacuum": [
+      "tensor_factor",
+      "grading_multiplicity"
+    ],
+    "old_charged_singlets": [
+      "positive_grading_multiplicity"
+    ]
+  },
+  "verdict": {
+    "environment_states_can_be_retyped_as_endpoints": false,
+    "minimal_new_typed_module_dimension": 3,
+    "new_finite_module_architecture_required": true,
+    "raw_endpoint_extension_derived": false
+  }
+}

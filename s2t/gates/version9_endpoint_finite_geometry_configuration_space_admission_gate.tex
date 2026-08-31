@@ -1,0 +1,188 @@
+\chapter{Допуск общего configuration space конечных endpoint-геометрий}
+\label{ch:v9-endpoint-finite-geometry-configuration-space}
+
+\section{Три фазы как ортогональные компоненты}
+
+Предыдущий no-go требует расширить не одну fibre, а пространство допустимых
+конечных геометрий. Зафиксированное ранее endpoint-меню имеет вложения
+\begin{equation}
+ H_{21}\subset H_{23}=H_{21}\oplus H_{\rm n}^{2}
+ \subset H_{24}=H_{23}\oplus H_{\rm t}^{1},
+ \qquad (\dim H_{21},\dim H_{23},\dim H_{24})=(21,23,24).
+ \label{eq:v9-config-space-phase-chain}
+\end{equation}
+Рассмотрим конечное base-space и его коммутативную phase algebra
+\begin{equation}
+ X_F=\{21,23,24\},
+ \qquad \mathcal Z_F=C(X_F)\simeq\mathbb C^3.
+ \label{eq:v9-config-space-phase-algebra}
+\end{equation}
+Минимальное faithful orthogonal представление всех трёх fibres есть
+\begin{equation}
+ H_\Sigma=H_{21}\oplus H_{23}\oplus H_{24},
+ \qquad \dim_{\mathbb C}H_\Sigma=21+23+24=68.
+ \label{eq:v9-config-space-total-carrier}
+\end{equation}
+Центральные phase-projectors удовлетворяют
+\begin{equation}
+ Q_iQ_j=\delta_{ij}Q_i,
+ \qquad Q_{21}+Q_{23}+Q_{24}=I_{68},
+ \qquad (\rank Q_{21},\rank Q_{23},\rank Q_{24})=(21,23,24).
+ \label{eq:v9-config-space-central-projectors}
+\end{equation}
+Таким образом, включение $H_{24}$ означает наличие кандидата, но не выбор
+физической фазы.
+
+\section{Канонические рёбра и общий Dirac-блок}
+
+Пусть $V:H_{21}\to H_{23}$ и $W:H_{23}\to H_{24}$ --- канонические
+изометрии вложений. Их defect-projectors имеют точные ранги
+\begin{equation}
+ V^*V=I_{21},\qquad VV^*=I_{23}-P_{\rm n},
+ \qquad \rank P_{\rm n}=2,
+ \label{eq:v9-config-space-neutral-isometry}
+\end{equation}
+\begin{equation}
+ W^*W=I_{23},\qquad WW^*=I_{24}-P_{\rm t},
+ \qquad \rank P_{\rm t}=1.
+ \label{eq:v9-config-space-triplet-isometry}
+\end{equation}
+На $H_\Sigma$ определён ближайший соседний self-adjoint operator
+\begin{equation}
+ D_\Sigma=
+ \begin{pmatrix}
+ 0&t_{\rm n}V^*&0\\
+ t_{\rm n}V&0&t_{\rm t}W^*\\
+ 0&t_{\rm t}W&0
+ \end{pmatrix},
+ \qquad t_{\rm n},t_{\rm t}\in\mathbb R\setminus\{0\}.
+ \label{eq:v9-config-space-dirac-block}
+\end{equation}
+Для unit weights точный аудит даёт
+\begin{equation}
+ D_\Sigma^*=D_\Sigma,
+ \qquad \rank D_\Sigma=46,
+ \qquad \dim\ker D_\Sigma=22.
+ \label{eq:v9-config-space-dirac-rank}
+\end{equation}
+Это конечный quiver-type Dirac на уже заданном representation graph
+\cite{v9-config-space-krajewski,v9-config-space-quiver-action}.
+
+\section{Связность без выбора финальной вершины}
+
+Underlying path graph имеет Laplacian
+\begin{equation}
+ L_F=\begin{pmatrix}1&-1&0\\-1&2&-1\\0&-1&1\end{pmatrix}.
+ \label{eq:v9-config-space-laplacian}
+\end{equation}
+Его spectrum и kernel равны
+\begin{equation}
+ \Spec L_F=\{0,1,3\},
+ \qquad \rank L_F=2,
+ \qquad \ker L_F=\mathbb C(1,1,1)^T.
+ \label{eq:v9-config-space-laplacian-spectrum}
+\end{equation}
+Поэтому чистая graph-кинетика
+\begin{equation}
+ S_{\rm graph}(z)=z^*L_Fz\geq0,
+ \qquad \operatorname*{argmin}S_{\rm graph}=\mathbb C(1,1,1)^T
+ \label{eq:v9-config-space-graph-minimum}
+\end{equation}
+выбирает constant mode, а не одну из фаз $21,23,24$. Никакой target-loaded
+вершинный score в configuration space не вставлен.
+
+\section{Reachability obstruction канонических вложений}
+
+Три копии старого модуля образуют подпространство
+\begin{equation}
+ H_{\rm old}^{\Sigma}
+ =H_{21}\oplus V H_{21}\oplus WV H_{21},
+ \qquad \dim H_{\rm old}^{\Sigma}=63.
+ \label{eq:v9-config-space-old-subbundle}
+\end{equation}
+Оно редуцирует канонический Dirac-блок:
+\begin{equation}
+ [D_\Sigma,P_{\rm old}^{\Sigma}]=0.
+ \label{eq:v9-config-space-old-invariance}
+\end{equation}
+Ортогональный остаток содержит две neutral-линии в fibre $23$, их две
+копии в fibre $24$ и новую charged triplet-линию:
+\begin{equation}
+ \dim(H_{\rm old}^{\Sigma})^\perp=68-63=5=2+2+1.
+ \label{eq:v9-config-space-unreachable-defect}
+\end{equation}
+Следовательно, для любого polynomial evolution
+\begin{equation}
+ P_{\rm new}^{\Sigma}p(D_\Sigma)Q_{21}=0
+ \quad\text{для всех }p,
+ \qquad N_{\rm created\ endpoint\ lines}=0/3.
+ \label{eq:v9-config-space-reachability-no-go}
+\end{equation}
+Прямая сумма и connected phase graph связывают названия фаз, но
+канонические inclusions переносят только уже существующие состояния.
+
+Есть и family-дефект фиксированного triplet-вложения. На charged
+$\mathbb C^3$ projector старых двух координат не инвариантен:
+\begin{equation}
+ P_{\rm old,t}=\operatorname{diag}(0,1,1),
+ \qquad \rank[J_{12},P_{\rm old,t}]=2.
+ \label{eq:v9-config-space-family-edge-defect}
+\end{equation}
+Поэтому complete transition-edge должен сам нести family-vector type, а не
+быть фиксированной scalar-изометрией.
+
+\section{Итог допуска}
+
+Общее конечное configuration space построено без выбора target vertex, но
+его канонический Dirac не является оператором рождения:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm configuration\ space\ architecture}&=9/9,\\
+ N_{\rm endpoint\ creation\ reachability}&=0/3,\\
+ N_{\rm physical\ phase\ selector}&=0/1,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-config-space-final-ledgers}
+\end{equation}
+
+\begin{theorem}[Общее finite-geometry configuration space]
+Три endpoint-фазы допускают faithful orthogonal configuration carrier
+$H_\Sigma$ размерности $68$ с phase algebra $\mathbb C^3$, connected
+path-graph и self-adjoint block-Dirac ранга $46$. Архитектура не выбирает
+финальную фазу. Канонические inclusion-edges сохраняют 63-мерный старый
+подноситель и не достигают ни одной из трёх новых физических линий; кроме
+того, charged increment требует family-vector edge.
+\end{theorem}
+
+\begin{nogocriterion}[Связный граф фаз не создаёт новые endpoints]
+Нельзя считать ненулевые off-diagonal blocks между fibres оператором
+рождения, если они являются лишь изометрическими продолжениями старых
+состояний. Необходим ненулевой matrix element из исходной фазы в defect
+subspace и его typed family/gauge/Real completion.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item число finite-geometry phases: \textbf{$3$};
+\item phase algebra: \textbf{$\mathbb C^3$};
+\item common configuration carrier dimension: \textbf{$68$};
+\item inclusion defects: \textbf{$2$ и $1$};
+\item path graph connected: \textbf{да, $\rank L_F=2$};
+\item block-Dirac rank/nullity: \textbf{$46/22$};
+\item target vertex выбран: \textbf{нет};
+\item unreachable configuration directions: \textbf{$5$};
+\item созданные physical endpoint-lines: \textbf{$0/3$};
+\item configuration architecture: \textbf{$9/9$};
+\item следующий гейт: \textbf{архитектура typed creation-оператора}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_finite_geometry_configuration_space_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-config-space-krajewski}
+T.~Krajewski, \emph{Classification of Finite Spectral Triples},
+arXiv:hep-th/9701081.
+\bibitem{v9-config-space-quiver-action}
+C.~I.~Perez-Sanchez, \emph{The Spectral Action on quivers},
+arXiv:2401.03705.
+\end{thebibliography}

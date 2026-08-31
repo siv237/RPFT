@@ -1,0 +1,129 @@
+\chapter{Parent-origin четырёх selector-пакетов}
+\label{ch:v9-four-slot-coefficient-origin}
+
+\section{Четыре пакета после построения functional}
+
+Предыдущий гейт локализовал физически существенные данные как
+\begin{equation}
+ \mathcal C_4=
+ \{\operatorname{ord}(\varepsilon_0,\varepsilon_1,\varepsilon_2),
+ r_E=b_E/a_E,\ r_\chi=b_\chi/a_\chi,
+ \operatorname{sign}\delta_t\}.
+ \label{eq:v9-origin-four-packages}
+\end{equation}
+Проверка должна различать происхождение коэффициентного отношения и
+происхождение самого условного носителя, на котором оно действует.
+
+\section{Endpoint-ordering выводится из closure-дефектов}
+
+Для трёх вложенных endpoint-вариантов число невыполненных обязательных
+структур равно
+\begin{equation}
+ \nu(Q_0)=2,qquad \nu(Q_1)=1,qquad \nu(Q_2)=0.
+ \label{eq:v9-origin-endpoint-violations}
+\end{equation}
+$Q_0=H_{21}$ не содержит neutral linking-pair и family-triplet completion;
+$Q_1=H_{23}$ содержит первую, но не вторую; $Q_2=H_{24}$ содержит обе.
+Поэтому единственная score-family, зависящая только от числа closure-
+дефектов, имеет вид
+\begin{equation}
+ \varepsilon_i=\varepsilon_{\rm ref}+\rho\nu(Q_i),
+ \qquad \rho>0,
+ \label{eq:v9-origin-endpoint-score}
+\end{equation}
+и строго выбирает
+\begin{equation}
+ \varepsilon_2<\varepsilon_1<\varepsilon_0,
+ \qquad p_{\min}=e_2.
+ \label{eq:v9-origin-endpoint-order}
+\end{equation}
+Ordering тем самым имеет структурное происхождение. Однако Том VIII
+установил, что новые состояния $s_0,a_0,e_R^{(t,0)}$ отсутствуют в raw
+$H_{21}$ и не выводятся его алгебраическим замыканием. Значит, вершина
+выбрана только внутри условно допущенного $H_{24}$.
+
+\section{Energy- и coupling-ratios остаются свободными}
+
+Энергетический минимум зависит только от отношения
+\begin{equation}
+ E_*^{\min}=\sqrt{r_E/2}.
+ \label{eq:v9-origin-energy-ratio}
+\end{equation}
+Два bounded parents с $r_E=2$ и $r_E=8$ дают соответственно
+\begin{equation}
+ E_*^{\min}=1,qquad E_*^{\min}=2,
+ \label{eq:v9-origin-energy-witnesses}
+\end{equation}
+при одинаковых симметриях и типах carrier. Это точный witness сохранения
+scale-orbit, уже найденной в конце Тома VIII.
+
+Аналогично
+\begin{equation}
+ \chi^{\min}=\sqrt{r_\chi/2}
+ \label{eq:v9-origin-coupling-ratio}
+\end{equation}
+при $r_\chi=2,8$ даёт $\chi=1,2$. Trace-нормировка $G_0$ фиксирует форму
+interaction, но не отношение quartic и quadratic coefficients.
+
+\section{Две transport-ветви остаются допустимыми}
+
+На общем doubled carrier обе ветви удовлетворяют общим требованиям:
+\begin{equation}
+ N_{\rm forward\ admissibility}=5/5,
+ \qquad N_{\rm balanced\ admissibility}=5/5.
+ \label{eq:v9-origin-transport-admissibility}
+\end{equation}
+Forward-ветвь является явным фундаментальным Флоке-примитивом с индексом
+$45$; balanced-ветвь имеет индекс $1$ и точную depth-two local circuit.
+Входной контракт Тома IX разрешает оба класса, поэтому
+\begin{equation}
+ \operatorname{sign}\delta_t\quad\text{не выбран}.
+ \label{eq:v9-origin-transport-bias}
+\end{equation}
+
+\section{Итоговый реестр}
+
+Из четырёх coefficient packages закрыт только endpoint-ordering:
+\begin{equation}
+ N_{\rm selector\ coefficient\ origin}=1/4.
+ \label{eq:v9-origin-coefficient-ledger}
+\end{equation}
+Но raw-происхождение endpoint-carrier не получено, поэтому полный
+физический реестр строже:
+\begin{equation}
+ N_{\rm raw\ physical\ slot\ closure}=0/4,
+ \qquad N_{\rm physical\ four\ slot\ parent}=0/1.
+ \label{eq:v9-origin-physical-ledger}
+\end{equation}
+
+\begin{theorem}[Частичный origin selector-пакетов]
+Closure-дефекты трёх вложенных endpoint-вариантов канонически дают ordering
+$Q_2<Q_1<Q_0$ и выбирают $H_{24}$ внутри общего условного carrier. Ни
+energy-ratio, ни coupling-ratio, ни transport-bias текущими данными не
+выбираются. Поскольку сами дополнительные endpoint-состояния не имеют raw
+parent-origin, ни один из четырёх физических slots ещё не закрыт полностью.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет подмены ordering происхождением состояния]
+Нельзя считать минимальный closure-дефект доказательством существования
+$s_0,a_0,e_R^{(t,0)}$. Он выбирает лучший элемент уже введённого меню, но
+не порождает меню из $H_{21}$. Аналогично два допустимых transport-класса
+нельзя упорядочить без нового принципа автономности или локальности.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item endpoint closure-defects: \textbf{$(2,1,0)$};
+\item conditional endpoint-ordering: \textbf{выведен};
+\item raw endpoint states: \textbf{не выведены};
+\item energy-ratio origin: \textbf{нет};
+\item coupling-ratio origin: \textbf{нет};
+\item forward transport admissibility: \textbf{$5/5$};
+\item balanced transport admissibility: \textbf{$5/5$};
+\item transport-bias origin: \textbf{нет};
+\item coefficient origin: \textbf{$1/4$};
+\item raw physical slot closure: \textbf{$0/4$};
+\item следующий гейт: \textbf{raw parent-origin endpoint-extension}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_four_slot_parent_selector_coefficient_origin_gate_results.json}.

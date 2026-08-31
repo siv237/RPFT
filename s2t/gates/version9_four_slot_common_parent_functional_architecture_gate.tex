@@ -1,0 +1,139 @@
+\chapter{Архитектура общего четырёхслотового функционала}
+\label{ch:v9-four-slot-common-functional}
+
+\section{Релаксация двух структурных слотов}
+
+Три вложенных endpoint-варианта обозначим
+\begin{equation}
+ Q_0=P_{21},\qquad
+ Q_1=P_{21}+P_{\rm n},\qquad
+ Q_2=P_{21}+P_{\rm n}+P_{\rm t}=I_{24}.
+ \label{eq:v9-functional-endpoint-menu}
+\end{equation}
+Их классический selector живёт на симплексе
+\begin{equation}
+ \Delta_2=\{p=(p_0,p_1,p_2):p_i\geq0,\ p_0+p_1+p_2=1\}.
+ \label{eq:v9-functional-endpoint-simplex}
+\end{equation}
+Переменная $q\in[0,1]$ интерполирует только на уровне parent-данных между
+$T_{\rm F}$ при $q=0$ и $T_{\rm bal}$ при $q=1$; промежуточные значения не
+объявляются физическими transport laws.
+
+\section{Минимальный bounded функционал}
+
+На области
+\begin{equation}
+ \mathfrak M=\Delta_2\times\mathbb R_{\geq0}^{E_*}
+ \times\mathbb R_{\geq0}^{\chi}\times[0,1]^q
+ \label{eq:v9-functional-domain}
+\end{equation}
+рассмотрим одну сумму
+\begin{align}
+ \mathcal S_4(p,E_*,\chi,q)
+ ={}&\kappa_e\left(1-\sum_{i=0}^2p_i^2\right)
+   +\sum_{i=0}^2\varepsilon_i p_i \notag\\
+ &+a_EE_*^4-b_EE_*^2
+   +a_\chi\chi^4-b_\chi\chi^2
+   +\kappa_tq(1-q)+\delta_tq,
+ \label{eq:v9-functional-parent}
+\end{align}
+где
+\begin{equation}
+ \kappa_e,\kappa_t,a_E,b_E,a_\chi,b_\chi>0.
+ \label{eq:v9-functional-sign-domain}
+\end{equation}
+Quartic-части ограничены снизу:
+\begin{equation}
+ a_Ex^4-b_Ex^2
+ =a_E\left(x^2-\frac{b_E}{2a_E}\right)^2
+ -\frac{b_E^2}{4a_E},
+ \label{eq:v9-functional-quartic-completion}
+\end{equation}
+и аналогично для $\chi$. Остальные переменные лежат в компактных областях,
+поэтому $\mathcal S_4$ имеет глобальный минимум.
+
+\section{Условная селекция четырёх slots}
+
+Endpoint-часть является вогнутой функцией на симплексе, следовательно её
+минимум достигается в вершине. При единственном минимальном score
+\begin{equation}
+ \varepsilon_j<\varepsilon_i\quad(i\ne j)
+ \quad\Longrightarrow\quad p=e_j.
+ \label{eq:v9-functional-endpoint-selection}
+\end{equation}
+Непрерывные минимумы единственны в положительной полуоси:
+\begin{equation}
+ E_*^{\min}=\sqrt{\frac{b_E}{2a_E}},
+ \qquad
+ \chi^{\min}=\sqrt{\frac{b_\chi}{2a_\chi}}.
+ \label{eq:v9-functional-continuous-minima}
+\end{equation}
+Transport-часть также вогнута на $[0,1]$, и сравнение границ даёт
+\begin{equation}
+ q_{\min}=0\quad\text{при }\delta_t>0,
+ \qquad
+ q_{\min}=1\quad\text{при }\delta_t<0.
+ \label{eq:v9-functional-transport-selection}
+\end{equation}
+Гессиан по внутренним непрерывным координатам в минимуме равен
+\begin{equation}
+ \Hess_{E_*,\chi}\mathcal S_4
+ =\operatorname{diag}(4b_E,4b_\chi)>0.
+ \label{eq:v9-functional-continuous-hessian}
+\end{equation}
+
+Таким образом, для generic selector-coefficients одна bounded сумма
+условно выбирает все четыре slots:
+\begin{equation}
+ N_{\rm conditional\ slot\ selection}=4/4,
+ \qquad N_{\rm functional\ architecture}=9/9.
+ \label{eq:v9-functional-architecture-ledger}
+\end{equation}
+
+\section{Оставшийся parent-origin}
+
+Физически существенны четыре coefficient-пакета
+\begin{equation}
+ \mathcal C_4=
+ \{\operatorname{ord}(\varepsilon_0,\varepsilon_1,\varepsilon_2),
+ b_E/a_E,\ b_\chi/a_\chi,\ \operatorname{sign}\delta_t\}.
+ \label{eq:v9-functional-coefficient-packages}
+\end{equation}
+Ни один из них не выведен текущим carrier:
+\begin{equation}
+ N_{\rm coefficient\ origin}=0/4,
+ \qquad N_{\rm physical\ four\ slot\ parent}=0/1.
+ \label{eq:v9-functional-origin-ledger}
+\end{equation}
+
+\begin{theorem}[Условная архитектура одного four-slot functional]
+На общем carrier Тома IX существует одна ограниченная снизу полиномиальная
+parent-family, которая при generic коэффициентах имеет единственные
+положительные минимумы $E_*,\chi$, выбирает одну endpoint-вершину и одну из
+двух transport-границ. Поэтому функциональная архитектура закрыта. Однако
+четыре selector-пакета являются входами, а не следствиями текущего parent.
+\end{theorem}
+
+\begin{nogocriterion}[Свидетель минимума не есть физический вывод]
+Численный выбор $\varepsilon$, $a_E,b_E,a_\chi,b_\chi$ или $\delta_t$ может
+служить только witness существования минимума. Его запрещено использовать
+для заявления физического endpoint, абсолютной энергии, coupling или
+transport law до отдельного parent-origin-аудита всех четырёх пакетов.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item одна bounded parent-family: \textbf{построена};
+\item endpoint selection при unique score: \textbf{да};
+\item положительный $E_*$-minimum: \textbf{да};
+\item положительный $\chi$-minimum: \textbf{да};
+\item binary transport selection: \textbf{да};
+\item continuous Hessian: \textbf{положителен};
+\item functional architecture: \textbf{$9/9$};
+\item conditional slot selection: \textbf{$4/4$};
+\item coefficient origin: \textbf{$0/4$};
+\item physical four-slot parent: \textbf{$0/1$};
+\item следующий гейт: \textbf{parent-origin четырёх selector-пакетов}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_four_slot_common_parent_functional_architecture_gate_results.json}.

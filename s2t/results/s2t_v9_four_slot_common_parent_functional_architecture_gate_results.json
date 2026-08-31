@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-31",
+  "exact_minima": {
+    "continuous_hessian": "diag(4 b_E,4 b_chi)",
+    "coupling": "sqrt(b_chi/(2 a_chi))",
+    "endpoint_witness_vertex": "Q2=H24",
+    "energy": "sqrt(b_E/(2 a_E))",
+    "transport": "q=0 if delta_t>0; q=1 if delta_t<0",
+    "witness_hessian": [
+      [
+        8,
+        0
+      ],
+      [
+        0,
+        8
+      ]
+    ]
+  },
+  "floating_point_values": 0,
+  "functional": {
+    "bounded_below": true,
+    "coupling_selector": "a_chi chi^4-b_chi chi^2",
+    "domain": "Delta2 tensor R_nonnegative_E tensor R_nonnegative_chi tensor interval_q",
+    "endpoint_selector": "kappa_e(1-sum p_i^2)+sum epsilon_i p_i",
+    "energy_selector": "a_E E_star^4-b_E E_star^2",
+    "transport_selector": "kappa_t q(1-q)+delta_t q"
+  },
+  "functional_architecture_audit": {
+    "bounded_below_by_quartic_completion": true,
+    "continuous_hessian_is_positive": true,
+    "endpoint_minimum_is_a_simplex_vertex": true,
+    "one_product_domain_for_four_slots": true,
+    "positive_coupling_minimum_exists": true,
+    "positive_energy_minimum_exists": true,
+    "satisfied": 9,
+    "single_polynomial_functional": true,
+    "tested": 9,
+    "transport_minimum_is_a_boundary_class": true,
+    "unique_endpoint_score_selects_one_vertex": true
+  },
+  "gate": "version9_four_slot_common_parent_functional_architecture_gate",
+  "ledgers": {
+    "conditional_slot_selection_satisfied": 4,
+    "conditional_slot_selection_tested": 4,
+    "functional_architecture_satisfied": 9,
+    "functional_architecture_tested": 9,
+    "physical_coefficient_origin_satisfied": 0,
+    "physical_coefficient_origin_tested": 4,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1
+  },
+  "next_gate": "version9_four_slot_parent_selector_coefficient_origin_gate",
+  "predecessor": "version9_four_slot_common_carrier_architecture_gate",
+  "selector_coefficient_packages": {
+    "coupling_ratio_b_chi_over_a_chi": false,
+    "endpoint_score_order": false,
+    "energy_ratio_b_E_over_a_E": false,
+    "satisfied": 0,
+    "tested": 4,
+    "transport_bias_sign": false
+  },
+  "verdict": {
+    "all_four_slots_conditionally_selectable": true,
+    "one_bounded_four_slot_functional_family_constructed": true,
+    "physical_four_slot_parent_constructed": false,
+    "selector_coefficients_physically_derived": false
+  }
+}

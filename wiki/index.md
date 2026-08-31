@@ -7,6 +7,58 @@
 Это навигационный каталог вики проекта. Его следует читать перед ответом на
 исследовательские вопросы и перед добавлением новых источников.
 
+- [[version9-endpoint-finite-geometry-creation-operator-parent-origin-gate]] —
+  phase zero mode выводит source (`1/1`), но rate commutant dimension `3`,
+  rate origin `0/3`, creation parent-origin `1/4`.
+- [[endpoint-creation-parent-origin-sources-2026]] — stationary QMS, KMS и
+  граница между trace-isotropic representative и physical rate selector.
+- [[version9-endpoint-finite-geometry-creation-operator-architecture-gate]] —
+  five-channel frame порождает `M6(C)`, architecture `10/10` и устраняет
+  endpoint reachability defect как `3/3`; source/rates origin `0/4`.
+- [[endpoint-creation-operator-sources-2026]] — GKSL creation dynamics и
+  необходимость полного family-triplet frame.
+- [[version9-endpoint-finite-geometry-configuration-space-admission-gate]] —
+  phase algebra `C^3` и carrier dimension `68` проходят `9/9`, но canonical
+  edges сохраняют old subbundle `63` и создают endpoint-lines `0/3`.
+- [[finite-geometry-configuration-space-sources-2026]] — finite triples,
+  quiver Dirac и граница между graph connectivity и state creation.
+- [[version9-endpoint-finite-module-parent-action-origin-gate]] — fixed
+  spectral parent не меняет multiplicities; candidate origin `0/7`, а
+  unseeded rank-three parent имеет `Gr_C(3,24)` размерности `126`.
+- [[endpoint-parent-action-origin-sources-2026]] — spectral action,
+  Krajewski multiplicities и граница target-loaded projector seed.
+- [[version9-endpoint-extension-minimal-finite-module-architecture-gate]] —
+  минимальная endpoint-алгебра `M2(C) direct_sum M3(C)` проходит `10/10`,
+  требует три new complex states и сохраняет `H21` как угол.
+- [[endpoint-finite-module-sources-2026]] — neutral linking, family triplet
+  и Real-double как источники finite-module архитектуры.
+- [[version9-endpoint-extension-raw-parent-origin-gate]] — `H21` имеет
+  neutral nullity `0`; шесть candidate origins дали `0/6`, необходим новый
+  трёхмерный complex endpoint-module.
+- [[endpoint-raw-origin-sources-2026]] — type-aware аудит system,
+  environment и cotangent carriers.
+- [[version9-four-slot-parent-selector-coefficient-origin-gate]] —
+  endpoint-ordering внутри условного carrier выведен из defects `(2,1,0)`,
+  но raw slot closure остаётся `0/4`; следующий узел проверяет raw endpoint.
+- [[four-slot-selector-origin-sources-2026]] — endpoint-, scale-, coupling-
+  и transport-certificates, использованные в origin-аудите.
+- [[version9-four-slot-common-parent-functional-architecture-gate]] — одна
+  bounded parent-family условно выбирает `4/4` slots; architecture `9/9`,
+  но происхождение четырёх coefficient packages равно `0/4`.
+- [[four-slot-functional-architecture-sources-2026]] — bounded quartic,
+  simplex-vertex и transport-boundary механизмы селекции.
+- [[version9-four-slot-common-carrier-architecture-gate]] — единая
+  удвоенная cell размерности `48600` несёт endpoint menu, `L44` и transport
+  с индексами `45/1`; architecture `8/8`, selector остаётся `0/4`.
+- [[four-slot-common-carrier-sources-2026]] — наследование `H24`, `K45` и
+  GNVW-границы в общей цепной архитектуре.
+- [[tome9-opening-contract]] — Том IX открыт как поиск одного parent для
+  endpoint, `E_*`, `chi` и transport primitive; admission пройден `6/6`.
+- [[version9-four-slot-dynamic-parent-program-admission-gate]] — четыре
+  slot-типа независимы, continuous rank равен `2`, construction остаётся
+  `0/1`; следующий узел строит общий carrier.
+- [[tome9-four-slot-program-sources-2026]] — входные результаты Тома VIII,
+  образующие строгую границу новой программы.
 - [[tome8-final-conclusion-and-tome9-program]] — Том VIII завершён как
   operator/dynamic closure; Том IX должен построить один four-slot parent.
 - [[version8-baryon-c0-charged-mediator-common-energy-scale-parent-origin-gate]] —

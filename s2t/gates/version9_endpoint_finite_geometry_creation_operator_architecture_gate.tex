@@ -1,0 +1,193 @@
+\chapter{Архитектура typed creation-оператора endpoint-геометрии}
+\label{ch:v9-endpoint-creation-operator}
+
+\section{Минимальная source-cell}
+
+Configuration-space no-go показал, что inclusion-edges не входят в defect
+subspaces. Введём отдельную configuration-source line
+\begin{equation}
+ \mathbb C\Omega_{\rm cfg},
+ \qquad Y\Omega_{\rm cfg}=0,
+ \qquad \Gamma\Omega_{\rm cfg}=+\Omega_{\rm cfg},
+ \qquad R\Omega_{\rm cfg}=\Omega_{\rm cfg}.
+ \label{eq:v9-creation-source-line}
+\end{equation}
+Она не является physical endpoint и не отождествляется с noise environment.
+Минимальная family-замкнутая active cell должна содержать не только три
+новые линии, но полный charged triplet:
+\begin{equation}
+ K_{\rm cr}=\mathbb C\Omega_{\rm cfg}\oplus H_{\rm n}^{2}
+ \oplus H_{\rm t}^{3},
+ \qquad \dim_{\mathbb C}K_{\rm cr}=1+2+3=6.
+ \label{eq:v9-creation-cell}
+\end{equation}
+
+В ортонормированном базисе
+$\{\Omega,s_0,a_0,e_R^{(t,0)},e_R^{(t,1)},e_R^{(t,2)}\}$ определим пять
+creation channels
+\begin{equation}
+ C_s=|s_0\rangle\langle\Omega|,
+ \qquad C_a=|a_0\rangle\langle\Omega|,
+ \qquad C_r=|e_R^{(t,r)}\rangle\langle\Omega|,quad r=0,1,2.
+ \label{eq:v9-creation-channels}
+\end{equation}
+Их Hilbert--Schmidt Gram и source/range relations равны
+\begin{equation}
+ \Tr(C_\alpha^*C_\beta)=\delta_{\alpha\beta},
+ \qquad C_\alpha^*C_\beta=\delta_{\alpha\beta}P_\Omega,
+ \qquad \sum_{\alpha=1}^{5}C_\alpha C_\alpha^*=P_{\rm act}.
+ \label{eq:v9-creation-frame-relations}
+\end{equation}
+Поскольку $C_\alpha C_\beta^*=|\alpha\rangle\langle\beta|$, frame вместе с
+adjoints порождает полный active linking block:
+\begin{equation}
+ \operatorname{Alg}\{P_\Omega,C_\alpha,C_\alpha^*\}_{\alpha=1}^{5}
+ =M_6(\mathbb C),
+ \qquad \dim_{\mathbb C}=36.
+ \label{eq:v9-creation-generated-algebra}
+\end{equation}
+
+\section{Gauge, grading и family type}
+
+На source-cell hypercharge равен
+\begin{equation}
+ Y_{\rm cr}=\operatorname{diag}(0,0,0,-1,-1,-1).
+ \label{eq:v9-creation-hypercharge}
+\end{equation}
+Поэтому creation channels имеют точные charges
+\begin{equation}
+ [Y_{\rm cr},C_s]=[Y_{\rm cr},C_a]=0,
+ \qquad [Y_{\rm cr},C_r]=-C_r.
+ \label{eq:v9-creation-charge-types}
+\end{equation}
+При
+\begin{equation}
+ \Gamma_{\rm cr}=\operatorname{diag}(1,1,-1,1,1,1)
+ \label{eq:v9-creation-grading}
+\end{equation}
+каналы однородны по parity:
+\begin{equation}
+ \Gamma_{\rm cr}C_s\Gamma_{\rm cr}=C_s,
+ \qquad \Gamma_{\rm cr}C_a\Gamma_{\rm cr}=-C_a,
+ \qquad \Gamma_{\rm cr}C_r\Gamma_{\rm cr}=C_r.
+ \label{eq:v9-creation-parities}
+\end{equation}
+
+Family transformation действует на $(C_0,C_1,C_2)$ как на vector. Поэтому
+равновесная triplet-сумма не зависит от выбора оси:
+\begin{equation}
+ C_r\longmapsto\sum_q R_{rq}C_q,quad R\in SO(3),
+ \qquad \sum_r\mathcal D_{C_r}\longmapsto\sum_r\mathcal D_{C_r}.
+ \label{eq:v9-creation-family-covariance}
+\end{equation}
+Именно поэтому один charged creator недостаточен: minimal covariant frame
+имеет $2+3=5$ каналов.
+
+Real completion функториально добавляет conjugate frame:
+\begin{equation}
+ \widehat K_{\rm cr}=K_{\rm cr}\oplus\overline K_{\rm cr},
+ \qquad \dim_{\mathbb C}\widehat K_{\rm cr}=12,
+ \qquad \widehat C_\alpha=C_\alpha\oplus JC_\alpha J^{-1}.
+ \label{eq:v9-creation-real-double}
+\end{equation}
+
+\section{Creation-QMS и точная достижимость}
+
+На density matrices определим GKSL generator
+\cite{v9-creation-lindblad,v9-creation-covariant-qms}
+\begin{equation}
+ \mathcal L_{\rm cr}(\rho)=
+ \gamma_s\mathcal D_{C_s}(\rho)+\gamma_a\mathcal D_{C_a}(\rho)
+ +\gamma_t\sum_{r=0}^{2}\mathcal D_{C_r}(\rho),
+ \qquad \gamma_s,\gamma_a,\gamma_t>0,
+ \label{eq:v9-creation-gksl}
+\end{equation}
+где
+$\mathcal D_C(\rho)=C\rho C^*-\frac12\{C^*C,\rho\}$.
+Для source state $\rho_\Omega=P_\Omega$ получаем
+\begin{equation}
+ \begin{aligned}
+ \mathcal L_{\rm cr}(P_\Omega)
+ &=\gamma_sP_s+\gamma_aP_a+\gamma_tP_t\\
+ &\quad-(\gamma_s+\gamma_a+3\gamma_t)P_\Omega,
+ \end{aligned}
+ \qquad P_t=\sum_{r=0}^{2}P_{t,r}.
+ \label{eq:v9-creation-initial-derivative}
+\end{equation}
+След сохраняется точно:
+\begin{equation}
+ \Tr\mathcal L_{\rm cr}(P_\Omega)=0.
+ \label{eq:v9-creation-trace-preservation}
+\end{equation}
+
+Projector на три физически новые линии равен
+\begin{equation}
+ P_{\mathcal E}=P_s+P_a+P_{t,0}.
+ \label{eq:v9-creation-new-projector}
+\end{equation}
+Его начальная скорость заполнения положительна и покомпонентна:
+\begin{equation}
+ \Tr\!\left(P_{\mathcal E}\mathcal L_{\rm cr}(P_\Omega)\right)
+ =\gamma_s+\gamma_a+\gamma_t>0,
+ \qquad N_{\rm endpoint\ reachability}=3/3.
+ \label{eq:v9-creation-reachability}
+\end{equation}
+Таким образом, typed creation frame устраняет reachability obstruction
+предыдущего гейта.
+
+\section{Архитектурный и origin-реестры}
+
+Математическая архитектура закрывается, но configuration-source и rates не
+унаследованы из старого parent:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm creation\ operator\ architecture}&=10/10,\\
+ N_{\rm endpoint\ reachability}&=3/3,\\
+ N_{\rm creation\ parent\ origin}&=0/4
+ \quad\{\Omega_{\rm cfg},\gamma_s,\gamma_a,\gamma_t\},\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-creation-final-ledgers}
+\end{equation}
+
+\begin{theorem}[Минимальная family-ковариантная creation-frame]
+Одна configuration-source line и пять homogeneous creation channels
+порождают $M_6(\mathbb C)$ на active cell, допускают 12-мерное Real
+completion и задают trace-preserving covariant GKSL generator. Из source
+state все три недостающие physical endpoint-lines получают строго
+положительную начальную population rate. Пять каналов минимальны при
+сохранении полного charged family-triplet.
+\end{theorem}
+
+\begin{nogocriterion}[Creation architecture не есть происхождение source]
+Нельзя считать endpoint-модуль выведенным только из существования пяти
+jump operators. Configuration-source line, три положительные rates и их
+масштаб должны возникнуть из общего parent, а не быть импортированы как
+новая среда или калибровочные параметры.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item configuration-source dimension: \textbf{$1$};
+\item family-closed active target dimension: \textbf{$5$};
+\item creation-cell dimension: \textbf{$6$};
+\item independent creation channels: \textbf{$5$};
+\item generated algebra: \textbf{$M_6(\mathbb C)$};
+\item Real-completed dimension: \textbf{$12$};
+\item trace preservation: \textbf{да};
+\item endpoint reachability: \textbf{$3/3$};
+\item architecture ledger: \textbf{$10/10$};
+\item parent-origin source/rates: \textbf{$0/4$};
+\item следующий гейт: \textbf{parent-origin creation source и rates}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_finite_geometry_creation_operator_architecture_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-creation-lindblad}
+G.~Lindblad, \emph{On the Generators of Quantum Dynamical Semigroups},
+Commun. Math. Phys. \textbf{48} (1976), 119--130.
+\bibitem{v9-creation-covariant-qms}
+R.~Balu, \emph{Covariant Ergodic Quantum Markov Semigroups via Systems of
+Imprimitivity}, arXiv:2102.09984.
+\end{thebibliography}

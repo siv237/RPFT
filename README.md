@@ -78,7 +78,7 @@ Git-истории у файлов нет — завезены одним ком
 | `s2t/gates/` (602) | Гейт-документы `*.tex`: `version3_*` (27), `version4_*` (115), ветви `version5_*`, `version6_*`, `version7_*`, `version8_*` и тематические пространства | [Активно] |
 | `s2t/audits/` (729) | Вычислительные аудиты `*.py` (включая аудиты Томов VI–VIII) | [Активно] |
 | `s2t/results/` (751) | Численные результаты `*.json`, парные к аудитам по имени | [Активно] |
-| `s2t/docs/` (45) | Тома, интеграционные тексты и файлы сборки; Том VIII открыт как программа полного корреляционного ядра и межсекторной сшивки | [Активно] |
+| `s2t/docs/` | Тома, интеграционные тексты и файлы сборки; Том VIII завершён, Том IX открыт как программа единого динамического parent | [Активно] |
 | `s2t/assets/` (24) | Графики `*.png` и PDF верхнего уровня (`ugsm_dynamics_audit-3.pdf` и др.) | [Справочно] |
 | `s2t/proofdsl/` | Prism-safe pure-Python LCF eDSL: точные SymPy-типы, морфизмы, представления, GKSL-конструктор, опциональный Z3 и тесты | [Активно] |
 
@@ -117,6 +117,18 @@ Git-истории у файлов нет — завезены одним ком
 | `version7_final_conclusion_and_next_program.tex` | Итог по десяти задачам Тома VII: качественный универсальный класс, точные запреты количественного чтения и три условия возможного продолжения | [Активно] |
 | `tome8_s2t_correlation_transition.tex` | Том VIII завершён: 155 содержательных гейтов; полное ядро, QMS, 42-channel dynamics и условный charged mediator получены, four-slot physical parent и общий `E_*` не выведены | [Справочно—Активно] |
 | `version8_final_conclusion_and_next_program.tex` | Итог Тома VIII и входной контракт Тома IX: единый parent должен выбрать endpoint, `E_*`, `chi` и transport primitive | [Активно] |
+| `tome9_s2t_dynamic_parent.tex` | Том IX — единый динамический родитель, физический масштаб и закон транспорта; программа открыта admission-гейтом `6/6` | [Активно] |
+| `version9_introduction_and_problem_statement.tex` | Входной контракт Тома IX: четыре независимых слота, шесть критериев успеха и запрет target-loaded калибровки | [Активно] |
+| `../gates/version9_four_slot_dynamic_parent_program_admission_gate.tex` | Первый гейт Тома IX: continuous rank `2`, четыре независимых slot-типа и admission `6/6`; общий parent остаётся `0/1` | [Активно] |
+| `../gates/version9_four_slot_common_carrier_architecture_gate.tex` | Общий carrier `H24 tensor K45 tensor K45` размещает endpoint menu, `L44` и transport-ветви индексов `45/1` в одной алгебре; architecture `8/8`, selector `0/4` | [Активно] |
+| `../gates/version9_four_slot_common_parent_functional_architecture_gate.tex` | Одна bounded polynomial parent-family условно выбирает endpoint, `E_*`, `chi` и transport (`4/4`); coefficient origin остаётся `0/4` | [Активно] |
+| `../gates/version9_four_slot_parent_selector_coefficient_origin_gate.tex` | Closure-defects выбирают условный endpoint `H24`, но energy, coupling и transport-bias свободны; coefficient origin `1/4`, raw slot closure `0/4` | [Активно] |
+| `../gates/version9_endpoint_extension_raw_parent_origin_gate.tex` | Type-aware no-go: raw `H21`, `F42`, noise и cotangent carriers не создают три состояния `H24`; candidate origin `0/6`, требуется новый complex module dimension `3` | [Активно] |
+| `../gates/version9_endpoint_extension_minimal_finite_module_architecture_gate.tex` | Минимальная endpoint-алгебра `M2(C) direct_sum M3(C)`: complex dimension `13`, Hermitian increment `11`, architecture `10/10`; dynamic parent-origin открыт | [Активно] |
+| `../gates/version9_endpoint_finite_module_parent_action_origin_gate.tex` | Fixed-parent no-go: multiplicity jump `(1,1,1)` не является вариацией `D`; candidate origin `0/7`, unseeded projector minima образуют `Gr_C(3,24)` real dimension `126`, target seed тавтологичен | [Активно] |
+| `../gates/version9_endpoint_finite_geometry_configuration_space_admission_gate.tex` | Три endpoint-фазы образуют carrier `H21 direct_sum H23 direct_sum H24` dimension `68` с phase algebra `C^3`; architecture `9/9`, block-Dirac rank `46`, creation reachability `0/3` | [Активно] |
+| `../gates/version9_endpoint_finite_geometry_creation_operator_architecture_gate.tex` | Configuration-source и five-channel family frame порождают `M6(C)`; GKSL architecture `10/10`, endpoint reachability `3/3`, source/rate parent-origin `0/4` | [Активно] |
+| `../gates/version9_endpoint_finite_geometry_creation_operator_parent_origin_gate.tex` | Unique phase zero mode выводит configuration-source; channel commutant dimension `3`, normalized rate simplex dimension `2`, rate origin `0/3`, creation parent-origin `1/4` | [Активно] |
 | `version8_introduction_and_problem_statement.tex` | Краткий входной контракт Тома VIII: отсев старых вариантов, происхождение нового объекта, рабочая/нулевая гипотезы и стоп-критерий | [Активно] |
 | `version8_temporary_boundary_and_retrospective_return.tex` | Теоретический переход после локального барионного запрета: объясняет временную остановку и выводит следующий вопрос об отображении полного пространства полей в шум | [Активно] |
 | `../gates/version8_field_to_noise_chain_map_pullback_metric_gate.tex` | Точный полево-шумовой изоморфизм: ранг 42, нулевое ядро, 504 калибровочных тождества и перенос `G_поле=K`; динамическая мобильность остаётся отдельным вопросом | [Активно] |

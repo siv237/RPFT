@@ -1,0 +1,154 @@
+\chapter{Архитектура общего носителя четырёх слотов}
+\label{ch:v9-four-slot-common-carrier}
+
+\section{Endpoint-меню как внутреннее разложение}
+
+Минимальный ранее допущенный endpoint-carrier имеет вид
+\begin{equation}
+ H_{24}=H_{21}\oplus H_{
+m n}\oplus H_{
+m t},
+ \qquad \dim H_{
+m n}=2,
+ \qquad \dim H_{
+m t}=1.
+ \label{eq:v9-common-carrier-endpoint-splitting}
+\end{equation}
+Обозначим соответствующие ортогональные проекторы через
+$P_{21},P_{
+m n},P_{
+m t}$. Тогда
+\begin{equation}
+ P_iP_j=\delta_{ij}P_i,
+ \qquad P_{21}+P_{
+m n}+P_{
+m t}=I_{24},
+ \qquad (\rank P_{21},\rank P_{
+m n},\rank P_{
+m t})=(21,2,1).
+ \label{eq:v9-common-carrier-endpoint-projectors}
+\end{equation}
+Тем самым old, neutral-linking и family-triplet endpoint-секторы являются
+подпространствами одного носителя, а не тремя сменяемыми Hilbert spaces.
+
+\section{Почему требуется удвоенная цепная ячейка}
+
+Шумовая ячейка Тома VIII уже имеет разложение
+\begin{equation}
+ K_{45}=K_0\oplus N_{42}\oplus E_{
+m ch},
+ \qquad (\dim K_0,\dim N_{42},\dim E_{
+m ch})=(1,42,2).
+ \label{eq:v9-common-carrier-noise-cell}
+\end{equation}
+Односторонний перенос имеет индекс $45$, тогда как локально допустимая
+index-balanced ветвь требует компенсирующего обратного потока. Поэтому
+общая локальная ячейка программы IX определяется как
+\begin{equation}
+ \Xi_{IX}=H_{24}\otimes K_{45}^{\rightarrow}
+ \otimes K_{45}^{\leftarrow},
+ \qquad \dim\Xi_{IX}=24\cdot45^2=48600.
+ \label{eq:v9-common-carrier-xi}
+\end{equation}
+На одной и той же двусторонней цепи действуют две transport-ветви
+\begin{equation}
+ T_{
+m F}=S_{45}^{\rightarrow}\otimes I,
+ \qquad
+ T_{\rm bal}=S_{45}^{\rightarrow}\otimes
+ (S_{45}^{\leftarrow})^{-1}.
+ \label{eq:v9-common-carrier-transport-menu}
+\end{equation}
+Их точные индексы равны
+\begin{equation}
+ \operatorname{ind}_{\rm GNVW}(T_{
+m F})=45,
+ \qquad
+ \operatorname{ind}_{\rm GNVW}(T_{
+m bal})=45\cdot45^{-1}=1.
+ \label{eq:v9-common-carrier-transport-indices}
+\end{equation}
+Вторая ячейка является spectator в первой ветви и компенсатором во второй.
+
+\section{Общая алгебра локальных данных}
+
+Все локальные объекты теперь принадлежат одной алгебре
+\begin{equation}
+ \mathcal A_{IX}^{\rm cell}=\operatorname{End}(\Xi_{IX}).
+ \label{eq:v9-common-carrier-algebra}
+\end{equation}
+Старый процесс вкладывается по карте
+\begin{equation}
+ X\longmapsto P_{21}XP_{21}\otimes|0\rangle\langle0|
+ \otimes|0\rangle\langle0|,
+ \label{eq:v9-common-carrier-old-embedding}
+\end{equation}
+а полный collision действует на первом environment-факторе:
+\begin{equation}
+ G(E_*,\chi)=\chi E_*G_0\otimes I_{45}^{\leftarrow},
+ \qquad
+ \mathcal L_{44}=\mathcal L_{42}
+ +(\chi E_*)^2(\mathcal D_{L_-}+\mathcal D_{L_+}).
+ \label{eq:v9-common-carrier-collision-family}
+\end{equation}
+Здесь формула задаёт общую operator-family, но не выбирает $E_*$ или
+$\chi$.
+
+Локальный положительный reference-parent можно записать без смены
+пространства:
+\begin{equation}
+ h_{\Xi}=h_{24}\otimes I\otimes I
+ +I\otimes h_{45}\otimes I
+ +I\otimes I\otimes h_{45}\geq0.
+ \label{eq:v9-common-carrier-reference-parent}
+\end{equation}
+Его форма совместима с обеими transport-ветвями, но его коэффициенты и
+endpoint-ground sector ещё не выведены.
+
+\section{Архитектурный реестр}
+
+Машинный аудит проверяет восемь условий:
+\begin{equation}
+ N_{\rm common\ carrier\ architecture}=8/8.
+ \label{eq:v9-common-carrier-architecture-ledger}
+\end{equation}
+При этом физический selector отсутствует:
+\begin{equation}
+ N_{\rm selected\ slots}=0/4,
+ \qquad N_{\rm bounded\ four\ slot\ action}=0/1.
+ \label{eq:v9-common-carrier-open-ledger}
+\end{equation}
+
+\begin{theorem}[Общий carrier четырёхслотовой программы]
+Удвоенная цепь с локальной ячейкой
+$\Xi_{IX}=H_{24}\otimes K_{45}^{\rightarrow}\otimes K_{45}^{\leftarrow}$
+одновременно содержит все допущенные endpoint-секторы, полный
+$44$-канальный collision и две transport-ветви с индексами $45$ и $1$.
+Все объекты представлены в одной локальной алгебре, а старый процесс
+восстанавливается точным угловым ограничением. Это закрывает архитектуру
+общего носителя, но не выбирает четыре физических слота.
+\end{theorem}
+
+\begin{nogocriterion}[Общий носитель не является общим действием]
+Прямая сумма endpoint-секторов не выбирает физический угол, а наличие двух
+transport-операторов не выбирает закон переноса. Параметрическая семья
+$G(E_*,\chi)$ также не является стационарным уравнением для $E_*$ и $\chi$.
+Поэтому результат `8/8` запрещено читать как построение four-slot parent.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item endpoint carrier: \textbf{$H_{24}=21+2+1$};
+\item noise cell: \textbf{$K_{45}=1+42+2$};
+\item общий local carrier: \textbf{$\dim\Xi_{IX}=48600$};
+\item old sector является углом: \textbf{да};
+\item полный collision живёт на $\Xi_{IX}$: \textbf{да};
+\item Floquet index: \textbf{$45$};
+\item balanced index: \textbf{$1$};
+\item архитектурный реестр: \textbf{$8/8$};
+\item выбранные slots: \textbf{$0/4$};
+\item bounded four-slot action: \textbf{$0/1$};
+\item следующий гейт: \textbf{архитектура общего four-slot functional}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_four_slot_common_carrier_architecture_gate_results.json}.

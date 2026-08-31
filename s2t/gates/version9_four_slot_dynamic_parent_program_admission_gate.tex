@@ -1,0 +1,90 @@
+\chapter{Admission четырёхслотовой программы динамического parent}
+\label{ch:v9-four-slot-program-admission}
+
+\section{Наследуемая граница}
+
+Последний гейт Тома VIII оставил минимальный пакет
+\begin{equation}
+ \mathcal D_{IX}=\{\mathfrak e_{\rm endpoint},E_*,\chi,
+ \mathfrak t_{\rm transport}\},
+ \qquad N_{\rm inherited\ selection}=0/4.
+ \label{eq:v9-admission-inherited-data}
+\end{equation}
+Непрерывная часть пакета действительно двумерна. Для карты
+\begin{equation}
+ F(E_*,\chi)=\left(E_*,\chi E_*,\frac{\hbar}{E_*},
+ \chi^2\frac{E_*}{\hbar}\right)
+ \label{eq:v9-admission-continuous-map}
+\end{equation}
+её якобиан имеет ранг два, поскольку
+\begin{equation}
+ \det\frac{\partial(E_*,\chi E_*)}{\partial(E_*,\chi)}=E_*>0.
+ \label{eq:v9-admission-jacobian-minor}
+\end{equation}
+Endpoint и transport не являются дополнительными вещественными
+коэффициентами: это соответственно дискретный тип носителя и класс закона
+эволюции. Тем самым четыре слота типизированы и не дублируют друг друга.
+
+\section{Шесть admission-требований}
+
+До поиска конкретного функционала фиксируется проверяемый контракт
+\begin{equation}
+ \mathfrak C_{IX}=\{C_1,C_2,C_3,C_4,C_5,C_6\}.
+ \label{eq:v9-admission-contract}
+\end{equation}
+Он требует: закрытого predecessor, явного списка четырёх слотов, общего
+baseline-carrier $K_{45}$ и процесса $\mathcal L_{44}$, вычислимого
+pass/fail-ledger, запрета target-loaded размерных данных и явного
+stop-rule. Машинный аудит даёт
+\begin{equation}
+ N_{\rm admission}=6/6.
+ \label{eq:v9-admission-ledger}
+\end{equation}
+
+Этот результат допускает исследовательскую программу, но не подтверждает
+существование искомого действия. В частности,
+\begin{equation}
+ N_{\rm constructed\ common\ parent}=0/1,
+ \qquad N_{\rm selected\ slots}=0/4.
+ \label{eq:v9-admission-construction-ledger}
+\end{equation}
+
+\section{Первый конструктивный объект}
+
+Следующий гейт обязан построить один carrier
+\begin{equation}
+ \mathcal K_{IX}\supset K_{45},
+ \qquad
+ \mathfrak e_{\rm endpoint}\in\operatorname{Sect}(\mathcal K_{IX}),
+ \label{eq:v9-admission-common-carrier-target}
+\end{equation}
+на котором локальный parent, $44$-канальная динамика и transport primitive
+записаны без переключения между несовместимыми пространствами.
+
+\begin{theorem}[Admission программы Тома IX]
+Четыре остаточных слота Тома VIII имеют независимые типы; непрерывная
+подкарта имеет точный ранг два, а endpoint и transport являются
+структурными, а не скалярными координатами. Все шесть требований входного
+контракта вычислимы и выполнены. Поэтому поиск единого динамического parent
+корректно открыт, но сам parent и выбор физических значений ещё не получены.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет преждевременной калибровки]
+До построения общего carrier и одного ограниченного снизу action запрещено
+фиксировать $E_*$ наблюдаемой массой, выбирать $\chi$ по lifetime или
+объявлять конкретный сдвиг фундаментальным transport law. Любое такое
+присваивание нарушает admission-контракт.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item predecessor Тома VIII: \textbf{закрыт};
+\item независимых slots: \textbf{$4$};
+\item rank непрерывной карты: \textbf{$2$};
+\item admission contract: \textbf{$6/6$};
+\item построенный общий parent: \textbf{$0/1$};
+\item выбранные slots: \textbf{$0/4$};
+\item следующий гейт: \textbf{архитектура общего четырёхслотового carrier}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_four_slot_dynamic_parent_program_admission_gate_results.json}.

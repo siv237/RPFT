@@ -6,7 +6,7 @@
 
 ## Summary
 
-Это каноническая точка входа в доказательный статус Томов I--VIII. Реестр
+Это каноническая точка входа в доказательный статус Томов I--IX. Реестр
 отделяет строгие положительные результаты от условных модельных результатов,
 закрытых маршрутов и действительно открытых задач. Он не заменяет первичные
 гейты, аудиты и результаты, а связывает их на уровне всей программы.
@@ -17,7 +17,7 @@
 рождение наблюдаемой материи пока не построены.
 
 Покрытие страницы: все итоговые утверждения уровня канонических заключений и
-заморозок Томов I--VIII. Промежуточные гейты не копируются полностью; их
+заморозок Томов I--IX. Промежуточные гейты не копируются полностью; их
 детальные допущения и численные сертификаты остаются на связанных страницах
 вопросов и в первичных триадах.
 
@@ -1953,6 +1953,141 @@ parent-origin `0/6`.
   `E_*`, `chi` и transport primitive образуют программу Тома IX.
 - Первичные страницы: [[version8-baryon-c0-charged-mediator-common-energy-scale-parent-origin-gate]], [[tome8-final-conclusion-and-tome9-program]].
 
+### Admission четырёхслотовой программы Тома IX
+
+- **Строго:** четыре остаточных слота имеют независимые типы; непрерывная
+  dependency-map по `(E_*,chi)` имеет rank `2` и minor `E_*>0`.
+- **Строго:** шесть требований входного контракта выполнены (`6/6`), включая
+  запрет target-loaded размерной калибровки и явный stop-rule.
+- **Открыто:** общий carrier и ограниченный снизу parent не построены
+  (`0/1`); ни один из четырёх слотов не выбран (`0/4`).
+- **Следующий узел:** `version9_four_slot_common_carrier_architecture_gate`.
+- Первичная триада: [[version9-four-slot-dynamic-parent-program-admission-gate]].
+
+### Общий carrier четырёхслотовой программы
+
+- **Строго внутри условных расширений:** `H24` раскладывается на endpoint-
+  секторы ranks `21,2,1`, а `K45` — на noise-секторы `1,42,2`.
+- **Строго:** doubled-chain cell `H24 tensor K45 tensor K45` имеет
+  размерность `48600` и несёт forward/balanced transport с GNVW-индексами
+  `45` и `1` на одной алгебре.
+- **Закрыто архитектурно:** восемь carrier-проверок пройдены (`8/8`), старый
+  `H21`-процесс восстанавливается угловым ограничением.
+- **Открыто:** endpoint, transport, `E_*` и `chi` не выбраны (`0/4`), общий
+  bounded four-slot action отсутствует (`0/1`).
+- Первичная триада: [[version9-four-slot-common-carrier-architecture-gate]].
+
+### Архитектура одного four-slot functional
+
+- **Строго:** quartic completion делает одну polynomial parent-family
+  ограниченной снизу и даёт положительный continuous Hessian
+  `diag(4b_E,4b_chi)`.
+- **Строго условно:** unique endpoint-score, два положительных quartic ratios
+  и знак transport-bias выбирают все четыре slots (`4/4`).
+- **Закрыто архитектурно:** девять проверок functional shape пройдены
+  (`9/9`).
+- **Открыто:** ordering endpoint-scores, `b_E/a_E`, `b_chi/a_chi` и знак
+  transport-bias имеют physical origin `0/4`; physical parent равен `0/1`.
+- Первичная триада: [[version9-four-slot-common-parent-functional-architecture-gate]].
+
+### Parent-origin selector-пакетов
+
+- **Строго условно:** closure-defects `(2,1,0)` выводят ordering
+  `H24<H23<H21` внутри уже допущенного endpoint menu.
+- **Строгое no-go:** energy- и coupling-ratios `2,8` дают разные положительные
+  минимумы при одинаковой архитектуре; их origin отсутствует.
+- **Строго:** forward и balanced transport проходят одинаковый admission
+  `5/5`, поэтому transport-bias не выбран.
+- **Граница:** coefficient origin повышен до `1/4`, но raw endpoint states не
+  выведены; physical slot closure остаётся `0/4`, parent — `0/1`.
+- Первичная триада: [[version9-four-slot-parent-selector-coefficient-origin-gate]].
+
+### Raw parent-origin endpoint-extension
+
+- **Строго:** hypercharge на `H21` имеет rank `21`, nullity `0`; neutral
+  trivial representation отсутствует.
+- **Строго:** algebraic closure и старый `F42` остаются операторами на
+  `H21` и не создают новый representation module.
+- **Строгий type-no-go:** neutral/charged noise states принадлежат environment
+  factor; их retyping разрушает Stinespring partial trace. Cotangent/Real
+  doubling также не меняет endpoint multiplicities.
+- **Итог:** шесть candidate classes дали `0/6`; минимально требуется
+  `E_min=C s0+ direct_sum C a0- direct_sum C eR_t0+`, complex dimension `3`.
+- Первичная триада: [[version9-endpoint-extension-raw-parent-origin-gate]].
+
+### Минимальная finite-module endpoint-архитектура
+
+- **Строго:** neutral matrix-unit closure равно `M2(C)`, family-covariant
+  charged-triplet closure равно `M3(C)`.
+- **Строго:** direct sum имеет complex dimension `13`, centre dimension `2`;
+  относительно старого active `D2` добавляется `11` Hermitian directions.
+- **Строго:** нужны ровно три independent complex system states; Real-double
+  принудительно даёт шесть coordinates и сохраняет old `H21` как угол.
+- **Закрыто архитектурно:** gauge/grading/family/Real ledger `10/10`.
+- **Открыто:** новый algebra summand не выведен parent action (`0/1`).
+- Первичная триада: [[version9-endpoint-extension-minimal-finite-module-architecture-gate]].
+
+### Fixed-parent origin конечного endpoint-модуля
+
+- **Строго:** переход к `H24` требует multiplicity jump
+  `(0,0,2)->(1,1,3)`, то есть `(1,1,1)`.
+- **Строгое no-go текущего parent:** вариация `D`, inner fluctuations,
+  operator closure, kernels, Morita без нового бимодуля, environment retyping
+  и отсутствующая geometry sum дают `0/7`.
+- **Строго условно:** rank-three projector-parent на уже данном `H24`
+  математически допустим (`5/5`).
+- **Строго:** без typed seed его minimum manifold есть `Gr_C(3,24)` real
+  dimension `126`; seed с unique target тавтологичен, поскольку
+  `P_E=(I-C_E)/2`, и имеет family-commutator rank `2` на новой triplet-линии.
+- **Граница:** physical finite-module origin остаётся `0/5`; требуется новое
+  общее configuration space конечных геометрий.
+- Первичная триада: [[version9-endpoint-finite-module-parent-action-origin-gate]].
+
+### Configuration space конечных endpoint-геометрий
+
+- **Строго условно:** три preregistered phases имеют faithful orthogonal
+  carrier `H21⊕H23⊕H24` dimension `68` и central algebra `C^3`.
+- **Строго:** path Laplacian имеет spectrum `(0,1,3)`, rank `2` и constant
+  kernel; graph kinetic не выбирает final vertex.
+- **Строго:** self-adjoint block-Dirac имеет rank/nullity `46/22`.
+- **Строгое reachability no-go:** old subbundle dimension `63` редуцирует
+  block-Dirac; complement dimension `5` недостижим, endpoint creation `0/3`.
+- **Строго:** fixed charged inclusion имеет family-commutator rank `2`,
+  поэтому complete edge должен нести family-vector type.
+- **Граница:** configuration architecture `9/9`, physical phase selector
+  `0/1`, four-slot parent `0/1`.
+- Первичная триада: [[version9-endpoint-finite-geometry-configuration-space-admission-gate]].
+
+### Typed creation-operator endpoint-геометрии
+
+- **Строго условно:** source line плюс active target `2+3` дают creation cell
+  complex dimension `6`; Real completion имеет dimension `12`.
+- **Строго:** five-channel Hilbert--Schmidt frame порождает полный `M6(C)`.
+- **Строго:** два neutral channels имеют charges `0`, charged triplet — `-1`;
+  grading parities равны `(+,-,+,+,+)`.
+- **Строго:** общая triplet rate делает dissipator family-covariant.
+- **Строго:** GKSL derivative сохраняет trace и даёт positive population
+  rate `gamma_s+gamma_a+gamma_t` на трёх новых physical lines.
+- **Граница:** architecture `10/10`, reachability `3/3`, но source/rate
+  parent-origin `0/4`, four-slot parent `0/1`.
+- Первичная триада: [[version9-endpoint-finite-geometry-creation-operator-architecture-gate]].
+
+### Parent-origin creation source и rates
+
+- **Строго:** normalized constant mode `(1,1,1)/sqrt(3)` единственного
+  kernel phase-Laplacian выводит configuration-source (`1/1`).
+- **Строго:** commutant channel representation `1+1+3` имеет dimension `3`
+  и форму `diag(gamma_s,gamma_a,gamma_t I3)`.
+- **Строгое no-go:** trace normalization оставляет двумерный simplex; два
+  exact positive witnesses дают разные physical population rates.
+- **Строго:** формальная `U(5)` isotropy нарушает charge и grading с
+  commutator ranks `2/2`.
+- **Строго:** outward-only Liouvillian имеет rank `11`, stationary operator
+  space dimension `25` и не является primitive.
+- **Граница:** creation parent-origin `1/4`, rate origin `0/3`; требуется
+  reverse-jump/KMS architecture.
+- Первичная триада: [[version9-endpoint-finite-geometry-creation-operator-parent-origin-gate]].
+
 После каждого финального гейта или заморозки ветви необходимо:
 
 1. добавить или изменить одну запись с устойчивым идентификатором;
@@ -1967,7 +2102,7 @@ parent-origin `0/6`.
 
 - [[global-formula-atlas]] — формульное представление этого реестра с
   интуицией и картой первичных вхождений.
-- [[treatise-volume-systematics]] — функции и наследование Томов I--VIII.
+- [[treatise-volume-systematics]] — функции и наследование Томов I--IX.
 - [[theorem-status-ledger-2026-08-04]] — детальный ранний реестр теорем и
   запретов Тома II и смежных ветвей.
 - [[current-status-and-next-vectors]] — полный хронологический слой текущих
@@ -1988,6 +2123,8 @@ parent-origin `0/6`.
 - `s2t/docs/tome6_s2t_matter_birth.tex`
 - `s2t/docs/tome7_s2t_rank_change_parent.tex`
 - `s2t/docs/tome8_s2t_correlation_transition.tex`
+- `s2t/docs/tome9_s2t_dynamic_parent.tex`
+- `s2t/results/s2t_v9_four_slot_dynamic_parent_program_admission_gate_results.json`
 - `s2t/results/s2t_global_falsification_closure_results.json`
 - `s2t/results/s2t_v4_tome_conclusion_results.json`
 - `s2t/results/s2t_v6_spectral_transition_post_radiative_bridge_final_dynamic_status_gate_results.json`

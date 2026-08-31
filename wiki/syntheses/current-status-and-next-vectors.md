@@ -6,11 +6,99 @@
 
 ## Актуальный фронтир 2026-08-31
 
-Том VIII завершён. Последний scale-origin audit подтвердил непрерывную
-орбиту `(E_*,t)→(lambda E_*,t/lambda)` и дал candidate-origin `0/6`.
-Operator/QMS/dilation program закрыта, но four-slot physical parent не
-получен. Следующий фронтир — `version9_four_slot_dynamic_parent_program_admission_gate`.
-См. [[tome8-final-conclusion-and-tome9-program]].
+Parent-origin creation-frame закрыт частично. Configuration-source есть
+unique normalized zero mode path-Laplacian, поэтому source origin `1/1`.
+Но channel representation `1+1+3` имеет Kossakowski commutant dimension `3`;
+даже после `Tr K=5` остаётся двумерный rate simplex. Outward-only QMS имеет
+stationary operator space dimension `25` и не примитивен. Creation
+parent-origin равен `1/4`, rate origin `0/3`. Следующий фронтир —
+`version9_endpoint_creation_bidirectional_kms_completion_architecture_gate`.
+См. [[version9-endpoint-finite-geometry-creation-operator-parent-origin-gate]].
+
+Typed creation-operator architecture построена. Одна configuration-source
+line и five-channel frame (два neutral singlets плюс полный charged triplet)
+образуют cell dimension `6`, порождают `M6(C)` и допускают Real completion
+dimension `12`. Covariant GKSL generator trace-preserving и делает все три
+новые physical endpoint-lines достижимыми: architecture `10/10`, reachability
+`3/3`. Source и rates остаются origin `0/4`. Следующий фронтир —
+`version9_endpoint_finite_geometry_creation_operator_parent_origin_gate`.
+См. [[version9-endpoint-finite-geometry-creation-operator-architecture-gate]].
+
+Общее configuration space трёх endpoint-фаз построено условно. Phase algebra
+равна `C^3`, orthogonal carrier `H21⊕H23⊕H24` имеет dimension `68`, path
+Laplacian spectrum `(0,1,3)`, а block-Dirac rank/nullity `46/22`.
+Architecture проходит `9/9` и не содержит target vertex score. Однако
+canonical edges сохраняют old reducing subbundle dimension `63`; complement
+dimension `5` недостижим, physical endpoint creation `0/3`. Следующий
+фронтир — `version9_endpoint_finite_geometry_creation_operator_architecture_gate`.
+См. [[version9-endpoint-finite-geometry-configuration-space-admission-gate]].
+
+Parent-action origin конечного endpoint-модуля закрыт отрицательно для
+фиксированной finite geometry. Требуемый multiplicity jump равен `(1,1,1)`,
+но вариации `D`, inner fluctuations и ещё пять механизмов не меняют
+representation module: candidate origin `0/7`. Условный rank-three
+projector-parent на уже данном `H24` имеет без seed Grassmannian минимумов
+real dimension `126`; target seed выбирает нужный projector, но кодирует его
+тавтологически и выделяет family-axis (commutator rank `2`). Physical origin
+`0/5`. Следующий фронтир —
+`version9_endpoint_finite_geometry_configuration_space_admission_gate`.
+См. [[version9-endpoint-finite-module-parent-action-origin-gate]].
+
+Минимальная finite-module архитектура endpoint построена. Neutral linking
+требует `M2(C)`, family-covariant charged triplet — `M3(C)`; direct sum
+имеет complex dimension `13`, centre dimension `2` и добавляет `11`
+Hermitian directions поверх старого active `D2`. Три independent complex
+states дают Real-замкнутый прирост `6`; `H21` сохраняется как угол.
+Architecture `10/10`, но parent-origin нового algebra summand равен `0/1`.
+Следующий фронтир — `version9_endpoint_finite_module_parent_action_origin_gate`.
+См. [[version9-endpoint-extension-minimal-finite-module-architecture-gate]].
+
+Raw endpoint-origin закрыт отрицательно. Exact hypercharge matrix на `H21`
+имеет rank `21` и нулевое ядро; operator/frame closure не увеличивает
+модуль. Neutral и charged states `K45` имеют environment tensor-factor и
+не могут быть retype как endpoints; cotangent doubling также сохраняет
+representation multiplicities. Candidate origin `0/6`; минимально нужен
+новый complex module `E_min` dimension `3`. Следующий фронтир —
+`version9_endpoint_extension_minimal_finite_module_architecture_gate`. См.
+[[version9-endpoint-extension-raw-parent-origin-gate]].
+
+Origin-аудит четырёх selector-пакетов дал частичный результат. Число
+closure-дефектов `H21,H23,H24` равно `(2,1,0)`, поэтому endpoint-ordering
+внутри условного carrier выбирает `H24`. Energy- и coupling-ratios имеют
+точные witnesses `1↔2`, а forward и balanced transports оба проходят
+`5/5`; их bias не выбран. Coefficient origin равен `1/4`, но новые endpoint
+states не происходят из raw `H21`, поэтому physical slot closure остаётся
+`0/4`. Следующий фронтир — `version9_endpoint_extension_raw_parent_origin_gate`.
+См. [[version9-four-slot-parent-selector-coefficient-origin-gate]].
+
+На общем carrier построена одна bounded polynomial parent-family. Quartic
+части дают единственные положительные минимумы `E_*` и `chi`, вогнутая
+simplex-часть выбирает endpoint-вершину, а interval-часть — одну transport
+boundary. Functional architecture закрыта `9/9`, conditional selection
+равна `4/4`. Однако ordering endpoint-scores, отношения `b_E/a_E`,
+`b_chi/a_chi` и знак transport-bias не выведены (`0/4`), поэтому физический
+parent остаётся `0/1`. Следующий фронтир —
+`version9_four_slot_parent_selector_coefficient_origin_gate`. См.
+[[version9-four-slot-common-parent-functional-architecture-gate]].
+
+Первый конструктивный узел Тома IX закрыл общую carrier-архитектуру.
+Endpoint menu `H24=21+2+1`, активная и компенсирующая `K45`-ячейки дают
+`Xi_IX` размерности `48600`. На одной удвоенной цепи теперь действуют
+forward transport индекса `45` и balanced transport индекса `1`;
+architecture `8/8`. Физический выбор остаётся `0/4`, action — `0/1`.
+Следующий фронтир —
+`version9_four_slot_common_parent_functional_architecture_gate`. См.
+[[version9-four-slot-common-carrier-architecture-gate]].
+
+Том VIII завершён под уточнённым названием «Полное корреляционное ядро,
+квантово-марковская динамика и границы сшивки секторов». Том IX «Единый
+динамический родитель, физический масштаб и закон транспорта» открыт.
+Admission четырёхслотовой программы пройден `6/6`; continuous dependency
+rank равен `2`, но общий parent не построен (`0/1`) и выбранные слоты
+остаются `0/4`. Следующий фронтир —
+`version9_four_slot_common_carrier_architecture_gate`. См.
+[[tome9-opening-contract]] и
+[[version9-four-slot-dynamic-parent-program-admission-gate]].
 
 Минимизация данных сократила пять apparent inputs до четырёх независимых:
 endpoint-extension, общий резонансный квант `E_*`, dimensionless coupling

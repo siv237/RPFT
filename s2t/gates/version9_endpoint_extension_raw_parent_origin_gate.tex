@@ -1,0 +1,135 @@
+\chapter{Raw parent-origin endpoint-расширения}
+\label{ch:v9-endpoint-raw-origin}
+
+\section{Требуемый тип нового модуля}
+
+Условно выбранный $H_{24}$ отличается от raw carrier тремя комплексными
+линиями:
+\begin{equation}
+ H_{24}=H_{21}\oplus\mathcal E_{\min},
+ \qquad
+ \mathcal E_{\min}=\mathbb C s_0^{+}\oplus
+ \mathbb C a_0^{-}\oplus\mathbb C e_R^{(t,0),+}.
+ \label{eq:v9-endpoint-required-module}
+\end{equation}
+Первые две линии имеют gauge-тип $(1,1)_0$ и противоположные grading;
+третья имеет тип $(1,1)_{-1}$, положительную grading и завершает две
+существующие координаты family-triplet.
+
+\section{Raw endpoint не содержит нейтральных линий}
+
+Представление $H_{21}$ имеет веса
+\begin{equation}
+ Y_{21}=\operatorname{diag}
+ \left((1/6)^{\times6},(2/3)^{\times3},(-1/3)^{\times3},
+ (-1/2)^{\times6},(-1)^{\times3}\right).
+ \label{eq:v9-endpoint-hypercharge-spectrum}
+\end{equation}
+Поэтому
+\begin{equation}
+ \rank Y_{21}=21,
+ \qquad \ker Y_{21}=0,
+ \qquad \operatorname{Hom}_G(\mathbb C_0,H_{21})=0.
+ \label{eq:v9-endpoint-neutral-no-go}
+\end{equation}
+Обе нейтральные линии отсутствуют уже на уровне representation type.
+
+Любые суммы, произведения и коммутаторы старых операторов остаются в
+\begin{equation}
+ \operatorname{Alg}(\mathcal F_{42})\subseteq\operatorname{End}(H_{21}),
+ \label{eq:v9-endpoint-algebraic-closure}
+\end{equation}
+и потому не могут превратить 21-мерный модуль в 24-мерный.
+
+\section{Старые и средовые носители не проходят retyping}
+
+После нулевого продолжения старого кадра на новый угол выполнено
+\begin{equation}
+ F_aP_{\mathcal E}=P_{\mathcal E}F_a=0
+ \qquad(a=1,\ldots,42).
+ \label{eq:v9-endpoint-old-frame-zero-extension}
+\end{equation}
+Шумовая ячейка $K_{45}$ действительно содержит нейтральный вакуум и
+charged Real-пару, но они принадлежат environment-фактору:
+\begin{equation}
+ |0\rangle,|+\rangle,|-\rangle\in K_{45}^{\rm env},
+ \qquad
+ \mathcal E_{min}\subset H_{24}^{\rm sys}.
+ \label{eq:v9-endpoint-tensor-factor-mismatch}
+\end{equation}
+Их отождествление уничтожило бы независимый partial trace и изменило бы
+саму Stinespring-архитектуру. Кроме того, $|0\rangle$ не поставляет две
+противоположно градуированные линии, а charged-пара не является
+family-triplet completion.
+
+Существующие три charged-singlet координаты $Y=-1$ также не решают задачу:
+\begin{equation}
+ \dim H_{e_R,-}=1,qquad \dim H_{e_R,+}=2,
+ \qquad n_+^{\rm missing}=1.
+ \label{eq:v9-endpoint-charged-grading-defect}
+\end{equation}
+Перенос отрицательной координаты в положительную меняет grading raw-модуля,
+а не выводит новую линию.
+
+Наконец, cotangent- и Real-дублирования создают сопряжённые операторные
+направления на уже заданных representation objects. Они не меняют
+кратности endpoint-представления:
+\begin{equation}
+ \Delta\operatorname{mult}_{(1,1)_0}=0,
+ \qquad
+ \Delta\operatorname{mult}_{(1,1)_{-1},+}=0.
+ \label{eq:v9-endpoint-doubling-multiplicity}
+\end{equation}
+
+\section{Исчерпание candidate origins}
+
+Шесть внутренних классов дают реестр
+\begin{equation}
+ N_{\rm raw\ endpoint\ candidate\ origin}=0/6:
+ \{\ker Y_{21},\operatorname{Alg}\mathcal F_{42},\mathcal F_{42},
+ K_{45}^{0},K_{45}^{\pm},T^*\!\mathcal Q\}.
+ \label{eq:v9-endpoint-candidate-ledger}
+\end{equation}
+Следовательно, минимальный новый typed input равен
+\begin{equation}
+ \Delta H_{\rm endpoint}=\mathcal E_{min},
+ \qquad \dim_{\mathbb C}\mathcal E_{\min}=3.
+ \label{eq:v9-endpoint-minimal-new-data}
+\end{equation}
+После этого no-go физический четырёхслотовый счёт не повышается:
+\begin{equation}
+ N_{\rm raw\ physical\ slot\ closure}=0/4,
+ \qquad N_{\rm physical\ four\ slot\ parent}=0/1.
+ \label{eq:v9-endpoint-raw-ledger}
+\end{equation}
+
+\begin{theorem}[Raw endpoint-origin no-go]
+Ни raw $H_{21}$, ни его операторное замыкание, ни старый $42$-кадр, ни
+noise/cotangent carriers не содержат модуль требуемого system-endpoint
+типа. Environment states нельзя retype как физические endpoints без
+разрушения Stinespring factorization. Поэтому $H_{24}$ требует нового
+трёхмерного комплексного модуля $\mathcal E_{\min}$.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет environment--endpoint identification]
+Совпадение заряда или размерности не разрешает отождествлять system и
+environment factors. Кандидат должен одновременно совпадать по gauge,
+grading, family, Real и tensor-factor type; провал любого типа запрещает
+считать endpoint-extension выведенным.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item neutral nullity raw $H_{21}$: \textbf{$0$};
+\item algebraic closure увеличивает модуль: \textbf{нет};
+\item старый frame действует на новый угол: \textbf{нет};
+\item environment vacuum имеет endpoint type: \textbf{нет};
+\item charged environment pair завершает family-triplet: \textbf{нет};
+\item cotangent doubling меняет endpoint multiplicity: \textbf{нет};
+\item candidate origin: \textbf{$0/6$};
+\item минимально новых complex states: \textbf{$3$};
+\item raw physical slot closure: \textbf{$0/4$};
+\item следующий гейт: \textbf{минимальная finite-module архитектура endpoint}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_extension_raw_parent_origin_gate_results.json}.

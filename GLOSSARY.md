@@ -1898,7 +1898,7 @@
   `wiki/syntheses/formal-verification-and-palomar-roadmap.md`. [Активно]
 
 - **Глобальный формульный атлас** — сгруппированный реестр канонических
-  формул Томов I--VIII. Для каждой формулы фиксирует доказательный статус,
+  формул Томов I--IX. Для каждой формулы фиксирует доказательный статус,
   интуитивное чтение, первичный источник, позднейшие вхождения и ближайший
   no-go. Страница: `wiki/syntheses/global-formula-atlas.md`. [Активно]
 
@@ -3426,6 +3426,72 @@
   `Psi=K_(3)Psi` с разложением ядра на неприводимую трёхчастичную и три
   попарные части. Оно является рекомендуемым операторным уровнем
   продолжения барионной ветви, но ещё не теоремой проекта. [Активно]
+
+- **Том IX / четырёхслотовый динамический parent** — программа поиска одного
+  ограниченного снизу Real- и gauge-совместимого действия, совместно
+  выбирающего endpoint-extension, общий квант `E_*`, безразмерный coupling
+  `chi` и transport primitive. Admission программы закрыт `6/6`, но общий
+  parent пока не построен (`0/1`), а выбранные слоты остаются `0/4`.
+  [Активно]
+
+- **Общий носитель Тома IX (`Xi_IX`)** — удвоенная цепная ячейка
+  `H24 tensor K45_right tensor K45_left` размерности `48600`. Она помещает
+  endpoint menu, 44-канальный collision, forward transport индекса `45` и
+  balanced transport индекса `1` в одну локальную алгебру. Это
+  архитектурный carrier (`8/8`), но ещё не four-slot action. [Активно]
+
+- **Four-slot functional (`S_4`)** — единая bounded polynomial parent-family
+  на `Delta2 × R_+ × R_+ × [0,1]`. При generic коэффициентах она условно
+  выбирает endpoint-вершину, положительные `E_*` и `chi`, а также одну
+  transport boundary. Архитектура закрыта `9/9`, но четыре selector-пакета
+  пока имеют physical origin `0/4`. [Активно]
+
+- **Closure-defect endpoint score** — внутренний порядок endpoint-вариантов
+  по числу невыполненных обязательных структур. Для `H21,H23,H24` счёт равен
+  `(2,1,0)` и условно выбирает `H24`. Этот score не выводит сами новые
+  состояния, поэтому coefficient-origin `1/4` не повышает raw slot closure
+  выше `0/4`. [Активно]
+
+- **Минимальный endpoint-модуль (`E_min`)** — три новых complex system-lines
+  `s0+`, `a0-`, `eR_t0+`, необходимые для перехода `H21→H24`. Они не могут
+  быть получены из `ker Y21`, operator closure, старого `F42`, noise
+  environment или cotangent doubling; raw candidate-origin равен `0/6`.
+  [Активно]
+
+- **Минимальная endpoint-алгебра Тома IX** — direct sum `M2(C)⊕M3(C)`:
+  первый блок несёт neutral linking-pair, второй завершает charged family
+  triplet. Complex dimension равна `13`, centre dimension `2`, прирост
+  Hermitian directions `11`; архитектура закрыта `10/10`, parent-origin
+  нового summand остаётся `0/1`. [Активно]
+
+- **Fixed-parent multiplicity no-go** — на фиксированной конечной
+  спектральной тройке вариации `D`, внутренние флуктуации и operator closure
+  не меняют целочисленные кратности representation module. Для endpoint
+  требуется скачок `(0,0,2)→(1,1,3)`, поэтому семь старых механизмов дают
+  origin `0/7`. Rank-three projector на уже данном `H24` без seed имеет
+  минимум `Gr_C(3,24)` real dimension `126`, а seed `C_E=I-2P_E` прямо
+  кодирует искомый projector и выделяет family-axis. [Строгое no-go текущего parent]
+
+- **Finite-geometry configuration space Тома IX** — ортогональная сумма
+  трёх preregistered endpoint-фаз `H21⊕H23⊕H24` complex dimension `68` с
+  central phase algebra `C^3`. Path graph связен, block-Dirac имеет
+  rank/nullity `46/22`, но его canonical inclusion-edges сохраняют old
+  reducing subbundle dimension `63` и не создают новые physical lines
+  (`0/3`). [Условная архитектура]
+
+- **Endpoint creation-frame Тома IX** — пять homogeneous creators из одной
+  configuration-source line в два neutral singlets и полный charged family
+  triplet. Frame порождает `M6(C)`, его Real completion имеет complex
+  dimension `12`, а covariant GKSL generator делает три новые physical
+  endpoint-lines достижимыми (`3/3`). Source и rates имеют origin `0/4`.
+  [Условная динамическая архитектура]
+
+- **Creation-rate commutant Тома IX** — algebra допустимых Kossakowski
+  matrices на channel decomposition `1_neutral_even⊕1_neutral_odd⊕3_charged_even`.
+  Gauge, grading и family covariance оставляют
+  `K=diag(gamma_s,gamma_a,gamma_t I3)`, то есть commutant dimension `3` и
+  двумерный simplex после trace normalization. Phase zero mode выводит
+  source, но rates остаются origin `0/3`. [Строго]
 
 _Пополняйте глоссарий при появлении новых ключевых терминов. Краткое описание
 каждого файла и его актуальности — в `README.md`._

@@ -1,0 +1,156 @@
+\chapter{Минимальная finite-module архитектура endpoint-расширения}
+\label{ch:v9-endpoint-finite-module}
+
+\section{Два обязательных матричных блока}
+
+Raw-origin no-go выделил три новые system-линии. На нейтральной паре
+$H_{\rm n}=\mathbb Cs_0\oplus\mathbb Ca_0$ требуется матричная единица
+$|s_0\rangle\langle a_0|$ и её сопряжение. Минимальное ассоциативное
+замыкание поэтому равно
+\begin{equation}
+ \mathcal A_{\rm n}=M_2(\mathbb C),
+ \qquad \dim_{\mathbb C}\mathcal A_{\rm n}=4.
+ \label{eq:v9-finite-module-neutral-algebra}
+\end{equation}
+
+Новая charged-линия вместе с двумя старыми положительно градуированными
+координатами образует
+\begin{equation}
+ H_{\rm t}=\operatorname{span}_{\mathbb C}
+ \{e_R^{(t,0)},e_R^{(t,1)},e_R^{(t,2)}\}\simeq\mathbb C^3.
+ \label{eq:v9-finite-module-triplet}
+\end{equation}
+Family-ковариантное замыкание coordinate projectors и стандартного
+$SO(3)$-действия есть полный блок
+\begin{equation}
+ \mathcal A_{\rm t}=M_3(\mathbb C),
+ \qquad \dim_{\mathbb C}\mathcal A_{\rm t}=9.
+ \label{eq:v9-finite-module-triplet-algebra}
+\end{equation}
+Таким образом, минимальная новая endpoint-алгебра имеет вид
+\begin{equation}
+ \mathcal A_{\min}=M_2(\mathbb C)\oplus M_3(\mathbb C),
+ \qquad \dim_{\mathbb C}\mathcal A_{\min}=13,
+ \qquad \dim Z(\mathcal A_{\min})=2.
+ \label{eq:v9-finite-module-minimal-algebra}
+\end{equation}
+
+\section{Точное вложение старого carrier}
+
+Выделим в $H_{21}$ две старые положительные charged-линии и обозначим их
+ортогональное дополнение через $H_{\rm rest}$, $\dim H_{\rm rest}=19$.
+Тогда один и тот же $H_{24}$ записывается как
+\begin{equation}
+ H_{24}=H_{\rm rest}\oplus H_{\rm n}\oplus H_{\rm t},
+ \qquad 19+2+3=24.
+ \label{eq:v9-finite-module-h24-splitting}
+\end{equation}
+Старое пространство является углом
+\begin{equation}
+ H_{21}=H_{\rm rest}\oplus
+ \operatorname{span}_{\mathbb C}\{e_R^{(t,1)},e_R^{(t,2)}\}
+ \subset H_{24}.
+ \label{eq:v9-finite-module-old-corner}
+\end{equation}
+На новом пятикоординатном блоке старая Hermitian endpoint-алгебра содержала
+только два charged coordinate projectors. Полные блоки имеют $4+9=13$
+Hermitian directions, поэтому точный прирост равен
+\begin{equation}
+ \Delta N_{\rm Herm}=13-2=11.
+ \label{eq:v9-finite-module-hermitian-increment}
+\end{equation}
+
+\section{Gauge, grading и family compatibility}
+
+На нейтральном блоке
+\begin{equation}
+ \Gamma_{\rm n}=\operatorname{diag}(1,-1),\qquad
+ Y_{\rm n}=0,\qquad
+ X=E_{12}+E_{21},\quad Y=-i(E_{12}-E_{21})
+ \label{eq:v9-finite-module-neutral-data}
+\end{equation}
+и точно
+\begin{equation}
+ \{\Gamma_{\rm n},X\}=\{\Gamma_{\rm n},Y\}=0,
+ \qquad [Y_{\rm n},X]=[Y_{\rm n},Y]=0.
+ \label{eq:v9-finite-module-neutral-compatibility}
+\end{equation}
+
+На triplet-блоке
+\begin{equation}
+ \Gamma_{\rm t}=I_3,\qquad Y_{\rm t}=-I_3,
+ \qquad [J_a,\Gamma_{\rm t}]=[J_a,Y_{\rm t}]=0
+ \quad(a=1,2,3).
+ \label{eq:v9-finite-module-triplet-compatibility}
+\end{equation}
+Следовательно, полный $M_3$-блок совместим одновременно с family,
+grading и hypercharge.
+
+\section{Real-замыкание}
+
+Charged endpoint требует сопряжённого представления. Оно добавляется не
+как новый свободный selector, а функториально:
+\begin{equation}
+ \widehat H_{24}=H_{24}\oplus\overline{H}_{24},\qquad
+ \pi_R(a)=\pi(a)\oplus\overline{\pi(a)},\qquad
+ J(v,w)=(\overline w,\overline v).
+ \label{eq:v9-finite-module-real-double}
+\end{equation}
+Отсюда
+\begin{equation}
+ J^2=1,\qquad J\pi_R(a)J^{-1}=\pi_R(a),
+ \qquad
+ \dim_{\mathbb C}(\mathcal E_{\min}\oplus J\mathcal E_{\min})=6.
+ \label{eq:v9-finite-module-real-identities}
+\end{equation}
+Независимых новых system-данных при этом остаётся три complex lines:
+вторая половина Real-дубля определяется первой.
+
+\section{Архитектурный итог}
+
+Десять точных проверок дают
+\begin{equation}
+ N_{\rm finite\ module\ architecture}=10/10.
+ \label{eq:v9-finite-module-architecture-ledger}
+\end{equation}
+Но новый summand $\mathcal A_{\min}$ пока введён как минимальная
+архитектура, а не получен стационарным условием прежнего действия:
+\begin{equation}
+ N_{\rm finite\ module\ parent\ origin}=0/1,\qquad
+ N_{\rm raw\ physical\ slot\ closure}=0/4.
+ \label{eq:v9-finite-module-origin-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальная finite-module архитектура]
+Для одновременного neutral linking и family-triplet completion необходимо и
+достаточно присоединить endpoint-алгебру
+$M_2(\mathbb C)\oplus M_3(\mathbb C)$ на пятикоординатном активном блоке.
+Она требует ровно три новые complex system-линии, добавляет одиннадцать
+Hermitian directions, сохраняет старый $H_{21}$ как угол и допускает
+канонический Real-дубль. Архитектура минимальна, но её parent-origin не
+получен.
+\end{theorem}
+
+\begin{nogocriterion}[Минимальная алгебра не есть динамическое рождение]
+Факт, что $M_2\oplus M_3$ является наименьшим замыканием требуемых matrix
+units, не доказывает, что этот summand возникает из вакуума старого action.
+До вывода его projector или rank-changing order parameter новый module
+остаётся явным typed input.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item neutral algebra: \textbf{$M_2(\mathbb C)$};
+\item family endpoint algebra: \textbf{$M_3(\mathbb C)$};
+\item complex dimension новой алгебры: \textbf{$13$};
+\item centre dimension: \textbf{$2$};
+\item новых independent complex states: \textbf{$3$};
+\item Real-замкнутый прирост: \textbf{$6$ complex coordinates};
+\item новых Hermitian directions: \textbf{$11$};
+\item old $H_{21}$ сохраняется как угол: \textbf{да};
+\item architecture ledger: \textbf{$10/10$};
+\item parent-origin нового module: \textbf{$0/1$};
+\item следующий гейт: \textbf{parent-action origin finite endpoint-module}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_extension_minimal_finite_module_architecture_gate_results.json}.

@@ -1,0 +1,161 @@
+\chapter{Bidirectional KMS completion creation-frame}
+\label{ch:v9-endpoint-creation-kms-completion}
+
+\section{Энергетическое расщепление endpoint-frame}
+
+Пусть source-line и пять созданных линий образуют
+\begin{equation}
+ \mathcal H_{\rm cr}=\mathbb C\Omega\oplus\mathbb C s\oplus
+ \mathbb C a\oplus\mathbb C^3_t\simeq\mathbb C^6,
+ \qquad P_{\rm act}=P_s+P_a+P_t.
+ \label{eq:v9-kms-completion-carrier}
+\end{equation}
+Минимальный Hamiltonian, совместимый с channel symmetries, имеет вид
+\begin{equation}
+ H_{\rm cr}=\Delta_sP_s+\Delta_aP_a+\Delta_tP_t,
+ \qquad H_{\rm cr}P_\Omega=0,
+ \label{eq:v9-kms-completion-hamiltonian}
+\end{equation}
+где triplet остаётся вырожденным. Для creation operators выполняется
+\begin{equation}
+ [H_{\rm cr},C_s]=\Delta_sC_s,
+ \quad [H_{\rm cr},C_a]=\Delta_aC_a,
+ \quad [H_{\rm cr},C_m]=\Delta_tC_m.
+ \label{eq:v9-kms-completion-bohr-relations}
+\end{equation}
+
+\section{KMS-пары и Gibbs state}
+
+Введём положительные Boltzmann ratios и conductances
+\begin{equation}
+ q_\alpha=e^{-\beta\Delta_\alpha}>0,
+ \qquad \gamma_\alpha^+=\kappa_\alpha q_\alpha,
+ \qquad \gamma_\alpha^-=\kappa_\alpha,
+ \qquad \alpha\in\{s,a,t\}.
+ \label{eq:v9-kms-completion-rates}
+\end{equation}
+Тогда faithful Gibbs state равен
+\begin{equation}
+ \rho_\beta=Z^{-1}(P_\Omega+q_sP_s+q_aP_a+q_tP_t),
+ \qquad Z=1+q_s+q_a+3q_t.
+ \label{eq:v9-kms-completion-gibbs-state}
+\end{equation}
+Для каждой пары $C_\alpha,C_\alpha^*$ соблюдается local balance:
+\begin{equation}
+ \gamma_\alpha^+\Tr(\rho_\beta P_\Omega)
+ =\gamma_\alpha^-\Tr(\rho_\beta P_{\alpha,m}).
+ \label{eq:v9-kms-completion-local-balance}
+\end{equation}
+
+\section{Bidirectional generator и примитивность}
+
+Полный dissipative generator задаётся формулой
+\begin{equation}
+ \mathcal L_{\rm KMS}(X)=
+ \sum_{\alpha,m}\left(
+ \gamma_\alpha^+\mathcal D_{C_{\alpha,m}}(X)
+ +\gamma_\alpha^-\mathcal D_{C_{\alpha,m}^*}(X)\right),
+ \quad
+ \mathcal D_C(X)=CXC^*-\frac12\{C^*C,X\}.
+ \label{eq:v9-kms-completion-generator}
+\end{equation}
+Здесь $m$ принимает одно значение для $s,a$ и три значения для $t$.
+Directed star graph становится strongly connected:
+\begin{equation}
+ \Omega\rightleftarrows s,
+ \qquad \Omega\rightleftarrows a,
+ \qquad \Omega\rightleftarrows t_m\quad(m=0,1,2).
+ \label{eq:v9-kms-completion-star-graph}
+\end{equation}
+Алгебра, порождённая jumps и reverse jumps, полна:
+\begin{equation}
+ \operatorname{Alg}\{C_{\alpha,m},C_{\alpha,m}^*\}=M_6(\mathbb C),
+ \qquad
+ \{C_{\alpha,m},C_{\alpha,m}^*\}'=\mathbb C I_6.
+ \label{eq:v9-kms-completion-full-algebra}
+\end{equation}
+Поэтому при строго положительных rates generator примитивен и имеет
+единственное faithful stationary state $\rho_\beta$.
+
+\section{Точный рациональный witness}
+
+Для машинного сертификата выберем
+\begin{equation}
+ (q_s,q_a,q_t)=\left(\frac12,\frac13,\frac14\right),
+ \qquad (\kappa_s,\kappa_a,\kappa_t)=(1,1,1).
+ \label{eq:v9-kms-completion-rational-parameters}
+\end{equation}
+Тогда
+\begin{equation}
+ \rho_*=\frac1{31}\operatorname{diag}(12,6,4,3,3,3),
+ \qquad \det\rho_*=\frac{7776}{887503681}>0.
+ \label{eq:v9-kms-completion-rational-state}
+\end{equation}
+Exact operator-space computation даёт
+\begin{equation}
+ \rank\mathcal L_{\rm KMS}=35,
+ \qquad \dim\ker\mathcal L_{\rm KMS}=1,
+ \qquad \mathcal L_{\rm KMS}(\rho_*)=0.
+ \label{eq:v9-kms-completion-rank}
+\end{equation}
+Population нового physical endpoint corner в этом witness равна
+\begin{equation}
+ \Tr(\rho_*P_{\mathcal E})=\frac{13}{31}.
+ \label{eq:v9-kms-completion-endpoint-population}
+\end{equation}
+
+\section{Что завершено и что ещё свободно}
+
+Bidirectional KMS completion закрывает архитектурные условия
+\begin{equation}
+ N_{\rm architecture}=10/10,
+ \qquad N_{\rm primitive\ closure}=1/1.
+ \label{eq:v9-kms-completion-architecture-ledger}
+\end{equation}
+Однако KMS связывает forward и reverse rates, но не выбирает шесть чисел
+\begin{equation}
+ \mathcal P_{\rm KMS}=\{q_s,q_a,q_t,\kappa_s,\kappa_a,\kappa_t\},
+ \qquad N_{\rm KMS\ parameter\ origin}=0/6.
+ \label{eq:v9-kms-completion-free-parameters}
+\end{equation}
+Итоговые физические ledgers остаются
+\begin{equation}
+ N_{\rm physical\ endpoint\ selection}=0/1,
+ \qquad N_{\rm physical\ four\ slot\ parent}=0/1.
+ \label{eq:v9-kms-completion-physical-ledgers}
+\end{equation}
+
+\begin{theorem}[Bidirectional KMS completion]
+Reverse jumps и три symmetry-compatible gaps превращают outward-only
+creation-frame в primitive quantum Markov generator. Его unique faithful
+stationary state есть Gibbs state, а точный рациональный witness имеет
+Liouvillian rank $35$ и nullity $1$.
+\end{theorem}
+
+\begin{nogocriterion}[KMS не является selector численных данных]
+Detailed balance фиксирует только отношения forward/reverse rates.
+Без общего ограниченного снизу parent величины
+$(q_s,q_a,q_t,\kappa_s,\kappa_a,\kappa_t)$ остаются внешними параметрами.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item bidirectional channels: \textbf{$5/5$};
+\item architecture ledger: \textbf{$10/10$};
+\item primitive closure: \textbf{$1/1$};
+\item exact Liouvillian nullity: \textbf{$1$};
+\item KMS parameter origin: \textbf{$0/6$};
+\item physical endpoint selection: \textbf{$0/1$};
+\item следующий гейт: \textbf{gap/conductance parent-origin}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_bidirectional_kms_completion_architecture_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-completion-fagnola}
+F.~Fagnola, V.~Umanit\`a, \emph{Generators of KMS symmetric Markov
+semigroups on $B(h)$}, arXiv:0707.2147.
+\bibitem{v9-kms-completion-carlen-maas}
+E.~A.~Carlen, J.~Maas, \emph{Gradient flow and entropy inequalities for
+quantum Markov semigroups with detailed balance}, arXiv:1609.01254.
+\end{thebibliography}
