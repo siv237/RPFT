@@ -1,0 +1,363 @@
+{
+  "cross_parent_prescription_ambiguity": {
+    "QLYR_XLdR_ratio_not_rule_independent": true,
+    "candidate_rules": [
+      {
+        "QLYR_to_XLdR_diagonal_ratio": 0.9168117390336793,
+        "normalized_matrix": [
+          [
+            0.478300356975,
+            0.056820299168
+          ],
+          [
+            0.056820299168,
+            0.521699643025
+          ]
+        ],
+        "normalized_offdiagonal": 0.056820299168,
+        "rule": "classical_H_inverse"
+      },
+      {
+        "QLYR_to_XLdR_diagonal_ratio": 0.9573675202400804,
+        "normalized_matrix": [
+          [
+            0.48910974068,
+            0.028516035579
+          ],
+          [
+            0.028516035579,
+            0.51089025932
+          ]
+        ],
+        "normalized_offdiagonal": 0.028516035579,
+        "rule": "quantum_H_inverse_half"
+      },
+      {
+        "QLYR_to_XLdR_diagonal_ratio": 0.579999751879056,
+        "normalized_matrix": [
+          [
+            0.3670885082034197,
+            0.34802741768517625
+          ],
+          [
+            0.3480274176851765,
+            0.6329114917965802
+          ]
+        ],
+        "normalized_offdiagonal": 0.34802741768517625,
+        "rule": "heat_exp_minus_H"
+      }
+    ],
+    "eta": 1.0,
+    "existing_parent_selects_axis_only": true
+  },
+  "date": "2026-08-29",
+  "fixed_parent_hessian_test": {
+    "all_produce_distinct_finite_time_kernels": true,
+    "all_share_exact_same_stationary_covariance": true,
+    "family_order": [
+      "linking",
+      "SU3",
+      "SU2",
+      "U1",
+      "QLYR",
+      "XLdR"
+    ],
+    "hessian": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.924929966333,
+        -0.449261865266
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.449261865266,
+        0.581784215826
+      ]
+    ],
+    "identity": "A=M H, Sigma=H^-1 implies A Sigma + Sigma A^T=2M",
+    "mobility_tests": [
+      {
+        "kernel_frobenius_norm_at_tau_0_4": 1.7245329648292687,
+        "kernel_trace_at_tau_0_4": 4.18838915844199,
+        "mobility_diagonal": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "name": "isotropic",
+        "normalized_short_time_family_rates": [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666
+        ],
+        "stationary_covariance_residual": 4.589936395153242e-16
+      },
+      {
+        "kernel_frobenius_norm_at_tau_0_4": 1.6446955852356242,
+        "kernel_trace_at_tau_0_4": 3.819401025076095,
+        "mobility_diagonal": [
+          2.0,
+          0.5,
+          3.0,
+          0.7,
+          1.2,
+          0.8
+        ],
+        "name": "family_anisotropic",
+        "normalized_short_time_family_rates": [
+          0.2439024390243902,
+          0.06097560975609755,
+          0.3658536585365853,
+          0.08536585365853656,
+          0.1463414634146341,
+          0.09756097560975609
+        ],
+        "stationary_covariance_residual": 9.04678545656095e-16
+      },
+      {
+        "kernel_frobenius_norm_at_tau_0_4": 1.3513676269120125,
+        "kernel_trace_at_tau_0_4": 2.9983135901888414,
+        "mobility_diagonal": [
+          4.0,
+          1.0,
+          1.0,
+          1.0,
+          4.0,
+          4.0
+        ],
+        "name": "transfer_fast",
+        "normalized_short_time_family_rates": [
+          0.26666666666666666,
+          0.06666666666666667,
+          0.06666666666666667,
+          0.06666666666666667,
+          0.26666666666666666,
+          0.26666666666666666
+        ],
+        "stationary_covariance_residual": 1.8359745580612967e-15
+      },
+      {
+        "kernel_frobenius_norm_at_tau_0_4": 1.3222381277085689,
+        "kernel_trace_at_tau_0_4": 2.7831185743190385,
+        "mobility_diagonal": [
+          1.0,
+          4.0,
+          4.0,
+          4.0,
+          1.0,
+          1.0
+        ],
+        "name": "gauge_fast",
+        "normalized_short_time_family_rates": [
+          0.06666666666666667,
+          0.26666666666666666,
+          0.26666666666666666,
+          0.26666666666666666,
+          0.06666666666666667,
+          0.06666666666666667
+        ],
+        "stationary_covariance_residual": 4.589936395153242e-16
+      },
+      {
+        "kernel_frobenius_norm_at_tau_0_4": 1.7430172504970651,
+        "kernel_trace_at_tau_0_4": 4.107040356975974,
+        "mobility_diagonal": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.25,
+          3.0
+        ],
+        "name": "cross_split",
+        "normalized_short_time_family_rates": [
+          0.13793103448275862,
+          0.13793103448275862,
+          0.13793103448275862,
+          0.13793103448275862,
+          0.034482758620689655,
+          0.41379310344827586
+        ],
+        "stationary_covariance_residual": 9.987306671228922e-16
+      }
+    ],
+    "number_of_positive_mobility_choices": 5,
+    "pairwise_kernel_distances": [
+      {
+        "frobenius_distance": 0.46875163665569564,
+        "left": "isotropic",
+        "right": "family_anisotropic"
+      },
+      {
+        "frobenius_distance": 0.7101703042696327,
+        "left": "isotropic",
+        "right": "transfer_fast"
+      },
+      {
+        "frobenius_distance": 0.8113333500276487,
+        "left": "isotropic",
+        "right": "gauge_fast"
+      },
+      {
+        "frobenius_distance": 0.45157787300326296,
+        "left": "isotropic",
+        "right": "cross_split"
+      },
+      {
+        "frobenius_distance": 0.7082268616948261,
+        "left": "family_anisotropic",
+        "right": "transfer_fast"
+      },
+      {
+        "frobenius_distance": 0.8667640948677982,
+        "left": "family_anisotropic",
+        "right": "gauge_fast"
+      },
+      {
+        "frobenius_distance": 0.6973324495262199,
+        "left": "family_anisotropic",
+        "right": "cross_split"
+      },
+      {
+        "frobenius_distance": 1.078241005496225,
+        "left": "transfer_fast",
+        "right": "gauge_fast"
+      },
+      {
+        "frobenius_distance": 0.8141754190129138,
+        "left": "transfer_fast",
+        "right": "cross_split"
+      },
+      {
+        "frobenius_distance": 0.9285388415425809,
+        "left": "gauge_fast",
+        "right": "cross_split"
+      }
+    ],
+    "stationary_covariance": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.7300927197892964,
+        1.3360016673400616
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.3360016673400616,
+        2.750529418876971
+      ]
+    ]
+  },
+  "gate": "version8_physical_correlation_kernel_parent_action_origin_gate",
+  "project_parent_coverage": {
+    "common_physical_gauge_anchor_admitted": false,
+    "cross_covariance_scale_derived": false,
+    "families": {
+      "QLYR": "cross Hessian axis known; eta, prescription and scale not derived",
+      "SU2": "generator representation known; physical gauge mobility not derived",
+      "SU3": "generator representation known; physical gauge mobility not derived",
+      "U1": "generator representation known; physical gauge mobility not derived",
+      "XLdR": "cross Hessian axis known; eta, prescription and scale not derived",
+      "linking": "incidence and shape known; mobility/overall coefficient not derived"
+    },
+    "full_spacetime_gauge_closure_obtained": false,
+    "six_family_span_rank": 6,
+    "unique_mass_metric_derived_in_tome7": false,
+    "unique_parent_action_derived_in_tome7": false
+  },
+  "source_audit": {
+    "TOE_UGSM_heat_kernel_bridge_is_approximate": true,
+    "TOE_gaussian_kernel_is_postulated": true,
+    "independent_fluctuation_dissipation_or_bath_spectral_density_required": true,
+    "parent_action_alone_determines_equilibrium_measure_not_mobility": true
+  },
+  "verdict": {
+    "existing_parent_action_uniquely_determines_C_tau": false,
+    "existing_parent_action_uniquely_determines_six_rates": false,
+    "next_gate": "version8_fluctuation_dissipation_mobility_origin_gate",
+    "same_action_can_have_different_physical_kernels": true,
+    "status": "parent_action_equilibrium_shape_pass_dynamical_mobility_no_go"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "candidate_a_krajewski_cross_loop": {
+    "common_connector_assumed": true,
+    "cp_even_degenerate_minima": true,
+    "cross_word_derived": true,
+    "inheritable_without_new_connector": false,
+    "orientation_selected": false
+  },
+  "candidate_b_moment_commutator": {
+    "ckm_blind_pass": false,
+    "formula": "K_s=[Z4_s,Z6_s]/(2i), standardized to unit Hilbert-Schmidt variance",
+    "independent_eigenvector_sensitive_tensor_exists": true,
+    "mass_selected_branch_s12": 0.9935071201485388,
+    "mass_train_pass": false,
+    "usable_frozen_physical_branch": false
+  },
+  "candidate_c_incidence_menu": {
+    "canonical_tensor_selected": false,
+    "full_M3_candidates": 12,
+    "orbit_average_restores_reducible_algebra": true,
+    "outside_candidates": 16,
+    "selector_exists": false
+  },
+  "current_tome7_cycle": {
+    "can_select_ckm_eigenvectors": false,
+    "depends_on_eigenvectors": false,
+    "single_holonomy_class_function": true
+  },
+  "gate": "version8_second_family_tensor_inheritance_no_go_gate",
+  "scope": {
+    "claim_covers_recorded_concrete_project_candidates": true,
+    "claim_is_universal_no_go_for_all_future_geometries": false
+  },
+  "verdict": {
+    "all_three_tome8_entry_primitives_current_architecture_closed": true,
+    "blind_validated_inherited_branch_exists": false,
+    "canonical_selected_tensor_in_current_parent_exists": false,
+    "independent_family_tensor_examples_exist": true,
+    "next_step": "do_not_open_tome8_until_a_genuinely_new_typed_operator_with_a_predeclared_stop_test_is_proposed",
+    "primitive_B_inherited_from_project_base": false,
+    "status": "recorded_family_tensors_exist_but_none_is_canonical_and_blind_validated"
+  }
+}

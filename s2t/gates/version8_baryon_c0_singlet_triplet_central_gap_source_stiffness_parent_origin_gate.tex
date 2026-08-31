@@ -1,0 +1,164 @@
+\chapter{Parent-origin источника и жёсткости центральной щели}
+\label{ch:v8-baryon-c0-singlet-triplet-central-gap-source-stiffness-parent-origin-gate}
+
+Минимальная архитектура требует двух коэффициентов $j$ и $m^2$.
+Проверим отдельно существование нужных следовых форм и происхождение их
+численных коэффициентов из уже построенного родителя.
+
+\section{Фактическое ограничение старого родителя}
+
+Центральное направление удовлетворяет
+\begin{equation}
+ Q=P_{\mathbf3}-\frac34I_4,
+ \qquad \Tr Q=0,
+ \qquad \Tr Q^2=\frac34.
+ \label{eq:v8-baryon-c0-gap-origin-q-invariants}
+\end{equation}
+Но сама семейная тройка и её ковариантный endpoint были лишь условными
+расширениями:
+\begin{equation}
+ N_{SO(3)\,\rm origin}=0/5,
+ \qquad N_{\rm endpoint\ extension}=0/3.
+ \label{eq:v8-baryon-c0-gap-origin-missing-endpoint-ledgers}
+\end{equation}
+Поэтому старое действие не зависит от новой центральной координаты и его
+нулевое продолжение даёт
+\begin{equation}
+ \left.\frac{\partial S_{\rm old}}{\partial\lambda}\right|_0=0,
+ \qquad
+ \left.\frac{\partial^2S_{\rm old}}{\partial\lambda^2}\right|_0=0,
+ \qquad (j,m^2)_{\rm old}=(0,0).
+ \label{eq:v8-baryon-c0-gap-origin-old-parent-zero-restriction}
+\end{equation}
+
+\section{Незавешенный спектральный след}
+
+Пусть $H(\lambda)=\varepsilon I_4+\lambda Q$. Для каждого целого $n\geq1$
+линейный отклик обычного момента равен
+\begin{equation}
+ \left.\frac{d}{d\lambda}\Tr H(\lambda)^n\right|_{\lambda=0}
+ =n\varepsilon^{n-1}\Tr Q=0.
+ \label{eq:v8-baryon-c0-gap-origin-unmarked-moment-no-source}
+\end{equation}
+Следовательно, никакой аналитический незавешенный след вокруг скалярного
+фона не создаёт $j$. Второй отклик имеет вид
+\begin{equation}
+ \left.\frac{d^2}{d\lambda^2}\Tr H(\lambda)^n\right|_{\lambda=0}
+ =\frac34n(n-1)\varepsilon^{n-2}.
+ \label{eq:v8-baryon-c0-gap-origin-unmarked-moment-curvature}
+\end{equation}
+В частности, в начале координат для
+$S=\sum_{n\geq1}a_n\Tr H^n$ остаётся
+\begin{equation}
+ \left.S''\right|_{\varepsilon=\lambda=0}=\frac32a_2.
+ \label{eq:v8-baryon-c0-gap-origin-quadratic-trace-stiffness}
+\end{equation}
+След фиксирует форму нормы, но не размерный коэффициент $a_2$.
+
+Линейный обычный след исчезает непосредственно:
+\begin{equation}
+ \Tr(\lambda Q)=0.
+ \label{eq:v8-baryon-c0-gap-origin-ordinary-linear-trace-zero}
+\end{equation}
+
+\section{Маркированные следы как условный near miss}
+
+Центрированные grading и семейный оператор Казимира совпадают,
+\begin{equation}
+ \Gamma_4^0=\mathcal C_2^0=2Q,
+ \qquad
+ \Tr(\Gamma_4^0\lambda Q)
+ =\Tr(\mathcal C_2^0\lambda Q)=\frac32\lambda.
+ \label{eq:v8-baryon-c0-gap-origin-marked-linear-responses}
+\end{equation}
+Поэтому условный функционал
+\begin{equation}
+ S_{a_2,g}[h^0]=a_2\Tr((h^0)^2)-g\Tr(\Gamma_4^0h^0)
+ \label{eq:v8-baryon-c0-gap-origin-conditional-marked-parent}
+\end{equation}
+действительно реализует нужную форму. При $h^0=\lambda Q$ он даёт
+\begin{equation}
+ S_{a_2,g}=\frac34a_2\lambda^2-\frac32g\lambda,
+ \qquad m^2=\frac32a_2,
+ \qquad j=\frac32g.
+ \label{eq:v8-baryon-c0-gap-origin-conditional-coefficient-map}
+\end{equation}
+Однако $\Gamma_4^0$ и $\mathcal C_2^0$ задают одну метку, а не два
+независимых источника, и коэффициенты $a_2,g$ отсутствуют в текущем
+действии. Два точных свидетеля сохраняют один вакуум:
+\begin{equation}
+ (a_2,g)=\left(\frac23,\frac23\right)\Longrightarrow(m^2,j)=(1,1),
+ \qquad
+ (a_2,g)=\left(\frac43,\frac43\right)\Longrightarrow(m^2,j)=(2,2).
+ \label{eq:v8-baryon-c0-gap-origin-free-coefficient-witnesses}
+\end{equation}
+
+Нескалярный фон мог бы породить линейный отклик, но только ценой уже
+введённой щели. Например,
+\begin{equation}
+ B=\varepsilon I_4+bQ
+ \quad\Longrightarrow\quad
+ \left.\frac{d}{d\lambda}\Tr(B+\lambda Q)^2\right|_0
+ =\frac32b.
+ \label{eq:v8-baryon-c0-gap-origin-circular-background-source}
+\end{equation}
+Использовать $b\ne0$ для происхождения $j$ означало бы предположить искомый
+центральный фон заранее.
+
+\section{Типовые и тепловые препятствия}
+
+Полный шумовой гессиан живёт на старом $42$-мерном носителе, тогда как
+новая координата принадлежит $\mathbb RQ$. Каноническое отображение между
+ними не построено:
+\begin{equation}
+ K_{\rm noise}\in\operatorname{End}(\mathbb R^{42}),
+ \qquad h^0\in\mathbb RQ,
+ \qquad \iota:\mathbb RQ\longrightarrow\mathbb R^{42} \text{не задано}.
+ \label{eq:v8-baryon-c0-gap-origin-no-noise-hessian-pullback}
+\end{equation}
+KMS-условие также действует после выбора гамильтониана:
+\begin{equation}
+ \frac{\gamma_+}{\gamma_-}=e^{-\beta\lambda_*},
+ \qquad
+ \lambda_*=\frac{j}{m^2},
+ \label{eq:v8-baryon-c0-gap-origin-kms-postselection}
+\end{equation}
+и потому не определяет $j$ и $m^2$ как коэффициенты действия.
+
+Итоговое разделение равно
+\begin{equation}
+ N_{\rm conditional\ shapes}=2/2,
+ \qquad
+ N_{\rm parent\ origin}=0/8.
+ \label{eq:v8-baryon-c0-gap-origin-final-ledgers}
+\end{equation}
+
+\begin{theorem}[Следовой запрет источника на скалярном фоне]
+Для любого аналитического незавешенного следового функционала от
+$\varepsilon I_4+\lambda Q$ первая вариация по $\lambda$ в нуле равна
+нулю. Квадратичный след условно предоставляет форму жёсткости, а
+grading/Casimir-вставка --- форму источника, но их коэффициенты и сама
+новая endpoint-структура не принадлежат текущему родителю.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет кругового фонового источника]
+Нельзя выводить $j$ расширением следа вокруг фона с ненулевой компонентой
+$bQ$: такая компонента уже является искомой центральной щелью. Аналогично,
+нельзя переносить старый шумовой гессиан без типизированной карты нового
+endpoint в $42$-мерный носитель.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item фактические $(j,m^2)$ старого родителя: \textbf{$(0,0)$};
+\item незавешенный аналитический след создаёт $j$: \textbf{нет};
+\item квадратичный след создаёт форму жёсткости: \textbf{да условно};
+\item grading/Casimir-вставка создаёт форму источника: \textbf{да условно};
+\item независимых маркированных направлений: \textbf{$1$};
+\item канонический pullback шумового гессиана: \textbf{нет};
+\item условных форм: \textbf{$2/2$};
+\item выведенных каналов происхождения: \textbf{$0/8$};
+\item следующий гейт: \textbf{допуск динамического носителя источника}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_source_stiffness_parent_origin_gate_results.json}.

@@ -2,7 +2,7 @@
 
 > Status: working
 > Type: source
-> Updated: 2026-08-28
+> Updated: 2026-08-31
 
 ## Summary
 
@@ -30,7 +30,78 @@
 | Тематические гейты | 60 | 479 | [[live-formulas-gates-thematic-01]], [[live-formulas-gates-thematic-02]], [[live-formulas-gates-thematic-03]], [[live-formulas-gates-thematic-04]] |
 | Финальный corpus | 1 | 19 | [[live-formulas-corpus-01]] |
 
-Всего: **467** формулосодержащих файлов и **5216** блочных формул. После нормализации полных блоков: **5127** различных блоков и **89** повторных вхождений.
+Первичная таблица выше сохраняет разбиение исходного прохода. Повторный
+полный проход 2026-08-30 по тому же правилу извлечения с последующими
+инкрементами новых гейтов дал **633** формулосодержащих файла и **6655**
+блочные формулы. Прежние числа
+`467/5216` считаются устаревшим снимком, а не текущим итогом.
+
+## Инкрементальная синхронизация 2026-08-30
+
+Ранее не индексированные пути вынесены в дополнительные страницы:
+
+- документы: [[live-formulas-docs-10]] — 17 формул из 3 файлов;
+  [[live-formulas-docs-11]] — 7 формул заключения Тома VIII;
+- поздние гейты Version 7: [[live-formulas-gates-version7-49]],
+  [[live-formulas-gates-version7-50]], [[live-formulas-gates-version7-51]],
+  [[live-formulas-gates-version7-52]];
+- гейты Version 8: [[live-formulas-gates-version8-01]],
+  [[live-formulas-gates-version8-02]], [[live-formulas-gates-version8-03]],
+  [[live-formulas-gates-version8-04]], [[live-formulas-gates-version8-05]],
+  [[live-formulas-gates-version8-06]], [[live-formulas-gates-version8-07]],
+  [[live-formulas-gates-version8-08]], [[live-formulas-gates-version8-09]],
+  [[live-formulas-gates-version8-10]], [[live-formulas-gates-version8-11]],
+  [[live-formulas-gates-version8-12]], [[live-formulas-gates-version8-13]],
+  [[live-formulas-gates-version8-14]], [[live-formulas-gates-version8-15]],
+  [[live-formulas-gates-version8-16]], [[live-formulas-gates-version8-17]],
+  [[live-formulas-gates-version8-18]],
+  [[live-formulas-gates-version8-19]],
+  [[live-formulas-gates-version8-20]],
+  [[live-formulas-gates-version8-21]],
+  [[live-formulas-gates-version8-22]],
+  [[live-formulas-gates-version8-23]],
+  [[live-formulas-gates-version8-24]],
+  [[live-formulas-gates-version8-25]],
+  [[live-formulas-gates-version8-26]],
+  [[live-formulas-gates-version8-27]],
+  [[live-formulas-gates-version8-28]],
+  [[live-formulas-gates-version8-29]],
+  [[live-formulas-gates-version8-30]],
+  [[live-formulas-gates-version8-31]],
+  [[live-formulas-gates-version8-32]], [[live-formulas-gates-version8-33]],
+  [[live-formulas-gates-version8-34]], [[live-formulas-gates-version8-35]],
+  [[live-formulas-gates-version8-36]], [[live-formulas-gates-version8-37]],
+  [[live-formulas-gates-version8-38]], [[live-formulas-gates-version8-39]],
+  [[live-formulas-gates-version8-40]], [[live-formulas-gates-version8-41]],
+  [[live-formulas-gates-version8-42]], [[live-formulas-gates-version8-43]],
+  [[live-formulas-gates-version8-44]], [[live-formulas-gates-version8-45]],
+  [[live-formulas-gates-version8-46]], [[live-formulas-gates-version8-47]],
+  [[live-formulas-gates-version8-48]], [[live-formulas-gates-version8-49]],
+  [[live-formulas-gates-version8-50]], [[live-formulas-gates-version8-51]],
+  [[live-formulas-gates-version8-52]], [[live-formulas-gates-version8-53]],
+  [[live-formulas-gates-version8-54]], [[live-formulas-gates-version8-55]],
+  [[live-formulas-gates-version8-56]], [[live-formulas-gates-version8-57]],
+  [[live-formulas-gates-version8-58]], [[live-formulas-gates-version8-59]],
+  [[live-formulas-gates-version8-60]], [[live-formulas-gates-version8-61]],
+  [[live-formulas-gates-version8-62]], [[live-formulas-gates-version8-63]],
+  [[live-formulas-gates-version8-64]], [[live-formulas-gates-version8-65]],
+  [[live-formulas-gates-version8-66]], [[live-formulas-gates-version8-67]],
+  [[live-formulas-gates-version8-68]], [[live-formulas-gates-version8-69]],
+  [[live-formulas-gates-version8-70]], [[live-formulas-gates-version8-71]],
+  [[live-formulas-gates-version8-72]], [[live-formulas-gates-version8-73]],
+  [[live-formulas-gates-version8-74]], [[live-formulas-gates-version8-75]],
+  [[live-formulas-gates-version8-76]], [[live-formulas-gates-version8-77]],
+  [[live-formulas-gates-version8-78]], [[live-formulas-gates-version8-79]],
+  [[live-formulas-gates-version8-80]], [[live-formulas-gates-version8-81]],
+  [[live-formulas-gates-version8-82]], [[live-formulas-gates-version8-83]],
+  [[live-formulas-gates-version8-84]], [[live-formulas-gates-version8-85]],
+  [[live-formulas-gates-version8-86]].
+
+Новые страницы индексируют 153 дополнительных пути относительно исходного
+снимка. Текущий сводный счёт `633/6655` получен повторным полным проходом и
+последующими точными инкрементами; он имеет приоритет над суммой
+исторических страничных снимков, часть которых отражает более ранние
+состояния файлов.
 
 ## Правило извлечения
 

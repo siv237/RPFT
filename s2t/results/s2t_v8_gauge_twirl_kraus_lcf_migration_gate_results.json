@@ -1,0 +1,98 @@
+{
+  "central_dirichlet_restrictions": {
+    "QLYR": [
+      [
+        "1/2",
+        "-sqrt(3)/3"
+      ],
+      [
+        "-sqrt(3)/3",
+        "2/3"
+      ]
+    ],
+    "XLdR": [
+      [
+        "1/2",
+        "-sqrt(3)/3"
+      ],
+      [
+        "-sqrt(3)/3",
+        "2/3"
+      ]
+    ],
+    "both_cross_characteristic_polynomial": "lambda*(lambda - 7/3)",
+    "both_cross_kernel_dimension": 1,
+    "both_cross_multiplets": [
+      [
+        "1",
+        "-2*sqrt(3)/3"
+      ],
+      [
+        "-2*sqrt(3)/3",
+        "4/3"
+      ]
+    ],
+    "internal_lepton_control": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "old_numerical_kernel_dimension": 1
+  },
+  "date": "2026-08-29",
+  "exact_gauge_covariance": {
+    "closure_residual": "zero",
+    "connected_group_covariance_exact": true,
+    "frame_gram": "2 I",
+    "hermitian_generators_checked": 12,
+    "jump_frame_dimension": 12,
+    "linear_gauge_singlet_dimension": 0,
+    "skew_action_residual": "zero",
+    "symmetry": "SU(3) x SU(2) x U(1)"
+  },
+  "gate": "version8_gauge_twirl_kraus_lcf_migration_gate",
+  "gksl_and_basis_certificate": {
+    "basis_invariance_quantifier": "every real orthogonal frame change",
+    "basis_invariance_rule": "orthogonal_kraus_sum_rule",
+    "gksl_status": "gksl_well_formed",
+    "unital_identity_residual": "zero"
+  },
+  "positive_rate_robustness": {
+    "exact_kernel_dimension": 1,
+    "finite_random_scan_needed": false,
+    "restriction": "(gamma_QLYR + gamma_XLdR) times the one-family matrix",
+    "symbolic_rates": [
+      "gamma_QLYR > 0",
+      "gamma_XLdR > 0"
+    ]
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "5310023d978b7e8e98c20e3da0908600ef73ff3839a71bbd5d7b08f3a73f26f6",
+    "obligation_count": 10,
+    "status": "lcf-checked"
+  },
+  "typed_kraus_carrier": {
+    "QLYR_real_directions": 6,
+    "XLdR_real_directions": 6,
+    "cross_real_dimension": 12,
+    "endpoint_dimension": 21,
+    "internal_control_real_dimension": 8,
+    "matrix_entries": "exact integers, I, and sqrt(2) normalization"
+  },
+  "verdict": {
+    "C2_reduced_to_scalar_line_exact": true,
+    "common_parent_action_hessian_checked": false,
+    "gauge_covariance_exact_at_lie_algebra_level": true,
+    "gksl_structure_lcf_checked": true,
+    "linear_gauge_singlet_absent_exact": true,
+    "next_gate": "version8_kraus_bridge_parent_action_lcf_migration_gate",
+    "orthogonal_basis_independence_exact": true,
+    "positive_rate_robustness_exact": true,
+    "status": "lcf-checked-parent-action-still-open"
+  }
+}

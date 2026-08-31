@@ -1,0 +1,86 @@
+\chapter{Происхождение горизонтальной плоской моды}
+\label{ch:v8-horizontal-flat-direction-parent-lift-gate}
+
+Единственная некалибровочная нулевая мода quotient-гессиана допускает
+точную изотипическую интерпретацию. Вакуумная инцидентность распадается на
+три стрелки целевого $up$-блока и семь остальных стрелок. Их независимые
+фазовые касательные $z_u,z_r$ принадлежат полному transfer-носителю и имеют
+следовую метрику
+\begin{equation}
+ Z=(z_u,z_r),
+ \qquad Z^{\mathsf T}K_{\Phi}Z=\operatorname{diag}(6,20),
+ \qquad H_{\Phi}Z=0.
+ \label{eq:v8-horizontal-phase-plane}
+\end{equation}
+Связь этой фазовой плоскости с независимым репером нарушенной
+калибровочной орбиты равна
+\begin{equation}
+ X^{\mathsf T}K_{\Phi}Z=
+ \begin{pmatrix}0&0\\0&0\\-6&8\end{pmatrix}.
+ \label{eq:v8-horizontal-phase-orbit-coupling}
+\end{equation}
+Поэтому единственная примитивная горизонтальная комбинация имеет
+коэффициенты
+\begin{equation}
+ v_0=4z_u+3z_r,
+ \qquad X^{\mathsf T}K_{\Phi}v_0=0,
+ \qquad v_0^{\mathsf T}K_{\Phi}v_0=276.
+ \label{eq:v8-horizontal-phase-four-three}
+\end{equation}
+
+Это не случайность квадратичного приближения. Для $z\in U(1)$ положим
+\begin{equation}
+ U(z)=\operatorname{diag}(z^4I_3,z^3I_7),
+ \qquad A(z)=U(z)A_0.
+ \label{eq:v8-horizontal-phase-circle}
+\end{equation}
+Из структуры инцидентности следует точное тождество
+\begin{equation}
+ A(z)A(z)^*=A_0A_0^*,
+ \qquad A(z)^*A(z)=A_0^*A_0.
+ \label{eq:v8-horizontal-phase-gram-invariance}
+\end{equation}
+Следовательно, любой родитель, построенный только из грамовых концов и
+следов их слов, постоянен на всей этой окружности и не способен поднять
+$v_0$ ни на каком порядке.
+
+Обычный determinant также не возникает автоматически: для прямоугольника
+$A_0:\mathbb C^{11}\to\mathbb C^{10}$ максимальные миноры образуют
+\begin{equation}
+ \dim\!\left(\Lambda^{10}\mathbb C^{11}\right)^*
+ \dim\!\left(\Lambda^{10}\mathbb C^{10}\right)
+ =\binom{11}{10}\binom{10}{10}=11,
+ \label{eq:v8-horizontal-maximal-minor-carrier}
+\end{equation}
+то есть ковектор determinant-line, а не канонический скаляр. Для
+фазочувствительного члена требуется дополнительное правило свёртки или
+ориентация, отсутствующие в текущем родителе.
+
+\begin{theorem}[Точная природа плоской моды]
+Горизонтальная нулевая мода является остаточной изотипической фазой с
+отношением весов $4:3$. Она сохраняет оба грамовых конца точно на всей
+$U(1)$-окружности.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет грамового родительского подъёма]
+Никакая функция от $A A^*$, $A^*A$ и их следовых слов не создаёт массу
+для $v_0$. Прямоугольный maximal-minor объект имеет размерность $11$ и не
+становится скаляром без нового contraction/orientation datum. Добавление
+ручного массового члена запрещено.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item фазовая плоскость: \textbf{$2$};
+ \item её метрика: \textbf{$\operatorname{diag}(6,20)$};
+ \item горизонтальная комбинация: \textbf{$4:3$};
+ \item точная грамова симметрия: \textbf{сохраняется на всех порядках};
+ \item грамовый родитель поднимает моду: \textbf{нет};
+ \item канонический скалярный determinant: \textbf{нет};
+ \item следующий гейт: \textbf{допуск фазочувствительной determinant-line
+ свёртки}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_horizontal_flat_direction_parent_lift_gate_results.json}.

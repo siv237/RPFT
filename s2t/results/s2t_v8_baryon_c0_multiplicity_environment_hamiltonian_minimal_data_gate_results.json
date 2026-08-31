@@ -1,0 +1,49 @@
+{
+  "admissible_hamiltonians": {
+    "class": "Sym_3(R)",
+    "gauge_constraint_reduces_class": false,
+    "real_dimension": 6
+  },
+  "circularity_witness": {
+    "constructs_hamiltonian_from_desired_projector": true,
+    "derives_projector": false,
+    "formula": "h=Delta(I3-rho_*)"
+  },
+  "date": "2026-08-30",
+  "finite_temperature_gibbs": {
+    "determinant": "x^2/(1+2x)^3",
+    "exactly_pure_for_finite_beta_delta": false,
+    "purity": "(1+2x^2)/(1+2x)^2",
+    "rank_for_positive_x": 3,
+    "state": "(P+x(I3-P))/(1+2x)",
+    "trace_distance_to_P": "2x/(1+2x)",
+    "x": "exp(-beta Delta)",
+    "zero_temperature_limit": "P"
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_multiplicity_environment_hamiltonian_minimal_data_gate",
+  "minimal_axial_representative": {
+    "complement_rank": 2,
+    "formula": "epsilon I3 + Delta(I3-P)",
+    "positive_affine_energy_transform_preserves_projector": true,
+    "projector_rank": 1,
+    "selector_space": "RP^2",
+    "spectrum_multiplicities": "1+2"
+  },
+  "minimal_data_layers": {
+    "absolute_energy_time_scale": "Delta_phys>0",
+    "derived_layers": 0,
+    "direction": "P in RP^2",
+    "exact_gibbs_purity": "beta Delta -> infinity or external pure preparation",
+    "required_layers": 3
+  },
+  "next_gate": "version8_baryon_c0_multiplicity_environment_hamiltonian_parent_origin_gate",
+  "verdict": {
+    "current_parent_selects_direction": false,
+    "current_parent_supplies_absolute_gap": false,
+    "current_parent_supplies_cooling_limit": false,
+    "finite_temperature_pure_state_no_go": true,
+    "minimal_selector_classified": true,
+    "single_c0_map_derived": false
+  }
+}

@@ -1,0 +1,181 @@
+\chapter{Полнографовое вложение выровненного изотипического parent}
+\label{ch:v8-baryon-c0-isotypic-channel-full-graph-aligned-parent}
+
+\section{Коррекция carrier-счёта}
+
+Предыдущий гейт правильно установил отсутствие полного edge-селектора, но
+перенёс число нежелательных координат разреженной целевой опоры на число
+полей вне $B\oplus M$. Эти числа различаются. Девять новых строгих рёбер
+распадаются как
+\begin{equation}
+ E_{\rm new}=E_B^{\rm new}\sqcup E_M^{\rm new}\sqcup E_z,
+ \qquad |E_{\rm new}|=9,quad (|E_B^{\rm new}|,|E_M^{\rm new}|,|E_z|)=(2,4,3).
+ \label{eq:v8-full-graph-aligned-edge-decomposition}
+\end{equation}
+Здесь
+\begin{align}
+ E_B^{\rm new}&=\{L_LZ_R,Y_LZ_R\},\nonumber\\
+ E_M^{\rm new}&=\{X_LZ_R,Z_Le_R,Z_LX_R,Z_LZ_R\},\nonumber\\
+ E_z&=\{Z_LY_R,Z_Lu_R,Z_Ld_R\}.
+ \label{eq:v8-full-graph-aligned-edge-sets}
+\end{align}
+Следовательно, матрицы $B$ и $M$ уже содержат шесть новых рёбер. Из шести
+блоков, не входящих в разреженную желаемую опору, три являются компонентами
+$M$, и только три действительно отсутствуют в subparent.
+
+Корректное плоское продолжение предыдущего функционала поэтому содержит
+\begin{equation}
+ z=(z_Y,z_u,z_d)\in\mathbb C^3,
+ \qquad
+ N_{\rm omitted}^{\mathbb R}=6,
+ \label{eq:v8-full-graph-aligned-correct-flat-count}
+\end{equation}
+а не шесть комплексных полей и двенадцать вещественных нулей.
+
+\section{Условное положительное полнографовое завершение}
+
+Минимальная квадратичная форма, включающая все девять новых рёбер, равна
+\begin{equation}
+ \mathcal S_{\rm full}
+ =\mathcal S_{BM}
+ +\mu_Y|z_Y|^2+\mu_u|z_u|^2+\mu_d|z_d|^2,
+ \qquad
+ \mu_Y,\mu_u,\mu_d>0.
+ \label{eq:v8-full-graph-aligned-action}
+\end{equation}
+Каждое добавленное слагаемое калибровочно инвариантно и не меняет нулевое
+множество выровненного сектора:
+\begin{equation}
+ z_Y=z_u=z_d=0,
+ \qquad
+ P_B+P_M=I_3,
+ \qquad
+ \ker M=\operatorname{im}P_B.
+ \label{eq:v8-full-graph-aligned-zero-set}
+\end{equation}
+Квадратичный гессиан трёх новых комплексных полей имеет вид
+\begin{equation}
+ H_z=2\operatorname{diag}
+ (\mu_Y,\mu_Y,\mu_u,\mu_u,\mu_d,\mu_d),
+ \qquad
+ \det H_z=64\mu_Y^2\mu_u^2\mu_d^2>0.
+ \label{eq:v8-full-graph-aligned-extra-hessian}
+\end{equation}
+В нормировочной точке $\mu_Y=\mu_u=\mu_d=1$ полный восемнадцатимерный
+вещественный срез имеет
+\begin{equation}
+ \Spec\Hess\mathcal S_{\rm full}
+ =\{0\}^{\times4}\cup\{2\}^{\times6}
+ \cup\{8\}^{\times5}\cup\{24\}\cup\{26\}^{\times2},
+ \label{eq:v8-full-graph-aligned-spectrum}
+\end{equation}
+то есть
+\begin{equation}
+ (n_-,n_0,n_+)=(0,4,14).
+ \label{eq:v8-full-graph-aligned-signature}
+\end{equation}
+Все неорбитальные плоские моды условно подняты.
+
+\section{Три независимых массовых коэффициента}
+
+Три дополнительных блока имеют различные endpoint-типы:
+\begin{equation}
+ \begin{aligned}
+ Z_LY_R&:\text{ слабый дублет},\\
+ Z_Lu_R&:\text{ верхний цветной канал},\\
+ Z_Ld_R&:\text{ нижний цветной канал}.
+ \end{aligned}
+ \label{eq:v8-full-graph-aligned-extra-types}
+\end{equation}
+Поэтому калибровочная ковариантность не смешивает их и оставляет открытый
+конус
+\begin{equation}
+ \mathcal C_\mu=(\mathbb R_{>0})^3,
+ \qquad
+ \dim\mathbb P\mathcal C_\mu=2.
+ \label{eq:v8-full-graph-aligned-mass-cone}
+\end{equation}
+Равенство трёх масс является допустимой точкой, но не следствием симметрии.
+Norm-square функционалы на пространствах представлений действительно дают
+положительные страты и управляемые градиентные потоки
+\cite{v8-full-graph-aligned-quiver}; спектральные расширения могут порождать
+новые скалярные связи \cite{v8-full-graph-aligned-scalar}. Эти общие факты
+не выбирают здесь конкретную точку $\mathcal C_\mu$.
+
+\section{Что полное включение не выбирает}
+
+Даже после добавления $z$ три нежелательных относительно разреженного меню
+компоненты
+\begin{equation}
+ \{X_LZ_R,Z_Le_R,Z_LX_R\}\subset E_M^{\rm new}
+ \label{eq:v8-full-graph-aligned-present-unwanted}
+\end{equation}
+остаются частью динамической матрицы $M$. Условие частичной изометрии
+обычно делает её плотной на выбранном базисе, а общая правая орбита не
+предпочитает координатную опору. Поэтому полнографовое включение снимает
+плоские spectator-моды, но не восстанавливает старый разреженный рисунок.
+
+Реестры принимают вид
+\begin{equation}
+ \begin{aligned}
+ N_{\rm carrier\ embedding}&=7/7,
+ &N_{\rm sparse\ selector}&=0/3,\\
+ N_{\rm mass\ origin}&=0/4,
+ &\mathcal M_{\rm new}&=\{\mu_Y,\mu_u,\mu_d,\text{ spectral origin}\}.
+ \end{aligned}
+ \label{eq:v8-full-graph-aligned-ledgers}
+\end{equation}
+
+\begin{theorem}[Корректное полнографовое завершение]
+Матрицы $B$ и $M$ покрывают шесть из девяти новых строгих рёбер. Добавление
+трёх оставшихся комплексных полей с положительными массами даёт полный
+carrier и поднимает все неорбитальные плоские моды: на нормированном
+вещественном срезе сигнатура равна $(0,4,14)$. Предыдущее число двенадцать
+для дополнительных вещественных нулей заменяется точным числом шесть до
+стабилизации.
+\end{theorem}
+
+\begin{proposition}[Свобода стабилизирующего конуса]
+Калибровочные типы трёх добавленных полей неэквивалентны, поэтому симметрия
+разрешает независимые положительные коэффициенты. Их общий масштаб и две
+относительные координаты не выводятся из полнографового допуска. Кроме того,
+полный carrier не выбирает разреженную coordinate-опору внутри $M$.
+\end{proposition}
+
+\begin{nogocriterion}[Запрет равных масс по удобству]
+Нельзя объявлять $\mu_Y=\mu_u=\mu_d$ следствием общего следа до построения
+единой суперсвязности и вычисления её кратностей. Нельзя также считать
+плотную rank-two матрицу $M$ селектором трёх заранее названных рёбер.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item новых строгих рёбер: \textbf{девять};
+\item новых рёбер внутри $B$: \textbf{два};
+\item новых рёбер внутри $M$: \textbf{четыре};
+\item действительно внешних полей: \textbf{три комплексных};
+\item прежний счёт шести внешних полей: \textbf{скорректирован};
+\item вещественных плоских spectator-мод до ремонта: \textbf{шесть};
+\item положительное полнографовое завершение: \textbf{существует условно};
+\item нормированная сигнатура: \textbf{$(0,4,14)$};
+\item carrier-embedding ledger: \textbf{$7/7$};
+\item разреженная coordinate-опора выбрана: \textbf{нет};
+\item стабилизирующий конус: \textbf{$(\mathbb R_{>0})^3$};
+\item относительных массовых свобод: \textbf{две};
+\item mass-origin ledger: \textbf{$0/4$};
+\item portal parent-origin: \textbf{не закрыт};
+\item следующий гейт: \textbf{происхождение масс трёх дополнительных рёбер}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_full_graph_aligned_parent_embedding_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-full-graph-aligned-quiver}
+M.~Harada, G.~Wilkin,
+\emph{Morse Theory of the Moment Map for Representations of Quivers},
+arXiv:0807.4734.
+\bibitem{v8-full-graph-aligned-scalar}
+C.~A.~Stephan,
+\emph{New Scalar Fields in Noncommutative Geometry},
+arXiv:0901.4676.
+\end{thebibliography}

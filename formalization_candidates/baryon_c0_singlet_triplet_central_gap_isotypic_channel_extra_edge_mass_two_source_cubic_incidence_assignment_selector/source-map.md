@@ -1,0 +1,5 @@
+# Source map
+- `s2t/gates/version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_assignment_selector_gate.tex`
+- `s2t/audits/s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_assignment_selector_gate.py`
+- `s2t/results/s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_assignment_selector_gate_results.json`
+- Krajewski, `arXiv:hep-th/9701081`; Ćaćić, `arXiv:0902.2068`.

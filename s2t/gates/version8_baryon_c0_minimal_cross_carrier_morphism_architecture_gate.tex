@@ -1,0 +1,115 @@
+\chapter{Минимальная архитектура cross-carrier морфизма для c0}
+\label{ch:v8-baryon-c0-minimal-cross-carrier-morphism-architecture-gate}
+
+Предыдущий реестр дал $0/7$, но не запрещал новый морфизм. Построим его
+минимальный тип. Пусть $L_{\rm src}=\mathbb R u$ --- прямая выбранного
+внутреннего инварианта $r$, а $L_{\rm aux}=\mathbb R e$ --- прямая
+коэффициента квадратичной массы вспомогательного поля. Калибровочная группа
+действует на обеих прямых тривиально:
+\begin{equation}
+ \rho_{\rm src}(g)u=u,
+ \qquad
+ \rho_{\rm aux}(g)e=e.
+ \label{eq:v8-baryon-c0-trivial-line-actions}
+\end{equation}
+
+\section{Классификация морфизмов}
+
+Для двух тривиальных вещественных представлений условие эквивариантности
+тождественно, поэтому
+\begin{equation}
+ \operatorname{Hom}_G(L_{\rm src},L_{\rm aux})\cong\mathbb R,
+ \qquad
+ \dim\operatorname{Hom}_G=1.
+ \label{eq:v8-baryon-c0-equivariant-hom-space}
+\end{equation}
+Каждый морфизм имеет вид
+\begin{equation}
+ \mathcal M_\kappa(ru)=\kappa r e,
+ \qquad \kappa\in\mathbb R.
+ \label{eq:v8-baryon-c0-morphism-family}
+\end{equation}
+Положительность полюсной массы оставляет $\kappa>0$, но не выбирает точку
+этого луча.
+
+\section{Минимальный общий родитель}
+
+После присоединения вспомогательного поля наиболее экономный quadratic
+cross-carrier блок равен
+\begin{equation}
+ S_{\rm cross}[X,\phi]
+ =S_{\rm src}[X]
+ +\frac12\phi\bigl(z+a\kappa r(X)\bigr)\phi-g\phi J(X).
+ \label{eq:v8-baryon-c0-minimal-cross-parent}
+\end{equation}
+Если источник имеет изолированный вакуум $r(X_*)=r_*>0$, то
+\begin{equation}
+ \Hess_\phi S_{\rm cross}\big|_{X_*}=z+a\kappa r_*,
+ \qquad
+ c_0=\kappa r_*.
+ \label{eq:v8-baryon-c0-cross-parent-hessian}
+\end{equation}
+Тем самым архитектура действительно строит требуемую типизированную карту,
+но переносит недостающую свободу в её нормировку.
+
+Замена координаты на исходной прямой сохраняет физический коэффициент:
+\begin{equation}
+ u\mapsto su,qquad r\mapsto r/s,qquad
+ \kappa\mapsto s\kappa,qquad
+ \kappa r\mapsto\kappa r.
+ \label{eq:v8-baryon-c0-source-normalization-orbit}
+\end{equation}
+Следовательно, число $\kappa$ не имеет смысла без общей нормировки двух
+носителей.
+
+\section{Сильнейший кандидат и недостающий селектор}
+
+Для ближайшего суперкривизностного инварианта $r_*=4$ две положительные
+эквивариантные карты дают
+\begin{equation}
+ \kappa=1\Longrightarrow c_0=4,
+ \qquad
+ \kappa=\frac14\Longrightarrow c_0=1.
+ \label{eq:v8-baryon-c0-positive-morphism-witnesses}
+\end{equation}
+Обе удовлетворяют тем же симметриям и target-independence.
+
+Единственный минимальный способ убрать луч внутри данной архитектуры ---
+потребовать изометричность нормированных прямых:
+\begin{equation}
+ \mathcal M_\kappa^*\mathcal M_\kappa=I_{L_{\rm src}}
+ \quad\Longleftrightarrow\quad
+ \kappa^2=1
+ \quad\Longrightarrow\quad
+ \kappa=1\ \hbox{при }\kappa>0.
+ \label{eq:v8-baryon-c0-isometric-normalization}
+\end{equation}
+Но существующий родитель не утверждает, что cross-carrier карта является
+изометрией относительно уже выведенных следовых метрик.
+
+\begin{theorem}[Существование и одномерный дефект нормировки]
+Минимальный калибровочно-эквивариантный cross-carrier морфизм существует и
+единственен с точностью до одного вещественного множителя $\kappa$.
+Положительность сокращает пространство до луча $\kappa>0$, но не выбирает
+$c_0$. Изометричность выбрала бы $\kappa=1$, однако является новым
+условием до явного общего следового вложения.
+\end{theorem}
+
+\begin{nogocriterion}[Архитектура не фиксирует нормировку]
+Нельзя объявлять каноническую стрелку между двумя тривиальными прямыми
+изометрией только потому, что обе одномерны. Требуется вычислить pullback
+метрики из одного оператора или действия и проверить
+$\mathcal M^*G_{\rm aux}\mathcal M=G_{\rm src}$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item эквивариантный Hom: \textbf{одномерный};
+\item типизированная архитектура: \textbf{существует};
+\item положительность фиксирует знак: \textbf{да};
+\item положительность фиксирует модуль: \textbf{нет};
+\item изометрическая нормировка: \textbf{достаточна, но не выведена};
+\item следующий гейт: \textbf{общая следовая нормировка вложения}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_minimal_cross_carrier_morphism_architecture_gate_results.json}.

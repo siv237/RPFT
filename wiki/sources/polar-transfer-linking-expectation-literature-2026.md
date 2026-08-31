@@ -67,6 +67,15 @@ Hodge-метрику свободной. Литературный язык су�
 размерности. Поэтому аффинное дополнение закрыто; дальнейший анализ должен
 начинаться с минимальных опорных проекторов.
 
+Подготовительный посттомовый тест проверил более узкую структуру и обнаружил
+скрытую ошибку типизации. В `C11+C11` число одиннадцать считает метки
+стрелок, тогда как в `C11+C10` оно считает физические состояния. Поэтому
+формула `diag(I11,U*)` требует предварительного выбора
+`j:C11_state -> C11_edge`. Литература подтверждает, что после такого выбора
+один ненулевой элемент полного imprimitivity-бимодуля порождает угол, но не
+даёт самого `j`: его должна фиксировать представленная алгебра и допустимый
+оператор Дирака.
+
 ## Links
 
 - [[version7-incidence-transfer-markov-weight-gate]]
@@ -78,6 +87,7 @@ Hodge-метрику свободной. Литературный язык су�
 - [[version7-bicomplex-total-degree-hodge-metric-gate]]
 - [[version7-affine-defect-bicomplex-completion-gate]]
 - [[version7-minimal-curvature-support-trace-gate]]
+- [[version8-polar-morita-connector-admission-gate]]
 - [[bicomplex-hodge-metric-literature-2026]]
 - [[version5-morita-linking-parent-gate]]
 - [[version5-sm-linking-corner-gate]]
@@ -96,3 +106,7 @@ Hodge-метрику свободной. Литературный язык су�
   arXiv:hep-th/9801040.
 - Локальный проектный прецедент:
   `s2t/gates/version5_morita_linking_parent_gate.tex`.
+- J. Bertozzini, R. Conti, W. Lewkeeratiyutkul,
+  “A Spectral Theorem for Imprimitivity C*-Bimodules”, arXiv:0812.3596.
+- B. Ćaćić, “Moduli Spaces of Dirac Operators for Finite Spectral
+  Triples”, arXiv:0902.2068.

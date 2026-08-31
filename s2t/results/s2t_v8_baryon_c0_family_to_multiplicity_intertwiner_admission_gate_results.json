@@ -1,0 +1,61 @@
+{
+  "conditional_extension": {
+    "commutant_constraint_rank": 8,
+    "endpoint_algebra_extension_required": true,
+    "intertwiner_dimension": 1,
+    "intertwiner_line": "R I3",
+    "isometric_solutions": [
+      "-I3",
+      "I3"
+    ],
+    "promoted_target_type": "standard 3 of SO(3)",
+    "transported_R4_plus": "R4_plus"
+  },
+  "current_types": {
+    "SO3_constraint_rank": 9,
+    "SO3_constraint_shape": [
+      27,
+      9
+    ],
+    "SO3_intertwiner_dimension": 0,
+    "family": "standard 3 of SO(3)_fam",
+    "multiplicity_environment": "three trivial real lines"
+  },
+  "date": "2026-08-30",
+  "endpoint_compatibility": {
+    "connected_SO3_action_preserving_each_projector": "trivial",
+    "coordinate_projector_commutant": "diagonal algebra D3",
+    "orthogonal_part": "diag(+-1,+-1,+-1)",
+    "standard_action_preserves_endpoint_projectors": false
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_family_to_multiplicity_intertwiner_admission_gate",
+  "next_gate": "version8_baryon_c0_multiplicity_environment_so3_action_parent_origin_gate",
+  "tetrahedral_residual": {
+    "A4_intertwiner_dimension": 0,
+    "constraint_rank": 9,
+    "constraint_shape": [
+      18,
+      9
+    ],
+    "generators": [
+      "diag(1,-1,-1)",
+      "cyclic permutation C3"
+    ],
+    "relations": [
+      "R^2=I",
+      "C^3=I",
+      "(RC)^3=I"
+    ]
+  },
+  "verdict": {
+    "conditional_extension_exists": true,
+    "derived_extension_structures": 0,
+    "forgetful_M3_map_is_typed": false,
+    "new_covariant_endpoint_lift_required": true,
+    "new_family_action_on_environment_required": true,
+    "nonzero_current_intertwiner_exists": false,
+    "required_extension_structures": 2,
+    "single_c0_map_derived": false
+  }
+}

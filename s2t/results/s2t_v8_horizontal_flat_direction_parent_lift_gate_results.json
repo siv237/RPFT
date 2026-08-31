@@ -1,0 +1,54 @@
+{
+  "all_order_invariance": {
+    "gram_trace_word_parent_can_lift": false,
+    "left_gram_invariant": true,
+    "phase_action": "diag(z^4 I_3,z^3 I_7) A0",
+    "right_gram_invariant": true
+  },
+  "date": "2026-08-30",
+  "determinant_line_boundary": {
+    "extra_contraction_or_orientation_required": true,
+    "maximal_minor_carrier_dimension": 11,
+    "ordinary_scalar_determinant_exists": false,
+    "rank": 10,
+    "transfer_shape": [
+      10,
+      11
+    ]
+  },
+  "gate": "version8_horizontal_flat_direction_parent_lift_gate",
+  "next_gate": "version8_horizontal_phase_determinant_line_admission_gate",
+  "phase_plane": {
+    "dimension": 2,
+    "horizontal_coefficients": [
+      4,
+      3
+    ],
+    "horizontal_norm_squared": 276,
+    "metric": "diag(6,20)",
+    "orbit_coupling": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -6,
+        8
+      ]
+    ]
+  },
+  "registry": {
+    "certificate_sha256": "952a4f9968dc9779b339ba69f2092af5aef32b3533b7a5b2247770f2b8e416f0",
+    "gate_count": 41,
+    "obligation_count": 276
+  },
+  "verdict": {
+    "existing_gram_parent_lifts_mode": false,
+    "horizontal_flat_mode_origin_identified": true,
+    "new_free_mass_term_admitted": false
+  }
+}

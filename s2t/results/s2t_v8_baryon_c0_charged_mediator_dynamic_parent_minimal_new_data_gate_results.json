@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-31",
+  "exact_witnesses": {
+    "base": [
+      "1/7",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "double_chi": [
+      "1/7",
+      "1",
+      "2",
+      "1",
+      "4"
+    ],
+    "double_chi_rate_ratio": 4,
+    "double_energy": [
+      "2/7",
+      "2",
+      "2",
+      "1/2",
+      "2"
+    ],
+    "double_energy_rate_ratio": 2
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_charged_mediator_dynamic_parent_minimal_new_data_gate",
+  "independence_audit": {
+    "continuous_input_coordinates": [
+      "E_star",
+      "chi"
+    ],
+    "continuous_parameter_count_is_minimal": true,
+    "derived_output_coordinates": [
+      "gamma",
+      "E_C",
+      "g",
+      "tau_C",
+      "Gamma"
+    ],
+    "jacobian_rank": 2,
+    "nonzero_coordinate_minor": "det d(E_C,g)/d(E_star,chi)=E_star"
+  },
+  "ledgers": {
+    "dependency_reduction_satisfied": 7,
+    "dependency_reduction_tested": 7,
+    "inherited_selection_satisfied": 0,
+    "inherited_selection_tested": 4,
+    "minimal_data_classification_satisfied": 4,
+    "minimal_data_classification_tested": 4
+  },
+  "minimal_new_data": {
+    "continuous": [
+      "one positive common energy E_star",
+      "one positive dimensionless coupling chi"
+    ],
+    "discrete_or_structural": [
+      "conditional endpoint/carrier extension",
+      "choice of transport primitive"
+    ],
+    "previous_apparent_slots": 5,
+    "reduction": 1,
+    "total_independent_slots": 4,
+    "vacuum_is_derived_once_positive_local_parent_is_given": true
+  },
+  "next_gate": "version8_baryon_c0_charged_mediator_common_energy_scale_parent_origin_gate",
+  "typed_identification": {
+    "common_resonant_quantum": "E_star=E_C=7 gamma",
+    "derived_coupling_energy": "g=chi E_star",
+    "derived_gamma": "gamma=E_star/7",
+    "derived_rate": "Gamma=chi^2 E_star/hbar",
+    "derived_tick": "tau_C=hbar/E_star",
+    "dimensionless_coupling": "chi=g/E_star",
+    "relative_rate": "Gamma tau_C=chi^2"
+  },
+  "verdict": {
+    "common_energy_and_coupling_are_selected": false,
+    "five_apparent_inputs_are_independent": false,
+    "full_dynamic_parent_derived": false,
+    "minimal_continuous_parameter_count": 2,
+    "minimal_total_new_data_slots": 4
+  }
+}

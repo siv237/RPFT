@@ -1,0 +1,49 @@
+{
+  "classical": {
+    "hessian": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2*a^2"
+      ]
+    ],
+    "map_selected_conditionally": true,
+    "potential": "a^2(c-c0)^2",
+    "scale_selected": false,
+    "vacuum": "c=c0, arbitrary a>0"
+  },
+  "date": "2026-08-30",
+  "field": "Q(a,c,c0,B,mu2,log(a/mu2))",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_base_scale_selector_architecture_gate",
+  "next_gate": "version8_baryon_dimensional_transmutation_input_origin_gate",
+  "quantum": {
+    "gradient": [
+      "0",
+      "0"
+    ],
+    "hessian": [
+      [
+        "2*B",
+        "0"
+      ],
+      [
+        "0",
+        "2*mu2^2"
+      ]
+    ],
+    "potential": "B*a^2(log(a/mu2)-1/2)+a^2(c-c0)^2",
+    "stationary_point": "(mu2,c0)",
+    "strict_minimum_if_B_positive": true
+  },
+  "verdict": {
+    "c0_derived": false,
+    "classical_scale_invariant_parent_selects_a": false,
+    "full_internal_selector_realized": false,
+    "mu2_derived": false,
+    "quantum_architecture_conditionally_selects_a_and_c": true
+  }
+}

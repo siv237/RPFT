@@ -1,0 +1,89 @@
+\chapter{Горизонтальная реконструкция вакуумного гессиана}
+\label{ch:v8-gauge-invariant-vacuum-hessian-reconstruction-gate}
+
+Провал голдстоуновского критерия не требует выбрасывать всю локальную
+квадратичную информацию. Следовая метрика $K_{\Phi}$ канонически задаёт
+ортогональное разложение transfer-касательного пространства на нарушенную
+калибровочную орбиту и горизонтальный срез. Для независимого орбитального
+репера $X$ точный грамов блок особенно прост:
+\begin{equation}
+ G_{\rm orb}=X^{\mathsf T}K_{\Phi}X=14I_3,
+ \qquad
+ P_{\rm orb}=XG_{\rm orb}^{-1}X^{\mathsf T}K_{\Phi},
+ \qquad Q=I_{30}-P_{\rm orb}.
+ \label{eq:v8-horizontal-orbit-projector}
+\end{equation}
+Он удовлетворяет
+\begin{equation}
+ P_{\rm orb}^2=P_{\rm orb},\qquad
+ P_{\rm orb}^{\mathsf T}K_{\Phi}=K_{\Phi}P_{\rm orb},\qquad
+ \rank Q=27.
+ \label{eq:v8-horizontal-projector-properties}
+\end{equation}
+
+Канонический квадратичный quotient прежнего фиксированно-фонового блока
+определим формулой
+\begin{equation}
+ H_{\rm quot}=Q^{\mathsf T}H_{\Phi}Q,
+ \qquad H_{\rm quot}X_{\rm orb}=0.
+ \label{eq:v8-horizontal-quotient-hessian}
+\end{equation}
+Теперь голдстоуновский критерий выполнен точно. При этом
+\begin{equation}
+ \rank H_{\rm quot}=26,\qquad
+ \dim\ker H_{\rm quot}=4=3_{\rm Goldstone}+1_{\rm horizontal}.
+ \label{eq:v8-horizontal-kernel-decomposition}
+\end{equation}
+Последняя мода не является остатком калибровочной орбиты. В координатах
+полного вещественного transfer-кадра её можно выбрать как
+$v_0=(0,6,0,0,0,0,0,-1,0,1,0,\ldots,0)^{\mathsf T}$; она
+$K_{\Phi}$-ортогональна орбите и зануляется уже исходным грамовым
+гессианом.
+
+После той же кинетической нормировки точные моменты равны
+\begin{equation}
+ \Tr(M_{\Phi,{\rm quot}}^4)=\frac{1118917}{882},
+ \qquad
+ N_{\rm bos}^{\rm BV}
+ =\Tr(M_{\Phi,{\rm quot}}^4)+3\Tr(M_B^4)
+ =\frac{226371884}{159201}.
+ \label{eq:v8-horizontal-bv-bosonic-ledger}
+\end{equation}
+С уже выведенным хиральным фермионным вкладом получается
+\begin{equation}
+ N_{\rm quad}^{\rm BV}
+ =\frac{226371884}{159201}-92
+ =\frac{211725392}{159201}.
+ \label{eq:v8-horizontal-full-quadratic-numerator}
+\end{equation}
+
+\begin{theorem}[Канонический квадратичный BV-quotient]
+Следовая метрика единственно задаёт ортогональный проектор на нарушенную
+калибровочную орбиту. Горизонтальная компрессия прежнего гессиана
+зануляет ровно три голдстоуновских направления и оставляет одну
+некалибровочную плоскую моду.
+\end{theorem}
+
+\begin{nogocriterion}[Квадратичная реконструкция не равна полному родителю]
+Формула $Q^{\mathsf T}H_{\Phi}Q$ задаёт корректную вторую вариацию на
+выбранном следовой метрикой горизонтальном срезе, но сама по себе не строит
+гладкий нелинейный калибровочно-инвариантный функционал. Поэтому
+$211725392/159201$ является точным квадратичным BV-кандидатом, а не
+безусловным физическим коэффициентом.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item орбитальная метрика: \textbf{$14I_3$};
+ \item горизонтальная размерность: \textbf{$27$};
+ \item ранг quotient-гессиана: \textbf{$26$};
+ \item ядро: \textbf{три голдстоуна и одна горизонтальная мода};
+ \item квадратичный BV-числитель: \textbf{$211725392/159201$};
+ \item нелинейный калибровочно-инвариантный родитель: \textbf{не выведен};
+ \item следующий гейт: \textbf{родительский подъём горизонтальной плоской
+ моды}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_gauge_invariant_vacuum_hessian_reconstruction_gate_results.json}.

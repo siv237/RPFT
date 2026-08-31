@@ -1,0 +1,113 @@
+{
+  "date": "2026-08-28",
+  "dimensionless_semigroup": {
+    "cross_generator_kernel_dimension": 46,
+    "fixed_algebra_and_covariance_structure_change_under_positive_rate_rescaling": false,
+    "formula": "T_u=exp(u L_cross)",
+    "rate_rescaling_scan": [
+      {
+        "kernel_dimension": 46,
+        "largest_decay": 7.999999999999995e-06,
+        "rate_kappa": 1e-06,
+        "smallest_nonzero_decay": 4.999999999999981e-07
+      },
+      {
+        "kernel_dimension": 46,
+        "largest_decay": 0.007999999999999995,
+        "rate_kappa": 0.001,
+        "smallest_nonzero_decay": 0.0004999999999999981
+      },
+      {
+        "kernel_dimension": 46,
+        "largest_decay": 7.999999999999995,
+        "rate_kappa": 1.0,
+        "smallest_nonzero_decay": 0.49999999999999806
+      },
+      {
+        "kernel_dimension": 46,
+        "largest_decay": 7999.9999999999945,
+        "rate_kappa": 1000.0,
+        "smallest_nonzero_decay": 499.99999999999807
+      },
+      {
+        "kernel_dimension": 46,
+        "largest_decay": 7999999.999999994,
+        "rate_kappa": 1000000.0,
+        "smallest_nonzero_decay": 499999.9999999981
+      }
+    ],
+    "unit_rate_largest_decay": 7.999999999999995,
+    "unit_rate_smallest_nonzero_decay": 0.49999999999999806
+  },
+  "fresh_ancilla_collision_limit": {
+    "continuous_limit_recovered": true,
+    "convergence_scan": [
+      {
+        "error_from_exp_tL": 1.0075579201963085,
+        "fresh_ancilla_collisions": 1,
+        "step_probability": 0.1
+      },
+      {
+        "error_from_exp_tL": 0.3916235088704633,
+        "fresh_ancilla_collisions": 2,
+        "step_probability": 0.05
+      },
+      {
+        "error_from_exp_tL": 0.14026872229234255,
+        "fresh_ancilla_collisions": 5,
+        "step_probability": 0.02
+      },
+      {
+        "error_from_exp_tL": 0.06787288268244106,
+        "fresh_ancilla_collisions": 10,
+        "step_probability": 0.01
+      },
+      {
+        "error_from_exp_tL": 0.006599224485767542,
+        "fresh_ancilla_collisions": 100,
+        "step_probability": 0.001
+      },
+      {
+        "error_from_exp_tL": 0.0006581151515278609,
+        "fresh_ancilla_collisions": 1000,
+        "step_probability": 0.0001
+      }
+    ],
+    "fresh_ancilla_supply_derived": false,
+    "macroscopic_dimensionless_time": 0.1,
+    "physical_duration_per_collision_derived": false,
+    "rule": "p=u/n with one fresh 13-dimensional ancilla per collision"
+  },
+  "gate": "version8_intrinsic_noise_clock_dilation_gate",
+  "inherited_clock_candidates": {
+    "new_clock_system_coupling_to_cross_environment_derived": false,
+    "tome6_four_tick_clock_is_autonomous_noise_source": false,
+    "tome6_modular_flow_orients_but_does_not_switch": true
+  },
+  "modular_time_test": {
+    "central_projector_modular_motion_norms": [
+      0.0,
+      0.0
+    ],
+    "dissipative_quark_projector_motion_norm": 8.48528137423857,
+    "faithful_C2_state_sector_weights": [
+      0.6,
+      0.4
+    ],
+    "modular_flow_reproduces_cross_sector_dissipation": false,
+    "reason": "the state-generated modular flow is reversible and fixes the sector populations",
+    "uniform_modular_generator_on_quark_projector_norm": 0.0,
+    "uniform_state_motion_norm": 0.0,
+    "uniform_stationary_state": "I21/21"
+  },
+  "verdict": {
+    "autonomous_fresh_noise_supply_derived": false,
+    "canonical_dimensionless_lindblad_time_exists": true,
+    "collision_limit_generates_semigroup_conditionally": true,
+    "cross_noise_multiplicity_space_derived": true,
+    "intrinsic_physical_rate_derived": false,
+    "modular_time_generates_required_dissipation": false,
+    "next_gate": "version8_detailed_balance_relative_rate_selector_gate",
+    "status": "dimensionless_noise_time_positive_physical_clock_rate_no_go"
+  }
+}

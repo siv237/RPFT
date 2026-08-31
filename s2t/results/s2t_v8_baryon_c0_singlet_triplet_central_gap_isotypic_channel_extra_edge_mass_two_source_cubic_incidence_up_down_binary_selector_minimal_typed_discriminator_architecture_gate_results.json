@@ -1,0 +1,71 @@
+{
+  "binary_carrier": {
+    "faithful_dimension_is_minimal": true,
+    "hilbert_dimension": 2,
+    "projectors": {
+      "d": "|d><d|",
+      "u": "|u><u|"
+    },
+    "sigma_z": "P_u-P_d",
+    "sigma_z_squared": "I_2"
+  },
+  "controlled_incidence": {
+    "formula": "P_u(bit) tensor P_u(endpoint) + P_d(bit) tensor P_d(endpoint)",
+    "gauge_equivariant": true,
+    "grading_even": true,
+    "is_projection": true,
+    "rank": 12,
+    "real_compatible": true
+  },
+  "date": "2026-08-31",
+  "dynamics": {
+    "amplitude_damping_fixed_algebra_dimension": 1,
+    "amplitude_damping_heisenberg_rank": 3,
+    "relaxation_rate_is_free": true,
+    "thermal_population_ratio": "exp(-7 theta)",
+    "unique_stationary_state": "|d><d|",
+    "unitary_commutator_superoperator_rank": 2,
+    "unitary_dynamics_selects_population": false,
+    "unitary_fixed_algebra_dimension": 2,
+    "zero_temperature_jump": "|d><u|",
+    "zero_temperature_limit": {
+      "p_d": "1",
+      "p_u": "0"
+    }
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_architecture_gate",
+  "ledgers": {
+    "conditional_relaxation_shape_satisfied": 5,
+    "conditional_relaxation_shape_tested": 5,
+    "inherited_origin_satisfied": 0,
+    "inherited_origin_tested": 5,
+    "typed_static_architecture_satisfied": 8,
+    "typed_static_architecture_tested": 8
+  },
+  "minimal_new_data": [
+    "two_state_binary_carrier",
+    "controlled_endpoint_embedding",
+    "positive_typed_hypercharge_square_coefficient",
+    "downward_jump_or_zero_temperature_bath",
+    "relaxation_rate_for_physical_time"
+  ],
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_parent_origin_gate",
+  "typed_hamiltonian": {
+    "coefficient_sign_is_architecture_input": true,
+    "decomposition": "(29/6)I_2+(7/2)sigma_z",
+    "eigenvalues": {
+      "d": "4/3",
+      "u": "25/3"
+    },
+    "negative_coefficient_ground_state": "u",
+    "positive_coefficient_ground_state": "d",
+    "spectral_gap": "7"
+  },
+  "verdict": {
+    "binary_choice_derived_from_existing_parent": false,
+    "conditional_zero_temperature_relaxation_constructed": true,
+    "minimal_static_selector_constructed": true,
+    "unitary_hamiltonian_alone_selects_branch": false
+  }
+}

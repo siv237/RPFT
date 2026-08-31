@@ -1,0 +1,205 @@
+{
+  "common_trace_cross_field_metric": {
+    "Einstein_mobility_eigenvalue_up_to_common_scale": 0.3333333333333333,
+    "QLYR_XLdR_relative_mobility": 1.0,
+    "absolute_heat_kernel_normalization_derived": false,
+    "covers_all_six_QMS_families": false,
+    "cross_relative_isotropy_derived_on_B_carrier": true,
+    "formula": "Tr(delta D_B delta D_B)=3 Tr(delta B delta B*)",
+    "metric_eigenvalue": 3.0,
+    "real_dimension": 12,
+    "selected_edges_inside_B": 2,
+    "selected_edges_outside_B": 4
+  },
+  "date": "2026-08-29",
+  "family_normalization_ambiguity": {
+    "all_candidates_primitive_and_KMS": true,
+    "candidate_rules": [
+      {
+        "KMS_symmetry_residual": 8.498374721940739e-18,
+        "decay_gap": 0.02125996742118741,
+        "fixed_algebra_dimension": 1,
+        "normalized_weights": [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666
+        ],
+        "raw_weights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rule": "equal_coefficient_per_family"
+      },
+      {
+        "KMS_symmetry_residual": 8.498374721940739e-18,
+        "decay_gap": 0.02125996742118741,
+        "fixed_algebra_dimension": 1,
+        "normalized_weights": [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666
+        ],
+        "raw_weights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "rule": "equal_mobility_per_noise_component"
+      },
+      {
+        "KMS_symmetry_residual": 1.5023145987371592e-18,
+        "decay_gap": 0.015054600132526227,
+        "fixed_algebra_dimension": 1,
+        "normalized_weights": [
+          0.3582089552238807,
+          0.044776119402985086,
+          0.11940298507462689,
+          0.3582089552238807,
+          0.059701492537313446,
+          0.059701492537313446
+        ],
+        "raw_weights": [
+          1.0,
+          0.125,
+          0.3333333333333333,
+          1.0,
+          0.16666666666666666,
+          0.16666666666666666
+        ],
+        "rule": "equal_total_noise_power_per_family"
+      },
+      {
+        "KMS_symmetry_residual": 2.4960208451369398e-18,
+        "decay_gap": 0.001197333908140678,
+        "fixed_algebra_dimension": 1,
+        "normalized_weights": [
+          0.08893630684448474,
+          0.12436846710727,
+          0.18657547737799865,
+          0.26597694247665765,
+          0.1565641133559119,
+          0.17757869283767702
+        ],
+        "raw_weights": [
+          0.05160813859383101,
+          0.07216878364870323,
+          0.10826639239215334,
+          0.15434163388526181,
+          0.09085133785711318,
+          0.10304572020629735
+        ],
+        "rule": "equal_superoperator_HS_length"
+      },
+      {
+        "KMS_symmetry_residual": 6.639355251516202e-20,
+        "decay_gap": 6.489527323141623e-05,
+        "fixed_algebra_dimension": 1,
+        "normalized_weights": [
+          0.04276007726167205,
+          0.08361820917624083,
+          0.18818691471751772,
+          0.3824443750710842,
+          0.13251490968457838,
+          0.17047551408890693
+        ],
+        "raw_weights": [
+          0.00266339996912007,
+          0.005208333333333336,
+          0.01172161172161172,
+          0.023821339950372195,
+          0.008253965590427324,
+          0.010618420452834518
+        ],
+        "rule": "equal_squared_superoperator_HS_length"
+      }
+    ],
+    "component_counts": [
+      1,
+      8,
+      3,
+      1,
+      6,
+      6
+    ],
+    "distinct_normalized_rate_vectors": 4,
+    "family_order": [
+      "linking",
+      "SU3",
+      "SU2",
+      "U1",
+      "QLYR",
+      "XLdR"
+    ],
+    "maximum_pairwise_normalized_weight_distance": 0.35200563158170206,
+    "one_rule_selected_by_common_trace_alone": false,
+    "superoperator_HS_norms": [
+      19.376788763304383,
+      13.856406460551016,
+      9.236476600955584,
+      6.4791331724750565,
+      11.006992561548783,
+      9.704430208241563
+    ]
+  },
+  "fluctuation_dissipation_scope": {
+    "KMS_state_fixes_forward_backward_ratio": true,
+    "SU2_mobility_derived": false,
+    "SU3_mobility_derived": false,
+    "U1_mobility_derived": false,
+    "bath_spectral_density_or_canonical_noise_frame_required": true,
+    "linking_mobility_derived": false,
+    "trace_kinetic_metric_partially_fixes_cross_relative_mobility": true
+  },
+  "gate": "version8_fluctuation_dissipation_mobility_origin_gate",
+  "noise_frame_rescaling": {
+    "current_assembly_normalizes_cross_variations_but_not_linking_incidence_by_same_rule": true,
+    "equal_coefficients_are_frame_invariant_without_canonical_jump_norm": false,
+    "identity": "D[sV]=s^2 D[V], kappa' = kappa/s^2",
+    "tests": [
+      {
+        "compensated_mobility": 16.0,
+        "family": "linking",
+        "generator_invariance_residual": 0.0,
+        "jump_frame_scale": 0.25
+      },
+      {
+        "compensated_mobility": 4.0,
+        "family": "SU3",
+        "generator_invariance_residual": 0.0,
+        "jump_frame_scale": 0.5
+      },
+      {
+        "compensated_mobility": 0.25,
+        "family": "SU2",
+        "generator_invariance_residual": 0.0,
+        "jump_frame_scale": 2.0
+      },
+      {
+        "compensated_mobility": 0.0625,
+        "family": "U1",
+        "generator_invariance_residual": 0.0,
+        "jump_frame_scale": 4.0
+      }
+    ]
+  },
+  "verdict": {
+    "absolute_physical_time_derived": false,
+    "cross_Q_X_relative_mobility_partial_pass": true,
+    "next_gate": "version8_canonical_noise_frame_common_trace_gate",
+    "single_six_family_mobility_derived": false,
+    "status": "cross_trace_mobility_partial_pass_full_noise_frame_and_rate_metric_no_go"
+  }
+}

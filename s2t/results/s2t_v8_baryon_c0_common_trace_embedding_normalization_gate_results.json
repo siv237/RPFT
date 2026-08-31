@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-30",
+  "exact_witnesses": [
+    {
+      "kappa": "1",
+      "p": "1/2",
+      "q": "1/2"
+    },
+    {
+      "kappa": "2",
+      "p": "4/5",
+      "q": "1/5"
+    }
+  ],
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_common_trace_embedding_normalization_gate",
+  "line_metrics": {
+    "G_aux": "q",
+    "G_src": "p",
+    "positive_kappa": "sqrt(p/q)",
+    "pullback_isometry": "q*kappa^2=p"
+  },
+  "linking_requirement": {
+    "current_auxiliary_carrier_in_common_simple_block": false,
+    "equal_central_weights_derived": false,
+    "off_diagonal_bimodule_required": true
+  },
+  "next_gate": "version8_baryon_c0_linking_algebra_offdiagonal_bridge_admission_gate",
+  "normalized_trace_family": {
+    "conditions": "p>0, q>0, p+q=1",
+    "definition": "tau_pq=p*tau_src+q*tau_aux",
+    "simplex_dimension": 1
+  },
+  "separated_algebra": "A_src direct_sum A_aux",
+  "verdict": {
+    "c0_selected": false,
+    "common_trace_alone_selects_kappa": false,
+    "common_trace_exists": true,
+    "direct_sum_common_trace_no_go": true
+  }
+}

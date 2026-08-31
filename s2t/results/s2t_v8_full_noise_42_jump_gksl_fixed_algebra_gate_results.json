@@ -1,0 +1,27 @@
+{
+  "boundary": {
+    "fresh_ancilla_source_derived": false,
+    "physical_rate_metric_selected": false,
+    "physical_time_selected": false
+  },
+  "date": "2026-08-30",
+  "gate": "version8_full_noise_42_jump_gksl_fixed_algebra_gate",
+  "next_gate": "full_42_jump_repeated_interaction_hamiltonian_gate",
+  "process": {
+    "added_jump_count": 17,
+    "base_jump_count": 25,
+    "endpoint_invariant": true,
+    "fixed_algebra": "C I_21",
+    "gksl": true,
+    "jump_count": 42,
+    "primitive": true,
+    "trace_dual_whitening_preserves_span": true,
+    "trace_preserving": true,
+    "unital": true
+  },
+  "registry": {
+    "certificate_sha256": "1053f06592a5ea580488d8adffb3b032238076e08e93ff16aa86d05956b238e1",
+    "gate_count": 20,
+    "obligation_count": 134
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-29",
+  "exact_carrier": {
+    "endpoint_dimension": 21,
+    "incidence_entries": "integers zero and one",
+    "incidence_rank": 10,
+    "source_corner_dimension": 11,
+    "target_corner_dimension": 10
+  },
+  "exact_matrix_unit_checks": {
+    "corner_formula_matrix_units": 221,
+    "corner_invariance_matrix_units": 221,
+    "trace_preservation_full_matrix_units": 441,
+    "unital_identity_residual": "zero"
+  },
+  "fixed_algebra": {
+    "commutant_system_rank": 180,
+    "commutant_system_shape": [
+      220,
+      221
+    ],
+    "exact_nullity": 41,
+    "old_numerical_dimension": 41
+  },
+  "gate": "version8_linking_qms_gksl_lcf_migration_gate",
+  "gksl_certificate": {
+    "complete_positivity_status": "derived inside the trusted GKSL rule",
+    "hamiltonian": "zero",
+    "independent_choi_semigroup_certificate": false,
+    "jump_operator": "D_A = [[0,A^*],[A,0]]",
+    "jump_self_adjoint": true,
+    "rate": "1",
+    "trusted_kernel_rule": "finite_dimensional_gksl_constructor"
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "04a698acbc4e41502b7add7ce5331d53a71ab8726bc57cd488a2db1e3a72e0b1",
+    "obligation_count": 6,
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "endpoint_corner_invariance_exact": true,
+    "explicit_corner_formula_exact": true,
+    "fixed_dimension_41_exact": true,
+    "gksl_structure_lcf_checked": true,
+    "independent_cp_proof_object_obtained": false,
+    "next_gate": "version8_gauge_twirl_kraus_lcf_migration_gate",
+    "status": "lcf-checked-with-trusted-gksl-rule",
+    "trace_preservation_exact": true,
+    "unitality_exact": true
+  }
+}

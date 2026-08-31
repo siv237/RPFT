@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-30",
+  "field": "Q(z,a,c,lambda_3)",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_spectral_scale_anchor_minimal_new_data_gate",
+  "independence_witnesses": {
+    "fixed_a_c_1_at_z_a": "1/2",
+    "fixed_a_c_2_at_z_a": "2/3",
+    "fixed_c_a_1_at_z_1": "1/2",
+    "fixed_c_a_2_at_z_1": "2/3",
+    "lambda_changes_amplitude_not_normalized_shape": true
+  },
+  "input_sha256": "e2165b746a6007d7fc868b6601bdddec841f7daa2f54acdfdfd2110c97f7774a",
+  "kernel": {
+    "mass_sq": "c*a",
+    "scalar": "a*c*lambda_3/(a*c + z)",
+    "shape": "a*c/(a*c + z)",
+    "slope": "-1/(a*c)",
+    "static_value": "lambda_3"
+  },
+  "minimal_new_data": {
+    "full_kernel_additionally_requires": "lambda_3",
+    "independent_data_count_full_kernel": 3,
+    "independent_data_count_shape": 2,
+    "shape": [
+      "selected positive base scale a",
+      "selected dimensionless typed map coefficient c"
+    ]
+  },
+  "next_gate": "version8_baryon_base_scale_selector_architecture_gate",
+  "verdict": {
+    "anchor_realized_by_current_parent": false,
+    "minimal_contract_derived": true,
+    "physical_kernel_derived": false
+  }
+}

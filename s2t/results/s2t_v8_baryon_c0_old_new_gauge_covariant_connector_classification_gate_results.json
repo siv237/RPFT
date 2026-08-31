@@ -1,0 +1,77 @@
+{
+  "central_dynamics": {
+    "dirichlet_matrix": [
+      [
+        "2/21",
+        "-sqrt(42)/21"
+      ],
+      [
+        "-sqrt(42)/21",
+        "1"
+      ]
+    ],
+    "dirichlet_rank": 1,
+    "fixed_algebra": "C I_23",
+    "new_fixed_dimension": 1,
+    "old_fixed_dimension": 2,
+    "primitive_for_every_positive_rate": true
+  },
+  "classification": {
+    "basis_support": [
+      [
+        [
+          8,
+          0
+        ]
+      ],
+      [
+        [
+          17,
+          1
+        ]
+      ],
+      [
+        [
+          18,
+          1
+        ]
+      ]
+    ],
+    "charged_singlet_multiplicity": 3,
+    "complex_solution_dimension": 3,
+    "linear_system_rank": 39,
+    "linear_system_shape": [
+      546,
+      42
+    ],
+    "real_projective_family": "RP^2"
+  },
+  "date": "2026-08-30",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_old_new_gauge_covariant_connector_classification_gate",
+  "minimal_connector_frame": {
+    "SU3_SU2_invariant": true,
+    "U1_covariant_rotation": [
+      "i[Y,C1]=-C2",
+      "i[Y,C2]=C1"
+    ],
+    "extended_frame_rank": 47,
+    "odd": true,
+    "real_dimension": 2,
+    "real_span_closed": true,
+    "trace_metric": "2 I2"
+  },
+  "next_gate": "version8_baryon_c0_connector_multiplicity_and_rate_parent_selector_gate",
+  "selector_boundary": {
+    "conditional_c0": 4,
+    "connector_direction_selected": false,
+    "physical_c0_derived": false,
+    "positive_rate_selected": false
+  },
+  "verdict": {
+    "gauge_covariant_old_new_connector_exists": true,
+    "minimal_two_quadrature_extension_is_primitive": true,
+    "parent_selector_required": true,
+    "unique_connector_derived": false
+  }
+}

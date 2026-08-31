@@ -1,0 +1,111 @@
+{
+  "canonical_polar_connector": {
+    "cokernel_dimension": 1,
+    "final_projection_residual": 0.0,
+    "formula": "T_j=diag(j,jU*) after choosing j:C11_state->C11_edge_labels",
+    "initial_projection_residual": 1.96567804791517e-14,
+    "maximum_basis_covariance_residual": 1.1619755848158745e-14,
+    "new_continuous_matrix_parameters_if_j_is_not_derived": 121,
+    "rank": 21,
+    "shape": [
+      22,
+      21
+    ]
+  },
+  "existing_carriers": {
+    "edge_dimension": 22,
+    "edge_hodge_decomposition": [
+      11,
+      11
+    ],
+    "index_defect_rank": 1,
+    "linking_endpoint_decomposition": [
+      11,
+      10
+    ],
+    "linking_endpoint_dimension": 21,
+    "reference_incidence_rank": 10,
+    "reference_incidence_shape": [
+      10,
+      11
+    ]
+  },
+  "gate": "version8_polar_morita_connector_admission_gate",
+  "hodge_background_compatibility": {
+    "compressed_defect_identity_residual": 0.0,
+    "compressed_intertwining_residual_norm": 1.0,
+    "compressed_residual_equals_index_defect": true,
+    "maximum_phase_formula_residual": 1.7053025658242404e-13,
+    "minimizing_relative_phase": 0.0,
+    "phase_residual_squared_formula": "1+40*(1-cos(phi))",
+    "polar_ansatz_complex_dimension_before_isometry": 2,
+    "relative_phase_after_isometry": "one U(1)",
+    "relative_phase_fixed_by_background_intertwining": true
+  },
+  "index_defect_completion": {
+    "completed_background_intertwining_residual": 1.965271375701316e-14,
+    "completed_connector_shape": [
+      22,
+      22
+    ],
+    "completed_map_unitarity_residual": 1.9657018198637355e-14,
+    "completed_polar_map": "[U*, inclusion_ker] : C10+ker(A0) -> C11",
+    "completed_target": "C10 direct_sum ker(A0)",
+    "coordinate_defect_vector_phase_is_gauge": true,
+    "requires_choice_of_defect_line": false
+  },
+  "morita_generation": {
+    "commutant_dimension_after_connector": 1,
+    "commutant_dimension_before_connector": 2,
+    "diagonal_factor": "M22(C) direct_sum M21(C)",
+    "four_hundred_sixty_two_independent_inputs_required_after_j_choice": false,
+    "generated_star_algebra_with_full_diagonal_factors": "M43(C)",
+    "offdiagonal_module_dimension": 462,
+    "single_connector_left_right_orbit_span_rank": 462
+  },
+  "physical_typing_red_team": {
+    "all_identifications_have_same_hodge_defect_norm": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9999999999999998,
+      0.9999999999999998,
+      1.0000000000000002
+    ],
+    "compressed_edge_label_dimension": 11,
+    "edge_C11_meaning": "multiplicity space of eleven arrow labels",
+    "full_physical_arrow_module_complex_dimension": 36,
+    "identification_moduli": "U(11)",
+    "identification_moduli_real_dimension": 121,
+    "identity_I11_derived": false,
+    "linking_source_C11_meaning": "physical left-state space QL+LL+XL+YL",
+    "minimum_separation_between_tested_identifications": 4.406553822205848,
+    "same_dimension_implies_same_module": false,
+    "tested_unitary_identifications": 8
+  },
+  "trace_and_physical_boundary": {
+    "M43_normalized_corner_weights": [
+      "22/43",
+      "21/43"
+    ],
+    "connector_lives_on_auxiliary_field_curvature_carriers": true,
+    "fermionic_finite_spectral_triple_embedding_proved": false,
+    "full_connector_superconnection_hessian_computed": false,
+    "raw_corner_trace_coefficients_equal": true,
+    "simple_factor_trace_unique_if_unproved_identification_j_is_admitted": true,
+    "unique_physical_mass_metric_derived": false
+  },
+  "verdict": {
+    "algebraic_simple_completion_obtained_conditionally": true,
+    "canonical_existing_data_connector_found": false,
+    "complete_physical_parent_obtained": false,
+    "dimension_462_is_module_dimension_not_parameter_count": true,
+    "edge_state_module_identification_derived": false,
+    "index_defect_is_the_only_compressed_hodge_mismatch": true,
+    "next_gate": "version8_physical_arrow_endpoint_intertwiner_classification_gate",
+    "pre_tome_direction_admitted": false,
+    "status": "compressed_dimension_coincidence_no_go_physical_intertwiner_open"
+  }
+}

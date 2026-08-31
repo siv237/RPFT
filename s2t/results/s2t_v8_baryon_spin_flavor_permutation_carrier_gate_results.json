@@ -1,0 +1,123 @@
+{
+  "S3_character_table": {
+    "characters": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        1
+      ],
+      [
+        2,
+        0,
+        -1
+      ]
+    ],
+    "class_order": [
+      "identity",
+      "transposition",
+      "three_cycle"
+    ],
+    "class_sizes": [
+      1,
+      3,
+      2
+    ],
+    "invariant_multiplicity_matrix": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "irreducible_order": [
+      "trivial",
+      "sign",
+      "standard"
+    ],
+    "matching_matrix_is_identity": true
+  },
+  "date": "2026-08-30",
+  "fermionic_branch_rule": {
+    "allowed_matched_pairs": [
+      [
+        "trivial",
+        "trivial"
+      ],
+      [
+        "sign",
+        "sign"
+      ],
+      [
+        "standard",
+        "standard"
+      ]
+    ],
+    "color_type": "sign",
+    "required_space_tensor_spin_aroma_type": "contains trivial",
+    "unique_symmetric_branch_selected": false
+  },
+  "field": "Q with exact S3 representation matrices",
+  "gate": "version8_baryon_spin_flavor_permutation_carrier_gate",
+  "joint_I_half_S_half_sector": {
+    "branch_values": {
+      "sign": {
+        "neutron_O": "-1/3",
+        "neutron_dimension": 1,
+        "neutron_minus_proton_O": "1",
+        "neutron_scalar_exact": true,
+        "proton_O": "-4/3",
+        "proton_dimension": 1,
+        "proton_scalar_exact": true
+      },
+      "standard": {
+        "neutron_O": "1/3",
+        "neutron_dimension": 2,
+        "neutron_minus_proton_O": "1/3",
+        "neutron_scalar_exact": true,
+        "proton_O": "0",
+        "proton_dimension": 2,
+        "proton_scalar_exact": true
+      },
+      "trivial": {
+        "neutron_O": "1",
+        "neutron_dimension": 1,
+        "neutron_minus_proton_O": "-1/3",
+        "neutron_scalar_exact": true,
+        "proton_O": "4/3",
+        "proton_dimension": 1,
+        "proton_scalar_exact": true
+      }
+    },
+    "decomposition": "trivial + sign + standard",
+    "neutron_dimension": 4,
+    "proton_dimension": 4
+  },
+  "sufficient_extra_condition": {
+    "spatial_ground_state_dimension": "1",
+    "spatial_ground_state_type": "trivial",
+    "spatial_parent_present": false,
+    "then_neutron_minus_proton_O": "-1/3",
+    "then_spin_aroma_type": "trivial"
+  },
+  "verdict": {
+    "magnetic_branch_unique_in_current_project": false,
+    "next_gate": "version8_baryon_spatial_ground_state_symmetry_origin_gate",
+    "pauli_principle_selects_matching_types": true,
+    "pauli_principle_selects_symmetric_spin_aroma_alone": false
+  }
+}

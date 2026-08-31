@@ -1,0 +1,49 @@
+{
+  "affine_multiplicity": {
+    "canonical_map_to_full_noise_frame_supplied": false,
+    "direct_unitary_identification_possible": false,
+    "full_noise_rank": 42,
+    "linear_map_parameter_count_P3_to_noise": 126,
+    "rank_P3": 3,
+    "role": "resonant_degeneracy_only_not_rate_or_energy_selector"
+  },
+  "date": "2026-08-30",
+  "exact_checks": {
+    "common_energy_scale_identity": true,
+    "energy_conservation_commutator_zero": true,
+    "jump_extraction_exact": true,
+    "vacuum_first_moment_zero": true,
+    "vacuum_second_moment_exact": true
+  },
+  "gate": "version8_minimal_mixed_clock_collision_parent_gate",
+  "parent": {
+    "free_energy": "E_C(P_exc_environment+N_clock)",
+    "interaction_energy": "chi E_C sum_a F_a tensor (|a,0><0,1|+h.c.)",
+    "total_hamiltonian": "E_C(H_0+chi G)"
+  },
+  "representative": {
+    "clock_dimension": 2,
+    "environment_dimension": 3,
+    "extension_to_full_frame": "termwise_for_42_Hermitian_jumps",
+    "jump_count": 2,
+    "system_dimension": 2
+  },
+  "scale_and_rate": {
+    "E_C_selected": false,
+    "chi_selected": false,
+    "chi_values_preserving_energy_conservation": "all_positive_chi",
+    "rate": "Gamma=chi^2 E_C/hbar",
+    "relative_rate": "Gamma/Omega=chi^2",
+    "scale_orbit": "(E_C,t)->(lambda E_C,t/lambda)",
+    "tick_duration": "tau_C=hbar/E_C"
+  },
+  "verdict": {
+    "absolute_time_anchor_derived": false,
+    "affine_rank_three_needed_for_full_noise_parent": false,
+    "energy_conserving_full_noise_parent_exists": true,
+    "next_program": "exact_baryon_sector_certificates",
+    "prepared_excited_clock_chain_required": true,
+    "time_sprint_closed_on_current_parent": true,
+    "typed_rate_bridge_strengthened": true
+  }
+}

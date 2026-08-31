@@ -1,0 +1,52 @@
+{
+  "carrier_dimensions": {
+    "independent_reverse_completion_real": 80,
+    "physical_real_completion_real": 40,
+    "transfer_complex": 20,
+    "unjustified_new_real_directions": 40
+  },
+  "date": "2026-08-30",
+  "gate": "version8_horizontal_phase_real_oriented_cycle_admission_gate",
+  "next_gate": "version8_horizontal_phase_complex_symplectic_polarization_admission_gate",
+  "orientation_obstruction": {
+    "compatible": false,
+    "formal_orientation_condition": "alpha*beta=-1",
+    "positive_involution_condition": "beta=conjugate(alpha)",
+    "resulting_norm_condition": "abs(alpha)^2=-1"
+  },
+  "real_structure": {
+    "even_trace_moments_2_4_6": [
+      22,
+      110,
+      682
+    ],
+    "horizontal_phase_action": "similarity",
+    "odd_trace_moments_1_3_5": [
+      0,
+      0,
+      0
+    ],
+    "real_completion_is_odd": true,
+    "reverse_is_independent": false,
+    "reverse_phase_weights_are_opposite": true
+  },
+  "registry": {
+    "certificate_sha256": "470f62fde8b40c3956db199f6a04999e274f185c6076836b40262f3f7a1dfcfb",
+    "gate_count": 44,
+    "obligation_count": 310
+  },
+  "two_layer_quiver": {
+    "forward_edge_count": 11,
+    "raising_nilpotence_order": 2,
+    "raising_rank": 4,
+    "real_completion_rank": 8,
+    "reverse_nilpotence_order": 2,
+    "vertex_count": 9
+  },
+  "verdict": {
+    "holomorphic_directed_cycle_exists": false,
+    "real_completed_trace_detects_horizontal_phase": false,
+    "real_completion_adds_independent_reverse_field": false,
+    "real_oriented_cycle_lifts_horizontal_mode": false
+  }
+}

@@ -1,0 +1,168 @@
+\chapter{Происхождение центральной щели синглета и триплета из родительского действия}
+\label{ch:v8-baryon-c0-singlet-triplet-central-gap-parent-action-origin-gate}
+
+Предыдущий гейт доказал, что минимальное равновесное данное есть
+$\theta=\beta\Delta$. Теперь проверим, содержится ли направление и
+коэффициент $\Delta$ в уже объявленных grading-, семейных и концевых
+операторах.
+
+\section{Единое центральное направление}
+
+На представлении $\mathbf1\oplus\mathbf3$ введём следово-центрированный
+оператор
+\begin{equation}
+ Q=P_{\mathbf3}-\frac34I_4,
+ \qquad \Tr Q=0,
+ \qquad \Spec Q=\left\{-\frac34,\left(\frac14\right)^{\times3}\right\}.
+ \label{eq:v8-baryon-c0-central-gap-traceless-direction}
+\end{equation}
+Для стандартных вещественных генераторов семейной тройки полный
+квадратичный оператор Казимира равен
+\begin{equation}
+ \mathcal C_2=-\sum_{a=1}^{3}J_a^2=2P_{\mathbf3}.
+ \label{eq:v8-baryon-c0-family-casimir-central-projector}
+\end{equation}
+Для минимального endpoint-расширения положим
+$\Gamma_4=\operatorname{diag}(-1,+1,+1,+1)$. После центрирования получаем
+точное совпадение
+\begin{equation}
+ \Gamma_4-\frac{\Tr\Gamma_4}{4}I_4
+ =\mathcal C_2-\frac{\Tr\mathcal C_2}{4}I_4
+ =2Q.
+ \label{eq:v8-baryon-c0-centered-grading-casimir-equivalence}
+\end{equation}
+Поэтому grading, семейный оператор Казимира и центральный endpoint-проектор
+порождают одну и ту же двумерную алгебру
+\begin{equation}
+ \operatorname{span}\{I_4,\Gamma_4,\mathcal C_2,P_{\mathbf3}\}
+ =\operatorname{span}\{I_4,Q\},
+ \qquad \dim=2.
+ \label{eq:v8-baryon-c0-central-gap-seed-algebra}
+\end{equation}
+Форма центральной щели тем самым условно канонична:
+\begin{equation}
+ h_{\rm cen}=\varepsilon I_4+\lambda Q,
+ \qquad
+ E_{\mathbf3}-E_{\mathbf1}=\lambda.
+ \label{eq:v8-baryon-c0-central-gap-general-hamiltonian}
+\end{equation}
+
+\section{Положительность не выбирает ориентацию}
+
+Существуют два положительных проекторных гамильтониана
+\begin{equation}
+ h_{\mathbf1\,\min}=P_{\mathbf3}=Q+\frac34I_4,
+ \qquad
+ h_{\mathbf3\,\min}=P_{\mathbf1}=-Q+\frac14I_4.
+ \label{eq:v8-baryon-c0-central-gap-positive-orientation-witnesses}
+\end{equation}
+Первый оставляет синглет нижним уровнем и имеет $\lambda=+1$, второй
+оставляет нижним триплет и имеет $\lambda=-1$. При $\beta>0$ их отклонения
+от счётного веса факторизуются как
+\begin{equation}
+ p_+(\beta)-\frac14
+ =\frac{3(e^\beta-1)}{4(e^\beta+3)}>0,
+ \qquad
+ p_-(\beta)-\frac14
+ =-\frac{3(e^\beta-1)}{4(3e^\beta+1)}<0.
+ \label{eq:v8-baryon-c0-central-gap-opposite-weight-witnesses}
+\end{equation}
+Следовательно, самосопряжённость, ограниченность и положительность после
+добавления скаляра не выбирают знак щели.
+
+Для произвольного коэффициента равновесный параметр остаётся
+\begin{equation}
+ \theta=\beta\lambda,
+ \qquad \lambda\in\mathbb R.
+ \label{eq:v8-baryon-c0-central-gap-free-coefficient}
+\end{equation}
+Даже разрешение произвольного полинома от семейного оператора Казимира не
+снимает свободу. Для
+\begin{equation}
+ f(\mathcal C_2)=a_0I_4+a_1\mathcal C_2
+ +a_2\mathcal C_2^2+a_3\mathcal C_2^3
+ \label{eq:v8-baryon-c0-central-gap-casimir-polynomial}
+\end{equation}
+получаем
+\begin{equation}
+ \Delta_f=f(2)-f(0)=2a_1+4a_2+8a_3.
+ \label{eq:v8-baryon-c0-central-gap-polynomial-coefficient}
+\end{equation}
+Коэффициенты $a_k$ не фиксируются самим спектром $\{0,2\}$.
+
+Кроме того, чисто квадратичный чётный функционал теряет ориентацию:
+\begin{equation}
+ (\lambda Q)^2=(-\lambda Q)^2,
+ \qquad \Tr Q^2=\frac34.
+ \label{eq:v8-baryon-c0-central-gap-quadratic-sign-blindness}
+\end{equation}
+Для выбора знака потребовался бы линейный или иной нечётный по $Q$ член с
+выведенным коэффициентом.
+
+\section{Почему условная форма ещё не принадлежит текущему родителю}
+
+Семейное действие и grading-совместимый endpoint были получены лишь как
+минимальные расширения:
+\begin{equation}
+ N_{SO(3)\,\rm origin}=0/5,
+ \qquad
+ N_{\rm endpoint\ extension}=0/3.
+ \label{eq:v8-baryon-c0-central-gap-unoriginated-structure-ledgers}
+\end{equation}
+Старое действие не содержит новую triplet-линию, полного $M_3$-угла или
+семейного ковариантного кадра. Поэтому операторы $Q$, $\mathcal C_2$ и
+$P_{\mathbf3}$ являются согласованными структурами условной архитектуры,
+но не ограничениями уже существующего родителя.
+
+Разделим два результата:
+\begin{equation}
+ N_{\rm conditional\ shape}=3/3,
+ \qquad
+ N_{\rm physical\ coefficient}=0/5.
+ \label{eq:v8-baryon-c0-central-gap-shape-coefficient-ledger}
+\end{equation}
+Три источника формы --- grading, семейный оператор Казимира и endpoint-
+центр --- совпадают modulo скаляры. Проверенные источники физического
+коэффициента --- старое действие, линейное отождествление grading с
+энергией, нормировка Казимира, положительность и чётный квадратичный
+функционал --- не выбирают $\lambda$ и его знак.
+
+Итоговый статус имеет вид
+\begin{equation}
+ \text{центральное направление: условно единственно},
+ \qquad
+ \theta=\beta\lambda:\ \text{не выведено}.
+ \label{eq:v8-baryon-c0-central-gap-parent-origin-verdict}
+\end{equation}
+
+\begin{theorem}[Совпадение grading- и Casimir-направлений щели]
+На условном носителе $\mathbf1\oplus\mathbf3$ центрированные grading и
+семейный квадратичный оператор Казимира совпадают и равны $2Q$. Поэтому
+форма всякого центрального гамильтониана единственна modulo скаляр и
+задаётся $Q$. Ни нормировка представления, ни положительность, ни чётный
+квадратичный parent не выбирают коэффициент $\lambda$ или его знак.
+\end{theorem}
+
+\begin{nogocriterion}[Кинематический grading не является энергией]
+Нельзя объявлять $h=P_{\mathbf3}$ родительским гамильтонианом только потому,
+что $P_{\mathbf3}=(I+\Gamma_4)/2=\mathcal C_2/2$. Это точное равенство
+операторов классифицирует допустимое направление, но не создаёт линейный
+энергетический член, его коэффициент, температуру или bath-норму.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item центрированное направление: \textbf{$Q=P_{\mathbf3}-3I_4/4$};
+\item семейный оператор Казимира: \textbf{$\mathcal C_2=2P_{\mathbf3}$};
+\item центрированные grading и Казимир: \textbf{совпадают};
+\item размерность центральной seed-алгебры: \textbf{$2$};
+\item условная форма щели: \textbf{единственна modulo скаляр};
+\item положительные свидетели двух знаков: \textbf{$P_{\mathbf3}$ и $P_{\mathbf1}$};
+\item квадратичный parent видит знак: \textbf{нет};
+\item условных источников формы: \textbf{$3/3$};
+\item источников физического коэффициента: \textbf{$0/5$};
+\item $\theta$ выведено: \textbf{нет};
+\item следующий гейт: \textbf{селектор коэффициента центральной щели}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_parent_action_origin_gate_results.json}.

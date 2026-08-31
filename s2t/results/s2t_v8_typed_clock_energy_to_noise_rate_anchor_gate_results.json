@@ -1,0 +1,43 @@
+{
+  "anchor_boundary": {
+    "absolute_rate_Gamma_derived": false,
+    "clock_energy_E_C_derived": false,
+    "conditional_bridge": "Gamma=chi^2 E_C/hbar",
+    "coupling_ratio_chi_derived": false,
+    "dimensionless_generator_gap_is_energy_anchor": false,
+    "legacy_cutoff_typed_to_clock": false,
+    "legacy_mass_typed_to_clock": false,
+    "next_gate": "clock_energy_anchor_candidate_audit"
+  },
+  "coupling_freedom": {
+    "admissible_couplings": [
+      "chi_1",
+      "chi_2"
+    ],
+    "current_parent_selects_chi": false,
+    "distinct_relative_rates": "chi_1^2 != chi_2^2",
+    "equality_E_int_E_C_derived": false,
+    "same_clock_carrier": true,
+    "same_noise_frame": true
+  },
+  "date": "2026-08-30",
+  "gate": "version8_typed_clock_energy_to_noise_rate_anchor_gate",
+  "registry": {
+    "certificate_sha256": "fff42b9bf177f9c3d1f827947577b235d1e5e7838868014b8fd1a5ae1a783c44",
+    "gate_count": 30,
+    "obligation_count": 181
+  },
+  "relative_calibration": {
+    "absolute_clock_energy_required": true,
+    "calibrated_ratio": "Gamma/Omega=chi^2",
+    "dimensionless_coupling": "chi=E_int/E_C",
+    "relative_calibration_obtained_conditionally": true
+  },
+  "typed_rate_identity": {
+    "clock_frequency": "Omega=E_C/hbar",
+    "clock_tick": "tau_C=hbar/E_C",
+    "dissipative_rate": "Gamma=E_int^2 tau_C/hbar^2=chi^2 E_C/hbar",
+    "interaction_energy": "E_int=chi E_C",
+    "relative_rate": "Gamma/Omega=chi^2"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-30",
+  "environment_covariance": {
+    "anticorrelated_boundary_rank": 2,
+    "common_environment_rank": 1,
+    "complete_positivity_interval": "-1/2 <= c <= 1",
+    "eigenvalues": [
+      "1-c",
+      "1-c",
+      "1+2*c"
+    ],
+    "independent_environment_rank": 3,
+    "matrix": "Matrix([[1, c, c], [c, 1, c], [c, c, 1]])"
+  },
+  "field": "Q(c)",
+  "gate": "version8_baryon_common_environment_correlation_origin_gate",
+  "microscopic_parents": {
+    "both_gauge_covariant_when_channel_labels_are_shared": true,
+    "both_permutation_covariant": true,
+    "both_reduce_to_same_one_copy_parent": true,
+    "independent_cells": "R=I_3, c=0",
+    "shared_cell": "R=11^T, c=1"
+  },
+  "one_particle_restriction": {
+    "independent_of_c_exact": true,
+    "reason": "only R_11 enters a one-site double commutator and R_11=1"
+  },
+  "status_boundary": {
+    "baryon_collective_noise_derived": false,
+    "existing_parent_action_contains_shared_environment_axiom": false,
+    "one_copy_parent_selects_c": false,
+    "physical_mass_theorem": false,
+    "product_composition_selects_c_zero_conditionally": true,
+    "shared_environment_axiom_selects_c_one_conditionally": true
+  },
+  "two_particle_observable": {
+    "depends_on_c": true,
+    "hilbert_schmidt_square_of_difference": "8*c**2"
+  },
+  "verdict": {
+    "baryon_sprint_status": "stop_on_exact_nonuniqueness",
+    "common_environment_origin": "not derived",
+    "reopening_condition": "derive an inter-copy environment two-point kernel or a common-bath parent action"
+  }
+}

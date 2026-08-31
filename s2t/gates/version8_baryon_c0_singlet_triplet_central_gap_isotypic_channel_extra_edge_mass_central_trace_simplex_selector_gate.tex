@@ -1,0 +1,191 @@
+\chapter{Селектор центрального симплекса масс дополнительных рёбер}
+\label{ch:v8-baryon-c0-extra-edge-mass-central-trace-simplex-selector}
+
+\section{Нормированный симплекс и две конкурирующие конвенции}
+
+Предыдущий гейт локализовал относительную свободу в трёх положительных
+центральных весах. После удаления общего масштаба положим
+\begin{equation}
+ p_Y+p_u+p_d=1,\qquad p_Y,p_u,p_d>0,
+ \label{eq:v8-extra-edge-simplex-normalization}
+\end{equation}
+так что массовый вектор равен
+\begin{equation}
+ \boldsymbol\mu(p)=(2p_Y,3p_u,3p_d).
+ \label{eq:v8-extra-edge-simplex-mass-map}
+\end{equation}
+Равная микроскопическая плотность следа на трёх блоках даёт
+\begin{equation}
+ p^{\rm count}=\left(\frac13,\frac13,\frac13\right),\qquad
+ \boldsymbol\mu(p^{\rm count})=\left(\frac23,1,1\right),
+ \label{eq:v8-extra-edge-simplex-counting-candidate}
+\end{equation}
+то есть отношение $2:3:3$. Но столь же положительная конвенция равной массы
+на ребро требует
+\begin{equation}
+ p^{\rm edge}=\left(\frac37,\frac27,\frac27\right),\qquad
+ \boldsymbol\mu(p^{\rm edge})=\left(\frac67,\frac67,\frac67\right).
+ \label{eq:v8-extra-edge-simplex-equal-edge-candidate}
+\end{equation}
+Эти два вектора не пропорциональны. Первая конвенция считает одинаково
+каждую внутреннюю компоненту, вторая --- каждый edge-канал; текущая
+архитектура не содержит правила выбора между ними.
+
+\section{Максимум энтропии как условный near miss}
+
+Real-завершённые размеры трёх блоков равны $(4,6,6)$. Центральная матрица
+плотности с собственными значениями $(r_Y,r_u,r_d)$ удовлетворяет
+\begin{equation}
+ 4r_Y+6r_u+6r_d=1,
+ \qquad
+ S(r)=-4r_Y\log r_Y-6r_u\log r_u-6r_d\log r_d.
+ \label{eq:v8-extra-edge-simplex-entropy}
+\end{equation}
+Единственный максимум равен
+\begin{equation}
+ r_Y=r_u=r_d=\frac1{16},\qquad
+ \Hess S=\operatorname{diag}(-64,-96,-96).
+ \label{eq:v8-extra-edge-simplex-entropy-maximum}
+\end{equation}
+Следовательно, максимум энтропии воспроизводит равную микроскопическую
+плотность и кандидат $2:3:3$. Но энтропийный функционал не является членом
+текущего родительского действия; как и в прежнем singlet--triplet-аудите,
+это дополнительный принцип, а не происхождение trace-state.
+
+\section{Симметрия и унимодулярность}
+
+Три представления $(1,2)_{1/2}$, $(3,1)_{5/3}$ и $(3,1)_{2/3}$ попарно
+неэквивалентны. Поэтому сохраняющая калибровочные типы группа действует на
+центре тривиально:
+\begin{equation}
+ \dim Z(\mathcal A_z)^G=3.
+ \label{eq:v8-extra-edge-simplex-fixed-center}
+\end{equation}
+Нет допустимой перестановки, которая отождествляла бы все три веса.
+
+Унимодулярность полного блока ограничивает фазовые генераторы условием
+\begin{equation}
+ 4\theta_Y+6\theta_u+6\theta_d=0.
+ \label{eq:v8-extra-edge-simplex-unimodularity}
+\end{equation}
+Эта строка имеет ранг один и оставляет двумерное фазовое ядро. Она не
+содержит $p_Y,p_u,p_d$ и потому не уменьшает положительный trace-симплекс.
+Такое разделение согласуется с ролью унимодулярности как ограничения
+калибровочной группы и аномалий, а не как выбора состояния
+\cite{v8-extra-edge-simplex-unimodularity-source}.
+
+\section{Gauge matching и KMS являются калибровками}
+
+Для матрицы индексов $\mathcal I$ предыдущего гейта
+\begin{equation}
+ \mathcal I p^{\rm count}
+ =\left(\frac{61}{18},\frac16,\frac13\right),\qquad
+ \mathcal I p^{\rm edge}
+ =\left(\frac{125}{42},\frac3{14},\frac27\right).
+ \label{eq:v8-extra-edge-simplex-gauge-images}
+\end{equation}
+Поскольку $\det\mathcal I=-7/4$, заранее заданная тройка gauge-коэффициентов
+однозначно восстанавливает $p$. Но без независимой слепой мишени это
+обратная калибровка, а не внутреннее предсказание spectral action
+\cite{v8-extra-edge-simplex-spectral-action}.
+
+Тепловой класс также реализует весь симплекс. Для центрального
+гамильтониана
+\begin{equation}
+ h=\varepsilon_YP_Y+\varepsilon_uP_u+\varepsilon_dP_d
+ \label{eq:v8-extra-edge-simplex-central-hamiltonian}
+\end{equation}
+отношения весов имеют вид
+\begin{equation}
+ \frac{p_u}{p_Y}=e^{-\beta(\varepsilon_u-\varepsilon_Y)},\qquad
+ \frac{p_d}{p_Y}=e^{-\beta(\varepsilon_d-\varepsilon_Y)}.
+ \label{eq:v8-extra-edge-simplex-gibbs-parameterization}
+\end{equation}
+Например, равномассовая точка требует двух равных разрывов
+\begin{equation}
+ \varepsilon_u-\varepsilon_Y
+ =\varepsilon_d-\varepsilon_Y
+ =\frac1\beta\log\frac32.
+ \label{eq:v8-extra-edge-simplex-equal-mass-gaps}
+\end{equation}
+Подробный баланс связывает скорости после задания этих разрывов, но не
+порождает их \cite{v8-extra-edge-simplex-detailed-balance}.
+
+\section{Стационарность trace-весов}
+
+Если формально варьировать веса в квадратичном действии, получается
+\begin{equation}
+ S_z(p,z)=2p_Y|z_Y|^2+3p_u|z_u|^2+3p_d|z_d|^2.
+ \label{eq:v8-extra-edge-simplex-weight-action}
+\end{equation}
+На физическом вакууме $z=0$ выполнено
+\begin{equation}
+ \nabla_pS_z\big|_{z=0}=0,\qquad
+ \Hess_pS_z\big|_{z=0}=0_{3\times3}.
+ \label{eq:v8-extra-edge-simplex-vacuum-flatness}
+\end{equation}
+Поэтому вакуумная стационарность оставляет весь симплекс плоским. Вне
+вакуума внутренняя стационарная точка возможна лишь при равенстве трёх
+коэффициентов $2|z_Y|^2=3|z_u|^2=3|z_d|^2$; иначе линейный функционал
+стремится к границе и разрушает верность состояния.
+
+Итоговый реестр равен
+\begin{equation}
+ N_{\rm conditional\ conventions}=2/2,\qquad
+ N_{\rm intrinsic\ selectors}=0/8,
+ \label{eq:v8-extra-edge-simplex-ledgers}
+\end{equation}
+где проверены счётный след, равная edge-масса, максимум энтропии,
+type-симметрия, унимодулярность, gauge matching, KMS/Gibbs и вакуумная
+стационарность.
+
+\begin{theorem}[No-go внутреннего селектора trace-симплекса]
+Счётный след и максимум энтропии условно выбирают отношение $2:3:3$, тогда
+как равная масса на ребро выбирает $1:1:1$. Все три текущие симметрии
+сохраняют трёхмерный центр; унимодулярность ограничивает только фазы,
+gauge matching требует внешней мишени, KMS параметризует симплекс двумя
+разрывами, а вакуумная стационарность полностью плоска. Поэтому внутренний
+селектор точки симплекса отсутствует.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет энтропийного или gauge-постдикта]
+Нельзя считать $2:3:3$ выведенным лишь потому, что оно совпадает с
+максимально смешанным состоянием. Нельзя также подставлять наблюдаемые
+gauge-коэффициенты в обратимую матрицу индексов и называть полученный
+trace-state слепым предсказанием. Оба маршрута требуют нового входа.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item размерность нормированного симплекса: \textbf{$2$};
+\item счётный trace-кандидат: \textbf{$2:3:3$};
+\item равная edge-масса: \textbf{$1:1:1$};
+\item максимум энтропии: \textbf{равная микроскопическая плотность};
+\item энтропийный принцип унаследован: \textbf{нет};
+\item type-сохраняющий неподвижный центр: \textbf{размерность $3$};
+\item унимодулярность ограничивает веса: \textbf{нет};
+\item gauge matching без внешней мишени: \textbf{не выбирает};
+\item независимых Gibbs-разрывов: \textbf{два};
+\item вакуумный гессиан по весам: \textbf{ранг $0$};
+\item условных конвенций: \textbf{$2/2$};
+\item внутренних селекторов: \textbf{$0/8$};
+\item минимальных новых относительных параметров: \textbf{два};
+\item trace-симплекс закрыт: \textbf{нет};
+\item следующий гейт: \textbf{минимальные данные центрального гамильтониана}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_central_trace_simplex_selector_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-extra-edge-simplex-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle}, arXiv:hep-th/9606001.
+\bibitem{v8-extra-edge-simplex-unimodularity-source}
+E.~Alvarez, J.~M.~Gracia-Bond\'ia, C.~P.~Mart\'in,
+\emph{Anomaly Cancellation and Gauge Group of the Standard Model in NCG},
+arXiv:hep-th/9506115.
+\bibitem{v8-extra-edge-simplex-detailed-balance}
+F.~Fagnola, V.~Umanit\`a,
+\emph{Generators of Detailed Balance Quantum Markov Semigroups},
+arXiv:0707.2147.
+\end{thebibliography}

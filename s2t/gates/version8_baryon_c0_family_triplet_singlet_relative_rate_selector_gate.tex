@@ -1,0 +1,149 @@
+\chapter{Селектор относительной скорости семейного синглета и триплета}
+\label{ch:v8-baryon-c0-family-triplet-singlet-relative-rate-selector-gate}
+
+После минимального endpoint-расширения connector-носитель распадается на
+неэквивалентные семейные компоненты
+\begin{equation}
+ W_{\rm conn}^{\rm ext}=W_{mathbf1}\oplus W_{mathbf3},
+ \qquad \dim W_{mathbf1}=1,
+ \qquad \dim W_{mathbf3}=3.
+ \label{eq:v8-baryon-c0-singlet-triplet-connector-decomposition}
+\end{equation}
+Точная commutant-система для симметричной covariance имеет ранг восемь на
+десяти неизвестных:
+\begin{equation}
+ \rank\mathcal C_{\rm cov}=8,
+ \qquad \dim\ker\mathcal C_{\rm cov}=2,
+ \qquad C=\gamma_1P_{mathbf1}+\gamma_3P_{mathbf3}.
+ \label{eq:v8-baryon-c0-singlet-triplet-covariance-commutant}
+\end{equation}
+Следовательно, физическая семейная симметрия оставляет свободное отношение
+\begin{equation}
+ r=\frac{\gamma_3}{\gamma_1}>0.
+ \label{eq:v8-baryon-c0-singlet-triplet-relative-rate}
+\end{equation}
+
+\section{Два точных канонических свидетеля}
+
+Даже после нормировки общего веса до единицы алгебра
+$\mathbb C\oplus M_3(\mathbb C)$ имеет центральный симплекс следов
+\begin{equation}
+ \rho_p=pP_{mathbf1}+\frac{1-p}{3}P_{mathbf3},
+ \qquad 0<p<1,
+ \qquad \Tr\rho_p=1.
+ \label{eq:v8-baryon-c0-singlet-triplet-central-trace-simplex}
+\end{equation}
+Он реализует весь положительный луч отношений
+\begin{equation}
+ r(p)=\frac{1-p}{3p},
+ \qquad r:(0,1)\longrightarrow(0,\infty).
+ \label{eq:v8-baryon-c0-central-trace-relative-rate-orbit}
+\end{equation}
+Равная скорость на каждую из четырёх стрелок даёт
+\begin{equation}
+ \rho_{\rm arrow}=\frac14I_4,
+ \qquad (\gamma_1,\gamma_3)=\left(\frac14,\frac14\right),
+ \qquad r_{\rm arrow}=1.
+ \label{eq:v8-baryon-c0-equal-per-arrow-rate-witness}
+\end{equation}
+Равная полная интенсивность двух неприводимых секторов даёт другой
+SO(3)-инвариантный trace-one представитель:
+\begin{equation}
+ \rho_{\rm sector}=\frac12P_{mathbf1}+\frac16P_{mathbf3},
+ \qquad (\gamma_1,\gamma_3)=\left(\frac12,\frac16\right),
+ \qquad r_{\rm sector}=\frac13.
+ \label{eq:v8-baryon-c0-equal-per-sector-rate-witness}
+\end{equation}
+Оба положительны и точны, но имеют разные purity и entropy:
+\begin{equation}
+ \Tr\rho_{\rm arrow}^2=\frac14,
+ \quad S(\rho_{\rm arrow})=\log4,
+ \qquad
+ \Tr\rho_{\rm sector}^2=\frac13,
+ \quad S(\rho_{\rm sector})=\frac12\log12.
+ \label{eq:v8-baryon-c0-two-rate-witness-purity-entropy}
+\end{equation}
+Максимум энтропии выбрал бы первый вариант, но сам принцип максимизации
+энтропии multiplicity-rate не содержится в текущем parent.
+
+\section{KMS и примитивность не снимают свободу}
+
+При общей боровской частоте KMS связывает прямую и обратную скорости внутри
+каждого сектора,
+\begin{equation}
+ \gamma_i^{\leftarrow}=e^{-\beta\omega}\gamma_i^{\rightarrow},
+ \qquad i\in\{1,3\},
+ \label{eq:v8-baryon-c0-singlet-triplet-kms-pair-ratios}
+\end{equation}
+но межсекторное отношение остаётся тем же:
+\begin{equation}
+ \frac{\gamma_3^{\rightarrow}}{\gamma_1^{\rightarrow}}
+ =\frac{\gamma_3^{\leftarrow}}{\gamma_1^{\leftarrow}}=r.
+ \label{eq:v8-baryon-c0-kms-does-not-select-relative-rate}
+\end{equation}
+Для положительных коэффициентов ядро дирахлеевской формы зависит только от
+support скачков:
+\begin{equation}
+ \ker(\gamma_1\mathcal E_{mathbf1}+\gamma_3\mathcal E_{mathbf3})
+ =\ker\mathcal E_{mathbf1}\cap\ker\mathcal E_{mathbf3},
+ \qquad \gamma_1,\gamma_3>0.
+ \label{eq:v8-baryon-c0-primitivity-independent-of-positive-rate-ratio}
+\end{equation}
+Поэтому примитивность также не выбирает внутреннюю точку положительного
+конуса.
+
+\section{Почему полный M4-след недоступен}
+
+На target-блоке grading равна
+\begin{equation}
+ \Gamma_4=\operatorname{diag}(-1,+1,+1,+1),
+ \qquad \dim\{A\in M_4:[A,\Gamma_4]=0\}=10,
+ \label{eq:v8-baryon-c0-singlet-triplet-even-endpoint-algebra-dimension}
+\end{equation}
+то есть максимальная чётная endpoint-алгебра есть
+$M_1\oplus M_3$, а не $M_4$. Любая связывающая матричная единица меняет
+grading:
+\begin{equation}
+ [\Gamma_4,E_{01}]=-2E_{01}\ne0.
+ \label{eq:v8-baryon-c0-m4-cross-block-grading-obstruction}
+\end{equation}
+Следовательно, уникальный след полного $M_4$ нельзя использовать без новой
+нечётной endpoint-структуры или изменения grading.
+
+Итоговый реестр равен
+\begin{equation}
+ N_{\rm rate\ selector}=0/6:
+ \quad\{SO(3),\ \mathbb C\oplus M_3\text{-trace},\ KMS,
+ \text{primitivity},\ s_0a_0\text{-bridge},\ S_{\max}\}.
+ \label{eq:v8-baryon-c0-singlet-triplet-rate-selector-ledger}
+\end{equation}
+
+\begin{theorem}[Двухвесовой барьер представления $\mathbf1\oplus\mathbf3$]
+Семейная симметрия, grading, KMS-отношение и примитивность допускают
+произвольное положительное отношение $r=\gamma_3/\gamma_1$. Равная скорость
+на стрелку и равная полная скорость на неприводимый сектор дают два разных
+точных свидетеля $r=1$ и $r=1/3$.
+\end{theorem}
+
+\begin{nogocriterion}[Следовая изотропия не следует из семейной симметрии]
+Выбор $\rho=I_4/4$ эквивалентен дополнительной изотропии между
+неэквивалентными представлениями $\mathbf1$ и $\mathbf3$. Нельзя считать
+$r=1$ физически выведенным только из равенства следовых норм четырёх
+стрелок.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item connector-представление: \textbf{$\mathbf1\oplus\mathbf3$};
+\item размерность invariant covariance: \textbf{$2$};
+\item свободное отношение: \textbf{$r>0$};
+\item equal-per-arrow свидетель: \textbf{$r=1$};
+\item equal-per-sector свидетель: \textbf{$r=1/3$};
+\item KMS выбирает $r$: \textbf{нет};
+\item примитивность выбирает $r$: \textbf{нет};
+\item полный чётный $M_4$: \textbf{запрещён grading};
+\item селекторов: \textbf{$0/6$};
+\item следующий гейт: \textbf{parent-origin центрального trace-веса}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_family_triplet_singlet_relative_rate_selector_gate_results.json}.

@@ -1,0 +1,196 @@
+\chapter{Parent-origin минимального бинарного incidence-носителя}
+\label{ch:v8-up-down-binary-carrier-parent-origin}
+
+\section{Статический центр уже существует}
+
+В расширенном endpoint-носителе оба цветных типа уже представлены
+центральными проекторами. Поэтому классическая бинарная алгебра
+\begin{equation}
+ \mathcal A_{ud}^{\rm cl}=\mathbb CP_u\oplus\mathbb CP_d,
+ \qquad P_uP_d=0,\qquad \dim\mathcal A_{ud}^{\rm cl}=2
+ \label{eq:v8-binary-carrier-existing-center}
+\end{equation}
+не требует ещё одной абстрактной копии $\mathbb C^2$. Это положительный
+kinematic origin только для двух меток. Он не содержит переключателя между
+ними.
+
+На бинарном quotient гиперзаряд действует как
+\begin{equation}
+ Y_{ud}=\begin{pmatrix}5/3&0\\0&2/3\end{pmatrix}.
+ \label{eq:v8-binary-carrier-hypercharge}
+\end{equation}
+Его инвариантный коммутант диагонален:
+\begin{equation}
+ [Y_{ud},X]=0
+ \quad\Longleftrightarrow\quad
+ X=\begin{pmatrix}x_u&0\\0&x_d\end{pmatrix},
+ \qquad \dim\{Y_{ud}\}'=2.
+ \label{eq:v8-binary-carrier-invariant-commutant}
+\end{equation}
+Следовательно, invariant Hamiltonian старого endpoint-блока не содержит
+$\sigma_x$ или $\sigma_y$ и не меняет бинарную популяцию.
+
+\section{Ковариантный скачок не является invariant-стрелкой}
+
+Операторы перехода
+\begin{equation}
+ L_\downarrow=|d\rangle\langle u|,
+ \qquad L_\uparrow=L_\downarrow^\dagger
+ \label{eq:v8-binary-carrier-transition-operators}
+\end{equation}
+имеют определённые $U(1)$-веса:
+\begin{equation}
+ [Y_{ud},L_\downarrow]=-L_\downarrow,
+ \qquad [Y_{ud},L_\uparrow]=+L_\uparrow.
+ \label{eq:v8-binary-carrier-transition-charges}
+\end{equation}
+Поэтому invariant Hom между endpoint-типами нулевой, но GKSL-диссипатор
+одного charged jump всё же gauge-ковариантен. При
+$U_\theta L_\downarrow U_\theta^\dagger=e^{-i\theta}L_\downarrow$
+фаза сокращается:
+\begin{equation}
+ \mathcal D_{e^{-i\theta}L_\downarrow}(X)
+ =\mathcal D_{L_\downarrow}(X).
+ \label{eq:v8-binary-carrier-dissipator-covariance}
+\end{equation}
+Это различие существенно: симметрия допускает условный открытый процесс,
+но не создаёт его микроскопический оператор.
+
+\section{Старый 42-frame не действует на новый switch}
+
+Полный старый шумовой кадр удовлетворяет
+\begin{equation}
+ \mathcal F_{42}\subset\operatorname{End}(H_{21}).
+ \label{eq:v8-binary-carrier-old-frame-ambient}
+\end{equation}
+После расширения новым бинарным off-diagonal сектором его каноническое
+вложение остаётся нулевым на этом секторе:
+\begin{equation}
+ \iota(F_a)=F_a\oplus0_{\rm bit},
+ \qquad P_{\rm bit}\iota(F_a)=0=\iota(F_a)P_{\rm bit}.
+ \label{eq:v8-binary-carrier-old-frame-zero-extension}
+\end{equation}
+Ни линейная оболочка, ни trace-dual whitening не создают отсутствующий
+$L_\downarrow$. Следовательно, прежняя 42-скачковая примитивность не
+переносится автоматически на новый controlled incidence.
+
+\section{Минимальный компенсирующий environment-тип}
+
+Gauge-инвариантный системно-средовой гамильтониан должен компенсировать
+заряд $-1$ оператора $L_\downarrow$. Условная минимальная форма есть
+\begin{equation}
+ H_{\rm int}^{ud}
+ =g\left(L_\downarrow\otimes b_+
+ +L_\uparrow\otimes b_+^\dagger\right),
+ \label{eq:v8-binary-carrier-compensated-interaction}
+\end{equation}
+где
+\begin{equation}
+ [Y_{\rm env},b_+]=+b_+,\qquad
+ [Y_{\rm tot},H_{\rm int}^{ud}]=0.
+ \label{eq:v8-binary-carrier-charge-compensation}
+\end{equation}
+Таким образом, нужен environment-transition заряда $+1$, например переход
+из нейтрального вакуума в Real-сопряжённую charged-singlet линию.
+Ковариантные Стайнспринг-дилатации именно так переносят представление jump-
+пространства на среду \cite{v8-binary-carrier-haapasalo}.
+
+В старом $H_{21}$ charged-singlet тип $Y=-1$ имеет кратность три; его
+Real-сопряжение предоставляет три кандидата заряда $+1$:
+\begin{equation}
+ \dim\mathcal K_{+1}^{\rm old}=3.
+ \label{eq:v8-binary-carrier-charged-multiplicity}
+\end{equation}
+Но это семейный триплет. Для стандартных генераторов $J_1,J_2,J_3$ имеем
+\begin{equation}
+ \bigcap_{a=1}^{3}\ker J_a=\{0\}.
+ \label{eq:v8-binary-carrier-family-fixed-zero}
+\end{equation}
+Следовательно, старый charged carrier не содержит канонической family-
+singlet линии $b_+$. Выбор одного из трёх состояний ломает семейную
+ковариантность, а усреднение плотности не создаёт линейный interaction-
+оператор.
+
+\section{Энергия и состояние среды}
+
+Даже после добавления подходящей charged-singlet линии энергосохранение
+требует резонанса
+\begin{equation}
+ E_{+1}-E_0=E_u-E_d=7\gamma.
+ \label{eq:v8-binary-carrier-resonance}
+\end{equation}
+Для downward-предела среда должна начинаться в нейтральном вакууме и не
+возвращать возбуждение:
+\begin{equation}
+ \rho_{\rm env}=|0\rangle\langle0|,
+ \qquad b_+^\dagger|0\rangle=0
+ \quad\text{в принятой ориентации annihilation/creation}.
+ \label{eq:v8-binary-carrier-environment-state}
+\end{equation}
+Ориентация оператора может быть переобозначена, но физически обязательны
+низкотемпературное состояние, резонанс и ненулевая spectral density. Ни
+одно из них не следует из статического endpoint-центра.
+
+Минимальный недостающий пакет равен
+\begin{equation}
+ \mathcal D_{\rm miss}=
+ \{L_\downarrow,\mathcal K_{+1}^{\rm sing},
+ H_{\rm int}^{ud},\rho_{\rm env},
+ E_{+1}-E_0=7\gamma,\kappa_{ud}\}.
+ \label{eq:v8-binary-carrier-missing-data}
+\end{equation}
+
+Итоговые реестры:
+\begin{equation}
+ N_{\rm static\ center}=4/4,\qquad
+ N_{\rm covariant\ transition}=6/6,\qquad
+ N_{\rm microscopic\ parent}=0/6.
+ \label{eq:v8-binary-carrier-ledgers}
+\end{equation}
+
+\begin{theorem}[Статический carrier без микроскопического switch]
+Проекторы $P_u,P_d$ уже задают двумерную классическую бинарную алгебру.
+Оператор $L_\downarrow$ имеет гиперзаряд $-1$, и его GKSL-диссипатор
+gauge-ковариантен. Однако invariant endpoint-Hom нулевой, старый 42-frame
+аннулирует новый off-diagonal сектор, а доступный charged-singlet mediator
+является семейным триплетом без неподвижной линии. Поэтому микроскопический
+parent бинарной релаксации не получен.
+\end{theorem}
+
+\begin{nogocriterion}[Ковариантность dissipator не создаёт dilation]
+Нельзя из фазовой ковариантности $\mathcal D_{L_\downarrow}$ заключать, что
+$L_\downarrow$ содержится в старом шумовом кадре. Нельзя выбирать одну из
+трёх charged-singlet environment-линий без family-селектора. Даже новый
+mediator не закрывает динамику без резонансной щели, состояния среды и
+физической скорости.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item статическая бинарная центральная алгебра: \textbf{уже существует};
+\item её размерность: \textbf{$2$};
+\item invariant off-diagonal Hom: \textbf{$0$};
+\item заряд $L_\downarrow$: \textbf{$-1$};
+\item его GKSL-диссипатор gauge-ковариантен: \textbf{да};
+\item старый 42-frame содержит $L_\downarrow$: \textbf{нет};
+\item требуемый environment-заряд: \textbf{$+1$};
+\item старых charged-singlet кандидатов: \textbf{$3$};
+\item family-invariant mediator line: \textbf{$0$};
+\item требуемая резонансная щель: \textbf{$7\gamma$};
+\item состояние и скорость среды выведены: \textbf{нет};
+\item static center: \textbf{$4/4$};
+\item covariant transition shape: \textbf{$6/6$};
+\item microscopic parent-origin: \textbf{$0/6$};
+\item следующий гейт: \textbf{архитектура charged environment mediator}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-binary-carrier-haapasalo} E.~Haapasalo,
+\emph{The Choi--Jamio\l{}kowski Isomorphism and Covariant Quantum Channels},
+Quantum Stud. Math. Found. 8 (2021) 1; arXiv:1906.11442.
+\bibitem{v8-binary-carrier-lindblad} G.~Lindblad,
+\emph{On the Generators of Quantum Dynamical Semigroups},
+Commun. Math. Phys. 48 (1976) 119.
+\end{thebibliography}

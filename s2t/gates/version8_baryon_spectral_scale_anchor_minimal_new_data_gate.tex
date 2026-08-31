@@ -1,0 +1,73 @@
+\chapter{Минимальные новые данные спектрального якоря}
+\label{ch:v8-baryon-spectral-scale-anchor-minimal-new-data-gate}
+
+Аудит дал ноль старых якорей. Определим теперь не конкретную модель, а
+минимальный формальный контракт, достаточный для выбора однополюсной формы.
+Пусть $a>0$ --- выбранный родителем масштаб базы веса $L^{-2}$, а $c>0$ ---
+выбранный безразмерный коэффициент типизированной карты. Тогда
+\begin{equation}
+ m^2=ca,
+ \qquad
+ f_{a,c}(z)=\frac{ca}{z+ca}.
+ \label{eq:v8-baryon-minimal-anchor-shape}
+\end{equation}
+Для полного внутреннего оператора требуется независимая амплитуда
+\begin{equation}
+ K_{a,c,\lambda}(z)=\lambda_3f_{a,c}(z)W_3,
+ \qquad K_{a,c,\lambda}(0)=\lambda_3W_3.
+ \label{eq:v8-baryon-minimal-anchor-kernel}
+\end{equation}
+
+Обе части данных формы необходимы. При фиксированном $a$ изменение карты
+даёт
+\begin{equation}
+ f_{a,1}(a)=\frac12,
+ \qquad f_{a,2}(a)=\frac23.
+ \label{eq:v8-baryon-minimal-anchor-map-witness}
+\end{equation}
+При фиксированной карте изменение масштаба даёт тот же точный дефект:
+\begin{equation}
+ f_{1,1}(1)=\frac12,
+ \qquad f_{2,1}(1)=\frac23.
+ \label{eq:v8-baryon-minimal-anchor-scale-witness}
+\end{equation}
+Локальный наклон видит только их произведение,
+\begin{equation}
+ f_{a,c}'(0)=-\frac1{ac},
+ \label{eq:v8-baryon-minimal-anchor-slope}
+\end{equation}
+поэтому один размерный объект без канонической карты и одна безразмерная
+карта без выбранного масштаба одинаково недостаточны.
+
+Амплитуда логически независима от формы:
+\begin{equation}
+ \frac{K_{a,c,\lambda}(z)}{K_{a,c,\lambda}(0)}=f_{a,c}(z).
+ \label{eq:v8-baryon-minimal-anchor-amplitude-separation}
+\end{equation}
+Следовательно, форма требует двух новых данных $(a,c)$, а полный оператор ---
+трёх $(a,c,\lambda_3)$.
+
+\begin{theorem}[Необходимый и достаточный минимальный контракт]
+Для однополюсного нормированного ядра выбранные положительные $a$ и $c$
+однозначно задают форму. Удаление любого из них оставляет непрерывное
+семейство различных форм. Выбор полного ненормированного ядра дополнительно
+требует независимой амплитуды $\lambda_3$.
+\end{theorem}
+
+\begin{nogocriterion}[Контракт не является реализацией]
+Нельзя считать введение символов $a$, $c$ и $\lambda_3$ их физическим
+выводом. Следующий гейт должен построить родитель, выбирающий хотя бы пару
+$(a,c)$ без наблюдаемой массы и без ручной единичной нормировки.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item данных для формы: \textbf{$2$};
+\item данных для полного ядра: \textbf{$3$};
+\item независимость $a$ и $c$: \textbf{доказана свидетелями};
+\item независимость амплитуды: \textbf{доказана нормировкой};
+\item текущая реализация контракта: \textbf{нет};
+\item следующий гейт: \textbf{архитектура селектора масштаба базы}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_spectral_scale_anchor_minimal_new_data_gate_results.json}.

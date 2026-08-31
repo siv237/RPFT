@@ -1,0 +1,29 @@
+{
+  "boundary": {
+    "fresh_ancilla_source": false,
+    "physical_time_scale": false
+  },
+  "date": "2026-08-30",
+  "dimensions": {
+    "ambient": 903,
+    "environment": 43,
+    "jumps": 42,
+    "system": 21
+  },
+  "gate": "version8_full_noise_repeated_interaction_hamiltonian_gate",
+  "next_gate": "autonomous_fresh_ancilla_chain_dilation_gate",
+  "proof": {
+    "collision_limit": "operator_norm",
+    "fixed_algebra": "C I_21",
+    "gauge_closure_checks": 504,
+    "gksl_tangent": true,
+    "minimal_environment": true,
+    "self_adjoint": true,
+    "vacuum_second_moment": "sum_a F_a^2"
+  },
+  "registry": {
+    "certificate_sha256": "b3691ef886987b3f8fb09f9b78888989948132432233967f2d11db8e0b078422",
+    "gate_count": 21,
+    "obligation_count": 140
+  }
+}

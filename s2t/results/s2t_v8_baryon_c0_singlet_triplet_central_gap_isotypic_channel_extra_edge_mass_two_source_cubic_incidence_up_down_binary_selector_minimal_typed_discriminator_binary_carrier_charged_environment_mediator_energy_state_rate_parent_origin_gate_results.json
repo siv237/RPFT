@@ -1,0 +1,63 @@
+{
+  "admissible_environment_hamiltonian": {
+    "current_parent_selects_resonance": false,
+    "essential_gap_parameters_after_shift": 1,
+    "gap": "Delta_E=ec-e0",
+    "linear_constraint_rank": 4,
+    "neutral_vacuum_is_ground_condition": "Delta_E>0",
+    "real_dimension_before_energy_shift": 2,
+    "real_gauge_invariant_class": "diag(e0,ec,ec)",
+    "resonance_condition": "Delta_E=7 gamma",
+    "symmetry_selects_gap_value": false
+  },
+  "admissible_environment_state": {
+    "charged_real_mixture": "diag(0,1/2,1/2)",
+    "exact_vacuum_requires": "beta Delta_E -> infinity or external pure preparation",
+    "finite_temperature_purity": "(1+2x^2)/(1+2x)^2",
+    "finite_temperature_rank": 3,
+    "gibbs_state": "diag(1,x,x)/(1+2x)",
+    "neutral_vacuum": "diag(1,0,0)",
+    "real_gauge_invariant_class": "diag(p0,pc,pc), p0+2pc=1",
+    "simplex_dimension": 1,
+    "symmetry_selects_neutral_vacuum": false,
+    "x": "exp(-beta Delta_E)"
+  },
+  "coupling_and_rate": {
+    "E_C_selected": false,
+    "chi_selected": false,
+    "conditional_physical_rate": "Gamma=E_int^2 tau_C/hbar^2=chi^2 E_C/hbar",
+    "corresponding_weak_limit_rate_ratio": 4,
+    "trace_gram_fixes_connector_shape": true,
+    "trace_gram_fixes_physical_coupling": false,
+    "two_allowed_couplings": [
+      1,
+      2
+    ]
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "fresh_chain": {
+    "chain_parent_derived": false,
+    "existing_toeplitz_template_reusable": true,
+    "new_connector_in_old_42_jump_cell": false,
+    "new_identical_cell_extension_required": true,
+    "old_cell_jump_count": 42,
+    "preloaded_product_vacuum_required": true
+  },
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_energy_state_rate_parent_origin_gate",
+  "ledgers": {
+    "conditional_shape_satisfied": 8,
+    "conditional_shape_tested": 8,
+    "energy_state_rate_parent_origin_satisfied": 0,
+    "energy_state_rate_parent_origin_tested": 5
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_minimal_dynamic_parent_architecture_gate",
+  "verdict": {
+    "connector_normalization_selects_rate": false,
+    "energy_state_rate_parent_derived": false,
+    "existing_chain_contains_new_channel": false,
+    "symmetry_reduces_hamiltonian_to_one_gap": true,
+    "symmetry_selects_resonance": false,
+    "symmetry_selects_vacuum": false
+  }
+}

@@ -1,0 +1,118 @@
+\chapter{Parent-селектор кратности и скорости коннектора c0}
+\label{ch:v8-baryon-c0-connector-multiplicity-and-rate-parent-selector-gate}
+
+Допустимый старо-новый коннектор задаётся вещественным вектором
+\begin{equation}
+ z=(z_0,z_1,z_2)\in\mathbb R^3,
+ \qquad \lVert V(z)\rVert_{\rm HS}^2=z_0^2+z_1^2+z_2^2.
+ \label{eq:v8-baryon-c0-connector-multiplicity-trace-norm}
+\end{equation}
+Три координаты принадлежат различным концевым бимодульным меткам, но все
+имеют один gauge-тип $(1,1)_{-1}$. Текущий parent определён на старом
+42-кадре и не содержит старо-новых координат, поэтому его нулевое
+продолжение даёт
+\begin{equation}
+ \Hess S_{\rm old}\big|_{\mathcal V_{-1}^{\rm odd}}=0_3.
+ \label{eq:v8-baryon-c0-old-parent-zero-connector-hessian}
+\end{equation}
+
+\section{Изотропный общий след не выбирает точку RP2}
+
+Наиболее экономный общий след допускает только радиальный потенциал
+\begin{equation}
+ S_{\rm iso}(z)=\frac a2\lVert z\rVert^2
+ +\frac b4\lVert z\rVert^4,
+ \qquad b>0.
+ \label{eq:v8-baryon-c0-isotropic-connector-parent}
+\end{equation}
+При $a<0$ его ненулевые стационарные точки образуют сферу, а после
+отождествления $z\sim-z$ --- всё прежнее семейство:
+\begin{equation}
+ \lVert z\rVert^2=-\frac ab,
+ \qquad \mathcal M_{\rm vac}=S^2/\{\pm1\}=\mathbb{RP}^2.
+ \label{eq:v8-baryon-c0-isotropic-vacuum-rp2}
+\end{equation}
+В точке $z_*=r e_0$, где $a=-br^2$, гессиан равен
+\begin{equation}
+ \Hess S_{\rm iso}(z_*)=2br^2 e_0e_0^{\mathsf T},
+ \qquad \rank\Hess S_{\rm iso}(z_*)=1,
+ \qquad \dim\ker=2.
+ \label{eq:v8-baryon-c0-isotropic-parent-two-flat-directions}
+\end{equation}
+Следовательно, общий trace фиксирует норму, но не направление коннектора.
+
+Даже гауссовская флуктуационная модель в симметричной фазе даёт лишь
+\begin{equation}
+ C_{\rm conn}=T(m^2I_3)^{-1}=\frac{T}{m^2}I_3,
+ \qquad \gamma\propto\frac{T}{m^2},
+ \label{eq:v8-baryon-c0-isotropic-gaussian-rate}
+\end{equation}
+где отношение $T/m^2$ не выводится из следовой метрики.
+
+\section{Что потребовалось бы для выбора ветви}
+
+Полные концевые проекторы разрешают анизотропный член
+\begin{equation}
+ S_{\rm lab}^{(2)}(z)=\frac12
+ \left(m_0^2z_0^2+m_1^2z_1^2+m_2^2z_2^2\right),
+ \label{eq:v8-baryon-c0-labeled-connector-quadratic-parent}
+\end{equation}
+но три коэффициента являются новыми parent-данными. Например, два
+одинаково допустимых выбора
+\begin{equation}
+ M_A=\operatorname{diag}(-1,1,2),
+ \qquad M_B=\operatorname{diag}(2,-1,1)
+ \label{eq:v8-baryon-c0-two-admissible-branch-selectors}
+\end{equation}
+выбирают разные координатные ветви и сохраняют gauge-, grading- и
+Real-условия. Симметрия не различает эти варианты.
+
+Наконец, сам генератор имеет точную перенормировочную свободу
+\begin{equation}
+ V\mapsto sV,
+ \qquad \gamma\mapsto\frac{\gamma}{s^2},
+ \qquad \gamma\,\mathcal D[V]
+ =\frac{\gamma}{s^2}\mathcal D[sV].
+ \label{eq:v8-baryon-c0-connector-rate-rescaling-orbit}
+\end{equation}
+Даже после фиксации $\lVert V\rVert_{\rm HS}=1$ абсолютная $\gamma$
+остаётся интенсивностью среды, отсутствующей в конечном parent action.
+
+Итоговый реестр селектора равен
+\begin{equation}
+ N_{\rm derived}=0/2:
+ \qquad [z]\in\mathbb{RP}^2\ \text{не выбран},
+ \qquad \gamma>0\ \text{не выбрана}.
+ \label{eq:v8-baryon-c0-parent-selector-zero-of-two}
+\end{equation}
+
+\begin{theorem}[Радиальная полнота и угловой дефицит]
+Общий след канонически задаёт евклидову норму на трёхмерном пространстве
+коннекторов. Любой parent, зависящий только от этой нормы, оставляет
+двумерную угловую моду и не выбирает точку $\mathbb{RP}^2$.
+\end{theorem}
+
+\begin{nogocriterion}[Кратность и скорость требуют разных новых данных]
+Бимодульно-анизотропный гессиан может выбрать направление, но его
+коэффициенты не следуют из текущего parent. Абсолютная скорость дополнительно
+требует состояния или интенсивности среды. Нельзя использовать один
+произвольный коэффициент одновременно как селектор ветви и как физические
+часы процесса.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item размерность multiplicity-пространства: \textbf{$3$};
+\item метрика общего следа: \textbf{$I_3$};
+\item текущий parent Hessian на новых координатах: \textbf{$0_3$};
+\item изотропный ненулевой vacuum: \textbf{$\mathbb{RP}^2$};
+\item угловых нулевых мод: \textbf{$2$};
+\item анизотропный селектор допустим: \textbf{да, с новыми весами};
+\item направление коннектора выведено: \textbf{нет};
+\item абсолютная скорость выведена: \textbf{нет};
+\item реестр: \textbf{$0/2$};
+\item следующий гейт: \textbf{происхождение весов из расширенной
+концевой бимодульной алгебры}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_connector_multiplicity_and_rate_parent_selector_gate_results.json}.

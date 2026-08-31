@@ -1,0 +1,144 @@
+\chapter{Происхождение магнитного сверхтонкого члена}
+\label{ch:v8-baryon-em-magnetic-hyperfine-origin-gate}
+
+Пространственный гейт сохранил условный электростатический знак, но не
+включал магнитные моменты. Здесь необходимо прежде всего разделить слабый
+ароматный дублет и физический спин: матрицы Паули предыдущего
+изоспинового расчёта действовали на аромат, а не на новый спиновый носитель.
+
+\section{Минимальное расширение носителя}
+
+Для одного кварка требуется пространство
+\begin{equation}
+ \mathcal H_{q}=\mathbb C^2_{\rm aroma}\otimes\mathbb C^2_{\rm spin},
+ \qquad
+ \mathcal H_{3q}=\mathcal H_q^{\otimes3}.
+ \label{eq:v8-baryon-em-spin-flavor-carrier}
+\end{equation}
+Пусть $\boldsymbol\Sigma_r$ --- физические матрицы Паули на спиновом
+множителе, а $Q_r$ --- заряд на ароматном множителе. Минимальный
+контактный оператор имеет вид
+\begin{equation}
+ H_{\rm mag}=\frac{\zeta}{T}
+ \sum_{1\le r<s\le3}h_{rs}Q_rQ_s\,
+ \boldsymbol\Sigma_r\!\cdot\!\boldsymbol\Sigma_s.
+ \label{eq:v8-baryon-em-magnetic-contact-operator}
+\end{equation}
+Коэффициент $\zeta$ содержит знак, магнитные моменты и размерную
+нормировку, а $h_{rs}$ --- контактный пространственный матричный элемент.
+Ни один из них не является следствием оператора слабого изоспина.
+
+\section{Полного спина недостаточно}
+
+Рассмотрим два нормированных состояния с $S=1/2$, $S_z=1/2$:
+\begin{equation}
+ \chi_0=\frac{|\uparrow\downarrow\uparrow\rangle
+ -|\downarrow\uparrow\uparrow\rangle}{\sqrt2},
+ \qquad
+ \chi_1=\sqrt{\frac23}|\uparrow\uparrow\downarrow\rangle
+ -\frac{|\uparrow\downarrow\uparrow\rangle
+ +|\downarrow\uparrow\uparrow\rangle}{\sqrt6}.
+ \label{eq:v8-baryon-em-two-spin-half-couplings}
+\end{equation}
+Их попарные корреляции равны соответственно
+\begin{equation}
+ \bigl(\langle\Sigma_1\!\cdot\!\Sigma_2\rangle,
+ \langle\Sigma_1\!\cdot\!\Sigma_3\rangle,
+ \langle\Sigma_2\!\cdot\!\Sigma_3\rangle\bigr)
+ =(-3,0,0),\quad(1,-2,-2).
+ \label{eq:v8-baryon-em-spin-half-pair-correlations}
+\end{equation}
+При $h_{rs}=1$ для фиксированных ароматных рисунков $uud$ и $udd$
+оператор
+$O=\sum_{r<s}Q_rQ_s\boldsymbol\Sigma_r\cdot\boldsymbol\Sigma_s$
+даёт
+\begin{equation}
+ \begin{array}{c|cc|c}
+  &O_p&O_n&O_n-O_p\\ \hline
+  \chi_0&-4/3&2/3&2\\
+  \chi_1& 4/3&0&-4/3
+ \end{array}.
+ \label{eq:v8-baryon-em-spin-coupling-sign-countermodels}
+\end{equation}
+Знак меняется при одном и том же полном спине. Эти состояния не объявляются
+готовыми фермионными волновыми функциями: они являются точным
+свидетельством того, что нужен дополнительный селектор совместной
+перестановочной симметрии спина, аромата и пространства.
+
+\section{Условное симметричное спин-ароматное состояние}
+
+Обозначим через $P_{\rm sf}$ усреднение по одновременным перестановкам
+трёх спин-ароматных множителей:
+\begin{equation}
+ P_{\rm sf}=\frac1{6}\sum_{\pi\in S_3}U_\pi^{\rm aroma}
+ \otimes U_\pi^{\rm spin}.
+ \label{eq:v8-baryon-em-spin-flavor-symmetrizer}
+\end{equation}
+В секторе $P_{\rm sf}=1$, $I=S=1/2$, $I_z=\pm1/2$, $S_z=1/2$
+пространство для протона и нейтрона одномерно. На его нормированных
+векторах точная зарядово-спиновая форма равна
+\begin{equation}
+ O_p=\frac43,
+ \qquad
+ O_n=1,
+ \qquad
+ O_n-O_p=-\frac13.
+ \label{eq:v8-baryon-em-symmetric-spin-flavor-magnetic-values}
+\end{equation}
+
+\begin{proposition}[Условная магнитная разность]
+Если принять полностью симметричное спин-ароматное состояние, общий
+контакт $h_{rs}=h$ и оператор \eqref{eq:v8-baryon-em-magnetic-contact-operator},
+то
+\begin{equation}
+ E_n^{\rm mag}-E_p^{\rm mag}=-\frac{\zeta h}{3T}.
+ \label{eq:v8-baryon-em-conditional-magnetic-splitting}
+\end{equation}
+Алгебраический множитель $-1/3$ фиксирован, но физический знак остаётся
+знаком произведения $-\zeta h$.
+\end{proposition}
+
+Полная симметрия спин-ароматной части обычно связывается с
+антисимметричным цветом и симметричным основным пространственным состоянием.
+В текущем проекте последний переход не выведен: эпсилон-проектор задаёт
+цвет, но не создаёт физический спиновый множитель и не доказывает
+пространственную $S$-волну.
+
+\section{Контактный масштаб}
+
+Для координатного растяжения предыдущей главы контактная плотность
+масштабируется как
+\begin{equation}
+ \left\langle\delta^{(d)}(r_i-r_j)\right\rangle_{\psi_s}
+ =s^d\left\langle\delta^{(d)}(r_i-r_j)\right\rangle_{\psi}.
+ \label{eq:v8-baryon-em-contact-density-dilation}
+\end{equation}
+Следовательно, даже условно выбранная спин-ароматная волновая функция не
+фиксирует магнитную величину без радиального родителя, масс кварков и
+нормировки магнитных моментов.
+
+\begin{nogocriterion}[Граница сверхтонкого члена]
+Слабый изоспин $\mathbf I^2$ нельзя переименовывать в физический спин и
+использовать как сверхтонкий гамильтониан. Для такого вывода нужны
+независимый спиновый носитель, совместный перестановочный селектор,
+пространственная контактная плотность и коэффициент магнитного момента.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item вычислительное поле: \textbf{точное, без чисел с плавающей точкой};
+ \item ароматный и физический спиновые носители: \textbf{разделены};
+ \item два состояния с $S=1/2$: \textbf{построены точно};
+ \item знак из одного полного спина: \textbf{не следует};
+ \item симметричный сектор $I=S=1/2$: \textbf{одномерен};
+ \item условный множитель $O_n-O_p=-1/3$: \textbf{точен};
+ \item знак и величина $\zeta h$: \textbf{не выведены};
+ \item контактная масштабная орбита: \textbf{$s^d$};
+ \item физическое магнитное расщепление: \textbf{не получено};
+ \item следующий гейт: \textbf{совместный перестановочный селектор
+ спина, аромата и пространства}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_em_magnetic_hyperfine_origin_gate_results.json}.

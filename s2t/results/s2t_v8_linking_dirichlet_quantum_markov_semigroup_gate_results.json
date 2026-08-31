@@ -1,0 +1,91 @@
+{
+  "date": "2026-08-28",
+  "derived_observable_algebra": {
+    "algebra": "M_11(C) direct_sum M_10(C)",
+    "assigned_minimal_diagonal_basis": false,
+    "commutative_coordinate_algebra": false,
+    "origin": "endpoint corners E*E and EE* of the physical transition bimodule"
+  },
+  "fixed_algebra": {
+    "decay_gap_above_fixed_algebra": 0.013983598463814768,
+    "dimension": 41,
+    "incidence_kernel_contribution": 1,
+    "predicted_from_singular_multiplicities": 41,
+    "primitive_semigroup": false,
+    "remaining_simple_singular_value_contribution": 4,
+    "sixfold_unit_singular_value_contribution": 36,
+    "unique_stationary_observable": false
+  },
+  "gate": "version8_linking_dirichlet_quantum_markov_semigroup_gate",
+  "linking_data": {
+    "incidence_rank": 10,
+    "incidence_shape": [
+      10,
+      11
+    ],
+    "linking_dirac_dimension": 21,
+    "singular_values": [
+      1.8019377358048383,
+      1.414213562373095,
+      1.2469796037174665,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.4450418679126289
+    ]
+  },
+  "next_gate": {
+    "name": "version8_markov_fixed_algebra_selector_gate",
+    "question": "can already-derived gauge, Hodge and affine operators reduce the 41-dimensional fixed algebra without choosing a maximal abelian subalgebra by hand?"
+  },
+  "quantum_markov_generator": {
+    "basis_covariance_error": 4.5862896292820645e-14,
+    "corner_formula": "(A*YA-{A*A,X}/2, AXA*-{AA*,Y}/2)",
+    "formula": "L(X)=-1/2 [D,[D,X]]",
+    "matrix_dimension": 221,
+    "positive_eigenvalue_count": 0,
+    "self_adjoint_residual": 0.0,
+    "semigroup_composition_error": 3.0808474045681614e-15,
+    "tests": [
+      {
+        "channel_unital_residual": 2.006515974302905e-16,
+        "gaussian_cp_multiplier_minimum_eigenvalue": -1.4539919664568977e-16,
+        "target_to_source_transfer_frobenius_norm": 1.0990401056751877,
+        "time": 0.1
+      },
+      {
+        "channel_unital_residual": 6.130916243381786e-16,
+        "gaussian_cp_multiplier_minimum_eigenvalue": -1.7742939144784983e-16,
+        "target_to_source_transfer_frobenius_norm": 3.981961482237208,
+        "time": 1.0
+      },
+      {
+        "channel_unital_residual": 3.2474384868999013e-15,
+        "gaussian_cp_multiplier_minimum_eigenvalue": -7.093921554577271e-16,
+        "target_to_source_transfer_frobenius_norm": 3.57992820012829,
+        "time": 10.0
+      }
+    ],
+    "trace_preserving_residual": 0.0,
+    "unital_residual": 0.0
+  },
+  "source_presence": {
+    "full_kernel_reopening": true,
+    "markov_weight": true,
+    "physical_incidence": true,
+    "transition_observable_corners": true
+  },
+  "verdict": {
+    "classical_event_algebra_derived": false,
+    "coefficient_free_quantum_markov_semigroup_derived": true,
+    "endpoint_observable_algebra_derived": true,
+    "locality_selector_derived": false,
+    "nonzero_bidirectional_corner_transfer": true,
+    "physical_parent_action_closed": false,
+    "reason": "the linking incidence canonically generates a symmetric unital trace-preserving quantum Markov semigroup, but its 41-dimensional fixed algebra retains a large multiplicity and does not select a classical diagonal event algebra",
+    "status": "positive_noncommutative_semigroup_fixed_algebra_degeneracy_open"
+  }
+}

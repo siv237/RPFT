@@ -1,0 +1,147 @@
+\chapter{Происхождение семейного действия на multiplicity-среде}
+\label{ch:v8-baryon-c0-multiplicity-environment-so3-action-parent-origin-gate}
+
+Три текущих коннектора удобно записать как матричные единицы в
+$\operatorname{Hom}(\mathbb R^2,\mathbb R^3)$:
+\begin{equation}
+ V_0=E_{00},\qquad V_1=E_{11},\qquad V_2=E_{21},\qquad
+ W_{\rm cur}=\operatorname{span}_{\mathbb R}\{V_0,V_1,V_2\},
+ \quad \dim W_{\rm cur}=3.
+ \label{eq:v8-baryon-c0-current-arrow-matrix-model}
+\end{equation}
+Здесь строки нумеруют три старых endpoint-направления, а столбцы ---
+два source-состояния $s_0,a_0$. Поэтому multiplicity-индекс не является
+отдельным тензорным множителем: первая стрелка использует другой source,
+чем вторая и третья.
+
+На target действует стандартная тройка с генераторами
+\begin{equation}
+ J_1=\begin{pmatrix}0&0&0\\0&0&-1\\0&1&0\end{pmatrix},\quad
+ J_2=\begin{pmatrix}0&0&1\\0&0&0\\-1&0&0\end{pmatrix},\quad
+ J_3=\begin{pmatrix}0&-1&0\\1&0&0\\0&0&0\end{pmatrix},
+ \qquad [J_1,J_2]=J_3.
+ \label{eq:v8-baryon-c0-arrow-target-so3-generators}
+\end{equation}
+Не существует компенсирующего нетривиального ортогонального действия на
+двумерном source: всякий гомоморфизм $\mathfrak{so}(3)\to\mathfrak{so}(2)$
+нулевой, поскольку target абелев, а $\mathfrak{so}(3)$ совершенна:
+\begin{equation}
+ \rho_{\rm src}:SO(3)\longrightarrow O(2)
+ \quad\Longrightarrow\quad d\rho_{\rm src}=0,
+ \qquad \rank\mathcal C_{\rm src}=3.
+ \label{eq:v8-baryon-c0-source-two-dimensional-so3-triviality}
+\end{equation}
+
+Следовательно, инфинитезимальное действие на стрелках имеет вид
+\begin{equation}
+ \delta_a(V)=J_aV.
+ \label{eq:v8-baryon-c0-arrow-infinitesimal-so3-action}
+\end{equation}
+Прямой точный тест показывает, что четыре из девяти образов выходят из
+текущего подпространства:
+\begin{equation}
+ \#\{(a,i):J_aV_i\notin W_{\rm cur}\}=4,
+ \qquad J_3E_{00}=E_{10}\notin W_{\rm cur}.
+ \label{eq:v8-baryon-c0-current-arrow-space-not-so3-invariant}
+\end{equation}
+Таким образом, старое семейное действие нельзя просто ограничить на три
+имеющиеся стрелки.
+
+\section{Минимальное ковариантное замыкание}
+
+Одношаговое $SO(3)$-замыкание уже порождает всё пространство стрелок:
+\begin{equation}
+ \operatorname{span}\bigl(W_{\rm cur},J_aW_{\rm cur}\bigr)
+ =\operatorname{Hom}(\mathbb R^2,\mathbb R^3),
+ \qquad \rank=6.
+ \label{eq:v8-baryon-c0-minimal-so3-arrow-closure-rank}
+\end{equation}
+Точно недостающие матричные единицы равны
+\begin{equation}
+ W_{\rm miss}=\operatorname{span}\{E_{10},E_{20},E_{01}\},
+ \qquad W_{\rm cur}+W_{\rm miss}=M_{3\times2}(\mathbb R).
+ \label{eq:v8-baryon-c0-missing-so3-connector-arrows}
+\end{equation}
+Это три новые комплексные стрелки, то есть шесть Hermitian-квадратур.
+Их точный матричный ранг равен двенадцати вместе с исходными шестью
+квадратурами, а условная размерность полного кадра становится
+\begin{equation}
+ \rank\mathcal F_{\rm connector}^{SO(3)}=12,
+ \qquad \dim\mathcal F_{\rm full}^{\rm cond}=51+6=57.
+ \label{eq:v8-baryon-c0-so3-completed-frame-rank}
+\end{equation}
+Алгебра $M_5$ содержит эти матричные единицы после замыкания произведениями,
+но текущий шумовой кадр их не содержит как независимые скачки. Поэтому
+алгебраическое наличие не является происхождением ковариантного frame.
+
+При тривиальном source-действии замкнутое пространство раскладывается как
+\begin{equation}
+ \operatorname{Hom}(\mathbb R^2,\mathbb R^3)
+ \simeq\mathbf3\otimes\mathbf1^{\oplus2}
+ \simeq\mathbf3\oplus\mathbf3.
+ \label{eq:v8-baryon-c0-so3-closed-arrow-representation-decomposition}
+\end{equation}
+Поэтому семейная тройка входит уже с кратностью два:
+\begin{equation}
+ \dim\operatorname{Hom}_{SO(3)}
+ \bigl(\mathbf3,\mathbf3\oplus\mathbf3\bigr)=2,
+ \qquad \rank\mathcal C_{\rm Hom}=16\ \text{на}\ 18\ \text{неизвестных}.
+ \label{eq:v8-baryon-c0-so3-closed-family-hom-dimension}
+\end{equation}
+Общий интертвейнер имеет вид
+\begin{equation}
+ T_{u,v}=\begin{pmatrix}uI_3\\vI_3\end{pmatrix},
+ \qquad T_{u,v}^{\mathsf T}T_{u,v}=(u^2+v^2)I_3.
+ \label{eq:v8-baryon-c0-so3-closed-general-intertwiner}
+\end{equation}
+После изометрической нормировки остаётся не единственная карта, а
+проективная source-линия:
+\begin{equation}
+ u^2+v^2=1,\qquad (u,v)\sim(-u,-v),\qquad
+ [u:v]\in\mathbb {RP}^1.
+ \label{eq:v8-baryon-c0-so3-closed-source-line-orbit}
+\end{equation}
+Значит, минимальное ковариантное расширение уменьшает неоднозначность
+$\mathbb {RP}^2$ до $\mathbb {RP}^1$, но не выбирает карту $c_0$.
+
+Итоговый parent-origin реестр равен
+\begin{equation}
+ N_{SO(3)\text{-origin}}=0/5:
+ \quad\{H_{21}\text{-restriction},\ endpoint,\ W_{\rm cur},\
+ M_5\text{-frame},\ source\ line\}.
+ \label{eq:v8-baryon-c0-so3-action-parent-origin-ledger}
+\end{equation}
+
+\begin{theorem}[Удвоение при минимальном семейном замыкании]
+Текущее трёхмерное пространство коннекторов не инвариантно относительно
+стандартного $SO(3)_{\rm fam}$. Его минимальное ковариантное замыкание равно
+всему шестимерному $M_{3\times2}(\mathbb R)$ и содержит две стандартные
+тройки. Поэтому даже после добавления трёх недостающих комплексных стрелок
+семейный интертвейнер остаётся семейством, параметризованным
+$\mathbb {RP}^1$.
+\end{theorem}
+
+\begin{nogocriterion}[Алгебраическое замыкание не выбирает frame]
+Наличие недостающих матричных единиц в полной алгебре $M_5$ не означает,
+что они входят в GKSL-кадр с каноническими коэффициентами. Без явного
+parent-источника шести стрелок и выбора source-линии нельзя объявлять
+$SO(3)$-действие или одиночную карту $c_0$ выведенными.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item текущая стрелочная модель: \textbf{$\operatorname{span}\{E_{00},E_{11},E_{21}\}$};
+\item source-представление $SO(3)$ в размерности два: \textbf{тривиально};
+\item текущая тройка инвариантна: \textbf{нет};
+\item число инфинитезимальных выходов: \textbf{$4$};
+\item минимальная размерность замыкания: \textbf{$6$};
+\item недостающих комплексных стрелок: \textbf{$3$};
+\item условный полный frame: \textbf{$57$};
+\item тип замкнутой среды: \textbf{$\mathbf3\oplus\mathbf3$};
+\item размерность family-Hom: \textbf{$2$};
+\item остаточный селектор: \textbf{$\mathbb {RP}^1$};
+\item выведенных parent-источников: \textbf{$0/5$};
+\item следующий гейт: \textbf{селектор source-линии $SO(3)$-замкнутой среды}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_multiplicity_environment_so3_action_parent_origin_gate_results.json}.

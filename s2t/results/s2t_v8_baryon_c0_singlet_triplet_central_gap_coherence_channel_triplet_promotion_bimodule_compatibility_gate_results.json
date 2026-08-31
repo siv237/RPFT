@@ -1,0 +1,88 @@
+{
+  "current_channel_types": {
+    "W_X": "(C,C,R)",
+    "W_Y": "(H,C,R)",
+    "W_e": "(C,C,R)",
+    "isotypic_decomposition": "C2 + C1"
+  },
+  "current_type_commutant": {
+    "complex_algebra": "M2(C) + C",
+    "dimension": 5,
+    "linear_system_rank": 4,
+    "orthogonal_dimension": 1,
+    "orthogonal_system_rank": 2,
+    "real_orthogonal_lie_algebra": "so(2)",
+    "standard_so3_generators_preserving_types": [
+      true,
+      false,
+      false
+    ]
+  },
+  "date": "2026-08-31",
+  "finite_group_and_cover_checks": {
+    "full_standard_A4_triplet_allowed": false,
+    "spin_cover_center": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "spin_half_representation_descends_to_SO3": false,
+    "standard_A4_generators_preserving_types": [
+      false,
+      true
+    ]
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_coherence_channel_triplet_promotion_bimodule_compatibility_gate",
+  "ledgers": {
+    "conditional_extension_shape_satisfied": 5,
+    "conditional_extension_shape_tested": 5,
+    "current_promotion_satisfied": 0,
+    "current_promotion_tested": 5,
+    "new_parent_inputs": [
+      "one new (C,C,R) endpoint",
+      "two new allowed arrows from the coherence row doublet",
+      "new condensate on the selected isotypic 2x3 subcarrier",
+      "diagonal family-channel SO(3) lock"
+    ]
+  },
+  "minimal_non_destructive_extension": {
+    "SO3_on_isotypic_C3_allowed": true,
+    "canonical_isotypic_projector_rank": 3,
+    "commutant_dimension": 10,
+    "extended_decomposition": "C3 + C1_Y",
+    "full_extended_edge_dimension": 8,
+    "new_complex_arrow_components": 2,
+    "new_endpoint": "Z_R=(C,C,R)",
+    "old_Y_channel_is_spectator": true,
+    "old_rank_one_condensate_inherited": false,
+    "selected_coherence_chain_dimensions": {
+      "H0": 1,
+      "H1": 6,
+      "H2": 3
+    },
+    "type_commutant": "M3(C) + C"
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_minimal_isotypic_channel_extension_gate",
+  "verdict": {
+    "A4_can_repair_current_types": false,
+    "basis_change_can_repair_current_types": false,
+    "current_channel_triplet_promotion_bimodule_compatible": false,
+    "minimal_extension_is_inherited": false,
+    "minimal_non_destructive_extension_shape_exists": true,
+    "portal_parent_origin_derived": false,
+    "spin_cover_can_repair_current_types": false
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "basis_independent_kraus_sum": {
+    "central_tests": {
+      "QLYR": {
+        "eigenvalues": [
+          -1.1102230246251565e-16,
+          1.1666666666666665
+        ],
+        "kernel_dimension_inside_C2": 1,
+        "matrix": [
+          [
+            0.49999999999999994,
+            -0.5773502691896257
+          ],
+          [
+            -0.5773502691896257,
+            0.6666666666666665
+          ]
+        ]
+      },
+      "XLdR": {
+        "eigenvalues": [
+          0.0,
+          1.166666666666667
+        ],
+        "kernel_dimension_inside_C2": 1,
+        "matrix": [
+          [
+            0.5000000000000001,
+            -0.5773502691896258
+          ],
+          [
+            -0.5773502691896258,
+            0.6666666666666666
+          ]
+        ]
+      },
+      "both_cross_multiplets": {
+        "eigenvalues": [
+          -1.1102230246251565e-16,
+          2.333333333333333
+        ],
+        "kernel_dimension_inside_C2": 1,
+        "matrix": [
+          [
+            1.0,
+            -1.1547005383792515
+          ],
+          [
+            -1.1547005383792515,
+            1.333333333333333
+          ]
+        ]
+      },
+      "internal_lepton_only": {
+        "eigenvalues": [
+          0.0,
+          0.0
+        ],
+        "kernel_dimension_inside_C2": 2,
+        "matrix": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    },
+    "formula": "L_cross = sum_e -1/2 ad(D_e)^2 over an HS-orthonormal real cross-arrow basis",
+    "lepton_projector_action_norm": 8.48528137423857,
+    "quark_projector_action_norm": 8.48528137423857,
+    "self_adjoint_residual": 0.0,
+    "unital_residual": 6.280369834735101e-16
+  },
+  "date": "2026-08-28",
+  "existing_arrow_multiplets": {
+    "cross_sector": {
+      "QLYR_real_directions": 6,
+      "XLdR_real_directions": 6,
+      "total_real_dimension": 12
+    },
+    "internal_lepton_controls": {
+      "LLXR_real_directions": 4,
+      "YLeR_real_directions": 4
+    }
+  },
+  "gate": "version8_gauge_twirl_cross_sector_kraus_bridge_gate",
+  "gauge_covariance": {
+    "colored_one_point_condensate_required": false,
+    "linear_cross_arrow_SU3_center_average_norm": 1.6550227688315153e-16,
+    "linear_gauge_singlet_present": false,
+    "maximum_superoperator_commutator_norm": 4.744784410199159e-15,
+    "quadratic_kraus_sum_gauge_invariant": true,
+    "random_SU3_SU2_U1_tests": 12
+  },
+  "inherited_fixed_algebra": "C P_quark direct_sum C P_lepton_vectorlike",
+  "next_gate": {
+    "name": "version8_kraus_bridge_parent_action_hessian_gate",
+    "question": "can the gauge-twirled bridge be placed in one parent curvature functional while preserving the Tome VII 7+20 launch and stable vacuum without choosing its rate?"
+  },
+  "rate_robustness": {
+    "central_kernel_dimension_always_one": true,
+    "positive_weight_samples": 64,
+    "samples": [
+      {
+        "QLYR_weight": 8.854547505703158,
+        "XLdR_weight": 0.003240937873047872,
+        "central_decay_eigenvalue": 10.334086517505572,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.13938235932774512,
+        "XLdR_weight": 28.882604766109356,
+        "central_decay_eigenvalue": 33.85898497967662,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 1.1963295981371045,
+        "XLdR_weight": 1.065294121327948,
+        "central_decay_eigenvalue": 2.6385610060425613,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.031254990259091765,
+        "XLdR_weight": 2.005191719685032e-05,
+        "central_decay_eigenvalue": 0.036487549205670045,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 513.7619865588875,
+        "XLdR_weight": 295683.61563102,
+        "central_decay_eigenvalue": 345563.60722050874,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.025681402945045857,
+        "XLdR_weight": 54128.207128262926,
+        "central_decay_eigenvalue": 63149.60494461018,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.00011531281777568702,
+        "XLdR_weight": 5.948018761088852,
+        "central_decay_eigenvalue": 6.939489752891066,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.001653254697677648,
+        "XLdR_weight": 39.0908611587613,
+        "central_decay_eigenvalue": 45.60793348236881,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 1.2655751120073301e-05,
+        "XLdR_weight": 452692.7083869793,
+        "central_decay_eigenvalue": 528141.4931329075,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 383033.4279474611,
+        "XLdR_weight": 10.53534014225775,
+        "central_decay_eigenvalue": 446884.62383553723,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 118314.53041288651,
+        "XLdR_weight": 132688.21412810174,
+        "central_decay_eigenvalue": 292836.53529781965,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 183034.1749426321,
+        "XLdR_weight": 113913.92832973666,
+        "central_decay_eigenvalue": 346439.45381776354,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 1.402504199278817e-06,
+        "XLdR_weight": 1373.6886756228785,
+        "central_decay_eigenvalue": 1602.6367898629464,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.0009085860229852735,
+        "XLdR_weight": 0.05341469765952054,
+        "central_decay_eigenvalue": 0.06337716429625678,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 1.62587512500117,
+        "XLdR_weight": 0.00020815844117354475,
+        "central_decay_eigenvalue": 1.897097164016067,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.0020841320931773233,
+        "XLdR_weight": 154.40371328603158,
+        "central_decay_eigenvalue": 180.14009698781223,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 104.65515688640559,
+        "XLdR_weight": 0.007107738971266797,
+        "central_decay_eigenvalue": 122.10597539627298,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.051273225865676196,
+        "XLdR_weight": 0.0010506785965737932,
+        "central_decay_eigenvalue": 0.061044555205958306,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.00021203972993824892,
+        "XLdR_weight": 2172.3892022510768,
+        "central_decay_eigenvalue": 2534.454316672608,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 8.65668076277609,
+        "XLdR_weight": 0.0005918431350190447,
+        "central_decay_eigenvalue": 10.100151373562959,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 6.532415802715512e-05,
+        "XLdR_weight": 0.010420684156888268,
+        "central_decay_eigenvalue": 0.012233676367401329,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.0001715096435637954,
+        "XLdR_weight": 0.3814888032886546,
+        "central_decay_eigenvalue": 0.4452703650875881,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.01101895100594179,
+        "XLdR_weight": 9.595724775296527e-05,
+        "central_decay_eigenvalue": 0.012967392962643879,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 2208.4297081094433,
+        "XLdR_weight": 484779.8968236648,
+        "central_decay_eigenvalue": 568153.0476204033,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 5.467431362841496,
+        "XLdR_weight": 17.07047442835766,
+        "central_decay_eigenvalue": 26.29422342306568,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.00010068523347710338,
+        "XLdR_weight": 6093.655369440508,
+        "central_decay_eigenvalue": 7109.264715146699,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 8.97099746326058e-05,
+        "XLdR_weight": 0.007786517417017082,
+        "central_decay_eigenvalue": 0.009188931956924638,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.0007455336797553136,
+        "XLdR_weight": 6175.182742818807,
+        "central_decay_eigenvalue": 7204.3807364112345,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 50.48566744827236,
+        "XLdR_weight": 5.1051989067583426e-05,
+        "central_decay_eigenvalue": 58.90000491697166,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 20.415577121314197,
+        "XLdR_weight": 224.29346100584615,
+        "central_decay_eigenvalue": 285.4938778150204,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 7.785104759377997e-05,
+        "XLdR_weight": 7.01130217381472e-06,
+        "central_decay_eigenvalue": 9.900607472886048e-05,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.2236267485537848,
+        "XLdR_weight": 0.005443797962256642,
+        "central_decay_eigenvalue": 0.2672489709353817,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.024968078420321414,
+        "XLdR_weight": 0.0003471257823147451,
+        "central_decay_eigenvalue": 0.029534404903075514,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.7835054382542408,
+        "XLdR_weight": 1.6228750619537808,
+        "central_decay_eigenvalue": 2.8074439169093584,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 260.67962579721956,
+        "XLdR_weight": 4.1818543897581565e-06,
+        "central_decay_eigenvalue": 304.12623497558627,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 282.5496897654539,
+        "XLdR_weight": 3.1832744626886996e-06,
+        "central_decay_eigenvalue": 329.641308440183,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 3110.519785702328,
+        "XLdR_weight": 0.0014743324736509928,
+        "central_decay_eigenvalue": 3628.9414700406014,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 6.012684871319844e-06,
+        "XLdR_weight": 141.64868283614948,
+        "central_decay_eigenvalue": 165.25680365697343,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 2917.071929427459,
+        "XLdR_weight": 2.239266476786543e-06,
+        "central_decay_eigenvalue": 3403.250586944513,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 3999.7100697084684,
+        "XLdR_weight": 0.8255094652853039,
+        "central_decay_eigenvalue": 4667.291509036046,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 1.2272149000190207,
+        "XLdR_weight": 71.6773366467866,
+        "central_decay_eigenvalue": 85.0553101379399,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 585.0037903181881,
+        "XLdR_weight": 635.2361002287249,
+        "central_decay_eigenvalue": 1423.6132056380652,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 165.37524066285943,
+        "XLdR_weight": 0.0071835999992743765,
+        "central_decay_eigenvalue": 192.94616164000178,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.037564617361580385,
+        "XLdR_weight": 1597.10260230241,
+        "central_decay_eigenvalue": 1863.330194739734,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 833.1220966456582,
+        "XLdR_weight": 4786.893758320532,
+        "central_decay_eigenvalue": 6556.685164127222,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 4.02983095264007e-05,
+        "XLdR_weight": 0.0008744947550853444,
+        "central_decay_eigenvalue": 0.0010672585753803694,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 1.163494505455688e-05,
+        "XLdR_weight": 568567.2843913006,
+        "central_decay_eigenvalue": 663328.4984700916,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.26919389851736536,
+        "XLdR_weight": 3.403136185716534,
+        "central_decay_eigenvalue": 4.2843850982728835,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.01722930541296691,
+        "XLdR_weight": 0.005012431245445122,
+        "central_decay_eigenvalue": 0.02594869276814737,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 16842.80256781214,
+        "XLdR_weight": 610.1959553276441,
+        "central_decay_eigenvalue": 20361.831610329747,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 10.356454787506301,
+        "XLdR_weight": 3.398951394885194e-05,
+        "central_decay_eigenvalue": 12.082570239856958,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.01937038090907769,
+        "XLdR_weight": 44.23222457296489,
+        "central_decay_eigenvalue": 51.62686077951963,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 931320.3048914752,
+        "XLdR_weight": 1141.4908383030756,
+        "central_decay_eigenvalue": 1087872.0950180746,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.0001462842198806278,
+        "XLdR_weight": 276887.1380942757,
+        "central_decay_eigenvalue": 323034.9946139866,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 3.924039148953103e-06,
+        "XLdR_weight": 0.0026144796606868306,
+        "central_decay_eigenvalue": 0.003054804316475081,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.00023757023720024552,
+        "XLdR_weight": 0.03711520995599112,
+        "central_decay_eigenvalue": 0.043578243558723265,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 14.656795495077235,
+        "XLdR_weight": 0.15132561070195902,
+        "central_decay_eigenvalue": 17.276141290075728,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 2.487965864248274,
+        "XLdR_weight": 1.1682351170777476,
+        "central_decay_eigenvalue": 4.265567811547025,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.0003178102483392195,
+        "XLdR_weight": 0.7612352367444033,
+        "central_decay_eigenvalue": 0.8884785548248664,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 3964.7969085933123,
+        "XLdR_weight": 0.6137643422430744,
+        "central_decay_eigenvalue": 4626.312451758147,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 29.790438374321994,
+        "XLdR_weight": 0.01485645191771423,
+        "central_decay_eigenvalue": 34.772843963946315,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.27196394596913637,
+        "XLdR_weight": 0.0020092382170116677,
+        "central_decay_eigenvalue": 0.31963538155050597,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 641.5000101511256,
+        "XLdR_weight": 0.037296261726047025,
+        "central_decay_eigenvalue": 748.4601908149934,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_weight": 0.2593960600970625,
+        "XLdR_weight": 8735.470232344569,
+        "central_decay_eigenvalue": 10191.684566472111,
+        "central_kernel_dimension": 1
+      }
+    ],
+    "weight_range": "1e-6 through 1e6 independently"
+  },
+  "verdict": {
+    "C2_superselection_survives": false,
+    "common_parent_action_hessian_checked": false,
+    "direct_linear_gauge_singlet_bridge_exists": false,
+    "existing_cross_arrow_space_is_nonzero": true,
+    "gauge_twirl_quadratic_kraus_bridge_exists": true,
+    "primitive_center_obtained": true,
+    "reason": "the complete colored arrow multiplets have no invariant linear vector, but their basis-independent quadratic Dirichlet sum is gauge covariant and reduces the previous C^2 fixed algebra to the scalar identity without a colored condensate",
+    "status": "positive_gauge_covariant_kraus_bridge_rate_and_parent_open",
+    "unique_quantitative_rate_derived": false
+  }
+}

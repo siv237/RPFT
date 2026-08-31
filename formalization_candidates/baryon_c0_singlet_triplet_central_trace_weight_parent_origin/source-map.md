@@ -1,0 +1,6 @@
+# Карта источников
+
+- `s2t/gates/version8_baryon_c0_family_triplet_singlet_relative_rate_selector_gate.tex`
+- `s2t/gates/version8_baryon_c0_common_trace_embedding_normalization_gate.tex`
+- `s2t/gates/version8_baryon_c0_multiplicity_environment_hamiltonian_parent_origin_gate.tex`
+- `s2t/audits/s2t_v8_baryon_c0_singlet_triplet_central_trace_weight_parent_origin_gate.py`

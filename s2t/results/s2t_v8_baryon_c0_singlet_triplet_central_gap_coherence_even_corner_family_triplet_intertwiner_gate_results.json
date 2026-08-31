@@ -1,0 +1,77 @@
+{
+  "conditional_promotion": {
+    "Hom_dimension": 1,
+    "canonical_shape": "Hodge star from the oriented metric",
+    "determinant": 1,
+    "intertwiner_system_rank": 8,
+    "isometry": true,
+    "matrix": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "new_channel_type": "oriented standard R3 of a diagonal SO(3)",
+    "normalized_maps": [
+      "-*",
+      "+*"
+    ],
+    "source": "Lambda^2 R3",
+    "target": "R3"
+  },
+  "current_intertwiner_systems": {
+    "channel_nullity": 0,
+    "channel_rank": 9,
+    "family_A4_nullity": 0,
+    "family_A4_rank": 9,
+    "family_SO3_nullity": 0,
+    "family_SO3_rank": 9,
+    "full_product_group_Hom_dimension": 0
+  },
+  "current_representations": {
+    "coherence_corner": "Lambda^2(C2+C1)=C1+C2 under U(2)_{eX} x U(1)_Y; family action trivial",
+    "family_target": "standard irreducible 3 of SO(3)_fam; channel action trivial",
+    "product_group": "(U(2)_{eX} x U(1)_Y) x SO(3)_fam"
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_coherence_even_corner_family_triplet_intertwiner_gate",
+  "ledgers": {
+    "conditional_shape_satisfied": 4,
+    "conditional_shape_tested": 4,
+    "current_intertwiner_satisfied": 0,
+    "current_intertwiner_tested": 4,
+    "new_parent_inputs": [
+      "unified channel bimodule",
+      "diagonal SO(3) lock",
+      "oriented metric/sign"
+    ]
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_coherence_channel_triplet_promotion_bimodule_compatibility_gate",
+  "typing_cost": {
+    "accidental_U3_promoted_to_physical": true,
+    "current_W_bimodule_types_equal": false,
+    "diagonal_family_channel_lock_required": true,
+    "mixes_W_e_W_X_W_Y": true,
+    "orientation_sign_requires_origin": true
+  },
+  "verdict": {
+    "A4_residual_repairs_intertwiner": false,
+    "conditional_Hodge_intertwiner_exists": true,
+    "conditional_intertwiner_is_currently_typed": false,
+    "conditional_intertwiner_unique_up_to_scale": true,
+    "current_nonzero_intertwiner_exists": false,
+    "portal_parent_origin_derived": false
+  }
+}

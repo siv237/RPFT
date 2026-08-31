@@ -1,0 +1,1924 @@
+{
+  "chain_degree_only_metric": {
+    "all_positive_ratios_primitive_and_KMS": true,
+    "degree_two_families": [
+      "linking",
+      "QLYR",
+      "XLdR"
+    ],
+    "degree_zero_families": [
+      "SU3",
+      "SU2",
+      "U1"
+    ],
+    "gap_maximum": 0.48980132978060964,
+    "gap_minimum": 2.5325935736411154e-06,
+    "relative_parameter_after_overall_scale": 1,
+    "sample_rows": [
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 2.5325935736411154e-06,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.500027069764293,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 3.319677625758101e-20,
+        "transfer_to_gauge_weight": 0.0001,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.0001,
+          1.0,
+          1.0,
+          1.0,
+          0.0001,
+          0.0001
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 4.028975230842041e-21,
+        "decay_gap": 4.0137460605622274e-06,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.5000429051964894,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 3.319677625758101e-20,
+        "transfer_to_gauge_weight": 0.00015848931924611142,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.00015848931924611142,
+          1.0,
+          1.0,
+          1.0,
+          0.00015848931924611142,
+          0.00015848931924611142
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 8.057950461684082e-21,
+        "decay_gap": 6.360996669703338e-06,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.500068006465343,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.5785441477389063e-19,
+        "transfer_to_gauge_weight": 0.00025118864315095795,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.00025118864315095795,
+          1.0,
+          1.0,
+          1.0,
+          0.00025118864315095795,
+          0.00025118864315095795
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.664155696145773e-20,
+        "decay_gap": 1.0080591503297463e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.500107798850912,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "transfer_to_gauge_weight": 0.00039810717055349735,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.00039810717055349735,
+          1.0,
+          1.0,
+          1.0,
+          0.00039810717055349735,
+          0.00039810717055349735
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 4.1495970321976264e-21,
+        "decay_gap": 1.5974381327167664e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.5001708895733907,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 5.157088295477813e-19,
+        "transfer_to_gauge_weight": 0.000630957344480193,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.000630957344480193,
+          1.0,
+          1.0,
+          1.0,
+          0.000630957344480193,
+          0.000630957344480193
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 8.299194064395253e-21,
+        "decay_gap": 2.5311975495211727e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.5002709421763014,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.655742100606481e-19,
+        "transfer_to_gauge_weight": 0.001,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.001,
+          1.0,
+          1.0,
+          1.0,
+          0.001,
+          0.001
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 4.010248009892232e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.5004296675784414,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 5.311484201212962e-19,
+        "transfer_to_gauge_weight": 0.001584893192461114,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.001584893192461114,
+          1.0,
+          1.0,
+          1.0,
+          0.001584893192461114,
+          0.001584893192461114
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 6.446360369347266e-20,
+        "decay_gap": 6.352243975303545e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.500681616500289,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 4.12567063638225e-18,
+        "transfer_to_gauge_weight": 0.002511886431509582,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.002511886431509582,
+          1.0,
+          1.0,
+          1.0,
+          0.002511886431509582,
+          0.002511886431509582
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.3313245569166183e-19,
+        "decay_gap": 0.00010058739643107195,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.5010819086269165,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 4.260238582133179e-18,
+        "transfer_to_gauge_weight": 0.003981071705534973,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.003981071705534973,
+          1.0,
+          1.0,
+          1.0,
+          0.003981071705534973,
+          0.003981071705534973
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.000159200158468886,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.5017188315579153,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 8.2513412727645e-18,
+        "transfer_to_gauge_weight": 0.006309573444801929,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.006309573444801929,
+          1.0,
+          1.0,
+          1.0,
+          0.006309573444801929,
+          0.006309573444801929
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.6626491138332367e-19,
+        "decay_gap": 0.0002517744528516606,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.5027347407887564,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 4.2491873609703695e-18,
+        "transfer_to_gauge_weight": 0.01,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.01,
+          1.0,
+          1.0,
+          1.0,
+          0.01,
+          0.01
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 5.157088295477813e-19,
+        "decay_gap": 0.00039772302065949365,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.504361760860241,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 4.2491873609703695e-18,
+        "transfer_to_gauge_weight": 0.01584893192461114,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.01584893192461114,
+          1.0,
+          1.0,
+          1.0,
+          0.01584893192461114,
+          0.01584893192461114
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.0314176590955625e-18,
+        "decay_gap": 0.0006272198023283002,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.5069858910033997,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 3.3005365091058e-17,
+        "transfer_to_gauge_weight": 0.025118864315095822,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.025118864315095822,
+          1.0,
+          1.0,
+          1.0,
+          0.025118864315095822,
+          0.025118864315095822
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.0650596455332947e-18,
+        "decay_gap": 0.0009868115898085986,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.511272499888475,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 8.498374721940739e-18,
+        "transfer_to_gauge_weight": 0.039810717055349734,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.039810717055349734,
+          1.0,
+          1.0,
+          1.0,
+          0.039810717055349734,
+          0.039810717055349734
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 5.311484201212962e-19,
+        "decay_gap": 0.0015477222796600125,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.5184516838355013,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.6996749443881478e-17,
+        "transfer_to_gauge_weight": 0.06309573444801936,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.06309573444801936,
+          1.0,
+          1.0,
+          1.0,
+          0.06309573444801936,
+          0.06309573444801936
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.0024182179824826827,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.5311538365155797,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.32021460364232e-16,
+        "transfer_to_gauge_weight": 0.1,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.1,
+          1.0,
+          1.0,
+          1.0,
+          0.1,
+          0.1
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.0622968402425924e-18,
+        "decay_gap": 0.003762426901382508,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.5570581549951985,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 3.3993498887762956e-17,
+        "transfer_to_gauge_weight": 0.1584893192461114,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.1584893192461114,
+          1.0,
+          1.0,
+          1.0,
+          0.1584893192461114,
+          0.1584893192461114
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.1245936804851847e-18,
+        "decay_gap": 0.005829596294037886,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2.6462858726146847,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "transfer_to_gauge_weight": 0.25118864315095824,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.25118864315095824,
+          1.0,
+          1.0,
+          1.0,
+          0.25118864315095824,
+          0.25118864315095824
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.7040954328532715e-17,
+        "decay_gap": 0.008999462519562004,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 3.1129045569784157,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "transfer_to_gauge_weight": 0.3981071705534973,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.3981071705534973,
+          1.0,
+          1.0,
+          1.0,
+          0.3981071705534973,
+          0.3981071705534973
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.7040954328532715e-17,
+        "decay_gap": 0.013850703123177453,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 4.367446998558812,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.3597399555105182e-16,
+        "transfer_to_gauge_weight": 0.6309573444801936,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.6309573444801936,
+          1.0,
+          1.0,
+          1.0,
+          0.6309573444801936,
+          0.6309573444801936
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 8.498374721940739e-18,
+        "decay_gap": 0.02125996742118741,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 6.369261833365082,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.056171682913856e-15,
+        "transfer_to_gauge_weight": 1.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.0325340873794237,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 9.56468626114393,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "transfer_to_gauge_weight": 1.584893192461114,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          1.584893192461114,
+          1.0,
+          1.0,
+          1.0,
+          1.584893192461114,
+          1.584893192461114
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.0495528626951841,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 14.66486767642427,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "transfer_to_gauge_weight": 2.5118864315095824,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          2.5118864315095824,
+          1.0,
+          1.0,
+          1.0,
+          2.5118864315095824,
+          2.5118864315095824
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 3.3993498887762956e-17,
+        "decay_gap": 0.07482958588507665,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 22.794499200459786,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.0877919644084146e-15,
+        "transfer_to_gauge_weight": 3.9810717055349776,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          3.9810717055349776,
+          1.0,
+          1.0,
+          1.0,
+          3.9810717055349776,
+          3.9810717055349776
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.11124156637461351,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 35.72579403048163,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "transfer_to_gauge_weight": 6.309573444801943,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          6.309573444801943,
+          1.0,
+          1.0,
+          1.0,
+          6.309573444801943,
+          6.309573444801943
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 6.798699777552591e-17,
+        "decay_gap": 0.1609183650582771,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 56.25836096698081,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "transfer_to_gauge_weight": 10.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          10.0,
+          1.0,
+          1.0,
+          1.0,
+          10.0,
+          10.0
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 5.28085841456928e-16,
+        "decay_gap": 0.22274800619894108,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 88.82708323714577,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.74499372324175e-14,
+        "transfer_to_gauge_weight": 15.848931924611142,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          15.848931924611142,
+          1.0,
+          1.0,
+          1.0,
+          15.848931924611142,
+          15.848931924611142
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.2896915879706752,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 140.46276856451513,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 3.379749385324339e-14,
+        "transfer_to_gauge_weight": 25.11886431509582,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          25.11886431509582,
+          1.0,
+          1.0,
+          1.0,
+          25.11886431509582,
+          25.11886431509582
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.7194799110210365e-16,
+        "decay_gap": 0.3506766614792008,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 222.31121916461458,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 3.4899874464835e-14,
+        "transfer_to_gauge_weight": 39.81071705534978,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          39.81071705534978,
+          1.0,
+          1.0,
+          1.0,
+          39.81071705534978,
+          39.81071705534978
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.112343365827712e-15,
+        "decay_gap": 0.3980119873660957,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 352.0395170668778,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 6.759498770648678e-14,
+        "transfer_to_gauge_weight": 63.09573444801943,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          63.09573444801943,
+          1.0,
+          1.0,
+          1.0,
+          63.09573444801943,
+          63.09573444801943
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.43096338102925624,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 557.6495958803717,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "transfer_to_gauge_weight": 100.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          100.0,
+          1.0,
+          1.0,
+          1.0,
+          100.0,
+          100.0
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.0877919644084146e-15,
+        "decay_gap": 0.45262591989812545,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 883.5225035195674,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.3959949785934e-13,
+        "transfer_to_gauge_weight": 158.48931924611142,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          158.48931924611142,
+          1.0,
+          1.0,
+          1.0,
+          158.48931924611142,
+          158.48931924611142
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.46650975601406774,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 1399.9980822845182,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 6.961868572213853e-14,
+        "transfer_to_gauge_weight": 251.18864315095823,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          251.18864315095823,
+          1.0,
+          1.0,
+          1.0,
+          251.18864315095823,
+          251.18864315095823
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.4753176712765808,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2218.5578631056337,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.3923737144427707e-13,
+        "transfer_to_gauge_weight": 398.1071705534977,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          398.1071705534977,
+          1.0,
+          1.0,
+          1.0,
+          398.1071705534977,
+          398.1071705534977
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.48088404807569723,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 3515.888414129604,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "transfer_to_gauge_weight": 630.9573444801943,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          630.9573444801943,
+          1.0,
+          1.0,
+          1.0,
+          630.9573444801943,
+          630.9573444801943
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 8.702335715267317e-15,
+        "decay_gap": 0.4843971850161289,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 5572.019231351304,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "transfer_to_gauge_weight": 1000.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          1000.0,
+          1.0,
+          1.0,
+          1.0,
+          1000.0,
+          1000.0
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.48661356874788114,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 8830.767255673696,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 5.569494857771083e-13,
+        "transfer_to_gauge_weight": 1584.893192461114,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          1584.893192461114,
+          1.0,
+          1.0,
+          1.0,
+          1584.893192461114,
+          1584.893192461114
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.7404671430534633e-14,
+        "decay_gap": 0.4880117470529857,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 13995.534997896355,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.163039606607577e-12,
+        "transfer_to_gauge_weight": 2511.886431509582,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          2511.886431509582,
+          1.0,
+          1.0,
+          1.0,
+          2511.886431509582,
+          2511.886431509582
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.4888937912932963,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 22181.140348352244,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 4.326079213215154e-12,
+        "transfer_to_gauge_weight": 3981.0717055349774,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          3981.0717055349774,
+          1.0,
+          1.0,
+          1.0,
+          3981.0717055349774,
+          3981.0717055349774
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.489450254864699,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 35154.45061712567,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 8.652158426430308e-12,
+        "transfer_to_gauge_weight": 6309.573444801943,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          6309.573444801943,
+          1.0,
+          1.0,
+          1.0,
+          6309.573444801943,
+          6309.573444801943
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 6.961868572213853e-14,
+        "decay_gap": 0.48980132978060964,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 55715.761791637095,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 8.93436786299776e-12,
+        "transfer_to_gauge_weight": 10000.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          10000.0,
+          1.0,
+          1.0,
+          1.0,
+          10000.0,
+          10000.0
+        ]
+      }
+    ],
+    "scan_samples": 41,
+    "spectral_projector_count": 2
+  },
+  "date": "2026-08-29",
+  "gate": "version8_common_chain_dirichlet_rate_metric_gate",
+  "invariant_metric_cone": {
+    "KMS_or_stationarity_selects_them": false,
+    "independent_named_families": [
+      "linking",
+      "SU3",
+      "SU2",
+      "U1",
+      "QLYR",
+      "XLdR"
+    ],
+    "linear_span_rank": 6,
+    "positive_KMS_symmetric_coefficients": 6,
+    "relative_coefficients_after_removing_overall_time_scale": 5
+  },
+  "natural_metric_representatives": {
+    "equal_superoperator_norm": {
+      "KMS_symmetry_residual": 2.4960208451369398e-18,
+      "decay_gap": 0.001197333908140678,
+      "fixed_algebra_dimension": 1,
+      "largest_decay": 0.5010930019689499,
+      "positive_eigenvalue_count": 0,
+      "similarity_self_adjoint_residual": 3.3993498887762956e-17,
+      "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+        0.05160813859383101,
+        0.07216878364870323,
+        0.10826639239215334,
+        0.15434163388526181,
+        0.09085133785711318,
+        0.10304572020629735
+      ]
+    },
+    "heat_metric_f_x_equals_exp_minus_x": {
+      "KMS_symmetry_residual": 0.0,
+      "decay_gap": 0.00045900286496980316,
+      "fixed_algebra_dimension": 1,
+      "largest_decay": 2.5050544251182916,
+      "positive_eigenvalue_count": 0,
+      "similarity_self_adjoint_residual": 1.7040954328532715e-17,
+      "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+        0.01831563888873418,
+        1.0,
+        1.0,
+        1.0,
+        0.01831563888873418,
+        0.01831563888873418
+      ]
+    },
+    "identity_metric_f_of_adN2_equals_1": {
+      "KMS_symmetry_residual": 8.498374721940739e-18,
+      "decay_gap": 0.02125996742118741,
+      "fixed_algebra_dimension": 1,
+      "largest_decay": 6.369261833365082,
+      "positive_eigenvalue_count": 0,
+      "similarity_self_adjoint_residual": 1.056171682913856e-15,
+      "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "identity_plus_commutator_f_x_equals_1_plus_x": {
+      "KMS_symmetry_residual": 3.3993498887762956e-17,
+      "decay_gap": 0.09128432629442569,
+      "fixed_algebra_dimension": 1,
+      "largest_decay": 28.44888474264676,
+      "positive_eigenvalue_count": 0,
+      "similarity_self_adjoint_residual": 0.0,
+      "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+        5.0,
+        1.0,
+        1.0,
+        1.0,
+        5.0,
+        5.0
+      ]
+    },
+    "pure_commutator_metric_f_x_equals_x": {
+      "KMS_symmetry_residual": 3.3993498887762956e-17,
+      "decay_gap": 0.09319112134709719,
+      "fixed_algebra_dimension": 3,
+      "largest_decay": 22.28610801195767,
+      "positive_eigenvalue_count": 0,
+      "similarity_self_adjoint_residual": 4.224686731655424e-15,
+      "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+        4.0,
+        0.0,
+        0.0,
+        0.0,
+        4.0,
+        4.0
+      ]
+    },
+    "resolvent_metric_f_x_equals_1_over_1_plus_x": {
+      "KMS_symmetry_residual": 0.0,
+      "decay_gap": 0.004696215046059888,
+      "fixed_algebra_dimension": 1,
+      "largest_decay": 2.583616306056915,
+      "positive_eigenvalue_count": 0,
+      "similarity_self_adjoint_residual": 2.64042920728464e-16,
+      "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+        0.2,
+        1.0,
+        1.0,
+        1.0,
+        0.2,
+        0.2
+      ]
+    }
+  },
+  "no_go": {
+    "adding_a_degree_zero_floor_is_unique": false,
+    "common_chain_degree_selects_one_rate_metric": false,
+    "pure_adN_squared_fixed_algebra_dimension": 3,
+    "pure_adN_squared_metric_keeps_gauge_diffusion": false,
+    "reason": "ad_N^2 has distinct degree-zero and degree-two projectors, while full gauge covariance permits still finer independent family weights"
+  },
+  "positive_weight_robustness": {
+    "all_KMS_symmetric": true,
+    "all_primitive": true,
+    "gap_maximum": 22.173085089026955,
+    "gap_minimum": 2.8469224501240994e-06,
+    "independent_range": "1e-4 through 1e4",
+    "sample_rows": [
+      {
+        "KMS_symmetry_residual": 5.102800490722269e-16,
+        "decay_gap": 0.11590063170814198,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 217.0350149141897,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.632896157031126e-14,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          17.457545349908223,
+          0.6054618588990871,
+          0.308144516315491,
+          131.74685151817192,
+          35.26221263993961,
+          0.1730604615443476
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.175583928820787e-15,
+        "decay_gap": 0.10551237297815577,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 6144.862916512955,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 5.271441804947985e-13,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          680.6893788768214,
+          2730.9337609657814,
+          0.22439805652207614,
+          2112.200295161165,
+          0.00047400694880142584,
+          279.61638444974204
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.0003430428240233906,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 13087.445521085274,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.1138989715542165e-12,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.020997976699144497,
+          303.1239779850748,
+          0.0013305240838374446,
+          0.04708231332150272,
+          4174.164069346953,
+          1.6891261213511592
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.6996749443881478e-17,
+        "decay_gap": 0.3708099312544759,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 6602.548564683189,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 5.438959822042073e-16,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          397.65313376909336,
+          0.03556133704094499,
+          0.775680342103484,
+          4218.750292670611,
+          2.2864964895290814,
+          210.94769668892562
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.2927477876195611,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 20514.229478973906,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.2278577850267127e-12,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          21.579983144294534,
+          100.19402700384919,
+          390.2282489479873,
+          10.301973152394403,
+          0.014816727828388412,
+          7289.153896664407
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.0373992580494066e-21,
+        "decay_gap": 0.00021761763430344598,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 5717.289293529093,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.6764096660121584e-19,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          1522.9060537760056,
+          0.0003307853938841852,
+          387.87646634998566,
+          0.32334693733576125,
+          0.0006762949234842588,
+          0.00014262137698861345
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.0747985160988132e-21,
+        "decay_gap": 0.13509457703416644,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 66.41513843695475,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.632896157031126e-14,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          17.708639576180722,
+          0.27452579960041407,
+          0.7041356007623196,
+          0.7516117906806742,
+          0.0002939696148160531,
+          13.359893194457213
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.2757001233554577e-16,
+        "decay_gap": 0.0036589445025971786,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 341.19314826495076,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 4.082240392577815e-15,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          5.046859428002649,
+          222.6693666136579,
+          0.007847652312220042,
+          3.2087860050469845,
+          0.6248466772672835,
+          0.0003849488777506495
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.11177181368776075,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 1433.3186536083874,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.6126338512498016e-13,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          231.26004862878898,
+          726.2386219438148,
+          0.2377036720180679,
+          0.0004160682868262738,
+          0.13868192563215911,
+          44.77064565556384
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 6.639355251516202e-20,
+        "decay_gap": 0.00010296854759207265,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 43.94764296383061,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.022128820990154823,
+          1.5323245481748222,
+          0.00023990444081512785,
+          0.00016322903518211667,
+          14.003259580219813,
+          0.010718385923854193
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 8.702335715267317e-15,
+        "decay_gap": 0.057739768707086046,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 6182.793313782655,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.655742100606481e-19,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          1643.42214779615,
+          8.99848416048056,
+          0.121589901075193,
+          0.014552555056177361,
+          0.0011647053382200267,
+          1380.1201885887856
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.175583928816829e-15,
+        "decay_gap": 22.173085089026955,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 35734.52899740719,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 8.360428323999365e-12,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          9671.033673941214,
+          126.51724116254839,
+          299.0405417544597,
+          12.991812889142247,
+          0.0066118805444585335,
+          213.07014620725144
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.26119982726536894,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 12071.225418943912,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.1481807789962292e-12,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          1852.3352258124578,
+          344.99754612260045,
+          0.5345782812688537,
+          82.96258517012693,
+          962.6916182757674,
+          3726.036584326042
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 9.654078006954462e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 40.76639220931173,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 5.8265149833968216e-18,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.0037726150608638183,
+          26.646616107489862,
+          0.4862650017821803,
+          1.5562764017915005,
+          0.44628996471874327,
+          0.014549505586225598
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.7404671437668444e-14,
+        "decay_gap": 0.000311025623628748,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 7686.629067194094,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 3.4809346513578965e-14,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.01211182732204743,
+          0.014337695114466753,
+          3.318982456710849,
+          5534.350270703981,
+          1573.543014660728,
+          89.63851197665709
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.655742100606481e-19,
+        "decay_gap": 0.13243317545469446,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 650.2970792872234,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.7194799110210365e-16,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          170.2198012066603,
+          0.0022753510390263578,
+          77.01304866460302,
+          0.05780926321458436,
+          1.0582858020343897,
+          0.024140582076106507
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.0622968402425924e-18,
+        "decay_gap": 2.8469224501240994e-06,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 4366.351875667019,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 3.3993498887762956e-17,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.00011085151438090644,
+          221.86613193971425,
+          4033.5360026306803,
+          0.00023490483126154896,
+          0.12310259558817095,
+          1.5721619042485069
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.7404671430534633e-14,
+        "decay_gap": 0.007528969351418997,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 12509.351348262588,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          2056.0313834148315,
+          0.9255707615502874,
+          0.015355463985348407,
+          4.311755950724397,
+          2446.2450891077847,
+          54.536240509925655
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 4.351176156819809e-15,
+        "decay_gap": 0.00015063106463793533,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 5480.788073092938,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.3923737144427707e-13,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.005865457581186261,
+          3548.0684337290127,
+          68.41297866530265,
+          0.12113193561659791,
+          667.0222860017537,
+          1.1343946672601832
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 6.229004505276207e-20,
+        "decay_gap": 4.8922876369019614e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 914.5040373498713,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.0021294971071024894,
+          80.37254296685029,
+          0.0005584904115501756,
+          0.014057289128914605,
+          3.360183642081993,
+          325.21285616366936
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 8.702335715267317e-15,
+        "decay_gap": 0.25531108965679256,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2963.2341311562955,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.789530738543869e-13,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          18.636482447972675,
+          0.0026251360212797025,
+          1581.888674019354,
+          0.02512930503187669,
+          0.003465503308365843,
+          1048.5279770546604
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.3411417048758795,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 323.8117243253654,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 6.798699777552591e-17,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          23.748885647767263,
+          0.49937725111977993,
+          21.625435882897627,
+          0.35260974538141854,
+          0.20682746915800218,
+          108.23811715482645
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 3.321298166555505e-20,
+        "decay_gap": 8.644016348245881e-06,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 5056.0653078720725,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.124853014472173e-18,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.00035847855476744744,
+          33.4756431616957,
+          0.00023901776919916937,
+          3624.298246034724,
+          0.004948302791115056,
+          0.00013879400957579111
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 4.351167857633658e-15,
+        "decay_gap": 0.029839542047573615,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 18216.82305161791,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          11.023638730118122,
+          0.002618380472138576,
+          0.06443890594106262,
+          266.9695215442313,
+          5803.395579067802,
+          508.12124254009865
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.491601802110483e-19,
+        "decay_gap": 0.000275216539365375,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 4630.672887890701,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 5.311484201212962e-19,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.011020488006588126,
+          0.1334261441718071,
+          4379.109523468957,
+          1131.6219333990878,
+          0.0025833240170630794,
+          24.465599132663115
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 3.4809342861069267e-14,
+        "decay_gap": 0.0032960449746628384,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 11230.64101592637,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.1729143940615438,
+          5153.057419058717,
+          6.9498058874082185,
+          225.28052003287291,
+          3579.6360777361056,
+          0.0012966443751946818
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.21007288160896667,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 797.0544846127666,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.655742100606481e-19,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          35.212307655635804,
+          0.0004293717534153796,
+          1.4940914716235454,
+          526.9163201869824,
+          0.0007800083070653928,
+          2.440827113676101
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 4.351167857633658e-15,
+        "decay_gap": 0.00015422915054782196,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 1248.0980091448412,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 6.531584628124504e-14,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          59.15157871084786,
+          7.985255560623784,
+          0.0003145160544804252,
+          8.345460902282424,
+          29.258928903373196,
+          426.8569404602571
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.002129688073546647,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 116.89769401467088,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.0622968402425924e-18,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.09894736179187819,
+          60.18080545609665,
+          26.597893687057034,
+          0.0008027172786530557,
+          0.11195246812886046,
+          0.003179714270136778
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.05682541015584797,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 3071.3634925498227,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.78770040618573e-14,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          3.256039393922964,
+          353.0149477046067,
+          2534.8868055660364,
+          0.01991510710482176,
+          48.12524169378868,
+          0.0008286775260527455
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.035883842789415143,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2572.800736075046,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.7194799110210365e-16,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          2.1547288355035445,
+          0.0006326328925924196,
+          2564.0873632260686,
+          0.4743043676348186,
+          1.334424053965273,
+          0.0008520412850384968
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.655742100606481e-19,
+        "decay_gap": 9.954144117505514,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 16089.717992933014,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          1731.0914471484539,
+          3713.3251577635624,
+          46.694421895215406,
+          7386.237880184726,
+          99.31080492213896,
+          0.023300206077844603
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.010659923160713803,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 965.8496746555551,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 8.498374721940739e-18,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          3.2309650903586618,
+          0.0015924317794218006,
+          958.4070402821279,
+          0.025271497752723464,
+          0.03278982021055811,
+          0.037275333577486955
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.00021339499189371714,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 19673.623503526862,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.011216795674945384,
+          0.05117428846874526,
+          0.0011348540879151591,
+          0.00017172835799710384,
+          6274.799681894197,
+          0.08066853968483237
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.15962990007263367,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 31672.655296393372,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.3597399555105182e-16,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          8568.691653792708,
+          31.75233446633877,
+          335.05873312982004,
+          0.0009088535070388758,
+          0.6005741637717606,
+          0.001697759958438185
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.005145701019837253,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 4869.467336209724,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 5.569494857771083e-13,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.20116093880433697,
+          0.0006558129903824707,
+          1.551069903811037,
+          299.75733527957027,
+          1552.4751537260972,
+          1483.5408818085778
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 8.164480785172502e-15,
+        "decay_gap": 0.01815141470610552,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 1032.9519915798433,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.6126338512498016e-13,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          278.509482542487,
+          33.733984716570134,
+          0.0387561523058246,
+          0.0008817193361143126,
+          6.621798252951012,
+          0.0019246947504361028
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.0008672359062163843,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 8121.197227890178,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          31.919133843301765,
+          0.00019116975347301145,
+          8048.507074237587,
+          71.1289426717917,
+          0.0026319002396539685,
+          0.0022380328260594986
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 3.480934286106947e-14,
+        "decay_gap": 3.847490124621444e-06,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 8621.808778097658,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.1138989715542165e-12,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.00014981024777353618,
+          0.0003058673663462997,
+          10.990622497182976,
+          3549.0247866692093,
+          2203.7591295960515,
+          3066.064291843997
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 5.438959822181405e-16,
+        "decay_gap": 4.374536860729448e-06,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 204.52075677493178,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.491601802110483e-19,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.00017033490753070728,
+          99.34755889381304,
+          1.6824183460696467,
+          0.006066834976199207,
+          64.69420114435331,
+          0.4315586095142936
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.3597399560678472e-16,
+        "decay_gap": 3.3136043634413154e-06,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 570.6896529735277,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 4.25101322363046e-18,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.0001290290937275377,
+          0.0001450820755520898,
+          530.2912869920268,
+          0.0030048954574125875,
+          12.884784132732419,
+          0.017702183290824673
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 4.2491873609703695e-18,
+        "decay_gap": 0.08689905700596835,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 3388.3608124758593,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.0450535493458442e-12,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          918.7267160385404,
+          0.009543919553415468,
+          5.020334779388123,
+          4.22049431263161,
+          0.04727364737930179,
+          0.571024166669698
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 8.164480786235454e-15,
+        "decay_gap": 0.00195473220782349,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 8640.282363229122,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.6126338512498016e-13,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          288.3598069340109,
+          0.030216353325643222,
+          0.003987756714858728,
+          0.6087538763880497,
+          0.01911101104599156,
+          2990.391751180148
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 7.185742515567988e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 754.5675259761994,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 7.689799311775182e-14,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          40.37047596615647,
+          82.93413588824536,
+          0.0001466833673009914,
+          0.00019909032727432672,
+          0.00011035804870618015,
+          256.7072951141326
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.655742100606481e-19,
+        "decay_gap": 6.581228445523801e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 372.55705976022455,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 8.498374721940739e-18,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          101.0431776507297,
+          0.042456288990734926,
+          0.000134467532388966,
+          1.1359817539601853,
+          0.004982167112322698,
+          0.036103267008730136
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.6996749443881478e-17,
+        "decay_gap": 0.0002470773908491963,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 1098.1924602374406,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 4.38502959679432e-15,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.009620877956408605,
+          85.3889827956688,
+          967.8835709034333,
+          16.7805743587204,
+          16.434096342147512,
+          2.346193360883587
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 3.3993498887762956e-17,
+        "decay_gap": 0.1602413607588604,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 52.604304923511826,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 8.236627820231227e-15,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          8.756813573327486,
+          0.0003562234926101461,
+          30.404039541050366,
+          0.0006809102367394586,
+          0.2822048348797767,
+          4.162951584772424
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.6759060222537555,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 2123.6531119090705,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          101.13496674379138,
+          1246.2951473863031,
+          70.70676524676287,
+          289.7952914362855,
+          3.925859333061179,
+          0.0007642865733738658
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.020371327853283102,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 30098.336859658306,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 8.360428323999365e-12,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          8162.66539979765,
+          0.0002386533563827309,
+          0.04167942999245763,
+          21.735257774110924,
+          5.3572835705391455,
+          35.69233200811966
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.0030155486649895646,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 9391.299556225946,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 5.102980170381099e-16,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.6678310915939378,
+          62.464587881328804,
+          6.8344170802883015,
+          6730.882800015793,
+          0.0023049260453621104,
+          0.011143472504422349
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 7.786255631595259e-21,
+        "decay_gap": 4.551574005763501e-06,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 21656.404144549557,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.227797943108433e-12,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.00017761459524886594,
+          0.3053087778977124,
+          0.0024872518930056354,
+          0.3889934872782188,
+          6907.204289171986,
+          1.9802756096157883
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 4.1183139186785426e-15,
+        "decay_gap": 1.6659367851013536,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 16199.287421773388,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.7404673505333026e-14,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          130.7814967878859,
+          7044.681989786068,
+          5613.714895009984,
+          5393.584213270561,
+          0.03615351937436775,
+          66.31134249787019
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.00014384189831373906,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 151.19062248201726,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 3.265933845772352e-14,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          40.68606605820646,
+          0.003175323473588775,
+          0.0002936216679653998,
+          0.00016450884353450888,
+          1.2552145696848278,
+          0.44315988369867654
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 1.7671224603896077e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 8490.3076285138,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 5.438959822042073e-16,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.0006880687889246335,
+          1.2432473160886974,
+          8485.273335671347,
+          0.19142945870938913,
+          1.6052420455304341,
+          7.345279342361481
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 4.1495970321976264e-21,
+        "decay_gap": 0.0001429215492977987,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 16.754097249319216,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 4.082240392712793e-15,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          4.54392662272528,
+          0.760277706973423,
+          0.00847892554602088,
+          0.013682677082543254,
+          0.000455787812460221,
+          0.00010920410716303113
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 8.702335715267317e-15,
+        "decay_gap": 3.103326910515522e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 4235.990233700528,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.7847474289568796e-13,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.0013013510733709864,
+          730.3834300019901,
+          0.004675907839277825,
+          0.00022428713034975737,
+          1351.0462764478627,
+          0.00030217519226111703
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.1755839858872956e-15,
+        "decay_gap": 0.0003688462188085077,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 11097.042050071748,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 6.961868754839346e-14,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.014581800577481862,
+          0.026661841521285822,
+          0.060220221383188444,
+          7989.8384856720995,
+          0.011572449399922337,
+          277.80070977993586
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 8.498374721940739e-18,
+        "decay_gap": 0.000918314588488676,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 327.8267618573446,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 3.4809342861069267e-14,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.03593479664718459,
+          0.0002097792788003503,
+          0.7338937429188567,
+          0.001400092558215507,
+          104.30268434955914,
+          0.8855638915989333
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.007503091657120697,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 3942.314114449264,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 0.0,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          970.3246520376777,
+          0.00010583068299597127,
+          0.01530393831666918,
+          0.15329466909940956,
+          294.9678884872878,
+          411.45736775358745
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 0.00017298748030386777,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 3112.1809890262257,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.3278710503032405e-19,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          714.1715791499764,
+          251.48749036891317,
+          0.010938846496210122,
+          1056.5184796479705,
+          0.00034747434711806537,
+          0.000307007588052235
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 2.707476717498541e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 248.53120139510347,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.3278710503032405e-19,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.001074389276253682,
+          165.47052621792758,
+          0.2957634393166877,
+          0.60457567223615,
+          0.0004087236480650256,
+          0.02204453788484902
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "decay_gap": 1.2845697014069381e-05,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 4820.539852829095,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 1.0877920785493427e-15,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.0005445251718094776,
+          0.09521696580817525,
+          0.00018795950260303078,
+          209.6113023656081,
+          4.38846190807442,
+          1714.267200231961
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 2.491688186585241e-19,
+        "decay_gap": 0.00010048825329692555,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 456.0592735196516,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 6.639355251516202e-20,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.008348958043334907,
+          287.7905390133171,
+          24.3722926487963,
+          0.0003195377047651177,
+          0.00031074747343529325,
+          0.0001696383040743263
+        ]
+      },
+      {
+        "KMS_symmetry_residual": 1.3597399555105182e-16,
+        "decay_gap": 0.008681529737332576,
+        "fixed_algebra_dimension": 1,
+        "largest_decay": 17134.20937946333,
+        "positive_eigenvalue_count": 0,
+        "similarity_self_adjoint_residual": 2.2278022069017534e-12,
+        "weights_linking_SU3_SU2_U1_QLYR_XLdR": [
+          0.3384389856195289,
+          1.3919678579925236,
+          130.93501266793723,
+          0.7273356813389341,
+          21.13287500321814,
+          6093.126219407727
+        ]
+      }
+    ],
+    "samples": 64
+  },
+  "selected_KMS_background": {
+    "state": "rho_N proportional to exp(-N_boundary)",
+    "target_to_source_density_ratio": 0.1353352832366127,
+    "upward_to_downward_rate_ratio": 0.1353352832366127
+  },
+  "termwise_Dirichlet_data": {
+    "QLYR": {
+      "KMS_symmetry_residual": 8.498374721940739e-18,
+      "chain_degree": 2,
+      "stationarity_residual": 1.0693553686590446e-17,
+      "superoperator_HS_norm": 11.006992561548783
+    },
+    "SU2": {
+      "KMS_symmetry_residual": 0.0,
+      "chain_degree": 0,
+      "stationarity_residual": 0.0,
+      "superoperator_HS_norm": 9.236476600955584
+    },
+    "SU3": {
+      "KMS_symmetry_residual": 0.0,
+      "chain_degree": 0,
+      "stationarity_residual": 0.0,
+      "superoperator_HS_norm": 13.856406460551016
+    },
+    "U1": {
+      "KMS_symmetry_residual": 0.0,
+      "chain_degree": 0,
+      "stationarity_residual": 0.0,
+      "superoperator_HS_norm": 6.4791331724750565
+    },
+    "XLdR": {
+      "KMS_symmetry_residual": 0.0,
+      "chain_degree": 2,
+      "stationarity_residual": 0.0,
+      "superoperator_HS_norm": 9.704430208241563
+    },
+    "linking": {
+      "KMS_symmetry_residual": 0.0,
+      "chain_degree": 2,
+      "stationarity_residual": 0.0,
+      "superoperator_HS_norm": 19.376788763304383
+    }
+  },
+  "verdict": {
+    "dimensionless_exp_minus_2_up_down_ratio_preserved": true,
+    "next_gate": "version8_correlation_kernel_short_time_rate_selector_gate",
+    "one_reproducible_equal_weight_representative_exists": true,
+    "status": "chain_degree_KMS_ratio_closed_common_Dirichlet_rate_metric_no_go",
+    "unique_relative_rate_metric_derived": false
+  }
+}

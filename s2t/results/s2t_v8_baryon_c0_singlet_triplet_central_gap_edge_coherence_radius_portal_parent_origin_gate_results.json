@@ -1,0 +1,64 @@
+{
+  "common_algebraic_carrier": {
+    "Qhat": "diag(-3/4,0_6,(1/4)I3)",
+    "central_corner_dimensions": [
+      1,
+      3
+    ],
+    "coherence_chain_dimensions": [
+      1,
+      6,
+      3
+    ],
+    "general_extension": "diag(-3/4,q I6,(1/4)I3)",
+    "tracelessness_equation": "6q=0",
+    "unique_middle_weight": 0
+  },
+  "date": "2026-08-31",
+  "exact_moments": {
+    "T": "Tr(BB*)",
+    "Tr_Qhat_D2": "-5T/8",
+    "Tr_X2": "3T+3lambda^2/4",
+    "Tr_X3": "-15lambda T/8-3lambda^3/8",
+    "Tr_X4": "9T^2/4+15d/4+19lambda^2 T/8+21lambda^4/64",
+    "X": "D_B+lambda Qhat",
+    "d": "det(BB*)"
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_edge_coherence_radius_portal_parent_origin_gate",
+  "ledgers": {
+    "algebraic_shape_satisfied": 4,
+    "algebraic_shape_tested": 4,
+    "missing_parent_inputs": [
+      "typed corner intertwiner",
+      "nonzero cubic parent coefficient c3"
+    ],
+    "parent_origin_satisfied": 0,
+    "parent_origin_tested": 2
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_coherence_even_corner_family_triplet_intertwiner_gate",
+  "portal_shape": {
+    "Real_half_trace_would_cancel_cubic_shape": false,
+    "conditional_parent_term": "c3 Tr(X^3)",
+    "even_moments_generate_linear_portal": false,
+    "fixed_portal_to_self_cubic_ratio": 5,
+    "lambda_self_cubic": "-(3c3/8)lambda^3",
+    "portal": "-(15c3/8) lambda T",
+    "source_at_T_equals_3": "j_eff=45c3/8"
+  },
+  "typing_obstruction": {
+    "canonical_typed_identification_exists": false,
+    "central_family_corner": "irreducible standard SO(3) triplet",
+    "coherence_corner_commutant_dimension": 2,
+    "coherence_three_corner": "Lambda^2(C2+C1)=C1+C2 under U(2)_{eX} x U(1)_Y",
+    "dimension_match_is_sufficient": false,
+    "family_triplet_commutant_dimension": 1
+  },
+  "verdict": {
+    "coherence_corner_is_current_family_triplet": false,
+    "physical_gap_derived": false,
+    "portal_generated_by_inherited_even_spectral_parent": false,
+    "portal_parent_origin_derived": false,
+    "portal_shape_exists": true
+  }
+}

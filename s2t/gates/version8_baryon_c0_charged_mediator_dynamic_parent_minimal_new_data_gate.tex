@@ -1,0 +1,151 @@
+\chapter{Минимальный пакет новых данных dynamic parent charged mediator}
+\label{ch:v8-charged-mediator-minimal-new-data}
+
+\section{Один резонансный квант заменяет два масштаба}
+
+Предыдущий ledger перечислял отдельно mediator-gap $7\gamma$ и clock-energy
+$E_C$. Энергосохраняющий collision требует их совпадения, поэтому введём
+один положительный квант
+\begin{equation}
+ E_*=E_C=7\gamma>0.
+ \label{eq:v8-mediator-min-data-common-energy}
+\end{equation}
+Тогда прежний параметр автоматически равен
+\begin{equation}
+ \gamma=\frac{E_*}{7}.
+ \label{eq:v8-mediator-min-data-gamma}
+\end{equation}
+Это типизированное сокращение данных, а не численный selector величины
+$E_*$.
+
+\section{Coupling и tick выражаются через два непрерывных входа}
+
+Пусть $\chi>0$ есть безразмерная относительная сила interaction. Его
+размерная амплитуда равна
+\begin{equation}
+ g=\chi E_*.
+ \label{eq:v8-mediator-min-data-coupling}
+\end{equation}
+Clock tick и weak-limit rate после этого определяются формулами
+\begin{equation}
+ \tau_C=\frac{\hbar}{E_*},
+ \qquad
+ \Gamma=\chi^2\frac{E_*}{\hbar}.
+ \label{eq:v8-mediator-min-data-tick-rate}
+\end{equation}
+Они удовлетворяют двум точным связям
+\begin{equation}
+ E_*\tau_C=\hbar,
+ \qquad \Gamma\tau_C=\chi^2,
+ \label{eq:v8-mediator-min-data-relations}
+\end{equation}
+а collision-формула записывается без нового параметра:
+\begin{equation}
+ \Gamma=\frac{g^2\tau_C}{\hbar^2}.
+ \label{eq:v8-mediator-min-data-collision-rate}
+\end{equation}
+
+\section{Два непрерывных параметра необходимы}
+
+Рассмотрим карту
+\begin{equation}
+ F(E_*,\chi)=
+ \left(\frac{E_*}{7},E_*,\chi E_*,
+ \frac{\hbar}{E_*},\frac{\chi^2E_*}{\hbar}\right).
+ \label{eq:v8-mediator-min-data-map}
+\end{equation}
+Её якобиан имеет ранг два, поскольку minor по координатам $(E_C,g)$ равен
+\begin{equation}
+ \det\frac{\partial(E_C,g)}{\partial(E_*,\chi)}=E_*>0.
+ \label{eq:v8-mediator-min-data-jacobian-minor}
+\end{equation}
+Следовательно, один непрерывный параметр не может независимо задавать общий
+масштаб и относительную силу.
+
+Два точных scale-witness при $\hbar=1$ дают
+\begin{equation}
+ (E_*,\chi)=(1,1),(2,1)
+ \quad\Longrightarrow\quad \Gamma_2/\Gamma_1=2,
+ \label{eq:v8-mediator-min-data-scale-witness}
+\end{equation}
+а coupling-witnesses
+\begin{equation}
+ (E_*,\chi)=(1,1),(1,2)
+ \quad\Longrightarrow\quad \Gamma_2/\Gamma_1=4.
+ \label{eq:v8-mediator-min-data-coupling-witness}
+\end{equation}
+Обе свободы сохраняют тип carrier и законы сохранения.
+
+\section{Полный минимальный пакет}
+
+Кроме двух непрерывных координат остаются два независимых структурных
+выбора: само endpoint/carrier extension и класс транспортного закона.
+Итак,
+\begin{equation}
+ \mathcal D_{\min}=
+ \{\mathfrak e_{\rm endpoint},E_*,\chi,\mathfrak t_{\rm transport}\},
+ \qquad |\mathcal D_{\min}|=4.
+ \label{eq:v8-mediator-min-data-package}
+\end{equation}
+Вакуум не является пятым независимым входом: после задания положительного
+локального parent он есть его единственное нулевое состояние,
+\begin{equation}
+ \ker h_{45}=\mathbb C|0\rangle.
+ \label{eq:v8-mediator-min-data-vacuum-derived}
+\end{equation}
+Поэтому предыдущие пять apparent slots сокращаются на один:
+\begin{equation}
+ N_{\rm apparent}=5,
+ \qquad N_{\rm independent}=4.
+ \label{eq:v8-mediator-min-data-reduction}
+\end{equation}
+Точная dependency-классификация закрыта,
+\begin{equation}
+ N_{\rm dependency}=7/7,
+ \qquad N_{\rm minimal\ classification}=4/4,
+ \label{eq:v8-mediator-min-data-ledgers}
+\end{equation}
+но текущий parent не выбирает ни одного из четырёх слотов:
+\begin{equation}
+ N_{\rm inherited\ selection}=0/4.
+ \label{eq:v8-mediator-min-data-origin-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальность четырёхслотового пакета]
+После резонансной идентификации $E_*=E_C=7\gamma$ все размерные динамические
+величины параметризуются двумя и только двумя непрерывными координатами
+$(E_*,\chi)$. Вместе с endpoint-extension и transport primitive это даёт
+ровно четыре независимых новых parent-данных. Ни одно из них текущим
+действием не выбрано.
+\end{theorem}
+
+\begin{nogocriterion}[Зависимость не является выводом значения]
+Равенства $\gamma=E_*/7$, $g=\chi E_*$ и
+$\tau_C=\hbar/E_*$ устраняют избыточные координаты, но не фиксируют
+$E_*$ или $\chi$. Нельзя объявлять сокращение числа параметров физическим
+предсказанием их значений.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item общий резонансный квант: \textbf{$E_*=E_C=7\gamma$};
+\item независимых непрерывных параметров: \textbf{$2$};
+\item их координаты: \textbf{$(E_*,\chi)$};
+\item ранг dependency-Jacobian: \textbf{$2$};
+\item размерный coupling: \textbf{$g=\chi E_*$};
+\item tick: \textbf{$\tau_C=\hbar/E_*$};
+\item rate: \textbf{$\Gamma=\chi^2E_*/\hbar$};
+\item независимых structural slots: \textbf{$2$};
+\item полный минимальный пакет: \textbf{$4$ слота};
+\item dependency reduction: \textbf{$7/7$};
+\item inherited selection: \textbf{$0/4$};
+\item следующий гейт: \textbf{parent-origin общего энергетического масштаба}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_charged_mediator_dynamic_parent_minimal_new_data_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-mediator-min-data-attal} S.~Attal and Y.~Pautrat,
+\emph{From Repeated to Continuous Quantum Interactions},
+Ann. Henri Poincar\'e 7 (2006) 59; arXiv:math-ph/0311002.
+\end{thebibliography}

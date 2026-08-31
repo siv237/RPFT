@@ -1,0 +1,8 @@
+# Source map
+
+- `s2t/gates/version8_baryon_c0_singlet_triplet_central_gap_existing_scalar_source_carrier_classification_gate.tex`
+- `s2t/audits/s2t_v8_baryon_c0_singlet_triplet_central_gap_existing_scalar_source_carrier_classification_gate.py`
+- `s2t/results/s2t_v8_baryon_c0_singlet_triplet_central_gap_existing_scalar_source_carrier_classification_gate_results.json`
+- `s2t/gates/version7_edge_coherence_rank_one_condensate_gate.tex`
+- `s2t/gates/version4_higgs_yukawa_gate.tex`
+- `s2t/gates/version8_smooth_relative_background_order_parameter_gate.tex`

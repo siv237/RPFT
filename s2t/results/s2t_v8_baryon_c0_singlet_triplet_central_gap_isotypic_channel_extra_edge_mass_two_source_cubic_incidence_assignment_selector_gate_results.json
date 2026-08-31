@@ -1,0 +1,160 @@
+{
+  "binary_obstruction": {
+    "determinant_sign_basis_orientation_invariant": false,
+    "equal_gap_collapses_portal_rank_to_one": true,
+    "equal_gap_conditions": {
+      "B->d,M->Y": "c_B=0",
+      "B->u,M->Y": "c_B=0"
+    },
+    "equal_gap_is_internal_selector": false,
+    "gauge_inequivalence_selects_one": false,
+    "survivor_gap_rays_unscaled": {
+      "B->d,M->Y": [
+        -6,
+        0
+      ],
+      "B->u,M->Y": [
+        0,
+        -6
+      ]
+    },
+    "survivor_source_rays": {
+      "B->d,M->Y": [
+        -3,
+        -3
+      ],
+      "B->u,M->Y": [
+        3,
+        -3
+      ]
+    },
+    "u_d_gauge_equivalent": false
+  },
+  "candidate_records": {
+    "B->Y,M->d": {
+      "abs_det_Q": 3,
+      "condition_number_squared": "101*sqrt(5017)/2592 + 7609/2592",
+      "metric_area": "3/4",
+      "single_coefficient_gap_ray_unscaled": [
+        -9,
+        -5
+      ],
+      "single_coefficient_source_ray": [
+        -2,
+        -7
+      ]
+    },
+    "B->Y,M->u": {
+      "abs_det_Q": 3,
+      "condition_number_squared": "101*sqrt(5017)/2592 + 7609/2592",
+      "metric_area": "3/4",
+      "single_coefficient_gap_ray_unscaled": [
+        -5,
+        -9
+      ],
+      "single_coefficient_source_ray": [
+        2,
+        -7
+      ]
+    },
+    "B->d,M->Y": {
+      "abs_det_Q": 3,
+      "condition_number_squared": "9*sqrt(17)/32 + 49/32",
+      "metric_area": "3/4",
+      "single_coefficient_gap_ray_unscaled": [
+        -6,
+        0
+      ],
+      "single_coefficient_source_ray": [
+        -3,
+        -3
+      ]
+    },
+    "B->d,M->u": {
+      "abs_det_Q": 2,
+      "condition_number_squared": "65*sqrt(1921)/1152 + 3073/1152",
+      "metric_area": "1/2",
+      "single_coefficient_gap_ray_unscaled": [
+        4,
+        6
+      ],
+      "single_coefficient_source_ray": [
+        -1,
+        5
+      ]
+    },
+    "B->u,M->Y": {
+      "abs_det_Q": 3,
+      "condition_number_squared": "9*sqrt(17)/32 + 49/32",
+      "metric_area": "3/4",
+      "single_coefficient_gap_ray_unscaled": [
+        0,
+        -6
+      ],
+      "single_coefficient_source_ray": [
+        3,
+        -3
+      ]
+    },
+    "B->u,M->d": {
+      "abs_det_Q": 2,
+      "condition_number_squared": "65*sqrt(1921)/1152 + 3073/1152",
+      "metric_area": "1/2",
+      "single_coefficient_gap_ray_unscaled": [
+        6,
+        4
+      ],
+      "single_coefficient_source_ray": [
+        1,
+        5
+      ]
+    }
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_assignment_selector_gate",
+  "ledgers": {
+    "exact_classification_satisfied": 8,
+    "exact_classification_tested": 8,
+    "intrinsic_selector_satisfied": 0,
+    "intrinsic_selector_tested": 8
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_parent_origin_gate",
+  "selector_cascade": {
+    "dimension_match_survivors": [
+      "B->d,M->Y",
+      "B->u,M->Y"
+    ],
+    "final_survivors": [
+      "B->d,M->Y",
+      "B->u,M->Y"
+    ],
+    "initial_rank_two_candidates": 6,
+    "maximum_abs_determinant": 3,
+    "maximum_determinant_survivors": [
+      "B->Y,M->d",
+      "B->Y,M->u",
+      "B->d,M->Y",
+      "B->u,M->Y"
+    ],
+    "maximum_metric_area": "3/4",
+    "maximum_metric_area_survivors": [
+      "B->Y,M->d",
+      "B->Y,M->u",
+      "B->d,M->Y",
+      "B->u,M->Y"
+    ],
+    "minimum_condition_number_squared": "9*sqrt(17)/32 + 49/32",
+    "minimum_condition_survivors": [
+      "B->d,M->Y",
+      "B->u,M->Y"
+    ]
+  },
+  "verdict": {
+    "binary_u_d_choice_resolved": false,
+    "condition_and_dimension_reduce_to_binary_pair": true,
+    "determinant_unique": false,
+    "incidence_assignment_derived": false,
+    "metric_area_unique": false
+  }
+}

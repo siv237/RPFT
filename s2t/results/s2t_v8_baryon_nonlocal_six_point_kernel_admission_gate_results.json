@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-30",
+  "field": "Q(z,t)",
+  "floating_point_values": 0,
+  "form_factors": {
+    "common_static_value": "1",
+    "convex_family": "(3*t*z + 2*z + 8)/(2*(z + 1)*(z + 4))",
+    "difference": "3*z/(2*(z + 1)*(z + 4))",
+    "one_pole": "1/(z + 1)",
+    "one_pole_at_z_1": "1/2",
+    "slope_at_zero": {
+      "one_pole": "-1",
+      "two_pole": "-5/8"
+    },
+    "two_pole": "(5*z + 8)/(2*z**2 + 10*z + 8)",
+    "two_pole_at_z_1": "13/20"
+  },
+  "gate": "version8_baryon_nonlocal_six_point_kernel_admission_gate",
+  "inherited_operator_properties": {
+    "connected_partial_traces_zero": true,
+    "gauge_invariant": true,
+    "permutation_invariant": true,
+    "reason": "real scalar form factor multiplies the previously certified W3",
+    "self_adjoint": true
+  },
+  "input_certificate": {
+    "local_derivative_branch": "STOP",
+    "path": "s2t/results/s2t_v8_baryon_derivative_cubic_vertex_to_six_point_kernel_or_stop_gate_results.json",
+    "sha256": "1972478d8f202b1641af697dc04fb0405c11163d0c7f306c16814140d9da185c",
+    "static_W3_nonzero": true
+  },
+  "locality_test": {
+    "finite_order_local_polynomial_symbol": false,
+    "interpretation": "inverse kinetic form factors are nonlocal effective kernels",
+    "one_pole_denominator_degree": 1,
+    "two_pole_denominator_degree": 2
+  },
+  "next_gate": "version8_baryon_nonlocal_kernel_spectral_measure_parent_origin_gate",
+  "positive_spectral_data": {
+    "all_mass_squares_positive": true,
+    "all_residues_positive": true,
+    "one_pole_residue_mass_squared": [
+      [
+        "1",
+        "1"
+      ]
+    ],
+    "two_pole_residue_mass_squared": [
+      [
+        "1/2",
+        "1"
+      ],
+      [
+        "2",
+        "4"
+      ]
+    ]
+  },
+  "verdict": {
+    "kernel_shape_unique_from_current_constraints": false,
+    "nonlocal_six_point_kernel_class_admitted": true,
+    "physical_baryon_bound_state_derived": false,
+    "spectral_masses_and_residues_derived_from_current_parent": false,
+    "static_nonzero_W3_projection_admitted": true
+  }
+}

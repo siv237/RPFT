@@ -1,0 +1,31 @@
+{
+  "current_process_no_go": {
+    "central_stationarity_condition": "a=b=1/21",
+    "positive_rate_tuning_can_cancel_transfer": false,
+    "positive_transfer_traces_link_QLYR_XLdR": [
+      13,
+      6,
+      6
+    ],
+    "unique_stationary_state": "I21/21"
+  },
+  "date": "2026-08-29",
+  "directed_extension": {
+    "beta_Delta_derived": false,
+    "conditional_rate_ratio": "exp(-beta_Delta)",
+    "opposite_bohr_frequencies": true,
+    "relative_rate_uniquely_selected": false,
+    "selfadjoint_jump_is_one_nonzero_bohr_mode": false,
+    "transfer_jump_count": 13
+  },
+  "gate": "version8_kms_nontracial_relative_rate_lcf_migration_gate",
+  "proofdsl_registry": {
+    "certificate_sha256": "5319ede8fdf15359c76fc83b71bebeb57c22fc1321a76ac08b16a77ff0a9a696",
+    "obligation_count": 6,
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "next_gate": "version8_modular_bohr_parent_lcf_migration_gate",
+    "status": "lcf-checked-nontracial-kms-selector-no-go"
+  }
+}

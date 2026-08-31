@@ -1,0 +1,92 @@
+{
+  "G_eta_slice": {
+    "base_display": "0.256960942726249",
+    "base_value": "104*(x + 1)*(25*x + 13)/(425*x**3 + 6038*x**2 + 13689*x + 5564)",
+    "derivative": "-1768*x*(x + 1)*(x + 5)*(25*x + 13)**2/(425*eta*x**3 + 2346*eta*x**2 + 1105*eta*x + 3692*x**2 + 12584*x + 5564)**2",
+    "eta_star": "52*(105133*x**2 + 28806*x - 13799)/(16609*x*(x + 5)*(25*x + 13))",
+    "eta_star_display": "-2.19282832819175",
+    "eta_star_negative_at_exp_minus_2_exact": true,
+    "exp2_partial_sum_n0_to_n4": "7",
+    "exp_minus_2_less_than_one_seventh_exact": true,
+    "external_relative_residual_display": "0.0820944829942578",
+    "sign_at_one_seventh": "-52768/7",
+    "sign_negative_at_exp_minus_2_exact": true,
+    "sign_polynomial": "105133*x**2 + 28806*x - 13799",
+    "sign_polynomial_derivative": "2*(105133*x + 14403)",
+    "strictly_decreasing_for_x_eta_positive": true,
+    "supremum_display": "0.263742325124295",
+    "supremum_eta_positive": "2*(x + 1)*(25*x + 13)/(71*x**2 + 242*x + 107)",
+    "target_above_entire_positive_slice_exact": true,
+    "target_external": "977/3490",
+    "target_minus_supremum": "-(105133*x**2 + 28806*x - 13799)/(3490*(71*x**2 + 242*x + 107))",
+    "value": "104*(x + 1)*(25*x + 13)/(425*eta*x**3 + 2346*eta*x**2 + 1105*eta*x + 3692*x**2 + 12584*x + 5564)"
+  },
+  "canonical_weights": {
+    "QLYR": {
+      "absolute_display_error": "2.665e-15",
+      "display_at_exp_minus_2": "5.44039853898894",
+      "exact": "(10*x + 11)/(2*(x + 1))",
+      "reference_display": "5.44039853898894",
+      "trace_identity_exact": true
+    },
+    "SU2": {
+      "absolute_display_error": "8.882e-16",
+      "display_at_exp_minus_2": "4.81111832081985",
+      "exact": "2*(10*x + 11)/(x + 5)",
+      "reference_display": "4.81111832081985",
+      "trace_identity_exact": true
+    },
+    "SU3": {
+      "absolute_display_error": "1.066e-14",
+      "display_at_exp_minus_2": "10.8807970779779",
+      "exact": "(10*x + 11)/(x + 1)",
+      "reference_display": "10.8807970779779",
+      "trace_identity_exact": true
+    },
+    "U1": {
+      "absolute_display_error": "3.553e-15",
+      "display_at_exp_minus_2": "4.52410354761474",
+      "exact": "6*(10*x + 11)/(25*x + 13)",
+      "reference_display": "4.52410354761474",
+      "trace_identity_exact": true
+    },
+    "XLdR": {
+      "absolute_display_error": "2.665e-15",
+      "display_at_exp_minus_2": "5.44039853898894",
+      "exact": "(10*x + 11)/(2*(x + 1))",
+      "reference_display": "5.44039853898894",
+      "trace_identity_exact": true
+    },
+    "linking": {
+      "absolute_display_error": "3.220e-15",
+      "display_at_exp_minus_2": "0.836984390613683",
+      "exact": "(10*x + 11)/(13*(x + 1))",
+      "reference_display": "0.83698439061368",
+      "trace_identity_exact": true
+    }
+  },
+  "date": "2026-08-30",
+  "field": "Q(x), x=exp(-2)",
+  "gate": "version8_baryon_canonical_weights_geta_no_go_gate",
+  "normalization": {
+    "11a_plus_10b_exact": true,
+    "a": "1/(11+10*x)",
+    "b": "x/(11+10*x)",
+    "b_over_a_exact": true,
+    "maximum_reference_display_error": "1.066e-14"
+  },
+  "status_boundary": {
+    "G_eta_no_go_exact_inside_baryon_mapping": true,
+    "baryon_discriminator_unique_from_tome8_alone": false,
+    "directed_transfer_convention_resolved": false,
+    "physical_baryon_mass_theorem": false,
+    "target_is_internal_prediction": false,
+    "weights_canonical_on_stabilizer_branch": true
+  },
+  "verdict": {
+    "accept_conditional_G_eta_no_go": true,
+    "accept_exact_weight_provenance": true,
+    "next_gate": "version8_baryon_directed_transfer_convention_selector_gate",
+    "reject_canonical_8_21_percent_as_unconditional": true
+  }
+}

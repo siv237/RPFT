@@ -1,0 +1,43 @@
+{
+  "c0_boundary": {
+    "conditional_c0": 4,
+    "dynamically_embedded_into_old_42_carrier": false,
+    "internal_M2_linking_block_exists": true,
+    "physical_c0_derived": false
+  },
+  "commutant": {
+    "full_fixed_algebra": "C P_21 direct_sum C P_n",
+    "full_fixed_algebra_dimension": 2,
+    "new_pauli_commutant": "C I_2",
+    "old_frame_common_kernel_dimension": 0,
+    "old_frame_commutant": "C I_21",
+    "primitive_on_H23": false
+  },
+  "date": "2026-08-30",
+  "dynamics": {
+    "Q42_positive_definite": true,
+    "Q42_rank": 21,
+    "central_sector_populations_conserved": true,
+    "new_traceless_eigenvalue": -4,
+    "new_traceless_multiplicity": 3,
+    "old_new_coherences_decay": true,
+    "old_new_population_transfer": false
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_extended_45_frame_fixed_algebra_and_dynamics_gate",
+  "generator": {
+    "dirichlet_identity": "-<A,L(A)>=1/2 sum ||[R,A]||_HS^2",
+    "gksl": true,
+    "jump_count": 45,
+    "self_adjoint_jumps": true,
+    "trace_preserving": true,
+    "unital": true
+  },
+  "next_gate": "version8_baryon_c0_old_new_gauge_covariant_connector_classification_gate",
+  "verdict": {
+    "disconnected_center_no_go": true,
+    "extended_45_frame_dynamics_constructed": true,
+    "old_new_connector_required": true,
+    "scalar_fixed_algebra_obtained": false
+  }
+}

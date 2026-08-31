@@ -1,0 +1,365 @@
+{
+  "candidate_covariance_rules_at_eta_one": {
+    "classical_gaussian": {
+      "formula": "C=(a H_eta)^-1",
+      "overall_action_scale_derived": false,
+      "scale_scan": [
+        {
+          "central_decay_rate": 2.995403418875628,
+          "cross_covariance_trace": 15.40493186850323,
+          "overall_action_scale": 0.1
+        },
+        {
+          "central_decay_rate": 0.2995403418875629,
+          "cross_covariance_trace": 1.5404931868503235,
+          "overall_action_scale": 1.0
+        },
+        {
+          "central_decay_rate": 0.029954034188756286,
+          "cross_covariance_trace": 0.15404931868503233,
+          "overall_action_scale": 10.0
+        }
+      ]
+    },
+    "harmonic_ground_state": {
+      "formula": "C=(hbar/(2 sqrt(Z))) H_eta^-1/2 for scalar kinetic Z",
+      "kinetic_scale_and_hbar_ratio_derived": false,
+      "scale_scan": [
+        {
+          "central_decay_rate": 0.04172326092168617,
+          "cross_covariance_trace": 0.214576770454386,
+          "hbar_over_sqrt_kinetic_scale": 0.1
+        },
+        {
+          "central_decay_rate": 0.41723260921686184,
+          "cross_covariance_trace": 2.145767704543861,
+          "hbar_over_sqrt_kinetic_scale": 1.0
+        },
+        {
+          "central_decay_rate": 4.172326092168618,
+          "cross_covariance_trace": 21.457677045438604,
+          "hbar_over_sqrt_kinetic_scale": 10.0
+        }
+      ]
+    },
+    "heat_kernel": {
+      "correlation_time_derived": false,
+      "formula": "C_tau=exp(-tau H_eta)",
+      "time_scan": [
+        {
+          "central_decay_rate": 2.1560481213806018,
+          "correlation_time": 0.01,
+          "cross_covariance_trace": 11.088247481385952
+        },
+        {
+          "central_decay_rate": 1.0631591410994394,
+          "correlation_time": 0.1,
+          "cross_covariance_trace": 5.467675582797117
+        },
+        {
+          "central_decay_rate": 0.0012883376392225604,
+          "correlation_time": 1.0,
+          "cross_covariance_trace": 0.006625736430287453
+        },
+        {
+          "central_decay_rate": 8.047221921608998e-31,
+          "correlation_time": 10.0,
+          "cross_covariance_trace": 4.1385712739703416e-30
+        }
+      ]
+    }
+  },
+  "date": "2026-08-28",
+  "gate": "version8_cross_arrow_covariance_origin_gate",
+  "invariant_information": {
+    "anisotropy_strength_depends_on_eta": true,
+    "axis_angle_depends_on_eta": false,
+    "cross_subspace_selected": true,
+    "overall_covariance_scale_depends_on_measure": true,
+    "relative_Q_X_principal_axis_selected_when_eta_positive": true,
+    "six_repeated_Q_X_pairs_selected": true
+  },
+  "polar_linking_cross_structure": {
+    "common_axis_for_all_positive_eta": true,
+    "coupling_to_other_15_real_directions_norm": 0.0,
+    "covariance_soft_axis_angle_degrees": 55.45091552083214,
+    "covariance_soft_axis_angle_radians": 0.9678010490837472,
+    "linking_pair_eigenvalues": [
+      0.27244808190514996,
+      1.234266100254122
+    ],
+    "linking_pair_matrix": [
+      [
+        0.924929966333,
+        -0.449261865266
+      ],
+      [
+        -0.449261865266,
+        0.581784215826
+      ]
+    ],
+    "number_of_identical_real_pairs": 6,
+    "ordered_pair": [
+      "QLYR",
+      "XLdR"
+    ],
+    "six_pair_repetition_residual": 1.5700924586837752e-16,
+    "stiff_principal_axis_angle_radians": -0.6029952777111494
+  },
+  "relative_metric_scan": [
+    {
+      "classical_normalized_pair_covariance": [
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "classical_pair_anisotropy_ratio": 1.0,
+      "pair_hessian": [
+        [
+          6.4,
+          0.0
+        ],
+        [
+          0.0,
+          6.4
+        ]
+      ],
+      "quantum_normalized_pair_covariance": [
+        [
+          0.5,
+          0.0
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "quantum_pair_anisotropy_ratio": 1.0,
+      "relative_metric_weight_eta": 0.0
+    },
+    {
+      "classical_normalized_pair_covariance": [
+        [
+          0.499999973192,
+          7.01971499217e-08
+        ],
+        [
+          7.01971499217e-08,
+          0.500000026808
+        ]
+      ],
+      "classical_pair_anisotropy_ratio": 1.000000300568105,
+      "pair_hessian": [
+        [
+          6.40000184986,
+          -8.98523730532e-07
+        ],
+        [
+          -8.98523730532e-07,
+          6.40000116357
+        ]
+      ],
+      "quantum_normalized_pair_covariance": [
+        [
+          0.499999986596,
+          3.50985749722e-08
+        ],
+        [
+          3.50985749523e-08,
+          0.500000013404
+        ]
+      ],
+      "quantum_pair_anisotropy_ratio": 1.0000001502840412,
+      "relative_metric_weight_eta": 1e-06
+    },
+    {
+      "classical_normalized_pair_covariance": [
+        [
+          0.493670465771,
+          0.016573822347
+        ],
+        [
+          0.016573822347,
+          0.506329534229
+        ]
+      ],
+      "classical_pair_anisotropy_ratio": 1.07357596773938,
+      "pair_hessian": [
+        [
+          6.86246498317,
+          -0.224630932633
+        ],
+        [
+          -0.224630932633,
+          6.69089210791
+        ]
+      ],
+      "quantum_normalized_pair_covariance": [
+        [
+          0.496834236133,
+          0.0082895211601
+        ],
+        [
+          0.0082895211601,
+          0.503165763867
+        ]
+      ],
+      "quantum_pair_anisotropy_ratio": 1.0361351107550498,
+      "relative_metric_weight_eta": 0.25
+    },
+    {
+      "classical_normalized_pair_covariance": [
+        [
+          0.478300356975,
+          0.056820299168
+        ],
+        [
+          0.056820299168,
+          0.521699643025
+        ]
+      ],
+      "classical_pair_anisotropy_ratio": 1.276985572040943,
+      "pair_hessian": [
+        [
+          8.24985993267,
+          -0.898523730532
+        ],
+        [
+          -0.898523730532,
+          7.56356843165
+        ]
+      ],
+      "quantum_normalized_pair_covariance": [
+        [
+          0.48910974068,
+          0.028516035579
+        ],
+        [
+          0.028516035579,
+          0.51089025932
+        ]
+      ],
+      "quantum_pair_anisotropy_ratio": 1.1300378631005876,
+      "relative_metric_weight_eta": 1.0
+    },
+    {
+      "classical_normalized_pair_covariance": [
+        [
+          0.444773524311,
+          0.144609976626
+        ],
+        [
+          0.144609976626,
+          0.555226475689
+        ]
+      ],
+      "classical_pair_anisotropy_ratio": 1.8968434319359784,
+      "pair_hessian": [
+        [
+          13.7994397307,
+          -3.59409492213
+        ],
+        [
+          -3.59409492213,
+          11.0542737266
+        ]
+      ],
+      "quantum_normalized_pair_covariance": [
+        [
+          0.471691346745,
+          0.0741259266394
+        ],
+        [
+          0.0741259266394,
+          0.528308653255
+        ]
+      ],
+      "quantum_pair_anisotropy_ratio": 1.3772593916673714,
+      "relative_metric_weight_eta": 4.0
+    },
+    {
+      "classical_normalized_pair_covariance": [
+        [
+          0.386609432866,
+          0.296912070856
+        ],
+        [
+          0.296912070856,
+          0.613390567134
+        ]
+      ],
+      "classical_pair_anisotropy_ratio": 4.489296974973807,
+      "pair_hessian": [
+        [
+          1856.25993267,
+          -898.523730532
+        ],
+        [
+          -898.523730532,
+          1169.96843165
+        ]
+      ],
+      "quantum_normalized_pair_covariance": [
+        [
+          0.436008883816,
+          0.167560100479
+        ],
+        [
+          0.167560100479,
+          0.563991116184
+        ]
+      ],
+      "quantum_pair_anisotropy_ratio": 2.118796114536226,
+      "relative_metric_weight_eta": 1000.0
+    },
+    {
+      "classical_normalized_pair_covariance": [
+        [
+          0.386128272697,
+          0.298171983967
+        ],
+        [
+          0.298171983967,
+          0.613871727303
+        ]
+      ],
+      "classical_pair_anisotropy_ratio": 4.530238549891707,
+      "pair_hessian": [
+        [
+          1849866.33267,
+          -898523.730532
+        ],
+        [
+          -898523.730532,
+          1163574.83165
+        ]
+      ],
+      "quantum_normalized_pair_covariance": [
+        [
+          0.43565640739,
+          0.168483056492
+        ],
+        [
+          0.168483056492,
+          0.56434359261
+        ]
+      ],
+      "quantum_pair_anisotropy_ratio": 2.1284357048996574,
+      "relative_metric_weight_eta": 1000000.0
+    }
+  ],
+  "verdict": {
+    "internal_parent_selects_cross_covariance_axis": true,
+    "next_gate": "version8_minimal_covariant_stinespring_carrier_gate",
+    "reason": "the polar linking block fixes a repeated QLYR-XLdR axis, but eta fixes anisotropy while action, kinetic or heat normalization fixes magnitude",
+    "status": "covariance_axis_positive_shape_and_rate_no_go",
+    "unique_kraus_rate_derived": false,
+    "unique_nonzero_covariance_scale_derived": false,
+    "unique_normalized_covariance_shape_derived": false
+  }
+}

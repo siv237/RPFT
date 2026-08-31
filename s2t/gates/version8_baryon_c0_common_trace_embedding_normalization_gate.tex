@@ -1,0 +1,113 @@
+\chapter{Общая следовая нормировка cross-carrier вложения}
+\label{ch:v8-baryon-c0-common-trace-embedding-normalization-gate}
+
+Предыдущий гейт свёл свободу карты $c_0$ к положительному множителю
+$\kappa$. Проверим, фиксирует ли его требование общего следа. До построения
+межсекторной стрелки минимальная общая алгебра является прямой суммой
+\begin{equation}
+ \mathcal A_{\rm sep}=\mathcal A_{\rm src}\oplus\mathcal A_{\rm aux}.
+ \label{eq:v8-baryon-c0-separated-common-algebra}
+\end{equation}
+
+\section{Симплекс общих следов}
+
+Даже после нормировки единицы положительный след на двух центральных
+суммандах имеет семейство
+\begin{equation}
+ \tau_{p,q}(X\oplus Y)
+ =p\,\tau_{\rm src}(X)+q\,\tau_{\rm aux}(Y),
+ \qquad p,q>0,qquad p+q=1.
+ \label{eq:v8-baryon-c0-direct-sum-trace-simplex}
+\end{equation}
+Пусть внутренние генераторы прямых $u,e$ нормированы в собственных следах:
+\begin{equation}
+ \tau_{\rm src}(u^*u)=1,
+ \qquad
+ \tau_{\rm aux}(e^*e)=1.
+ \label{eq:v8-baryon-c0-summand-unit-norms}
+\end{equation}
+Тогда общая следовая метрика даёт
+\begin{equation}
+ G_{\rm src}(u,u)=p,
+ \qquad
+ G_{\rm aux}(e,e)=q.
+ \label{eq:v8-baryon-c0-weighted-line-metrics}
+\end{equation}
+
+Для $\mathcal M_\kappa(u)=\kappa e$ условие pullback-изометрии равно
+\begin{equation}
+ \mathcal M_\kappa^*G_{\rm aux}\mathcal M_\kappa=G_{\rm src}
+ \quad\Longleftrightarrow\quad
+ q\kappa^2=p,
+ \label{eq:v8-baryon-c0-trace-isometry-equation}
+\end{equation}
+то есть
+\begin{equation}
+ \kappa=\sqrt{\frac pq}.
+ \label{eq:v8-baryon-c0-trace-weight-selector}
+\end{equation}
+След выбирает $\kappa$ только после выбора центрального отношения $p/q$.
+
+\section{Два точных общих следа}
+
+Два нормированных положительных следа дают разные изометрические карты:
+\begin{equation}
+ (p,q)=\left(\frac12,\frac12\right)\Longrightarrow\kappa=1,
+ \qquad
+ (p,q)=\left(\frac45,\frac15\right)\Longrightarrow\kappa=2.
+ \label{eq:v8-baryon-c0-two-trace-witnesses}
+\end{equation}
+Оба сохраняют калибровочную инвариантность, положительность и нормировку
+$\tau(1)=1$. Поэтому слово ``общий'' не устраняет центральную свободу.
+
+Она видна непосредственно на центральных проекторах
+\begin{equation}
+ P_{\rm src}=1\oplus0,
+ \qquad P_{\rm aux}=0\oplus1,
+ \qquad
+ \tau_{p,q}(P_{\rm src},P_{\rm aux})=(p,q).
+ \label{eq:v8-baryon-c0-central-projector-weights}
+\end{equation}
+
+\section{Как свобода может исчезнуть}
+
+Центральные веса перестают быть независимыми только после замены прямой
+суммы настоящей linking-алгеброй с ненулевым бимодулем:
+\begin{equation}
+ \mathcal L=
+ \begin{pmatrix}
+ \mathcal A_{\rm src}&\mathcal E^*\\
+ \mathcal E&\mathcal A_{\rm aux}
+ \end{pmatrix},
+ \qquad \mathcal E\ne0.
+ \label{eq:v8-baryon-c0-required-linking-algebra}
+\end{equation}
+В простом полном матричном блоке единый нормированный trace действительно
+связывает веса углов их размерностями. Но существующий барионный auxiliary
+carrier ещё не включён в такой блок вместе с источником $r$.
+
+\begin{theorem}[Direct-sum common-trace no-go]
+На разделённой алгебре общий нормированный положительный след образует
+одномерный симплекс центральных весов. Pullback-изометрия фиксирует
+$\kappa=\sqrt{p/q}$, но отношение $p/q$ остаётся свободным. Поэтому общий
+след без linking-бимодуля не выбирает $\kappa$ и $c_0$.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет скрытого равенства центральных весов]
+Назначение $p=q$ является дополнительным выбором, если не предъявлен
+оператор, смешивающий два угла в одном простом следовом блоке. Равенство
+размерностей прямых само по себе не связывает центральные состояния
+прямой суммы.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item общий положительный нормированный trace: \textbf{существует};
+\item размерность симплекса весов: \textbf{$1$};
+\item условная изометрическая норма: \textbf{$\kappa=\sqrt{p/q}$};
+\item $p/q$ выведено: \textbf{нет};
+\item $\kappa$ и $c_0$ выбраны: \textbf{нет};
+\item следующий гейт: \textbf{допуск off-diagonal linking bridge}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_common_trace_embedding_normalization_gate_results.json}.

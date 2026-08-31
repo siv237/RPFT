@@ -1,0 +1,43 @@
+{
+  "comparison": {
+    "exists_any_scalar_c_with_H_equal_cK": false,
+    "exists_nonzero_scalar_c_with_H_equal_cK": false,
+    "rank_pair": [
+      30,
+      42
+    ],
+    "reason": "the gauge restriction forces c=0 while the transfer Hessian has rank 30"
+  },
+  "constant_field_parent_hessian": {
+    "full_rank": 30,
+    "gauge_block": "0_12",
+    "gauge_zero_modes": 12,
+    "origin": "F_B=dB+B wedge B; for dB=0 the action starts at degree four in B",
+    "transfer_block_rank": 30
+  },
+  "date": "2026-08-30",
+  "gate": "version8_field_noise_metric_to_parent_hessian_comparison_gate",
+  "next_gate": "version8_spacetime_kinetic_factorization_and_gauge_fixing_gate",
+  "registry": {
+    "certificate_sha256": "f41f1607dc83813238b7732264442f6c6bb9de0db53d459d740693d4ad08484d",
+    "gate_count": 32,
+    "obligation_count": 197
+  },
+  "spacetime_boundary": {
+    "nonzero_momentum_gauge_hessian": "K_gauge tensor (p^2 g^{mu nu}-p^mu p^nu)",
+    "reduces_canonically_to_internal_K": false,
+    "requires_gauge_fixing_for_inverse": true,
+    "requires_spacetime_index": true
+  },
+  "trace_metric": {
+    "gauge_block_rank": 12,
+    "gauge_block_trace": "367/3",
+    "interpretation": "finite internal coefficient metric",
+    "rank": 42
+  },
+  "verdict": {
+    "failure_type": "rank_and_type_mismatch",
+    "kinematic_trace_metric_equals_constant_parent_hessian": false,
+    "physical_mobility_derived": false
+  }
+}

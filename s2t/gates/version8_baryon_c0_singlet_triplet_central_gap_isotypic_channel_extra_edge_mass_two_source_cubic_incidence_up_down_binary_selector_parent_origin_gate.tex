@@ -1,0 +1,178 @@
+\chapter{Parent-origin бинарного \texorpdfstring{$u/d$}{u/d}-селектора incidence}
+\label{ch:v8-extra-mass-up-down-binary-selector-origin}
+
+\section{Точный бинарный остаток}
+
+Предыдущий гейт оставил два назначения
+\begin{equation}
+ \mathcal M_{ud}=\{B\mapsto u,\ M\mapsto Y;\quad
+                    B\mapsto d,\ M\mapsto Y\}.
+ \label{eq:v8-up-down-selector-binary-menu}
+\end{equation}
+Они имеют одинаковые размерности и одинаковые не абелевы индексы, но
+разные гиперзаряды:
+\begin{equation}
+ d_u=d_d=3,\qquad T_2(u)=T_2(d)=0,\qquad
+ T_3(u)=T_3(d)=\frac12,\qquad
+ y_u=\frac53,\quad y_d=\frac23.
+ \label{eq:v8-up-down-selector-representation-data}
+\end{equation}
+Следовательно, размерность, цвет и слабый тип бинарную свободу не снимают.
+
+\section{Квадрат гиперзаряда как условный различитель}
+
+Комплексные квадратичные $U(1)$-индексы равны
+\begin{equation}
+ I_1(u)=3y_u^2=\frac{25}{3},\qquad
+ I_1(d)=3y_d^2=\frac{4}{3},\qquad
+ I_1(u)-I_1(d)=7.
+ \label{eq:v8-up-down-selector-u1-index-gap}
+\end{equation}
+Поэтому условный дискретный функционал
+\begin{equation}
+ S_\alpha(e)=\alpha I_1(e),\qquad e\in\{u,d\},
+ \label{eq:v8-up-down-selector-conditional-score}
+\end{equation}
+даёт
+\begin{equation}
+ \arg\min S_\alpha=
+ \begin{cases}
+ \{d\},&\alpha>0,\\
+ \{u,d\},&\alpha=0,\\
+ \{u\},&\alpha<0.
+ \end{cases}
+ \label{eq:v8-up-down-selector-score-minimizers}
+\end{equation}
+Таким образом, положительный $Y^2$-вес условно предпочитает $d$-ветвь.
+Но это ещё не parent-origin: необходимо вывести сам typed-вес, его знак и
+правило вариации по диаграммам.
+
+\section{Real-след удаляет нечётный кандидат}
+
+На частице и Real-сопряжении введём
+\begin{equation}
+ Y_{\mathbb R}=\operatorname{diag}
+ \left(\frac53I_3,-\frac53I_3,
+       \frac23I_3,-\frac23I_3\right),
+ \quad
+ A_{ud}=\operatorname{diag}(I_3,I_3,-I_3,-I_3).
+ \label{eq:v8-up-down-selector-real-hypercharge}
+\end{equation}
+Все нечётные Real-моменты, которые могли бы нести ориентированный знак,
+сокращаются попарно:
+\begin{equation}
+ \Tr(A_{ud}Y_{\mathbb R})=0,
+ \qquad
+ \Tr(A_{ud}Y_{\mathbb R}^{3})=0.
+ \label{eq:v8-up-down-selector-odd-real-cancellation}
+\end{equation}
+Это тот же механизм, который делает каждую добавленную вектороподобную пару
+аномально нейтральной. Чётный момент различает типы:
+\begin{equation}
+ \Tr(A_{ud}Y_{\mathbb R}^{2})
+ =6\left(\frac{25}{9}-\frac49\right)=14.
+ \label{eq:v8-up-down-selector-even-real-discriminator}
+\end{equation}
+Однако обычное спектральное действие является функционалом уже выбранной
+конечной геометрии; оно не превращает две диаграммы Краевского в две точки
+одного полевого многообразия \cite{v8-up-down-selector-krajewski,
+v8-up-down-selector-spectral-action}.
+
+\section{Почему сравнение двух графов не есть уравнение движения}
+
+Пусть $P_u,P_d$ --- Real-проекторы двух возможных цветных incidence-концов.
+Они ортогональны, имеют одинаковый ранг и конечное расстояние:
+\begin{equation}
+ P_uP_d=0,\qquad \Tr P_u=\Tr P_d=6,\qquad
+ \Tr(P_u-P_d)^2=12.
+ \label{eq:v8-up-down-selector-projector-distance}
+\end{equation}
+В текущем пространстве полей эти проекторы являются структурными данными,
+а не динамическими переменными:
+\begin{equation}
+ \dim T_{P_u}\mathcal M_{ud}
+ =\dim T_{P_d}\mathcal M_{ud}=0,
+ \qquad \frac{\delta S}{\delta P_e}\ \text{не определено}.
+ \label{eq:v8-up-down-selector-zero-tangent}
+\end{equation}
+Поэтому разность $S_\alpha(u)-S_\alpha(d)=7\alpha$ сравнивает две разные
+модели. Для физического выбора потребовались бы сумма по геометриям, мера
+или единый больший оператор, внутри которого обе incidence-компоненты
+являются состояниями одной динамической переменной.
+
+\section{Минимальный недостающий typed-оператор}
+
+Квадрат гиперзаряда канонически задаёт центрированный различитель
+\begin{equation}
+ S_{ud}=Y_{\mathbb R}^{2}-\frac{29}{18}I
+ =\frac76P_u-\frac76P_d.
+ \label{eq:v8-up-down-selector-centered-discriminator}
+\end{equation}
+Его нормировка и спаривание с бинарным направлением фиксированы:
+\begin{equation}
+ \Tr S_{ud}^{2}=\frac{49}{3},
+ \qquad \Tr(A_{ud}S_{ud})=14.
+ \label{eq:v8-up-down-selector-discriminator-norm}
+\end{equation}
+Но текущий parent не содержит ни динамического бинарного носителя, ни
+связи этого носителя с $S_{ud}$. Более того, знак такой связи меняет
+предпочитаемую ветвь:
+\begin{equation}
+ V_{\rm sel}(P_e)=g_{ud}\Tr(S_{ud}P_e),\qquad
+ g_{ud}\mapsto-g_{ud}\ \Longleftrightarrow\ u\leftrightarrow d.
+ \label{eq:v8-up-down-selector-missing-coupling-sign}
+\end{equation}
+Именно происхождение typed-связи и её знака, а не вычисление $Y^2$, является
+следующим обязательством.
+
+Итоговые реестры:
+\begin{equation}
+ N_{\rm exact\ representation}=8/8,\qquad
+ N_{\rm conditional\ discriminator}=5/5,\qquad
+ N_{\rm parent\ origin}=0/7.
+ \label{eq:v8-up-down-selector-ledgers}
+\end{equation}
+
+\begin{theorem}[Условный гиперзарядный различитель без parent-origin]
+Квадрат гиперзаряда точно различает два финальных incidence-назначения:
+их комплексные индексы равны $25/3$ и $4/3$. Положительный условный вес
+предпочитает $d$-ветвь. Однако нечётные Real-моменты сокращаются, incidence-
+проекторы не являются переменными текущего действия, а typed-связь с
+$Y^2$ и её знак не наследованы. Поэтому бинарный выбор не выведен.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет минимизации между фиксированными диаграммами]
+Нельзя объявлять $B\mapsto d$ физически выбранным только потому, что
+$I_1(d)<I_1(u)$. Такое сравнение становится вариационным принципом лишь
+после задания общего пространства геометрий и его меры либо единого
+динамического носителя бинарного incidence. Нельзя также импортировать знак
+положительного gauge-кинетического коэффициента в отсутствующий портальный
+член endpoint-действия.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item финальных incidence-кандидатов: \textbf{два};
+\item размерность, $SU(2)$ и $SU(3)$ различают их: \textbf{нет};
+\item $U(1)$-индексы: \textbf{$25/3$ и $4/3$};
+\item положительный $Y^2$-score условно выбирает: \textbf{$d$};
+\item нечётные Real-моменты дают селектор: \textbf{нет};
+\item вектороподобная аномалия даёт селектор: \textbf{нет};
+\item incidence-проектор динамичен: \textbf{нет};
+\item межгеометрическая мера наследована: \textbf{нет};
+\item центрированный typed-различитель: \textbf{$S_{ud}$ построен};
+\item знак его связи выведен: \textbf{нет};
+\item exact representation: \textbf{$8/8$};
+\item conditional discriminator: \textbf{$5/5$};
+\item parent-origin: \textbf{$0/7$};
+\item следующий гейт: \textbf{минимальная typed-архитектура различителя}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-up-down-selector-krajewski} T.~Krajewski,
+\emph{Classification of Finite Spectral Triples}, arXiv:hep-th/9701081.
+\bibitem{v8-up-down-selector-spectral-action} A.~H.~Chamseddine,
+A.~Connes, \emph{The Spectral Action Principle}, arXiv:hep-th/9606001.
+\end{thebibliography}

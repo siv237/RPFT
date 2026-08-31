@@ -1,0 +1,179 @@
+\chapter{Минимальные данные центрального гамильтониана дополнительных масс}
+\label{ch:v8-extra-edge-mass-minimal-central-hamiltonian-data}
+
+\section{Факторизация трёхуровневого центра}
+
+На Real-завершённых блоках рангов $(4,6,6)$ общий сохраняющий gauge-типы
+центральный гамильтониан имеет вид
+\begin{equation}
+ h=\varepsilon_YP_Y+\varepsilon_uP_u+\varepsilon_dP_d.
+ \label{eq:v8-extra-mass-minimal-hamiltonian}
+\end{equation}
+Общий сдвиг энергии не меняет состояние Гиббса:
+\begin{equation}
+ \rho_{h+bI}=\frac{e^{-\beta(h+bI)}}{\Tr e^{-\beta(h+bI)}}
+ =\frac{e^{-\beta h}}{\Tr e^{-\beta h}}=\rho_h.
+ \label{eq:v8-extra-mass-hamiltonian-shift}
+\end{equation}
+Поэтому после quotient по $I$ остаются ровно две щели
+\begin{equation}
+ \Delta_u=\varepsilon_u-\varepsilon_Y,
+ \qquad
+ \Delta_d=\varepsilon_d-\varepsilon_Y,
+ \label{eq:v8-extra-mass-two-gaps}
+\end{equation}
+или две безразмерные координаты
+\begin{equation}
+ \theta_u=\beta\Delta_u,
+ \qquad
+ \theta_d=\beta\Delta_d.
+ \label{eq:v8-extra-mass-two-dimensionless-gaps}
+\end{equation}
+
+\section{Точная карта на внутренность симплекса}
+
+Проективные центральные веса равны
+\begin{equation}
+ (p_Y,p_u,p_d)=\frac{(1,e^{-\theta_u},e^{-\theta_d})}
+ {1+e^{-\theta_u}+e^{-\theta_d}}.
+ \label{eq:v8-extra-mass-softmax-map}
+\end{equation}
+Обратная карта имеет вид
+\begin{equation}
+ \theta_u=\log\frac{p_Y}{p_u},
+ \qquad
+ \theta_d=\log\frac{p_Y}{p_d}.
+ \label{eq:v8-extra-mass-softmax-inverse}
+\end{equation}
+Её якобиан невырожден во всей внутренности:
+\begin{equation}
+ \det\frac{\partial(p_u,p_d)}{\partial(\theta_u,\theta_d)}
+ =p_Yp_up_d>0,
+ \qquad
+ \det J\big|_{\theta=0}=\frac1{27}.
+ \label{eq:v8-extra-mass-softmax-jacobian}
+\end{equation}
+Следовательно, это диффеоморфизм $\mathbb R^2\to\operatorname{int}\Delta^2$:
+две координаты одновременно необходимы и достаточны.
+
+Три точных ориентира равны
+\begin{equation}
+ \begin{array}{c|c}
+ (\theta_u,\theta_d)&(p_Y,p_u,p_d)\\ \hline
+ (0,0)&(1/3,1/3,1/3)\\
+ (\log(3/2),\log(3/2))&(3/7,2/7,2/7)\\
+ (\log(3/2),\log3)&(1/2,1/3,1/6)
+ \end{array}
+ \label{eq:v8-extra-mass-gap-witnesses}
+\end{equation}
+Первая точка есть счётный trace, вторая --- равные edge-массы, третья
+доказывает необходимость двух независимых, а не одной общей щели.
+
+\section{Gibbs-вариация и минимальность}
+
+В координатах $p_Y=1-p_u-p_d$ свободная энергия равна
+\begin{equation}
+ \Phi_{\theta}(p)=\theta_up_u+\theta_dp_d
+ +p_Y\log p_Y+p_u\log p_u+p_d\log p_d.
+ \label{eq:v8-extra-mass-free-energy}
+\end{equation}
+Её гессиан положительно определён:
+\begin{equation}
+ \det\Hess\Phi_{\theta}=\frac1{p_Yp_up_d}>0,
+ \qquad
+ \Hess\Phi_0\big|_{p=(1/3,1/3,1/3)}=
+ \begin{pmatrix}6&3\\3&6\end{pmatrix}.
+ \label{eq:v8-extra-mass-free-energy-hessian}
+\end{equation}
+Поэтому каждая пара щелей имеет единственный Gibbs-минимум. Это доказывает
+достаточность параметров, но не их parent-origin; detailed balance также
+формулируется относительно уже выбранного верного состояния
+\cite{v8-extra-mass-fagnola}.
+
+Бесследовый представитель
+\begin{equation}
+ 4\varepsilon_Y+6\varepsilon_u+6\varepsilon_d=0
+ \label{eq:v8-extra-mass-traceless-representative}
+\end{equation}
+лишь фиксирует общий сдвиг и оставляет двумерное ядро. Он не выбирает
+$\Delta_u,\Delta_d$.
+
+\section{Неидентифицируемые масштабы}
+
+Равновесное состояние инвариантно относительно общей масштабной орбиты
+\begin{equation}
+ (\beta,\Delta_u,\Delta_d)\longmapsto
+ (\beta/c,c\Delta_u,c\Delta_d),\qquad c>0.
+ \label{eq:v8-extra-mass-thermal-scale-orbit}
+\end{equation}
+Поэтому веса определяют только $(\theta_u,\theta_d)$, но не температуру и
+две физические энергии по отдельности.
+
+Сами коэффициенты стабилизатора параметризуются как
+\begin{equation}
+ \boldsymbol\mu=\alpha(2p_Y,3p_u,3p_d),
+ \qquad \alpha>0.
+ \label{eq:v8-extra-mass-scale-parameterization}
+\end{equation}
+Пара щелей выбирает отношения, но не общий масштаб $\alpha$. Временная
+скорость релаксации дополнительно требует спектральной плотности среды, что
+не следует из Gibbs-состояния \cite{v8-extra-mass-davies}.
+
+Итоговые реестры равны
+\begin{equation}
+ \begin{aligned}
+ N_{\rm architecture}&=7/7,
+ &N_{\rm relative\ gap\ origin}&=0/2,\\
+ N_{\rm energy\ scale}&=0/1,
+ &N_{\rm mass\ scale}=N_{\rm relaxation\ scale}&=0/1.
+ \end{aligned}
+ \label{eq:v8-extra-mass-minimal-data-ledgers}
+\end{equation}
+
+\begin{theorem}[Минимальность пары центральных щелей]
+С точностью до общего сдвига всякий type-сохраняющий центральный гамильтониан
+трёх дополнительных edge-блоков задаётся двумя энергетическими разностями.
+Пара $(\theta_u,\theta_d)=(\beta\Delta_u,\beta\Delta_d)$ диффеоморфно
+параметризует всю внутренность положительного trace-симплекса и является
+минимальным достаточным набором относительных данных.
+\end{theorem}
+
+\begin{nogocriterion}[Равновесные веса не задают физические масштабы]
+Нельзя извлечь из $(p_Y,p_u,p_d)$ раздельные $\beta$, $\Delta_u$ и
+$\Delta_d$, поскольку они лежат на общей масштабной орбите. Нельзя также
+отождествлять безразмерные щели с общим масштабом масс $\alpha$ или временем
+релаксации.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item центральных энергетических уровней: \textbf{три};
+\item физически незначимых общих сдвигов: \textbf{один};
+\item независимых щелей: \textbf{две};
+\item минимальные координаты: \textbf{$(\theta_u,\theta_d)$};
+\item карта на $\operatorname{int}\Delta^2$: \textbf{диффеоморфизм};
+\item якобиан: \textbf{$p_Yp_up_d>0$};
+\item Gibbs-минимум: \textbf{единственный};
+\item архитектура: \textbf{$7/7$};
+\item parent-origin двух щелей: \textbf{$0/2$};
+\item абсолютная энергия: \textbf{$0/1$};
+\item общий масштаб масс: \textbf{$0/1$};
+\item скорость релаксации: \textbf{$0/1$};
+\item следующий гейт: \textbf{parent-origin центрального гамильтониана}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_minimal_central_hamiltonian_data_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-extra-mass-fagnola}
+F.~Fagnola, V.~Umanit\`a,
+\emph{Generators of Detailed Balance Quantum Markov Semigroups},
+arXiv:0707.2147.
+\bibitem{v8-extra-mass-davies}
+E.~B.~Davies,
+\emph{Markovian Master Equations}, Commun. Math. Phys. 39 (1974), 91--110.
+\bibitem{v8-extra-mass-gibbs}
+H.~Moriya,
+\emph{Gibbs Variational Formula for Thermal Equilibrium States in Terms of
+Quantum Relative Entropy Density}, arXiv:2002.04253.
+\end{thebibliography}

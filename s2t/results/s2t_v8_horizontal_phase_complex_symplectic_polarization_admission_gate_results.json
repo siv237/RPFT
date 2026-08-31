@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-30",
+  "gate": "version8_horizontal_phase_complex_symplectic_polarization_admission_gate",
+  "invariant_alternating_forms": {
+    "bosonic_self_contraction": 0,
+    "canonical_form_selected": false,
+    "dimension": 11,
+    "linear_system_shape": [
+      5600,
+      190
+    ],
+    "maximum_rank": 14,
+    "minimum_radical_dimension": 6,
+    "two_distinct_rank_14_witnesses": true
+  },
+  "minimal_symplectic_completion": {
+    "complex_dimension_after_completion": 26,
+    "missing_dual_complex_directions": 6,
+    "new_endpoint_data_required": true,
+    "weak_dual_multiplicities_before": [
+      1,
+      4
+    ]
+  },
+  "next_gate": "version8_horizontal_phase_minimal_symplectic_completion_endpoint_admission_gate",
+  "registry": {
+    "certificate_sha256": "d9f5d636f523f24ee7a5fb4c09c900c6493508f3645678ca8ec6bf810ac1db40",
+    "gate_count": 45,
+    "obligation_count": 323
+  },
+  "typed_transfer_representation": {
+    "complex_dimension": 20,
+    "decomposition": "H_plus + 4 H_minus + C_plus + C_minus + 4 S_zero",
+    "gauge_generator_checks": 14,
+    "irrep_dimensions": {
+      "C": 3,
+      "H": 2,
+      "S_zero": 1
+    }
+  },
+  "verdict": {
+    "current_carrier_lifts_horizontal_mode": false,
+    "nondegenerate_invariant_symplectic_form_exists": false,
+    "nonzero_invariant_alternating_forms_exist": true,
+    "single_bosonic_field_produces_quadratic_phase_scalar": false,
+    "unique_polarization_exists": false
+  }
+}

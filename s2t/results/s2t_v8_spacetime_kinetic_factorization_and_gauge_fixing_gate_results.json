@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-30",
+  "gate": "version8_spacetime_kinetic_factorization_and_gauge_fixing_gate",
+  "gauge_fixed_hessian": {
+    "formula": "K_gauge tensor (P_T+xi^-1 P_L)",
+    "inverse": "K_gauge^-1 tensor (P_T+xi P_L)",
+    "inverse_residual": "0",
+    "rank": 48
+  },
+  "gauge_parameter": {
+    "longitudinal_inverse_depends_on_xi": true,
+    "physical_transverse_factor": "K_gauge^-1 tensor P_T",
+    "transverse_inverse_independent_of_xi": true
+  },
+  "next_gate": "version8_transverse_noise_mobility_environment_origin_gate",
+  "physical_boundary": {
+    "absolute_mobility_scale_derived": false,
+    "environment_correlation_derived": false,
+    "internal_inverse_factor_obtained": true
+  },
+  "projectors": {
+    "P_L": "diag(1,0,0,0)",
+    "P_T": "diag(0,1,1,1)",
+    "identities": "P_T^2=P_T, P_L^2=P_L, P_T P_L=0, P_T+P_L=I_4"
+  },
+  "registry": {
+    "certificate_sha256": "72cffed0118be8aa1519c4a8c8588438c6895f2e1cc001342957118f2967250e",
+    "gate_count": 33,
+    "obligation_count": 205
+  },
+  "ungauged_hessian": {
+    "dimension": 48,
+    "formula": "K_gauge tensor P_T",
+    "nullity": 12,
+    "rank": 36
+  }
+}

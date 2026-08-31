@@ -1,0 +1,162 @@
+\chapter{Grading-совместимое endpoint-расширение семейной тройки}
+\label{ch:v8-baryon-c0-grading-compatible-family-triplet-endpoint-extension-gate}
+
+Текущий charged-singlet target имеет разложение по grading
+\begin{equation}
+ H_{e_R}=H_-oplus H_+,
+ \qquad \dim H_-=1,\qquad \dim H_+=2,
+ \qquad \Gamma_{e_R}=(-I_1)\oplus(+I_2).
+ \label{eq:v8-baryon-c0-current-target-grading-split}
+\end{equation}
+Неприводимая вещественная семейная тройка допускает только скалярную
+градуировку:
+\begin{equation}
+ [\Gamma_{mathbf3},J_a]=0\ \forall a
+ \quad\Longrightarrow\quad
+ \Gamma_{mathbf3}=\varepsilon I_3,
+ \qquad \varepsilon\in\{+1,-1\}.
+ \label{eq:v8-baryon-c0-family-triplet-scalar-grading}
+\end{equation}
+Поэтому числа новых target-состояний в двух ветвях равны
+\begin{equation}
+ n_+=3-\dim H_+=1,
+ \qquad n_-=3-\dim H_-=2.
+ \label{eq:v8-baryon-c0-homogeneous-triplet-extension-counts}
+\end{equation}
+
+\section{Единственная минимальная ветвь}
+
+В положительной ветви добавляется одна линия того же
+charged-singlet gauge-типа:
+\begin{equation}
+ H_{24}=H_{23}\oplus\mathbb C e_R^{(t,0)},
+ \qquad \Gamma e_R^{(t,0)}=+e_R^{(t,0)},
+ \qquad Y e_R^{(t,0)}=-e_R^{(t,0)}.
+ \label{eq:v8-baryon-c0-minimal-plus-target-extension}
+\end{equation}
+Она завершает target-тройку
+\begin{equation}
+ H_{mathbf3}^{(+)}=operatorname{span}_{\mathbb C}
+ \{e_R^{(t,0)},e_R^{(t,1)},e_R^{(t,2)}\},
+ \qquad \Gamma\big|_{H_{mathbf3}^{(+)}}=+I_3.
+ \label{eq:v8-baryon-c0-plus-family-target-triplet}
+\end{equation}
+Соответствующий connector-triplet использует единственную source-линию
+$a_0$:
+\begin{equation}
+ W_{mathbf3}^{(+)}=operatorname{span}_{\mathbb C}
+ \{|e_R^{(t,k)}\rangle\langle a_0|:k=0,1,2\},
+ \qquad \dim_{\mathbb C}W_{mathbf3}^{(+)}=3.
+ \label{eq:v8-baryon-c0-plus-family-connector-triplet}
+\end{equation}
+Все три стрелки нечётны, поскольку
+\begin{equation}
+ (+I_3)V+V(-1)=0,
+ \qquad V\in W_{mathbf3}^{(+)}.
+ \label{eq:v8-baryon-c0-plus-triplet-oddness}
+\end{equation}
+Стандартное семейное действие одновременно совместимо с grading,
+гиперзарядом и Real-структурой:
+\begin{equation}
+ [J_a,+I_3]=[J_a,-I_3]=0,
+ \qquad \overline{J_a}=J_a.
+ \label{eq:v8-baryon-c0-plus-triplet-structural-compatibility}
+\end{equation}
+Лемма Шура снова даёт единственную изометрическую карту с точностью до
+нефизического общего знака:
+\begin{equation}
+ \operatorname{Hom}_{SO(3)}(\mathbf3_{\rm fam},W_{mathbf3}^{(+)})
+ =\mathbb RI_3,
+ \qquad T^{\mathsf T}T=I_3\Longrightarrow T=\pm I_3.
+ \label{eq:v8-baryon-c0-plus-triplet-schur-map}
+\end{equation}
+
+Отрицательная ветвь также формально допустима, но требует двух линий:
+\begin{equation}
+ H_{25}=H_{23}\oplus\mathbb C e_R^{(s,1)}
+ \oplus\mathbb C e_R^{(s,2)},
+ \qquad \Gamma\big|_{H_{mathbf3}^{(-)}}=-I_3,
+ \qquad W_{mathbf3}^{(-)}=H_{mathbf3}^{(-)}\langle s_0|.
+ \label{eq:v8-baryon-c0-minus-family-triplet-branch}
+\end{equation}
+При сохранении всех старых grading-знаков и gauge-типов имеем строгую
+минимальность
+\begin{equation}
+ n_+=1<n_-=2,
+ \qquad \text{поэтому минимальная ветвь единственна и выбирает }a_0.
+ \label{eq:v8-baryon-c0-minimal-branch-selects-a0}
+\end{equation}
+
+\section{Цена endpoint-ковариантности}
+
+Семейное действие не сохраняет три координатных endpoint-проектора, но
+сохраняет их сумму:
+\begin{equation}
+ [J_a,P_k]\ne0\ \text{для некоторых }(a,k),
+ \qquad [J_a,P_{mathbf3}]=0,
+ \qquad P_{mathbf3}=P_0+P_1+P_2=I_3.
+ \label{eq:v8-baryon-c0-family-triplet-endpoint-projectors}
+\end{equation}
+Ковариантное ассоциативное замыкание диагональной endpoint-алгебры и
+семейных генераторов является полным блоком:
+\begin{equation}
+ \operatorname{Alg}(D_3,J_1,J_2,J_3)=M_3(\mathbb C),
+ \qquad \dim_{\mathbb C}M_3=9,
+ \qquad \Delta N_{\rm Herm}=6.
+ \label{eq:v8-baryon-c0-family-triplet-endpoint-m3-closure}
+\end{equation}
+Следовательно, новый state недостаточен сам по себе: требуется также
+семейно-ковариантный endpoint-блок.
+
+Старый коннектор $|e_R^{(s)}\rangle\langle s_0|$ остаётся семейным
+синглетом, поэтому полный connector-носитель имеет тип
+\begin{equation}
+ W_{\rm conn}^{\rm ext}\simeq\mathbf1\oplus\mathbf3.
+ \label{eq:v8-baryon-c0-extended-connector-one-plus-three}
+\end{equation}
+Его инвариантная симметричная covariance содержит два независимых веса:
+\begin{equation}
+ C_{SO(3)}=\gamma_1P_{mathbf1}+\gamma_3P_{mathbf3},
+ \qquad \dim\{C=C^{\mathsf T}:[C,SO(3)]=0\}=2.
+ \label{eq:v8-baryon-c0-singlet-triplet-covariance-two-weights}
+\end{equation}
+Значит, условная тройка выбирает карту внутри triplet, но не отношение её
+скорости к оставшемуся синглету.
+
+Итоговый extension ledger равен
+\begin{equation}
+ N_{\rm extension}=0/3:
+ \quad\{e_R^{(t,0)},\ M_3\text{-endpoint},\ SO(3)\text{-covariant frame}\}.
+ \label{eq:v8-baryon-c0-family-triplet-extension-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальное grading-совместимое завершение]
+При сохранении grading и gauge-типов всех старых состояний единственное
+минимальное завершение семейной тройки добавляет одну положительно
+градуированную charged-singlet линию к двум существующим линиям $H_+$.
+Оно выбирает source $a_0$ и условно даёт интертвейнер $T=\pm I_3$.
+\end{theorem}
+
+\begin{nogocriterion}[Минимальность расширения не есть parent-origin]
+Счёт $1<2$ выбирает наименьшую архитектуру, но не создаёт новое состояние,
+полный endpoint-блок $M_3$ или его ковариантный шумовой кадр. До их вывода
+из одного действия физическая карта $c_0$ не считается полученной.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item текущие grading-кратности: \textbf{$1_-+2_+$};
+\item новых states в плюс-ветви: \textbf{$1$};
+\item новых states в минус-ветви: \textbf{$2$};
+\item минимальная ветвь: \textbf{плюс};
+\item выбранный source: \textbf{$a_0$};
+\item расширенный carrier: \textbf{$H_{24}$};
+\item условный family-Hom: \textbf{$\mathbb RI_3$};
+\item endpoint-замыкание: \textbf{$M_3(\mathbb C)$};
+\item полный connector-тип: \textbf{$\mathbf1\oplus\mathbf3$};
+\item независимых invariant rates: \textbf{$2$};
+\item выведенных структур: \textbf{$0/3$};
+\item следующий гейт: \textbf{селектор относительной скорости singlet--triplet}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_grading_compatible_family_triplet_endpoint_extension_gate_results.json}.

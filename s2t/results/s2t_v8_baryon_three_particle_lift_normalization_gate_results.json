@@ -1,0 +1,60 @@
+{
+  "copy_covariance": {
+    "collective_lift": "c=1",
+    "complete_positivity_interval": "-1/2 <= c <= 1",
+    "eigenvalues": [
+      "1 - c",
+      "1 - c",
+      "2*c + 1"
+    ],
+    "independent_lift": "c=0",
+    "matrix": "Matrix([[1, c, c], [c, 1, c], [c, c, 1]])",
+    "same_one_particle_generator": true
+  },
+  "date": "2026-08-30",
+  "discriminator_family": {
+    "collective_display_at_exp_minus_2": "0.252005943190436",
+    "collective_value": "52*(x + 1)*(25*x + 13)/(375*x**3 + 3916*x**2 + 7267*x + 2782)",
+    "gap_numerator": "366375*x**3 - 711068*x**2 + 203619*x + 358774",
+    "positive_lower_certificate_for_0_x_lt_1_over_7": "16868858/49",
+    "target": "977/3490",
+    "target_above_all_cp_lifts_at_exp_minus_2_exact": true,
+    "target_minus_collective": "(366375*x**3 - 711068*x**2 + 203619*x + 358774)/(3490*(375*x**3 + 3916*x**2 + 7267*x + 2782))",
+    "value": "52*c*(x + 1)*(25*x + 13)/(375*x**3 + 3916*x**2 + 7267*x + 2782)"
+  },
+  "field": "Q(x,c), x=exp(-2)",
+  "gate": "version8_baryon_three_particle_lift_normalization_gate",
+  "isospin_decomposition": {
+    "casimir_decomposition_exact": true,
+    "mixed_isospin_square": "3/4",
+    "mixed_projector_exact": true,
+    "mixed_projector_rank": 4,
+    "symmetric_isospin_square": "15/4",
+    "symmetric_projector_exact": true,
+    "symmetric_projector_rank": 4
+  },
+  "status_boundary": {
+    "additive_tensor_factor_three_exact": true,
+    "collective_lift_is_additional_assumption": true,
+    "one_particle_qms_selects_copy_correlation": false,
+    "permutation_symmetry_selects_copy_correlation": false,
+    "physical_mass_theorem": false,
+    "three_over_two_split_ratio_exact": true
+  },
+  "three_particle_operator": {
+    "additive_three_over_one": "3",
+    "kappa_SU2": "2*(10*x + 11)/(x + 5)",
+    "level_decomposition_exact": true,
+    "mixed_level": "3*(10*x + 11)*(-650*c*x**2 - 988*c*x - 338*c + 375*x**3 + 3058*x**2 + 2535*x + 572)/(26*(x + 1)*(x + 5)*(25*x + 13))",
+    "split2": "4*c*(10*x + 11)/(x + 5)",
+    "split3": "6*c*(10*x + 11)/(x + 5)",
+    "split3_over_split2": "3/2",
+    "symmetric_level": "3*(10*x + 11)*(650*c*x**2 + 988*c*x + 338*c + 375*x**3 + 3058*x**2 + 2535*x + 572)/(26*(x + 1)*(x + 5)*(25*x + 13))",
+    "transfer_scalar_per_particle": "15*x*(10*x + 11)/(26*(x + 1))"
+  },
+  "verdict": {
+    "correlation_parameter_interval": "[-1/2,1]",
+    "next_gate": "version8_baryon_common_environment_correlation_origin_gate",
+    "unique_three_particle_lift": false
+  }
+}

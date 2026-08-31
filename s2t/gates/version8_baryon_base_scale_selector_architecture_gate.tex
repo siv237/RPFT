@@ -1,0 +1,69 @@
+\chapter{Архитектура селектора масштаба базы барионного ядра}
+\label{ch:v8-baryon-base-scale-selector-architecture-gate}
+
+Минимальный контракт требует масштаба $a>0$ и безразмерной карты $c>0$.
+Сначала проверим, может ли классически масштабно-инвариантный родитель
+выбрать оба объекта. Минимальная положительная форма
+\begin{equation}
+ V_{\rm cl}(a,c)=a^2(c-c_0)^2
+ \label{eq:v8-baryon-base-scale-classical-parent}
+\end{equation}
+имеет вакуумное множество
+\begin{equation}
+ c=c_0,\qquad a>0\ \hbox{произвольно}.
+ \label{eq:v8-baryon-base-scale-classical-vacuum}
+\end{equation}
+На нём
+\begin{equation}
+ \Hess_{(a,c)}V_{\rm cl}=\begin{pmatrix}0&0\\0&2a^2\end{pmatrix}.
+ \label{eq:v8-baryon-base-scale-classical-hessian}
+\end{equation}
+Следовательно, классика может условно выбрать $c_0$, но не общий масштаб.
+
+Минимальная архитектура квантовой трансмутации имеет вид
+\begin{equation}
+ V_{\rm q}(a,c)=Ba^2\left(\log\frac{a}{\mu^2}-\frac12\right)
+ +a^2(c-c_0)^2,qquad B>0.
+ \label{eq:v8-baryon-base-scale-quantum-parent}
+\end{equation}
+Она удовлетворяет
+\begin{equation}
+ \nabla V_{\rm q}(\mu^2,c_0)=0,
+ \qquad
+ \Hess V_{\rm q}(\mu^2,c_0)=
+ \begin{pmatrix}2B&0\\0&2\mu^4\end{pmatrix}>0.
+ \label{eq:v8-baryon-base-scale-quantum-vacuum}
+\end{equation}
+и потому условно выбирает $a=\mu^2$, $c=c_0$.
+
+Но $\mu$ и $c_0$ пока являются входами. Физическая трансмутация требует
+RG-инварианта
+\begin{equation}
+ \Lambda_{\rm DT}=\mu\exp\left(-\int^{g(\mu)}\frac{dg}{\beta(g)}\right),
+ \label{eq:v8-baryon-base-scale-rg-invariant}
+\end{equation}
+а карта $c_0$ должна быть вычислена из внутреннего спектрального следа.
+
+\begin{theorem}[Классический no-go и условный квантовый допуск]
+Положительный классически масштабно-инвариантный родитель выбирает отношение,
+но оставляет масштабную нулевую моду. Логарифмический член при $B>0$
+устраняет её и даёт строгий минимум, однако только после задания $\mu$.
+\end{theorem}
+
+\begin{nogocriterion}[Архитектура не равна происхождению]
+Нельзя объявлять $a=\mu^2$ и $c=c_0$ выведенными, пока один вычисленный
+спектр не определит $B$, RG-инвариант и внутреннюю карту $c_0$ без
+наблюдаемых масс.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item классическая нулевость по $a$: \textbf{да};
+\item квантовый строгий минимум при $B>0$: \textbf{да};
+\item $\mu$ выведено: \textbf{нет};
+\item $c_0$ выведено: \textbf{нет};
+\item архитектура селектора: \textbf{допущена условно};
+\item следующий гейт: \textbf{происхождение входов трансмутации}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_base_scale_selector_architecture_gate_results.json}.

@@ -1,0 +1,87 @@
+{
+  "aligned_subparent": {
+    "field_shapes": {
+      "B": [
+        2,
+        3
+      ],
+      "M": [
+        2,
+        3
+      ]
+    },
+    "mass_kernel_equals_coherence_line": true,
+    "nonnegative_terms": 4,
+    "orthogonal_covariance_verified": true,
+    "potential": "(Tr(BB*)-3)^2 + 4 det(BB*) + ||MM*-I2||_F^2 + ||MB*||_F^2",
+    "representative_vacuum_energy": 0,
+    "right_projector_identity": "B*B/3 + M*M = I3",
+    "zero_set": {
+      "MBstar": "0",
+      "MMstar": "I2",
+      "Tr_BBstar": 3,
+      "rank_B": 1,
+      "rank_M": 2
+    }
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_vectorlike_mass_edge_selector_gate",
+  "ledgers": {
+    "aligned_shape_satisfied": 8,
+    "aligned_shape_tested": 8,
+    "full_graph_selector_satisfied": 0,
+    "full_graph_selector_tested": 5,
+    "new_parent_inputs": [
+      "dynamical rank-two mass field M",
+      "relative coefficients of the four nonnegative terms",
+      "projector excluding six allowed edge fields",
+      "diagonal family-channel identification"
+    ],
+    "parent_origin_satisfied": 0,
+    "parent_origin_tested": 4
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_full_graph_aligned_parent_embedding_gate",
+  "orbit_and_edge_selector": {
+    "absolute_channel_direction_selected": false,
+    "coordinate_edge_menu_selected": false,
+    "full_new_strict_edges": 9,
+    "full_real_slice_signature_with_spectators": {
+      "negative": 0,
+      "positive": 8,
+      "zero": 16
+    },
+    "omitted_allowed_complex_edges": [
+      "X_L--Z_R",
+      "X_R--Z_L",
+      "Y_R--Z_L",
+      "Z_L--d_R",
+      "Z_L--e_R",
+      "Z_L--u_R"
+    ],
+    "omitted_real_flat_modes": 12,
+    "selected_new_edges": 3,
+    "two_distinct_zero_energy_channel_projectors_exhibited": true
+  },
+  "real_slice_hessian": {
+    "eigenvalue_multiplicities": {
+      "0": 4,
+      "24": 1,
+      "26": 2,
+      "8": 5
+    },
+    "negative_modes": 0,
+    "nullity": 4,
+    "rank": 8,
+    "variables": 12,
+    "zero_modes_are_orbit_tangent": true
+  },
+  "verdict": {
+    "aligned_condensate_mass_architecture_exists": true,
+    "alignment_requires_explicit_SO3_breaking_spurion": false,
+    "current_parent_origin_derived": false,
+    "full_strict_graph_selected": false,
+    "portal_parent_origin_derived": false,
+    "vacuum_direction_unique": false
+  }
+}

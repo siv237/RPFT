@@ -1,0 +1,124 @@
+{
+  "admissible_central_hamiltonian": {
+    "additive_energy_shift_relevant": false,
+    "form": "epsilon_Y P_Y + epsilon_u P_u + epsilon_d P_d",
+    "gap_dimension": 2,
+    "real_completed_ranks": [
+      4,
+      6,
+      6
+    ],
+    "shift_quotient_form": "epsilon_Y I16 + Delta_u P_u + Delta_d P_d"
+  },
+  "date": "2026-08-31",
+  "exact_witnesses": {
+    "asymmetric_point": {
+      "theta": [
+        "log(3/2)",
+        "log(3)"
+      ],
+      "weights": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ]
+    },
+    "counting_trace": {
+      "theta": [
+        0,
+        0
+      ],
+      "weights": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ]
+    },
+    "equal_edge_mass": {
+      "theta": [
+        "log(3/2)",
+        "log(3/2)"
+      ],
+      "weights": [
+        "3/7",
+        "2/7",
+        "2/7"
+      ]
+    }
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_minimal_central_hamiltonian_data_gate",
+  "gibbs_variational_test": {
+    "counting_point_hessian": [
+      [
+        6,
+        3
+      ],
+      [
+        3,
+        6
+      ]
+    ],
+    "functional": "theta_u p_u + theta_d p_d + sum_e p_e log(p_e)",
+    "hessian_determinant": "1/(p_Y p_u p_d)",
+    "unique_minimizer_for_each_gap_pair": true
+  },
+  "identifiability": {
+    "beta_and_physical_gaps_separately_determined": false,
+    "common_scaling_orbit": "(beta,Delta_u,Delta_d)->(beta/c,c Delta_u,c Delta_d)",
+    "equilibrium_determines_two_beta_gap_products": true,
+    "overall_stabilizing_mass_scale_alpha_determined": false,
+    "relaxation_time_determined": false,
+    "traceless_representative_removes_only_common_shift": true
+  },
+  "ledgers": {
+    "energy_scale_origin_satisfied": 0,
+    "energy_scale_origin_tested": 1,
+    "mass_scale_origin_satisfied": 0,
+    "mass_scale_origin_tested": 1,
+    "minimal_hamiltonian_architecture_satisfied": 7,
+    "minimal_hamiltonian_architecture_tested": 7,
+    "relative_gap_origin_satisfied": 0,
+    "relative_gap_origin_tested": 2,
+    "relaxation_scale_origin_satisfied": 0,
+    "relaxation_scale_origin_tested": 1
+  },
+  "mass_parameterization": {
+    "form": [
+      "2*alpha/(1 + exp(-theta_u) + exp(-theta_d))",
+      "3*alpha*exp(-theta_u)/(1 + exp(-theta_u) + exp(-theta_d))",
+      "3*alpha*exp(-theta_d)/(1 + exp(-theta_u) + exp(-theta_d))"
+    ],
+    "overall_scale": "alpha>0",
+    "relative_weights_controlled_by_theta_pair": true
+  },
+  "minimal_dimensionless_selector": {
+    "coordinates": [
+      "theta_u=beta Delta_u",
+      "theta_d=beta Delta_d"
+    ],
+    "diffeomorphism": "R^2 to interior(Delta^2)",
+    "inverse": [
+      "theta_u=log(p_Y/p_u)",
+      "theta_d=log(p_Y/p_d)"
+    ],
+    "jacobian_determinant": "p_Y p_u p_d",
+    "necessary_parameters": 2,
+    "sufficient_parameters": 2,
+    "weights": [
+      "1/(1 + exp(-theta_u) + exp(-theta_d))",
+      "exp(-theta_u)/(1 + exp(-theta_u) + exp(-theta_d))",
+      "exp(-theta_d)/(1 + exp(-theta_u) + exp(-theta_d))"
+    ]
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_central_hamiltonian_parent_action_origin_gate",
+  "verdict": {
+    "absolute_energy_scale_derived": false,
+    "absolute_mass_scale_derived": false,
+    "counting_trace_corresponds_to_zero_gaps": true,
+    "equal_mass_corresponds_to_equal_nonzero_gaps": true,
+    "gap_values_derived_by_current_parent": false,
+    "two_dimensionless_gaps_are_minimal": true,
+    "two_dimensionless_gaps_are_sufficient": true
+  }
+}

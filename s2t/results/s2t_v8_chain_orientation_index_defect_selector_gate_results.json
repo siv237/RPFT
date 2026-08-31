@@ -1,0 +1,85 @@
+{
+  "KMS_branch_selection": {
+    "continuous_fit_used": false,
+    "rejected_rate_ratio": 7.38905609893065,
+    "selected_QMS_decay_gap": 0.021259967421186937,
+    "selected_chain_orientation": "N_boundary=diag(0*I11,2*I10)",
+    "selected_rate_ratio": 0.1353352832366127,
+    "selection_principle": "compatibility with the inherited rank-changing chiral Hodge sign and index +1"
+  },
+  "date": "2026-08-29",
+  "gate": "version8_chain_orientation_index_defect_selector_gate",
+  "grading_chain_dictionary": {
+    "chain_number": "N_boundary=diag(0*I11,2*I10)",
+    "identity": "N_boundary-I21=Gamma",
+    "identity_residual": 0.0,
+    "index_identity": "index(U)=-Tr(Gamma)=+1",
+    "inherited_chiral_grading": "Gamma=diag(-I11,+I10)",
+    "reversed_identity": "(2I21-N_boundary)-I21=-Gamma",
+    "reversed_identity_residual": 0.0
+  },
+  "polar_index_data": {
+    "Fredholm_index_U": 1,
+    "UU_star_residual": 1.5545533107653536e-15,
+    "kernel_U": 1,
+    "kernel_U_star": 0,
+    "operator": "U:C11 to C10",
+    "source_defect_trace": 1.0000000000000004
+  },
+  "rank_change_orientation_test": {
+    "radial_formula_reversed": "[1+20(1+t^2)^2]/21",
+    "radial_formula_selected": "[1+20(1-t^2)^2]/21",
+    "radial_scan_samples": 401,
+    "reversed_sign": {
+      "coisometry_action": 3.857142857142857,
+      "coisometry_vacuum": false,
+      "grading": "-Gamma",
+      "radial_minimum": {
+        "reversed_action": 1.0,
+        "selected_action": 1.0,
+        "t": 0.0
+      },
+      "rank_change_from_zero": false,
+      "zero_action": 1.0,
+      "zero_hessian_eigenvalue": 0.38095238095238093,
+      "zero_hessian_signature_negative_zero_positive": [
+        0,
+        0,
+        220
+      ]
+    },
+    "selected_sign": {
+      "coisometry_action": 0.04761904761904761,
+      "coisometry_vacuum": true,
+      "grading": "Gamma",
+      "radial_minimum": {
+        "reversed_action": 3.857142857142857,
+        "selected_action": 0.04761904761904761,
+        "t": 1.0
+      },
+      "rank_change_from_zero": true,
+      "zero_action": 1.0,
+      "zero_hessian_eigenvalue": -0.38095238095238093,
+      "zero_hessian_signature_negative_zero_positive": [
+        220,
+        0,
+        0
+      ]
+    }
+  },
+  "remaining_boundary": {
+    "base_intensities_linking_QLYR_XLdR_selected": false,
+    "dimensionless_orientation_selected": true,
+    "dimensionless_up_down_ratio_selected": true,
+    "gauge_intensities_selected": false,
+    "physical_energy_unit_selected": false,
+    "physical_time_unit_selected": false,
+    "status": "index_selects_chain_orientation_and_exp_minus_2_ratio_base_rate_metric_open"
+  },
+  "verdict": {
+    "forward_exp_minus_2_branch_passes": true,
+    "next_gate": "version8_common_chain_dirichlet_rate_metric_gate",
+    "reverse_exp_plus_2_branch_passes_rank_change_parent": false,
+    "twofold_chain_orientation_closed": true
+  }
+}

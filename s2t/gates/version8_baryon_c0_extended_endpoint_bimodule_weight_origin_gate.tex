@@ -1,0 +1,123 @@
+\chapter{Происхождение весов из расширенной концевой бимодульной алгебры}
+\label{ch:v8-baryon-c0-extended-endpoint-bimodule-weight-origin-gate}
+
+Ограничимся пятью одномерными углами. Старую тройку составляют $X_L$,
+$e_R$ и $X_R$; новую пару --- $s_0$ и $a_0$. До добавления старо-новых
+стрелок локальная концевая алгебра имеет вид
+\begin{equation}
+ \mathcal A_{
+m loc}
+ =\mathbb C P_{X_L}\oplus\mathbb C P_{e_R}
+ \oplus\mathbb C P_{X_R}\oplus M_2(\mathbb C)_{s_0a_0}.
+ \label{eq:v8-baryon-c0-local-extended-endpoint-algebra}
+\end{equation}
+Её центральные действия на multiplicity-пространстве дают три точных
+координатных проектора
+\begin{equation}
+ \Pi_0=\operatorname{diag}(1,0,0),\qquad
+ \Pi_1=\operatorname{diag}(0,1,0),\qquad
+ \Pi_2=\operatorname{diag}(0,0,1).
+ \label{eq:v8-baryon-c0-bimodule-coordinate-projectors}
+\end{equation}
+Это устраняет недиагональное смешивание ветвей, но ещё не задаёт их порядок.
+
+\section{Симплекс положительных следов}
+
+Общий положительный нормированный след на локальной алгебре задаётся
+\begin{equation}
+ p_0,p_1,p_2,q>0,
+ \qquad p_0+p_1+p_2+2q=1.
+ \label{eq:v8-baryon-c0-local-trace-simplex}
+\end{equation}
+На трёх коннекторах он индуцирует диагональную форму
+\begin{equation}
+ K_{\rm conn}(p,q)
+ =\operatorname{diag}(p_0+q,p_1+q,p_2+q).
+ \label{eq:v8-baryon-c0-trace-induced-connector-weights}
+\end{equation}
+Два точных допустимых свидетеля
+\begin{align}
+ (p_0,p_1,p_2,q)_A&=(1/10,1/5,1/2,1/10),\nonumber\\
+ (p_0,p_1,p_2,q)_B&=(1/2,1/10,1/5,1/10)
+ \label{eq:v8-baryon-c0-two-local-trace-witnesses}
+\end{align}
+дают разные минимальные направления. Даже дополнительное вектороподобное
+условие $p_0=p_2$ оставляет
+\begin{equation}
+ K_{\rm conn}=\operatorname{diag}(p_X+q,p_e+q,p_X+q),
+ \label{eq:v8-baryon-c0-vectorlike-two-weight-residual}
+\end{equation}
+то есть свободное отношение $p_e/p_X$ и как минимум двукратную $X$-ветвь.
+
+\section{Полное Hom-замыкание как условная альтернатива}
+
+Если не выбирать одну стрелку, а включить внутренний мост $s_0-a_0$ и все
+три допустимые старо-новые стрелки, граф углов содержит рёбра
+\begin{equation}
+ E_{\rm full}=\{s_0a_0,X_Ls_0,e_Ra_0,X_Ra_0\}.
+ \label{eq:v8-baryon-c0-full-local-edge-set}
+\end{equation}
+Он связен, и произведения матричных единиц порождают
+\begin{equation}
+ \operatorname{Alg}(E_{\rm full})=M_5(\mathbb C),
+ \qquad \dim_{\mathbb C}=25,
+ \qquad Z=M_5'=\mathbb C I_5.
+ \label{eq:v8-baryon-c0-full-local-m5-closure}
+\end{equation}
+Единственный нормированный след полного блока даёт
+\begin{equation}
+ \tau_5(P_j)=\frac15,
+ \qquad K_{\rm conn}^{(5)}=\frac25 I_3.
+ \label{eq:v8-baryon-c0-m5-unique-trace-connector-metric}
+\end{equation}
+После trace-ортонормировки всех трёх комплексных стрелок получаем шесть
+вещественных квадратур:
+\begin{equation}
+ \mathcal F_{51}=\mathcal F_{45}\oplus
+ \bigoplus_{j=0}^{2}\operatorname{span}_{\mathbb R}
+ \{C_{j,1},C_{j,2}\},
+ \qquad \rank\mathcal F_{51}=51.
+ \label{eq:v8-baryon-c0-full-multiplicity-frame-51}
+\end{equation}
+Этот маршрут устраняет необходимость выбора точки $\mathbb{RP}^2$ для
+марковской примитивности, но заменяет одиночный морфизм полным
+ковариационным пакетом.
+
+Итог различает два вопроса:
+\begin{equation}
+ \text{canonical full multiplicity frame: условно да},
+ \qquad
+ \text{single }c_0\text{ map: нет}.
+ \label{eq:v8-baryon-c0-full-frame-versus-single-map-ledger}
+\end{equation}
+
+\begin{theorem}[Бимодульная диагонализация без весового выбора]
+Расширенная концевая алгебра канонически различает три multiplicity-метки и
+запрещает их недиагональное смешивание. Однако её семейство положительных
+следов не выбирает относительные диагональные веса. Единственный след
+возникает лишь после полного $M_5$-замыкания всеми тремя коннекторами.
+\end{theorem}
+
+\begin{nogocriterion}[Полный кадр не равен одиночной карте c0]
+Нельзя использовать уникальность следа уже связного $M_5$ как вывод одной
+из стрелок: сам полный блок был получен добавлением всех трёх стрелок.
+Кадр $F_{51}$ является допустимой изотропной динамической архитектурой, но
+не выбирает rank-one морфизм, требуемый исходной интерпретацией $c_0$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item локальная алгебра до старо-новых стрелок: \textbf{$\mathbb C^3\oplus M_2$};
+\item coordinate projectors: \textbf{$3$};
+\item свободных локальных trace-весов после нормировки: \textbf{$3$};
+\item анизотропный вес выбран: \textbf{нет};
+\item полное Hom-замыкание: \textbf{$M_5$};
+\item уникальный след полного блока: \textbf{да};
+\item полный multiplicity-frame: \textbf{$6$ новых направлений, ранг $51$};
+\item одиночная карта $c_0$ выбрана: \textbf{нет};
+\item абсолютная скорость: \textbf{открыта};
+\item следующий гейт: \textbf{совместимость полного multiplicity-frame с
+одиночной картой $c_0$}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_extended_endpoint_bimodule_weight_origin_gate_results.json}.

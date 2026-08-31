@@ -1,0 +1,163 @@
+\chapter{Admission динамических parent-данных charged mediator}
+\label{ch:v8-charged-mediator-dynamic-data-admission}
+
+\section{Каноническое вложение старой ячейки}
+
+Старая и расширенная ячейки имеют разложения
+\begin{equation}
+ \mathcal K_{43}=\mathbb C|0\rangle\oplus\mathcal N_{42},
+ \qquad
+ \mathcal K_{45}=\mathcal K_{43}\oplus
+ \mathbb C|+\rangle\oplus\mathbb C|-\rangle.
+ \label{eq:v8-mediator-admission-cell-splitting}
+\end{equation}
+Отсюда без выбора базиса в старом блоке возникает каноническая изометрия
+\begin{equation}
+ \iota:\mathcal K_{43}\hookrightarrow\mathcal K_{45},
+ \qquad \iota^*\iota=I_{43},
+ \qquad \rank(\iota\iota^*)=43.
+ \label{eq:v8-mediator-admission-isometry}
+\end{equation}
+Она сохраняет опорный вакуум:
+\begin{equation}
+ \iota|0\rangle_{43}=|0\rangle_{45}.
+ \label{eq:v8-mediator-admission-vacuum}
+\end{equation}
+Для локальных parents
+\begin{equation}
+ h_{43}=\sum_{a=1}^{42}|a\rangle\langle a|,
+ \qquad
+ h_{45}=h_{43}+7(P_++P_-)
+ \label{eq:v8-mediator-admission-local-parents}
+\end{equation}
+выполнено точное compression-тождество
+\begin{equation}
+ \iota^*h_{45}\iota=h_{43}.
+ \label{eq:v8-mediator-admission-parent-compression}
+\end{equation}
+Следовательно, новый product-vacuum parent является консервативным
+расширением старого, а не его заменой.
+
+\section{Real- и gauge-блок лежит в ортогональном дополнении}
+
+Пусть
+\begin{equation}
+ Q_{\rm new}=I_{45}-\iota\iota^*,
+ \qquad \rank Q_{\rm new}=2.
+ \label{eq:v8-mediator-admission-new-projector}
+\end{equation}
+На его образе действуют
+\begin{equation}
+ Y_{45}=0_{43}\oplus\operatorname{diag}(1,-1),
+ \qquad J_{45}|+\rangle=|-\rangle.
+ \label{eq:v8-mediator-admission-charge-real}
+\end{equation}
+Поэтому старый блок gauge-тривиален относительно нового заряда и
+\begin{equation}
+ \iota^*Y_{45}\iota=0_{43},
+ \qquad J_{45}\iota=\iota J_{43}.
+ \label{eq:v8-mediator-admission-symmetry-compression}
+\end{equation}
+Ни одна из 42 прежних jump-меток не смешивается с новой charged Real-парой.
+
+\section{Консервативное вложение цепи}
+
+Покомпонентная изометрия определяет вложение опорных бесконечных тензорных
+произведений
+\begin{equation}
+ \mathcal I=\bigotimes_{m\in\mathbb Z}\iota_m:
+ (\mathcal K_{43},|0\rangle)^{\otimes\mathbb Z}longrightarrow
+ (\mathcal K_{45},|0\rangle)^{\otimes\mathbb Z}.
+ \label{eq:v8-mediator-admission-chain-isometry}
+\end{equation}
+Так как во всех узлах используется одна и та же карта, сдвиги сплетаются:
+\begin{equation}
+ S_{45}\mathcal I=\mathcal I S_{43}.
+ \label{eq:v8-mediator-admission-shift-intertwining}
+\end{equation}
+При нулевом новом coupling локальный collision также сохраняет старое
+подпространство, поэтому
+\begin{equation}
+ V_{45}(g=0)\mathcal I=\mathcal I V_{43}.
+ \label{eq:v8-mediator-admission-floquet-intertwining}
+\end{equation}
+Тем самым все старые reduced correlators и 42-channel generator
+восстанавливаются ограничением:
+\begin{equation}
+ \left.\mathcal L_{44}\right|_{g=0}=\mathcal L_{42}.
+ \label{eq:v8-mediator-admission-generator-restriction}
+\end{equation}
+Различие GNVW-индексов $43$ и $45$ не противоречит этому тождеству:
+$S_{43}$ является ограничением $S_{45}$ на собственную invariant
+подалгебру, а не гомотопией двух полных автоморфизмов.
+
+\section{Что действительно уже доступно}
+
+На уровне формы ранее построены все пять требуемых типов:
+\begin{equation}
+ N_{\rm available\ shapes}=5/5:
+ \{\text{conditional carrier},H_E,C_{1,2},S_d,
+ \Gamma=\chi^2E_C/\hbar\}.
+ \label{eq:v8-mediator-admission-shape-ledger}
+\end{equation}
+Само консервативное вложение проходит восемь независимых проверок:
+\begin{equation}
+ N_{\rm structural\ admission}=8/8.
+ \label{eq:v8-mediator-admission-structural-ledger}
+\end{equation}
+Однако ни одна из форм не выбирает её физический коэффициент или статус
+данных raw-parent:
+\begin{equation}
+ N_{\rm physical\ origin}=0/5:
+ \{H_{23/24},7\gamma,g,S_{45},\tau_C\}.
+ \label{eq:v8-mediator-admission-origin-ledger}
+\end{equation}
+Минимальный остаточный пакет новых данных тем самым локализован как
+\begin{equation}
+ \mathcal D_{\min}=\{\text{endpoint extension},\gamma,\chi,
+ \text{transport primitive},E_C\}.
+ \label{eq:v8-mediator-admission-minimal-data}
+\end{equation}
+
+\begin{theorem}[Консервативный structural admission]
+Расширение $\mathcal K_{43}\subset\mathcal K_{45}$ канонически сохраняет
+вакуум, локальный parent, старые 42 jump-метки, цепной сдвиг и редуцированную
+динамику при нулевом новом coupling. Поэтому charged mediator совместим со
+всей прежней динамической архитектурой без её перенастройки. Этот полный
+structural admission не выводит пять физических входов.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет превращения restriction в selector]
+Тождество $S_{45}\mathcal I=\mathcal I S_{43}$ доказывает совместимость, но
+не происхождение нового сдвига. Compression $\iota^*h_{45}\iota=h_{43}$ не
+выбирает коэффициент charged-блока. Аналогично normalized quadratures не
+фиксируют $g$, а clock-rate формула не фиксирует $E_C$ или $\chi$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item каноническая изометрия $43\to45$: \textbf{есть};
+\item вакуум сохраняется: \textbf{да};
+\item старый parent есть compression нового: \textbf{да};
+\item размерность ортогонального дополнения: \textbf{$2$};
+\item дополнение Real-замкнуто: \textbf{да};
+\item 42 старые jump-метки сохраняются: \textbf{да};
+\item chain shifts сплетаются: \textbf{да};
+\item старая reduced dynamics восстанавливается при $g=0$: \textbf{да};
+\item structural admission: \textbf{$8/8$};
+\item available shapes: \textbf{$5/5$};
+\item physical parent-origin: \textbf{$0/5$};
+\item следующий гейт: \textbf{минимальный пакет новых динамических данных}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_charged_mediator_dynamic_parent_data_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-mediator-admission-attal} S.~Attal and Y.~Pautrat,
+\emph{From Repeated to Continuous Quantum Interactions},
+Ann. Henri Poincar\'e 7 (2006) 59; arXiv:math-ph/0311002.
+\bibitem{v8-mediator-admission-gnvw} D.~Gross, V.~Nesme, H.~Vogts and
+R.~F.~Werner, \emph{Index Theory of One Dimensional Quantum Walks and
+Cellular Automata}, Commun. Math. Phys. 310 (2012) 419;
+arXiv:0910.3675.
+\end{thebibliography}

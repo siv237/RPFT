@@ -1,0 +1,31 @@
+{
+  "current_endpoint": {
+    "dimension": 21,
+    "hypercharge_nullity": 0,
+    "hypercharge_rank": 21,
+    "neutral_trivial_irrep_multiplicity": 0
+  },
+  "current_frame": {
+    "all_basis_elements_annihilate_auxiliary_projector": true,
+    "ambient_algebra": "End(H21)",
+    "imprimitivity_bridge_count_in_span": 0,
+    "real_dimension": 42,
+    "zero_extended_to_H22": true
+  },
+  "date": "2026-08-30",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_existing_42_carrier_linking_bridge_classification_gate",
+  "nearest_wrong_type_channels": {
+    "charged_singlet_minus_one_multiplicity": 3,
+    "charged_singlet_unique": false,
+    "old_real_selected_channel_rank": 3,
+    "old_real_selected_channel_type": "colored u_R triplet"
+  },
+  "next_gate": "version8_baryon_c0_minimal_neutral_endpoint_extension_gate",
+  "verdict": {
+    "linear_or_algebraic_closure_can_create_external_endpoint": false,
+    "new_neutral_endpoint_state_required": true,
+    "new_off_diagonal_arrow_required": true,
+    "required_neutral_linking_bridge_in_existing_42_carrier": false
+  }
+}

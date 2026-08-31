@@ -1,0 +1,36 @@
+{
+  "bv_goldstone_audit": {
+    "broken_gauge_orbit_rank": 3,
+    "goldstone_kernel_condition_satisfied": false,
+    "orbit_hessian_rank": 3,
+    "orbit_hessian_trace": 34
+  },
+  "date": "2026-08-30",
+  "fermion_projection": {
+    "determinant_sign": -1,
+    "internal_dimension": 21,
+    "physical_chiral_fourth_moment": 92,
+    "physical_projector_rank": 42,
+    "raw_finite_fourth_moment": 46,
+    "spin_dimension": 4
+  },
+  "gate": "version8_full_42_carrier_bv_vacuum_quotient_gate",
+  "ledger": {
+    "algebraic_candidate_before_bv_repair": "4360268/3249",
+    "fermion_contribution": -92,
+    "fixed_background_bosonic_numerator": "4659176/3249",
+    "physical_full_B_derived": false
+  },
+  "next_gate": "version8_gauge_invariant_vacuum_hessian_reconstruction_gate",
+  "registry": {
+    "certificate_sha256": "ccd192cd5cb1b2f3b470f5ba0e13520ca8a59287222ab0d34ddf182ea90b2e2d",
+    "gate_count": 39,
+    "obligation_count": 254
+  },
+  "verdict": {
+    "fermion_multiplicity_closed": true,
+    "gauge_invariant_vacuum_hessian_required": true,
+    "previous_bosonic_ledger_is_physical": false,
+    "previous_scalar_hessian_is_physical_bv_hessian": false
+  }
+}

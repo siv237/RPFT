@@ -1,0 +1,358 @@
+{
+  "bimodule_closure": {
+    "endpoint_block_dimensions": [
+      {
+        "complex_dimension": 2,
+        "sector": "incidence",
+        "source": "QL",
+        "target": "uR"
+      },
+      {
+        "complex_dimension": 2,
+        "sector": "incidence",
+        "source": "QL",
+        "target": "dR"
+      },
+      {
+        "complex_dimension": 3,
+        "sector": "heavy",
+        "source": "XL",
+        "target": "dR"
+      },
+      {
+        "complex_dimension": 2,
+        "sector": "incidence",
+        "source": "LL",
+        "target": "eR"
+      },
+      {
+        "complex_dimension": 1,
+        "sector": "incidence",
+        "source": "XL",
+        "target": "eR"
+      },
+      {
+        "complex_dimension": 2,
+        "sector": "heavy",
+        "source": "YL",
+        "target": "eR"
+      },
+      {
+        "complex_dimension": 2,
+        "sector": "heavy",
+        "source": "LL",
+        "target": "XR"
+      },
+      {
+        "complex_dimension": 1,
+        "sector": "incidence",
+        "source": "XL",
+        "target": "XR"
+      },
+      {
+        "complex_dimension": 3,
+        "sector": "heavy",
+        "source": "QL",
+        "target": "YR"
+      },
+      {
+        "complex_dimension": 1,
+        "sector": "incidence",
+        "source": "LL",
+        "target": "YR"
+      },
+      {
+        "complex_dimension": 1,
+        "sector": "incidence",
+        "source": "YL",
+        "target": "YR"
+      }
+    ],
+    "gauge_closure_sequence": [
+      20,
+      20
+    ],
+    "gauge_connection_real_dimension": 12,
+    "heavy_complex_dimension": 10,
+    "incidence_complex_dimension": 10,
+    "incidence_heavy_overlap": 0.0,
+    "new_endpoint_fermion_states": 0,
+    "new_gauge_generators": 0,
+    "new_transfer_complex_directions": 5,
+    "total_internal_field_real_dimension": 52,
+    "total_transfer_complex_dimension": 20,
+    "total_transfer_real_dimension": 40
+  },
+  "common_trace_edge_metric": {
+    "edge_origin_heavy_mass": 4.0,
+    "edge_origin_incidence_mass": -4.0,
+    "edge_vacuum_heavy_mass": 4.0,
+    "edge_vacuum_incidence_mass": 8.0,
+    "incidence_and_heavy_complex_dimensions_equal": true,
+    "rows": [
+      {
+        "heavy_total_weight": 0.9523809523809523,
+        "incidence_to_heavy_total_weight_ratio": 1.0,
+        "incidence_total_weight": 0.9523809523809523,
+        "per_component_weight": 0.09523809523809523,
+        "target_to_source_density_ratio": 1.0
+      },
+      {
+        "heavy_total_weight": 0.9190503166573554,
+        "incidence_to_heavy_total_weight_ratio": 1.0,
+        "incidence_total_weight": 0.9190503166573554,
+        "per_component_weight": 0.09190503166573553,
+        "target_to_source_density_ratio": 0.1353352832366127
+      },
+      {
+        "heavy_total_weight": 0.9534368070953438,
+        "incidence_to_heavy_total_weight_ratio": 1.0,
+        "incidence_total_weight": 0.9534368070953438,
+        "per_component_weight": 0.09534368070953439,
+        "target_to_source_density_ratio": 1.0476190476190477
+      },
+      {
+        "heavy_total_weight": 0.9513274336283186,
+        "incidence_to_heavy_total_weight_ratio": 1.0,
+        "incidence_total_weight": 0.9513274336283186,
+        "per_component_weight": 0.09513274336283187,
+        "target_to_source_density_ratio": 0.9545454545454546
+      }
+    ],
+    "single_moment_level_gives_equal_edge_hessian_masses": true
+  },
+  "date": "2026-08-29",
+  "full_transfer_hessian": {
+    "beta_half_origin_signature": [
+      20,
+      0,
+      20
+    ],
+    "beta_half_vacuum_gap": 5.773318403094323,
+    "beta_half_vacuum_signature": [
+      0,
+      0,
+      40
+    ],
+    "critical_relative_gram_weight": 0.6666666666666665,
+    "isotypic_vacuum_hessian_rank": 12,
+    "passing_window": "0 <= beta < 2/3",
+    "scan": [
+      {
+        "origin_maximum_eigenvalue": 4.0,
+        "origin_minimum_eigenvalue": -4.0,
+        "origin_signature": [
+          20,
+          0,
+          20
+        ],
+        "relative_gram_weight_beta": 0.0,
+        "vacuum_minimum_eigenvalue": 4.0,
+        "vacuum_signature": [
+          0,
+          0,
+          40
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": 3.6049938413276923,
+        "origin_minimum_eigenvalue": -5.082654938237284,
+        "origin_signature": [
+          20,
+          0,
+          20
+        ],
+        "relative_gram_weight_beta": 0.1,
+        "vacuum_minimum_eigenvalue": 4.390048344163031,
+        "vacuum_signature": [
+          0,
+          0,
+          40
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": 3.031016517850074,
+        "origin_minimum_eigenvalue": -6.727654452922743,
+        "origin_signature": [
+          20,
+          0,
+          20
+        ],
+        "relative_gram_weight_beta": 0.25,
+        "vacuum_minimum_eigenvalue": 4.939245572974788,
+        "vacuum_signature": [
+          0,
+          0,
+          40
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": 2.1215088540504112,
+        "origin_minimum_eigenvalue": -9.51337870674261,
+        "origin_signature": [
+          20,
+          0,
+          20
+        ],
+        "relative_gram_weight_beta": 0.5,
+        "vacuum_minimum_eigenvalue": 5.773318403094323,
+        "vacuum_signature": [
+          0,
+          0,
+          40
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": 1.5451114715960679,
+        "origin_minimum_eigenvalue": -11.393766425317677,
+        "origin_signature": [
+          20,
+          12,
+          8
+        ],
+        "relative_gram_weight_beta": 0.6666666666666666,
+        "vacuum_minimum_eigenvalue": 6.174792085990852,
+        "vacuum_signature": [
+          0,
+          0,
+          40
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": 0.4533631938113557,
+        "origin_minimum_eigenvalue": -15.19389673184746,
+        "origin_signature": [
+          38,
+          0,
+          2
+        ],
+        "relative_gram_weight_beta": 1.0,
+        "vacuum_minimum_eigenvalue": 6.729619755126168,
+        "vacuum_signature": [
+          0,
+          0,
+          40
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": -2.4911885841081625,
+        "origin_minimum_eigenvalue": -26.76995565322314,
+        "origin_signature": [
+          40,
+          0,
+          0
+        ],
+        "relative_gram_weight_beta": 2.0,
+        "vacuum_minimum_eigenvalue": 7.99999999999999,
+        "vacuum_signature": [
+          0,
+          0,
+          40
+        ]
+      }
+    ]
+  },
+  "gate": "version8_bimodule_multiplicity_separator_gate",
+  "old_transfer_failure": {
+    "endpoint_block_projectors_with_leakage": [
+      {
+        "maximum_residual": 0.39376485492243307,
+        "source": "QL",
+        "target": "dR"
+      },
+      {
+        "maximum_residual": 0.39376485492243307,
+        "source": "LL",
+        "target": "eR"
+      },
+      {
+        "maximum_residual": 0.33970677007228917,
+        "source": "XL",
+        "target": "eR"
+      },
+      {
+        "maximum_residual": 0.33970677007228917,
+        "source": "XL",
+        "target": "XR"
+      },
+      {
+        "maximum_residual": 0.4296988520030225,
+        "source": "LL",
+        "target": "YR"
+      },
+      {
+        "maximum_residual": 0.4296988520030225,
+        "source": "YL",
+        "target": "YR"
+      }
+    ],
+    "maximum_endpoint_projection_leakage": 0.4296988520030225,
+    "old_gauge_closed_complex_dimension": 15,
+    "old_transfer_is_endpoint_bimodule_closed": false
+  },
+  "structural_selector": {
+    "heavy_support": [
+      [
+        "XR",
+        "LL"
+      ],
+      [
+        "YR",
+        "QL"
+      ],
+      [
+        "dR",
+        "XL"
+      ],
+      [
+        "eR",
+        "YL"
+      ]
+    ],
+    "incidence_support": [
+      [
+        "XR",
+        "XL"
+      ],
+      [
+        "YR",
+        "LL"
+      ],
+      [
+        "YR",
+        "YL"
+      ],
+      [
+        "dR",
+        "QL"
+      ],
+      [
+        "eR",
+        "LL"
+      ],
+      [
+        "eR",
+        "XL"
+      ],
+      [
+        "uR",
+        "QL"
+      ]
+    ],
+    "incidence_support_reading": "three baseline H15 pairs plus four gauge-isotypic pairs",
+    "selector_residual": 2.926741363187711e-16,
+    "uses_endpoint_bimodule_labels": true,
+    "uses_vacuum_amplitudes": false
+  },
+  "verdict": {
+    "absolute_mass_scale_derived": false,
+    "full_endpoint_bimodule_labels_split_incidence_and_heavy": true,
+    "full_parent_action_obtained": false,
+    "minimal_bimodule_closed_transfer_dimension_complex": 20,
+    "next_gate": "version8_bimodule_common_curvature_relative_weight_gate",
+    "old_15_complex_transfer_module_is_sufficient": false,
+    "qualitative_20_to_20_transition_obtained": true,
+    "relative_edge_mass_equality_from_single_level": true,
+    "relative_gram_weight_beta_derived": false
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "commutant_test": {
+    "full_gauge_27D_complex_commutant_dimension": 16,
+    "full_gauge_smallest_constraint_singular_values": [
+      4.0162507119494855e-15,
+      3.5522023554771697e-15,
+      3.3007674283159112e-15,
+      3.002489644295042e-15,
+      2.7890187456442658e-15,
+      2.342477480845424e-15,
+      1.9083644072925064e-15,
+      1.5874234213905745e-15,
+      8.863474219816813e-16,
+      7.861385920485213e-16,
+      7.584547102318024e-16,
+      2.5276849630190354e-16
+    ],
+    "minimum_invariant_metric_family": "G_eta=eta P_transfer + P_gauge, eta>0",
+    "projector_commutator_residual": 0.0,
+    "scalar_only_in_either_branch": false,
+    "stabilizer_19D_complex_commutant_dimension": 10,
+    "stabilizer_smallest_constraint_singular_values": [
+      1.9875567531159741,
+      1.9875567531159741,
+      1.5048212841951089e-15,
+      1.1212234035813736e-15,
+      9.824908569736315e-16,
+      8.224117185047149e-16,
+      7.165936502981818e-16,
+      6.698998955710564e-16,
+      6.534983141137722e-16,
+      6.255887924806065e-16,
+      4.591895542135847e-16,
+      0.0
+    ],
+    "transfer_projector_commutes_with_all_symmetries": true
+  },
+  "date": "2026-08-29",
+  "enlarged_symmetry_control": {
+    "admitting_U27_would_mix_Bohr_zero_and_two_sectors": true,
+    "full_U27_would_force_scalar_metric": true,
+    "generic_U27_degree_commutator_norm": 7.154131674718368,
+    "generic_U27_preserves_chain_degree": false
+  },
+  "gate": "version8_noise_isotropy_symmetry_admission_gate",
+  "invariant_metric_scan": {
+    "all_positive_eta_KMS_symmetric": true,
+    "all_positive_eta_primitive": true,
+    "eta_samples": [
+      {
+        "KMS_symmetry_residual": 1.4594777046937386e-19,
+        "decay_gap": 0.00038970033431069896,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 3.2518619973279e-16,
+        "transfer_to_gauge_isotropy_weight": 0.001
+      },
+      {
+        "KMS_symmetry_residual": 4.2960618258455336e-19,
+        "decay_gap": 0.001232340661404956,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 1.2886050252566736e-16,
+        "transfer_to_gauge_isotropy_weight": 0.0031622776601683794
+      },
+      {
+        "KMS_symmetry_residual": 1.2924366887702e-18,
+        "decay_gap": 0.0038970033432823743,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 4.0000324830038695e-16,
+        "transfer_to_gauge_isotropy_weight": 0.01
+      },
+      {
+        "KMS_symmetry_residual": 4.656093403771892e-18,
+        "decay_gap": 0.012323406614009883,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 1.4632022285105229e-16,
+        "transfer_to_gauge_isotropy_weight": 0.03162277660168379
+      },
+      {
+        "KMS_symmetry_residual": 1.2902747755082533e-17,
+        "decay_gap": 0.03897003343271167,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 1.811999265890999e-16,
+        "transfer_to_gauge_isotropy_weight": 0.1
+      },
+      {
+        "KMS_symmetry_residual": 4.4914020332891915e-17,
+        "decay_gap": 0.12323406614029696,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 3.6186601587794216e-16,
+        "transfer_to_gauge_isotropy_weight": 0.31622776601683794
+      },
+      {
+        "KMS_symmetry_residual": 1.2034814383631628e-16,
+        "decay_gap": 0.38970033432719403,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 3.6418392423768556e-16,
+        "transfer_to_gauge_isotropy_weight": 1.0
+      },
+      {
+        "KMS_symmetry_residual": 3.857576801034107e-16,
+        "decay_gap": 1.2323406614030317,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 3.877990162475909e-16,
+        "transfer_to_gauge_isotropy_weight": 3.1622776601683795
+      },
+      {
+        "KMS_symmetry_residual": 1.397638920519749e-15,
+        "decay_gap": 3.8970033432719138,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 1.2026366030401102e-15,
+        "transfer_to_gauge_isotropy_weight": 10.0
+      },
+      {
+        "KMS_symmetry_residual": 4.01761463202776e-15,
+        "decay_gap": 12.323406614030247,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 4.2382652641050075e-15,
+        "transfer_to_gauge_isotropy_weight": 31.622776601683793
+      },
+      {
+        "KMS_symmetry_residual": 1.156409036293973e-14,
+        "decay_gap": 38.97003343271915,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 1.266776731338404e-14,
+        "transfer_to_gauge_isotropy_weight": 100.0
+      },
+      {
+        "KMS_symmetry_residual": 4.202061325552635e-14,
+        "decay_gap": 123.234066140303,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 5.0397590345346035e-14,
+        "transfer_to_gauge_isotropy_weight": 316.2277660168379
+      },
+      {
+        "KMS_symmetry_residual": 1.180486070772224e-13,
+        "decay_gap": 389.7003343271904,
+        "fixed_algebra_dimension": 1,
+        "stationarity_residual": 1.0405367471525034e-13,
+        "transfer_to_gauge_isotropy_weight": 1000.0
+      }
+    ],
+    "gap_maximum": 389.7003343271904,
+    "gap_minimum": 0.00038970033431069896,
+    "symmetry_selects_eta_one": false
+  },
+  "physical_noise_representation": {
+    "19D_selected_module_closes_under_incidence_stabilizer": true,
+    "added_families": [
+      "LLXR",
+      "YLeR"
+    ],
+    "added_variation_labels": [
+      {
+        "label": "LLXR_w0_re",
+        "relative_residual_from_selected_span": 1.0
+      },
+      {
+        "label": "LLXR_w0_im",
+        "relative_residual_from_selected_span": 1.0
+      },
+      {
+        "label": "YLeR_w0_re",
+        "relative_residual_from_selected_span": 1.0
+      },
+      {
+        "label": "YLeR_w0_im",
+        "relative_residual_from_selected_span": 1.0
+      },
+      {
+        "label": "LLXR_w1_re",
+        "relative_residual_from_selected_span": 1.0
+      },
+      {
+        "label": "LLXR_w1_im",
+        "relative_residual_from_selected_span": 1.0
+      },
+      {
+        "label": "YLeR_w1_re",
+        "relative_residual_from_selected_span": 1.0
+      },
+      {
+        "label": "YLeR_w1_im",
+        "relative_residual_from_selected_span": 1.0
+      }
+    ],
+    "full_gauge_actions_close_only_after_27D_completion": true,
+    "full_gauge_closed_samples": [
+      {
+        "gauge_closure_residual": 1.6967050960182475e-15,
+        "gauge_unitarity_residual": 1.904657423356042e-15,
+        "sample": 0,
+        "transfer_closure_residual": 4.5077010038735635e-15,
+        "transfer_unitarity_residual": 6.218691695666031e-15
+      },
+      {
+        "gauge_closure_residual": 2.1636531208665213e-15,
+        "gauge_unitarity_residual": 1.7231061844373422e-15,
+        "sample": 1,
+        "transfer_closure_residual": 3.983025928686937e-15,
+        "transfer_unitarity_residual": 6.0311510971587755e-15
+      },
+      {
+        "gauge_closure_residual": 2.0887924627721362e-15,
+        "gauge_unitarity_residual": 2.127352104820465e-15,
+        "sample": 2,
+        "transfer_closure_residual": 5.3267594482892036e-15,
+        "transfer_unitarity_residual": 6.087089471791182e-15
+      },
+      {
+        "gauge_closure_residual": 1.8731133167645883e-15,
+        "gauge_unitarity_residual": 1.462648508053372e-15,
+        "sample": 3,
+        "transfer_closure_residual": 4.2483897542272986e-15,
+        "transfer_unitarity_residual": 5.8308095587538544e-15
+      },
+      {
+        "gauge_closure_residual": 1.936780266312047e-15,
+        "gauge_unitarity_residual": 1.9821873317386294e-15,
+        "sample": 4,
+        "transfer_closure_residual": 4.658067248134947e-15,
+        "transfer_unitarity_residual": 6.382784901981087e-15
+      },
+      {
+        "gauge_closure_residual": 2.156168310821065e-15,
+        "gauge_unitarity_residual": 1.7999036035103293e-15,
+        "sample": 5,
+        "transfer_closure_residual": 4.556822602431318e-15,
+        "transfer_unitarity_residual": 6.191322966698081e-15
+      },
+      {
+        "gauge_closure_residual": 2.2693915771572945e-15,
+        "gauge_unitarity_residual": 2.0147030694403533e-15,
+        "sample": 6,
+        "transfer_closure_residual": 3.680745774712576e-15,
+        "transfer_unitarity_residual": 5.8784204065403256e-15
+      },
+      {
+        "gauge_closure_residual": 2.00583720654118e-15,
+        "gauge_unitarity_residual": 1.4298112675824435e-15,
+        "sample": 7,
+        "transfer_closure_residual": 4.750578318860481e-15,
+        "transfer_unitarity_residual": 6.114874988395092e-15
+      },
+      {
+        "gauge_closure_residual": 1.6758239209399561e-15,
+        "gauge_unitarity_residual": 1.9115930867884776e-15,
+        "sample": 8,
+        "transfer_closure_residual": 4.974889603484455e-15,
+        "transfer_unitarity_residual": 5.7607490485091465e-15
+      },
+      {
+        "gauge_closure_residual": 2.175770545630092e-15,
+        "gauge_unitarity_residual": 1.560264626486622e-15,
+        "sample": 9,
+        "transfer_closure_residual": 4.055972752932597e-15,
+        "transfer_unitarity_residual": 5.657293799397877e-15
+      },
+      {
+        "gauge_closure_residual": 1.8518882611656936e-15,
+        "gauge_unitarity_residual": 1.9351199018177972e-15,
+        "sample": 10,
+        "transfer_closure_residual": 4.825533764693473e-15,
+        "transfer_unitarity_residual": 6.033310573330059e-15
+      },
+      {
+        "gauge_closure_residual": 1.8856550067512717e-15,
+        "gauge_unitarity_residual": 1.7665178264245459e-15,
+        "sample": 11,
+        "transfer_closure_residual": 4.5429758001331245e-15,
+        "transfer_unitarity_residual": 5.734306829705233e-15
+      }
+    ],
+    "gauge_closed_noise_quotient_dimension": 27,
+    "gauge_closed_transfer_dimension": 15,
+    "gauge_dimension": 12,
+    "group": "represented SU3 x SU2 x U1 endpoint gauge group plus chain degree",
+    "heavy_Lie_orbit_dimension_sequence": [
+      10,
+      10
+    ],
+    "heavy_transfer_dimension": 10,
+    "heavy_transfer_full_gauge_orbit_dimension": 10,
+    "incidence_Lie_orbit_dimension_sequence": [
+      1,
+      4,
+      5,
+      5
+    ],
+    "incidence_orbit_tangent_rank": 3,
+    "incidence_stabilizer_dimension": 9,
+    "linking_incidence_full_gauge_orbit_dimension": 5,
+    "previous_selected_noise_dimension": 19,
+    "selected_Lie_orbit_dimension_sequence": [
+      7,
+      10,
+      11,
+      11
+    ],
+    "selected_transfer_closure_failure_samples": [
+      {
+        "projected_unitarity_residual": 0.1540362295691431,
+        "sample": 0,
+        "transfer_closure_residual": 1.2946184598555122
+      },
+      {
+        "projected_unitarity_residual": 0.08575148413044476,
+        "sample": 1,
+        "transfer_closure_residual": 0.9659422850040307
+      },
+      {
+        "projected_unitarity_residual": 0.3154767994401093,
+        "sample": 2,
+        "transfer_closure_residual": 1.8527382539143937
+      },
+      {
+        "projected_unitarity_residual": 0.14596994657917006,
+        "sample": 3,
+        "transfer_closure_residual": 1.2602655943138414
+      },
+      {
+        "projected_unitarity_residual": 0.009619265354277817,
+        "sample": 4,
+        "transfer_closure_residual": 0.3235201297587455
+      },
+      {
+        "projected_unitarity_residual": 0.06952616167233105,
+        "sample": 5,
+        "transfer_closure_residual": 0.8697701171960993
+      },
+      {
+        "projected_unitarity_residual": 0.05867456725481501,
+        "sample": 6,
+        "transfer_closure_residual": 0.7990156819098139
+      },
+      {
+        "projected_unitarity_residual": 0.09001992389044322,
+        "sample": 7,
+        "transfer_closure_residual": 0.9896911259715953
+      },
+      {
+        "projected_unitarity_residual": 0.4492580286954916,
+        "sample": 8,
+        "transfer_closure_residual": 2.2109467306762522
+      },
+      {
+        "projected_unitarity_residual": 0.09510608242507423,
+        "sample": 9,
+        "transfer_closure_residual": 1.0172659356081226
+      },
+      {
+        "projected_unitarity_residual": 0.331958293729107,
+        "sample": 10,
+        "transfer_closure_residual": 1.9005185693431652
+      },
+      {
+        "projected_unitarity_residual": 0.42032275615718717,
+        "sample": 11,
+        "transfer_closure_residual": 2.1385618104237087
+      }
+    ],
+    "selected_transfer_dimension": 7,
+    "selected_transfer_full_gauge_orbit_dimension": 11,
+    "selected_transfer_maximum_closure_residual": 2.2109467306762522,
+    "stabilizer_19D_samples": [
+      {
+        "gauge_closure_residual": 2.0641687700026324e-15,
+        "gauge_unitarity_residual": 2.2711384197349364e-15,
+        "sample": 0,
+        "transfer_closure_residual": 1.5285739133357583e-15,
+        "transfer_unitarity_residual": 1.983648632814082e-15
+      },
+      {
+        "gauge_closure_residual": 2.39059289718771e-15,
+        "gauge_unitarity_residual": 2.5369423988853886e-15,
+        "sample": 1,
+        "transfer_closure_residual": 1.5059797815742444e-15,
+        "transfer_unitarity_residual": 1.9881664985068677e-15
+      },
+      {
+        "gauge_closure_residual": 1.6192002848096468e-15,
+        "gauge_unitarity_residual": 1.682801809425731e-15,
+        "sample": 2,
+        "transfer_closure_residual": 1.1335697856308468e-15,
+        "transfer_unitarity_residual": 1.0174842954414084e-15
+      },
+      {
+        "gauge_closure_residual": 3.573069446199109e-15,
+        "gauge_unitarity_residual": 4.183514233915032e-15,
+        "sample": 3,
+        "transfer_closure_residual": 2.8768761748826366e-15,
+        "transfer_unitarity_residual": 3.3473592786059784e-15
+      },
+      {
+        "gauge_closure_residual": 4.167585675920306e-15,
+        "gauge_unitarity_residual": 4.548738318236602e-15,
+        "sample": 4,
+        "transfer_closure_residual": 3.0829998645833527e-15,
+        "transfer_unitarity_residual": 3.5255925166955387e-15
+      },
+      {
+        "gauge_closure_residual": 2.0072245642511464e-15,
+        "gauge_unitarity_residual": 2.395302361639778e-15,
+        "sample": 5,
+        "transfer_closure_residual": 1.7454589538464212e-15,
+        "transfer_unitarity_residual": 2.180320145171184e-15
+      },
+      {
+        "gauge_closure_residual": 1.6368159081107884e-15,
+        "gauge_unitarity_residual": 2.2620438809705838e-15,
+        "sample": 6,
+        "transfer_closure_residual": 1.355199909595506e-15,
+        "transfer_unitarity_residual": 1.938016578771704e-15
+      },
+      {
+        "gauge_closure_residual": 4.220500553423222e-15,
+        "gauge_unitarity_residual": 4.986339565464649e-15,
+        "sample": 7,
+        "transfer_closure_residual": 3.2348047971472387e-15,
+        "transfer_unitarity_residual": 3.784235656578175e-15
+      },
+      {
+        "gauge_closure_residual": 2.1571637874369407e-15,
+        "gauge_unitarity_residual": 1.7159097890322629e-15,
+        "sample": 8,
+        "transfer_closure_residual": 1.6875701411898007e-15,
+        "transfer_unitarity_residual": 1.3388114669482757e-15
+      },
+      {
+        "gauge_closure_residual": 3.570183258745676e-15,
+        "gauge_unitarity_residual": 4.148933327549322e-15,
+        "sample": 9,
+        "transfer_closure_residual": 2.8498329129049845e-15,
+        "transfer_unitarity_residual": 3.44251978207188e-15
+      }
+    ]
+  },
+  "verdict": {
+    "at_least_one_relative_transfer_gauge_weight_remains": true,
+    "gauge_closed_trace_Casimir_obtained": true,
+    "minimal_gauge_closed_noise_dimension": 27,
+    "next_gate": "version8_gauge_closed_noise_parent_hessian_gate",
+    "physical_symmetry_forces_trace_isotropy": false,
+    "previous_19D_trace_Casimir_is_fully_gauge_admissible": false,
+    "status": "selected_noise_module_gauge_closure_correction_and_trace_isotropy_no_go",
+    "trace_isotropic_gauge_closed_Casimir_is_canonical_representative": true
+  }
+}

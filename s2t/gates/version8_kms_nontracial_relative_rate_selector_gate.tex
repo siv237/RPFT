@@ -1,0 +1,140 @@
+\chapter{Нетривиальное KMS-состояние и селекция относительных скоростей}
+\label{ch:v8-kms-nontracial-relative-rate-selector-gate}
+
+\section{Проверяемый вопрос}
+
+Полный генератор предыдущей главы примитивен, но содержит шесть
+положительных относительных весов. Естественный кандидат селектора ---
+подробный баланс относительно верного нетривиального состояния
+\begin{equation}
+ \rho_{a,b}=aI_{11}\oplus bI_{10},
+ \qquad a,b>0,
+ \qquad 11a+10b=1.
+ \label{eq:v8-central-kms-state}
+\end{equation}
+Если такое состояние существует для полного процесса, отношение $b/a$
+могло бы задать предпочтительное направление межуглового обмена.
+
+\section{Точный запрет внутри текущего генератора}
+
+KMS подробный баланс требует стационарности опорного состояния. Но уже
+собранная полугруппа примитивна и имеет единственное верное стационарное
+состояние
+\begin{equation}
+ \rho_*=\frac{I_{21}}{21}.
+ \label{eq:v8-unique-tracial-kms-state}
+\end{equation}
+Следовательно,
+\begin{equation}
+ \rho_{a,b}\ \hbox{стационарно}
+ \quad\Longleftrightarrow\quad
+ a=b=\frac1{21}.
+ \label{eq:v8-central-kms-only-trace}
+\end{equation}
+
+Машинная проверка независимо воспроизводит этот вывод. На концевой алгебре
+KMS- и GNS-метрики центрального состояния представлены матрицей
+\begin{equation}
+ G_{a,b}=aI_{121}\oplus bI_{100}.
+\end{equation}
+В скане $10^{-4}\leq b/a\leq10^4$ одновременно стационарность и условие
+$G\mathcal L=\mathcal L^*G$ проходят только при $b/a=1$.
+
+Подбор положительных весов не помогает. Связывающие, $QLYR$- и $XLdR$-
+переносы действуют на единицу исходного угла положительными матрицами с
+суммарными следами
+\begin{equation}
+ 13,\qquad 6,\qquad 6.
+ \label{eq:v8-positive-transfer-traces}
+\end{equation}
+Их положительная линейная комбинация не может обнулиться, поэтому
+взвешенная симметрия снова требует $a=b$.
+
+\section{Что потребовалось бы для нетривиального KMS-отношения}
+
+Пусть модульный гамильтониан имеет центральный перепад
+\begin{equation}
+ H_\Delta=0\cdot P_{11}+\Delta P_{10}.
+\end{equation}
+Нынешний самосопряжённый скачок имеет вид $J=V+V^*$, где $V$ направлен из
+$\mathbb C^{11}$ в $\mathbb C^{10}$. При $\Delta\neq0$ он не является одной
+боровской модой:
+\begin{equation}
+ [H_\Delta,V]=\Delta V,
+ \qquad
+ [H_\Delta,V^*]=-\Delta V^*.
+ \label{eq:v8-directed-bohr-split}
+\end{equation}
+Нетривиальная KMS-динамика поэтому требует заменить каждый двусторонний
+скачок двумя направленными каналами. Тогда подробный баланс даёт лишь
+условное отношение
+\begin{equation}
+ \frac{\gamma_\uparrow}{\gamma_\downarrow}
+ =e^{-\beta\Delta}
+ =\frac ba.
+ \label{eq:v8-kms-directed-rate-ratio}
+\end{equation}
+Но ни $\beta\Delta$, ни само состояние концевого сектора $\rho_{a,b}$ текущим
+родителем не выбраны. Формула переносит свободу из отношения скоростей в
+модульный разрыв. Базовые интенсивности трёх семейств переноса, трёх
+калибровочных семейств и общий масштаб времени также остаются независимыми.
+
+Ранние аффинные Гиббс-состояния Тома IV живут в семейных $M_3$-углах. В
+проекте нет канонического отображения, поднимающего их в состояние
+$M_{11}\oplus M_{10}$, поэтому использовать их здесь как готовую тепловую
+плотность нельзя.
+
+\begin{theorem}[Единственность следового KMS-состояния текущего процесса]
+Для полного унитального примитивного генератора Тома VIII всякое верное
+состояние, относительно которого выполняется KMS подробный баланс, обязано
+совпадать с $I_{21}/21$. Следовательно, нетривиальное KMS-состояние не
+выбирает относительные скорости шести уже построенных слагаемых.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет скрытой подстановки модульного разрыва]
+Нельзя объявлять $e^{-\beta\Delta}$ выведенным отношением скоростей, пока
+сам оператор $H_\Delta$, его масштаб и направленное разбиение скачков не
+получены из родителя. Выбор $\beta\Delta$ по желаемой скорости является
+перепараметризацией подгонки.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item примитивность исходного процесса: \textbf{унаследована};
+ \item единственное стационарное состояние: \textbf{$I_{21}/21$};
+ \item нетривиальное центральное KMS-состояние: \textbf{невозможно};
+ \item скан отношения $b/a$: \textbf{$10^{-4}\ldots10^4$};
+ \item единственная проходящая точка: \textbf{$b/a=1$};
+ \item обход подбором положительных весов: \textbf{невозможен};
+ \item самосопряжённый скачок при $\Delta\neq0$ является одной боровской
+ модой: \textbf{нет};
+ \item направленное разбиение $V,V^*$: \textbf{математически возможно};
+ \item отношение $\gamma_\uparrow/\gamma_\downarrow$: \textbf{условно
+ равно $e^{-\beta\Delta}$};
+ \item модульный разрыв $\beta\Delta$: \textbf{не выведен};
+ \item селекция шести относительных скоростей: \textbf{не получена};
+ \item следующий тест: \textbf{происхождение модульного боровского
+ гамильтониана из родителя}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_kms_nontracial_relative_rate_selector_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-kms-fagnola-umanita}
+F.~Fagnola, V.~Umanit\`a,
+\emph{Generators of detailed balance quantum Markov semigroups},
+Infinite Dimensional Analysis, Quantum Probability and Related Topics
+\textbf{10} (2007), 335--363; arXiv:0707.2147.
+\bibitem{v8-kms-carlen-maas}
+E.~A.~Carlen, J.~Maas,
+\emph{Gradient flow and entropy inequalities for quantum Markov semigroups
+with detailed balance}, Journal of Functional Analysis \textbf{273}
+(2017), 1810--1869; arXiv:1609.01254.
+\bibitem{v8-kms-temme}
+K.~Temme, M.~J.~Kastoryano, M.~B.~Ruskai, M.~M.~Wolf, F.~Verstraete,
+\emph{The $\chi^2$-divergence and mixing times of quantum Markov
+processes}, Journal of Mathematical Physics \textbf{51} (2010), 122201;
+arXiv:1005.2358.
+\end{thebibliography}

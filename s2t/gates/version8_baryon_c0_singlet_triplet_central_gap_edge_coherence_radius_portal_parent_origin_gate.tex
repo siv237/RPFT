@@ -1,0 +1,189 @@
+\chapter{Parent-origin портала радиуса стрелочной когерентности}
+\label{ch:v8-baryon-c0-edge-coherence-radius-portal-parent-origin}
+
+\section{Общий алгебраический носитель}
+
+Предыдущая классификация выбрала
+$T=\Tr(BB^*)$ как единственный активный составной singlet с уже
+выведенным ненулевым значением. Спектральный parent когерентности использует
+градуированную цепь
+\begin{equation}
+ \mathcal H_B=\mathcal H_0\oplus\mathcal H_1\oplus\mathcal H_2,
+ \qquad
+ \dim_{\mathbb C}(\mathcal H_0,\mathcal H_1,\mathcal H_2)=(1,6,3),
+ \qquad
+ \mathcal D_B=
+ \begin{pmatrix}0&A_B^*&0\\A_B&0&C_B^*\\0&C_B&0\end{pmatrix}.
+ \label{eq:v8-coherence-portal-chain}
+\end{equation}
+Совпадение чётных углов с размерностями $1+3$ позволяет сначала проверить
+чисто алгебраическую гипотезу. Продолжение центрального
+$Q=\operatorname{diag}(-3/4,(1/4)I_3)$ на всю цепь имеет вид
+\begin{equation}
+ \widehat Q(q)=\operatorname{diag}
+ \left(-\frac34,qI_6,\frac14I_3\right).
+ \label{eq:v8-coherence-portal-general-q-extension}
+\end{equation}
+Требование единого бесследового направления фиксирует середину:
+\begin{equation}
+ \Tr\widehat Q(q)=6q=0
+ \quad\Longrightarrow\quad
+ \widehat Q=\operatorname{diag}
+ \left(-\frac34,0_6,\frac14I_3\right).
+ \label{eq:v8-coherence-portal-unique-q-extension}
+\end{equation}
+
+Обозначая $T=\Tr(BB^*)$ и $d=\det(BB^*)$, точный compound-matrix расчёт
+даёт требуемый смешанный след
+\begin{equation}
+ \Tr(\widehat Q\mathcal D_B^2)=-\frac58T.
+ \label{eq:v8-coherence-portal-marked-second-moment}
+\end{equation}
+
+\section{Полные моменты общего оператора}
+
+Положим
+\begin{equation}
+ X_{B,\lambda}=\mathcal D_B+\lambda\widehat Q.
+ \label{eq:v8-coherence-portal-total-operator}
+\end{equation}
+Его первые моменты равны
+\begin{equation}
+ \Tr X_{B,\lambda}^2=3T+\frac34\lambda^2,
+ \label{eq:v8-coherence-portal-second-moment}
+\end{equation}
+\begin{equation}
+ \Tr X_{B,\lambda}^3
+ =-\frac{15}{8}\lambda T-\frac38\lambda^3,
+ \label{eq:v8-coherence-portal-cubic-moment}
+\end{equation}
+и
+\begin{equation}
+ \Tr X_{B,\lambda}^4
+ =\frac94T^2+\frac{15}{4}d
+ +\frac{19}{8}\lambda^2T+\frac{21}{64}\lambda^4.
+ \label{eq:v8-coherence-portal-fourth-moment}
+\end{equation}
+Следовательно, любой parent, составленный только из унаследованных чётных
+моментов, удовлетворяет
+\begin{equation}
+ \left.\partial_\lambda\Tr X_{B,\lambda}^{2}\right|_{\lambda=0}
+ =
+ \left.\partial_\lambda\Tr X_{B,\lambda}^{4}\right|_{\lambda=0}=0.
+ \label{eq:v8-coherence-portal-even-moment-no-source}
+\end{equation}
+Он может создать член $\lambda^2T$, то есть изменить жёсткость щели на
+фоне конденсата, но не создаёт линейный источник $\lambda T$.
+
+\section{Условный кубический маршрут}
+
+Если отдельно допустить коэффициент $c_3$ нечётного момента, то
+\begin{equation}
+ c_3\Tr X_{B,\lambda}^3
+ =-\frac{15c_3}{8}\lambda T-\frac{3c_3}{8}\lambda^3.
+ \label{eq:v8-coherence-portal-cubic-parent-decomposition}
+\end{equation}
+Таким образом, портал возникает с фиксированной связью с собственным
+кубическим членом:
+\begin{equation}
+ \kappa_B=\frac{15}{8}c_3,
+ \qquad
+ c_{\lambda^3}=\frac38c_3,
+ \qquad
+ \frac{\kappa_B}{c_{\lambda^3}}=5,
+ \qquad
+ j_{\rm eff}\big|_{T=3}=\frac{45}{8}c_3.
+ \label{eq:v8-coherence-portal-fixed-cubic-ratio}
+\end{equation}
+Real-завершение само по себе не уничтожает эту форму. Для сопряжённой пары
+самосопряжённых операторов
+\begin{equation}
+ \frac12\left(\Tr X^3+\Tr\overline X^{,3}\right)=\Tr X^3\in\mathbb R.
+ \label{eq:v8-coherence-portal-real-half-trace}
+\end{equation}
+Препятствие состоит не в Real-удвоении, а в отсутствии $c_3$ в текущем
+чётном спектральном полиноме. Общий принцип спектрального действия задаёт
+функционал от спектра полного оператора, но не разрешает добавлять нужный
+нечётный момент после просмотра результата
+\cite{v8-coherence-portal-spectral-action}.
+
+\section{Типизационный запрет размерностного совпадения}
+
+Есть и более ранний барьер. Трёхмерный угол coherence-chain равен
+\begin{equation}
+ \mathcal H_2=\Lambda^2V\otimes\Lambda^2W^*,
+ \qquad
+ W=W_{eX}\oplus W_Y\simeq\mathbb C^2\oplus\mathbb C,
+ \qquad
+ \mathcal H_2\simeq\mathbf1\oplus\mathbf2
+ \label{eq:v8-coherence-portal-channel-corner-split}
+\end{equation}
+относительно фактической канальной группы
+$U(2)_{eX}\times U(1)_Y$. Это не уже объявленный неприводимый семейный
+триплет. Различие фиксируется коммутантами:
+\begin{equation}
+ \dim\operatorname{End}_{U(2)_{eX}\times U(1)_Y}(\mathcal H_2)=2,
+ \qquad
+ \dim\operatorname{End}_{SO(3)_{\rm fam}}(\mathbb C^3)=1.
+ \label{eq:v8-coherence-portal-commutant-mismatch}
+\end{equation}
+Поэтому совпадение размерностей $1+3$ не задаёт канонического
+типизированного отождествления двух носителей. Функториальная
+superconnection-конструкция корректна на своём associated bundle
+\cite{v8-coherence-portal-superconnection}, но не превращает канальные
+миноры в семейные состояния.
+
+Итоговые реестры равны
+\begin{equation}
+ N_{\rm algebraic\ shape}=4/4,
+ \qquad
+ N_{\rm parent\ origin}=0/2
+ \quad\{\text{typed intertwiner},c_3\}.
+ \label{eq:v8-coherence-portal-ledgers}
+\end{equation}
+
+\begin{theorem}[Алгебраическая форма портала из кубического момента]
+Единственное бесследовое продолжение центрального направления на цепь
+$1\to6\to3$ даёт
+$\Tr(\widehat Q\mathcal D_B^2)=-5T/8$. Поэтому кубический момент общего
+оператора содержит портал $-15\lambda T/8$ и собственный член
+$-3\lambda^3/8$ с фиксированным отношением коэффициентов $5$.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет размерностного и нечётного импорта]
+Нельзя объявлять этот портал выведенным: coherence-угол имеет канальный тип
+$1+2$, а не семейный тип $3$, и унаследованный чётный spectral parent не
+содержит $c_3\Tr X^3$. Требуются отдельно типизированный intertwiner и
+parent-origin нечётного коэффициента.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item общий алгебраический носитель размерности $10$: \textbf{построен};
+\item бесследовое продолжение $Q$: \textbf{единственно};
+\item смешанный след $\Tr(\widehat Q\mathcal D_B^2)$:
+\textbf{$-5T/8$};
+\item чётные моменты создают линейный портал: \textbf{нет};
+\item кубический момент создаёт портал: \textbf{условно да};
+\item отношение portal/self-cubic: \textbf{$5$};
+\item Real-полуслед уничтожает форму: \textbf{нет};
+\item coherence-угол является текущим family-triplet: \textbf{нет};
+\item алгебраическая форма: \textbf{$4/4$};
+\item parent-origin: \textbf{$0/2$};
+\item следующий гейт: \textbf{intertwiner чётного угла и family-triplet}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_edge_coherence_radius_portal_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-coherence-portal-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle}, arXiv:hep-th/9606001.
+\bibitem{v8-coherence-portal-superconnection}
+G.~Roepstorff,
+\emph{Superconnections and the Higgs Field}, arXiv:hep-th/9801040.
+\bibitem{v8-coherence-portal-quiver-morse}
+M.~Harada, G.~Wilkin,
+\emph{Morse theory of the moment map for representations of quivers},
+arXiv:0807.4734.
+\end{thebibliography}

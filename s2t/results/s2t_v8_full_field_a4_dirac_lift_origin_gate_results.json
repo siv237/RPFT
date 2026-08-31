@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-30",
+  "gate": "version8_full_field_a4_dirac_lift_origin_gate",
+  "next_gate": "version8_spacetime_base_geometry_selector_gate",
+  "product_lifts": {
+    "internal_dimension": 21,
+    "internal_frame_checks": 42,
+    "principal_symbol_squares": [
+      1,
+      4
+    ],
+    "same_internal_calculus": true,
+    "scales": [
+      1,
+      2
+    ],
+    "spin_dimension": 4
+  },
+  "registry": {
+    "certificate_sha256": "6b6bcc31c787ce0ef9541d5e96c8a60e42f5cb4f1a9af2dbb5cc8a5446f92a53",
+    "gate_count": 37,
+    "obligation_count": 235
+  },
+  "verdict": {
+    "external_metric_scale_selected": false,
+    "product_dirac_lift_derived_from_finite_parent": false,
+    "relative_a4_weight_three_to_one_stable": true
+  }
+}

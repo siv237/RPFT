@@ -1,0 +1,201 @@
+{
+  "date": "2026-08-29",
+  "field_space": {
+    "endpoint_source_rank": 11,
+    "endpoint_target_rank": 10,
+    "finite_internal_field_real_dimension": 42,
+    "gauge_connection_real_dimension_per_spacetime_one_form": 12,
+    "incidence_orbit_dimension_sequence": [
+      1,
+      4,
+      5,
+      5
+    ],
+    "new_endpoint_fermion_states_added": 0,
+    "new_gauge_generators_added": 0,
+    "physical_gauge_algebra_dimension": 12,
+    "transfer_complex_dimension": 15,
+    "transfer_real_dimension": 30
+  },
+  "gate": "version8_gauge_closed_field_space_superconnection_gate",
+  "infinitesimal_covariance": {
+    "gauge_adjoint_antihermiticity_residual": 2.0578671711084263e-16,
+    "gauge_adjoint_closure_residual": 1.4895204919483639e-15,
+    "gauge_adjoint_generator_ranks": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      4,
+      2,
+      2,
+      2,
+      0
+    ],
+    "gauge_adjoint_real_coefficient_residual": 4.081403289368148e-17,
+    "total_field_representation_antihermiticity_residual": 2.0787224366136396e-16,
+    "transfer_generator_ranks": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      6,
+      8,
+      8,
+      8,
+      14
+    ],
+    "transfer_representation_antihermiticity_residual": 7.850522244195231e-17,
+    "transfer_representation_closure_residual": 6.115252527575577e-16
+  },
+  "parent_action_boundary": {
+    "edge_hodge_selector_derived_on_full_field_bundle": false,
+    "full_BV_gauge_fixed_hessian_ready": false,
+    "gauge_closed_field_bundle_kinematically_assembled": true,
+    "one_standard_superconnection_curvature_available": true,
+    "ordinary_full_square_is_valid_selector": false,
+    "smooth_full_gauge_relative_curvature_through_origin": false
+  },
+  "polar_relative_curvature_fork": {
+    "derived_polar_is_continuous_through_zero": false,
+    "fixed_polar_is_only_stabilizer_covariant": true,
+    "fixed_polar_maximum_full_gauge_covariance_defect": 21.37717887125835,
+    "fixed_polar_minimum_full_gauge_covariance_defect": 2.0830725495487874,
+    "moving_polar_is_derived_from_background_on_constant_rank_stratum": true,
+    "moving_polar_is_full_gauge_covariant": true,
+    "moving_polar_is_independent_new_field": false,
+    "moving_polar_maximum_covariance_residual": 1.3064900422390187e-14,
+    "polar_cokernel_dimension": 1,
+    "polar_equivariance_from_transformed_background_residual": 1.0632882838065495e-14,
+    "polar_is_coisometry": true,
+    "polar_jump_at_zero": 3.1622776601683795,
+    "radial_rank_drop_scan": [
+      {
+        "distance_from_nonzero_polar": 1.0438594044531222e-14,
+        "polar_norm": 3.1622776601683795,
+        "rank": 10,
+        "scale": 1.0
+      },
+      {
+        "distance_from_nonzero_polar": 9.667979955030273e-15,
+        "polar_norm": 3.162277660168379,
+        "rank": 10,
+        "scale": 0.1
+      },
+      {
+        "distance_from_nonzero_polar": 9.472739040651882e-15,
+        "polar_norm": 3.162277660168379,
+        "rank": 10,
+        "scale": 0.001
+      },
+      {
+        "distance_from_nonzero_polar": 9.839700166468102e-15,
+        "polar_norm": 3.1622776601683795,
+        "rank": 10,
+        "scale": 1e-06
+      },
+      {
+        "distance_from_nonzero_polar": 3.1622776601683764,
+        "polar_norm": 0.0,
+        "rank": 0,
+        "scale": 0.0
+      }
+    ]
+  },
+  "superconnection_curvature_covariance": {
+    "finite_samples": [
+      {
+        "endpoint_curvature_residual": 5.255222515082247e-16,
+        "gram_curvature_residual": 1.8068191582078108e-15,
+        "induced_connection_residual": 8.657111287739399e-16,
+        "sample": 0
+      },
+      {
+        "endpoint_curvature_residual": 2.982626890715783e-16,
+        "gram_curvature_residual": 4.098255636073486e-15,
+        "induced_connection_residual": 1.0966669455551057e-15,
+        "sample": 1
+      },
+      {
+        "endpoint_curvature_residual": 4.99502067276611e-16,
+        "gram_curvature_residual": 3.2810185841267843e-15,
+        "induced_connection_residual": 1.1328279233576913e-15,
+        "sample": 2
+      },
+      {
+        "endpoint_curvature_residual": 4.83543277542063e-16,
+        "gram_curvature_residual": 2.7360574252167717e-15,
+        "induced_connection_residual": 1.5305444836658433e-15,
+        "sample": 3
+      },
+      {
+        "endpoint_curvature_residual": 1.9284493186326475e-16,
+        "gram_curvature_residual": 3.88157635579321e-15,
+        "induced_connection_residual": 1.103148002500642e-15,
+        "sample": 4
+      },
+      {
+        "endpoint_curvature_residual": 2.559082198977217e-16,
+        "gram_curvature_residual": 3.597293919785382e-15,
+        "induced_connection_residual": 9.860854701397673e-16,
+        "sample": 5
+      },
+      {
+        "endpoint_curvature_residual": 3.462063625625719e-16,
+        "gram_curvature_residual": 2.3683772836244626e-15,
+        "induced_connection_residual": 7.916529424544322e-16,
+        "sample": 6
+      },
+      {
+        "endpoint_curvature_residual": 5.183616247457546e-16,
+        "gram_curvature_residual": 3.5036874866531665e-15,
+        "induced_connection_residual": 1.0853877689490752e-15,
+        "sample": 7
+      },
+      {
+        "endpoint_curvature_residual": 4.523191007179135e-16,
+        "gram_curvature_residual": 6.303796161967542e-15,
+        "induced_connection_residual": 1.6346638938822826e-15,
+        "sample": 8
+      },
+      {
+        "endpoint_curvature_residual": 2.3699900109022415e-16,
+        "gram_curvature_residual": 3.9932497528286785e-15,
+        "induced_connection_residual": 1.3636928829744528e-15,
+        "sample": 9
+      },
+      {
+        "endpoint_curvature_residual": 3.9311375852900624e-16,
+        "gram_curvature_residual": 4.4862681705880025e-15,
+        "induced_connection_residual": 1.1051299958947164e-15,
+        "sample": 10
+      },
+      {
+        "endpoint_curvature_residual": 3.816171898130338e-16,
+        "gram_curvature_residual": 2.8833551564301457e-15,
+        "induced_connection_residual": 9.94752584757657e-16,
+        "sample": 11
+      }
+    ],
+    "formula": "A_super=diag(nabla_s,nabla_t)+offdiag(A,A*)",
+    "maximum_endpoint_curvature_residual": 5.255222515082247e-16,
+    "maximum_gram_curvature_residual": 6.303796161967542e-15,
+    "maximum_induced_connection_residual": 1.6346638938822826e-15,
+    "standard_curvature_alone_contains_derived_edge_hodge_selector": false,
+    "standard_curvature_contains_gauge_kinetic_transfer_kinetic_and_gram_blocks": true
+  },
+  "verdict": {
+    "field_space_type_mismatch_repaired": true,
+    "full_parent_action_obtained": false,
+    "next_gate": "version8_smooth_relative_background_order_parameter_gate",
+    "positive_result": "15 complex transfer fields and 12 real gauge connections form one closed associated field bundle with covariant standard curvature",
+    "remaining_obstruction": "the polar relative curvature is either fixed and only stabilizer-covariant or moving and discontinuous at the rank-zero origin; the edge-Hodge selector is not a standard full-curvature block",
+    "status": "gauge_closed_field_space_pass_smooth_relative_parent_no_go"
+  }
+}

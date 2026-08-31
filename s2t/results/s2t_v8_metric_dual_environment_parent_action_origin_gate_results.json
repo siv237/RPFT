@@ -1,0 +1,46 @@
+{
+  "common_field_action": {
+    "cross_real_dimension": 12,
+    "field_metric": "K_B=3 I_12",
+    "quadratic_restriction": "S_field=(1/2) x^T K_B x"
+  },
+  "date": "2026-08-30",
+  "exact_counterexample": {
+    "alternative_rate": "R_2=diag(I_6/3,2 I_6/3)",
+    "both_gauge_compatible": true,
+    "both_positive": true,
+    "canonical_rate": "R_1=I_12/3",
+    "distinct_reduced_generator_witness": [
+      0,
+      8
+    ],
+    "not_scale_equivalent": true,
+    "same_field_restriction": true,
+    "same_minimal_jump_dimension": true
+  },
+  "gate": "version8_metric_dual_environment_parent_action_origin_gate",
+  "parent_hessians": {
+    "alternative": "diag(3 I_12,3 I_6,(3/2) I_6)",
+    "canonical": "diag(3 I_12,3 I_12)"
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "0036fef0dc23f2a473435c6afd4ffbc56bbdb406c9a43d7c158e9c69a8958d1c",
+    "gate_count": 17,
+    "obligation_count": 6,
+    "status": "lcf-checked",
+    "total_obligation_count": 116
+  },
+  "riesz_boundary": {
+    "condition_follows_from_existing_field_action": false,
+    "extra_condition": "K_B R=I_12",
+    "lagrange_multiplier_can_impose_but_not_derive_condition": true,
+    "unique_solution": "R=K_B^-1=I_12/3"
+  },
+  "verdict": {
+    "absolute_physical_time_selected": false,
+    "metric_dual_rate_is_unique_given_riesz_condition": true,
+    "next_gate": "full_noise_cotangent_parent_or_fresh_ancilla_source_gate",
+    "riesz_condition_derived_from_old_parent_action": false,
+    "status": "lcf_checked_parent_action_origin_no_go"
+  }
+}

@@ -1,0 +1,162 @@
+\chapter{Admission существующего носителя charged mediator}
+\label{ch:v8-charged-mediator-existing-carrier-admission}
+
+\section{Уточнение семейного разложения}
+
+Предыдущий coarse-аудит применил стандартную семейную тройку ко всему
+трёхкратному charged-singlet типу и получил нулевой fixed layer. Однако
+ранние endpoint-гейты уже различили grading-компоненты:
+\begin{equation}
+ H_{e_R}^{\rm old}=\mathbb C e_R^{(s)}
+ \oplus\operatorname{span}_{\mathbb C}
+ \{e_R^{(t,1)},e_R^{(t,2)}\},
+ \qquad \Gamma=(-1)\oplus I_2.
+ \label{eq:v8-mediator-existing-old-decomposition}
+\end{equation}
+Линия $e_R^{(s)}$ является семейным синглетом. Две положительно
+градуированные линии являются не полной тройкой, а её незавершённой частью.
+Условное минимальное глобальное замыкание добавляет $e_R^{(t,0)}$:
+\begin{equation}
+ H_{e_R}^{\rm ext}=\mathbb C e_R^{(s)}\oplus\mathbb C^3_t
+ \simeq\mathbf1\oplus\mathbf3,
+ \qquad \dim H_{e_R}^{\rm ext}=4.
+ \label{eq:v8-mediator-existing-one-plus-three}
+\end{equation}
+Для семейных генераторов
+\begin{equation}
+ J_a^{\rm ext}=0\oplus J_a^{(\mathbf3)}
+ \label{eq:v8-mediator-existing-family-action}
+\end{equation}
+общий fixed layer одномерен:
+\begin{equation}
+ \bigcap_{a=1}^{3}\ker J_a^{\rm ext}
+ =\mathbb C e_R^{(s)}.
+ \label{eq:v8-mediator-existing-fixed-line}
+\end{equation}
+Тем самым прежнее утверждение «все три старые линии образуют irreducible
+triplet» пересмотрено. Нулевая fixed-line относилась к неверно укрупнённому
+представлению.
+
+\section{Grading выбирает единственный mediator}
+
+Нейтральное расширение содержит
+\begin{equation}
+ H_{\rm n}=\mathbb C s_0\oplus\mathbb C a_0,
+ \qquad \Gamma_{\rm n}=\operatorname{diag}(+1,-1),
+ \qquad Y_{\rm n}=0.
+ \label{eq:v8-mediator-existing-neutral-source}
+\end{equation}
+Ищем family-invariant нечётную карту $T:H_{\rm n}\to H_{e_R}^{\rm ext}$:
+\begin{equation}
+ J_a^{\rm ext}T=0,\qquad
+ \Gamma_{e_R}^{\rm ext}T+T\Gamma_{\rm n}=0.
+ \label{eq:v8-mediator-existing-intertwiner-system}
+\end{equation}
+Точная линейная система имеет восемь неизвестных, ранг семь и потому
+\begin{equation}
+ \dim_{\mathbb C}\operatorname{Hom}_{SO(3)}^{\rm odd}
+ (H_{\rm n},H_{e_R}^{\rm ext})=1,
+ \qquad
+ T=\lambda |e_R^{(s)}\rangle\langle s_0|.
+ \label{eq:v8-mediator-existing-unique-odd-hom}
+\end{equation}
+Поскольку $Y e_R^{(s)}=-e_R^{(s)}$, получаем
+\begin{equation}
+ [Y,T]=-T.
+ \label{eq:v8-mediator-existing-charge-minus}
+\end{equation}
+Real-сопряжённая карта $T^c=JTJ^{-1}$ имеет заряд $+1$ и предоставляет
+нужный environment-transition $b_+$. Следовательно, независимую новую
+charged-singlet пару добавлять не требуется: она уже присутствует в
+Real-удвоении старой singlet-линии.
+
+\section{Совпадение с условным 47-кадром}
+
+Карта $T$ является ровно ветвью $z_0$ ранее классифицированного семейства
+\begin{equation}
+ V(z)=z_0|e_R^{(s)}\rangle\langle s_0|
+ +z_1|e_R^{(t,1)}\rangle\langle a_0|
+ +z_2|e_R^{(t,2)}\rangle\langle a_0|.
+ \label{eq:v8-mediator-existing-vz-family}
+\end{equation}
+Family-invariance и grading совместно сокращают $\mathbb{RP}^2$ до
+единственной точки $[1:0:0]$. Две самосопряжённые квадратуры
+\begin{equation}
+ C_1=T+T^\dagger,\qquad
+ C_2=i(T-T^\dagger)
+ \label{eq:v8-mediator-existing-quadratures}
+\end{equation}
+образуют минимальную $U(1)$-орбиту:
+\begin{equation}
+ i[Y,C_1]=-C_2,\qquad i[Y,C_2]=C_1,
+ \qquad
+ \bigl(\Tr C_r^\dagger C_s\bigr)_{r,s}=2I_2.
+ \label{eq:v8-mediator-existing-u1-gram}
+\end{equation}
+Именно эти направления входят в условный $47$-кадр. Но $45$-кадр их ещё
+не содержит.
+
+\section{Уровни admission}
+
+На сыром $H_{21}$ имеются charged family-singlet линия и её Real-партнёр,
+но нет нейтрального $s_0$. Поэтому
+\begin{equation}
+ N_{\rm raw\ H21}=2/7.
+ \label{eq:v8-mediator-existing-raw-ledger}
+\end{equation}
+После условных расширений $H_{23}$, $H_{24}$ и frame $45\to47$ все
+структурные требования к carrier выполнены:
+\begin{equation}
+ N_{\rm conditional\ carrier}=7/7.
+ \label{eq:v8-mediator-existing-conditional-ledger}
+\end{equation}
+Однако сами расширения не происходят из текущего parent action. Кроме того,
+не выведены резонанс, состояние среды, coupling и механизм обновления:
+\begin{equation}
+ N_{\rm dynamic\ origin}=0/5:
+ \quad\{7\gamma,\rho_E=|0\rangle\langle0|,g,
+ \text{fresh chain},\text{clock--rate anchor}\}.
+ \label{eq:v8-mediator-existing-dynamic-ledger}
+\end{equation}
+
+\begin{theorem}[Условный admission без нового charged типа]
+После точного разложения charged multiplicity как
+$\mathbf1\oplus\mathbf3$ family-invariant нечётный Hom из нейтральной пары
+одномерен и порождён $|e_R^{(s)}\rangle\langle s_0|$. Его Real-сопряжение
+имеет требуемый заряд $+1$. Поэтому условные расширенные carriers допускают
+минимальный mediator без ещё одной charged-singlet пары.
+\end{theorem}
+
+\begin{nogocriterion}[Admission не есть origin]
+Наличие старой singlet-линии не создаёт нейтральный вакуум $s_0$, глобальное
+семейное замыкание, две квадратуры $47$-кадра, резонансную энергию или
+слабый collision-scale. Нельзя переносить условный carrier-pass на текущий
+parent action: его raw admission остаётся $2/7$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item старых charged-singlet линий: \textbf{$3$};
+\item все они образуют irreducible triplet: \textbf{нет};
+\item точное условное разложение: \textbf{$\mathbf1\oplus\mathbf3$};
+\item family-fixed charged dimension: \textbf{$1$};
+\item единственный нечётный invariant mediator: \textbf{$|e_R^{(s)}\rangle\langle s_0|$};
+\item его заряд: \textbf{$-1$};
+\item заряд Real-сопряжённой карты: \textbf{$+1$};
+\item минимальных Hermitian quadratures: \textbf{$2$};
+\item raw $H_{21}$ admission: \textbf{$2/7$};
+\item conditional extended admission: \textbf{$7/7$};
+\item dynamic parent-origin: \textbf{$0/5$};
+\item следующий гейт: \textbf{parent-origin энергии, состояния и скорости}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_existing_carrier_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-mediator-existing-stinespring} W.~F.~Stinespring,
+\emph{Positive Functions on C*-Algebras},
+Proc. Amer. Math. Soc. 6 (1955) 211.
+\bibitem{v8-mediator-existing-haapasalo} E.~Haapasalo,
+\emph{The Choi--Jamio\l{}kowski Isomorphism and Covariant Quantum Channels},
+Quantum Stud. Math. Found. 8 (2021) 1; arXiv:1906.11442.
+\end{thebibliography}

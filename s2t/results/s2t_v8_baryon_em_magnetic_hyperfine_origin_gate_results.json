@@ -1,0 +1,71 @@
+{
+  "contact_dilation": {
+    "contact_scale_selected": false,
+    "dimension": "d",
+    "law": "<delta^(d)(r_i-r_j)>_psi_s = s^d <delta^(d)(r_i-r_j)>_psi"
+  },
+  "date": "2026-08-30",
+  "field": "Q with exact radicals; no Float inputs",
+  "gate": "version8_baryon_em_magnetic_hyperfine_origin_gate",
+  "joint_permutation_symmetric_sector": {
+    "conditional_energy_difference": "-zeta*h/(3*T)",
+    "neutron": {
+      "I_squared": "3/4",
+      "O": "1",
+      "S_squared": "3/4",
+      "joint_I_half_S_half_dimension": 1,
+      "symmetric_weight_space_dimension": 2,
+      "weight_space_dimension": 9
+    },
+    "neutron_minus_proton_O": "-1/3",
+    "proton": {
+      "I_squared": "3/4",
+      "O": "4/3",
+      "S_squared": "3/4",
+      "joint_I_half_S_half_dimension": 1,
+      "symmetric_weight_space_dimension": 2,
+      "weight_space_dimension": 9
+    }
+  },
+  "project_boundary": {
+    "conditional_algebraic_factor_derived": true,
+    "epsilon_color_projector_selects_spin_aroma_state": false,
+    "magnetic_moment_coefficient_derived": false,
+    "physical_magnetic_splitting_derived": false,
+    "physical_spin_carrier_present_before_this_extension": false,
+    "s_wave_spatial_state_derived": false,
+    "weak_isospin_equals_physical_spin": false
+  },
+  "same_total_spin_opposite_difference_signs": true,
+  "spin_half_countermodels": {
+    "pair_singlet": {
+      "neutron_O": "2/3",
+      "neutron_minus_proton_O": "2",
+      "norm": "1",
+      "pair_correlations": {
+        "12": "-3",
+        "13": "0",
+        "23": "0"
+      },
+      "proton_O": "-4/3",
+      "total_spin_square": "3/4"
+    },
+    "pair_triplet": {
+      "neutron_O": "0",
+      "neutron_minus_proton_O": "-4/3",
+      "norm": "1",
+      "pair_correlations": {
+        "12": "1",
+        "13": "-2",
+        "23": "-2"
+      },
+      "proton_O": "4/3",
+      "total_spin_square": "3/4"
+    }
+  },
+  "verdict": {
+    "accept_conditional_symmetric_factor_minus_one_third": true,
+    "next_gate": "version8_baryon_spin_flavor_permutation_carrier_gate",
+    "reject_total_isospin_as_magnetic_hyperfine_operator": true
+  }
+}

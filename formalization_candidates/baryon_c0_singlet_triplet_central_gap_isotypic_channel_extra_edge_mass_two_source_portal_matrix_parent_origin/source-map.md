@@ -1,0 +1,5 @@
+# Source map
+- `s2t/gates/version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_portal_matrix_parent_origin_gate.tex`
+- `s2t/audits/s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_portal_matrix_parent_origin_gate.py`
+- `s2t/results/s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_portal_matrix_parent_origin_gate_results.json`
+- Krajewski, `arXiv:hep-th/9803199`; Stephan, `arXiv:0901.4676`.

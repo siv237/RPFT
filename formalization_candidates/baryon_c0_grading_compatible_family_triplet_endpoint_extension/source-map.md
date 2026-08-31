@@ -1,0 +1,6 @@
+# Карта источников
+
+- `s2t/gates/version8_baryon_c0_so3_closed_environment_source_line_selector_gate.tex`
+- `s2t/gates/version8_baryon_c0_minimal_neutral_endpoint_extension_gate.tex`
+- `s2t/gates/version8_baryon_c0_old_new_gauge_covariant_connector_classification_gate.tex`
+- `s2t/audits/s2t_v8_baryon_c0_grading_compatible_family_triplet_endpoint_extension_gate.py`

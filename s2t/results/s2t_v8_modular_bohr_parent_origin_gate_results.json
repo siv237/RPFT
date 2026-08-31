@@ -1,0 +1,165 @@
+{
+  "candidate_ledger": {
+    "Hodge_metric": {
+      "correct_endpoint_type": true,
+      "eta_derived": false,
+      "gap": "log eta"
+    },
+    "chain_number": {
+      "ambiguity": "N versus 2I-N",
+      "common_Bohr_frequency_for_all_transfer_arrows": true,
+      "continuous_parameter_added": false,
+      "correct_endpoint_type": true,
+      "endpoint_gap": 2,
+      "endpoint_restriction": "N_end=0*I11 direct_sum 2*I10",
+      "gauge_invariant": true,
+      "maximum_Bohr_residual": 4.440892098500626e-16,
+      "operator_on_full_chain": "N=diag(0*I11,1*I21,2*I10)"
+    },
+    "full_QMS_stationary_state": {
+      "modular_gap": 0,
+      "state": "I21/21"
+    },
+    "polar_Gram_pair": {
+      "common_Bohr_parent": false,
+      "cross_arrow_tests": {
+        "QLYR": [
+          {
+            "best_frequency": 1.0,
+            "relative_residual": 0.7071067811865476
+          },
+          {
+            "best_frequency": 1.0,
+            "relative_residual": 0.7071067811865476
+          },
+          {
+            "best_frequency": 1.0,
+            "relative_residual": 0.7071067811865476
+          },
+          {
+            "best_frequency": 1.0,
+            "relative_residual": 0.7071067811865476
+          },
+          {
+            "best_frequency": 1.0,
+            "relative_residual": 0.7071067811865476
+          },
+          {
+            "best_frequency": 1.0,
+            "relative_residual": 0.7071067811865476
+          }
+        ],
+        "XLdR": [
+          {
+            "best_frequency": -1.0,
+            "relative_residual": 1.0
+          },
+          {
+            "best_frequency": -1.0,
+            "relative_residual": 1.0
+          },
+          {
+            "best_frequency": -1.0,
+            "relative_residual": 1.0
+          },
+          {
+            "best_frequency": -1.0,
+            "relative_residual": 1.0
+          },
+          {
+            "best_frequency": -1.0,
+            "relative_residual": 1.0
+          },
+          {
+            "best_frequency": -1.0,
+            "relative_residual": 1.0
+          }
+        ]
+      },
+      "operators": "A0* A0 on C11 and A0 A0* on C10",
+      "reference_linking_frequency": {
+        "best_frequency": 0.0,
+        "relative_residual": 0.0
+      }
+    },
+    "version4_family_Gibbs_state": {
+      "canonical_endpoint_lift": false,
+      "carrier": "M3 family space"
+    }
+  },
+  "date": "2026-08-29",
+  "directed_chain_number_QMS": {
+    "Lindblad_complete_positivity": true,
+    "both_orientations_are_primitive_KMS_processes": true,
+    "endpoint_algebra_preserved": true,
+    "forward_orientation": {
+      "KMS_similarity_self_adjoint_residual": 1.056171682913856e-15,
+      "KMS_symmetry_residual": 8.498374721940739e-18,
+      "beta_Delta": 2.0,
+      "decay_gap": 0.021259967421186937,
+      "endpoint_chain_number": "0*I11 direct_sum 2*I10",
+      "fixed_algebra_dimension": 1,
+      "maximum_eigenvalue": -3.1539123856402373e-16,
+      "minimum_eigenvalue": -6.369261833365089,
+      "orientation": "coisometry_direction_11_to_10",
+      "primitive": true,
+      "source_density_per_state": 0.08094968334264462,
+      "source_total_probability": 0.8904465167690908,
+      "stationarity_residual": 2.974431152679259e-17,
+      "stationary_entropy": 2.733034477092698,
+      "target_density_per_state": 0.010955348323090919,
+      "target_to_source_density_ratio": 0.1353352832366127,
+      "target_total_probability": 0.10955348323090919,
+      "unital_residual": 1.2573000033218179e-15,
+      "upward_to_downward_rate_ratio": 0.1353352832366127
+    },
+    "reverse_orientation": {
+      "KMS_similarity_self_adjoint_residual": 2.175583928816829e-15,
+      "KMS_symmetry_residual": 6.798699777552591e-17,
+      "beta_Delta": -2.0,
+      "decay_gap": 0.1765195741901775,
+      "endpoint_chain_number": "2*I11 direct_sum 0*I10",
+      "fixed_algebra_dimension": 1,
+      "maximum_eigenvalue": 7.105427360394223e-15,
+      "minimum_eigenvalue": -62.45492403067317,
+      "orientation": "reversed_chain_direction_10_to_11",
+      "primitive": true,
+      "source_density_per_state": 0.011779872677787675,
+      "source_total_probability": 0.12957859945566444,
+      "stationarity_residual": 1.9078803932353506e-16,
+      "stationary_entropy": 2.7005201080656454,
+      "target_density_per_state": 0.08704214005443356,
+      "target_to_source_density_ratio": 7.38905609893065,
+      "target_total_probability": 0.8704214005443356,
+      "unital_residual": 4.5288390936029406e-15,
+      "upward_to_downward_rate_ratio": 7.38905609893065
+    },
+    "zero_gap_recovers_symmetric_generator_residual": 2.0350724194510405e-15
+  },
+  "gate": "version8_modular_bohr_parent_origin_gate",
+  "interpretation_boundary": {
+    "absolute_time_scale_derived": false,
+    "parameter_free_dimensionless_Bohr_gap_candidate_found": true,
+    "physical_energy_unit_derived": false,
+    "physical_inverse_temperature_derived": false,
+    "status": "chain_number_Bohr_parent_conditional_pass_twofold_orientation_open",
+    "unique_oriented_modular_state_derived": false
+  },
+  "orientation_audit": {
+    "KMS_state_is_orientation_sensitive": true,
+    "chain_action_norm_is_orientation_blind": true,
+    "coisometry_direction": "C11 to C10",
+    "forward_density_ratio": 0.1353352832366127,
+    "orientation_is_continuous_freedom": false,
+    "orientation_selected_by_existing_parent_action": false,
+    "rank_defect": 1,
+    "remaining_ambiguity": "twofold discrete orientation",
+    "reverse_density_ratio": 7.38905609893065
+  },
+  "verdict": {
+    "chain_number_supplies_correct_common_Bohr_grading": true,
+    "next_gate": "version8_chain_orientation_index_defect_selector_gate",
+    "old_current_generator_must_be_replaced_by_directed_pairs": true,
+    "one_unique_physical_KMS_generator_derived": false
+  }
+}

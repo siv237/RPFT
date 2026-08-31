@@ -1,0 +1,130 @@
+\chapter{Допуск Real-ориентированного голоморфного цикла}
+\label{ch:v8-horizontal-phase-real-oriented-cycle-admission-gate}
+
+Предыдущий гейт нашёл три обычных цикла, но показал сокращение их
+горизонтального заряда. Остаётся проверить более сильное предположение:
+может ли вещественная структура превратить сопряжённые стрелки в независимый
+ориентированный голоморфный путь.
+
+Пусть $N$ --- повышающая матрица полной одиннадцатирёберной опоры в порядке
+вершин $(Q_L,L_L,X_L,Y_L\mid u_R,d_R,e_R,X_R,Y_R)$. Она имеет блочный вид
+\begin{equation}
+ N=\begin{pmatrix}0_{4}&0\\A_{5\times4}&0_{5}\end{pmatrix},
+ \qquad N^2=0.
+ \label{eq:v8-real-oriented-raising-nilpotence}
+\end{equation}
+Следовательно, чисто голоморфный двуслойный колчан не содержит даже пути
+длины два, а значит, не содержит направленного цикла.
+
+Физическая Real-структура добавляет обратный блок не как новое поле, а как
+эрмитово сопряжение:
+\begin{equation}
+ N^{\rm rev}=N^*,
+ \qquad
+ D_{\mathbb R}=N+N^*.
+ \label{eq:v8-real-oriented-real-completion}
+\end{equation}
+Поэтому двадцатимерный комплексный носитель переноса остаётся
+сорокамерным вещественным носителем,
+\begin{equation}
+ \dim_{\mathbb R}\mathcal T_{\mathbb R}=2\cdot20=40,
+ \label{eq:v8-real-oriented-physical-dimension}
+\end{equation}
+а объявление обратной копии независимой дало бы
+\begin{equation}
+ \dim_{\mathbb R}(\mathcal T\oplus\mathcal T^{\rm rev})=4\cdot20=80,
+ \qquad \Delta\dim_{\mathbb R}=40.
+ \label{eq:v8-real-oriented-independent-reverse-dimension}
+\end{equation}
+Это было бы новым полевым сектором, а не следствием Real-завершения.
+
+Для градуировки $\Gamma=\operatorname{diag}(I_4,-I_5)$ выполнено
+\begin{equation}
+ \Gamma D_{\mathbb R}+D_{\mathbb R}\Gamma=0.
+ \label{eq:v8-real-oriented-odd-grading}
+\end{equation}
+Отсюда нечётные следовые слова исчезают. Более того, горизонтальная фаза
+действует матрицей
+$G(z)=\operatorname{diag}(I_4,z^4,z^3I_4)$ и даёт точное подобие
+\begin{equation}
+ D_{\mathbb R}(z)=G(z)D_{\mathbb R}(1)G(z)^{-1}.
+ \label{eq:v8-real-oriented-phase-similarity}
+\end{equation}
+Обратные стрелки автоматически получают противоположные веса $-4$ и $-3$.
+На полном представителе опоры первые моменты равны
+\begin{equation}
+ \bigl(\Tr D,\Tr D^3,\Tr D^5\bigr)=(0,0,0),
+ \qquad
+ \bigl(\Tr D^2,\Tr D^4,\Tr D^6\bigr)=(22,110,682),
+ \label{eq:v8-real-oriented-trace-moments}
+\end{equation}
+и не зависят от $z$. В вершинной записи сокращение имеет вид
+\begin{equation}
+ (4,3,3,3,3)+(-4,-3,-3,-3,-3)=0.
+ \label{eq:v8-real-oriented-charge-cancellation}
+\end{equation}
+
+Наконец, нельзя исправить ситуацию фазовым переопределением формальной
+обратной стрелки. Если $b=\alpha a^*$ и $b^*=\beta a$, то сохранение
+ориентированного предпроективного знака требует
+\begin{equation}
+ \alpha\beta=-1,
+ \label{eq:v8-real-oriented-formal-sign}
+\end{equation}
+тогда как положительная инволюция требует
+\begin{equation}
+ \beta=\overline\alpha,
+ \qquad
+ \alpha\beta=|\alpha|^2\geq0.
+ \label{eq:v8-real-oriented-positive-involution}
+\end{equation}
+Условия несовместимы. Это воспроизводит на нынешнем полном носителе ранний
+запрет производного отображения момента: формальная ориентация требует
+дополнительной симплектической поляризации.
+
+\begin{theorem}[Real-завершение без голоморфного цикла]
+Чисто повышающая часть полного двуслойного колчана удовлетворяет $N^2=0$.
+Real-обратные стрелки однозначно равны сопряжённым и несут противоположные
+фазовые веса. Полный нечётный оператор меняется вдоль горизонтальной
+окружности подобием, поэтому все его спектрально-следовые слова фазонезависимы.
+\end{theorem}
+
+\begin{nogocriterion}[No-go независимой Real-обратной стрелки]
+Нельзя считать $N^*$ новым голоморфным полем: это удваивает вещественный
+носитель переноса с $40$ до $80$ направлений. Нельзя также вставить минус
+в формальную обратную стрелку, сохраняя положительную инволюцию. Следующий
+гейт может рассматривать комплексную симплектическую поляризацию только как
+явно проверяемое расширение архитектуры с собственной формой и мерой.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item чисто повышающий квадрат: \textbf{$N^2=0$};
+ \item направленные голоморфные циклы: \textbf{$0$};
+ \item Real-обратная стрелка независима: \textbf{нет};
+ \item физическая размерность переноса: \textbf{$40$ вещественных};
+ \item размерность при независимой обратной копии: \textbf{$80$};
+ \item нечётные следовые моменты: \textbf{$(0,0,0)$};
+ \item чётные моменты степеней $2,4,6$: \textbf{$(22,110,682)$};
+ \item действие горизонтальной фазы: \textbf{подобие};
+ \item суммарный заряд Real-пары: \textbf{$0$};
+ \item совместимость формального минуса с положительной инволюцией:
+ \textbf{нет};
+ \item Real-ориентированный цикл поднимает моду: \textbf{нет};
+ \item следующий гейт: \textbf{допуск комплексной симплектической
+ поляризации}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_horizontal_phase_real_oriented_cycle_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-real-oriented-preprojective}
+W.~Crawley-Boevey,
+\emph{Poisson structures on moduli spaces of representations},
+J. Algebra 325 (2011), 205--215; arXiv:math/0502301.
+\bibitem{v8-real-oriented-krajewski}
+T.~Krajewski, \emph{Classification of Finite Spectral Triples},
+J. Geom. Phys. 28 (1998), 1--30; arXiv:hep-th/9701081.
+\end{thebibliography}

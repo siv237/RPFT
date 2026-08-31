@@ -1,0 +1,65 @@
+{
+  "canonical_witnesses": {
+    "both_SO3_invariant": true,
+    "both_positive_trace_one": true,
+    "equal_per_arrow": {
+      "entropy": "log(4)",
+      "purity": "1/4",
+      "relative_rate": 1,
+      "state": "I4/4"
+    },
+    "equal_per_sector": {
+      "entropy": "log(12)/2",
+      "purity": "1/3",
+      "relative_rate": "1/3",
+      "state": "P1/2 + P3/6"
+    }
+  },
+  "central_trace_simplex": {
+    "algebra": "C direct_sum M3(C)",
+    "free_parameter_interval": "0<p<1",
+    "relative_rate": "(1-p)/(3p)",
+    "state": "p P1 + (1-p) P3/3",
+    "unique_trace": false
+  },
+  "date": "2026-08-30",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_family_triplet_singlet_relative_rate_selector_gate",
+  "grading_obstruction_to_M4_trace": {
+    "cross_block_constraint_rank": 6,
+    "even_algebra_dimension": 10,
+    "full_M4_dimension": 16,
+    "full_M4_even": false,
+    "grading": "diag(-1,+1,+1,+1)"
+  },
+  "kms": {
+    "common_reverse_forward_ratio": "exp(-beta omega)",
+    "relative_rate_selected": false,
+    "singlet_triplet_forward_ratio": "gamma_3/gamma_1"
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_trace_weight_parent_origin_gate",
+  "selector_ledger": {
+    "KMS_detailed_balance": false,
+    "SO3_symmetry": false,
+    "central_trace": false,
+    "derived_selectors": 0,
+    "maximum_entropy": false,
+    "primitivity_support": false,
+    "source_bridge": false,
+    "tested_selectors": 6
+  },
+  "symmetry_commutant": {
+    "dimension": 2,
+    "free_ratio": "r=gamma_3/gamma_1 > 0",
+    "general_covariance": "gamma_1 P_1 + gamma_3 P_3",
+    "representation": "1 + 3",
+    "symmetric_constraint_rank": 8
+  },
+  "verdict": {
+    "M4_unique_trace_available_without_breaking_grading": false,
+    "physical_single_c0_map_derived": false,
+    "relative_rate_selected": false,
+    "sector_balanced_candidate": "r=1/3",
+    "trace_isotropic_candidate": "r=1"
+  }
+}

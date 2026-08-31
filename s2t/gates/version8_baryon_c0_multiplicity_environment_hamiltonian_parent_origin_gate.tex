@@ -1,0 +1,132 @@
+\chapter{Происхождение multiplicity-Hamiltonian из родительского действия}
+\label{ch:v8-baryon-c0-multiplicity-environment-hamiltonian-parent-origin-gate}
+
+Предыдущий гейт локализовал минимальный селектор как одноосный Hamiltonian
+$h=\varepsilon I_3+\Delta(I_3-P)$. Проверим все уже существующие
+квадратичные источники на multiplicity-пространстве.
+
+Старый parent не содержит новых connector-координат, поэтому
+\begin{equation}
+ H_{\rm old}\big|_{\mathcal E_{\rm mult}}=0_3.
+ \label{eq:v8-baryon-c0-parent-origin-old-zero-hamiltonian}
+\end{equation}
+Единственный след полного $M_5(\mathbb C)$-замыкания даёт только
+\begin{equation}
+ H_{\tau_5}=\alpha K_{\rm conn}^{(5)}
+ =\frac{2\alpha}{5}I_3,
+ \qquad P_{\min}(H_{\tau_5})=I_3.
+ \label{eq:v8-baryon-c0-parent-origin-m5-scalar-hamiltonian}
+\end{equation}
+Аналогично полный изотропный процесс имеет
+\begin{equation}
+ C_{\rm full}=I_3,
+ \qquad H_C=\alpha_C I_3,
+ \label{eq:v8-baryon-c0-parent-origin-kossakowski-scalar}
+\end{equation}
+так что ни trace-метрика, ни Kossakowski-ковариация не имеют выделенной
+ground line.
+
+\section{Локальные веса допускают, но не выводят анизотропию}
+
+До полного Hom-замыкания концевая алгебра разрешает семейство
+\begin{equation}
+ H_{\rm loc}(p,q)
+ =\operatorname{diag}(p_0+q,p_1+q,p_2+q),
+ \qquad p_0+p_1+p_2+2q=1.
+ \label{eq:v8-baryon-c0-parent-origin-local-trace-hamiltonian}
+\end{equation}
+Два положительных нормированных следа
+\begin{equation}
+ (p_0,p_1,p_2,q)_A=(1/10,1/5,1/2,1/10),
+ \qquad
+ (p_0,p_1,p_2,q)_B=(1/2,1/10,1/5,1/10)
+ \label{eq:v8-baryon-c0-parent-origin-local-trace-witnesses}
+\end{equation}
+выбирают соответственно разные минимальные coordinate projectors. Значит,
+локальная алгебра предоставляет форму допустимого Hamiltonian, но её
+трёхмерный trace-симплекс не является селектором.
+
+\section{Почему ранний семейный оператор не переносится автоматически}
+
+На семейном qutrit-носителе Version~4--6 имеется точная матрица
+\begin{equation}
+ R_4^+=\begin{pmatrix}
+ 27/2&-2&3/2\\
+ -2&35/2&-5/2\\
+ 3/2&-5/2&17
+ \end{pmatrix}.
+ \label{eq:v8-baryon-c0-parent-origin-family-r4-plus}
+\end{equation}
+Она действительно анизотропна и имеет простой спектр, поскольку
+\begin{equation}
+ \chi_{R_4^+}(\lambda)
+ =\frac{4\lambda^3-192\lambda^2+3003\lambda-15358}{4},
+ \qquad
+ \operatorname{disc}\chi_{R_4^+}=\frac{164241}{16}>0.
+ \label{eq:v8-baryon-c0-parent-origin-r4-simple-spectrum}
+\end{equation}
+Однако текущие multiplicity-координаты являются тремя различными
+endpoint-бимодульными метками с проекторами $\Pi_i$. Прямой перенос
+нарушает эту диагональность:
+\begin{equation}
+ \sum_{i=0}^{2}\lVert[R_4^+,\Pi_i]\rVert_{\rm HS}^2=50\ne0.
+ \label{eq:v8-baryon-c0-parent-origin-r4-endpoint-commutator}
+\end{equation}
+
+Чтобы использовать семейный оператор, необходима типизированная карта
+\begin{equation}
+ T:\mathcal E_{\rm fam}\longrightarrow\mathcal E_{\rm mult},
+ \qquad h_T=T R_4^+T^{\mathsf T}.
+ \label{eq:v8-baryon-c0-parent-origin-family-multiplicity-map}
+\end{equation}
+Но обе трёхмерные multiplicity-реплики тривиальны относительно уже
+сопоставленных симметрий, поэтому
+\begin{equation}
+ \operatorname{Hom}_G(\mathcal E_{\rm fam},\mathcal E_{\rm mult})
+ \simeq M_3(\mathbb R),
+ \qquad \dim_{\mathbb R}=9,
+ \label{eq:v8-baryon-c0-parent-origin-intertwiner-space}
+\end{equation}
+а после изометрического ограничения остаётся всё $O(3)$. Ни конкретный
+$T$, ни его согласование с endpoint-проекторами текущим parent не заданы.
+Кроме того, $R_4^+$ без отдельного размерного множителя даёт только
+безразмерные относительные щели.
+
+Итоговый аудит источников равен
+\begin{equation}
+ N_{\rm parent\ origin}=0/5:
+ \quad\{H_{\rm old},\tau_5,C_{\rm full},
+ \text{local trace simplex},R_4^+\}.
+ \label{eq:v8-baryon-c0-parent-origin-candidate-ledger}
+\end{equation}
+
+\begin{theorem}[Изотропные источники и нетипизированный near miss]
+Все собственные текущие источники на multiplicity-среде равны нулю,
+скалярны или принадлежат невыбранному trace-симплексу. Ранний $R_4^+$ имеет
+достаточную анизотропию, но действует на другом носителе и не допускает
+канонического переноса без новой карты $T$.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет неявного отождествления двух qutrit]
+Совпадение размерностей $\mathcal E_{\rm fam}$ и $\mathcal E_{\rm mult}$
+не задаёт их отождествления. Нельзя использовать $R_4^+$ как Hamiltonian
+среды до предъявления gauge-, Real-, grading- и endpoint-совместимого
+интертвейнера $T$ и общего размерного коэффициента.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item старый parent на multiplicity-среде: \textbf{$0_3$};
+\item полный $M_5$ trace-source: \textbf{скалярный};
+\item полный Kossakowski-source: \textbf{скалярный};
+\item локальный trace-source: \textbf{анизотропный, но не выбран};
+\item $R_4^+$: \textbf{простой спектр, чужой носитель};
+\item endpoint-коммутаторный остаток $R_4^+$: \textbf{$50$};
+\item пространство формальных межqutrit-карт: \textbf{$M_3(\mathbb R)$};
+\item его размерность: \textbf{$9$};
+\item выведенных parent-источников: \textbf{$0/5$};
+\item направление и абсолютная щель: \textbf{не выведены};
+\item следующий гейт: \textbf{допуск family-to-multiplicity intertwiner}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_multiplicity_environment_hamiltonian_parent_origin_gate_results.json}.

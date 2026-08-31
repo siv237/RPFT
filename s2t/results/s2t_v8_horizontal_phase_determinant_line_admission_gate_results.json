@@ -1,0 +1,42 @@
+{
+  "cofactor_line": {
+    "horizontal_phase_weight": 33,
+    "norm_squared": 2,
+    "primitive_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "relative_determinant_hypercharge": 0,
+    "source_determinant_hypercharge": -2,
+    "target_determinant_hypercharge": -2
+  },
+  "date": "2026-08-30",
+  "gate": "version8_horizontal_phase_determinant_line_admission_gate",
+  "next_gate": "version8_horizontal_phase_heavy_arrow_cycle_admission_gate",
+  "registry": {
+    "certificate_sha256": "c5e408f4c514a48dccefde6f79c910fc5c9a52b2216acc6afd64e0678949b34f",
+    "gate_count": 42,
+    "obligation_count": 288
+  },
+  "scalar_trivialization": {
+    "canonical_contraction_derived": false,
+    "distinct_vacuum_normalized_contractions": 2,
+    "invariant_linear_functional_dimension": 0,
+    "real_pair_retains_phase": false
+  },
+  "verdict": {
+    "canonical_gauge_invariant_scalar_exists": false,
+    "determinant_line_lifts_horizontal_mode": false,
+    "manual_vacuum_kernel_contraction_admitted": false,
+    "phase_sensitive_cofactor_exists": true
+  }
+}

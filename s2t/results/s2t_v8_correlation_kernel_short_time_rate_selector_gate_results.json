@@ -1,0 +1,238 @@
+{
+  "date": "2026-08-29",
+  "finite_time_resolution_barrier": {
+    "interpretation": "fast modes require sufficiently short-time or high-precision kernel data",
+    "modes_below_machine_epsilon": 163,
+    "probe_tau": 1.4,
+    "probe_weights": [
+      0.01,
+      100.0,
+      0.3,
+      2.0,
+      0.7,
+      4.0
+    ]
+  },
+  "gate": "version8_correlation_kernel_short_time_rate_selector_gate",
+  "project_source_audit": {
+    "current_kernels_are_generated_from_already_chosen_generators": true,
+    "independent_physical_endpoint_C_tau_matrix_found": false,
+    "toe_bridge_relation": "C_sigma is postulated only up to an approximate heat-kernel relation",
+    "toe_bridge_uses_symbol_sim": true,
+    "toe_kernel_carrier": "spacetime/compact geometric carrier, not M11 direct_sum M10 endpoint algebra",
+    "version8_existing_full_kernel_test": "synthetic C5 cospectral control",
+    "version8_result_says_physical_kernel_derived": false
+  },
+  "rate_identifiability": {
+    "design_condition_number": 4.337730022343558,
+    "design_rank": 6,
+    "formula_known_tau": "L=tau^(-1) log C_tau",
+    "formula_short_time": "L=dC_tau/dtau at tau=0",
+    "logarithmic_tests": [
+      {
+        "fit_residual": 3.448433147388593e-12,
+        "minimum_symmetric_kernel_eigenvalue": 0.8337531541501637,
+        "recovered_weights": [
+          0.9613285625092416,
+          0.5118483093211823,
+          0.45096356822544176,
+          1.4042721924472998,
+          1.0967825761780259,
+          0.4047269258672424
+        ],
+        "relative_generator_error": 8.929900894570843e-14,
+        "relative_weight_error": 3.859248490041748e-15,
+        "tau": 0.03,
+        "true_weights": [
+          0.9613285625092416,
+          0.5118483093211894,
+          0.4509635682254405,
+          1.4042721924472985,
+          1.0967825761780292,
+          0.40472692586724474
+        ],
+        "unknown_tau_normalized_rate_error": 1.5596929546405977e-15
+      },
+      {
+        "fit_residual": 1.976005440001186e-12,
+        "minimum_symmetric_kernel_eigenvalue": 0.4863409695261604,
+        "recovered_weights": [
+          1.91063589545408,
+          2.4791816211706235,
+          0.4249287146331676,
+          2.362587114808657,
+          0.13387812854534367,
+          1.6170762194197024
+        ],
+        "relative_generator_error": 2.4615180811350184e-14,
+        "relative_weight_error": 6.477741155814752e-16,
+        "tau": 0.08,
+        "true_weights": [
+          1.9106358954540812,
+          2.4791816211706244,
+          0.4249287146331671,
+          2.3625871148086572,
+          0.1338781285453426,
+          1.6170762194197044
+        ],
+        "unknown_tau_normalized_rate_error": 2.8284505357266353e-16
+      },
+      {
+        "fit_residual": 1.0894732298277894e-12,
+        "minimum_symmetric_kernel_eigenvalue": 0.16163262452534147,
+        "recovered_weights": [
+          0.2725262069959117,
+          1.641737826558359,
+          0.16246292339929055,
+          0.3170741495069601,
+          2.6844590544586286,
+          0.6204212146546625
+        ],
+        "relative_generator_error": 2.236097036297874e-14,
+        "relative_weight_error": 9.737678756109016e-16,
+        "tau": 0.2,
+        "true_weights": [
+          0.2725262069959107,
+          1.6417378265583584,
+          0.16246292339929153,
+          0.3170741495069597,
+          2.6844590544586313,
+          0.620421214654663
+        ],
+        "unknown_tau_normalized_rate_error": 5.72027532162038e-16
+      },
+      {
+        "fit_residual": 2.8035411280190746e-13,
+        "minimum_symmetric_kernel_eigenvalue": 0.02155595915449523,
+        "recovered_weights": [
+          1.7274563280295254,
+          0.3008211659750315,
+          0.5361860642450634,
+          2.6898122449205197,
+          0.6566659176217845,
+          1.5338495833517456
+        ],
+        "relative_generator_error": 4.77531162068497e-15,
+        "relative_weight_error": 6.68398355039436e-16,
+        "tau": 0.5,
+        "true_weights": [
+          1.7274563280295245,
+          0.30082116597503306,
+          0.5361860642450635,
+          2.689812244920521,
+          0.6566659176217836,
+          1.533849583351746
+        ],
+        "unknown_tau_normalized_rate_error": 3.2226661671833417e-16
+      },
+      {
+        "fit_residual": 7.354325204626274e-13,
+        "minimum_symmetric_kernel_eigenvalue": 0.0002496833940290176,
+        "recovered_weights": [
+          1.0003099332864611,
+          1.3340061861500945,
+          1.721362181388583,
+          0.8708083356215335,
+          0.25527956836691557,
+          2.9802449444377483
+        ],
+        "relative_generator_error": 1.1550843387056804e-14,
+        "relative_weight_error": 4.2110106518396437e-16,
+        "tau": 0.9,
+        "true_weights": [
+          1.000309933286462,
+          1.3340061861500945,
+          1.7213621813885838,
+          0.8708083356215324,
+          0.2552795683669153,
+          2.980244944437749
+        ],
+        "unknown_tau_normalized_rate_error": 3.1714616716212006e-16
+      },
+      {
+        "fit_residual": 5.802091510273105e-12,
+        "minimum_symmetric_kernel_eigenvalue": 3.6617471881141467e-06,
+        "recovered_weights": [
+          2.222036603110665,
+          0.12514541299692405,
+          1.7194122565273615,
+          0.45505395255178005,
+          0.14310358834530212,
+          0.10688324170447072
+        ],
+        "relative_generator_error": 1.161723578413437e-13,
+        "relative_weight_error": 5.3129841673080775e-14,
+        "tau": 1.4,
+        "true_weights": [
+          2.2220366031107734,
+          0.12514541299688442,
+          1.7194122565273993,
+          0.455053952551699,
+          0.14310358834530518,
+          0.10688324170442966
+        ],
+        "unknown_tau_normalized_rate_error": 3.291170721943579e-14
+      }
+    ],
+    "six_relative_rates_reconstructible_from_full_operator_kernel": true,
+    "term_order": [
+      "linking",
+      "SU3",
+      "SU2",
+      "U1",
+      "QLYR",
+      "XLdR"
+    ]
+  },
+  "short_time_finite_difference": {
+    "error_decreases_toward_tau_zero": true,
+    "tests": [
+      {
+        "epsilon": 0.1,
+        "fit_residual": 1.538320035362173,
+        "relative_weight_error": 0.21520882056397977
+      },
+      {
+        "epsilon": 0.03,
+        "fit_residual": 0.5654187900247213,
+        "relative_weight_error": 0.07377533528839694
+      },
+      {
+        "epsilon": 0.01,
+        "fit_residual": 0.2003829540976684,
+        "relative_weight_error": 0.02560455303599703
+      },
+      {
+        "epsilon": 0.003,
+        "fit_residual": 0.061440009407444034,
+        "relative_weight_error": 0.007792561814663762
+      },
+      {
+        "epsilon": 0.001,
+        "fit_residual": 0.020608694253369465,
+        "relative_weight_error": 0.0026082710747402003
+      }
+    ],
+    "true_weights": [
+      0.7,
+      1.3,
+      0.9,
+      1.1,
+      1.7,
+      0.4
+    ]
+  },
+  "unknown_time_calibration": {
+    "absolute_common_rate_recoverable": false,
+    "log_kernel_recovers": "tau times all six rates",
+    "normalized_relative_rates_recoverable": true,
+    "reason": "tau and the overall generator scale occur only as a product"
+  },
+  "verdict": {
+    "calibrated_kernel_would_also_select_absolute_rate": true,
+    "current_project_supplies_independent_physical_full_kernel": false,
+    "full_kernel_would_select_five_relative_rate_freedoms": true,
+    "next_gate": "version8_physical_correlation_kernel_parent_action_origin_gate",
+    "status": "conditional_exact_rate_reconstruction_pass_physical_correlation_kernel_absent"
+  }
+}

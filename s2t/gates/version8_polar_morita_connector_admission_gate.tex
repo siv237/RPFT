@@ -1,0 +1,172 @@
+\chapter{критический аудит-допуск полярного коннектора Мориты}
+\label{ch:v8-polar-morita-connector-admission-gate}
+
+\section{Проверяемая зацепка}
+
+Том~VII оставил факторную развилку
+\begin{equation}
+ M_{22}(\mathbb C)\oplus M_{21}(\mathbb C)
+\end{equation}
+и полный угол $\operatorname{Hom}(\mathbb C^{21},\mathbb C^{22})$
+размерности $462$. Алгебраически один ненулевой элемент этого угла вместе
+с полными диагональными факторами порождает $M_{43}(\mathbb C)$. Поэтому
+возник кандидат
+\begin{equation}
+ T_0=\operatorname{diag}(I_{11},U^*),
+ \label{eq:v8-polar-formal-connector}
+\end{equation}
+где $U:\mathbb C^{11}\to\mathbb C^{10}$ есть уже выведенная полярная
+коизометрия фоновой инцидентности.
+
+Первичная проверка матриц дала
+\begin{equation}
+ T_0^*T_0=I_{21},\qquad
+ T_0T_0^*=I_{11}\oplus P,
+ \qquad I_{11}-P=Q,\quad\rank Q=1.
+\end{equation}
+Но перед физическим допуском необходимо проверить смысл двух совпавших
+одиннадцатимерных пространств.
+
+\section{Два разных значения числа одиннадцать}
+
+В рёберном Ходж-комплексе
+\begin{equation}
+ \mathcal K_E=\mathbb C^{E_{\rm new}}\oplus
+              \mathbb C^{E_{\rm new}},
+ \qquad |E_{\rm new}|=11.
+ \label{eq:v8-polar-edge-label-space}
+\end{equation}
+Здесь базис первого $\mathbb C^{11}$ состоит из одиннадцати \emph{меток
+разрешённых стрелок}. Это сжатие кратностей полного модуля
+\begin{equation}
+ \mathcal E_{\rm new}
+ =\bigoplus_{e\in E_{\rm new}}
+   \operatorname{Hom}(\mathcal H_{s(e)},\mathcal H_{t(e)}),
+ \qquad \dim_{\mathbb C}\mathcal E_{\rm new}=36.
+ \label{eq:v8-polar-full-arrow-module}
+\end{equation}
+
+В связывающем концевом носителе
+\begin{equation}
+ \mathcal K_V=\mathbb C^{11}_{\rm state}\oplus\mathbb C^{10}_{\rm state},
+\end{equation}
+первое пространство есть физический левый модуль
+\begin{equation}
+ \mathbb C^{11}_{\rm state}
+ =Q_L^{(6)}\oplus L_L^{(2)}\oplus X_L^{(1)}\oplus Y_L^{(2)}.
+ \label{eq:v8-polar-left-state-space}
+\end{equation}
+Следовательно, равенство размерностей не задаёт оператор
+$I_{11}:\mathbb C^{11}_{\rm state}\to\mathbb C^{E_{\rm new}}$.
+Формула~\eqref{eq:v8-polar-formal-connector} скрыто выбрала такой
+изоморфизм.
+
+\section{Неустранимая свобода отождествления}
+
+После явного обозначения скрытого выбора формальный кандидат имеет вид
+\begin{equation}
+ T_j=\operatorname{diag}(j,jU^*),
+ \qquad
+ j:\mathbb C^{11}_{\rm state}\longrightarrow
+       \mathbb C^{E_{\rm new}}.
+ \label{eq:v8-polar-j-family}
+\end{equation}
+Условие изометрии требует $j\in U(11)$, но не выбирает его. Пространство
+кандидатов имеет вещественную размерность
+\begin{equation}
+ \dim_{\mathbb R}U(11)=121.
+\end{equation}
+
+Пусть $X_E$ есть обмен двух копий пространства меток стрелок, а
+$X_V=\left(\begin{smallmatrix}0&U^*\\U&0\end{smallmatrix}\right)$ ---
+полярный обмен физических пространств концевых секторов. Для каждого $j\in U(11)$
+получаем
+\begin{equation}
+ X_ET_j-T_jX_V
+ =\begin{pmatrix}0&0\\jQ&0\end{pmatrix},
+ \qquad
+ \|X_ET_j-T_jX_V\|_{\rm HS}=1.
+ \label{eq:v8-polar-j-independent-defect}
+\end{equation}
+Поэтому Ходж-дефект видит индексную линию, но совершенно не различает
+$121$ параметр отождествления $j$. Восемь случайных унитарных $j$ дали одну
+и ту же норму дефекта, оставаясь попарно далеко друг от друга.
+
+Сохранение линии $\ker A_0$ действительно дополняет $U^*$ до унитарной
+карты между физическими пространствами состояний размерности $11$. Однако оно
+не создаёт отсутствующее отображение из пространства состояний в пространство
+меток стрелок. Поэтому индексное дополнение не исправляет типизацию
+$I_{11}$.
+
+\section{Что остаётся верным алгебраически}
+
+Если произвольно выбрать $j$, то $T_j$ является ненулевым элементом
+$M_{22\times21}(\mathbb C)$. Для любого его ненулевого элемента
+\begin{equation}
+ E_{ap}T_jE_{qb}=(T_j)_{pq}E_{ab},
+\end{equation}
+поэтому лево-правый линейная оболочка имеет ранг $462$, а коммутант
+$M_{22}\oplus M_{21}$ уменьшается с двух скаляров до одного. Условно
+получается
+\begin{equation}
+ \operatorname{Alg}^*(M_{22}\oplus M_{21},T_j,T_j^*)=M_{43}(\mathbb C).
+\end{equation}
+Это уточняет лишь арифметику: $462$ есть размер порождаемого бимодуля, а не
+обязательное число независимых коэффициентов. Но вместо них остаётся
+невыведенный физический изоморфизм $j$. Связывающая алгебра не выбирает
+этот элемент сама \cite{v8-polar-morita-bert}; конечная спектральная тройка
+требует заданных представлений и допустимого оператора Дирака
+\cite{v8-polar-morita-krajewski,v8-polar-morita-cacic}.
+
+\begin{theorem}[Запрет размерностного полярного коннектора]
+Формальный оператор $\operatorname{diag}(I_{11},U^*)$ является корректной
+изометрией только после невыведенного отождествления пространства
+одиннадцати стрелочных меток с одиннадцатимерным физическим модулем состояний.
+Существующие полярная, Ходж- и индексная структуры не выбирают это
+отождествление: допустимо всё семейство $U(11)$. Поэтому первый примитив
+следующей программы ещё не получен.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет отождествления по размерности]
+Нельзя использовать матрицу $I_{11}$ между двумя носителями только потому,
+что их координатные модели имеют одинаковую размерность. Следующий маршрут
+допустим лишь после классификации эквивариантных отображений от полного
+физического модуля стрелок $\mathcal E_{\rm new}$ к модулю концевых секторов с
+учётом представления конечной алгебры, вещественной структуры и градуировки.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item формальная изометрия после выбора $j$: \textbf{получена};
+ \item размер полного орбитального угла: \textbf{$462$};
+ \item $462$ независимых коэффициента обязательны: \textbf{нет};
+ \item первый $\mathbb C^{11}$: \textbf{пространство меток стрелок};
+ \item второй $\mathbb C^{11}$: \textbf{физический модуль состояний};
+ \item полный модуль одиннадцати стрелок: \textbf{размерность $36$};
+ \item канонический $I_{11}$ между носителями: \textbf{не выведен};
+ \item остаточная свобода: \textbf{$U(11)$, 121 вещественный параметр};
+ \item индексная линия выбирает $j$: \textbf{нет};
+ \item полярный коннектор физически допущен: \textbf{нет};
+ \item новый том: \textbf{пока не открывается};
+ \item следующий гейт: \textbf{классификация физического эквивариантного
+ интертвинера стрелки--концевой сектор}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_polar_morita_connector_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-polar-morita-bert}
+J.~Bertozzini, R.~Conti, W.~Lewkeeratiyutkul,
+\emph{A Spectral Theorem for Imprimitivity $C^*$-Bimodules},
+arXiv:0812.3596.
+\bibitem{v8-polar-morita-krajewski}
+T.~Krajewski,
+\emph{Classification of Finite Spectral Triples},
+J. Geom. Phys. 28 (1998), 1--30; arXiv:hep-th/9701081.
+\bibitem{v8-polar-morita-cacic}
+B.~\v{C}a\'ci\'c,
+\emph{Moduli Spaces of Dirac Operators for Finite Spectral Triples},
+J. Noncommut. Geom. 3 (2009), 453--495; arXiv:0902.2068.
+\end{thebibliography}

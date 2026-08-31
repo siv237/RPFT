@@ -1,0 +1,120 @@
+\chapter{Селектор совместимой комплексной структуры и положительной метрики}
+\label{ch:v8-horizontal-phase-cotangent-complex-structure-metric-selector-gate}
+
+Котангенциальный родитель дал ненулевое отображение момента, но сохранил
+волоконную фазу. Следующий возможный источник различения --- совместимая
+комплексная структура $J$ и положительная форма
+\begin{equation}
+ J^2=-I,qquad g_J(u,v)=\Omega(u,Jv).
+ \label{eq:v8-cotangent-compatible-complex-structure}
+\end{equation}
+Само существование таких $J$ стандартно, но их выбор требует метрических
+данных. Проверим, достаточно ли уже построенной следовой метрики проекта.
+
+Здесь возникает типовой барьер, который не был виден в абстрактном
+симплектическом гейте. Вещественная размерность нового носителя равна $52$,
+тогда как полный следовой полево-шумовой репер имеет размерность $42$:
+\begin{equation}
+ \dim_{\mathbb R}\mathcal T_{26}^{\mathbb R}=52,qquad
+ \dim_{\mathbb R}\mathcal F_{\rm tr}=42,qquad 52-42=10.
+ \label{eq:v8-cotangent-trace-carrier-mismatch}
+\end{equation}
+После отбеливания невырожденной старой следовой формы можно считать её
+матрицей $I_{42}$. Для любого отображения
+$P:\mathbb R^{52}\to\mathbb R^{42}$ её обратный образ удовлетворяет
+\begin{equation}
+ G_P=P^{\mathsf T}P,qquad
+ \rank G_P\leq42,qquad \dim\ker G_P\geq10.
+ \label{eq:v8-cotangent-trace-pullback-bound}
+\end{equation}
+Точный представитель $P=(I_{42}\;0)$ достигает границы: его ранг равен
+$42$, а нульность --- $10$. Если использовать лишь старую тридцатимерную
+вещественную метрику переноса, граница ещё сильнее:
+\begin{equation}
+ \rank G_{\rm transfer}=30,qquad
+ \dim\ker G_{\rm transfer}=22.
+ \label{eq:v8-cotangent-transfer-pullback-bound}
+\end{equation}
+Следовательно, существующая следовая форма не является положительной
+метрикой на всём новом носителе.
+
+Более того, даже в наиболее благоприятном случае, когда старые $42$
+направления образуют симплектическое подпространство, продолжение не
+единственно. Возьмём
+\begin{equation}
+ \Omega_{52}=J_2^{\oplus26},qquad
+ J_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix},qquad
+ G_s=I_{42}\oplus
+ \bigoplus_{a=1}^{5}\begin{pmatrix}s&0\\0&s^{-1}\end{pmatrix},quad s>0.
+ \label{eq:v8-cotangent-compatible-metric-family}
+\end{equation}
+Положим
+\begin{equation}
+ \mathcal J_s=-\Omega_{52}G_s.
+ \label{eq:v8-cotangent-compatible-J-family}
+\end{equation}
+Тогда точная блочная проверка даёт
+\begin{equation}
+ \mathcal J_s^2=-I_{52},qquad
+ \Omega_{52}\mathcal J_s=G_s>0,qquad
+ P G_sP^{\mathsf T}=I_{42},qquad \det G_s=1.
+ \label{eq:v8-cotangent-compatible-family-identities}
+\end{equation}
+В частности, $s=1$ и $s=2$ дают две различные положительные совместимые
+метрики и две различные комплексные структуры, которые имеют одно и то же
+ограничение на весь старый следовой носитель.
+
+Это точно воспроизводит раннюю проблему Тома III, где одна каноническая
+пара допускала семейство $J_s$. Новый уровень увеличил носитель и дал
+конкретное отображение момента, но не породил десять недостающих
+метрических направлений. Общий факт о непустом пространстве совместимых
+комплексных структур не предоставляет селектора конкретного элемента
+\cite{v8-compatible-metric-da-silva,v8-compatible-metric-guillemin}.
+
+\begin{theorem}[Дефицит следового метрического продолжения]
+Никакой обратный образ существующей $42$-мерной следовой метрики не может
+быть положительно определён на $52$-мерном симплектическом носителе: его
+ядро имеет размерность не меньше десяти. Даже после произвольного
+положительного заполнения ядра остаётся непрерывное семейство совместимых
+метрик и комплексных структур с одинаковым старым ограничением.
+\end{theorem}
+
+\begin{nogocriterion}[No-go следового селектора]
+Нельзя объявлять $J=-\Omega$ каноническим только после выбора единичной
+метрики на новых направлениях: эта единичность является дополнительным
+правилом. Существующий след фиксирует не более $42$ из $52$ вещественных
+координат и не различает семейство $G_s$. Поэтому комплексная структура,
+положительный родитель и масса горизонтальной фазы ещё не выведены.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item новый симплектический носитель: \textbf{$52$ вещественных};
+ \item полный старый следовой репер: \textbf{$42$ вещественных};
+ \item минимальный дефицит метрики: \textbf{$10$};
+ \item дефицит transfer-only метрики: \textbf{$22$};
+ \item положительный обратный образ старой метрики: \textbf{невозможен};
+ \item совместимые положительные продолжения: \textbf{существуют};
+ \item два различных точных продолжения: \textbf{$s=1,2$};
+ \item старое следовое ограничение у них совпадает: \textbf{да};
+ \item единственная комплексная структура: \textbf{не выбрана};
+ \item подъём горизонтальной фазы: \textbf{не получен};
+ \item следующий гейт: \textbf{происхождение метрики на десяти недостающих
+ направлениях}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_horizontal_phase_cotangent_complex_structure_metric_selector_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-compatible-metric-da-silva}
+A.~Cannas da Silva,
+\emph{Lectures on Symplectic Geometry}, Springer, 2001;
+arXiv:math/0505366.
+\bibitem{v8-compatible-metric-guillemin}
+M.~Abreu,
+\emph{K\"ahler geometry of toric manifolds in symplectic coordinates},
+in Symplectic and Contact Topology, Fields Inst. Commun. 35 (2003);
+arXiv:0912.0491.
+\end{thebibliography}

@@ -1,0 +1,6 @@
+# Карта источников
+
+- `s2t/gates/version8_baryon_c0_common_trace_embedding_normalization_gate.tex`
+- `s2t/gates/version8_baryon_c0_linking_algebra_offdiagonal_bridge_admission_gate.tex`
+- `s2t/audits/s2t_v8_baryon_c0_linking_algebra_offdiagonal_bridge_admission_gate.py`
+- `s2t/results/s2t_v8_baryon_c0_linking_algebra_offdiagonal_bridge_admission_gate_results.json`

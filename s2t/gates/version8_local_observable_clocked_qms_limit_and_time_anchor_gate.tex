@@ -1,0 +1,123 @@
+\chapter{Локальный предел часового квантового марковского процесса}
+\label{ch:v8-local-observable-clocked-qms-limit-and-time-anchor-gate}
+
+Предыдущая глава отделила глобальную норму бесконечного конвейера от
+локальных наблюдаемых. Теперь совместим две аппроксимации, которые до сих
+пор рассматривались раздельно: слабое столкновительное приближение
+непрерывной полугруппы и конечную точность автономных часов.
+
+\section{Сложение двух ошибок}
+
+Пусть $\Phi_{u/n}$ --- один слабый шаг полного 42-скачкового процесса.
+В конечномерной системе правило Чернова даёт на фиксированном интервале
+$u$ оценку
+\begin{equation}
+ \left\|\Phi_{u/n}^{,n}-e^{u\mathcal L_{42}}\right\|
+ \leq \frac{C_u}{n}.
+ \label{eq:v8-clocked-qms-collision-error}
+\end{equation}
+Если автономные часы реализуют каждый шаг с ошибкой
+$\varepsilon_d\leq Ae^{-cd}$, то телескопическая оценка $n$ композиций
+даёт
+\begin{equation}
+ \boxed{
+ \left\|\widetilde\Phi_{u/n,d}^{,n}-e^{u\mathcal L_{42}}\right\|
+ \leq \frac{C_u}{n}+nAe^{-cd}.}
+ \label{eq:v8-clocked-qms-total-error}
+\end{equation}
+Первый член измеряет дискретизацию столкновений, второй --- накопленную
+ошибку часового управления.
+
+\section{Совместный предел}
+
+Для любого $\alpha>0$ выберем
+\begin{equation}
+ d_n\geq \frac{1+\alpha}{c}\log n.
+ \label{eq:v8-clocked-qms-dimension-schedule}
+\end{equation}
+Тогда
+\begin{equation}
+ nAe^{-cd_n}\leq \frac{A}{n^\alpha},
+ \qquad
+ \left\|\widetilde\Phi_{u/n,d_n}^{,n}
+ -e^{u\mathcal L_{42}}\right\|
+ \leq \frac{C_u}{n}+\frac{A}{n^\alpha}longrightarrow0.
+ \label{eq:v8-clocked-qms-joint-limit}
+\end{equation}
+
+\begin{theorem}[Локальный автономный предел непрерывного шума]
+На наблюдаемых конечной системы и на любом фиксированном цилиндре цепи
+вспомогательных систем полный 42-скачковый квантовый марковский процесс
+получается совместным пределом слабых столкновений и автономных часов.
+Для этого достаточно логарифмического роста размерности часов по числу
+столкновений.
+\end{theorem}
+
+Утверждение относится к редуцированным наблюдаемым. Оно не означает
+сходимости чистых состояний всей бесконечной цепи в глобальной норме и не
+создаёт внешнего пошагового сброса: свежие вспомогательные системы уже
+поставляет предварительно подготовленный конвейер.
+
+\section{Почему часы всё ещё не создают секунду}
+
+Обозначим частоту часов через $\Omega$, а физическую интенсивность
+диссипативного процесса через $\Gamma$. Наблюдаемая динамика зависит от
+безразмерных комбинаций
+\begin{equation}
+ \Omega t_{\rm phys},\qquad \Gamma t_{\rm phys}.
+\end{equation}
+Преобразование
+\begin{equation}
+ (\Omega,\Gamma,t_{\rm phys})\longmapsto
+ (\lambda\Omega,\lambda\Gamma,t_{\rm phys}/\lambda),
+ \qquad \lambda>0,
+ \label{eq:v8-clocked-qms-common-scale-orbit}
+\end{equation}
+сохраняет обе комбинации. Часы могут определить отношение
+$\Gamma/\Omega$, если взаимодействие типизированно связывает их с системой,
+но общий размерный множитель остаётся свободным.
+
+\begin{nogocriterion}[Автономность не равна абсолютной калибровке времени]
+Совместный предел \eqref{eq:v8-clocked-qms-joint-limit} выводит непрерывный
+безразмерный процесс без внешнего переключателя. Он не выбирает секунду:
+для этого необходим хотя бы один независимо фиксированный энергетический
+или скоростной масштаб и доказанная связь этого масштаба с $\Omega$ либо
+$\Gamma$.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item ошибка столкновительного предела: \textbf{$C_u/n$};
+ \item накопленная ошибка часов: \textbf{$nAe^{-cd}$};
+ \item совместная оценка: \textbf{$C_u/n+nAe^{-cd}$};
+ \item достаточный рост часов: \textbf{$d_n\geq(1+\alpha)c^{-1}\log n$};
+ \item редуцированный непрерывный предел: \textbf{получен};
+ \item внешний пошаговый сброс: \textbf{не требуется};
+ \item глобальная норма бесконечной цепи: \textbf{не заявляется};
+ \item относительная частота $\Gamma/\Omega$: \textbf{может быть измерена};
+ \item абсолютная секунда: \textbf{не выведена};
+ \item следующий гейт: \textbf{типизированный мост энергии часов к
+ интенсивности полного шумового процесса}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_local_observable_clocked_qms_limit_and_time_anchor_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-clocked-qms-attal-pautrat}
+S.~Attal, Y.~Pautrat,
+\emph{From repeated to continuous quantum interactions},
+Ann. Henri Poincar\'e \textbf{7} (2006), 59--104;
+arXiv:math-ph/0311002.
+\bibitem{v8-clocked-qms-attal-joye}
+S.~Attal, A.~Joye,
+\emph{Weak coupling and continuous limits for repeated quantum interactions},
+J. Stat. Phys. \textbf{126} (2007), 1241--1283;
+arXiv:math-ph/0501012.
+\bibitem{v8-clocked-qms-woods}
+M.~P.~Woods, R.~Silva, J.~Oppenheim,
+\emph{Autonomous quantum machines and the finite sized Quasi-Ideal clock},
+Ann. Henri Poincar\'e \textbf{20} (2019), 125--218;
+arXiv:1607.04591.
+\end{thebibliography}

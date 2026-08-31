@@ -1,0 +1,194 @@
+\chapter{Бимодульная совместимость повышения канального триплета}
+\label{ch:v8-baryon-c0-channel-triplet-bimodule-compatibility}
+
+\section{Физическое разложение каналов}
+
+Условный Hodge-интертвейнер предыдущего гейта требовал считать три столбца
+coherence-матрицы одним стандартным триплетом. Однако в конечной геометрии
+они имеют типы
+\begin{equation}
+ W_e,W_X=(\mathbb C,\mathbb C,R),
+ \qquad
+ W_Y=(\mathbb H,\mathbb C,R),
+ \qquad
+ W=W_{eX}\oplus W_Y\simeq\mathbb C^2\oplus\mathbb C.
+ \label{eq:v8-channel-promotion-current-types}
+\end{equation}
+Тем самым центральный проектор типа можно выбрать в виде
+\begin{equation}
+ P_Y=\operatorname{diag}(0,0,1).
+ \label{eq:v8-channel-promotion-type-projector}
+\end{equation}
+Физическая замена базиса обязана коммутировать с $P_Y$; сохранение одной
+нормы на случайном пространстве коэффициентов этого условия не заменяет
+\cite{v8-channel-promotion-krajewski,v8-channel-promotion-jureit}.
+
+\section{Коммутант типа и непрерывный запрет}
+
+Для общей матрицы $A\in M_3(\mathbb C)$ точная система даёт
+\begin{equation}
+ [A,P_Y]=0
+ \quad\Longleftrightarrow\quad
+ A=\begin{pmatrix}A_{2\times2}&0\\0&a_Y\end{pmatrix},
+ \qquad
+ \rank\mathcal C_P=4,
+ \qquad
+ \dim\ker\mathcal C_P=5.
+ \label{eq:v8-channel-promotion-complex-commutant}
+\end{equation}
+Следовательно, бимодульный коммутант равен
+\begin{equation}
+ \operatorname{End}_{\mathcal A-\mathcal A}(W)
+ \simeq M_2(\mathbb C)\oplus\mathbb C,
+ \label{eq:v8-channel-promotion-commutant-algebra}
+\end{equation}
+а вещественный ортогональный коммутант имеет лишь
+\begin{equation}
+ \mathfrak{so}(3)\cap\{P_Y\}'
+ =\mathbb R L_{12}\simeq\mathfrak{so}(2),
+ \qquad
+ \dim=1.
+ \label{eq:v8-channel-promotion-orthogonal-commutant}
+\end{equation}
+Два генератора, необходимые для смешивания $Y$ с $e,X$, запрещены:
+\begin{equation}
+ [L_{12},P_Y]=0,
+ \qquad
+ [L_{13},P_Y]\ne0,
+ \qquad
+ [L_{23},P_Y]\ne0.
+ \label{eq:v8-channel-promotion-so3-generator-test}
+\end{equation}
+Поэтому честное стандартное действие $SO(3)$ на текущем $W$ не существует.
+
+\section{Дискретная и spin-cover лазейки}
+
+Стандартный тетраэдрический триплет также не сохраняет разложение $2+1$.
+Для циклической перестановки $R_3$ и полуоборота $R_2$ имеем
+\begin{equation}
+ [R_3,P_Y]\ne0,
+ \qquad
+ [R_2,P_Y]=0.
+ \label{eq:v8-channel-promotion-a4-type-test}
+\end{equation}
+Значит, полный $A_4$ нельзя использовать как замену непрерывного повышения.
+
+На инфинитезимальном уровне можно вложить $\mathfrak{so}(3)\simeq
+\mathfrak{su}(2)$ в $\mathfrak u(2)$, но фундаментальное комплексное
+представление является представлением $Spin(3)=SU(2)$, а не $SO(3)$.
+Центр накрытия действует как
+\begin{equation}
+ z_{2\pi}=\operatorname{diag}(-1,-1,1)\ne I_3,
+ \qquad
+ z_{2\pi}^2=I_3.
+ \label{eq:v8-channel-promotion-spin-cover-obstruction}
+\end{equation}
+Следовательно, оно не спускается к требуемому групповому действию и в любом
+случае оставляет приводимый тип $\mathbf2\oplus\mathbf1$, а не векторный
+$\mathbf3$.
+
+\section{Минимальная неразрушающая условная архитектура}
+
+Не меняя старый $Y_R$, можно добавить один новый endpoint того же типа, что
+$e_R,X_R$:
+\begin{equation}
+ Z_R=(\mathbb C,\mathbb C,R),
+ \qquad
+ W_{\rm ext}=W_{eXZ}\oplus W_Y\simeq\mathbb C^3\oplus\mathbb C.
+ \label{eq:v8-channel-promotion-minimal-extension}
+\end{equation}
+Тогда проектор типа становится
+\begin{equation}
+ P_Y^{\rm ext}=\operatorname{diag}(0,0,0,1),
+ \qquad
+ \{P_Y^{\rm ext}\}'\simeq M_3(\mathbb C)\oplus\mathbb C,
+ \qquad
+ \dim_{\mathbb C}=10.
+ \label{eq:v8-channel-promotion-extended-commutant}
+\end{equation}
+Изотипический проектор $P_{eXZ}=I_4-P_Y^{\rm ext}$ канонически выделяет
+трёхмерный блок, на котором стандартный $SO(3)$ уже совместим с
+бимодульными типами. Для двух строк coherence-матрицы выбранная подцепь
+сохраняет размерности
+\begin{equation}
+ \dim H_0=1,
+ \qquad
+ \dim H_1=2\cdot3=6,
+ \qquad
+ \dim H_2=\binom22\binom32=3.
+ \label{eq:v8-channel-promotion-selected-chain-dimensions}
+\end{equation}
+Но полный расширенный стрелочный носитель имеет размерность
+\begin{equation}
+ \dim\operatorname{Hom}(\mathbb C^4,\mathbb C^2)=8,
+ \qquad
+ \Delta\dim_{\mathbb C}=2.
+ \label{eq:v8-channel-promotion-extension-cost}
+\end{equation}
+Старый $Y$ становится spectator-каналом, а прежний rank-one конденсат на
+$(e,X,Y)$ не наследуется автоматически подпространством $(e,X,Z)$. Нужны
+новые endpoint, две стрелки, новый конденсат и диагональный family--channel
+lock.
+
+Реестры принимают вид
+\begin{equation}
+ \begin{aligned}
+ N_{\rm current\ promotion}&=0/5,
+ &N_{\rm extension\ shape}&=5/5,\\
+ N_{\rm new\ origin}&=0/4,
+ &\mathcal M_{\rm new}&=\{Z_R,\ 2\ arrows,\ B_{eXZ,*},\ SO(3)_{\rm diag}\}.
+ \end{aligned}
+ \label{eq:v8-channel-promotion-ledgers}
+\end{equation}
+
+\begin{theorem}[Бимодульный запрет текущего повышения]
+На текущем канальном носителе всякая допустимая замена базиса сохраняет
+$W_{eX}\oplus W_Y$. Поэтому ни стандартный $SO(3)$, ни стандартный $A_4$
+не могут смешивать три coherence-канала в один физический триплет.
+Spin-cover на двухмерном блоке не устраняет препятствие.
+\end{theorem}
+
+\begin{proposition}[Минимальная условная изотипическая лазейка]
+Добавление одного endpoint $Z_R=(\mathbb C,\mathbb C,R)$ создаёт канонически
+выделенный изотипический блок $W_{eXZ}\simeq\mathbb C^3$, допускающий
+стандартный $SO(3)$ и подцепь размерностей $1$--$6$--$3$. Эта архитектура
+не наследует старый конденсат и содержит четыре новых родительских входа.
+\end{proposition}
+
+\begin{nogocriterion}[Запрет смешивания неэквивалентных endpoint]
+Нельзя повышать случайную $U(3)$-симметрию нормы стрелочных коэффициентов до
+физической симметрии, если она не коммутирует с центральными проекторами
+бимодульных типов. Ни совпадение размерностей, ни переход к $A_4$, ни
+инфинитезимальное $\mathfrak{su}(2)$ не отменяют это требование.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item текущие типы каналов: \textbf{$2(\mathbb C,\mathbb C,R)\oplus(\mathbb H,\mathbb C,R)$};
+\item бимодульный коммутант: \textbf{$M_2(\mathbb C)\oplus\mathbb C$};
+\item допустимая ортогональная алгебра: \textbf{$\mathfrak{so}(2)$};
+\item стандартный $SO(3)$ совместим: \textbf{нет};
+\item стандартный $A_4$ совместим: \textbf{нет};
+\item spin-cover исправляет запрет: \textbf{нет};
+\item текущий promotion-ledger: \textbf{$0/5$};
+\item минимальное расширение: \textbf{один новый $Z_R=(\mathbb C,\mathbb C,R)$};
+\item расширенный коммутант: \textbf{$M_3(\mathbb C)\oplus\mathbb C$};
+\item выбранная coherence-подцепь: \textbf{$1$--$6$--$3$};
+\item условная форма расширения: \textbf{$5/5$};
+\item новых parent-входов: \textbf{четыре};
+\item portal parent-origin: \textbf{не закрыт};
+\item следующий гейт: \textbf{минимальное изотипическое канальное расширение}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_coherence_channel_triplet_promotion_bimodule_compatibility_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-channel-promotion-krajewski}
+T.~Krajewski,
+\emph{Classification of Finite Spectral Triples},
+arXiv:hep-th/9701081.
+\bibitem{v8-channel-promotion-jureit}
+J.-H.~Jureit, C.~A.~Stephan,
+\emph{On a Classification of Irreducible Almost-Commutative Geometries IV},
+arXiv:hep-th/0610040.
+\end{thebibliography}

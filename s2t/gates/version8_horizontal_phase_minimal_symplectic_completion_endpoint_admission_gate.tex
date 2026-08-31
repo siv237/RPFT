@@ -1,0 +1,150 @@
+\chapter{Концевой допуск минимальной симплектической достройки}
+\label{ch:v8-horizontal-phase-minimal-symplectic-completion-endpoint-admission-gate}
+
+Предыдущий гейт локализовал шестимерный радикал в избытке трёх слабых
+дублетов отрицательного гиперзаряда. Теперь различим два утверждения:
+существование абстрактного симплектического завершения и его происхождение
+из уже фиксированных концевых блоков конечного оператора.
+
+Минимально сбалансированное представление имеет вид
+\begin{equation}
+ \mathcal T_{26}
+ =H_+^{\oplus4}\oplus H_-^{\oplus4}
+ \oplus C_+\oplus C_-\oplus S_0^{\oplus4},
+ \qquad \dim_{\mathbb C}\mathcal T_{26}=26,
+ \qquad \dim_{\mathbb R}\mathcal T_{26}=52.
+ \label{eq:v8-minimal-symplectic-completion-decomposition}
+\end{equation}
+Здесь типы $H_\pm,C_\pm,S_0$ те же, что в предыдущем гейте; новых
+калибровочных зарядов не вводится.
+
+В порядке блоков
+$(H_+^{\oplus4},H_-^{\oplus4},C_+,C_-,S_0^{\oplus4})$
+предъявим форму
+\begin{equation}
+ \Omega_0=
+ \begin{pmatrix}
+  0&I_8&0&0&0\\
+  -I_8&0&0&0&0\\
+  0&0&0&I_3&0\\
+  0&0&-I_3&0&0\\
+  0&0&0&0&J_4
+ \end{pmatrix},
+ \qquad
+ J_4=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}.
+ \label{eq:v8-minimal-symplectic-standard-form}
+\end{equation}
+Для четырнадцати точных образующих калибровочного действия машинно
+проверено
+\begin{equation}
+ \rho(X)^{\mathsf T}\Omega_0+\Omega_0\rho(X)=0,
+ \qquad \Omega_0^{\mathsf T}=-\Omega_0.
+ \label{eq:v8-minimal-symplectic-gauge-invariance}
+\end{equation}
+Кроме того,
+\begin{equation}
+ \Omega_0^2=-I_{26},\qquad
+ \Omega_0^{-1}=-\Omega_0,\qquad
+ \det\Omega_0=1,\qquad \rank\Omega_0=26.
+ \label{eq:v8-minimal-symplectic-nondegeneracy}
+\end{equation}
+Следовательно, формальный симплектический носитель действительно существует.
+
+Он по-прежнему не каноничен. Общая инвариантная форма задаётся матрицей
+$A\in M_4(\mathbb C)$ между слабодвойственными пространствами, одним
+цветным коэффициентом и формой $B\in\Lambda^2\mathbb C^4$ на нейтральных
+синглетах. Поэтому
+\begin{equation}
+ \dim\bigl(\Lambda^2\mathcal T_{26}^*\bigr)^G
+ =4\cdot4+1+\binom42=23,
+ \label{eq:v8-minimal-symplectic-form-family}
+\end{equation}
+а невырожденность означает $\det A\neq0$, ненулевой цветной коэффициент и
+$\operatorname{Pf}B\neq0$. Перестановка двух копий $H_-$ даёт вторую
+отличную инвариантную форму полного ранга.
+
+Главная проверка относится к происхождению новых направлений. Текущий
+концевой носитель содержит только одну независимую копию $H_+$, тогда как
+симплектическая форма требует четыре:
+\begin{equation}
+ m_+^{\rm endpoint}=1,qquad m_+^{\rm symp}=4,qquad
+ \dim\operatorname{coker}\pi_+=3,qquad
+ \Delta\dim_{\mathbb C}=2\cdot3=6.
+ \label{eq:v8-minimal-symplectic-endpoint-deficit}
+\end{equation}
+Совпадение калибровочного типа делает эти направления допустимыми как
+внешние бозонные котангенциальные переменные, но не увеличивает кратность
+образа внутренних флуктуаций. В существующей конечной тройке отсутствуют
+три независимых концевых блока, из которых они могли бы возникнуть.
+
+Для одного коммутирующего поля запрет сохраняется,
+\begin{equation}
+ \Phi^{\mathsf T}\Omega_0\Phi=0,
+ \qquad
+ \Phi^{\mathsf T}\Omega_0\Psi\not\equiv0
+ \quad\text{для независимых }\Phi,\Psi.
+ \label{eq:v8-minimal-symplectic-two-field-pairing}
+\end{equation}
+Точный базисный свидетель имеет значение $e_1^{\mathsf T}\Omega_0e_9=1$.
+Тем самым завершение создаёт нужную двухполевую свёртку, но лишь после
+введения невыведенного второго набора переменных.
+
+Стандартная симплектическая структура на удвоенном колчане согласуется с
+котангенциальной интерпретацией пространства представлений
+\cite{v8-minimal-symplectic-crawley-boevey,v8-minimal-symplectic-harada-wilkin}.
+Однако классификация конечных спектральных троек требует отдельно предъявить
+новые блоки оператора и проверить первое условие и вещественную структуру
+\cite{v8-minimal-symplectic-krajewski}.
+
+\begin{theorem}[Формальный допуск минимального завершения]
+Представление $\mathcal T_{26}$ допускает калибровочно-инвариантную
+невырожденную кососимметрическую форму. Её ранг равен $26$, определитель
+равен единице, а пространство всех инвариантных форм имеет размерность
+$23$. Два независимых поля допускают ненулевую симплектическую свёртку.
+\end{theorem}
+
+\begin{nogocriterion}[Концевой no-go]
+Минимальная достройка не является внутренней флуктуацией уже заданного
+концевого носителя: ему недостаёт трёх копий $H_+$, то есть шести
+комплексных направлений. Их можно добавить как новую котангенциальную
+архитектуру, но нельзя считать выведенными из текущего родителя. Новые
+фермионы не следуют логически из абстрактного бозонного удвоения; если же
+требовать реализации новыми концевыми состояниями, аномалии, первое условие
+и лёгкий спектр должны быть проверены заново.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item формальная комплексная размерность: \textbf{$26$};
+ \item формальная вещественная размерность: \textbf{$52$};
+ \item инвариантных кососимметрических форм: \textbf{$23$};
+ \item невырожденный представитель: \textbf{предъявлен};
+ \item его ранг и определитель: \textbf{$26$ и $1$};
+ \item каноническая форма выбрана калибровочной симметрией: \textbf{нет};
+ \item ненулевая двухполевая свёртка: \textbf{да};
+ \item дефицит концевой кратности $H_+$: \textbf{$3$};
+ \item новых комплексных направлений: \textbf{$6$};
+ \item происхождение из текущих внутренних флуктуаций: \textbf{нет};
+ \item физический подъём горизонтальной фазы: \textbf{не получен};
+ \item следующий гейт: \textbf{допуск котангенциального удвоенного
+ колчана как нового родителя}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_horizontal_phase_minimal_symplectic_completion_endpoint_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-minimal-symplectic-crawley-boevey}
+W.~Crawley-Boevey,
+\emph{Poisson structures on moduli spaces of representations},
+J. Algebra 325 (2011), 205--215; arXiv:math/0502301.
+\bibitem{v8-minimal-symplectic-harada-wilkin}
+M.~Harada, G.~Wilkin,
+\emph{Morse theory of the moment map for representations of quivers},
+Geom. Dedicata 150 (2011), 307--353; arXiv:0807.4734.
+\bibitem{v8-minimal-symplectic-krajewski}
+T.~Krajewski,
+\emph{Classification of Finite Spectral Triples},
+J. Geom. Phys. 28 (1998), 1--30; arXiv:hep-th/9701081.
+\end{thebibliography}

@@ -1,0 +1,122 @@
+\chapter{Минимальный ковариантный Стайнспринг-носитель}
+\label{ch:v8-minimal-covariant-stinespring-carrier-gate}
+
+\section{Из генератора в точный одношаговый канал}
+
+Пусть $D_a$, $a=1,\ldots,12$, --- самосопряжённые операторы полного
+межсекторных стрелок базиса на $\mathbb C^{11}\oplus\mathbb C^{10}$ и
+\begin{equation}
+ G=\sum_{a=1}^{12}D_a^2.
+\end{equation}
+Для $p\geq0$ определим Краус-операторы
+\begin{equation}
+ K_0(p)=\sqrt{I-pG},
+ \qquad
+ K_a(p)=\sqrt p\,D_a.
+ \label{eq:v8-one-step-stinespring-kraus}
+\end{equation}
+Поскольку
+\begin{equation}
+ \Spec G=\{0^{(9)},1^{(6)},2^{(3)},3^{(2)},6^{(1)}\},
+\end{equation}
+формула положительна точно в интервале
+\begin{equation}
+ 0\leq p\leq\frac16.
+ \label{eq:v8-stinespring-step-window}
+\end{equation}
+Полученная карта
+\begin{equation}
+ \Phi_p(X)=\sum_{a=0}^{12}K_a(p)^*XK_a(p)
+ \label{eq:v8-exact-one-step-channel}
+\end{equation}
+точно унитальна, сохраняет след и сохраняет концевую алгебру
+$M_{11}(\mathbb C)\oplus M_{10}(\mathbb C)$.
+
+\section{Минимальность и происхождение среды}
+
+При любом внутреннем $0<p<1/6$ тринадцать операторов
+$K_0,K_1,\ldots,K_{12}$ линейно независимы. Поэтому Чой/Краус-ранг карты
+равен $13$, и минимальный Стайнспринг-носитель имеет вид
+\begin{equation}
+ \mathcal K_{\rm env}
+ =\mathbb C|0\rangle\oplus
+ \bigl(E_{q\ell}^{\rm cross}\otimes_{\mathbb R}\mathbb C\bigr),
+ \qquad \dim_{\mathbb C}\mathcal K_{\rm env}=13,
+ \quad \dim_{\mathbb R}E_{q\ell}^{\rm cross}=12.
+ \label{eq:v8-minimal-environment-carrier}
+\end{equation}
+Нетривиальная часть среды не является новым физическим мультиплетом: это
+комплексификация пространства меток уже существующей вещественной
+межсекторных стрелок опоры, а не удвоенный набор физических полей. Дополнительная линия
+$|0\rangle$ несёт тривиальное представление и кодирует отсутствие скачка.
+
+При случайных преобразованиях $SU(3)\times SU(2)\times U(1)$ двенадцать
+$D_a$ смешиваются ортогональной вещественной матрицей. Максимальные ошибки
+ортогональности, восстановления операторов и ковариантности канала меньше
+$6\cdot10^{-15}$. Следовательно, среда несёт не произвольно назначенное, а
+уже известное представление пространства стрелок.
+
+\section{Граница одношагового результата}
+
+Производная при $p=0$ возвращает требуемый генератор:
+\begin{equation}
+ \left.\frac{d\Phi_p}{dp}\right|_{p=0}(X)
+ =\sum_aD_aXD_a-\frac12\{G,X\}
+ =\mathcal L_{q\ell}(X).
+ \label{eq:v8-channel-generator-derivative}
+\end{equation}
+Но само семейство $\Phi_p$ не является точной полугруппой:
+$\Phi_p\Phi_q\neq\Phi_{p+q}$. Для непрерывной марковской динамики
+необходимы последовательность свежих состояний вспомогательных систем либо квантовый
+шумовой носитель типа Фок-пространства. Текущая конструкция не выводит
+такой поток и не выбирает функцию $p(t)$.
+
+\begin{theorem}[Конечный ковариантный носитель одного шага]
+Межсекторный канал допускает минимальную тринадцатимерную Стайнспринг-
+дилатацию, чья двенадцатимерная скачковая часть совпадает с уже существующим
+межсекторных стрелок представлением. Новая физическая частица для одного шага не
+требуется. Однако вероятность шага и автономная непрерывная шумовая
+динамика из родителя не следуют.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет объявления одношагового канала временем]
+Нельзя отождествлять параметр $p$ с физическим временем или скоростью без
+правила композиции. Точная вполне положительная карта одного шага не
+является сама по себе квантово-марковским потоком.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item размерность системного носителя: \textbf{21};
+ \item независимых операторов скачка: \textbf{12};
+ \item Чой/Краус-ранг при $0<p<1/6$: \textbf{13};
+ \item допустимый интервал шага: \textbf{$[0,1/6]$};
+ \item сохранение единицы и следа: \textbf{пройдено};
+ \item сохранение концевой алгебры: \textbf{пройдено};
+ \item калибровочная ковариантность среды: \textbf{пройдена};
+ \item новый физический мультиплет: \textbf{не требуется};
+ \item вероятность $p$: \textbf{не выведена};
+ \item точная полугруппа $\Phi_p$: \textbf{нет};
+ \item непрерывный шумовой/часовой носитель: \textbf{открыт}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_minimal_covariant_stinespring_carrier_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-stinespring-haapasalo}
+E.~Haapasalo,
+\emph{The Choi--Jamio\l{}kowski isomorphism and covariant quantum channels},
+Quantum Studies: Mathematics and Foundations \textbf{8} (2021), 1--30;
+arXiv:1906.11442.
+\bibitem{v8-stinespring-skeide}
+M.~Skeide,
+\emph{Spatial Markov semigroups admit Hudson--Parthasarathy dilations},
+SIGMA \textbf{18} (2022), 071; arXiv:0809.3538.
+\bibitem{v8-stinespring-parthasarathy}
+K.~R.~Parthasarathy,
+\emph{Quantum stochastic calculus and quantum Gaussian processes},
+Indian Journal of Pure and Applied Mathematics \textbf{46} (2015),
+781--807; arXiv:1408.5686.
+\end{thebibliography}

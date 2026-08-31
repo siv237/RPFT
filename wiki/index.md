@@ -2,10 +2,450 @@
 
 > Status: working
 > Type: index
-> Updated: 2026-08-28
+> Updated: 2026-08-31
 
 Это навигационный каталог вики проекта. Его следует читать перед ответом на
 исследовательские вопросы и перед добавлением новых источников.
+
+- [[tome8-final-conclusion-and-tome9-program]] — Том VIII завершён как
+  operator/dynamic closure; Том IX должен построить один four-slot parent.
+- [[version8-baryon-c0-charged-mediator-common-energy-scale-parent-origin-gate]] —
+  common `E_*` сохраняет scale-orbit; candidate-origin `0/6`, следующий
+  constructive gate относится к Тому IX.
+- [[charged-mediator-common-energy-scale-literature-2026]] — resonance и
+  repeated-interaction scaling не задают абсолютную единицу энергии.
+
+- [[version8-baryon-c0-charged-mediator-dynamic-parent-minimal-new-data-gate]] —
+  resonance объединяет `E_C` и `7γ` в один квант `E_*`; dependency rank
+  равен `2`, полный пакет сокращается `5→4`, inherited selection `0/4`.
+- [[charged-mediator-minimal-new-data-literature-2026]] — размерное
+  разделение общего energy-scale и безразмерного coupling.
+
+- [[version8-baryon-c0-charged-mediator-dynamic-parent-data-admission-gate]] —
+  canonical embedding `K43→K45` сохраняет vacuum, parent, shifts и старую
+  dynamics как restriction; structural admission `8/8`, shapes `5/5`,
+  physical origin `0/5`.
+- [[charged-mediator-dynamic-data-admission-literature-2026]] — изометрии
+  опорных цепей и граница между conservative extension и selector.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-minimal-typed-discriminator-binary-carrier-charged-environment-mediator-minimal-dynamic-parent-architecture-gate]] —
+  минимальная Real-замкнутая общая cell имеет размерность `45`, новый
+  collision расширяет frame до `44` каналов и сохраняет charge/energy;
+  conditional architecture `10/10`, inherited parent `0/5`.
+- [[charged-mediator-minimal-dynamic-parent-literature-2026]] — repeated
+  interactions и GNVW-индекс разделяют локальный parent вакуума и
+  не-гамильтонов тёплиц-транспорт.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-minimal-typed-discriminator-binary-carrier-charged-environment-mediator-energy-state-rate-parent-origin-gate]] —
+  symmetries оставляют одну environment-gap и state-отрезок, но не выбирают
+  resonance, vacuum или coupling; старая 42-cell не содержит новый jump,
+  поэтому conditional shape `8/8`, parent-origin `0/5`.
+- [[charged-mediator-energy-state-rate-literature-2026]] — repeated-
+  interaction limit требует независимо заданных Hamiltonian, state,
+  coupling и chain preparation.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-minimal-typed-discriminator-binary-carrier-charged-environment-mediator-existing-carrier-admission-gate]] —
+  coarse-triplet obstruction пересмотрен: условное разложение `1+3` и
+  grading выделяют единственный connector `|e_R^(s)><s0|`; raw admission
+  равен `2/7`, conditional — `7/7`, dynamic origin — `0/5`.
+- [[charged-mediator-existing-carrier-literature-2026]] — multiplicity
+  среды необходимо разлагать одновременно по family, grading и gauge.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-minimal-typed-discriminator-binary-carrier-charged-environment-mediator-architecture-gate]] —
+  минимальная комплексная среда размерности `2` точно сохраняет charge и
+  energy и даёт amplitude damping; Real closure имеет размерность `3`, а
+  конечная дилатация не заменяет fresh-ancilla полугруппу.
+- [[charged-environment-mediator-dilation-literature-2026]] — граница между
+  ковариантной дилатацией одного шага и пределом повторных взаимодействий.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-minimal-typed-discriminator-binary-carrier-parent-origin-gate]] —
+  классический центр `C P_u direct_sum C P_d` уже существует, а charged
+  jump gauge-ковариантен; однако старый 42-frame его не содержит и
+  coarse-triplet чтение среды не выбирало mediator line; этот последний
+  пункт пересмотрен следующим admission-гейтом после разложения `1+3`.
+- [[charged-binary-environment-literature-2026]] — ковариантность
+  редуцированного dissipator не заменяет charged Стайнспринг-дилатацию.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-minimal-typed-discriminator-architecture-gate]] —
+  минимальный `C²`-носитель и controlled incidence-проектор дают статическую
+  щель `7`; унитарная динамика не выбирает популяцию, а jump `|d><u|`
+  условно создаёт уникальную `d`-ветвь.
+- [[binary-incidence-dynamics-literature-2026]] — различие между уникальным
+  основным состоянием, унитарным движением и GKSL-релаксацией.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-parent-origin-gate]] —
+  `Y²` различает финалистов индексами `25/3` и `4/3`, но incidence-проекторы
+  не динамичны, odd Real-моменты сокращаются, а typed-связь не наследована;
+  parent-origin остаётся `0/7`.
+- [[up-down-incidence-selector-literature-2026]] — спектральное действие
+  действует внутри выбранной конечной геометрии и не задаёт меру между
+  двумя различными диаграммами Краевского.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-assignment-selector-gate]] —
+  determinant и metric area оставляют четыре назначения, exact conditioning
+  и multiplicity matching — два: `(u,Y)` и `(d,Y)`; intrinsic selector
+  остаётся `0/8`.
+- [[extra-edge-mass-cubic-incidence-selector-literature-2026]] — диаграмма
+  и Dirac-рёбра являются данными конечной спектральной тройки, а не выводом
+  из post hoc метрической оптимизации.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-portal-matrix-parent-origin-gate]] —
+  прямая сумма не даёт портал; общий кубический блок даёт коэффициент `3`,
+  шесть из девяти incidence-назначений имеют rank `2`, но inherited odd
+  coefficients и selector отсутствуют.
+- [[extra-edge-mass-two-source-portal-literature-2026]] — spectral action
+  ограничивает связи через конкретную конечную геометрию, а не через
+  произвольное соседство скалярных инвариантов.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-existing-scalar-carrier-classification-gate]] —
+  активные радиусы `T_B=3`, `T_M=2` имеют радиальный determinant `24` и
+  дают два независимых режима; допустимая portal-matrix четырёхмерна, а
+  унаследованный смешанный гессиан нулевой.
+- [[extra-edge-mass-two-source-carrier-literature-2026]] — матричные
+  инварианты колчанов существуют, но их отображение в центр зависит от
+  конкретного общего оператора.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-parent-architecture-gate]] —
+  наследованная trace-метрика даёт строго выпуклый parent; source-to-gap map
+  имеет determinant `1/72`, поэтому два источника необходимы и достаточны,
+  но их происхождение остаётся `0/2`.
+- [[extra-edge-mass-two-source-parent-literature-2026]] — положительные
+  norm-square функционалы и ограничения spectral action поддерживают форму,
+  но не создают две линейные source-компоненты.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-central-hamiltonian-parent-action-origin-gate]] —
+  trace-square даёт stiffness, но не источник; gauge-Casimir map условно
+  имеет ранг `2`, тогда как inherited parent-origin равен `0/7`.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-minimal-central-hamiltonian-data-gate]] —
+  после общего energy-shift остаются ровно две щели; их beta-произведения
+  диффеоморфно параметризуют `int Delta²`, но не фиксируют энергию, общий
+  mass-scale или relaxation time.
+- [[extra-edge-mass-minimal-central-hamiltonian-literature-2026]] — Gibbs-
+  вариация и detailed balance после задания гамильтониана и состояния.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-central-trace-simplex-selector-gate]] —
+  счётный след и максимум энтропии условно дают `2:3:3`, equal-edge
+  конвенция даёт `1:1:1`; симметрия, унимодулярность, gauge matching, KMS и
+  вакуумная стационарность не выбирают точку, итог `0/8`.
+- [[extra-edge-mass-central-trace-simplex-literature-2026]] — первичные
+  источники разделяют spectral trace, унимодулярное ограничение gauge-группы
+  и подробный баланс относительно уже выбранного состояния.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-parent-origin-gate]] —
+  единый Hermitian parent даёт положительную форму с незавешенным отношением
+  `2:3:3`, но трёхмерный центр оставляет две относительные trace-свободы;
+  gauge-index matrix имеет ранг `3` и не является селектором масс.
+- [[extra-edge-mass-parent-origin-literature-2026]] — первичные источники
+  подтверждают операторную форму, но не выбирают trace-state текущей прямой
+  суммы.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-full-graph-aligned-parent-embedding-gate]] —
+  исправленный carrier-аудит оставляет вне `B+M` три, а не шесть
+  комплексных поля; положительное завершение закрывает carrier как `7/7`,
+  но три массы образуют свободный конус и имеют origin-ledger `0/4`.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-vectorlike-mass-edge-selector-gate]] —
+  совместный неотрицательный parent точно совмещает coherence-линию с
+  массовым ядром через `P_B+P_M=I3` и проходит `8/8`, но сохраняет
+  channel-орбиту и оставляет шесть разрешённых рёбер плоскими.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-minimal-isotypic-channel-extension-gate]] —
+  один `Z_R` закрыт аномалиями и изменением хирального индекса; минимальная
+  физическая пара `Z_L+Z_R` проходит структурно, но разрешает девять новых
+  рёбер, оставляет шесть лишних и требует нового mass/edge-селектора.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-coherence-channel-triplet-promotion-bimodule-compatibility-gate]] —
+  коммутант текущих endpoint-типов равен `M2(C)+C`, поэтому стандартные
+  `SO(3)`, `A4` и spin-cover не реализуют channel-триплет; минимальная
+  условная лазейка добавляет один изотипический endpoint и четыре новых
+  parent-входа.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-coherence-even-corner-family-triplet-intertwiner-gate]] —
+  текущий product-group Hom равен нулю, включая остаток `A4`; условное
+  повышение channel carrier до ориентированного `R3` даёт единственный
+  Hodge-map, но требует унификации бимодулей и diagonal `SO(3)`-lock.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-edge-coherence-radius-portal-parent-origin-gate]] —
+  единственное бесследовое продолжение `Q` на coherence-chain даёт
+  кубический портал с отношением portal/self-cubic `5`; чётные моменты
+  источника не создают, а канальный угол `1+2` не равен family-triplet.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-existing-scalar-source-carrier-classification-gate]] —
+  буквальный повторный носитель отсутствует (`0/8`); среди двух активных
+  составных singlet-инвариантов только радиус когерентности `Tr(BB*)`
+  уже имеет точный условный конденсат `3`, но portal к `Q` не выведен.
+- [[existing-scalar-source-carriers-literature-2026]] — первичные источники
+  подтверждают допустимость singlet-порталов и появление новых скаляров при
+  расширении спектральной геометрии, но не импортируют их в активный `H15`.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-dynamical-source-carrier-admission-gate]] —
+  один Real-singlet создаёт два строгих ненулевых минимума без внешнего
+  линейного источника; архитектура проходит `8/8`, но знак парно вырожден,
+  а origin-ledger равен `0/4`.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-source-stiffness-parent-origin-gate]] —
+  незавешенный след вокруг скалярного фона не создаёт источник; условные
+  trace- и grading/Casimir-формы существуют как `2/2`, но их происхождение
+  из текущего действия закрыто как `0/8`.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-minimal-source-parent-architecture-gate]] —
+  минимальный квадратичный parent состоит из источника `j` и жёсткости
+  `m²>0`; условная архитектура закрыта как `7/7`, но происхождение двух
+  коэффициентов остаётся `0/2`.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-coefficient-selector-gate]] —
+  шесть естественных нормировок одного центрального направления дают
+  шесть разных модулей; чётный потенциал, энтропия и KMS не выбирают
+  физический коэффициент, итоговый ledger равен `0/8`.
+
+- [[version8-baryon-c0-singlet-triplet-central-gap-parent-action-origin-gate]] —
+  центрированные grading и семейный оператор Казимира совпадают и задают
+  одно направление `Q`; положительные проекторы реализуют оба знака щели,
+  поэтому условная форма имеет `3/3`, а физический коэффициент — `0/5`.
+
+- [[version8-baryon-c0-singlet-triplet-central-weight-minimal-hamiltonian-data-gate]] —
+  минимальный селектор центрального веса есть один параметр
+  `theta=beta Delta`; Gibbs-функционал строго выпуклый, но равновесие не
+  разделяет температуру и щель и не задаёт скорость релаксации.
+- [[singlet-triplet-gibbs-gap-literature-2026]] — первичные источники
+  отделяют MaxEnt, Gibbs-вариацию, detailed balance и слабосвязную скорость;
+  ни один из этих слоёв не создаёт центральную щель без нового входа.
+
+- [[version8-baryon-c0-singlet-triplet-central-trace-weight-parent-origin-gate]] —
+  счётный след и максимум энтропии условно дают `p=1/4`, но центральное
+  переопределение сохраняет все симметрии, а Gibbs-класс реализует любой
+  `p` через свободную щель `beta Delta`; parent-origin равен `0/6`.
+
+- [[version8-baryon-c0-family-triplet-singlet-relative-rate-selector-gate]] —
+  семейная симметрия оставляет `r=gamma_3/gamma_1>0`; равная скорость на
+  стрелку даёт `r=1`, равная интенсивность на сектор — `r=1/3`, KMS и
+  примитивность свободу не снимают, а чётный полный `M4` запрещён grading.
+
+- [[version8-baryon-c0-grading-compatible-family-triplet-endpoint-extension-gate]] —
+  единственная минимальная ветвь добавляет одну положительную charged-singlet
+  линию, выбирает source `a0` и условно даёт Hom `R I3`; endpoint-замыкание
+  равно `M3`, а полный тип `1+3` оставляет независимый относительный rate.
+- [[version8-baryon-c0-so3-closed-environment-source-line-selector-gate]] —
+  ни одна точка `RP1` не является нечётным семейным интертвейнером;
+  parity-дефект `8u²+4v²` не меньше `4`.
+
+- [[version8-baryon-c0-multiplicity-environment-so3-action-parent-origin-gate]] —
+  текущая тройка `span(E00,E11,E21)` не инвариантна; минимальное
+  `SO(3)`-замыкание равно `Hom(R2,R3)=3+3`, требует три новые комплексные
+  стрелки и оставляет source-селектор `RP1`, поэтому parent-origin равен
+  `0/5`.
+
+- [[version8-retrospective-strength-building-fork]] — ретроспектива после
+  остановки локальной барионной ветви: лучший дозревший старый узел ---
+  явное отображение «42-мерное поле → 42-мерный шум» и обратный перенос следовой
+  метрики; время, C6 и статический `W3` пока не переоткрываются.
+- [[version8-temporary-boundary-and-retrospective-return]] — отражение
+  поворота непосредственно в Томе VIII: локальный барионный тупик отделён
+  от общего провала, а возврат к мосту «поле → шум» обоснован появлением
+  двух полных 42-мерных носителей.
+- [[version8-field-to-noise-chain-map-pullback-metric-gate]] — каноническое
+  блочное отображение имеет ранг `42`, нулевое ядро и проходит `504`
+  точные проверки калибровочного сплетения; следовая метрика переносится
+  как `G_поле=K`, но физическая мобильность и относительная нормировка
+  секторов из одной симметрии не следуют.
+- [[version8-field-noise-metric-to-parent-hessian-comparison-gate]] —
+  постояннополевой родительский гессиан имеет ранг `30` и
+  двенадцатимерное калибровочное ядро, тогда как `K` имеет ранг `42`;
+  скалярное отождествление невозможно, а ненулевой импульс требует
+  пространственно-временной факторизации и фиксации калибровочной свободы.
+- [[version8-spacetime-kinetic-factorization-and-gauge-fixing-gate]] —
+  нефиксированный гессиан имеет ранг `36` и ядро `12`; после фиксации
+  ранг равен `48`, обратный оператор факторизуется, а его поперечная часть
+  не зависит от параметра фиксации.
+- [[version8-transverse-noise-mobility-environment-origin-gate]] — среда
+  фиксирует форму поперечной мобильности, но не её общий масштаб.
+- [[version8-full-field-kinetic-supermetric-assembly-gate]] — полный главный
+  символ имеет размерность `168`, ранг `156` и продольное ядро `12`; после
+  фиксации он невырожден, но относительный вес секторов ещё не выбран.
+- [[version8-full-field-kinetic-relative-weight-parent-origin-gate]] — общий
+  четырёхмерный коэффициент `a4` условно выбирает отношение `3:1`, однако
+  происхождение самого дираковского подъёма из конечного родителя открыто.
+- [[version8-full-field-a4-dirac-lift-origin-gate]] — масштабы `r=1,2`
+  сохраняют все 42 внутренних коммутатора, но меняют внешний главный символ;
+  конечная суперсвязность не выбирает геометрию базы.
+- [[version8-full-42-carrier-base-k-determinant-compatibility-gate]] — на
+  полном носителе получен босонный четвёртый момент `4659176/3249`, но
+  полный `B` требует BV-фактора и фермионной determinant-кратности.
+- [[version8-full-42-carrier-bv-vacuum-quotient-gate]] — хиральная
+  проекция фиксирует фермионный вклад `-92`, но прежний скалярный гессиан
+  имеет ранг `3` на трёхмерной нарушенной калибровочной орбите; поэтому
+  босонный ledger не является физическим до реконструкции
+  калибровочно-инвариантного вакуумного гессиана.
+- [[version8-gauge-invariant-vacuum-hessian-reconstruction-gate]] —
+  следовая метрика даёт орбитальный блок `14 I_3` и канонический
+  горизонтальный проектор; quotient-гессиан имеет ранг `26`, ядро
+  `3+1` и квадратичный числитель `211725392/159201`, но нелинейный
+  калибровочно-инвариантный родитель ещё не построен.
+- [[version8-horizontal-flat-direction-parent-lift-gate]] — единственная
+  горизонтальная мода является остаточной фазой `4:3`; оба грамовых конца
+  неизменны на всей фазовой окружности, а максимальные миноры прямоугольника
+  `10x11` образуют 11-мерный ковектор, поэтому старый следовой родитель не
+  может дать ей массу.
+- [[version8-horizontal-phase-determinant-line-admission-gate]] —
+  кофакторная линия видит фазу с весом `33`, но её 11-мерный носитель не
+  имеет калибровочного синглета; Real-пара оставляет только модуль, поэтому
+  каноническая determinant-line свёртка на текущем носителе запрещена.
+- [[version8-horizontal-phase-heavy-arrow-cycle-admission-gate]] — полный
+  бимодульный граф имеет три независимых цикла, целиком порождённых тяжёлыми
+  стрелками, но ребро `Q_Lu_R` листовое и точный фазовый заряд каждого цикла
+  равен нулю; обычная голономия горизонтальную моду не поднимает.
+- [[version8-horizontal-phase-real-oriented-cycle-admission-gate]] —
+  повышающая часть двуслойного колчана удовлетворяет `N²=0`, Real-обратные
+  стрелки являются сопряжениями с противоположными весами, а полный оператор
+  меняется только подобием; независимая обратная копия добавила бы 40 новых
+  вещественных направлений.
+- [[version8-horizontal-phase-complex-symplectic-polarization-admission-gate]] —
+  существует 11 инвариантных кососимметрических форм, но их максимальный
+  ранг равен `14`, радикал имеет размерность `6`, поляризация неединственна,
+  а бозонная самосвёртка равна нулю; минимальная достройка требует шесть
+  новых комплексных направлений.
+- [[version8-horizontal-phase-minimal-symplectic-completion-endpoint-admission-gate]] —
+  формальный сбалансированный носитель `26 complex = 52 real` имеет
+  инвариантную форму ранга `26`, но пространство форм 23-мерно, а текущим
+  концевым данным недостаёт трёх копий `H_plus`; котангенциальная достройка
+  существует лишь как новая, пока не выведенная архитектура.
+- [[version8-horizontal-phase-cotangent-doubled-quiver-parent-admission-gate]] —
+  ретроспективный подъём старых BF/AKSZ и предпроективных формул теперь даёт
+  ненулевое отображение момента размерности `13`, но каноническая фаза
+  `q -> zq`, `p -> z^-1p` сохраняет все его компоненты; коэффициент, уровень
+  редукции и положительная метрика остаются внешними данными.
+- [[version8-horizontal-phase-cotangent-complex-structure-metric-selector-gate]] —
+  новый носитель имеет `52` вещественных направления против `42` у полного
+  старого следа; обратный образ метрики оставляет ядро `10`, а два разных
+  совместимых продолжения `G_1,G_2` совпадают на старом носителе, поэтому
+  комплексная структура и фазовая масса не выбраны.
+- [[version8-post-electromagnetic-research-fork]] — ретроспективная развилка
+  после закрытия времени и электромагнитной барионной модели: следующий
+  приоритет перенесён с отдельных коэффициентов на связное трёхчастичное
+  ядро; точное семейство одинаковых двухточечных маргиналов показывает
+  недоопределённость третьей кумулянты.
+- [[baryon-six-point-faddeev-literature-2026]] — первичная литература о
+  цветовой антисимметрии, сверхтонком приближении, шеститочечной функции и
+  уравнении Фаддеева; задаёт корректный операторный уровень продолжения.
+- [[version8-baryon-connected-three-body-kernel-admission-gate]] — точный
+  допуск нового уровня: все одно- и двухчастичные маргиналы оставляют
+  одномерную третью кумулянту, а звёздный 42-скачковый родитель и его
+  слабый предел её не выбирают.
+- [[version8-baryon-cubic-trace-connected-operator-gate]] — центрированный
+  полный шумовой кадр канонически порождает ненулевой связный оператор
+  `W3` с нулевыми частичными следами; его опора равна
+  `140 TTG + 28 GGG`, но коэффициент родительского действия не выведен.
+- [[version8-baryon-cubic-trace-parent-action-coefficient-origin-no-go-gate]] —
+  квадратичная форма, ограниченность и стационарность не выбирают
+  `lambda_3`; допустимое продолжение требует единой проекции полной
+  пространственно-временной супер-кривизны на `W3`.
+- [[version8-baryon-spacetime-supercurvature-cubic-projection-admission-gate]] —
+  единая сдвинутая кривизна фиксирует форму
+  `alpha=m^2`, `lambda_3=2m`, `beta=1` и отношение `4`, но центральный фон
+  чётен и не является допустимой ненулевой частью оператора Дирака.
+- [[version8-baryon-noncentral-odd-dirac-background-projection-no-go-gate]] —
+  любой нечётный фон поддержан только в каналах `TTT+TGG`, тогда как
+  канонический `d_abc` лежит в `TTG+GGG`; производные вершины полной
+  суперкривизны исчезают на постоянном нулеимпульсном срезе.
+- [[version8-baryon-derivative-cubic-vertex-to-six-point-kernel-or-stop-gate]] —
+  независимый перебор `13244` троек подтвердил пустое пересечение опор
+  `d=140 TTG+28 GGG` и `C=106 TTG+10 GGG`; производные каналы исчезают при
+  нулевом импульсе и не содержат симметричной компоненты `W3` при любом
+  импульсе, поэтому локальная ветвь получила строгий STOP.
+- [[version8-baryon-nonlocal-six-point-kernel-admission-gate]] — два
+  положительных спектральных форм-фактора имеют общий предел `f(0)=1`, но
+  разные наклоны и значения вне нуля; нелокальный шеститочечный класс
+  допущен, конкретная спектральная мера и коэффициент не выведены.
+- [[version8-baryon-nonlocal-kernel-spectral-measure-parent-origin-gate]] —
+  точное исключение одного положительного вспомогательного поля реализует
+  однополюсное ядро, но орбита `m²,g² -> q m²,q g²` сохраняет статическую
+  проекцию и меняет импульсную форму; текущий конечный родитель не выбирает
+  спектральную массу.
+- [[version8-baryon-spectral-scale-anchor-candidate-audit-gate]] — единый
+  четырёхусловный контракт применён к масштабу базы, часам, шуму,
+  гессиану, cutoff/радиусу и наблюдаемой массе; внутренних якорей `0/6`.
+- [[version8-baryon-spectral-scale-anchor-minimal-new-data-gate]] — форма
+  требует двух независимых данных `m²=ca`, полный оператор — ещё
+  `lambda_3`; точные свидетели доказывают минимальность контракта.
+- [[version8-baryon-base-scale-selector-architecture-gate]] — классический
+  родитель выбирает лишь отношение и оставляет масштабную нулевую моду;
+  логарифмическая трансмутация условно даёт строгий минимум `(mu²,c0)`.
+- [[version8-baryon-dimensional-transmutation-input-origin-gate]] — ранние
+  вычисления поставляют `B0=67/(64*pi²)>0` и `b=2`, но полный `B`,
+  абсолютная шкала и карта `c0` дают строгий реестр `0/3`.
+- [[version8-baryon-c0-typed-internal-map-candidate-audit-gate]] — семь
+  именованных безразмерных отношений проверены по пяти условиям; полный
+  типизированный контракт не проходит ни одно (`0/7`).
+- [[version8-baryon-c0-minimal-cross-carrier-morphism-architecture-gate]] —
+  типизированная карта существует как одномерное семейство `M_kappa`, но
+  общий родитель пока не выбирает его положительную нормировку.
+- [[version8-baryon-c0-common-trace-embedding-normalization-gate]] — общий
+  trace прямой суммы оставляет симплекс центральных весов и выбирает лишь
+  условную норму `kappa=sqrt(p/q)`; требуется linking-бимодуль.
+- [[version8-baryon-c0-linking-algebra-offdiagonal-bridge-admission-gate]] —
+  полный `M2`-блок условно фиксирует `kappa=1` и `c0=4`; требуется найти
+  совместимую матричную единицу внутри текущего 42-carrier.
+- [[version8-baryon-c0-existing-42-carrier-linking-bridge-classification-gate]] —
+  `H21` не имеет neutral singlet, а старый frame аннулирует новую линию;
+  требуются новый endpoint state и off-diagonal стрелка.
+- [[version8-baryon-c0-minimal-neutral-endpoint-extension-gate]] — два
+  новых neutral states минимальны; odd bridge замыкается в три направления,
+  давая точные `H23`, `F45` и `K45=K42 direct_sum 2I3`.
+- [[version8-baryon-c0-extended-45-frame-fixed-algebra-and-dynamics-gate]] —
+  45 скачков задают точный GKSL, однако неподвижная алгебра равна `C^2`:
+  новый `M2`-блок изолирован от старого носителя и полный процесс не
+  примитивен.
+- [[version8-baryon-c0-old-new-gauge-covariant-connector-classification-gate]] —
+  допустимое пространство коннекторов имеет комплексную размерность `3`;
+  две квадратуры сокращают fixed algebra до скаляров, но оставляют
+  Real-семейство `RP2` и свободную скорость.
+- [[version8-baryon-c0-connector-multiplicity-and-rate-parent-selector-gate]] —
+  общий trace задаёт `I3`, но изотропный parent сохраняет `RP2` и две
+  угловые нулевые моды; направление и скорость дают реестр `0/2`.
+- [[version8-baryon-c0-extended-endpoint-bimodule-weight-origin-gate]] —
+  бимодульные метки диагонализуют три ветви, но trace-веса свободны;
+  включение всего Hom-пространства условно замыкает `M5` и даёт `F51`, не
+  выбирая одиночный морфизм `c0`.
+- [[version8-baryon-c0-full-multiplicity-frame-single-map-compatibility-gate]] —
+  Choi ranks полного и одиночного процессов равны `3` и `1`; центральный
+  срез скрывает различие, но операторный проектор его обнаруживает.
+- [[version8-baryon-c0-multiplicity-environment-pure-state-selector-gate]] —
+  чистые Real-состояния образуют `RP2`; trace/Gibbs даёт смешанное `I3/3`,
+  а entropy/purity не выбирает направление. Реестр уникальных внутренних
+  селекторов равен `0/5`.
+- [[version8-baryon-c0-multiplicity-environment-hamiltonian-minimal-data-gate]] —
+  минимальный Hamiltonian равен `epsilon I3+Delta(I3-P)`; конечный
+  Gibbs-state имеет ранг три, а direction/cooling/absolute-gap слои дают
+  реестр происхождения `0/3`.
+- [[version8-baryon-c0-multiplicity-environment-hamiltonian-parent-origin-gate]] —
+  внутренние источники нулевые, скалярные или принадлежат свободному
+  trace-симплексу; `R4+` анизотропен, но живёт на другом qutrit и требует
+  новой девятипараметрической карты переноса. Итог `0/5`.
+- [[version8-baryon-c0-family-to-multiplicity-intertwiner-admission-gate]] —
+  текущие `SO(3)`- и `A4`-Hom равны нулю. Условная линия `R I3` появляется
+  только после повышения среды до стандартной тройки и ковариантного
+  переустройства endpoint-алгебры; реестр расширения `0/2`.
+- [[shifted-supercurvature-cubic-shape-literature-2026]] — первичные
+  суперсвязностные источники и проектная специализация квадрата
+  `R_m(Z)=mZ+Z^2`, порождающего степени два, три и четыре одной нормой.
+- [[external-baryon-package-ab02]] — воспроизведённый внешний барионный пакет:
+  текущая матрица `A0`, трёхкварковый сектор, зарядовое тождество и
+  исправленный статус остатка 8,2 %.
+- [[version8-baryon-material-merge-review]] — ранжированный вердикт перед
+  слиянием: приоритет KMS-запрета и провенанса `A0`, ограниченный статус
+  барионного и электромагнитного блоков.
+- [[external-baryon-canonical-point-c1]] — независимая проверка инкремента
+  C1: точные `Q(exp(-2))`-веса подтверждены, блочный `G_eta`-запрет
+  воспроизведён, а `SU(2)`-корень признан кривой чувствительности, но не
+  предсказанием полной 27-мерной ветви.
+- [[external-baryon-attack-report-ba05]] — внешний отчёт об условной
+  единственности центрального фона и STOP производного маршрута к `W3`;
+  научная дельта существенна, но пять заявленных машинных артефактов в
+  загрузке отсутствуют, поэтому результат ожидает воспроизведения.
+- [[2026-08-30-tome8-russian-terminology-lint]] — языковая ревизия Тома VIII:
+  русские научные термины в содержательной прозе, сохранение формул,
+  идентификаторов, сокращений и библиографических названий.
 
 ## Систематика программы и томов
 
@@ -17,21 +457,185 @@
   дотомовых источниках; прежнее невоспроизводимое число 969 заменено явным
   правилом извлечения.
 - [[live-formula-source-index]] — полный механический индекс живого
-  корпуса: 5216 блочных формул из 467 файлов `s2t/docs/`, `s2t/gates/`
-  и `corpus/`, разбитых на 92 малые страницы с точными путями и строками.
+  корпуса: 6655 блочных формул из 633 файлов `s2t/docs/`, `s2t/gates/`
+  и `corpus/`; новый проход добавил 15 страниц с ранее отсутствовавшими
+  путями позднего Version 7 и всего Version 8.
 - [[formula-equivalence-and-status-index]] — слой над механическим индексом:
   81 кластер точных повторов, точная карта 17 formula-id через 22
   совпавших блока и 29 первичных вхождений, семантическая карта ещё 40
   formula-id и явное
   различение буквального совпадения, алгебраической эквивалентности,
   логического итога и смысловой генеалогии.
-- [[global-formula-atlas]] — канонический атлас итоговых формул Томов I--VII:
+- [[global-formula-atlas]] — канонический атлас итоговых формул Томов I--VIII:
   строгие тождества, условные наблюдаемые мосты, точные no-go формулы,
   физическая интуиция и ссылки на первичные и позднейшие вхождения.
+- [[version8-time-formula-intuition-map]] — сжатая формульная цепь
+  автономного времени: полный шум, конвейер, часы, совместный предел,
+  размерный мост и последний критерий остановки временного спринта.
 - [[formal-verification-and-palomar-roadmap]] — промежуточный слой между
   строгими LaTeX-гейтами и будущими Lean-доказательствами: формат
   самодостаточных спецификаций, лестница статусов и первые три кандидата.
   Markdown-контракт не считается машинным доказательством.
+- [[lcf-proof-edsl]] — первый исполняемый промежуточный слой:
+  pure-Python LCF-ядро, точные SymPy-типы пространств, представлений,
+  морфизмов и GKSL-генераторов. No-go коннектора `21 -> 20` воспроизведён
+  точно как `dim Hom_G=13`, `max rank=9`; это ещё не Lean-верификация.
+- [[version8-lcf-proofdsl-architecture-gate]] — eDSL встроен в архитектуру
+  гейтов через `GateSpec`, обязательства, реестр, CLI и детерминированный
+  JSON-сертификат. Четырнадцать результатов и девяносто два обязательства
+  имеют статус `lcf-checked`; конечный Page--Wootters--Stinespring-мост
+  добавил условные clock-срезы без повышения статуса физического времени.
+- [[version8-minimal-covariant-stinespring-lcf-migration-gate]] — точный
+  одношаговый канал существует при `0<=p<=1/6`, имеет минимальную среду
+  размерности `13` и GKSL-тангенс, но конечные карты не образуют полугруппу.
+- [[version8-intrinsic-noise-clock-lcf-migration-gate]] — рациональный спектр
+  cross-генератора, точная безразмерная полугруппа и collision-limit; масштаб
+  физического времени остаётся свободным.
+- [[version8-full-primitive-markov-generator-lcf-migration-gate]] — точная
+  примитивность полного процесса для всех положительных весов без scan;
+  метрика скоростей остаётся открытой.
+- [[version8-kms-nontracial-relative-rate-lcf-migration-gate]] — только
+  состояние `I21/21` стационарно; направленное KMS-отношение сохраняет
+  свободный модульный разрыв.
+- [[version8-modular-bohr-parent-lcf-migration-gate]] — 13 transfer-пар
+  имеют частоты `±2`, но ориентации `exp(-2)` и `exp(2)` равноправны.
+- [[version8-page-wootters-stinespring-history-gate]] — первый точный мост
+  от стационарной history-конструкции к дискретному Kraus-процессу и далее
+  к collision-limit: срезы часов `0,1,2` возвращают `Phi_*^n` точно;
+  полный автономный clock-unitary остаётся неканоничным на дополнении 252.
+- [[version8-canonical-autonomous-clock-unitary-extension-no-go-gate]] —
+  gauge-ковариантное фазовое семейство на дополнении Stinespring-образа
+  сохраняет тот же канал; Real-чётность оставляет как минимум `z=±1`,
+  поэтому clock-Hamiltonian не выводится из Kraus-карты.
+- [[version8-microscopic-interaction-hamiltonian-search]] — найден явный
+  самосопряжённый звёздный system--environment Hamiltonian, который в
+  repeated-interaction пределе возвращает cross-arrow GKSL-генератор.
+  Мост конструктивен, но точный конечный шаг, матрица связей,
+  свежая среда и физический масштаб времени остаются открытыми.
+- [[version8-microscopic-repeated-interaction-hamiltonian-gate]] —
+  звёздный Hamiltonian на `C273` точно даёт cross-arrow GKSL-касательную и
+  collision-limit. Две cross-семьи эквивалентны: полный gauge-коммутант
+  самосопряжённых interaction-связей имеет размерность `8`, а симметричная
+  rate-метрика — `4`, поэтому единичная связь не выбрана симметрией.
+- [[version8-trace-dual-cross-interaction-selector-gate]] — полевая
+  trace-метрика полного cross-модуля точно равна `3I_12`; при явном
+  отождествлении среды с метрически двойственным модулем это условно
+  выбирает `R=I_12/3`. Ортогональная свобода является кадром среды, но
+  физический масштаб времени и полный шестисемейный QMS не выведены.
+- [[version8-metric-dual-environment-parent-action-origin-gate]] — точный
+  no-go происхождения этого принципа из одной полевой части действия: два
+  положительных gauge-совместимых bath-completion имеют общий `K_B`, но
+  разные генераторы. Уравнение `K_BR=I` уникально выбирает `I_12/3`, оставаясь
+  дополнительной Riesz-аксиомой.
+- [[version8-full-noise-cotangent-carrier-admission-gate]] — полный noise
+  carrier после правильного разделения `15 complex transfer + 12 Hermitian
+  real gauge` имеет размерность `42 real` и совпадает с field space;
+  текущему 25-jump процессу недостаёт 17 направлений.
+- [[version8-full-noise-trace-frame-metric-gate]] — недостающие `9 linking +
+  8 internal` направления построены; полный 42-real Hermitian jump-frame и
+  его trace-Gram имеют точный ранг 42.
+- [[version8-full-noise-42-jump-gksl-fixed-algebra-gate]] — полный frame
+  собран в унитальный trace-preserving GKSL; включение старого 25-jump span
+  сохраняет `Fix=C I21` и примитивность.
+- [[version8-full-noise-repeated-interaction-hamiltonian-gate]] — полный
+  процесс реализован star-Hamiltonian на `C21 tensor C43`; среда 43
+  минимальна, gauge closure проверена на 504 парах.
+- [[version8-full-noise-physical-time-scale-no-go-gate]] — точная
+  scale-орбита `H_int -> g H_int`, `t -> t/g^2` сохраняет полный
+  безразмерный процесс; физическая секунда требует независимого
+  energy/rate anchor и collision-расписания.
+- [[version8-time-mechanism-project-archaeology]] — ретроспекция Томов
+  IV--VIII разделяет внутренний темп, `C4`-фазу, модулярный поток,
+  счётчик Тёплица и столкновительное время; обновлена до размерного
+  запрета `Gamma=chi^2E_C/hbar` и старой резонансной зацепки Тома VI.
+- [[version8-full-noise-toeplitz-ancilla-chain-dilation-gate]] — ранний
+  оператор числа и сдвиг подняты на bilateral product-vacuum chain из
+  `C43`-ячеек; один Floquet-унитарий точно даёт `Phi_h^n` без внешнего
+  пошагового reset.
+- [[version8-vacuum-chain-parent-state-and-local-hamiltonian-origin-gate]] —
+  product-vacuum имеет локальный commuting-projector parent с gap `1`, но
+  сдвиг имеет GNVW-индекс `43`; конечновременное локальное Hamiltonian-
+  происхождение конвейера строго запрещено.
+- [[version8-index-balanced-ancilla-conveyor-gate]] — встречная `C43`-цепь
+  сокращает индекс до `43*(1/43)=1`; точная схема из двух локальных SWAP-
+  слоёв сохраняет свежие рабочие ancilla и `Phi_h^n`. Открыт единый
+  time-independent local Hamiltonian.
+- [[version8-static-local-hamiltonian-embedding-or-no-go-gate]] — в
+  минимальном двухцепочечном Bloch-секторе eigenchannel windings равны
+  `(-1,+1)`; непрерывный периодический статический finite-range логарифм
+  невозможен. Interacting/clock-расширение остаётся открытым.
+- [[version8-clock-augmented-static-hamiltonian-conveyor-gate]] — конечный
+  трёхсостоянийный гамильтониан истории точно выполняет `W1W0`, но локальная
+  сериализация при ограниченных связях требует времени не меньше `pi L/2`,
+  а часы не возвращаются в исходное состояние.
+- [[version8-bounded-strength-autonomous-clock-thermodynamic-limit-gate]] —
+  квазиидеальные часы дают конечному конвейеру ошибку не более
+  `2 L A exp(-c d)`; глобальная точность требует `d=O(log(L/delta))`, тогда
+  как предел локальных наблюдаемых допускается при фиксированном ресурсе.
+- [[version8-local-observable-clocked-qms-limit-and-time-anchor-gate]] —
+  совместный предел часов и слабых столкновений имеет ошибку
+  `C_u/n+A/n^alpha` и автономно возвращает локальную непрерывную полугруппу;
+  общая масштабная свобода частоты часов и скорости шума сохраняется.
+- [[version8-typed-clock-energy-to-noise-rate-anchor-gate]] — точный
+  размерный мост `Gamma=chi^2 E_C/hbar`; текущий родитель не выбирает ни
+  энергию часов `E_C`, ни отношение взаимодействия `chi`.
+- [[version8-clock-energy-anchor-candidate-audit-gate]] — шесть внутренних
+  кандидатов на `E_C` проверены и отклонены из-за масштабных орбит либо
+  отсутствия типизированной связи с часовым гамильтонианом.
+- [[version8-minimal-mixed-clock-collision-parent-gate]] — построен точный
+  энергосохраняющий родитель `H_mix=E_C(H_0+chi G)` полного шумового
+  контакта; резонанс закрывает энергетический учёт, но не выбирает `chi`,
+  `E_C` или абсолютную секунду. Временной спринт на текущем действии закрыт.
+- [[version8-baryon-canonical-weights-geta-no-go-gate]] — независимо
+  подтверждены шесть точных весов в `Q(e^{-2})`; внешняя мишень строго
+  недостижима на всём положительном блочном срезе `G_eta`. Результат
+  условен относительно барионного отображения и не является теоремой о массах.
+- [[version8-baryon-directed-transfer-convention-selector-gate]] — общий
+  КМС-след фиксирует на исходном углу пружины
+  `x I6/[2(a+b)]` и `x I6/[13(a+b)]`; прежняя стрелочная пружина была
+  меньше ровно вдвое, а чтение с `1/x` удаляло обязательную КМС-скорость.
+- [[version8-baryon-three-particle-lift-normalization-gate]] — отношения
+  `3` и `3/2` выведены из числа копий и слабого казимира, но единственность
+  подъёма запрещена ковариационным отрезком `-1/2<=c<=1` с одинаковой
+  одночастичной динамикой.
+- [[version8-baryon-common-environment-correlation-origin-gate]] —
+  независимые и общая ячейки среды имеют одинаковое одночастичное
+  ограничение, поэтому текущий микроскопический родитель не выбирает
+  коллективную точку `c=1`; барионная ветвь остановлена точно.
+- [[version8-baryon-em-total-charge-identity-scope-gate]] — тождество
+  `A+C=Q_tot^2` и рисунок `(4,1,0,1)` подтверждены на 216 состояниях;
+  электромагнитная энергия сворачивается к полному заряду только при
+  дополнительном выборе `mu=lambda=1`.
+- [[version8-baryon-em-spatial-kernel-origin-gate]] — для различимых копий
+  положительное неоднородное ядро может изменить знак; перестановочное
+  усреднение восстанавливает `T(E_n-E_p)=-(mu+2g_bar)/3`, но растяжение
+  кулоновской волновой функции оставляет `g_bar` свободным.
+- [[version8-baryon-em-magnetic-hyperfine-origin-gate]] — слабый изоспин
+  нельзя использовать как физический спин; два состояния с `S=1/2` дают
+  противоположные знаки, а симметричный спин-ароматный сектор условно
+  фиксирует только множитель `O_n-O_p=-1/3`.
+- [[version8-baryon-spin-flavor-permutation-carrier-gate]] — цветовой
+  эпсилон и принцип Паули требуют совпадения перестановочных типов, но
+  допускают три ветви с магнитными разностями `-1/3`, `1` и `1/3`.
+- [[version8-baryon-spatial-ground-state-symmetry-origin-gate]] —
+  перестановочно-инвариантное центральное семейство имеет основные
+  состояния всех трёх типов; симметричность требует улучшения
+  положительности отсутствующего координатного родителя.
+- [[version8-baryon-electromagnetic-closure-redteam-gate]] — все
+  электромагнитные вклады сведены к трём ветвям; общий отрицательный знак
+  требует `-A_el<z<A_el/3`, принадлежность этой полосе не выведена.
+- [[gnvw-alpu-ancilla-shift-obstruction]] — первичные источники индексного
+  барьера: GNVW-классификация одномерных QCA и ALPU converse to
+  Lieb--Robinson для Hamiltonian-генерации.
+- [[version8-current-status-synchronization]] — подтверждено наличие и
+  подключение всех `155/155/155` гейтов, аудитов и результатов; части Тома VIII
+  переставлены по реальной хронологии. Служебная синхронизация хранится в
+  вики и не включается отдельной главой в теоретический том.
+- [[version8-dynamic-physical-closure-redteam-gate]] — контрольная граница
+  после литературной сверки: операторный класс процессов замкнут
+  математически, но восемь требований уникальной физической динамики не
+  выполнены; новые внутренние селекторы не повышают физический статус без
+  system--bath модели или пререгистрированной наблюдаемой.
 - [[global-theorem-and-no-go-ledger]] — канонический глобальный реестр
   Томов I--VII: строгие положительные результаты, условные конструкции,
   закрытые маршруты, межтомовое инвариантное ядро и открытые задачи. С этой
@@ -378,6 +982,221 @@
 - [[version7-final-conclusion-and-next-program]] — заключение Тома VII:
   исходные задачи, достигнутый качественный класс, точные границы результата
   и три условия возможного продолжения.
+
+## Подготовительная программа после Тома VII
+
+- [[version8-polar-morita-connector-admission-gate]] — red-team закрыл
+  размерностный кандидат `T0=diag(I11,U*)`: два пространства `C11` имеют
+  разный смысл — метки стрелок и физические состояния. Полный arrow-модуль
+  имеет размерность `36`; скрытое отождествление `j` пробегает `U(11)`
+  размерности `121` и не выбирается Hodge-дефектом. Число `462` остаётся
+  размером порождаемого угла, но физический коннектор не получен.
+- [[version8-physical-arrow-endpoint-intertwiner-classification-gate]] —
+  полный 36-мерный arrow-модуль имеет 10 прямых и 14 Real-удвоенных
+  интертвинеров, поэтому общий коннектор неоднозначен. Однако на выбранной
+  шестирёберной Real-Hodge-опоре остаётся ровно один канал: обратный партнёр
+  `Y_R -> Q_L` содержит `(3,1,2/3)` и отображается в `u_R`. Его ранг не
+  выше трёх, поэтому он требует отдельного подъёмного теста.
+- [[version8-qlyr-ur-real-connector-lift-gate]] — единственный канал явно
+  реализуется нормированным слабым следом и проходит gauge/Real-проверки,
+  но окончательный цветосохраняющий проектор полностью его аннулирует:
+  `J P_G=0`. Без проекции остаются несвязные дополнения `9+18`, поэтому
+  массовая метрика не фиксируется и ветвь коннектора закрыта.
+- [[version8-colorless-hodge-gauge-anchor-no-go-gate]] — окончательный
+  четырёхрёберный Hodge-вакуум состоит только из `(1,1)_0` и имеет
+  `(I1,I2,I3)=(0,0,0)`. Весь полный индекс `(13,2,3/2)` несут семь
+  заглушённых рёбер. Поэтому активный сектор не может калибровать `f0`, а
+  перенос полного `q_G` вручную смешал бы два разных следовых носителя.
+  Ветвь общего gauge--spacetime следа закрыта в текущей архитектуре.
+- [[version8-second-family-tensor-inheritance-no-go-gate]] — база содержит
+  настоящие семейные операторы, но готового примитива B нет: cross-loop
+  предполагает закрытый коннектор, моментный коммутатор провалил
+  замороженные mass-train и CKM-blind, а 12 incidence-кандидатов не имеют
+  селектора. Все три входных примитива текущей архитектуры теперь закрыты;
+  Том VIII нельзя открывать простым продолжением старой схемы.
+- [[version8-moving-kernel-second-fundamental-form-gate]] — последняя
+  внутренняя пространственная зацепка проверена явно. Проектор
+  `P_X=I-X^*(XX^*)^{-1}X` и блок `B_X=(I-P_X)(nabla P_X)P_X` каноничны на
+  страте ранга три, но действуют только в аффинном множителе и не являются
+  межсекторным коннектором. На rank-drop пути с ограниченной `||partial X||`
+  получено `||B_X||=1/epsilon`, поэтому регулярный родитель не возникает.
+- [[projector-grassmannian-moving-kernel-literature-2026]] — свежая
+  проекторная литература подтверждает роль `dP` как касательного объекта
+  грассманиана, но требует гладкой спектральной щели и потому не переносится
+  автоматически через смену ранга.
+- [[version8-full-correlation-kernel-locality-reconstruction-gate]] — ранняя
+  идея полного корреляционного ядра оказалась сильнее её поздней
+  spectrum-only редукции: на старой коспектральной паре полный оператор точно
+  возвращает генератор и связность, если дана алгебра наблюдаемых.
+- [[full-heat-kernel-diffusion-geometry-reconstruction-2026]] — литература о
+  восстановлении локальной геометрии из полного теплового ядра и
+  диффузионного исчисления; фиксирует условия, ещё не выведенные в S2T.
+- [[version8-linking-dirichlet-quantum-markov-semigroup-gate]] — физическая
+  linking-инцидентность канонически порождает квантово-марковскую
+  полугруппу между endpoint-углами; положительный процесс получен, но его
+  неподвижная алгебра имеет размерность 41.
+- [[version8-linking-qms-gksl-lcf-migration-gate]] — точный eDSL проверил
+  GKSL-типизацию, `441` trace-равенство, `221` corner-равенство и систему
+  фиксированных точек ранга `180` с нульмерностью `41`. Полная
+  положительность пока следует из доверенного правила GKSL.
+- [[quantum-markov-dirichlet-fixed-algebra-literature-2026]] — формы
+  Дирихле, квантово-марковские полугруппы и смысл большой неподвижной
+  алгебры.
+- [[version8-markov-fixed-algebra-selector-gate]] — полный gauge-набор
+  сокращает неподвижную алгебру `41 -> 2`: канонически остаются цветной
+  quark- и бесцветный lepton/vectorlike-секторы рангов 12 и 9.
+- [[version8-markov-fixed-algebra-lcf-migration-gate]] — результат
+  перепроверен без спектрального допуска: gauge-коммутант имеет размерность
+  `13`, полная система `220x13` — ранг `11`, ядро `2`. Одностороннее
+  уравнение оставляет `4`, поэтому сопряжённая половина существенна.
+- [[version8-opening-contract]] — Том VIII официально открыт: кратко
+  зафиксированы проверенные варианты, поворот к полному корреляционному
+  ядру, центральная задача межсекторной сшивки и строгий стоп-критерий.
+- [[version8-gauge-twirl-cross-sector-kraus-bridge-gate]] — полный
+  цветовой Kraus-мультиплет уже существующих стрелок снимает центральную
+  `C^2` без линейного gauge-синглета и без цветного вакуумного среднего.
+- [[version8-gauge-twirl-kraus-lcf-migration-gate]] — результат повышен до
+  `lcf-checked`: 12 jump-направлений точно замкнуты под 12 генераторами
+  gauge-алгебры, линейное инвариантное пространство имеет размерность `0`,
+  а центральное ядро равно `1` при любых положительных скоростях.
+- [[version8-kraus-bridge-parent-action-hessian-gate]] — положительная
+  полевая форма моста сохраняет сигнатуры Тома VII, но в классическом
+  вакууме сам канал выключен: ненулевая скорость требует ковариации с пока
+  невыведенным масштабом.
+- [[version8-kraus-bridge-parent-action-lcf-migration-gate]] — scan весов
+  заменён точной проверкой всех `lambda_bridge>=0`: сигнатуры сохраняются,
+  гессиан равен `7 I12/18`, но при `z=0` все Kraus-веса точно исчезают.
+- [[version8-cross-arrow-covariance-origin-gate]] — linking-гессиан
+  выделяет шесть одинаковых пар `QLYR–XLdR` и общую мягкую ось
+  `55.45092°`, но сила анизотропии зависит от `eta`, а масштаб — от меры.
+- [[version8-cross-arrow-covariance-lcf-migration-gate]] — полярный блок
+  восстановлен точно в поле степени 6: `I6 tensor B`, внешний блок `12x15`
+  нулевой, пара положительна и имеет общую ось при всех `eta>0`.
+- [[version8-minimal-covariant-stinespring-carrier-gate]] — точный
+  одношаговый канал имеет минимальный Kraus-ранг 13 и использует
+  комплексификацию существующей cross-arrow опоры; непрерывный шум и
+  вероятность шага пока не выведены.
+- [[version8-intrinsic-noise-clock-dilation-gate]] — повторные свежие
+  ancilla сходятся к канонической безразмерной полугруппе, но модульное
+  время не создаёт диссипацию, а физическая скорость остаётся свободной.
+- [[version8-full-primitive-markov-generator-assembly-gate]] — все
+  linking-, gauge- и cross-части собраны в одну примитивную полугруппу с
+  неподвижной алгеброй `C I21`; положительные веса сохраняют примитивность,
+  но меняют спектральную щель.
+- [[version8-kms-nontracial-relative-rate-selector-gate]] — точный no-go:
+  примитивность и унитальность фиксируют единственное состояние `I21/21`,
+  поэтому нетривиальный KMS-вес не выбирает скорости. Направленное
+  разбиение скачков даёт лишь условие
+  `gamma_up/gamma_down=exp(-beta Delta)` с невыведенным `beta Delta`.
+- [[version8-modular-bohr-parent-origin-gate]] — оператор степени цепи
+  `N=(0,1,2)` даёт всем 13 transfer-стрелкам общий разрыв `2` и строит
+  примитивную KMS-полугруппу с отношением `exp(-2)`. Обращение цепи даёт
+  столь же допустимое `exp(2)`, поэтому остаётся дискретный выбор
+  ориентации и физического масштаба.
+- [[version8-chain-orientation-index-defect-selector-gate]] — двузначность
+  закрыта: `N_boundary-I=Gamma`, `index(U)=+1`, и только ветвь `exp(-2)`
+  сохраняет отрицательный 220-мерный гессиан нуля и коизометрический
+  минимум. Обратный знак делает нулевое поле устойчивым.
+- [[version8-common-chain-dirichlet-rate-metric-gate]] — отношение
+  вверх/вниз закрыто, но шесть KMS-симметричных семейных форм линейно
+  независимы и оставляют пять относительных весов. Даже метрика
+  `f(ad_N^2)` сохраняет одно свободное отношение `f(4)/f(0)`; чистая
+  коммутаторная форма выключает gauge-диффузию.
+- [[version8-correlation-kernel-short-time-rate-selector-gate]] — точное
+  полное ядро при известном времени восстанавливает все шесть скоростей, а
+  без калибровки времени — пять относительных. Независимое физическое ядро
+  на endpoint-алгебре пока отсутствует, поэтому результат условен.
+- [[full-kernel-lindbladian-tomography-literature-2026]] — томография
+  линдбладовских генераторов, ветви матричного логарифма и практические
+  ограничения конечновременной реконструкции.
+- [[version8-physical-correlation-kernel-parent-action-origin-gate]] — один
+  родительский гессиан допускает разные положительные мобильности с одной
+  стационарной мерой и разными ядрами. Значит, действие без закона
+  флуктуации–диссипации не выводит физическое `C_tau`.
+- [[parent-action-equilibrium-and-mobility-literature-2026]] — различие между
+  евклидовой мерой, стохастической мобильностью и слабосвязанным марковским
+  генератором.
+- [[version8-fluctuation-dissipation-mobility-origin-gate]] — следовая
+  метрика `3I12` даёт равную относительную мобильность `QLYR/XLdR`, но не
+  охватывает четыре остальных семейства и не фиксирует шумовой кадр.
+- [[quantum-gradient-flow-and-noise-metric-literature-2026]] — градиентное
+  чтение detailed-balance QMS, формы Дирихле и зависимость скоростей от
+  полной шумовой структуры.
+- [[version8-canonical-noise-frame-common-trace-gate]] — общий KMS-Gram
+  сокращает 25 сырых компонент до 19 физических шумовых направлений и
+  строит базис-независимый Casimir, фиксирующий пять относительных скоростей;
+  позднее его статус сужен до стабилизатора linking-фона.
+- [[gksl-noise-frame-invariance-literature-2026]] — форма GKSL,
+  неединственность списка скачков и инвариантность ортонормированного кадра.
+- [[version8-noise-isotropy-symmetry-admission-gate]] — полный gauge-red-team:
+  19D-модуль течёт из выбранного подпространства, стабилизаторная ветвь
+  корректна, а минимальное полное замыкание имеет размерность 27.
+- [[covariant-noise-modules-and-stabilizers-literature-2026]] — ковариантные
+  QMS, gauge-орбита фона и различие полной группы со стабилизатором.
+- [[version8-gauge-closed-noise-parent-hessian-gate]] — совпадение числа 27
+  оказалось ложной подсказкой: старый полевой срез и полный noise quotient
+  пересекаются лишь в 23 вещественных направлениях, поэтому единственный
+  родительский гессиан не наследуется.
+- [[field-hessian-and-qms-noise-space-literature-2026]] — различие между
+  касательным пространством полей, drift/diffusion и операторным noise-space.
+- [[version8-unified-field-space-project-intuition-search]] — повторный
+  проход по Томам III, V, VII и раннему корреляционному корпусу: найден
+  маршрут через единый суперсвязностный field space, gauge/BV quotient и
+  производное отображение физических флуктуаций в QMS-noise module.
+- [[version8-gauge-closed-field-space-superconnection-gate]] — общий field
+  space размерности 42 real собран и ковариантен; полный родитель пока
+  блокирует полярная развилка между fixed-stabilizer ветвью и негладким
+  moving-polar через rank-zero.
+- [[version8-smooth-relative-background-order-parameter-gate]] — строгий
+  red-team полярной развилки: кварк-лептонная градуировка даёт гладкую
+  ненулевую relative-кривизну и положительный вакуумный гессиан ранга 12,
+  но действие шестой степени имеет нулевой гессиан в исходной точке и не
+  запускает переход.
+- [[version8-isotypic-relative-curvature-parent-hessian-gate]] — совместный
+  тест гессиана: новый член сохраняет переход Тома VII на старом срезе, а
+  полное gauge-замыкание даёт incidence-размерность `5 complex` и
+  качественный класс `(10,0,20) -> (0,0,30)`; два массовых веса ещё не
+  выведены.
+- [[version8-gauge-closed-edge-hodge-origin-gate]] — точный источник двух
+  свободных масс: совместный спектр gauge-Casimir, секторной градуировки и
+  цепной степени оставляет блок `4 incidence + 4 heavy`; KMS-след скалярен,
+  поэтому независимый Real- или бимодульный селектор ещё необходим.
+- [[version8-real-incidence-multiplicity-quotient-gate]] — Real-удвоение
+  обменивает ориентированные половины, но не сокращает 30 вещественных
+  transfer-параметров и допускает непрерывную орбиту gauge- и Real-
+  совместимых проекторов ранга четыре; кратность `4+4` сохраняется.
+- [[version8-bimodule-multiplicity-separator-gate]] — полный endpoint-
+  бимодуль раскрывает пять скрытых transfer-компонент и даёт замыкание
+  `20 complex = 10 incidence + 10 heavy`; общий Hodge-уровень фиксирует
+  edge-массы и полный переход, но относительный Gram-вес `beta` открыт.
+- [[version8-bimodule-common-curvature-relative-weight-gate]] — честный
+  незавешенный общий след фиксирует провальное `beta=1`; Real-полуслед не
+  меняет отношение, а любой gauge-ковариантный коннектор `21 -> 20` имеет
+  ранг не выше `9`. Рабочее `beta=1/2` остаётся недовыведенным.
+- [[superconnection-curvature-and-polar-strata-literature-2026]] — внешний
+  контекст общей суперсвязностной кривизны и fixed-rank полярных страт.
+- [[gauge-covariant-kraus-multiplet-literature-2026]] — почему симметрия
+  может смешивать заряженные Kraus-операторы, оставляя весь канал
+  инвариантным.
+- [[open-system-rate-and-covariant-dilation-literature-2026]] — почему
+  допустимый канал ещё не определяет состояние среды и свою скорость.
+- [[gaussian-hessian-and-heat-covariance-literature-2026]] — три разных
+  операторных правила получения ковариации из квадратичного генератора.
+- [[stinespring-rank-and-quantum-noise-dilation-literature-2026]] — связь
+  Kraus-ранга с минимальной средой и Fock-шумом непрерывной полугруппы.
+- [[intrinsic-time-and-repeated-interaction-literature-2026]] — различие
+  обратимого модульного потока и диссипативного collision-limit.
+- [[primitive-qms-and-detailed-balance-literature-2026]] — примитивность,
+  неподвижная алгебра и предел селектирующей силы detailed balance.
+- [[kms-detailed-balance-and-davies-rates-literature-2026]] — инвариантное
+  KMS-состояние, боровское разбиение скачков и условное отношение прямых и
+  обратных скоростей.
+- [[chiral-fredholm-index-orientation-literature-2026]] — знак Fredholm-
+  индекса, непарные хиральные нулевые моды и обращение прямоугольного
+  оператора.
+- [[covariant-dirichlet-rate-metric-literature-2026]] — дифференциальная
+  структура симметричных QMS и свобода положительных метрик на
+  инвариантных компонентах шума.
 - [[bicomplex-hodge-metric-literature-2026]] — первичная литература о
   разделении алгебраической структуры двойного комплекса и выбранной
   эрмитовой/Hodge-метрики.

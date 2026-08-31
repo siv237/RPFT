@@ -1,0 +1,80 @@
+{
+  "collision_limit": {
+    "convergence": "operator norm by finite-dimensional Chernoff product rule",
+    "dimensionless_semigroup_recovered": true,
+    "fresh_13_dimensional_environment_each_step": true,
+    "fresh_environment_supply_derived": false,
+    "physical_tick_duration_derived": false,
+    "rule": "p=u/n"
+  },
+  "date": "2026-08-29",
+  "exact_dimensionless_semigroup": {
+    "decay_spectrum": [
+      {
+        "eigenvalue": "0",
+        "multiplicity": 46
+      },
+      {
+        "eigenvalue": "1/2",
+        "multiplicity": 48
+      },
+      {
+        "eigenvalue": "1",
+        "multiplicity": 62
+      },
+      {
+        "eigenvalue": "3/2",
+        "multiplicity": 20
+      },
+      {
+        "eigenvalue": "2",
+        "multiplicity": 8
+      },
+      {
+        "eigenvalue": "5/2",
+        "multiplicity": 12
+      },
+      {
+        "eigenvalue": "3",
+        "multiplicity": 8
+      },
+      {
+        "eigenvalue": "7/2",
+        "multiplicity": 12
+      },
+      {
+        "eigenvalue": "4",
+        "multiplicity": 4
+      },
+      {
+        "eigenvalue": "8",
+        "multiplicity": 1
+      }
+    ],
+    "endpoint_operator_dimension": 221,
+    "formula": "T_u=exp(u L_cross)",
+    "kernel_dimension": 46,
+    "physical_rate_kappa_derived": false,
+    "positive_rate_rescaling_preserves_kernel": true,
+    "unit_rate_gap": "1/2",
+    "unit_rate_maximum_decay": "8"
+  },
+  "gate": "version8_intrinsic_noise_clock_lcf_migration_gate",
+  "modular_time_no_go": {
+    "cross_dissipative_projector_motion_norm_squared": "72",
+    "faithful_central_modular_action_on_sector_projectors": "zero",
+    "modular_flow_reproduces_cross_dissipation": false,
+    "uniform_modular_action_on_sector_projectors": "zero"
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "5740ab7807aa778a58ccb07d3e51ab78908626e312a508923bfacb9d8e5741ba",
+    "obligation_count": 8,
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "dimensionless_noise_time_lcf_checked": true,
+    "next_gate": "version8_full_primitive_markov_generator_lcf_migration_gate",
+    "physical_clock_rate_still_open": true,
+    "status": "lcf-checked-dimensionless-time-physical-rate-open"
+  }
+}

@@ -1,0 +1,115 @@
+\chapter{Допуск тяжёлых стрелочных циклов горизонтальной фазы}
+\label{ch:v8-horizontal-phase-heavy-arrow-cycle-admission-gate}
+
+Вернёмся к полному бимодульному носителю
+$\mathcal T_{\rm bimod}=\mathcal I_{10}\oplus\mathcal H_{10}$ и забудем
+вакуумные амплитуды, сохранив только опору концевых блоков. В порядке
+вершин
+\begin{equation}
+ (Q_L,L_L,X_L,Y_L\mid u_R,d_R,e_R,X_R,Y_R)
+ \label{eq:v8-heavy-cycle-vertices}
+\end{equation}
+она имеет девять вершин и одиннадцать рёбер: семь инцидентностных и четыре
+тяжёлых. Для ориентированной матрицы границы $\partial$ точный ранг равен
+\begin{equation}
+ \rank\partial=8,
+ \qquad
+ b_1=11-8=3.
+ \label{eq:v8-heavy-cycle-betti-rank}
+\end{equation}
+Граф связен и действительно содержит три независимых цикла.
+
+Инцидентностная часть сама по себе является лесом:
+\begin{equation}
+ \dim\ker\partial_I=7-\rank\partial_I=0.
+ \label{eq:v8-heavy-cycle-incidence-forest}
+\end{equation}
+В порядке рёбер
+\begin{multline}
+ (Q_Lu_R,Q_Ld_R,L_Le_R,X_Le_R,X_LX_R,L_LY_R,Y_LY_R,\\
+ X_Ld_R,Y_Le_R,L_LX_R,Q_LY_R)
+ \label{eq:v8-heavy-cycle-edge-order}
+\end{multline}
+базис полного цикл-пространства можно выбрать столбцами матрицы
+\begin{equation}
+ C=\begin{pmatrix}
+0&0&0\\0&0&-1\\-1&-1&1\\0&1&-1\\0&-1&0\\
+1&0&-1\\-1&0&0\\0&0&1\\1&0&0\\0&1&0\\0&0&1
+\end{pmatrix},
+ \qquad \partial C=0,
+ \qquad \rank C=3.
+ \label{eq:v8-heavy-cycle-basis}
+\end{equation}
+Проекция последних четырёх строк $C_H$ также имеет ранг $3$. Поэтому
+тяжёлые стрелки не являются спектаторами: они создают все три независимых
+циклических направления.
+
+Но это ещё не фазочувствительный объект. Единственное ребро, входящее в
+$u_R$, есть $Q_Lu_R$, и оно является листовым:
+\begin{equation}
+ C_{Q_Lu_R,\bullet}=(0,0,0).
+ \label{eq:v8-heavy-cycle-up-leaf}
+\end{equation}
+Следовательно, ни один замкнутый путь не проходит через сектор, который
+отличает вес $4$ от общего веса $3$ остальных строк.
+
+Тот же запрет виден непосредственно на фазовом характере. Для
+$A(z)=\operatorname{diag}(z^4I_3,z^3I_7)A$ вектор весов рёбер равен
+\begin{equation}
+ q=(4,3,3,3,3,3,3,3,3,3,3).
+ \label{eq:v8-heavy-cycle-phase-weights}
+\end{equation}
+Любое обычное колчанное циклическое слово чередует стрелки и сопряжённые
+стрелки, а его показатель фазы задаётся циркуляцией. Точно
+\begin{equation}
+ qC=(0,0,0).
+ \label{eq:v8-heavy-cycle-zero-charge}
+\end{equation}
+Таким образом, все три голономии калибровочно допустимы, но горизонтально
+нейтральны. Это согласуется с общим правилом следового действия: левое
+унитарное умножение сокращается в каждом замкнутом слове с $A$ и $A^*$.
+
+\begin{theorem}[Три тяжёлых цикла без фазового заряда]
+Полная бимодульная опора связна и имеет цикл-ранг $3$; инцидентностная опора
+является лесом, а тяжёлые стрелки порождают все независимые циклы. Однако
+ребро $Q_Lu_R$ листовое и все три циклических фазовых заряда равны нулю.
+\end{theorem}
+
+\begin{nogocriterion}[No-go обычного тяжёлого цикла]
+Нельзя поднимать горизонтальную моду добавлением следа голономии любого
+цикла текущего двуслойного колчана. Такой след неизбежно содержит равное
+число стрелок и сопряжённых стрелок при каждой целевой вершине, поэтому
+фаза сокращается. Следующий допустимый механизм должен проверить, даёт ли
+Real-структура независимую ориентированную голоморфную свёртку; считать
+сопряжённую стрелку новым независимым полем запрещено.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item вершин полного графа: \textbf{$9$};
+ \item рёбер полного графа: \textbf{$11=7+4$};
+ \item связных компонент: \textbf{$1$};
+ \item цикл-ранг полной опоры: \textbf{$3$};
+ \item цикл-ранг инцидентностной опоры: \textbf{$0$};
+ \item ранг тяжёлой проекции цикл-пространства: \textbf{$3$};
+ \item степень вершины $u_R$: \textbf{$1$};
+ \item циклов через ребро $Q_Lu_R$: \textbf{$0$};
+ \item горизонтальные заряды базисных циклов: \textbf{$(0,0,0)$};
+ \item тяжёлые циклы поднимают горизонтальную моду: \textbf{нет};
+ \item следующий гейт: \textbf{Real-ориентированная голоморфная свёртка}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_horizontal_phase_heavy_arrow_cycle_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-heavy-cycle-quiver-action}
+C.~I.~P\'erez-S\'anchez,
+\emph{The Spectral Action on Quivers}, arXiv:2401.03705.
+\bibitem{v8-heavy-cycle-hashimoto}
+K.~Hashimoto,
+\emph{Zeta Functions of Finite Graphs and Representations of
+$p$-Adic Groups}, Advanced Studies in Pure Mathematics 15 (1989),
+211--280.
+\end{thebibliography}

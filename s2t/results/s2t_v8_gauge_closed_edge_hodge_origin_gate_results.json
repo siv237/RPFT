@@ -1,0 +1,166 @@
+{
+  "canonical_operator_algebra": {
+    "base_gauge_commutant_dimension": 13,
+    "chain_bohr_degree_on_all_transfers": 2,
+    "commutant_dimension_after_casimir_sector_order_and_degree": 13,
+    "gauge_casimir_spectrum": [
+      -6.66133814775e-16,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.77777777778,
+      1.77777777778,
+      1.77777777778,
+      1.77777777778,
+      1.77777777778,
+      1.77777777778
+    ],
+    "joint_spectral_blocks": [
+      {
+        "complex_rank": 1,
+        "gauge_casimir": 0.0,
+        "incidence_overlap_rank": 1,
+        "sector_order": 0.0
+      },
+      {
+        "complex_rank": 8,
+        "gauge_casimir": 1.0,
+        "incidence_overlap_rank": 4,
+        "sector_order": 0.0
+      },
+      {
+        "complex_rank": 3,
+        "gauge_casimir": 1.7777777777777777,
+        "incidence_overlap_rank": 0,
+        "sector_order": -2.0
+      },
+      {
+        "complex_rank": 3,
+        "gauge_casimir": 1.7777777777777777,
+        "incidence_overlap_rank": 0,
+        "sector_order": 2.0
+      }
+    ],
+    "sector_order_spectrum": [
+      -2.0,
+      -2.0,
+      -2.0,
+      -5.54455482181e-16,
+      -2.70584108338e-16,
+      -1.80138376166e-16,
+      -4.89359646282e-17,
+      -2.34366959187e-19,
+      -5.35508206461e-33,
+      2.75939563631e-17,
+      5.16836006499e-17,
+      6.09994088589e-16,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "transfer_complex_dimension": 15
+  },
+  "common_kms_trace": {
+    "derives_incidence_heavy_ratio": false,
+    "rows": [
+      {
+        "condition_number": 1.0,
+        "incidence_to_heavy_weight_ratio": 1.0,
+        "target_to_source_density_ratio": 1.0,
+        "transfer_gram_eigenvalue": 0.09523809523809523
+      },
+      {
+        "condition_number": 1.0,
+        "incidence_to_heavy_weight_ratio": 1.0,
+        "target_to_source_density_ratio": 0.1353352832366127,
+        "transfer_gram_eigenvalue": 0.09190503166573553
+      },
+      {
+        "condition_number": 1.0,
+        "incidence_to_heavy_weight_ratio": 1.0,
+        "target_to_source_density_ratio": 1.0476190476190477,
+        "transfer_gram_eigenvalue": 0.09534368070953439
+      },
+      {
+        "condition_number": 1.0,
+        "incidence_to_heavy_weight_ratio": 1.0,
+        "target_to_source_density_ratio": 0.9545454545454546,
+        "transfer_gram_eigenvalue": 0.09513274336283187
+      }
+    ],
+    "transfer_metric_is_scalar_for_every_endpoint_density_ratio": true
+  },
+  "date": "2026-08-29",
+  "gate": "version8_gauge_closed_edge_hodge_origin_gate",
+  "incidence_projector_reconstruction": {
+    "best_joint_function_hilbert_schmidt_residual": 1.4142135623730954,
+    "best_joint_function_operator_norm_residual": 0.5000000000000007,
+    "best_joint_function_relative_hilbert_schmidt_residual": 0.6324555320336761,
+    "heavy_rank_inside_degenerate_block": 4,
+    "incidence_complex_rank": 5,
+    "incidence_projector_is_function_of_casimir_order_and_degree": false,
+    "incidence_rank_inside_degenerate_block": 4,
+    "unresolved_degenerate_block_complex_rank": 8
+  },
+  "morse_index_constraint": {
+    "even_joint_block_complex_ranks": [
+      1,
+      8,
+      6
+    ],
+    "possible_real_indices_from_even_joint_spectral_selectors": [
+      0,
+      2,
+      12,
+      14,
+      16,
+      18,
+      28,
+      30
+    ],
+    "possible_real_indices_from_signed_joint_spectral_selectors": [
+      0,
+      2,
+      6,
+      8,
+      12,
+      14,
+      16,
+      18,
+      22,
+      24,
+      28,
+      30
+    ],
+    "signed_joint_block_complex_ranks": [
+      1,
+      8,
+      3,
+      3
+    ],
+    "ten_real_incidence_index_available": false
+  },
+  "representative_two_mass_metric": {
+    "best_canonical_operator_algebra_residual": 0.5656854249492392,
+    "best_degenerate_block_scalar_mass": 3.8,
+    "exact_two_mass_metric_reconstructed": false,
+    "heavy_mass": 3.6,
+    "incidence_mass": 4.0
+  },
+  "verdict": {
+    "chain_degree_derives_two_edge_hodge_masses": false,
+    "common_kms_trace_derives_two_edge_hodge_masses": false,
+    "four_plus_four_multiplicity_ambiguity_remains": true,
+    "full_parent_action_obtained": false,
+    "gauge_casimir_derives_two_edge_hodge_masses": false,
+    "next_gate": "version8_real_incidence_multiplicity_quotient_gate",
+    "quark_lepton_grading_derives_two_edge_hodge_masses": false,
+    "unique_gauge_closed_edge_hodge_origin_obtained": false,
+    "using_incidence_projector_at_origin_without_new_selector_is_circular": true
+  }
+}

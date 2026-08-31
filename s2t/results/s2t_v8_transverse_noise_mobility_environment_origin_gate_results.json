@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-30",
+  "environment_covariance": {
+    "canonical": "C_1=K_gauge^-1",
+    "normalized_shape_equal": true,
+    "rank": 12,
+    "rescaled": "C_2=4 K_gauge^-1"
+  },
+  "gate": "version8_transverse_noise_mobility_environment_origin_gate",
+  "next_gate": "version8_full_field_kinetic_supermetric_assembly_gate",
+  "registry": {
+    "certificate_sha256": "dbe8e723ea40203a05708e1de904226d697d471f9efb732bcf9a718cefdc19e6",
+    "gate_count": 34,
+    "obligation_count": 212
+  },
+  "scale_orbit": {
+    "coupling": "g -> 2g",
+    "rate": "Gamma -> 4 Gamma",
+    "semigroup_parameter_invariant": true,
+    "time": "t -> t/4"
+  },
+  "transverse_mobility": {
+    "longitudinal_kernel_preserved": true,
+    "nullity": 12,
+    "rank": 36,
+    "rescaling": "M_2=4 M_1"
+  },
+  "verdict": {
+    "absolute_mobility_scale_derived": false,
+    "internal_shape_obtained": true,
+    "rejoins_physical_time_scale_no_go": true
+  }
+}

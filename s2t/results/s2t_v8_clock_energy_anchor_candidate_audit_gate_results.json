@@ -1,0 +1,16 @@
+{
+  "candidates": {
+    "compactification_radius": "physical_length_not_derived",
+    "compacton_energy": "only_E_times_L_fixed",
+    "observed_masses": "external_or_train_without_typed_clock_map",
+    "qms_gap": "dimensionless_and_rate_rescalable",
+    "spectral_cutoff": "profile_cutoff_scale_orbit",
+    "vacuum_parent_gap": "positive_coefficient_rescalable"
+  },
+  "conditional_rate_formula": "Gamma=chi^2 E_C/hbar",
+  "date": "2026-08-30",
+  "dimensionless_coupling_chi_selected": false,
+  "gate": "version8_clock_energy_anchor_candidate_audit_gate",
+  "next_gate": "version8_minimal_mixed_clock_collision_parent_gate",
+  "typed_clock_energy_anchor_found": false
+}

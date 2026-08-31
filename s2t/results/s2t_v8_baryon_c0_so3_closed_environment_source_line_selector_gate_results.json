@@ -1,0 +1,57 @@
+{
+  "conditional_grading_changes": {
+    "changes_existing_H21_grading": true,
+    "minimum_edit_is_parent_principle": false,
+    "target_minus_identity_grade_flips": 2,
+    "target_minus_identity_selects_source_column": "s0",
+    "target_plus_identity_grade_flips": 1,
+    "target_plus_identity_selects_source_column": "a0"
+  },
+  "current_parent_selectors": {
+    "depolarizing_stationary_state": "I2/2",
+    "derived_unique_selectors": 0,
+    "grading_hamiltonian": "beta I2 + alpha Gamma_src with sign(alpha) unselected",
+    "normalized_trace_state": "I2/2",
+    "pauli_casimir": "3 I2",
+    "real_structure": "preserves both coordinate lines",
+    "source_grading_projectors": "two coordinate lines, no preferred sign",
+    "tested_selectors": 6
+  },
+  "date": "2026-08-30",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_so3_closed_environment_source_line_selector_gate",
+  "grading": {
+    "SO3_generator_grading_commutator_squares": [
+      0,
+      8,
+      8
+    ],
+    "current_three_arrows_odd": true,
+    "missing_arrow_oddness_residual_squares": [
+      4,
+      4,
+      4
+    ],
+    "source": "diag(+1,-1)",
+    "standard_SO3_commutes_with_target_grading": false,
+    "target": "diag(-1,+1,+1)"
+  },
+  "next_gate": "version8_baryon_c0_grading_compatible_family_triplet_endpoint_extension_gate",
+  "source_line_family": {
+    "admissible_RP1_points": 0,
+    "intertwiner": "T_(u,v)(z)=[u z, v z]",
+    "odd_intertwiner_dimension": 0,
+    "odd_projection_rank_u_axis": 1,
+    "odd_projection_rank_v_axis": 2,
+    "oddness_constraint_rank": 2,
+    "total_parity_defect": "8 u^2 + 4 v^2",
+    "u_axis_defect": 8,
+    "v_axis_defect": 4
+  },
+  "verdict": {
+    "any_current_RP1_point_is_odd_SO3_intertwiner": false,
+    "grading_obstruction_stronger_than_selector_ambiguity": true,
+    "single_c0_map_derived": false,
+    "source_line_selected": false
+  }
+}

@@ -1,0 +1,200 @@
+\chapter{Вектороподобный mass/edge-селектор изотипического канала}
+\label{ch:v8-baryon-c0-isotypic-channel-vectorlike-mass-edge-selector}
+
+\section{Два поля на общем правом триплете}
+
+После аномально безопасного завершения имеются два прямоугольных поля с
+общим правым пространством:
+\begin{equation}
+ B\in\operatorname{Hom}(W_{eXZ},V_{LY})\simeq M_{2\times3}(\mathbb C),
+ \qquad
+ M\in\operatorname{Hom}(W_{eXZ},V_{XZ})\simeq M_{2\times3}(\mathbb C).
+ \label{eq:v8-isotypic-mass-selector-two-fields}
+\end{equation}
+Первое поле должно иметь ранг один и норму три; второе --- ранг два и
+одномерное правое ядро. Если оба требования задаются независимо, их правые
+направления не обязаны совпасть.
+
+\section{Минимальный выровненный подродитель}
+
+Рассмотрим неотрицательный функционал
+\begin{equation}
+ \begin{split}
+ \mathcal S_{BM}(B,M)={}&
+ \bigl(\Tr BB^\dagger-3\bigr)^2
+ +4\det(BB^\dagger)\\
+ &+\|MM^\dagger-I_2\|_F^2
+ +\|MB^\dagger\|_F^2.
+ \end{split}
+ \label{eq:v8-isotypic-mass-selector-action}
+\end{equation}
+Первые два слагаемых являются прежним coherence-потенциалом. Третье делает
+$M$ частичной изометрией ранга два, а последнее связывает её ядро с
+правой линией $B$.
+
+Поскольку все четыре слагаемых неотрицательны,
+\begin{equation}
+ \mathcal S_{BM}=0
+ \Longleftrightarrow
+ \begin{cases}
+ \Tr BB^\dagger=3,\quad \rank B=1,\\
+ MM^\dagger=I_2,\quad \rank M=2,\\
+ MB^\dagger=0.
+ \end{cases}
+ \label{eq:v8-isotypic-mass-selector-zero-set}
+\end{equation}
+Если
+\begin{equation}
+ P_B=\frac13B^\dagger B,
+ \qquad
+ P_M=M^\dagger M,
+ \label{eq:v8-isotypic-mass-selector-projectors}
+\end{equation}
+то на нулевом множестве
+\begin{equation}
+ P_B^2=P_B,quad \rank P_B=1,
+ \qquad
+ P_M^2=P_M,quad \rank P_M=2,
+ \qquad
+ P_B+P_M=I_3.
+ \label{eq:v8-isotypic-mass-selector-complementarity}
+\end{equation}
+Следовательно,
+\begin{equation}
+ \ker M=\operatorname{im}P_B,
+ \label{eq:v8-isotypic-mass-selector-kernel-alignment}
+\end{equation}
+то есть coherence-конденсат сам выбирает лёгкое массовое направление.
+
+\section{Ковариантность без фиксированного spurion}
+
+Функционал инвариантен относительно
+\begin{equation}
+ B\mapsto g_BBh^\dagger,
+ \qquad
+ M\mapsto g_MMh^\dagger,
+ \qquad
+ (g_B,g_M,h)\in U(2)\times U(2)\times U(3).
+ \label{eq:v8-isotypic-mass-selector-covariance}
+\end{equation}
+Поэтому ненулевая масса не вводится фиксированным $SO(3)$-ломающим
+интертвейнером: направление появляется как совместный вакуум двух полей.
+Такой norm-square язык согласуется с моментным подходом к представлениям
+колчанов \cite{v8-isotypic-mass-selector-quiver} и с появлением новых
+скалярных связей при вектороподобных расширениях спектральной геометрии
+\cite{v8-isotypic-mass-selector-scalar}.
+
+Явный нулевой представитель равен
+\begin{equation}
+ B_0=\begin{pmatrix}\sqrt3&0&0\\0&0&0\end{pmatrix},
+ \qquad
+ M_0=\begin{pmatrix}0&1&0\\0&0&1\end{pmatrix}.
+ \label{eq:v8-isotypic-mass-selector-vacuum}
+\end{equation}
+На вещественном двенадцатимерном срезе его полный гессиан имеет
+\begin{equation}
+ \Spec\Hess_{(B_0,M_0)}\mathcal S_{BM}
+ =\{0\}^{\times4}\cup\{8\}^{\times5}
+ \cup\{24\}\cup\{26\}^{\times2}.
+ \label{eq:v8-isotypic-mass-selector-hessian}
+\end{equation}
+Четыре нуля касательны к орбите; отрицательных поперечных мод нет.
+
+\section{Почему абсолютный канал не выбран}
+
+Для любой общей правой замены базиса $h$ пара
+\begin{equation}
+ (B_0,M_0)\longmapsto(B_0h^\dagger,M_0h^\dagger)
+ \label{eq:v8-isotypic-mass-selector-vacuum-orbit}
+\end{equation}
+остаётся нулевой. В частности, циклическая перестановка трёх каналов даёт
+другой проектор $P_B$ с той же энергией. Поэтому parent выравнивает ядро и
+конденсат, но не выбирает, какая комбинация является физической family-line.
+
+\section{Полный граф остаётся вне действия}
+
+Функционал использует выбранные прямоугольники $B$ и $M$, тогда как строгий
+граф предыдущего гейта разрешает шесть дополнительных комплексных полей
+\begin{equation}
+ z_{\rm extra}in\mathbb C^6.
+ \label{eq:v8-isotypic-mass-selector-extra-fields}
+\end{equation}
+При буквальном продолжении
+\begin{equation}
+ \mathcal S_{\rm ext}(B,M,z_{\rm extra})=\mathcal S_{BM}(B,M)
+ \label{eq:v8-isotypic-mass-selector-flat-extension}
+\end{equation}
+они дают двенадцать новых вещественных нулей. Сигнатура проверенного
+вещественного среза полного продолжения равна
+\begin{equation}
+ (n_-,n_0,n_+)=(0,16,8).
+ \label{eq:v8-isotypic-mass-selector-full-signature}
+\end{equation}
+Тем самым построен точный aligned-subparent, но projector на выбранные
+рёбра уже предположен в его области определения.
+
+Реестры имеют вид
+\begin{equation}
+ \begin{aligned}
+ N_{\rm aligned\ shape}&=8/8,
+ &N_{\rm full\ graph\ selector}&=0/5,\\
+ N_{\rm parent\ origin}&=0/4,
+ &\mathcal M_{\rm new}&=\{M,c_i,\Pi_E,SO(3)_{\rm diag}\}.
+ \end{aligned}
+ \label{eq:v8-isotypic-mass-selector-ledgers}
+\end{equation}
+
+\begin{theorem}[Точное выравнивание массового ядра]
+Неотрицательный функционал $\mathcal S_{BM}$ имеет нулевое множество, на
+котором coherence-проектор ранга один и массовый проектор ранга два взаимно
+ортогональны и в сумме дают единицу. Поэтому лёгкое ядро массы совпадает с
+правой линией coherence-конденсата без фиксированного направляющего spurion.
+В проверенном вещественном срезе вакуум поперечно устойчив.
+\end{theorem}
+
+\begin{proposition}[Отсутствие coordinate edge-селектора]
+Совместный parent сохраняет общую правую $U(3)$-орбиту и не выбирает
+абсолютное канальное направление. Кроме того, шесть первопорядково
+разрешённых полей не входят в его действие и остаются двенадцатью
+вещественными плоскими модами. Следовательно, полный строгий граф этим
+функционалом не выбран.
+\end{proposition}
+
+\begin{nogocriterion}[Запрет скрытого edge-проектора]
+Нельзя считать условие $MB^\dagger=0$ полным физическим селектором, если
+поля $B$ и $M$ заранее определены только на желаемых блоках. Требуется
+вложить тот же механизм во все девять новых рёбер и получить положительную
+кривизну на шести конкурирующих направлениях без ручного зануления.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item общий правый изотипический триплет: \textbf{построен};
+\item coherence-поле ранга один: \textbf{получено};
+\item массовое поле ранга два: \textbf{получено};
+\item точное условие выравнивания: \textbf{$MB^\dagger=0$};
+\item проекторное тождество: \textbf{$P_B+P_M=I_3$};
+\item фиксированный $SO(3)$-ломающий spurion: \textbf{не требуется};
+\item отрицательные моды вещественного гессиана: \textbf{ноль};
+\item aligned-shape ledger: \textbf{$8/8$};
+\item абсолютное channel-направление: \textbf{не выбрано};
+\item пропущенных разрешённых комплексных рёбер: \textbf{шесть};
+\item дополнительных вещественных нулей: \textbf{двенадцать};
+\item full-graph selector ledger: \textbf{$0/5$};
+\item parent-origin ledger: \textbf{$0/4$};
+\item portal parent-origin: \textbf{не закрыт};
+\item следующий гейт: \textbf{полнографовое вложение выровненного parent}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_vectorlike_mass_edge_selector_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-isotypic-mass-selector-quiver}
+M.~Harada, G.~Wilkin,
+\emph{Morse Theory of the Moment Map for Representations of Quivers},
+arXiv:0807.4734.
+\bibitem{v8-isotypic-mass-selector-scalar}
+C.~A.~Stephan,
+\emph{New Scalar Fields in Noncommutative Geometry},
+arXiv:0901.4676.
+\end{thebibliography}

@@ -1,0 +1,128 @@
+{
+  "canonical_trace_isotropic_generator": {
+    "KMS_symmetry_residual": 3.3993498887762956e-17,
+    "basis_change_tests": [
+      {
+        "relative_generator_residual": 5.3388186514032e-16,
+        "trial": 0
+      },
+      {
+        "relative_generator_residual": 4.695731612467401e-16,
+        "trial": 1
+      },
+      {
+        "relative_generator_residual": 3.797860476728267e-16,
+        "trial": 2
+      },
+      {
+        "relative_generator_residual": 4.410341689765384e-16,
+        "trial": 3
+      }
+    ],
+    "decay_gap_in_trace_time_units": 0.02074912967430727,
+    "fixed_algebra_dimension": 1,
+    "formula": "sum over a common-KMS-trace orthonormal noise frame",
+    "free_relative_coefficients": 0,
+    "overall_time_scale_free": true,
+    "similarity_self_adjoint_residual": 0.0,
+    "stationarity_residual": 1.9040613345844668e-16,
+    "unital_residual": 4.349105018596763e-15
+  },
+  "common_KMS_trace_gram": {
+    "cross_family_transfer_gram_entries": [],
+    "gauge_component_count": 12,
+    "gauge_gram_eigenvalue_range": [
+      0.09190503166573549,
+      0.22103826525527548
+    ],
+    "gauge_gram_nullity": 0,
+    "gauge_gram_rank": 12,
+    "gauge_labels": [
+      "SU3_0",
+      "SU3_1",
+      "SU3_2",
+      "SU3_3",
+      "SU3_4",
+      "SU3_5",
+      "SU3_6",
+      "SU3_7",
+      "SU2_0",
+      "SU2_1",
+      "SU2_2",
+      "U1_0"
+    ],
+    "gauge_whitening_residual": 9.533544115649292e-16,
+    "total_noise_quotient_dimension": 19,
+    "total_raw_component_count": 25,
+    "transfer_gram_eigenvalue_range": [
+      0.18381006333147104,
+      1.1947654116545618
+    ],
+    "transfer_gram_nullity": 6,
+    "transfer_gram_rank": 7,
+    "transfer_labels": [
+      "linking_0",
+      "QLYR_0",
+      "QLYR_1",
+      "QLYR_2",
+      "QLYR_3",
+      "QLYR_4",
+      "QLYR_5",
+      "XLdR_0",
+      "XLdR_1",
+      "XLdR_2",
+      "XLdR_3",
+      "XLdR_4",
+      "XLdR_5"
+    ],
+    "transfer_quotient_dimension": 7,
+    "transfer_raw_component_count": 13,
+    "transfer_whitening_residual": 6.181460191301304e-16
+  },
+  "date": "2026-08-29",
+  "gate": "version8_canonical_noise_frame_common_trace_gate",
+  "relation_to_old_six_family_diagonal_cone": {
+    "absolute_fit_residual": 1.5035234950495235e-13,
+    "family_order": [
+      "linking",
+      "SU3",
+      "SU2",
+      "U1",
+      "QLYR",
+      "XLdR"
+    ],
+    "interpretation": "the machine-zero residual shows that the common-trace Casimir fixes a point inside the old six-family diagonal cone",
+    "least_squares_diagonal_weights": [
+      0.83698439061368,
+      10.880797077977894,
+      4.811118320819849,
+      4.524103547614744,
+      5.440398538988939,
+      5.440398538988944
+    ],
+    "lies_exactly_in_old_diagonal_family_cone": true,
+    "normalized_diagonal_weights": [
+      0.026209983770689067,
+      0.34072978901895956,
+      0.150659121629612,
+      0.14167131656178011,
+      0.17036489450947953,
+      0.1703648945094797
+    ],
+    "relative_fit_residual": 5.892455155855527e-16
+  },
+  "status_boundary": {
+    "absolute_physical_time_derived": false,
+    "common_KMS_trace_already_present": true,
+    "noise_subspace_already_present_in_project": true,
+    "trace_isotropy_forced_by_physical_symmetry": false,
+    "trace_isotropy_is_a_canonical_minimal_choice": true
+  },
+  "verdict": {
+    "canonical_basis_independent_noise_frame_obtained": true,
+    "canonical_relative_generator_representative_obtained": true,
+    "next_gate": "version8_noise_isotropy_symmetry_admission_gate",
+    "status": "common_trace_noise_Casimir_positive_canonical_representative_physical_isotropy_open",
+    "unique_physical_generator_theorem_obtained": false
+  }
+}

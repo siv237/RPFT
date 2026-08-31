@@ -1,0 +1,102 @@
+{
+  "date": "2026-08-28",
+  "gate": "version8_full_correlation_kernel_locality_reconstruction_gate",
+  "source_presence": {
+    "early_toe_bridge": true,
+    "early_toe_paper": true,
+    "version5_no_go": true,
+    "version5_no_go_result": true
+  },
+  "finite_model": {
+    "geometry_1": "connected star K_1,4",
+    "geometry_2": "disconnected C_4 plus isolated point",
+    "positive_generators": "H = 3 I - A",
+    "common_generator_spectrum": [
+      0.9999999999999998,
+      3.0,
+      3.0,
+      3.0,
+      5.0
+    ],
+    "full_kernel": "C_tau = exp(-tau H)",
+    "observable_algebra": "distinguished diagonal algebra C^5"
+  },
+  "tests": [
+    {
+      "tau": 0.1,
+      "heat_trace_difference": 8.881784197001252e-16,
+      "full_kernel_frobenius_distance_same_labels": 0.20111097423877572,
+      "minimum_full_kernel_distance_over_vertex_permutations": 0.2011109742387756,
+      "logarithmic_generator_error_star": 1.5399592116658742e-14,
+      "logarithmic_generator_error_cycle_point": 1.7603534848655808e-14,
+      "adjacency_support_recovered": true,
+      "support_survives_unknown_positive_time_rescaling": true,
+      "semigroup_error_star": 2.786682220881353e-16
+    },
+    {
+      "tau": 0.3,
+      "heat_trace_difference": 4.440892098500626e-16,
+      "full_kernel_frobenius_distance_same_labels": 0.32390533254329595,
+      "minimum_full_kernel_distance_over_vertex_permutations": 0.3239053325432959,
+      "logarithmic_generator_error_star": 5.478557097592818e-15,
+      "logarithmic_generator_error_cycle_point": 5.067958340234081e-15,
+      "adjacency_support_recovered": true,
+      "support_survives_unknown_positive_time_rescaling": true,
+      "semigroup_error_star": 2.487620078018192e-16
+    },
+    {
+      "tau": 1.0,
+      "heat_trace_difference": 1.1102230246251565e-16,
+      "full_kernel_frobenius_distance_same_labels": 0.2205519660054109,
+      "minimum_full_kernel_distance_over_vertex_permutations": 0.22055196600541088,
+      "logarithmic_generator_error_star": 7.74164489456755e-15,
+      "logarithmic_generator_error_cycle_point": 7.835630535133059e-15,
+      "adjacency_support_recovered": true,
+      "support_survives_unknown_positive_time_rescaling": true,
+      "semigroup_error_star": 4.046035655711836e-17
+    },
+    {
+      "tau": 2.0,
+      "heat_trace_difference": 1.3877787807814457e-16,
+      "full_kernel_frobenius_distance_same_labels": 0.08815425616013298,
+      "minimum_full_kernel_distance_over_vertex_permutations": 0.08815425616013296,
+      "logarithmic_generator_error_star": 4.061354056563339e-14,
+      "logarithmic_generator_error_cycle_point": 1.683420943483091e-13,
+      "adjacency_support_recovered": true,
+      "support_survives_unknown_positive_time_rescaling": true,
+      "semigroup_error_star": 2.0525524970989362e-17
+    }
+  ],
+  "basis_covariance": {
+    "allowed_change": "simultaneous permutation of minimal projections of C^5",
+    "error": 6.213216721556307e-16,
+    "passed": true
+  },
+  "exact_return_map": {
+    "generator": "H = -tau^(-1) log(C_tau)",
+    "finite_locality": "off-diagonal negative support of H",
+    "known_tau_required_for_support": false,
+    "known_scalar_shift_required_for_support": false,
+    "connectivity_recovered": true
+  },
+  "scope": {
+    "spectrum_only_inverse_problem_still_fails": true,
+    "full_kernel_with_observable_algebra_distinguishes_cospectral_pair": true,
+    "full_spectral_triple_assumed": false,
+    "observable_algebra_derived": false,
+    "markov_normalization_proved": false,
+    "strong_locality_proved": false,
+    "physical_s2t_kernel_derived": false,
+    "nonfactorized_parent_operator_derived": false
+  },
+  "verdict": {
+    "status": "positive_reopening_of_intermediate_full_kernel_class",
+    "previous_version5_no_go_overturned": false,
+    "previous_version5_scope_sharpened": true,
+    "reason": "scalar spectral data erase eigenvectors and locality, whereas the full positive semigroup kernel in a distinguished observable algebra recovers the generator and the finite adjacency support exactly"
+  },
+  "next_gate": {
+    "name": "version8_correlation_semigroup_observable_algebra_origin_gate",
+    "question": "can the project derive one observable algebra and a positive normalized semigroup on its physical carrier, rather than supply the diagonal basis by hand?"
+  }
+}

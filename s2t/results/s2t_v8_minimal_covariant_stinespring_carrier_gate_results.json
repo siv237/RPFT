@@ -1,0 +1,99 @@
+{
+  "continuous_time_test": {
+    "canonical_one_step_family_is_exact_semigroup": false,
+    "continuous_noise_or_repeated_fresh_ancilla_rule_derived": false,
+    "generator_derivative_residual_at_1e_minus_7": 3.0444947876463146e-06,
+    "one_step_composition_residual_for_0_02_plus_0_03": 0.13023262238794858
+  },
+  "cross_jump_space": {
+    "jump_gram_residual_from_2I": 1.0877919644084146e-15,
+    "jump_operator_linear_rank": 12,
+    "real_jump_dimension": 12,
+    "sum_Da_squared_spectrum": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      2.0,
+      2.0,
+      3.0,
+      3.0,
+      6.0
+    ],
+    "system_dimension": 21
+  },
+  "date": "2026-08-28",
+  "gate": "version8_minimal_covariant_stinespring_carrier_gate",
+  "gauge_covariant_environment": {
+    "environment_jump_space_is_complexification_not_new_physical_fields": true,
+    "environment_representation_is_existing_cross_arrow_representation": true,
+    "maximum_channel_covariance_residual": 4.862368639603036e-15,
+    "maximum_environment_orthogonality_residual": 4.494721909839008e-15,
+    "maximum_jump_reconstruction_residual": 6.641588616022145e-16,
+    "maximum_jump_sum_invariance_residual": 3.742972860353089e-15,
+    "random_gauge_tests": 12
+  },
+  "one_step_channel": {
+    "allowed_step_interval": [
+      0.0,
+      0.16666666666666666
+    ],
+    "benchmark_step": 0.08333333333333333,
+    "endpoint_block_preservation_residual": 0.0,
+    "environment_complex_dimension": 13,
+    "environment_decomposition": "C vacuum direct_sum complexification of E_cross(real dimension 12)",
+    "formula": "K0=sqrt(I-p sum Da^2), Ka=sqrt(p) Da",
+    "kraus_rank_at_positive_interior_step": 13,
+    "minimal_environment_dimension": 13,
+    "step_scan": [
+      {
+        "kraus_rank": 1,
+        "step_probability": 0.0,
+        "unital_residual": 0.0
+      },
+      {
+        "kraus_rank": 13,
+        "step_probability": 1e-06,
+        "unital_residual": 3.1401849173675503e-16
+      },
+      {
+        "kraus_rank": 13,
+        "step_probability": 0.01,
+        "unital_residual": 0.0
+      },
+      {
+        "kraus_rank": 13,
+        "step_probability": 0.08333333333333333,
+        "unital_residual": 5.874748045952207e-16
+      },
+      {
+        "kraus_rank": 13,
+        "step_probability": 0.16666666666666666,
+        "unital_residual": 3.8459253727671276e-16
+      }
+    ],
+    "trace_preserving_residual": 5.874748045952207e-16,
+    "unital_residual": 5.874748045952207e-16
+  },
+  "verdict": {
+    "autonomous_continuous_time_dilation_derived": false,
+    "finite_covariant_stinespring_carrier_exists": true,
+    "minimal_environment_uses_existing_cross_arrow_space": true,
+    "new_physical_particle_required_for_one_step_channel": false,
+    "next_gate": "version8_intrinsic_noise_clock_dilation_gate",
+    "status": "minimal_one_step_dilation_positive_continuous_noise_time_open",
+    "step_probability_or_rate_derived": false
+  }
+}

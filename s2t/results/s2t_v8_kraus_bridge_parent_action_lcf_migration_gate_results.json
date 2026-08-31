@@ -1,0 +1,63 @@
+{
+  "covariance_and_rate": {
+    "central_decay": "7(c_Q+c_X)/6",
+    "overall_fluctuation_strength_derived": false,
+    "symbolic_positive_family_scales": [
+      "c_Q > 0",
+      "c_X > 0"
+    ],
+    "unique_physical_rate_derived": false,
+    "unit_strength_gaussian_probe": "35/96"
+  },
+  "date": "2026-08-29",
+  "exact_field_dirichlet_term": {
+    "coefficient_per_cross_direction": "7/36",
+    "cross_real_directions": 12,
+    "embedded_27d_signature": [
+      0,
+      15,
+      12
+    ],
+    "field_hessian": "(7/18) I_12",
+    "internal_control_directions": 8,
+    "total_unit_covariance_decay": "7/3"
+  },
+  "gate": "version8_kraus_bridge_parent_action_lcf_migration_gate",
+  "proofdsl_registry": {
+    "certificate_sha256": "2f52dfbdf9c03f223e9f12e5f52161b0b1ad5782bf2a8a8e6efd1dfd8b8bf7e9",
+    "obligation_count": 11,
+    "status": "lcf-checked"
+  },
+  "symbolic_hessian_compatibility": {
+    "bridge_weight_assumption": "lambda_bridge >= 0",
+    "finite_weight_scan_needed": false,
+    "origin_signature_for_every_allowed_weight": [
+      7,
+      0,
+      20
+    ],
+    "scope": "the exact 27-dimensional real slice used by the source gate",
+    "vacuum_signature_for_every_allowed_weight": [
+      0,
+      0,
+      27
+    ]
+  },
+  "tree_vacuum": {
+    "cross_coordinates": "z_0=...=z_11=0",
+    "field_energy": "0",
+    "field_gradient": "zero",
+    "kraus_weight_vector": "(z_0^2,...,z_11^2)=0",
+    "positive_second_variation": true,
+    "tree_level_generator": "zero"
+  },
+  "verdict": {
+    "all_nonnegative_weights_preserve_tested_signatures": true,
+    "classical_vacuum_launches_bridge": false,
+    "covariance_or_dilation_still_required": true,
+    "mass_is_not_noise_rate": true,
+    "next_gate": "version8_cross_arrow_covariance_lcf_migration_gate",
+    "positive_parent_term_exact": true,
+    "status": "lcf-checked-kinematic-parent-tree-rate-no-go"
+  }
+}

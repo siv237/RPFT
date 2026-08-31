@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-29",
+  "exact_assembly": {
+    "endpoint_matrix_units_checked": 221,
+    "gksl": true,
+    "group_sizes_link_SU3_SU2_U1_QLYR_XLdR": [
+      1,
+      8,
+      3,
+      1,
+      6,
+      6
+    ],
+    "jump_count": 25,
+    "observable_algebra": "M11(C) direct_sum M10(C)",
+    "trace_preserving": true,
+    "unital": true
+  },
+  "gate": "version8_full_primitive_markov_generator_lcf_migration_gate",
+  "positive_rate_family": {
+    "absolute_physical_rate_derived": false,
+    "all_six_weights_strictly_positive": true,
+    "fixed_algebra_independent_of_positive_weights": true,
+    "trace_detailed_balance_holds_termwise": true,
+    "trace_detailed_balance_selects_relative_weights": false
+  },
+  "primitivity": {
+    "QLYR_alone_closes_C2": true,
+    "XLdR_alone_closes_C2": true,
+    "base_fixed_dimension_without_cross": 2,
+    "fixed_algebra": "C I21",
+    "full_fixed_dimension": 1,
+    "strict_finite_dimensional_decay_gap": true
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "8d05408d19b604fe20de8ac7e2fc4c179878ebd3fda0823fe1ffa42781d8055a",
+    "obligation_count": 9,
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "next_gate": "version8_kms_nontracial_relative_rate_lcf_migration_gate",
+    "qualitative_primitivity_lcf_checked": true,
+    "rate_metric_still_open": true,
+    "status": "lcf-checked-primitive-class-rate-metric-open"
+  }
+}

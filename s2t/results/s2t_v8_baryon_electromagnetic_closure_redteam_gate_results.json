@@ -1,0 +1,56 @@
+{
+  "closed_exactly": {
+    "charge_identity": true,
+    "charge_pattern": [
+      "4",
+      "1",
+      "0",
+      "1"
+    ],
+    "conditional_permutation_averaged_electrostatic_sign": true,
+    "coulomb_and_contact_scaling_orbits": true,
+    "magnetic_S3_branch_classification": true
+  },
+  "common_negative_strip": "-A_el < z < A_el/3",
+  "date": "2026-08-30",
+  "field": "Q(A_el,z), A_el>0",
+  "gate": "version8_baryon_electromagnetic_closure_redteam_gate",
+  "negative_sign_conditions": {
+    "sign": "z < A_el/3",
+    "standard": "z < A_el",
+    "trivial": "z > -A_el"
+  },
+  "not_derived": {
+    "absolute_energy_scale": true,
+    "coordinate_hamiltonian": true,
+    "magnetic_coefficient_z": true,
+    "permutation_branch": true,
+    "physical_mass_difference": true,
+    "physical_spin_parent": true,
+    "radial_state": true
+  },
+  "positive_countermodels": {
+    "sign": {
+      "value": "2*A_el",
+      "z": "A_el"
+    },
+    "standard": {
+      "value": "A_el",
+      "z": "2*A_el"
+    },
+    "trivial": {
+      "value": "A_el",
+      "z": "-2*A_el"
+    }
+  },
+  "total_three_branch_splitting_times_3T": {
+    "sign": "-A_el + 3*z",
+    "standard": "-A_el + z",
+    "trivial": "-A_el - z"
+  },
+  "verdict": {
+    "branch_closed_negative": true,
+    "parameter_free_electromagnetic_prediction": false,
+    "resume_condition": "coordinate_spin_parent"
+  }
+}

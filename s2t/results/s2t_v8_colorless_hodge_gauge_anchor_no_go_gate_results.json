@@ -1,0 +1,73 @@
+{
+  "final_hodge_support": {
+    "active_edge_count": 4,
+    "active_edges": [
+      "L_L--Y_R",
+      "X_L--X_R",
+      "X_L--e_R",
+      "Y_L--Y_R"
+    ],
+    "active_gauge_kinetic_trace_is_zero": true,
+    "active_indices": {
+      "complex_dimension": 4,
+      "su2_dynkin_index": "0",
+      "su3_dynkin_index": "0",
+      "u1_trace_index": "0"
+    },
+    "active_scalar_potential_is_nonzero": true,
+    "all_active_multiplets": "(1,1)_0"
+  },
+  "full_edge_carrier": {
+    "indices": {
+      "complex_dimension": 21,
+      "su2_dynkin_index": "2",
+      "su3_dynkin_index": "3/2",
+      "u1_trace_index": "13"
+    },
+    "indices_are_group_dependent": true,
+    "single_scalar_q_G_read_from_active_vacuum": false
+  },
+  "gate": "version8_colorless_hodge_gauge_anchor_no_go_gate",
+  "spectator_support": {
+    "carries_all_edge_carrier_gauge_index": true,
+    "edge_count": 7,
+    "edges": [
+      "L_L--X_R",
+      "Q_L--Y_R",
+      "X_L--Y_R",
+      "X_L--d_R",
+      "X_L--u_R",
+      "X_R--Y_L",
+      "Y_L--e_R"
+    ],
+    "indices": {
+      "complex_dimension": 17,
+      "su2_dynkin_index": "2",
+      "su3_dynkin_index": "3/2",
+      "u1_trace_index": "13"
+    }
+  },
+  "trace_closure_test": {
+    "active_q_G_is_zero_for_every_gauge_factor": true,
+    "adding_charged_spectators_changes_the_traced_carrier": true,
+    "common_product_operator_embedding_already_derived": false,
+    "conditional_dictionary": {
+      "canonical_matching": "C0*q_G/3=1/(4*g^2)",
+      "common_a4_coefficient": "C0=f0/(8*pi^2)",
+      "edge_quartic": "lambda_E=q_G*g^2/6",
+      "f0": "6*pi^2/(q_G*g^2)",
+      "gauge_coefficient": "C0*q_G/3",
+      "old_relative_u1_if_q_G_equals_2": "lambda_E=g^2/3"
+    },
+    "formula_f0_equals_6pi2_over_qGg2_is_singular_on_active_support": true,
+    "same_trace_relative_hodge_metric_fixed": false
+  },
+  "verdict": {
+    "active_colorless_gauge_anchor_exists": false,
+    "full_spectator_gauge_index_nonzero": true,
+    "next_step": "audit_the_remaining_second_family_tensor_primitive_against_version4_no_go_results",
+    "primitive_C_current_architecture_closed": true,
+    "same_trace_f0_closure_derived": false,
+    "status": "colorless_active_hodge_support_is_gauge_trace_invisible_no_go"
+  }
+}

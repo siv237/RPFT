@@ -1,0 +1,124 @@
+{
+  "active_scalar_carriers": {
+    "coherence_radius": {
+      "active": true,
+      "gauge_singlet": true,
+      "symbol": "T_B=Tr(BB*)",
+      "vacuum_value": 3
+    },
+    "mass_radius": {
+      "active": true,
+      "gauge_singlet": true,
+      "symbol": "T_M=Tr(MM*)",
+      "vacuum_value": 2
+    },
+    "radial_jacobian": [
+      [
+        6,
+        0
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "radial_jacobian_determinant": 24,
+    "radial_rank": 2
+  },
+  "date": "2026-08-31",
+  "dependent_or_zero_candidates": {
+    "alignment_norm": {
+      "first_order_new_direction": false,
+      "radial_value": 0
+    },
+    "det_BBstar": {
+      "first_order_new_direction": false,
+      "radial_value": 0
+    },
+    "det_MMstar": {
+      "first_order_new_direction": false,
+      "gradient_at_vacuum": [
+        0,
+        4
+      ],
+      "radial_value": "s^4"
+    },
+    "spectator_edge_radii": {
+      "linear_response_rank": 0,
+      "vacuum_values": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_existing_scalar_carrier_classification_gate",
+  "inherited_parent": {
+    "mixed_portal_hessian": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "portal_rank": 0,
+    "source_components_generated": 0
+  },
+  "ledgers": {
+    "canonical_pairing_satisfied": 0,
+    "canonical_pairing_tested": 5,
+    "carrier_classification_satisfied": 6,
+    "carrier_classification_tested": 6,
+    "inherited_portal_satisfied": 0,
+    "inherited_portal_tested": 4
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_portal_matrix_parent_origin_gate",
+  "portal_matrix_classification": {
+    "diagonal_convention_determinant": 6,
+    "diagonal_convention_sources": [
+      "j_A=3 kappa_B",
+      "j_B=2 kappa_M"
+    ],
+    "diagonal_convention_symmetry_selected": false,
+    "dimension": 4,
+    "equivariant_hom_dimension": 4,
+    "general_matrix": [
+      [
+        "c_BA",
+        "c_BB"
+      ],
+      [
+        "c_MA",
+        "c_MB"
+      ]
+    ],
+    "vacuum_coefficient_map": [
+      [
+        3,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        2
+      ]
+    ],
+    "vacuum_coefficient_map_nullity": 2,
+    "vacuum_coefficient_map_rank": 2
+  },
+  "verdict": {
+    "canonical_carrier_to_central_pairing_exists": false,
+    "inherited_portal_matrix_nonzero": false,
+    "two_dynamic_radial_modes_available": true,
+    "two_independent_active_scalar_modes_exist": true,
+    "two_sources_derived": false,
+    "two_static_source_numbers_require_two_carriers": false
+  }
+}

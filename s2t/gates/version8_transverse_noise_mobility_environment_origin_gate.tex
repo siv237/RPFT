@@ -1,0 +1,58 @@
+\chapter{Происхождение поперечной шумовой мобильности из корреляций среды}
+\label{ch:v8-transverse-noise-mobility-environment-origin-gate}
+
+Метрически двойственная вакуумная ковариация задаёт форму
+\begin{equation}
+ C_1=K_{\text{к}}^{-1},
+ \qquad M_1=C_1\otimes P_{\mathrm T},
+ \qquad \rank M_1=36.
+ \label{eq:v8-environment-canonical-transverse-mobility}
+\end{equation}
+Однако то же состояние среды и те же симметрии допускают изменение
+амплитуды взаимодействия. При $g\mapsto2g$ получаем
+\begin{equation}
+ C_2=4C_1,
+ \qquad M_2=4M_1.
+ \label{eq:v8-environment-rescaled-transverse-mobility}
+\end{equation}
+Обе формы имеют одинаковое двенадцатимерное продольное ядро и одинаковую
+нормированную форму:
+\begin{equation}
+ \frac{M_1}{\Tr M_1}=\frac{M_2}{\Tr M_2}.
+ \label{eq:v8-environment-normalized-shape-invariance}
+\end{equation}
+Масштаб виден только вместе с физическим временем:
+\begin{equation}
+ g^2t=(2g)^2\frac t4.
+ \label{eq:v8-environment-rate-time-orbit}
+\end{equation}
+
+\begin{theorem}[Среда фиксирует форму, но не масштаб]
+Метрически двойственная ковариация выделяет внутренний тензор
+$K_{\text{к}}^{-1}$ и поперечный образ ранга $36$. Общая амплитуда
+корреляции остаётся свободной и совпадает с уже найденной орбитой
+перемасштабирования скорости и времени.
+\end{theorem}
+
+\begin{nogocriterion}[Абсолютная мобильность не следует из вакуумной корреляции]
+Нельзя считать единичную амплитуду связи свойством состояния среды. Два
+положительных масштаба дают одну нормированную геометрию, одинаковое ядро и
+разные скорости. Для абсолютной мобильности всё ещё требуется независимый
+энергетически-временной якорь.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item ранг ковариации среды: \textbf{$12$};
+ \item ранг поперечной мобильности: \textbf{$36$};
+ \item продольное ядро: \textbf{$12$};
+ \item нормированная форма при масштабировании: \textbf{сохраняется};
+ \item скорость при $g\mapsto2g$: \textbf{умножается на $4$};
+ \item компенсирующее время: \textbf{$t\mapsto t/4$};
+ \item абсолютная мобильность: \textbf{не выведена};
+ \item следующий гейт: \textbf{сборка полной кинетической суперметрики поля}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_transverse_noise_mobility_environment_origin_gate_results.json}.

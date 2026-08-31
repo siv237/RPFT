@@ -1,0 +1,107 @@
+{
+  "admitted_count": 0,
+  "candidate_count": 7,
+  "candidates": {
+    "finite_dirac_mass_squared_ratio": {
+      "admitted_as_c0": false,
+      "conditions": {
+        "appears_in_auxiliary_pole_hessian": false,
+        "dimensionless": true,
+        "internally_selected": true,
+        "same_carrier_or_declared_typed_map": false,
+        "target_independent": true
+      },
+      "exact_value": "1"
+    },
+    "index_selected_kms_ratio": {
+      "admitted_as_c0": false,
+      "conditions": {
+        "appears_in_auxiliary_pole_hessian": false,
+        "dimensionless": true,
+        "internally_selected": true,
+        "same_carrier_or_declared_typed_map": false,
+        "target_independent": true
+      },
+      "exact_value": "exp(-2)"
+    },
+    "pure_heat_profile_ratio": {
+      "admitted_as_c0": false,
+      "conditions": {
+        "appears_in_auxiliary_pole_hessian": false,
+        "dimensionless": true,
+        "internally_selected": false,
+        "same_carrier_or_declared_typed_map": false,
+        "target_independent": true
+      },
+      "exact_value": "1"
+    },
+    "scalar_mass_squared_ratio": {
+      "admitted_as_c0": false,
+      "conditions": {
+        "appears_in_auxiliary_pole_hessian": false,
+        "dimensionless": true,
+        "internally_selected": true,
+        "same_carrier_or_declared_typed_map": false,
+        "target_independent": true
+      },
+      "exact_value": "4"
+    },
+    "shifted_curvature_shape_ratio": {
+      "admitted_as_c0": false,
+      "conditions": {
+        "appears_in_auxiliary_pole_hessian": false,
+        "dimensionless": true,
+        "internally_selected": true,
+        "same_carrier_or_declared_typed_map": true,
+        "target_independent": true
+      },
+      "exact_value": "4"
+    },
+    "spectral_gauge_coupling_squared": {
+      "admitted_as_c0": false,
+      "conditions": {
+        "appears_in_auxiliary_pole_hessian": false,
+        "dimensionless": true,
+        "internally_selected": true,
+        "same_carrier_or_declared_typed_map": false,
+        "target_independent": true
+      },
+      "exact_value": "3/8"
+    },
+    "vector_mass_squared_ratio": {
+      "admitted_as_c0": false,
+      "conditions": {
+        "appears_in_auxiliary_pole_hessian": false,
+        "dimensionless": true,
+        "internally_selected": true,
+        "same_carrier_or_declared_typed_map": false,
+        "target_independent": true
+      },
+      "exact_value": "3"
+    }
+  },
+  "date": "2026-08-30",
+  "exact_collision": {
+    "roles": [
+      "scalar_mass_squared_ratio",
+      "shifted_curvature_shape_ratio"
+    ],
+    "typed_identification_allowed": false,
+    "value": "4"
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_typed_internal_map_candidate_audit_gate",
+  "next_gate": "version8_baryon_c0_minimal_cross_carrier_morphism_architecture_gate",
+  "required_role": "m_pole^2=c0*a in the quadratic Hessian of the auxiliary six-point carrier",
+  "strongest_near_miss": {
+    "candidate": "shifted_curvature_shape_ratio",
+    "defect": "lambda_3^2/(alpha*beta) is an interaction-shape ratio, not m_pole^2/a",
+    "same_baryon_trace_carrier": true,
+    "value": "4"
+  },
+  "verdict": {
+    "named_internal_ratio_registry_exhausted": true,
+    "typed_c0_map_found": false,
+    "universal_future_map_no_go_claimed": false
+  }
+}

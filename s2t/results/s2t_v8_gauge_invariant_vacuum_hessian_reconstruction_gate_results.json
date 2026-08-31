@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-30",
+  "fourth_moments": {
+    "bosonic_bv": "226371884/159201",
+    "fermionic": -92,
+    "full_quadratic_numerator": "211725392/159201",
+    "gauge": "36897/722",
+    "scalar_quotient": "1118917/882"
+  },
+  "gate": "version8_gauge_invariant_vacuum_hessian_reconstruction_gate",
+  "horizontal_quotient": {
+    "goldstone_zero_modes": 3,
+    "horizontal_dimension": 27,
+    "horizontal_flat_modes": 1,
+    "orbit_dimension": 3,
+    "orbit_metric": "14 I_3",
+    "quotient_hessian_nullity": 4,
+    "quotient_hessian_rank": 26
+  },
+  "next_gate": "version8_horizontal_flat_direction_parent_lift_gate",
+  "registry": {
+    "certificate_sha256": "e835fbf11250fe85e3e47b3cb7ea647dd842c296e4c0193d7855587015688cbd",
+    "gate_count": 40,
+    "obligation_count": 266
+  },
+  "verdict": {
+    "goldstone_kernel_repaired": true,
+    "nonlinear_gauge_invariant_parent_derived": false,
+    "quadratic_bv_ledger_derived": true,
+    "unconditional_physical_B_derived": false,
+    "unique_horizontal_flat_direction_present": true
+  }
+}

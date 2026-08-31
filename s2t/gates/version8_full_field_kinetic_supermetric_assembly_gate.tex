@@ -1,0 +1,74 @@
+\chapter{Сборка полной главной кинетической суперметрики поля}
+\label{ch:v8-full-field-kinetic-supermetric-assembly-gate}
+
+Полный полевой носитель содержит тридцать скалярных направлений переноса и
+двенадцать калибровочных однополевых направлений. На ненулевом импульсе их
+главный символ имеет блочный вид
+\begin{equation}
+ \mathbb H_0=
+ \begin{pmatrix}
+  K_{\text{п}}\otimes I_4&0\\
+  0&K_{\text{к}}\otimes P_{\mathrm T}
+ \end{pmatrix},
+ \qquad \rank\mathbb H_0=120+36=156.
+ \label{eq:v8-full-field-principal-supermetric}
+\end{equation}
+Нулевой смешанный блок относится именно к главному символу. Скаляр и
+четырёхвектор имеют разные тензорные типы. Члены с фоном, массой или одной
+производной относятся к нижнему порядку и здесь не исключаются.
+
+До фиксации всё ядро сосредоточено в продольной калибровочной части:
+\begin{equation}
+ \dim\ker\mathbb H_0=12.
+ \label{eq:v8-full-field-principal-kernel}
+\end{equation}
+При ковариантной фиксации с параметром $\xi>0$ получаем
+\begin{equation}
+ \mathbb H_{\xi}=
+ \begin{pmatrix}
+  K_{\text{п}}\otimes I_4&0\\
+  0&K_{\text{к}}\otimes(P_{\mathrm T}+\xi^{-1}P_{\mathrm L})
+ \end{pmatrix},
+ \qquad \rank\mathbb H_{\xi}=168,
+ \label{eq:v8-full-field-gauge-fixed-supermetric}
+\end{equation}
+и точный обратный оператор
+\begin{equation}
+ \mathbb H_{\xi}^{-1}=
+ \begin{pmatrix}
+  K_{\text{п}}^{-1}\otimes I_4&0\\
+  0&K_{\text{к}}^{-1}\otimes(P_{\mathrm T}+\xi P_{\mathrm L})
+ \end{pmatrix}.
+ \label{eq:v8-full-field-supermetric-inverse}
+\end{equation}
+
+\begin{theorem}[Полная главная суперметрика]
+Следовая метрика полного $42$-мерного репера канонически поднимается до
+$168$-мерного главного кинетического символа. Его нефиксированный ранг равен
+$156$, ядро имеет размерность $12$, а после фиксации оператор невырожден и
+обращается поблочно.
+\end{theorem}
+
+\begin{nogocriterion}[Сборка не выбирает относительный вес секторов]
+Замены $K_{\text{п}}\mapsto w_{\text{п}}K_{\text{п}}$ и
+$K_{\text{к}}\mapsto w_{\text{к}}K_{\text{к}}$ при положительных
+независимых весах сохраняют тензорный тип, ранги и калибровочное ядро.
+Следовательно, одна сборка главного символа не выводит отношение
+$w_{\text{п}}/w_{\text{к}}$, нижние порядки и абсолютный масштаб времени.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item размерность скалярного блока: \textbf{$120$};
+ \item ранг поперечного калибровочного блока: \textbf{$36$};
+ \item ранг полной нефиксированной суперметрики: \textbf{$156$};
+ \item продольное ядро: \textbf{$12$};
+ \item ранг после фиксации: \textbf{$168$};
+ \item смешение типов в главном символе: \textbf{нулевое};
+ \item относительный вес двух секторов: \textbf{не выведен};
+ \item следующий гейт: \textbf{происхождение относительного веса из родительского действия}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_full_field_kinetic_supermetric_assembly_gate_results.json}.

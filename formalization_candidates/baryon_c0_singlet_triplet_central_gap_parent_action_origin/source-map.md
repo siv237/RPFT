@@ -1,0 +1,6 @@
+# Карта источников
+
+- `s2t/gates/version8_baryon_c0_singlet_triplet_central_weight_minimal_hamiltonian_data_gate.tex`
+- `s2t/gates/version8_baryon_c0_grading_compatible_family_triplet_endpoint_extension_gate.tex`
+- `s2t/gates/version8_baryon_c0_multiplicity_environment_so3_action_parent_origin_gate.tex`
+- `s2t/audits/s2t_v8_baryon_c0_singlet_triplet_central_gap_parent_action_origin_gate.py`

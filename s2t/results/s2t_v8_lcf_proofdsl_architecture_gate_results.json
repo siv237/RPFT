@@ -1,0 +1,3748 @@
+{
+  "architecture": {
+    "exact_backend": "SymPy",
+    "floating_point_admitted": false,
+    "language": "pure Python",
+    "status_ladder": [
+      "gate/result",
+      "candidate",
+      "spec-frozen",
+      "lcf-checked",
+      "lean-draft",
+      "lean-verified"
+    ],
+    "trusted_theorem_issuer": "s2t/proofdsl/kernel.py",
+    "z3_can_issue_theorems": false,
+    "z3_optional_backend_available": false
+  },
+  "date": "2026-08-30",
+  "gate": "version8_lcf_proofdsl_architecture_gate",
+  "illegal_state_rejection_controls": {
+    "direct_theorem_construction_rejected": true,
+    "floating_lindblad_rate_rejected": true,
+    "incompatible_composition_rejected": true,
+    "negative_lindblad_rate_rejected": true,
+    "wrong_morphism_shape_rejected": true
+  },
+  "migration_queue": [
+    "version8_clock_augmented_static_hamiltonian_conveyor_gate",
+    "version7_common_higgs_degree_two_cross_edge_gate",
+    "version7_common_chain_number_hodge_relative_trace_gate"
+  ],
+  "registry": {
+    "certificate_sha256": {
+      "spinodal_threshold": "06b503571be80896145a958c92daa16e71a161ffcd8601c2d7453556c88a78c6",
+      "version8_bimodule_common_curvature_relative_weight_gate": "80ffc75675fbe8fa08d6e874786b1f31e9fbadb480f9d2d1a3b543a2701e85e3",
+      "version8_canonical_autonomous_clock_unitary_extension_no_go_gate": "794711ce9cb78bebc641937e41bb11bbfa249b61c73d4a721d21dc381388f857",
+      "version8_cross_arrow_covariance_origin_gate": "23fc836c1bfef35dbb8805bd6362e1afe6fb4b51c889cd58ba68e3a6d51e2445",
+      "version8_full_noise_42_jump_gksl_fixed_algebra_gate": "1053f06592a5ea580488d8adffb3b032238076e08e93ff16aa86d05956b238e1",
+      "version8_full_noise_cotangent_carrier_admission_gate": "d41cf0670977e002444baf8bcafdc214bab497b50418a474d927000f7ea61aca",
+      "version8_full_noise_physical_time_scale_no_go_gate": "dc941e1241a84c4e5198e6247a84ddb3dddba7061aa55f81d207892699dc18e4",
+      "version8_full_noise_repeated_interaction_hamiltonian_gate": "b3691ef886987b3f8fb09f9b78888989948132432233967f2d11db8e0b078422",
+      "version8_full_noise_toeplitz_ancilla_chain_dilation_gate": "a021a035a6a14bec4095b50dcbb3e6769a2abb0f9cb897d025b4923fd287add4",
+      "version8_full_noise_trace_frame_metric_gate": "3b10712da336941baafb5ac196e24d25875c5a9a55cc299341719b4a4b039d10",
+      "version8_full_primitive_markov_generator_assembly_gate": "8d05408d19b604fe20de8ac7e2fc4c179878ebd3fda0823fe1ffa42781d8055a",
+      "version8_gauge_twirl_cross_sector_kraus_bridge_gate": "5310023d978b7e8e98c20e3da0908600ef73ff3839a71bbd5d7b08f3a73f26f6",
+      "version8_index_balanced_ancilla_conveyor_gate": "3b38d26653b8cc18728b512ec22516a9d76857602aa3e117511a31b4a1b02096",
+      "version8_intrinsic_noise_clock_dilation_gate": "5740ab7807aa778a58ccb07d3e51ab78908626e312a508923bfacb9d8e5741ba",
+      "version8_kms_nontracial_relative_rate_selector_gate": "5319ede8fdf15359c76fc83b71bebeb57c22fc1321a76ac08b16a77ff0a9a696",
+      "version8_kraus_bridge_parent_action_hessian_gate": "2f52dfbdf9c03f223e9f12e5f52161b0b1ad5782bf2a8a8e6efd1dfd8b8bf7e9",
+      "version8_linking_dirichlet_quantum_markov_semigroup_gate": "04a698acbc4e41502b7add7ce5331d53a71ab8726bc57cd488a2db1e3a72e0b1",
+      "version8_markov_fixed_algebra_selector_gate": "7987347bbeb1f77f78fe5beba63f6077387fbc891f8c90199bde5ee79f407206",
+      "version8_metric_dual_environment_parent_action_origin_gate": "0036fef0dc23f2a473435c6afd4ffbc56bbdb406c9a43d7c158e9c69a8958d1c",
+      "version8_microscopic_repeated_interaction_hamiltonian_gate": "5c765f66480fc962f01fd493bd30664cf61763a03f739095baa93deaedc1b46e",
+      "version8_minimal_covariant_stinespring_carrier_gate": "4f9676e18e49c3f8ca957882465105da2dcd4f43624e0add341ad27e3c8337b5",
+      "version8_modular_bohr_parent_origin_gate": "c292b9ec515a1d2a3dd99f2b9662d83da0609ef21e423dcc85db25932fa83679",
+      "version8_page_wootters_stinespring_history_gate": "b6498f8df0ac96c2a8b1dcde26ab341103060b7e55985b9496fc900c11e17d4f",
+      "version8_static_local_hamiltonian_embedding_or_no_go_gate": "c7e7ceda350979f9457cfa2d87a0a5bca08944e269f3f54fd74d203aef4ac646",
+      "version8_trace_dual_cross_interaction_selector_gate": "38f2daba5ad51c3f5791fc1fe8ff631c14e273e30cb31233b98e26a3a4f300da",
+      "version8_vacuum_chain_parent_state_and_local_hamiltonian_origin_gate": "9aa9ecf5fa86e86df84e359515c0a78b5376cb0118d502861a5602eed38914a4"
+    },
+    "gate_count": 26,
+    "gates": [
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 1,
+            "obligation_kinds": [
+              "intertwiner_rank_no_go"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 1,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_bimodule_common_curvature_relative_weight_gate"
+        },
+        "identifier": "version8_bimodule_common_curvature_relative_weight_gate",
+        "obligations": [
+          {
+            "name": "full_rank_connector_is_impossible",
+            "theorem": {
+              "certificate": {
+                "exact": true,
+                "shared_isotypic_blocks": [
+                  [
+                    "(1,2)_{-1/2}",
+                    2,
+                    3,
+                    4
+                  ],
+                  [
+                    "(3,1)_{2/3}",
+                    3,
+                    1,
+                    1
+                  ]
+                ]
+              },
+              "data": {
+                "hom_dimension": 13,
+                "maximum_rank": 9,
+                "requested_rank": 20
+              },
+              "kind": "intertwiner_rank_no_go",
+              "premise_count": 0,
+              "rule": "semisimple_isotypic_rank_bound",
+              "subject": "no full-rank covariant connector E_t+E_s -> T_bimod"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_bimodule_common_curvature_relative_weight_gate.tex",
+          "s2t/results/s2t_v8_bimodule_common_curvature_relative_weight_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "No-go полнорангового endpoint/transfer-коннектора"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 2,
+            "obligation_kinds": [
+              "expression_equality",
+              "unique_linear_zero"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 2,
+          "rule": "gate_conjunction_rule",
+          "subject": "spinodal_threshold"
+        },
+        "identifier": "spinodal_threshold",
+        "obligations": [
+          {
+            "name": "curvature_formula",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "spinodal curvature at a=1/3"
+            }
+          },
+          {
+            "name": "unique_threshold",
+            "theorem": {
+              "certificate": {
+                "degree": 1,
+                "leading_coefficient_nonzero": true
+              },
+              "data": {
+                "root": "21/2",
+                "variable": "beta"
+              },
+              "kind": "unique_linear_zero",
+              "premise_count": 1,
+              "rule": "exact_linear_polynomial_rule",
+              "subject": "unique spinodal threshold"
+            }
+          }
+        ],
+        "source_paths": [
+          "formalization_candidates/spinodal_threshold/definitions.md",
+          "formalization_candidates/spinodal_threshold/theorem.md"
+        ],
+        "status": "lcf-checked",
+        "title": "Точный спинодальный порог beta=21/2"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 3,
+            "obligation_kinds": [
+              "semisimple_commutant_dimension",
+              "exact_linear_kernel",
+              "complementary_projectors"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 3,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_markov_fixed_algebra_selector_gate"
+        },
+        "identifier": "version8_markov_fixed_algebra_selector_gate",
+        "obligations": [
+          {
+            "name": "endpoint_gauge_commutant_dimension",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "contributions": [
+                  [
+                    "source_endpoint",
+                    6
+                  ],
+                  [
+                    "target_endpoint",
+                    7
+                  ]
+                ],
+                "dimension": 13
+              },
+              "kind": "semisimple_commutant_dimension",
+              "premise_count": 0,
+              "rule": "schur_commutant_rule",
+              "subject": "block-diagonal endpoint gauge commutant"
+            }
+          },
+          {
+            "name": "joint_linking_fixed_algebra_dimension",
+            "theorem": {
+              "certificate": {
+                "basis_independent": true,
+                "residual": "zero"
+              },
+              "data": {
+                "ambient_dimension": 13,
+                "equation_count": 220,
+                "nullity": 2,
+                "rank": 11
+              },
+              "kind": "exact_linear_kernel",
+              "premise_count": 0,
+              "rule": "rank_nullity_kernel_rule",
+              "subject": "joint gauge and self-adjoint linking commutant"
+            }
+          },
+          {
+            "name": "quark_lepton_projector_partition",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "ranks": [
+                  12,
+                  9
+                ],
+                "total_dimension": 21
+              },
+              "kind": "complementary_projectors",
+              "premise_count": 0,
+              "rule": "exact_projector_partition_rule",
+              "subject": "quark and lepton/vectorlike endpoint sectors"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_markov_fixed_algebra_selector_gate.tex",
+          "s2t/results/s2t_v8_markov_fixed_algebra_selector_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Точная двухмерная неподвижная endpoint-алгебра"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 6,
+            "obligation_kinds": [
+              "gksl_well_formed",
+              "trace_preserving_generator",
+              "unital_generator",
+              "invariant_block_subalgebra",
+              "linear_maps_equal_on_basis",
+              "exact_nullity"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 6,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_linking_dirichlet_quantum_markov_semigroup_gate"
+        },
+        "identifier": "version8_linking_dirichlet_quantum_markov_semigroup_gate",
+        "obligations": [
+          {
+            "name": "finite_dimensional_gksl_form",
+            "theorem": {
+              "certificate": {
+                "rates_nonnegative": true,
+                "trace_preserving": true
+              },
+              "data": {
+                "jump_count": 1,
+                "space": "E_s+E_t"
+              },
+              "kind": "gksl_well_formed",
+              "premise_count": 0,
+              "rule": "finite_dimensional_gksl_constructor",
+              "subject": "linking_QMS"
+            }
+          },
+          {
+            "name": "trace_preservation",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "checked_matrix_units": 441
+              },
+              "kind": "trace_preserving_generator",
+              "premise_count": 1,
+              "rule": "exact_matrix_unit_trace_rule",
+              "subject": "linking_QMS"
+            }
+          },
+          {
+            "name": "unitality",
+            "theorem": {
+              "certificate": {
+                "identity_residual": "zero"
+              },
+              "data": {},
+              "kind": "unital_generator",
+              "premise_count": 1,
+              "rule": "exact_identity_action_rule",
+              "subject": "linking_QMS"
+            }
+          },
+          {
+            "name": "endpoint_corner_invariance",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "blocks": [
+                  11,
+                  10
+                ],
+                "checked_matrix_units": 221
+              },
+              "kind": "invariant_block_subalgebra",
+              "premise_count": 1,
+              "rule": "exact_matrix_unit_invariance_rule",
+              "subject": "M_11 direct_sum M_10 endpoint algebra"
+            }
+          },
+          {
+            "name": "explicit_corner_formula",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "basis_size": 221
+              },
+              "kind": "linear_maps_equal_on_basis",
+              "premise_count": 1,
+              "rule": "exact_linear_basis_extensionality_rule",
+              "subject": "explicit linking corner GKSL formula"
+            }
+          },
+          {
+            "name": "linking_fixed_dimension_41",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "nullity": 41,
+                "rank": 180,
+                "shape": [
+                  220,
+                  221
+                ]
+              },
+              "kind": "exact_nullity",
+              "premise_count": 0,
+              "rule": "exact_rank_nullity_rule",
+              "subject": "block-diagonal linking fixed algebra"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_linking_dirichlet_quantum_markov_semigroup_gate.tex",
+          "s2t/results/s2t_v8_linking_dirichlet_quantum_markov_semigroup_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Точный linking GKSL/QMS-конструктор"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 10,
+            "obligation_kinds": [
+              "gksl_well_formed",
+              "unital_generator",
+              "orthogonal_kraus_basis_invariance",
+              "orthogonal_frame_covariance",
+              "matrix_equality",
+              "matrix_equality",
+              "matrix_equality",
+              "exact_nullity",
+              "matrix_equality",
+              "exact_nullity"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 10,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_gauge_twirl_cross_sector_kraus_bridge_gate"
+        },
+        "identifier": "version8_gauge_twirl_cross_sector_kraus_bridge_gate",
+        "obligations": [
+          {
+            "name": "finite_dimensional_gksl_form",
+            "theorem": {
+              "certificate": {
+                "rates_nonnegative": true,
+                "trace_preserving": true
+              },
+              "data": {
+                "jump_count": 12,
+                "space": "E_s+E_t"
+              },
+              "kind": "gksl_well_formed",
+              "premise_count": 0,
+              "rule": "finite_dimensional_gksl_constructor",
+              "subject": "cross_gauge_twirl"
+            }
+          },
+          {
+            "name": "unitality",
+            "theorem": {
+              "certificate": {
+                "identity_residual": "zero"
+              },
+              "data": {},
+              "kind": "unital_generator",
+              "premise_count": 1,
+              "rule": "exact_identity_action_rule",
+              "subject": "cross_gauge_twirl"
+            }
+          },
+          {
+            "name": "orthogonal_kraus_basis_independence",
+            "theorem": {
+              "certificate": {
+                "identity": "sum_b O_ba O_bc = delta_ac",
+                "quantifier": "every real orthogonal frame change"
+              },
+              "data": {
+                "common_rate": "1",
+                "frame_dimension": 12
+              },
+              "kind": "orthogonal_kraus_basis_invariance",
+              "premise_count": 1,
+              "rule": "orthogonal_kraus_sum_rule",
+              "subject": "complete real cross-arrow Kraus frame"
+            }
+          },
+          {
+            "name": "exact_gauge_frame_covariance_and_no_linear_singlet",
+            "theorem": {
+              "certificate": {
+                "action_transpose_residual": "zero",
+                "closure_residual": "zero",
+                "frame_gram": "2 I"
+              },
+              "data": {
+                "frame_dimension": 12,
+                "invariant_linear_dimension": 0,
+                "symmetry_generator_count": 12
+              },
+              "kind": "orthogonal_frame_covariance",
+              "premise_count": 0,
+              "rule": "exact_infinitesimal_orthogonal_frame_rule",
+              "subject": "SU(3) x SU(2) x U(1) cross-arrow jump multiplet"
+            }
+          },
+          {
+            "name": "QLYR_central_restriction",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  2,
+                  2
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "QLYR central Dirichlet restriction"
+            }
+          },
+          {
+            "name": "XLdR_central_restriction",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  2,
+                  2
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "XLdR central Dirichlet restriction"
+            }
+          },
+          {
+            "name": "combined_central_restriction",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  2,
+                  2
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "combined cross-sector central restriction"
+            }
+          },
+          {
+            "name": "one_dimensional_central_fixed_line",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "nullity": 1,
+                "rank": 1,
+                "shape": [
+                  2,
+                  2
+                ]
+              },
+              "kind": "exact_nullity",
+              "premise_count": 0,
+              "rule": "exact_rank_nullity_rule",
+              "subject": "cross-sector central fixed line"
+            }
+          },
+          {
+            "name": "internal_lepton_control_is_zero",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  2,
+                  2
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "internal lepton central control"
+            }
+          },
+          {
+            "name": "positive_rate_robustness",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "nullity": 1,
+                "rank": 1,
+                "shape": [
+                  2,
+                  2
+                ]
+              },
+              "kind": "exact_nullity",
+              "premise_count": 0,
+              "rule": "exact_rank_nullity_rule",
+              "subject": "central fixed line for all positive cross-family rates"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_gauge_twirl_cross_sector_kraus_bridge_gate.tex",
+          "s2t/results/s2t_v8_gauge_twirl_cross_sector_kraus_bridge_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Точный gauge-twirl межсекторного Kraus-моста"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 11,
+            "obligation_kinds": [
+              "matrix_equality",
+              "matrix_equality",
+              "matrix_equality",
+              "exact_diagonal_signature",
+              "exact_diagonal_signature",
+              "exact_diagonal_signature",
+              "expression_equality",
+              "matrix_equality",
+              "matrix_equality",
+              "expression_equality",
+              "expression_equality"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 11,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_kraus_bridge_parent_action_hessian_gate"
+        },
+        "identifier": "version8_kraus_bridge_parent_action_hessian_gate",
+        "obligations": [
+          {
+            "name": "individual_cross_coefficients",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  12,
+                  1
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "individual cross-arrow Dirichlet coefficients"
+            }
+          },
+          {
+            "name": "internal_control_coefficients",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  8,
+                  1
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "internal lepton Dirichlet controls"
+            }
+          },
+          {
+            "name": "field_dirichlet_hessian",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  12,
+                  12
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "cross-arrow field Dirichlet Hessian"
+            }
+          },
+          {
+            "name": "bridge_hessian_signature",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "dimension": 27,
+                "negative": 0,
+                "positive": 12,
+                "zero": 15
+              },
+              "kind": "exact_diagonal_signature",
+              "premise_count": 0,
+              "rule": "exact_symbolic_diagonal_sign_rule",
+              "subject": "27-dimensional bridge Hessian"
+            }
+          },
+          {
+            "name": "origin_signature_for_all_nonnegative_weights",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "dimension": 27,
+                "negative": 7,
+                "positive": 20,
+                "zero": 0
+              },
+              "kind": "exact_diagonal_signature",
+              "premise_count": 0,
+              "rule": "exact_symbolic_diagonal_sign_rule",
+              "subject": "Tome VII origin plus every nonnegative bridge weight"
+            }
+          },
+          {
+            "name": "vacuum_signature_for_all_nonnegative_weights",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "dimension": 27,
+                "negative": 0,
+                "positive": 27,
+                "zero": 0
+              },
+              "kind": "exact_diagonal_signature",
+              "premise_count": 0,
+              "rule": "exact_symbolic_diagonal_sign_rule",
+              "subject": "Tome VII target plus every nonnegative bridge weight"
+            }
+          },
+          {
+            "name": "zero_tree_energy",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "tree-level bridge energy at the Tome VII vacuum"
+            }
+          },
+          {
+            "name": "zero_tree_gradient",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  12,
+                  1
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "cross-arrow stationarity at the Tome VII vacuum"
+            }
+          },
+          {
+            "name": "zero_tree_kraus_weights",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  12,
+                  1
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "field-dependent Kraus weights at the Tome VII vacuum"
+            }
+          },
+          {
+            "name": "two_family_covariance_rate",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "two-family covariance-induced central rate"
+            }
+          },
+          {
+            "name": "gaussian_probe_rate",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "unit-strength Gaussian heavy-Hessian probe"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_kraus_bridge_parent_action_hessian_gate.tex",
+          "s2t/results/s2t_v8_kraus_bridge_parent_action_hessian_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Точный parent-action и гессиан Kraus-моста"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 10,
+            "obligation_kinds": [
+              "algebraic_field_matrix_equality",
+              "algebraic_field_matrix_equality",
+              "algebraic_field_matrix_equality",
+              "algebraic_field_matrix_equality",
+              "positive_definite_distinct_symmetric_2x2",
+              "common_affine_spectral_axes",
+              "nonconstant_expression",
+              "nonconstant_expression",
+              "nonconstant_expression",
+              "nonconstant_expression"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 10,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_cross_arrow_covariance_origin_gate"
+        },
+        "identifier": "version8_cross_arrow_covariance_origin_gate",
+        "obligations": [
+          {
+            "name": "physical_polar_coisometry",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "field_degree": 6,
+                "shape": [
+                  10,
+                  10
+                ]
+              },
+              "kind": "algebraic_field_matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_algebraic_number_field_rule",
+              "subject": "exact polar coisometry constructed from the physical reference"
+            }
+          },
+          {
+            "name": "exact_cross_pair_formula",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "field_degree": 6,
+                "shape": [
+                  2,
+                  2
+                ]
+              },
+              "kind": "algebraic_field_matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_algebraic_number_field_rule",
+              "subject": "exact polar QLYR-XLdR linking pair"
+            }
+          },
+          {
+            "name": "six_identical_pairs",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "field_degree": 6,
+                "shape": [
+                  12,
+                  12
+                ]
+              },
+              "kind": "algebraic_field_matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_algebraic_number_field_rule",
+              "subject": "six repeated polar cross-arrow pairs"
+            }
+          },
+          {
+            "name": "decoupling_from_other_directions",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "field_degree": 6,
+                "shape": [
+                  12,
+                  15
+                ]
+              },
+              "kind": "algebraic_field_matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_algebraic_number_field_rule",
+              "subject": "cross-arrow decoupling from the other fifteen directions"
+            }
+          },
+          {
+            "name": "positive_distinct_pair_spectrum",
+            "theorem": {
+              "certificate": {
+                "determinant_positive": true,
+                "discriminant_positive": true,
+                "field_degree": 6,
+                "leading_minor_positive": true
+              },
+              "data": {
+                "dimension": 2,
+                "distinct_eigenvalues": true
+              },
+              "kind": "positive_definite_distinct_symmetric_2x2",
+              "premise_count": 0,
+              "rule": "exact_algebraic_sylvester_rule",
+              "subject": "polar cross-arrow pair"
+            }
+          },
+          {
+            "name": "common_axis_for_positive_eta",
+            "theorem": {
+              "certificate": {
+                "commutator": "zero",
+                "weight_positive": true
+              },
+              "data": {
+                "dimension": 2,
+                "weight": "2*eta"
+              },
+              "kind": "common_affine_spectral_axes",
+              "premise_count": 1,
+              "rule": "scalar_shift_polynomial_spectral_rule",
+              "subject": "all positive-eta covariance functions of the polar pair"
+            }
+          },
+          {
+            "name": "eta_dependent_anisotropy",
+            "theorem": {
+              "certificate": {
+                "derivative": "1120*sqrt(-1408*cos(pi/7) - 588*sqrt(2) - 512*sin(5*pi/14) - 512*sin(pi/14) - 128*cos(3*pi/7) + 512*cos(2*pi/7) + 704*sin(3*pi/14) + 1957)/(5*eta*(-96*sin(pi/7)**2 - 7 + sqrt(49*(3 - 2*sqrt(2))**2 + 4*(-16*cos(pi/7) + 8*cos(2*pi/7) + 11)**2) + 14*sqrt(2)) - 112)**2"
+              },
+              "data": {
+                "variable": "eta"
+              },
+              "kind": "nonconstant_expression",
+              "premise_count": 0,
+              "rule": "exact_nonzero_derivative_rule",
+              "subject": "normalized classical covariance anisotropy"
+            }
+          },
+          {
+            "name": "classical_scale_remains_free",
+            "theorem": {
+              "certificate": {
+                "derivative": "-Gamma_0/a**2"
+              },
+              "data": {
+                "variable": "a"
+              },
+              "kind": "nonconstant_expression",
+              "premise_count": 0,
+              "rule": "exact_nonzero_derivative_rule",
+              "subject": "classical Gaussian Kraus rate"
+            }
+          },
+          {
+            "name": "quantum_scale_remains_free",
+            "theorem": {
+              "certificate": {
+                "derivative": "Gamma_0"
+              },
+              "data": {
+                "variable": "kappa"
+              },
+              "kind": "nonconstant_expression",
+              "premise_count": 0,
+              "rule": "exact_nonzero_derivative_rule",
+              "subject": "harmonic ground-state Kraus rate"
+            }
+          },
+          {
+            "name": "heat_time_remains_free",
+            "theorem": {
+              "certificate": {
+                "derivative": "((-96*sin(pi/7)**2 - 7 + sqrt(49*(3 - 2*sqrt(2))**2 + 4*(-16*cos(pi/7) + 8*cos(2*pi/7) + 11)**2) + 14*sqrt(2))*exp(tau*(-14*sqrt(2) + sqrt(49*(3 - 2*sqrt(2))**2 + 4*(-16*cos(pi/7) + 8*cos(2*pi/7) + 11)**2) + 7 + 96*sin(pi/7)**2)/7) + (-96*sin(pi/7)**2 - 7 - sqrt(49*(3 - 2*sqrt(2))**2 + 4*(-16*cos(pi/7) + 8*cos(2*pi/7) + 11)**2) + 14*sqrt(2))*exp(-tau*(-96*sin(pi/7)**2 - 7 + sqrt(49*(3 - 2*sqrt(2))**2 + 4*(-16*cos(pi/7) + 8*cos(2*pi/7) + 11)**2) + 14*sqrt(2))/7))*exp(2*tau*(-55 + 14*sqrt(2) + 48*cos(2*pi/7))/7)/7"
+              },
+              "data": {
+                "variable": "tau"
+              },
+              "kind": "nonconstant_expression",
+              "premise_count": 0,
+              "rule": "exact_nonzero_derivative_rule",
+              "subject": "heat-kernel Kraus rate"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_cross_arrow_covariance_origin_gate.tex",
+          "s2t/results/s2t_v8_cross_arrow_covariance_origin_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Точная полярная ось cross-ковариации"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 11,
+            "obligation_kinds": [
+              "matrix_equality",
+              "matrix_equality",
+              "identity_minus_psd_window",
+              "kraus_family_on_window",
+              "trace_preserving_kraus_family_on_window",
+              "invariant_block_subalgebra",
+              "exact_rank",
+              "minimal_stinespring_dimension",
+              "covariant_kraus_channel",
+              "kraus_family_gksl_tangent",
+              "matrix_inequality"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 11,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_minimal_covariant_stinespring_carrier_gate"
+        },
+        "identifier": "version8_minimal_covariant_stinespring_carrier_gate",
+        "obligations": [
+          {
+            "name": "cross_jump_hilbert_schmidt_gram",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  12,
+                  12
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "Hilbert-Schmidt Gram matrix of the cross-arrow jumps"
+            }
+          },
+          {
+            "name": "cross_gram_spectrum",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  21,
+                  1
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "spectrum of the diagonal cross-arrow Gram operator"
+            }
+          },
+          {
+            "name": "exact_step_window",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "lower": "0",
+                "maximum_gram_eigenvalue": "6",
+                "parameter": "p",
+                "upper": "1/6"
+              },
+              "kind": "identity_minus_psd_window",
+              "premise_count": 0,
+              "rule": "exact_diagonal_psd_interval_rule",
+              "subject": "one-step Stinespring no-jump square root"
+            }
+          },
+          {
+            "name": "kraus_channel_completeness",
+            "theorem": {
+              "certificate": {
+                "completely_positive": true,
+                "unital": true
+              },
+              "data": {
+                "kraus_count": 13,
+                "lower": "0",
+                "parameter": "p",
+                "upper": "1/6"
+              },
+              "kind": "kraus_family_on_window",
+              "premise_count": 1,
+              "rule": "exact_conditional_kraus_completeness_rule",
+              "subject": "cross-arrow Kraus family on its exact PSD window"
+            }
+          },
+          {
+            "name": "trace_preservation",
+            "theorem": {
+              "certificate": {
+                "completely_positive": true,
+                "trace_preserving": true
+              },
+              "data": {
+                "kraus_count": 13,
+                "lower": "0",
+                "parameter": "p",
+                "upper": "1/6"
+              },
+              "kind": "trace_preserving_kraus_family_on_window",
+              "premise_count": 1,
+              "rule": "exact_conditional_kraus_completeness_rule",
+              "subject": "trace-preserving cross-arrow Kraus family on its exact PSD window"
+            }
+          },
+          {
+            "name": "endpoint_algebra_invariance",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "blocks": [
+                  11,
+                  10
+                ],
+                "checked_matrix_units": 221
+              },
+              "kind": "invariant_block_subalgebra",
+              "premise_count": 1,
+              "rule": "exact_matrix_unit_invariance_rule",
+              "subject": "endpoint algebra under the exact one-step channel"
+            }
+          },
+          {
+            "name": "interior_kraus_rank_13",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "rank": 13,
+                "shape": [
+                  441,
+                  13
+                ]
+              },
+              "kind": "exact_rank",
+              "premise_count": 0,
+              "rule": "exact_sympy_rank_rule",
+              "subject": "Kraus rank for every positive interior step"
+            }
+          },
+          {
+            "name": "minimal_environment_dimension_13",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "choi_rank": 13,
+                "environment_dimension": 13,
+                "kraus_rank": 13
+              },
+              "kind": "minimal_stinespring_dimension",
+              "premise_count": 1,
+              "rule": "kraus_choi_stinespring_rank_rule",
+              "subject": "minimal one-step cross-arrow environment"
+            }
+          },
+          {
+            "name": "gauge_covariance",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "environment_jump_dimension": 12
+              },
+              "kind": "covariant_kraus_channel",
+              "premise_count": 3,
+              "rule": "orthogonal_environment_representation_rule",
+              "subject": "gauge-covariant minimal Stinespring environment"
+            }
+          },
+          {
+            "name": "gksl_tangent_at_zero",
+            "theorem": {
+              "certificate": {
+                "K0_at_zero": "identity",
+                "K0_derivative": "-G/2"
+              },
+              "data": {
+                "jump_count": 12,
+                "parameter": "p"
+              },
+              "kind": "kraus_family_gksl_tangent",
+              "premise_count": 1,
+              "rule": "exact_kraus_product_derivative_rule",
+              "subject": "one-step channel tangent equals the cross-arrow GKSL generator"
+            }
+          },
+          {
+            "name": "finite_step_semigroup_no_go",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "shape": [
+                  21,
+                  21
+                ],
+                "witness_flat_index": 0
+              },
+              "kind": "matrix_inequality",
+              "premise_count": 0,
+              "rule": "exact_nonzero_entry_rule",
+              "subject": "Phi_1/50 composed Phi_3/100 differs from Phi_1/20"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_minimal_covariant_stinespring_carrier_gate.tex",
+          "s2t/results/s2t_v8_minimal_covariant_stinespring_carrier_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Точная минимальная Stinespring-дилатация cross-канала"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 8,
+            "obligation_kinds": [
+              "gksl_well_formed",
+              "exact_spectrum",
+              "matrix_exponential_semigroup",
+              "positive_scalar_kernel_invariance",
+              "matrix_equality",
+              "matrix_equality",
+              "expression_equality",
+              "finite_dimensional_collision_limit"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 8,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_intrinsic_noise_clock_dilation_gate"
+        },
+        "identifier": "version8_intrinsic_noise_clock_dilation_gate",
+        "obligations": [
+          {
+            "name": "cross_gksl_generator",
+            "theorem": {
+              "certificate": {
+                "rates_nonnegative": true,
+                "trace_preserving": true
+              },
+              "data": {
+                "jump_count": 12,
+                "space": "E_s+E_t"
+              },
+              "kind": "gksl_well_formed",
+              "premise_count": 0,
+              "rule": "finite_dimensional_gksl_constructor",
+              "subject": "cross_noise_clock"
+            }
+          },
+          {
+            "name": "exact_decay_spectrum",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "dimension": 221,
+                "eigenvalues": [
+                  [
+                    "0",
+                    46
+                  ],
+                  [
+                    "1/2",
+                    48
+                  ],
+                  [
+                    "1",
+                    62
+                  ],
+                  [
+                    "3/2",
+                    20
+                  ],
+                  [
+                    "2",
+                    8
+                  ],
+                  [
+                    "5/2",
+                    12
+                  ],
+                  [
+                    "3",
+                    8
+                  ],
+                  [
+                    "7/2",
+                    12
+                  ],
+                  [
+                    "4",
+                    4
+                  ],
+                  [
+                    "8",
+                    1
+                  ]
+                ]
+              },
+              "kind": "exact_spectrum",
+              "premise_count": 0,
+              "rule": "exact_characteristic_polynomial_factorization_rule",
+              "subject": "cross-arrow decay spectrum on the endpoint algebra"
+            }
+          },
+          {
+            "name": "dimensionless_semigroup",
+            "theorem": {
+              "certificate": {
+                "T_0": "identity",
+                "T_u_plus_v": "T_u T_v"
+              },
+              "data": {
+                "dimension": 221,
+                "parameter": "u"
+              },
+              "kind": "matrix_exponential_semigroup",
+              "premise_count": 0,
+              "rule": "commuting_matrix_exponential_addition_rule",
+              "subject": "dimensionless cross-arrow Lindblad flow"
+            }
+          },
+          {
+            "name": "positive_rate_scaling",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "dimension": 221,
+                "nullity": 46,
+                "rank": 175,
+                "scalar": "kappa"
+              },
+              "kind": "positive_scalar_kernel_invariance",
+              "premise_count": 1,
+              "rule": "nonzero_field_scalar_rank_rule",
+              "subject": "positive physical-rate rescaling of the cross generator"
+            }
+          },
+          {
+            "name": "uniform_modular_flow_is_trivial",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  21,
+                  21
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "uniform-state modular action on the quark projector"
+            }
+          },
+          {
+            "name": "central_modular_flow_fixes_populations",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  21,
+                  42
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "all faithful central modular flows fix both sector populations"
+            }
+          },
+          {
+            "name": "cross_dissipation_moves_population",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "cross dissipation moves the quark population projector"
+            }
+          },
+          {
+            "name": "fresh_ancilla_collision_limit",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "convergence": "operator_norm",
+                "fresh_environment_each_step": true,
+                "scaling": "p=u/n"
+              },
+              "kind": "finite_dimensional_collision_limit",
+              "premise_count": 2,
+              "rule": "finite_dimensional_chernoff_product_rule",
+              "subject": "fresh-ancilla weak-collision approximation of exp(u L_cross)"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_intrinsic_noise_clock_dilation_gate.tex",
+          "s2t/results/s2t_v8_intrinsic_noise_clock_dilation_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Точное безразмерное шумовое время и collision-limit"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 9,
+            "obligation_kinds": [
+              "gksl_well_formed",
+              "trace_preserving_generator",
+              "unital_generator",
+              "invariant_block_subalgebra",
+              "scalar_fixed_algebra_intersection",
+              "scalar_fixed_algebra_intersection",
+              "scalar_fixed_algebra_intersection",
+              "positive_selfadjoint_dirichlet_family",
+              "strict_finite_dimensional_decay_gap"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 9,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_full_primitive_markov_generator_assembly_gate"
+        },
+        "identifier": "version8_full_primitive_markov_generator_assembly_gate",
+        "obligations": [
+          {
+            "name": "full_gksl_generator",
+            "theorem": {
+              "certificate": {
+                "rates_nonnegative": true,
+                "trace_preserving": true
+              },
+              "data": {
+                "jump_count": 25,
+                "space": "E_s+E_t"
+              },
+              "kind": "gksl_well_formed",
+              "premise_count": 0,
+              "rule": "finite_dimensional_gksl_constructor",
+              "subject": "full_primitive_QMS"
+            }
+          },
+          {
+            "name": "trace_preservation",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "checked_matrix_units": 441
+              },
+              "kind": "trace_preserving_generator",
+              "premise_count": 1,
+              "rule": "exact_matrix_unit_trace_rule",
+              "subject": "full_primitive_QMS"
+            }
+          },
+          {
+            "name": "unitality",
+            "theorem": {
+              "certificate": {
+                "identity_residual": "zero"
+              },
+              "data": {},
+              "kind": "unital_generator",
+              "premise_count": 1,
+              "rule": "exact_identity_action_rule",
+              "subject": "full_primitive_QMS"
+            }
+          },
+          {
+            "name": "endpoint_invariance",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "blocks": [
+                  11,
+                  10
+                ],
+                "checked_matrix_units": 221
+              },
+              "kind": "invariant_block_subalgebra",
+              "premise_count": 1,
+              "rule": "exact_matrix_unit_invariance_rule",
+              "subject": "full primitive endpoint observable algebra"
+            }
+          },
+          {
+            "name": "scalar_fixed_algebra",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "base_dimension": 2,
+                "fixed_dimension": 1
+              },
+              "kind": "scalar_fixed_algebra_intersection",
+              "premise_count": 2,
+              "rule": "fixed_algebra_restriction_intersection_rule",
+              "subject": "base gauge-linking C2 intersected with the full cross bridge"
+            }
+          },
+          {
+            "name": "qlyr_alone_closes_C2",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "base_dimension": 2,
+                "fixed_dimension": 1
+              },
+              "kind": "scalar_fixed_algebra_intersection",
+              "premise_count": 2,
+              "rule": "fixed_algebra_restriction_intersection_rule",
+              "subject": "QLYR alone closes the base central C2"
+            }
+          },
+          {
+            "name": "xldr_alone_closes_C2",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "base_dimension": 2,
+                "fixed_dimension": 1
+              },
+              "kind": "scalar_fixed_algebra_intersection",
+              "premise_count": 2,
+              "rule": "fixed_algebra_restriction_intersection_rule",
+              "subject": "XLdR alone closes the base central C2"
+            }
+          },
+          {
+            "name": "all_positive_weights_primitive",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "fixed_dimension": 1,
+                "group_sizes": [
+                  1,
+                  8,
+                  3,
+                  1,
+                  6,
+                  6
+                ],
+                "relative_weights_selected": false,
+                "trace_detailed_balance": true,
+                "weights": [
+                  "kappa_link",
+                  "kappa_SU3",
+                  "kappa_SU2",
+                  "kappa_U1",
+                  "kappa_QLYR",
+                  "kappa_XLdR"
+                ]
+              },
+              "kind": "positive_selfadjoint_dirichlet_family",
+              "premise_count": 2,
+              "rule": "positive_sum_of_commutator_squares_rule",
+              "subject": "all strictly positive relative-rate choices"
+            }
+          },
+          {
+            "name": "strict_decay_gap",
+            "theorem": {
+              "certificate": {},
+              "data": {},
+              "kind": "strict_finite_dimensional_decay_gap",
+              "premise_count": 1,
+              "rule": "finite_dimensional_psd_kernel_complement_rule",
+              "subject": "strict decay gap above the scalar fixed line"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_full_primitive_markov_generator_assembly_gate.tex",
+          "s2t/results/s2t_v8_full_primitive_markov_generator_assembly_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Точная сборка полного примитивного QMS"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 6,
+            "obligation_kinds": [
+              "unique_normalized_trace_state",
+              "central_stationary_state_no_go",
+              "strictly_positive_expression",
+              "opposite_bohr_frequency_split",
+              "matrix_inequality",
+              "conditional_kms_rate_ratio"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 6,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_kms_nontracial_relative_rate_selector_gate"
+        },
+        "identifier": "version8_kms_nontracial_relative_rate_selector_gate",
+        "obligations": [
+          {
+            "name": "unique_trace_state",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "density": "I_21/21",
+                "dimension": 21
+              },
+              "kind": "unique_normalized_trace_state",
+              "premise_count": 1,
+              "rule": "primitive_unital_stationary_state_rule",
+              "subject": "unique faithful state of the primitive unital QMS"
+            }
+          },
+          {
+            "name": "central_nontracial_state_no_go",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "condition": "a=b=1/21",
+                "normalization": "11a+10b=1"
+              },
+              "kind": "central_stationary_state_no_go",
+              "premise_count": 1,
+              "rule": "scalar_fixed_algebra_and_normalization_rule",
+              "subject": "a I11 direct_sum b I10 is stationary only at the normalized trace"
+            }
+          },
+          {
+            "name": "positive_rate_no_cancellation",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "expression": "6*kappa_QLYR + 6*kappa_XLdR + 13*kappa_link"
+              },
+              "kind": "strictly_positive_expression",
+              "premise_count": 1,
+              "rule": "sympy_exact_sign_rule",
+              "subject": "positive transfer weights cannot support a nontracial central state"
+            }
+          },
+          {
+            "name": "directed_bohr_split",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "frequency": "Delta",
+                "pair_count": 13
+              },
+              "kind": "opposite_bohr_frequency_split",
+              "premise_count": 0,
+              "rule": "exact_commutator_eigenoperator_rule",
+              "subject": "directed halves of all linking and cross transfer jumps"
+            }
+          },
+          {
+            "name": "selfadjoint_jump_bohr_no_go",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "shape": [
+                  21,
+                  21
+                ],
+                "witness_flat_index": 11
+              },
+              "kind": "matrix_inequality",
+              "premise_count": 0,
+              "rule": "exact_nonzero_entry_rule",
+              "subject": "a selfadjoint transfer jump is not one nonzero Bohr mode"
+            }
+          },
+          {
+            "name": "conditional_kms_ratio",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "modular_gap": "beta_Delta",
+                "ratio": "exp(-beta_Delta)",
+                "uniquely_selected": false
+              },
+              "kind": "conditional_kms_rate_ratio",
+              "premise_count": 1,
+              "rule": "two_direction_detailed_balance_flux_rule",
+              "subject": "directed upward/downward KMS rate ratio"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_kms_nontracial_relative_rate_selector_gate.tex",
+          "s2t/results/s2t_v8_kms_nontracial_relative_rate_selector_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Точный no-go нетривиального KMS-селектора"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 6,
+            "obligation_kinds": [
+              "opposite_bohr_frequency_split",
+              "opposite_bohr_frequency_split",
+              "matrix_equality",
+              "directed_pair_primitive_qms",
+              "directed_pair_primitive_qms",
+              "matrix_inequality"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 6,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_modular_bohr_parent_origin_gate"
+        },
+        "identifier": "version8_modular_bohr_parent_origin_gate",
+        "obligations": [
+          {
+            "name": "forward_bohr_grading",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "frequency": "2",
+                "pair_count": 13
+              },
+              "kind": "opposite_bohr_frequency_split",
+              "premise_count": 0,
+              "rule": "exact_commutator_eigenoperator_rule",
+              "subject": "chain-number forward orientation"
+            }
+          },
+          {
+            "name": "reverse_bohr_grading",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "frequency": "2",
+                "pair_count": 13
+              },
+              "kind": "opposite_bohr_frequency_split",
+              "premise_count": 0,
+              "rule": "exact_commutator_eigenoperator_rule",
+              "subject": "chain-number reverse orientation"
+            }
+          },
+          {
+            "name": "gauge_invariance",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  21,
+                  252
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "chain number commutes with all gauge jumps"
+            }
+          },
+          {
+            "name": "forward_primitivity",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "fixed_dimension": 1
+              },
+              "kind": "directed_pair_primitive_qms",
+              "premise_count": 2,
+              "rule": "positive_directed_pair_commutant_rule",
+              "subject": "forward directed KMS process"
+            }
+          },
+          {
+            "name": "reverse_primitivity",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "fixed_dimension": 1
+              },
+              "kind": "directed_pair_primitive_qms",
+              "premise_count": 2,
+              "rule": "positive_directed_pair_commutant_rule",
+              "subject": "reverse directed KMS process"
+            }
+          },
+          {
+            "name": "orientation_no_go",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "shape": [
+                  1,
+                  1
+                ],
+                "witness_flat_index": 0
+              },
+              "kind": "matrix_inequality",
+              "premise_count": 0,
+              "rule": "exact_nonzero_entry_rule",
+              "subject": "two chain orientations give distinct KMS ratios"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_modular_bohr_parent_origin_gate.tex",
+          "s2t/results/s2t_v8_modular_bohr_parent_origin_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Точный цепно-модульный боровский родитель"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 5,
+            "obligation_kinds": [
+              "kraus_history_conditional_recovery",
+              "isometric_history_parent_zero_modes",
+              "nonunique_stinespring_unitary_extension",
+              "finite_dimensional_collision_limit",
+              "verified_gate"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 5,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_page_wootters_stinespring_history_gate"
+        },
+        "identifier": "version8_page_wootters_stinespring_history_gate",
+        "obligations": [
+          {
+            "name": "conditional_clock_slice_recovery",
+            "theorem": {
+              "certificate": {
+                "all_slice_residuals": "zero"
+              },
+              "data": {
+                "branch_count_bounds": [
+                  1,
+                  13,
+                  169
+                ],
+                "clock_dimension": 3,
+                "environment_dimension": 13,
+                "slice_traces": [
+                  "1",
+                  "1",
+                  "1"
+                ],
+                "steps": 2
+              },
+              "kind": "kraus_history_conditional_recovery",
+              "premise_count": 1,
+              "rule": "exact_kraus_branch_induction_rule",
+              "subject": "conditional clock slices recover Phi^n for n=0,1,2"
+            }
+          },
+          {
+            "name": "stationary_frustration_free_history_parent",
+            "theorem": {
+              "certificate": {
+                "propagation_residual": "zero"
+              },
+              "data": {
+                "clock_dimension": 3,
+                "frustration_free": true,
+                "global_history_stationary": true,
+                "zero_mode_family_dimension": 21
+              },
+              "kind": "isometric_history_parent_zero_modes",
+              "premise_count": 2,
+              "rule": "stinespring_isometry_history_parent_rule",
+              "subject": "frustration-free finite Stinespring history parent"
+            }
+          },
+          {
+            "name": "nonunique_full_unitary_extension",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "canonical_unitary_extension": false,
+                "environment_dimension": 13,
+                "extension_real_parameter_dimension": 63504,
+                "extension_unitary_group": "U(252)",
+                "system_dimension": 21,
+                "total_dimension": 273,
+                "unconstrained_complement_dimension": 252
+              },
+              "kind": "nonunique_stinespring_unitary_extension",
+              "premise_count": 0,
+              "rule": "finite_dimensional_isometry_extension_count_rule",
+              "subject": "nonuniqueness of a full autonomous unitary clock step"
+            }
+          },
+          {
+            "name": "fresh_ancilla_collision_limit",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "convergence": "operator_norm",
+                "fresh_environment_each_step": true,
+                "scaling": "p=u/n"
+              },
+              "kind": "finite_dimensional_collision_limit",
+              "premise_count": 2,
+              "rule": "finite_dimensional_chernoff_product_rule",
+              "subject": "fresh-ancilla weak-collision approximation of exp(u L_cross)"
+            }
+          },
+          {
+            "name": "physical_clock_boundary",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "obligation_count": 3,
+                "obligation_kinds": [
+                  "matrix_inequality",
+                  "nonunique_stinespring_unitary_extension",
+                  "positive_scalar_kernel_invariance"
+                ]
+              },
+              "kind": "verified_gate",
+              "premise_count": 3,
+              "rule": "gate_conjunction_rule",
+              "subject": "page_wootters_physical_clock_boundary"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_page_wootters_stinespring_history_gate.tex",
+          "s2t/results/s2t_v8_page_wootters_stinespring_history_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Точный Page--Wootters--Stinespring history-мост"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 4,
+            "obligation_kinds": [
+              "minimal_stinespring_dimension",
+              "covariant_kraus_channel",
+              "covariant_stinespring_extension_ambiguity",
+              "verified_gate"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 4,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_canonical_autonomous_clock_unitary_extension_no_go_gate"
+        },
+        "identifier": "version8_canonical_autonomous_clock_unitary_extension_no_go_gate",
+        "obligations": [
+          {
+            "name": "minimal_environment_dimension",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "choi_rank": 13,
+                "environment_dimension": 13,
+                "kraus_rank": 13
+              },
+              "kind": "minimal_stinespring_dimension",
+              "premise_count": 1,
+              "rule": "kraus_choi_stinespring_rank_rule",
+              "subject": "minimal one-step cross-arrow environment"
+            }
+          },
+          {
+            "name": "gauge_covariant_stinespring_isometry",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "environment_jump_dimension": 12
+              },
+              "kind": "covariant_kraus_channel",
+              "premise_count": 3,
+              "rule": "orthogonal_environment_representation_rule",
+              "subject": "gauge-covariant minimal Stinespring environment"
+            }
+          },
+          {
+            "name": "covariant_complement_phase_ambiguity",
+            "theorem": {
+              "certificate": {
+                "V_z_W_minus_W": "zero",
+                "commutator_with_symmetry": "zero"
+              },
+              "data": {
+                "complement_dimension": 252,
+                "complex_phase_family": "U(1)",
+                "environment_dimension": 13,
+                "image_dimension": 21,
+                "real_even_surviving_choices": [
+                  "+1",
+                  "-1"
+                ],
+                "same_reduced_channel": true,
+                "system_dimension": 21,
+                "unique_covariant_unitary_extension": false
+              },
+              "kind": "covariant_stinespring_extension_ambiguity",
+              "premise_count": 2,
+              "rule": "stinespring_complement_phase_rule",
+              "subject": "gauge-covariant complement phases preserve the same clock channel"
+            }
+          },
+          {
+            "name": "canonical_autonomous_clock_no_go",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "obligation_count": 3,
+                "obligation_kinds": [
+                  "isometric_history_parent_zero_modes",
+                  "covariant_stinespring_extension_ambiguity",
+                  "verified_gate"
+                ]
+              },
+              "kind": "verified_gate",
+              "premise_count": 3,
+              "rule": "gate_conjunction_rule",
+              "subject": "canonical_autonomous_clock_unitary_no_go"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_canonical_autonomous_clock_unitary_extension_no_go_gate.tex",
+          "s2t/results/s2t_v8_canonical_autonomous_clock_unitary_extension_no_go_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "No-go канонического автономного clock-unitary"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 9,
+            "obligation_kinds": [
+              "well_typed_morphism",
+              "matrix_equality",
+              "matrix_equality",
+              "kraus_family_gksl_tangent",
+              "orthogonal_star_interaction_covariance",
+              "orthogonal_frame_commutant_dimensions",
+              "matrix_inequality",
+              "nonconstant_expression",
+              "finite_dimensional_collision_limit"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 9,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_microscopic_repeated_interaction_hamiltonian_gate"
+        },
+        "identifier": "version8_microscopic_repeated_interaction_hamiltonian_gate",
+        "obligations": [
+          {
+            "name": "well_typed_interaction_hamiltonian",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "shape": [
+                  273,
+                  273
+                ],
+                "source": "H_system tensor K_env",
+                "target": "H_system tensor K_env"
+              },
+              "kind": "well_typed_morphism",
+              "premise_count": 0,
+              "rule": "morphism_shape_rule",
+              "subject": "H_int_star"
+            }
+          },
+          {
+            "name": "self_adjoint_star_interaction",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  273,
+                  273
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "Hermiticity of the vacuum-to-cross star interaction"
+            }
+          },
+          {
+            "name": "vacuum_second_moment",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  21,
+                  21
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "vacuum second moment of the star interaction"
+            }
+          },
+          {
+            "name": "gksl_weak_collision_tangent",
+            "theorem": {
+              "certificate": {
+                "K0_at_zero": "identity",
+                "K0_derivative": "-G/2"
+              },
+              "data": {
+                "jump_count": 12,
+                "parameter": "h"
+              },
+              "kind": "kraus_family_gksl_tangent",
+              "premise_count": 2,
+              "rule": "exact_kraus_product_derivative_rule",
+              "subject": "weak repeated-interaction tangent equals cross-arrow GKSL"
+            }
+          },
+          {
+            "name": "gauge_covariant_dual_frame_contraction",
+            "theorem": {
+              "certificate": {
+                "infinitesimal_commutator": "zero"
+              },
+              "data": {
+                "basis_independent": true,
+                "environment_dimension": 13,
+                "frame_dimension": 12,
+                "gauge_invariant": true
+              },
+              "kind": "orthogonal_star_interaction_covariance",
+              "premise_count": 2,
+              "rule": "orthogonal_frame_dual_contraction_rule",
+              "subject": "gauge-invariant contraction of the cross frame with its environment dual"
+            }
+          },
+          {
+            "name": "eight_dimensional_interaction_and_four_dimensional_rate_commutants",
+            "theorem": {
+              "certificate": {
+                "commutator_system_rank": 136,
+                "frame_gram": "2 I",
+                "symmetric_system_rank": 74
+              },
+              "data": {
+                "frame_dimension": 12,
+                "full_commutant_dimension": 8,
+                "symmetric_commutant_dimension": 4,
+                "symmetry_generator_count": 12
+              },
+              "kind": "orthogonal_frame_commutant_dimensions",
+              "premise_count": 0,
+              "rule": "exact_linear_commutant_rule",
+              "subject": "gauge-compatible couplings of the two equivalent cross families"
+            }
+          },
+          {
+            "name": "exact_finite_step_second_order_no_go",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "shape": [
+                  21,
+                  21
+                ],
+                "witness_flat_index": 0
+              },
+              "kind": "matrix_inequality",
+              "premise_count": 0,
+              "rule": "exact_nonzero_entry_rule",
+              "subject": "second-order star-unitary channel differs from the exact finite Kraus step"
+            }
+          },
+          {
+            "name": "absolute_rate_scale_no_go",
+            "theorem": {
+              "certificate": {
+                "derivative": "2*g"
+              },
+              "data": {
+                "variable": "g"
+              },
+              "kind": "nonconstant_expression",
+              "premise_count": 0,
+              "rule": "exact_nonzero_derivative_rule",
+              "subject": "macroscopic GKSL rate retains the microscopic coupling scale"
+            }
+          },
+          {
+            "name": "fresh_ancilla_collision_limit",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "convergence": "operator_norm",
+                "fresh_environment_each_step": true,
+                "scaling": "p=u/n"
+              },
+              "kind": "finite_dimensional_collision_limit",
+              "premise_count": 2,
+              "rule": "finite_dimensional_chernoff_product_rule",
+              "subject": "fresh-ancilla weak-collision approximation of exp(u L_cross)"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_microscopic_repeated_interaction_hamiltonian_gate.tex",
+          "s2t/results/s2t_v8_microscopic_repeated_interaction_hamiltonian_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Микроскопический Hamiltonian повторных взаимодействий"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 9,
+            "obligation_kinds": [
+              "matrix_equality",
+              "matrix_equality",
+              "algebraic_field_matrix_equality",
+              "kraus_family_gksl_tangent",
+              "linear_maps_equal_on_basis",
+              "scaled_coupling_environment_equivalence",
+              "matrix_equality",
+              "orthogonal_frame_commutant_dimensions",
+              "nonconstant_expression"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 9,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_trace_dual_cross_interaction_selector_gate"
+        },
+        "identifier": "version8_trace_dual_cross_interaction_selector_gate",
+        "obligations": [
+          {
+            "name": "exact_cross_field_trace_metric",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  12,
+                  12
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "common finite trace metric on the full cross amplitude module"
+            }
+          },
+          {
+            "name": "exact_metric_dual_rate_tensor",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  12,
+                  12
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "metric-dual cross rate tensor"
+            }
+          },
+          {
+            "name": "canonical_coupling_gram",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "field_degree": 2,
+                "shape": [
+                  12,
+                  12
+                ]
+              },
+              "kind": "algebraic_field_matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_algebraic_number_field_rule",
+              "subject": "canonical trace-dual interaction coupling Gram"
+            }
+          },
+          {
+            "name": "trace_dual_repeated_interaction_tangent",
+            "theorem": {
+              "certificate": {
+                "K0_at_zero": "identity",
+                "K0_derivative": "-G/2"
+              },
+              "data": {
+                "jump_count": 12,
+                "parameter": "h"
+              },
+              "kind": "kraus_family_gksl_tangent",
+              "premise_count": 2,
+              "rule": "exact_kraus_product_derivative_rule",
+              "subject": "trace-dual repeated-interaction tangent"
+            }
+          },
+          {
+            "name": "one_third_cross_generator",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "basis_size": 441
+              },
+              "kind": "linear_maps_equal_on_basis",
+              "premise_count": 2,
+              "rule": "exact_linear_basis_extensionality_rule",
+              "subject": "trace-dual generator equals one third of the unit cross generator"
+            }
+          },
+          {
+            "name": "orthogonal_environment_frame_equivalence",
+            "theorem": {
+              "certificate": {
+                "O_transpose_O": "identity"
+              },
+              "data": {
+                "coupling_form": "sqrt(1/3) O",
+                "dimension": 12,
+                "gram_scale": "1/3",
+                "orthogonal_environment_relabelling": true,
+                "reduced_channel_unique_up_to_scale": true
+              },
+              "kind": "scaled_coupling_environment_equivalence",
+              "premise_count": 1,
+              "rule": "polar_gram_factorization_rule",
+              "subject": "all scalar-Gram cross couplings differ by environment relabelling"
+            }
+          },
+          {
+            "name": "polar_axis_compatibility",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  2,
+                  2
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "trace-dual mobility preserves the polar cross-family axes"
+            }
+          },
+          {
+            "name": "microscopic_coupling_commutant_boundary",
+            "theorem": {
+              "certificate": {
+                "commutator_system_rank": 136,
+                "frame_gram": "2 I",
+                "symmetric_system_rank": 74
+              },
+              "data": {
+                "frame_dimension": 12,
+                "full_commutant_dimension": 8,
+                "symmetric_commutant_dimension": 4,
+                "symmetry_generator_count": 12
+              },
+              "kind": "orthogonal_frame_commutant_dimensions",
+              "premise_count": 0,
+              "rule": "exact_linear_commutant_rule",
+              "subject": "gauge-compatible couplings of the two equivalent cross families"
+            }
+          },
+          {
+            "name": "absolute_time_scale_no_go",
+            "theorem": {
+              "certificate": {
+                "derivative": "2*g"
+              },
+              "data": {
+                "variable": "g"
+              },
+              "kind": "nonconstant_expression",
+              "premise_count": 0,
+              "rule": "exact_nonzero_derivative_rule",
+              "subject": "macroscopic GKSL rate retains the microscopic coupling scale"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_trace_dual_cross_interaction_selector_gate.tex",
+          "s2t/results/s2t_v8_trace_dual_cross_interaction_selector_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Следово-двойственный селектор cross-взаимодействия"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 6,
+            "obligation_kinds": [
+              "matrix_equality",
+              "matrix_equality",
+              "parent_action_rate_metric_underdetermination",
+              "matrix_inequality",
+              "nonconstant_expression",
+              "verified_gate"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 6,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_metric_dual_environment_parent_action_origin_gate"
+        },
+        "identifier": "version8_metric_dual_environment_parent_action_origin_gate",
+        "obligations": [
+          {
+            "name": "exact_cross_field_metric",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  12,
+                  12
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "common finite trace metric on the full cross amplitude module"
+            }
+          },
+          {
+            "name": "exact_riesz_dual_rate",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  12,
+                  12
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "metric-dual cross rate tensor"
+            }
+          },
+          {
+            "name": "two_positive_gauge_parent_completions",
+            "theorem": {
+              "certificate": {
+                "alternative_parent_hessian": "Matrix([[3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3/2, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3/2, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3/2, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3/2, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3/2, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3/2]])",
+                "alternative_riesz_residual": "nonzero",
+                "canonical_parent_hessian": "Matrix([[3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3]])",
+                "canonical_riesz_residual": "zero",
+                "gauge_commutators": "zero"
+              },
+              "data": {
+                "completions_not_scale_equivalent": true,
+                "field_action_selects_unique_bath_rate": false,
+                "field_dimension": 12,
+                "positive_gauge_compatible_completions": 2,
+                "riesz_condition_is_additional": true,
+                "riesz_equation": "K R = I",
+                "riesz_equation_selects_unique_rate": true,
+                "same_field_restriction": true
+              },
+              "kind": "parent_action_rate_metric_underdetermination",
+              "premise_count": 2,
+              "rule": "exact_two_parent_completion_counterexample_rule",
+              "subject": "two gauge-compatible bath completions of one cross-field action"
+            }
+          },
+          {
+            "name": "distinct_reduced_dynamics",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "shape": [
+                  21,
+                  21
+                ],
+                "witness_flat_index": 8
+              },
+              "kind": "matrix_inequality",
+              "premise_count": 0,
+              "rule": "exact_nonzero_entry_rule",
+              "subject": "same field action admits distinct reduced cross dynamics"
+            }
+          },
+          {
+            "name": "absolute_rate_scale_no_go",
+            "theorem": {
+              "certificate": {
+                "derivative": "2*g"
+              },
+              "data": {
+                "variable": "g"
+              },
+              "kind": "nonconstant_expression",
+              "premise_count": 0,
+              "rule": "exact_nonzero_derivative_rule",
+              "subject": "macroscopic GKSL rate retains the microscopic coupling scale"
+            }
+          },
+          {
+            "name": "parent_action_origin_no_go",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "obligation_count": 5,
+                "obligation_kinds": [
+                  "matrix_equality",
+                  "matrix_equality",
+                  "parent_action_rate_metric_underdetermination",
+                  "matrix_inequality",
+                  "nonconstant_expression"
+                ]
+              },
+              "kind": "verified_gate",
+              "premise_count": 5,
+              "rule": "gate_conjunction_rule",
+              "subject": "metric_dual_environment_parent_action_origin_no_go"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_metric_dual_environment_parent_action_origin_gate.tex",
+          "s2t/results/s2t_v8_metric_dual_environment_parent_action_origin_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "No-go происхождения метрически двойственной среды из старого действия"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 5,
+            "obligation_kinds": [
+              "gksl_well_formed",
+              "mixed_real_cotangent_carrier_dimension",
+              "matrix_inequality",
+              "expression_equality",
+              "verified_gate"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 5,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_full_noise_cotangent_carrier_admission_gate"
+        },
+        "identifier": "version8_full_noise_cotangent_carrier_admission_gate",
+        "obligations": [
+          {
+            "name": "current_full_qms",
+            "theorem": {
+              "certificate": {
+                "rates_nonnegative": true,
+                "trace_preserving": true
+              },
+              "data": {
+                "jump_count": 25,
+                "space": "E_s+E_t"
+              },
+              "kind": "gksl_well_formed",
+              "premise_count": 0,
+              "rule": "finite_dimensional_gksl_constructor",
+              "subject": "full_primitive_QMS"
+            }
+          },
+          {
+            "name": "mixed_real_dimension",
+            "theorem": {
+              "certificate": {
+                "formula": "2 dim_C transfer + dim_R Herm(gauge)",
+                "required_new_real_directions": 17
+              },
+              "data": {
+                "current_jump_codimension": 17,
+                "current_jump_dimension": 25,
+                "current_qms_is_full_cotangent_frame": false,
+                "field_real_dimension": 42,
+                "full_cotangent_dimension_match": true,
+                "gauge_hermitian_dimension": 12,
+                "mixed_real_dimension": 42,
+                "naive_uniform_complex_real_dimension": 54,
+                "transfer_complex_dimension": 15
+              },
+              "kind": "mixed_real_cotangent_carrier_dimension",
+              "premise_count": 2,
+              "rule": "mixed_scalar_realification_dimension_rule",
+              "subject": "full transfer-complex plus Hermitian-gauge cotangent carrier"
+            }
+          },
+          {
+            "name": "uniform_complexification_no_go",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "shape": [
+                  1,
+                  1
+                ],
+                "witness_flat_index": 0
+              },
+              "kind": "matrix_inequality",
+              "premise_count": 0,
+              "rule": "exact_nonzero_entry_rule",
+              "subject": "uniform complexification overcounts the Hermitian gauge carrier"
+            }
+          },
+          {
+            "name": "current_jump_deficit_17",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "missing real directions of the current 25-jump QMS"
+            }
+          },
+          {
+            "name": "parent_origin_boundary",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "obligation_count": 5,
+                "obligation_kinds": [
+                  "matrix_equality",
+                  "matrix_equality",
+                  "parent_action_rate_metric_underdetermination",
+                  "matrix_inequality",
+                  "nonconstant_expression"
+                ]
+              },
+              "kind": "verified_gate",
+              "premise_count": 5,
+              "rule": "gate_conjunction_rule",
+              "subject": "metric_dual_environment_parent_action_origin_no_go"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_full_noise_cotangent_carrier_admission_gate.tex",
+          "s2t/results/s2t_v8_full_noise_cotangent_carrier_admission_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Допуск полного смешанно-вещественного шумового cotangent-носителя"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 7,
+            "obligation_kinds": [
+              "expression_equality",
+              "exact_rank",
+              "exact_rank",
+              "exact_rank",
+              "matrix_equality",
+              "matrix_equality",
+              "expression_equality"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 7,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_full_noise_trace_frame_metric_gate"
+        },
+        "identifier": "version8_full_noise_trace_frame_metric_gate",
+        "obligations": [
+          {
+            "name": "linking_orbit_dimension_5",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "five-complex-dimensional linking gauge orbit"
+            }
+          },
+          {
+            "name": "transfer_complex_rank_15",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "rank": 15,
+                "shape": [
+                  110,
+                  15
+                ]
+              },
+              "kind": "exact_rank",
+              "premise_count": 0,
+              "rule": "exact_sympy_rank_rule",
+              "subject": "full gauge-closed complex transfer frame"
+            }
+          },
+          {
+            "name": "full_real_frame_rank_42",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "rank": 42,
+                "shape": [
+                  441,
+                  42
+                ]
+              },
+              "kind": "exact_rank",
+              "premise_count": 0,
+              "rule": "exact_sympy_rank_rule",
+              "subject": "full mixed-real Hermitian noise frame"
+            }
+          },
+          {
+            "name": "trace_metric_rank_42",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "rank": 42,
+                "shape": [
+                  42,
+                  42
+                ]
+              },
+              "kind": "exact_rank",
+              "premise_count": 0,
+              "rule": "exact_sympy_rank_rule",
+              "subject": "nondegenerate full finite-trace noise metric"
+            }
+          },
+          {
+            "name": "transfer_gauge_orthogonality",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  30,
+                  12
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "exact transfer-gauge trace orthogonality"
+            }
+          },
+          {
+            "name": "trace_dual_identity",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  42,
+                  42
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "full trace metric and cotangent rate tensor are inverse"
+            }
+          },
+          {
+            "name": "missing_direction_decomposition",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "nine linking-orbit plus eight internal directions close the deficit"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_full_noise_trace_frame_metric_gate.tex",
+          "s2t/results/s2t_v8_full_noise_trace_frame_metric_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Полный 42-мерный шумовой кадр и trace-метрика"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 6,
+            "obligation_kinds": [
+              "gksl_well_formed",
+              "trace_preserving_generator",
+              "unital_generator",
+              "invariant_block_subalgebra",
+              "scalar_fixed_algebra_under_frame_extension",
+              "matrix_equality"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 6,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_full_noise_42_jump_gksl_fixed_algebra_gate"
+        },
+        "identifier": "version8_full_noise_42_jump_gksl_fixed_algebra_gate",
+        "obligations": [
+          {
+            "name": "gksl_form",
+            "theorem": {
+              "certificate": {
+                "rates_nonnegative": true,
+                "trace_preserving": true
+              },
+              "data": {
+                "jump_count": 42,
+                "space": "E_s+E_t"
+              },
+              "kind": "gksl_well_formed",
+              "premise_count": 0,
+              "rule": "finite_dimensional_gksl_constructor",
+              "subject": "full_42_jump_QMS"
+            }
+          },
+          {
+            "name": "trace_preservation",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "checked_matrix_units": 441
+              },
+              "kind": "trace_preserving_generator",
+              "premise_count": 1,
+              "rule": "exact_matrix_unit_trace_rule",
+              "subject": "full_42_jump_QMS"
+            }
+          },
+          {
+            "name": "unitality",
+            "theorem": {
+              "certificate": {
+                "identity_residual": "zero"
+              },
+              "data": {},
+              "kind": "unital_generator",
+              "premise_count": 1,
+              "rule": "exact_identity_action_rule",
+              "subject": "full_42_jump_QMS"
+            }
+          },
+          {
+            "name": "endpoint_invariance",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "blocks": [
+                  11,
+                  10
+                ],
+                "checked_matrix_units": 221
+              },
+              "kind": "invariant_block_subalgebra",
+              "premise_count": 1,
+              "rule": "exact_matrix_unit_invariance_rule",
+              "subject": "42-jump endpoint observable algebra"
+            }
+          },
+          {
+            "name": "scalar_fixed_algebra",
+            "theorem": {
+              "certificate": {
+                "base_to_extended_span_residual": "zero"
+              },
+              "data": {
+                "base_frame_size": 25,
+                "base_span_contained": true,
+                "extended_frame_rank": 42,
+                "extended_frame_size": 42,
+                "fixed_algebra_dimension": 1,
+                "primitive": true
+              },
+              "kind": "scalar_fixed_algebra_under_frame_extension",
+              "premise_count": 1,
+              "rule": "dirichlet_commutant_monotonicity_rule",
+              "subject": "full 42-jump frame retains the scalar fixed algebra"
+            }
+          },
+          {
+            "name": "trace_dual_span_invertibility",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {
+                "shape": [
+                  42,
+                  42
+                ]
+              },
+              "kind": "matrix_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "trace-dual whitening is invertible on the full jump span"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_full_noise_42_jump_gksl_fixed_algebra_gate.tex",
+          "s2t/results/s2t_v8_full_noise_42_jump_gksl_fixed_algebra_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Полный 42-jump GKSL и scalar fixed algebra"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 6,
+            "obligation_kinds": [
+              "hermitian_frame_lie_closure",
+              "structural_star_repeated_interaction",
+              "expression_equality",
+              "structural_star_collision_limit",
+              "scalar_fixed_algebra_under_frame_extension",
+              "nonconstant_expression"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 6,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_full_noise_repeated_interaction_hamiltonian_gate"
+        },
+        "identifier": "version8_full_noise_repeated_interaction_hamiltonian_gate",
+        "obligations": [
+          {
+            "name": "gauge_closed_42_frame",
+            "theorem": {
+              "certificate": {
+                "all_augmented_rank_residuals": "zero"
+              },
+              "data": {
+                "closure_checks": 504,
+                "frame_dimension": 42,
+                "gauge_closed": true,
+                "symmetry_generator_count": 12
+              },
+              "kind": "hermitian_frame_lie_closure",
+              "premise_count": 0,
+              "rule": "exact_commutator_span_rule",
+              "subject": "gauge closure of the full 42-jump Hermitian frame"
+            }
+          },
+          {
+            "name": "structural_star_hamiltonian",
+            "theorem": {
+              "certificate": {
+                "frame_rank": 42,
+                "vacuum_line_dimension": 1
+              },
+              "data": {
+                "ambient_dimension": 903,
+                "environment_dimension": 43,
+                "gksl_tangent": true,
+                "jump_dimension": 42,
+                "minimal_noise_dimension": 42,
+                "self_adjoint": true,
+                "system_dimension": 21,
+                "vacuum_second_moment": "sum_a F_a^2"
+              },
+              "kind": "structural_star_repeated_interaction",
+              "premise_count": 2,
+              "rule": "independent_hermitian_star_interaction_rule",
+              "subject": "full-noise vacuum-to-jump star Hamiltonian"
+            }
+          },
+          {
+            "name": "minimal_environment_43",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "minimal full-noise collision environment"
+            }
+          },
+          {
+            "name": "collision_limit",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "convergence": "operator_norm",
+                "fresh_environment_each_step": true,
+                "scaling": "h=u/n"
+              },
+              "kind": "structural_star_collision_limit",
+              "premise_count": 1,
+              "rule": "finite_dimensional_unitary_chernoff_rule",
+              "subject": "full 42-jump unitary collision limit"
+            }
+          },
+          {
+            "name": "scalar_fixed_algebra",
+            "theorem": {
+              "certificate": {
+                "base_to_extended_span_residual": "zero"
+              },
+              "data": {
+                "base_frame_size": 25,
+                "base_span_contained": true,
+                "extended_frame_rank": 42,
+                "extended_frame_size": 42,
+                "fixed_algebra_dimension": 1,
+                "primitive": true
+              },
+              "kind": "scalar_fixed_algebra_under_frame_extension",
+              "premise_count": 1,
+              "rule": "dirichlet_commutant_monotonicity_rule",
+              "subject": "full 42-jump frame retains the scalar fixed algebra"
+            }
+          },
+          {
+            "name": "absolute_scale_no_go",
+            "theorem": {
+              "certificate": {
+                "derivative": "2*g"
+              },
+              "data": {
+                "variable": "g"
+              },
+              "kind": "nonconstant_expression",
+              "premise_count": 0,
+              "rule": "exact_nonzero_derivative_rule",
+              "subject": "macroscopic GKSL rate retains the microscopic coupling scale"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_full_noise_repeated_interaction_hamiltonian_gate.tex",
+          "s2t/results/s2t_v8_full_noise_repeated_interaction_hamiltonian_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Полный 42-jump repeated-interaction Hamiltonian"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 6,
+            "obligation_kinds": [
+              "expression_equality",
+              "expression_equality",
+              "nonconstant_expression",
+              "expression_equality",
+              "nonconstant_expression",
+              "collision_physical_time_scale_no_go"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 6,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_full_noise_physical_time_scale_no_go_gate"
+        },
+        "identifier": "version8_full_noise_physical_time_scale_no_go_gate",
+        "obligations": [
+          {
+            "name": "quadratic_collision_rate_scaling",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "quadratic scaling of the weak-collision GKSL tangent"
+            }
+          },
+          {
+            "name": "coupling_time_orbit_invariance",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "invariance of the dimensionless semigroup parameter"
+            }
+          },
+          {
+            "name": "free_coupling_changes_rate",
+            "theorem": {
+              "certificate": {
+                "derivative": "2*g"
+              },
+              "data": {
+                "variable": "g"
+              },
+              "kind": "nonconstant_expression",
+              "premise_count": 0,
+              "rule": "exact_nonzero_derivative_rule",
+              "subject": "the full 42-jump decay rate depends on the free coupling scale"
+            }
+          },
+          {
+            "name": "energy_time_calibration_identity",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "energy-time calibration identity"
+            }
+          },
+          {
+            "name": "time_unit_depends_on_energy_anchor",
+            "theorem": {
+              "certificate": {
+                "derivative": "-hbar/E_***2"
+              },
+              "data": {
+                "variable": "E_*"
+              },
+              "kind": "nonconstant_expression",
+              "premise_count": 0,
+              "rule": "exact_nonzero_derivative_rule",
+              "subject": "a physical time unit requires an independently fixed energy scale"
+            }
+          },
+          {
+            "name": "absolute_physical_time_no_go",
+            "theorem": {
+              "certificate": {
+                "energy_time_residual": "zero",
+                "rate_derivative": "2*g",
+                "scale_orbit_residual": "zero",
+                "time_unit_derivative": "-hbar/E_***2"
+              },
+              "data": {
+                "absolute_seconds_selected": false,
+                "compensating_time_rescaling": "t -> t/g^2",
+                "dimensionless_semigroup_fixed": true,
+                "generator_rescaling": "L -> g^2 L",
+                "generic_time_unit": "hbar/E_*",
+                "hbar_alone_sufficient": false,
+                "interaction_rescaling": "H_int -> g H_int",
+                "invariant_parameter": "g^2 t",
+                "required_dimensional_anchor": "energy/rate scale plus collision schedule"
+              },
+              "kind": "collision_physical_time_scale_no_go",
+              "premise_count": 6,
+              "rule": "exact_collision_scale_orbit_rule",
+              "subject": "absolute physical time scale of the full 42-jump collision model"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_full_noise_physical_time_scale_no_go_gate.tex",
+          "s2t/results/s2t_v8_full_noise_physical_time_scale_no_go_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "No-go абсолютного масштаба времени полного шумового процесса"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 7,
+            "obligation_kinds": [
+              "bilateral_shift_counter",
+              "expression_equality",
+              "toeplitz_ancilla_chain_dilation",
+              "ancilla_chain_reduced_iteration",
+              "hermitian_frame_lie_closure",
+              "structural_star_collision_limit",
+              "ancilla_chain_resource_boundary"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 7,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_full_noise_toeplitz_ancilla_chain_dilation_gate"
+        },
+        "identifier": "version8_full_noise_toeplitz_ancilla_chain_dilation_gate",
+        "obligations": [
+          {
+            "name": "absolute_integer_shift_counter",
+            "theorem": {
+              "certificate": {
+                "basis_residual": "zero"
+              },
+              "data": {
+                "absolute_integer_tick": true,
+                "carrier": "ell^2(Z)",
+                "commutator": "[N,U^k] = k U^k",
+                "number_action": "N e_n = n e_n",
+                "shift_action": "U^k e_n = e_(n+k)"
+              },
+              "kind": "bilateral_shift_counter",
+              "premise_count": 0,
+              "rule": "integer_basis_shift_rule",
+              "subject": "Toeplitz number operator counts absolute ancilla-chain shifts"
+            }
+          },
+          {
+            "name": "cell_dimension_43",
+            "theorem": {
+              "certificate": {
+                "residual": "zero"
+              },
+              "data": {},
+              "kind": "expression_equality",
+              "premise_count": 0,
+              "rule": "exact_sympy_reduction",
+              "subject": "one vacuum plus 42 full-noise labels gives a 43-dimensional cell"
+            }
+          },
+          {
+            "name": "fixed_global_floquet_step",
+            "theorem": {
+              "certificate": {
+                "distinct_site_residual": "zero on every finite cylinder",
+                "unitarity_residual": "zero by product of unitaries"
+              },
+              "data": {
+                "addressed_cells": "0,...,n-1",
+                "autonomy_level": "fixed discrete Floquet unitary",
+                "cell_dimension": 43,
+                "cellwise_gauge_covariant": true,
+                "chain": "infinite_tensor_Z(K_cell, vacuum)",
+                "cylinder_statement": "all finite n >= 0",
+                "global_step": "(I_system tensor S_chain) U_collision^(0)",
+                "global_step_unitary": true,
+                "jump_dimension": 42,
+                "product_vacuum_supplies_fresh_cells": true,
+                "system_dimension": 21,
+                "used_cell_revisited": false
+              },
+              "kind": "toeplitz_ancilla_chain_dilation",
+              "premise_count": 3,
+              "rule": "bilateral_shift_repeated_interaction_rule",
+              "subject": "bilateral Toeplitz conveyor of full-noise vacuum ancillas"
+            }
+          },
+          {
+            "name": "exact_reduced_iteration",
+            "theorem": {
+              "certificate": {
+                "all_cylinder_residuals": "zero"
+              },
+              "data": {
+                "exact": true,
+                "formula": "Tr_chain Ad(V)^n(rho_0 tensor omega_vac) = Phi_h^n(rho_0)",
+                "proof": "finite-cylinder induction",
+                "valid_steps": "all n >= 0"
+              },
+              "kind": "ancilla_chain_reduced_iteration",
+              "premise_count": 1,
+              "rule": "fresh_cell_partial_trace_induction_rule",
+              "subject": "the autonomous chain recovers every finite iterate Phi_h^n"
+            }
+          },
+          {
+            "name": "cellwise_gauge_covariance",
+            "theorem": {
+              "certificate": {
+                "all_augmented_rank_residuals": "zero"
+              },
+              "data": {
+                "closure_checks": 504,
+                "frame_dimension": 42,
+                "gauge_closed": true,
+                "symmetry_generator_count": 12
+              },
+              "kind": "hermitian_frame_lie_closure",
+              "premise_count": 0,
+              "rule": "exact_commutator_span_rule",
+              "subject": "gauge closure of the full 42-jump Hermitian frame"
+            }
+          },
+          {
+            "name": "continuous_collision_limit",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "convergence": "operator_norm",
+                "fresh_environment_each_step": true,
+                "scaling": "h=u/n"
+              },
+              "kind": "structural_star_collision_limit",
+              "premise_count": 1,
+              "rule": "finite_dimensional_unitary_chernoff_rule",
+              "subject": "full 42-jump unitary collision limit"
+            }
+          },
+          {
+            "name": "preloaded_reservoir_boundary",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "absolute_tick_duration_derived": false,
+                "external_step_by_step_reset_required": false,
+                "preloaded_infinite_product_vacuum_required": true,
+                "strong_physical_autonomy": false,
+                "time_independent_local_hamiltonian_derived": false,
+                "vacuum_chain_parent_derived": false
+              },
+              "kind": "ancilla_chain_resource_boundary",
+              "premise_count": 1,
+              "rule": "explicit_reservoir_premise_boundary_rule",
+              "subject": "preloaded-vacuum and continuous-Hamiltonian boundary of chain autonomy"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_full_noise_toeplitz_ancilla_chain_dilation_gate.tex",
+          "s2t/results/s2t_v8_full_noise_toeplitz_ancilla_chain_dilation_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Toeplitz-конвейер свежих ancilla полного шумового процесса"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 4,
+            "obligation_kinds": [
+              "product_vacuum_commuting_projector_parent",
+              "gnvw_shift_index",
+              "finite_defect_gnvw_index_stability",
+              "local_hamiltonian_ancilla_shift_no_go"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 4,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_vacuum_chain_parent_state_and_local_hamiltonian_origin_gate"
+        },
+        "identifier": "version8_vacuum_chain_parent_state_and_local_hamiltonian_origin_gate",
+        "obligations": [
+          {
+            "name": "local_commuting_projector_vacuum_parent",
+            "theorem": {
+              "certificate": {
+                "common_kernel": "tensor_m span{|0>_m}",
+                "gap": "1",
+                "projector_residual": "h_m^2-h_m=0"
+              },
+              "data": {
+                "cell_dimension": 43,
+                "excitation_dimension": 42,
+                "finite_volume_gap": 1,
+                "finite_volume_ground_dimension": 1,
+                "finite_volume_parent": "H_Lambda = sum_(m in Lambda) h_m",
+                "frustration_free": true,
+                "infinite_product_vacuum_selected": true,
+                "local_spectrum": [
+                  0,
+                  1
+                ],
+                "local_term": "h_m = I_m - |0><0|_m",
+                "terms_commute": true,
+                "translation_invariant_interaction": true
+              },
+              "kind": "product_vacuum_commuting_projector_parent",
+              "premise_count": 1,
+              "rule": "commuting_projector_product_state_parent_rule",
+              "subject": "commuting-projector parent of the 43-state ancilla vacuum chain"
+            }
+          },
+          {
+            "name": "one_cell_shift_gnvw_index_43",
+            "theorem": {
+              "certificate": {
+                "index_ratio": "43/1"
+              },
+              "data": {
+                "additive_index": "log(43)",
+                "cell_dimension": 43,
+                "identity_multiplicative_index": 1,
+                "inverse_shift_index": "1/43",
+                "multiplicative_index": 43,
+                "nontrivial": true,
+                "source": "Gross-Nesme-Vogts-Werner, arXiv:0910.3675"
+              },
+              "kind": "gnvw_shift_index",
+              "premise_count": 1,
+              "rule": "gnvw_one_cell_shift_index_rule",
+              "subject": "GNVW information-flow index of the one-cell ancilla translation"
+            }
+          },
+          {
+            "name": "localized_collision_preserves_flow_index",
+            "theorem": {
+              "certificate": {
+                "multiplicative_residual": "43*1-43=0"
+              },
+              "data": {
+                "finite_system_impurity_changes_asymptotic_flow": false,
+                "formula": "ind(V)=ind(S_chain) ind(U_collision^(0))",
+                "global_step_multiplicative_index": 43,
+                "localized_collision_multiplicative_index": 1,
+                "shift_multiplicative_index": 43
+              },
+              "kind": "finite_defect_gnvw_index_stability",
+              "premise_count": 2,
+              "rule": "gnvw_local_perturbation_stability_rule",
+              "subject": "the local collision does not cancel the conveyor index"
+            }
+          },
+          {
+            "name": "local_hamiltonian_origin_no_go",
+            "theorem": {
+              "certificate": {
+                "index_mismatch": "43 != 1",
+                "vacuum_parent_gap": "1"
+              },
+              "data": {
+                "admissible_status": "exact Floquet primitive with preloaded vacuum",
+                "conveyor_step_multiplicative_index": 43,
+                "exact_local_hamiltonian_generator_exists": false,
+                "hamiltonian_path_multiplicative_index": 1,
+                "obstruction": "nontrivial one-dimensional information-flow index",
+                "possible_escape": "index-balanced counterpropagating conveyor or nonlocal/slow-tail generator",
+                "source": "Ranard-Walter-Witteveen, arXiv:2012.00741",
+                "strong_autonomy_closed": false,
+                "time_dependent_lieb_robinson_generator_exists": false,
+                "time_independent_local_generator_exists": false,
+                "vacuum_parent_derived": true,
+                "vacuum_parent_gapped": true,
+                "vacuum_parent_local": true
+              },
+              "kind": "local_hamiltonian_ancilla_shift_no_go",
+              "premise_count": 2,
+              "rule": "alpu_local_generation_index_obstruction_rule",
+              "subject": "local-Hamiltonian origin of the exact Toeplitz ancilla conveyor"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_vacuum_chain_parent_state_and_local_hamiltonian_origin_gate.tex",
+          "s2t/results/s2t_v8_vacuum_chain_parent_state_and_local_hamiltonian_origin_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Parent вакуумной ancilla-цепи и индексный запрет локального Hamiltonian сдвига"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 5,
+            "obligation_kinds": [
+              "index_balanced_ancilla_counterflow",
+              "two_layer_swap_counterflow_circuit",
+              "piecewise_local_swap_hamiltonian",
+              "balanced_ancilla_conveyor_reduced_iteration",
+              "balanced_conveyor_autonomy_boundary"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 5,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_index_balanced_ancilla_conveyor_gate"
+        },
+        "identifier": "version8_index_balanced_ancilla_conveyor_gate",
+        "obligations": [
+          {
+            "name": "opposite_shift_index_cancellation",
+            "theorem": {
+              "certificate": {
+                "index_product": "43*(1/43)=1"
+              },
+              "data": {
+                "active_action": "A_m -> A_(m+1)",
+                "active_shift_index": "43",
+                "cell_dimension": 43,
+                "index_obstruction_removed": true,
+                "spectator_action": "B_m -> B_(m-1)",
+                "spectator_shift_index": "1/43",
+                "total_multiplicative_index": "1"
+              },
+              "kind": "index_balanced_ancilla_counterflow",
+              "premise_count": 1,
+              "rule": "gnvw_opposite_shift_product_rule",
+              "subject": "opposite information flow on two equal 43-state ancilla chains"
+            }
+          },
+          {
+            "name": "two_layer_nearest_neighbour_swap_circuit",
+            "theorem": {
+              "certificate": {
+                "A_label_transport": "A_m <- A_(m-1)",
+                "B_label_transport": "B_m <- B_(m+1)"
+              },
+              "data": {
+                "circuit_depth": 2,
+                "diagonal_gauge_covariant": true,
+                "exact_counterpropagating_shifts": true,
+                "first_layer": "product_m SWAP(A_m,B_m)",
+                "gates_disjoint_within_each_layer": true,
+                "nearest_neighbour": true,
+                "real_structure_covariant": true,
+                "resulting_active_action": "A_m(final)=A_(m-1)(initial)",
+                "resulting_spectator_action": "B_m(final)=B_(m+1)(initial)",
+                "second_layer": "product_m SWAP(B_m,A_(m+1))"
+              },
+              "kind": "two_layer_swap_counterflow_circuit",
+              "premise_count": 1,
+              "rule": "exact_swap_label_transport_rule",
+              "subject": "nearest-neighbour two-layer SWAP realization of the balanced conveyor"
+            }
+          },
+          {
+            "name": "piecewise_local_swap_hamiltonian",
+            "theorem": {
+              "certificate": {
+                "swap_minus_eigenphase": "-1",
+                "swap_plus_eigenphase": "1"
+              },
+              "data": {
+                "absolute_stage_duration_derived": false,
+                "commuting_terms_per_layer": true,
+                "exact_two_stage_floquet_generation": true,
+                "exponential_identity": "exp[-i(pi/2)(I-SWAP)]=SWAP",
+                "finite_range": true,
+                "local_term": "(pi/2)(I-SWAP)",
+                "piecewise_time_dependent_local_hamiltonian": true,
+                "single_time_independent_local_hamiltonian_derived": false
+              },
+              "kind": "piecewise_local_swap_hamiltonian",
+              "premise_count": 1,
+              "rule": "swap_spectral_exponential_rule",
+              "subject": "piecewise local Hamiltonian generation of both SWAP layers"
+            }
+          },
+          {
+            "name": "exact_fresh_ancilla_reduced_iteration",
+            "theorem": {
+              "certificate": {
+                "reduced_iteration_residual": "zero"
+              },
+              "data": {
+                "active_chain_supplies_fresh_vacuum": true,
+                "exact": true,
+                "formula": "Tr_(A,B) Ad(V_bal)^n(rho tensor omega_A tensor omega_B)=Phi_h^n(rho)",
+                "spectator_chain_couples_to_system": false,
+                "spectator_product_vacuum_invariant": true,
+                "used_active_cell_revisited": false,
+                "valid_steps": "all finite n >= 0"
+              },
+              "kind": "balanced_ancilla_conveyor_reduced_iteration",
+              "premise_count": 2,
+              "rule": "spectator_counterflow_extension_rule",
+              "subject": "full-noise channel iteration with a spectator inverse-flow chain"
+            }
+          },
+          {
+            "name": "stationary_autonomy_boundary",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "absolute_time_scale_derived": false,
+                "auxiliary_counterflow_is_additional_carrier": true,
+                "exact_finite_depth_local_circuit": true,
+                "exact_piecewise_local_hamiltonian": true,
+                "exact_reduced_channel_iteration": true,
+                "gnvw_obstruction_removed": true,
+                "next_gate": "static_local_hamiltonian_embedding_or_no_go",
+                "single_static_local_hamiltonian_derived": false,
+                "strong_stationary_autonomy_closed": false
+              },
+              "kind": "balanced_conveyor_autonomy_boundary",
+              "premise_count": 2,
+              "rule": "explicit_balanced_autonomy_boundary_rule",
+              "subject": "stationary-autonomy boundary after GNVW index cancellation"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_index_balanced_ancilla_conveyor_gate.tex",
+          "s2t/results/s2t_v8_index_balanced_ancilla_conveyor_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "Индексно-сбалансированный ancilla-конвейер"
+      },
+      {
+        "gate_theorem": {
+          "certificate": {},
+          "data": {
+            "obligation_count": 3,
+            "obligation_kinds": [
+              "balanced_conveyor_bloch_winding",
+              "static_periodic_two_band_logarithm_no_go",
+              "static_conveyor_carrier_boundary"
+            ]
+          },
+          "kind": "verified_gate",
+          "premise_count": 3,
+          "rule": "gate_conjunction_rule",
+          "subject": "version8_static_local_hamiltonian_embedding_or_no_go_gate"
+        },
+        "identifier": "version8_static_local_hamiltonian_embedding_or_no_go_gate",
+        "obligations": [
+          {
+            "name": "exact_bloch_eigenchannel_windings",
+            "theorem": {
+              "certificate": {
+                "active_integral": "-1",
+                "determinant_integral": "0",
+                "spectator_integral": "1"
+              },
+              "data": {
+                "active_eigenvalue_winding": "-1",
+                "bloch_unitary": "diag(exp(-i k), exp(+i k))",
+                "determinant_winding": "0",
+                "individual_band_winding_nontrivial": true,
+                "spectator_eigenvalue_winding": "1",
+                "total_index_trivial": true
+              },
+              "kind": "balanced_conveyor_bloch_winding",
+              "premise_count": 1,
+              "rule": "exact_bloch_winding_integral_rule",
+              "subject": "Bloch eigenchannel windings of the balanced 43-by-43 conveyor"
+            }
+          },
+          {
+            "name": "periodic_static_logarithm_no_go",
+            "theorem": {
+              "certificate": {
+                "periodic_log_winding": "(h(pi)-h(-pi))/(2*pi)=0",
+                "target_windings": "(-1,+1)"
+              },
+              "data": {
+                "assumed_class": "translation-invariant finite-range number-preserving two-chain Hamiltonian",
+                "commutation_consequence": "h(k) diagonal on each nondegenerate interval",
+                "contradiction": true,
+                "exact_static_hamiltonian_exists": false,
+                "nondegenerate_domain": "k not congruent to 0,pi",
+                "periodic_scalar_exponential_winding": 0,
+                "static_bloch_hamiltonian": "continuous periodic 2x2 Hermitian trigonometric polynomial h(k)",
+                "target_active_winding": "-1",
+                "target_spectator_winding": "1",
+                "target_unitary": "exp(-i tau h(k))=diag(exp(-ik),exp(+ik))"
+              },
+              "kind": "static_periodic_two_band_logarithm_no_go",
+              "premise_count": 1,
+              "rule": "periodic_logarithm_winding_obstruction_rule",
+              "subject": "static finite-range number-preserving logarithm on the minimal two-chain carrier"
+            }
+          },
+          {
+            "name": "minimal_carrier_scope_boundary",
+            "theorem": {
+              "certificate": {},
+              "data": {
+                "clock_augmented_static_hamiltonian_excluded": false,
+                "enlarged_local_carrier_required_for_next_test": true,
+                "exact_one_period_readout_required": true,
+                "interacting_static_hamiltonian_excluded": false,
+                "minimal_two_chain_number_preserving_static_model_closed": true,
+                "next_gate": "clock_augmented_static_hamiltonian_conveyor",
+                "piecewise_floquet_model_remains_valid": true
+              },
+              "kind": "static_conveyor_carrier_boundary",
+              "premise_count": 1,
+              "rule": "explicit_no_go_scope_boundary_rule",
+              "subject": "scope boundary between the minimal Bloch no-go and enlarged clock carriers"
+            }
+          }
+        ],
+        "source_paths": [
+          "s2t/gates/version8_static_local_hamiltonian_embedding_or_no_go_gate.tex",
+          "s2t/results/s2t_v8_static_local_hamiltonian_embedding_or_no_go_gate_results.json"
+        ],
+        "status": "lcf-checked",
+        "title": "No-Go статического Hamiltonian на минимальном двухцепочечном носителе"
+      }
+    ],
+    "obligation_count": 165,
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "all_project_audits_formalized": false,
+    "base_gate_template_operational": true,
+    "deterministic_gate_certificates_operational": true,
+    "independent_exact_calculus_result_migrated": true,
+    "next_gate": "version8_clock_augmented_static_hamiltonian_conveyor_gate",
+    "python_kernel_formally_verified": false,
+    "real_project_no_go_migrated": true
+  }
+}

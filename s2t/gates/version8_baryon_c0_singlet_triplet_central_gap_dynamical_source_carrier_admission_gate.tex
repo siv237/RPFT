@@ -1,0 +1,170 @@
+\chapter{Допуск динамического носителя источника центральной щели}
+\label{ch:v8-baryon-c0-singlet-triplet-central-gap-dynamical-source-carrier-admission-gate}
+
+Текущий родитель не содержит линейного источника. Проверим, может ли одна
+новая динамическая вещественная координата породить его как математическое
+ожидание, не вводя внешний член $-j\lambda$.
+
+\section{Минимальный тип носителя}
+
+Пусть $s$ является вещественным семейным и калибровочным синглетом с
+чётной градуировкой:
+\begin{equation}
+ s\in\mathbb R,
+ \qquad \rho_G(g)s=s,
+ \qquad \rho_{SO(3)_{\rm fam}}(R)s=s,
+ \qquad \Gamma_s s=s,
+ \qquad \overline s=s.
+ \label{eq:v8-baryon-c0-dynamic-source-carrier-type}
+\end{equation}
+Рассмотрим функционал без внешнего линейного источника
+\begin{equation}
+ V(\lambda,s)=\frac M2\lambda^2-gs\lambda+\frac u4s^4,
+ \qquad M>0,
+ \qquad u>0,
+ \qquad g\ne0.
+ \label{eq:v8-baryon-c0-dynamic-source-parent}
+\end{equation}
+Исключение $\lambda$ завершением квадрата даёт
+\begin{equation}
+ V=\frac M2\left(\lambda-\frac gM s\right)^2
+ +V_{\rm eff}(s),
+ \qquad
+ V_{\rm eff}(s)=\frac u4s^4-\frac{g^2}{2M}s^2.
+ \label{eq:v8-baryon-c0-dynamic-source-effective-potential}
+\end{equation}
+Таким образом, смешанный член сам индуцирует отрицательную квадратичную
+кривизну для $s$, а квартичный член ограничивает потенциал снизу.
+
+\section{Запуск из нуля}
+
+Гессиан в начале координат равен
+\begin{equation}
+ H_0=\begin{pmatrix}M&-g\\-g&0\end{pmatrix}.
+ \label{eq:v8-baryon-c0-dynamic-source-origin-hessian}
+\end{equation}
+Его определитель строго отрицателен:
+\begin{equation}
+ \det H_0=-g^2<0.
+ \label{eq:v8-baryon-c0-dynamic-source-origin-instability}
+\end{equation}
+Следовательно, нулевая конфигурация является седлом без ручного
+тахионного массового члена. Уравнения стационарности имеют вид
+\begin{equation}
+ M\lambda-gs=0,
+ \qquad
+ us^3-g\lambda=0.
+ \label{eq:v8-baryon-c0-dynamic-source-stationarity}
+\end{equation}
+Кроме нуля существуют две точки, задаваемые точными инвариантами
+\begin{equation}
+ s_*^2=\frac{g^2}{uM},
+ \qquad
+ \lambda_* =\frac gM s_*,
+ \qquad
+ \lambda_*^2=\frac{g^4}{uM^3}.
+ \label{eq:v8-baryon-c0-dynamic-source-nonzero-vacua}
+\end{equation}
+В них индуцированный источник равен $j_*=gs_*$, а энергия понижена:
+\begin{equation}
+ j_*=gs_*,
+ \qquad
+ V(\lambda_*,s_*)=-\frac{g^4}{4uM^2}<0.
+ \label{eq:v8-baryon-c0-dynamic-source-induced-source-energy}
+\end{equation}
+
+Гессиан ненулевого вакуума равен
+\begin{equation}
+ H_*=\begin{pmatrix}
+ M&-g\\
+ -g&3g^2/M
+ \end{pmatrix}.
+ \label{eq:v8-baryon-c0-dynamic-source-vacuum-hessian}
+\end{equation}
+Критерий Сильвестра даёт
+\begin{equation}
+ M>0,
+ \qquad \det H_*=2g^2>0,
+ \qquad H_*>0.
+ \label{eq:v8-baryon-c0-dynamic-source-vacuum-stability}
+\end{equation}
+
+\section{Операторная совместимость и парность}
+
+Для $h^0=\lambda Q$ и $\Gamma_4^0=2Q$ смешанный инвариант имеет вид
+\begin{equation}
+ s\Tr(\Gamma_4^0h^0)=\frac32s\lambda.
+ \label{eq:v8-baryon-c0-dynamic-source-marked-bilinear}
+\end{equation}
+Он сохраняет калибровочную группу, семейное $SO(3)$, grading и Real.
+Однако полный потенциал сохраняет одновременное отражение
+\begin{equation}
+ V(-\lambda,-s)=V(\lambda,s).
+ \label{eq:v8-baryon-c0-dynamic-source-paired-symmetry}
+\end{equation}
+Поэтому динамический носитель создаёт ненулевую щель, но не выбирает один
+из двух знаков.
+
+\section{Минимальность по удалению членов}
+
+Каждый из трёх членов необходим в данной архитектуре:
+\begin{equation}
+ \begin{array}{c|c}
+ M=0 & \text{неограниченность по }\lambda\text{ при }s\ne0,\\
+ g=0 & \lambda_*=s_*=0,\\
+ u=0 & V_{\rm eff}(s)=-g^2s^2/(2M)\text{ не ограничен снизу}.
+ \end{array}
+ \label{eq:v8-baryon-c0-dynamic-source-term-minimality}
+\end{equation}
+Одномерный вещественный носитель минимален по размерности: без новой
+координаты математическое ожидание, заменяющее $j$, отсутствует.
+
+Но нормировка $s$ остаётся координатной. При $s_{\rm new}=cs$, $c>0$,
+\begin{equation}
+ g_{\rm new}=\frac gc,
+ \qquad
+ u_{\rm new}=\frac{u}{c^4},
+ \qquad
+ \frac{g_{\rm new}^4}{u_{\rm new}M^3}
+ =\frac{g^4}{uM^3}.
+ \label{eq:v8-baryon-c0-dynamic-source-normalization-orbit}
+\end{equation}
+Значение щели инвариантно, но сами коэффициенты не определены без метрики
+носителя.
+
+Итоговые реестры равны
+\begin{equation}
+ N_{\rm architecture}=8/8,
+ \qquad
+ N_{\rm origin}=0/4\quad\{\mathbb Rs,M,g,u\}.
+ \label{eq:v8-baryon-c0-dynamic-source-ledgers}
+\end{equation}
+
+\begin{theorem}[Условный динамический запуск центральной щели]
+Функционал $M\lambda^2/2-gs\lambda+us^4/4$ при $M,u>0$ и $g\ne0$
+ограничен снизу, имеет седло в нуле и ровно два ненулевых строгих минимума.
+В них внешний источник заменяется динамическим значением $j_*=gs_*$.
+Архитектура совместима с требуемыми структурными симметриями.
+\end{theorem}
+
+\begin{nogocriterion}[Динамический источник не выбирает ориентацию]
+Парные вакуумы $(s_*,\lambda_*)$ и $(-s_*,-\lambda_*)$ имеют одинаковую
+энергию. Нельзя объявлять знак щели или конкретный носитель выведенным до
+идентификации поля $s$, его следовой метрики и члена, снимающего либо
+физически интерпретирующего эту парность.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item минимальная размерность носителя: \textbf{$1$ вещественная};
+\item внешний линейный источник нужен: \textbf{нет};
+\item нуль является седлом: \textbf{да};
+\item ненулевых строгих минимумов: \textbf{$2$};
+\item индуцированный источник: \textbf{$j_*=gs_*$};
+\item знак щели выбран: \textbf{нет};
+\item условный архитектурный допуск: \textbf{$8/8$};
+\item происхождение носителя и коэффициентов: \textbf{$0/4$};
+\item следующий гейт: \textbf{классификация существующих scalar-носителей}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_dynamical_source_carrier_admission_gate_results.json}.

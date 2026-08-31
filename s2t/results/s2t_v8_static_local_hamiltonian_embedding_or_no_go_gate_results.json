@@ -1,0 +1,39 @@
+{
+  "assumed_static_class": {
+    "bloch_hamiltonian": "continuous periodic Hermitian trigonometric polynomial",
+    "carrier": "minimal active-plus-spectator two-chain single-excitation sector",
+    "finite_range": true,
+    "number_preserving": true,
+    "translation_invariant": true
+  },
+  "date": "2026-08-30",
+  "gate": "version8_static_local_hamiltonian_embedding_or_no_go_gate",
+  "no_go": {
+    "continuous_periodic_static_logarithm": false,
+    "exact_static_hamiltonian_in_assumed_class": false,
+    "periodic_scalar_log_winding": 0,
+    "residual": "winding mismatch",
+    "target_eigenchannel_windings": [
+      -1,
+      1
+    ]
+  },
+  "registry": {
+    "certificate_sha256": "c7e7ceda350979f9457cfa2d87a0a5bca08944e269f3f54fd74d203aef4ac646",
+    "gate_count": 26,
+    "obligation_count": 165
+  },
+  "scope_boundary": {
+    "clock_augmented_static_hamiltonian_excluded": false,
+    "general_interacting_static_hamiltonian_excluded": false,
+    "next_gate": "version8_clock_augmented_static_hamiltonian_conveyor_gate",
+    "piecewise_local_floquet_remains_valid": true
+  },
+  "target": {
+    "active_winding": -1,
+    "bloch_unitary": "diag(exp(-ik),exp(+ik))",
+    "determinant_winding": 0,
+    "gnvw_index": 1,
+    "spectator_winding": 1
+  }
+}

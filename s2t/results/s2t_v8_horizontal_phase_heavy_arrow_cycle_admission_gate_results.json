@@ -1,0 +1,96 @@
+{
+  "cycle_basis": [
+    [
+      0,
+      0,
+      -1,
+      0,
+      0,
+      1,
+      -1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      1,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      1,
+      -1,
+      0,
+      -1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ]
+  ],
+  "date": "2026-08-30",
+  "gate": "version8_horizontal_phase_heavy_arrow_cycle_admission_gate",
+  "horizontal_phase": {
+    "cycle_charges": [
+      0,
+      0,
+      0
+    ],
+    "target_edge_weights": [
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "up_sector_degree": 1,
+    "up_sector_edge_cycle_coordinates": [
+      0,
+      0,
+      0
+    ],
+    "up_sector_edge_index": 0
+  },
+  "next_gate": "version8_horizontal_phase_real_oriented_cycle_admission_gate",
+  "registry": {
+    "certificate_sha256": "481b1e480370f5d8e0a73eb991d6266a062de9a8c06de008f4ed7554257b413f",
+    "gate_count": 43,
+    "obligation_count": 297
+  },
+  "support_graph": {
+    "boundary_rank": 8,
+    "connected_component_count": 1,
+    "cycle_rank": 3,
+    "edge_count": 11,
+    "heavy_edge_count": 4,
+    "heavy_projection_rank": 3,
+    "incidence_cycle_rank": 0,
+    "incidence_edge_count": 7,
+    "vertex_count": 9
+  },
+  "verdict": {
+    "all_independent_cycles_use_heavy_arrows": true,
+    "any_cycle_contains_up_sector_edge": false,
+    "any_cycle_detects_horizontal_phase": false,
+    "heavy_arrows_create_cycles": true,
+    "heavy_cycle_lifts_horizontal_mode": false
+  }
+}

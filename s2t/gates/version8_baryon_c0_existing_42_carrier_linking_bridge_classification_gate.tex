@@ -1,0 +1,99 @@
+\chapter{Классификация linking bridge внутри существующего 42-carrier}
+\label{ch:v8-baryon-c0-existing-42-carrier-linking-bridge-classification-gate}
+
+Минимальный $M_2$-мост должен соединять нейтральную исходную прямую с
+нейтральным auxiliary mass carrier. Проверим, имеется ли такая стрелка в
+уже построенном концевом пространстве. Его gauge-представление разлагается
+как
+\begin{equation}
+ H_{21}=(3,2)_{1/6}\oplus(3,1)_{2/3}\oplus(3,1)_{-1/3}
+ \oplus3(1,2)_{-1/2}\oplus3(1,1)_{-1}.
+ \label{eq:v8-baryon-c0-endpoint-representation-ledger}
+\end{equation}
+Тривиального представления $(1,1)_0$ в этом списке нет, поэтому
+\begin{equation}
+ \operatorname{Hom}_G(\mathbb C_0,H_{21})=0.
+ \label{eq:v8-baryon-c0-neutral-endpoint-hom-zero}
+\end{equation}
+Эквивалентно, генератор гиперзаряда не имеет нулевых диагональных весов и
+удовлетворяет
+\begin{equation}
+ \rank Y=21,
+ \qquad \ker Y=0.
+ \label{eq:v8-baryon-c0-hypercharge-no-neutral-vector}
+\end{equation}
+
+\section{Опорный запрет полного кадра}
+
+Все текущие направления являются матрицами на том же концевом носителе:
+\begin{equation}
+ \mathcal F_{42}=\operatorname{span}_{\mathbb R}\{F_a\}_{a=1}^{42}
+ \subset\operatorname{End}(H_{21}).
+ \label{eq:v8-baryon-c0-existing-frame-ambient-algebra}
+\end{equation}
+После явного добавления одной внешней auxiliary-линии
+$H_{22}=H_{21}\oplus\mathbb C_{\rm aux}$ старый кадр вкладывается как
+\begin{equation}
+ \iota(F)=\begin{pmatrix}F&0\\0&0\end{pmatrix},
+ \qquad
+ P_{\rm aux}=\begin{pmatrix}0_{21}&0\\0&1\end{pmatrix}.
+ \label{eq:v8-baryon-c0-old-frame-zero-extension}
+\end{equation}
+Для любого $X\in\mathcal F_{42}$ точно
+\begin{equation}
+ \iota(X)P_{\rm aux}=0=P_{\rm aux}\iota(X),
+ \qquad
+ P_{\rm aux}\iota(X)^*\iota(X)P_{\rm aux}=0.
+ \label{eq:v8-baryon-c0-old-frame-annihilates-auxiliary-line}
+\end{equation}
+Следовательно, imprimitivity identity
+\begin{equation}
+ E^*E=P_{\rm aux}
+ \label{eq:v8-baryon-c0-required-imprimitivity-identity}
+\end{equation}
+не имеет решения внутри старого 42-мерного span.
+
+\section{Ближайшие нецелевые обходы}
+
+Если auxiliary-линии назначить заряд $-1$, одномерное представление уже
+встречается, но с кратностью три:
+\begin{equation}
+ \dim\operatorname{Hom}_G((1,1)_{-1},H_{21})=3.
+ \label{eq:v8-baryon-c0-charged-singlet-hom-dimension}
+\end{equation}
+Такой мост не нейтрален и не уникален. Ранее найденный единственный
+Real-поддержанный канал также не подходит: он имеет тип
+\begin{equation}
+ Y_R\longrightarrow Q_L\rightsquigarrow u_R,
+ \qquad \rank E_{\rm old}=3,
+ \label{eq:v8-baryon-c0-old-real-channel-rank}
+\end{equation}
+то есть является цветовым триплетным каналом, а не скалярной матричной
+единицей между двумя нейтральными прямыми.
+
+\begin{theorem}[Existing-carrier bridge no-go]
+Текущий 42-мерный кадр не содержит требуемого linking bridge. Во-первых,
+он действует только на $H_{21}$ и аннулирует добавленную auxiliary-линию.
+Во-вторых, $H_{21}$ не содержит нейтрального gauge-синглета, который мог бы
+служить исходным endpoint углом. Ближайшие заряженные или цветные каналы
+имеют неверный тип либо неединственную кратность.
+\end{theorem}
+
+\begin{nogocriterion}[Оболочка не создаёт отсутствующий endpoint]
+Нельзя получить $E^*E=P_{\rm aux}$ линейными комбинациями, произведениями
+или замыканием старых операторов, если вся исходная алгебра действует
+нулём на $\mathbb C_{\rm aux}$. Необходим новый endpoint state и новая
+off-diagonal стрелка.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item нейтральные векторы в $H_{21}$: \textbf{$0$};
+\item старый frame действует на auxiliary line: \textbf{нет};
+\item решений $E^*E=P_{\rm aux}$ в старом span: \textbf{$0$};
+\item заряженный singlet обход: \textbf{кратность $3$, неверный тип};
+\item старый Real-канал: \textbf{ранг $3$, цветной};
+\item следующий гейт: \textbf{минимальное нейтральное endpoint-расширение}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_existing_42_carrier_linking_bridge_classification_gate_results.json}.

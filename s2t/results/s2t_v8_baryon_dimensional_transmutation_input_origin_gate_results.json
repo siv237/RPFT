@@ -1,0 +1,44 @@
+{
+  "c0_boundary": {
+    "moment_map_level_may_be_renamed_c0": false,
+    "typed_hidden_to_baryon_map_found": false
+  },
+  "completed_full_inputs": 0,
+  "date": "2026-08-30",
+  "floating_point_values": 0,
+  "full_B_boundary": {
+    "negative_unspecified_completion_witness": -1,
+    "numerator": "67+c_sigma**2+delta_kk",
+    "positive_unspecified_completion_witness": 67,
+    "sign_fixed_without_full_lift": false
+  },
+  "full_input_requirements": {
+    "absolute_DT_scale_selected": false,
+    "full_B_computed_and_positive": false,
+    "internal_c0_map_derived": false
+  },
+  "gate": "version8_baryon_dimensional_transmutation_input_origin_gate",
+  "inherited_exact_blocks": {
+    "B_finite": "5/(8*pi**2)",
+    "B_zero": "67/(64*pi**2)",
+    "B_zero_positive": true,
+    "finite_numerator": 40,
+    "gauge_BV_numerator": 27,
+    "landau_log_ratio": "32*pi**2/3",
+    "one_loop_b": 2,
+    "zero_mode_numerator": 67
+  },
+  "next_gate": "version8_baryon_c0_typed_internal_map_candidate_audit_gate",
+  "rg_boundary": {
+    "absolute_scale_fixed": false,
+    "dimensionless_ratio_fixed": true,
+    "scale_orbit": "(mu,Lambda_DT)->(s*mu,s*Lambda_DT)",
+    "spectral_matching_g_squared": "3/8"
+  },
+  "total_full_inputs": 3,
+  "verdict": {
+    "dimensional_transmutation_selector_closed": false,
+    "early_level_work_reused": true,
+    "two_dimensionless_subblocks_closed": true
+  }
+}

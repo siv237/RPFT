@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-29",
+  "extension_family": {
+    "V_z_W_equals_W": true,
+    "complex_ambiguity": "U(1)",
+    "condition": "abs(z)=1",
+    "formula": "V_z=P_W+z(I-P_W), U_z=V_z U_0",
+    "full_family_real_parameter_dimension": 63504,
+    "full_unconstrained_family": "U(252)",
+    "gauge_covariant": true,
+    "real_even_ambiguity_at_least": 2,
+    "real_even_survivors": [
+      "z=+1",
+      "z=-1"
+    ],
+    "same_reduced_Kraus_channel": true
+  },
+  "gate": "version8_canonical_autonomous_clock_unitary_extension_no_go_gate",
+  "interpretation_boundary": {
+    "additive_Page_Wootters_constraint_selected": false,
+    "canonical_clock_hamiltonian_log_U_selected": false,
+    "channel_selects_unique_full_unitary": false,
+    "finite_history_parent_exists": true,
+    "gauge_covariance_selects_unique_full_unitary": false,
+    "physical_tick_duration_selected": false,
+    "real_and_even_typing_select_unique_full_unitary": false
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "794711ce9cb78bebc641937e41bb11bbfa249b61c73d4a721d21dc381388f857",
+    "gate_count": 14,
+    "obligation_count": 4,
+    "status": "lcf-checked",
+    "total_obligation_count": 92
+  },
+  "stinespring_input": {
+    "ambient_dimension": 273,
+    "complement_dimension": 252,
+    "environment_dimension": 13,
+    "gauge_covariant_isometry": true,
+    "image_dimension": 21,
+    "minimal_environment": true,
+    "system_dimension": 21
+  },
+  "verdict": {
+    "canonical_autonomous_clock_unitary_derived": false,
+    "finite_conditional_history_bridge_remains_valid": true,
+    "next_gate": "microscopic_interaction_hamiltonian_or_clock_action_origin_gate",
+    "nonuniqueness_survives_gauge_real_and_even_constraints": true,
+    "status": "lcf_checked_covariant_autonomous_clock_unitary_no_go"
+  }
+}

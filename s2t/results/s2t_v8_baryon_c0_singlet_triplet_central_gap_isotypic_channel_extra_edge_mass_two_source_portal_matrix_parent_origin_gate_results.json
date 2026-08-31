@@ -1,0 +1,190 @@
+{
+  "central_charge_vectors": {
+    "Y": [
+      0,
+      -3
+    ],
+    "d": [
+      -1,
+      1
+    ],
+    "u": [
+      1,
+      1
+    ]
+  },
+  "coefficient_tests": {
+    "carrier_vacuum_values": [
+      3,
+      2
+    ],
+    "single_common_coefficient_covers_source_plane": false,
+    "single_common_coefficient_rays": [
+      [
+        -3,
+        -3
+      ],
+      [
+        -2,
+        -7
+      ],
+      [
+        -1,
+        5
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        -7
+      ],
+      [
+        3,
+        -3
+      ]
+    ],
+    "two_coefficient_absolute_determinants": [
+      108,
+      162
+    ],
+    "two_independent_coefficients_rank_two_for_distinct_sectors": true
+  },
+  "date": "2026-08-31",
+  "direct_sum_test": {
+    "mixed_portal_hessian": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "moment_additive": true,
+    "portal_generated": false
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_portal_matrix_parent_origin_gate",
+  "incidence_assignment_classification": {
+    "assignments": {
+      "B->Y,M->Y": {
+        "determinant": "0",
+        "rank": 1,
+        "single_coefficient_ray": [
+          0,
+          -15
+        ]
+      },
+      "B->Y,M->d": {
+        "determinant": "-3",
+        "rank": 2,
+        "single_coefficient_ray": [
+          -2,
+          -7
+        ]
+      },
+      "B->Y,M->u": {
+        "determinant": "3",
+        "rank": 2,
+        "single_coefficient_ray": [
+          2,
+          -7
+        ]
+      },
+      "B->d,M->Y": {
+        "determinant": "3",
+        "rank": 2,
+        "single_coefficient_ray": [
+          -3,
+          -3
+        ]
+      },
+      "B->d,M->d": {
+        "determinant": "0",
+        "rank": 1,
+        "single_coefficient_ray": [
+          -5,
+          5
+        ]
+      },
+      "B->d,M->u": {
+        "determinant": "-2",
+        "rank": 2,
+        "single_coefficient_ray": [
+          -1,
+          5
+        ]
+      },
+      "B->u,M->Y": {
+        "determinant": "-3",
+        "rank": 2,
+        "single_coefficient_ray": [
+          3,
+          -3
+        ]
+      },
+      "B->u,M->d": {
+        "determinant": "2",
+        "rank": 2,
+        "single_coefficient_ray": [
+          1,
+          5
+        ]
+      },
+      "B->u,M->u": {
+        "determinant": "0",
+        "rank": 1,
+        "single_coefficient_ray": [
+          5,
+          5
+        ]
+      }
+    },
+    "determinant_values": [
+      -3,
+      -2,
+      0,
+      2,
+      3
+    ],
+    "ordered_assignments": 9,
+    "rank_one_assignments": 3,
+    "rank_two_assignments": 6
+  },
+  "ledgers": {
+    "conditional_operator_shape_satisfied": 7,
+    "conditional_operator_shape_tested": 7,
+    "incidence_selector_satisfied": 0,
+    "incidence_selector_tested": 5,
+    "parent_origin_satisfied": 0,
+    "parent_origin_tested": 4
+  },
+  "minimal_common_block": {
+    "cubic_trace": "d lambda^3+3 lambda Tr(FF*)",
+    "even_moments_generate_linear_portal": false,
+    "linear_portal_coefficient": 3,
+    "operator": "[[lambda I,F],[F*,0]]"
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_assignment_selector_gate",
+  "parent_origin": {
+    "incidence_assignment_selected": false,
+    "inherited_odd_coefficients": [
+      0,
+      0,
+      0
+    ],
+    "normalization_selected": false,
+    "typed_common_block_present": false
+  },
+  "verdict": {
+    "direct_sum_sufficient": false,
+    "full_rank_portal_conditionally_realizable": true,
+    "inherited_parent_generates_portal": false,
+    "one_common_cubic_coefficient_sufficient_for_arbitrary_sources": false,
+    "portal_matrix_derived": false,
+    "two_independent_cubic_coefficients_sufficient_conditionally": true
+  }
+}

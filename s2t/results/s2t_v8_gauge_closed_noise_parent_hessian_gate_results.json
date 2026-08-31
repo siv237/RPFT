@@ -1,0 +1,307 @@
+{
+  "classical_slice_gauge_closure": {
+    "finite_gauge_samples": [
+      {
+        "maximum_residual": 0.9140173851128464,
+        "sample": 0
+      },
+      {
+        "maximum_residual": 0.6845708618808057,
+        "sample": 1
+      },
+      {
+        "maximum_residual": 1.2712825156734668,
+        "sample": 2
+      },
+      {
+        "maximum_residual": 0.8897514245981482,
+        "sample": 3
+      },
+      {
+        "maximum_residual": 0.2317114260371149,
+        "sample": 4
+      },
+      {
+        "maximum_residual": 0.6180524782774551,
+        "sample": 5
+      },
+      {
+        "maximum_residual": 0.5681581386117196,
+        "sample": 6
+      },
+      {
+        "maximum_residual": 0.7018610086728124,
+        "sample": 7
+      },
+      {
+        "maximum_residual": 1.4798781213574639,
+        "sample": 8
+      },
+      {
+        "maximum_residual": 0.7204644792518037,
+        "sample": 9
+      },
+      {
+        "maximum_residual": 1.305094085688095,
+        "sample": 10
+      },
+      {
+        "maximum_residual": 1.4386976460911065,
+        "sample": 11
+      }
+    ],
+    "maximum_residual": 1.4798781213574639,
+    "old_27D_field_slice_is_full_gauge_invariant": false
+  },
+  "completion_nonuniqueness": {
+    "old_seven_mode_selector_recovered_without_new_input": false,
+    "probe": "H_transfer(lambda)=0.5 H_relative_Gram + lambda I_30",
+    "qualitative_origin_signature_depends_on_completion": true,
+    "scan": [
+      {
+        "origin_maximum_eigenvalue": -1.5379457306026276,
+        "origin_minimum_eigenvalue": -4.737404816816344,
+        "origin_signature": [
+          30,
+          0,
+          0
+        ],
+        "undetermined_scalar_transfer_mass": 0.0,
+        "vacuum_minimum_eigenvalue": 2.489333613976523e-16,
+        "vacuum_signature": [
+          0,
+          2,
+          28
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": -1.4379457306026284,
+        "origin_minimum_eigenvalue": -4.637404816816342,
+        "origin_signature": [
+          30,
+          0,
+          0
+        ],
+        "undetermined_scalar_transfer_mass": 0.1,
+        "vacuum_minimum_eigenvalue": 0.10000000000000002,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": -0.5379457306026285,
+        "origin_minimum_eigenvalue": -3.737404816816344,
+        "origin_signature": [
+          30,
+          0,
+          0
+        ],
+        "undetermined_scalar_transfer_mass": 1.0,
+        "vacuum_minimum_eigenvalue": 0.9999999999999991,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": 1.4620542693973715,
+        "origin_minimum_eigenvalue": -1.7374048168163436,
+        "origin_signature": [
+          6,
+          14,
+          10
+        ],
+        "undetermined_scalar_transfer_mass": 3.0,
+        "vacuum_minimum_eigenvalue": 2.999999999999998,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": 2.4620542693973717,
+        "origin_minimum_eigenvalue": -0.7374048168163434,
+        "origin_signature": [
+          2,
+          0,
+          28
+        ],
+        "undetermined_scalar_transfer_mass": 4.0,
+        "vacuum_minimum_eigenvalue": 3.999999999999999,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": 3.4620542693973726,
+        "origin_minimum_eigenvalue": 0.2625951831836565,
+        "origin_signature": [
+          0,
+          0,
+          30
+        ],
+        "undetermined_scalar_transfer_mass": 5.0,
+        "vacuum_minimum_eigenvalue": 4.999999999999997,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": 8.462054269397374,
+        "origin_minimum_eigenvalue": 5.262595183183654,
+        "origin_signature": [
+          0,
+          0,
+          30
+        ],
+        "undetermined_scalar_transfer_mass": 10.0,
+        "vacuum_minimum_eigenvalue": 9.999999999999998,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "origin_maximum_eigenvalue": 98.46205426939738,
+        "origin_minimum_eigenvalue": 95.26259518318363,
+        "origin_signature": [
+          0,
+          0,
+          30
+        ],
+        "undetermined_scalar_transfer_mass": 100.0,
+        "vacuum_minimum_eigenvalue": 99.99999999999991,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      }
+    ]
+  },
+  "date": "2026-08-29",
+  "gate": "version8_gauge_closed_noise_parent_hessian_gate",
+  "gauge_noise_parent_coverage": {
+    "a_27_by_27_parent_hessian_is_well_typed": false,
+    "common_field_space_identification_exists": false,
+    "common_physical_gauge_anchor_admitted": false,
+    "full_spacetime_gauge_kinetic_trace_obtained": false,
+    "gauge_noise_dimension": 12,
+    "gauge_noise_role": "endpoint Lie-algebra Lindblad operators on observables",
+    "tome7_parent_field_role": "finite transfer map A:C11->C10"
+  },
+  "inherited_parent_hessian": {
+    "edge_selector_has_canonical_extension_to_noise_space": false,
+    "old_field_origin_signature": [
+      7,
+      0,
+      20
+    ],
+    "old_field_vacuum_minimum_eigenvalue": 5.600000000000001,
+    "old_field_vacuum_signature": [
+      0,
+      0,
+      27
+    ],
+    "reason": "the edge selector is specified on a non-gauge-closed 27D real field slice, not on the 30D realified transfer-noise module",
+    "relative_gram_term_on_30D_noise_origin_signature": [
+      30,
+      0,
+      0
+    ],
+    "relative_gram_term_on_30D_noise_vacuum_signature": [
+      0,
+      2,
+      28
+    ],
+    "relative_gram_term_vacuum_kernel_dimension": 2
+  },
+  "space_type_audit": {
+    "classical_only_real_dimension": 4,
+    "classical_tome7_field_slice_real_dimension": 27,
+    "either_space_contains_the_other": false,
+    "gauge_closed_transfer_noise_complex_dimension": 15,
+    "gauge_closed_transfer_noise_realification_dimension": 30,
+    "intersection_real_dimension": 23,
+    "noise_only_real_dimension": 7,
+    "principal_singular_values": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.1195292116e-16,
+      8.82814137502e-17,
+      6.27684545773e-17,
+      3.27309269477e-17
+    ],
+    "root_projection_residuals": [
+      {
+        "relative_residual_outside_noise_transfer_space": 6.612604077080686e-16,
+        "root_index": 0
+      },
+      {
+        "relative_residual_outside_noise_transfer_space": 0.5,
+        "root_index": 1
+      },
+      {
+        "relative_residual_outside_noise_transfer_space": 0.8660254037844386,
+        "root_index": 2
+      },
+      {
+        "relative_residual_outside_noise_transfer_space": 0.816496580927726,
+        "root_index": 3
+      },
+      {
+        "relative_residual_outside_noise_transfer_space": 0.9128709291752768,
+        "root_index": 4
+      },
+      {
+        "relative_residual_outside_noise_transfer_space": 0.9128709291752768,
+        "root_index": 5
+      },
+      {
+        "relative_residual_outside_noise_transfer_space": 0.816496580927726,
+        "root_index": 6
+      }
+    ],
+    "spaces_are_equal": false,
+    "union_real_dimension": 34
+  },
+  "verdict": {
+    "failure_is_instability": false,
+    "failure_is_space_type_and_completion_nonuniqueness": true,
+    "full_27D_noise_parent_hessian_obtained": false,
+    "gauge_closed_noise_module_inherits_unique_parent_hessian": false,
+    "next_gate": "version8_gauge_closed_field_space_superconnection_gate",
+    "old_tome7_hessian_remains_valid_on_old_field_slice": true,
+    "status": "parent_hessian_type_mismatch_and_gauge_closed_completion_no_go"
+  }
+}

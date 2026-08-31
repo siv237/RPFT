@@ -1,0 +1,75 @@
+\chapter{Запрет абсолютного масштаба времени полного шумового процесса}
+\label{ch:v8-full-noise-physical-time-scale-no-go-gate}
+
+Полный 42-скачковый генератор и его звёздный гамильтониан фиксируют форму
+безразмерной динамики, но допускают положительное преобразование
+\begin{equation}
+ H_{\rm int}^{42}\longmapsto gH_{\rm int}^{42},
+ \qquad
+ \mathcal L_{42}\longmapsto g^2\mathcal L_{42}.
+\end{equation}
+Одновременная замена физического параметра
+\begin{equation}
+ t_{\rm phys}\longmapsto \frac{t_{\rm phys}}{g^2}
+\end{equation}
+оставляет произведение $g^2t_{\rm phys}$ и полугруппу
+$\exp(g^2t_{\rm phys}\mathcal L_{42})$ неизменными. Поэтому операторная
+геометрия видит орбиту калибровок, а не выделенную секунду.
+
+Постоянная Планка сама по себе не снимает эту свободу. После независимого
+задания размерной энергии $E_*$ возникает единица
+\begin{equation}
+ t_*=\frac{\hbar}{E_*},
+ \qquad E_*t_*=\hbar,
+\end{equation}
+но в модели повторных взаимодействий необходимо также типизированно связать
+$E_*$ с амплитудой взаимодействия и расписанием соударений. Старые массы,
+обрезание или наблюдаемые нельзя переносить в этот генератор без отдельного
+моста происхождения.
+
+Это согласуется со строгими пределами повторные взаимодействия: непрерывный
+генератор зависит от совместного масштабирования длительности шага и силы
+взаимодействия \cite{AttalPautrat2006,AttalJoye2007}. Автономные часы,
+кроме того, требуют неравновесного ресурса, а их точность связана с
+диссипацией \cite{ErkerEtAl2017}.
+
+\begin{theorem}[Точная орбита временных калибровок]
+Для полного звёздного взаимодействия преобразование
+$(H_{\rm int}^{42},t_{\rm phys})\mapsto
+(gH_{\rm int}^{42},t_{\rm phys}/g^2)$ сохраняет безразмерную динамику.
+\end{theorem}
+
+\begin{nogocriterion}[Абсолютная секунда не выведена]
+Ни полнота 42-мерного шумового кадра, ни примитивность, ни минимальная
+43-мерная среда не выбирают $g$. До независимого размерного якоря и
+расписания столкновений физическое время определено лишь с точностью до
+положительного общего масштаба.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item форма $\mathcal L_{42}$: \textbf{фиксирована};
+ \item масштабирование скорости: \textbf{$g^2$};
+ \item инвариант: \textbf{$g^2t_{\rm phys}$};
+ \item абсолютная секунда: \textbf{не фиксирована};
+ \item $\hbar$ без $E_*$: \textbf{недостаточно};
+ \item старый масса/обрезание без типизированный мост: \textbf{не допускается};
+ \item следующий гейт: \textbf{типизированный энергетически-скоростной якорь полного
+       шумового генератора}.
+\end{enumerate}
+\end{protocol}
+
+\begin{thebibliography}{9}
+\bibitem{AttalPautrat2006}
+S.~Attal, Y.~Pautrat,
+\emph{From repeated to continuous quantum interactions},
+Ann. Henri Poincar\'e 7 (2006), 59--104; arXiv:math-ph/0311002.
+\bibitem{AttalJoye2007}
+S.~Attal, A.~Joye,
+\emph{Weak Coupling and Continuous Limits for Repeated Quantum Interactions},
+J. Stat. Phys. 126 (2007), 1241--1283; arXiv:math-ph/0501012.
+\bibitem{ErkerEtAl2017}
+P.~Erker et al.,
+\emph{Autonomous quantum clocks: does thermodynamics limit our ability to
+measure time?}, Phys. Rev. X 7 (2017), 031022; arXiv:1609.06704.
+\end{thebibliography}

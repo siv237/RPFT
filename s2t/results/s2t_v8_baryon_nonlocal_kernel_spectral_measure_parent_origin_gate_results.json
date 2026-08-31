@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-30",
+  "field": "Q(z,q,mass_sq,lambda_3) with algebraic sqrt(coupling_sq)",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_nonlocal_kernel_spectral_measure_parent_origin_gate",
+  "input_certificates": {
+    "base_scale_no_go": {
+      "path": "s2t/results/s2t_v8_full_field_a4_dirac_lift_origin_gate_results.json",
+      "sha256": "695519f50ce5bd8803946efe42a176616cb74b86769484753553b250065dedf3"
+    },
+    "nonlocal_admission": {
+      "path": "s2t/results/s2t_v8_baryon_nonlocal_six_point_kernel_admission_gate_results.json",
+      "sha256": "fb00ded2b3948e0c1aa7cdcc50ff774c6ac3ed63c6975c9ed4ef6ab299106eff"
+    }
+  },
+  "next_gate": "version8_baryon_spectral_scale_anchor_candidate_audit_gate",
+  "scale_orbit": {
+    "base_dirac_scale_selected_by_finite_parent": false,
+    "scaled_form_factor": "mass_sq*q/(mass_sq*q + z)",
+    "slope_at_zero": "-1/(q*mass_sq)",
+    "static_coefficient_preserved": true,
+    "transformation": "mass_sq -> q*mass_sq, coupling_sq -> q*coupling_sq",
+    "witness_at_z_equal_mass_sq": {
+      "q=1": "1/2",
+      "q=2": "2/3"
+    }
+  },
+  "single_auxiliary_parent": {
+    "action": "(z+mass_sq)*auxiliary^2/2-sqrt(coupling_sq)*auxiliary*source",
+    "effective_schur_term": "-coupling_sq*source**2/(2*(mass_sq + z))",
+    "positive_auxiliary_hessian_for_nonnegative_z": true,
+    "stationary_auxiliary": "sqrt(coupling_sq)*source/(mass_sq + z)"
+  },
+  "static_matching": {
+    "condition": "coupling_sq=lambda_3*mass_sq",
+    "normalized_form_factor": "mass_sq/(mass_sq + z)",
+    "static_value": "1"
+  },
+  "verdict": {
+    "current_finite_parent_selects_spectral_measure": false,
+    "nonlocal_kernel_parent_origin": "NO-GO without an independent base-scale selector",
+    "single_auxiliary_parent_realizes_one_pole_kernel": true,
+    "spectral_scale_orbit_dimension_at_least": 1,
+    "static_matching_selects_spectral_mass": false
+  }
+}

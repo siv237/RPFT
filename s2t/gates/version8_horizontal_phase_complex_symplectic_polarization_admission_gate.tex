@@ -1,0 +1,131 @@
+\chapter{Допуск комплексной симплектической поляризации}
+\label{ch:v8-horizontal-phase-complex-symplectic-polarization-admission-gate}
+
+Real-завершение не создаёт независимой обратной стрелки. Проверим теперь
+более широкую возможность: допускает ли сам двадцатимерный комплексный
+носитель переноса калибровочно-инвариантную невырожденную кососимметрическую
+форму.
+
+По полным концевым меткам его представление раскладывается как
+\begin{equation}
+ \mathcal T_{20}
+ \simeq H_+\oplus H_-^{\oplus4}
+ \oplus C_+\oplus C_-\oplus S_0^{\oplus4},
+ \label{eq:v8-symplectic-transfer-decomposition}
+\end{equation}
+где
+\begin{equation}
+ H_+=(\mathbf1,\mathbf2)_{1/2},\quad
+ H_-=(\mathbf1,\mathbf2)_{-1/2},\quad
+ C_+=(\mathbf3,\mathbf1)_{2/3},\quad
+ C_-=(\overline{\mathbf3},\mathbf1)_{-2/3},\quad
+ S_0=(\mathbf1,\mathbf1)_0.
+ \label{eq:v8-symplectic-transfer-irreps}
+\end{equation}
+Размерности дают $2+8+3+3+4=20$.
+
+Инвариантная кососимметрическая форма может спаривать только двойственные
+изотипические компоненты. Поэтому пространство допустимых форм имеет
+точную размерность
+\begin{equation}
+ \dim\bigl(\Lambda^2\mathcal T_{20}^*\bigr)^G
+ =1\cdot4+1\cdot1+\binom42=11.
+ \label{eq:v8-symplectic-invariant-form-dimension}
+\end{equation}
+Это число независимо воспроизведено как нульность точной системы размера
+$5600\times190$, полученной из условий
+\begin{equation}
+ \rho(X)^{\mathsf T}\Omega+\Omega\rho(X)=0,
+ \qquad \Omega^{\mathsf T}=-\Omega,
+ \label{eq:v8-symplectic-invariance-system}
+\end{equation}
+для четырнадцати образующих комплексифицированного калибровочного действия.
+
+Существование ненулевых форм не означает существования симплектической
+структуры. Слабые двойственные кратности равны $1:4$, поэтому их вклад в
+ранг не превосходит $4$. Цветная пара даёт ранг $6$, четыре нейтральных
+синглета --- ранг $4$. Следовательно,
+\begin{equation}
+ \rank\Omega\leq4+6+4=14,
+ \qquad
+ \dim\ker\Omega\geq20-14=6.
+ \label{eq:v8-symplectic-rank-radical-bound}
+\end{equation}
+Точный общий представитель одиннадцатипараметрического пространства имеет
+ранг $14$, так что оценка достигается и является строгой.
+
+Поляризация также не единственна. Например, можно спарить $H_+$ с первой
+или со второй из четырёх копий $H_-$. Обе формы калибровочно-инвариантны,
+кососимметричны и имеют ранг $14$, но различны:
+\begin{equation}
+ \Omega_1\neq\Omega_2,
+ \qquad
+ \rank\Omega_1=\rank\Omega_2=14.
+ \label{eq:v8-symplectic-two-polarizations}
+\end{equation}
+
+Есть и второй независимый запрет. Для одного бозонного поля с коммутирующими
+координатами любая такая форма даёт
+\begin{equation}
+ \Phi^{\mathsf T}\Omega\Phi=0.
+ \label{eq:v8-symplectic-bosonic-self-contraction}
+\end{equation}
+Ненулевой голоморфный скаляр потребовал бы второго независимого поля либо
+некоммутирующих или грассмановых координат.
+
+Минимальная невырожденная достройка обязана уравнять слабые кратности. Для
+этого недостаёт трёх копий $H_+$, то есть
+\begin{equation}
+ \Delta\dim_{\mathbb C}=3\cdot2=6,
+ \qquad
+ \dim_{\mathbb C}\mathcal T_{\rm symp}=26.
+ \label{eq:v8-symplectic-minimal-completion}
+\end{equation}
+Эти шесть комплексных направлений не содержатся в нынешнем концевом
+носителе и требуют нового допуска.
+
+\begin{theorem}[Вырожденное семейство инвариантных форм]
+На полном двадцатимерном носителе существует одиннадцатимерное пространство
+калибровочно-инвариантных кососимметрических форм. Ни одна из них не является
+невырожденной: максимальный ранг равен $14$, а минимальный радикал имеет
+размерность $6$. Калибровочная симметрия не выбирает единственную форму.
+\end{theorem}
+
+\begin{nogocriterion}[No-go текущей симплектической поляризации]
+Нельзя объявлять одну из одиннадцати форм канонической и нельзя использовать
+$\Phi^{\mathsf T}\Omega\Phi$ как фазовую массу: эта свёртка тождественно
+нулевая. Невырожденная симплектическая архитектура требует как минимум шесть
+новых комплексных слабых двойственных направлений и отдельного второго
+поля либо отображения момента.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item комплексная размерность носителя: \textbf{$20$};
+ \item инвариантных кососимметрических форм: \textbf{$11$};
+ \item максимальный ранг формы: \textbf{$14$};
+ \item минимальная размерность радикала: \textbf{$6$};
+ \item две различные максимальные формы: \textbf{предъявлены};
+ \item каноническая поляризация: \textbf{не выбрана};
+ \item бозонная самосвёртка: \textbf{$0$};
+ \item недостающие двойственные направления: \textbf{$6$ комплексных};
+ \item минимальная симплектическая достройка: \textbf{$26$ комплексных};
+ \item подъём горизонтальной моды на текущем носителе: \textbf{нет};
+ \item следующий гейт: \textbf{концевой допуск минимальной симплектической
+ достройки}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_horizontal_phase_complex_symplectic_polarization_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-symplectic-quiver-moment-map}
+M.~Harada, G.~Wilkin,
+\emph{Morse theory of the moment map for representations of quivers},
+Geom. Dedicata 150 (2011), 307--353; arXiv:0807.4734.
+\bibitem{v8-symplectic-preprojective}
+W.~Crawley-Boevey,
+\emph{Poisson structures on moduli spaces of representations},
+J. Algebra 325 (2011), 205--215; arXiv:math/0502301.
+\end{thebibliography}

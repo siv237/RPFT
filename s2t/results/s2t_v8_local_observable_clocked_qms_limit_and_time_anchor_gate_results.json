@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-30",
+  "error_decomposition": {
+    "accumulated_clock_error": "n A exp(-c d)",
+    "clock_error_per_step": "epsilon_d <= A exp(-c d)",
+    "collision_discretisation_bound": "C_u/n",
+    "collision_step": "h=u/n",
+    "total_reduced_error": "epsilon_(n,d) <= C_u/n + n A exp(-c d)"
+  },
+  "gate": "version8_local_observable_clocked_qms_limit_and_time_anchor_gate",
+  "joint_limit": {
+    "alpha": "alpha>0",
+    "clock_schedule": "d_n >= (1+alpha) log(n)/c",
+    "continuous_dimensionless_qms_recovered": true,
+    "dimension_growth": "O(log n)",
+    "limit": "epsilon_(n,d_n) -> 0 as n -> infinity",
+    "substituted_error_bound": "epsilon_(n,d_n) <= C_u/n + A/n^alpha"
+  },
+  "reduced_observable_limit": {
+    "clock_dimension_diverges_logarithmically": true,
+    "convergence_scope": "finite system observables and finite ancilla cylinders",
+    "fresh_ancilla_reset_external": false,
+    "global_infinite_chain_state_norm_convergence": false,
+    "preloaded_conveyor_used": true,
+    "reduced_qms_limit": true
+  },
+  "registry": {
+    "certificate_sha256": "7bf2e4158944b61240ebd31886c98892f64c38ba9a7c42c18101b4392df86294",
+    "gate_count": 29,
+    "obligation_count": 177
+  },
+  "time_scale_boundary": {
+    "absolute_second_selected": false,
+    "autonomous_dimensionless_time_recovered": true,
+    "clock_invariant": "Omega t_phys",
+    "common_rescaling": "(Omega,Gamma,t) -> (lambda Omega,lambda Gamma,t/lambda)",
+    "dissipative_invariant": "Gamma t_phys",
+    "next_gate": "typed_clock_energy_to_noise_rate_anchor",
+    "relative_rate": "Gamma/Omega",
+    "required_anchor": "one independently fixed clock energy or decay rate"
+  }
+}

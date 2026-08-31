@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-30",
+  "finite_volume": {
+    "clock_dimension": "d",
+    "composition_error_bound": "epsilon_global <= 2 L A exp(-c d)",
+    "exact_finite_clock_control_derived": false,
+    "finite_volume_arbitrary_accuracy": true,
+    "local_operation_count": "N_L=2L",
+    "single_control_error_bound": "epsilon_d <= A exp(-c d)"
+  },
+  "gate": "version8_bounded_strength_autonomous_clock_thermodynamic_limit_gate",
+  "global_boundary": {
+    "exact_global_conveyor_from_quasi_ideal_clock": false,
+    "fixed_dimension_certificate_uniform_in_L": false,
+    "global_channel_norm_limit_requires_growing_clock_resource": true,
+    "reason": "the available upper-bound proof scales as L epsilon_d",
+    "universal_autonomous_clock_no_go": false
+  },
+  "local_observable_limit": {
+    "absolute_tick_duration_derived": false,
+    "finite_time_causal_gate_count": "N_loc independent of L",
+    "global_norm_thermodynamic_approximation_derived": false,
+    "local_error_bound": "epsilon_local <= N_loc A exp(-c d)",
+    "local_thermodynamic_approximation_admitted": true,
+    "next_gate": "local_observable_clocked_qms_limit_and_time_anchor",
+    "observable_support": "finite"
+  },
+  "registry": {
+    "certificate_sha256": "9af7daaa9cc975ffcbd6c84428651e276f2cf224e7fbe5e429cf3c180e9ca844",
+    "gate_count": 28,
+    "obligation_count": 173
+  },
+  "resource_schedule": {
+    "assumed_clock_energy": "E_d <= E_0 d",
+    "dimension_independent_of_volume": false,
+    "finite_volume_autonomous_approximation_admitted": true,
+    "sufficient_dimension": "d >= log(2 A L/delta)/c",
+    "sufficient_energy_scaling": "E_d = O(log(L/delta))",
+    "target_error": "delta in (0,1)"
+  }
+}

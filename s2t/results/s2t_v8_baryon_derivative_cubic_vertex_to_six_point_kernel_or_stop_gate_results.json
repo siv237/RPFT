@@ -1,0 +1,53 @@
+{
+  "commutator_tensor": {
+    "antisymmetric_in_last_two_indices": true,
+    "definition": "C_abc=Tr(Fhat_a[Fhat_b,Fhat_c])",
+    "full_symmetrization_zero": true,
+    "nonzero_unordered": 116,
+    "support": {
+      "GGG": 10,
+      "TGG": 0,
+      "TTG": 106,
+      "TTT": 0
+    }
+  },
+  "comparison": {
+    "all_symmetric_support_has_zero_commutator_color": true,
+    "derivative_channels_have_commutator_color": true,
+    "derivative_channels_linear_in_momentum": true,
+    "static_W3_nonzero": true,
+    "support_intersection_count": 0,
+    "zero_momentum_derivative_kernel": 0
+  },
+  "date": "2026-08-30",
+  "enumeration": {
+    "floating_point_values": 0,
+    "frame_dimension": 42,
+    "unordered_triples": 13244
+  },
+  "field": "Q(i)",
+  "gate": "version8_baryon_derivative_cubic_vertex_to_six_point_kernel_or_stop_gate",
+  "next_gate": "version8_baryon_nonlocal_six_point_kernel_admission_gate",
+  "symmetric_trace_tensor": {
+    "definition": "d_abc=Tr(Fhat_a{Fhat_b,Fhat_c})/2",
+    "nonzero_unordered": 168,
+    "support": {
+      "GGG": 28,
+      "TGG": 0,
+      "TTG": 140,
+      "TTT": 0
+    }
+  },
+  "verdict": {
+    "coefficient_or_nonlocal_kernel_derived": false,
+    "derivative_branch_status": "STOP",
+    "derivative_local_branch_reproduces_W3": false,
+    "nonlocal_six_point_kernel_required_for_static_W3": true
+  },
+  "witnesses": {
+    "C_0_1_41": "I",
+    "C_30_31_32": "16*I",
+    "d_0_0_40": "-1",
+    "d_30_30_37": "8"
+  }
+}

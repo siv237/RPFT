@@ -1,0 +1,68 @@
+{
+  "date": "2026-08-30",
+  "field": "Q(alpha,beta), no Float inputs",
+  "gate": "version8_baryon_spatial_ground_state_symmetry_origin_gate",
+  "ground_branch_countermodels": {
+    "sign_ground": {
+      "alpha": 1,
+      "beta": 0,
+      "ground_type": "sign",
+      "ground_verified": true,
+      "levels": {
+        "sign": "-3",
+        "standard": "0",
+        "trivial": "3"
+      }
+    },
+    "standard_ground": {
+      "alpha": 0,
+      "beta": 1,
+      "ground_type": "standard",
+      "ground_verified": true,
+      "levels": {
+        "sign": "2",
+        "standard": "-1",
+        "trivial": "2"
+      }
+    },
+    "symmetric_ground": {
+      "alpha": -1,
+      "beta": 0,
+      "ground_type": "trivial",
+      "ground_verified": true,
+      "levels": {
+        "sign": "3",
+        "standard": "0",
+        "trivial": "-3"
+      }
+    }
+  },
+  "project_boundary": {
+    "permutation_invariance_alone_selects_ground_type": false,
+    "symmetric_spin_aroma_branch_unconditional": false,
+    "three_coordinate_spatial_hamiltonian_present": false
+  },
+  "regular_representation": {
+    "central_hamiltonian_commutes_with_S3": true,
+    "characteristic_polynomial_exact": true,
+    "dimension": 6,
+    "levels": {
+      "sign": "-3*alpha + 2*beta",
+      "standard": "-beta",
+      "trivial": "3*alpha + 2*beta"
+    },
+    "three_cycle_class_size": 2,
+    "transposition_class_size": 3
+  },
+  "sufficient_condition": {
+    "condition_verified_for_project_spatial_parent": false,
+    "implies_unique_positive_ground_state": true,
+    "permutation_invariance_then_implies_trivial_type": true,
+    "positivity_improving_semigroup": true
+  },
+  "verdict": {
+    "accept_positivity_improving_condition_as_sufficient": true,
+    "next_gate": "version8_baryon_electromagnetic_closure_redteam_gate",
+    "reject_symmetry_alone_as_ground_state_selector": true
+  }
+}

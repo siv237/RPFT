@@ -1,0 +1,31 @@
+{
+  "carrier_mismatch": {
+    "full_trace_metric_dimension": 42,
+    "full_trace_nullity": 10,
+    "full_trace_pullback_rank": 42,
+    "symplectic_real_dimension": 52,
+    "transfer_trace_metric_dimension": 30,
+    "transfer_trace_nullity": 22
+  },
+  "compatible_extensions": {
+    "both_preserve_old_normalized_trace_metric": true,
+    "both_satisfy_J_squared_minus_identity": true,
+    "both_satisfy_g_equals_Omega_J": true,
+    "continuous_scale_remains_on_five_missing_symplectic_pairs": true,
+    "two_exact_distinct_witnesses": true
+  },
+  "date": "2026-08-30",
+  "gate": "version8_horizontal_phase_cotangent_complex_structure_metric_selector_gate",
+  "next_gate": "version8_horizontal_phase_missing_trace_metric_completion_origin_gate",
+  "registry": {
+    "certificate_sha256": "9048314cfa1db8de810c5e77d1d108ea87e6440d6da7c704ff6c63f17f187fcc",
+    "gate_count": 48,
+    "obligation_count": 362
+  },
+  "verdict": {
+    "existing_trace_metric_selects_full_positive_metric": false,
+    "existing_trace_metric_selects_unique_complex_structure": false,
+    "horizontal_phase_lifted": false,
+    "symplectic_form_alone_selects_positive_metric": false
+  }
+}

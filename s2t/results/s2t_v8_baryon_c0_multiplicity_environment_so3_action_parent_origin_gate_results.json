@@ -1,0 +1,57 @@
+{
+  "current_connector_space": {
+    "SO3_invariant": false,
+    "dimension": 3,
+    "infinitesimal_invariance_failures": 4,
+    "model": "span(E_00,E_11,E_21) inside Hom(R^2,R^3)",
+    "source_SO3_representation_dimension": 2,
+    "source_action": "trivial",
+    "source_lie_hom_constraint_rank": 3
+  },
+  "date": "2026-08-30",
+  "family_intertwiners_after_closure": {
+    "constraint_rank": 16,
+    "constraint_shape": [
+      54,
+      18
+    ],
+    "dimension": 2,
+    "general_form": "T_(u,v)=vertical_stack(u I3,v I3)",
+    "isometric_selector_orbit": "RP1 after the irrelevant overall sign",
+    "metric_pullback": "(u^2+v^2) I3"
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_multiplicity_environment_so3_action_parent_origin_gate",
+  "minimal_SO3_closure": {
+    "added_real_quadratures": 6,
+    "closure_dimension": 6,
+    "completed_quadrature_rank": 12,
+    "completed_space": "Hom(R^2,R^3)",
+    "conditional_frame_dimension": 57,
+    "missing_complex_arrows": 3,
+    "missing_matrix_units": [
+      "E_10",
+      "E_20",
+      "E_01"
+    ],
+    "representation_decomposition": "3 + 3"
+  },
+  "next_gate": "version8_baryon_c0_so3_closed_environment_source_line_selector_gate",
+  "parent_sources": {
+    "current_three_arrow_frame_is_invariant": false,
+    "derived_sources": 0,
+    "endpoint_algebra_supplies_irreducible_triplet": false,
+    "existing_family_action_on_H21_restricts_to_current_three_arrows": false,
+    "full_M5_contains_conditional_six_arrow_closure": true,
+    "full_M5_trace_selects_source_line": false,
+    "required_sources": 5
+  },
+  "verdict": {
+    "current_SO3_action_parent_derived": false,
+    "family_to_environment_map_unique_after_extension": false,
+    "minimal_covariant_extension_exists": true,
+    "minimal_covariant_extension_is_current_parent": false,
+    "residual_projective_selector": "RP1",
+    "single_c0_map_derived": false
+  }
+}

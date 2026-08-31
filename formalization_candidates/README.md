@@ -32,6 +32,11 @@ Markdown-файл здесь **не является доказательств�
 | `spinodal_threshold/` | точная кривизна и порог `beta_sp = 21/2` | `spec-frozen` |
 | `compacton_two_site_existence/` | дискретный ряд связей и двухузловое собственное состояние | `candidate` |
 | `c4_unitary_weight_preservation/` | сохранение характерных весов и запрет унитарной очистки | `spec-frozen` |
+| `baryon_nonlocal_kernel_nonuniqueness/` | неединственность положительного нормированного нелокального форм-фактора | `spec-frozen` |
+| `baryon_auxiliary_spectral_scale_orbit/` | дополнение Шура и масштабная орбита однополюсного родителя | `spec-frozen` |
+| `baryon_spectral_anchor_exhaustion/` | типизированное исчерпание шести старых якорей масштаба | `spec-frozen` |
+| `baryon_spectral_anchor_minimal_data/` | минимальность масштаба, карты и амплитуды однополюсного ядра | `spec-frozen` |
+| `baryon_base_scale_selector_architecture/` | классический no-go и условный квантовый селектор `(a,c)` | `spec-frozen` |
 
 ## Переход к Lean
 

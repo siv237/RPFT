@@ -1,0 +1,111 @@
+{
+  "central_trace_family": {
+    "canonical_simple_factor_connector_present": false,
+    "center_dimension": 3,
+    "equal_weight_witness": [
+      2,
+      3,
+      3
+    ],
+    "mass_vector": [
+      "2*p_Y",
+      "3*p_u",
+      "3*p_d"
+    ],
+    "positive_weights": [
+      "p_Y",
+      "p_u",
+      "p_d"
+    ],
+    "projective_relative_dimension": 2,
+    "ratio_unique": false,
+    "unequal_weight_witness": [
+      2,
+      6,
+      3
+    ]
+  },
+  "common_trace_candidate": {
+    "block_operator": "F_e=[[0,z_e I_d],[conj(z_e) I_d,0]]",
+    "physical_half_trace": "(1/2) Tr(F_e^2)=d_e |z_e|^2",
+    "positive_shape_generated": true,
+    "real_half_trace_changes_ratio": false,
+    "unweighted_mass_coefficients": [
+      2,
+      3,
+      3
+    ],
+    "unweighted_ratio": "2:3:3"
+  },
+  "date": "2026-08-31",
+  "extra_edge_representations": {
+    "complex_dimensions": [
+      2,
+      3,
+      3
+    ],
+    "ordered_edges": [
+      "Z_L--Y_R",
+      "Z_L--u_R",
+      "Z_L--d_R"
+    ],
+    "pairwise_equivariant_intertwiners": 0,
+    "signatures": {
+      "Z_L--Y_R": "(1,2)_{1/2}",
+      "Z_L--d_R": "(3,1)_{2/3}",
+      "Z_L--u_R": "(3,1)_{5/3}"
+    }
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_parent_origin_gate",
+  "gauge_index_test": {
+    "determinant": "-7/4",
+    "mass_relation_selected": false,
+    "matrix": [
+      [
+        "1/2",
+        "25/3",
+        "4/3"
+      ],
+      [
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "1/2"
+      ]
+    ],
+    "rank": 3,
+    "rows": [
+      "U(1)",
+      "SU(2)",
+      "SU(3)"
+    ],
+    "sector_coefficients_for_unweighted_ratio": [
+      "0",
+      "4",
+      "6"
+    ]
+  },
+  "ledgers": {
+    "absolute_mass_scale_origin_satisfied": 0,
+    "absolute_mass_scale_origin_tested": 2,
+    "quadratic_trace_shape_satisfied": 5,
+    "quadratic_trace_shape_tested": 5,
+    "relative_mass_parent_origin_satisfied": 0,
+    "relative_mass_parent_origin_tested": 5
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_central_trace_simplex_selector_gate",
+  "verdict": {
+    "absolute_mass_scale_derived": false,
+    "central_trace_simplex_survives": true,
+    "gauge_indices_remove_central_freedom": false,
+    "one_superconnection_can_generate_all_three_positive_norms": true,
+    "relative_masses_derived": false,
+    "unweighted_trace_is_internally_selected": false,
+    "unweighted_trace_produces_dimension_ratio": true
+  }
+}

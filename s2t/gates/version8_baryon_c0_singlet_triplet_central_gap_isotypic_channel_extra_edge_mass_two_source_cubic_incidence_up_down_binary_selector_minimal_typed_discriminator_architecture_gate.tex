@@ -1,0 +1,184 @@
+\chapter{Минимальная typed-архитектура бинарного \texorpdfstring{$u/d$}{u/d}-различителя}
+\label{ch:v8-up-down-minimal-typed-discriminator}
+
+\section{Двухсостоянийный носитель}
+
+Чтобы два incidence-назначения стали состояниями одного объекта, введём
+минимальный бинарный носитель $\mathcal H_{\rm bit}=\mathbb C^2$ с
+\begin{equation}
+ p_u=|u\rangle\langle u|,\qquad
+ p_d=|d\rangle\langle d|,\qquad
+ p_u+p_d=I_2,\qquad \sigma_z=p_u-p_d.
+ \label{eq:v8-up-down-architecture-bit-projectors}
+\end{equation}
+Одномерный носитель не допускает двух ненулевых ортогональных проекторов,
+тогда как $\mathbb C^2$ допускает их точно:
+\begin{equation}
+ \dim\mathcal H_{\rm bit}\ge2,\qquad
+ \sigma_z^2=I_2.
+ \label{eq:v8-up-down-architecture-minimality}
+\end{equation}
+
+Пусть $P_u,P_d$ --- Real-проекторы ранга шесть на двух цветных endpoint-
+типах. Единый управляемый incidence-проектор равен
+\begin{equation}
+ \Pi_{\rm inc}=p_u\otimes P_u+p_d\otimes P_d,\qquad
+ \Pi_{\rm inc}^2=\Pi_{\rm inc},\qquad \rank\Pi_{\rm inc}=12.
+ \label{eq:v8-up-down-architecture-controlled-incidence}
+\end{equation}
+Бинарный носитель является gauge-синглетом и Real-чётным, поэтому
+\begin{equation}
+ [\Pi_{\rm inc},I_2\otimes\rho(g)]=0,\qquad
+ J\Pi_{\rm inc}J^{-1}=\Pi_{\rm inc},\qquad
+ [\Gamma,\Pi_{\rm inc}]=0.
+ \label{eq:v8-up-down-architecture-compatibility}
+\end{equation}
+Так обе прежние диаграммы вложены в один типизированный операторный носитель,
+а не сравниваются извне.
+
+\section{Статический typed-гамильтониан}
+
+Минимальный гамильтониан, наследующий квадратичный гиперзарядный индекс,
+имеет вид
+\begin{equation}
+ H_{\rm inc}=\frac{25}{3}p_u+\frac{4}{3}p_d.
+ \label{eq:v8-up-down-architecture-hamiltonian}
+\end{equation}
+После удаления общего сдвига он содержит единственный бинарный оператор:
+\begin{equation}
+ H_{\rm inc}=\frac{29}{6}I_2+\frac72\sigma_z,\qquad
+ H_{\rm inc}^{0}=\frac72\sigma_z.
+ \label{eq:v8-up-down-architecture-centered-hamiltonian}
+\end{equation}
+Для коэффициента $\gamma>0$ основное состояние единственно:
+\begin{equation}
+ E_u-E_d=7\gamma,\qquad
+ \ker(\gamma H_{\rm inc}-E_{\min}I)=\mathbb C|d\rangle.
+ \label{eq:v8-up-down-architecture-ground-state}
+\end{equation}
+Общий масштаб $\gamma$ не меняет выбранную ветвь, но его знак меняет её.
+Поэтому условие $\gamma>0$ является частью условной архитектуры, пока
+родительское происхождение знака не доказано.
+
+При конечной обратной температуре $\beta$ Gibbs-состояние не является
+чистым селектором:
+\begin{equation}
+ \frac{p_u^{(\beta)}}{p_d^{(\beta)}}=e^{-7\beta\gamma},\qquad
+ p_u^{(\beta)}>0,\quad p_d^{(\beta)}>0,\qquad
+ \lim_{\beta\gamma\to\infty}(p_u^{(\beta)},p_d^{(\beta)})=(0,1).
+ \label{eq:v8-up-down-architecture-gibbs-limit}
+\end{equation}
+
+\section{Гамильтониан не создаёт релаксацию}
+
+Чисто унитарная динамика
+\begin{equation}
+ \mathcal L_H(X)=i[\gamma H_{\rm inc},X],\qquad
+ \operatorname{Fix}(\mathcal L_H)
+ =\operatorname{span}\{p_u,p_d\},\qquad
+ \dim\operatorname{Fix}(\mathcal L_H)=2
+ \label{eq:v8-up-down-architecture-unitary-fixed-algebra}
+\end{equation}
+сохраняет обе популяции. Следовательно, уникальное основное состояние ещё
+не означает динамический выбор.
+
+Минимальный нуль-температурный dissipative completion использует один
+скачок
+\begin{equation}
+ L_\downarrow=|d\rangle\langle u|,\qquad
+ \mathcal L_\downarrow(X)=
+ L_\downarrow^\dagger XL_\downarrow
+ -\frac12\{L_\downarrow^\dagger L_\downarrow,X\}.
+ \label{eq:v8-up-down-architecture-downward-jump}
+\end{equation}
+В картине состояний он действует на диагональном базисе как
+\begin{equation}
+ \mathcal L_{\downarrow *}(p_u)=p_d-p_u,\qquad
+ \mathcal L_{\downarrow *}(p_d)=0.
+ \label{eq:v8-up-down-architecture-population-flow}
+\end{equation}
+Его Heisenberg-супероператор имеет ранг три и одномерную неподвижную
+алгебру:
+\begin{equation}
+ \rank\mathcal L_\downarrow=3,\qquad
+ \ker\mathcal L_\downarrow=\mathbb CI_2,\qquad
+ \rho_*=p_d.
+ \label{eq:v8-up-down-architecture-primitive-relaxation}
+\end{equation}
+При конечной температуре необходимо добавить обратный скачок с отношением
+скоростей
+\begin{equation}
+ \frac{\kappa_\uparrow}{\kappa_\downarrow}
+ =e^{-7\beta\gamma}.
+ \label{eq:v8-up-down-architecture-detailed-balance}
+\end{equation}
+Тогда стационарное состояние смешано; чистая $d$-ветвь получается только в
+нулевом температурном пределе.
+
+\section{Что построено и что не выведено}
+
+Минимальные данные архитектуры разделяются на статические и динамические:
+\begin{equation}
+ \mathcal D_{\rm static}=\{\mathbb C^2,\Pi_{\rm inc},\gamma>0\},\qquad
+ \mathcal D_{\rm dyn}=\{L_\downarrow,\kappa_\downarrow,
+ \beta\ \text{или нуль-температурная граница}\}.
+ \label{eq:v8-up-down-architecture-data-split}
+\end{equation}
+Ни бинарный носитель, ни управляемое endpoint-вложение, ни положительный
+typed-коэффициент, ни скачок с физической скоростью не содержатся в старом
+parent. Структура является минимальной достаточной архитектурой, но не
+унаследованным выводом.
+
+Итоговые реестры:
+\begin{equation}
+ N_{\rm typed\ static}=8/8,\qquad
+ N_{\rm conditional\ relaxation}=5/5,\qquad
+ N_{\rm inherited\ origin}=0/5.
+ \label{eq:v8-up-down-architecture-ledgers}
+\end{equation}
+
+\begin{theorem}[Минимальный условный динамический селектор]
+Двухсостоянийный gauge-тривиальный носитель является минимальным faithful-
+представлением бинарного incidence-меню. Управляемый проектор
+$\Pi_{\rm inc}$ совместим с gauge-, Real- и grading-структурами.
+Гамильтониан квадрата гиперзаряда при $\gamma>0$ имеет единственное основное
+состояние $|d\rangle$, но унитарная динамика популяции не выбирает. Один
+скачок $|d\rangle\langle u|$ условно даёт уникальную стационарную $d$-ветвь.
+\end{theorem}
+
+\begin{nogocriterion}[Статический минимум не равен динамическому выбору]
+Нельзя считать ветвь выбранной только из единственности основного состояния:
+коммутатор с $H_{\rm inc}$ сохраняет обе диагональные популяции. Нельзя также
+объявлять amplitude-damping скачок унаследованным, пока не построены его
+системно-средовой оператор, состояние среды и физическая скорость.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item минимальная размерность бинарного носителя: \textbf{$2$};
+\item управляемый incidence-проектор: \textbf{построен};
+\item его ранг: \textbf{$12$};
+\item gauge/Real/grading compatibility: \textbf{да};
+\item typed-энергии: \textbf{$25/3$ и $4/3$};
+\item статическая щель: \textbf{$7\gamma$};
+\item основное состояние при $\gamma>0$: \textbf{$d$};
+\item унитарная динамика выбирает популяцию: \textbf{нет};
+\item минимальный downward jump: \textbf{$|d\rangle\langle u|$};
+\item его неподвижная алгебра: \textbf{$\mathbb CI_2$};
+\item скорость релаксации выведена: \textbf{нет};
+\item typed static architecture: \textbf{$8/8$};
+\item conditional relaxation: \textbf{$5/5$};
+\item inherited origin: \textbf{$0/5$};
+\item следующий гейт: \textbf{parent-origin бинарного носителя}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_architecture_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-up-down-architecture-gks} V.~Gorini, A.~Kossakowski,
+E.~C.~G.~Sudarshan, \emph{Completely Positive Dynamical Semigroups of
+N-Level Systems}, J. Math. Phys. 17 (1976) 821.
+\bibitem{v8-up-down-architecture-lindblad} G.~Lindblad,
+\emph{On the Generators of Quantum Dynamical Semigroups},
+Commun. Math. Phys. 48 (1976) 119.
+\end{thebibliography}

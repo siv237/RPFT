@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-30",
+  "endpoint_origin": {
+    "current_H_plus_multiplicity": 1,
+    "derived_from_current_endpoint_carrier": false,
+    "multiplicity_deficit": 3,
+    "new_complex_directions": 6,
+    "new_real_directions": 12,
+    "required_H_plus_multiplicity": 4,
+    "requires_new_cotangent_arrow_data": true,
+    "requires_new_fermions_if_realized_as_new_endpoints": "not_decided"
+  },
+  "formal_completion": {
+    "complex_dimension": 26,
+    "decomposition": "4 H_plus + 4 H_minus + C_plus + C_minus + 4 S_zero",
+    "gauge_generator_checks": 14,
+    "invariant_alternating_form_dimension": 23,
+    "nondegenerate_invariant_form_exists": true,
+    "real_dimension": 52,
+    "standard_form_determinant": 1,
+    "standard_form_rank": 26,
+    "unique_form_selected": false
+  },
+  "gate": "version8_horizontal_phase_minimal_symplectic_completion_endpoint_admission_gate",
+  "next_gate": "version8_horizontal_phase_cotangent_doubled_quiver_parent_admission_gate",
+  "phase_pairing": {
+    "physical_horizontal_phase_lift": false,
+    "reason": "the required dual fields are not endpoint-derived",
+    "single_bosonic_self_contraction": 0,
+    "two_independent_field_witness": 1
+  },
+  "registry": {
+    "certificate_sha256": "144724cba5fc1836d0c609ad1e5659f71b0f7bebc7dc37bc66a58bf29184274b",
+    "gate_count": 46,
+    "obligation_count": 338
+  },
+  "verdict": {
+    "abstract_balanced_symplectic_carrier_admitted": true,
+    "canonical_polarization_admitted": false,
+    "current_parent_extended": false,
+    "existing_endpoint_realization_admitted": false
+  }
+}

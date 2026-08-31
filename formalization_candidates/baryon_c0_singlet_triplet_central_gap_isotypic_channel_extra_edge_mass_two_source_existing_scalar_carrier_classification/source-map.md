@@ -1,0 +1,5 @@
+# Source map
+- `s2t/gates/version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_existing_scalar_carrier_classification_gate.tex`
+- `s2t/audits/s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_existing_scalar_carrier_classification_gate.py`
+- `s2t/results/s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_existing_scalar_carrier_classification_gate_results.json`
+- Lopatin, `arXiv:math/0608750`; Stephan, `arXiv:0901.4676`; Krajewski, `arXiv:hep-th/9803199`.

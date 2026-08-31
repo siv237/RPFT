@@ -1,0 +1,153 @@
+{
+  "boundary": {
+    "confinement_or_spatial_kernel_derived": false,
+    "faddeev_kernel_derived": false,
+    "generated_by_current_quadratic_gksl_parent": false,
+    "overall_three_body_coupling_derived": false,
+    "pure_three_transfer_component": false
+  },
+  "connected_three_copy_operator": {
+    "Hermitian": true,
+    "definition": "W3=d^{abc}Fhat_a tensor Fhat_b tensor Fhat_c",
+    "gauge_invariant_by_trace_cyclicity": true,
+    "indices_raised_by": "centered trace metric inverse",
+    "nonzero": true,
+    "partial_traces_zero": {
+      "copy_1": true,
+      "copy_2": true,
+      "copy_3": true
+    },
+    "permutation_invariant": true
+  },
+  "date": "2026-08-30",
+  "field": "Q",
+  "frame": {
+    "centered_trace_metric_rank": 42,
+    "centering": "Fhat_a=F_a-Tr(F_a)I_21/21",
+    "frame_dimension": 42,
+    "nonzero_original_traces": [
+      {
+        "index_zero_based": 41,
+        "trace": "-4"
+      }
+    ],
+    "same_double_commutator_generator": true,
+    "system_dimension": 21
+  },
+  "gate": "version8_baryon_cubic_trace_connected_operator_gate",
+  "symmetric_cubic_trace_tensor": {
+    "definition": "d_abc=Tr(Fhat_a{Fhat_b,Fhat_c})/2",
+    "fully_symmetric": true,
+    "nonzero_unordered_components": 168,
+    "real": true,
+    "sample": [
+      {
+        "indices_zero_based": [
+          0,
+          0,
+          40
+        ],
+        "value": "-1"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          0,
+          41
+        ],
+        "value": "-107/42"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          2,
+          38
+        ],
+        "value": "-7"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          3,
+          39
+        ],
+        "value": "-1"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          4,
+          39
+        ],
+        "value": "-7"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          5,
+          38
+        ],
+        "value": "1"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          6,
+          40
+        ],
+        "value": "-7"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          6,
+          41
+        ],
+        "value": "-173/42"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          8,
+          40
+        ],
+        "value": "-1"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          8,
+          41
+        ],
+        "value": "19/6"
+      },
+      {
+        "indices_zero_based": [
+          1,
+          1,
+          40
+        ],
+        "value": "-1"
+      },
+      {
+        "indices_zero_based": [
+          1,
+          1,
+          41
+        ],
+        "value": "-107/42"
+      }
+    ],
+    "support_unordered": {
+      "GGG": 28,
+      "TGG": 0,
+      "TTG": 140,
+      "TTT": 0
+    }
+  },
+  "verdict": {
+    "canonical_connected_operator_carrier": true,
+    "next_gate": "cubic_trace_parent_action_coefficient_origin_or_no_go",
+    "physical_baryon_parent": false
+  }
+}

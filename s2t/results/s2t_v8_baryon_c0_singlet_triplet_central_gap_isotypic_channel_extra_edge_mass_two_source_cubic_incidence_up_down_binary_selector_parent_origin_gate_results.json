@@ -1,0 +1,90 @@
+{
+  "binary_candidates": [
+    "B->u,M->Y",
+    "B->d,M->Y"
+  ],
+  "conditional_quadratic_score": {
+    "coefficient_sign_required": true,
+    "fixed_graph_projector_is_dynamical": false,
+    "negative_coefficient_minimizer": "u",
+    "positive_coefficient_minimizer": "d",
+    "zero_coefficient_minimizers": [
+      "u",
+      "d"
+    ]
+  },
+  "date": "2026-08-31",
+  "discrete_geometry": {
+    "Tr((P_u-P_d)^2)": "12",
+    "continuous_tangent_between_candidates_dimension": 0,
+    "euler_lagrange_selector_available": false,
+    "inter_geometry_measure_inherited": false,
+    "real_projector_ranks": {
+      "P_d": 6,
+      "P_u": 6
+    }
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_parent_origin_gate",
+  "ledgers": {
+    "conditional_discriminator_shape_satisfied": 5,
+    "conditional_discriminator_shape_tested": 5,
+    "exact_representation_classification_satisfied": 8,
+    "exact_representation_classification_tested": 8,
+    "parent_origin_satisfied": 0,
+    "parent_origin_tested": 7
+  },
+  "minimal_typed_discriminator_preview": {
+    "S_ud": "Y^2-(29/18)I",
+    "Tr(A_ud S_ud)": "14",
+    "Tr(S_ud^2)": "49/3",
+    "coupling_sign_inherited": false,
+    "eigenvalues": {
+      "d": "-7/6",
+      "u": "7/6"
+    },
+    "typed_coupling_inherited": false
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_architecture_gate",
+  "real_trace_audit": {
+    "Tr(A_ud Y^2)": "14",
+    "odd_hypercharge_moments_cancel": true,
+    "odd_traces": {
+      "Tr(A_ud Y)": "0",
+      "Tr(A_ud Y^3)": "0",
+      "Tr(P_d Y)": "0",
+      "Tr(P_u Y)": "0"
+    },
+    "vectorlike_anomaly_is_zero_per_candidate": true
+  },
+  "representation_data": {
+    "complex_dimensions": {
+      "d": 3,
+      "u": 3
+    },
+    "hypercharges": {
+      "d": "2/3",
+      "u": "5/3"
+    },
+    "su2_indices": {
+      "d": "0",
+      "u": "0"
+    },
+    "su3_indices": {
+      "d": "1/2",
+      "u": "1/2"
+    },
+    "u1_index_gap": "7",
+    "u1_quadratic_indices": {
+      "d": "4/3",
+      "u": "25/3"
+    }
+  },
+  "verdict": {
+    "binary_u_d_choice_resolved": false,
+    "existing_parent_varies_incidence": false,
+    "hypercharge_square_distinguishes_candidates": true,
+    "positive_hypercharge_square_score_conditionally_selects_d": true,
+    "real_odd_moment_selects_candidate": false
+  }
+}

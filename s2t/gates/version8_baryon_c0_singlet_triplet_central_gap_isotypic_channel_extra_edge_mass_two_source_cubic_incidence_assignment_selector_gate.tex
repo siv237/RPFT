@@ -1,0 +1,163 @@
+\chapter{Селектор кубического incidence-назначения двух источников}
+\label{ch:v8-extra-mass-cubic-incidence-selector}
+
+\section{Шесть полноранговых кандидатов}
+
+Предыдущий гейт оставил упорядоченные назначения
+\begin{equation}
+ (e_B,e_M)\in
+ \{(Y,u),(Y,d),(u,Y),(u,d),(d,Y),(d,u)\},
+ \label{eq:v8-cubic-incidence-selector-menu}
+\end{equation}
+где $T_B=3$, $T_M=2$ и
+\begin{equation}
+ q_Y=(0,-3),\qquad q_u=(1,1),\qquad q_d=(-1,1).
+ \label{eq:v8-cubic-incidence-selector-charges}
+\end{equation}
+Для сравнения формы используем inherited trace-метрику
+\begin{equation}
+ K=\operatorname{diag}(12,48),
+ \qquad
+ C(e_B,e_M)=\begin{pmatrix}3q_{e_B}&2q_{e_M}\end{pmatrix}.
+ \label{eq:v8-cubic-incidence-selector-weighted-map}
+\end{equation}
+
+\section{Determinant и метрическая площадь}
+
+Максимизация невзвешенного determinant даёт
+\begin{equation}
+ |\det Q|_{\max}=3,
+ \qquad
+ \mathcal M_{\det}=\{(Y,u),(Y,d),(u,Y),(d,Y)\}.
+ \label{eq:v8-cubic-incidence-selector-det-survivors}
+\end{equation}
+Тот же набор получается из площади в двойственной trace-метрике:
+\begin{equation}
+ \mathcal A(e_B,e_M)=
+ \sqrt{\det\bigl(C^TK^{-1}C\bigr)},
+ \qquad
+ \mathcal A_{Y\text{-pair}}=\frac34,
+ \quad \mathcal A_{ud\text{-pair}}=\frac12.
+ \label{eq:v8-cubic-incidence-selector-metric-area}
+\end{equation}
+Следовательно, determinant и объём не дают единственного назначения.
+
+Знак determinant также не является селектором. При замене ориентированного
+базиса $A\mapsto-A$ он меняется:
+\begin{equation}
+ \det Q\longmapsto-\det Q,
+ \qquad |\det Q|\longmapsto|\det Q|.
+ \label{eq:v8-cubic-incidence-selector-orientation-sign}
+\end{equation}
+
+\section{Обусловленность и совпадение кратностей}
+
+Число обусловленности измерим после whitening матрицей $K^{-1/2}$:
+\begin{equation}
+ \kappa(e_B,e_M)=
+ \sqrt{\frac{\lambda_{\max}(C^TK^{-1}C)}
+ {\lambda_{\min}(C^TK^{-1}C)}}.
+ \label{eq:v8-cubic-incidence-selector-condition-number}
+\end{equation}
+Минимум достигается ровно на двух назначениях:
+\begin{equation}
+ \mathcal M_{\kappa}=\{(u,Y),(d,Y)\},
+ \qquad
+ \kappa_{\min}=
+ \sqrt{\frac{27+3\sqrt{17}}{27-3\sqrt{17}}}.
+ \label{eq:v8-cubic-incidence-selector-condition-minima}
+\end{equation}
+Это же меню поддерживает простое совпадение комплексных кратностей:
+$T_B=3$ с цветным сектором размерности $3$, а $T_M=2$ со слабым сектором
+размерности $2$:
+\begin{equation}
+ \mathcal M_{\dim}=\{(u,Y),(d,Y)\}.
+ \label{eq:v8-cubic-incidence-selector-dimension-match}
+\end{equation}
+Таким образом, два независимых внутренних критерия согласованы, но оставляют
+бинарную свободу $u/d$.
+
+\section{Почему бинарная свобода не снимается}
+
+Для одного общего кубического коэффициента два финалиста дают source-лучи
+\begin{equation}
+ (u,Y):\ (j_A,j_B)\parallel(3,-3),
+ \qquad
+ (d,Y):\ (j_A,j_B)\parallel(-3,-3).
+ \label{eq:v8-cubic-incidence-selector-final-rays}
+\end{equation}
+Их щели соответственно лежат на координатных осях:
+\begin{equation}
+ (\Delta_u,\Delta_d)\parallel(0,-1),
+ \qquad
+ (\Delta_u,\Delta_d)\parallel(-1,0).
+ \label{eq:v8-cubic-incidence-selector-gap-rays}
+\end{equation}
+Поэтому выбор одного кандидата буквально выбирает, какой цветной канал
+получает щель.
+
+Сектора $u$ и $d$ имеют различные гиперзаряды, так что они не связаны
+сохранённым gauge-интертвейнером. Но отсутствие симметрии между объектами не
+есть правило выбора одного из них. Классификация конечной спектральной
+тройки требует явных матриц и диаграммы связей
+\cite{v8-cubic-incidence-selector-krajewski,v8-cubic-incidence-selector-cacic};
+она не разрешает добавлять ориентированное ребро по меньшему condition
+number после просмотра результата.
+
+Equal-gap требование $j_A=0$ не выбирает ни одного финалиста при одном
+коэффициенте. При двух коэффициентах оно уничтожает $B$-компоненту:
+\begin{equation}
+ j_A=\mp9c_B=0\quad\Longrightarrow\quad c_B=0.
+ \label{eq:v8-cubic-incidence-selector-equal-gap-ratio}
+\end{equation}
+Обе ветви тогда схлопываются к одному rank-one назначению $M\mapsto Y$.
+Наблюдаемая мишень поэтому не является внутренним incidence-селектором.
+
+Итоговые реестры:
+\begin{equation}
+ N_{\rm exact\ classification}=8/8,
+ \qquad N_{\rm intrinsic\ selector}=0/8,
+ \qquad |\mathcal M_{\rm final}|=2.
+ \label{eq:v8-cubic-incidence-selector-ledgers}
+\end{equation}
+
+\begin{theorem}[Двухточечный остаток incidence-меню]
+Максимальный determinant и максимальная trace-метрическая площадь оставляют
+четыре назначения. Минимизация точного числа обусловленности и совпадение
+кратностей независимо сокращают их до $(u,Y)$ и $(d,Y)$. Все проверенные
+внутренние критерии инвариантны относительно отражения $A\mapsto-A$ и не
+выбирают один из двух финалистов.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет ориентации по знаку determinant]
+Нельзя использовать знак determinant как физический селектор: он меняется
+при переориентации базиса центральной плоскости. Нельзя также использовать
+желаемую equal-gap мишень или меньший condition number как источник
+конкретного $u/d$-ребра без parent-терма, различающего эти два типа.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item исходных rank-two назначений: \textbf{шесть};
+\item maximum determinant survivors: \textbf{четыре};
+\item maximum metric-area survivors: \textbf{четыре};
+\item minimum-condition survivors: \textbf{два};
+\item dimension-match survivors: \textbf{два};
+\item финалисты: \textbf{$(u,Y)$ и $(d,Y)$};
+\item знак determinant физически инвариантен: \textbf{нет};
+\item gauge-неэквивалентность выбирает финалиста: \textbf{нет};
+\item equal-gap мишень является внутренним селектором: \textbf{нет};
+\item exact classification: \textbf{$8/8$};
+\item intrinsic selector: \textbf{$0/8$};
+\item следующий гейт: \textbf{parent-origin бинарного $u/d$-селектора}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_assignment_selector_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-cubic-incidence-selector-krajewski} T.~Krajewski,
+\emph{Classification of Finite Spectral Triples}, arXiv:hep-th/9701081.
+\bibitem{v8-cubic-incidence-selector-cacic} B.~\'Caci\'c,
+\emph{Moduli Spaces of Dirac Operators for Finite Spectral Triples},
+arXiv:0902.2068.
+\end{thebibliography}

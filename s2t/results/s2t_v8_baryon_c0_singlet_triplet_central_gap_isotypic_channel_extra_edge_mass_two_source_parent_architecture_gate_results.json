@@ -1,0 +1,102 @@
+{
+  "compatibility": {
+    "central": true,
+    "gauge_invariant_linear_functional": true,
+    "grading_even": true,
+    "physical_beta_scale_fixed": false,
+    "real": true
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_parent_architecture_gate",
+  "inherited_trace_stiffness": {
+    "basis": [
+      "A=P_u-P_d",
+      "B=P_u+P_d-3P_Y"
+    ],
+    "general_symmetric_stiffness_parameters_avoided": 3,
+    "gram_matrix": [
+      [
+        12,
+        0
+      ],
+      [
+        0,
+        48
+      ]
+    ],
+    "hessian": [
+      [
+        12,
+        0
+      ],
+      [
+        0,
+        48
+      ]
+    ],
+    "new_stiffness_parameters": 0,
+    "positive_definite": true,
+    "potential": "6a^2+24b^2-j_A a-j_B b"
+  },
+  "ledgers": {
+    "architecture_satisfied": 9,
+    "architecture_tested": 9,
+    "source_origin_satisfied": 0,
+    "source_origin_tested": 2
+  },
+  "minimality": {
+    "gap_plane_dimension": 2,
+    "minimal_real_source_count": 2,
+    "one_real_source_rank_bound": 1,
+    "source_data_decomposition": [
+      "one magnitude",
+      "one projective direction"
+    ]
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_existing_scalar_carrier_classification_gate",
+  "source_gap_bijection": {
+    "determinant": "1/72",
+    "inverse": [
+      "j_A=6(Delta_u-Delta_d)",
+      "j_B=6(Delta_u+Delta_d)"
+    ],
+    "matrix": [
+      [
+        "1/12",
+        "1/12"
+      ],
+      [
+        "-1/12",
+        "1/12"
+      ]
+    ],
+    "rank": 2
+  },
+  "unique_minimum": {
+    "a_star": "j_A/12",
+    "b_star": "j_B/48",
+    "minimum_value": "-j_A^2/24-j_B^2/96"
+  },
+  "verdict": {
+    "arbitrary_gap_pair_realized": true,
+    "gap_pair_derived": false,
+    "source_coefficients_derived": false,
+    "two_source_parent_strictly_convex": true,
+    "two_sources_necessary_and_sufficient": true
+  },
+  "witnesses": {
+    "equal_gaps_source": [
+      0,
+      "12 delta"
+    ],
+    "gaps_1_2_source": [
+      -6,
+      18
+    ],
+    "zero_gaps_source": [
+      0,
+      0
+    ]
+  }
+}

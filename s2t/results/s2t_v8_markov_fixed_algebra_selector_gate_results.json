@@ -1,0 +1,722 @@
+{
+  "date": "2026-08-28",
+  "final_fixed_algebra": {
+    "algebra": "C P_quark direct_sum C P_lepton_vectorlike",
+    "dimension": 2,
+    "incidence_cross_component_blocks": 0,
+    "lepton_vectorlike_fixed_residual": 0.0,
+    "lepton_vectorlike_projector_rank": 9,
+    "projector_orthogonality": 0.0,
+    "quark_fixed_residual": 0.0,
+    "quark_projector_rank": 12
+  },
+  "fixed_algebra_reduction": {
+    "linking_only": {
+      "decay_gap": 0.013983598463814768,
+      "fixed_dimension": 41,
+      "positive_eigenvalue_count": 0
+    },
+    "linking_plus_full_gauge": {
+      "decay_gap": 0.0702602575439058,
+      "fixed_dimension": 2,
+      "positive_eigenvalue_count": 0
+    },
+    "linking_plus_hypercharge": {
+      "decay_gap": 0.033430504033533634,
+      "fixed_dimension": 21,
+      "positive_eigenvalue_count": 0
+    },
+    "linking_plus_su2": {
+      "decay_gap": 0.059427163434214364,
+      "fixed_dimension": 10,
+      "positive_eigenvalue_count": 0
+    },
+    "linking_plus_su3": {
+      "decay_gap": 0.013983598463815609,
+      "fixed_dimension": 9,
+      "positive_eigenvalue_count": 0
+    },
+    "linking_plus_su3_plus_hypercharge": {
+      "decay_gap": 0.03343050403353392,
+      "fixed_dimension": 5,
+      "positive_eigenvalue_count": 0
+    }
+  },
+  "gate": "version8_markov_fixed_algebra_selector_gate",
+  "gauge_representations": {
+    "source_order": "QL(6), LL(2), XL(1), YL(2)",
+    "su2_generators": 3,
+    "su3_generators": 8,
+    "target_order": "uR(3), dR(3), eR(1), XR(1), YR(2)",
+    "u1_generators": 1
+  },
+  "next_gate": {
+    "name": "version8_two_sector_kernel_self_consistency_gate",
+    "question": "can the full correlation kernel dynamically generate a color-preserving composite bridge between the two central sectors, or is C^2 a strict superselection boundary?"
+  },
+  "robustness": {
+    "affine_factor_action_on_endpoint_internal_space": "identity, hence no further reduction",
+    "endpoint_grading_generator_norm": 0.0,
+    "fixed_dimension_always_two": true,
+    "positive_weight_samples": 64,
+    "samples": [
+      {
+        "decay_gap": 0.04938089721075453,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          553.9044464558812,
+          0.1299628246960331,
+          0.5948119874781472,
+          0.0012223730202278339
+        ]
+      },
+      {
+        "decay_gap": 0.6293538150999359,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          1293.258561175513,
+          0.8787196801512711,
+          7.598691902152462,
+          0.0001314028407228373
+        ]
+      },
+      {
+        "decay_gap": 0.002727959098885815,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          111.25532111377797,
+          0.09026494562317838,
+          0.005511591648637801,
+          2.621923206556332
+        ]
+      },
+      {
+        "decay_gap": 3.901192069055634e-05,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.0002543531122229095,
+          0.00060361288808284,
+          0.001114693039577547,
+          1083.8073085231658
+        ]
+      },
+      {
+        "decay_gap": 0.00041239705511167147,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          2.5009215484282254,
+          0.00027493137009688723,
+          29.40491122622588,
+          65.02432599550534
+        ]
+      },
+      {
+        "decay_gap": 0.00215592331236561,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.019391796161870783,
+          7.666844317686323,
+          0.07243325876670999,
+          0.0004816077969651643
+        ]
+      },
+      {
+        "decay_gap": 3.9682894906388113,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          28.833033144028796,
+          1220.4496190641205,
+          42.238352678249136,
+          3975.4012149596424
+        ]
+      },
+      {
+        "decay_gap": 1.9099811451353972,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          261.140383697256,
+          3.124733022999208,
+          23.12017454876877,
+          2.2447513736279308
+        ]
+      },
+      {
+        "decay_gap": 0.0003506829020345086,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          1.3592230756967778,
+          0.00023378860155874972,
+          799.3296705298952,
+          2.036837725688913
+        ]
+      },
+      {
+        "decay_gap": 0.0003993576854842449,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.0024948562842458605,
+          0.0023507912015369205,
+          14.482200551084,
+          4201.90713207931
+        ]
+      },
+      {
+        "decay_gap": 0.0026479378144225758,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          250.0918239807082,
+          0.03465532947309172,
+          0.005299393872314822,
+          39.67925340660442
+        ]
+      },
+      {
+        "decay_gap": 0.005445848135243645,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.034160816952285976,
+          147.94760403724925,
+          21.645067690345375,
+          0.0024777699471734203
+        ]
+      },
+      {
+        "decay_gap": 0.5518418827786115,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          29.84429790455248,
+          3.0417235623703998,
+          1.7105485781517695,
+          30.226657421188296
+        ]
+      },
+      {
+        "decay_gap": 0.02807941557671749,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.17562918141962577,
+          1.6171495540155258,
+          370.0311247513292,
+          0.0001267931748801241
+        ]
+      },
+      {
+        "decay_gap": 6.644273780477016e-05,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.00041506121035681046,
+          0.005390592987547891,
+          982.1294584845699,
+          4579.4611715486
+        ]
+      },
+      {
+        "decay_gap": 0.0013154407966695044,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.008217608318070637,
+          0.0013407759357761363,
+          971.8938473219446,
+          0.45739040252209057
+        ]
+      },
+      {
+        "decay_gap": 0.0008261109668988531,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.005185430674420172,
+          2990.2641673083003,
+          2.833362075909011,
+          0.002052731407085497
+        ]
+      },
+      {
+        "decay_gap": 0.0009880733296690092,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.04099056541823362,
+          0.0006587155531129301,
+          0.002649298060592083,
+          0.18778815318500303
+        ]
+      },
+      {
+        "decay_gap": 0.007892720682089982,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          2831.4684853924746,
+          0.005261813790426129,
+          0.1735321939373507,
+          0.09604976548350816
+        ]
+      },
+      {
+        "decay_gap": 0.00011005373618756639,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.0006875030997743225,
+          0.0016210228523861686,
+          144.49691730633918,
+          1.027085645712556
+        ]
+      },
+      {
+        "decay_gap": 0.0028364451530896364,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.019807406101807472,
+          859.8545564089295,
+          0.3576626373290764,
+          0.03496046603880787
+        ]
+      },
+      {
+        "decay_gap": 0.00019494664041859832,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.0012661442436847075,
+          4.690585850441646,
+          0.006908280127095657,
+          2.2761917306009134
+        ]
+      },
+      {
+        "decay_gap": 0.01253676793373286,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          1.1048245631542553,
+          6.5151157463043265,
+          0.13933374194430273,
+          0.06729526824903995
+        ]
+      },
+      {
+        "decay_gap": 0.039918619669256764,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.2494696980337943,
+          3829.8058582604262,
+          536.3005017111494,
+          4364.433933796059
+        ]
+      },
+      {
+        "decay_gap": 0.004086343833092631,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.026086174493440625,
+          0.6204611351854095,
+          3.0408767586399366,
+          0.00015074572749851253
+        ]
+      },
+      {
+        "decay_gap": 0.00010988079490078453,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.0007472304195484723,
+          8.504767004016285,
+          0.0015532290210034676,
+          1.89280668773254
+        ]
+      },
+      {
+        "decay_gap": 0.04663698707966871,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          210.4836581380408,
+          4954.184971277997,
+          0.09775371611212544,
+          10.731628981991781
+        ]
+      },
+      {
+        "decay_gap": 8.891824565996625e-05,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.0005554719877149718,
+          0.0006293730693312845,
+          93.01451837707373,
+          0.021017447893778296
+        ]
+      },
+      {
+        "decay_gap": 0.006164329704096738,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          214.3374941185216,
+          0.004109553136297419,
+          21.42494117335863,
+          850.0926885987964
+        ]
+      },
+      {
+        "decay_gap": 0.006188899004930634,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          2556.518354453242,
+          0.9177918735187574,
+          0.012489764023372965,
+          6.63873533886442
+        ]
+      },
+      {
+        "decay_gap": 0.0012358596903031076,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.007720314750648422,
+          725.3974693524847,
+          6209.801317018098,
+          0.03310307146719397
+        ]
+      },
+      {
+        "decay_gap": 0.0009591456028737823,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          822.4521294491735,
+          84.52818694284525,
+          0.007718257055192054,
+          0.013597172957907506
+        ]
+      },
+      {
+        "decay_gap": 0.0002265046796851568,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.0014149844358962928,
+          114.30133854753205,
+          161.38610523872404,
+          0.39843403399380434
+        ]
+      },
+      {
+        "decay_gap": 5.875728303040539e-05,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.00036705195026288603,
+          0.006631023398848901,
+          208.2419016372356,
+          305.4871956687102
+        ]
+      },
+      {
+        "decay_gap": 0.001331422957206312,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.00832629405085555,
+          0.04759842667222577,
+          20.234010780630364,
+          0.09764336925261226
+        ]
+      },
+      {
+        "decay_gap": 0.0019509465483366734,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          53.064557771265775,
+          0.004508167782481753,
+          0.004424155273274113,
+          0.19581963471156114
+        ]
+      },
+      {
+        "decay_gap": 0.4226960194746896,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          2.6434180594690235,
+          160.7043055846552,
+          6406.154405403525,
+          0.024002077442380323
+        ]
+      },
+      {
+        "decay_gap": 0.00026146594986892945,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          1817.188351973429,
+          0.05649863338165627,
+          0.000522932331651529,
+          6625.538815446367
+        ]
+      },
+      {
+        "decay_gap": 0.01796060095279943,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.11579706756661617,
+          2.1893117944585154,
+          1.0747945961024696,
+          77.48858849458469
+        ]
+      },
+      {
+        "decay_gap": 0.004085007259428938,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          1570.0175237230053,
+          0.00272333817770839,
+          518.2163591924809,
+          0.00036234860968868286
+        ]
+      },
+      {
+        "decay_gap": 2.028104907630675e-05,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.00012682485326116319,
+          0.00029707549370911363,
+          0.3227514587492582,
+          0.002863623818577983
+        ]
+      },
+      {
+        "decay_gap": 0.5673432780722192,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          5.427997141760258,
+          4.198210414655486,
+          2.4062231431046537,
+          298.41533352962887
+        ]
+      },
+      {
+        "decay_gap": 0.005442835215469204,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.03400133919909885,
+          1.4684860193120064,
+          6083.61781542273,
+          0.06417192437537479
+        ]
+      },
+      {
+        "decay_gap": 0.17781191055811324,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          1.3959154335690376,
+          77.5691539483579,
+          7.90067749272211,
+          7.222556404904743
+        ]
+      },
+      {
+        "decay_gap": 20.166694987262762,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          3620.7842088324137,
+          985.4570184898627,
+          124.9247734332347,
+          458.44010421200466
+        ]
+      },
+      {
+        "decay_gap": 0.0013456513900805946,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          5.779699339963455,
+          93.83335329268708,
+          0.011183097428541938,
+          0.017807909198094395
+        ]
+      },
+      {
+        "decay_gap": 0.10863964649020626,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          30.7305983003093,
+          0.07242643099404346,
+          1150.1998880511997,
+          1.2097215095699476
+        ]
+      },
+      {
+        "decay_gap": 0.0010197703573827128,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.01403263800233975,
+          0.360506261782365,
+          0.002770608519204808,
+          69.58979384832402
+        ]
+      },
+      {
+        "decay_gap": 0.023451088306247946,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.32715952091448125,
+          0.23741885759810885,
+          0.06330754368298142,
+          1423.3752435567433
+        ]
+      },
+      {
+        "decay_gap": 4.431011062085973e-05,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.0002797275429461141,
+          0.44846337832212463,
+          0.052483120131373705,
+          0.05538811193303635
+        ]
+      },
+      {
+        "decay_gap": 0.00011138764339698339,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.0006958589240631392,
+          10.820910563108058,
+          34.96478941224187,
+          18.308713788102576
+        ]
+      },
+      {
+        "decay_gap": 0.0061983292690903,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          4480.838735419443,
+          9.064047283180383,
+          0.06161069224811659,
+          0.04525506466560998
+        ]
+      },
+      {
+        "decay_gap": 3.286754691686846e-05,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.00020532897276999748,
+          0.00012137223743706456,
+          12.695905961724069,
+          0.13575810695218304
+        ]
+      },
+      {
+        "decay_gap": 0.0002214155478221709,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.0013847009528798679,
+          0.009151554017438222,
+          3.2825896470932383,
+          0.007576752699367626
+        ]
+      },
+      {
+        "decay_gap": 0.25627690627362154,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          5.987830557407328,
+          0.17085127084913865,
+          150.48437260544878,
+          0.0066151492769335705
+        ]
+      },
+      {
+        "decay_gap": 0.0011556924329650235,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          5.5366508468447995,
+          0.3167614197005488,
+          0.012686006204230644,
+          0.0042923500287298565
+        ]
+      },
+      {
+        "decay_gap": 0.00032318016681556386,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          4541.026519296823,
+          3.272887200966855,
+          0.0037486077171440747,
+          0.0004956633130299202
+        ]
+      },
+      {
+        "decay_gap": 0.0003598601879694837,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.032082605806447374,
+          3494.119552683325,
+          0.0007435562742705613,
+          103.02223278038282
+        ]
+      },
+      {
+        "decay_gap": 0.002520422538909134,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          1234.035688804565,
+          2.376967242680632,
+          0.0050409067168931485,
+          4120.895218357719
+        ]
+      },
+      {
+        "decay_gap": 0.07505102308168929,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.4697002958470048,
+          362.21520563547557,
+          107.19668281057952,
+          3718.2313303073347
+        ]
+      },
+      {
+        "decay_gap": 0.0012264976349683895,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.08922538850095128,
+          0.000817665090038077,
+          99.77471394977505,
+          1061.337342732869
+        ]
+      },
+      {
+        "decay_gap": 0.15466790674679187,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          5.346636533366701,
+          18.835112798780113,
+          2.140357926266083,
+          0.011797929086953192
+        ]
+      },
+      {
+        "decay_gap": 0.00031793898608110547,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          0.0021472104788283386,
+          0.00023583140701440646,
+          0.06136550952641266,
+          0.00016460083864105904
+        ]
+      },
+      {
+        "decay_gap": 0.572050863225989,
+        "fixed_dimension": 2,
+        "weights_linking_su3_su2_u1": [
+          2046.4653954217808,
+          0.3813672421553331,
+          522.6014396820585,
+          0.009018294950442653
+        ]
+      }
+    ],
+    "weight_range": "1e-4 through 1e4 independently for linking, SU3, SU2, U1"
+  },
+  "source_presence": {
+    "gauge_carrier": true,
+    "linking_semigroup": true,
+    "physical_incidence": true,
+    "universal_incidence_no_go": true
+  },
+  "verdict": {
+    "canonical_commutative_sector_algebra_derived": true,
+    "full_gauge_data_reduce_fixed_algebra": true,
+    "minimal_state_event_algebra_derived": false,
+    "quark_lepton_connector_present": false,
+    "reason": "the joint commutant of linking incidence and the complete gauge representation is exactly C^2, selecting colored and colorless connected components while proving that the present transition graph contains no operator between them",
+    "sector_algebra_dimension": 2,
+    "status": "canonical_two_sector_event_algebra_and_disconnection_witness",
+    "unified_primitive_semigroup_derived": false
+  }
+}

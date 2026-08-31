@@ -1,0 +1,197 @@
+{
+  "carrier": {
+    "endpoint_complex_dimension": 21,
+    "transfer_complex_dimension": 20,
+    "transfer_representation_covariance_residual": 4.3211273667592497e-16
+  },
+  "common_curvature_trace": {
+    "beta_half_requires_inserted_rescaling": "Omega_Gram/sqrt(2)",
+    "central_metric_family": [
+      {
+        "edge_projector_commutator": 0.0,
+        "eta": 0.25,
+        "gram_projector_commutator": 0.0,
+        "minimum_metric_eigenvalue": 0.25
+      },
+      {
+        "edge_projector_commutator": 0.0,
+        "eta": 0.5,
+        "gram_projector_commutator": 0.0,
+        "minimum_metric_eigenvalue": 0.5
+      },
+      {
+        "edge_projector_commutator": 0.0,
+        "eta": 1.0,
+        "gram_projector_commutator": 0.0,
+        "minimum_metric_eigenvalue": 1.0
+      },
+      {
+        "edge_projector_commutator": 0.0,
+        "eta": 2.0,
+        "gram_projector_commutator": 0.0,
+        "minimum_metric_eigenvalue": 1.0
+      },
+      {
+        "edge_projector_commutator": 0.0,
+        "eta": 4.0,
+        "gram_projector_commutator": 0.0,
+        "minimum_metric_eigenvalue": 1.0
+      }
+    ],
+    "central_projectors_remain_independent": true,
+    "common_curvature_dimension": 61,
+    "edge_real_curvature_dimension": 40,
+    "endpoint_gram_curvature_dimension": 21,
+    "real_half_trace_changes_relative_weight": false,
+    "rows": [
+      {
+        "beta": 0.25,
+        "common_trace_action": 2081.5553660315163,
+        "expected_action": 2081.5553660315163,
+        "real_completion_residual": 0.0,
+        "real_half_trace_action": 2081.5553660315163,
+        "required_gram_curvature_rescaling": 0.5,
+        "residual": 0.0
+      },
+      {
+        "beta": 0.5,
+        "common_trace_action": 4152.545042647807,
+        "expected_action": 4152.545042647806,
+        "real_completion_residual": 9.094947017729282e-13,
+        "real_half_trace_action": 4152.545042647807,
+        "required_gram_curvature_rescaling": 0.7071067811865476,
+        "residual": 9.094947017729282e-13
+      },
+      {
+        "beta": 1.0,
+        "common_trace_action": 8294.524395880388,
+        "expected_action": 8294.524395880388,
+        "real_completion_residual": 0.0,
+        "real_half_trace_action": 8294.524395880388,
+        "required_gram_curvature_rescaling": 1.0,
+        "residual": 0.0
+      },
+      {
+        "beta": 2.0,
+        "common_trace_action": 16578.48310234555,
+        "expected_action": 16578.48310234555,
+        "real_completion_residual": 0.0,
+        "real_half_trace_action": 16578.48310234555,
+        "required_gram_curvature_rescaling": 1.4142135623730951,
+        "residual": 0.0
+      },
+      {
+        "beta": 4.0,
+        "common_trace_action": 33146.40051527588,
+        "expected_action": 33146.40051527588,
+        "real_completion_residual": 0.0,
+        "real_half_trace_action": 33146.40051527588,
+        "required_gram_curvature_rescaling": 2.0,
+        "residual": 0.0
+      }
+    ],
+    "unweighted_common_trace_beta": 1.0
+  },
+  "covariant_connector_test": {
+    "common_endpoint_coimage_rank": 9,
+    "common_endpoint_kernel_dimension": 12,
+    "constraint_shape": [
+      5040,
+      420
+    ],
+    "deterministic_generic_rank": 9,
+    "deterministic_nonzero_singular_values": [
+      16.168040975400956,
+      16.168040975400945,
+      9.89063559864451,
+      9.890635598644497,
+      5.773502691896306,
+      5.77350269189626,
+      5.77350269189626,
+      0.5194020336713704,
+      0.5194020336713667
+    ],
+    "intertwiner_complex_dimension": 13,
+    "largest_rank_is_strictly_below_twenty": true,
+    "smallest_constraint_singular_values": [
+      0.9999999999999997,
+      0.9999999999999993,
+      0.999999999999999,
+      4.3465994179386773e-16,
+      4.006799961654921e-16,
+      4.006799961654921e-16,
+      2.9721334613491623e-16,
+      2.9721334613491623e-16,
+      2.4320543306568377e-16,
+      2.244025626425538e-16,
+      2.244025626425538e-16,
+      2.244025626425538e-16,
+      1.3801744313740352e-16,
+      6.336670144771319e-128,
+      6.336670144771319e-128,
+      4.011799431699609e-129
+    ]
+  },
+  "date": "2026-08-29",
+  "gate": "version8_bimodule_common_curvature_relative_weight_gate",
+  "hessian_test": {
+    "beta_half_passes_origin_selector": true,
+    "critical_beta": 0.6666666666666666,
+    "rows": [
+      {
+        "beta": 0.5,
+        "origin_minimum_eigenvalue": -9.51337870674261,
+        "origin_signature": [
+          20,
+          0,
+          20
+        ],
+        "vacuum_signature_without_isotypic_positive_term": [
+          0,
+          0,
+          40
+        ]
+      },
+      {
+        "beta": 0.6666666666666666,
+        "origin_minimum_eigenvalue": -11.393766425317677,
+        "origin_signature": [
+          20,
+          12,
+          8
+        ],
+        "vacuum_signature_without_isotypic_positive_term": [
+          0,
+          0,
+          40
+        ]
+      },
+      {
+        "beta": 1.0,
+        "origin_minimum_eigenvalue": -15.19389673184746,
+        "origin_signature": [
+          38,
+          0,
+          2
+        ],
+        "vacuum_signature_without_isotypic_positive_term": [
+          0,
+          0,
+          40
+        ]
+      }
+    ],
+    "unweighted_beta_one_passes_origin_selector": false
+  },
+  "verdict": {
+    "beta_half_derived": false,
+    "beta_half_is_stable_representative": true,
+    "beta_one_is_physical_selector_failure": true,
+    "central_metric_family_removed": false,
+    "full_parent_action_obtained": false,
+    "full_rank_covariant_endpoint_transfer_connector_exists": false,
+    "next_gate": "version8_nonlinear_incidence_boundary_connector_gate",
+    "one_unweighted_common_trace_derives_beta_one": true,
+    "real_half_trace_derives_beta_half": false
+  }
+}

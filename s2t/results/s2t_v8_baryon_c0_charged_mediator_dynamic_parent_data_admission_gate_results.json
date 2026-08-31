@@ -1,0 +1,65 @@
+{
+  "available_shapes": {
+    "clock_rate_formula": true,
+    "conditional_carrier_and_connector": true,
+    "resonant_hamiltonian_form": true,
+    "satisfied": 5,
+    "tested": 5,
+    "toeplitz_conveyor_template": true,
+    "trace_normalized_interaction_direction": true
+  },
+  "canonical_cell_embedding": {
+    "isometry": true,
+    "map": "iota: K43 -> K45, e_a maps to e_a",
+    "new_dimension": 45,
+    "old_charge_recovered_by_compression": true,
+    "old_dimension": 43,
+    "old_parent_recovered_by_compression": true,
+    "orthogonal_complement_dimension": 2,
+    "range_rank": 43,
+    "vacuum_preserved": true
+  },
+  "chain_embedding": {
+    "finite_two_cell_representative_exact": true,
+    "gnvw_indices": {
+      "extended": 45,
+      "old": 43
+    },
+    "index_change_requires_real_cell_extension": true,
+    "old_floquet_step_is_restriction_when_new_coupling_is_zero": true,
+    "shift_intertwining": "S45 Iota = Iota S43",
+    "tensor_product_embedding": "Iota=otimes_m iota_m on the vacuum reference chain"
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_charged_mediator_dynamic_parent_data_admission_gate",
+  "next_gate": "version8_baryon_c0_charged_mediator_dynamic_parent_minimal_new_data_gate",
+  "physical_parent_origin": {
+    "conditional_carrier_inherited_from_raw_H21": false,
+    "dimensional_gap_7_gamma_selected": false,
+    "extended_transport_law_selected": false,
+    "physical_coupling_g_selected": false,
+    "physical_tick_duration_selected": false,
+    "satisfied": 0,
+    "tested": 5
+  },
+  "structural_admission": {
+    "canonical_isometry": true,
+    "chain_shift_intertwines": true,
+    "old_42_jump_labels_preserved": true,
+    "old_charge_is_restriction": true,
+    "old_parent_is_restriction": true,
+    "old_reduced_dynamics_is_unchanged_on_zero_new_coupling": true,
+    "orthogonal_complement_is_real_charged_pair": true,
+    "satisfied": 8,
+    "tested": 8,
+    "vacuum_preserved": true
+  },
+  "verdict": {
+    "all_required_shapes_are_present_conditionally": true,
+    "dynamic_parent_data_admitted_structurally_not_derived": true,
+    "extension_is_conservative": true,
+    "new_physical_selector_is_obtained": false,
+    "old_42_channel_process_is_preserved": true
+  }
+}

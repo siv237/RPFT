@@ -40,6 +40,15 @@
 калибровочно-пространственного следа. Выбор `eta`, `f0` или фаз по
 наблюдаемым не считается продолжением теории.
 
+## Подготовительное обновление
+
+[[version8-polar-morita-connector-admission-gate]] проверил первый кандидат
+на примитив A и отверг его физическую каноничность. Два совпавших блока
+`C11` являются соответственно пространством меток стрелок и физическим
+state-модулем. Формальный `T0` требует невыведенного `j in U(11)`, которое
+не выбирается полярной, Hodge- или индексной структурой. Поэтому условия
+настоящего заключения пока не выполнены.
+
 ## Links
 
 - [[version7-rank-change-parent-program]]
@@ -47,6 +56,7 @@
 - [[version7-minimal-curvature-support-trace-gate]]
 - [[version6-final-conclusion-and-next-program]]
 - [[global-theorem-and-no-go-ledger]]
+- [[version8-polar-morita-connector-admission-gate]]
 
 ## Source Notes
 

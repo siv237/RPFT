@@ -1,0 +1,153 @@
+\chapter{Parent-origin полной портальной матрицы двух источников}
+\label{ch:v8-extra-mass-two-source-portal-origin}
+
+\section{Прямая сумма не создаёт портал}
+
+Пусть $X_{BM}$ несёт активные радиусы
+$T_B=\Tr(BB^\dagger)$ и $T_M=\Tr(MM^\dagger)$, а
+$h^0=aA+bB$ действует на отдельном центральном носителе. Для буквальной
+прямой суммы
+\begin{equation}
+ X_\oplus=X_{BM}\oplus h^0
+ \label{eq:v8-two-source-portal-direct-sum}
+\end{equation}
+любой полиномиальный момент аддитивен:
+\begin{equation}
+ \Tr X_\oplus^n=\Tr X_{BM}^n+\Tr(h^0)^n.
+ \label{eq:v8-two-source-portal-additivity}
+\end{equation}
+Поэтому все смешанные производные по $(T_B,T_M)$ и $(a,b)$ равны нулю.
+Для ненулевого портала необходим общий блоковый оператор, а не соседство
+двух функционалов.
+
+\section{Минимальный общий кубический блок}
+
+Для одного скалярного ребра $F$ с $T=\Tr(FF^\dagger)$ и центральным
+значением $\lambda$ рассмотрим
+\begin{equation}
+ X(\lambda,F)=\begin{pmatrix}\lambda I&F\\F^\dagger&0\end{pmatrix}.
+ \label{eq:v8-two-source-portal-common-block}
+\end{equation}
+Прямое умножение даёт
+\begin{equation}
+ \Tr X^3=(\dim I)\lambda^3+3\lambda T.
+ \label{eq:v8-two-source-portal-cubic-identity}
+\end{equation}
+Итак, кубический момент действительно создаёт линейный портал. Именно
+конкретная матричная конечная геометрия определяет допустимые скалярные
+связи spectral action \cite{v8-two-source-portal-krajewski}; формула сама
+по себе не выбирает вложение $F$ в центральные сектора.
+
+На блоках $(Y,u,d)$ направления $A,B$ имеют charge-векторы
+\begin{equation}
+ q_Y=(0,-3),\qquad q_u=(1,1),\qquad q_d=(-1,1),
+ \label{eq:v8-two-source-portal-charge-vectors}
+\end{equation}
+то есть $\lambda_e=q_e\cdot(a,b)$. Назначив носителям $T_B,T_M$ сектора
+$e_B,e_M\in\{Y,u,d\}$ и коэффициенты $c_B,c_M$, получаем
+\begin{equation}
+ V_3=3c_BT_B\,q_{e_B}\cdot(a,b)
+     +3c_MT_M\,q_{e_M}\cdot(a,b)+V_{\rm self}^{(3)}.
+ \label{eq:v8-two-source-portal-incidence-potential}
+\end{equation}
+
+\section{Ранговая классификация incidence-назначений}
+
+Портальная матрица формы определяется строками
+\begin{equation}
+ Q(e_B,e_M)=\begin{pmatrix}q_{e_B}\\q_{e_M}\end{pmatrix}.
+ \label{eq:v8-two-source-portal-incidence-matrix}
+\end{equation}
+Среди девяти упорядоченных назначений три диагональных имеют ранг один, а
+шесть назначений в разные сектора имеют ранг два:
+\begin{equation}
+ N_{\rank Q=1}=3,qquad N_{\rank Q=2}=6,
+ \qquad \det Q\in\{0,\pm2,\pm3\}.
+ \label{eq:v8-two-source-portal-rank-menu}
+\end{equation}
+При двух независимых коэффициентах карта в источники равна
+\begin{equation}
+ \begin{pmatrix}j_A\\j_B\end{pmatrix}
+ =-3\begin{pmatrix}T_Bq_{e_B}^{\,T}&T_Mq_{e_M}^{\,T}\end{pmatrix}
+ \begin{pmatrix}c_B\\c_M\end{pmatrix},
+ \qquad
+ |\det|\in\{108,162\}
+ \label{eq:v8-two-source-portal-two-coefficient-map}
+\end{equation}
+для $T_B=3,T_M=2$ и $e_B\ne e_M$. Следовательно, условный общий оператор
+может реализовать полную rank-two source-map.
+
+Один общий коэффициент $c_3$ оставляет только дискретное меню лучей:
+\begin{equation}
+ \frac1{3c_3}(j_A,j_B)
+ \in\{(2,-7),(-2,-7),(3,-3),(1,5),(-3,-3),(-1,5)\}.
+ \label{eq:v8-two-source-portal-single-coefficient-rays}
+\end{equation}
+Ни один такой однопараметрический луч не покрывает плоскость источников.
+
+\section{Почему parent-origin остаётся открытым}
+
+Текущий родитель содержит только чётные моменты общего спектрального
+оператора. Поэтому
+\begin{equation}
+ c_3^{\rm inherited}=c_B^{\rm inherited}=c_M^{\rm inherited}=0.
+ \label{eq:v8-two-source-portal-odd-coefficients-zero}
+\end{equation}
+Кроме того, активные матрицы $B,M$ и центральный носитель дополнительных
+рёбер сейчас входят раздельными блоками. Для превращения
+\eqref{eq:v8-two-source-portal-cubic-identity} в член действия нужны новые
+типизированные incidence-вложения. Новые скалярные поля и связи в конечной
+спектральной геометрии действительно возможны, но требуют изменения её
+Dirac-блоков \cite{v8-two-source-portal-stephan}.
+
+Шесть rank-two назначений не эквивалентны: гиперзаряды и цвет различают
+$Y,u,d$, а сохранённая симметрия не переставляет эти сектора. Поэтому
+никакое из них не выбирается текущей группой. Реестры равны
+\begin{equation}
+ N_{\rm conditional\ operator\ shape}=7/7,
+ \qquad N_{\rm incidence\ selector}=0/5,
+ \qquad N_{\rm parent\ origin}=0/4.
+ \label{eq:v8-two-source-portal-ledgers}
+\end{equation}
+
+\begin{theorem}[Условная rank-two кубическая реализация]
+Минимальный общий блок удовлетворяет $\Tr X^3=d\lambda^3+3\lambda T$.
+Если два ненулевых радиуса назначены двум различным центральным секторам и
+имеют независимые кубические коэффициенты, карта коэффициентов в источники
+имеет ненулевой определитель $108$ или $162$. Поэтому полная портальная
+форма существует условно.
+\end{theorem}
+
+\begin{nogocriterion}[Меню incidence не является parent-origin]
+Нельзя объявлять полную portal-matrix выведенной: прямой сумме недостаёт
+смешанных моментов, текущий parent не содержит нечётных коэффициентов, а
+шесть rank-two incidence-назначений дают разные физические лучи. Выбор
+назначения после просмотра желаемых щелей является ручным селектором.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item прямая сумма создаёт портал: \textbf{нет};
+\item минимальный смешанный момент: \textbf{кубический};
+\item коэффициент $\lambda T$ в $\Tr X^3$: \textbf{$3$};
+\item центральных charge-векторов: \textbf{три};
+\item упорядоченных incidence-назначений: \textbf{девять};
+\item rank-two назначений: \textbf{шесть};
+\item два независимых кубических коэффициента достаточны: \textbf{да условно};
+\item один общий коэффициент покрывает плоскость: \textbf{нет};
+\item inherited odd coefficients: \textbf{ноль};
+\item conditional shape: \textbf{$7/7$};
+\item incidence selector: \textbf{$0/5$};
+\item parent-origin: \textbf{$0/4$};
+\item следующий гейт: \textbf{селектор кубического incidence-назначения}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_portal_matrix_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-two-source-portal-krajewski} T.~Krajewski,
+\emph{Constraints on the Scalar Potential from Spectral Action Principle},
+arXiv:hep-th/9803199.
+\bibitem{v8-two-source-portal-stephan} C.~A.~Stephan,
+\emph{New Scalar Fields in Noncommutative Geometry}, arXiv:0901.4676.
+\end{thebibliography}

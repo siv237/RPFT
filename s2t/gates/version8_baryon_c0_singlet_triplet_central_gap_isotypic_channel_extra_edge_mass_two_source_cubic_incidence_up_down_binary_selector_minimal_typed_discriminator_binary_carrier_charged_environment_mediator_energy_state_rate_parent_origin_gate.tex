@@ -1,0 +1,163 @@
+\chapter{Parent-origin энергии, состояния и скорости charged mediator}
+\label{ch:v8-charged-mediator-energy-state-rate-origin}
+
+\section{Симметрии оставляют одну свободную щель}
+
+На минимальном Real-замкнутом environment-носителе
+$\{|0\rangle,|+\rangle,|-\rangle\}$ имеем
+\begin{equation}
+ Y_E=\operatorname{diag}(0,1,-1),
+ \qquad J_E|+\rangle=|-\rangle.
+ \label{eq:v8-mediator-origin-charge-real-data}
+\end{equation}
+Вещественный самосопряжённый Hamiltonian, коммутирующий с $Y_E$ и $J_E$,
+обязан иметь форму
+\begin{equation}
+ H_E=\operatorname{diag}(\varepsilon_0,\varepsilon_c,\varepsilon_c).
+ \label{eq:v8-mediator-origin-hamiltonian-class}
+\end{equation}
+Линейные ограничения имеют ранг четыре на шестимерном
+$\operatorname{Sym}_3(\mathbb R)$, поэтому допустимый класс двумерен. После
+удаления общего energy shift остаётся ровно одна щель:
+\begin{equation}
+ H_E\sim\Delta_E(P_++P_-),
+ \qquad \Delta_E=\varepsilon_c-\varepsilon_0.
+ \label{eq:v8-mediator-origin-essential-gap}
+\end{equation}
+Нейтральная линия является основным состоянием только при
+\begin{equation}
+ \Delta_E>0,
+ \qquad\text{а резонанс требует}\qquad
+ \Delta_E=7\gamma.
+ \label{eq:v8-mediator-origin-ground-and-resonance}
+\end{equation}
+Ни gauge-, ни Real-, ни family-симметрия не выбирает величину или знак
+$\Delta_E$.
+
+\section{Инвариантное состояние образует отрезок}
+
+Общий gauge- и Real-инвариантный density operator равен
+\begin{equation}
+ \rho_E=\operatorname{diag}(p_0,p_c,p_c),
+ \qquad p_0+2p_c=1,\qquad p_0,p_c\geq0.
+ \label{eq:v8-mediator-origin-state-simplex}
+\end{equation}
+В частности, одинаково допустимы два разных состояния
+\begin{equation}
+ \rho_0=\operatorname{diag}(1,0,0),
+ \qquad
+ \rho_c=\operatorname{diag}(0,1/2,1/2).
+ \label{eq:v8-mediator-origin-state-witnesses}
+\end{equation}
+Следовательно, симметрия не выбирает neutral vacuum. Если уже задана
+положительная щель и $x=e^{-\beta\Delta_E}$, Gibbs-state имеет вид
+\begin{equation}
+ \rho_{\beta}=\frac{\operatorname{diag}(1,x,x)}{1+2x}.
+ \label{eq:v8-mediator-origin-gibbs-state}
+\end{equation}
+При конечном $\beta\Delta_E$ он имеет ранг три, причём
+\begin{equation}
+ \Tr\rho_\beta^2=\frac{1+2x^2}{(1+2x)^2}<1,
+ \qquad
+ \det\rho_\beta=\frac{x^2}{(1+2x)^3}>0.
+ \label{eq:v8-mediator-origin-gibbs-purity}
+\end{equation}
+Точный vacuum получается лишь как $\beta\Delta_E\to\infty$ или отдельной
+чистой подготовкой.
+
+\section{Нормировка connector не задаёт rate}
+
+Следовая Gram-нормировка фиксирует форму двух квадратур, но interaction
+\begin{equation}
+ G_g=g\left(L_\downarrow\otimes b_+
+ +L_\uparrow\otimes b_+^\dagger\right)
+ \label{eq:v8-mediator-origin-free-coupling}
+\end{equation}
+допускает всякое $g>0$. Два свидетеля $g_1=1$ и $g_2=2$ сохраняют carrier,
+симметрии и резонанс, но их weak-limit rates относятся как
+\begin{equation}
+ \frac{\Gamma_2}{\Gamma_1}=\frac{g_2^2}{g_1^2}=4.
+ \label{eq:v8-mediator-origin-rate-witness}
+\end{equation}
+При физической clock-параметризации сохраняется лишь условная формула
+\begin{equation}
+ \Gamma=\frac{E_{\rm int}^2\tau_C}{\hbar^2}
+ =\chi^2\frac{E_C}{\hbar}.
+ \label{eq:v8-mediator-origin-clock-rate}
+\end{equation}
+Значения $E_C$ и $\chi$ ранее не были выведены.
+
+\section{Существующая цепь не содержит новый канал}
+
+Тёплиц-конвейер предоставляет переиспользуемый структурный шаблон
+\begin{equation}
+ V=(I\otimes S_{\rm chain})U_{\rm col}^{(0)},
+ \qquad
+ \Tr_{\rm chain}\operatorname{Ad}(V)^n
+ (\rho\otimes\omega_{\rm vac})=\Phi_h^n(\rho).
+ \label{eq:v8-mediator-origin-chain-template}
+\end{equation}
+Но его текущая ячейка содержит вакуум и $42$ старые jump-метки. Новый
+singlet connector не входит в этот frame:
+\begin{equation}
+ \mathcal K_{\rm cell}^{\rm old}=\mathbb C|0\rangle\oplus\mathbb C^{42},
+ \qquad b_+^{(s)}\notin\mathcal F_{42}.
+ \label{eq:v8-mediator-origin-old-chain-mismatch}
+\end{equation}
+Поэтому требуется новая одинаковая cell-extension и заранее приготовленный
+product vacuum. Их parent-origin не следует из существования шаблона.
+
+Условная форма динамических данных закрыта:
+\begin{equation}
+ N_{\rm conditional\ shape}=8/8.
+ \label{eq:v8-mediator-origin-conditional-ledger}
+\end{equation}
+Но пять физических входов остаются невыведенными:
+\begin{equation}
+ N_{\rm parent\ origin}=0/5:
+ \quad\{\Delta_E=7\gamma,\rho_E=|0\rangle\langle0|,
+ g,\text{new chain cell},(E_C,\chi)\}.
+ \label{eq:v8-mediator-origin-parent-ledger}
+\end{equation}
+
+\begin{theorem}[Однопараметрический Hamiltonian без динамического origin]
+Gauge- и Real-симметрии сокращают допустимый environment-Hamiltonian до
+одной существенной щели, но не выбирают её знак или значение. Инвариантные
+states образуют отрезок, connector допускает свободный coupling, а старый
+42-channel conveyor не содержит новый jump. Поэтому energy/state/rate
+parent-origin равен $0/5$.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет сборки parent из условных слоёв]
+Нельзя объявлять $\Delta_E=7\gamma$ следствием симметрии, neutral endpoint
+--- вакуумом без state-selector, следовую нормировку --- физическим
+coupling, а старый Toeplitz-шаблон --- уже подготовленной цепью нового
+канала. Формула $\Gamma=\chi^2E_C/\hbar$ не фиксирует rate без обоих входов.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item допустимый Real/gauge Hamiltonian: \textbf{$\operatorname{diag}(\varepsilon_0,\varepsilon_c,\varepsilon_c)$};
+\item существенных щелей: \textbf{$1$};
+\item resonance выбран симметрией: \textbf{нет};
+\item invariant state-space: \textbf{отрезок};
+\item neutral vacuum выбран симметрией: \textbf{нет};
+\item конечный Gibbs-state чист: \textbf{нет};
+\item physical coupling выбран Gram-нормировкой: \textbf{нет};
+\item rate witness $g_2/g_1=2$: \textbf{$\Gamma_2/\Gamma_1=4$};
+\item старый 42-cell содержит новый connector: \textbf{нет};
+\item conditional shape: \textbf{$8/8$};
+\item energy/state/rate parent-origin: \textbf{$0/5$};
+\item следующий гейт: \textbf{минимальная динамическая parent-архитектура}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_energy_state_rate_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-mediator-origin-attal} S.~Attal and Y.~Pautrat,
+\emph{From Repeated to Continuous Quantum Interactions},
+Ann. Henri Poincar\'e 7 (2006) 59; arXiv:math-ph/0311002.
+\bibitem{v8-mediator-origin-bruneau} L.~Bruneau, A.~Joye and M.~Merkli,
+\emph{Repeated Interactions in Open Quantum Systems},
+J. Math. Phys. 55 (2014) 075204; arXiv:1305.2472.
+\end{thebibliography}

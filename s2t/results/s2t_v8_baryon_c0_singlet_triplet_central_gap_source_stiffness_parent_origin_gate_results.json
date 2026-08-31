@@ -1,0 +1,104 @@
+{
+  "conditional_implementation": {
+    "functional": "a2 Tr(h0^2)-g Tr(Gamma0 h0)",
+    "j": "3 g/2",
+    "m2": "3 a2/2",
+    "pullback": "3 a2 lambda^2/4-3 g lambda/2",
+    "same_vacuum_witnesses": [
+      {
+        "a2": "2/3",
+        "g": "2/3",
+        "j": 1,
+        "lambda_star": 1,
+        "m2": 1
+      },
+      {
+        "a2": "4/3",
+        "g": "4/3",
+        "j": 2,
+        "lambda_star": 1,
+        "m2": 2
+      }
+    ],
+    "shape_ledger": "2/2",
+    "source_shape_realized": true,
+    "stiffness_shape_realized": true
+  },
+  "current_parent_restriction": {
+    "central_source_j": 0,
+    "central_stiffness_m2": 0,
+    "contains_covariant_M3_endpoint": false,
+    "contains_family_SO3_action": false,
+    "contains_new_triplet_state": false
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_source_stiffness_parent_origin_gate",
+  "marked_trace_audit": {
+    "casimir_linear_response": "3 lambda/2",
+    "centered_casimir": "2 Q",
+    "centered_grading": "2 Q",
+    "grading_linear_response": "3 lambda/2",
+    "independent_source_directions": 1,
+    "insertion_coefficient_selected": false,
+    "marks_belong_to_current_parent": false
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_dynamical_source_carrier_admission_gate",
+  "parent_origin_ledger": {
+    "KMS_or_target": false,
+    "casimir_marked_trace": false,
+    "derived_channels": 0,
+    "grading_marked_trace": false,
+    "noise_hessian_pullback": false,
+    "old_parent_restriction": false,
+    "quadratic_trace_fixed_coefficient": false,
+    "scalar_background_spectral_trace": false,
+    "tested_channels": 8,
+    "unmarked_linear_trace": false
+  },
+  "typed_obstructions": {
+    "KMS_selects_action_coefficients": false,
+    "noise_42_hessian_has_canonical_pullback_to_new_central_line": false,
+    "nonzero_Q_background_would_be_circular": true,
+    "scalar_background_creates_source": false
+  },
+  "unmarked_trace_audit": {
+    "all_linear_terms_zero": true,
+    "background": "epsilon I4",
+    "direction": "Q=P3-3 I4/4",
+    "first_derivatives_at_lambda_zero": {
+      "1": "0",
+      "2": "0",
+      "3": "0",
+      "4": "0",
+      "5": "0",
+      "6": "0"
+    },
+    "origin_curvature_for_sum_a_n_Tr_h_n": "3 a2/2",
+    "second_derivatives_at_lambda_zero": {
+      "1": "0",
+      "2": "3/2",
+      "3": "9*epsilon/2",
+      "4": "9*epsilon**2",
+      "5": "15*epsilon**3",
+      "6": "45*epsilon**4/2"
+    },
+    "stiffness_coefficient_selected": false,
+    "tested_moment_degrees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "trace_Q": 0
+  },
+  "verdict": {
+    "current_parent_realizes_minimal_architecture": false,
+    "minimal_next_structure": "dynamical Real scalar source carrier with a derived nonzero expectation",
+    "source_and_stiffness_shapes_conditionally_available": true,
+    "source_j_derived_by_current_parent": false,
+    "stiffness_m2_derived_by_current_parent": false
+  }
+}

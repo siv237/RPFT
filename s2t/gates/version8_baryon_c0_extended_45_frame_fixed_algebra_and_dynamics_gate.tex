@@ -1,0 +1,117 @@
+\chapter{Неподвижная алгебра и динамика расширенного 45-кадра}
+\label{ch:v8-baryon-c0-extended-45-frame-fixed-algebra-and-dynamics-gate}
+
+Минимальное расширение предыдущего гейта имеет ортогональное разложение
+\begin{equation}
+ H_{23}=H_{21}\oplus H_{\mathrm n},
+ \qquad H_{\mathrm n}=\mathbb C s_0\oplus\mathbb C a_0,
+ \qquad P_{21}+P_{\mathrm n}=I_{23}.
+ \label{eq:v8-baryon-c0-h23-old-new-splitting}
+\end{equation}
+Старые $42$ направления продолжаются нулём на $H_{\mathrm n}$, а новые
+$X,Y,H$ поддержаны только на $H_{\mathrm n}$. Поэтому генератор
+\begin{equation}
+ \mathcal L_{45}(A)=\sum_{R\in\mathcal F_{45}}
+ \left(RAR-\frac12\{R^2,A\}\right)
+ \label{eq:v8-baryon-c0-l45-gksl}
+\end{equation}
+является точным унитальным сохраняющим след GKSL-генератором, но его
+операторный граф имеет две компоненты связности.
+
+\section{Точный совместный коммутант}
+
+Для самосопряжённых скачков справедливо дирахлеевское тождество
+\begin{equation}
+ -\langle A,\mathcal L_{45}(A)\rangle_{\mathrm{HS}}
+ =\frac12\sum_{R\in\mathcal F_{45}}\lVert[R,A]\rVert_{\mathrm{HS}}^2.
+ \label{eq:v8-baryon-c0-l45-dirichlet-identity}
+\end{equation}
+Следовательно, неподвижная алгебра совпадает с совместным коммутантом
+скачков.
+
+Старый кадр имеет скалярный коммутант на $H_{21}$ и нулевое общее ядро:
+\begin{equation}
+ \mathcal F_{42}'\big|_{H_{21}}=\mathbb C I_{21},
+ \qquad \bigcap_{a=1}^{42}\ker F_a=\{0\}.
+ \label{eq:v8-baryon-c0-old-frame-irreducible-kernel-free}
+\end{equation}
+Новый пакет является паулиевской тройкой и порождает полный
+$M_2(\mathbb C)$:
+\begin{equation}
+ \{X,Y,H\}'\big|_{H_{\mathrm n}}=\mathbb C I_2.
+ \label{eq:v8-baryon-c0-new-pauli-commutant}
+\end{equation}
+Отсутствие общего ядра убирает старо-новые блоки коммутанта, но ни один
+скачок не отождествляет два центральных скаляра. Поэтому
+\begin{equation}
+ \operatorname{Fix}(\mathcal L_{45})
+ =\mathbb C P_{21}\oplus\mathbb C P_{\mathrm n},
+ \qquad \dim_{\mathbb C}\operatorname{Fix}(\mathcal L_{45})=2.
+ \label{eq:v8-baryon-c0-l45-fixed-algebra-c2}
+\end{equation}
+
+\section{Что затухает и что сохраняется}
+
+Обе центральные популяции являются точными интегралами движения:
+\begin{equation}
+ \mathcal L_{45}(P_{21})=\mathcal L_{45}(P_{\mathrm n})=0,
+ \qquad
+ \frac{d}{dt}\Tr(P_j\rho_t)=0.
+ \label{eq:v8-baryon-c0-l45-sector-populations-fixed}
+\end{equation}
+Внутри нового блока три бесследовых направления затухают с точной скоростью
+\begin{equation}
+ \mathcal L_{45}(X)=-4X,
+ \qquad \mathcal L_{45}(Y)=-4Y,
+ \qquad \mathcal L_{45}(H)=-4H.
+ \label{eq:v8-baryon-c0-new-block-depolarizing-rate}
+\end{equation}
+Пусть $Q_{42}=\sum_aF_a^2$. Точный аудит даёт
+$Q_{42}>0$ и $\rank Q_{42}=21$. Для старо-новой когерентности
+$B\in\operatorname{Hom}(H_{\mathrm n},H_{21})$ имеем
+\begin{equation}
+ \mathcal L_{45}\!\begin{pmatrix}0&B\\B^*&0\end{pmatrix}_{21,\mathrm n}
+ =-\frac12
+ \begin{pmatrix}
+ 0&Q_{42}B+3B\\B^*Q_{42}+3B^*&0
+ \end{pmatrix},
+ \label{eq:v8-baryon-c0-old-new-coherence-decay}
+\end{equation}
+так что когерентности затухают, но перенос вероятности между двумя
+компонентами отсутствует.
+
+\begin{theorem}[Двухцентровая динамика 45-кадра]
+Расширенный самосопряжённый кадр задаёт корректную полностью положительную
+марковскую динамику. Её неподвижная алгебра равна
+$\mathbb C P_{21}\oplus\mathbb C P_{\mathrm n}$, поэтому процесс не
+примитивен на $H_{23}$. Новый $M_2$-блок внутренне деполяризуется, а все
+старо-новые когерентности затухают.
+\end{theorem}
+
+\begin{nogocriterion}[Внутренний linking-блок не сшивает старый носитель]
+Матрица $E=|s_0\rangle\langle a_0|$ связывает только две новые линии.
+Без хотя бы одного ненулевого оператора
+\begin{equation}
+ P_{21}VP_{\mathrm n}\ne0
+ \label{eq:v8-baryon-c0-required-old-new-connector}
+\end{equation}
+нельзя считать карту $c_0$ динамически вложенной в прежний 42-носитель.
+Условное значение $c_0=4$ остаётся нормировкой изолированного нового блока.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item скачков: \textbf{$45$};
+\item полный GKSL: \textbf{да};
+\item старый общий kernel: \textbf{$0$};
+\item новый блочный коммутант: \textbf{$\mathbb C I_2$};
+\item полная неподвижная алгебра: \textbf{$\mathbb C^2$};
+\item примитивность на $H_{23}$: \textbf{нет};
+\item новые бесследовые моды: \textbf{затухают со скоростью $4$};
+\item старо-новые когерентности: \textbf{затухают};
+\item перенос центральной популяции: \textbf{отсутствует};
+\item следующий гейт: \textbf{классификация gauge-ковариантного
+старо-нового коннектора}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_extended_45_frame_fixed_algebra_and_dynamics_gate_results.json}.

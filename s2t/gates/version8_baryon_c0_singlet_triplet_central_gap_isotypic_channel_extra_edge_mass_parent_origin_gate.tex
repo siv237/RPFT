@@ -1,0 +1,187 @@
+\chapter{Parent-origin масс трёх дополнительных рёбер}
+\label{ch:v8-baryon-c0-extra-edge-mass-parent-origin}
+
+\section{Три неэквивалентных блока}
+
+После полнографового замыкания вне прямоугольников $B$ и $M$ остаются
+ровно три комплексных поля. Их калибровочные типы наследуются от концов:
+\begin{equation}
+ R_Y=(1,2)_{1/2},\qquad
+ R_u=(3,1)_{5/3},\qquad
+ R_d=(3,1)_{2/3},
+ \label{eq:v8-extra-edge-mass-representations}
+\end{equation}
+а комплексные размерности равны
+\begin{equation}
+ (d_Y,d_u,d_d)=(2,3,3).
+ \label{eq:v8-extra-edge-mass-dimensions}
+\end{equation}
+Эти представления попарно неэквивалентны. Поэтому equivariant-блоки между
+ними отсутствуют:
+\begin{equation}
+ \operatorname{Hom}_{G}(R_i,R_j)=0\qquad(i\ne j).
+ \label{eq:v8-extra-edge-mass-schur-separation}
+\end{equation}
+Это различие существенно: диаграмма конечной спектральной тройки фиксирует
+представления и допустимые Dirac-связи, но сама по себе не отождествляет
+следы разных центральных компонент \cite{v8-extra-edge-mass-krajewski,
+v8-extra-edge-mass-cacic}.
+
+\section{Положительная форма из одного оператора}
+
+Для каждого ребра введём самосопряжённый блок
+\begin{equation}
+ F_e(z_e)=
+ \begin{pmatrix}
+ 0&z_e I_{d_e}\\
+ \overline z_e I_{d_e}&0
+ \end{pmatrix},
+ \qquad e\in\{Y,u,d\}.
+ \label{eq:v8-extra-edge-mass-block}
+\end{equation}
+Тогда один блочно-диагональный оператор
+\begin{equation}
+ F_z=F_Y\oplus F_u\oplus F_d
+ \label{eq:v8-extra-edge-mass-common-operator}
+\end{equation}
+даёт при физическом полуследе точную положительную форму
+\begin{equation}
+ \frac12\Tr F_z^2
+ =2|z_Y|^2+3|z_u|^2+3|z_d|^2.
+ \label{eq:v8-extra-edge-mass-unweighted-half-trace}
+\end{equation}
+Следовательно, общий операторный носитель действительно порождает все три
+необходимых квадратичных слагаемых. Незавешенный матричный след предлагает
+отношение
+\begin{equation}
+ \mu_Y:\mu_u:\mu_d=2:3:3.
+ \label{eq:v8-extra-edge-mass-unweighted-ratio}
+\end{equation}
+Такое появление скалярных связей из спектрального действия согласуется с
+общей конструкцией spectral action и её конечными расширениями
+\cite{v8-extra-edge-mass-spectral-action,v8-extra-edge-mass-stephan}.
+
+\section{Почему отношение ещё не выведено}
+
+Алгебра трёх блоков сохраняет центральные проекторы $P_Y,P_u,P_d$.
+Поэтому вместе с незавешенным следом допустимо всё положительное семейство
+\begin{equation}
+ G_p=p_YP_Y+p_uP_u+p_dP_d,
+ \qquad p_Y,p_u,p_d>0.
+ \label{eq:v8-extra-edge-mass-central-metric}
+\end{equation}
+Оно меняет физическую форму на
+\begin{equation}
+ \frac12\Tr(G_pF_z^2)
+ =2p_Y|z_Y|^2+3p_u|z_u|^2+3p_d|z_d|^2.
+ \label{eq:v8-extra-edge-mass-central-family}
+\end{equation}
+Например, две верные положительные метрики дают
+\begin{equation}
+ (p_Y,p_u,p_d)=(1,1,1)\mapsto(2,3,3),\qquad
+ (1,2,1)\mapsto(2,6,3).
+ \label{eq:v8-extra-edge-mass-two-traces}
+\end{equation}
+Их массовые векторы не пропорциональны. После удаления общего масштаба
+остаётся двумерный положительный симплекс относительных весов:
+\begin{equation}
+ \mathbb P\mathcal C_p\simeq
+ \{[p_Y:p_u:p_d]\mid p_e>0\},\qquad
+ \dim\mathbb P\mathcal C_p=2.
+ \label{eq:v8-extra-edge-mass-projective-simplex}
+\end{equation}
+Real-удвоение и полуслед умножают все три коэффициента одинаково и этот
+симплекс не устраняют. Превратить прямую сумму в один простой фактор мог бы
+только новый физический внедиагональный коннектор; но
+\eqref{eq:v8-extra-edge-mass-schur-separation} запрещает его при сохранении
+текущей gauge-группы.
+
+\section{Калибровочные индексы не являются селектором}
+
+В нормировке $T(\mathbf2)=T(\mathbf3)=1/2$ матрица трёх gauge-индексов,
+столбцы которой упорядочены как $(Y,u,d)$, равна
+\begin{equation}
+ \mathcal I=
+ \begin{pmatrix}
+ 1/2&25/3&4/3\\
+ 1/2&0&0\\
+ 0&1/2&1/2
+ \end{pmatrix},
+ \qquad
+ \det\mathcal I=-\frac74,\quad \rank\mathcal I=3.
+ \label{eq:v8-extra-edge-mass-gauge-index-matrix}
+\end{equation}
+Полный ранг означает отсутствие предсказывающего соотношения между тремя
+массами: три независимых секторных коэффициента могут воспроизвести любой
+массовый вектор. В частности,
+\begin{equation}
+ \mathcal I^{\mathsf T}
+ \begin{pmatrix}0\\4\\6\end{pmatrix}
+ =\begin{pmatrix}2\\3\\3\end{pmatrix}.
+ \label{eq:v8-extra-edge-mass-gauge-reconstruction}
+\end{equation}
+Это реконструкция выбранного отношения, а не его вывод; более того, она
+требует нулевого $U(1)$-коэффициента. Абсолютный масштаб также несёт
+спектральный момент и cutoff-масштаб, которые этот гейт не фиксирует.
+
+Реестры принимают вид
+\begin{equation}
+ N_{\rm trace\ shape}=5/5,\qquad
+ N_{\rm relative\ mass\ origin}=0/5,\qquad
+ N_{\rm absolute\ scale\ origin}=0/2.
+ \label{eq:v8-extra-edge-mass-ledgers}
+\end{equation}
+
+\begin{theorem}[Условный следовой parent трёх масс]
+Один самосопряжённый блочный оператор порождает положительные нормы всех
+трёх дополнительных рёбер. При незавешенном физическом полуследе их
+коэффициенты относятся как $2:3:3$. Однако это отношение является свойством
+выбранного представления trace, а не следствием текущей абстрактной
+алгебры: её трёхмерный центр оставляет две независимые относительные
+координаты.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет невыведенного незавешенного следа]
+Нельзя объявлять отношение $2:3:3$ предсказанием до выбора единственного
+верного trace-state или построения простого factor-parent. Нельзя заменять
+эту недостающую операцию подгонкой трёх gauge-секторных коэффициентов:
+полноранговая индексная матрица реконструирует, но не выбирает массовый
+вектор.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item дополнительных представлений: \textbf{три попарно неэквивалентных};
+\item их комплексные размерности: \textbf{$(2,3,3)$};
+\item единый блочный оператор: \textbf{построен};
+\item положительная квадратичная trace-форма: \textbf{получена};
+\item незавешенное отношение: \textbf{$2:3:3$};
+\item Real-полуслед меняет отношение: \textbf{нет};
+\item размерность центра: \textbf{$3$};
+\item относительных trace-свобод: \textbf{две};
+\item gauge-index matrix: \textbf{ранг $3$, определитель $-7/4$};
+\item gauge-индексы выбирают отношение: \textbf{нет};
+\item trace-shape ledger: \textbf{$5/5$};
+\item relative-mass-origin ledger: \textbf{$0/5$};
+\item absolute-scale-origin ledger: \textbf{$0/2$};
+\item полный parent-origin масс: \textbf{не закрыт};
+\item следующий гейт: \textbf{селектор центрального trace-симплекса}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-extra-edge-mass-spectral-action}
+A.~H.~Chamseddine, A.~Connes,
+\emph{The Spectral Action Principle}, arXiv:hep-th/9606001.
+\bibitem{v8-extra-edge-mass-krajewski}
+T.~Krajewski,
+\emph{Classification of Finite Spectral Triples}, arXiv:hep-th/9701081.
+\bibitem{v8-extra-edge-mass-cacic}
+B.~\v{C}a\'ci\'c,
+\emph{Moduli Spaces of Dirac Operators for Finite Spectral Triples},
+arXiv:0902.2068.
+\bibitem{v8-extra-edge-mass-stephan}
+C.~A.~Stephan,
+\emph{New Scalar Fields in Noncommutative Geometry}, arXiv:0901.4676.
+\end{thebibliography}

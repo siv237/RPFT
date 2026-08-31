@@ -1,0 +1,66 @@
+{
+  "anisotropic_witnesses": {
+    "different_selected_pure_states": true,
+    "ground_projector_A": "e0 e0^T",
+    "ground_projector_B": "e1 e1^T",
+    "h_A": "diag(0,1,2)",
+    "h_B": "diag(2,0,1)",
+    "same_declared_gauge_and_real_symmetries": true
+  },
+  "candidate_ledger": {
+    "entropy_minimum": {
+      "selects_direction": false,
+      "selects_purity": true
+    },
+    "normalized_trace_or_isotropic_gibbs": {
+      "selects_direction": false,
+      "selects_purity": false
+    },
+    "real_structure": {
+      "selects_direction": false,
+      "selects_purity": false
+    },
+    "scalar_gauge_action": {
+      "selects_direction": false,
+      "selects_purity": false
+    },
+    "version6_exterior_square_purity_parent": {
+      "selects_direction": false,
+      "selects_purity": true,
+      "typed_current_parent_origin": false
+    }
+  },
+  "canonical_states": {
+    "isotropic_gibbs_state": "I3/3",
+    "normalized_trace_entropy": "log(3)",
+    "normalized_trace_rank": 3,
+    "normalized_trace_state": "I3/3",
+    "pure_state_entropy": "0"
+  },
+  "date": "2026-08-30",
+  "environment": {
+    "all_density_matrices_gauge_invariant": true,
+    "complex_dimension": 3,
+    "real_pure_state_orbit": "RP^2",
+    "scalar_gauge_action": true,
+    "state_space": "D_3"
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_multiplicity_environment_pure_state_selector_gate",
+  "next_gate": "version8_baryon_c0_multiplicity_environment_hamiltonian_minimal_data_gate",
+  "purity_functional": {
+    "formula": "2(1-Tr(rho^2))",
+    "real_minimum_set": "RP^2",
+    "selects_direction": false,
+    "value_on_I3_over_3": "4/3",
+    "value_on_rank_one": "0"
+  },
+  "verdict": {
+    "candidate_count": 5,
+    "direction_selected": false,
+    "new_anisotropic_hamiltonian_data_required": true,
+    "purity_can_be_selected_conditionally": true,
+    "single_c0_map_derived": false,
+    "unique_pure_state_selectors": 0
+  }
+}

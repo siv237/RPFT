@@ -1,0 +1,68 @@
+{
+  "architectural_status": {
+    "conditional_gap_shape_available": true,
+    "conditional_shape_sources": [
+      "grading",
+      "SO3 Casimir",
+      "central endpoint projector"
+    ],
+    "current_parent_contains_covariant_M3_endpoint": false,
+    "current_parent_contains_family_SO3_action": false,
+    "current_parent_contains_new_triplet_state": false
+  },
+  "canonical_central_direction": {
+    "Q": "P3 - 3 I4/4",
+    "SO3_invariant": true,
+    "seed_algebra_dimension": 2,
+    "trace": 0
+  },
+  "coefficient_freedom": {
+    "gap": "lambda",
+    "general_centered_hamiltonian": "lambda Q",
+    "polynomial_Casimir_gap": "2 a1 + 4 a2 + 8 a3",
+    "quadratic_action_detects_sign": false,
+    "theta": "beta lambda"
+  },
+  "date": "2026-08-30",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_parent_action_origin_gate",
+  "grading_casimir_equivalence": {
+    "SO3_quadratic_casimir": "2 P3",
+    "centered_casimir": "2 Q",
+    "centered_grading": "2 Q",
+    "grading": "diag(-1,+1,+1,+1)",
+    "same_gap_direction_mod_scalars": true
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_coefficient_selector_gate",
+  "orientation_witnesses": {
+    "positivity_selects_sign": false,
+    "singlet_low": {
+      "gap": 1,
+      "hamiltonian": "P3",
+      "positive": true,
+      "weight_relation": "p>1/4 for beta>0"
+    },
+    "triplet_low": {
+      "gap": -1,
+      "hamiltonian": "P1",
+      "positive": true,
+      "weight_relation": "p<1/4 for beta>0"
+    }
+  },
+  "parent_origin_ledger": {
+    "SO3_Casimir_coefficient": false,
+    "derived_gap_coefficients": 0,
+    "even_quadratic_action_sign": false,
+    "grading_as_energy_term": false,
+    "old_parent_restriction": false,
+    "positivity_orientation": false,
+    "tested_sources": 5
+  },
+  "verdict": {
+    "central_gap_coefficient_selected": false,
+    "central_gap_direction_conditionally_unique": true,
+    "central_gap_sign_selected": false,
+    "physical_single_c0_map_derived": false,
+    "theta_derived_by_current_parent": false
+  }
+}

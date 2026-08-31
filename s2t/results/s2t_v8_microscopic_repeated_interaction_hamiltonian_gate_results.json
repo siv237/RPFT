@@ -1,0 +1,67 @@
+{
+  "carrier": {
+    "ambient_dimension": 273,
+    "environment_decomposition": "C|0> direct_sum E_cross_C",
+    "environment_dimension": 13,
+    "jump_dimension": 12,
+    "system_dimension": 21
+  },
+  "coupling_selector": {
+    "cross_family_mixing_allowed": true,
+    "diagonal_two_rate_family_is_complete": false,
+    "full_real_gauge_commutant_dimension": 8,
+    "gauge_symmetry_selects_identity_coupling": false,
+    "lindblad_generator_depends_on": "C^T C",
+    "real_self_adjoint_interaction_coupling_dimension": 8,
+    "representation_interpretation": "two equivalent real cross copies; commutant M2(C)",
+    "symmetric_rate_metric_dimension": 4
+  },
+  "date": "2026-08-29",
+  "finite_step_boundary": {
+    "exact_finite_channel_reconstructed": false,
+    "matrix_unit_witness": [
+      0,
+      0
+    ],
+    "same_first_derivative_as_exact_kraus_channel": true,
+    "same_second_order_coefficient": false
+  },
+  "gate": "version8_microscopic_repeated_interaction_hamiltonian_gate",
+  "interaction": {
+    "formula": "H_int=sum_a D_a tensor (|a><0|+|0><a|)",
+    "gauge_covariant": true,
+    "orthogonal_frame_basis_independent": true,
+    "self_adjoint": true,
+    "vacuum_second_moment": "sum_a D_a^2=G",
+    "well_typed": true
+  },
+  "physical_boundary": {
+    "autonomous_nonequilibrium_clock_derived": false,
+    "fresh_ancilla_supply_derived": false,
+    "overall_coupling_scale_selected": false,
+    "physical_tick_duration_selected": false
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "5c765f66480fc962f01fd493bd30664cf61763a03f739095baa93deaedc1b46e",
+    "gate_count": 15,
+    "obligation_count": 9,
+    "status": "lcf-checked",
+    "total_obligation_count": 101
+  },
+  "verdict": {
+    "dimensionless_cross_semigroup_microscopically_realized": true,
+    "microscopic_unitary_realization_exists": true,
+    "next_gate": "geometric_cross_family_coupling_matrix_selector_gate",
+    "physical_time_closed": false,
+    "status": "lcf_checked_microscopic_collision_realization_with_four_parameter_coupling_no_go",
+    "unique_interaction_hamiltonian_derived": false
+  },
+  "weak_collision_limit": {
+    "K0_tangent": "I-hG/2+O(h^2)",
+    "Ka_tangent": "-i sqrt(h) D_a+O(h^(3/2))",
+    "continuous_limit": "exp(u L_cross)",
+    "fresh_ancilla_scaling": "h=u/n",
+    "gksl_tangent_exact": true,
+    "unitary": "U_h=exp(-i sqrt(h) H_int)"
+  }
+}

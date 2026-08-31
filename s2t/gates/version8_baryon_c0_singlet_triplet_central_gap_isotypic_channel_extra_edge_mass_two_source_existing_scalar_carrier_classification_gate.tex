@@ -1,0 +1,168 @@
+\chapter{Классификация существующих скалярных носителей двух источников}
+\label{ch:v8-extra-mass-two-source-scalar-carriers}
+
+\section{Активные скалярные инварианты выровненного сектора}
+
+В текущем полнографовом parent уже присутствуют поля
+\begin{equation}
+ B,M\in M_{2\times3}(\mathbb C),\qquad
+ z=(z_Y,z_u,z_d)\in\mathbb C^3,
+ \label{eq:v8-two-source-carriers-fields}
+\end{equation}
+и нулевой представитель
+\begin{equation}
+ B_0=\begin{pmatrix}\sqrt3&0&0\\0&0&0\end{pmatrix},
+ \qquad
+ M_0=\begin{pmatrix}0&1&0\\0&0&1\end{pmatrix},
+ \qquad z_0=0.
+ \label{eq:v8-two-source-carriers-vacuum}
+\end{equation}
+Два простейших gauge- и channel-инвариантных радиуса равны
+\begin{equation}
+ T_B=\Tr(BB^\dagger),\qquad T_M=\Tr(MM^\dagger),
+ \qquad (T_B,T_M)|_0=(3,2).
+ \label{eq:v8-two-source-carriers-radii}
+\end{equation}
+Инвариантные следы и определители являются стандартными генераторами
+алгебр инвариантов матричных представлений колчанов
+\cite{v8-two-source-carriers-lopatin}. Их наличие, однако, ещё не задаёт
+смешанный член с новым центральным гамильтонианом.
+
+\section{Независимость двух радиальных мод}
+
+На точном радиальном срезе
+\begin{equation}
+ B(r)=rB_0,\qquad M(s)=sM_0
+ \label{eq:v8-two-source-carriers-radial-slice}
+\end{equation}
+имеем
+\begin{equation}
+ T_B(r)=3r^2,\qquad T_M(s)=2s^2,
+ \qquad
+ J_{BM}=\left.\frac{\partial(T_B,T_M)}{\partial(r,s)}\right|_{1,1}
+ =\begin{pmatrix}6&0\\0&4\end{pmatrix}.
+ \label{eq:v8-two-source-carriers-jacobian}
+\end{equation}
+Следовательно,
+\begin{equation}
+ \rank J_{BM}=2,\qquad \det J_{BM}=24.
+ \label{eq:v8-two-source-carriers-rank}
+\end{equation}
+Это два независимых активных скалярных режима, а не два имени одной и той
+же радиальной флуктуации.
+
+Остальные естественные инварианты новых полей не увеличивают линейный ранг.
+На том же срезе
+\begin{equation}
+ \det(BB^\dagger)=0,
+ \qquad \det(MM^\dagger)=s^4,
+ \qquad \|MB^\dagger\|_F^2=0.
+ \label{eq:v8-two-source-carriers-dependent-invariants}
+\end{equation}
+Градиент $\det(MM^\dagger)$ при $s=1$ пропорционален градиенту $T_M$.
+Квадраты spectator-полей также не дают линейного источника:
+\begin{equation}
+ \left.\nabla_z(|z_Y|^2,|z_u|^2,|z_d|^2)\right|_{z=0}=0.
+ \label{eq:v8-two-source-carriers-spectator-zero}
+\end{equation}
+
+\section{Портальная матрица и отсутствие канонической пары}
+
+Общий линейный портал двух радиусов к $h^0=aA+bB$ имеет вид
+\begin{equation}
+ V_{\rm portal}=-
+ \begin{pmatrix}T_B&T_M\end{pmatrix}
+ \begin{pmatrix}c_{BA}&c_{BB}\\c_{MA}&c_{MB}\end{pmatrix}
+ \begin{pmatrix}a\\b\end{pmatrix}.
+ \label{eq:v8-two-source-carriers-portal-matrix}
+\end{equation}
+В вакууме он создаёт
+\begin{equation}
+ \begin{pmatrix}j_A\\j_B\end{pmatrix}
+ =\begin{pmatrix}3&0&2&0\\0&3&0&2\end{pmatrix}
+ \begin{pmatrix}c_{BA}\\c_{BB}\\c_{MA}\\c_{MB}\end{pmatrix}.
+ \label{eq:v8-two-source-carriers-coefficient-map}
+\end{equation}
+Эта карта имеет ранг два и nullity два. Поэтому статическая пара источников
+может быть реализована даже одним ненулевым радиусом при двух свободных
+портальных коэффициентах. Два carrier-поля существенны не для счёта
+статических чисел, а для двумерного динамического отклика.
+
+Диагональный выбор
+\begin{equation}
+ C_{\rm diag}=\operatorname{diag}(\kappa_B,\kappa_M),
+ \qquad (j_A,j_B)=(3\kappa_B,2\kappa_M),
+ \qquad \det\frac{\partial(j_A,j_B)}
+ {\partial(\kappa_B,\kappa_M)}=6
+ \label{eq:v8-two-source-carriers-diagonal-convention}
+\end{equation}
+удобен, но не каноничен. Обе области являются тривиальными вещественными
+представлениями всех сохранённых симметрий, поэтому
+\begin{equation}
+ \operatorname{Hom}_{G}(\mathbb R^2_{\{T_B,T_M\}},
+ \mathbb R^2_{\{A,B\}})=M_2(\mathbb R),
+ \qquad \dim_{\mathbb R}=4.
+ \label{eq:v8-two-source-carriers-hom-space}
+\end{equation}
+Симметрия не выделяет диагональ, знак, нормировку или ранг портала.
+Спектральное действие может связывать скалярные блоки только через явно
+заданный общий оператор и его конечную геометрию
+\cite{v8-two-source-carriers-stephan,v8-two-source-carriers-krajewski}.
+
+Непосредственная проверка унаследованного функционала даёт
+\begin{equation}
+ \left.\frac{\partial^2S_{\rm inherited}}
+ {\partial(T_B,T_M)\,\partial(a,b)}\right|_0=0_{2\times2}.
+ \label{eq:v8-two-source-carriers-inherited-zero}
+\end{equation}
+Итоговые реестры:
+\begin{equation}
+ N_{\rm carrier\ classification}=6/6,
+ \qquad N_{\rm canonical\ pairing}=0/5,
+ \qquad N_{\rm inherited\ portal}=0/4.
+ \label{eq:v8-two-source-carriers-ledgers}
+\end{equation}
+
+\begin{theorem}[Два независимых существующих скалярных режима]
+Радиусы $T_B$ и $T_M$ являются активными gauge-singlet инвариантами с
+ненулевыми вакуумными значениями $3$ и $2$. Их радиальный якобиан имеет
+определитель $24$, поэтому они дают два независимых динамических скалярных
+режима. Все прочие проверенные естественные инварианты либо нулевые в
+первом порядке, либо линейно зависимы от этих двух.
+\end{theorem}
+
+\begin{nogocriterion}[Носитель не выбирает портальную матрицу]
+Нельзя отождествлять два ненулевых радиуса с двумя выведенными источниками.
+Пространство допустимых порталов четырёхмерно, унаследованный смешанный
+гессиан нулевой, а диагональное сопоставление $T_B\mapsto A$,
+$T_M\mapsto B$ является дополнительной конвенцией.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item активные ненулевые радиусы: \textbf{$T_B=3$, $T_M=2$};
+\item determinant радиального якобиана: \textbf{$24$};
+\item независимых динамических скалярных режимов: \textbf{два};
+\item determinant $MM^\dagger$ даёт новый линейный режим: \textbf{нет};
+\item spectator-радиусы дают линейный отклик при $z=0$: \textbf{нет};
+\item размерность допустимых портальных матриц: \textbf{$4$};
+\item диагональный портал каноничен: \textbf{нет};
+\item унаследованный portal-Hessian: \textbf{$0_{2\times2}$};
+\item carrier-classification: \textbf{$6/6$};
+\item canonical-pairing: \textbf{$0/5$};
+\item inherited-portal: \textbf{$0/4$};
+\item следующий гейт: \textbf{parent-origin полной портальной матрицы}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_existing_scalar_carrier_classification_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-two-source-carriers-lopatin} A.~A.~Lopatin,
+\emph{Invariants of Quivers under the Action of Classical Groups},
+arXiv:math/0608750.
+\bibitem{v8-two-source-carriers-stephan} C.~A.~Stephan,
+\emph{New Scalar Fields in Noncommutative Geometry}, arXiv:0901.4676.
+\bibitem{v8-two-source-carriers-krajewski} T.~Krajewski,
+\emph{Constraints on the Scalar Potential from Spectral Action Principle},
+arXiv:hep-th/9803199.
+\end{thebibliography}

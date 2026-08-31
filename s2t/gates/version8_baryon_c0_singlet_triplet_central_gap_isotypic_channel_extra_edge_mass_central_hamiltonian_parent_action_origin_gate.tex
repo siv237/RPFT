@@ -1,0 +1,146 @@
+\chapter{Parent-origin центрального гамильтониана дополнительных масс}
+\label{ch:v8-extra-mass-central-hamiltonian-parent-origin}
+
+\section{Ортогональный базис двух щелей}
+
+На центре блоков $(Y,u,d)$ введём
+\begin{equation}
+ A=P_u-P_d,\qquad B=P_u+P_d-3P_Y.
+ \label{eq:v8-extra-mass-origin-basis}
+\end{equation}
+С учётом рангов $(4,6,6)$ эти операторы бесследовы и ортогональны:
+\begin{equation}
+ \Tr A^2=12,\qquad \Tr B^2=48,\qquad \Tr AB=0.
+ \label{eq:v8-extra-mass-origin-gram}
+\end{equation}
+Для $h^0=aA+bB$ две щели равны
+\begin{equation}
+ \Delta_u=a+4b,\qquad \Delta_d=-a+4b,
+ \label{eq:v8-extra-mass-origin-gap-map}
+\end{equation}
+а обратная карта имеет вид
+\begin{equation}
+ a=\frac{\Delta_u-\Delta_d}{2},\qquad
+ b=\frac{\Delta_u+\Delta_d}{8}.
+ \label{eq:v8-extra-mass-origin-gap-inverse}
+\end{equation}
+
+\section{Обычные спектральные моменты дают только жёсткость}
+
+Первые два нетривиальных момента равны
+\begin{equation}
+ \Tr(h^0)^2=12a^2+48b^2,
+ \qquad
+ \Tr(h^0)^3=36a^2b-96b^3.
+ \label{eq:v8-extra-mass-origin-moments}
+\end{equation}
+На скалярном фоне $\varepsilon I$ линейный отклик любого полиномиального
+момента вдоль $A$ и $B$ исчезает из-за бесследовости. Для квадратичного
+момента
+\begin{equation}
+ \nabla_{a,b}\Tr(\varepsilon I+h^0)^2\big|_0=0,
+ \qquad
+ \Hess_{a,b}=\operatorname{diag}(24,96).
+ \label{eq:v8-extra-mass-origin-quadratic-stiffness}
+\end{equation}
+Следовательно, незавешенный spectral trace предоставляет положительную
+жёсткость, но выбирает $(a,b)=(0,0)$. Новые скаляры и их связи могут
+возникать после расширения конечной тройки, однако их Dirac-блоки и
+коэффициенты являются частью расширенных данных
+\cite{v8-extra-mass-origin-stephan,v8-extra-mass-origin-krajewski}.
+
+\section{Gauge-Casimir near miss}
+
+Квадратичные значения $Y^2,C_2,C_3$ дают условную карту коэффициентов
+$c=(c_1,c_2,c_3)$ в щели
+\begin{equation}
+ \begin{pmatrix}\Delta_u\\\Delta_d\end{pmatrix}
+ =\begin{pmatrix}
+ 91/36&-3/4&4/3\\
+ 7/36&-3/4&4/3
+ \end{pmatrix}
+ \begin{pmatrix}c_1\\c_2\\c_3\end{pmatrix}.
+ \label{eq:v8-extra-mass-origin-gauge-map}
+\end{equation}
+Матрица имеет ранг два и одномерное ядро. При этом
+\begin{equation}
+ \Delta_u-\Delta_d=\frac73c_1.
+ \label{eq:v8-extra-mass-origin-hypercharge-splitting}
+\end{equation}
+Поэтому равные щели требуют $c_1=0$, хотя оба цветных канала имеют разные
+ненулевые гиперзаряды. Gauge-Casimir-операторы охватывают плоскость формы,
+но текущий spectral action использует их в gauge-кинетике, а не как
+центральный endpoint-гамильтониан. Перенос коэффициентов без нового
+типизированного члена был бы смешением функционалов.
+
+Grading на трёх edge-секторах скалярен и исчезает после quotient. Радиус
+когерентности $\Tr(B_{
+m coh}B_{
+m coh}^*)=3$ также является скаляром:
+\begin{equation}
+ \Tr(3IA)=\Tr(3IB)=0.
+ \label{eq:v8-extra-mass-origin-coherence-zero}
+\end{equation}
+Он не создаёт ни одной щели без заранее выбранного портального направления.
+
+\section{Минимальный недостающий источник}
+
+Условный двухкомпонентный source-parent равен
+\begin{equation}
+ V(a,b)=\frac12\Tr(h^0)^2-j_Aa-j_Bb
+ =6a^2+24b^2-j_Aa-j_Bb.
+ \label{eq:v8-extra-mass-origin-source-preview}
+\end{equation}
+Его единственная стационарная точка есть
+\begin{equation}
+ a_*=\frac{j_A}{12},\qquad b_*=\frac{j_B}{48}.
+ \label{eq:v8-extra-mass-origin-source-stationary}
+\end{equation}
+Для общей точки симплекса нужны две независимые source-компоненты. Старое
+действие не зависит от нового центра и даёт $(j_A,j_B)=(0,0)$.
+
+Итоговые реестры:
+\begin{equation}
+ N_{\rm conditional\ shape}=5/5,
+ \qquad N_{\rm parent\ origin}=0/7.
+ \label{eq:v8-extra-mass-origin-ledgers}
+\end{equation}
+
+\begin{theorem}[Жёсткость без ненулевого источника]
+Трассовый квадрат канонически задаёт положительную метрику на двумерной
+плоскости центральных щелей, а gauge-Casimir-данные условно охватывают оба
+направления. Однако обычные моменты на скалярном фоне имеют нулевой линейный
+отклик, grading и coherence-радиус скалярны, а gauge-коэффициенты не входят
+в endpoint-гамильтониан. Поэтому ненулевая пара щелей не выведена.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет импорта gauge-коэффициентов как энергий]
+Нельзя считать коэффициенты gauge-кинетики энергиями центральных edge-
+уровней без единого оператора, в котором оба появления получены одним
+следом. Нельзя также умножать скалярный coherence-конденсат на $A$ или $B$
+без происхождения самого портального направления.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item базис щелей: \textbf{$A,B$};
+\item Gram-метрика: \textbf{$\operatorname{diag}(12,48)$};
+\item обычный след создаёт жёсткость: \textbf{да};
+\item обычный след создаёт ненулевой источник: \textbf{нет};
+\item gauge-Casimir map: \textbf{ранг $2$};
+\item равные щели требуют: \textbf{$c_1=0$};
+\item coherence-скаляр создаёт щель: \textbf{нет};
+\item условная форма: \textbf{$5/5$};
+\item parent-origin: \textbf{$0/7$};
+\item минимально недостающих источников: \textbf{два};
+\item следующий гейт: \textbf{архитектура двухкомпонентного source-parent}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_central_hamiltonian_parent_action_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-extra-mass-origin-stephan} C.~A.~Stephan,
+\emph{New Scalar Fields in Noncommutative Geometry}, arXiv:0901.4676.
+\bibitem{v8-extra-mass-origin-krajewski} T.~Krajewski,
+\emph{Classification of Finite Spectral Triples}, arXiv:hep-th/9701081.
+\end{thebibliography}

@@ -1,0 +1,94 @@
+{
+  "chain_parent": {
+    "exact_repeated_channel_available": true,
+    "finite_volume_gap_in_old_excitation_units": 1,
+    "floquet_shift_index": 45,
+    "frustration_free": true,
+    "onsite_parent": "h_cell=I-|0><0| with charged energies refined to 7",
+    "shift_generated_by_local_hamiltonian": false,
+    "toeplitz_cell_dimension": 45,
+    "unique_finite_volume_product_vacuum": true
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_minimal_dynamic_parent_architecture_gate",
+  "ledgers": {
+    "conditional_dynamic_architecture_satisfied": 10,
+    "conditional_dynamic_architecture_tested": 10,
+    "inherited_parent_origin_satisfied": 0,
+    "inherited_parent_origin_tested": 5
+  },
+  "local_collision_parent": {
+    "cross_covariance_zero": true,
+    "environment_charges": [
+      0,
+      1,
+      -1
+    ],
+    "environment_energies_in_gap_units": [
+      0,
+      7,
+      7
+    ],
+    "free_energy_commutator_zero": true,
+    "interaction_rank": 4,
+    "interaction_spectrum": {
+      "-1": 2,
+      "0": 8,
+      "1": 2
+    },
+    "system_basis": [
+      "u",
+      "d",
+      "u_conjugate",
+      "d_conjugate"
+    ],
+    "system_charges": [
+      1,
+      0,
+      -1,
+      0
+    ],
+    "system_energies_in_gap_units": [
+      7,
+      0,
+      7,
+      0
+    ],
+    "total_charge_commutator_zero": true,
+    "vacuum_first_moment_zero": true,
+    "vacuum_second_moment": "L_-^*L_- + L_+^*L_+"
+  },
+  "minimal_extended_cell": {
+    "added_charged_jump_labels": 2,
+    "basis": "neutral vacuum + 42 old labels + charge(+1,-1) Real pair",
+    "extended_cell_dimension": 45,
+    "old_cell_dimension": 43,
+    "old_jump_count": 42,
+    "total_jump_count": 44,
+    "two_added_lines_are_minimal_for_real_closure": true
+  },
+  "missing_parent_data": [
+    "conditional neutral and global family carrier extension",
+    "resonant dimensional gap 7 gamma",
+    "physical coupling g",
+    "primitive Floquet shift or balanced transport law",
+    "physical clock-to-collision duration"
+  ],
+  "next_gate": "version8_baryon_c0_charged_mediator_dynamic_parent_data_admission_gate",
+  "verdict": {
+    "extended_weak_generator_has_44_channels": true,
+    "full_physical_parent_inherited": false,
+    "minimal_real_closed_dynamic_parent_constructed": true,
+    "old_cell_extension_is_two_dimensional": true,
+    "product_vacuum_has_local_parent": true
+  },
+  "weak_limit": {
+    "generator": "L_42 + g^2(D_Lminus + D_Lplus)",
+    "new_real_paired_channels": 2,
+    "old_channels": 42,
+    "physical_rate": "Gamma=g^2/hbar-scale after a clock convention",
+    "primitive_fixed_algebra_preserved_if_L42_is_primitive": true,
+    "total_channels": 44
+  }
+}

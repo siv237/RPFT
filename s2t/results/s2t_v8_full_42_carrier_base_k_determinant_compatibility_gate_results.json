@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-30",
+  "finite_fermion": {
+    "physical_determinant_multiplicity_derived": false,
+    "raw_fourth_moment": 46
+  },
+  "gate": "version8_full_42_carrier_base_k_determinant_compatibility_gate",
+  "next_gate": "version8_full_42_carrier_bv_vacuum_quotient_gate",
+  "normalized_fourth_moments": {
+    "bosonic_numerator": "4659176/3249",
+    "gauge": "36897/722",
+    "scalar": "23053/18"
+  },
+  "registry": {
+    "certificate_sha256": "596224cc9351e34160271c1766ac6adef33901a1a7b1ddb5c30cb8f96b26ef5c",
+    "gate_count": 38,
+    "obligation_count": 244
+  },
+  "vacuum_bosonic_blocks": {
+    "gauge_mass_rank": 3,
+    "transfer_nullity": 2,
+    "transfer_rank": 28,
+    "unbroken_gauge_nullity": 9
+  },
+  "verdict": {
+    "bv_vacuum_quotient_required": true,
+    "early_67_numerator_reusable": false,
+    "full_bosonic_ledger_derived": true,
+    "full_supertrace_B_derived": false
+  }
+}

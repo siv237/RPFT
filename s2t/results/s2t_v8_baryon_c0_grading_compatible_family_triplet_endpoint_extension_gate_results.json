@@ -1,0 +1,64 @@
+{
+  "current_target_grading": {
+    "minus_dimension": 1,
+    "plus_dimension": 2,
+    "spectrum": "one minus and two plus"
+  },
+  "date": "2026-08-30",
+  "endpoint_algebra": {
+    "covariant_algebra": "M3(C)",
+    "covariant_algebra_generated_rank": 9,
+    "individual_coordinate_projectors_preserved": false,
+    "new_offdiagonal_hermitian_directions": 6,
+    "triplet_sum_projector_preserved": true
+  },
+  "floating_point_values": 0,
+  "full_connector_representation": {
+    "covariance_constraint_rank": 8,
+    "decomposition": "1 + 3",
+    "general_covariance": "gamma_1 P_1 + gamma_3 P_3",
+    "invariant_symmetric_covariance_dimension": 2,
+    "singlet_triplet_relative_rate_selected": false
+  },
+  "gate": "version8_baryon_c0_grading_compatible_family_triplet_endpoint_extension_gate",
+  "homogeneous_triplet_branches": {
+    "minus_branch": {
+      "all_triplet_arrows_odd": true,
+      "extended_carrier_dimension": 25,
+      "new_complex_connector_arrows": 2,
+      "new_target_states": 2,
+      "source_line": "s0"
+    },
+    "plus_branch": {
+      "all_triplet_arrows_odd": true,
+      "extended_carrier_dimension": 24,
+      "new_complex_connector_arrows": 1,
+      "new_target_states": 1,
+      "source_line": "a0"
+    },
+    "unique_minimal_state_branch": "plus"
+  },
+  "next_gate": "version8_baryon_c0_family_triplet_singlet_relative_rate_selector_gate",
+  "plus_triplet_compatibility": {
+    "SM_hypercharge": -1,
+    "SO3_commutes_with_grading": true,
+    "SO3_commutes_with_hypercharge": true,
+    "family_intertwiner_constraint_rank": 8,
+    "family_intertwiner_dimension": 1,
+    "isometric_intertwiners": [
+      "-I3",
+      "I3"
+    ],
+    "real_standard_generators": true
+  },
+  "verdict": {
+    "conditional_family_map_unique_up_to_sign": true,
+    "current_parent_contains_covariant_M3_endpoint_algebra": false,
+    "current_parent_contains_new_state": false,
+    "derived_extension_structures": 0,
+    "minimal_branch": "add one plus-graded charged target state",
+    "minimal_grading_compatible_extension_exists": true,
+    "physical_single_c0_map_derived": false,
+    "required_extension_structures": 3
+  }
+}

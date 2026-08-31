@@ -1,0 +1,98 @@
+{
+  "carrier_correction": {
+    "correct_flat_real_modes_before_stabilization": 6,
+    "full_new_strict_edges": [
+      "L_L--Z_R",
+      "X_L--Z_R",
+      "X_R--Z_L",
+      "Y_L--Z_R",
+      "Y_R--Z_L",
+      "Z_L--Z_R",
+      "Z_L--d_R",
+      "Z_L--e_R",
+      "Z_L--u_R"
+    ],
+    "new_edges_already_in_B": [
+      "L_L--Z_R",
+      "Y_L--Z_R"
+    ],
+    "new_edges_already_in_M": [
+      "X_L--Z_R",
+      "X_R--Z_L",
+      "Z_L--Z_R",
+      "Z_L--e_R"
+    ],
+    "new_edges_covered_by_B_plus_M": 6,
+    "predecessor_flat_mode_count_superseded": true,
+    "predecessor_reported_omitted_count": 6,
+    "present_but_outside_sparse_target": [
+      "X_L--Z_R",
+      "X_R--Z_L",
+      "Z_L--e_R"
+    ],
+    "truly_omitted_complex_edges": [
+      "Y_R--Z_L",
+      "Z_L--d_R",
+      "Z_L--u_R"
+    ],
+    "truly_omitted_count": 3
+  },
+  "conditional_full_graph_parent": {
+    "all_nine_new_edges_in_field_carrier": true,
+    "omitted_type_signatures": {
+      "Y_R--Z_L": "weak-doublet channel",
+      "Z_L--d_R": "down-type coloured channel",
+      "Z_L--u_R": "up-type coloured channel"
+    },
+    "overall_mass_scale_free": true,
+    "positive_mass_cone_dimension": 3,
+    "potential": "S_BM + mu_y |z_Y|^2 + mu_u |z_u|^2 + mu_d |z_d|^2",
+    "projective_relative_mass_dimension": 2,
+    "zero_vacuum_preserved": true
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_full_graph_aligned_parent_embedding_gate",
+  "ledgers": {
+    "carrier_embedding_satisfied": 7,
+    "carrier_embedding_tested": 7,
+    "coordinate_sparse_selector_satisfied": 0,
+    "coordinate_sparse_selector_tested": 3,
+    "mass_parent_origin_satisfied": 0,
+    "mass_parent_origin_tested": 4,
+    "new_parent_inputs": [
+      "three positive stabilizing masses",
+      "two independent relative mass ratios",
+      "one overall mass scale",
+      "spectral/superconnection origin of the stabilizer"
+    ]
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_parent_origin_gate",
+  "normalized_real_slice_hessian": {
+    "eigenvalue_multiplicities": {
+      "0": 4,
+      "2": 6,
+      "24": 1,
+      "26": 2,
+      "8": 5
+    },
+    "extra_mass_block_determinant": "64 mu_y^2 mu_u^2 mu_d^2",
+    "nullity": 4,
+    "rank": 14,
+    "signature": {
+      "negative": 0,
+      "positive": 14,
+      "zero": 4
+    },
+    "variables": 18
+  },
+  "verdict": {
+    "all_non_orbit_real_flat_modes_lifted_when_masses_positive": true,
+    "conditional_full_graph_embedding_exists": true,
+    "coordinate_sparse_edge_menu_selected": false,
+    "correct_omitted_edge_count": 3,
+    "portal_parent_origin_derived": false,
+    "predecessor_six_omitted_edge_count_exact": false,
+    "stabilizing_mass_coefficients_derived": false
+  }
+}

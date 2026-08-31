@@ -1,0 +1,95 @@
+\chapter{Типизированный мост энергии часов к скорости полного шума}
+\label{ch:v8-typed-clock-energy-to-noise-rate-anchor-gate}
+
+Автономные часы уже обеспечивают локальный непрерывный предел, но их
+частота и скорость диссипации допускают общий пересчёт. Проверим, какую
+размерную формулу действительно даёт столкновительная модель и какие данные
+ещё должен выбрать родитель.
+
+\section{Размерная формула}
+
+Пусть энергия часов равна $E_C$, длительность такта
+\begin{equation}
+ \tau_C=\frac{\hbar}{E_C},
+\end{equation}
+а амплитуда энергии взаимодействия одного столкновения имеет вид
+\begin{equation}
+ E_{\rm int}=\chi E_C,
+\end{equation}
+где $\chi>0$ безразмерна. Квадратичный слабый предел даёт
+\begin{equation}
+ \Gamma=\frac{E_{\rm int}^2\tau_C}{\hbar^2}
+ =\chi^2\frac{E_C}{\hbar}.
+ \label{eq:v8-typed-clock-noise-rate}
+\end{equation}
+Для частоты $\Omega=E_C/\hbar$ получаем точное отношение
+\begin{equation}
+ \boxed{\frac{\Gamma}{\Omega}=\chi^2.}
+ \label{eq:v8-clock-rate-relative-calibration}
+\end{equation}
+
+\begin{theorem}[Условная относительная калибровка]
+Если энергия часов $E_C$ и безразмерное отношение
+$\chi=E_{\rm int}/E_C$ заданы одним типизированным микроскопическим
+родителем, то часы фиксируют скорость полного шумового процесса формулой
+$\Gamma=\chi^2E_C/\hbar$.
+\end{theorem}
+
+\section{Что текущий родитель не выбирает}
+
+Нынешняя конструкция фиксирует форму 42 операторов скачка, но допускает
+любое положительное умножение взаимодействия. Часовой гамильтониан введён
+отдельно и также допускает изменение энергетического масштаба. Поэтому два
+значения $\chi_1\ne\chi_2$ сохраняют тот же носитель часов, тот же шумовой
+кадр и все симметрии, но дают разные отношения
+\begin{equation}
+ \frac{\Gamma_1}{\Omega}=\chi_1^2,
+ \qquad
+ \frac{\Gamma_2}{\Omega}=\chi_2^2.
+\end{equation}
+Приравнивание $E_{\rm int}=E_C$ означало бы дополнительное условие
+$\chi=1$, а не следствие уже построенного действия.
+
+Старые спектральные щели, массы и параметр обрезания не исправляют этот
+дефект автоматически. В текущей цепи нет морфизма, который переводил бы их
+в коэффициент часового гамильтониана и одновременно в амплитуду
+столкновения. Без такого морфизма они остаются внешними кандидатами на
+калибровку.
+
+\begin{nogocriterion}[Отсутствие размерного якоря в текущем родителе]
+Формула \eqref{eq:v8-typed-clock-noise-rate} типизирована, но её два входа
+$E_C$ и $\chi$ не выбраны. Без нового смешанного члена или независимо
+измеренного энергетического масштаба нельзя объявлять ни $\Gamma$, ни
+$\tau_C$ физически предсказанными. Безразмерная щель генератора сама по себе
+энергией не является.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item длительность такта: \textbf{$\tau_C=\hbar/E_C$};
+ \item энергия взаимодействия: \textbf{$E_{\rm int}=\chi E_C$};
+ \item скорость шума: \textbf{$\Gamma=\chi^2E_C/\hbar$};
+ \item относительная калибровка: \textbf{$\Gamma/\Omega=\chi^2$};
+ \item значение $E_C$: \textbf{не выведено};
+ \item значение $\chi$: \textbf{не выведено};
+ \item условие $E_{\rm int}=E_C$: \textbf{не допускается без родителя};
+ \item старая щель как энергия: \textbf{не типизирована};
+ \item абсолютная скорость $\Gamma$: \textbf{не выведена};
+ \item следующий гейт: \textbf{аудит кандидатов на энергетический якорь часов}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_typed_clock_energy_to_noise_rate_anchor_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-typed-clock-attal}
+S.~Attal, Y.~Pautrat,
+\emph{From repeated to continuous quantum interactions},
+Ann. Henri Poincar\'e \textbf{7} (2006), 59--104;
+arXiv:math-ph/0311002.
+\bibitem{v8-typed-clock-bruneau}
+L.~Bruneau, A.~Joye, M.~Merkli,
+\emph{Repeated interactions in open quantum systems},
+J. Math. Phys. \textbf{55} (2014), 075204; arXiv:1305.2472.
+\end{thebibliography}

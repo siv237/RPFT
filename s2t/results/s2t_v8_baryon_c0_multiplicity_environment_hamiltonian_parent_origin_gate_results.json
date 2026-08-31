@@ -1,0 +1,96 @@
+{
+  "candidate_ledger": {
+    "M5_unique_trace": {
+      "anisotropic": false,
+      "selected": false
+    },
+    "family_R4_plus": {
+      "anisotropic": true,
+      "endpoint_diagonal": false,
+      "selected": false,
+      "typed_carrier_map_present": false
+    },
+    "full_kossakowski_covariance": {
+      "anisotropic": false,
+      "selected": false
+    },
+    "local_trace_simplex": {
+      "anisotropic": true,
+      "selected": false
+    },
+    "old_parent_restriction": {
+      "anisotropic": false,
+      "selected": false
+    }
+  },
+  "date": "2026-08-30",
+  "family_R4_near_miss": {
+    "characteristic_polynomial": "(4 lambda^3-192 lambda^2+3003 lambda-15358)/4",
+    "direct_endpoint_compatible": false,
+    "discriminant": "164241/16",
+    "endpoint_projector_commutator_norm_squared_sum": "50",
+    "matrix": [
+      [
+        "27/2",
+        "-2",
+        "3/2"
+      ],
+      [
+        "-2",
+        "35/2",
+        "-5/2"
+      ],
+      [
+        "3/2",
+        "-5/2",
+        "17"
+      ]
+    ],
+    "simple_spectrum": true,
+    "typed_family_to_environment_map_present": false
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_multiplicity_environment_hamiltonian_parent_origin_gate",
+  "intrinsic_sources": {
+    "M5_trace_metric": "(2/5) I3",
+    "full_kossakowski_covariance": "I3",
+    "intrinsic_anisotropic_source_found": false,
+    "old_parent_hessian": "0_3"
+  },
+  "local_trace_family": {
+    "different_ground_coordinates": true,
+    "dimension_after_normalization": 3,
+    "weights_selected": false,
+    "witness_A_hamiltonian": [
+      [
+        "1/5",
+        "3/10",
+        "3/5"
+      ]
+    ],
+    "witness_B_hamiltonian": [
+      [
+        "3/5",
+        "1/5",
+        "3/10"
+      ]
+    ]
+  },
+  "next_gate": "version8_baryon_c0_family_to_multiplicity_intertwiner_admission_gate",
+  "transport_map": {
+    "absolute_energy_scale_supplied": false,
+    "canonical_element_selected": false,
+    "formal_equivariant_hom": "M3(R)",
+    "isometric_subfamily": "O(3)",
+    "real_dimension": 9,
+    "transported_hamiltonian": "T R4_plus T^T"
+  },
+  "verdict": {
+    "absolute_gap_derived": false,
+    "anisotropic_hamiltonian_derived": false,
+    "candidate_count": 5,
+    "derived_parent_origins": 0,
+    "direction_projector_derived": false,
+    "single_c0_map_derived": false
+  }
+}

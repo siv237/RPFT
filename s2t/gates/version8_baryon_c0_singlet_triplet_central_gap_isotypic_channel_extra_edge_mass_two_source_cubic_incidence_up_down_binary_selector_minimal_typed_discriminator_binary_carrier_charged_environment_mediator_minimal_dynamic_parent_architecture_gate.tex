@@ -1,0 +1,169 @@
+\chapter{Минимальная динамическая parent-архитектура charged mediator}
+\label{ch:v8-charged-mediator-minimal-dynamic-parent}
+
+\section{Общая ячейка требует ровно две новые линии}
+
+Существующая тёплиц-ячейка полного шума имеет вид
+\begin{equation}
+ \mathcal K_{43}=\mathbb C|0\rangle\oplus\mathcal N_{42}.
+ \label{eq:v8-mediator-dynamic-old-cell}
+\end{equation}
+Для нового бинарного перехода одна комплексная charged-линия достаточна,
+но не замкнута относительно Real-структуры. Поэтому минимальное расширение
+равно
+\begin{equation}
+ \mathcal K_{45}=\mathbb C|0\rangle\oplus\mathcal N_{42}
+ \oplus\mathbb C|+\rangle\oplus\mathbb C|-\rangle,
+ \qquad \dim\mathcal K_{45}=45.
+ \label{eq:v8-mediator-dynamic-extended-cell}
+\end{equation}
+На двух новых линиях
+\begin{equation}
+ Y_E|\pm\rangle=\pm|\pm\rangle,
+ \qquad J_E|+\rangle=|-\rangle,
+ \qquad H_E|\pm\rangle=7\gamma|\pm\rangle.
+ \label{eq:v8-mediator-dynamic-real-energy-pair}
+\end{equation}
+Удаление любой из них разрушает Real-замыкание. Следовательно, переход
+$43\to45$ минимален среди расширений общей ячейки.
+
+\section{Локальный энергосохраняющий collision-parent}
+
+На системном Real-дубле используем базис
+$|u\rangle,|d\rangle,|u^c\rangle,|d^c\rangle$ и данные
+\begin{equation}
+ Y_S=\operatorname{diag}(1,0,-1,0),
+ \qquad H_S=7\gamma\operatorname{diag}(1,0,1,0).
+ \label{eq:v8-mediator-dynamic-system-data}
+\end{equation}
+Положим
+\begin{equation}
+ L_-=|d\rangle\langle u|,
+ \qquad L_+=|d^c\rangle\langle u^c|,
+ \qquad b_\pm=|\pm\rangle\langle0|.
+ \label{eq:v8-mediator-dynamic-jumps}
+\end{equation}
+Минимальное Real-замкнутое взаимодействие есть
+\begin{equation}
+ G_g=g\left(L_-\otimes b_++L_+\otimes b_-+\mathrm{h.c.}\right).
+ \label{eq:v8-mediator-dynamic-interaction}
+\end{equation}
+Оно удовлетворяет двум точным законам сохранения:
+\begin{equation}
+ [Y_S\otimes1+1\otimes Y_E,G_g]=0,
+ \qquad [H_S\otimes1+1\otimes H_E,G_g]=0.
+ \label{eq:v8-mediator-dynamic-conservation}
+\end{equation}
+После удаления множителя $g$ оператор имеет ранг четыре и спектр
+\begin{equation}
+ \Spec(G_g/g)=\{-1,-1,0^{\times8},1,1\}.
+ \label{eq:v8-mediator-dynamic-spectrum}
+\end{equation}
+
+\section{Ортогональность нового шумового блока}
+
+Матричные элементы из нейтрального вакуума точно возвращают оба
+сопряжённых перехода:
+\begin{equation}
+ \langle+|G_g|0\rangle=gL_-,
+ \qquad \langle-|G_g|0\rangle=gL_+.
+ \label{eq:v8-mediator-dynamic-extraction}
+\end{equation}
+Их cross-covariance исчезает, а первый и второй моменты равны
+\begin{equation}
+ \langle0|G_g|0\rangle=0,
+ \qquad
+ \langle0|G_g^2|0\rangle
+ =g^2(L_-^\dagger L_-+L_+^\dagger L_+).
+ \label{eq:v8-mediator-dynamic-moments}
+\end{equation}
+Поэтому новый блок присоединяется к старому 42-frame ортогональной прямой
+суммой. В слабом collision-пределе получаем
+\begin{equation}
+ \mathcal L_{44}=\mathcal L_{42}
+ +g^2\mathcal D_{L_-}+g^2\mathcal D_{L_+}.
+ \label{eq:v8-mediator-dynamic-generator}
+\end{equation}
+Если $\mathcal L_{42}$ уже примитивен, то добавление неотрицательных
+дирихле-форм не расширяет его неподвижную алгебру:
+\begin{equation}
+ \operatorname{Fix}(\mathcal L_{44})
+ \subseteq\operatorname{Fix}(\mathcal L_{42})=\mathbb C1.
+ \label{eq:v8-mediator-dynamic-fixed-algebra}
+\end{equation}
+
+\section{Вакуум имеет локального parent, транспорт остаётся Флоке}
+
+На каждой 45-мерной ячейке положительный оператор
+\begin{equation}
+ h_{\rm cell}=\sum_{a=1}^{42}|a\rangle\langle a|
+ +7\bigl(|+\rangle\langle+|+|-\rangle\langle-|\bigr)
+ \label{eq:v8-mediator-dynamic-cell-parent}
+\end{equation}
+имеет единственное нулевое состояние $|0\rangle$. Сумма его трансляций
+задаёт frustration-free parent тензорного вакуума. Один общий такт
+\begin{equation}
+ V_{45}=(I\otimes S_{45})U_{\rm col}^{(0)}
+ \label{eq:v8-mediator-dynamic-floquet-step}
+\end{equation}
+точно повторяет расширенный канал на свежих ячейках. Однако
+$\operatorname{ind}_{\rm GNVW}(S_{45})=45$, поэтому этот сдвиг не является
+конечновременной эволюцией локального гамильтониана из компоненты
+тождественного автоморфизма.
+
+Итак, условная архитектура закрыта полностью:
+\begin{equation}
+ N_{\rm conditional\ architecture}=10/10.
+ \label{eq:v8-mediator-dynamic-conditional-ledger}
+\end{equation}
+Но она использует пять невыведенных входов:
+\begin{equation}
+ N_{\rm inherited\ parent}=0/5:
+ \{H_{23/24},\,7\gamma,\,g,\,S_{45},\,\tau_C\}.
+ \label{eq:v8-mediator-dynamic-parent-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальная 45-мерная динамическая архитектура]
+Существующий 43-мерный тёплиц-носитель допускает минимальное Real-замкнутое
+расширение двумя charged-линиями. Оно даёт точный gauge- и
+energy-сохраняющий collision-parent, ортогонально расширяет генератор с 42
+до 44 каналов и имеет локальный frustration-free parent тензорного
+вакуума. Физические коэффициенты и транспортный закон при этом не
+наследуются.
+\end{theorem}
+
+\begin{nogocriterion}[Архитектурная полнота не есть происхождение]
+Нельзя считать число $45$ селектором щели $7\gamma$ или coupling $g$.
+Локальный parent вакуума не порождает сдвиг $S_{45}$, а точный Флоке-шаг
+не задаёт физическую длительность столкновения. Условные расширения
+$H_{23/24}$ также нельзя объявлять уже выведенными из raw $H_{21}$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item старая ячейка: \textbf{$1+42=43$};
+\item минимально добавленных Real-линий: \textbf{$2$};
+\item расширенная ячейка: \textbf{$1+42+2=45$};
+\item полный заряд сохраняется: \textbf{да};
+\item свободная энергия сохраняется: \textbf{да};
+\item ранг нового interaction-блока: \textbf{$4$};
+\item cross-covariance двух новых каналов: \textbf{$0$};
+\item полный weak-limit frame: \textbf{$44$ канала};
+\item локальный parent product-vacuum: \textbf{есть};
+\item GNVW-индекс сдвига: \textbf{$45$};
+\item условная динамическая архитектура: \textbf{$10/10$};
+\item inherited physical parent: \textbf{$0/5$};
+\item следующий гейт: \textbf{admission динамических parent-данных}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_minimal_dynamic_parent_architecture_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-mediator-dynamic-attal} S.~Attal and Y.~Pautrat,
+\emph{From Repeated to Continuous Quantum Interactions},
+Ann. Henri Poincar\'e 7 (2006) 59; arXiv:math-ph/0311002.
+\bibitem{v8-mediator-dynamic-gnvw} D.~Gross, V.~Nesme, H.~Vogts and
+R.~F.~Werner, \emph{Index Theory of One Dimensional Quantum Walks and
+Cellular Automata}, Commun. Math. Phys. 310 (2012) 419;
+arXiv:0910.3675.
+\end{thebibliography}

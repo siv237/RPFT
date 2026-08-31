@@ -1,0 +1,129 @@
+\chapter{Совместимость полного multiplicity-кадра с одиночной картой c0}
+\label{ch:v8-baryon-c0-full-multiplicity-frame-single-map-compatibility-gate}
+
+Пусть $V_0,V_1,V_2$ --- trace-ортонормированный комплексный базис трёх
+допустимых старо-новых карт. Общий gauge-ковариантный dissipator задаётся
+положительной матрицей Коссаковского
+\begin{equation}
+ \mathcal D_C(A)=\sum_{i,j=0}^{2}C_{ij}
+ \left(V_iAV_j^*-\frac12\{V_j^*V_i,A\}\right),
+ \qquad C\succeq0.
+ \label{eq:v8-baryon-c0-multiplicity-kossakowski-generator}
+\end{equation}
+Полный изотропный Hom-кадр соответствует
+\begin{equation}
+ C_{\rm full}=I_3,
+ \qquad \rank C_{\rm full}=3.
+ \label{eq:v8-baryon-c0-full-frame-kossakowski-rank}
+\end{equation}
+Одна комплексная карта $V(z)=\sum_i z_iV_i$ соответствует чистой
+ковариации
+\begin{equation}
+ C_z=zz^*,
+ \qquad z\ne0,
+ \qquad \rank C_z=1.
+ \label{eq:v8-baryon-c0-single-map-kossakowski-rank}
+\end{equation}
+
+\section{Инвариант минимального Kraus-ранга}
+
+Векторизация трёх стрелок даёт матрицу $W$ ранга три. Матрица Чоя
+полностью положительной части имеет вид
+\begin{equation}
+ J_C=W C W^*,
+ \qquad
+ \rank J_{\rm full}=3,
+ \qquad
+ \rank J_z=1.
+ \label{eq:v8-baryon-c0-choi-rank-obstruction}
+\end{equation}
+Следовательно, минимальные среды Стайнспринга имеют размеры
+\begin{equation}
+ d_{\rm env}^{\rm full}=3,
+ \qquad d_{\rm env}^{\rm single}=1.
+ \label{eq:v8-baryon-c0-stinespring-environment-ranks}
+\end{equation}
+Унитарная или изометрическая смена Kraus-базиса не меняет эти ранги, так
+что операторное равенство невозможно:
+\begin{equation}
+ \mathcal D_{I_3}\ne\gamma\mathcal D_{zz^*}
+ \quad\text{для всех }z\ne0,\ \gamma>0.
+ \label{eq:v8-baryon-c0-full-frame-not-single-map}
+\end{equation}
+
+\section{Почему центральный тест не видит различия}
+
+На базисе $P_{21}/\sqrt{21},P_{\mathrm n}/\sqrt2$ все три координатные
+стрелки имеют одну и ту же форму $D_0$. Поэтому
+\begin{equation}
+ D_{\rm cen}(C)=\Tr(C)D_0,
+ \qquad
+ D_0=\begin{pmatrix}
+ 2/21&-\sqrt{42}/21\\
+ -\sqrt{42}/21&1
+ \end{pmatrix}.
+ \label{eq:v8-baryon-c0-central-restriction-sees-only-trace}
+\end{equation}
+В частности, при $\lVert z\rVert=1$
+\begin{equation}
+ D_{\rm cen}(I_3)=3D_0
+ =D_{\rm cen}(3zz^*).
+ \label{eq:v8-baryon-c0-central-single-map-false-equivalence}
+\end{equation}
+Совпадение центральной щели и неподвижной алгебры поэтому не является
+сертификатом равенства полных процессов.
+
+Например, если одиночная карта выбрана вдоль $V_0$, то для проектора на
+вторую старую линию получаем
+\begin{equation}
+ \mathcal D_{I_3}(P_{e_R})
+ =2(P_{a_0}-P_{e_R}),
+ \qquad
+ \mathcal D_{V_0}(P_{e_R})=0.
+ \label{eq:v8-baryon-c0-operator-witness-full-versus-single}
+\end{equation}
+
+Rank-one редукция возможна только после выбора чистого вектора среды
+\begin{equation}
+ |\psi_z\rangle=z_0|0\rangle+z_1|1\rangle+z_2|2\rangle,
+ \qquad [z]\in\mathbb{CP}^2
+ \quad(\mathbb{RP}^2\text{ в Real-срезе}).
+ \label{eq:v8-baryon-c0-environment-pure-state-selector}
+\end{equation}
+Это ровно прежнее недостающее multiplicity-данное, перенесённое в среду.
+
+Итоговый контракт равен
+\begin{equation}
+ \text{central compatibility: да},
+ \qquad
+ \text{operator/Kraus compatibility: нет}.
+ \label{eq:v8-baryon-c0-full-single-compatibility-ledger}
+\end{equation}
+
+\begin{theorem}[Kraus-ранговый запрет одиночной интерпретации]
+Полный изотропный multiplicity-frame имеет минимальный комплексный
+Kraus-ранг три и не может быть преобразован в один комплексный коннектор.
+Равенство центральных ограничений после перенормировки скорости не снимает
+этот операторный запрет.
+\end{theorem}
+
+\begin{nogocriterion}[Пурификация не создаёт селектор]
+Выбор чистого состояния трёхмерной среды действительно даёт rank-one
+ковариацию, но требует точки $\mathbb{CP}^2$ или $\mathbb{RP}^2$ как нового
+входа. Нельзя считать такой выбор следствием уникального следа $M_5$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item комплексных connector channels полного кадра: \textbf{$3$};
+\item Kraus/Choi rank полного кадра: \textbf{$3$};
+\item Kraus/Choi rank одиночной карты: \textbf{$1$};
+\item операторная эквивалентность: \textbf{нет};
+\item центральная эквивалентность после rate-rescaling: \textbf{да};
+\item минимальная среда полного кадра: \textbf{$3$};
+\item чистое состояние среды выбрано: \textbf{нет};
+\item одиночный $c_0$ выведен: \textbf{нет};
+\item следующий гейт: \textbf{селектор чистого состояния multiplicity-среды}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_full_multiplicity_frame_single_map_compatibility_gate_results.json}.

@@ -1,0 +1,148 @@
+{
+  "canonical_trace_tensor": {
+    "finite_parity_of_nonzero_support": "even",
+    "support_unordered": {
+      "GGG": 28,
+      "TGG": 0,
+      "TTG": 140,
+      "TTT": 0
+    }
+  },
+  "date": "2026-08-30",
+  "field": "Q",
+  "finite_grading": {
+    "definition": "Gamma=I_11 direct_sum (-I_10)",
+    "gauge_directions_even": 12,
+    "physical_incidence_background_odd": true,
+    "transfer_directions_odd": 30
+  },
+  "gate": "version8_baryon_noncentral_odd_dirac_background_projection_no_go_gate",
+  "general_parity_no_go": {
+    "identity": "Tr(D_odd S_even)=0",
+    "independent_of_background_entries": true,
+    "odd_background_can_reproduce_nonzero_d_abc": false,
+    "supports_disjoint": true
+  },
+  "odd_background_tensor": {
+    "definition": "c_D(a,b,c)=Sym Tr(D Fhat_a Fhat_b Fhat_c)",
+    "finite_parity_of_nonzero_support": "odd",
+    "physical_incidence_support_unordered": {
+      "GGG": 0,
+      "TGG": 35,
+      "TTG": 0,
+      "TTT": 130
+    },
+    "sample": [
+      {
+        "indices_zero_based": [
+          0,
+          0,
+          0
+        ],
+        "value": "46"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          0,
+          6
+        ],
+        "value": "6"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          0,
+          8
+        ],
+        "value": "18"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          0,
+          24
+        ],
+        "value": "2"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          0,
+          28
+        ],
+        "value": "2"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          1,
+          1
+        ],
+        "value": "46/3"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          1,
+          7
+        ],
+        "value": "2"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          1,
+          9
+        ],
+        "value": "6"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          1,
+          25
+        ],
+        "value": "2/3"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          1,
+          29
+        ],
+        "value": "2/3"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          2,
+          2
+        ],
+        "value": "14"
+      },
+      {
+        "indices_zero_based": [
+          0,
+          2,
+          5
+        ],
+        "value": "-2"
+      }
+    ]
+  },
+  "spacetime_supercurvature_boundary": {
+    "TTG_and_GGG_cubic_vertices_require_derivatives": true,
+    "constant_zero_momentum_cubic_vertex": 0,
+    "curvature": "F_A+D_A Phi+Phi^2",
+    "equal_to_static_lambda_3_W3": false,
+    "total_odd_connection": "d+A_even^(1)+Phi_odd^(0)"
+  },
+  "verdict": {
+    "central_even_shift_rejected": true,
+    "next_gate": "derivative_cubic_vertex_to_six_point_kernel_or_stop",
+    "noncentral_odd_background_rescue_rejected": true,
+    "physical_six_point_kernel_derived": false,
+    "standard_local_supercurvature_generates_static_W3": false
+  }
+}

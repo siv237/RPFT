@@ -1,0 +1,173 @@
+\chapter{Селектор коэффициента центральной щели синглета и триплета}
+\label{ch:v8-baryon-c0-singlet-triplet-central-gap-coefficient-selector-gate}
+
+Направление $Q=P_{\mathbf3}-3I_4/4$ уже условно единственно. Проверим,
+может ли естественная нормировка этого оператора выбрать физический
+коэффициент $\lambda$ в $h=\varepsilon I_4+\lambda Q$.
+
+\section{Шесть неэквивалентных нормировок}
+
+Точные инварианты выбранного следово-центрированного представителя равны
+\begin{equation}
+ \Tr Q^2=\frac34,
+ \qquad \lVert Q\rVert_{\rm op}=\frac34,
+ \qquad \lVert Q\rVert_1=\frac32,
+ \qquad \frac14\Tr Q^2=\frac3{16}.
+ \label{eq:v8-baryon-c0-central-gap-coefficient-q-invariants}
+\end{equation}
+Проекторная и grading/Casimir-нормировки дают соответственно
+\begin{equation}
+ |\lambda|_{P}=1,
+ \qquad
+ |\lambda|_{\Gamma,\mathcal C_2}=2.
+ \label{eq:v8-baryon-c0-central-gap-projector-grading-normalizations}
+\end{equation}
+Единичные гильбертово-шмидтова и операторная нормы дают
+\begin{equation}
+ |\lambda|_{\rm HS}=\frac2{\sqrt3},
+ \qquad
+ |\lambda|_{\rm op}=\frac43.
+ \label{eq:v8-baryon-c0-central-gap-hs-operator-normalizations}
+\end{equation}
+Единичные следовая норма и дисперсия относительно $I_4/4$ дают ещё два
+значения:
+\begin{equation}
+ |\lambda|_1=\frac23,
+ \qquad
+ |\lambda|_{\rm var}=\frac4{\sqrt3}.
+ \label{eq:v8-baryon-c0-central-gap-trace-variance-normalizations}
+\end{equation}
+Таким образом,
+\begin{equation}
+ \left\{1,2,\frac2{\sqrt3},\frac43,\frac23,\frac4{\sqrt3}\right\}
+ \quad\text{содержит шесть различных положительных значений}.
+ \label{eq:v8-baryon-c0-central-gap-six-distinct-normalizations}
+\end{equation}
+Ни одно из них не имеет привилегии без указания, какая именно норма входит
+в родительское действие.
+
+Более того, норма нецентрированного гамильтониана зависит от произвольного
+нуля энергии:
+\begin{equation}
+ \Tr(Q+bI_4)^2=4b^2+\frac34.
+ \label{eq:v8-baryon-c0-central-gap-uncentered-norm-shift-dependence}
+\end{equation}
+Поэтому нормировочный контракт обязан сначала выбрать центрирование; здесь
+оно уже использует обычный счётный след.
+
+\section{Тепловая масштабная орбита}
+
+Равновесный вес видит только
+\begin{equation}
+ \theta=\beta\lambda,
+ \qquad
+ (\beta,\lambda)\longmapsto
+ \left(\frac\beta a,a\lambda\right),
+ \qquad a>0.
+ \label{eq:v8-baryon-c0-central-gap-coefficient-thermal-scale-orbit}
+\end{equation}
+Следовательно, даже выбранная безразмерная нормировка $Q$ не превращается в
+физическую энергию без температурного или временного якоря.
+
+\section{Чётный потенциал выбирает коэффициенты, а не число}
+
+Минимальный устойчивый чётный потенциал имеет вид
+\begin{equation}
+ V_{a,b}(\lambda)=\frac a2\lambda^2+\frac b4\lambda^4,
+ \qquad b>0.
+ \label{eq:v8-baryon-c0-central-gap-even-quartic-potential}
+\end{equation}
+Его уравнение стационарности равно
+\begin{equation}
+ V'_{a,b}(\lambda)=\lambda(a+b\lambda^2)=0.
+ \label{eq:v8-baryon-c0-central-gap-even-potential-stationarity}
+\end{equation}
+Два точных устойчивых выбора коэффициентов дают разные модули:
+\begin{equation}
+ (a,b)=(-1,1)\Longrightarrow |\lambda_*|=1,
+ \qquad
+ (a,b)=(-4,1)\Longrightarrow |\lambda_*|=2.
+ \label{eq:v8-baryon-c0-central-gap-quartic-magnitude-witnesses}
+\end{equation}
+В обоих случаях минимумы попарно вырождены,
+\begin{equation}
+ V_{a,b}(\lambda)=V_{a,b}(-\lambda),
+ \label{eq:v8-baryon-c0-central-gap-even-potential-sign-degeneracy}
+\end{equation}
+так что чётный parent не выбирает знак, а модуль определяется свободным
+отношением $-a/b$.
+
+\section{Энтропия и KMS не дают коэффициент}
+
+Максимум центральной энтропии соответствует
+\begin{equation}
+ p=\frac14
+ \quad\Longleftrightarrow\quad
+ \theta=0
+ \quad\Longleftrightarrow\quad
+ \lambda=0\ \text{при фиксированном }\beta.
+ \label{eq:v8-baryon-c0-central-gap-maximum-entropy-zero-gap}
+\end{equation}
+Это выбирает отсутствие щели, а не её ненулевой коэффициент. Равный полный
+вес секторов и KMS-отношение дают лишь целевые уравнения
+\begin{equation}
+ p=\frac12\Longrightarrow\beta\lambda=\log3,
+ \qquad
+ r_{\rm obs}\Longrightarrow\beta\lambda=-\log r_{\rm obs}.
+ \label{eq:v8-baryon-c0-central-gap-target-dependent-equations}
+\end{equation}
+Первое использует выбранную секторную нормировку, второе --- наблюдаемое
+отношение, поэтому оба являются калибровками, а не слепыми селекторами.
+
+Итоговый реестр равен
+\begin{equation}
+ N_{\rm coefficient\ selector}=0/8:
+ \quad\{P,\Gamma,\mathcal C_2,\lVert\cdot\rVert_{\rm HS},
+ \lVert\cdot\rVert_{\rm op},\operatorname{Var},V_{a,b},S/KMS\}.
+ \label{eq:v8-baryon-c0-central-gap-coefficient-selector-ledger}
+\end{equation}
+Три проектные записи формы совпадают, но их численные нормировки и пять
+дополнительных критериев не дают одного физического $\lambda$.
+
+Минимальная новая родительская структура должна содержать одновременно
+\begin{equation}
+ V_{\rm src}(\lambda)=\frac{m^2}{2}\lambda^2-j\lambda,
+ \qquad m^2>0,
+ \qquad \lambda_*=\frac{j}{m^2},
+ \label{eq:v8-baryon-c0-central-gap-minimal-source-preview}
+\end{equation}
+то есть чётную жёсткость и нечётный центральный источник. Следующий гейт
+проверит минимальность и допустимость этой архитектуры, не приписывая ей
+заранее происхождение.
+
+\begin{theorem}[Нормировочная неединственность коэффициента щели]
+Один и тот же центральный оператор $Q$ допускает как минимум шесть точных
+естественных нормировок с различными значениями $|\lambda|$. Чётный
+устойчивый потенциал выбирает модуль только через свободные коэффициенты и
+не снимает знак. Поэтому физический коэффициент щели не следует из выбора
+нормы представителя.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет превращения единичной нормы в энергию]
+Условие $\lVert\lambda Q\rVert=1$ является координатной нормировкой до тех
+пор, пока та же норма с фиксированным коэффициентом не выведена из общего
+действия. Нельзя отождествлять полученное безразмерное число с энергией,
+температурой или скоростью релаксации.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item проверенных естественных нормировок: \textbf{$6$};
+\item различных положительных модулей: \textbf{$6$};
+\item норма без центрирования инвариантна к сдвигу: \textbf{нет};
+\item равновесие видит отдельно $\beta$ и $\lambda$: \textbf{нет};
+\item чётный потенциал выбирает модуль без коэффициентов: \textbf{нет};
+\item чётный потенциал выбирает знак: \textbf{нет};
+\item максимум энтропии: \textbf{$\lambda=0$};
+\item KMS без target выбирает $\lambda$: \textbf{нет};
+\item селекторов коэффициента: \textbf{$0/8$};
+\item минимальная недостающая структура: \textbf{нечётный источник плюс жёсткость};
+\item следующий гейт: \textbf{минимальная source-parent архитектура}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_coefficient_selector_gate_results.json}.

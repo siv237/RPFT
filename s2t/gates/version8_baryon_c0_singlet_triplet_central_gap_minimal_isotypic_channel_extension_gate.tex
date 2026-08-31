@@ -1,0 +1,214 @@
+\chapter{Минимальное изотипическое канальное расширение}
+\label{ch:v8-baryon-c0-minimal-isotypic-channel-extension}
+
+\section{Одновершинный кандидат}
+
+Бимодульная совместимость условного Hodge-портала требует третьей правой
+линии того же полного калибровочного типа, что $e_R,X_R$. Минимальный
+кандидат равен
+\begin{equation}
+ Z_R=(\mathbb C,\mathbb C,R),
+ \qquad Y(Z_R)=-1,
+ \qquad
+ W_{eXZ}=\operatorname{span}(e_R,X_R,Z_R)\simeq\mathbb C^3.
+ \label{eq:v8-isotypic-extension-single-endpoint}
+\end{equation}
+Строгое условие первого порядка разрешает три новых ребра:
+\begin{equation}
+ E(Z_R)=\{L_LZ_R,\;Y_LZ_R,\;X_LZ_R\}.
+ \label{eq:v8-isotypic-extension-single-edges}
+\end{equation}
+Первые два достраивают coherence-прямоугольник, а третье уже является
+нежелательным дополнительным блоком.
+
+\section{Real-замыкание не сокращает физическую аномалию}
+
+Формальное Real-удвоение даёт
+\begin{equation}
+ JZ_R=(\mathbb C,\mathbb C,L)
+ \label{eq:v8-isotypic-extension-real-image}
+\end{equation}
+в античастичном секторе. Как и в предыдущем аномальном гейте, эта линия не
+является независимым левым Weyl-полем после устранения фермионного удвоения.
+Поэтому для одного нового правого заряженного синглета
+\begin{equation}
+ \Delta\mathcal A_{221}=0,
+ \qquad
+ \Delta\mathcal A_{\mathrm{grav}^21}=1,
+ \qquad
+ \Delta\mathcal A_{111}=1.
+ \label{eq:v8-isotypic-extension-single-anomalies}
+\end{equation}
+Одновременно заряженный синглетный индекс меняется:
+\begin{equation}
+ I_e^{\rm old}=1-2=-1,
+ \qquad
+ I_e^{\rm one\ endpoint}=1-3=-2.
+ \label{eq:v8-isotypic-extension-single-index}
+\end{equation}
+Связь унимодулярности и аномального сокращения в конечной геометрии требует
+проверять именно физический Weyl-сектор, а не формальное $J$-удвоение
+\cite{v8-isotypic-extension-alvarez}. Одновершинный кандидат закрыт.
+
+\section{Минимальное вектороподобное завершение}
+
+Наименьший консервативный ремонт добавляет независимую линию
+\begin{equation}
+ Z_L=(\mathbb C,\mathbb C,L),
+ \qquad Y(Z_L)=-1.
+ \label{eq:v8-isotypic-extension-left-partner}
+\end{equation}
+Пара $Z_L\oplus Z_R$ вектороподобна, поэтому
+\begin{equation}
+ \Delta\mathcal A_{221}
+ =\Delta\mathcal A_{\mathrm{grav}^21}
+ =\Delta\mathcal A_{111}=0,
+ \qquad
+ \Delta N_{\mathbf2}=0\pmod2,
+ \qquad
+ I_e^{\rm pair}=2-3=-1.
+ \label{eq:v8-isotypic-extension-pair-admission}
+\end{equation}
+Такой тип расширения известен в моделях почти-коммутативной геометрии.
+Новые фермионы там допускают массы, сохраняющие калибровочную группу
+\cite{v8-isotypic-extension-vectorlike}.
+
+\section{Полный строгий граф и дефицит селектора}
+
+После добавления пары полный граф имеет
+\begin{equation}
+ |E_{\rm strict}^{\rm old}|=14,
+ \qquad
+ |E_{\rm strict}^{\rm pair}|=23,
+ \qquad
+ |E_{\rm new}|=9.
+ \label{eq:v8-isotypic-extension-edge-count}
+\end{equation}
+Желаемая минимальная опора использует лишь
+\begin{equation}
+ E_{\rm selected}^{\rm new}
+ =\{L_LZ_R,\;Y_LZ_R,\;Z_LZ_R\},
+ \qquad
+ |E_{\rm selected}^{\rm new}|=3.
+ \label{eq:v8-isotypic-extension-selected-edges}
+\end{equation}
+Оставшиеся шесть разрешённых блоков равны
+\begin{equation}
+ E_{\rm extra}^{\rm new}
+ =\{X_LZ_R,\;Z_Le_R,\;Z_LX_R,\;Z_LY_R,\;Z_Lu_R,\;Z_Ld_R\}.
+ \label{eq:v8-isotypic-extension-extra-edges}
+\end{equation}
+При трёх поколениях девять новых блоков несут
+\begin{equation}
+ 9\cdot9\ \text{комплексных}
+ =162\ \text{вещественных параметра}
+ \label{eq:v8-isotypic-extension-yukawa-cost}
+\end{equation}
+до факторизации базисных вращений. Первый порядок разрешает это меню, но не
+выбирает три нужных блока.
+
+\section{Массовая ловушка и channel-SO(3)}
+
+В одном поколении общий заряженный вектороподобный блок имеет форму
+\begin{equation}
+ M_Z:\mathbb C^3_R\longrightarrow\mathbb C^2_L,
+ \qquad
+ \rank M_Z=2,
+ \qquad
+ \dim\ker M_Z=1.
+ \label{eq:v8-isotypic-extension-mass-kernel}
+\end{equation}
+Но направление ядра не фиксировано. Например,
+\begin{equation}
+ \ker\begin{pmatrix}1&0&1\\0&1&1\end{pmatrix}
+ =\mathbb C(-1,-1,1),
+ \qquad
+ \ker\begin{pmatrix}1&0&0\\0&1&0\end{pmatrix}
+ =\mathbb C(0,0,1).
+ \label{eq:v8-isotypic-extension-two-kernels}
+\end{equation}
+Кроме того, при текущем тривиальном действии channel-$SO(3)$ на двух левых
+синглетах ковариантность требует
+\begin{equation}
+ M_ZL_i=0,
+ \qquad i=1,2,3,
+ \qquad
+ \rank\mathcal C_M=6,
+ \qquad
+ \dim\ker\mathcal C_M=0.
+ \label{eq:v8-isotypic-extension-so3-mass-no-go}
+\end{equation}
+Следовательно, ненулевая масса пары сама является новым
+$SO(3)$-ломающим тензором либо должна происходить от нового динамического
+поля. При этом выбранная coherence-подцепь формально сохраняет
+\begin{equation}
+ (\dim H_0,\dim H_1,\dim H_2)=(1,6,3),
+ \label{eq:v8-isotypic-extension-chain-dimensions}
+\end{equation}
+но старый конденсат на $(e,X,Y)$ не переносится на $(e,X,Z)$.
+
+Итоговые реестры равны
+\begin{equation}
+ \begin{aligned}
+ N_{\rm single\ endpoint}&=4/7,
+ &N_{\rm vectorlike\ shape}&=6/6,\\
+ N_{\rm selector+origin}&=0/6,
+ &\mathcal M_{\rm new}&=\{Z_R,Z_L,\Pi_E,M_Z,B_{eXZ,*},SO(3)_{\rm diag}\}.
+ \end{aligned}
+ \label{eq:v8-isotypic-extension-ledgers}
+\end{equation}
+
+\begin{theorem}[Провал одновершинного изотипического расширения]
+Добавление одного $Z_R$ создаёт третий правый изотипический канал и две
+нужные coherence-стрелки, но нарушает локальное аномальное сокращение и
+меняет заряженный хиральный индекс. Формальный Real-образ не исправляет
+физический Weyl-сектор. Поэтому одновершинное расширение недопустимо.
+\end{theorem}
+
+\begin{proposition}[Условный допуск вектороподобной пары]
+Пара $Z_L\oplus Z_R$ проходит Real-, локальную, глобальную и индексную
+проверки и сохраняет изотипический правый триплет. Однако строгий граф
+разрешает девять новых рёбер вместо трёх, направление лёгкого ядра не
+выбрано, а ненулевая масса несовместима с несломанным текущим
+channel-$SO(3)$. Получен носитель, но не единый родитель.
+\end{proposition}
+
+\begin{nogocriterion}[Real и первый порядок не являются селектором]
+Нельзя считать один $J$-образ независимым аномально сокращающим фермионом.
+Нельзя также вручную оставить три из девяти первопорядково разрешённых
+блоков или выбрать массовое ядро после просмотра желаемого family-channel
+направления.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item один новый endpoint $Z_R$: \textbf{бимодульно допустим};
+\item новых рёбер при одном endpoint: \textbf{три};
+\item из них coherence-рёбер: \textbf{два};
+\item локальные аномалии одного $Z_R$: \textbf{не сокращаются};
+\item формальный $JZ_R$ исправляет аномалии: \textbf{нет};
+\item одновершинный ledger: \textbf{$4/7$};
+\item минимальный физический ремонт: \textbf{$Z_L\oplus Z_R$};
+\item вектороподобная структурная форма: \textbf{$6/6$};
+\item полный строгий граф после ремонта: \textbf{$23$ ребра};
+\item новых разрешённых рёбер: \textbf{$9$};
+\item желаемых новых рёбер: \textbf{$3$};
+\item лишних разрешённых рёбер: \textbf{$6$};
+\item направление лёгкого ядра выбрано: \textbf{нет};
+\item ненулевая масса сохраняет полный channel-$SO(3)$: \textbf{нет};
+\item selector+origin ledger: \textbf{$0/6$};
+\item следующий гейт: \textbf{вектороподобный mass/edge-селектор изотипического канала}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_minimal_isotypic_channel_extension_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-isotypic-extension-alvarez}
+E.~Alvarez, J.~M.~Gracia-Bond\'ia, C.~P.~Mart\'in,
+\emph{Anomaly Cancellation and the Gauge Group of the Standard Model in NCG},
+arXiv:hep-th/9506115.
+\bibitem{v8-isotypic-extension-vectorlike}
+J.-H.~Jureit, C.~A.~Stephan,
+\emph{On a Classification of Irreducible Almost-Commutative Geometries V},
+arXiv:0901.3214.
+\end{thebibliography}

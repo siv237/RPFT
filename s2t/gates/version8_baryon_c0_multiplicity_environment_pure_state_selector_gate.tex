@@ -1,0 +1,131 @@
+\chapter{Селектор чистого состояния multiplicity-среды}
+\label{ch:v8-baryon-c0-multiplicity-environment-pure-state-selector-gate}
+
+Минимальная среда полного трёхканального процесса есть
+$\mathcal E_{\rm mult}=\mathbb C^3$. Её состояния образуют выпуклое тело
+\begin{equation}
+ \mathfrak D_3=\{\rho\in M_3(\mathbb C):\rho\succeq0,
+ \ \Tr\rho=1\}.
+ \label{eq:v8-baryon-c0-multiplicity-density-space}
+\end{equation}
+Поскольку три допустимые стрелки имеют один gauge-тип, представление gauge
+группы на multiplicity-индексе скалярно:
+\begin{equation}
+ U_g=e^{-i\theta(g)}I_3,
+ \qquad U_g\rho U_g^*=\rho
+ \quad\text{для всех }\rho\in\mathfrak D_3.
+ \label{eq:v8-baryon-c0-scalar-gauge-action-on-environment}
+\end{equation}
+Следовательно, gauge-инвариантность не сокращает пространство состояний.
+Real-структура даёт условие $\rho=\overline\rho$, а чистая часть равна
+\begin{equation}
+ \rho_z=zz^{\mathsf T},
+ \qquad z\in\mathbb R^3,\quad z^{\mathsf T}z=1,
+ \qquad [z]\in\mathbb{RP}^2.
+ \label{eq:v8-baryon-c0-real-pure-environment-orbit}
+\end{equation}
+
+\section{След, температура и энтропия}
+
+Единственное состояние, индуцированное нормированным следом простого
+блока $M_3(\mathbb C)$, есть
+\begin{equation}
+ \rho_{\rm tr}=\frac13I_3,
+ \qquad \rank\rho_{\rm tr}=3,
+ \qquad S(\rho_{\rm tr})=\log3.
+ \label{eq:v8-baryon-c0-normalized-trace-environment-state}
+\end{equation}
+Унаследованный изотропный гамильтониан также не снимает вырождение:
+\begin{equation}
+ h_0=\varepsilon I_3,
+ \qquad
+ \rho_\beta=\frac{e^{-\beta h_0}}{\Tr e^{-\beta h_0}}
+ =\frac13I_3
+ \quad(0\leq\beta<\infty).
+ \label{eq:v8-baryon-c0-isotropic-gibbs-state}
+\end{equation}
+Для энтропии фон Неймана выполнено
+\begin{equation}
+ 0\leq S(\rho)=-\Tr(\rho\log\rho)\leq\log3,
+ \quad
+ S(\rho)=0\Longleftrightarrow\rank\rho=1,
+ \quad
+ S(\rho)=\log3\Longleftrightarrow\rho=I_3/3.
+ \label{eq:v8-baryon-c0-entropy-extrema}
+\end{equation}
+Поэтому максимум энтропии выбирает смешанное состояние, а минимум выбирает
+всю чистую орбиту, но не её направление.
+
+Ранний purity-функционал Version~6 можно записать как
+\begin{equation}
+ W_{\wedge^2}(\rho)=2\bigl(1-\Tr\rho^2\bigr),
+ \qquad W_{\wedge^2}(\rho)\geq0.
+ \label{eq:v8-baryon-c0-exterior-square-purity-functional}
+\end{equation}
+На Real-срезе его множество минимумов снова равно
+\begin{equation}
+ \operatorname*{argmin}_{\rho=\overline\rho}W_{\wedge^2}(\rho)
+ =\{zz^{\mathsf T}:[z]\in\mathbb{RP}^2\}.
+ \label{eq:v8-baryon-c0-purity-functional-rp2-minima}
+\end{equation}
+Тем самым прежняя конструкция может условно выбрать чистоту, но не одну
+карту $c_0$; кроме того, её родительский подъём в текущую среду не дан.
+
+\section{Минимальное новое анизотропное данное}
+
+Два Real- и gauge-инвариантных гамильтониана
+\begin{equation}
+ h_A=\operatorname{diag}(0,1,2),
+ \qquad h_B=\operatorname{diag}(2,0,1),
+ \qquad
+ P_{\min}(h_A)=e_0e_0^{\mathsf T}\ne e_1e_1^{\mathsf T}=P_{\min}(h_B)
+ \label{eq:v8-baryon-c0-anisotropic-hamiltonian-witnesses}
+\end{equation}
+удовлетворяют всем уже объявленным симметриям, но выбирают разные чистые
+состояния. В общем случае чистый селектор требует
+\begin{equation}
+ h_{\rm sel}=Q\operatorname{diag}(\lambda_0,\lambda_1,\lambda_2)Q^{\mathsf T},
+ \qquad \lambda_0<\lambda_1\leq\lambda_2,
+ \qquad \rho_*=Qe_0e_0^{\mathsf T}Q^{\mathsf T}.
+ \label{eq:v8-baryon-c0-minimal-pure-state-hamiltonian-data}
+\end{equation}
+Спектральное расщепление и ориентация $Qe_0$ являются новыми данными; общий
+след, gauge-тип и Real-структура их не определяют.
+
+Итоговый реестр внутренних кандидатов равен
+\begin{equation}
+ N_{\rm unique\ pure\ selector}=0/5:
+ \quad\{\text{gauge},\text{Real},\text{trace/Gibbs},
+ \text{entropy},\text{purity parent}\}.
+ \label{eq:v8-baryon-c0-pure-state-selector-ledger}
+\end{equation}
+
+\begin{theorem}[Чистота без направления]
+Текущая трёхмерная multiplicity-среда допускает чистые Real-состояния,
+параметризованные $\mathbb{RP}^2$, но ни скалярное gauge-действие, ни
+Real-структура, ни нормированный след, ни изотропный Gibbs-parent, ни
+энтропийный или purity-принцип не выбирают единственную точку этой орбиты.
+\end{theorem}
+
+\begin{nogocriterion}[Нельзя подменять селектор пурификацией]
+Сам факт существования rank-one состояния или условного потенциала с
+минимумами $\mathbb{RP}^2$ не выводит одиночную карту $c_0$. Для выбора
+нужен ориентированный невырожденный ground projector либо эквивалентное
+анизотропное parent-данное, отсутствующее в текущем контракте.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item размерность multiplicity-среды: \textbf{$3$};
+\item gauge-инвариантных состояний: \textbf{всё $\mathfrak D_3$};
+\item Real-чистая орбита: \textbf{$\mathbb{RP}^2$};
+\item состояние общего следа: \textbf{$I_3/3$, смешанное};
+\item изотропный Gibbs-селектор: \textbf{нет};
+\item entropy/purity-селектор чистоты: \textbf{да};
+\item entropy/purity-селектор направления: \textbf{нет};
+\item внутренних уникальных селекторов: \textbf{$0/5$};
+\item одиночный $c_0$ выведен: \textbf{нет};
+\item следующий гейт: \textbf{минимальные гамильтоновы данные multiplicity-среды}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_multiplicity_environment_pure_state_selector_gate_results.json}.

@@ -1,0 +1,195 @@
+\chapter{Заключение Тома VIII: полный процесс и граница физического parent}
+\label{ch:v8-final-conclusion}
+
+Том VIII был открыт для возврата от спектров и следов к полному
+корреляционному оператору на явно заданной алгебре наблюдаемых. Центральный
+вопрос состоял в том, способен ли этот уровень описания восстановить
+локальность, построить межсекторную динамику и снять центральную границу
+$P_q,P_\ell$ без произвольного линейного коннектора.
+
+Ответ получен. Полный операторный процесс существенно сильнее своих
+спектральных редукций: он восстанавливает связность, допускает
+калибровочно-ковариантную марковскую динамику, микроскопические дилатации и
+точные межсекторные каналы. Однако единый физический parent, выбирающий
+endpoint, абсолютную энергию, coupling и транспорт, не получен. Поэтому
+Том VIII завершён как операторно-динамическое замыкание и точная карта
+границы физической нормировки.
+
+\section{Исходные цели и фактический ответ}
+
+\begin{center}
+\small
+\setlength{\tabcolsep}{2pt}
+\begin{longtable}{p{0.06\textwidth}p{0.27\textwidth}p{0.45\textwidth}p{0.1\textwidth}}
+\toprule
+№ & Цель & Итог & Статус \\
+\midrule
+\endhead
+1 & Вернуть полный correlation kernel и проверить локальность & Полный
+оператор различает коспектральные случаи и восстанавливает генератор через
+$H=-\tau^{-1}\log C_\tau$ & пройдено \\
+2 & Построить один QMS и вычислить fixed algebra & Получены linking-QMS,
+полный 42-jump generator и точные fixed-algebra certificates & пройдено \\
+3 & Проверить межсекторную связность без цветного vacuum & Построены
+gauge-covariant Kraus/Stinespring bridges; raw carrier и conditional
+extensions строго разделены & частично \\
+4 & Вывести микродинамику, время и физический parent & Collision- и
+Toeplitz-дилатации построены; absolute scale, coupling и transport selector
+не выведены & частично \\
+\bottomrule
+\end{longtable}
+\end{center}
+
+\section{Краткий перечень достигнутого}
+
+\begin{enumerate}
+ \item Полное ядро $C_\tau$ восстановило оператор $H$ и конечную локальность,
+ потерянные при переходе только к спектру и следу.
+ \item На linking-алгебре построена вполне положительная, сохраняющая след и
+ единицу квантово-марковская полугруппа.
+ \item Вычислены её неподвижные алгебры и условия примитивности после
+ gauge-twirl и межсекторных Kraus-мостов.
+ \item Построены минимальные ковариантные Stinespring-носители и
+ микроскопические repeated-interaction Hamiltonians.
+ \item Собран полный самосопряжённый noise-frame из $42$ направлений и
+ генератор
+ \begin{equation}
+  \mathcal L_{42}=-\frac12\sum_{a=1}^{42}\operatorname{ad}_{F_a}^2.
+  \label{eq:v8-final-generator}
+ \end{equation}
+ \item Установлены KMS-, modular-Bohr- и fluctuation--dissipation границы:
+ относительные rates типизируются, абсолютная скорость не следует из них.
+ \item Шумовая метрика связана с parent-Hessian, gauge-superconnection,
+ edge-Hodge и real-incidence multiplicities; отделены общие и секторные
+ веса.
+ \item Создан LCF/ProofDSL-слой формальной дисциплины и мигрированы основные
+ Markov, Kraus, Stinespring, clock и KMS-гейты.
+ \item Точный Toeplitz-конвейер на 43-мерных ячейках реализовал все конечные
+ итерации канала одним Флоке-оператором.
+ \item Product-vacuum получил локальный frustration-free parent; GNVW-index
+ строго запретил локальный Hamiltonian точного одностороннего сдвига.
+ \item Построены index-balanced и clock-augmented conveyor-модели, а также
+ локальный термодинамический предел непрерывной 42-channel dynamics.
+ \item Получена условная часовая формула
+ \begin{equation}
+  \tau_C=\frac{\hbar}{E_C},\qquad
+  \Gamma=\chi^2\frac{E_C}{\hbar}.
+  \label{eq:v8-final-clock-rate}
+ \end{equation}
+ \item В барионном секторе отделены total-charge identities от
+ пространственного и magnetic kernels; показано, что одно- и двухточечные
+ данные не определяют связную трёхчастичную кумулянту.
+ \item Построен ненулевой connected cubic operator, но происхождение его
+ коэффициента и физической шеститочечной меры осталось открытым.
+ \item Классифицированы spin--flavor, permutation и spatial-ground-state
+ carriers; электромагнитное количественное замыкание закрыто отрицательно.
+ \item В ветви $c_0$ построены typed cross-carrier morphisms, условные
+ endpoint-расширения, 45/47-frame и family/multiplicity-разложения.
+ \item Выведены центральные source/gap architectures и точные no-go для их
+ коэффициентов, trace-weights и dimensional transmutation без нового
+ parent.
+ \item Допущен минимальный isotypic extra-edge channel и бинарный
+ $u/d$-discriminator со статической щелью $7$.
+ \item Для бинарной релаксации построен minimal charged mediator: complex
+ dimension $2$, Real dimension $3$, точный amplitude damping и
+ energy/charge conservation.
+ \item Общая cell консервативно расширена
+ \begin{equation}
+  43=1+42\longrightarrow45=1+42+2,
+  \qquad \mathcal L_{42}\longrightarrow\mathcal L_{44}.
+  \label{eq:v8-final-cell-extension}
+ \end{equation}
+ \item Доказано, что старый процесс является точным restriction новой
+ chain architecture.
+ \item Пять apparent dynamic inputs сокращены до четырёх независимых slots:
+ \begin{equation}
+  \mathcal D_{\min}=
+  \{\mathfrak e_{\rm endpoint},E_*,\chi,
+  \mathfrak t_{\rm transport}\}.
+  \label{eq:v8-final-four-slot-data}
+ \end{equation}
+ \item Полевая ветвь дала rank-42 field-to-noise map, gauge-fixed kinetic
+ supermetric, BV vacuum quotient и точные ограничения horizontal phases.
+\end{enumerate}
+
+\section{Что не достигнуто}
+
+Не построено одно действие, которое одновременно выбирает все четыре
+данных из \eqref{eq:v8-final-four-slot-data}. В частности,
+\begin{equation}
+ N_{\rm inherited\ four\ slot\ parent}=0/4.
+ \label{eq:v8-final-parent-ledger}
+\end{equation}
+Общий резонансный квант
+\begin{equation}
+ E_*=E_C=7\gamma
+ \label{eq:v8-final-common-energy}
+\end{equation}
+согласует подсистемы, но не выбирает единицу энергии. Масштабная орбита
+$(E_*,t)\mapsto(\lambda E_*,t/\lambda)$ сохраняет весь безразмерный
+процесс. Поэтому absolute time, rate, baryon scale, физические массы и
+наблюдаемые lifetime не заявляются.
+
+Условные $H_{23/24}$, 45/47-frame и charged mediator не являются raw
+следствиями $H_{21}$. Точный Флоке-транспорт не становится локальным
+стационарным Hamiltonian. Connected baryon kernel не получил физическую
+меру и spectral scale. Эти границы являются частью результата, а не
+незавершёнными техническими деталями.
+
+\section{Ответ на центральный вопрос}
+
+\begin{theorem}[Ответ Тома VIII]
+Полное корреляционное ядро на явной алгебре наблюдаемых действительно
+восстанавливает локальность и поддерживает единый вычислимый
+квантово-марковский процесс с межсекторными каналами, микроскопической
+дилатацией и полным шумовым носителем. На условно расширенном carrier этот
+процесс допускает примитивное и Real/gauge-совместимое завершение. Однако
+raw физический носитель и текущее parent action не выбирают endpoint,
+общий энергетический масштаб, coupling и транспорт. Следовательно,
+операторно-динамическая задача Тома VIII решена, а полный физический parent
+не получен.
+\end{theorem}
+
+\section{Программа Тома IX}
+
+Том IX допустим не как ещё один аудит существующих коэффициентов, а как
+проверка нового сильного утверждения: существует ли одно ограниченное снизу
+Real- и gauge-совместимое действие, стационарные условия которого выбирают
+все четыре slots $\mathcal D_{\min}$.
+
+Входной контракт Тома IX:
+\begin{enumerate}
+ \item один общий carrier, содержащий raw endpoint-extension без ручного
+ переключения между $H_{21}$ и условными $H_{23/24}$;
+ \item один parent-Hamiltonian или action, выводящий $E_*>0$ и $\chi$;
+ \item один transport law, совместимый с GNVW-границей: явно фундаментальный
+ Флоке-примитив либо локальная index-balanced реализация;
+ \item единое stationary state и fixed algebra полного 44-channel process;
+ \item полный Hessian и доказательство ограниченности снизу;
+ \item минимум одно новое безразмерное следствие, не использованное для
+ выбора parent-коэффициентов.
+\end{enumerate}
+
+Критерий успеха имеет вид
+\begin{equation}
+ N_{IX}=6/6,
+ \label{eq:v8-final-tome9-success}
+\end{equation}
+а провал любого из первых четырёх пунктов запрещает переход к абсолютным
+массам и временам жизни.
+
+\begin{protocol}[Итог Тома VIII]\begin{enumerate}
+\item исходная программа: \textbf{проверена};
+\item полный correlation kernel: \textbf{восстановлен};
+\item locality reconstruction: \textbf{получена};
+\item linking-QMS и fixed algebra: \textbf{получены};
+\item полный 42-channel process: \textbf{получен};
+\item microscopic dilation и conveyor: \textbf{получены};
+\item field-to-noise и kinetic structures: \textbf{получены};
+\item tensor/baryon operator tests: \textbf{выполнены};
+\item charged mediator и 45-cell extension: \textbf{получены условно};
+\item абсолютная энергия и время: \textbf{не выведены};
+\item единый четырёхслотовый parent: \textbf{не получен};
+\item Том VIII: \textbf{завершён};
+\item следующий гейт: \textbf{admission четырёхслотовой программы Тома IX}.
+\end{enumerate}\end{protocol}

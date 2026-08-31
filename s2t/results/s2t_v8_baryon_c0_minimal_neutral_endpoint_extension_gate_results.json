@@ -1,0 +1,50 @@
+{
+  "bridge": {
+    "E": "|s0><a0|",
+    "Hermitian_directions": [
+      "X=E+E*",
+      "Y=-i(E-E*)",
+      "H=P_s-P_a"
+    ],
+    "gauge_neutral_XY": true,
+    "imprimitivity": true,
+    "odd_XY": true,
+    "real_span_closed": true
+  },
+  "conditional_selector": {
+    "c0": 4,
+    "kappa": 1,
+    "physical_origin_of_new_states": false,
+    "r_star": 4
+  },
+  "date": "2026-08-30",
+  "endpoint_extension": {
+    "minimal_by_two_orthogonal_rank_one_corners": true,
+    "new_dimension": 23,
+    "new_neutral_complex_states": 2,
+    "old_dimension": 21
+  },
+  "extended_frame": {
+    "new_rank": 45,
+    "old_rank": 42,
+    "trace_metric": "K45=K42 direct_sum 2I3",
+    "trace_metric_rank": 45
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_minimal_neutral_endpoint_extension_gate",
+  "lie_closure": {
+    "new_real_dimension": 3,
+    "relations": [
+      "[X,Y]=2iH",
+      "[H,X]=2iY",
+      "[H,Y]=-2iX"
+    ]
+  },
+  "next_gate": "version8_baryon_c0_extended_45_frame_fixed_algebra_and_dynamics_gate",
+  "verdict": {
+    "minimal_gauge_closed_frame_increment": 3,
+    "minimal_neutral_endpoint_extension_admitted": true,
+    "minimal_state_increment": 2,
+    "physical_extended_parent_derived": false
+  }
+}

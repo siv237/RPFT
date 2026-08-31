@@ -1,0 +1,39 @@
+{
+  "date": "2026-08-30",
+  "gate": "version8_vacuum_chain_parent_state_and_local_hamiltonian_origin_gate",
+  "information_flow": {
+    "global_floquet_step_index": 43,
+    "index_mismatch": "43 != 1",
+    "local_hamiltonian_path_index": 1,
+    "localized_collision_index": 1,
+    "shift_multiplicative_gnvw_index": 43
+  },
+  "literature": {
+    "alpu_converse_lieb_robinson": "arXiv:2012.00741",
+    "gnvw": "arXiv:0910.3675"
+  },
+  "registry": {
+    "certificate_sha256": "9aa9ecf5fa86e86df84e359515c0a78b5376cb0118d502861a5602eed38914a4",
+    "gate_count": 24,
+    "obligation_count": 157
+  },
+  "vacuum_parent": {
+    "cell_dimension": 43,
+    "commuting_projectors": true,
+    "excitation_dimension": 42,
+    "finite_volume_gap": 1,
+    "finite_volume_ground_dimension": 1,
+    "frustration_free": true,
+    "local_term": "h_m=I-|0><0|_m",
+    "product_vacuum_parent_derived": true
+  },
+  "verdict": {
+    "current_floquet_construction_remains_valid": true,
+    "even_time_dependent_lieb_robinson_origin": false,
+    "exact_shift_has_local_hamiltonian_origin": false,
+    "next_gate": "version8_index_balanced_ancilla_conveyor_gate",
+    "preloaded_vacuum_has_local_parent": true,
+    "strong_self_generated_reservoir": false,
+    "time_independent_local_hamiltonian_origin": false
+  }
+}

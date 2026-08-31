@@ -1,0 +1,72 @@
+{
+  "candidates": {
+    "base_dirac_scale": {
+      "breaks_scale_orbit": false,
+      "internally_selected": false,
+      "length_weight": -2,
+      "passes": false,
+      "typed_kernel_map": true
+    },
+    "clock_energy_squared": {
+      "breaks_scale_orbit": false,
+      "internally_selected": false,
+      "length_weight": -2,
+      "passes": false,
+      "typed_kernel_map": false
+    },
+    "cutoff_or_inverse_radius_squared": {
+      "breaks_scale_orbit": false,
+      "internally_selected": false,
+      "length_weight": -2,
+      "passes": false,
+      "typed_kernel_map": false
+    },
+    "noise_rate_squared": {
+      "breaks_scale_orbit": false,
+      "internally_selected": false,
+      "length_weight": -2,
+      "passes": false,
+      "typed_kernel_map": false
+    },
+    "observed_baryon_mass_squared": {
+      "breaks_scale_orbit": true,
+      "internally_selected": false,
+      "length_weight": -2,
+      "passes": false,
+      "typed_kernel_map": true
+    },
+    "vacuum_hessian_gap": {
+      "breaks_scale_orbit": false,
+      "internally_selected": true,
+      "length_weight": 0,
+      "passes": false,
+      "typed_kernel_map": false
+    }
+  },
+  "contract": [
+    "correct_weight",
+    "internally_selected",
+    "typed_kernel_map",
+    "breaks_scale_orbit"
+  ],
+  "date": "2026-08-30",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_spectral_scale_anchor_candidate_audit_gate",
+  "input_sha256": {
+    "s2t/results/s2t_v8_clock_energy_anchor_candidate_audit_gate_results.json": "834663f18c8f1163c8201dc8d31770ebd08a0b1ca0622f05588fb13a594d411f",
+    "s2t/results/s2t_v8_full_field_a4_dirac_lift_origin_gate_results.json": "695519f50ce5bd8803946efe42a176616cb74b86769484753553b250065dedf3",
+    "s2t/results/s2t_v8_full_noise_physical_time_scale_no_go_gate_results.json": "a683d9a57036e72ee893f61ba18676b4ed91d65606d9fc044bc6da641def71e6",
+    "s2t/results/s2t_v8_gauge_invariant_vacuum_hessian_reconstruction_gate_results.json": "3f5c55ce89c76de10b03342d395bf1ba1ef0ff1a8a0903fc51f80f395aa8a74f"
+  },
+  "next_gate": "version8_baryon_spectral_scale_anchor_minimal_new_data_gate",
+  "passing_candidates": 0,
+  "target": {
+    "length_scaling_weight": -2,
+    "quantity": "mass_sq"
+  },
+  "verdict": {
+    "internal_spectral_scale_anchor_found": false,
+    "new_typed_base_scale_selector_required": true,
+    "observed_mass_is_target_loaded": true
+  }
+}

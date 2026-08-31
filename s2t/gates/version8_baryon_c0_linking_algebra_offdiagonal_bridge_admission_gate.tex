@@ -1,0 +1,120 @@
+\chapter{Допуск off-diagonal linking bridge для карты c0}
+\label{ch:v8-baryon-c0-linking-algebra-offdiagonal-bridge-admission-gate}
+
+Direct-sum trace оставил свободное отношение центральных весов. Проверим
+минимальную неразделённую архитектуру: исходная и auxiliary прямые становятся
+двумя углами одного полного матричного блока
+\begin{equation}
+ \mathcal L_{min}=M_2(\mathbb C)=
+ \begin{pmatrix}
+ \mathbb C&\mathbb C\\
+ \mathbb C&\mathbb C
+ \end{pmatrix}.
+ \label{eq:v8-baryon-c0-minimal-linking-algebra}
+\end{equation}
+
+\section{Матричная единица как мост}
+
+Положим
+\begin{equation}
+ P_s=\begin{pmatrix}1&0\\0&0\end{pmatrix},
+ \qquad
+ P_a=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+ \qquad
+ E=\begin{pmatrix}0&1\\0&0\end{pmatrix}.
+ \label{eq:v8-baryon-c0-linking-matrix-units}
+\end{equation}
+Тогда
+\begin{equation}
+ EE^*=P_s,
+ \qquad E^*E=P_a,
+ \qquad P_sE=E=EP_a.
+ \label{eq:v8-baryon-c0-linking-imprimitivity-relations}
+\end{equation}
+Наличие $E$ связывает два угла: порождённая $*$-алгебра и её центр равны
+\begin{equation}
+ C^*(P_s,P_a,E)=M_2(\mathbb C),
+ \qquad Z(M_2(\mathbb C))=\mathbb C I_2.
+ \label{eq:v8-baryon-c0-linking-generated-simple-block}
+\end{equation}
+Поэтому независимых центральных весов больше нет.
+
+\section{Единый след и нормировка карты}
+
+Единственный нормированный trace полного блока есть
+\begin{equation}
+ \tau_2(X)=\frac12\Tr_2X,
+ \qquad
+ \tau_2(P_s)=\tau_2(P_a)=\frac12.
+ \label{eq:v8-baryon-c0-linking-unique-trace}
+\end{equation}
+Для единичных генераторов двух углов индуцированные метрики совпадают:
+\begin{equation}
+ G_s=\tau_2(P_s)=\frac12,
+ \qquad
+ G_a=\tau_2(P_a)=\frac12.
+ \label{eq:v8-baryon-c0-linking-corner-metrics}
+\end{equation}
+Условие pullback-изометрии теперь даёт
+\begin{equation}
+ G_a\kappa^2=G_s
+ \quad\Longrightarrow\quad
+ \kappa=1
+ \qquad(\kappa>0).
+ \label{eq:v8-baryon-c0-linking-kappa-one}
+\end{equation}
+
+Даже возможная амплитуда моста не возвращает непрерывную свободу, если мост
+должен быть imprimitivity matrix unit. Для $E_h=hE$ имеем
+\begin{equation}
+ E_hE_h^*=h^2P_s,
+ \qquad E_h^*E_h=h^2P_a,
+ \label{eq:v8-baryon-c0-scaled-bridge-products}
+\end{equation}
+и условия $E_hE_h^*=P_s$, $E_h^*E_h=P_a$ вместе с $h>0$ дают
+\begin{equation}
+ h^2=1\quad\Longrightarrow\quad h=1.
+ \label{eq:v8-baryon-c0-imprimitivity-fixes-bridge-scale}
+\end{equation}
+
+Для сильнейшего внутреннего кандидата $r_*=4$ условный итог архитектуры
+равен
+\begin{equation}
+ c_0=\kappa r_*=4.
+ \label{eq:v8-baryon-c0-linking-conditional-value}
+\end{equation}
+
+\begin{theorem}[Минимальный linking pass]
+Ненулевая imprimitivity-стрелка между двумя одномерными углами порождает
+простой $M_2$-блок, устраняет симплекс центральных следовых весов и при
+положительной ориентации фиксирует $\kappa=1$. Поэтому минимальная linking
+архитектура условно выбирает $c_0=r_*$.
+\end{theorem}
+
+\section{Граница происхождения}
+
+Получен допуск архитектуры, но не её наследование. Текущий 42-мерный
+центрированный кадр является пространством шумовых и полевых направлений;
+в нём ещё не классифицирована gauge-, Real- и grading-совместимая матричная
+единица, чей начальный угол есть прямая $r_*$, а конечный --- новый
+auxiliary carrier шеститочечного ядра.
+
+\begin{nogocriterion}[Linking block не возникает из обозначения]
+Нельзя объявлять два скалярных коэффициента углами одного $M_2$ только ради
+получения равных trace weights. Необходимо предъявить внутри объявленного
+операторного носителя $E$ с точными endpoint, Real, grading и gauge
+условиями и проверить imprimitivity identities.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item минимальная linking-алгебра: \textbf{$M_2(\mathbb C)$};
+\item центр: \textbf{$\mathbb C I_2$};
+\item нормированный trace: \textbf{единственный};
+\item $\kappa$: \textbf{$1$ условно};
+\item $c_0$ при $r_*=4$: \textbf{$4$ условно};
+\item существующий 42-carrier содержит требуемый $E$: \textbf{не проверено};
+\item следующий гейт: \textbf{классификация моста в текущем носителе}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_linking_algebra_offdiagonal_bridge_admission_gate_results.json}.

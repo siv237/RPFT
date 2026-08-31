@@ -1,0 +1,43 @@
+{
+  "boundary": {
+    "bounded_strength_fixed_time_thermodynamic_limit": false,
+    "exact_clock_transfer": true,
+    "finite_clock_repeatable_conveyor_derived": false,
+    "finite_word_static_embedding": true,
+    "general_interacting_clock_model_excluded": false,
+    "next_gate": "bounded_strength_autonomous_clock_thermodynamic_limit",
+    "original_lattice_uniform_locality": false
+  },
+  "date": "2026-08-30",
+  "dressed_execution": {
+    "clock_returns_to_initial_state": false,
+    "dressed_hamiltonian": "sqrt(2)(|1><0| tensor W0 + |2><1| tensor W1 + h.c.)",
+    "exact_one_shot_execution": true,
+    "final_clock": "|2>",
+    "final_data": "-W1 W0 |psi>",
+    "history_word": "W1 W0",
+    "initial_clock": "|0>"
+  },
+  "finite_history_clock": {
+    "clock_dimension": 3,
+    "couplings": "sqrt(2),sqrt(2)",
+    "endpoint_phase": "-1",
+    "exact_end_to_end_transfer": true,
+    "transfer_time": "pi/2"
+  },
+  "gate": "version8_clock_augmented_static_hamiltonian_conveyor_gate",
+  "locality_scaling": {
+    "bounded_coupling_transfer_time_lower_bound": "tau >= pi*T/4 = pi*L/2",
+    "global_layer_transition_local_on_original_chain": false,
+    "local_serialisation_gate_count": "T=2L",
+    "maximum_coupling_lower_bound": "J_max >= T/2",
+    "perfect_transfer_couplings": "J_t=sqrt((t+1)(T-t))",
+    "thermodynamic_uniform_static_conveyor_derived": false,
+    "volume_independent_fixed_time": false
+  },
+  "registry": {
+    "certificate_sha256": "657fd2ff4656a2f0ab6d295ecce8695bd6e5b37be55b61c835d27300b2922b06",
+    "gate_count": 27,
+    "obligation_count": 169
+  }
+}

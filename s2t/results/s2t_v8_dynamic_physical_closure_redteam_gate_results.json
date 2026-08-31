@@ -1,0 +1,67 @@
+{
+  "audit_rule": "A unique physical dynamics requires a typed generator, unique relative rates, dimensional energy and time calibration, a non-circular microscopic environment or correlation kernel, a symmetry-derived noise metric, and a preregistered observable.",
+  "counts": {
+    "failed_physical_requirements": 8,
+    "physical_requirements": 8
+  },
+  "date": "2026-08-29",
+  "exact_invariance_checks": {
+    "forward_ratio": "exp(-2)",
+    "forward_times_reverse": "1",
+    "interpretation": "The fixed Hodge sign selects an internal orientation convention, while the operator process still lacks dimensional rate and bath calibration.",
+    "positive_generator_rescaling_preserves_zero_eigenspace": true,
+    "reverse_ratio": "exp(2)"
+  },
+  "failed_physical_requirements": [
+    "unique_relative_rate_metric",
+    "absolute_time_scale",
+    "physical_energy_or_temperature_calibration",
+    "autonomous_environment_or_fresh_ancilla_supply",
+    "microscopic_system_bath_coupling_or_spectral_density",
+    "independent_physical_correlation_kernel",
+    "symmetry_forced_noise_metric",
+    "preregistered_empirical_observable"
+  ],
+  "gate": "version8_dynamic_physical_closure_redteam_gate",
+  "mathematical_closure": {
+    "common_dimensionless_Bohr_grading": true,
+    "complete_positivity_certificate": true,
+    "dimensionless_semigroup": true,
+    "orientation_compatible_with_fixed_Hodge_parent": true,
+    "scalar_fixed_algebra": true,
+    "status": "operator_algebraic_process_class_closed",
+    "typed_finite_dimensional_generator": true
+  },
+  "physical_closure_requirements": {
+    "absolute_time_scale": false,
+    "autonomous_environment_or_fresh_ancilla_supply": false,
+    "independent_physical_correlation_kernel": false,
+    "microscopic_system_bath_coupling_or_spectral_density": false,
+    "physical_energy_or_temperature_calibration": false,
+    "preregistered_empirical_observable": false,
+    "symmetry_forced_noise_metric": false,
+    "unique_relative_rate_metric": false
+  },
+  "source_artifacts": {
+    "s2t_v8_canonical_noise_frame_common_trace_gate_results.json": "c1d627cdae2dab9f785b25ed77c2f793f2104b175876a2a1576dea5c8b27c384",
+    "s2t_v8_chain_orientation_index_defect_selector_gate_results.json": "29a989f24be7e94443c1fd3633b432cc6656f40292d893b0f7c07cd3be1e1ace",
+    "s2t_v8_common_chain_dirichlet_rate_metric_gate_results.json": "468791392b39353a1a96260e6649b3d21c8f9fd85319f150da8a6ed2ae6814d1",
+    "s2t_v8_correlation_kernel_short_time_rate_selector_gate_results.json": "7075c4930a2e9df9a8ac3571a9db599ccfb039f99acc5edb06b802b4abcc52e1",
+    "s2t_v8_fluctuation_dissipation_mobility_origin_gate_results.json": "faaf92456c4ad39367835c72ca727cafcca58d396a1df0280231c66f659eb38a",
+    "s2t_v8_full_primitive_markov_generator_assembly_gate_results.json": "76df7de37e6855fd2537d2044048ecef74d3f24447fa37b5a82c1527b93f20c9",
+    "s2t_v8_intrinsic_noise_clock_dilation_gate_results.json": "4af5f7caf36ad927ed340e14a695662a77e043b6b8f299a3a90f6c84a2e6b9dd",
+    "s2t_v8_kms_nontracial_relative_rate_selector_gate_results.json": "5c3cd9008d31f0c3483eb62a46ce6ac309c99ff10077f383fa484ae990bbeda8",
+    "s2t_v8_modular_bohr_parent_origin_gate_results.json": "eb13ec3899a9af71a0fba03fba1dfa8345dbc91fed51850abe015f077a693d83",
+    "s2t_v8_noise_isotropy_symmetry_admission_gate_results.json": "7831ae8d8b4ef56ed59f798d76f5b48795aa5e20a26337a4754accc490f7ed09",
+    "s2t_v8_physical_correlation_kernel_parent_action_origin_gate_results.json": "5f20a514d089a30c8ccb354091a43e824b7d679a726c8adce7afc0ea9f034057"
+  },
+  "verdict": {
+    "lcf_migration_may_continue_as_audit": true,
+    "mathematical_program_in_dead_end": false,
+    "new_physical_selector_allowed_without_microscopic_input": false,
+    "next_gate": "microscopic_system_bath_spectral_density_or_preregistered_observable_gate",
+    "selector_chasing_risk": true,
+    "status": "mathematical_process_positive_physical_dynamic_closure_no_go",
+    "unique_physical_dynamics_closed": false
+  }
+}

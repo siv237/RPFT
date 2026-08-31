@@ -1,0 +1,45 @@
+{
+  "carrier": {
+    "active_chain_cell_dimension": 43,
+    "active_shift_index": 43,
+    "spectator_chain_cell_dimension": 43,
+    "spectator_shift_index": "1/43",
+    "total_gnvw_index": 1
+  },
+  "date": "2026-08-30",
+  "gate": "version8_index_balanced_ancilla_conveyor_gate",
+  "hamiltonian": {
+    "absolute_stage_duration_derived": false,
+    "local_term": "(pi/2)(I-SWAP)",
+    "single_static_local_generation": false,
+    "two_piece_local_generation": true
+  },
+  "recovery": {
+    "fresh_active_vacuum_each_step": true,
+    "reduced_iteration": "Phi_h^n for all finite n>=0",
+    "residual": "0",
+    "spectator_couples_to_system": false
+  },
+  "registry": {
+    "certificate_sha256": "3b38d26653b8cc18728b512ec22516a9d76857602aa3e117511a31b4a1b02096",
+    "gate_count": 25,
+    "obligation_count": 162
+  },
+  "swap_circuit": {
+    "active_result": "A_m(final)=A_(m-1)(initial)",
+    "depth": 2,
+    "gauge_covariant": true,
+    "layer_0": "product_m SWAP(A_m,B_m)",
+    "layer_1": "product_m SWAP(B_m,A_(m+1))",
+    "nearest_neighbour": true,
+    "real_covariant": true,
+    "spectator_result": "B_m(final)=B_(m+1)(initial)"
+  },
+  "verdict": {
+    "exact_local_floquet_conveyor": true,
+    "gnvw_obstruction_removed": true,
+    "next_gate": "version8_static_local_hamiltonian_embedding_or_no_go_gate",
+    "single_time_independent_hamiltonian": false,
+    "strong_stationary_autonomy": false
+  }
+}

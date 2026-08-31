@@ -1,0 +1,95 @@
+{
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_central_hamiltonian_parent_action_origin_gate",
+  "gauge_casimir_test": {
+    "casimir_hamiltonian_in_parent": false,
+    "equal_gaps_require": "c1=0",
+    "gap_coefficient_matrix": [
+      [
+        "91/36",
+        "-3/4",
+        "4/3"
+      ],
+      [
+        "7/36",
+        "-3/4",
+        "4/3"
+      ]
+    ],
+    "gap_difference": "Delta_u-Delta_d=(7/3)c1",
+    "nullity": 1,
+    "rank": 2
+  },
+  "ledgers": {
+    "conditional_shape_satisfied": 5,
+    "conditional_shape_tested": 5,
+    "parent_origin_satisfied": 0,
+    "parent_origin_tested": 7
+  },
+  "minimal_source_preview": {
+    "generic_source_components": 2,
+    "potential": "(1/2)Tr(h^2)-j_A a-j_B b",
+    "stationary_point": [
+      "j_A/12",
+      "j_B/48"
+    ]
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_parent_architecture_gate",
+  "other_sources": {
+    "coherence_radius": 3,
+    "coherence_scalar_gap_response": [
+      0,
+      0
+    ],
+    "grading_sector_vector": "scalar; zero after quotient",
+    "old_parent_depends_on_new_center": false
+  },
+  "spectral_moment_test": {
+    "Tr_h2": "12 a^2+48 b^2",
+    "Tr_h3": "36 a^2 b-96 b^3",
+    "quadratic_hessian": [
+      [
+        24,
+        0
+      ],
+      [
+        0,
+        96
+      ]
+    ],
+    "scalar_background_linear_response": [
+      0,
+      0
+    ],
+    "selects_nonzero_gap": false
+  },
+  "traceless_central_basis": {
+    "A": "P_u-P_d",
+    "B": "P_u+P_d-3P_Y",
+    "basis_dimension": 2,
+    "gap_map": [
+      "Delta_u=a+4b",
+      "Delta_d=-a+4b"
+    ],
+    "gram_matrix": [
+      [
+        12,
+        0
+      ],
+      [
+        0,
+        48
+      ]
+    ]
+  },
+  "verdict": {
+    "coherence_scalar_generates_gaps": false,
+    "gauge_casimir_coefficients_inherited": false,
+    "gauge_casimirs_span_gap_plane_conditionally": true,
+    "ordinary_moments_generate_nonzero_source": false,
+    "ordinary_moments_generate_stiffness": true,
+    "two_gap_shape_available": true,
+    "two_gap_values_derived": false
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "covariance_and_continuous_time_boundary": {
+    "autonomous_continuous_time_dilation_derived": false,
+    "exact_counterexample": "Phi_(1/50) o Phi_(3/100) != Phi_(1/20)",
+    "finite_family_is_exact_semigroup": false,
+    "gauge_covariance_from_exact_orthogonal_frame": true,
+    "physical_step_or_rate_derived": false,
+    "tangent_at_zero_is_cross_gksl_generator": true
+  },
+  "date": "2026-08-29",
+  "exact_cross_jump_space": {
+    "gram_spectrum_with_multiplicity": [
+      {
+        "eigenvalue": 0,
+        "multiplicity": 9
+      },
+      {
+        "eigenvalue": 1,
+        "multiplicity": 6
+      },
+      {
+        "eigenvalue": 2,
+        "multiplicity": 3
+      },
+      {
+        "eigenvalue": 3,
+        "multiplicity": 2
+      },
+      {
+        "eigenvalue": 6,
+        "multiplicity": 1
+      }
+    ],
+    "hilbert_schmidt_gram": "2 I_12",
+    "real_jump_dimension": 12,
+    "system_dimension": 21
+  },
+  "gate": "version8_minimal_covariant_stinespring_lcf_migration_gate",
+  "one_step_channel": {
+    "benchmark_step": "1/12",
+    "choi_rank": 13,
+    "completely_positive": true,
+    "endpoint_algebra_invariant": true,
+    "endpoint_matrix_units_checked": 221,
+    "environment_decomposition": "C vacuum direct_sum complexification of the 12-real cross frame",
+    "exact_step_interval": [
+      "0",
+      "1/6"
+    ],
+    "formula": "K0=sqrt(I-pG), Ka=sqrt(p)Da",
+    "minimal_environment_dimension": 13,
+    "new_physical_particle_required": false,
+    "positive_interior_kraus_rank": 13,
+    "trace_preserving": true,
+    "unital": true
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "4f9676e18e49c3f8ca957882465105da2dcd4f43624e0add341ad27e3c8337b5",
+    "obligation_count": 11,
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "continuous_noise_time_still_open": true,
+    "minimal_one_step_dilation_lcf_checked": true,
+    "next_gate": "version8_intrinsic_noise_clock_lcf_migration_gate",
+    "status": "lcf-checked-one-step-continuous-time-open"
+  }
+}

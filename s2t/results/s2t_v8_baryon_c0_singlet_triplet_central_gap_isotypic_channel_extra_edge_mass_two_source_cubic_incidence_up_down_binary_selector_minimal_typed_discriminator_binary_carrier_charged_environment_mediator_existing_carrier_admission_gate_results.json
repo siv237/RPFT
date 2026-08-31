@@ -1,0 +1,61 @@
+{
+  "carrier_admission": {
+    "conditional_47_frame_contains_singlet_connector_quadratures": true,
+    "conditional_H23_has_neutral_s0": true,
+    "conditional_H24_closes_global_family_representation": true,
+    "conditional_extended_admission_satisfied": 7,
+    "conditional_extended_admission_tested": 7,
+    "raw_H21_has_charged_family_singlet": true,
+    "raw_H21_has_neutral_vacuum_line": false,
+    "raw_inherited_admission_satisfied": 2,
+    "raw_inherited_admission_tested": 7,
+    "raw_real_double_has_opposite_charge_line": true
+  },
+  "corrected_charged_family_decomposition": {
+    "coarse_all_triplet_reading_valid": false,
+    "existing_family_singlet_line": "e_R^(s)",
+    "family_fixed_dimension_after_closure": 1,
+    "globally_closed_conditional_decomposition": "1 direct_sum 3 in H_24",
+    "old_charged_singlet_multiplicity": 3,
+    "remaining_old_lines": "two members of a positive-grading triplet"
+  },
+  "date": "2026-08-31",
+  "dynamic_origin": {
+    "clock_rate_anchor_inherited_for_this_channel": false,
+    "coupling_g_selected": false,
+    "fresh_ancilla_chain_inherited_for_this_channel": false,
+    "neutral_vacuum_state_selected": false,
+    "resonant_gap_7_gamma_inherited": false,
+    "satisfied": 0,
+    "tested": 5
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_existing_carrier_admission_gate",
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_energy_state_rate_parent_origin_gate",
+  "unique_typed_mediator": {
+    "basis": "|e_R^(s)><s0|",
+    "charged_target_gradings": [
+      -1,
+      1,
+      1,
+      1
+    ],
+    "family_invariant_odd_hom_dimension": 1,
+    "hermitian_quadrature_dimension": 2,
+    "neutral_source_gradings": [
+      1,
+      -1
+    ],
+    "neutral_source_space": "span(s0,a0)",
+    "operator_charge": -1,
+    "quadrature_trace_gram": "2 I2",
+    "real_conjugate_charge": 1
+  },
+  "verdict": {
+    "microscopic_irreversible_parent_derived": false,
+    "neutral_extension_and_global_family_closure_are_conditional": true,
+    "new_independent_charged_singlet_pair_required": false,
+    "previous_all_triplet_obstruction_superseded": true,
+    "unique_family_and_grading_typed_mediator_exists_conditionally": true
+  }
+}

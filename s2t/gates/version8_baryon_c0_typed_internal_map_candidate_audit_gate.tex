@@ -1,0 +1,107 @@
+\chapter{Типизированные внутренние кандидаты карты c0}
+\label{ch:v8-baryon-c0-typed-internal-map-candidate-audit-gate}
+
+Для однополюсного барионного ядра вспомогательное поле должно иметь
+квадратичный блок
+\begin{equation}
+ S_{\rm aux}=\frac12\phi(z+m^2)\phi-g\phi J,
+ \qquad m^2=c_0a.
+ \label{eq:v8-baryon-c0-required-auxiliary-block}
+\end{equation}
+Следовательно, кандидат на $c_0$ должен быть не просто положительным
+безразмерным числом. Требуются внутренний выбор, независимость от целевой
+массы, объявленный морфизм носителей и появление именно в гессиане поля
+$\phi$. Обозначим условие допуска
+\begin{equation}
+ A(x)=D(x)S(x)T(x)H(x)N(x),
+ \label{eq:v8-baryon-c0-admission-predicate}
+\end{equation}
+где $D$ означает безразмерность, $S$ --- внутренний выбор, $T$ ---
+типизированную карту в auxiliary carrier, $H$ --- появление в его
+квадратичном гессиане, а $N$ --- независимость от наблюдаемой мишени.
+
+\section{Конечный реестр кандидатов}
+
+База формул поставляет семь ближайших объектов:
+\begin{equation}
+ \mathcal C_{c_0}=
+ \left\{1,3,4,\frac38,e^{-2},R_\chi,\mathcal R_3\right\},
+ \qquad
+ \mathcal R_3:=\frac{\lambda_3^2}{\alpha\beta}.
+ \label{eq:v8-baryon-c0-candidate-set}
+\end{equation}
+Первые три являются finite-Dirac, vector и scalar mass-square ratios
+Version III; $3/8$ есть спектральный gauge coupling; $e^{-2}$ выбрано
+индексом цепного процесса; $R_\chi=1$ только на дополнительно выбранном
+чистом тепловом профиле; $\mathcal R_3=4$ возникает из следовой нормы
+сдвинутой кривизны. Их точные значения в соответствующих ветвях равны
+\begin{equation}
+ (c_f,c_A,c_s,g^2,r_{\rm KMS},R_\chi,\mathcal R_3)
+ =\left(1,3,4,\frac38,e^{-2},1,4\right).
+ \label{eq:v8-baryon-c0-candidate-values}
+\end{equation}
+
+Первые шесть объектов принадлежат hidden finite, gauge, Markov или
+spectral-profile носителям. В проекте нет объявленной стрелки
+\begin{equation}
+ \mathcal M_x:\mathcal C_x
+ \dashrightarrow
+ \operatorname{End}(\mathcal H_{\rm aux}),
+ \qquad
+ \mathcal M_x(x)=c_0I_{\rm aux},
+ \label{eq:v8-baryon-c0-missing-carrier-map}
+\end{equation}
+которая помещала бы любой из них в коэффициент $m^2=c_0a$.
+
+\section{Сильнейший близкий кандидат}
+
+Сдвинутая кривизна находится на том же следовом носителе, который породил
+$W_3$, и потому является единственным близким кандидатом. Но она даёт
+\begin{equation}
+ \mathcal R_3=\frac{\lambda_3^2}{\alpha\beta}=4,
+ \qquad
+ c_0=\frac{m_{\rm pole}^2}{a},
+ \label{eq:v8-baryon-c0-shape-versus-pole-ratio}
+\end{equation}
+то есть отношение трёх коэффициентов взаимодействия, а не отношение
+квадратичной массы нового auxiliary carrier к масштабу базы. Центральный
+фон, из которого получено первое равенство, вдобавок не является нечётным
+оператором Дирака при ненулевом масштабе.
+
+Точный булев реестр имеет вид
+\begin{equation}
+ (A(c_f),A(c_A),A(c_s),A(g^2),A(r_{\rm KMS}),A(R_\chi),A(\mathcal R_3))
+ =(0,0,0,0,0,0,0),
+ \label{eq:v8-baryon-c0-admission-ledger}
+\end{equation}
+и потому
+\begin{equation}
+ \sum_{x\in\mathcal C_{c_0}}A(x)=0\quad\hbox{из }7.
+ \label{eq:v8-baryon-c0-admission-count}
+\end{equation}
+
+\begin{theorem}[Исчерпание объявленных внутренних отношений]
+Ни одно из семи уже вычисленных или условно выбранных безразмерных отношений
+не является типизированной картой $c_0$ в гессиан вспомогательного поля
+барионного ядра. Результат является исчерпанием текущего именованного
+реестра, а не запретом на существование нового cross-carrier морфизма.
+\end{theorem}
+
+\begin{nogocriterion}[Численное совпадение не является морфизмом]
+Совпадение скалярного mass-square ratio и $\mathcal R_3$ со значением $4$
+не разрешает положить $c_0=4$. Их источники, роли в действии и носители
+различны; требуется явная вариация одного родителя, дающая коэффициент
+$c_0a$ в auxiliary Hessian.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item проверено кандидатов: \textbf{$7$};
+\item прошедших полный контракт: \textbf{$0$};
+\item сильнейший близкий кандидат: \textbf{$\mathcal R_3=4$};
+\item дефект сильнейшего кандидата: \textbf{shape ratio, не pole ratio};
+\item универсальный запрет будущих карт: \textbf{не утверждается};
+\item следующий гейт: \textbf{минимальная архитектура cross-carrier морфизма}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_typed_internal_map_candidate_audit_gate_results.json}.

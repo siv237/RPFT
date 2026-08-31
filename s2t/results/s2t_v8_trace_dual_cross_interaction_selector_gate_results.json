@@ -1,0 +1,64 @@
+{
+  "coupling_quotient": {
+    "environment_frame_relabelling": true,
+    "fixed_scalar_gram_couplings": "C=O/sqrt(3)",
+    "full_real_gauge_commutant_dimension": 8,
+    "orthogonal_condition": "O^T O=I_12",
+    "same_reduced_channel": true,
+    "symmetric_rate_metric_dimension": 4
+  },
+  "cross_field_module": {
+    "color_dimension": 3,
+    "complex_shape": [
+      2,
+      3
+    ],
+    "exact_no_float_derivation": true,
+    "family_order": [
+      "QLYR",
+      "XLdR"
+    ],
+    "finite_superconnection_metric": "3 I_12",
+    "real_dimension": 12
+  },
+  "date": "2026-08-30",
+  "dynamics": {
+    "absolute_physical_time_selected": false,
+    "dimensionless_cross_rate_shape_selected": true,
+    "exact_full_matrix_unit_checks": 441,
+    "polar_cross_axis_preserved": true,
+    "short_time_tangent": "Psi_h=I+(h/3)L_cross+O(h^2)"
+  },
+  "gate": "version8_trace_dual_cross_interaction_selector_gate",
+  "metric_dual_selector": {
+    "canonical_coupling": "C_tr=I_12/sqrt(3)",
+    "conditional_on_metric_dual_identification": true,
+    "coupling_gram": "C_tr^T C_tr=I_12/3",
+    "dual_rate_metric": "R=K_B^-1=I_12/3",
+    "field_metric": "K_B=3 I_12",
+    "principle": "minimal environment jump module is the metric dual of the cross amplitude module under the same finite supertrace"
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "38f2daba5ad51c3f5791fc1fe8ff631c14e273e30cb31233b98e26a3a4f300da",
+    "gate_count": 16,
+    "obligation_count": 9,
+    "status": "lcf-checked",
+    "total_obligation_count": 110
+  },
+  "scope_boundary": {
+    "SU2_rate_selected": false,
+    "SU3_rate_selected": false,
+    "U1_rate_selected": false,
+    "cross_module_closed": true,
+    "fresh_ancilla_supply_derived": false,
+    "linking_rate_selected": false,
+    "metric_dual_environment_principle_derived_from_parent_action": false
+  },
+  "verdict": {
+    "cross_rate_metric_unique_up_to_time_scale": true,
+    "full_physical_qms_closed": false,
+    "next_gate": "metric_dual_environment_parent_action_origin_gate",
+    "status": "lcf_checked_conditional_trace_dual_cross_rate_selector",
+    "status_is_conditional": true
+  }
+}

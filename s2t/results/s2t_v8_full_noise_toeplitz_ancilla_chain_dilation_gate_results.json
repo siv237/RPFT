@@ -1,0 +1,40 @@
+{
+  "boundary": {
+    "absolute_tick_duration_derived": false,
+    "autonomy_status": "exact discrete Floquet autonomy, conditional reservoir preparation",
+    "preloaded_product_vacuum_required": true,
+    "time_independent_local_hamiltonian_derived": false,
+    "vacuum_chain_parent_derived": false
+  },
+  "carrier": {
+    "cell_dimension": 43,
+    "chain": "infinite bilateral tensor chain relative to |0>^tensor Z",
+    "commutator": "[N,U^k]=k U^k",
+    "counter": "N e_n=n e_n",
+    "jump_dimension": 42,
+    "shift": "U e_n=e_(n+1)",
+    "system_dimension": 21
+  },
+  "date": "2026-08-30",
+  "gate": "version8_full_noise_toeplitz_ancilla_chain_dilation_gate",
+  "global_step": {
+    "cellwise_gauge_covariant": true,
+    "external_reset_each_step": false,
+    "formula": "V=(I_system tensor S_chain) U_collision^(0)",
+    "same_step_repeated": true,
+    "unitary": true,
+    "used_cell_revisited": false
+  },
+  "next_gate": "vacuum_chain_parent_state_and_local_hamiltonian_origin_gate",
+  "recovery": {
+    "domain": "all finite n >= 0",
+    "formula": "Tr_chain Ad(V)^n(rho_0 tensor omega_vac)=Phi_h^n(rho_0)",
+    "proof": "finite-cylinder induction",
+    "residual": "0"
+  },
+  "registry": {
+    "certificate_sha256": "a021a035a6a14bec4095b50dcbb3e6769a2abb0f9cb897d025b4923fd287add4",
+    "gate_count": 23,
+    "obligation_count": 153
+  }
+}

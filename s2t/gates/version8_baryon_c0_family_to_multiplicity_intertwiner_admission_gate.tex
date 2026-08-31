@@ -1,0 +1,144 @@
+\chapter{Допуск family-to-multiplicity интертвейнера}
+\label{ch:v8-baryon-c0-family-to-multiplicity-intertwiner-admission-gate}
+
+Семейный qutrit, на котором действует $R_4^+$, является стандартным
+вещественным представлением семейной группы, тогда как три connector-
+направления текущей multiplicity-среды не несут объявленного семейного
+действия:
+\begin{equation}
+ \mathcal E_{\rm fam}\simeq\mathbf3_{SO(3)_{\rm fam}},
+ \qquad
+ \mathcal E_{\rm mult}\simeq\mathbf1\oplus\mathbf1\oplus\mathbf1.
+ \label{eq:v8-baryon-c0-family-multiplicity-representation-types}
+\end{equation}
+В стандартном базисе инфинитезимальные генераторы равны
+\begin{equation}
+ J_1=\begin{pmatrix}0&0&0\\0&0&-1\\0&1&0\end{pmatrix},\quad
+ J_2=\begin{pmatrix}0&0&1\\0&0&0\\-1&0&0\end{pmatrix},\quad
+ J_3=\begin{pmatrix}0&-1&0\\1&0&0\\0&0&0\end{pmatrix}.
+ \label{eq:v8-baryon-c0-family-so3-generators}
+\end{equation}
+Для карты $T:\mathcal E_{\rm fam}\to\mathcal E_{\rm mult}$ условие
+эквивариантности имеет вид
+\begin{equation}
+ TJ_a=0,\qquad a=1,2,3.
+ \label{eq:v8-baryon-c0-family-multiplicity-intertwiner-equations}
+\end{equation}
+Точная линейная система содержит девять неизвестных и имеет
+\begin{equation}
+ \rank\mathcal C_{SO(3)}=9,\qquad
+ \dim\ker\mathcal C_{SO(3)}=0,\qquad
+ \operatorname{Hom}_{SO(3)}(\mathbf3,\mathbf1^{\oplus3})=0.
+ \label{eq:v8-baryon-c0-family-multiplicity-so3-hom-zero}
+\end{equation}
+Следовательно, ненулевой перенос $R_4^+$ запрещён уже типами
+представлений.
+
+\section{Тетраэдрический остаток также не спасает карту}
+
+Возьмём генераторы стандартной тройки $A_4$
+\begin{equation}
+ R=\operatorname{diag}(1,-1,-1),\qquad
+ C=\begin{pmatrix}0&1&0\\0&0&1\\1&0&0\end{pmatrix},
+ \qquad R^2=C^3=(RC)^3=I_3.
+ \label{eq:v8-baryon-c0-family-a4-generators}
+\end{equation}
+Если target остаётся тривиальным, условия $TR=T$ и $TC=T$ дают
+\begin{equation}
+ \rank\mathcal C_{A_4}=9,\qquad
+ \operatorname{Hom}_{A_4}(\mathbf3,\mathbf1^{\oplus3})=0.
+ \label{eq:v8-baryon-c0-family-multiplicity-a4-hom-zero}
+\end{equation}
+Таким образом, даже замена непрерывной семейной группы её тетраэдрическим
+остатком не создаёт допустимый ненулевой интертвейнер.
+
+\section{Endpoint-метки и условное расширение}
+
+Три текущих ветви различаются проекторами
+\begin{equation}
+ \Pi_0=\operatorname{diag}(1,0,0),\quad
+ \Pi_1=\operatorname{diag}(0,1,0),\quad
+ \Pi_2=\operatorname{diag}(0,0,1),\qquad
+ \bigcap_i\Pi_i'=D_3,
+ \label{eq:v8-baryon-c0-endpoint-projector-commutant}
+\end{equation}
+где $D_3$ --- диагональная алгебра. Непрерывное ортогональное
+$SO(3)$-действие, сохраняющее каждый $\Pi_i$, должно лежать в дискретной
+группе диагональных знаков, а потому на связной группе тождественно:
+\begin{equation}
+ \rho_{\rm mult}(SO(3))\subset D_3\cap O(3)
+ =\{\operatorname{diag}(\pm1,\pm1,\pm1)\}
+ \quad\Longrightarrow\quad \rho_{\rm mult}=I_3.
+ \label{eq:v8-baryon-c0-endpoint-preserving-so3-triviality}
+\end{equation}
+
+Условный проход требует повысить multiplicity-среду до второй стандартной
+тройки:
+\begin{equation}
+ \mathcal E_{\rm mult}^{\rm ext}\simeq\mathbf3_{SO(3)},
+ \qquad
+ T J_a=J_aT.
+ \label{eq:v8-baryon-c0-promoted-multiplicity-so3-action}
+\end{equation}
+Тогда вещественная лемма Шура даёт
+\begin{equation}
+ \operatorname{Hom}_{SO(3)}(\mathbf3,\mathbf3)=\mathbb R I_3,
+ \qquad T=\kappa I_3.
+ \label{eq:v8-baryon-c0-promoted-intertwiner-schur-line}
+\end{equation}
+Совпадающие trace-метрики и изометрия сокращают эту прямую до
+\begin{equation}
+ T^{\mathsf T}T=I_3
+ \quad\Longleftrightarrow\quad \kappa=\pm1,
+ \qquad
+ T R_4^+T^{\mathsf T}=R_4^+.
+ \label{eq:v8-baryon-c0-promoted-isometric-intertwiner}
+\end{equation}
+Знак не влияет на перенесённый Hamiltonian. Однако само новое
+$SO(3)$-действие смешивает endpoint-линии и несовместимо с сохранением
+всех трёх $\Pi_i$ как неподвижных меток; оно является расширением parent,
+а не следствием текущей алгебры.
+
+Итоговый контракт равен
+\begin{equation}
+ \operatorname{Hom}_{G_{\rm current}}(\mathcal E_{\rm fam},
+ \mathcal E_{\rm mult})=0,
+ \qquad
+ \dim\operatorname{Hom}_{G_{\rm extended}}=1,
+ \qquad N_{\rm extension}=0/2.
+ \label{eq:v8-baryon-c0-family-multiplicity-admission-ledger}
+\end{equation}
+Два необходимых новых объекта --- семейное действие на среде и его
+совместимый подъём на endpoint-алгебру.
+
+\begin{theorem}[Типовой запрет и условная линия Шура]
+В текущем контракте не существует ненулевого $SO(3)$- или
+$A_4$-эквивариантного отображения семейного qutrit в тривиальную
+multiplicity-среду. После явного повышения target до стандартной тройки
+пространство интертвейнеров становится одномерным и изометрия фиксирует
+его с точностью до несущественного знака.
+\end{theorem}
+
+\begin{nogocriterion}[Нельзя забывать семейное действие]
+Матрица $T\in M_3(\mathbb R)$ допустима только после удаления
+$SO(3)_{\rm fam}$ из типа источника. Такое забывание превращает
+представленческий запрет в произвольный девятипараметрический выбор и не
+является выводом карты $c_0$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item тип семейного qutrit: \textbf{$\mathbf3_{SO(3)}$};
+\item текущий тип multiplicity-среды: \textbf{$\mathbf1^{\oplus3}$};
+\item текущий $SO(3)$-Hom: \textbf{$0$};
+\item текущий $A_4$-Hom: \textbf{$0$};
+\item endpoint-preserving непрерывное действие: \textbf{тривиально};
+\item условное target-расширение: \textbf{$\mathbf3_{SO(3)}$};
+\item условный Hom после расширения: \textbf{$\mathbb RI_3$};
+\item изометрический выбор: \textbf{$\pm I_3$};
+\item новых структур расширения: \textbf{$2$};
+\item выведено текущим parent: \textbf{$0/2$};
+\item следующий гейт: \textbf{parent-origin семейного действия на среде}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_family_to_multiplicity_intertwiner_admission_gate_results.json}.

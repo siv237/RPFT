@@ -1,0 +1,146 @@
+\chapter{Селектор source-линии в семейно замкнутой среде}
+\label{ch:v8-baryon-c0-so3-closed-environment-source-line-selector-gate}
+
+Предыдущий гейт оставил семейство изометрических интертвейнеров,
+параметризованное $[u:v]\in\mathbb {RP}^1$. Однако физический коннектор
+должен одновременно быть нечётным относительно уже фиксированных
+градуировок. На трёх target- и двух source-направлениях они равны
+\begin{equation}
+ \Gamma_{\rm tar}=\operatorname{diag}(-1,+1,+1),
+ \qquad \Gamma_{\rm src}=\operatorname{diag}(+1,-1).
+ \label{eq:v8-baryon-c0-source-line-current-gradings}
+\end{equation}
+Именно это разложение допускает текущие три стрелки:
+\begin{equation}
+ \Gamma_{\rm tar}E_{00}+E_{00}\Gamma_{\rm src}=0,
+ \quad
+ \Gamma_{\rm tar}E_{11}+E_{11}\Gamma_{\rm src}=0,
+ \quad
+ \Gamma_{\rm tar}E_{21}+E_{21}\Gamma_{\rm src}=0.
+ \label{eq:v8-baryon-c0-current-three-arrows-odd}
+\end{equation}
+Но все три стрелки, необходимые для $SO(3)$-замыкания, имеют ненулевой
+остаток нечётности:
+\begin{equation}
+ \left\|\Gamma_{\rm tar}E_{ij}+E_{ij}\Gamma_{\rm src}\right\|_{\rm HS}^2=4,
+ \qquad E_{ij}\in\{E_{10},E_{20},E_{01}\}.
+ \label{eq:v8-baryon-c0-missing-arrows-even-residual}
+\end{equation}
+Причина структурна: семейное действие не коммутирует с target-grading,
+\begin{equation}
+ \bigl(\|[\Gamma_{\rm tar},J_1]\|_{\rm HS}^2,
+ \|[\Gamma_{\rm tar},J_2]\|_{\rm HS}^2,
+ \|[\Gamma_{\rm tar},J_3]\|_{\rm HS}^2\bigr)=(0,8,8).
+ \label{eq:v8-baryon-c0-target-grading-so3-commutator}
+\end{equation}
+По лемме Шура неприводимая тройка могла бы иметь только скалярную
+градуировку, тогда как текущая имеет спектральный тип $1+2$.
+
+\section{Ни одна точка RP1 не является нечётной}
+
+Для $z\in\mathbb R^3$ общий семейный интертвейнер записывается как
+\begin{equation}
+ T_{u,v}(z)=\begin{pmatrix}uz&vz\end{pmatrix},
+ \qquad u^2+v^2=1.
+ \label{eq:v8-baryon-c0-source-line-general-family-map}
+\end{equation}
+Условие нечётности для всех трёх базисных $z$ даёт линейную систему
+\begin{equation}
+ \Gamma_{\rm tar}T_{u,v}(z)+T_{u,v}(z)\Gamma_{\rm src}=0,
+ \qquad \rank\mathcal C_{\rm odd}=2,\qquad (u,v)=(0,0).
+ \label{eq:v8-baryon-c0-source-line-oddness-kernel-zero}
+\end{equation}
+Следовательно, множество допустимых проективных точек пусто. Суммарный
+точный дефект равен
+\begin{equation}
+ \Delta_{\Gamma}(u,v)=
+ \sum_{k=1}^3\|\Gamma_{\rm tar}T_{u,v}(e_k)
+ +T_{u,v}(e_k)\Gamma_{\rm src}\|_{\rm HS}^2
+ =8u^2+4v^2.
+ \label{eq:v8-baryon-c0-source-line-parity-defect}
+\end{equation}
+На двух координатных линиях
+\begin{equation}
+ \Delta_{\Gamma}(1,0)=8,\qquad
+ \Delta_{\Gamma}(0,1)=4,\qquad
+ \min_{u^2+v^2=1}\Delta_{\Gamma}=4>0.
+ \label{eq:v8-baryon-c0-source-line-axis-defects}
+\end{equation}
+Даже проекция на нечётную часть не восстанавливает тройку:
+\begin{equation}
+ \rank P_{\rm odd}T_{1,0}=1,\qquad
+ \rank P_{\rm odd}T_{0,1}=2.
+ \label{eq:v8-baryon-c0-source-line-odd-projection-ranks}
+\end{equation}
+То есть меньший дефект линии $a_0$ не является точным допуском.
+
+\section{Внутренние кандидаты селектора}
+
+Нормированный след и паулиевский пакет нового $M_2$-блока изотропны:
+\begin{equation}
+ \rho_\tau=\frac12I_2,\qquad
+ X^2+Y^2+H^2=3I_2,\qquad
+ \Tr(\rho_\tau P_s)=\Tr(\rho_\tau P_a)=\frac12.
+ \label{eq:v8-baryon-c0-source-line-trace-pauli-isotropy}
+\end{equation}
+Real-структура сохраняет обе координатные линии, а деполяризующая динамика
+имеет ту же стационарную матрицу $I_2/2$. Единственный доступный
+анизотропный оператор, сама source-grading, даёт семейство
+\begin{equation}
+ h_{\alpha,\beta}=\beta I_2+\alpha\Gamma_{\rm src},
+ \qquad \Spec h_{\alpha,\beta}=\{\beta+\alpha,\beta-\alpha\},
+ \label{eq:v8-baryon-c0-source-line-grading-hamiltonian}
+\end{equation}
+но знак $\alpha$ не выведен, а отождествление grading с энергией является
+новым parent-постулатом.
+
+Формально можно заменить target-grading скаляром:
+\begin{equation}
+ \begin{aligned}
+ \Gamma_{\rm tar}^{(-)}=-I_3&\Rightarrow [u:v]=[1:0]
+ &&\text{и две смены знака},\\
+ \Gamma_{\rm tar}^{(+)}=+I_3&\Rightarrow [u:v]=[0:1]
+ &&\text{и одна смена знака}.
+ \end{aligned}
+ \label{eq:v8-baryon-c0-source-line-uniform-grading-extensions}
+\end{equation}
+Минимум числа переприсвоенных знаков предпочитает второй вариант, но это
+критерий редактирования архитектуры, а не следствие действия; кроме того,
+он меняет grading уже существующего состояния $H_{21}$.
+
+Итоговый реестр селекторов равен
+\begin{equation}
+ N_{\rm source\ selector}=0/6:
+ \quad\{\Gamma_{\rm src},\tau_2,\text{Pauli-Casimir},
+ \mathcal L_{45},J_0,h_{\alpha,\beta}\}.
+ \label{eq:v8-baryon-c0-source-line-selector-ledger}
+\end{equation}
+
+\begin{theorem}[Градуировочный запрет сильнее неоднозначности $\mathbb {RP}^1$]
+Ни одна точка семейства $[u:v]\in\mathbb {RP}^1$ не задаёт ненулевой
+$SO(3)$-эквивариантный нечётный коннектор при текущих градуировках.
+Следовательно, задача не сводится к выбору линии: сначала требуется новый
+семейный target-триплет с однородной градуировкой.
+\end{theorem}
+
+\begin{nogocriterion}[Минимальный parity-дефект не является допуском]
+Линия $[0:1]$ минимизирует $\Delta_\Gamma$, но минимум равен $4$, а не
+нулю. Нельзя подменять точное условие нечётности наименьшим нарушением и
+объявлять эту линию выбранной картой $c_0$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item текущая target-grading: \textbf{$(-,+,+)$};
+\item текущая source-grading: \textbf{$(+,-)$};
+\item недостающие стрелки нечётны: \textbf{нет};
+\item нечётный family-Hom: \textbf{$0$};
+\item допустимых точек $\mathbb {RP}^1$: \textbf{$0$};
+\item минимальный parity-дефект: \textbf{$4$};
+\item ранги нечётных проекций осей: \textbf{$1,2$};
+\item внутренних селекторов: \textbf{$0/6$};
+\item необходимое расширение: \textbf{однородно градуированный triplet};
+\item следующий гейт: \textbf{endpoint-допуск grading-совместимого family-triplet}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_so3_closed_environment_source_line_selector_gate_results.json}.

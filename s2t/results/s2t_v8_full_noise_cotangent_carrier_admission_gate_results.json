@@ -1,0 +1,23 @@
+{
+  "date": "2026-08-30",
+  "gate": "version8_full_noise_cotangent_carrier_admission_gate",
+  "next_gate": "full_42_real_jump_frame_trace_metric_gate",
+  "no_go": {
+    "current_jump_real": 25,
+    "current_qms_is_full_cotangent_frame": false,
+    "missing_real_directions": 17,
+    "naive_uniform_complex_real": 54
+  },
+  "registry": {
+    "certificate_sha256": "d41cf0670977e002444baf8bcafdc214bab497b50418a474d927000f7ea61aca",
+    "gate_count": 18,
+    "obligation_count": 121
+  },
+  "typed_carrier": {
+    "field_real": 42,
+    "gauge_hermitian_real": 12,
+    "mixed_real": 42,
+    "transfer_complex": 15,
+    "transfer_real": 30
+  }
+}

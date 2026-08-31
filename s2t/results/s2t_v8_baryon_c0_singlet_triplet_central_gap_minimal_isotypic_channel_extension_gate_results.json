@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_minimal_isotypic_channel_extension_gate",
+  "ledgers": {
+    "new_parent_inputs": [
+      "Z_R endpoint",
+      "physical Z_L partner",
+      "three-of-nine edge selector",
+      "mass tensor or dynamical SO(3)-breaking field",
+      "new rank-one condensate on (e,X,Z)",
+      "diagonal family-channel lock"
+    ],
+    "selector_and_origin_satisfied": 0,
+    "selector_and_origin_tested": 6,
+    "single_endpoint_admission_satisfied": 4,
+    "single_endpoint_admission_tested": 7,
+    "vectorlike_structural_shape_satisfied": 6,
+    "vectorlike_structural_shape_tested": 6
+  },
+  "mass_and_selector_obstruction": {
+    "SO3_covariant_mass_nullity": 0,
+    "SO3_covariant_mass_system_rank": 6,
+    "generic_mass_rank": 2,
+    "kernel_examples": [
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "nonzero_vectorlike_mass_preserves_full_channel_SO3": false,
+    "old_rank_one_condensate_inherited": false,
+    "one_generation_mass_shape": [
+      2,
+      3
+    ],
+    "right_kernel_dimension": 1,
+    "two_allowed_masses_choose_same_kernel": false
+  },
+  "minimal_vectorlike_completion": {
+    "Witten_doublet_parity_change": 0,
+    "additional_endpoint": "Z_L=(C,C,L), Y=-1",
+    "allowed_but_unselected_edges": [
+      "X_L--Z_R",
+      "X_R--Z_L",
+      "Y_R--Z_L",
+      "Z_L--d_R",
+      "Z_L--e_R",
+      "Z_L--u_R"
+    ],
+    "charged_singlet_chiral_index": -1,
+    "local_anomalies": {
+      "A111": 0,
+      "A221": 0,
+      "Agravity1": 0
+    },
+    "new_allowed_3x3_complex_matrices": 9,
+    "new_physical_vertices_total": 2,
+    "new_strict_edges": [
+      "L_L--Z_R",
+      "X_L--Z_R",
+      "X_R--Z_L",
+      "Y_L--Z_R",
+      "Y_R--Z_L",
+      "Z_L--Z_R",
+      "Z_L--d_R",
+      "Z_L--e_R",
+      "Z_L--u_R"
+    ],
+    "old_chiral_index_preserved": true,
+    "raw_real_parameters_before_quotients": 162,
+    "selected_coherence_chain_dimensions": {
+      "H0": 1,
+      "H1": 6,
+      "H2": 3
+    },
+    "selected_new_edges": [
+      "L_L--Z_R",
+      "Y_L--Z_R",
+      "Z_L--Z_R"
+    ],
+    "strict_edges_total": 23
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_vectorlike_mass_edge_selector_gate",
+  "single_endpoint_candidate": {
+    "Witten_doublet_parity_change": 0,
+    "charged_singlet_chiral_index_after": -2,
+    "charged_singlet_chiral_index_before": -1,
+    "desired_coherence_edges": [
+      "L_L--Z_R",
+      "Y_L--Z_R"
+    ],
+    "formal_Real_image": "JZ_R=(C,C,L) in the antiparticle sector",
+    "local_anomalies": {
+      "A111": 1,
+      "A221": 0,
+      "Agravity1": 1
+    },
+    "new_endpoint": "Z_R=(C,C,R), Y=-1",
+    "new_strict_edges": [
+      "L_L--Z_R",
+      "X_L--Z_R",
+      "Y_L--Z_R"
+    ],
+    "physical_left_partner_present": false,
+    "physically_admitted": false,
+    "unwanted_new_edges": [
+      "X_L--Z_R"
+    ]
+  },
+  "verdict": {
+    "canonical_edge_and_mass_selector_obtained": false,
+    "formal_Real_completion_cancels_physical_anomaly": false,
+    "minimal_anomaly_safe_completion_is_vectorlike_pair": true,
+    "one_endpoint_extension_physically_admitted": false,
+    "portal_parent_origin_derived": false,
+    "vectorlike_pair_structurally_admitted": true
+  }
+}

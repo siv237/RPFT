@@ -1,0 +1,82 @@
+{
+  "date": "2026-08-30",
+  "gate": "version8_field_to_noise_chain_map_pullback_metric_gate",
+  "map": {
+    "coordinate_matrix": "I_42",
+    "exact_intertwining_checks": 504,
+    "formula": "J(delta A,delta B_s,delta B_t)=[[delta B_s,delta A^*],[delta A,delta B_t]]",
+    "gauge_generators": 12,
+    "intertwining_defects": 0,
+    "kernel_dimension": 0,
+    "rank": 42
+  },
+  "metric": {
+    "diagonal_entries": [
+      "26",
+      "26",
+      "14",
+      "14",
+      "14",
+      "14",
+      "14",
+      "14",
+      "14",
+      "14",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "2",
+      "8",
+      "8",
+      "8",
+      "8",
+      "8",
+      "8",
+      "8",
+      "24",
+      "12",
+      "12",
+      "12",
+      "19/3"
+    ],
+    "inverse_identity": "R_field=G_field^-1=K^-1",
+    "inverse_residual": "0",
+    "off_diagonal_nonzero_entries": 16,
+    "pullback_identity": "G_field=J^* K J=K",
+    "rank": 42
+  },
+  "next_gate": "version8_field_noise_metric_to_parent_hessian_comparison_gate",
+  "normalization_boundary": {
+    "equivariant_family": "S=diag(s_transfer I_30,s_gauge I_12)",
+    "gauge_covariance_alone_selects_relative_scale": false,
+    "literal_superconnection_embedding_selects_unit_coordinates": true,
+    "pulled_metric": "S^* K S=diag(s_transfer^2 K_transfer,s_gauge^2 K_gauge)"
+  },
+  "physical_boundary": {
+    "absolute_time_derived": false,
+    "kinematic_field_noise_isomorphism_obtained": true,
+    "parent_hessian_derived_from_trace_map": false,
+    "physical_mobility_derived_without_riesz_principle": false
+  },
+  "registry": {
+    "certificate_sha256": "99af2fcd87c0342e685b1f785aee7a4b8b50520ba2c3af5ede26e8465f978287",
+    "gate_count": 31,
+    "obligation_count": 189
+  }
+}

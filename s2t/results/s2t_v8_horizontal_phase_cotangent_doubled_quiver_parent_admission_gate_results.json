@@ -1,0 +1,55 @@
+{
+  "cotangent_phase": {
+    "all_moment_components_invariant": true,
+    "commutes_with_gauge_action": true,
+    "horizontal_phase_lifted": false,
+    "moment_square_parent_invariant": true,
+    "symplectic": true
+  },
+  "date": "2026-08-30",
+  "gate": "version8_horizontal_phase_cotangent_doubled_quiver_parent_admission_gate",
+  "moment_map": {
+    "central_relation_count": 1,
+    "gauge_generator_count": 14,
+    "independent_component_dimension": 13,
+    "nonzero_weak_pair_witness": [
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1/2"
+    ],
+    "quadratic_matrices_symmetric": true
+  },
+  "next_gate": "version8_horizontal_phase_cotangent_complex_structure_metric_selector_gate",
+  "parent_freedoms": {
+    "moment_map_level_selected": false,
+    "overall_coupling_selected": false,
+    "positive_metric_selected_by_symplectic_form": false
+  },
+  "registry": {
+    "certificate_sha256": "6e805d75d7b2f399d556911b32d85202f92d6da522799ca62c39eab5c5412437",
+    "gate_count": 47,
+    "obligation_count": 350
+  },
+  "retrospective": {
+    "new_progress": "the 26-dimensional balanced carrier supplies an exact polarization and a nonzero moment map",
+    "version3_bf_aksz_pairing": "symplectic bracket without positive metric or selected polarization",
+    "version5_derived_moment_map": "preprojective relation without physical positive-star polarization"
+  },
+  "verdict": {
+    "canonical_parent_selected": false,
+    "formal_doubled_quiver_moment_map_admitted": true,
+    "horizontal_phase_mass_obtained": false,
+    "nonzero_physical_gauge_moment_map_obtained": true
+  }
+}

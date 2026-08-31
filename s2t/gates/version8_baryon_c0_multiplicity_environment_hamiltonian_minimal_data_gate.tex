@@ -1,0 +1,151 @@
+\chapter{Минимальные гамильтоновы данные multiplicity-среды}
+\label{ch:v8-baryon-c0-multiplicity-environment-hamiltonian-minimal-data-gate}
+
+Скалярное gauge-представление не ограничивает оператор энергии среды, а
+Real-структура оставляет класс
+\begin{equation}
+ \mathfrak H_{\rm adm}
+ =\{h\in M_3(\mathbb R):h^{\mathsf T}=h\}
+ =\operatorname{Sym}_3(\mathbb R),
+ \qquad \dim_{\mathbb R}\mathfrak H_{\rm adm}=6.
+ \label{eq:v8-baryon-c0-admissible-environment-hamiltonians}
+\end{equation}
+Если наименьшее собственное значение $h$ невырождено, его спектральный
+проектор имеет вид
+\begin{equation}
+ P=zz^{\mathsf T},
+ \qquad z^{\mathsf T}z=1,
+ \qquad [z]\in\mathbb{RP}^2.
+ \label{eq:v8-baryon-c0-hamiltonian-ground-projector}
+\end{equation}
+Для задачи выбора направления несущественны положительное изменение
+единиц энергии и добавление нуля энергии:
+\begin{equation}
+ h\sim ah+bI_3,
+ \qquad a>0,quad b\in\mathbb R,
+ \qquad P_{\min}(ah+bI_3)=P_{\min}(h).
+ \label{eq:v8-baryon-c0-ground-projector-affine-equivalence}
+\end{equation}
+
+\section{Минимальный одноосный представитель}
+
+Всякое выбранное направление допускает минимальный гамильтониан с
+двукратно вырожденным возбуждённым уровнем
+\begin{equation}
+ h(P;\varepsilon,\Delta)
+ =\varepsilon I_3+\Delta(I_3-P),
+ \qquad \Delta>0.
+ \label{eq:v8-baryon-c0-minimal-axial-environment-hamiltonian}
+\end{equation}
+Его спектральные данные равны
+\begin{equation}
+ \Spec h(P;\varepsilon,\Delta)
+ =\{\varepsilon^{(1)},(\varepsilon+\Delta)^{(2)}\},
+ \qquad P_{\min}(h)=P.
+ \label{eq:v8-baryon-c0-minimal-axial-hamiltonian-spectrum}
+\end{equation}
+Достаточность проверяется без диагонализации:
+\begin{equation}
+ (h-\varepsilon I_3)P=0,
+ \qquad
+ (h-\varepsilon I_3)(I_3-P)=\Delta(I_3-P).
+ \label{eq:v8-baryon-c0-axial-hamiltonian-projector-identities}
+\end{equation}
+Любое дополнительное расщепление возбуждённой плоскости не меняет ground
+projector и потому избыточно для одной только карты $c_0$.
+
+\section{Конечная температура не даёт точный проектор}
+
+Положим $x=e^{-\beta\Delta}$. Gibbs-состояние минимального представителя
+есть
+\begin{equation}
+ \rho_{\beta,P}
+ =\frac{P+x(I_3-P)}{1+2x},
+ \qquad 0<x\leq1.
+ \label{eq:v8-baryon-c0-axial-hamiltonian-gibbs-state}
+\end{equation}
+При всяком конечном $\beta\Delta$ выполнено
+\begin{equation}
+ \rank\rho_{\beta,P}=3,
+ \qquad
+ \Tr\rho_{\beta,P}^2
+ =\frac{1+2x^2}{(1+2x)^2}<1.
+ \label{eq:v8-baryon-c0-finite-temperature-full-rank-purity}
+\end{equation}
+Точный чистый предел имеет вид
+\begin{equation}
+ \lim_{\beta\Delta\to\infty}\rho_{\beta,P}=P,
+ \qquad
+ \frac12\lVert\rho_{\beta,P}-P\rVert_1
+ =\frac{2x}{1+2x}\longrightarrow0.
+ \label{eq:v8-baryon-c0-zero-temperature-projector-limit}
+\end{equation}
+Следовательно, конечномерный ограниченный гамильтониан при конечной
+температуре не создаёт строгое rank-one состояние. Нужен либо предел
+$\beta\Delta\to\infty$, либо отдельный протокол чистой подготовки.
+
+\section{Три независимых слоя данных}
+
+Минимальный контракт распадается на
+\begin{equation}
+ \underbrace{P\in\mathbb{RP}^2}_{\text{направление }c_0},
+ \qquad
+ \underbrace{\beta\Delta\to\infty}_{\text{точная чистота}},
+ \qquad
+ \underbrace{\Delta_{\rm phys}>0}_{\text{энергия и время}}.
+ \label{eq:v8-baryon-c0-three-layer-environment-data}
+\end{equation}
+Первый слой необходим для выбора карты. Второй необходим, только если
+состояние должно быть получено как Gibbs ground-state limit. Третий не
+нужен для самого проектора, но необходим для абсолютной скорости подготовки
+и физического времени.
+
+Обратное построение
+\begin{equation}
+ h_{\rho_*}=\Delta(I_3-\rho_*),
+ \qquad \rho_*^2=\rho_*,\quad\rank\rho_*=1
+ \label{eq:v8-baryon-c0-projector-to-hamiltonian-circular-construction}
+\end{equation}
+показывает достаточность любого чистого состояния, но не является его
+выводом: искомый селектор уже содержится в $\rho_*$.
+
+После факторизации по $h\sim ah+bI_3$ минимальные данные самого селектора
+равны
+\begin{equation}
+ \mathcal S_{\rm selector}^{\min}=\mathbb{RP}^2,
+ \qquad
+ N_{\rm derived}(P,\beta\Delta,\Delta_{\rm phys})=0/3.
+ \label{eq:v8-baryon-c0-minimal-hamiltonian-data-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальность одноосного гамильтониана]
+Для выбора одной Real-линии в трёхмерной multiplicity-среде достаточно и,
+с точностью до положительного affine-преобразования энергии, необходимо
+задать rank-one projector $P\in\mathbb{RP}^2$. Представитель
+$h=\varepsilon I_3+\Delta(I_3-P)$ имеет минимальное расщепление $1+2$ и не
+содержит лишней ориентации возбуждённой плоскости.
+\end{theorem}
+
+\begin{nogocriterion}[Конечный Gibbs-вес не есть чистая подготовка]
+Нельзя объявлять $\rho_{\beta,P}$ rank-one состоянием при конечном
+$\beta\Delta$: оно имеет ранг три. Нельзя также считать формулу
+$h=\Delta(I-P)$ происхождением $P$, поскольку она использует искомый
+projector как вход.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item допустимый Hamiltonian-класс: \textbf{$\operatorname{Sym}_3(\mathbb R)$};
+\item его вещественная размерность: \textbf{$6$};
+\item минимальный спектральный тип: \textbf{$1+2$};
+\item селектор после affine-факторизации: \textbf{$P\in\mathbb{RP}^2$};
+\item конечный Gibbs-state rank: \textbf{$3$};
+\item точная чистота при конечном $\beta\Delta$: \textbf{нет};
+\item нулетемпературный предел: \textbf{да, условно};
+\item независимых слоёв нового данного: \textbf{$3$};
+\item выведено текущим parent: \textbf{$0/3$};
+\item одиночный $c_0$ выведен: \textbf{нет};
+\item следующий гейт: \textbf{происхождение multiplicity-Hamiltonian из parent}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_multiplicity_environment_hamiltonian_minimal_data_gate_results.json}.

@@ -1,0 +1,60 @@
+{
+  "coulomb_dilation": {
+    "homogeneity_degree": "1",
+    "kernel_expectation_after_coordinate_dilation": "g0*s",
+    "kernel_expectation_before": "g0",
+    "scale_selected_by_charge_algebra": false
+  },
+  "date": "2026-08-30",
+  "field": "Q(mu,g12,g13,g23,s,g0)",
+  "gate": "version8_baryon_em_spatial_kernel_origin_gate",
+  "labelled_three_copy_model": {
+    "closed_form_identity_exact": true,
+    "neutron_energy_times_T": "-2*(2*g12 + 2*g13 - g23 - 3*mu)/9",
+    "neutron_minus_proton_times_T": "-(4*g12 - 2*g23 + mu)/3",
+    "positive_kernel_counterexample": {
+      "difference_times_T": "1/3",
+      "g12": "1",
+      "g13": "1",
+      "g23": "3",
+      "mu": "1",
+      "sign_flipped_positive": true
+    },
+    "proton_energy_times_T": "(8*g12 - 4*g13 - 4*g23 + 9*mu)/9"
+  },
+  "permutation_averaged_model": {
+    "closed_form_identity_exact": true,
+    "g_bar": "(g12 + g13 + g23)/3",
+    "negative_for_positive_mu_and_g_bar": true,
+    "neutron_energy_times_T": "-2*(g12 + g13 + g23 - 3*mu)/9",
+    "neutron_minus_proton_times_T": "-(2*g12 + 2*g13 + 2*g23 + 3*mu)/9",
+    "neutron_orbit_size": 3,
+    "pair_charge_averages": {
+      "neutron": {
+        "12": "-1/9",
+        "13": "-1/9",
+        "23": "-1/9"
+      },
+      "proton": {
+        "12": "0",
+        "13": "0",
+        "23": "0"
+      }
+    },
+    "proton_energy_times_T": "mu",
+    "proton_orbit_size": 3
+  },
+  "project_boundary": {
+    "charge_algebra_selects_pair_kernel": false,
+    "epsilon_singlet_selects_radial_scale": false,
+    "negative_electrostatic_sign_after_permutation_average": true,
+    "physical_splitting_magnitude_derived": false,
+    "positive_sign_protected_without_permutation_average": false,
+    "three_copy_coordinate_carrier_present": false
+  },
+  "verdict": {
+    "accept_conditional_symmetrized_sign": true,
+    "next_gate": "version8_baryon_em_magnetic_hyperfine_origin_gate",
+    "reject_spatial_kernel_as_derived_from_charge_identity": true
+  }
+}

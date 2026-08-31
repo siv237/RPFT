@@ -1,0 +1,141 @@
+\chapter{Нечётный фон оператора Дирака и кубическая проекция}
+\label{ch:v8-baryon-noncentral-odd-dirac-background-projection-no-go-gate}
+
+Предыдущая глава нашла единую положительную форму, но её центральный фон
+оказался чётным. Проверим последнюю локальную возможность: заменить его
+произвольным нецентральным нечётным самосопряжённым фоном и потребовать
+проекцию на весь канонический тензор $d_{abc}$.
+
+\section{Градуировка полного кадра}
+
+На разложении $\mathbb C^{21}=\mathbb C^{11}\oplus\mathbb C^{10}$ положим
+\begin{equation}
+ \Gamma=I_{11}\oplus(-I_{10}),\qquad
+ \Gamma\widehat F_a\Gamma=(-1)^{p_a}\widehat F_a,
+ \quad
+ p_a=\begin{cases}1,&a<30,\\0,&a\ge30.\end{cases}
+ \label{eq:v8-baryon-full-frame-finite-parity}
+\end{equation}
+Тридцать направлений переноса нечётны, двенадцать калибровочных направлений
+чётны. Любой допустимый конечный фон оператора Дирака имеет вид
+\begin{equation}
+ D=\begin{pmatrix}0&B^*\\B&0\end{pmatrix},
+ \qquad \Gamma D\Gamma=-D.
+ \label{eq:v8-baryon-general-odd-dirac-background}
+\end{equation}
+
+\section{Дополнительность кубических каналов}
+
+Канонический следовой тензор имеет уже доказанную опору
+\begin{equation}
+ \operatorname{supp}d=140\,TTG+28\,GGG.
+ \label{eq:v8-baryon-canonical-cubic-even-support}
+\end{equation}
+Каждое ненулевое произведение в этой опоре содержит чётное число нечётных
+конечных множителей и потому само чётно.
+
+Кубический тензор, создаваемый фоном $D$, определяется поляризацией
+\begin{equation}
+ c^{D}_{abc}
+ =\operatorname{Sym}_{abc}\Tr
+ \left(D\widehat F_a\widehat F_b\widehat F_c\right).
+ \label{eq:v8-baryon-odd-background-cubic-tensor}
+\end{equation}
+Для любого чётного произведения $S_{\rm even}$ имеем
+\begin{equation}
+ \Tr(D_{\rm odd}S_{\rm even})=0.
+ \label{eq:v8-baryon-odd-even-trace-orthogonality}
+\end{equation}
+Следовательно, $c^D_{abc}$ тождественно равен нулю на всей опоре $d_{abc}$
+при любом выборе матрицы $B$.
+
+На существующем физическом инцидентном фоне точный полный перебор даёт
+\begin{equation}
+ \operatorname{supp}c^{D_0}=130\,TTT+35\,TGG,
+ \qquad
+ c^{D_0}_{TTG}=c^{D_0}_{GGG}=0.
+ \label{eq:v8-baryon-incidence-odd-background-support}
+\end{equation}
+Две опоры не просто различаются: они лежат в противоположных конечных
+чётностях.
+
+\begin{theorem}[Градуировочный запрет нечётного фонового спасения]
+Никакой нечётный самосопряжённый конечный фон не может породить ненулевый
+скалярный множитель всего тензора $d_{abc}$ через кубическую часть
+$\Tr((D+Z)^2-D^2)^2$. Канонический тензор поддержан на чётных произведениях,
+а фоновая кубическая форма --- только на нечётных.
+\end{theorem}
+
+\section{Что действительно даёт полная суперкривизна}
+
+В полной пространственно-временной градуировке калибровочная связность
+чётна как матрица, но является одноформой, тогда как поле переноса нечётно
+как матрица и является нуль-формой:
+\begin{equation}
+ \mathbb A=d+A^{(1)}_{\rm even}+\Phi^{(0)}_{\rm odd},
+ \qquad |\mathbb A|_{\rm total}=1.
+ \label{eq:v8-baryon-total-odd-superconnection}
+\end{equation}
+Её кривизна имеет стандартное разложение
+\begin{equation}
+ \mathbb F=F_A+D_A\Phi+\Phi^2.
+ \label{eq:v8-baryon-full-supercurvature-decomposition}
+\end{equation}
+Кубические каналы $GGG$ и $TTG$ в норме кривизны возникают соответственно
+из членов типа
+\begin{equation}
+ 2\langle dA,A^2\rangle,\qquad
+ 2\langle dA,\Phi^2\rangle
+ +2\langle d\Phi,[A,\Phi]\rangle.
+ \label{eq:v8-baryon-derivative-cubic-supercurvature-vertices}
+\end{equation}
+Они содержат пространственно-временную производную. На постоянном
+нулеимпульсном срезе
+\begin{equation}
+ dA=d\Phi=0
+ \quad\Longrightarrow\quad
+ S^{(3)}_{\rm supercurvature}=0.
+ \label{eq:v8-baryon-zero-momentum-supercurvature-cubic-vanishing}
+\end{equation}
+Поэтому совпадение секторной опоры не превращает производную вершину в
+статический трёхкопийный оператор $\lambda_3W_3$.
+
+\begin{nogocriterion}[Граница локальной суперкривизностной ветви]
+После отказа центрального чётного фона и общего нечётного фонового класса
+локальная беспроизводная суперкривизностная ветвь закрыта. Продолжение
+допустимо только через явное производное или нелокальное шеститочечное ядро
+с проверкой нулеимпульсного предела; новый постоянный коэффициент при $W_3$
+вводить запрещено.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item поле вычислений: \textbf{$\mathbb Q$};
+ \item числа с плавающей точкой: \textbf{отсутствуют};
+ \item нечётных направлений кадра: \textbf{$30$};
+ \item чётных направлений кадра: \textbf{$12$};
+ \item опора $d_{abc}$: \textbf{$140\,TTG+28\,GGG$};
+ \item опора физического нечётного фона:
+       \textbf{$130\,TTT+35\,TGG$};
+ \item пересечение опор: \textbf{пусто};
+ \item нецентральный нечётный фон воспроизводит $d$: \textbf{нет};
+ \item стандартные кубические вершины суперкривизны:
+       \textbf{производные};
+ \item постоянный нулеимпульсный кубический член: \textbf{$0$};
+ \item статический коэффициент $\lambda_3$: \textbf{не выведен}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_noncentral_odd_dirac_background_projection_no_go_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-baryon-odd-background-tolksdorf}
+J.~Tolksdorf,
+\emph{The Einstein--Hilbert--Yang--Mills--Higgs Action and the Dirac--Yukawa Operator},
+arXiv:hep-th/9612149.
+\bibitem{v8-baryon-odd-background-roepstorff}
+G.~Roepstorff, Ch.~Vehns,
+\emph{Generalized Dirac Operators and Superconnections},
+arXiv:math-ph/9911006.
+\end{thebibliography}

@@ -1,0 +1,24 @@
+{
+  "chain_number": {
+    "forward_ratio": "exp(-2)",
+    "gap": "2",
+    "gauge_invariant": true,
+    "reverse_ratio": "exp(2)",
+    "transfer_pairs": 13
+  },
+  "date": "2026-08-29",
+  "gate": "version8_modular_bohr_parent_lcf_migration_gate",
+  "orientation": {
+    "both_branches_primitive": true,
+    "orientation_selected": false
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "c292b9ec515a1d2a3dd99f2b9662d83da0609ef21e423dcc85db25932fa83679",
+    "obligation_count": 6,
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "next_gate": "version8_chain_orientation_index_defect_lcf_migration_gate",
+    "status": "lcf-checked-twofold-orientation-open"
+  }
+}

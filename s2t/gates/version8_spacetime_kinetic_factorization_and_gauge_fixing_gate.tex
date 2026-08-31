@@ -1,0 +1,95 @@
+\chapter{Пространственно-временная кинетическая факторизация}
+\label{ch:v8-spacetime-kinetic-factorization-and-gauge-fixing-gate}
+
+\section{Поперечное и продольное подпространства}
+
+Для ненулевого евклидова импульса введём проекторы
+\begin{equation}
+ P_{\mathrm L}=\frac{pp^T}{p^2},
+ \qquad P_{\mathrm T}=I_4-P_{\mathrm L},
+ \qquad P_{\mathrm T}P_{\mathrm L}=0.
+ \label{eq:v8-kinetic-transverse-longitudinal-projectors}
+\end{equation}
+В системе координат $p=(1,0,0,0)$ они равны
+$P_{\mathrm L}=\operatorname{diag}(1,0,0,0)$ и
+$P_{\mathrm T}=\operatorname{diag}(0,1,1,1)$. Все проекторные тождества
+проверены точно.
+
+\section{Гессиан до фиксации калибровочной свободы}
+
+Квадратичная часть калибровочного действия факторизуется как
+\begin{equation}
+ H_0(p)=K_{\text{к}}\otimes p^2P_{\mathrm T}.
+ \label{eq:v8-kinetic-ungauged-factorization}
+\end{equation}
+Поскольку $\rank K_{\text{к}}=12$ и $\rank P_{\mathrm T}=3$, получаем
+\begin{equation}
+ \rank H_0=36,
+ \qquad \dim\ker H_0=12.
+ \label{eq:v8-kinetic-ungauged-rank-nullity}
+\end{equation}
+Ядро является продольной калибровочной свободой, а не отсутствием
+внутренней метрики.
+
+\section{Ковариантная фиксация и точный обратный оператор}
+
+После добавления ковариантного члена с параметром $\xi>0$ имеем
+\begin{equation}
+ H_{\xi}(p)=K_{\text{к}}\otimes
+ p^2\left(P_{\mathrm T}+\xi^{-1}P_{\mathrm L}\right),
+ \qquad \rank H_{\xi}=48.
+ \label{eq:v8-kinetic-gauge-fixed-hessian}
+\end{equation}
+Его обратный оператор факторизуется точно:
+\begin{equation}
+ H_{\xi}^{-1}(p)=K_{\text{к}}^{-1}\otimes
+ \frac1{p^2}\left(P_{\mathrm T}+\xi P_{\mathrm L}\right),
+ \qquad H_{\xi}H_{\xi}^{-1}=I_{48}.
+ \label{eq:v8-kinetic-factorized-inverse}
+\end{equation}
+Таким образом, $K_{\text{к}}^{-1}$ действительно является внутренним
+множителем обратной кинетической формы, но не всей физической мобильностью.
+
+Поперечное ограничение
+\begin{equation}
+ P_{\mathrm T}H_{\xi}^{-1}P_{\mathrm T}
+ =K_{\text{к}}^{-1}\otimes\frac{P_{\mathrm T}}{p^2}
+ \label{eq:v8-kinetic-transverse-inverse}
+\end{equation}
+не зависит от $\xi$, тогда как продольное ограничение пропорционально
+$\xi$. Точная проверка при $\xi=1$ и $\xi=2$ подтверждает совпадение
+поперечных частей и различие полных обратных операторов.
+
+\begin{theorem}[Точная кинетическая факторизация]
+Нефиксированный калибровочный гессиан имеет ранг $36$ и двенадцатимерное
+продольное ядро. После ковариантной фиксации он имеет ранг $48$, а его
+обратный оператор точно факторизуется на внутренний тензор
+$K_{\text{к}}^{-1}$ и пространственно-временной поперечно-продольный
+оператор. Физическая поперечная часть не зависит от параметра фиксации.
+\end{theorem}
+
+\begin{nogocriterion}[Внутренний обратный тензор не задаёт абсолютную скорость]
+Факторизация выделяет $K_{\text{к}}^{-1}$, но не выбирает импульсный или
+временной масштаб, корреляционную функцию среды и общий множитель
+диссипативной скорости. Продольная часть полного обратного оператора также
+зависит от выбора фиксации и не является наблюдаемой мобильностью.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item размерность кинетического носителя: \textbf{$12\cdot4=48$};
+ \item ранг нефиксированного гессиана: \textbf{$36$};
+ \item продольная размерность ядра: \textbf{$12$};
+ \item ранг после фиксации: \textbf{$48$};
+ \item остаток обращения: \textbf{$0$};
+ \item поперечная часть зависит от $\xi$: \textbf{нет};
+ \item продольная часть зависит от $\xi$: \textbf{да};
+ \item внутренний множитель обратной формы: \textbf{$K_{\text{к}}^{-1}$};
+ \item абсолютная мобильность: \textbf{не выведена};
+ \item следующий гейт: \textbf{происхождение поперечной шумовой мобильности
+       из корреляций среды}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_spacetime_kinetic_factorization_and_gauge_fixing_gate_results.json}.

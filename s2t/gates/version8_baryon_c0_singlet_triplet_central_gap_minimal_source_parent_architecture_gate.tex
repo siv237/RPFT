@@ -1,0 +1,164 @@
+\chapter{Минимальная source-parent архитектура центральной щели}
+\label{ch:v8-baryon-c0-singlet-triplet-central-gap-minimal-source-parent-architecture-gate}
+
+Предыдущий гейт показал, что нормировка не выбирает коэффициент
+$\lambda$. Проверим минимальность архитектуры с линейным источником и
+положительной квадратичной жёсткостью, не приписывая её параметрам
+внутреннее происхождение.
+
+\section{Классификация квадратичных родителей}
+
+Следово-центрированная центральная алгебра одномерна:
+\begin{equation}
+ \mathcal Z_0=\mathbb R Q,
+ \qquad Q=P_{\mathbf3}-\frac34I_4,
+ \qquad \Tr Q^2=\frac34.
+ \label{eq:v8-baryon-c0-central-gap-source-central-line}
+\end{equation}
+Общий вещественный многочлен степени не выше двух имеет вид
+\begin{equation}
+ V(\lambda)=c_0+c_1\lambda+c_2\lambda^2.
+ \label{eq:v8-baryon-c0-central-gap-general-quadratic-parent}
+\end{equation}
+После удаления несущественной константы он имеет единственный ненулевой
+глобальный минимум в точности при
+\begin{equation}
+ c_2>0,
+ \qquad c_1\ne0,
+ \qquad \lambda_*=-\frac{c_1}{2c_2}.
+ \label{eq:v8-baryon-c0-central-gap-quadratic-classification}
+\end{equation}
+Каждый отдельный моном условия проваливает:
+\begin{equation}
+ c_1\lambda\ \text{не ограничен снизу при }c_1\ne0,
+ \qquad
+ c_2\lambda^2\ \text{имеет минимум }\lambda_*=0\text{ при }c_2>0.
+ \label{eq:v8-baryon-c0-central-gap-single-monomial-failures}
+\end{equation}
+Следовательно, степень два и два ненулевых монома являются минимальными.
+
+\section{Источник и жёсткость}
+
+Удобная параметризация классифицированного семейства равна
+\begin{equation}
+ V_{\rm src}(\lambda)=\frac{m^2}{2}\lambda^2-j\lambda,
+ \qquad m^2>0,
+ \qquad j\ne0.
+ \label{eq:v8-baryon-c0-central-gap-source-parent}
+\end{equation}
+Она даёт
+\begin{equation}
+ V'_{\rm src}(\lambda_*)=0,
+ \qquad \lambda_*=\frac{j}{m^2},
+ \qquad V''_{\rm src}(\lambda_*)=m^2>0.
+ \label{eq:v8-baryon-c0-central-gap-source-vacuum-hessian}
+\end{equation}
+Глобальность и единственность видны из точного завершения квадрата:
+\begin{equation}
+ V_{\rm src}(\lambda)
+ =\frac{m^2}{2}\left(\lambda-\frac{j}{m^2}\right)^2
+ -\frac{j^2}{2m^2},
+ \qquad V_{\rm src}(\lambda_*)=-\frac{j^2}{2m^2}.
+ \label{eq:v8-baryon-c0-central-gap-source-completed-square}
+\end{equation}
+
+\section{Операторное поднятие}
+
+Для $h^0=\lambda Q$ тот же родитель записывается без выбора координатного
+масштаба на уже нормированной центральной прямой:
+\begin{equation}
+ \mathcal S_{\rm src}[h^0]
+ =\frac{m^2}{2\Tr Q^2}\Tr\bigl((h^0)^2\bigr)
+ -\frac{j}{\Tr Q^2}\Tr(Qh^0).
+ \label{eq:v8-baryon-c0-central-gap-operator-source-parent}
+\end{equation}
+Его обратный образ точно равен скалярному потенциалу:
+\begin{equation}
+ h^0=\lambda Q
+ \quad\Longrightarrow\quad
+ \mathcal S_{\rm src}[h^0]
+ =\frac{m^2}{2}\lambda^2-j\lambda.
+ \label{eq:v8-baryon-c0-central-gap-operator-pullback}
+\end{equation}
+Направление $Q$ вещественно и центрально относительно требуемых действий:
+\begin{equation}
+ [Q,\rho_{\mathbf1\oplus\mathbf3}(SO(3)_{\rm fam})]=0,
+ \qquad [Q,\Gamma_4]=0,
+ \qquad \overline Q=Q.
+ \label{eq:v8-baryon-c0-central-gap-source-symmetry-compatibility}
+\end{equation}
+Линейный член нарушает только искусственное отражение координаты
+$\lambda\mapsto-\lambda$. Оно не является обязательной внутренней
+симметрией, поскольку секторы разных размерностей нельзя переставить
+унитарно:
+\begin{equation}
+ \rank P_{\mathbf1}=1\ne3=\rank P_{\mathbf3}
+ \quad\Longrightarrow\quad
+ \nexists U:\ UP_{\mathbf1}U^*=P_{\mathbf3}.
+ \label{eq:v8-baryon-c0-central-gap-no-required-sign-symmetry}
+\end{equation}
+
+\section{Остаточная неидентифицируемость}
+
+Положение вакуума сохраняется на луче параметров
+\begin{equation}
+ (m^2,j)\longmapsto(am^2,aj),
+ \qquad a>0,
+ \qquad \frac{aj}{am^2}=\lambda_*.
+ \label{eq:v8-baryon-c0-central-gap-source-parameter-orbit}
+\end{equation}
+При этом гессиан и глубина минимума масштабируются. Точные свидетели
+одного вакуума с разной жёсткостью равны
+\begin{equation}
+ (m^2,j)=(1,1)\Longrightarrow(\lambda_*,V'')=(1,1),
+ \qquad
+ (m^2,j)=(2,2)\Longrightarrow(\lambda_*,V'')=(1,2).
+ \label{eq:v8-baryon-c0-central-gap-source-same-vacuum-witnesses}
+\end{equation}
+Лишь совместное знание вакуума и физической кривизны $\kappa$ восстанавливает
+оба коэффициента:
+\begin{equation}
+ \lambda_*=\ell,
+ \qquad V''(\lambda_*)=\kappa
+ \quad\Longleftrightarrow\quad
+ m^2=\kappa,
+ \qquad j=\kappa\ell.
+ \label{eq:v8-baryon-c0-central-gap-source-vacuum-curvature-reconstruction}
+\end{equation}
+
+Итоговые реестры разделяют архитектуру и происхождение:
+\begin{equation}
+ N_{\rm architecture}=7/7,
+ \qquad
+ N_{\rm parent\ origin}=0/2\quad\{m^2,j\}.
+ \label{eq:v8-baryon-c0-central-gap-source-ledgers}
+\end{equation}
+
+\begin{theorem}[Минимальность source-parent архитектуры]
+Среди вещественных многочленов степени не выше двух единственный класс,
+имеющий ограниченный снизу потенциал и единственный ненулевой знаковый
+минимум, содержит положительный квадратичный и ненулевой линейный члены.
+После удаления константы он эквивалентен $m^2\lambda^2/2-j\lambda$.
+Операторное поднятие на $\mathcal Z_0$ сохраняет семейную симметрию,
+градуировку и вещественную структуру.
+\end{theorem}
+
+\begin{nogocriterion}[Архитектура не является происхождением параметров]
+Знание $\lambda_*$ определяет только отношение $j/m^2$. Нельзя объявлять
+$j$ и $m^2$ выведенными без независимого вычисления физической кривизны
+или эквивалентного двухточечного отклика из одного родительского действия.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item минимальная степень: \textbf{$2$};
+\item минимальное число непостоянных мономов: \textbf{$2$};
+\item единственный глобальный минимум: \textbf{да при $m^2>0$};
+\item ненулевой знак выбран: \textbf{да при $j\ne0$};
+\item совместимость с $SO(3)_{\rm fam}$, grading и Real: \textbf{да};
+\item условный архитектурный допуск: \textbf{$7/7$};
+\item происхождение $m^2,j$: \textbf{$0/2$};
+\item следующий гейт: \textbf{parent-origin источника и жёсткости}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_minimal_source_parent_architecture_gate_results.json}.

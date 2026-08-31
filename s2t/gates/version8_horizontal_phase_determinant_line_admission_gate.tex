@@ -1,0 +1,84 @@
+\chapter{Допуск determinant-line свёртки горизонтальной фазы}
+\label{ch:v8-horizontal-phase-determinant-line-admission-gate}
+
+Для инцидентности $A_0:\mathbb C^{11}\to\mathbb C^{10}$ определим
+кофакторный вектор максимальных миноров
+\begin{equation}
+ c_j(A)=(-1)^j\det A_{\widehat j}.
+ \label{eq:v8-horizontal-cofactor-vector}
+\end{equation}
+В физическом вакууме он равен
+\begin{equation}
+ c(A_0)=(0,0,0,0,0,0,-1,0,0,1,0)^{\mathsf T},
+ \qquad A_0c(A_0)=0,
+ \qquad c(A_0)^*c(A_0)=2.
+ \label{eq:v8-horizontal-cofactor-kernel}
+\end{equation}
+Значит, determinant-line объект существует и канонически воспроизводит
+одномерное ядро прямоугольной инцидентности.
+
+На горизонтальной фазовой окружности
+$A(z)=\operatorname{diag}(z^4I_3,z^3I_7)A_0$ каждый максимальный минор
+получает determinant-характер строк:
+\begin{equation}
+ c(A(z))=z^{3\cdot4+7\cdot3}c(A_0)=z^{33}c(A_0).
+ \label{eq:v8-horizontal-cofactor-phase-weight}
+\end{equation}
+Таким образом, кофакторная линия действительно видит плоскую фазу.
+
+Однако фазочувствительность ещё не даёт допустимого скаляра. Суммарные
+гиперзаряды determinant-характеров двух концов совпадают:
+\begin{equation}
+ Y_{\det E_s}=6\frac16+4\left(-\frac12\right)-1=-2,
+ \qquad
+ Y_{\det E_t}=3\frac23+3\left(-\frac13\right)-2+2\left(-\frac12\right)=-2.
+ \label{eq:v8-horizontal-determinant-hypercharges}
+\end{equation}
+Их относительный характер нейтрален, поэтому носитель максимальных миноров
+эквивалентен исходному 11-мерному модулю источника. Но этот модуль не
+содержит тривиального представления:
+\begin{equation}
+ \dim\operatorname{Hom}_G(E_s,\mathbb C)=0.
+ \label{eq:v8-horizontal-no-invariant-functional}
+\end{equation}
+Следовательно, калибровочно-инвариантной линейной свёртки кофакторного
+вектора в скаляр нет.
+
+Вещественное спаривание не помогает. Оно даёт только модуль
+\begin{equation}
+ c(A(z))^*c(A(z))=2,
+ \label{eq:v8-horizontal-real-pair-modulus}
+\end{equation}
+не зависящий от $z$. Свёртка с фиксированным вакуумным вектором ядра была
+бы фазочувствительной, но не канонической: уже два различных ковектора
+$-e_7^*$ и $e_{10}^*$ дают одинаковую нормировку на $c(A_0)$. Такой выбор
+повторяет прежнюю ошибку фиксированного фона.
+
+\begin{theorem}[Фазочувствительная линия без скалярной тривиализации]
+Кофакторная determinant-line несёт точный фазовый вес $33$ и порождает
+ядро $A_0$, но её 11-мерный носитель не имеет калибровочно-инвариантного
+линейного функционала. Полная Real-пара сохраняет только модуль.
+\end{theorem}
+
+\begin{nogocriterion}[Determinant-line no-go текущего носителя]
+Нельзя поднимать горизонтальную моду членом
+$\operatorname{Re}\langle\ell,c(A)\rangle$, пока ковектор $\ell$ не
+выведен как эквивариантная секция. Выбор $\ell=c(A_0)^*$ вручную нарушает
+фон-независимость, а Real-свёртка фазу сокращает. Ранние inflow- и
+Pfaffian-гейты также не поставляют недостающую ориентацию.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item кофакторное ядро: \textbf{получено};
+ \item фазовый вес determinant-line: \textbf{$33$};
+ \item относительный determinant-гиперзаряд: \textbf{$0$};
+ \item инвариантные линейные свёртки: \textbf{$0$};
+ \item Real-пара сохраняет фазу: \textbf{нет};
+ \item канонический фазочувствительный скаляр: \textbf{не получен};
+ \item следующий гейт: \textbf{замыкание фазы тяжёлыми стрелочными циклами}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_horizontal_phase_determinant_line_admission_gate_results.json}.

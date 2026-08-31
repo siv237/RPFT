@@ -1,0 +1,333 @@
+{
+  "complex_structure_constraint": {
+    "complex_hermitian_morse_indices_are_even": true,
+    "exact_seven_real_mode_index_survives_full_complex_closure": false,
+    "incidence_launch_real_multiplicity": 10,
+    "incidence_projector_commutes_with_complex_structure": true
+  },
+  "date": "2026-08-29",
+  "full_gauge_closed_transfer": {
+    "complex_dimension": 15,
+    "heavy_complex_dimension": 10,
+    "heavy_real_dimension": 20,
+    "incidence_complex_dimension": 5,
+    "incidence_projector_gauge_commutator_residual": 1.7319020207856094e-15,
+    "incidence_projector_rank": 10,
+    "incidence_real_dimension": 10,
+    "isotypic_hessian_on_two_dimensional_gram_kernel": [
+      -3.15376652589e-16,
+      -4.32048991468e-17
+    ],
+    "isotypic_term_lifts_gram_vacuum_kernel": false,
+    "isotypic_vacuum_hessian_rank": 12,
+    "real_dimension": 30,
+    "relative_gram_origin_signature": [
+      30,
+      0,
+      0
+    ],
+    "relative_gram_vacuum_signature": [
+      0,
+      2,
+      28
+    ]
+  },
+  "gate": "version8_isotypic_relative_curvature_parent_hessian_gate",
+  "gauge_invariant_incidence_heavy_completion": {
+    "mass_weights_are_uniquely_derived": false,
+    "origin_formula": "-m_I P_I + m_H(1-P_I) + 0.5 H_Gram_origin",
+    "origin_signature_depends_on_mass_completion": true,
+    "qualitative_full_transfer_transition_exists": true,
+    "representative_masses": {
+      "heavy": 3.6,
+      "incidence": 4.0
+    },
+    "representative_origin_signature": [
+      10,
+      0,
+      20
+    ],
+    "representative_vacuum_gap": 5.5343699277030955,
+    "representative_vacuum_signature": [
+      0,
+      0,
+      30
+    ],
+    "scan": [
+      {
+        "heavy_mass": 0.0,
+        "incidence_mass": 0.0,
+        "origin_maximum_eigenvalue": -1.5379457306026267,
+        "origin_minimum_eigenvalue": -4.737404816816337,
+        "origin_signature": [
+          30,
+          0,
+          0
+        ],
+        "vacuum_minimum_eigenvalue": -1.204884285170449e-15,
+        "vacuum_signature": [
+          0,
+          2,
+          28
+        ]
+      },
+      {
+        "heavy_mass": 0.1,
+        "incidence_mass": 1.0,
+        "origin_maximum_eigenvalue": -1.711729991902199,
+        "origin_minimum_eigenvalue": -5.617334292074733,
+        "origin_signature": [
+          30,
+          0,
+          0
+        ],
+        "vacuum_minimum_eigenvalue": 1.8129849481878821,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "heavy_mass": 1.0,
+        "incidence_mass": 2.0,
+        "origin_maximum_eigenvalue": -0.9193372296731859,
+        "origin_minimum_eigenvalue": -6.535753979487469,
+        "origin_signature": [
+          30,
+          0,
+          0
+        ],
+        "vacuum_minimum_eigenvalue": 2.885185373130615,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "heavy_mass": 2.0,
+        "incidence_mass": 3.0,
+        "origin_maximum_eigenvalue": 0.049395757272879225,
+        "origin_minimum_eigenvalue": -7.499999999999993,
+        "origin_signature": [
+          28,
+          0,
+          2
+        ],
+        "vacuum_minimum_eigenvalue": 3.9254966037580514,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "heavy_mass": 3.6,
+        "incidence_mass": 4.0,
+        "origin_maximum_eigenvalue": 1.6327197698262457,
+        "origin_minimum_eigenvalue": -8.476938959954248,
+        "origin_signature": [
+          10,
+          0,
+          20
+        ],
+        "vacuum_minimum_eigenvalue": 5.5343699277030955,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "heavy_mass": 5.0,
+        "incidence_mass": 5.0,
+        "origin_maximum_eigenvalue": 3.0249227347649428,
+        "origin_minimum_eigenvalue": -9.46494496434655,
+        "origin_signature": [
+          10,
+          0,
+          20
+        ],
+        "vacuum_minimum_eigenvalue": 6.944142957383674,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "heavy_mass": 0.1,
+        "incidence_mass": 10.0,
+        "origin_maximum_eigenvalue": -1.8753225302343575,
+        "origin_minimum_eigenvalue": -14.464553714881225,
+        "origin_signature": [
+          30,
+          0,
+          0
+        ],
+        "vacuum_minimum_eigenvalue": 2.0873514511285376,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      },
+      {
+        "heavy_mass": 10.0,
+        "incidence_mass": 0.1,
+        "origin_maximum_eigenvalue": 8.024677469765644,
+        "origin_minimum_eigenvalue": -4.56455371488123,
+        "origin_signature": [
+          10,
+          0,
+          20
+        ],
+        "vacuum_minimum_eigenvalue": 0.1999999999999962,
+        "vacuum_signature": [
+          0,
+          0,
+          30
+        ]
+      }
+    ],
+    "vacuum_formula": "2m_I P_I + m_H(1-P_I) + 0.5 H_Gram_vacuum + H_B"
+  },
+  "old_tome7_slice": {
+    "isotypic_vacuum_hessian_rank": 12,
+    "nonnegative_weight_scan": [
+      {
+        "isotypic_weight": 0.0,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_maximum_eigenvalue": 36.0,
+        "vacuum_minimum_eigenvalue": 5.600000000000001,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "isotypic_weight": 1e-06,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_maximum_eigenvalue": 36.0,
+        "vacuum_minimum_eigenvalue": 5.599999999999999,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "isotypic_weight": 0.01,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_maximum_eigenvalue": 36.0,
+        "vacuum_minimum_eigenvalue": 5.599999999999996,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "isotypic_weight": 0.1,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_maximum_eigenvalue": 36.0,
+        "vacuum_minimum_eigenvalue": 5.599999999999998,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "isotypic_weight": 1.0,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_maximum_eigenvalue": 36.400000000000006,
+        "vacuum_minimum_eigenvalue": 5.599999999999994,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "isotypic_weight": 4.0,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_maximum_eigenvalue": 108.40000000000002,
+        "vacuum_minimum_eigenvalue": 5.599999999999997,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "isotypic_weight": 100.0,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_maximum_eigenvalue": 2412.4000000000024,
+        "vacuum_minimum_eigenvalue": 5.60000000000001,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "isotypic_weight": 1000000.0,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_maximum_eigenvalue": 24000012.400000006,
+        "vacuum_minimum_eigenvalue": 5.599999998269142,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      }
+    ],
+    "real_dimension": 27,
+    "seven_mode_origin_signature_preserved_for_all_tested_weights": true,
+    "strict_vacuum_stability_preserved_for_all_tested_weights": true
+  },
+  "verdict": {
+    "a_qualitative_10_to_20_full_transfer_transition_exists": true,
+    "full_parent_action_obtained": false,
+    "minimal_gauge_closed_incidence_launch_has_ten_real_modes": true,
+    "next_gate": "version8_gauge_closed_edge_hodge_origin_gate",
+    "smooth_isotypic_term_closes_full_parent_alone": false,
+    "smooth_isotypic_term_is_compatible_with_tome7_transition": true,
+    "unique_gauge_closed_edge_hodge_mass_metric_obtained": false
+  }
+}

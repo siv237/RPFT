@@ -1,0 +1,152 @@
+\chapter{Происхождение центрального следового веса синглета и триплета}
+\label{ch:v8-baryon-c0-singlet-triplet-central-trace-weight-parent-origin-gate}
+
+Предыдущий гейт локализовал всю относительную свободу в центральном весе
+\begin{equation}
+ \rho_p=pP_{\mathbf1}+\frac{1-p}{3}P_{\mathbf3},
+ \qquad 0<p<1,
+ \qquad r(p)=\frac{1-p}{3p}.
+ \label{eq:v8-baryon-c0-central-weight-parent-origin-family}
+\end{equation}
+Проверим, является ли какая-либо точка этого интервала следствием уже
+построенного родительского действия.
+
+\section{Условный счётный след не является происхождением}
+
+Обычный нормированный след четырёхмерного представления даёт
+\begin{equation}
+ \rho_{\rm count}=\frac14I_4,
+ \qquad p_{\rm count}=\frac14,
+ \qquad r_{\rm count}=1.
+ \label{eq:v8-baryon-c0-ambient-counting-trace-candidate}
+\end{equation}
+Однако на чётной алгебре $\mathbb C\oplus M_3(\mathbb C)$ любой допустимый
+вес получается центральным переопределением того же следа:
+\begin{equation}
+ Z_p=4pP_{\mathbf1}+\frac{4(1-p)}{3}P_{\mathbf3},
+ \qquad \rho_p=Z_p\rho_{\rm count},
+ \qquad [Z_p,SO(3)]=[Z_p,\Gamma_4]=0.
+ \label{eq:v8-baryon-c0-central-density-reweighting}
+\end{equation}
+В частности, равный полный вес двух неприводимых секторов даёт столь же
+положительный и симметричный свидетель
+\begin{equation}
+ \rho_{\rm sector}=\frac12P_{\mathbf1}+\frac16P_{\mathbf3},
+ \qquad p_{\rm sector}=\frac12,
+ \qquad r_{\rm sector}=\frac13.
+ \label{eq:v8-baryon-c0-central-weight-sector-witness}
+\end{equation}
+Следовательно, $p=1/4$ следует не из самого представления, а из
+дополнительного требования одинаковой микроскопической следовой плотности
+на четырёх стрелках. Текущий родитель этого требования не содержит: новая
+семейная тройка, её состояние и endpoint-блок ранее получили реестр
+\begin{equation}
+ N_{\rm extension}=0/3.
+ \label{eq:v8-baryon-c0-central-weight-unoriginated-extension-ledger}
+\end{equation}
+
+\section{Grading-суперслед и тепловой родитель}
+
+Нормированный суперслед не исправляет ситуацию. При
+\begin{equation}
+ \Gamma_4=\operatorname{diag}(-1,+1,+1,+1),
+ \qquad \frac{\Gamma_4}{\Tr\Gamma_4}
+ =\frac12\operatorname{diag}(-1,+1,+1,+1)
+ \label{eq:v8-baryon-c0-normalized-supertrace-density}
+\end{equation}
+первое собственное значение равно $-1/2$, поэтому это не положительное
+состояние и не допустимый шумовой вес.
+
+Наиболее общий $SO(3)$-инвариантный гамильтониан на носителе
+$\mathbf1\oplus\mathbf3$ имеет вид
+\begin{equation}
+ h_{\rm cen}=\varepsilon_1P_{\mathbf1}
+ +\varepsilon_3P_{\mathbf3},
+ \qquad \Delta=\varepsilon_3-\varepsilon_1.
+ \label{eq:v8-baryon-c0-central-two-level-hamiltonian}
+\end{equation}
+Его состояние Гиббса задаёт
+\begin{equation}
+ p(\beta\Delta)=\frac{1}{1+3e^{-\beta\Delta}},
+ \qquad r(\beta\Delta)=e^{-\beta\Delta}.
+ \label{eq:v8-baryon-c0-central-gibbs-weight-and-rate}
+\end{equation}
+Но это параметризация, а не селектор: для каждого $p\in(0,1)$ существует
+\begin{equation}
+ \beta\Delta(p)=\log\frac{3p}{1-p},
+ \label{eq:v8-baryon-c0-central-gap-realizes-any-weight}
+\end{equation}
+и потому тепловой класс реализует весь исходный симплекс. Два прежних
+свидетеля соответствуют разным допустимым щелям:
+\begin{equation}
+ p=\frac14\Longleftrightarrow\beta\Delta=0,
+ \qquad
+ p=\frac12\Longleftrightarrow\beta\Delta=\log3.
+ \label{eq:v8-baryon-c0-central-gibbs-gap-witnesses}
+\end{equation}
+KMS связывает прямую и обратную скорости после выбора $h_{\rm cen}$, но не
+выводит саму щель $\Delta$.
+
+\section{Энтропийный near miss}
+
+Энтропия центрального семейства равна
+\begin{equation}
+ S(p)=-p\log p-(1-p)\log\frac{1-p}{3}.
+ \label{eq:v8-baryon-c0-central-weight-entropy}
+\end{equation}
+Её производные имеют точный вид
+\begin{equation}
+ S'(p)=\log\frac{1-p}{3p},
+ \qquad
+ S''(p)=-\frac{1}{p(1-p)}<0,
+ \label{eq:v8-baryon-c0-central-weight-entropy-derivatives}
+\end{equation}
+так что максимум действительно единственен:
+\begin{equation}
+ \operatorname*{argmax}_{0<p<1}S(p)=\left\{\frac14\right\}.
+ \label{eq:v8-baryon-c0-central-weight-maximum-entropy-candidate}
+\end{equation}
+Но функционал максимизации энтропии для connector-скоростей не является
+членом текущего действия. Он повторяет условный счётный выбор, не объясняя
+его происхождения.
+
+Итоговый аудит источников равен
+\begin{equation}
+ N_{\rm parent\ origin}=0/6:
+ \quad\{S_{\rm old},\Tr_4,\Str_{\Gamma},\text{KMS/Gibbs},
+ S_{\max},\text{endpoint incidence}\}.
+ \label{eq:v8-baryon-c0-central-weight-parent-origin-ledger}
+\end{equation}
+
+\begin{theorem}[Тепловая параметризация без происхождения центрального веса]
+Каждый положительный центральный вес $p\in(0,1)$ представим единственным
+безразмерным разрывом $\beta\Delta=\log(3p/(1-p))$. Поэтому KMS- или
+Gibbs-условие не выбирает $p$ без независимого происхождения
+singlet--triplet щели. Обычный след и максимум энтропии условно дают
+$p=1/4$, но соответствующий принцип отсутствует в текущем родителе.
+\end{theorem}
+
+\begin{nogocriterion}[Нельзя считать размерность сектора динамическим весом]
+Кратности $1$ и $3$ превращаются в веса $1/4$ и $3/4$ только после выбора
+одинаковой следовой плотности на каждом состоянии. Центральное
+переопределение $Z_p$ сохраняет семейную симметрию, grading,
+положительность и нормировку, поэтому одна размерность представления не
+является parent-origin.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item центральный симплекс: \textbf{$0<p<1$};
+\item условный обычный след: \textbf{$p=1/4$, $r=1$};
+\item центральное переопределение сохраняет симметрии: \textbf{да};
+\item нормированный grading-суперслед положителен: \textbf{нет};
+\item Gibbs-класс реализует все $p$: \textbf{да};
+\item минимальный тепловой параметр: \textbf{$\beta\Delta$};
+\item максимум энтропии условно выбирает: \textbf{$p=1/4$};
+\item энтропийный принцип выведен: \textbf{нет};
+\item parent-origin источников: \textbf{$0/6$};
+\item физическая одиночная карта $c_0$: \textbf{не выведена};
+\item следующий гейт: \textbf{минимальные гамильтоновы данные центрального веса}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_trace_weight_parent_origin_gate_results.json}.

@@ -1,0 +1,201 @@
+\chapter{Intertwiner чётного coherence-угла и семейного триплета}
+\label{ch:v8-baryon-c0-coherence-even-corner-family-triplet-intertwiner}
+
+\section{Текущие представления}
+
+Алгебраическая форма портала использовала совпадение размерностей, но
+физический morphism обязан сплетать все объявленные действия. Чётный угол
+coherence-chain имеет тип
+\begin{equation}
+ E_{\rm coh}=\Lambda^2W^*,
+ \qquad
+ W=W_{eX}\oplus W_Y\simeq\mathbb C^2\oplus\mathbb C,
+ \qquad
+ E_{\rm coh}\simeq\mathbf1\oplus\mathbf2
+ \label{eq:v8-coherence-family-intertwiner-source-type}
+\end{equation}
+относительно $G_{\rm ch}=U(2)_{eX}\times U(1)_Y$. Семейный target равен
+\begin{equation}
+ E_{\rm fam}\simeq\mathbf3_{SO(3)_{\rm fam}}.
+ \label{eq:v8-coherence-family-intertwiner-target-type}
+\end{equation}
+В текущем контракте $SO(3)_{\rm fam}$ действует тривиально на
+$E_{\rm coh}$, а $G_{\rm ch}$ --- тривиально на $E_{\rm fam}$. Поэтому
+полная группа имеет вид
+\begin{equation}
+ G_{\rm current}=G_{\rm ch}\times SO(3)_{\rm fam}.
+ \label{eq:v8-coherence-family-intertwiner-product-group}
+\end{equation}
+
+\section{Нулевой Hom в текущей типизации}
+
+Пусть $L_1,L_2,L_3$ --- стандартные вещественные генераторы $so(3)$, а
+$Z:E_{\rm coh}\to E_{\rm fam}$. Семейные уравнения сплетения равны
+\begin{equation}
+ L_iZ-Z0=L_iZ=0,
+ \qquad i=1,2,3.
+ \label{eq:v8-coherence-family-current-so3-system}
+\end{equation}
+На девяти вещественных неизвестных их матрица имеет
+\begin{equation}
+ \rank\mathcal C_{SO(3)}=9,
+ \qquad
+ \dim\ker\mathcal C_{SO(3)}=0,
+ \qquad
+ \operatorname{Hom}_{SO(3)}(\mathbf1^{\oplus3},\mathbf3)=0.
+ \label{eq:v8-coherence-family-current-so3-hom}
+\end{equation}
+Ограничение до тетраэдрического остатка не помогает. Для циклической
+перестановки $R_3$ и полуоборота $R_2=\operatorname{diag}(1,-1,-1)$
+получается
+\begin{equation}
+ (R_3-I)Z=(R_2-I)Z=0,
+ \qquad
+ \rank\mathcal C_{A_4}=9,
+ \qquad
+ \operatorname{Hom}_{A_4}(\mathbf1^{\oplus3},\mathbf3)=0.
+ \label{eq:v8-coherence-family-current-a4-hom}
+\end{equation}
+
+Независимый канальный тест также даёт нуль. Если
+$\rho_{\wedge^2}$ обозначает действие $G_{\rm ch}$ на
+$\Lambda^2W^*$, то
+\begin{equation}
+ 0Z-Z\rho_{\wedge^2}(X)=0
+ \quad\forall X\in\mathfrak u(2)\oplus\mathfrak u(1)
+ \quad\Longrightarrow\quad Z=0.
+ \label{eq:v8-coherence-family-current-channel-hom}
+\end{equation}
+Следовательно,
+\begin{equation}
+ \operatorname{Hom}_{G_{\rm current}}(E_{\rm coh},E_{\rm fam})=0.
+ \label{eq:v8-coherence-family-current-product-hom}
+\end{equation}
+Это типизационный no-go, а не отсутствие удачного выбора базиса.
+
+\section{Единственная условная Hodge-лазейка}
+
+Если условно заменить канальное разложение единым ориентированным
+вещественным триплетом
+\begin{equation}
+ W_{\rm ext}\simeq\mathbb R^3_{SO(3)_{\rm diag}},
+ \qquad
+ E_{\rm coh}^{\rm ext}=\Lambda^2\mathbb R^3,
+ \qquad
+ E_{\rm fam}=\mathbb R^3,
+ \label{eq:v8-coherence-family-promoted-types}
+\end{equation}
+то метрика и ориентация задают Hodge-map
+\begin{equation}
+ *=\begin{pmatrix}
+ 0&0&1\\
+ 0&-1&0\\
+ 1&0&0
+ \end{pmatrix}:
+ \Lambda^2\mathbb R^3\longrightarrow\mathbb R^3.
+ \label{eq:v8-coherence-family-hodge-map}
+\end{equation}
+В базисе $(e_1\wedge e_2,e_1\wedge e_3,e_2\wedge e_3)$ он удовлетворяет
+\begin{equation}
+ L_i*=*\,\rho_{\wedge^2}(L_i),
+ \qquad i=1,2,3.
+ \label{eq:v8-coherence-family-hodge-intertwining}
+\end{equation}
+Полная система имеет ранг восемь:
+\begin{equation}
+ \rank\mathcal C_{\rm diag}=8,
+ \qquad
+ \operatorname{Hom}_{SO(3)_{\rm diag}}
+ (\Lambda^2\mathbb R^3,\mathbb R^3)=\mathbb R*.
+ \label{eq:v8-coherence-family-promoted-hom}
+\end{equation}
+Нормировка метрики оставляет только два знака,
+\begin{equation}
+ *^{\mathsf T}*=I_3,
+ \qquad
+ \det *=1,
+ \qquad
+ (c*)^{\mathsf T}(c*)=I_3
+ \Longleftrightarrow c=\pm1.
+ \label{eq:v8-coherence-family-hodge-normalization}
+\end{equation}
+Ориентация выбирает знак лишь после того, как сама происходит из
+родительской структуры.
+
+\section{Цена условного повышения}
+
+Текущее $W$ не является тремя копиями одного бимодуля: $W_Y$ имеет тип,
+отличный от $W_e,W_X$. Поэтому непрерывное смешивание всех трёх координат
+требует
+\begin{equation}
+ W_e\simeq W_X\simeq W_Y
+ \quad\text{как бимодули},
+ \qquad
+ SO(3)_{\rm diag}\subset U(3)_{\rm accidental},
+ \label{eq:v8-coherence-family-bimodule-promotion-cost}
+\end{equation}
+а также диагонального отождествления этой новой группы с
+$SO(3)_{\rm fam}$. Классификация конечных спектральных троек требует
+сохранять именно бимодульные вершины и рёбра, а не только размерности
+\cite{v8-coherence-family-krajewski}; поэтому такое повышение является
+новой архитектурой.
+
+Реестры имеют вид
+\begin{equation}
+ \begin{aligned}
+ N_{\rm current\ intertwiner}&=0/4,
+ &N_{\rm conditional\ shape}&=4/4,\\
+ N_{\rm new\ origin}&=0/3,\\
+ \mathcal M_{\rm new}&=\text{bimodule, diagonal lock, orientation}.
+ \end{aligned}
+ \label{eq:v8-coherence-family-intertwiner-ledgers}
+\end{equation}
+
+\begin{theorem}[Текущий Hom равен нулю]
+Для действующей product-group
+$\bigl(U(2)_{eX}\times U(1)_Y\bigr)\times SO(3)_{\rm fam}$ не существует
+ненулевого morphism из coherence-угла $\Lambda^2W^*$ в стандартный
+семейный триплет. Запрет сохраняется после ограничения семейной группы до
+$A_4$.
+\end{theorem}
+
+\begin{proposition}[Условная единственность Hodge-map]
+После повышения $W$ до ориентированного стандартного триплета диагонального
+$SO(3)$ пространство intertwiner равно $\mathbb R*$, а изометрические карты
+равны $\pm *$.
+\end{proposition}
+
+\begin{nogocriterion}[Запрет случайного $U(3)$]
+Нельзя объявлять условный Hodge-map существующим физическим morphism, пока
+различные канальные бимодули не объединены одним родителем и не выведено
+диагональное family--channel действие. Равенство размерностей и случайная
+$U(3)$-симметрия нормы этого не доказывают.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item текущая группа: \textbf{$G_{\rm ch}\times SO(3)_{\rm fam}$};
+\item текущий $SO(3)$-Hom: \textbf{$0$};
+\item текущий $A_4$-Hom: \textbf{$0$};
+\item текущий канальный Hom: \textbf{$0$};
+\item полный текущий intertwiner: \textbf{$0/4$};
+\item условный диагональный Hom: \textbf{$\mathbb R*$};
+\item изометрические карты: \textbf{$\pm *$};
+\item условная форма: \textbf{$4/4$};
+\item новых parent-структур: \textbf{$3$};
+\item portal parent-origin: \textbf{не закрыт};
+\item следующий гейт: \textbf{бимодульная совместимость channel-triplet повышения}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_coherence_even_corner_family_triplet_intertwiner_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-coherence-family-krajewski}
+T.~Krajewski,
+\emph{Classification of Finite Spectral Triples},
+arXiv:hep-th/9701081.
+\bibitem{v8-coherence-family-quiver}
+M.~Harada, G.~Wilkin,
+\emph{Morse theory of the moment map for representations of quivers},
+arXiv:0807.4734.
+\end{thebibliography}

@@ -2,7 +2,51 @@
 
 > Status: working
 > Type: synthesis
-> Updated: 2026-08-13
+> Updated: 2026-08-31
+
+## Актуальный фронтир 2026-08-31
+
+Том VIII завершён. Последний scale-origin audit подтвердил непрерывную
+орбиту `(E_*,t)→(lambda E_*,t/lambda)` и дал candidate-origin `0/6`.
+Operator/QMS/dilation program закрыта, но four-slot physical parent не
+получен. Следующий фронтир — `version9_four_slot_dynamic_parent_program_admission_gate`.
+См. [[tome8-final-conclusion-and-tome9-program]].
+
+Минимизация данных сократила пять apparent inputs до четырёх независимых:
+endpoint-extension, общий резонансный квант `E_*`, dimensionless coupling
+`chi` и transport primitive. Scalar dependency-Jacobian имеет rank `2`,
+но текущий parent не выбирает ни одного slot (`0/4`). Следующий узел
+проверяет происхождение наиболее связанного кандидата — общего energy-scale.
+См. [[version8-baryon-c0-charged-mediator-dynamic-parent-minimal-new-data-gate]].
+
+Консервативный admission закрыт: `K43` канонически вложена в `K45`, vacuum
+и локальный parent сохраняются, а тензорное вложение сплетается со shift.
+Поэтому старый 42-channel process буквально является restriction новой
+архитектуры. Structural admission равен `8/8`, все пять форм доступны, но
+их physical origin остаётся `0/5`. Следующий узел минимизирует остаточный
+пакет новых данных. См.
+[[version8-baryon-c0-charged-mediator-dynamic-parent-data-admission-gate]].
+
+Минимальный общий dynamic parent теперь построен условно: две charged
+Real-линии расширяют старую cell `43→45`, а weak-limit frame `42→44`.
+Локальный projector-parent выбирает product-vacuum, но сдвиг имеет
+GNVW-index `45`; carrier-extension, `7 gamma`, coupling, transport law и
+physical tick остаются `0/5`. Следующий гейт проверяет admission этих
+динамических данных в существующем parent. См.
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-minimal-typed-discriminator-binary-carrier-charged-environment-mediator-minimal-dynamic-parent-architecture-gate]].
+
+Бинарный `u/d`-носитель теперь имеет минимальную условную charged-дилатацию:
+complex dimension `2`, Real dimension `3`, точные charge/energy conservation
+и amplitude damping за одно столкновение. Конечная дилатация не является
+полугруппой; следующий узел проверяет, допускают ли существующие носители
+необходимую family-singlet charged Real-пару. См.
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-minimal-typed-discriminator-binary-carrier-charged-environment-mediator-architecture-gate]].
+
+Следующий admission-аудит уточнил препятствие: charged multiplicity имеет
+условное разложение `1+3`, поэтому family и grading выбирают единственную
+старую singlet-ветвь `|e_R^(s)><s0|`. Новый независимый charged тип не
+нужен, но `s0`, глобальное family-замыкание, энергия, состояние и rate не
+происходят из текущего parent. Следующий гейт локализован на их origin.
 
 The compact theorem/no-go ledger superseding stale sprint recommendations is [[theorem-status-ledger-2026-08-04]].
 
@@ -1064,3 +1108,250 @@ The remaining question is dynamical rather than algebraic: derive
 `A=A(H,nu)` as an Euler-Lagrange equation of the same action that produces
 the projector supercurvature, without adding an independent enforcing
 multiplier.
+
+## 2026-08-30 Baryon Transmutation Input Audit
+
+The current baryon kernel branch now reuses the strongest exact Version III
+results instead of treating every Coleman--Weinberg input as new. The
+four-dimensional zero-mode block has `B0=67/(64*pi^2)>0`, and the abelian
+one-loop coefficient is `b=2`. The full compactified coefficient, absolute
+RG integration scale and typed internal map to `c0` remain open, so the
+complete selector ledger is `0/3`. The next bounded task is the finite audit
+of candidate maps into `c0`; see
+[[version8-baryon-dimensional-transmutation-input-origin-gate]].
+
+The subsequent typed-map audit checks seven named dimensionless invariants.
+Even the closest shifted-curvature value `4` controls an interaction-shape
+ratio rather than the auxiliary pole Hessian. The current registry is
+therefore `0/7`, with no universal no-go claimed for a new cross-carrier
+morphism; see [[version8-baryon-c0-typed-internal-map-candidate-audit-gate]].
+
+The minimal new morphism is not obstructed: the equivariant Hom between
+the two invariant real lines is one-dimensional. It produces
+`c0=kappa*r_star`, but positivity leaves `kappa>0`; an isometric common-trace
+embedding would select `kappa=1` and is now the next exact gate. See
+[[version8-baryon-c0-minimal-cross-carrier-morphism-architecture-gate]].
+
+The common-trace test is negative on the separated algebra. Normalized
+positive traces retain central weights `p,q`, and isometry gives only
+`kappa=sqrt(p/q)`. A genuine off-diagonal linking bimodule is now required
+to relate the two corner weights; see
+[[version8-baryon-c0-common-trace-embedding-normalization-gate]].
+
+The minimal `M2` linking architecture passes conditionally. Its matrix unit
+removes the central-weight simplex and fixes positive `kappa=1`, hence
+`c0=4` for the selected near-miss invariant. This is not yet inherited from
+the 42-carrier; the next gate classifies compatible endpoint intertwiners.
+See [[version8-baryon-c0-linking-algebra-offdiagonal-bridge-admission-gate]].
+
+The bridge classification is negative inside the current 42-frame. Every
+old operator acts only on `H21` and annihilates an added auxiliary line;
+moreover, the endpoint representation has no neutral singlet. A new neutral
+endpoint state and a new off-diagonal arrow are therefore minimal, not
+optional. See
+[[version8-baryon-c0-existing-42-carrier-linking-bridge-classification-gate]].
+
+The minimal repair adds two neutral endpoint lines, not one. Opposite
+grading makes the bridge odd, while Lie closure adds a third diagonal
+direction, producing the exact extension `H21 -> H23`, `F42 -> F45` with
+`K45=K42 direct_sum 2I3`. Physical origin of the new states remains open;
+see [[version8-baryon-c0-minimal-neutral-endpoint-extension-gate]].
+
+The exact 45-jump dynamics is not primitive on `H23`. Its fixed algebra is
+`C P21 direct_sum C Pn`: the new Pauli block depolarizes with eigenvalue
+`-4` and old-new coherences decay, but the two central populations remain
+separately conserved. A gauge-covariant old-new connector is therefore the
+next required object; see
+[[version8-baryon-c0-extended-45-frame-fixed-algebra-and-dynamics-gate]].
+
+A minimal gauge-covariant repair exists. The exact constraint system has
+complex nullity `3`; two Hermitian quadratures of any nonzero solution
+extend the frame to `47` and reduce the fixed algebra to `C I23` for every
+positive rate. The remaining direction space is `RP2`, and neither its
+point nor the rate is selected; see
+[[version8-baryon-c0-old-new-gauge-covariant-connector-classification-gate]].
+
+The common trace does not supply the missing parent selector. Its metric on
+the three connector multiplicities is `I3`; an isotropic quartic parent
+selects only a radius and leaves `RP2` with two angular zero modes. Endpoint
+labels permit anisotropic masses but do not fix them, while the absolute
+rate still requires an environment scale. The selector ledger is `0/2`;
+see [[version8-baryon-c0-connector-multiplicity-and-rate-parent-selector-gate]].
+
+The extended endpoint bimodule algebra diagonalizes the three connector
+labels but leaves a three-dimensional simplex of positive trace weights.
+Including the entire admissible Hom space closes the local graph to
+`M5(C)`, gives its unique trace and a full six-quadrature `F51` frame. This
+canonizes a complete multiplicity package, not a single rank-one `c0` map;
+see [[version8-baryon-c0-extended-endpoint-bimodule-weight-origin-gate]].
+
+The full multiplicity package cannot be re-read as one hidden `c0` map.
+Its Kossakowski and Choi ranks are `3`, versus `1` for a pure connector.
+Central restrictions agree after a factor-three rate rescaling, but an
+explicit old-line projector distinguishes the full generators. Rank-one
+reduction therefore requires a new pure environment state in `CP2/RP2`;
+see [[version8-baryon-c0-full-multiplicity-frame-single-map-compatibility-gate]].
+
+The existing parent still does not select that pure state. Scalar gauge
+action fixes every density matrix, the normalized trace and isotropic Gibbs
+state give `I3/3`, and entropy or the earlier exterior-square purity
+functional selects the whole real pure orbit `RP2`. Two symmetry-compatible
+real Hamiltonians have different ground projectors, proving that an
+anisotropic spectrum and orientation are new data. The unique-selector
+ledger is `0/5`; see
+[[version8-baryon-c0-multiplicity-environment-pure-state-selector-gate]].
+
+The minimal Hamiltonian data are now classified. Up to a positive energy
+rescaling and scalar shift, the economical representative is
+`h=epsilon I3+Delta(I3-P)` with `P in RP2` and an excited doublet. Its
+finite-temperature Gibbs state has rank `3`; the exact projector requires
+`beta Delta -> infinity` or an external pure preparation. Direction,
+cooling and the absolute physical gap are distinct data layers, none
+derived by the current parent (`0/3`); see
+[[version8-baryon-c0-multiplicity-environment-hamiltonian-minimal-data-gate]].
+
+No existing parent source supplies that Hamiltonian. The old restriction is
+zero, the unique `M5` trace and full Kossakowski covariance are scalar, and
+the local trace weights remain a free simplex. The earlier family operator
+`R4+` is an exact anisotropic near miss with simple spectrum, but it fails
+the current endpoint diagonal test with commutator norm `50` and lives on a
+different qutrit carrier. Transport requires an unselected element of
+`M3(R)` and a dimensional scale, so the origin ledger is `0/5`; see
+[[version8-baryon-c0-multiplicity-environment-hamiltonian-parent-origin-gate]].
+
+The carrier map itself is now representation-theoretically classified.
+The family qutrit is the standard `SO(3)_fam` triplet, while the current
+connector multiplicity is three trivial lines; both the `SO(3)` and `A4`
+intertwiner spaces vanish exactly. Promoting the target to another standard
+triplet gives the Schur line `R I3` and isometric choices `+-I3`, but this
+mixes the three fixed endpoint projectors. A family action on the
+environment and its covariant endpoint lift remain new structures (`0/2`);
+see [[version8-baryon-c0-family-to-multiplicity-intertwiner-admission-gate]].
+
+The later coherence-channel audit reaches the same boundary at the actual
+bimodule level. The type commutant of `(e_R,X_R,Y_R)` is `M2(C)+C`, so its
+real orthogonal part is only `SO(2)`; standard `SO(3)`, `A4`, and the
+spin-cover loophole do not provide a physical triplet. Adding one new
+`(C,C,R)` endpoint conditionally creates a canonical isotypic three-block,
+but the new arrows, condensate, and diagonal family-channel lock remain
+unoriginated (`0/4`); see
+[[version8-baryon-c0-singlet-triplet-central-gap-coherence-channel-triplet-promotion-bimodule-compatibility-gate]].
+
+The minimal physical realization cannot stop at one new right endpoint.
+`Z_R` alone changes the charged chiral index and contributes nonzero mixed
+gravitational and cubic abelian anomalies. An independent `Z_L+Z_R`
+vectorlike pair repairs those defects, but the strict graph then admits
+nine new edges while the intended coherence-plus-mass support uses only
+three. Its rank-two mass has an unselected right kernel and no nonzero
+intertwiner with the declared channel `SO(3)` action. The structural carrier
+is conditional (`6/6`), while selector and origin remain `0/6`; see
+[[version8-baryon-c0-singlet-triplet-central-gap-minimal-isotypic-channel-extension-gate]].
+
+A conditional two-field repair now aligns the coherence line and the
+vectorlike mass kernel exactly. Its zero set obeys
+`B*B/3+M*M=I3`, and the real-slice Hessian is transversely positive, so no
+fixed channel-breaking spurion is needed for the alignment itself. The
+construction is still only a selected subparent: the common right orbit
+does not choose an absolute direction. The next carrier audit corrected the
+external-field count from six to three complex fields; see
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-vectorlike-mass-edge-selector-gate]].
+
+The corrected full-graph embedding partitions the nine new edges as
+`2+4+3` between `B`, `M`, and the external sector. Three positive norms
+lift all six non-orbit spectator modes and give real-slice signature
+`(0,4,14)`. This closes the conditional carrier shape (`7/7`) but leaves a
+three-dimensional positive mass cone, two relative ratios, one scale, and
+their spectral origin unselected (`0/4`); see
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-full-graph-aligned-parent-embedding-gate]].
+
+The three external masses now have a conditional common operator origin.
+The physical half-trace gives the exact unweighted coefficient vector
+`(2,3,3)`, but the three inequivalent gauge blocks retain independent
+positive central weights and hence two relative freedoms. The full-rank
+gauge-index matrix reconstructs rather than selects a mass vector. Thus the
+quadratic shape closes `5/5`, while relative origin remains `0/5` and the
+absolute scale `0/2`; see
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-parent-origin-gate]].
+
+The central mass simplex has now been tested against eight candidate
+selectors. Counting trace and maximum entropy conditionally reproduce
+`2:3:3`, while equal edge masses give `1:1:1`. Type symmetry preserves the
+full center, unimodularity acts only on phases, gauge matching needs an
+external target, Gibbs states introduce two independent gaps, and the
+vacuum is flat in all weight directions. Intrinsic selection is therefore
+`0/8`; see
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-central-trace-simplex-selector-gate]].
+
+The minimal Hamiltonian description of that simplex is now exact: two
+dimensionless gaps form a global coordinate chart with Jacobian
+`p_Y p_u p_d`. They are sufficient for relative weights but leave the
+physical energy unit, common stabilizing mass scale, and relaxation time
+undetermined; see
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-minimal-central-hamiltonian-data-gate]].
+
+The parent-action audit finds a canonical positive stiffness on the two-gap
+plane but no inherited nonzero source. Gauge Casimirs span the plane only
+conditionally, while grading and the coherence radius are scalar there.
+The result is shape `5/5`, origin `0/7`; see
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-central-hamiltonian-parent-action-origin-gate]].
+
+The minimal conditional repair is now exact. With inherited stiffness
+`diag(12,48)`, the two-source parent is strictly convex and its source-to-gap
+map has determinant `1/72`. Thus two real sources are necessary and
+sufficient for an arbitrary gap pair, while their origin remains `0/2`; see
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-parent-architecture-gate]].
+
+The existing-carrier audit finds two genuinely independent active scalar
+radii, `T_B=3` and `T_M=2`, with radial Jacobian determinant `24`. This does
+not derive the sources: the equivariant portal space is the full
+four-dimensional `M2(R)`, no diagonal pairing is selected, and the inherited
+mixed Hessian vanishes; see
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-existing-scalar-carrier-classification-gate]].
+
+The portal-origin audit now separates direct sums from a genuine common
+operator. Direct sums have zero mixed Hessian, while a cubic common block
+produces `3 lambda T`. Six of nine incidence assignments have rank two and
+two independent coefficients can realize the full source plane, but the
+inherited parent has no odd coefficient and selects no assignment; see
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-portal-matrix-parent-origin-gate]].
+
+The incidence selector cascade reduces but does not close the menu.
+Determinant and metric area leave four candidates; exact conditioning and
+dimension matching leave precisely `(u,Y)` and `(d,Y)`. Their determinant
+sign is basis-oriented, their gauge inequivalence supplies no preference,
+and an equal-gap target is external. The intrinsic selector remains `0/8`;
+see [[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-assignment-selector-gate]].
+
+The residual binary parent-origin audit finds a precise but conditional
+discriminator. The quadratic hypercharge indices are `25/3` and `4/3`, so a
+positive externally supplied score prefers the down-type branch. Odd Real
+moments and vectorlike anomalies cancel, however, and the two incidence
+projectors are fixed points of different finite geometries rather than
+variables of one action. The typed coupling, its sign and an inter-geometry
+measure are absent; parent-origin is `0/7`. See
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-parent-origin-gate]].
+
+The minimal typed completion now embeds both alternatives in one `C^2`
+carrier. Its controlled endpoint projector has rank twelve, and
+`H_inc=(29/6)I+(7/2)sigma_z` has a unique down-type ground state for positive
+coefficient. This is not yet dynamics: the Hamiltonian commutator fixes both
+populations. A single conditional jump `|d><u|` reduces the Heisenberg fixed
+algebra to `C I2` and selects the down-type stationary state, but the carrier,
+jump, bath and rate are not inherited. See
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-minimal-typed-discriminator-architecture-gate]].
+
+The carrier-origin audit separates three layers. The classical center
+`C P_u direct sum C P_d` already exists. The off-diagonal jump has charge
+minus one and its dissipator is gauge-covariant, but the old 42-frame has
+zero extension on this switch. A microscopic invariant interaction requires
+an environment transition of charge plus one. The inherited charged-singlet
+carrier is a threefold family triplet with no fixed line, and neither the
+resonant gap nor the bath state and rate are derived. See
+[[version8-baryon-c0-singlet-triplet-central-gap-isotypic-channel-extra-edge-mass-two-source-cubic-incidence-up-down-binary-selector-minimal-typed-discriminator-binary-carrier-parent-origin-gate]].
+
+The charged-mediator continuation corrects and then sharpens this boundary.
+The conditional `1+3` decomposition supplies one family-singlet line, but
+energy/state/rate origin remains negative: one environment gap is free,
+invariant states form an interval, coupling is rescalable, and the old
+42-channel cell lacks the new jump. Conditional shape is `8/8` and
+parent-origin is `0/5`. The next gate is the minimal unified dynamic parent.

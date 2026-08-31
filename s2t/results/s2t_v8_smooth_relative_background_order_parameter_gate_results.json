@@ -1,0 +1,125 @@
+{
+  "date": "2026-08-29",
+  "gate": "version8_smooth_relative_background_order_parameter_gate",
+  "quark_lepton_grading": {
+    "background_order_norm": 0.0,
+    "equivariant_commutant_residual": 1.1665308325273761e-15,
+    "maximum_gauge_commutator_residual": 0.0,
+    "order_map_eigenvalues": [
+      -2.0,
+      -2.0,
+      -2.0,
+      -5.46881184422e-16,
+      -2.68791798651e-16,
+      -1.74945625784e-16,
+      -9.16495392088e-17,
+      -3.55771279989e-17,
+      -6.69418304503e-23,
+      1.20092323868e-32,
+      2.15580564488e-22,
+      2.7931273396e-17,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "order_map_kernel_dimension_complex": 9,
+    "order_map_rank_complex": 6,
+    "smooth_order_formula": "B(A)=Gamma_t A-A Gamma_s",
+    "source_signature": [
+      6,
+      5
+    ],
+    "target_signature": [
+      6,
+      4
+    ],
+    "transfer_module_reconstruction_residual": 1.7426258661508601e-15
+  },
+  "relative_curvature": {
+    "background_action_is_zero": true,
+    "formula": "R_B(A)=AA*B(A)-B(A)A*A",
+    "maximum_full_gauge_covariance_residual": 2.0314281327067644e-14,
+    "maximum_radial_degree_six_action_residual": 4.440892098500626e-16,
+    "natural_full_unitary_functional_calculus_maximum_curvature_residual": 1.7546611939306562e-13,
+    "origin_action_degree": 6,
+    "origin_gradient_is_zero": true,
+    "origin_hessian_is_zero": true,
+    "random_sample_maximum_norm": 36.94664081883523,
+    "random_sample_minimum_norm": 7.154573333391869
+  },
+  "transfer_module": {
+    "commutant_smallest_singular_values": [
+      4.80135952019e-16,
+      3.99885852628e-16,
+      3.70321277093e-16,
+      3.61408605189e-16,
+      3.28936773724e-16,
+      3.12203400713e-16,
+      2.91658975329e-16,
+      2.65324460403e-16,
+      2.08074261615e-16,
+      1.86672542961e-16,
+      1.27882152769e-16,
+      6.61775058749e-17
+    ],
+    "complex_dimension": 15,
+    "equivariant_endomorphism_commutant_dimension": 13,
+    "incidence_orbit_dimension_sequence": [
+      1,
+      4,
+      5,
+      5
+    ]
+  },
+  "vacuum_hessian_on_full_transfer_realification": {
+    "eigenvalues": [
+      -2.14432867897e-15,
+      -1.92452198926e-15,
+      -1.18621062708e-15,
+      -5.89175721049e-16,
+      -8.92106280795e-17,
+      -8.51003018762e-23,
+      -5.74407263363e-32,
+      -2.89760348841e-32,
+      7.56530853653e-32,
+      3.11489717691e-22,
+      1.12443997768e-17,
+      1.10275118808e-16,
+      2.3777280428e-16,
+      6.83133956121e-16,
+      1.36808298347e-15,
+      1.88307125029e-15,
+      2.76844241319e-15,
+      3.63989365904e-15,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      12.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0
+    ],
+    "is_positive_semidefinite": true,
+    "maximum_eigenvalue": 16.000000000000007,
+    "minimum_eigenvalue": -2.1443286789689502e-15,
+    "minimum_positive_eigenvalue": 11.999999999999998,
+    "nullity": 18,
+    "rank": 12,
+    "real_dimension": 30
+  },
+  "verdict": {
+    "candidate_can_add_vacuum_stiffness": true,
+    "candidate_drives_origin_rank_transition": false,
+    "candidate_is_unique_from_gauge_covariance": false,
+    "candidate_reproduces_polar_background": false,
+    "full_parent_action_obtained": false,
+    "next_gate": "version8_isotypic_relative_curvature_parent_hessian_gate",
+    "polar_discontinuity_is_the_only_possible_route": false,
+    "smooth_full_gauge_covariant_relative_order_exists": true
+  }
+}

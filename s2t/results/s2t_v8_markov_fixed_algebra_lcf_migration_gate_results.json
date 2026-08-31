@@ -1,0 +1,49 @@
+{
+  "comparison_with_original_numerical_gate": {
+    "exact_lcf_dimension": 2,
+    "exact_lepton_rank": 9,
+    "exact_quark_rank": 12,
+    "old_lepton_rank": 9,
+    "old_numerical_dimension": 2,
+    "old_quark_rank": 12
+  },
+  "date": "2026-08-29",
+  "exact_endpoint_representation": {
+    "block_diagonal_gauge_commutant_dimension": 13,
+    "source_dimension": 11,
+    "target_dimension": 10
+  },
+  "fixed_algebra": {
+    "algebra": "C P_quark direct_sum C P_lepton_vectorlike",
+    "dimension": 2,
+    "lepton_vectorlike_projector_rank": 9,
+    "projectors_complementary": true,
+    "quark_projector_rank": 12
+  },
+  "gate": "version8_markov_fixed_algebra_lcf_migration_gate",
+  "linking_constraints": {
+    "backward_equation": "X_source A^* = A^* X_target",
+    "exact_system_rank": 11,
+    "exact_system_shape": [
+      220,
+      13
+    ],
+    "forward_equation": "A X_source = X_target A",
+    "full_self_adjoint_kernel_dimension": 2,
+    "one_sided_kernel_dimension": 4
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "7987347bbeb1f77f78fe5beba63f6077387fbc891f8c90199bde5ee79f407206",
+    "obligation_count": 3,
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "floating_point_tolerance_required": false,
+    "full_self_adjoint_commutant_is_required": true,
+    "next_gate": "version8_linking_qms_gksl_lcf_migration_gate",
+    "one_sided_linking_equation_is_sufficient": false,
+    "original_dimension_two_confirmed_exactly": true,
+    "original_projector_ranks_confirmed_exactly": true,
+    "status": "lcf-checked"
+  }
+}

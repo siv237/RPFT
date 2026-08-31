@@ -1,0 +1,132 @@
+\chapter{Классификация калибровочно-ковариантного старо-нового коннектора}
+\label{ch:v8-baryon-c0-old-new-gauge-covariant-connector-classification-gate}
+
+Предыдущий гейт показал, что внутренний паулиевский блок не уничтожает
+центральный остаток $\mathbb C^2$. Ищем отображение
+$V:H_{\mathrm n}\to H_{21}$, которое не обязано быть gauge-инвариантным
+по отдельности, но должно порождать замкнутый ковариантный кадр скачков.
+
+Пусть $G_1,\ldots,G_{11}$ --- генераторы $SU(3)\times SU(2)$, а $Y$ ---
+гиперзаряд. Минимальный заряженный класс задаётся системой
+\begin{equation}
+ G_jV=0,
+ \qquad (Y+I_{21})V=0,
+ \qquad \Gamma_{21}V+V\Gamma_{\mathrm n}=0.
+ \label{eq:v8-baryon-c0-old-new-covariant-map-system}
+\end{equation}
+Её точная размерность и базис равны
+\begin{equation}
+ \dim_{\mathbb C}\mathcal V_{-1}^{\rm odd}=3,
+ \qquad
+ \mathcal V_{-1}^{\rm odd}
+ =\operatorname{span}_{\mathbb C}
+ \{|e_R^{(s)}\rangle\langle s_0|,
+ |e_R^{(t,1)}\rangle\langle a_0|,
+ |e_R^{(t,2)}\rangle\langle a_0|\}.
+ \label{eq:v8-baryon-c0-old-new-covariant-map-basis}
+\end{equation}
+Иными словами,
+\begin{equation}
+ V(z)=z_0|e_R^{(s)}\rangle\langle s_0|
+ +z_1|e_R^{(t,1)}\rangle\langle a_0|
+ +z_2|e_R^{(t,2)}\rangle\langle a_0|.
+ \label{eq:v8-baryon-c0-old-new-general-connector}
+\end{equation}
+Стандартная Real-совместимость допускает вещественного представителя с
+точностью до общего масштаба, поэтому множество направлений остаётся
+неединственным:
+\begin{equation}
+ [z_0:z_1:z_2]\in\mathbb{RP}^2.
+ \label{eq:v8-baryon-c0-old-new-real-projective-family}
+\end{equation}
+
+\section{Минимальная ковариантная орбита}
+
+Для любого ненулевого вещественного $V$ положим
+\begin{equation}
+ C_1=\begin{pmatrix}0&V\\V^*&0\end{pmatrix},
+ \qquad
+ C_2=\begin{pmatrix}0&iV\\-iV^*&0\end{pmatrix}.
+ \label{eq:v8-baryon-c0-old-new-hermitian-quadratures}
+\end{equation}
+Нетривиальные генераторы коммутируют с обоими направлениями, а гиперзаряд
+вращает их пару:
+\begin{equation}
+ i[Y,C_1]=-C_2,
+ \qquad i[Y,C_2]=C_1.
+ \label{eq:v8-baryon-c0-old-new-u1-frame-rotation}
+\end{equation}
+Оба направления нечётны и образуют Real-замкнутый span:
+\begin{equation}
+ \{\Gamma_{23},C_1\}=\{\Gamma_{23},C_2\}=0,
+ \qquad J_0C_1J_0^{-1}=C_1,
+ \qquad J_0C_2J_0^{-1}=-C_2.
+ \label{eq:v8-baryon-c0-old-new-grading-real-closure}
+\end{equation}
+Для нормированного rank-one представителя новая пара следово ортогональна
+всему блочно-диагональному 45-кадру и
+\begin{equation}
+ \mathcal F_{47}=\mathcal F_{45}\oplus
+ \operatorname{span}_{\mathbb R}\{C_1,C_2\},
+ \qquad
+ K_{47}=K_{45}\oplus2I_2,
+ \qquad \rank K_{47}=47.
+ \label{eq:v8-baryon-c0-old-new-frame-47-metric}
+\end{equation}
+
+\section{Уничтожение второго центрального направления}
+
+В ортонормированном центральном базисе
+$P_{21}/\sqrt{21},P_{\mathrm n}/\sqrt2$ вклад двух новых скачков равен
+\begin{equation}
+ D_{\rm cen}=
+ \begin{pmatrix}
+ 2/21&-\sqrt{42}/21\\
+ -\sqrt{42}/21&1
+ \end{pmatrix},
+ \qquad \rank D_{\rm cen}=1,
+ \qquad \ker D_{\rm cen}=\mathbb C I_{23}.
+ \label{eq:v8-baryon-c0-old-new-central-dirichlet-matrix}
+\end{equation}
+Следовательно, для любого положительного коэффициента $\gamma$,
+\begin{equation}
+ \mathcal L_{47}=\mathcal L_{45}
+ +\gamma\sum_{r=1}^{2}
+ \left(C_r(\cdot)C_r-\frac12\{C_r^2,\cdot\}\right)
+ \label{eq:v8-baryon-c0-old-new-connected-generator}
+\end{equation}
+имеет
+\begin{equation}
+ \operatorname{Fix}(\mathcal L_{47})=\mathbb C I_{23}.
+ \label{eq:v8-baryon-c0-old-new-scalar-fixed-algebra}
+\end{equation}
+
+\begin{theorem}[Минимальная gauge-ковариантная динамическая сшивка]
+Двух Hermitian quadratures одного ненулевого заряженного нечётного
+коннектора достаточно, чтобы сократить неподвижную алгебру с
+$\mathbb C^2$ до $\mathbb C I_{23}$. Двухмерность вещественной орбиты
+минимальна из-за ненулевого $U(1)$-заряда.
+\end{theorem}
+
+\begin{nogocriterion}[Ковариантность не выбирает ветвь и скорость]
+Допустимые Real-направления образуют $\mathbb{RP}^2$, а положительный
+коэффициент $\gamma$ остаётся свободным. Поэтому существование примитивного
+47-скачкового продолжения не выводит конкретный коннектор, его скорость или
+физическое значение $c_0$ из текущего parent action.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item комплексная размерность допустимых нечётных карт: \textbf{$3$};
+\item Real-проективное семейство: \textbf{$\mathbb{RP}^2$};
+\item минимальный вещественный gauge-кадр: \textbf{$2$ направления};
+\item расширенный frame rank: \textbf{$47$};
+\item центральная дирахлеевская матрица: \textbf{ранг $1$};
+\item полная неподвижная алгебра: \textbf{$\mathbb C I_{23}$};
+\item примитивность при $\gamma>0$: \textbf{да};
+\item выбор ветви и $\gamma$: \textbf{не выведен};
+\item следующий гейт: \textbf{parent-селектор multiplicity-направления и
+скорости коннектора}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_old_new_gauge_covariant_connector_classification_gate_results.json}.

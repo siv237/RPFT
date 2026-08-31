@@ -1,0 +1,65 @@
+{
+  "continuum_bridge": {
+    "autonomous_fresh_ancilla_supply_derived": false,
+    "finite_history_and_collision_limit_are_compatible": true,
+    "fresh_ancilla_scaling": "p=u/n",
+    "operator_norm_limit": "Phi_(u/n)^n -> exp(u L_cross)",
+    "physical_time_scale_derived": false
+  },
+  "date": "2026-08-29",
+  "finite_history": {
+    "all_conditional_slice_residuals": "zero",
+    "all_conditional_slice_traces": [
+      "1",
+      "1",
+      "1"
+    ],
+    "benchmark_step": "p=1/12",
+    "clock_dimension": 3,
+    "clock_readings": [
+      0,
+      1,
+      2
+    ],
+    "conditioned_reduced_state": "rho_n=Phi_*^n(rho_0)",
+    "environment_dimension_per_tick": 13,
+    "full_clock_data_dimension": 10647,
+    "kraus_branch_count_bounds": [
+      1,
+      13,
+      169
+    ],
+    "padded_data_dimension": 3549,
+    "system_dimension": 21
+  },
+  "gate": "version8_page_wootters_stinespring_history_gate",
+  "proofdsl_registry": {
+    "certificate_sha256": "b6498f8df0ac96c2a8b1dcde26ab341103060b7e55985b9496fc900c11e17d4f",
+    "gate_count": 14,
+    "obligation_count": 5,
+    "status": "lcf-checked",
+    "total_obligation_count": 92
+  },
+  "stationary_parent": {
+    "additive_H_clock_plus_H_system_constraint_derived": false,
+    "frustration_free_isometric_history_parent_exists": true,
+    "global_history_stationary": true,
+    "zero_mode_family_dimension": 21
+  },
+  "unitary_extension_boundary": {
+    "canonical_full_unitary_tick_derived": false,
+    "extension_family": "U(252)",
+    "extension_real_parameter_dimension": 63504,
+    "stinespring_isometry": "C21 -> C21 tensor C13 = C273",
+    "unconstrained_complement_dimension": 252
+  },
+  "verdict": {
+    "continuous_dimensionless_limit_inherited": true,
+    "finite_conditional_history_bridge_obtained": true,
+    "full_autonomous_page_wootters_clock_derived": false,
+    "next_gate": "canonical_autonomous_clock_unitary_extension_no_go_or_origin_gate",
+    "physical_second_or_arrow_derived": false,
+    "stationary_isometric_history_parent_obtained": true,
+    "status": "lcf_checked_finite_history_bridge_autonomous_physical_clock_open"
+  }
+}

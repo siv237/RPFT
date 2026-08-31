@@ -1,0 +1,121 @@
+\chapter{Минимальное нейтральное endpoint-расширение для карты c0}
+\label{ch:v8-baryon-c0-minimal-neutral-endpoint-extension-gate}
+
+Старый $H_{21}$ не содержит нейтральной линии. Поэтому добавление только
+одного auxiliary state не создаёт двух углов linking-блока. Минимальное
+расширение имеет вид
+\begin{equation}
+ H_{23}=H_{21}\oplus\mathbb C s_0\oplus\mathbb C a_0,
+ \qquad s_0,a_0\sim(1,1)_0.
+ \label{eq:v8-baryon-c0-minimal-neutral-h23}
+\end{equation}
+Две ненулевые ортогональные rank-one проекции требуют
+\begin{equation}
+ \dim H_{
+m neutral}\ge
+ \rank P_s+\rank P_a=2,
+ \label{eq:v8-baryon-c0-two-neutral-lines-minimality}
+\end{equation}
+так что прирост на две комплексные линии минимален.
+
+\section{Нечётный Real-совместимый мост}
+
+На новом двумерном секторе определим
+\begin{equation}
+ P_s=|s_0\rangle\langle s_0|,
+ \qquad P_a=|a_0\rangle\langle a_0|,
+ \qquad E=|s_0\rangle\langle a_0|.
+ \label{eq:v8-baryon-c0-neutral-extension-matrix-unit}
+\end{equation}
+Продолжим старую градуировку противоположными знаками:
+\begin{equation}
+ \Gamma_{23}=\Gamma_{21}\oplus(+1)\oplus(-1).
+ \label{eq:v8-baryon-c0-neutral-extension-grading}
+\end{equation}
+Тогда самосопряжённые off-diagonal направления
+\begin{equation}
+ X=E+E^*,
+ \qquad Y=-i(E-E^*)
+ \label{eq:v8-baryon-c0-neutral-bridge-hermitian-pair}
+\end{equation}
+нечётны:
+\begin{equation}
+ \Gamma_{23}X+X\Gamma_{23}=0,
+ \qquad
+ \Gamma_{23}Y+Y\Gamma_{23}=0.
+ \label{eq:v8-baryon-c0-neutral-bridge-oddness}
+\end{equation}
+Все старые gauge-генераторы продолжаются нулями на $s_0,a_0$, поэтому
+\begin{equation}
+ [G_j,X]=[G_j,Y]=0
+ \qquad(j=1,\ldots,12).
+ \label{eq:v8-baryon-c0-neutral-bridge-gauge-singlet}
+\end{equation}
+При стандартном комплексном сопряжении $J_0$ новый вещественный span
+сохраняется:
+\begin{equation}
+ J_0XJ_0^{-1}=X,
+ \qquad
+ J_0YJ_0^{-1}=-Y.
+ \label{eq:v8-baryon-c0-neutral-bridge-real-closure}
+\end{equation}
+
+\section{Почему добавляются три, а не два направления}
+
+Положим $H=P_s-P_a$. Точный коммутаторный пакет равен
+\begin{equation}
+ [X,Y]=2iH,
+ \qquad [H,X]=2iY,
+ \qquad [H,Y]=-2iX.
+ \label{eq:v8-baryon-c0-neutral-su2-closure}
+\end{equation}
+Следовательно, два off-diagonal направления не замкнуты; минимальное
+самосопряжённое Lie-замыкание нового блока имеет вещественную размерность
+три.
+
+Нулевое продолжение старого кадра вместе с $X,Y,H$ даёт
+\begin{equation}
+ \mathcal F_{45}=\iota(\mathcal F_{42})\oplus
+ \operatorname{span}_{\mathbb R}\{X,Y,H\},
+ \qquad \rank\mathcal F_{45}=45.
+ \label{eq:v8-baryon-c0-extended-frame-rank}
+\end{equation}
+Следовая грамова матрица блочно-диагональна:
+\begin{equation}
+ K_{45}=K_{42}\oplus2I_3,
+ \qquad \rank K_{45}=45.
+ \label{eq:v8-baryon-c0-extended-trace-metric}
+\end{equation}
+Оба rank-one угла имеют одинаковый полный матричный trace, поэтому linking
+нормировка сохраняет $\kappa=1$ и условно
+\begin{equation}
+ r_*=4\quad\Longrightarrow\quad c_0=4.
+ \label{eq:v8-baryon-c0-neutral-extension-conditional-c0}
+\end{equation}
+
+\begin{theorem}[Минимальность расширения $21\to23$ и кадра $42\to45$]
+Для нейтрального нечётного linking bridge необходимо и достаточно добавить
+две одномерные тривиальные репрезентации противоположной градуировки.
+Самосопряжённое коммутаторное замыкание их моста добавляет ровно три
+вещественных направления и сохраняет невырожденную следовую метрику.
+\end{theorem}
+
+\begin{nogocriterion}[Новые состояния не являются выведенными частицами]
+Минимальность расширения не доказывает физическое существование $s_0,a_0$.
+До получения этих линий из конечной алгебры, Real-структуры и одного parent
+action условное значение $c_0=4$ остаётся архитектурным, а не физическим.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item новых complex endpoint states: \textbf{$2$};
+\item новый endpoint dimension: \textbf{$23$};
+\item bridge odd и gauge-neutral: \textbf{да};
+\item новых Hermitian frame directions: \textbf{$3$};
+\item новый frame rank: \textbf{$45$};
+\item trace metric rank: \textbf{$45$};
+\item физическое происхождение новых states: \textbf{открыто};
+\item следующий гейт: \textbf{fixed algebra и динамика расширенного кадра}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_minimal_neutral_endpoint_extension_gate_results.json}.

@@ -2,7 +2,7 @@
 
 > Status: working
 > Type: build
-> Updated: 2026-08-22
+> Updated: 2026-08-29
 
 The Prism workspace preserves Markdown and TeX sources but may discard ignored
 helper files such as an untracked root `Makefile`. Build the documents directly
@@ -20,6 +20,7 @@ for doc in \
   tome5_s2t_parent_architecture \
   tome6_s2t_matter_birth \
   tome7_s2t_rank_change_parent \
+  tome8_s2t_correlation_transition \
   toe_ugsm_unified_shadow_paper
 do
   latexmk -cd -pdf -interaction=nonstopmode -halt-on-error "s2t/docs/${doc}.tex"
@@ -37,6 +38,7 @@ for doc in \
   tome5_s2t_parent_architecture \
   tome6_s2t_matter_birth \
   tome7_s2t_rank_change_parent \
+  tome8_s2t_correlation_transition \
   toe_ugsm_unified_shadow_paper
 do
   latexmk -cd -C "s2t/docs/${doc}.tex"

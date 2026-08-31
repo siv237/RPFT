@@ -1,0 +1,37 @@
+{
+  "boundary": {
+    "fresh_ancilla_source_derived": false,
+    "physical_time_derived": false,
+    "riesz_principle_derived": false
+  },
+  "date": "2026-08-30",
+  "frame": {
+    "added_internal_real": 8,
+    "added_linking_real": 9,
+    "full_real": 42,
+    "gauge_real": 12,
+    "heavy_complex": 10,
+    "linking_complex": 5,
+    "linking_orbit_dimensions": [
+      1,
+      4,
+      5,
+      5
+    ],
+    "transfer_real": 30
+  },
+  "gate": "version8_full_noise_trace_frame_metric_gate",
+  "metric": {
+    "definition": "K_ab=Tr(F_a^* F_b)",
+    "dual": "R=K^-1",
+    "inverse_residual": "0",
+    "rank": 42,
+    "transfer_gauge_block": "0"
+  },
+  "next_gate": "full_42_jump_gksl_fixed_algebra_gate",
+  "registry": {
+    "certificate_sha256": "3b10712da336941baafb5ac196e24d25875c5a9a55cc299341719b4a4b039d10",
+    "gate_count": 19,
+    "obligation_count": 128
+  }
+}

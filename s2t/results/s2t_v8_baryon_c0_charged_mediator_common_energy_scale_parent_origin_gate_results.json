@@ -1,0 +1,47 @@
+{
+  "candidate_origin_audit": {
+    "binary_discriminator_coefficient_gamma": false,
+    "compacton_energy_length_product": false,
+    "dimensionless_generator_gap": false,
+    "normalized_cell_projector_gap": false,
+    "observed_mass_or_external_clock": false,
+    "satisfied": 0,
+    "spectral_cutoff_or_radius": false,
+    "tested": 6
+  },
+  "common_scale_family": {
+    "common_quantum": "E_star=E_C=7 gamma",
+    "coupling": "g=chi E_star",
+    "dimensionless_time_invariant": true,
+    "rate": "Gamma=chi^2 E_star/hbar",
+    "relative_rate_invariant": "Gamma/Omega=chi^2",
+    "scale_orbit": "(E_star,t,g,Gamma)->(lambda E_star,t/lambda,lambda g,lambda Gamma)",
+    "tick": "tau_C=hbar/E_star"
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_charged_mediator_common_energy_scale_parent_origin_gate",
+  "ledgers": {
+    "common_energy_parent_origin_satisfied": 0,
+    "common_energy_parent_origin_tested": 6,
+    "exact_scale_orbit_satisfied": 6,
+    "exact_scale_orbit_tested": 6
+  },
+  "next_gate": "version9_four_slot_dynamic_parent_program_admission_gate",
+  "projector_parent_witness": {
+    "same_unique_kernel_for_coefficients_one_and_two": true,
+    "spectral_gaps_differ_by_factor_two": true,
+    "state_selection_does_not_select_energy_unit": true
+  },
+  "scope_verdict": {
+    "gate_belongs_to_tome8_as_final_closure_test": true,
+    "positive_four_slot_parent_construction_belongs_to_tome9": true,
+    "tome8_ready_for_final_conclusion": true
+  },
+  "verdict": {
+    "absolute_time_and_rate_remain_conditional": true,
+    "common_energy_scale_derived": false,
+    "resonance_reduces_parameters_but_does_not_set_scale": true,
+    "tome8_operator_process_program_completed": true
+  }
+}

@@ -1,0 +1,107 @@
+\chapter{Родительское происхождение спектральной меры нелокального ядра}
+\label{ch:v8-baryon-nonlocal-kernel-spectral-measure-parent-origin-gate}
+
+Предыдущий гейт допустил положительный нелокальный класс, но оставил его
+спектральную меру свободной. Проверим сильнейший минимальный родитель: одно
+вещественное вспомогательное поле и один положительный кинетический полюс.
+
+Для составного трёхчастичного источника $J$ рассмотрим точную квадратичную
+форму при $z=k^2\geq0$:
+\begin{equation}
+ S_{m,g}[\phi,J]
+ =\frac12(z+m^2)\phi^2-g\phi J,
+ \qquad m^2>0,quad g^2>0.
+ \label{eq:v8-baryon-spectral-parent-action}
+\end{equation}
+Её вспомогательный гессиан положителен, а стационарная точка равна
+\begin{equation}
+ \phi_*(z)=\frac{g}{z+m^2}J.
+ \label{eq:v8-baryon-spectral-parent-stationary-field}
+\end{equation}
+Точное исключение по дополнению Шура даёт
+\begin{equation}
+ S_{m,g}[\phi_*,J]
+ =-\frac12\frac{g^2}{z+m^2}J^2.
+ \label{eq:v8-baryon-spectral-parent-schur-kernel}
+\end{equation}
+Следовательно, одно вспомогательное поле действительно реализует
+однополюсное нелокальное ядро.
+
+Чтобы его статическая проекция совпадала с $\lambda_3W_3$, достаточно
+\begin{equation}
+ g^2=\lambda_3m^2,
+ \qquad
+ f_m(z)=\frac{m^2}{z+m^2},
+ \qquad f_m(0)=1.
+ \label{eq:v8-baryon-spectral-parent-static-matching}
+\end{equation}
+Но это условие фиксирует лишь отношение $g^2/m^2$. Для любого $q>0$
+допустимо преобразование
+\begin{equation}
+ m^2\longmapsto q m^2,
+ \qquad
+ g^2\longmapsto q g^2.
+ \label{eq:v8-baryon-spectral-parent-scale-orbit}
+\end{equation}
+Оно сохраняет статический коэффициент и все внутренние симметрии:
+\begin{equation}
+ \frac{qg^2}{qm^2}=\lambda_3,
+ \qquad
+ f_{q,m}(0)=1,
+ \qquad
+ f_{q,m}(z)=\frac{qm^2}{z+qm^2}.
+ \label{eq:v8-baryon-spectral-parent-scale-invariance}
+\end{equation}
+Вне нуля формы различаются. Точные свидетели:
+\begin{equation}
+ f_{q,m}'(0)=-\frac1{qm^2},
+ \qquad
+ f_{1,m}(m^2)=\frac12,
+ \qquad
+ f_{2,m}(m^2)=\frac23.
+ \label{eq:v8-baryon-spectral-parent-scale-witnesses}
+\end{equation}
+
+Эта свобода совпадает с уже найденной орбитой геометрии базы. Для
+\begin{equation}
+ \mathcal D_r=rD_M\otimes I_{21}+\gamma^5\otimes D_F,
+ \qquad
+ [\mathcal D_r,I_4\otimes a]=\gamma^5\otimes[D_F,a],
+ \label{eq:v8-baryon-spectral-parent-base-scale-recall}
+\end{equation}
+все $42$ внутренних коммутатора независимы от $r$, тогда как внешний
+квадрат импульса масштабируется. Поэтому конечный родитель, задающий $W_3$,
+не различает членов одной спектральной орбиты.
+
+\begin{theorem}[Минимальная реализация и масштабная неединственность]
+Одно положительное вспомогательное поле реализует однополюсное нелокальное
+ядро. После фиксации его статической проекции остаётся по меньшей мере
+одномерная орбита $(m^2,g^2)\mapsto(qm^2,qg^2)$, на которой статический
+оператор неизменен, а импульсная форма различна.
+\end{theorem}
+
+\begin{nogocriterion}[Конечный родитель не выбирает спектральную меру]
+Нельзя считать массу полюса выведенной из $W_3$, его симметрий или условия
+$K(0)=\lambda_3W_3$. Уже одно-полюсный родитель сохраняет свободный масштаб,
+а прежняя конечная геометрия не выбирает масштаб оператора базы. Для
+закрытия нужны независимый якорь геометрии базы либо новый спектральный
+закон, различающий точки орбиты.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item поле вычислений: \textbf{$\mathbb Q(z,q,m^2,\lambda_3)$};
+ \item чисел с плавающей точкой: \textbf{$0$};
+ \item вспомогательных полей: \textbf{$1$};
+ \item положительный гессиан поля: \textbf{да};
+ \item дополнение Шура: \textbf{точное};
+ \item статическое условие: \textbf{$g^2/m^2=\lambda_3$};
+ \item размерность остаточной орбиты: \textbf{не меньше $1$};
+ \item спектральная масса выбрана: \textbf{нет};
+ \item родительское происхождение меры: \textbf{NO-GO};
+ \item следующий гейт: \textbf{аудит кандидатов якоря спектрального масштаба}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_nonlocal_kernel_spectral_measure_parent_origin_gate_results.json}.

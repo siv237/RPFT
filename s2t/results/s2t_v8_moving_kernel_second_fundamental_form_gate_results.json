@@ -1,0 +1,93 @@
+{
+  "full_rank_stratum": {
+    "field_rank": 3,
+    "field_shape": [
+      3,
+      4
+    ],
+    "kernel_projector_formula": "P=I-X^*(XX^*)^{-1}X",
+    "kernel_projector_rank": 1,
+    "projector_residual": 0.0,
+    "self_adjoint_residual": 0.0
+  },
+  "gate": "version8_moving_kernel_second_fundamental_form_gate",
+  "physical_factor_test": {
+    "commutator_with_full_edge_algebra_residual": 4.677903070820552e-16,
+    "edge_factor_dimension": 11,
+    "extension": "B tensor I_edge",
+    "fixes_relative_mass_metric": false,
+    "mixes_edge_and_endpoint_carriers": false,
+    "mixes_kernel_and_affine_complement": true
+  },
+  "rank_change_stress_test": {
+    "bounded_field_derivative": true,
+    "kernel_rank_at_drop": 2,
+    "kernel_rank_before_drop": 1,
+    "kinetic_density_scaling": "1/epsilon^2",
+    "path": "X_epsilon(x)=diag_rows(e1,e2,epsilon*(cos(x/epsilon)e3+sin(x/epsilon)e4))",
+    "projector_jump_operator_norm": 1.0,
+    "rows": [
+      {
+        "epsilon": 1.0,
+        "epsilon_times_second_fundamental_norm": 0.9999999999993335,
+        "field_derivative_norm": 0.9999999999998334,
+        "kinetic_density": 0.9999999999986671,
+        "minimum_singular_value": 1.0,
+        "second_fundamental_norm": 0.9999999999993335
+      },
+      {
+        "epsilon": 0.5,
+        "epsilon_times_second_fundamental_norm": 0.9999999999993335,
+        "field_derivative_norm": 0.9999999999998334,
+        "kinetic_density": 3.9999999999946683,
+        "minimum_singular_value": 0.5,
+        "second_fundamental_norm": 1.999999999998667
+      },
+      {
+        "epsilon": 0.25,
+        "epsilon_times_second_fundamental_norm": 0.9999999999993335,
+        "field_derivative_norm": 0.9999999999998334,
+        "kinetic_density": 15.999999999978673,
+        "minimum_singular_value": 0.25,
+        "second_fundamental_norm": 3.999999999997334
+      },
+      {
+        "epsilon": 0.125,
+        "epsilon_times_second_fundamental_norm": 0.9999999999993335,
+        "field_derivative_norm": 0.9999999999998334,
+        "kinetic_density": 63.99999999991469,
+        "minimum_singular_value": 0.125,
+        "second_fundamental_norm": 7.999999999994668
+      },
+      {
+        "epsilon": 0.0625,
+        "epsilon_times_second_fundamental_norm": 0.9999999999993335,
+        "field_derivative_norm": 0.9999999999998334,
+        "kinetic_density": 255.99999999965877,
+        "minimum_singular_value": 0.0625,
+        "second_fundamental_norm": 15.999999999989337
+      }
+    ],
+    "second_fundamental_norm_scaling": "1/epsilon",
+    "universal_continuous_finite_energy_extension_across_rank_drop": false
+  },
+  "second_fundamental_form": {
+    "defines_kinetic_not_static_potential_data": true,
+    "diagonal_tangent_residual": 5.124904993799416e-10,
+    "formula": "B=(I-P)(nabla P)P",
+    "maximum_basis_covariance_residual": 6.756055666704932e-11,
+    "maximum_possible_rank_for_kernel_line": 1,
+    "rank_for_one_tangent_direction": 1,
+    "tangent_off_diagonal_residual": 5.124904993798685e-10,
+    "vanishes_for_constant_field": true
+  },
+  "verdict": {
+    "canonical_moving_kernel_geometry_obtained": true,
+    "missing_intersector_connector_obtained": false,
+    "new_arbitrary_identification_required": false,
+    "next_step": "freeze_internal_tome8_search_unless_a_new_nonfactorized_operator_or_rank_regularized_projector_is_supplied",
+    "regular_rank_changing_parent_obtained": false,
+    "static_family_selector_obtained": false,
+    "status": "canonical_grassmannian_kinetic_geometry_but_factorized_and_rank_drop_singular"
+  }
+}

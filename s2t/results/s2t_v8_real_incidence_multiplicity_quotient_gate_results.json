@@ -1,0 +1,111 @@
+{
+  "date": "2026-08-29",
+  "degenerate_four_plus_four_block": {
+    "commutant_smallest_singular_values": [
+      0.9999999999999993,
+      0.9999999999999992,
+      1.2246400171631583e-15,
+      1.1272285019425355e-15,
+      1.060172123865311e-15,
+      1.0016006434525492e-15,
+      8.403133724455526e-16,
+      7.853401629693157e-16,
+      6.228085204418835e-16,
+      5.375481326418266e-16,
+      5.092712316963349e-16,
+      3.529526222261544e-16
+    ],
+    "complex_dimension": 8,
+    "gauge_commuting_copy_mixing_exists": true,
+    "heavy_complex_rank": 4,
+    "incidence_complex_rank": 4,
+    "mixing_generator_gauge_residual": 1.0273741308925663e-15,
+    "mixing_generator_norm_before_normalization": 0.9313268695840682,
+    "restricted_gauge_commutant_dimension_complex": 10
+  },
+  "gate": "version8_real_incidence_multiplicity_quotient_gate",
+  "orientation_type": {
+    "oriented_transfer_complex_dimension": 15,
+    "oriented_transfer_shape": [
+      10,
+      11
+    ],
+    "real_doubled_transfer_complex_dimension": 30,
+    "real_doubling_reduces_physical_real_dimension": false,
+    "real_fixed_selfadjoint_dimension_real": 30,
+    "real_is_internal_endomorphism_of_oriented_half": false,
+    "real_maps_oriented_half_to_opposite_half": true,
+    "real_partner_shape": [
+      11,
+      10
+    ]
+  },
+  "real_compatible_projector_orbit": {
+    "all_doubled_projectors_are_real_compatible": true,
+    "all_projectors_are_gauge_invariant": true,
+    "all_projectors_have_complex_rank_four": true,
+    "projector_is_unique": false,
+    "real_fixed_rank_for_each_projector": 8,
+    "rows": [
+      {
+        "distance_from_incidence_projector": 0.0,
+        "incidence_overlap": 3.9999999999999973,
+        "maximum_gauge_commutator_residual": 1.0407389650865233e-15,
+        "projector_complex_rank": 4,
+        "real_exchange_compatibility_residual": 0.0,
+        "real_fixed_projector_rank": 8,
+        "theta": 0.0
+      },
+      {
+        "distance_from_incidence_projector": 0.19966683329365628,
+        "incidence_overlap": 3.980066577841239,
+        "maximum_gauge_commutator_residual": 1.0575143257992377e-15,
+        "projector_complex_rank": 4,
+        "real_exchange_compatibility_residual": 0.0,
+        "real_fixed_projector_rank": 8,
+        "theta": 0.2
+      },
+      {
+        "distance_from_incidence_projector": 0.4948079185090459,
+        "incidence_overlap": 3.87758256189037,
+        "maximum_gauge_commutator_residual": 1.1213072146018055e-15,
+        "projector_complex_rank": 4,
+        "real_exchange_compatibility_residual": 0.0,
+        "real_fixed_projector_rank": 8,
+        "theta": 0.5
+      },
+      {
+        "distance_from_incidence_projector": 0.958851077208406,
+        "incidence_overlap": 3.5403023058681375,
+        "maximum_gauge_commutator_residual": 1.3168399481933586e-15,
+        "projector_complex_rank": 4,
+        "real_exchange_compatibility_residual": 0.0,
+        "real_fixed_projector_rank": 8,
+        "theta": 1.0
+      },
+      {
+        "distance_from_incidence_projector": 1.3632775200466682,
+        "incidence_overlap": 3.0707372016677006,
+        "maximum_gauge_commutator_residual": 1.4874287792090658e-15,
+        "projector_complex_rank": 4,
+        "real_exchange_compatibility_residual": 0.0,
+        "real_fixed_projector_rank": 8,
+        "theta": 1.5
+      }
+    ]
+  },
+  "real_half_trace": {
+    "derives_incidence_heavy_mass_ratio": false,
+    "identity": "0.5 Tr_doubled diag(X,conj X)^*diag(X,conj X)=Tr X*X",
+    "residual": 0.0,
+    "weights_incidence_and_heavy_uniformly": true
+  },
+  "verdict": {
+    "full_parent_action_obtained": false,
+    "next_gate": "version8_bimodule_multiplicity_separator_gate",
+    "real_fixed_quotient_selects_incidence_copy": false,
+    "real_half_trace_selects_incidence_copy": false,
+    "real_orientation_doubling_splits_four_plus_four": false,
+    "real_structure_alone_derives_edge_hodge_metric": false
+  }
+}

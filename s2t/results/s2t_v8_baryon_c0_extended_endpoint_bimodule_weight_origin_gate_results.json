@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-30",
+  "floating_point_values": 0,
+  "full_hom_closure": {
+    "connector_metric": "(2/5) I3",
+    "corner_count": 5,
+    "edge_count": 4,
+    "full_frame_rank": 51,
+    "generated_algebra": "M5(C)",
+    "generated_algebra_dimension": 25,
+    "graph_connected": true,
+    "graph_laplacian_rank": 4,
+    "new_real_quadratures": 6,
+    "unique_normalized_trace": true
+  },
+  "gate": "version8_baryon_c0_extended_endpoint_bimodule_weight_origin_gate",
+  "local_endpoint_algebra": {
+    "before_old_new_connectors": "C^3 direct_sum M2(C)",
+    "center_dimension": 4,
+    "connector_coordinate_projectors": 3,
+    "off_diagonal_multiplicity_mixing_removed": true
+  },
+  "next_gate": "version8_baryon_c0_full_multiplicity_frame_single_map_compatibility_gate",
+  "trace_simplex": {
+    "anisotropic_weight_selected": false,
+    "connector_metric": "diag(p0+q,p1+q,p2+q)",
+    "free_dimension": 3,
+    "normalization": "p0+p1+p2+2q=1",
+    "positive_parameters": [
+      "p0",
+      "p1",
+      "p2",
+      "q"
+    ],
+    "witness_A": [
+      "1/10",
+      "1/5",
+      "1/2",
+      "1/10"
+    ],
+    "witness_B": [
+      "1/2",
+      "1/10",
+      "1/5",
+      "1/10"
+    ],
+    "witness_minimal_branches_differ": true
+  },
+  "vectorlike_constraint": {
+    "X_branch_degeneracy": 2,
+    "condition": "p0=p2=pX",
+    "free_relative_weight_remains": true,
+    "metric": "diag(pX+q,pE+q,pX+q)"
+  },
+  "verdict": {
+    "absolute_rate_selected": false,
+    "bimodule_labels_diagonalize_multiplicity": true,
+    "full_multiplicity_frame_canonical_after_M5_closure": true,
+    "local_trace_selects_anisotropic_weights": false,
+    "single_c0_map_selected": false
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_architecture_gate",
+  "ledgers": {
+    "autonomous_irreversible_origin_satisfied": 0,
+    "autonomous_irreversible_origin_tested": 6,
+    "gauge_energy_real_completion_satisfied": 6,
+    "gauge_energy_real_completion_tested": 6,
+    "minimal_complex_dilation_satisfied": 8,
+    "minimal_complex_dilation_tested": 8
+  },
+  "minimal_complex_mediator": {
+    "complex_dimension": 2,
+    "environment_basis": [
+      "neutral_vacuum",
+      "charge_plus_one_excitation"
+    ],
+    "environment_hamiltonian": "diag(0,7 gamma)",
+    "environment_hypercharge": "diag(0,1)",
+    "free_energy_commutator_zero": true,
+    "interaction": "g(L_down tensor b_+ + L_up tensor b_+^*)",
+    "resonant_interaction_rank": 2,
+    "resonant_interaction_spectrum": [
+      "-1",
+      "0",
+      "0",
+      "1"
+    ],
+    "system_hamiltonian": "diag(7 gamma,0)",
+    "total_charge_commutator_zero": true
+  },
+  "missing_parent_data": [
+    "new_family_singlet_charged_environment_pair",
+    "environment_gap_7_gamma",
+    "neutral_vacuum_state",
+    "coupling_constant_g",
+    "fresh_ancilla_chain_or_reset_mechanism",
+    "physical_clock_to_collision_rate_anchor"
+  ],
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_existing_carrier_admission_gate",
+  "one_collision_channel": {
+    "amplitude_damping_parameter": "sin(theta)^2",
+    "exact_test_parameter": "1/4",
+    "exact_test_theta": "pi/6",
+    "kraus_operators": [
+      "P_d+cos(theta)P_u",
+      "-i sin(theta)L_down"
+    ],
+    "kraus_rank_for_open_interval": 2,
+    "minimal_complex_environment_dimension": 2,
+    "trace_preserving": true
+  },
+  "real_completion": {
+    "charges": [
+      0,
+      1,
+      -1
+    ],
+    "complex_two_level_environment_is_real_closed": false,
+    "family_singlet_assignment_is_new_data": true,
+    "minimal_real_compatible_complex_dimension": 3,
+    "real_structure_swaps_charged_lines": true
+  },
+  "semigroup_boundary": {
+    "coherent_double_time_parameter": "3/4",
+    "composition_defect": "5/16",
+    "fresh_ancilla_chain_required": true,
+    "full_transfer_angle": "pi/2",
+    "revival_angle": "pi",
+    "same_channel_twice_parameter_at_pi_over_6": "7/16",
+    "single_ancilla_is_periodic": true,
+    "single_finite_ancilla_is_not_irreversible_semigroup": true,
+    "weak_collision_scaling_required": "theta_h=g sqrt(h)"
+  },
+  "verdict": {
+    "conditional_charged_mediator_architecture_complete": true,
+    "irreversible_parent_inherited": false,
+    "minimal_complex_dilation_proved": true,
+    "minimal_real_completion_proved": true,
+    "one_collision_amplitude_damping_exact": true
+  }
+}

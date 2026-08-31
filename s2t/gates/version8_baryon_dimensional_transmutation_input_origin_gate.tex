@@ -1,0 +1,102 @@
+\chapter{Происхождение входов размерностной трансмутации барионного ядра}
+\label{ch:v8-baryon-dimensional-transmutation-input-origin-gate}
+
+Предыдущий гейт оставил три входа квантового селектора: коэффициент $B$,
+абсолютную шкалу $\Lambda_{\rm DT}$ и внутреннюю карту $c_0$. Проверим их
+не с нуля, а по уже закрытым вычислениям ранних уровней программы.
+
+\section{Что действительно вычислено для коэффициента B}
+
+Product heat-kernel нормировка исправила конечный скалярно-фермионный вклад:
+\begin{equation}
+ B_{\rm fin}=\frac{40}{64\pi^2}=\frac5{8\pi^2}>0.
+ \label{eq:v8-baryon-transmutation-finite-b}
+\end{equation}
+Общий $a_4$-след затем зафиксировал $g^2=3/8$ и добавил к числителю
+relative-$U(1)$ BV-блока число $27$. Поэтому строгий четырёхмерный
+zero-mode сертификат равен
+\begin{equation}
+ B_0=\frac{40+27}{64\pi^2}=\frac{67}{64\pi^2}>0.
+ \label{eq:v8-baryon-transmutation-zero-mode-b}
+\end{equation}
+Это усиливает статус предыдущего гейта: положительный $B$ не является
+произвольной гипотезой внутри замороженного zero-mode hidden-sector блока.
+
+Однако полный коэффициент до выбора размерностной архитектуры имеет вид
+\begin{equation}
+ B_{\rm full}=\frac{67+c_\sigma^2+\Delta N_{\rm KK}}{64\pi^2}.
+ \label{eq:v8-baryon-transmutation-full-b}
+\end{equation}
+Проект не содержит единого zero-mode-сохраняющего внутреннего подъёма,
+который вычислял бы $c_\sigma$ и $\Delta N_{\rm KK}$. Поэтому
+$B_0>0$ закрыт, а знак $B_{\rm full}$ не переносится на невыбранную
+компактификацию.
+
+\section{Что действительно вычислено для RG}
+
+Для выведенного relative-$U(1)$ состава ранний аудит получил
+\begin{equation}
+ b=\frac23\sum_{\rm Weyl}q_f^2
+   +\frac13\sum_{\rm scalar}q_s^2=2,
+ \qquad
+ \beta_g=\frac{2}{16\pi^2}g^3+O(g^5).
+ \label{eq:v8-baryon-transmutation-beta}
+\end{equation}
+При спектральном условии $g^2(\mu_{\rm spec})=3/8$ это фиксирует отношение
+\begin{equation}
+ \log\frac{\Lambda_L}{\mu_{\rm spec}}=\frac{32\pi^2}{3},
+ \qquad
+ \frac{\Lambda_L}{\mu_{\rm spec}}
+ =\exp\!\left(\frac{32\pi^2}{3}\right).
+ \label{eq:v8-baryon-transmutation-landau-ratio}
+\end{equation}
+Но автономное RG-уравнение определяет лишь
+\begin{equation}
+ \Lambda_{\rm DT}=\mu
+ \exp\!\left(-\int^{g(\mu)}\frac{dg}{\beta(g)}\right),
+ \qquad
+ (\mu,\Lambda_{\rm DT})\mapsto(s\mu,s\Lambda_{\rm DT}),
+ \label{eq:v8-baryon-transmutation-scale-orbit}
+\end{equation}
+и потому оставляет одну размерную интеграционную константу.
+
+\section{Внутренняя карта c0}
+
+Ни finite trace, ни RG-модуль не задают морфизм из hidden-sector
+дилатонного вакуума в отношение массы и масштаба вспомогательного поля
+барионного шеститочечного ядра. Строгий реестр трёх полных требований равен
+\begin{equation}
+ \begin{gathered}
+ B_{\rm full}\hbox{ вычислен и положителен}:0,\\
+ \Lambda_{\rm DT}\hbox{ выбрана абсолютно}:0,\\
+ c_0\hbox{ выведено внутренней картой}:0.
+ \end{gathered}
+ \label{eq:v8-baryon-transmutation-input-ledger}
+\end{equation}
+
+\begin{theorem}[Частичное наследование раннего уровня]
+Ранние вычисления строго поставляют положительный zero-mode коэффициент
+$B_0=67/(64\pi^2)$ и однопетлевой коэффициент $b=2$. Они не поставляют
+полный KK-коэффициент, абсолютную шкалу RG-траектории или карту $c_0$ в
+барионное ядро. Поэтому ни один из трёх полных входов селектора пока не
+закрыт, хотя два его безразмерных подблока уже вычислены.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет повторного переименования]
+Нельзя называть $B_0$ полным $B_{\rm full}$, отношение
+$\Lambda_L/\mu_{\rm spec}$ абсолютной массой или произвольный уровень
+момента картой $c_0$. Каждый такой переход требует отдельного типизированного
+родительского морфизма.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item $B_0=67/(64\pi^2)>0$: \textbf{строго};
+\item $B_{\rm full}$ из полной архитектуры: \textbf{не вычислен};
+\item $b=2$ и RG-отношение шкал: \textbf{строго};
+\item абсолютная $\Lambda_{\rm DT}$: \textbf{не выбрана};
+\item внутренняя карта $c_0$: \textbf{не построена};
+\item следующий гейт: \textbf{поиск типизированного морфизма для $c_0$}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_dimensional_transmutation_input_origin_gate_results.json}.

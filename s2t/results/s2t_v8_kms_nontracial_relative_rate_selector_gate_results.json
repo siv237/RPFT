@@ -1,0 +1,506 @@
+{
+  "bohr_mode_test": {
+    "central_modular_hamiltonian": "H_Delta=0 on C11 and Delta on C10",
+    "oriented_halves_have_opposite_Bohr_frequencies": true,
+    "self_adjoint_transfer_jump_is_nonzero_Bohr_eigenoperator": false,
+    "tests": [
+      {
+        "modular_gap_beta_Delta": -4.0,
+        "oriented_forward_mode_residual": 0.0,
+        "oriented_reverse_mode_residual": 0.0,
+        "self_adjoint_jump_single_Bohr_mode_residual": 4.0
+      },
+      {
+        "modular_gap_beta_Delta": -2.0,
+        "oriented_forward_mode_residual": 0.0,
+        "oriented_reverse_mode_residual": 0.0,
+        "self_adjoint_jump_single_Bohr_mode_residual": 2.0
+      },
+      {
+        "modular_gap_beta_Delta": -1.0,
+        "oriented_forward_mode_residual": 0.0,
+        "oriented_reverse_mode_residual": 0.0,
+        "self_adjoint_jump_single_Bohr_mode_residual": 1.0
+      },
+      {
+        "modular_gap_beta_Delta": 0.0,
+        "oriented_forward_mode_residual": 0.0,
+        "oriented_reverse_mode_residual": 0.0,
+        "self_adjoint_jump_single_Bohr_mode_residual": 0.0
+      },
+      {
+        "modular_gap_beta_Delta": 1.0,
+        "oriented_forward_mode_residual": 0.0,
+        "oriented_reverse_mode_residual": 0.0,
+        "self_adjoint_jump_single_Bohr_mode_residual": 1.0
+      },
+      {
+        "modular_gap_beta_Delta": 2.0,
+        "oriented_forward_mode_residual": 0.0,
+        "oriented_reverse_mode_residual": 0.0,
+        "self_adjoint_jump_single_Bohr_mode_residual": 2.0
+      },
+      {
+        "modular_gap_beta_Delta": 4.0,
+        "oriented_forward_mode_residual": 0.0,
+        "oriented_reverse_mode_residual": 0.0,
+        "self_adjoint_jump_single_Bohr_mode_residual": 4.0
+      }
+    ],
+    "transfer_jump_count": 13
+  },
+  "central_nontracial_state_test": {
+    "best_KMS_symmetric_row": {
+      "KMS_symmetry_residual": 0.0,
+      "stationarity_residual": 4.3885418357208765e-17,
+      "target_to_source_density_ratio": 1.0
+    },
+    "best_stationary_row": {
+      "KMS_symmetry_residual": 0.0,
+      "stationarity_residual": 4.3885418357208765e-17,
+      "target_to_source_density_ratio": 1.0
+    },
+    "only_passing_ratio": 1.0,
+    "only_passing_state": "I21/21",
+    "ratio": "r=b/a",
+    "sample_rows": [
+      {
+        "KMS_symmetry_residual": 1.7857392978927429,
+        "stationarity_residual": 1.2528561355526782,
+        "target_to_source_density_ratio": 0.0001
+      },
+      {
+        "KMS_symmetry_residual": 1.7856255982243001,
+        "stationarity_residual": 1.252776365046767,
+        "target_to_source_density_ratio": 0.0001333521432163324
+      },
+      {
+        "KMS_symmetry_residual": 1.7854739880054553,
+        "stationarity_residual": 1.252669996892627,
+        "target_to_source_density_ratio": 0.00017782794100389227
+      },
+      {
+        "KMS_symmetry_residual": 1.7852718316004772,
+        "stationarity_residual": 1.2525281660595273,
+        "target_to_source_density_ratio": 0.0002371373705661655
+      },
+      {
+        "KMS_symmetry_residual": 1.785002285610052,
+        "stationarity_residual": 1.252339055393532,
+        "target_to_source_density_ratio": 0.00031622776601683794
+      },
+      {
+        "KMS_symmetry_residual": 1.784642900539866,
+        "stationarity_residual": 1.2520869145627072,
+        "target_to_source_density_ratio": 0.00042169650342858224
+      },
+      {
+        "KMS_symmetry_residual": 1.7841637600182723,
+        "stationarity_residual": 1.2517507545515691,
+        "target_to_source_density_ratio": 0.0005623413251903491
+      },
+      {
+        "KMS_symmetry_residual": 1.7835250063702068,
+        "stationarity_residual": 1.251302611629458,
+        "target_to_source_density_ratio": 0.0007498942093324559
+      },
+      {
+        "KMS_symmetry_residual": 1.7826735532864773,
+        "stationarity_residual": 1.2507052409934722,
+        "target_to_source_density_ratio": 0.001
+      },
+      {
+        "KMS_symmetry_residual": 1.781538724047231,
+        "stationarity_residual": 1.2499090565913753,
+        "target_to_source_density_ratio": 0.001333521432163324
+      },
+      {
+        "KMS_symmetry_residual": 1.7800264739204423,
+        "stationarity_residual": 1.248848077616408,
+        "target_to_source_density_ratio": 0.0017782794100389228
+      },
+      {
+        "KMS_symmetry_residual": 1.7780117545558172,
+        "stationarity_residual": 1.247434571445397,
+        "target_to_source_density_ratio": 0.0023713737056616554
+      },
+      {
+        "KMS_symmetry_residual": 1.7753284537303224,
+        "stationarity_residual": 1.245551995468757,
+        "target_to_source_density_ratio": 0.0031622776601683794
+      },
+      {
+        "KMS_symmetry_residual": 1.771756195249537,
+        "stationarity_residual": 1.2430457360384404,
+        "target_to_source_density_ratio": 0.004216965034285822
+      },
+      {
+        "KMS_symmetry_residual": 1.7670031160401003,
+        "stationarity_residual": 1.2397110250549623,
+        "target_to_source_density_ratio": 0.005623413251903491
+      },
+      {
+        "KMS_symmetry_residual": 1.7606835661456366,
+        "stationarity_residual": 1.2352772945162702,
+        "target_to_source_density_ratio": 0.007498942093324558
+      },
+      {
+        "KMS_symmetry_residual": 1.752289538499515,
+        "stationarity_residual": 1.229388131943182,
+        "target_to_source_density_ratio": 0.01
+      },
+      {
+        "KMS_symmetry_residual": 1.741154601364595,
+        "stationarity_residual": 1.2215759757538995,
+        "target_to_source_density_ratio": 0.01333521432163324
+      },
+      {
+        "KMS_symmetry_residual": 1.7264093110390755,
+        "stationarity_residual": 1.2112308332817412,
+        "target_to_source_density_ratio": 0.01778279410038923
+      },
+      {
+        "KMS_symmetry_residual": 1.7069277576151982,
+        "stationarity_residual": 1.1975627778348992,
+        "target_to_source_density_ratio": 0.023713737056616554
+      },
+      {
+        "KMS_symmetry_residual": 1.6812664180234052,
+        "stationarity_residual": 1.179559048627609,
+        "target_to_source_density_ratio": 0.03162277660168379
+      },
+      {
+        "KMS_symmetry_residual": 1.6475994196456152,
+        "stationarity_residual": 1.155938632403902,
+        "target_to_source_density_ratio": 0.042169650342858224
+      },
+      {
+        "KMS_symmetry_residual": 1.603659395386231,
+        "stationarity_residual": 1.1251107679700139,
+        "target_to_source_density_ratio": 0.056234132519034905
+      },
+      {
+        "KMS_symmetry_residual": 1.5467011041519418,
+        "stationarity_residual": 1.085149422701035,
+        "target_to_source_density_ratio": 0.07498942093324558
+      },
+      {
+        "KMS_symmetry_residual": 1.473516202829137,
+        "stationarity_residual": 1.0338036564067665,
+        "target_to_source_density_ratio": 0.1
+      },
+      {
+        "KMS_symmetry_residual": 1.3805407386600572,
+        "stationarity_residual": 0.9685730368658582,
+        "target_to_source_density_ratio": 0.1333521432163324
+      },
+      {
+        "KMS_symmetry_residual": 1.264107434779665,
+        "stationarity_residual": 0.886884640736951,
+        "target_to_source_density_ratio": 0.1778279410038923
+      },
+      {
+        "KMS_symmetry_residual": 1.1208925073795393,
+        "stationarity_residual": 0.7864065358379259,
+        "target_to_source_density_ratio": 0.23713737056616552
+      },
+      {
+        "KMS_symmetry_residual": 0.9485757305386116,
+        "stationarity_residual": 0.665510875772329,
+        "target_to_source_density_ratio": 0.31622776601683794
+      },
+      {
+        "KMS_symmetry_residual": 0.746657493072805,
+        "stationarity_residual": 0.5238471385249379,
+        "target_to_source_density_ratio": 0.4216965034285822
+      },
+      {
+        "KMS_symmetry_residual": 0.5172601148899865,
+        "stationarity_residual": 0.3629043216898096,
+        "target_to_source_density_ratio": 0.5623413251903491
+      },
+      {
+        "KMS_symmetry_residual": 0.26562595353529744,
+        "stationarity_residual": 0.18636040884659777,
+        "target_to_source_density_ratio": 0.7498942093324558
+      },
+      {
+        "KMS_symmetry_residual": 0.0,
+        "stationarity_residual": 4.3885418357208765e-17,
+        "target_to_source_density_ratio": 1.0
+      },
+      {
+        "KMS_symmetry_residual": 0.26926643712717946,
+        "stationarity_residual": 0.18891453430592461,
+        "target_to_source_density_ratio": 1.333521432163324
+      },
+      {
+        "KMS_symmetry_residual": 0.5312466964445477,
+        "stationarity_residual": 0.37271716197210536,
+        "target_to_source_density_ratio": 1.7782794100389228
+      },
+      {
+        "KMS_symmetry_residual": 0.7761543591539556,
+        "stationarity_residual": 0.5445418332617085,
+        "target_to_source_density_ratio": 2.371373705661655
+      },
+      {
+        "KMS_symmetry_residual": 0.9966975159935856,
+        "stationarity_residual": 0.6992726204078193,
+        "target_to_source_density_ratio": 3.1622776601683795
+      },
+      {
+        "KMS_symmetry_residual": 1.1887107454191146,
+        "stationarity_residual": 0.833987106938376,
+        "target_to_source_density_ratio": 4.216965034285822
+      },
+      {
+        "KMS_symmetry_residual": 1.3510348754532753,
+        "stationarity_residual": 0.9478720298392347,
+        "target_to_source_density_ratio": 5.62341325190349
+      },
+      {
+        "KMS_symmetry_residual": 1.4848797866575114,
+        "stationarity_residual": 1.0417762287402792,
+        "target_to_source_density_ratio": 7.498942093324558
+      },
+      {
+        "KMS_symmetry_residual": 1.5929904895450129,
+        "stationarity_residual": 1.1176255744938017,
+        "target_to_source_density_ratio": 10.0
+      },
+      {
+        "KMS_symmetry_residual": 1.6788701817016143,
+        "stationarity_residual": 1.1778778741238427,
+        "target_to_source_density_ratio": 13.33521432163324
+      },
+      {
+        "KMS_symmetry_residual": 1.7461906611344862,
+        "stationarity_residual": 1.2251092229581046,
+        "target_to_source_density_ratio": 17.78279410038923
+      },
+      {
+        "KMS_symmetry_residual": 1.7984156385290422,
+        "stationarity_residual": 1.261749724421604,
+        "target_to_source_density_ratio": 23.71373705661655
+      },
+      {
+        "KMS_symmetry_residual": 1.83860345134959,
+        "stationarity_residual": 1.2899450762997209,
+        "target_to_source_density_ratio": 31.622776601683793
+      },
+      {
+        "KMS_symmetry_residual": 1.8693363243235155,
+        "stationarity_residual": 1.3115069406289543,
+        "target_to_source_density_ratio": 42.169650342858226
+      },
+      {
+        "KMS_symmetry_residual": 1.8927268543216387,
+        "stationarity_residual": 1.327917493421604,
+        "target_to_source_density_ratio": 56.23413251903491
+      },
+      {
+        "KMS_symmetry_residual": 1.9104646304463573,
+        "stationarity_residual": 1.3403621328351716,
+        "target_to_source_density_ratio": 74.98942093324558
+      },
+      {
+        "KMS_symmetry_residual": 1.923878721794719,
+        "stationarity_residual": 1.3497733199376178,
+        "target_to_source_density_ratio": 100.0
+      },
+      {
+        "KMS_symmetry_residual": 1.934001921607034,
+        "stationarity_residual": 1.356875651734455,
+        "target_to_source_density_ratio": 133.3521432163324
+      },
+      {
+        "KMS_symmetry_residual": 1.9416295723687045,
+        "stationarity_residual": 1.362227132248933,
+        "target_to_source_density_ratio": 177.82794100389228
+      },
+      {
+        "KMS_symmetry_residual": 1.9473700581108822,
+        "stationarity_residual": 1.3662545973955127,
+        "target_to_source_density_ratio": 237.13737056616552
+      },
+      {
+        "KMS_symmetry_residual": 1.951686428779325,
+        "stationarity_residual": 1.3692829182045243,
+        "target_to_source_density_ratio": 316.2277660168379
+      },
+      {
+        "KMS_symmetry_residual": 1.954929804286779,
+        "stationarity_residual": 1.371558436758218,
+        "target_to_source_density_ratio": 421.6965034285822
+      },
+      {
+        "KMS_symmetry_residual": 1.9573656883287651,
+        "stationarity_residual": 1.3732674276904877,
+        "target_to_source_density_ratio": 562.341325190349
+      },
+      {
+        "KMS_symmetry_residual": 1.9591944259901841,
+        "stationarity_residual": 1.3745504510310886,
+        "target_to_source_density_ratio": 749.8942093324558
+      },
+      {
+        "KMS_symmetry_residual": 1.9605669585140464,
+        "stationarity_residual": 1.3755134055876668,
+        "target_to_source_density_ratio": 1000.0
+      },
+      {
+        "KMS_symmetry_residual": 1.9615968729320432,
+        "stationarity_residual": 1.376235982841359,
+        "target_to_source_density_ratio": 1333.521432163324
+      },
+      {
+        "KMS_symmetry_residual": 1.9623695713774554,
+        "stationarity_residual": 1.376778100041451,
+        "target_to_source_density_ratio": 1778.2794100389228
+      },
+      {
+        "KMS_symmetry_residual": 1.9629492225589624,
+        "stationarity_residual": 1.3771847772871648,
+        "target_to_source_density_ratio": 2371.373705661655
+      },
+      {
+        "KMS_symmetry_residual": 1.963384017260398,
+        "stationarity_residual": 1.3774898247316838,
+        "target_to_source_density_ratio": 3162.2776601683795
+      },
+      {
+        "KMS_symmetry_residual": 1.9637101334650509,
+        "stationarity_residual": 1.3777186244721533,
+        "target_to_source_density_ratio": 4216.965034285822
+      },
+      {
+        "KMS_symmetry_residual": 1.9639547233418582,
+        "stationarity_residual": 1.3778902261881563,
+        "target_to_source_density_ratio": 5623.413251903491
+      },
+      {
+        "KMS_symmetry_residual": 1.9641381608105852,
+        "stationarity_residual": 1.3780189240100928,
+        "target_to_source_density_ratio": 7498.942093324558
+      },
+      {
+        "KMS_symmetry_residual": 1.964275731281365,
+        "stationarity_residual": 1.3781154420228785,
+        "target_to_source_density_ratio": 10000.0
+      }
+    ],
+    "samples": 65,
+    "scan_range": "1e-4 through 1e4",
+    "state": "rho=a I11 direct_sum b I10, 11a+10b=1"
+  },
+  "date": "2026-08-28",
+  "directed_KMS_extension": {
+    "formula": "gamma_up/gamma_down=exp(-beta Delta)=b/a",
+    "modular_gap_derived_by_current_parent": false,
+    "nontracial_states_admitted_after_directed_split": true,
+    "relative_rate_ratio_uniquely_selected": false,
+    "remaining_free_data": [
+      "the modular gap beta Delta",
+      "one base intensity for each transfer family",
+      "the gauge-sector intensities",
+      "the overall physical time scale"
+    ],
+    "sample_family": [
+      {
+        "beta_Delta": -6.0,
+        "detailed_balance_flux_residual": 0.0,
+        "source_density_per_state": 0.00024720119212427803,
+        "target_density_per_state": 0.09972807868866329,
+        "target_to_source_density_ratio": 403.4287934927351,
+        "upward_to_downward_rate_ratio": 403.4287934927351
+      },
+      {
+        "beta_Delta": -3.0,
+        "detailed_balance_flux_residual": 0.0,
+        "source_density_per_state": 0.00472020135069362,
+        "target_density_per_state": 0.09480777851423701,
+        "target_to_source_density_ratio": 20.085536923187668,
+        "upward_to_downward_rate_ratio": 20.085536923187668
+      },
+      {
+        "beta_Delta": -1.0,
+        "detailed_balance_flux_residual": 0.0,
+        "source_density_per_state": 0.026189790196905732,
+        "target_density_per_state": 0.07119123078340368,
+        "target_to_source_density_ratio": 2.718281828459045,
+        "upward_to_downward_rate_ratio": 2.718281828459045
+      },
+      {
+        "beta_Delta": 0.0,
+        "detailed_balance_flux_residual": 0.0,
+        "source_density_per_state": 0.047619047619047616,
+        "target_density_per_state": 0.047619047619047616,
+        "target_to_source_density_ratio": 1.0,
+        "upward_to_downward_rate_ratio": 1.0
+      },
+      {
+        "beta_Delta": 1.0,
+        "detailed_balance_flux_residual": 0.0,
+        "source_density_per_state": 0.06812548578253465,
+        "target_density_per_state": 0.025061965639211887,
+        "target_to_source_density_ratio": 0.36787944117144233,
+        "upward_to_downward_rate_ratio": 0.36787944117144233
+      },
+      {
+        "beta_Delta": 3.0,
+        "detailed_balance_flux_residual": 0.0,
+        "source_density_per_state": 0.08697262541137392,
+        "target_density_per_state": 0.004330112047488694,
+        "target_to_source_density_ratio": 0.049787068367863944,
+        "upward_to_downward_rate_ratio": 0.049787068367863944
+      },
+      {
+        "beta_Delta": 6.0,
+        "detailed_balance_flux_residual": 0.0,
+        "source_density_per_state": 0.09070469594317908,
+        "target_density_per_state": 0.00022483446250301536,
+        "target_to_source_density_ratio": 0.0024787521766663585,
+        "upward_to_downward_rate_ratio": 0.0024787521766663585
+      }
+    ]
+  },
+  "gate": "version8_kms_nontracial_relative_rate_selector_gate",
+  "input_process": {
+    "fixed_algebra_dimension": 1,
+    "generator_terms": [
+      "linking",
+      "SU3",
+      "SU2",
+      "U1",
+      "QLYR",
+      "XLdR"
+    ],
+    "observable_algebra": "M11(C) direct_sum M10(C)",
+    "primitive": true,
+    "trace_stationarity_residual": 4.3885418357208765e-17
+  },
+  "positive_weight_no_cancellation_certificate": {
+    "consequence": "positive rate tuning cannot permit a nontracial central KMS metric",
+    "reason": "each positive transfer contribution has strictly positive target trace",
+    "transfer_trace_on_source_identity": {
+      "QLYR": 5.999999999999999,
+      "XLdR": 6.0,
+      "linking": 12.999999999999998
+    }
+  },
+  "project_candidate_audit": {
+    "canonical_nontracial_endpoint_state_found": false,
+    "current_full_QMS": "primitive and unital; forces the trace state",
+    "version4_affine_Gibbs_states": "family-specific M3 states; no canonical lift to M11 direct_sum M10",
+    "version8_central_modular_state": "a P_source+b P_target; ratio is free"
+  },
+  "verdict": {
+    "KMS_selects_current_six_relative_rates": false,
+    "directed_jump_extension_is_derived_from_current_parent": false,
+    "directed_jump_extension_is_mathematically_available": true,
+    "next_gate": "version8_modular_bohr_parent_origin_gate",
+    "nontracial_KMS_state_exists_for_current_generator": false,
+    "status": "exact_no_go_for_nontracial_KMS_selector_on_current_unital_primitive_QMS"
+  }
+}

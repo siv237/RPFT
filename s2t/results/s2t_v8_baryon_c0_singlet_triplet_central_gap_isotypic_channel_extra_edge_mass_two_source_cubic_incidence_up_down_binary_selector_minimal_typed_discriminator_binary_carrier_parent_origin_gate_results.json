@@ -1,0 +1,66 @@
+{
+  "charged_environment_route": {
+    "canonical_mediator_line_selected": false,
+    "family_invariant_vector_dimension": 0,
+    "family_type": "SO(3) triplet",
+    "gauge_neutral_total_charge": "0",
+    "minimal_interaction": "g(L_down tensor b_+ + L_up tensor b_+^*)",
+    "old_charged_singlet_multiplicity": 3,
+    "required_environment_transition_charge": "1",
+    "resonant_environment_gap_inherited": false,
+    "resonant_environment_gap_required": "7 gamma"
+  },
+  "date": "2026-08-31",
+  "existing_noise_frame": {
+    "new_controlled_carrier_in_old_frame": false,
+    "old_42_frame_supplies_required_jump": false,
+    "old_frame_ambient": "End(H_21)",
+    "zero_extension_annihilates_new_binary_off_diagonal": true
+  },
+  "existing_static_center": {
+    "algebra": "C P_u direct_sum C P_d",
+    "classical_binary_label_requires_new_hilbert_dimension": false,
+    "controlled_dynamic_switch_present": false,
+    "dimension": 2,
+    "projectors_present": true
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_parent_origin_gate",
+  "gauge_transition": {
+    "downward_operator": "|d><u|",
+    "downward_operator_charge": "-1",
+    "hypercharges": {
+      "d": "2/3",
+      "u": "5/3"
+    },
+    "invariant_commutant_dimension": 2,
+    "invariant_off_diagonal_hom_dimension": 0,
+    "invariant_system_hamiltonian_contains_downward_operator": false,
+    "single_jump_dissipator_is_gauge_covariant": true,
+    "upward_operator_charge": "1"
+  },
+  "ledgers": {
+    "covariant_transition_shape_satisfied": 6,
+    "covariant_transition_shape_tested": 6,
+    "microscopic_parent_origin_satisfied": 0,
+    "microscopic_parent_origin_tested": 6,
+    "static_center_origin_satisfied": 4,
+    "static_center_origin_tested": 4
+  },
+  "missing_parent_data": [
+    "binary_off_diagonal_system_operator_in_extended_frame",
+    "family_singlet_environment_transition_of_charge_plus_one",
+    "gauge_invariant_system_environment_interaction",
+    "environment_vacuum_or_zero_temperature_state",
+    "resonant_gap_7_gamma",
+    "physical_relaxation_rate"
+  ],
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_architecture_gate",
+  "verdict": {
+    "binary_relaxation_parent_derived": false,
+    "classical_binary_center_already_exists": true,
+    "existing_42_frame_contains_binary_jump": false,
+    "existing_family_triplet_selects_unique_mediator": false,
+    "gauge_covariant_dissipator_is_conditionally_allowed": true
+  }
+}

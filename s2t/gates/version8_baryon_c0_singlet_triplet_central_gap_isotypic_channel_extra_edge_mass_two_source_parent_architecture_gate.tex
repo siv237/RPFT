@@ -1,0 +1,141 @@
+\chapter{Двухкомпонентная source-parent архитектура дополнительных щелей}
+\label{ch:v8-extra-mass-two-source-parent}
+
+\section{Наследованная следовая жёсткость}
+
+Сохраним ортогональный бесследовый базис предыдущего гейта
+\begin{equation}
+ A=P_u-P_d,\qquad B=P_u+P_d-3P_Y,
+ \qquad \Tr A^2=12,\quad \Tr B^2=48,\quad \Tr AB=0.
+ \label{eq:v8-extra-mass-two-source-basis}
+\end{equation}
+Для $h^0=aA+bB$ минимальный parent, не вводящий новой матрицы жёсткости,
+есть
+\begin{equation}
+ V_{j_A,j_B}(a,b)=\frac12\Tr(h^0)^2-j_Aa-j_Bb
+ =6a^2+24b^2-j_Aa-j_Bb.
+ \label{eq:v8-extra-mass-two-source-potential}
+\end{equation}
+Его гессиан совпадает с Gram-метрикой центральной плоскости:
+\begin{equation}
+ \Hess V=\begin{pmatrix}12&0\\0&48\end{pmatrix}>0.
+ \label{eq:v8-extra-mass-two-source-hessian}
+\end{equation}
+Тем самым функционал строго выпуклый и имеет единственный глобальный минимум.
+Квадрат завершается точно:
+\begin{equation}
+ V=6\left(a-\frac{j_A}{12}\right)^2
+ +24\left(b-\frac{j_B}{48}\right)^2
+ -\frac{j_A^2}{24}-\frac{j_B^2}{96}.
+ \label{eq:v8-extra-mass-two-source-completed-square}
+\end{equation}
+Норм-квадраты отображений момента дают стандартный источник положительных
+квадратичных функционалов на пространствах представлений колчанов
+\cite{v8-two-source-harada-wilkin}; spectral action также накладывает
+ограничения на скалярный потенциал лишь после задания конечной геометрии
+\cite{v8-two-source-krajewski}. Эти результаты обосновывают архитектуру, но
+не порождают $j_A,j_B$ в текущем родителе.
+
+\section{Биекция между источниками и щелями}
+
+Стационарная точка равна
+\begin{equation}
+ a_*=\frac{j_A}{12},\qquad b_*=\frac{j_B}{48}.
+ \label{eq:v8-extra-mass-two-source-minimum}
+\end{equation}
+Подстановка в карту щелей предыдущего гейта даёт
+\begin{equation}
+ \begin{pmatrix}\Delta_u\\\Delta_d\end{pmatrix}
+ =\frac1{12}
+ \begin{pmatrix}1&1\\-1&1\end{pmatrix}
+ \begin{pmatrix}j_A\\j_B\end{pmatrix}.
+ \label{eq:v8-extra-mass-two-source-gap-map}
+\end{equation}
+Определитель этой карты равен
+\begin{equation}
+ \det\frac{\partial(\Delta_u,\Delta_d)}
+ {\partial(j_A,j_B)}=\frac1{72}\ne0,
+ \label{eq:v8-extra-mass-two-source-determinant}
+\end{equation}
+поэтому обратная карта существует на всей плоскости:
+\begin{equation}
+ j_A=6(\Delta_u-\Delta_d),\qquad
+ j_B=6(\Delta_u+\Delta_d).
+ \label{eq:v8-extra-mass-two-source-inverse}
+\end{equation}
+В частности,
+\begin{equation}
+ (\Delta_u,\Delta_d)=(\delta,\delta)
+ \Longleftrightarrow (j_A,j_B)=(0,12\delta),
+ \label{eq:v8-extra-mass-two-source-equal-witness}
+\end{equation}
+а асимметричный свидетель $(1,2)$ требует $(-6,18)$.
+
+\section{Минимальность и статус происхождения}
+
+Один вещественный источник имеет образ размерности не более одного и не
+может параметризовать открытую часть двумерного симплекса щелей. Два
+источника достаточны по ненулевому определителю
+\eqref{eq:v8-extra-mass-two-source-determinant}; следовательно, их число
+минимально. Общая положительная матрица жёсткости внесла бы три новых
+вещественных коэффициента,
+\begin{equation}
+ K=\begin{pmatrix}k_{AA}&k_{AB}\\k_{AB}&k_{BB}\end{pmatrix}>0,
+ \label{eq:v8-extra-mass-two-source-general-stiffness}
+\end{equation}
+но здесь $K=\operatorname{diag}(12,48)$ уже фиксирована незавешенным следом.
+
+Операторы $A,B$ центральны, вещественны и чётны, поэтому линейный член
+калибровочно и grading-совместим. Однако совместимость не отвечает на вопрос,
+какой существующий скалярный носитель создаёт две независимые компоненты.
+Пара $(j_A,j_B)$ распадается на один модуль и одно проективное направление;
+оба пока являются новыми данными. Физические KMS-веса дополнительно зависят
+от $\beta\Delta_u$ и $\beta\Delta_d$, так что архитектура не фиксирует
+температурный или временной масштаб.
+
+Итоговые реестры:
+\begin{equation}
+ N_{\rm architecture}=9/9,
+ \qquad N_{\rm source\ origin}=0/2.
+ \label{eq:v8-extra-mass-two-source-ledgers}
+\end{equation}
+
+\begin{theorem}[Минимальная двухисточниковая реализация]
+При наследованной следовой жёсткости $\operatorname{diag}(12,48)$ функционал
+$V_{j_A,j_B}$ строго выпуклый. Его единственный минимум задаёт биекцию между
+двумя вещественными source-компонентами и произвольной парой центральных
+щелей. Двух источников достаточно и необходимо.
+\end{theorem}
+
+\begin{nogocriterion}[Форма не равна происхождению]
+Нельзя считать пару щелей выведенной только потому, что положительная
+следовая метрика делает source-parent устойчивым. До предъявления двух
+типизированных скалярных носителей либо единого носителя с двумерным образом
+$j_A,j_B$ остаются независимыми входными данными.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item жёсткость: \textbf{$\operatorname{diag}(12,48)$};
+\item новых stiffness-параметров: \textbf{ноль};
+\item минимум: \textbf{$(j_A/12,j_B/48)$};
+\item determinant source-to-gap: \textbf{$1/72$};
+\item произвольная пара щелей реализуема: \textbf{да};
+\item один источник достаточен: \textbf{нет};
+\item два источника достаточны: \textbf{да};
+\item gauge/grading compatibility: \textbf{да};
+\item architecture-ledger: \textbf{$9/9$};
+\item source-origin: \textbf{$0/2$};
+\item следующий гейт: \textbf{классификация существующих скалярных носителей двух источников}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_parent_architecture_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-two-source-harada-wilkin} M.~Harada, G.~Wilkin,
+\emph{Morse Theory of the Moment Map for Representations of Quivers},
+arXiv:0807.4734.
+\bibitem{v8-two-source-krajewski} T.~Krajewski,
+\emph{Constraints on the Scalar Potential from Spectral Action Principle},
+arXiv:hep-th/9803199.
+\end{thebibliography}

@@ -1,0 +1,35 @@
+{
+  "clifford": {
+    "dimension": 4,
+    "gamma5_spectrum": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "relations_verified": 16
+  },
+  "date": "2026-08-30",
+  "gate": "version8_full_field_kinetic_relative_weight_parent_origin_gate",
+  "heat_kernel_a4": {
+    "antihermitian_gauge_coefficient": "-2/3",
+    "positive_gauge_coefficient": "2/3",
+    "scalar_coefficient": "2",
+    "scalar_to_gauge_ratio": "3"
+  },
+  "next_gate": "version8_full_field_a4_dirac_lift_origin_gate",
+  "registry": {
+    "certificate_sha256": "9e34fa3ef0faadc321b78893cb031c310dd413410372d3fd73252879eebb2a7a",
+    "gate_count": 36,
+    "obligation_count": 228
+  },
+  "verdict": {
+    "normalized_weights": {
+      "gauge": "1/3",
+      "transfer": "1"
+    },
+    "relative_weight_fixed_within_common_a4_lift": true,
+    "spacetime_dirac_lift_derived_from_finite_parent": false,
+    "unconditional_parent_origin_closed": false
+  }
+}

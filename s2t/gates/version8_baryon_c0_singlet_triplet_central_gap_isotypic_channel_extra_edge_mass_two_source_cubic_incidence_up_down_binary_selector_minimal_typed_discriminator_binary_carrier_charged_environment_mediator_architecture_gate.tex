@@ -1,0 +1,172 @@
+\chapter{Архитектура заряженного посредника бинарной среды}
+\label{ch:v8-charged-environment-mediator-architecture}
+
+\section{Минимальная комплексная дилатация}
+
+Пусть системный бинарный носитель имеет базис $|u\rangle,|d\rangle$,
+гиперзаряд и гамильтониан
+\begin{equation}
+ Y_S=\operatorname{diag}(5/3,2/3),\qquad
+ H_S=7\gamma |u\rangle\langle u|.
+ \label{eq:v8-charged-mediator-system-data}
+\end{equation}
+Минимальная комплексная среда для downward-перехода есть
+\begin{equation}
+ \mathcal K_{\mathbb C}=\mathbb C|0\rangle\oplus\mathbb C|+\rangle,
+ \quad Y_E=|+\rangle\langle+|,
+ \quad H_E=7\gamma |+\rangle\langle+|.
+ \label{eq:v8-charged-mediator-complex-environment}
+\end{equation}
+Для $b_+=|+\rangle\langle0|$ и $L_\downarrow=|d\rangle\langle u|$
+зададим
+\begin{equation}
+ G=g\left(L_\downarrow\otimes b_+
+ +L_\uparrow\otimes b_+^\dagger\right).
+ \label{eq:v8-charged-mediator-interaction}
+\end{equation}
+Компенсация зарядов и резонанс дают два точных закона сохранения:
+\begin{equation}
+ [Y_S\otimes1+1\otimes Y_E,G]=0,\qquad
+ [H_S\otimes1+1\otimes H_E,G]=0.
+ \label{eq:v8-charged-mediator-conservation}
+\end{equation}
+Оператор $G/g$ имеет спектр $\{-1,0,0,1\}$ и действует нетривиально
+только на резонансной плоскости
+\begin{equation}
+ \mathcal R=\operatorname{span}\{|u,0\rangle,|d,+\rangle\}.
+ \label{eq:v8-charged-mediator-resonant-plane}
+\end{equation}
+
+\section{Точный канал одного столкновения}
+
+Для $U_\theta=\exp[-i\theta G/g]$ и начального состояния $|0\rangle$
+редуцированный канал имеет операторы Крауса
+\begin{equation}
+ K_0=P_d+\cos\theta\,P_u,\qquad
+ K_1=-i\sin\theta\,L_\downarrow,\qquad
+ K_0^\dagger K_0+K_1^\dagger K_1=1.
+ \label{eq:v8-charged-mediator-kraus}
+\end{equation}
+Он является точным amplitude-damping каналом:
+\begin{equation}
+ \rho\longmapsto
+ \begin{pmatrix}
+ \cos^2\theta\,\rho_{uu}&\cos\theta\,\rho_{ud}\\
+ \cos\theta\,\rho_{du}&\rho_{dd}+\sin^2\theta\,\rho_{uu}
+ \end{pmatrix},
+ \qquad p_\theta=\sin^2\theta.
+ \label{eq:v8-charged-mediator-channel}
+\end{equation}
+При $0<p_\theta<1$ его ранг Крауса равен двум. Поэтому комплексная
+размерность среды не может быть меньше двух, и конструкция минимальна.
+
+\section{Конечная среда не создаёт необратимость}
+
+Одно и то же возбуждение среды возвращает амплитуду системе. Вероятность
+перехода периодична:
+\begin{equation}
+ p_{\theta+\pi}=p_\theta,\qquad
+ p_{\pi/2}=1,\qquad p_\pi=0.
+ \label{eq:v8-charged-mediator-revival}
+\end{equation}
+Это не полугруппа. Например, при $\theta=\pi/6$ композиция двух уже
+редуцированных каналов имеет параметр
+\begin{equation}
+ p\star p=1-(1-p)^2=7/16,\qquad p=1/4,
+ \label{eq:v8-charged-mediator-channel-composition}
+\end{equation}
+тогда как единая когерентная эволюция до $2\theta=\pi/3$ даёт
+\begin{equation}
+ p_{2\theta}=3/4,\qquad p_{2\theta}-(p\star p)=5/16.
+ \label{eq:v8-charged-mediator-semigroup-defect}
+\end{equation}
+Необратимый предел требует свежей цепи вспомогательных систем и слабого
+масштабирования
+\begin{equation}
+ \theta_h=g\sqrt h,\qquad
+ \Phi_h=\operatorname{id}+h g^2\mathcal D_{L_\downarrow}+O(h^{3/2}).
+ \label{eq:v8-charged-mediator-weak-collision}
+\end{equation}
+Ни цепь, ни механизм сброса, ни связь $h$ с физическими часами не следуют
+из двухуровневой дилатации.
+
+\section{Real-замыкание}
+
+Пара зарядов $\{0,+1\}$ не замкнута относительно Real-сопряжения.
+Минимальное Real-совместимое завершение имеет вид
+\begin{equation}
+ \mathcal K_R^{\mathbb C}=\mathbb C|0\rangle\oplus
+ \mathbb C|+\rangle\oplus\mathbb C|-\rangle,\qquad
+ Y_E^R=\operatorname{diag}(0,1,-1),\qquad J_E|+\rangle=|-\rangle.
+ \label{eq:v8-charged-mediator-real-completion}
+\end{equation}
+Обе charged-линии должны быть семейными синглетами. Это новый тип данных:
+старый трёхкратный charged carrier не содержит канонической неподвижной
+линии.
+
+\begin{remark}
+Последующий admission-гейт уточняет эту coarse-классификацию: после
+разложения multiplicity как $\mathbf1\oplus\mathbf3$ старая линия
+$e_R^{(s)}$ и её Real-сопряжение уже дают charged singlet-пару. Новыми
+остаются нейтральный carrier и динамические данные.
+\end{remark}
+
+Минимальный пакет новых данных равен
+\begin{equation}
+ \mathcal D_{\rm new}=\{\mathcal K_{+1}^{\rm sing}\oplus
+ \mathcal K_{-1}^{\rm sing},\,7\gamma,\,|0\rangle,\,g,\,
+ \text{fresh ancilla chain},\,\text{clock--rate anchor}\}.
+ \label{eq:v8-charged-mediator-new-data}
+\end{equation}
+Итоговые реестры:
+\begin{equation}
+ N_{\rm complex\ dilation}=8/8,\qquad
+ N_{\rm gauge/energy/Real}=6/6,\qquad
+ N_{\rm irreversible\ origin}=0/6.
+ \label{eq:v8-charged-mediator-ledgers}
+\end{equation}
+
+\begin{theorem}[Минимальный charged mediator]
+Двухуровневая комплексная среда с зарядами $0,+1$ и щелью $7\gamma$
+даёт минимальную энергосохраняющую и gauge-инвариантную дилатацию точного
+amplitude-damping канала за одно столкновение. Real-замыкание требует
+третьей линии заряда $-1$. Конечная дилатация остаётся периодической и не
+порождает необратимую полугруппу без свежей цепи и слабого предела.
+\end{theorem}
+
+\begin{nogocriterion}[Дилатация одного шага не есть динамический parent]
+Нельзя отождествлять точный канал одного столкновения с автономной
+необратимой динамикой. Нельзя удалять Real-сопряжённую charged-линию и
+нельзя считать family-singlet назначение унаследованным из старого
+триплета. Параметры $g$, состояние среды и clock--rate anchor остаются
+новыми входами.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item минимальная комплексная размерность среды: \textbf{$2$};
+\item заряды комплексной среды: \textbf{$0,+1$};
+\item резонансная щель: \textbf{$7\gamma$};
+\item полный заряд сохраняется: \textbf{да};
+\item свободная энергия сохраняется: \textbf{да};
+\item канал одного столкновения: \textbf{точный amplitude damping};
+\item ранг Крауса внутри $0<p<1$: \textbf{$2$};
+\item минимальная Real-совместимая размерность: \textbf{$3$};
+\item одно конечное окружение задаёт полугруппу: \textbf{нет};
+\item точный композиционный дефект при $\theta=\pi/6$: \textbf{$5/16$};
+\item complex dilation: \textbf{$8/8$};
+\item gauge/energy/Real completion: \textbf{$6/6$};
+\item autonomous irreversible origin: \textbf{$0/6$};
+\item следующий гейт: \textbf{admission существующего charged carrier}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_two_source_cubic_incidence_up_down_binary_selector_minimal_typed_discriminator_binary_carrier_charged_environment_mediator_architecture_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v8-charged-mediator-attal} S.~Attal and Y.~Pautrat,
+\emph{From Repeated to Continuous Quantum Interactions},
+Ann. Henri Poincar\'e 7 (2006) 59; arXiv:math-ph/0311002.
+\bibitem{v8-charged-mediator-haapasalo} E.~Haapasalo,
+\emph{The Choi--Jamio\l{}kowski Isomorphism and Covariant Quantum Channels},
+Quantum Stud. Math. Found. 8 (2021) 1; arXiv:1906.11442.
+\end{thebibliography}

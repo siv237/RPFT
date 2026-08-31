@@ -1,0 +1,29 @@
+{
+  "calibration": {
+    "collision_schedule_required": true,
+    "existing_dimensionless_trace_normalization_is_physical_clock": false,
+    "generic_unit": "t_* = hbar/E_*",
+    "hbar_alone_is_sufficient": false,
+    "independent_energy_or_rate_anchor_required": true
+  },
+  "date": "2026-08-30",
+  "exact_scale_orbit": {
+    "generator": "L_42 -> g^2 L_42",
+    "interaction": "H_int -> g H_int",
+    "invariant": "g^2 t_phys",
+    "residual": "0",
+    "time_compensation": "t_phys -> t_phys/g^2"
+  },
+  "gate": "version8_full_noise_physical_time_scale_no_go_gate",
+  "registry": {
+    "certificate_sha256": "dc941e1241a84c4e5198e6247a84ddb3dddba7061aa55f81d207892699dc18e4",
+    "gate_count": 22,
+    "obligation_count": 146
+  },
+  "verdict": {
+    "absolute_second_is_fixed": false,
+    "dimensionless_flow_is_fixed": true,
+    "next_gate": "typed_energy_rate_anchor_to_full_noise_generator_gate",
+    "older_mass_or_cutoff_may_be_imported_without_typed_bridge": false
+  }
+}

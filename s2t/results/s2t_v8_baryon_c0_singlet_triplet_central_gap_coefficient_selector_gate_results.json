@@ -1,0 +1,75 @@
+{
+  "central_direction_invariants": {
+    "Q": "P3 - 3 I4/4",
+    "counting_trace_variance": "3/16",
+    "operator_norm": "3/4",
+    "trace_Q2": "3/4",
+    "trace_norm": "3/2"
+  },
+  "date": "2026-08-30",
+  "even_parent_potential": {
+    "magnitude_selected_without_coefficients": false,
+    "potential": "a lambda^2/2 + b4 lambda^4/4",
+    "sign_selected": false,
+    "stable_witness_1": {
+      "a": -1,
+      "b4": 1,
+      "hessian": 2,
+      "minima": [
+        "-1",
+        "1"
+      ]
+    },
+    "stable_witness_2": {
+      "a": -4,
+      "b4": 1,
+      "hessian": 8,
+      "minima": [
+        "-2",
+        "2"
+      ]
+    },
+    "stationarity": "lambda(a+b4 lambda^2)=0"
+  },
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_coefficient_selector_gate",
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_minimal_source_parent_architecture_gate",
+  "normalization_candidates": {
+    "HS_unit_gap": "2/sqrt(3)",
+    "counting_variance_unit_gap": "4/sqrt(3)",
+    "distinct_values": 6,
+    "grading_or_casimir_gap": 2,
+    "operator_unit_gap": "4/3",
+    "projector_gap": 1,
+    "trace_norm_unit_gap": "2/3"
+  },
+  "selector_ledger": {
+    "Casimir_normalization": false,
+    "HS_normalization": false,
+    "counting_variance_normalization": false,
+    "derived_selectors": 0,
+    "entropy_or_KMS_target": false,
+    "even_parent_potential": false,
+    "grading_normalization": false,
+    "operator_normalization": false,
+    "projector_normalization": false,
+    "tested_selectors": 8
+  },
+  "shift_dependence": {
+    "norm_requires_centering_convention": true,
+    "uncentered_HS_norm_squared": "4 b^2 + 3/4"
+  },
+  "thermal_and_entropy_candidates": {
+    "KMS_observed_ratio": "beta lambda=-log(r)",
+    "equal_sector_weight": "beta lambda=log(3)",
+    "maximum_entropy": "lambda=0 at fixed beta",
+    "select_lambda_without_beta_or_target": false
+  },
+  "verdict": {
+    "coefficient_selected": false,
+    "minimal_missing_parent_structure": "odd central source plus even stiffness",
+    "normalization_is_coordinate_choice": true,
+    "sign_selected": false,
+    "theta_derived": false
+  }
+}

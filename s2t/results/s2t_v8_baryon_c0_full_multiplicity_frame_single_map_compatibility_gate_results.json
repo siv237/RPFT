@@ -1,0 +1,53 @@
+{
+  "central_restriction": {
+    "central_equivalence_rate_relation": "gamma_single=3 gamma_full",
+    "central_test_distinguishes_processes": false,
+    "full_matrix_factor": 3,
+    "single_coordinate_matrix": [
+      [
+        "2/21",
+        "-sqrt(42)/21"
+      ],
+      [
+        "-sqrt(42)/21",
+        "1"
+      ]
+    ]
+  },
+  "choi_stinespring": {
+    "connector_vectorization_rank": 3,
+    "full_choi_rank": 3,
+    "full_minimal_environment_dimension": 3,
+    "single_choi_rank": 1,
+    "single_minimal_environment_dimension": 1
+  },
+  "date": "2026-08-30",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_full_multiplicity_frame_single_map_compatibility_gate",
+  "kossakowski": {
+    "full_covariance": "I3",
+    "full_rank": 3,
+    "rank_preserved_by_kraus_isometries": true,
+    "single_covariance": "z z*",
+    "single_rank": 1
+  },
+  "next_gate": "version8_baryon_c0_multiplicity_environment_pure_state_selector_gate",
+  "operator_witness": {
+    "full_action": "2(P_a-P_eR)",
+    "full_and_single_generators_equal": false,
+    "observable": "P_eR",
+    "single_V0_action": "0"
+  },
+  "selector_boundary": {
+    "environment_direction_space": "CP^2; RP^2 on Real slice",
+    "pure_state_selected": false,
+    "rank_one_reduction_requires_environment_pure_state": true,
+    "single_c0_map_derived": false
+  },
+  "verdict": {
+    "central_compatibility_after_rate_rescaling": true,
+    "environment_selector_required": true,
+    "kraus_minimality_no_go": true,
+    "operator_level_compatibility": false
+  }
+}

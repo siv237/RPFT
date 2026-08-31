@@ -1,0 +1,53 @@
+{
+  "final_color_selector_test": {
+    "active_projected_connector_norm": 0.0,
+    "casimir_eigenvalue": "8/5",
+    "classified_as": "cycle_colored_virtual_bridge",
+    "edge": "Q_L--Y_R",
+    "edge_is_in_color_preserving_vacuum": false,
+    "edge_is_positive_gapped_direction": true
+  },
+  "gate": "version8_qlyr_ur_real_connector_lift_gate",
+  "normalized_weak_trace_connector": {
+    "codomain": "C3_uR",
+    "coisometry_residual": 3.8459253727671276e-16,
+    "domain": "Hom(C2_YR,C3_color tensor C2_weak)",
+    "formula": "J(X)=Tr_weak(X)/sqrt(2)",
+    "matrix_shape": [
+      3,
+      12
+    ],
+    "maximum_gauge_covariance_residual": 1.2686307947545673e-15,
+    "rank": 3,
+    "singlet_projector_rank": 3,
+    "singlet_projector_residual": 3.8459253727671276e-16
+  },
+  "real_lift": {
+    "carrier_dimension": 15,
+    "oddness_residual": 0.0,
+    "operator_rank": 6,
+    "self_adjoint": true,
+    "square_blocks": [
+      "P_weak_singlet_rank3",
+      "I3_uR"
+    ]
+  },
+  "reducibility": {
+    "arrow_kernel_rank": 9,
+    "connected_arrow_singlet_rank": 3,
+    "connected_endpoint_rank": 3,
+    "endpoint_complement_rank": 18,
+    "nontrivial_reducing_complements_remain": true,
+    "unique_common_trace_derived": false
+  },
+  "verdict": {
+    "branch_as_tome8_parent_closed": true,
+    "channel_connects_full_physical_carriers": false,
+    "channel_survives_final_color_preserving_projector": false,
+    "mass_metric_fixed": false,
+    "next_step": "return_to_pre_tome_trilemma_second_family_tensor_or_common_gauge_spacetime_trace",
+    "real_and_gauge_compatibility_pass": true,
+    "status": "canonical_rank_three_lift_gapped_by_final_color_selector_no_go",
+    "unique_channel_has_explicit_canonical_lift": true
+  }
+}

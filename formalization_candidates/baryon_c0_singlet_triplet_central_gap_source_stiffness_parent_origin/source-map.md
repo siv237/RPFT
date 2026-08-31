@@ -1,0 +1,6 @@
+# Карта источников
+
+- `s2t/gates/version8_baryon_c0_singlet_triplet_central_gap_minimal_source_parent_architecture_gate.tex`
+- `s2t/gates/version8_baryon_c0_singlet_triplet_central_gap_parent_action_origin_gate.tex`
+- `s2t/gates/version8_baryon_c0_connector_multiplicity_and_rate_parent_selector_gate.tex`
+- `s2t/audits/s2t_v8_baryon_c0_singlet_triplet_central_gap_source_stiffness_parent_origin_gate.py`

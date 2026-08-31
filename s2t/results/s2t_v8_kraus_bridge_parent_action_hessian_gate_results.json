@@ -1,0 +1,252 @@
+{
+  "covariance_requirement": {
+    "common_isotropic_covariance_is_derived": false,
+    "common_scalar_covariance_scan": [
+      {
+        "central_decay_eigenvalue": 2.333333333333334e-06,
+        "central_kernel_dimension": 1,
+        "isotropic_covariance_scale": 1e-06
+      },
+      {
+        "central_decay_eigenvalue": 0.002333333333333334,
+        "central_kernel_dimension": 1,
+        "isotropic_covariance_scale": 0.001
+      },
+      {
+        "central_decay_eigenvalue": 2.333333333333334,
+        "central_kernel_dimension": 1,
+        "isotropic_covariance_scale": 1.0
+      },
+      {
+        "central_decay_eigenvalue": 2333.333333333334,
+        "central_kernel_dimension": 1,
+        "isotropic_covariance_scale": 1000.0
+      },
+      {
+        "central_decay_eigenvalue": 2333333.333333334,
+        "central_kernel_dimension": 1,
+        "isotropic_covariance_scale": 1000000.0
+      }
+    ],
+    "gauge_symmetry_relates_QLYR_and_XLdR_rates": false,
+    "independent_family_covariance_scan": [
+      {
+        "QLYR_covariance_scale": 0.001,
+        "XLdR_covariance_scale": 1.0,
+        "central_decay_eigenvalue": 1.1678333333333333,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_covariance_scale": 1.0,
+        "XLdR_covariance_scale": 0.001,
+        "central_decay_eigenvalue": 1.1678333333333333,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_covariance_scale": 1.0,
+        "XLdR_covariance_scale": 1.0,
+        "central_decay_eigenvalue": 2.3333333333333335,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_covariance_scale": 1.0,
+        "XLdR_covariance_scale": 10.0,
+        "central_decay_eigenvalue": 12.833333333333334,
+        "central_kernel_dimension": 1
+      },
+      {
+        "QLYR_covariance_scale": 10.0,
+        "XLdR_covariance_scale": 1.0,
+        "central_decay_eigenvalue": 12.833333333333334,
+        "central_kernel_dimension": 1
+      }
+    ],
+    "minimum_undetermined_positive_family_scales": 2,
+    "qualitative_fixed_algebra_independent_of_positive_scale": true,
+    "quantitative_decay_rate_independent_of_scale": false,
+    "unit_isotropic_covariance_decay": 2.333333333333334
+  },
+  "date": "2026-08-28",
+  "field_dependent_dirichlet_term": {
+    "control_direction_coefficients": [
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0
+    ],
+    "cross_direction_coefficient": "7/36",
+    "cross_direction_coefficients": [
+      0.194444444444,
+      0.194444444444,
+      0.194444444444,
+      0.194444444444,
+      0.194444444444,
+      0.194444444444,
+      0.194444444444,
+      0.194444444444,
+      0.194444444444,
+      0.194444444444,
+      0.194444444444,
+      0.194444444444
+    ],
+    "formula": "E_bridge(z)=-<Q,L_z Q>=sum_i d_i z_i^2",
+    "hessian_signature": [
+      0,
+      15,
+      12
+    ],
+    "interpretation": "positive mass correction on 12 cross-arrow heavy directions",
+    "total_unit_covariance_decay": 2.333333333333334
+  },
+  "gate": "version8_kraus_bridge_parent_action_hessian_gate",
+  "gaussian_fluctuation_probe": {
+    "overall_fluctuation_strength_derived": false,
+    "prescription": "C_T=T*(H_heavy)^-1 restricted to cross arrows",
+    "scale_scan": [
+      {
+        "fluctuation_strength": 0.1,
+        "induced_central_decay": 0.036458333333333336
+      },
+      {
+        "fluctuation_strength": 1.0,
+        "induced_central_decay": 0.36458333333333337
+      },
+      {
+        "fluctuation_strength": 10.0,
+        "induced_central_decay": 3.645833333333334
+      }
+    ],
+    "unit_strength_decay": 0.36458333333333337
+  },
+  "tome7_hessian_compatibility": {
+    "bridge_term_launches_cross_arrows": false,
+    "origin_signature_preserved_for_all_tested_positive_weights": true,
+    "positive_bridge_weight_scan": [
+      {
+        "bridge_weight": 0.0,
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_minimum_eigenvalue": 3.6,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "bridge_weight": 1e-06,
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_minimum_eigenvalue": 3.6,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "bridge_weight": 0.1,
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_minimum_eigenvalue": 3.6,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "bridge_weight": 1.0,
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_minimum_eigenvalue": 3.6,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "bridge_weight": 1000.0,
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_minimum_eigenvalue": 3.6,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      },
+      {
+        "bridge_weight": 1000000.0,
+        "origin_heavy_gap": 3.6,
+        "origin_signature": [
+          7,
+          0,
+          20
+        ],
+        "vacuum_minimum_eigenvalue": 3.6,
+        "vacuum_signature": [
+          0,
+          0,
+          27
+        ]
+      }
+    ],
+    "reason": "a positive quadratic Dirichlet term raises rather than reverses their heavy masses",
+    "target_signature_preserved_for_all_tested_positive_weights": true,
+    "tested_real_slice_dimension": 27
+  },
+  "vacuum_rate_test": {
+    "cross_arrow_vacuum_coordinates": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "nonzero_tree_level_process_present": false,
+    "second_variation_nonzero": true,
+    "tree_level_bridge_rate": 0.0
+  },
+  "verdict": {
+    "environment_or_quantum_covariance_required": true,
+    "gauge_covariant_kraus_bridge_kinematically_admitted": true,
+    "next_gate": "version8_cross_arrow_covariance_origin_gate",
+    "nonzero_rate_from_existing_classical_vacuum": false,
+    "positive_parent_term_preserves_tome7_signatures": true,
+    "status": "kinematic_bridge_positive_classical_parent_rate_no_go",
+    "unique_rate_derived": false
+  }
+}

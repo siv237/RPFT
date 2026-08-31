@@ -1,0 +1,104 @@
+\chapter{Производная кубическая вершина: шеститочечное ядро или остановка}
+\label{ch:v8-baryon-derivative-cubic-vertex-to-six-point-kernel-or-stop-gate}
+
+Предыдущий гейт оставил единственный локальный маршрут: получить статический
+связный оператор $W_3$ из производных кубических вершин полной
+пространственно-временной суперкривизны. Независимо воспроизведём этот тест
+на текущем центрированном $42$-мерном кадре, не используя внешние
+сертификаты как вход.
+
+Канонический полностью симметричный цвет задан тензором
+\begin{equation}
+ d_{abc}=\frac12\Tr\!\left(\widehat F_a
+ \{\widehat F_b,\widehat F_c\}\right).
+ \label{eq:v8-baryon-derivative-symmetric-color}
+\end{equation}
+Полный перебор всех
+\begin{equation}
+ \binom{42+3-1}{3}=13244
+ \label{eq:v8-baryon-derivative-triple-count}
+\end{equation}
+неубывающих троек точно воспроизводит его опору
+\begin{equation}
+ \operatorname{supp}d=140\,TTG+28\,GGG,
+ \qquad |\operatorname{supp}d|=168.
+ \label{eq:v8-baryon-derivative-d-support}
+\end{equation}
+
+Все допустимые локальные производные каналы несут коммутаторный цвет
+\begin{equation}
+ C_{abc}=\Tr\!\left(\widehat F_a
+ [\widehat F_b,\widehat F_c]\right).
+ \label{eq:v8-baryon-derivative-commutator-color}
+\end{equation}
+Для того же кадра независимый точный расчёт даёт
+\begin{equation}
+ \operatorname{supp}C=106\,TTG+10\,GGG,
+ \qquad |\operatorname{supp}C|=116,
+ \qquad \operatorname{supp}C\cap\operatorname{supp}d=\varnothing.
+ \label{eq:v8-baryon-derivative-C-support}
+\end{equation}
+Например,
+\begin{equation}
+ C_{0,1,41}=i,\quad C_{30,31,32}=16i,
+ \qquad d_{0,0,40}=-1,\quad d_{30,30,37}=8.
+ \label{eq:v8-baryon-derivative-support-witnesses}
+\end{equation}
+Первые две тройки отсутствуют в опоре $d$, последние две --- в опоре $C$.
+
+Дизъюнктность не зависит от импульсного множителя. Любая допустимая
+производная кубическая вершина имеет вид
+\begin{equation}
+ \mathcal V_{abc}(p)=L_{abc}^{\mu}p_\mu,
+ \qquad \mathcal V_{abc}(0)=0,
+ \label{eq:v8-baryon-derivative-zero-momentum}
+\end{equation}
+и её внутренний цвет пропорционален $C$, тогда как $W_3$ построен из $d$.
+Кроме того, $C_{acb}=-C_{abc}$, поэтому полная симметризация по трём
+индексам тождественно нулевая. Импульсное одевание может менять скалярную
+функцию, но не превращает антисимметричный цвет в полностью симметричный.
+
+Следовательно,
+\begin{equation}
+ K_6^{\rm derivative}(0)=0
+ \neq \lambda_3W_3\quad
+ \text{при }\lambda_3\neq0.
+ \label{eq:v8-baryon-derivative-static-mismatch}
+\end{equation}
+Это закрывает последнюю локальную производную ветвь. Результат сильнее
+предыдущего замечания о нулевом импульсе: даже вне нуля опора и симметрия
+цвета не содержат проекции на $W_3$.
+
+\begin{theorem}[Дизъюнктность симметричного и коммутаторного цветов]
+На полном центрированном кадре опоры $d_{abc}$ и $C_{abc}$ не пересекаются
+ни в секторе $TTG$, ни в секторе $GGG$. Полностью симметризованная часть
+$C$ равна нулю. Поэтому локальные производные кубические вершины не имеют
+компоненты вдоль $W_3$ при любом внешнем импульсе.
+\end{theorem}
+
+\begin{nogocriterion}[STOP производной ветви]
+Нельзя получать статический член $\lambda_3W_3$ импульсным одеванием
+локальной производной вершины: при $p=0$ она исчезает, а при $p\neq0$
+остаётся в дизъюнктном коммутаторном цветовом секторе. Дальнейший барионный
+маршрут обязан задать нелокальное шеститочечное ядро с ненулевым
+$K_6(0)$ либо честно объявить коэффициент внешним данным.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item поле вычислений: \textbf{$\mathbb Q(i)$};
+ \item чисел с плавающей точкой: \textbf{$0$};
+ \item проверенных неубывающих троек: \textbf{$13244$};
+ \item опора $d$: \textbf{$140,TTG+28,GGG$};
+ \item опора $C$: \textbf{$106,TTG+10,GGG$};
+ \item пересечение опор: \textbf{$0$};
+ \item полная симметризация $C$: \textbf{$0$};
+ \item производное ядро при $p=0$: \textbf{$0$};
+ \item статический $W_3$: \textbf{ненулевой};
+ \item производная ветвь: \textbf{STOP};
+ \item следующий гейт: \textbf{допуск нелокального шеститочечного ядра}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_derivative_cubic_vertex_to_six_point_kernel_or_stop_gate_results.json}.

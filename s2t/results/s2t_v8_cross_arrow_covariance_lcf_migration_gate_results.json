@@ -1,0 +1,69 @@
+{
+  "common_axis": {
+    "affine_pair": "(32/5) I_2 + 2 eta B",
+    "axis_depends_on_eta": false,
+    "commutator_with_B": "zero",
+    "eta_assumption": "eta > 0",
+    "normalized_anisotropy_depends_on_eta": true,
+    "soft_axis_angle_degrees": "55.45091552083212",
+    "soft_axis_angle_exact": "-atan(2*(-16*cos(pi/7) + 8*sin(3*pi/14) + 11)/(7*(3 - 2*sqrt(2))))/2 + pi/2"
+  },
+  "date": "2026-08-29",
+  "exact_algebraic_carrier": {
+    "field": "Q(sqrt(2), 2 cos(pi/7))",
+    "field_degree": 6,
+    "physical_reference_shape": [
+      10,
+      11
+    ],
+    "polar_coisometry_residual": "zero"
+  },
+  "gate": "version8_cross_arrow_covariance_lcf_migration_gate",
+  "measure_scale_no_go": {
+    "classical_action_scale_nonconstant": true,
+    "harmonic_kinetic_scale_nonconstant": true,
+    "heat_correlation_time_nonconstant": true,
+    "unique_covariance_scale_derived": false,
+    "unique_covariance_shape_derived": false,
+    "unique_kraus_rate_derived": false
+  },
+  "polar_cross_structure": {
+    "coupling_to_other_15_directions": "zero",
+    "distinct_eigenvalues": true,
+    "exact_pair_matrix": [
+      [
+        "-96*cos(pi/7)**2/7 - 4*sqrt(2) + 124/7",
+        "-32*cos(pi/7)**2/7 - 6/7 + 32*cos(pi/7)/7"
+      ],
+      [
+        "-32*cos(pi/7)**2/7 - 6/7 + 32*cos(pi/7)/7",
+        "82/7 - 96*cos(pi/7)**2/7"
+      ]
+    ],
+    "number_of_identical_real_pairs": 6,
+    "pair_eigenvalues_decimal": [
+      "0.2724480819051504",
+      "1.234266100254124"
+    ],
+    "pair_eigenvalues_exact": [
+      "-2*sqrt(2) - sqrt(49*(3 - 2*sqrt(2))**2 + 4*(-16*cos(pi/7) + 8*cos(2*pi/7) + 11)**2)/7 + 1 + 96*sin(pi/7)**2/7",
+      "-2*sqrt(2) + sqrt(49*(3 - 2*sqrt(2))**2 + 4*(-16*cos(pi/7) + 8*cos(2*pi/7) + 11)**2)/7 + 1 + 96*sin(pi/7)**2/7"
+    ],
+    "positive_definite": true,
+    "repetition_residual": "zero"
+  },
+  "proofdsl_registry": {
+    "certificate_sha256": "23fc836c1bfef35dbb8805bd6362e1afe6fb4b51c889cd58ba68e3a6d51e2445",
+    "obligation_count": 10,
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "axis_exact_but_not_ckm_pmns": true,
+    "cross_other_decoupling_exact": true,
+    "next_gate": "version8_minimal_covariant_stinespring_lcf_migration_gate",
+    "polar_cross_axis_lcf_checked": true,
+    "shape_and_rate_still_open": true,
+    "six_pair_structure_exact": true,
+    "status": "lcf-checked-axis-positive-shape-rate-no-go"
+  }
+}

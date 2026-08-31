@@ -1,0 +1,122 @@
+{
+  "central_simplex": {
+    "center_fixed_dimension_under_type_preserving_symmetry": 3,
+    "mass_vector": [
+      "2*p_Y",
+      "3*p_u",
+      "3*p_d"
+    ],
+    "normalized_coordinates": "p_Y+p_u+p_d=1",
+    "projective_dimension": 2
+  },
+  "competing_conventions": {
+    "equal_edge_mass": {
+      "mass_coefficients": [
+        "6/7",
+        "6/7",
+        "6/7"
+      ],
+      "ratio": "1:1:1",
+      "weights": [
+        "3/7",
+        "2/7",
+        "2/7"
+      ]
+    },
+    "equal_microscopic_trace_density": {
+      "mass_coefficients": [
+        "2/3",
+        "1",
+        "1"
+      ],
+      "ratio": "2:3:3",
+      "weights": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ]
+    },
+    "vectors_proportional": false
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_central_trace_simplex_selector_gate",
+  "gauge_matching_test": {
+    "counting_trace_image": [
+      "61/18",
+      "1/6",
+      "1/3"
+    ],
+    "equal_mass_trace_image": [
+      "125/42",
+      "3/14",
+      "2/7"
+    ],
+    "index_matrix_determinant": "-7/4",
+    "index_matrix_rank": 3,
+    "intrinsic_selector": false,
+    "requires_external_gauge_target": true
+  },
+  "gibbs_test": {
+    "equal_mass_witness_gaps": [
+      "log(3/2)/beta",
+      "log(3/2)/beta"
+    ],
+    "gap_parent_origin_present": false,
+    "independent_dimensionless_gaps": 2,
+    "realizes_whole_positive_simplex": true
+  },
+  "ledgers": {
+    "conditional_trace_conventions_satisfied": 2,
+    "conditional_trace_conventions_tested": 2,
+    "intrinsic_simplex_selectors_satisfied": 0,
+    "intrinsic_simplex_selectors_tested": 8,
+    "minimal_new_relative_parameters": 2
+  },
+  "maximum_entropy_test": {
+    "entropy_principle_present_in_parent": false,
+    "hessian_diagonal": [
+      "-64",
+      "-96",
+      "-96"
+    ],
+    "maximizer_eigenvalue_density": [
+      "1/16",
+      "1/16",
+      "1/16"
+    ],
+    "real_completed_dimensions": [
+      4,
+      6,
+      6
+    ],
+    "selects_equal_microscopic_density_conditionally": true
+  },
+  "next_gate": "version8_baryon_c0_singlet_triplet_central_gap_isotypic_channel_extra_edge_mass_minimal_central_hamiltonian_data_gate",
+  "stationarity_test": {
+    "vacuum_selects_trace_point": false,
+    "vacuum_weight_gradient": [
+      "0",
+      "0",
+      "0"
+    ],
+    "vacuum_weight_hessian_rank": 0
+  },
+  "unimodularity_test": {
+    "constraint_rank": 1,
+    "depends_on_positive_trace_weights": false,
+    "phase_constraint": "4 theta_Y + 6 theta_u + 6 theta_d = 0",
+    "phase_nullity": 2
+  },
+  "verdict": {
+    "central_trace_simplex_closed": false,
+    "counting_trace_is_a_valid_candidate": true,
+    "equal_edge_mass_is_another_valid_candidate": true,
+    "gauge_matching_is_blind": false,
+    "gauge_symmetry_selects_weights": false,
+    "kms_selects_weights_without_gaps": false,
+    "maximum_entropy_reproduces_counting_trace": true,
+    "unimodularity_selects_weights": false,
+    "vacuum_stationarity_selects_weights": false
+  }
+}

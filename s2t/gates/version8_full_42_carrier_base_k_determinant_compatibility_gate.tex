@@ -1,0 +1,58 @@
+\chapter{Совместимость полного полевого носителя с determinant на базовом пространстве}
+\label{ch:v8-full-42-carrier-base-k-determinant-compatibility-gate}
+
+Ранний determinant использовал три скалярные моды и один массивный
+калибровочный канал. На нынешнем полном носителе вакуумная грамова часть и
+коммутаторы с фоном инцидентности дают вместо этого
+\begin{equation}
+ \rank H_{\Phi}=28,\quad\dim\ker H_{\Phi}=2,
+ \qquad \rank H_B=3,\quad\dim\ker H_B=9.
+ \label{eq:v8-full-carrier-vacuum-ranks}
+\end{equation}
+После нормировки кинетических блоков отношением $3:1$ точные четвёртые
+моменты массовых операторов равны
+\begin{equation}
+ \Tr(M_{\Phi}^4)=\frac{23053}{18},
+ \qquad \Tr(M_B^4)=\frac{36897}{722}.
+ \label{eq:v8-full-carrier-fourth-moments}
+\end{equation}
+Босонный числитель коэффициента Коулмана--Вайнберга поэтому равен
+\begin{equation}
+ N_{\rm bos}=\Tr(M_{\Phi}^4)+3\Tr(M_B^4)
+ =\frac{4659176}{3249}.
+ \label{eq:v8-full-carrier-bosonic-ledger}
+\end{equation}
+Он не совпадает с ранним числом $67$. Для конечного фона точно
+\begin{equation}
+ \Tr D_F^4=46,
+ \qquad N_{\rm full}=N_{\rm bos}-\nu_f\Tr D_F^4,
+ \label{eq:v8-full-carrier-fermion-boundary}
+\end{equation}
+но физическая кратность $\nu_f$ и полный BV-фактор ещё не выведены.
+
+\begin{theorem}[Частичный перенос determinant-ledger]
+Полный 42-мерный носитель допускает точный босонный base-$K$ ledger. Он
+содержит 28 массивных скалярных и три массивных калибровочных направления и
+не является продолжением раннего малого ledger простым умножением кратности.
+\end{theorem}
+
+\begin{nogocriterion}[Полный коэффициент ещё не определён]
+Число $N_{\rm bos}$ нельзя называть полным $B$: остаются две скалярные
+нулевые моды, девять безмассовых калибровочных направлений, BV-факторизация
+и перевод конечного следа $\Tr D_F^4=46$ в физическую фермионную кратность.
+\end{nogocriterion}
+
+\begin{protocol}
+\begin{enumerate}
+ \item массивных скалярных направлений: \textbf{$28$};
+ \item массивных калибровочных направлений: \textbf{$3$};
+ \item ненарушенных калибровочных направлений: \textbf{$9$};
+ \item босонный четвёртый момент: \textbf{$4659176/3249$};
+ \item ранний числитель $67$: \textbf{не переносится};
+ \item полный суперслед: \textbf{не закрыт};
+ \item следующий гейт: \textbf{полный BV-вакуумный фактор и фермионная кратность}.
+\end{enumerate}
+\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v8_full_42_carrier_base_k_determinant_compatibility_gate_results.json}.

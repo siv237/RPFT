@@ -1,0 +1,57 @@
+{
+  "comparison_with_baryon_mapping": {
+    "linking_matches_exactly": true,
+    "linking_required_multiplier": "1",
+    "qlyr_half_weight_defect": true,
+    "qlyr_required_multiplier": "2",
+    "supplied_linking_spring": "x*(10*x + 11)/(13*(x + 1))",
+    "supplied_qlyr_spring": "x*(10*x + 11)/(4*(x + 1))"
+  },
+  "date": "2026-08-30",
+  "direct_restriction_candidate": {
+    "closed_form_identity_exact": true,
+    "discriminator": "52*(x + 1)*(25*x + 13)/(375*x**3 + 3916*x**2 + 7267*x + 2782)",
+    "display_at_exp_minus_2": "0.252005943190436",
+    "r1": "(10*x + 11)*(375*x**3 + 3916*x**2 + 7267*x + 2782)/(26*(x + 1)*(x + 5)*(25*x + 13))",
+    "split3_inherited": "6*(10*x + 11)/(x + 5)"
+  },
+  "directed_source_corner": {
+    "inverse_x_reading_is_source_corner": false,
+    "kms_source_rate_x_retained_exact": true,
+    "linking_spring": "x*(10*x + 11)/(13*(x + 1))",
+    "qlyr_spring": "x*(10*x + 11)/(2*(x + 1))"
+  },
+  "field": "Q(x), x=exp(-2)",
+  "gate": "version8_baryon_directed_transfer_convention_selector_gate",
+  "linking_common_trace_quotient": {
+    "incidence_frobenius_square": 13,
+    "q_l_source_gram": "I_6",
+    "source_casimir": "Matrix([[(10*x + 11)/(13*(x + 1)), 0, 0, 0, 0, 0], [0, (10*x + 11)/(13*(x + 1)), 0, 0, 0, 0], [0, 0, (10*x + 11)/(13*(x + 1)), 0, 0, 0], [0, 0, 0, (10*x + 11)/(13*(x + 1)), 0, 0], [0, 0, 0, 0, (10*x + 11)/(13*(x + 1)), 0], [0, 0, 0, 0, 0, (10*x + 11)/(13*(x + 1))]])"
+  },
+  "qlyr_common_trace_quotient": {
+    "complex_rank": 3,
+    "frobenius_gram": "Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]])",
+    "moore_penrose_identity_exact": true,
+    "real_pair_gram_block": "Matrix([[(x + 1)/(10*x + 11), -I*(x + 1)/(10*x + 11)], [I*(x + 1)/(10*x + 11), (x + 1)/(10*x + 11)]])",
+    "real_pair_gram_pseudoinverse": "Matrix([[(10*x + 11)/(4*(x + 1)), -I*(10*x + 11)/(4*(x + 1))], [I*(10*x + 11)/(4*(x + 1)), (10*x + 11)/(4*(x + 1))]])",
+    "source_casimir": "Matrix([[(10*x + 11)/(2*(x + 1)), 0, 0, 0, 0, 0], [0, (10*x + 11)/(2*(x + 1)), 0, 0, 0, 0], [0, 0, (10*x + 11)/(2*(x + 1)), 0, 0, 0], [0, 0, 0, (10*x + 11)/(2*(x + 1)), 0, 0], [0, 0, 0, 0, (10*x + 11)/(2*(x + 1)), 0], [0, 0, 0, 0, 0, (10*x + 11)/(2*(x + 1))]])",
+    "source_casimir_exact": true,
+    "source_casimir_expected": "Matrix([[(10*x + 11)/(2*(x + 1)), 0, 0, 0, 0, 0], [0, (10*x + 11)/(2*(x + 1)), 0, 0, 0, 0], [0, 0, (10*x + 11)/(2*(x + 1)), 0, 0, 0], [0, 0, 0, (10*x + 11)/(2*(x + 1)), 0, 0], [0, 0, 0, 0, (10*x + 11)/(2*(x + 1)), 0], [0, 0, 0, 0, 0, (10*x + 11)/(2*(x + 1))]])"
+  },
+  "status_boundary": {
+    "full_three_particle_lift_derived": false,
+    "inverse_x_reading_is_direct_canonical_restriction": false,
+    "kms_direction_selected": true,
+    "physical_mass_theorem": false,
+    "source_corner_casimir_selected": true,
+    "supplied_baseline_is_direct_canonical_restriction": false
+  },
+  "verdict": {
+    "canonical_direct_restriction_discriminator": "52*(x + 1)*(25*x + 13)/(375*x**3 + 3916*x**2 + 7267*x + 2782)",
+    "next_gate": "version8_baryon_three_particle_lift_normalization_gate",
+    "selected_one_particle_transfer_multiplier": {
+      "QLYR": "2",
+      "linking": "1"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "carrier": {
+    "gauge_channels": 12,
+    "spacetime_components": 4,
+    "total_principal_dimension": 168,
+    "transfer_channels": 30
+  },
+  "date": "2026-08-30",
+  "gate": "version8_full_field_kinetic_supermetric_assembly_gate",
+  "gauge_fixing": {
+    "factorized_inverse_verified": true,
+    "fixed_rank": 168,
+    "transverse_observable_block_gauge_parameter_independent": true
+  },
+  "next_gate": "version8_full_field_kinetic_relative_weight_parent_origin_gate",
+  "principal_symbol": {
+    "gauge_transverse_rank": 36,
+    "mixed_block_rank": 0,
+    "scalar_rank": 120,
+    "ungauged_nullity": 12,
+    "ungauged_rank": 156
+  },
+  "registry": {
+    "certificate_sha256": "99dce7c5f152eaf1f9918fed9d532a02f241aadbd42fe9ac2312016bbe696078",
+    "gate_count": 35,
+    "obligation_count": 221
+  },
+  "verdict": {
+    "absolute_time_scale_derived": false,
+    "lower_order_scalar_vector_mixing_classified": false,
+    "principal_supermetric_assembled": true,
+    "relative_sector_weight_derived": false
+  }
+}

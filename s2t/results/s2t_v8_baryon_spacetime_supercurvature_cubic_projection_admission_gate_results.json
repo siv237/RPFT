@@ -1,0 +1,50 @@
+{
+  "boundary": {
+    "absolute_lambda_3_derived": false,
+    "background_scale_m_derived_by_current_parent": false,
+    "centered_frame_contains_central_background": false,
+    "central_background_odd_parity_defect": "Gamma M+M Gamma=m Gamma",
+    "central_background_trace": "21*m/2",
+    "full_42_frame_has_one_homogeneous_finite_parity": false,
+    "nonzero_central_background_is_odd": false,
+    "spacetime_form_degree_and_hodge_trace_constructed": false
+  },
+  "coefficient_shape": {
+    "alpha": "m**2",
+    "beta": "1",
+    "cubic_projection_on_trace_tensor": "2m d_abc",
+    "lambda_3": "2*m",
+    "lambda_3_squared_over_alpha_beta": "4",
+    "third_variation": "12m d_abc"
+  },
+  "date": "2026-08-30",
+  "exact_ray": {
+    "Tr_A2": "38",
+    "Tr_A3": "-3",
+    "Tr_A4": "134",
+    "action": "38*m**2*t**2 - 6*m*t**3 + 134*t**4",
+    "definition": "Z=t(Fhat_0+Fhat_40)"
+  },
+  "field": "Q(m,t)",
+  "gate": "version8_baryon_spacetime_supercurvature_cubic_projection_admission_gate",
+  "radial_test": {
+    "derivative": "2*t*(38*m**2 - 9*m*t + 268*t**2)",
+    "nonzero_stationary_discriminant": "-40655*m**2",
+    "nonzero_stationary_point_for_real_nonzero_m": false,
+    "origin_hessian": "76*m**2"
+  },
+  "shifted_supercurvature": {
+    "central_background": "M=(m/2)I_21",
+    "definition": "R_m(Z)=(M+Z)^2-M^2=mZ+Z^2",
+    "gauge_covariant_under_conjugation": true,
+    "single_positive_norm": "Tr(R_m(Z)^2)"
+  },
+  "verdict": {
+    "algebraic_moment_map_shape_admitted": true,
+    "dimensionless_shape_ratio_fixed": true,
+    "genuine_graded_supercurvature_realization_admitted": false,
+    "next_gate": "noncentral_odd_dirac_background_projection_classification",
+    "physical_baryon_parent_closed": false,
+    "single_curvature_norm_generates_quadratic_cubic_quartic": true
+  }
+}

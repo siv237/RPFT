@@ -1,0 +1,163 @@
+\chapter{Минимальные гамильтоновы данные центрального веса синглета и триплета}
+\label{ch:v8-baryon-c0-singlet-triplet-central-weight-minimal-hamiltonian-data-gate}
+
+Литературный проход уточняет постановку: максимум энтропии требует заранее
+заданных ограничений, Gibbs-вариация требует гамильтониана, а detailed
+balance определяется относительно уже выбранного верного состояния.
+Поэтому минимизируем не число параметров записи, а число физически
+различимых данных.
+
+\section{Факторизация допустимого гамильтониана}
+
+По лемме Шура всякий $SO(3)$-инвариантный гамильтониан на
+$\mathbf1\oplus\mathbf3$ имеет вид
+\begin{equation}
+ h=\varepsilon_1P_{\mathbf1}+\varepsilon_3P_{\mathbf3}
+ =\varepsilon_1I_4+\Delta P_{\mathbf3},
+ \qquad \Delta=\varepsilon_3-\varepsilon_1.
+ \label{eq:v8-baryon-c0-minimal-central-hamiltonian-form}
+\end{equation}
+Добавление общего нуля энергии не меняет состояния:
+\begin{equation}
+ h\sim h+bI_4,
+ \qquad
+ \frac{e^{-\beta(h+bI_4)}}{\Tr e^{-\beta(h+bI_4)}}
+ =\frac{e^{-\beta h}}{\Tr e^{-\beta h}}.
+ \label{eq:v8-baryon-c0-central-hamiltonian-shift-quotient}
+\end{equation}
+После этой факторизации остаётся одна энергетическая разность. Для
+равновесного веса существенна только безразмерная комбинация
+\begin{equation}
+ \theta=\beta\Delta.
+ \label{eq:v8-baryon-c0-central-dimensionless-gap}
+\end{equation}
+
+Её Gibbs-состояние равно
+\begin{equation}
+ \rho_\theta=p(\theta)P_{\mathbf1}
+ +\frac{1-p(\theta)}{3}P_{\mathbf3},
+ \qquad
+ p(\theta)=\frac{1}{1+3e^{-\theta}},
+ \qquad r(\theta)=e^{-\theta}.
+ \label{eq:v8-baryon-c0-central-gap-gibbs-state}
+\end{equation}
+Отображение является биекцией
+\begin{equation}
+ \theta\in\mathbb R\longleftrightarrow p\in(0,1),
+ \qquad
+ \theta(p)=\log\frac{3p}{1-p}.
+ \label{eq:v8-baryon-c0-central-gap-weight-bijection}
+\end{equation}
+Его монотонность невырождена во внутренности:
+\begin{equation}
+ \frac{dp}{d\theta}=p(1-p)>0.
+ \label{eq:v8-baryon-c0-central-gap-weight-monotonicity}
+\end{equation}
+Тем самым один вещественный параметр необходим и достаточен для выбора
+центрального веса. Два точных ориентира имеют вид
+\begin{equation}
+ \theta=0\Longleftrightarrow(p,r)=\left(\frac14,1\right),
+ \qquad
+ \theta=\log3\Longleftrightarrow(p,r)=\left(\frac12,\frac13\right).
+ \label{eq:v8-baryon-c0-central-gap-two-weight-witnesses}
+\end{equation}
+
+\section{Gibbs-вариация как проверка достаточности}
+
+На центральном симплексе введём безразмерную свободную энергию
+\begin{equation}
+ \Phi_\theta(p)=(1-p)\theta-S(p),
+ \qquad
+ S(p)=-p\log p-(1-p)\log\frac{1-p}{3}.
+ \label{eq:v8-baryon-c0-central-gap-free-energy-functional}
+\end{equation}
+Её производные равны
+\begin{equation}
+ \Phi_\theta'(p)=\log\frac{3p}{1-p}-\theta,
+ \qquad
+ \Phi_\theta''(p)=\frac{1}{p(1-p)}>0.
+ \label{eq:v8-baryon-c0-central-gap-free-energy-derivatives}
+\end{equation}
+Поэтому $p(\theta)$ является единственным минимумом. Более сильная точная
+форма есть Gibbs-вариационное тождество
+\begin{equation}
+ \Phi_\theta(p)-\Phi_\theta(p(\theta))
+ =D\!\left(\rho_p\middle\|\rho_\theta\right)\ge0,
+ \label{eq:v8-baryon-c0-central-gap-relative-entropy-identity}
+\end{equation}
+причём равновесное значение равно
+\begin{equation}
+ \Phi_\theta(p(\theta))=-\log\left(1+3e^{-\theta}\right).
+ \label{eq:v8-baryon-c0-central-gap-equilibrium-free-energy}
+\end{equation}
+Это доказывает достаточность $\theta$, но не выводит его значение.
+
+\section{Что равновесие не идентифицирует}
+
+Преобразование
+\begin{equation}
+ (\beta,\Delta)\longmapsto
+ \left(\frac{\beta}{a},a\Delta\right),
+ \qquad a>0,
+ \label{eq:v8-baryon-c0-central-gap-temperature-energy-orbit}
+\end{equation}
+сохраняет $\theta$, $p$, $r$ и всю равновесную матрицу плотности. Поэтому
+равновесный вес не различает температуру и физическую энергетическую щель.
+Кроме того, Davies-скорости требуют спектральной плотности среды и не
+следуют из одной $\rho_\theta$.
+
+Минимальный контракт распадается на три слоя:
+\begin{equation}
+ \underbrace{\theta=\beta\Delta}_{\text{центральный вес}},
+ \qquad
+ \underbrace{\beta\ \text{или}\ \Delta_{\rm phys}}_{\text{абсолютная энергия}},
+ \qquad
+ \underbrace{\kappa_{\rm bath}>0}_{\text{время релаксации}}.
+ \label{eq:v8-baryon-c0-central-gap-three-data-layers}
+\end{equation}
+Для текущего вопроса нужен только первый слой. Он одномерен, но всё ещё не
+получен из родителя:
+\begin{equation}
+ \dim\mathcal S_{\rm weight}^{\min}=1,
+ \qquad
+ N_{\rm derived}(\theta)=0/1.
+ \label{eq:v8-baryon-c0-central-gap-minimal-data-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальность безразмерной центральной щели]
+С точностью до общего сдвига энергии всякий $SO(3)$-инвариантный
+гамильтониан типа $\mathbf1\oplus\mathbf3$ задаётся одной щелью $\Delta$.
+При фиксированной температуре, а в безразмерной формулировке без неё,
+единственное необходимое и достаточное данное для выбора $p\in(0,1)$ есть
+$\theta=\beta\Delta$. Gibbs-вариационный функционал имеет при этом
+единственный минимум $p(\theta)$.
+\end{theorem}
+
+\begin{nogocriterion}[Равновесный вес не задаёт энергию и скорость]
+Нельзя извлечь из одного $p$ раздельные значения $\beta$ и
+$\Delta_{\rm phys}$: они лежат на масштабной орбите с постоянным
+$\beta\Delta$. Нельзя также считать $r=e^{-\theta}$ абсолютной скоростью
+релаксации без корреляционной нормы среды.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item допустимый центральный гамильтониан: \textbf{$\varepsilon I_4+\Delta P_{\mathbf3}$};
+\item общий сдвиг энергии физически различим: \textbf{нет};
+\item минимальный селектор веса: \textbf{$\theta=\beta\Delta$};
+\item пространство селектора: \textbf{$\mathbb R$};
+\item отображение $\theta\mapsto p$: \textbf{биективно};
+\item Gibbs-минимум: \textbf{единственный};
+\item $\beta$ и $\Delta$ отдельно идентифицируются: \textbf{нет};
+\item скорость релаксации определяется равновесием: \textbf{нет};
+\item размерность минимальных данных веса: \textbf{$1$};
+\item выведено текущим родителем: \textbf{$0/1$};
+\item следующий гейт: \textbf{происхождение центральной щели из родительского действия}.
+\end{enumerate}\end{protocol}
+
+Литературная опора: E.~T.~Jaynes, \emph{Information Theory and Statistical
+Mechanics}; E.~B.~Davies, \emph{Markovian Master Equations};
+F.~Fagnola и V.~Umanit\`a, \emph{Generators of Detailed Balance Quantum
+Markov Semigroups}; Gibbs-вариационная формула в arXiv:2111.10282.
+
+Машинный сертификат сохранён в
+\path{s2t_v8_baryon_c0_singlet_triplet_central_weight_minimal_hamiltonian_data_gate_results.json}.
