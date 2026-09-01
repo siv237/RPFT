@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_logdet_reservoir_spectral_density_parent_origin_gate",
+  "ledgers": {
+    "conductances_determine_logdet_satisfied": 0,
+    "conductances_determine_logdet_tested": 1,
+    "equal_on_shell_conductances_satisfied": 3,
+    "equal_on_shell_conductances_tested": 3,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "positive_reservoir_profiles_satisfied": 2,
+    "positive_reservoir_profiles_tested": 2,
+    "reservoir_spectral_density_parent_origin_satisfied": 0,
+    "reservoir_spectral_density_parent_origin_tested": 1,
+    "unique_off_shell_spectral_density_satisfied": 0,
+    "unique_off_shell_spectral_density_tested": 1
+  },
+  "next_gate": "version9_endpoint_creation_kms_logdet_reservoir_measure_anomaly_parent_origin_gate",
+  "off_shell_witness": {
+    "baseline_first_moment": 8,
+    "baseline_zeroth_moment": 4,
+    "first_moment_defect": "214/105",
+    "perturbed_first_moment": "1054/105",
+    "perturbed_zeroth_moment": "527/105",
+    "same_rates_determine_bath_logdet": false,
+    "same_rates_different_self_energy_asymptotics": true,
+    "zeroth_moment_defect": "107/105"
+  },
+  "on_shell_map": {
+    "baseline_rates": [
+      1,
+      1,
+      1
+    ],
+    "evaluation_nullity": 4,
+    "evaluation_rank": 3,
+    "one_rate_normalization_rank": 1,
+    "perturbed_rates": [
+      1,
+      1,
+      1
+    ],
+    "polynomial_dimension": 7,
+    "relative_type_strength_freedom": 2,
+    "weighted_normalization": 5
+  },
+  "predecessor": "version9_endpoint_creation_kms_logdet_keldysh_influence_functional_admission_gate",
+  "proofdsl": {
+    "analytic_boundary": "Global positivity follows from the displayed square profile; the exact certificate checks sampling, moments and asymptotic coefficients",
+    "certificate_sha256": "e7eef77d6c93e764d28d10fa8813a41376d7f42145d7c708a44344772eaee67a",
+    "floating_point_values": 0,
+    "gate_identifier": "version9_endpoint_creation_kms_logdet_reservoir_spectral_density_parent_origin_gate",
+    "obligation_count": 12,
+    "obligations": [
+      "on_shell_evaluation_rank_three",
+      "off_shell_kernel_profile",
+      "equal_on_shell_rates",
+      "flat_zeroth_moment",
+      "deformed_zeroth_moment",
+      "positive_zeroth_moment_defect",
+      "flat_first_moment",
+      "deformed_first_moment",
+      "positive_first_moment_defect",
+      "rate_normalization_rank_one",
+      "rate_vector_blindness",
+      "offshell_self_energy_difference"
+    ],
+    "status": "lcf-checked"
+  },
+  "spectral_profiles": {
+    "baseline": "J0(omega)=1",
+    "both_positive": true,
+    "deformation": "q=(omega-1)^2(omega-2)^2(omega-3)^2",
+    "gaps": [
+      1,
+      2,
+      3
+    ],
+    "interval": [
+      0,
+      4
+    ],
+    "perturbed": "J1(omega)=1+q/16"
+  },
+  "verdict": {
+    "bath_logdet_is_unique_from_rates": false,
+    "off_shell_self_energy_is_unique_from_rates": false,
+    "on_shell_rates_can_be_reproduced": true,
+    "physical_logdet_parent_derived": false,
+    "reservoir_parent_origin_derived": false,
+    "spectral_density_is_unique_from_rates": false
+  }
+}

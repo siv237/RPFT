@@ -43,6 +43,33 @@
 - цепно-модульный родитель: 13 точных боровских пар с частотами `±2`,
   gauge-инвариантность и две примитивные ориентации с отношениями
   `exp(-2)` и `exp(2)`.
+- первый гейт Version 9: invariant logdet parent двух KMS-shapes;
+  десять обязательств проверяют weighted trace/determinant, stationary
+  gradient, точные spectra и полный Hessian rank/determinant `12/(5184/25)`.
+- второй гейт Version 9: measure-origin logdet parent; десять обязательств
+  проверяют determinant degrees `5/10`, fermionic/bosonic signs и
+  несовпадение coordinate Jacobian с invariant determinant.
+- третий гейт Version 9: auxiliary fermion module admission; десять
+  обязательств проверяют type/package decomposition, odd parity,
+  determinant degree `10`, physical decoupling и Berezin rank `20`.
+- четвёртый гейт Version 9: statistics parent-origin; десять обязательств
+  проверяют все odd ranks `2,5,5,8`, package-swap no-go, rank-two defect
+  и paired Berezin Jacobian cancellation.
+- пятый гейт Version 9: minimal BRST complex; десять обязательств проверяют
+  nilpotence, rank/nullity `20/20`, zero cohomology, ghost-number degree,
+  FP determinant и physical decoupling.
+- шестой гейт Version 9: BRST shift-origin; десять обязательств проверяют
+  required rank `10`, inherited ranks `6/4/1/0`, flat spectator Hessian
+  и нарушение translations любой positive quadratic формой.
+- седьмой гейт Version 9: minimal Stückelberg parent; десять обязательств
+  проверяют orbit/kernel ranks `10/10`, positive spectrum, FP determinant
+  и exact boson/ghost determinant cancellation.
+- восьмой гейт Version 9: physical fermion-loop origin; одиннадцать
+  обязательств проверяют physical rank `5`, determinant degrees `5/10`,
+  Real-pairing mismatch rank `10`, doubled и composite kernel identities.
+- девятый гейт Version 9: minimal fermion bath; двенадцать обязательств
+  проверяют carrier/coupling ranks `10/5`, Schur determinant, positive
+  witness spectrum и determinant defect `1024-243=781`.
 
 ## Доверенная граница
 

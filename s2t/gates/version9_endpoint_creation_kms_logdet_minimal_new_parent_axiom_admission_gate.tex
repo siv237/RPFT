@@ -1,0 +1,137 @@
+\chapter{Допуск минимальной новой аксиомы родительского функционала логарифма определителя KMS}
+\label{ch:v9-kms-minimal-logdet-axiom}
+
+\section{Честная смена статуса}
+
+Предыдущие origin-гейты исключили inherited fermion measure, BRST,
+physical loop, finite bath, Keldysh normalization, spectral density и
+аномалия меры. Поэтому следующий допустимый шаг не называется выводом.
+Проверяется минимальное аксиоматическое расширение
+\begin{equation}
+ B_\lambda(R_\theta,R_\kappa)
+ =-\lambda\bigl(\log\det R_\theta+\log\det R_\kappa\bigr),
+ \qquad \lambda>0.
+ \label{eq:v9-kms-axiom-functional}
+\end{equation}
+на positive type-operators с constraints
+\begin{equation}
+ \Tr R_\theta=\Tr R_\kappa=5.
+ \label{eq:v9-kms-axiom-traces}
+\end{equation}
+
+\section{Один term и четыре directions}
+
+В log-ratio coordinates $(x_1,x_2,y_1,y_2)$ functional равен
+\begin{equation}
+ B_\lambda=\lambda\sum_{(u,v)=(x_1,x_2),(y_1,y_2)}
+ \left[5\log\frac{e^u+e^v+3}{5}-u-v\right].
+ \label{eq:v9-kms-axiom-log-chart}
+\end{equation}
+Isotropic point стационарен при любом $\lambda>0$:
+\begin{equation}
+ \nabla B_\lambda(0,0,0,0)=0.
+ \label{eq:v9-kms-axiom-stationarity}
+\end{equation}
+Его Hessian имеет
+\begin{equation}
+ \rank\Hess B_\lambda=4,
+ \qquad
+ \det\Hess B_\lambda=\frac9{25}\lambda^4.
+ \label{eq:v9-kms-axiom-hessian}
+\end{equation}
+При unit normalization spectrum равен
+\begin{equation}
+ \Spec\Hess B_1=\{(3/5)^{(2)},1^{(2)}\}.
+ \label{eq:v9-kms-axiom-spectrum}
+\end{equation}
+Следовательно, один invariant scalar term управляет всеми четырьмя
+relative-shape directions. При удалении axiom
+\begin{equation}
+ \rank\Hess B_0=0,
+ \label{eq:v9-kms-axiom-zero-rank}
+\end{equation}
+то есть все четыре directions снова свободны.
+
+\section{Sign и exact witness}
+
+На weighted trace slice возьмём
+\begin{equation}
+ (r_s,r_a,r_t)=\left(\frac12,1,\frac76\right),
+ \qquad r_s+r_a+3r_t=5.
+ \label{eq:v9-kms-axiom-sign-witness}
+\end{equation}
+Его determinant равен
+\begin{equation}
+ \det R=\frac{343}{432}<1,
+ \qquad 1-\det R=\frac{89}{432}>0.
+ \label{eq:v9-kms-axiom-witness-determinant}
+\end{equation}
+Для двух packages
+\begin{equation}
+ (\det R)^2=\frac{117649}{186624}<1.
+ \label{eq:v9-kms-axiom-doubled-witness}
+\end{equation}
+Положительный знак $\lambda$ штрафует anisotropy; отрицательный знак
+неограничен снизу при приближении eigenvalue к нулю. Поэтому sign является
+обязательным дискретным datum.
+
+\section{Что именно добавлено}
+
+Minimum не зависит от magnitude положительного coefficient:
+\begin{equation}
+ R_\theta^{\min}=R_\kappa^{\min}=I_5
+ \qquad (\lambda>0).
+ \label{eq:v9-kms-axiom-minimum}
+\end{equation}
+Но fluctuation stiffness зависит от него как
+\begin{equation}
+ \det\Hess B_\lambda\propto\lambda^4.
+ \label{eq:v9-kms-axiom-stiffness}
+\end{equation}
+Значит, для shape selection минимально добавляется один functional form и
+его positive orientation; численное $\lambda$ остаётся новой непрерывной
+stiffness, если требуются fluctuations или coupling к другим sectors.
+
+\section{ProofDSL и итог}
+
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=11/11,
+ \qquad N_{\rm registered\ gates}=61,
+ \qquad N_{\rm registered\ obligations}=503.
+ \label{eq:v9-kms-axiom-proofdsl}
+\end{equation}
+\begin{equation}
+ \begin{aligned}
+ N_{\rm minimal\ axiom\ admission}&=1/1,\\
+ N_{\rm relative\ shape\ selection}&=4/4,\\
+ N_{\rm positive\ sign}&=1/1,\\
+ N_{\rm stiffness\ parent\ origin}&=0/1,\\
+ N_{\rm physical\ logdet\ derivation}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-axiom-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальность аксиоматического расширения]
+Один positive invariant логарифм определителя term имеет rank four и условно выбирает все
+relative KMS shapes. Ни один дополнительный component-wise source для этой
+цели не требуется.
+\end{theorem}
+
+\begin{nogocriterion}[Admission не является derivation]
+Functional form и его знак добавлены как новая аксиома. Значение stiffness
+$\lambda$ не выводится, а прежний parent-origin ledger остаётся нулевым.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item new functional packages: \textbf{$1$};
+\item controlled shape directions: \textbf{$4/4$};
+\item unit spectrum: \textbf{$3/5,3/5,1,1$};
+\item required sign: \textbf{positive};
+\item continuous stiffness origin: \textbf{$0/1$};
+\item physical derivation: \textbf{$0/1$};
+\item ProofDSL: \textbf{$11/11$, registry $61/503$};
+\item следующий гейт: \textbf{axiom-augmented common-parent closure}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_minimal_new_parent_axiom_admission_gate_results.json}.

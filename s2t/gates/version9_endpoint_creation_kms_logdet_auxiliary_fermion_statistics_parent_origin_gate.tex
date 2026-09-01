@@ -1,0 +1,199 @@
+\chapter{Происхождение нечётной статистики вспомогательного фермионного модуля}
+\label{ch:v9-kms-aux-fermion-statistics-origin}
+
+\section{Проверяемая grading}
+
+На five-channel creation-frame уже имеется физическая channel-grading
+\begin{equation}
+ \Gamma_{\rm type}=\operatorname{diag}(+1,-1,+1,+1,+1),
+ \qquad
+ \Spec\Gamma_{\rm type}=\{-1^{(1)},+1^{(4)}\}.
+ \label{eq:v9-kms-aux-statistics-type-grading}
+\end{equation}
+Она классифицирует parity operators $C_s,C_a,C_t$, но не является
+Grassmann parity интеграционных координат. Fermionic determinant требует
+\begin{equation}
+ \Gamma_{\rm target}=-I_{10},
+ \qquad
+ \rank P_{\rm odd}(\Gamma_{\rm target})=10.
+ \label{eq:v9-kms-aux-statistics-target}
+\end{equation}
+
+\section{Все tensor-product grading candidates}
+
+Пусть две package-lines имеют uniform signs
+$\varepsilon_\theta,\varepsilon_\kappa\in\{\pm1\}$. Единственная grading,
+получаемая tensorially из зарегистрированных данных, равна
+\begin{equation}
+ \Gamma(\varepsilon_\theta,\varepsilon_\kappa)
+ =(\varepsilon_\theta\Gamma_{\rm type})
+  \oplus(\varepsilon_\kappa\Gamma_{\rm type}).
+ \label{eq:v9-kms-aux-statistics-tensor-candidates}
+\end{equation}
+Точный перебор четырёх случаев даёт odd ranks
+\begin{equation}
+ \begin{array}{c|cccc}
+ (\varepsilon_\theta,\varepsilon_\kappa)&(+,+)&(+,-)&(-,+)&(-,-)\\ \hline
+ \rank P_{\rm odd}&2&5&5&8 .
+ \end{array}
+ \label{eq:v9-kms-aux-statistics-rank-table}
+\end{equation}
+Следовательно,
+\begin{equation}
+ 10\notin\{2,5,5,8\},
+ \qquad
+ \Gamma_{\rm target}\neq
+ \Gamma(\varepsilon_\theta,\varepsilon_\kappa)
+ \quad\text{для всех четырёх choices}.
+ \label{eq:v9-kms-aux-statistics-rank-no-go}
+\end{equation}
+
+\section{Package-swap усиливает запретительный результат}
+
+Ковариантность относительно $W(\theta\leftrightarrow\kappa)$ требует
+\begin{equation}
+ [W,\Gamma(\varepsilon_\theta,\varepsilon_\kappa)]=0
+ \quad\Longleftrightarrow\quad
+ \varepsilon_\theta=\varepsilon_\kappa.
+ \label{eq:v9-kms-aux-statistics-swap-condition}
+\end{equation}
+Значит, после package symmetry остаются только
+\begin{equation}
+ \rank P_{\rm odd}\in\{2,8\},
+ \label{eq:v9-kms-aux-statistics-swap-ranks}
+\end{equation}
+и target rank $10$ тем более недостижим.
+
+Ближайший inherited candidate есть $(-,-)$:
+\begin{equation}
+ \Gamma_{--}=(-\Gamma_{\rm type})\oplus(-\Gamma_{\rm type}),
+ \qquad \rank P_{\rm odd}(\Gamma_{--})=8.
+ \label{eq:v9-kms-aux-statistics-closest}
+\end{equation}
+Его defect относительно all-odd grading имеет rank two,
+\begin{equation}
+ \rank(\Gamma_{\rm target}-\Gamma_{--})=2,
+ \qquad
+ \operatorname{supp}(\Gamma_{\rm target}-\Gamma_{--})
+ =\{\theta_a,\kappa_a\}.
+ \label{eq:v9-kms-aux-statistics-defect}
+\end{equation}
+Исправление требует component-specific flip именно двух $a$-copies, то
+есть нового selector, уже знающего target grading.
+
+\section{Почему остальные inherited структуры не помогают}
+
+Real conjugation $J$ антилинейно, KMS modular data задают reverse ratios,
+а transport ориентирует channel flow. Ни один из этих операторов не задаёт
+ghost number или nilpotent differential:
+\begin{equation}
+ N_{\rm inherited\ ghost\ number}=0/1,
+ \qquad
+ N_{\rm inherited\ nilpotent\ BRST\ differential}=0/1.
+ \label{eq:v9-kms-aux-statistics-brst-absence}
+\end{equation}
+Constant choice
+\begin{equation}
+ \Gamma_{\rm aux}:=-I_{10},
+ \qquad \Gamma_{\rm aux}^2=I_{10},
+ \label{eq:v9-kms-aux-statistics-conditional-seed}
+\end{equation}
+математически корректен, но является прямым parity seed, а не выводом из
+four-slot parent.
+
+\section{Measure orientation после условного parity choice}
+
+После выбора odd statistics paired complex measure не несёт дополнительной
+component-wise freedom. При
+\begin{equation}
+ \psi'=S\psi,
+ \qquad
+ \bar\psi'=\bar\psi S^{-1}
+ \label{eq:v9-kms-aux-statistics-dual-change}
+\end{equation}
+две Berezin Jacobian factors взаимно сокращаются:
+\begin{equation}
+ J_{\psi,\bar\psi}=\det S\,\det S^{-1}=1.
+ \label{eq:v9-kms-aux-statistics-jacobian-cancellation}
+\end{equation}
+Общий ненулевой normalization factor $c$ меняет effective action только
+на слепую additive constant:
+\begin{equation}
+ -\log\!\left(c\,\det D_{\rm aux}\right)
+ =-\log\det D_{\rm aux}-\log c.
+ \label{eq:v9-kms-aux-statistics-normalization}
+\end{equation}
+Поэтому отдельная relative measure orientation не остаётся физическим
+selector-параметром:
+\begin{equation}
+ N_{\rm paired\ measure\ covariance}=1/1,
+ \qquad
+ N_{\rm independent\ measure\ orientation\ freedom}=0.
+ \label{eq:v9-kms-aux-statistics-measure-ledger}
+\end{equation}
+
+\section{ProofDSL и итог}
+
+LCF-слой проверяет spectrum физической grading, все четыре package choices,
+swap covariance, rank-two defect, all-odd involution и Jacobian cancellation:
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=10/10,
+ \qquad
+ N_{\rm registered\ gates}=52,
+ \qquad
+ N_{\rm registered\ obligations}=402.
+ \label{eq:v9-kms-aux-statistics-proofdsl}
+\end{equation}
+Origin-ledger равен
+\begin{equation}
+ \begin{aligned}
+ N_{\rm statistics\ origin\ candidates}&=0/6,\\
+ N_{\rm conditional\ all\ odd\ grading}&=1/1,\\
+ N_{\rm paired\ measure\ covariance}&=1/1,\\
+ N_{\rm unresolved\ statistics\ data}&=1,\\
+ N_{\rm physical\ logdet\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-aux-statistics-final-ledger}
+\end{equation}
+
+\begin{theorem}[Measure freedom сокращается до одной statistics choice]
+Ни одна tensor-product grading из физической channel-grading и uniform
+package parities не делает все десять auxiliary directions нечётными.
+Однако после условного выбора $-I_{10}$ paired complex Berezin density
+ковариантна относительно dual basis changes, а её normalization влияет
+только на additive constant. Поэтому открытым остаётся один, а не два
+структурных datum: происхождение Grassmann statistics.
+\end{theorem}
+
+\begin{nogocriterion}[Нечётность не следует из физической grading]
+Нельзя отождествлять operator parity creation-channels с Grassmann parity
+auxiliary integration variables. Ближайший swap-covariant inherited
+candidate имеет odd rank $8$, а исправляющий rank-two flip прямо кодирует
+нужный результат. Для физического origin необходим gauge redundancy и
+nilpotent BRST/BV differential либо другой независимый statistics-parent.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item inherited odd ranks: \textbf{$2,5,5,8$};
+\item swap-covariant odd ranks: \textbf{$2,8$};
+\item target odd rank: \textbf{$10$};
+\item closest defect rank: \textbf{$2$};
+\item paired measure covariance: \textbf{$1/1$};
+\item statistics origin: \textbf{$0/1$};
+\item ProofDSL: \textbf{$10/10$, registry $52/402$};
+\item следующий гейт: \textbf{minimal BRST complex architecture}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_auxiliary_fermion_statistics_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-statistics-bv}
+G.~Barnich, F.~Brandt, M.~Henneaux,
+\emph{Local BRST cohomology in gauge theories},
+Phys. Rept. \textbf{338} (2000), 439--569, arXiv:hep-th/0002245.
+\bibitem{v9-kms-statistics-berezin}
+G.~Grensing, M.~Nitschmann,
+\emph{Berezin integration over anticommuting variables and cyclic
+cohomology}, arXiv:hep-th/0401231.
+\end{thebibliography}

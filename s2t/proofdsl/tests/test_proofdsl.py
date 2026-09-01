@@ -116,6 +116,69 @@ from s2t.proofdsl.examples.version8_full_noise_toeplitz_ancilla_chain import bui
 from s2t.proofdsl.examples.version8_vacuum_chain_parent_state_and_local_hamiltonian_origin import build_certificate as build_vacuum_chain_parent_state_and_local_hamiltonian_origin_certificate
 from s2t.proofdsl.examples.version8_index_balanced_ancilla_conveyor import build_certificate as build_index_balanced_ancilla_conveyor_certificate
 from s2t.proofdsl.examples.version8_static_local_hamiltonian_embedding_no_go import build_certificate as build_static_local_hamiltonian_embedding_no_go_certificate
+from s2t.proofdsl.examples.version9_kms_relative_shape_invariant_parent import (
+    build_certificate as build_version9_kms_relative_shape_invariant_parent_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_logdet_measure_origin import (
+    build_certificate as build_version9_kms_logdet_measure_origin_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_auxiliary_fermion_module_admission import (
+    build_certificate as build_version9_kms_auxiliary_fermion_module_admission_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_auxiliary_fermion_statistics_origin import (
+    build_certificate as build_version9_kms_auxiliary_fermion_statistics_origin_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_minimal_brst_complex import (
+    build_certificate as build_version9_kms_minimal_brst_complex_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_brst_shift_symmetry_origin import (
+    build_certificate as build_version9_kms_brst_shift_symmetry_origin_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_minimal_stueckelberg_shift_parent import (
+    build_certificate as build_version9_kms_minimal_stueckelberg_shift_parent_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_physical_fermion_loop_origin import (
+    build_certificate as build_version9_kms_physical_fermion_loop_origin_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_minimal_fermion_bath import (
+    build_certificate as build_version9_kms_minimal_fermion_bath_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_keldysh_influence_functional import (
+    build_certificate as build_version9_kms_keldysh_influence_functional_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_reservoir_spectral_density_origin import (
+    build_certificate as build_version9_kms_reservoir_spectral_density_origin_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_reservoir_measure_anomaly_origin import (
+    build_certificate as build_version9_kms_reservoir_measure_anomaly_origin_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_minimal_new_parent_axiom import (
+    build_certificate as build_version9_kms_minimal_new_parent_axiom_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_axiom_augmented_common_parent import (
+    build_certificate as build_version9_kms_axiom_augmented_common_parent_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_axiom_augmented_blind_prediction import (
+    build_certificate as build_version9_kms_axiom_augmented_blind_prediction_certificate,
+)
+from s2t.proofdsl.examples.version9_kms_conditional_program_status import (
+    build_certificate as build_version9_kms_conditional_program_status_certificate,
+)
+from s2t.proofdsl.examples.version9_physical_origin_reopening_criterion import (
+    build_certificate as build_version9_physical_origin_reopening_criterion_certificate,
+)
+from s2t.proofdsl.examples.version9_physical_reopening_common_origin_carrier import (
+    build_certificate as build_version9_physical_reopening_common_origin_carrier_certificate,
+)
+from s2t.proofdsl.examples.version9_gaussian_reference_state_parent_origin import (
+    build_certificate as build_version9_gaussian_reference_state_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version9_reference_scale_mu_parent_origin import (
+    build_certificate as build_version9_reference_scale_mu_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version9_final_conclusion_tome10_program import (
+    build_certificate as build_version9_final_conclusion_tome10_program_certificate,
+)
 from s2t.proofdsl.examples.spinodal_threshold import (
     build_certificate as build_spinodal_certificate,
 )
@@ -720,8 +783,236 @@ def test_gate_template_requires_kernel_theorems() -> None:
 def test_registered_gate_registry() -> None:
     result = verify_all()
     assert result["status"] == "lcf-checked"
-    assert result["gate_count"] == 48
-    assert result["obligation_count"] == 362
+    assert result["gate_count"] == 69
+    assert result["obligation_count"] == 585
+
+
+def test_version9_final_conclusion_tome10_program_is_exact() -> None:
+    certificate = build_version9_final_conclusion_tome10_program_certificate()
+    assert sum(certificate.conditional) == 6
+    assert sum(certificate.physical) == 3
+    assert certificate.physical + certificate.deficit == certificate.conditional
+    assert certificate.tome10_dependency.rank() == 6
+    assert certificate.tome10_dependency.det() == 1
+    assert sum(certificate.tome10_construction) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_relative_shape_invariant_parent_is_exact() -> None:
+    certificate = build_version9_kms_relative_shape_invariant_parent_certificate()
+    assert certificate.constrained_hessian == sp.ImmutableMatrix(
+        [[sp.Rational(4, 3), sp.Rational(1, 3)],
+         [sp.Rational(1, 3), sp.Rational(4, 3)]]
+    )
+    assert certificate.doubled_hessian.rank() == 4
+    assert certificate.log_ratio_hessian.det() == sp.Rational(3, 5)
+    assert certificate.common_hessian.rank() == 12
+    assert certificate.common_hessian.det() == sp.Rational(5184, 25)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_logdet_measure_origin_is_exact() -> None:
+    certificate = build_version9_kms_logdet_measure_origin_certificate()
+    assert certificate.type_operator.det() == sp.prod(certificate.type_operator.diagonal())
+    assert certificate.doubled_operator.shape == (10, 10)
+    u, v = sp.symbols("u v", real=True)
+    assert sp.simplify(certificate.chart_jacobian.det()).has(sp.exp(u), sp.exp(v))
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_auxiliary_fermion_module_admission_is_exact() -> None:
+    certificate = build_version9_kms_auxiliary_fermion_module_admission_certificate()
+    assert certificate.auxiliary_operator.shape == (10, 10)
+    assert certificate.package_theta.rank() == 5
+    assert certificate.package_kappa.rank() == 5
+    assert certificate.odd_parity == -sp.eye(10)
+    assert certificate.berezin_pairing.shape == (20, 20)
+    assert certificate.berezin_pairing.rank() == 20
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_auxiliary_fermion_statistics_origin_is_exact() -> None:
+    certificate = build_version9_kms_auxiliary_fermion_statistics_origin_certificate()
+    negative_ranks = [
+        sum(1 for value in grading.diagonal() if value == -1)
+        for grading in certificate.candidate_gradings
+    ]
+    assert negative_ranks == [2, 5, 5, 8]
+    assert certificate.target_grading == -sp.eye(10)
+    assert certificate.closest_defect.rank() == 2
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_minimal_brst_complex_is_exact() -> None:
+    certificate = build_version9_kms_minimal_brst_complex_certificate()
+    assert certificate.brst_differential.shape == (40, 40)
+    assert certificate.brst_differential**2 == sp.zeros(40)
+    assert certificate.brst_differential.rank() == 20
+    assert len(certificate.brst_differential.nullspace()) == 20
+    assert certificate.fp_operator.shape == (10, 10)
+    assert certificate.fp_operator.rank() == 10
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_brst_shift_symmetry_origin_is_exact() -> None:
+    certificate = build_version9_kms_brst_shift_symmetry_origin_certificate()
+    assert certificate.required_shift_map.rank() == 10
+    assert certificate.kms_parameter_tangent.rank() == 6
+    assert len(certificate.kms_parameter_tangent.T.nullspace()) == 4
+    assert certificate.normalized_shape_tangent.rank() == 4
+    assert len(certificate.phase_laplacian.nullspace()) == 1
+    assert certificate.trivial_parent_hessian.rank() == 0
+    assert certificate.positive_parent_hessian.rank() == 10
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_minimal_stueckelberg_shift_parent_is_exact() -> None:
+    certificate = build_version9_kms_minimal_stueckelberg_shift_parent_certificate()
+    assert certificate.orbit_map.shape == (20, 10)
+    assert certificate.orbit_map.rank() == 10
+    assert certificate.invariant_map * certificate.orbit_map == sp.zeros(10)
+    assert certificate.parent_hessian.rank() == 10
+    assert len(certificate.parent_hessian.nullspace()) == 10
+    assert certificate.isotropic_hessian.eigenvals() == {sp.Integer(0): 10, sp.Integer(2): 10}
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_physical_fermion_loop_origin_is_exact() -> None:
+    certificate = build_version9_kms_physical_fermion_loop_origin_certificate()
+    assert certificate.target_projector.rank() == 5
+    assert certificate.gap_operator.shape == (5, 5)
+    assert certificate.doubled_operator.shape == (10, 10)
+    assert certificate.real_lift.det() == certificate.gap_operator.det()**2
+    assert certificate.composite_kernel.det() == certificate.doubled_operator.det()
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_minimal_fermion_bath_is_exact() -> None:
+    certificate = build_version9_kms_minimal_fermion_bath_certificate()
+    assert certificate.full_kernel.shape == (10, 10)
+    assert certificate.coupling_operator.rank() == 5
+    assert certificate.stable_witness.eigenvals() == {
+        sp.Integer(1): 5,
+        sp.Integer(3): 5,
+    }
+    assert certificate.stable_witness.det() == 243
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_keldysh_influence_functional_is_exact() -> None:
+    certificate = build_version9_kms_keldysh_influence_functional_certificate()
+    assert certificate.full_kernel.shape == (10, 10)
+    assert certificate.damping_operator.rank() == 5
+    assert certificate.keldysh_block.rank() == 5
+    assert certificate.full_kernel[5:10, 0:5] == sp.zeros(5)
+    assert certificate.advanced_kernel == certificate.retarded_kernel.H
+    assert sp.simplify(certificate.witness_kernel.det()) == 32768
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_reservoir_spectral_density_origin_is_exact() -> None:
+    certificate = build_version9_kms_reservoir_spectral_density_origin_certificate()
+    assert certificate.evaluation_map.rank() == 3
+    assert len(certificate.evaluation_map.nullspace()) == 4
+    assert certificate.evaluation_map * certificate.kernel_profile_coefficients == sp.zeros(3, 1)
+    assert certificate.baseline_rates == certificate.perturbed_rates == sp.ones(3, 1)
+    assert certificate.normalization_map.rank() == 1
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_reservoir_measure_anomaly_origin_is_exact() -> None:
+    certificate = build_version9_kms_reservoir_measure_anomaly_origin_certificate()
+    assert certificate.inherited_coefficients.rank() == 3
+    assert sp.ImmutableMatrix.vstack(
+        certificate.inherited_coefficients, certificate.target_coefficients
+    ).rank() == 4
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_minimal_new_parent_axiom_is_exact() -> None:
+    certificate = build_version9_kms_minimal_new_parent_axiom_certificate()
+    assert certificate.hessian.rank() == 4
+    assert certificate.zero_hessian.rank() == 0
+    assert certificate.unit_hessian.eigenvals() == {
+        sp.Rational(3, 5): 2, sp.Integer(1): 2,
+    }
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_axiom_augmented_common_parent_is_exact() -> None:
+    certificate = build_version9_kms_axiom_augmented_common_parent_certificate()
+    assert certificate.common_hessian.rank() == 14
+    assert certificate.common_hessian.det() == sp.Rational(5184, 25)
+    assert certificate.common_gradient == sp.zeros(14, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_axiom_augmented_blind_prediction_is_exact() -> None:
+    certificate = build_version9_kms_axiom_augmented_blind_prediction_certificate()
+    assert certificate.contrast.rank() == 2
+    assert certificate.contrast * certificate.gap_vector == sp.zeros(2, 1)
+    assert certificate.contrast * certificate.conductance_vector == sp.zeros(2, 1)
+    assert certificate.response_vector == sp.ones(3, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_kms_conditional_program_status_is_exact() -> None:
+    certificate = build_version9_kms_conditional_program_status_certificate()
+    assert sum(certificate.conditional) == 6
+    assert sum(certificate.physical) == 3
+    assert certificate.physical + certificate.axiom_dependency == certificate.conditional
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_physical_origin_reopening_criterion_is_exact() -> None:
+    certificate = build_version9_physical_origin_reopening_criterion_certificate()
+    assert certificate.package_map.rank() == 2
+    assert certificate.package_map * certificate.conditional_packages == certificate.deficit
+    assert certificate.package_map * certificate.physical_packages == sp.zeros(3, 1)
+    assert sp.Matrix.hstack(certificate.package_map[:, 0], certificate.deficit).rank() == 2
+    assert sp.Matrix.hstack(certificate.package_map[:, 1], certificate.deficit).rank() == 2
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_physical_reopening_common_origin_carrier_is_exact() -> None:
+    certificate = build_version9_physical_reopening_common_origin_carrier_certificate()
+    assert certificate.common_operator.shape == (10, 10)
+    assert certificate.common_hessian.rank() == 6
+    assert certificate.common_hessian.det() == 36
+    assert certificate.common_hessian.eigenvals() == {
+        15 - 5 * sp.sqrt(5): 1,
+        15 + 5 * sp.sqrt(5): 1,
+        sp.Integer(1): 2,
+        sp.Rational(3, 5): 2,
+    }
+    assert certificate.scale_orbit_map.rank() == 1
+    assert len(certificate.scale_orbit_map.nullspace()) == 1
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_gaussian_reference_state_parent_origin_is_exact() -> None:
+    certificate = build_version9_gaussian_reference_state_parent_origin_certificate()
+    assert certificate.drift.shape == (10, 10)
+    assert certificate.stationary_covariance == (
+        certificate.diffusion[0, 0] / certificate.drift[0, 0]
+    ) * sp.eye(10)
+    assert certificate.lyapunov_map.rank() == 55
+    assert len(certificate.lyapunov_map.nullspace()) == 0
+    assert certificate.ratio_orbit_map.rank() == 1
+    assert len(certificate.ratio_orbit_map.nullspace()) == 1
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version9_reference_scale_mu_parent_origin_is_exact() -> None:
+    certificate = build_version9_reference_scale_mu_parent_origin_certificate()
+    assert certificate.candidate_matrix.shape == (8, 5)
+    assert certificate.candidate_matrix.rank() == 4
+    assert certificate.candidate_matrix[:, 2] == sp.zeros(8, 1)
+    assert certificate.pass_vector == sp.zeros(8, 1)
+    assert certificate.relative_scale_map.rank() == 7
+    assert len(certificate.relative_scale_map.nullspace()) == 1
+    assert certificate.relative_scale_map * sp.ones(8, 1) == sp.zeros(7, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
 
 
 def test_lindblad_constructor_and_trace_preservation() -> None:

@@ -2,7 +2,7 @@
 
 > Status: working
 > Type: synthesis
-> Updated: 2026-08-31
+> Updated: 2026-09-01
 
 ## Summary
 
@@ -2087,6 +2087,360 @@ parent-origin `0/6`.
 - **Граница:** creation parent-origin `1/4`, rate origin `0/3`; требуется
   reverse-jump/KMS architecture.
 - Первичная триада: [[version9-endpoint-finite-geometry-creation-operator-parent-origin-gate]].
+
+### Bidirectional KMS completion creation-frame
+
+- **Строго условно:** пять reverse channels дополняют пять creators.
+- **Строго:** paired jump algebra равна `M6(C)`, её коммутант скалярен.
+- **Строго:** exact witness имеет faithful stationary state
+  `diag(12,6,4,3,3,3)/31` и Liouvillian rank/nullity `35/1`.
+- **Граница:** architecture `10/10`, primitive closure `1/1`, parameter
+  origin `0/6`.
+- Первичная триада: [[version9-endpoint-creation-bidirectional-kms-completion-architecture-gate]].
+
+### Parent-origin KMS-щелей и проводимостей
+
+- **Строго:** multiplicity, grading и charge дают type-matrix determinant
+  `6`, rank `3` и различают все channel types.
+- **Строгое no-go:** две weighted normalizations имеют rank `2` и оставляют
+  relative freedom dimension `4`.
+- **Строго:** два normalized primitive witness имеют Liouvillian rank `35`,
+  но разные initial rates `19/12` и `5/3` и разные stationary states.
+- **Строгое no-go:** source-free positive parent имеет unique zero minimum;
+  positive gaps/conductances требуют шести source-компонент.
+- **Граница:** candidate origin `0/7`, gap origin `0/3`, conductance origin
+  `0/3`, physical four-slot parent `0/1`.
+- Первичная триада: [[version9-endpoint-creation-kms-gap-conductance-parent-origin-gate]].
+
+### Invariant logdet parent относительных KMS-shapes
+
+- **Строго условно:** positive type-operator
+  `R=diag(r_s,r_a,r_t I3)` при `Tr R=5` допускает source-free parent
+  `B=-log det R`.
+- **Строго аналитически:** weighted AM–GM даёт единственный минимум
+  `R=I5`; поэтому `q=(1,1,1,1)` и
+  `r_theta=r_kappa=(1,1,1)`.
+- **LCF-checked algebraic core:** constrained Hessian имеет spectrum
+  `{1,5/3}`, log-ratio Hessian — `{3/5,1}`, doubled shape-rank равен `4`,
+  full Hessian rank/determinant — `12/(5184/25)`; ProofDSL `10/10`.
+- **Формальная граница:** weighted AM–GM ещё не является theorem текущего
+  finite-dimensional kernel.
+- **Физическая граница:** происхождение самого logdet parent-term равно
+  `0/1`; conditional source selection `4/4` не закрывает four-slot parent.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-relative-shape-selector-source-minimal-invariant-parent-architecture-gate]].
+
+### Measure-origin invariant logdet parent
+
+- **Строго условно:** complex fermionic Gaussian имеет
+  `Z_F(R)=det R` и даёт `S_eff=-log det R`.
+- **Строго:** determinant `r_s r_a r_t^3` имеет degree `5`; два
+  independent packages требуют minimal linear block degree/dimension `10`.
+- **Строгое no-go:** complex и real bosonic measures имеют противоположный
+  effective sign.
+- **Строгое no-go:** log-ratio Jacobian
+  `(3/5)r_s r_a r_t` отличается от determinant непостоянным множителем
+  `(5/3)r_t^2`.
+- **LCF-checked algebraic core:** ProofDSL `10/10`, registry `50/382`.
+- **Физическая граница:** odd auxiliary module и его Berezin measure не
+  входят в текущий carrier; inherited logdet origin `0/1`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-relative-shape-logdet-parent-measure-origin-gate]].
+
+### Admission auxiliary KMS fermion module
+
+- **Строго условно:** `G_aux=Pi(V_type tensor P_KMS)` имеет complex
+  dimension `5*2=10` и наследует type/package labels без component seed.
+- **Строго:** package-projectors complementary с ranks `5/5`;
+  `D_aux=R_theta direct sum R_kappa` family- и package-covariant.
+- **Строго:** complex Berezin completion имеет `20` odd coordinates и
+  antisymmetric pairing rank `20`.
+- **Строго:** auxiliary block annihilates physical inclusion, поэтому
+  creation-QMS dimension `6` и physical state count не меняются.
+- **LCF-checked algebraic core:** ProofDSL `10/10`, registry `51/392`.
+- **Физическая граница:** ungraded carrier origin `2/2`, но odd
+  statistics и Berezin orientation origin `0/2`; logdet parent остаётся
+  physical `0/1`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-auxiliary-fermion-module-admission-gate]].
+
+### Parent-origin auxiliary fermion statistics
+
+- **Строго:** physical type-grading имеет spectrum
+  `{-1^(1),+1^(4)}`.
+- **Строгое no-go:** четыре tensor-product package gradings имеют odd ranks
+  `2,5,5,8`; all-odd target rank `10` отсутствует.
+- **Строго:** package-swap допускает только equal signs, то есть ranks
+  `2` или `8`; ближайший candidate имеет defect rank `2`.
+- **Строго условно:** `Gamma_aux=-I10` является корректной involution,
+  но прямым statistics seed.
+- **Строго:** paired basis changes дают
+  `det(S)det(S^-1)=1`; measure normalization меняет action лишь на
+  additive constant.
+- **LCF-checked algebraic core:** ProofDSL `10/10`, registry `52/402`.
+- **Физическая граница:** statistics candidates `0/6`; остаётся один
+  datum — BRST/BV или иной parent-origin Grassmann parity.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-auxiliary-fermion-statistics-parent-origin-gate]].
+
+### Minimal contractible BRST complex KMS logdet
+
+- **Строго условно:** quartet `(x,b|c,bar_c)` над base dimension `10`
+  имеет even/odd dimensions `20/20`.
+- **Строго:** `Q²=0`, rank/nullity `20/20`,
+  `[N_gh,Q]=Q` и `{Gamma,Q}=0`.
+- **Строго:** image и kernel имеют одинаковую dimension, поэтому auxiliary
+  cohomology равна нулю.
+- **Строго условно:** gauge-fixing fermion
+  `bar_c^T(D_aux x-alpha b/2)` даёт FP determinant
+  `det R_theta det R_kappa`.
+- **Строго:** BRST block annihilates physical inclusion; новых physical
+  QMS states нет.
+- **LCF-checked algebraic core:** ProofDSL `10/10`, registry `53/412`.
+- **Физическая граница:** десятипараметрическая shift symmetry и
+  gauge-fixing fermion не происходят из four-slot parent; origin `0/1`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-minimal-brst-complex-architecture-gate]].
+
+### Parent-origin BRST shift-symmetry
+
+- **Строго:** required additive orbit имеет generator-map `I10` и rank
+  `10`.
+- **Строгое no-go:** все KMS parameters имеют tangent rank `6` и cokernel
+  `4`; normalized shapes имеют rank `4`.
+- **Строго:** endpoint phase nullity `1`, type conjugation и transport
+  tangents имеют rank `0`.
+- **Строго условно:** zero-action spectator extension имеет full rank-ten
+  translations, но вводит target-loaded zero coupling.
+- **Строгое no-go:** positive auxiliary Hessian rank `10` нарушает full
+  shift symmetry; FP operator допустим только как gauge-fixing linearization.
+- **LCF-checked algebraic core:** ProofDSL `10/10`, registry `54/422`.
+- **Физическая граница:** candidate origin `0/6`, shift symmetry origin
+  `0/1`, physical logdet parent `0/1`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-brst-shift-symmetry-parent-origin-gate]].
+
+### Minimal Stückelberg shift-parent
+
+- **Строго условно:** doubled even carrier dimension `20` с diagonal
+  shift имеет orbit rank `10`.
+- **Строго:** invariant difference `z=x-y` имеет rank/dimension `10`;
+  parent Hessian имеет rank/nullity `10/10`, kernel равен orbit.
+- **Строго:** isotropic spectrum равен `{0^(10),2^(10)}`.
+- **Строго условно:** gauge condition `F=D_aux x` даёт target FP
+  determinant `det R_theta det R_kappa`.
+- **Строгое no-go:** complex quotient boson даёт inverse determinant и
+  полностью отменяет ghost factor; без интегрирования остаются десять modes.
+- **LCF-checked algebraic core:** ProofDSL `10/10`, registry `55/432`.
+- **Физическая граница:** gauge architecture `10/10`, но no-new-modes и
+  uncancelled-logdet ledgers равны `0/1`; physical parent `0/1`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-minimal-stueckelberg-shift-parent-architecture-gate]].
+
+### Parent-origin physical fermion loop KMS logdet
+
+- **Строго:** physical target creation-cell содержит одну multiplet
+  dimension `5=1+1+3`; один homogeneous linear kernel имеет determinant
+  degree `5`, target двух packages — degree `10`.
+- **Строго:** Real lift имеет determinant `(det R)^2`, но physical
+  Pfaffian half-count возвращает один determinant, а не вторую species.
+- **Строгое no-go:** independent assignment `R_theta direct_sum R_kappa`
+  generic нарушает Real exchange; exact witness commutator rank `10`.
+- **Строго условно:** две independent multiplets дают target determinant
+  на dimension `10`, но вторая physical multiplet не наследована.
+- **Строго условно:** composite kernel `R_theta R_kappa` на dimension `5`
+  также даёт target, но имеет explicit mixed derivative `1` и является
+  target-loaded coupling.
+- **Физическая граница:** conductances являются dissipative rates и не
+  входят в существующий Hamiltonian fermion bilinear; candidate origin
+  `0/6`, determinant capacity `1/2`, physical logdet parent `0/1`.
+- **LCF-checked algebraic core:** ProofDSL `11/11`, registry `56/443`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-physical-fermion-loop-parent-origin-gate]].
+
+### Минимальная fermion-bath архитектура KMS logdet
+
+- **Строго условно:** one new bath multiplet `1+1+3` dimension `5`
+  дополняет system carrier до dimension `10`.
+- **Строго:** type-diagonal coupling `G=diag(g_s,g_a,g_t I3)` имеет rank
+  `5` и сохраняет family covariance.
+- **Строго:** Hermitian integration даёт Schur complement
+  `R_theta-G R_kappa^-1 G`; determinant получает multiplicative correction.
+- **Строго:** positive witness `R_theta=R_kappa=2I5`, `G=I5` имеет spectrum
+  `{1^(5),3^(5)}`, coupled determinant `243`, target `1024`, defect `781`.
+- **Строгое no-go:** exact target factorization восстанавливается при
+  `G=0`, но тогда self-energy и microscopic conductance generation исчезают.
+- **Физическая граница:** carrier architecture `10/10`, nonzero Hermitian
+  coupling `1/1`, coupled exact target `0/1`, physical bath origin `0/1`.
+- **LCF-checked algebraic core:** ProofDSL `12/12`, registry `57/455`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-minimal-fermion-bath-architecture-gate]].
+- **Уточнённый frontier:** causal triangular determinant недостаточен;
+  следующий admission проверяет полный normalized Keldysh influence
+  functional, fermionic KMS/FDT и surviving target logdet. См.
+  [[kms-keldysh-next-gate-reconnaissance-2026]].
+
+### Normalized KMS--Keldysh influence functional
+
+- **Строго:** `K_R=R_theta-iR_kappa`, `K_A=K_R^dagger` и
+  `K_K=(K_R-K_A)F` дают causal lower-zero kernel с damping/noise ranks
+  `5/5`.
+- **Строго:** triangular determinant независим от statistical block, но
+  adjoint pair даёт
+  `product_alpha(theta_alpha^2+kappa_alpha^2)^m_alpha`, не target product.
+- **Exact witness:** determinant `32768`, target `1024`, defect `31744`,
+  ratio `32`.
+- **Строгое no-go:** closed-contour normalized ratio равен `1`, поэтому
+  source-free vacuum action равен `0` и target logdet не остаётся.
+- **Физическая граница:** reservoir spectral density и Markov origin
+  `0/1`; physical logdet parent `0/1`.
+- **LCF-checked algebraic core:** ProofDSL `13/13`, registry `58/468`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-keldysh-influence-functional-admission-gate]].
+
+### Parent-origin reservoir spectral density
+
+- **Строго:** on-shell evaluation полиномов dimension `7` имеет
+  rank/nullity `3/4`.
+- **Exact witness:** positive profiles `J0=1` и
+  `J1=1+product(omega-d)^2/16` дают одинаковые rates `(1,1,1)`.
+- **Строго:** zeroth/first moment defects равны `107/105` и `214/105`,
+  поэтому off-shell self-energy asymptotics различны.
+- **Строгое no-go:** conductances не определяют bath logdet; одна weighted
+  normalization оставляет две relative type strengths.
+- **LCF-checked algebraic core:** ProofDSL `12/12`, registry `59/480`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-reservoir-spectral-density-parent-origin-gate]].
+
+### Parent-origin reservoir measure anomaly
+
+- **Строго:** paired vector-like Berezin Jacobian равен `1`.
+- **Строго:** inherited anomaly coefficient-space имеет rank `3`, target
+  увеличивает rank до `4`; isotropic traces равны `6,0,0` против `10`.
+- **Строгое no-go:** target determinant получается только all-direction
+  rescaling, явно зависящим от `D_aux`.
+- **LCF-checked:** ProofDSL `12/12`, registry `60/492`; physical anomaly
+  origin `0/1`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-reservoir-measure-anomaly-parent-origin-gate]].
+
+### Minimal new KMS logdet parent axiom
+
+- **Строго условно:** один positive invariant term имеет shape rank `4`,
+  Hessian determinant `9lambda^4/25` и isotropic minimum для любого
+  `lambda>0`.
+- **Строго:** при `lambda=0` rank равен `0`; отрицательный sign нарушает
+  boundedness below на positive-cone boundary.
+- **Граница:** minimum не зависит от magnitude, но fluctuation stiffness
+  зависит; coefficient origin `0/1`.
+- **Статус:** axiom admission `1/1`, physical derivation `0/1`.
+- **LCF-checked:** ProofDSL `11/11`, registry `61/503`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-minimal-new-parent-axiom-admission-gate]].
+
+### Axiom-augmented common-parent closure
+
+- **Строго условно:** common point value `0`, Hessian rank/nullity `14/0`,
+  determinant `5184/25`.
+- **Conditional outputs:** both shapes `(1,1,1)`, endpoint/transport
+  selectors `1/1`, scales selected by existing wells.
+- **Статус:** mathematical closure `1/1`, physical derivation `0/1` из-за
+  admitted axiom и её stiffness.
+- **LCF-checked:** ProofDSL `9/9`, registry `62/512`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-axiom-augmented-common-parent-closure-gate]].
+
+### Axiom-augmented blind dimensionless predictions
+
+- **Строго условно:** four channel ratios и two double ratios равны `1`;
+  normalized responses также равны `1`, weighted variance `0`.
+- **Blindness:** outputs независимы от `E_*` и `lambda`.
+- **Статус:** conditional blind package `5/5`, unconditional physical
+  prediction `0/1`.
+- **LCF-checked:** ProofDSL `9/9`, registry `63/521`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-axiom-augmented-blind-dimensionless-prediction-gate]].
+
+### Conditional program status Тома IX
+
+- **Conditional:** criteria vector `(1,1,1,1,1,1)`, score `6/6`.
+- **Strict physical:** `(1,0,1,1,0,0)`, score `3/6`.
+- **Axiom dependency:** `(0,1,0,0,1,1)`, rank `3`.
+- **Итог:** physical four-slot parent `0/1`; conditional completion не
+  повышается до derivation.
+- **LCF-checked:** ProofDSL `8/8`, registry `64/529`.
+- Первичная триада:
+  [[version9-endpoint-creation-kms-logdet-axiom-augmented-conditional-program-status-gate]].
+
+### Physical-origin reopening criterion Тома IX
+
+- **Deficit:** три открытых physical slots образуют vector `(1,1,1)`.
+- **Минимальная факторизация:** incidence map
+  `R=[[1,0],[0,1],[0,1]]` имеет rank `2`; нужны scale/coupling-origin и
+  logdet-parent-origin.
+- **Совместное действие:** второй пакет одновременно открывает physical
+  Hessian и unconditional blind consequence.
+- **Текущий статус:** conditional coverage `3/3`, physical coverage `0/3`,
+  reopening packages `0/2`; status freeze сохраняется.
+- **LCF-checked:** ProofDSL `9/9`, registry `65/538`.
+- Первичная триада:
+  [[version9-axiom-augmented-physical-origin-reopening-criterion-gate]].
+
+### Common-origin Gaussian covariance carrier
+
+- **Carrier:** `Q=diag(eR_theta,e chi²R_kappa)` на dimension `10`.
+- **Joint invariant:** `Tr Q=5e(1+chi²)` и
+  `det Q=e^10 chi^10 det(R_theta)det(R_kappa)`.
+- **Parent:** `Tr Q-log det Q-10`, unit stationary point, Hessian
+  rank/determinant `6/36` и strictly positive spectrum.
+- **Граница:** `e=E_*/mu` сохраняется при common rescaling; reference scale
+  и Gaussian stationary state не выведены.
+- **Статус:** common architecture `1/1`, conditional joint selection `2/2`,
+  physical-origin packages `0/2`.
+- **LCF-checked:** ProofDSL `10/10`, registry `66/548`.
+- Первичная триада:
+  [[version9-physical-reopening-common-origin-carrier-admission-gate]].
+
+### Gaussian reference-state parent-origin
+
+- **OU architecture:** `B=gamma I_10`, `D=delta I_10`,
+  `S=(delta/gamma)I_10`.
+- **Fixed-coefficient uniqueness:** covariance-space dimension `55`,
+  Lyapunov rank/nullity `55/0`.
+- **No-go:** witnesses `(1,1)` и `(1,2)` дают `I_10` и `2I_10` при тех же
+  stability, isotropy и reversibility requirements.
+- **Свободный datum:** unit covariance требует relation `delta=gamma`;
+  coefficient scale-orbit имеет nullity `1`.
+- **Статус:** conditional unit state `1/1`, physical reference-state origin
+  `0/1`, physical-origin packages `0/2`.
+- **LCF-checked:** ProofDSL `12/12`, registry `67/560`.
+- Первичная триада:
+  [[version9-physical-reopening-gaussian-reference-state-parent-origin-gate]].
+
+### Physical reference-scale mu parent-origin
+
+- **Contract:** energy dimension, internal selector, typed Gaussian map,
+  scale-orbit breaking и target independence.
+- **Candidates:** восемь классов; indicator matrix `8x5` имеет rank `4`,
+  pass-vector `0/8`.
+- **Финальная заморозка Тома IX:** conditional ledger
+  `(1,1,1,1,1,1)` даёт `6/6`, strict physical ledger
+  `(1,0,1,1,0,0)` даёт `3/6`; deficit `(0,1,0,0,1,1)` имеет rank `3`.
+  Оба reopening-пакета отсутствуют (`0/2`). Physical four-slot parent не
+  выведен. Том X допущен как спецификация quantum-RG цепочки `6/6`, но её
+  construction status равен `0/6`. [Финальный theorem/no-go ledger]
+- Первичная триада:
+  [[version9-final-conclusion-and-tome10-program-gate]].
+
+- **Relative calibration:** map rank/nullity `7/1`; common energy rescaling
+  остаётся exact zero mode.
+- **Closest route:** dimensional transmutation `3/5`, но beta-function,
+  boundary coupling и typed map не выведены текущим parent.
+- **Статус:** physical `mu` `0/1`, reopening packages `0/2`; финальный
+  physical no-go Тома IX готов к фиксации.
+- **LCF-checked:** ProofDSL `12/12`, registry `68/572`.
+- Первичная триада:
+  [[version9-physical-reopening-reference-scale-mu-parent-origin-gate]].
 
 После каждого финального гейта или заморозки ветви необходимо:
 

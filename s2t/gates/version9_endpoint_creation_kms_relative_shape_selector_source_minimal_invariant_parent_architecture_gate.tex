@@ -1,0 +1,181 @@
+\chapter{Минимальный инвариантный родительский функционал источников относительных форм}
+\label{ch:v9-endpoint-kms-shape-invariant-parent}
+
+\section{Положительный type-operator}
+
+Для одной KMS-shape введём положительный оператор на полном five-channel
+type-space
+\begin{equation}
+ R=\operatorname{diag}(r_s,r_a,r_t,r_t,r_t)>0,
+ \qquad \Tr R=r_s+r_a+3r_t=5.
+ \label{eq:v9-kms-shape-invariant-parent-operator}
+\end{equation}
+Его multiplicity pattern буквально равен $1\oplus1\oplus3$. Поэтому
+минимальный source-free invariant functional задаётся determinant barrier
+\begin{equation}
+ B(R)=-\log\det R
+ =-\log r_s-\log r_a-3\log r_t.
+ \label{eq:v9-kms-shape-invariant-parent-barrier}
+\end{equation}
+Он инвариантен относительно $U(1)\times U(1)\times U(3)$ и расходится на
+границе positive cone.
+
+\section{Единственный isotropic минимум}
+
+При фиксированном trace weighted AM--GM даёт
+\begin{equation}
+ (\det R)^{1/5}=(r_sr_ar_t^3)^{1/5}
+ \leq\frac{r_s+r_a+3r_t}{5}=1.
+ \label{eq:v9-kms-shape-invariant-parent-amgm}
+\end{equation}
+Равенство возможно только при
+\begin{equation}
+ r_s=r_a=r_t=1,
+ \qquad R_*=I_5,
+ \qquad \min B=0.
+ \label{eq:v9-kms-shape-invariant-parent-minimum}
+\end{equation}
+Тем самым barrier выбирает одну shape без linear source в координатах
+type-operator.
+
+После исключения $r_t=(5-r_s-r_a)/3$ constrained Hessian в минимуме равен
+\begin{equation}
+ H_B=\frac13\begin{pmatrix}4&1\\1&4\end{pmatrix},
+ \qquad
+ \Spec H_B=\left\{1,\frac53\right\}.
+ \label{eq:v9-kms-shape-invariant-parent-hessian}
+\end{equation}
+Для gap- и conductance-копий вместе
+\begin{equation}
+ \rank(H_B\oplus H_B)=4,
+ \qquad
+ \det(H_B\oplus H_B)=\frac{25}{9}.
+ \label{eq:v9-kms-shape-invariant-parent-doubled-hessian}
+\end{equation}
+
+\section{Почему возникает isotropic source}
+
+В log-ratio chart
+\begin{equation}
+ r(u,v)=\frac5{e^u+e^v+3}(e^u,e^v,1)^T
+ \label{eq:v9-kms-shape-invariant-parent-chart}
+\end{equation}
+тот же barrier записывается как
+\begin{equation}
+ B(u,v)=5\log\frac{e^u+e^v+3}{5}-u-v.
+ \label{eq:v9-kms-shape-invariant-parent-log-form}
+\end{equation}
+Это в точности selector-блок предыдущего гейта с effective source
+\begin{equation}
+ q_s=q_a=1.
+ \label{eq:v9-kms-shape-invariant-parent-effective-source}
+\end{equation}
+Его log-ratio Hessian в $u=v=0$ имеет spectrum
+\begin{equation}
+ \Spec H_{\log}=\left\{\frac35,1\right\}.
+ \label{eq:v9-kms-shape-invariant-parent-log-spectrum}
+\end{equation}
+
+Для двух packages один invariant parent имеет вид
+\begin{equation}
+ S_{\rm inv}=\lambda_\theta B(R_\theta)
+ +\lambda_\kappa B(R_\kappa),
+ \qquad \lambda_\theta,\lambda_\kappa>0.
+ \label{eq:v9-kms-shape-invariant-parent-two-copy}
+\end{equation}
+Положительные общие коэффициенты не меняют minimum. Поэтому условно
+выбирается весь source-package
+\begin{equation}
+ q_*=(1,1,1,1),
+ \qquad r_{\theta,*}=r_{\kappa,*}=(1,1,1).
+ \label{eq:v9-kms-shape-invariant-parent-selected-package}
+\end{equation}
+
+\section{Физические KMS-данные}
+
+Вместе с four-slot scales результат равен
+\begin{equation}
+ \boldsymbol\Delta_*=E_*(1,1,1),
+ \qquad
+ \boldsymbol\kappa_*=\chi^2\frac{E_*}{\hbar}(1,1,1).
+ \label{eq:v9-kms-shape-invariant-parent-physical-data}
+\end{equation}
+Соответствующие ковектор источникаs имеют multiplicity weights
+\begin{equation}
+ j_{\theta,*}=E_*(1,1,3),
+ \qquad
+ j_{\kappa,*}=\chi^2\frac{E_*}{\hbar}(1,1,3).
+ \label{eq:v9-kms-shape-invariant-parent-covectors}
+\end{equation}
+Если $z=e^{-E_*}$ в выбранных dimensionless units, faithful stationary
+state creation-cell имеет вид
+\begin{equation}
+ \rho_*=\frac{\operatorname{diag}(1,z,z,z,z,z)}{1+5z}.
+ \label{eq:v9-kms-shape-invariant-parent-stationary-state}
+\end{equation}
+
+После добавления completed-square KMS coupling полный continuous Hessian
+сохраняет результат предыдущей архитектуры:
+\begin{equation}
+ \rank\Hess_{\rm cont}S_{\rm IX}^{+++}=12,
+ \qquad
+ \det\Hess_{\rm cont}S_{\rm IX}^{+++}=\frac{5184}{25}.
+ \label{eq:v9-kms-shape-invariant-parent-common-hessian}
+\end{equation}
+
+\section{ProofDSL certificate}
+
+Точный algebraic core перенесён в LCF proof eDSL:
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=10/10,
+ \qquad
+ N_{\rm registered\ gates}=49,
+ \qquad
+ N_{\rm registered\ obligations}=372.
+ \label{eq:v9-kms-shape-invariant-parent-proofdsl}
+\end{equation}
+Kernel проверяет trace/determinant identities, stationary gradient, два
+точных spectrum, ranks и determinants обоих Hessian. Глобальное применение
+weighted AM--GM остаётся аналитической леммой вне текущего
+finite-dimensional kernel и не маркируется как отдельный LCF theorem.
+
+\section{Архитектурный итог}
+
+\begin{equation}
+ \begin{aligned}
+ N_{\rm invariant\ parent\ architecture}&=10/10,\\
+ N_{\rm conditional\ selector\ source\ selection}&=4/4,\\
+ N_{\rm algebraic\ LCF\ core}&=10/10,\\
+ N_{\rm logdet\ parent\ origin}&=0/1,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-shape-invariant-parent-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальный invariant source-parent]
+На двух positive type-operators с fixed weighted trace сумма двух
+log-determinant barriers ограничена снизу и имеет единственный isotropic
+minimum. Она условно выводит selector-source $(1,1,1,1)$ и тем самым
+закрывает relative-shape selection как $4/4$ без component-wise seed.
+\end{theorem}
+
+\begin{nogocriterion}[Архитектура barrier не является его происхождением]
+Формула $-\log\det R$ является новым общим родительским функционалом-term. Пока не показано,
+что она возникает из меры, спектрального determinant или интегрирования
+существующих полей, conditional selection не повышает physical parent выше
+$0/1$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item invariant type-operator: \textbf{$R>0$, $\Tr R=5$};
+\item parent: \textbf{$-\log\det R$};
+\item selected source: \textbf{$q_*=(1,1,1,1)$};
+\item selected shapes: \textbf{$r_\theta=r_\kappa=(1,1,1)$};
+\item ProofDSL: \textbf{$10/10$, lcf-checked algebraic core};
+\item analytic boundary: \textbf{weighted AM--GM вне kernel};
+\item логарифм определителя parent-origin: \textbf{$0/1$};
+\item следующий гейт: \textbf{measure-origin логарифм определителя parent}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_relative_shape_selector_source_minimal_invariant_parent_architecture_gate_results.json}.

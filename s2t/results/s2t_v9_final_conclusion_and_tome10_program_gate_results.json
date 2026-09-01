@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version9_final_conclusion_and_tome10_program_gate",
+  "next_gate": "version10_quantum_rg_common_carrier_admission_gate",
+  "predecessor": "version9_physical_reopening_reference_scale_mu_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "d23b234daa38d438885b21982641d35375e84dcd6640f1e933fe539cb1820f3f",
+    "floating_point_values": 0,
+    "obligation_count": 13,
+    "obligations": [
+      "final_conditional_status",
+      "final_physical_status",
+      "final_status_decomposition",
+      "final_conditional_score",
+      "final_physical_score",
+      "final_deficit_rank_three",
+      "reopening_packages_zero",
+      "strict_conditional_physical_gap",
+      "tome10_dependency_rank_six",
+      "tome10_dependency_determinant_one",
+      "tome10_program_specification_full",
+      "tome10_construction_zero",
+      "tome10_specification_construction_gap"
+    ],
+    "status": "lcf-checked"
+  },
+  "tome10_program": {
+    "construction_score": "0/6",
+    "dependency_determinant": 1,
+    "dependency_rank": 6,
+    "requirements": [
+      "quantum_rg_common_carrier",
+      "derived_nonzero_beta_function_or_trace_anomaly",
+      "rg_invariant_transmutation_scale",
+      "typed_embedding_into_kms_gaussian_parent",
+      "physical_measure_and_reference_state_origin",
+      "scheme_independent_blind_consequence"
+    ],
+    "specification_score": "6/6",
+    "title": "quantum RG anomaly and physical scale origin"
+  },
+  "tome9_achievements": [
+    "common_four_slot_carrier_architecture",
+    "endpoint_module_and_creation_qms_architecture",
+    "bidirectional_primitive_kms_completion",
+    "conditional_invariant_relative_shape_selector",
+    "axiom_augmented_common_parent_with_full_hessian",
+    "conditional_blind_dimensionless_predictions",
+    "exact_physical_origin_no_go_map"
+  ],
+  "tome9_final_status": {
+    "conditional_score": "6/6",
+    "conditional_vector": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "deficit_rank": 3,
+    "physical_deficit": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    "physical_reopening_packages": "0/2",
+    "physical_score": "3/6",
+    "physical_vector": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  "verdict": {
+    "tome10_physical_theory_constructed": false,
+    "tome10_program_admitted": true,
+    "tome9_completed": true,
+    "tome9_conditional_model_closed": true,
+    "tome9_physical_four_slot_parent_derived": false,
+    "tome9_physical_status_frozen": true
+  }
+}

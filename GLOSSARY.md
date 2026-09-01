@@ -5,6 +5,36 @@
 
 ---
 
+## Нормативная русская терминология Тома IX
+
+В русскоязычном тексте Тома IX применяются следующие основные формы:
+
+- `parent`, `parent functional`, `parent action` — **родительский функционал**, **родительское действие**;
+- `parent origin`, `provenance` — **происхождение родительского функционала**, **происхождение**;
+- `carrier` — **носитель**;
+- `slot`, `four-slot` — **компонента**, **четырёхкомпонентный**;
+- `endpoint` — **концевой сектор**;
+- `selector`, `selection` — **механизм выбора**, **выбор**;
+- `source`, `source covector` — **источник**, **ковектор источника**;
+- `admission` — **проверка допустимости**, **допустимость**;
+- `ledger`, `witness` — **реестр**, **свидетель**;
+- `target-loaded` — **с заранее заданным целевым ответом**;
+- `conditional`, `physical` — **условный**, **физический**;
+- `configuration space` — **пространство конфигураций**;
+- `creation operator`, `creation rate` — **оператор рождения**, **скорость рождения**;
+- `reference state`, `reference scale` — **опорное состояние**, **опорный масштаб**;
+- `gauge`, `gauge quotient` — **калибровочный**, **факторизация по калибровочной симметрии**;
+- `Real structure` — **вещественная структура**;
+- `Hessian`, `LogDet` — **гессиан**, **логарифм определителя**;
+- `bath`, `reservoir` — **резервуар**;
+- `fermion loop`, `influence functional` — **фермионная петля**, **функционал влияния**;
+- `blind dimensionless prediction` — **слепое безразмерное предсказание**.
+
+В формулах, метках, именах файлов и программных идентификаторах исходное
+написание сохраняется. Допустимы международные сокращения KMS, QMS, GKSL,
+BRST, BV, LCF, GNVW, FDT и имя системы ProofDSL. Имена собственные передаются
+в принятой русской форме: Келдыш, Штюкельберг, Стайнспринг, Березин.
+
 ## Слои теорий
 
 - **RPFT** — «Resonant Photonic Fabric Theory» (по названию репозитория). Широкий
@@ -80,6 +110,38 @@
   форма `j_A A+j_B B` на ортогональном центре с
   `A=P_u-P_d`, `B=P_u+P_d-3P_Y`. Обычный trace-square создаёт stiffness,
   но не этот источник. [Активно]
+
+- **KMS source-covectors Тома IX** — две линейные формы `j_theta,j_kappa`
+  на type-space `1+1+3`, метрически выбирающие три gaps и три conductances.
+  Four-slot package фиксирует их общие масштабы `E_*` и `chi²E_*/hbar`, но
+  после weighted-нормировки остаются четыре независимых относительных
+  отношения; их origin равен `0/4`. [Активно]
+  Страница:
+  `wiki/questions/version9-endpoint-creation-kms-source-covector-four-slot-parent-origin-gate.md`.
+
+- **Relative-shape selector KMS-пакета** — минимальный четырёхмерный
+  log-ratio carrier двух weighted-simplex и строго выпуклая сумма двух
+  log-partition функционалов. Условно выбирает четыре относительных
+  отношения (`4/4`), но четыре dual source-компоненты пока не выведены.
+  [Активно]
+  Страница:
+  `wiki/questions/version9-endpoint-creation-kms-relative-shape-minimal-selector-architecture-gate.md`.
+
+- **Selector-source relative KMS-shapes** — четыре dual-компоненты,
+  центрирующие два log-partition блока. Ни common scales, ни type-system,
+  ни KMS/transport не выбирают их; maximum entropy даёт isotropic point
+  только как дополнительный inference postulate. Parent-origin `0/4`.
+  [Активно]
+  Страница:
+  `wiki/questions/version9-endpoint-creation-kms-relative-shape-selector-source-parent-origin-gate.md`.
+
+- **Invariant logdet parent KMS-shapes** — source-free barrier
+  `-log det R` на positive type-operator
+  `R=diag(r_s,r_a,r_t I3)` при `Tr R=5`. Условно выбирает `R=I5`, то есть
+  selector-source `(1,1,1,1)`; algebraic core имеет ProofDSL status
+  `lcf-checked`, но происхождение самого barrier остаётся `0/1`. [Активно]
+  Страница:
+  `wiki/questions/version9-endpoint-creation-kms-relative-shape-selector-source-minimal-invariant-parent-architecture-gate.md`.
 
 - **Двусторонний linking-коммутант** — точное условие неподвижности
   block-диагонального endpoint-наблюдаемого относительно
@@ -3492,6 +3554,144 @@
   `K=diag(gamma_s,gamma_a,gamma_t I3)`, то есть commutant dimension `3` и
   двумерный simplex после trace normalization. Phase zero mode выводит
   source, но rates остаются origin `0/3`. [Строго]
+
+- **Bidirectional KMS creation-frame Тома IX** — пять creator/reverse пар
+  на `C6`. Полная jump-алгебра равна `M6(C)`, Liouvillian имеет
+  rank/nullity `35/1` и unique faithful Gibbs state. [Условная архитектура]
+
+- **Fermionic logdet measure Тома IX** — conditional auxiliary
+  Grassmann-мера с `Z_F(R)=det R`, порождающая
+  `S_eff=-log det R`. Для двух type-operators multiplicity `1+1+3`
+  минимальная linear realization имеет complex dimension `5+5=10`.
+  Механизм найден, но odd auxiliary module ещё не происходит из four-slot
+  carrier. [Условная measure-архитектура]
+
+- **Auxiliary KMS fermion module Тома IX** — purely odd carrier
+  `G_aux=Pi(V_type tensor P_KMS)` complex dimension `10`, построенный
+  из five-channel type-space и двух KMS packages. Его complex Berezin
+  completion имеет `20` odd coordinates, а direct-sum embedding не
+  добавляет physical QMS states. Odd statistics и measure orientation пока
+  имеют origin `0/2`. [Условная graded архитектура]
+
+- **Statistics defect auxiliary KMS module** — несовпадение между
+  physical channel-grading `(+,-,+,+,+)` и требуемой Grassmann grading
+  `-I10`. Uniform package signs дают odd ranks `2,5,5,8`; ближайший
+  swap-covariant candidate имеет rank-two defect. Paired Berezin measure
+  basis-covariant, поэтому остаётся один datum: origin нечётной статистики.
+  [Строгое no-go inherited grading]
+
+- **Minimal KMS BRST quartet** — contractible graded complex над
+  десятимерным type/package carrier:
+  `s x=c`, `s c=0`, `s bar_c=b`, `s b=0`. Even/odd dimensions
+  равны `20/20`, differential имеет rank/nullity `20/20`, cohomology
+  нулевая, а FP operator `R_theta direct sum R_kappa` даёт target
+  determinant. Shift gauge-symmetry пока не выведена. [Условная BRST-архитектура]
+
+- **BRST shift-rank defect Тома IX** — required additive gauge orbit на
+  auxiliary type/package carrier имеет rank `10`, тогда как полный KMS
+  parameter tangent имеет rank `6` и cokernel `4`. Zero-action
+  spectator создаёт translations условно, а positive bare Hessian их
+  разрушает. [Строгое no-go inherited gauge origin]
+
+- **Stückelberg determinant cancellation Тома IX** — diagonal shift двух
+  десятимерных copies оставляет invariant difference `z=x-y`. Parent
+  имеет Hessian rank/nullity `10/10`, но complex bosonic factor
+  `1/det D_aux` отменяет ghost factor `det D_aux`; без интегрирования
+  остаются десять новых quotient modes. [Строгое no-go physical logdet]
+
+- **Physical fermion-loop determinant capacity Тома IX** — одна
+  physical target-мультиплета `1+1+3` dimension `5` несёт один linear
+  determinant degree `5`, тогда как два KMS packages требуют degree `10`.
+  Real/Pfaffian doubling не создаёт вторую species; две copies или kernel
+  `R_theta R_kappa` дают target лишь как новая multiplet либо target-loaded
+  mixed coupling. [Строгое no-go parent-origin]
+
+- **Fermion-bath determinant--interaction trilemma Тома IX** — minimal
+  bath dimension `5` допускает rank-five Hermitian coupling и positive
+  spectrum, но Schur complement меняет target determinant (`243` вместо
+  `1024` в exact witness). При zero coupling determinant точен, но
+  self-energy отсутствует. [Условная архитектура / строгое no-go closure]
+
+- **Keldysh influence-functional admission Тома IX** — выполненная проверка полной
+  causal структуры `R/A/K`, fermionic KMS/FDT и closed-contour
+  normalization `Z_SK[J,J]=1`. Adjoint pair даёт determinant
+  `product(theta_alpha^2+kappa_alpha^2)^m_alpha`; exact witness равен
+  `32768` против target `1024`, а normalization оставляет action `0`.
+  [Условная causal architecture / строгое no-go logdet]
+
+- **Reservoir spectral-density defect Тома IX** — ненулевое off-shell
+  направление spectral profile, исчезающее на трёх Bohr gaps. Два positive
+  profile имеют одинаковые conductances, но разные moments и self-energy;
+  поэтому rates не определяют bath logdet. [Строгое no-go parent-origin]
+
+- **Reservoir measure-anomaly defect Тома IX** — paired fermion measure
+  имеет unit Jacobian, а inherited signed gradings не содержат positive
+  target trace. Формальное воспроизведение determinant требует
+  target-dependent all-direction rescaling. [Строгое no-go parent-origin]
+
+- **Minimal new KMS logdet parent axiom** — явно новое positive
+  `-lambda(log det R_theta+log det R_kappa)`, управляющее всеми четырьмя
+  relative shapes. Minimum не зависит от `lambda>0`, но fluctuation
+  stiffness зависит; admission не считается physical derivation.
+
+- **Axiom-augmented KMS common parent** — объединение admitted logdet
+  axiom с scale-, residual-, endpoint- и transport-wells. Имеет common
+  Hessian rank/nullity `14/0`, но остаётся условной моделью до blind test.
+
+- **Blind KMS response Тома IX** — conditional parameter-free identity
+  `hbar kappa_alpha/(chi^2 Delta_alpha)=1` вместе с unit channel ratios и
+  zero weighted variance. Не зависит от axiom stiffness.
+
+- **Conditional/physical split Тома IX** — augmented model проходит
+  contract как `6/6`, но строгий origin-ledger равен `3/6`; три criteria
+  зависят от новой logdet axiom.
+
+- **Physical-origin reopening criterion Тома IX** — минимальный dossier из
+  двух independent provenance-пакетов. Scale/coupling-origin закрывает один
+  deficit slot, а logdet-parent-origin совместно закрывает physical Hessian
+  и unconditional blind consequence. Incidence map имеет rank `2`;
+  текущая physical availability равна `0/2`. [Строгий критерий]
+
+- **Common-origin Gaussian covariance carrier Тома IX** — positive operator
+  `Q=diag(eR_theta,e chi²R_kappa)` dimension `10`. LogDet divergence
+  `Tr Q-log det Q-10` условно выбирает scale, coupling и обе shapes с
+  Hessian rank/determinant `6/36`, но `e=E_*/mu` сохраняет общий scale-orbit,
+  а reference covariance не выведена. [Условная архитектура]
+
+- **Gaussian reference-state ratio defect Тома IX** — isotropic
+  Ornstein--Uhlenbeck family с drift `gamma I` и diffusion `delta I` имеет
+  unique stationary covariance `(delta/gamma)I`. Unit covariance требует
+  свободного relation `delta=gamma`; uniqueness при fixed coefficients не
+  является parent-origin коэффициентов. [Строгое no-go]
+
+- **Reference-scale zero mode Тома IX** — одна common energy rescaling
+  direction, невидимая всем отношениям между `mu`, KMS temperature, clock
+  energy, cutoff, inverse radius, Dirac scale, observed mass и возможным
+  transmutation scale. Relative map имеет rank/nullity `7/1`; восемь
+  origin candidates проходят `0/8`. [Строгое no-go]
+
+- **Type-system KMS-каналов Тома IX** — матрица multiplicity, grading и
+  charge с determinant `6` и rank `3`. Она различает neutral-even,
+  neutral-odd и charged-triplet каналы, но не выбирает их gaps и
+  conductances; две нормировки оставляют freedom dimension `4`.
+  [Строгое no-go численного selector]
+
+- **KMS source-parent Тома IX** — строго выпуклая quadratic часть на двух
+  трёхкомпонентных source-covectors с metric `diag(1,1,3)`. В сумме с
+  four-slot functional она условно выбирает все шесть KMS-параметров, но
+  происхождение двух covectors остаётся `0/2`. [Условная архитектура]
+
+- **Финальный статус Тома IX** — conditional augmented ledger
+  `(1,1,1,1,1,1)` имеет score `6/6`, тогда как strict physical ledger
+  `(1,0,1,1,0,0)` имеет score `3/6`. Дефицит
+  `(0,1,0,0,1,1)` имеет ранг `3`; physical reopening packages `0/2`.
+  Том завершён и физически заморожен. [Финальный статус]
+
+- **Программа Тома X** — шестичастный контракт: quantum/RG carrier,
+  ненулевая beta-function или аномалия следа, RG-инвариантный transmutation
+  scale, typed embedding в KMS/Gaussian parent, physical measure/reference
+  state и scheme-independent blind consequence. Specification `6/6`,
+  construction `0/6`. [Открытая программа]
 
 _Пополняйте глоссарий при появлении новых ключевых терминов. Краткое описание
 каждого файла и его актуальности — в `README.md`._

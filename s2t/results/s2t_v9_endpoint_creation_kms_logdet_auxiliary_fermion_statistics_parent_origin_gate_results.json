@@ -1,0 +1,149 @@
+{
+  "closest_inherited_candidate": {
+    "defect_channels": [
+      "theta_a",
+      "kappa_a"
+    ],
+    "even_defect_rank": 2,
+    "fix_is_inherited": false,
+    "odd_rank": 8,
+    "package_signs": [
+      -1,
+      -1
+    ],
+    "required_fix": "component-specific parity flip or constant all-odd seed"
+  },
+  "conditional_measure_closure": {
+    "all_odd_grading_is_valid_involution": true,
+    "independent_measure_orientation_parameter_after_odd_choice": false,
+    "overall_measure_normalization_changes_action_by_additive_constant": true,
+    "paired_basis_jacobian": "det(S) det(S^-1)=1",
+    "paired_berezin_density_basis_covariant": true
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_logdet_auxiliary_fermion_statistics_parent_origin_gate",
+  "inherited_gradings": {
+    "package_sign_choices": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ]
+    ],
+    "physical_type_even_rank": 4,
+    "physical_type_grading": [
+      1,
+      -1,
+      1,
+      1,
+      1
+    ],
+    "physical_type_odd_rank": 1,
+    "resulting_odd_ranks": [
+      2,
+      5,
+      5,
+      8
+    ],
+    "target_odd_rank": 10,
+    "target_reached": false
+  },
+  "ledgers": {
+    "conditional_all_odd_grading_satisfied": 1,
+    "conditional_all_odd_grading_tested": 1,
+    "independent_measure_orientation_freedom": 0,
+    "paired_measure_covariance_satisfied": 1,
+    "paired_measure_covariance_tested": 1,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "proofdsl_obligations_satisfied": 10,
+    "proofdsl_obligations_tested": 10,
+    "statistics_origin_candidates_satisfied": 0,
+    "statistics_origin_candidates_tested": 6,
+    "unresolved_statistics_data": 1
+  },
+  "next_gate": "version9_endpoint_creation_kms_logdet_minimal_brst_complex_architecture_gate",
+  "origin_candidates": [
+    {
+      "candidate": "physical type grading tensor uniform package parity",
+      "origin_pass": false,
+      "reason": "odd ranks are only 2,5,5,8"
+    },
+    {
+      "candidate": "declare both package lines odd and ignore type grading",
+      "origin_pass": false,
+      "reason": "the odd package declaration is the missing statistics seed"
+    },
+    {
+      "candidate": "constant all-odd grading -I10",
+      "origin_pass": false,
+      "reason": "valid architecture but tautological parity seed"
+    },
+    {
+      "candidate": "Real conjugation J",
+      "origin_pass": false,
+      "reason": "antilinear conjugation does not assign Grassmann parity"
+    },
+    {
+      "candidate": "KMS modular or transport orientation",
+      "origin_pass": false,
+      "reason": "orders/reverses channels but supplies no ghost number"
+    },
+    {
+      "candidate": "existing BRST/BV gauge differential",
+      "origin_pass": false,
+      "reason": "no gauge map or nilpotent differential acts on G_aux"
+    }
+  ],
+  "package_exchange": {
+    "equal_sign_choices_covariant": true,
+    "mixed_sign_choices_covariant": false,
+    "swap_covariant_odd_ranks": [
+      2,
+      8
+    ],
+    "target_odd_rank": 10
+  },
+  "predecessor": "version9_endpoint_creation_kms_logdet_auxiliary_fermion_module_admission_gate",
+  "proofdsl": {
+    "analytic_boundary": "the kernel checks all inherited grading spectra and paired Jacobian cancellation; the physical BRST/BV origin of parity is absent",
+    "certificate_sha256": "f18719ac496954fc4347deb3ff51f058692165969a046833db4584e00def1a95",
+    "floating_point_values": 0,
+    "gate_identifier": "version9_endpoint_creation_kms_logdet_auxiliary_fermion_statistics_parent_origin_gate",
+    "obligation_count": 10,
+    "obligations": [
+      "physical_type_grading_spectrum",
+      "package_parity_plus_plus",
+      "package_parity_plus_minus",
+      "package_parity_minus_plus",
+      "package_parity_minus_minus",
+      "mixed_package_swap_breaking",
+      "equal_package_swap_covariance",
+      "closest_grading_defect_rank_two",
+      "conditional_all_odd_involution",
+      "paired_berezin_jacobian_cancellation"
+    ],
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "berezin_pair_measure_is_basis_covariant": true,
+    "constant_all_odd_grading_conditionally_valid": true,
+    "inherited_grading_selects_all_odd_module": false,
+    "logdet_parent_physically_derived": false,
+    "measure_orientation_is_independent_physical_input": false,
+    "minimal_brst_complex_required": true,
+    "odd_statistics_physically_derived": false
+  }
+}

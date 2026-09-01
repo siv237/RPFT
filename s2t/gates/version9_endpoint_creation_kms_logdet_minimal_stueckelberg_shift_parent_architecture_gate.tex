@@ -1,0 +1,206 @@
+\chapter{Минимальный родительский функционал сдвига Штюкельберга}
+\label{ch:v9-kms-minimal-stueckelberg}
+
+\section{Удвоенный even carrier}
+
+Чтобы получить nontrivial shift-invariant parent, введём одну compensator
+copy десятимерного type/package carrier:
+\begin{equation}
+ X_{\rm St}=E_x\oplus E_y,
+ \qquad
+ E_x\simeq E_y\simeq V_{\rm type}\otimes P_{\rm KMS},
+ \qquad \dim_{\mathbb C}X_{\rm St}=20.
+ \label{eq:v9-kms-stueckelberg-carrier}
+\end{equation}
+Diagonal shift действует как
+\begin{equation}
+ x\longmapsto x+\varepsilon,
+ \qquad
+ y\longmapsto y+\varepsilon,
+ \qquad \varepsilon\in E.
+ \label{eq:v9-kms-stueckelberg-shift}
+\end{equation}
+Его generator-map равен
+\begin{equation}
+ T=\begin{pmatrix}I_{10}\\I_{10}\end{pmatrix},
+ \qquad \rank T=10.
+ \label{eq:v9-kms-stueckelberg-orbit-map}
+\end{equation}
+
+\section{Gauge-invariant quotient}
+
+Минимальная invariant combination есть
+\begin{equation}
+ z=C\binom{x}{y}=x-y,
+ \qquad
+ C=\begin{pmatrix}I_{10}&-I_{10}\end{pmatrix},
+ \qquad CT=0.
+ \label{eq:v9-kms-stueckelberg-invariant}
+\end{equation}
+Поэтому nontrivial bounded parent задаётся
+\begin{equation}
+ S_{\rm St}(x,y)
+ =\frac12(x-y)^TD_{\rm aux}(x-y),
+ \qquad D_{\rm aux}=R_\theta\oplus R_\kappa>0.
+ \label{eq:v9-kms-stueckelberg-parent}
+\end{equation}
+Его Hessian имеет block-форму
+\begin{equation}
+ H_{\rm St}=C^TD_{\rm aux}C
+ =\begin{pmatrix}
+ D_{\rm aux}&-D_{\rm aux}\\
+ -D_{\rm aux}&D_{\rm aux}
+ \end{pmatrix}.
+ \label{eq:v9-kms-stueckelberg-hessian}
+\end{equation}
+Точные rank и nullity:
+\begin{equation}
+ \rank H_{\rm St}=10,
+ \qquad
+ \dim\ker H_{\rm St}=10.
+ \label{eq:v9-kms-stueckelberg-rank-nullity}
+\end{equation}
+Причём
+\begin{equation}
+ H_{\rm St}T=0,
+ \qquad
+ \ker H_{\rm St}=\operatorname{im}T.
+ \label{eq:v9-kms-stueckelberg-kernel-orbit}
+\end{equation}
+В isotropic point $D_{\rm aux}=I_{10}$ spectrum равен
+\begin{equation}
+ \Spec H_{\rm St}=\{0^{(10)},2^{(10)}\},
+ \label{eq:v9-kms-stueckelberg-spectrum}
+\end{equation}
+поэтому parent positive semidefinite и не имеет лишних zero modes.
+
+\section{Gauge fixing и FP determinant}
+
+Выберем linear condition
+\begin{equation}
+ F(x,y)=D_{\rm aux}x.
+ \label{eq:v9-kms-stueckelberg-condition}
+\end{equation}
+Её derivative вдоль orbit равна
+\begin{equation}
+ M_{\rm FP}
+ =\frac{\partial F(x+\varepsilon,y+\varepsilon)}
+ {\partial\varepsilon}\bigg|_{\varepsilon=0}
+ =D_{\rm aux},
+ \qquad \rank M_{\rm FP}=10.
+ \label{eq:v9-kms-stueckelberg-fp}
+\end{equation}
+Следовательно,
+\begin{equation}
+ \det M_{\rm FP}
+ =\det R_\theta\,\det R_\kappa.
+ \label{eq:v9-kms-stueckelberg-fp-determinant}
+\end{equation}
+На уровне одной ghost sector это ровно target.
+
+\section{Quotient obstruction}
+
+Однако quotient не пуст:
+\begin{equation}
+ \dim_{\mathbb C}(X_{\rm St}/\operatorname{im}T)
+ =20-10=10,
+ \label{eq:v9-kms-stueckelberg-quotient-dimension}
+\end{equation}
+и представлен gauge-invariant boson $z=x-y$. Если он интегрируется как
+complex Gaussian, то
+\begin{equation}
+ Z_z\propto(\det D_{\rm aux})^{-1}.
+ \label{eq:v9-kms-stueckelberg-boson-factor}
+\end{equation}
+Ghost sector даёт
+\begin{equation}
+ Z_{\rm gh}=\det D_{\rm aux}.
+ \label{eq:v9-kms-stueckelberg-ghost-factor}
+\end{equation}
+Полный determinant нейтрален:
+\begin{equation}
+ Z_zZ_{\rm gh}=1,
+ \qquad
+ -\log(Z_zZ_{\rm gh})=0.
+ \label{eq:v9-kms-stueckelberg-cancellation}
+\end{equation}
+Если же $z$ не интегрировать, он остаётся десятимёрным новым
+gauge-invariant sector:
+\begin{equation}
+ N_{\rm new\ quotient\ modes}=10.
+ \label{eq:v9-kms-stueckelberg-new-modes}
+\end{equation}
+Таким образом, route имеет строгую развилку
+\begin{equation}
+ \text{integrate }z\Rightarrow\text{logdet cancellation},
+ \qquad
+ \text{retain }z\Rightarrow\text{new physical/auxiliary quotient}.
+ \label{eq:v9-kms-stueckelberg-dichotomy}
+\end{equation}
+
+\section{ProofDSL и итог}
+
+ProofDSL проверяет orbit/quotient ranks, exact invariance, Hessian
+rank/nullity, zero-mode equality, positive isotropic spectrum, FP determinant
+и exact determinant cancellation:
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=10/10,
+ \qquad
+ N_{\rm registered\ gates}=55,
+ \qquad
+ N_{\rm registered\ obligations}=432.
+ \label{eq:v9-kms-stueckelberg-proofdsl}
+\end{equation}
+Итоговые ledgers:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm Stueckelberg\ gauge\ architecture}&=10/10,\\
+ N_{\rm nontrivial\ rank\ ten\ orbit}&=1/1,\\
+ N_{\rm no\ new\ quotient\ modes}&=0/1,\\
+ N_{\rm uncancelled\ target\ logdet}&=0/1,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-stueckelberg-final-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальный nontrivial shift-parent]
+Одна compensator copy даёт bounded Stückelberg parent с exact
+rank-ten gauge orbit. Hessian имеет rank/nullity $10/10$, а его kernel
+совпадает с orbit. FP determinant равен target determinant.
+\end{theorem}
+
+\begin{nogocriterion}[Stückelberg quotient отменяет логарифм определителя]
+Та же минимальная конструкция оставляет десятимёрную gauge-invariant
+combination $z=x-y$. Её complex bosonic determinant является обратным к
+ghost determinant. Поэтому интегрирование отменяет target логарифм определителя, а
+неинтегрированный $z$ добавляет новый quotient sector. Ни одна ветвь не
+закрывает physical parent.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item even Stückelberg carrier: \textbf{$20$};
+\item gauge orbit rank: \textbf{$10$};
+\item Hessian rank/nullity: \textbf{$10/10$};
+\item quotient dimension: \textbf{$10$};
+\item FP determinant: \textbf{$\det R_\theta\det R_\kappa$};
+\item combined determinant: \textbf{$1$};
+\item ProofDSL: \textbf{$10/10$, registry $55/432$};
+\item physical логарифм определителя closure: \textbf{$0/1$};
+\item следующий гейт: \textbf{physical fermion-loop parent-origin}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_minimal_stueckelberg_shift_parent_architecture_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-stueckelberg-review}
+H.~Ruegg, M.~Ruiz-Altaba,
+\emph{The Stueckelberg field},
+Int. J. Mod. Phys. A \textbf{19} (2004), 3265--3348,
+arXiv:hep-th/0304245.
+\bibitem{v9-kms-stueckelberg-brst}
+N.~Boulanger, C.~Deffayet, S.~Garcia-Saenz, L.~Traina,
+\emph{Consistent deformations of free massive field theories in the
+Stueckelberg formulation},
+JHEP \textbf{07} (2018) 021, arXiv:1806.04695.
+\end{thebibliography}

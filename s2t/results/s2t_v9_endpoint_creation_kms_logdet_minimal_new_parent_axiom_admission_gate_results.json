@@ -1,0 +1,88 @@
+{
+  "axiom": {
+    "domain": "positive type operators with weighted trace five",
+    "formula": "B_lambda=-lambda(log det R_theta+log det R_kappa)",
+    "functional_package_count": 1,
+    "new_continuous_stiffness": "lambda",
+    "required_sign": "lambda>0"
+  },
+  "date": "2026-09-01",
+  "exact_selection": {
+    "fluctuation_stiffness_independent_of_lambda": false,
+    "hessian_determinant": "9 lambda^4/25",
+    "minimum_independent_of_positive_lambda": true,
+    "shape_rank": 4,
+    "stationary_shape": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "unit_spectrum": [
+      [
+        "3/5",
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "zero_lambda_rank": 0
+  },
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_logdet_minimal_new_parent_axiom_admission_gate",
+  "ledgers": {
+    "minimal_functional_axiom_admission_satisfied": 1,
+    "minimal_functional_axiom_admission_tested": 1,
+    "physical_logdet_derivation_satisfied": 0,
+    "physical_logdet_derivation_tested": 1,
+    "positive_sign_required_satisfied": 1,
+    "positive_sign_required_tested": 1,
+    "relative_shape_selection_satisfied": 4,
+    "relative_shape_selection_tested": 4,
+    "stiffness_parent_origin_satisfied": 0,
+    "stiffness_parent_origin_tested": 1
+  },
+  "next_gate": "version9_endpoint_creation_kms_logdet_axiom_augmented_common_parent_closure_gate",
+  "predecessor": "version9_endpoint_creation_kms_logdet_reservoir_measure_anomaly_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "0774cbe95b17cc98c7df736f5c8b9155045358eb590602e798491c76108bdad9",
+    "floating_point_values": 0,
+    "obligation_count": 11,
+    "obligations": [
+      "all_lambda_isotropic_stationarity",
+      "four_shape_direction_rank",
+      "axiom_hessian_determinant",
+      "unit_axiom_spectrum",
+      "zero_axiom_flatness",
+      "isotropic_source_vector",
+      "anisotropic_witness_trace",
+      "anisotropic_witness_determinant",
+      "strict_determinant_defect",
+      "doubled_package_defect",
+      "stiffness_remains_continuous"
+    ],
+    "status": "lcf-checked"
+  },
+  "sign_witness": {
+    "determinant_defect": "89/432",
+    "one_package_determinant": "343/432",
+    "shape": [
+      "1/2",
+      1,
+      "7/6"
+    ],
+    "two_package_determinant": "117649/186624",
+    "weighted_trace": 5,
+    "wrong_sign_is_unbounded_at_boundary": true
+  },
+  "verdict": {
+    "axiom_is_derived_from_old_parent": false,
+    "minimal_new_axiom_admitted": true,
+    "one_term_controls_all_shapes": true,
+    "physical_four_slot_parent_closed": false,
+    "positive_coefficient_changes_fluctuations": true,
+    "positive_coefficient_changes_selected_shape": false
+  }
+}

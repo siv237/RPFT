@@ -1,0 +1,143 @@
+{
+  "candidate_matrix": [
+    [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      1
+    ]
+  ],
+  "candidate_matrix_rank": 4,
+  "candidate_scores": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3
+  ],
+  "candidates": [
+    "inverse_kms_temperature",
+    "clock_energy",
+    "reservoir_cutoff",
+    "inverse_compactification_radius",
+    "spectral_dirac_scale",
+    "observed_mass",
+    "vacuum_hessian_gap",
+    "dimensional_transmutation"
+  ],
+  "closest_candidate": {
+    "missing": [
+      "internally_selected",
+      "typed_map_to_gaussian_carrier"
+    ],
+    "name": "dimensional_transmutation",
+    "score": "3/5"
+  },
+  "criteria": [
+    "correct_energy_dimension",
+    "internally_selected",
+    "typed_map_to_gaussian_carrier",
+    "breaks_common_scale_orbit",
+    "target_independent"
+  ],
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version9_physical_reopening_reference_scale_mu_parent_origin_gate",
+  "next_gate": "version9_final_conclusion_and_tome10_program_gate",
+  "passing_candidates": 0,
+  "predecessor": "version9_physical_reopening_gaussian_reference_state_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "af11720e0f56df3e6f8b1807a0416dc54a4e7acf58b61c8f100efc28b3569ee5",
+    "floating_point_values": 0,
+    "obligation_count": 12,
+    "obligations": [
+      "eight_candidate_contract_matrix",
+      "zero_passing_candidates",
+      "maximum_candidate_score_three",
+      "candidate_criterion_rank_four",
+      "typed_gaussian_map_absent",
+      "relative_scale_map_rank_seven",
+      "relative_scale_map_nullity_one",
+      "common_scale_kernel",
+      "kms_energy_temperature_invariance",
+      "clock_energy_time_invariance",
+      "inverse_radius_scale_invariance",
+      "physical_reference_scale_origin_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "relative_scale_map": {
+    "kernel": "common positive rescaling of all energy candidates and mu",
+    "nullity": 1,
+    "rank": 7,
+    "shape": [
+      7,
+      8
+    ]
+  },
+  "scores": {
+    "candidate_origin": "0/8",
+    "physical_origin_packages": "0/2",
+    "physical_reference_scale_origin": "0/1"
+  },
+  "verdict": {
+    "dimensional_transmutation_available_in_current_parent": false,
+    "existing_reference_scale_mu_derived": false,
+    "physical_program_reopened": false,
+    "relative_calibrations_break_absolute_scale_orbit": false,
+    "tome9_final_physical_no_go_ready": true
+  }
+}

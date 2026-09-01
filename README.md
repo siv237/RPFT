@@ -32,11 +32,11 @@
 |---|---|---|
 | `wiki/index.md` | Навигационный каталог: читать первым | [Активно] |
 | `wiki/wiki-schema.md` | Схема LLM-вики, правила именования и ведения | [Справочно] |
-| `wiki/log.md` | Хронологический журнал всех действий (июль–август 2026) | [Активно] |
+| `wiki/log.md` | Хронологический журнал всех действий (июль–сентябрь 2026) | [Активно] |
 | `wiki/concepts/*.md` (8) | Понятия, включая RPFT/UGSM/TOE/S2T, спектрально-корреляционный источник, переходный примитив и исполняемый LCF proof eDSL | [Активно] |
-| `wiki/sources/*.md` (327) | Описания источников: тома, программа S2T, каталог, литература, корпуса, внешние барионные отчёты, дотомовый и полный живой формульные индексы | [Активно] |
-| `wiki/syntheses/*.md` (66) | Сводки и результаты: глобальный формульный атлас, генеалогия, точные и семантические эквивалентности формул, реестр строгих результатов и закрытых путей, систематика томов, дорожные карты, формальная верификация, интуитивные карты и ретроспективная развилка к отображению полного пространства полей в шум | [Активно] |
-| `wiki/questions/*.md` (629) | Гейты и вопросы: по сути индекс всех проверок проекта | [Активно] |
+| `wiki/sources/*.md` (413) | Описания источников: тома, программа S2T, каталог, литература, корпуса, внешние барионные отчёты, дотомовый и полный живой формульные индексы | [Активно] |
+| `wiki/syntheses/*.md` (70) | Сводки и результаты: глобальный формульный атлас, генеалогия, точные и семантические эквивалентности формул, реестр строгих результатов и закрытых путей, систематика томов, дорожные карты, формальная верификация, интуитивные карты и ретроспективная развилка к отображению полного пространства полей в шум | [Активно] |
+| `wiki/questions/*.md` (673) | Гейты и вопросы: по сути индекс всех проверок проекта | [Активно] |
 | `wiki/lints/*.md` (8) | Периодические проверки здоровья вики, включая аудит дедупликации, ссылок и внешних формульных замечаний | [Справочно] |
 
 ---
@@ -64,9 +64,9 @@
 
 ## s2t/ — живой исследовательский слой
 
-Последние и самые свежие данные (активность по 31.08.2026). 2151 исходный
-артефакт верхнего уровня, разложенный по типам: 751 `results/*.json`,
-729 `audits/*.py`, 602 `gates/*.tex`, 45 `docs/*`,
+Последние и самые свежие данные (активность по 01.09.2026). 2280 исходных
+артефактов верхнего уровня, разложенных по типам: 795 `results/*.json`,
+773 `audits/*.py`, 646 `gates/*.tex`, 42 `docs/*`,
 24 `assets/*` (png/pdf). Генерируемые LaTeX-файлы в этот счёт не входят.
 Git-истории у файлов нет — завезены одним коммитом «add s2t» (09.08.2026),
 хронология воспроизводится по namespace имён и `wiki/log.md`.
@@ -75,10 +75,10 @@ Git-истории у файлов нет — завезены одним ком
 
 | Папка | Содержание | Актуальность |
 |---|---|---|
-| `s2t/gates/` (602) | Гейт-документы `*.tex`: `version3_*` (27), `version4_*` (115), ветви `version5_*`, `version6_*`, `version7_*`, `version8_*` и тематические пространства | [Активно] |
-| `s2t/audits/` (729) | Вычислительные аудиты `*.py` (включая аудиты Томов VI–VIII) | [Активно] |
-| `s2t/results/` (751) | Численные результаты `*.json`, парные к аудитам по имени | [Активно] |
-| `s2t/docs/` | Тома, интеграционные тексты и файлы сборки; Том VIII завершён, Том IX открыт как программа единого динамического parent | [Активно] |
+| `s2t/gates/` (646) | Гейт-документы `*.tex`: `version3_*` (27), `version4_*` (115), ветви `version5_*`, `version6_*`, `version7_*`, `version8_*`, `version9_*` и тематические пространства | [Активно] |
+| `s2t/audits/` (773) | Вычислительные аудиты `*.py` (включая аудиты Томов VI–IX) | [Активно] |
+| `s2t/results/` (795) | Численные результаты `*.json`, парные к аудитам по имени | [Активно] |
+| `s2t/docs/` | Тома, интеграционные тексты и файлы сборки; Том IX завершён и физически заморожен, программа Тома X специфицирована | [Активно] |
 | `s2t/assets/` (24) | Графики `*.png` и PDF верхнего уровня (`ugsm_dynamics_audit-3.pdf` и др.) | [Справочно] |
 | `s2t/proofdsl/` | Prism-safe pure-Python LCF eDSL: точные SymPy-типы, морфизмы, представления, GKSL-конструктор, опциональный Z3 и тесты | [Активно] |
 
@@ -117,7 +117,8 @@ Git-истории у файлов нет — завезены одним ком
 | `version7_final_conclusion_and_next_program.tex` | Итог по десяти задачам Тома VII: качественный универсальный класс, точные запреты количественного чтения и три условия возможного продолжения | [Активно] |
 | `tome8_s2t_correlation_transition.tex` | Том VIII завершён: 155 содержательных гейтов; полное ядро, QMS, 42-channel dynamics и условный charged mediator получены, four-slot physical parent и общий `E_*` не выведены | [Справочно—Активно] |
 | `version8_final_conclusion_and_next_program.tex` | Итог Тома VIII и входной контракт Тома IX: единый parent должен выбрать endpoint, `E_*`, `chi` и transport primitive | [Активно] |
-| `tome9_s2t_dynamic_parent.tex` | Том IX — единый динамический родитель, физический масштаб и закон транспорта; программа открыта admission-гейтом `6/6` | [Активно] |
+| `tome9_s2t_dynamic_parent.tex` | Том IX завершён: conditional augmented score `6/6`, strict physical score `3/6`, reopening `0/2`; physical four-slot parent не выведен | [Справочно—Активно] |
+| `../gates/version9_final_conclusion_and_tome10_program_gate.tex` | Финальная заморозка Тома IX и шестичастный контракт quantum-RG программы Тома X; specification `6/6`, construction `0/6` | [Активно] |
 | `version9_introduction_and_problem_statement.tex` | Входной контракт Тома IX: четыре независимых слота, шесть критериев успеха и запрет target-loaded калибровки | [Активно] |
 | `../gates/version9_four_slot_dynamic_parent_program_admission_gate.tex` | Первый гейт Тома IX: continuous rank `2`, четыре независимых slot-типа и admission `6/6`; общий parent остаётся `0/1` | [Активно] |
 | `../gates/version9_four_slot_common_carrier_architecture_gate.tex` | Общий carrier `H24 tensor K45 tensor K45` размещает endpoint menu, `L44` и transport-ветви индексов `45/1` в одной алгебре; architecture `8/8`, selector `0/4` | [Активно] |
@@ -129,6 +130,32 @@ Git-истории у файлов нет — завезены одним ком
 | `../gates/version9_endpoint_finite_geometry_configuration_space_admission_gate.tex` | Три endpoint-фазы образуют carrier `H21 direct_sum H23 direct_sum H24` dimension `68` с phase algebra `C^3`; architecture `9/9`, block-Dirac rank `46`, creation reachability `0/3` | [Активно] |
 | `../gates/version9_endpoint_finite_geometry_creation_operator_architecture_gate.tex` | Configuration-source и five-channel family frame порождают `M6(C)`; GKSL architecture `10/10`, endpoint reachability `3/3`, source/rate parent-origin `0/4` | [Активно] |
 | `../gates/version9_endpoint_finite_geometry_creation_operator_parent_origin_gate.tex` | Unique phase zero mode выводит configuration-source; channel commutant dimension `3`, normalized rate simplex dimension `2`, rate origin `0/3`, creation parent-origin `1/4` | [Активно] |
+| `../gates/version9_endpoint_creation_bidirectional_kms_completion_architecture_gate.tex` | Пять reverse jumps дают primitive KMS generator на `M6(C)` с rank/nullity `35/1`; architecture `10/10`, parameter origin `0/6` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_gap_conductance_parent_origin_gate.tex` | Type-matrix имеет determinant/rank `6/3`, но две weighted normalizations оставляют freedom dimension `4`; семь origin-кандидатов дают `0/7`, gap/conductance origin `0/6` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_source_vector_common_parent_architecture_gate.tex` | Шестимерный source-carrier и positive metric дают единый bounded parent; conditional KMS selection `6/6`, общий Hessian rank/determinant `8/576`, source origin `0/2` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_source_covector_four_slot_parent_origin_gate.tex` | Four-slot map связывает gap-scale `E_*` и conductance-scale `chi²E_*/hbar`, но оставляет четыре relative-shape координаты; scale links `2/2`, relative origin `0/4`, source-covector origin `0/2` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_relative_shape_minimal_selector_architecture_gate.tex` | Четырёхмерный log-ratio carrier и weighted log-partition parent дают minimal selector: architecture `10/10`, conditional relative selection `4/4`, общий Hessian `12/(5184/25)`; selector-source origin `0/4` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_relative_shape_selector_source_parent_origin_gate.tex` | Source-free selector не имеет interior minimum; swap/cross-lock оставляют nullity `1`, endpoint-defects требуют baseline, maximum entropy является extra postulate; candidate origin `0/8`, source origin `0/4` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_relative_shape_selector_source_minimal_invariant_parent_architecture_gate.tex` | Positive type-operator и `-log det R` при `Tr R=5` выбирают `q=(1,1,1,1)` и isotropic shapes; ProofDSL `10/10`, registry `49/372`, logdet parent-origin `0/1` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_relative_shape_logdet_parent_measure_origin_gate.tex` | Complex fermionic Gaussian даёт target `-log det` с minimal auxiliary dimension `10`; coordinate Jacobian и bosonic measures исключены, ProofDSL `10/10`, inherited origin `0/1` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_auxiliary_fermion_module_admission_gate.tex` | `Pi(V_type tensor P_KMS)` даёт minimal odd carrier dimension `10`, Berezin rank `20` и нулевой physical-state increment; ProofDSL `10/10`, statistics/measure origin `0/2` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_auxiliary_fermion_statistics_parent_origin_gate.tex` | Tensor gradings дают odd ranks `2,5,5,8`, не target `10`; paired measure covariance закрыта, ProofDSL `10/10`, statistics origin `0/1` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_minimal_brst_complex_architecture_gate.tex` | Contractible quartet `(20|20)` имеет `Q²=0`, zero cohomology и FP determinant `det R_theta det R_kappa`; ProofDSL `10/10`, shift symmetry origin `0/1` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_brst_shift_symmetry_parent_origin_gate.tex` | Required shift rank `10`, inherited maximum `6`, deficit `4`; spectator flatness условна, ProofDSL `10/10`, shift origin `0/1` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_minimal_stueckelberg_shift_parent_architecture_gate.tex` | Nontrivial shift parent имеет Hessian rank/nullity `10/10`, но invariant quotient dimension `10` отменяет ghost determinant; ProofDSL `10/10`, physical closure `0/1` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_physical_fermion_loop_parent_origin_gate.tex` | Одна physical target-multiplet dimension `5` несёт determinant degree `5`, target имеет degree `10`; Real doubling не создаёт second species, ProofDSL `11/11`, physical origin `0/1` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_minimal_fermion_bath_architecture_gate.tex` | Bath dimension `5`; positive coupled spectrum `{1^(5),3^(5)}`, determinant `243` вместо target `1024`; ProofDSL `12/12`, causal origin открыт | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_keldysh_influence_functional_admission_gate.tex` | Causal R/A/K и KMS/FDT admitted; witness determinant `32768` против target `1024`, normalized vacuum action `0`; ProofDSL `13/13`, registry `58/468` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_reservoir_spectral_density_parent_origin_gate.tex` | Equal rates `(1,1,1)` допускают positive profiles с moment defects `107/105`, `214/105`; ProofDSL `12/12`, registry `59/480`, logdet origin `0/1` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_reservoir_measure_anomaly_parent_origin_gate.tex` | Paired Jacobian `1`; inherited anomaly ranks/traces не дают target, target rescaling является loaded; ProofDSL `12/12`, registry `60/492` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_minimal_new_parent_axiom_admission_gate.tex` | Один positive logdet-term контролирует четыре shapes; Hessian `4/(9lambda^4/25)`, admission `1/1`, physical derivation `0/1`; ProofDSL `11/11` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_axiom_augmented_common_parent_closure_gate.tex` | Common Hessian rank/nullity `14/0`, determinant `5184/25`; mathematical closure `1/1`, physical derivation `0/1`; ProofDSL `9/9` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_axiom_augmented_blind_dimensionless_prediction_gate.tex` | Unit channel/double ratios, normalized response `1`, zero variance; blind `5/5`, unconditional physical `0/1`; ProofDSL `9/9` | [Активно] |
+| `../gates/version9_endpoint_creation_kms_logdet_axiom_augmented_conditional_program_status_gate.tex` | Conditional score `6/6`, strict physical score `3/6`, axiom dependency rank `3`; physical parent `0/1`; ProofDSL `8/8` | [Активно] |
+| `../gates/version9_axiom_augmented_physical_origin_reopening_criterion_gate.tex` | Три physical deficits сведены к двум independent provenance-пакетам; conditional coverage `3/3`, physical `0/3`, reopening `0/2`; ProofDSL `9/9` | [Активно] |
+| `../gates/version9_physical_reopening_common_origin_carrier_admission_gate.tex` | Common Gaussian covariance carrier dimension `10`; spectral-entropy Hessian `6/36`, scale-orbit nullity `1`; conditional selection `2/2`, physical origin `0/2` | [Активно] |
+| `../gates/version9_physical_reopening_gaussian_reference_state_parent_origin_gate.tex` | OU stationary covariance unique при fixed coefficients (`55/0`), но свободное `delta/gamma` даёт witnesses `I_10` и `2I_10`; reference-state origin `0/1` | [Активно] |
+| `../gates/version9_physical_reopening_reference_scale_mu_parent_origin_gate.tex` | Восемь scale candidates проходят `0/8`; candidate rank `4`, relative-scale rank/nullity `7/1`; physical `mu` `0/1`, финальный no-go готов | [Активно] |
 | `version8_introduction_and_problem_statement.tex` | Краткий входной контракт Тома VIII: отсев старых вариантов, происхождение нового объекта, рабочая/нулевая гипотезы и стоп-критерий | [Активно] |
 | `version8_temporary_boundary_and_retrospective_return.tex` | Теоретический переход после локального барионного запрета: объясняет временную остановку и выводит следующий вопрос об отображении полного пространства полей в шум | [Активно] |
 | `../gates/version8_field_to_noise_chain_map_pullback_metric_gate.tex` | Точный полево-шумовой изоморфизм: ранг 42, нулевое ядро, 504 калибровочных тождества и перенос `G_поле=K`; динамическая мобильность остаётся отдельным вопросом | [Активно] |

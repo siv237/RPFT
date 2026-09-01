@@ -1,0 +1,101 @@
+{
+  "admissible_counterexamples": {
+    "both_inside_source_cone": true,
+    "different_relative_shapes": true,
+    "same_common_scales": true,
+    "source_a": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "source_b": [
+      2,
+      1,
+      1,
+      2
+    ]
+  },
+  "candidate_audit": {
+    "combined_lock_nullity": 1,
+    "combined_lock_rank": 3,
+    "common_scales_shape_rank": 0,
+    "cross_shape_lock_nullity": 2,
+    "cross_shape_lock_rank": 2,
+    "diagonal_type_coefficients_free": true,
+    "kms_relates_forward_reverse_within_channel_only": true,
+    "singlet_swap_invariance_nullity": 2,
+    "singlet_swap_invariance_rank": 2,
+    "transport_supplies_continuous_source": false,
+    "type_matrix_determinant": 6,
+    "type_matrix_rank": 3
+  },
+  "date": "2026-08-31",
+  "endpoint_defect_family": {
+    "positive_completion_parameter_free": true,
+    "raw_defects": [
+      2,
+      1,
+      0
+    ],
+    "unique_selector_source": false,
+    "witness_c_1": [
+      "15/8",
+      "5/4",
+      "5/8"
+    ],
+    "witness_c_2": [
+      "20/13",
+      "15/13",
+      "10/13"
+    ]
+  },
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_relative_shape_selector_source_parent_origin_gate",
+  "inherited_parent_restriction": {
+    "boundary_infimum_per_shape": "5 log(3/5)",
+    "finite_interior_stationary_point": false,
+    "primitive_positive_shape_selected": false,
+    "source_free_log_partition_gradient_at_origin": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "ledgers": {
+    "candidate_origin_satisfied": 0,
+    "candidate_origin_tested": 8,
+    "conditional_entropy_representative_satisfied": 1,
+    "conditional_entropy_representative_tested": 1,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "relative_shape_physical_origin_satisfied": 0,
+    "relative_shape_physical_origin_tested": 4,
+    "selector_source_origin_satisfied": 0,
+    "selector_source_origin_tested": 4
+  },
+  "maximum_entropy_candidate": {
+    "counts_as_physical_origin": false,
+    "present_in_inherited_parent": false,
+    "selector_source_per_package": [
+      1,
+      1
+    ],
+    "unique_given_extra_inference_axiom": true,
+    "weighted_isotropic_shape": [
+      1,
+      1,
+      1
+    ]
+  },
+  "next_gate": "version9_endpoint_creation_kms_relative_shape_selector_source_minimal_invariant_parent_architecture_gate",
+  "predecessor": "version9_endpoint_creation_kms_relative_shape_minimal_selector_architecture_gate",
+  "verdict": {
+    "existing_types_orientations_and_kms_are_sufficient": false,
+    "four_selector_sources_physically_derived": false,
+    "inherited_parent_selects_selector_sources": false,
+    "maximum_entropy_is_additional_principle": true,
+    "minimal_invariant_source_parent_required": true
+  }
+}

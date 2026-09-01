@@ -1,0 +1,112 @@
+{
+  "architecture": {
+    "all_channel_active_coupling": true,
+    "carrier_and_type_architecture_satisfied": 10,
+    "carrier_and_type_architecture_tested": 10,
+    "decoupled_bath_is_spectator": true,
+    "exact_target_at_active_coupling": false,
+    "stable_positive_witness": true
+  },
+  "coupled_kernel": {
+    "coupling": "G=diag(g_s,g_a,g_t,g_t,g_t)",
+    "coupling_rank": 5,
+    "determinant": "(theta_s kappa_s-g_s^2)(theta_a kappa_a-g_a^2)(theta_t kappa_t-g_t^2)^3",
+    "formula": "K=[[R_theta,G],[G,R_kappa]]",
+    "schur_system_kernel": "R_theta-G R_kappa^-1 G",
+    "strictly_positive_when_each_g2_less_than_theta_kappa": true
+  },
+  "date": "2026-09-01",
+  "determinant_comparison": {
+    "nonzero_stable_coupling_preserves_exact_target": false,
+    "ratio": "(1-g_s^2/(theta_s kappa_s))(1-g_a^2/(theta_a kappa_a))(1-g_t^2/(theta_t kappa_t))^3",
+    "target": "det R_theta det R_kappa",
+    "zero_coupling_generates_conductance": false,
+    "zero_coupling_preserves_exact_target": true
+  },
+  "exact_witness": {
+    "G": "I5",
+    "R_kappa": "2 I5",
+    "R_theta": "2 I5",
+    "determinant_defect": 781,
+    "full_determinant": 243,
+    "full_spectrum": [
+      [
+        1,
+        5
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "target_determinant": 1024,
+    "target_ratio": "243/1024"
+  },
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_logdet_minimal_fermion_bath_architecture_gate",
+  "ledgers": {
+    "active_coupled_target_determinant_satisfied": 0,
+    "active_coupled_target_determinant_tested": 1,
+    "joint_conductance_and_logdet_origin_satisfied": 0,
+    "joint_conductance_and_logdet_origin_tested": 1,
+    "minimal_bath_carrier_architecture_satisfied": 10,
+    "minimal_bath_carrier_architecture_tested": 10,
+    "nonzero_hermitian_coupling_satisfied": 1,
+    "nonzero_hermitian_coupling_tested": 1,
+    "physical_bath_parent_origin_satisfied": 0,
+    "physical_bath_parent_origin_tested": 1,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "physical_logdet_parent_satisfied": 0,
+    "physical_logdet_parent_tested": 1,
+    "zero_coupling_target_determinant_satisfied": 1,
+    "zero_coupling_target_determinant_tested": 1
+  },
+  "minimal_carrier": {
+    "bath_type_dimension": 5,
+    "missing_determinant_degree": 5,
+    "one_bath_copy_is_degree_minimal": true,
+    "system_type_dimension": 5,
+    "total_fermion_dimension": 10,
+    "type_multiplicities": [
+      1,
+      1,
+      3
+    ]
+  },
+  "next_gate": "version9_endpoint_creation_kms_logdet_keldysh_causal_fermion_bath_architecture_gate",
+  "predecessor": "version9_endpoint_creation_kms_logdet_physical_fermion_loop_parent_origin_gate",
+  "proofdsl": {
+    "analytic_boundary": "ProofDSL checks exact Schur and determinant identities and a strict positive witness; the universal stable-cone inequality and Markov reservoir limit remain external lemmas",
+    "certificate_sha256": "ace3ebd69393644b9dfc21468a2ab81bf3f0b74f029b7b19b821d2a5458b85cb",
+    "floating_point_values": 0,
+    "gate_identifier": "version9_endpoint_creation_kms_logdet_minimal_fermion_bath_architecture_gate",
+    "obligation_count": 12,
+    "obligations": [
+      "system_bath_carrier_rank_ten",
+      "all_channel_coupling_rank_five",
+      "coupled_kernel_determinant",
+      "bath_schur_kernel",
+      "schur_determinant_factorization",
+      "decoupled_two_package_target",
+      "coupling_determinant_correction",
+      "stable_coupled_witness_spectrum",
+      "stable_coupled_witness_determinant",
+      "witness_target_determinant",
+      "strict_witness_determinant_defect",
+      "zero_coupling_target_factorization"
+    ],
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "causal_nonhermitian_keldysh_route_required": true,
+    "coupled_kernel_is_bounded_below_on_stable_cone": true,
+    "coupling_deforms_target_determinant": true,
+    "exact_target_requires_zero_hermitian_coupling": true,
+    "logdet_parent_physically_derived": false,
+    "minimal_five_channel_bath_carrier_constructed": true,
+    "minimal_hermitian_bath_derives_target_logdet": false,
+    "nonzero_type_covariant_coupling_constructed": true,
+    "zero_coupling_bath_generates_rates": false
+  }
+}

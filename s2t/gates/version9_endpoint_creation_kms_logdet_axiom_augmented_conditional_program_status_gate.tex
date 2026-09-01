@@ -1,0 +1,86 @@
+\chapter{Условный статус программы для родительского функционала KMS, дополненного аксиомой}
+\label{ch:v9-kms-conditional-program-status}
+
+\section{Два ledger}
+
+Шесть критериев открытия Тома IX записываются в порядке
+\begin{equation}
+ (\text{carrier},\text{scale/coupling},\text{transport},
+ \text{stationary process},\text{physical Hessian},\text{blind consequence}).
+ \label{eq:v9-kms-status-criteria}
+\end{equation}
+Для augmented model получен conditional vector
+\begin{equation}
+ \mathbf n_{\rm cond}=(1,1,1,1,1,1)^T,
+ \qquad N_{IX}^{\rm cond}=6/6.
+ \label{eq:v9-kms-status-conditional}
+\end{equation}
+
+Строгий physical-origin ledger равен
+\begin{equation}
+ \mathbf n_{\rm phys}=(1,0,1,1,0,0)^T,
+ \qquad N_{IX}^{\rm phys}=3/6.
+ \label{eq:v9-kms-status-physical}
+\end{equation}
+Структурно закрыты common carrier, transport compatibility и primitive
+stationary process. Не закрыты physical selection $E_*,\chi$, Hessian без
+новой axiom и unconditional слепое следствие.
+
+Точная axiom-dependency равна
+\begin{equation}
+ \mathbf n_{\rm ax}=(0,1,0,0,1,1)^T,
+ \qquad \mathbf n_{\rm phys}+\mathbf n_{\rm ax}=\mathbf n_{\rm cond}.
+ \label{eq:v9-kms-status-decomposition}
+\end{equation}
+Она занимает ровно три independent program slots:
+\begin{equation}
+ \rank\operatorname{diag}(\mathbf n_{\rm ax})=3.
+ \label{eq:v9-kms-status-dependency-rank}
+\end{equation}
+
+\section{Итог статуса}
+
+Разрыв между модельным и физическим счётчиками строг:
+\begin{equation}
+ N_{IX}^{\rm cond}-N_{IX}^{\rm phys}=3>0.
+ \label{eq:v9-kms-status-gap}
+\end{equation}
+Поэтому augmented branch является полной conditional theory на объявленной
+axiom, но не выводом physical four-slot parent из корпуса Томов I--VIII.
+
+\section{ProofDSL}
+
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=8/8,
+ \qquad N_{\rm registered\ gates}=64,
+ \qquad N_{\rm registered\ obligations}=529.
+ \label{eq:v9-kms-status-proofdsl}
+\end{equation}
+\begin{equation}
+ N_{\rm conditional\ closure}=6/6,
+ \qquad N_{\rm strict\ physical\ closure}=3/6,
+ \qquad N_{\rm physical\ four\ slot\ parent}=0/1.
+ \label{eq:v9-kms-status-final-ledger}
+\end{equation}
+
+\begin{theorem}[Conditional completion]
+После admission одной новой логарифм определителя axiom программа Тома IX удовлетворяет
+всем шести архитектурным и предсказательным требованиям.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет повышения статуса]
+Три из шести требований зависят от новой axiom. Поэтому conditional score
+$6/6$ нельзя сообщать как physical derivation; строгий счёт остаётся $3/6$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item conditional score: \textbf{$6/6$};
+\item strict physical score: \textbf{$3/6$};
+\item axiom-dependent criteria: \textbf{$3$};
+\item physical four-slot parent: \textbf{$0/1$};
+\item ProofDSL: \textbf{$8/8$, registry $64/529$};
+\item следующий гейт: \textbf{physical-origin reopening criterion}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_axiom_augmented_conditional_program_status_gate_results.json}.

@@ -2,9 +2,277 @@
 
 > Status: working
 > Type: synthesis
-> Updated: 2026-08-31
+> Updated: 2026-09-01
 
-## Актуальный фронтир 2026-08-31
+## Актуальный фронтир 2026-09-01
+
+Том IX завершён и физически заморожен. Финальные ledgers равны
+`n_cond=(1,1,1,1,1,1)` и `n_phys=(1,0,1,1,0,0)`: conditional score
+`6/6`, strict physical score `3/6`, deficit rank `3`, reopening packages
+`0/2`. Том X допущен только как новая quantum-RG программа: specification
+`6/6`, construction `0/6`. ProofDSL `13/13`, registry `69/585`.
+Следующий фронтир — `version10_quantum_rg_common_carrier_admission_gate`.
+См. [[version9-final-conclusion-and-tome10-program-gate]].
+
+Physical reference scale `mu` не найден. Восемь candidates проверены по
+пяти origin criteria; candidate matrix rank `4`, pass-vector `0/8`.
+Relative calibration map имеет rank/nullity `7/1` и annihilates common
+scale vector. Dimensional transmutation ближе остальных (`3/5`), но current
+parent не выводит beta-function, boundary coupling или typed Gaussian map.
+Physical `mu` `0/1`, reopening packages `0/2`; финальный no-go Тома IX
+готов к фиксации. ProofDSL `12/12`, registry `68/572`. Следующий фронтир —
+`version9_final_conclusion_and_tome10_program_gate`.
+См. [[version9-physical-reopening-reference-scale-mu-parent-origin-gate]].
+
+Gaussian reference-state origin закрыт отрицательно. Isotropic OU family
+`B=gamma I_10`, `D=delta I_10` имеет unique covariance
+`S=(delta/gamma)I_10`; Lyapunov map на `Sym_10` имеет rank/nullity `55/0`.
+Но witnesses `(gamma,delta)=(1,1),(1,2)` дают `I_10,2I_10`, оставаясь
+stable, isotropic и reversible. Unit relation `delta=gamma` не выведено;
+physical reference-state origin `0/1`, reopening packages `0/2`.
+ProofDSL `12/12`, registry `67/560`. Следующий фронтир —
+`version9_physical_reopening_reference_scale_mu_parent_origin_gate`.
+См. [[version9-physical-reopening-gaussian-reference-state-parent-origin-gate]].
+
+Common-origin covariance carrier admitted условно. Оператор
+`Q=diag(e R_theta,e chi^2 R_kappa)` dimension `10` имеет
+`Tr Q=5e(1+chi^2)` и determinant
+`e^10 chi^10 det(R_theta)det(R_kappa)`. Parent
+`Tr Q-log det Q-10` имеет stationary unit covariance, Hessian
+rank/determinant `6/36` и positive spectrum. Но `e=E_*/mu` invariant при
+common rescaling, а Gaussian reference state не выведен из endpoint QMS;
+physical-origin packages остаются `0/2`. ProofDSL `10/10`, registry
+`66/548`. Следующий фронтир —
+`version9_physical_reopening_gaussian_reference_state_parent_origin_gate`.
+См. [[version9-physical-reopening-common-origin-carrier-admission-gate]].
+
+Physical-origin reopening criterion установлен. Три deficit slots
+`(scale/coupling, Hessian, blind)` имеют incidence map
+`R=[[1,0],[0,1],[0,1]]` rank `2`: необходимы два independent provenance-
+пакета, причём logdet-origin закрывает два последних slots совместно.
+Conditional coverage `3/3`, physical coverage `0/3`, reopening packages
+`0/2`; status freeze сохраняется. ProofDSL `9/9`, registry `65/538`.
+Следующий фронтир —
+`version9_physical_reopening_common_origin_carrier_admission_gate`.
+См. [[version9-axiom-augmented-physical-origin-reopening-criterion-gate]].
+
+Conditional program status зафиксирован: augmented model имеет `6/6`, но
+strict physical ledger равен `(1,0,1,1,0,0)`, то есть `3/6`. Axiom
+dependency `(0,1,0,0,1,1)` имеет rank `3`: открыты physical selection
+scale/coupling, Hessian без новой axiom и unconditional blind consequence.
+ProofDSL `8/8`, registry `64/529`; physical four-slot parent `0/1`.
+Следующий фронтир —
+`version9_axiom_augmented_physical_origin_reopening_criterion_gate`.
+См. [[version9-endpoint-creation-kms-logdet-axiom-augmented-conditional-program-status-gate]].
+
+Blind dimensionless gate пройден условно. Получены unit ratios gaps и
+conductances, unit double ratios,
+`hbar kappa_alpha/(chi^2 Delta_alpha)=1` и zero weighted gap variance.
+Они не зависят от `E_*` или axiom stiffness `lambda`. ProofDSL `9/9`,
+registry `63/521`; blind package `5/5`, но unconditional physical
+prediction `0/1`. Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_axiom_augmented_conditional_program_status_gate`.
+См. [[version9-endpoint-creation-kms-logdet-axiom-augmented-blind-dimensionless-prediction-gate]].
+
+Axiom-augmented common parent математически замкнут. Общий stationary point
+имеет value `0`; Hessian на 14 continuous variables имеет rank/nullity
+`14/0` и determinant `5184/25`. Он условно выбирает обе isotropic KMS
+shapes, scales, endpoint и transport. ProofDSL `9/9`, registry `62/512`;
+mathematical closure `1/1`, physical derivation `0/1`. Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_axiom_augmented_blind_dimensionless_prediction_gate`.
+См. [[version9-endpoint-creation-kms-logdet-axiom-augmented-common-parent-closure-gate]].
+
+Minimal new parent axiom admitted с честным условным статусом. Один term
+`B_lambda=-lambda(log det R_theta+log det R_kappa)`, `lambda>0`, имеет
+shape-Hessian rank `4`, determinant `9lambda^4/25` и unit spectrum
+`{(3/5)^2,1^2}`; при `lambda=0` rank исчезает. Minimum isotropic для любого
+positive `lambda`, но fluctuation stiffness зависит от него. ProofDSL
+`11/11`, registry `61/503`; axiom admission `1/1`, physical derivation
+`0/1`. Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_axiom_augmented_common_parent_closure_gate`.
+См. [[version9-endpoint-creation-kms-logdet-minimal-new-parent-axiom-admission-gate]].
+
+Reservoir measure-anomaly origin закрыт отрицательно. Paired Berezin
+Jacobian равен `1`; inherited type/package/product anomaly vectors имеют
+rank `3`, а добавление target повышает rank до `4`. Их isotropic traces
+`6,0,0` не равны target trace `10`. Target достигается только rescaling
+`S=r^-1/2 I10`, уже содержащим `D_aux`. ProofDSL `12/12`, registry
+`60/492`; anomaly/logdet origin `0/1`. Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_minimal_new_parent_axiom_admission_gate`.
+См. [[version9-endpoint-creation-kms-logdet-reservoir-measure-anomaly-parent-origin-gate]].
+
+Reservoir spectral-density origin закрыт отрицательно. Evaluation map
+degree-six profiles в gaps `(1,2,3)` имеет rank/nullity `3/4`. Positive
+profiles `J0=1` и `J1=1+product(omega-d)^2/16` дают одинаковые rates
+`(1,1,1)`, но moment defects `107/105` и `214/105`, поэтому их off-shell
+self-energy и bath logdet различны. ProofDSL `12/12`, registry `59/480`;
+spectral-density/logdet origin `0/1`. Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_reservoir_measure_anomaly_parent_origin_gate`.
+См. [[version9-endpoint-creation-kms-logdet-reservoir-spectral-density-parent-origin-gate]].
+
+KMS--Keldysh influence-functional admission завершён частично положительно.
+`K_R=R_theta-iR_kappa`, `K_A=K_R^dagger` и
+`K_K=(K_R-K_A)F` дают causal architecture и damping/noise ranks `5/5`.
+Однако `det K_SK=product(theta_alpha^2+kappa_alpha^2)^m_alpha`, а не target
+`det R_theta det R_kappa`. На witness causal determinant `32768`, target
+`1024`, defect `31744`, ratio `32`; closed-contour normalization даёт ratio
+`1` и vacuum action `0`. ProofDSL `13/13`, registry `58/468`; physical
+logdet parent `0/1`. Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_reservoir_spectral_density_parent_origin_gate`.
+См. [[version9-endpoint-creation-kms-logdet-keldysh-influence-functional-admission-gate]].
+
+Minimal fermion-bath carrier построен, но physical closure не достигнута.
+Bath dimension `5` дополняет system до `10`; typed coupling
+`G=diag(g_s,g_a,g_t I3)` имеет rank `5`. Hermitian kernel даёт Schur
+complement `R_theta-G R_kappa^-1 G`. Positive witness
+`R_theta=R_kappa=2I5`, `G=I5` имеет spectrum `{1^(5),3^(5)}`, но determinant
+`243` вместо target `1024`. При `G=0` target восстанавливается, однако
+self-energy исчезает. ProofDSL `12/12`, registry `57/455`; physical bath
+origin `0/1`. После сверки с Keldysh normalization фронтир уточнён:
+`version9_endpoint_creation_kms_logdet_keldysh_influence_functional_admission_gate`.
+Он должен проверить, остаётся ли target logdet после `Z_SK[J,J]=1`, а не
+только построить triangular matrix. См.
+[[kms-keldysh-next-gate-reconnaissance-2026]] и
+[[version9-endpoint-creation-kms-logdet-minimal-fermion-bath-architecture-gate]].
+
+Physical fermion-loop origin закрыт отрицательно. Creation-cell содержит
+одну target-мультиплету `1+1+3` dimension `5`, поэтому обычный homogeneous
+linear kernel несёт один determinant degree `5`, тогда как target
+`det R_theta det R_kappa` имеет degree `10`. Real/Pfaffian doubling
+возвращает один physical determinant; generic assignment independent blocks
+нарушает exchange compatibility с rank `10`. Две multiplets и composite
+kernel `R_theta R_kappa` алгебраически проходят, но первая требует новую
+species, второй target-loaded. Conductances не являются eigenvalues
+унаследованного Hamiltonian bilinear. ProofDSL `11/11`, registry `56/443`;
+physical origin `0/1`. Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_minimal_fermion_bath_architecture_gate`.
+См. [[version9-endpoint-creation-kms-logdet-physical-fermion-loop-parent-origin-gate]].
+
+Minimal Stückelberg shift-parent построен, но физически провален.
+`S_St=(x-y)^T D_aux(x-y)/2` имеет Hessian rank/nullity `10/10`,
+kernel точно равен rank-ten diagonal gauge orbit, а FP determinant совпадает
+с `det R_theta det R_kappa`. Однако invariant quotient `z=x-y` имеет
+dimension `10`: его complex bosonic factor `1/det D_aux` полностью
+отменяет ghost determinant. Если quotient не интегрировать, остаются десять
+новых modes. ProofDSL `10/10`, registry `55/432`; uncancelled logdet
+`0/1`. Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_physical_fermion_loop_parent_origin_gate`.
+См. [[version9-endpoint-creation-kms-logdet-minimal-stueckelberg-shift-parent-architecture-gate]].
+
+Parent-origin BRST shift-symmetry закрыт отрицательно. Required translation
+orbit имеет rank `10`; все шесть KMS type parameters дают rank `6` и
+cokernel `4`, normalized shapes — rank `4`, endpoint phase zero mode —
+`1`, type/transport tangents — `0`. Zero-action spectator условно даёт
+full shift, но лишь через target-loaded отсутствие coupling; positive
+quadratic Hessian rank `10` разрушает translations. ProofDSL `10/10`,
+registry `54/422`; shift origin `0/1`. Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_minimal_stueckelberg_shift_parent_architecture_gate`.
+См. [[version9-endpoint-creation-kms-logdet-brst-shift-symmetry-parent-origin-gate]].
+
+Minimal BRST complex для KMS logdet построен. На base-space dimension `10`
+contractible quartet `(x,b|c,bar_c)` имеет dimensions `(20|20)`,
+`Q²=0`, rank/nullity `20/20` и zero cohomology. Gauge-fixing fermion
+`bar_c^T(D_aux x-alpha b/2)` даёт FP determinant
+`det R_theta det R_kappa`, а physical creation-cell не меняется.
+ProofDSL `10/10`, registry `53/412`. Архитектура закрыта, но
+десятипараметрическая shift gauge-symmetry не происходит из four-slot
+parent (`0/1`). Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_brst_shift_symmetry_parent_origin_gate`.
+См. [[version9-endpoint-creation-kms-logdet-minimal-brst-complex-architecture-gate]].
+
+Parent-origin auxiliary fermion statistics закрыт отрицательно. Physical
+type-grading `(+,-,+,+,+)` вместе с четырьмя uniform package parity
+choices даёт odd ranks `2,5,5,8`; package-swap оставляет только `2,8`,
+поэтому target `-I10` не выводится. Ближайший inherited candidate имеет
+rank-two defect на двух antisymmetric channel copies. После условного parity
+choice paired Berezin measure уже basis-covariant:
+`det(S)det(S^-1)=1`, так что открытым остаётся один datum — Grassmann
+statistics. ProofDSL `10/10`, registry `52/402`; statistics origin
+`0/1`. Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_minimal_brst_complex_architecture_gate`.
+См. [[version9-endpoint-creation-kms-logdet-auxiliary-fermion-statistics-parent-origin-gate]].
+
+Минимальный auxiliary fermion module admitted. Из inherited type-space
+`1+1+3` и двух KMS packages функториально строится
+`G_aux=Pi(V_type tensor P_KMS)`, complex dimension `10`; complex
+Berezin completion имеет `20` odd coordinates и rank `20`.
+Block `D_aux=R_theta direct sum R_kappa` family/package-covariant и
+полностью отделён от physical creation-cell, поэтому новых физических
+состояний нет. ProofDSL `10/10`, registry `51/392`. Нечётная статистика
+и Berezin orientation ещё не выведены (`0/2`). Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_auxiliary_fermion_statistics_parent_origin_gate`.
+См. [[version9-endpoint-creation-kms-logdet-auxiliary-fermion-module-admission-gate]].
+
+Measure-origin invariant logdet parent проверен. Complex fermionic Gaussian
+даёт `Z_F(R)=det R` и потому `S_eff=-log det R`; для двух KMS packages
+minimal linear carrier имеет dimension `5+5=10`. Bosonic measures имеют
+неверный знак, а coordinate Jacobian
+`(3/5)r_s r_a r_t` отличается от target `r_s r_a r_t^3`.
+ProofDSL проверяет algebraic core `10/10`, registry `50/382`. Однако
+требуемый odd auxiliary module отсутствует, поэтому inherited origin
+остаётся `0/1`. Следующий фронтир —
+`version9_endpoint_creation_kms_logdet_auxiliary_fermion_module_admission_gate`.
+См. [[version9-endpoint-creation-kms-relative-shape-logdet-parent-measure-origin-gate]].
+
+Минимальный invariant parent четырёх relative-shape sources построен.
+Positive type-operator `R=diag(r_s,r_a,r_t I3)` при `Tr R=5` несёт
+source-free barrier `-log det R`; weighted AM–GM единственно выбирает
+`R=I5`. В log-ratio chart это индуцирует source `q=(1,1,1,1)`, поэтому
+`r_theta=r_kappa=(1,1,1)`, `Delta=E_*(1,1,1)` и
+`kappa=chi²E_*/hbar(1,1,1)`. Algebraic core впервые в Version 9 перенесён
+в ProofDSL: `10/10`, registry `49/372`, LCF SHA `52ff98...`. Global AM–GM
+остаётся аналитической леммой, а origin самого logdet-term равен `0/1`.
+Следующий фронтир —
+`version9_endpoint_creation_kms_relative_shape_logdet_parent_measure_origin_gate`.
+См. [[version9-endpoint-creation-kms-relative-shape-selector-source-minimal-invariant-parent-architecture-gate]].
+
+Parent-origin четырёх relative-shape sources закрыт отрицательно для
+inherited parent. Source-free log-partition functional не имеет конечной
+interior stationary point; common scales имеют shape-rank `0`, а type-
+system оставляет independent diagonal coefficients. Swap и cross-lock по
+отдельности имеют rank/nullity `2/2`, совместно — `3/1`. Endpoint-defects
+требуют свободный positive baseline. Maximum entropy условно выбирает
+isotropic representative, но является дополнительным postulate. Candidate
+origin `0/8`, selector-source origin `0/4`.
+См. [[version9-endpoint-creation-kms-relative-shape-selector-source-parent-origin-gate]].
+
+Минимальная архитектура relative-shape selector построена. Две weighted-
+simplex глобально параметризуются четырьмя log-ratios; сумма двух weighted
+log-partition функционалов coercive и strictly convex на source-cone.
+Shape-map имеет rank `4`, selector architecture закрыта `10/10`, conditional
+selection равна `4/4`. После completed-square coupling общий continuous
+Hessian имеет rank/determinant `12/(5184/25)`. Четыре selector-sources пока
+внешние (`0/4`).
+См. [[version9-endpoint-creation-kms-relative-shape-minimal-selector-architecture-gate]].
+
+Four-slot origin двух KMS source-covectors закрыт частично. Непрерывные
+slots дают gap-scale `E_*` и conductance-scale `chi²E_*/hbar`; их
+логарифмический Jacobian имеет rank/determinant `2/2`. Endpoint-extension
+маркирует три типа `1+1+3`, а transport может ориентировать их базис, но
+полный six-component Jacobian имеет rank `6`: после удаления двух scales
+остаётся relative-shape rank `4`. Поэтому common scale links равны `2/2`,
+relative-ratio origin — `0/4`, source-covector origin — `0/2`.
+См. [[version9-endpoint-creation-kms-source-covector-four-slot-parent-origin-gate]].
+
+Общий strictly convex source-parent теперь условно выбирает все шесть KMS-
+компонент на metric `diag(1,1,3,1,1,3)`. Его общий continuous Hessian имеет
+rank/determinant `8/576`, но до four-slot origin-аудита source-covectors
+оставались внешними. См.
+[[version9-endpoint-creation-kms-source-vector-common-parent-architecture-gate]].
+
+Parent-origin шести KMS-параметров закрыт отрицательно для существующего
+parent. Type-matrix multiplicity/grading/charge имеет determinant/rank
+`6/3`, но две weighted normalizations оставляют freedom dimension `4`.
+Два exact primitive witness имеют одинаковые нормировки и Liouvillian rank
+`35`, но разные rates `19/12` и `5/3`. Candidate origin `0/7`,
+gaps/conductances `0/6`.
+См. [[version9-endpoint-creation-kms-gap-conductance-parent-origin-gate]].
+
+Bidirectional KMS completion закрыла primitive dynamics: пять paired
+channels порождают `M6(C)`, Liouvillian rank/nullity `35/1`, stationary
+state faithful и единственно. KMS связывает forward/reverse rates, но не
+выбирает три gaps и три conductances. См.
+[[version9-endpoint-creation-bidirectional-kms-completion-architecture-gate]].
 
 Parent-origin creation-frame закрыт частично. Configuration-source есть
 unique normalized zero mode path-Laplacian, поэтому source origin `1/1`.

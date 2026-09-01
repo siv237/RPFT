@@ -1,0 +1,120 @@
+{
+  "common_parent": {
+    "completed_square_kms_coupling": true,
+    "conditional_relative_shape_selection": 4,
+    "continuous_dimension": 12,
+    "hessian_determinant_at_isotropic_witness": "5184/25",
+    "hessian_rank": 12,
+    "single_bounded_functional": true
+  },
+  "date": "2026-08-31",
+  "exact_witness": {
+    "conductance_log_ratio_minimum": [
+      "log(3)",
+      "log(3/2)"
+    ],
+    "conductance_selector_source": [
+      2,
+      1
+    ],
+    "conductance_shape": [
+      2,
+      1,
+      "2/3"
+    ],
+    "gap_log_ratio_minimum": [
+      "log(3/2)",
+      "log(3)"
+    ],
+    "gap_selector_source": [
+      1,
+      2
+    ],
+    "gap_shape": [
+      1,
+      2,
+      "2/3"
+    ]
+  },
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_relative_shape_minimal_selector_architecture_gate",
+  "ledgers": {
+    "conditional_relative_selection_satisfied": 4,
+    "conditional_relative_selection_tested": 4,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "relative_shape_chart_satisfied": 4,
+    "relative_shape_chart_tested": 4,
+    "selector_architecture_satisfied": 10,
+    "selector_architecture_tested": 10,
+    "selector_source_origin_satisfied": 0,
+    "selector_source_origin_tested": 4
+  },
+  "minimality": {
+    "local_map_rank": 4,
+    "lower_dimensional_generic_selector_possible": false,
+    "selector_carrier_dimension": 4,
+    "target_shape_dimension": 4
+  },
+  "next_gate": "version9_endpoint_creation_kms_relative_shape_selector_source_parent_origin_gate",
+  "predecessor": "version9_endpoint_creation_kms_source_covector_four_slot_parent_origin_gate",
+  "relative_shape_carrier": {
+    "coordinates": [
+      "log(r_theta_s/r_theta_t)",
+      "log(r_theta_a/r_theta_t)",
+      "log(r_kappa_s/r_kappa_t)",
+      "log(r_kappa_a/r_kappa_t)"
+    ],
+    "globally_positive_shapes": true,
+    "real_dimension": 4,
+    "shape_map_rank": 4,
+    "weighted_normalizations": [
+      5,
+      5
+    ]
+  },
+  "selector_parent": {
+    "coercive_on_source_cone": true,
+    "hessian_determinant": "9/25",
+    "hessian_rank": 4,
+    "isotropic_hessian_blocks": [
+      [
+        [
+          "4/5",
+          "-1/5"
+        ],
+        [
+          "-1/5",
+          "4/5"
+        ]
+      ],
+      [
+        [
+          "4/5",
+          "-1/5"
+        ],
+        [
+          "-1/5",
+          "4/5"
+        ]
+      ]
+    ],
+    "source_cone": [
+      "u_s>0",
+      "u_a>0",
+      "u_s+u_a<5",
+      "v_s>0",
+      "v_a>0",
+      "v_s+v_a<5"
+    ],
+    "strictly_convex": true,
+    "type": "weighted_log_partition_minus_linear_source",
+    "unique_minimum": true
+  },
+  "verdict": {
+    "all_four_relative_shapes_conditionally_selected": true,
+    "minimal_four_coordinate_selector_constructed": true,
+    "selector_source_origin_gate_required": true,
+    "selector_sources_physically_derived": false
+  }
+}

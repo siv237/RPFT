@@ -1,0 +1,201 @@
+\chapter{Минимальный механизм выбора относительных форм KMS}
+\label{ch:v9-endpoint-kms-relative-shape-selector}
+
+\section{Минимальный четырёхмерный carrier}
+
+Предыдущий гейт оставил две положительные weighted-simplex размерности два.
+Введём четыре log-ratio координаты
+\begin{equation}
+ x=(x_{\theta s},x_{\theta a},x_{\kappa s},x_{\kappa a})
+ \in\mathbb R^4.
+ \label{eq:v9-kms-shape-selector-carrier}
+\end{equation}
+Для одной пары положим
+\begin{equation}
+ Z(u,v)=e^u+e^v+3,
+ \qquad
+ r(u,v)=\frac{5}{Z(u,v)}(e^u,e^v,1)^T.
+ \label{eq:v9-kms-shape-selector-chart}
+\end{equation}
+Тогда при $w=(1,1,3)^T$
+\begin{equation}
+ w^Tr(u,v)=5,
+ \qquad
+ \frac{r_s}{r_t}=e^u,
+ \qquad
+ \frac{r_a}{r_t}=e^v.
+ \label{eq:v9-kms-shape-selector-chart-properties}
+\end{equation}
+Карта
+\begin{equation}
+ R(x)=r(x_{\theta s},x_{\theta a})
+ \oplus r(x_{\kappa s},x_{\kappa a})
+ \label{eq:v9-kms-shape-selector-full-chart}
+\end{equation}
+имеет rank $4$ в каждой точке. Поэтому четыре координаты достаточны и по
+теореме о ранге минимальны для generic выбора двух shapes.
+
+\section{Строго выпуклый selector}
+
+Для source-пары $q=(q_s,q_a)$ определим
+\begin{equation}
+ \Psi(u,v;q)=5\log\frac{e^u+e^v+3}{5}-q_su-q_av.
+ \label{eq:v9-kms-shape-selector-block}
+\end{equation}
+Допустимый dual cone есть открытый треугольник
+\begin{equation}
+ \mathcal Q^+=\{(q_s,q_a):q_s>0,\ q_a>0,\ q_s+q_a<5\}.
+ \label{eq:v9-kms-shape-selector-source-cone}
+\end{equation}
+Для $q\in\mathcal Q^+$ функционал coercive и строго выпукл. Его
+стационарная точка единственна:
+\begin{equation}
+ e^{u_*}=\frac{3q_s}{5-q_s-q_a},
+ \qquad
+ e^{v_*}=\frac{3q_a}{5-q_s-q_a}.
+ \label{eq:v9-kms-shape-selector-minimum}
+\end{equation}
+При этом выбранная shape равна
+\begin{equation}
+ r(u_*,v_*)=
+ \left(q_s,q_a,\frac{5-q_s-q_a}{3}\right)^T.
+ \label{eq:v9-kms-shape-selector-selected-shape}
+\end{equation}
+
+Для двух KMS-пакетов используем один четырёхмерный selector
+\begin{equation}
+ S_{\rm rel}(x;q_\theta,q_\kappa)
+ =\Psi(x_{\theta s},x_{\theta a};q_\theta)
+ +\Psi(x_{\kappa s},x_{\kappa a};q_\kappa).
+ \label{eq:v9-kms-shape-selector-parent}
+\end{equation}
+В isotropic point $x=0$, $q_\theta=q_\kappa=(1,1)$ его Hessian имеет два
+одинаковых блока
+\begin{equation}
+ H_0=\frac15\begin{pmatrix}4&-1\\-1&4\end{pmatrix},
+ \qquad
+ \rank\Hess S_{\rm rel}=4,
+ \qquad
+ \det\Hess S_{\rm rel}=\frac9{25}.
+ \label{eq:v9-kms-shape-selector-hessian}
+\end{equation}
+
+\section{Связь с двумя ковектор источникаs}
+
+Выбранные shapes и уже выведенные общий масштабs задают
+\begin{equation}
+ \boldsymbol\Delta=E_*r_\theta(x),
+ \qquad
+ \boldsymbol\kappa=\chi^2\frac{E_*}{\hbar}r_\kappa(x),
+ \label{eq:v9-kms-shape-selector-physical-data}
+\end{equation}
+а metric duals равны
+\begin{equation}
+ j_\theta=W\boldsymbol\Delta,
+ \qquad
+ j_\kappa=W\boldsymbol\kappa,
+ \qquad W=\operatorname{diag}(1,1,3).
+ \label{eq:v9-kms-shape-selector-source-covectors}
+\end{equation}
+Чтобы promotion sources в динамические переменные не добавлял ложного
+shape-зависимого сдвига энергии, KMS-часть берётся в completed-square форме:
+\begin{equation}
+ \begin{aligned}
+ \widehat S_{\rm KMS}={}&
+ \frac12(\boldsymbol\theta-\boldsymbol\Delta)^TW
+ (\boldsymbol\theta-\boldsymbol\Delta)\\
+ &+\frac12(\boldsymbol\gamma-\boldsymbol\kappa)^TW
+ (\boldsymbol\gamma-\boldsymbol\kappa).
+ \end{aligned}
+ \label{eq:v9-kms-shape-selector-completed-square}
+\end{equation}
+Это предыдущий quadratic source-parent с добавленной source-dependent
+константой; при фиксированных sources его минимум не меняется.
+
+\section{Один расширенный parent}
+
+Полный условный функционал теперь имеет вид
+\begin{equation}
+ S_{\rm IX}^{++}=S_4+S_{\rm rel}+\widehat S_{\rm KMS}.
+ \label{eq:v9-kms-shape-selector-common-parent}
+\end{equation}
+Каждое слагаемое ограничено снизу. При isotropic witness, где Hessian
+$S_4$ по $(E_*,\chi)$ равен $\operatorname{diag}(8,8)$, triangular
+completed-square decomposition даёт
+\begin{equation}
+ \rank\Hess_{\rm cont}S_{\rm IX}^{++}=12,
+ \qquad
+ \det\Hess_{\rm cont}S_{\rm IX}^{++}
+ =64\cdot\frac9{25}\cdot9=\frac{5184}{25}.
+ \label{eq:v9-kms-shape-selector-common-hessian}
+\end{equation}
+
+\section{Точный несимметричный witness}
+
+Возьмём
+\begin{equation}
+ q_\theta=(1,2),
+ \qquad q_\kappa=(2,1).
+ \label{eq:v9-kms-shape-selector-witness-sources}
+\end{equation}
+Тогда
+\begin{equation}
+ x_{\theta,*}=(\log(3/2),\log3),
+ \qquad
+ x_{\kappa,*}=(\log3,\log(3/2)),
+ \label{eq:v9-kms-shape-selector-witness-minimum}
+\end{equation}
+и selector выбирает
+\begin{equation}
+ r_{\theta,*}=(1,2,2/3)^T,
+ \qquad
+ r_{\kappa,*}=(2,1,2/3)^T.
+ \label{eq:v9-kms-shape-selector-witness-shapes}
+\end{equation}
+
+\section{Архитектурный итог}
+
+\begin{equation}
+ \begin{aligned}
+ N_{\rm relative\ shape\ chart}&=4/4,\\
+ N_{\rm selector\ architecture}&=10/10,\\
+ N_{\rm conditional\ relative\ selection}&=4/4,\\
+ N_{\rm selector\ source\ origin}&=0/4,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-shape-selector-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальный relative-shape selector]
+Четырёхмерный log-ratio carrier и сумма двух weighted log-partition
+функционалов образуют bounded strictly convex selector. Для любого
+$(q_\theta,q_\kappa)\in\mathcal Q^+\times\mathcal Q^+$ он единственно
+выбирает все четыре относительные KMS-величины и совместим с одним общим
+completed-square parent.
+\end{theorem}
+
+\begin{nogocriterion}[Selector-source не считается выведенным]
+Конструкция доказывает минимальную архитектуру, но четыре компоненты
+$(q_{\theta s},q_{\theta a},q_{\kappa s},q_{\kappa a})$ пока являются
+внешней линейной формой. До их происхождения из общего родительского функционала условный
+выбор $4/4$ не закрывает physical four-slot parent.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item размерность relative-shape carrier: \textbf{$4$};
+\item rank глобальной shape-карты: \textbf{$4$};
+\item selector architecture: \textbf{$10/10$};
+\item conditional relative selection: \textbf{$4/4$};
+\item общий Hessian rank/determinant: \textbf{$12/(5184/25)$};
+\item selector-source origin: \textbf{$0/4$};
+\item следующий гейт: \textbf{parent-origin четырёх selector-sources}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_relative_shape_minimal_selector_architecture_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-shape-aitchison}
+J.~Aitchison, \emph{The Statistical Analysis of Compositional Data},
+Journal of the Royal Statistical Society B 44 (1982), 139--177.
+\end{thebibliography}

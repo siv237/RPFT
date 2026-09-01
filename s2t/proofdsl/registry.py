@@ -118,11 +118,95 @@ from .examples.version8_clock_augmented_static_hamiltonian_conveyor import build
 from .examples.version8_bounded_strength_autonomous_clock_thermodynamic_limit import build_certificate as bounded_strength_autonomous_clock_thermodynamic_limit_certificate
 from .examples.version8_local_observable_clocked_qms_limit_and_time_anchor import build_certificate as local_observable_clocked_qms_limit_and_time_anchor_certificate
 from .examples.version8_typed_clock_energy_to_noise_rate_anchor import build_certificate as typed_clock_energy_to_noise_rate_anchor_certificate
+from .examples.version9_kms_relative_shape_invariant_parent import (
+    SPEC as version9_kms_relative_shape_invariant_parent_spec,
+)
+from .examples.version9_kms_logdet_measure_origin import (
+    SPEC as version9_kms_logdet_measure_origin_spec,
+)
+from .examples.version9_kms_auxiliary_fermion_module_admission import (
+    SPEC as version9_kms_auxiliary_fermion_module_admission_spec,
+)
+from .examples.version9_kms_auxiliary_fermion_statistics_origin import (
+    SPEC as version9_kms_auxiliary_fermion_statistics_origin_spec,
+)
+from .examples.version9_kms_minimal_brst_complex import (
+    SPEC as version9_kms_minimal_brst_complex_spec,
+)
+from .examples.version9_kms_brst_shift_symmetry_origin import (
+    SPEC as version9_kms_brst_shift_symmetry_origin_spec,
+)
+from .examples.version9_kms_minimal_stueckelberg_shift_parent import (
+    SPEC as version9_kms_minimal_stueckelberg_shift_parent_spec,
+)
+from .examples.version9_kms_physical_fermion_loop_origin import (
+    SPEC as version9_kms_physical_fermion_loop_origin_spec,
+)
+from .examples.version9_kms_minimal_fermion_bath import (
+    SPEC as version9_kms_minimal_fermion_bath_spec,
+)
+from .examples.version9_kms_keldysh_influence_functional import (
+    SPEC as version9_kms_keldysh_influence_functional_spec,
+)
+from .examples.version9_kms_reservoir_spectral_density_origin import (
+    SPEC as version9_kms_reservoir_spectral_density_origin_spec,
+)
+from .examples.version9_kms_reservoir_measure_anomaly_origin import (
+    SPEC as version9_kms_reservoir_measure_anomaly_origin_spec,
+)
+from .examples.version9_kms_minimal_new_parent_axiom import (
+    SPEC as version9_kms_minimal_new_parent_axiom_spec,
+)
+from .examples.version9_kms_axiom_augmented_common_parent import (
+    SPEC as version9_kms_axiom_augmented_common_parent_spec,
+)
+from .examples.version9_kms_axiom_augmented_blind_prediction import (
+    SPEC as version9_kms_axiom_augmented_blind_prediction_spec,
+)
+from .examples.version9_kms_conditional_program_status import (
+    SPEC as version9_kms_conditional_program_status_spec,
+)
+from .examples.version9_physical_origin_reopening_criterion import (
+    SPEC as version9_physical_origin_reopening_criterion_spec,
+)
+from .examples.version9_physical_reopening_common_origin_carrier import (
+    SPEC as version9_physical_reopening_common_origin_carrier_spec,
+)
+from .examples.version9_gaussian_reference_state_parent_origin import (
+    SPEC as version9_gaussian_reference_state_parent_origin_spec,
+)
+from .examples.version9_reference_scale_mu_parent_origin import (
+    SPEC as version9_reference_scale_mu_parent_origin_spec,
+)
+from .examples.version9_final_conclusion_tome10_program import (
+    SPEC as version9_final_conclusion_tome10_program_spec,
+)
 from .gates import GateSpec, Obligation
 
 
 def registered_gates() -> tuple[GateSpec, ...]:
     return (
+        version9_final_conclusion_tome10_program_spec,
+        version9_reference_scale_mu_parent_origin_spec,
+        version9_gaussian_reference_state_parent_origin_spec,
+        version9_physical_reopening_common_origin_carrier_spec,
+        version9_physical_origin_reopening_criterion_spec,
+        version9_kms_conditional_program_status_spec,
+        version9_kms_axiom_augmented_blind_prediction_spec,
+        version9_kms_axiom_augmented_common_parent_spec,
+        version9_kms_minimal_new_parent_axiom_spec,
+        version9_kms_reservoir_measure_anomaly_origin_spec,
+        version9_kms_reservoir_spectral_density_origin_spec,
+        version9_kms_keldysh_influence_functional_spec,
+        version9_kms_minimal_fermion_bath_spec,
+        version9_kms_physical_fermion_loop_origin_spec,
+        version9_kms_minimal_stueckelberg_shift_parent_spec,
+        version9_kms_brst_shift_symmetry_origin_spec,
+        version9_kms_minimal_brst_complex_spec,
+        version9_kms_auxiliary_fermion_statistics_origin_spec,
+        version9_kms_auxiliary_fermion_module_admission_spec,
+        version9_kms_logdet_measure_origin_spec,
+        version9_kms_relative_shape_invariant_parent_spec,
         GateSpec(
             "version8_bimodule_common_curvature_relative_weight_gate",
             "No-go полнорангового endpoint/transfer-коннектора",

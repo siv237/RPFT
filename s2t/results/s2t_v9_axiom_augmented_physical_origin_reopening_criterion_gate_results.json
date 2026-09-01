@@ -1,0 +1,72 @@
+{
+  "conditional_package_availability": [
+    1,
+    1
+  ],
+  "date": "2026-09-01",
+  "deficit_vector": [
+    1,
+    1,
+    1
+  ],
+  "floating_point_values": 0,
+  "gate": "version9_axiom_augmented_physical_origin_reopening_criterion_gate",
+  "next_gate": "version9_physical_reopening_common_origin_carrier_admission_gate",
+  "open_physical_criteria": [
+    "physical_scale_and_coupling_selection",
+    "physical_hessian",
+    "unconditional_blind_dimensionless_consequence"
+  ],
+  "package_map": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "package_rank": 2,
+  "physical_package_availability": [
+    0,
+    0
+  ],
+  "predecessor": "version9_endpoint_creation_kms_logdet_axiom_augmented_conditional_program_status_gate",
+  "proofdsl": {
+    "certificate_sha256": "4983341e7060c77e5c1ffb5e1676caa4ed984e65e704e623769b56b053dcaa87",
+    "floating_point_values": 0,
+    "obligation_count": 9,
+    "obligations": [
+      "physical_deficit_vector",
+      "two_package_reopening_map",
+      "joint_deficit_closure",
+      "minimal_package_rank_two",
+      "scale_package_alone_fails",
+      "logdet_package_alone_fails",
+      "physical_package_availability_zero",
+      "conditional_package_availability_full",
+      "strict_physical_residual"
+    ],
+    "status": "lcf-checked"
+  },
+  "reopening_packages": [
+    "physical_scale_and_coupling_origin",
+    "physical_logdet_parent_origin"
+  ],
+  "scores": {
+    "conditional_deficit_coverage": "3/3",
+    "physical_deficit_coverage": "0/3",
+    "physical_reopening_packages": "0/2"
+  },
+  "verdict": {
+    "minimal_reopening_criterion_established": true,
+    "physical_program_reopened": false,
+    "tome9_status_freeze_remains": true,
+    "two_independent_physical_origin_packages_required": true
+  }
+}

@@ -1,0 +1,202 @@
+\chapter{Происхождение родительского функционала разрывов и проводимостей KMS}
+\label{ch:v9-endpoint-kms-parameter-origin}
+
+\section{Шесть параметров после KMS completion}
+
+Предыдущий гейт оставил две тройки положительных данных
+\begin{equation}
+ \boldsymbol\theta=(\theta_s,\theta_a,\theta_t),
+ \quad \theta_\alpha=\beta\Delta_\alpha>0,
+ \qquad
+ \boldsymbol\kappa=(\kappa_s,\kappa_a,\kappa_t)>0,
+ \label{eq:v9-kms-origin-six-parameters}
+\end{equation}
+причём $q_\alpha=e^{-\theta_\alpha}$. Вектор $\boldsymbol\theta$ задаёт
+stationary Gibbs weights, а $\boldsymbol\kappa$ задаёт symmetric edge
+conductances и темп приближения к stationarity.
+
+Channel multiplicity, grading и charge дают три строки
+\begin{equation}
+ B_{\rm type}=
+ \begin{pmatrix}
+ 1&1&3\\
+ 1&-1&3\\
+ 0&0&-3
+ \end{pmatrix},
+ \qquad \det B_{\rm type}=6,
+ \qquad \rank B_{\rm type}=3.
+ \label{eq:v9-kms-origin-type-matrix}
+\end{equation}
+Следовательно, типы различают $s,a,t$, но полный rank означает лишь, что
+для каждой тройки разрешены три независимых invariant coefficients.
+
+\section{Нормировки не выбирают точку}
+
+Даже если независимо фиксировать weighted sums
+\begin{equation}
+ \theta_s+\theta_a+3\theta_t=\Theta,
+ \qquad
+ \kappa_s+\kappa_a+3\kappa_t=K,
+ \label{eq:v9-kms-origin-two-normalizations}
+\end{equation}
+матрица ограничений имеет
+\begin{equation}
+ \rank A_{\rm norm}=2,
+ \qquad
+ \dim\ker A_{\rm norm}=4.
+ \label{eq:v9-kms-origin-normalized-freedom}
+\end{equation}
+Таким образом, два trace-like условия оставляют четырёхмерное относительное
+семейство. Кроме того, сохраняются две масштабные орбиты
+\begin{equation}
+ (\beta,\boldsymbol\Delta)\mapsto
+ (c\beta,c^{-1}\boldsymbol\Delta),
+ \qquad
+ (\boldsymbol\kappa,t)\mapsto(c\boldsymbol\kappa,t/c),
+ \qquad c>0.
+ \label{eq:v9-kms-origin-scale-orbits}
+\end{equation}
+
+\section{Два точных нормированных свидетеля}
+
+Рассмотрим два KMS-пакета
+\begin{equation}
+ \begin{aligned}
+ q^{(1)}&=\left(\frac12,\frac13,\frac14\right),
+ &\kappa^{(1)}&=(1,1,1),\\
+ q^{(2)}&=\left(\frac13,\frac12,\frac14\right),
+ &\kappa^{(2)}&=\left(2,1,\frac23\right).
+ \end{aligned}
+ \label{eq:v9-kms-origin-two-witnesses}
+\end{equation}
+Они имеют одинаковые weighted normalizations
+\begin{equation}
+ q_s^{(i)}+q_a^{(i)}+3q_t^{(i)}=\frac{19}{12},
+ \qquad
+ \kappa_s^{(i)}+\kappa_a^{(i)}+3\kappa_t^{(i)}=5.
+ \label{eq:v9-kms-origin-witness-normalizations}
+\end{equation}
+Оба генератора primitive и имеют Liouvillian rank $35$, но их initial
+excitation conductances различны:
+\begin{equation}
+ R_1=\sum_\alpha d_\alpha\kappa_\alpha^{(1)}q_\alpha^{(1)}
+ =\frac{19}{12},
+ \qquad
+ R_2=\sum_\alpha d_\alpha\kappa_\alpha^{(2)}q_\alpha^{(2)}
+ =\frac53,
+ \quad d=(1,1,3).
+ \label{eq:v9-kms-origin-witness-rates}
+\end{equation}
+Их faithful стационарное состояниеs также различны:
+\begin{equation}
+ \rho_1=\frac1{31}\operatorname{diag}(12,6,4,3,3,3),
+ \qquad
+ \rho_2=\frac1{31}\operatorname{diag}(12,4,6,3,3,3).
+ \label{eq:v9-kms-origin-witness-states}
+\end{equation}
+
+\section{Почему положительная форма без source недостаточна}
+
+Каноническая multiplicity metric на одной тройке равна
+\begin{equation}
+ W=\operatorname{diag}(1,1,3),
+ \qquad
+ \mathbb W=W\oplus W,
+ \qquad \det\mathbb W=9,
+ \qquad \rank\mathbb W=6.
+ \label{eq:v9-kms-origin-common-metric}
+\end{equation}
+Source-free bounded parent
+\begin{equation}
+ S_0(\boldsymbol\theta,\boldsymbol\kappa)
+ =\frac12\boldsymbol\theta^TW\boldsymbol\theta
+ +\frac12\boldsymbol\kappa^TW\boldsymbol\kappa
+ \label{eq:v9-kms-origin-source-free-parent}
+\end{equation}
+имеет единственный минимум
+\begin{equation}
+ \boldsymbol\theta_*=0,
+ \qquad \boldsymbol\kappa_*=0.
+ \label{eq:v9-kms-origin-zero-minimum}
+\end{equation}
+Первое равенство даёт вырожденный Hamiltonian, второе выключает dynamics.
+Для положительной внутренней точки необходимы две source-тройки:
+\begin{equation}
+ S_j=S_0-j_\theta^T\boldsymbol\theta-j_\kappa^T\boldsymbol\kappa,
+ \qquad
+ \boldsymbol\theta_*=W^{-1}j_\theta,
+ \quad
+ \boldsymbol\kappa_*=W^{-1}j_\kappa.
+ \label{eq:v9-kms-origin-sourced-parent}
+\end{equation}
+Но задание $(j_\theta,j_\kappa)$ эквивалентно заданию искомых шести чисел,
+пока их общий родительский функционал-origin не указан.
+
+\section{Аудит существующих кандидатов}
+
+Проверены семь классов кандидатов:
+\begin{equation}
+ \begin{aligned}
+ \mathcal C_{\rm origin}=\{&\text{symmetry},\text{common trace},
+ \text{type observables},\text{KMS},\\
+ &\text{Gibbs normalization},\text{phase Laplacian},S_4\}.
+ \end{aligned}
+ \label{eq:v9-kms-origin-candidate-set}
+\end{equation}
+Ни один из них не создаёт ненулевые source-тройки без новых коэффициентов:
+\begin{equation}
+ N_{\rm candidate\ origin}=0/7,
+ \qquad
+ N_{\rm type\ separation}=3/3,
+ \qquad
+ N_{\rm normalized\ relative\ freedom}=4.
+ \label{eq:v9-kms-origin-candidate-ledger}
+\end{equation}
+Итоговый физический реестр равен
+\begin{equation}
+ \begin{aligned}
+ N_{\rm gap\ origin}&=0/3,\\
+ N_{\rm conductance\ origin}&=0/3,\\
+ N_{\rm KMS\ parameter\ origin}&=0/6,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-origin-final-ledger}
+\end{equation}
+
+\begin{theorem}[Типовая полнота без численного selector]
+Multiplicity, grading и charge образуют невырожденную систему типов для
+трёх KMS-каналов. Тем не менее они разрешают весь трёхмерный diagonal
+commutant отдельно для gaps и conductances. Две естественные нормировки
+оставляют четырёхмерное семейство, содержащее неэквивалентные primitive
+generators.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет source-free KMS parent]
+Положительная invariant quadratic form без линейного source минимизируется
+при нулевых gaps и conductances. Ненулевая primitive KMS dynamics требует
+двух трёхкомпонентных source-векторов либо механизма, который выводит их из
+других slots общего родительского функционала.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item type separation: \textbf{$3/3$};
+\item normalized relative freedom: \textbf{$4$};
+\item candidate origins: \textbf{$0/7$};
+\item gap origin: \textbf{$0/3$};
+\item conductance origin: \textbf{$0/3$};
+\item KMS parameter origin: \textbf{$0/6$};
+\item следующий гейт: \textbf{common source-parent architecture}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_gap_conductance_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-origin-carlen-maas}
+E.~A.~Carlen, J.~Maas, \emph{Gradient flow and entropy inequalities for
+quantum Markov semigroups with detailed balance}, arXiv:1609.01254.
+\bibitem{v9-kms-origin-temme}
+K.~Temme, M.~J.~Kastoryano, M.~B.~Ruskai, M.~M.~Wolf, F.~Verstraete,
+\emph{The $\chi^2$-divergence and mixing times of quantum Markov processes},
+J. Math. Phys. \textbf{51} (2010), 122201.
+\end{thebibliography}

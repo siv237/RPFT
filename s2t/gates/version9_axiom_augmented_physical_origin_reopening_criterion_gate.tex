@@ -1,0 +1,105 @@
+\chapter{Критерий повторного открытия программы физического происхождения}
+\label{ch:v9-physical-origin-reopening-criterion}
+
+\section{Три открытых критерия}
+
+После отделения conditional и physical ledger остаётся deficit
+\begin{equation}
+ \mathbf d_{\rm phys}=(1,1,1)^T,
+ \label{eq:v9-reopening-deficit}
+\end{equation}
+соответствующий physical selection масштаба и связи, физический гессиан и
+unconditional слепое безразмерное следствие.
+
+Эти три program slots не являются тремя независимыми происхождениями.
+Минимальная карта двух provenance-пакетов равна
+\begin{equation}
+ R_{\rm reopen}=
+ \begin{pmatrix}
+  1&0\\
+  0&1\\
+  0&1
+ \end{pmatrix}.
+ \label{eq:v9-reopening-map}
+\end{equation}
+Первый столбец означает physical origin общего $E_*$ и coupling $\chi$.
+Второй означает physical origin логарифм определителя parent-term вместе с его
+коэффициентом. После такого происхождения тот же term даёт и положительный
+shape-Hessian, и blind normalized consequence.
+
+\section{Минимальность reopening dossier}
+
+Для совместного dossier
+\begin{equation}
+ \mathbf a_{\rm joint}=(1,1)^T,
+ \qquad
+ R_{\rm reopen}\mathbf a_{\rm joint}=\mathbf d_{\rm phys},
+ \qquad
+ \rank R_{\rm reopen}=2.
+ \label{eq:v9-reopening-joint-closure}
+\end{equation}
+Ни один пакет отдельно не покрывает deficit:
+\begin{equation}
+ \rank\bigl(R_{\rm reopen}^{(1)}\mid\mathbf d_{\rm phys}\bigr)=2,
+ \qquad
+ \rank\bigl(R_{\rm reopen}^{(2)}\mid\mathbf d_{\rm phys}\bigr)=2.
+ \label{eq:v9-reopening-single-package-no-go}
+\end{equation}
+Следовательно, необходимы два независимых physical-origin certificate,
+хотя один из них закрывает сразу два program criteria.
+
+Допустимый certificate должен быть source-free относительно искомого
+числа: его microscopic carrier, measure/action и coefficient должны быть
+заданы до чтения target ratios. Кроме того, оба пакета должны входить в
+один ограниченный снизу common parent; две несвязанные подгонки не переоткрывают
+программу Тома IX.
+
+\section{Текущая граница}
+
+Для augmented model условная availability равна
+\begin{equation}
+ \mathbf a_{\rm cond}=(1,1)^T,
+ \qquad R_{\rm reopen}\mathbf a_{\rm cond}=(1,1,1)^T.
+ \label{eq:v9-reopening-conditional-availability}
+\end{equation}
+Но admitted scale wells и логарифм определителя axiom не имеют physical-origin
+certificate. Поэтому
+\begin{equation}
+ \mathbf a_{\rm phys}=(0,0)^T,
+ \qquad R_{\rm reopen}\mathbf a_{\rm phys}=(0,0,0)^T,
+ \label{eq:v9-reopening-physical-availability}
+\end{equation}
+и строгий residual остаётся
+\begin{equation}
+ \mathbf d_{\rm phys}-R_{\rm reopen}\mathbf a_{\rm phys}
+ =(1,1,1)^T,
+ \qquad \sum_i d_i^{\rm residual}=3>0.
+ \label{eq:v9-reopening-residual}
+\end{equation}
+
+\begin{theorem}[Минимальный reopening criterion]
+Физическая ветвь Тома IX может быть переоткрыта только совместным dossier
+из двух independent provenance-пакетов: physical scale/coupling origin и
+physical логарифм определителя-parent origin. Их incidence map имеет rank $2$ и покрывает
+все три открытых program criteria.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет фиктивного переоткрытия]
+Один physical scale anchor без логарифм определителя origin либо один логарифм определителя mechanism
+без physical $E_*,\chi$ не переоткрывает программу. Не допускаются также
+содержащий целевую подстановку transformations, fitted coefficients и два несвязанных
+parent-term, не происходящих из одного microscopic carrier.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item open physical criteria: \textbf{$3$};
+\item minimal independent origin packages: \textbf{$2$};
+\item conditional deficit coverage: \textbf{$3/3$};
+\item physical deficit coverage: \textbf{$0/3$};
+\item physical reopening packages: \textbf{$0/2$};
+\item status freeze: \textbf{сохраняется};
+\item следующий гейт: \textbf{common-origin carrier admission}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_axiom_augmented_physical_origin_reopening_criterion_gate_results.json}.

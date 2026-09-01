@@ -1,0 +1,121 @@
+\chapter{Общий носитель гауссовой ковариации для физического повторного открытия}
+\label{ch:v9-physical-reopening-common-origin-carrier}
+
+\section{Один оператор для двух provenance-пакетов}
+
+Пусть $R_\theta,R_\kappa>0$ --- два type-operator на пространстве
+$V_{\rm type}\cong\mathbb R^5$ с multiplicities $1+1+3$ и
+\begin{equation}
+ \Tr R_\theta=\Tr R_\kappa=5.
+ \label{eq:v9-common-origin-shape-normalization}
+\end{equation}
+На общем носителе $V_{\rm type}\otimes\mathbb R^2_{\rm KMS}$ введём
+\begin{equation}
+ Q(e,\chi,R_\theta,R_\kappa)
+ =\operatorname{diag}(eR_\theta,e\chi^2R_\kappa),
+ \qquad e=\frac{E_*}{\mu}>0.
+ \label{eq:v9-common-origin-operator}
+\end{equation}
+Его dimension равна $10$, а два package-projector имеют rank $5$.
+
+Один и тот же оператор содержит оба требуемых пакета:
+\begin{equation}
+ \Tr Q=5e(1+\chi^2),
+ \qquad
+ \det Q=e^{10}\chi^{10}\det R_\theta\det R_\kappa.
+ \label{eq:v9-common-origin-trace-determinant}
+\end{equation}
+
+\section{Spectral-entropy parent}
+
+Рассмотрим логарифм определителя functional
+\begin{equation}
+ \Phi(Q)=\Tr Q-\log\det Q-10.
+ \label{eq:v9-common-origin-spectral-entropy}
+\end{equation}
+Для positive $Q$ это удвоенная относительная энтропия centered Gaussian
+covariance $Q$ относительно unit covariance. Поэтому
+$\Phi(Q)\geq0$ и equality достигается только при $Q=I_{10}$; связь
+trace--логарифм определителя является стандартной Gaussian covariance identity
+\cite{v9-common-origin-lami2017}.
+
+В log-ratio coordinates $(x_1,x_2)$ и $(y_1,y_2)$ для двух shapes
+стационарная точка равна
+\begin{equation}
+ (e,\chi,x_1,x_2,y_1,y_2)=(1,1,0,0,0,0).
+ \label{eq:v9-common-origin-stationary-point}
+\end{equation}
+Точный Hessian имеет
+\begin{equation}
+ \rank\Hess\Phi=6,
+ \qquad \det\Hess\Phi=36,
+ \label{eq:v9-common-origin-hessian-rank}
+\end{equation}
+и spectrum
+\begin{equation}
+ \Spec(\Hess\Phi)=
+ \left\{15-5\sqrt5,15+5\sqrt5,1,1,\frac35,\frac35\right\}.
+ \label{eq:v9-common-origin-hessian-spectrum}
+\end{equation}
+Следовательно, один ограниченный снизу functional условно выбирает scale,
+coupling и четыре relative-shape coordinates.
+
+\section{Почему physical scale ещё не выведен}
+
+Оператор зависит не от $E_*$ отдельно, а от отношения $e=E_*/\mu$.
+Общее rescaling
+\begin{equation}
+ (E_*,\mu)\longmapsto(sE_*,s\mu)
+ \qquad\Longrightarrow\qquad
+ \frac{sE_*}{s\mu}=\frac{E_*}{\mu}
+ \label{eq:v9-common-origin-scale-orbit}
+\end{equation}
+не меняет $Q$ или $\Phi$. Линеаризованная scale-map равна
+\begin{equation}
+ J_{\rm scale}=\begin{pmatrix}1&-1\end{pmatrix},
+ \qquad \rank J_{\rm scale}=1,
+ \qquad \operatorname{nullity}J_{\rm scale}=1.
+ \label{eq:v9-common-origin-scale-nullity}
+\end{equation}
+Таким образом minimum $e=1$ означает лишь $E_*=\mu$. Без физического
+происхождения reference covariance и её масштаба $\mu$ абсолютная энергия
+не предсказана.
+
+Кроме того, Gaussian covariance carrier пока является admitted auxiliary
+carrier, а не состоянием, выведенным из существующего endpoint QMS. Поэтому
+relative-entropy representation не равна physical parent-origin.
+
+\begin{theorem}[Common-origin carrier admission]
+Десятимерный positive covariance operator $Q$ является минимальным общим
+carrier для scale/coupling и логарифм определителя packages. Functional $\Phi$ имеет
+изолированный strictly stable minimum и условно закрывает joint selection
+$2/2$.
+\end{theorem}
+
+\begin{nogocriterion}[Reference-state boundary]
+Нельзя считать $E_*$ выведенным из minimum $e=1$, пока independently не
+выведен опорный масштаб $\mu$. Нельзя также считать Gaussian relative
+entropy физическим родительским функционалом, пока unit reference covariance не получена как
+стационарное состояние того же microscopic carrier.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item common covariance carrier dimension: \textbf{$10$};
+\item common carrier architecture: \textbf{$1/1$};
+\item conditional joint selection: \textbf{$2/2$};
+\item common Hessian rank/determinant: \textbf{$6/36$};
+\item reference-scale nullity: \textbf{$1$};
+\item physical-origin packages: \textbf{$0/2$};
+\item physical reopening: \textbf{нет}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_physical_reopening_common_origin_carrier_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-common-origin-lami2017}
+L.~Lami, C.~Hirche, G.~Adesso, A.~Winter,
+\emph{From log-determinant inequalities to Gaussian entanglement via
+recoverability theory}, IEEE Transactions on Information Theory 63 (2017),
+7553--7568; arXiv:1703.06149.
+\end{thebibliography}

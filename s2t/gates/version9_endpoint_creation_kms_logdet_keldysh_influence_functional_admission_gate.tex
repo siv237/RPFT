@@ -1,0 +1,227 @@
+\chapter{Допуск нормированного функционала влияния KMS--Келдыша}
+\label{ch:v9-kms-keldysh-influence-admission}
+
+\section{Почему triangular determinant недостаточен}
+
+Предыдущий гейт оставил causal triangular kernel как единственный
+очевидный способ сохранить произведение diagonal determinants при nonzero
+off-diagonal block. Physical Schwinger--Keldysh object, однако, должен
+одновременно иметь retarded/advanced adjointness, statistical block,
+closed-contour normalization и KMS relation. Проверяется kernel на той же
+five-channel type-space
+\begin{equation}
+ V_{\rm type}=1_s\oplus1_a\oplus3_t,
+ \qquad \dim_{\mathbb C}V_{\rm type}=5.
+ \label{eq:v9-kms-keldysh-type-space}
+\end{equation}
+
+Введём positive diagonal operators
+\begin{equation}
+ R_\theta=\operatorname{diag}(\theta_s,\theta_a,\theta_t I_3),
+ \qquad
+ R_\kappa=\operatorname{diag}(\kappa_s,\kappa_a,\kappa_t I_3).
+ \label{eq:v9-kms-keldysh-type-operators}
+\end{equation}
+
+\section{Causal retarded/advanced/Keldysh triple}
+
+Минимальная dissipative realization помещает conductance operator в
+imaginary part causal poles:
+\begin{equation}
+ K^R=R_\theta-iR_\kappa,
+ \qquad
+ K^A=R_\theta+iR_\kappa=(K^R)^\dagger.
+ \label{eq:v9-kms-keldysh-ra-pair}
+\end{equation}
+Пусть equilibrium distribution operator сохраняет type decomposition,
+\begin{equation}
+ F=\operatorname{diag}(f_s,f_a,f_t I_3).
+ \label{eq:v9-kms-keldysh-distribution}
+\end{equation}
+Тогда fermionic KMS/FDT block имеет форму
+\begin{equation}
+ K^K=(K^R-K^A)F=-2iR_\kappa F.
+ \label{eq:v9-kms-keldysh-fdt}
+\end{equation}
+Полный causal kernel равен
+\begin{equation}
+ \mathcal K_{\rm SK}=
+ \begin{pmatrix}K^R&K^K\\0&K^A\end{pmatrix}.
+ \label{eq:v9-kms-keldysh-full-kernel}
+\end{equation}
+При nonzero $\kappa_\alpha,f_\alpha$ оба dissipative blocks имеют full rank:
+\begin{equation}
+ \rank R_\kappa=5,
+ \qquad \rank K^K=5.
+ \label{eq:v9-kms-keldysh-dissipative-ranks}
+\end{equation}
+Следовательно, causal architecture действительно несёт damping и
+equilibrium noise во всех пяти каналах.
+
+\section{Determinant causal pair}
+
+Triangularity удаляет $K^K$ из determinant:
+\begin{equation}
+ \det\mathcal K_{\rm SK}=\det K^R\det K^A.
+ \label{eq:v9-kms-keldysh-triangular-determinant}
+\end{equation}
+Но adjointness фиксирует не два independent positive determinants, а
+modulus square одного causal operator:
+\begin{equation}
+ \det\mathcal K_{\rm SK}=
+ (\theta_s^2+\kappa_s^2)
+ (\theta_a^2+\kappa_a^2)
+ (\theta_t^2+\kappa_t^2)^3.
+ \label{eq:v9-kms-keldysh-spectral-determinant}
+\end{equation}
+Требуемый selector determinant имеет другую зависимость,
+\begin{equation}
+ D_{\rm target}=\det R_\theta\det R_\kappa
+ =\theta_s\theta_a\theta_t^3\kappa_s\kappa_a\kappa_t^3.
+ \label{eq:v9-kms-keldysh-target-determinant}
+\end{equation}
+Поэтому causal adjointness сама запрещает generic identification
+\begin{equation}
+ \det\mathcal K_{\rm SK}\not\equiv D_{\rm target}.
+ \label{eq:v9-kms-keldysh-generic-mismatch}
+\end{equation}
+
+\section{Exact interacting witness}
+
+Возьмём isotropic point
+\begin{equation}
+ R_\theta=2I_5,
+ \qquad R_\kappa=2I_5,
+ \qquad F=\frac12 I_5.
+ \label{eq:v9-kms-keldysh-witness}
+\end{equation}
+Здесь damping и noise ненулевые, а causal determinant равен
+\begin{equation}
+ \det\mathcal K_{\rm SK}^{(w)}=8^5=32768.
+ \label{eq:v9-kms-keldysh-witness-determinant}
+\end{equation}
+На том же point target равен
+\begin{equation}
+ D_{\rm target}^{(w)}=2^{10}=1024.
+ \label{eq:v9-kms-keldysh-witness-target}
+\end{equation}
+Отсюда
+\begin{equation}
+ \det\mathcal K_{\rm SK}^{(w)}-D_{\rm target}^{(w)}=31744,
+ \qquad
+ \frac{\det\mathcal K_{\rm SK}^{(w)}}{D_{\rm target}^{(w)}}=32.
+ \label{eq:v9-kms-keldysh-witness-defect}
+\end{equation}
+
+\section{Closed-contour normalization}
+
+Даже этот causal determinant не остаётся standalone vacuum term. Для
+совпадающих forward/backward sources unitarity требует
+\begin{equation}
+ Z_{\rm SK}[J,J]=1.
+ \label{eq:v9-kms-keldysh-normalization}
+\end{equation}
+В finite Gaussian certificate это exact division на тот же source-free
+determinant:
+\begin{equation}
+ \widehat Z_{\rm vac}=
+ \frac{\det\mathcal K_{\rm SK}}{\det\mathcal K_{\rm SK}}=1.
+ \label{eq:v9-kms-keldysh-normalized-ratio}
+\end{equation}
+Поэтому normalized vacuum effective action равен
+\begin{equation}
+ \Gamma_{\rm vac}^{\rm SK}=-\log\widehat Z_{\rm vac}=0,
+ \label{eq:v9-kms-keldysh-normalized-action}
+\end{equation}
+а не
+\begin{equation}
+ B_{\rm target}=-\log\det R_\theta-\log\det R_\kappa.
+ \label{eq:v9-kms-keldysh-target-barrier}
+\end{equation}
+
+\section{Physical boundary}
+
+Finite causal kernel admits the algebraic KMS architecture, но не выводит
+reservoir limit. Primitive Markov conductances требуют independently
+derived spectral density или repeated fresh bath cells:
+\begin{equation}
+ J_\alpha(\omega)
+ =2\pi\sum_q|g_{\alpha q}|^2\delta(\omega-\omega_q),
+ \qquad
+ \kappa_\alpha\sim J_\alpha(\Delta_\alpha).
+ \label{eq:v9-kms-keldysh-spectral-density-boundary}
+\end{equation}
+Текущий finite certificate не выбирает $J_s,J_a,J_t$ и не превращает
+normalized contour в source-free логарифм определителя barrier.
+
+\section{ProofDSL и итог}
+
+LCF certificate проверяет causal blocks, adjointness, KMS/FDT identity,
+ranks, оба determinants, exact witness и normalization:
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=13/13,
+ \qquad N_{\rm registered\ gates}=58,
+ \qquad N_{\rm registered\ obligations}=468.
+ \label{eq:v9-kms-keldysh-proofdsl}
+\end{equation}
+Итоговые ledgers:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm causal\ RAK\ architecture}&=5/5,\\
+ N_{\rm KMS/FDT}&=1/1,\\
+ N_{\rm nonzero\ dissipative\ carrier}&=1/1,\\
+ N_{\rm unnormalized\ target\ logdet}&=0/1,\\
+ N_{\rm normalized\ target\ logdet}&=0/1,\\
+ N_{\rm reservoir\ Markov\ origin}&=0/1,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-keldysh-ledger}
+\end{equation}
+
+\begin{theorem}[Причинный допуск KMS]
+Пятиканальный носитель Швингера--Келдыша допускает точную сопряжённую пару
+запаздывающего и опережающего блоков, затухание и статистический блок полного
+ранга, а также фермионное соотношение KMS/FDT.
+\end{theorem}
+
+\begin{nogocriterion}[Препятствие нормировки и логарифма определителя]
+Сопряжённость запаздывающего и опережающего блоков даёт определитель квадрата
+модуля $\prod_\alpha(\theta_\alpha^2+\kappa_\alpha^2)^{m_\alpha}$, а не
+произведение $\prod_\alpha(\theta_\alpha\kappa_\alpha)^{m_\alpha}$.
+Нормировка замкнутого контура затем сокращает гауссов определитель без
+внешнего источника до единицы. Следовательно, причинное удвоение Келдыша
+выводит архитектуру шума и диссипации, но не физический инвариантный
+родительский функционал логарифма определителя.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item causal carrier: \textbf{$10$};
+\item damping/noise ranks: \textbf{$5/5$};
+\item KMS/FDT: \textbf{$1/1$};
+\item witness causal determinant: \textbf{$32768$};
+\item witness target determinant: \textbf{$1024$};
+\item exact defect/ratio: \textbf{$31744/32$};
+\item normalized vacuum action: \textbf{$0$};
+\item physical логарифм определителя parent: \textbf{$0/1$};
+\item ProofDSL: \textbf{$13/13$, registry $58/468$};
+\item следующий гейт: \textbf{reservoir spectral-density parent-origin}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_keldysh_influence_functional_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-keldysh-kamenev}
+A.~Kamenev, A.~Levchenko,
+\emph{Keldysh technique and non-linear sigma-model: basic principles and
+applications}, Adv. Phys. \textbf{58} (2009) 197--319,
+arXiv:0901.3586.
+\bibitem{v9-kms-keldysh-hlr}
+F.~M.~Haehl, R.~Loganayagam, M.~Rangamani,
+\emph{Schwinger--Keldysh formalism I: BRST symmetries and superspace},
+JHEP \textbf{06} (2017) 069, arXiv:1610.01940.
+\bibitem{v9-kms-keldysh-repeated}
+J.-F.~Bougron, A.~Joye, C.-A.~Pillet,
+\emph{Markovian Repeated Interaction Quantum Systems},
+arXiv:2202.05321.
+\end{thebibliography}

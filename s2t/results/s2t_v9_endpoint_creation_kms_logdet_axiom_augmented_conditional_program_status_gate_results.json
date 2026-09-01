@@ -1,0 +1,66 @@
+{
+  "axiom_dependency": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    1
+  ],
+  "conditional_status": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "criteria": [
+    "common_carrier",
+    "physical_scale_and_coupling_selection",
+    "transport_compatibility",
+    "common_stationary_state_and_fixed_algebra",
+    "physical_hessian",
+    "blind_dimensionless_consequence"
+  ],
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_logdet_axiom_augmented_conditional_program_status_gate",
+  "next_gate": "version9_axiom_augmented_physical_origin_reopening_criterion_gate",
+  "physical_status": [
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+  ],
+  "predecessor": "version9_endpoint_creation_kms_logdet_axiom_augmented_blind_dimensionless_prediction_gate",
+  "proofdsl": {
+    "certificate_sha256": "165190e94ca6698f6b24e792470ac447ebdf3630eb2248839728b689be072884",
+    "floating_point_values": 0,
+    "obligation_count": 8,
+    "obligations": [
+      "conditional_status_vector",
+      "physical_status_vector",
+      "status_decomposition",
+      "conditional_score",
+      "physical_score",
+      "deficit_score",
+      "axiom_dependency_rank",
+      "strict_status_gap"
+    ],
+    "status": "lcf-checked"
+  },
+  "scores": {
+    "axiom_dependent": "3/6",
+    "conditional": "6/6",
+    "physical": "3/6"
+  },
+  "verdict": {
+    "conditional_augmented_program_closed": true,
+    "physical_four_slot_parent_derived": false,
+    "strict_physical_program_closed": false,
+    "tome9_requires_status_freeze": true
+  }
+}

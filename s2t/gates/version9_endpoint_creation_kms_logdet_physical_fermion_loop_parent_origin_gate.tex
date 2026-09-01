@@ -1,0 +1,222 @@
+\chapter{Физическое происхождение фермионной петли для логарифма определителя KMS}
+\label{ch:v9-kms-physical-fermion-loop-origin}
+
+\section{Проверяемая физическая альтернатива}
+
+После запретительный результат Stückelberg-механизма остаётся проверить, может ли требуемый
+barrier возникнуть как обычный однопетлевой determinant уже существующих
+физических fermions. Target равен
+\begin{equation}
+ B_{\rm target}=-\log\det R_\theta-\log\det R_\kappa,
+ \qquad
+ Z_{\rm target}=\det R_\theta\det R_\kappa.
+ \label{eq:v9-kms-physical-loop-target}
+\end{equation}
+Здесь
+\begin{equation}
+ R_\theta=\operatorname{diag}(r_{\theta s},r_{\theta a},
+ r_{\theta t},r_{\theta t},r_{\theta t}),
+ \quad
+ R_\kappa=\operatorname{diag}(r_{\kappa s},r_{\kappa a},
+ r_{\kappa t},r_{\kappa t},r_{\kappa t}).
+ \label{eq:v9-kms-physical-loop-type-operators}
+\end{equation}
+
+\section{Физическая multiplicity creation-cell}
+
+Creation-cell имеет одну configuration-source line и одну пятимерную
+target-мультиплету:
+\begin{equation}
+ \mathcal H_{\rm cr}=\mathbb C\Omega\oplus V_{\rm type},
+ \qquad \dim_{\mathbb C}V_{\rm type}=1+1+3=5.
+ \label{eq:v9-kms-physical-loop-carrier}
+\end{equation}
+Соответствующий projector имеет
+\begin{equation}
+ P_{\rm type}=\operatorname{diag}(0,1,1,1,1,1),
+ \qquad \rank P_{\rm type}=5.
+ \label{eq:v9-kms-physical-loop-projector}
+\end{equation}
+Даже если интерпретировать все пять target-lines как одну complex fermion
+multiplet, её quadratic kernel даёт один determinant
+\begin{equation}
+ \int D\bar\psi D\psi\,
+ e^{-\bar\psi K\psi}=\det K.
+ \label{eq:v9-kms-physical-loop-gaussian}
+\end{equation}
+
+\section{Degree obstruction для block-linear loop}
+
+Каждый type determinant имеет weighted degree five:
+\begin{equation}
+ \det R_\theta=r_{\theta s}r_{\theta a}r_{\theta t}^{3},
+ \qquad
+ \det R_\kappa=r_{\kappa s}r_{\kappa a}r_{\kappa t}^{3}.
+ \label{eq:v9-kms-physical-loop-single-determinants}
+\end{equation}
+Для любого homogeneous block-linear kernel на одной пятимерной multiplet
+общая rescaling даёт
+\begin{equation}
+ \det\!\left[\lambda(aR_\theta+bR_\kappa)\right]
+ =\lambda^5\det(aR_\theta+bR_\kappa).
+ \label{eq:v9-kms-physical-loop-linear-degree}
+\end{equation}
+Target одновременно масштабируется как
+\begin{equation}
+ \det(\lambda R_\theta)\det(\lambda R_\kappa)
+ =\lambda^{10}\det R_\theta\det R_\kappa.
+ \label{eq:v9-kms-physical-loop-target-degree}
+\end{equation}
+Поэтому одна обычная linear fermion multiplet имеет determinant capacity
+$1/2$: она не воспроизводит два независимых blocks.
+
+\section{Почему Real doubling не является второй species}
+
+Антисимметричный Real lift одного kernel имеет вид
+\begin{equation}
+ \mathcal A_J(R)=
+ \begin{pmatrix}0&R\\-R&0\end{pmatrix},
+ \qquad
+ \det\mathcal A_J(R)=(\det R)^2.
+ \label{eq:v9-kms-physical-loop-real-lift}
+\end{equation}
+Physical Pfaffian half-count возвращает один determinant,
+\begin{equation}
+ \operatorname{Pf}\mathcal A_J(R)=\pm\det R,
+ \label{eq:v9-kms-physical-loop-pfaffian}
+\end{equation}
+а не independent $\det R_\theta\det R_\kappa$. Попытка назначить двум
+Real-партнёрам разные blocks нарушает exchange compatibility. Для exact
+witness
+\begin{equation}
+ R_\theta^{(w)}=\operatorname{diag}(1,2,3,3,3),
+ \quad
+ R_\kappa^{(w)}=\operatorname{diag}(2,1,2,2,2)
+ \label{eq:v9-kms-physical-loop-real-witness}
+\end{equation}
+коммутатор block-оператора с Real exchange имеет
+\begin{equation}
+ \rank[J_{\rm ex},R_\theta^{(w)}\oplus R_\kappa^{(w)}]=10.
+ \label{eq:v9-kms-physical-loop-real-mismatch}
+\end{equation}
+
+\section{Два algebraic routes и их origin}
+
+Две independent physical multiplets условно дали бы
+\begin{equation}
+ K_{\rm double}=R_\theta\oplus R_\kappa,
+ \qquad \dim K_{\rm double}=10,
+ \qquad \det K_{\rm double}=Z_{\rm target}.
+ \label{eq:v9-kms-physical-loop-double}
+\end{equation}
+Но в creation-cell зарегистрирована только одна target-мультиплета; вторая
+пятимерная physical species является новым носителем datum.
+
+Формально можно остаться на пяти измерениях и записать
+\begin{equation}
+ K_{\rm comp}=R_\theta R_\kappa,
+ \qquad \det K_{\rm comp}=Z_{\rm target}.
+ \label{eq:v9-kms-physical-loop-composite}
+\end{equation}
+Однако это не block-linear inherited kernel. Уже первая компонента содержит
+явный mixed coupling
+\begin{equation}
+ \frac{\partial^2(K_{\rm comp})_{ss}}
+ {\partial r_{\theta s}\partial r_{\kappa s}}=1.
+ \label{eq:v9-kms-physical-loop-mixed-derivative}
+\end{equation}
+Ни Hamiltonian creation-frame, ни KMS relation не выводят этот product.
+Запись $K_{\rm comp}$ поэтому кодирует требуемый determinant в bare
+bilinear и является содержащий целевую подстановку.
+
+\section{Conductance obstruction и Keldysh boundary}
+
+Gap-shape принадлежит Hamiltonian sector, тогда как conductance-shape
+задаёт dissipative Kossakowski rates:
+\begin{equation}
+ H_{\rm cr}=\Delta_sP_s+\Delta_aP_a+\Delta_tP_t,
+ \qquad
+ \gamma_\alpha^-=\kappa_\alpha,
+ \quad \gamma_\alpha^+=\kappa_\alpha e^{-\beta\Delta_\alpha}.
+ \label{eq:v9-kms-physical-loop-sector-split}
+\end{equation}
+В текущем microscopic action нет fermionic bilinear с eigenvalues
+$r_{\kappa\alpha}$. Чтобы превратить rates в loop kernel, необходимо
+предъявить environment fermions, их spectrum и system--bath coupling.
+
+Schwinger--Keldysh doubling также не является второй particle species:
+две contour-ветви описывают одну density evolution, а normalization на
+совпадающих sources требует
+\begin{equation}
+ Z_{\rm SK}[J,J]=1.
+ \label{eq:v9-kms-physical-loop-sk-normalization}
+\end{equation}
+Поэтому branch duplication нельзя считать свободным вторым determinant.
+
+\section{ProofDSL и итог}
+
+LCF certificate проверяет ranks, determinant degrees, Real mismatch,
+doubled block и composite-kernel identity:
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=11/11,
+ \qquad N_{\rm registered\ gates}=56,
+ \qquad N_{\rm registered\ obligations}=443.
+ \label{eq:v9-kms-physical-loop-proofdsl}
+\end{equation}
+Итоговые ledgers:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm physical\ target\ carrier}&=5/5,\\
+ N_{\rm independent\ determinant\ capacity}&=1/2,\\
+ N_{\rm candidate\ parent\ origin}&=0/6,\\
+ N_{\rm physical\ logdet\ parent}&=0/1,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-physical-loop-ledger}
+\end{equation}
+
+\begin{theorem}[Точная determinant-capacity physical target]
+Одна пятимерная physical target-мультиплета несёт один degree-five
+fermion determinant. Две независимые copies или один явно multiplicative
+kernel алгебраически воспроизводят target degree ten.
+\end{theorem}
+
+\begin{nogocriterion}[Physical loop не выводит conductance determinant]
+Real/Pfaffian doubling не создаёт independent species, Keldysh doubling
+нормирован как один closed-time process, а conductances не входят в
+унаследованный Hamiltonian bilinear. Две algebraic реализации требуют либо
+новой пятимерной fermion multiplet, либо содержащий целевую подстановку product kernel.
+Следовательно, полный physical логарифм определителя parent не выведен.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item physical target multiplet: \textbf{$5$};
+\item one-loop linear degree: \textbf{$5$};
+\item target degree: \textbf{$10$};
+\item determinant capacity: \textbf{$1/2$};
+\item Real exchange mismatch witness: \textbf{rank $10$};
+\item conditional double: \textbf{$R_\theta\oplus R_\kappa$};
+\item conditional composite: \textbf{$R_\theta R_\kappa$};
+\item candidate origin: \textbf{$0/6$};
+\item ProofDSL: \textbf{$11/11$, registry $56/443$};
+\item следующий гейт: \textbf{minimal fermion-bath architecture}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_physical_fermion_loop_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-physical-loop-uolea}
+A.~Angelescu, P.~Huang,
+\emph{Integrating Out New Fermions at One Loop},
+JHEP \textbf{01} (2021) 049, arXiv:2006.16532.
+\bibitem{v9-kms-physical-loop-keldysh}
+A.~Kamenev, A.~Levchenko,
+\emph{Keldysh technique and non-linear sigma-model: basic principles and
+applications}, Adv. Phys. \textbf{58} (2009) 197--319,
+arXiv:0901.3586.
+\bibitem{v9-kms-physical-loop-sk-brst}
+F.~M.~Haehl, R.~Loganayagam, M.~Rangamani,
+\emph{Schwinger--Keldysh formalism I: BRST symmetries and superspace},
+JHEP \textbf{06} (2017) 069, arXiv:1610.01940.
+\end{thebibliography}

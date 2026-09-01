@@ -2,11 +2,152 @@
 
 > Status: working
 > Type: index
-> Updated: 2026-08-31
+> Updated: 2026-09-01
 
 Это навигационный каталог вики проекта. Его следует читать перед ответом на
 исследовательские вопросы и перед добавлением новых источников.
 
+- [[2026-09-01-tome9-russian-terminology-lint]] — нормативный словарь Тома IX;
+  введение, заключение и названия 37 глав русифицированы, построчная вычитка
+  промежуточных глав остаётся открытой.
+
+- [[version9-physical-reopening-reference-scale-mu-parent-origin-gate]] —
+  восемь scale candidates дают `0/8`; relative map rank/nullity `7/1`,
+  physical `mu` не выведен, финальный no-go Тома IX готов.
+- [[reference-scale-mu-parent-origin-sources-2026]] — clock, KMS, cutoff,
+  radius и dimensional-transmutation candidates.
+- [[version9-physical-reopening-gaussian-reference-state-parent-origin-gate]] —
+  OU covariance unique при fixed coefficients (`55/0`), но свободное
+  `delta/gamma` оставляет unit reference-state origin `0/1`.
+- [[gaussian-reference-state-parent-origin-sources-2026]] — stationary
+  Lyapunov equation и diffusion/drift boundary.
+- [[version9-physical-reopening-common-origin-carrier-admission-gate]] —
+  common covariance carrier dimension `10` и Hessian `6/36` проходят
+  admission, но scale orbit оставляет `mu`, physical packages `0/2`.
+- [[physical-reopening-common-origin-carrier-sources-2026]] — Gaussian
+  relative entropy как trace--logdet parent и reference-state boundary.
+- [[version9-axiom-augmented-physical-origin-reopening-criterion-gate]] —
+  три physical deficits сжимаются в два independent origin-пакета;
+  conditional coverage `3/3`, physical coverage `0/3`, reopening `0/2`.
+- [[physical-origin-reopening-criterion-sources-2026]] — provenance-map
+  между scale/coupling origin и logdet/Hessian/blind origin.
+- [[version9-endpoint-creation-kms-logdet-axiom-augmented-conditional-program-status-gate]] —
+  conditional score `6/6`, strict physical score `3/6`, axiom-dependency
+  rank `3`; physical parent `0/1`.
+- [[kms-conditional-program-status-sources-2026]] — разделение модельного
+  и физического статусов Тома IX.
+- [[version9-endpoint-creation-kms-logdet-axiom-augmented-blind-dimensionless-prediction-gate]] —
+  unit channel/double ratios, normalized response `1` и zero variance;
+  blind `5/5`, но условно на new axiom.
+- [[kms-axiom-augmented-blind-prediction-sources-2026]] — parameter-free
+  outputs augmented KMS model.
+- [[version9-endpoint-creation-kms-logdet-axiom-augmented-common-parent-closure-gate]] —
+  common Hessian rank/nullity `14/0`, determinant `5184/25`; mathematical
+  closure `1/1`, physical derivation `0/1`.
+- [[kms-axiom-augmented-common-parent-sources-2026]] — сборка admitted axiom
+  с existing four-slot/KMS parent.
+- [[version9-endpoint-creation-kms-logdet-minimal-new-parent-axiom-admission-gate]] —
+  один positive logdet-term контролирует shape rank `4`; admission `1/1`,
+  но stiffness и physical derivation остаются `0/1`.
+- [[kms-minimal-new-parent-axiom-sources-2026]] — строгая граница между
+  аксиоматическим расширением и выводом.
+- [[version9-endpoint-creation-kms-logdet-reservoir-measure-anomaly-parent-origin-gate]] —
+  paired Jacobian `1`; inherited anomaly traces `6,0,0` вместо target `10`,
+  target rescaling оказывается target-loaded.
+- [[kms-reservoir-measure-anomaly-sources-2026]] — anomaly Jacobian,
+  regulator и граница обычной смены переменных.
+- [[version9-endpoint-creation-kms-logdet-reservoir-spectral-density-parent-origin-gate]] —
+  equal rates `(1,1,1)` допускают positive profiles с moment defects
+  `107/105` и `214/105`; spectral/logdet origin остаётся `0/1`.
+- [[kms-reservoir-spectral-density-sources-2026]] — on-shell rates против
+  полного bath profile и off-shell self-energy.
+- [[version9-endpoint-creation-kms-logdet-keldysh-influence-functional-admission-gate]] —
+  causal R/A/K и KMS/FDT admitted, но witness determinant `32768` против
+  target `1024`, а normalization оставляет vacuum action `0`.
+- [[kms-keldysh-next-gate-reconnaissance-2026]] — следующий узел уточнён
+  как admission полного normalized influence functional: causal
+  factorization должна пережить `Z_SK[J,J]=1` и fermionic KMS/FDT.
+- [[kms-keldysh-influence-functional-sources-2026]] — первичные источники
+  по triangular Keldysh kernel, contour normalization и repeated bath.
+- [[version9-endpoint-creation-kms-logdet-minimal-fermion-bath-architecture-gate]] —
+  minimal bath dimension `5`; positive Hermitian witness имеет spectrum
+  `{1^(5),3^(5)}`, но determinant `243` вместо target `1024`; exact target
+  восстанавливается только при zero coupling.
+- [[kms-minimal-fermion-bath-sources-2026]] — fermionic bath, Schur
+  complement, self-energy и causal Keldysh boundary.
+- [[version9-endpoint-creation-kms-logdet-physical-fermion-loop-parent-origin-gate]] —
+  одна physical target-мультиплета dimension `5` имеет determinant capacity
+  `1/2`: Real/Pfaffian doubling не создаёт второй independent block, а
+  conductance determinant требует нового bath carrier или target-loaded kernel.
+- [[kms-physical-fermion-loop-sources-2026]] — physical one-loop determinant,
+  KO/Real half-count, Keldysh normalization и microscopic bath boundary.
+- [[version9-endpoint-creation-kms-logdet-minimal-stueckelberg-shift-parent-architecture-gate]] —
+  nontrivial rank-ten gauge orbit построена, Hessian rank/nullity `10/10`;
+  quotient dimension `10` и его bosonic determinant отменяет ghost logdet.
+- [[kms-stueckelberg-shift-parent-sources-2026]] — Stückelberg invariant
+  combination, quotient modes и determinant cancellation.
+- [[version9-endpoint-creation-kms-logdet-brst-shift-symmetry-parent-origin-gate]] —
+  required gauge orbit rank `10`, maximum inherited rank `6`, deficit
+  `4`; flat spectator shift условен, physical origin `0/1`.
+- [[kms-brst-shift-symmetry-sources-2026]] — различие gauge generator и
+  FP map, spectator flatness и Stückelberg route.
+- [[version9-endpoint-creation-kms-logdet-minimal-brst-complex-architecture-gate]] —
+  contractible quartet `(20|20)` имеет `Q²=0`, rank/nullity `20/20`,
+  zero cohomology и FP determinant `det R_theta det R_kappa`; shift
+  gauge-symmetry origin остаётся `0/1`.
+- [[kms-minimal-brst-complex-sources-2026]] — BRST doublets, gauge-fixing
+  fermion и граница между contractible architecture и origin gauge orbit.
+- [[version9-endpoint-creation-kms-logdet-auxiliary-fermion-statistics-parent-origin-gate]] —
+  inherited tensor gradings имеют odd ranks `2,5,5,8`, а не `10`;
+  paired measure covariance закрыта, но Grassmann statistics origin `0/1`.
+- [[kms-auxiliary-fermion-statistics-sources-2026]] — различие operator и
+  Grassmann parity, BRST/BV origin ghost statistics и paired measure
+  covariance.
+- [[version9-endpoint-creation-kms-logdet-auxiliary-fermion-module-admission-gate]] —
+  `G_aux=Pi(V_type tensor P_KMS)` даёт minimal odd dimension `10` и
+  Berezin rank `20`, не добавляя physical states; architecture `10/10`,
+  statistics/measure origin `0/2`.
+- [[kms-auxiliary-fermion-module-sources-2026]] — parity shift,
+  Grassmann-pairs и граница между auxiliary graded carrier и physical
+  Hilbert space.
+- [[version9-endpoint-creation-kms-relative-shape-logdet-parent-measure-origin-gate]] —
+  complex fermionic Gaussian даёт условно правильный term
+  `-log det R_theta-log det R_kappa`; minimal auxiliary dimension `10`,
+  ProofDSL `10/10`, но odd module отсутствует и inherited origin равен `0/1`.
+- [[kms-logdet-measure-origin-sources-2026]] — Gaussian/Berezin determinant
+  signs и граница между conditional measure representation и физическим
+  происхождением auxiliary fields.
+- [[version9-endpoint-creation-kms-relative-shape-selector-source-minimal-invariant-parent-architecture-gate]] —
+  source-free `-log det R` при `Tr R=5` выбирает isotropic source
+  `(1,1,1,1)` и shapes `(1,1,1)`; algebraic core ProofDSL `10/10`, но
+  происхождение logdet-term остаётся `0/1`.
+- [[version9-endpoint-creation-kms-relative-shape-selector-source-parent-origin-gate]] —
+  inherited parent не имеет interior source-free minimum; восемь origin-
+  кандидатов дают `0/8`, maximum entropy остаётся условным представителем,
+  selector-source origin равен `0/4`.
+- [[version9-endpoint-creation-kms-relative-shape-minimal-selector-architecture-gate]] —
+  четырёхмерный log-ratio selector условно выбирает relative shapes `4/4`;
+  architecture `10/10`, общий Hessian `12/(5184/25)`, но selector-source
+  origin остаётся `0/4`.
+- [[kms-relative-shape-selector-sources-2026]] — log-ratio geometry и
+  weighted log-partition механизм минимального selector.
+- [[version9-endpoint-creation-kms-source-covector-four-slot-parent-origin-gate]] —
+  four-slot map связывает оба общих масштаба (`2/2`), но полный Jacobian
+  разделяется как scale rank `2` плюс relative-shape rank `4`; origin
+  четырёх отношений остаётся `0/4`.
+- [[version9-endpoint-creation-kms-source-vector-common-parent-architecture-gate]] —
+  единый strictly convex source-parent условно выбирает KMS data `6/6`;
+  source-covector origin остаётся `0/2`.
+- [[version9-endpoint-creation-kms-gap-conductance-parent-origin-gate]] —
+  type-system различает три KMS-канала (`3/3`), но две нормировки оставляют
+  freedom dimension `4`; gap/conductance origin остаётся `0/6`.
+- [[endpoint-kms-parameter-origin-sources-2026]] — detailed balance,
+  Gibbs weights и conductances как разные слои данных QMS.
+- [[version9-endpoint-creation-bidirectional-kms-completion-architecture-gate]] —
+  пять reverse channels закрывают primitive QMS: `M6(C)`, rank/nullity
+  `35/1`, architecture `10/10`; KMS parameter origin `0/6`.
+- [[endpoint-bidirectional-kms-sources-2026]] — KMS symmetry и граница
+  между forward/reverse ratio и происхождением параметров.
 - [[version9-endpoint-finite-geometry-creation-operator-parent-origin-gate]] —
   phase zero mode выводит source (`1/1`), но rate commutant dimension `3`,
   rate origin `0/3`, creation parent-origin `1/4`.
@@ -52,7 +193,15 @@
   с индексами `45/1`; architecture `8/8`, selector остаётся `0/4`.
 - [[four-slot-common-carrier-sources-2026]] — наследование `H24`, `K45` и
   GNVW-границы в общей цепной архитектуре.
-- [[tome9-opening-contract]] — Том IX открыт как поиск одного parent для
+- [[version9-final-conclusion-and-tome10-program-gate]] — Том IX завершён:
+  conditional `6/6`, physical `3/6`, deficit rank `3`, reopening `0/2`;
+  Том X специфицирован `6/6`, но ещё не построен (`0/6`).
+- [[tome9-final-conclusion-and-tome10-program]] — итоговая граница IX и
+  шестичастный quantum-RG контракт X.
+- [[tome9-final-conclusion-tome10-program-sources-2026]] — ledgers IX,
+  scale-origin no-go и Coleman--Weinberg направление.
+- [[live-formulas-gates-version9-37]] — шесть финальных формульных блоков.
+- [[tome9-opening-contract]] — Том IX был открыт как поиск одного parent для
   endpoint, `E_*`, `chi` и transport primitive; admission пройден `6/6`.
 - [[version9-four-slot-dynamic-parent-program-admission-gate]] — четыре
   slot-типа независимы, continuous rank равен `2`, construction остаётся

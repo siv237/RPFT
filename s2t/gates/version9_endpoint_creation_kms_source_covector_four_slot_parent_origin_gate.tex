@@ -1,0 +1,200 @@
+\chapter{Четырёхкомпонентное происхождение ковекторов источника KMS}
+\label{ch:v9-endpoint-kms-source-covector-origin}
+
+\section{Две масштабные связи}
+
+Пусть $s,a,t$ обозначают два singlet-типа и charged family-triplet.
+Multiplicity trace задаёт веса
+\begin{equation}
+ w=(1,1,3)^T,
+ \qquad W=\operatorname{diag}(1,1,3).
+ \label{eq:v9-kms-covector-origin-weights}
+\end{equation}
+Из четырёх slots непрерывная пара $(E_*,\chi)$ задаёт ровно два общих
+размерных масштаба:
+\begin{equation}
+ \Delta_*=E_*,
+ \qquad
+ \Gamma_*=\chi^2\frac{E_*}{\hbar}.
+ \label{eq:v9-kms-covector-origin-common-scales}
+\end{equation}
+В логарифмических координатах соответствующая карта имеет якобиан
+\begin{equation}
+ J_{\rm scale}=
+ \frac{\partial(\log\Delta_*,\log\Gamma_*)}
+ {\partial(\log E_*,\log\chi)}
+ =\begin{pmatrix}1&0\\1&2\end{pmatrix},
+ \qquad \rank J_{\rm scale}=2,
+ \qquad \det J_{\rm scale}=2.
+ \label{eq:v9-kms-covector-origin-scale-jacobian}
+\end{equation}
+Следовательно, общий gap-scale и общий conductance-scale действительно
+связаны с уже имеющимися slots без нового размерного параметра.
+
+\section{Разложение на scale и shape}
+
+Запишем три gaps и три conductances как
+\begin{equation}
+ \boldsymbol\Delta=E_*r_\theta,
+ \qquad
+ \boldsymbol\kappa=\Gamma_*r_\kappa,
+ \qquad r_\theta,r_\kappa\in\mathbb R_{>0}^3,
+ \label{eq:v9-kms-covector-origin-factorization}
+\end{equation}
+и удалим повторный общий масштаб двумя weighted-нормировками
+\begin{equation}
+ w^Tr_\theta=5,
+ \qquad w^Tr_\kappa=5.
+ \label{eq:v9-kms-covector-origin-normalizations}
+\end{equation}
+Каждая положительная shape-поверхность двумерна. Удобный tangent-базис
+общего ядра имеет вид
+\begin{equation}
+ B=\begin{pmatrix}
+ 1&0\\0&1\\-1/3&-1/3
+ \end{pmatrix},
+ \qquad w^TB=0,
+ \qquad \rank B=2.
+ \label{eq:v9-kms-covector-origin-shape-basis}
+\end{equation}
+Тем самым после фиксации двух scales остаются четыре независимые
+относительные координаты, например
+\begin{equation}
+ \rho_{\theta s}=\frac{\Delta_s}{\Delta_t},\quad
+ \rho_{\theta a}=\frac{\Delta_a}{\Delta_t},\quad
+ \rho_{\kappa s}=\frac{\kappa_s}{\kappa_t},\quad
+ \rho_{\kappa a}=\frac{\kappa_a}{\kappa_t}.
+ \label{eq:v9-kms-covector-origin-relative-ratios}
+\end{equation}
+После выбора единиц соответствующие covectors предыдущего гейта получаются
+метрическим двойствованием
+\begin{equation}
+ j_\theta=W\boldsymbol\Delta,
+ \qquad
+ j_\kappa=W\boldsymbol\kappa.
+ \label{eq:v9-kms-covector-origin-metric-duals}
+\end{equation}
+
+\section{Полный rank-аудит}
+
+Параметризуем нормированные shapes формулами
+\begin{equation}
+ r_\theta(a,b)=\left(a,b,\frac{5-a-b}{3}\right)^T,
+ \qquad
+ r_\kappa(c,d)=\left(c,d,\frac{5-c-d}{3}\right)^T.
+ \label{eq:v9-kms-covector-origin-shape-chart}
+\end{equation}
+Для карты
+\begin{equation}
+ \mathcal F(E_*,\chi,a,b,c,d)
+ =\left(E_*r_\theta(a,b),
+ \chi^2\frac{E_*}{\hbar}r_\kappa(c,d)\right)
+ \label{eq:v9-kms-covector-origin-full-map}
+\end{equation}
+при $\hbar=E_*=\chi=a=b=c=d=1$ машинный аудит даёт
+\begin{equation}
+ \rank D\mathcal F=6,
+ \qquad \det D\mathcal F=\frac{50}{9}.
+ \label{eq:v9-kms-covector-origin-full-rank}
+\end{equation}
+Два scale-столбца имеют ранг $2$, четыре shape-столбца --- ранг $4$:
+\begin{equation}
+ \rank D\mathcal F_{\rm scale}=2,
+ \qquad
+ \rank D\mathcal F_{\rm shape}=4,
+ \qquad
+ 6-2=4.
+ \label{eq:v9-kms-covector-origin-rank-defect}
+\end{equation}
+
+\section{Endpoint types и transport}
+
+Endpoint-extension фиксирует само разложение типов $1\oplus1\oplus3$ и
+потому различает три координатные линии. Но rank-three type-system не
+задаёт точку на двух shape-поверхностях. Transport может лишь выбрать
+ориентацию уже построенных каналов. Для двух допустимых представителей
+\begin{equation}
+ P_+=I_3,
+ \qquad
+ P_-=\begin{pmatrix}0&1&0\\1&0&0\\0&0&1\end{pmatrix}
+ \label{eq:v9-kms-covector-origin-transport-representatives}
+\end{equation}
+выполнено
+\begin{equation}
+ P_\pm^TWP_\pm=W,
+ \qquad
+ \rank(P_\pm B)=2.
+ \label{eq:v9-kms-covector-origin-transport-isometry}
+\end{equation}
+Поэтому дискретная ориентация не уменьшает непрерывную shape-размерность.
+
+\section{Точные свидетели неединственности}
+
+При одинаковых $E_*=\Gamma_*=1$ рассмотрим
+\begin{equation}
+ r_\theta^{(A)}=(1,1,1)^T,
+ \qquad
+ r_\theta^{(B)}=(2,1,2/3)^T,
+ \label{eq:v9-kms-covector-origin-gap-witnesses}
+\end{equation}
+и
+\begin{equation}
+ r_\kappa^{(A)}=(1,1,1)^T,
+ \qquad
+ r_\kappa^{(B)}=(1,2,2/3)^T.
+ \label{eq:v9-kms-covector-origin-conductance-witnesses}
+\end{equation}
+Все четыре вектора положительны и имеют weighted-нормировку $5$, но дают
+разные covectors:
+\begin{equation}
+ Wr_\theta^{(A)}\ne Wr_\theta^{(B)},
+ \qquad
+ Wr_\kappa^{(A)}\ne Wr_\kappa^{(B)}.
+ \label{eq:v9-kms-covector-origin-distinct-witnesses}
+\end{equation}
+Одинаковые four-slot scales, endpoint types и transport orientation тем
+самым совместимы с различными KMS packages.
+
+\section{Origin-ledger}
+
+\begin{equation}
+ \begin{aligned}
+ N_{\rm common\ scale\ links}&=2/2,\\
+ N_{\rm channel\ type\ labels}&=3/3,\\
+ N_{\rm relative\ ratio\ origin}&=0/4,\\
+ N_{\rm source\ covector\ origin}&=0/2,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-covector-origin-ledger}
+\end{equation}
+
+\begin{theorem}[Four-slot factorization ковектор источникаs]
+Четыре slots фиксируют общий масштаб gaps $E_*$, общий масштаб
+conductances $\chi^2E_*/\hbar$, разложение трёх channel types и допустимую
+ориентацию transport. Однако полный six-component source-package имеет
+четыре дополнительные относительные shape-координаты. Поэтому
+$j_\theta,j_\kappa$ не выводятся из четырёх slots однозначно.
+\end{theorem}
+
+\begin{nogocriterion}[Тип и ориентация не являются численным selector]
+Различимость трёх channel types и выбор transport orientation не создают
+четырёх скалярных уравнений для
+$(\rho_{\theta s},\rho_{\theta a},\rho_{\kappa s},\rho_{\kappa a})$.
+Без отдельного bounded selector этих величин ковектор источникаs остаются
+внешними данными общего родительского функционала.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item общий gap-scale: \textbf{$E_*$};
+\item общий conductance-scale: \textbf{$\chi^2E_*/\hbar$};
+\item scale-map: \textbf{rank $2$, determinant $2$};
+\item channel types: \textbf{$3/3$};
+\item transport orientation: \textbf{shape-rank сохраняется};
+\item свободная relative dimension: \textbf{$4$};
+\item relative-ratio origin: \textbf{$0/4$};
+\item ковектор источника origin: \textbf{$0/2$};
+\item следующий гейт: \textbf{minimal selector четырёх относительные формы}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_source_covector_four_slot_parent_origin_gate_results.json}.

@@ -1,0 +1,134 @@
+\chapter{Происхождение физического опорного масштаба \texorpdfstring{$\mu$}{mu} из родительского функционала}
+\label{ch:v9-reference-scale-mu-parent-origin}
+
+\section{Контракт абсолютного масштаба}
+
+После Gaussian reference-state запретительный результат физическое переоткрытие требует
+величину $\mu$ с пятью свойствами:
+\begin{equation}
+ \begin{aligned}
+ C_1&=\text{energy dimension},&
+ C_2&=\text{internal selector},\\
+ C_3&=\text{typed map},&
+ C_4&=\text{orbit breaking},\\
+ C_5&=\text{target independence}.&&
+ \end{aligned}
+ \label{eq:v9-mu-origin-contract}
+\end{equation}
+Кандидат проходит только при произведении всех пяти indicators, равном
+единице.
+
+\section{Восемь кандидатов корпуса}
+
+Проверены inverse KMS temperature, clock energy, reservoir cutoff,
+inverse compactification radius, spectral Dirac scale, observed mass,
+vacuum Hessian gap и dimensional transmutation. Их exact indicator matrix
+равна
+\begin{equation}
+ M_\mu=
+ \begin{pmatrix}
+ 1&0&0&0&1\\
+ 1&0&0&0&1\\
+ 1&0&0&0&1\\
+ 1&0&0&0&1\\
+ 1&0&0&0&1\\
+ 1&0&0&1&0\\
+ 0&1&0&0&1\\
+ 1&0&0&1&1
+ \end{pmatrix},
+ \qquad \rank M_\mu=4.
+ \label{eq:v9-mu-origin-candidate-matrix}
+\end{equation}
+Третий столбец нулевой: ни один кандидат не имеет выведенного typed map в
+Gaussian covariance carrier. Полный pass-vector поэтому равен
+\begin{equation}
+ \mathbf p_\mu=
+ \left(\prod_{a=1}^{5}M_{ja}\right)_{j=1}^{8}
+ =(0,0,0,0,0,0,0,0)^T.
+ \label{eq:v9-mu-origin-pass-vector}
+\end{equation}
+
+Первые пять кандидатов имеют правильную размерность, но их absolute value
+не выбран. Observed mass разрывает orbit только как содержащий целевую подстановку datum.
+Vacuum Hessian internally вычислим, но безразмерен. Dimensional
+transmutation достигает score $3/5$ и является ближайшим классом,
+\begin{equation}
+ \mu_{\rm DT}=\Lambda
+ \exp\!\left(-\int^{g(\Lambda)}\frac{dg}{\beta(g)}\right),
+ \label{eq:v9-mu-origin-dimensional-transmutation}
+\end{equation}
+однако current parent не выводит ни ненулевую $\beta$-function этого
+carrier, ни boundary datum $g(\Lambda)$, ни typed map в $Q$.
+
+\section{Общий scale-orbit}
+
+Пусть семь dimensionful candidates сравниваются с $\mu$. В logarithmic
+coordinates карта всех отношений имеет вид
+\begin{equation}
+ A_{\rm rel}=
+ \begin{pmatrix}
+ -1&1&0&0&0&0&0&0\\
+ -1&0&1&0&0&0&0&0\\
+ -1&0&0&1&0&0&0&0\\
+ -1&0&0&0&1&0&0&0\\
+ -1&0&0&0&0&1&0&0\\
+ -1&0&0&0&0&0&1&0\\
+ -1&0&0&0&0&0&0&1
+ \end{pmatrix}.
+ \label{eq:v9-mu-origin-relative-map}
+\end{equation}
+Точно
+\begin{equation}
+ \rank A_{\rm rel}=7,
+ \qquad \operatorname{nullity}A_{\rm rel}=1,
+ \qquad A_{\rm rel}(1,1,1,1,1,1,1,1)^T=0.
+ \label{eq:v9-mu-origin-relative-rank}
+\end{equation}
+Следовательно, сколько угодно relative calibrations не фиксируют один
+common absolute energy scale.
+
+Это видно на известных invariants:
+\begin{equation}
+ \beta E_*,\qquad \frac{E_C\tau_C}{\hbar},\qquad
+ \frac{\mu R}{\hbar c}.
+ \label{eq:v9-mu-origin-known-invariants}
+\end{equation}
+Они сохраняются при согласованном rescaling energy и reciprocal time/length.
+Repeated-interaction limits действительно связывают coupling и time-step,
+но не выбирают абсолютную единицу без microscopic energy input
+\cite{v9-mu-origin-attal2006}.
+
+\begin{theorem}[Исчерпание reference-scale кандидатов]
+Ни один из восьми кандидатов текущего корпуса не проходит пятичастный
+physical-origin contract для $\mu$. Relative-scale map имеет единственную
+common scaling zero mode.
+\end{theorem}
+
+\begin{nogocriterion}[Абсолютный масштаб не возникает из отношения]
+KMS temperature, clock frequency, cutoff, radius или mass могут
+калибровать $\mu$ только после independently выбранного dimensionful datum.
+Observed mass запрещена как содержащий целевую подстановку input. Dimensional transmutation
+переоткрывает путь лишь после вывода новой $\beta$-function и её boundary
+condition из microscopic parent.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item candidates: \textbf{$8$};
+\item origin criteria: \textbf{$5$};
+\item candidate-matrix rank: \textbf{$4$};
+\item passing candidates: \textbf{$0/8$};
+\item relative-scale rank/nullity: \textbf{$7/1$};
+\item physical опорный масштаб $\mu$: \textbf{$0/1$};
+\item physical-origin packages: \textbf{$0/2$};
+\item Tome IX final physical запретительный результат: \textbf{готов к фиксации}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_physical_reopening_reference_scale_mu_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-mu-origin-attal2006}
+S.~Attal, Y.~Pautrat,
+\emph{From repeated to continuous quantum interactions},
+Annales Henri Poincar\'e 7 (2006), 59--104; arXiv:math-ph/0311002.
+\end{thebibliography}

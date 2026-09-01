@@ -1,0 +1,111 @@
+{
+  "date": "2026-08-31",
+  "exact_hessians": {
+    "common_parent_determinant": "5184/25",
+    "common_parent_rank": 12,
+    "doubled_determinant": "25/9",
+    "doubled_rank": 4,
+    "single_constrained": [
+      [
+        "4/3",
+        "1/3"
+      ],
+      [
+        "1/3",
+        "4/3"
+      ]
+    ],
+    "single_log_ratio_spectrum": [
+      [
+        "3/5",
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "single_spectrum": [
+      [
+        1,
+        1
+      ],
+      [
+        "5/3",
+        1
+      ]
+    ]
+  },
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_relative_shape_selector_source_minimal_invariant_parent_architecture_gate",
+  "invariant_parent": {
+    "block_unitary_invariant": true,
+    "constraint": "r_s+r_a+3r_t=5",
+    "functional_per_package": "-log(r_s r_a r_t^3)",
+    "positive_boundary_coercive": true,
+    "source_free_in_type_operator_coordinates": true,
+    "type_operator": "diag(r_s,r_a,r_t,r_t,r_t)"
+  },
+  "ledgers": {
+    "conditional_selector_source_selection_satisfied": 4,
+    "conditional_selector_source_selection_tested": 4,
+    "invariant_parent_architecture_satisfied": 10,
+    "invariant_parent_architecture_tested": 10,
+    "logdet_parent_origin_satisfied": 0,
+    "logdet_parent_origin_tested": 1,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "proofdsl_obligations_satisfied": 10,
+    "proofdsl_obligations_tested": 10
+  },
+  "next_gate": "version9_endpoint_creation_kms_relative_shape_logdet_parent_measure_origin_gate",
+  "predecessor": "version9_endpoint_creation_kms_relative_shape_selector_source_parent_origin_gate",
+  "proofdsl": {
+    "analytic_boundary": "global log-barrier minimum uses weighted AM-GM outside the current finite-dimensional kernel",
+    "certificate_sha256": "52ff98bc1ea841627d38677cd45b16fa04f73d6265ff7f7881f8d9f98ed47ac8",
+    "floating_point_values": 0,
+    "gate_identifier": "version9_endpoint_creation_kms_relative_shape_selector_source_minimal_invariant_parent_architecture_gate",
+    "obligation_count": 10,
+    "obligations": [
+      "weighted_trace_five",
+      "type_determinant_113",
+      "isotropic_stationary_point",
+      "constrained_hessian_spectrum",
+      "doubled_shape_rank_four",
+      "doubled_shape_determinant",
+      "log_ratio_hessian_spectrum",
+      "effective_isotropic_source",
+      "common_hessian_rank_twelve",
+      "common_hessian_determinant"
+    ],
+    "status": "lcf-checked"
+  },
+  "selected_package": {
+    "conductance_shape": [
+      1,
+      1,
+      1
+    ],
+    "conductances_equal_per_channel": true,
+    "dimensionless_gaps_equal": true,
+    "effective_selector_source": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "gap_shape": [
+      1,
+      1,
+      1
+    ]
+  },
+  "verdict": {
+    "algebraic_core_lcf_checked": true,
+    "global_minimum_analytic_not_lcf_checked": true,
+    "isotropic_selector_sources_conditionally_selected": true,
+    "logdet_origin_gate_required": true,
+    "logdet_parent_physically_derived": false,
+    "minimal_invariant_parent_constructed": true
+  }
+}

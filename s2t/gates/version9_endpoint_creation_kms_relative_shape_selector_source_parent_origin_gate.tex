@@ -1,0 +1,177 @@
+\chapter{Происхождение четырёх источников относительных форм из родительского функционала}
+\label{ch:v9-endpoint-kms-shape-source-origin}
+
+\section{Что именно должно быть выведено}
+
+Минимальный selector зависит от четырёх компонентов
+\begin{equation}
+ q=(q_{\theta s},q_{\theta a},q_{\kappa s},q_{\kappa a})
+ \in\mathcal Q^+\times\mathcal Q^+.
+ \label{eq:v9-kms-shape-source-origin-package}
+\end{equation}
+Они являются не масштабами, а координатами двух относительные формы:
+\begin{equation}
+ r_\theta=\left(q_{\theta s},q_{\theta a},
+ \frac{5-q_{\theta s}-q_{\theta a}}3\right),
+ \quad
+ r_\kappa=\left(q_{\kappa s},q_{\kappa a},
+ \frac{5-q_{\kappa s}-q_{\kappa a}}3\right).
+ \label{eq:v9-kms-shape-source-origin-shapes}
+\end{equation}
+
+\section{Наследованный parent не имеет внутреннего минимума}
+
+Если удалить linear sources из одного selector-блока, остаётся
+\begin{equation}
+ \Psi_0(u,v)=5\log\frac{e^u+e^v+3}{5}.
+ \label{eq:v9-kms-shape-source-origin-source-free-block}
+\end{equation}
+Его градиент строго положителен:
+\begin{equation}
+ \nabla\Psi_0=\frac{5}{e^u+e^v+3}(e^u,e^v)^T>0.
+ \label{eq:v9-kms-shape-source-origin-positive-gradient}
+\end{equation}
+Поэтому конечной стационарной точки нет. На луче $u=v=-t$
+\begin{equation}
+ \lim_{t\to\infty}\Psi_0(-t,-t)=5\log\frac35,
+ \label{eq:v9-kms-shape-source-origin-boundary-infimum}
+\end{equation}
+но infimum достигается только на границе, где две channel-компоненты
+исчезают. Completed-square KMS terms после минимизации равны нулю для любой
+shape и не устраняют эту плоскость.
+
+\section{Scales, types и KMS}
+
+Общие scales $E_*$ и $\chi^2E_*/\hbar$ сокращаются во всех четырёх
+отношениях, поэтому induced scale-to-shape map имеет
+\begin{equation}
+ \rank D_{(E_*,\chi)}q=0.
+ \label{eq:v9-kms-shape-source-origin-scale-rank}
+\end{equation}
+Type-matrix остаётся невырожденной,
+\begin{equation}
+ B_{\rm type}=\begin{pmatrix}1&1&3\\1&-1&3\\0&0&-3\end{pmatrix},
+ \qquad \rank B_{\rm type}=3,
+ \qquad \det B_{\rm type}=6,
+ \label{eq:v9-kms-shape-source-origin-type-matrix}
+\end{equation}
+но это означает, что diagonal coefficient разрешён независимо на каждом
+типе. KMS связывает forward/reverse rates внутри одного канала, не создавая
+уравнений между $s,a,t$.
+
+\section{Transport и cross-lock}
+
+Даже если transport orientation потребовать инвариантность при обмене двух
+singlet labels, возникают только два уравнения
+\begin{equation}
+ q_{\theta s}=q_{\theta a},
+ \qquad q_{\kappa s}=q_{\kappa a},
+ \qquad \rank C_{\rm swap}=2,
+ \qquad \dim\ker C_{\rm swap}=2.
+ \label{eq:v9-kms-shape-source-origin-swap-constraints}
+\end{equation}
+Гипотеза одинаковой gap- и conductance-shape также имеет лишь rank $2$:
+\begin{equation}
+ q_{\theta s}=q_{\kappa s},
+ \qquad q_{\theta a}=q_{\kappa a},
+ \qquad \rank C_{\rm lock}=2,
+ \qquad \dim\ker C_{\rm lock}=2.
+ \label{eq:v9-kms-shape-source-origin-cross-lock}
+\end{equation}
+Совместно эти четыре записи имеют rank $3$, а не $4$:
+\begin{equation}
+ \rank\begin{pmatrix}C_{\rm swap}\\C_{\rm lock}\end{pmatrix}=3,
+ \qquad
+ \dim\ker\begin{pmatrix}C_{\rm swap}\\C_{\rm lock}\end{pmatrix}=1.
+ \label{eq:v9-kms-shape-source-origin-combined-rank}
+\end{equation}
+Кроме того, cross-lock является новой гипотезой, а не следствием KMS.
+
+\section{Endpoint-defects дают семейство}
+
+Closure-defects endpoint menu равны $d=(2,1,0)$. Для получения внутренней
+положительной shape требуется добавить свободный baseline $c>0$:
+\begin{equation}
+ r_d(c)=\frac5{5c+3}(c+2,c+1,c)^T.
+ \label{eq:v9-kms-shape-source-origin-defect-family}
+\end{equation}
+Два точных представителя
+\begin{equation}
+ r_d(1)=\left(\frac{15}{8},\frac54,\frac58\right)^T,
+ \qquad
+ r_d(2)=\left(\frac{20}{13},\frac{15}{13},\frac{10}{13}\right)^T
+ \label{eq:v9-kms-shape-source-origin-defect-witnesses}
+\end{equation}
+имеют одну weighted-нормировку, но различны. Raw choice $c=0$ лежит на
+границе и выключает triplet-channel. Поэтому defects не выбирают source.
+
+\section{Maximum entropy как условный представитель}
+
+Максимизация weighted entropy
+\begin{equation}
+ H(r)=-r_s\log r_s-r_a\log r_a-3r_t\log r_t,
+ \qquad r_s+r_a+3r_t=5
+ \label{eq:v9-kms-shape-source-origin-entropy}
+\end{equation}
+даёт единственную isotropic shape
+\begin{equation}
+ r_s=r_a=r_t=1,
+ \qquad q_\theta=q_\kappa=(1,1).
+ \label{eq:v9-kms-shape-source-origin-entropy-point}
+\end{equation}
+Но maximum-entropy postulate отсутствует в inherited parent. Эквивалентно,
+центрирование $\Psi_0$ в $x=0$ вручную добавляет linear source $(1,1)$.
+Поэтому это допустимый inference representative, но не physical origin.
+
+\section{Контрсвидетели и итог}
+
+Оба source-пакета
+\begin{equation}
+ q^{(A)}=(1,2,2,1),
+ \qquad
+ q^{(B)}=(2,1,1,2)
+ \label{eq:v9-kms-shape-source-origin-counterexamples}
+\end{equation}
+лежат внутри $\mathcal Q^+\times\mathcal Q^+$, имеют те же общий масштабs и
+дают разные относительные формы. Итоговый ledger равен
+\begin{equation}
+ \begin{aligned}
+ N_{\rm candidate\ origin}&=0/8,\\
+ N_{\rm conditional\ entropy\ representative}&=1/1,\\
+ N_{\rm selector\ source\ origin}&=0/4,\\
+ N_{\rm relative\ shape\ physical\ origin}&=0/4,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-shape-source-origin-ledger}
+\end{equation}
+
+\begin{theorem}[No-go происхождения selector-sources]
+Inherited four-slot parent, type-system, KMS relations, endpoint-defects и
+transport orientation не выбирают четыре компоненты $q$. Source-free
+selector не имеет конечного interior minimum; дополнительные lock-условия
+оставляют ненулевую свободу, а defects требуют свободный baseline.
+\end{theorem}
+
+\begin{nogocriterion}[Maximum entropy не скрывает новый родительский функционал-term]
+Isotropic point $(1,1,1,1)$ нельзя считать выведенным только потому, что он
+максимизирует entropy. Пока entropy functional не получен из общего
+физического родительского функционала, он является дополнительным selector postulate.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item source-free interior minimum: \textbf{нет};
+\item candidate origins: \textbf{$0/8$};
+\item combined swap/lock nullity: \textbf{$1$};
+\item conditional entropy representative: \textbf{$1/1$};
+\item selector-source origin: \textbf{$0/4$};
+\item следующий гейт: \textbf{minimal invariant source-parent architecture}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_relative_shape_selector_source_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-shape-source-jaynes}
+E.~T.~Jaynes, \emph{Information Theory and Statistical Mechanics},
+Phys. Rev. \textbf{106} (1957), 620--630.
+\end{thebibliography}

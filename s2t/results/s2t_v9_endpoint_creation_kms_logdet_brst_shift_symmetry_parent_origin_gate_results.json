@@ -1,0 +1,113 @@
+{
+  "conditional_shift_extension": {
+    "bounded_below_if_original_parent_bounded_below": true,
+    "flat_direction_dimension": 10,
+    "formula": "S0(R,x)=S_invariant(R)",
+    "full_shift_symmetry": true,
+    "shift_rank": 10,
+    "target_loaded_zero_coupling": true
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_logdet_brst_shift_symmetry_parent_origin_gate",
+  "inherited_continuous_directions": {
+    "all_six_kms_type_parameters_cokernel": 4,
+    "all_six_kms_type_parameters_rank": 6,
+    "endpoint_phase_zero_modes": 1,
+    "maximum_relevant_inherited_rank": 6,
+    "normalized_relative_shapes_rank": 4,
+    "rank_deficit": 4,
+    "required_rank": 10,
+    "transport_continuous_tangent_rank": 0,
+    "type_conjugation_orbit_rank_on_scalar_blocks": 0
+  },
+  "ledgers": {
+    "conditional_zero_action_shift_satisfied": 1,
+    "conditional_zero_action_shift_tested": 1,
+    "fp_operator_origin_satisfied": 1,
+    "fp_operator_origin_tested": 1,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "shift_gauge_symmetry_origin_satisfied": 0,
+    "shift_gauge_symmetry_origin_tested": 1,
+    "shift_origin_candidates_satisfied": 0,
+    "shift_origin_candidates_tested": 6
+  },
+  "next_gate": "version9_endpoint_creation_kms_logdet_minimal_stueckelberg_shift_parent_architecture_gate",
+  "origin_candidates": [
+    {
+      "candidate": "six KMS type parameters",
+      "origin_pass": false,
+      "reason": "rank 6 with cokernel 4"
+    },
+    {
+      "candidate": "four normalized relative shapes",
+      "origin_pass": false,
+      "reason": "rank 4 and they are physical parameters not gauge directions"
+    },
+    {
+      "candidate": "endpoint phase zero mode",
+      "origin_pass": false,
+      "reason": "nullity 1 rather than 10"
+    },
+    {
+      "candidate": "type and family conjugations",
+      "origin_pass": false,
+      "reason": "scalar isotypic blocks have orbit rank 0"
+    },
+    {
+      "candidate": "transport orientation",
+      "origin_pass": false,
+      "reason": "discrete choice has tangent rank 0"
+    },
+    {
+      "candidate": "zero-action spectator extension",
+      "origin_pass": false,
+      "reason": "full shift exists only because the new field was declared absent from the parent"
+    }
+  ],
+  "parent_hessian_audit": {
+    "fp_operator_can_appear_only_in_gauge_fixing_not_bare_shift_invariant_action": true,
+    "positive_auxiliary_quadratic_hessian_rank": 10,
+    "positive_auxiliary_quadratic_preserves_full_shift": false,
+    "trivial_extension_has_full_translation_symmetry": true,
+    "trivial_extension_is_parent_derived": false,
+    "trivial_spectator_extension_hessian_rank": 0
+  },
+  "predecessor": "version9_endpoint_creation_kms_logdet_minimal_brst_complex_architecture_gate",
+  "proofdsl": {
+    "analytic_boundary": "the kernel checks tangent ranks and translation breaking; deciding whether a new spectator field is physically mandatory is outside LCF",
+    "certificate_sha256": "1c60be088cd2a7a58ea857b064e1e2bcaedf8f0d05bfaa9a86ce61ef0db52ea9",
+    "floating_point_values": 0,
+    "gate_identifier": "version9_endpoint_creation_kms_logdet_brst_shift_symmetry_parent_origin_gate",
+    "obligation_count": 10,
+    "obligations": [
+      "required_shift_rank_ten",
+      "kms_parameter_rank_six",
+      "kms_parameter_cokernel_four",
+      "normalized_shape_rank_four",
+      "endpoint_phase_nullity_one",
+      "type_conjugation_orbit_rank_zero",
+      "transport_tangent_rank_zero",
+      "trivial_spectator_hessian_rank_zero",
+      "positive_auxiliary_hessian_rank_ten",
+      "positive_parent_breaks_translation"
+    ],
+    "status": "lcf-checked"
+  },
+  "required_gauge_orbit": {
+    "complex_dimension": 10,
+    "generator_map": "I10",
+    "parameter_space": "V_type tensor P_KMS",
+    "rank": 10,
+    "transformation": "x -> x + epsilon"
+  },
+  "verdict": {
+    "conditional_extension_is_physical_origin": false,
+    "conditional_trivial_shift_extension_exists": true,
+    "existing_parent_has_required_ten_dimensional_gauge_orbit": false,
+    "logdet_parent_physically_derived": false,
+    "minimal_stueckelberg_architecture_required": true,
+    "positive_bare_parent_can_preserve_full_shift": false
+  }
+}

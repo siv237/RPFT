@@ -1,0 +1,114 @@
+{
+  "carrier_audit": {
+    "existing_creation_cell_complex_dimension": 6,
+    "existing_gauge_map_with_jacobian_R": false,
+    "existing_typed_grassmann_auxiliary_module": false,
+    "new_auxiliary_module_required": true
+  },
+  "conditional_fermionic_representation": {
+    "block_determinant_factorization": true,
+    "block_operator": "R_theta direct_sum R_kappa",
+    "coefficient_one_requires_one_copy_per_package": true,
+    "effective_action": "-log Z_F(R) = -log det R",
+    "identity": "integral exp(-bar(psi) R psi) = det R",
+    "minimal_complex_pairs_per_package": 5,
+    "minimal_complex_pairs_two_packages": 10
+  },
+  "coordinate_measure_no_go": {
+    "chart": "r=5(exp(u),exp(v),1)/(exp(u)+exp(v)+3)",
+    "jacobian": "(3/5) r_s r_a r_t",
+    "ratio_nonconstant": true,
+    "target_determinant": "r_s r_a r_t^3",
+    "target_to_jacobian_ratio": "(5/3) r_t^2"
+  },
+  "date": "2026-08-31",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_relative_shape_logdet_parent_measure_origin_gate",
+  "ledgers": {
+    "conditional_measure_representation_satisfied": 1,
+    "conditional_measure_representation_tested": 1,
+    "inherited_measure_origin_satisfied": 0,
+    "inherited_measure_origin_tested": 1,
+    "measure_candidate_classes_satisfied": 1,
+    "measure_candidate_classes_tested": 7,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "proofdsl_obligations_satisfied": 10,
+    "proofdsl_obligations_tested": 10
+  },
+  "measure_candidates": [
+    {
+      "candidate": "flat Lebesgue measure",
+      "effective_logdet_coefficient": 0,
+      "target_sign_and_coefficient": false
+    },
+    {
+      "candidate": "real bosonic Gaussian",
+      "effective_logdet_coefficient": "1/2",
+      "target_sign_and_coefficient": false
+    },
+    {
+      "candidate": "complex bosonic Gaussian",
+      "effective_logdet_coefficient": 1,
+      "target_sign_and_coefficient": false
+    },
+    {
+      "candidate": "complex fermionic Berezin Gaussian",
+      "effective_logdet_coefficient": -1,
+      "target_sign_and_coefficient": true
+    },
+    {
+      "candidate": "Majorana Pfaffian Gaussian",
+      "effective_logdet_coefficient": "-1/2",
+      "target_sign_and_coefficient": false
+    },
+    {
+      "candidate": "log-ratio coordinate Jacobian",
+      "effective_logdet_coefficient": "nonmatching multiplicity",
+      "target_sign_and_coefficient": false
+    },
+    {
+      "candidate": "Faddeev-Popov ghost determinant",
+      "effective_logdet_coefficient": -1,
+      "target_sign_and_coefficient": "conditional on an absent gauge Jacobian R"
+    }
+  ],
+  "next_gate": "version9_endpoint_creation_kms_logdet_auxiliary_fermion_module_admission_gate",
+  "predecessor": "version9_endpoint_creation_kms_relative_shape_selector_source_minimal_invariant_parent_architecture_gate",
+  "proofdsl": {
+    "analytic_boundary": "Berezin and ordinary Gaussian integration identities are external lemmas; ProofDSL checks their determinant/sign consequences",
+    "certificate_sha256": "6f177e41137b2a3a70a05da3d706b8e7177e8ab5b8340140621d5ab5b0a6a31a",
+    "floating_point_values": 0,
+    "gate_identifier": "version9_endpoint_creation_kms_relative_shape_logdet_parent_measure_origin_gate",
+    "obligation_count": 10,
+    "obligations": [
+      "type_determinant_113",
+      "single_carrier_degree_five",
+      "doubled_block_determinant",
+      "doubled_carrier_degree_ten",
+      "fermionic_effective_sign",
+      "complex_bosonic_opposite_sign",
+      "real_bosonic_opposite_half_sign",
+      "log_ratio_chart_jacobian",
+      "chart_to_target_ratio",
+      "chart_measure_mismatch"
+    ],
+    "status": "lcf-checked"
+  },
+  "target_parent": {
+    "single_package": "-log det R",
+    "two_packages": "-log det R_theta-log det R_kappa",
+    "type_multiplicities": [
+      1,
+      1,
+      3
+    ]
+  },
+  "verdict": {
+    "coordinate_jacobian_origin_excluded": true,
+    "correct_measure_mechanism_identified": true,
+    "existing_carrier_supplies_required_auxiliary_fields": false,
+    "logdet_parent_physically_derived": false,
+    "minimal_auxiliary_dimension_derived": true
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "anomaly_coefficients": {
+    "inherited_rank": 3,
+    "isotropic_traces": {
+      "package": 0,
+      "product": 0,
+      "target": 10,
+      "type": 6
+    },
+    "package": [
+      1,
+      1,
+      3,
+      -1,
+      -1,
+      -3
+    ],
+    "product": [
+      1,
+      -1,
+      3,
+      -1,
+      1,
+      -3
+    ],
+    "rank_with_target": 4,
+    "target": [
+      1,
+      1,
+      3,
+      1,
+      1,
+      3
+    ],
+    "type": [
+      1,
+      -1,
+      3,
+      1,
+      -1,
+      3
+    ]
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_logdet_reservoir_measure_anomaly_parent_origin_gate",
+  "jacobians": {
+    "paired_vector_like": 1,
+    "same_direction": "det(S)^-2",
+    "target_loaded_isotropic_rescaling": "S=r^-1/2 I10 gives J=r^10"
+  },
+  "ledgers": {
+    "inherited_anomaly_candidates_satisfied": 0,
+    "inherited_anomaly_candidates_tested": 3,
+    "paired_measure_covariance_satisfied": 1,
+    "paired_measure_covariance_tested": 1,
+    "physical_logdet_parent_satisfied": 0,
+    "physical_logdet_parent_tested": 1,
+    "physical_measure_anomaly_origin_satisfied": 0,
+    "physical_measure_anomaly_origin_tested": 1,
+    "target_loaded_rescaling_satisfied": 1,
+    "target_loaded_rescaling_tested": 1
+  },
+  "next_gate": "version9_endpoint_creation_kms_logdet_minimal_new_parent_axiom_admission_gate",
+  "predecessor": "version9_endpoint_creation_kms_logdet_reservoir_spectral_density_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "4d7728e44d6892b4076fb7a597e21956b76a6139a42f3a77c6c302e7bbcaf05f",
+    "floating_point_values": 0,
+    "obligation_count": 12,
+    "obligations": [
+      "paired_berezin_jacobian",
+      "same_direction_jacobian",
+      "inherited_anomaly_rank",
+      "target_augmented_rank",
+      "type_grading_mismatch",
+      "package_grading_mismatch",
+      "product_grading_mismatch",
+      "type_isotropic_trace",
+      "package_isotropic_trace",
+      "product_isotropic_trace",
+      "target_isotropic_trace",
+      "target_loaded_rescaling"
+    ],
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "all_positive_target_trace_requires_identity_direction": true,
+    "identity_rescaling_is_target_loaded": true,
+    "inherited_gradings_reproduce_target": false,
+    "paired_measure_is_anomalous": false,
+    "physical_measure_anomaly_origin_derived": false
+  }
+}

@@ -1,0 +1,224 @@
+\chapter{Допуск минимального вспомогательного фермионного модуля}
+\label{ch:v9-kms-logdet-aux-fermion-admission}
+
+\section{Наследуемые type- и package-носители}
+
+Five-channel target-space уже имеет каноническое разложение
+\begin{equation}
+ V_{\rm type}=\mathbb C_s\oplus\mathbb C_a\oplus\mathbb C_t^3,
+ \qquad \dim_{\mathbb C}V_{\rm type}=1+1+3=5.
+ \label{eq:v9-kms-aux-fermion-type-carrier}
+\end{equation}
+Две независимо возникшие KMS-shapes образуют package-space
+\begin{equation}
+ P_{\rm KMS}=\mathbb C_\theta\oplus\mathbb C_\kappa,
+ \qquad \dim_{\mathbb C}P_{\rm KMS}=2.
+ \label{eq:v9-kms-aux-fermion-package-carrier}
+\end{equation}
+Поэтому минимальный ungraded carrier determinant-механизма не нужно
+задавать покомпонентно: он функториально равен
+\begin{equation}
+ G_{\rm aux}^{\rm ungr}=V_{\rm type}\otimes P_{\rm KMS},
+ \qquad \dim_{\mathbb C}G_{\rm aux}^{\rm ungr}=5\cdot2=10.
+ \label{eq:v9-kms-aux-fermion-ungraded-carrier}
+\end{equation}
+
+\section{Нечётное поднятие}
+
+Для fermionic Gaussian требуется parity shift
+\begin{equation}
+ G_{\rm aux}=\Pi G_{\rm aux}^{\rm ungr},
+ \qquad
+ \Gamma_{\rm aux}=-I_{10},
+ \qquad \Gamma_{\rm aux}^2=I_{10}.
+ \label{eq:v9-kms-aux-fermion-parity}
+\end{equation}
+Package-projectors имеют вид
+\begin{equation}
+ P_\theta=\begin{pmatrix}I_5&0\\0&0\end{pmatrix},
+ \qquad
+ P_\kappa=\begin{pmatrix}0&0\\0&I_5\end{pmatrix},
+ \qquad
+ P_\theta+P_\kappa=I_{10},\quad P_\theta P_\kappa=0.
+ \label{eq:v9-kms-aux-fermion-package-projectors}
+\end{equation}
+Их ранги равны
+\begin{equation}
+ \rank P_\theta=\rank P_\kappa=5.
+ \label{eq:v9-kms-aux-fermion-package-ranks}
+\end{equation}
+
+\section{Квадратичный оператор}
+
+На нечётном носителе действует even operator
+\begin{equation}
+ D_{\rm aux}=R_\theta\oplus R_\kappa,
+ \qquad [D_{\rm aux},\Gamma_{\rm aux}]=0.
+ \label{eq:v9-kms-aux-fermion-operator}
+\end{equation}
+Его determinant в точности воспроизводит обе multiplicity patterns:
+\begin{equation}
+ \det D_{\rm aux}
+ =r_{\theta s}r_{\theta a}r_{\theta t}^{3}
+  r_{\kappa s}r_{\kappa a}r_{\kappa t}^{3},
+ \qquad \deg\det D_{\rm aux}=10.
+ \label{eq:v9-kms-aux-fermion-determinant}
+\end{equation}
+Поскольку triplet-block каждого $R$ скалярен, для family action
+$U_t\in U(3)$ выполняется
+\begin{equation}
+ [D_{\rm aux},
+  (1_s\oplus1_a\oplus U_t)\otimes I_2]=0.
+ \label{eq:v9-kms-aux-fermion-family-covariance}
+\end{equation}
+Package-swap $W(\theta\leftrightarrow\kappa)$ действует ковариантно:
+\begin{equation}
+ W D_{\rm aux}(R_\theta,R_\kappa)W^{-1}
+ =D_{\rm aux}(R_\kappa,R_\theta).
+ \label{eq:v9-kms-aux-fermion-package-swap}
+\end{equation}
+
+\section{Berezin completion}
+
+Complex Gaussian использует независимые odd variables
+\begin{equation}
+ \psi\in G_{\rm aux},
+ \qquad \bar\psi\in G_{\rm aux}^{*},
+ \qquad
+ N_{\rm complex\ pairs}=10,\quad N_{\rm odd\ coordinates}=20.
+ \label{eq:v9-kms-aux-fermion-complex-pairs}
+\end{equation}
+Эквивалентная antisymmetric pairing matrix равна
+\begin{equation}
+ A_{\rm B}=
+ \begin{pmatrix}
+ 0&D_{\rm aux}\\
+ -D_{\rm aux}^{T}&0
+ \end{pmatrix},
+ \qquad A_{\rm B}^{T}=-A_{\rm B}.
+ \label{eq:v9-kms-aux-fermion-berezin-pairing}
+\end{equation}
+При positive shapes она невырождена:
+\begin{equation}
+ \rank A_{\rm B}=20,
+ \qquad
+ \det A_{\rm B}=(\det D_{\rm aux})^2.
+ \label{eq:v9-kms-aux-fermion-pairing-rank}
+\end{equation}
+После выбора complex Berezin orientation это даёт
+\begin{equation}
+ \int D\bar\psi D\psi\,
+ e^{-\bar\psi D_{\rm aux}\psi}
+ =\det D_{\rm aux}
+ =\det R_\theta\,\det R_\kappa.
+ \label{eq:v9-kms-aux-fermion-integral}
+\end{equation}
+
+\section{Отделение от physical state-space}
+
+Auxiliary carrier добавляется к пространство конфигураций как graded direct sum,
+а не как новые QMS-states:
+\begin{equation}
+ \mathcal X_{\rm super}
+ =\mathcal H_{\rm cr}^{\bar0}\oplus G_{\rm aux}^{\bar1},
+ \qquad
+ \dim_{\mathbb C}\mathcal H_{\rm cr}=6,\quad
+ \dim_{\mathbb C}G_{\rm aux}=10.
+ \label{eq:v9-kms-aux-fermion-superconfiguration}
+\end{equation}
+Quadratic operator block-diagonal,
+\begin{equation}
+ \mathcal D_{\rm super}=0_{\mathcal H_{\rm cr}}\oplus D_{\rm aux},
+ \qquad
+ \mathcal D_{\rm super}\iota_{\rm phys}=0,
+ \qquad N_{\rm new\ physical\ states}=0.
+ \label{eq:v9-kms-aux-fermion-decoupling}
+\end{equation}
+Следовательно, creation-QMS, его state dimension $6$ и Liouvillian
+rank/nullity $35/1$ не меняются.
+
+\section{Origin boundary}
+
+Ungraded carrier выводится из двух уже зарегистрированных данных:
+\begin{equation}
+ N_{\rm functorial\ ungraded\ carrier\ origin}=2/2
+ \quad\{V_{\rm type},P_{\rm KMS}\}.
+ \label{eq:v9-kms-aux-fermion-ungraded-origin}
+\end{equation}
+Но ни four-slot parent, ни endpoint-QMS пока не содержат правила, которое
+назначает этому tensor product нечётную статистику и Berezin orientation:
+\begin{equation}
+ N_{\rm odd\ statistics\ origin}=0/1,
+ \qquad
+ N_{\rm Berezin\ measure\ origin}=0/1.
+ \label{eq:v9-kms-aux-fermion-statistics-origin}
+\end{equation}
+Это согласуется с общей BRST/BV границей: ghost-like fields могут входить
+в graded generating functional, не увеличивая physical Hilbert space, но
+их differential и gauge origin должны быть предъявлены отдельно.
+
+\section{ProofDSL certificate и итог}
+
+Точный LCF-слой проверяет type multiplicities, package-projectors, parity,
+family covariance, determinant, minimal degree, package-swap, physical
+decoupling и rank Berezin pairing:
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=10/10,
+ \qquad
+ N_{\rm registered\ gates}=51,
+ \qquad
+ N_{\rm registered\ obligations}=392.
+ \label{eq:v9-kms-aux-fermion-proofdsl}
+\end{equation}
+Итоговый ledger равен
+\begin{equation}
+ \begin{aligned}
+ N_{\rm auxiliary\ module\ architecture}&=10/10,\\
+ N_{\rm functorial\ carrier\ origin}&=2/2,\\
+ N_{\rm new\ physical\ states}&=0,\\
+ N_{\rm odd\ statistics\ origin}&=0/1,\\
+ N_{\rm Berezin\ measure\ origin}&=0/1,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-aux-fermion-final-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальный auxiliary module admitted]
+Нечётный carrier
+$G_{\rm aux}=\Pi(V_{\rm type}\otimes P_{\rm KMS})$ имеет минимальную
+complex dimension $10$, сохраняет type/family/package symmetries и несёт
+block-operator $R_\theta\oplus R_\kappa$. Его Berezin completion имеет
+rank $20$ и не добавляет физических состояний creation-QMS.
+\end{theorem}
+
+\begin{nogocriterion}[Parity shift не выводится из tensor product]
+Функториальное построение ungraded carrier не назначает ему Grassmann
+statistics. Пока не построен BRST/BV differential, gauge redundancy или
+иной parent-механизм нечётности, auxiliary module является условно
+admitted, а логарифм определителя parent не считается физически выведенным.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item type carrier: \textbf{$1+1+3=5$};
+\item package carrier: \textbf{$2$};
+\item auxiliary odd dimension: \textbf{$10$};
+\item Berezin odd coordinates: \textbf{$20$};
+\item physical state increment: \textbf{$0$};
+\item ProofDSL: \textbf{$10/10$, registry $51/392$};
+\item statistics/measure origin: \textbf{$0/2$};
+\item следующий гейт: \textbf{fermion-statistics parent-origin}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_auxiliary_fermion_module_admission_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-aux-berezin}
+G.~Grensing, M.~Nitschmann,
+\emph{Berezin integration over anticommuting variables and cyclic
+cohomology}, arXiv:hep-th/0401231.
+\bibitem{v9-kms-aux-brst}
+M.~Henneaux, C.~Teitelboim,
+\emph{Quantization of Gauge Systems},
+Princeton University Press, 1992.
+\end{thebibliography}

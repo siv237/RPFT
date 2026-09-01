@@ -1,14 +1,18 @@
 # Входной контракт Тома IX
 
-> Status: working
+> Status: mature
 > Type: synthesis
-> Updated: 2026-08-31
+> Updated: 2026-09-01
 
 ## Summary
 
 Том IX открыт как поиск одного ограниченного снизу Real/gauge-совместимого
 динамического parent. Он должен совместно выбрать endpoint-extension,
 `E_star`, `chi` и transport primitive и дать слепое безразмерное следствие.
+
+Финальный ответ: augmented модель закрывает условный контракт `6/6`, но
+строгий физический статус равен `3/6`; physical four-slot parent не выведен,
+а оба reopening-пакета имеют статус `0/2`. Том IX завершён и заморожен.
 
 ## Key Points
 
@@ -45,6 +49,14 @@
   rate origin `0/3`, полный creation parent-origin `1/4`.
 - Outward-only QMS имеет stationary corner `M5(C)` и требует bidirectional
   KMS completion.
+- Bidirectional completion закрывает primitive QMS: jump algebra `M6(C)`,
+  Liouvillian rank/nullity `35/1`, unique faithful Gibbs state.
+- Origin-аудит шести KMS-параметров дал `0/6`: type-system rank `3`, но две
+  нормировки оставляют freedom dimension `4`, семь candidates дают `0/7`.
+- Финальный ledger: conditional `(1,1,1,1,1,1)`, physical
+  `(1,0,1,1,0,0)`, deficit `(0,1,0,0,1,1)` rank `3`.
+- Том X допущен как quantum-RG программа: specification `6/6`, construction
+  `0/6`; первый гейт строит общий RG carrier.
 
 ## Links
 
@@ -58,7 +70,11 @@
 - [[version9-endpoint-finite-geometry-configuration-space-admission-gate]]
 - [[version9-endpoint-finite-geometry-creation-operator-architecture-gate]]
 - [[version9-endpoint-finite-geometry-creation-operator-parent-origin-gate]]
+- [[version9-endpoint-creation-bidirectional-kms-completion-architecture-gate]]
+- [[version9-endpoint-creation-kms-gap-conductance-parent-origin-gate]]
 - [[tome8-final-conclusion-and-tome9-program]]
+- [[version9-final-conclusion-and-tome10-program-gate]]
+- [[tome9-final-conclusion-and-tome10-program]]
 - [[treatise-volume-systematics]]
 
 ## Source Notes

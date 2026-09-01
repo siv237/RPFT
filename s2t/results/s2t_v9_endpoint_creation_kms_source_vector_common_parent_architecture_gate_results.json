@@ -1,0 +1,89 @@
+{
+  "auxiliary_parent": "version9_four_slot_common_parent_functional_architecture_gate",
+  "common_parent": {
+    "continuous_hessian_determinant": 576,
+    "continuous_hessian_diagonal": [
+      8,
+      8,
+      1,
+      1,
+      3,
+      1,
+      1,
+      3
+    ],
+    "continuous_hessian_rank": 8,
+    "four_slot_restriction_preserved": true,
+    "single_bounded_functional": true,
+    "unique_positive_kms_minimum": true
+  },
+  "date": "2026-08-31",
+  "exact_witness": {
+    "boltzmann_ratios": [
+      "exp(-1)",
+      "exp(-2)",
+      "exp(-3)"
+    ],
+    "conductance_source": [
+      2,
+      1,
+      6
+    ],
+    "conductances": [
+      2,
+      1,
+      2
+    ],
+    "dimensionless_gaps": [
+      1,
+      2,
+      3
+    ],
+    "gap_source": [
+      1,
+      2,
+      9
+    ],
+    "minimum_value": "-49/2"
+  },
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_source_vector_common_parent_architecture_gate",
+  "ledgers": {
+    "conditional_kms_selection_satisfied": 6,
+    "conditional_kms_selection_tested": 6,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "source_component_origin_satisfied": 0,
+    "source_component_origin_tested": 6,
+    "source_package_origin_satisfied": 0,
+    "source_package_origin_tested": 2,
+    "source_parent_architecture_satisfied": 9,
+    "source_parent_architecture_tested": 9
+  },
+  "next_gate": "version9_endpoint_creation_kms_source_covector_four_slot_parent_origin_gate",
+  "predecessor": "version9_endpoint_creation_kms_gap_conductance_parent_origin_gate",
+  "source_carrier": {
+    "metric_determinant": 9,
+    "metric_diagonal": [
+      1,
+      1,
+      3,
+      1,
+      1,
+      3
+    ],
+    "metric_rank": 6,
+    "packages": [
+      "gap_source_covector",
+      "conductance_source_covector"
+    ],
+    "positive_source_cone_nonempty": true,
+    "real_dimension": 6
+  },
+  "verdict": {
+    "all_six_kms_parameters_conditionally_selected": true,
+    "conditional_common_source_parent_constructed": true,
+    "four_slot_source_map_required": true,
+    "source_covectors_physically_derived": false
+  }
+}

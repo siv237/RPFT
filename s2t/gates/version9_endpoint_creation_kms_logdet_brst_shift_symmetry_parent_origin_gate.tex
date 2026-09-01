@@ -1,0 +1,200 @@
+\chapter{Происхождение симметрии сдвига BRST из родительского функционала}
+\label{ch:v9-kms-brst-shift-origin}
+
+\section{Требуемая gauge orbit}
+
+Минимальный BRST complex использует additive gauge transformation
+\begin{equation}
+ x\longmapsto x+\varepsilon,
+ \qquad
+ x,\varepsilon\in E=V_{\rm type}\otimes P_{\rm KMS}.
+ \label{eq:v9-kms-brst-shift-action}
+\end{equation}
+Infinitesimal generator-map есть
+\begin{equation}
+ T_{\rm req}=I_{10},
+ \qquad
+ \rank T_{\rm req}=10.
+ \label{eq:v9-kms-brst-shift-required-rank}
+\end{equation}
+Нужно найти эту orbit как symmetry уже существующего parent, а не
+объявить новую переменную pure gauge.
+
+\section{Ранги inherited continuous data}
+
+Все шесть diagonal KMS type-parameters индуцируют tangent map
+$J_{\rm KMS}:\mathbb C^6\to\mathbb C^{10}$ с повторением triplet entries:
+\begin{equation}
+ \rank J_{\rm KMS}=6,
+ \qquad
+ \dim\ker J_{\rm KMS}^{T}=4.
+ \label{eq:v9-kms-brst-shift-kms-rank}
+\end{equation}
+После weighted normalizations остаются только relative-shapes:
+\begin{equation}
+ \rank J_{\rm shape}=4.
+ \label{eq:v9-kms-brst-shift-shape-rank}
+\end{equation}
+Эти directions меняют physical gaps/conductances и потому не являются
+gauge, но даже как linear carrier они не достигают rank $10$.
+
+Endpoint phase graph имеет только один zero mode:
+\begin{equation}
+ \dim\ker L_{\rm phase}=1.
+ \label{eq:v9-kms-brst-shift-phase-nullity}
+\end{equation}
+Type/family conjugations не двигают scalar isotypic blocks:
+\begin{equation}
+ \rank T_{\rm type\ orbit}=0.
+ \label{eq:v9-kms-brst-shift-type-orbit}
+\end{equation}
+Transport primitive является discrete orientation/index choice и не имеет
+непрерывного translation tangent:
+\begin{equation}
+ \rank T_{\rm transport}=0.
+ \label{eq:v9-kms-brst-shift-transport-rank}
+\end{equation}
+Следовательно, даже максимальный inherited continuous rank даёт
+\begin{equation}
+ r_{\rm inherited}^{\max}=6<10,
+ \qquad
+ \delta r_{\rm shift}=10-6=4.
+ \label{eq:v9-kms-brst-shift-rank-deficit}
+\end{equation}
+
+\section{Тривиальная spectator extension}
+
+Формально полную shift symmetry можно получить, присоединив $x$ с нулевым
+bare action:
+\begin{equation}
+ S_0(R,x):=S_{\rm inv}(R).
+ \label{eq:v9-kms-brst-shift-trivial-extension}
+\end{equation}
+Тогда
+\begin{equation}
+ \partial_xS_0=0,
+ \qquad
+ \Hess_xS_0=0_{10},
+ \qquad
+ S_0(R,x+\varepsilon)=S_0(R,x).
+ \label{eq:v9-kms-brst-shift-flat-hessian}
+\end{equation}
+Это действительно даёт orbit dimension $10$, но только потому, что новый
+field заранее объявлен полностью отсутствующим из parent. Поэтому
+\begin{equation}
+ N_{\rm conditional\ zero\ action\ shift}=1/1,
+ \qquad
+ N_{\rm zero\ coupling\ parent\ origin}=0/1.
+ \label{eq:v9-kms-brst-shift-trivial-ledger}
+\end{equation}
+
+\section{Почему positive bare parent не помогает}
+
+Любая symmetry-compatible positive quadratic часть имеет
+\begin{equation}
+ S_K(x)=\frac12x^TKx,
+ \qquad K>0,
+ \qquad \rank K=10.
+ \label{eq:v9-kms-brst-shift-positive-parent}
+\end{equation}
+Под full translation
+\begin{equation}
+ S_K(x+\varepsilon)-S_K(x)
+ =x^TK\varepsilon+\frac12\varepsilon^TK\varepsilon\neq0
+ \quad(\varepsilon\neq0).
+ \label{eq:v9-kms-brst-shift-breaking}
+\end{equation}
+Значит, positive bare Hessian и десятипараметрическая shift orbit
+несовместимы:
+\begin{equation}
+ K\,T_{\rm req}=0
+ \quad\Longrightarrow\quad
+ K=0.
+ \label{eq:v9-kms-brst-shift-hessian-no-go}
+\end{equation}
+
+Это не запрещает $D_{\rm aux}$ как Faddeev--Popov operator:
+\begin{equation}
+ M_{\rm FP}=D_{\rm aux}
+ =\frac{\partial F(x+\varepsilon)}{\partial\varepsilon}\bigg|_{\varepsilon=0},
+ \label{eq:v9-kms-brst-shift-fp-linearization}
+\end{equation}
+но требует независимо заданных gauge orbit $T$ и gauge condition $F$.
+
+\section{Candidate ledger}
+
+Проверенные classes дают
+\begin{equation}
+ \begin{array}{c|cccccc}
+ \text{candidate}&J_{\rm KMS}&J_{\rm shape}&L_{\rm phase}
+ &\text{type}&\text{transport}&\text{spectator}\\ \hline
+ \text{physical origin}&0&0&0&0&0&0
+ \end{array}
+ \label{eq:v9-kms-brst-shift-candidates}
+\end{equation}
+Последний столбец математически реализует symmetry, но не её происхождение.
+
+\section{ProofDSL и итог}
+
+ProofDSL проверяет required rank, KMS/shape tangents, phase nullity,
+type/transport zero ranks и несовместимость positive Hessian с translations:
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=10/10,
+ \qquad
+ N_{\rm registered\ gates}=54,
+ \qquad
+ N_{\rm registered\ obligations}=422.
+ \label{eq:v9-kms-brst-shift-proofdsl}
+\end{equation}
+Итог:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm shift\ origin\ candidates}&=0/6,\\
+ N_{\rm conditional\ spectator\ shift}&=1/1,\\
+ N_{\rm inherited\ rank\ deficit}&=4,\\
+ N_{\rm FP\ operator\ origin}&=1/1,\\
+ N_{\rm shift\ gauge\ origin}&=0/1,\\
+ N_{\rm physical\ logdet\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-brst-shift-final-ledger}
+\end{equation}
+
+\begin{theorem}[Точная граница происхождения shift orbit]
+Требуемая BRST orbit имеет rank $10$, тогда как максимальный inherited
+continuous tangent rank равен $6$. Полную translation symmetry можно
+получить только conditional zero-action extension. Любая positive
+quadratic bare часть rank $10$ разрушает эту symmetry.
+\end{theorem}
+
+\begin{nogocriterion}[Flat spectator не является gauge-origin]
+Нельзя считать shift symmetry выведенной из равенства
+$S_0(R,x)=S_{\rm inv}(R)$: это равенство само задаёт нулевое coupling нового
+field. Для непустого origin необходим gauge-invariant Stückelberg-like
+parent, в котором orbit возникает из совместного преобразования нескольких
+полей и не является простой spectator flatness.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item required shift rank: \textbf{$10$};
+\item maximal inherited rank: \textbf{$6$};
+\item rank deficit: \textbf{$4$};
+\item conditional flat shift: \textbf{$1/1$};
+\item inherited shift origin: \textbf{$0/1$};
+\item ProofDSL: \textbf{$10/10$, registry $54/422$};
+\item следующий гейт: \textbf{minimal Stückelberg shift-parent}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_brst_shift_symmetry_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-shift-brst}
+G.~Barnich, F.~Brandt, M.~Henneaux,
+\emph{Local BRST cohomology in gauge theories},
+Phys. Rept. \textbf{338} (2000), 439--569, arXiv:hep-th/0002245.
+\bibitem{v9-kms-shift-stueckelberg}
+H.~Ruegg, M.~Ruiz-Altaba,
+\emph{The Stueckelberg field},
+Int. J. Mod. Phys. A \textbf{19} (2004), 3265--3348,
+arXiv:hep-th/0304245.
+\end{thebibliography}

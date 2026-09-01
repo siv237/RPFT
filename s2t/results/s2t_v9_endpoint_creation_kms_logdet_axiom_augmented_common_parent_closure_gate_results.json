@@ -1,0 +1,65 @@
+{
+  "common_parent": {
+    "conductance_shape": [
+      1,
+      1,
+      1
+    ],
+    "gap_shape": [
+      1,
+      1,
+      1
+    ],
+    "hessian_determinant": "5184/25",
+    "hessian_nullity": 0,
+    "hessian_rank": 14,
+    "minimum": 0,
+    "selected_point": "(e,chi,x,y,theta,kappa,endpoint,transport)=(1,1,0,0,1,1,1,1)",
+    "variable_count": 14
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_logdet_axiom_augmented_common_parent_closure_gate",
+  "ledgers": {
+    "axiom_augmented_mathematical_closure_satisfied": 1,
+    "axiom_augmented_mathematical_closure_tested": 1,
+    "conditional_four_slot_selection_satisfied": 4,
+    "conditional_four_slot_selection_tested": 4,
+    "continuous_zero_modes_satisfied": 0,
+    "continuous_zero_modes_tested": 14,
+    "physical_parent_derivation_satisfied": 0,
+    "physical_parent_derivation_tested": 1
+  },
+  "next_gate": "version9_endpoint_creation_kms_logdet_axiom_augmented_blind_dimensionless_prediction_gate",
+  "physical_output": {
+    "Delta": "E_* (1,1,1)",
+    "endpoint_selector": 1,
+    "kappa": "chi^2 E_*/hbar (1,1,1)",
+    "transport_selector": 1
+  },
+  "predecessor": "version9_endpoint_creation_kms_logdet_minimal_new_parent_axiom_admission_gate",
+  "proofdsl": {
+    "certificate_sha256": "ae7654ea18895cb2695e0eee8555f69977fdb481be3bbae15d80ff620a10d068",
+    "floating_point_values": 0,
+    "obligation_count": 9,
+    "obligations": [
+      "common_stationarity",
+      "zero_common_minimum",
+      "full_common_hessian_rank",
+      "common_hessian_determinant",
+      "selected_common_point",
+      "isotropic_gap_shape",
+      "isotropic_conductance_shape",
+      "endpoint_selector_retained",
+      "transport_selector_retained"
+    ],
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "all_continuous_chart_variables_controlled": true,
+    "blind_prediction_not_yet_registered": true,
+    "closure_depends_on_new_axiom": true,
+    "common_parent_mathematically_closed": true,
+    "physical_parent_derived": false
+  }
+}

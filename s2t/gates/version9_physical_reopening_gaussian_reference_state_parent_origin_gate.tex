@@ -1,0 +1,116 @@
+\chapter{Происхождение гауссова опорного состояния из родительского функционала}
+\label{ch:v9-gaussian-reference-state-parent-origin}
+
+\section{Минимальная stationary architecture}
+
+Common covariance carrier предыдущего гейта требует опорное состояние
+$\mathcal N(0,I_{10})$. Минимальная continuous Markov realization задаётся
+изотропным Ornstein--Uhlenbeck процессом
+\begin{equation}
+ dX_t=-B X_t\,dt+\sqrt{2D}\,dW_t,
+ \qquad B=\gamma I_{10},\quad D=\delta I_{10},
+ \qquad \gamma,\delta>0.
+ \label{eq:v9-gaussian-reference-ou-process}
+\end{equation}
+Его stationary covariance $S$ удовлетворяет Lyapunov equation
+\begin{equation}
+ BS+SB^T=2D.
+ \label{eq:v9-gaussian-reference-lyapunov}
+\end{equation}
+Для устойчивого drift это уравнение имеет единственное решение. Связь
+stationary covariance с уравнением Ляпунова стандартна для многомерной
+линейной динамики Ланжевена \cite{v9-gaussian-reference-godreche2018}.
+
+Пространство symmetric covariance directions имеет dimension
+\begin{equation}
+ \dim\operatorname{Sym}_{10}=\frac{10\cdot11}{2}=55.
+ \label{eq:v9-gaussian-reference-symmetric-dimension}
+\end{equation}
+При $B=I_{10}$ induced Lyapunov map на нём равен $2I_{55}$, поэтому
+\begin{equation}
+ \rank\mathcal L_B=55,
+ \qquad \operatorname{nullity}\mathcal L_B=0.
+ \label{eq:v9-gaussian-reference-lyapunov-rank}
+\end{equation}
+Итак, при уже фиксированных $B,D$ stationary covariance действительно
+единственна.
+
+\section{Свободное отношение diffusion/drift}
+
+Точное решение изотропной задачи равно
+\begin{equation}
+ S_{\gamma,\delta}=\frac{\delta}{\gamma}I_{10}.
+ \label{eq:v9-gaussian-reference-covariance-family}
+\end{equation}
+Каждый член семейства stable, isotropic и reversible, поскольку
+$BD=DB^T$. В частности, существуют два exact witnesses
+\begin{equation}
+ (\gamma,\delta)=(1,1)\Longrightarrow S=I_{10},
+ \qquad
+ (\gamma,\delta)=(1,2)\Longrightarrow S=2I_{10}.
+ \label{eq:v9-gaussian-reference-two-witnesses}
+\end{equation}
+Оба проходят одинаковые structural tests, но
+\begin{equation}
+ \Tr(2I_{10}-I_{10})=10.
+ \label{eq:v9-gaussian-reference-witness-separation}
+\end{equation}
+Следовательно, unit covariance требует дополнительного relation
+$\delta=\gamma$; оно не следует из stationarity, isotropy, reversibility
+или uniqueness.
+
+Более того,
+\begin{equation}
+ (\gamma,\delta)\longmapsto(s\gamma,s\delta)
+ \qquad\Longrightarrow\qquad
+ \frac{s\delta}{s\gamma}=\frac{\delta}{\gamma}.
+ \label{eq:v9-gaussian-reference-common-rescaling}
+\end{equation}
+В logarithmic coefficients covariance-map имеет tangent
+\begin{equation}
+ J_{\rm cov}=\begin{pmatrix}-1&1\end{pmatrix},
+ \qquad \rank J_{\rm cov}=1,
+ \qquad \operatorname{nullity}J_{\rm cov}=1.
+ \label{eq:v9-gaussian-reference-ratio-orbit}
+\end{equation}
+
+\section{Physical-origin verdict}
+
+Endpoint QMS фиксирует finite-state relaxation architecture, но не даёт
+canonical additive Gaussian diffusion amplitude $\delta$ на новом
+десятимерном real carrier. Выбор $D=B$ поэтому является conditional
+fluctuation--dissipation input, а не следствием старого родительского функционала.
+
+\begin{theorem}[Conditional Gaussian опорное состояние]
+Для любых fixed $\gamma,\delta>0$ OU architecture имеет unique centered
+Gaussian стационарное состояние с covariance $(\delta/\gamma)I_{10}$. Unit
+опорное состояние существует при $\delta=\gamma$.
+\end{theorem}
+
+\begin{nogocriterion}[Провал parent-origin unit covariance]
+Поскольку два structural-equivalent witnesses дают $I_{10}$ и $2I_{10}$,
+unit reference covariance не выводится из OU architecture. Relation
+$\delta=\gamma$ нельзя вводить вручную как ``естественную нормировку'':
+она и есть искомый reference-scale datum.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item Gaussian stationary architecture: \textbf{$1/1$};
+\item covariance-space dimension: \textbf{$55$};
+\item Lyapunov rank/nullity: \textbf{$55/0$};
+\item conditional unit опорное состояние: \textbf{$1/1$};
+\item physical reference-state origin: \textbf{$0/1$};
+\item physical-origin packages: \textbf{$0/2$};
+\item physical reopening: \textbf{нет}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_physical_reopening_gaussian_reference_state_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-gaussian-reference-godreche2018}
+C.~Godr\`eche, J.-M.~Luck,
+\emph{Characterising the nonequilibrium stationary states of
+Ornstein--Uhlenbeck processes}, Journal of Physics A 52 (2019), 035002;
+arXiv:1807.00694.
+\end{thebibliography}

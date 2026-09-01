@@ -1,0 +1,111 @@
+\chapter{Слепые безразмерные предсказания родительского функционала KMS, дополненного аксиомой}
+\label{ch:v9-kms-axiom-blind-prediction}
+
+\section{Предрегистрация}
+
+После mathematical closure регистрируются только combinations, не
+зависящие от $E_*$, $\chi$ и axiom stiffness $\lambda$. Parent даёт
+\begin{equation}
+ \boldsymbol\Delta=E_*(1,1,1),
+ \qquad
+ \boldsymbol\kappa=\frac{\chi^2E_*}{\hbar}(1,1,1).
+ \label{eq:v9-kms-blind-packages}
+\end{equation}
+
+Два independent channel contrasts задаёт matrix
+\begin{equation}
+ C=\begin{pmatrix}1&-1&0\\0&1&-1\end{pmatrix},
+ \qquad \rank C=2.
+ \label{eq:v9-kms-blind-contrast}
+\end{equation}
+Предсказания имеют вид
+\begin{equation}
+ C\boldsymbol\Delta=0,
+ \qquad C\boldsymbol\kappa=0.
+ \label{eq:v9-kms-blind-contrast-predictions}
+\end{equation}
+
+\section{Scale-free ratios}
+
+Четыре простых channel ratios равны
+\begin{equation}
+ \frac{\Delta_s}{\Delta_t}=\frac{\Delta_a}{\Delta_t}=1,
+ \qquad
+ \frac{\kappa_s}{\kappa_t}=\frac{\kappa_a}{\kappa_t}=1.
+ \label{eq:v9-kms-blind-ratios}
+\end{equation}
+Два mixed double ratios также фиксированы:
+\begin{equation}
+ \frac{\kappa_s\Delta_t}{\kappa_t\Delta_s}=1,
+ \qquad
+ \frac{\kappa_a\Delta_t}{\kappa_t\Delta_a}=1.
+ \label{eq:v9-kms-blind-double-ratios}
+\end{equation}
+
+Наиболее компактный transport-normalized observable равен
+\begin{equation}
+ \mathcal R_\alpha=
+ \frac{\hbar\kappa_\alpha}{\chi^2\Delta_\alpha}=1,
+ \qquad \alpha=s,a,t.
+ \label{eq:v9-kms-blind-response}
+\end{equation}
+Weighted dimensionless gap variance обращается в нуль:
+\begin{equation}
+ \mathcal V_\Delta=
+ \frac{\sum_\alpha m_\alpha(\Delta_\alpha-\bar\Delta)^2}
+ {\bar\Delta^2}=0,
+ \qquad m=(1,1,3).
+ \label{eq:v9-kms-blind-variance}
+\end{equation}
+
+Все эти quantities не зависят от axiom stiffness:
+\begin{equation}
+ \frac{\partial\mathcal R_\alpha}{\partial\lambda}=0.
+ \label{eq:v9-kms-blind-stiffness}
+\end{equation}
+
+\section{Статус}
+
+Предсказания parameter-free после dimensionless normalization и не
+использовались для численной подгонки $\lambda$. Однако они условны на
+admitted логарифм определителя axiom:
+\begin{equation}
+ N_{\rm blind\ dimensionless\ predictions}=5/5,
+ \qquad
+ N_{\rm physical\ prediction\ without\ new\ axiom}=0/1.
+ \label{eq:v9-kms-blind-status}
+\end{equation}
+
+\section{ProofDSL и итог}
+
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=9/9,
+ \qquad N_{\rm registered\ gates}=63,
+ \qquad N_{\rm registered\ obligations}=521.
+ \label{eq:v9-kms-blind-proofdsl}
+\end{equation}
+
+\begin{theorem}[Conditional слепое следствие]
+Augmented parent имеет предрегистрированные scale-free следствия:
+channel degeneracy, unit double ratios, unit normalized response и zero
+weighted variance. Они не зависят от $E_*$ или $\lambda$.
+\end{theorem}
+
+\begin{nogocriterion}[Условность prediction]
+Успешный blind gate проверяет falsifiable output новой модели, но не
+превращает admitted логарифм определителя axiom в derived physical law.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item independent channel contrasts: \textbf{$2$};
+\item gap/conductance ratios: \textbf{$4$};
+\item normalized responses: \textbf{$3$ unit values};
+\item weighted variance: \textbf{$0$};
+\item conditional blind gate: \textbf{$5/5$};
+\item unconditional physical prediction: \textbf{$0/1$};
+\item ProofDSL: \textbf{$9/9$, registry $63/521$};
+\item следующий гейт: \textbf{axiom-augmented conditional program status}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_axiom_augmented_blind_dimensionless_prediction_gate_results.json}.

@@ -4426,6 +4426,204 @@ $$
 Следовательно, source выведен, но reverse jumps, gaps и rate ratios ещё нет.
 См. [[version9-endpoint-finite-geometry-creation-operator-parent-origin-gate]].
 
+### IX-F11. Bidirectional KMS completion
+
+Статус: **строгая условная primitive architecture**.
+
+$$
+\gamma_\alpha^+=\kappa_\alpha q_\alpha,
+\qquad \gamma_\alpha^-=\kappa_\alpha,
+\qquad q_\alpha=e^{-\beta\Delta_\alpha}.
+$$
+
+Пять paired channels дают
+
+$$
+\operatorname{Alg}\{C_{\alpha,m},C_{\alpha,m}^*\}=M_6(\mathbb C),
+\qquad \rank\mathcal L_{\rm KMS}=35,
+\qquad \dim\ker\mathcal L_{\rm KMS}=1.
+$$
+
+Primitive closure равна `1/1`, но три gaps и три conductances имеют origin
+`0/6`. См.
+[[version9-endpoint-creation-bidirectional-kms-completion-architecture-gate]].
+
+### IX-F12. Type-system и no-go KMS-параметров
+
+Статус: **строгий parent-origin no-go текущего действия**.
+
+$$
+B_{\rm type}=\begin{pmatrix}1&1&3\\1&-1&3\\0&0&-3\end{pmatrix},
+\qquad \det B_{\rm type}=6,
+\qquad \rank B_{\rm type}=3.
+$$
+
+Две weighted normalizations имеют rank `2` на шестимерном пространстве:
+
+$$
+\dim\ker A_{\rm norm}=4.
+$$
+
+Source-free positive parent имеет Hessian
+
+$$
+\mathbb W=\operatorname{diag}(1,1,3,1,1,3),
+\qquad \det\mathbb W=9,
+$$
+
+но его unique minimum равен нулю и выключает primitive dynamics.
+Candidate origin `0/7`, gap/conductance origin `0/6`. См.
+[[version9-endpoint-creation-kms-gap-conductance-parent-origin-gate]].
+
+### IX-F13. Keldysh causality против vacuum logdet
+
+Статус: **строгая conditional architecture / normalization no-go**.
+
+Для fermionic Larkin--Ovchinnikov basis
+
+$$
+ \mathcal K_{\rm SK}(\omega)=
+ \begin{pmatrix}
+  K^R(\omega)&K^K(\omega)\\
+  0&K^A(\omega)
+ \end{pmatrix},
+ \qquad
+ \det\mathcal K_{\rm SK}=\det K^R\det K^A.
+$$
+
+В equilibrium noise/statistical block связан с spectral block:
+
+$$
+ G^K(\omega)=\bigl(G^R(\omega)-G^A(\omega)\bigr)
+ \tanh\!\frac{\omega-\mu}{2T}.
+$$
+
+Но closed contour нормирован:
+
+$$
+ Z_{\rm SK}[J,J]=1.
+$$
+
+Exact audit дал
+
+$$
+ \det\mathcal K_{\rm SK}^{(w)}=32768,
+ \qquad D_{\rm target}^{(w)}=1024,
+ \qquad \frac{\det\mathcal K_{\rm SK}^{(w)}}{D_{\rm target}^{(w)}}=32,
+$$
+
+а после closed-contour normalization
+
+$$
+ \widehat Z_{\rm vac}=1,
+ \qquad \Gamma_{\rm vac}^{\rm SK}=0.
+$$
+
+Следовательно, Keldysh route несёт damping/noise, но не invariant logdet
+parent. См.
+[[version9-endpoint-creation-kms-logdet-keldysh-influence-functional-admission-gate]].
+
+### IX-F14. On-shell blindness reservoir spectral density
+
+Статус: **строгий parent-origin no-go**.
+
+Для gaps `(1,2,3)` два positive profiles
+
+$$
+ J_0(\omega)=1,
+ \qquad
+ J_1(\omega)=1+\frac1{16}
+ (\omega-1)^2(\omega-2)^2(\omega-3)^2
+$$
+
+дают одинаковый conductance vector
+
+$$
+ \boldsymbol\kappa[J_0]=\boldsymbol\kappa[J_1]=(1,1,1)^T,
+$$
+
+но разные moments:
+
+$$
+ \Delta\mu_0=\frac{107}{105},
+ \qquad
+ \Delta\mu_1=\frac{214}{105}.
+$$
+
+Поэтому
+
+$$
+ \Sigma_{J_1}(z)-\Sigma_{J_0}(z)
+ =\frac{107}{105z}+\frac{214}{105z^2}+O(z^{-3})\neq0.
+$$
+
+Три rates не определяют off-shell self-energy или bath logdet. См.
+[[version9-endpoint-creation-kms-logdet-reservoir-spectral-density-parent-origin-gate]].
+
+### IX-F15. Measure-anomaly coefficient obstruction
+
+Статус: **строгий parent-origin no-go**.
+
+Paired reservoir transformation даёт
+
+$$
+ \mathcal J_{\rm pair}
+ =\det(S)^{-1}\det(S^{-1})^{-1}=1.
+$$
+
+Inherited anomaly traces равны
+
+$$
+ \Tr\Gamma_{\rm type}=6,
+ \qquad \Tr\Gamma_{\rm pkg}=0,
+ \qquad \Tr\Gamma_{\rm prod}=0,
+$$
+
+тогда как target требует positive trace `10`. Inherited coefficient matrix
+имеет rank `3`, а после добавления target — rank `4`. Поэтому target не
+является inherited anomaly direction. См.
+[[version9-endpoint-creation-kms-logdet-reservoir-measure-anomaly-parent-origin-gate]].
+
+### IX-F16. Minimal new logdet axiom
+
+Статус: **admitted axiom, не derivation**.
+
+$$
+ B_\lambda=-\lambda(\log\det R_\theta+\log\det R_\kappa),
+ \qquad \lambda>0.
+$$
+
+$$
+ \rank\Hess B_\lambda=4,
+ \qquad \det\Hess B_\lambda=\frac9{25}\lambda^4,
+ \qquad \Spec\Hess B_1=\{(3/5)^{(2)},1^{(2)}\}.
+$$
+
+Minimum isotropic и не зависит от magnitude `lambda>0`, но fluctuation
+stiffness зависит. См.
+[[version9-endpoint-creation-kms-logdet-minimal-new-parent-axiom-admission-gate]].
+
+### IX-F17. Финальный ledger и контракт Тома X
+
+Статус: **Том IX завершён; Том X только специфицирован**.
+
+$$
+ \mathbf n_{IX}^{\rm cond}=(1,1,1,1,1,1)^T,
+ \qquad
+ \mathbf n_{IX}^{\rm phys}=(1,0,1,1,0,0)^T.
+$$
+
+$$
+ \mathbf d_{IX}=(0,1,0,0,1,1)^T,
+ \qquad
+ \mathbf n_{IX}^{\rm phys}+\mathbf d_{IX}=\mathbf n_{IX}^{\rm cond},
+ \qquad \rank\operatorname{diag}(\mathbf d_{IX})=3.
+$$
+
+Tome X имеет specification vector `(1,1,1,1,1,1)` и construction vector
+`(0,0,0,0,0,0)`. См.
+[[version9-final-conclusion-and-tome10-program-gate]].
+
 ## Что ещё требуется добавить
 
 Атлас покрывает канонические формулы итоговых заключений и глобального
@@ -4437,7 +4635,7 @@ $$
 2. наблюдательные формулы Тома II с полным разделением train/blind;
 3. промежуточные, но переиспользуемые формулы второй вариации C6;
 4. семантическая классификация полного [[live-formula-source-index]]:
-   механический слой синхронизирован до 6797 формульных блоков из 644 файлов, а
+   механический слой синхронизирован до 7207 формульных блоков из 671 файла, а
    [[formula-equivalence-and-status-index]] пока закрывает точные повторы
    и консервативные сопоставления с каноническими formula-id.
    [[formula-semantic-atlas-matches]] восстановил сорок

@@ -1,0 +1,120 @@
+\chapter{Замыкание общего родительского функционала KMS, дополненного аксиомой}
+\label{ch:v9-kms-axiom-common-closure}
+
+\section{Augmented parent}
+
+К условной four-slot architecture добавляется ровно один admitted логарифм определителя
+term. В continuous chart используем variables
+\begin{equation}
+ (e,\chi,x_1,x_2,y_1,y_2,\theta_s,\theta_a,\theta_t,
+ \kappa_s,\kappa_a,\kappa_t,p_{\rm end},p_{\rm tr}).
+ \label{eq:v9-kms-augmented-variables}
+\end{equation}
+Shape maps равны
+\begin{equation}
+ r(x_1,x_2)=\frac5{e^{x_1}+e^{x_2}+3}(e^{x_1},e^{x_2},1)^T,
+ \label{eq:v9-kms-augmented-shape}
+\end{equation}
+а physical packages
+\begin{equation}
+ \boldsymbol\theta=e\,r(x_1,x_2),
+ \qquad \boldsymbol\kappa=\chi^2e\,r(y_1,y_2).
+ \label{eq:v9-kms-augmented-packages}
+\end{equation}
+
+Unit-normalized common parent берётся как сумма scale wells, admitted
+логарифм определителя axiom, completed-square KMS residuals и двух inherited selector wells:
+\begin{equation}
+ \begin{aligned}
+ S_{\rm aug}={}&4(e-1)^2+4(\chi-1)^2+B_1(x,y)\\
+ &+\frac12\|\boldsymbol\theta-er(x)\|_W^2
+ +\frac12\|\boldsymbol\kappa-\chi^2er(y)\|_W^2\\
+ &+\frac12(p_{\rm end}-1)^2+\frac12(p_{\rm tr}-1)^2,
+ \qquad W=\operatorname{diag}(1,1,3).
+ \end{aligned}
+ \label{eq:v9-kms-augmented-parent}
+\end{equation}
+
+\section{Common stationary point}
+
+Все equations замыкаются в одной точке
+\begin{equation}
+ q_\star=(1,1,0,0,0,0,1,1,1,1,1,1,1,1).
+ \label{eq:v9-kms-augmented-point}
+\end{equation}
+Точно выполняются
+\begin{equation}
+ \nabla S_{\rm aug}(q_\star)=0,
+ \qquad S_{\rm aug}(q_\star)=0.
+ \label{eq:v9-kms-augmented-stationarity}
+\end{equation}
+Hessian не имеет continuous zero modes:
+\begin{equation}
+ \rank\Hess S_{\rm aug}(q_\star)=14,
+ \qquad \operatorname{nullity}\Hess S_{\rm aug}(q_\star)=0,
+ \label{eq:v9-kms-augmented-rank}
+\end{equation}
+и
+\begin{equation}
+ \det\Hess S_{\rm aug}(q_\star)=\frac{5184}{25}>0.
+ \label{eq:v9-kms-augmented-determinant}
+\end{equation}
+
+Итоговые conditional outputs:
+\begin{equation}
+ r_\theta=r_\kappa=(1,1,1),
+ \qquad p_{\rm end}=p_{\rm tr}=1,
+ \label{eq:v9-kms-augmented-shape-output}
+\end{equation}
+\begin{equation}
+ \boldsymbol\Delta=E_*(1,1,1),
+ \qquad
+ \boldsymbol\kappa=\frac{\chi^2E_*}{\hbar}(1,1,1).
+ \label{eq:v9-kms-augmented-physical-output}
+\end{equation}
+
+\section{Статус замыкания}
+
+Математическая closure полна внутри augmented model, но зависит от новой
+аксиомы и inherited selector wells. Поэтому
+\begin{equation}
+ N_{\rm augmented\ mathematical\ closure}=1/1,
+ \qquad N_{\rm physical\ parent\ derivation}=0/1.
+ \label{eq:v9-kms-augmented-status}
+\end{equation}
+Следующий допустимый вопрос --- существует ли blind dimensionless
+prediction, не использованное для выбора axiom или её коэффициента.
+
+\section{ProofDSL и итог}
+
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=9/9,
+ \qquad N_{\rm registered\ gates}=62,
+ \qquad N_{\rm registered\ obligations}=512.
+ \label{eq:v9-kms-augmented-proofdsl}
+\end{equation}
+
+\begin{theorem}[Axiom-augmented closure]
+Один common augmented parent имеет isolated stationary point и full-rank
+Hessian на всех четырнадцати continuous chart variables.
+\end{theorem}
+
+\begin{nogocriterion}[Conditional closure]
+Full-rank closure не повышает новую логарифм определителя axiom до derived physical law.
+Без слепое следствие и origin stiffness physical four-slot parent остаётся
+невыведенным.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item continuous variables: \textbf{$14$};
+\item Hessian rank/nullity: \textbf{$14/0$};
+\item Hessian determinant: \textbf{$5184/25$};
+\item conditional four-slot selection: \textbf{$4/4$};
+\item mathematical closure: \textbf{$1/1$};
+\item physical derivation: \textbf{$0/1$};
+\item ProofDSL: \textbf{$9/9$, registry $62/512$};
+\item следующий гейт: \textbf{axiom-augmented blind dimensionless prediction}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_axiom_augmented_common_parent_closure_gate_results.json}.

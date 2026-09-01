@@ -1,0 +1,201 @@
+\chapter{Происхождение инвариантного родительского функционала логарифма определителя из меры}
+\label{ch:v9-endpoint-kms-logdet-measure-origin}
+
+\section{Проверяемый вопрос}
+
+Предыдущий гейт построил два положительных type-operator
+\begin{equation}
+ R_\theta=\operatorname{diag}(r_{\theta s},r_{\theta a},
+ r_{\theta t},r_{\theta t},r_{\theta t}),
+ \qquad
+ R_\kappa=\operatorname{diag}(r_{\kappa s},r_{\kappa a},
+ r_{\kappa t},r_{\kappa t},r_{\kappa t})
+ \label{eq:v9-kms-logdet-measure-type-operators}
+\end{equation}
+и условный parent
+\begin{equation}
+ B_{\rm target}=-\log\det R_\theta-\log\det R_\kappa.
+ \label{eq:v9-kms-logdet-measure-target}
+\end{equation}
+Нужно проверить, является ли этот term Jacobian или effective action уже
+имеющейся меры, а не новым постулатом.
+
+\section{Gaussian sign audit}
+
+Для positive Hermitian $R$ комплексная bosonic Gaussian integral имеет
+determinant в знаменателе:
+\begin{equation}
+ Z_{\rm B}(R)\propto(\det R)^{-1},
+ \qquad
+ -\log Z_{\rm B}(R)=+\log\det R+\operatorname{const}.
+ \label{eq:v9-kms-logdet-measure-complex-boson}
+\end{equation}
+Знак противоположен требуемому. Real boson даёт половину того же знака:
+\begin{equation}
+ Z_{\rm RB}(R)\propto(\det R)^{-1/2},
+ \qquad
+ -\log Z_{\rm RB}(R)=+\frac12\log\det R+\operatorname{const}.
+ \label{eq:v9-kms-logdet-measure-real-boson}
+\end{equation}
+
+Для пяти complex Grassmann-пар формула Березина даёт
+\begin{equation}
+ Z_{\rm F}(R)=
+ \int D\bar\psi\,D\psi\,
+ \exp\!\left(-\bar\psi R\psi\right)=\det R.
+ \label{eq:v9-kms-logdet-measure-berezin}
+\end{equation}
+Поэтому effective action имеет в точности нужный знак и коэффициент:
+\begin{equation}
+ S_{\rm F,eff}(R)=-\log Z_{\rm F}(R)=-\log\det R.
+ \label{eq:v9-kms-logdet-measure-fermion-sign}
+\end{equation}
+Majorana/Pfaffian-вариант даёт только половинный coefficient,
+\begin{equation}
+ \operatorname{Pf}(A)^2=\det A,
+ \qquad
+ -\log\operatorname{Pf}(A)=-\frac12\log\det A,
+ \label{eq:v9-kms-logdet-measure-pfaffian}
+\end{equation}
+и без удвоения не совпадает с target.
+
+\section{Минимальная auxiliary размерность}
+
+Multiplicity pattern $1\oplus1\oplus3$ фиксирует determinant
+\begin{equation}
+ \det R=r_s r_a r_t^3,
+ \qquad
+ \deg(\det R)=5.
+ \label{eq:v9-kms-logdet-measure-degree-five}
+\end{equation}
+Следовательно, минимальный linear Gaussian carrier одного package содержит
+пять complex Grassmann-пар. Для двух независимых packages нужен block
+\begin{equation}
+ D_{\rm aux}=R_\theta\oplus R_\kappa,
+ \qquad
+ \dim_{\mathbb C}D_{\rm aux}=10.
+ \label{eq:v9-kms-logdet-measure-aux-block}
+\end{equation}
+Его determinant факторизуется:
+\begin{equation}
+ \det D_{\rm aux}=\det R_\theta\,\det R_\kappa,
+ \qquad
+ -\log\det D_{\rm aux}=B_{\rm target}.
+ \label{eq:v9-kms-logdet-measure-block-factorization}
+\end{equation}
+Одна копия каждого блока даёт coefficient one; $n_\theta,n_\kappa$
+копий дали бы
+\begin{equation}
+ S_{\rm eff}=-n_\theta\log\det R_\theta
+ -n_\kappa\log\det R_\kappa,
+ \qquad n_\theta,n_\kappa\in\mathbb N.
+ \label{eq:v9-kms-logdet-measure-copy-number}
+\end{equation}
+
+\section{No-go обычного coordinate Jacobian}
+
+В log-ratio chart
+\begin{equation}
+ (r_s,r_a,r_t)=
+ \frac5{e^u+e^v+3}(e^u,e^v,1)
+ \label{eq:v9-kms-logdet-measure-chart}
+\end{equation}
+двумерный Jacobian равен
+\begin{equation}
+ J_{\rm chart}
+ =\det\frac{\partial(r_s,r_a)}{\partial(u,v)}
+ =\frac35 r_s r_a r_t.
+ \label{eq:v9-kms-logdet-measure-chart-jacobian}
+\end{equation}
+Target determinant содержит triplet multiplicity three:
+\begin{equation}
+ \frac{\det R}{J_{\rm chart}}
+ =\frac{r_s r_a r_t^3}{(3/5)r_s r_a r_t}
+ =\frac53 r_t^2.
+ \label{eq:v9-kms-logdet-measure-chart-mismatch}
+\end{equation}
+Отношение непостоянно. Поэтому flat measure в $(u,v)$ или индуцированная
+coordinate measure не порождает invariant barrier.
+
+\section{Carrier audit}
+
+Существующая creation-cell имеет только physical source и пять channel
+targets:
+\begin{equation}
+ \mathcal H_{\rm cr}
+ =\mathbb C|0\rangle\oplus
+ \mathbb C|s\rangle\oplus\mathbb C|a\rangle\oplus\mathbb C^3|t\rangle,
+ \qquad \dim_{\mathbb C}\mathcal H_{\rm cr}=6.
+ \label{eq:v9-kms-logdet-measure-creation-cell}
+\end{equation}
+В её зарегистрированных полях нет независимого odd auxiliary module,
+Berezin measure или gauge map с Faddeev--Popov Jacobian $R$. Значит,
+найденная fermionic representation является conditional extension:
+\begin{equation}
+ N_{\rm conditional\ measure\ mechanism}=1/1,
+ \qquad
+ N_{\rm inherited\ auxiliary\ measure}=0/1.
+ \label{eq:v9-kms-logdet-measure-carrier-ledger}
+\end{equation}
+
+\section{ProofDSL certificate}
+
+LCF-ядро проверяет determinant identities, homogeneous degrees, exact
+effective signs и coordinate-Jacobian mismatch:
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=10/10,
+ \qquad
+ N_{\rm registered\ gates}=50,
+ \qquad
+ N_{\rm registered\ obligations}=382.
+ \label{eq:v9-kms-logdet-measure-proofdsl}
+\end{equation}
+Gaussian и Berezin integration identities остаются внешними аналитическими
+леммами; kernel сертифицирует их конечномерные determinant-следствия.
+
+\section{Итог}
+
+\begin{equation}
+ \begin{aligned}
+ N_{\rm measure\ candidates}&=1/7,\\
+ N_{\rm conditional\ fermionic\ representation}&=1/1,\\
+ N_{\rm minimal\ auxiliary\ dimension}&=10,\\
+ N_{\rm inherited\ logdet\ origin}&=0/1,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-logdet-measure-final-ledger}
+\end{equation}
+
+\begin{theorem}[Условная measure-реализация логарифм определителя parent]
+Две independent complex fermionic Gaussian measures на блоках размерности
+$5+5$ порождают ровно
+$-\log\det R_\theta-\log\det R_\kappa$. Степень determinant показывает
+минимальность десяти complex Grassmann-пар для linear block realization.
+\end{theorem}
+
+\begin{nogocriterion}[Механизм не равен происхождению поля]
+Ни flat/coordinate measure, ни bosonic Gaussian не порождают target term.
+Fermionic determinant даёт правильную формулу, но требуемый odd auxiliary
+module отсутствует в текущем four-slot carrier. Поэтому physical origin
+логарифм определителя parent остаётся $0/1$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item target: \textbf{$-\log\det R_\theta-\log\det R_\kappa$};
+\item correct sign: \textbf{complex fermionic Gaussian};
+\item minimal carrier: \textbf{$5+5=10$ complex Grassmann-пар};
+\item coordinate Jacobian: \textbf{$(3/5)r_sr_ar_t\neq r_sr_ar_t^3$};
+\item ProofDSL: \textbf{$10/10$, registry $50/382$};
+\item inherited measure-origin: \textbf{$0/1$};
+\item следующий гейт: \textbf{auxiliary fermion module admission}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_relative_shape_logdet_parent_measure_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{Berezin1966}
+F.~A.~Berezin,
+\emph{The Method of Second Quantization},
+Academic Press, 1966.
+\end{thebibliography}

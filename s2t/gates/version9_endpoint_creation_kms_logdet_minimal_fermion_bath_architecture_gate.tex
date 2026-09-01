@@ -1,0 +1,212 @@
+\chapter{Минимальная архитектура фермионного резервуара для логарифма определителя KMS}
+\label{ch:v9-kms-minimal-fermion-bath}
+
+\section{Минимальный новый носитель}
+
+Physical-loop запретительный результат локализовал нехватку одного determinant degree five.
+Минимальная bath поэтому повторяет five-channel type-space:
+\begin{equation}
+ V_{\rm sys}\simeq\mathbb C^5,
+ \qquad V_{\rm bath}\simeq\mathbb C^5,
+ \qquad \mathcal F_{\rm sb}=V_{\rm sys}\oplus V_{\rm bath},
+ \qquad \dim_{\mathbb C}\mathcal F_{\rm sb}=10.
+ \label{eq:v9-kms-fermion-bath-carrier}
+\end{equation}
+Обе части несут одинаковое type-разложение
+\begin{equation}
+ V_{\rm sys},V_{\rm bath}=1_s\oplus1_a\oplus3_t.
+ \label{eq:v9-kms-fermion-bath-types}
+\end{equation}
+Тем самым новый носитель минимален по недостающей determinant degree:
+\begin{equation}
+ \deg\det R_\kappa=1+1+3=5.
+ \label{eq:v9-kms-fermion-bath-minimal-degree}
+\end{equation}
+
+\section{Typed system--bath coupling}
+
+Gauge, grading и family covariance оставляют diagonal coupling
+\begin{equation}
+ G=\operatorname{diag}(g_s,g_a,g_t,g_t,g_t),
+ \qquad g_s,g_a,g_t>0,
+ \qquad \rank G=5.
+ \label{eq:v9-kms-fermion-bath-coupling}
+\end{equation}
+Triplet block пропорционален единице, поэтому
+\begin{equation}
+ [G,0\oplus0\oplus X_t]=0,
+ \qquad X_t\in\mathfrak{so}(3).
+ \label{eq:v9-kms-fermion-bath-family-covariance}
+\end{equation}
+
+\section{Coupled Hermitian kernel}
+
+Минимальный Euclidean Hermitian kernel равен
+\begin{equation}
+ K_H=\begin{pmatrix}R_\theta&G\\G&R_\kappa\end{pmatrix}.
+ \label{eq:v9-kms-fermion-bath-hermitian-kernel}
+\end{equation}
+Его determinant факторизуется поканально:
+\begin{equation}
+ \det K_H=
+ (r_{\theta s}r_{\kappa s}-g_s^2)
+ (r_{\theta a}r_{\kappa a}-g_a^2)
+ (r_{\theta t}r_{\kappa t}-g_t^2)^3.
+ \label{eq:v9-kms-fermion-bath-full-determinant}
+\end{equation}
+После интегрирования bath system-kernel становится Schur complement
+\begin{equation}
+ K_{\rm eff}=R_\theta-GR_\kappa^{-1}G,
+ \qquad
+ \det K_H=\det R_\kappa\det K_{\rm eff}.
+ \label{eq:v9-kms-fermion-bath-schur}
+\end{equation}
+В type-базисе
+\begin{equation}
+ K_{\rm eff}=\operatorname{diag}\!\left(
+ r_{\theta s}-\frac{g_s^2}{r_{\kappa s}},
+ r_{\theta a}-\frac{g_a^2}{r_{\kappa a}},
+ \left(r_{\theta t}-\frac{g_t^2}{r_{\kappa t}}\right)I_3
+ \right).
+ \label{eq:v9-kms-fermion-bath-schur-diagonal}
+\end{equation}
+Отношение к target determinant равно
+\begin{equation}
+ \frac{\det K_H}{\det R_\theta\det R_\kappa}
+ =\left(1-\frac{g_s^2}{r_{\theta s}r_{\kappa s}}\right)
+  \left(1-\frac{g_a^2}{r_{\theta a}r_{\kappa a}}\right)
+  \left(1-\frac{g_t^2}{r_{\theta t}r_{\kappa t}}\right)^3.
+ \label{eq:v9-kms-fermion-bath-ratio}
+\end{equation}
+Следовательно, nonzero Hermitian coupling создаёт self-energy, но меняет
+сам логарифм определителя functional.
+
+\section{Exact positive witness}
+
+Выберем
+\begin{equation}
+ R_\theta=R_\kappa=2I_5,
+ \qquad G=I_5.
+ \label{eq:v9-kms-fermion-bath-witness}
+\end{equation}
+Тогда coupled kernel строго положителен:
+\begin{equation}
+ \Spec K_H^{(w)}=\{1^{(5)},3^{(5)}\}.
+ \label{eq:v9-kms-fermion-bath-witness-spectrum}
+\end{equation}
+Но его determinant равен
+\begin{equation}
+ \det K_H^{(w)}=3^5=243,
+ \label{eq:v9-kms-fermion-bath-witness-determinant}
+\end{equation}
+тогда как target на тех же двух blocks есть
+\begin{equation}
+ \det R_\theta\det R_\kappa=2^{10}=1024.
+ \label{eq:v9-kms-fermion-bath-witness-target}
+\end{equation}
+Точный defect и ratio:
+\begin{equation}
+ 1024-243=781>0,
+ \qquad
+ \frac{\det K_H^{(w)}}{\det R_\theta\det R_\kappa}
+ =\frac{243}{1024}.
+ \label{eq:v9-kms-fermion-bath-witness-defect}
+\end{equation}
+
+\section{Zero-coupling face}
+
+При $G=0$ восстанавливается block direct sum
+\begin{equation}
+ K_0=R_\theta\oplus R_\kappa,
+ \qquad
+ \det K_0=\det R_\theta\det R_\kappa.
+ \label{eq:v9-kms-fermion-bath-zero-face}
+\end{equation}
+Однако induced system self-energy одновременно исчезает:
+\begin{equation}
+ \Sigma_{\rm sys}=GR_\kappa^{-1}G=0.
+ \label{eq:v9-kms-fermion-bath-zero-self-energy}
+\end{equation}
+Decoupled bath даёт формальный determinant factor, но не может быть
+microscopic origin conductance.
+
+\section{Causal route следующего гейта}
+
+Единственный очевидный finite-block способ сохранить determinant при
+nonzero off-diagonal entry есть triangular kernel
+\begin{equation}
+ K_{\triangle}=\begin{pmatrix}R_\theta&G\\0&R_\kappa\end{pmatrix},
+ \qquad \det K_{\triangle}=\det R_\theta\det R_\kappa.
+ \label{eq:v9-kms-fermion-bath-triangular-candidate}
+\end{equation}
+Но он не является Euclidean Hermitian operator. Его можно рассматривать
+только после явного Schwinger--Keldysh causal doubling, noise block,
+normalization и KMS symmetry; это содержание следующего гейта.
+
+\section{ProofDSL и итог}
+
+LCF certificate проверяет exact determinant, Schur complement, positive
+witness spectrum и zero-coupling face:
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=12/12,
+ \qquad N_{\rm registered\ gates}=57,
+ \qquad N_{\rm registered\ obligations}=455.
+ \label{eq:v9-kms-fermion-bath-proofdsl}
+\end{equation}
+Итоговые ledgers:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm minimal\ bath\ carrier\ architecture}&=10/10,\\
+ N_{\rm nonzero\ Hermitian\ coupling}&=1/1,\\
+ N_{\rm coupled\ exact\ target\ determinant}&=0/1,\\
+ N_{\rm zero\ coupling\ target\ determinant}&=1/1,\\
+ N_{\rm physical\ bath\ parent\ origin}&=0/1,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-fermion-bath-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальный coupled fermion-bath carrier]
+Одна additional five-channel multiplet является минимальной bath extension.
+Typed rank-five Hermitian coupling сохраняет family covariance и имеет
+strictly positive coupled witness.
+\end{theorem}
+
+\begin{nogocriterion}[Determinant--interaction trilemma]
+При nonzero Hermitian coupling bath создаёт Schur self-energy, но target
+determinant деформируется. На zero-coupling face determinant точен, но
+conductance dynamics отсутствует. Causal triangular route требует новой
+Schwinger--Keldysh структуры и пока не является physical origin.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item new bath dimension: \textbf{$5$};
+\item total fermion dimension: \textbf{$10$};
+\item coupling rank: \textbf{$5$};
+\item witness spectrum: \textbf{$1^{(5)},3^{(5)}$};
+\item coupled determinant: \textbf{$243$};
+\item target determinant: \textbf{$1024$};
+\item exact defect: \textbf{$781$};
+\item physical bath origin: \textbf{$0/1$};
+\item ProofDSL: \textbf{$12/12$, registry $57/455$};
+\item следующий гейт: \textbf{Keldysh causal fermion-bath architecture}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_minimal_fermion_bath_architecture_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-fermion-bath-tedopa}
+A.~N\"usseler, I.~Dhand, S.~F.~Huelga, M.~B.~Plenio,
+\emph{Efficient simulation of open quantum systems coupled to a fermionic
+bath}, Phys. Rev. B \textbf{101} (2020) 155134, arXiv:1909.09589.
+\bibitem{v9-kms-fermion-bath-keldysh}
+A.~Kamenev, A.~Levchenko,
+\emph{Keldysh technique and non-linear sigma-model: basic principles and
+applications}, Adv. Phys. \textbf{58} (2009) 197--319,
+arXiv:0901.3586.
+\bibitem{v9-kms-fermion-bath-third-quantization}
+A.~McDonald, A.~A.~Clerk,
+\emph{Third quantization of open quantum systems},
+Phys. Rev. Research \textbf{5} (2023) 033107, arXiv:2302.14047.
+\end{thebibliography}

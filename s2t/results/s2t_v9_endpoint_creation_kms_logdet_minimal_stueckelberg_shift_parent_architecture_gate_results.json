@@ -1,0 +1,98 @@
+{
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_logdet_minimal_stueckelberg_shift_parent_architecture_gate",
+  "gauge_fixing": {
+    "condition": "F(x)=D_aux x",
+    "fp_determinant": "det R_theta det R_kappa",
+    "fp_operator": "D_aux",
+    "fp_rank": 10,
+    "ghost_determinant_matches_target": true
+  },
+  "gauge_invariant_parent": {
+    "bounded_below": true,
+    "formula": "S_St=(x-y)^T D_aux (x-y)/2",
+    "hessian_kernel_equals_gauge_orbit": true,
+    "hessian_nullity": 10,
+    "hessian_rank": 10,
+    "isotropic_spectrum": [
+      [
+        0,
+        10
+      ],
+      [
+        2,
+        10
+      ]
+    ]
+  },
+  "ledgers": {
+    "no_new_quotient_modes_satisfied": 0,
+    "no_new_quotient_modes_tested": 1,
+    "nontrivial_rank_ten_gauge_orbit_satisfied": 1,
+    "nontrivial_rank_ten_gauge_orbit_tested": 1,
+    "physical_four_slot_parent_satisfied": 0,
+    "physical_four_slot_parent_tested": 1,
+    "stueckelberg_gauge_architecture_satisfied": 10,
+    "stueckelberg_gauge_architecture_tested": 10,
+    "uncancelled_target_logdet_satisfied": 0,
+    "uncancelled_target_logdet_tested": 1
+  },
+  "minimality": {
+    "one_compensator_copy_required": true,
+    "pure_shift_dimension_10_reduces_to_zero_action_spectator": true,
+    "smaller_nontrivial_joint_shift_carrier_exists": false
+  },
+  "next_gate": "version9_endpoint_creation_kms_logdet_physical_fermion_loop_parent_origin_gate",
+  "predecessor": "version9_endpoint_creation_kms_logdet_brst_shift_symmetry_parent_origin_gate",
+  "proofdsl": {
+    "analytic_boundary": "ProofDSL checks the finite gauge geometry and exact determinant cancellation; Gaussian path integration is an external lemma",
+    "certificate_sha256": "9691530a50157f2ca939ed8ffbf1eb075b73d18485fd35fb6dc689a30ad8ff11",
+    "floating_point_values": 0,
+    "gate_identifier": "version9_endpoint_creation_kms_logdet_minimal_stueckelberg_shift_parent_architecture_gate",
+    "obligation_count": 10,
+    "obligations": [
+      "stueckelberg_orbit_rank_ten",
+      "quotient_invariant_rank_ten",
+      "difference_is_shift_invariant",
+      "parent_hessian_rank_ten",
+      "parent_hessian_nullity_ten",
+      "gauge_orbit_is_hessian_kernel",
+      "isotropic_positive_semidefinite_spectrum",
+      "fp_operator_rank_ten",
+      "fp_determinant_target",
+      "complex_boson_ghost_cancellation"
+    ],
+    "status": "lcf-checked"
+  },
+  "quotient_obstruction": {
+    "combined_factor": 1,
+    "complex_bosonic_partition_factor": "1/det D_aux",
+    "gauge_invariant_bosonic_modes": 10,
+    "ghost_partition_factor": "det D_aux",
+    "physical_or_auxiliary_quotient_modes_removed": false,
+    "target_logdet_survives": false
+  },
+  "stueckelberg_carrier": {
+    "dimension_per_field": 10,
+    "fields": [
+      "x",
+      "y"
+    ],
+    "gauge_transformation": "x->x+epsilon, y->y+epsilon",
+    "invariant_combination": "z=x-y",
+    "orbit_map": "T=(I10,I10)^T",
+    "orbit_rank": 10,
+    "quotient_dimension": 10,
+    "total_even_dimension": 20
+  },
+  "verdict": {
+    "bosonic_quotient_cancels_ghost_determinant": true,
+    "gauge_invariant_quotient_is_nonempty": true,
+    "logdet_parent_physically_derived": false,
+    "minimal_stueckelberg_parent_constructed": true,
+    "physical_fermion_loop_route_required": true,
+    "required_shift_orbit_generated_nontrivially": true,
+    "stueckelberg_route_derives_target_logdet": false
+  }
+}

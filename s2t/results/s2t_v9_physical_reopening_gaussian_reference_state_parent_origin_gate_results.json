@@ -1,0 +1,69 @@
+{
+  "coefficient_boundary": {
+    "common_rescaling": "(gamma,delta)->(s gamma,s delta)",
+    "free_ratio": "delta/gamma",
+    "orbit_nullity": 1,
+    "orbit_rank": 1,
+    "unit_covariance_ratio_derived": false
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version9_physical_reopening_gaussian_reference_state_parent_origin_gate",
+  "next_gate": "version9_physical_reopening_reference_scale_mu_parent_origin_gate",
+  "nonuniqueness_witnesses": [
+    {
+      "covariance": "I_10",
+      "delta": 1,
+      "gamma": 1
+    },
+    {
+      "covariance": "2 I_10",
+      "delta": 2,
+      "gamma": 1
+    }
+  ],
+  "ou_architecture": {
+    "coordinate_dimension": 10,
+    "diffusion": "D=delta I_10",
+    "drift": "B=gamma I_10",
+    "lyapunov_equation": "B S + S B^T = 2 D",
+    "lyapunov_nullity": 0,
+    "lyapunov_rank": 55,
+    "reversible": true,
+    "stationary_covariance": "S=(delta/gamma) I_10",
+    "symmetric_covariance_dimension": 55
+  },
+  "predecessor": "version9_physical_reopening_common_origin_carrier_admission_gate",
+  "proofdsl": {
+    "certificate_sha256": "53fe5aafe19c1e8720b1b18c44e4e83a3c42995d69064f02133705858d68806d",
+    "floating_point_values": 0,
+    "obligation_count": 12,
+    "obligations": [
+      "gaussian_carrier_dimension_ten",
+      "symmetric_covariance_dimension_fifty_five",
+      "stationary_lyapunov_equation",
+      "isotropic_detailed_balance",
+      "lyapunov_map_rank_fifty_five",
+      "lyapunov_map_nullity_zero",
+      "unit_covariance_witness",
+      "doubled_covariance_witness",
+      "distinct_admissible_covariances",
+      "common_time_rescaling_invariance",
+      "free_diffusion_drift_ratio",
+      "coefficient_orbit_nullity_one"
+    ],
+    "status": "lcf-checked"
+  },
+  "scores": {
+    "conditional_unit_reference_state": "1/1",
+    "gaussian_stationary_architecture": "1/1",
+    "physical_origin_packages": "0/2",
+    "physical_reference_state_origin": "0/1"
+  },
+  "verdict": {
+    "gaussian_reference_state_parent_origin_derived": false,
+    "physical_program_reopened": false,
+    "unique_covariance_for_fixed_ou_coefficients": true,
+    "unit_reference_covariance_selected_by_structure": false
+  }
+}

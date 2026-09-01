@@ -1,0 +1,152 @@
+\chapter{Происхождение аномалии меры резервуара для логарифма определителя KMS}
+\label{ch:v9-kms-reservoir-measure-anomaly}
+
+\section{Target measure term}
+
+После запретительный результат spectral-density reconstruction остаётся проверить, может ли
+требуемый barrier возникнуть как Jacobian fermionic measure:
+\begin{equation}
+ B_{\rm target}=-\Tr\log D_{\rm aux},
+ \qquad D_{\rm aux}=R_\theta\oplus R_\kappa.
+ \label{eq:v9-kms-anomaly-target}
+\end{equation}
+Его coefficient vector в type/package basis равен
+\begin{equation}
+ c_{\rm target}=(1,1,3,1,1,3),
+ \qquad \sum c_{\rm target}=10.
+ \label{eq:v9-kms-anomaly-target-vector}
+\end{equation}
+
+\section{Paired Berezin covariance}
+
+Для ordinary vector-like basis change
+\begin{equation}
+ \psi'=S\psi,
+ \qquad \bar\psi'=\bar\psi S^{-1},
+ \label{eq:v9-kms-anomaly-paired-change}
+\end{equation}
+два Grassmann Jacobian сокращаются:
+\begin{equation}
+ \mathcal J_{\rm pair}
+ =\det(S)^{-1}\det(S^{-1})^{-1}=1.
+ \label{eq:v9-kms-anomaly-paired-jacobian}
+\end{equation}
+Следовательно, covariant reservoir measure сама по себе anomaly не даёт.
+
+Same-direction transformation
+\begin{equation}
+ \psi'=S\psi,
+ \qquad \bar\psi'=\bar\psi S
+ \label{eq:v9-kms-anomaly-same-change}
+\end{equation}
+имеет nontrivial Jacobian
+\begin{equation}
+ \mathcal J_{\rm same}=\det(S)^{-2},
+ \label{eq:v9-kms-anomaly-same-jacobian}
+\end{equation}
+но допустима как anomaly candidate только при наличии соответствующей
+classical symmetry и independently fixed regulator.
+
+\section{Inherited signed gradings}
+
+Type-, package- и product-gradings дают coefficient vectors
+\begin{align}
+ c_{\rm type}&=(1,-1,3,1,-1,3),\label{eq:v9-kms-anomaly-type-vector}\\
+ c_{\rm pkg}&=(1,1,3,-1,-1,-3),\label{eq:v9-kms-anomaly-package-vector}\\
+ c_{\rm prod}&=(1,-1,3,-1,1,-3).\label{eq:v9-kms-anomaly-product-vector}
+\end{align}
+Их isotropic traces равны
+\begin{equation}
+ \sum c_{\rm type}=6,
+ \qquad \sum c_{\rm pkg}=0,
+ \qquad \sum c_{\rm prod}=0,
+ \label{eq:v9-kms-anomaly-inherited-traces}
+\end{equation}
+и не совпадают с target trace ten.
+
+Matrix этих направлений имеет rank
+\begin{equation}
+ \rank\begin{pmatrix}c_{\rm type}\\c_{\rm pkg}\\c_{\rm prod}\end{pmatrix}=3.
+ \label{eq:v9-kms-anomaly-inherited-rank}
+\end{equation}
+После добавления target vector rank возрастает:
+\begin{equation}
+ \rank\begin{pmatrix}
+ c_{\rm type}\\c_{\rm pkg}\\c_{\rm prod}\\c_{\rm target}
+ \end{pmatrix}=4.
+ \label{eq:v9-kms-anomaly-augmented-rank}
+\end{equation}
+Поэтому positive trace target не лежит в span inherited anomaly directions.
+
+\section{Target-loaded rescaling}
+
+На isotropic block $D_{\rm aux}=rI_{10}$ можно формально выбрать
+\begin{equation}
+ S=r^{-1/2}I_{10}.
+ \label{eq:v9-kms-anomaly-loaded-rescaling}
+\end{equation}
+Тогда
+\begin{equation}
+ \mathcal J_{\rm same}=\det(S)^{-2}=r^{10}=\det D_{\rm aux}.
+ \label{eq:v9-kms-anomaly-loaded-jacobian}
+\end{equation}
+Но $S$ уже построен из искомого $D_{\rm aux}$ и не является inherited
+symmetry. Это обычная target-dependent смена переменных, а не происхождение
+anomaly coefficient.
+
+\section{ProofDSL и итог}
+
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=12/12,
+ \qquad N_{\rm registered\ gates}=60,
+ \qquad N_{\rm registered\ obligations}=492.
+ \label{eq:v9-kms-anomaly-proofdsl}
+\end{equation}
+Итоговые ledgers:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm paired\ measure\ covariance}&=1/1,\\
+ N_{\rm inherited\ anomaly\ candidates}&=0/3,\\
+ N_{\rm target\ loaded\ rescaling}&=1/1,\\
+ N_{\rm physical\ measure\ anomaly\ origin}&=0/1,\\
+ N_{\rm physical\ logdet\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-anomaly-ledger}
+\end{equation}
+
+\begin{theorem}[Finite measure classification]
+Paired reservoir measure имеет unit Jacobian. Три inherited signed
+gradings порождают rank-three anomaly space, не содержащий positive target
+trace direction.
+\end{theorem}
+
+\begin{nogocriterion}[Anomaly не заменяет parent]
+Target determinant воспроизводится только all-direction rescaling,
+заранее зависящим от $D_{\rm aux}$. Без новой symmetry и regulator такой
+Jacobian является содержащий целевую подстановку change of variables, а не physical origin.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item paired Jacobian: \textbf{$1$};
+\item inherited anomaly rank: \textbf{$3$};
+\item rank with target: \textbf{$4$};
+\item inherited isotropic traces: \textbf{$6,0,0$};
+\item target trace: \textbf{$10$};
+\item physical anomaly origin: \textbf{$0/1$};
+\item ProofDSL: \textbf{$12/12$, registry $60/492$};
+\item следующий гейт: \textbf{minimal new parent axiom admission}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_reservoir_measure_anomaly_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-anomaly-fujikawa-review}
+B.~Filoche, R.~Larue, J.~Quevillon, P.~N.~H.~Vuong,
+\emph{Anomalies from an effective field theory perspective},
+Phys. Rev. D \textbf{107} (2023) 025017, arXiv:2205.02248.
+\bibitem{v9-kms-anomaly-sk}
+R.~E.~Gamboa Sarav\'i, F.~A.~Schaposnik, G.~Silva,
+\emph{Duality and bosonization in Schwinger--Keldysh formulation},
+Phys. Rev. D \textbf{91} (2015) 025035, arXiv:1406.4578.
+\end{thebibliography}

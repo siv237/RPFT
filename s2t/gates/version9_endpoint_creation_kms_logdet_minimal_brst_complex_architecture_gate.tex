@@ -1,0 +1,221 @@
+\chapter{Минимальный комплекс BRST для логарифма определителя KMS}
+\label{ch:v9-kms-logdet-minimal-brst}
+
+\section{Базовый gauge-носитель}
+
+Возьмём уже построенный ungraded type/package carrier
+\begin{equation}
+ E=V_{\rm type}\otimes P_{\rm KMS},
+ \qquad \dim_{\mathbb C}E=5\cdot2=10.
+ \label{eq:v9-kms-brst-base-carrier}
+\end{equation}
+Минимальный off-shell contractible quartet над $E$ состоит из
+\begin{equation}
+ x,b\in E^{\bar0},
+ \qquad
+ c,\bar c\in E^{\bar1}.
+ \label{eq:v9-kms-brst-fields}
+\end{equation}
+Ghost numbers назначаются как
+\begin{equation}
+ \operatorname{gh}(x)=\operatorname{gh}(b)=0,
+ \qquad
+ \operatorname{gh}(c)=1,
+ \qquad
+ \operatorname{gh}(\bar c)=-1.
+ \label{eq:v9-kms-brst-ghost-numbers}
+\end{equation}
+Таким образом,
+\begin{equation}
+ \dim X_{\rm BRST}^{\bar0}=20,\qquad
+ \dim X_{\rm BRST}^{\bar1}=20,\qquad
+ \operatorname{sdim}X_{\rm BRST}=0.
+ \label{eq:v9-kms-brst-superdimension}
+\end{equation}
+
+\section{Nilpotent differential}
+
+Определим
+\begin{equation}
+ sx=c,\qquad sc=0,\qquad s\bar c=b,\qquad sb=0.
+ \label{eq:v9-kms-brst-differential}
+\end{equation}
+В порядке $(x,b,c,\bar c)$ его matrix имеет block-форму
+\begin{equation}
+ Q=
+ \begin{pmatrix}
+ 0&0&0&0\\
+ 0&0&0&I_{10}\\
+ I_{10}&0&0&0\\
+ 0&0&0&0
+ \end{pmatrix}.
+ \label{eq:v9-kms-brst-matrix}
+\end{equation}
+Точные invariants равны
+\begin{equation}
+ Q^2=0,\qquad
+ \rank Q=20,\qquad
+ \dim\ker Q=20.
+ \label{eq:v9-kms-brst-rank-nullity}
+\end{equation}
+Поскольку $\operatorname{im}Q\subseteq\ker Q$ и их размерности совпадают,
+\begin{equation}
+ H^\bullet(X_{\rm BRST},Q)=0.
+ \label{eq:v9-kms-brst-zero-cohomology}
+\end{equation}
+Для ghost-number operator $N_{\rm gh}$ и parity $\Gamma_{\rm BRST}$
+выполняются
+\begin{equation}
+ [N_{\rm gh},Q]=Q,
+ \qquad
+ \{\Gamma_{\rm BRST},Q\}=0.
+ \label{eq:v9-kms-brst-degree-parity}
+\end{equation}
+Тем самым нечётность $c,\bar c$ теперь является частью BRST architecture,
+а не произвольной grading самого determinant carrier.
+
+\section{Gauge-fixing fermion}
+
+Faddeev--Popov operator выбирается равным уже построенному KMS block:
+\begin{equation}
+ M_{\rm FP}=D_{\rm aux}=R_\theta\oplus R_\kappa,
+ \qquad \rank M_{\rm FP}=10.
+ \label{eq:v9-kms-brst-fp-operator}
+\end{equation}
+Для $\alpha>0$ минимальная gauge-fixing fermion имеет вид
+\begin{equation}
+ \Psi=\bar c^{\,T}\left(D_{\rm aux}x-\frac{\alpha}{2}b\right),
+ \qquad \operatorname{gh}\Psi=-1.
+ \label{eq:v9-kms-brst-gauge-fermion}
+\end{equation}
+Её BRST-exact action равен
+\begin{equation}
+ s\Psi=
+ b^T D_{\rm aux}x-\frac{\alpha}{2}b^Tb
+ -\bar c^{\,T}D_{\rm aux}c.
+ \label{eq:v9-kms-brst-exact-action}
+\end{equation}
+Ghost block даёт требуемый determinant
+\begin{equation}
+ \det M_{\rm FP}
+ =r_{\theta s}r_{\theta a}r_{\theta t}^3
+  r_{\kappa s}r_{\kappa a}r_{\kappa t}^3
+ =\det R_\theta\,\det R_\kappa.
+ \label{eq:v9-kms-brst-fp-determinant}
+\end{equation}
+Следовательно, conditional ghost integral воспроизводит
+\begin{equation}
+ -\log Z_{\rm gh}
+ =-\log\det R_\theta-\log\det R_\kappa.
+ \label{eq:v9-kms-brst-effective-logdet}
+\end{equation}
+
+\section{Минимальность и физическая когомология}
+
+Degree десять требует десять ghost/antighost pairs. Off-shell nilpotence
+$s\bar c=b$, $sb=0$ требует по одному even multiplier на gauge condition,
+а shift-doublet $sx=c$ --- десять gauge coordinates. Поэтому minimal
+off-shell realization имеет
+\begin{equation}
+ N_x=N_b=N_c=N_{\bar c}=10,
+ \qquad
+ \dim_{\mathbb C}X_{\rm BRST}=40.
+ \label{eq:v9-kms-brst-minimal-count}
+\end{equation}
+Она присоединяется direct sum к creation-cell:
+\begin{equation}
+ X_{\rm total}=\mathcal H_{\rm cr}\oplus X_{\rm BRST},
+ \qquad
+ Q\iota_{\rm phys}=0.
+ \label{eq:v9-kms-brst-physical-inclusion}
+\end{equation}
+Так как auxiliary cohomology нулевая,
+\begin{equation}
+ H^\bullet(X_{\rm total},Q)
+ \simeq\mathcal H_{\rm cr},
+ \qquad N_{\rm new\ physical\ states}=0.
+ \label{eq:v9-kms-brst-physical-cohomology}
+\end{equation}
+
+\section{Origin boundary}
+
+Этот гейт строит согласованную architecture, но вводит новую shift symmetry
+\begin{equation}
+ x\longmapsto x+\varepsilon,
+ \qquad \varepsilon\in E,
+ \label{eq:v9-kms-brst-shift-symmetry}
+\end{equation}
+чей gauge orbit не был найден в four-slot parent или endpoint-QMS.
+Поэтому
+\begin{equation}
+ N_{\rm shift\ gauge\ symmetry\ origin}=0/1,
+ \qquad
+ N_{\rm gauge\ fixing\ fermion\ origin}=0/1.
+ \label{eq:v9-kms-brst-origin-boundary}
+\end{equation}
+
+\section{ProofDSL и итог}
+
+ProofDSL проверяет nilpotence, rank/nullity, zero cohomology dimension,
+ghost-number degree, odd parity, superdimension, FP determinant и
+physical decoupling:
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=10/10,
+ \qquad
+ N_{\rm registered\ gates}=53,
+ \qquad
+ N_{\rm registered\ obligations}=412.
+ \label{eq:v9-kms-brst-proofdsl}
+\end{equation}
+Итоговый ledger:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm minimal\ BRST\ architecture}&=10/10,\\
+ N_{\rm contractible\ cohomology}&=1/1,\\
+ N_{\rm conditional\ FP\ determinant}&=1/1,\\
+ N_{\rm shift\ gauge\ origin}&=0/1,\\
+ N_{\rm physical\ logdet\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-brst-final-ledger}
+\end{equation}
+
+\begin{theorem}[Минимальный contractible BRST complex]
+На десятимерном type/package carrier существует balanced complex
+размерности $(20|20)$ с nilpotent differential rank $20$, нулевой
+когомологией и FP-operator $R_\theta\oplus R_\kappa$. Его ghost determinant
+равен target determinant, а physical creation-space не изменяется.
+\end{theorem}
+
+\begin{nogocriterion}[BRST architecture не создаёт gauge symmetry]
+Формулы $sx=c$ и $s\bar c=b$ согласованны, но требуют исходной
+десятипараметрической shift redundancy. Пока эта redundancy не является
+симметрией общего родительского функционала, введение quartet лишь переносит внешний parity
+seed в внешний gauge-symmetry seed.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item quartet dimensions: \textbf{$10+10|10+10$};
+\item $Q^2$: \textbf{$0$};
+\item rank/nullity: \textbf{$20/20$};
+\item auxiliary cohomology: \textbf{$0$};
+\item FP determinant: \textbf{$\det R_\theta\det R_\kappa$};
+\item physical state increment: \textbf{$0$};
+\item ProofDSL: \textbf{$10/10$, registry $53/412$};
+\item shift-symmetry origin: \textbf{$0/1$};
+\item следующий гейт: \textbf{BRST shift-symmetry parent-origin}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_minimal_brst_complex_architecture_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-brst-doublets}
+A.~Quadri,
+\emph{Algebraic Properties of BRST Coupled Doublets},
+JHEP \textbf{05} (2002) 051, arXiv:hep-th/0201122.
+\bibitem{v9-kms-brst-finite}
+R.~A.~Iseppi,
+\emph{The BRST cohomology and a generalized Lie algebra cohomology:
+analysis of a matrix model},
+arXiv:1909.05053.
+\end{thebibliography}

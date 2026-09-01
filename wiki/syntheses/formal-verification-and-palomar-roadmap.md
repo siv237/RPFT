@@ -2,7 +2,7 @@
 
 > Status: working
 > Type: synthesis
-> Updated: 2026-08-29
+> Updated: 2026-09-01
 
 ## Назначение
 
@@ -250,6 +250,65 @@ $$
 спинодальный порог `21/2`, точная двухмерная неподвижная алгебра,
 linking-GKSL, gauge-twirl Kraus-мост, его parent-action, полярная
 cross-ковариация и минимальная Stinespring-дилатация.
+
+На 1 сентября 2026 года реестр расширен до `57` гейтов и `455`
+обязательств. Первый перенос Version 9 —
+[[version9-endpoint-creation-kms-relative-shape-selector-source-minimal-invariant-parent-architecture-gate]] —
+проверяет десятью kernel-theorems algebraic core invariant logdet parent:
+weighted trace/determinant, stationary gradient, spectra constrained и
+log-ratio Hessian, doubled rank `4` и full rank/determinant
+`12/(5184/25)`. Глобальная weighted AM–GM-лемма пока остаётся вне kernel.
+
+Второй перенос Version 9 —
+[[version9-endpoint-creation-kms-relative-shape-logdet-parent-measure-origin-gate]] —
+проверяет determinant degrees `5/10`, exact effective signs и
+coordinate-Jacobian no-go. Berezin/Gaussian integration identities остаются
+внешними леммами; kernel сертифицирует только их algebraic consequences.
+
+Третий перенос Version 9 —
+[[version9-endpoint-creation-kms-logdet-auxiliary-fermion-module-admission-gate]] —
+проверяет functorial carrier dimension `10`, complementary package
+projectors `5+5`, odd parity, family covariance, physical decoupling и
+rank `20` Berezin pairing. Происхождение Grassmann statistics остаётся
+вне kernel и вынесено в следующий origin-гейт.
+
+Четвёртый перенос Version 9 —
+[[version9-endpoint-creation-kms-logdet-auxiliary-fermion-statistics-parent-origin-gate]] —
+перебирает все tensor-product gradings, доказывает odd ranks `2,5,5,8`,
+package-swap restriction и rank-two defect ближайшего candidate. Paired
+Berezin Jacobian cancellation также проверена точно; BRST origin parity
+остаётся внешней структурной задачей.
+
+Пятый перенос Version 9 —
+[[version9-endpoint-creation-kms-logdet-minimal-brst-complex-architecture-gate]] —
+проверяет nilpotent quartet matrix `40x40`, rank/nullity `20/20`,
+ghost-number degree, parity, zero cohomology, FP determinant rank `10`
+и annihilation physical inclusion. Origin shift gauge symmetry не входит
+в LCF-утверждение и остаётся следующим гейтом.
+
+Шестой перенос Version 9 —
+[[version9-endpoint-creation-kms-logdet-brst-shift-symmetry-parent-origin-gate]] —
+проверяет rank `10` required translation map, rank/cokernel `6/4` KMS
+tangent, shape rank `4`, phase nullity `1` и zero type/transport
+tangents. Positive rank-ten Hessian exact нарушает full translation.
+
+Седьмой перенос Version 9 —
+[[version9-endpoint-creation-kms-logdet-minimal-stueckelberg-shift-parent-architecture-gate]] —
+проверяет rank-ten orbit, rank-ten quotient, Hessian rank/nullity `10/10`,
+orbit-kernel equality, positive spectrum и exact cancellation
+`det D_aux/(det D_aux)=1`.
+
+Восьмой перенос Version 9 —
+[[version9-endpoint-creation-kms-logdet-physical-fermion-loop-parent-origin-gate]] —
+проверяет rank `5` physical target, single/target determinant degrees
+`5/10`, Real lift square, exchange mismatch rank `10`, а также exact
+determinants conditional doubled и composite kernels.
+
+Девятый перенос Version 9 —
+[[version9-endpoint-creation-kms-logdet-minimal-fermion-bath-architecture-gate]] —
+проверяет carrier/coupling ranks `10/5`, exact Schur complement, positive
+witness spectrum `{1^(5),3^(5)}`, determinants `243/1024` и zero-coupling
+target face.
 
 Гейт [[version8-linking-qms-gksl-lcf-migration-gate]] закрыл этот приоритет
 на конечномерном уровне. Trace-preservation исчерпывающе проверено на

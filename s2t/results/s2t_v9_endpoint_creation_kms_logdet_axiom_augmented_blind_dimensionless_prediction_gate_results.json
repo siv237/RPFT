@@ -1,0 +1,62 @@
+{
+  "blindness": {
+    "conditional_on_axiom": true,
+    "independent_of_E_star": true,
+    "independent_of_axiom_stiffness_lambda": true,
+    "independent_of_chi_after_response_normalization": true,
+    "used_to_fit_axiom": false
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version9_endpoint_creation_kms_logdet_axiom_augmented_blind_dimensionless_prediction_gate",
+  "ledgers": {
+    "blind_dimensionless_predictions_satisfied": 5,
+    "blind_dimensionless_predictions_tested": 5,
+    "physical_prediction_without_new_axiom_satisfied": 0,
+    "physical_prediction_without_new_axiom_tested": 1,
+    "tome9_blind_consequence_conditionally_satisfied": 1,
+    "tome9_blind_consequence_conditionally_tested": 1
+  },
+  "next_gate": "version9_endpoint_creation_kms_logdet_axiom_augmented_conditional_program_status_gate",
+  "predecessor": "version9_endpoint_creation_kms_logdet_axiom_augmented_common_parent_closure_gate",
+  "predictions": {
+    "conductance_ratios": {
+      "kappa_a/kappa_t": 1,
+      "kappa_s/kappa_t": 1
+    },
+    "dimensionless_response": "hbar kappa_alpha/(chi^2 Delta_alpha)=1 for alpha=s,a,t",
+    "double_ratios": [
+      1,
+      1
+    ],
+    "gap_ratios": {
+      "Delta_a/Delta_t": 1,
+      "Delta_s/Delta_t": 1
+    },
+    "independent_channel_contrast_rank": 2,
+    "weighted_gap_variance": 0
+  },
+  "proofdsl": {
+    "certificate_sha256": "246835e920f006fd7dc9b3dc7c53a301eccf5fdcd14915b3f97bfc06d6f75ec3",
+    "floating_point_values": 0,
+    "obligation_count": 9,
+    "obligations": [
+      "channel_contrast_rank",
+      "gap_contrasts",
+      "conductance_contrasts",
+      "gap_ratios",
+      "conductance_ratios",
+      "double_ratios",
+      "dimensionless_response",
+      "weighted_variance",
+      "stiffness_blindness"
+    ],
+    "status": "lcf-checked"
+  },
+  "verdict": {
+    "blind_dimensionless_prediction_registered": true,
+    "physical_parent_derived": false,
+    "prediction_is_conditional_on_new_axiom": true,
+    "prediction_is_parameter_free": true
+  }
+}

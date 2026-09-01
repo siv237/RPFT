@@ -1,0 +1,206 @@
+\chapter{Происхождение спектральной плотности резервуара для логарифма определителя KMS}
+\label{ch:v9-kms-reservoir-spectral-density-origin}
+
+\section{Вопрос происхождения}
+
+Keldysh admission показал, что conductance может входить в dissipative
+kernel, но normalized contour не оставляет требуемый vacuum логарифм определителя. Теперь
+проверяется более сильная гипотеза: определяют ли три on-shell conductances
+полный reservoir spectral profile, а вместе с ним off-shell self-energy и
+bath determinant.
+
+Для трёх type-gaps возьмём exact witness
+\begin{equation}
+ \Delta_s=1,
+ \qquad \Delta_a=2,
+ \qquad \Delta_t=3,
+ \qquad m=(1,1,3).
+ \label{eq:v9-kms-reservoir-gaps}
+\end{equation}
+Conductances считывают только on-shell values:
+\begin{equation}
+ \kappa_\alpha=J(\Delta_\alpha),
+ \qquad \alpha\in\{s,a,t\}.
+ \label{eq:v9-kms-reservoir-onshell-rates}
+\end{equation}
+
+\section{Evaluation map и его kernel}
+
+На полиномах степени не выше шести evaluation map имеет matrix
+\begin{equation}
+ E=\begin{pmatrix}
+ 1&1&1&1&1&1&1\\
+ 1&2&4&8&16&32&64\\
+ 1&3&9&27&81&243&729
+ \end{pmatrix}.
+ \label{eq:v9-kms-reservoir-evaluation-map}
+\end{equation}
+Его rank/nullity равны
+\begin{equation}
+ \rank E=3,
+ \qquad \dim\ker E=7-3=4.
+ \label{eq:v9-kms-reservoir-evaluation-rank}
+\end{equation}
+Следовательно, даже в finite polynomial class три rates оставляют четыре
+off-shell направления.
+
+Явный положительный kernel-profile строится из
+\begin{equation}
+ q(\omega)=
+ (\omega-1)^2(\omega-2)^2(\omega-3)^2\geq0.
+ \label{eq:v9-kms-reservoir-kernel-profile}
+\end{equation}
+Он точно невидим на gaps:
+\begin{equation}
+ q(1)=q(2)=q(3)=0.
+ \label{eq:v9-kms-reservoir-kernel-zeros}
+\end{equation}
+
+\section{Два положительных reservoir profiles}
+
+На interval $0\leq\omega\leq4$ положим
+\begin{equation}
+ J_0(\omega)=1,
+ \qquad
+ J_1(\omega)=1+\frac1{16}q(\omega).
+ \label{eq:v9-kms-reservoir-two-profiles}
+\end{equation}
+Оба profile строго положительны:
+\begin{equation}
+ J_0(\omega)=1>0,
+ \qquad J_1(\omega)\geq1>0.
+ \label{eq:v9-kms-reservoir-positivity}
+\end{equation}
+Их on-shell conductance vectors совпадают:
+\begin{equation}
+ \boldsymbol\kappa[J_0]
+ =\boldsymbol\kappa[J_1]
+ =(1,1,1)^T.
+ \label{eq:v9-kms-reservoir-equal-rates}
+\end{equation}
+Weighted type normalization также совпадает:
+\begin{equation}
+ \kappa_s+\kappa_a+3\kappa_t=5.
+ \label{eq:v9-kms-reservoir-equal-normalization}
+\end{equation}
+
+\section{Off-shell moment defect}
+
+Zeroth spectral moments различны:
+\begin{equation}
+ \mu_0[J_0]=\int_0^4J_0(\omega)d\omega=4,
+ \qquad
+ \mu_0[J_1]=\frac{527}{105}.
+ \label{eq:v9-kms-reservoir-zeroth-moments}
+\end{equation}
+Точный defect равен
+\begin{equation}
+ \mu_0[J_1]-\mu_0[J_0]=\frac{107}{105}>0.
+ \label{eq:v9-kms-reservoir-zeroth-defect}
+\end{equation}
+Первые moments также различны:
+\begin{equation}
+ \mu_1[J_0]=8,
+ \qquad
+ \mu_1[J_1]=\frac{1054}{105},
+ \label{eq:v9-kms-reservoir-first-moments}
+\end{equation}
+причём
+\begin{equation}
+ \mu_1[J_1]-\mu_1[J_0]=\frac{214}{105}>0.
+ \label{eq:v9-kms-reservoir-first-defect}
+\end{equation}
+
+Для large complex $z$ reservoir self-energy имеет expansion
+\begin{equation}
+ \Sigma_J(z)=\int_0^4\frac{J(\omega)}{z-\omega}\,d\omega
+ =\frac{\mu_0[J]}{z}+\frac{\mu_1[J]}{z^2}+O(z^{-3}).
+ \label{eq:v9-kms-reservoir-self-energy-expansion}
+\end{equation}
+Поэтому equal on-shell rates не определяют даже первые два off-shell
+коэффициента:
+\begin{equation}
+ \Sigma_{J_1}(z)-\Sigma_{J_0}(z)
+ =\frac{107}{105z}+\frac{214}{105z^2}+O(z^{-3})\neq0.
+ \label{eq:v9-kms-reservoir-self-energy-defect}
+\end{equation}
+Bath логарифм определителя зависит от полного analytic self-energy, поэтому не является
+функцией только трёх значений $\kappa_\alpha$.
+
+\section{Type strengths и normalization}
+
+Если допустить independent type strengths
+\begin{equation}
+ J_\alpha(\omega)=c_\alpha J(\omega),
+ \qquad c_\alpha>0,
+ \label{eq:v9-kms-reservoir-type-strengths}
+\end{equation}
+то одна weighted normalization имеет rank one:
+\begin{equation}
+ A_{\rm norm}=\begin{pmatrix}1&1&3\end{pmatrix},
+ \qquad \rank A_{\rm norm}=1,
+ \qquad \dim\ker A_{\rm norm}=2.
+ \label{eq:v9-kms-reservoir-normalization-rank}
+\end{equation}
+Значит, reservoir ansatz не выбирает ещё и два relative type strengths.
+
+\section{ProofDSL и итог}
+
+LCF certificate проверяет evaluation rank, exact kernel vector, equal
+rates, moments, positive defects и off-shell nonconstancy:
+\begin{equation}
+ N_{\rm ProofDSL\ obligations}=12/12,
+ \qquad N_{\rm registered\ gates}=59,
+ \qquad N_{\rm registered\ obligations}=480.
+ \label{eq:v9-kms-reservoir-proofdsl}
+\end{equation}
+Итоговые ledgers:
+\begin{equation}
+ \begin{aligned}
+ N_{\rm positive\ spectral\ profiles}&=2/2,\\
+ N_{\rm equal\ on\ shell\ rates}&=3/3,\\
+ N_{\rm unique\ off\ shell\ profile}&=0/1,\\
+ N_{\rm rates\ determine\ logdet}&=0/1,\\
+ N_{\rm reservoir\ parent\ origin}&=0/1,\\
+ N_{\rm physical\ four\ slot\ parent}&=0/1.
+ \end{aligned}
+ \label{eq:v9-kms-reservoir-ledger}
+\end{equation}
+
+\begin{theorem}[On-shell reproduction]
+Positive reservoir profiles могут точно воспроизвести все три KMS
+conductances и их weighted normalization.
+\end{theorem}
+
+\begin{nogocriterion}[Off-shell spectral nonuniqueness]
+Три on-shell values имеют четырёхмерное kernel уже на полиномах степени
+шесть. Два strictly positive exact profiles дают одинаковые rates, но
+разные zeroth/first moments и разные self-energy asymptotics. Поэтому
+conductances не определяют спектральная плотность резервуара или bath логарифм определителя.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item polynomial profile dimension: \textbf{$7$};
+\item on-shell map rank/nullity: \textbf{$3/4$};
+\item rate vectors: \textbf{$(1,1,1)$ и $(1,1,1)$};
+\item zeroth moment defect: \textbf{$107/105$};
+\item first moment defect: \textbf{$214/105$};
+\item relative type-strength freedom: \textbf{$2$};
+\item reservoir/логарифм определителя origin: \textbf{$0/1$};
+\item ProofDSL: \textbf{$12/12$, registry $59/480$};
+\item следующий гейт: \textbf{reservoir measure-anomaly parent-origin}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v9_endpoint_creation_kms_logdet_reservoir_spectral_density_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v9-kms-reservoir-davies}
+E.~B.~Davies,
+\emph{Markovian master equations},
+Commun. Math. Phys. \textbf{39} (1974) 91--110.
+\bibitem{v9-kms-reservoir-tedopa}
+A.~N"usseler, I.~Dhand, S.~F.~Huelga, M.~B.~Plenio,
+\emph{Efficient simulation of open quantum systems coupled to a fermionic bath},
+Phys. Rev. B \textbf{101} (2020) 155134, arXiv:1909.09589.
+\end{thebibliography}

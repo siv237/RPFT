@@ -2,7 +2,7 @@
 
 > Status: working
 > Type: source
-> Updated: 2026-08-31
+> Updated: 2026-09-01
 
 ## Summary
 
@@ -31,8 +31,8 @@
 | Финальный corpus | 1 | 19 | [[live-formulas-corpus-01]] |
 
 Первичная таблица выше сохраняет разбиение исходного прохода. Повторный
-полный проход 2026-08-30 по тому же правилу извлечения с последующими
-инкрементами новых гейтов дал **644** формулосодержащих файла и **6797**
+полный проход 2026-08-31 по тому же правилу извлечения с последующими
+инкрементами новых гейтов дал **657** формулосодержащих файлов и **7030**
 блочные формулы. Прежние числа
 `467/5216` считаются устаревшим снимком, а не текущим итогом.
 
@@ -106,10 +106,47 @@
   [[live-formulas-gates-version9-07]] — 18 формул fixed-parent module-origin;
   [[live-formulas-gates-version9-08]] — 17 формул finite-geometry configuration space;
   [[live-formulas-gates-version9-09]] — 17 формул typed creation-frame;
-  [[live-formulas-gates-version9-10]] — 18 формул creation source/rate origin.
+  [[live-formulas-gates-version9-10]] — 18 формул creation source/rate origin;
+  [[live-formulas-gates-version9-11]] — 16 формул bidirectional KMS completion;
+  [[live-formulas-gates-version9-12]] — 16 формул KMS parameter-origin;
+  [[live-formulas-gates-version9-13]] — 15 формул общего KMS source-parent;
+  [[live-formulas-gates-version9-14]] — 18 формул four-slot origin двух
+  source-covectors; [[live-formulas-gates-version9-15]] — 19 формул
+  minimal relative-shape selector; [[live-formulas-gates-version9-16]] —
+  16 формул parent-origin его четырёх sources;
+  [[live-formulas-gates-version9-17]] — 18 формул minimal invariant
+  logdet parent; [[live-formulas-gates-version9-18]] — 18 формул
+  measure-origin logdet parent; [[live-formulas-gates-version9-19]] —
+  20 формул auxiliary fermion module admission;
+  [[live-formulas-gates-version9-20]] — 17 формул statistics parent-origin;
+  [[live-formulas-gates-version9-21]] — 21 формула minimal BRST complex;
+  [[live-formulas-gates-version9-22]] — 18 формул BRST shift-origin;
+  [[live-formulas-gates-version9-23]] — 20 формул Stückelberg parent;
+  [[live-formulas-gates-version9-24]] — 19 формул physical fermion-loop
+  origin-аудита; [[live-formulas-gates-version9-25]] — 20 формул minimal
+  fermion-bath architecture; [[live-formulas-gates-version9-26]] — 22
+  формулы normalized KMS--Keldysh influence-functional admission;
+  [[live-formulas-gates-version9-27]] — 20 формул reservoir spectral-density
+  parent-origin; [[live-formulas-gates-version9-28]] — 14 формул reservoir
+  measure-anomaly parent-origin; [[live-formulas-gates-version9-29]] — 14
+  формул minimal new parent axiom admission; [[live-formulas-gates-version9-30]] —
+  12 формул axiom-augmented common-parent closure.
+  [[live-formulas-gates-version9-31]] — 10 формул axiom-augmented blind
+  dimensionless prediction.
+  [[live-formulas-gates-version9-32]] — 8 формул conditional program status.
+  [[live-formulas-gates-version9-33]] — 7 формул physical-origin reopening
+  criterion.
+  [[live-formulas-gates-version9-34]] — 9 формул common-origin covariance
+  carrier admission.
+  [[live-formulas-gates-version9-35]] — 9 формул Gaussian reference-state
+  parent-origin.
+  [[live-formulas-gates-version9-36]] — 7 формул physical reference-scale
+  parent-origin.
+  [[live-formulas-gates-version9-37]] — 6 формул финального статуса Тома IX
+  и программы Тома X.
 
-Новые страницы индексируют 164 дополнительных пути относительно исходного
-снимка. Текущий сводный счёт `644/6797` получен повторным полным проходом и
+Новые страницы индексируют 174 дополнительных пути относительно исходного
+снимка. Текущий сводный счёт `671/7207` получен повторным полным проходом и
 последующими точными инкрементами; он имеет приоритет над суммой
 исторических страничных снимков, часть которых отражает более ранние
 состояния файлов.
