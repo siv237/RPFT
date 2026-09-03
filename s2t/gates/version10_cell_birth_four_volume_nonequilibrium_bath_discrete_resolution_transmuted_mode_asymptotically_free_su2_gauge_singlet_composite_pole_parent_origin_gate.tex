@@ -1,0 +1,61 @@
+\chapter{Родитель композитного
+\texorpdfstring{$SU(2)$}{SU(2)}-синглетного полюса}
+\label{ch:v10-discrete-resolution-su2-composite-singlet-pole}
+
+Два активных фундаментальных дублета дают разложение
+\begin{equation}
+ \mathbf2\otimes\mathbf2=\mathbf1\oplus\mathbf3.
+\end{equation}
+Нормированный синглет
+\begin{equation}
+ |S\rangle=\frac{|\uparrow\downarrow\rangle-
+ |\downarrow\uparrow\rangle}{\sqrt2}
+\end{equation}
+задаёт проектор $P_S=|S\rangle\langle S|$ ранга один. Он совпадает с
+антисимметризатором $(I-\mathsf S)/2$, аннулируется полными генераторами
+$J_a=T_a\otimes I+I\otimes T_a$ и поэтому является точным активным
+gauge-singlet проектором.
+
+Полный Casimir удовлетворяет
+\begin{equation}
+ \sum_aJ_a^2=2(I-P_S).
+\end{equation}
+Следовательно, условный родитель связывания
+\begin{equation}
+ H_{\rm bind}=I-P_S
+\end{equation}
+имеет спектр $0^{(1)},1^{(3)}$ и единственный синглетный ground state.
+Тем самым ранговый барьер одночастичного K43-сектора снят на композитном
+двухдублетном носителе.
+
+Но представление не выбирает физический bound state. Шестнадцать копий
+дублета дают $16^2=256$ gauge-singlet flavor-пар; конкретная flavor-линия
+не выбрана. Унаследованный двухчастичный родитель равен нулю на gauge-паре
+и не создаёт singlet--triplet splitting. Запись условного пропагатора
+\begin{equation}
+ \Gamma_S^{(2)}(q)=q-e^{-64\pi^2/3}
+\end{equation}
+даёт простой полюс с единичным вычетом, но его масса пока внесена как цель.
+
+\begin{theorem}[Активный композитный синглет существует]
+Антисимметричная компонента двух AF-дублетов является каноническим
+$SU(2)$-инвариантным проектором ранга один. Условный положительный родитель
+может выбрать её единственным ground state.
+\end{theorem}
+
+\begin{nogocriterion}[Кинематика синглета не является связыванием]
+Разложение $2\otimes2=1\oplus3$ не выводит привлекательное ядро, flavor-
+линию или массовый коэффициент. Без ненулевого singlet--triplet splitting
+и полюса четырёхточечной функции композитная архитектура остаётся условной.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item условная архитектура: \textbf{$12/12$};
+\item точный gauge-singlet проектор: \textbf{$6/6$};
+\item унаследованное связывание: \textbf{$0/2$};
+\item физическое происхождение: \textbf{$0/3$};
+\item следующий гейт: \textbf{аудит связывающих ядер}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_composite_pole_parent_origin_gate_results.json}.

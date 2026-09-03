@@ -1,0 +1,94 @@
+{
+  "causal_classification": {
+    "front_norm": "u_b^2",
+    "incoming_norm": 0,
+    "local_bath_speed_must_not_exceed_c": true,
+    "metric": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "outgoing_norm": 0,
+    "recession_speed_may_exceed_c": true
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_front_speed_causal_recession_separation_gate",
+  "local_subluminality": {
+    "S_vac_status": "conditional_project_input",
+    "condition": "k_X<=24/121",
+    "conditional_S_vac_candidate_passes": true,
+    "critical_weight": "(exp(24/121)-1)/(2-exp(24/121))",
+    "minimum_action": "log((2-exp(24/121))/(exp(24/121)-1))"
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_parent_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_cell_birth_front_speed_morphism_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "6efe7fc7d301b364db3b2075863b2e70640294dd48cf46e1f91c753c8b552ff6",
+    "floating_point_values": 0,
+    "obligation_count": 33,
+    "obligations": [
+      "causal_recession_00",
+      "causal_recession_01",
+      "causal_recession_02",
+      "causal_recession_03",
+      "causal_recession_04",
+      "causal_recession_05",
+      "causal_recession_06",
+      "causal_recession_07",
+      "causal_recession_08",
+      "causal_recession_09",
+      "causal_recession_10",
+      "causal_recession_11",
+      "causal_recession_12",
+      "causal_recession_13",
+      "causal_recession_14",
+      "causal_recession_15",
+      "causal_recession_16",
+      "causal_recession_17",
+      "causal_recession_18",
+      "causal_recession_19",
+      "causal_recession_20",
+      "causal_recession_21",
+      "causal_recession_22",
+      "causal_recession_23",
+      "causal_recession_24",
+      "causal_recession_25",
+      "causal_recession_26",
+      "causal_recession_27",
+      "causal_recession_28",
+      "causal_recession_29",
+      "causal_recession_30",
+      "causal_recession_31",
+      "causal_recession_32"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_scale": "0/1",
+    "architecture": "10/10",
+    "conditional_origin": "8/8",
+    "conditional_vacuum_subluminality": "1/1",
+    "kinematic_separation": "1/1",
+    "local_causal_cone": "1/1",
+    "microscopic_propagation_kernel_origin": "0/1"
+  },
+  "velocity_decomposition": {
+    "bath_local": "u_b=121*k_X/24",
+    "front_local": 0,
+    "incoming_characteristic": "u_recession-u_b",
+    "outgoing_characteristic": "u_recession+u_b",
+    "recession": "u_recession=H_B*R/c=rho*k_X/3",
+    "total": "u_total=u_recession+u_local"
+  },
+  "verdict": {
+    "front_is_center_of_local_bath_cone": true,
+    "microscopic_bath_kernel_is_derived": false,
+    "superluminal_recession_is_local_causality_violation": false
+  }
+}

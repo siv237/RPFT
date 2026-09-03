@@ -1,0 +1,182 @@
+{
+  "candidate_matrix": [
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+    ]
+  ],
+  "candidate_matrix_rank": 5,
+  "candidates": [
+    "growth_curvature",
+    "inverse_cell_area",
+    "spectral_cutoff_squared",
+    "clock_wavenumber_squared",
+    "KMS_thermal_wavenumber_squared",
+    "Dirac_gap_squared",
+    "topological_density_square_root",
+    "vacuum_Hessian_gap",
+    "dimensional_transmutation_squared",
+    "observed_Newton_inverse_area"
+  ],
+  "criteria": [
+    "inverse_area_dimension",
+    "internally_available",
+    "target_independent",
+    "selected_by_common_parent",
+    "typed_into_A_B",
+    "breaks_scale_orbit"
+  ],
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_scale_seed_candidate_audit_gate",
+  "maximum_score": "4/6",
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_dimensional_transmutation_beta_parent_origin_gate",
+  "passing_candidates": 0,
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_constant_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "00ed7bb6c79e540bbdcffddce554ac576f693da39b040bb5990d0ea600a9a312",
+    "floating_point_values": 0,
+    "obligation_count": 20,
+    "obligations": [
+      "newton_seed_candidate_matrix",
+      "newton_seed_zero_pass_vector",
+      "newton_seed_maximum_score_four",
+      "newton_seed_candidate_rank_five",
+      "newton_seed_dimension_embedding_equivalence",
+      "newton_seed_independent_parent_anchor_absent",
+      "newton_seed_noncircular_orbit_breaker_absent",
+      "newton_seed_relative_scale_map",
+      "newton_seed_relative_rank_four",
+      "newton_seed_relative_nullity_one",
+      "newton_seed_scale_kernel",
+      "newton_seed_cell_invariant",
+      "newton_seed_clock_invariant",
+      "newton_seed_conductance_invariant",
+      "newton_seed_curvature_invariant",
+      "newton_seed_external_anchor_rank_five",
+      "newton_seed_observed_G_circularity",
+      "newton_seed_candidate_coverage_full",
+      "newton_seed_origin_ledger_three",
+      "newton_seed_origin_score_three"
+    ],
+    "status": "lcf-checked"
+  },
+  "relative_scale_system": {
+    "external_seed_row_rank": 5,
+    "invariants": [
+      "m*q",
+      "m/E_C^2",
+      "m/kappa^2",
+      "m/Lambda"
+    ],
+    "kernel": [
+      -2,
+      2,
+      -1,
+      -1,
+      -2
+    ],
+    "nullity": 1,
+    "rank": 4,
+    "variables": [
+      "m",
+      "q",
+      "E_C",
+      "kappa",
+      "Lambda"
+    ]
+  },
+  "route_status": {
+    "dimensional_transmutation": "breaks orbit conditionally but beta function and boundary datum are not parent-derived",
+    "observed_Newton_constant": "forbidden target-loaded inversion"
+  },
+  "status": {
+    "absolute_Newton_constant": "0/1",
+    "candidate_coverage": "10/10",
+    "candidate_origin": "0/10",
+    "origin_ledger": "3/6",
+    "scale_seed_origin": "0/1"
+  },
+  "verdict": {
+    "current_corpus_selects_scale_seed": false,
+    "dimensional_transmutation_requires_dedicated_parent_test": true,
+    "observed_G_is_admissible_seed": false,
+    "relative_calibrations_remove_absolute_orbit": false
+  }
+}

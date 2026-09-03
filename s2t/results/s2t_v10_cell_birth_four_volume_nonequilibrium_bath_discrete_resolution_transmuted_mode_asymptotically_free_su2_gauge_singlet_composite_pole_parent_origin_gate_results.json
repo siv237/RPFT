@@ -1,0 +1,62 @@
+{
+  "conditional_binding_parent": {
+    "operator": "I4-P_singlet",
+    "spectrum": {
+      "0": 1,
+      "1": 3
+    },
+    "unique_singlet_ground_state": true
+  },
+  "conditional_pole": {
+    "mass_squared_cell": "exp(-64*pi^2/3)",
+    "residue": 1,
+    "simple": true
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_composite_pole_parent_origin_gate",
+  "gauge_invariance": {
+    "projector_commutator": "0_12x4",
+    "singlet_Casimir": 0,
+    "total_generator_action": "0_12x1",
+    "triplet_Casimir": 2
+  },
+  "gauge_pair": {
+    "antisymmetrizer_equals_singlet_projector": true,
+    "decomposition": "2_tensor_2=1_direct_sum_3",
+    "singlet_projector_rank": 1,
+    "triplet_projector_rank": 3
+  },
+  "inherited_binding": {
+    "binding_kernel_present": false,
+    "singlet_triplet_splitting": 0,
+    "two_body_parent": "0_4"
+  },
+  "multiplicity": {
+    "doublet_copies": 16,
+    "gauge_singlet_pair_dimension": 256,
+    "selected_flavor_line": false
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_kernel_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_eight_dirac_k43_typed_embedding_gate",
+  "proofdsl": {
+    "certificate_sha256": "0b867dbef5c0161f3b7aea7934c4e71e3545565bed8abfc06bf8a93534245b1f",
+    "floating_point_values": 0,
+    "obligation_count": 25,
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_architecture": "12/12",
+    "gauge_singlet": "6/6",
+    "inherited_binding": "0/2",
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "active_rank_one_gauge_singlet_exists_as_composite": true,
+    "binding_interaction_is_inherited": false,
+    "flavor_pair_is_selected": false,
+    "physical_composite_pole_is_derived": false,
+    "singlet_is_canonically_selected_by_gauge_antisymmetry": true,
+    "transmuted_mass_is_dynamically_generated": false
+  }
+}

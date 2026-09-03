@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+import hashlib,json
+from pathlib import Path
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_democratic_flavor_selector_parent_origin import SPEC,build_certificate
+from s2t.proofdsl.gates import verify_gate
+ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/"s2t/results/s2t_v10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_democratic_flavor_selector_parent_origin_gate_results.json"
+def main():
+ v=verify_gate(SPEC);c=build_certificate();r={"date":"2026-09-02","gate":SPEC.identifier,"predecessor":"version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_pair_selector_candidate_audit_gate","conditional_parent":{"graph":"K16","adjacency_spectrum":{"15":1,"-1":15},"laplacian_spectrum":{"0":1,"16":15},"normalized_parent_spectrum":{"0":1,"1":15},"pair_parent_multiplicities":{"0":1,"1":30,"2":225}},"inherited":{"flavor_operator_rank":16,"flavor_graph":"0_16","pair_degeneracy":256,"pole_map":"0_1x1"},"status":{"conditional_architecture":"11/11","unique_pair_line":"1/1","physical_origin":"0/2"},"proofdsl":{"status":"lcf-checked","obligation_count":len(v.obligations),"certificate_sha256":v.sha256,"floating_point_values":0},"verdict":{"strict_democratic_parent_exists":True,"unique_pair_line_is_selected_conditionally":True,"complete_flavor_graph_is_inherited":False,"gap_to_pole_map_is_derived":False},"next_gate":"version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_graph_candidate_audit_gate","floating_point_values":0};t=json.dumps(r,ensure_ascii=False,indent=2,sort_keys=True)+"\n";OUT.write_text(t);print(OUT);print(hashlib.sha256(t.encode()).hexdigest());print(v.sha256)
+if __name__=="__main__":main()

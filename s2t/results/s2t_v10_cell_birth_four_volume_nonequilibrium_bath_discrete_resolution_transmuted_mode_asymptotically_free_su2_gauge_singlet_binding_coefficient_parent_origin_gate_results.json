@@ -1,0 +1,75 @@
+{
+  "conditional_parent": {
+    "determinant": "1",
+    "functional": "((kappa-g2*chi)^2+(chi-chi0)^2)/2",
+    "hessian": [
+      [
+        "1",
+        "-3/8"
+      ],
+      [
+        "-3/8",
+        "73/64"
+      ]
+    ],
+    "leading_minors": [
+      "1",
+      "1"
+    ],
+    "rank": 2,
+    "stationary_point": [
+      "3*chi0/8",
+      "chi0"
+    ]
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_coefficient_parent_origin_gate",
+  "inherited_data": {
+    "binding_coefficient": 0,
+    "coupling_squared": "3/8",
+    "exchange_operator": "sum_a T_a tensor T_a=I4/4-P_singlet",
+    "pole_map": "0_1x1",
+    "susceptibility_mixed_block": 0
+  },
+  "inherited_parent": {
+    "flat_direction": [
+      0,
+      1
+    ],
+    "hessian": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "nullity": 1,
+    "rank": 1
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_mediator_susceptibility_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_kernel_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "a39e8596c25b996cc7b59a80f510bfd4427d74cb94190532f3446d82732f7338",
+    "floating_point_values": 0,
+    "obligation_count": 25,
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_architecture": "10/10",
+    "inherited_dynamic_mixed_block": "0/1",
+    "inherited_kinematic_ingredients": "2/2",
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "binding_coefficient_is_dynamically_derived": false,
+    "composite_pole_mass_map_is_derived": false,
+    "coupling_value_is_inherited": true,
+    "exchange_operator_is_inherited": true,
+    "mediator_susceptibility_is_inherited": false,
+    "strict_conditional_parent_exists": true
+  }
+}

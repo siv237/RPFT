@@ -1,0 +1,72 @@
+{
+  "broken_phase_witness": {
+    "broken_hessian": "37/24",
+    "influx": "9/10",
+    "positive_saturation": "q^4/4",
+    "stationary_points": [
+      "-1/sqrt(2)",
+      "1/sqrt(2)"
+    ],
+    "symmetric_hessian": "-18/19"
+  },
+  "closed_sector": {
+    "combined_partition": "1",
+    "effective_action": "0",
+    "ghost_operator": "1+q^2",
+    "physical_operator": "1+q^2"
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_geometric_scale_beta_trace_anomaly_origin_gate",
+  "geometric_beta_boundary": {
+    "extensive_beta": "dJ_ext/dzeta=3*J_ext",
+    "extensive_influx": "J_ext=J0*exp(3*zeta)",
+    "intensive_beta": "dj_int/dzeta=0",
+    "intensive_influx": "j_int=exp(-3*zeta)*J_ext=J0",
+    "quantum_trace_anomaly_derived": false
+  },
+  "next_gate": "version10_inflow_spectral_self_energy_running_parent_origin_gate",
+  "physical_influx": {
+    "effective_action": "log(1+q^2+J)-log(1+q^2)-log(1+J)",
+    "fourth_variation": "12*J*(J+2)/(J+1)^2",
+    "normalized_partition": "(1+J)*(1+q^2)/(1+q^2+J)",
+    "origin_curvature": "-2*J/(1+J)",
+    "shifted_operator": "1+q^2+J"
+  },
+  "predecessor": "version10_quantum_rg_common_carrier_admission_gate",
+  "proofdsl": {
+    "certificate_sha256": "c0edb9efabd94f7015419a48ec08b79b9c67387184c1e7f9936d7dbc0c9f0a10",
+    "floating_point_values": 0,
+    "obligation_count": 16,
+    "obligations": [
+      "closed_determinant_cancellation",
+      "normalized_unpaired_inflow_determinant",
+      "inflow_effective_action_nonflat",
+      "symmetric_point_negative_curvature",
+      "positive_fourth_variation_formula",
+      "positive_fourth_variation",
+      "exact_witness_symmetric_instability",
+      "positive_broken_stationary_branch",
+      "negative_broken_stationary_branch",
+      "positive_broken_branch_hessian",
+      "extensive_geometric_beta",
+      "intensive_influx_normalization",
+      "intensive_quantum_beta_zero",
+      "inflow_architecture_full",
+      "physical_anomaly_origin_open",
+      "architecture_origin_gap"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "inflow_symmetry_breaking_architecture": "6/6",
+    "intensive_quantum_beta": "0/1",
+    "physical_reservoir_and_anomaly_origin": "0/2"
+  },
+  "verdict": {
+    "cell_multiplication_alone_generates_quantum_beta": false,
+    "ghost_cancellation_preserved": true,
+    "physical_influx_breaks_flatness": true,
+    "stable_broken_witness_exists": true
+  }
+}

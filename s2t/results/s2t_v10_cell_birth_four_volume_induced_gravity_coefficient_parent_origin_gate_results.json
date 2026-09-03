@@ -1,0 +1,73 @@
+{
+  "conditional_induced_gravity": {
+    "A": "alpha*m^2",
+    "B": "beta*m",
+    "seed": "m=x_*^2=g*sigma/lambda",
+    "selected_invariant": "q*m=beta/(2*alpha)"
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_gravity_coefficient_parent_origin_gate",
+  "geometric_order_parent": {
+    "collapsed_hessian": "-g*sigma<0",
+    "functional": "lambda*(x^2-g*sigma/lambda)^2/4",
+    "maintained_amplitude": "x_*^2=g*sigma/lambda",
+    "maintained_hessian": "2*g*sigma>0",
+    "zero_flow_parent": "lambda*x^4/4"
+  },
+  "next_gate": "version10_cell_birth_four_volume_throughflow_affinity_impedance_origin_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_curvature_coefficient_origin_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "eb82dffecb3a1c3ac28dc9da2b1f0969f190423c426fa631b77e348d42e10fe1",
+    "floating_point_values": 0,
+    "obligation_count": 20,
+    "obligations": [
+      "balanced_throughflow_zero_storage_change",
+      "balanced_throughflow_nonzero_activity",
+      "positive_entropy_production",
+      "throughflow_parent_exact_square",
+      "maintained_geometry_stationary",
+      "maintained_geometry_scale",
+      "maintained_geometry_positive_hessian",
+      "collapsed_branch_negative_hessian",
+      "zero_flow_quartic_parent",
+      "zero_flow_collapsed_stationary",
+      "throughflow_induced_volume_coefficient",
+      "throughflow_induced_einstein_coefficient",
+      "throughflow_selected_dimensionless_curvature",
+      "throughflow_constraint_rank_two",
+      "throughflow_constraint_nullity_one",
+      "throughflow_scale_kernel",
+      "throughflow_architecture_full",
+      "throughflow_conditional_origin_full",
+      "throughflow_physical_origin_zero",
+      "throughflow_physical_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_obstruction": {
+    "absolute_affinity_current_scale_derived": false,
+    "constraint_nullity": 1,
+    "constraint_rank": 2,
+    "kernel": "(1,-1,-1) in (q,m,sigma)"
+  },
+  "stationary_throughflow": {
+    "activity": "2*J",
+    "affinity": "F>0",
+    "entropy_production": "sigma=F*J>0",
+    "incoming": "J",
+    "net_cell_change": 0,
+    "outgoing": "J"
+  },
+  "status": {
+    "absolute_gravitational_scale": "0/1",
+    "architecture": "9/9",
+    "conditional_origin": "4/4",
+    "physical_affinity_origin": "0/1"
+  },
+  "verdict": {
+    "balanced_throughflow_can_maintain_nonzero_geometry": true,
+    "throughflow_alone_derives_absolute_scale": false,
+    "turning_off_flow_removes_broken_branch": true
+  }
+}

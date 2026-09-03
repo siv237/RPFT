@@ -1,0 +1,75 @@
+\chapter{Происхождение Hubbard--Stratonovich odd auxiliary parent}
+\label{ch:v10-h15-r2-hubbard-stratonovich-parent}
+
+Предыдущий аудит выделил минимальное восьмимерное поле $A_\Sigma$ как
+единственный положительный алгебраически устранимый кандидат. Проверим,
+является ли Hubbard--Stratonovich преобразование происхождением gap или
+лишь точной перезаписью уже известного оператора.
+
+Пусть $Q=6Y$ на восьми секторах $\Sigma$. Формальная квадратичная форма
+равна
+\begin{equation}
+ V_{\rm HS}=\frac12\Sigma^T49I\Sigma+A_\Sigma^TQ\Sigma
+ +\frac12A_\Sigma^TA_\Sigma.
+\end{equation}
+Завершение квадрата даёт точное тождество
+\begin{equation}
+ \boxed{V_{\rm HS}=\frac12\|A_\Sigma+Q\Sigma\|^2
+ +\frac12\Sigma^T(49I-Q^2)\Sigma.}
+\end{equation}
+Stationary equation фиксирует $A_\Sigma^\star=-Q\Sigma$. Triangular shift
+имеет determinant $1$, auxiliary metric равна $I_8$ и также имеет
+determinant $1$. Поэтому нормированное Gaussian integration не создаёт
+field-dependent determinant и точно возвращает Schur complement $G_Y$.
+
+Но это тождество начинается с target-loaded mixed bilinear
+$A_\Sigma^TQ\Sigma$. Унаследованный source-free parent имеет Hessian
+\begin{equation}
+ H_0=\begin{pmatrix}49I&0\\0&I\end{pmatrix},
+ \qquad \rank H_0=16,
+\end{equation}
+и после устранения $A_\Sigma$ оставляет только $49I$. Требуемый parent
+\begin{equation}
+ H_{\rm HS}=\begin{pmatrix}49I&Q\\Q&I\end{pmatrix}
+\end{equation}
+имеет rank $14$ и nullity $2$. Следовательно, $H_0$ и $H_{\rm HS}$ не
+могут быть связаны обратимой заменой полей: congruence сохраняет rank.
+
+Разность двух форм есть новый оператор
+\begin{equation}
+ \Delta H=\begin{pmatrix}0&Q\\Q&0\end{pmatrix}.
+\end{equation}
+Он имеет rank $16$ и inertia $(8_-,0_0,8_+)$. То есть HS-поле корректно
+линеаризует уже присутствующий отрицательный $Q^2$-вклад, но не выводит
+отсутствующий mixed source из universal mass и Gaussian measure.
+
+\begin{theorem}[HS linearization без parent-origin]
+Hubbard--Stratonovich преобразование с источником $Q\Sigma$ точно
+эквивалентно effective gap $49I-Q^2$ и сохраняет нормированную меру.
+Однако source-free inherited parent имеет другой rank, а добавляемый
+cross-оператор имеет полный rank $16$. Поэтому преобразование является
+переписыванием target-term, а не его физическим происхождением.
+\end{theorem}
+
+\begin{nogocriterion}[Gaussian identity не создаёт mixed source]
+Нельзя считать $-Q^2$ выведенным из Hubbard--Stratonovich процедуры, если
+bilinear $A_\Sigma^TQ\Sigma$ введён специально для получения этого члена.
+Сначала должен быть независимо получен типизированный cross-оператор $Q$ в
+исходном parent action.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item stationary auxiliary map rank: \textbf{$8$};
+\item triangular shift determinant: \textbf{$1$};
+\item Gaussian metric determinant: \textbf{$1$};
+\item HS parent rank/nullity: \textbf{$14/2$};
+\item inherited parent rank/nullity: \textbf{$16/0$};
+\item inherited/required cross rank: \textbf{$0/8$};
+\item new operator increment rank: \textbf{$16$};
+\item increment inertia: \textbf{$(8_-,0_0,8_+)$};
+\item formal/physical origin: \textbf{$4/4$ и $3/4$};
+\item следующий гейт: \textbf{аудит кандидатов odd auxiliary cross-bilinear}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hubbard_stratonovich_odd_auxiliary_parent_origin_gate_results.json}.

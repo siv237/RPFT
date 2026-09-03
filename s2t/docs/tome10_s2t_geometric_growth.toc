@@ -1,0 +1,244 @@
+\babel@toc {russian}{}\relax 
+\contentsline {part}{I\hspace {1em}Геометрическая история вместо статического масштаба}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Введение: масштаб как история роста геометрии}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Рабочая гипотеза}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Контракт Тома X}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Ритм интуитивного насыщения}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Допуск геометрически растущего общего носителя}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Переход от статического масштаба к истории геометрии}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Общий носитель}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Геометрический ход и космологическая кривизна}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Геометрическая координата ренормгруппового хода}{5}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Две неэквивалентные ветви}{5}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Физический приток и граница следовой аномалии}{8}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Проверяемая гипотеза}{8}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Закрытое сокращение}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Нескомпенсированная физическая самоэнергия}{8}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Точный свидетель нарушенной фазы}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Экстенсивный рост и интенсивная граница}{9}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Ориентированная спектральная самоэнергия притока}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Проверяемая гипотеза}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Взаимно обратный спектральный резервуар}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Самоэнергия как ориентированный спектральный отклик}{13}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Ненулевой свидетель следового отклика}{13}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Типизированное вложение спектральной самоэнергии в 43-мерную ячейку}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Проверяемая гипотеза}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Каноническая двумерная подячейка}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Совместимость со звёздным взаимодействием}{17}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Вложение взаимно обратного спектра}{17}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Граница родительского происхождения}{17}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Геометрический родитель взаимно обратного спектрального хода}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Проверяемая гипотеза}{19}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Канонический генератор роста}{19}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Положительный родитель траектории}{19}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Локальная строгая проверка родителя}{20}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Возвращение самоэнергии}{20}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Нормированная мера рождения ячеек и граница темпа роста}{22}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Проверяемая гипотеза}{22}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Минимальная нормированная мера одного шага}{22}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Несовпадение с условной вакуумной амплитудой}{23}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Непрерывные ожидания и свободная скорость часов}{23}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Общий родитель рождения ячеек, часов и энергии}{26}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Проверяемая гипотеза}{26}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Минимальный резонансный носитель}{26}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Общий родитель относительной связи}{27}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Полученный темп и оставшаяся орбита}{27}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Аудит геометрических кандидатов на абсолютную энергию часов}{30}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Контракт допустимого якоря}{30}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Реестр кандидатов}{30}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Круговость космологического кандидата}{31}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Линейный масштабный запрет}{31}{section.9.4}%
+\contentsline {chapter}{\numberline {10}Родитель собственного четырёхмерного объёма ячейки}{33}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Геометрический носитель}{33}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Безразмерный объёмно-энергетический инвариант}{33}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Общий родитель и его ядро}{34}{section.10.3}%
+\contentsline {chapter}{\numberline {11}Спектральная счётная мера четырёхмерного объёма ячейки}{35}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Точная конечная спектральная модель}{35}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Что выбирает счётная мера}{35}{section.11.2}%
+\contentsline {chapter}{\numberline {12}Аудит топологических квантов четырёхмерного объёма}{37}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Проверяемые кандидаты}{37}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Кратность не равна элементарному объёму}{37}{section.12.2}%
+\contentsline {chapter}{\numberline {13}Родитель объёмной плотности кривизны}{39}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Масштабирование кривизн}{39}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Условный масштаб из конкурирующих членов}{39}{section.13.2}%
+\contentsline {chapter}{\numberline {14}Аудит происхождения коэффициентов кривизны}{41}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Восемь путей происхождения}{41}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Общий запрет масштабно-ковариантной пары}{41}{section.14.2}%
+\contentsline {chapter}{\numberline {15}Сквозной ток и условно индуцированные коэффициенты гравитации}{43}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Хопфовский образ как стационарный канал}{43}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Поддерживаемая и схлопнутая геометрия}{43}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Условно индуцированные коэффициенты}{44}{section.15.3}%
+\contentsline {chapter}{\numberline {16}Аудит силы и сопротивления сквозного канала}{45}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Минимальный ориентированный цикл}{45}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Сила цикла и производство энтропии}{45}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Аудит кандидатов}{46}{section.16.3}%
+\contentsline {chapter}{\numberline {17}Типизированное вложение хопфовского цикла в 43-мерную ячейку}{47}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Третья вершина цикла}{47}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Симметричная транспортная линия}{47}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Точная дихотомия}{48}{section.17.3}%
+\contentsline {chapter}{\numberline {18}Хопфовский цикл в произведении 43-мерной ячейки и КМС-носителя}{49}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Канонические вершины произведения}{49}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Канонический марковский цикл}{49}{section.18.2}%
+\contentsline {section}{\numberline {18.3}Что исправлено и что осталось}{50}{section.18.3}%
+\contentsline {chapter}{\numberline {19}Общий родитель проводимости хопфовского цикла}{51}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Связывание двух динамических скоростей}{51}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Слепое совпадение тока и геометрического хода}{51}{section.19.2}%
+\contentsline {section}{\numberline {19.3}Оставшаяся абсолютная орбита}{52}{section.19.3}%
+\contentsline {chapter}{\numberline {20}Аудит космологической постоянной как якоря проводимости}{53}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Точная космологическая формула ветви}{53}{section.20.1}%
+\contentsline {section}{\numberline {20.2}Аудит семи космологических кандидатов}{53}{section.20.2}%
+\contentsline {section}{\numberline {20.3}Масштабный ранг}{54}{section.20.3}%
+\contentsline {chapter}{\numberline {21}Родитель космологической постоянной из сквозного потока}{56}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Диссипативный источник кривизны}{56}{section.21.1}%
+\contentsline {section}{\numberline {21.2}Условный положительный родитель}{56}{section.21.2}%
+\contentsline {section}{\numberline {21.3}Граница происхождения}{57}{section.21.3}%
+\contentsline {chapter}{\numberline {22}Происхождение космологической связи из эйнштейновского отклика}{58}{chapter.22}%
+\contentsline {section}{\numberline {22.1}От энтропийного потока к тензору энергии}{58}{section.22.1}%
+\contentsline {section}{\numberline {22.2}Условная эйнштейновская калибровка}{58}{section.22.2}%
+\contentsline {section}{\numberline {22.3}Пакет недостающих якорей}{59}{section.22.3}%
+\contentsline {chapter}{\numberline {23}Аудит пакета якорей эйнштейновского отклика}{60}{chapter.23}%
+\contentsline {section}{\numberline {23.1}Четыре независимых дефицита}{60}{section.23.1}%
+\contentsline {section}{\numberline {23.2}Результаты четырёх аудитов}{60}{section.23.2}%
+\contentsline {section}{\numberline {23.3}Пакетный запрет}{61}{section.23.3}%
+\contentsline {chapter}{\numberline {24}Родитель индуцированной ньютоновской постоянной}{62}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Эйнштейновский коэффициент и ньютоновская площадь}{62}{section.24.1}%
+\contentsline {section}{\numberline {24.2}Слепое отношение ньютоновской и клеточной площадей}{62}{section.24.2}%
+\contentsline {section}{\numberline {24.3}Оставшаяся масштабная мода}{63}{section.24.3}%
+\contentsline {chapter}{\numberline {25}Аудит масштабного семени ньютоновской постоянной}{64}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Контракт физического семени}{64}{section.25.1}%
+\contentsline {section}{\numberline {25.2}Общая масштабная нулевая мода}{64}{section.25.2}%
+\contentsline {section}{\numberline {25.3}Два формальных разрушителя орбиты}{65}{section.25.3}%
+\contentsline {chapter}{\numberline {26}Размерностная трансмутация и планковская самосогласованность}{66}{chapter.26}%
+\contentsline {section}{\numberline {26.1}Две различные бета-величины}{66}{section.26.1}%
+\contentsline {section}{\numberline {26.2}Планковская самосогласованность}{66}{section.26.2}%
+\contentsline {section}{\numberline {26.3}Условный общий родитель}{67}{section.26.3}%
+\contentsline {chapter}{\numberline {27}Аномальное дыхание вакуума как сквозной поток}{68}{chapter.27}%
+\contentsline {section}{\numberline {27.1}От метафоры шланга к открытому балансу}{68}{section.27.1}%
+\contentsline {section}{\numberline {27.2}Ведущая аномалия и точное сокращение масштаба}{68}{section.27.2}%
+\contentsline {section}{\numberline {27.3}Логарифмическое дыхание}{69}{section.27.3}%
+\contentsline {section}{\numberline {27.4}Условный общий родитель и масштабная орбита}{69}{section.27.4}%
+\contentsline {chapter}{\numberline {28}Аудит спектрального происхождения коэффициентов дыхания}{71}{chapter.28}%
+\contentsline {section}{\numberline {28.1}Трёхкомпонентный физический пакет}{71}{section.28.1}%
+\contentsline {section}{\numberline {28.2}Кандидаты для коэффициента выхода}{71}{section.28.2}%
+\contentsline {section}{\numberline {28.3}Кандидаты для логарифмического коэффициента}{71}{section.28.3}%
+\contentsline {section}{\numberline {28.4}Кандидаты для опорного масштаба}{72}{section.28.4}%
+\contentsline {section}{\numberline {28.5}Матрица аудита и общий запрет}{72}{section.28.5}%
+\contentsline {chapter}{\numberline {29}Морфизм $K_{43}$-отклика в плотность выхода}{74}{chapter.29}%
+\contentsline {section}{\numberline {29.1}Точный знак ориентированного отклика}{74}{section.29.1}%
+\contentsline {section}{\numberline {29.2}Перевод из потери на ячейку в плотность}{74}{section.29.2}%
+\contentsline {section}{\numberline {29.3}Баланс со сквозным притоком}{75}{section.29.3}%
+\contentsline {section}{\numberline {29.4}Условный родитель и физическая граница}{75}{section.29.4}%
+\contentsline {chapter}{\numberline {30}Континуальная дисперсия ванны в клеточной геометрии}{76}{chapter.30}%
+\contentsline {chapter}{\numberline {31}Общий родитель скорости ванны и вакуумного роста}{78}{chapter.31}%
+\contentsline {chapter}{\numberline {32}Причинная скорость и рецессионный фронт}{80}{chapter.32}%
+\contentsline {chapter}{\numberline {33}Типизированное вложение причинного ядра в клеточный комплекс}{82}{chapter.33}%
+\contentsline {chapter}{\numberline {34}Локальное причинное ядро распространения ванны}{84}{chapter.34}%
+\contentsline {chapter}{\numberline {35}Универсальное покрытие как граф рождения}{86}{chapter.35}%
+\contentsline {chapter}{\numberline {36}Общий родитель длины ребра клеточного комплекса}{88}{chapter.36}%
+\contentsline {chapter}{\numberline {37}Скорость ванны и фронт рождения клеток}{90}{chapter.37}%
+\contentsline {chapter}{\numberline {38}Микроскопическое обрезание неравновесного носителя}{92}{chapter.38}%
+\contentsline {chapter}{\numberline {39}Время корреляции неравновесной ванны}{94}{chapter.39}%
+\contentsline {chapter}{\numberline {40}Аудит спектральной плотности и масштаба памяти}{96}{chapter.40}%
+\contentsline {chapter}{\numberline {41}Аудит нарушителей энтропийной масштабной орбиты}{98}{chapter.41}%
+\contentsline {chapter}{\numberline {42}От производства энтропии к следовой плотности}{99}{chapter.42}%
+\contentsline {chapter}{\numberline {43}Двухрезервуарный обратный отклик третьей поправки}{101}{chapter.43}%
+\contentsline {chapter}{\numberline {44}KMS-совместимый канал выхода и граница детального баланса}{103}{chapter.44}%
+\contentsline {section}{\numberline {44.1}Канонический двухуровневый канал}{103}{section.44.1}%
+\contentsline {section}{\numberline {44.2}Конечная KMS-температура}{103}{section.44.2}%
+\contentsline {section}{\numberline {44.3}Нулевая температура}{104}{section.44.3}%
+\contentsline {section}{\numberline {44.4}Условный родитель}{104}{section.44.4}%
+\contentsline {chapter}{\numberline {45}Двухрезервуарный неравновесный ток $K_{43}$}{105}{chapter.45}%
+\contentsline {chapter}{\numberline {46}Хопфовское происхождение разности сродств}{107}{chapter.46}%
+\contentsline {chapter}{\numberline {47}Морфизм высоты покрытия в физическое время}{108}{chapter.47}%
+\contentsline {chapter}{\numberline {48}Аудит кандидатов абсолютного масштаба такта рождения}{110}{chapter.48}%
+\contentsline {chapter}{\numberline {49}Родитель размерностной трансмутации такта рождения}{112}{chapter.49}%
+\contentsline {chapter}{\numberline {50}Происхождение граничного согласования K43 и RG для такта рождения}{114}{chapter.50}%
+\contentsline {chapter}{\numberline {51}Аудит кандидатов отношения опорных шкал такта рождения}{116}{chapter.51}%
+\contentsline {chapter}{\numberline {52}Общий родитель отношения опорных шкал такта рождения}{118}{chapter.52}%
+\contentsline {chapter}{\numberline {53}Аудит межсекторных операторов RG--K43}{120}{chapter.53}%
+\contentsline {chapter}{\numberline {54}Минимальная типизированная portal-архитектура RG--K43}{121}{chapter.54}%
+\contentsline {chapter}{\numberline {55}RG-инвариантное чтение дискретного разрешения}{122}{chapter.55}%
+\contentsline {chapter}{\numberline {56}Аудит физической моды дискретного разрешения}{124}{chapter.56}%
+\contentsline {chapter}{\numberline {57}Родитель спектрального полюса трансмутированной моды}{125}{chapter.57}%
+\contentsline {chapter}{\numberline {58}Аудит кандидатов IR-массового члена трансмутированной моды}{126}{chapter.58}%
+\contentsline {chapter}{\numberline {59}Родитель отрицательного beta-знака асимптотически-свободной моды}{128}{chapter.59}%
+\contentsline {chapter}{\numberline {60}Аудит безаномального носителя асимптотически-свободной моды}{130}{chapter.60}%
+\contentsline {chapter}{\numberline {61}Типизированное K43-вложение минимального $SU(2)+8D$ носителя}{132}{chapter.61}%
+\contentsline {chapter}{\numberline {62}Родитель композитного $SU(2)$-синглетного полюса}{134}{chapter.62}%
+\contentsline {chapter}{\numberline {63}Аудит связывающих ядер композитного $SU(2)$-синглета}{136}{chapter.63}%
+\contentsline {chapter}{\numberline {64}Родитель коэффициента связывания композитного $SU(2)$-синглета}{138}{chapter.64}%
+\contentsline {chapter}{\numberline {65}Аудит восприимчивости посредника композитного $SU(2)$-синглета}{140}{chapter.65}%
+\contentsline {chapter}{\numberline {66}Родитель статического $SU(2)$-пропагатора композитного синглета}{142}{chapter.66}%
+\contentsline {chapter}{\numberline {67}Клеточное типизированное вложение $SU(2)$-посредника}{144}{chapter.67}%
+\contentsline {chapter}{\numberline {68}Аудит селектора flavor-пары композитного $SU(2)$-синглета}{146}{chapter.68}%
+\contentsline {chapter}{\numberline {69}Родитель демократического flavor-селектора}{147}{chapter.69}%
+\contentsline {chapter}{\numberline {70}Аудит кандидатов flavor-графа}{148}{chapter.70}%
+\contentsline {chapter}{\numberline {71}Общий родитель морщинки и дислокации}{149}{chapter.71}%
+\contentsline {chapter}{\numberline {72}Аудит смешанных мостов морщинки и дислокации}{151}{chapter.72}%
+\contentsline {chapter}{\numberline {73}Допуск общего каллиасова носителя}{153}{chapter.73}%
+\contentsline {chapter}{\numberline {74}Аудит общего сродства и температурного якоря}{154}{chapter.74}%
+\contentsline {section}{\numberline {74.1}Что осталось после происхождения разности}{154}{section.74.1}%
+\contentsline {section}{\numberline {74.2}Ближайший кандидат: пути длины один и два}{154}{section.74.2}%
+\contentsline {section}{\numberline {74.3}Остальные кандидаты}{154}{section.74.3}%
+\contentsline {section}{\numberline {74.4}Безразмерное сродство не является температурой}{155}{section.74.4}%
+\contentsline {chapter}{\numberline {75}Родитель связи хопфовских путей с двумя резервуарами}{156}{chapter.75}%
+\contentsline {section}{\numberline {75.1}Ориентированная задача назначения}{156}{section.75.1}%
+\contentsline {section}{\numberline {75.2}Знак разности устраняет перестановочную неоднозначность}{156}{section.75.2}%
+\contentsline {section}{\numberline {75.3}Условный родитель и отсутствующий смешанный блок}{156}{section.75.3}%
+\contentsline {chapter}{\numberline {76}Аудит кандидатов резервуарно-хопфовского интертвинера}{158}{chapter.76}%
+\contentsline {section}{\numberline {76.1}После выбора перестановки остаются фазы}{158}{section.76.1}%
+\contentsline {section}{\numberline {76.2}Десять кандидатов}{158}{section.76.2}%
+\contentsline {chapter}{\numberline {77}Допуск общего носителя резервуарно-хопфовского интертвинера}{160}{chapter.77}%
+\contentsline {section}{\numberline {77.1}Минимальная размерность}{160}{section.77.1}%
+\contentsline {section}{\numberline {77.2}От прямой суммы к полной алгебре}{160}{section.77.2}%
+\contentsline {section}{\numberline {77.3}Условный положительный родитель}{161}{section.77.3}%
+\contentsline {chapter}{\numberline {78}Родитель происхождения $M_4$ cross-генератора}{162}{chapter.78}%
+\contentsline {section}{\numberline {78.1}Минимальный динамический кандидат}{162}{section.78.1}%
+\contentsline {section}{\numberline {78.2}Норма выбрана, фаза не выбрана}{162}{section.78.2}%
+\contentsline {section}{\numberline {78.3}Унаследованный родитель}{163}{section.78.3}%
+\contentsline {chapter}{\numberline {79}Аудит кандидатов бифундаментального $M_4$-конденсата}{164}{chapter.79}%
+\contentsline {section}{\numberline {79.1}Контракт физического зарождения}{164}{section.79.1}%
+\contentsline {section}{\numberline {79.2}Три ближайших маршрута}{164}{section.79.2}%
+\contentsline {chapter}{\numberline {80}Родитель тахионного знака клеточной incidence-моды}{166}{chapter.80}%
+\contentsline {section}{\numberline {80.1}Знак, который не меняется с ориентацией}{166}{section.80.1}%
+\contentsline {section}{\numberline {80.2}Дополнение Шура и исходная неустойчивость}{166}{section.80.2}%
+\contentsline {section}{\numberline {80.3}Канонический фермионный минус}{167}{section.80.3}%
+\contentsline {chapter}{\numberline {81}Допуск общего носителя фермионной тахионной восприимчивости}{168}{chapter.81}%
+\contentsline {section}{\numberline {81.1}Условный оператор на $M_4$-носителе}{168}{section.81.1}%
+\contentsline {section}{\numberline {81.2}Детерминант действительно создаёт конденсацию}{168}{section.81.2}%
+\contentsline {section}{\numberline {81.3}Граница унаследованности}{169}{section.81.3}%
+\contentsline {chapter}{\numberline {82}Аудит фермионной cross-билинейности и нечётной статистики}{170}{chapter.82}%
+\contentsline {chapter}{\numberline {83}Типизированное Callias--$M_4$ вложение фермионного cross-оператора}{172}{chapter.83}%
+\contentsline {chapter}{\numberline {84}Родитель равномерного усиления Callias--$M_4$ по $H_{15}$}{174}{chapter.84}%
+\contentsline {chapter}{\numberline {85}Аудит кандидатов кварк--лептонного коннектора $H_{15}$}{176}{chapter.85}%
+\contentsline {chapter}{\numberline {86}Допуск обобщённого первопорядкового родителя $R_2$ на $H_{15}$}{178}{chapter.86}%
+\contentsline {chapter}{\numberline {87}Аудит кандидатов конечного Dirac-seed $R_2$ на $H_{15}$}{181}{chapter.87}%
+\contentsline {chapter}{\numberline {88}Типизированное вложение $R_2$ в Pati--Salam $\Sigma $}{184}{chapter.88}%
+\contentsline {chapter}{\numberline {89}Аудит селектора $R_2$-компоненты Pati--Salam $\Sigma $}{187}{chapter.89}%
+\contentsline {chapter}{\numberline {90}Родитель расщепления масс гиперзарядового проектора $R_2$}{189}{chapter.90}%
+\contentsline {chapter}{\numberline {91}Аудит кандидатов коэффициента гиперзарядового gap $R_2$}{191}{chapter.91}%
+\contentsline {chapter}{\numberline {92}Общий носитель гиперзарядового breaking-background}{193}{chapter.92}%
+\contentsline {chapter}{\numberline {93}Типизированное вложение $\Delta $ mapping-cone parent}{195}{chapter.93}%
+\contentsline {chapter}{\numberline {94}Аудит кандидатов смешанной $\Delta $--$\Sigma $ curvature}{197}{chapter.94}%
+\contentsline {chapter}{\numberline {95}Родитель curvature moment map $\Delta $-стабилизатора}{199}{chapter.95}%
+\contentsline {chapter}{\numberline {96}Типизированное вложение общего fixed-point auxiliary-канала}{201}{chapter.96}%
+\contentsline {chapter}{\numberline {97}Аудит кандидатов минимального odd auxiliary-бимодуля}{203}{chapter.97}%
+\contentsline {chapter}{\numberline {98}Происхождение Hubbard--Stratonovich odd auxiliary parent}{205}{chapter.98}%
+\contentsline {chapter}{\numberline {99}Аудит кандидатов odd auxiliary cross-bilinear}{207}{chapter.99}%
+\contentsline {chapter}{\numberline {100}Родитель $\Delta $ moment-map odd auxiliary trilinear}{209}{chapter.100}%
+\contentsline {chapter}{\numberline {101}Родитель mixed superconnection curvature}{211}{chapter.101}%
+\contentsline {chapter}{\numberline {102}Аудит trace-селекторов superconnection curvature}{213}{chapter.102}%
+\contentsline {chapter}{\numberline {103}Родитель relative-curvature junk quotient}{215}{chapter.103}%
+\contentsline {chapter}{\numberline {104}Admission общего relative-Hodge auxiliary-edge parent}{217}{chapter.104}%
+\contentsline {chapter}{\numberline {105}Аудит происхождения relative-Hodge auxiliary edge}{219}{chapter.105}%
+\contentsline {chapter}{\numberline {106}Родитель suspension auxiliary copy и Mathai--Quillen достройка}{221}{chapter.106}%
+\contentsline {chapter}{\numberline {107}Общий parent Mathai--Quillen Thom-мультиплета}{224}{chapter.107}%
+\contentsline {chapter}{\numberline {108}Аудит происхождения статистики нечётной Mathai--Quillen-пары}{226}{chapter.108}%
+\contentsline {chapter}{\numberline {109}Происхождение shift-симметрии Mathai--Quillen-пары}{228}{chapter.109}%
+\contentsline {chapter}{\numberline {110}Финальное заключение Тома X и программа Тома XI}{230}{chapter.110}%
+\contentsline {section}{\numberline {110.1}Какие задачи ставились}{230}{section.110.1}%
+\contentsline {section}{\numberline {110.2}Ответ операционного контракта}{230}{section.110.2}%
+\contentsline {section}{\numberline {110.3}Что удалось получить}{231}{section.110.3}%
+\contentsline {section}{\numberline {110.4}Чего получить не удалось}{231}{section.110.4}%
+\contentsline {section}{\numberline {110.5}Итог более сильного quantum-RG обещания}{232}{section.110.5}%
+\contentsline {section}{\numberline {110.6}Программа Тома XI}{232}{section.110.6}%

@@ -1,0 +1,80 @@
+\chapter{Аудит кандидатов конечного Dirac-seed
+\texorpdfstring{$R_2$}{R2} на \texorpdfstring{$H_{15}$}{H15}}
+\label{ch:v10-h15-r2-dirac-seed-audit}
+
+Обобщённая флуктуация сохраняет опору исходного конечного оператора.
+Поэтому теперь проверяется более ранний вопрос: содержит ли какой-либо
+унаследованный оператор два блока
+\begin{equation}
+ L_L-u_R,qquad Q_L-e_R,qquad
+ R_2\sim(\mathbf3,\mathbf2)_{7/6}?
+\end{equation}
+
+Введём Hadamard-проектор $\Pi_{R_2}$ на эти два блока и их сопряжения.
+Прямое вычисление для пяти внутренних источников даёт
+\begin{align}
+ \rank\Pi_{R_2}(D_F)
+ &=\rank\Pi_{R_2}(A_{\rm Higgs})
+ =\rank\Pi_{R_2}(A_{(2)})=0,\nonumber\\
+ \rank\Pi_{R_2}(I_{H_{15}})
+ &=\rank\Pi_{R_2}(L_{H_{15}})=0.
+\end{align}
+Таким образом, ни стандартный конечный оператор, ни одноформа Хиггса, ни
+Callias--$M_4$ tensor amplifier, ни incidence-лапласиан не содержат
+требуемой опоры.
+
+У расширений статус различен. Pati--Salam-поле
+$\Sigma\sim(\mathbf2_R,\mathbf2_L,\mathbf{15}_4)$ содержит после ветвления
+компоненту типа $R_2$, но требует новой алгебры и нового конечного seed.
+Clifford-расширение допускает смешанные weak--colour скаляры, однако само
+по себе не выбирает здесь точную двухрёберную пару. Отказ от
+$S^0$-реальности даёт исторический лептокварковый канал другого типа, а
+строгий зеркальный цикл факторизует перенос через новые вершины и не
+создаёт элементарного $D_{R_2}$.
+
+Аудит одиннадцати маршрутов по шести критериям имеет полный ранг $6$ и
+нулевой pass-vector. Стандартные операторы получают $5/6$, но проваливают
+главный критерий --- саму $R_2$-опору. Нормированный target-loaded
+$D_{R_2}$ также получает $5/6$, проваливая наследование. Единственный
+структурный маршрут с правильным представлением без прямой записи target ---
+Pati--Salam $\Sigma$, но он является новой геометрией.
+
+\begin{theorem}[Нулевая внутренняя проекция на $R_2$]
+Проекции стандартного $D_F$, его Higgs-одноформы, допущенного $A_{(2)}$,
+Callias--$M_4$ усилителя и лапласиана типового графа на двухблочную
+$R_2$-опору равны нулю. Точная ненулевая проекция возникает только у явно
+вставленного $D_{R_2}$ или после расширения конечной геометрии.
+\end{theorem}
+
+\begin{nogocriterion}[Нормировка не создаёт seed]
+Положительный квадратичный родитель может условно нормировать коэффициент
+уже заданного $D_{R_2}$, но не превращает нулевой inherited map в
+ненулевой. Такой контроль закрывает устойчивость амплитуды, а не
+происхождение оператора.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item проверенных внутренних операторов: \textbf{$5$};
+\item ненулевых внутренних $R_2$-проекций: \textbf{$0/5$};
+\item проверенных маршрутов: \textbf{$11$};
+\item прошедших маршрутов: \textbf{$0/11$};
+\item exact target-loaded $D_{R_2}$: \textbf{да};
+\item inherited map к двум коэффициентам: \textbf{rank $0$};
+\item ближайшее структурное расширение: \textbf{Pati--Salam $\Sigma$};
+\item physical origin: \textbf{$0/3$};
+\item следующий гейт: \textbf{типизированное вложение $R_2$ в $\Sigma$}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_dirac_seed_candidate_audit_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v10r2seed-paschke}
+M.~Paschke, F.~Scheck, A.~Sitarz,
+\emph{Can (noncommutative) geometry accommodate leptoquarks?},
+Physical Review D 59 (1999), 035003; arXiv:hep-th/9709009.
+\bibitem{v10r2seed-kurkov}
+M.~A.~Kurkov, F.~Lizzi,
+\emph{Clifford Structures in Noncommutative Geometry and the Extended Scalar Sector},
+Physical Review D 97 (2018), 085024; arXiv:1801.00260.
+\end{thebibliography}

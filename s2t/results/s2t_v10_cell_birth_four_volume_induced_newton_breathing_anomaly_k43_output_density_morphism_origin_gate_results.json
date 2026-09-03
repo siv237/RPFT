@@ -1,0 +1,138 @@
+{
+  "common_parent": {
+    "determinant": 1,
+    "hessian": [
+      [
+        2,
+        -1,
+        0
+      ],
+      [
+        -1,
+        2,
+        -1
+      ],
+      [
+        0,
+        -1,
+        1
+      ]
+    ],
+    "leading_principal_minors": [
+      2,
+      3,
+      1
+    ],
+    "rank": 3,
+    "variables": [
+      "trace-response sign",
+      "per-cell to density morphism",
+      "inflow-output balance"
+    ]
+  },
+  "date": "2026-09-02",
+  "density_morphism": {
+    "canonical_witness_coefficient": "epsilon_K43=2*alpha^2/(3*beta_E^2)",
+    "cell_four_volume": "v_cell=beta_E^2/(4*alpha^2*m^2)",
+    "effective_coefficient": "epsilon_K43=4*alpha^2*R_out/beta_E^2",
+    "output_density": "d_out=R_out/v_cell=epsilon_K43*m^2"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_output_density_morphism_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_kms_output_channel_parent_origin_gate",
+  "oriented_trace_response": {
+    "canonical_witness": "R_out(1,1)=1/6",
+    "output_fraction": "R_out=-A=x*q^2/((1+x)*(1+q^2+x))",
+    "range": "0<R_out<1 for x>0 and q>0",
+    "response": "A=-x*q^2/((1+x)*(1+q^2+x))",
+    "x_definition": "x=exp(zeta)>0"
+  },
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_spectral_coefficient_origin_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "e73f582b3c8d86cbf0dc4b6bb8f8d28985a7a41adf3ce531d02861b0324f07c3",
+    "floating_point_values": 0,
+    "obligation_count": 29,
+    "obligations": [
+      "k43_output_trace_response_closed_form",
+      "k43_output_fraction_closed_form",
+      "k43_output_fraction_positive",
+      "k43_output_subunit_gap",
+      "k43_output_subunit_positive",
+      "k43_output_witness_one_sixth",
+      "k43_output_sign_candidates",
+      "k43_output_sign_admissibility",
+      "k43_output_cell_volume",
+      "k43_output_density_morphism",
+      "k43_output_effective_epsilon",
+      "k43_output_inflow_density",
+      "k43_output_balance_scale_cancellation",
+      "k43_output_parent_stationary",
+      "k43_output_parent_hessian",
+      "k43_output_parent_rank_three",
+      "k43_output_parent_determinant_one",
+      "k43_output_parent_positive_minors",
+      "k43_output_scale_rank_three",
+      "k43_output_scale_nullity_one",
+      "k43_output_scale_kernel",
+      "k43_output_external_anchor_rank_four",
+      "k43_output_inherited_origin_full",
+      "k43_output_inherited_score_four",
+      "k43_output_architecture_full",
+      "k43_output_conditional_origin_full",
+      "k43_output_conditional_score_eight",
+      "k43_output_physical_origin_open",
+      "k43_output_physical_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_orbit": {
+    "external_reference_scale_row_rank": 4,
+    "kernel": [
+      -1,
+      -1,
+      2,
+      -2
+    ],
+    "nullity": 1,
+    "rank": 3,
+    "variables": [
+      "m",
+      "mu_spec^2",
+      "v_cell",
+      "density/Theta"
+    ]
+  },
+  "sign_selection": {
+    "candidates": [
+      "A",
+      "-A"
+    ],
+    "positivity_admissibility": [
+      0,
+      1
+    ],
+    "selected_map": "R_out=-A",
+    "selection_character": "conditional positivity selection"
+  },
+  "status": {
+    "absolute_scale": "0/1",
+    "architecture": "10/10",
+    "conditional_origin": "8/8",
+    "inherited_origin": "4/4",
+    "physical_channel_identity": "0/1",
+    "physical_coefficient_and_scale_origin": "0/2",
+    "positive_output_morphism": "1/1 conditional"
+  },
+  "throughflow_balance": {
+    "absolute_scale_selected": false,
+    "dimensionless_stationarity": "n_flow*log(2)=R_out",
+    "inflow_density": "d_in=n_flow*log(2)/v_cell",
+    "residual": "d_in-d_out=4*alpha^2*m^2*(n_flow*log(2)-R_out)/beta_E^2"
+  },
+  "verdict": {
+    "absolute_breathing_scale_derived": false,
+    "leading_epsilon_conditionally_constructed": true,
+    "map_is_derived_physical_open_system_flux": false,
+    "positive_subunit_K43_output_map_exists": true
+  }
+}

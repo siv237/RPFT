@@ -1,0 +1,160 @@
+\chapter{Геометрический родитель взаимно обратного спектрального хода}
+\label{ch:v10-k43-reciprocal-spectral-operator-growth-parent-origin}
+
+\section{Проверяемая гипотеза}
+
+Предыдущий гейт нашёл внутри $\mathcal K_{43}$ каноническую пару
+$\mathcal W_Y=\operatorname{span}\{|Y\rangle,|0\rangle\}$, но оператор с
+собственными значениями $e^{-\zeta}$ и $e^{\zeta}$ был задан вручную.
+Настоящий гейт проверяет, можно ли вывести эту зависимость как единственную
+нулевую траекторию положительного геометрического родителя, используя только
+два унаследованных проектора и стрелку притока.
+
+\section{Канонический генератор роста}
+
+Обозначим проекторы на гиперзарядовую и вакуумную линии через $P_Y$ и $P_0$.
+Разность
+\begin{equation}
+ Q_X:=P_0-P_Y
+ \label{eq:v10-growth-grading}
+\end{equation}
+обладает точными свойствами
+\begin{equation}
+ \Tr Q_X=0,
+ \qquad Q_X^2=P_0+P_Y,
+ \qquad \rank Q_X=2,
+ \label{eq:v10-growth-grading-identities}
+\end{equation}
+а её спектр на $\mathcal K_{43}$ равен
+\begin{equation}
+ \Spec Q_X=\{-1^{(1)},0^{(41)},1^{(1)}\}.
+ \label{eq:v10-growth-grading-spectrum}
+\end{equation}
+
+Безследовость является условием сохранения определителя. На диагональном
+двумерном носителе она оставляет одномерное пространство генераторов.
+Нормировка $\Tr Q_X^2=2$ оставляет только два знака $\pm Q_X$. Стрелка
+притока выбирает $Q_X$, поскольку её согласованности равны
+\begin{equation}
+ \Tr(Q_XQ_X)=2,
+ \qquad
+ \Tr(Q_X(-Q_X))=-2.
+ \label{eq:v10-growth-arrow-sign-selection}
+\end{equation}
+Таким образом, веса $(-1,+1)$ не вводятся как два независимых коэффициента.
+Они следуют из сохранения определителя, единичной нормировки координаты
+$\zeta$ и ориентации роста.
+
+\section{Положительный родитель траектории}
+
+Для положительного операторного пути $K(\zeta)$ определим симметричную
+ковариантную производную
+\begin{equation}
+ \nabla_XK
+ :=\frac{dK}{d\zeta}-\frac12\{Q_X,K\}.
+ \label{eq:v10-growth-covariant-derivative}
+\end{equation}
+Минимальный родитель пути имеет вид
+\begin{equation}
+ \mathcal S_X[K]
+ =\frac12\|K(0)-I_{43}\|_{\rm HS}^2
+ +\frac12\int_0^Z\|\nabla_XK(\zeta)\|_{\rm HS}^2\,d\zeta.
+ \label{eq:v10-growth-path-parent}
+\end{equation}
+Он неотрицателен. Нулевое значение требует одновременно
+\begin{equation}
+ K(0)=I_{43},
+ \qquad
+ \nabla_XK=0.
+ \label{eq:v10-growth-parent-zero-equations}
+\end{equation}
+Единственное решение этой линейной начальной задачи равно
+\begin{equation}
+ K_X(\zeta)=e^{\zeta Q_X}
+ =I_{43}+(e^{-\zeta}-1)P_Y+(e^{\zeta}-1)P_0.
+ \label{eq:v10-growth-parent-solution}
+\end{equation}
+Поскольку $\Tr Q_X=0$,
+\begin{equation}
+ \det K_X(\zeta)=1.
+ \label{eq:v10-growth-parent-determinant}
+\end{equation}
+
+Здесь экспоненциальная кривая является следствием дифференциального
+уравнения и начального условия, а не целью, заранее записанной внутри
+потенциала.
+
+\section{Локальная строгая проверка родителя}
+
+На диагональном начальном струйном наборе
+$(r_Y,r_0,v_Y,v_0)$ конечномерный представитель равен
+\begin{equation}
+ \mathcal L_X
+ =\frac12(v_Y+r_Y)^2+\frac12(v_0-r_0)^2
+ +\frac12(r_Y-1)^2+\frac12(r_0-1)^2.
+ \label{eq:v10-growth-parent-jet}
+\end{equation}
+Точка
+\begin{equation}
+ (r_Y,r_0,v_Y,v_0)=(1,1,-1,1)
+ \label{eq:v10-growth-parent-jet-point}
+\end{equation}
+имеет нулевой градиент и нулевое значение. Её гессиан имеет
+\begin{equation}
+ \rank\operatorname{Hess}\mathcal L_X=4,
+ \qquad
+ \det\operatorname{Hess}\mathcal L_X=1.
+ \label{eq:v10-growth-parent-jet-hessian}
+\end{equation}
+Следовательно, начальное условие и обе ориентированные скорости выбраны
+строго, без плоской струйной моды.
+
+\section{Возвращение самоэнергии}
+
+Сжатие решения на $\mathcal W_Y$ даёт
+\begin{equation}
+ E_Y^*K_X(\zeta)E_Y
+ =\operatorname{diag}(e^{-\zeta},e^{\zeta}).
+ \label{eq:v10-growth-parent-compression}
+\end{equation}
+Поэтому входящая самоэнергия теперь следует из родительской траектории:
+\begin{equation}
+ \Sigma_Y(\zeta)
+ =\langle Y|K_X^{-1}(\zeta)|Y\rangle=e^{\zeta},
+ \qquad
+ \frac{d\Sigma_Y}{d\zeta}=\Sigma_Y.
+ \label{eq:v10-growth-parent-self-energy}
+\end{equation}
+
+\begin{theorem}[Структурное происхождение взаимно обратного хода]
+Безследовый нормированный генератор $Q_X=P_0-P_Y$, выбранный стрелкой
+притока, и неотрицательный родитель \eqref{eq:v10-growth-path-parent}
+однозначно выбирают $K_X(\zeta)=e^{\zeta Q_X}$. Тем самым взаимно обратный
+спектр и ненулевая интенсивная самоэнергия получены без подстановки готовой
+экспоненциальной кривой в потенциал.
+\end{theorem}
+
+\begin{nogocriterion}[Геометрическая координата ещё не является секундой]
+Родитель определяет зависимость от безразмерной координаты
+$\zeta=\frac13\log(N/N_0)$, но не задаёт вероятность перехода $N\to N+1$
+и не переводит один шаг истории в физическое время или энергию. Поэтому
+структурное происхождение спектрального закона закрыто, а абсолютный
+размерный масштаб и физическая космологическая постоянная ещё не выведены.
+\end{nogocriterion}
+
+\begin{protocol}[Статус геометрического родителя]\begin{enumerate}
+\item безследовый генератор роста: \textbf{выведен};
+\item выбор знака стрелкой притока: \textbf{$2>-2$};
+\item положительный родитель пути: \textbf{построен};
+\item единственная нулевая траектория: \textbf{$e^{\zeta Q_X}$};
+\item архитектура геометрического родителя: \textbf{$9/9$};
+\item структурное происхождение спектрального закона: \textbf{$4/4$};
+\item нормированная мера рождения ячеек: \textbf{$0/1$};
+\item физическая временно-энергетическая калибровка: \textbf{$0/1$};
+\item абсолютный масштаб: \textbf{не выведен};
+\item следующий гейт: \textbf{нормированная мера переходов рождения ячеек
+и происхождение темпа роста}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_k43_reciprocal_spectral_operator_growth_parent_origin_gate_results.json}.

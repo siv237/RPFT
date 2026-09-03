@@ -1,0 +1,101 @@
+{
+  "candidate_audit": {
+    "candidate_count": 10,
+    "criterion_count": 6,
+    "full_passes": 0,
+    "matrix_rank": 6,
+    "scores": [
+      4,
+      4,
+      3,
+      3,
+      5,
+      5,
+      4,
+      4,
+      4,
+      1
+    ]
+  },
+  "candidates": [
+    "cell_black_body",
+    "cell_Casimir",
+    "curvature_squared",
+    "Lambda_over_G",
+    "fixed_bath_correlation_time",
+    "fixed_chemical_potential",
+    "external_mass_gap",
+    "dimensional_transmutation_scale",
+    "nonlocal_memory_length",
+    "bare_external_ruler"
+  ],
+  "classification": {
+    "best_candidates": [
+      "fixed_bath_correlation_time",
+      "fixed_chemical_potential"
+    ],
+    "best_score": "5/6",
+    "conditional_orbit_breakers": 6,
+    "independent_internal_breaker_origins": 0,
+    "internal_conformal_candidates": 4
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_entropy_scale_orbit_breaker_candidate_audit_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_correlation_time_parent_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_two_reservoir_entropy_production_trace_anomaly_morphism_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "a4605a22b6d023e24aba49bda5cd91708664e25d2f53761bbdb4c85b4adf997d",
+    "floating_point_values": 0,
+    "obligation_count": 20,
+    "obligations": [
+      "entropy_breaker_00",
+      "entropy_breaker_01",
+      "entropy_breaker_02",
+      "entropy_breaker_03",
+      "entropy_breaker_04",
+      "entropy_breaker_05",
+      "entropy_breaker_06",
+      "entropy_breaker_07",
+      "entropy_breaker_08",
+      "entropy_breaker_09",
+      "entropy_breaker_10",
+      "entropy_breaker_11",
+      "entropy_breaker_12",
+      "entropy_breaker_13",
+      "entropy_breaker_14",
+      "entropy_breaker_15",
+      "entropy_breaker_16",
+      "entropy_breaker_17",
+      "entropy_breaker_18",
+      "entropy_breaker_19"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_degrees": [
+    -4,
+    -4,
+    -4,
+    -4,
+    -3,
+    -3,
+    0,
+    0,
+    0,
+    0
+  ],
+  "status": {
+    "absolute_scale": "0/1",
+    "audit_coverage": "10/10",
+    "candidate_origin": "0/10",
+    "conditional_external_breakers": "6/6",
+    "internal_different_scale_degree": "0/4"
+  },
+  "verdict": {
+    "absolute_scale_derived": false,
+    "current_internal_terms_break_entropy_scale_orbit": false,
+    "external_bath_time_would_break_orbit": true,
+    "external_chemical_potential_would_break_orbit": true,
+    "project_derives_either_external_anchor": false
+  }
+}

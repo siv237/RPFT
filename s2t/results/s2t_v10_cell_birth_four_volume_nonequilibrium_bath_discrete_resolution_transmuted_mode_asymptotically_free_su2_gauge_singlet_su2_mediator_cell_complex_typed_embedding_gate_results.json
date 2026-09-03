@@ -1,0 +1,59 @@
+{
+  "cell_adjoint_carrier": {
+    "boundary_rank": 3,
+    "edge_dimension": 3,
+    "laplacian_nullity": 3,
+    "laplacian_rank": 3,
+    "vertex_dimension": 6
+  },
+  "combined_current": {
+    "cell_support": "P_conserved_adjoint",
+    "pair_support": "P_triplet",
+    "rank": 3,
+    "shape": [
+      6,
+      4
+    ]
+  },
+  "conditional_response": {
+    "binding_coefficient": "3/16",
+    "coupling_squared": "3/8",
+    "susceptibility_matrix": "I3/2"
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_cell_complex_typed_embedding_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_pair_selector_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_static_propagator_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "acfa7f9c0790e2f821f18286c65178be550109d44dd354bef46bdd59b483a10f",
+    "floating_point_values": 0,
+    "obligation_count": 23,
+    "status": "lcf-checked"
+  },
+  "relative_current": {
+    "adjoint_covariance": true,
+    "gram": "I3",
+    "image_projector": "P_triplet",
+    "intertwiner_shape": [
+      4,
+      3
+    ],
+    "rank": 3
+  },
+  "status": {
+    "conditional_architecture": "14/14",
+    "inherited_ingredients": "2/2",
+    "physical_origin": "0/2",
+    "typed_embedding": "10/10"
+  },
+  "verdict": {
+    "adjoint_cell_field_is_typed": true,
+    "conserved_current_map_is_constructed": true,
+    "flavor_pair_is_selected": false,
+    "gap_to_pole_map_is_derived": false,
+    "physical_composite_pole_is_derived": false,
+    "relative_pair_current_is_adjoint_covariant": true,
+    "susceptibility_is_component_independent": true
+  }
+}

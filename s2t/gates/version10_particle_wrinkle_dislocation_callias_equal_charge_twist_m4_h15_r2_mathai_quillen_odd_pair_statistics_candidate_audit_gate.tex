@@ -1,0 +1,91 @@
+\chapter{Аудит происхождения статистики нечётной Mathai--Quillen-пары}
+\label{ch:v10-h15-r2-mathai-quillen-odd-pair-statistics-audit}
+
+Предыдущий гейт условно замкнул полный Thom-квартет, но оставил без
+происхождения два нечётных поля $\psi_\Sigma$ и $\chi_\Sigma$. Их нельзя
+получить одной сменой grading: требуется настоящая Grassmann-алгебра полей,
+nilpotent differential и парная Berezin measure.
+
+Тип требуемой пары фиксирован оператором
+\begin{equation}
+ Q=\operatorname{diag}(3,-3,7,1,-1,-7,3,-3).
+\end{equation}
+На шестнадцати нечётных вещественных направлениях канонический
+антисимметричный pairing имеет вид
+\begin{equation}
+ \Omega_Q=
+ \begin{pmatrix}0&Q\\-Q&0\end{pmatrix},
+ \qquad
+ \rank\Omega_Q=16,
+ \qquad
+ \det\Omega_Q=(\det Q)^2=3969^2.
+\end{equation}
+Следовательно, после условного выбора нечётных координат сама парная мера
+невырождена и не оставляет дополнительного component-wise selector.
+
+Двенадцать механизмов проверены по семи критериям: точный тип пары,
+Grassmann statistics, Thom differential, точный $Q$-pairing, парная
+Berezin measure, ацикличность auxiliary-сектора и происхождение из текущего
+parent. Матрица аудита имеет размер $12\times7$, rank $7$, но pass-vector
+равен $0_{12}$.
+
+Физические Callias-фермионы действительно нечётны и имеют собственную
+Berezin measure. Однако они являются распространяющимися физическими
+полями: на них нет differential
+\begin{equation}
+ \delta\Sigma=\psi_\Sigma,
+ \qquad
+ \delta\chi_\Sigma=H_\Sigma,
+\end{equation}
+и их нельзя объявить contractible auxiliary-парой без изменения спектра.
+Nambu- или charge-conjugate doubling может воспроизвести невырожденный
+$Q$-bilinear, но также не даёт Thom-комплекс и нулевую cohomology.
+
+BV-antifields и существующие Faddeev--Popov ghosts обладают правильной
+статистикой, но относятся к уже имеющимся gauge generators. Они не создают
+восьми независимых переводов поля $\Sigma$. Действительно, требуемая
+shift-орбита имеет generator-map
+\begin{equation}
+ T_{\rm shift}=I_8,
+ \qquad \rank T_{\rm shift}=8,
+\end{equation}
+тогда как обычное линейное gauge action имеет вид
+$\delta_\epsilon\Sigma=\rho(\epsilon)\Sigma$ и при $\Sigma=0$ даёт
+нулевой translational rank. Дефицит shift-generators равен восьми.
+
+Лучшие условные кандидаты --- $\Sigma$-shift BRST quartet, AKSZ-extension
+и формальные Mathai--Quillen odd fibers. Каждый получает $6/7$ и
+проваливает только inherited origin. Target-loaded Grassmann pair имеет тот
+же статус и потому не является объяснением.
+
+\begin{theorem}[Условная единственность shift-BRST маршрута]
+Невырожденная нечётная пара с pairing $\Omega_Q$ условно замыкает
+статистику, меру и ацикличный Thom-комплекс. Среди проверенных механизмов
+полный структурный пакет реализуют только конструкции, эквивалентные
+введению восьмимерной shift-симметрии $\Sigma$; все они имеют статус $6/7$,
+поскольку такая симметрия не унаследована текущим parent.
+\end{theorem}
+
+\begin{nogocriterion}[Физический фермион не является Thom ghost]
+Наличие фермионных полей и Berezin measure в общей теории не позволяет
+использовать их как $\psi_\Sigma,\chi_\Sigma$. Для этого необходимо
+доказать отдельную nilpotent shift-symmetry с orbit rank $8$ и
+contractible cohomology; обычная gauge-орбита при $\Sigma=0$ имеет rank
+ноль.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item required odd real dimension / pairing rank: \textbf{$16/16$};
+\item odd pairing determinant: \textbf{$3969^2$};
+\item audit size / rank: \textbf{$12\times7/7$};
+\item passing candidates: \textbf{$0/12$};
+\item best conditional route: \textbf{$\Sigma$-shift BRST, $6/7$};
+\item inherited physical-fermion route: \textbf{$4/7$};
+\item required/inherited translational rank: \textbf{$8/0$};
+\item shift-generator deficit: \textbf{$8$};
+\item physical odd-pair parent: \textbf{не найден};
+\item следующий гейт: \textbf{происхождение $\Sigma$-shift symmetry}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_odd_pair_statistics_candidate_audit_gate_results.json}.

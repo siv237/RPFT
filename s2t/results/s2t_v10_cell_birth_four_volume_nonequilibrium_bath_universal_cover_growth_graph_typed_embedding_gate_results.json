@@ -1,0 +1,124 @@
+{
+  "birth_graph": {
+    "absolute_height_origin_selected": false,
+    "edge_height_increment": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "forward_counts": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "height_values": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "new_future_vertices_per_step": 1,
+    "radius_counts": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "shell_counts": [
+      1,
+      2,
+      2,
+      2
+    ]
+  },
+  "covering": {
+    "base_graph": "oriented Hopf cycle C3",
+    "chain_map_defect": 0,
+    "cover_map": "p(n)=n mod 3",
+    "deck_period": 3,
+    "deck_period_defect": 0,
+    "finite_witness": "radius-three ball with seven vertices",
+    "local_adjacency_defect": 0,
+    "universal_cover": "integer line Z"
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_growth_graph_typed_embedding_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_birth_height_physical_time_morphism_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_cell_complex_edge_length_common_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "f3ed8182f01c0311b14f3e873ce6edcc295ae5549dc5d8adab49f07c78a8fb85",
+    "floating_point_values": 0,
+    "obligation_count": 29,
+    "obligations": [
+      "universal_cover_growth_graph_00",
+      "universal_cover_growth_graph_01",
+      "universal_cover_growth_graph_02",
+      "universal_cover_growth_graph_03",
+      "universal_cover_growth_graph_04",
+      "universal_cover_growth_graph_05",
+      "universal_cover_growth_graph_06",
+      "universal_cover_growth_graph_07",
+      "universal_cover_growth_graph_08",
+      "universal_cover_growth_graph_09",
+      "universal_cover_growth_graph_10",
+      "universal_cover_growth_graph_11",
+      "universal_cover_growth_graph_12",
+      "universal_cover_growth_graph_13",
+      "universal_cover_growth_graph_14",
+      "universal_cover_growth_graph_15",
+      "universal_cover_growth_graph_16",
+      "universal_cover_growth_graph_17",
+      "universal_cover_growth_graph_18",
+      "universal_cover_growth_graph_19",
+      "universal_cover_growth_graph_20",
+      "universal_cover_growth_graph_21",
+      "universal_cover_growth_graph_22",
+      "universal_cover_growth_graph_23",
+      "universal_cover_growth_graph_24",
+      "universal_cover_growth_graph_25",
+      "universal_cover_growth_graph_26",
+      "universal_cover_growth_graph_27",
+      "universal_cover_growth_graph_28"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_audit": {
+    "after_v_g_equals_c_rank_nullity": "8/1",
+    "cover_adds_dimensional_rank": false,
+    "remaining_length_orbit": [
+      4,
+      -1,
+      -1,
+      -1,
+      -1,
+      1,
+      0,
+      1,
+      1
+    ]
+  },
+  "status": {
+    "absolute_edge_metric_origin": "0/1",
+    "conditional_cover_architecture": "12/12",
+    "discrete_birth_height": "1/1",
+    "physical_birth_clock_origin": "0/1",
+    "physical_growth_graph_origin": "0/1",
+    "typed_chain_cover": "1/1"
+  },
+  "verdict": {
+    "Hopf_cycle_lifts_to_a_nonbranching_birth_line": true,
+    "cover_derives_one_discrete_birth_per_forward_step": true,
+    "cover_selects_absolute_edge_length": false,
+    "cover_selects_physical_time_per_step": false,
+    "mathematical_cover_is_identified_with_physical_spacetime_growth": false,
+    "seven_vertex_path_is_a_canonical_local_cover_witness": true
+  }
+}

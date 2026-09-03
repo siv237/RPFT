@@ -1,0 +1,59 @@
+{
+  "candidate_audit": {
+    "count": 10,
+    "criteria": 6,
+    "full_passes": 0,
+    "rank": 6,
+    "scores": [
+      5,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      2,
+      3,
+      4
+    ]
+  },
+  "date": "2026-09-02",
+  "flavor_space": {
+    "antisymmetric_rank": 120,
+    "diagonal_rank": 16,
+    "pair_dimension": 256,
+    "single_dimension": 16,
+    "symmetric_rank": 136
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_pair_selector_candidate_audit_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_democratic_flavor_selector_parent_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_cell_complex_typed_embedding_gate",
+  "proofdsl": {
+    "certificate_sha256": "92b1160802b0f4b1d92dc621dd6856a2ec6bb974dc595741a528f429cebad5a5",
+    "floating_point_values": 0,
+    "obligation_count": 19,
+    "status": "lcf-checked"
+  },
+  "rank_one_examples": {
+    "basis_projector": {
+      "cyclic_defect_rank": 2,
+      "parent_selected": false
+    },
+    "democratic_projector": {
+      "cyclic_invariant": true,
+      "parent_selected": false
+    }
+  },
+  "status": {
+    "coverage": "10/10",
+    "full_passes": "0/10",
+    "physical_origin": "0/2"
+  },
+  "verdict": {
+    "gap_to_pole_map_is_derived": false,
+    "rank_one_selectors_exist": true,
+    "selector_parent_is_derived": false,
+    "symmetry_and_rank_one_are_compatible": true
+  }
+}

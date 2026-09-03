@@ -1,0 +1,110 @@
+{
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_parent_origin_gate",
+  "geometric_memory": {
+    "Toeplitz_covariance_determinants": [
+      "9/16",
+      "225/256"
+    ],
+    "cold_memory_steps": "4/3",
+    "cold_r": "1/4",
+    "hot_memory_steps": 2,
+    "hot_r": "1/2",
+    "kernel": "K_n(r)=r^n A^n"
+  },
+  "local_kernel": {
+    "causal_defects": 0,
+    "causal_support_rule": "(A^n)_ij=0 when graph_distance(i,j)>n",
+    "checked_steps": [
+      1,
+      2,
+      3
+    ],
+    "graph": "seven-site nearest-neighbour path witness",
+    "step_operator": "A_ij=1/2 for |i-j|=1"
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_cell_complex_typed_embedding_gate",
+  "parent": {
+    "determinant": 0,
+    "kernel_tangent_at_r_half": [
+      "1",
+      "1",
+      "3/4",
+      "1"
+    ],
+    "rank_nullity": "3/1",
+    "residuals": [
+      "k1-r",
+      "k2-r*k1",
+      "k3-r*k2"
+    ]
+  },
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_spectral_density_memory_scale_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "7ce7782f276f9e6037ce154d9e6fb07bc73e8fcdd3786cda95753f2c0065daa4",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "obligations": [
+      "local_causal_kernel_00",
+      "local_causal_kernel_01",
+      "local_causal_kernel_02",
+      "local_causal_kernel_03",
+      "local_causal_kernel_04",
+      "local_causal_kernel_05",
+      "local_causal_kernel_06",
+      "local_causal_kernel_07",
+      "local_causal_kernel_08",
+      "local_causal_kernel_09",
+      "local_causal_kernel_10",
+      "local_causal_kernel_11",
+      "local_causal_kernel_12",
+      "local_causal_kernel_13",
+      "local_causal_kernel_14",
+      "local_causal_kernel_15",
+      "local_causal_kernel_16",
+      "local_causal_kernel_17",
+      "local_causal_kernel_18",
+      "local_causal_kernel_19",
+      "local_causal_kernel_20",
+      "local_causal_kernel_21"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_audit": {
+    "after_step_time_anchor": "3/1",
+    "after_step_time_and_length_anchors": "4/0",
+    "kernel": [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "rank_nullity": "2/2"
+  },
+  "status": {
+    "absolute_time_origin": "0/1",
+    "causal_support": "3/3",
+    "conditional_local_causal_architecture": "8/8",
+    "damping_parameter_origin": "0/1"
+  },
+  "verdict": {
+    "KMS_ratio_is_typed_as_decay_parameter": false,
+    "absolute_memory_time_is_derived": false,
+    "locality_derives_a_finite_graph_light_cone": true,
+    "locality_derives_geometric_memory_family": true,
+    "locality_selects_decay_parameter": false
+  }
+}

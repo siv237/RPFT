@@ -1,0 +1,203 @@
+{
+  "candidate_matrix": [
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ]
+  ],
+  "candidate_matrix_rank": 6,
+  "candidate_scores": [
+    4,
+    4,
+    4,
+    4,
+    3,
+    4,
+    3,
+    2,
+    4,
+    5
+  ],
+  "candidates": [
+    "Drude_exponential_correlation",
+    "Gaussian_correlation",
+    "Ohmic_exponential_cutoff",
+    "hard_Brillouin_band",
+    "damped_oscillatory_profile",
+    "finite_K43_spectral_comb",
+    "two_KMS_on_shell_completion",
+    "maximum_entropy_hard_band",
+    "reciprocal_clock_cutoff_time",
+    "observed_relaxation_time"
+  ],
+  "component_audit": {
+    "complete_component_origins": "0/2",
+    "component_dependency_rank": 2,
+    "scale_candidates": 2,
+    "shape_candidates": 8
+  },
+  "criteria": [
+    "nonnegative_spectral_density",
+    "normalized_full_profile",
+    "finite_absolute_memory",
+    "exact_KMS_on_shell_compatibility",
+    "selected_by_existing_parent",
+    "independent_absolute_scale_orbit_breaker"
+  ],
+  "date": "2026-09-02",
+  "exact_profile_witnesses": {
+    "Gaussian_tau_times_omega": "sqrt(pi)/2",
+    "compact_triangle_tau_times_omega": "1/2",
+    "damped_cosine_tau_times_omega": "1/2",
+    "exponential_tau_times_omega": "1"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_spectral_density_memory_scale_candidate_audit_gate",
+  "maximum_score": "5/6",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_parent_origin_gate",
+  "passing_candidates": 0,
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_correlation_time_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "cbad1668b7ab9002aa035bb5bb5847f531a349ad44b292521fe40787a21a394d",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "obligations": [
+      "spectral_memory_audit_00",
+      "spectral_memory_audit_01",
+      "spectral_memory_audit_02",
+      "spectral_memory_audit_03",
+      "spectral_memory_audit_04",
+      "spectral_memory_audit_05",
+      "spectral_memory_audit_06",
+      "spectral_memory_audit_07",
+      "spectral_memory_audit_08",
+      "spectral_memory_audit_09",
+      "spectral_memory_audit_10",
+      "spectral_memory_audit_11",
+      "spectral_memory_audit_12",
+      "spectral_memory_audit_13",
+      "spectral_memory_audit_14",
+      "spectral_memory_audit_15",
+      "spectral_memory_audit_16",
+      "spectral_memory_audit_17",
+      "spectral_memory_audit_18",
+      "spectral_memory_audit_19",
+      "spectral_memory_audit_20",
+      "spectral_memory_audit_21"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_audit": {
+    "after_velocity_anchor": "3/1",
+    "after_velocity_and_length_anchors": "4/0",
+    "kernel": [
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "rank_nullity": "2/2"
+  },
+  "status": {
+    "absolute_memory_scale_origin": "0/1",
+    "candidate_coverage": "10/10",
+    "criterion_rank": "6/6",
+    "origin_ledger": "3/6",
+    "passing_candidates": "0/10",
+    "spectral_shape_origin": "0/1"
+  },
+  "verdict": {
+    "absolute_bath_memory_is_derived": false,
+    "existing_parent_selects_a_unique_profile": false,
+    "observed_relaxation_is_noncircular": false,
+    "standard_profiles_are_mathematically_available": true
+  }
+}

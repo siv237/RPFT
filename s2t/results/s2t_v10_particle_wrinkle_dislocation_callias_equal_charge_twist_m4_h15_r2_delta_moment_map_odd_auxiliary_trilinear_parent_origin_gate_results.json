@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_moment_map_odd_auxiliary_trilinear_parent_origin_gate",
+  "independence_diagnosis": {
+    "antisymmetric_mixing_is_quadratically_silent": true,
+    "half_mixed_trace_metric_rank_nullity": [
+      16,
+      0
+    ],
+    "inherited_trace_metric_rank_nullity": [
+      16,
+      0
+    ],
+    "target_trace_metric_rank_nullity": [
+      8,
+      8
+    ],
+    "unit_mixing_identifies_one_field_copy": true
+  },
+  "moment_map_trilinear": {
+    "canonical_direct_sum_cross_rank": 0,
+    "operator": "Q=6Y",
+    "operator_rank": 8,
+    "spectrum": [
+      3,
+      -3,
+      7,
+      1,
+      -1,
+      -7,
+      3,
+      -3
+    ],
+    "target_cross_rank": 8
+  },
+  "multiplicity_metric": {
+    "free_parameter": "kappa",
+    "general_normalized_form": "K(kappa)=[[1,kappa],[kappa,1]]",
+    "half_mixing_diagonal_form": [
+      3,
+      1
+    ],
+    "inherited_kappa": 0,
+    "symmetric_invariant_basis_rank": 3,
+    "target_diagonal_form": [
+      4,
+      0
+    ],
+    "target_kappa": 1,
+    "unit_diagonal_constraint_nullity": 1,
+    "unit_diagonal_constraint_rank": 2
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_mixed_curvature_parent_origin_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_odd_auxiliary_cross_bilinear_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "59ece152b44f2846452c7e72e2fb8ee2c907fd0ece5be1b01cf2e7cc0629e892",
+    "floating_point_values": 0,
+    "obligation_count": 21,
+    "obligations": [
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_00",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_01",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_02",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_03",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_04",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_05",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_06",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_07",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_08",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_09",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_10",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_11",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_12",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_13",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_14",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_15",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_16",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_17",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_18",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_19",
+      "h15_r2_delta_moment_map_odd_auxiliary_trilinear_20"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_target_loaded_parent": "3/5",
+    "physical_inherited_parent": "3/5",
+    "remaining_slots": [
+      "coefficient_origin",
+      "inherited_nonzero_cross_block"
+    ]
+  },
+  "verdict": {
+    "Delta_moment_map_fixes_Q_direction": true,
+    "nondegenerate_normalized_metric_fixes_unit_cross_coefficient": false,
+    "orthogonal_direct_sum_generates_cross_bilinear": false,
+    "physical_parent_found": false
+  }
+}

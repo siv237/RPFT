@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_dimensional_transmutation_parent_origin_gate",
+  "inherited_rg": {
+    "beta_coefficient": "2",
+    "boundary_coupling_squared": "3/8",
+    "log_Lambda_L_over_mu_spec": "32*pi^2/3",
+    "log_m_DT_over_mu_spec_squared": "64*pi^2/3"
+  },
+  "k43_compatibility": {
+    "compatible": false,
+    "established_tau_birth_c_Lambda43": "42",
+    "mismatch_factor": "42*exp(32*pi^2/3)",
+    "naive_identification": "mu_spec=Lambda43"
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_k43_rg_boundary_matching_origin_gate",
+  "parent": {
+    "determinant": 1,
+    "hessian": "I3",
+    "invariant_coordinates": 3,
+    "rank": 3
+  },
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_absolute_scale_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "9492adbe572c48e9a03ac6d287871e0ed35964ef3a514d5b9baf2f16cce5a114",
+    "floating_point_values": 0,
+    "obligation_count": 26,
+    "obligations": [
+      "birth_tick_dimensional_transmutation_00",
+      "birth_tick_dimensional_transmutation_01",
+      "birth_tick_dimensional_transmutation_02",
+      "birth_tick_dimensional_transmutation_03",
+      "birth_tick_dimensional_transmutation_04",
+      "birth_tick_dimensional_transmutation_05",
+      "birth_tick_dimensional_transmutation_06",
+      "birth_tick_dimensional_transmutation_07",
+      "birth_tick_dimensional_transmutation_08",
+      "birth_tick_dimensional_transmutation_09",
+      "birth_tick_dimensional_transmutation_10",
+      "birth_tick_dimensional_transmutation_11",
+      "birth_tick_dimensional_transmutation_12",
+      "birth_tick_dimensional_transmutation_13",
+      "birth_tick_dimensional_transmutation_14",
+      "birth_tick_dimensional_transmutation_15",
+      "birth_tick_dimensional_transmutation_16",
+      "birth_tick_dimensional_transmutation_17",
+      "birth_tick_dimensional_transmutation_18",
+      "birth_tick_dimensional_transmutation_19",
+      "birth_tick_dimensional_transmutation_20",
+      "birth_tick_dimensional_transmutation_21",
+      "birth_tick_dimensional_transmutation_22",
+      "birth_tick_dimensional_transmutation_23",
+      "birth_tick_dimensional_transmutation_24",
+      "birth_tick_dimensional_transmutation_25"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_audit": {
+    "after_c_anchor_rank_nullity": "4/1",
+    "after_independent_mu_spec_anchor": "5/0",
+    "residual_kernel_after_c": [
+      1,
+      -1,
+      -1,
+      1,
+      0
+    ],
+    "unanchored_rank_nullity": "3/2"
+  },
+  "status": {
+    "absolute_birth_tick_origin": "0/1",
+    "conditional_architecture": "9/9",
+    "historical_rg_data": "2/2",
+    "physical_origin": "0/4",
+    "typed_rg_transfer_to_bath": "0/1"
+  },
+  "tick_candidate": {
+    "omega_DT": "c*mu_spec*exp(32*pi^2/3)",
+    "tau_DT": "exp(-32*pi^2/3)/(c*mu_spec)",
+    "tau_DT_c_mu_spec": "exp(-32*pi^2/3)"
+  },
+  "verdict": {
+    "absolute_birth_tick_is_derived": false,
+    "dimensional_transmutation_defines_a_relative_tick": true,
+    "dimensional_transmutation_fixes_mu_spec": false,
+    "naive_k43_identification_is_compatible": false
+  }
+}

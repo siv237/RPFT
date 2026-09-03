@@ -2,7 +2,7 @@
 
 > Status: working
 > Type: maintenance
-> Updated: 2026-07-09
+> Updated: 2026-09-03
 
 ## Summary
 
@@ -25,6 +25,11 @@ Use this four-part structure for task reports and stage summaries:
 - Separate completed results from remaining risks or open research gaps.
 - Do not present partial success as full closure.
 - For wiki maintenance, append a `wiki/log.md` entry when a change is reusable or structural.
+- After every 3--5 new research gates, pause the local chain for an
+  intuition-saturation synthesis: recheck the formulas, compare the branch
+  with the whole program, inspect primary literature, and state the next
+  discriminating calculation. Do not start a sixth local gate without this
+  checkpoint.
 
 ## Example Report Shape
 

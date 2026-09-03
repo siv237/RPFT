@@ -1,0 +1,200 @@
+{
+  "candidate_matrix": [
+    [
+      0,
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ]
+  ],
+  "criteria": [
+    "nonabelian_gauge_carrier",
+    "anomaly_free",
+    "internally_typed",
+    "exact_beta_minus_two",
+    "typed_pole_coupling",
+    "parent_selected_content"
+  ],
+  "date": "2026-09-02",
+  "existing_nonabelian_betas": {
+    "SM_SU2": "-19/6",
+    "SM_SU3": "-7"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_anomaly_free_carrier_candidate_audit_gate",
+  "matrix_rank": 6,
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_eight_dirac_k43_typed_embedding_gate",
+  "pass_vector": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_beta_sign_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "6316387511ec0d4763a7e86a663b7dc49d933732315cbd46547725d96f4ddf3f",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "status": "lcf-checked"
+  },
+  "required_beta": "-2",
+  "restricted_fundamental_solutions": [
+    {
+      "Dirac_fundamentals": 8,
+      "SU_N": 2,
+      "beta": "-2",
+      "complex_scalar_fundamentals": 0,
+      "complexity": 10
+    },
+    {
+      "Dirac_fundamentals": 13,
+      "SU_N": 3,
+      "beta": "-2",
+      "complex_scalar_fundamentals": 2,
+      "complexity": 18
+    },
+    {
+      "Dirac_fundamentals": 19,
+      "SU_N": 4,
+      "beta": "-2",
+      "complex_scalar_fundamentals": 0,
+      "complexity": 23
+    },
+    {
+      "Dirac_fundamentals": 24,
+      "SU_N": 5,
+      "beta": "-2",
+      "complex_scalar_fundamentals": 2,
+      "complexity": 31
+    },
+    {
+      "Dirac_fundamentals": 30,
+      "SU_N": 6,
+      "beta": "-2",
+      "complex_scalar_fundamentals": 0,
+      "complexity": 36
+    }
+  ],
+  "restricted_minimal_candidate": {
+    "Weyl_doublets": 16,
+    "Witten_parity": 0,
+    "anomaly_free": true,
+    "carrier": "SU2_plus_8_Dirac_fundamentals",
+    "coupled_to_pole_mode": false,
+    "typed_in_K43": false
+  },
+  "score_vector": [
+    4,
+    4,
+    4,
+    3,
+    3,
+    3,
+    3,
+    2,
+    3,
+    3,
+    5
+  ],
+  "status": {
+    "candidate_passes": "0/11",
+    "physical_origin": "0/3",
+    "restricted_minimality": "1/1"
+  },
+  "verdict": {
+    "existing_SM_nonabelian_sector_has_exact_beta": false,
+    "minimal_candidate_is_in_current_K43_carrier": false,
+    "minimal_candidate_is_typed_to_transmuted_pole": false,
+    "physical_AF_carrier_is_derived": false,
+    "restricted_minimal_anomaly_free_candidate_exists": true
+  }
+}

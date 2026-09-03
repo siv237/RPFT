@@ -2,12 +2,12 @@
 
 > Status: working
 > Type: synthesis
-> Updated: 2026-08-31
+> Updated: 2026-09-03
 
 ## Summary
 
-Серия состоит из девяти завершённых последовательно усложняющихся томов и
-специфицированной программы Тома X. Первый том задаёт
+Серия состоит из десяти завершённых последовательно усложняющихся томов и
+специфицированной программы Тома XI. Первый том задаёт
 общую исследовательскую программу, второй впервые оформляет её как S2T-
 спектральное замыкание, тома III–VI проверяют родительское действие,
 наблюдаемую реконструкцию, архитектуру дефекта и динамическое рождение материи,
@@ -22,8 +22,11 @@
 корреляционный оператор, построил linking-QMS, микроскопические дилатации и
 точно локализовал границы сшивки секторов. Том IX завершён: условный
 augmented parent проходит `6/6`, но строгий physical ledger равен `3/6`,
-reopening packages `0/2`. Том X специфицирован как quantum-RG программа,
-но его construction status пока `0/6`.
+reopening packages `0/2`. Том X завершён как геометрически растущая
+quantum-RG программа: operational conditional/physical `6/6` и `4/6`,
+унаследованный quantum-RG contract `3/6`, reopening packages `0/4`.
+Абсолютный масштаб и physical logdet parent не выведены. Том XI
+специфицирован как программа реляционных наблюдаемых и возмущений.
 
 ## Карта томов
 
@@ -38,7 +41,8 @@ reopening packages `0/2`. Том X специфицирован как quantum-R
 | VII | `s2t/docs/tome7_s2t_rank_change_parent.tex` | Проверка одного рангоизменяющего поля на общем физическом носителе | Завершён как качественный универсальный класс с переходом `(7,0,20) -> (0,0,27)` на проверенном срезе; полное физическое и массовое замыкание не получено |
 | VIII | `s2t/docs/tome8_s2t_correlation_transition.tex` | Полное корреляционное ядро, квантово-марковская динамика и границы сшивки секторов | Завершён: operator/QMS/dilation closure получен; four-slot physical parent и абсолютный масштаб не выведены |
 | IX | `s2t/docs/tome9_s2t_dynamic_parent.tex` | Единый динамический родитель, физический масштаб и закон транспорта | Завершён и физически заморожен: conditional `6/6`, physical `3/6`, reopening `0/2`; physical four-slot parent не выведен |
-| X | программа в `s2t/gates/version9_final_conclusion_and_tome10_program_gate.tex` | Quantum RG, аномалия следа и размерная трансмутация | Specification `6/6`, construction `0/6`; первый admission-гейт ещё не построен |
+| X | `s2t/docs/tome10_s2t_geometric_growth.tex` | Геометрическая история роста, quantum RG, KMS-поток и particle-wrinkle frontier | Завершён и заморожен: operational conditional/physical `6/6` и `4/6`, quantum-RG physical `3/6`, reopening `0/4` |
+| XI | программа в `s2t/gates/version10_final_conclusion_and_tome11_program_gate.tex` | Scale quotient, реляционные наблюдаемые, возмущения и фальсификация | Specification `6/6`, construction `0/6`; первый admission-гейт ещё не построен |
 
 ## Логика наследования
 
@@ -52,7 +56,8 @@ reopening packages `0/2`. Том X специфицирован как quantum-R
             -> Том VII: может ли одно поле переменного ранга дать общий родитель и эндогенный запуск
               -> Том VIII: может ли полный корреляционный процесс сшить два центральных сектора
                 -> Том IX: может ли один физический parent выбрать носитель, масштаб, coupling и транспорт
-                  -> Том X: может ли quantum RG породить физический масштаб и меру
+                  -> Том X: может ли quantum RG и рост геометрии породить физический масштаб и меру
+                    -> Том XI: какие реляционные наблюдаемые и проверяемые следствия остаются после quotient по масштабу
 ```
 
 Нумерация томов не совпадает с версиями отдельных гейтов. Например,
@@ -92,6 +97,7 @@ S2T (`Shadow-to-Theory`) — дисциплина перевода такого 
 - [[tome8-final-conclusion-and-tome9-program]] — итог Тома VIII.
 - [[tome9-opening-contract]] — входной контракт и первый admission Тома IX.
 - [[tome9-final-conclusion-and-tome10-program]] — финал Тома IX и контракт X.
+- [[version10-final-conclusion-and-tome11-program-gate]] — финал Тома X и контракт XI.
 
 ## Source Notes
 
@@ -108,3 +114,5 @@ S2T (`Shadow-to-Theory`) — дисциплина перевода такого 
 - `s2t/docs/version8_final_conclusion_and_next_program.tex`
 - `s2t/docs/tome9_s2t_dynamic_parent.tex`
 - `s2t/docs/version9_introduction_and_problem_statement.tex`
+- `s2t/docs/tome10_s2t_geometric_growth.tex`
+- `s2t/gates/version10_final_conclusion_and_tome11_program_gate.tex`

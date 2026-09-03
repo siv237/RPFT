@@ -1,0 +1,134 @@
+{
+  "candidate_matrix_rank": 6,
+  "candidate_scores": [
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    4,
+    5,
+    5,
+    3,
+    4,
+    5
+  ],
+  "candidates": [
+    "positive_incidence_stiffness",
+    "orientation_reversal",
+    "positive_edge_reweighting",
+    "adjacency_quadratic_form",
+    "antisymmetric_boundary_form",
+    "stable_auxiliary_schur_complement",
+    "supercritical_auxiliary_mixing",
+    "fermionic_determinant_susceptibility",
+    "Callias_sign_changing_profile",
+    "real_Higgs_rank_change_portal",
+    "negative_common_mode_wrong_type",
+    "target_loaded_minus_laplacian"
+  ],
+  "closest_routes": [
+    {
+      "missing": "actual_negative_mode",
+      "name": "positive_incidence_stiffness",
+      "score": "5/6"
+    },
+    {
+      "missing": "parent_derived_coefficient_without_target_loading",
+      "name": "adjacency_quadratic_form",
+      "score": "5/6"
+    },
+    {
+      "missing": "inherited_carrier_and_operator",
+      "name": "fermionic_determinant_susceptibility",
+      "score": "5/6"
+    },
+    {
+      "missing": "inherited_carrier_and_operator",
+      "name": "Callias_sign_changing_profile",
+      "score": "5/6"
+    }
+  ],
+  "criteria": [
+    "correct_relative_incidence_type",
+    "inherited_carrier_and_operator",
+    "actual_negative_mode",
+    "bounded_nonlinear_completion",
+    "parent_derived_coefficient_without_target_loading",
+    "phase_and_orientation_compatibility"
+  ],
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_m4_cell_incidence_tachyonic_sign_parent_origin_gate",
+  "inherited_parent_derived_negative_seed_count": 0,
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_m4_fermionic_determinant_tachyonic_susceptibility_common_carrier_admission_gate",
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_m4_bifundamental_condensate_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "f799050651d97b5f3f05163486444bd774b972bcc21fdaae67db0e09ebe246e1",
+    "floating_point_values": 0,
+    "obligation_count": 27,
+    "obligations": [
+      "m4_cell_incidence_tachyonic_sign_parent_00",
+      "m4_cell_incidence_tachyonic_sign_parent_01",
+      "m4_cell_incidence_tachyonic_sign_parent_02",
+      "m4_cell_incidence_tachyonic_sign_parent_03",
+      "m4_cell_incidence_tachyonic_sign_parent_04",
+      "m4_cell_incidence_tachyonic_sign_parent_05",
+      "m4_cell_incidence_tachyonic_sign_parent_06",
+      "m4_cell_incidence_tachyonic_sign_parent_07",
+      "m4_cell_incidence_tachyonic_sign_parent_08",
+      "m4_cell_incidence_tachyonic_sign_parent_09",
+      "m4_cell_incidence_tachyonic_sign_parent_10",
+      "m4_cell_incidence_tachyonic_sign_parent_11",
+      "m4_cell_incidence_tachyonic_sign_parent_12",
+      "m4_cell_incidence_tachyonic_sign_parent_13",
+      "m4_cell_incidence_tachyonic_sign_parent_14",
+      "m4_cell_incidence_tachyonic_sign_parent_15",
+      "m4_cell_incidence_tachyonic_sign_parent_16",
+      "m4_cell_incidence_tachyonic_sign_parent_17",
+      "m4_cell_incidence_tachyonic_sign_parent_18",
+      "m4_cell_incidence_tachyonic_sign_parent_19",
+      "m4_cell_incidence_tachyonic_sign_parent_20",
+      "m4_cell_incidence_tachyonic_sign_parent_21",
+      "m4_cell_incidence_tachyonic_sign_parent_22",
+      "m4_cell_incidence_tachyonic_sign_parent_23",
+      "m4_cell_incidence_tachyonic_sign_parent_24",
+      "m4_cell_incidence_tachyonic_sign_parent_25",
+      "m4_cell_incidence_tachyonic_sign_parent_26"
+    ],
+    "status": "lcf-checked"
+  },
+  "sign_theorem": {
+    "fermion_determinant_quadratic_curvature": -2,
+    "incidence_laplacian_spectrum": [
+      0,
+      2
+    ],
+    "orientation_reversal_changes_laplacian": false,
+    "positive_weight_laplacian_spectrum": [
+      0,
+      6
+    ],
+    "stable_auxiliary_schur_complement": "3/2",
+    "supercritical_auxiliary_schur_complement": -2,
+    "supercritical_parent_determinant": -2
+  },
+  "status": {
+    "audit_coverage": "12/12",
+    "conditional_fermionic_sign": "1/1",
+    "criterion_rank": "6/6",
+    "inherited_parent_derived_negative_seed": "0/12",
+    "physical_origin": "0/4",
+    "stable_bosonic_incidence_tachyonic_sign": "0/1",
+    "strict_candidate_pass": "0/12"
+  },
+  "strict_pass_count": 0,
+  "verdict": {
+    "fermionic_carrier_is_inherited": false,
+    "fermionic_determinant_supplies_canonical_negative_susceptibility": true,
+    "orientation_can_reverse_incidence_stiffness": false,
+    "stable_positive_bosonic_parent_can_generate_tachyonic_schur_complement": false,
+    "supercritical_bosonic_parent_only_relocates_preexisting_instability": true
+  }
+}

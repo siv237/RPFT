@@ -1,0 +1,94 @@
+{
+  "admissibility_dichotomy": {
+    "columns": [
+      "Markov_positive",
+      "canonical_transfer_symmetry"
+    ],
+    "fully_passing_embeddings": 0,
+    "matrix": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "rank": 2
+  },
+  "coordinate_embedding": {
+    "canonical_transfer_choice": false,
+    "compressed_cycle_exact": true,
+    "embedded_generator_nullity": 41,
+    "embedded_generator_rank": 2,
+    "isometry": true,
+    "lines": [
+      "vacuum",
+      "hypercharge",
+      "one_of_30_transfer_labels"
+    ],
+    "negative_offdiagonal_rates": 0,
+    "probability_conserving": true,
+    "projector_rank": 3
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_hopf_cycle_k43_typed_embedding_gate",
+  "next_gate": "version10_cell_birth_four_volume_hopf_cycle_k43_kms_product_embedding_gate",
+  "predecessor": "version10_cell_birth_four_volume_throughflow_affinity_impedance_origin_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "7d8189e0fe5aa1e20c25c7552c4d9b8d471e57723c55f54bdd9732a52c567cb6",
+    "floating_point_values": 0,
+    "obligation_count": 20,
+    "obligations": [
+      "coordinate_cycle_embedding_isometry",
+      "coordinate_cycle_projector_rank_three",
+      "coordinate_cycle_compression",
+      "coordinate_cycle_rank_two",
+      "coordinate_cycle_nullity_forty_one",
+      "coordinate_cycle_probability_conservation",
+      "coordinate_cycle_markov_offdiagonal",
+      "coordinate_transfer_choice_degeneracy_thirty",
+      "symmetric_cycle_embedding_isometry",
+      "symmetric_transfer_permutation_invariance",
+      "symmetric_cycle_compression",
+      "symmetric_cycle_negative_rate_witness",
+      "symmetric_cycle_negative_rate_count",
+      "embedding_admissibility_dichotomy",
+      "zero_fully_admissible_embeddings",
+      "embedding_dichotomy_rank_two",
+      "hopf_cycle_embedding_audit_full",
+      "hopf_cycle_origin_ledger_two",
+      "hopf_cycle_origin_score_two",
+      "canonical_markov_parent_origin_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_rate_scale": "0/1",
+    "architecture": "8/8",
+    "canonical_Markov_embedding": "0/1",
+    "common_parent_origin": "0/1",
+    "typed_origin": "2/5"
+  },
+  "symmetric_embedding": {
+    "compressed_cycle_exact": true,
+    "isometry": true,
+    "lines": [
+      "vacuum",
+      "hypercharge",
+      "uniform_transfer_superposition"
+    ],
+    "negative_offdiagonal_rates": 870,
+    "negative_rate_witness": "L[1,2]=-kappa/10",
+    "probability_generator": false,
+    "transfer_permutation_invariant": true
+  },
+  "verdict": {
+    "K43_alone_supplies_physical_Hopf_cycle": false,
+    "coordinate_K43_cycle_exists": true,
+    "coordinate_choice_is_canonical": false,
+    "symmetric_embedding_is_Markov_positive": false
+  }
+}

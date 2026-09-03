@@ -1,0 +1,39 @@
+{
+  "conditional_pole": {
+    "inverse_propagator": "q-exp(-64*pi^2/3)",
+    "k_star_ell": "exp(-32*pi^2/3)",
+    "mass_squared_cell": "exp(-64*pi^2/3)",
+    "pole": "q=exp(-64*pi^2/3)",
+    "projector_rank": 1,
+    "residue": "1"
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_spectral_pole_parent_origin_gate",
+  "inherited_rg": {
+    "beta_sign": "positive",
+    "creates_required_IR_pole": false,
+    "infrared_mass_term": "0",
+    "singularity": "ultraviolet_Landau_pole"
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_ir_mass_term_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_physical_mode_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "9e1e4d3a1a6044b5e97f1406a1a3190a016b34541e0e0ce44241e61da6a78877",
+    "floating_point_values": 0,
+    "obligation_count": 23,
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_architecture": "10/10",
+    "conditional_pole": "6/6",
+    "physical_mode_identified": false,
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "a_healthy_conditional_pole_can_be_written": true,
+    "physical_mode_is_derived": false,
+    "positive_beta_Landau_pole_is_the_particle_pole": false,
+    "the_pole_is_generated_by_inherited_RG": false
+  }
+}

@@ -1,0 +1,154 @@
+\chapter{Типизированное вложение спектральной самоэнергии в 43-мерную ячейку}
+\label{ch:v10-inflow-spectral-self-energy-k43-typed-embedding}
+
+\section{Проверяемая гипотеза}
+
+Предыдущий гейт построил абстрактный двухмодовый резервуар с ненулевой
+интенсивной самоэнергией, но не связал его с носителем программы. Настоящий
+гейт проверяет, содержится ли такая пара уже в столкновительной ячейке
+\begin{equation}
+ \mathcal K_{43}=\mathbb C|0\rangle\oplus
+ \operatorname{span}\{|a\rangle:a=1,\ldots,42\},
+ \label{eq:v10-k43-cell}
+\end{equation}
+построенной в Томе VIII, и совместима ли она с калибровочной типизацией,
+звёздным взаимодействием и шестимерным KMS-множителем.
+
+\section{Каноническая двумерная подячейка}
+
+Полный вещественный шумовой репер состоит из тридцати направлений переноса и
+двенадцати калибровочных направлений. Последнее направление есть уже
+унаследованный генератор гиперзаряда $Y$. Он коммутирует со всеми
+двенадцатью генераторами концевой калибровочной алгебры:
+\begin{equation}
+ [X_A,Y]=0,
+ \qquad A=1,\ldots,12.
+ \label{eq:v10-hypercharge-invariant-line}
+\end{equation}
+Кроме того, его представленная матрица на $21$-мерном концевом пространстве
+имеет полный ранг $21$.
+
+Поэтому вакуумная линия и шумовая линия гиперзаряда образуют
+калибровочно-инвариантный двумерный подноситель
+\begin{equation}
+ \mathcal W_Y=\operatorname{span}\{|Y\rangle,|0\rangle\}
+ \subset\mathcal K_{43}.
+ \label{eq:v10-hypercharge-vacuum-subcarrier}
+\end{equation}
+Пусть $E_Y:\mathbb C^2\to\mathcal K_{43}$ задаётся столбцами
+$E_Y=(|Y\rangle,|0\rangle)$. Тогда
+\begin{equation}
+ E_Y^*E_Y=I_2,
+ \qquad P_Y=E_YE_Y^*,
+ \qquad \rank P_Y=2.
+ \label{eq:v10-k43-typed-isometry}
+\end{equation}
+Это не произвольный выбор двух координат: обе линии различены уже
+существующими типами вакуума и центрального калибровочного направления.
+
+\section{Совместимость со звёздным взаимодействием}
+
+Старый гамильтониан столкновения содержит слагаемое
+\begin{equation}
+ H_Y=Y\otimes
+ \bigl(|Y\rangle\langle0|+|0\rangle\langle Y|\bigr).
+ \label{eq:v10-hypercharge-star-restriction}
+\end{equation}
+После ограничения на $\mathbb C^{21}\otimes\mathcal W_Y$ оно имеет ранг
+\begin{equation}
+ \rank H_Y=42.
+ \label{eq:v10-hypercharge-star-rank}
+\end{equation}
+Следовательно, найденная подячейка не является молчащим наблюдателем: она
+уже связана с каждой концевой компонентой через существующее физическое
+направление гиперзаряда.
+
+Тензорное поднятие
+\begin{equation}
+ E_Y^{\rm KMS}=E_Y\otimes I_6:
+ \mathbb C^{12}\longrightarrow\mathcal K_{43}\otimes\mathbb C^6
+ \label{eq:v10-k43-kms-lift}
+\end{equation}
+остаётся изометрией и имеет ранг $12$. Это доказывает совместимость типов с
+KMS-множителем, но само по себе ещё не выводит условие детального равновесия
+для нового спектрального оператора.
+
+\section{Вложение взаимно обратного спектра}
+
+На всей $43$-мерной ячейке определим оператор, тождественный на ортогональном
+дополнении $\mathcal W_Y$:
+\begin{equation}
+ K_{43}(\zeta)
+ =I_{43}+(e^{-\zeta}-1)|Y\rangle\langle Y|
+ +(e^{\zeta}-1)|0\rangle\langle0|.
+ \label{eq:v10-embedded-reciprocal-operator}
+\end{equation}
+Его сжатие точно воспроизводит оператор прошлого гейта,
+\begin{equation}
+ E_Y^*K_{43}(\zeta)E_Y
+ =\operatorname{diag}(e^{-\zeta},e^{\zeta}),
+ \qquad \det K_{43}(\zeta)=1.
+ \label{eq:v10-embedded-reciprocal-compression}
+\end{equation}
+Обратный оператор получается заменой $\zeta\mapsto-\zeta$. Поэтому
+самоэнергия входящей гиперзарядовой линии сохраняет точный ход
+\begin{equation}
+ \Sigma_Y(\zeta)
+ =\langle Y|K_{43}^{-1}(\zeta)|Y\rangle=e^{\zeta},
+ \qquad
+ \frac{d\Sigma_Y}{d\zeta}=\Sigma_Y.
+ \label{eq:v10-typed-hypercharge-self-energy}
+\end{equation}
+
+\section{Граница родительского происхождения}
+
+Унаследованный локальный родитель вакуумной цепи равен
+\begin{equation}
+ h_{\rm cell}=I_{43}-|0\rangle\langle0|.
+ \label{eq:v10-inherited-cell-parent}
+\end{equation}
+На найденной подячейке он даёт лишь
+\begin{equation}
+ E_Y^*h_{\rm cell}E_Y=\operatorname{diag}(1,0),
+ \qquad
+ \frac{d}{d\zeta}(E_Y^*h_{\rm cell}E_Y)=0.
+ \label{eq:v10-inherited-cell-parent-zero-running}
+\end{equation}
+Таким образом, носитель, калибровочная линия, ненулевое взаимодействие и
+KMS-типизация действительно унаследованы. Но коэффициенты $e^{\pm\zeta}$
+пока внесены в новый оператор определением: старый родитель ячейки их не
+порождает.
+
+\begin{theorem}[Типизированный резервуар уже содержится в $\mathcal K_{43}$]
+Пара из вакуума и гиперзарядового шумового направления задаёт каноническую
+калибровочно-инвариантную изометрию $\mathbb C^2\hookrightarrow\mathcal
+K_{43}$. Ограниченное звёздное взаимодействие имеет ранг $42$, KMS-поднятие
+имеет ранг $12$, а вложенный взаимно обратный оператор сохраняет
+$\Sigma_Y=e^{\zeta}$ и её ненулевой интенсивный ход.
+\end{theorem}
+
+\begin{nogocriterion}[Вложение носителя не выводит спектральный закон]
+Из существования подпространства $\mathcal W_Y$ не следует зависимость
+$K_{43}(\zeta)$. Унаследованный родитель $I-|0\rangle\langle0|$ не зависит
+от $\zeta$ и имеет нулевую производную. Поэтому типизированное вложение
+закрывает вопрос места действия, но не физическое происхождение взаимно
+обратного спектра и абсолютного масштаба.
+\end{nogocriterion}
+
+\begin{protocol}[Статус типизированного вложения]\begin{enumerate}
+\item изометрия $\mathbb C^2\hookrightarrow\mathcal K_{43}$:
+\textbf{получена};
+\item калибровочная инвариантность гиперзарядовой линии: \textbf{$12/12$};
+\item ранг ограниченного звёздного взаимодействия: \textbf{$42$};
+\item ранг KMS-поднятия: \textbf{$12$};
+\item архитектура типизированного вложения: \textbf{$8/8$};
+\item общий реестр происхождения: \textbf{$4/6$};
+\item происхождение $e^{\pm\zeta}$ из старого родителя: \textbf{$0/1$};
+\item общий родитель спектрального хода: \textbf{$0/1$};
+\item абсолютный масштаб: \textbf{не выведен};
+\item следующий гейт: \textbf{происхождение взаимно обратного
+спектрального оператора из геометрического родителя роста}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_inflow_spectral_self_energy_k43_typed_embedding_gate_results.json}.

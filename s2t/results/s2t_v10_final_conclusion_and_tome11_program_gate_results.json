@@ -1,0 +1,158 @@
+{
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_final_conclusion_and_tome11_program_gate",
+  "next_gate": "version11_relational_observable_common_carrier_admission_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_shift_symmetry_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "6891843b1a369bcad87c79f90ac69cc8207890d20f88cb90f93daf5aecece25c",
+    "floating_point_values": 0,
+    "obligation_count": 18,
+    "obligations": [
+      "version10_final_conclusion_tome11_program_00",
+      "version10_final_conclusion_tome11_program_01",
+      "version10_final_conclusion_tome11_program_02",
+      "version10_final_conclusion_tome11_program_03",
+      "version10_final_conclusion_tome11_program_04",
+      "version10_final_conclusion_tome11_program_05",
+      "version10_final_conclusion_tome11_program_06",
+      "version10_final_conclusion_tome11_program_07",
+      "version10_final_conclusion_tome11_program_08",
+      "version10_final_conclusion_tome11_program_09",
+      "version10_final_conclusion_tome11_program_10",
+      "version10_final_conclusion_tome11_program_11",
+      "version10_final_conclusion_tome11_program_12",
+      "version10_final_conclusion_tome11_program_13",
+      "version10_final_conclusion_tome11_program_14",
+      "version10_final_conclusion_tome11_program_15",
+      "version10_final_conclusion_tome11_program_16",
+      "version10_final_conclusion_tome11_program_17"
+    ],
+    "status": "lcf-checked"
+  },
+  "reopening_packages": {
+    "physical_passes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "score": "0/4"
+  },
+  "stable_achievements": [
+    "geometric history zeta=log(N/N0)/3 and common typed carrier",
+    "dimensionless reciprocal spectral running with exact trace witness",
+    "normalized cell-birth and KMS throughflow architectures",
+    "relative curvature, Newton-cell and entropy-growth identities",
+    "RG-invariant discrete resolution not requiring absolute cell size",
+    "typed particle-wrinkle chain ending in a strict Mathai-Quillen shift no-go"
+  ],
+  "tome10_operational_contract": {
+    "conditional": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "conditional_score": "6/6",
+    "criteria": [
+      "common_growth_spectral_field_carrier",
+      "physical_origin_of_normalized_birth_measure",
+      "nonzero_quantum_running_or_trace_anomaly",
+      "physical_growth_curvature_coupling",
+      "typed_geometric_to_local_energy_map",
+      "unconditional_dimensionless_consequence"
+    ],
+    "deficit": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "deficit_rank": 2,
+    "physical": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "physical_score": "4/6"
+  },
+  "tome11_program": {
+    "construction": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "criteria": [
+      "common_relational_observable_algebra",
+      "explicit_quotient_by_the_scale_orbit",
+      "linear_perturbation_and_response_theory",
+      "particle_cosmology_cross_sector_morphisms",
+      "scheme_and_gauge_independent_blind_relations",
+      "frozen_external_falsification_protocol"
+    ],
+    "dependency_determinant": 1,
+    "dependency_rank": 6,
+    "specification": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "title": "Relational observables, perturbations, and falsifiable cross-sector consequences"
+  },
+  "tome9_inherited_quantum_rg_contract": {
+    "criteria": [
+      "common_quantum_field_RG_carrier",
+      "nonzero_beta_or_trace_anomaly",
+      "RG_invariant_transmutation_scale",
+      "typed_scale_embedding_into_KMS_Gaussian_parent",
+      "physical_measure_and_reference_state_for_logdet",
+      "scheme_independent_blind_consequence"
+    ],
+    "deficit": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "deficit_rank": 3,
+    "physical": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "physical_score": "3/6"
+  },
+  "unresolved_physical_packages": [
+    "origin of birth weights and physical clock rate",
+    "independent curvature-flow coupling and absolute cosmological scale",
+    "RG-invariant absolute transmutation scale and inherited portal",
+    "physical logdet/Berezin parent without new auxiliary fields"
+  ],
+  "verdict": {
+    "absolute_scale_derived": false,
+    "particle_wrinkle_parent_derived": false,
+    "tome10_conditionally_closed": true,
+    "tome10_frozen": true,
+    "tome10_physically_complete": false,
+    "tome11_admitted_as_program_only": true
+  }
+}

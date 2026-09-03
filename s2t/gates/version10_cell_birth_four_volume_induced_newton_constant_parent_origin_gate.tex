@@ -1,0 +1,112 @@
+\chapter{Родитель индуцированной ньютоновской постоянной}
+\label{ch:v10-induced-newton-parent}
+
+\section{Эйнштейновский коэффициент и ньютоновская площадь}
+
+В безразмерном действии коэффициент эйнштейновского члена удобно связывать
+непосредственно с геометрической ньютоновской площадью
+\begin{equation}
+ g_N:=\frac{\hbar G}{c^3},
+ \qquad 16\pi g_N B=1.
+ \label{eq:v10-newton-einstein-normalization}
+\end{equation}
+Следовательно,
+\begin{equation}
+ g_N=\frac1{16\pi B},
+ \qquad
+ G=\frac{c^3}{16\pi\hbar B}.
+ \label{eq:v10-newton-from-B}
+\end{equation}
+
+Предыдущий кривизненный сектор допускал индуцированную форму
+\begin{equation}
+ A=\alpha m^2,
+ \qquad B=\beta m,
+ \qquad
+ q:=\ell_{\mathrm{cell}}^2=\frac{\beta}{2\alpha m}.
+ \label{eq:v10-newton-induced-data}
+\end{equation}
+Поэтому условно
+\begin{equation}
+ g_N=\frac1{16\pi\beta m},
+ \qquad
+ G=\frac{c^3}{16\pi\hbar\beta m}.
+ \label{eq:v10-newton-induced-constant}
+\end{equation}
+
+\section{Слепое отношение ньютоновской и клеточной площадей}
+
+Хотя абсолютная величина $m$ остаётся свободной, она сокращается в отношении
+\begin{equation}
+ \boxed{\frac{g_N}{\ell_{\mathrm{cell}}^2}
+ =\frac{g_N}{q}
+ =\frac{\alpha}{8\pi\beta^2}}.
+ \label{eq:v10-newton-cell-blind-ratio}
+\end{equation}
+Это новое безразмерное следствие: один и тот же индуцированный масштаб
+контролирует ньютоновскую и клеточную площади.
+
+Три нормировки можно собрать в положительный цепочечный родитель:
+\begin{equation}
+ u_E=16\pi g_NB,
+ \qquad u_m=\frac{B}{\beta m},
+ \qquad u_q=\frac{2\alpha qm}{\beta},
+\end{equation}
+\begin{equation}
+ \mathcal P_N
+ =\frac12(u_E-1)^2+\frac12(u_m-u_E)^2+\frac12(u_q-u_m)^2.
+ \label{eq:v10-newton-common-parent}
+\end{equation}
+Его единственный нуль равен $u_E=u_m=u_q=1$. Гессиан имеет вид
+\begin{equation}
+ \begin{pmatrix}2&-1&0\\-1&2&-1\\0&-1&1\end{pmatrix},
+ \qquad \rank=3,
+ \qquad \det=1,
+\end{equation}
+а ведущие главные миноры равны $(2,3,1)$.
+
+\section{Оставшаяся масштабная мода}
+
+В логарифмических переменных $(g_N,B,m,q)$ три условия имеют матрицу
+\begin{equation}
+ C_N=
+ \begin{pmatrix}
+ 1&1&0&0\\
+ 0&1&-1&0\\
+ 0&0&1&1
+ \end{pmatrix}.
+ \label{eq:v10-newton-scale-map}
+\end{equation}
+Она имеет ранг/ядро $3/1$ и уничтожает $(1,-1,-1,1)^T$. Поэтому
+\begin{equation}
+ (g_N,B,m,q)\mapsto(s^2g_N,B/s^2,m/s^2,s^2q)
+\end{equation}
+сохраняет весь условный родитель. Эйнштейновская нормировка переводит
+свободу коэффициента $B$ в свободу $G$, но не уничтожает её.
+
+\begin{theorem}[Относительное происхождение ньютоновской площади]
+При условных коэффициентах $A=\alpha m^2$ и $B=\beta m$ один положительный
+родитель совместно выбирает эйнштейновскую нормировку, коэффициент и размер
+ячейки. Отношение $g_N/\ell_{\mathrm{cell}}^2=\alpha/(8\pi\beta^2)$ не зависит
+от размерного семени $m$.
+\end{theorem}
+
+\begin{nogocriterion}[Индуцированный коэффициент не является абсолютным якорем]
+Формула $G=c^3/(16\pi\hbar\beta m)$ не выводит ньютоновскую постоянную,
+пока общий родитель не выбирает абсолютную величину $m$ и коэффициент
+$\beta$. Общая масштабная мода одновременно растягивает клеточную и
+ньютоновскую площади.
+\end{nogocriterion}
+
+\begin{protocol}[Статус ньютоновской постоянной]\begin{enumerate}
+\item эйнштейновская нормировка: \textbf{$1/1$};
+\item положительный относительный родитель: \textbf{построен};
+\item относительное происхождение: \textbf{$6/6$};
+\item слепое отношение площадей: \textbf{$1/1$};
+\item происхождение $m$ и коэффициентов: \textbf{$0/2$};
+\item абсолютная ньютоновская постоянная: \textbf{$0/1$};
+\item следующий гейт: \textbf{аудит источников размерного семени $m$}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_induced_newton_constant_parent_origin_gate_results.json}.

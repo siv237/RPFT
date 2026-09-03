@@ -1,0 +1,99 @@
+\chapter{Происхождение shift-симметрии Mathai--Quillen-пары}
+\label{ch:v10-h15-r2-mathai-quillen-shift-symmetry-parent}
+
+Предыдущий аудит свёл происхождение нечётной Thom-пары к одному вопросу:
+имеет ли поле $\Sigma$ восьмимерную аддитивную gauge orbit
+\begin{equation}
+ \Sigma\longmapsto\Sigma+\varepsilon,
+ \qquad \varepsilon\in\mathbb R^8,
+ \qquad T_{\rm req}=I_8?
+\end{equation}
+Именно ghost этой symmetry мог бы быть полем $\psi_\Sigma$.
+
+После условного устранения auxiliary-поля квадратичный оператор физической
+$\Sigma$ равен
+\begin{equation}
+ G_Y=\operatorname{diag}(40,40,0,48,48,0,40,40),
+ \qquad \rank G_Y=6,
+ \qquad \dim\ker G_Y=2.
+\end{equation}
+Для линейной translation symmetry требуется $G_YT=0$. Но
+\begin{equation}
+ \rank(G_YT_{\rm req})=6,
+\end{equation}
+поэтому полная rank-$8$ orbit разрушает шесть квадратичных направлений.
+Максимальный flat translation subspace quadratic parent имеет rank $2$ и
+порождается двумя компонентами с $|6Y|=7$. Это всё ещё оставляет дефицит
+$8-2=6$.
+
+Обычная калибровочная симметрия не восполняет дефицит. Её инфинитезимальное
+действие имеет вид
+\begin{equation}
+ \delta_\alpha\Sigma=\rho(\alpha)\Sigma,
+\end{equation}
+и потому при $\Sigma=0$ имеет нулевой translational tangent. Линейная
+representation orbit и аддитивная shift orbit являются разными объектами.
+
+Полную symmetry можно построить условно, добавив новую Stückelberg-копию
+$Y_\Sigma$ и используя разность
+\begin{equation}
+ D(\Sigma,Y_\Sigma)=\Sigma-Y_\Sigma,
+ \qquad
+ (\Sigma,Y_\Sigma)\mapsto
+ (\Sigma+\varepsilon,Y_\Sigma+\varepsilon).
+\end{equation}
+Тогда
+\begin{equation}
+ H_{\rm St}=D^TG_YD
+ =\begin{pmatrix}G_Y&-G_Y\\-G_Y&G_Y\end{pmatrix},
+ \qquad
+ \rank H_{\rm St}=6,
+ \qquad
+ \dim\ker H_{\rm St}=10,
+\end{equation}
+а diagonal shift имеет rank $8$ и лежит в $\ker H_{\rm St}$. Gauge
+$Y_\Sigma=0$ точно возвращает исходный $G_Y$. Условие
+$F=QY_\Sigma$ даёт невырожденный Faddeev--Popov operator
+\begin{equation}
+ M_{\rm FP}=Q,
+ \qquad \rank M_{\rm FP}=8,
+ \qquad \det M_{\rm FP}=3969,
+\end{equation}
+то есть именно требуемый odd determinant.
+
+Эта конструкция показывает согласованность всего Mathai--Quillen-пакета,
+но не его происхождение. Inherited injection независимой
+$Y_\Sigma$-копии имеет rank ноль. Ввести её с diagonal shift означает
+добавить ровно тот новый pure-gauge carrier, существование которого должно
+было быть доказано.
+
+\begin{theorem}[Условное Stückelberg-замыкание]
+На doubled carrier существует rank-$8$ diagonal shift symmetry,
+инвариантный parent $D^TG_YD$ и gauge fixing с FP determinant $3969$.
+После факторизации исходный $\Sigma$-Hessian восстанавливается точно.
+Условный статус равен $6/7$.
+\end{theorem}
+
+\begin{nogocriterion}[Финальный no-go particle-wrinkle ветви]
+Текущий parent не имеет требуемой rank-$8$ shift symmetry: его квадратичное
+ядро имеет dimension $2$, ordinary gauge tangent при $\Sigma=0$ равен
+нулю, а независимая Stückelberg-копия не унаследована. Поэтому полный
+Mathai--Quillen parent нельзя считать физически выведенным; его статус
+остаётся условным.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item inherited $\Sigma$ Hessian rank/nullity: \textbf{$6/2$};
+\item required full shift rank: \textbf{$8$};
+\item translation-breaking rank: \textbf{$6$};
+\item maximum quadratic flat-shift rank: \textbf{$2$};
+\item ordinary gauge translational rank at $\Sigma=0$: \textbf{$0$};
+\item conditional diagonal Stückelberg shift rank: \textbf{$8$};
+\item conditional parent rank/nullity: \textbf{$6/10$};
+\item inherited Stückelberg-copy injection rank: \textbf{$0$};
+\item conditional/inherited status: \textbf{$6/7$ и $3/7$};
+\item следующий гейт: \textbf{финальное заключение Тома X и программа Тома XI}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_shift_symmetry_parent_origin_gate_results.json}.

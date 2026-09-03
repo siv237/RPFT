@@ -1,0 +1,99 @@
+\chapter{Хопфовский цикл в произведении 43-мерной ячейки и КМС-носителя}
+\label{ch:v10-hopf-cycle-k43-kms-product}
+
+\section{Канонические вершины произведения}
+
+Внутри одного $K_{43}$ третья вершина цикла либо выбиралась одним из 30
+способов, либо нарушала марковскую положительность. Рассмотрим уже
+существующий носитель
+\begin{equation}
+ \mathcal K_{43}\otimes\mathcal H_{\rm KMS},
+ \qquad \dim=43\cdot6=258.
+ \label{eq:v10-hopf-product-carrier}
+\end{equation}
+Он содержит три ортогональные линии
+\begin{equation}
+ |0,\Omega\rangle,
+ \qquad |Y,\Omega\rangle,
+ \qquad |0,s\rangle,
+ \label{eq:v10-hopf-product-vertices}
+\end{equation}
+где $|0\rangle$ --- вакуум ячейки, $|Y\rangle$ --- гиперзарядовая метка,
+$|\Omega\rangle$ --- источник КМС-репера, а $|s\rangle$ --- его синглетная
+линия. Каждая вершина различена существующими типами; выбора транспортной
+координаты больше нет.
+
+Пусть $E_\times:\mathbb C^3\to\mathbb C^{258}$ имеет эти три столбца.
+Тогда
+\begin{equation}
+ E_\times^*E_\times=I_3,
+ \qquad \rank(E_\times E_\times^*)=3.
+ \label{eq:v10-hopf-product-isometry}
+\end{equation}
+Сжатие гиперзарядового проектора равно $\operatorname{diag}(0,1,0)$, а
+сжатие синглетного КМС-проектора --- $\operatorname{diag}(0,0,1)$.
+
+\section{Канонический марковский цикл}
+
+Вложим генератор предыдущего гейта:
+\begin{equation}
+ L_\times=E_\times L_\circlearrowright E_\times^*.
+ \label{eq:v10-hopf-product-generator}
+\end{equation}
+Его сжатие точно равно $L_\circlearrowright$, полный ранг равен $2$, сумма
+каждого столбца равна нулю, а отрицательных внедиагональных скоростей нет.
+Стационарное состояние
+\begin{equation}
+ p_\times=\frac13\bigl(|0,\Omega\rangle+|Y,\Omega\rangle+|0,s\rangle\bigr)
+ \label{eq:v10-hopf-product-stationary-state}
+\end{equation}
+нормировано и удовлетворяет $L_\times p_\times=0$.
+
+Ток и термодинамические величины сохраняются:
+\begin{equation}
+ J_{\rm edge}=\frac\kappa3,
+ \qquad F_\circlearrowright=3\log2,
+ \qquad \sigma=\kappa\log2.
+ \label{eq:v10-hopf-product-current}
+\end{equation}
+
+\section{Что исправлено и что осталось}
+
+КМС-множитель устраняет точную дихотомию предыдущего гейта: три вершины
+каноничны по типам, а генератор марковски положителен. Однако сам носитель
+не выбирает общую скорость $\kappa$. Преобразование
+\begin{equation}
+ \kappa\mapsto c\kappa,
+ \qquad t\mapsto t/c
+\end{equation}
+по-прежнему сохраняет стационарное состояние, силу цикла и безразмерную
+эволюцию. Карта имеет ранг/ядро $2/1$.
+
+\begin{theorem}[КМС-множитель завершает каноническое вложение цикла]
+Три линии $|0,\Omega\rangle$, $|Y,\Omega\rangle$, $|0,s\rangle$ задают
+каноническое изометрическое вложение ориентированного цикла в 258-мерный
+носитель. Вложенный генератор сохраняет вероятность, марковскую
+положительность, стационарный ток и положительное производство энтропии.
+\end{theorem}
+
+\begin{nogocriterion}[Типовой множитель не является часами]
+Устранение произвольного выбора третьей вершины не фиксирует абсолютную
+проводимость. Пока $\kappa$ не выбрана общим родительским функционалом,
+канонический цикл задаёт только форму и направление сквозного процесса.
+\end{nogocriterion}
+
+\begin{protocol}[Статус произведения]\begin{enumerate}
+\item размерность произведения: \textbf{$258$};
+\item канонические типизированные вершины: \textbf{$3/3$};
+\item марковская положительность: \textbf{получена};
+\item стационарный ток и энтропия: \textbf{сохранены};
+\item архитектура: \textbf{$10/10$};
+\item реестр происхождения: \textbf{$5/7$};
+\item каноническое марковское вложение: \textbf{$1/1$};
+\item абсолютная проводимость: \textbf{$0/1$};
+\item общий родитель скорости: \textbf{$0/1$};
+\item следующий гейт: \textbf{общий родитель проводимости хопфовского цикла}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_hopf_cycle_k43_kms_product_embedding_gate_results.json}.

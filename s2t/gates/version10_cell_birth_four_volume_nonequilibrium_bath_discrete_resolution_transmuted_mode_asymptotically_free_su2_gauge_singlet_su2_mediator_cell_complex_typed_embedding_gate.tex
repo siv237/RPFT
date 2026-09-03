@@ -1,0 +1,65 @@
+\chapter{Клеточное типизированное вложение
+\texorpdfstring{$SU(2)$}{SU(2)}-посредника}
+\label{ch:v10-discrete-resolution-su2-mediator-cell-embedding}
+
+Пусть $B=(-1,1)^\top$ --- граница одного ориентированного ребра. Поле
+посредника несёт adjoint-представление, поэтому его клеточная граница и
+лапласиан равны
+\begin{equation}
+ B_{\rm ad}=B\otimes I_3,\qquad
+ \Delta_{\rm ad}=B_{\rm ad}B_{\rm ad}^\top
+ =2P_\perp\otimes I_3.
+\end{equation}
+Они имеют ранги $3$ и ядро размерности $3$: по одной постоянной gauge-моде
+для каждой компоненты алгебры. Замена ориентации ребра не меняет лапласиан.
+
+Теперь типизируем источник. Для двух дублетов введём полные и относительные
+генераторы
+\begin{equation}
+ J_a=T_a\otimes I+I\otimes T_a,\qquad
+ R_a=T_a\otimes I-I\otimes T_a.
+\end{equation}
+Полные генераторы аннулируют синглет $|S\rangle$, тогда как три вектора
+$R_a|S\rangle$ ортонормальны, натягивают весь триплет и преобразуются по
+adjoint-представлению. Матрица
+\begin{equation}
+ V=(R_1|S\rangle,R_2|S\rangle,R_3|S\rangle)
+\end{equation}
+удовлетворяет $V^\dagger V=I_3$ и $VV^\dagger=P_T$.
+
+Пространственное вложение $E=B_{\rm ad}/\sqrt2$ также изометрично и лежит
+в сохранённом секторе. Поэтому
+\begin{equation}
+ C=EV^\dagger:\mathbb C^4\longrightarrow\mathbb C^6
+\end{equation}
+является частичной изометрией с $C^\dagger C=P_T$ и
+$CC^\dagger=P_\perp\otimes I_3$. Проецированный Green-оператор даёт
+\begin{equation}
+ E^\dagger\left(\frac12P_\perp\otimes I_3\right)E
+ =\frac12I_3,
+\end{equation}
+то есть все три adjoint-компоненты имеют одинаковую восприимчивость и
+сохраняют условный коэффициент $\kappa=3/16$.
+
+\begin{theorem}[Клеточный adjoint-ток типизирован]
+Относительные токи композитной пары и разностные клеточные токи связаны
+точной $SU(2)$-ковариантной частичной изометрией ранга три. Нулевая gauge-
+мода не возбуждается, а статический отклик одинаков по всем компонентам.
+\end{theorem}
+
+\begin{nogocriterion}[Типизация не выбирает flavor-пару]
+Построение действует одинаково на все шестнадцать копий дублета. Оно не
+выбирает одну из $256$ flavor-пар и не связывает рациональный gap $3/16$ с
+трансмутированной массой полюса.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item условная архитектура: \textbf{$14/14$};
+\item типизированное вложение: \textbf{$10/10$};
+\item унаследованные ингредиенты: \textbf{$2/2$};
+\item flavor-селектор и pole-map: \textbf{$0/2$};
+\item следующий гейт: \textbf{аудит селектора flavor-пары}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_cell_complex_typed_embedding_gate_results.json}.

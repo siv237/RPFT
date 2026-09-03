@@ -1,0 +1,53 @@
+\chapter{Общий родитель скорости ванны и вакуумного роста}
+\label{ch:v10-bath-velocity-growth-parent}
+
+Введём три безразмерные переменные
+\begin{equation}
+ r=\frac{\Omega_{\rm bath}}{\kappa},\qquad
+ q=\frac{\kappa}{\Omega_C},\qquad u=\frac vc.
+\end{equation}
+Три ранее полученных отношения объединяются положительным функционалом
+\begin{equation}
+ \mathcal P_v=\frac12\left(r-\frac{121}{12}\right)^2
+ +\frac12(q-k_X)^2+\frac12(rq-2u)^2.
+\end{equation}
+Он обращается в нуль только при
+\begin{equation}
+ r=\frac{121}{12},\qquad q=k_X,\qquad
+ \boxed{u=\frac vc=\frac{121}{24}k_X}.
+\end{equation}
+Гессиан в этой точке положительно определён, имеет ранг $3$ и определитель
+$4$. Все три остатка имеют независимое происхождение: из времени памяти,
+родителя проводимости и клеточной дисперсии.
+
+Скорость фронта рождения одной клетки равна
+$H_B\ell_{\rm cell}=c\,k_X/3$. Поэтому общий родитель даёт слепое отношение
+\begin{equation}
+ \boxed{\frac{v}{H_B\ell_{\rm cell}}=\frac{121}{8}}.
+\end{equation}
+В слабовесовом пределе $x=e^{-S_{\rm vac}}\to0$ также получается
+$(v/c)/x\to121/24$.
+
+\begin{theorem}[Условное происхождение скорости ванны]
+При принятии трёх предшествующих отношений положительный общий родитель без
+нового свободного коэффициента выбирает скорость ванны и предсказывает
+отношение $121/8$ к скорости клеточного фронта.
+\end{theorem}
+
+\begin{nogocriterion}[Относительная скорость не является масштабом]
+Родитель определяет $v/c$, но сохраняет совместное масштабирование длины и
+трёх частот. Поэтому абсолютные $\ell_{\rm cell}$, $\Omega_C$, $\kappa$ и
+$\Omega_{\rm bath}$ остаются на одномерной орбите.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item архитектура общего родителя: \textbf{$10/10$};
+\item условное относительное происхождение: \textbf{$8/8$};
+\item происхождение $v/c$: \textbf{$1/1$ условно};
+\item слепое отношение скоростей $121/8$: \textbf{$1/1$};
+\item абсолютный масштаб: \textbf{$0/1$};
+\item следующий гейт: \textbf{морфизм скорости ванны в скорость клеточного фронта}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_vacuum_growth_common_parent_origin_gate_results.json}.

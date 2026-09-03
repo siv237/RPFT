@@ -1,0 +1,91 @@
+{
+  "canonical_KMS_channel": {
+    "KMS_ratio": "p_up/p_down=1/2=exp(-log(2))",
+    "Kraus_complete": true,
+    "completely_positive_trace_preserving": true,
+    "downward_probability": "p_down=1/6",
+    "population_transition": [
+      [
+        "11/12",
+        "1/6"
+      ],
+      [
+        "1/12",
+        "5/6"
+      ]
+    ],
+    "upward_probability": "p_up=1/12"
+  },
+  "date": "2026-09-02",
+  "equilibrium": {
+    "Gibbs_state": "diag(2/3,1/3)",
+    "downward_flux": "1/18",
+    "net_flux": "0",
+    "stationary": true,
+    "upward_flux": "1/18"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_kms_output_channel_parent_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_nonequilibrium_two_reservoir_output_current_parent_admission_gate",
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_output_density_morphism_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "85d29552d83bf86e7c4632170736072dd5421e11ad4824428484617033148e19",
+    "floating_point_values": 0,
+    "obligation_count": 26,
+    "obligations": [
+      "k43_kms_channel_completely_positive",
+      "k43_kms_channel_kraus_completeness",
+      "k43_kms_population_transition",
+      "k43_kms_rate_ratio_half",
+      "k43_kms_gibbs_state_stationary",
+      "k43_kms_equilibrium_fluxes",
+      "k43_kms_net_flux_zero",
+      "k43_kms_excited_loss_one_sixth",
+      "k43_kms_spectral_match",
+      "k43_kms_mixing_spectrum",
+      "k43_zero_temperature_completeness",
+      "k43_zero_temperature_stationary_vacuum",
+      "k43_zero_temperature_loss_one_sixth",
+      "k43_kms_parent_stationary",
+      "k43_kms_parent_hessian",
+      "k43_kms_parent_rank_three",
+      "k43_kms_parent_determinant_one",
+      "k43_kms_parent_positive_minors",
+      "k43_kms_scale_rank_three",
+      "k43_kms_scale_nullity_one",
+      "k43_kms_scale_kernel",
+      "k43_kms_architecture_full",
+      "k43_kms_conditional_origin_full",
+      "k43_kms_conditional_score_eight",
+      "k43_kms_physical_origin_open",
+      "k43_kms_physical_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "spectral_match": {
+    "excited_state_loss": "1/6",
+    "matches_R_out_witness": true,
+    "population_contraction_eigenvalue": "3/4"
+  },
+  "status": {
+    "absolute_scale": "0/1",
+    "architecture": "10/10",
+    "canonical_CPTP_KMS_channel": "1/1",
+    "conditional_origin": "8/8",
+    "nonequilibrium_drive_and_bath_origin": "0/2",
+    "sustained_stationary_throughflow": "0/1"
+  },
+  "verdict": {
+    "absolute_breathing_scale_derived": false,
+    "canonical_KMS_channel_exists": true,
+    "finite_KMS_detailed_balance_supports_net_outflow": false,
+    "nonequilibrium_reservoir_required": true,
+    "one_sixth_loss_is_channel_realizable": true
+  },
+  "zero_temperature_boundary": {
+    "downward_probability": "1/6",
+    "faithful_finite_KMS_state": false,
+    "stationary_state": "vacuum diag(1,0)",
+    "upward_probability": "0"
+  }
+}

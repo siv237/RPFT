@@ -1,0 +1,174 @@
+{
+  "candidate_matrix": [
+    [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      0
+    ]
+  ],
+  "candidate_matrix_rank": 5,
+  "candidate_scores": [
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    3,
+    3,
+    2
+  ],
+  "candidates": [
+    "inverse_proper_cell_time",
+    "inverse_proper_cell_length",
+    "growth_curvature_or_cosmological_constant",
+    "spectral_cutoff",
+    "casimir_energy_from_free_radius",
+    "kms_temperature",
+    "planck_energy_imported_through_G",
+    "observed_hubble_rate",
+    "dimensionless_vacuum_action"
+  ],
+  "cosmological_circularity": {
+    "attempted_recovery": "E_Lambda/Delta_zeta=E_C",
+    "curvature_energy": "E_Lambda=hbar*c*sqrt(Lambda_growth/3)=Delta_zeta*E_C",
+    "growth_curvature": "Lambda_growth=3*(H_B/c)^2",
+    "growth_rate": "H_B=Delta_zeta*E_C/hbar",
+    "independent_anchor": false
+  },
+  "criteria": [
+    "correct_energy_dimension",
+    "internally_available",
+    "independent_of_clock_rate",
+    "typed_map_to_clock_energy",
+    "breaks_scale_orbit_without_external_input"
+  ],
+  "date": "2026-09-01",
+  "external_breakers": {
+    "admissible_internal_origin": false,
+    "observed_hubble_rate": "would break the orbit as target data",
+    "planck_energy": "would break the orbit only after importing G"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_clock_energy_geometric_anchor_candidate_audit_gate",
+  "geometric_scale_orbits": {
+    "casimir_radius": "24*E_Cas*R=hbar*c",
+    "proper_cell_length": "E_ell*ell_cell=hbar*c",
+    "proper_cell_time": "E_tau*tau_cell=hbar",
+    "selected_cell_time_or_length": false
+  },
+  "internal_orbit_breakers": 0,
+  "maximum_score": "3/5",
+  "next_gate": "version10_cell_birth_intrinsic_four_volume_parent_origin_gate",
+  "passing_candidates": 0,
+  "predecessor": "version10_cell_birth_clock_energy_common_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "9f52c9a481430dccb9d6432032686416e86bb9ab751767d6492000259e6dfae3",
+    "floating_point_values": 0,
+    "obligation_count": 18,
+    "obligations": [
+      "nine_candidate_contract_matrix",
+      "zero_passing_candidates",
+      "maximum_candidate_score_three",
+      "candidate_matrix_rank_five",
+      "no_internal_orbit_breaker",
+      "relative_calibration_rank_three",
+      "relative_calibration_nullity_one",
+      "common_scale_kernel",
+      "external_anchor_removes_orbit",
+      "growth_curvature_energy_is_delta_EC",
+      "growth_curvature_anchor_is_tautology",
+      "cell_time_energy_product",
+      "cell_length_energy_product",
+      "casimir_radius_energy_product",
+      "absolute_clock_energy_origin_zero",
+      "candidate_audit_coverage_full",
+      "physical_origin_ledger_zero",
+      "physical_origin_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "relative_calibration": {
+    "kernel": "common rescaling of all four dimensional rates",
+    "map_nullity": 1,
+    "map_rank": 3,
+    "rank_after_imported_energy_anchor": 4,
+    "variables": [
+      "E_C",
+      "Omega",
+      "Gamma_B",
+      "H_B"
+    ]
+  },
+  "status": {
+    "absolute_clock_energy": "0/1",
+    "candidate_audit_coverage": "9/9",
+    "candidate_origin": "0/9",
+    "physical_cosmological_scale": "0/1"
+  },
+  "verdict": {
+    "absolute_clock_energy_derived": false,
+    "existing_geometric_clock_anchor_found": false,
+    "external_dimensional_constant_would_remove_orbit": true,
+    "growth_cosmological_constant_is_independent_anchor": false,
+    "new_intrinsic_geometric_datum_required": true
+  }
+}

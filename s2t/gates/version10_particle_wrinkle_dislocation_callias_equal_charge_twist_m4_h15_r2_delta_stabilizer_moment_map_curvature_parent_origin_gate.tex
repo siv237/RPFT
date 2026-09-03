@@ -1,0 +1,83 @@
+\chapter{Родитель curvature moment map
+\texorpdfstring{$\Delta$}{Delta}-стабилизатора}
+\label{ch:v10-h15-r2-delta-moment-map-parent}
+
+Нейтральный rank-one $\Delta$-фон задаёт две traceless moment maps
+\begin{equation}
+ \mu_R=\operatorname{diag}\left(\frac12,-\frac12\right),
+ \qquad
+ \mu_4=\operatorname{diag}\left(-\frac14,-\frac14,-\frac14,\frac34\right).
+\end{equation}
+Их trace-нормы равны $1/2$ и $3/4$. Канонически нормированная комбинация
+на $\Sigma$ есть
+\begin{equation}
+ \boxed{Q=6Y=6\mu_R-4\operatorname{ad}(\mu_4)},
+\end{equation}
+и имеет прежний спектр $(3,-3,7,1,-1,-7,3,-3)$. Тем самым отношение
+Cartan-каналов и коэффициент $2$ при смешанном $TB$ действительно
+фиксируются одним moment map, а не двумя portal-весами.
+
+Однако положительная curvature-норма сама по себе даёт Hessian
+\begin{equation}
+ Q^2=\operatorname{diag}(9,9,49,1,1,49,9,9).
+\end{equation}
+Она имеет ранг $8$ и делает $R_2\oplus\overline R_2$ самым тяжёлым, а не
+лёгким сектором. Поэтому нужный знак нельзя получить объявлением
+$-\|Q\Sigma\|^2$ фундаментальной нормой.
+
+Mapping-cone подсказывает другой механизм. Введём общий auxiliary-канал с
+полным квадратичным Hessian
+\begin{equation}
+ \mathcal H_{\rm aux}=
+ \begin{pmatrix}
+ 49I&Q\\ Q&I
+ \end{pmatrix}.
+\end{equation}
+Он конгруэнтен положительной форме
+\begin{equation}
+ \operatorname{diag}(49I-Q^2,I)
+\end{equation}
+через обратимую triangular matrix. Поэтому полный parent
+положительно полуопределён, имеет ранг $14$ и нуллитет $2$. После
+устранения auxiliary-поля его Schur complement точно равен
+\begin{equation}
+ \boxed{49I-Q^2=G_Y}.
+\end{equation}
+Отрицательный $Q^2$ возникает как стандартный subtractive Schur term, а не
+как отрицательная норма полного действия.
+
+Это закрывает условную архитектуру, но не происхождение. В унаследованной
+fixed-point auxiliary algebra cross-блок между $\Sigma$ и auxiliary
+сектором равен нулю. Без него устранение даёт только universal $49I$, а не
+gap. Нужно предъявить восьмимерный типизированный образ $Q\Sigma$ внутри
+36-мерного self-adjoint fixed-point пространства mapping cone.
+
+\begin{theorem}[Условный Schur-parent гиперзарядового gap]
+Нормированный $\Delta$ moment map единственно задаёт оператор $Q=6Y$.
+Положительный полный Hessian $\bigl(\begin{smallmatrix}49I&Q\\Q&I\end{smallmatrix}\bigr)$
+имеет Schur complement $G_Y=49I-Q^2$, поэтому условно порождает точный
+$R_2$-gap без отрицательной фундаментальной нормы.
+\end{theorem}
+
+\begin{nogocriterion}[Формальный auxiliary не является унаследованным]
+Нельзя считать Schur-parent физическим, пока карта
+$\Sigma\mapsto Q\Sigma$ не вложена в конкретный fixed-point auxiliary
+модуль старого mapping cone с правильными reality, grading и trace metric.
+Нулевая текущая cross-карта не может быть заменена абстрактным $I_8$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item moment-map нормы $\mu_R/\mu_4$: \textbf{$1/2,3/4$};
+\item нормированная комбинация: \textbf{$6\mu_R-4\operatorname{ad}\mu_4$};
+\item positive moment-map Hessian rank: \textbf{$8$};
+\item positive norm ordering: \textbf{неверный знак};
+\item full Schur-parent rank/nullity: \textbf{$14/2$};
+\item full inertia: \textbf{$(0_-,2_0,14_+)$};
+\item Schur complement: \textbf{$G_Y$};
+\item inherited auxiliary coupling rank: \textbf{$0$};
+\item conditional/physical origin: \textbf{$3/4$ и $2/4$};
+\item следующий гейт: \textbf{typed embedding в fixed-point auxiliary channel}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_stabilizer_moment_map_curvature_parent_origin_gate_results.json}.

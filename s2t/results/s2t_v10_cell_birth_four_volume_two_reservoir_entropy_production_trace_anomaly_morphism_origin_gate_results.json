@@ -1,0 +1,91 @@
+{
+  "date": "2026-09-02",
+  "einstein_trace": {
+    "balance_selects": "gamma=99/(pi*log(2))",
+    "curvature": "12/ell_cell**2",
+    "energy_density": "3*hbar*c/(2*pi*gamma*ell_cell**4)",
+    "newton_area": "g_N=gamma*ell_cell**2",
+    "selects_absolute_length": false
+  },
+  "entropy_to_stress": {
+    "cell_clock": "tau_cell=ell_cell/c",
+    "cell_energy": "E_C=hbar*c/ell_cell",
+    "energy_density": "hbar*c*log(2)/(66*ell_cell**4)",
+    "entropy_per_transition": "log(2)/66",
+    "spatial_volume": "ell_cell**3"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_two_reservoir_entropy_production_trace_anomaly_morphism_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_entropy_scale_orbit_breaker_candidate_audit_gate",
+  "predecessors": [
+    "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_nonequilibrium_two_reservoir_output_current_parent_admission_gate",
+    "version10_cell_birth_clock_energy_common_parent_origin_gate",
+    "version10_cell_birth_four_volume_induced_newton_constant_parent_origin_gate"
+  ],
+  "proofdsl": {
+    "certificate_sha256": "08cbf92ec79afda9256669703db9cc3337aee3af012849f71c1ce47984a5c7b9",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "obligations": [
+      "entropy_trace_00",
+      "entropy_trace_01",
+      "entropy_trace_02",
+      "entropy_trace_03",
+      "entropy_trace_04",
+      "entropy_trace_05",
+      "entropy_trace_06",
+      "entropy_trace_07",
+      "entropy_trace_08",
+      "entropy_trace_09",
+      "entropy_trace_10",
+      "entropy_trace_11",
+      "entropy_trace_12",
+      "entropy_trace_13",
+      "entropy_trace_14",
+      "entropy_trace_15",
+      "entropy_trace_16",
+      "entropy_trace_17",
+      "entropy_trace_18",
+      "entropy_trace_19",
+      "entropy_trace_20",
+      "entropy_trace_21"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_orbit": {
+    "external_length_anchor_rank": 7,
+    "kernel": [
+      1,
+      -1,
+      1,
+      3,
+      -4,
+      2,
+      -2
+    ],
+    "rank_nullity": "6/1",
+    "variables": [
+      "ell_cell",
+      "E_C",
+      "tau_cell",
+      "v3_cell",
+      "rho",
+      "g_N",
+      "R"
+    ]
+  },
+  "status": {
+    "absolute_scale": "0/1",
+    "architecture": "10/10",
+    "conditional_morphism": "7/7",
+    "entropy_density_origin": "1/1 conditional",
+    "planck_ratio_compatibility": "0/1",
+    "typed_stress_tensor_origin": "0/1"
+  },
+  "verdict": {
+    "absolute_cell_scale_derived": false,
+    "balance_selects_dimensionless_ratio_only": true,
+    "entropy_and_Einstein_densities_have_same_scale_degree": true,
+    "unit_Newton_cell_area_ratio_compatible": false
+  }
+}

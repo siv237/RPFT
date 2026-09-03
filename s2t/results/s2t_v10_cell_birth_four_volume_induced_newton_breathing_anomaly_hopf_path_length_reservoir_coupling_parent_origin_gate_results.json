@@ -1,0 +1,156 @@
+{
+  "conditional_parent": {
+    "assignment_unique_given_signed_affinity_difference": true,
+    "determinant": 1,
+    "hessian": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "rank": 2
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_path_length_reservoir_coupling_parent_origin_gate",
+  "inherited_parent": {
+    "coupling_origin": "0/1",
+    "reservoir_path_mixed_block": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "kms_ratios": [
+    "1/2",
+    "1/4"
+  ],
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_intertwiner_candidate_audit_gate",
+  "oriented_assignments": {
+    "aligned_hot_one_cold_two": {
+      "affinities": [
+        "log(2)",
+        "2*log(2)"
+      ],
+      "affinity_difference": "log(2)",
+      "defect": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "intertwiner": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "score": 0
+    },
+    "swapped_hot_two_cold_one": {
+      "affinity_difference": "-log(2)",
+      "defect": [
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "intertwiner": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "score": 8
+    }
+  },
+  "path_length_operator": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_common_affinity_temperature_anchor_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "0535e1c3c69bc131db4c05b80b5a212076e158134a322447238658c7155cd2a6",
+    "floating_point_values": 0,
+    "obligation_count": 24,
+    "obligations": [
+      "hopf_path_reservoir_coupling_00",
+      "hopf_path_reservoir_coupling_01",
+      "hopf_path_reservoir_coupling_02",
+      "hopf_path_reservoir_coupling_03",
+      "hopf_path_reservoir_coupling_04",
+      "hopf_path_reservoir_coupling_05",
+      "hopf_path_reservoir_coupling_06",
+      "hopf_path_reservoir_coupling_07",
+      "hopf_path_reservoir_coupling_08",
+      "hopf_path_reservoir_coupling_09",
+      "hopf_path_reservoir_coupling_10",
+      "hopf_path_reservoir_coupling_11",
+      "hopf_path_reservoir_coupling_12",
+      "hopf_path_reservoir_coupling_13",
+      "hopf_path_reservoir_coupling_14",
+      "hopf_path_reservoir_coupling_15",
+      "hopf_path_reservoir_coupling_16",
+      "hopf_path_reservoir_coupling_17",
+      "hopf_path_reservoir_coupling_18",
+      "hopf_path_reservoir_coupling_19",
+      "hopf_path_reservoir_coupling_20",
+      "hopf_path_reservoir_coupling_21",
+      "hopf_path_reservoir_coupling_22",
+      "hopf_path_reservoir_coupling_23"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_architecture": "4/4",
+    "inherited_reservoir_path_coupling_origin": "0/1",
+    "origin_ledger": "4/6",
+    "physical_temperature_origin": "0/1",
+    "typed_path_assignment_given_coupling": "1/1"
+  },
+  "temperature_scale_orbit": {
+    "kernel": [
+      -1,
+      -1,
+      1
+    ],
+    "physical_temperature_origin": "0/1",
+    "rank_nullity": "2/1"
+  },
+  "verdict": {
+    "current_parent_generates_assignment_intertwiner": false,
+    "dimensionless_assignment_fixes_physical_temperature": false,
+    "signed_affinity_difference_selects_hot_one_cold_two": true
+  }
+}

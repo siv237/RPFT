@@ -1,0 +1,67 @@
+\chapter{Admission общего relative-Hodge auxiliary-edge parent}
+\label{ch:v10-h15-r2-relative-hodge-auxiliary-edge-admission}
+
+Условный relative parent требует две изоморфные восьмимерные копии:
+физическую $\Sigma$ и auxiliary-копию $A_\Sigma$. Проверим одновременно
+типизацию второй копии и Hodge-структуру двухузлового графа.
+
+Унаследованный 36-мерный fixed-point сектор имеет только веса
+$0,\pm4,\pm6$, тогда как требуемая копия несёт
+\begin{equation}
+ (3,-3,7,1,-1,-7,3,-3).
+\end{equation}
+Матрица совпадений весов равна нулю, а полный intertwiner constraint имеет
+rank/nullity $288/0$. Поэтому существующий auxiliary-сектор не содержит ни
+одного гиперзаряд-эквивариантного направления нужного типа.
+
+Минимальное условное расширение есть
+\begin{equation}
+ \mathcal H_{\rm rel}=\Sigma\otimes\mathbb C^2,
+ \qquad \dim_{\mathbb R}\mathcal H_{\rm rel}=16.
+\end{equation}
+На нём gauge generator равен $\operatorname{diag}(Q,Q)$, а self-adjoint
+odd edge меняет две копии местами. Ориентированная incidence-карта
+$(I_8,-I_8)$ имеет rank $8$ и порождает
+\begin{equation}
+ P_{\rm rel}=\frac12
+ \begin{pmatrix}I_8&-I_8\\-I_8&I_8\end{pmatrix}.
+\end{equation}
+Этот оператор идемпотентен, имеет rank $8$ и inertia
+$(0_-,8_0,8_+)$. Он коммутирует с gauge generator и Real-структурой;
+odd edge точно антикоммутирует с grading. Поэтому условная архитектура
+закрывает все шесть admission-слотов и сохраняет exact $Q$ readout.
+
+Но это именно расширение. Inherited Hodge-selector имеет rank $0$, а
+equivariant Hom из требуемого auxiliary-модуля в fixed-point сектор равен
+нулю. Минимальный дефицит составляет восемь вещественных направлений.
+
+\begin{theorem}[Минимальный условный doubled carrier]
+$\Sigma\otimes\mathbb C^2$ является минимальным Real-, grading- и
+gauge-совместимым носителем общего relative-Hodge auxiliary edge. Его
+Hodge projector каноничен и положителен. Однако в текущем fixed-point
+parent отсутствует вся вторая весовая копия, поэтому admission физически
+равен лишь $3/6$.
+\end{theorem}
+
+\begin{nogocriterion}[Размерность без совпадения весов не является embedding]
+Нельзя использовать 36-мерную fixed-point algebra как auxiliary carrier
+только потому, что её размерность больше восьми. Нулевой weight-match и
+нулевой equivariant Hom запрещают такое вложение; требуется независимое
+происхождение новой копии $\Sigma$ и её graph-Hodge edge.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item fixed-point/required weight-match rank: \textbf{$0$};
+\item equivariant Hom dimension: \textbf{$0$};
+\item minimum extension dimension: \textbf{$8$};
+\item conditional common carrier dimension: \textbf{$16$};
+\item oriented incidence rank: \textbf{$8$};
+\item Hodge projector rank/nullity: \textbf{$8/8$};
+\item Hodge inertia: \textbf{$(0_-,8_0,8_+)$};
+\item gauge/Real/grading compatibility: \textbf{точно};
+\item inherited/conditional admission: \textbf{$3/6$ и $6/6$};
+\item следующий гейт: \textbf{аудит происхождения auxiliary edge}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_hodge_auxiliary_edge_common_parent_admission_gate_results.json}.

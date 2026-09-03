@@ -1,0 +1,167 @@
+\chapter{Физический приток и граница следовой аномалии}
+\label{ch:v10-geometric-scale-beta-trace-anomaly-origin}
+
+\section{Проверяемая гипотеза}
+
+Первый гейт Тома X допустил растущую историю ячеек, но не вывел квантовый
+ход относительно $\zeta=\log a$. Настоящий гейт проверяет, может ли
+эндогенный приток новых физических ячеек одновременно нарушить точное
+бозонно-духовое сокращение Тома IX, создать неустойчивость симметричного
+вакуума и породить ненулевую интенсивную $\beta$-функцию.
+
+Ключевое различие состоит в том, что калибровочные духи не должны перестать
+сокращать фиктивные направления. Новый вклад обязан действовать только на
+физический факторпространственный сектор и происходить от реальных входящих
+степеней свободы.
+
+\section{Закрытое сокращение}
+
+Пусть одномодовый физический и духовый операторы совпадают:
+\begin{equation}
+ D_z(q)=D_{\rm gh}(q)=1+q^2.
+ \label{eq:v10-inflow-closed-operators}
+\end{equation}
+Тогда
+\begin{equation}
+ Z_{\rm closed}(q)
+ =\frac{\det D_{\rm gh}(q)}{\det D_z(q)}=1,
+ \qquad
+ \Gamma_{\rm closed}(q)=0.
+ \label{eq:v10-inflow-closed-cancellation}
+\end{equation}
+Это сохраняет строгий запрет Тома IX: фиктивные калибровочные поля не
+создают вакуумную кривизну.
+
+\section{Нескомпенсированная физическая самоэнергия}
+
+Положительный приток $J>0$ добавляет самоэнергию физической моде,
+\begin{equation}
+ D_z(q;J)=1+q^2+J,
+ \qquad
+ D_{\rm gh}(q)=1+q^2,
+ \label{eq:v10-inflow-shifted-operator}
+\end{equation}
+но не меняет духовый оператор. Нормированный статистический множитель равен
+\begin{equation}
+ \widehat Z_J(q)
+ =\frac{Z_J(q)}{Z_J(0)}
+ =\frac{(1+J)(1+q^2)}{1+q^2+J}.
+ \label{eq:v10-inflow-normalized-partition}
+\end{equation}
+Следовательно, физическое эффективное действие
+\begin{equation}
+ \Gamma_J(q)
+ =-\log\widehat Z_J(q)
+ =\log(1+q^2+J)-\log(1+q^2)-\log(1+J)
+ \label{eq:v10-inflow-effective-action}
+\end{equation}
+не является плоским.
+
+Его первые существенные вариации в симметричной точке имеют знаки
+\begin{equation}
+ \Gamma_J''(0)=-\frac{2J}{1+J}<0,
+ \label{eq:v10-inflow-negative-curvature}
+\end{equation}
+\begin{equation}
+ \Gamma_J^{(4)}(0)
+ =\frac{12J(J+2)}{(J+1)^2}>0.
+ \label{eq:v10-inflow-positive-fourth}
+\end{equation}
+Положительный физический приток поэтому создаёт отрицательную квадратичную
+моду, отсутствовавшую в закрытом секторе.
+
+\section{Точный свидетель нарушенной фазы}
+
+Добавим уже допустимое положительное локальное насыщение $q^4/4$ и возьмём
+рациональный свидетель $J=9/10$:
+\begin{equation}
+ V_{9/10}(q)=\frac{q^4}{4}+\Gamma_{9/10}(q).
+ \label{eq:v10-inflow-witness-potential}
+\end{equation}
+Тогда
+\begin{equation}
+ V_{9/10}''(0)=-\frac{18}{19}<0,
+ \label{eq:v10-inflow-witness-origin-hessian}
+\end{equation}
+а две ветви
+\begin{equation}
+ q_\star^\pm=\pm\frac{1}{\sqrt2}
+ \label{eq:v10-inflow-broken-points}
+\end{equation}
+строго стационарны и имеют
+\begin{equation}
+ V_{9/10}''(q_\star^\pm)=\frac{37}{24}>0.
+ \label{eq:v10-inflow-broken-hessian}
+\end{equation}
+Это точный конечномерный пример, в котором реальный приток создаёт
+нарушенную фазу, тогда как закрытая бозонно-духовая система была плоской.
+Значение $J=9/10$ является свидетелем существования архитектуры, а не
+выведенным космологическим притоком.
+
+\section{Экстенсивный рост и интенсивная граница}
+
+Пусть число входящих степеней свободы масштабируется с пространственным
+объёмом:
+\begin{equation}
+ J_{\rm ext}(\zeta)=J_0e^{3\zeta}.
+ \label{eq:v10-inflow-extensive-current}
+\end{equation}
+Тогда формально
+\begin{equation}
+ \frac{dJ_{\rm ext}}{d\zeta}=3J_{\rm ext}.
+ \label{eq:v10-inflow-extensive-beta}
+\end{equation}
+Однако это только инженерное масштабирование числа ячеек. После деления на
+объёмный множитель получаем интенсивный приток
+\begin{equation}
+ j_{\rm int}(\zeta)
+ :=e^{-3\zeta}J_{\rm ext}(\zeta)=J_0,
+ \qquad
+ \frac{dj_{\rm int}}{d\zeta}=0.
+ \label{eq:v10-inflow-intensive-beta-zero}
+\end{equation}
+Следовательно, чистое умножение одинаковых ячеек даёт ненулевой
+экстенсивный показатель, но не создаёт квантовую интенсивную
+$\beta$-функцию или следовую аномалию.
+
+\begin{theorem}[Приток нарушает сокращение в физическом секторе]
+Положительная самоэнергия $J$, действующая на физическую моду и не
+действующая на дух, создаёт ненулевой нормированный определитель,
+отрицательную квадратичную вариацию и положительную четвёртую вариацию.
+В присутствии положительного квартичного насыщения существует точный
+локально устойчивый нарушенный свидетель $q=\pm1/\sqrt2$.
+\end{theorem}
+
+\begin{nogocriterion}[Геометрический объём не является квантовой аномалией]
+Закон $J_{\rm ext}\propto e^{3\zeta}$ отражает только рост числа одинаковых
+ячеек. После перехода к интенсивной величине ход равен нулю. Поэтому
+ненулевая физическая $\beta$-функция требует зависимости локальной
+самоэнергии, спектра или взаимодействия от $\zeta$; один объёмный приток её
+не выводит.
+\end{nogocriterion}
+
+\begin{protocol}[Статус гейта притока]\begin{enumerate}
+\item закрытое бозонно-духовое сокращение: \textbf{$1$};
+\item нескомпенсированный физический определитель: \textbf{получен};
+\item архитектура нарушения симметрии: \textbf{$6/6$};
+\item точный нарушенный свидетель: \textbf{$q=\pm1/\sqrt2$};
+\item интенсивная квантовая $\beta$-функция: \textbf{$0/1$};
+\item физическое происхождение резервуара и аномалии: \textbf{$0/2$};
+\item следующий гейт: \textbf{масштабно-зависимая спектральная самоэнергия
+притока}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_geometric_scale_beta_trace_anomaly_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v10-inflow-keldysh}
+L.~M.~Sieberer, M.~Buchhold, S.~Diehl,
+\emph{Keldysh Field Theory for Driven Open Quantum Systems},
+Reports on Progress in Physics 79 (2016), 096001.
+
+\bibitem{v10-inflow-repeated-interaction}
+S.~Attal, Y.~Pautrat,
+\emph{From Repeated to Continuous Quantum Interactions},
+Annales Henri Poincar\'e 7 (2006), 59--104.
+\end{thebibliography}

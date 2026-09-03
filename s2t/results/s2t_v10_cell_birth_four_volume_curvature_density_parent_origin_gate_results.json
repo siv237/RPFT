@@ -1,0 +1,64 @@
+{
+  "coefficient_scale_orbit": {
+    "absolute_scale_selected": false,
+    "constraint_nullity": 1,
+    "constraint_rank": 2,
+    "kernel": "(-2,-1,1)",
+    "transformation": "(q,A,B)->(s^2*q,A/s^4,B/s^2)"
+  },
+  "conditional_parent": {
+    "functional": "A*q^2-B*q+B^2/(4*A)=A*(q-B/(2*A))^2",
+    "q": "ell^2",
+    "radial_hessian": "2*A>0",
+    "selected_q": "B/(2*A)"
+  },
+  "constant_curvature_cell": {
+    "curvature_square_integral": 144,
+    "curvature_square_scale_invariant": true,
+    "einstein_integral": "12*ell^2",
+    "scalar_curvature": "12/ell^2",
+    "volume": "ell^4"
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_curvature_density_parent_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_curvature_coefficient_origin_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_topological_quantum_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "f23959aefe5156822825660d5017c7c718ba8807d6920dd3e3c08879a78c32a6",
+    "floating_point_values": 0,
+    "obligation_count": 18,
+    "obligations": [
+      "cell_volume_length_degree_four",
+      "scalar_curvature_inverse_length_two",
+      "einstein_integral_length_two",
+      "curvature_square_integral_144",
+      "curvature_square_scale_invariant",
+      "bounded_curvature_parent_square",
+      "conditional_scale_stationary",
+      "selected_scale_coefficient_ratio",
+      "positive_radial_hessian",
+      "curvature_parent_scale_invariance",
+      "selected_scale_follows_coefficients",
+      "curvature_constraint_rank_two",
+      "curvature_constraint_nullity_one",
+      "curvature_coefficient_scale_kernel",
+      "curvature_parent_architecture_full",
+      "conditional_curvature_origin_full",
+      "physical_curvature_origin_zero",
+      "physical_curvature_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_cell_scale": "0/1",
+    "architecture": "8/8",
+    "conditional_origin": "3/3",
+    "curvature_coefficient_origin": "0/1"
+  },
+  "verdict": {
+    "coefficient_ratio_physically_derived": false,
+    "competing_volume_and_einstein_terms_select_scale_conditionally": true,
+    "curvature_square_selects_scale": false
+  }
+}

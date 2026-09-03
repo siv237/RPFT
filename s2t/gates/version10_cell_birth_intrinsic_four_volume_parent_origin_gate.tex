@@ -1,0 +1,104 @@
+\chapter{Родитель собственного четырёхмерного объёма ячейки}
+\label{ch:v10-cell-birth-intrinsic-four-volume-parent-origin}
+
+\section{Геометрический носитель}
+
+После отрицательного аудита требуется новый внутренний размерный объект.
+Минимальная изотропная четырёхмерная ячейка задаётся грамовой матрицей
+\begin{equation}
+ G_{\rm cell}=\ell_{\rm cell}^2I_4,
+ \qquad \det G_{\rm cell}=\ell_{\rm cell}^8,
+ \qquad v_{\rm cell}=\sqrt{\det G_{\rm cell}}=\ell_{\rm cell}^4.
+ \label{eq:v10-cell-four-volume}
+\end{equation}
+Нормированная форма
+\begin{equation}
+ R_{\rm cell}=\frac{G_{\rm cell}}{\sqrt{v_{\rm cell}}}=I_4,
+ \qquad \det R_{\rm cell}=1
+ \label{eq:v10-cell-unimodular-shape}
+\end{equation}
+отделяет форму от размера. При рождении одной ячейки
+\begin{equation}
+ V_N=Nv_{\rm cell},
+ \qquad V_{N+1}-V_N=v_{\rm cell}.
+ \label{eq:v10-cell-volume-birth-law}
+\end{equation}
+Таким образом, собственный объём является корректным локальным носителем
+приращения, а не повторным обозначением полного расширения.
+
+\section{Безразмерный объёмно-энергетический инвариант}
+
+Из объёма и энергии часов строится
+\begin{equation}
+ Y=\frac{E_C^4v_{\rm cell}}{(\hbar c)^4}.
+ \label{eq:v10-cell-volume-energy-invariant}
+\end{equation}
+Условие $Y=1$ эквивалентно комптоновской связи
+\begin{equation}
+ E_C\ell_{\rm cell}=\hbar c.
+ \label{eq:v10-cell-compton-relation}
+\end{equation}
+Однако преобразование
+\begin{equation}
+ \ell_{\rm cell}\mapsto s\ell_{\rm cell},
+ \qquad E_C\mapsto\frac{E_C}{s}
+ \label{eq:v10-cell-volume-energy-orbit}
+\end{equation}
+сохраняет $Y$. Следовательно, даже точное происхождение отношения $Y=1$
+не выбирает величины двух множителей по отдельности.
+
+\section{Общий родитель и его ядро}
+
+Пусть $u=\chi^2$, $\rho=\Gamma_B/\Omega$, а $\epsilon$ и $\lambda$
+являются логарифмическими вариациями энергии и длины. Совместный родитель
+\begin{equation}
+ \mathcal P_{vE}
+ =\frac12(u-k_X)^2+\frac12(\rho-u)^2
+ +\frac12(\epsilon+\lambda)^2
+ \label{eq:v10-cell-volume-common-parent}
+\end{equation}
+имеет гессиан
+\begin{equation}
+ \operatorname{Hess}\mathcal P_{vE}=
+ \begin{pmatrix}
+ 2&-1&0&0\\-1&1&0&0\\0&0&1&1\\0&0&1&1
+ \end{pmatrix}.
+ \label{eq:v10-cell-volume-parent-hessian}
+\end{equation}
+Его ранг равен $3$, ядро одномерно и порождается вектором
+$(0,0,1,-1)^T$. Спектр равен
+\begin{equation}
+ \left\{0,2,\frac{3-\sqrt5}{2},\frac{3+\sqrt5}{2}\right\}.
+ \label{eq:v10-cell-volume-parent-spectrum}
+\end{equation}
+Родитель положительно полуопределён и выбирает все относительные данные,
+но оставляет точно одну масштабную моду.
+
+\begin{theorem}[Собственный объём как относительный геометрический носитель]
+Четырёхмерная ячейка имеет точное приращение объёма $v_{\rm cell}$, а
+общий родитель совместно фиксирует прежнюю связь рождения и безразмерное
+произведение $E_C^4v_{\rm cell}/(\hbar c)^4$. Архитектура замыкается, но
+гессиан сохраняет одно масштабное ядро.
+\end{theorem}
+
+\begin{nogocriterion}[Комптоновская связь не выбирает размер ячейки]
+Равенство $E_C\ell_{\rm cell}=\hbar c$ определяет только произведение.
+Без независимого спектрального, топологического или мерного правила,
+выбирающего $v_{\rm cell}$, оно не выводит ни абсолютную длину, ни энергию
+часов.
+\end{nogocriterion}
+
+\begin{protocol}[Статус собственного объёма]\begin{enumerate}
+\item четырёхмерный метрический носитель: \textbf{построен};
+\item закон приращения объёма при рождении: \textbf{получен};
+\item архитектура: \textbf{$8/8$};
+\item относительное происхождение: \textbf{$3/3$};
+\item ранг и размерность ядра общего гессиана: \textbf{$3/1$};
+\item величина собственного объёма: \textbf{$0/1$};
+\item абсолютная энергия часов: \textbf{$0/1$};
+\item следующий гейт: \textbf{спектральная счётная мера четырёхмерного
+объёма ячейки}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_intrinsic_four_volume_parent_origin_gate_results.json}.

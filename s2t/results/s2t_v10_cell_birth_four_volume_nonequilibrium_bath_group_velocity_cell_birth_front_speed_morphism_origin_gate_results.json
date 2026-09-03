@@ -1,0 +1,95 @@
+{
+  "crossing": {
+    "bath_reach_over_cell_length": "121/8",
+    "global_identity": false,
+    "history_transfer": "8*rho_0*exp(zeta)/121",
+    "rho_star": "121/8",
+    "single_shell_identity": true
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_cell_birth_front_speed_morphism_origin_gate",
+  "kinematics": {
+    "bath_group_speed_over_c": "121*k_X/24",
+    "front_speed_over_c": "rho*k_X/3",
+    "front_to_bath_speed": "8*rho/121",
+    "local_growth_speed_over_c": "k_X/3",
+    "rho": "R/ell_cell"
+  },
+  "linear_audit": {
+    "anchored_parent_determinant": 1,
+    "anchored_parent_rank": 3,
+    "parent_rank_nullity": "2/1",
+    "radius_anchored_rank_nullity": "3/1",
+    "scale_kernels": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "scale_rank_nullity": "2/2"
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_front_speed_causal_recession_separation_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_vacuum_growth_common_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "d5d7abe7e892d3a70e2b7191d5a125977cbc09e652be3eca0396a3aa6fff68e8",
+    "floating_point_values": 0,
+    "obligation_count": 28,
+    "obligations": [
+      "front_speed_morphism_00",
+      "front_speed_morphism_01",
+      "front_speed_morphism_02",
+      "front_speed_morphism_03",
+      "front_speed_morphism_04",
+      "front_speed_morphism_05",
+      "front_speed_morphism_06",
+      "front_speed_morphism_07",
+      "front_speed_morphism_08",
+      "front_speed_morphism_09",
+      "front_speed_morphism_10",
+      "front_speed_morphism_11",
+      "front_speed_morphism_12",
+      "front_speed_morphism_13",
+      "front_speed_morphism_14",
+      "front_speed_morphism_15",
+      "front_speed_morphism_16",
+      "front_speed_morphism_17",
+      "front_speed_morphism_18",
+      "front_speed_morphism_19",
+      "front_speed_morphism_20",
+      "front_speed_morphism_21",
+      "front_speed_morphism_22",
+      "front_speed_morphism_23",
+      "front_speed_morphism_24",
+      "front_speed_morphism_25",
+      "front_speed_morphism_26",
+      "front_speed_morphism_27"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_scale": "0/1",
+    "architecture": "10/10",
+    "conditional_origin": "8/8",
+    "microscopic_causal_identity": "0/1",
+    "typed_front_morphism": "1/1",
+    "universal_speed_identity": "0/1"
+  },
+  "verdict": {
+    "bath_speed_equals_front_speed_for_all_history": false,
+    "front_speed_is_automatically_a_signal_speed": false,
+    "radius_dependent_morphism_exists": true
+  }
+}

@@ -1,0 +1,70 @@
+\chapter{Аудит кандидатов odd auxiliary cross-bilinear}
+\label{ch:v10-h15-r2-odd-auxiliary-cross-bilinear-audit}
+
+Hubbard--Stratonovich identity свёл оставшуюся проблему к одному оператору:
+требуется независимо вывести mixed bilinear
+\begin{equation}
+ \langle A_\Sigma,Q\Sigma\rangle,
+ \qquad Q=6Y.
+\end{equation}
+На восьми секторах
+\begin{equation}
+ T=6T_R^3=(3,-3,3,-3,3,-3,3,-3),
+ \quad B=3(B-L)=(0,0,4,4,-4,-4,0,0),
+\end{equation}
+и $Q=T+B=(3,-3,7,1,-1,-7,3,-3)$. Два Cartan-столбца независимы,
+их Gram matrix равна $\operatorname{diag}(72,64)$, а единственная
+комбинация, дающая $Q$, имеет коэффициенты $(1,1)$.
+
+Двенадцать механизмов проверены по шести критериям: правильный
+$A_\Sigma$--$\Sigma$ domain, точный $Q$, gauge equivariance, Real-even
+scalar, фиксация коэффициента одним parent и присутствие в унаследованном
+action. Матрица имеет rank $6$, но pass-vector равен $0_{12}$.
+
+Universal portal даёт только $I$. Fixed-point projection и старый
+mapping-cone incidence унаследованы, но не имеют нужного domain и $Q$.
+Ordinary even spectral moments не создают линейный Cartan operator.
+Коммутатор $[D,Y]$ исчезает на гиперзаряд-сохраняющем seed. Два отдельных
+Cartan portal воспроизводят $Q$ лишь после ручной установки отношения
+$1:1$. KO6 fluctuation присутствует, но его текущая опора не содержит
+полного $Q$-канала. Callias и fermion-loop варианты оставляют свободную
+нормировку.
+
+Два кандидата получают $5/6$. Первый --- trilinear, построенный одним
+moment map нейтрального $\Delta$-фона,
+\begin{equation}
+ \langle A_\Sigma,(6\mu_R-4\operatorname{ad}\mu_4)\Sigma\rangle
+ =\langle A_\Sigma,Q\Sigma\rangle.
+\end{equation}
+Второй --- соответствующая mixed component superconnection curvature.
+Оба автоматически фиксируют Cartan-комбинацию, но ни один не входит в
+текущий mapping-cone action вместе с независимым $A_\Sigma$.
+
+\begin{theorem}[Узкий источник cross-оператора]
+В Cartan-span оператор $Q$ единственен и требует коэффициенты $(1,1)$.
+Из двенадцати проверенных механизмов ни один не проходит inherited-action
+criterion. Ближайший минимальный путь --- единый $\Delta$ moment-map
+trilinear, эквивалентно mixed superconnection curvature, с оценкой $5/6$.
+\end{theorem}
+
+\begin{nogocriterion}[Два Cartan portal не являются одним parent]
+Нельзя считать $Q=T+B$ выведенным, если коэффициенты двух независимых
+bilinear устанавливаются после просмотра target spectrum. Отношение должно
+следовать из одного нормированного moment map до Schur elimination.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item Cartan basis rank: \textbf{$2$};
+\item locked coefficients $(T,B)$: \textbf{$(1,1)$};
+\item inherited/required cross rank: \textbf{$0/8$};
+\item full cross-Hessian rank: \textbf{$16$};
+\item cross-Hessian inertia: \textbf{$(8_-,0_0,8_+)$};
+\item audit rank: \textbf{$6$};
+\item прошедших кандидатов: \textbf{$0/12$};
+\item лучшие кандидаты: \textbf{$\Delta$ moment map и superconnection, $5/6$};
+\item physical origin: \textbf{$5/6$};
+\item следующий гейт: \textbf{родитель $\Delta$ moment-map auxiliary trilinear}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_odd_auxiliary_cross_bilinear_candidate_audit_gate_results.json}.

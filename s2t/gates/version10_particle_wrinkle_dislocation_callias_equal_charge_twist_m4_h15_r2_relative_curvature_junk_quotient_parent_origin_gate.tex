@@ -1,0 +1,77 @@
+\chapter{Родитель relative-curvature junk quotient}
+\label{ch:v10-h15-r2-relative-curvature-junk-quotient-parent}
+
+Предыдущий аудит оставил единственный positive exact fork: выделить
+relative endpoint curvature до взятия нормы. Теперь необходимо отделить
+standard represented junk quotient от дополнительной graph-Hodge проекции.
+
+Для минимальной узловой алгебры $\mathbb C^2$ и оператора ребра
+\begin{equation}
+ D=\begin{pmatrix}0&1\\1&0\end{pmatrix}
+\end{equation}
+точное универсальное исчисление даёт
+\begin{equation}
+ \rank\pi_D(\Omega^1)=2,
+ \qquad \rank\pi_D(\Omega^2)=2,
+ \qquad \rank J_D^2=0.
+\end{equation}
+Следовательно, rank quotient также равен двум. В нём независимо выживают
+как суммарный класс $(1,1)$, так и относительный класс $(1,-1)$. Standard
+junk не выбирает нужную разность и не объясняет удаление ordinary trace.
+
+Двухузловой граф имеет incidence и Laplacian
+\begin{equation}
+ \partial=(1,-1),
+ \qquad L_{P_2}=\partial^T\partial=
+ \begin{pmatrix}1&-1\\-1&1\end{pmatrix}.
+\end{equation}
+Нормированный Hodge projector
+\begin{equation}
+ P_{\rm rel}=\frac12L_{P_2}
+\end{equation}
+идемпотентен, имеет rank $1$, убивает $(1,1)$ и сохраняет $(1,-1)$.
+Его положительная форма имеет inertia $(0_-,1_0,1_+)$. Применение
+relative readout к endpoint moment maps даёт
+\begin{equation}
+ (T,-B)\begin{pmatrix}1\\-1\end{pmatrix}=T+B=Q,
+\end{equation}
+то есть точный оператор rank $8$ без отрицательной полной trace metric.
+
+Это положительный условный результат, но не результат junk calculus.
+Оператор $P_{\rm rel}$ требует Hodge-структуры узлового графа, отсутствующей
+в текущем represented action: inherited selector имеет rank $0/1$.
+Кроме того, само odd auxiliary edge имеет inherited rank $0/8$. Поэтому
+graph-Hodge construction пока задаёт новую связанную архитектуру, а не
+вывод из существующего mapping cone.
+
+\begin{theorem}[Junk no-go и условный graph-Hodge selector]
+В минимальном двухузловом calculus degree-two junk равен нулю и не
+различает суммарный и относительный endpoint-классы. Канонический projector
+$L_{P_2}/2$ положителен и точно выбирает $Q$, но происходит из отдельной
+graph-Hodge структуры, которая вместе с auxiliary edge ещё не унаследована.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет переименования Hodge projection в junk]
+Нельзя считать relative selector стандартным Connes quotient: прямой
+расчёт даёт $J_D^2=0$. Для физического parent необходимо предъявить общий
+носитель, на котором incidence, Hodge metric, odd auxiliary edge и
+superconnection curvature являются частями одного заранее заданного
+действия.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item узловая алгебра: \textbf{$\mathbb C^2$};
+\item ranks $\Omega^1/\Omega^2/J^2$: \textbf{$2/2/0$};
+\item standard quotient rank: \textbf{$2$};
+\item junk выбирает relative class: \textbf{нет};
+\item graph-Hodge projector rank: \textbf{$1$};
+\item projector убивает sum и сохраняет difference: \textbf{точно};
+\item relative readout: \textbf{$Q$, rank $8$};
+\item inherited Hodge selector rank: \textbf{$0/1$};
+\item inherited auxiliary edge rank: \textbf{$0/8$};
+\item conditional/physical origin: \textbf{$4/6$ и $4/6$};
+\item следующий гейт: \textbf{common parent relative Hodge auxiliary edge}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_curvature_junk_quotient_parent_origin_gate_results.json}.

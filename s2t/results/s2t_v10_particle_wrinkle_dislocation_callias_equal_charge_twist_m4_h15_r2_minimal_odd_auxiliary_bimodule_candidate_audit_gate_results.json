@@ -1,0 +1,262 @@
+{
+  "best_conditional_candidate": {
+    "Schur_complement_diagonal": [
+      40,
+      40,
+      0,
+      48,
+      48,
+      0,
+      40,
+      40
+    ],
+    "embedding_rank": 8,
+    "failed_criterion": "inherited_parent",
+    "full_parent_rank_nullity": [
+      14,
+      2
+    ],
+    "name": "Hubbard_Stratonovich_A_Sigma",
+    "score": "5/6"
+  },
+  "candidate_audit": {
+    "criteria": [
+      "exact_weights",
+      "odd_grading",
+      "Real_closure",
+      "positive_bosonic_metric",
+      "independent_algebraic_elimination",
+      "inherited_parent"
+    ],
+    "matrix": [
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "names": [
+      "inherited_fixed_point_C",
+      "arbitrary_eight_coordinate_slice",
+      "reuse_Sigma",
+      "composite_QSigma",
+      "Hubbard_Stratonovich_A_Sigma",
+      "cotangent_TstarSigma",
+      "BV_antifield_Sigma",
+      "KO6_charge_conjugate_one_form",
+      "Delta_mapping_cone_off_diagonal_arrow",
+      "Callias_normal_component",
+      "superconnection_suspension",
+      "Pati_Salam_adjoint_D_term"
+    ],
+    "passes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "passing_candidates": 0,
+    "rank": 6,
+    "scores": [
+      4,
+      2,
+      5,
+      5,
+      5,
+      3,
+      4,
+      5,
+      4,
+      4,
+      4,
+      3
+    ]
+  },
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_minimal_odd_auxiliary_bimodule_candidate_audit_gate",
+  "inheritance": {
+    "current_independent_odd_auxiliary_embedding_rank": 0,
+    "physical_origin": "3/4"
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hubbard_stratonovich_odd_auxiliary_parent_origin_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_shared_fixed_point_auxiliary_channel_typed_embedding_gate",
+  "proofdsl": {
+    "certificate_sha256": "11eff437a037b04ddf735101dbcdf34e0754a8544849c47eb5c2aeae7edd6596",
+    "floating_point_values": 0,
+    "obligation_count": 23,
+    "obligations": [
+      "h15_r2_minimal_odd_auxiliary_audit_00",
+      "h15_r2_minimal_odd_auxiliary_audit_01",
+      "h15_r2_minimal_odd_auxiliary_audit_02",
+      "h15_r2_minimal_odd_auxiliary_audit_03",
+      "h15_r2_minimal_odd_auxiliary_audit_04",
+      "h15_r2_minimal_odd_auxiliary_audit_05",
+      "h15_r2_minimal_odd_auxiliary_audit_06",
+      "h15_r2_minimal_odd_auxiliary_audit_07",
+      "h15_r2_minimal_odd_auxiliary_audit_08",
+      "h15_r2_minimal_odd_auxiliary_audit_09",
+      "h15_r2_minimal_odd_auxiliary_audit_10",
+      "h15_r2_minimal_odd_auxiliary_audit_11",
+      "h15_r2_minimal_odd_auxiliary_audit_12",
+      "h15_r2_minimal_odd_auxiliary_audit_13",
+      "h15_r2_minimal_odd_auxiliary_audit_14",
+      "h15_r2_minimal_odd_auxiliary_audit_15",
+      "h15_r2_minimal_odd_auxiliary_audit_16",
+      "h15_r2_minimal_odd_auxiliary_audit_17",
+      "h15_r2_minimal_odd_auxiliary_audit_18",
+      "h15_r2_minimal_odd_auxiliary_audit_19",
+      "h15_r2_minimal_odd_auxiliary_audit_20",
+      "h15_r2_minimal_odd_auxiliary_audit_21",
+      "h15_r2_minimal_odd_auxiliary_audit_22"
+    ],
+    "status": "lcf-checked"
+  },
+  "required_module": {
+    "algebraically_eliminable": true,
+    "grading": "odd",
+    "real_dimension": 8,
+    "reality_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        6,
+        7
+      ]
+    ],
+    "trace_metric": "I8",
+    "weight_multiplicities_order_minus7_minus3_minus1_plus1_plus3_plus7": [
+      1,
+      2,
+      1,
+      1,
+      2,
+      1
+    ],
+    "weights_6Y": [
+      3,
+      -3,
+      7,
+      1,
+      -1,
+      -7,
+      3,
+      -3
+    ]
+  },
+  "verdict": {
+    "candidate_passes_all_criteria": false,
+    "conditional_Hubbard_Stratonovich_closure": true,
+    "minimal_representation_determined": true,
+    "physical_odd_auxiliary_parent_found": false
+  }
+}

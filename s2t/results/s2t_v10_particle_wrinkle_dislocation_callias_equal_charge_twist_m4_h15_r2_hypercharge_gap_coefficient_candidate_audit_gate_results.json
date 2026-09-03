@@ -1,0 +1,315 @@
+{
+  "candidate_audit": {
+    "candidates": [
+      "ordinary_one_profile_spectral_moments",
+      "universal_quadratic_mass_shift",
+      "positive_hypercharge_Casimir_D_term",
+      "negative_hypercharge_Casimir",
+      "algebraic_boundary_gap_GY",
+      "target_loaded_interior_potential",
+      "independent_Pati_Salam_adjoint_VEV_pair",
+      "Coleman_Weinberg_universal_singlet",
+      "fermionic_determinant_susceptibility",
+      "dimensional_transmutation_scale_only",
+      "connected_breaking_background_spectral_trace"
+    ],
+    "closest_candidate": "connected_breaking_background_spectral_trace",
+    "closest_missing_criterion": "inherited_carrier",
+    "closest_score": "5/6",
+    "coverage": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "criteria": [
+      "Q2_resolution",
+      "interior_sign_cone",
+      "positive_quartic",
+      "typed_SM_breaking_background",
+      "inherited_carrier",
+      "coefficient_locking"
+    ],
+    "matrix": [
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    ],
+    "matrix_rank": 6,
+    "pass": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "passing_candidates": 0,
+    "scores": [
+      2,
+      1,
+      3,
+      1,
+      2,
+      4,
+      3,
+      2,
+      2,
+      2,
+      5
+    ]
+  },
+  "coefficient_cone": {
+    "corresponding_masses": [
+      [
+        -10,
+        30,
+        38
+      ],
+      [
+        -30,
+        10,
+        18
+      ]
+    ],
+    "inequivalent_exact_ratios": [
+      10,
+      30
+    ],
+    "mass_polynomial": "m^2(Q^2)=a+b*Q^2",
+    "normalized_parameterization": "(a,b)=(49-r,-1), 0<r<40",
+    "not_unique": true,
+    "strict_conditions": [
+      "b<0",
+      "a+49*b<0",
+      "a+9*b>0"
+    ]
+  },
+  "date": "2026-09-03",
+  "diagnostic_coefficients": {
+    "basis": [
+      "I",
+      "Q^2"
+    ],
+    "boundary_flags": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "interpretation": "G_Y is a boundary selector; an interior tachyonic ratio is additional data",
+    "masses_order_R2_Q2_9_Q2_1": [
+      [
+        -1,
+        -1,
+        -1
+      ],
+      [
+        49,
+        9,
+        1
+      ],
+      [
+        -49,
+        -9,
+        -1
+      ],
+      [
+        0,
+        40,
+        48
+      ],
+      [
+        -20,
+        20,
+        28
+      ],
+      [
+        -40,
+        0,
+        8
+      ]
+    ],
+    "strict_sign_pass": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "vectors": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        49,
+        -1
+      ],
+      [
+        29,
+        -1
+      ],
+      [
+        9,
+        -1
+      ]
+    ]
+  },
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hypercharge_gap_coefficient_candidate_audit_gate",
+  "inheritance": {
+    "absolute_scale_selected": false,
+    "coefficient_map_nullity": 3,
+    "coefficient_map_rank": 0,
+    "ratio_selected": false
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hypercharge_breaking_background_common_carrier_admission_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hypercharge_projector_mass_splitting_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "a818de62f7068d9fa41c557c8e9df43afa2a11d6f9b9e19914bef53f22989c20",
+    "floating_point_values": 0,
+    "obligation_count": 24,
+    "obligations": [
+      "h15_r2_hypercharge_gap_coefficient_00",
+      "h15_r2_hypercharge_gap_coefficient_01",
+      "h15_r2_hypercharge_gap_coefficient_02",
+      "h15_r2_hypercharge_gap_coefficient_03",
+      "h15_r2_hypercharge_gap_coefficient_04",
+      "h15_r2_hypercharge_gap_coefficient_05",
+      "h15_r2_hypercharge_gap_coefficient_06",
+      "h15_r2_hypercharge_gap_coefficient_07",
+      "h15_r2_hypercharge_gap_coefficient_08",
+      "h15_r2_hypercharge_gap_coefficient_09",
+      "h15_r2_hypercharge_gap_coefficient_10",
+      "h15_r2_hypercharge_gap_coefficient_11",
+      "h15_r2_hypercharge_gap_coefficient_12",
+      "h15_r2_hypercharge_gap_coefficient_13",
+      "h15_r2_hypercharge_gap_coefficient_14",
+      "h15_r2_hypercharge_gap_coefficient_15",
+      "h15_r2_hypercharge_gap_coefficient_16",
+      "h15_r2_hypercharge_gap_coefficient_17",
+      "h15_r2_hypercharge_gap_coefficient_18",
+      "h15_r2_hypercharge_gap_coefficient_19",
+      "h15_r2_hypercharge_gap_coefficient_20",
+      "h15_r2_hypercharge_gap_coefficient_21",
+      "h15_r2_hypercharge_gap_coefficient_22",
+      "h15_r2_hypercharge_gap_coefficient_23"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "algebraic_gap": "derived",
+    "coefficient_candidates": "0/11",
+    "physical_origin": "1/3"
+  },
+  "verdict": {
+    "current_parent_locks_coefficients": false,
+    "physical_gap_coefficient_found": false,
+    "sign_cone_is_nonempty": true,
+    "sign_cone_selects_unique_ratio": false
+  }
+}

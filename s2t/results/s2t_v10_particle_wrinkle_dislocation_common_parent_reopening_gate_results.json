@@ -1,0 +1,73 @@
+{
+  "common_parent": {
+    "conditional_determinant": 1,
+    "conditional_hessian": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "inherited_hessian": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "inherited_nullity": 1,
+    "inherited_rank": 1,
+    "mixed_block": 0
+  },
+  "conditional_wrinkle": {
+    "energy": "E(L)=L+1/L",
+    "radial_curvature": 2,
+    "stationary_energy": 2,
+    "stationary_radius": 1
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_common_parent_reopening_gate",
+  "next_gate": "version10_particle_wrinkle_dislocation_mixed_bridge_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_graph_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "5b9476af282c57523c00cdf109a98766d128f8d1a38e04d473dc93116ffe1e95",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "status": "lcf-checked"
+  },
+  "reopened_sources": [
+    "version5_topological_closure_deficit_gate",
+    "version5_local_defect_transfer_operator_gate",
+    "version6_projective_order_parameter_field_spectrum_gate",
+    "version6_spatial_projective_defect_energy_spectrum_gate",
+    "version6_bosonic_defect_curved_string_effective_action_gate"
+  ],
+  "status": {
+    "conditional_wrinkle_stationary": "3/3",
+    "joint_requirements_consistent": "8/8",
+    "physical_common_parent_origin": "0/3",
+    "strict_particle_closure": "0/1",
+    "topological_defect_exact": "7/7"
+  },
+  "topological_dislocation": {
+    "cokernel_dimension": 15,
+    "fredholm_codomain_dimension": 105,
+    "fredholm_domain_dimension": 90,
+    "index": -15,
+    "kernel_dimension": 0,
+    "normalized_closure_deficit": "1/7"
+  },
+  "verdict": {
+    "index_defect_is_localized_by_the_wrinkle": false,
+    "profile_energy_equals_a_derived_spectral_pole": false,
+    "wrinkle_and_dislocation_are_compatible": true,
+    "wrinkle_and_dislocation_share_an_inherited_parent": false
+  }
+}

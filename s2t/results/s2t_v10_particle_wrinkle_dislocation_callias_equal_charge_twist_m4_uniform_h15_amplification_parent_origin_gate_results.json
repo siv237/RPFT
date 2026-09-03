@@ -1,0 +1,84 @@
+{
+  "H15_type_graph": {
+    "blocks": [
+      "Q_L(6)",
+      "L_L(2)",
+      "u_R(3)",
+      "d_R(3)",
+      "e_R(1)"
+    ],
+    "component_channel_multiplicities": [
+      12,
+      3
+    ],
+    "incidence_rank": 3,
+    "inherited_edges": [
+      "Q_L-u_R",
+      "Q_L-d_R",
+      "L_L-e_R"
+    ],
+    "kernel_dimension": 2,
+    "laplacian_rank": 3
+  },
+  "conditional_bridge": {
+    "augmented_incidence_rank": 4,
+    "augmented_laplacian_rank": 4,
+    "edge": "Q_L-L_L",
+    "kernel": "(1,1,1,1,1)",
+    "kernel_dimension": 1,
+    "lifted_channel_vector": "ones(15)",
+    "twist_amplifier_gram": "15 I2",
+    "twist_amplifier_rank": 2
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_uniform_h15_amplification_parent_origin_gate",
+  "inheritance": {
+    "absolute_amplitude_selected": false,
+    "quark_lepton_bridge_rank": 0,
+    "relative_uniformity_selected": false
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_quark_lepton_connector_candidate_audit_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_fermionic_cross_typed_embedding_gate",
+  "proofdsl": {
+    "certificate_sha256": "c571a61b155b321204b4003f309fca88bedb473f358b571f8891bfa1fceaf100",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "obligations": [
+      "uniform_h15_amplification_parent_00",
+      "uniform_h15_amplification_parent_01",
+      "uniform_h15_amplification_parent_02",
+      "uniform_h15_amplification_parent_03",
+      "uniform_h15_amplification_parent_04",
+      "uniform_h15_amplification_parent_05",
+      "uniform_h15_amplification_parent_06",
+      "uniform_h15_amplification_parent_07",
+      "uniform_h15_amplification_parent_08",
+      "uniform_h15_amplification_parent_09",
+      "uniform_h15_amplification_parent_10",
+      "uniform_h15_amplification_parent_11",
+      "uniform_h15_amplification_parent_12",
+      "uniform_h15_amplification_parent_13",
+      "uniform_h15_amplification_parent_14",
+      "uniform_h15_amplification_parent_15",
+      "uniform_h15_amplification_parent_16",
+      "uniform_h15_amplification_parent_17",
+      "uniform_h15_amplification_parent_18",
+      "uniform_h15_amplification_parent_19",
+      "uniform_h15_amplification_parent_20",
+      "uniform_h15_amplification_parent_21"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_architecture": "12/12",
+    "conditional_uniform_relative_amplitude": "1",
+    "inherited_component_amplitudes": "2",
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "existing_H15_parent_selects_uniform_amplification": false,
+    "one_cross_component_edge_is_conditionally_sufficient": true,
+    "quark_lepton_bridge_is_inherited": false
+  }
+}

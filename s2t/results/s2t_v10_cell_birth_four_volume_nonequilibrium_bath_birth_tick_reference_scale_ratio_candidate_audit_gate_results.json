@@ -1,0 +1,137 @@
+{
+  "audit": {
+    "complete_passes": 0,
+    "matrix_shape": "11x6",
+    "maximum_score": 5,
+    "rank": 5
+  },
+  "candidates": [
+    {
+      "name": "formal_Landau_times_K43_product",
+      "pass": false,
+      "score": 4
+    },
+    {
+      "name": "K43_inverse_endpoint",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "Landau_suppression",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "Brillouin_K43_ratio",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "bath_profile_ratio",
+      "pass": false,
+      "score": 4
+    },
+    {
+      "name": "KMS_Boltzmann_ratio",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "trace_anomaly_fraction",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "normalized_birth_probability",
+      "pass": false,
+      "score": 4
+    },
+    {
+      "name": "free_symbolic_bridge",
+      "pass": false,
+      "score": 4
+    },
+    {
+      "name": "observed_matching_ratio",
+      "pass": false,
+      "score": 2
+    },
+    {
+      "name": "external_renormalization_condition",
+      "pass": false,
+      "score": 3
+    }
+  ],
+  "date": "2026-09-02",
+  "factorization": {
+    "K43_factor": "1/42",
+    "Landau_factor": "exp(-32*pi^2/3)",
+    "composition_parent_rank_nullity": "1/2",
+    "formal_product_is_exact": true
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_candidate_audit_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_common_parent_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_k43_rg_boundary_matching_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "9113bf3cb96860374873ba8f0b9d80090ebcfeb47dbda655dcdaa93bab807e73",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "obligations": [
+      "birth_tick_reference_scale_ratio_00",
+      "birth_tick_reference_scale_ratio_01",
+      "birth_tick_reference_scale_ratio_02",
+      "birth_tick_reference_scale_ratio_03",
+      "birth_tick_reference_scale_ratio_04",
+      "birth_tick_reference_scale_ratio_05",
+      "birth_tick_reference_scale_ratio_06",
+      "birth_tick_reference_scale_ratio_07",
+      "birth_tick_reference_scale_ratio_08",
+      "birth_tick_reference_scale_ratio_09",
+      "birth_tick_reference_scale_ratio_10",
+      "birth_tick_reference_scale_ratio_11",
+      "birth_tick_reference_scale_ratio_12",
+      "birth_tick_reference_scale_ratio_13",
+      "birth_tick_reference_scale_ratio_14",
+      "birth_tick_reference_scale_ratio_15",
+      "birth_tick_reference_scale_ratio_16",
+      "birth_tick_reference_scale_ratio_17",
+      "birth_tick_reference_scale_ratio_18",
+      "birth_tick_reference_scale_ratio_19",
+      "birth_tick_reference_scale_ratio_20",
+      "birth_tick_reference_scale_ratio_21"
+    ],
+    "status": "lcf-checked"
+  },
+  "required_ratio": "exp(-32*pi^2/3)/42",
+  "scale_audit": {
+    "kernel_columns": [
+      [
+        -1,
+        -1,
+        1,
+        0
+      ],
+      [
+        -1,
+        -1,
+        0,
+        1
+      ]
+    ],
+    "rank_nullity": "2/2"
+  },
+  "status": {
+    "absolute_birth_tick_origin": "0/1",
+    "candidate_coverage": "11/11",
+    "common_parent_origin": "0/1",
+    "complete_candidates": "0/11",
+    "origin_ledger": "3/6"
+  },
+  "verdict": {
+    "absolute_birth_tick_is_derived": false,
+    "an_internal_candidate_selects_the_full_ratio": false,
+    "factorization_is_an_independent_origin": false,
+    "the_required_ratio_factorizes_exactly": true
+  }
+}

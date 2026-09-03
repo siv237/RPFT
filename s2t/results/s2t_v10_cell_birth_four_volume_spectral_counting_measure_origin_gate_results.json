@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-01",
+  "finite_cell_spectrum": {
+    "dimension": 43,
+    "full_count": 43,
+    "levels": "0,1,...,42 divided by ell_cell",
+    "normalized_second_moment": 25585,
+    "top_threshold": "Lambda*ell_cell=42"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_spectral_counting_measure_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_topological_quantum_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_intrinsic_four_volume_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "4a295ca8ee533a066d22425c05957f4f2c35c86d49d93a45b40d64f8ebb60e56",
+    "floating_point_values": 0,
+    "obligation_count": 16,
+    "obligations": [
+      "cell_spectral_dimension_43",
+      "cell_spectral_levels",
+      "full_counting_rank_43",
+      "top_threshold_product_42",
+      "second_moment_25585",
+      "top_threshold_rescaling",
+      "counting_product_invariance",
+      "spectral_parent_stationary",
+      "spectral_parent_hessian",
+      "spectral_parent_rank_one",
+      "spectral_parent_nullity_one",
+      "cutoff_length_scale_kernel",
+      "spectral_parent_semidefinite_spectrum",
+      "spectral_counting_architecture_full",
+      "spectral_volume_origin_three_of_five",
+      "spectral_volume_origin_score_three"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_boundary": {
+    "cell_four_volume_selected": false,
+    "cell_length_selected": false,
+    "count_invariant": true,
+    "orbit": "(Lambda,ell_cell)->(Lambda/s,s*ell_cell)"
+  },
+  "spectral_counting_parent": {
+    "functional": "(log(Lambda)+log(ell_cell)-log(42))^2/2",
+    "hessian": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "kernel": "(-1,1)",
+    "nullity": 1,
+    "rank": 1,
+    "spectrum": [
+      0,
+      2
+    ]
+  },
+  "status": {
+    "absolute_cell_volume": "0/1",
+    "absolute_clock_energy": "0/1",
+    "origin_ledger": "3/5",
+    "spectral_counting_architecture": "8/8"
+  },
+  "verdict": {
+    "finite_spectral_count_constructed": true,
+    "spectral_count_selects_absolute_volume": false,
+    "spectral_count_selects_cutoff_length_product": true
+  }
+}

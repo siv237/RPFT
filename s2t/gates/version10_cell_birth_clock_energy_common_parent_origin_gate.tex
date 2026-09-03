@@ -1,0 +1,156 @@
+\chapter{Общий родитель рождения ячеек, часов и энергии}
+\label{ch:v10-cell-birth-clock-energy-common-parent-origin}
+
+\section{Проверяемая гипотеза}
+
+Предыдущая глава получила безразмерный прирост геометрической координаты
+\begin{equation}
+ \Delta\zeta=\frac13\log\frac{1+2x}{1+x},
+ \qquad x=e^{-S_{\rm vac}}>0,
+ \label{eq:v10-clock-delta-zeta}
+\end{equation}
+но оставила свободной длительность одного шага. Проверим, можно ли связать
+рождение ячейки с автономными квантовыми часами одним положительным
+родителем и тем самым получить физический темп без ручного задания связи.
+
+\section{Минимальный резонансный носитель}
+
+Возьмём двухуровневый счётчик рождения и двухуровневые часы. Используем
+базис
+\begin{equation}
+ \{|0,0\rangle,|0,1\rangle,|1,0\rangle,|1,1\rangle\}.
+\end{equation}
+В нём безразмерный голый гамильтониан равен
+\begin{equation}
+ H_0=N_B\otimes I+I\otimes N_C
+ =\operatorname{diag}(0,1,1,2),
+ \qquad \operatorname{Spec}H_0=\{0^{(1)},1^{(2)},2^{(1)}\}.
+ \label{eq:v10-clock-bare-hamiltonian}
+\end{equation}
+Две средние вершины образуют точную резонансную пару. Обмен
+\begin{equation}
+ G_B=|0,1\rangle\langle1,0|+|1,0\rangle\langle0,1|
+ \label{eq:v10-clock-exchange}
+\end{equation}
+удовлетворяет
+\begin{equation}
+ [H_0,G_B]=0,
+ \qquad \rank G_B=2,
+ \qquad \operatorname{Spec}G_B=\{-1^{(1)},0^{(2)},1^{(1)}\}.
+ \label{eq:v10-clock-exchange-data}
+\end{equation}
+Следовательно, рождение можно связать с часовым переходом без нарушения
+голой суммы энергий. Это устанавливает допустимый носитель, но ещё не
+выбирает размерный коэффициент гамильтониана.
+
+\section{Общий родитель относительной связи}
+
+Нормированная мера предыдущего гейта задаёт положительное число
+\begin{equation}
+ k_X:=\log\frac{1+2x}{1+x}=3\Delta\zeta>0.
+ \label{eq:v10-clock-growth-coupling}
+\end{equation}
+Обозначим квадрат относительной силы обмена через $u=\chi^2$, а отношение
+скорости рождения к частоте часов через
+\begin{equation}
+ \rho:=\frac{\Gamma_B}{\Omega},
+ \qquad \Omega:=\frac{E_C}{\hbar}.
+\end{equation}
+Минимальный общий положительный родитель имеет вид
+\begin{equation}
+ \mathcal P_{BC}(u,\rho)
+ =\frac12(u-k_X)^2+\frac12(\rho-u)^2.
+ \label{eq:v10-clock-common-parent}
+\end{equation}
+Его единственный нуль и стационарная точка равны
+\begin{equation}
+ u=\rho=k_X.
+ \label{eq:v10-clock-selected-point}
+\end{equation}
+Гессиан
+\begin{equation}
+ \operatorname{Hess}\mathcal P_{BC}
+ =\begin{pmatrix}2&-1\\-1&1\end{pmatrix},
+ \qquad \rank=2,
+ \qquad \det=1,
+ \label{eq:v10-clock-parent-hessian}
+\end{equation}
+имеет положительный спектр
+$\{(3-\sqrt5)/2,(3+\sqrt5)/2\}$. Поэтому общий родитель действительно
+совместно выбирает относительную силу обмена и относительный темп рождения.
+
+\section{Полученный темп и оставшаяся орбита}
+
+После размерной калибровки часами получаем
+\begin{equation}
+ \Gamma_B=k_X\frac{E_C}{\hbar},
+ \qquad
+ H_B:=\frac{\Gamma_B}{3}
+ =\Delta\zeta\frac{E_C}{\hbar},
+ \qquad
+ \frac{H_B}{\Omega}=\Delta\zeta.
+ \label{eq:v10-clock-relative-growth}
+\end{equation}
+Последнее отношение является слепым безразмерным следствием общей
+конструкции. Однако преобразование
+\begin{equation}
+ E_C\longmapsto cE_C,
+ \qquad t\longmapsto\frac{t}{c}
+ \label{eq:v10-clock-scale-orbit}
+\end{equation}
+сохраняет фазу $\exp(-iE_Ct/\hbar)$ и все безразмерные формулы родителя.
+Логарифмическая карта имеет одномерное ядро. Значит, общий родитель снял
+относительную свободу, но не создал абсолютную энергию часов.
+
+Чтобы дополнительно потребовать прежнюю условную амплитуду
+$h_{\rm vac}=x/\sqrt{8\pi}$, пришлось бы отдельно задать
+\begin{equation}
+ \Omega_{\rm req}
+ =\frac{3x}{\sqrt{8\pi}\log((1+2x)/(1+x))}.
+ \label{eq:v10-clock-required-frequency}
+\end{equation}
+Эта частота не следует из построенного носителя или родителя и потому не
+может считаться выведенной.
+
+\begin{theorem}[Совместное происхождение относительного темпа]
+Резонансный четырёхмерный носитель и родитель
+$\mathcal P_{BC}$ совместно выбирают $\chi^2=\Gamma_B/\Omega=k_X$.
+Отсюда строго следует безразмерное отношение
+$H_B/\Omega=\Delta\zeta$.
+\end{theorem}
+
+\begin{nogocriterion}[Относительные часы не создают абсолютную энергию]
+Если общий родитель зависит только от $\chi^2$, $\Gamma_B/\Omega$ и
+нормированной меры рождения, то он инвариантен относительно совместного
+масштабирования $(E_C,t)\mapsto(cE_C,t/c)$. Подстановка
+$\Omega_{\rm req}$ без нового геометрического селектора является ручной
+калибровкой, а не выводом космологического масштаба.
+\end{nogocriterion}
+
+\begin{protocol}[Статус общего родителя рождения и часов]\begin{enumerate}
+\item резонансный энерго-сохраняющий носитель: \textbf{построен};
+\item положительный общий родитель: \textbf{построен};
+\item архитектура общего родителя: \textbf{$9/9$};
+\item происхождение относительной связи: \textbf{$3/3$};
+\item слепое отношение $H_B/\Omega$: \textbf{$\Delta\zeta$};
+\item энергия часов и абсолютный темп: \textbf{$0/2$};
+\item физическая космологическая постоянная: \textbf{$0/1$};
+\item следующий гейт: \textbf{аудит геометрических кандидатов на
+абсолютную энергию часов}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_clock_energy_common_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v10-clock-page-wootters}
+D.~N.~Page, W.~K.~Wootters,
+\emph{Evolution without evolution: Dynamics described by stationary
+observables}, Physical Review D 27 (1983), 2885--2892.
+
+\bibitem{v10-clock-erker}
+P.~Erker, M.~T.~Mitchison, R.~Silva, M.~P.~Woods, N.~Brunner,
+M.~Huber,
+\emph{Autonomous quantum clocks: Does thermodynamics limit our ability to
+measure time?}, Physical Review X 7 (2017), 031022.
+\end{thebibliography}

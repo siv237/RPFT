@@ -1,0 +1,173 @@
+{
+  "candidate_matrix": [
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ]
+  ],
+  "candidates": [
+    "explicit_bare_mass_counterterm",
+    "Higgs_Yukawa_condensate",
+    "asymptotically_free_condensate",
+    "KMS_thermal_mass",
+    "bath_Lamb_shift",
+    "curvature_coupling",
+    "finite_volume_cell_gap",
+    "throughflow_self_energy",
+    "portal_eigenvalue_splitting",
+    "observed_pole_fit",
+    "formal_target_mass_term"
+  ],
+  "conditional_asymptotic_freedom": {
+    "exact_target_match": true,
+    "g_squared": "3/8",
+    "inherited_beta": "2",
+    "mass_squared_ratio": "exp(-64*pi^2/3)",
+    "present_in_current_carrier": false,
+    "required_beta": "-2",
+    "scale_ratio": "exp(-32*pi^2/3)"
+  },
+  "criteria": [
+    "mass_squared_type",
+    "internal_carrier",
+    "nonzero_IR",
+    "selected_parent",
+    "exact_target_exponent",
+    "non_target_loaded"
+  ],
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_ir_mass_term_candidate_audit_gate",
+  "matrix_rank": 6,
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_beta_sign_parent_origin_gate",
+  "pass_vector": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_spectral_pole_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "f358e82b74b64088376910b802219a120165c51024eba3b9ffab9dfcb8331d4f",
+    "floating_point_values": 0,
+    "obligation_count": 21,
+    "status": "lcf-checked"
+  },
+  "required_mass_squared_cell": "exp(-64*pi^2/3)",
+  "score_vector": [
+    3,
+    4,
+    3,
+    5,
+    4,
+    4,
+    5,
+    4,
+    4,
+    3,
+    5
+  ],
+  "status": {
+    "audit_coverage": "11/11",
+    "candidate_passes": "0/11",
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "asymptotic_freedom_would_generate_exact_inverse_exponent": true,
+    "current_IR_mass_origin_found": false,
+    "formal_and_observed_mass_terms_are_non_circular": false,
+    "required_beta_sign_is_inherited": false,
+    "thermal_or_finite_volume_terms_have_exact_exponent": false
+  }
+}

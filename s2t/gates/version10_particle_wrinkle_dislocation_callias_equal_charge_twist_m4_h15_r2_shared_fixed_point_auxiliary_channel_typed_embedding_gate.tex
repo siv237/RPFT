@@ -1,0 +1,80 @@
+\chapter{Типизированное вложение общего fixed-point auxiliary-канала}
+\label{ch:v10-h15-r2-shared-fixed-point-auxiliary-embedding}
+
+Предыдущий гейт условно восстановил гиперзарядовый gap как Schur complement
+положительного общего Hessian. Теперь проверяется, может ли требуемый образ
+$Q\Sigma$ жить в $36$-мерном self-adjoint fixed-point пространстве
+\begin{equation}
+ \mathcal B_h^{\rm sa}=M_4(\mathbb C)^{\rm sa}
+ \oplus M_2(\mathbb C)^{\rm sa}\oplus M_4(\mathbb C)^{\rm sa}.
+\end{equation}
+
+После комплексизации гиперзарядные веса matrix units в двух $M_4$-блоках
+равны $0,\pm4$, а в $M_2$-блоке --- $0,\pm6$. Полная таблица кратностей
+есть
+\begin{equation}
+ \mathcal B_h^{\rm sa}\otimes\mathbb C:
+ \qquad 0^{22},\quad(+4)^6,\quad(-4)^6,\quad(+6)^1,\quad(-6)^1.
+\end{equation}
+Требуемый восьмисекторный образ имеет веса
+\begin{equation}
+ Q\Sigma:\qquad(+7)^1,(-7)^1,(+3)^2,(-3)^2,(+1)^1,(-1)^1.
+\end{equation}
+Эти множества не пересекаются. Поэтому для любой линейной карты
+$J:\Sigma\to\mathcal B_h^{\rm sa}\otimes\mathbb C$ условие
+\begin{equation}
+ Q_{\rm fp}J=JQ_\Sigma
+\end{equation}
+имеет только решение $J=0$. Точный intertwiner constraint состоит из $288$
+ненулевых диагональных разностей весов, имеет rank $288$ и nullity $0$.
+
+Размерностное препятствие отсутствует: обычное изометрическое вложение
+$\mathbb R^8\hookrightarrow\mathbb R^{36}$ имеет rank $8$ и сохраняет
+trace metric. Но его equivariance residual имеет rank $8$. Кроме того,
+fixed-point curvature является even, тогда как образ скалярной one-form
+$\Sigma$ должен быть odd. Graded intertwiner equation также имеет только
+нулевое решение. Следовательно, замена типизированной карты произвольным
+$I_8$ нарушает одновременно гиперзаряд и grading.
+
+Минимальное условное исправление прозрачно: добавить отдельный odd
+self-adjoint auxiliary-бимодуль $A_\Sigma$ вещественной размерности $8$ с
+теми же весами, reality involution и trace metric, что у $\Sigma$. Тогда
+тождественная карта
+\begin{equation}
+ J_\Sigma:\Sigma\longrightarrow A_\Sigma
+\end{equation}
+совместима с гиперзарядом, grading, reality и метрикой. На этом расширении
+блок $\bigl(\begin{smallmatrix}49I&Q\\Q&I\end{smallmatrix}\bigr)$ снова
+имеет rank/nullity $14/2$, а его Schur complement точно равен $G_Y$.
+Однако новый odd-бимодуль не содержится в старой fixed-point algebra и
+пока является условным расширением модели.
+
+\begin{theorem}[Fixed-point weight no-go]
+В $36$-мерной fixed-point auxiliary algebra отсутствуют веса
+$\pm1,\pm3,\pm7$. Поэтому ненулевого гиперзаряд-эквивариантного и
+градуированного вложения $Q\Sigma$ в этот модуль не существует, несмотря
+на достаточную общую размерность и положительную trace metric.
+\end{theorem}
+
+\begin{nogocriterion}[Untyped $I_8$ не закрывает Schur-parent]
+Нельзя отождествлять восемь произвольных fixed-point координат с
+$Q\Sigma$. Такое отождествление имеет полный equivariance defect и неверную
+чётность. Физическое закрытие требует унаследованного odd-бимодуля с точным
+спектром весов $\pm1,\pm3,\pm7$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item fixed-point auxiliary dimension: \textbf{$36$};
+\item fixed-point weights: \textbf{$0^{22},(\pm4)^6,(\pm6)^1$};
+\item $Q\Sigma$ weights: \textbf{$(\pm1)^1,(\pm3)^2,(\pm7)^1$};
+\item common weights / equivariant Hom dimension: \textbf{$0/0$};
+\item intertwiner constraint rank/nullity: \textbf{$288/0$};
+\item untyped isometry rank / equivariance defect rank: \textbf{$8/8$};
+\item inherited graded embedding rank: \textbf{$0$};
+\item minimal conditional odd extension dimension: \textbf{$8$};
+\item inherited/conditional typed status: \textbf{$2/4$ и $4/4$};
+\item следующий гейт: \textbf{аудит кандидатов минимального odd auxiliary-бимодуля}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_shared_fixed_point_auxiliary_channel_typed_embedding_gate_results.json}.

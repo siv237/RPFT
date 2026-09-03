@@ -1,0 +1,55 @@
+{
+  "K43_decomposition": {
+    "Dirac_doublets": 8,
+    "Weyl_doublets": 16,
+    "active_SU2_doublet_sector": 32,
+    "singlet_complement": 11
+  },
+  "anomalies": {
+    "Witten_parity": 0,
+    "local_cubic_tensor": "0_27"
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_eight_dirac_k43_typed_embedding_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_composite_pole_parent_origin_gate",
+  "pole_compatibility": {
+    "active_rank_one_pole_gauge_defect": 1,
+    "minimal_invariant_active_projector_rank": 2,
+    "singlet_rank_one_pole_active_overlap_rank": 0,
+    "singlet_rank_one_pole_gauge_defect": 0
+  },
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_anomaly_free_carrier_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "046cc6f4acf28dbf9ac757616e46a0f210531c3616441c4c353a2e32bf74fa4d",
+    "floating_point_values": 0,
+    "obligation_count": 25,
+    "status": "lcf-checked"
+  },
+  "renormalization": {
+    "beta": "-2",
+    "fermion_contribution": "16/3",
+    "gauge_contribution": "-22/3"
+  },
+  "representation": {
+    "Casimir": "3/4",
+    "commutant_dimension": 377,
+    "fermion_Dynkin_index": 8,
+    "trace_gram": "8*I3"
+  },
+  "status": {
+    "active_invariant_rank_one_pole": "0/1",
+    "anomaly_checks": "2/2",
+    "conditional_embedding_architecture": "12/12",
+    "exact_beta": "1/1",
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "SU2_eight_Dirac_embeds_in_K43": true,
+    "active_rank_one_pole_is_gauge_invariant": false,
+    "embedding_has_exact_beta_minus_two": true,
+    "embedding_is_anomaly_free": true,
+    "gauge_invariant_rank_one_pole_is_AF_active": false,
+    "physical_embedding_is_parent_selected": false
+  }
+}

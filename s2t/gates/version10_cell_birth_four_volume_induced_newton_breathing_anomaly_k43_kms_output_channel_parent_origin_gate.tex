@@ -1,0 +1,109 @@
+\chapter{KMS-совместимый канал выхода и граница детального баланса}
+\label{ch:v10-breathing-k43-kms-output-channel}
+
+\section{Канонический двухуровневый канал}
+
+На подносителе $W_Y=\operatorname{span}\{|0\rangle,|Y\rangle\}$ зададим
+вероятности нисходящего и восходящего переходов
+\begin{equation}
+ p_\downarrow=\frac16,\qquad p_\uparrow=\frac1{12},
+ \qquad \frac{p_\uparrow}{p_\downarrow}
+ =\frac12=e^{-\log2}.
+ \label{eq:v10-k43-kms-rates}
+\end{equation}
+Операторы Крауса можно взять в виде
+\begin{equation}
+ K_0=\begin{pmatrix}\sqrt{11/12}&0\\0&\sqrt{5/6}\end{pmatrix},
+ \quad
+ K_\downarrow=\begin{pmatrix}0&\sqrt{1/6}\\0&0\end{pmatrix},
+ \quad
+ K_\uparrow=\begin{pmatrix}0&0\\\sqrt{1/12}&0\end{pmatrix}.
+ \label{eq:v10-k43-kms-kraus}
+\end{equation}
+Они удовлетворяют $\sum_iK_i^\dagger K_i=I_2$, поэтому определяют полностью
+положительный сохраняющий след канал. Потеря чистого возбуждённого состояния
+равна $p_\downarrow=1/6$ и точно совпадает с каноническим спектральным
+свидетелем $R_{\rm out}$.
+
+\section{Конечная KMS-температура}
+
+Матрица переходов популяций равна
+\begin{equation}
+ T_{\rm KMS}=
+ \begin{pmatrix}
+ 11/12&1/6\\
+ 1/12&5/6
+ \end{pmatrix}.
+ \label{eq:v10-k43-kms-transition}
+\end{equation}
+Она фиксирует Gibbs-вектор
+\begin{equation}
+ \pi_{\rm KMS}=\begin{pmatrix}2/3\\1/3\end{pmatrix},
+ \qquad
+ \rho_{\rm KMS}=\operatorname{diag}(2/3,1/3),
+ \label{eq:v10-k43-kms-state}
+\end{equation}
+соответствующий $\beta\Delta=\log2$. Спектр $T_{\rm KMS}$ равен
+$(1,3/4)$.
+
+Однако равновесные направленные потоки совпадают:
+\begin{equation}
+ J_\downarrow=\frac13\frac16=\frac1{18},
+ \qquad
+ J_\uparrow=\frac23\frac1{12}=\frac1{18},
+ \qquad
+ J_{\rm net}=0.
+ \label{eq:v10-k43-kms-zero-current}
+\end{equation}
+Таким образом, конечный KMS-канал реализует вероятность потери $1/6$, но
+не создаёт стационарный сквозной выход.
+
+\section{Нулевая температура}
+
+Если положить $p_\uparrow=0$, остаётся обычный амплитудно-затухающий канал
+с той же нисходящей вероятностью $1/6$. Его стационарное состояние равно
+$|0\rangle\langle0|$ и не является верным конечным KMS-состоянием.
+Следовательно, односторонний выход достигается ценой перехода к граничному
+нулетемпературному резервуару.
+
+\section{Условный родитель}
+
+Условия полной положительности $u_{\rm CP}$, KMS-стационарности
+$u_{\rm KMS}$ и спектрального совпадения $u_{\rm match}$ объединяются в
+\begin{equation}
+ \mathcal P_{\rm KMS,out}
+ =\frac12(u_{\rm CP}-1)^2
+ +\frac12(u_{\rm KMS}-u_{\rm CP})^2
+ +\frac12(u_{\rm match}-u_{\rm KMS})^2.
+ \label{eq:v10-k43-kms-parent}
+\end{equation}
+Гессиан имеет ранг $3$, определитель $1$ и ведущие миноры $(2,3,1)$.
+Канал безразмерен и не добавляет новой строки в размерную карту: её
+ранг/ядро остаются $3/1$.
+
+\begin{theorem}[Канальная реализуемость одной шестой]
+Существует точный полностью положительный сохраняющий след канал, у которого
+нисходящая вероятность равна $1/6$, KMS-отношение скоростей равно $1/2$ и
+стационарное состояние равно $\operatorname{diag}(2/3,1/3)$.
+\end{theorem}
+
+\begin{nogocriterion}[Детальный баланс запрещает сквозной ток]
+В стационарном конечном KMS-состоянии прямой и обратный потоки равны
+$1/18$, поэтому чистый выход равен нулю. Поддерживаемое дыхание требует
+неравновесного привода, двух резервуаров с различными сродствами или явного
+нарушения детального баланса.
+\end{nogocriterion}
+
+\begin{protocol}[Статус KMS-канала]\begin{enumerate}
+\item условная архитектура: \textbf{$10/10$};
+\item условное замыкание: \textbf{$8/8$};
+\item точный CPTP-канал: \textbf{$1/1$};
+\item совпадение потери с $1/6$: \textbf{$1/1$};
+\item стационарный сквозной ток при KMS: \textbf{$0/1$};
+\item происхождение неравновесного привода и ванн: \textbf{$0/2$};
+\item абсолютный масштаб: \textbf{$0/1$};
+\item следующий гейт: \textbf{двухрезервуарный неравновесный ток}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_kms_output_channel_parent_origin_gate_results.json}.

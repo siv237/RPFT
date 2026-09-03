@@ -1,0 +1,94 @@
+{
+  "absolute_scale_orbit": {
+    "kernel": [
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "rank_nullity": "3/1"
+  },
+  "blind_predictions": {
+    "bath_to_cell_front_velocity": "121/8",
+    "bath_velocity": "v/c=(121/24)*k_X",
+    "weak_weight_limit": "(v/c)/x -> 121/24"
+  },
+  "common_parent": {
+    "bounded_below": true,
+    "functional": "((r-121/12)^2+(q-k_X)^2+(r*q-2*u)^2)/2",
+    "hessian_determinant": 4,
+    "hessian_rank": 3,
+    "selected_point": {
+      "q": "k_X",
+      "r": "121/12",
+      "u": "(121/24)*k_X"
+    },
+    "variables": [
+      "r=Omega_bath/kappa",
+      "q=kappa/Omega_C",
+      "u=v/c"
+    ]
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_vacuum_growth_common_parent_origin_gate",
+  "inherited_relations": {
+    "cell_dispersion": "Omega_bath/Omega_C=2*v/c",
+    "conductance_growth": "kappa/Omega_C=k_X",
+    "memory_cutoff": "Omega_bath/kappa=121/12",
+    "provenance_rank": "3/3"
+  },
+  "locked_vacuum": {
+    "S_vac": "137.03599917352236",
+    "v_over_c": "121*log((2*exp(-3425899979338059/25000000000000) + 1)/(exp(-3425899979338059/25000000000000) + 1))/24",
+    "v_over_c_decimal": "1.543266553720361e-59"
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_cell_birth_front_speed_morphism_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_continuum_dispersion_cell_geometry_typed_embedding_gate",
+  "proofdsl": {
+    "certificate_sha256": "d5161dc08c099190a07d9b78f8826fac4c99ddd0aa4f5d46d1190afe7069140d",
+    "floating_point_values": 0,
+    "obligation_count": 26,
+    "obligations": [
+      "bath_velocity_growth_parent_00",
+      "bath_velocity_growth_parent_01",
+      "bath_velocity_growth_parent_02",
+      "bath_velocity_growth_parent_03",
+      "bath_velocity_growth_parent_04",
+      "bath_velocity_growth_parent_05",
+      "bath_velocity_growth_parent_06",
+      "bath_velocity_growth_parent_07",
+      "bath_velocity_growth_parent_08",
+      "bath_velocity_growth_parent_09",
+      "bath_velocity_growth_parent_10",
+      "bath_velocity_growth_parent_11",
+      "bath_velocity_growth_parent_12",
+      "bath_velocity_growth_parent_13",
+      "bath_velocity_growth_parent_14",
+      "bath_velocity_growth_parent_15",
+      "bath_velocity_growth_parent_16",
+      "bath_velocity_growth_parent_17",
+      "bath_velocity_growth_parent_18",
+      "bath_velocity_growth_parent_19",
+      "bath_velocity_growth_parent_20",
+      "bath_velocity_growth_parent_21",
+      "bath_velocity_growth_parent_22",
+      "bath_velocity_growth_parent_23",
+      "bath_velocity_growth_parent_24",
+      "bath_velocity_growth_parent_25"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_scale": "0/1",
+    "blind_velocity_ratio": "1/1",
+    "common_parent_architecture": "10/10",
+    "conditional_relative_origin": "8/8",
+    "dimensionless_velocity_origin": "1/1 conditional"
+  },
+  "verdict": {
+    "common_parent_selects_absolute_length_or_time": false,
+    "common_parent_selects_bath_velocity_ratio": true,
+    "new_free_dimensionless_parameter_introduced": false
+  }
+}

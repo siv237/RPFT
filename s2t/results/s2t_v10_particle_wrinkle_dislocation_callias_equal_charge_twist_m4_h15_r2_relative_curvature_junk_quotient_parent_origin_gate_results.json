@@ -1,0 +1,105 @@
+{
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_curvature_junk_quotient_parent_origin_gate",
+  "graph_hodge_route": {
+    "incidence": [
+      [
+        1,
+        -1
+      ]
+    ],
+    "kills_sum": true,
+    "laplacian": [
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "preserves_difference": true,
+    "projector_inertia_negative_zero_positive": [
+      0,
+      1,
+      1
+    ],
+    "projector_rank": 1,
+    "relative_projector": [
+      [
+        "1/2",
+        "-1/2"
+      ],
+      [
+        "-1/2",
+        "1/2"
+      ]
+    ],
+    "relative_readout": "T-(-B)=Q",
+    "relative_readout_rank": 8
+  },
+  "inheritance": {
+    "conditional_Hodge_selector_rank": 1,
+    "conditional_auxiliary_edge_rank": 8,
+    "inherited_Hodge_selector_rank": 0,
+    "inherited_auxiliary_edge_rank": 0
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_hodge_auxiliary_edge_common_parent_admission_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_curvature_trace_selector_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "fb6d267590444d5ddd588d4f9e7fdd5c489cb9bfc5cc82f3bfacdd907ba2a649",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "obligations": [
+      "h15_r2_relative_curvature_junk_quotient_00",
+      "h15_r2_relative_curvature_junk_quotient_01",
+      "h15_r2_relative_curvature_junk_quotient_02",
+      "h15_r2_relative_curvature_junk_quotient_03",
+      "h15_r2_relative_curvature_junk_quotient_04",
+      "h15_r2_relative_curvature_junk_quotient_05",
+      "h15_r2_relative_curvature_junk_quotient_06",
+      "h15_r2_relative_curvature_junk_quotient_07",
+      "h15_r2_relative_curvature_junk_quotient_08",
+      "h15_r2_relative_curvature_junk_quotient_09",
+      "h15_r2_relative_curvature_junk_quotient_10",
+      "h15_r2_relative_curvature_junk_quotient_11",
+      "h15_r2_relative_curvature_junk_quotient_12",
+      "h15_r2_relative_curvature_junk_quotient_13",
+      "h15_r2_relative_curvature_junk_quotient_14",
+      "h15_r2_relative_curvature_junk_quotient_15",
+      "h15_r2_relative_curvature_junk_quotient_16",
+      "h15_r2_relative_curvature_junk_quotient_17",
+      "h15_r2_relative_curvature_junk_quotient_18",
+      "h15_r2_relative_curvature_junk_quotient_19",
+      "h15_r2_relative_curvature_junk_quotient_20",
+      "h15_r2_relative_curvature_junk_quotient_21"
+    ],
+    "status": "lcf-checked"
+  },
+  "standard_two_node_calculus": {
+    "degree_two_junk_rank": 0,
+    "degree_two_quotient_rank": 2,
+    "junk_selects_relative_class": false,
+    "node_algebra": "C^2",
+    "relative_class_survives": true,
+    "represented_one_form_kernel_dimension": 2,
+    "represented_one_form_rank": 2,
+    "represented_two_form_rank": 2,
+    "sum_class_survives": true
+  },
+  "status": {
+    "conditional_relative_Hodge_parent": "4/6",
+    "physical_origin": "4/6",
+    "remaining_slots": [
+      "inherited graph-Hodge selector",
+      "inherited odd auxiliary edge"
+    ]
+  },
+  "verdict": {
+    "canonical_graph_Hodge_projector_exists": true,
+    "physical_parent_found": false,
+    "standard_junk_quotient_derives_relative_selector": false
+  }
+}

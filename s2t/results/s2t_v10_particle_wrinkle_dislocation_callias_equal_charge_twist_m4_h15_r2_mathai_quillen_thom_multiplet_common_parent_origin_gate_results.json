@@ -1,0 +1,118 @@
+{
+  "carrier_origin": {
+    "carrier_differential_derived_conditionally": true,
+    "oriented_edge_nilpotent": true,
+    "oriented_edge_rank": 8,
+    "suspension_swap_from_hodge": true
+  },
+  "criteria": [
+    "exact_Q_section",
+    "carrier_differential",
+    "full_quartet",
+    "odd_statistics",
+    "positive_measure",
+    "determinant_cancellation",
+    "inherited_origin",
+    "zero_on_shell_cohomology"
+  ],
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "full_thom_quartet": {
+    "cohomology_dimension": 0,
+    "differential_rank": 16,
+    "field_parity_odd": true,
+    "fields": [
+      "Sigma_boson",
+      "psi_Sigma_odd",
+      "chi_Sigma_odd",
+      "H_Sigma_boson"
+    ],
+    "gauge_equivariant": true,
+    "real_dimension": 32,
+    "real_equivariant": true
+  },
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_thom_multiplet_common_parent_origin_gate",
+  "inherited_field_ledger": {
+    "conditional_bosonic_rank": 16,
+    "inherited_odd_rank": 0,
+    "inherited_physical_Sigma_rank": 8,
+    "missing_odd_directions": 16,
+    "required_real_directions": 32
+  },
+  "measure": {
+    "bosonic_determinant": 15752961,
+    "bosonic_equals_fermionic_square": true,
+    "bosonic_hessian_inertia": [
+      0,
+      0,
+      16
+    ],
+    "bosonic_hessian_rank": 16,
+    "fermionic_determinant": 3969,
+    "normalized_determinant_ratio": 1
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_odd_pair_statistics_candidate_audit_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_suspension_auxiliary_copy_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "d4f097465280a32860185ce0fe442bcef8eabb0f5e34fea563dea5a1489733be",
+    "floating_point_values": 0,
+    "obligation_count": 23,
+    "obligations": [
+      "h15_r2_mathai_quillen_thom_multiplet_parent_00",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_01",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_02",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_03",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_04",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_05",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_06",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_07",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_08",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_09",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_10",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_11",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_12",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_13",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_14",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_15",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_16",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_17",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_18",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_19",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_20",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_21",
+      "h15_r2_mathai_quillen_thom_multiplet_parent_22"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "conditional_score": "7/8",
+    "inherited": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "inherited_score": "3/8",
+    "remaining_slot": "origin of the two odd Thom fields and their Berezin measure"
+  },
+  "verdict": {
+    "current_parent_contains_required_odd_fields": false,
+    "full_mathai_quillen_parent_exists_conditionally": true,
+    "oriented_hodge_edge_derives_carrier_differential": true,
+    "physical_parent_found": false
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "date": "2026-09-03",
+  "exact_witness": {
+    "determinant": 50176000000,
+    "diagonal": [
+      20,
+      20,
+      -20,
+      28,
+      28,
+      -20,
+      20,
+      20
+    ],
+    "kappa": 1,
+    "mu2": 20,
+    "ratio_mu2_over_kappa": 20,
+    "signature_negative_zero_positive": [
+      2,
+      0,
+      6
+    ],
+    "status": "conditional_only"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hypercharge_projector_mass_splitting_parent_origin_gate",
+  "hypercharge_gap": {
+    "Real_compatible": true,
+    "SU2R_commutator_rank": 4,
+    "diagonal": [
+      40,
+      40,
+      0,
+      48,
+      48,
+      0,
+      40,
+      40
+    ],
+    "eigenvalue_multiplicities": {
+      "0": 2,
+      "40": 4,
+      "48": 2
+    },
+    "kernel": [
+      "R2",
+      "R2_conjugate"
+    ],
+    "nullity": 2,
+    "operator": "G_Y=49I-(6Y)^2",
+    "positive_semidefinite": true,
+    "rank": 6
+  },
+  "inheritance": {
+    "absolute_mass_scale_derived": false,
+    "coefficient_origin_map": [
+      0,
+      0
+    ],
+    "inherited_gap_Hessian_rank": 0,
+    "kappa_derived": false,
+    "mu2_over_kappa_derived": false
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hypercharge_gap_coefficient_candidate_audit_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_pati_salam_sigma_component_selector_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "962d9a923c371eefcc2f7c6dfb61db0c29f56d3243f98d986293f3a80adc3c18",
+    "floating_point_values": 0,
+    "obligation_count": 24,
+    "obligations": [
+      "h15_r2_hypercharge_mass_parent_00",
+      "h15_r2_hypercharge_mass_parent_01",
+      "h15_r2_hypercharge_mass_parent_02",
+      "h15_r2_hypercharge_mass_parent_03",
+      "h15_r2_hypercharge_mass_parent_04",
+      "h15_r2_hypercharge_mass_parent_05",
+      "h15_r2_hypercharge_mass_parent_06",
+      "h15_r2_hypercharge_mass_parent_07",
+      "h15_r2_hypercharge_mass_parent_08",
+      "h15_r2_hypercharge_mass_parent_09",
+      "h15_r2_hypercharge_mass_parent_10",
+      "h15_r2_hypercharge_mass_parent_11",
+      "h15_r2_hypercharge_mass_parent_12",
+      "h15_r2_hypercharge_mass_parent_13",
+      "h15_r2_hypercharge_mass_parent_14",
+      "h15_r2_hypercharge_mass_parent_15",
+      "h15_r2_hypercharge_mass_parent_16",
+      "h15_r2_hypercharge_mass_parent_17",
+      "h15_r2_hypercharge_mass_parent_18",
+      "h15_r2_hypercharge_mass_parent_19",
+      "h15_r2_hypercharge_mass_parent_20",
+      "h15_r2_hypercharge_mass_parent_21",
+      "h15_r2_hypercharge_mass_parent_22",
+      "h15_r2_hypercharge_mass_parent_23"
+    ],
+    "status": "lcf-checked"
+  },
+  "quadratic_family": {
+    "Hessian": "H(mu2,kappa)=kappa*G_Y-mu2*I",
+    "Q2_1_companion_mass_squared": "48*kappa-mu2",
+    "Q2_9_companion_mass_squared": "40*kappa-mu2",
+    "R2_mass_squared": "-mu2",
+    "R2_only_instability_conditions": [
+      "kappa>0",
+      "mu2>0",
+      "mu2/kappa<40"
+    ],
+    "quartic_stabilization_still_required": true
+  },
+  "status": {
+    "algebraic_gap_operator": "derived",
+    "conditional_mass_splitting_architecture": "14/14",
+    "dynamical_mass_parent": "absent",
+    "physical_origin": "1/3"
+  },
+  "verdict": {
+    "absolute_scale_selected": false,
+    "conditional_R2_only_tachyonic_window_exists": true,
+    "current_parent_generates_hypercharge_gap": false,
+    "physical_mass_splitting_parent_found": false,
+    "tachyonic_ratio_selected": false
+  }
+}

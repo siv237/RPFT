@@ -1,0 +1,103 @@
+{
+  "conditional_parent": {
+    "bounded_below": true,
+    "functional": "((s_flow-1)^2+(u_Lambda-s_flow)^2)/2",
+    "hessian": [
+      [
+        2,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "hessian_determinant": 1,
+    "hessian_rank": 2,
+    "normalized_variables": [
+      "s_flow=sigma/(kappa*log(2))",
+      "u_Lambda=Lambda*c^2*F^2/(3*sigma^2)"
+    ],
+    "selected_point": "s_flow=u_Lambda=1"
+  },
+  "curvature_response": {
+    "conductance_form": "Lambda_flow=kappa^2/(3*c^2)",
+    "entropy_form": "Lambda_flow=3*sigma^2/(c^2*F^2)",
+    "zero_flow_limit": "kappa=0 => sigma=0 => Lambda_flow=0"
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_cosmological_constant_throughflow_parent_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_cosmological_constant_einstein_response_coupling_origin_gate",
+  "origin_boundary": {
+    "inherited_origin": "2/3",
+    "inherited_sources": [
+      "cycle_affinity",
+      "entropy_production"
+    ],
+    "new_uninherited_term": "curvature_response_coupling"
+  },
+  "predecessor": "version10_cell_birth_four_volume_cosmological_constant_conductance_anchor_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "209fc6b5e95459153596513444c8e4dca2cb9c6e6f7a36cbeaccc14dfd2f08dc",
+    "floating_point_values": 0,
+    "obligation_count": 20,
+    "obligations": [
+      "throughflow_cycle_affinity",
+      "throughflow_entropy_production",
+      "throughflow_curvature_parent_stationary",
+      "throughflow_curvature_parent_hessian",
+      "throughflow_curvature_parent_rank_two",
+      "throughflow_curvature_parent_determinant_one",
+      "throughflow_curvature_parent_positive_spectrum",
+      "cosmological_curvature_entropy_response",
+      "cosmological_curvature_conductance_relation",
+      "zero_throughflow_zero_curvature_response",
+      "throughflow_curvature_scale_rank_two",
+      "throughflow_curvature_scale_nullity_one",
+      "throughflow_curvature_scale_kernel",
+      "throughflow_curvature_architecture_full",
+      "throughflow_curvature_conditional_origin_full",
+      "throughflow_curvature_conditional_score",
+      "throughflow_curvature_inherited_origin",
+      "throughflow_curvature_inherited_score",
+      "throughflow_curvature_physical_origin_open",
+      "throughflow_curvature_physical_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "remaining_scale_orbit": {
+    "map_nullity": 1,
+    "map_rank": 2,
+    "scale_vector": [
+      1,
+      1,
+      2
+    ],
+    "transformation": "(kappa,sigma,Lambda)->(a*kappa,a*sigma,a^2*Lambda)",
+    "variables": [
+      "kappa",
+      "sigma",
+      "Lambda"
+    ]
+  },
+  "status": {
+    "absolute_scale": "0/1",
+    "architecture": "10/10",
+    "conditional_origin": "5/5",
+    "curvature_coupling_origin": "0/1",
+    "physical_cosmological_origin": "0/1",
+    "throughflow_input_origin": "2/2"
+  },
+  "throughflow_inputs": {
+    "cycle_affinity": "F=3*log(2)",
+    "entropy_production": "sigma=kappa*log(2)",
+    "inputs_inherited": "2/2"
+  },
+  "verdict": {
+    "curvature_collapses_when_flow_stops": true,
+    "existing_parent_derives_curvature_response_coupling": false,
+    "throughflow_parent_derives_absolute_Lambda": false,
+    "throughflow_supports_conditional_cosmological_curvature": true
+  }
+}

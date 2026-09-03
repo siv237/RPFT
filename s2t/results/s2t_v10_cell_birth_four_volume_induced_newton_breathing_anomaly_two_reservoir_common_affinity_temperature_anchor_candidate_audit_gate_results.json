@@ -1,0 +1,190 @@
+{
+  "candidate_matrix": [
+    [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "candidate_matrix_rank": 6,
+  "candidate_scores": [
+    4,
+    4,
+    4,
+    3,
+    4,
+    4,
+    3,
+    3,
+    3,
+    4
+  ],
+  "candidates": [
+    "Hopf_one_edge_two_edge_path_lengths",
+    "chain_number_levels_one_two",
+    "Gibbs_normalization",
+    "equal_downward_probability_one_sixth",
+    "stationary_population_vector",
+    "entropy_production",
+    "clock_energy",
+    "spectral_cutoff",
+    "conditional_dimensional_transmutation",
+    "observed_thermal_datum"
+  ],
+  "closest_candidate": {
+    "affinities": [
+      "log(2)",
+      "2*log(2)"
+    ],
+    "missing": [
+      "typed_reservoir_path_assignment",
+      "physical_energy_temperature_unit"
+    ],
+    "name": "Hopf_one_edge_two_edge_path_lengths"
+  },
+  "criteria": [
+    "correct_dimensionless_affinity_type",
+    "internally_available",
+    "typed_to_both_reservoirs",
+    "selects_common_affinity_offset",
+    "preserves_positive_CPTP_channel",
+    "supplies_physical_energy_temperature_unit"
+  ],
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_common_affinity_temperature_anchor_candidate_audit_gate",
+  "maximum_score": "4/6",
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_path_length_reservoir_coupling_parent_origin_gate",
+  "passing_candidates": 0,
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_affinity_hopf_cycle_typed_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "8e66a4331d315f0ea65641da0bbb6ab0a0599acfe3ff9bd82ce453a373658f22",
+    "floating_point_values": 0,
+    "obligation_count": 21,
+    "obligations": [
+      "common_affinity_anchor_00",
+      "common_affinity_anchor_01",
+      "common_affinity_anchor_02",
+      "common_affinity_anchor_03",
+      "common_affinity_anchor_04",
+      "common_affinity_anchor_05",
+      "common_affinity_anchor_06",
+      "common_affinity_anchor_07",
+      "common_affinity_anchor_08",
+      "common_affinity_anchor_09",
+      "common_affinity_anchor_10",
+      "common_affinity_anchor_11",
+      "common_affinity_anchor_12",
+      "common_affinity_anchor_13",
+      "common_affinity_anchor_14",
+      "common_affinity_anchor_15",
+      "common_affinity_anchor_16",
+      "common_affinity_anchor_17",
+      "common_affinity_anchor_18",
+      "common_affinity_anchor_19",
+      "common_affinity_anchor_20"
+    ],
+    "status": "lcf-checked"
+  },
+  "residual_orbits": {
+    "common_affinity_kernel": [
+      1,
+      1,
+      0
+    ],
+    "common_affinity_rank_nullity": "2/1",
+    "energy_temperature_kernel": [
+      -1,
+      -1,
+      1
+    ],
+    "energy_temperature_rank_nullity": "2/1"
+  },
+  "status": {
+    "candidate_coverage": "10/10",
+    "common_affinity_offset_origin": "0/1",
+    "criterion_rank": "6/6",
+    "origin_ledger": "4/6",
+    "physical_temperature_origin": "0/1"
+  },
+  "verdict": {
+    "Hopf_path_lengths_numerically_reproduce_both_affinities": true,
+    "dimensionless_affinities_determine_physical_temperatures": false,
+    "existing_parent_types_paths_to_reservoirs": false
+  }
+}

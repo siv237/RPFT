@@ -1,0 +1,119 @@
+{
+  "Pati_Salam_parent": {
+    "SU4_branching": "15 -> 8_0 + 3_{4/3} + bar3_{-4/3} + 1_0",
+    "complex_dimension": 60,
+    "group": "SU(2)_R x SU(2)_L x SU(4)",
+    "hypercharge_rule": "Y=T3_R+(B-L)/2",
+    "multiplet": "Sigma=(2_R,2_L,15_4)"
+  },
+  "R2_embedding": {
+    "H15_augmented_incidence_rank": 4,
+    "H15_augmented_laplacian_rank": 4,
+    "H15_edge_count": 2,
+    "H15_kernel_dimension": 1,
+    "SM_colour_commutator_rank": 0,
+    "SM_hypercharge_commutator_rank": 0,
+    "SU2R_selector_defect_rank": 4,
+    "mixed_cycle_dimension": 1,
+    "selector_rank": 2,
+    "target_sector_indices": [
+      2,
+      5
+    ]
+  },
+  "SM_branching": {
+    "R2_plus_conjugate_dimension": 12,
+    "companion_dimension": 48,
+    "dimension_sum": 60,
+    "dimensions": [
+      16,
+      16,
+      6,
+      6,
+      6,
+      6,
+      2,
+      2
+    ],
+    "sectors": [
+      "(8,2)_{1/2}",
+      "(8,2)_{-1/2}",
+      "(3,2)_{7/6}=R2",
+      "(3,2)_{1/6}=tilde_R2",
+      "(bar3,2)_{-1/6}=tilde_R2_conjugate",
+      "(bar3,2)_{-7/6}=R2_conjugate",
+      "(1,2)_{1/2}",
+      "(1,2)_{-1/2}"
+    ],
+    "six_hypercharges": [
+      3,
+      -3,
+      7,
+      1,
+      -1,
+      -7,
+      3,
+      -3
+    ]
+  },
+  "companion_content": {
+    "R2_only_subspace_is_full_PS_invariant": false,
+    "contains_Higgs_like_doublet_pair": true,
+    "contains_colour_octet_doublet_pair": true,
+    "contains_tilde_R2_pair": true,
+    "sector_count": 6
+  },
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_pati_salam_sigma_typed_embedding_gate",
+  "inheritance": {
+    "Pati_Salam_algebra_is_current_parent": false,
+    "R2_selector_origin": false,
+    "current_parent_to_Sigma_R2_map_rank": 0
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_pati_salam_sigma_component_selector_candidate_audit_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_dirac_seed_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "8716b31d95c1ac921848f42261994323a3efd6cc9b6acaeabc04879afcf476d9",
+    "floating_point_values": 0,
+    "obligation_count": 23,
+    "obligations": [
+      "h15_r2_pati_salam_sigma_embedding_00",
+      "h15_r2_pati_salam_sigma_embedding_01",
+      "h15_r2_pati_salam_sigma_embedding_02",
+      "h15_r2_pati_salam_sigma_embedding_03",
+      "h15_r2_pati_salam_sigma_embedding_04",
+      "h15_r2_pati_salam_sigma_embedding_05",
+      "h15_r2_pati_salam_sigma_embedding_06",
+      "h15_r2_pati_salam_sigma_embedding_07",
+      "h15_r2_pati_salam_sigma_embedding_08",
+      "h15_r2_pati_salam_sigma_embedding_09",
+      "h15_r2_pati_salam_sigma_embedding_10",
+      "h15_r2_pati_salam_sigma_embedding_11",
+      "h15_r2_pati_salam_sigma_embedding_12",
+      "h15_r2_pati_salam_sigma_embedding_13",
+      "h15_r2_pati_salam_sigma_embedding_14",
+      "h15_r2_pati_salam_sigma_embedding_15",
+      "h15_r2_pati_salam_sigma_embedding_16",
+      "h15_r2_pati_salam_sigma_embedding_17",
+      "h15_r2_pati_salam_sigma_embedding_18",
+      "h15_r2_pati_salam_sigma_embedding_19",
+      "h15_r2_pati_salam_sigma_embedding_20",
+      "h15_r2_pati_salam_sigma_embedding_21",
+      "h15_r2_pati_salam_sigma_embedding_22"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "R2_component_canonically_isolated": false,
+    "R2_component_present": true,
+    "conditional_typed_embedding": "14/14",
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "R2_edges_connect_H15": true,
+    "R2_only_selector_preserves_full_Pati_Salam": false,
+    "Sigma_contains_exact_R2_type": true,
+    "typed_embedding_is_inherited": false
+  }
+}

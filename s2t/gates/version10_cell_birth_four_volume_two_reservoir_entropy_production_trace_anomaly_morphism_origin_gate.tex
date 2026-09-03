@@ -1,0 +1,43 @@
+\chapter{От производства энтропии к следовой плотности}
+\label{ch:v10-entropy-trace-anomaly-morphism}
+Двухрезервуарный канал даёт точную энтропию одного перехода
+\begin{equation}\sigma_{cell}=\frac{\log2}{66}.
+\end{equation}
+Используем клеточные часы и энергию
+\begin{equation}\tau_{cell}=\frac{\ell_{cell}}c,\qquad
+E_C=\frac{\hbar c}{\ell_{cell}},\qquad v_3=\ell_{cell}^3.
+\end{equation}
+Тогда минимальная энергия энтропийного перехода на пространственный объём
+равна
+\begin{equation}\rho_S=\frac{E_C\sigma_{cell}}{v_3}
+=\frac{\hbar c\log2}{66\ell_{cell}^4}.
+\end{equation}
+
+С другой стороны, унаследованное $v_4R^2=144$ даёт
+$R=12/\ell_{cell}^2$. Запишем ньютоновскую площадь как
+$g_N=\gamma\ell_{cell}^2$. След Эйнштейна имеет масштаб
+\begin{equation}\rho_E=\frac{\hbar cR}{8\pi g_N}
+=\frac{3\hbar c}{2\pi\gamma\ell_{cell}^4}.
+\end{equation}
+Обе плотности имеют одну степень $\ell_{cell}^{-4}$. Их баланс сокращает
+абсолютную длину и выбирает только
+\begin{equation}\boxed{\gamma=\frac{99}{\pi\log2}}.
+\end{equation}
+Это значение несовместимо с условной планковской самосогласованностью
+$g_N=\ell_{cell}^2$, то есть $\gamma=1$.
+
+\begin{theorem}[Конформное сокращение масштаба]
+При клеточных часах $\tau=\ell/c$, энергии $E_C=\hbar c/\ell$ и
+индуцированной площади $g_N\propto\ell^2$ энтропийная и эйнштейновская
+плотности обе пропорциональны $\ell^{-4}$. Баланс не выбирает $\ell$.
+\end{theorem}
+\begin{nogocriterion}[Безмасштабный энтропийный мост]
+Размерная карта имеет ранг/ядро $6/1$. Без независимого вклада иной
+масштабной степени морфизм энтропии в следовую плотность не закрывает
+абсолютный масштаб.
+\end{nogocriterion}
+\begin{protocol}\begin{enumerate}\item архитектура: \textbf{$10/10$};
+\item условный морфизм: \textbf{$7/7$};\item физический тензор напряжений: \textbf{$0/1$};
+\item абсолютный масштаб: \textbf{$0/1$};\item совместимость $\gamma=1$: \textbf{$0/1$};
+\item следующий гейт: \textbf{аудит нарушителей энтропийной масштабной орбиты}.\end{enumerate}\end{protocol}
+Машинный сертификат: \path{s2t_v10_cell_birth_four_volume_two_reservoir_entropy_production_trace_anomaly_morphism_origin_gate_results.json}.

@@ -1,0 +1,69 @@
+{
+  "currents": {
+    "hot_to_system": "1/66",
+    "net_storage": "0",
+    "system_to_cold": "1/66"
+  },
+  "date": "2026-09-02",
+  "entropy_production": "log(2)/66",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_nonequilibrium_two_reservoir_output_current_parent_admission_gate",
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_affinity_hopf_cycle_typed_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_kms_output_channel_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "f1f7e02a55ca12d03c3a36e456f4764cbc25eda8b2623cdf549bce08b3a44d98",
+    "floating_point_values": 0,
+    "obligation_count": 19,
+    "obligations": [
+      "two_bath_00",
+      "two_bath_01",
+      "two_bath_02",
+      "two_bath_03",
+      "two_bath_04",
+      "two_bath_05",
+      "two_bath_06",
+      "two_bath_07",
+      "two_bath_08",
+      "two_bath_09",
+      "two_bath_10",
+      "two_bath_11",
+      "two_bath_12",
+      "two_bath_13",
+      "two_bath_14",
+      "two_bath_15",
+      "two_bath_16",
+      "two_bath_17",
+      "two_bath_18"
+    ],
+    "status": "lcf-checked"
+  },
+  "rates": {
+    "cold": {
+      "down": "1/6",
+      "ratio": "1/4",
+      "up": "1/24"
+    },
+    "hot": {
+      "down": "1/6",
+      "ratio": "1/2",
+      "up": "1/12"
+    }
+  },
+  "stationary_population": [
+    "8/11",
+    "3/11"
+  ],
+  "status": {
+    "CPTP_channel": "1/1",
+    "absolute_scale": "0/1",
+    "architecture": "10/10",
+    "nonzero_through_current": "1/1 conditional",
+    "physical_bath_affinity_rate_origins": "0/3"
+  },
+  "verdict": {
+    "absolute_scale_derived": false,
+    "bath_parameters_parent_derived": false,
+    "detailed_balance_globally_holds": false,
+    "nonequilibrium_current_exists": true
+  }
+}

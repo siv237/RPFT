@@ -1,0 +1,138 @@
+{
+  "candidate_matrix": [
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ]
+  ],
+  "candidate_matrix_rank": 5,
+  "cell_dispersion": {
+    "cell_clock": "Omega_C=c/ell_cell",
+    "cutoff": "Omega_bath=2*v/ell_cell",
+    "infrared_group_velocity": "v",
+    "law": "omega(k)=2*v*sin(k*ell_cell/2)/ell_cell"
+  },
+  "compatibility": {
+    "Omega_bath_over_kappa": "121/12",
+    "kappa_over_Omega_C": "k_X=log((1+2*x)/(1+x))",
+    "selected_velocity": "v/c=(121/24)*k_X"
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_continuum_dispersion_cell_geometry_typed_embedding_gate",
+  "locked_vacuum_branch": {
+    "S_vac": "137.03599917352236",
+    "internal_velocity_origin": false,
+    "required_v_over_c": "121*log((2*exp(-3425899979338059/25000000000000) + 1)/(exp(-3425899979338059/25000000000000) + 1))/24",
+    "required_v_over_c_decimal": "1.543266553720361e-59"
+  },
+  "luminal_branch": {
+    "compatible_with_locked_S_vac": false,
+    "required_k_X": "24/121",
+    "selected_S_vac": "-log((-1 + exp(24/121))/(2 - exp(24/121)))",
+    "selected_S_vac_decimal": "1.2692505172177279",
+    "selected_x": "(-1 + exp(24/121))/(2 - exp(24/121))"
+  },
+  "maximum_score": "5/6",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_vacuum_growth_common_parent_origin_gate",
+  "passing_candidates": 0,
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_microscopic_carrier_cutoff_parent_admission_gate",
+  "proofdsl": {
+    "certificate_sha256": "0aab070272bd0b6f0eb2d39eecd05667b193dabf25897ed616e471ed92890acc",
+    "floating_point_values": 0,
+    "obligation_count": 26,
+    "obligations": [
+      "bath_continuum_embedding_00",
+      "bath_continuum_embedding_01",
+      "bath_continuum_embedding_02",
+      "bath_continuum_embedding_03",
+      "bath_continuum_embedding_04",
+      "bath_continuum_embedding_05",
+      "bath_continuum_embedding_06",
+      "bath_continuum_embedding_07",
+      "bath_continuum_embedding_08",
+      "bath_continuum_embedding_09",
+      "bath_continuum_embedding_10",
+      "bath_continuum_embedding_11",
+      "bath_continuum_embedding_12",
+      "bath_continuum_embedding_13",
+      "bath_continuum_embedding_14",
+      "bath_continuum_embedding_15",
+      "bath_continuum_embedding_16",
+      "bath_continuum_embedding_17",
+      "bath_continuum_embedding_18",
+      "bath_continuum_embedding_19",
+      "bath_continuum_embedding_20",
+      "bath_continuum_embedding_21",
+      "bath_continuum_embedding_22",
+      "bath_continuum_embedding_23",
+      "bath_continuum_embedding_24",
+      "bath_continuum_embedding_25"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_orbit": {
+    "kernel": [
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "rank_nullity": "3/1"
+  },
+  "status": {
+    "absolute_scale": "0/1",
+    "bath_velocity_origin": "0/1",
+    "conditional_typed_embedding": "9/9",
+    "luminal_locked_vacuum_compatibility": "0/1"
+  },
+  "verdict": {
+    "cell_geometry_provides_relative_bath_cutoff": true,
+    "locked_vacuum_requires_unexplained_ultraslow_bath_velocity": true,
+    "luminal_branch_preserves_locked_vacuum": false
+  }
+}

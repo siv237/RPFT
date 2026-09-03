@@ -1,0 +1,113 @@
+\chapter{Родитель космологической постоянной из сквозного потока}
+\label{ch:v10-cosmological-throughflow-parent}
+
+\section{Диссипативный источник кривизны}
+
+Предыдущий гейт показал, что независимо выведенная космологическая постоянная
+зафиксировала бы проводимость, но сама кривизна роста пока вычислялась из
+$\kappa$. Проверим более физическую гипотезу: космологическая кривизна
+является откликом на необратимый сквозной поток.
+
+Для канонического хопфовского цикла уже выведены
+\begin{equation}
+ F_\circlearrowright=3\log2,
+ \qquad
+ \sigma_\circlearrowright=\kappa\log2.
+ \label{eq:v10-lambda-flow-inputs}
+\end{equation}
+Единственная комбинация этих величин, имеющая размерность кривизны без
+введения дополнительной длины, имеет вид
+\begin{equation}
+ \Lambda_{\rm flow}
+ =\frac{3\sigma_\circlearrowright^2}
+ {c^2F_\circlearrowright^2}.
+ \label{eq:v10-lambda-flow-response}
+\end{equation}
+После подстановки точных данных цикла получаем
+\begin{equation}
+ \Lambda_{\rm flow}=\frac{\kappa^2}{3c^2}.
+ \label{eq:v10-lambda-flow-conductance}
+\end{equation}
+Таким образом, искомая космологическая формула допускает не только
+кинематическое, но и термодинамическое чтение: кривизна пропорциональна
+квадрату производства энтропии, нормированному силой цикла.
+
+\section{Условный положительный родитель}
+
+Введём безразмерные переменные
+\begin{equation}
+ s:=\frac{\sigma_\circlearrowright}{\kappa\log2},
+ \qquad
+ u:=\frac{\Lambda c^2F_\circlearrowright^2}
+ {3\sigma_\circlearrowright^2}.
+\end{equation}
+Минимальный родитель отклика равен
+\begin{equation}
+ \mathcal P_{\Lambda\mid\rm flow}(s,u)
+ =\frac12(s-1)^2+\frac12(u-s)^2.
+ \label{eq:v10-lambda-flow-parent}
+\end{equation}
+Он ограничен снизу и имеет единственный нуль $s=u=1$. Его гессиан
+\begin{equation}
+ \operatorname{Hess}\mathcal P_{\Lambda\mid\rm flow}
+ =\begin{pmatrix}2&-1\\-1&1\end{pmatrix},
+ \qquad \rank=2,
+ \qquad \det=1
+ \label{eq:v10-lambda-flow-hessian}
+\end{equation}
+положительно определён. При выключении потока
+$\kappa=0$ получаем $\sigma_\circlearrowright=0$ и
+$\Lambda_{\rm flow}=0$: поддерживаемая кривизна схлопывается вместе с
+процессом прохождения.
+
+\section{Граница происхождения}
+
+Аффинность и производство энтропии уже выведены предыдущими гейтами.
+Однако член, отождествляющий нормированную кривизну $u$ с нормированным
+потоком $s$, отсутствует в унаследованном родительском функционале. Поэтому
+\eqref{eq:v10-lambda-flow-parent} является допустимой условной архитектурой,
+но пока новым законом отклика.
+
+Кроме того, в логарифмических координатах $(\kappa,\sigma,\Lambda)$ карта
+\begin{equation}
+ C_{\Lambda\mid\rm flow}=
+ \begin{pmatrix}-1&1&0\\0&-2&1\end{pmatrix}
+ \label{eq:v10-lambda-flow-scale-map}
+\end{equation}
+имеет ранг $2$, ядро размерности $1$ и уничтожает вектор $(1,1,2)^T$.
+Преобразование
+\begin{equation}
+ (\kappa,\sigma,\Lambda)\longmapsto
+ (a\kappa,a\sigma,a^2\Lambda)
+\end{equation}
+не меняет относительный родитель. Динамический отклик объясняет наличие и
+исчезновение кривизны, но не её абсолютную величину.
+
+\begin{theorem}[Условная кривизна сквозного потока]
+Положительный родитель $\mathcal P_{\Lambda\mid\rm flow}$ выбирает
+$\Lambda_{\rm flow}=3\sigma_\circlearrowright^2/
+(c^2F_\circlearrowright^2)=\kappa^2/(3c^2)$. Кривизна положительна при
+ненулевом потоке и исчезает вместе с ним.
+\end{theorem}
+
+\begin{nogocriterion}[Закон отклика не должен вводиться вручную]
+Термодинамическая совместимость формулы не доказывает её происхождение.
+Пока член $u-s$ не получен из эйнштейновского, спектрального или иного уже
+допущенного сектора общего родителя, он является новой условной связью.
+Даже после его допуска сохраняется одна абсолютная масштабная мода.
+\end{nogocriterion}
+
+\begin{protocol}[Статус родителя кривизны потока]\begin{enumerate}
+\item аффинность и энтропия цикла: \textbf{$2/2$};
+\item положительный условный родитель: \textbf{построен};
+\item условное происхождение отклика: \textbf{$5/5$};
+\item унаследованные источники родителя: \textbf{$2/3$};
+\item происхождение связи кривизна--поток: \textbf{$0/1$};
+\item физическое происхождение $\Lambda$: \textbf{$0/1$};
+\item абсолютный масштаб: \textbf{$0/1$};
+\item следующий гейт: \textbf{происхождение связи из эйнштейновского
+геометрического отклика}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_cosmological_constant_throughflow_parent_origin_gate_results.json}.

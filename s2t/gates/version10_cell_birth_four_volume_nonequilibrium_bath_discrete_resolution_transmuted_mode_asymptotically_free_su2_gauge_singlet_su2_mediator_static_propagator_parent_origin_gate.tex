@@ -1,0 +1,66 @@
+\chapter{Родитель статического
+\texorpdfstring{$SU(2)$}{SU(2)}-пропагатора композитного синглета}
+\label{ch:v10-discrete-resolution-su2-static-mediator}
+
+Нулевая мода безмассового посредника не обязана разрушать физический
+статический отклик. Разложим двухвершинный клеточный носитель на постоянную
+gauge-моду и ортогональную физическую моду:
+\begin{equation}
+ P_0=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
+ P_\perp=I-P_0,\qquad L=2P_\perp.
+\end{equation}
+При параметре gauge fixing $\xi>0$ оператор и его точный Green-оператор
+равны
+\begin{equation}
+ K_\xi=2P_\perp+\xi P_0,
+ \qquad G_\xi=\frac12P_\perp+\frac1\xi P_0,
+ \qquad K_\xi G_\xi=I.
+\end{equation}
+
+Нормированный обменный источник
+\begin{equation}
+ j=\frac1{\sqrt2}(1,-1)^\top
+\end{equation}
+сохранён: $P_0j=0$ и $P_\perp j=j$. Поэтому физическая восприимчивость
+\begin{equation}
+ \chi_0=j^\top G_\xi j=\frac12,
+ \qquad \frac{\partial\chi_0}{\partial\xi}=0
+\end{equation}
+конечна и не зависит от gauge fixing. Вместе с $g^2=3/8$ это условно даёт
+\begin{equation}
+ \kappa=g^2\chi_0=\frac3{16}.
+\end{equation}
+
+Родитель коэффициентов Green-оператора строг: для координат при
+$(P_0,P_\perp)$ его гессиан равен $\operatorname{diag}(\xi^2,4)$ и имеет
+определитель $4\xi^2>0$.
+
+Но геометрический лапласиан ещё не является $SU(2)$-калибровочным полем.
+В унаследованном носителе отсутствуют два морфизма: вложение adjoint-поля в
+клеточные рёбра и отображение композитной пары в сохранённый ток $j$.
+Поэтому числа $1/2$ и $3/16$ пока являются строгим условным следствием
+архитектуры, а не физически выведенным связыванием.
+
+\begin{theorem}[Сохранённый источник устраняет gauge-зависимость]
+Проекция статического Green-оператора на ортогональный постоянной моде ток
+равна $P_\perp/2$. Восприимчивость $1/2$ и коэффициент $3/16$ конечны и не
+зависят от параметра gauge fixing.
+\end{theorem}
+
+\begin{nogocriterion}[Клеточный лапласиан не является gauge-полем сам по себе]
+Совпадение операторной формы не доказывает, что рёберная переменная несёт
+adjoint-представление $SU(2)$ и взаимодействует с дублетной парой через
+сохранённый ток. Эти типовые морфизмы должны быть построены отдельно.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item условная архитектура: \textbf{$12/12$};
+\item gauge-независимость: \textbf{$5/5$};
+\item унаследованный геометрический лапласиан: \textbf{$1/1$};
+\item типизированное $SU(2)$-вложение и ток: \textbf{$0/2$};
+\item физическое происхождение: \textbf{$0/3$};
+\item следующий гейт: \textbf{клеточное вложение $SU(2)$-посредника}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_static_propagator_parent_origin_gate_results.json}.

@@ -1,0 +1,73 @@
+\chapter{Аудит кандидатов минимального odd auxiliary-бимодуля}
+\label{ch:v10-h15-r2-minimal-odd-auxiliary-audit}
+
+Fixed-point algebra оказалась слишком узкой по весам и чётности. Поэтому
+теперь проверяются внутренние способы получить минимальный независимый
+auxiliary-бимодуль $A_\Sigma$, необходимый для Schur-parent.
+
+Его тип уже полностью фиксирован предыдущим no-go. После комплексизации он
+должен иметь веса
+\begin{equation}
+ (+7)^1,(-7)^1,(+3)^2,(-3)^2,(+1)^1,(-1)^1,
+\end{equation}
+odd grading, Real-инволюцию, меняющую знак гиперзаряда, положительную
+trace metric и восемь вещественных направлений. Кроме того, поле должно
+быть независимым и алгебраически устраняемым, иначе Schur complement не
+является интегрированием auxiliary degree of freedom.
+
+Двенадцать кандидатов проверены по шести критериям. Матрица аудита имеет
+rank $6$, но pass-vector равен $0_{12}$. Старый fixed-point сектор
+унаследован и устраним, однако неверен по весам и even. Произвольный
+восьмимерный срез сохраняет лишь размерность и метрику.
+
+Повторное использование $\Sigma$, композита $Q\Sigma$ или KO6-сопряжённой
+one-form даёт правильный representation type, но не создаёт независимого
+auxiliary-поля: это переименование динамической координаты. Cotangent- и
+BV-удвоения меняют статистику или вводят phase-space/antifield структуру,
+а не положительный бозонный Gaussian channel. Off-diagonal $\Delta$-arrow
+имеет неверные веса. Callias normal component и suspended
+superconnection могут нести нужный тип условно, но являются новыми
+динамическими секторами и не входят в текущий parent.
+
+Единственный минимальный кандидат, проходящий первые пять критериев, ---
+Hubbard--Stratonovich поле $A_\Sigma$ с квадратичной формой
+\begin{equation}
+ V_{\rm HS}(\Sigma,A_\Sigma)
+ =\frac12\langle\Sigma,49I\,\Sigma\rangle
+ +\langle A_\Sigma,Q\Sigma\rangle
+ +\frac12\langle A_\Sigma,A_\Sigma\rangle.
+\end{equation}
+Его typed embedding имеет rank $8$, а устранение даёт
+$49I-Q^2=G_Y$. Но этот кандидат получает $5/6$: в текущем spectral или
+mapping-cone parent отсутствует независимый odd Gaussian field и его
+смешанный bilinear.
+
+\begin{theorem}[Минимальный условный auxiliary-кандидат]
+Точный тип $A_\Sigma$ требует восемь вещественных направлений. Среди
+двенадцати проверенных маршрутов ни один не является унаследованным полным
+решением; Hubbard--Stratonovich реализация единственна в аудите как
+минимальный положительный алгебраически устранимый кандидат с правильными
+весами, grading и reality.
+\end{theorem}
+
+\begin{nogocriterion}[Переименование $\Sigma$ не создаёт auxiliary]
+Нельзя использовать $\Sigma$, $Q\Sigma$ или её Real-партнёра как второй
+независимый блок Hessian. Без новой интеграционной координаты Gaussian
+elimination и subtractive Schur term отсутствуют.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item минимальная вещественная размерность: \textbf{$8$};
+\item критериев / rank аудита: \textbf{$6/6$};
+\item кандидатов: \textbf{$12$};
+\item прошедших кандидатов: \textbf{$0/12$};
+\item лучший минимальный кандидат: \textbf{Hubbard--Stratonovich, $5/6$};
+\item conditional embedding rank: \textbf{$8$};
+\item conditional parent rank/nullity: \textbf{$14/2$};
+\item inherited odd auxiliary embedding rank: \textbf{$0$};
+\item physical origin: \textbf{$3/4$};
+\item следующий гейт: \textbf{происхождение Hubbard--Stratonovich odd auxiliary parent}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_minimal_odd_auxiliary_bimodule_candidate_audit_gate_results.json}.

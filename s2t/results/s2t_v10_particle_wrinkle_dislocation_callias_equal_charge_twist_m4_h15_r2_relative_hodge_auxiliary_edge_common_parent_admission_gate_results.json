@@ -1,0 +1,84 @@
+{
+  "conditional_common_carrier": {
+    "Real_compatible": true,
+    "carrier": "Sigma tensor C^2",
+    "exact_Q_readout": true,
+    "gauge_equivariant": true,
+    "gauge_generator_rank": 16,
+    "hodge_projector_inertia_negative_zero_positive": [
+      0,
+      8,
+      8
+    ],
+    "hodge_projector_rank": 8,
+    "odd_edge_operator_rank": 16,
+    "oriented_incidence_rank": 8,
+    "real_dimension": 16
+  },
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_hodge_auxiliary_edge_common_parent_admission_gate",
+  "inherited_weight_obstruction": {
+    "fixed_point_dimension": 36,
+    "intertwiner_constraint_rank_nullity": [
+      288,
+      0
+    ],
+    "minimum_extension_dimension": 8,
+    "required_auxiliary_weights": [
+      3,
+      -3,
+      7,
+      1,
+      -1,
+      -7,
+      3,
+      -3
+    ],
+    "weight_match_rank": 0
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_hodge_auxiliary_edge_origin_candidate_audit_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_curvature_junk_quotient_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "938bdac0114bc89269a872f48189ed148270d04521de6c02fd565c8ad965d488",
+    "floating_point_values": 0,
+    "obligation_count": 24,
+    "obligations": [
+      "h15_r2_relative_hodge_auxiliary_edge_admission_00",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_01",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_02",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_03",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_04",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_05",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_06",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_07",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_08",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_09",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_10",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_11",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_12",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_13",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_14",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_15",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_16",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_17",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_18",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_19",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_20",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_21",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_22",
+      "h15_r2_relative_hodge_auxiliary_edge_admission_23"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_admission": "6/6",
+    "inherited_admission": "3/6",
+    "physical_common_parent": false
+  },
+  "verdict": {
+    "existing_fixed_point_sector_supplies_auxiliary_copy": false,
+    "minimal_conditional_carrier_admitted": true,
+    "physical_parent_found": false
+  }
+}

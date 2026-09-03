@@ -1,0 +1,103 @@
+\chapter{Родитель suspension auxiliary copy и Mathai--Quillen достройка}
+\label{ch:v10-h15-r2-superconnection-suspension-auxiliary-copy-parent}
+
+Предыдущий аудит выделил superconnection suspension как ближайший источник
+второй копии $\Sigma$. Проверим различие между градуированным удвоением и
+независимой бозонной координатой, а затем минимально достроим suspension до
+Mathai--Quillen Thom-пары.
+
+На удвоенном носителе $\Sigma\oplus\Sigma$ положим
+\begin{equation}
+ \Gamma_{\rm sus}=\begin{pmatrix}I_8&0\\0&-I_8\end{pmatrix},
+ \qquad
+ S_{\rm sus}=\begin{pmatrix}0&I_8\\I_8&0\end{pmatrix}.
+\end{equation}
+Тогда $S_{\rm sus}^2=I_{16}$, $\{\Gamma_{\rm sus},S_{\rm sus}\}=0$, а
+$S_{\rm sus}$ коммутирует с удвоенными gauge- и Real-действиями. Тем самым
+suspension точно создаёт копию, grading и odd edge. Однако отображение
+независимых динамических полей текущего parent во второе слагаемое имеет
+rank ноль. Само удвоение является стабилизацией, а не происхождением
+$A_\Sigma$.
+
+Минимальная Thom-достройка вводит нечётную координату $\chi_\Sigma$ и
+бозонную координату $H_\Sigma$ того же восьмимерного bundle-типа. Их
+линейный contractible differential имеет вид
+\begin{equation}
+ d_{\rm MQ}=\begin{pmatrix}0&0\\I_8&0\end{pmatrix},
+ \qquad d_{\rm MQ}^2=0,
+ \qquad \rank d_{\rm MQ}=8.
+\end{equation}
+Поэтому kernel и image имеют dimension восемь, а cohomology пары равна
+нулю: $H_\Sigma$ не является новой on-shell частицей. Его injection имеет
+rank восемь и после действия $P_{\rm rel}$ возбуждает все восемь relative
+мод.
+
+Уже выведенная mixed curvature задаёт Thom-section
+\begin{equation}
+ s_Q(\Sigma)=Q\Sigma,
+ \qquad
+ Q=\operatorname{diag}(3,-3,7,1,-1,-7,3,-3).
+\end{equation}
+Для unit bundle metric совместный квадратичный блок $(H_\Sigma,\Sigma)$
+равен
+\begin{equation}
+ \mathcal H_{\rm MQ}=
+ \begin{pmatrix}I_8&Q\\Q&49I_8\end{pmatrix}.
+\end{equation}
+Точное Gaussian elimination даёт Schur complement
+\begin{equation}
+ 49I_8-Q^2
+ =\operatorname{diag}(40,40,0,48,48,0,40,40),
+\end{equation}
+имеющий inertia $(0_-,2_0,6_+)$. Линейный fermionic Jacobian секции
+постоянен и равен $\det Q=3969$. При фиксированном $Q$ он может войти в
+нормировку меры, но при динамическом $\Delta$-фоне требуется полный
+curvature/Jacobian audit.
+
+\begin{theorem}[Suspension не равна auxiliary origin]
+Чистая superconnection suspension закрывает только $3/7$ критериев: она
+даёт типизированное положительное градуированное удвоение без новой
+on-shell моды, но не даёт независимой переменной, nilpotent pair или
+section $Q\Sigma$. Mathai--Quillen-достройка условно закрывает $6/7$:
+остаётся вывести её cohomological differential и полную меру из текущего
+parent.
+\end{theorem}
+
+\begin{nogocriterion}[Стабилизацию нельзя считать новым полем]
+Наличие второго изоморфного слагаемого и odd swap-оператора не доказывает
+существование независимо интегрируемого $A_\Sigma$. Без contractible пары,
+section и меры такое удвоение является только алгебраической
+стабилизацией.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item suspension carrier dimension: \textbf{$16$};
+\item suspension edge rank: \textbf{$16$};
+\item bare dynamical injection rank: \textbf{$0$};
+\item Thom differential rank/cohomology: \textbf{$8/0$};
+\item independent Thom boson rank: \textbf{$8$};
+\item relative image rank: \textbf{$8$};
+\item section rank and Jacobian: \textbf{$8$, $3969$};
+\item Schur inertia: \textbf{$(0_-,2_0,6_+)$};
+\item bare/conditional status: \textbf{$3/7$ и $6/7$};
+\item следующий гейт: \textbf{общий parent Mathai--Quillen Thom-мультиплета}.
+\end{enumerate}\end{protocol}
+
+Литературные основания: Quillen \cite{v10-sus-quillen},
+Mathai--Quillen \cite{v10-sus-mathai-quillen} и полевой разбор Blau
+\cite{v10-sus-blau}.
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_suspension_auxiliary_copy_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v10-sus-quillen}
+D.~Quillen, \emph{Superconnections and the Chern Character}, Topology 24
+(1985), 89--95.
+\bibitem{v10-sus-mathai-quillen}
+V.~Mathai, D.~Quillen, \emph{Superconnections, Thom Classes, and
+Equivariant Differential Forms}, Topology 25 (1986), 85--110.
+\bibitem{v10-sus-blau}
+M.~Blau, \emph{The Mathai--Quillen Formalism and Topological Field Theory},
+J. Geom. Phys. 11 (1993), 95--127, arXiv:hep-th/9203026.
+\end{thebibliography}

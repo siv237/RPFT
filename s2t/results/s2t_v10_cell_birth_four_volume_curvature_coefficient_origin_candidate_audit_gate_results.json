@@ -1,0 +1,153 @@
+{
+  "candidate_matrix": [
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0
+    ]
+  ],
+  "candidate_matrix_rank": 3,
+  "candidates": [
+    "cosmological_curvature",
+    "spectral_cutoff",
+    "clock_energy",
+    "inverse_cell_length",
+    "cell_curvature",
+    "KMS_temperature",
+    "topological_density",
+    "induced_matter_loop"
+  ],
+  "closest_candidates": [
+    "spectral_cutoff",
+    "induced_matter_loop"
+  ],
+  "coefficient_constraint": {
+    "kernel": "(-2,-1,1)",
+    "nullity": 1,
+    "orbit_break_column": 0,
+    "parent_origin_column": 0,
+    "rank": 2
+  },
+  "criteria": [
+    "paired_dimensions",
+    "internal",
+    "target_independent",
+    "derived_by_common_parent",
+    "typed_into_A_B",
+    "breaks_scale_orbit"
+  ],
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_curvature_coefficient_origin_candidate_audit_gate",
+  "generic_scale_seed": {
+    "coefficients": {
+      "A": "alpha*m^2",
+      "B": "beta*m"
+    },
+    "dimensionless_ratio": "B^2/A=beta^2/alpha",
+    "scale_orbit": "(q,m)->(s^2*q,m/s^2)",
+    "seed_dimension": "L^-2",
+    "selected_invariant": "q* m=beta/(2*alpha)",
+    "selected_scale": "q*=beta/(2*alpha*m)"
+  },
+  "maximum_score": "4/6",
+  "next_gate": "version10_cell_birth_four_volume_induced_gravity_coefficient_parent_origin_gate",
+  "passing_candidates": 0,
+  "predecessor": "version10_cell_birth_four_volume_curvature_density_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "9c4fe34012659f43089ce807253ca19c34861b4c8531b1ae7ca762b7e1769ac0",
+    "floating_point_values": 0,
+    "obligation_count": 18,
+    "obligations": [
+      "curvature_coefficient_candidate_matrix",
+      "zero_passing_coefficient_candidates",
+      "maximum_coefficient_score_four",
+      "coefficient_candidate_rank_three",
+      "coefficient_parent_origin_column_zero",
+      "coefficient_orbit_break_column_zero",
+      "volume_coefficient_scale_degree",
+      "einstein_coefficient_scale_degree",
+      "coefficient_dimensionless_ratio",
+      "selected_scale_inverse_seed",
+      "selected_dimensionless_product",
+      "seed_cell_parent_rescaling",
+      "coefficient_constraint_rank_two",
+      "coefficient_constraint_nullity_one",
+      "coefficient_scale_kernel",
+      "coefficient_candidate_coverage_full",
+      "coefficient_origin_ledger_three",
+      "coefficient_origin_score_three"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_cell_scale": "0/1",
+    "candidate_coverage": "8/8",
+    "origin_ledger": "3/5",
+    "physical_coefficient_pair": "0/1"
+  },
+  "verdict": {
+    "current_candidate_derives_A_and_B": false,
+    "dimensionally_covariant_pair_breaks_scale_orbit": false,
+    "induced_matter_loop_requires_dedicated_origin_test": true
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_shared_fixed_point_auxiliary_channel_typed_embedding_gate",
+  "minimal_conditional_extension": {
+    "Schur_complement_diagonal": [
+      40,
+      40,
+      0,
+      48,
+      48,
+      0,
+      40,
+      40
+    ],
+    "full_parent_rank_nullity": [
+      14,
+      2
+    ],
+    "grading_compatible": true,
+    "hypercharge_equivariant": true,
+    "inherited": false,
+    "new_odd_auxiliary_real_dimension": 8,
+    "reality_compatible": true,
+    "trace_isometric": true,
+    "weights_6Y": [
+      3,
+      -3,
+      7,
+      1,
+      -1,
+      -7,
+      3,
+      -3
+    ]
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_minimal_odd_auxiliary_bimodule_candidate_audit_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_stabilizer_moment_map_curvature_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "cf24c3f79a22dbf4e69b168e3a8012248f70988f65fb56fb23f177e7dd7b7ae3",
+    "floating_point_values": 0,
+    "obligation_count": 28,
+    "obligations": [
+      "h15_r2_shared_fixed_point_auxiliary_embedding_00",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_01",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_02",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_03",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_04",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_05",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_06",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_07",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_08",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_09",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_10",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_11",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_12",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_13",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_14",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_15",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_16",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_17",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_18",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_19",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_20",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_21",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_22",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_23",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_24",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_25",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_26",
+      "h15_r2_shared_fixed_point_auxiliary_embedding_27"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_odd_extension": "4/4",
+    "inherited_fixed_point_channel": "2/4"
+  },
+  "typed_embedding": {
+    "ambient_fixed_point_dimension": 36,
+    "fixed_point_grading": "even",
+    "graded_Hom_dimension": 0,
+    "inherited_typed_embedding_rank": 0,
+    "required_auxiliary_grading": "odd",
+    "untyped_equivariance_residual_rank": 8,
+    "untyped_isometric_embedding_rank": 8
+  },
+  "verdict": {
+    "fixed_point_graded_embedding_exists": false,
+    "fixed_point_hypercharge_equivariant_embedding_exists": false,
+    "minimal_odd_extension_conditionally_succeeds": true,
+    "physical_shared_auxiliary_channel_found": false,
+    "untyped_dimension_embedding_exists": true
+  },
+  "weight_audit": {
+    "Sigma_weight_multiplicities": {
+      "-1": 1,
+      "-3": 2,
+      "-7": 1,
+      "1": 1,
+      "3": 2,
+      "7": 1
+    },
+    "Sigma_weights_6Y": [
+      3,
+      -3,
+      7,
+      1,
+      -1,
+      -7,
+      3,
+      -3
+    ],
+    "common_weight_count": 0,
+    "equivariant_Hom_dimension": 0,
+    "fixed_point_auxiliary_weight_multiplicities": {
+      "-4": 6,
+      "-6": 1,
+      "0": 22,
+      "4": 6,
+      "6": 1
+    },
+    "intertwiner_constraint_rank": 288
+  }
+}

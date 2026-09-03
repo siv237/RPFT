@@ -1,0 +1,234 @@
+{
+  "best_candidates": [
+    {
+      "failed": "inherited_action",
+      "name": "Delta_moment_map_trilinear",
+      "score": "5/6"
+    },
+    {
+      "failed": "inherited_action",
+      "name": "superconnection_mixed_curvature",
+      "score": "5/6"
+    }
+  ],
+  "candidate_audit": {
+    "criteria": [
+      "typed_A_Sigma_domain",
+      "exact_Q",
+      "gauge_equivariance",
+      "Real_even_scalar",
+      "single_parent_locked_coefficient",
+      "inherited_action"
+    ],
+    "matrix": [
+      [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "universal_identity_portal",
+      "fixed_point_projection",
+      "one_sided_target_Q",
+      "Delta_moment_map_trilinear",
+      "two_independent_Cartan_portals",
+      "ordinary_even_spectral_moments",
+      "spectral_commutator_D_Y",
+      "inherited_mapping_cone_incidence",
+      "KO6_first_order_fluctuation",
+      "Callias_normal_component",
+      "superconnection_mixed_curvature",
+      "fermion_loop_triangle"
+    ],
+    "passes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "passing_candidates": 0,
+    "rank": 6,
+    "scores": [
+      4,
+      3,
+      3,
+      5,
+      4,
+      4,
+      3,
+      3,
+      4,
+      4,
+      5,
+      4
+    ]
+  },
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_odd_auxiliary_cross_bilinear_candidate_audit_gate",
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_moment_map_odd_auxiliary_trilinear_parent_origin_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hubbard_stratonovich_odd_auxiliary_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "16731aaf5f63f305bbce8bf7b01ec91eeaaa795c468a7195dd616138aed2c620",
+    "floating_point_values": 0,
+    "obligation_count": 19,
+    "obligations": [
+      "h15_r2_odd_auxiliary_cross_bilinear_00",
+      "h15_r2_odd_auxiliary_cross_bilinear_01",
+      "h15_r2_odd_auxiliary_cross_bilinear_02",
+      "h15_r2_odd_auxiliary_cross_bilinear_03",
+      "h15_r2_odd_auxiliary_cross_bilinear_04",
+      "h15_r2_odd_auxiliary_cross_bilinear_05",
+      "h15_r2_odd_auxiliary_cross_bilinear_06",
+      "h15_r2_odd_auxiliary_cross_bilinear_07",
+      "h15_r2_odd_auxiliary_cross_bilinear_08",
+      "h15_r2_odd_auxiliary_cross_bilinear_09",
+      "h15_r2_odd_auxiliary_cross_bilinear_10",
+      "h15_r2_odd_auxiliary_cross_bilinear_11",
+      "h15_r2_odd_auxiliary_cross_bilinear_12",
+      "h15_r2_odd_auxiliary_cross_bilinear_13",
+      "h15_r2_odd_auxiliary_cross_bilinear_14",
+      "h15_r2_odd_auxiliary_cross_bilinear_15",
+      "h15_r2_odd_auxiliary_cross_bilinear_16",
+      "h15_r2_odd_auxiliary_cross_bilinear_17",
+      "h15_r2_odd_auxiliary_cross_bilinear_18"
+    ],
+    "status": "lcf-checked"
+  },
+  "required_cross_operator": {
+    "Cartan_basis_rank": 2,
+    "cross_block_rank": 8,
+    "full_cross_hessian_inertia_negative_zero_positive": [
+      8,
+      0,
+      8
+    ],
+    "full_cross_hessian_rank": 16,
+    "inherited_cross_block_rank": 0,
+    "locked_coefficients_T_B": [
+      1,
+      1
+    ],
+    "operator": "Q=6Y=T+B",
+    "spectrum": [
+      3,
+      -3,
+      7,
+      1,
+      -1,
+      -7,
+      3,
+      -3
+    ]
+  },
+  "status": {
+    "physical_origin": "5/6",
+    "remaining_slot": "inherited common three-field parent"
+  },
+  "verdict": {
+    "best_route_identified": true,
+    "candidate_passes_all_criteria": false,
+    "cross_operator_unique_in_Cartan_span": true,
+    "physical_cross_bilinear_found": false
+  }
+}

@@ -1,0 +1,120 @@
+\chapter{Происхождение космологической связи из эйнштейновского отклика}
+\label{ch:v10-cosmological-einstein-response}
+
+\section{От энтропийного потока к тензору энергии}
+
+Условный родитель предыдущего гейта связывал кривизну непосредственно с
+производством энтропии. Эйнштейновское уравнение, однако, реагирует не на
+безразмерную энтропию в единицу времени, а на плотность энергии--импульса.
+Поэтому необходим явный промежуточный мост.
+
+Пусть $\Theta$ --- энергия на единицу произведённой энтропии,
+$\tau_{\rm res}$ --- время удержания этой энергии в одной ячейке, а
+$v_{\rm cell}$ --- её физический четырёхмерный объём. Тогда условная плотность
+энергии потока равна
+\begin{equation}
+ \rho_{\rm flow}
+ =\frac{\Theta\sigma_\circlearrowright\tau_{\rm res}}{v_{\rm cell}}.
+ \label{eq:v10-einstein-flow-density}
+\end{equation}
+Для одного времени проводимости
+\begin{equation}
+ \tau_{\rm res}=\frac1\kappa,
+ \qquad
+ \sigma_\circlearrowright=\kappa\log2,
+\end{equation}
+получаем
+\begin{equation}
+ \rho_{\rm flow}=\frac{\Theta\log2}{v_{\rm cell}}.
+ \label{eq:v10-einstein-one-cycle-density}
+\end{equation}
+
+\section{Условная эйнштейновская калибровка}
+
+Вакуумоподобный изотропный отклик имел бы космологическую кривизну
+\begin{equation}
+ \Lambda_E=\frac{8\pi G}{c^4}\rho_{\rm flow}
+ =\frac{8\pi G\Theta\log2}{c^4v_{\rm cell}}.
+ \label{eq:v10-einstein-curvature-response}
+\end{equation}
+Совмещение с динамической кривизной
+$\Lambda_{\rm flow}=\kappa^2/(3c^2)$ даёт
+\begin{equation}
+ \boxed{\kappa^2=\frac{24\pi G\Theta\log2}{c^2v_{\rm cell}}}.
+ \label{eq:v10-einstein-conductance-scale}
+\end{equation}
+В отличие от круговой формулы прошлого гейта это действительно могло бы
+выбрать абсолютную проводимость, если бы $G$, $\Theta$ и $v_{\rm cell}$ были
+получены независимо.
+
+Три относительных условия можно собрать в положительный родитель. Для
+нормировок
+\begin{equation}
+ u_\tau=\kappa\tau_{\rm res},
+ \qquad u_E=\frac{\Lambda}{\Lambda_E},
+ \qquad u_m=\frac{3c^2\Lambda}{\kappa^2}
+\end{equation}
+положим
+\begin{equation}
+ \mathcal P_E
+ =\frac12(u_\tau-1)^2
+ +\frac12(u_E-u_\tau)^2
+ +\frac12(u_m-u_E)^2.
+ \label{eq:v10-einstein-response-parent}
+\end{equation}
+Его единственный нуль равен $u_\tau=u_E=u_m=1$, а гессиан
+\begin{equation}
+ \operatorname{Hess}\mathcal P_E=
+ \begin{pmatrix}
+ 2&-1&0\\
+ -1&2&-1\\
+ 0&-1&1
+ \end{pmatrix}
+ \label{eq:v10-einstein-response-hessian}
+\end{equation}
+имеет ранг $3$, определитель $1$ и положительные ведущие миноры
+$(2,3,1)$.
+
+\section{Пакет недостающих якорей}
+
+В логарифмических переменных $(\kappa,G,\Theta,v_{\rm cell})$ формула
+\eqref{eq:v10-einstein-conductance-scale} даёт одну строку
+\begin{equation}
+ C_E=\begin{pmatrix}2&-1&-1&1\end{pmatrix}.
+ \label{eq:v10-einstein-anchor-map}
+\end{equation}
+Её ранг равен $1$, а размерность ядра --- $3$. Независимая фиксация
+$G$, $\Theta$ и $v_{\rm cell}$ повысила бы ранг полной карты до $4$.
+
+Но текущая программа не располагает таким пакетом. Ньютоновская постоянная
+не выведена из коэффициента эйнштейновского члена, КМС-температура наследует
+невыведенную частоту часов, а абсолютный объём ячейки сохранил масштабную
+моду. Кроме того, происхождение вакуумоподобного тензора энергии из
+сквозного канала ещё не установлено.
+
+\begin{theorem}[Условный масштаб из эйнштейновского отклика]
+При независимых положительных $G$, $\Theta$ и $v_{\rm cell}$ совместный
+родитель потока и кривизны выбирает
+$\kappa^2=24\pi G\Theta\log2/(c^2v_{\rm cell})$. Его относительный гессиан
+положительно определён и не содержит плоских направлений.
+\end{theorem}
+
+\begin{nogocriterion}[Энтропия не является энергией без моста]
+Нельзя подставлять $\sigma_\circlearrowright$ непосредственно в правую часть
+эйнштейновского уравнения. Для этого требуются энергия на единицу энтропии,
+время удержания, абсолютный объём и типизированный тензор энергии. Пока их
+происхождение не закрыто, формула масштаба остаётся условной.
+\end{nogocriterion}
+
+\begin{protocol}[Статус эйнштейновского моста]\begin{enumerate}
+\item условный положительный родитель: \textbf{построен};
+\item условная эйнштейновская калибровка: \textbf{$5/5$};
+\item унаследованные источники: \textbf{$3/7$};
+\item независимые $G$, $\Theta$, $v_{\rm cell}$ и тензор энергии:
+\textbf{$0/4$};
+\item абсолютная проводимость: \textbf{$0/1$};
+\item следующий гейт: \textbf{аудит пакета якорей эйнштейновского отклика}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_cosmological_constant_einstein_response_coupling_origin_gate_results.json}.

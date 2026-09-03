@@ -1,0 +1,163 @@
+{
+  "beta_constraint": {
+    "equation": "-22*C_A+4*n_D+n_s=-12",
+    "nullity": 2,
+    "parent_hessian_rank": 1,
+    "rank": 1
+  },
+  "beta_convention": "beta_g=b*g^3/(16*pi^2)",
+  "candidate_matrix": [
+    [
+      1,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ]
+  ],
+  "conditional_exact_carriers": [
+    {
+      "C_A": 2,
+      "Dirac_fundamentals": 8,
+      "anomaly_free": true,
+      "beta": "-2",
+      "complex_scalar_fundamentals": 0,
+      "gauge_algebra": "su2"
+    },
+    {
+      "C_A": 3,
+      "Dirac_fundamentals": 13,
+      "anomaly_free": true,
+      "beta": "-2",
+      "complex_scalar_fundamentals": 2,
+      "gauge_algebra": "su3"
+    }
+  ],
+  "criteria": [
+    "typed_gauge_beta",
+    "internal_carrier",
+    "negative_sign",
+    "exact_minus_two",
+    "anomaly_free",
+    "independently_parent_selected"
+  ],
+  "date": "2026-09-02",
+  "false_friend": {
+    "K43_BV_27_is_typed_as_this_multiplicity": false,
+    "anomaly_free": false,
+    "beta": "-2",
+    "carrier": "su3_plus_27_chiral_Weyl_fundamentals"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_beta_sign_parent_origin_gate",
+  "inherited_beta": "2",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_anomaly_free_carrier_candidate_audit_gate",
+  "pass_vector": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_ir_mass_term_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "8bb440e44116abb2dec07fd9a2f0c49095e3033801637d2a1c0258b19b59bbde",
+    "floating_point_values": 0,
+    "obligation_count": 23,
+    "status": "lcf-checked"
+  },
+  "required_beta": "-2",
+  "score_vector": [
+    4,
+    4,
+    4,
+    4,
+    3,
+    4,
+    1,
+    3,
+    5
+  ],
+  "status": {
+    "candidate_passes": "0/9",
+    "conditional_exact_carriers": "2/2",
+    "physical_origin": "0/4"
+  },
+  "verdict": {
+    "beta_equation_selects_unique_field_content": false,
+    "current_K43_carrier_derives_an_AF_sector": false,
+    "current_relative_U1_is_asymptotically_free": false,
+    "exact_minus_two_is_algebraically_possible": true,
+    "negative_beta_is_algebraically_possible": true,
+    "physical_AF_parent_is_derived": false
+  }
+}

@@ -1,0 +1,80 @@
+\chapter{Типизированное вложение \texorpdfstring{$R_2$}{R2} в
+Pati--Salam \texorpdfstring{$\Sigma$}{Sigma}}
+\label{ch:v10-h15-r2-pati-salam-sigma-embedding}
+
+Предыдущий аудит выделил Pati--Salam как ближайшую расширенную геометрию,
+способную содержать конечный $R_2$-seed. Рассмотрим общий left--right канал
+\begin{equation}
+ \Sigma\sim(\mathbf2_R,\mathbf2_L,\mathbf{15}_4).
+\end{equation}
+При разрушении $SU(4)$ имеем
+\begin{equation}
+ \mathbf{15}_4\longrightarrow
+ \mathbf8_0\oplus\mathbf3_{4/3}\oplus
+ \overline{\mathbf3}_{-4/3}\oplus\mathbf1_0,
+\end{equation}
+а гиперзаряд задаётся $Y=T_R^3+(B-L)/2$. Поэтому полное ветвление равно
+\begin{align}
+ \Sigma\downarrow G_{\rm SM}={}&
+ (\mathbf8,\mathbf2)_{1/2}\oplus(\mathbf8,\mathbf2)_{-1/2}
+ \oplus(\mathbf3,\mathbf2)_{7/6}\oplus(\mathbf3,\mathbf2)_{1/6}\nonumber\\
+ &\oplus(\overline{\mathbf3},\mathbf2)_{-1/6}
+ \oplus(\overline{\mathbf3},\mathbf2)_{-7/6}
+ \oplus(\mathbf1,\mathbf2)_{1/2}\oplus(\mathbf1,\mathbf2)_{-1/2}.
+\end{align}
+Размерности складываются как
+\begin{equation}
+ 16+16+6+6+6+6+2+2=60=2\cdot2\cdot15.
+\end{equation}
+
+Третий сектор есть точный $R_2=(\mathbf3,\mathbf2)_{7/6}$, а шестой ---
+его сопряжение. Они реализуют блоки $L_L-u_R$ и $Q_L-e_R$; дополненная
+incidence-матрица $H_{15}$ имеет ранг $4$, лапласиан --- ранг $4$ и ядро
+размерности $1$. Таким образом, условное типизированное вложение закрыто.
+
+Но $R_2$ занимает лишь $12$ из $60$ комплексных компонент $\Sigma$.
+Оставшиеся $48$ включают $\widetilde R_2$ с сопряжением, пару цветных
+октет-дублетов и пару Higgs-подобных дублетов. Проектор $P_{R_2}$ имеет
+ранг $2$ на восьми SM-секторах и коммутирует с цветом и гиперзарядом, но
+\begin{equation}
+ \rank[T_R^\pm,P_{R_2}]=4.
+\end{equation}
+Следовательно, $R_2$-подпространство инвариантно после ограничения к
+Стандартной модели, но не под полной $SU(2)_R$-симметрией Pati--Salam.
+
+\begin{theorem}[Точное $R_2$-ветвление]
+Мультиплет $(\mathbf2_R,\mathbf2_L,\mathbf{15}_4)$ содержит ровно один
+$R_2=(\mathbf3,\mathbf2)_{7/6}$ и его сопряжение. Эта пара даёт два
+требуемых ребра и условно связывает граф $H_{15}$, однако сопровождается
+48 дополнительными компонентами.
+\end{theorem}
+
+\begin{nogocriterion}[Компоненту нельзя молча отождествить с родителем]
+Наличие $R_2$ внутри неприводимого Pati--Salam-мультиплета не выводит
+селектор $P_{R_2}$. До явного нарушения $SU(2)_R\times SU(4)$ нельзя
+удалить $\widetilde R_2$, октеты и Higgs-подобные компоненты или назначить
+независимую массу только требуемой паре.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item размерность $\Sigma$: \textbf{$60$};
+\item SM-секторов: \textbf{$8$};
+\item размерность $R_2\oplus\overline R_2$: \textbf{$12$};
+\item размерность companion-сектора: \textbf{$48$};
+\item требуемые рёбра $H_{15}$ получены: \textbf{да};
+\item ядро дополненного графа: \textbf{$1$};
+\item $P_{R_2}$ инвариантен под полной Pati--Salam-группой: \textbf{нет};
+\item inherited $\Sigma\to R_2$ map: \textbf{rank $0$};
+\item physical origin: \textbf{$0/3$};
+\item следующий гейт: \textbf{аудит селектора компоненты $R_2$}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_pati_salam_sigma_typed_embedding_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v10ps-embedding}
+A.~H.~Chamseddine, A.~Connes, W.~D.~van Suijlekom,
+\emph{Beyond the Spectral Standard Model: Emergence of Pati--Salam Unification},
+JHEP 11 (2013), 132; arXiv:1304.8050.
+\end{thebibliography}

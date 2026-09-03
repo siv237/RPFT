@@ -1,0 +1,116 @@
+{
+  "R2_positive_control": {
+    "A1_equals": "-2 D_R2",
+    "A1_opposite_equals": "-2 D_R2",
+    "A2_equals": "4 D_R2",
+    "A2_support_equals_seed_support": true,
+    "augmented_kernel_dimension": 1,
+    "augmented_laplacian_rank": 4,
+    "double_commutator_rank": 4,
+    "seed_operator_rank": 4,
+    "support": [
+      "L_L-u_R",
+      "Q_L-e_R"
+    ]
+  },
+  "admitted_SM_seed": {
+    "A1_opposite_rank": 0,
+    "A1_rank": 4,
+    "A2_rank": 0,
+    "A2_zero": true,
+    "Dirac_rank": 4,
+    "H15_kernel_dimension": 2,
+    "H15_laplacian_rank": 3,
+    "support": [
+      "Q_L-u_R",
+      "Q_L-d_R",
+      "L_L-e_R"
+    ],
+    "uniform_ray_selected": false
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_generalized_first_order_parent_admission_gate",
+  "generalized_inner_fluctuation": {
+    "exact_gauge_covariance": true,
+    "formula": "D_A=D+A1+A1_opposite+A2",
+    "left_unitary_diagonal": [
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "quadratic_term": "A2=sum_j hat(a_j)[A1,hat(b_j)]",
+    "right_unitary_diagonal": [
+      1,
+      -1,
+      1,
+      1,
+      -1
+    ],
+    "total_unitary_diagonal": [
+      1,
+      -1,
+      -1,
+      -1,
+      1
+    ]
+  },
+  "inheritance": {
+    "R2_seed_coefficients": [
+      0,
+      0
+    ],
+    "R2_seed_rank": 0,
+    "family_or_Callias_tensor_amplification_changes_support": false,
+    "generalized_fluctuation_creates_absent_support": false
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_dirac_seed_candidate_audit_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_quark_lepton_connector_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "556418f7bce2e35b580f360c250e8ad4e531b69203c38151bc141bd2bc275626",
+    "floating_point_values": 0,
+    "obligation_count": 25,
+    "obligations": [
+      "h15_r2_generalized_first_order_parent_00",
+      "h15_r2_generalized_first_order_parent_01",
+      "h15_r2_generalized_first_order_parent_02",
+      "h15_r2_generalized_first_order_parent_03",
+      "h15_r2_generalized_first_order_parent_04",
+      "h15_r2_generalized_first_order_parent_05",
+      "h15_r2_generalized_first_order_parent_06",
+      "h15_r2_generalized_first_order_parent_07",
+      "h15_r2_generalized_first_order_parent_08",
+      "h15_r2_generalized_first_order_parent_09",
+      "h15_r2_generalized_first_order_parent_10",
+      "h15_r2_generalized_first_order_parent_11",
+      "h15_r2_generalized_first_order_parent_12",
+      "h15_r2_generalized_first_order_parent_13",
+      "h15_r2_generalized_first_order_parent_14",
+      "h15_r2_generalized_first_order_parent_15",
+      "h15_r2_generalized_first_order_parent_16",
+      "h15_r2_generalized_first_order_parent_17",
+      "h15_r2_generalized_first_order_parent_18",
+      "h15_r2_generalized_first_order_parent_19",
+      "h15_r2_generalized_first_order_parent_20",
+      "h15_r2_generalized_first_order_parent_21",
+      "h15_r2_generalized_first_order_parent_22",
+      "h15_r2_generalized_first_order_parent_23",
+      "h15_r2_generalized_first_order_parent_24"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_generalized_architecture": "12/12",
+    "inherited_R2_seed": "0/2",
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "current_SM_parent_generates_R2": false,
+    "generalized_R2_parent_admitted_as_derivation": false,
+    "generalized_first_order_formalism_is_consistent": true,
+    "nonzero_A2_requires_inserted_R2_seed": true,
+    "reason": "inner fluctuations preserve the block support of the finite Dirac seed"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "candidate_matrix": [
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0
+    ]
+  ],
+  "candidate_matrix_rank": 2,
+  "candidates": [
+    "Euler_characteristic",
+    "signature",
+    "Pontryagin_number",
+    "Dirac_index",
+    "winding_number",
+    "simplicial_cell_count",
+    "GNVW_index",
+    "K43_dimension"
+  ],
+  "criteria": [
+    "protected_integer",
+    "internal",
+    "length_four_dimension",
+    "typed_volume_map",
+    "breaks_scale_orbit"
+  ],
+  "date": "2026-09-01",
+  "dimensional_boundary": {
+    "all_length_four_entries": 0,
+    "all_orbit_break_entries": 0,
+    "quantized_form": "V=n*v0",
+    "scale_orbit": "v0->s^4*v0",
+    "topological_density": "rho_top=n/V -> rho_top/s^4"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_topological_quantum_candidate_audit_gate",
+  "maximum_score": "3/5",
+  "multiplicity_parent": {
+    "hessian": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "kernel": "elementary volume v0",
+    "nullity": 1,
+    "rank": 1
+  },
+  "next_gate": "version10_cell_birth_four_volume_curvature_density_parent_origin_gate",
+  "passing_candidates": 0,
+  "predecessor": "version10_cell_birth_four_volume_spectral_counting_measure_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "8e91044be6be0b4487be734a3209d786978f2e703cba03c67b95c9ff2278723c",
+    "floating_point_values": 0,
+    "obligation_count": 18,
+    "obligations": [
+      "topological_candidate_matrix",
+      "zero_passing_topological_candidates",
+      "maximum_topological_score_three",
+      "topological_candidate_rank_two",
+      "topological_dimension_column_zero",
+      "topological_orbit_break_column_zero",
+      "volume_multiplicity_factorization",
+      "volume_quartic_rescaling",
+      "topological_density_integral",
+      "topological_density_inverse_scaling",
+      "multiplicity_parent_hessian",
+      "multiplicity_parent_rank_one",
+      "multiplicity_parent_nullity_one",
+      "elementary_volume_scale_kernel",
+      "multiplicity_parent_spectrum",
+      "topological_audit_coverage_full",
+      "topological_origin_ledger_two",
+      "topological_origin_score_two"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_clock_energy": "0/1",
+    "candidate_coverage": "8/8",
+    "physical_volume_quantum": "0/1",
+    "topological_origin": "2/4"
+  },
+  "verdict": {
+    "topology_breaks_physical_scale_orbit": false,
+    "topology_selects_elementary_four_volume": false,
+    "topology_selects_integer_multiplicity": true
+  }
+}

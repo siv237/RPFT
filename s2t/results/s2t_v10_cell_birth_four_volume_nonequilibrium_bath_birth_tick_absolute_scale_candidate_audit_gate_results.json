@@ -1,0 +1,150 @@
+{
+  "audit": {
+    "complete_passes": 0,
+    "criterion_rank": 6,
+    "internal_orbit_breakers": 0,
+    "matrix_shape": "12x6",
+    "maximum_score": 5
+  },
+  "candidates": [
+    {
+      "name": "clock_energy_inverse",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "causal_edge_transit",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "ultraviolet_phase_tick",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "K43_spectral_transit",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "bath_correlation_time",
+      "pass": false,
+      "score": 3
+    },
+    {
+      "name": "Hopf_conductance_tick",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "dimensional_transmutation_frequency",
+      "pass": false,
+      "score": 4
+    },
+    {
+      "name": "Planck_time",
+      "pass": false,
+      "score": 2
+    },
+    {
+      "name": "curvature_time",
+      "pass": false,
+      "score": 2
+    },
+    {
+      "name": "observed_growth_time",
+      "pass": false,
+      "score": 3
+    },
+    {
+      "name": "dimensionless_vacuum_action",
+      "pass": false,
+      "score": 3
+    },
+    {
+      "name": "external_atomic_clock_period",
+      "pass": false,
+      "score": 4
+    }
+  ],
+  "criteria": [
+    "time_dimension",
+    "internal_availability",
+    "selected_by_current_parent",
+    "independent_scale_orbit_breaking",
+    "non_circularity",
+    "unique_typed_map_to_birth_tick"
+  ],
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_absolute_scale_candidate_audit_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_dimensional_transmutation_parent_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_birth_height_physical_time_morphism_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "20db8d6fd8a587ca38b90d32b912e4178c439f05e582005550665e76d4da79bd",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "obligations": [
+      "birth_tick_absolute_scale_00",
+      "birth_tick_absolute_scale_01",
+      "birth_tick_absolute_scale_02",
+      "birth_tick_absolute_scale_03",
+      "birth_tick_absolute_scale_04",
+      "birth_tick_absolute_scale_05",
+      "birth_tick_absolute_scale_06",
+      "birth_tick_absolute_scale_07",
+      "birth_tick_absolute_scale_08",
+      "birth_tick_absolute_scale_09",
+      "birth_tick_absolute_scale_10",
+      "birth_tick_absolute_scale_11",
+      "birth_tick_absolute_scale_12",
+      "birth_tick_absolute_scale_13",
+      "birth_tick_absolute_scale_14",
+      "birth_tick_absolute_scale_15",
+      "birth_tick_absolute_scale_16",
+      "birth_tick_absolute_scale_17",
+      "birth_tick_absolute_scale_18",
+      "birth_tick_absolute_scale_19",
+      "birth_tick_absolute_scale_20",
+      "birth_tick_absolute_scale_21"
+    ],
+    "status": "lcf-checked"
+  },
+  "relative_collapse": {
+    "Gaussian_correlation_over_tau_birth": "sqrt(pi)/(4 sqrt(3))",
+    "all_equal_tau_birth": true,
+    "equivalent_formulas": [
+      "hbar/E_C",
+      "ell_edge/c",
+      "2 sqrt(3)/omega_UV",
+      "42/(c Lambda_43)",
+      "1/(22 kappa)"
+    ],
+    "exponential_correlation_over_tau_birth": "1/(2 sqrt(3))"
+  },
+  "scale_audit": {
+    "after_c_anchor_rank_nullity": "3/1",
+    "after_external_tick_anchor": "4/0",
+    "kernel": [
+      1,
+      -1,
+      1,
+      0
+    ]
+  },
+  "status": {
+    "absolute_birth_tick_origin": "0/1",
+    "candidate_coverage": "12/12",
+    "complete_candidates": "0/12",
+    "criterion_coverage": "6/6",
+    "physical_clock_origin": "0/1"
+  },
+  "verdict": {
+    "an_internal_absolute_birth_tick_is_derived": false,
+    "bath_correlation_time_uniquely_selects_birth_tick": false,
+    "current_internal_tick_formulas_are_independent_anchors": false,
+    "dimensional_transmutation_breaks_scale_orbit": false,
+    "external_clocks_can_break_the_orbit": true
+  }
+}

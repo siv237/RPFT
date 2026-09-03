@@ -1,0 +1,90 @@
+\chapter{Допуск общего носителя фермионной тахионной восприимчивости}
+\label{ch:v10-hopf-reservoir-m4-fermion-susceptibility-carrier}
+
+\section{Условный оператор на \texorpdfstring{$M_4$}{M4}-носителе}
+
+Дополнительного линейного пространства не требуется. На
+\begin{equation}
+ \mathcal H_F=\mathbb C^2_{\rm res}\oplus\mathbb C^2_{\rm path},
+ \qquad \dim_{\mathbb C}\mathcal H_F=4
+\end{equation}
+введём секторную градуировку и cross-инволюцию
+\begin{equation}
+ R=\begin{pmatrix}I_2&0\\0&-I_2\end{pmatrix},\qquad
+ X=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}.
+\end{equation}
+Они образуют точную клиффордову пару:
+\begin{equation}
+ R^2=X^2=I_4,\qquad RX+XR=0.
+\end{equation}
+Поэтому семейство
+\begin{equation}
+ D(x)=R+xX
+\end{equation}
+удовлетворяет
+\begin{equation}
+ D(x)^2=(1+x^2)I_4,qquad
+ \det D(x)=(1+x^2)^2.
+\end{equation}
+
+\section{Детерминант действительно создаёт конденсацию}
+
+Фермионный вклад равен
+\begin{equation}
+ \Gamma_F(x)=-\log\det D(x)=-2\log(1+x^2),
+ \qquad \Gamma_F''(0)=-4.
+\end{equation}
+Вместе с единичной положительной incidence-жёсткостью получается
+\begin{equation}
+ \Gamma_{\rm tot}(x)=x^2-2\log(1+x^2),
+ \qquad \Gamma_{\rm tot}''(0)=-2.
+\end{equation}
+Этот функционал ограничен снизу и имеет точные стационарные точки
+\begin{equation}
+ x\in\{-1,0,1\},\qquad
+ \Gamma_{\rm tot}''=(-1,0,1)=(2,-2,2).
+\end{equation}
+Следовательно, $x=\pm1$ --- два устойчивых минимума со значением
+$1-\log4<0$.
+
+Для комплексного фермионного гауссиана антисимметричная Berezin-матрица
+на восьми нечётных координатах имеет ранг $8$ и определитель $16$.
+Таким образом, условная determinant-архитектура полностью согласована.
+
+\section{Граница унаследованности}
+
+Текущий блок-диагональный родитель содержит носитель и градуировку $R$, но
+его проекция cross-инволюции равна
+\begin{equation}
+ P_{\rm res}XP_{\rm res}+P_{\rm path}XP_{\rm path}=0.
+\end{equation}
+Кроме того, обычное комплексное пространство не получает автоматически
+нечётную статистику, Berezin-меру и нормировку coupling, при которой
+фермионная кривизна превосходит incidence-жёсткость. Поэтому условная
+конденсация не является физическим выводом.
+
+\begin{theorem}[Минимальный условный фермионный носитель]
+Четырёхмерный резервуарно-хопфовский носитель допускает Dirac-family
+$D(x)=R+xX$, чей фермионный логарифм определителя создаёт ограниченный
+снизу потенциал с двумя ненулевыми устойчивыми минимумами.
+\end{theorem}
+
+\begin{nogocriterion}[Комплексный носитель не назначает Grassmann-статистику]
+Алгебраическая возможность записать $D(x)$ не выводит cross-билинейный
+оператор, parity shift, Berezin-меру или его coupling. Пока эти данные не
+следуют из родителя, determinant-механизм остаётся условным.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item минимальная комплексная размерность: \textbf{$4$};
+\item условная архитектура: \textbf{$14/14$};
+\item фермионная кривизна: \textbf{$-4$};
+\item полная кривизна при нуле: \textbf{$-2$};
+\item устойчивые минимумы: \textbf{$x=\pm1$};
+\item унаследованные ингредиенты: \textbf{$2/6$};
+\item строгое физическое происхождение: \textbf{$0/4$};
+\item следующий гейт: \textbf{аудит cross-билинейности и нечётной статистики}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_m4_fermionic_determinant_tachyonic_susceptibility_common_carrier_admission_gate_results.json}.

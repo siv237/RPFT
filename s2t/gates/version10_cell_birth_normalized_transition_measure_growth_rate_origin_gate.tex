@@ -1,0 +1,161 @@
+\chapter{Нормированная мера рождения ячеек и граница темпа роста}
+\label{ch:v10-cell-birth-normalized-transition-measure-growth-rate-origin}
+
+\section{Проверяемая гипотеза}
+
+Предыдущий гейт вывел спектральный ход относительно безразмерной координаты
+$\zeta$, но не определил вероятности переходов $N\to N+1$. Настоящий гейт
+проверяет минимальную последовательную меру рождения: достаточно ли
+нормировать вакуумный вес $e^{-S_{\rm vac}}$, чтобы одновременно получить
+закон роста и ранее условную амплитуду
+\begin{equation}
+ h_{\rm vac}=\frac{e^{-S_{\rm vac}}}{\sqrt{8\pi}}.
+ \label{eq:v10-birth-target-amplitude}
+\end{equation}
+
+Проверка не отождествляет порядковый номер рождения с физическим временем.
+Именно возможность такого отождествления должна следовать из меры, а не
+предполагаться заранее.
+
+\section{Минимальная нормированная мера одного шага}
+
+Обозначим
+\begin{equation}
+ x:=e^{-S_{\rm vac}}>0.
+ \label{eq:v10-birth-weight}
+\end{equation}
+Пусть относительные веса исходов ``нет рождения'' и ``одна новая ячейка''
+равны соответственно $1$ и $x$. Единственная нормировка этих двух весов
+даёт
+\begin{equation}
+ p_0=\frac1{1+x},
+ \qquad
+ p_1=\frac{x}{1+x},
+ \qquad
+ p_0+p_1=1,
+ \qquad
+ \frac{p_1}{p_0}=x.
+ \label{eq:v10-birth-normalized-probabilities}
+\end{equation}
+Минимальная матрица перехода
+\begin{equation}
+ T_x=
+ \begin{pmatrix}
+ p_0&p_1\\0&1
+ \end{pmatrix}
+ \label{eq:v10-birth-transition-matrix}
+\end{equation}
+является построчно стохастической. Это честная положительная мера, но она
+условна на выборе именно двух исходов и отношения весов $x$.
+
+Если каждая существующая ячейка независимо сохраняется и с вероятностью
+$p_1$ производит одну дополнительную ячейку, средний множитель числа ячеек
+за один порядковый шаг равен
+\begin{equation}
+ m(x)=1+p_1=\frac{1+2x}{1+x}.
+ \label{eq:v10-birth-mean-multiplier}
+\end{equation}
+Поэтому
+\begin{equation}
+ \mathbb E N_n=N_0m(x)^n,
+ \qquad
+ \Delta\zeta_{\rm step}(x)
+ =\frac13\log m(x)
+ =\frac13\log\frac{1+2x}{1+x}.
+ \label{eq:v10-birth-dimensionless-growth}
+\end{equation}
+Так нормировка действительно создаёт безразмерный стохастический закон
+роста.
+
+\section{Несовпадение с условной вакуумной амплитудой}
+
+В слабовесовом пределе точные линейные коэффициенты равны
+\begin{equation}
+ \left.\frac{d\Delta\zeta_{\rm step}}{dx}\right|_{x=0}
+ =\frac13,
+ \qquad
+ \left.\frac{dh_{\rm vac}}{dx}\right|_{x=0}
+ =\frac1{\sqrt{8\pi}}.
+ \label{eq:v10-birth-slope-comparison}
+\end{equation}
+Причём
+\begin{equation}
+ \frac13-\frac1{\sqrt{8\pi}}>0.
+ \label{eq:v10-birth-prefactor-mismatch}
+\end{equation}
+Следовательно, функции
+$\Delta\zeta_{\rm step}(x)$ и $x/\sqrt{8\pi}$ не тождественны. Это не
+опровергает формулу для $h_{\rm vac}$: оно доказывает более узкое
+утверждение, что двухисходная нормировка весов сама по себе её не выводит.
+Для совпадения требуется дополнительная длительность шага, другой набор
+исходов или новая мера.
+
+\section{Непрерывные ожидания и свободная скорость часов}
+
+Даже если перейти к непрерывному чистому процессу рождения с полной
+скоростью $r_N=\gamma N$, плотность времени ожидания
+\begin{equation}
+ f_N(t)=r_Ne^{-r_Nt}
+ \label{eq:v10-birth-waiting-density}
+\end{equation}
+нормирована при любом $r_N>0$:
+\begin{equation}
+ \int_0^\infty f_N(t)\,dt=1,
+ \qquad
+ \mathbb E(t\mid N)=\frac1{r_N}.
+ \label{eq:v10-birth-waiting-normalization}
+\end{equation}
+Преобразование
+\begin{equation}
+ \gamma\longmapsto c\gamma,
+ \qquad
+ t\longmapsto\frac{t}{c}
+ \label{eq:v10-birth-clock-rescaling}
+\end{equation}
+сохраняет $e^{-\gamma Nt}$. В логарифмических координатах карта
+$(\log\gamma,\log t)\mapsto\log\gamma+log t$ имеет одномерное ядро.
+Нормировка вероятности поэтому не фиксирует физическую единицу времени.
+
+\begin{theorem}[Минимальная мера рождения нормируется]
+Отношение весов $(1,x)$ однозначно задаёт вероятности
+$p_0=1/(1+x)$ и $p_1=x/(1+x)$. Независимый процесс рождения имеет точный
+средний множитель $(1+2x)/(1+x)$ и безразмерный прирост
+$\Delta\zeta_{\rm step}=\frac13\log((1+2x)/(1+x))$.
+\end{theorem}
+
+\begin{nogocriterion}[Нормировка не создаёт часы]
+Нормированная дискретная мера не воспроизводит коэффициент
+$1/\sqrt{8\pi}$ без дополнительной калибровки шага. Нормированная
+непрерывная мера существует при любом положительном $\gamma$ и сохраняет
+орбиту $(\gamma,t)\mapsto(c\gamma,t/c)$. Поэтому ни вероятность, ни
+физический темп роста не следуют из одной нормировки $e^{-S_{\rm vac}}$.
+\end{nogocriterion}
+
+\begin{protocol}[Статус меры рождения]\begin{enumerate}
+\item положительная двухисходная мера: \textbf{построена};
+\item нормировка вероятностей: \textbf{$1$};
+\item точный безразмерный закон среднего роста: \textbf{получен};
+\item архитектура минимальной меры: \textbf{$8/8$};
+\item общий реестр происхождения: \textbf{$2/4$};
+\item коэффициент $1/\sqrt{8\pi}$ из нормировки: \textbf{$0/1$};
+\item физическая скорость часов $\gamma$: \textbf{$0/1$};
+\item физическая космологическая амплитуда: \textbf{не выведена};
+\item следующий гейт: \textbf{общий родитель энергии часов и скорости
+рождения ячеек}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_normalized_transition_measure_growth_rate_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v10-birth-rideout-sorkin}
+D.~P.~Rideout, R.~D.~Sorkin,
+\emph{A Classical Sequential Growth Dynamics for Causal Sets},
+Physical Review D 61 (2000), 024002.
+
+\bibitem{v10-birth-varadarajan-rideout}
+M.~Varadarajan, D.~Rideout,
+\emph{A General Solution for Classical Sequential Growth Dynamics of
+Causal Sets},
+Physical Review D 73 (2006), 104021.
+\end{thebibliography}

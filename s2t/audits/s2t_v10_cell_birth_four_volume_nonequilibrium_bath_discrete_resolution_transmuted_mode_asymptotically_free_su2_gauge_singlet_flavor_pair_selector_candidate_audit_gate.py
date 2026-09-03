@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+import hashlib,json
+from pathlib import Path
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_pair_selector_candidate_audit import SPEC,build_certificate
+from s2t.proofdsl.gates import verify_gate
+ROOT=Path(__file__).resolve().parents[2]
+OUT=ROOT/"s2t/results/s2t_v10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_pair_selector_candidate_audit_gate_results.json"
+def main():
+ v=verify_gate(SPEC);c=build_certificate();r={"date":"2026-09-02","gate":SPEC.identifier,"predecessor":"version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_cell_complex_typed_embedding_gate","flavor_space":{"single_dimension":16,"pair_dimension":256,"diagonal_rank":16,"symmetric_rank":136,"antisymmetric_rank":120},"rank_one_examples":{"democratic_projector":{"cyclic_invariant":True,"parent_selected":False},"basis_projector":{"cyclic_defect_rank":2,"parent_selected":False}},"candidate_audit":{"count":10,"criteria":6,"rank":int(c.candidate_matrix.rank()),"scores":[int(x) for x in c.score_vector],"full_passes":int(sum(c.pass_vector))},"status":{"coverage":"10/10","full_passes":"0/10","physical_origin":"0/2"},"proofdsl":{"status":"lcf-checked","obligation_count":len(v.obligations),"certificate_sha256":v.sha256,"floating_point_values":0},"verdict":{"rank_one_selectors_exist":True,"symmetry_and_rank_one_are_compatible":True,"selector_parent_is_derived":False,"gap_to_pole_map_is_derived":False},"next_gate":"version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_democratic_flavor_selector_parent_origin_gate","floating_point_values":0};t=json.dumps(r,ensure_ascii=False,indent=2,sort_keys=True)+"\n";OUT.write_text(t);print(OUT);print(hashlib.sha256(t.encode()).hexdigest());print(v.sha256)
+if __name__=="__main__":main()

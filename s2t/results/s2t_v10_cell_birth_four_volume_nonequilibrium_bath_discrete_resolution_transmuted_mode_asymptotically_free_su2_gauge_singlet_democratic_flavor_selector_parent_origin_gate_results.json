@@ -1,0 +1,50 @@
+{
+  "conditional_parent": {
+    "adjacency_spectrum": {
+      "-1": 15,
+      "15": 1
+    },
+    "graph": "K16",
+    "laplacian_spectrum": {
+      "0": 1,
+      "16": 15
+    },
+    "normalized_parent_spectrum": {
+      "0": 1,
+      "1": 15
+    },
+    "pair_parent_multiplicities": {
+      "0": 1,
+      "1": 30,
+      "2": 225
+    }
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_democratic_flavor_selector_parent_origin_gate",
+  "inherited": {
+    "flavor_graph": "0_16",
+    "flavor_operator_rank": 16,
+    "pair_degeneracy": 256,
+    "pole_map": "0_1x1"
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_graph_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_pair_selector_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "85ea1629dc6b8539bb6f517e56bc0570bd2c5ef5b52c86e07a6fbd23adf98b38",
+    "floating_point_values": 0,
+    "obligation_count": 21,
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_architecture": "11/11",
+    "physical_origin": "0/2",
+    "unique_pair_line": "1/1"
+  },
+  "verdict": {
+    "complete_flavor_graph_is_inherited": false,
+    "gap_to_pole_map_is_derived": false,
+    "strict_democratic_parent_exists": true,
+    "unique_pair_line_is_selected_conditionally": true
+  }
+}

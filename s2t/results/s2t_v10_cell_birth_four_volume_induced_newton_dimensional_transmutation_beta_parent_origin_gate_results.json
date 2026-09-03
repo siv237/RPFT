@@ -1,0 +1,115 @@
+{
+  "common_parent": {
+    "determinant": 1,
+    "hessian": [
+      [
+        2,
+        -1,
+        0
+      ],
+      [
+        -1,
+        2,
+        -1
+      ],
+      [
+        0,
+        -1,
+        1
+      ]
+    ],
+    "leading_principal_minors": [
+      2,
+      3,
+      1
+    ],
+    "rank": 3,
+    "variables": [
+      "m/(mu_spec^2*exp(64*pi^2/3))",
+      "m*g_N",
+      "16*pi*beta_E*m*g_N"
+    ]
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_dimensional_transmutation_beta_parent_origin_gate",
+  "inherited_RG_data": {
+    "inverse_area_log_ratio": "log(m_DT/mu_spec^2)=64*pi^2/3",
+    "landau_log_ratio": "log(Lambda_L/mu_spec)=32*pi^2/3",
+    "matching_condition": "g^2(mu_spec)=3/8",
+    "one_loop_beta_coefficient": "b=2",
+    "physical_character": "ultraviolet_Landau_scale_not_infrared_mass_gap"
+  },
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_throughflow_scale_parent_admission_gate",
+  "planck_self_consistency": {
+    "condition": "m*g_N=1",
+    "einstein_relation": "16*pi*beta_E*m*g_N=1",
+    "selected_absolute_Newton_constant": false,
+    "selected_dimensionless_coefficient": "beta_E=1/(16*pi)"
+  },
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_scale_seed_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "8a3085e526ae395fa4a5544a736eb918b5cf86f90c6b9f558115d438553e12ae",
+    "floating_point_values": 0,
+    "obligation_count": 21,
+    "obligations": [
+      "newton_dt_beta_coefficient_two",
+      "newton_dt_matching_coupling_three_eighths",
+      "newton_dt_landau_log_ratio",
+      "newton_dt_seed_log_ratio",
+      "newton_dt_planck_coefficient",
+      "newton_dt_parent_stationary",
+      "newton_dt_parent_hessian",
+      "newton_dt_parent_rank_three",
+      "newton_dt_parent_determinant_one",
+      "newton_dt_parent_positive_minors",
+      "newton_dt_scale_rank_two",
+      "newton_dt_scale_nullity_one",
+      "newton_dt_scale_kernel",
+      "newton_dt_external_anchor_rank_three",
+      "newton_dt_historical_rg_data",
+      "newton_dt_current_typed_transfer_zero",
+      "newton_dt_architecture_full",
+      "newton_dt_conditional_origin_full",
+      "newton_dt_conditional_score_seven",
+      "newton_dt_physical_origin_open",
+      "newton_dt_physical_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "provenance": {
+    "Planck_identification_parent_origin": "0/1",
+    "RG_boundary_scale_origin": "0/1",
+    "historical_RG_data": "2/2",
+    "typed_transfer_to_current_carrier": "0/2"
+  },
+  "scale_orbit": {
+    "external_Newton_area_row_rank": 3,
+    "kernel": [
+      1,
+      1,
+      -1
+    ],
+    "nullity": 1,
+    "rank": 2,
+    "variables": [
+      "m",
+      "mu_spec^2",
+      "g_N"
+    ]
+  },
+  "status": {
+    "absolute_Newton_constant": "0/1",
+    "absolute_scale_seed": "0/1",
+    "architecture": "10/10",
+    "conditional_origin": "7/7",
+    "dimensionless_beta_E_selection": "1/1 conditional",
+    "physical_origin": "0/4"
+  },
+  "verdict": {
+    "Planck_self_consistency_selects_beta_E": true,
+    "combined_parent_derives_absolute_G": false,
+    "inherited_RG_ratio_is_exact": true,
+    "positive_beta_generates_IR_Newton_scale": false
+  }
+}

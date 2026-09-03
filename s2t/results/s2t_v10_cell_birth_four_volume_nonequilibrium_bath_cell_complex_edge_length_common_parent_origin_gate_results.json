@@ -1,0 +1,135 @@
+{
+  "common_parent": {
+    "derived_uv_phase_per_edge_step": "2 sqrt(3)",
+    "determinant": 1,
+    "hessian": "I_7",
+    "invariants": [
+      "v_cell/ell_cell^4=1",
+      "E_C ell_cell/(hbar c)=1",
+      "k_BZ ell_cell=pi",
+      "omega_UV ell_cell/v_g=2 sqrt(3)",
+      "Lambda_43 ell_cell=42",
+      "v_g Delta_t/ell_edge=1",
+      "ell_edge/ell_cell=1"
+    ],
+    "rank": 7
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_cell_complex_edge_length_common_parent_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_growth_graph_typed_embedding_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_cell_complex_typed_embedding_gate",
+  "proofdsl": {
+    "certificate_sha256": "d9cbcad7fa36262f6e41331081ce57f14d4d5c442e524d71287111eb8b3bd47a",
+    "floating_point_values": 0,
+    "obligation_count": 26,
+    "obligations": [
+      "edge_length_common_parent_00",
+      "edge_length_common_parent_01",
+      "edge_length_common_parent_02",
+      "edge_length_common_parent_03",
+      "edge_length_common_parent_04",
+      "edge_length_common_parent_05",
+      "edge_length_common_parent_06",
+      "edge_length_common_parent_07",
+      "edge_length_common_parent_08",
+      "edge_length_common_parent_09",
+      "edge_length_common_parent_10",
+      "edge_length_common_parent_11",
+      "edge_length_common_parent_12",
+      "edge_length_common_parent_13",
+      "edge_length_common_parent_14",
+      "edge_length_common_parent_15",
+      "edge_length_common_parent_16",
+      "edge_length_common_parent_17",
+      "edge_length_common_parent_18",
+      "edge_length_common_parent_19",
+      "edge_length_common_parent_20",
+      "edge_length_common_parent_21",
+      "edge_length_common_parent_22",
+      "edge_length_common_parent_23",
+      "edge_length_common_parent_24",
+      "edge_length_common_parent_25"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_audit": {
+    "after_independent_length_anchor": "9/0",
+    "after_v_g_equals_c_anchor": "8/1",
+    "kernel": [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "rank_nullity": "7/2",
+    "remaining_length_orbit": [
+      4,
+      -1,
+      -1,
+      -1,
+      -1,
+      1,
+      0,
+      1,
+      1
+    ],
+    "variable_order": [
+      "v_cell",
+      "E_C",
+      "k_BZ",
+      "omega_UV",
+      "Lambda_43",
+      "Delta_t",
+      "v_g",
+      "ell_cell",
+      "ell_edge"
+    ]
+  },
+  "status": {
+    "absolute_edge_length_origin": "0/1",
+    "conditional_common_parent": "11/11",
+    "damping_origin": "0/1",
+    "global_growth_complex_origin": "0/1",
+    "relative_edge_cell_identification": "1/1"
+  },
+  "verdict": {
+    "causal_speed_anchor_selects_absolute_edge_length": false,
+    "four_volume_selects_absolute_edge_length": false,
+    "independent_length_anchor_is_still_required": true,
+    "one_positive_parent_unifies_all_relative_edge_relations": true,
+    "spectral_cutoffs_select_absolute_edge_length": false
+  }
+}

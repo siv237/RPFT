@@ -1,0 +1,47 @@
+\chapter{Минимальная типизированная portal-архитектура RG--K43}
+\label{ch:v10-birth-tick-minimal-portal-architecture}
+
+Минимальный общий носитель имеет два типизированных состояния
+$\lvert RG\rangle$, $\lvert43\rangle$ с ортогональными проекторами ранга
+один. Portal
+\begin{equation}
+ J=\lvert RG\rangle\langle43\rvert+\lvert43\rangle\langle RG\rvert
+ =\begin{pmatrix}0&1\\1&0\end{pmatrix}
+\end{equation}
+эрмитов, удовлетворяет $J^2=I$ и переставляет проекторы. Вместе они
+порождают полную алгебру $M_2(\mathbb C)$; их коммутант одномерен и состоит
+из скаляров. Одномерный носитель не может содержать два ненулевых
+ортогональных типа, поэтому размерность два минимальна.
+
+Устойчивый свидетель берётся при $\lambda=1/2$:
+\begin{equation}
+ H=I+\frac12J,\qquad \Spec H=\left\{\frac12,\frac32\right\},
+ \qquad \det H=\frac34.
+\end{equation}
+Условный источник $j=Hx_*$ выбирает
+$x_*=(32\pi^2/3,\log42)$, а ковектор $(-1,-1)$ читает требуемый мост
+$-32\pi^2/3-\log42$. Но этот источник построен из цели, а носитель, portal
+и коэффициент $1/2$ не унаследованы.
+
+\begin{theorem}[Минимальная portal-архитектура]
+Двумерный типовой носитель с оператором $J$ является минимальной
+неприводимой архитектурой, способной смешивать RG- и K43-координаты при
+строго положительном квадратичном родителе.
+\end{theorem}
+
+\begin{nogocriterion}[Архитектура не выбирает источник]
+Равенство $j=Hx_*$ доказывает реализуемость требуемой точки, но является
+target-loaded, пока $j$, $\lambda$ и сам portal не выведены независимо.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item минимальная размерность носителя: \textbf{$2$};
+\item ранг порождённой алгебры: \textbf{$4$};
+\item размерность коммутанта: \textbf{$1$};
+\item условная архитектура: \textbf{$11/11$};
+\item физическое происхождение: \textbf{$0/4$};
+\item следующий гейт: \textbf{происхождение коэффициента и источника portal}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_minimal_portal_operator_architecture_gate_results.json}.

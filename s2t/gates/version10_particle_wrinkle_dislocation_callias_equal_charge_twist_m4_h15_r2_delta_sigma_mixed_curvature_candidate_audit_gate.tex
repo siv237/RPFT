@@ -1,0 +1,79 @@
+\chapter{Аудит кандидатов смешанной
+\texorpdfstring{$\Delta$--$\Sigma$}{Delta--Sigma} curvature}
+\label{ch:v10-h15-r2-delta-sigma-mixed-curvature-audit}
+
+Прямосуммарное вложение оставило нулевой cross-Hessian. Здесь определяется
+точная структура, которую обязан создать connected parent. Обозначим на
+восьми секторах $\Sigma$
+\begin{equation}
+ T=6T_R^3,\qquad B=3(B-L),\qquad Q=6Y=T+B.
+\end{equation}
+Поскольку $T^2=9I$, гиперзарядовый gap раскладывается как
+\begin{equation}
+ \boxed{G_Y=49I-Q^2=40I-B^2-2TB.}
+\end{equation}
+
+Три диагональных канала равны
+\begin{align}
+ I&=(1,1,1,1,1,1,1,1),\\
+ B^2&=(0,0,16,16,16,16,0,0),\\
+ TB&=(0,0,12,-12,-12,12,0,0).
+\end{align}
+Они линейно независимы. Единственный коэффициентный вектор target-gap в
+этом базисе есть
+\begin{equation}
+ (40,-1,-2),
+\end{equation}
+дающий диагональ $(40,40,0,48,48,0,40,40)$. Таким образом, смешанный канал
+$TB$ должен появиться с удвоенным коэффициентом относительно $B^2$.
+
+Отдельный four-colour moment map порождает только $B^2$ и не различает
+$R_2$ от $\widetilde R_2$. Изолированный $TB$-portal также недостаточен:
+без $B^2$ target лежит вне его span. Два независимо взвешенных portal
+формально воспроизводят gap, но возвращают две свободные ручки и потому не
+являются происхождением отношения $1:2$.
+
+Аудит одиннадцати механизмов по шести критериям имеет ранг $6$ и проходы
+$0/11$. Mapping-cone direct sum, determinant selector и composite
+$Y(\phi,\Sigma_4)$ при $\phi=0$ не дают $\Sigma$-coupling. Product trace
+даёт universal norm, а Callias--$M_4$ cross не содержит $B^2$-канала.
+
+Лучший кандидат с результатом $5/6$ --- единая curvature moment map
+нейтрального $\Delta$-стабилизатора. Квадрат оператора $T+B$
+автоматически фиксирует коэффициент $2$ смешанного члена. Кандидат проходит
+все алгебраические и знаковые критерии, но отсутствует в унаследованном
+mapping-cone action. Текущая карта к коэффициентам
+\begin{equation}
+ (I,B^2,TB)
+\end{equation}
+имеет ранг $0$.
+
+\begin{theorem}[Минимальная mixed-curvature сигнатура]
+В секторе $\Sigma$ точный $R_2$-gap требует и достаточно трёх каналов
+$I,B^2,TB$ с единственным отношением $(40,-1,-2)$. Ни universal+$B^2$, ни
+universal+$TB$ не содержат target. Квадрат единого стабилизаторного
+оператора является минимальным механизмом фиксации отношения $1:2$.
+\end{theorem}
+
+\begin{nogocriterion}[Два portal не фиксируют отношение]
+Нельзя считать разложение $40I-B^2-2TB$ выведенным, если коэффициенты при
+$B^2$ и $TB$ вводятся независимо после просмотра спектра. Требуется один
+оператор moment map или curvature, квадрат которого порождает оба члена до
+target-Hessian test.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item ранг базиса $(I,B^2,TB)$: \textbf{$3$};
+\item точные коэффициенты gap: \textbf{$(40,-1,-2)$};
+\item $B^2$ без $TB$ достаточен: \textbf{нет};
+\item $TB$ без $B^2$ достаточен: \textbf{нет};
+\item ранг матрицы кандидатов: \textbf{$6$};
+\item прошедших кандидатов: \textbf{$0/11$};
+\item лучший кандидат: \textbf{$\Delta$ stabilizer moment map, $5/6$};
+\item inherited curvature-map rank: \textbf{$0$};
+\item physical origin: \textbf{$2/4$};
+\item следующий гейт: \textbf{родитель curvature moment map $\Delta$-стабилизатора}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_sigma_mixed_curvature_candidate_audit_gate_results.json}.

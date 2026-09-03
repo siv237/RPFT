@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import hashlib,json
+from pathlib import Path
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_entropy_scale_orbit_breaker_candidate_audit import SPEC,build_certificate
+from s2t.proofdsl.gates import verify_gate
+ROOT=Path(__file__).resolve().parents[2]
+OUT=ROOT/"s2t/results/s2t_v10_cell_birth_four_volume_nonequilibrium_entropy_scale_orbit_breaker_candidate_audit_gate_results.json"
+def main():
+ v=verify_gate(SPEC);c=build_certificate();result={"date":"2026-09-02","gate":SPEC.identifier,"predecessor":"version10_cell_birth_four_volume_two_reservoir_entropy_production_trace_anomaly_morphism_origin_gate","candidates":["cell_black_body","cell_Casimir","curvature_squared","Lambda_over_G","fixed_bath_correlation_time","fixed_chemical_potential","external_mass_gap","dimensional_transmutation_scale","nonlocal_memory_length","bare_external_ruler"],"scale_degrees":[int(x) for x in c.scale_degrees],"candidate_audit":{"candidate_count":10,"criterion_count":6,"matrix_rank":6,"scores":[int(x) for x in c.score_vector],"full_passes":int(sum(c.pass_vector))},"classification":{"internal_conformal_candidates":4,"conditional_orbit_breakers":6,"independent_internal_breaker_origins":0,"best_candidates":["fixed_bath_correlation_time","fixed_chemical_potential"],"best_score":"5/6"},"status":{"audit_coverage":"10/10","candidate_origin":"0/10","internal_different_scale_degree":"0/4","conditional_external_breakers":"6/6","absolute_scale":"0/1"},"proofdsl":{"status":"lcf-checked","obligation_count":len(v.obligations),"obligations":[n for n,_ in v.obligations],"certificate_sha256":v.sha256,"floating_point_values":0},"verdict":{"current_internal_terms_break_entropy_scale_orbit":False,"external_bath_time_would_break_orbit":True,"external_chemical_potential_would_break_orbit":True,"project_derives_either_external_anchor":False,"absolute_scale_derived":False},"next_gate":"version10_cell_birth_four_volume_nonequilibrium_bath_correlation_time_parent_origin_gate","floating_point_values":0}
+ text=json.dumps(result,ensure_ascii=False,indent=2,sort_keys=True)+"\n";OUT.write_text(text);print(OUT);print(hashlib.sha256(text.encode()).hexdigest());print(v.sha256)
+if __name__=="__main__":main()

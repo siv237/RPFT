@@ -1,0 +1,49 @@
+{
+  "carrier": {
+    "algebra_rank": 4,
+    "commutant_nullity": 1,
+    "dimension": 2,
+    "generated_algebra": "M2(C)",
+    "projector_ranks": [
+      1,
+      1
+    ]
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_minimal_portal_operator_architecture_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_minimal_portal_operator_coefficient_source_parent_origin_gate",
+  "parent": {
+    "bridge_readout": "-32*pi^2/3-log(42)",
+    "determinant": "3/4",
+    "hessian_spectrum": [
+      "1/2",
+      "3/2"
+    ],
+    "lambda": "1/2"
+  },
+  "portal": {
+    "Hermitian": true,
+    "exchanges_sectors": true,
+    "involution": true,
+    "operator": "sigma_x"
+  },
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_cross_sector_operator_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "166f6c4e54724f3889fd0e2b5224060b61182156d3b4628afa4f28932d79c350",
+    "floating_point_values": 0,
+    "obligation_count": 24,
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_birth_tick_origin": "0/1",
+    "conditional_architecture": "11/11",
+    "physical_origin": "0/4"
+  },
+  "verdict": {
+    "absolute_birth_tick_is_derived": false,
+    "conditional_source_is_independent": false,
+    "minimal_typed_portal_exists": true,
+    "portal_is_inherited": false
+  }
+}

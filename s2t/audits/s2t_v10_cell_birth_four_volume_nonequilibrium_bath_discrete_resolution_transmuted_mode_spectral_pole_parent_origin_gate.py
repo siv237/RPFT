@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+import hashlib,json
+from pathlib import Path
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_spectral_pole_parent_origin import SPEC,build_certificate
+from s2t.proofdsl.gates import verify_gate
+ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/"s2t/results/s2t_v10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_spectral_pole_parent_origin_gate_results.json"
+def main():
+ v=verify_gate(SPEC);c=build_certificate();r={"date":"2026-09-02","gate":SPEC.identifier,"predecessor":"version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_physical_mode_candidate_audit_gate","conditional_pole":{"k_star_ell":"exp(-32*pi^2/3)","mass_squared_cell":"exp(-64*pi^2/3)","inverse_propagator":"q-exp(-64*pi^2/3)","pole":"q=exp(-64*pi^2/3)","residue":"1","projector_rank":1},"inherited_rg":{"beta_sign":"positive","singularity":"ultraviolet_Landau_pole","infrared_mass_term":"0","creates_required_IR_pole":False},"status":{"conditional_architecture":"10/10","conditional_pole":"6/6","physical_origin":"0/3","physical_mode_identified":False},"proofdsl":{"status":"lcf-checked","obligation_count":len(v.obligations),"certificate_sha256":v.sha256,"floating_point_values":0},"verdict":{"a_healthy_conditional_pole_can_be_written":True,"the_pole_is_generated_by_inherited_RG":False,"positive_beta_Landau_pole_is_the_particle_pole":False,"physical_mode_is_derived":False},"next_gate":"version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_ir_mass_term_candidate_audit_gate","floating_point_values":0};t=json.dumps(r,ensure_ascii=False,indent=2,sort_keys=True)+"\n";OUT.write_text(t);print(OUT);print(hashlib.sha256(t.encode()).hexdigest());print(v.sha256)
+if __name__=="__main__":main()

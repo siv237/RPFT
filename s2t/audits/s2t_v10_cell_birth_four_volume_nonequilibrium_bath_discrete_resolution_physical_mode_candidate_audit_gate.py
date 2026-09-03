@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+import hashlib,json
+from pathlib import Path
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_physical_mode_candidate_audit import SPEC,build_certificate
+from s2t.proofdsl.gates import verify_gate
+ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/"s2t/results/s2t_v10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_physical_mode_candidate_audit_gate_results.json"
+def main():
+ v=verify_gate(SPEC);c=build_certificate();names=["proton_Compton_pole","electron_Compton_pole","Higgs_electroweak_mode","neutrino_mode","Planck_mode","Hubble_mode","cell_clock_mode","K43_cutoff_mode","formal_RG_reference_mode","externally_fitted_pole"]
+ r={"date":"2026-09-02","gate":SPEC.identifier,"predecessor":"version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_rg_invariant_readout_gate","target_resolution":"exp(32*pi^2/3)","candidates":[{"name":n,"score":int(c.score_vector[i]),"pass":bool(c.pass_vector[i])} for i,n in enumerate(names)],"audit":{"matrix_shape":"10x6","rank":5,"complete_passes":0,"maximum_score":5},"internal_witnesses":{"cell_clock_resolution":"1","K43_cutoff_resolution":"1/42","formal_RG_resolution":"exp(32*pi^2/3)"},"status":{"candidate_coverage":"10/10","complete_candidates":"0/10","physical_origin":"0/3"},"proofdsl":{"status":"lcf-checked","obligation_count":len(v.obligations),"certificate_sha256":v.sha256,"floating_point_values":0},"verdict":{"mu_spec_is_a_demonstrated_physical_pole":False,"proton_identification_is_derived":False,"formal_RG_reference_matches_the_hierarchy":True,"physical_mode_is_identified":False},"next_gate":"version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_spectral_pole_parent_origin_gate","floating_point_values":0};t=json.dumps(r,ensure_ascii=False,indent=2,sort_keys=True)+"\n";OUT.write_text(t);print(OUT);print(hashlib.sha256(t.encode()).hexdigest());print(v.sha256)
+if __name__=="__main__":main()

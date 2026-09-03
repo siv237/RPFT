@@ -1,0 +1,115 @@
+\chapter{Причинная скорость и рецессионный фронт}
+\label{ch:v10-bath-causal-recession-separation}
+
+Численное сравнение $v_{\mathrm f}$ с $v_{\mathrm b}$ ещё не сравнивает
+одинаковые физические объекты. Для физического радиуса $R$ введём точное
+разложение
+\begin{equation}
+ \frac{\dot R}{c}
+ =\underbrace{\frac{H_BR}{c}}_{u_{\mathrm{rec}}}
+ +\underbrace{\frac{\dot R-H_BR}{c}}_{u_{\mathrm{loc}}}.
+ \label{eq:v10-causal-recession-split}
+\end{equation}
+Его матрица
+\begin{equation}
+ T=\begin{pmatrix}1&1\\0&1\end{pmatrix},
+ \qquad \det T=1,
+\end{equation}
+поэтому рецессионная и локальная части разделяются без потери информации.
+
+Для поверхности уровня рождения клеток
+\begin{equation}
+ \dot R_{\mathrm f}=H_BR,
+ \qquad u_{\mathrm{loc}}^{(\mathrm f)}=0.
+\end{equation}
+Напротив, две локальные характеристики ванны имеют
+\begin{equation}
+ \dot R_\pm=H_BR\pm v_{\mathrm b},
+ \qquad
+ u_{\mathrm{loc}}^{(\pm)}=\pm\frac{v_{\mathrm b}}c.
+ \label{eq:v10-bath-local-characteristics}
+\end{equation}
+Следовательно, фронт лежит в центре локального конуса, а не на его границе.
+Даже на оболочке $R/\ell_{\mathrm{cell}}=121/8$, где числа
+$H_BR$ и $v_{\mathrm b}$ совпадают, исходящая характеристика равна
+$H_BR+v_{\mathrm b}=2v_{\mathrm b}$.
+
+В координатах $(u_{\mathrm b},u_{\mathrm{loc}})$ форма
+\begin{equation}
+ \eta_{\mathrm b}=\operatorname{diag}(1,-1)
+\end{equation}
+даёт нормы
+\begin{equation}
+ \|(u_{\mathrm b},0)\|_{\eta_{\mathrm b}}^2=u_{\mathrm b}^2,
+ \qquad
+ \|(u_{\mathrm b},\pm u_{\mathrm b})\|_{\eta_{\mathrm b}}^2=0.
+\end{equation}
+Тем самым чисто рецессионный фронт находится внутри локального конуса, а
+характеристики ванны образуют его границу. Ограничение причинности относится
+к $|u_{\mathrm{loc}}|$, но не требует $|H_BR|\leq c$.
+
+Остаётся проверить саму групповую скорость. При
+\begin{equation}
+ x=e^{-S_{\mathrm{vac}}},\qquad
+ k_X=\log\frac{1+2x}{1+x},\qquad
+ u_{\mathrm b}=\frac{121}{24}k_X
+\end{equation}
+локальная сублиминальность эквивалентна $k_X\leq24/121$. Поскольку
+$u_{\mathrm b}(x)$ строго возрастает, граница единственна:
+\begin{equation}
+ x_{\mathrm c}
+ =\frac{e^{24/121}-1}{2-e^{24/121}},
+ \qquad
+ S_{\min}=\log\frac{2-e^{24/121}}{e^{24/121}-1}.
+ \label{eq:v10-bath-causal-threshold}
+\end{equation}
+Условный проектный кандидат
+\begin{equation}
+ S_{\mathrm{vac}}
+ =S_{\mathrm{geo}}-\frac1{24S_{\mathrm{geo}}}
+ -\frac1{\pi^4S_{\mathrm{geo}}^2},
+ \qquad S_{\mathrm{geo}}=4\pi^3+\pi^2+\pi,
+\end{equation}
+строго больше $S_{\min}$ и поэтому лежит глубоко внутри локального конуса.
+Это условная проверка: она не повышает доказательный статус самого
+$S_{\mathrm{vac}}$.
+
+Положительный родитель фронта
+\begin{equation}
+ \mathcal P_{\mathrm{sep}}
+ =\frac12(u_{\mathrm{tot}}-u_{\mathrm{rec}}-u_{\mathrm{loc}})^2
+ +\frac12u_{\mathrm{loc}}^2
+\end{equation}
+имеет гессиан
+$\bigl(\begin{smallmatrix}1&-1\\-1&2\end{smallmatrix}\bigr)$,
+ранг $2$ и определитель $1$. Его единственный минимум при фиксированном
+$u_{\mathrm{rec}}$ есть чисто рецессионный фронт
+$(u_{\mathrm{tot}},u_{\mathrm{loc}})=(u_{\mathrm{rec}},0)$.
+
+\begin{theorem}[Причинно-рецессионное разделение]
+Скорость фронта рождения клеток является скоростью поверхности уровня и
+совпадает с центром локального конуса ванны. Локальные характеристики равны
+$H_BR\pm v_{\mathrm b}$; поэтому возможное $H_BR>c$ не означает локального
+сверхсветового переноса.
+\end{theorem}
+
+\begin{nogocriterion}[Конус не заменяет микроскопический носитель]
+Кинематическое разложение и условная сублиминальность не выводят оператор
+распространения, его локальность и спектр. До построения такого ядра
+$v_{\mathrm b}$ остаётся допустимой групповой скоростью эффективной ванны,
+но не полностью выведенной микроскопической причинной скоростью.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item архитектура: \textbf{$10/10$};
+\item условное происхождение: \textbf{$8/8$};
+\item кинематическое разделение: \textbf{$1/1$};
+\item локальный причинный конус: \textbf{$1/1$};
+\item сублиминальность при условном $S_{\mathrm{vac}}$: \textbf{$1/1$};
+\item микроскопическое ядро распространения: \textbf{$0/1$};
+\item абсолютный масштаб: \textbf{$0/1$};
+\item следующий гейт: \textbf{локальное причинное ядро ванны}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_nonequilibrium_bath_front_speed_causal_recession_separation_gate_results.json}.

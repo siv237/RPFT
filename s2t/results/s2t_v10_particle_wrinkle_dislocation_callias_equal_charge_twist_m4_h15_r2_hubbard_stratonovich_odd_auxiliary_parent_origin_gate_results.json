@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "formal_Hubbard_Stratonovich_identity": {
+    "Gaussian_metric_determinant": 1,
+    "Schur_complement_diagonal": [
+      40,
+      40,
+      0,
+      48,
+      48,
+      0,
+      40,
+      40
+    ],
+    "completed_square": "1/2 ||A+Q Sigma||^2 + 1/2 Sigma^T(49I-Q^2)Sigma",
+    "full_rank_nullity": [
+      14,
+      2
+    ],
+    "potential": "1/2 Sigma^T 49I Sigma + A^T Q Sigma + 1/2 A^T A",
+    "shift_determinant": 1,
+    "stationary_map_rank": 8,
+    "stationary_solution": "A*=-Q Sigma"
+  },
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hubbard_stratonovich_odd_auxiliary_parent_origin_gate",
+  "interpretation": {
+    "derivation_of_missing_Q_squared_term": false,
+    "exact_linearization_of_existing_target_gap": true,
+    "field_independent_Gaussian_normalization": true,
+    "new_mixed_operator_required": true
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_odd_auxiliary_cross_bilinear_candidate_audit_gate",
+  "origin_audit": {
+    "inherited_Schur_complement": "49I",
+    "inherited_cross_block_rank": 0,
+    "inherited_parent": "diag(49I,I)",
+    "inherited_parent_rank_nullity": [
+      16,
+      0
+    ],
+    "operator_increment_inertia_negative_zero_positive": [
+      8,
+      0,
+      8
+    ],
+    "operator_increment_rank": 16,
+    "rank_mismatch_blocks_invertible_field_redefinition": true,
+    "required_cross_block": "Q",
+    "required_cross_block_rank": 8
+  },
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_minimal_odd_auxiliary_bimodule_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "e712007e955aaa34dcaf439d273a04361627aafd47cded93ccd78bb094988b11",
+    "floating_point_values": 0,
+    "obligation_count": 26,
+    "obligations": [
+      "h15_r2_hubbard_stratonovich_parent_00",
+      "h15_r2_hubbard_stratonovich_parent_01",
+      "h15_r2_hubbard_stratonovich_parent_02",
+      "h15_r2_hubbard_stratonovich_parent_03",
+      "h15_r2_hubbard_stratonovich_parent_04",
+      "h15_r2_hubbard_stratonovich_parent_05",
+      "h15_r2_hubbard_stratonovich_parent_06",
+      "h15_r2_hubbard_stratonovich_parent_07",
+      "h15_r2_hubbard_stratonovich_parent_08",
+      "h15_r2_hubbard_stratonovich_parent_09",
+      "h15_r2_hubbard_stratonovich_parent_10",
+      "h15_r2_hubbard_stratonovich_parent_11",
+      "h15_r2_hubbard_stratonovich_parent_12",
+      "h15_r2_hubbard_stratonovich_parent_13",
+      "h15_r2_hubbard_stratonovich_parent_14",
+      "h15_r2_hubbard_stratonovich_parent_15",
+      "h15_r2_hubbard_stratonovich_parent_16",
+      "h15_r2_hubbard_stratonovich_parent_17",
+      "h15_r2_hubbard_stratonovich_parent_18",
+      "h15_r2_hubbard_stratonovich_parent_19",
+      "h15_r2_hubbard_stratonovich_parent_20",
+      "h15_r2_hubbard_stratonovich_parent_21",
+      "h15_r2_hubbard_stratonovich_parent_22",
+      "h15_r2_hubbard_stratonovich_parent_23",
+      "h15_r2_hubbard_stratonovich_parent_24",
+      "h15_r2_hubbard_stratonovich_parent_25"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "formal_identity": "4/4",
+    "physical_origin": "3/4"
+  },
+  "verdict": {
+    "Hubbard_Stratonovich_is_physical_origin": false,
+    "Hubbard_Stratonovich_rewrite_exact": true,
+    "inherited_and_target_parents_congruent": false,
+    "physical_parent_found": false
+  }
+}

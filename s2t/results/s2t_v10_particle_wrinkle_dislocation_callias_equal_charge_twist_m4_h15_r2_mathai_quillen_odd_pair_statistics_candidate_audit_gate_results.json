@@ -1,0 +1,253 @@
+{
+  "best_candidates": [
+    {
+      "failed": "inherited_parent_origin",
+      "name": "Sigma_shift_BRST_quartet",
+      "score": "6/7"
+    },
+    {
+      "failed": "inherited_parent_origin",
+      "name": "formal_Mathai_Quillen_odd_fibers",
+      "score": "6/7"
+    },
+    {
+      "failed": [
+        "Thom_differential",
+        "exact_Q_pairing",
+        "acyclic_auxiliary_sector"
+      ],
+      "name": "physical_Callias_fermions",
+      "score": "4/7"
+    }
+  ],
+  "candidate_audit": {
+    "criteria": [
+      "exact_typed_pair",
+      "Grassmann_statistics",
+      "Thom_differential",
+      "exact_Q_pairing",
+      "paired_Berezin_measure",
+      "acyclic_auxiliary_sector",
+      "inherited_parent_origin"
+    ],
+    "matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "names": [
+      "carrier_Z2_grading",
+      "physical_Callias_fermions",
+      "charge_conjugate_Nambu_pair",
+      "inherited_M4_cross_bilinear",
+      "differential_form_parity",
+      "BV_antifields_of_Sigma",
+      "existing_Faddeev_Popov_ghosts",
+      "imported_KMS_BRST_quartet",
+      "Sigma_shift_BRST_quartet",
+      "AKSZ_mapping_space_extension",
+      "formal_Mathai_Quillen_odd_fibers",
+      "target_loaded_Grassmann_pair"
+    ],
+    "passes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "passing_candidates": 0,
+    "rank": 7,
+    "scores": [
+      2,
+      4,
+      5,
+      4,
+      2,
+      4,
+      4,
+      4,
+      6,
+      6,
+      6,
+      6
+    ]
+  },
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_odd_pair_statistics_candidate_audit_gate",
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_shift_symmetry_parent_origin_gate",
+  "no_go": {
+    "carrier_grading_is_field_statistics": false,
+    "existing_gauge_symmetry_supplies_required_shift": false,
+    "formal_BRST_or_MQ_extension_is_inherited": false,
+    "physical_fermions_are_contractible_auxiliaries": false
+  },
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_thom_multiplet_common_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "9a39d0865688af19590c4fee053c086ff25373f7b10bbdc739fb11ca0e90c044",
+    "floating_point_values": 0,
+    "obligation_count": 21,
+    "obligations": [
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_00",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_01",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_02",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_03",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_04",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_05",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_06",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_07",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_08",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_09",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_10",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_11",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_12",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_13",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_14",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_15",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_16",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_17",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_18",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_19",
+      "h15_r2_mathai_quillen_odd_pair_statistics_audit_20"
+    ],
+    "status": "lcf-checked"
+  },
+  "required_odd_pair": {
+    "antisymmetric_pairing_rank": 16,
+    "fields": [
+      "psi_Sigma",
+      "chi_Sigma"
+    ],
+    "inherited_translational_gauge_rank_at_Sigma_zero": 0,
+    "pairing_determinant": 15752961,
+    "pfaffian_magnitude": 3969,
+    "real_odd_dimension": 16,
+    "required_shift_generator_rank": 8,
+    "shift_generator_deficit": 8,
+    "target_odd_rank": 16
+  },
+  "status": {
+    "conditional_best": "6/7",
+    "inherited_best": "4/7",
+    "remaining_slot": "origin of an eight-generator Sigma shift symmetry"
+  },
+  "verdict": {
+    "best_next_discriminator_identified": true,
+    "candidate_passes_all_criteria": false,
+    "conditional_shift_BRST_closure": true,
+    "physical_odd_pair_parent_found": false
+  }
+}

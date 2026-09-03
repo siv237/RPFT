@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import hashlib,json
+from pathlib import Path
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_two_reservoir_entropy_production_trace_anomaly_morphism_origin import SPEC,build_certificate
+from s2t.proofdsl.gates import verify_gate
+ROOT=Path(__file__).resolve().parents[2]
+OUT=ROOT/"s2t/results/s2t_v10_cell_birth_four_volume_two_reservoir_entropy_production_trace_anomaly_morphism_origin_gate_results.json"
+def main():
+ v=verify_gate(SPEC);c=build_certificate();result={"date":"2026-09-02","gate":SPEC.identifier,"predecessors":["version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_nonequilibrium_two_reservoir_output_current_parent_admission_gate","version10_cell_birth_clock_energy_common_parent_origin_gate","version10_cell_birth_four_volume_induced_newton_constant_parent_origin_gate"],"entropy_to_stress":{"entropy_per_transition":"log(2)/66","cell_clock":"tau_cell=ell_cell/c","cell_energy":"E_C=hbar*c/ell_cell","spatial_volume":"ell_cell**3","energy_density":"hbar*c*log(2)/(66*ell_cell**4)"},"einstein_trace":{"curvature":"12/ell_cell**2","newton_area":"g_N=gamma*ell_cell**2","energy_density":"3*hbar*c/(2*pi*gamma*ell_cell**4)","balance_selects":"gamma=99/(pi*log(2))","selects_absolute_length":False},"scale_orbit":{"variables":["ell_cell","E_C","tau_cell","v3_cell","rho","g_N","R"],"rank_nullity":"6/1","kernel":[1,-1,1,3,-4,2,-2],"external_length_anchor_rank":7},"status":{"architecture":"10/10","conditional_morphism":"7/7","entropy_density_origin":"1/1 conditional","typed_stress_tensor_origin":"0/1","absolute_scale":"0/1","planck_ratio_compatibility":"0/1"},"proofdsl":{"status":"lcf-checked","obligation_count":len(v.obligations),"obligations":[n for n,_ in v.obligations],"certificate_sha256":v.sha256,"floating_point_values":0},"verdict":{"entropy_and_Einstein_densities_have_same_scale_degree":True,"balance_selects_dimensionless_ratio_only":True,"absolute_cell_scale_derived":False,"unit_Newton_cell_area_ratio_compatible":False},"next_gate":"version10_cell_birth_four_volume_nonequilibrium_entropy_scale_orbit_breaker_candidate_audit_gate","floating_point_values":0}
+ text=json.dumps(result,ensure_ascii=False,indent=2,sort_keys=True)+"\n";OUT.write_text(text);print(OUT);print(hashlib.sha256(text.encode()).hexdigest());print(v.sha256)
+if __name__=="__main__":main()

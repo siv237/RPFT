@@ -1,0 +1,88 @@
+{
+  "common_carrier": {
+    "commutant_dimension": 1,
+    "complex_dimension": 4,
+    "generated_algebra": "M4(C)",
+    "generated_algebra_dimension": 16,
+    "minimal_dimension": 4,
+    "sector_projector_ranks": [
+      2,
+      2
+    ],
+    "space": "C2_reservoir_direct_sum_C2_path"
+  },
+  "conditional_parent": {
+    "hessian_determinant": "9/16",
+    "hessian_rank": 4,
+    "hessian_spectrum": {
+      "1/2": 2,
+      "3/2": 2
+    },
+    "mixed_block_rank": 2
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_intertwiner_common_carrier_admission_gate",
+  "intertwiner": {
+    "final_projector": "P_reservoir",
+    "initial_projector": "P_path",
+    "nilpotent": true,
+    "orientation_preserving": true,
+    "real_sign_phase_choices": 4,
+    "type": "rank_two_partial_isometry_path_to_reservoir"
+  },
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_intertwiner_m4_cross_generator_parent_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_intertwiner_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "2ca8989cd2137a894d83ff08a3233861e1d460c0bf3670394a6d3ea901112914",
+    "floating_point_values": 0,
+    "obligation_count": 29,
+    "obligations": [
+      "hopf_reservoir_common_carrier_00",
+      "hopf_reservoir_common_carrier_01",
+      "hopf_reservoir_common_carrier_02",
+      "hopf_reservoir_common_carrier_03",
+      "hopf_reservoir_common_carrier_04",
+      "hopf_reservoir_common_carrier_05",
+      "hopf_reservoir_common_carrier_06",
+      "hopf_reservoir_common_carrier_07",
+      "hopf_reservoir_common_carrier_08",
+      "hopf_reservoir_common_carrier_09",
+      "hopf_reservoir_common_carrier_10",
+      "hopf_reservoir_common_carrier_11",
+      "hopf_reservoir_common_carrier_12",
+      "hopf_reservoir_common_carrier_13",
+      "hopf_reservoir_common_carrier_14",
+      "hopf_reservoir_common_carrier_15",
+      "hopf_reservoir_common_carrier_16",
+      "hopf_reservoir_common_carrier_17",
+      "hopf_reservoir_common_carrier_18",
+      "hopf_reservoir_common_carrier_19",
+      "hopf_reservoir_common_carrier_20",
+      "hopf_reservoir_common_carrier_21",
+      "hopf_reservoir_common_carrier_22",
+      "hopf_reservoir_common_carrier_23",
+      "hopf_reservoir_common_carrier_24",
+      "hopf_reservoir_common_carrier_25",
+      "hopf_reservoir_common_carrier_26",
+      "hopf_reservoir_common_carrier_27",
+      "hopf_reservoir_common_carrier_28"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "common_carrier_and_cross_generator_origin": "0/2",
+    "conditional_architecture": "12/12",
+    "coupling_coefficient_origin": "0/1",
+    "inherited_sector_data": "4/4",
+    "intertwiner_phase_origin": "0/1",
+    "physical_temperature_origin": "0/1",
+    "strict_physical_origin": "0/4"
+  },
+  "verdict": {
+    "common_carrier_selects_intertwiner_phase": false,
+    "cross_intertwiner_is_architecturally_admissible": true,
+    "current_parent_generates_M4_cross_operator": false,
+    "minimal_common_carrier_exists": true
+  }
+}

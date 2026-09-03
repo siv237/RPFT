@@ -1,0 +1,107 @@
+{
+  "common_parent": {
+    "hessian": [
+      [
+        2,
+        -1,
+        0
+      ],
+      [
+        -1,
+        2,
+        -1
+      ],
+      [
+        0,
+        -1,
+        1
+      ]
+    ],
+    "hessian_determinant": 1,
+    "hessian_rank": 3,
+    "leading_principal_minors": [
+      2,
+      3,
+      1
+    ],
+    "variables": [
+      "16*pi*g_N*B",
+      "B/(beta*m)",
+      "2*alpha*q*m/beta"
+    ]
+  },
+  "date": "2026-09-01",
+  "einstein_normalization": {
+    "coefficient_relation": "16*pi*g_N*B=1",
+    "geometric_Newton_area": "g_N=hbar*G/c^3",
+    "physical_Newton_constant": "G=c^3/(16*pi*hbar*B)"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_constant_parent_origin_gate",
+  "induced_relations": {
+    "Einstein_coefficient": "B=beta*m",
+    "blind_ratio": "g_N/q=alpha/(8*pi*beta^2)",
+    "cell_scale_squared": "q=beta/(2*alpha*m)",
+    "geometric_Newton_area": "g_N=1/(16*pi*beta*m)"
+  },
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_scale_seed_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_einstein_response_anchor_package_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "47ec180dc7d4d455d98c006893db42451ea26ec7fb2217ba3f9ce6a1eadca244",
+    "floating_point_values": 0,
+    "obligation_count": 19,
+    "obligations": [
+      "newton_einstein_normalization",
+      "newton_induced_coefficient",
+      "newton_selected_cell_scale",
+      "newton_geometric_area",
+      "newton_physical_constant",
+      "newton_cell_blind_ratio",
+      "newton_parent_stationary",
+      "newton_parent_hessian",
+      "newton_parent_rank_three",
+      "newton_parent_determinant_one",
+      "newton_parent_positive_minors",
+      "newton_scale_map_rank_three",
+      "newton_scale_map_nullity_one",
+      "newton_scale_kernel",
+      "newton_parent_architecture_full",
+      "newton_relative_origin_full",
+      "newton_relative_origin_score",
+      "newton_physical_origin_open",
+      "newton_physical_origin_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_orbit": {
+    "kernel": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "map_nullity": 1,
+    "map_rank": 3,
+    "transformation": "(g_N,B,m,q)->(s^2*g_N,B/s^2,m/s^2,s^2*q)",
+    "variables": [
+      "g_N",
+      "B",
+      "m",
+      "q"
+    ]
+  },
+  "status": {
+    "Einstein_normalization": "1/1",
+    "absolute_Newton_constant": "0/1",
+    "architecture": "10/10",
+    "blind_Newton_cell_ratio": "1/1",
+    "coefficient_origin": "0/1",
+    "relative_origin": "6/6",
+    "seed_origin": "0/1"
+  },
+  "verdict": {
+    "Einstein_coefficient_defines_Newton_area_relatively": true,
+    "Newton_to_cell_area_ratio_is_scale_free": true,
+    "induced_coefficient_derives_absolute_G": false
+  }
+}

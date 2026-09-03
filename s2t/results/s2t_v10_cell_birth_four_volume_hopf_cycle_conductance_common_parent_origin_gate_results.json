@@ -1,0 +1,88 @@
+{
+  "common_parent": {
+    "bounded_below": true,
+    "functional": "((r_B-k_X)^2+(r_kappa-r_B)^2)/2",
+    "hessian": [
+      [
+        2,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "hessian_determinant": 1,
+    "hessian_rank": 2,
+    "selected_point": "r_B=r_kappa=k_X",
+    "variables": [
+      "Gamma_B/Omega",
+      "kappa/Omega"
+    ]
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_hopf_cycle_conductance_common_parent_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_cosmological_constant_conductance_anchor_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_hopf_cycle_k43_kms_product_embedding_gate",
+  "proofdsl": {
+    "certificate_sha256": "c31bb29c79b61d6e0e7454310365cc170e453a58fa81530adaf57d3ce9e9f8fe",
+    "floating_point_values": 0,
+    "obligation_count": 20,
+    "obligations": [
+      "conductance_growth_coupling_identity",
+      "conductance_parent_stationary_point",
+      "conductance_parent_hessian",
+      "conductance_parent_rank_two",
+      "conductance_parent_determinant_one",
+      "conductance_parent_positive_spectrum",
+      "conductance_equals_birth_rate",
+      "conductance_clock_ratio",
+      "edge_current_clock_blind_growth",
+      "entropy_clock_blind_ratio",
+      "conductance_scale_map_rank_two",
+      "conductance_scale_map_nullity_one",
+      "conductance_scale_kernel",
+      "conductance_ratio_scale_invariance",
+      "birth_ratio_scale_invariance",
+      "conductance_common_parent_architecture_full",
+      "conductance_relative_origin_full",
+      "conductance_relative_origin_score",
+      "conductance_absolute_origin_open",
+      "conductance_absolute_origin_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "remaining_scale_orbit": {
+    "absolute_clock_derived": false,
+    "absolute_conductance_derived": false,
+    "constraint_map_nullity": 1,
+    "constraint_map_rank": 2,
+    "kernel": [
+      1,
+      1,
+      1
+    ],
+    "transformation": "(kappa,Gamma_B,Omega)->c*(kappa,Gamma_B,Omega), t->t/c"
+  },
+  "selected_relations": {
+    "conductance": "kappa=Gamma_B=k_X*Omega",
+    "edge_current_clock_ratio": "J_edge/Omega=Delta_zeta",
+    "entropy_clock_ratio": "sigma/Omega=3*Delta_zeta*log(2)",
+    "growth_coupling": "k_X=log((1+2*x)/(1+x))=3*Delta_zeta"
+  },
+  "status": {
+    "absolute_clock": "0/1",
+    "absolute_conductance": "0/1",
+    "architecture": "10/10",
+    "blind_dimensionless_relations": "2/2",
+    "common_parent_origin": "1/1",
+    "relative_origin": "6/6"
+  },
+  "verdict": {
+    "common_parent_selects_absolute_conductance": false,
+    "common_parent_selects_conductance_relative_to_clock": true,
+    "cycle_conductance_is_identified_with_cell_birth_rate": true,
+    "edge_current_matches_geometric_growth_per_clock": true
+  }
+}

@@ -1,0 +1,79 @@
+\chapter{Спектральная счётная мера четырёхмерного объёма ячейки}
+\label{ch:v10-cell-birth-four-volume-spectral-counting}
+
+\section{Точная конечная спектральная модель}
+
+Проверим, может ли размерность старой столкновительной ячейки $K_{43}$
+выбрать её собственную длину. Возьмём безразмерный оператор формы
+\begin{equation}
+ \widehat D_{43}=\operatorname{diag}(0,1,\ldots,42),
+ \qquad D_{\rm cell}=\frac{\widehat D_{43}}{\ell_{\rm cell}}.
+ \label{eq:v10-spectral-counting-operator}
+\end{equation}
+При верхнем пороге $\Lambda=42/\ell_{\rm cell}$ счётный проектор имеет
+ранг $43$. Дополнительно
+\begin{equation}
+ \ell_{\rm cell}^2\operatorname{Tr}D_{\rm cell}^2
+ =\sum_{n=0}^{42}n^2=25585.
+ \label{eq:v10-spectral-counting-moment}
+\end{equation}
+Таким образом, спектральная форма и кратность определены точно.
+
+\section{Что выбирает счётная мера}
+
+Верхний уровень фиксирует лишь произведение
+\begin{equation}
+ \Lambda\ell_{\rm cell}=42.
+ \label{eq:v10-spectral-counting-product}
+\end{equation}
+Преобразование
+\begin{equation}
+ \Lambda\mapsto\frac{\Lambda}{s},
+ \qquad \ell_{\rm cell}\mapsto s\ell_{\rm cell}
+ \label{eq:v10-spectral-counting-orbit}
+\end{equation}
+сохраняет все уровни относительно порога, число состояний и нормированные
+спектральные моменты.
+
+В логарифмических координатах родитель счётного условия имеет вид
+\begin{equation}
+ \mathcal P_{\rm count}
+ =\frac12\bigl(\log\Lambda+\log\ell_{\rm cell}-\log42\bigr)^2.
+ \label{eq:v10-spectral-counting-parent}
+\end{equation}
+Его гессиан равен
+\begin{equation}
+ \begin{pmatrix}1&1\\1&1\end{pmatrix},
+ \qquad \rank=1,
+ \qquad \dim\ker=1,
+ \qquad \operatorname{Spec}=\{0,2\}.
+ \label{eq:v10-spectral-counting-hessian}
+\end{equation}
+Нулевая мода $(-1,1)^T$ совпадает с орбитой обрезания и длины.
+
+\begin{theorem}[Спектральный счёт выбирает только относительную меру]
+Конечный спектр из $43$ уровней точно определяет счёт, верхний порог и
+нормированные моменты, но фиксирует только $\Lambda\ell_{\rm cell}$. Поэтому
+он не выбирает отдельно $\ell_{\rm cell}$ и
+$v_{\rm cell}=\ell_{\rm cell}^4$.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет превращения размерности в объём]
+Число внутренних состояний не является физическим четырёхмерным объёмом.
+Без независимо выбранного спектрального обрезания равенство
+$\Lambda\ell_{\rm cell}=42$ сохраняет непрерывную масштабную орбиту.
+\end{nogocriterion}
+
+\begin{protocol}[Статус спектральной счётной меры]\begin{enumerate}
+\item конечный спектральный носитель: \textbf{$43/43$};
+\item точная счётная мера и момент: \textbf{получены};
+\item архитектура: \textbf{$8/8$};
+\item происхождение относительной меры: \textbf{$3/5$};
+\item ранг и размерность ядра: \textbf{$1/1$};
+\item абсолютный объём ячейки: \textbf{$0/1$};
+\item абсолютная энергия часов: \textbf{$0/1$};
+\item следующий гейт: \textbf{аудит топологических квантов объёма}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_spectral_counting_measure_origin_gate_results.json}.

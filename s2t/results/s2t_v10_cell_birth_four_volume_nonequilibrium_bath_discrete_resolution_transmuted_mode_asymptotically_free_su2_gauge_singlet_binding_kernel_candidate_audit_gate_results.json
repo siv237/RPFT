@@ -1,0 +1,71 @@
+{
+  "candidate_audit": {
+    "candidate_count": 11,
+    "criterion_count": 6,
+    "full_passes": 0,
+    "rank": 6,
+    "scores": [
+      4,
+      3,
+      3,
+      3,
+      2,
+      3,
+      4,
+      2,
+      4,
+      3,
+      3
+    ],
+    "selected_internal_origins": 0
+  },
+  "canonical_exchange": {
+    "identity": "I4/4-P_singlet",
+    "normalized_parent": "3*I4/4+exchange=P_triplet",
+    "operator": "sum_a T_a tensor T_a",
+    "spectrum": {
+      "-3/4": 1,
+      "1/4": 3
+    }
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_kernel_candidate_audit_gate",
+  "inherited_binding": {
+    "flavor_pair_degeneracy": 256,
+    "kernel": "0_4",
+    "singlet_triplet_gap": 0
+  },
+  "invariant_operator_space": {
+    "basis": [
+      "I4",
+      "P_singlet"
+    ],
+    "commutant_dimension": 2,
+    "commutator_constraint_rank": 14,
+    "free_gap": "b-a",
+    "general_kernel": "a*P_singlet+b*P_triplet"
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_coefficient_parent_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_composite_pole_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "19adc0de8e3f85290469bc7f87d91236f4ffa530643dc081e3b8e84d65b2bee6",
+    "floating_point_values": 0,
+    "obligation_count": 25,
+    "status": "lcf-checked"
+  },
+  "status": {
+    "candidate_coverage": "11/11",
+    "canonical_operator_architecture": "6/6",
+    "full_candidate_passes": "0/11",
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "canonical_exchange_selects_singlet_relative_to_triplet": true,
+    "composite_pole_scale_is_derived": false,
+    "flavor_pair_is_selected": false,
+    "overall_binding_coefficient_is_derived": false,
+    "physical_binding_kernel_is_derived": false,
+    "su2_symmetry_fixes_two_channel_form": true
+  }
+}

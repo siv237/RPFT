@@ -1,0 +1,76 @@
+{
+  "binary_birth_measure": {
+    "birth_probability": "x/(1+x)",
+    "birth_weight": "x=exp(-S_vac)",
+    "no_birth_probability": "1/(1+x)",
+    "odds_ratio": "x",
+    "probability_sum": "1",
+    "row_stochastic": true,
+    "vacuum_weight": "1"
+  },
+  "continuous_clock_boundary": {
+    "mean_waiting_time": "1/r_N",
+    "normalization": "1",
+    "physical_gamma_derived": false,
+    "scale_orbit": "(gamma,t)->(c*gamma,t/c)",
+    "scale_orbit_nullity": 1,
+    "total_rate": "r_N=gamma*N",
+    "waiting_density": "r_N*exp(-r_N*t)"
+  },
+  "date": "2026-09-01",
+  "dimensionless_growth": {
+    "mean_cell_multiplier": "(1+2*x)/(1+x)",
+    "mean_history": "E[N_n]=N0*((1+2*x)/(1+x))^n",
+    "weak_weight_slope": "1/3",
+    "zeta_per_step": "log((1+2*x)/(1+x))/3"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_normalized_transition_measure_growth_rate_origin_gate",
+  "next_gate": "version10_cell_birth_clock_energy_common_parent_origin_gate",
+  "predecessor": "version10_k43_reciprocal_spectral_operator_growth_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "4558e00a8bb5e927a40258df066212a3b5928559296da27fe9df6f36999b5402",
+    "floating_point_values": 0,
+    "obligation_count": 16,
+    "obligations": [
+      "birth_probability_normalization",
+      "birth_weight_odds_ratio",
+      "birth_transition_row_stochastic",
+      "mean_cell_multiplier",
+      "dimensionless_step_growth",
+      "normalized_growth_weak_slope",
+      "vacuum_target_weak_slope",
+      "vacuum_prefactor_positive_mismatch",
+      "normalized_growth_not_vacuum_target",
+      "waiting_time_measure_normalized",
+      "mean_waiting_time_free_rate",
+      "clock_rate_rescaling_invariance",
+      "clock_rate_scale_orbit_nullity_one",
+      "cell_birth_measure_architecture_full",
+      "cell_birth_origin_ledger_two_of_four",
+      "cell_birth_origin_score_two"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_scale": "0/1",
+    "minimal_measure_architecture": "8/8",
+    "normalized_transition_measure": "1/1 conditional on weights",
+    "origin_ledger": "2/4",
+    "physical_clock_rate": "0/1",
+    "proposed_vacuum_growth_rate_origin": "0/1"
+  },
+  "vacuum_amplitude_boundary": {
+    "normalization_derives_proposed_prefactor": false,
+    "proposed_amplitude": "x/sqrt(8*pi)",
+    "proposed_weak_weight_slope": "1/sqrt(8*pi)",
+    "slope_gap": "1/3-1/sqrt(8*pi)>0"
+  },
+  "verdict": {
+    "cosmological_constant_physically_derived": false,
+    "dimensionless_mean_growth_constructed": true,
+    "normalization_alone_derives_h_vac": false,
+    "normalized_birth_measure_constructed": true,
+    "physical_time_unit_derived": false
+  }
+}

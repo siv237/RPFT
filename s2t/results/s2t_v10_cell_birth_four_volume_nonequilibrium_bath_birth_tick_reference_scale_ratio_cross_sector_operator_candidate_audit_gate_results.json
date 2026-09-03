@@ -1,0 +1,77 @@
+{
+  "audit": {
+    "complete_passes": 0,
+    "formal_nonzero_mixed_blocks": 5,
+    "inherited_mixed_and_selected": 0,
+    "matrix_shape": "8x6",
+    "rank": 5
+  },
+  "candidates": [
+    {
+      "name": "direct_sum",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "tensor_identity",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "trace_product",
+      "pass": false,
+      "score": 4
+    },
+    {
+      "name": "mixed_spectral_trace",
+      "pass": false,
+      "score": 4
+    },
+    {
+      "name": "trace_anomaly",
+      "pass": false,
+      "score": 3
+    },
+    {
+      "name": "KMS_throughflow",
+      "pass": false,
+      "score": 4
+    },
+    {
+      "name": "Hopf_K43_product",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "explicit_bridge_portal",
+      "pass": false,
+      "score": 5
+    }
+  ],
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_cross_sector_operator_candidate_audit_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_minimal_portal_operator_architecture_gate",
+  "portal_stability": {
+    "boundary_zero_mode": "lambda=1",
+    "determinant": "1-lambda^2",
+    "strict_example": "lambda=1/2"
+  },
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_common_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "1fb6f68d255e6e188fbdc36a52c8988e24fbf321706f3ec256932ba635d4974d",
+    "floating_point_values": 0,
+    "obligation_count": 19,
+    "status": "lcf-checked"
+  },
+  "status": {
+    "candidate_coverage": "8/8",
+    "complete_candidates": "0/8",
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "a_conditional_stable_portal_exists": true,
+    "absolute_birth_tick_is_derived": false,
+    "an_inherited_selected_cross_operator_exists": false
+  }
+}

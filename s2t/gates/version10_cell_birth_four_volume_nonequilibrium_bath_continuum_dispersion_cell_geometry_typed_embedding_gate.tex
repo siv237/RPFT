@@ -1,0 +1,52 @@
+\chapter{Континуальная дисперсия ванны в клеточной геометрии}
+\label{ch:v10-bath-continuum-cell-dispersion}
+
+Для однородной клеточной цепи естественна дисперсия
+\begin{equation}
+ \omega(k)=\frac{2v}{\ell_{\rm cell}}
+ \sin\frac{k\ell_{\rm cell}}{2}.
+\end{equation}
+Она имеет инфракрасную скорость $v$ и частоту среза
+\begin{equation}
+ \Omega_{\rm bath}=\frac{2v}{\ell_{\rm cell}}.
+\end{equation}
+Клеточные часы задают $\Omega_C=c/\ell_{\rm cell}$, а прежний родитель
+проводимости даёт $\kappa/\Omega_C=k_X$, где
+$k_X=\log((1+2x)/(1+x))$ и $x=e^{-S_{\rm vac}}$.
+
+Совмещение с отношением $\Omega_{\rm bath}/\kappa=121/12$ требует
+\begin{equation}
+ \boxed{\frac vc=\frac{121}{24}k_X}.
+\end{equation}
+Тем самым дисперсия типизирована, но появляется селектор скорости.
+
+Если потребовать $v=c$, то $k_X=24/121$ и
+\begin{equation}
+ x_*=\frac{e^{24/121}-1}{2-e^{24/121}},\qquad
+ S_*=-\log x_*\simeq1.26925,
+\end{equation}
+что несовместимо с ветвью $S_{\rm vac}\simeq137.036$. При сохранении
+последней требуется $v/c\simeq1.54\cdot10^{-59}$ без текущего родителя.
+
+\begin{theorem}[Условное клеточное вложение]
+Клеточная цепь канонически поставляет форму дисперсии и относительный срез.
+Совместимость всех относительных отношений единственно выбирает
+$v/c=(121/24)k_X$.
+\end{theorem}
+
+\begin{nogocriterion}[Люминальная и вакуумная ветви несовместимы]
+Либо скорость резервуара равна $c$ и теряется зафиксированное вакуумное
+действие, либо сохраняется $S_{\rm vac}$ и вводится сверхмалая невыведенная
+скорость. Абсолютная масштабная орбита также остаётся одномерной.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item условная типизация дисперсии: \textbf{$9/9$};
+\item люминальная совместимость с $S_{\rm vac}$: \textbf{$0/1$};
+\item происхождение скорости ванны: \textbf{$0/1$};
+\item полные кандидаты: \textbf{$0/6$};
+\item следующий гейт: \textbf{общий родитель скорости ванны и вакуумного роста}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_nonequilibrium_bath_continuum_dispersion_cell_geometry_typed_embedding_gate_results.json}.

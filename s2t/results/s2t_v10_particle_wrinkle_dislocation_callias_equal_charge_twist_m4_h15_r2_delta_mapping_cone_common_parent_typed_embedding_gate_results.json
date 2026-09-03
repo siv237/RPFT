@@ -1,0 +1,107 @@
+{
+  "coefficient_origin": {
+    "connected_extension_map_rank": 2,
+    "inherited_map_rank": 0,
+    "new_mixed_curvature_required": true,
+    "target_gap_coefficients_basis_I_Q2": [
+      49,
+      -1
+    ],
+    "target_outside_universal_portal_image": true,
+    "universal_norm_portal_rank": 1
+  },
+  "conditional_gap_insertion": {
+    "Sigma_gap_spectrum": {
+      "0": 2,
+      "40": 4,
+      "48": 2
+    },
+    "common_Hessian_nullity": 11,
+    "common_Hessian_rank": 49,
+    "common_inertia_negative_zero_positive": [
+      0,
+      11,
+      49
+    ],
+    "status": "typed_but_not_parent_derived"
+  },
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_mapping_cone_common_parent_typed_embedding_gate",
+  "inherited_embedding": {
+    "Delta_Sigma_cross_rank": 0,
+    "Delta_inertia_negative_zero_positive": [
+      0,
+      9,
+      43
+    ],
+    "Sigma_Hessian_rank": 0,
+    "common_Hessian_nullity": 17,
+    "common_Hessian_rank": 43,
+    "common_inertia_negative_zero_positive": [
+      0,
+      17,
+      43
+    ],
+    "interpretation": "stable Delta background but eight completely flat Sigma sectors"
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_sigma_mixed_curvature_candidate_audit_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hypercharge_breaking_background_common_carrier_admission_gate",
+  "proofdsl": {
+    "certificate_sha256": "96fd63a341b1eefeeb04b2f64a6e2539c22243ba4e1e74ee5e012161f7f6fbf7",
+    "floating_point_values": 0,
+    "obligation_count": 27,
+    "obligations": [
+      "h15_r2_delta_mapping_cone_embedding_00",
+      "h15_r2_delta_mapping_cone_embedding_01",
+      "h15_r2_delta_mapping_cone_embedding_02",
+      "h15_r2_delta_mapping_cone_embedding_03",
+      "h15_r2_delta_mapping_cone_embedding_04",
+      "h15_r2_delta_mapping_cone_embedding_05",
+      "h15_r2_delta_mapping_cone_embedding_06",
+      "h15_r2_delta_mapping_cone_embedding_07",
+      "h15_r2_delta_mapping_cone_embedding_08",
+      "h15_r2_delta_mapping_cone_embedding_09",
+      "h15_r2_delta_mapping_cone_embedding_10",
+      "h15_r2_delta_mapping_cone_embedding_11",
+      "h15_r2_delta_mapping_cone_embedding_12",
+      "h15_r2_delta_mapping_cone_embedding_13",
+      "h15_r2_delta_mapping_cone_embedding_14",
+      "h15_r2_delta_mapping_cone_embedding_15",
+      "h15_r2_delta_mapping_cone_embedding_16",
+      "h15_r2_delta_mapping_cone_embedding_17",
+      "h15_r2_delta_mapping_cone_embedding_18",
+      "h15_r2_delta_mapping_cone_embedding_19",
+      "h15_r2_delta_mapping_cone_embedding_20",
+      "h15_r2_delta_mapping_cone_embedding_21",
+      "h15_r2_delta_mapping_cone_embedding_22",
+      "h15_r2_delta_mapping_cone_embedding_23",
+      "h15_r2_delta_mapping_cone_embedding_24",
+      "h15_r2_delta_mapping_cone_embedding_25",
+      "h15_r2_delta_mapping_cone_embedding_26"
+    ],
+    "status": "lcf-checked"
+  },
+  "reused_parent": "version4_pati_salam_irreducible_relative_cycle",
+  "status": {
+    "conditional_status": "3/4",
+    "connected_common_parent": "absent",
+    "physical_status": "2/4",
+    "typed_direct_sum": "admitted"
+  },
+  "typed_common_carrier": {
+    "Delta_injection_rank": 52,
+    "Delta_plus_auxiliary_real_dimension": 52,
+    "Sigma_injection_rank": 8,
+    "Sigma_sector_dimension": 8,
+    "complete_direct_sum": true,
+    "orthogonal_injections": true,
+    "total_dimension": 60
+  },
+  "verdict": {
+    "mapping_cone_parent_embeds_as_typed_direct_sum": true,
+    "mapping_cone_parent_generates_Delta_Sigma_cross_curvature": false,
+    "mapping_cone_parent_generates_Sigma_gap": false,
+    "physical_common_parent_found": false
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "candidate_matrix": [
+    [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0
+    ]
+  ],
+  "candidate_matrix_rank": 4,
+  "candidates": [
+    "KMS_rate_ratio",
+    "reciprocal_K43_orientation",
+    "normalized_cell_birth_measure",
+    "clock_resonance",
+    "spectral_gap",
+    "Hopf_winding",
+    "physical_matter_bath",
+    "cosmological_flow"
+  ],
+  "clock_scale_obstruction": {
+    "absolute_conductance_derived": false,
+    "affinity_invariant": true,
+    "current_scales": "J->c*J",
+    "map_nullity": 1,
+    "map_rank": 2,
+    "transformation": "kappa->c*kappa, t->t/c"
+  },
+  "closest_candidate": "KMS_rate_ratio",
+  "criteria": [
+    "force_relation_fixed",
+    "absolute_conductance_fixed",
+    "closed_cycle_carrier",
+    "positive_entropy",
+    "internal_typed",
+    "breaks_clock_orbit"
+  ],
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_throughflow_affinity_impedance_origin_audit_gate",
+  "maximum_score": "4/6",
+  "next_gate": "version10_cell_birth_four_volume_hopf_cycle_k43_typed_embedding_gate",
+  "oriented_cycle": {
+    "cycle_affinity": "3*log(2)",
+    "edge_current": "kappa/3",
+    "entropy_production": "kappa*log(2)",
+    "generator": "kappa*[[-3,1,2],[2,-3,1],[1,2,-3]]",
+    "nullity": 1,
+    "rank": 2,
+    "stationary_state": "(1,1,1)/3"
+  },
+  "passing_candidates": 0,
+  "predecessor": "version10_cell_birth_four_volume_induced_gravity_coefficient_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "4e4d8989cc6617acb2ec893d1d565e9da2123d7b259467b0846d23f50c537c42",
+    "floating_point_values": 0,
+    "obligation_count": 21,
+    "obligations": [
+      "throughflow_origin_candidate_matrix",
+      "zero_passing_throughflow_candidates",
+      "maximum_throughflow_score_four",
+      "throughflow_candidate_rank_four",
+      "absolute_conductance_column_zero",
+      "clock_orbit_break_column_zero",
+      "oriented_cycle_stationary_state",
+      "oriented_cycle_rank_two",
+      "oriented_cycle_nullity_one",
+      "oriented_cycle_edge_current",
+      "oriented_cycle_affinity",
+      "oriented_cycle_entropy_production",
+      "common_rate_generator_rescaling",
+      "common_rate_affinity_invariance",
+      "common_rate_current_rescaling",
+      "rate_clock_map_rank_two",
+      "rate_clock_map_nullity_one",
+      "rate_clock_scale_kernel",
+      "throughflow_candidate_coverage_full",
+      "throughflow_origin_ledger_three",
+      "throughflow_origin_score_three"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_channel_conductance": "0/1",
+    "candidate_coverage": "8/8",
+    "origin_ledger": "3/5",
+    "physical_clock_scale": "0/1"
+  },
+  "verdict": {
+    "KMS_ratio_fixes_absolute_rate": false,
+    "KMS_ratio_fixes_affinity": true,
+    "current_derives_absolute_scale": false,
+    "oriented_cycle_supports_stationary_current": true
+  }
+}

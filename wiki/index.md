@@ -2,10 +2,501 @@
 
 > Status: working
 > Type: index
-> Updated: 2026-09-01
+> Updated: 2026-09-03
+- [[version10-final-conclusion-and-tome11-program-gate]] — Том X завершён:
+  operational conditional/physical `6/6` и `4/6`, inherited quantum-RG
+  contract `3/6`, reopening `0/4`. Том XI допущен как программа
+  реляционных наблюдаемых, возмущений и фальсификации.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-mathai-quillen-shift-symmetry-parent-origin-gate]] —
+  inherited `Sigma` Hessian имеет rank/nullity `6/2`, поэтому rank-8 shift
+  невозможен; Stückelberg-удвоение условно даёт `6/7`, но новая копия не
+  унаследована. Ветвь готова к финальному no-go Тома X.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-mathai-quillen-odd-pair-statistics-candidate-audit-gate]] —
+  аудит `12x7` даёт `0/12`; физические фермионы имеют Grassmann measure,
+  но не образуют Thom complex. Лучший условный route — rank-8
+  `Sigma`-shift BRST symmetry, `6/7`, без inherited origin.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-mathai-quillen-thom-multiplet-common-parent-origin-gate]] —
+  oriented Hodge edge выводит nilpotent carrier differential, полный
+  Thom-квартет условно сокращает determinants и получает `7/8`; current
+  parent имеет odd rank `0/16`, поэтому physical status равен `3/8`.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-superconnection-suspension-auxiliary-copy-parent-origin-gate]] —
+  bare suspension даёт только `3/7`; Mathai--Quillen contractible pair
+  условно закрывает `6/7`, имеет independent/relative rank `8/8` и точный
+  Schur complement, но её differential и мера не унаследованы.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-relative-hodge-auxiliary-edge-origin-candidate-audit-gate]] —
+  diagonal reuse имеет relative rank `0`; аудит `0/12`, suspension и
+  mapping-cone cylinder получают `5/6`.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-relative-hodge-auxiliary-edge-common-parent-admission-gate]] —
+  doubled carrier условно проходит `6/6`, но fixed-point weight-match равен
+  нулю и требует нового восьмимерного auxiliary-модуля.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-relative-curvature-junk-quotient-parent-origin-gate]] —
+  standard junk имеет rank `0` и не выбирает relative class; условный
+  graph-Hodge projector даёт exact `Q`, но selector и auxiliary-edge не
+  унаследованы.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-superconnection-curvature-trace-selector-candidate-audit-gate]] —
+  exact endpoint weights `(1,-1)` несовместимы с положительным полным
+  trace; аудит `0/12`, relative junk quotient получает `5/6`.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-superconnection-mixed-curvature-parent-origin-gate]] —
+  graded polarization точно даёт `Q` с фиксированным коэффициентом, но
+  положительный trace даёт `T-B`; relative selector и auxiliary-стрелка
+  не унаследованы.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-delta-moment-map-odd-auxiliary-trilinear-parent-origin-gate]] —
+  прямосуммарный moment map даёт cross-rank `0`; свободное смешивание
+  `kappa Q` достигает target при `kappa=1`, но тогда trace metric имеет
+  rank/nullity `8/8`.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-odd-auxiliary-cross-bilinear-candidate-audit-gate]] —
+  cross-аудит даёт `0/12`; Delta moment map и mixed superconnection
+  получают `5/6`, но отсутствуют в inherited action.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-hubbard-stratonovich-odd-auxiliary-parent-origin-gate]] —
+  HS-преобразование точно переписывает `49I-Q²`, но не порождает mixed
+  source `Q`; inherited и target Hessian имеют разные ранги `16/14`.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-minimal-odd-auxiliary-bimodule-candidate-audit-gate]] —
+  двенадцать кандидатов дают `0/12`; Hubbard–Stratonovich поле проходит
+  `5/6`, но независимый odd auxiliary-parent не унаследован.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-shared-fixed-point-auxiliary-channel-typed-embedding-gate]] —
+  fixed-point веса `0,±4,±6` не пересекаются с весами `Q Sigma`
+  `±1,±3,±7`; equivariant и graded Hom равны нулю, нужен новый odd-модуль.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-delta-stabilizer-moment-map-curvature-parent-origin-gate]] —
+  moment map фиксирует `Q`, а положительный shared-auxiliary Schur-parent
+  условно даёт `49I-Q²`; typed auxiliary coupling пока rank `0`.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-delta-sigma-mixed-curvature-candidate-audit-gate]] —
+  `G_Y=40I-B²-2TB` требует оба Cartan-канала с фиксированным `1:2`;
+  кандидаты `0/11`, moment-map curvature получает `5/6`.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-delta-mapping-cone-common-parent-typed-embedding-gate]] —
+  mapping cone типизированно вкладывается вместе с `Sigma`, но cross-rank
+  равен нулю и gap не порождается; требуется mixed curvature.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-hypercharge-breaking-background-common-carrier-admission-gate]] —
+  нейтральный `Delta=(2_R,1_L,4)`-луч единственно сохраняет гиперзаряд и
+  заменяет два adjoint-фона; admission условный до embedding mapping cone.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-hypercharge-gap-coefficient-candidate-audit-gate]] —
+  правильная сигнатура задаёт открытый коэффициентный конус, а не число;
+  аудит `0/11`, ближайший breaking-background trace имеет `5/6`.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-hypercharge-projector-mass-splitting-parent-origin-gate]] —
+  `49I-(6Y)^2` условно оставляет тахионной только `R2`-пару при
+  `0<mu2/kappa<40`, но коэффициенты и абсолютный масштаб не выведены.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-pati-salam-sigma-component-selector-candidate-audit-gate]] —
+  минимальный полином по `(6Y)^2` точно выделяет `R2+barR2`, но текущий
+  родитель не создаёт требуемого mass-splitting; аудит `0/11`.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-pati-salam-sigma-typed-embedding-gate]] —
+  `Sigma=(2_R,2_L,15_4)` содержит точные `R2` и сопряжение, но вместе с
+  `48` companion-компонентами; `R2`-селектор не инвариантен под `SU(2)_R`.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-dirac-seed-candidate-audit-gate]] —
+  пять внутренних операторов имеют нулевую `R2`-проекцию; аудит `0/11`
+  выделяет Pati–Salam `Sigma=(2,2,15)` как ближайшее расширение.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-generalized-first-order-parent-admission-gate]] —
+  на стандартном Dirac-seed `A_(2)=0`; ненулевой ответ `4D_R2` возникает
+  лишь после явной вставки `R2`, поэтому маршрут закрыт как круговой.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-quark-lepton-connector-candidate-audit-gate]] —
+  прямое `Q_L-L_L`-ребро связывает граф, но нарушает физическую типизацию;
+  минимальная `R2`-пара запрещена строгим первым порядком, аудит `0/11`.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-uniform-h15-amplification-parent-origin-gate]] —
+  физический `H15`-граф имеет две компоненты и две амплитуды; одно условное
+  кварк–лептонное ребро выбирает uniform ray, но не унаследовано.
+- [[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-fermionic-cross-typed-embedding-gate]] —
+  Callias carrier условно несёт полную `M4`-алгебру, равнозарядную
+  cross-изометрию ранга `30` и determinant-кривизну `-60`; равномерное
+  усиление по `H15` не унаследовано.
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-hopf-reservoir-m4-fermionic-determinant-cross-bilinear-odd-statistics-candidate-audit-gate]] —
+  двенадцать источников дают `0/12`: KO6 нарушает заряд, полный Pfaffian
+  стирает relative sign, а совместимый Callias route пока имеет нулевое
+  вложение в четырёхмерный cross-модуль.
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-hopf-reservoir-m4-fermionic-determinant-tachyonic-susceptibility-common-carrier-admission-gate]] —
+  условный четырёхмерный Dirac-носитель даёт потенциал с минимумами
+  `x=±1`; унаследованы только пространство и секторная градуировка,
+  cross-билинейность и Grassmann-структура остаются открытыми.
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-hopf-reservoir-m4-cell-incidence-tachyonic-sign-parent-origin-gate]] —
+  ориентация, положительные веса и устойчивое бозонное расширение не меняют
+  знак incidence-жёсткости; фермионный детерминант даёт условную кривизну
+  `-2`, но его общий носитель ещё не унаследован.
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-hopf-reservoir-m4-bifundamental-condensate-candidate-audit-gate]] —
+  одиннадцать кандидатов дают `0/11`: incidence-лапласиан унаследован, но
+  положителен; Callias/Higgs-механизмы дают условную отрицательную моду,
+  однако отсутствуют на минимальном общем носителе.
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-hopf-reservoir-intertwiner-m4-cross-generator-parent-origin-gate]] —
+  положительный квартальный родитель условно конденсирует cross-блок, но
+  сохраняет фазовый тор `U(1)²`; унаследованные cross-гессиан и источник
+  равны нулю.
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-hopf-reservoir-intertwiner-common-carrier-admission-gate]] —
+  минимальный общий носитель имеет размерность `4` и допускает частичную
+  изометрию, порождающую `M4(C)`; происхождение cross-генератора, фазы и
+  коэффициента остаётся открытым.
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-hopf-reservoir-intertwiner-candidate-audit-gate]] —
+  десять кандидатов дают `0/10`: ориентация фиксирует перестановку, но
+  оставляет двумерное пространство диагональных интертвинеров; требуется
+  общий носитель с унаследованным смешанным блоком.
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-hopf-path-length-reservoir-coupling-parent-origin-gate]] —
+  знак разности сродств единственно выбирает назначение путей `1:2`, но
+  унаследованный резервуарно-хопфовский смешанный блок равен нулю, а
+  абсолютная температурно-энергетическая шкала остаётся свободной.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-continuum-dispersion-cell-geometry-typed-embedding-gate]] —
+  локальный клеточный лапласиан даёт точную решёточную дисперсию,
+  континуальный предел и поправку `-1/12`; происхождение связности,
+  абсолютного ребра и скорости остаётся `0/3`.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-group-velocity-vacuum-growth-common-parent-origin-gate]] —
+  общий родитель даёт `H R/v_g=1/6`; происхождение глобального радиуса и
+  абсолютного темпа роста остаётся открытым.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-front-speed-causal-recession-separation-gate]] —
+  `dD/dt=HD±c` разделяет геометрическое удаление и локальный сигнал;
+  сверхсветовое удаление не является сверхсветовой передачей.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-local-causal-propagation-kernel-cell-complex-typed-embedding-gate]] —
+  генератор точно факторизуется через ориентированные рёбра; полное ядро
+  восстанавливается в алгебре путей, но не поддержано одной звездой.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-local-causal-propagation-kernel-parent-origin-gate]] —
+  ближайший причинный генератор имеет форму `gamma(S_+-I)`; его
+  пуассоновская полугруппа нормирована и одностороння, но строгого
+  непрерывного светового конуса и абсолютной скорости нет.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-universal-cover-growth-graph-typed-embedding-gate]] —
+  корневой луч `N_0` точно реализует клеточный шаг на универсальном
+  накрытии; корневая фиксация даёт невырожденный родитель, но физическое
+  происхождение графа и абсолютной длины остаётся открытым.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-cell-complex-edge-length-common-parent-origin-gate]] —
+  условный резонанс выбирает `R1=ell_cell`, но компактное ребро получает
+  множитель `pi/2`; шесть источников резонанса дают `0/6`, поэтому локальный
+  граф естественно переносится на универсальное накрытие.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-local-causal-propagation-kernel-cell-complex-typed-embedding-gate]] —
+  математическое вложение ядра существует, но стандартный CW-комплекс имеет
+  одну вершину; универсальное накрытие `S1` проходит `5/6`, оставляя
+  нетипизированной физическую длину ребра.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-local-causal-propagation-kernel-parent-origin-gate]] —
+  ближайшее ядро `K_b=(2I-S-S*)/4` имеет единичную полосу и максимальную
+  скорость `121 k_X c/24`; коэффициент `1/4` выведен, физическое вложение
+  графа ещё открыто.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-front-speed-causal-recession-separation-gate]] —
+  причинность действует на `dot R-H_B R`: фронт имеет локальную скорость
+  ноль и лежит внутри конуса `H_B R+-v_b`; микроскопическое ядро переноса
+  остаётся открытым.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-group-velocity-cell-birth-front-speed-morphism-origin-gate]] —
+  точный морфизм даёт `v_f/v_b=(8/121)(R/ell_cell)`; равенство скоростей
+  существует лишь на оболочке `R/ell_cell=121/8` и не является причинным
+  законом всей истории.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-group-velocity-vacuum-growth-common-parent-origin-gate]] —
+  положительный родитель выбирает `v/c=(121/24)k_X` и предсказывает
+  `v/(H_B ell_cell)=121/8`, сохраняя абсолютную масштабную орбиту.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-continuum-dispersion-cell-geometry-typed-embedding-gate]] —
+  клеточная дисперсия выбирает `v/c=(121/24)k_X`; ветвь `v=c` конфликтует
+  с фиксированным `S_vac`, а его сохранение требует необъяснённого `v/c~10^-59`.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-microscopic-carrier-cutoff-parent-admission-gate]] —
+  конечный резервуар рекуррентен; открытый псевдомодуль реализует память
+  условно, но абсолютная скорость его стока не выведена.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-spectral-density-memory-scale-candidate-audit-gate]] —
+  условная память даёт `Omega/kappa=121/12`, но профиль имеет off-shell
+  ядро размерности четыре, а восемь кандидатов абсолютного среза дают `0/8`.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-correlation-time-parent-origin-gate]] —
+  внутренние зазоры фиксируют `kappa tau_corr=12/121`, но не секунду.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-correlation-time-parent-origin-gate]] —
+  внутренние генераторы фиксируют корреляционное затухание в шагах и
+  `kappa tau_corr=12/121`, но физическая единица времени остаётся свободной.
+- [[version10-cell-birth-four-volume-nonequilibrium-entropy-scale-orbit-breaker-candidate-audit-gate]] —
+  десять кандидатов дают `0/10`: четыре внутренних вклада сохраняют
+  `ell^-4`, а шесть условных нарушителей требуют внешнего времени, энергии
+  или длины; лучшие пути получают `5/6`.
+- [[version10-cell-birth-four-volume-two-reservoir-entropy-production-trace-anomaly-morphism-origin-gate]] —
+  точная энтропия `log2/66` переводится в плотность степени `ell^-4`, но
+  эйнштейновский след имеет ту же степень; баланс выбирает только
+  `g_N/ell²=99/(pi log2)` и сохраняет масштабную моду.
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-alpha-inverse-pi4-two-reservoir-inverse-response-origin-gate]] —
+  положительный двухрезервуарный cross-response условно выводит отрицательный
+  знак и `S_geo^-2`, но свободная восприимчивость не различает позднюю
+  `pi^-4`- и раннюю `32 pi`-нормировки.
+
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-two-reservoir-common-affinity-temperature-anchor-candidate-audit-gate]] —
+  симметричные сродства вокруг `2 log pi` точно факторизуют `pi^-4`, однако
+  общий температурный якорь не выведен и ток `1/66` не сохраняется.
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-two-reservoir-common-affinity-temperature-anchor-candidate-audit-gate]] —
+  восемь общих якорей дают `0/8`; симметричные сродства вокруг `2 log pi`
+  точно дают произведение KMS-отношений `pi^-4`, но не наследуют ток `1/66`
+  и не имеют физически выведенного температурного отображения.
 
 Это навигационный каталог вики проекта. Его следует читать перед ответом на
 исследовательские вопросы и перед добавлением новых источников.
+
+- [[version10-particle-wrinkle-dislocation-callias-profile-common-carrier-admission-gate]] —
+  каллиасова архитектура размерности `60` согласована, но равнозарядная
+  twist-двойка над `H15` не унаследована.
+
+- [[version10-particle-wrinkle-dislocation-mixed-bridge-candidate-audit-gate]] —
+  одиннадцать мостов дают `0/11`; профиль Каллиаса выделен как кандидат
+  `5/6`, но его общий носитель не унаследован.
+
+- [[version10-particle-wrinkle-dislocation-common-parent-reopening-gate]] —
+  морщинка и дислокация совместимы, но существующий родитель является
+  прямой суммой: общий физический источник закрыт лишь `0/3`.
+
+- [[particle-wrinkle-dislocation-formula-intuition-2026]] — ранние
+  «морщинка» и «дислокация» сведены в единый критерий: первая должна дать
+  конечную энергию и радиус, вторая — защищённый класс и перенос.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-su2-gauge-singlet-flavor-graph-candidate-audit-gate]] — десять графовых кандидатов дают `0/10`; `Q4` выделен структурно, но его четырёхбитная разметка не унаследована.
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-su2-gauge-singlet-democratic-flavor-selector-parent-origin-gate]] — лапласиан `K16` выбирает одну pair-line условно, но flavor-граф не унаследован.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-su2-gauge-singlet-flavor-pair-selector-candidate-audit-gate]] — десять селекторов дают `0/10`; демократический rank-one проектор пока не имеет родителя.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-su2-gauge-singlet-su2-mediator-cell-complex-typed-embedding-gate]] —
+  adjoint-поле и относительный ток типизированы клеточно; восприимчивость
+  остаётся `I3/2`, но flavor-селектор и pole-map отсутствуют.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-su2-gauge-singlet-su2-mediator-static-propagator-parent-origin-gate]] —
+  сохранённый ток даёт gauge-независимые `chi=1/2` и `kappa=3/16`, но
+  клеточные SU(2)-поле и current-map пока не типизированы.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-su2-gauge-singlet-mediator-susceptibility-candidate-audit-gate]] —
+  одиннадцать кандидатов дают `0/11`; отдельно `chi` зависит от нормировки,
+  а безмассовый статический оператор имеет нулевую моду.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-su2-gauge-singlet-binding-coefficient-parent-origin-gate]] —
+  строгий условный родитель даёт `kappa=g² chi0`, но восприимчивость,
+  смешанный блок и отображение к массе полюса не унаследованы.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-su2-gauge-singlet-binding-kernel-candidate-audit-gate]] —
+  коммутант двух дублетов двумерен, но одиннадцать связывающих кандидатов
+  дают `0/11`: коэффициент, flavor-селектор и масштаб не порождены.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-su2-gauge-singlet-composite-pole-parent-origin-gate]] —
+  антисимметричная пара активных дублетов даёт rank-one gauge singlet, но
+  binding kernel, flavor-селектор и масса остаются непорождёнными.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-su2-eight-dirac-k43-typed-embedding-gate]] —
+  `K43=32+11` реализует безаномальный `SU(2)+8D` с `b=-2`, но активный
+  инвариантный проектор имеет минимальный ранг два, а не один.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-anomaly-free-carrier-candidate-audit-gate]] —
+  минимальный условный носитель `SU(2)+8D` безаномален и даёт `b=-2`, но
+  пока не вложен в K43 и не связан с трансмутированной модой.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-asymptotically-free-beta-sign-parent-origin-gate]] —
+  безаномальные неабелевы составы реализуют `b=-2` условно, но beta-родитель
+  имеет ядро размерности два и не выбирает физический носитель.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-ir-mass-term-candidate-audit-gate]] —
+  одиннадцать механизмов дают `0/11`; точную обратную экспоненту условно
+  создаёт лишь асимптотическая свобода с отсутствующим знаком `b=-2`.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-transmuted-mode-spectral-pole-parent-origin-gate]] —
+  здоровый IR-полюс существует условно, но унаследованный положительный
+  RG-ход даёт UV-полюс Ландау и не генерирует его массовый член.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-physical-mode-candidate-audit-gate]] —
+  десять кандидатов дают `0/10`; формальная RG-шкала совпадает с иерархией,
+  но не является доказанным физическим полюсом или состоянием.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-discrete-resolution-rg-invariant-readout-gate]] —
+  фактор `42` сокращается, давая масштабно-инвариантное число клеток и
+  тактов `R=exp(32 pi²/3)`; конкретная физическая мода пока не определена.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-birth-tick-reference-scale-ratio-minimal-portal-operator-architecture-gate]] —
+  двумерный portal минимален, порождает `M2(C)` и имеет скалярный коммутант;
+  коэффициент, источник и носитель пока не выведены.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-birth-tick-reference-scale-ratio-cross-sector-operator-candidate-audit-gate]] —
+  восемь операторов дают `0/8`; формальные смешанные блоки существуют, но
+  ни один унаследованный блок не имеет выбранного некругового коэффициента.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-birth-tick-reference-scale-ratio-common-parent-origin-gate]] —
+  условный общий родитель строг, но унаследованный функционал имеет плоскую
+  мостовую координату и нулевые смешанные блоки.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-birth-tick-reference-scale-ratio-candidate-audit-gate]] —
+  одиннадцать кандидатов дают `0/11`; точное произведение RG×K43 не имеет
+  общего родителя, а строка отношения зависима и оставляет ядро `2/2`.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-birth-tick-k43-rg-boundary-matching-origin-gate]] —
+  совместимость требует нового отношения `mu_spec/Lambda43`; прямое и
+  обращённое согласования не сохраняют весь унаследованный RG-пакет.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-birth-tick-dimensional-transmutation-parent-origin-gate]] —
+  RG создаёт точный относительный такт, но сохраняет масштабное ядро `4/1`;
+  наивное `mu_spec=Lambda43` противоречит геометрическому произведению `42`.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-birth-tick-absolute-scale-candidate-audit-gate]] —
+  двенадцать кандидатов дают `0/12`; лучшие пять внутренних формул
+  эквивалентны и не разрушают общую масштабную орбиту.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-universal-cover-birth-height-physical-time-morphism-origin-gate]] —
+  аффинное чтение `t_n=t_0+n tau_birth` существует, но после фиксации `c`
+  сохраняет масштабное ядро `3/1`; абсолютный тик остаётся открытым.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-universal-cover-growth-graph-typed-embedding-gate]] —
+  путь из семи вершин является шаром в покрытии `Z→C3`; дискретная высота
+  рождения выведена, но физический граф, метр и часы остаются `0/3`.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-cell-complex-edge-length-common-parent-origin-gate]] —
+  семь относительных условий имеют общий строгий родитель, но после
+  `v_g=c` остаётся масштабная мода длины; абсолютное ребро не выведено.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-local-causal-propagation-kernel-cell-complex-typed-embedding-gate]] —
+  оператор пути точно равен `(D-BB^T)/2`; типизация и причинность закрыты,
+  но глобальный комплекс, длина ребра и затухание остаются `0/3`.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-local-causal-propagation-kernel-parent-origin-gate]] —
+  ближайшие соседи дают точный графовый световой конус и геометрическую
+  память `r^n`; причинность закрыта, но затухание и абсолютное время
+  остаются `0/2`.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-spectral-density-memory-scale-candidate-audit-gate]] —
+  десять кандидатов покрывают все шесть критериев, но дают `0/10` полных
+  проходов; происхождение формы спектра и абсолютной памяти остаётся `0/2`.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-correlation-time-parent-origin-gate]] —
+  одинаковый UV-cutoff допускает экспоненциальную и гауссову память с
+  различными интегральными временами и короткими наклонами; происхождение
+  спектральной формы и абсолютного времени остаётся `0/2`.
+
+- [[version10-cell-birth-four-volume-nonequilibrium-bath-microscopic-carrier-cutoff-parent-admission-gate]] —
+  зона Бриллюэна и спектр K43 имеют общий положительный cutoff-родитель и
+  точное отношение `42/pi`; происхождение носителя и абсолютного
+  ультрафиолетового масштаба остаётся `0/2`.
+
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-two-reservoir-common-affinity-temperature-anchor-candidate-audit-gate]] —
+  десять кандидатов дают `0/10`; хопфовские пути `1:2` воспроизводят оба
+  сродства, но требуют типизированного назначения ваннам и энергетической щели.
+
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-two-reservoir-affinity-hopf-cycle-typed-origin-gate]] —
+  хопфовское ребро выводит разность сродств ванн `log 2`; общий сдвиг
+  температур и раздельная калибровка скорости и времени остаются свободными.
+
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-k43-nonequilibrium-two-reservoir-output-current-parent-admission-gate]] —
+  две KMS-ванны дают `pi=(8/11,3/11)`, циркуляционный ток `1/66` и
+  положительное производство энтропии `log(2)/66`.
+
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-k43-kms-output-channel-parent-origin-gate]] —
+  точный KMS-канал реализует потерю `1/6`, но детальный баланс даёт
+  `J_down=J_up=1/18` и нулевой чистый стационарный ток.
+
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-k43-output-density-morphism-origin-gate]] —
+  единственный положительный знак даёт `R_out=-A`, `0<R_out<1` и
+  `d_out=R_out/v_cell`; баланс выбирает `n_flow log2=R_out`, но не масштаб.
+
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-spectral-coefficient-origin-candidate-audit-gate]] —
+  двенадцать спектральных кандидатов дают `0/12`; точные `1/6`, единичный
+  геометрический ход и `Lambda ell_cell=42` ещё не образуют физический пакет
+  `(epsilon,b_A,mu_spec)`.
+
+- [[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-throughflow-scale-parent-admission-gate]] —
+  ведущий баланс притока и аномального выхода сокращает `m²`; логарифмическая
+  поправка выбирает только `m/mu_spec²`, а выключение потока условно ведёт к
+  `m=0`.
+
+- [[version10-cell-birth-four-volume-induced-newton-dimensional-transmutation-beta-parent-origin-gate]] —
+  RG фиксирует `log(m_DT/mu_spec²)=64 pi²/3`, а планковское условие выбирает
+  `beta_E=1/(16 pi)`; размерная карта всё ещё имеет ядро размерности один.
+
+- [[tome10-early-metaphor-scale-origin-archaeology-2026-09-01]] — ранние
+  образы банки, сквозного канала, Уробороса, дыхания и кристаллизации
+  сопоставлены с Томом X; найдена условная зацепка `16 pi beta=1`.
+
+- [[version10-cell-birth-four-volume-induced-newton-scale-seed-candidate-audit-gate]] —
+  десять кандидатов дают `0/10`; относительная карта имеет ранг/ядро `4/1`,
+  dimensional transmutation остаётся невыведенной, а наблюдаемое `G` кругово.
+
+- [[version10-cell-birth-four-volume-induced-newton-constant-parent-origin-gate]] —
+  эйнштейновская нормировка и индуцированные коэффициенты дают слепое
+  `g_N/q=alpha/(8 pi beta²)`, но абсолютный `G` сохраняет масштабную моду.
+
+- [[version10-cell-birth-four-volume-einstein-response-anchor-package-candidate-audit-gate]] —
+  шестнадцать кандидатов дают `0/16`; полный эйнштейновский пакет
+  `(G,Theta,v_cell,T_flow)` остаётся `0/4`.
+
+- [[version10-cell-birth-four-volume-cosmological-constant-einstein-response-coupling-origin-gate]] —
+  условный эйнштейновский мост даёт абсолютную формулу для `kappa²`, но
+  требует независимых `G`, `Theta`, `v_cell` и тензора энергии потока.
+
+- [[version10-cell-birth-four-volume-cosmological-constant-throughflow-parent-origin-gate]] —
+  условный родитель даёт `Lambda_flow=3 sigma²/(c²F²)` и схлопывание
+  кривизны при остановке потока; происхождение связи отклика остаётся открытым.
+
+- [[version10-cell-birth-four-volume-cosmological-constant-conductance-anchor-candidate-audit-gate]] —
+  `Lambda_growth=kappa²/(3c²)` совместима с геометрической калибровкой, но
+  её обратное чтение кругово; независимая `Lambda` пока не выведена.
+
+- [[version10-cell-birth-four-volume-hopf-cycle-conductance-common-parent-origin-gate]] —
+  общий положительный родитель выбирает `kappa=Gamma_B=k_X Omega` и даёт
+  `J_edge/Omega=Delta_zeta`; единая абсолютная частота остаётся свободной.
+
+- [[version10-cell-birth-four-volume-hopf-cycle-k43-kms-product-embedding-gate]] —
+  произведение размерности 258 даёт три канонические вершины и положительный
+  марковский цикл; абсолютная проводимость остаётся свободной.
+
+- [[version10-cell-birth-four-volume-hopf-cycle-k43-typed-embedding-gate]] —
+  координатное вложение цикла марковски положительно, но имеет 30 выборов;
+  симметричное вложение создаёт 870 отрицательных скоростей.
+
+- [[version10-cell-birth-four-volume-throughflow-affinity-impedance-origin-audit-gate]] —
+  ориентированный цикл даёт ток `kappa/3`, силу `3 log 2` и положительную
+  энтропию, но восемь источников абсолютной проводимости дают `0/8`.
+
+- [[version10-cell-birth-four-volume-induced-gravity-coefficient-parent-origin-gate]] —
+  равные входящий и выходящий токи поддерживают ненулевую геометрическую
+  ветвь при постоянном числе ячеек, но масштаб тока остаётся свободным.
+
+- [[version10-cell-birth-four-volume-curvature-coefficient-origin-candidate-audit-gate]] —
+  восемь источников коэффициентов дают `0/8`; любая пара
+  `(A,B)=(alpha m²,beta m)` сохраняет орбиту `(q,m)->(s²q,m/s²)`.
+
+- [[version10-cell-birth-four-volume-curvature-density-parent-origin-gate]] —
+  в четырёх измерениях `v R²=144` безмасштабно; условный минимум
+  `ell²=B/(2A)` сохраняет коэффициентную орбиту с рангом/ядром `2/1`.
+
+- [[version10-cell-birth-four-volume-topological-quantum-candidate-audit-gate]] —
+  восемь топологических кандидатов дают `0/8`; они фиксируют кратность
+  `n`, но оставляют физический объём в форме `V=n v0` с невыведенным `v0`.
+
+- [[version10-cell-birth-four-volume-spectral-counting-measure-origin-gate]] —
+  43 точных уровня дают `Lambda ell_cell=42` и момент `25585`, но
+  спектральный родитель имеет ранг/ядро `1/1` и не выбирает абсолютный
+  объём ячейки.
+
+- [[version10-cell-birth-intrinsic-four-volume-parent-origin-gate]] —
+  `v_cell=ell_cell^4` является точным приращением объёма; общий родитель
+  выбирает `E_C ell_cell=hbar c`, но его ранг/ядро `3/1` сохраняют
+  абсолютную масштабную моду.
+
+- [[version10-cell-birth-clock-energy-geometric-anchor-candidate-audit-gate]] —
+  девять кандидатов дают `0/9`; относительная карта имеет ранг/ядро `3/1`,
+  а космологическая энергия `E_Lambda=Delta_zeta E_C` возвращает часы
+  круговым тождеством и не снимает масштабную орбиту.
+
+- [[version10-cell-birth-clock-energy-common-parent-origin-gate]] —
+  резонансный носитель и положительный родитель выбирают
+  `chi²=Gamma_B/Omega=3 Delta_zeta`; слепое отношение
+  `H_B/Omega=Delta_zeta` выведено, но общая энергия часов сохраняет одну
+  масштабную орбиту.
+
+- [[version10-cell-birth-normalized-transition-measure-growth-rate-origin-gate]] —
+  веса `(1,exp(-S_vac))` нормируются и дают точный безразмерный рост, но не
+  коэффициент `1/sqrt(8*pi)`; непрерывные часы сохраняют одномерную орбиту
+  скорости, поэтому физический темп остаётся `0/1`.
+- [[cell-birth-sequential-growth-sources-2026]] — первичные источники по
+  вероятностному последовательному росту и границе единственности динамики.
+
+- [[version10-k43-reciprocal-spectral-operator-growth-parent-origin-gate]] —
+  безследовый генератор `Q_X=P_0-P_Y` и положительный ковариантный родитель
+  выбирают `K_X(zeta)=exp(zeta Q_X)`; спектральный закон закрыт `4/4`, но
+  мера рождения ячеек и физическая временная калибровка остаются `0/2`.
+
+- [[version10-inflow-spectral-self-energy-k43-typed-embedding-gate]] —
+  каноническая пара вакуум–гиперзаряд реализует ориентированный резервуар
+  внутри `K43`; вложение проходит `8/8`, но унаследованный родитель имеет
+  нулевой ход и не порождает `exp(+-zeta)`.
+
+- [[version10-inflow-spectral-self-energy-running-parent-origin-gate]] —
+  взаимно обратный резервуар с входящей ориентацией даёт
+  `Sigma_in=exp(zeta)`, ненулевой интенсивный ход и следовой свидетель
+  `-1/6`; типизированное вложение в 43-мерный носитель остаётся `0/1`.
+
+- [[version10-geometric-scale-beta-trace-anomaly-origin-gate]] — физический
+  приток создаёт ненулевой определитель и точную нарушенную фазу, но
+  интенсивный ход одинаковых ячеек равен нулю; следующий узел ищет
+  масштабно-зависимую спектральную самоэнергию.
+
+- [[version10-quantum-rg-common-carrier-admission-gate]] — Том X открыт:
+  `a=(N/N0)^(1/3)`, `zeta=log a`, общий носитель истории, ячеек, KMS и
+  локальных полей допущен `7/7`; физическое происхождение роста остаётся
+  `0/3`.
+
+- [[pre-tome10-project-wide-intuition-audit-2026-09-01]] — сквозной обзор
+  Томов I--IX: устойчивое инвариантное ядро, общая свобода переопределений и
+  доказательство того, что обычный ренормгрупповой маршрут Тома X повторяет запрет Тома III
+  без нового размерного носителя или ослабления цели.
 
 - [[2026-09-01-tome9-russian-terminology-lint]] — нормативный словарь Тома IX;
   введение, заключение и названия 37 глав русифицированы, построчная вычитка
@@ -1437,6 +1928,15 @@
 - [[field-space-superconnection-bv-mapping-cone-literature-2026]] —
   первичная литература и проектная граница между суперсвязностью,
   градуированным соответствием, relative spectral triple и BV/BRST.
+- [[off-shell-auxiliary-copy-mathai-quillen-supersymmetry-literature-2026]] —
+  первичная литература разделяет чистое градуированное удвоение,
+  off-shell `F`-поле и Mathai--Quillen Thom-пару; только последние два
+  механизма дают независимо интегрируемую бозонную auxiliary-копию.
+- [[version10-relative-hodge-auxiliary-edge-project-intuition-search]] —
+  повторная проверка формул Тома X: `Q`, mixed curvature и Hodge projector
+  совместимы; сильнейшая зацепка для недостающей копии — Thom/contractible
+  пара над секцией `s_Q=Q Sigma`, а чистая suspension должна пройти тест на
+  отличие от K-теоретической стабилизации.
 - [[modular-state-graph-twin-selector-literature-2026]] — первичная
   литература о модулярных спектральных тройках, спектральном действии и
   графовых близнецах; она подтверждает необходимость выводить проектор до
@@ -2517,22 +3017,22 @@ Index lines were generated from page summaries so every wiki page is reachable.
 - [[version4-bounded-nonlinear-propagator-gate]] — Для torsor edge operators точно выполняется `A² = B² = I`. Поэтому при любом bounded family correction тяжёлого блока `Y_s = P_- - 2/t I + O(t^-2)`. Две лёгкие singular values совпадают на ведущем порядке. Одиннадцать parameter-free nonlinear functions подтвер
 - [[version4-casimir-messenger-propagator-gate]] — Точные representation Casimirs были помещены в диагонали общего двухканального heavy block. Это различает четыре сектора без четырёх fitted параметров. Полный 16-ветвевой mass train выбирает `t = 1622.2774`. В этом decoupling режиме Casimir splittings подавлен
 - [[version4-common-messenger-schur-gate]] — Может ли один общий двухканальный messenger propagator превратить четыре канонических ребра sector torsor в реалистические массы и CKM без четырёх независимых Yukawa-матриц? Используется общий тяжёлый блок `M(t) = t I, i I], [-i I, t I`, `t > 1`, и два инциден
-- [[version4-corrected-zero-mode-pfaffian-gate]] — \[ \lambda_{0D}=2\pi^3\simeq62.01255. \] Reduced measure: \[ r_\star=1.000413,\qquad\theta_\star=0. \] Full KO6: \[ r_\star=1.000825,\qquad\theta_\star=0. \] Минимальные Hessian eigenvalues приблизительно равны 495.9 и 496.3. Corrected zero-mode normalization 
+- [[version4-corrected-zero-mode-pfaffian-gate]] — \[ \lambda_{0D}=2\pi^3\simeq62.01255. \] Reduced measure: \[ r_\star=1.000413,\qquad\theta_\star=0. \] Full KO6: \[ r_\star=1.000825,\qquad\theta_\star=0. \] Минимальные Hessian eigenvalues приблизительно равны 495.9 и 496.3. Corrected zero-mode normalization
 - [[version4-cp-odd-mixed-invariant-gate]] — Существует ли в текущей real spectral triple CP-odd invariant с ненулевым radial--orientation mixed Hessian? - Все odd traces vanish by chirality. - Все graded even traces vanish by isospectrality of `MM†` and `M†M`. - Ungraded polynomial traces CP-even и имею
-- [[version4-family-defect-degree-two-junk-gate]] — Does the ordinary Connes two-form quotient of the explicit 18-dimensional KO6 geometry contain the six-dimensional middle `Sym3(R)` curvature required for `mu=XX^T-|Phi|^2 I`? The audit constructs represented one-forms, represented two-forms and `d(ker pi_1)` 
+- [[version4-family-defect-degree-two-junk-gate]] — Does the ordinary Connes two-form quotient of the explicit 18-dimensional KO6 geometry contain the six-dimensional middle `Sym3(R)` curvature required for `mu=XX^T-|Phi|^2 I`? The audit constructs represented one-forms, represented two-forms and `d(ker pi_1)`
 - [[version4-full-profile-radial-vacuum-gate]] — Сохраняются ли CP-breaking minima positive profile после освобождения radius? На slice r=1 было theta=1.227311, но radial derivative равна -0.755503, поэтому точка не stationary. Полный minimum: \[ r_\star=5.773295,\qquad \theta_\star=0. \] Hessian eigenvalues
 - [[version4-full-spectral-profile-global-gate]] — Нулевой mixed Hessian не запрещает global spontaneous CP breaking. Положительность spectral function также не фиксирует знак higher angular coefficients. На unit radial slice найден positive normalized profile \[ f_\star(u)= \frac{e^{-u^2/100}+\frac1{12}e^{-10
 - [[version4-gram-eigenvector-endpoint-gate]] — Могут ли eigenvectors Gram matrix моментов (R_4,R_6,R_8), а не только её eigenvalues, породить fermion hierarchy и CKM? Для каждого sector построены whitened operators \[ Q_{a,s}=\lambda_a^{-1/2}\sum_n V_{na}Z_{n,s}. \] Знаки eigenvectors фиксируются по наибол
-- [[version4-heat-kernel-trace-dictionary-gate]] — \[ Z_\Phi=\frac{f_0}{8\pi^2},\qquad f_0=\frac{3\pi^2}{g^2}. \] После canonical scalar normalization: \[ \lambda_{4D}=\frac{8}{3}g^2=1 \] при \(g^2=3/8\). Для integrated constant mode на \(\mathbb{RP}^3_R\times S^1_R\): \[ \lambda_{0D}=2\pi^3. \] Проблема не в 
+- [[version4-heat-kernel-trace-dictionary-gate]] — \[ Z_\Phi=\frac{f_0}{8\pi^2},\qquad f_0=\frac{3\pi^2}{g^2}. \] После canonical scalar normalization: \[ \lambda_{4D}=\frac{8}{3}g^2=1 \] при \(g^2=3/8\). Для integrated constant mode на \(\mathbb{RP}^3_R\times S^1_R\): \[ \lambda_{0D}=2\pi^3. \] Проблема не в
 - [[version4-hessian-two-scale-messenger-gate]] — Radial–orientation Hessian фиксирует messenger mass ratio `sqrt(13):1`. После полного mass-only selection affine KMS branch даёт blind `s12 = 0.23596` против target `0.22501`, то есть ошибку около 4.9%. Это первый blind numerical pass observed flavour quantity
 - [[version4-modular-endpoint-intertwiner-gate]] — Из нормированного Casimir-family operator построено Gibbs state `rho_s = exp(-Rhat_s) / Tr exp(-Rhat_s)`. Endpoint edges взвешены через `sqrt(rho_s)` в left, right и KMS-symmetric placements. Это впервые меняет leading metric: `L L† = 2 rho_s`, поэтому univers
 - [[version4-moment-commutator-modular-gate]] — Второй constraint построен из `[Z4,Z6]/(2i)`, то есть из eigenvector несовместимости четвёртого и шестого spectral moments. Непрерывный multiplier не вводится; проверяются только две orientation branches. Mass hierarchy улучшается, активируются все CKM planes,
 - [[version4-noncentral-boundary-propagator-gate]] — Проверены два canonical eigenvector-sensitive lift-а heavy propagator: ground projector Casimir operator и полный quartic node moment. Оба используют полное embedding алгебры, а не только спектр. Они создают ненулевой поворот Cabibbo plane (`0.0634` и `0.4626`
-- [[version4-pati-salam-diagonal-connector-menu]] — - Required Goldstone: `(I_R,R4)=(1,10)`. - Unwanted pseudo-Goldstone: `(I_R,R4)=(0,6)`. | Operator | Required | Unwanted | Difference | |---|---:|---:|---:| | Identity singlet | 1 | 1 | 0 | | `SU(2)_R` Casimir | 2 | 0 | -2 | | `SU(4)` Casimir | 9/2 | 5/2 | -2 
+- [[version4-pati-salam-diagonal-connector-menu]] — - Required Goldstone: `(I_R,R4)=(1,10)`. - Unwanted pseudo-Goldstone: `(I_R,R4)=(0,6)`. | Operator | Required | Unwanted | Difference | |---|---:|---:|---:| | Identity singlet | 1 | 1 | 0 | | `SU(2)_R` Casimir | 2 | 0 | -2 | | `SU(4)` Casimir | 9/2 | 5/2 | -2
 - [[version4-pati-salam-finite-dirac-block]] — For one generation: - `V_R=(2_R,1_L,4_4)`, complex dimension `8`; - `V_L=(1_R,2_L,4_4)`, complex dimension `8`; - particle dimension `16`; - KO6 particle–antiparticle dimension `32`. The grading is `diag(+I8,-I8,-I8,+I8)`, while reality exchanges particles and
 - [[version4-pati-salam-first-order-kernel]] — The real KO6-compatible Dirac space has dimension `272`: - arbitrary complex `Y`: `128` real; - symmetric complex `M_R`: `72` real; - symmetric complex `M_L`: `72` real. The exact double-commutator kernel has real dimension `8`: ```text Y = A_(2x2) tensor I4 M
-- [[version4-pati-salam-literature-reaudit]] — The earlier wording merged two distinct scalar scenarios: - General fundamental branch: `Sigma=(2_R,2_L,1+15_4)` and no independent weak-singlet adjoint. Its canonical potential fails the vacuum test. - Composite first-order branch: fundamental fields include 
-- [[version4-pati-salam-restricted-potential-gate]] — The general spectral field called `Sigma` transforms as `(2_R,2_L,1+15_4)`, not `(1_R,1_L,1+15_4)`. A nonzero high-scale VEV therefore breaks `SU(2)_L` and produces large left-right Dirac masses. The required independent four-color breaking field is a genuine 
+- [[version4-pati-salam-literature-reaudit]] — The earlier wording merged two distinct scalar scenarios: - General fundamental branch: `Sigma=(2_R,2_L,1+15_4)` and no independent weak-singlet adjoint. Its canonical potential fails the vacuum test. - Composite first-order branch: fundamental fields include
+- [[version4-pati-salam-restricted-potential-gate]] — The general spectral field called `Sigma` transforms as `(2_R,2_L,1+15_4)`, not `(1_R,1_L,1+15_4)`. A nonzero high-scale VEV therefore breaks `SU(2)_L` and produces large left-right Dirac masses. The required independent four-color breaking field is a genuine
 - [[version4-pati-salam-vacuum-singlet-gate]] — Can the project’s existing Coleman–Weinberg dilaton/singlet both stabilize the Pati–Salam scale and repair the published spectral Pati–Salam vacuum? arXiv:1905.04533 finds that the canonical spectral Pati–Salam potential does not provide a suitable Pati–Salam-
 - [[version4-pfaffian-stiffness-gate]] — Pfaffian modulus имеет curvature `2/9` для reduced measure и `4/9` для full KO6 modulus. Это соответствует local couplings `g=9/2` и `g=9/4`, оба выше critical `g_c=1.47996`. Точный periodic functional даёт ненулевые orientation minima. Однако reduced branch п
 - [[version4-radial-pfaffian-hessian-gate]] — Pfaffian пересчитан для self-adjoint connector `z=r exp(i theta)`. Корректный determinant обращается в нуль при `r -> 0`; прежнее выражение с `z^-3` нельзя было продолжать вне unit circle. Bosonic и Pfaffian Hessians в координатах `(log r, theta)` диагональны.

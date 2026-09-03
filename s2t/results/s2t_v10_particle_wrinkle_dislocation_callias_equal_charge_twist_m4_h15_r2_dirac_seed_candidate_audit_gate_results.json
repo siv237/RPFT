@@ -1,0 +1,232 @@
+{
+  "R2_target": {
+    "edges": [
+      "L_L-u_R",
+      "Q_L-e_R"
+    ],
+    "multiplet": "R2=(3,2)_{7/6}",
+    "operator_rank_with_adjoints": 4,
+    "support_projector_rank": 4
+  },
+  "candidate_audit": {
+    "candidates": [
+      "standard_finite_Dirac",
+      "standard_Higgs_one_form",
+      "admitted_generalized_A2",
+      "Callias_M4_tensor_amplifier",
+      "H15_incidence_laplacian",
+      "Pati_Salam_Sigma_2_2_15",
+      "Clifford_mixed_weak_colour_scalar",
+      "historical_S0_reality_relaxation",
+      "strict_mirror_cycle_completion",
+      "explicit_D_R2_insertion",
+      "normalized_target_loaded_D_R2"
+    ],
+    "coverage": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "criteria": [
+      "exact_R2_two_edge_support",
+      "correct_SM_gauge_type",
+      "Real_odd_consistency",
+      "current_parent_inheritance",
+      "no_new_algebra_or_fermions",
+      "coefficient_normalization_origin"
+    ],
+    "matrix": [
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    ],
+    "matrix_rank": 6,
+    "pass": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "passing_candidates": 0,
+    "scores": [
+      5,
+      5,
+      5,
+      4,
+      3,
+      3,
+      1,
+      1,
+      2,
+      4,
+      5
+    ]
+  },
+  "date": "2026-09-03",
+  "extension_routes": {
+    "Clifford_extension": "contains mixed weak-colour scalars but does not select the exact two-edge R2 seed here",
+    "Pati_Salam_Sigma": "contains an R2-typed component after explicit algebra enlargement",
+    "S0_reality_relaxation": "historical leptoquark channel is not the current two-edge R2 rectangle",
+    "strict_mirror_cycle": "factorizes transport through new vertices and has no elementary R2 block"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_dirac_seed_candidate_audit_gate",
+  "inheritance": {
+    "current_parent_to_R2_coefficient_map_rank": 0,
+    "target_loaded_coefficient_hessian_rank": 1,
+    "target_loaded_is_derivation": false
+  },
+  "inherited_operator_projection_audit": {
+    "R2_projection_ranks": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "all_zero": true,
+    "operators": [
+      "standard_finite_Dirac",
+      "standard_Higgs_one_form",
+      "admitted_generalized_A2",
+      "Callias_H15_identity_factor",
+      "H15_type_laplacian"
+    ]
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_pati_salam_sigma_typed_embedding_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_generalized_first_order_parent_admission_gate",
+  "proofdsl": {
+    "certificate_sha256": "7121822c19ddbea9ac425d719f73f3cb44d9403de8b7ae15488078c6ec2aab42",
+    "floating_point_values": 0,
+    "obligation_count": 20,
+    "obligations": [
+      "h15_r2_dirac_seed_candidate_00",
+      "h15_r2_dirac_seed_candidate_01",
+      "h15_r2_dirac_seed_candidate_02",
+      "h15_r2_dirac_seed_candidate_03",
+      "h15_r2_dirac_seed_candidate_04",
+      "h15_r2_dirac_seed_candidate_05",
+      "h15_r2_dirac_seed_candidate_06",
+      "h15_r2_dirac_seed_candidate_07",
+      "h15_r2_dirac_seed_candidate_08",
+      "h15_r2_dirac_seed_candidate_09",
+      "h15_r2_dirac_seed_candidate_10",
+      "h15_r2_dirac_seed_candidate_11",
+      "h15_r2_dirac_seed_candidate_12",
+      "h15_r2_dirac_seed_candidate_13",
+      "h15_r2_dirac_seed_candidate_14",
+      "h15_r2_dirac_seed_candidate_15",
+      "h15_r2_dirac_seed_candidate_16",
+      "h15_r2_dirac_seed_candidate_17",
+      "h15_r2_dirac_seed_candidate_18",
+      "h15_r2_dirac_seed_candidate_19"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_target_architecture": "12/12",
+    "inherited_R2_support": "0/5",
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "Pati_Salam_is_the_nearest_structural_extension": true,
+    "R2_seed_found_in_current_parent": false,
+    "explicit_D_R2_is_exact_but_target_loaded": true,
+    "seed_origin_gate_closed": false
+  }
+}

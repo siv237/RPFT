@@ -1,0 +1,74 @@
+\chapter{Родитель объёмной плотности кривизны}
+\label{ch:v10-cell-birth-four-volume-curvature-density-parent}
+
+\section{Масштабирование кривизн}
+
+Для изотропной четырёхмерной ячейки положим
+\begin{equation}
+ v=\ell^4,
+ \qquad R=\frac{12}{\ell^2}.
+\end{equation}
+Тогда
+\begin{equation}
+ vR=12\ell^2,
+ \qquad vR^2=144.
+ \label{eq:v10-curvature-density-scaling}
+\end{equation}
+Член кривизны в квадрате строго безмасштабен в четырёх измерениях и не
+может сам выбрать $\ell$.
+
+\section{Условный масштаб из конкурирующих членов}
+
+Обозначим $q=\ell^2$. Минимальный ограниченный снизу родитель имеет вид
+\begin{equation}
+ \mathcal P_R(q)=Aq^2-Bq+\frac{B^2}{4A}
+ =A\left(q-\frac{B}{2A}\right)^2,
+ \qquad A,B>0.
+ \label{eq:v10-curvature-density-parent}
+\end{equation}
+Он условно выбирает
+\begin{equation}
+ q_*=\frac{B}{2A},
+ \qquad \mathcal P_R''=2A>0.
+ \label{eq:v10-curvature-density-selected-scale}
+\end{equation}
+Однако масштаб находится в отношении коэффициентов, а не возникает из
+безразмерной кривизны.
+
+Действительно, преобразование
+\begin{equation}
+ q\mapsto s^2q,
+ \qquad A\mapsto\frac{A}{s^4},
+ \qquad B\mapsto\frac{B}{s^2}
+ \label{eq:v10-curvature-coefficient-orbit}
+\end{equation}
+сохраняет родитель и переводит $q_*\mapsto s^2q_*$. Логарифмическая карта
+двух мономов имеет ранг $2$, ядро размерности $1$ с образующим
+$(-2,-1,1)^T$.
+
+\begin{theorem}[Условный масштаб кривизн]
+Конкуренция объёмного и эйнштейновского членов создаёт единственный
+положительный минимум при фиксированных $A,B$, тогда как член $vR^2$
+остаётся масштабно слепым.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет переноса масштаба в коэффициенты]
+Формула $\ell^2=B/(2A)$ не является физическим выводом длины, пока общий
+родитель не выводит размерные коэффициенты $A$ и $B$ либо хотя бы их
+размерное отношение. Совместное преобразование коэффициентов сохраняет
+одну точную масштабную орбиту.
+\end{nogocriterion}
+
+\begin{protocol}[Статус родителя плотности кривизны]\begin{enumerate}\raggedright
+\item геометрические тождества: \textbf{получены};
+\item безмасштабность $vR^2$: \textbf{доказана};
+\item ограниченный снизу условный родитель: \textbf{построен};
+\item архитектура: \textbf{$8/8$};
+\item условное происхождение: \textbf{$3/3$};
+\item происхождение коэффициентов кривизны: \textbf{$0/1$};
+\item абсолютный масштаб ячейки: \textbf{$0/1$};
+\item следующий гейт: \textbf{аудит происхождения коэффициентов кривизны}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_curvature_density_parent_origin_gate_results.json}.

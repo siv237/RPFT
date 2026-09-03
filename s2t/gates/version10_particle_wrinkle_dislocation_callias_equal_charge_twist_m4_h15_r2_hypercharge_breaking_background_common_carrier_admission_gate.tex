@@ -1,0 +1,94 @@
+\chapter{Общий носитель гиперзарядового breaking-background}
+\label{ch:v10-h15-r2-hypercharge-background-carrier}
+
+Аудит коэффициентов оставил один ближайший маршрут: единый spectral trace
+на фоне, нарушающем Pati--Salam до Стандартной модели. Наивная реализация
+двумя независимыми adjoint-полями не минимальна. Общий носитель уже имеется
+в constrained composite branch:
+\begin{equation}
+ \boxed{\Delta\sim(\mathbf2_R,\mathbf1_L,\mathbf4_4)}.
+\end{equation}
+
+В базисе трёх цветных компонент и одной лептонной компоненты четвёрки
+спектры $6T_R^3$ и $3(B-L)$ на восьми компонентах $\Delta$ равны
+\begin{align}
+ t_\Delta&=(3,3,3,-3,-3,-3,3,-3),\\
+ b_\Delta&=(1,1,1,1,1,1,-3,-3).
+\end{align}
+Их сумма даёт
+\begin{equation}
+ q_\Delta=6Y=(4,4,4,-2,-2,-2,0,-6).
+\end{equation}
+Нейтральное направление единственно. Его точный проектор есть
+\begin{equation}
+ P_0=-\frac{(Q_\Delta-4I)(Q_\Delta+2I)(Q_\Delta+6I)}{48},
+ \qquad \rank P_0=1.
+\end{equation}
+
+Вес нейтральной компоненты относительно двух Cartan-генераторов равен
+$(3,-3)$. Для генератора $\alpha(6T_R^3)+\beta,3(B-L)$ условие сохранения
+VEV имеет вид
+\begin{equation}
+ 3\alpha-3\beta=0.
+\end{equation}
+Его ядро одномерно и порождается $(1,1)$. Поэтому единственный неснятый
+Cartan-луч действует как
+\begin{equation}
+ \boxed{6Y=6T_R^3+3(B-L)}.
+\end{equation}
+Один $\Delta$-VEV тем самым заменяет пару независимо подобранных adjoint
+spurions и автоматически сохраняет $SU(2)_L$.
+
+На восьми SM-секторах $\Sigma$ два исходных вектора зарядов равны
+\begin{align}
+ t_\Sigma&=(3,-3,3,-3,3,-3,3,-3),\\
+ b_\Sigma&=(0,0,4,4,-4,-4,0,0).
+\end{align}
+Они независимы и ортогональны, с Gram-матрицей
+$\operatorname{diag}(72,64)$. Луч $(1,1)$ восстанавливает прежний спектр
+\begin{equation}
+ q_\Sigma=(3,-3,7,1,-1,-7,3,-3).
+\end{equation}
+Алгебра диагональных функций от $(T_R^3,B-L)$ имеет ранг $6$; алгебра
+полиномов от $Y$ также имеет ранг $6$, а их объединение ранга не повышает.
+Значит, на $\Sigma$ они задают одно и то же спектральное разложение и
+действительно содержат ранее найденный $R_2$-проектор и gap.
+
+Статус, однако, условный. В general fundamental scalar menu поля $\Delta$
+нет; оно появляется после composite first-order restriction. Минимальный
+composite spectral potential делает желаемый rank-one orbit седлом с шестью
+отрицательными модами. Ранее построенный irreducible relative mapping-cone
+parent исправляет $\Delta+C$-Hessian до сигнатуры $(43_+,9_0,0_-)$, но ещё
+не встроен в текущий Callias--$M_4$--$H_{15}$ parent Тома X.
+
+\begin{theorem}[Минимальный общий носитель гиперзаряда]
+Нейтральный rank-one луч поля
+$\Delta=(2_R,1_L,4_4)$ имеет единственный Cartan-стабилизатор
+$Y=T_R^3+(B-L)/2$. Его действие на $\Sigma$ порождает ту же шестимерную
+спектральную алгебру, что и совместное действие $T_R^3$ и $B-L$.
+Следовательно, отдельные adjoint-фоны для построения гиперзарядового gap не
+требуются.
+\end{theorem}
+
+\begin{nogocriterion}[Стабилизатор не равен vacuum-parent]
+Наличие нейтральной компоненты и правильной неподвижной подгруппы не
+доказывает существование устойчивого VEV. До типизированного вложения
+relative mapping-cone curvature в общий родитель нельзя переносить его
+положительный Hessian или фиксированный коэффициент в ветвь Тома X.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item размерность $\Delta$: \textbf{$8$ complex};
+\item нейтральных направлений: \textbf{$1$};
+\item stabilizer-kernel: \textbf{$\operatorname{span}(1,1)$};
+\item неснятый генератор: \textbf{$6Y=6T_R^3+3(B-L)$};
+\item ранг joint/hypercharge spectral algebra: \textbf{$6/6$};
+\item общий scalar carrier: \textbf{$\Delta$, условно допущен};
+\item general-fundamental/composite presence: \textbf{$0/1$};
+\item inherited Tome X background-map rank: \textbf{$0$};
+\item conditional/current origin: \textbf{$3/4$ и $2/4$};
+\item следующий гейт: \textbf{typed embedding $\Delta$ mapping-cone parent}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hypercharge_breaking_background_common_carrier_admission_gate_results.json}.

@@ -1,0 +1,80 @@
+{
+  "audit": {
+    "branches": 5,
+    "complete_passes": 0,
+    "criteria": 6,
+    "rank": 5
+  },
+  "date": "2026-09-02",
+  "exact_matching": {
+    "direct_required_beta_at_g_squared_3_over_8": "-64*pi^2/(3*log(42))",
+    "direct_required_g_squared_at_beta_2": "-4*pi^2/log(42)",
+    "required_mu_spec_over_Lambda43": "exp(-32*pi^2/3)/42",
+    "reverse_required_beta_at_g_squared_3_over_8": "64*pi^2/(3*log(42))",
+    "reverse_required_g_squared_at_beta_2": "4*pi^2/log(42)"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_k43_rg_boundary_matching_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_dimensional_transmutation_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "66946e7b37d9e70b7f92ecd454a2c158dd18a527efddf8a57f8e70b2300db7be",
+    "floating_point_values": 0,
+    "obligation_count": 28,
+    "obligations": [
+      "birth_tick_k43_rg_boundary_matching_00",
+      "birth_tick_k43_rg_boundary_matching_01",
+      "birth_tick_k43_rg_boundary_matching_02",
+      "birth_tick_k43_rg_boundary_matching_03",
+      "birth_tick_k43_rg_boundary_matching_04",
+      "birth_tick_k43_rg_boundary_matching_05",
+      "birth_tick_k43_rg_boundary_matching_06",
+      "birth_tick_k43_rg_boundary_matching_07",
+      "birth_tick_k43_rg_boundary_matching_08",
+      "birth_tick_k43_rg_boundary_matching_09",
+      "birth_tick_k43_rg_boundary_matching_10",
+      "birth_tick_k43_rg_boundary_matching_11",
+      "birth_tick_k43_rg_boundary_matching_12",
+      "birth_tick_k43_rg_boundary_matching_13",
+      "birth_tick_k43_rg_boundary_matching_14",
+      "birth_tick_k43_rg_boundary_matching_15",
+      "birth_tick_k43_rg_boundary_matching_16",
+      "birth_tick_k43_rg_boundary_matching_17",
+      "birth_tick_k43_rg_boundary_matching_18",
+      "birth_tick_k43_rg_boundary_matching_19",
+      "birth_tick_k43_rg_boundary_matching_20",
+      "birth_tick_k43_rg_boundary_matching_21",
+      "birth_tick_k43_rg_boundary_matching_22",
+      "birth_tick_k43_rg_boundary_matching_23",
+      "birth_tick_k43_rg_boundary_matching_24",
+      "birth_tick_k43_rg_boundary_matching_25",
+      "birth_tick_k43_rg_boundary_matching_26",
+      "birth_tick_k43_rg_boundary_matching_27"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_audit": {
+    "after_c_anchor_rank_nullity": "3/1",
+    "after_independent_Lambda43_anchor": "4/0",
+    "residual_kernel_after_c": [
+      -1,
+      0,
+      1,
+      1
+    ],
+    "unanchored_rank_nullity": "2/2"
+  },
+  "status": {
+    "absolute_birth_tick_origin": "0/1",
+    "conditional_architecture": "8/8",
+    "matching_branches": "0/5",
+    "physical_origin": "0/5"
+  },
+  "verdict": {
+    "a_conditional_relative_scale_bridge_exists": true,
+    "absolute_birth_tick_is_derived": false,
+    "direct_matching_preserves_positive_inherited_parameters": false,
+    "reverse_matching_preserves_inherited_rg_data": false,
+    "the_required_bridge_has_an_internal_origin": false
+  }
+}

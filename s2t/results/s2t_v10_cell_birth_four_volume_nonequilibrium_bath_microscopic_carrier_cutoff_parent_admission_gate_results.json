@@ -1,0 +1,139 @@
+{
+  "cutoffs": {
+    "K43_spectral_cutoff_times_length": 42,
+    "brillouin_momentum_times_length": "pi",
+    "corner_frequency_times_length_over_velocity": "2*sqrt(3)",
+    "spectral_energy_to_corner_frequency_ratio_if_vg_eq_c": "7*sqrt(3)",
+    "spectral_to_brillouin_ratio": "42/pi",
+    "uv_correlation_time_times_frequency": 1
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_microscopic_carrier_cutoff_parent_admission_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_correlation_time_parent_origin_gate",
+  "parent": {
+    "coordinates": [
+      "k_BZ ell_cell",
+      "omega_UV ell_cell/v_g",
+      "Lambda_43 ell_cell"
+    ],
+    "determinant": 1,
+    "hessian": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "minimum": [
+      "pi",
+      "2*sqrt(3)",
+      42
+    ],
+    "rank": 3
+  },
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_continuum_dispersion_cell_geometry_typed_embedding_gate",
+  "proofdsl": {
+    "certificate_sha256": "b9714dd9788c61089588157a8a7c718568dadef58f1455a45dfd28e0c4585426",
+    "floating_point_values": 0,
+    "obligation_count": 23,
+    "obligations": [
+      "microscopic_cutoff_00",
+      "microscopic_cutoff_01",
+      "microscopic_cutoff_02",
+      "microscopic_cutoff_03",
+      "microscopic_cutoff_04",
+      "microscopic_cutoff_05",
+      "microscopic_cutoff_06",
+      "microscopic_cutoff_07",
+      "microscopic_cutoff_08",
+      "microscopic_cutoff_09",
+      "microscopic_cutoff_10",
+      "microscopic_cutoff_11",
+      "microscopic_cutoff_12",
+      "microscopic_cutoff_13",
+      "microscopic_cutoff_14",
+      "microscopic_cutoff_15",
+      "microscopic_cutoff_16",
+      "microscopic_cutoff_17",
+      "microscopic_cutoff_18",
+      "microscopic_cutoff_19",
+      "microscopic_cutoff_20",
+      "microscopic_cutoff_21",
+      "microscopic_cutoff_22"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_audit": {
+    "after_velocity_anchor": "4/1",
+    "after_velocity_and_length_anchors": "5/0",
+    "kernel": [
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "map": [
+      [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "rank_nullity": "3/2"
+  },
+  "status": {
+    "absolute_cutoff_origin": "0/1",
+    "conditional_parent_admission": "9/9",
+    "dimensionless_cutoff_bridge": "3/3",
+    "microscopic_carrier_origin": "0/1"
+  },
+  "verdict": {
+    "common_dimensionless_cutoff_parent_exists": true,
+    "cutoff_parent_derives_absolute_uv_scale": false,
+    "four_volume_derives_microscopic_carrier": false,
+    "operator_norm_selects_conditional_lattice_cutoff": true
+  }
+}

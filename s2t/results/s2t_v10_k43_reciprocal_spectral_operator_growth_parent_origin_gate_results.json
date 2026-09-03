@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_k43_reciprocal_spectral_operator_growth_parent_origin_gate",
+  "growth_grading": {
+    "definition": "Q_X=P_0-P_Y",
+    "orientation_scores": [
+      2,
+      -2
+    ],
+    "rank": 2,
+    "reciprocal_constraint_nullity": 1,
+    "spectrum": {
+      "-1": 1,
+      "0": 41,
+      "1": 1
+    },
+    "square": "P_0+P_Y",
+    "trace": 0
+  },
+  "local_jet_audit": {
+    "hessian_determinant": 1,
+    "hessian_rank": 4,
+    "minimum": 0,
+    "stationary_point": [
+      1,
+      1,
+      -1,
+      1
+    ],
+    "variables": [
+      "r_Y",
+      "r_0",
+      "v_Y",
+      "v_0"
+    ]
+  },
+  "next_gate": "version10_cell_birth_normalized_transition_measure_growth_rate_origin_gate",
+  "path_parent": {
+    "bounded_below": true,
+    "closed_form": "I43+(exp(-zeta)-1)P_Y+(exp(zeta)-1)P_0",
+    "determinant": "1",
+    "functional": "1/2||K(0)-I43||_HS^2+1/2 integral ||K'-{Q_X,K}/2||_HS^2 dzeta",
+    "unique_zero_path": "K_X(zeta)=exp(zeta Q_X)",
+    "zero_equations": [
+      "K(0)=I43",
+      "K'={Q_X,K}/2"
+    ]
+  },
+  "predecessor": "version10_inflow_spectral_self_energy_k43_typed_embedding_gate",
+  "proofdsl": {
+    "certificate_sha256": "fc0ce1d1a97097c7f9d752d81a998b8706a928cf174a288cfeafa4a50e92c47c",
+    "floating_point_values": 0,
+    "obligation_count": 19,
+    "obligations": [
+      "growth_grading_traceless",
+      "growth_grading_square_support",
+      "growth_grading_rank_two",
+      "growth_grading_reciprocal_spectrum",
+      "reciprocal_generator_constraint_nullity_one",
+      "growth_arrow_selects_grading_sign",
+      "isotropic_initial_operator",
+      "covariant_growth_flow_equation",
+      "determinant_preserving_spectral_flow",
+      "reciprocal_reservoir_compression",
+      "parent_selected_incoming_self_energy",
+      "parent_selected_unit_geometric_beta",
+      "normalized_initial_jet_stationary",
+      "growth_parent_jet_hessian_rank_four",
+      "growth_parent_jet_hessian_determinant",
+      "growth_parent_zero_minimum",
+      "growth_parent_architecture_full",
+      "spectral_law_origin_full",
+      "physical_scale_origin_open"
+    ],
+    "status": "lcf-checked"
+  },
+  "selected_spectral_response": {
+    "compression": "diag(exp(-zeta),exp(zeta))",
+    "incoming_beta": "Sigma_Y",
+    "incoming_self_energy": "exp(zeta)"
+  },
+  "status": {
+    "absolute_scale": "0/1",
+    "growth_parent_architecture": "9/9",
+    "normalized_cell_birth_measure": "0/1",
+    "physical_time_energy_calibration": "0/1",
+    "structural_spectral_law_origin": "4/4"
+  },
+  "verdict": {
+    "cell_birth_probability_derived": false,
+    "dimensionless_spectral_running_derived": true,
+    "physical_second_or_energy_derived": false,
+    "reciprocal_curve_inserted_as_target": false,
+    "reciprocal_curve_selected_by_parent": true
+  }
+}

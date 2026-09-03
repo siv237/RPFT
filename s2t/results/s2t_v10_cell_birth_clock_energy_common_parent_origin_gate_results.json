@@ -1,0 +1,110 @@
+{
+  "absolute_scale_boundary": {
+    "absolute_growth_rate_selected": false,
+    "clock_energy_selected": false,
+    "proposed_target": "h_vac=x/sqrt(8*pi)",
+    "required_clock_frequency": "Omega_req=3*x/(sqrt(8*pi)*log((1+2*x)/(1+x)))",
+    "scale_orbit": "(E_C,t)->(c*E_C,t/c)",
+    "scale_orbit_nullity": 1
+  },
+  "birth_clock_carrier": {
+    "bare_hamiltonian": "N_B tensor I + I tensor N_C",
+    "bare_spectrum": {
+      "0": 1,
+      "1": 2,
+      "2": 1
+    },
+    "dimension": 4,
+    "energy_commutator": "[H_0,G_B]=0",
+    "exchange_rank": 2,
+    "exchange_spectrum": {
+      "-1": 1,
+      "0": 2,
+      "1": 1
+    },
+    "resonant_pair": [
+      "|N,1_C>",
+      "|N+1,0_C>"
+    ]
+  },
+  "common_parent": {
+    "functional": "P_BC=((u-k_X)^2+(rho-u)^2)/2",
+    "hessian": [
+      [
+        2,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "hessian_determinant": 1,
+    "hessian_rank": 2,
+    "hessian_spectrum": [
+      "(3-sqrt(5))/2",
+      "(3+sqrt(5))/2"
+    ],
+    "unique_zero": "u=rho=k_X",
+    "variables": [
+      "u=chi^2",
+      "rho=Gamma_B/Omega"
+    ]
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_clock_energy_common_parent_origin_gate",
+  "next_gate": "version10_cell_birth_clock_energy_geometric_anchor_candidate_audit_gate",
+  "normalized_growth_input": {
+    "growth_coupling": "k_X=log((1+2*x)/(1+x))=3*Delta_zeta",
+    "positive_for_x": "x>0",
+    "x": "exp(-S_vac)"
+  },
+  "predecessor": "version10_cell_birth_normalized_transition_measure_growth_rate_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "4e7655d8a040326662a14def1da18e1e77ec644198f77966a64b27866164b212",
+    "floating_point_values": 0,
+    "obligation_count": 19,
+    "obligations": [
+      "birth_clock_bare_spectrum",
+      "resonant_exchange_energy_conservation",
+      "resonant_exchange_rank_two",
+      "resonant_exchange_spectrum",
+      "growth_coupling_three_delta_zeta",
+      "growth_coupling_positive",
+      "common_parent_stationary_point",
+      "common_parent_hessian",
+      "common_parent_hessian_rank_two",
+      "common_parent_hessian_determinant_one",
+      "common_parent_positive_spectrum",
+      "clock_energy_rate_calibration",
+      "physical_growth_rate",
+      "clock_blind_relative_growth",
+      "energy_time_scale_invariance",
+      "absolute_scale_orbit_nullity_one",
+      "vacuum_target_required_frequency",
+      "common_parent_architecture_full",
+      "relative_origin_full"
+    ],
+    "status": "lcf-checked"
+  },
+  "relative_physical_calibration": {
+    "birth_rate": "Gamma_B=k_X*E_C/hbar",
+    "clock_frequency": "Omega=E_C/hbar",
+    "growth_rate": "H_B=Gamma_B/3=Delta_zeta*E_C/hbar",
+    "relative_growth": "H_B/Omega=Delta_zeta"
+  },
+  "status": {
+    "clock_energy_and_absolute_growth": "0/2",
+    "common_parent_architecture": "9/9",
+    "physical_cosmological_constant": "0/1",
+    "relative_origin": "3/3"
+  },
+  "verdict": {
+    "absolute_cosmological_rate_derived": false,
+    "clock_blind_growth_ratio_derived": true,
+    "common_relative_parent_constructed": true,
+    "energy_conserving_birth_clock_exchange_constructed": true,
+    "physical_clock_energy_derived": false
+  }
+}

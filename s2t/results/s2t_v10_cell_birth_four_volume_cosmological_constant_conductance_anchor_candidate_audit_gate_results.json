@@ -1,0 +1,159 @@
+{
+  "candidate_matrix": [
+    [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      0,
+      0
+    ]
+  ],
+  "candidate_matrix_rank": 5,
+  "candidate_scores": [
+    3,
+    4,
+    3,
+    3,
+    4,
+    4,
+    3
+  ],
+  "candidates": [
+    "growth_cosmological_constant",
+    "intrinsic_cell_curvature",
+    "spectral_cutoff_curvature",
+    "throughflow_induced_curvature",
+    "observed_cosmological_constant",
+    "planck_vacuum_density_curvature",
+    "topological_density_curvature"
+  ],
+  "criteria": [
+    "correct_curvature_dimension",
+    "internally_available",
+    "independent_of_rate_scale",
+    "typed_map_to_conductance",
+    "breaks_rate_orbit",
+    "common_parent_provenance"
+  ],
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_cosmological_constant_conductance_anchor_candidate_audit_gate",
+  "growth_cosmological_relation": {
+    "attempted_conductance_recovery": "c*sqrt(3*Lambda_growth)=kappa",
+    "cosmological_constant": "Lambda_growth=kappa^2/(3*c^2)",
+    "curvature_radius_product": "kappa*ell_Lambda=3*c",
+    "growth_rate": "H_B=kappa/3",
+    "independent_anchor": false
+  },
+  "internal_orbit_breakers": 0,
+  "maximum_score": "4/6",
+  "next_gate": "version10_cell_birth_four_volume_cosmological_constant_throughflow_parent_origin_gate",
+  "passing_candidates": 0,
+  "predecessor": "version10_cell_birth_four_volume_hopf_cycle_conductance_common_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "3fc1d7b9cab2e6660f70f1b96028058713df03d94390e4c4a0efa10e04624fe7",
+    "floating_point_values": 0,
+    "obligation_count": 17,
+    "obligations": [
+      "cosmological_anchor_candidate_matrix",
+      "cosmological_anchor_zero_passes",
+      "cosmological_anchor_maximum_score_four",
+      "cosmological_anchor_matrix_rank_five",
+      "cosmological_anchor_no_internal_breaker",
+      "hubble_conductance_relation",
+      "growth_lambda_conductance_relation",
+      "growth_lambda_reconstruction_tautology",
+      "curvature_radius_conductance_product",
+      "cosmological_relative_map_rank_four",
+      "cosmological_relative_map_nullity_one",
+      "cosmological_scale_kernel",
+      "independent_lambda_removes_orbit",
+      "cosmological_anchor_audit_coverage",
+      "cosmological_anchor_origin_zero",
+      "cosmological_physical_ledger_zero",
+      "cosmological_physical_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_audit": {
+    "rank_with_independently_fixed_Lambda": 5,
+    "relative_map_nullity": 1,
+    "relative_map_rank": 4,
+    "scale_vector": [
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "variables": [
+      "kappa",
+      "Gamma_B",
+      "Omega",
+      "H_B",
+      "Lambda"
+    ]
+  },
+  "status": {
+    "absolute_conductance": "0/1",
+    "candidate_audit_coverage": "7/7",
+    "candidate_origin": "0/7",
+    "conditional_external_Lambda_anchor": "1/1",
+    "physical_cosmological_origin": "0/1"
+  },
+  "verdict": {
+    "current_project_derives_independent_physical_Lambda": false,
+    "growth_Lambda_independently_selects_conductance": false,
+    "growth_Lambda_is_compatible_with_conductance": true,
+    "independently_derived_Lambda_would_select_conductance": true
+  }
+}

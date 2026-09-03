@@ -1,0 +1,106 @@
+{
+  "best_candidate": {
+    "missing_criterion": "inherited_and_not_target_loaded",
+    "mixed_hessian_rank_nullity": "2/2",
+    "name": "target_loaded_coupling_parent",
+    "score": "5/6"
+  },
+  "candidate_matrix_rank": 6,
+  "candidate_scores": [
+    3,
+    4,
+    4,
+    3,
+    4,
+    2,
+    3,
+    4,
+    3,
+    5
+  ],
+  "candidates": [
+    "inherited_zero_mixed_block",
+    "spectral_projector_matching",
+    "basis_identity",
+    "relative_sign_intertwiner",
+    "KMS_modular_swap",
+    "Hopf_incidence_restriction",
+    "modular_conjugation",
+    "bath_current_covariance",
+    "minimal_portal_Pauli_block",
+    "target_loaded_coupling_parent"
+  ],
+  "closed_routes": {
+    "inherited_parent_mixed_block": "zero",
+    "orientation_equation_fixes_off_diagonal_entries_only": true,
+    "spectral_projectors_fix_level_matching_but_not_phases": true
+  },
+  "criteria": [
+    "correct_Hom_type",
+    "inherited_and_not_target_loaded",
+    "nonzero_map",
+    "orientation_compatible",
+    "phase_and_coefficient_selected",
+    "appears_as_parent_mixed_block"
+  ],
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_intertwiner_candidate_audit_gate",
+  "inherited_pass_count": 0,
+  "intertwiner_space": {
+    "constraint_rank_nullity": "2/2",
+    "full_intertwiner_unique": false,
+    "kernel": "all_diagonal_2x2_maps",
+    "permutation_assignment_unique": true,
+    "real_orthogonal_phase_choices": 4
+  },
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_intertwiner_common_carrier_admission_gate",
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_path_length_reservoir_coupling_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "01e866a09da6f24ca33bc93ebc23d4f6758995a314e90c2a12ecd84c98dfb53c",
+    "floating_point_values": 0,
+    "obligation_count": 24,
+    "obligations": [
+      "hopf_reservoir_intertwiner_audit_00",
+      "hopf_reservoir_intertwiner_audit_01",
+      "hopf_reservoir_intertwiner_audit_02",
+      "hopf_reservoir_intertwiner_audit_03",
+      "hopf_reservoir_intertwiner_audit_04",
+      "hopf_reservoir_intertwiner_audit_05",
+      "hopf_reservoir_intertwiner_audit_06",
+      "hopf_reservoir_intertwiner_audit_07",
+      "hopf_reservoir_intertwiner_audit_08",
+      "hopf_reservoir_intertwiner_audit_09",
+      "hopf_reservoir_intertwiner_audit_10",
+      "hopf_reservoir_intertwiner_audit_11",
+      "hopf_reservoir_intertwiner_audit_12",
+      "hopf_reservoir_intertwiner_audit_13",
+      "hopf_reservoir_intertwiner_audit_14",
+      "hopf_reservoir_intertwiner_audit_15",
+      "hopf_reservoir_intertwiner_audit_16",
+      "hopf_reservoir_intertwiner_audit_17",
+      "hopf_reservoir_intertwiner_audit_18",
+      "hopf_reservoir_intertwiner_audit_19",
+      "hopf_reservoir_intertwiner_audit_20",
+      "hopf_reservoir_intertwiner_audit_21",
+      "hopf_reservoir_intertwiner_audit_22",
+      "hopf_reservoir_intertwiner_audit_23"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "audit_coverage": "10/10",
+    "criterion_rank": "6/6",
+    "intertwiner_phase_origin": "0/1",
+    "mixed_parent_block_origin": "0/1",
+    "origin_ledger": "3/6",
+    "physical_temperature_origin": "0/1",
+    "strict_candidate_pass": "0/10"
+  },
+  "strict_pass_count": 0,
+  "verdict": {
+    "existing_candidate_generates_physical_mixed_parent": false,
+    "orientation_selects_unique_intertwiner": false,
+    "orientation_selects_unique_permutation": true
+  }
+}

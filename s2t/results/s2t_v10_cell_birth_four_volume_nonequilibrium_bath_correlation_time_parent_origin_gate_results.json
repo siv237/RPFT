@@ -1,0 +1,113 @@
+{
+  "conditional_exponential_parent": {
+    "determinant": 1,
+    "hessian": [
+      [
+        1
+      ]
+    ],
+    "minimum": 1
+  },
+  "correlation_profiles": {
+    "exponential": {
+      "C_of_x": "exp(-x)",
+      "slope_at_zero": "-1",
+      "tau_corr_times_omega_UV": "1"
+    },
+    "gaussian": {
+      "C_of_x": "exp(-x^2)",
+      "slope_at_zero": "0",
+      "tau_corr_times_omega_UV": "sqrt(pi)/2"
+    },
+    "mixture": {
+      "C_of_x": "a exp(-x)+(1-a) exp(-x^2)",
+      "free_shape_parameter": true,
+      "slope_at_zero": "-a",
+      "tau_corr_times_omega_UV": "a+(1-a)sqrt(pi)/2"
+    }
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_correlation_time_parent_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_spectral_density_memory_scale_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_microscopic_carrier_cutoff_parent_admission_gate",
+  "proofdsl": {
+    "certificate_sha256": "344691816de466956a5840e484a148604e508ec3bc3317d464fa47504d2d4c0f",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "obligations": [
+      "bath_correlation_time_00",
+      "bath_correlation_time_01",
+      "bath_correlation_time_02",
+      "bath_correlation_time_03",
+      "bath_correlation_time_04",
+      "bath_correlation_time_05",
+      "bath_correlation_time_06",
+      "bath_correlation_time_07",
+      "bath_correlation_time_08",
+      "bath_correlation_time_09",
+      "bath_correlation_time_10",
+      "bath_correlation_time_11",
+      "bath_correlation_time_12",
+      "bath_correlation_time_13",
+      "bath_correlation_time_14",
+      "bath_correlation_time_15",
+      "bath_correlation_time_16",
+      "bath_correlation_time_17",
+      "bath_correlation_time_18",
+      "bath_correlation_time_19",
+      "bath_correlation_time_20",
+      "bath_correlation_time_21"
+    ],
+    "status": "lcf-checked"
+  },
+  "scale_audit": {
+    "after_velocity_anchor": "3/1",
+    "after_velocity_and_length_anchors": "4/0",
+    "kernel": [
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "map": [
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        -1
+      ]
+    ],
+    "rank_nullity": "2/2"
+  },
+  "status": {
+    "absolute_correlation_time_origin": "0/1",
+    "conditional_time_architecture": "8/8",
+    "profile_nonuniqueness_witness": "3/3",
+    "spectral_shape_origin": "0/1"
+  },
+  "verdict": {
+    "absolute_time_is_derived": false,
+    "cutoff_uniquely_selects_bath_correlation_time": false,
+    "inverse_cutoff_supplies_a_time_unit": true,
+    "spectral_profile_is_required": true
+  }
+}

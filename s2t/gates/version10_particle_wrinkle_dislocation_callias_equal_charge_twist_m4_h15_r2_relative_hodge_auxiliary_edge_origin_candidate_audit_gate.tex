@@ -1,0 +1,50 @@
+\chapter{Аудит происхождения relative-Hodge auxiliary edge}
+\label{ch:v10-h15-r2-relative-hodge-auxiliary-edge-origin-audit}
+
+Требуется независимая восьмимерная бозонная копия $A_\Sigma$ с теми же
+весами, Real-структурой и odd grading, что у $\Sigma$. Простое повторное
+использование физического поля не работает: диагональное вложение
+$v\mapsto(v,v)$ имеет rank $8$, но relative projector
+\begin{equation}
+ P_{\rm rel}=\frac12\begin{pmatrix}I&-I\\-I&I\end{pmatrix}
+\end{equation}
+уничтожает его целиком. Независимое вложение $v\mapsto(0,v)$, напротив,
+имеет relative-image rank $8$.
+
+Двенадцать источников проверены по шести критериям: exact weights,
+independent bosonic coordinate, odd grading, Real/Hodge edge, positive
+metric и inherited origin. Матрица имеет rank $6$, проходов нет.
+Fixed-point curvature проваливает веса; cotangent/BV и Nambu routes имеют
+неподходящую метрику или статистику; KO6 conjugate меняет ориентацию весов;
+Callias и HS остаются условными копиями.
+
+Superconnection suspension и mapping-cone cylinder получают $5/6$: они
+канонически создают вторую graded-копию, положительную Hodge metric и edge,
+но соответствующий suspension/cylinder отсутствует в текущем parent.
+
+\begin{theorem}[Независимость auxiliary-копии обязательна]
+Relative projector точно уничтожает любое диагональное переиспользование
+$\Sigma$. Из двенадцати кандидатов ни один не проходит inherited origin;
+ближайшие пути --- superconnection suspension и mapping-cone cylinder,
+оба с оценкой $5/6$.
+\end{theorem}
+
+\begin{nogocriterion}[Поле нельзя считать двумя независимыми координатами]
+Нельзя объявлять одну и ту же $\Sigma$ одновременно physical и auxiliary:
+такое вложение лежит в kernel relative Hodge projector и не создаёт
+устраняемой relative-моды.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item diagonal reuse rank: \textbf{$8$};
+\item его relative-image rank: \textbf{$0$};
+\item independent-copy relative rank: \textbf{$8$};
+\item inherited fixed-point embedding rank: \textbf{$0$};
+\item audit rank: \textbf{$6$};
+\item прошедших кандидатов: \textbf{$0/12$};
+\item лучшие кандидаты: \textbf{suspension/cylinder, $5/6$};
+\item следующий гейт: \textbf{parent-origin superconnection suspension}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_hodge_auxiliary_edge_origin_candidate_audit_gate_results.json}.

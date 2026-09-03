@@ -1,0 +1,76 @@
+\chapter{Родитель размерностной трансмутации такта рождения}
+\label{ch:v10-nonequilibrium-bath-birth-tick-dimensional-transmutation}
+
+Проверим самый сильный внутренний кандидат предыдущего аудита. Унаследованные
+данные относительного $U(1)$-сектора имеют вид
+\begin{equation}
+ b=2,\qquad g^2(\mu_{\rm spec})=\frac38,
+ \qquad
+ \log\frac{\Lambda_L}{\mu_{\rm spec}}=\frac{32\pi^2}{3}.
+\end{equation}
+Если частоту рождения условно отождествить с ландауовской частотой,
+\begin{equation}
+ \omega_{\rm DT}=c\Lambda_L
+ =c\mu_{\rm spec}\exp\!\left(\frac{32\pi^2}{3}\right),
+\end{equation}
+то получается относительный такт
+\begin{equation}
+ \tau_{\rm DT}=\frac1{\omega_{\rm DT}}
+ =\frac{\exp(-32\pi^2/3)}{c\mu_{\rm spec}}.
+\end{equation}
+Трансмутация действительно создаёт размерный объект из безразмерной связи,
+но не создаёт исходную размерную единицу: при
+$\mu_{\rm spec}\mapsto\mu_{\rm spec}/s$ имеем
+$\tau_{\rm DT}\mapsto s\tau_{\rm DT}$.
+
+В нормированных логарифмических невязках существует строгий общий родитель
+\begin{equation}
+ \mathcal P_{\rm DT}=\frac12\left[
+ \left(x_{\rm RG}-\frac{32\pi^2}{3}\right)^2
+ +x_{\rm tick}^2+x_{\rm transit}^2\right],
+ \qquad \nabla^2\mathcal P_{\rm DT}=I_3.
+\end{equation}
+Он условно связывает RG-отношение, $\tau_{\rm birth}\omega_{\rm DT}=1$ и
+$\ell_{\rm edge}=c\tau_{\rm birth}$. Однако размерная карта имеет
+ранг/ядро $3/2$, после фиксации $c$ --- $4/1$, и лишь независимый якорь
+$\mu_{\rm spec}$ даёт $5/0$.
+
+Более того, наивная типизация $\mu_{\rm spec}=\Lambda_{43}$ противоречит
+уже закрытой геометрической связи. Трансмутация требует
+\begin{equation}
+ \tau_{\rm birth}c\Lambda_{43}=\exp\!\left(-\frac{32\pi^2}{3}\right),
+\end{equation}
+тогда как K43-ветвь даёт точно
+\begin{equation}
+ \tau_{\rm birth}c\Lambda_{43}=42.
+\end{equation}
+Их отношение равно $42\exp(32\pi^2/3)\ne1$.
+
+\begin{theorem}[Относительная, но не абсолютная трансмутация такта]
+Унаследованная RG-пара $(b,g^2)=(2,3/8)$ однозначно задаёт отношение
+$\tau_{\rm DT}c\mu_{\rm spec}=\exp(-32\pi^2/3)$, но сохраняет одну
+масштабную моду после фиксации $c$. Поэтому абсолютный такт рождения из неё
+не следует.
+\end{theorem}
+
+\begin{nogocriterion}[Нельзя одновременно отождествить $\mu_{\rm spec}$ с K43-обрезанием]
+Без нового граничного условия равенства
+$\tau c\mu_{\rm spec}=\exp(-32\pi^2/3)$ и
+$\tau c\Lambda_{43}=42$ несовместимы при
+$\mu_{\rm spec}=\Lambda_{43}$. Такое отождествление не является физической
+типизацией; оно создаёт точное противоречие.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item условная архитектура: \textbf{$9/9$};
+\item унаследованные RG-данные: \textbf{$2/2$};
+\item типизация RG-связи в носитель ванны: \textbf{$0/1$};
+\item размерная карта после фиксации $c$: \textbf{ранг/ядро $4/1$};
+\item совместимость наивного отождествления с K43: \textbf{$0/1$};
+\item физическое происхождение пакета: \textbf{$0/4$};
+\item происхождение абсолютного такта: \textbf{$0/1$};
+\item следующий гейт: \textbf{K43--RG согласование граничного условия}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_dimensional_transmutation_parent_origin_gate_results.json}.

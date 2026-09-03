@@ -1,0 +1,83 @@
+\chapter{Допуск обобщённого первопорядкового родителя
+\texorpdfstring{$R_2$}{R2} на \texorpdfstring{$H_{15}$}{H15}}
+\label{ch:v10-h15-r2-generalized-first-order-parent}
+
+Предыдущий аудит выделил минимальную типизированную пару
+\begin{equation}
+ D_{R_2}:\qquad L_L-u_R,\quad Q_L-e_R,
+\end{equation}
+но строгий первый порядок запретил оба блока. Проверим, может ли обобщённая
+внутренняя флуктуация породить эту пару из стандартного оператора
+$D_{\rm adm}$, поддержанного на $Q_L-u_R$, $Q_L-d_R$, $L_L-e_R$.
+
+Без условия первого порядка ковариантная флуктуация имеет вид
+\begin{equation}
+ D_A=D+A_{(1)}+\widetilde A_{(1)}+A_{(2)},\qquad
+ A_{(2)}=\sum_j\widehat a_j[A_{(1)},\widehat b_j].
+\end{equation}
+Возьмём центральные знаковые унитарии, различающие две бимодульные
+координаты,
+\begin{equation}
+ L=\operatorname{diag}(1,1,-1,-1,-1),\qquad
+ R=\operatorname{diag}(1,-1,1,1,-1).
+\end{equation}
+Для $U=LR$ точное разложение $UDU^*=D+A_{(1)}+\widetilde
+A_{(1)}+A_{(2)}$ даёт
+\begin{equation}
+ A_{(2)}[D_{\rm adm}]=0.
+\end{equation}
+Это не особенность выбранных знаков: умножение на представленные элементы
+алгебры и взятие коммутаторов не создают матричный блок там, где исходный
+$D$ имел нулевую опору.
+
+Положительный контроль начинается с заранее вставленного $D_{R_2}$. Для
+него двойной коммутатор имеет ранг $4$, а выбранная флуктуация даёт
+\begin{equation}
+ A_{(1)}[D_{R_2}]=-2D_{R_2},\qquad
+ \widetilde A_{(1)}[D_{R_2}]=-2D_{R_2},\qquad
+ A_{(2)}[D_{R_2}]=4D_{R_2}.
+\end{equation}
+Следовательно, при $D=D_{\rm adm}+\varepsilon D_{R_2}$ квадратичный ответ
+равен $4\varepsilon D_{R_2}$: его опора и амплитуда наследуются от seed,
+а не возникают самостоятельно.
+
+Графовое следствие непосредственно затрагивает равномерный усилитель.
+Без seed лапласиан сохраняет ранг/ядро $3/2$, то есть независимые кварковую
+и лептонную амплитуды. После условной вставки двух $R_2$-рёбер получаем
+$4/1$, но inherited seed имеет ранг $0$.
+
+\begin{theorem}[Сохранение опоры обобщённой флуктуацией]
+На фиксированном представлении $H_{15}$ линейные и квадратичная внутренние
+флуктуации не создают отсутствующий кварк--лептонный блок. Для стандартного
+первопорядкового seed имеем $A_{(2)}=0$; ненулевой $R_2$-ответ
+пропорционален предварительно вставленному $D_{R_2}$.
+\end{theorem}
+
+\begin{nogocriterion}[Круговой $R_2$-родитель]
+Калибровочная ковариантность формулы без первого порядка не является
+происхождением нового Dirac-блока. Если $R_2$ присутствует только как seed
+исходного $D$, обобщённая флуктуация одевает уже постулированный сектор и не
+выводит ни его наличие, ни coupling, ни нормировку uniform amplifier.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item обобщённое ковариантное разложение: \textbf{точно выполнено};
+\item $A_{(2)}$ на стандартной опоре: \textbf{$0$};
+\item ядро графа без $R_2$: \textbf{$2$};
+\item $R_2$-seed активирует $A_{(2)}$: \textbf{да, $4D_{R_2}$};
+\item опора $A_{(2)}$ шире опоры seed: \textbf{нет};
+\item условное ядро после seed: \textbf{$1$};
+\item inherited $R_2$ seed: \textbf{$0/2$};
+\item physical origin: \textbf{$0/3$};
+\item следующий гейт: \textbf{аудит происхождения конечного $R_2$-seed}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_generalized_first_order_parent_admission_gate_results.json}.
+
+\begin{thebibliography}{9}\raggedright
+\bibitem{v10r2-generalized}
+A.~H.~Chamseddine, A.~Connes, W.~D.~van Suijlekom,
+\emph{Inner Fluctuations in Noncommutative Geometry without the First Order Condition},
+Journal of Geometry and Physics 73 (2013), 222--234; arXiv:1304.7583.
+\end{thebibliography}

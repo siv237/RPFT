@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_hopf_cycle_k43_kms_product_embedding_gate",
+  "next_gate": "version10_cell_birth_four_volume_hopf_cycle_conductance_common_parent_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_hopf_cycle_k43_typed_embedding_gate",
+  "product_carrier": {
+    "KMS_dimension": 6,
+    "cell_dimension": 43,
+    "cycle_vertices": [
+      "vacuum_x_source",
+      "hypercharge_x_source",
+      "vacuum_x_singlet"
+    ],
+    "embedding_isometry": true,
+    "product_dimension": 258,
+    "projector_rank": 3
+  },
+  "proofdsl": {
+    "certificate_sha256": "f27e8a096957b2ebc799a0623461bd9999c4387deee9ff299ba74d51e0266e8c",
+    "floating_point_values": 0,
+    "obligation_count": 21,
+    "obligations": [
+      "k43_kms_product_dimension_258",
+      "product_cycle_embedding_isometry",
+      "product_cycle_projector_rank_three",
+      "product_cycle_hypercharge_typing",
+      "product_cycle_kms_singlet_typing",
+      "product_cycle_compression",
+      "product_cycle_rank_two",
+      "product_cycle_probability_conservation",
+      "product_cycle_markov_offdiagonal",
+      "product_stationary_state_normalized",
+      "product_stationary_state_exact",
+      "product_cycle_edge_current",
+      "product_cycle_affinity",
+      "product_cycle_entropy_production",
+      "product_rate_clock_rank_two",
+      "product_rate_clock_nullity_one",
+      "product_rate_clock_kernel",
+      "product_cycle_architecture_full",
+      "product_cycle_origin_ledger_five",
+      "product_cycle_origin_score_five",
+      "product_cycle_physical_origin_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "remaining_scale_orbit": {
+    "absolute_rate_derived": false,
+    "map_nullity": 1,
+    "map_rank": 2,
+    "transformation": "kappa->c*kappa, t->t/c"
+  },
+  "status": {
+    "absolute_conductance": "0/1",
+    "architecture": "10/10",
+    "canonical_Markov_embedding": "1/1",
+    "common_parent_origin": "0/1",
+    "typed_origin": "5/7"
+  },
+  "throughflow": {
+    "cycle_affinity": "3*log(2)",
+    "edge_current": "kappa/3",
+    "entropy_production": "kappa*log(2)"
+  },
+  "typed_cycle": {
+    "KMS_singlet_compression": [
+      0,
+      0,
+      1
+    ],
+    "compressed_cycle_exact": true,
+    "hypercharge_compression": [
+      0,
+      1,
+      0
+    ],
+    "negative_offdiagonal_rates": 0,
+    "probability_conserving": true,
+    "product_generator_rank": 2,
+    "stationary_state_normalized": true
+  },
+  "verdict": {
+    "K43_KMS_product_supplies_canonical_cycle_vertices": true,
+    "canonical_product_cycle_is_Markov_positive": true,
+    "product_embedding_derives_absolute_rate": false
+  }
+}

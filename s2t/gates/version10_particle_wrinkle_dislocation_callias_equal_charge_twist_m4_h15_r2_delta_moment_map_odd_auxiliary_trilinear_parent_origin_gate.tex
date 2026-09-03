@@ -1,0 +1,75 @@
+\chapter{Родитель \texorpdfstring{$\Delta$}{Delta} moment-map odd
+auxiliary trilinear}
+\label{ch:v10-h15-r2-delta-moment-map-odd-trilinear-parent}
+
+Предыдущий аудит выделил член
+\begin{equation}
+ \langle A_\Sigma,Q\Sigma\rangle,
+ \qquad Q=6Y,
+\end{equation}
+как ближайший единый источник смешанного блока. Проверим, возникает ли он
+из канонического отображения момента на общей паре изоморфных модулей
+$A_\Sigma\oplus\Sigma$.
+
+Нейтральный $\Delta$-фон действительно фиксирует направление оператора:
+\begin{equation}
+ Q=6\mu_R-4\operatorname{ad}(\mu_4)
+ =\operatorname{diag}(3,-3,7,1,-1,-7,3,-3).
+\end{equation}
+Но отображение момента ортогональной прямой суммы аддитивно. При
+канонической метрике кратности $K_0=I_2$ соответствующий оператор равен
+$K_0\otimes Q$ и его $A_\Sigma$--$\Sigma$ блок имеет ранг нуль.
+
+Общая Real-симметричная инвариантная метрика двух изоморфных копий после
+единичной нормировки диагоналей имеет вид
+\begin{equation}
+ K(\kappa)=
+ \begin{pmatrix}1&\kappa\\\kappa&1\end{pmatrix}.
+\end{equation}
+Нормировка фиксирует два из трёх симметричных коэффициентов и оставляет
+$\kappa$ свободным. Mixed moment-map block становится $\kappa Q$.
+Например, $\kappa=1/2$ даёт невырожденную положительную метрику, но лишь
+$Q/2$. Точное значение $Q$ требует $\kappa=1$.
+
+Hadamard congruence даёт
+\begin{equation}
+ H^TK(0)H=\operatorname{diag}(2,2),\qquad
+ H^TK(1/2)H=\operatorname{diag}(3,1),\qquad
+ H^TK(1)H=\operatorname{diag}(4,0).
+\end{equation}
+Следовательно, target-значение имеет rank $1$ на пространстве кратности и
+rank/nullity $8/8$ на полном 16-мерном trace carrier: комбинация
+$A_\Sigma-\Sigma$ теряет норму, и независимое auxiliary-поле исчезает.
+Антисимметричное смешивание не помогает, поскольку оно задаёт
+кососимметричный оператор и не вносит Real quadratic scalar.
+
+\begin{theorem}[Аддитивность moment map и свободная метрика кратности]
+$\Delta$ moment map единственно фиксирует Cartan-направление $Q$, но
+каноническая ортогональная сумма даёт нулевой cross-блок. Инвариантное
+смешивание порождает лишь семейство $\kappa Q$; нормировка не определяет
+$\kappa$, а точное значение $\kappa=1$ вырождает trace metric и уничтожает
+независимость auxiliary-копии.
+\end{theorem}
+
+\begin{nogocriterion}[Вырожденная multiplicity metric не является parent-origin]
+Нельзя выводить $\langle A_\Sigma,Q\Sigma\rangle$ из отображения момента,
+выбирая off-diagonal pairing после просмотра target. При $\kappa<1$
+коэффициент свободен и неверен, при $\kappa=1$ одна полевая комбинация
+имеет нулевую норму, а унаследованное значение равно $\kappa=0$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item exact moment-map generator rank: \textbf{$8$};
+\item symmetric invariant metric basis rank: \textbf{$3$};
+\item unit-normalization rank/nullity: \textbf{$2/1$};
+\item inherited/required mixing: \textbf{$\kappa=0/1$};
+\item inherited/required cross rank: \textbf{$0/8$};
+\item nondegenerate test $\kappa=1/2$: \textbf{$Q/2$};
+\item target multiplicity metric rank/nullity: \textbf{$1/1$};
+\item target full trace metric rank/nullity: \textbf{$8/8$};
+\item conditional/physical origin: \textbf{$3/5$ и $3/5$};
+\item следующий гейт: \textbf{родитель mixed superconnection curvature}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_moment_map_odd_auxiliary_trilinear_parent_origin_gate_results.json}.

@@ -1,0 +1,90 @@
+\chapter{Общий parent Mathai--Quillen Thom-мультиплета}
+\label{ch:v10-h15-r2-mathai-quillen-thom-multiplet-parent}
+
+Предыдущий гейт оставил один вопрос: может ли условная auxiliary-копия быть
+получена как полный Thom-мультиплет, а не как одиночное Gaussian-поле?
+Начнём с положительного операторного результата. Для relative projector
+$P_{\rm rel}$ suspension swap не является новым выбором:
+\begin{equation}
+ S_{\rm sus}=I_{16}-2P_{\rm rel}.
+\end{equation}
+Если $P_\pm=(I_{16}\pm\Gamma_{\rm sus})/2$, то его ориентированная часть
+равна
+\begin{equation}
+ d_{\rm car}=P_-S_{\rm sus}P_+
+ =\begin{pmatrix}0&0\\I_8&0\end{pmatrix},
+ \qquad d_{\rm car}^2=0,
+ \qquad \rank d_{\rm car}=8.
+\end{equation}
+Следовательно, carrier differential действительно выводится из уже
+построенных Hodge- и grading-данных, условно на их admission.
+
+Однако полный Mathai--Quillen объект содержит квартет
+\begin{equation}
+ (\Sigma,\psi_\Sigma,\chi_\Sigma,H_\Sigma),
+\end{equation}
+где $\Sigma,H_\Sigma$ бозонны, а $\psi_\Sigma,\chi_\Sigma$ имеют нечётную
+статистику. На 32-мерном вещественном пространстве его differential имеет
+два contractible блока,
+\begin{equation}
+ \delta\Sigma=\psi_\Sigma,
+ \quad \delta\psi_\Sigma=0,
+ \quad \delta\chi_\Sigma=H_\Sigma,
+ \quad \delta H_\Sigma=0.
+\end{equation}
+Точная матрица $\delta$ имеет rank $16$, квадрат ноль и
+$\ker\delta=\operatorname{im}\delta$. Она нечётна по field parity и
+коммутирует с gauge- и Real-действиями.
+
+Полная мера также условно замыкается. После стандартного сдвига auxiliary
+contour бозонный квадратичный оператор равен
+\begin{equation}
+ \mathcal H_B=Q^2\oplus I_8,
+\end{equation}
+а нечётный билинейный оператор --- $Q$ в паре
+$\chi_\Sigma Q\psi_\Sigma$. Поэтому
+\begin{equation}
+ \det\mathcal H_B=(\det Q)^2=3969^2,
+ \qquad \det Q=3969,
+\end{equation}
+и нормированный Gaussian--Berezin determinant ratio точно равен единице.
+Таким образом, полный условный квартет не создаёт дополнительного
+детерминантного масштаба и не оставляет on-shell cohomology.
+
+Строгий physical ledger, однако, отрицателен. Текущий parent содержит
+только физическую $\Sigma$, rank $8$. Предыдущая условная достройка даёт
+две бозонные координаты rank $16$, тогда как полный квартет требует
+$32$ вещественных направлений. Inherited injection двух нечётных полей
+имеет rank ноль; дефицит равен шестнадцати направлениям. Градуировка
+carrier не превращает коэффициенты поля в Grassmann-переменные и не
+порождает Berezin measure.
+
+\begin{theorem}[Условное замыкание полного Thom-квартета]
+Relative-Hodge projector и suspension grading канонически выводят
+nilpotent carrier differential. Полный Mathai--Quillen-квартет условно
+имеет нулевую cohomology, положительную бозонную меру и точное сокращение
+Gaussian--Berezin determinants. Conditional status равен $7/8$.
+\end{theorem}
+
+\begin{nogocriterion}[Carrier parity не является статистикой поля]
+Нельзя считать нечётные Thom-поля унаследованными только потому, что
+конечномерный carrier имеет grading. Без независимых Grassmann-координат,
+nilpotent derivation на алгебре полей и Berezin measure физический статус
+остаётся $3/8$; недостающий odd rank равен $16$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item derived oriented carrier edge rank: \textbf{$8$};
+\item full Thom differential rank/cohomology: \textbf{$16/0$};
+\item required full field dimension: \textbf{$32$};
+\item inherited/conditional bosonic rank: \textbf{$8/16$};
+\item inherited odd rank and deficit: \textbf{$0/16$};
+\item bosonic Hessian inertia: \textbf{$(0_-,0_0,16_+)$};
+\item fermionic determinant: \textbf{$3969$};
+\item normalized determinant ratio: \textbf{$1$};
+\item conditional/inherited status: \textbf{$7/8$ и $3/8$};
+\item следующий гейт: \textbf{аудит происхождения статистики odd Thom-пары}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_thom_multiplet_common_parent_origin_gate_results.json}.

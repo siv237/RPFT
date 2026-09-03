@@ -1,0 +1,152 @@
+\chapter{Ориентированная спектральная самоэнергия притока}
+\label{ch:v10-inflow-spectral-self-energy-running-parent-origin}
+
+\section{Проверяемая гипотеза}
+
+Предыдущий гейт установил, что умножение одинаковых ячеек создаёт только
+экстенсивный ход: после деления на объём интенсивная $\beta$-функция
+исчезает. Поэтому настоящий гейт проверяет более сильный механизм. При
+геометрическом росте должен меняться не только размер резервуара, но и
+локальный спектральный отклик одной входящей степени свободы.
+
+Проверка разделена на две части. Сначала строится минимальная точная
+архитектура такого отклика. Затем отдельно отмечается, выведено ли её
+вложение в уже существующий $43$-мерный носитель программы.
+
+\section{Взаимно обратный спектральный резервуар}
+
+Пусть $\zeta=\log a$ --- геометрическая координата роста. Рассмотрим
+двухмодовый положительный оператор
+\begin{equation}
+ K_{\rm res}(\zeta)
+ =\begin{pmatrix}e^{-\zeta}&0\\0&e^{\zeta}\end{pmatrix},
+ \qquad
+ \det K_{\rm res}=1,
+ \label{eq:v10-reciprocal-reservoir}
+\end{equation}
+и его точный обратный оператор
+\begin{equation}
+ G_{\rm res}(\zeta)=K_{\rm res}^{-1}(\zeta)
+ =\begin{pmatrix}e^{\zeta}&0\\0&e^{-\zeta}\end{pmatrix}.
+ \label{eq:v10-reciprocal-propagator}
+\end{equation}
+Определитель остаётся единичным: сама взаимно обратная пара не создаёт
+аномалию и не меняет суммарное спектральное число.
+
+Две ориентации выделяются дополнительными проекторами
+\begin{equation}
+ P_{\rm in}=\begin{pmatrix}1&0\\0&0\end{pmatrix},
+ \qquad
+ P_{\rm out}=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+ \qquad P_{\rm in}+P_{\rm out}=I_2.
+ \label{eq:v10-orientation-projectors}
+\end{equation}
+Они имеют ранг один. Геометрическая стрелка рождения ячеек условно выбирает
+$P_{\rm in}$; противоположный проектор служит точным контрольным каналом.
+
+\section{Самоэнергия как ориентированный спектральный отклик}
+
+Для единичных векторов $b_{\rm in}=(1,0)^T$ и
+$b_{\rm out}=(0,1)^T$ соответствующие дополнения Шура равны
+\begin{equation}
+ \Sigma_{\rm in}(\zeta)
+ =b_{\rm in}^{T}G_{\rm res}b_{\rm in}=e^{\zeta},
+ \qquad
+ \Sigma_{\rm out}(\zeta)
+ =b_{\rm out}^{T}G_{\rm res}b_{\rm out}=e^{-\zeta}.
+ \label{eq:v10-oriented-self-energies}
+\end{equation}
+Следовательно,
+\begin{equation}
+ \Sigma_{\rm in}\Sigma_{\rm out}=1,
+ \qquad
+ \frac{d\Sigma_{\rm in}}{d\zeta}=\Sigma_{\rm in},
+ \qquad
+ \frac{d\Sigma_{\rm out}}{d\zeta}=-\Sigma_{\rm out}.
+ \label{eq:v10-oriented-self-energy-beta}
+\end{equation}
+Это уже интенсивный ход: он относится к локальному спектральному отклику,
+а не к числу одинаковых копий.
+
+Ориентация существенна. Симметричный вектор
+$b_{\rm sym}=2^{-1/2}(1,1)^T$ даёт
+\begin{equation}
+ \Sigma_{\rm sym}(\zeta)=\cosh\zeta,
+ \qquad
+ \left.\frac{d\Sigma_{\rm sym}}{d\zeta}\right|_{\zeta=0}=0.
+ \label{eq:v10-symmetric-self-energy-zero-beta}
+\end{equation}
+Фиксированный локальный спектр также имеет нулевой ход. Поэтому ненулевая
+производная не следует из одного двухмодового удвоения: её создаёт совместное
+наличие взаимно обратного спектра и направленной связи.
+
+\section{Ненулевой свидетель следового отклика}
+
+Подставим входящую самоэнергию в нормированное действие предыдущего гейта:
+\begin{equation}
+ \Gamma_{\rm in}(q,\zeta)
+ =\log(1+q^2+e^{\zeta})
+  -\log(1+q^2)-\log(1+e^{\zeta}).
+ \label{eq:v10-running-inflow-action}
+\end{equation}
+Его геометрическая плотность отклика
+\begin{equation}
+ \mathcal A(q,\zeta)
+ :=\frac{\partial\Gamma_{\rm in}}{\partial\zeta}
+ =\frac{e^{\zeta}}{1+q^2+e^{\zeta}}
+  -\frac{e^{\zeta}}{1+e^{\zeta}}
+ \label{eq:v10-running-trace-response}
+\end{equation}
+не равна нулю. В рациональной контрольной точке
+\begin{equation}
+ \mathcal A(1,0)=-\frac16.
+ \label{eq:v10-running-trace-response-witness}
+\end{equation}
+Тем самым построен точный ненулевой интенсивный свидетель, которого не было
+при чистом объёмном умножении ячеек.
+
+\begin{theorem}[Ориентированная самоэнергия имеет ненулевой ход]
+Взаимно обратный резервуар с $\det K_{\rm res}=1$ сам по себе не создаёт
+масштаб. После выбора входящего ранга один его дополнение Шура равно
+$e^{\zeta}$, имеет ненулевую интенсивную $\beta$-функцию и создаёт
+$\mathcal A(1,0)=-1/6$. Противоположная ориентация имеет обратный ход, а
+симметричная связь имеет нулевую первую производную в $\zeta=0$.
+\end{theorem}
+
+\begin{nogocriterion}[Абстрактный резервуар ещё не является физическим]
+Двухмодовый оператор и проектор ориентации образуют согласованную
+конечномерную архитектуру, но не доказывают, что именно этот блок содержится
+в $43$-мерном концевом носителе, согласован с шестимерным KMS-сектором и
+порождается тем же родительским функционалом. Без такого типизированного
+вложения ненулевой отклик остаётся условным представителем, а не выводом
+абсолютного масштаба.
+\end{nogocriterion}
+
+\begin{protocol}[Статус спектрального гейта]\begin{enumerate}
+\item взаимно обратный положительный резервуар: \textbf{построен};
+\item входящая и выходящая ориентации: \textbf{ранг $1+1$};
+\item интенсивный спектральный ход: \textbf{ненулевой};
+\item точный следовой свидетель: \textbf{$-1/6$};
+\item архитектура ориентированного отклика: \textbf{$7/7$};
+\item происхождение геометрии и стрелки роста: \textbf{$2/2$ условно
+унаследовано};
+\item типизированное физическое вложение резервуара: \textbf{$0/1$};
+\item полный физический родитель абсолютного масштаба: \textbf{$0/1$};
+\item следующий гейт: \textbf{типизированное вложение спектральной
+самоэнергии в $43$-мерный носитель}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_inflow_spectral_self_energy_running_parent_origin_gate_results.json}.
+
+\begin{thebibliography}{9}
+\bibitem{v10-running-keldysh}
+L.~M.~Sieberer, M.~Buchhold, S.~Diehl,
+\emph{Keldysh Field Theory for Driven Open Quantum Systems},
+Reports on Progress in Physics 79 (2016), 096001.
+
+\bibitem{v10-running-feshbach}
+H.~Feshbach,
+\emph{A Unified Theory of Nuclear Reactions. II},
+Annals of Physics 19 (1962), 287--313.
+\end{thebibliography}

@@ -1,0 +1,62 @@
+\chapter{Типизированное Callias--\texorpdfstring{$M_4$}{M4} вложение
+фермионного cross-оператора}
+\label{ch:v10-callias-m4-cross-embedding}
+
+Каллиасов носитель
+\begin{equation}
+ \mathcal H_C=\mathbb C^2_{\rm spin}\otimes\mathbb C^2_{\rm twist}\otimes H_{15}
+\end{equation}
+уже имеет размерность $60$. Пространственные Pauli-генераторы действуют на
+первом факторе, а равнозарядные twist-генераторы --- на втором; две
+тройки коммутируют.
+
+Положив
+\begin{equation}
+ R=I_2\otimes\tau_z\otimes I_{15},\qquad
+ X=I_2\otimes\tau_x\otimes I_{15},
+\end{equation}
+получаем $R^2=X^2=I_{60}$ и $RX+XR=0$. Любой заряд вида
+$I_4\otimes Q_{15}$ коммутирует с $X$. Проекторы $(I\pm R)/2$ имеют ранги
+$30$, а частичная изометрия $P_+XP_-$ --- ранг $30$.
+
+Pauli tensor basis на spin--twist-факторе имеет Gram-матрицу $60I_{16}$,
+поэтому вложение полной алгебры $M_4$ имеет ранг $16$. При единичном
+cross-поле Dirac-оператор имеет спектр
+$(-\sqrt2)^{30},(\sqrt2)^{30}$, а determinant-кривизна равна $-60$:
+пятнадцатиканальная кратность точно усиливает прежний четырёхмерный ответ.
+
+Условное усиление клеточной twist-двойки задаётся картой
+\begin{equation}
+ E=I_2\otimes(1,\ldots,1)^T,\qquad E^*E=15I_2,\qquad \rank E=2.
+\end{equation}
+Но унаследованная карта равна нулю и имеет ранг $0$. Следовательно,
+математическое вложение существует, однако выбор одинакового действия на
+всех пятнадцати каналах и отождествление клеточной двойки с twist-фактором
+не следуют из текущего родителя.
+
+\begin{theorem}[Условное типизированное вложение]
+Callias carrier размерности $60$ поддерживает равнозарядный cross-оператор,
+полную алгебру $M_4$ и пятнадцатикратно усиленную фермионную
+восприимчивость без конфликта с пространственным Clifford action.
+\end{theorem}
+
+\begin{nogocriterion}[Равномерность по $H_{15}$ требует родителя]
+Запись $A\mapsto A\otimes I_{15}$ является условной архитектурой, а не
+унаследованным выводом, пока физический оператор не выбирает один и тот же
+cross-coupling во всех пятнадцати каналах.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item размерность носителя: \textbf{$60$};
+\item ранг вложенной $M_4$-алгебры: \textbf{$16$};
+\item ранг cross-изометрии: \textbf{$30$};
+\item charge defect: \textbf{rank $0$};
+\item determinant-кривизна: \textbf{$-60$};
+\item условная архитектура: \textbf{$16/16$};
+\item унаследованные данные: \textbf{$3/5$};
+\item физическое происхождение: \textbf{$0/3$};
+\item следующий гейт: \textbf{родитель равномерного усиления по $H_{15}$}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_fermionic_cross_typed_embedding_gate_results.json}.

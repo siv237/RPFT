@@ -1,0 +1,66 @@
+{
+  "conditional_binding": {
+    "binding_coefficient": "3/16",
+    "coupling_squared": "3/8"
+  },
+  "conserved_source": {
+    "gauge_parameter_derivative": 0,
+    "gauge_projection": [
+      0,
+      0
+    ],
+    "susceptibility": "1/2",
+    "vector": [
+      "1/sqrt(2)",
+      "-1/sqrt(2)"
+    ]
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_static_propagator_parent_origin_gate",
+  "gauge_fixed_propagator": {
+    "green_operator": "P_physical/2+P_gauge/xi",
+    "kinetic_operator": "2*P_physical+xi*P_gauge",
+    "projected_green": "P_physical/2",
+    "two_sided_inverse": true
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_cell_complex_typed_embedding_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_mediator_susceptibility_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "4989ff941d5dd591a1a8106cffc688b10dba6d09ae15b179adb9cccdb84382f2",
+    "floating_point_values": 0,
+    "obligation_count": 28,
+    "status": "lcf-checked"
+  },
+  "static_carrier": {
+    "decomposition": "L=2*P_physical",
+    "gauge_projector_rank": 1,
+    "laplacian": [
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "physical_projector_rank": 1
+  },
+  "status": {
+    "conditional_architecture": "12/12",
+    "gauge_independence": "5/5",
+    "inherited_geometric_laplacian": "1/1",
+    "physical_origin": "0/3",
+    "typed_su2_embedding": "0/2"
+  },
+  "verdict": {
+    "cell_laplacian_is_inherited": true,
+    "composite_current_map_is_inherited": false,
+    "conditional_binding_coefficient_is_three_sixteenths": true,
+    "conserved_source_removes_zero_mode": true,
+    "finite_gauge_independent_susceptibility_exists": true,
+    "physical_static_mediator_is_derived": false,
+    "su2_gauge_field_embedding_is_inherited": false
+  }
+}

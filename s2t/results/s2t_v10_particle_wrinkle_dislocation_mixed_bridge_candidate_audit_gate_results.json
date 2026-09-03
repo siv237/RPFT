@@ -1,0 +1,74 @@
+{
+  "best_structural_candidate": {
+    "conditional_hessian_determinant": 1,
+    "localized_channel_rank": 15,
+    "missing_criterion": "inherited_and_not_target_loaded",
+    "name": "callias_mass_profile",
+    "score": 5
+  },
+  "candidate_matrix_rank": 6,
+  "candidates": [
+    "inherited_direct_sum",
+    "scalar_trace_product",
+    "projector_curvature_pairing",
+    "toeplitz_spatial_boundary_product",
+    "graded_morita_two_step_connector",
+    "hopf_chern_pairing",
+    "callias_mass_profile",
+    "K43_cell_incidence",
+    "bath_covariance_response",
+    "inherited_higgs_rank_change_portal",
+    "target_loaded_pole_match"
+  ],
+  "closed_routes": {
+    "centered_morita_mixed_block": "zero",
+    "graded_product_mixed_block": "zero",
+    "inherited_hessian_rank_nullity": "1/1"
+  },
+  "criteria": [
+    "typed_common_carrier",
+    "nonzero_mixed_block",
+    "index_preservation",
+    "finite_localization",
+    "same_operator_spectral_pole",
+    "inherited_and_not_target_loaded"
+  ],
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_mixed_bridge_candidate_audit_gate",
+  "inherited_pass_count": 0,
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_profile_common_carrier_admission_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_common_parent_reopening_gate",
+  "proofdsl": {
+    "certificate_sha256": "a759c1d760011b133afb87af170db1ec7c8cd93df379c1c515d28fd7e40ceaa2",
+    "floating_point_values": 0,
+    "obligation_count": 20,
+    "status": "lcf-checked"
+  },
+  "scores": [
+    3,
+    3,
+    4,
+    4,
+    3,
+    4,
+    5,
+    4,
+    4,
+    3,
+    5
+  ],
+  "status": {
+    "audit_coverage": "11/11",
+    "inherited_candidate_pass": "0/11",
+    "physical_origin": "0/3",
+    "strict_candidate_pass": "0/11"
+  },
+  "strict_pass_count": 0,
+  "verdict": {
+    "callias_profile_is_inherited": false,
+    "callias_profile_is_structurally_complete": true,
+    "existing_mixed_bridge_closes_particle": false,
+    "target_loaded_match_is_admissible": false
+  }
+}

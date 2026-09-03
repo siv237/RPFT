@@ -1,0 +1,56 @@
+\chapter{Аудит фермионной cross-билинейности и нечётной статистики}
+\label{ch:v10-m4-fermionic-cross-odd-audit}
+
+Условный determinant-механизм требует одновременно cross-оператор
+правильного $M_4$-типа, нечётную статистику, отрицательную восприимчивость,
+gauge/KMS-совместимость и независимо выбранный coupling. Проверены
+двенадцать источников; матрица шести критериев имеет ранг $6$, но
+\begin{equation}
+ N_{\rm pass}=0/12,\qquad N_{\rm max}=5/6.
+\end{equation}
+
+KO6 particle/conjugate-пара наследуется и фермионна, однако для
+$Q=\operatorname{diag}(I_2,-I_2)$ и cross-инволюции $X$ выполняется
+\begin{equation}
+ \rank[Q,X]=4.
+\end{equation}
+Значит, этот flip смешивает противоположные заряды. Reduced Pfaffian
+различает две ориентации знаками $(-1,+1)$, но полный KO6 pair даёт
+$(+1,+1)$ и стирает относительный знак.
+
+Наследуемая секторная grading имеет odd-rank $2$, тогда как determinant
+требует all-odd rank $4$; дефект имеет ранг $2$. Формальный parity shift
+исправляет счёт, но не выводится из физической секторной градуировки.
+
+Единственный gauge-совместимый почти проходящий маршрут --- равнозарядная
+каллиасова twist-двойка: её charge-коммутатор равен нулю, и она условно
+поддерживает cross-билинейность, нечётность и determinant-знак. Однако
+унаследованное отображение каллиасова носителя размерности $60$ в
+$M_4$-модуль равно нулю и имеет ранг $0$.
+
+\begin{theorem}[Тройной разрыв fermionic cross origin]
+KO6 route наследуется, но нарушает заряд; reduced Pfaffian теряет знак при
+полном Real-удвоении; равнозарядный Callias route совместим, но не имеет
+унаследованного вложения в $M_4$. Поэтому ни один из двенадцати кандидатов
+не закрывает determinant-origin.
+\end{theorem}
+
+\begin{nogocriterion}[Operator grading не равна Grassmann parity]
+Секторная градуировка ранга $2+2$ не назначает все четыре координаты
+нечётными. Ручное объявление all-odd parity или cross-Grassmann pair
+является новым statistics datum, пока не предъявлен общий типизированный
+носитель или BRST/BV-родитель.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item проверено кандидатов: \textbf{$12$};
+\item ранг критериев: \textbf{$6/6$};
+\item полных проходов: \textbf{$0/12$};
+\item KO6 charge defect: \textbf{rank $4$};
+\item inherited/required odd rank: \textbf{$2/4$};
+\item Callias--$M_4$ embedding: \textbf{rank $0$};
+\item следующий гейт: \textbf{типизированное каллиасово равнозарядное вложение}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_m4_fermionic_determinant_cross_bilinear_odd_statistics_candidate_audit_gate_results.json}.

@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-01",
+  "embedded_spectral_operator": {
+    "compressed_operator": "diag(exp(-zeta),exp(zeta))",
+    "determinant": "1",
+    "incoming_beta": "Sigma_Y",
+    "incoming_self_energy": "exp(zeta)",
+    "operator": "I43+(exp(-zeta)-1)P_Y+(exp(zeta)-1)P_0"
+  },
+  "floating_point_values": 0,
+  "gate": "version10_inflow_spectral_self_energy_k43_typed_embedding_gate",
+  "inherited_interaction": {
+    "non_spectator": true,
+    "restricted_rank": 42,
+    "restriction": "Y tensor (|Y><0|+|0><Y|)"
+  },
+  "inherited_parent_boundary": {
+    "cell_parent": "I43-|0><0|",
+    "common_growth_parent_derived": false,
+    "compression": "diag(1,0)",
+    "geometric_beta": "0",
+    "reciprocal_spectrum_derived": false
+  },
+  "kms_typing": {
+    "detailed_balance_for_new_operator_derived": false,
+    "isometry": true,
+    "lift": "E_Y tensor I_6",
+    "rank": 12,
+    "shape": [
+      258,
+      12
+    ]
+  },
+  "next_gate": "version10_k43_reciprocal_spectral_operator_growth_parent_origin_gate",
+  "predecessor": "version10_inflow_spectral_self_energy_running_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "7014a42bfb0e5b107122833527a54123e1c2339d3f0ad9becbdde91564d37fbd",
+    "floating_point_values": 0,
+    "obligation_count": 18,
+    "obligations": [
+      "k43_embedding_isometry",
+      "typed_projector_rank_two",
+      "hypercharge_direction_gauge_invariant",
+      "hypercharge_endpoint_rank_twenty_one",
+      "restricted_star_interaction_rank_forty_two",
+      "reciprocal_operator_compression",
+      "embedded_operator_unit_determinant",
+      "embedded_propagator_exact",
+      "typed_incoming_self_energy",
+      "typed_incoming_geometric_beta",
+      "kms_lift_isometry",
+      "kms_lift_rank_twelve",
+      "inherited_cell_parent_compression",
+      "inherited_cell_parent_zero_beta",
+      "typed_embedding_architecture_full",
+      "typed_origin_ledger_four_of_six",
+      "typed_origin_score_four",
+      "spectral_parent_origin_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_scale": "0/1",
+    "common_spectral_growth_parent": "0/1",
+    "origin_ledger": "4/6",
+    "reciprocal_spectral_operator_origin": "0/1",
+    "typed_embedding_architecture": "8/8",
+    "typed_k43_embedding": "1/1"
+  },
+  "typed_subcarrier": {
+    "ambient_cell": "K43=C|0> direct_sum C^42_jump",
+    "embedding_isometry": true,
+    "embedding_shape": [
+      43,
+      2
+    ],
+    "hypercharge_commutator_checks": "12/12",
+    "hypercharge_endpoint_rank": 21,
+    "projector_rank": 2,
+    "subcarrier": "W_Y=span{|Y>,|0>}"
+  },
+  "verdict": {
+    "absolute_scale_derived": false,
+    "gauge_invariant_hypercharge_line_exists": true,
+    "inherited_star_coupling_nonzero": true,
+    "spectral_running_inherited_from_old_parent": false,
+    "typed_reservoir_exists_inside_k43": true
+  }
+}

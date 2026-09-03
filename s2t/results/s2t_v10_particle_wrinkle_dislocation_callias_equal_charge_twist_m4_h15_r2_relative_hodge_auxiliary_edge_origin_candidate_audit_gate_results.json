@@ -1,0 +1,209 @@
+{
+  "best_candidates": [
+    {
+      "failed": "inherited_origin",
+      "name": "superconnection_suspension",
+      "score": "5/6"
+    },
+    {
+      "failed": "inherited_origin",
+      "name": "mapping_cone_cylinder",
+      "score": "5/6"
+    }
+  ],
+  "candidate_audit": {
+    "criteria": [
+      "exact_weights",
+      "independent_boson",
+      "odd_grading",
+      "Real_Hodge_edge",
+      "positive_metric",
+      "inherited_origin"
+    ],
+    "matrix": [
+      [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "names": [
+      "fixed_point_curvature",
+      "reuse_physical_Sigma",
+      "cotangent_copy",
+      "BV_antifield",
+      "KO6_conjugate",
+      "superconnection_suspension",
+      "mapping_cone_cylinder",
+      "de_Rham_one_form_copy",
+      "Callias_normal_copy",
+      "Hubbard_Stratonovich_copy",
+      "fermionic_Nambu_doubling",
+      "target_loaded_copy"
+    ],
+    "passes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "passing_candidates": 0,
+    "rank": 6,
+    "scores": [
+      3,
+      5,
+      4,
+      4,
+      5,
+      5,
+      5,
+      4,
+      4,
+      5,
+      5,
+      5
+    ]
+  },
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_hodge_auxiliary_edge_origin_candidate_audit_gate",
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_suspension_auxiliary_copy_parent_origin_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_hodge_auxiliary_edge_common_parent_admission_gate",
+  "proofdsl": {
+    "certificate_sha256": "e84776de30fab9ddb5c3f0b08ddc99c45711a7a57376077e91c61be6e0916f7e",
+    "floating_point_values": 0,
+    "obligation_count": 15,
+    "obligations": [
+      "h15_r2_relative_hodge_auxiliary_edge_origin_00",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_01",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_02",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_03",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_04",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_05",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_06",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_07",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_08",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_09",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_10",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_11",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_12",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_13",
+      "h15_r2_relative_hodge_auxiliary_edge_origin_14"
+    ],
+    "status": "lcf-checked"
+  },
+  "reuse_no_go": {
+    "diagonal_embedding_rank": 8,
+    "independent_copy_relative_image_rank": 8,
+    "relative_image_rank": 0
+  },
+  "status": {
+    "physical_origin": "5/6",
+    "remaining_slot": "inherited independent auxiliary copy"
+  },
+  "verdict": {
+    "best_route_identified": true,
+    "candidate_passes_all": false,
+    "physical_parent_found": false,
+    "reuse_physical_Sigma": false
+  }
+}

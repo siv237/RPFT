@@ -1,0 +1,153 @@
+{
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_stabilizer_moment_map_curvature_parent_origin_gate",
+  "inheritance": {
+    "fixed_point_auxiliary_subspace_embedding": "open",
+    "inherited_Schur_complement": "49I",
+    "inherited_cross_block_rank": 0,
+    "typed_auxiliary_Q_coupling_rank": 0
+  },
+  "moment_map": {
+    "Sigma_spectrum": [
+      3,
+      -3,
+      7,
+      1,
+      -1,
+      -7,
+      3,
+      -3
+    ],
+    "mu_4": [
+      [
+        "-1/4",
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        "-1/4",
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        "-1/4",
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        "3/4"
+      ]
+    ],
+    "mu_R": [
+      [
+        "1/2",
+        0
+      ],
+      [
+        0,
+        "-1/2"
+      ]
+    ],
+    "normalization_locked": true,
+    "normalized_combination": "Q=6Y=6*mu_R-4*ad(mu_4)",
+    "trace_norms": [
+      "1/2",
+      "3/4"
+    ]
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_shared_fixed_point_auxiliary_channel_typed_embedding_gate",
+  "positive_norm_diagnosis": {
+    "Hessian": "Q^2",
+    "R2_mass": 49,
+    "diagonal": [
+      9,
+      9,
+      49,
+      1,
+      1,
+      49,
+      9,
+      9
+    ],
+    "rank": 8,
+    "verdict": "wrong ordering: R2 is maximally heavy"
+  },
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_sigma_mixed_curvature_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "418bc0723370c55f38c3c553665b7e46141c1999d5ea09922e92fdaa37f80298",
+    "floating_point_values": 0,
+    "obligation_count": 26,
+    "obligations": [
+      "h15_r2_delta_moment_map_parent_00",
+      "h15_r2_delta_moment_map_parent_01",
+      "h15_r2_delta_moment_map_parent_02",
+      "h15_r2_delta_moment_map_parent_03",
+      "h15_r2_delta_moment_map_parent_04",
+      "h15_r2_delta_moment_map_parent_05",
+      "h15_r2_delta_moment_map_parent_06",
+      "h15_r2_delta_moment_map_parent_07",
+      "h15_r2_delta_moment_map_parent_08",
+      "h15_r2_delta_moment_map_parent_09",
+      "h15_r2_delta_moment_map_parent_10",
+      "h15_r2_delta_moment_map_parent_11",
+      "h15_r2_delta_moment_map_parent_12",
+      "h15_r2_delta_moment_map_parent_13",
+      "h15_r2_delta_moment_map_parent_14",
+      "h15_r2_delta_moment_map_parent_15",
+      "h15_r2_delta_moment_map_parent_16",
+      "h15_r2_delta_moment_map_parent_17",
+      "h15_r2_delta_moment_map_parent_18",
+      "h15_r2_delta_moment_map_parent_19",
+      "h15_r2_delta_moment_map_parent_20",
+      "h15_r2_delta_moment_map_parent_21",
+      "h15_r2_delta_moment_map_parent_22",
+      "h15_r2_delta_moment_map_parent_23",
+      "h15_r2_delta_moment_map_parent_24",
+      "h15_r2_delta_moment_map_parent_25"
+    ],
+    "status": "lcf-checked"
+  },
+  "shared_auxiliary_parent": {
+    "Schur_complement": "49I-Q^2",
+    "Schur_diagonal": [
+      40,
+      40,
+      0,
+      48,
+      48,
+      0,
+      40,
+      40
+    ],
+    "Schur_nullity": 2,
+    "Schur_rank": 6,
+    "conditional_parent_valid": true,
+    "congruence_diagonal": "diag(49I-Q^2,I)",
+    "full_block": "[[49I,Q],[Q,I]]",
+    "full_inertia_negative_zero_positive": [
+      0,
+      2,
+      14
+    ],
+    "full_nullity": 2,
+    "full_rank": 14
+  },
+  "status": {
+    "conditional_Schur_parent": "3/4",
+    "physical_origin": "2/4"
+  },
+  "verdict": {
+    "moment_map_normalization_derived": true,
+    "physical_parent_found": false,
+    "positive_moment_map_norm_gives_target_gap": false,
+    "shared_auxiliary_Schur_parent_gives_target_gap": true,
+    "shared_auxiliary_channel_inherited": false
+  }
+}

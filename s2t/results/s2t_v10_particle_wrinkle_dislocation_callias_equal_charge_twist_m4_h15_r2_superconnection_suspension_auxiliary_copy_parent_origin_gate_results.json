@@ -1,0 +1,114 @@
+{
+  "criteria": [
+    "exact_type",
+    "independent_boson",
+    "nilpotent_pair",
+    "positive_metric",
+    "exact_Q_section",
+    "inherited_origin",
+    "no_new_on_shell_boson"
+  ],
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_suspension_auxiliary_copy_parent_origin_gate",
+  "gaussian_elimination": {
+    "joint_hessian_nullity": 2,
+    "joint_hessian_rank": 14,
+    "schur_complement_diagonal": [
+      40,
+      40,
+      0,
+      48,
+      48,
+      0,
+      40,
+      40
+    ],
+    "schur_complement_inertia": [
+      0,
+      2,
+      6
+    ],
+    "schur_complement_rank": 6
+  },
+  "mathai_quillen_completion": {
+    "cohomology_dimension": 0,
+    "independent_boson_rank": 8,
+    "jacobian_field_independent_at_fixed_Q": true,
+    "nilpotent_differential_rank": 8,
+    "relative_image_rank": 8,
+    "section_jacobian": 3969,
+    "section_rank": 8,
+    "thom_pair_dimension": 16
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_thom_multiplet_common_parent_origin_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_hodge_auxiliary_edge_origin_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "edf0dd92d3e890e6eb2537d9d45f3c076f27ddf554ada85377112ee8a41328db",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "obligations": [
+      "h15_r2_superconnection_suspension_auxiliary_copy_00",
+      "h15_r2_superconnection_suspension_auxiliary_copy_01",
+      "h15_r2_superconnection_suspension_auxiliary_copy_02",
+      "h15_r2_superconnection_suspension_auxiliary_copy_03",
+      "h15_r2_superconnection_suspension_auxiliary_copy_04",
+      "h15_r2_superconnection_suspension_auxiliary_copy_05",
+      "h15_r2_superconnection_suspension_auxiliary_copy_06",
+      "h15_r2_superconnection_suspension_auxiliary_copy_07",
+      "h15_r2_superconnection_suspension_auxiliary_copy_08",
+      "h15_r2_superconnection_suspension_auxiliary_copy_09",
+      "h15_r2_superconnection_suspension_auxiliary_copy_10",
+      "h15_r2_superconnection_suspension_auxiliary_copy_11",
+      "h15_r2_superconnection_suspension_auxiliary_copy_12",
+      "h15_r2_superconnection_suspension_auxiliary_copy_13",
+      "h15_r2_superconnection_suspension_auxiliary_copy_14",
+      "h15_r2_superconnection_suspension_auxiliary_copy_15",
+      "h15_r2_superconnection_suspension_auxiliary_copy_16",
+      "h15_r2_superconnection_suspension_auxiliary_copy_17",
+      "h15_r2_superconnection_suspension_auxiliary_copy_18",
+      "h15_r2_superconnection_suspension_auxiliary_copy_19",
+      "h15_r2_superconnection_suspension_auxiliary_copy_20",
+      "h15_r2_superconnection_suspension_auxiliary_copy_21"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "bare_score": "3/7",
+    "bare_suspension": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "conditional_score": "6/7",
+    "conditional_thom_completion": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1
+    ],
+    "remaining_slot": "inherited cohomological differential and full measure"
+  },
+  "suspension": {
+    "carrier_dimension": 16,
+    "edge_rank": 16,
+    "gauge_equivariant": true,
+    "grading_odd": true,
+    "independent_dynamical_injection_rank": 0,
+    "interpretation": "graded stabilization, not yet a field origin",
+    "real_equivariant": true
+  },
+  "verdict": {
+    "bare_suspension_is_physical_auxiliary_origin": false,
+    "best_route_sharpened": true,
+    "mathai_quillen_completion_is_exact_conditionally": true,
+    "physical_parent_found": false
+  }
+}

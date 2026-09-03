@@ -1,0 +1,82 @@
+\chapter{Типизированное вложение
+\texorpdfstring{$\Delta$}{Delta} mapping-cone parent}
+\label{ch:v10-h15-r2-delta-mapping-cone-embedding}
+
+Нейтральный $\Delta$-луч даёт правильный гиперзарядовый стабилизатор.
+Теперь проверяется, переносит ли ранее построенный irreducible relative
+mapping-cone parent не только устойчивость $\Delta$, но и mass-gap поля
+$\Sigma$.
+
+Старый parent действует на $52$ вещественных направлениях: $16$ координат
+$\Delta$ и $36$ fixed-point auxiliary координат. Его сертифицированная
+инерция равна
+\begin{equation}
+ (n_-,n_0,n_+)=(0,9,43).
+\end{equation}
+Для проверки типов достаточно канонического представителя этой congruence
+class, $H_{\Delta C}=\operatorname{diag}(2I_{43},0_9)$.
+
+Добавим восьмисекторное пространство $\Sigma$. Ортогональные вложения
+\begin{equation}
+ J_{\Delta C}:\mathbb R^{52}\longrightarrow\mathbb R^{60},
+ \qquad
+ J_\Sigma:\mathbb R^8\longrightarrow\mathbb R^{60}
+\end{equation}
+имеют ранги $52$ и $8$, удовлетворяют
+$J_{\Delta C}^TJ_\Sigma=0$ и исчерпывают единицу на общем carrier.
+Следовательно, representation-level typed embedding существует.
+
+Но честно унаследованный Hessian есть только
+\begin{equation}
+ H_{\rm inherited}=H_{\Delta C}\oplus0_8.
+\end{equation}
+Он имеет ранг $43$, нуллитет $17$ и инерцию $(0,17,43)$. Девять нулей ---
+Goldstone directions $\Delta$-vacuum, а ещё восемь --- полностью плоский
+$\Sigma$-сектор. Смешанный блок равен точно
+\begin{equation}
+ \boxed{J_{\Delta C}^TH_{\rm inherited}J_\Sigma=0_{52\times8}}.
+\end{equation}
+
+Если вручную вставить ранее найденный
+$G_Y=\operatorname{diag}(40,40,0,48,48,0,40,40)$, получаем условный
+Hessian $H_{\Delta C}\oplus G_Y$ с рангом $49$, нуллитетом $11$ и
+инерцией $(0,11,49)$. Это корректный typed block sum, но не вывод gap:
+шесть новых положительных eigenvalues внесены отдельным оператором.
+
+Коэффициентный диагноз ещё строже. Старый mapping-cone parent не даёт ни
+одной координаты в базисе $(I,Q^2)$ поля $\Sigma$, то есть induced map
+имеет ранг $0$. Универсальный norm-portal дал бы только столбец $(1,0)$ и
+ранг $1$, тогда как gap требует $(49,-1)$. Добавление этого target-столбца
+повышает ранг до $2$ и потому является новым connected invariant, а не
+перенормировкой старого действия.
+
+\begin{theorem}[Typed direct-sum admission]
+Irreducible $\Delta+C$ mapping-cone parent и сектор $\Sigma$ допускают
+точное ортогональное вложение в общий $60$-мерный носитель. Однако
+унаследованный parent остаётся block-diagonal, имеет нулевой
+$\Delta$--$\Sigma$ cross-Hessian и оставляет все восемь $\Sigma$-секторов
+плоскими.
+\end{theorem}
+
+\begin{nogocriterion}[Block sum не является common parent]
+Запись $H_{\Delta C}\oplus G_Y$ не выводит $G_Y$ из mapping-cone curvature.
+Для физического происхождения требуется один смешанный curvature-канал,
+который после подстановки нейтрального $\Delta$-vacuum создаёт независимый
+$Q^2$-столбец и фиксирует его отношение к универсальному члену.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item размерности $\Delta+C$, $\Sigma$, common: \textbf{$52,8,60$};
+\item ранги вложений: \textbf{$52/8$};
+\item inherited Hessian rank/nullity: \textbf{$43/17$};
+\item inherited cross rank: \textbf{$0$};
+\item inherited $\Sigma$-Hessian rank: \textbf{$0$};
+\item conditional gap Hessian rank/nullity: \textbf{$49/11$};
+\item universal portal coefficient rank: \textbf{$1$};
+\item полный target coefficient rank: \textbf{$2$};
+\item conditional/physical status: \textbf{$3/4$ и $2/4$};
+\item следующий гейт: \textbf{аудит смешанной $\Delta$--$\Sigma$ curvature}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_mapping_cone_common_parent_typed_embedding_gate_results.json}.

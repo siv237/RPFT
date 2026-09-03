@@ -1,0 +1,80 @@
+\chapter{Родитель mixed superconnection curvature}
+\label{ch:v10-h15-r2-superconnection-mixed-curvature-parent}
+
+Обычное отображение момента прямой суммы не породило mixed bilinear.
+Проверим более жёсткую конструкцию: две нечётные стрелки $A_\Sigma$ и
+$\Sigma$ входят в один off-diagonal блок суперк связности, а требуемый
+член читается из поляризации её квадрата.
+
+На концах стрелки нейтральный $\Delta$-фон действует операторами
+\begin{equation}
+ L=T=6T_R^3,
+ \qquad R=-B=-3(B-L).
+\end{equation}
+Для grading $\Gamma=\operatorname{diag}(I_8,-I_8)$ и нечётного поля
+$\Phi(v)=\bigl(\begin{smallmatrix}0&D_v\\D_v&0\end{smallmatrix}\bigr)$
+имеем $\{\Gamma,\Phi\}=0$. Поляризация нуль-форменной кривизны равна
+\begin{equation}
+ \frac12\{\Phi(A_\Sigma),\Phi(\Sigma)\}.
+\end{equation}
+Коэффициент $1/2$ компенсирует два порядка произведения и не является
+новой ручкой.
+
+Градуированный след фоновой кривизны даёт
+\begin{equation}
+ \operatorname{Str}\!\left[
+ \operatorname{diag}(L,R)\,
+ \frac12\{\Phi(A_\Sigma),\Phi(\Sigma)\}
+ \right]
+ =A_\Sigma^T(L-R)\Sigma
+ =\boxed{A_\Sigma^TQ\Sigma},
+\end{equation}
+поскольку $L-R=T+B=Q=6Y$. Таким образом, и Cartan-направление, и общий
+коэффициент возникают из одного квадрата суперк связности.
+
+Однако положительный Hilbert--Schmidt trace складывает endpoint-блоки и
+даёт
+\begin{equation}
+ A_\Sigma^T(L+R)\Sigma=A_\Sigma^T(T-B)\Sigma,
+\end{equation}
+а не $Q$. Разность правильного и обычного операторов равна $2B$ и имеет
+rank $4$. Метрика суперследа $\Gamma$ имеет inertia $(8_-,0_0,8_+)$,
+тогда как положительная trace metric имеет $(0_-,0_0,16_+)$. Поэтому
+точный cross-член уже имеет каноническое алгебраическое происхождение, но
+его включение в положительный полный curvature action требует выведенного
+селекторного quotient или относительного следа.
+
+Остаётся и прежняя опорная граница: условная стрелка $A_\Sigma$ имеет rank
+$8$, но её унаследованное вложение в текущую суперк связность имеет rank
+$0$.
+
+\begin{theorem}[Точный graded-curvature источник]
+Поляризация квадрата одной Real-нечётной суперк связности с endpoint moment
+maps $(T,-B)$ точно порождает $A_\Sigma^TQ\Sigma$ с каноническим
+коэффициентом. Обычный положительный след порождает вместо него $T-B$;
+правильная разность существует только в градуированном trace channel.
+\end{theorem}
+
+\begin{nogocriterion}[Суперслед нельзя объявлять положительной нормой]
+Нельзя считать physical parent закрытым, подменяя полный положительный
+след суперследом лишь потому, что последний даёт правильный знак endpoint
+moment maps. Требуется вывести relative curvature component, junk quotient
+или другой положительный функционал, сохраняющий именно graded mixed block.
+Также должна быть унаследована сама стрелка $A_\Sigma$.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item oddness и Real self-adjointness: \textbf{точно};
+\item graded endpoint operator: \textbf{$L-R=Q$};
+\item graded cross rank: \textbf{$8$};
+\item coefficient origin: \textbf{канонический $1/2$ anticommutator};
+\item positive-trace operator: \textbf{$L+R=T-B$};
+\item positive-trace defect: \textbf{$2B$, rank $4$};
+\item supertrace inertia: \textbf{$(8_-,0_0,8_+)$};
+\item inherited/required auxiliary-arrow rank: \textbf{$0/8$};
+\item conditional/physical origin: \textbf{$4/6$ и $4/6$};
+\item следующий гейт: \textbf{аудит trace-селекторов curvature}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_mixed_curvature_parent_origin_gate_results.json}.

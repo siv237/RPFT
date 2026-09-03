@@ -1,0 +1,79 @@
+{
+  "candidate_audit": {
+    "candidate_count": 11,
+    "criterion_count": 6,
+    "full_passes": 0,
+    "internal_origins": 0,
+    "rank": 6,
+    "scores": [
+      2,
+      4,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      5,
+      5
+    ]
+  },
+  "date": "2026-09-02",
+  "exact_internal_numbers": {
+    "inverse_abs_af_beta": "1/2",
+    "inverse_k43_cutoff": "1/42",
+    "neither_is_a_typed_static_propagator": true
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_mediator_susceptibility_candidate_audit_gate",
+  "massless_static_obstruction": {
+    "determinant": 0,
+    "kinetic_operator": [
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    "rank": 1,
+    "spectrum": {
+      "0": 1,
+      "2": 1
+    },
+    "zero_mode": [
+      1,
+      1
+    ]
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_static_propagator_parent_origin_gate",
+  "normalization_orbit": {
+    "binding_product_exponent": 0,
+    "g_squared_exponent": -2,
+    "invariant_observable": "g_squared*chi",
+    "susceptibility_exponent": 2
+  },
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_coefficient_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "a46e0587794c8fe13dab79712e6f9ee5f0b9fb0910ceab883c2fa495ea97645c",
+    "floating_point_values": 0,
+    "obligation_count": 23,
+    "status": "lcf-checked"
+  },
+  "status": {
+    "candidate_coverage": "11/11",
+    "full_candidate_passes": "0/11",
+    "normalization_invariant_product": "1/1",
+    "physical_origin": "0/3"
+  },
+  "verdict": {
+    "binding_product_is_normalization_invariant": true,
+    "finite_typed_normalized_static_kernel_is_inherited": false,
+    "massless_static_propagator_is_invertible": false,
+    "mediator_susceptibility_is_derived": false,
+    "susceptibility_alone_is_normalization_invariant": false
+  }
+}

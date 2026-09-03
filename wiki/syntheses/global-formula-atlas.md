@@ -1,14 +1,15 @@
-# Глобальный атлас ключевых формул Томов I--IX
+# Глобальный атлас ключевых формул Томов I--X
 
 > Status: working
 > Type: synthesis
-> Updated: 2026-08-31
+> Updated: 2026-09-02
 
 ## Назначение и область охвата
 
 Это каноническая формульная карта проекта для изучения математической и
 физической интуиции. Она собирает итоговые формулы, которые пережили
-заключения, заморозки и ретроспективные аудиты Томов I--IX, а также точные
+заключения, заморозки и ретроспективные аудиты Томов I--IX, а также текущие
+точные конструкции Тома X и строгие
 no-go тождества, ограничивающие их смысл.
 
 Атлас не копирует каждую промежуточную строку сотен гейтов. Единицей отбора
@@ -4605,7 +4606,7 @@ stiffness зависит. См.
 
 ### IX-F17. Финальный ledger и контракт Тома X
 
-Статус: **Том IX завершён; Том X только специфицирован**.
+Статус: **Том IX завершён; первоначальная программа Тома X специфицирована**.
 
 $$
  \mathbf n_{IX}^{\rm cond}=(1,1,1,1,1,1)^T,
@@ -4624,7 +4625,1018 @@ Tome X имеет specification vector `(1,1,1,1,1,1)` и construction vector
 `(0,0,0,0,0,0)`. См.
 [[version9-final-conclusion-and-tome10-program-gate]].
 
+## X. Растущая геометрия и квантовый ход
+
+### X-F1. Число ячеек как относительный масштаб
+
+Статус: **строгая кинематическая архитектура; физический закон роста открыт**.
+
+$$
+ a(\tau)=\left(\frac{N(\tau)}{N_0}\right)^{1/3},
+ \qquad
+ \zeta=\log a=\frac13\log\frac{N}{N_0}.
+$$
+
+Для условной амплитуды
+
+$$
+ h_{\rm vac}=\frac{e^{-S_{\rm vac}}}{\sqrt{8\pi}}
+$$
+
+точно выполняются
+
+$$
+ N(\tau)=N_0e^{3h_{\rm vac}\tau},
+ \qquad
+ a(\tau)=e^{h_{\rm vac}\tau},
+ \qquad
+ \frac{a'}a=\frac{N'}{3N}=h_{\rm vac},
+$$
+
+$$
+ \Lambda_{\rm growth}=3h_{\rm vac}^2
+ =\frac{3}{8\pi}e^{-2S_{\rm vac}}.
+$$
+
+Последнее равенство переинтерпретирует раннюю космологическую формулу как
+квадрат темпа геометрического роста, но не выводит меру переходов
+`N -> N+1`. Квантовый ход определяется относительно геометрической
+координаты
+
+$$
+ \beta_i=\frac{dg_i}{d\zeta}.
+$$
+
+Локальный атлас факторизуется как
+
+$$
+ D(\zeta)=E_{\rm cell}(\zeta)\widehat D(g(\zeta)),
+ \qquad
+ \frac{m_i}{m_j}=\frac{\mu_i}{\mu_j}.
+$$
+
+Архитектура допущена `7/7`; происхождение закона роста, физического такта и
+локального масштаба равно `0/3`. См.
+[[version10-quantum-rg-common-carrier-admission-gate]].
+
+### X-F2. Физический приток и остаточный определитель
+
+Статус: **строгая минимальная архитектура; происхождение квантовой аномалии
+открыто**.
+
+Закрытый физический и духовый операторы совпадают:
+
+$$
+ D_z(q)=D_{\rm gh}(q)=1+q^2,
+ \qquad Z_{\rm closed}=1.
+$$
+
+Физическая самоэнергия `J>0` создаёт
+
+$$
+ \Gamma_J(q)=\log(1+q^2+J)-\log(1+q^2)-\log(1+J),
+$$
+
+$$
+ \Gamma_J''(0)=-\frac{2J}{1+J}<0,
+ \qquad
+ \Gamma_J^{(4)}(0)=\frac{12J(J+2)}{(J+1)^2}>0.
+$$
+
+При `J=9/10` и насыщении `q^4/4` точки
+
+$$
+ q_\star^\pm=\pm\frac1{\sqrt2},
+ \qquad V''(q_\star^\pm)=\frac{37}{24}
+$$
+
+являются точными локально устойчивыми нарушенными ветвями. Однако
+
+$$
+ J_{\rm ext}=J_0e^{3\zeta},
+ \qquad \frac{dJ_{\rm ext}}{d\zeta}=3J_{\rm ext},
+$$
+
+после объёмной нормировки даёт
+
+$$
+ j_{\rm int}=e^{-3\zeta}J_{\rm ext}=J_0,
+ \qquad \frac{dj_{\rm int}}{d\zeta}=0.
+$$
+
+Поэтому приток закрывает архитектуру нарушения симметрии `6/6`, но не
+выводит интенсивную квантовую beta-function или следовую аномалию (`0/2`).
+См. [[version10-geometric-scale-beta-trace-anomaly-origin-gate]].
+
+### X-F3. Ориентированный спектральный ход
+
+$$
+K_{\rm res}(\zeta)=\operatorname{diag}(e^{-\zeta},e^{\zeta}),
+\qquad \det K_{\rm res}=1,
+$$
+
+$$
+\Sigma_{\rm in}=e^{\zeta},\qquad
+\Sigma_{\rm out}=e^{-\zeta},\qquad
+\frac{d\Sigma_{\rm in}}{d\zeta}=\Sigma_{\rm in}.
+$$
+
+Для
+
+$$
+\Gamma_{\rm in}(q,\zeta)
+=\log(1+q^2+e^{\zeta})-\log(1+q^2)-\log(1+e^{\zeta})
+$$
+
+получен точный свидетель
+
+$$
+\left.\frac{\partial\Gamma_{\rm in}}{\partial\zeta}
+\right|_{(q,\zeta)=(1,0)}=-\frac16.
+$$
+
+**Статус:** строго внутри минимальной ориентированной модели; физическое
+вложение резервуара условно.
+
+**Интуиция:** взаимно обратный спектр сам сохраняет единичный определитель.
+Ненулевой линейный ход появляется только после выбора входящей ветви.
+Симметричная связь возвращает нулевую первую производную, поэтому стрелка
+роста является существенной частью механизма.
+
+**Вхождения:**
+
+- `s2t/gates/version10_inflow_spectral_self_energy_running_parent_origin_gate.tex`;
+- [[version10-inflow-spectral-self-energy-running-parent-origin-gate]];
+- [[global-theorem-and-no-go-ledger]].
+
+### X-F4. Каноническая гиперзарядово-вакуумная подячейка
+
+$$
+\mathcal W_Y=\operatorname{span}\{|Y\rangle,|0\rangle\}
+\subset\mathcal K_{43},
+\qquad E_Y^*E_Y=I_2,
+$$
+
+$$
+K_{43}(\zeta)=I_{43}+(e^{-\zeta}-1)P_Y+(e^{\zeta}-1)P_0,
+\qquad \det K_{43}(\zeta)=1,
+$$
+
+$$
+E_Y^*K_{43}(\zeta)E_Y
+=\operatorname{diag}(e^{-\zeta},e^{\zeta}).
+$$
+
+Унаследованный родитель даёт противоположную границу:
+
+$$
+E_Y^*(I_{43}-P_0)E_Y=\operatorname{diag}(1,0),
+\qquad \partial_\zeta\operatorname{diag}(1,0)=0.
+$$
+
+**Статус:** вложение и ранги строгие; зависимость от `zeta` условна.
+
+**Интуиция:** проекту не требуется вводить новый двухмодовый носитель:
+нужная пара уже содержится в старой столкновительной ячейке. Не хватает не
+места для спектра, а родительского механизма, который заставляет его
+двигаться взаимно обратно при росте геометрии.
+
+**Вхождения:**
+
+- `s2t/gates/version10_inflow_spectral_self_energy_k43_typed_embedding_gate.tex`;
+- [[version10-inflow-spectral-self-energy-k43-typed-embedding-gate]];
+- [[global-theorem-and-no-go-ledger]].
+
+### X-F5. Геометрический родитель спектрального потока
+
+$$
+Q_X=P_0-P_Y,
+\qquad
+\operatorname{Tr}Q_X=0,
+\qquad
+Q_X^2=P_0+P_Y,
+$$
+
+$$
+\mathcal S_X[K]
+=\frac12\|K(0)-I_{43}\|_{\rm HS}^2
++\frac12\int\left\|K'-\frac12\{Q_X,K\}\right\|_{\rm HS}^2d\zeta.
+$$
+
+Нулевая траектория однозначно равна
+
+$$
+K_X(\zeta)=e^{\zeta Q_X}
+=I_{43}+(e^{-\zeta}-1)P_Y+(e^{\zeta}-1)P_0,
+\qquad \det K_X=1.
+$$
+
+**Статус:** строгий безразмерный спектральный закон; физическая мера роста
+и размерная калибровка открыты.
+
+**Интуиция:** экспоненты возникают не как подставленные коэффициенты, а как
+решение первого порядка, выбранное нулём положительного квадрата. Их
+взаимная обратность является следствием безследовости генератора.
+
+**Вхождения:**
+
+- `s2t/gates/version10_k43_reciprocal_spectral_operator_growth_parent_origin_gate.tex`;
+- [[version10-k43-reciprocal-spectral-operator-growth-parent-origin-gate]];
+- [[global-theorem-and-no-go-ledger]].
+
+### X-F6. Нормированная мера рождения и свободные часы
+
+При `x=exp(-S_vac)`:
+
+$$
+p_0=\frac1{1+x},
+\qquad
+p_1=\frac{x}{1+x},
+\qquad
+\Delta\zeta_{\rm step}
+=\frac13\log\frac{1+2x}{1+x}.
+$$
+
+Слабовесовые коэффициенты различаются:
+
+$$
+\left.\frac{d\Delta\zeta_{\rm step}}{dx}\right|_{x=0}=\frac13,
+\qquad
+\left.\frac{d}{dx}\frac{x}{\sqrt{8\pi}}\right|_{x=0}
+=\frac1{\sqrt{8\pi}}.
+$$
+
+Для непрерывной меры
+
+$$
+f(t)=r e^{-rt},
+\qquad
+\int_0^\infty f(t)dt=1,
+\qquad
+\mathbb E t=\frac1r,
+$$
+
+а преобразование `(r,t)->(cr,t/c)` оставляет закон неизменным.
+
+**Статус:** нормировка и безразмерный рост строгие; физический темп не
+выведен.
+
+**Интуиция:** вероятность отвечает на вопрос, как распределены исходы при
+заданном шаге, но не говорит, сколько физических секунд длится сам шаг.
+
+**Вхождения:**
+
+- `s2t/gates/version10_cell_birth_normalized_transition_measure_growth_rate_origin_gate.tex`;
+- [[version10-cell-birth-normalized-transition-measure-growth-rate-origin-gate]];
+- [[cell-birth-sequential-growth-sources-2026]];
+- [[global-theorem-and-no-go-ledger]].
+
+### X-F7. Общий относительный родитель рождения и часов
+
+На четырёхмерном носителе
+
+$$
+H_0=N_B\otimes I+I\otimes N_C=\operatorname{diag}(0,1,1,2),
+\qquad [H_0,G_B]=0,
+$$
+
+$$
+\operatorname{rank}G_B=2,
+\qquad \operatorname{Spec}G_B=\{-1^{(1)},0^{(2)},1^{(1)}\}.
+$$
+
+При
+
+$$
+k_X=\log\frac{1+2x}{1+x}=3\Delta\zeta,
+\qquad u=\chi^2,
+\qquad \rho=\frac{\Gamma_B}{\Omega}
+$$
+
+общий родитель
+
+$$
+\mathcal P_{BC}=\frac12(u-k_X)^2+\frac12(\rho-u)^2
+$$
+
+выбирает
+
+$$
+u=\rho=k_X,
+\qquad
+\operatorname{Hess}\mathcal P_{BC}=
+\begin{pmatrix}2&-1\\-1&1\end{pmatrix},
+\qquad \det=1.
+$$
+
+Поэтому
+
+$$
+\Gamma_B=k_X\frac{E_C}{\hbar},
+\qquad
+H_B=\Delta\zeta\frac{E_C}{\hbar},
+\qquad
+\frac{H_B}{\Omega}=\Delta\zeta.
+$$
+
+**Статус:** относительная связь выведена; абсолютная энергия часов не
+выведена, поскольку `(E_C,t)->(cE_C,t/c)` сохраняет все безразмерные
+следствия.
+
+**Вхождения:**
+
+- `s2t/gates/version10_cell_birth_clock_energy_common_parent_origin_gate.tex`;
+- [[version10-cell-birth-clock-energy-common-parent-origin-gate]];
+- [[global-theorem-and-no-go-ledger]].
+
+### X-F8. Круговость геометрического якоря часов
+
+Относительные связи между четырьмя размерными величинами задаются картой
+
+$$
+A_{\rm rel}=
+\begin{pmatrix}
+-1&1&0&0\\
+0&-1&1&0\\
+0&0&-1&1
+\end{pmatrix},
+\qquad
+\operatorname{rank}A_{\rm rel}=3,
+\qquad
+\operatorname{nullity}A_{\rm rel}=1,
+$$
+
+$$
+A_{\rm rel}(1,1,1,1)^T=0.
+$$
+
+Космологический кандидат, построенный из того же роста, равен
+
+$$
+H_B=\Delta\zeta\frac{E_C}{\hbar},
+\qquad
+\Lambda_{\rm growth}=3\left(\frac{H_B}{c}\right)^2,
+$$
+
+$$
+E_\Lambda=\hbar c\sqrt{\frac{\Lambda_{\rm growth}}3}
+=\Delta\zeta E_C,
+\qquad
+\frac{E_\Lambda}{\Delta\zeta}=E_C.
+$$
+
+**Статус:** последнее равенство является круговым тождеством и не снимает
+масштабную орбиту. Девять кандидатов покрывают все пять критериев, но дают
+`0/9` полных проходов.
+
+**Вхождения:**
+
+- `s2t/gates/version10_cell_birth_clock_energy_geometric_anchor_candidate_audit_gate.tex`;
+- [[version10-cell-birth-clock-energy-geometric-anchor-candidate-audit-gate]];
+- [[global-theorem-and-no-go-ledger]].
+
 ## Что ещё требуется добавить
+
+### X-F37. Финальные реестры Тома X
+
+$$
+n_{X,\mathrm{op}}^{\mathrm{cond}}=(1,1,1,1,1,1)^T,
+\qquad
+n_{X,\mathrm{op}}^{\mathrm{phys}}=(1,0,1,0,1,1)^T,
+$$
+
+$$
+n_{X,\mathrm{RG}}^{\mathrm{phys}}=(1,1,0,0,0,1)^T,
+\qquad
+a_{\mathrm{reopen}}^{\mathrm{phys}}=(0,0,0,0)^T.
+$$
+
+Операционный physical score равен `4/6`, более сильный inherited
+quantum-RG score — `3/6`. Том X заморожен; Том XI имеет specification
+`6/6` и construction `0/6`. См.
+[[version10-final-conclusion-and-tome11-program-gate]].
+
+### X-F36. Shift-symmetry no-go и условное Stückelberg-удвоение
+
+$$
+G_Y=\operatorname{diag}(40,40,0,48,48,0,40,40),
+\qquad \rank G_Y=6,
+\qquad \nullity G_Y=2.
+$$
+
+Для `T_req=I8` имеем `rank(G_Y T_req)=6`: полный shift не является
+symmetry. Условно, для `D=(I8,-I8)` и diagonal shift `T_diag=(I8,I8)^T`,
+
+$$
+DT_{\rm diag}=0,
+\qquad
+H_{\rm St}=D^TG_YD,
+\qquad
+\rank H_{\rm St}=6,
+\qquad
+\nullity H_{\rm St}=10.
+$$
+
+Gauge fixing `F=QY_Sigma` имеет FP determinant `3969`, но inherited
+Stückelberg-copy rank равен `0`. См.
+[[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-mathai-quillen-shift-symmetry-parent-origin-gate]].
+
+### X-F35. Odd Thom-пара и shift-generator deficit
+
+$$
+\Omega_Q=\begin{pmatrix}0&Q\\-Q&0\end{pmatrix},
+\qquad
+\rank\Omega_Q=16,
+\qquad
+\det\Omega_Q=(\det Q)^2=3969^2.
+$$
+
+Условная paired Berezin measure невырождена. Однако Thom ghost требует
+
+$$
+T_{\rm shift}=I_8,
+\qquad \rank T_{\rm shift}=8,
+$$
+
+а обычное gauge action `delta Sigma=rho(epsilon)Sigma` при `Sigma=0`
+имеет translational rank `0`. Аудит `12x7` имеет полный критериальный rank
+`7`, pass-vector `0/12`; shift-BRST route получает `6/7`, физические
+фермионы — `4/7`. См.
+[[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-mathai-quillen-odd-pair-statistics-candidate-audit-gate]].
+
+### X-F34. Полный Thom-квартет и determinant cancellation
+
+$$
+S_{\rm sus}=I_{16}-2P_{\rm rel},
+\qquad
+d_{\rm car}=P_-S_{\rm sus}P_+,
+\qquad d_{\rm car}^2=0,
+\qquad \rank d_{\rm car}=8.
+$$
+
+Для квартета `(Sigma,psi_Sigma,chi_Sigma,H_Sigma)` differential имеет
+rank `16` на 32-мерном поле и нулевую cohomology. При секции `Q Sigma`
+
+$$
+\mathcal H_B=Q^2\oplus I_8,
+\qquad
+\det\mathcal H_B=(\det Q)^2=3969^2,
+\qquad
+\det Q=3969,
+$$
+
+поэтому normalized Gaussian--Berezin determinant ratio равен `1`.
+Conditional status `7/8`; current parent не содержит шестнадцати odd
+направлений и остаётся на `3/8`. См.
+[[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-mathai-quillen-thom-multiplet-common-parent-origin-gate]].
+
+### X-F33. Suspension-discriminator и Thom auxiliary copy
+
+$$
+\Gamma_{\rm sus}=\operatorname{diag}(I_8,-I_8),
+\qquad
+S_{\rm sus}=\begin{pmatrix}0&I_8\\I_8&0\end{pmatrix},
+\qquad
+\{\Gamma_{\rm sus},S_{\rm sus}\}=0.
+$$
+
+Bare suspension имеет нулевой dynamical-injection rank. Минимальная
+Mathai--Quillen-достройка использует contractible differential
+
+$$
+d_{\rm MQ}=\begin{pmatrix}0&0\\I_8&0\end{pmatrix},
+\qquad d_{\rm MQ}^2=0,
+\qquad \rank d_{\rm MQ}=8,
+$$
+
+и секцию `s_Q=Q Sigma`. Gaussian elimination блока
+
+$$
+\begin{pmatrix}I_8&Q\\Q&49I_8\end{pmatrix}
+$$
+
+даёт
+
+$$
+49I_8-Q^2=\operatorname{diag}(40,40,0,48,48,0,40,40).
+$$
+
+Чистая suspension закрывает `3/7`, условный Thom-мультиплет — `6/7`;
+inherited cohomological differential и measure остаются открыты. См.
+[[version10-particle-wrinkle-dislocation-callias-equal-charge-twist-m4-h15-r2-superconnection-suspension-auxiliary-copy-parent-origin-gate]].
+
+### X-F32. Путевой кандидат и температурно-энергетическое ядро
+
+$$
+\binom{a_h}{a_c}
+=\binom{1}{2}\log2
+=\binom{\log2}{2\log2}.
+$$
+
+Однако `a_r=beta_r Delta` сохраняется при
+
+$$
+(\beta_h,\beta_c,\Delta)
+\longmapsto(\beta_h/c,\beta_c/c,c\Delta).
+$$
+
+Матрица двух KMS-произведений имеет ранг/ядро `2/1` с ядром
+`(-1,-1,1)` в логарифмических переменных. Путевые длины дают точный
+кандидат общего сдвига, но не физическую температуру. См.
+[[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-two-reservoir-common-affinity-temperature-anchor-candidate-audit-gate]].
+
+### X-F31. Хопфовское происхождение разности сродств
+
+$$
+\mathcal A_{\rm cycle}=3\log2,\qquad
+\mathcal A_{\rm edge}=\frac{\mathcal A_{\rm cycle}}3=\log2,
+$$
+
+$$
+\mathcal A_c-\mathcal A_h
+=2\log2-\log2
+=\log\frac{1/2}{1/4}
+=\log2.
+$$
+
+Матрица отношений имеет ранг/ядро `2/1`: цикл выводит разность сродств, но
+не общий сдвиг температур. Сопоставление `J_edge=kappa/3` с `1/66` фиксирует
+лишь `kappa Delta t=1/22`. См.
+[[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-two-reservoir-affinity-hopf-cycle-typed-origin-gate]].
+
+### X-F30. Неравновесный двухрезервуарный ток
+
+$$
+P=\begin{pmatrix}7/8&1/3\\1/8&2/3\end{pmatrix},
+\qquad
+\pi=\begin{pmatrix}8/11\\3/11\end{pmatrix},
+\qquad P\pi=\pi.
+$$
+
+$$
+J_h=\frac1{66},\qquad J_c=-\frac1{66},\qquad
+\dot S=J_h\log2=\frac{\log2}{66}>0.
+$$
+
+Две ванны снимают равновесный запрет на чистый ток, но их вероятности и
+абсолютный темп пока не выведены родителем. См.
+[[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-k43-nonequilibrium-two-reservoir-output-current-parent-admission-gate]].
+
+### X-F29. KMS-канал одной шестой
+
+$$
+p_\downarrow=\frac16,\qquad p_\uparrow=\frac1{12},
+\qquad \frac{p_\uparrow}{p_\downarrow}=e^{-\log2}=\frac12.
+$$
+
+Канал фиксирует `rho_KMS=diag(2/3,1/3)`, но
+
+$$
+J_\downarrow=\frac1{18}=J_\uparrow,\qquad J_{\rm net}=0.
+$$
+
+Следовательно, `1/6` реализуемо как вероятность перехода, но конечный
+детальный баланс не поддерживает сквозной ток. См.
+[[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-k43-kms-output-channel-parent-origin-gate]].
+
+### X-F28. Положительная выходная доля K43
+
+При `x=exp(zeta)>0`
+
+$$
+\mathcal A(q,x)
+=-\frac{xq^2}{(1+x)(1+q^2+x)},
+\qquad
+R_{\rm out}:=-\mathcal A
+=\frac{xq^2}{(1+x)(1+q^2+x)}.
+$$
+
+Причём
+
+$$
+1-R_{\rm out}
+=\frac{q^2+(x+1)^2}{(x+1)(q^2+x+1)}>0,
+\qquad
+R_{\rm out}(1,1)=\frac16.
+$$
+
+Перевод в нормированную плотность задаётся клеточной мерой:
+
+$$
+d_{\rm out}
+=\frac{R_{\rm out}}{v_{\rm cell}}
+=\frac{4\alpha^2R_{\rm out}}{\beta_E^2}m^2.
+$$
+
+Баланс с `d_in=n_flow log2/v_cell` выбирает лишь
+`n_flow log2=R_out`; масштаб сокращается. См.
+[[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-k43-output-density-morphism-origin-gate]].
+
+### X-F27. Частичные спектральные коэффициенты дыхания
+
+Ориентированный спектральный отклик даёт
+
+$$
+\mathcal A(1,0)=-\frac16,
+\qquad -\mathcal A(1,0)=\frac16>0,
+$$
+
+а родитель взаимно обратного спектра выбирает
+
+$$
+\Sigma_{\rm in}=e^\zeta,
+\qquad
+\left.\frac{d\Sigma_{\rm in}}{d\zeta}\right|_{\zeta=0}=1.
+$$
+
+Конечный спектр ячейки независимо даёт относительный cutoff
+
+$$
+\Lambda\ell_{\rm cell}=42.
+$$
+
+Эти данные являются кандидатами для `epsilon`, `b_A` и `mu_spec`, но между
+ними отсутствуют соответственно морфизм в плотность выхода, отождествление
+`zeta=log(m/mu_spec²)` и абсолютная длина. Матрица двенадцати кандидатов
+имеет ранг `6`, максимум `5/6` и `0/12` полных проходов. См.
+[[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-spectral-coefficient-origin-candidate-audit-gate]].
+
+### X-F26. Сквозной баланс аномального дыхания
+
+Из `v_cell=beta_E²/(4 alpha²m²)` и энтропии прохода `log2` следует
+
+$$
+d_{\rm in}=\frac{n_{\rm flow}\log2}{v_{\rm cell}}
+=C_{\rm flow}m^2,
+\qquad
+C_{\rm flow}=\frac{4\alpha^2n_{\rm flow}\log2}{\beta_E^2}.
+$$
+
+Для ведущего выхода `d_out^(0)=epsilon m²` баланс факторизуется:
+
+$$
+d_{\rm in}-d_{\rm out}^{(0)}
+=m^2(C_{\rm flow}-\varepsilon).
+$$
+
+При `m>0` выбирается только `epsilon=C_flow`. Логарифмическая аномалия
+
+$$
+d_{\rm out}=\varepsilon m^2
+\left(1+b_A\log\frac{m}{\mu_{\rm spec}^2}\right)
+$$
+
+условно даёт
+
+$$
+\log\frac{m}{\mu_{\rm spec}^2}
+=\frac{C_{\rm flow}/\varepsilon-1}{b_A}.
+$$
+
+На `(m,mu_spec²,v_cell,d)` размерная карта имеет ранг/ядро `3/1` и ядро
+`(-1,-1,2,-2)`. Поэтому потоковое дыхание реализует условное схлопывание
+при нулевом притоке, но не выбирает абсолютный масштаб. См.
+[[version10-cell-birth-four-volume-induced-newton-breathing-anomaly-throughflow-scale-parent-admission-gate]].
+
+### X-F25. RG-отношение и планковский коэффициент
+
+$$
+b=2,\qquad g^2(\mu_{\rm spec})=\frac38,
+\qquad
+\log\frac{\Lambda_L}{\mu_{\rm spec}}=\frac{32\pi^2}{3},
+$$
+
+$$
+\log\frac{m_{\rm DT}}{\mu_{\rm spec}^2}=\frac{64\pi^2}{3}.
+$$
+
+Планковская самосогласованность даёт
+
+$$
+m g_N=1,\qquad 16\pi\beta_E m g_N=1
+\quad\Longrightarrow\quad
+\boxed{\beta_E=\frac1{16\pi}}.
+$$
+
+На `(m,mu_spec²,g_N)` размерная карта имеет ранг/ядро `2/1` и ядро
+`(1,1,-1)`. Поэтому выбирается безразмерный коэффициент, но не абсолютный
+`G`. См.
+[[version10-cell-birth-four-volume-induced-newton-dimensional-transmutation-beta-parent-origin-gate]].
+
+### X-F24. Нулевая мода масштабного семени
+
+Для переменных `(m,q,E_C,kappa,Lambda)` относительная карта равна
+
+$$
+C_m=\begin{pmatrix}
+1&1&0&0&0\\
+1&0&-2&0&0\\
+1&0&0&-2&0\\
+1&0&0&0&-1
+\end{pmatrix},
+\qquad \rank C_m=4,
+\qquad C_m(-2,2,-1,-1,-2)^T=0.
+$$
+
+Она сохраняет `mq`, `m/E_C²`, `m/kappa²` и `m/Lambda`. Наблюдаемое
+`G` лишь обращает `m=1/(16 pi beta g_N)`, а dimensional transmutation
+требует отдельного происхождения `beta(g)` и граничной связи. См.
+[[version10-cell-birth-four-volume-induced-newton-scale-seed-candidate-audit-gate]].
+
+### X-F23. Индуцированная ньютоновская площадь
+
+$$
+g_N=\frac{\hbar G}{c^3},\qquad 16\pi g_NB=1,
+\qquad A=\alpha m^2,\qquad B=\beta m,
+$$
+
+$$
+q=\frac{\beta}{2\alpha m},\qquad
+g_N=\frac{1}{16\pi\beta m},\qquad
+\boxed{\frac{g_N}{q}=\frac{\alpha}{8\pi\beta^2}}.
+$$
+
+Последнее отношение не содержит масштабного семени `m`. Однако карта
+условий на `(g_N,B,m,q)` имеет ранг/ядро `3/1` и ядро
+`(1,-1,-1,1)`: абсолютные `g_N`, `q` и `G` не выбраны. См.
+[[version10-cell-birth-four-volume-induced-newton-constant-parent-origin-gate]].
+
+### X-F22. Пакетный аудит эйнштейновских якорей
+
+Для меню `G`, `Theta`, `v_cell`, `T_flow` получены
+
+$$
+\operatorname{rank}(M_i)=(3,4,2,3),
+\qquad
+\max\operatorname{score}(M_i)=(3,4,4,4),
+$$
+
+при нулевых векторах полных проходов. Объединённая матрица `16x5` имеет
+ранг `5`, матрица независимости пакета равна `I_4`, а текущая доступность —
+`(0,0,0,0)^T`. См.
+[[version10-cell-birth-four-volume-einstein-response-anchor-package-candidate-audit-gate]].
+
+### X-F21. Эйнштейновский мост энтропии к абсолютной проводимости
+
+$$
+\rho_{\rm flow}
+=\frac{\Theta\sigma_\circlearrowright\tau_{\rm res}}{v_{\rm cell}},
+\qquad
+\tau_{\rm res}=\frac1\kappa,
+\qquad
+\rho_{\rm flow}=\frac{\Theta\log2}{v_{\rm cell}},
+$$
+
+$$
+\Lambda_E=\frac{8\pi G\rho_{\rm flow}}{c^4},
+\qquad
+\Lambda_E=\frac{\kappa^2}{3c^2}
+\Longrightarrow
+\boxed{\kappa^2=
+\frac{24\pi G\Theta\log2}{c^2v_{\rm cell}}}.
+$$
+
+Это условная, но не круговая формула масштаба. На переменных
+`(kappa,G,Theta,v_cell)` она даёт одну строку ранга `1` и ядро размерности
+`3`; независимое происхождение трёх размерных якорей и тензора энергии
+остаётся открытым. См.
+[[version10-cell-birth-four-volume-cosmological-constant-einstein-response-coupling-origin-gate]].
+
+### X-F20. Диссипативный родитель космологической кривизны
+
+$$
+F_\circlearrowright=3\log2,
+\qquad
+\sigma_\circlearrowright=\kappa\log2,
+$$
+
+$$
+\Lambda_{\rm flow}
+=\frac{3\sigma_\circlearrowright^2}{c^2F_\circlearrowright^2}
+=\frac{\kappa^2}{3c^2}.
+$$
+
+Для нормировок
+
+$$
+s=\frac{\sigma_\circlearrowright}{\kappa\log2},
+\qquad
+u=\frac{\Lambda c^2F_\circlearrowright^2}{3\sigma_\circlearrowright^2}
+$$
+
+условный положительный родитель равен
+
+$$
+\mathcal P_{\Lambda\mid\rm flow}
+=\frac12(s-1)^2+\frac12(u-s)^2.
+$$
+
+Он выбирает `s=u=1`, но связь `u=s` не унаследована существующим действием.
+Масштабные веса `(kappa,sigma,Lambda)=(1,1,2)` оставляют одну нулевую моду.
+См. [[version10-cell-birth-four-volume-cosmological-constant-throughflow-parent-origin-gate]].
+
+### X-F19. Космологическая постоянная и проводимость
+
+$$
+H_B=\frac{\kappa}{3},
+\qquad
+\Lambda_{\rm growth}=3\left(\frac{H_B}{c}\right)^2
+=\frac{\kappa^2}{3c^2},
+$$
+
+$$
+c\sqrt{3\Lambda_{\rm growth}}=\kappa,
+\qquad
+\kappa\sqrt{\frac{3}{\Lambda_{\rm growth}}}=3c.
+$$
+
+Эти формулы доказывают совместимость геометрической кривизны и проводимости,
+но не независимое происхождение масштаба: `Lambda_growth` построена из той же
+`kappa`. Карта на `(kappa,Gamma_B,Omega,H_B,Lambda)` имеет ранг/ядро `4/1`
+и масштабный вектор `(1,1,1,1,2)`. См.
+[[version10-cell-birth-four-volume-cosmological-constant-conductance-anchor-candidate-audit-gate]].
+
+### X-F18. Общий родитель проводимости и рождения
+
+$$
+k_X=\log\frac{1+2x}{1+x}=3\Delta\zeta,
+\qquad
+r_B=\frac{\Gamma_B}{\Omega},
+\qquad
+r_\kappa=\frac{\kappa}{\Omega},
+$$
+
+$$
+\mathcal P_\kappa
+=\frac12(r_B-k_X)^2+\frac12(r_\kappa-r_B)^2,
+\qquad
+\operatorname{Hess}\mathcal P_\kappa=
+\begin{pmatrix}2&-1\\-1&1\end{pmatrix}.
+$$
+
+Единственный минимум выбирает
+
+$$
+\kappa=\Gamma_B=k_X\Omega,
+\qquad
+\frac{J_{\rm edge}}{\Omega}=\Delta\zeta,
+\qquad
+\frac{\sigma_\circlearrowright}{\Omega}=3\Delta\zeta\log2.
+$$
+
+Два относительных условия на три частоты имеют ранг/ядро `2/1`; вектор
+`(1,1,1)` порождает общую масштабную орбиту. См.
+[[version10-cell-birth-four-volume-hopf-cycle-conductance-common-parent-origin-gate]].
+
+### X-F17. Канонический цикл в произведении K43 и КМС
+
+$$
+\dim(K_{43}\otimes H_{\rm KMS})=43\cdot6=258,
+$$
+
+$$
+E_\times=(|0,\Omega\rangle,|Y,\Omega\rangle,|0,s\rangle),
+\qquad E_\times^*E_\times=I_3.
+$$
+
+$$
+L_\times=E_\times L_\circlearrowright E_\times^*,
+\qquad J_{\rm edge}=\kappa/3,
+\qquad \sigma=\kappa\log2.
+$$
+
+Вложение одновременно канонично и марковски положительно. Остаточная орбита
+`(kappa,t)->(c kappa,t/c)` сохраняет абсолютную проводимость открытой. См.
+[[version10-cell-birth-four-volume-hopf-cycle-k43-kms-product-embedding-gate]].
+
+### X-F16. Дихотомия вложения хопфовского цикла в K43
+
+Координатное вложение
+
+$$
+E_a=(|0\rangle,|Y\rangle,|T_a\rangle)
+$$
+
+сохраняет марковскую положительность, но имеет 30 равноправных выборов.
+Симметричная линия
+
+$$
+|T_{\rm sym}\rangle=30^{-1/2}\sum_{a=1}^{30}|T_a\rangle
+$$
+
+даёт для разных транспортных меток элементы `-kappa/10`; их число равно
+`30*29=870`. Матрица требований равна `diag(1,1)`, полных проходов `0/2`.
+См. [[version10-cell-birth-four-volume-hopf-cycle-k43-typed-embedding-gate]].
+
+### X-F15. Ориентированный цикл силы и проводимости
+
+$$
+L=\kappa
+\begin{pmatrix}
+-3&1&2\\2&-3&1\\1&2&-3
+\end{pmatrix},
+\qquad p_*=\frac13(1,1,1)^T.
+$$
+
+$$
+J_{\rm edge}=\frac{\kappa}{3},
+\qquad F_\circlearrowright=3\log2,
+\qquad \sigma=\kappa\log2.
+$$
+
+Преобразование `(kappa,t)->(c kappa,t/c)` сохраняет силу и стационарное
+состояние, но масштабирует ток. Поэтому абсолютная проводимость остаётся
+`0/1`. См.
+[[version10-cell-birth-four-volume-throughflow-affinity-impedance-origin-audit-gate]].
+
+### X-F14. Геометрия, поддерживаемая сквозным током
+
+$$
+J_{\rm in}=J_{\rm out}=J>0,
+\qquad \dot N=0,
+\qquad \Theta=2J,
+\qquad \sigma=FJ>0.
+$$
+
+$$
+\mathcal P_{\rm flow}(x)
+=\frac{\lambda}{4}\left(x^2-\frac{g\sigma}{\lambda}\right)^2,
+\qquad x_*^2=\frac{g\sigma}{\lambda},
+\qquad \mathcal P''(x_*)=2g\sigma.
+$$
+
+При `J=0` остаётся `lambda x^4/4`, и ненулевая ветвь исчезает. Сквозной ток
+объясняет динамическое поддержание геометрии, но карта масштаба имеет
+ранг/ядро `2/1`. См.
+[[version10-cell-birth-four-volume-induced-gravity-coefficient-parent-origin-gate]].
+
+### X-F13. Масштабное семя коэффициентов кривизны
+
+$$
+A=\alpha m^2,\qquad B=\beta m,
+\qquad \frac{B^2}{A}=\frac{\beta^2}{\alpha}.
+$$
+
+$$
+q_*=\frac{\beta}{2\alpha m},
+\qquad q_*m=\frac{\beta}{2\alpha},
+\qquad (q,m)\mapsto(s^2q,m/s^2).
+$$
+
+Восемь кандидатов дают `0/8`; размерно правильная пара коэффициентов
+переносит, но не уничтожает абсолютную масштабную свободу. См.
+[[version10-cell-birth-four-volume-curvature-coefficient-origin-candidate-audit-gate]].
+
+### X-F12. Кривизна и перенос масштаба в коэффициенты
+
+$$
+v=\ell^4,\qquad R=\frac{12}{\ell^2},\qquad
+vR=12\ell^2,\qquad vR^2=144.
+$$
+
+$$
+\mathcal P_R(q)=Aq^2-Bq+\frac{B^2}{4A}
+=A\left(q-\frac{B}{2A}\right)^2,qquad q_*=\frac{B}{2A}.
+$$
+
+Преобразование `(q,A,B)->(s²q,A/s⁴,B/s²)` сохраняет родитель. Карта
+ограничений имеет ранг/ядро `2/1` и ядро `(-2,-1,1)`. Кривизна создаёт
+условный минимум, но не выводит абсолютный масштаб. См.
+[[version10-cell-birth-four-volume-curvature-density-parent-origin-gate]].
+
+### X-F11. Топологическая кратность без кванта объёма
+
+$$V=n v_0,\qquad \rho_{\rm top}=n/V,\qquad \rho_{\rm top}V=n.$$
+
+Родитель кратности имеет гессиан `diag(1,0)`: целое `n` фиксируется, а
+`v0` остаётся нулевой модой. См.
+[[version10-cell-birth-four-volume-topological-quantum-candidate-audit-gate]].
+
+### X-F10. Спектральный счёт и орбита обрезания
+
+$$D_{\rm cell}=\ell_{\rm cell}^{-1}\operatorname{diag}(0,\ldots,42),
+\qquad \Lambda\ell_{\rm cell}=42,
+\qquad \ell_{\rm cell}^2\operatorname{Tr}D_{\rm cell}^2=25585.$$
+
+Гессиан счётного родителя равен `[[1,1],[1,1]]`, имеет ранг/ядро `1/1`.
+См. [[version10-cell-birth-four-volume-spectral-counting-measure-origin-gate]].
+
+### X-F9. Собственный объём и остаточная масштабная мода
+
+$$
+G_{\rm cell}=\ell_{\rm cell}^2I_4,
+\qquad v_{\rm cell}=\sqrt{\det G_{\rm cell}}=\ell_{\rm cell}^4,
+\qquad V_{N+1}-V_N=v_{\rm cell}.
+$$
+
+$$
+Y=\frac{E_C^4v_{\rm cell}}{(\hbar c)^4},
+\qquad Y=1\Longleftrightarrow E_C\ell_{\rm cell}=\hbar c.
+$$
+
+Общий гессиан имеет ранг/ядро `3/1`; его нулевая мода соответствует
+`(E_C,ell_cell)->(E_C/s,s ell_cell)`. См.
+[[version10-cell-birth-intrinsic-four-volume-parent-origin-gate]].
 
 Атлас покрывает канонические формулы итоговых заключений и глобального
 реестра. Следующие расширения должны выполняться отдельными проходами, не

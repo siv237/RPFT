@@ -1,0 +1,127 @@
+\chapter{Морфизм \texorpdfstring{$K_{43}$}{K43}-отклика в плотность выхода}
+\label{ch:v10-breathing-k43-output-density-morphism}
+
+\section{Точный знак ориентированного отклика}
+
+Положим $x=e^\zeta>0$. Следовой отклик ориентированной входящей
+самоэнергии переписывается без логарифмов:
+\begin{equation}
+ \mathcal A(q,x)
+ =\frac{x}{1+q^2+x}-\frac{x}{1+x}
+ =-\frac{xq^2}{(1+x)(1+q^2+x)}.
+ \label{eq:v10-k43-output-trace-response}
+\end{equation}
+Для $q>0$ он строго отрицателен. Из двух линейных знаковых отображений
+$\mathcal A\mapsto\pm\mathcal A$ условию положительного выхода удовлетворяет
+только
+\begin{equation}
+ R_{\rm out}(q,x):=-\mathcal A(q,x)
+ =\frac{xq^2}{(1+x)(1+q^2+x)}>0.
+ \label{eq:v10-k43-output-fraction}
+\end{equation}
+Кроме того,
+\begin{equation}
+ 1-R_{\rm out}
+ =\frac{q^2+(x+1)^2}{(x+1)(q^2+x+1)}>0,
+ \label{eq:v10-k43-output-subunit}
+\end{equation}
+поэтому $R_{\rm out}$ является допустимой субединичной потерей на одну
+ячейку. В канонической точке $q=x=1$ получаем
+\begin{equation}
+ R_{\rm out}(1,1)=\frac16.
+ \label{eq:v10-k43-output-witness}
+\end{equation}
+
+\section{Перевод из потери на ячейку в плотность}
+
+Используем уже выбранную геометрическую меру
+\begin{equation}
+ v_{\rm cell}=\frac{\beta_E^2}{4\alpha^2m^2}.
+\end{equation}
+Единственный локальный перевод без нового размерного коэффициента равен
+\begin{equation}
+ d_{\rm out}
+ :=\frac{R_{\rm out}}{v_{\rm cell}}
+ =\frac{4\alpha^2R_{\rm out}}{\beta_E^2}m^2
+ =\varepsilon_{43}m^2,
+ \qquad
+ \varepsilon_{43}
+ =\frac{4\alpha^2R_{\rm out}}{\beta_E^2}.
+ \label{eq:v10-k43-output-density}
+\end{equation}
+При $q=x=1$ условный коэффициент равен
+\begin{equation}
+ \varepsilon_{43}^{*}
+ =\frac{2\alpha^2}{3\beta_E^2}.
+ \label{eq:v10-k43-output-epsilon-witness}
+\end{equation}
+Таким образом, число $1/6$ не является самим коэффициентом плотности:
+оно является выходной долей на ячейку, которую ещё необходимо умножить на
+$1/v_{\rm cell}$.
+
+\section{Баланс со сквозным притоком}
+
+Для
+\begin{equation}
+ d_{\rm in}=\frac{n_{\rm flow}\log2}{v_{\rm cell}}
+\end{equation}
+разность принимает вид
+\begin{equation}
+ d_{\rm in}-d_{\rm out}
+ =\frac{4\alpha^2m^2}{\beta_E^2}
+ \left(n_{\rm flow}\log2-R_{\rm out}\right).
+ \label{eq:v10-k43-output-balance}
+\end{equation}
+Ненулевая стационарная ветвь выбирает слепое условие
+\begin{equation}
+ \boxed{n_{\rm flow}\log2=R_{\rm out}},
+ \label{eq:v10-k43-output-blind-balance}
+\end{equation}
+но общий множитель $m^2$ вновь сокращается.
+
+\section{Условный родитель и физическая граница}
+
+Нормированные отношения знака $u_R$, плотности $u_d$ и баланса $u_B$
+собираются в
+\begin{equation}
+ \mathcal P_{43\to{\rm out}}
+ =\frac12(u_R-1)^2
+ +\frac12(u_d-u_R)^2
+ +\frac12(u_B-u_d)^2.
+ \label{eq:v10-k43-output-parent}
+\end{equation}
+Его гессиан равен
+\begin{equation}
+ \begin{pmatrix}2&-1&0\\-1&2&-1\\0&-1&1\end{pmatrix},
+\end{equation}
+имеет ранг $3$, определитель $1$ и ведущие миноры $(2,3,1)$.
+Размерная карта сохраняет ранг/ядро $3/1$ и образующий
+$(-1,-1,2,-2)$.
+
+\begin{theorem}[Единственный положительный знаковый морфизм]
+Для ориентированного $K_{43}$-отклика при $q,x>0$ прямое отображение
+$R=\mathcal A$ отрицательно, тогда как $R=-\mathcal A$ строго лежит между
+$0$ и $1$. Деление на $v_{\rm cell}$ даёт положительную плотность
+$d_{\rm out}=\varepsilon_{43}m^2$.
+\end{theorem}
+
+\begin{nogocriterion}[Положительный отклик ещё не является физическим каналом]
+Положительность и субединичность допускают $R_{\rm out}$ как выходную долю,
+но не доказывают существование KMS-совместимого полностью положительного
+канала или GKSL-генератора, поток которого равен $R_{\rm out}$. Кроме того,
+$\alpha$, $\beta_E$ и абсолютный масштаб остаются невыведенными.
+\end{nogocriterion}
+
+\begin{protocol}[Статус морфизма выхода]\begin{enumerate}
+\item унаследованные ингредиенты: \textbf{$4/4$};
+\item условная архитектура: \textbf{$10/10$};
+\item условное алгебраическое замыкание: \textbf{$8/8$};
+\item положительный субединичный морфизм: \textbf{условно $1/1$};
+\item физический открытый канал: \textbf{$0/1$};
+\item происхождение коэффициентов и масштаба: \textbf{$0/2$};
+\item абсолютный масштаб: \textbf{$0/1$};
+\item следующий гейт: \textbf{KMS-совместимый выходной канал}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_output_density_morphism_origin_gate_results.json}.

@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-02",
+  "exact_chain": {
+    "Lambda43_ell_cell": "42",
+    "mu_spec_ell_cell": "exp(-32*pi^2/3)",
+    "mu_spec_over_Lambda43": "exp(-32*pi^2/3)/42",
+    "resolution": "exp(32*pi^2/3)"
+  },
+  "external_identification_audit": {
+    "proton_1e20_exact_match": false,
+    "second_1e43_exact_match": false
+  },
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_rg_invariant_readout_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_physical_mode_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_minimal_portal_operator_architecture_gate",
+  "proofdsl": {
+    "certificate_sha256": "1aa94fd574d301c527990be9f2387b937d13a7e65651be56b2b883c91c5b340a",
+    "floating_point_values": 0,
+    "obligation_count": 23,
+    "status": "lcf-checked"
+  },
+  "rank_audit": {
+    "derived_row_is_dependent": true,
+    "parent_map": "2/1",
+    "with_derived_resolution_row": "2/1"
+  },
+  "resolution": {
+    "decimal_scientific": "5.2564248e45",
+    "scale_orbit_invariant": true,
+    "spatial_temporal_equal_if_ell_equals_c_tau": true
+  },
+  "status": {
+    "absolute_scale_required_for_resolution": false,
+    "conditional_architecture": "10/10",
+    "physical_mode_typing": "0/3",
+    "relational_consequences": "7/7"
+  },
+  "verdict": {
+    "absolute_cell_size_is_derived": false,
+    "absolute_cell_size_is_needed_for_internal_resolution": false,
+    "dimensionless_resolution_is_derived_conditionally": true,
+    "proton_identification_is_derived": false
+  }
+}

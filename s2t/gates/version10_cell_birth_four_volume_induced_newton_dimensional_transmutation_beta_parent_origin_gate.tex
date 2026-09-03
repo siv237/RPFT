@@ -1,0 +1,113 @@
+\chapter{Размерностная трансмутация и планковская самосогласованность}
+\label{ch:v10-induced-newton-dimensional-transmutation}
+
+\section{Две различные бета-величины}
+
+Необходимо различать однопетлевой коэффициент $b$ функции
+$\beta_g=\mu\,dg/d\mu$ и безразмерный коэффициент $\beta_E$ в
+$B=\beta_E m$. Совпадение названий не является физической связью.
+
+Ранний relative-$U(1)$ сектор строго дал
+\begin{equation}
+ b=2,
+ \qquad g^2(\mu_{\rm spec})=\frac38.
+ \label{eq:v10-newton-dt-inherited-data}
+\end{equation}
+Поэтому однопетлевое отношение Ландау равно
+\begin{equation}
+ \log\frac{\Lambda_L}{\mu_{\rm spec}}
+ =\frac{8\pi^2}{b g^2(\mu_{\rm spec})}
+ =\frac{32\pi^2}{3}.
+ \label{eq:v10-newton-dt-landau-ratio}
+\end{equation}
+Для семени обратной площади $m_{\rm DT}=\Lambda_L^2$ получается
+\begin{equation}
+ \log\frac{m_{\rm DT}}{\mu_{\rm spec}^2}
+ =\frac{64\pi^2}{3}.
+ \label{eq:v10-newton-dt-seed-ratio}
+\end{equation}
+Это точное безразмерное отношение, но при положительном $b$ оно описывает
+ультрафиолетовый полюс Ландау, а не инфракрасную гравитационную щель.
+Кроме того, перенос этих данных в текущий ньютоновский носитель не выведен.
+
+\section{Планковская самосогласованность}
+
+Ранняя метафора локальных планковских часов соответствует условию
+\begin{equation}
+ m g_N=1,
+ \qquad g_N=\frac{\hbar G}{c^3}.
+ \label{eq:v10-newton-dt-planck-condition}
+\end{equation}
+Вместе с эйнштейновским равенством
+\begin{equation}
+ 16\pi\beta_E m g_N=1
+ \label{eq:v10-newton-dt-einstein-condition}
+\end{equation}
+оно выбирает только
+\begin{equation}
+ \boxed{\beta_E=\frac1{16\pi}}.
+ \label{eq:v10-newton-dt-beta-E}
+\end{equation}
+Размерная величина сокращается. Следовательно, планковская самоссылка может
+условно выбрать безразмерную нормировку, но не абсолютное значение $G$.
+
+\section{Условный общий родитель}
+
+Введём нормированные переменные
+\begin{equation}
+ u_{\rm RG}=\frac{m}{\mu_{\rm spec}^2\exp(64\pi^2/3)},
+ \qquad u_P=m g_N,
+ \qquad u_E=16\pi\beta_E m g_N.
+\end{equation}
+Они собираются в положительный родитель
+\begin{equation}
+ \mathcal P_{\rm DT}
+ =\frac12(u_{\rm RG}-1)^2
+ +\frac12(u_P-u_{\rm RG})^2
+ +\frac12(u_E-u_P)^2.
+ \label{eq:v10-newton-dt-parent}
+\end{equation}
+Его единственный нуль равен $u_{\rm RG}=u_P=u_E=1$. Гессиан
+\begin{equation}
+ \begin{pmatrix}2&-1&0\\-1&2&-1\\0&-1&1\end{pmatrix}
+\end{equation}
+имеет ранг $3$, определитель $1$ и ведущие миноры $(2,3,1)$.
+
+Однако в логарифмических переменных $(m,\mu_{\rm spec}^2,g_N)$ размерные
+условия имеют матрицу
+\begin{equation}
+ C_{\rm DT}=
+ \begin{pmatrix}1&-1&0\\1&0&1\end{pmatrix},
+ \qquad \rank C_{\rm DT}=2,
+ \qquad C_{\rm DT}(1,1,-1)^T=0.
+ \label{eq:v10-newton-dt-scale-map}
+\end{equation}
+Одна общая масштабная мода сохраняется. Независимая фиксация $g_N$ повысила
+бы ранг до $3$, но являлась бы внешним ньютоновским входом.
+
+\begin{theorem}[Планковская самосогласованность выбирает коэффициент]
+При условии $m g_N=1$ эйнштейновская нормировка выбирает
+$\beta_E=1/(16\pi)$. Этот результат безразмерен и не зависит от значения
+$G$.
+\end{theorem}
+
+\begin{nogocriterion}[RG-отношение не является ньютоновским масштабом]
+Положительная однопетлевая функция с $b=2$ даёт ультрафиолетовое отношение
+Ландау, а не инфракрасную массу. Даже после условного планковского замыкания
+матрица размерных условий сохраняет ядро $(1,1,-1)$. Поэтому абсолютный
+$G$ не выведен.
+\end{nogocriterion}
+
+\begin{protocol}[Статус трансмутации и самосогласованности]\begin{enumerate}
+\item исторические RG-данные: \textbf{$2/2$};
+\item перенос RG-данных в текущий носитель: \textbf{$0/2$};
+\item условная архитектура: \textbf{$10/10$};
+\item условное замыкание: \textbf{$7/7$};
+\item выбор $\beta_E=1/(16\pi)$: \textbf{условно $1/1$};
+\item физическое происхождение входов: \textbf{$0/4$};
+\item абсолютные $m$ и $G$: \textbf{$0/2$};
+\item следующий гейт: \textbf{аномальное дыхание сквозного потока}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_induced_newton_dimensional_transmutation_beta_parent_origin_gate_results.json}.

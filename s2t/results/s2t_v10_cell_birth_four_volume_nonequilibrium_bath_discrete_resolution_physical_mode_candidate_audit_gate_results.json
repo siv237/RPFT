@@ -1,0 +1,88 @@
+{
+  "audit": {
+    "complete_passes": 0,
+    "matrix_shape": "10x6",
+    "maximum_score": 5,
+    "rank": 5
+  },
+  "candidates": [
+    {
+      "name": "proton_Compton_pole",
+      "pass": false,
+      "score": 2
+    },
+    {
+      "name": "electron_Compton_pole",
+      "pass": false,
+      "score": 2
+    },
+    {
+      "name": "Higgs_electroweak_mode",
+      "pass": false,
+      "score": 4
+    },
+    {
+      "name": "neutrino_mode",
+      "pass": false,
+      "score": 4
+    },
+    {
+      "name": "Planck_mode",
+      "pass": false,
+      "score": 1
+    },
+    {
+      "name": "Hubble_mode",
+      "pass": false,
+      "score": 2
+    },
+    {
+      "name": "cell_clock_mode",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "K43_cutoff_mode",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "formal_RG_reference_mode",
+      "pass": false,
+      "score": 5
+    },
+    {
+      "name": "externally_fitted_pole",
+      "pass": false,
+      "score": 3
+    }
+  ],
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_physical_mode_candidate_audit_gate",
+  "internal_witnesses": {
+    "K43_cutoff_resolution": "1/42",
+    "cell_clock_resolution": "1",
+    "formal_RG_resolution": "exp(32*pi^2/3)"
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_spectral_pole_parent_origin_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_rg_invariant_readout_gate",
+  "proofdsl": {
+    "certificate_sha256": "55992c93a62c81bead9265f2984add02fa19009962f76b505b0d42a0b0a8e819",
+    "floating_point_values": 0,
+    "obligation_count": 19,
+    "status": "lcf-checked"
+  },
+  "status": {
+    "candidate_coverage": "10/10",
+    "complete_candidates": "0/10",
+    "physical_origin": "0/3"
+  },
+  "target_resolution": "exp(32*pi^2/3)",
+  "verdict": {
+    "formal_RG_reference_matches_the_hierarchy": true,
+    "mu_spec_is_a_demonstrated_physical_pole": false,
+    "physical_mode_is_identified": false,
+    "proton_identification_is_derived": false
+  }
+}

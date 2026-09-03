@@ -1,0 +1,130 @@
+\chapter{Общий родитель проводимости хопфовского цикла}
+\label{ch:v10-hopf-cycle-conductance-parent}
+
+\section{Связывание двух динамических скоростей}
+
+Предыдущий гейт построил канонический марковский цикл в
+$\mathcal K_{43}\otimes\mathcal H_{\rm KMS}$, но оставил его общую
+проводимость $\kappa$ свободной. В проекте уже имеется вторая физически
+типизированная скорость --- скорость рождения ячеек $\Gamma_B$, связанная с
+частотой квантовых часов $\Omega$ посредством
+\begin{equation}
+ k_X:=\log\frac{1+2x}{1+x}=3\Delta\zeta,
+ \qquad
+ \frac{\Gamma_B}{\Omega}=k_X,
+ \qquad x=e^{-S_{\rm vac}}>0.
+ \label{eq:v10-conductance-growth-coupling}
+\end{equation}
+Проверим, может ли один положительный родитель отождествить скорость
+прохождения через цикл со скоростью рождения геометрии.
+
+Введём два безразмерных отношения
+\begin{equation}
+ r_B:=\frac{\Gamma_B}{\Omega},
+ \qquad
+ r_\kappa:=\frac{\kappa}{\Omega}.
+\end{equation}
+Минимальный общий родитель имеет вид
+\begin{equation}
+ \mathcal P_\kappa(r_B,r_\kappa)
+ =\frac12(r_B-k_X)^2+\frac12(r_\kappa-r_B)^2.
+ \label{eq:v10-conductance-common-parent}
+\end{equation}
+Он ограничен снизу и обращается в нуль только при
+\begin{equation}
+ r_B=r_\kappa=k_X.
+ \label{eq:v10-conductance-selected-point}
+\end{equation}
+Его гессиан равен
+\begin{equation}
+ \operatorname{Hess}\mathcal P_\kappa
+ =\begin{pmatrix}2&-1\\-1&1\end{pmatrix},
+ \qquad \rank=2,
+ \qquad \det=1,
+ \label{eq:v10-conductance-parent-hessian}
+\end{equation}
+и имеет положительный спектр
+$\{(3-\sqrt5)/2,(3+\sqrt5)/2\}$.
+
+\section{Слепое совпадение тока и геометрического хода}
+
+Стационарная точка родителя даёт
+\begin{equation}
+ \kappa=\Gamma_B=k_X\Omega.
+ \label{eq:v10-conductance-birth-identification}
+\end{equation}
+Для тока на одном ребре хопфовского цикла отсюда следует
+\begin{equation}
+ \frac{J_{\rm edge}}{\Omega}
+ =\frac{\kappa}{3\Omega}
+ =\frac{k_X}{3}
+ =\Delta\zeta.
+ \label{eq:v10-conductance-blind-current}
+\end{equation}
+Это первое прямое совпадение между сквозным током цикла и геометрическим
+ходом рождения ячейки: за один безразмерный такт часов ток через ребро равен
+приращению логарифмического масштаба.
+
+Производство энтропии также получает безразмерную нормировку:
+\begin{equation}
+ \frac{\sigma_\circlearrowright}{\Omega}
+ =\frac{\kappa\log2}{\Omega}
+ =3\Delta\zeta\log2.
+ \label{eq:v10-conductance-blind-entropy}
+\end{equation}
+
+\section{Оставшаяся абсолютная орбита}
+
+В логарифмических переменных $(\kappa,\Gamma_B,\Omega)$ два условия
+$\Gamma_B/\Omega=k_X$ и $\kappa/\Gamma_B=1$ имеют матрицу
+\begin{equation}
+ C_\kappa=
+ \begin{pmatrix}
+ 0&1&-1\\
+ 1&-1&0
+ \end{pmatrix},
+ \qquad \rank C_\kappa=2,
+ \qquad \ker C_\kappa=\operatorname{span}\{(1,1,1)^T\}.
+ \label{eq:v10-conductance-scale-map}
+\end{equation}
+Поэтому преобразование
+\begin{equation}
+ (\kappa,\Gamma_B,\Omega)\longmapsto
+ c(\kappa,\Gamma_B,\Omega),
+ \qquad t\longmapsto t/c
+ \label{eq:v10-conductance-scale-orbit}
+\end{equation}
+сохраняет родитель и все полученные отношения. Общий родитель действительно
+связывает две динамики, но не создаёт абсолютную секунду.
+
+\begin{theorem}[Совместное относительное происхождение проводимости]
+Положительный родитель $\mathcal P_\kappa$ единственным образом выбирает
+$\kappa=\Gamma_B=k_X\Omega$. Поэтому стационарный ток хопфовского цикла и
+геометрический ход удовлетворяют слепому равенству
+$J_{\rm edge}/\Omega=\Delta\zeta$, а производство энтропии удовлетворяет
+$\sigma_\circlearrowright/\Omega=3\Delta\zeta\log2$.
+\end{theorem}
+
+\begin{nogocriterion}[Общий относительный родитель не создаёт секунду]
+Если родитель зависит только от отношений
+$\Gamma_B/\Omega$, $\kappa/\Gamma_B$ и нормированной меры рождения, то
+совместное масштабирование трёх частот остаётся точной нулевой модой.
+Следовательно, равенство $\kappa=\Gamma_B$ является физически содержательной
+связью двух процессов, но не выводом абсолютной проводимости.
+\end{nogocriterion}
+
+\begin{protocol}[Статус родителя проводимости]\begin{enumerate}\raggedright
+\item положительный общий родитель: \textbf{построен};
+\item проводимость относительно часов: \textbf{выбрана};
+\item связь $\kappa=\Gamma_B$: \textbf{получена};
+\item слепое равенство $J_{\rm edge}/\Omega=\Delta\zeta$: \textbf{получено};
+\item архитектура: \textbf{$10/10$};
+\item относительное происхождение: \textbf{$6/6$};
+\item происхождение общего родителя: \textbf{$1/1$};
+\item абсолютная проводимость и часы: \textbf{$0/2$};
+\item следующий гейт: \textbf{аудит космологической постоянной как якоря
+проводимости}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_hopf_cycle_conductance_common_parent_origin_gate_results.json}.

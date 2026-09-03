@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_profile_common_carrier_admission_gate",
+  "inherited_carriers": {
+    "C2_spin_tensor_H15_dimension": 30,
+    "K43_dimension": 43,
+    "KO_pair_charge_flip_commutator_rank": 30,
+    "cell_edge_pauli_algebra": true,
+    "cell_to_flavor_twist_embedding_rank": 0
+  },
+  "minimal_conditional_carrier": {
+    "coefficient_index_multiplicity": 15,
+    "complex_dimension": 60,
+    "factorization": "C2_spin tensor C2_twist tensor H15",
+    "negative_mass_rank": 30,
+    "positive_mass_rank": 30,
+    "spatial_twist_commutator": "zero"
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_candidate_audit_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_mixed_bridge_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "0728c0e7324e9a7e10e84ad69fac14019d44f844793bbb86a12890b963acf688",
+    "floating_point_values": 0,
+    "obligation_count": 23,
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_architecture": "10/10",
+    "equal_charge_twist_origin": "0/3",
+    "separate_inherited_ingredients": "5/5",
+    "strict_common_carrier_admission": "0/1"
+  },
+  "verdict": {
+    "K43_cell_edge_can_supply_an_abstract_twist_algebra": true,
+    "K43_cell_edge_is_embedded_uniformly_over_H15": false,
+    "KO_particle_conjugate_pair_can_be_the_twist_doublet": false,
+    "minimal_callias_carrier_is_algebraically_consistent": true,
+    "strict_callias_carrier_is_inherited": false
+  }
+}

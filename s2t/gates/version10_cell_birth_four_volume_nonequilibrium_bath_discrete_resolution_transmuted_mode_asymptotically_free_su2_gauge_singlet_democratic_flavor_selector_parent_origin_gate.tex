@@ -1,0 +1,35 @@
+\chapter{Родитель демократического flavor-селектора}
+\label{ch:v10-discrete-resolution-democratic-flavor-parent}
+
+Пусть $d=16^{-1/2}(1,\ldots,1)^\top$ и $P_d=|d\rangle\langle d|$.
+Лапласиан полного flavor-графа $K_{16}$ равен
+\begin{equation}
+ L_{K_{16}}=15I-(\mathbf1\mathbf1^\top-I)=16(I-P_d).
+\end{equation}
+Он имеет спектр $0^{(1)},16^{(15)}$, поэтому нормированный родитель
+$H_f=I-P_d$ строго отделяет единственную демократическую линию.
+
+Для двух flavor-слотов родитель $H_f\otimes I+I\otimes H_f$ имеет
+мультиплеты $0^{(1)},1^{(30)},2^{(225)}$. Следовательно, условно выбрана
+ровно одна линия из $256$, а циклическая flavor-симметрия сохранена.
+
+Однако в унаследованном носителе flavor-оператор пропорционален $I_{16}$,
+полный граф взаимодействий отсутствует, и все $256$ пар вырождены. Поэтому
+выбор $K_{16}$ является новой архитектурой, а не следствием K43-кратности.
+
+\begin{theorem}[Полный граф даёт строгий демократический родитель]
+Нормированный лапласиан $K_{16}$ имеет единственную демократическую нулевую
+моду; двухслотовая сумма выбирает одну rank-one flavor-пару.
+\end{theorem}
+\begin{nogocriterion}[Кратность не задаёт полный граф]
+Наличие шестнадцати одинаковых дублетов не порождает рёбра между каждой
+парой flavor-меток. Полный граф и его вес должны иметь независимый источник.
+\end{nogocriterion}
+\begin{protocol}\begin{enumerate}
+\item условная архитектура: \textbf{$11/11$};
+\item уникальная pair-line: \textbf{$1/1$};
+\item физическое происхождение: \textbf{$0/2$};
+\item следующий гейт: \textbf{аудит flavor-графов}.
+\end{enumerate}\end{protocol}
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_democratic_flavor_selector_parent_origin_gate_results.json}.

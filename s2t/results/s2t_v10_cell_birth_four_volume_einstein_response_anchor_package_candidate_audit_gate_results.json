@@ -1,0 +1,239 @@
+{
+  "candidate_menus": {
+    "G": {
+      "candidates": [
+        "induced_Einstein_coefficient",
+        "spectral_action_coefficient",
+        "imported_Newton_constant",
+        "solved_from_target_relation"
+      ],
+      "matrix": [
+        [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "maximum_score": "3/5",
+      "passing": 0,
+      "rank": 3
+    },
+    "T_flow": {
+      "candidates": [
+        "entropy_scalar",
+        "isotropic_vacuum_ansatz",
+        "metric_variation_of_current_parent",
+        "Keldysh_response_tensor"
+      ],
+      "matrix": [
+        [
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "maximum_score": "4/5",
+      "passing": 0,
+      "rank": 3
+    },
+    "Theta": {
+      "candidates": [
+        "KMS_energy",
+        "endpoint_spectral_gap",
+        "external_Landauer_temperature",
+        "vacuum_action"
+      ],
+      "matrix": [
+        [
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "maximum_score": "4/5",
+      "passing": 0,
+      "rank": 4
+    },
+    "v_cell": {
+      "candidates": [
+        "intrinsic_cell_volume",
+        "spectral_counting_volume",
+        "topological_volume_quantum",
+        "cosmological_radius_volume"
+      ],
+      "matrix": [
+        [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "maximum_score": "4/5",
+      "passing": 0,
+      "rank": 2
+    }
+  },
+  "combined_audit": {
+    "candidate_count": 16,
+    "combined_matrix_rank": 5,
+    "complete_candidates": 0,
+    "criterion_count": 5
+  },
+  "criteria": [
+    "correct_type_and_dimension",
+    "internally_available",
+    "independent_of_kappa",
+    "common_parent_origin",
+    "non_circular"
+  ],
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_einstein_response_anchor_package_candidate_audit_gate",
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_constant_parent_origin_gate",
+  "package_dependency": {
+    "complete_components": "0/4",
+    "components": [
+      "G",
+      "Theta",
+      "v_cell",
+      "T_flow"
+    ],
+    "conditional_scale_relation_nullity": 3,
+    "conditional_scale_relation_rank": 1,
+    "dependency_rank": 4,
+    "rank_after_complete_package": 4
+  },
+  "predecessor": "version10_cell_birth_four_volume_cosmological_constant_einstein_response_coupling_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "cd0b184c78bb6495e44d1a038291b252028c29eb0cef51ba1a778075002f83cb",
+    "floating_point_values": 0,
+    "obligation_count": 19,
+    "obligations": [
+      "anchor_gravity_candidate_matrix",
+      "anchor_temperature_candidate_matrix",
+      "anchor_volume_candidate_matrix",
+      "anchor_stress_candidate_matrix",
+      "anchor_gravity_zero_passes",
+      "anchor_temperature_zero_passes",
+      "anchor_volume_zero_passes",
+      "anchor_stress_zero_passes",
+      "anchor_menu_rank_vector",
+      "anchor_menu_maximum_scores",
+      "anchor_combined_matrix_rank_five",
+      "anchor_package_dependency_identity",
+      "anchor_package_rank_four",
+      "anchor_package_availability_zero",
+      "anchor_conditional_relation_rank_one",
+      "anchor_conditional_relation_nullity_three",
+      "anchor_full_package_rank_four",
+      "anchor_candidate_audit_coverage",
+      "anchor_physical_package_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_conductance": "0/1",
+    "audit_coverage": "16/16",
+    "complete_anchor_components": "0/4",
+    "individual_candidate_passes": "0/16"
+  },
+  "verdict": {
+    "any_complete_G_candidate": false,
+    "any_complete_Theta_candidate": false,
+    "any_complete_stress_candidate": false,
+    "any_complete_volume_candidate": false,
+    "complete_Einstein_anchor_package_exists": false
+  }
+}

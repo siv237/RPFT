@@ -1,0 +1,71 @@
+\chapter{Аудит trace-селекторов superconnection curvature}
+\label{ch:v10-h15-r2-superconnection-trace-selector-audit}
+
+Градуированная поляризация суперкривизны дала точный оператор $Q$, но её
+trace metric неопределённа. Проверим, может ли другой канонический селектор
+сохранить endpoint-разность внутри положительного действия.
+
+Два независимых endpoint-канала образуют матрицу
+\begin{equation}
+ C=(T,-B),\qquad C^TC=\operatorname{diag}(72,64).
+\end{equation}
+Уравнение $Cw=Q=T+B$ имеет единственное решение
+\begin{equation}
+ \boxed{w=(1,-1)}.
+\end{equation}
+Следовательно, никакой положительный диагональный endpoint-trace с
+неотрицательными весами не может дать $Q$. Ordinary trace имеет веса
+$(1,1)$ и возвращает $T-B$; raw supertrace возвращает $Q$, но его weight
+metric имеет inertia $(1_-,0_0,1_+)$.
+
+Остаётся структурно иной обход: сначала выделить relative curvature block,
+а затем взять его положительную норму. Канонический проектор на разностную
+линию равен
+\begin{equation}
+ P_{\rm rel}=\frac12
+ \begin{pmatrix}1&-1\\-1&1\end{pmatrix},
+ \qquad P_{\rm rel}^2=P_{\rm rel},
+ \qquad \rank P_{\rm rel}=1.
+\end{equation}
+Его Gram form положительно полуопределена с inertia $(0_-,1_0,1_+)$. Это
+показывает, что positivity и exact endpoint difference совместимы после
+проекции на отдельную curvature-компоненту. Но унаследованный relative
+selector текущего представленного calculus имеет rank $0$.
+
+Двенадцать trace-механизмов проверены по шести критериям: exact $Q$,
+positivity полного действия, gauge/Real invariance, каноническая
+нормировка, совместимость с локальной степенью и inherited selector.
+Матрица имеет rank $6$, проходов нет. Ordinary trace получает $5/6$ и
+проваливает exact $Q$; raw supertrace получает $5/6$ и проваливает
+positivity. Represented junk quotient и length-two relative block получают
+$5/6$, сохраняя одновременно exactness и positivity, но не наследуются.
+
+\begin{theorem}[Endpoint positivity no-go и relative-block fork]
+Точный endpoint trace единственно имеет веса $(1,-1)$ и потому не может
+быть положительным на полном прямосуммарном curvature space. Положительный
+точный маршрут существует только после rank-one проекции на relative
+curvature block; такой quotient пока отсутствует в унаследованном calculus.
+\end{theorem}
+
+\begin{nogocriterion}[Запрет ручного удаления диагональных блоков]
+Нельзя заменить полный curvature trace нормой relative block, просто
+отбросив две endpoint-компоненты. Проектор $P_{\rm rel}$ должен следовать
+из представленного junk-идеала, степени формы, mapping-cone differential
+или эквивалентного унаследованного quotient до вычисления target spectrum.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item endpoint channel rank: \textbf{$2$};
+\item unique exact weights: \textbf{$(1,-1)$};
+\item positive endpoint trace с exact $Q$: \textbf{невозможен};
+\item relative projector rank: \textbf{$1$};
+\item projected Gram inertia: \textbf{$(0_-,1_0,1_+)$};
+\item inherited relative selector rank: \textbf{$0$};
+\item audit rank: \textbf{$6$};
+\item прошедших кандидатов: \textbf{$0/12$};
+\item лучший positive exact route: \textbf{relative junk quotient, $5/6$};
+\item следующий гейт: \textbf{родитель relative-curvature junk quotient}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_curvature_trace_selector_candidate_audit_gate_results.json}.

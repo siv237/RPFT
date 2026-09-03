@@ -3,6 +3,330 @@ from __future__ import annotations
 import sympy as sp
 import pytest
 
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_profile_common_carrier_admission import build_certificate as build_version10_particle_wrinkle_dislocation_callias_carrier_certificate
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_mixed_bridge_candidate_audit import build_certificate as build_version10_particle_wrinkle_dislocation_mixed_bridge_certificate
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_common_parent_reopening import build_certificate as build_version10_particle_wrinkle_dislocation_common_parent_certificate
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_graph_candidate_audit import build_certificate as build_version10_flavor_graph_candidate_audit_certificate
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_democratic_flavor_selector_parent_origin import build_certificate as build_version10_democratic_flavor_parent_certificate
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_pair_selector_candidate_audit import build_certificate as build_version10_flavor_selector_certificate
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_cell_complex_typed_embedding import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_cell_complex_typed_embedding_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_static_propagator_parent_origin import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_static_propagator_parent_origin_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_mediator_susceptibility_candidate_audit import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_mediator_susceptibility_candidate_audit_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_coefficient_parent_origin import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_coefficient_parent_origin_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_kernel_candidate_audit import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_kernel_candidate_audit_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_composite_pole_parent_origin import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_composite_pole_parent_origin_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_eight_dirac_k43_typed_embedding import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_eight_dirac_k43_typed_embedding_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_anomaly_free_carrier_candidate_audit import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_anomaly_free_carrier_candidate_audit_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_beta_sign_parent_origin import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_beta_sign_parent_origin_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_ir_mass_term_candidate_audit import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_ir_mass_term_candidate_audit_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_spectral_pole_parent_origin import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_spectral_pole_parent_origin_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_physical_mode_candidate_audit import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_physical_mode_candidate_audit_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_rg_invariant_readout import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_rg_invariant_readout_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_minimal_portal_operator_architecture import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_minimal_portal_operator_architecture_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_cross_sector_operator_candidate_audit import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_cross_sector_operator_candidate_audit_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_common_parent_origin import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_common_parent_origin_certificate
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_candidate_audit_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_k43_rg_boundary_matching_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_k43_rg_boundary_matching_origin_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_dimensional_transmutation_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_dimensional_transmutation_parent_origin_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_absolute_scale_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_absolute_scale_candidate_audit_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_birth_height_physical_time_morphism_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_birth_height_physical_time_morphism_origin_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_growth_graph_typed_embedding import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_growth_graph_typed_embedding_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_cell_complex_edge_length_common_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_cell_complex_edge_length_common_parent_origin_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_cell_complex_typed_embedding import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_cell_complex_typed_embedding_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_parent_origin_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_spectral_density_memory_scale_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_spectral_density_memory_scale_candidate_audit_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_correlation_time_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_correlation_time_parent_origin_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_microscopic_carrier_cutoff_parent_admission import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_microscopic_carrier_cutoff_parent_admission_certificate,
+)
+
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_continuum_dispersion_cell_geometry_typed_embedding import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_continuum_dispersion_cell_geometry_typed_embedding_certificate,
+)
+
+from s2t.proofdsl.examples.version10_quantum_rg_common_carrier_admission import (
+    build_certificate as build_version10_quantum_rg_common_carrier_admission_certificate,
+)
+from s2t.proofdsl.examples.version10_geometric_scale_beta_trace_anomaly_origin import (
+    build_certificate as build_version10_geometric_scale_beta_trace_anomaly_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_inflow_spectral_self_energy_running_parent_origin import (
+    build_certificate as build_version10_inflow_spectral_self_energy_running_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_inflow_spectral_self_energy_k43_typed_embedding import (
+    build_certificate as build_version10_inflow_spectral_self_energy_k43_typed_embedding_certificate,
+)
+from s2t.proofdsl.examples.version10_k43_reciprocal_spectral_operator_growth_parent_origin import (
+    build_certificate as build_version10_k43_reciprocal_spectral_operator_growth_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_normalized_transition_measure_growth_rate_origin import (
+    build_certificate as build_version10_cell_birth_normalized_transition_measure_growth_rate_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_clock_energy_common_parent_origin import (
+    build_certificate as build_version10_cell_birth_clock_energy_common_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_clock_energy_geometric_anchor_candidate_audit import (
+    build_certificate as build_version10_cell_birth_clock_energy_geometric_anchor_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_intrinsic_four_volume_parent_origin import (
+    build_certificate as build_version10_cell_birth_intrinsic_four_volume_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_spectral_counting_measure_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_spectral_counting_measure_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_topological_quantum_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_topological_quantum_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_curvature_density_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_curvature_density_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_curvature_coefficient_origin_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_curvature_coefficient_origin_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_gravity_coefficient_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_gravity_coefficient_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_throughflow_affinity_impedance_origin_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_throughflow_affinity_impedance_origin_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_hopf_cycle_k43_typed_embedding import (
+    build_certificate as build_version10_cell_birth_four_volume_hopf_cycle_k43_typed_embedding_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_hopf_cycle_k43_kms_product_embedding import (
+    build_certificate as build_version10_cell_birth_four_volume_hopf_cycle_k43_kms_product_embedding_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_hopf_cycle_conductance_common_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_hopf_cycle_conductance_common_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_cosmological_constant_conductance_anchor_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_cosmological_constant_conductance_anchor_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_cosmological_constant_throughflow_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_cosmological_constant_throughflow_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_cosmological_constant_einstein_response_coupling_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_cosmological_constant_einstein_response_coupling_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_einstein_response_anchor_package_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_einstein_response_anchor_package_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_constant_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_constant_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_scale_seed_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_scale_seed_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_dimensional_transmutation_beta_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_dimensional_transmutation_beta_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_throughflow_scale_parent_admission import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_throughflow_scale_parent_admission_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_spectral_coefficient_origin_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_spectral_coefficient_origin_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_output_density_morphism_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_output_density_morphism_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_kms_output_channel_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_kms_output_channel_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_nonequilibrium_two_reservoir_output_current_parent_admission import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_nonequilibrium_two_reservoir_output_current_parent_admission_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_vacuum_growth_common_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_vacuum_growth_common_parent_origin_certificate,
+    build_certificate as build_v10_bath_velocity_growth_parent,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_continuum_dispersion_cell_geometry_typed_embedding import build_certificate as build_v10_bath_continuum_embedding
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_microscopic_carrier_cutoff_parent_admission import build_certificate as build_v10_bath_microscopic_carrier
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_correlation_time_parent_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_correlation_time_parent_origin_certificate,
+    build_certificate as build_v10_bath_correlation_time,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_spectral_density_memory_scale_candidate_audit import build_certificate as build_v10_bath_spectral_memory
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_front_speed_causal_recession_separation import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_front_speed_causal_recession_separation_certificate
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_cell_complex_typed_embedding import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_cell_complex_typed_embedding_certificate
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_parent_origin import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_parent_origin_certificate
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_growth_graph_typed_embedding import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_growth_graph_typed_embedding_certificate
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_cell_complex_edge_length_common_parent_origin import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_cell_complex_edge_length_common_parent_origin_certificate
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_cell_birth_front_speed_morphism_origin import build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_cell_birth_front_speed_morphism_origin_certificate
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_nonequilibrium_entropy_scale_orbit_breaker_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_nonequilibrium_entropy_scale_orbit_breaker_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_two_reservoir_entropy_production_trace_anomaly_morphism_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_two_reservoir_entropy_production_trace_anomaly_morphism_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_common_affinity_temperature_anchor_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_common_affinity_temperature_anchor_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_alpha_inverse_pi4_two_reservoir_inverse_response_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_alpha_inverse_pi4_two_reservoir_inverse_response_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_affinity_hopf_cycle_typed_origin import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_affinity_hopf_cycle_typed_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_common_affinity_temperature_anchor_candidate_audit import (
+    build_certificate as build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_common_affinity_temperature_anchor_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_path_length_reservoir_coupling_parent_origin import (
+    build_certificate as build_version10_hopf_path_length_reservoir_coupling_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_intertwiner_candidate_audit import (
+    build_certificate as build_version10_hopf_reservoir_intertwiner_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_intertwiner_common_carrier_admission import (
+    build_certificate as build_version10_hopf_reservoir_common_carrier_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_intertwiner_m4_cross_generator_parent_origin import (
+    build_certificate as build_version10_m4_cross_generator_parent_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_m4_bifundamental_condensate_candidate_audit import (
+    build_certificate as build_version10_m4_bifundamental_condensate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_m4_cell_incidence_tachyonic_sign_parent_origin import (
+    build_certificate as build_version10_m4_cell_incidence_tachyonic_sign_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_m4_fermionic_determinant_tachyonic_susceptibility_common_carrier_admission import (
+    build_certificate as build_version10_m4_fermionic_determinant_common_carrier_certificate,
+)
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_hopf_reservoir_m4_fermionic_determinant_cross_bilinear_odd_statistics_candidate_audit import (
+    build_certificate as build_version10_m4_fermionic_cross_odd_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_fermionic_cross_typed_embedding import (
+    build_certificate as build_version10_callias_m4_cross_typed_embedding_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_uniform_h15_amplification_parent_origin import (
+    build_certificate as build_version10_uniform_h15_amplification_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_quark_lepton_connector_candidate_audit import (
+    build_certificate as build_version10_h15_quark_lepton_connector_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_generalized_first_order_parent_admission import (
+    build_certificate as build_version10_h15_r2_generalized_first_order_parent_admission_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_dirac_seed_candidate_audit import (
+    build_certificate as build_version10_h15_r2_dirac_seed_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_pati_salam_sigma_typed_embedding import (
+    build_certificate as build_version10_h15_r2_pati_salam_sigma_typed_embedding_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_pati_salam_sigma_component_selector_candidate_audit import (
+    build_certificate as build_version10_h15_r2_sigma_component_selector_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hypercharge_projector_mass_splitting_parent_origin import (
+    build_certificate as build_version10_h15_r2_hypercharge_projector_mass_splitting_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hypercharge_gap_coefficient_candidate_audit import (
+    build_certificate as build_version10_h15_r2_hypercharge_gap_coefficient_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hypercharge_breaking_background_common_carrier_admission import (
+    build_certificate as build_version10_h15_r2_hypercharge_breaking_background_common_carrier_admission_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_mapping_cone_common_parent_typed_embedding import (
+    build_certificate as build_version10_h15_r2_delta_mapping_cone_common_parent_typed_embedding_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_sigma_mixed_curvature_candidate_audit import (
+    build_certificate as build_version10_h15_r2_delta_sigma_mixed_curvature_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_stabilizer_moment_map_curvature_parent_origin import (
+    build_certificate as build_version10_h15_r2_delta_stabilizer_moment_map_curvature_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_shared_fixed_point_auxiliary_channel_typed_embedding import (
+    build_certificate as build_version10_h15_r2_shared_fixed_point_auxiliary_channel_typed_embedding_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_minimal_odd_auxiliary_bimodule_candidate_audit import (
+    build_certificate as build_version10_h15_r2_minimal_odd_auxiliary_bimodule_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_hubbard_stratonovich_odd_auxiliary_parent_origin import (
+    build_certificate as build_version10_h15_r2_hubbard_stratonovich_odd_auxiliary_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_odd_auxiliary_cross_bilinear_candidate_audit import (
+    build_certificate as build_version10_h15_r2_odd_auxiliary_cross_bilinear_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_moment_map_odd_auxiliary_trilinear_parent_origin import (
+    build_certificate as build_version10_h15_r2_delta_moment_map_odd_auxiliary_trilinear_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_mixed_curvature_parent_origin import (
+    build_certificate as build_version10_h15_r2_superconnection_mixed_curvature_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_curvature_trace_selector_candidate_audit import (
+    build_certificate as build_version10_h15_r2_superconnection_curvature_trace_selector_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_curvature_junk_quotient_parent_origin import (
+    build_certificate as build_version10_h15_r2_relative_curvature_junk_quotient_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_hodge_auxiliary_edge_common_parent_admission import (
+    build_certificate as build_version10_h15_r2_relative_hodge_auxiliary_edge_common_parent_admission_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_hodge_auxiliary_edge_origin_candidate_audit import (
+    build_certificate as build_version10_h15_r2_relative_hodge_auxiliary_edge_origin_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_suspension_auxiliary_copy_parent_origin import (
+    build_certificate as build_version10_h15_r2_superconnection_suspension_auxiliary_copy_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_thom_multiplet_common_parent_origin import (
+    build_certificate as build_version10_h15_r2_mathai_quillen_thom_multiplet_common_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_odd_pair_statistics_candidate_audit import (
+    build_certificate as build_version10_h15_r2_mathai_quillen_odd_pair_statistics_candidate_audit_certificate,
+)
+from s2t.proofdsl.examples.version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_shift_symmetry_parent_origin import (
+    build_certificate as build_version10_h15_r2_mathai_quillen_shift_symmetry_parent_origin_certificate,
+)
+from s2t.proofdsl.examples.version10_final_conclusion_and_tome11_program import (
+    build_certificate as build_version10_final_conclusion_and_tome11_program_certificate,
+)
+
 from s2t.proofdsl.examples.version8_connector_no_go import build_certificate
 from s2t.proofdsl.examples.version8_fixed_algebra import (
     build_certificate as build_fixed_algebra_certificate,
@@ -783,8 +1107,8 @@ def test_gate_template_requires_kernel_theorems() -> None:
 def test_registered_gate_registry() -> None:
     result = verify_all()
     assert result["status"] == "lcf-checked"
-    assert result["gate_count"] == 69
-    assert result["obligation_count"] == 585
+    assert result["gate_count"] == 151
+    assert result["obligation_count"] == 2388
 
 
 def test_version9_final_conclusion_tome10_program_is_exact() -> None:
@@ -1012,6 +1336,1864 @@ def test_version9_reference_scale_mu_parent_origin_is_exact() -> None:
     assert certificate.relative_scale_map.rank() == 7
     assert len(certificate.relative_scale_map.nullspace()) == 1
     assert certificate.relative_scale_map * sp.ones(8, 1) == sp.zeros(7, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_quantum_rg_common_carrier_admission_is_exact() -> None:
+    certificate = build_version10_quantum_rg_common_carrier_admission_certificate()
+    assert sp.simplify(certificate.scale_factor**3) == sp.simplify(
+        certificate.cell_count / sp.symbols("N_0", positive=True)
+    )
+    assert certificate.atlas_contrast.rank() == 2
+    assert certificate.atlas_contrast * certificate.masses == sp.zeros(2, 1)
+    assert certificate.carrier_incidence.rank() == 3
+    assert sum(certificate.architecture) == 7
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_geometric_scale_beta_trace_anomaly_origin_is_exact() -> None:
+    certificate = build_version10_geometric_scale_beta_trace_anomaly_origin_certificate()
+    q = sp.symbols("q", real=True)
+    root = sp.sqrt(sp.Rational(1, 2))
+    assert certificate.closed_partition == 1
+    assert certificate.quadratic_curvature.is_negative is True
+    assert certificate.quartic_curvature.is_positive is True
+    assert sp.simplify(sp.diff(certificate.witness_potential, q).subs(q, root)) == 0
+    assert sp.simplify(sp.diff(certificate.witness_potential, q, 2).subs(q, root)) == sp.Rational(37, 24)
+    assert sum(certificate.architecture) == 6
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_inflow_spectral_self_energy_running_parent_origin_is_exact() -> None:
+    certificate = build_version10_inflow_spectral_self_energy_running_parent_origin_certificate()
+    zeta = sp.symbols("zeta", real=True)
+    assert certificate.reservoir_operator.det() == 1
+    assert certificate.reservoir_operator * certificate.reservoir_propagator == sp.eye(2)
+    assert certificate.incoming_projector + certificate.outgoing_projector == sp.eye(2)
+    assert sp.diff(certificate.incoming_self_energy, zeta) == certificate.incoming_self_energy
+    assert sp.diff(certificate.outgoing_self_energy, zeta) == -certificate.outgoing_self_energy
+    assert certificate.origin_ledger == sp.ImmutableMatrix([1, 1, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_inflow_spectral_self_energy_k43_typed_embedding_is_exact() -> None:
+    certificate = build_version10_inflow_spectral_self_energy_k43_typed_embedding_certificate()
+    zeta = sp.symbols("zeta", real=True)
+    assert certificate.embedding.T * certificate.embedding == sp.eye(2)
+    assert certificate.embedded_projector.rank() == 2
+    assert certificate.hypercharge_generator.rank() == 21
+    assert certificate.restricted_star_interaction.rank() == 42
+    assert certificate.embedded_operator.det() == 1
+    assert certificate.kms_embedding.rank() == 12
+    assert certificate.compressed_cell_parent == sp.ImmutableMatrix(sp.diag(1, 0))
+    assert sp.diff(certificate.incoming_self_energy, zeta) == certificate.incoming_self_energy
+    assert certificate.origin_ledger == sp.ImmutableMatrix([1, 1, 1, 1, 0, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_k43_reciprocal_spectral_operator_growth_parent_origin_is_exact() -> None:
+    certificate = build_version10_k43_reciprocal_spectral_operator_growth_parent_origin_certificate()
+    zeta = sp.symbols("zeta", real=True)
+    assert sp.trace(certificate.growth_grading) == 0
+    assert certificate.growth_grading**2 == certificate.support_projector
+    assert certificate.growth_grading.rank() == 2
+    assert certificate.flow_residual == sp.zeros(43)
+    assert certificate.spectral_operator.det() == 1
+    assert certificate.compressed_operator == sp.ImmutableMatrix(sp.diag(sp.exp(-zeta), sp.exp(zeta)))
+    assert sp.diff(certificate.incoming_self_energy, zeta) == certificate.incoming_self_energy
+    assert certificate.jet_hessian.rank() == 4
+    assert certificate.jet_hessian.det() == 1
+    assert sum(certificate.spectral_origin) == 4
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_normalized_transition_measure_growth_rate_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_normalized_transition_measure_growth_rate_origin_certificate()
+    x = sp.symbols("x", positive=True)
+    assert sp.simplify(sum(certificate.probabilities)) == 1
+    assert (certificate.transition_matrix * sp.ones(2, 1)).applyfunc(sp.simplify) == sp.ones(2, 1)
+    assert certificate.mean_multiplier == (1 + 2 * x) / (1 + x)
+    assert sp.diff(certificate.step_growth, x).subs(x, 0) == sp.Rational(1, 3)
+    assert certificate.slope_gap.is_positive is True
+    assert certificate.clock_orbit_map.nullspace() == [sp.Matrix([-1, 1])]
+    assert sum(certificate.architecture) == 8
+    assert certificate.origin_ledger == sp.ImmutableMatrix([1, 1, 0, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_clock_energy_common_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_clock_energy_common_parent_origin_certificate()
+    assert certificate.bare_hamiltonian.eigenvals() == {0: 1, 1: 2, 2: 1}
+    assert certificate.bare_hamiltonian * certificate.exchange_generator == (
+        certificate.exchange_generator * certificate.bare_hamiltonian
+    )
+    assert certificate.exchange_generator.rank() == 2
+    assert certificate.exchange_generator.eigenvals() == {-1: 1, 0: 2, 1: 1}
+    assert certificate.growth_coupling.is_positive is True
+    assert certificate.stationary_gradient == sp.zeros(2, 1)
+    assert certificate.parent_hessian == sp.ImmutableMatrix([[2, -1], [-1, 1]])
+    assert certificate.parent_hessian.rank() == 2
+    assert certificate.parent_hessian.det() == 1
+    assert certificate.scale_orbit_map.nullspace() == [sp.Matrix([-1, 1])]
+    assert sum(certificate.architecture) == 9
+    assert sum(certificate.relative_origin) == 3
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_clock_energy_geometric_anchor_candidate_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_clock_energy_geometric_anchor_candidate_audit_certificate()
+    assert certificate.candidate_matrix.shape == (9, 5)
+    assert certificate.candidate_matrix.rank() == 5
+    assert certificate.pass_vector == sp.zeros(9, 1)
+    assert certificate.internal_break_vector == sp.zeros(9, 1)
+    assert certificate.relative_scale_map.rank() == 3
+    assert certificate.relative_scale_map.nullspace() == [sp.ones(4, 1)]
+    assert certificate.externally_anchored_map.rank() == 4
+    assert sum(certificate.audit_coverage) == 9
+    assert sum(certificate.physical_ledger) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_intrinsic_four_volume_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_intrinsic_four_volume_parent_origin_certificate()
+    assert certificate.normalized_shape == sp.eye(4)
+    assert certificate.normalized_shape.det() == 1
+    assert certificate.common_hessian.rank() == 3
+    assert certificate.common_hessian.nullspace() == [sp.Matrix([0, 0, -1, 1])]
+    assert certificate.common_hessian.det() == 0
+    assert sum(certificate.architecture) == 8
+    assert sum(certificate.relative_origin) == 3
+    assert sum(certificate.physical_ledger) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_spectral_counting_measure_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_spectral_counting_measure_origin_certificate()
+    assert certificate.spectral_shape.shape == (43, 43)
+    assert certificate.counting_projector.rank() == 43
+    assert certificate.scale_hessian == sp.ones(2)
+    assert certificate.scale_hessian.rank() == 1
+    assert certificate.scale_hessian.nullspace() == [sp.Matrix([-1, 1])]
+    assert sum(certificate.architecture) == 8
+    assert sum(certificate.origin_ledger) == 3
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_topological_quantum_candidate_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_topological_quantum_candidate_audit_certificate()
+    assert certificate.candidate_matrix.shape == (8, 5)
+    assert certificate.candidate_matrix.rank() == 2
+    assert certificate.pass_vector == sp.zeros(8, 1)
+    assert certificate.multiplicity_parent_hessian == sp.diag(1, 0)
+    assert certificate.multiplicity_parent_hessian.nullspace() == [sp.Matrix([0, 1])]
+    assert sum(certificate.architecture) == 8
+    assert sum(certificate.origin_ledger) == 2
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_curvature_density_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_curvature_density_parent_origin_certificate()
+    assert certificate.curvature_constraint_map.rank() == 2
+    assert certificate.curvature_constraint_map.nullspace() == [sp.Matrix([-2, -1, 1])]
+    assert certificate.common_hessian.shape == (1, 1)
+    assert certificate.common_hessian.rank() == 1
+    assert sum(certificate.architecture) == 8
+    assert sum(certificate.conditional_origin) == 3
+    assert certificate.physical_ledger == sp.zeros(2, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_curvature_coefficient_origin_candidate_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_curvature_coefficient_origin_candidate_audit_certificate()
+    assert certificate.candidate_matrix.shape == (8, 6)
+    assert certificate.candidate_matrix.rank() == 3
+    assert certificate.pass_vector == sp.zeros(8, 1)
+    assert certificate.coefficient_constraint_map.rank() == 2
+    assert certificate.coefficient_constraint_map.nullspace() == [sp.Matrix([-2, -1, 1])]
+    assert sum(certificate.architecture) == 8
+    assert sum(certificate.origin_ledger) == 3
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_induced_gravity_coefficient_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_gravity_coefficient_parent_origin_certificate()
+    assert certificate.throughflow_constraint_map.rank() == 2
+    assert certificate.throughflow_constraint_map.nullspace() == [sp.Matrix([-1, 1, 1])]
+    assert sum(certificate.architecture) == 9
+    assert sum(certificate.conditional_origin) == 4
+    assert certificate.physical_ledger == sp.zeros(2, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_throughflow_affinity_impedance_origin_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_throughflow_affinity_impedance_origin_audit_certificate()
+    assert certificate.candidate_matrix.shape == (8, 6)
+    assert certificate.candidate_matrix.rank() == 4
+    assert certificate.pass_vector == sp.zeros(8, 1)
+    assert certificate.cycle_generator.rank() == 2
+    assert certificate.cycle_generator.nullspace() == [sp.Matrix([1, 1, 1])]
+    assert certificate.rate_clock_map.nullspace() == [sp.Matrix([-1, -1, 1])]
+    assert sum(certificate.architecture) == 8
+    assert sum(certificate.origin_ledger) == 3
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_hopf_cycle_k43_typed_embedding_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_hopf_cycle_k43_typed_embedding_certificate()
+    assert certificate.coordinate_embedding.shape == (43, 3)
+    assert certificate.coordinate_generator.rank() == 2
+    assert len(certificate.coordinate_generator.nullspace()) == 41
+    assert certificate.symmetric_embedding.T * certificate.symmetric_embedding == sp.eye(3)
+    assert certificate.symmetric_generator[1, 2].is_negative
+    assert certificate.pass_vector == sp.zeros(2, 1)
+    assert sum(certificate.architecture) == 8
+    assert sum(certificate.origin_ledger) == 2
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_hopf_cycle_k43_kms_product_embedding_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_hopf_cycle_k43_kms_product_embedding_certificate()
+    assert certificate.embedding.shape == (258, 3)
+    assert certificate.embedding.T * certificate.embedding == sp.eye(3)
+    assert certificate.projector.rank() == 3
+    assert certificate.product_generator.rank() == 2
+    assert certificate.product_generator * certificate.stationary_state == sp.zeros(258, 1)
+    assert certificate.rate_clock_map.nullspace() == [sp.Matrix([-1, -1, 1])]
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.origin_ledger) == 5
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_hopf_cycle_conductance_common_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_hopf_cycle_conductance_common_parent_origin_certificate()
+    assert certificate.stationary_gradient == sp.zeros(2, 1)
+    assert certificate.parent_hessian == sp.ImmutableMatrix([[2, -1], [-1, 1]])
+    assert certificate.parent_hessian.rank() == 2
+    assert certificate.parent_hessian.det() == 1
+    assert certificate.scale_constraint_map.rank() == 2
+    assert certificate.scale_constraint_map.nullspace() == [sp.ones(3, 1)]
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.relative_origin) == 6
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_cosmological_constant_conductance_anchor_candidate_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_cosmological_constant_conductance_anchor_candidate_audit_certificate()
+    assert certificate.candidate_matrix.shape == (7, 6)
+    assert certificate.candidate_matrix.rank() == 5
+    assert certificate.pass_vector == sp.zeros(7, 1)
+    assert certificate.internal_break_vector == sp.zeros(7, 1)
+    assert certificate.relative_scale_map.rank() == 4
+    assert certificate.relative_scale_map * certificate.scale_vector == sp.zeros(4, 1)
+    assert len(certificate.relative_scale_map.nullspace()) == 1
+    assert certificate.independently_anchored_map.rank() == 5
+    assert sum(certificate.audit_coverage) == 7
+    assert sum(certificate.physical_ledger) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_cosmological_constant_throughflow_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_cosmological_constant_throughflow_parent_origin_certificate()
+    assert certificate.stationary_gradient == sp.zeros(2, 1)
+    assert certificate.parent_hessian == sp.ImmutableMatrix([[2, -1], [-1, 1]])
+    assert certificate.parent_hessian.rank() == 2
+    assert certificate.parent_hessian.det() == 1
+    assert certificate.scale_map.rank() == 2
+    assert certificate.scale_map * certificate.scale_vector == sp.zeros(2, 1)
+    assert len(certificate.scale_map.nullspace()) == 1
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.conditional_origin) == 5
+    assert certificate.inherited_origin == sp.ImmutableMatrix([1, 1, 0])
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_cosmological_constant_einstein_response_coupling_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_cosmological_constant_einstein_response_coupling_origin_certificate()
+    assert certificate.stationary_gradient == sp.zeros(3, 1)
+    assert certificate.parent_hessian == sp.ImmutableMatrix(
+        [[2, -1, 0], [-1, 2, -1], [0, -1, 1]]
+    )
+    assert certificate.parent_hessian.rank() == 3
+    assert certificate.parent_hessian.det() == 1
+    assert certificate.leading_minors == sp.ImmutableMatrix([2, 3, 1])
+    assert certificate.anchor_scale_map.rank() == 1
+    assert len(certificate.anchor_scale_map.nullspace()) == 3
+    assert certificate.fully_anchored_map.rank() == 4
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.conditional_origin) == 5
+    assert certificate.inherited_origin == sp.ImmutableMatrix([1, 1, 1, 0, 0, 0, 0])
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_einstein_response_anchor_package_candidate_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_einstein_response_anchor_package_candidate_audit_certificate()
+    assert certificate.combined_matrix.shape == (16, 5)
+    assert certificate.combined_matrix.rank() == 5
+    assert all(vector == sp.zeros(4, 1) for vector in certificate.pass_vectors)
+    assert certificate.rank_vector == sp.ImmutableMatrix([3, 4, 2, 3])
+    assert certificate.maximum_score_vector == sp.ImmutableMatrix([3, 4, 4, 4])
+    assert certificate.package_dependency.rank() == 4
+    assert certificate.package_availability == sp.zeros(4, 1)
+    assert certificate.conditional_anchor_map.rank() == 1
+    assert len(certificate.conditional_anchor_map.nullspace()) == 3
+    assert certificate.fully_anchored_map.rank() == 4
+    assert sum(certificate.audit_coverage) == 16
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_induced_newton_constant_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_newton_constant_parent_origin_certificate()
+    assert certificate.stationary_gradient == sp.zeros(3, 1)
+    assert certificate.parent_hessian == sp.ImmutableMatrix(
+        [[2, -1, 0], [-1, 2, -1], [0, -1, 1]]
+    )
+    assert certificate.parent_hessian.rank() == 3
+    assert certificate.parent_hessian.det() == 1
+    assert certificate.leading_minors == sp.ImmutableMatrix([2, 3, 1])
+    assert certificate.scale_map.rank() == 3
+    assert certificate.scale_map.nullspace() == [sp.Matrix([1, -1, -1, 1])]
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.relative_origin) == 6
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_induced_newton_scale_seed_candidate_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_newton_scale_seed_candidate_audit_certificate()
+    assert certificate.candidate_matrix.shape == (10, 6)
+    assert certificate.candidate_matrix.rank() == 5
+    assert certificate.pass_vector == sp.zeros(10, 1)
+    assert certificate.independent_parent_anchor_vector == sp.zeros(10, 1)
+    assert certificate.noncircular_orbit_breaker_vector == sp.zeros(10, 1)
+    assert certificate.relative_scale_map.rank() == 4
+    assert len(certificate.relative_scale_map.nullspace()) == 1
+    assert certificate.relative_scale_map * certificate.scale_vector == sp.zeros(4, 1)
+    assert certificate.externally_anchored_map.rank() == 5
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.origin_ledger) == 3
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_induced_newton_dimensional_transmutation_beta_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_newton_dimensional_transmutation_beta_parent_origin_certificate()
+    assert certificate.beta_coefficient == 2
+    assert certificate.matching_coupling_squared == sp.Rational(3, 8)
+    assert certificate.landau_log_ratio == 32 * sp.pi**2 / 3
+    assert certificate.seed_log_ratio == 64 * sp.pi**2 / 3
+    assert certificate.einstein_dimensionless_coefficient == 1 / (16 * sp.pi)
+    assert certificate.stationary_gradient == sp.zeros(3, 1)
+    assert certificate.parent_hessian == sp.ImmutableMatrix(
+        [[2, -1, 0], [-1, 2, -1], [0, -1, 1]]
+    )
+    assert certificate.parent_hessian.rank() == 3
+    assert certificate.parent_hessian.det() == 1
+    assert certificate.leading_minors == sp.ImmutableMatrix([2, 3, 1])
+    assert certificate.scale_map.rank() == 2
+    assert len(certificate.scale_map.nullspace()) == 1
+    assert certificate.scale_map * certificate.scale_vector == sp.zeros(2, 1)
+    assert certificate.externally_anchored_map.rank() == 3
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.conditional_origin) == 7
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_throughflow_scale_parent_admission_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_throughflow_scale_parent_admission_certificate()
+    assert certificate.stationary_gradient == sp.zeros(3, 1)
+    assert certificate.parent_hessian == sp.ImmutableMatrix(
+        [[2, -1, 0], [-1, 2, -1], [0, -1, 1]]
+    )
+    assert certificate.parent_hessian.rank() == 3
+    assert certificate.parent_hessian.det() == 1
+    assert certificate.leading_minors == sp.ImmutableMatrix([2, 3, 1])
+    assert certificate.scale_map.rank() == 3
+    assert len(certificate.scale_map.nullspace()) == 1
+    assert certificate.scale_map * certificate.scale_vector == sp.zeros(3, 1)
+    assert certificate.externally_anchored_map.rank() == 4
+    assert sum(certificate.inherited_origin) == 3
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.conditional_origin) == 8
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_spectral_coefficient_origin_candidate_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_spectral_coefficient_origin_candidate_audit_certificate()
+    assert certificate.candidate_matrix.shape == (12, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.pass_vector == sp.zeros(12, 1)
+    assert certificate.score_vector == sp.ImmutableMatrix(
+        [4, 4, 3, 4, 4, 3, 3, 4, 4, 5, 5, 4]
+    )
+    assert certificate.component_assignment.rank() == 3
+    assert certificate.component_pass_vector == sp.zeros(3, 1)
+    assert certificate.package_dependency.rank() == 3
+    assert certificate.package_availability == sp.zeros(3, 1)
+    assert certificate.scale_map.rank() == 3
+    assert len(certificate.scale_map.nullspace()) == 1
+    assert certificate.scale_map * certificate.scale_vector == sp.zeros(3, 1)
+    assert certificate.externally_anchored_map.rank() == 4
+    assert sum(certificate.architecture) == 12
+    assert sum(certificate.origin_ledger) == 3
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_output_density_morphism_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_output_density_morphism_origin_certificate()
+    assert certificate.sign_admissibility == sp.ImmutableMatrix([0, 1])
+    assert certificate.stationary_gradient == sp.zeros(3, 1)
+    assert certificate.parent_hessian == sp.ImmutableMatrix(
+        [[2, -1, 0], [-1, 2, -1], [0, -1, 1]]
+    )
+    assert certificate.parent_hessian.rank() == 3
+    assert certificate.parent_hessian.det() == 1
+    assert certificate.leading_minors == sp.ImmutableMatrix([2, 3, 1])
+    assert certificate.scale_map.rank() == 3
+    assert len(certificate.scale_map.nullspace()) == 1
+    assert certificate.scale_map * certificate.scale_vector == sp.zeros(3, 1)
+    assert certificate.externally_anchored_map.rank() == 4
+    assert sum(certificate.inherited_origin) == 4
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.conditional_origin) == 8
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_kms_output_channel_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_kms_output_channel_parent_origin_certificate()
+    assert certificate.completeness == sp.eye(2)
+    assert certificate.transition_matrix == sp.ImmutableMatrix(
+        [[sp.Rational(11, 12), sp.Rational(1, 6)],
+         [sp.Rational(1, 12), sp.Rational(5, 6)]]
+    )
+    assert certificate.stationary_state == certificate.kms_state
+    assert certificate.fluxes == sp.ImmutableMatrix(
+        [sp.Rational(1, 18), sp.Rational(1, 18)]
+    )
+    assert certificate.net_flux == 0
+    assert certificate.excited_output[0, 0] == sp.Rational(1, 6)
+    assert certificate.parent_hessian.rank() == 3
+    assert certificate.parent_hessian.det() == 1
+    assert certificate.scale_map.rank() == 3
+    assert certificate.scale_map * certificate.scale_vector == sp.zeros(3, 1)
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.conditional_origin) == 8
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_nonequilibrium_two_reservoir_output_current_parent_admission_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_nonequilibrium_two_reservoir_output_current_parent_admission_certificate()
+    assert certificate.completeness == sp.eye(2)
+    assert certificate.stationary == sp.ImmutableMatrix([sp.Rational(8, 11), sp.Rational(3, 11)])
+    assert certificate.currents == sp.ImmutableMatrix([sp.Rational(1, 66), -sp.Rational(1, 66)])
+    assert certificate.entropy_production == sp.log(2) / 66
+    assert certificate.hessian.rank() == 3
+    assert certificate.scale_map.rank() == 3
+    assert certificate.scale_map * certificate.scale_vector == sp.zeros(3, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_bath_velocity_growth_parent_is_exact() -> None:
+    c = build_v10_bath_velocity_growth_parent()
+    assert c.stationary_gradient.applyfunc(sp.simplify) == sp.zeros(3, 1)
+    assert c.parent_hessian.det() == 4
+    assert c.parent_hessian.rank() == 3
+    assert c.scale_map * c.scale_kernel == sp.zeros(3, 1)
+    assert sum(c.architecture) == 10
+
+
+def test_version10_bath_continuum_cell_embedding_is_exact() -> None:
+    c = build_v10_bath_continuum_embedding()
+    assert c.scale_map.rank() == 3
+    assert c.scale_map * c.scale_kernel == sp.zeros(3, 1)
+    assert sum(c.pass_vector) == 0
+    assert sum(c.architecture) == 9
+
+
+def test_version10_bath_microscopic_carrier_cutoff_is_exact() -> None:
+    c = build_v10_bath_microscopic_carrier()
+    assert c.cutoff_vector == sp.ImmutableMatrix([sp.pi, 2 * sp.sqrt(3), 42])
+    assert c.parent_hessian == sp.eye(3)
+    assert c.scale_map.rank() == 3
+    assert c.scale_map * c.scale_kernel == sp.zeros(3, 2)
+    assert sum(c.conditional_admission) == 9
+    assert sum(c.physical_origin) == 0
+
+
+def test_version10_bath_correlation_time_is_exact() -> None:
+    c = build_v10_bath_correlation_time()
+    assert c.correlation_times == sp.ImmutableMatrix([1, sp.sqrt(sp.pi) / 2])
+    assert c.fixed_profile_hessian == sp.eye(1)
+    assert c.scale_map * c.scale_kernel == sp.zeros(2, 2)
+    assert sum(c.conditional_origin) == 8
+    assert sum(c.physical_origin) == 0
+
+
+def test_version10_bath_spectral_memory_scale_audit_is_exact() -> None:
+    c = build_v10_bath_spectral_memory()
+    assert c.candidate_matrix.rank() == 6
+    assert c.component_assignment.rank() == 2
+    assert c.scale_map * c.scale_kernel == sp.zeros(2, 2)
+    assert sum(c.pass_vector) == 0
+
+
+def test_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_affinity_hopf_cycle_typed_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_affinity_hopf_cycle_typed_origin_certificate()
+    assert certificate.edge_affinities == sp.ImmutableMatrix([sp.log(2)] * 3)
+    assert certificate.reservoir_affinities[1] - certificate.reservoir_affinities[0] == sp.log(2)
+    assert certificate.affinity_map.rank() == 2
+    assert certificate.affinity_map * certificate.affinity_kernel == sp.zeros(2, 1)
+    assert certificate.rate_clock_map.rank() == 1
+    assert certificate.rate_clock_map * certificate.rate_clock_kernel == sp.zeros(1, 1)
+    assert certificate.hessian.det() == 1
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_cell_complex_typed_embedding_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_cell_complex_typed_embedding_certificate()
+    assert certificate.boundary.shape == (7, 6)
+    assert certificate.boundary.rank() == 6
+    assert certificate.laplacian == certificate.boundary * certificate.boundary.T
+    assert certificate.laplacian.rank() == 6
+    assert certificate.adjacency == certificate.reference_adjacency
+    assert certificate.causal_defects == sp.zeros(certificate.causal_defects.rows, 1)
+    assert certificate.orientation_invariant_laplacian == certificate.laplacian
+    assert certificate.parent_hessian.rank() == 3
+    assert certificate.parent_hessian * certificate.parent_kernel == sp.zeros(4, 1)
+    assert certificate.scale_map * certificate.scale_kernel == sp.zeros(2, 2)
+    assert sum(certificate.conditional_origin) == 10
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_cell_complex_edge_length_common_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_cell_complex_edge_length_common_parent_origin_certificate()
+    assert certificate.invariant_vector == sp.ImmutableMatrix([1, 1, sp.pi, 2 * sp.sqrt(3), 42, 1, 1])
+    assert certificate.parent_hessian == sp.eye(7)
+    assert certificate.scale_map.rank() == 7
+    assert len(certificate.scale_map.nullspace()) == 2
+    assert certificate.scale_map * certificate.scale_kernel == sp.zeros(7, 2)
+    assert certificate.velocity_anchored_map.rank() == 8
+    assert certificate.velocity_anchored_map * certificate.velocity_anchored_kernel == sp.zeros(8, 1)
+    assert certificate.fully_anchored_map.rank() == 9
+    assert sum(certificate.conditional_origin) == 11
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_growth_graph_typed_embedding_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_growth_graph_typed_embedding_certificate()
+    assert certificate.chain_map_defect == sp.zeros(3, 6)
+    assert certificate.local_adjacency_defect == sp.zeros(3, 5)
+    assert certificate.deck_period_defect == sp.zeros(3, 4)
+    assert certificate.birth_shift_defect == sp.zeros(3, 6)
+    assert certificate.height_increment == sp.ones(6, 1)
+    assert certificate.height_shift_defect == sp.zeros(6, 1)
+    assert certificate.radius_counts == sp.ImmutableMatrix([1, 3, 5, 7])
+    assert certificate.forward_counts == sp.ImmutableMatrix([1, 2, 3, 4])
+    assert certificate.scale_map.rank() == 8
+    assert certificate.scale_map * certificate.scale_kernel == sp.zeros(8, 1)
+    assert sum(certificate.conditional_origin) == 12
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_birth_height_physical_time_morphism_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_birth_height_physical_time_morphism_origin_certificate()
+    assert certificate.affine_time_map.rank() == 2
+    assert certificate.edge_time_map == sp.ImmutableMatrix.hstack(sp.zeros(6, 1), sp.ones(6, 1))
+    assert certificate.origin_edge_effect == sp.zeros(6, 1)
+    assert certificate.tick_edge_effect == sp.ones(6, 1)
+    assert certificate.normalized_time_labels == certificate.height
+    assert certificate.parent_hessian == sp.eye(3)
+    assert certificate.scale_map.rank() == 2
+    assert certificate.scale_map * certificate.scale_kernel == sp.zeros(3, 2)
+    assert certificate.speed_anchored_map.rank() == 3
+    assert certificate.speed_anchored_map * certificate.speed_anchored_kernel == sp.zeros(4, 1)
+    assert certificate.fully_anchored_map.rank() == 4
+    assert sum(certificate.conditional_origin) == 10
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_absolute_scale_candidate_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_absolute_scale_candidate_audit_certificate()
+    assert certificate.candidate_matrix.shape == (12, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.pass_vector == sp.zeros(12, 1)
+    assert certificate.internal_break_vector == sp.zeros(12, 1)
+    assert certificate.equivalent_tick_ratios == sp.ones(5, 1)
+    assert certificate.profile_tick_ratios[0] == 1 / (2 * sp.sqrt(3))
+    assert certificate.scale_map.rank() == 3
+    assert certificate.scale_map * certificate.scale_kernel == sp.zeros(4, 1)
+    assert certificate.externally_anchored_map.rank() == 4
+    assert sum(certificate.audit_coverage) == 12
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_dimensional_transmutation_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_dimensional_transmutation_parent_origin_certificate()
+    assert certificate.landau_log_ratio == 32 * sp.pi**2 / 3
+    assert certificate.seed_log_ratio == 64 * sp.pi**2 / 3
+    assert certificate.tick_reference_product == sp.exp(-32 * sp.pi**2 / 3)
+    assert certificate.k43_tick_product == 42
+    assert certificate.mismatch_factor == 42 * sp.exp(32 * sp.pi**2 / 3)
+    assert certificate.stationary_gradient == sp.zeros(3, 1)
+    assert certificate.parent_hessian == sp.eye(3)
+    assert certificate.scale_map.rank() == 3
+    assert certificate.scale_map * certificate.scale_kernels == sp.zeros(3, 2)
+    assert certificate.speed_anchored_map.rank() == 4
+    assert certificate.speed_anchored_map * certificate.speed_anchored_kernel == sp.zeros(4, 1)
+    assert certificate.fully_anchored_map.rank() == 5
+    assert sum(certificate.conditional_origin) == 9
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_k43_rg_boundary_matching_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_k43_rg_boundary_matching_origin_certificate()
+    assert certificate.landau_log == 32 * sp.pi**2 / 3
+    assert certificate.required_reference_ratio == sp.exp(-32 * sp.pi**2 / 3) / 42
+    assert certificate.direct_required_g_squared == -4 * sp.pi**2 / sp.log(42)
+    assert certificate.reverse_required_g_squared == 4 * sp.pi**2 / sp.log(42)
+    assert certificate.candidate_matrix.shape == (5, 6)
+    assert certificate.candidate_matrix.rank() == 5
+    assert certificate.pass_vector == sp.zeros(5, 1)
+    assert certificate.parent_hessian == sp.eye(2)
+    assert certificate.scale_map.rank() == 2
+    assert certificate.scale_map * certificate.scale_kernels == sp.zeros(2, 2)
+    assert certificate.speed_anchored_map.rank() == 3
+    assert certificate.speed_anchored_map * certificate.speed_anchored_kernel == sp.zeros(3, 1)
+    assert certificate.fully_anchored_map.rank() == 4
+    assert sum(certificate.conditional_origin) == 8
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_candidate_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_candidate_audit_certificate()
+    assert certificate.required_ratio == sp.exp(-32 * sp.pi**2 / 3) / 42
+    assert certificate.landau_factor * certificate.k43_factor == certificate.required_ratio
+    assert certificate.candidate_matrix.shape == (11, 6)
+    assert certificate.candidate_matrix.rank() == 5
+    assert certificate.pass_vector == sp.zeros(11, 1)
+    assert certificate.factor_assignment.rank() == 2
+    assert certificate.composition_hessian.rank() == 1
+    assert certificate.composition_hessian * certificate.composition_kernel == sp.zeros(3, 2)
+    assert certificate.scale_map.rank() == 2
+    assert certificate.scale_map * certificate.scale_kernel == sp.zeros(3, 2)
+    assert sum(certificate.audit_coverage) == 11
+    assert sum(certificate.origin_ledger) == 3
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_common_parent_origin_is_exact() -> None:
+    c=build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_common_parent_origin_certificate()
+    assert c.stationary_gradient == sp.zeros(3,1)
+    assert c.conditional_hessian.rank() == 3
+    assert c.conditional_hessian.det() == 1
+    assert c.inherited_hessian.rank() == 2
+    assert c.inherited_hessian*c.inherited_kernel == sp.zeros(3,1)
+    assert c.mixed_blocks == sp.zeros(2,1)
+    assert c.scale_map.rank() == 2
+    assert c.scale_map*c.scale_kernel == sp.zeros(3,2)
+    assert sum(c.architecture) == 9
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_cross_sector_operator_candidate_audit_is_exact() -> None:
+    c=build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_cross_sector_operator_candidate_audit_certificate()
+    assert c.candidate_matrix.shape == (8,6)
+    assert c.candidate_matrix.rank() == 5
+    assert c.pass_vector == sp.zeros(8,1)
+    assert c.inherited_mixed_selection == sp.zeros(8,1)
+    assert c.direct_sum_hessian[0,1] == 0
+    assert c.portal_hessian.det() == 1-sp.symbols("lambda",real=True)**2
+    assert c.portal_hessian.subs(sp.symbols("lambda",real=True),1)*c.portal_kernel == sp.zeros(2,1)
+    assert sum(c.audit_coverage) == 8
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_minimal_portal_operator_architecture_is_exact() -> None:
+    c=build_version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_minimal_portal_operator_architecture_certificate()
+    assert c.p_rg+c.p_43 == sp.eye(2)
+    assert c.portal*c.p_rg*c.portal == c.p_43
+    assert c.algebra_basis.rank() == 4
+    assert c.commutant_map.rank() == 3
+    assert c.commutant_map*c.commutant_kernel == sp.zeros(3,1)
+    assert c.hessian.det() == sp.Rational(3,4)
+    assert c.stationary_gradient == sp.zeros(2,1)
+    assert sp.exp(c.bridge_readout) == sp.exp(-32*sp.pi**2/3)/42
+    assert sum(c.architecture) == 11
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_rg_invariant_readout_is_exact() -> None:
+    c=build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_rg_invariant_readout_certificate()
+    assert c.mode_cell_product == sp.exp(-32*sp.pi**2/3)
+    assert c.resolution == sp.exp(32*sp.pi**2/3)
+    assert c.constraint_map.rank() == 2
+    assert c.augmented_map.rank() == 2
+    assert c.augmented_map*c.scale_kernel == sp.zeros(3,1)
+    assert (c.resolution_covector*c.scale_kernel)[0] == 0
+    assert sum(c.architecture) == 10
+    assert sum(c.relational_consequence) == 7
+    assert sum(c.physical_typing) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_physical_mode_candidate_audit_is_exact() -> None:
+    c=build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_physical_mode_candidate_audit_certificate()
+    assert c.candidate_matrix.shape == (10,6)
+    assert c.candidate_matrix.rank() == 5
+    assert c.pass_vector == sp.zeros(10,1)
+    assert c.internal_resolution_witnesses[0] == 1
+    assert c.internal_resolution_witnesses[1] == sp.Rational(1,42)
+    assert c.internal_resolution_witnesses[2] == c.target_resolution
+    assert c.physical_pole_vector[8] == 0
+    assert sum(c.exact_match_vector) == 2
+    assert sum(c.audit_coverage) == 10
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_spectral_pole_parent_origin_is_exact() -> None:
+    c=build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_spectral_pole_parent_origin_certificate()
+    assert c.pole_wavenumber_cell == sp.exp(-32*sp.pi**2/3)
+    assert c.pole_mass_squared == sp.exp(-64*sp.pi**2/3)
+    assert c.pole_value == 0
+    assert c.residue == 1
+    assert c.pole_projector*c.pole_projector == c.pole_projector
+    assert c.pole_operator*c.pole_projector == c.pole_mass_squared*c.pole_projector
+    assert c.parent_hessian == sp.ones(1)
+    assert c.inherited_mass_term == 0
+    assert c.uv_ir_product == 1
+    assert sum(c.architecture) == 10
+    assert sum(c.conditional_pole) == 6
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_ir_mass_term_candidate_audit_is_exact() -> None:
+    c = build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_ir_mass_term_candidate_audit_certificate()
+    assert c.required_mass_squared == sp.exp(-64 * sp.pi**2 / 3)
+    assert c.inherited_beta == 2
+    assert c.conditional_af_beta == -2
+    assert c.af_logarithm == 32 * sp.pi**2 / 3
+    assert c.conditional_af_scale_ratio == sp.exp(-32 * sp.pi**2 / 3)
+    assert c.conditional_af_mass_squared_ratio == c.required_mass_squared
+    assert c.candidate_matrix.shape == (11, 6)
+    assert c.candidate_matrix.rank() == 6
+    assert c.pass_vector == sp.zeros(11, 1)
+    assert c.internal_exact_origin_vector == sp.zeros(11, 1)
+    assert sum(c.audit_coverage) == 11
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_beta_sign_parent_origin_is_exact() -> None:
+    c = build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_beta_sign_parent_origin_certificate()
+    assert c.required_beta == -2
+    assert c.inherited_beta == 2
+    assert c.su2_beta == -2
+    assert c.su3_beta == -2
+    assert c.anomalous_su3_weyl_beta == -2
+    assert c.beta_constraint_map.rank() == 1
+    assert c.beta_constraint_map * c.beta_constraint_kernel == sp.zeros(1, 2)
+    assert c.beta_parent_hessian.rank() == 1
+    assert c.beta_parent_hessian * c.beta_constraint_kernel == sp.zeros(3, 2)
+    assert c.candidate_matrix.shape == (9, 6)
+    assert c.candidate_matrix.rank() == 6
+    assert c.pass_vector == sp.zeros(9, 1)
+    assert sum(c.conditional_exact_carriers) == 2
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_anomaly_free_carrier_candidate_audit_is_exact() -> None:
+    c = build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_anomaly_free_carrier_candidate_audit_certificate()
+    assert c.required_beta == -2
+    assert c.current_nonabelian_betas == sp.ImmutableMatrix([sp.Rational(-19, 6), -7])
+    assert c.current_beta_mismatch == sp.ImmutableMatrix([sp.Rational(-7, 6), -5])
+    assert c.solution_betas == -2 * sp.ones(5, 1)
+    assert c.complexity_vector == sp.ImmutableMatrix([10, 18, 23, 31, 36])
+    assert c.minimality_vector == sp.ImmutableMatrix([1, 0, 0, 0, 0])
+    assert c.su2_weyl_doublets == 16
+    assert c.su2_witten_parity == 0
+    assert c.candidate_matrix.shape == (11, 6)
+    assert c.candidate_matrix.rank() == 6
+    assert c.pass_vector == sp.zeros(11, 1)
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_eight_dirac_k43_typed_embedding_is_exact() -> None:
+    c = build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_eight_dirac_k43_typed_embedding_certificate()
+    assert c.active_projector.rank() == 32
+    assert c.singlet_projector.rank() == 11
+    assert c.active_projector + c.singlet_projector == sp.eye(43)
+    assert c.casimir == sp.Rational(3, 4) * c.active_projector
+    assert c.trace_gram == 8 * sp.eye(3)
+    assert c.fermion_index == 8
+    assert c.beta_coefficient == -2
+    assert c.local_anomaly_tensor == sp.zeros(27, 1)
+    assert c.witten_parity == 0
+    assert c.commutant_dimension == 377
+    assert c.active_pole_gauge_defect == 1
+    assert c.singlet_pole_gauge_defect == 0
+    assert c.active_projector * c.singlet_rank_one_pole == sp.zeros(43)
+    assert c.minimal_invariant_active_projector.rank() == 2
+    assert sum(c.architecture) == 12
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_composite_pole_parent_origin_is_exact() -> None:
+    c = build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_composite_pole_parent_origin_certificate()
+    assert (c.singlet_vector.H * c.singlet_vector)[0] == 1
+    assert c.singlet_projector.rank() == 1
+    assert c.triplet_projector.rank() == 3
+    assert c.antisymmetrizer == c.singlet_projector
+    assert c.total_casimir == 2 * c.triplet_projector
+    assert c.binding_parent.rank() == 3
+    assert c.inherited_two_body_parent == sp.zeros(4)
+    assert c.singlet_triplet_splitting == 0
+    assert c.full_singlet_multiplicity == 256
+    assert c.pole_value == 0
+    assert c.residue == 1
+    assert sum(c.architecture) == 12
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_kernel_candidate_audit_is_exact() -> None:
+    c = build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_kernel_candidate_audit_certificate()
+    assert c.commutant_constraint.rank() == 14
+    assert c.commutant_dimension == 2
+    assert c.invariant_basis.rank() == 2
+    assert c.exchange_kernel == sp.Rational(1, 4) * sp.eye(4) - c.singlet_projector
+    assert c.normalized_exchange_parent == c.triplet_projector
+    assert c.inherited_kernel == sp.zeros(4)
+    assert c.inherited_gap == 0
+    assert c.flavor_identity.rank() == 256
+    assert c.candidate_matrix.shape == (11, 6)
+    assert c.candidate_matrix.rank() == 6
+    assert c.pass_vector == sp.zeros(11, 1)
+    assert c.selected_origin_vector == sp.zeros(11, 1)
+    assert sum(c.audit_coverage) == 11
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_coefficient_parent_origin_is_exact() -> None:
+    c = build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_binding_coefficient_parent_origin_certificate()
+    assert c.exchange_kernel == sp.Rational(1, 4) * sp.eye(4) - c.singlet_projector
+    assert c.coupling_squared == sp.Rational(3, 8)
+    assert c.stationary_gradient == sp.zeros(2, 1)
+    assert c.conditional_hessian == sp.Matrix([[1, -sp.Rational(3, 8)], [-sp.Rational(3, 8), sp.Rational(73, 64)]])
+    assert c.conditional_hessian.rank() == 2
+    assert c.conditional_hessian.det() == 1
+    assert c.leading_minors == sp.Matrix([1, 1])
+    assert c.inherited_hessian == sp.diag(1, 0)
+    assert c.inherited_hessian.rank() == 1
+    assert c.inherited_hessian * c.inherited_kernel == sp.zeros(2, 1)
+    assert c.inherited_mixed_block == 0
+    assert c.inherited_binding_coefficient == 0
+    assert c.inherited_pole_map == sp.zeros(1)
+    assert sum(c.architecture) == 10
+    assert sum(c.inherited_ingredients) == 2
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_mediator_susceptibility_candidate_audit_is_exact() -> None:
+    c = build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_mediator_susceptibility_candidate_audit_certificate()
+    assert c.coupling_squared == sp.Rational(3, 8)
+    assert c.normalization_exponents == sp.Matrix([-2, 2])
+    assert c.binding_exponent == 0
+    assert c.massless_laplacian.det() == 0
+    assert c.massless_laplacian.rank() == 1
+    assert c.massless_laplacian * c.laplacian_zero_mode == sp.zeros(2, 1)
+    assert c.k43_inverse_cutoff == sp.Rational(1, 42)
+    assert c.af_response == sp.Rational(1, 2)
+    assert c.candidate_matrix.shape == (11, 6)
+    assert c.candidate_matrix.rank() == 6
+    assert c.pass_vector == sp.zeros(11, 1)
+    assert c.internal_origin_vector == sp.zeros(11, 1)
+    assert sum(c.audit_coverage) == 11
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_static_propagator_parent_origin_is_exact() -> None:
+    c = build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_static_propagator_parent_origin_certificate()
+    assert c.gauge_projector.rank() == 1
+    assert c.physical_projector.rank() == 1
+    assert c.gauge_projector + c.physical_projector == sp.eye(2)
+    assert c.laplacian == 2 * c.physical_projector
+    assert (c.gauge_fixed_operator * c.green_operator).applyfunc(sp.simplify) == sp.eye(2)
+    assert c.physical_green_operator == sp.Rational(1, 2) * c.physical_projector
+    assert c.gauge_projector * c.conserved_current == sp.zeros(2, 1)
+    assert c.susceptibility == sp.Rational(1, 2)
+    assert c.binding_coefficient == sp.Rational(3, 16)
+    assert c.parent_hessian.rank() == 2
+    assert c.inherited_su2_embedding == sp.zeros(1)
+    assert c.inherited_current_map == sp.zeros(1)
+    assert sum(c.architecture) == 12
+    assert sum(c.gauge_independence) == 5
+    assert sum(c.inherited_geometry) == 1
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_cell_complex_typed_embedding_is_exact() -> None:
+    c = build_version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_su2_mediator_cell_complex_typed_embedding_certificate()
+    assert c.adjoint_boundary.rank() == 3
+    assert c.adjoint_laplacian.rank() == 3
+    assert c.adjoint_laplacian == 2 * c.physical_projector
+    assert c.spatial_current_embedding.H * c.spatial_current_embedding == sp.eye(3)
+    assert c.relative_current_intertwiner.H * c.relative_current_intertwiner == sp.eye(3)
+    assert c.relative_current_intertwiner * c.relative_current_intertwiner.H == c.triplet_projector
+    assert c.combined_current_map.H * c.combined_current_map == c.triplet_projector
+    assert c.combined_current_map * c.combined_current_map.H == c.physical_projector
+    assert c.susceptibility_matrix == sp.Rational(1, 2) * sp.eye(3)
+    assert c.binding_coefficient == sp.Rational(3, 16)
+    assert sum(c.architecture) == 14
+    assert sum(c.typed_embedding) == 10
+    assert sum(c.inherited_ingredients) == 2
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+def test_version10_flavor_pair_selector_candidate_audit_is_exact() -> None:
+    c = build_version10_flavor_selector_certificate()
+    assert c.democratic_projector.rank() == 1
+    assert c.basis_symmetry_defect.rank() == 2
+    assert c.candidate_matrix.rank() == 6
+    assert c.pass_vector == sp.zeros(10, 1)
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+def test_version10_democratic_flavor_selector_parent_origin_is_exact() -> None:
+    c = build_version10_democratic_flavor_parent_certificate()
+    assert c.democratic_projector.rank() == 1
+    assert c.orthogonal_projector.rank() == 15
+    assert c.complete_laplacian == 16 * c.orthogonal_projector
+    assert c.pair_spectrum_multiplicities == sp.Matrix([1, 30, 225])
+    assert c.inherited_graph_operator == sp.zeros(16)
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_flavor_graph_candidate_audit_is_exact() -> None:
+    c = build_version10_flavor_graph_candidate_audit_certificate()
+    assert c.hypercube_adjacency * sp.ones(16, 1) == 4 * sp.ones(16, 1)
+    assert c.hypercube_laplacian.rank() == 15
+    assert c.hypercube_laplacian * c.democratic_vector == sp.zeros(16, 1)
+    assert c.bit_flip_covariance_defects == sp.zeros(64, 16)
+    assert c.complete_laplacian.rank() == 15
+    assert c.bipartite_laplacian.rank() == 15
+    assert c.candidate_matrix.shape == (10, 6)
+    assert c.candidate_matrix.rank() == 6
+    assert c.score_vector == sp.Matrix([4, 4, 4, 3, 4, 4, 3, 3, 3, 5])
+    assert c.pass_vector == sp.zeros(10, 1)
+    assert c.internal_origin_vector == sp.zeros(10, 1)
+    assert sum(c.audit_coverage) == 10
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_particle_wrinkle_dislocation_common_parent_reopening_is_exact() -> None:
+    c = build_version10_particle_wrinkle_dislocation_common_parent_certificate()
+    assert c.fredholm_map.T * c.fredholm_map == sp.eye(90)
+    assert c.fredholm_map.rank() == 90
+    assert c.closure_projector.rank() == 15
+    assert sp.trace(c.closure_projector) == 15
+    assert c.index_data == sp.Matrix([0, 15, -15, sp.Rational(1, 7)])
+    assert c.wrinkle_stationary_data == sp.Matrix([2, 0, 2])
+    assert c.inherited_parent_hessian == sp.diag(2, 0)
+    assert c.inherited_parent_hessian.rank() == 1
+    assert c.conditional_common_hessian.det() == 1
+    assert c.conditional_common_hessian.rank() == 2
+    assert c.localization_map == sp.zeros(1, 15)
+    assert c.energy_to_pole_map == sp.zeros(1)
+    assert sum(c.common_parent_requirements) == 8
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_particle_wrinkle_dislocation_mixed_bridge_candidate_audit_is_exact() -> None:
+    c = build_version10_particle_wrinkle_dislocation_mixed_bridge_certificate()
+    assert c.inherited_hessian == sp.diag(2, 0)
+    assert c.inherited_hessian.rank() == 1
+    assert c.graded_product_mixed_block == sp.zeros(2)
+    assert c.morita_mixed_block == sp.zeros(2)
+    assert c.conditional_callias_hessian.det() == 1
+    assert c.conditional_callias_hessian.rank() == 2
+    assert c.callias_localization_projector.rank() == 15
+    assert c.candidate_matrix.shape == (11, 6)
+    assert c.candidate_matrix.rank() == 6
+    assert c.score_vector == sp.Matrix([3, 3, 4, 4, 3, 4, 5, 4, 4, 3, 5])
+    assert c.pass_vector == sp.zeros(11, 1)
+    assert c.inherited_pass_vector == sp.zeros(11, 1)
+    assert sum(c.audit_coverage) == 11
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_particle_wrinkle_dislocation_callias_common_carrier_is_exact() -> None:
+    c = build_version10_particle_wrinkle_dislocation_callias_carrier_certificate()
+    assert c.spatial_twist_commutators == sp.zeros(540, 60)
+    assert c.positive_mass_projector.rank() == 30
+    assert c.negative_mass_projector.rank() == 30
+    assert c.positive_mass_projector + c.negative_mass_projector == sp.eye(60)
+    assert c.coefficient_projector.rank() == 15
+    assert c.ko_charge_defect.rank() == 30
+    assert c.cell_charge_operator * c.cell_twist_generators[0] == c.cell_twist_generators[0] * c.cell_charge_operator
+    assert c.cell_to_flavor_twist_map.rank() == 0
+    assert c.dimension_data == sp.Matrix([2, 2, 15, 60, 30, 43])
+    assert sum(c.conditional_architecture) == 10
+    assert sum(c.inherited_ingredients) == 5
+    assert sum(c.physical_origin) == 0
+    assert c.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_common_affinity_temperature_anchor_candidate_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_common_affinity_temperature_anchor_candidate_audit_certificate()
+    assert certificate.candidate_matrix.shape == (10, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.pass_vector == sp.zeros(10, 1)
+    assert certificate.bath_affinities == sp.ImmutableMatrix([sp.log(2), 2 * sp.log(2)])
+    assert certificate.affinity_map * certificate.affinity_kernel == sp.zeros(2, 1)
+    assert certificate.temperature_map * certificate.temperature_kernel == sp.zeros(2, 1)
+    assert certificate.energy_anchored_temperature_map.rank() == 3
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_hopf_path_length_reservoir_coupling_is_exact() -> None:
+    certificate = build_version10_hopf_path_length_reservoir_coupling_certificate()
+    assert certificate.assignment_scores == sp.ImmutableMatrix([0, 8])
+    assert certificate.aligned_defect == sp.zeros(2)
+    assert certificate.swapped_defect.rank() == 2
+    assert certificate.conditional_hessian == sp.eye(2)
+    assert certificate.inherited_mixed_block == sp.zeros(2)
+    assert certificate.temperature_map * certificate.temperature_kernel == sp.zeros(2, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_hopf_reservoir_intertwiner_audit_is_exact() -> None:
+    certificate = build_version10_hopf_reservoir_intertwiner_audit_certificate()
+    assert certificate.intertwiner_constraint.rank() == 2
+    assert len(certificate.intertwiner_constraint.nullspace()) == 2
+    assert certificate.intertwiner_constraint * certificate.intertwiner_kernel == sp.zeros(4, 2)
+    assert len(certificate.real_orthogonal_intertwiners) == 4
+    assert certificate.inherited_mixed_block == sp.zeros(2)
+    assert certificate.target_loaded_hessian.rank() == 2
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.pass_vector == sp.zeros(10, 1)
+    assert certificate.inherited_pass_vector == sp.zeros(10, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_hopf_reservoir_common_carrier_is_exact() -> None:
+    certificate = build_version10_hopf_reservoir_common_carrier_certificate()
+    assert certificate.reservoir_projector.rank() == 2
+    assert certificate.path_projector.rank() == 2
+    assert certificate.reservoir_projector + certificate.path_projector == sp.eye(4)
+    assert certificate.intertwiner.T * certificate.intertwiner == certificate.path_projector
+    assert certificate.intertwiner * certificate.intertwiner.T == certificate.reservoir_projector
+    assert certificate.common_orientation * certificate.intertwiner == certificate.intertwiner * certificate.common_orientation
+    assert certificate.algebra_basis.rank() == 16
+    assert certificate.commutant_constraint.rank() == 15
+    assert certificate.conditional_hessian.rank() == 4
+    assert certificate.conditional_hessian.det() == sp.Rational(9, 16)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_m4_cross_generator_parent_is_exact() -> None:
+    certificate = build_version10_m4_cross_generator_parent_certificate()
+    assert certificate.conditional_gradient == sp.zeros(4, 1)
+    assert certificate.conditional_hessian.rank() == 4
+    assert certificate.conditional_hessian.det() == 32
+    assert certificate.sign_minimum_values == sp.zeros(4, 1)
+    assert certificate.phase_unitarity_residual == sp.zeros(2)
+    assert certificate.phase_orientation_residual == sp.zeros(2)
+    assert certificate.phase_potential == 0
+    assert certificate.inherited_cross_hessian == sp.zeros(4)
+    assert certificate.inherited_cross_source == sp.zeros(4, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_m4_bifundamental_condensate_audit_is_exact() -> None:
+    certificate = build_version10_m4_bifundamental_condensate_audit_certificate()
+    assert certificate.candidate_matrix.shape == (11, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.score_vector == sp.ImmutableMatrix([3, 4, 4, 4, 4, 5, 5, 5, 4, 4, 4])
+    assert certificate.pass_vector == sp.zeros(11, 1)
+    assert certificate.physical_seed_vector == sp.zeros(11, 1)
+    assert certificate.incidence_laplacian.eigenvals() == {0: 1, 2: 1}
+    assert certificate.sign_flipped_laplacian.eigenvals() == {-2: 1, 0: 1}
+    assert certificate.callias_hessian.det() == 1
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_m4_cell_incidence_tachyonic_sign_parent_is_exact() -> None:
+    certificate = build_version10_m4_cell_incidence_tachyonic_sign_certificate()
+    assert certificate.reversed_laplacian == certificate.laplacian
+    assert certificate.laplacian.eigenvals() == {0: 1, 2: 1}
+    assert certificate.positive_weight_laplacian.eigenvals() == {0: 1, 6: 1}
+    assert certificate.adjacency * certificate.relative_mode == -certificate.relative_mode
+    assert certificate.stable_schur_complement == sp.Rational(3, 2)
+    assert certificate.supercritical_auxiliary_hessian.det() == -2
+    assert certificate.supercritical_schur_complement == -2
+    assert certificate.fermion_vacuum_curvature == -2
+    assert certificate.candidate_matrix.shape == (12, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.pass_vector == sp.zeros(12, 1)
+    assert certificate.inherited_derived_negative_seed == sp.zeros(12, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_m4_fermionic_determinant_common_carrier_is_exact() -> None:
+    certificate = build_version10_m4_fermionic_determinant_common_carrier_certificate()
+    assert certificate.reservoir_projector.rank() == 2
+    assert certificate.path_projector.rank() == 2
+    assert certificate.sector_grading**2 == sp.eye(4)
+    assert certificate.cross_involution**2 == sp.eye(4)
+    assert certificate.clifford_anticommutator == sp.zeros(4)
+    assert certificate.block_diagonal_cross_projection == sp.zeros(4)
+    assert certificate.determinant_polynomial == (1 + sp.symbols("x", real=True) ** 2) ** 2
+    assert certificate.fermion_curvature == -4
+    assert certificate.total_curvature == -2
+    assert certificate.stationary_curvatures == sp.Matrix([2, -2, 2])
+    assert certificate.stationary_values == sp.Matrix([1 - sp.log(4), 0, 1 - sp.log(4)])
+    assert certificate.berezin_pairing.rank() == 8
+    assert sum(certificate.conditional_architecture) == 14
+    assert sum(certificate.inherited_ingredients) == 2
+    assert certificate.physical_origin == sp.zeros(4, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_m4_fermionic_cross_odd_statistics_audit_is_exact() -> None:
+    certificate = build_version10_m4_fermionic_cross_odd_audit_certificate()
+    assert certificate.ko_charge_defect.rank() == 4
+    assert certificate.equal_charge_defect == sp.zeros(4)
+    assert certificate.inherited_odd_projector.rank() == 2
+    assert certificate.target_odd_projector.rank() == 4
+    assert certificate.odd_rank_defect.rank() == 2
+    assert certificate.callias_embedding.rank() == 0
+    assert certificate.reduced_pfaffian_phases == sp.Matrix([-1, 1])
+    assert certificate.full_ko6_phases == sp.ones(2, 1)
+    assert certificate.candidate_matrix.shape == (12, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.pass_vector == sp.zeros(12, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_callias_m4_cross_typed_embedding_is_exact() -> None:
+    certificate = build_version10_callias_m4_cross_typed_embedding_certificate()
+    assert certificate.spatial_twist_commutators == sp.zeros(540, 60)
+    assert certificate.twist_grading**2 == sp.eye(60)
+    assert certificate.twist_cross**2 == sp.eye(60)
+    assert certificate.charge_cross_defect == sp.zeros(60)
+    assert certificate.positive_projector.rank() == 30
+    assert certificate.negative_projector.rank() == 30
+    assert certificate.partial_isometry.rank() == 30
+    assert certificate.conditional_amplifier.rank() == 2
+    assert certificate.conditional_amplifier.T * certificate.conditional_amplifier == 15 * sp.eye(2)
+    assert certificate.inherited_amplifier.rank() == 0
+    assert certificate.algebra_gram.rank() == 16
+    assert certificate.determinant_curvature == -60
+    assert sum(certificate.conditional_architecture) == 16
+    assert sum(certificate.inherited_data) == 3
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_uniform_h15_amplification_parent_is_exact() -> None:
+    certificate = build_version10_uniform_h15_amplification_certificate()
+    assert certificate.block_metric == sp.diag(6, 2, 3, 3, 1)
+    assert certificate.existing_incidence.rank() == 3
+    assert certificate.existing_laplacian.rank() == 3
+    assert len(certificate.existing_laplacian.nullspace()) == 2
+    assert certificate.component_amplifier.rank() == 2
+    assert certificate.augmented_incidence.rank() == 4
+    assert certificate.augmented_laplacian.rank() == 4
+    assert len(certificate.augmented_laplacian.nullspace()) == 1
+    assert certificate.uniform_channel_vector == sp.ones(15, 1)
+    assert certificate.conditional_twist_amplifier.T * certificate.conditional_twist_amplifier == 15 * sp.eye(2)
+    assert certificate.inherited_bridge.rank() == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_quark_lepton_connector_candidate_audit_is_exact() -> None:
+    certificate = build_version10_h15_quark_lepton_connector_candidate_audit_certificate()
+    assert certificate.direct_augmented_incidence.rank() == 4
+    assert certificate.direct_laplacian.rank() == 4
+    assert len(certificate.direct_laplacian.nullspace()) == 1
+    assert certificate.chirality * certificate.direct_bridge == sp.zeros(1, 1)
+    assert certificate.color_label * certificate.direct_bridge == sp.ones(1, 1)
+    assert certificate.hypercharge6 * certificate.direct_bridge == sp.ImmutableMatrix([[4]])
+    assert certificate.r2_pair.rank() == 2
+    assert certificate.r2_augmented_incidence.rank() == 4
+    assert certificate.r2_augmented_incidence.cols - certificate.r2_augmented_incidence.rank() == 1
+    assert certificate.r2_first_order_defect == sp.ones(2, 1)
+    assert certificate.candidate_matrix.shape == (11, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.score_vector == sp.ImmutableMatrix([2, 5, 3, 3, 4, 4, 3, 4, 2, 5, 1])
+    assert certificate.pass_vector == sp.zeros(11, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_generalized_first_order_parent_admission_is_exact() -> None:
+    certificate = build_version10_h15_r2_generalized_first_order_parent_admission_certificate()
+    assert certificate.left_unitary**2 == sp.eye(5)
+    assert certificate.right_unitary**2 == sp.eye(5)
+    assert certificate.admitted_a2 == sp.zeros(5)
+    assert certificate.admitted_dirac + certificate.admitted_a1 + certificate.admitted_opposite_a1 + certificate.admitted_a2 == certificate.admitted_transformed
+    assert certificate.r2_double_commutator.rank() == 4
+    assert certificate.r2_a1 == -2 * certificate.r2_seed
+    assert certificate.r2_opposite_a1 == -2 * certificate.r2_seed
+    assert certificate.r2_a2 == 4 * certificate.r2_seed
+    assert certificate.existing_laplacian.rank() == 3
+    assert len(certificate.existing_laplacian.nullspace()) == 2
+    assert certificate.augmented_laplacian.rank() == 4
+    assert len(certificate.augmented_laplacian.nullspace()) == 1
+    assert certificate.inherited_r2_seed == sp.zeros(2, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_dirac_seed_candidate_audit_is_exact() -> None:
+    certificate = build_version10_h15_r2_dirac_seed_candidate_audit_certificate()
+    assert certificate.standard_dirac.rank() == 4
+    assert certificate.r2_seed.rank() == 4
+    assert certificate.internal_r2_projections == sp.zeros(5, 1)
+    assert certificate.target_projection == certificate.r2_seed
+    assert certificate.candidate_matrix.shape == (11, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.score_vector == sp.ImmutableMatrix([5, 5, 5, 4, 3, 3, 1, 1, 2, 4, 5])
+    assert certificate.pass_vector == sp.zeros(11, 1)
+    assert certificate.target_coefficient_hessian.rank() == 1
+    assert certificate.inherited_seed_map.rank() == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_pati_salam_sigma_typed_embedding_is_exact() -> None:
+    certificate = build_version10_h15_r2_pati_salam_sigma_typed_embedding_certificate()
+    assert sum(certificate.sector_dimensions) == 60
+    assert certificate.hypercharge6 == sp.ImmutableMatrix([3, -3, 7, 1, -1, -7, 3, -3])
+    assert certificate.target_selector**2 == certificate.target_selector
+    assert certificate.target_selector.rank() == 2
+    assert certificate.complement_selector.rank() == 6
+    assert certificate.su2r_flip**2 == sp.eye(8)
+    assert certificate.su2r_selector_defect.rank() == 4
+    assert certificate.hypercharge_generator * certificate.target_selector == certificate.target_selector * certificate.hypercharge_generator
+    assert certificate.color_generator * certificate.target_selector == certificate.target_selector * certificate.color_generator
+    assert certificate.r2_incidence.rank() == 2
+    assert certificate.augmented_laplacian.rank() == 4
+    assert len(certificate.augmented_laplacian.nullspace()) == 1
+    assert certificate.inherited_sigma_map.rank() == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_sigma_component_selector_candidate_audit_is_exact() -> None:
+    certificate = build_version10_h15_r2_sigma_component_selector_candidate_audit_certificate()
+    assert certificate.polynomial_selector == certificate.target_selector
+    assert certificate.polynomial_selector**2 == certificate.polynomial_selector
+    assert certificate.polynomial_selector.rank() == 2
+    assert certificate.affine_evaluation.rank() == 2
+    assert certificate.affine_augmented.rank() == 3
+    assert certificate.quadratic_evaluation.rank() == 3
+    assert certificate.real_conjugation * certificate.polynomial_selector == certificate.polynomial_selector * certificate.real_conjugation
+    assert certificate.su2r_defect.rank() == 4
+    assert certificate.target_mass_hessian.rank() == 6
+    assert len(certificate.target_mass_hessian.nullspace()) == 2
+    assert certificate.inherited_mass_splitting.rank() == 0
+    assert certificate.candidate_matrix.shape == (11, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.pass_vector == sp.zeros(11, 1)
+    assert certificate.physical_origin == sp.ImmutableMatrix([1, 0, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_hypercharge_projector_mass_splitting_parent_origin_is_exact() -> None:
+    certificate = build_version10_h15_r2_hypercharge_projector_mass_splitting_parent_origin_certificate()
+    assert certificate.hypercharge_square == sp.diag(9, 9, 49, 1, 1, 49, 9, 9)
+    assert certificate.gap_operator == sp.diag(40, 40, 0, 48, 48, 0, 40, 40)
+    assert certificate.gap_operator.rank() == 6
+    assert len(certificate.gap_operator.nullspace()) == 2
+    assert certificate.gap_operator * certificate.target_selector == sp.zeros(8)
+    assert certificate.real_conjugation * certificate.gap_operator == certificate.gap_operator * certificate.real_conjugation
+    assert certificate.su2r_defect.rank() == 4
+    assert certificate.witness_hessian == sp.diag(20, 20, -20, 28, 28, -20, 20, 20)
+    assert certificate.witness_hessian.det() == 50176000000
+    assert certificate.inherited_gap_hessian.rank() == 0
+    assert certificate.coefficient_origin == sp.zeros(2, 1)
+    assert certificate.physical_origin == sp.ImmutableMatrix([1, 0, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_hypercharge_gap_coefficient_candidate_audit_is_exact() -> None:
+    certificate = build_version10_h15_r2_hypercharge_gap_coefficient_candidate_audit_certificate()
+    assert certificate.sector_mass_map.rank() == 2
+    assert certificate.diagnostic_masses == sp.ImmutableMatrix(
+        [[-1, -1, -1], [49, 9, 1], [-49, -9, -1], [0, 40, 48], [-20, 20, 28], [-40, 0, 8]]
+    )
+    assert certificate.strict_sign_pass == sp.ImmutableMatrix([0, 0, 0, 0, 1, 0])
+    assert certificate.boundary_flags == sp.ImmutableMatrix([0, 0, 0, 1, 0, 1])
+    assert certificate.interior_coefficients.rank() == 2
+    assert certificate.interior_masses == sp.ImmutableMatrix([[-10, 30, 38], [-30, 10, 18]])
+    assert certificate.inherited_coefficient_map.rank() == 0
+    assert certificate.candidate_matrix.shape == (11, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.pass_vector == sp.zeros(11, 1)
+    assert certificate.score_vector[-1] == 5
+    assert certificate.physical_origin == sp.ImmutableMatrix([1, 0, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_hypercharge_breaking_background_common_carrier_admission_is_exact() -> None:
+    certificate = build_version10_h15_r2_hypercharge_breaking_background_common_carrier_admission_certificate()
+    assert certificate.delta_hypercharge6 == sp.ImmutableMatrix([4, 4, 4, -2, -2, -2, 0, -6])
+    assert certificate.polynomial_neutral_selector == certificate.neutral_selector
+    assert certificate.neutral_selector.rank() == 1
+    assert len(certificate.delta_hypercharge_generator.nullspace()) == 1
+    assert certificate.stabilizer_constraint.rank() == 1
+    assert len(certificate.stabilizer_constraint.nullspace()) == 1
+    assert certificate.stabilizer_constraint * certificate.unbroken_cartan_ray == sp.zeros(1, 1)
+    assert certificate.sigma_charge_basis.T * certificate.sigma_charge_basis == sp.diag(72, 64)
+    assert certificate.sigma_charge_basis * certificate.unbroken_cartan_ray == certificate.sigma_hypercharge6
+    assert certificate.joint_spectral_algebra.rank() == 6
+    assert certificate.hypercharge_spectral_algebra.rank() == 6
+    assert certificate.combined_spectral_algebra.rank() == 6
+    assert certificate.branch_admission == sp.ImmutableMatrix([0, 1])
+    assert certificate.inherited_tome10_background_map.rank() == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_delta_mapping_cone_common_parent_typed_embedding_is_exact() -> None:
+    certificate = build_version10_h15_r2_delta_mapping_cone_common_parent_typed_embedding_certificate()
+    assert certificate.delta_injection.rank() == 52
+    assert certificate.sigma_injection.rank() == 8
+    assert certificate.delta_injection.T * certificate.sigma_injection == sp.zeros(52, 8)
+    assert certificate.delta_inertia_representative.rank() == 43
+    assert len(certificate.delta_inertia_representative.nullspace()) == 9
+    assert certificate.sigma_gap.rank() == 6
+    assert len(certificate.sigma_gap.nullspace()) == 2
+    assert certificate.inherited_direct_sum_hessian.rank() == 43
+    assert len(certificate.inherited_direct_sum_hessian.nullspace()) == 17
+    assert certificate.inherited_cross_block == sp.zeros(52, 8)
+    assert certificate.conditional_gap_hessian.rank() == 49
+    assert len(certificate.conditional_gap_hessian.nullspace()) == 11
+    assert certificate.inherited_coefficient_map.rank() == 0
+    assert certificate.universal_portal_map.rank() == 1
+    assert certificate.universal_augmented_map.rank() == 2
+    assert certificate.connected_extension_map.rank() == 2
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_delta_sigma_mixed_curvature_candidate_audit_is_exact() -> None:
+    certificate = build_version10_h15_r2_delta_sigma_mixed_curvature_candidate_audit_certificate()
+    assert certificate.t3r_square == 9 * sp.ones(8, 1)
+    assert certificate.bl_square == sp.ImmutableMatrix([0, 0, 16, 16, 16, 16, 0, 0])
+    assert certificate.mixed_tb == sp.ImmutableMatrix([0, 0, 12, -12, -12, 12, 0, 0])
+    assert certificate.curvature_basis.rank() == 3
+    assert certificate.target_coefficients == sp.ImmutableMatrix([40, -1, -2])
+    assert certificate.target_gap == sp.ImmutableMatrix([40, 40, 0, 48, 48, 0, 40, 40])
+    assert sp.ImmutableMatrix.hstack(certificate.even_subbasis, certificate.target_gap).rank() == 3
+    assert sp.ImmutableMatrix.hstack(certificate.mixed_subbasis, certificate.target_gap).rank() == 3
+    assert certificate.inherited_curvature_map.rank() == 0
+    assert certificate.candidate_matrix.shape == (11, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.pass_vector == sp.zeros(11, 1)
+    assert certificate.score_vector[5] == 5
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_delta_stabilizer_moment_map_curvature_parent_origin_is_exact() -> None:
+    certificate = build_version10_h15_r2_delta_stabilizer_moment_map_curvature_parent_origin_certificate()
+    assert certificate.moment_norms == sp.ImmutableMatrix([sp.Rational(1, 2), sp.Rational(3, 4)])
+    assert certificate.normalization_coefficients == sp.ImmutableMatrix([6, -4])
+    assert certificate.hypercharge6 == sp.ImmutableMatrix([3, -3, 7, 1, -1, -7, 3, -3])
+    assert certificate.positive_moment_hessian == sp.diag(9, 9, 49, 1, 1, 49, 9, 9)
+    assert certificate.positive_moment_hessian.rank() == 8
+    assert certificate.target_gap == sp.diag(40, 40, 0, 48, 48, 0, 40, 40)
+    assert certificate.congruence.rank() == 16
+    assert certificate.full_parent_hessian.rank() == 14
+    assert len(certificate.full_parent_hessian.nullspace()) == 2
+    assert certificate.schur_complement == certificate.target_gap
+    assert certificate.inherited_auxiliary_coupling.rank() == 0
+    assert certificate.inherited_schur_complement == 49 * sp.eye(8)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_shared_fixed_point_auxiliary_channel_typed_embedding_is_exact() -> None:
+    certificate = build_version10_h15_r2_shared_fixed_point_auxiliary_channel_typed_embedding_certificate()
+    assert certificate.fixed_point_weights.rows == 36
+    assert certificate.weight_multiplicities[:, 0] == sp.ImmutableMatrix([1, 0, 0, 2, 1, 0, 1, 2, 0, 0, 1])
+    assert certificate.weight_multiplicities[:, 1] == sp.ImmutableMatrix([0, 1, 6, 0, 0, 22, 0, 0, 6, 1, 0])
+    assert certificate.weight_match_matrix == sp.zeros(36, 8)
+    assert certificate.intertwiner_constraint.rank() == 288
+    assert len(certificate.intertwiner_constraint.nullspace()) == 0
+    assert certificate.untyped_injection.rank() == 8
+    assert certificate.untyped_metric_pullback == sp.eye(8)
+    assert certificate.untyped_equivariance_residual.rank() == 8
+    assert certificate.grading_constraint.rank() == 288
+    assert certificate.sigma_reality**2 == sp.eye(8)
+    assert certificate.extension_equivariance_residual == sp.zeros(8)
+    assert certificate.extension_grading_residual == sp.zeros(8)
+    assert certificate.extension_reality_residual == sp.zeros(8)
+    assert certificate.extension_metric_pullback == sp.eye(8)
+    assert certificate.conditional_parent_hessian.rank() == 14
+    assert len(certificate.conditional_parent_hessian.nullspace()) == 2
+    assert certificate.conditional_schur_complement == sp.diag(40, 40, 0, 48, 48, 0, 40, 40)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_minimal_odd_auxiliary_bimodule_candidate_audit_is_exact() -> None:
+    certificate = build_version10_h15_r2_minimal_odd_auxiliary_bimodule_candidate_audit_certificate()
+    assert sum(certificate.minimal_multiplicities) == 8
+    assert certificate.required_reality**2 == sp.eye(8)
+    assert certificate.required_grading == -sp.eye(8)
+    assert certificate.required_metric == sp.eye(8)
+    assert certificate.candidate_matrix.shape == (12, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.score_vector == sp.ImmutableMatrix([4, 2, 5, 5, 5, 3, 4, 5, 4, 4, 4, 3])
+    assert certificate.pass_vector == sp.zeros(12, 1)
+    assert certificate.coverage == sp.ones(6, 1)
+    assert certificate.hubbard_stratonovich_row == sp.ImmutableMatrix([[1, 1, 1, 1, 1, 0]])
+    assert certificate.inherited_embedding.rank() == 0
+    assert certificate.conditional_embedding.rank() == 8
+    assert certificate.conditional_parent_hessian.rank() == 14
+    assert len(certificate.conditional_parent_hessian.nullspace()) == 2
+    assert certificate.conditional_schur_complement == sp.diag(40, 40, 0, 48, 48, 0, 40, 40)
+    assert certificate.physical_origin == sp.ImmutableMatrix([1, 1, 1, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_hubbard_stratonovich_odd_auxiliary_parent_origin_is_exact() -> None:
+    certificate = build_version10_h15_r2_hubbard_stratonovich_odd_auxiliary_parent_origin_certificate()
+    assert certificate.stationary_auxiliary_map.rank() == 8
+    assert certificate.shift_matrix.det() == 1
+    assert certificate.diagonalized_parent == sp.diag(certificate.target_gap, sp.eye(8))
+    assert certificate.hs_parent_hessian.rank() == 14
+    assert len(certificate.hs_parent_hessian.nullspace()) == 2
+    assert certificate.hs_schur_complement == certificate.target_gap
+    assert certificate.gaussian_auxiliary_metric.det() == 1
+    assert certificate.inherited_parent_hessian.rank() == 16
+    assert len(certificate.inherited_parent_hessian.nullspace()) == 0
+    assert certificate.inherited_cross_block.rank() == 0
+    assert certificate.required_cross_block.rank() == 8
+    assert certificate.inherited_schur_complement == 49 * sp.eye(8)
+    assert certificate.new_operator_increment.rank() == 16
+    assert certificate.increment_diagonal_form == sp.diag(2 * certificate.hypercharge_generator, -2 * certificate.hypercharge_generator)
+    assert certificate.rank_ledger == sp.ImmutableMatrix([16, 14])
+    assert certificate.physical_status == sp.ImmutableMatrix([1, 1, 1, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_odd_auxiliary_cross_bilinear_candidate_audit_is_exact() -> None:
+    certificate = build_version10_h15_r2_odd_auxiliary_cross_bilinear_candidate_audit_certificate()
+    assert certificate.hypercharge6 == sp.ImmutableMatrix([3, -3, 7, 1, -1, -7, 3, -3])
+    assert certificate.cartan_basis.rank() == 2
+    assert certificate.cartan_basis.T * certificate.cartan_basis == sp.diag(72, 64)
+    assert certificate.cartan_basis * certificate.locked_coefficients == certificate.hypercharge6
+    assert certificate.required_cross_block.rank() == 8
+    assert certificate.inherited_cross_block.rank() == 0
+    assert certificate.cross_hessian.rank() == 16
+    assert certificate.cross_diagonal_form == sp.diag(2 * certificate.required_cross_block, -2 * certificate.required_cross_block)
+    assert certificate.candidate_matrix.shape == (12, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.score_vector == sp.ImmutableMatrix([4, 3, 3, 5, 4, 4, 3, 3, 4, 4, 5, 4])
+    assert certificate.pass_vector == sp.zeros(12, 1)
+    assert certificate.coverage == sp.ones(6, 1)
+    assert certificate.moment_map_row == sp.ImmutableMatrix([[1, 1, 1, 1, 1, 0]])
+    assert certificate.superconnection_row == certificate.moment_map_row
+    assert certificate.physical_origin == sp.ImmutableMatrix([1, 1, 1, 1, 1, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_delta_moment_map_odd_auxiliary_trilinear_parent_origin_is_exact() -> None:
+    certificate = build_version10_h15_r2_delta_moment_map_odd_auxiliary_trilinear_parent_origin_certificate()
+    assert certificate.hypercharge_generator.rank() == 8
+    assert certificate.invariant_metric_basis.rank() == 3
+    assert certificate.normalization_constraint.rank() == 2
+    assert len(certificate.normalization_constraint.nullspace()) == 1
+    assert certificate.inherited_coefficients == sp.ImmutableMatrix([1, 1, 0])
+    assert certificate.target_coefficients == sp.ImmutableMatrix([1, 1, 1])
+    assert certificate.inherited_diagonal_form == sp.diag(2, 2)
+    assert certificate.half_diagonal_form == sp.diag(3, 1)
+    assert certificate.target_diagonal_form == sp.diag(4, 0)
+    assert certificate.inherited_trace_metric.rank() == 16
+    assert certificate.half_trace_metric.rank() == 16
+    assert certificate.target_trace_metric.rank() == 8
+    assert len(certificate.target_trace_metric.nullspace()) == 8
+    assert certificate.inherited_cross_block.rank() == 0
+    assert certificate.half_cross_block == sp.Rational(1, 2) * certificate.hypercharge_generator
+    assert certificate.target_cross_block == certificate.hypercharge_generator
+    assert certificate.antisymmetric_mixing.T == -certificate.antisymmetric_mixing
+    assert certificate.conditional_status == sp.ImmutableMatrix([1, 1, 1, 0, 0])
+    assert certificate.physical_status == sp.ImmutableMatrix([1, 1, 0, 1, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_superconnection_mixed_curvature_parent_origin_is_exact() -> None:
+    certificate = build_version10_h15_r2_superconnection_mixed_curvature_parent_origin_certificate()
+    assert certificate.hypercharge_generator == sp.diag(3, -3, 7, 1, -1, -7, 3, -3)
+    assert certificate.ordinary_generator == sp.diag(3, -3, -1, -7, 7, 1, 3, -3)
+    assert certificate.grading * certificate.background_curvature == certificate.background_curvature * certificate.grading
+    assert certificate.unit_odd_field.T == certificate.unit_odd_field
+    assert certificate.oddness_residual == sp.zeros(16)
+    assert certificate.graded_polarization == certificate.hypercharge_generator
+    assert certificate.ordinary_polarization == certificate.ordinary_generator
+    assert certificate.polarization_defect == 2 * sp.diag(*list(certificate.bl3))
+    assert certificate.polarization_defect.rank() == 4
+    assert certificate.inherited_auxiliary_embedding.rank() == 0
+    assert certificate.conditional_auxiliary_embedding.rank() == 8
+    assert certificate.conditional_status == sp.ImmutableMatrix([1, 1, 1, 1, 0, 0])
+    assert certificate.physical_status == sp.ImmutableMatrix([1, 1, 1, 1, 0, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_superconnection_curvature_trace_selector_candidate_audit_is_exact() -> None:
+    certificate = build_version10_h15_r2_superconnection_curvature_trace_selector_candidate_audit_certificate()
+    assert certificate.endpoint_channel_map.rank() == 2
+    assert certificate.endpoint_channel_map.T * certificate.endpoint_channel_map == sp.diag(72, 64)
+    assert certificate.endpoint_channel_map * certificate.unique_trace_weights == certificate.target_generator
+    assert certificate.unique_trace_weights == sp.ImmutableMatrix([1, -1])
+    assert certificate.ordinary_trace_weights == sp.ImmutableMatrix([1, 1])
+    assert certificate.ordinary_generator == sp.ImmutableMatrix([3, -3, -1, -7, 7, 1, 3, -3])
+    assert certificate.relative_projector**2 == certificate.relative_projector
+    assert certificate.relative_projector.rank() == 1
+    assert certificate.relative_diagonal_form == sp.diag(0, 2)
+    assert certificate.inherited_relative_selector.rank() == 0
+    assert certificate.candidate_matrix.shape == (12, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.score_vector == sp.ImmutableMatrix([5, 5, 5, 5, 5, 4, 5, 5, 4, 3, 2, 3])
+    assert certificate.pass_vector == sp.zeros(12, 1)
+    assert certificate.coverage == sp.ones(6, 1)
+    assert certificate.junk_quotient_row == sp.ImmutableMatrix([[1, 1, 1, 1, 1, 0]])
+    assert certificate.length_two_row == certificate.junk_quotient_row
+    assert certificate.physical_origin == sp.ImmutableMatrix([1, 1, 1, 1, 1, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_relative_curvature_junk_quotient_parent_origin_is_exact() -> None:
+    certificate = build_version10_h15_r2_relative_curvature_junk_quotient_parent_origin_certificate()
+    assert certificate.represented_one_forms.rank() == 2
+    assert len(certificate.represented_one_forms.nullspace()) == 2
+    assert certificate.one_form_kernel.rank() == 2
+    assert certificate.represented_two_forms.rank() == 2
+    assert certificate.degree_two_junk.rank() == 0
+    assert certificate.quotient_basis.rank() == 2
+    assert certificate.sum_relative_basis.rank() == 2
+    assert certificate.incidence.T * certificate.incidence == certificate.graph_laplacian
+    assert certificate.relative_projector**2 == certificate.relative_projector
+    assert certificate.relative_projector.rank() == 1
+    assert certificate.relative_diagonal_form == sp.diag(0, 2)
+    assert certificate.projected_sum == sp.zeros(2, 1)
+    assert certificate.projected_relative == certificate.relative_vector
+    assert certificate.relative_readout == certificate.target_generator
+    assert certificate.relative_readout.rank() == 8
+    assert certificate.inherited_hodge_selector.rank() == 0
+    assert certificate.conditional_hodge_selector.rank() == 1
+    assert certificate.inherited_auxiliary_edge.rank() == 0
+    assert certificate.conditional_auxiliary_edge.rank() == 8
+    assert certificate.conditional_status == sp.ImmutableMatrix([1, 1, 1, 1, 0, 0])
+    assert certificate.physical_status == sp.ImmutableMatrix([1, 1, 1, 1, 0, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_relative_hodge_auxiliary_edge_common_parent_admission_is_exact() -> None:
+    certificate = build_version10_h15_r2_relative_hodge_auxiliary_edge_common_parent_admission_certificate()
+    assert certificate.weight_match_matrix == sp.zeros(36, 8)
+    assert certificate.intertwiner_constraint.rank() == 288
+    assert len(certificate.intertwiner_constraint.nullspace()) == 0
+    assert certificate.sigma_reality**2 == sp.eye(8)
+    assert certificate.common_reality**2 == sp.eye(16)
+    assert certificate.oddness_residual == sp.zeros(16)
+    assert certificate.odd_edge_operator.rank() == 16
+    assert certificate.incidence_edge.rank() == 8
+    assert certificate.hodge_projector**2 == certificate.hodge_projector
+    assert certificate.hodge_projector.rank() == 8
+    assert certificate.hodge_diagonal_form == sp.diag(sp.zeros(8), 2 * sp.eye(8))
+    assert certificate.gauge_hodge_commutator == sp.zeros(16)
+    assert certificate.reality_hodge_commutator == sp.zeros(16)
+    assert certificate.inherited_hodge_selector.rank() == 0
+    assert certificate.conditional_auxiliary_injection.rank() == 8
+    assert certificate.extension_dimension == sp.ImmutableMatrix([8])
+    assert certificate.relative_readout == certificate.target_generator
+    assert certificate.inherited_status == sp.ImmutableMatrix([1, 1, 1, 0, 0, 0])
+    assert certificate.conditional_status == sp.ones(6, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_relative_hodge_auxiliary_edge_origin_candidate_audit_is_exact() -> None:
+    certificate = build_version10_h15_r2_relative_hodge_auxiliary_edge_origin_candidate_audit_certificate()
+    assert certificate.required_reality**2 == sp.eye(8)
+    assert certificate.relative_projector.rank() == 8
+    assert certificate.diagonal_reuse_embedding.rank() == 8
+    assert certificate.diagonal_relative_image == sp.zeros(16, 8)
+    assert certificate.independent_relative_image.rank() == 8
+    assert certificate.inherited_fixed_point_embedding.rank() == 0
+    assert certificate.candidate_matrix.shape == (12, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.score_vector == sp.ImmutableMatrix([3,5,4,4,5,5,5,4,4,5,5,5])
+    assert certificate.pass_vector == sp.zeros(12, 1)
+    assert certificate.coverage == sp.ones(6, 1)
+    assert certificate.suspension_row == sp.ImmutableMatrix([[1,1,1,1,1,0]])
+    assert certificate.mapping_cylinder_row == certificate.suspension_row
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_superconnection_suspension_auxiliary_copy_parent_origin_is_exact() -> None:
+    certificate = build_version10_h15_r2_superconnection_suspension_auxiliary_copy_parent_origin_certificate()
+    assert certificate.sigma_reality**2 == sp.eye(8)
+    assert certificate.sigma_reality * certificate.target_generator * certificate.sigma_reality == -certificate.target_generator
+    assert certificate.suspension_grading * certificate.suspension_edge + certificate.suspension_edge * certificate.suspension_grading == sp.zeros(16)
+    assert certificate.doubled_generator * certificate.suspension_edge == certificate.suspension_edge * certificate.doubled_generator
+    assert certificate.bare_dynamical_injection.rank() == 0
+    assert certificate.thom_differential**2 == sp.zeros(16)
+    assert certificate.thom_differential.rank() == 8
+    assert certificate.thom_grading * certificate.thom_differential + certificate.thom_differential * certificate.thom_grading == sp.zeros(16)
+    assert certificate.doubled_reality * certificate.thom_differential == certificate.thom_differential * certificate.doubled_reality
+    assert certificate.thom_boson_injection.rank() == 8
+    assert certificate.relative_boson_image.rank() == 8
+    assert certificate.section_operator.rank() == 8
+    assert certificate.gaussian_hessian.rank() == 14
+    assert certificate.effective_hessian == sp.diag(40, 40, 0, 48, 48, 0, 40, 40)
+    assert certificate.fermionic_jacobian == 3969
+    assert sum(certificate.bare_status) == 3
+    assert sum(certificate.thom_status) == 6
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_mathai_quillen_thom_multiplet_common_parent_origin_is_exact() -> None:
+    certificate = build_version10_h15_r2_mathai_quillen_thom_multiplet_common_parent_origin_certificate()
+    assert certificate.relative_projector**2 == certificate.relative_projector
+    assert certificate.suspension_swap == sp.eye(16) - 2 * certificate.relative_projector
+    assert certificate.oriented_edge**2 == sp.zeros(16)
+    assert certificate.oriented_edge.rank() == 8
+    assert certificate.thom_differential**2 == sp.zeros(32)
+    assert certificate.thom_differential.rank() == 16
+    assert certificate.field_parity * certificate.thom_differential + certificate.thom_differential * certificate.field_parity == sp.zeros(32)
+    assert certificate.field_gauge_generator * certificate.thom_differential == certificate.thom_differential * certificate.field_gauge_generator
+    assert certificate.field_reality * certificate.thom_differential == certificate.thom_differential * certificate.field_reality
+    assert certificate.inherited_field_injection.rank() == 8
+    assert certificate.conditional_bosonic_injection.rank() == 16
+    assert certificate.inherited_odd_injection.rank() == 0
+    assert certificate.bosonic_hessian.rank() == 16
+    assert certificate.fermionic_determinant == 3969
+    assert certificate.bosonic_determinant == certificate.fermionic_determinant**2
+    assert certificate.normalized_measure_ratio == 1
+    assert sum(certificate.conditional_status) == 7
+    assert sum(certificate.inherited_status) == 3
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_mathai_quillen_odd_pair_statistics_candidate_audit_is_exact() -> None:
+    certificate = build_version10_h15_r2_mathai_quillen_odd_pair_statistics_candidate_audit_certificate()
+    assert certificate.odd_pairing.T == -certificate.odd_pairing
+    assert certificate.odd_pairing.rank() == 16
+    assert certificate.odd_pairing.det() == 15752961
+    assert certificate.field_parity**2 == sp.eye(16)
+    assert certificate.required_shift_generator.rank() == 8
+    assert certificate.inherited_gauge_shift_at_origin.rank() == 0
+    assert certificate.candidate_matrix.shape == (12, 7)
+    assert certificate.candidate_matrix.rank() == 7
+    assert certificate.pass_vector == sp.zeros(12, 1)
+    assert sum(certificate.shift_brst_row) == 6
+    assert sum(certificate.physical_fermion_row) == 4
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_h15_r2_mathai_quillen_shift_symmetry_parent_origin_is_exact() -> None:
+    certificate = build_version10_h15_r2_mathai_quillen_shift_symmetry_parent_origin_certificate()
+    assert certificate.effective_hessian.rank() == 6
+    assert certificate.inherited_flat_basis.rank() == 2
+    assert certificate.effective_hessian * certificate.inherited_flat_basis == sp.zeros(8, 2)
+    assert certificate.required_shift.rank() == 8
+    assert certificate.ordinary_gauge_tangent_at_origin.rank() == 0
+    assert certificate.difference_map * certificate.diagonal_shift == sp.zeros(8)
+    assert certificate.stueckelberg_hessian * certificate.diagonal_shift == sp.zeros(16, 8)
+    assert certificate.stueckelberg_hessian.rank() == 6
+    assert certificate.physical_inclusion.T * certificate.stueckelberg_hessian * certificate.physical_inclusion == certificate.effective_hessian
+    assert certificate.gauge_fixing_operator.det() == 3969
+    assert certificate.inherited_stueckelberg_injection.rank() == 0
+    assert sum(certificate.conditional_status) == 6
+    assert sum(certificate.inherited_status) == 3
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_final_conclusion_and_tome11_program_is_exact() -> None:
+    certificate = build_version10_final_conclusion_and_tome11_program_certificate()
+    assert sum(certificate.operational_conditional) == 6
+    assert sum(certificate.operational_physical) == 4
+    assert certificate.operational_physical + certificate.operational_deficit == certificate.operational_conditional
+    assert sum(certificate.inherited_rg_physical) == 3
+    assert certificate.inherited_rg_physical + certificate.inherited_rg_deficit == sp.ones(6, 1)
+    assert certificate.reopening_packages == sp.zeros(4, 1)
+    assert certificate.tome11_dependency.rank() == 6
+    assert certificate.tome11_dependency.det() == 1
+    assert certificate.tome11_specification == sp.ones(6, 1)
+    assert certificate.tome11_construction == sp.zeros(6, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_alpha_inverse_pi4_two_reservoir_inverse_response_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_induced_newton_breathing_anomaly_alpha_inverse_pi4_two_reservoir_inverse_response_origin_certificate()
+    S = sp.symbols("S_geo", positive=True)
+    assert certificate.reservoir_ratios[0] * certificate.reservoir_ratios[1] == sp.pi**-4
+    assert certificate.unit_response == -1 / (sp.pi**4 * S**2)
+    assert certificate.old_dipole_response == -1 / (32 * sp.pi * S**2)
+    assert certificate.pass_vector == sp.zeros(6, 1)
+    assert certificate.response_map.rank() == 1
+    assert certificate.response_map * certificate.response_kernel == sp.zeros(1, 2)
+    assert sum(certificate.conditional_origin) == 4
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_entropy_production_trace_anomaly_morphism_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_two_reservoir_entropy_production_trace_anomaly_morphism_origin_certificate()
+    assert certificate.entropy_per_step == sp.log(2) / 66
+    assert sp.simplify(certificate.einstein_trace_density / certificate.entropy_energy_density) != 1
+    assert certificate.selected_newton_ratio == 99 / (sp.pi * sp.log(2))
+    assert certificate.scale_map.rank() == 6
+    assert len(certificate.scale_map.nullspace()) == 1
+    assert certificate.scale_map * certificate.scale_vector == sp.zeros(7, 1)
+    assert certificate.anchored_scale_map.rank() == 7
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.conditional_origin) == 7
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_nonequilibrium_entropy_scale_orbit_breaker_audit_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_entropy_scale_orbit_breaker_candidate_audit_certificate()
+    assert certificate.candidate_matrix.shape == (10, 6)
+    assert certificate.candidate_matrix.rank() == 6
+    assert certificate.pass_vector == sp.zeros(10, 1)
+    assert certificate.score_vector == sp.ImmutableMatrix([4, 4, 3, 3, 5, 5, 4, 4, 4, 1])
+    assert certificate.scale_degrees == sp.ImmutableMatrix([-4, -4, -4, -4, -3, -3, 0, 0, 0, 0])
+    assert sum(certificate.internal_conformal) == 4
+    assert sum(certificate.conditional_breakers) == 6
+    assert sum(certificate.independent_origins) == 0
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_correlation_time_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_correlation_time_parent_origin_certificate()
+    assert certificate.correlation_times == sp.ImmutableMatrix([1, sp.sqrt(sp.pi) / 2])
+    assert certificate.fixed_profile_hessian == sp.eye(1)
+    assert certificate.scale_map.rank() == 2
+    assert certificate.scale_map * certificate.scale_kernel == sp.zeros(2, 2)
+    assert sum(certificate.conditional_origin) == 8
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_cell_birth_front_speed_morphism_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_cell_birth_front_speed_morphism_origin_certificate()
+    assert certificate.propagation_cells == sp.Rational(121, 8)
+    assert certificate.front_speed / certificate.group_speed == certificate.transfer_factor
+    assert certificate.transfer_factor.subs(
+        {next(iter(certificate.transfer_factor.free_symbols)): certificate.crossing_radius}
+    ) == 1
+    assert certificate.sample_transfer == sp.ImmutableMatrix([sp.Rational(1, 2), 1, 2])
+    assert certificate.scale_map.rank() == 2
+    assert len(certificate.scale_map.nullspace()) == 2
+    assert certificate.scale_map * certificate.scale_kernels == sp.zeros(2, 2)
+    assert certificate.radius_anchored_map.rank() == 3
+    assert len(certificate.radius_anchored_map.nullspace()) == 1
+    assert certificate.parent_hessian.rank() == 2
+    assert certificate.parent_hessian * certificate.parent_kernel == sp.zeros(3, 1)
+    assert certificate.anchored_hessian.rank() == 3
+    assert certificate.anchored_hessian.det() == 1
+    assert certificate.stationary_gradient == sp.zeros(3, 1)
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.conditional_origin) == 8
+    assert certificate.physical_status == sp.ImmutableMatrix([1, 0, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_front_speed_causal_recession_separation_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_front_speed_causal_recession_separation_certificate()
+    assert certificate.separation_map.det() == 1
+    assert certificate.separation_map * certificate.separation_inverse == sp.eye(2)
+    assert certificate.trajectory_types.rank() == 2
+    assert certificate.local_velocities[0] == 0
+    assert certificate.local_velocities[1] == certificate.bath_speed
+    assert certificate.local_velocities[2] == -certificate.bath_speed
+    assert certificate.causal_metric == sp.diag(1, -1)
+    assert certificate.causal_norms == sp.ImmutableMatrix(
+        [certificate.bath_speed**2, 0, 0]
+    )
+    assert certificate.front_parent_hessian == sp.ImmutableMatrix([[1, -1], [-1, 2]])
+    assert certificate.front_parent_hessian.rank() == 2
+    assert certificate.front_parent_hessian.det() == 1
+    assert certificate.stationary_gradient == sp.zeros(2, 1)
+    assert sum(certificate.architecture) == 10
+    assert sum(certificate.conditional_origin) == 8
+    assert certificate.physical_status == sp.ImmutableMatrix([1, 1, 1, 0])
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_parent_origin_certificate()
+    assert certificate.adjacency == certificate.adjacency.T
+    assert certificate.causal_defects == sp.zeros(certificate.causal_defects.rows, 1)
+    assert certificate.covariance_determinants == sp.ImmutableMatrix([sp.Rational(9, 16), sp.Rational(225, 256)])
+    assert certificate.parent_hessian.rank() == 3
+    assert certificate.parent_hessian * certificate.parent_kernel == sp.zeros(4, 1)
+    assert certificate.scale_map * certificate.scale_kernel == sp.zeros(2, 2)
+    assert sum(certificate.conditional_origin) == 8
+    assert sum(certificate.physical_origin) == 0
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_cell_complex_typed_embedding_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_local_causal_propagation_kernel_cell_complex_typed_embedding_certificate()
+    assert certificate.boundary.shape == (7, 6)
+    assert certificate.boundary.rank() == 6
+    assert certificate.laplacian == certificate.boundary * certificate.boundary.T
+    assert certificate.adjacency == certificate.reference_adjacency
+    assert certificate.causal_defects == sp.zeros(certificate.causal_defects.rows, 1)
+    assert certificate.orientation_invariant_laplacian == certificate.laplacian
+    assert certificate.parent_hessian * certificate.parent_kernel == sp.zeros(4, 1)
+    assert certificate.scale_map * certificate.scale_kernel == sp.zeros(2, 2)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_cell_complex_edge_length_common_parent_origin_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_cell_complex_edge_length_common_parent_origin_certificate()
+    assert certificate.invariant_vector == sp.ImmutableMatrix([1, 1, sp.pi, 2 * sp.sqrt(3), 42, 1, 1])
+    assert certificate.parent_hessian == sp.eye(7)
+    assert certificate.scale_map.rank() == 7
+    assert certificate.scale_map * certificate.scale_kernel == sp.zeros(7, 2)
+    assert certificate.velocity_anchored_map * certificate.velocity_anchored_kernel == sp.zeros(8, 1)
+    assert certificate.gate_theorem.proposition.kind == "verified_gate"
+
+
+def test_version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_growth_graph_typed_embedding_is_exact() -> None:
+    certificate = build_version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_growth_graph_typed_embedding_certificate()
+    assert certificate.chain_map_defect == sp.zeros(3, 6)
+    assert certificate.local_adjacency_defect == sp.zeros(3, 5)
+    assert certificate.deck_period_defect == sp.zeros(3, 4)
+    assert certificate.birth_shift_defect == sp.zeros(3, 6)
+    assert certificate.height_increment == sp.ones(6, 1)
+    assert certificate.scale_map * certificate.scale_kernel == sp.zeros(8, 1)
     assert certificate.gate_theorem.proposition.kind == "verified_gate"
 
 

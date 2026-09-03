@@ -1,0 +1,105 @@
+{
+  "birth_volume_law": {
+    "single_birth_increment": "V_(N+1)-V_N=v_cell",
+    "total_volume": "V_N=N*v_cell"
+  },
+  "common_parent": {
+    "determinant": 0,
+    "functional": "((u-k_X)^2+(rho-u)^2+(epsilon+lambda)^2)/2",
+    "hessian": [
+      [
+        2,
+        -1,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ]
+    ],
+    "kernel": "(0,0,1,-1)",
+    "nullity": 1,
+    "rank": 3,
+    "spectrum": [
+      "0",
+      "2",
+      "(3-sqrt(5))/2",
+      "(3+sqrt(5))/2"
+    ]
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_intrinsic_four_volume_parent_origin_gate",
+  "intrinsic_cell_geometry": {
+    "dilation": "ell_cell->s*ell_cell, v_cell->s^4*v_cell",
+    "four_volume": "v_cell=sqrt(det(G_cell))=ell_cell^4",
+    "gram": "G_cell=ell_cell^2*I_4",
+    "gram_determinant": "ell_cell^8",
+    "normalized_shape": "G_cell/sqrt(v_cell)=I_4",
+    "normalized_shape_determinant": 1
+  },
+  "next_gate": "version10_cell_birth_four_volume_spectral_counting_measure_origin_gate",
+  "predecessor": "version10_cell_birth_clock_energy_geometric_anchor_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "afa64df6ecfd1bddff9c1396fa5e6d9b99271b17a737b6485690debeaf3f2042",
+    "floating_point_values": 0,
+    "obligation_count": 19,
+    "obligations": [
+      "cell_gram_determinant_length_eight",
+      "intrinsic_cell_four_volume",
+      "normalized_cell_shape_identity",
+      "normalized_cell_shape_unimodular",
+      "four_volume_quartic_scaling",
+      "total_volume_cell_count_factorization",
+      "single_birth_volume_increment",
+      "volume_energy_invariant_unit",
+      "volume_energy_scale_invariance",
+      "common_parent_stationary_representative",
+      "common_parent_block_hessian",
+      "common_parent_rank_three",
+      "common_parent_nullity_one",
+      "energy_length_scale_kernel",
+      "common_parent_semidefinite_spectrum",
+      "common_parent_zero_determinant",
+      "intrinsic_volume_architecture_full",
+      "relative_volume_origin_full",
+      "absolute_volume_energy_origin_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_clock_energy": "0/1",
+    "absolute_scale": "0/1",
+    "cell_volume_magnitude": "0/1",
+    "intrinsic_volume_architecture": "8/8",
+    "relative_volume_origin": "3/3"
+  },
+  "verdict": {
+    "absolute_clock_energy_derived": false,
+    "cell_volume_magnitude_derived": false,
+    "intrinsic_four_volume_carrier_constructed": true,
+    "single_birth_volume_increment_derived": true,
+    "volume_energy_product_selected": true
+  },
+  "volume_energy_invariant": {
+    "invariant": "Y=E_C^4*v_cell/(hbar*c)^4",
+    "invariant_under_orbit": true,
+    "scale_orbit": "(E_C,ell_cell)->(E_C/s,s*ell_cell)",
+    "unit_relation": "Y=1 iff E_C*ell_cell=hbar*c"
+  }
+}

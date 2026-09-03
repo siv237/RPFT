@@ -1,0 +1,112 @@
+{
+  "conditional_stueckelberg_completion": {
+    "FP_determinant": 3969,
+    "Q_gauge_fixing_rank": 8,
+    "diagonal_shift_rank": 8,
+    "difference_annihilates_shift": true,
+    "difference_map_rank": 8,
+    "doubled_real_dimension": 16,
+    "full_shift_invariant": true,
+    "inherited_copy_injection_rank": 0,
+    "parent_hessian_rank_nullity": [
+      6,
+      10
+    ],
+    "target_loaded_new_copy": true,
+    "unitary_gauge_recovers_original_hessian": true
+  },
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_shift_symmetry_parent_origin_gate",
+  "inherited_parent": {
+    "effective_Sigma_hessian_diagonal": [
+      40,
+      40,
+      0,
+      48,
+      48,
+      0,
+      40,
+      40
+    ],
+    "hessian_rank_nullity": [
+      6,
+      2
+    ],
+    "maximum_quadratic_flat_shift_rank": 2,
+    "ordinary_gauge_translational_rank_at_Sigma_zero": 0,
+    "quadratic_shift_rank_deficit": 6,
+    "required_full_shift_rank": 8,
+    "translation_breaking_rank": 6
+  },
+  "next_gate": "version10_final_conclusion_and_tome11_program_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_mathai_quillen_odd_pair_statistics_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "9a6579a5e74ac8162607d370e3c1f3194f075bc7749356f9fc5ce71331c98ad2",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "obligations": [
+      "h15_r2_mathai_quillen_shift_symmetry_parent_00",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_01",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_02",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_03",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_04",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_05",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_06",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_07",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_08",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_09",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_10",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_11",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_12",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_13",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_14",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_15",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_16",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_17",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_18",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_19",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_20",
+      "h15_r2_mathai_quillen_shift_symmetry_parent_21"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "conditional_score": "6/7",
+    "criteria": [
+      "typed_copy",
+      "rank8_shift",
+      "shift_invariant_parent",
+      "quotient_recovery",
+      "Q_FP_operator",
+      "acyclic_BRST",
+      "inherited_origin"
+    ],
+    "inherited": [
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "inherited_score": "3/7"
+  },
+  "verdict": {
+    "conditional_completion_is_inherited": false,
+    "conditional_stueckelberg_shift_parent_exists": true,
+    "current_Sigma_parent_has_rank8_shift_symmetry": false,
+    "particle_wrinkle_branch_ready_for_final_no_go": true,
+    "physical_Mathai_Quillen_parent_found": false
+  }
+}

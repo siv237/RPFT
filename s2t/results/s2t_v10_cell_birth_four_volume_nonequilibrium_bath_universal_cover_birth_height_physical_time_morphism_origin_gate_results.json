@@ -1,0 +1,104 @@
+{
+  "affine_time_readout": {
+    "additive_time_origin_is_gauge": true,
+    "edge_difference_rank_nullity": "1/1",
+    "law": "t_n=t_0+n tau_birth",
+    "normalized_height_values": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "origin_edge_effect": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "readout_rank": 2,
+    "tick_edge_effect": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "clock_metric_parent": {
+    "after_c_anchor": "3/1",
+    "after_c_and_length_anchors": "4/0",
+    "dimensional_rank_nullity": "2/2",
+    "invariant_hessian": "I_3",
+    "invariant_rank": 3,
+    "relations": [
+      "E_C tau_birth/hbar=1",
+      "c tau_birth/ell_edge=1",
+      "E_C ell_edge/(hbar c)=1"
+    ],
+    "third_relation_is_dependent": true
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_birth_height_physical_time_morphism_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_absolute_scale_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_universal_cover_growth_graph_typed_embedding_gate",
+  "proofdsl": {
+    "certificate_sha256": "f2bdb5fb729a0b4c7886276e05dc9e7d5bc7eb3702fa9b6120ab5e1af3d492c0",
+    "floating_point_values": 0,
+    "obligation_count": 30,
+    "obligations": [
+      "birth_height_physical_time_00",
+      "birth_height_physical_time_01",
+      "birth_height_physical_time_02",
+      "birth_height_physical_time_03",
+      "birth_height_physical_time_04",
+      "birth_height_physical_time_05",
+      "birth_height_physical_time_06",
+      "birth_height_physical_time_07",
+      "birth_height_physical_time_08",
+      "birth_height_physical_time_09",
+      "birth_height_physical_time_10",
+      "birth_height_physical_time_11",
+      "birth_height_physical_time_12",
+      "birth_height_physical_time_13",
+      "birth_height_physical_time_14",
+      "birth_height_physical_time_15",
+      "birth_height_physical_time_16",
+      "birth_height_physical_time_17",
+      "birth_height_physical_time_18",
+      "birth_height_physical_time_19",
+      "birth_height_physical_time_20",
+      "birth_height_physical_time_21",
+      "birth_height_physical_time_22",
+      "birth_height_physical_time_23",
+      "birth_height_physical_time_24",
+      "birth_height_physical_time_25",
+      "birth_height_physical_time_26",
+      "birth_height_physical_time_27",
+      "birth_height_physical_time_28",
+      "birth_height_physical_time_29"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_birth_tick_origin": "0/1",
+    "additive_origin_gauge_identified": "1/1",
+    "conditional_affine_time_morphism": "10/10",
+    "physical_time_readout_origin": "0/1",
+    "relative_tick_compatibility": "3/3"
+  },
+  "verdict": {
+    "clock_and_edge_relations_are_mutually_compatible": true,
+    "cover_height_admits_a_typed_affine_time_readout": true,
+    "physical_identification_of_height_with_time_is_derived": false,
+    "relations_select_absolute_clock_energy": false,
+    "relations_select_absolute_tick_duration": false,
+    "time_intervals_are_independent_of_additive_origin": true
+  }
+}

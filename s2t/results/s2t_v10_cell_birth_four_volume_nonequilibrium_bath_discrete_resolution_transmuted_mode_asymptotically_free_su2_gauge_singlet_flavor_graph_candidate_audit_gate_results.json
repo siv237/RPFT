@@ -1,0 +1,73 @@
+{
+  "candidate_matrix_rank": 6,
+  "candidates": [
+    "zero_graph",
+    "complete_K16",
+    "cycle_C16",
+    "path_P16",
+    "hypercube_Q4",
+    "complete_bipartite_K8_8",
+    "K43_block_multiplicity_graph",
+    "bath_covariance_graph",
+    "fitted_weighted_graph",
+    "target_loaded_K16"
+  ],
+  "criteria": [
+    "sixteen_label_carrier",
+    "unique_democratic_zero_mode",
+    "non_scalar_graph_geometry",
+    "inherited_edge_operator",
+    "parent_selected_weight",
+    "not_target_loaded"
+  ],
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_flavor_graph_candidate_audit_gate",
+  "hypercube_Q4": {
+    "bit_flip_covariance_generators": 4,
+    "degree": 4,
+    "laplacian_spectrum": {
+      "0": 1,
+      "2": 4,
+      "4": 6,
+      "6": 4,
+      "8": 1
+    },
+    "missing_origin": "canonical_4_bit_labeling_and_edge_weight",
+    "vertices": 16,
+    "zero_mode_multiplicity": 1
+  },
+  "internal_origin_count": 0,
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_hypercube_q4_flavor_graph_typed_embedding_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_discrete_resolution_transmuted_mode_asymptotically_free_su2_gauge_singlet_democratic_flavor_selector_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "12dd494108cbd429c53d05ddfa9be580c7d32dda2b4e53cbc32ebe155f170341",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "status": "lcf-checked"
+  },
+  "scores": [
+    4,
+    4,
+    4,
+    3,
+    4,
+    4,
+    3,
+    3,
+    3,
+    5
+  ],
+  "status": {
+    "audit_coverage": "10/10",
+    "physical_origin": "0/2",
+    "strict_candidate_pass": "0/10"
+  },
+  "strict_pass_count": 0,
+  "verdict": {
+    "Q4_is_inherited_from_K43_multiplicity": false,
+    "Q4_is_structurally_distinguished": true,
+    "complete_K16_is_inherited": false,
+    "strict_flavor_graph_origin_closed": false
+  }
+}

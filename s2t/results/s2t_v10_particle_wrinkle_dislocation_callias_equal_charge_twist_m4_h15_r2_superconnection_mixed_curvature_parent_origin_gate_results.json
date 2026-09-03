@@ -1,0 +1,112 @@
+{
+  "curvature_polarization": {
+    "coefficient_locked_by_half_anticommutator": true,
+    "defect_rank": 4,
+    "graded_diagonal": [
+      3,
+      -3,
+      7,
+      1,
+      -1,
+      -7,
+      3,
+      -3
+    ],
+    "graded_minus_ordinary_diagonal": [
+      0,
+      0,
+      8,
+      8,
+      -8,
+      -8,
+      0,
+      0
+    ],
+    "graded_rank": 8,
+    "ordinary_diagonal": [
+      3,
+      -3,
+      -1,
+      -7,
+      7,
+      1,
+      3,
+      -3
+    ],
+    "ordinary_rank": 8
+  },
+  "date": "2026-09-03",
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_mixed_curvature_parent_origin_gate",
+  "inheritance": {
+    "grading_inherited": true,
+    "inherited_auxiliary_arrow_rank": 0,
+    "positive_trace_selector_for_mixed_component": "open",
+    "required_auxiliary_arrow_rank": 8
+  },
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_curvature_trace_selector_candidate_audit_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_delta_moment_map_odd_auxiliary_trilinear_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "657bff53eb5f2162dbe419acd4fcacf2b2b4b47dee25db9b2681288ea39c7239",
+    "floating_point_values": 0,
+    "obligation_count": 19,
+    "obligations": [
+      "h15_r2_superconnection_mixed_curvature_00",
+      "h15_r2_superconnection_mixed_curvature_01",
+      "h15_r2_superconnection_mixed_curvature_02",
+      "h15_r2_superconnection_mixed_curvature_03",
+      "h15_r2_superconnection_mixed_curvature_04",
+      "h15_r2_superconnection_mixed_curvature_05",
+      "h15_r2_superconnection_mixed_curvature_06",
+      "h15_r2_superconnection_mixed_curvature_07",
+      "h15_r2_superconnection_mixed_curvature_08",
+      "h15_r2_superconnection_mixed_curvature_09",
+      "h15_r2_superconnection_mixed_curvature_10",
+      "h15_r2_superconnection_mixed_curvature_11",
+      "h15_r2_superconnection_mixed_curvature_12",
+      "h15_r2_superconnection_mixed_curvature_13",
+      "h15_r2_superconnection_mixed_curvature_14",
+      "h15_r2_superconnection_mixed_curvature_15",
+      "h15_r2_superconnection_mixed_curvature_16",
+      "h15_r2_superconnection_mixed_curvature_17",
+      "h15_r2_superconnection_mixed_curvature_18"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "conditional_superconnection_origin": "4/6",
+    "physical_origin": "4/6",
+    "remaining_slots": [
+      "positive full trace or derived quotient",
+      "inherited A_Sigma arrow"
+    ]
+  },
+  "superconnection": {
+    "Real_self_adjoint": true,
+    "graded_endpoint_difference": "T-(-B)=Q=6Y",
+    "left_endpoint_moment": "T=6T3_R",
+    "oddness_residual_rank": 0,
+    "ordinary_endpoint_sum": "T+(-B)=T-B",
+    "right_endpoint_moment": "-B=-3(B-L)"
+  },
+  "trace_diagnosis": {
+    "exact_Q_uses_indefinite_supertrace": true,
+    "graded_trace_inertia_negative_zero_positive": [
+      8,
+      0,
+      8
+    ],
+    "ordinary_trace_inertia_negative_zero_positive": [
+      0,
+      0,
+      16
+    ],
+    "positive_Hilbert_Schmidt_trace_gives_Q": false
+  },
+  "verdict": {
+    "coefficient_is_canonical": true,
+    "graded_curvature_generates_exact_cross_bilinear": true,
+    "physical_parent_found": false,
+    "positive_full_trace_generates_exact_cross_bilinear": false
+  }
+}

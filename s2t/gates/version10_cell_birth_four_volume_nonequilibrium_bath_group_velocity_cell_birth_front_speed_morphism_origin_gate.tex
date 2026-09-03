@@ -1,0 +1,98 @@
+\chapter{Скорость ванны и фронт рождения клеток}
+\label{ch:v10-bath-group-velocity-cell-birth-front}
+
+Предыдущий гейт условно выбрал групповую скорость ванны
+\begin{equation}
+ \frac{v_{\mathrm b}}{c}=\frac{121}{24}k_X,
+ \qquad
+ \frac{H_B\ell_{\mathrm{cell}}}{c}=\frac{k_X}{3},
+\end{equation}
+и тем самым дал длину распространения за одно время роста
+\begin{equation}
+ L_{\mathrm b}:=\frac{v_{\mathrm b}}{H_B}
+ =\frac{121}{8}\ell_{\mathrm{cell}}.
+\end{equation}
+Проверим, означает ли это буквальное равенство скорости ванны и скорости
+фронта рождения клеток.
+
+Положим
+\begin{equation}
+ \rho:=\frac{R}{\ell_{\mathrm{cell}}}.
+\end{equation}
+Из $R=\ell_{\mathrm{cell}}N^{1/3}$ и
+$H_B=\frac13\dot N/N$ следует кинематическая скорость поверхности уровня
+\begin{equation}
+ v_{\mathrm f}:=\dot R=H_BR,
+ \qquad
+ \frac{v_{\mathrm f}}{c}=\rho\frac{k_X}{3}.
+\end{equation}
+Поэтому типизированный морфизм имеет не постоянный, а зависящий от состояния
+вид
+\begin{equation}
+ \boxed{
+ v_{\mathrm f}=\frac{8}{121}\frac{R}{\ell_{\mathrm{cell}}}
+ v_{\mathrm b}}
+ \label{eq:v10-front-transfer}
+\end{equation}
+и не вводит нового безразмерного коэффициента.
+
+Буквальное равенство двух скоростей выполняется только на оболочке
+\begin{equation}
+ \frac{v_{\mathrm f}}{v_{\mathrm b}}=1
+ \quad\Longleftrightarrow\quad
+ \rho=\rho_*=\frac{121}{8}.
+\end{equation}
+Вдоль истории $\rho(\zeta)=\rho_0e^\zeta$ отношение равно
+\begin{equation}
+ \frac{v_{\mathrm f}}{v_{\mathrm b}}
+ =\frac{8\rho_0}{121}e^\zeta.
+\end{equation}
+Оно пересекает единицу при
+$\zeta_*=\log(121/(8\rho_0))$, но не остаётся единицей на интервале.
+
+Строгий положительный родитель морфизма записывается через
+$g=v_{\mathrm b}/c$, $f=v_{\mathrm f}/c$ и
+$h=H_B\ell_{\mathrm{cell}}/c$:
+\begin{equation}
+ \mathcal P_{\mathrm f}
+ =\frac12\left(g-\frac{121}{8}h\right)^2
+ +\frac12(f-\rho h)^2.
+\end{equation}
+Без якоря $h=k_X/3$ его гессиан имеет ранг/ядро $2/1$ с направлением
+$(121/8,\rho,1)$. После добавления
+$\frac12(h-k_X/3)^2$ ранг становится $3$, а определитель равен единице.
+Единственная стационарная точка воспроизводит обе скорости и
+формулу~\eqref{eq:v10-front-transfer}.
+
+Логарифмическая карта условий на
+$(v_{\mathrm b},H_B,\ell_{\mathrm{cell}},R,v_{\mathrm f})$ имеет
+ранг/ядро $2/2$. Одно направление есть общая калибровка скорости и часов;
+второе является не дефектом закона, а изменением состояния $R/\ell$. После
+фиксации текущего радиуса остаётся только первая мода.
+
+\begin{theorem}[Морфизм скорости фронта]
+Групповая скорость ванны однозначно определяет кинематическую скорость
+фронта при заданном состоянии $R/\ell_{\mathrm{cell}}$ по
+формуле~\eqref{eq:v10-front-transfer}. Равенство скоростей является одной
+оболочкой, а не законом всей истории.
+\end{theorem}
+
+\begin{nogocriterion}[Скорость уровня не есть автоматически скорость сигнала]
+Величина $H_BR$ является скоростью поверхности уровня и может расти с $R$.
+Поэтому её нельзя отождествлять с микроскопической причинной скоростью ванны.
+Для такого отождествления требуется отдельный локальный конус или ядро
+распространения.
+\end{nogocriterion}
+
+\begin{protocol}\begin{enumerate}
+\item архитектура морфизма: \textbf{$10/10$};
+\item условное происхождение: \textbf{$8/8$};
+\item типизированный морфизм фронта: \textbf{$1/1$};
+\item универсальное равенство скоростей: \textbf{$0/1$};
+\item микроскопическая причинная идентичность: \textbf{$0/1$};
+\item абсолютный масштаб: \textbf{$0/1$};
+\item следующий гейт: \textbf{разделение причинной и рецессионной скоростей}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_nonequilibrium_bath_group_velocity_cell_birth_front_speed_morphism_origin_gate_results.json}.

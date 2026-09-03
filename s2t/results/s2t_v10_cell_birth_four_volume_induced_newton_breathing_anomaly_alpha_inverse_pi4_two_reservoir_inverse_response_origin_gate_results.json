@@ -1,0 +1,90 @@
+{
+  "candidate_audit": {
+    "candidate_count": 6,
+    "criterion_count": 6,
+    "full_passes": 0,
+    "matrix_rank": 5
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_alpha_inverse_pi4_two_reservoir_inverse_response_origin_gate",
+  "inverse_response": {
+    "family": "-chi_resp/(pi**4*S_geo**2)",
+    "linear_term": 0,
+    "quadratic_term": "-2*chi_resp/(pi**4*S_geo**2)",
+    "sign_for_positive_chi": "negative"
+  },
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_pi4_cross_susceptibility_parent_origin_candidate_audit_gate",
+  "normalizations": {
+    "both_positive_admissible": true,
+    "historical": {
+      "chi_resp": "pi**3/32",
+      "correction": "-1/(32*pi*S_geo**2)"
+    },
+    "late": {
+      "chi_resp": "1",
+      "correction": "-1/(pi**4*S_geo**2)"
+    }
+  },
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_common_affinity_temperature_anchor_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "0702c01ccba52bd9cbd465e1b841bfc3827b509ee1c5efd5537806507fd5c1b2",
+    "floating_point_values": 0,
+    "obligation_count": 20,
+    "obligations": [
+      "pi4_response_00",
+      "pi4_response_01",
+      "pi4_response_02",
+      "pi4_response_03",
+      "pi4_response_04",
+      "pi4_response_05",
+      "pi4_response_06",
+      "pi4_response_07",
+      "pi4_response_08",
+      "pi4_response_09",
+      "pi4_response_10",
+      "pi4_response_11",
+      "pi4_response_12",
+      "pi4_response_13",
+      "pi4_response_14",
+      "pi4_response_15",
+      "pi4_response_16",
+      "pi4_response_17",
+      "pi4_response_18",
+      "pi4_response_19"
+    ],
+    "status": "lcf-checked"
+  },
+  "response_identifiability": {
+    "kernel": [
+      [
+        1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "rank_nullity": "1/2"
+  },
+  "status": {
+    "alpha_inverse_morphism_origin": "0/1",
+    "conditional_structure": "4/4",
+    "cross_susceptibility_origin": "0/1",
+    "response_origin_candidates": "0/6",
+    "third_correction_physical_origin": "0/1"
+  },
+  "verdict": {
+    "S_geo_inverse_square_is_quadratic": true,
+    "historical_32pi_excluded": false,
+    "negative_sign_conditional_on_positive_response": true,
+    "pi_inverse_four_factor_is_conditional": true,
+    "third_thermodynamic_correction_derived": false,
+    "unit_coefficient_derived": false
+  }
+}

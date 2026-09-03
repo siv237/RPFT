@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+import hashlib,json
+from pathlib import Path
+from s2t.proofdsl.examples.version10_cell_birth_four_volume_induced_newton_breathing_anomaly_alpha_inverse_pi4_two_reservoir_inverse_response_origin import SPEC,build_certificate
+from s2t.proofdsl.gates import verify_gate
+ROOT=Path(__file__).resolve().parents[2]
+OUT=ROOT/"s2t/results/s2t_v10_cell_birth_four_volume_induced_newton_breathing_anomaly_alpha_inverse_pi4_two_reservoir_inverse_response_origin_gate_results.json"
+def main():
+ p=json.loads((ROOT/"s2t/results/s2t_v10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_common_affinity_temperature_anchor_candidate_audit_gate_results.json").read_text());assert p["next_gate"]==SPEC.identifier
+ v=verify_gate(SPEC);c=build_certificate();result={"date":"2026-09-02","gate":SPEC.identifier,"predecessor":p["gate"],"inverse_response":{"family":"-chi_resp/(pi**4*S_geo**2)","sign_for_positive_chi":"negative","linear_term":0,"quadratic_term":"-2*chi_resp/(pi**4*S_geo**2)"},"normalizations":{"late":{"chi_resp":"1","correction":"-1/(pi**4*S_geo**2)"},"historical":{"chi_resp":"pi**3/32","correction":"-1/(32*pi*S_geo**2)"},"both_positive_admissible":True},"candidate_audit":{"candidate_count":6,"criterion_count":6,"matrix_rank":5,"full_passes":int(sum(c.pass_vector))},"response_identifiability":{"rank_nullity":"1/2","kernel":[[1,0],[-1,1],[0,-1]]},"status":{"conditional_structure":"4/4","response_origin_candidates":"0/6","cross_susceptibility_origin":"0/1","alpha_inverse_morphism_origin":"0/1","third_correction_physical_origin":"0/1"},"proofdsl":{"status":"lcf-checked","obligation_count":len(v.obligations),"obligations":[n for n,_ in v.obligations],"certificate_sha256":v.sha256,"floating_point_values":0},"verdict":{"negative_sign_conditional_on_positive_response":True,"S_geo_inverse_square_is_quadratic":True,"pi_inverse_four_factor_is_conditional":True,"unit_coefficient_derived":False,"historical_32pi_excluded":False,"third_thermodynamic_correction_derived":False},"next_gate":"version10_cell_birth_four_volume_induced_newton_breathing_anomaly_pi4_cross_susceptibility_parent_origin_candidate_audit_gate","floating_point_values":0}
+ text=json.dumps(result,ensure_ascii=False,indent=2,sort_keys=True)+"\n";OUT.write_text(text);print(OUT);print(hashlib.sha256(text.encode()).hexdigest());print(v.sha256)
+if __name__=="__main__":main()

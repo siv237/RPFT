@@ -1,0 +1,54 @@
+{
+  "conditional_parent": {
+    "determinant": 1,
+    "hessian": [
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "rank": 3,
+    "stationary_ratio": "exp(-32*pi^2/3)/42"
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_common_parent_origin_gate",
+  "inherited_parent": {
+    "hessian": "diag(1,1,0)",
+    "mixed_blocks": "0/2",
+    "rank_nullity": "2/1"
+  },
+  "next_gate": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_cross_sector_operator_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_nonequilibrium_bath_birth_tick_reference_scale_ratio_candidate_audit_gate",
+  "proofdsl": {
+    "certificate_sha256": "dc2601a1cd20bd64e865f23bcfddcf9049a60983b6c4ea9a12ed56655ad2c3bb",
+    "floating_point_values": 0,
+    "obligation_count": 20,
+    "status": "lcf-checked"
+  },
+  "scale_audit": {
+    "rank_nullity": "2/2"
+  },
+  "status": {
+    "absolute_birth_tick_origin": "0/1",
+    "conditional_architecture": "9/9",
+    "inherited_factor_parents": "2/2",
+    "physical_origin": "0/4"
+  },
+  "verdict": {
+    "a_strict_conditional_common_parent_exists": true,
+    "absolute_birth_tick_is_derived": false,
+    "the_common_parent_is_inherited": false
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "current_match": {
+    "J_edge": "kappa/3",
+    "J_two_bath": "1/66",
+    "kappa_times_step": "1/22"
+  },
+  "date": "2026-09-02",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_affinity_hopf_cycle_typed_origin_gate",
+  "hopf_affinity": {
+    "cycle": "3*log(2)",
+    "edges": [
+      "log(2)",
+      "log(2)",
+      "log(2)"
+    ]
+  },
+  "next_gate": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_two_reservoir_common_affinity_temperature_anchor_candidate_audit_gate",
+  "predecessor": "version10_cell_birth_four_volume_induced_newton_breathing_anomaly_k43_nonequilibrium_two_reservoir_output_current_parent_admission_gate",
+  "proofdsl": {
+    "certificate_sha256": "e43ce23a699f2c4cf67ab542bf41ba38f7974524a5b983a6bf403989e1c41d18",
+    "floating_point_values": 0,
+    "obligation_count": 20,
+    "obligations": [
+      "hopf_affinity_00",
+      "hopf_affinity_01",
+      "hopf_affinity_02",
+      "hopf_affinity_03",
+      "hopf_affinity_04",
+      "hopf_affinity_05",
+      "hopf_affinity_06",
+      "hopf_affinity_07",
+      "hopf_affinity_08",
+      "hopf_affinity_09",
+      "hopf_affinity_10",
+      "hopf_affinity_11",
+      "hopf_affinity_12",
+      "hopf_affinity_13",
+      "hopf_affinity_14",
+      "hopf_affinity_15",
+      "hopf_affinity_16",
+      "hopf_affinity_17",
+      "hopf_affinity_18",
+      "hopf_affinity_19"
+    ],
+    "status": "lcf-checked"
+  },
+  "reservoir_affinity": {
+    "cold": "2*log(2)",
+    "difference": "log(2)",
+    "hot": "log(2)",
+    "typed_match": true
+  },
+  "residual_orbits": {
+    "affinity_kernel": [
+      1,
+      1,
+      0
+    ],
+    "affinity_rank_nullity": "2/1",
+    "rate_clock_kernel": [
+      1,
+      -1
+    ],
+    "rate_clock_rank_nullity": "1/1"
+  },
+  "status": {
+    "absolute_clock_origin": "0/1",
+    "absolute_scale": "0/1",
+    "affinity_difference_origin": "1/1",
+    "common_affinity_offset_origin": "0/1",
+    "conditional_origin": "8/8"
+  },
+  "verdict": {
+    "Hopf_cycle_derives_affinity_difference": true,
+    "Hopf_cycle_derives_both_bath_temperatures": false,
+    "current_matching_derives_absolute_rate": false
+  }
+}

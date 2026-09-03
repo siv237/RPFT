@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_inflow_spectral_self_energy_running_parent_origin_gate",
+  "next_gate": "version10_inflow_spectral_self_energy_k43_typed_embedding_gate",
+  "oriented_self_energy": {
+    "incoming": "Sigma_in=exp(zeta)",
+    "incoming_beta": "dSigma_in/dzeta=Sigma_in",
+    "outgoing": "Sigma_out=exp(-zeta)",
+    "outgoing_beta": "dSigma_out/dzeta=-Sigma_out",
+    "reciprocal_product": "Sigma_in*Sigma_out=1",
+    "symmetric": "Sigma_sym=cosh(zeta)",
+    "symmetric_beta_at_origin": "0"
+  },
+  "origin_ledger": {
+    "geometric_reciprocal_scaling": 1,
+    "growth_orientation": 1,
+    "score": "2/3",
+    "typed_k43_reservoir_embedding": 0
+  },
+  "predecessor": "version10_geometric_scale_beta_trace_anomaly_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "b1f4f9d74ecdeaa9a78fab26cd8ce42a68d533c437db937cd1f1476abff5f91c",
+    "floating_point_values": 0,
+    "obligation_count": 16,
+    "obligations": [
+      "reciprocal_reservoir_determinant",
+      "exact_reservoir_propagator",
+      "complementary_orientation_projectors",
+      "incoming_orientation_rank",
+      "outgoing_orientation_rank",
+      "incoming_running_self_energy",
+      "outgoing_running_self_energy",
+      "reciprocal_self_energy_pair",
+      "incoming_nonzero_geometric_beta",
+      "outgoing_opposite_geometric_beta",
+      "symmetric_coupling_zero_local_beta",
+      "fixed_cell_spectrum_zero_beta",
+      "nonzero_trace_response_witness",
+      "spectral_running_architecture_full",
+      "origin_ledger_two_of_three",
+      "origin_score_two"
+    ],
+    "status": "lcf-checked"
+  },
+  "reciprocal_reservoir": {
+    "determinant": "1",
+    "incoming_projector_rank": 1,
+    "operator": "diag(exp(-zeta),exp(zeta))",
+    "outgoing_projector_rank": 1,
+    "propagator": "diag(exp(zeta),exp(-zeta))"
+  },
+  "status": {
+    "intensive_trace_response_witness": "1/1",
+    "oriented_spectral_running_architecture": "7/7",
+    "physical_absolute_scale_parent": "0/1",
+    "typed_physical_reservoir_embedding": "0/1"
+  },
+  "trace_response": {
+    "action": "log(1+q^2+exp(zeta))-log(1+q^2)-log(1+exp(zeta))",
+    "density": "exp(zeta)/(1+q^2+exp(zeta))-exp(zeta)/(1+exp(zeta))",
+    "intensive_nonzero_witness": true,
+    "witness_point": {
+      "q": "1",
+      "zeta": "0"
+    },
+    "witness_value": "-1/6"
+  },
+  "verdict": {
+    "absolute_scale_derived": false,
+    "cell_multiplication_replaced_by_local_spectral_running": true,
+    "nonzero_intensive_response_constructed": true,
+    "orientation_is_necessary_for_linear_running": true,
+    "physical_reservoir_origin_derived": false
+  }
+}

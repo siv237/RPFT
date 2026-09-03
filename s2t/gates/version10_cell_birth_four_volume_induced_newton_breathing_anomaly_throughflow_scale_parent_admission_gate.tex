@@ -1,0 +1,132 @@
+\chapter{Аномальное дыхание вакуума как сквозной поток}
+\label{ch:v10-induced-newton-breathing-anomaly}
+
+\section{От метафоры шланга к открытому балансу}
+
+Ранняя картина ``вакуум раскрыт, пока через него проходит поток, и
+схлопывается после прекращения потока'' требует не статической энергии, а
+двух направленных плотностей: инжекции и выхода. Чтобы не смешивать энергию
+одного кванта $\Theta$ с четырёхмерной геометрией, введём нормированные
+плотности $d=\rho/\Theta$.
+
+Из ранее полученных
+\begin{equation}
+ q=\frac{\beta_E}{2\alpha m},
+ \qquad
+ v_{\rm cell}=q^2
+ =\frac{\beta_E^2}{4\alpha^2m^2}
+ \label{eq:v10-breathing-cell-volume}
+\end{equation}
+и энтропии одного прохода $\log2$ следует плотность притока
+\begin{equation}
+ d_{\rm in}
+ =\frac{n_{\rm flow}\log2}{v_{\rm cell}}
+ =C_{\rm flow}m^2,
+ \qquad
+ C_{\rm flow}=\frac{4\alpha^2n_{\rm flow}\log2}{\beta_E^2},
+ \label{eq:v10-breathing-inflow}
+\end{equation}
+где $n_{\rm flow}\geq0$ --- безразмерная заполненность сквозного цикла.
+
+\section{Ведущая аномалия и точное сокращение масштаба}
+
+Минимальный локальный выход той же размерности имеет вид
+\begin{equation}
+ d_{\rm out}^{(0)}=\varepsilon m^2,
+ \qquad \varepsilon>0.
+ \label{eq:v10-breathing-leading-output}
+\end{equation}
+Баланс равен
+\begin{equation}
+ d_{\rm in}-d_{\rm out}^{(0)}
+ =m^2(C_{\rm flow}-\varepsilon).
+ \label{eq:v10-breathing-leading-balance}
+\end{equation}
+Для $m>0$ он выбирает только $\varepsilon=C_{\rm flow}$: сам $m$
+сокращается. Таким образом, ведущая аномальная плотность допускает
+поддерживаемую потоком геометрию, но не определяет её абсолютную толщину.
+
+При $n_{\rm flow}=0$ приток исчезает. Поскольку
+$\varepsilon m^2>0$ для всякого $m>0$, неотрицательное стационарное решение
+ведущего баланса имеет $m=0$. Это точная условная реализация ``схлопывания
+шланга'', но не вывод ненулевого масштаба при включённом потоке.
+
+\section{Логарифмическое дыхание}
+
+Следовая аномалия может нарушить чистую однородность:
+\begin{equation}
+ d_{\rm out}
+ =\varepsilon m^2
+ \left(1+b_A\log\frac{m}{\mu_{\rm spec}^2}\right),
+ \qquad b_A>0.
+ \label{eq:v10-breathing-log-output}
+\end{equation}
+Тогда баланс условно фиксирует
+\begin{equation}
+ \boxed{
+ \log\frac{m}{\mu_{\rm spec}^2}
+ =\frac{C_{\rm flow}/\varepsilon-1}{b_A}}
+ \label{eq:v10-breathing-relative-scale}
+\end{equation}
+и, следовательно, отношение $m/\mu_{\rm spec}^2$. Коэффициенты
+$\varepsilon$, $b_A$ и абсолютное значение $\mu_{\rm spec}$ текущим
+носителем не выведены.
+
+\section{Условный общий родитель и масштабная орбита}
+
+Нормированные отношения объёма $u_v$, баланса $u_B$ и логарифмической
+аномалии $u_A$ собираются в положительный родитель
+\begin{equation}
+ \mathcal P_{\rm breath}
+ =\frac12(u_v-1)^2
+ +\frac12(u_B-u_v)^2
+ +\frac12(u_A-u_B)^2.
+ \label{eq:v10-breathing-parent}
+\end{equation}
+Его гессиан
+\begin{equation}
+ \begin{pmatrix}2&-1&0\\-1&2&-1\\0&-1&1\end{pmatrix}
+\end{equation}
+имеет ранг $3$, определитель $1$ и ведущие миноры $(2,3,1)$.
+
+В логарифмических переменных
+$(m,\mu_{\rm spec}^2,v_{\rm cell},d)$ размерная карта равна
+\begin{equation}
+ C_{\rm breath}=
+ \begin{pmatrix}
+ 2&0&1&0\\
+ 1&-1&0&0\\
+ 0&0&1&1
+ \end{pmatrix},
+ \quad \rank C_{\rm breath}=3,
+ \quad C_{\rm breath}(-1,-1,2,-2)^T=0.
+ \label{eq:v10-breathing-scale-map}
+\end{equation}
+Логарифм выбирает относительный масштаб, но сохраняет одну абсолютную
+орбиту. Независимая фиксация $\mu_{\rm spec}$ повысила бы ранг до $4$.
+
+\begin{theorem}[Условное потоковое дыхание]
+При положительном выходе прекращение притока допускает единственную
+неотрицательную стационарную конечную точку $m=0$. При включённом потоке
+логарифмическая аномалия может выбрать $m/\mu_{\rm spec}^2$.
+\end{theorem}
+
+\begin{nogocriterion}[Дыхание не создаёт абсолютный масштаб]
+Ведущий баланс сокращает $m^2$. Логарифмическая поправка оставляет
+одномерное ядро размерной карты. Пока $\varepsilon$, $b_A$ и
+$\mu_{\rm spec}$ не получены из одного физического носителя, абсолютный
+масштаб вакуума и $G$ не выведены.
+\end{nogocriterion}
+
+\begin{protocol}[Статус потокового дыхания]\begin{enumerate}
+\item унаследованные ингредиенты: \textbf{$3/3$};
+\item условная архитектура: \textbf{$10/10$};
+\item условное алгебраическое замыкание: \textbf{$8/8$};
+\item схлопывание при выключении потока: \textbf{условно $1/1$};
+\item происхождение $\varepsilon$, $b_A$ и $\mu_{\rm spec}$: \textbf{$0/3$};
+\item абсолютный масштаб при включённом потоке: \textbf{$0/1$};
+\item следующий гейт: \textbf{спектральное происхождение коэффициентов дыхания}.
+\end{enumerate}\end{protocol}
+
+Машинный сертификат сохранён в
+\path{s2t_v10_cell_birth_four_volume_induced_newton_breathing_anomaly_throughflow_scale_parent_admission_gate_results.json}.

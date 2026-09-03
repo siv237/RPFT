@@ -1,0 +1,268 @@
+{
+  "best_candidates": [
+    {
+      "failed": "exact_Q",
+      "name": "ordinary_Hilbert_Schmidt_trace",
+      "score": "5/6"
+    },
+    {
+      "failed": "positive_full_action",
+      "name": "raw_supertrace",
+      "score": "5/6"
+    },
+    {
+      "failed": "inherited_selector",
+      "name": "represented_junk_quotient",
+      "score": "5/6"
+    },
+    {
+      "failed": "inherited_selector",
+      "name": "length_two_relative_curvature_block",
+      "score": "5/6"
+    }
+  ],
+  "candidate_audit": {
+    "criteria": [
+      "exact_Q",
+      "positive_full_action",
+      "gauge_Real",
+      "canonical_normalization",
+      "local_degree_compatible",
+      "inherited_selector"
+    ],
+    "matrix": [
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "names": [
+      "ordinary_Hilbert_Schmidt_trace",
+      "raw_supertrace",
+      "positive_left_chiral_trace",
+      "positive_right_chiral_trace",
+      "absolute_grading_trace",
+      "Krein_fundamental_symmetry",
+      "represented_junk_quotient",
+      "length_two_relative_curvature_block",
+      "conditional_expectation_relative_block",
+      "BRST_exact_diagonal_cancellation",
+      "Pauli_Villars_trace_difference",
+      "target_loaded_endpoint_projector"
+    ],
+    "passes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "passing_candidates": 0,
+    "rank": 6,
+    "scores": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      4,
+      5,
+      5,
+      4,
+      3,
+      2,
+      3
+    ]
+  },
+  "date": "2026-09-03",
+  "endpoint_weight_no_go": {
+    "channel_gram": [
+      [
+        72,
+        0
+      ],
+      [
+        0,
+        64
+      ]
+    ],
+    "channel_map_rank": 2,
+    "exact_weight_inertia_negative_zero_positive": [
+      1,
+      0,
+      1
+    ],
+    "ordinary_positive_weights": [
+      1,
+      1
+    ],
+    "positive_endpoint_trace_can_produce_Q": false,
+    "unique_exact_weights": [
+      1,
+      -1
+    ]
+  },
+  "floating_point_values": 0,
+  "gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_curvature_trace_selector_candidate_audit_gate",
+  "next_gate": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_relative_curvature_junk_quotient_parent_origin_gate",
+  "predecessor": "version10_particle_wrinkle_dislocation_callias_equal_charge_twist_m4_h15_r2_superconnection_mixed_curvature_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "024c6b2ac0fbe0f31b7742fa38f11673de9e790de59984066f4cb994d22e0afe",
+    "floating_point_values": 0,
+    "obligation_count": 22,
+    "obligations": [
+      "h15_r2_superconnection_trace_selector_00",
+      "h15_r2_superconnection_trace_selector_01",
+      "h15_r2_superconnection_trace_selector_02",
+      "h15_r2_superconnection_trace_selector_03",
+      "h15_r2_superconnection_trace_selector_04",
+      "h15_r2_superconnection_trace_selector_05",
+      "h15_r2_superconnection_trace_selector_06",
+      "h15_r2_superconnection_trace_selector_07",
+      "h15_r2_superconnection_trace_selector_08",
+      "h15_r2_superconnection_trace_selector_09",
+      "h15_r2_superconnection_trace_selector_10",
+      "h15_r2_superconnection_trace_selector_11",
+      "h15_r2_superconnection_trace_selector_12",
+      "h15_r2_superconnection_trace_selector_13",
+      "h15_r2_superconnection_trace_selector_14",
+      "h15_r2_superconnection_trace_selector_15",
+      "h15_r2_superconnection_trace_selector_16",
+      "h15_r2_superconnection_trace_selector_17",
+      "h15_r2_superconnection_trace_selector_18",
+      "h15_r2_superconnection_trace_selector_19",
+      "h15_r2_superconnection_trace_selector_20",
+      "h15_r2_superconnection_trace_selector_21"
+    ],
+    "status": "lcf-checked"
+  },
+  "relative_block_route": {
+    "inherited_selector_rank": 0,
+    "projected_norm_inertia_negative_zero_positive": [
+      0,
+      1,
+      1
+    ],
+    "projector": [
+      [
+        "1/2",
+        "-1/2"
+      ],
+      [
+        "-1/2",
+        "1/2"
+      ]
+    ],
+    "projector_idempotent": true,
+    "projector_rank": 1
+  },
+  "status": {
+    "best_positive_exact_route": "5/6",
+    "remaining_slot": "derive relative curvature quotient from current represented calculus"
+  },
+  "verdict": {
+    "candidate_passes_all_criteria": false,
+    "physical_trace_selector_found": false,
+    "positive_endpoint_trace_no_go": true,
+    "positive_relative_block_route_exists_conditionally": true
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "branches": {
+    "codilation": "E_cell=E0/a and a*E_cell=E0",
+    "codilation_breaks_scale_orbit": false,
+    "fixed_cell_addition": "v_cell and E_cell fixed while N grows"
+  },
+  "common_carrier": {
+    "cell_conveyor_dimension": 43,
+    "endpoint_kms_dimension": 6,
+    "history": "ell2(N0)",
+    "incidence_determinant": 2,
+    "incidence_rank": 3,
+    "local_field_layer": "F_loc"
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_quantum_rg_common_carrier_admission_gate",
+  "geometric_growth": {
+    "cell_count": "N(tau)=N0*exp(3*h_vac*tau)",
+    "cosmological_identity": "Lambda_growth=3*h_vac^2=3*exp(-2*S_vac)/(8*pi)",
+    "growth_amplitude": "h_vac=exp(-S_vac)/sqrt(8*pi)",
+    "relative_rate_identity": "a'/a=N'/(3N)=h_vac",
+    "scale_factor": "a(tau)=exp(h_vac*tau)=(N/N0)^(1/3)"
+  },
+  "next_gate": "version10_geometric_scale_beta_trace_anomaly_origin_gate",
+  "predecessor": "version9_final_conclusion_and_tome10_program_gate",
+  "proofdsl": {
+    "certificate_sha256": "7c744c4fea25f5d3287ede557bb1a065f104d5369b38816b0a87333e79317927",
+    "floating_point_values": 0,
+    "obligation_count": 13,
+    "obligations": [
+      "initial_positive_cell_count",
+      "initial_relative_scale",
+      "cell_volume_scale_identity",
+      "scale_factor_growth_rate",
+      "cell_number_growth_rate",
+      "cosmological_curvature_identity",
+      "dimensionless_atlas_invariance",
+      "two_independent_atlas_ratios",
+      "pure_codilation_invariance",
+      "common_carrier_layer_rank",
+      "architecture_admission_full",
+      "physical_origin_open",
+      "admission_origin_status_gap"
+    ],
+    "status": "lcf-checked"
+  },
+  "quantum_rg_coordinate": {
+    "beta_definition": "beta_i=dg_i/dzeta",
+    "coordinate": "zeta=log(a)=log(N/N0)/3",
+    "nonzero_beta_derived": false
+  },
+  "spectral_atlas": {
+    "common_scale_preserves_ratios": true,
+    "factorization": "D(zeta)=E_cell(zeta)*D_hat(g(zeta))",
+    "ratio_rank": 2
+  },
+  "status": {
+    "architecture_score": "7/7",
+    "growth_law_derived": false,
+    "local_energy_scale_derived": false,
+    "physical_origin_score": "0/3",
+    "physical_tick_derived": false
+  },
+  "verdict": {
+    "cosmological_constant_physically_derived": false,
+    "geometric_growth_carrier_admitted": true,
+    "static_scale_substitution_used": false,
+    "tome10_opened": true
+  }
+}

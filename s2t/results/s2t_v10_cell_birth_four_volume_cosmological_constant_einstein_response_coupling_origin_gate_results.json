@@ -1,0 +1,119 @@
+{
+  "anchor_rank": {
+    "conditional_relation_nullity": 3,
+    "conditional_relation_rank": 1,
+    "rank_after_independent_G_Theta_v": 4,
+    "variables": [
+      "kappa",
+      "G",
+      "Theta",
+      "v_cell"
+    ]
+  },
+  "common_parent": {
+    "functional": "((u_tau-1)^2+(u_E-u_tau)^2+(u_match-u_E)^2)/2",
+    "hessian": [
+      [
+        2,
+        -1,
+        0
+      ],
+      [
+        -1,
+        2,
+        -1
+      ],
+      [
+        0,
+        -1,
+        1
+      ]
+    ],
+    "hessian_determinant": 1,
+    "hessian_rank": 3,
+    "leading_principal_minors": [
+      2,
+      3,
+      1
+    ],
+    "selected_point": "u_tau=u_E=u_match=1",
+    "variables": [
+      "kappa*tau_res",
+      "Lambda/Lambda_E",
+      "Lambda/Lambda_flow"
+    ]
+  },
+  "conditional_scale_selection": {
+    "flow_curvature": "Lambda_flow=kappa^2/(3*c^2)",
+    "matching_condition": "Lambda_E=Lambda_flow",
+    "selected_conductance_squared": "kappa^2=24*pi*G*Theta*log(2)/(c^2*v_cell)"
+  },
+  "conditional_stress_bridge": {
+    "einstein_response": "Lambda_E=8*pi*G*rho_flow/c^4",
+    "energy_density": "rho_flow=Theta*sigma*tau_res/v_cell=Theta*log(2)/v_cell",
+    "entropy_rate": "sigma=kappa*log(2)",
+    "residence_time": "tau_res=1/kappa"
+  },
+  "date": "2026-09-01",
+  "floating_point_values": 0,
+  "gate": "version10_cell_birth_four_volume_cosmological_constant_einstein_response_coupling_origin_gate",
+  "next_gate": "version10_cell_birth_four_volume_einstein_response_anchor_package_candidate_audit_gate",
+  "origin_boundary": {
+    "inherited": [
+      "cycle_affinity",
+      "entropy_production",
+      "Einstein_response_form"
+    ],
+    "inherited_origin": "3/7",
+    "open": [
+      "physical_G",
+      "independent_Theta",
+      "absolute_v_cell",
+      "typed_stress_tensor_origin"
+    ],
+    "physical_anchor_package": "0/4"
+  },
+  "predecessor": "version10_cell_birth_four_volume_cosmological_constant_throughflow_parent_origin_gate",
+  "proofdsl": {
+    "certificate_sha256": "f7b6a7c18c6a619ebe10d67e826eb9c3f321673322fbbec8b8f2794b796b04b4",
+    "floating_point_values": 0,
+    "obligation_count": 21,
+    "obligations": [
+      "einstein_bridge_cycle_affinity",
+      "einstein_bridge_entropy_production",
+      "einstein_bridge_one_cycle_residence",
+      "einstein_bridge_energy_density",
+      "einstein_bridge_curvature_response",
+      "einstein_bridge_flow_curvature",
+      "einstein_bridge_conductance_scale",
+      "einstein_bridge_parent_stationary",
+      "einstein_bridge_parent_hessian",
+      "einstein_bridge_parent_rank_three",
+      "einstein_bridge_parent_determinant_one",
+      "einstein_bridge_positive_leading_minors",
+      "einstein_bridge_anchor_rank_one",
+      "einstein_bridge_anchor_nullity_three",
+      "einstein_bridge_full_anchor_rank_four",
+      "einstein_bridge_architecture_full",
+      "einstein_bridge_conditional_origin_full",
+      "einstein_bridge_inherited_origin",
+      "einstein_bridge_inherited_score",
+      "einstein_bridge_physical_origin_open",
+      "einstein_bridge_physical_score_zero"
+    ],
+    "status": "lcf-checked"
+  },
+  "status": {
+    "absolute_conductance": "0/1",
+    "architecture": "10/10",
+    "conditional_Einstein_closure": "5/5",
+    "inherited_origin": "3/7",
+    "physical_anchor_package": "0/4"
+  },
+  "verdict": {
+    "Einstein_response_can_conditionally_select_conductance": true,
+    "absolute_conductance_derived": false,
+    "current_project_derives_required_anchor_package": false,
+    "entropy_rate_alone_is_stress_energy": false
+  }
+}
